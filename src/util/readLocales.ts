@@ -2,7 +2,7 @@ import {localeRegistrySchema} from '../schemas'
 import {LocaleRegistry} from '../types'
 
 /**
- * Read and validate the configured locales from `locales/index.ts`.
+ * Read and validate the configured locales from `locales/registry.ts`.
  *
  * @internal
  */
@@ -13,8 +13,8 @@ export const readLocales: () => Promise<LocaleRegistry> = (() => {
       return locales
     }
 
-    const registry: LocaleRegistry = await import('../../locales/index.js').then(
-      (locale) => locale.default
+    const registry: LocaleRegistry = await import('../../locales/registry.js').then(
+      (locale) => locale.default,
     )
 
     localeRegistrySchema.parse(registry)

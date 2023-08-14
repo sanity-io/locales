@@ -14,7 +14,7 @@ const localeIdSchema = z
   .refine((val) => !val.includes('--'), {message: 'Should not include multiple dashes'})
 
 /**
- * An entry in the `locales/index.ts` file, which records the available locales and their maintainers
+ * An entry in the `locales/registry.ts` file, which records the available locales and their maintainers
  *
  * @internal
  */
@@ -55,7 +55,7 @@ export const localeSchema = z.object({
 })
 
 /**
- * An array of `Locale` objects, eg the contents of `locales/index.ts`
+ * An array of `Locale` objects, eg the contents of `locales/registry.ts`
  *
  * @internal
  */
