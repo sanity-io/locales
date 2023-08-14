@@ -1,0 +1,52 @@
+{
+  "name": "@sanity/locales",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Locales for the Sanity Studio",
+  "keywords": [
+    "locale",
+    "i18n",
+    "sanity"
+  ],
+  "homepage": "https://github.com/sanity-io/locales#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/locales/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/locales.git"
+  },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
+  "scripts": {
+    "build": "turbo run build",
+    "build:code-owners": "tsx src/cli/codeOwners",
+    "build:studio-locales": "tsx src/cli/studioLocales",
+    "build:write-packages": "tsx src/cli/writeLocalePackages",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
+    "lint": "turbo run lint"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "plugins": [
+      "prettier-plugin-packagejson"
+    ],
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "sanity": "i18n"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^7.32.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "tsx": "^3.12.7",
+    "turbo": "^1.10.12",
+    "zod": "^3.21.4"
+  },
+  "packageManager": "pnpm@8.6.10"
+}

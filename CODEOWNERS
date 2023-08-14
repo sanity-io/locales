@@ -1,0 +1,6 @@
+# By default, assign the studio developer experience team.
+# Later matching rules will take precedence.
+* @sanity-io/studio-dx
+
+# Locale-specific owners:
+/locales/no-nb/ @rexxars
