@@ -19,7 +19,7 @@ export async function writeStudioLocalePluginImports() {
     const identifier = getIdentifier(locale)
     const packageName = getPackageName(locale)
 
-    imports.push(`import ${identifier} from '${packageName}'`)
+    imports.push(`import {${identifier}} from '${packageName}'`)
     identifiers.push(identifier)
     localeDependencies[packageName] = 'workspace:*'
   }
