@@ -3,11 +3,12 @@ import fs from 'node:fs/promises'
 import type {Locale} from '../types'
 
 const bundleFileNameRegex = /^[a-zA-Z0-9]+\.ts$/
+const excludedFiles = ['package.json']
 
 export async function getBundlesFromLocale(locale: Locale): Promise<Bundle[]> {
   const localePath = path.join(__dirname, '..', '..', 'locales', locale.id)
   const entries = await fs.readdir(localePath, {withFileTypes: true})
-  const files = entries.filter((entry) => entry.isFile())
+  const files = entries.filter((entry) => entry.isFile() && !excludedFiles.includes(entry.name))
   const bundles = files
     .filter((file) => file.name !== 'index.ts')
     .map((entry): Bundle => {
