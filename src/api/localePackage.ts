@@ -2,7 +2,7 @@ import path from 'node:path'
 import fs from 'node:fs/promises'
 import {format} from 'prettier'
 import {readLocales} from '../util/readLocales'
-import type {Locale} from '../types'
+import type {Locale, PackageJson} from '../types'
 import {type Bundle, getBundlesFromLocale} from './bundles'
 import {readJsonFile} from '../util/readJsonFile'
 import {packageJsonSchema} from '../schemas'
@@ -16,6 +16,7 @@ export async function writeLocalePackage(locale: Locale) {
 
   await fs.mkdir(dir, {recursive: true})
   await writeFormattedFile(indexFile, await getLocaleTemplate(locale))
+  await writePackageJson(locale)
 }
 
 export async function writeLocalePackages() {
@@ -33,10 +34,70 @@ export function getPackageName(locale: Locale): string {
   return `@sanity/locale-${locale.id}`
 }
 
+export async function writePackageJson(locale: Locale) {
+  const targetPath = path.join(localesPath, locale.id, 'package.json')
+
+  // Get some shared values from the root package.json
+  const pkgJson = await readRootPackageJson()
+  const {license, homepage, bugs, repository, dependencies} = pkgJson
+  const sanityVersion = dependencies?.sanity
+  if (!sanityVersion) {
+    throw new Error('Could not resolve `sanity` module peer dependency range')
+  }
+
+  // Get current values (if any)
+  const prevPkg: Partial<PackageJson> = await readJsonFile(targetPath, packageJsonSchema).catch(
+    () => ({}),
+  )
+
+  const pkg: PackageJson = {
+    name: getPackageName(locale),
+    private: false,
+    version: prevPkg.version || '1.0.0',
+    main: 'dist/index.js',
+    license,
+    scripts: {},
+    keywords: ['sanity', 'i18n', 'locale', 'localization', locale.id],
+    homepage,
+    bugs,
+    repository: {
+      ...repository,
+      directory: `locales/${locale.id}`,
+    },
+    devDependencies: {
+      sanity: sanityVersion,
+    },
+    peerDependencies: {
+      sanity: sanityVersion,
+    },
+  }
+
+  return writeFormattedFile(targetPath, JSON.stringify(pkg, null, 2))
+}
+
+async function readRootPackageJson() {
+  return readJsonFile(path.join(rootPath, 'package.json'), packageJsonSchema)
+}
+
 async function writeFormattedFile(filePath: string, content: string) {
-  const pkgJson = await readJsonFile(path.join(rootPath, 'package.json'), packageJsonSchema)
+  const pkgJson = await readRootPackageJson()
   const prettierConfig = pkgJson.prettier || {}
-  return fs.writeFile(filePath, await format(content, {parser: 'typescript', ...prettierConfig}))
+  return fs.writeFile(
+    filePath,
+    await format(content, {parser: getParser(filePath), ...prettierConfig}),
+  )
+}
+
+function getParser(filePath: string): string | undefined {
+  const ext = path.extname(filePath)
+  switch (ext) {
+    case '.ts':
+      return 'typescript'
+    case '.json':
+      return 'json'
+    default:
+      return undefined
+  }
 }
 
 function esc(item: string) {

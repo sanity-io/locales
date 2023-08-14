@@ -77,8 +77,20 @@ export const packageJsonSchema = z
     license: z.string(),
     scripts: z.record(z.string()),
     keywords: z.array(z.string()),
+    homepage: z.string(),
+    bugs: z.object({
+      url: z.string(),
+    }),
+    repository: z
+      .object({
+        type: z.string(),
+        url: z.string(),
+        directory: z.string(),
+      })
+      .partial(),
     dependencies: z.record(z.string()),
     devDependencies: z.record(z.string()),
+    peerDependencies: z.record(z.string()),
     prettier: z
       .object({
         bracketSpacing: z.boolean(),
@@ -94,8 +106,12 @@ export const packageJsonSchema = z
     main: true,
     scripts: true,
     keywords: true,
+    homepage: true,
+    bugs: true,
+    repository: true,
     dependencies: true,
     devDependencies: true,
+    peerDependencies: true,
     prettier: true,
   })
   .passthrough()
