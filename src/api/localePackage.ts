@@ -1,17 +1,21 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
+import {format} from 'prettier'
 import {readLocales} from '../util/readLocales'
 import type {Locale} from '../types'
 import {type Bundle, getBundlesFromLocale} from './bundles'
+import {readJsonFile} from '../util/readJsonFile'
+import {packageJsonSchema} from '../schemas'
 
-const localesPath = path.join(__dirname, '..', '..', 'locales')
+const rootPath = path.join(__dirname, '..', '..')
+const localesPath = path.join(rootPath, 'locales')
 
 export async function writeLocalePackage(locale: Locale) {
   const dir = path.join(localesPath, locale.id)
   const indexFile = path.join(dir, 'index.ts')
 
   await fs.mkdir(dir, {recursive: true})
-  await fs.writeFile(indexFile, await getLocaleTemplate(locale))
+  await writeFormattedFile(indexFile, await getLocaleTemplate(locale))
 }
 
 export async function writeLocalePackages() {
@@ -27,6 +31,12 @@ export function getIdentifier(locale: Locale): string {
 
 export function getPackageName(locale: Locale): string {
   return `@sanity/locale-${locale.id}`
+}
+
+async function writeFormattedFile(filePath: string, content: string) {
+  const pkgJson = await readJsonFile(path.join(rootPath, 'package.json'), packageJsonSchema)
+  const prettierConfig = pkgJson.prettier || {}
+  return fs.writeFile(filePath, await format(content, {parser: 'typescript', ...prettierConfig}))
 }
 
 function esc(item: string) {

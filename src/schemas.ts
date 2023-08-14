@@ -79,6 +79,14 @@ export const packageJsonSchema = z
     keywords: z.array(z.string()),
     dependencies: z.record(z.string()),
     devDependencies: z.record(z.string()),
+    prettier: z
+      .object({
+        bracketSpacing: z.boolean(),
+        printWidth: z.number(),
+        semi: z.boolean(),
+        singleQuote: z.boolean(),
+      })
+      .partial(),
   })
   .partial({
     private: true,
@@ -88,5 +96,6 @@ export const packageJsonSchema = z
     keywords: true,
     dependencies: true,
     devDependencies: true,
+    prettier: true,
   })
   .passthrough()
