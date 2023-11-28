@@ -3,6 +3,7 @@
  * exiting with a proper error message (with stack) on any rejection.
  *
  * @param fn - Function to execute
+ * @internal
  */
 export function runScript(fn: () => Promise<unknown>) {
   fn()

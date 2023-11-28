@@ -2,16 +2,15 @@ import path from 'node:path'
 import fs from 'node:fs/promises'
 import {format} from 'prettier'
 import {readLocales} from '../util/readLocales'
+import {readJsonFile} from '../util/readJsonFile'
+import {getRootPath} from '../util/getRootPath'
+import {getLocalesPath} from '../util/getLocalesPath'
 import type {Locale, PackageJson} from '../types'
 import {type Bundle, getBundlesFromLocale} from './bundles'
-import {readJsonFile} from '../util/readJsonFile'
 import {packageJsonSchema} from '../schemas'
 
-const rootPath = path.join(__dirname, '..', '..')
-const localesPath = path.join(rootPath, 'locales')
-
 export async function writeLocalePackage(locale: Locale) {
-  const dir = path.join(localesPath, locale.id)
+  const dir = path.join(await getLocalesPath(), locale.id)
   const indexFile = path.join(dir, 'index.ts')
 
   await fs.mkdir(dir, {recursive: true})
@@ -35,7 +34,7 @@ export function getPackageName(locale: Locale): string {
 }
 
 export async function writePackageJson(locale: Locale) {
-  const targetPath = path.join(localesPath, locale.id, 'package.json')
+  const targetPath = path.join(await getLocalesPath(), locale.id, 'package.json')
 
   // Get some shared values from the root package.json
   const pkgJson = await readRootPackageJson()
@@ -76,7 +75,7 @@ export async function writePackageJson(locale: Locale) {
 }
 
 async function readRootPackageJson() {
-  return readJsonFile(path.join(rootPath, 'package.json'), packageJsonSchema)
+  return readJsonFile(path.join(await getRootPath(), 'package.json'), packageJsonSchema)
 }
 
 async function writeFormattedFile(filePath: string, content: string) {

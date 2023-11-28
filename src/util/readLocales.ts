@@ -1,5 +1,5 @@
 import {localeRegistrySchema} from '../schemas'
-import {LocaleRegistry} from '../types'
+import type {LocaleRegistry} from '../types'
 
 /**
  * Read and validate the configured locales from `locales/registry.ts`.

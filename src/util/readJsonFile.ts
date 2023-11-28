@@ -7,10 +7,11 @@ import type {ZodTypeAny, infer as zodInfer} from 'zod'
  * @param jsonFilePath - File system path for the JSON file to read
  * @param schema - Zod schema to validate the data against
  * @returns The parsed JSON file
+ * @internal
  */
 export async function readJsonFile<T extends ZodTypeAny>(
   jsonFilePath: string,
-  schema: T
+  schema: T,
 ): Promise<zodInfer<T>> {
   const content = await fs.readFile(jsonFilePath, 'utf-8')
   try {
