@@ -1,6 +1,6 @@
 import {writeFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
-import {readLocales} from '../util/readLocales'
+import {readLocaleRegistry} from '../util/readLocaleRegistry'
 import {getRootPath} from '../util/getRootPath'
 import {runScript} from '../util/runScript'
 
@@ -16,7 +16,7 @@ const template = `
 
 export async function writeCodeOwners() {
   const codeOwnersPath = joinPath(await getRootPath(), 'CODEOWNERS')
-  const locales = await readLocales()
+  const locales = await readLocaleRegistry()
 
   const owners: string[] = []
   for (const {id, maintainers} of locales) {

@@ -6,7 +6,7 @@ import type {LocaleRegistry} from '../types'
  *
  * @internal
  */
-export const readLocales: () => Promise<LocaleRegistry> = (() => {
+export const readLocaleRegistry: () => Promise<LocaleRegistry> = (() => {
   let locales: Promise<LocaleRegistry> | undefined
   return async () => {
     if (locales) {

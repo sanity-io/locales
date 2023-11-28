@@ -9,7 +9,7 @@
  */
 import {writeFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
-import {readLocales} from '../util/readLocales'
+import {readLocaleRegistry} from '../util/readLocaleRegistry'
 import {readJsonFile} from '../util/readJsonFile'
 import {runScript} from '../util/runScript'
 import {getRootPath} from '../util/getRootPath'
@@ -19,7 +19,7 @@ import {getIdentifier, getPackageName} from './localePackage'
 export async function writeStudioLocalePluginImports() {
   const studioRootPath = joinPath(await getRootPath(), 'apps', 'studio')
 
-  const locales = await readLocales()
+  const locales = await readLocaleRegistry()
 
   // Make import declarations for each locale, and a list of identifiers we can export
   const imports: string[] = []

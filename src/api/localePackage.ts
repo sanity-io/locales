@@ -1,10 +1,10 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
 import {format} from 'prettier'
-import {readLocales} from '../util/readLocales'
 import {readJsonFile} from '../util/readJsonFile'
 import {getRootPath} from '../util/getRootPath'
 import {getLocalesPath} from '../util/getLocalesPath'
+import {readLocaleRegistry} from '../util/readLocaleRegistry'
 import type {Locale, PackageJson} from '../types'
 import {type Bundle, getBundlesFromLocale} from './bundles'
 import {packageJsonSchema} from '../schemas'
@@ -19,7 +19,7 @@ export async function writeLocalePackage(locale: Locale) {
 }
 
 export async function writeLocalePackages() {
-  const locales = await readLocales()
+  const locales = await readLocaleRegistry()
   for (const locale of locales) {
     await writeLocalePackage(locale)
   }
