@@ -37,16 +37,24 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@babel/parser": "^7.23.4",
+    "@babel/traverse": "^7.23.4",
+    "@babel/types": "^7.23.4",
+    "@sanity/vision": "i18n",
+    "@types/babel__traverse": "^7.20.4",
+    "globby": "^14.0.0",
+    "magicast": "^0.3.2",
+    "package-up": "^5.0.0",
     "sanity": "i18n"
   },
   "devDependencies": {
-    "@turbo/gen": "^1.9.7",
+    "@turbo/gen": "^1.10.16",
     "eslint": "^7.32.0",
-    "prettier": "^3.0.1",
-    "prettier-plugin-packagejson": "^2.4.5",
-    "tsx": "^3.12.7",
-    "turbo": "^1.10.12",
-    "zod": "^3.21.4"
+    "prettier": "^3.1.0",
+    "prettier-plugin-packagejson": "^2.4.6",
+    "tsx": "^3.14.0",
+    "turbo": "^1.10.16",
+    "zod": "^3.22.4"
   },
   "packageManager": "pnpm@8.6.10"
 }

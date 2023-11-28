@@ -21,3 +21,24 @@ export type LocaleRegistry = zodInfer<typeof localeRegistrySchema>
  * @internal
  */
 export type PackageJson = zodInfer<typeof packageJsonSchema>
+
+/**
+ * A resource entry in a locale file
+ *
+ * @internal
+ */
+export interface Resource {
+  key: string
+  value: string
+  comment: string | null
+}
+
+/**
+ * A "bundle" of resources, namespaced under a given string
+ *
+ * @internal
+ */
+export interface ResourceBundle {
+  namespace: string
+  resources: Resource[]
+}
