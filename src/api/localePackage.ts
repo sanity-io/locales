@@ -154,7 +154,7 @@ async function writePkgConfig(dirPath: string) {
     tsconfig: '../../tsconfig.locale.json',
   })`
 
-  await writeFormattedFile(joinPath(dirPath, 'pkg.config.ts'), config)
+  await writeFormattedFile(joinPath(dirPath, 'package.config.ts'), config)
 }
 
 async function writeLicense(dirPath: string) {
