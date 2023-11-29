@@ -152,25 +152,29 @@ async function writeBundleNamespace(
   const nsPath = joinPath(localesPath, locale.id, 'src', `${bundle.namespace}.ts`)
 
   // Sometimes we may only want "placeholders", eg when we do not have translated strings yet
-  // In this case, prefix the keys with a comment, to indicate their purpose
-  const prefix = options.placeholders ? '// ' : ''
+  // In this case, use an `undefined` value that will make them easy to spot, and leave the
+  // original, english translation as a comment behind it.
+  const {placeholders = false} = options
 
   // Note: We're not using an AST approach here because the semantics around comments are difficult
   // and often leaves comments on the same line as the property. Prettier doesn't always understand
   // quite how to format it, so this was the best I could come up with for now.
   const props = bundle.resources.map((resource) => {
     const comments = formatComments(resource.comments || [])
-    return `${comments}  ${prefix}'${resource.key}': ${formatLiteral(resource.value)},`
+    const value = formatLiteral(resource.value)
+    const propValue = placeholders ? `undefined, // ${value}` : `${value},`
+    return `${comments}  '${resource.key}': ${propValue}`
   })
 
   // Sorta correctly formatted code, to be run through prettier
-  const moduleCode = `export default {\n  ${props.join('\n').trimStart()}\n}\n`
+  const resourcesObject = `{\n  ${props.join('\n').trimStart()}\n}`
+  const defaultExport = `export default removeUndefinedLocaleResources(${resourcesObject})\n`
+  const moduleCode = `import {removeUndefinedLocaleResources} from 'sanity'\n\n${defaultExport}`
 
   // Run it through prettier for fully formatted code according to our preferences
   await mkdir(dirname(nsPath), {recursive: true})
   await writeFormattedFile(nsPath, moduleCode, {
     configPath: localesPath,
-    postProcess: (code) => code.replace(/\s*(\/\*+\s+---)/g, '\n\n  $1'),
   })
 }
 
