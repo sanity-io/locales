@@ -38,7 +38,7 @@ export function getIdentifier(locale: Locale): string {
 }
 
 export function getPackageName(locale: Locale): string {
-  return `@sanity/locale-${locale.id}`
+  return `@sanity/locale-${locale.id}`.toLowerCase()
 }
 
 export async function writePackageJson(locale: Locale) {

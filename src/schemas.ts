@@ -2,16 +2,10 @@ import {z} from 'zod'
 
 const ghUsernamePattern = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i
 
-const localeIdSchema = z
-  .string()
-  .regex(/^[a-z-]+$/, {
-    message:
-      'Should only include lowercase characters in the a-z range, and dashes to seperate language and regional codes, eg `en-us`.',
-  })
-  .refine((val) => !val.startsWith('-') && !val.endsWith('-'), {
-    message: 'Should not start or end with a dash',
-  })
-  .refine((val) => !val.includes('--'), {message: 'Should not include multiple dashes'})
+const localeIdSchema = z.string().regex(/^([a-z]+)|([a-z]+-[A-Z]+)$/, {
+  message:
+    'Should only include lowercase characters, or lowercased followed by uppercase, eg `en` or `en-US`',
+})
 
 /**
  * An entry in the `locales/registry.ts` file, which records the available locales and their maintainers
