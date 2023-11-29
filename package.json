@@ -24,7 +24,7 @@
     "build:studio-locales": "tsx src/cli/studioLocales",
     "build:write-packages": "tsx src/cli/writeLocalePackages",
     "check:missing": "tsx src/cli/printMissingResources",
-    "dev": "turbo run dev",
+    "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
     "lint": "turbo run lint"
   },
