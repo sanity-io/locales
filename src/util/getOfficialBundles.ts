@@ -119,8 +119,8 @@ function extractResources(ast: Node, local: string, fileName: string): ResourceB
       }
     }
 
-    const comment = prop.leadingComments?.map((leading) => leading.value).join('\n') ?? null
     const key = prop.key.value
+    const comments = prop.leadingComments
     const value =
       prop.value.type === 'StringLiteral'
         ? prop.value.value
@@ -129,7 +129,7 @@ function extractResources(ast: Node, local: string, fileName: string): ResourceB
     return {
       key,
       value,
-      comment,
+      comments,
     }
   })
 

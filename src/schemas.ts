@@ -68,9 +68,10 @@ export const localeRegistrySchema = z.array(localeSchema)
  */
 export const packageJsonSchema = z
   .object({
-    // NOTE: Intentionally not ordered alphabetically, but by "preferred order",
+    // NOTE: Intentionally NOT ordered alphabetically, but by "preferred order",
     // since zod orders the returned objects according to this
     name: z.string(),
+    description: z.string(),
     private: z.boolean(),
     version: z.string(),
     main: z.string(),

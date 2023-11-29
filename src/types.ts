@@ -1,4 +1,5 @@
 import type {infer as zodInfer} from 'zod'
+import type {Comment} from '@babel/types'
 import type {localeRegistrySchema, localeSchema, packageJsonSchema} from './schemas'
 
 /**
@@ -30,7 +31,7 @@ export type PackageJson = zodInfer<typeof packageJsonSchema>
 export interface Resource {
   key: string
   value: string
-  comment: string | null
+  comments?: Comment[]
 }
 
 /**

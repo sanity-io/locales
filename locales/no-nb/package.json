@@ -1,11 +1,15 @@
 {
   "name": "@sanity/locale-no-nb",
-  "private": false,
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "license": "MIT",
-  "scripts": {},
-  "keywords": ["sanity", "i18n", "locale", "localization", "no-nb"],
+  "private": false,
+  "description": "Norsk (Bokmål) locale/translation for Sanity Studio",
+  "keywords": [
+    "sanity",
+    "i18n",
+    "locale",
+    "localization",
+    "no-nb"
+  ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
     "url": "https://github.com/sanity-io/locales/issues"
@@ -15,10 +19,10 @@
     "url": "git+ssh://git@github.com/sanity-io/locales.git",
     "directory": "locales/no-nb"
   },
-  "devDependencies": {
-    "sanity": "i18n"
-  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {},
   "peerDependencies": {
-    "sanity": "i18n"
+    "sanity": "^3.21.0"
   }
 }
