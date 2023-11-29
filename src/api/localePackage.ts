@@ -1,5 +1,5 @@
 import {join as joinPath} from 'node:path'
-import {mkdir} from 'node:fs/promises'
+import {copyFile, mkdir} from 'node:fs/promises'
 import {readJsonFile} from '../util/readJsonFile'
 import {getRootPath} from '../util/getRootPath'
 import {getLocalesPath} from '../util/getLocalesPath'
@@ -21,6 +21,7 @@ export async function writeLocalePackage(locale: Locale) {
   await writeFormattedFile(indexFile, await getLocaleTemplate(locale))
   await writePackageJson(locale)
   await writePkgConfig(dir)
+  await writeLicense(dir)
 }
 
 export async function writeLocalePackages() {
@@ -153,4 +154,10 @@ async function writePkgConfig(dirPath: string) {
   })`
 
   await writeFormattedFile(joinPath(dirPath, 'pkg.config.ts'), config)
+}
+
+async function writeLicense(dirPath: string) {
+  const fromPath = joinPath(await getRootPath(), 'LICENSE')
+  const toPath = joinPath(dirPath, 'LICENSE')
+  await copyFile(fromPath, toPath)
 }
