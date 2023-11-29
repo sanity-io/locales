@@ -1,7 +1,7 @@
 import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
-  id: 'no-nb',
+  id: 'no-NB',
   title: 'Norsk (Bokmål)',
   bundles: [
     {
