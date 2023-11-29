@@ -7,8 +7,8 @@ import {locales} from './locales'
 export default defineConfig({
   title: 'i18n',
 
-  projectId: 'p0m51e1s',
-  dataset: 'lolokay',
+  projectId: 'ppsg7ml5',
+  dataset: 'test',
 
   plugins: [deskTool(), visionTool(), ...locales],
 
