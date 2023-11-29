@@ -1,19 +1,19 @@
 {
   "name": "@sanity/i18n-studio",
-  "description": "Placeholder studio for testing all defined locales",
-  "private": true,
   "version": "1.0.0",
-  "main": "package.json",
+  "private": true,
+  "description": "Placeholder studio for testing all defined locales",
+  "keywords": [
+    "sanity"
+  ],
   "license": "MIT",
+  "main": "package.json",
   "scripts": {
     "build": "sanity build",
     "deploy": "sanity deploy",
     "dev": "sanity dev",
     "start": "sanity start"
   },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
     "@sanity/locale-no-nb": "workspace:*",
     "@sanity/vision": "i18n",
@@ -21,14 +21,13 @@
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "sanity": "i18n",
-    "styled-components": "^5.3.9"
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^3.0.0",
-    "@types/react": "^18.0.25",
-    "@types/styled-components": "^5.1.26",
-    "eslint": "^8.6.0",
-    "prettier": "^3.0.1",
-    "typescript": "^5.1.6"
+    "@sanity/eslint-config-studio": "^3.0.1",
+    "@types/react": "^18.2.39",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
   }
 }
