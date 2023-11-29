@@ -7,7 +7,7 @@ import {readLocaleRegistry} from '../util/readLocaleRegistry'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {packageJsonSchema} from '../schemas'
 import type {BundleModule, Locale, PackageJson} from '../types'
-import {getBundlesFromLocale} from './bundles'
+import {createPlaceholderBundles, getBundlesFromLocale} from './bundles'
 
 // @todo change to the minimum released version that has i18n
 const MINIMUM_SANITY_VERSION = 'i18n'
@@ -27,6 +27,7 @@ export async function writeLocalePackage(locale: Locale) {
 export async function writeLocalePackages() {
   const locales = await readLocaleRegistry()
   for (const locale of locales) {
+    await createPlaceholderBundles(locale)
     await writeLocalePackage(locale)
   }
 }
