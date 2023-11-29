@@ -1,5 +1,6 @@
-import {join as joinPath} from 'node:path'
-import {readdir as readDir} from 'node:fs/promises'
+import {dirname, join as joinPath} from 'node:path'
+import {mkdir, readdir as readDir} from 'node:fs/promises'
+import {green} from 'ansi-colors'
 import {stringLiteral, Comment} from '@babel/types'
 import generateFromAst from '@babel/generator'
 import {getRootPath} from '../util/getRootPath'
@@ -33,7 +34,7 @@ export async function getBundlesFromLocale(locale: Locale): Promise<BundleModule
     }
 
     // Import the bundle module to ensure it's valid, has an `export` etc
-    const resources = await import(joinPath(localePath, entry.name))
+    const resources = await import(joinPath(localePath, 'src', entry.name))
     if (!resources.default) {
       throw new Error(
         `Locale ${locale.id} contained file with missing default export: ${entry.name}`,
@@ -65,9 +66,17 @@ export async function createPlaceholderBundles(locale: Locale) {
       throw new Error(`Known namespaces should include ${namespace}`)
     }
 
-    console.log('Missing namespace found for locale, creating file:', namespace)
+    console.log(
+      'Locale "%s" is missing namespace "%s", creating file',
+      green(locale.id),
+      green(namespace),
+    )
     await writeBundleNamespace(locale, resources, {placeholders: true})
-    bundles.push({namespace, filename: joinPath(localePath, `${namespace}.ts`), resources: {}})
+    bundles.push({
+      namespace,
+      filename: joinPath(localePath, 'src', `${namespace}.ts`),
+      resources: {},
+    })
   }
 
   return bundles
@@ -140,7 +149,7 @@ async function writeBundleNamespace(
   options: {placeholders?: boolean} = {},
 ) {
   const localesPath = await getLocalesPath()
-  const nsPath = joinPath(localesPath, locale.id, `${bundle.namespace}.ts`)
+  const nsPath = joinPath(localesPath, locale.id, 'src', `${bundle.namespace}.ts`)
 
   // Sometimes we may only want "placeholders", eg when we do not have translated strings yet
   // In this case, prefix the keys with a comment, to indicate their purpose
@@ -158,9 +167,10 @@ async function writeBundleNamespace(
   const moduleCode = `export default {\n  ${props.join('\n').trimStart()}\n}\n`
 
   // Run it through prettier for fully formatted code according to our preferences
+  await mkdir(dirname(nsPath), {recursive: true})
   await writeFormattedFile(nsPath, moduleCode, {
     configPath: localesPath,
-    postProcess: (code) => code.replace(/(\/\*+\s+---)/, '\n$1'),
+    postProcess: (code) => code.replace(/\s*(\/\*+\s+---)/g, '\n\n  $1'),
   })
 }
 
@@ -190,6 +200,7 @@ function formatComments(comments: Comment[]) {
 function formatLiteral(value: string) {
   return generateFromAst(stringLiteral(value), {
     jsescOption: {
+      quotes: 'single',
       // prevent things like
       // `…` -> `\u2026`
       // `→` -> `\u2192` etc
