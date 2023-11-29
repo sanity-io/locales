@@ -1,6 +1,11 @@
 import type {infer as zodInfer} from 'zod'
 import type {Comment} from '@babel/types'
-import type {localeRegistrySchema, localeSchema, packageJsonSchema} from './schemas'
+import type {
+  localeRegistrySchema,
+  localeSchema,
+  packageJsonSchema,
+  resourcesSchema,
+} from './schemas'
 
 /**
  * An entry in the `locales/registry.ts` file, which records the available locales and their maintainers
@@ -24,6 +29,13 @@ export type LocaleRegistry = zodInfer<typeof localeRegistrySchema>
 export type PackageJson = zodInfer<typeof packageJsonSchema>
 
 /**
+ * Object of resources, eg `key: value` pairs
+ *
+ * @internal
+ */
+export type ResourceMap = zodInfer<typeof resourcesSchema>
+
+/**
  * A resource entry in a locale file
  *
  * @internal
@@ -42,4 +54,15 @@ export interface Resource {
 export interface ResourceBundle {
   namespace: string
   resources: Resource[]
+}
+
+/**
+ * A "bundle" of resources, namespaced under a given string, loaded from the given filename
+ *
+ * @internal
+ */
+export interface BundleModule {
+  namespace: string
+  filename: string
+  resources: ResourceMap
 }

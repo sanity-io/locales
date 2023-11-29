@@ -5,13 +5,14 @@ import generateFromAst from '@babel/generator'
 import {getRootPath} from '../util/getRootPath'
 import {getLocalesPath} from '../util/getLocalesPath'
 import {getOfficialBundles} from '../util/getOfficialBundles'
-import type {Locale, ResourceBundle} from '../types'
+import type {BundleModule, Locale, ResourceBundle} from '../types'
 import {writeFormattedFile} from '../util/writeFormattedFile'
+import {getCanonicalResourceKey} from '../util/canonicalResourceKey'
 
 const bundleFileNameRegex = /^[a-zA-Z0-9]+\.ts$/
 const excludedFiles = ['index.ts']
 
-export async function getBundlesFromLocale(locale: Locale): Promise<Bundle[]> {
+export async function getBundlesFromLocale(locale: Locale): Promise<BundleModule[]> {
   const rootPath = await getRootPath()
   const localePath = joinPath(rootPath, 'locales', locale.id)
 
@@ -19,7 +20,7 @@ export async function getBundlesFromLocale(locale: Locale): Promise<Bundle[]> {
   const files = entries.filter((entry) => entry.isFile() && !excludedFiles.includes(entry.name))
 
   const knownNamespaces = await getOfficalBundleMap()
-  const bundles: Bundle[] = []
+  const bundles: BundleModule[] = []
   for (const entry of files) {
     if (!bundleFileNameRegex.test(entry.name)) {
       throw new Error(`Locale ${locale.id} contained file with invalid name: ${entry.name}`)
@@ -32,8 +33,8 @@ export async function getBundlesFromLocale(locale: Locale): Promise<Bundle[]> {
     }
 
     // Import the bundle module to ensure it's valid, has an `export` etc
-    const bundleModule = await import(joinPath(localePath, entry.name))
-    if (!bundleModule.default) {
+    const resources = await import(joinPath(localePath, entry.name))
+    if (!resources.default) {
       throw new Error(
         `Locale ${locale.id} contained file with missing default export: ${entry.name}`,
       )
@@ -42,6 +43,7 @@ export async function getBundlesFromLocale(locale: Locale): Promise<Bundle[]> {
     bundles.push({
       namespace,
       filename: entry.name,
+      resources: resources.default,
     })
   }
 
@@ -56,7 +58,7 @@ export async function createPlaceholderBundles(locale: Locale) {
   const localePath = joinPath(rootPath, 'locales', locale.id)
 
   // For the namespaces that are missing, automatically create the bundle files
-  const bundles: Bundle[] = []
+  const bundles: BundleModule[] = []
   for (const namespace of missingNamespaces) {
     const resources = knownNamespaces.get(namespace)
     if (!resources) {
@@ -65,7 +67,7 @@ export async function createPlaceholderBundles(locale: Locale) {
 
     console.log('Missing namespace found for locale, creating file:', namespace)
     await writeBundleNamespace(locale, resources, {placeholders: true})
-    bundles.push({namespace, filename: joinPath(localePath, `${namespace}.ts`)})
+    bundles.push({namespace, filename: joinPath(localePath, `${namespace}.ts`), resources: {}})
   }
 
   return bundles
@@ -81,6 +83,48 @@ export async function findMissingNamespaces(locale: Locale): Promise<string[]> {
   }
 
   return Array.from(missingNamespaces)
+}
+
+export async function findMissingResources(locale: Locale) {
+  const bundles = await getBundlesFromLocale(locale)
+  const official = await getOfficialBundles()
+
+  // Key: namespace, value: canonical keys
+  const officialKeys = new Map<string, Set<string>>()
+  official.forEach((bundle) => {
+    officialKeys.set(
+      bundle.namespace,
+      new Set(bundle.resources.map((resource) => getCanonicalResourceKey(resource.key))),
+    )
+  })
+
+  // Key: namespace, value: canonical keys
+  const localeKeys = new Map<string, Set<string>>()
+  bundles.forEach((bundle) => {
+    localeKeys.set(
+      bundle.namespace,
+      new Set(Object.keys(bundle.resources).map((key) => getCanonicalResourceKey(key))),
+    )
+  })
+
+  // Key: namespace, value: canonical keys
+  const missingKeys: {namespace: string; missingKeys: Set<string>}[] = []
+  for (const [namespace, keys] of officialKeys) {
+    const missing = new Set<string>()
+
+    const nsKeys = localeKeys.get(namespace)
+    for (const key of keys) {
+      if (!nsKeys || !nsKeys.has(key)) {
+        missing.add(key)
+      }
+    }
+
+    if (missing.size > 0) {
+      missingKeys.push({namespace, missingKeys: missing})
+    }
+  }
+
+  return missingKeys
 }
 
 async function getOfficalBundleMap() {
@@ -152,9 +196,4 @@ function formatLiteral(value: string) {
       minimal: true,
     },
   }).code
-}
-
-export interface Bundle {
-  namespace: string
-  filename: string
 }

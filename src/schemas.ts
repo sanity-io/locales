@@ -116,3 +116,16 @@ export const packageJsonSchema = z
     prettier: true,
   })
   .passthrough()
+
+/**
+ * Object of resources, eg `key: value` pairs
+ *
+ * @internal
+ */
+export const resourcesSchema = z.record(
+  z
+    .string()
+    .min(1)
+    .regex(/^[a-z][a-zA-Z0-9.-_]/),
+  z.string(),
+)

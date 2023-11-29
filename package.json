@@ -23,6 +23,7 @@
     "build:code-owners": "tsx src/cli/codeOwners",
     "build:studio-locales": "tsx src/cli/studioLocales",
     "build:write-packages": "tsx src/cli/writeLocalePackages",
+    "check:missing": "tsx src/cli/printMissingResources",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
     "lint": "turbo run lint"
@@ -45,6 +46,8 @@
     "@turbo/gen": "^1.10.16",
     "@types/babel__generator": "^7.6.7",
     "@types/babel__traverse": "^7.20.4",
+    "@types/node": "^18.3.0",
+    "ansi-colors": "^4.1.3",
     "eslint": "^7.32.0",
     "globby": "^14.0.0",
     "magicast": "^0.3.2",
@@ -60,6 +63,6 @@
   },
   "packageManager": "pnpm@8.6.10",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "^18.3.0 || >=20.0.0"
   }
 }

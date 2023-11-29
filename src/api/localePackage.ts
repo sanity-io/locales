@@ -6,10 +6,11 @@ import {getLocalesPath} from '../util/getLocalesPath'
 import {readLocaleRegistry} from '../util/readLocaleRegistry'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {packageJsonSchema} from '../schemas'
-import type {Locale, PackageJson} from '../types'
-import {type Bundle, getBundlesFromLocale} from './bundles'
+import type {BundleModule, Locale, PackageJson} from '../types'
+import {getBundlesFromLocale} from './bundles'
 
-const MINIMUM_SANITY_VERSION = '3.21.0'
+// @todo change to the minimum released version that has i18n
+const MINIMUM_SANITY_VERSION = 'i18n'
 
 export async function writeLocalePackage(locale: Locale) {
   const dir = joinPath(await getLocalesPath(), locale.id)
@@ -69,7 +70,9 @@ export async function writePackageJson(locale: Locale) {
       directory: `locales/${locale.id}`,
     },
     peerDependencies: {
-      sanity: `^${MINIMUM_SANITY_VERSION}`,
+      sanity: /^\d/.test(MINIMUM_SANITY_VERSION)
+        ? `^${MINIMUM_SANITY_VERSION}`
+        : MINIMUM_SANITY_VERSION,
     },
 
     // pkg-utils preferred export order
@@ -131,7 +134,7 @@ export const ${identifier} = definePlugin({
 `.trim()
 }
 
-function getBundleTemplate({namespace}: Bundle) {
+function getBundleTemplate({namespace}: BundleModule) {
   const importPath = `./${namespace}`
   return `
     {
