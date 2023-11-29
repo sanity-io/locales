@@ -51,6 +51,10 @@ export async function getBundlesFromLocale(locale: Locale): Promise<BundleModule
   return bundles
 }
 
+export async function writeLocaleDirectory(locale: Locale) {
+  await mkdir(joinPath(await getLocalesPath(), locale.id, 'src'), {recursive: true})
+}
+
 export async function createPlaceholderBundles(locale: Locale) {
   const knownNamespaces = await getOfficalBundleMap()
   const missingNamespaces = await findMissingNamespaces(locale)
