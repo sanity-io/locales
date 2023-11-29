@@ -35,6 +35,10 @@
   "module": "./dist/index.js",
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "npm run clean && npm run pkg:build && npm run pkg:check",
     "clean": "rimraf dist",

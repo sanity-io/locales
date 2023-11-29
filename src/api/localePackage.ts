@@ -63,6 +63,7 @@ export async function writePackageJson(locale: Locale) {
       'pkg:check': 'pkg check --strict',
     },
     keywords: ['sanity', 'i18n', 'locale', 'localization', locale.id],
+    files: ['dist', 'src'],
     homepage,
     bugs,
     repository: {
