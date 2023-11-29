@@ -31,7 +31,7 @@ export type PackageJson = zodInfer<typeof packageJsonSchema>
 export interface Resource {
   key: string
   value: string
-  comments?: Comment[]
+  comments?: Comment[] | null
 }
 
 /**

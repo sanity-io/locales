@@ -6,6 +6,11 @@ const locale = defineLocale({
   bundles: [],
 })
 
+/**
+ * Norsk (Bokmål) locale/translation plugin for Sanity Studio
+ *
+ * @public
+ */
 export const nonbLocale = definePlugin({
   name: '@sanity/locale-no-nb',
   i18n: {

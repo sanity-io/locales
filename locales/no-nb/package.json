@@ -20,8 +20,27 @@
     "directory": "locales/no-nb"
   },
   "license": "MIT",
-  "main": "dist/index.js",
-  "scripts": {},
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
+    "clean": "rimraf dist",
+    "pkg:build": "pkg build --strict",
+    "pkg:check": "pkg check --strict"
+  },
   "peerDependencies": {
     "sanity": "^3.21.0"
   }

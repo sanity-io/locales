@@ -1,0 +1,34 @@
+{
+  "include": ["./src"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist",
+
+    // Completeness
+    "skipLibCheck": true,
+
+    // Interop constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // Language and environment
+    "target": "ES2020",
+
+    // Modules
+    "module": "ES2020",
+    "moduleResolution": "Node",
+
+    // Type checking
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
+  }
+}

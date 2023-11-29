@@ -13,11 +13,13 @@ const MINIMUM_SANITY_VERSION = '3.21.0'
 
 export async function writeLocalePackage(locale: Locale) {
   const dir = joinPath(await getLocalesPath(), locale.id)
-  const indexFile = joinPath(dir, 'index.ts')
+  const srcDir = joinPath(dir, 'src')
+  const indexFile = joinPath(srcDir, 'index.ts')
 
-  await mkdir(dir, {recursive: true})
+  await mkdir(srcDir, {recursive: true})
   await writeFormattedFile(indexFile, await getLocaleTemplate(locale))
   await writePackageJson(locale)
+  await writePkgConfig(dir)
 }
 
 export async function writeLocalePackages() {
@@ -52,9 +54,13 @@ export async function writePackageJson(locale: Locale) {
     description: `${locale.name} locale/translation for Sanity Studio`,
     private: false,
     version: prevPkg.version || '1.0.0',
-    main: 'dist/index.js',
     license,
-    scripts: {},
+    scripts: {
+      build: 'npm run clean && npm run pkg:build && npm run pkg:check',
+      clean: 'rimraf dist',
+      'pkg:build': 'pkg build --strict',
+      'pkg:check': 'pkg check --strict',
+    },
     keywords: ['sanity', 'i18n', 'locale', 'localization', locale.id],
     homepage,
     bugs,
@@ -65,6 +71,23 @@ export async function writePackageJson(locale: Locale) {
     peerDependencies: {
       sanity: `^${MINIMUM_SANITY_VERSION}`,
     },
+
+    // pkg-utils preferred export order
+    type: 'module',
+    exports: {
+      '.': {
+        types: './dist/index.d.ts',
+        source: './src/index.ts',
+        import: './dist/index.js',
+        require: './dist/index.cjs',
+        default: './dist/index.js',
+      },
+      './package.json': './package.json',
+    },
+    main: './dist/index.cjs',
+    module: './dist/index.js',
+    source: './src/index.ts',
+    types: './dist/index.d.ts',
   }
 
   return writeFormattedFile(targetPath, JSON.stringify(pkg, null, 2))
@@ -94,6 +117,11 @@ const locale = defineLocale({
   bundles: [${bundleTemplates}],
 })
 
+/**
+ * ${locale.name} locale/translation plugin for Sanity Studio
+ * 
+ * @public
+ */
 export const ${identifier} = definePlugin({
   name: ${esc(pkgName)},
   i18n: {
@@ -110,4 +138,15 @@ function getBundleTemplate({namespace}: Bundle) {
       namespace: ${esc(namespace)},
       resources: () => import(${esc(importPath)}),
     }`
+}
+
+async function writePkgConfig(dirPath: string) {
+  const config = `
+  import {defineConfig} from '@sanity/pkg-utils'
+
+  export default defineConfig({
+    tsconfig: '../../tsconfig.locale.json',
+  })`
+
+  await writeFormattedFile(joinPath(dirPath, 'pkg.config.ts'), config)
 }

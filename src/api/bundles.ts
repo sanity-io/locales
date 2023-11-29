@@ -9,13 +9,13 @@ import type {Locale, ResourceBundle} from '../types'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 
 const bundleFileNameRegex = /^[a-zA-Z0-9]+\.ts$/
-const excludedFiles = ['package.json', 'index.ts']
+const excludedFiles = ['index.ts']
 
 export async function getBundlesFromLocale(locale: Locale): Promise<Bundle[]> {
   const rootPath = await getRootPath()
   const localePath = joinPath(rootPath, 'locales', locale.id)
 
-  const entries = await readDir(localePath, {withFileTypes: true})
+  const entries = await readDir(joinPath(localePath, 'src'), {withFileTypes: true})
   const files = entries.filter((entry) => entry.isFile() && !excludedFiles.includes(entry.name))
 
   const knownNamespaces = await getOfficalBundleMap()

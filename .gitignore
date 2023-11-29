@@ -34,3 +34,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Compiled files
+/locales/*/dist
