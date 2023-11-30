@@ -60,7 +60,7 @@ const registry: LocaleRegistry = [
   },
   {
     id: 'pt-PT',
-    name: 'Português',
+    name: 'Português Europeu',
     maintainers: [],
     contributors: [],
     isOfficial: false,

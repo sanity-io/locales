@@ -2,7 +2,7 @@ import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
   id: 'pt-PT',
-  title: 'Português',
+  title: 'Português Europeu',
   bundles: [
     {
       namespace: 'structure',
@@ -27,7 +27,7 @@ const locale = defineLocale({
 })
 
 /**
- * Português locale/translation plugin for Sanity Studio
+ * Português Europeu locale/translation plugin for Sanity Studio
  *
  * @public
  */
