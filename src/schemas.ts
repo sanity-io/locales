@@ -12,7 +12,7 @@ const localeIdSchema = z.string().regex(/^([a-z]+)|([a-z]+-[A-Z]+)$/, {
  *
  * @internal
  */
-export const localeSchema = z.object({
+export const localeEntrySchema = z.object({
   /**
    * Language code for the locale, eg `en-us`
    */
@@ -53,7 +53,7 @@ export const localeSchema = z.object({
  *
  * @internal
  */
-export const localeRegistrySchema = z.array(localeSchema)
+export const localeRegistrySchema = z.array(localeEntrySchema)
 
 /**
  * A very minimal package.json schema
@@ -121,5 +121,5 @@ export const resourcesSchema = z.record(
     .string()
     .min(1)
     .regex(/^[a-z][a-zA-Z0-9.-_]/),
-  z.string(),
+  z.string().optional(),
 )

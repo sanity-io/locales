@@ -11,5 +11,7 @@ const pluralSuffixRegex = new RegExp(`_(${pluralSuffixes.join('|')})$`)
  * @internal
  */
 export function getCanonicalResourceKey(key: string) {
+  return key
+  // @todo For now, ignore the plural suffixes, but look into how to deal with this
   return key.replace(pluralSuffixRegex, '')
 }

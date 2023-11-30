@@ -3,7 +3,8 @@ import traverse from '@babel/traverse'
 import {type ProxifiedModule, loadFile} from 'magicast'
 import {globby} from 'globby'
 import {getRootPath} from './getRootPath'
-import type {Resource, ResourceBundle} from '../types'
+import type {BaseResource, ResourceBundle} from '../types'
+import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 
 const DEPENDENCIES = ['sanity', '@sanity/vision']
 const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/src/**/*.ts`
@@ -12,10 +13,12 @@ const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/src/**/*.ts`
  * Get officially defined bundles from the Sanity source code.
  * Packages extracted from are defined in `DEPENDENCIES` and must be installed.
  *
+ * @note This function is memoized, and does not invalidate
  * @returns An array of bundles
  * @internal
  */
-export async function getOfficialBundles() {
+
+export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles() {
   const rootPath = await getRootPath()
   const files = await globby(GLOB_PATTERN, {cwd: rootPath})
 
@@ -40,7 +43,7 @@ export async function getOfficialBundles() {
   }
 
   return bundles
-}
+})
 
 function getLocaleResourceImport(file: ProxifiedModule) {
   return file.imports.$items.find((item) => item.imported === 'defineLocalesResources')
@@ -86,7 +89,7 @@ function extractResources(ast: Node, local: string, fileName: string): ResourceB
     )
   }
 
-  const resources: Resource[] = resourcesArg.properties.map((prop) => {
+  const resources: BaseResource[] = resourcesArg.properties.map((prop) => {
     if (prop.type !== 'ObjectProperty') {
       throw new Error(`Found non-object property in defineLocaleResources in ${fileName}`)
     }
@@ -120,7 +123,9 @@ function extractResources(ast: Node, local: string, fileName: string): ResourceB
     }
 
     const key = prop.key.value
-    const comments = prop.leadingComments
+    const comments = (prop.leadingComments || [])
+      .filter((comment) => comment.type === 'CommentBlock')
+      .map((comment) => comment.value)
     const value =
       prop.value.type === 'StringLiteral'
         ? prop.value.value
@@ -139,6 +144,6 @@ function extractResources(ast: Node, local: string, fileName: string): ResourceB
   }
 }
 
-function sortResources(resources: Resource[]) {
+function sortResources(resources: BaseResource[]) {
   return resources.sort((a, b) => a.key.localeCompare(b.key))
 }

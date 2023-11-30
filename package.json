@@ -20,13 +20,14 @@
   "author": "Sanity.io <hello@sanity.io>",
   "scripts": {
     "build": "turbo run build",
-    "build:code-owners": "tsx src/cli/codeOwners",
-    "build:studio-locales": "tsx src/cli/studioLocales",
-    "build:write-packages": "tsx src/cli/writeLocalePackages",
-    "check:missing": "tsx src/cli/printMissingResources",
+    "build:code-owners": "tsx src/cli/reconcileCodeOwners",
+    "build:packages": "tsx src/cli/reconcilePackages",
+    "build:studio": "tsx src/cli/reconcileStudio",
+    "check:missing": "tsx src/cli/listMissingResources",
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "reconcile": "tsx src/cli/reconcile"
   },
   "prettier": {
     "bracketSpacing": false,

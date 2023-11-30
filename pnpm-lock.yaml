@@ -77,9 +77,6 @@ importers:
 
   apps/studio:
     dependencies:
-      '@sanity/locale-en-us':
-        specifier: workspace:*
-        version: link:../../locales/en-US
       '@sanity/locale-no-nb':
         specifier: workspace:*
         version: link:../../locales/no-NB
@@ -117,12 +114,6 @@ importers:
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
-
-  locales/en-US:
-    dependencies:
-      sanity:
-        specifier: i18n
-        version: 3.20.3-i18n.247(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/no-NB:
     dependencies:
