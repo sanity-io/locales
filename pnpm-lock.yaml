@@ -108,6 +108,9 @@ importers:
       '@sanity/locale-fr-fr':
         specifier: workspace:*
         version: link:../../locales/fr-FR
+      '@sanity/locale-it':
+        specifier: workspace:*
+        version: link:../../locales/it
       '@sanity/locale-jp':
         specifier: workspace:*
         version: link:../../locales/jp
@@ -174,6 +177,12 @@ importers:
         version: 3.20.3-i18n.247(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/fr-FR:
+    dependencies:
+      sanity:
+        specifier: i18n
+        version: 3.20.3-i18n.247(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/it:
     dependencies:
       sanity:
         specifier: i18n

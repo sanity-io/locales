@@ -19,6 +19,7 @@
     "@sanity/locale-de": "workspace:*",
     "@sanity/locale-es": "workspace:*",
     "@sanity/locale-fr-fr": "workspace:*",
+    "@sanity/locale-it": "workspace:*",
     "@sanity/locale-jp": "workspace:*",
     "@sanity/locale-ko": "workspace:*",
     "@sanity/locale-no-nb": "workspace:*",
