@@ -46,7 +46,7 @@ const registry: LocaleRegistry = [
   },
   {
     id: 'ko',
-    name: 'Korean',
+    name: '한국어',
     maintainers: [],
     contributors: [],
     isOfficial: false,

@@ -2,7 +2,7 @@ import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
   id: 'ko',
-  title: 'Korean',
+  title: '한국어',
   bundles: [
     {
       namespace: 'structure',
@@ -27,7 +27,7 @@ const locale = defineLocale({
 })
 
 /**
- * Korean locale/translation plugin for Sanity Studio
+ * 한국어 locale/translation plugin for Sanity Studio
  *
  * @public
  */
