@@ -102,7 +102,7 @@ async function loadNamespace(locale: Locale, namespace: string): Promise<Namespa
   const filePath = await getNamespacePath(locale, namespace)
   const mod = await import(filePath).catch((err) => {
     if (err.code === 'ERR_MODULE_NOT_FOUND') {
-      return { default: {} }
+      return {default: {}}
     }
 
     throw err

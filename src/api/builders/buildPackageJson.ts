@@ -50,10 +50,12 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
         : MINIMUM_SANITY_VERSION,
     },
 
-    contributors: Array.from(contributors).sort().map((contributor) => ({
-      name: contributor,
-      url: `https://github.com/${contributor}`
-    })),
+    contributors: Array.from(contributors)
+      .sort()
+      .map((contributor) => ({
+        name: contributor,
+        url: `https://github.com/${contributor}`,
+      })),
 
     // pkg-utils preferred export order
     type: 'module',
