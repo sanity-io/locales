@@ -7,6 +7,7 @@ import {jpLocale} from '@sanity/locale-jp'
 import {koLocale} from '@sanity/locale-ko'
 import {noNBLocale} from '@sanity/locale-no-nb'
 import {ptBRLocale} from '@sanity/locale-pt-br'
+import {ptPTLocale} from '@sanity/locale-pt-pt'
 
 export const locales = [
   deLocale(),
@@ -17,4 +18,5 @@ export const locales = [
   koLocale(),
   noNBLocale(),
   ptBRLocale(),
+  ptPTLocale(),
 ]
