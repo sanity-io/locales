@@ -1,0 +1,51 @@
+{
+  "name": "@sanity/locale-fr-fr",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Français locale/translation for Sanity Studio",
+  "keywords": [
+    "sanity",
+    "i18n",
+    "locale",
+    "localization",
+    "fr-FR"
+  ],
+  "homepage": "https://github.com/sanity-io/locales#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/locales/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/locales.git",
+    "directory": "locales/fr-FR"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
+    "clean": "rimraf dist",
+    "pkg:build": "pkg build --strict",
+    "pkg:check": "pkg check --strict"
+  },
+  "peerDependencies": {
+    "sanity": "i18n"
+  }
+}

@@ -1,0 +1,100 @@
+import {removeUndefinedLocaleResources} from 'sanity'
+
+export default removeUndefinedLocaleResources({
+  /**
+   * Context: "Vision" is a Sanity studio plugin which allows users to execute GROQ-queries
+   * against their dataset and see the results in different ways. It is often used to explore
+   * a dataset, debug queries and get a better understanding of the data.
+   */
+
+  /**
+   * Some features has a "New" label indicating that the feature was recently introduced.
+   * This defines what the text of that label is. Keep it short and sweet.
+   */
+  'label.new': 'Nouveau',
+
+  /** --- Settings --- */
+
+  /** Label for the "Dataset" dropdown in vision settings */
+  'settings.dataset-label': 'Jeu de données',
+
+  /** Label for the "API version" dropdown in settings */
+  'settings.api-version-label': 'Version de l’API',
+
+  /** Label for the "other" versions within the "API version" dropdown */
+  'settings.other-api-version-label': 'Autre',
+
+  /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
+  'settings.custom-api-version-label': 'Version personnalisée de l’API',
+
+  /** Error label for when the API version in 'Custom API version' input is invalid */
+  'settings.error.invalid-api-version': 'Version de l’API invalide',
+
+  /**
+   * Label for the "Perspective" dropdown in vision settings
+   * @see {@link https://www.sanity.io/docs/perspectives}
+   */
+  'settings.perspective-label': 'Perspective',
+
+  /** Title for popover that explains what "Perspectives" are */
+  'settings.perspectives.title': 'Perspectives',
+
+  /** Description for popover that explains what "Perspectives" are */
+  'settings.perspectives.description':
+    'Les perspectives permettent à votre requête de s’exécuter contre différentes "vues" du contenu de votre jeu de données',
+  /** Call to action to read the docs related to "Perspectives" */
+  'settings.perspectives.action.docs-link': 'Lire la documentation',
+
+  /** --- Query editor --- */
+
+  /** Label for "Query" editor/input */
+  'query.label': 'Requête',
+
+  /** Label for 'Line' indicator when there is an error within the query */
+  'query.error.line': 'Ligne',
+
+  /** Label for 'Column' indicator when there is an error within the query */
+  'query.error.column': 'Colonne',
+
+  /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
+  'query.url': 'URL de la requête',
+
+  /** --- Params editor --- */
+
+  /** Label for "Params" (parameters) editor/input */
+  'params.label': 'Paramètres',
+
+  /** Error message for when the "Params" input are not a valid json */
+  'params.error.params-invalid-json': 'Les paramètres ne sont pas un JSON valide',
+
+  /** --- Results view/explorer --- */
+
+  /** Label for "Result" explorer/view */
+  'result.label': 'Résultat',
+
+  /** Label for "Execution time" information of the fetched query */
+  'result.execution-time-label': 'Exécution',
+
+  /** Label for "End to End time" information of the fetched query */
+  'result.end-to-end-time-label': 'Temps de bout en bout',
+
+  /** "Not applicable" message for when there is no Execution time or End to End time information
+   * available for the query (eg when the query has not been executed, or errored) */
+  'result.timing-not-applicable': 'n/a',
+
+  /** --- Actions -- */
+
+  /** Label for executing the query, eg doing a fetch */
+  'action.query-execute': 'Récupérer',
+
+  /** Label for cancelling an ongoing query */
+  'action.query-cancel': 'Annuler',
+
+  /** Label for setting up a listener */
+  'action.listen-execute': 'Écouter',
+  /** Label for stopping an ongoing listen operation */
+  'action.listen-cancel': 'Arrêter',
+
+  /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
+  'action.copy-url-to-clipboard': 'Copier dans le presse-papiers',
+})

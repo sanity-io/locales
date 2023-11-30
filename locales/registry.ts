@@ -9,6 +9,13 @@ const registry: LocaleRegistry = [
     contributors: ['rexxars'],
     isOfficial: false,
   },
+  {
+    id: 'fr-FR',
+    name: 'Français',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
 ]
 
 export default registry
