@@ -20,6 +20,12 @@
     "directory": "locales/no-NB"
   },
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "rexxars",
+      "url": "https://github.com/rexxars"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
