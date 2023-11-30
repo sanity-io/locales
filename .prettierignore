@@ -1,0 +1,13 @@
+/.vscode
+/.turbo
+
+/apps/*/dist
+/apps/*/.turbo
+/apps/*/.sanity
+/apps/node_modules
+
+/locales/*/dist
+/locales/*/.turbo
+/locales/node_modules
+
+pnpm-lock.yaml
