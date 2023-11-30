@@ -66,3 +66,13 @@ export interface BundleModule {
   filename: string
   resources: ResourceMap
 }
+
+/**
+ * Result of a missing resources operation (eg either find, add missing etc)
+ *
+ * @internal
+ */
+export interface MissingResources {
+  namespace: string
+  missingKeys: Set<string>
+}
