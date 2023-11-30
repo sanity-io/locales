@@ -4,5 +4,13 @@ import {esLocale} from '@sanity/locale-es'
 import {frFRLocale} from '@sanity/locale-fr-fr'
 import {jpLocale} from '@sanity/locale-jp'
 import {noNBLocale} from '@sanity/locale-no-nb'
+import {ptBRLocale} from '@sanity/locale-pt-br'
 
-export const locales = [deLocale(), esLocale(), frFRLocale(), jpLocale(), noNBLocale()]
+export const locales = [
+  deLocale(),
+  esLocale(),
+  frFRLocale(),
+  jpLocale(),
+  noNBLocale(),
+  ptBRLocale(),
+]

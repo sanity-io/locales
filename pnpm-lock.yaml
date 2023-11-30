@@ -114,6 +114,9 @@ importers:
       '@sanity/locale-no-nb':
         specifier: workspace:*
         version: link:../../locales/no-NB
+      '@sanity/locale-pt-br':
+        specifier: workspace:*
+        version: link:../../locales/pt-BR
       '@sanity/ui':
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
@@ -180,6 +183,12 @@ importers:
         version: 3.20.3-i18n.247(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/no-NB:
+    dependencies:
+      sanity:
+        specifier: i18n
+        version: 3.20.3-i18n.247(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/pt-BR:
     dependencies:
       sanity:
         specifier: i18n
