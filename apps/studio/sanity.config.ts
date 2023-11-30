@@ -1,8 +1,8 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
 import {locales} from './locales'
+import {localizationTest} from './schemas/localizationTest'
 
 export default defineConfig({
   title: 'i18n',
@@ -13,6 +13,6 @@ export default defineConfig({
   plugins: [deskTool(), visionTool(), ...locales],
 
   schema: {
-    types: schemaTypes,
+    types: [localizationTest],
   },
 })
