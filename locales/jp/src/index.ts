@@ -2,7 +2,7 @@ import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
   id: 'jp',
-  title: 'Japanese',
+  title: '日本語',
   bundles: [
     {
       namespace: 'structure',
@@ -27,7 +27,7 @@ const locale = defineLocale({
 })
 
 /**
- * Japanese locale/translation plugin for Sanity Studio
+ * 日本語 locale/translation plugin for Sanity Studio
  *
  * @public
  */

@@ -11,7 +11,7 @@ const registry: LocaleRegistry = [
   },
   {
     id: 'jp',
-    name: 'Japanese',
+    name: '日本語',
     maintainers: [],
     contributors: [],
     isOfficial: false,
