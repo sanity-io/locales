@@ -41,7 +41,7 @@ export async function getOrderedResources(): Promise<OrderedResources> {
       const localeIndex: Record<string, Resource | undefined> = {}
       const missing: Resource[] = []
       const bundle =
-        locale.bundles.find((bundle) => bundle.namespace === namespace)?.resources || {}
+        locale.bundles.find((candidate) => candidate.namespace === namespace)?.resources || {}
 
       for (const baseResource of resources) {
         const resource: Resource = {
@@ -80,7 +80,7 @@ export async function getOrderedResources(): Promise<OrderedResources> {
   }
 }
 
-async function loadNamespacesForRegistry(
+function loadNamespacesForRegistry(
   registry: Locale[],
   namespaceNames: string[],
 ): Promise<LocaleWithBundles[]> {

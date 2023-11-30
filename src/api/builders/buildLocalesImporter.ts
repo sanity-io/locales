@@ -1,6 +1,6 @@
 import type {Locale} from '../../types'
 
-export async function buildLocalesImporter(locales: Locale[]) {
+export function buildLocalesImporter(locales: Locale[]): string {
   const imports: string[] = []
   const identifiers: string[] = []
 

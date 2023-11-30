@@ -1,9 +1,9 @@
-import {StructureBuilder} from 'sanity/desk'
-import {TestDocumentDeleter} from './TestDocumentDeleter'
-import {localizationTest} from '../schemas/localizationTest'
 import {TrashIcon} from '@sanity/icons'
+import type {ListBuilder, StructureBuilder} from 'sanity/desk'
+import {localizationTest} from '../schemas/localizationTest'
+import {TestDocumentDeleter} from './TestDocumentDeleter'
 
-export const structureDefinition = (S: StructureBuilder) =>
+export const structureDefinition = (S: StructureBuilder): ListBuilder =>
   S.list()
     .id('root')
     .title('🌍 🌏 🌎')

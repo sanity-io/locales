@@ -2,7 +2,7 @@ import type {Locale} from '../../types'
 import {getBaseNamespaces} from '../../util/getBaseNamespaces'
 import {buildStringLiteral} from './buildStringLiteral'
 
-export async function buildLocaleIndexModule(locale: Locale) {
+export async function buildLocaleIndexModule(locale: Locale): Promise<string> {
   const {id, name, exportName, packageName} = locale
   const namespaces = await getBaseNamespaces()
   const bundleTemplates =
@@ -19,7 +19,7 @@ export async function buildLocaleIndexModule(locale: Locale) {
 
     /**
      * ${locale.name} locale/translation plugin for Sanity Studio
-     * 
+     *
      * @public
      */
     export const ${exportName} = definePlugin({
@@ -27,7 +27,7 @@ export async function buildLocaleIndexModule(locale: Locale) {
       i18n: {
         locales: [locale],
       },
-    }) 
+    })
   `.trim()
 }
 

@@ -1,3 +1,6 @@
+/* eslint-disable no-process-exit */
+/* eslint-disable no-console */
+
 /**
  * Execute a script (in the form of an async function) and log the result,
  * exiting with a proper error message (with stack) on any rejection.
@@ -5,7 +8,7 @@
  * @param fn - Function to execute
  * @internal
  */
-export function runScript(fn: () => Promise<unknown>) {
+export function runScript(fn: () => Promise<unknown>): void {
   fn()
     .then((result) => {
       if (typeof result !== 'undefined') {

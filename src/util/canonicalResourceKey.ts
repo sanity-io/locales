@@ -1,5 +1,5 @@
-const pluralSuffixes = ['zero', 'one', 'two', 'few', 'many', 'other']
-const pluralSuffixRegex = new RegExp(`_(${pluralSuffixes.join('|')})$`)
+// const pluralSuffixes = ['zero', 'one', 'two', 'few', 'many', 'other']
+// const pluralSuffixRegex = new RegExp(`_(${pluralSuffixes.join('|')})$`)
 
 /**
  * Gets a "canonical" resource key, which is the key without a plural suffix.
@@ -13,5 +13,5 @@ const pluralSuffixRegex = new RegExp(`_(${pluralSuffixes.join('|')})$`)
 export function getCanonicalResourceKey(key: string) {
   return key
   // @todo For now, ignore the plural suffixes, but look into how to deal with this
-  return key.replace(pluralSuffixRegex, '')
+  //return key.replace(pluralSuffixRegex, '')
 }

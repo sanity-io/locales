@@ -8,7 +8,7 @@ import {buildStringLiteral} from './buildStringLiteral'
  * @returns The code, which should be run through prettier
  * @internal
  */
-export function buildResourceBundle(resources: Resource[]) {
+export function buildResourceBundle(resources: Resource[]): string {
   // Note: We're not using an AST approach here because the semantics around comments are difficult
   // and often leaves comments on the same line as the property. Prettier doesn't always understand
   // quite how to format it, so this was the best I could come up with for now.

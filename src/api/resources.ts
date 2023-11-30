@@ -3,7 +3,7 @@ import {writeFormattedFile} from '../util/writeFormattedFile'
 import {getOrderedResources} from '../util/getOrderedResources'
 import {buildResourceBundle} from './builders/buildResourceBundle'
 
-export async function reconcileResources(locale: Locale) {
+export async function reconcileResources(locale: Locale): Promise<void> {
   const {locales} = await getOrderedResources()
   const localeResources = locales.find((candidate) => candidate.id === locale.id)
   if (!localeResources) {
@@ -30,12 +30,15 @@ export async function findMissingResources(forLocale?: Locale): Promise<MissingR
         continue
       }
 
-      const missingKeys = []
+      const missing = []
       for (const resource of namespace.missingResources) {
-        missingKeys.push(resource.key)
+        missing.push(resource.key)
       }
 
-      missingKeys.push({namespace, missingKeys})
+      missingKeys.push({
+        namespace: namespace.namespace,
+        missingKeys: missing,
+      })
     }
   }
 

@@ -10,14 +10,14 @@ import {buildPackageConfig} from './builders/buildPackageConfig'
 import {buildPackageJson} from './builders/buildPackageJson'
 import {reconcileResources} from './resources'
 
-export async function reconcileLocalePackages() {
+export async function reconcileLocalePackages(): Promise<void> {
   const locales = await getLocaleRegistry()
   for (const locale of locales) {
     await reconcileLocalePackage(locale)
   }
 }
 
-export async function reconcileLocalePackage(locale: Locale) {
+export async function reconcileLocalePackage(locale: Locale): Promise<void> {
   await ensureLocaleSourceDir(locale)
   await writeIndexModule(locale)
   await writePackageJson(locale)
@@ -45,11 +45,11 @@ async function writePackageJson(locale: Locale) {
 
 async function writePkgConfig(locale: Locale) {
   const config = await buildPackageConfig()
-  return await writeFormattedFile(joinPath(locale.path, 'package.config.ts'), config)
+  return writeFormattedFile(joinPath(locale.path, 'package.config.ts'), config)
 }
 
 async function writeLicense(locale: Locale) {
   const fromPath = joinPath(await getRootPath(), 'LICENSE')
   const toPath = joinPath(locale.path, 'LICENSE')
-  return await copyFile(fromPath, toPath)
+  return copyFile(fromPath, toPath)
 }

@@ -15,7 +15,7 @@ import {buildLocalesImporter} from './builders/buildLocalesImporter'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {getLocaleRegistry} from '../util/getLocaleRegistry'
 
-export async function reconcileStudio() {
+export async function reconcileStudio(): Promise<void> {
   const studioRootPath = joinPath(await getRootPath(), 'apps', 'studio')
 
   // Write the `locales.ts` file which imports all the modules and exports an array of them all

@@ -1,4 +1,4 @@
-export function buildPackageConfig() {
+export function buildPackageConfig(): string {
   return `
   import {defineConfig} from '@sanity/pkg-utils'
 

@@ -13,7 +13,7 @@ const template = `
 # Locale-specific owners:
 `.trim()
 
-export async function reconcileCodeOwners() {
+export async function reconcileCodeOwners(): Promise<void> {
   const codeOwnersPath = joinPath(await getRootPath(), 'CODEOWNERS')
   const locales = await getLocaleRegistry()
 
