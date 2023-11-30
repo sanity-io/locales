@@ -29,15 +29,6 @@
     "lint": "turbo run lint",
     "reconcile": "tsx src/cli/reconcile"
   },
-  "prettier": {
-    "bracketSpacing": false,
-    "plugins": [
-      "prettier-plugin-packagejson"
-    ],
-    "printWidth": 100,
-    "semi": false,
-    "singleQuote": true
-  },
   "dependencies": {
     "@babel/generator": "^7.23.5",
     "@babel/traverse": "^7.23.5",
