@@ -135,6 +135,10 @@ function extractResources(ast: Node, local: string, fileName: string): ResourceB
 
   return {
     namespace: namespaceArg.value,
-    resources,
+    resources: sortResources(resources),
   }
+}
+
+function sortResources(resources: Resource[]) {
+  return resources.sort((a, b) => a.key.localeCompare(b.key))
 }
