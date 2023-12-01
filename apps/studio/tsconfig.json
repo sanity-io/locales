@@ -1,3 +1,8 @@
 {
+  "compilerOptions": {
+    "paths": {
+      "@sanity/locale-no-nb": ["../../locales/no-NB/src"]
+    }
+  },
   "extends": "../../tsconfig.json"
 }
