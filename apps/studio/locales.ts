@@ -2,4 +2,4 @@
 import {noNBLocale} from '@sanity/locale-no-nb'
 import {jpLocale} from '@sanity/locale-jp'
 
-export const locales = [noNBLocale(),jpLocale()]
+export const locales = [noNBLocale(), jpLocale()]

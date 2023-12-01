@@ -20,6 +20,7 @@
     "directory": "locales/jp"
   },
   "license": "MIT",
+  "contributors": [],
   "type": "module",
   "exports": {
     ".": {
