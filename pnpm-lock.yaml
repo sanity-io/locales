@@ -90,9 +90,6 @@ importers:
       '@sanity/locale-no-nb':
         specifier: workspace:*
         version: link:../../locales/no-NB
-      '@sanity/locale-no-nn':
-        specifier: workspace:*
-        version: link:../../locales/no-NN
       '@sanity/ui':
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
@@ -135,12 +132,6 @@ importers:
         version: 5.3.2
 
   locales/no-NB:
-    dependencies:
-      sanity:
-        specifier: i18n
-        version: 3.20.3-i18n.247(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
-
-  locales/no-NN:
     dependencies:
       sanity:
         specifier: i18n
@@ -3939,11 +3930,11 @@ packages:
     dev: false
 
   /date-now@1.0.1:
-    resolution: {integrity: sha512-yiizelQCqYLUEVT4zqYihOW6Ird7Qyc6fD3Pv5xGxk4+Jz0rsB1dMN2KyNV6jgOHYh5K+sPGCSOknQN4Upa3pg==}
+    resolution: {integrity: sha1-u30IZDjevkGCpIX7PfP7+5nWFTw=}
     dev: false
 
   /debounce@1.0.0:
-    resolution: {integrity: sha512-4FCfBL8uZFIh3BShn4AlxH4O9F5v+CVriJfiwW8Me/MhO7NqBE5JO5WO48NasbsY9Lww/KYflB79MejA3eKhxw==}
+    resolution: {integrity: sha1-CUivUT0uTOQHkW+FBqQj0/nPctg=}
     dependencies:
       date-now: 1.0.1
     dev: false
@@ -8309,7 +8300,7 @@ packages:
     dev: false
 
   /xregexp@2.0.0:
-    resolution: {integrity: sha512-xl/50/Cf32VsGq/1R8jJE5ajH1yMCQkpmoS10QbFZWl2Oor4H0Me64Pu2yxvsRWK3m6soJbmGfzSR7BYmDcWAA==}
+    resolution: {integrity: sha1-UqY+VsoLhKfzpfPWGHLxJq16WUM=}
     dev: false
 
   /xtend@4.0.2:
