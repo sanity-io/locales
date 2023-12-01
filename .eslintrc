@@ -1,4 +1,16 @@
 {
   "root": true,
-  "extends": "@sanity/eslint-config-studio"
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "extends": ["sanity", "sanity/typescript", "prettier"],
+  "ignorePatterns": ["apps/*/dist", "locales/*/dist"],
+  "rules": {
+    "no-undef": "off",
+    "no-empty": "off"
+  }
 }

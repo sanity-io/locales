@@ -1,5 +1,6 @@
 import {writeFile} from 'node:fs/promises'
 import {format, resolveConfig} from 'prettier'
+import {getRootPath} from './getRootPath'
 
 /**
  * Write the given code to the given file path, formatting it using Prettier
@@ -7,25 +8,17 @@ import {format, resolveConfig} from 'prettier'
  *
  * @param filePath - File path to write file to
  * @param content - Content to format and write
- * @param options - Optional options for the formatter
  * @returns Promise resolving when file has been written
  * @internal
  */
-export async function writeFormattedFile(
-  filePath: string,
-  content: string,
-  options: {configPath?: string; postProcess?: (code: string) => string} = {},
-): Promise<void> {
-  const prettierConfig = (await resolveConfig(options.configPath || filePath)) || {}
+export async function writeFormattedFile(filePath: string, content: string): Promise<void> {
+  const rootPath = await getRootPath()
+  const prettierConfig = (await resolveConfig(rootPath)) || {}
 
-  let formattedCode = await format(content, {
+  const formattedCode = await format(content, {
     ...prettierConfig,
     filepath: filePath,
   })
-
-  if (options.postProcess) {
-    formattedCode = options.postProcess(formattedCode)
-  }
 
   return writeFile(filePath, formattedCode)
 }

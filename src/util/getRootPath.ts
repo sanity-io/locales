@@ -1,6 +1,7 @@
 import {dirname} from 'path'
 import {fileURLToPath} from 'url'
 import {packageUp} from 'package-up'
+import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 
 /**
  * Get the path to the root of this project
@@ -8,7 +9,7 @@ import {packageUp} from 'package-up'
  * @returns Resolves to the path of the root of this project
  * @internal
  */
-export async function getRootPath() {
+export const getRootPath = memoizeAsyncFunction<string>(async function getRootPath() {
   const currentDir = fileURLToPath(new URL('.', import.meta.url))
   const pkgJsonPath = await packageUp({cwd: currentDir})
   if (!pkgJsonPath) {
@@ -16,4 +17,4 @@ export async function getRootPath() {
   }
 
   return dirname(pkgJsonPath)
-}
+})

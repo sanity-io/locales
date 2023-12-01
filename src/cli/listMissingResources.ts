@@ -1,7 +1,7 @@
 import {parseArgs} from 'node:util'
 import {green, red, cyan, bold} from 'ansi-colors'
-import {findMissingResources} from '../api/bundles'
-import {readLocaleRegistry} from '../util/readLocaleRegistry'
+import {findMissingResources} from '../api/resources'
+import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {runScript} from '../util/runScript'
 
 async function printMissingResources() {
@@ -17,7 +17,7 @@ async function printMissingResources() {
     },
   })
 
-  const registry = await readLocaleRegistry()
+  const registry = await getLocaleRegistry()
   const locales = args.values.locale
     ? args.values.locale.map((id) => {
         const entry = registry.find((locale) => locale.id === id)
