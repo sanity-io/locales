@@ -24,7 +24,9 @@
     "build:code-owners": "tsx src/cli/reconcileCodeOwners",
     "build:packages": "tsx src/cli/reconcilePackages",
     "build:studio": "tsx src/cli/reconcileStudio",
+    "check:lint": "eslint .",
     "check:missing": "tsx src/cli/listMissingResources",
+    "check:types": "tsc --noEmit",
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write .",
     "lint": "turbo run lint",
@@ -58,7 +60,8 @@
     "eslint-config-sanity": "^7.0.1",
     "openai": "^4.20.1",
     "rimraf": "^5.0.5",
-    "turbo": "^1.10.16"
+    "turbo": "^1.10.16",
+    "typescript": "^5.3.2"
   },
   "packageManager": "pnpm@8.6.10",
   "engines": {
