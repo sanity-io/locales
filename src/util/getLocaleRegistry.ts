@@ -24,6 +24,8 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
       exportName: getExportName(locale),
       packageName: getPackageName(locale),
       path: joinPath(localesPath, locale.id),
+      cardinalSuffixes: getPluralSuffixes(locale, 'cardinal'),
+      ordinalSuffixes: getPluralSuffixes(locale, 'ordinal'),
     }),
   )
 })
@@ -48,4 +50,18 @@ export function getPackageName(locale: LocaleEntry): string {
  */
 function getExportName(locale: LocaleEntry): string {
   return `${locale.id.replace(/-/g, '')}Locale`
+}
+
+function getPluralSuffixes(locale: LocaleEntry, type: Intl.PluralRuleType): string[] {
+  const rules = new Intl.PluralRules(locale.id, {type})
+
+  // While not technically true for all locales, we want to support `zero` as a suffix for all
+  // locales anyway, since it is supported by the underlying framework and is often used for
+  // more natural "empty states".
+  const suffixes = new Set<string>(['zero'])
+  for (let i = 0; i < 15; i++) {
+    suffixes.add(rules.select(i))
+  }
+
+  return Array.from(suffixes)
 }

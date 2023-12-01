@@ -41,6 +41,16 @@ export interface Locale extends LocaleEntry {
    * Path to the root of the locale directory
    */
   path: string
+
+  /**
+   * The different suffixes that can be used for cardinal pluralization
+   */
+  cardinalSuffixes: string[]
+
+  /**
+   * The different suffixes that can be used for ordinal pluralization
+   */
+  ordinalSuffixes: string[]
 }
 
 /**
