@@ -1,5 +1,5 @@
-// const pluralSuffixes = ['zero', 'one', 'two', 'few', 'many', 'other']
-// const pluralSuffixRegex = new RegExp(`_(${pluralSuffixes.join('|')})$`)
+const pluralSuffixes = ['zero', 'one', 'two', 'few', 'many', 'other']
+const pluralSuffixRegex = new RegExp(`_(${pluralSuffixes.join('|')})$`)
 
 /**
  * Gets a "canonical" resource key, which is the key without a plural suffix.
@@ -10,8 +10,17 @@
  * @returns The canonical version of the key
  * @internal
  */
-export function getCanonicalResourceKey(key: string) {
-  return key
-  // @todo For now, ignore the plural suffixes, but look into how to deal with this
-  //return key.replace(pluralSuffixRegex, '')
+export function getCanonicalResourceKey(key: string): string {
+  return key.replace(pluralSuffixRegex, '')
+}
+
+/**
+ * Checks whether or not the given key is a pluralized resource key, eg ends with `_other`, `_one`
+ *
+ * @param key - The key to check
+ * @returns `true` if the key is pluralized, `false` otherwise
+ * @internal
+ */
+export function isPluralizedResourceKey(key: string): boolean {
+  return pluralSuffixRegex.test(key)
 }

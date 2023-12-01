@@ -1,16 +1,17 @@
+import {resourcesSchema} from '../schemas'
 import type {
-  NamespaceModule,
   Locale,
   LocaleWithBundles,
   LocaleWithResources,
+  NamespaceModule,
   NamespacedBaseResources,
   OrderedResources,
   Resource,
 } from '../types'
+import {getCanonicalResourceKey, isPluralizedResourceKey} from './canonicalResourceKey'
 import {getBaseBundles} from './getBaseBundles'
 import {getLocaleRegistry} from './getLocaleRegistry'
 import {getNamespacePath} from './getLocalesPath'
-import {resourcesSchema} from '../schemas'
 
 export async function getOrderedResources(): Promise<OrderedResources> {
   const [base, registry] = await Promise.all([getBaseBundles(), getLocaleRegistry()])
@@ -49,6 +50,8 @@ export async function getOrderedResources(): Promise<OrderedResources> {
           value: bundle[baseResource.key] || null,
           baseValue: baseResource.value,
           comments: baseResource.comments,
+          canonicalKey: getCanonicalResourceKey(baseResource.key),
+          pluralizable: isPluralizedResourceKey(baseResource.key),
         }
 
         if (resource.value === null) {

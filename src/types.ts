@@ -91,9 +91,36 @@ export interface BaseResource {
  * @internal
  */
 export interface Resource {
+  /**
+   * The key of this resource, eg `structure.menuItem`
+   */
   key: string
+
+  /**
+   * The translated value of this resource, eg the value that is used in the locale.
+   * `null` if not translated.
+   */
   value: string | null
+
+  /**
+   * The "base" value of this resource, eg the value that is used as the default
+   * (the english value, in other words)
+   */
   baseValue: string
+
+  /**
+   * The "canonical" name of this resource, without any pluralization suffix
+   */
+  canonicalKey: string
+
+  /**
+   * Whether this resource is pluralizable or not, eg by adding `_one`, `_other` etc
+   */
+  pluralizable: boolean
+
+  /**
+   * Comments for this resource, eg the original comment from the source code
+   */
   comments?: string[]
 }
 
