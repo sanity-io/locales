@@ -4,6 +4,7 @@ import type {
   localeEntrySchema,
   packageJsonSchema,
   resourcesSchema,
+  tsConfigSchema,
 } from './schemas'
 
 /**
@@ -48,6 +49,13 @@ export interface Locale extends LocaleEntry {
  * @internal
  */
 export type PackageJson = zodInfer<typeof packageJsonSchema>
+
+/**
+ * A very minimal tsconfig.json schema
+ *
+ * @internal
+ */
+export type TSConfig = zodInfer<typeof tsConfigSchema>
 
 /**
  * Object of resources, eg `key: value` pairs

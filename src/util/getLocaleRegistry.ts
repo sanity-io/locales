@@ -21,17 +21,31 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
   return parsed.map(
     (locale): Locale => ({
       ...locale,
-      exportName: getIdentifier(locale),
+      exportName: getExportName(locale),
       packageName: getPackageName(locale),
       path: joinPath(localesPath, locale.id),
     }),
   )
 })
 
-function getIdentifier(locale: LocaleEntry): string {
-  return `${locale.id.replace(/-/g, '')}Locale`
+/**
+ * Get the package name for a locale
+ *
+ * @param locale - Locale to get package name for
+ * @returns The package name
+ * @internal
+ */
+export function getPackageName(locale: LocaleEntry): string {
+  return `@sanity/locale-${locale.id}`.toLowerCase()
 }
 
-function getPackageName(locale: LocaleEntry): string {
-  return `@sanity/locale-${locale.id}`.toLowerCase()
+/**
+ * Get locale export identifer
+ *
+ * @param locale - Locale to get identifier for
+ * @returns The export name
+ * @internal
+ */
+function getExportName(locale: LocaleEntry): string {
+  return `${locale.id.replace(/-/g, '')}Locale`
 }

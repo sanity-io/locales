@@ -123,3 +123,21 @@ export const resourcesSchema = z.record(
     .regex(/^[a-z][a-zA-Z0-9.-_]/),
   z.string().optional(),
 )
+
+/**
+ * A very minimal tsconfig.json schema, including only the parts we care about validating
+ *
+ * @internal
+ */
+export const tsConfigSchema = z
+  .object({
+    compilerOptions: z
+      .object({
+        paths: z.record(z.string(), z.array(z.string())),
+      })
+      .partial(),
+  })
+  .partial({
+    compilerOptions: true,
+  })
+  .passthrough()
