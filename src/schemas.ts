@@ -2,23 +2,17 @@ import {z} from 'zod'
 
 const ghUsernamePattern = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i
 
-const localeIdSchema = z
-  .string()
-  .regex(/^[a-z-]+$/, {
-    message:
-      'Should only include lowercase characters in the a-z range, and dashes to seperate language and regional codes, eg `en-us`.',
-  })
-  .refine((val) => !val.startsWith('-') && !val.endsWith('-'), {
-    message: 'Should not start or end with a dash',
-  })
-  .refine((val) => !val.includes('--'), {message: 'Should not include multiple dashes'})
+const localeIdSchema = z.string().regex(/^([a-z]+)|([a-z]+-[A-Z]+)$/, {
+  message:
+    'Should only include lowercase characters, or lowercased followed by uppercase, eg `en` or `en-US`',
+})
 
 /**
  * An entry in the `locales/registry.ts` file, which records the available locales and their maintainers
  *
  * @internal
  */
-export const localeSchema = z.object({
+export const localeEntrySchema = z.object({
   /**
    * Language code for the locale, eg `en-us`
    */
@@ -59,7 +53,7 @@ export const localeSchema = z.object({
  *
  * @internal
  */
-export const localeRegistrySchema = z.array(localeSchema)
+export const localeRegistrySchema = z.array(localeEntrySchema)
 
 /**
  * A very minimal package.json schema
@@ -127,5 +121,23 @@ export const resourcesSchema = z.record(
     .string()
     .min(1)
     .regex(/^[a-z][a-zA-Z0-9.-_]/),
-  z.string(),
+  z.string().optional(),
 )
+
+/**
+ * A very minimal tsconfig.json schema, including only the parts we care about validating
+ *
+ * @internal
+ */
+export const tsConfigSchema = z
+  .object({
+    compilerOptions: z
+      .object({
+        paths: z.record(z.string(), z.array(z.string())),
+      })
+      .partial(),
+  })
+  .partial({
+    compilerOptions: true,
+  })
+  .passthrough()

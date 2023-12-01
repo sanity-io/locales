@@ -1,10 +1,16 @@
 import {defineField, defineType} from 'sanity'
+import {EarthGlobeIcon} from '@sanity/icons'
+
+const schemaTypeName = 'localesStudioLocalizationTest'
+
+export const hiddenPropName = 'isI18nStudioDocument'
 
 export const localizationTest = defineType({
-  name: 'localizationTest',
+  name: schemaTypeName,
   title: 'Localization test',
   description: 'A collection of field types, to showcase a wide range of localizable surfaces',
   type: 'document',
+  icon: EarthGlobeIcon,
   fields: [
     defineField({
       name: 'string',
@@ -61,7 +67,8 @@ export const localizationTest = defineType({
       name: 'reference',
       title: 'Reference',
       type: 'reference',
-      to: [{type: 'localizationTest'}],
+      to: [{type: schemaTypeName}],
+      weak: true,
     }),
     // defineField({
     //   name: 'crossDatasetReference',
@@ -140,6 +147,12 @@ export const localizationTest = defineType({
       type: 'array',
       of: [{type: 'block'}, {type: 'image'}],
       validation: (Rule) => Rule.required().min(3),
+    }),
+    defineField({
+      name: hiddenPropName,
+      type: 'boolean',
+      hidden: true,
+      initialValue: true,
     }),
   ],
   preview: {
