@@ -1,5 +1,5 @@
 import {parseArgs} from 'node:util'
-import {green, red, cyan, bold} from 'ansi-colors'
+import {green, cyan, bold, yellow} from 'ansi-colors'
 import {findMissingResources} from '../api/resources'
 import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {runScript} from '../util/runScript'
@@ -29,16 +29,17 @@ async function printMissingResources() {
     : registry
 
   for (const locale of locales) {
-    const missing = await findMissingResources(locale)
-    if (missing.length === 0) {
+    const resources = await findMissingResources(locale)
+    if (resources.length === 0) {
       continue
     }
 
     console.log(bold('Missing resources for locale %s'), cyan(locale.id))
-    for (const entry of missing) {
-      console.log('\n  Namespace %s:', red(entry.namespace))
-      for (const key of entry.missingKeys) {
-        console.log('    %s', green(JSON.stringify(key)))
+    for (const entry of resources) {
+      console.log('\n  Namespace %s:', bold(yellow(entry.namespace)))
+      for (const missing of entry.missingKeys) {
+        const suffix = missing.pluralizable ? yellow(' (pluralizable)') : ''
+        console.log('    %s%s', green(JSON.stringify(missing.key)), suffix)
       }
     }
   }

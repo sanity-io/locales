@@ -16,10 +16,23 @@ export async function reconcileResources(locale: Locale): Promise<void> {
   }
 }
 
-export async function findMissingResources(forLocale?: Locale): Promise<MissingResources[]> {
-  const {locales} = await getOrderedResources()
+export interface MissingResourcesOptions {
+  /**
+   * Whether to use the canonical key for the missing resources, or the original key
+   *
+   * @default false
+   */
+  useCanonicalKeys?: boolean
+}
 
-  const missingKeys: {namespace: string; missingKeys: string[]}[] = []
+export async function findMissingResources(
+  forLocale?: Locale,
+  options: MissingResourcesOptions = {},
+): Promise<MissingResources[]> {
+  const {locales} = await getOrderedResources()
+  const {useCanonicalKeys = false} = options
+
+  const namespaces: MissingResources[] = []
   for (const locale of locales) {
     if (forLocale && locale.id !== forLocale.id) {
       continue
@@ -30,17 +43,27 @@ export async function findMissingResources(forLocale?: Locale): Promise<MissingR
         continue
       }
 
-      const missing = []
+      const keys = new Set<string>()
+      const missing: MissingResources['missingKeys'] = []
       for (const resource of namespace.missingResources) {
-        missing.push(resource.key)
+        const resourceKey = useCanonicalKeys ? resource.canonicalKey : resource.key
+        if (keys.has(resourceKey)) {
+          continue
+        }
+
+        keys.add(resourceKey)
+        missing.push({
+          key: resourceKey,
+          pluralizable: resource.isPluralizable,
+        })
       }
 
-      missingKeys.push({
+      namespaces.push({
         namespace: namespace.namespace,
         missingKeys: missing,
       })
     }
   }
 
-  return missingKeys
+  return namespaces
 }

@@ -126,7 +126,7 @@ export interface Resource {
   /**
    * Whether this resource is pluralizable or not, eg by adding `_one`, `_other` etc
    */
-  pluralizable: boolean
+  isPluralizable: boolean
 
   /**
    * Comments for this resource, eg the original comment from the source code
@@ -162,7 +162,7 @@ export interface NamespaceModule {
  */
 export interface MissingResources {
   namespace: string
-  missingKeys: string[]
+  missingKeys: {key: string; pluralizable: boolean}[]
 }
 
 /**
@@ -184,6 +184,7 @@ export interface NamespacedBaseResources {
   namespace: string
   resources: BaseResource[]
   indexedResources: Record<string, BaseResource | undefined>
+  groupedPluralizableResources: Record<string, BaseResource[]>
 }
 
 export interface LocaleWithResources extends Locale {

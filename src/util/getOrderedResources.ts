@@ -8,7 +8,11 @@ import type {
   OrderedResources,
   Resource,
 } from '../types'
-import {getCanonicalResourceKey, isPluralizedResourceKey} from './canonicalResourceKey'
+import {
+  getCanonicalResourceKey,
+  getPluralSuffix,
+  isPluralizableEnglishResource,
+} from './pluralization'
 import {getBaseBundles} from './getBaseBundles'
 import {getLocaleRegistry} from './getLocaleRegistry'
 import {getNamespacePath} from './getLocalesPath'
@@ -23,21 +27,39 @@ export async function getOrderedResources(): Promise<OrderedResources> {
 
   for (const {namespace, resources} of base) {
     const baseIndex: NamespacedBaseResources['indexedResources'] = {}
+    const basePluralizable: NamespacedBaseResources['groupedPluralizableResources'] = {}
 
     for (const resource of resources) {
       baseIndex[resource.key] = resource
+
+      if (isPluralizableEnglishResource(resource)) {
+        const canonical = getCanonicalResourceKey(resource.key)
+        if (!basePluralizable[canonical]) {
+          basePluralizable[canonical] = []
+        }
+        basePluralizable[canonical].push(resource)
+      }
     }
 
     namespacedBaseResources.push({
       namespace,
       resources,
       indexedResources: baseIndex,
+      groupedPluralizableResources: basePluralizable,
     })
   }
 
   for (const locale of locales) {
     const namespaces: LocaleWithResources['namespaces'] = []
     for (const {namespace, resources} of base) {
+      const indexedBase = namespacedBaseResources.find(
+        (candidate) => candidate.namespace === namespace,
+      )
+      if (!indexedBase) {
+        throw new Error(`Base bundle for namespace ${namespace} not found`)
+      }
+
+      const pluralizableResources = indexedBase.groupedPluralizableResources
       const localeResources: Resource[] = []
       const localeIndex: Record<string, Resource | undefined> = {}
       const missing: Resource[] = []
@@ -51,7 +73,17 @@ export async function getOrderedResources(): Promise<OrderedResources> {
           baseValue: baseResource.value,
           comments: baseResource.comments,
           canonicalKey: getCanonicalResourceKey(baseResource.key),
-          pluralizable: isPluralizedResourceKey(baseResource.key),
+          isPluralizable: isPluralizableEnglishResource(baseResource),
+        }
+
+        // If the resource does not have a value, and the suffix used in English (eg `one`) is not
+        // supported by the locale, do not count it as missing, and skip including it in the output
+        if (
+          resource.value === null &&
+          resource.isPluralizable &&
+          !locale.cardinalSuffixes.includes(getPluralSuffix(resource))
+        ) {
+          continue
         }
 
         if (resource.value === null) {
