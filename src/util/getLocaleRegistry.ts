@@ -18,16 +18,18 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
   const localesPath = await getLocalesPath()
 
   const parsed = localeRegistrySchema.parse(registry)
-  return parsed.map(
-    (locale): Locale => ({
-      ...locale,
-      exportName: getExportName(locale),
-      packageName: getPackageName(locale),
-      path: joinPath(localesPath, locale.id),
-      cardinalSuffixes: getPluralSuffixes(locale, 'cardinal'),
-      ordinalSuffixes: getPluralSuffixes(locale, 'ordinal'),
-    }),
-  )
+  return parsed
+    .map(
+      (locale): Locale => ({
+        ...locale,
+        exportName: getExportName(locale),
+        packageName: getPackageName(locale),
+        path: joinPath(localesPath, locale.id),
+        cardinalSuffixes: getPluralSuffixes(locale, 'cardinal'),
+        ordinalSuffixes: getPluralSuffixes(locale, 'ordinal'),
+      }),
+    )
+    .sort((a, b) => a.id.localeCompare(b.id))
 })
 
 /**
