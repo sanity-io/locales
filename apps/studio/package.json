@@ -21,6 +21,7 @@
     "@sanity/locale-fr-fr": "workspace:*",
     "@sanity/locale-jp": "workspace:*",
     "@sanity/locale-no-nb": "workspace:*",
+    "@sanity/locale-pt-br": "workspace:*",
     "@sanity/ui": "^1.9.3",
     "@sanity/vision": "i18n",
     "groq": "^3.20.2",
