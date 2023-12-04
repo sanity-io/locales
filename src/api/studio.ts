@@ -15,6 +15,7 @@ import {getRootPath} from '../util/getRootPath'
 import {readJsonFile} from '../util/readJsonFile'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {buildLocalesImporter} from './builders/buildLocalesImporter'
+import {tryHandlePackageJsonMergeConflict} from './resolvers/packageJsonMergeConflict'
 import {tryHandleTsConfigMergeConflict} from './resolvers/tsConfigMergeConflict'
 
 export async function reconcileStudio(): Promise<void> {
@@ -28,7 +29,9 @@ export async function reconcileStudio(): Promise<void> {
 
   // Add dependencies for all the locale packs to `package.json`
   const pkgJsonPath = joinPath(studioRootPath, 'package.json')
-  const pkgJson = await readJsonFile(pkgJsonPath, packageJsonSchema)
+  const pkgJson = await readJsonFile(pkgJsonPath, packageJsonSchema, [
+    tryHandlePackageJsonMergeConflict,
+  ])
 
   const dependencies: Record<string, string> = {}
 
