@@ -24,30 +24,29 @@ export const translateText = async (text: string, targetLanguage: string): Promi
     return JSON.stringify({})
   }
 
-  const chatCompletion = await openai.chat.completions
-    .create({
-      messages: [
-        {
-          role: 'system',
-          content: systemPrompt,
-        },
-        {
-          role: 'user',
-          content: `I would like this translated to ${targetLanguage}. Respond with JSON:`,
-        },
-        {
-          role: 'user',
-          content: text,
-        },
-      ],
-      model: 'gpt-4-1106-preview',
-      stream: false,
-      temperature: 0,
-      // eslint-disable-next-line camelcase
-      response_format: {
-        type: 'json_object',
+  const chatCompletion = await openai.chat.completions.create({
+    messages: [
+      {
+        role: 'system',
+        content: systemPrompt,
       },
-    })
+      {
+        role: 'user',
+        content: `I would like this translated to ${targetLanguage}. Respond with JSON:`,
+      },
+      {
+        role: 'user',
+        content: text,
+      },
+    ],
+    model: 'gpt-4-1106-preview',
+    stream: false,
+    temperature: 0,
+    // eslint-disable-next-line camelcase
+    response_format: {
+      type: 'json_object',
+    },
+  })
 
   return chatCompletion.choices[0].message.content || ''
 }

@@ -54,4 +54,3 @@ jobs:
           gh pr create --title "Automated Translation Updates" --body "This PR includes automated translation updates." --head translation-updates --base main --repo ${{ github.repository }} --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
