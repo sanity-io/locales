@@ -12,26 +12,28 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '18.3.0' # Specify your Node.js version
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Run reconcile
-        run: npm run reconcile
+        run: pnpm run reconcile
 
       - name: Run autotranslate
-        run: npm run autotranslate
+        run: pnpm run autotranslate
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Check for changes
         id: git-check
         run: |
-          git diff
           if [ -z "$(git status --porcelain)" ]; then
             echo "::set-output name=changes::false"
           else
