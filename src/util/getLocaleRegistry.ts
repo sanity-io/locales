@@ -1,8 +1,10 @@
+import {readFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
-import type {Locale, LocaleEntry, LocaleRegistry} from '../types'
 import {localeRegistrySchema} from '../schemas'
-import {memoizeAsyncFunction} from './memoizeAsyncFunction'
+import type {Locale, LocaleEntry, LocaleRegistry} from '../types'
 import {getLocalesPath} from './getLocalesPath'
+import {getRootPath} from './getRootPath'
+import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 
 /**
  * Read and validate the configured locales from `locales/registry.ts`.
@@ -11,14 +13,11 @@ import {getLocalesPath} from './getLocalesPath'
  * @internal
  */
 export const getLocaleRegistry = memoizeAsyncFunction(async () => {
-  const registry: LocaleRegistry = await import('../../locales/registry.js').then(
-    (locale) => locale.default,
-  )
-
   const localesPath = await getLocalesPath()
+  const locales = await loadRegistry()
 
-  const parsed = localeRegistrySchema.parse(registry)
-  return parsed
+  return locales
+    .sort((a, b) => a.id.localeCompare(b.id))
     .map(
       (locale): Locale => ({
         ...locale,
@@ -29,7 +28,6 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
         ordinalSuffixes: getPluralSuffixes(locale, 'ordinal'),
       }),
     )
-    .sort((a, b) => a.id.localeCompare(b.id))
 })
 
 /**
@@ -66,4 +64,48 @@ function getPluralSuffixes(locale: LocaleEntry, type: Intl.PluralRuleType): stri
   }
 
   return Array.from(suffixes)
+}
+
+async function loadRegistry(): Promise<LocaleRegistry> {
+  // esbuild does not throw a catchable error on syntax errors, so we need to check for them in a
+  // slightly less elegant way (string matching for the win, am i right?)
+  const registryFile = joinPath(await getRootPath(), 'locales', 'registry.ts')
+  const lines = (await readFile(registryFile, 'utf8')).split('\n')
+  if (
+    lines.some((line) => line.startsWith('<<<<<<< ')) ||
+    lines.some((line) => line.startsWith('>>>>>>> ')) ||
+    lines.some((line) => line.startsWith('======='))
+  ) {
+    throw new Error(
+      `Locale registry (locales/registry.ts) contains merge conflict markers, please resolve them and run reconcile again`,
+    )
+  }
+
+  let mod: any
+  try {
+    mod = await import(registryFile)
+  } catch (err: unknown) {
+    throw new Error(
+      `Failed to load locale registry (locales/registry.ts): ${
+        err instanceof Error ? err.message : err
+      }`,
+    )
+  }
+
+  if (!mod || typeof mod !== 'object' || Array.isArray(mod) || !('default' in mod)) {
+    throw new Error(
+      `Locale registry (locales/registry.ts) must have a default export with an array of locales`,
+    )
+  }
+
+  try {
+    const registry: LocaleRegistry = mod.default
+    return localeRegistrySchema.parse(registry)
+  } catch (err: unknown) {
+    throw new Error(
+      `Locale registry (locales/registry.ts) is invalid: ${
+        err instanceof Error ? err.message : err
+      }`,
+    )
+  }
 }
