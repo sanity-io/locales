@@ -30,7 +30,8 @@ Hooray! We appreciate your contribution and love seeing new locales added!
      - Searching for `: undefined,` should give you a good indicator if any is missing.
      - You can also run `pnpm run check:missing --locale <locale>` to get a list of missing translations (if running with npm, you may need to run `npm run check:missing -- --locale <locale>` - note the double-dash).
 5. Add and make changes to the translations! You can use the `pnpm run dev` command to start up a local studio with your changes.
-6. Add your changes to git (`git add .`) and commit (`git commit -m "feat(<locale>): add <locale name> locale"`). We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for our commit messages.
+6. Add your changes to git (`git add .`) and commit (`git commit -m "feat(<locale-id>): add <locale name> locale"`). We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for our commit messages.
+   - Note: The reconciliation script will make changes to `pnpm-lock.yaml`, `apps/studio` and possibly `locales/registry.ts` (if not sorted correctly). This is expected, and should be commited.
 7. Push your changes to a fork and send a pull request!
 
 ## Troubleshooting
