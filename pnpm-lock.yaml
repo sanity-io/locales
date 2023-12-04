@@ -38,6 +38,9 @@ importers:
       globby:
         specifier: ^14.0.0
         version: 14.0.0
+      json5:
+        specifier: ^2.2.3
+        version: 2.2.3
       magicast:
         specifier: ^0.3.2
         version: 0.3.2

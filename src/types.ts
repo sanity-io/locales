@@ -215,3 +215,16 @@ export interface LocaleWithResources extends Locale {
     missingResources: Resource[]
   }[]
 }
+
+/**
+ * A function that tries to resolve a parse error in a JSON file.
+ * If it can't resolve the error, it should throw.
+ * If it can resolve the error, it should return the parsed JSON.
+ *
+ * @param content - The content of the JSON file, with potential parse errors
+ * @param error - The error that was thrown when trying to parse the JSON
+ * @returns The parsed JSON, with parse errors resolved
+ * @throws If unable to resolve errors
+ * @internal
+ */
+export type JsonParseErrorResolver = (content: string, error: unknown) => any

@@ -15,6 +15,7 @@ import {getRootPath} from '../util/getRootPath'
 import {readJsonFile} from '../util/readJsonFile'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {buildLocalesImporter} from './builders/buildLocalesImporter'
+import {tryHandleTsConfigMergeConflict} from './resolvers/tsConfigMergeConflict'
 
 export async function reconcileStudio(): Promise<void> {
   const studioRootPath = joinPath(await getRootPath(), 'apps', 'studio')
@@ -54,7 +55,9 @@ export async function reconcileStudio(): Promise<void> {
 
 async function reconcileTsConfigPaths(locales: Locale[], studioRootPath: string) {
   const tsConfigPath = joinPath(studioRootPath, 'tsconfig.json')
-  const tsConfig = await readJsonFile(tsConfigPath, tsConfigSchema)
+  const tsConfig = await readJsonFile(tsConfigPath, tsConfigSchema, [
+    tryHandleTsConfigMergeConflict,
+  ])
   const newConfig = {
     ...tsConfig,
     compilerOptions: {
