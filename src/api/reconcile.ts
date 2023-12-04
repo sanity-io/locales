@@ -4,10 +4,12 @@ import {getRootPath} from '../util/getRootPath'
 import {reconcileCodeOwners} from './codeOwners'
 import {reconcileLocalePackages} from './locales'
 import {reconcileStudio} from './studio'
+import {reconcileRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
 export async function reconcileAll(): Promise<void> {
+  await reconcileRegistry()
   await reconcileLocalePackages()
   await reconcileCodeOwners()
   await reconcileStudio()

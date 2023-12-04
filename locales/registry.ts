@@ -3,15 +3,8 @@ import type {LocaleRegistry} from '../src/types'
 // See CONTRIBUTING.md for more information on how to add a new locale
 const registry: LocaleRegistry = [
   {
-    id: 'no-NB',
-    name: 'Norsk (Bokmål)',
-    maintainers: ['rexxars'],
-    contributors: ['rexxars'],
-    isOfficial: false,
-  },
-  {
-    id: 'jp',
-    name: '日本語',
+    id: 'de',
+    name: 'Deutsch',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -31,15 +24,15 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
-    id: 'de',
-    name: 'Deutsch',
+    id: 'it',
+    name: 'Italiano',
     maintainers: [],
     contributors: [],
     isOfficial: false,
   },
   {
-    id: 'pt-BR',
-    name: 'Português do Brasil',
+    id: 'jp',
+    name: '日本語',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -52,8 +45,15 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
-    id: 'it',
-    name: 'Italiano',
+    id: 'no-NB',
+    name: 'Norsk (Bokmål)',
+    maintainers: ['rexxars'],
+    contributors: ['rexxars'],
+    isOfficial: false,
+  },
+  {
+    id: 'pt-BR',
+    name: 'Português do Brasil',
     maintainers: [],
     contributors: [],
     isOfficial: false,

@@ -5,6 +5,8 @@ import type {Locale, LocaleEntry, LocaleRegistry} from '../types'
 import {getLocalesPath} from '../util/getLocalesPath'
 import {getRootPath} from '../util/getRootPath'
 import {memoizeAsyncFunction} from '../util/memoizeAsyncFunction'
+import {writeFormattedFile} from '../util/writeFormattedFile'
+import {buildRegistry} from './builders/buildRegistry'
 
 /**
  * Read and validate the configured locales from `locales/registry.ts`.
@@ -29,6 +31,16 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
       }),
     )
 })
+
+/**
+ * Reconciles the registry file by ensuring it always is up to spec, formatted and sorted by ID
+ *
+ * @internal
+ */
+export async function reconcileRegistry(): Promise<void> {
+  const registry = await loadRegistry()
+  await writeFormattedFile(await getRegistryPath(), buildRegistry(registry))
+}
 
 /**
  * Get the package name for a locale
@@ -69,8 +81,8 @@ function getPluralSuffixes(locale: LocaleEntry, type: Intl.PluralRuleType): stri
 async function loadRegistry(): Promise<LocaleRegistry> {
   // esbuild does not throw a catchable error on syntax errors, so we need to check for them in a
   // slightly less elegant way (string matching for the win, am i right?)
-  const registryFile = joinPath(await getRootPath(), 'locales', 'registry.ts')
-  const lines = (await readFile(registryFile, 'utf8')).split('\n')
+  const registryFilePath = await getRegistryPath()
+  const lines = (await readFile(registryFilePath, 'utf8')).split('\n')
   if (
     lines.some((line) => line.startsWith('<<<<<<< ')) ||
     lines.some((line) => line.startsWith('>>>>>>> ')) ||
@@ -83,7 +95,7 @@ async function loadRegistry(): Promise<LocaleRegistry> {
 
   let mod: any
   try {
-    mod = await import(registryFile)
+    mod = await import(registryFilePath)
   } catch (err: unknown) {
     throw new Error(
       `Failed to load locale registry (locales/registry.ts): ${
@@ -108,4 +120,8 @@ async function loadRegistry(): Promise<LocaleRegistry> {
       }`,
     )
   }
+}
+
+async function getRegistryPath(): Promise<string> {
+  return joinPath(await getRootPath(), 'locales', 'registry.ts')
 }
