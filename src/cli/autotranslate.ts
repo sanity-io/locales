@@ -11,15 +11,15 @@ import {writeFormattedFile} from '../util/writeFormattedFile'
 // indexedResources.
 function templateMissingResources(
   indexedResources: Record<string, Resource | undefined>,
-  missingKeys: string[],
+  missingKeys: {key: string, pluralizable: boolean}[],
 ) {
   let tpl = `// English base translation\n`
   tpl += `const i18nextKeys = {\n`
-  missingKeys.forEach((key) => {
-    const val = indexedResources[key]
+  missingKeys.forEach((entry) => {
+    const val = indexedResources[entry.key]
     if (val) {
       tpl += `  // ${val.comments}\n`
-      tpl += `  ${JSON.stringify(key)}: ${JSON.stringify(val.baseValue)},\n`
+      tpl += `  ${JSON.stringify(entry.key)}: ${JSON.stringify(val.baseValue)},\n`
     }
   })
   tpl += `};\n`
@@ -40,9 +40,9 @@ async function autotranslate() {
 
       // set the values from translation into the ns
       entry.missingKeys.forEach((key) => {
-        const val = ns.indexedResources[key]
+        const val = ns.indexedResources[key.key]
         if (val) {
-          val.value = translation[key]
+          val.value = translation[key.key]
         }
       })
 
