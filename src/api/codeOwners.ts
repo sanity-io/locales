@@ -1,7 +1,7 @@
 import {writeFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
-import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {getRootPath} from '../util/getRootPath'
+import {getLocaleRegistry} from './registry'
 
 const MAX_FILE_SIZE = 3e6 // 3 MB
 

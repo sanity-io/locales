@@ -1,7 +1,7 @@
+import {bold, cyan, green, yellow} from 'ansi-colors'
 import {parseArgs} from 'node:util'
-import {green, cyan, bold, yellow} from 'ansi-colors'
+import {getLocaleRegistry} from '../api/registry'
 import {findMissingResources} from '../api/resources'
-import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {runScript} from '../util/runScript'
 
 async function printMissingResources() {

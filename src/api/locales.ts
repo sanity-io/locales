@@ -1,13 +1,13 @@
 import {copyFile, mkdir} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
 import type {Locale} from '../types'
-import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {getLocaleSourcePath} from '../util/getLocalesPath'
 import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {buildLocaleIndexModule} from './builders/buildLocaleIndexModule'
 import {buildPackageConfig} from './builders/buildPackageConfig'
 import {buildPackageJson} from './builders/buildPackageJson'
+import {getLocaleRegistry} from './registry'
 import {reconcileResources} from './resources'
 
 export async function reconcileLocalePackages(): Promise<void> {

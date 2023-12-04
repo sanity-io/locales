@@ -2,9 +2,9 @@ import {readFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
 import {localeRegistrySchema} from '../schemas'
 import type {Locale, LocaleEntry, LocaleRegistry} from '../types'
-import {getLocalesPath} from './getLocalesPath'
-import {getRootPath} from './getRootPath'
-import {memoizeAsyncFunction} from './memoizeAsyncFunction'
+import {getLocalesPath} from '../util/getLocalesPath'
+import {getRootPath} from '../util/getRootPath'
+import {memoizeAsyncFunction} from '../util/memoizeAsyncFunction'
 
 /**
  * Read and validate the configured locales from `locales/registry.ts`.

@@ -10,11 +10,11 @@
 import {join as joinPath, relative as relativePath} from 'node:path'
 import {packageJsonSchema, tsConfigSchema} from '../schemas'
 import type {Locale, TSConfig} from '../types'
-import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {getRootPath} from '../util/getRootPath'
 import {readJsonFile} from '../util/readJsonFile'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {buildLocalesImporter} from './builders/buildLocalesImporter'
+import {getLocaleRegistry} from './registry'
 import {tryHandlePackageJsonMergeConflict} from './resolvers/packageJsonMergeConflict'
 import {tryHandleTsConfigMergeConflict} from './resolvers/tsConfigMergeConflict'
 

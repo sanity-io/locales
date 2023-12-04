@@ -1,6 +1,6 @@
 import {defineCliConfig} from 'sanity/cli'
 import locales from '../../locales/registry'
-import {getPackageName} from '../../src/util/getLocaleRegistry'
+import {getPackageName} from '../../src/api/registry'
 import {getLocaleSourcePath} from '../../src/util/getLocalesPath'
 
 export default defineCliConfig({

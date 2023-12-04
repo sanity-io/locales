@@ -1,3 +1,4 @@
+import {getLocaleRegistry} from '../api/registry'
 import {resourcesSchema} from '../schemas'
 import type {
   Locale,
@@ -8,14 +9,13 @@ import type {
   OrderedResources,
   Resource,
 } from '../types'
+import {getBaseBundles} from './getBaseBundles'
+import {getNamespacePath} from './getLocalesPath'
 import {
   getCanonicalResourceKey,
   getPluralSuffix,
   isPluralizableEnglishResource,
 } from './pluralization'
-import {getBaseBundles} from './getBaseBundles'
-import {getLocaleRegistry} from './getLocaleRegistry'
-import {getNamespacePath} from './getLocalesPath'
 
 export async function getOrderedResources(): Promise<OrderedResources> {
   const [base, registry] = await Promise.all([getBaseBundles(), getLocaleRegistry()])
