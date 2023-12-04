@@ -1,5 +1,7 @@
+import {execFile as execFileCb} from 'node:child_process'
 import {copyFile, mkdir} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
+import {promisify} from 'node:util'
 import type {Locale} from '../types'
 import {getLocaleRegistry} from '../util/getLocaleRegistry'
 import {getLocaleSourcePath} from '../util/getLocalesPath'
@@ -10,11 +12,14 @@ import {buildPackageConfig} from './builders/buildPackageConfig'
 import {buildPackageJson} from './builders/buildPackageJson'
 import {reconcileResources} from './resources'
 
+const execFile = promisify(execFileCb)
+
 export async function reconcileLocalePackages(): Promise<void> {
   const locales = await getLocaleRegistry()
   for (const locale of locales) {
     await reconcileLocalePackage(locale)
   }
+  await reconcileLockFile()
 }
 
 export async function reconcileLocalePackage(locale: Locale): Promise<void> {
@@ -52,4 +57,10 @@ async function writeLicense(locale: Locale) {
   const fromPath = joinPath(await getRootPath(), 'LICENSE')
   const toPath = joinPath(locale.path, 'LICENSE')
   return copyFile(fromPath, toPath)
+}
+
+async function reconcileLockFile() {
+  await execFile('pnpm', ['install', '--lockfile-only'], {
+    cwd: await getRootPath(),
+  })
 }
