@@ -4,6 +4,7 @@
       "@sanity/locale-de": ["../../locales/de/src"],
       "@sanity/locale-es": ["../../locales/es/src"],
       "@sanity/locale-fr-fr": ["../../locales/fr-FR/src"],
+      "@sanity/locale-it": ["../../locales/it/src"],
       "@sanity/locale-jp": ["../../locales/jp/src"],
       "@sanity/locale-ko": ["../../locales/ko/src"],
       "@sanity/locale-no-nb": ["../../locales/no-NB/src"],

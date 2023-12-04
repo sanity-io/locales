@@ -51,6 +51,13 @@ const registry: LocaleRegistry = [
     contributors: [],
     isOfficial: false,
   },
+  {
+    id: 'it',
+    name: 'Italiano',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
 ]
 
 export default registry
