@@ -19,6 +19,9 @@ export async function reconcileCodeOwners(): Promise<void> {
 
   const owners: string[] = []
   for (const {id, maintainers} of locales) {
+    if (maintainers.length === 0) {
+      continue
+    }
     const users = maintainers.map((user) => `@${user}`).join(' ')
     owners.push(`/locales/${id}/ ${users}`)
   }
