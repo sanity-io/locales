@@ -19,7 +19,7 @@
   "license": "MIT",
   "author": "Sanity.io <hello@sanity.io>",
   "scripts": {
-    "autotranslate": "tsx src/cli/autotranslate",
+    "autotranslate": "tsx src/cli/autoTranslate",
     "build": "turbo run build",
     "build:code-owners": "tsx src/cli/reconcileCodeOwners",
     "build:packages": "tsx src/cli/reconcilePackages",
