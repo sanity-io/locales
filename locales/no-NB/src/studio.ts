@@ -1459,21 +1459,21 @@ export default removeUndefinedLocaleResources({
   /** Label for loading history */
   'timeline.loading-history': 'Laster historikk…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': 'Opprettet',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': 'Opprettet',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': 'Slettet',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': 'Utkast forkastet',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': 'Redigert',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': 'Redigert live',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': 'Publisert',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': 'Avpublisert',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

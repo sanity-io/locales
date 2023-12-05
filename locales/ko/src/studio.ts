@@ -1462,21 +1462,21 @@ export default removeUndefinedLocaleResources({
   /** Label for loading history */
   'timeline.loading-history': '기록 로딩 중…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': '생성됨',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': '생성됨',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': '삭제됨',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': '초안 폐기됨',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': '편집됨',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': '실시간 편집됨',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': '게시됨',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': '게시 취소됨',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

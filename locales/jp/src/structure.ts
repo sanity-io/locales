@@ -207,7 +207,7 @@ export default removeUndefinedLocaleResources({
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '検査',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': '検索',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
   'document-inspector.view-mode.parsed': 'パース済み',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
