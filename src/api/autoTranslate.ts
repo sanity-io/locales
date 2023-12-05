@@ -16,29 +16,67 @@ const OPENAI_MODEL = 'gpt-4-1106-preview'
  */
 export async function autoTranslate(): Promise<void> {
   const {locales} = await getOrderedResources()
-  for (const locale of locales) {
+  for await (const locale of locales) {
     const missingResources = await findMissingResources(locale)
-    for (const entry of missingResources) {
+    for await (const entry of missingResources) {
+      console.log(
+        `Found ${entry.missingKeys.length} missing resources for ${locale.name} in ${entry.namespace}`,
+      )
       const ns = locale.namespaces.find((namespace) => namespace.namespace === entry.namespace)
       if (!ns) {
+        console.log(`Could not find namespace ${entry.namespace} in locale ${locale.name}`)
         continue
       }
 
-      const tpl = templateMissingResources(ns.indexedResources, entry.missingKeys)
-      const translation = JSON.parse(await translateText(tpl, locale.name))
-
-      // Set the values from translation into the namespace
-      entry.missingKeys.forEach((key) => {
-        const val = ns.indexedResources[key.key]
-        if (val) {
-          val.value = translation[key.key]
+      // Group entry.missingKeys into max 25 keys per request
+      const BATCH_SIZE = 25
+      const batches = []
+      let batch = []
+      for (const key of entry.missingKeys) {
+        if (batch.length === BATCH_SIZE) {
+          batches.push(batch)
+          batch = []
         }
-      })
+        batch.push(key)
+      }
 
-      // Write the bundle back to disk
-      for (const {filePath, resources} of locale.namespaces) {
-        const moduleCode = buildResourceBundle(resources)
-        await writeFormattedFile(filePath, moduleCode)
+      if (batch.length > 0) {
+        batches.push(batch)
+      }
+
+      // For each of the batches, translate the keys
+      for await (const currentBatch of batches) {
+        const keys = currentBatch.map((key) => key.key)
+        const tpl = templateMissingResources(ns.indexedResources, currentBatch)
+        /* eslint-disable no-console */
+        console.debug(tpl)
+        /* eslint-disable no-console */
+        console.log(
+          `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${batches.length} key batches for namespace ${ns.namespace}`,
+        )
+        const translation = JSON.parse(await translateText(tpl, locale.name))
+
+        // Set the values from translation into the namespace
+        keys.forEach((key) => {
+          const val = ns.indexedResources[key]
+          if (val) {
+            val.value = translation[key]
+          }
+        })
+
+        // Set the values from translation into the namespace
+        entry.missingKeys.forEach((key) => {
+          const val = ns.indexedResources[key.key]
+          if (val) {
+            val.value = translation[key.key]
+          }
+        })
+
+        // Write the bundle back to disk, to save our progress
+        for await (const {filePath, resources} of locale.namespaces) {
+          const moduleCode = buildResourceBundle(resources)
+          await writeFormattedFile(filePath, moduleCode)
+        }
       }
     }
   }
