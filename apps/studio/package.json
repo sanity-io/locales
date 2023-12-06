@@ -23,6 +23,7 @@
     "@sanity/locale-jp": "workspace:*",
     "@sanity/locale-ko": "workspace:*",
     "@sanity/locale-no-nb": "workspace:*",
+    "@sanity/locale-no-nn": "workspace:*",
     "@sanity/locale-pt-br": "workspace:*",
     "@sanity/locale-pt-pt": "workspace:*",
     "@sanity/ui": "^1.9.3",
