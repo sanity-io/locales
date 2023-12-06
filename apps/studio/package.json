@@ -18,6 +18,7 @@
     "@sanity/icons": "^2.7.0",
     "@sanity/locale-de": "workspace:*",
     "@sanity/locale-es": "workspace:*",
+    "@sanity/locale-fi": "workspace:*",
     "@sanity/locale-fr-fr": "workspace:*",
     "@sanity/locale-it": "workspace:*",
     "@sanity/locale-jp": "workspace:*",
