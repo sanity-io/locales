@@ -79,12 +79,18 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Restaurar la versión más reciente',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Este documento ha sido eliminado.',
-  /** The text for the permission check banner if there is are multiple roles */
-  'banners.permission-check-banner.plural-roles.text':
-    'Tus roles {{roles}} no tienen permisos para {{requiredPermission}} este documento.',
-  /** The text for the permission check banner if there is only one role */
-  'banners.permission-check-banner.singular-role.text':
-    'Tu rol {{roles}} no tiene permisos para {{requiredPermission}} este documento.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_one':
+    'Tu rol <Roles/> no tiene permisos para crear este documento.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_other':
+    'Tus roles <Roles/> no tienen permisos para crear este documento.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_one':
+    'Tu rol <Roles/> no tiene permisos para actualizar este documento.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_other':
+    'Tus roles <Roles/> no tienen permisos para actualizar este documento.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Recargar referencia',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -208,7 +214,7 @@ export default removeUndefinedLocaleResources({
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspeccionar',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': 'Buscar',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
   'document-inspector.view-mode.parsed': 'Analizado',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
