@@ -37,7 +37,7 @@
     "@babel/traverse": "^7.23.5",
     "@babel/types": "^7.23.5",
     "@sanity/pkg-utils": "^3.3.0",
-    "@sanity/vision": "i18n",
+    "@sanity/vision": "^3.21.0",
     "@types/babel__generator": "^7.6.7",
     "@types/babel__traverse": "^7.20.4",
     "@types/node": "^18.3.0",
@@ -48,7 +48,7 @@
     "package-up": "^5.0.0",
     "prettier": "^3.1.0",
     "prettier-plugin-packagejson": "^2.4.6",
-    "sanity": "i18n",
+    "sanity": "^3.21.0",
     "tsx": "^4.6.1",
     "zod": "^3.22.4"
   },

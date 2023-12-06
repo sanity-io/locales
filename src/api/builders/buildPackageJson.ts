@@ -5,8 +5,7 @@ import {readJsonFile} from '../../util/readJsonFile'
 import {getRootPath} from '../../util/getRootPath'
 import {packageJsonSchema} from '../../schemas'
 
-// @todo change to the minimum released version that has i18n
-const MINIMUM_SANITY_VERSION = 'i18n'
+const MINIMUM_SANITY_VERSION = '^3.21.0'
 
 export async function buildPackageJson(locale: Locale): Promise<string> {
   const targetPath = joinPath(await getLocalePath(locale), 'package.json')
