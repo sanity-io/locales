@@ -1,4 +1,5 @@
 import dotenv from 'dotenv'
+import {parseArgs} from 'util'
 import {autoTranslate, pushChanges} from '../api/autoTranslate'
 import {runScript} from '../util/runScript'
 
@@ -8,6 +9,19 @@ dotenv.config()
 
 // ¡Vamos!
 ;(async () => {
+  const args = parseArgs({
+    strict: true,
+    options: {
+      git: {
+        type: 'boolean',
+        description: 'Create git branches and push changes, then create PRs',
+      },
+    },
+  })
+
   await runScript(autoTranslate)
-  await runScript(pushChanges)
+
+  if (args.values.git) {
+    await runScript(pushChanges)
+  }
 })()
