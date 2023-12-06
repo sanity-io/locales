@@ -1,9 +1,15 @@
+import {execFile as execFileCb} from 'node:child_process'
+import {promisify} from 'node:util'
 import OpenAI from 'openai'
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
 import type {Resource} from '../types'
 import {getOrderedResources} from '../util/getOrderedResources'
+import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
+import {getLocaleRegistry} from './registry'
+
+const execFile = promisify(execFileCb)
 
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
@@ -170,4 +176,42 @@ value strings. The values may contain branded feature names of the Sanity.io
 platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake"
 etc. Do not translate any words and terms that are Sanity.io product features as
 it is important that the branding is preserved.`
+}
+
+/**
+ * Push the automated changes back to origin repository
+ *
+ * @internal
+ */
+export async function pushChanges(): Promise<void> {
+  const rootPath = await getRootPath()
+  const locales = await getLocaleRegistry()
+  const execGitCommand = (args: string[]) => execFile('git', args, {cwd: rootPath})
+
+  // Start from main branch
+  await execGitCommand(['checkout', 'main'])
+
+  for (const locale of locales) {
+    // Check if the locale has changes
+    const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
+    if (changes.trim() === '') {
+      continue
+    }
+
+    // Switch to a branch for the given locale
+    const branchName = `fix/auto/${locale.id}`
+    await execGitCommand(['checkout', '-B', branchName])
+
+    // The locale has changes, add the changes to index
+    await execGitCommand(['add', locale.path])
+
+    // Commit the changes
+    await execGitCommand(['commit', '-m', `fix(${locale.id}): automated translation updates`])
+
+    // Push the branch
+    await execGitCommand(['push', 'origin', branchName, '--force'])
+
+    // Switch back to main branch for next locale
+    await execGitCommand(['checkout', 'main'])
+  }
 }

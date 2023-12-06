@@ -8,8 +8,8 @@
  * @param fn - Function to execute
  * @internal
  */
-export function runScript(fn: () => Promise<unknown>): void {
-  fn()
+export function runScript(fn: () => Promise<unknown>): Promise<void> {
+  return fn()
     .then((result) => {
       if (typeof result !== 'undefined') {
         console.log(result)
