@@ -1,14 +1,13 @@
 import dotenv from 'dotenv'
-import {parseArgs} from 'util'
 import {autoTranslate, pushChanges} from '../api/autoTranslate'
 import {runScript} from '../util/runScript'
+import {parseArgs} from 'util'
 
 // Load environment variables from .env file, where API key for OpenAI is hopefully present.
 // The auto-translation will throw an error if the API key is missing.
 dotenv.config()
 
-// ¡Vamos!
-;(async () => {
+async function autoTranslateWithParams() {
   const args = parseArgs({
     strict: true,
     options: {
@@ -16,12 +15,25 @@ dotenv.config()
         type: 'boolean',
         description: 'Create git branches and push changes, then create PRs',
       },
+      locale: {
+        type: 'string',
+        short: 'l',
+        description: 'Locale ID',
+        multiple: true,
+      },
+      namespace: {
+        type: 'string',
+        short: 'n',
+        description: 'Namespace',
+        multiple: true,
+      }
     },
   })
 
-  await runScript(autoTranslate)
-
+  await autoTranslate(args.values.locale, args.values.namespace)
   if (args.values.git) {
     await runScript(pushChanges)
   }
-})()
+}
+
+runScript(autoTranslateWithParams)

@@ -21,11 +21,23 @@ const OPENAI_MODEL = 'gpt-4-1106-preview'
  * @returns A promise that resolves when all resources have been translated
  * @internal
  */
-export async function autoTranslate(): Promise<void> {
+export async function autoTranslate(
+  targetLocales?: string[],
+  namespaces?: string[],
+): Promise<void> {
   const {locales} = await getOrderedResources()
-  for await (const locale of locales) {
+  // Filter out locales that are not requested
+  const filteredLocales = locales.filter((locale) => {
+    return !targetLocales || targetLocales.includes(locale.id)
+  })
+
+  for (const locale of filteredLocales) {
     const missingResources = await findMissingResources(locale)
+
     for await (const entry of missingResources) {
+      if (!namespaces || namespaces.includes(entry.namespace) === false) {
+        continue
+      }
       console.log(
         `Found ${entry.missingKeys.length} missing resources for ${locale.name} in ${entry.namespace}`,
       )
@@ -53,36 +65,26 @@ export async function autoTranslate(): Promise<void> {
 
       // For each of the batches, translate the keys
       for await (const currentBatch of batches) {
-        const keys = currentBatch.map((key) => key.key)
         const tpl = templateMissingResources(ns.indexedResources, currentBatch)
-        /* eslint-disable no-console */
-        console.debug(tpl)
         /* eslint-disable no-console */
         console.log(
           `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
             batches.length
           } key batches for namespace ${ns.namespace}`,
         )
+
         const translation = JSON.parse(await translateText(tpl, locale.name))
 
         // Set the values from translation into the namespace
-        keys.forEach((key) => {
-          const val = ns.indexedResources[key]
-          if (val) {
-            val.value = translation[key]
-          }
-        })
-
-        // Set the values from translation into the namespace
-        entry.missingKeys.forEach((key) => {
+        currentBatch.forEach((key) => {
           const val = ns.indexedResources[key.key]
           if (val) {
             val.value = translation[key.key]
           }
         })
 
-        // Write the bundle back to disk, to save our progress
-        for await (const {filePath, resources} of locale.namespaces) {
+        // Write the bundle back to disk
+        for (const {filePath, resources} of locale.namespaces) {
           const moduleCode = buildResourceBundle(resources)
           await writeFormattedFile(filePath, moduleCode)
         }
