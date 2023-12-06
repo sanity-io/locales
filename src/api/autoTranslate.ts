@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 import OpenAI from 'openai'
@@ -214,7 +215,7 @@ export async function pushChanges(): Promise<void> {
     // Push the branch
     await execGitCommand(['push', 'origin', branchName, '--force'])
 
-    if (!(await hasExistingPR())) {
+    if (!(await hasExistingPR(branchName))) {
       // Now create the PR 🎉
       await execFile(
         'gh',
@@ -242,12 +243,12 @@ export async function pushChanges(): Promise<void> {
   }
 }
 
-async function hasExistingPR() {
+async function hasExistingPR(branchName: string) {
   const {stdout} = await execFile('gh', [
     'pr',
     'list',
     '--head',
-    'translation-updates',
+    branchName,
     '--repo',
     'sanity-io/locales',
     '--limit',
