@@ -27,33 +27,19 @@ jobs:
       - name: Run reconcile
         run: pnpm run reconcile
 
+      - name: Configure git
+        run: |
+          git config --global user.name 'AutoTranslator'
+          git config --global user.email 'hello@sanity.io'
+
       - name: Run autotranslate
         run: pnpm run autotranslate
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Check for changes
-        id: git-check
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "::set-output name=changes::false"
-          else
-            echo "::set-output name=changes::true"
-            git config --global user.name 'AI'
-            git config --global user.email 'rune@sanity.io'
-            git checkout -b translation-updates
-            git add .
-            git commit -m "Automated translation updates"
-          fi
-
-      - name: Push changes
-        if: steps.git-check.outputs.changes == 'true'
-        run: |
-          git push --force origin HEAD:translation-updates
-
-      - name: Create or update pull request
-        if: steps.git-check.outputs.changes == 'true'
-        run: |
-          gh pr create --title "Automated Translation Updates" --body "This PR includes automated translation updates." --head translation-updates --base main --repo ${{ github.repository }} --fill
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Create or update pull request
+      #   if: steps.git-check.outputs.changes == 'true'
+      #   run: |
+      #     gh pr create --title "Automated Translation Updates" --body "This PR includes automated translation updates." --head translation-updates --base main --repo ${{ github.repository }} --fill
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
