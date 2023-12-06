@@ -35,7 +35,7 @@ export async function autoTranslate(
     const missingResources = await findMissingResources(locale)
 
     for await (const entry of missingResources) {
-      if (!namespaces || namespaces.includes(entry.namespace) === false) {
+      if (namespaces && !namespaces.includes(entry.namespace)) {
         continue
       }
       console.log(
