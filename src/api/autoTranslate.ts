@@ -58,7 +58,9 @@ export async function autoTranslate(): Promise<void> {
         console.debug(tpl)
         /* eslint-disable no-console */
         console.log(
-          `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${batches.length} key batches for namespace ${ns.namespace}`,
+          `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
+            batches.length
+          } key batches for namespace ${ns.namespace}`,
         )
         const translation = JSON.parse(await translateText(tpl, locale.name))
 
@@ -206,10 +208,32 @@ export async function pushChanges(): Promise<void> {
     await execGitCommand(['add', locale.path])
 
     // Commit the changes
-    await execGitCommand(['commit', '-m', `fix(${locale.id}): automated translation updates`])
+    const commitMessage = `fix(${locale.id}): automated translation updates`
+    await execGitCommand(['commit', '-m', commitMessage])
 
     // Push the branch
     await execGitCommand(['push', 'origin', branchName, '--force'])
+
+    // Now create the PR 🎉
+    await execFile(
+      'gh',
+      [
+        'pr',
+        'create',
+        '--title',
+        commitMessage,
+        '--body',
+        'This PR includes automated translation updates.',
+        '--head',
+        branchName,
+        '--base',
+        'main',
+        '--repo',
+        'sanity-io/locales',
+        '--fill',
+      ],
+      {cwd: rootPath},
+    )
 
     // Switch back to main branch for next locale
     await execGitCommand(['checkout', 'main'])

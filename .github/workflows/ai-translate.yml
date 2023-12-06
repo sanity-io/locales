@@ -36,10 +36,4 @@ jobs:
         run: pnpm run autotranslate
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-      # - name: Create or update pull request
-      #   if: steps.git-check.outputs.changes == 'true'
-      #   run: |
-      #     gh pr create --title "Automated Translation Updates" --body "This PR includes automated translation updates." --head translation-updates --base main --repo ${{ github.repository }} --fill
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
