@@ -1,6 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>sanity-io/renovate-config"
+  "extends": ["github>sanity-io/renovate-config"],
+  "ignorePresets": [":ignoreModulesAndTests", "github>sanity-io/renovate-config:group-non-major"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "description": "Update Sanity modules that contains i18n resources automatically",
+      "matchDepNames": ["sanity", "@sanity/vision"],
+      "updateTypes": ["minor", "patch"],
+      "matchFileNames": ["package.json"],
+      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
+      "schedule": ["at any time"],
+      "rangeStrategy": "bump",
+      "groupSlug": "sanity",
+      "semanticCommitType": "chore",
+      "automerge": true,
+      "automergeStrategy": "squash"
+    }
   ]
 }
