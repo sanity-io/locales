@@ -1,21 +1,17 @@
-# Sanity studio locales
+# Sanity Studio Locales
 
-## Next
+Some description of this repository and such goes here.
 
-- [ ] Figure out missing keys in terms of pluralization
-- [ ] Maybe AI suggested strings for missing keys?
+## Current locales
 
-## Todo
+<!-- <locale-list> -->
 
-- [ ] Figure out auth story for allowing people into the studio, or configuring it to their own project
-- [ ] Pre-commit + CI step for prettier + eslint
-- [ ] Script for erroring on unknown files in locales
-- [ ] Script for generating status of each locale (how complete they are)
-- [ ] Pre-publish script that generates readme for locale
-  - [ ] Status at time of publishing (coverage etc)
-  - [ ] Official vs community contributed
-  - [ ] Date of publish and the latest version of Sanity at the time of publishing
-  - [ ] Credits list
-- [ ] Make a (CI) versioning and publish workflow
-- [ ] Make GitHub contribution PR template with checklist
-- [ ] Set up renovatebot or similar to update dependencies (_at least_ `sanity` and `@sanity/vision`)
+<!-- </locale-list> -->
+
+## Code of Conduct
+
+We aim to be an inclusive, welcoming community for everyone. To make that explicit, we have a [code of conduct](https://github.com/sanity-io/locales/blob/current/CODE_OF_CONDUCT.md) that applies to communication around the project.
+
+## License
+
+MIT-licensed. See LICENSE.
