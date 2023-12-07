@@ -52,6 +52,6 @@
     "pkg:check": "pkg check --strict"
   },
   "peerDependencies": {
-    "sanity": "^3.21.0"
+    "sanity": "i18n"
   }
 }
