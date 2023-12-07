@@ -29,6 +29,8 @@
     "@sanity/locale-pt-br": "workspace:*",
     "@sanity/locale-pt-pt": "workspace:*",
     "@sanity/locale-zh-cn": "workspace:*",
+    "@sanity/locale-zh-hk": "workspace:*",
+    "@sanity/locale-zh-tw": "workspace:*",
     "@sanity/locale-sv-se": "workspace:*",
     "@sanity/locale-tr-tr": "workspace:*",
     "@sanity/ui": "^1.9.3",
