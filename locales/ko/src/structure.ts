@@ -78,12 +78,12 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': '가장 최근 버전 복원',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': '이 문서는 삭제되었습니다.',
-  /** The text for the permission check banner if there is are multiple roles */
-  'banners.permission-check-banner.plural-roles.text':
-    '귀하의 역할 {{roles}}은(는) 이 문서에 대한 {{requiredPermission}} 권한이 없습니다.',
-  /** The text for the permission check banner if there is only one role */
-  'banners.permission-check-banner.singular-role.text':
-    '귀하의 역할 {{roles}}은(는) 이 문서에 대해 {{requiredPermission}} 권한이 없습니다.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_other':
+    '귀하의 역할 <Roles/>은 이 문서를 생성할 권한이 없습니다.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_other':
+    '귀하의 역할 <Roles/>은 이 문서를 업데이트할 권한이 없습니다.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '참조 다시 불러오기',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -206,7 +206,7 @@ export default removeUndefinedLocaleResources({
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '검사',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': '검색',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
   'document-inspector.view-mode.parsed': '파싱됨',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */

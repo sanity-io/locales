@@ -66,6 +66,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.delete.text': '삭제',
   'asset-source.file.asset-list.action.delete.title': '파일 삭제',
   'asset-source.file.asset-list.action.select-file.title': '파일 {{filename}} 선택',
+  'asset-source.file.asset-list.action.show-usage.title': '사용 표시',
   'asset-source.file.asset-list.delete-failed': '파일을 삭제할 수 없습니다',
   'asset-source.file.asset-list.delete-successful': '파일이 삭제되었습니다',
   'asset-source.file.asset-list.header.date-added': '추가된 날짜',
@@ -443,6 +444,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.read-only-label': '이 필드는 읽기 전용입니다',
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': '초기 값을 확인하는 중…',
+  /** Placeholder value for datetime input */
+  'inputs.datetime.placeholder': '예: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': '파일 옵션 메뉴 열기',
   /** Browse */
@@ -622,6 +625,13 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object-aria-label': '{{typeName}} 삽입하기 (인라인)',
   /** Label for action to remove an annotation */
   'inputs.portable-text.action.remove-annotation': '주석 제거하기',
+  /** Label for activate on focus with context of click and not focused */
+  'inputs.portable-text.activate-on-focus-message_click': '활성화하려면 클릭하세요',
+  /** Label for activate on focus with context of click and focused */
+  'inputs.portable-text.activate-on-focus-message_click-focused':
+    '활성화하려면 클릭하거나 스페이스를 누르세요',
+  /** Label for activate on focus with context of tap and not focused */
+  'inputs.portable-text.activate-on-focus-message_tap': '활성화하려면 탭하세요',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}} 편집하기',
   /** Title of the default "link" annotation */
@@ -1462,21 +1472,37 @@ export default removeUndefinedLocaleResources({
   /** Label for loading history */
   'timeline.loading-history': '기록 로딩 중…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': '생성됨',
+  /** Label shown in review changes timeline when a document has been created, with a timestamp */
+  'timeline.operation.created_timestamp': '생성됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': '최초 생성됨',
+  /** Label shown in review changes timeline when a document was initially created, with a timestamp */
+  'timeline.operation.created-initial_timestamp': '최초 생성됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': '삭제됨',
+  /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
+  'timeline.operation.deleted_timestamp': '삭제됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': '초안 폐기됨',
+  /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
+  'timeline.operation.draft-discarded_timestamp': '초안 폐기됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': '편집됨',
+  /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
+  'timeline.operation.edited-draft_timestamp': '편집됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': '실시간 편집됨',
+  /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
+  'timeline.operation.edited-live_timestamp': '실시간 편집됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': '게시됨',
+  /** Label shown in review changes timeline when a document was published, with a timestamp */
+  'timeline.operation.published_timestamp': '게시됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': '게시 취소됨',
+  /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
+  'timeline.operation.unpublished_timestamp': '게시 취소됨: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
