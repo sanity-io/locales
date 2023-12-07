@@ -17,6 +17,13 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
+    id: 'fi-FI',
+    name: 'Suomi',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
     id: 'fr-FR',
     name: 'Français',
     maintainers: [],
