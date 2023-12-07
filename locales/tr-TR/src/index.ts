@@ -1,7 +1,7 @@
 import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
-  id: 'tr',
+  id: 'tr-TR',
   title: 'Türkçe',
   bundles: [
     {
@@ -31,8 +31,8 @@ const locale = defineLocale({
  *
  * @public
  */
-export const trLocale = definePlugin({
-  name: '@sanity/locale-tr',
+export const trTRLocale = definePlugin({
+  name: '@sanity/locale-tr-tr',
   i18n: {
     locales: [locale],
   },

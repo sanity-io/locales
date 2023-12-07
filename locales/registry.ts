@@ -87,7 +87,7 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
-    id: 'tr',
+    id: 'tr-TR',
     name: 'Türkçe',
     maintainers: [],
     contributors: [],

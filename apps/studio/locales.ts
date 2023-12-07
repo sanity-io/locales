@@ -11,7 +11,7 @@ import {nnNOLocale} from '@sanity/locale-nn-no'
 import {ptBRLocale} from '@sanity/locale-pt-br'
 import {ptPTLocale} from '@sanity/locale-pt-pt'
 import {svSELocale} from '@sanity/locale-sv-se'
-import {trLocale} from '@sanity/locale-tr'
+import {trTRLocale} from '@sanity/locale-tr-tr'
 
 export const locales = [
   deDELocale(),
@@ -26,5 +26,5 @@ export const locales = [
   ptBRLocale(),
   ptPTLocale(),
   svSELocale(),
-  trLocale(),
+  trTRLocale(),
 ]

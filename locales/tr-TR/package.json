@@ -1,5 +1,5 @@
 {
-  "name": "@sanity/locale-tr",
+  "name": "@sanity/locale-tr-tr",
   "version": "1.0.0",
   "private": false,
   "description": "Türkçe locale/translation for Sanity Studio",
@@ -8,7 +8,7 @@
     "i18n",
     "locale",
     "localization",
-    "tr"
+    "tr-TR"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
@@ -17,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git",
-    "directory": "locales/tr"
+    "directory": "locales/tr-TR"
   },
   "license": "MIT",
   "contributors": [],

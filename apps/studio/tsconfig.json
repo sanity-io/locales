@@ -13,7 +13,7 @@
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
       "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"],
       "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
-      "@sanity/locale-tr": ["../../locales/tr/src"]
+      "@sanity/locale-tr-tr": ["../../locales/tr-TR/src"]
     }
   },
   "extends": "../../tsconfig.json"
