@@ -1,10 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
-  "ignorePresets": [
-    ":ignoreModulesAndTests",
-    "github>sanity-io/renovate-config:group-non-major"
-  ],
+  "ignorePresets": [":ignoreModulesAndTests", "github>sanity-io/renovate-config:group-non-major"],
   "packageRules": [
     {
       "matchDepTypes": ["dependencies", "devDependencies"],
@@ -12,13 +9,7 @@
     },
     {
       "description": "Update Sanity modules that contains i18n resources automatically",
-      "matchDepNames": [
-        "sanity",
-        "@sanity/icons",
-        "@sanity/ui",
-        "@sanity/vision",
-        "groq"
-      ],
+      "matchDepNames": ["sanity", "@sanity/icons", "@sanity/ui", "@sanity/vision", "groq"],
       "matchUpdateTypes": ["minor", "patch"],
       "matchFileNames": ["package.json", "apps/studio/package.json"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
