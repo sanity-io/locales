@@ -30,7 +30,8 @@
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write .",
     "lint": "turbo run lint",
-    "reconcile": "tsx src/cli/reconcile"
+    "reconcile": "tsx src/cli/reconcile",
+    "test": "npm run check:lint && npm run check:types"
   },
   "dependencies": {
     "@babel/generator": "^7.23.5",
