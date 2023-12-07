@@ -9,9 +9,9 @@
     },
     {
       "description": "Update Sanity modules that contains i18n resources automatically",
-      "matchDepNames": ["sanity", "@sanity/vision"],
+      "matchDepNames": ["sanity", "@sanity/icons", "@sanity/ui", "@sanity/vision", "groq"],
       "updateTypes": ["minor", "patch"],
-      "matchFileNames": ["package.json"],
+      "matchFileNames": ["package.json", "apps/studio/package.json"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "schedule": ["at any time"],
       "rangeStrategy": "bump",
