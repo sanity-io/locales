@@ -99,39 +99,42 @@ importers:
       '@sanity/icons':
         specifier: ^2.7.0
         version: 2.7.0(react@18.2.0)
-      '@sanity/locale-de':
+      '@sanity/locale-de-de':
         specifier: workspace:*
-        version: link:../../locales/de
-      '@sanity/locale-es':
+        version: link:../../locales/de-DE
+      '@sanity/locale-es-es':
         specifier: workspace:*
-        version: link:../../locales/es
+        version: link:../../locales/es-ES
       '@sanity/locale-fr-fr':
         specifier: workspace:*
         version: link:../../locales/fr-FR
-      '@sanity/locale-is':
+      '@sanity/locale-is-is':
         specifier: workspace:*
-        version: link:../../locales/is
-      '@sanity/locale-it':
+        version: link:../../locales/is-IS
+      '@sanity/locale-it-it':
         specifier: workspace:*
-        version: link:../../locales/it
-      '@sanity/locale-jp':
+        version: link:../../locales/it-IT
+      '@sanity/locale-ja-jp':
         specifier: workspace:*
-        version: link:../../locales/jp
-      '@sanity/locale-ko':
+        version: link:../../locales/ja-JP
+      '@sanity/locale-ko-kr':
         specifier: workspace:*
-        version: link:../../locales/ko
-      '@sanity/locale-no-nb':
+        version: link:../../locales/ko-KR
+      '@sanity/locale-nb-no':
         specifier: workspace:*
-        version: link:../../locales/no-NB
-      '@sanity/locale-no-nn':
+        version: link:../../locales/nb-NO
+      '@sanity/locale-nn-no':
         specifier: workspace:*
-        version: link:../../locales/no-NN
+        version: link:../../locales/nn-NO
       '@sanity/locale-pt-br':
         specifier: workspace:*
         version: link:../../locales/pt-BR
       '@sanity/locale-pt-pt':
         specifier: workspace:*
         version: link:../../locales/pt-PT
+      '@sanity/locale-sv-se':
+        specifier: workspace:*
+        version: link:../../locales/sv-SE
       '@sanity/ui':
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
@@ -173,13 +176,13 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
 
-  locales/de:
+  locales/de-DE:
     dependencies:
       sanity:
         specifier: ^3.21.0
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
-  locales/es:
+  locales/es-ES:
     dependencies:
       sanity:
         specifier: ^3.21.0
@@ -191,25 +194,37 @@ importers:
         specifier: ^3.21.0
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
-  locales/is:
+  locales/is-IS:
     dependencies:
       sanity:
         specifier: ^3.21.0
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
-  locales/it:
+  locales/it-IT:
     dependencies:
       sanity:
         specifier: ^3.21.0
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
-  locales/jp:
+  locales/ja-JP:
     dependencies:
       sanity:
         specifier: ^3.21.0
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
-  locales/ko:
+  locales/ko-KR:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/nb-NO:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/nn-NO:
     dependencies:
       sanity:
         specifier: ^3.21.0
@@ -218,8 +233,8 @@ importers:
   locales/no-NB:
     dependencies:
       sanity:
-        specifier: ^3.21.0
-        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+        specifier: i18n
+        version: 3.20.3-i18n.262(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/no-NN:
     dependencies:
@@ -234,6 +249,12 @@ importers:
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/pt-PT:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/sv-SE:
     dependencies:
       sanity:
         specifier: ^3.21.0

@@ -1,14 +1,14 @@
 {
-  "name": "@sanity/locale-pt-pt",
+  "name": "@sanity/locale-nb-no",
   "version": "1.0.0",
   "private": false,
-  "description": "Português locale/translation for Sanity Studio",
+  "description": "Norsk (Bokmål) locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
     "locale",
     "localization",
-    "pt-PT"
+    "nb-NO"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
@@ -17,10 +17,15 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git",
-    "directory": "locales/pt-PT"
+    "directory": "locales/nb-NO"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "rexxars",
+      "url": "https://github.com/rexxars"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
