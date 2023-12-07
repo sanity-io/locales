@@ -9,6 +9,7 @@
       "@sanity/locale-jp": ["../../locales/jp/src"],
       "@sanity/locale-ko": ["../../locales/ko/src"],
       "@sanity/locale-no-nb": ["../../locales/no-NB/src"],
+      "@sanity/locale-no-nn": ["../../locales/no-NN/src"],
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
       "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"]
     }

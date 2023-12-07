@@ -59,6 +59,13 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
+    id: 'no-NN',
+    name: 'Norsk (Nynorsk)',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
     id: 'pt-BR',
     name: 'Português do Brasil',
     maintainers: [],
