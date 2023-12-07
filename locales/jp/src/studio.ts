@@ -66,6 +66,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.delete.text': '削除',
   'asset-source.file.asset-list.action.delete.title': 'ファイルを削除',
   'asset-source.file.asset-list.action.select-file.title': 'ファイル {{filename}} を選択',
+  'asset-source.file.asset-list.action.show-usage.title': '使用状況を表示',
   'asset-source.file.asset-list.delete-failed': 'ファイルを削除できませんでした',
   'asset-source.file.asset-list.delete-successful': 'ファイルが削除されました',
   'asset-source.file.asset-list.header.date-added': '追加日',
@@ -445,6 +446,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.read-only-label': 'このフィールドは読み取り専用です',
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': '初期値を解決中…',
+  /** Placeholder value for datetime input */
+  'inputs.datetime.placeholder': '例: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'ファイルオプションメニューを開く',
   /** Browse */
@@ -628,6 +631,13 @@ export default removeUndefinedLocaleResources({
     '{{typeName}}を挿入する（インライン）',
   /** Label for action to remove an annotation */
   'inputs.portable-text.action.remove-annotation': '注釈を削除する',
+  /** Label for activate on focus with context of click and not focused */
+  'inputs.portable-text.activate-on-focus-message_click': 'クリックしてアクティブにする',
+  /** Label for activate on focus with context of click and focused */
+  'inputs.portable-text.activate-on-focus-message_click-focused':
+    'クリックまたはスペースキーを押してアクティブにする',
+  /** Label for activate on focus with context of tap and not focused */
+  'inputs.portable-text.activate-on-focus-message_tap': 'タップしてアクティブにする',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}}を編集する',
   /** Title of the default "link" annotation */
@@ -1467,21 +1477,37 @@ export default removeUndefinedLocaleResources({
   /** Label for loading history */
   'timeline.loading-history': '履歴を読み込み中…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': '作成された',
+  /** Label shown in review changes timeline when a document has been created, with a timestamp */
+  'timeline.operation.created_timestamp': '作成: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': '作成された',
+  /** Label shown in review changes timeline when a document was initially created, with a timestamp */
+  'timeline.operation.created-initial_timestamp': '作成: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': '削除された',
+  /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
+  'timeline.operation.deleted_timestamp': '削除: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': '下書きを破棄',
+  /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
+  'timeline.operation.draft-discarded_timestamp': '下書きを破棄: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': '編集された',
+  /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
+  'timeline.operation.edited-draft_timestamp': '編集: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': 'ライブ編集された',
+  /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
+  'timeline.operation.edited-live_timestamp': 'ライブ編集: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': '公開された',
+  /** Label shown in review changes timeline when a document was published, with a timestamp */
+  'timeline.operation.published_timestamp': '公開: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': '非公開にされた',
+  /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
+  'timeline.operation.unpublished_timestamp': '非公開: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

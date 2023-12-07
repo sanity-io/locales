@@ -80,12 +80,18 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': '最新バージョンを復元',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'このドキュメントは削除されました。',
-  /** The text for the permission check banner if there is are multiple roles */
-  'banners.permission-check-banner.plural-roles.text':
-    'あなたのロール{{roles}}は、このドキュメントに{{requiredPermission}}する権限がありません。',
-  /** The text for the permission check banner if there is only one role */
-  'banners.permission-check-banner.singular-role.text':
-    'あなたの役割{{roles}}は、このドキュメントを{{requiredPermission}}する権限がありません。',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_one':
+    'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_other':
+    'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_one':
+    'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_other':
+    'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'リファレンスを再読み込み',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -207,7 +213,7 @@ export default removeUndefinedLocaleResources({
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '検査',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': '検索',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
   'document-inspector.view-mode.parsed': 'パース済み',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
