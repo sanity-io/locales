@@ -2,7 +2,7 @@
   "name": "@sanity/locale-nn-no",
   "version": "1.0.0",
   "private": false,
-  "description": "Norsk (Nynorsk) locale/translation for Sanity Studio",
+  "description": "Norwegian Nynorsk (Norway) / Norsk (Nynorsk) locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
