@@ -2,7 +2,7 @@
   "name": "@sanity/locale-ja-jp",
   "version": "1.0.0",
   "private": false,
-  "description": "日本語 locale/translation for Sanity Studio",
+  "description": "Japanese (Japan) / 日本語 locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
