@@ -24,6 +24,13 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
+    id: 'is',
+    name: 'Íslenska',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
     id: 'it',
     name: 'Italiano',
     maintainers: [],
@@ -68,6 +75,13 @@ const registry: LocaleRegistry = [
   {
     id: 'pt-PT',
     name: 'Português Europeu',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
+    id: 'se',
+    name: 'Svenska',
     maintainers: [],
     contributors: [],
     isOfficial: false,

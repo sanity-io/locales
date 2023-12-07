@@ -2,6 +2,7 @@
 import {deLocale} from '@sanity/locale-de'
 import {esLocale} from '@sanity/locale-es'
 import {frFRLocale} from '@sanity/locale-fr-fr'
+import {isLocale} from '@sanity/locale-is'
 import {itLocale} from '@sanity/locale-it'
 import {jpLocale} from '@sanity/locale-jp'
 import {koLocale} from '@sanity/locale-ko'
@@ -14,6 +15,7 @@ export const locales = [
   deLocale(),
   esLocale(),
   frFRLocale(),
+  isLocale(),
   itLocale(),
   jpLocale(),
   koLocale(),

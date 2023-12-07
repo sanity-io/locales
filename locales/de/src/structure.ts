@@ -82,12 +82,18 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Letzte Version wiederherstellen',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dieses Dokument wurde gelöscht.',
-  /** The text for the permission check banner if there is are multiple roles */
-  'banners.permission-check-banner.plural-roles.text':
-    'Ihre Rollen {{roles}} haben keine Berechtigungen, um dieses Dokument zu {{requiredPermission}}.',
-  /** The text for the permission check banner if there is only one role */
-  'banners.permission-check-banner.singular-role.text':
-    'Ihre Rolle {{roles}} hat keine Berechtigungen, um dieses Dokument zu {{requiredPermission}}.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_one':
+    'Ihre Rolle <Roles/> hat keine Berechtigungen, um dieses Dokument zu erstellen.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_other':
+    'Ihre Rollen <Roles/> haben keine Berechtigungen, um dieses Dokument zu erstellen.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_one':
+    'Ihre Rolle <Roles/> hat keine Berechtigungen, um dieses Dokument zu aktualisieren.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_other':
+    'Ihre Rollen <Roles/> haben keine Berechtigungen, um dieses Dokument zu aktualisieren.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referenz neu laden',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -211,7 +217,7 @@ export default removeUndefinedLocaleResources({
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Untersuchen',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': 'Suchen',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
   'document-inspector.view-mode.parsed': 'Geparst',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
