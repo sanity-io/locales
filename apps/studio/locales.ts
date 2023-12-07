@@ -8,6 +8,7 @@ import {itITLocale} from '@sanity/locale-it-it'
 import {jaJPLocale} from '@sanity/locale-ja-jp'
 import {koKRLocale} from '@sanity/locale-ko-kr'
 import {nbNOLocale} from '@sanity/locale-nb-no'
+import {nlNLLocale} from '@sanity/locale-nl-nl'
 import {nnNOLocale} from '@sanity/locale-nn-no'
 import {ptBRLocale} from '@sanity/locale-pt-br'
 import {ptPTLocale} from '@sanity/locale-pt-pt'
@@ -27,6 +28,7 @@ export const locales = [
   jaJPLocale(),
   koKRLocale(),
   nbNOLocale(),
+  nlNLLocale(),
   nnNOLocale(),
   ptBRLocale(),
   ptPTLocale(),
