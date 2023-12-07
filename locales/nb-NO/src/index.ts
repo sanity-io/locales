@@ -31,8 +31,8 @@ const locale = defineLocale({
  *
  * @public
  */
-export const nbNOLocale = definePlugin({
-  name: '@sanity/locale-nb-no',
+export const noNBLocale = definePlugin({
+  name: '@sanity/locale-no-nb',
   i18n: {
     locales: [locale],
   },

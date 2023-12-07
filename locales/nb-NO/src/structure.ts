@@ -2,331 +2,365 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.delete.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.delete.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Tooltip when action button is disabled because the document does not exist */
-  'action.delete.disabled.nothing-to-delete': undefined, // 'This document doesn\'t yet exist or is already deleted'
+  'action.delete.disabled.nothing-to-delete':
+    'Dette dokumentet eksisterer ikke eller har allerede blitt slettet',
   /** Label for the "Delete" document action button */
-  'action.delete.label': undefined, // 'Delete'
+  'action.delete.label': 'Slett',
   /** Label for the "Delete" document action while the document is being deleted */
-  'action.delete.running.label': undefined, // 'Deleting…'
+  'action.delete.running.label': 'Sletter…',
   /** Message prompting the user to confirm discarding changes */
-  'action.discard-changes.confirm-dialog.confirm-discard-changes': undefined, // 'Are you sure you want to discard all changes since last published?'
+  'action.discard-changes.confirm-dialog.confirm-discard-changes':
+    'Er du sikker på at du vil forkaste alle endringer siden forrige gang dette dokumentet ble publisert?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
-  'action.discard-changes.disabled.no-change': undefined, // 'This document has no unpublished changes'
+  'action.discard-changes.disabled.no-change': 'Dette dokumentet har ingen endringer',
   /** Tooltip when action is disabled because the document is not published */
-  'action.discard-changes.disabled.not-published': undefined, // 'This document is not published'
+  'action.discard-changes.disabled.not-published': 'Dette dokumentet er ikke publisert',
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.discard-changes.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.discard-changes.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Label for the "Discard changes" document action */
-  'action.discard-changes.label': undefined, // 'Discard changes'
+  'action.discard-changes.label': 'Forkast endringer',
   /** Tooltip when action is disabled because the operation is not ready   */
-  'action.duplicate.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.duplicate.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Tooltip when action is disabled because the document doesn't exist */
-  'action.duplicate.disabled.nothing-to-duplicate': undefined, // 'This document doesn\'t yet exist so there\'s nothing to duplicate'
+  'action.duplicate.disabled.nothing-to-duplicate':
+    'Dette dokumentet er tomt og kan ikke dupliseres',
   /** Label for the "Duplicate" document action */
-  'action.duplicate.label': undefined, // 'Duplicate'
+  'action.duplicate.label': 'Dupliser',
   /** Label for the "Duplicate" document action while the document is being duplicated */
-  'action.duplicate.running.label': undefined, // 'Duplicating…'
+  'action.duplicate.running.label': 'Dupliserer…',
   /** Tooltip when publish button is disabled because the document is already published, and published time is unavailable.*/
-  'action.publish.already-published.no-time-ago.tooltip': undefined, // 'Already published'
+  'action.publish.already-published.no-time-ago.tooltip': 'Allerede publisert',
   /** Tooltip when publish button is disabled because the document is already published.*/
-  'action.publish.already-published.tooltip': undefined, // 'Published {{timeSincePublished}} ago'
+  'action.publish.already-published.tooltip': 'Publisert for {{timeSincePublished}} siden',
   /** Tooltip when action is disabled because the studio is not ready.*/
-  'action.publish.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.publish.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Label for action when there are pending changes.*/
-  'action.publish.draft.label': undefined, // 'Publish'
+  'action.publish.draft.label': 'Publiser',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
-  'action.publish.live-edit.label': undefined, // 'Publish'
+  'action.publish.live-edit.label': 'Publiser',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
-  'action.publish.live-edit.publish-disabled': undefined, // 'Cannot publish since Live Edit is enabled for this document type'
+  'action.publish.live-edit.publish-disabled':
+    'Kan ikke publisere fordi "Live Edit" er skrudd på for denne dokumenttypen.',
   /** Tooltip for the "Publish" document action when the document has live edit enabled.*/
-  'action.publish.live-edit.tooltip': undefined, // 'Live Edit is enabled for this content type and publishing happens automatically as you make changes'
+  'action.publish.live-edit.tooltip':
+    '"Live Edit" er skrudd på for denne dokumenttypen og publisering skjer automatisk når du gjør endringer',
   /** Tooltip when publish button is disabled because there are no changes.*/
-  'action.publish.no-changes.tooltip': undefined, // 'No unpublished changes'
+  'action.publish.no-changes.tooltip': 'Ingen upubliserte endringer',
   /** Label for the "Publish" document action when there are no changes.*/
-  'action.publish.published.label': undefined, // 'Published'
+  'action.publish.published.label': 'Publisert',
   /** Label for the "Publish" document action while publish is being executed.*/
-  'action.publish.running.label': undefined, // 'Publishing…'
+  'action.publish.running.label': 'Publiserer…',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
-  'action.publish.validation-issues.tooltip': undefined, // 'There are validation errors that need to be fixed before this document can be published'
+  'action.publish.validation-issues.tooltip': 'Valideringsfeil må rettes før det kan publiseres',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
-  'action.publish.waiting': undefined, // 'Waiting for tasks to finish before publishing'
+  'action.publish.waiting': 'Venter på at andre oppgaver skal fullføre',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm-dialog.confirm-discard-changes': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm-dialog.confirm-discard-changes':
+    'Er du sikker på at du vil gjenopprette til valgte versjon?',
   /** Fallback tooltip for when user is looking at the initial version */
-  'action.restore.disabled.cannot-restore-initial': undefined, // 'You can\'t restore to the initial version'
+  'action.restore.disabled.cannot-restore-initial': 'Kan ikke gjenopprette til første version',
   /** Label for the "Restore" document action */
-  'action.restore.label': undefined, // 'Restore'
+  'action.restore.label': 'Gjenopprett',
   /** Default tooltip for the action */
-  'action.restore.tooltip': undefined, // 'Restore to this version'
+  'action.restore.tooltip': 'Gjenopprett til denne versjonen',
   /** Tooltip when action is disabled because the document is not already published */
-  'action.unpublish.disabled.not-published': undefined, // 'This document is not published'
+  'action.unpublish.disabled.not-published': 'Dette dokumentet er ikke publisert',
   /** Tooltip when action is disabled because the operation is not ready   */
-  'action.unpublish.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.unpublish.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Label for the "Unpublish" document action */
-  'action.unpublish.label': undefined, // 'Unpublish'
+  'action.unpublish.label': 'Avpubliser',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
-  'action.unpublish.live-edit.disabled': undefined, // 'This document has live edit enabled and cannot be unpublished'
+  'action.unpublish.live-edit.disabled':
+    'Dette dokumentet har "Live Edit" skrudd på og kan ikke avpubliseres',
 
   /** The text for the restore button on the deleted document banner */
-  'banners.deleted-document-banner.restore-button.text': undefined, // 'Restore most recent version'
+  'banners.deleted-document-banner.restore-button.text': 'Gjenopprett nyeste versjon',
   /** The text content for the deleted document banner */
-  'banners.deleted-document-banner.text': undefined, // 'This document has been deleted.'
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
-  'banners.permission-check-banner.missing-permission_create_one': undefined, // 'Your role <Roles/> does not have permissions to create this document.'
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
-  'banners.permission-check-banner.missing-permission_create_other': undefined, // 'Your roles <Roles/> do not have permissions to create this document.'
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
-  'banners.permission-check-banner.missing-permission_update_one': undefined, // 'Your role <Roles/> does not have permissions to update this document.'
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
-  'banners.permission-check-banner.missing-permission_update_other': undefined, // 'Your roles <Roles/> do not have permissions to update this document.'
+  'banners.deleted-document-banner.text': 'Dette dokumentet har blitt slettet.',
+  /** The text for the permission check banner if there is are multiple roles */
+  'banners.permission-check-banner.plural-roles.text':
+    'Dine roller {{roles}} har ikke tillatelser til å {{requiredPermission}} dette dokumentet.',
+  /** The text for the permission check banner if there is only one role */
+  'banners.permission-check-banner.singular-role.text':
+    'Din rolle {{roles}} har ikke tillatelser til å {{requiredPermission}} dette dokumentet.',
   /** The text for the reload button */
-  'banners.reference-changed-banner.reason-changed.reload-button.text': undefined, // 'Reload reference'
+  'banners.reference-changed-banner.reason-changed.reload-button.text':
+    'Last inn referansen på nytt',
   /** The text for the reference change banner if the reason is that the reference has been changed */
-  'banners.reference-changed-banner.reason-changed.text': undefined, // 'This reference has changed since you opened it.'
+  'banners.reference-changed-banner.reason-changed.text':
+    'Denne referansen har endret seg siden du åpnet den.',
   /** The text for the close button */
-  'banners.reference-changed-banner.reason-removed.close-button.text': undefined, // 'Close reference'
+  'banners.reference-changed-banner.reason-removed.close-button.text': 'Lukk referansen',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
-  'banners.reference-changed-banner.reason-removed.text': undefined, // 'This reference has been removed since you opened it.'
+  'banners.reference-changed-banner.reason-removed.text':
+    'Denne referansen har blitt fjernet siden du åpnet den.',
 
   /** The action menu button aria-label */
-  'buttons.action-menu-button.aria-label': undefined, // 'Open document actions'
+  'buttons.action-menu-button.aria-label': 'Åpne dokumenthandlinger',
   /** The aria-label for the split pane button on the document panel header */
-  'buttons.split-pane-button.aria-label': undefined, // 'Split pane right'
+  'buttons.split-pane-button.aria-label': 'Del panel til høyre',
   /** The tool tip for the split pane button on the document panel header */
-  'buttons.split-pane-button.tooltip': undefined, // 'Split pane right'
+  'buttons.split-pane-button.tooltip': 'Del panel til høyre',
   /** The title for the close button on the split pane on the document panel header */
-  'buttons.split-pane-close-button.title': undefined, // 'Close split pane'
+  'buttons.split-pane-close-button.title': 'Lukk delt panel',
   /** The title for the close group button on the split pane on the document panel header */
-  'buttons.split-pane-close-group-button.title': undefined, // 'Close pane group'
+  'buttons.split-pane-close-group-button.title': 'Lukk panelgruppe',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
-  'confirm-delete-dialog.cancel-button.text': undefined, // 'Cancel'
+  'confirm-delete-dialog.cancel-button.text': 'Avbryt',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
-  'confirm-delete-dialog.cdr-summary.document-count_one': undefined, // '1 document'
+  'confirm-delete-dialog.cdr-summary.document-count_one': '1 dokument',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
-  'confirm-delete-dialog.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  'confirm-delete-dialog.cdr-summary.document-count_other': '{{count}} dokumenter',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_one': undefined, // 'Dataset: {{datasets}}'
+  'confirm-delete-dialog.cdr-summary.subtitle_one': 'Datasett: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  'confirm-delete-dialog.cdr-summary.subtitle_other': 'Datasett: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': undefined, // 'Unavailable dataset'
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Utilgjengelig datasett',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': 'Utilgjengelige datasett',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
-  'confirm-delete-dialog.cdr-summary.title_one': undefined, // '{{documentCount}} in another dataset'
+  'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} i et annet datasett',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'confirm-delete-dialog.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  'confirm-delete-dialog.cdr-summary.title_other': '{{documentCount}} i {{count}} datasett',
   /** Appears when hovering over the copy button to copy */
-  'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': 'Kopier ID til utklippstavlen',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.dataset.label': undefined, // 'Dataset'
+  'confirm-delete-dialog.cdr-table.dataset.label': 'Datasett',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.document-id.label': undefined, // 'Document ID'
+  'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
   /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': undefined, // 'Copied document ID to clipboard!'
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
+    'Kopierte dokument-ID til utklippstavlen!',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.project-id.label': undefined, // 'Project ID'
+  'confirm-delete-dialog.cdr-table.project-id.label': 'Prosjekt-ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Slett uansett',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': undefined, // 'Unpublish anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Avpubliser uansett',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_delete': undefined, // 'Delete now'
+  'confirm-delete-dialog.confirm-button.text_delete': 'Slett nå',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_unpublish': undefined, // 'Unpublish now'
+  'confirm-delete-dialog.confirm-button.text_unpublish': 'Avpubliser nå',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
-  'confirm-delete-dialog.confirmation.text_delete': undefined, // 'Are you sure you want to delete “<DocumentTitle/>”?'
+  'confirm-delete-dialog.confirmation.text_delete':
+    'Er du sikker på at du vil slette «<DocumentTitle/>»?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
-  'confirm-delete-dialog.confirmation.text_unpublish': undefined, // 'Are you sure you want to unpublish “<DocumentTitle/>”?'
+  'confirm-delete-dialog.confirmation.text_unpublish':
+    'Er du sikker på at du vil avpublisere «<DocumentTitle/>»?',
   /** The text body of the error dialog. */
-  'confirm-delete-dialog.error.message.text': undefined, // 'An error occurred while loading referencing documents.'
+  'confirm-delete-dialog.error.message.text':
+    'En feil oppsto mens refererende dokumenter ble lastet inn.',
   /** The text in the retry button of the confirm delete dialog if an error occurred. */
-  'confirm-delete-dialog.error.retry-button.text': undefined, // 'Retry'
+  'confirm-delete-dialog.error.retry-button.text': 'Prøv på nytt',
   /** The header of the confirm delete dialog if an error occurred while the confirm delete dialog was open. */
-  'confirm-delete-dialog.error.title.text': undefined, // 'Error'
+  'confirm-delete-dialog.error.title.text': 'Feil',
   /** The header of the confirm delete dialog */
-  'confirm-delete-dialog.header.text_delete': undefined, // 'Delete document?'
+  'confirm-delete-dialog.header.text_delete': 'Slett dokument?',
   /** The header of the confirm delete dialog */
-  'confirm-delete-dialog.header.text_unpublish': undefined, // 'Unpublish document?'
+  'confirm-delete-dialog.header.text_unpublish': 'Avpubliser dokument?',
   /** The text that appears while the referring documents are queried */
-  'confirm-delete-dialog.loading.text': undefined, // 'Looking for referring documents…'
+  'confirm-delete-dialog.loading.text': 'Ser etter refererende dokumenter…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'confirm-delete-dialog.other-reference-count.title_one': undefined, // '1 other reference not show'
+  'confirm-delete-dialog.other-reference-count.title_one': '1 annen referanse ikke vist',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'confirm-delete-dialog.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  'confirm-delete-dialog.other-reference-count.title_other': '{{count}} andre referanser ikke vist',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'confirm-delete-dialog.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'confirm-delete-dialog.other-reference-count.tooltip':
+    'Vi kan ikke vise metadata for disse referansene på grunn av en manglende tilgang til de relaterte datasettene.',
   /** Appears when unable to render a document preview in the referring document list */
-  'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'confirm-delete-dialog.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'confirm-delete-dialog.preview-item.preview-unavailable.title':
+    'Forhåndsvisning ikke tilgjengelig',
   /** Warns the user of affects to other documents if the action is confirmed (delete) */
-  'confirm-delete-dialog.referential-integrity-disclaimer.text_delete': undefined, // 'If you delete this document, documents that refer to it will no longer be able to access it.'
+  'confirm-delete-dialog.referential-integrity-disclaimer.text_delete':
+    'Hvis du sletter dette dokumentet, vil dokumenter som refererer til det ikke lenger kunne få tilgang til det.',
   /** Warns the user of affects to other documents if the action is confirmed (unpublish) */
-  'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish': undefined, // 'If you unpublish this document, documents that refer to it will no longer be able to access it.'
+  'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish':
+    'Hvis du avpubliserer dette dokumentet, vil dokumenter som refererer til det ikke lenger kunne få tilgang til det.',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
-  'confirm-delete-dialog.referring-document-count.text_one': undefined, // '1 document refers to “<DocumentTitle/>”'
+  'confirm-delete-dialog.referring-document-count.text_one':
+    '1 dokument refererer til «<DocumentTitle/>»',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
-  'confirm-delete-dialog.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  'confirm-delete-dialog.referring-document-count.text_other':
+    '{{count}} dokumenter refererer til «<DocumentTitle/>»',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'confirm-delete-dialog.referring-documents-descriptor.text_delete': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'confirm-delete-dialog.referring-documents-descriptor.text_delete':
+    'Du kan kanskje ikke slette «<DocumentTitle/>» fordi de følgende dokumentene refererer til det:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
-  'confirm-delete-dialog.referring-documents-descriptor.text_unpublish': undefined, // 'You may not be able to unpublish “<DocumentTitle/>” because the following documents refer to it:'
+  'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
+    'Du kan kanskje ikke avpublisere «<DocumentTitle/>» fordi de følgende dokumentene refererer til det:',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
-  'doc-title.error.text': undefined, // 'Error: {{errorMessage}}'
+  'doc-title.error.text': 'Feil: {{errorMessage}}',
   /** The text shown if the preview value for a document is non-existent or empty */
-  'doc-title.fallback.text': undefined, // 'Untitled'
+  'doc-title.fallback.text': 'Uten tittel',
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
-  'doc-title.unknown-schema-type.text': undefined, // 'Unknown schema type: {{schemaType}}'
+  'doc-title.unknown-schema-type.text': 'Ukjent skjematype: {{schemaType}}',
 
   /** The title shown in the dialog header, when inspecting a valid document */
-  'document-inspector.dialog.title': undefined, // 'Inspecting <DocumentTitle/>'
+  'document-inspector.dialog.title': 'Inspiserer <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
-  'document-inspector.dialog.title-no-value': undefined, // 'No value'
+  'document-inspector.dialog.title-no-value': 'Ingen verdi',
   /** Title shown for menu item that opens the "Inspect" dialog */
-  'document-inspector.menu-item.title': undefined, // 'Inspect'
+  'document-inspector.menu-item.title': 'Inspiser',
   /** the placeholder text for the search input on the inspect dialog */
   'document-inspector.search.placeholder': undefined, // 'Search'
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
-  'document-inspector.view-mode.parsed': undefined, // 'Parsed'
+  'document-inspector.view-mode.parsed': 'Behandlet',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
-  'document-inspector.view-mode.raw-json': undefined, // 'Raw JSON'
+  'document-inspector.view-mode.raw-json': 'Rå JSON',
 
   /** The text for when a form is hidden */
-  'document-view.form-view.form-hidden': undefined, // 'This form is hidden'
+  'document-view.form-view.form-hidden': 'Dette skjemaet er skjult',
   /** The text for when the form view is loading a document */
-  'document-view.form-view.loading': undefined, // 'Loading document…'
+  'document-view.form-view.loading': 'Laster dokument…',
   /** The description of the sync lock toast on the form view */
-  'document-view.form-view.sync-lock-toast.description': undefined, // 'Please hold tight while the document is synced. This usually happens right after the document has been published, and it should not take more than a few seconds'
+  'document-view.form-view.sync-lock-toast.description':
+    'Vennligst vent mens dokumentet synkroniseres. Dette skjer vanligvis rett etter at dokumentet har blitt publisert, og det bør ikke ta mer enn noen få sekunder',
   /** The title of the sync lock toast on the form view */
-  'document-view.form-view.sync-lock-toast.title': undefined, // 'Syncing document…'
+  'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
 
   /** The loading messaging for when the tooltip is still loading permission info */
-  'insufficient-permissions-message-tooltip.loading-text': undefined, // 'Loading…'
+  'insufficient-permissions-message-tooltip.loading-text': 'Laster…',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
-  'no-document-types-screen.link-text': undefined, // 'Learn how to add a document type →'
+  'no-document-types-screen.link-text': 'Lær hvordan du legger til en dokumenttype →',
   /** The subtitle of the no document type screen that appears directly below the title */
-  'no-document-types-screen.subtitle': undefined, // 'Please define at least one document type in your schema.'
+  'no-document-types-screen.subtitle': 'Vennligst definer minst én dokumenttype i ditt skjema.',
   /** The title of the no document type screen */
-  'no-document-types-screen.title': undefined, // 'No document types'
+  'no-document-types-screen.title': 'Ingen dokumenttyper',
 
   /** tooltip text (via `title` attribute) for the menu button */
-  'pane-header.context-menu-button.tooltip': undefined, // 'Show menu'
+  'pane-header.context-menu-button.tooltip': 'Vis meny',
   /** Appears in a document list pane header if there are more than one option for create. This is the label for that menu */
-  'pane-header.create-menu.label': undefined, // 'Create'
+  'pane-header.create-menu.label': 'Opprett',
   /** The `aria-label` for the disabled button in the pane header if create permissions are granted */
-  'pane-header.disabled-created-button.aria-label': undefined, // 'Insufficient permissions'
+  'pane-header.disabled-created-button.aria-label': 'Utilstrekkelig tilgang',
 
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
-  'pane-item.draft-status.has-draft.tooltip': undefined, // 'Edited <RelativeTime/>'
+  'pane-item.draft-status.has-draft.tooltip': 'Redigert <RelativeTime/>',
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
-  'pane-item.draft-status.no-draft.tooltip': undefined, // 'No unpublished edits'
+  'pane-item.draft-status.no-draft.tooltip': 'Ingen upubliserte endringer',
   /** The subtitle tor pane item previews if there isn't a matching schema type found */
-  'pane-item.missing-schema-type.subtitle': undefined, // 'Document: <Code>{{documentId}}</Code>'
+  'pane-item.missing-schema-type.subtitle': 'Dokument: <Code>{{documentId}}</Code>',
   /** The title tor pane item previews if there isn't a matching schema type found */
-  'pane-item.missing-schema-type.title': undefined, // 'No schema found for type <Code>{{documentType}}</Code>'
+  'pane-item.missing-schema-type.title':
+    'Ingen skjema funnet for type <Code>{{documentType}}</Code>',
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
-  'pane-item.published-status.has-published.tooltip': undefined, // 'Published <RelativeTime/>'
+  'pane-item.published-status.has-published.tooltip': 'Publisert <RelativeTime/>',
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
-  'pane-item.published-status.no-published.tooltip': undefined, // 'No unpublished edits'
+  'pane-item.published-status.no-published.tooltip': 'Ingen publiserte endringer',
 
   /** The text used in the document header title if there is an error */
-  'panes.document-header-title.error.text': undefined, // 'Error: {{error}}'
+  'panes.document-header-title.error.text': 'Feil: {{error}}',
   /** The text used in the document header title if creating a new item */
-  'panes.document-header-title.new.text': undefined, // 'New {{schemaType}}'
+  'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
-  'panes.document-header-title.untitled.text': undefined, // 'Untitled'
+  'panes.document-header-title.untitled.text': 'Uten tittel',
   /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': undefined, // 'Retry'
+  'panes.document-list-pane.error.retry-button.text': 'Prøv på nytt',
   /** The error text on the document list pane */
-  'panes.document-list-pane.error.text': undefined, // 'Error: <Code>{{error}}</Code>'
+  'panes.document-list-pane.error.text': 'Feil: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
-  'panes.document-list-pane.error.title': undefined, // 'Could not fetch list items'
+  'panes.document-list-pane.error.title': 'Kunne ikke hente listeobjekter',
   /** The text of the document list pane if more than a maximum number of documents are returned */
-  'panes.document-list-pane.max-items.text': undefined, // 'Displaying a maximum of {{limit}} documents'
+  'panes.document-list-pane.max-items.text': 'Viser maksimalt {{limit}} dokumenter',
   /** The text of the document list pane if no documents are found for a specified type */
-  'panes.document-list-pane.no-documents-of-type.text': undefined, // 'No documents of this type'
+  'panes.document-list-pane.no-documents-of-type.text': 'Ingen dokumenter av denne typen',
   /** The text of the document list pane if no documents are found */
-  'panes.document-list-pane.no-documents.text': undefined, // 'No results found'
+  'panes.document-list-pane.no-documents.text': 'Ingen resultater funnet',
   /** The text of the document list pane if no documents are found matching specified criteria */
-  'panes.document-list-pane.no-matching-documents.text': undefined, // 'No matching documents'
+  'panes.document-list-pane.no-matching-documents.text': 'Ingen dokumenter funnet som samsvarer',
   /** The aria-label for the search input on the document list pane */
-  'panes.document-list-pane.search-input.aria-label': undefined, // 'Search list'
+  'panes.document-list-pane.search-input.aria-label': 'Søk i liste',
   /** The search input for the search input on the document list pane */
-  'panes.document-list-pane.search-input.placeholder': undefined, // 'Search list'
+  'panes.document-list-pane.search-input.placeholder': 'Søk i liste',
   /** The summary title when displaying an error for a document operation result */
-  'panes.document-operation-results.error.summary.title': undefined, // 'Details'
+  'panes.document-operation-results.error.summary.title': 'Detaljer',
   /** The text when a generic operation failed (fallback, generally not shown)  */
-  'panes.document-operation-results.operation-error': undefined, // 'An error occurred during {{context}}'
+  'panes.document-operation-results.operation-error': 'En feil oppstod under {{context}}',
   /** The text when a delete operation failed  */
-  'panes.document-operation-results.operation-error_delete': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refers to it.'
+  'panes.document-operation-results.operation-error_delete':
+    'En feil oppstod under forsøket på å slette dette dokumentet. Dette betyr vanligvis at det er andre dokumenter som refererer til det.',
   /** The text when an unpublish operation failed  */
-  'panes.document-operation-results.operation-error_unpublish': undefined, // 'An error occurred while attempting to unpublish this document. This usually means that there are other documents that refers to it.'
+  'panes.document-operation-results.operation-error_unpublish':
+    'En feil oppstod under forsøket på å avpublisere dette dokumentet. Dette betyr vanligvis at det er andre dokumenter som refererer til det.',
   /** The text when a generic operation succeded (fallback, generally not shown)  */
-  'panes.document-operation-results.operation-success': undefined, // 'Successfully performed {{context}} on document'
+  'panes.document-operation-results.operation-success': 'Utførte {{context}} på dokumentet',
   /** The text when a delete operation succeded  */
-  'panes.document-operation-results.operation-success_delete': undefined, // 'The document was successfully deleted'
+  'panes.document-operation-results.operation-success_delete': 'Dokumentet ble slettet',
   /** The text when a discard changes operation succeeded  */
-  'panes.document-operation-results.operation-success_discardChanges': undefined, // 'All changes since last publish has now been discarded. The discarded draft can still be recovered from history'
+  'panes.document-operation-results.operation-success_discardChanges':
+    'Alle endringer siden siste publisering har nå blitt forkastet. Det forkastede utkastet kan fortsatt gjenopprettes fra historikken',
   /** The text when a publish operation succeeded  */
-  'panes.document-operation-results.operation-success_publish': undefined, // 'The document was published'
+  'panes.document-operation-results.operation-success_publish': 'Dokumentet ble publisert',
   /** The text when an unpublish operation succeeded  */
-  'panes.document-operation-results.operation-success_unpublish': undefined, // 'The document was unpublished. A draft has been created from the latest published version.'
+  'panes.document-operation-results.operation-success_unpublish':
+    'Dokumentet ble avpublisert. Et utkast har blitt opprettet fra den siste publiserte versjonen.',
   /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': undefined, // 'Connection lost. Reconnecting…'
+  'panes.document-pane-provider.reconnecting.title': 'Forbindelse mistet. Kobler til på nytt…',
   /** The loading message for the document not found pane */
-  'panes.document-pane.document-not-found.loading': undefined, // 'Loading document…'
+  'panes.document-pane.document-not-found.loading': 'Laster dokument…',
   /** The text of the document not found pane if the schema is known */
-  'panes.document-pane.document-not-found.text': undefined, // 'The document type is not defined, and a document with the <Code>{{id}}</Code> identifier could not be found.'
+  'panes.document-pane.document-not-found.text':
+    'Dokumenttypen er ikke definert, og et dokument med identifikatoren <Code>{{id}}</Code> kunne ikke bli funnet.',
   /** The title of the document not found pane if the schema is known */
-  'panes.document-pane.document-not-found.title': undefined, // 'The document was not found'
+  'panes.document-pane.document-not-found.title': 'Dokumentet ble ikke funnet',
   /** The text of the document not found pane if the schema is not found */
-  'panes.document-pane.document-unknown-type.text': undefined, // 'This document has the schema type <Code>{{documentType}}</Code>, which is not defined as a type in the local content studio schema.'
+  'panes.document-pane.document-unknown-type.text':
+    'Dette dokumentet har skjematypen <Code>{{documentType}}</Code>, som ikke er definert som en type i det lokale innholdsstudioets skjema.',
   /** The title of the document not found pane if the schema is not found or unknown */
-  'panes.document-pane.document-unknown-type.title': undefined, // 'Unknown document type: <Code>{{documentType}}</Code>'
+  'panes.document-pane.document-unknown-type.title':
+    'Ukjent dokumenttype: <Code>{{documentType}}</Code>',
   /** The title of the document not found pane if the schema is unknown */
-  'panes.document-pane.document-unknown-type.without-schema.text': undefined, // 'This document does not exist, and no schema type was specified for it.'
+  'panes.document-pane.document-unknown-type.without-schema.text':
+    'Dette dokumentet eksisterer ikke, og ingen skjematype ble spesifisert for det.',
   /** The text to display when type is missing */
-  'panes.unknown-pane-type.missing-type.text': undefined, // 'Structure item is missing required <Code>type</Code> property.'
+  'panes.unknown-pane-type.missing-type.text':
+    'Strukturelement mangler påkrevd <Code>type</Code>-egenskap.',
   /** The title of the unknown pane */
-  'panes.unknown-pane-type.title': undefined, // 'Unknown pane type'
+  'panes.unknown-pane-type.title': 'Ukjent paneltype',
   /** The text to display when type is unknown */
-  'panes.unknown-pane-type.unknown-type.text': undefined, // 'Structure item of type <Code>{{type}}</Code> is not a known entity.'
+  'panes.unknown-pane-type.unknown-type.text':
+    'Strukturelement av type <Code>{{type}}</Code> er ikke en kjent enhet.',
 
   /** The text for the "Open preview" action for a document */
-  'production-preview.menu-item.title': undefined, // 'Open preview'
+  'production-preview.menu-item.title': 'Åpne forhåndsvisning',
 
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
-  'status-bar.publish-status-button.last-published-time.aria-label': undefined, // 'Last published {{relativeTime}}'
+  'status-bar.publish-status-button.last-published-time.aria-label':
+    'Sist publisert {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */
-  'status-bar.publish-status-button.last-published-time.tooltip': undefined, // 'Last published <RelativeTime/>'
+  'status-bar.publish-status-button.last-published-time.tooltip': 'Sist publisert <RelativeTime/>',
   /** Accessibility label indicating when the document was last updated, in relative time, eg "2 hours ago" */
-  'status-bar.publish-status-button.last-updated-time.aria-label': undefined, // 'Last updated {{relativeTime}}'
+  'status-bar.publish-status-button.last-updated-time.aria-label':
+    'Sist oppdatert {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last updated <RelativeTime/>" */
-  'status-bar.publish-status-button.last-updated-time.tooltip': undefined, // 'Last updated <RelativeTime/>'
+  'status-bar.publish-status-button.last-updated-time.tooltip': 'Sist oppdatert <RelativeTime/>',
   /** Aria label for the button */
-  'status-bar.review-changes-button.aria-label': undefined, // 'Review changes'
+  'status-bar.review-changes-button.aria-label': 'Se endringer',
   /** Label for button when status is saved */
-  'status-bar.review-changes-button.status.saved.text': undefined, // 'Saved!'
+  'status-bar.review-changes-button.status.saved.text': 'Lagret!',
   /** Label for button when status is syncing */
-  'status-bar.review-changes-button.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.review-changes-button.status.syncing.text': 'Lagrer...',
   /** Text for the secondary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.changes-saved': undefined, // 'Changes saved'
+  'status-bar.review-changes-button.tooltip.changes-saved': 'Endringer lagret',
   /** Primary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.text': undefined, // 'Review changes'
+  'status-bar.review-changes-button.tooltip.text': 'Se endringer',
 
   /** The text that appears in side the documentation link */
-  'structure-error.docs-link.text': undefined, // 'View documentation'
+  'structure-error.docs-link.text': 'Vis dokumentasjon',
   /** Labels the error message or error stack of the structure error screen */
-  'structure-error.error.label': undefined, // 'Error'
+  'structure-error.error.label': 'Feil',
   /** The header that appears at the top of the error screen */
-  'structure-error.header.text': undefined, // 'Encountered an error while reading structure'
+  'structure-error.header.text': 'Oppdaget en feil mens strukturen ble lest',
   /** The text in the reload button to retry rendering the structure */
-  'structure-error.reload-button.text': undefined, // 'Reload'
+  'structure-error.reload-button.text': 'Last på nytt',
   /** Labels the structure path of the structure error screen */
-  'structure-error.structure-path.label': undefined, // 'Structure path'
+  'structure-error.structure-path.label': 'Strukturvei',
 })
