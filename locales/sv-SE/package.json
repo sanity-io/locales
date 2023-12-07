@@ -2,7 +2,7 @@
   "name": "@sanity/locale-sv-se",
   "version": "1.0.0",
   "private": false,
-  "description": "Svenska locale/translation for Sanity Studio",
+  "description": "Swedish (Sweden) / Svenska locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
