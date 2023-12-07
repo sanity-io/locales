@@ -9,7 +9,8 @@
       "@sanity/locale-ko": ["../../locales/ko/src"],
       "@sanity/locale-no-nb": ["../../locales/no-NB/src"],
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
-      "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"]
+      "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"],
+      "@sanity/locale-tr": ["../../locales/tr/src"]
     }
   },
   "extends": "../../tsconfig.json"
