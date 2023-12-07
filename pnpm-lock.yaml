@@ -135,6 +135,9 @@ importers:
       '@sanity/locale-sv-se':
         specifier: workspace:*
         version: link:../../locales/sv-SE
+      '@sanity/locale-tr-tr':
+        specifier: workspace:*
+        version: link:../../locales/tr-TR
       '@sanity/ui':
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
@@ -243,6 +246,12 @@ importers:
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/sv-SE:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/tr-TR:
     dependencies:
       sanity:
         specifier: ^3.21.0
