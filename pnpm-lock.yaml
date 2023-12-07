@@ -126,6 +126,9 @@ importers:
       '@sanity/locale-nb-no':
         specifier: workspace:*
         version: link:../../locales/nb-NO
+      '@sanity/locale-nl-nl':
+        specifier: workspace:*
+        version: link:../../locales/nl-NL
       '@sanity/locale-nn-no':
         specifier: workspace:*
         version: link:../../locales/nn-NO
@@ -240,6 +243,12 @@ importers:
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/nb-NO:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/nl-NL:
     dependencies:
       sanity:
         specifier: ^3.21.0

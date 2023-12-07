@@ -17,6 +17,7 @@ Some description of this repository and such goes here.
 | Japanese (Japan) / 日本語                    | [@sanity/locale-ja-jp](https://www.npmjs.com/package/@sanity/locale-ja-jp) | [locales/ja-JP](https://github.com/sanity-io/locales/tree/main/locales/ja-JP) |
 | Korean (South Korea) / 한국어                | [@sanity/locale-ko-kr](https://www.npmjs.com/package/@sanity/locale-ko-kr) | [locales/ko-KR](https://github.com/sanity-io/locales/tree/main/locales/ko-KR) |
 | Norwegian Bokmål (Norway) / Norsk (Bokmål)   | [@sanity/locale-nb-no](https://www.npmjs.com/package/@sanity/locale-nb-no) | [locales/nb-NO](https://github.com/sanity-io/locales/tree/main/locales/nb-NO) |
+| Dutch (Netherlands) / Nederlands             | [@sanity/locale-nl-nl](https://www.npmjs.com/package/@sanity/locale-nl-nl) | [locales/nl-NL](https://github.com/sanity-io/locales/tree/main/locales/nl-NL) |
 | Norwegian Nynorsk (Norway) / Norsk (Nynorsk) | [@sanity/locale-nn-no](https://www.npmjs.com/package/@sanity/locale-nn-no) | [locales/nn-NO](https://github.com/sanity-io/locales/tree/main/locales/nn-NO) |
 | Brazilian Portuguese / Português do Brasil   | [@sanity/locale-pt-br](https://www.npmjs.com/package/@sanity/locale-pt-br) | [locales/pt-BR](https://github.com/sanity-io/locales/tree/main/locales/pt-BR) |
 | European Portuguese / Português              | [@sanity/locale-pt-pt](https://www.npmjs.com/package/@sanity/locale-pt-pt) | [locales/pt-PT](https://github.com/sanity-io/locales/tree/main/locales/pt-PT) |
