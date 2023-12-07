@@ -8,6 +8,7 @@ import {buildLocaleIndexModule} from './builders/buildLocaleIndexModule'
 import {buildLocaleReadme} from './builders/buildLocaleReadme'
 import {buildPackageConfig} from './builders/buildPackageConfig'
 import {buildPackageJson} from './builders/buildPackageJson'
+import {buildRootReadme} from './builders/buildRootReadme'
 import {getLocaleRegistry} from './registry'
 import {reconcileResources} from './resources'
 
@@ -16,6 +17,7 @@ export async function reconcileLocalePackages(): Promise<void> {
   for (const locale of locales) {
     await reconcileLocalePackage(locale)
   }
+  await writeRootReadme()
 }
 
 export async function reconcileLocalePackage(locale: Locale): Promise<void> {
@@ -59,5 +61,11 @@ async function writeLicense(locale: Locale) {
 async function writeReadme(locale: Locale) {
   const targetPath = joinPath(locale.path, 'README.md')
   const readme = await buildLocaleReadme(locale)
+  return writeFormattedFile(targetPath, readme)
+}
+
+async function writeRootReadme() {
+  const targetPath = joinPath(await getRootPath(), 'README.md')
+  const readme = await buildRootReadme()
   return writeFormattedFile(targetPath, readme)
 }
