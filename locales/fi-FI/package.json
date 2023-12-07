@@ -2,7 +2,7 @@
   "name": "@sanity/locale-fi-fi",
   "version": "1.0.0",
   "private": false,
-  "description": "Suomi locale/translation for Sanity Studio",
+  "description": "Finnish (Finland) / Suomi locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
