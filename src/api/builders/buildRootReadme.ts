@@ -3,7 +3,13 @@ import {join as joinPath, relative as relativePath} from 'node:path'
 import {getLocaleRegistry} from '../registry'
 import {getRootPath} from '../../util/getRootPath'
 
-export async function buildRootReadme() {
+/**
+ * Builds the root README.md file
+ *
+ * @returns A promise that resolves to the README.md file contents
+ * @internal
+ */
+export async function buildRootReadme(): Promise<string> {
   const registry = await getLocaleRegistry()
   const rootPath = await getRootPath()
   const readme = await readFile(joinPath(rootPath, 'README.md'), 'utf-8')
