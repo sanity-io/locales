@@ -1,0 +1,56 @@
+---
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read # for checkout
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: lts/*
+      - run: corepack enable && pnpm --version
+      - run: pnpm install --ignore-scripts
+      - run: pnpm build --filter=./locales/*
+      - run: pnpm lint
+
+  test:
+    needs: build
+    timeout-minutes: 15
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [lts/*, current]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: ${{ matrix.node }}
+      - run: corepack enable && pnpm --version
+      - run: pnpm install --loglevel=error --ignore-scripts
+      - run: pnpm test
