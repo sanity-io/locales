@@ -81,12 +81,18 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Restaurer la version la plus récente',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Ce document a été supprimé.',
-  /** The text for the permission check banner if there is are multiple roles */
-  'banners.permission-check-banner.plural-roles.text':
-    "Vos rôles {{roles}} n'ont pas les permissions pour {{requiredPermission}} ce document.",
-  /** The text for the permission check banner if there is only one role */
-  'banners.permission-check-banner.singular-role.text':
-    'Votre rôle {{roles}} n’a pas les permissions pour {{requiredPermission}} ce document.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_one':
+    "Votre rôle <Roles/> n'a pas les autorisations pour créer ce document.",
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_other':
+    "Vos rôles <Roles/> n'ont pas les autorisations pour créer ce document.",
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_one':
+    "Votre rôle <Roles/> n'a pas les autorisations pour mettre à jour ce document.",
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_other':
+    "Vos rôles <Roles/> n'ont pas les autorisations pour mettre à jour ce document.",
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Recharger la référence',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -210,7 +216,7 @@ export default removeUndefinedLocaleResources({
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspecter',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': 'Rechercher',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
   'document-inspector.view-mode.parsed': 'Analysé',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */

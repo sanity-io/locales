@@ -66,6 +66,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.delete.text': 'Supprimer',
   'asset-source.file.asset-list.action.delete.title': 'Supprimer le fichier',
   'asset-source.file.asset-list.action.select-file.title': 'Sélectionnez le fichier {{filename}}',
+  'asset-source.file.asset-list.action.show-usage.title': "Afficher l'utilisation",
   'asset-source.file.asset-list.delete-failed': 'Le fichier n’a pas pu être supprimé',
   'asset-source.file.asset-list.delete-successful': 'Le fichier a été supprimé',
   'asset-source.file.asset-list.header.date-added': 'Date d’ajout',
@@ -446,6 +447,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.read-only-label': 'Ce champ est en lecture seule',
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Résolution de la valeur initiale…',
+  /** Placeholder value for datetime input */
+  'inputs.datetime.placeholder': 'par ex. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Ouvrir le menu des options de fichier',
   /** Browse */
@@ -630,6 +633,13 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Insérer {{typeName}} (en ligne)',
   /** Label for action to remove an annotation */
   'inputs.portable-text.action.remove-annotation': 'Supprimer l’annotation',
+  /** Label for activate on focus with context of click and not focused */
+  'inputs.portable-text.activate-on-focus-message_click': 'Cliquez pour activer',
+  /** Label for activate on focus with context of click and focused */
+  'inputs.portable-text.activate-on-focus-message_click-focused':
+    'Cliquez ou appuyez sur espace pour activer',
+  /** Label for activate on focus with context of tap and not focused */
+  'inputs.portable-text.activate-on-focus-message_tap': 'Tapez pour activer',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Modifier {{schemaType}}',
   /** Title of the default "link" annotation */
@@ -1474,21 +1484,37 @@ export default removeUndefinedLocaleResources({
   /** Label for loading history */
   'timeline.loading-history': 'Chargement de l’historique…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': 'Créé',
+  /** Label shown in review changes timeline when a document has been created, with a timestamp */
+  'timeline.operation.created_timestamp': 'Créé : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': 'Créé',
+  /** Label shown in review changes timeline when a document was initially created, with a timestamp */
+  'timeline.operation.created-initial_timestamp': 'Créé : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': 'Supprimé',
+  /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
+  'timeline.operation.deleted_timestamp': 'Supprimé : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': 'Brouillon rejeté',
+  /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
+  'timeline.operation.draft-discarded_timestamp': 'Brouillon rejeté : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': 'Édité',
+  /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
+  'timeline.operation.edited-draft_timestamp': 'Édité : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': 'Édité en direct',
+  /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
+  'timeline.operation.edited-live_timestamp': 'Édité en direct : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': 'Publié',
+  /** Label shown in review changes timeline when a document was published, with a timestamp */
+  'timeline.operation.published_timestamp': 'Publié : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': 'Non publié',
+  /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
+  'timeline.operation.unpublished_timestamp': 'Non publié : {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
