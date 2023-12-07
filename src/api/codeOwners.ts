@@ -8,7 +8,7 @@ const MAX_FILE_SIZE = 3e6 // 3 MB
 const template = `
 # By default, assign the studio developer experience team.
 # Later matching rules will take precedence.
-* @sanity-io/studio-dx
+* @sanity-io/locales-reviewers
 
 # Locale-specific owners:
 `.trim()
