@@ -59,7 +59,6 @@ export async function getOrderedResources(): Promise<OrderedResources> {
         throw new Error(`Base bundle for namespace ${namespace} not found`)
       }
 
-      const pluralizableResources = indexedBase.groupedPluralizableResources
       const localeResources: Resource[] = []
       const localeIndex: Record<string, Resource | undefined> = {}
       const missing: Resource[] = []

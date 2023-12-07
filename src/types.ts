@@ -28,6 +28,11 @@ export type LocaleRegistry = zodInfer<typeof localeRegistrySchema>
  */
 export interface Locale extends LocaleEntry {
   /**
+   * English name of the language
+   */
+  englishName: string
+
+  /**
    * The identifier exported, eg `noNBLocale`, or `enUSLocale`
    */
   exportName: string
