@@ -14,7 +14,6 @@
       "matchFileNames": ["package.json", "apps/studio/package.json"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "schedule": ["at any time"],
-      "rangeStrategy": "bump",
       "groupSlug": "sanity",
       "semanticCommitType": "chore",
       "automerge": true,
