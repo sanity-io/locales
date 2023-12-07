@@ -1,14 +1,14 @@
 {
-  "name": "@sanity/locale-pt-pt",
+  "name": "@sanity/locale-ko-kr",
   "version": "1.0.0",
   "private": false,
-  "description": "Português locale/translation for Sanity Studio",
+  "description": "한국어 locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
     "locale",
     "localization",
-    "pt-PT"
+    "ko-KR"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
@@ -17,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git",
-    "directory": "locales/pt-PT"
+    "directory": "locales/ko-KR"
   },
   "license": "MIT",
   "contributors": [],
