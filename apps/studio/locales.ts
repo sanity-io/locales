@@ -11,6 +11,7 @@ import {nbNOLocale} from '@sanity/locale-nb-no'
 import {nnNOLocale} from '@sanity/locale-nn-no'
 import {ptBRLocale} from '@sanity/locale-pt-br'
 import {ptPTLocale} from '@sanity/locale-pt-pt'
+import {zhCNLocale} from '@sanity/locale-zh-cn'
 import {zhHKLocale} from '@sanity/locale-zh-hk'
 import {zhTWLocale} from '@sanity/locale-zh-tw'
 import {svSELocale} from '@sanity/locale-sv-se'
@@ -31,9 +32,13 @@ export const locales = [
   ptPTLocale(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+  zhCNLocale(),
+=======
+<<<<<<< HEAD
   zhHKLocale(),
 =======
   zhTWLocale(),
+>>>>>>> main
 >>>>>>> main
 =======
   svSELocale(),

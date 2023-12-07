@@ -101,6 +101,13 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
+    id: 'zh-CN',
+    name: '简体中文',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
     id: 'zh-HK',
     name: '中文（香港）',
     maintainers: [],
