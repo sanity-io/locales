@@ -1,6 +1,6 @@
-# @sanity/locale-tr-tr
+# @sanity/locale-nb-no
 
-Turkish (Türkiye) / Türkçe language support for [Sanity Studio](https://www.sanity.io/).
+Norwegian Bokmål (Norway) / Norsk (Bokmål) language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 
@@ -9,7 +9,7 @@ This is an unofficial language pack. Initial translations were done by AI and ma
 ## Installation
 
 ```sh
-npm install @sanity/locale-tr-tr
+npm install @sanity/locale-nb-no
 ```
 
 ## Usage
@@ -17,23 +17,22 @@ npm install @sanity/locale-tr-tr
 ```ts
 // sanity.config.ts / sanity.config.js:
 import {defineConfig} from 'sanity'
-import {trTRLocale} from '@sanity/locale-tr-tr'
+import {nbNOLocale} from '@sanity/locale-nb-no'
 
 export default defineConfig({
   // ...
   plugins: [
     // ... other plugins here ...
-    trTRLocale(),
+    nbNOLocale(),
   ],
 })
 ```
 
 The language should now show up in the Studio's user menu.
 
-## Maintainers
+## Contributors
 
-We are looking for maintainers for this plugin!
-If you are interested, please [send a PR](/CONTRIBUTING.md#maintaining-a-locale) adding yourself as a maintainer.
+- @rexxars
 
 ## Contributing
 
