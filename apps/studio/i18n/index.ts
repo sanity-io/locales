@@ -17,9 +17,9 @@ export const i18nDemo = definePlugin({
         resources: () => import('./en-US'),
       },
       {
-        locale: 'no-NB',
+        locale: 'nb-NB',
         namespace: i18nNamespace,
-        resources: () => import('./no-NB'),
+        resources: () => import('./nb-NO'),
       },
     ],
   },

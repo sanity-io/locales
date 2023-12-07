@@ -17,12 +17,14 @@ import {buildRegistry} from './builders/buildRegistry'
 export const getLocaleRegistry = memoizeAsyncFunction(async () => {
   const localesPath = await getLocalesPath()
   const locales = await loadRegistry()
+  const displayName = new Intl.DisplayNames(['en-US'], {type: 'language'})
 
   return locales
     .sort((a, b) => a.id.localeCompare(b.id))
     .map(
       (locale): Locale => ({
         ...locale,
+        englishName: displayName.of(locale.id) || locale.name,
         exportName: getExportName(locale),
         packageName: getPackageName(locale),
         path: joinPath(localesPath, locale.id),

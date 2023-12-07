@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
     "paths": {
-      "@sanity/locale-de": ["../../locales/de/src"],
-      "@sanity/locale-es": ["../../locales/es/src"],
+      "@sanity/locale-de-de": ["../../locales/de-DE/src"],
+      "@sanity/locale-es-es": ["../../locales/es-ES/src"],
+      "@sanity/locale-fi-fi": ["../../locales/fi-FI/src"],
       "@sanity/locale-fr-fr": ["../../locales/fr-FR/src"],
-      "@sanity/locale-it": ["../../locales/it/src"],
-      "@sanity/locale-jp": ["../../locales/jp/src"],
-      "@sanity/locale-ko": ["../../locales/ko/src"],
-      "@sanity/locale-no-nb": ["../../locales/no-NB/src"],
+      "@sanity/locale-is-is": ["../../locales/is-IS/src"],
+      "@sanity/locale-it-it": ["../../locales/it-IT/src"],
+      "@sanity/locale-ja-jp": ["../../locales/ja-JP/src"],
+      "@sanity/locale-ko-kr": ["../../locales/ko-KR/src"],
+      "@sanity/locale-nb-no": ["../../locales/nb-NO/src"],
+      "@sanity/locale-nn-no": ["../../locales/nn-NO/src"],
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
       "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"],
-      "@sanity/locale-zh-tw": ["../../locales/zh-TW/src"]
+      "@sanity/locale-zh-tw": ["../../locales/zh-TW/src"],
+      "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
+      "@sanity/locale-tr-tr": ["../../locales/tr-TR/src"]
     }
   },
   "extends": "../../tsconfig.json"

@@ -25,7 +25,7 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
 
   const pkg: PackageJson = {
     name: locale.packageName,
-    description: `${locale.name} locale/translation for Sanity Studio`,
+    description: `${locale.englishName} / ${locale.name} locale/translation for Sanity Studio`,
     private: false,
     version: prevPkg.version || '1.0.0',
     license,
