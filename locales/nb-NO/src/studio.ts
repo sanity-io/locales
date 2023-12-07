@@ -66,6 +66,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.delete.text': 'Slett',
   'asset-source.file.asset-list.action.delete.title': 'Slett fil',
   'asset-source.file.asset-list.action.select-file.title': 'Velg filen {{filename}}',
+  'asset-source.file.asset-list.action.show-usage.title': undefined, // 'Show usage'
   'asset-source.file.asset-list.delete-failed': 'Fil kunne ikke bli slettet',
   'asset-source.file.asset-list.delete-successful': 'Fil slettet',
   'asset-source.file.asset-list.header.date-added': 'Dato lagt til',
@@ -444,6 +445,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.read-only-label': 'Dette feltet er skrivebeskyttet',
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Finner startverdi…',
+  /** Placeholder value for datetime input */
+  'inputs.datetime.placeholder': undefined, // 'e.g. {{example}}'
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Åpne filinnstillingsmeny',
   /** Browse */
@@ -623,6 +626,12 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Sett inn {{typeName}} (i linjen)',
   /** Label for action to remove an annotation */
   'inputs.portable-text.action.remove-annotation': 'Fjern merknad',
+  /** Label for activate on focus with context of click and not focused */
+  'inputs.portable-text.activate-on-focus-message_click': undefined, // 'Click to activate'
+  /** Label for activate on focus with context of click and focused */
+  'inputs.portable-text.activate-on-focus-message_click-focused': undefined, // 'Click or press space to activate'
+  /** Label for activate on focus with context of tap and not focused */
+  'inputs.portable-text.activate-on-focus-message_tap': undefined, // 'Tap to activate'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Rediger {{schemaType}}',
   /** Title of the default "link" annotation */
@@ -1460,20 +1469,36 @@ export default removeUndefinedLocaleResources({
   'timeline.loading-history': 'Laster historikk…',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': undefined, // 'Created'
+  /** Label shown in review changes timeline when a document has been created, with a timestamp */
+  'timeline.operation.created_timestamp': undefined, // 'Created: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a document was initially created */
   'timeline.operation.created-initial': undefined, // 'Created'
+  /** Label shown in review changes timeline when a document was initially created, with a timestamp */
+  'timeline.operation.created-initial_timestamp': undefined, // 'Created: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a document has been deleted */
   'timeline.operation.deleted': undefined, // 'Deleted'
+  /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
+  'timeline.operation.deleted_timestamp': undefined, // 'Deleted: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
+  'timeline.operation.draft-discarded_timestamp': undefined, // 'Discarded draft: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a draft has been edited */
   'timeline.operation.edited-draft': undefined, // 'Edited'
+  /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
+  'timeline.operation.edited-draft_timestamp': undefined, // 'Edited: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a document has been edited live */
   'timeline.operation.edited-live': undefined, // 'Live edited'
+  /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
+  'timeline.operation.edited-live_timestamp': undefined, // 'Live edited: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': undefined, // 'Published'
+  /** Label shown in review changes timeline when a document was published, with a timestamp */
+  'timeline.operation.published_timestamp': undefined, // 'Published: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a document was unpublished */
   'timeline.operation.unpublished': undefined, // 'Unpublished'
+  /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
+  'timeline.operation.unpublished_timestamp': undefined, // 'Unpublished: {{timestamp, datetime}}'
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

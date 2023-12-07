@@ -79,12 +79,14 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Gjenopprett nyeste versjon',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dette dokumentet har blitt slettet.',
-  /** The text for the permission check banner if there is are multiple roles */
-  'banners.permission-check-banner.plural-roles.text':
-    'Dine roller {{roles}} har ikke tillatelser til å {{requiredPermission}} dette dokumentet.',
-  /** The text for the permission check banner if there is only one role */
-  'banners.permission-check-banner.singular-role.text':
-    'Din rolle {{roles}} har ikke tillatelser til å {{requiredPermission}} dette dokumentet.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_one': undefined, // 'Your role <Roles/> does not have permissions to create this document.'
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_create_other': undefined, // 'Your roles <Roles/> do not have permissions to create this document.'
+  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_one': undefined, // 'Your role <Roles/> does not have permissions to update this document.'
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  'banners.permission-check-banner.missing-permission_update_other': undefined, // 'Your roles <Roles/> do not have permissions to update this document.'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
