@@ -1,7 +1,7 @@
 import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
-  id: 'fi',
+  id: 'fi-FI',
   title: 'Suomi',
   bundles: [
     {
@@ -31,8 +31,8 @@ const locale = defineLocale({
  *
  * @public
  */
-export const fiLocale = definePlugin({
-  name: '@sanity/locale-fi',
+export const fiFILocale = definePlugin({
+  name: '@sanity/locale-fi-fi',
   i18n: {
     locales: [locale],
   },

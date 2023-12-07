@@ -105,9 +105,9 @@ importers:
       '@sanity/locale-es-es':
         specifier: workspace:*
         version: link:../../locales/es-ES
-      '@sanity/locale-fi':
+      '@sanity/locale-fi-fi':
         specifier: workspace:*
-        version: link:../../locales/fi
+        version: link:../../locales/fi-FI
       '@sanity/locale-fr-fr':
         specifier: workspace:*
         version: link:../../locales/fr-FR
@@ -191,7 +191,7 @@ importers:
         specifier: ^3.21.0
         version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
-  locales/fi:
+  locales/fi-FI:
     dependencies:
       sanity:
         specifier: ^3.21.0
