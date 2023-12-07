@@ -1,8 +1,8 @@
 import {defineLocale, definePlugin} from 'sanity'
 
 const locale = defineLocale({
-  id: 'pt-PT',
-  title: 'Português',
+  id: 'it-IT',
+  title: 'Italiano',
   bundles: [
     {
       namespace: 'structure',
@@ -27,12 +27,12 @@ const locale = defineLocale({
 })
 
 /**
- * Português locale/translation plugin for Sanity Studio
+ * Italiano locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const ptPTLocale = definePlugin({
-  name: '@sanity/locale-pt-pt',
+export const itITLocale = definePlugin({
+  name: '@sanity/locale-it-it',
   i18n: {
     locales: [locale],
   },
