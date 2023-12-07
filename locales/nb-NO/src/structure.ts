@@ -81,16 +81,16 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Dette dokumentet har blitt slettet.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Din rolle <Roles/> har ikke tillatelser til å opprette dette dokumentet.',
+    'Din rolle <Roles/> har ikke tillatelse til å opprette dette dokumentet.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Dine roller <Roles/> har ikke tillatelser til å opprette dette dokumentet.',
+    'Dine roller <Roles/> har ikke tillatelse til å opprette dette dokumentet.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Din rolle <Roles/> har ikke tillatelser til å oppdatere dette dokumentet.',
+    'Din rolle <Roles/> har ikke tillatelse til å oppdatere dette dokumentet.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    'Dine roller <Roles/> har ikke tillatelser til å oppdatere dette dokumentet.',
+    'Dine roller <Roles/> har ikke tillatelse til å oppdatere dette dokumentet.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
