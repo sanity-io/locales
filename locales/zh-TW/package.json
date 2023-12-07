@@ -2,7 +2,7 @@
   "name": "@sanity/locale-zh-tw",
   "version": "1.0.0",
   "private": false,
-  "description": "繁體中文 locale/translation for Sanity Studio",
+  "description": "Chinese (Taiwan) / 繁體中文 locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
