@@ -675,404 +675,447 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-child-type.description':
     'Dziecko z kluczem {{childKey}} bloku z kluczem <code>{{key}}</code> nie ma właściwości <code>_type</code>.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
-  'inputs.portable-text.invalid-value.missing-key.action': undefined, // 'Assign random key'
+  'inputs.portable-text.invalid-value.missing-key.action': 'Przypisz losowy klucz',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
-  'inputs.portable-text.invalid-value.missing-key.description': undefined, // 'Block at index <code>{{index}}</code> is missing required <code>_key</code> property.'
+  'inputs.portable-text.invalid-value.missing-key.description':
+    'Blok na indeksie <code>{{index}}</code> nie zawiera wymaganego <code>_key</code> właściwości.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-children.action': undefined, // 'Remove the block'
+  'inputs.portable-text.invalid-value.missing-or-invalid-children.action': 'Usuń blok',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-children.description': undefined, // 'Text block with key <code>{{key}}</code> has an invalid or missing `children` property.'
+  'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
+    'Blok tekstowy z kluczem <code>{{key}}</code> ma nieprawidłową lub brakującą właściwość `children`.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': undefined, // 'Add property'
+  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': 'Dodaj właściwość',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description': undefined, // 'Text block with key <code>{{key}}</code> has an invalid or missing `markDefs` property.'
+  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description':
+    'Blok tekstowy z kluczem <code>{{key}}</code> ma nieprawidłową lub brakującą właściwość `markDefs`.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
-  'inputs.portable-text.invalid-value.missing-type.action': undefined, // 'Remove the block'
+  'inputs.portable-text.invalid-value.missing-type.action': 'Usuń blok',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
-  'inputs.portable-text.invalid-value.missing-type.description': undefined, // 'Block with key <code>{{key}}</code> is missing a type name.'
+  'inputs.portable-text.invalid-value.missing-type.description':
+    'Blok z kluczem <code>{{key}}</code> nie zawiera nazwy typu.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
-  'inputs.portable-text.invalid-value.non-object-child.action': undefined, // 'Remove the item'
+  'inputs.portable-text.invalid-value.non-object-child.action': 'Usuń element',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
-  'inputs.portable-text.invalid-value.non-object-child.description': undefined, // 'Child at index <code>{{index}}</code> of block with key <code>{{key}}</code> is not an object.'
+  'inputs.portable-text.invalid-value.non-object-child.description':
+    'Dziecko na indeksie <code>{{index}}</code> bloku z kluczem <code>{{key}}</code> nie jest obiektem.',
   /** Action presented when the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
-  'inputs.portable-text.invalid-value.not-an-array.action': undefined, // 'Unset the value'
+  'inputs.portable-text.invalid-value.not-an-array.action': 'Usuń wartość',
   /** Text explaining that the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
-  'inputs.portable-text.invalid-value.not-an-array.description': undefined, // 'Value must be an array of Portable Text blocks, or undefined.'
+  'inputs.portable-text.invalid-value.not-an-array.description':
+    'Wartość musi być tablicą bloków Portable Text lub niezdefiniowana.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is not an object */
-  'inputs.portable-text.invalid-value.not-an-object.action': undefined, // 'Remove item'
+  'inputs.portable-text.invalid-value.not-an-object.action': 'Usuń element',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is not an object */
-  'inputs.portable-text.invalid-value.not-an-object.description': undefined, // 'Item at <code>{{index}}</code> is not an object,.'
+  'inputs.portable-text.invalid-value.not-an-object.description':
+    'Element na <code>{{index}}</code> nie jest obiektem,.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.action': undefined, // 'Remove disallowed marks'
+  'inputs.portable-text.invalid-value.orphaned-marks.action': 'Usuń niedozwolone znaki',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.description': undefined, // 'Text block with key <code>{{key}}</code> contains marks <code>({{orphanedMarks, list}})</code> that are not allowed by the schema.'
+  'inputs.portable-text.invalid-value.orphaned-marks.description':
+    'Blok tekstowy z kluczem <code>{{key}}</code> zawiera znaki <code>({{orphanedMarks, list}})</code>, które nie są dozwolone przez schemat.',
   /** Title for the alert indicating that the Portable Text field has an invalid value */
-  'inputs.portable-text.invalid-value.title': undefined, // 'Invalid Portable Text value'
+  'inputs.portable-text.invalid-value.title': 'Nieprawidłowa wartość Portable Text',
   /** Title of "bulleted" list type */
-  'inputs.portable-text.list-type.bullet': undefined, // 'Bulleted list'
+  'inputs.portable-text.list-type.bullet': 'Lista punktowana',
   /** Title of numbered list type */
-  'inputs.portable-text.list-type.number': undefined, // 'Numbered list'
+  'inputs.portable-text.list-type.number': 'Lista numerowana',
   /** Title of the "h1" block style */
-  'inputs.portable-text.style.h1': undefined, // 'Heading 1'
+  'inputs.portable-text.style.h1': 'Nagłówek 1',
   /** Title of the "h2" block style */
-  'inputs.portable-text.style.h2': undefined, // 'Heading 2'
+  'inputs.portable-text.style.h2': 'Nagłówek 2',
   /** Title of the "h3" block style */
-  'inputs.portable-text.style.h3': undefined, // 'Heading 3'
+  'inputs.portable-text.style.h3': 'Nagłówek 3',
   /** Title of the "h4" block style */
-  'inputs.portable-text.style.h4': undefined, // 'Heading 4'
+  'inputs.portable-text.style.h4': 'Nagłówek 4',
   /** Title of the "h5" block style */
-  'inputs.portable-text.style.h5': undefined, // 'Heading 5'
+  'inputs.portable-text.style.h5': 'Nagłówek 5',
   /** Title of the "h6" block style */
-  'inputs.portable-text.style.h6': undefined, // 'Heading 6'
+  'inputs.portable-text.style.h6': 'Nagłówek 6',
   /** Title shown when multiple blocks of varying styles is selected */
-  'inputs.portable-text.style.multiple': undefined, // 'Multiple'
+  'inputs.portable-text.style.multiple': 'Wiele',
   /** Title of fallback when no style is given for a block */
-  'inputs.portable-text.style.none': undefined, // 'No style'
+  'inputs.portable-text.style.none': 'Brak stylu',
   /** Title of the "normal" block style */
-  'inputs.portable-text.style.normal': undefined, // 'Normal'
+  'inputs.portable-text.style.normal': 'Normalny',
   /** Title of the "quote" block style */
-  'inputs.portable-text.style.quote': undefined, // 'Quote'
+  'inputs.portable-text.style.quote': 'Cytat',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action-create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action-create-new-document-select': 'Utwórz nowy…',
   /** Label for action to clear the current value of the reference field */
-  'inputs.reference.action.clear': undefined, // 'Clear'
+  'inputs.reference.action.clear': 'Wyczyść',
   /** Label for action to create a new document from the reference input */
-  'inputs.reference.action.create-new-document': undefined, // 'Create new'
+  'inputs.reference.action.create-new-document': 'Utwórz nowy',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
-  'inputs.reference.action.duplicate': undefined, // 'Duplicate'
+  'inputs.reference.action.duplicate': 'Duplikuj',
   /** Label for action that opens the referenced document in a new tab */
-  'inputs.reference.action.open-in-new-tab': undefined, // 'Open in new tab'
+  'inputs.reference.action.open-in-new-tab': 'Otwórz w nowej karcie',
   /** Label for action to remove the reference from an array */
-  'inputs.reference.action.remove': undefined, // 'Remove'
+  'inputs.reference.action.remove': 'Usuń',
   /** Label for action to replace the current value of the field */
-  'inputs.reference.action.replace': undefined, // 'Replace'
+  'inputs.reference.action.replace': 'Zastąp',
   /** Label for action to cancel a previously initiated replace action  */
-  'inputs.reference.action.replace-cancel': undefined, // 'Cancel replace'
+  'inputs.reference.action.replace-cancel': 'Anuluj zastępowanie',
   /** The cross-dataset reference field currently has a reference, but the feature has been disabled since it was created. This explains what can/cannot be done in its current state. */
-  'inputs.reference.cross-dataset.feature-disabled-actions': undefined, // 'You can still clear this field\'s existing reference, but it cannot be changed to a different document as long as the feature is disabled.'
+  'inputs.reference.cross-dataset.feature-disabled-actions':
+    'Możesz nadal wyczyścić istniejące odniesienie w tym polu, ale nie można go zmienić na inny dokument, dopóki funkcja jest wyłączona.',
   /** A cross-dataset reference field exists but the feature has been disabled. A <DocumentationLink> component is available. */
-  'inputs.reference.cross-dataset.feature-disabled-description': undefined, // 'This feature has been disabled. Read how to enable it in <DocumentationLink>the documentation</DocumentationLink>.'
+  'inputs.reference.cross-dataset.feature-disabled-description':
+    'Ta funkcja została wyłączona. Przeczytaj, jak ją włączyć w <DocumentationLink>dokumentacji</DocumentationLink>.',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
-  'inputs.reference.cross-dataset.feature-unavailable-title': undefined, // 'Unavailable feature: Cross dataset reference'
+  'inputs.reference.cross-dataset.feature-unavailable-title':
+    'Niedostępna funkcja: Odniesienie między zbiorami danych',
   /** The cross-dataset reference points to a document with an invalid type  */
-  'inputs.reference.cross-dataset.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}}) <JsonValue/>'
+  'inputs.reference.cross-dataset.invalid-type':
+    'Odniesiony dokument jest nieprawidłowego typu ({{typeName}}) <JsonValue/>',
   /** The referenced document will open in a new tab (due to external studio) */
-  'inputs.reference.document-opens-in-new-tab': undefined, // 'This document opens in a new tab'
+  'inputs.reference.document-opens-in-new-tab': 'Ten dokument otworzy się w nowej karcie',
   /** Error title for when the document is unavailable (for any possible reason) */
-  'inputs.reference.error.document-unavailable-title': undefined, // 'Document unavailable'
+  'inputs.reference.error.document-unavailable-title': 'Dokument niedostępny',
   /** Error title for when the referenced document failed to be loaded */
-  'inputs.reference.error.failed-to-load-document-title': undefined, // 'Failed to load referenced document'
+  'inputs.reference.error.failed-to-load-document-title':
+    'Nie udało się załadować odniesionego dokumentu',
   /** Error title for when the reference search returned a document that is not an allowed type for the field */
-  'inputs.reference.error.invalid-search-result-type-title': undefined, // 'Search returned a type that\'s not valid for this reference: "{{returnedType}}"'
+  'inputs.reference.error.invalid-search-result-type-title':
+    'Wyszukiwanie zwróciło typ, który nie jest prawidłowy dla tego odniesienia: "{{returnedType}}"',
   /** Error description for when the document referenced is not one of the types declared as allowed target types in schema */
-  'inputs.reference.error.invalid-type-description': undefined, // 'Referenced document (<code>{{documentId}}</code>) is of type <code>{{actualType}}</code>. According to the schema, referenced documents can only be of type <AllowedTypes />.'
+  'inputs.reference.error.invalid-type-description':
+    'Odniesiony dokument (<code>{{documentId}}</code>) jest typu <code>{{actualType}}</code>. Zgodnie ze schematem, odniesione dokumenty mogą być tylko typu <AllowedTypes />.',
   /** Error title for when the document referenced is not one of the types declared as allowed target types in schema */
-  'inputs.reference.error.invalid-type-title': undefined, // 'Document of invalid type'
+  'inputs.reference.error.invalid-type-title': 'Dokument nieprawidłowego typu',
   /** Error description for when the user does not have permissions to read the referenced document */
-  'inputs.reference.error.missing-read-permissions-description': undefined, // 'The referenced document could not be accessed due to insufficient permissions'
+  'inputs.reference.error.missing-read-permissions-description':
+    'Nie można uzyskać dostępu do odniesionego dokumentu z powodu niewystarczających uprawnień',
   /** Error title for when the user does not have permissions to read the referenced document */
-  'inputs.reference.error.missing-read-permissions-title': undefined, // 'Insufficient permissions'
+  'inputs.reference.error.missing-read-permissions-title': 'Niewystarczające uprawnienia',
   /** Error description for when the current reference value points to a document that does not exist (on weak references) */
-  'inputs.reference.error.nonexistent-document-description': undefined, // 'The referenced document does not exist (ID: <code>{{documentId}}</code>). You can either remove the reference or replace it with another document.'
+  'inputs.reference.error.nonexistent-document-description':
+    'Odniesiony dokument nie istnieje (ID: <code>{{documentId}}</code>). Możesz usunąć odniesienie lub zastąpić je innym dokumentem.',
   /** Error title for when the current reference value points to a document that does not exist (on weak references) */
-  'inputs.reference.error.nonexistent-document-title': undefined, // 'Not found'
+  'inputs.reference.error.nonexistent-document-title': 'Nie znaleziono',
   /** Label for button that clears the reference when it points to a document that does not exist (on weak references) */
-  'inputs.reference.error.nonexistent-document.clear-button-label': undefined, // 'Clear'
+  'inputs.reference.error.nonexistent-document.clear-button-label': 'Wyczyść',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
-  'inputs.reference.error.search-failed-title': undefined, // 'Reference search failed'
+  'inputs.reference.error.search-failed-title': 'Wyszukiwanie referencji nie powiodło się',
   /** Alternative text for the image shown in cross-dataset reference input */
-  'inputs.reference.image-preview-alt-text': undefined, // 'Image preview of referenced document'
+  'inputs.reference.image-preview-alt-text': 'Podgląd obrazu dokumentu referencyjnego',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
-  'inputs.reference.incomplete-reference.finalize-action-description': undefined, // '<strong>{{referencedDocument}}</strong> is published and this reference should now be finalized.'
+  'inputs.reference.incomplete-reference.finalize-action-description':
+    '<strong>{{referencedDocument}}</strong> jest opublikowany i ta referencja powinna być teraz sfinalizowana.',
   /** Title for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
-  'inputs.reference.incomplete-reference.finalize-action-title': undefined, // 'Finalize reference'
+  'inputs.reference.incomplete-reference.finalize-action-title': 'Sfinalizuj referencję',
   /** Description for alert shown when a reference in a live-edit document points to a document that exists and has been published, but the reference is still marked as weak */
-  'inputs.reference.incomplete-reference.strengthen-action-description': undefined, // '<strong>{{referencedDocument}}</strong> is published and this reference should now be converted to a strong reference.'
+  'inputs.reference.incomplete-reference.strengthen-action-description':
+    '<strong>{{referencedDocument}}</strong> jest opublikowany i ta referencja powinna być teraz przekształcona w silną referencję.',
   /** Title for alert shown when a reference in a live-edit document points to a document that exists and has been published, but the reference is still marked as weak */
-  'inputs.reference.incomplete-reference.strengthen-action-title': undefined, // 'Convert to strong reference'
+  'inputs.reference.incomplete-reference.strengthen-action-title': 'Przekształć w silną referencję',
   /** Label for button that triggers the action that strengthen a reference */
-  'inputs.reference.incomplete-reference.strengthen-button-label': undefined, // 'Convert to strong reference'
+  'inputs.reference.incomplete-reference.strengthen-button-label': 'Przekształć w silną referencję',
   /** Label for button that triggers a retry attempt for reference metadata  */
-  'inputs.reference.metadata-error.retry-button-label': undefined, // 'Retry'
+  'inputs.reference.metadata-error.retry-button-label': 'Ponów próbę',
   /** Title for alert shown when reference metadata fails to be loaded */
-  'inputs.reference.metadata-error.title': undefined, // 'Unable to load reference metadata'
+  'inputs.reference.metadata-error.title': 'Nie można załadować metadanych referencji',
   /** Message shown when no documents were found that matched the given search string */
-  'inputs.reference.no-results-for-query': undefined, // 'No results for <strong>“{{searchTerm}}”</strong>'
+  'inputs.reference.no-results-for-query': 'Brak wyników dla <strong>“{{searchTerm}}”</strong>',
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
-  'inputs.reference.preview.edited-at-time': undefined, // 'Edited <RelativeTime/>'
+  'inputs.reference.preview.edited-at-time': 'Edytowano <RelativeTime/>',
   /** Accessibility label for icon indicating that document does _not_ have any unpublished changes */
-  'inputs.reference.preview.has-no-unpublished-changes-aria-label': undefined, // 'No unpublished edits'
+  'inputs.reference.preview.has-no-unpublished-changes-aria-label': 'Brak nieopublikowanych edycji',
   /** Accessibility label for icon indicating that document has unpublished changes */
-  'inputs.reference.preview.has-unpublished-changes-aria-label': undefined, // 'Edited'
+  'inputs.reference.preview.has-unpublished-changes-aria-label': 'Edytowano',
   /** Accessibility label for icon indicating that document does _not_ have a published version */
-  'inputs.reference.preview.is-not-published-aria-label': undefined, // 'Not published'
+  'inputs.reference.preview.is-not-published-aria-label': 'Nieopublikowany',
   /** Accessibility label for icon indicating that document has a published version */
-  'inputs.reference.preview.is-published-aria-label': undefined, // 'Published'
+  'inputs.reference.preview.is-published-aria-label': 'Opublikowany',
   /** Text for tooltip indicating that a document has no unpublished edits */
-  'inputs.reference.preview.no-unpublished-edits': undefined, // 'No unpublished edits'
+  'inputs.reference.preview.no-unpublished-edits': 'Brak nieopublikowanych edycji',
   /** Text for tooltip indicating that a document has not yet been published */
-  'inputs.reference.preview.not-published': undefined, // 'Not published'
+  'inputs.reference.preview.not-published': 'Nieopublikowany',
   /** Text for tooltip showing when a document was published, using relative time (eg "how long ago was it published?") */
-  'inputs.reference.preview.published-at-time': undefined, // 'Published <RelativeTime/>'
+  'inputs.reference.preview.published-at-time': 'Opublikowano <RelativeTime/>',
   /** The referenced document no longer exist and might have been deleted (for weak references) */
-  'inputs.reference.referenced-document-does-not-exist': undefined, // 'The referenced document no longer exist and might have been deleted (document ID: <code>{{documentId}}</code>).'
+  'inputs.reference.referenced-document-does-not-exist':
+    'Referencyjny dokument już nie istnieje i mógł zostać usunięty (ID dokumentu: <code>{{documentId}}</code>).',
   /** The referenced document could not be displayed to the user because of insufficient permissions */
-  'inputs.reference.referenced-document-insufficient-permissions': undefined, // 'The referenced document could not be accessed due to insufficient permissions'
+  'inputs.reference.referenced-document-insufficient-permissions':
+    'Nie można uzyskać dostępu do dokumentu referencyjnego z powodu niewystarczających uprawnień',
   /** Label for when the reference input is resolving the initial value for an item */
-  'inputs.reference.resolving-initial-value': undefined, // 'Resolving initial value…'
+  'inputs.reference.resolving-initial-value': 'Rozwiązywanie wartości początkowej…',
   /** Placeholder shown in a reference input with no current value */
-  'inputs.reference.search-placeholder': undefined, // 'Type to search'
+  'inputs.reference.search-placeholder': 'Wpisz, aby wyszukać',
   /** Explanation of the consequences of leaving the reference as strong instead of weak */
-  'inputs.reference.strength-mismatch.is-strong-consquences': undefined, // 'It will not be possible to delete the reference document without first removing this reference or converting it to weak.'
+  'inputs.reference.strength-mismatch.is-strong-consquences':
+    'Nie będzie możliwe usunięcie dokumentu referencyjnego bez wcześniejszego usunięcia tej referencji lub przekształcenia jej w słabą.',
   /** Description for alert shown when a reference is supposed to be weak, but the actual value is strong */
-  'inputs.reference.strength-mismatch.is-strong-description': undefined, // 'This reference is <em>strong</em>, but according to the current schema it should be <em>weak</em>.'
+  'inputs.reference.strength-mismatch.is-strong-description':
+    'To odniesienie jest <em>mocne</em>, ale zgodnie z aktualnym schematem powinno być <em>słabe</em>.',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
-  'inputs.reference.strength-mismatch.is-weak-consquences': undefined, // 'This makes it possible to delete the referenced document without first deleting this reference, leaving this field referencing a nonexisting document.'
+  'inputs.reference.strength-mismatch.is-weak-consquences':
+    'Pozwala to na usunięcie odniesionego dokumentu bez konieczności wcześniejszego usuwania tego odniesienia, pozostawiając to pole odnoszące się do nieistniejącego dokumentu.',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
-  'inputs.reference.strength-mismatch.is-weak-description': undefined, // 'This reference is <em>weak</em>, but according to the current schema it should be <em>strong</em>.'
+  'inputs.reference.strength-mismatch.is-weak-description':
+    'To odniesienie jest <em>słabe</em>, ale zgodnie z aktualnym schematem powinno być <em>mocne</em>.',
   /** Label for button that triggers the action that strengthens a reference on strength mismatch */
-  'inputs.reference.strength-mismatch.strengthen-button-label': undefined, // 'Convert to strong reference'
+  'inputs.reference.strength-mismatch.strengthen-button-label': 'Przekształć w mocne odniesienie',
   /** Title for alert shown when a reference is supposed to be weak/strong, but the actual value is the opposite of what it is supposed to be */
-  'inputs.reference.strength-mismatch.title': undefined, // 'Reference strength mismatch'
+  'inputs.reference.strength-mismatch.title': 'Niezgodność siły odniesienia',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
-  'inputs.reference.strength-mismatch.weaken-button-label': undefined, // 'Convert to weak reference'
+  'inputs.reference.strength-mismatch.weaken-button-label': 'Przekształć w słabe odniesienie',
   /** Action message for generating the slug */
-  'inputs.slug.action.generate': undefined, // 'Generate'
+  'inputs.slug.action.generate': 'Generuj',
   /** Loading message for when the input is actively generating a slug */
-  'inputs.slug.action.generating': undefined, // 'Generating…'
+  'inputs.slug.action.generating': 'Generowanie…',
   /** Error message for when the source to generate a slug from is missing */
-  'inputs.slug.error.missing-source': undefined, // 'Source is missing. Check source on type {{schemaType}} in schema'
+  'inputs.slug.error.missing-source': 'Brak źródła. Sprawdź źródło typu {{schemaType}} w schemacie',
   /** Convert to <code>`{{targetType}}`</code> */
-  'inputs.untyped-value.convert-button.text': undefined, // 'Convert to <code>{{targetType}}</code>'
+  'inputs.untyped-value.convert-button.text': 'Przekształć na <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
-  'inputs.untyped-value.description': undefined, // 'Encountered an object value without a <code>_type</code> property.'
+  'inputs.untyped-value.description':
+    'Napotkano wartość obiektu bez właściwości <code>_type</code>.',
   /** Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items. */
-  'inputs.untyped-value.details.description': undefined, // 'Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items.'
+  'inputs.untyped-value.details.description':
+    'Usuń właściwość <code>name</code> z deklaracji obiektu lub ustaw właściwość <code>_type</code> dla elementów.',
   /** Current value (<code>object</code>): */
-  'inputs.untyped-value.details.json-dump-prefix': undefined, // 'Current value (<code>object</code>):'
+  'inputs.untyped-value.details.json-dump-prefix': 'Aktualna wartość (<code>object</code>):',
   /** The following types are valid here according to schema: */
-  'inputs.untyped-value.details.multi-type-description': undefined, // 'The following types are valid here according to schema:'
+  'inputs.untyped-value.details.multi-type-description':
+    'Następujące typy są tutaj prawidłowe zgodnie ze schematem:',
   /** Developer info */
-  'inputs.untyped-value.details.title': undefined, // 'Developer info'
+  'inputs.untyped-value.details.title': 'Informacje dla programistów',
   /** Property value missing <code>_type</code> */
-  'inputs.untyped-value.title': undefined, // 'Property value missing <code>_type</code>'
+  'inputs.untyped-value.title': 'Brakująca wartość właściwości <code>_type</code>',
   /** Unset value */
-  'inputs.untyped-value.unset-item-button.text': undefined, // 'Unset value'
+  'inputs.untyped-value.unset-item-button.text': 'Usuń wartość',
 
   /** The fallback explanation if no context is provided */
-  'insufficient-permissions-message.not-authorized-explanation': undefined, // 'You do not have permission to access this feature.'
+  'insufficient-permissions-message.not-authorized-explanation':
+    'Nie masz uprawnień do dostępu do tej funkcji.',
   /** The explanation when unable to create any document at all */
-  'insufficient-permissions-message.not-authorized-explanation_create-any-document': undefined, // 'You do not have permission to create a document.'
+  'insufficient-permissions-message.not-authorized-explanation_create-any-document':
+    'Nie masz uprawnień do tworzenia dokumentu.',
   /** The explanation when unable to create a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_create-document': undefined, // 'You do not have permission to create this document.'
+  'insufficient-permissions-message.not-authorized-explanation_create-document':
+    'Nie masz uprawnień do tworzenia tego dokumentu.',
   /** The explanation when unable to create a particular type of document */
-  'insufficient-permissions-message.not-authorized-explanation_create-document-type': undefined, // 'You do not have permission to create this kind of document.'
+  'insufficient-permissions-message.not-authorized-explanation_create-document-type':
+    'Nie masz uprawnień do tworzenia tego rodzaju dokumentu.',
   /** The explanation when unable to create a new reference in a document */
-  'insufficient-permissions-message.not-authorized-explanation_create-new-reference': undefined, // 'You do not have permission to create a new reference.'
+  'insufficient-permissions-message.not-authorized-explanation_create-new-reference':
+    'Nie masz uprawnień do tworzenia nowego odniesienia.',
   /** The explanation when unable to delete a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_delete-document': undefined, // 'You do not have permission to delete this document.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-document':
+    'Nie masz uprawnień do usunięcia tego dokumentu.',
   /** The explanation when unable to discard changes in a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_discard-changes': undefined, // 'You do not have permission to discard changes in this document.'
+  'insufficient-permissions-message.not-authorized-explanation_discard-changes':
+    'Nie masz uprawnień do odrzucenia zmian w tym dokumencie.',
   /** The explanation when unable to duplicate a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_duplicate-document': undefined, // 'You do not have permission to duplicate this document.'
+  'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
+    'Nie masz uprawnień do duplikowania tego dokumentu.',
   /** The explanation when unable to publish a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_publish-document': undefined, // 'You do not have permission to publish this document.'
+  'insufficient-permissions-message.not-authorized-explanation_publish-document':
+    'Nie masz uprawnień do publikacji tego dokumentu.',
   /** The explanation when unable to unpublish a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_unpublish-document': undefined, // 'You do not have permission to unpublish this document.'
+  'insufficient-permissions-message.not-authorized-explanation_unpublish-document':
+    'Nie masz uprawnień do cofnięcia publikacji tego dokumentu.',
   /** Appears after the not-authorized message. Lists the current roles. */
-  'insufficient-permissions-message.roles': undefined, // 'Your roles: <Roles/>'
+  'insufficient-permissions-message.roles': 'Twoje role: <Roles/>',
   /** The title for the insufficient permissions message component */
-  'insufficient-permissions-message.title': undefined, // 'Insufficient permissions'
+  'insufficient-permissions-message.title': 'Niewystarczające uprawnienia',
 
   /** Unexpected error: `{{error}}` */
-  'member-field-error.unexpected-error': undefined, // 'Unexpected error: {{error}}'
+  'member-field-error.unexpected-error': 'Nieoczekiwany błąd: {{error}}',
 
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
    */
-  'new-document.create-new-document-label': undefined, // 'New document…'
+  'new-document.create-new-document-label': 'Nowy dokument…',
   /** Placeholder for the "filter" input within the new document menu */
-  'new-document.filter-placeholder': undefined, // 'Filter'
+  'new-document.filter-placeholder': 'Filtruj',
   /** Loading indicator text within the new document menu */
-  'new-document.loading': undefined, // 'Loading…'
+  'new-document.loading': 'Ładowanie…',
   /** Accessibility label for the list displaying options in the new document menu */
-  'new-document.new-document-aria-label': undefined, // 'New document'
+  'new-document.new-document-aria-label': 'Nowy dokument',
   /** Message for when there are no document type options in the new document menu */
-  'new-document.no-document-types-found': undefined, // 'No document types found'
+  'new-document.no-document-types-found': 'Nie znaleziono typów dokumentów',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are no templates/types to create from
    */
-  'new-document.no-document-types-label': undefined, // 'No document types'
+  'new-document.no-document-types-label': 'Brak typów dokumentów',
   /** Message for when no results are found for a specific search query in the new document menu */
-  'new-document.no-results': undefined, // 'No results for <strong>{{searchQuery}}</strong>'
+  'new-document.no-results': 'Brak wyników dla <strong>{{searchQuery}}</strong>',
   /** Aria label for the button that opens the "Create new document" popover/dialog */
-  'new-document.open-dialog-aria-label': undefined, // 'Create new document'
+  'new-document.open-dialog-aria-label': 'Utwórz nowy dokument',
   /** Title for "Create new document" dialog */
-  'new-document.title': undefined, // 'Create new document'
+  'new-document.title': 'Utwórz nowy dokument',
 
   /** Label for action to manage members of the current studio project */
-  'presence.action.manage-members': undefined, // 'Manage members'
+  'presence.action.manage-members': 'Zarządzaj członkami',
   /** Accessibility label for Avatar Stack */
-  'presence.aria-label': undefined, // 'Who is here'
+  'presence.aria-label': 'Kto jest obecny',
   /** Message description for when no one else is currently present */
-  'presence.no-one-else-description': undefined, // 'Invite people to the project to see their online status.'
+  'presence.no-one-else-description': 'Zaproś osoby do projektu, aby zobaczyć ich status online.',
   /** Message title for when no one else is currently present */
-  'presence.no-one-else-title': undefined, // 'No one else is here'
+  'presence.no-one-else-title': 'Nikogo innego tu nie ma',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
-  'presence.not-in-a-document': undefined, // 'Not in a document'
+  'presence.not-in-a-document': 'Nie w dokumencie',
 
   /** Fallback title shown when a preview does not provide a title */
-  'preview.default.title-fallback': undefined, // 'Untitled'
+  'preview.default.title-fallback': 'Bez tytułu',
   /** Fallback preview value for types that have "no value" (eg null, undefined) */
-  'preview.fallback.no-value': undefined, // '(no value)'
+  'preview.fallback.no-value': '(brak wartości)',
   /** Alternative text for image being shown while image is being uploaded, in previews */
-  'preview.image.file-is-being-uploaded.alt-text': undefined, // 'The image currently being uploaded'
+  'preview.image.file-is-being-uploaded.alt-text': 'Obraz jest aktualnie przesyłany',
 
   /* Relative time, just now */
-  'relative-time.just-now': undefined, // 'just now'
+  'relative-time.just-now': 'przed chwilą',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
-  'search.action-open-aria-label': undefined, // 'Open search'
+  'search.action-open-aria-label': 'Otwórz wyszukiwanie',
   /** Action label for adding a search filter */
-  'search.action.add-filter': undefined, // 'Add filter'
+  'search.action.add-filter': 'Dodaj filtr',
   /** Action label for clearing search filters */
-  'search.action.clear-filters': undefined, // 'Clear filters'
+  'search.action.clear-filters': 'Wyczyść filtry',
   /** Label for action to clear recent searches */
-  'search.action.clear-recent-searches': undefined, // 'Clear recent searches'
+  'search.action.clear-recent-searches': 'Wyczyść ostatnie wyszukiwania',
   /** Accessibility label for action to clear all currently applied document type filters */
-  'search.action.clear-type-filters-aria-label': undefined, // 'Clear checked filters'
+  'search.action.clear-type-filters-aria-label': 'Wyczyść zaznaczone filtry',
   /** Label for action to clear all currently applied document type filters */
-  'search.action.clear-type-filters-label': undefined, // 'Clear'
+  'search.action.clear-type-filters-label': 'Wyczyść',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to close the search */
-  'search.action.close-search-aria-label': undefined, // 'Close search'
+  'search.action.close-search-aria-label': 'Zamknij wyszukiwanie',
   /** Accessibility label for filtering by document type */
-  'search.action.filter-by-document-type-aria-label': undefined, // 'Filter by document type'
+  'search.action.filter-by-document-type-aria-label': 'Filtruj według typu dokumentu',
   /** Accessibility action label for removing an already applied search filter */
-  'search.action.remove-filter-aria-label': undefined, // 'Remove filter'
+  'search.action.remove-filter-aria-label': 'Usuń filtr',
   /**
    * Text displayed when either no document type(s) have been selected, or we need a fallback,
    * eg "Search for all types".
    */
-  'search.action.search-all-types': undefined, // 'Search all documents'
+  'search.action.search-all-types': 'Wyszukaj wszystkie dokumenty',
   /**
    * Text displayed when we are able to determine one or more document types that will be used for
    * searching, and can fit within the space assigned by the design.
    */
-  'search.action.search-specific-types': undefined, // 'Search for {{types, list}}'
+  'search.action.search-specific-types': 'Wyszukaj {{types, list}}',
   /** Dialog title for action to select an asset of unknown type */
-  'search.action.select-asset': undefined, // 'Select asset'
+  'search.action.select-asset': 'Wybierz zasób',
   /** Dialog title for action to select a file asset */
-  'search.action.select-asset_file': undefined, // 'Select file'
+  'search.action.select-asset_file': 'Wybierz plik',
   /** Dialog title for action to select an image asset */
-  'search.action.select-asset_image': undefined, // 'Select image'
+  'search.action.select-asset_image': 'Wybierz obraz',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to hide filters */
-  'search.action.toggle-filters-aria-label_hide': undefined, // 'Hide filters'
+  'search.action.toggle-filters-aria-label_hide': 'Ukryj filtry',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
-  'search.action.toggle-filters-aria-label_show': undefined, // 'Show filters'
+  'search.action.toggle-filters-aria-label_show': 'Pokaż filtry',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
-  'search.document-type-list': undefined, // '{{types, list}}'
+  'search.document-type-list': '{{types, list}}',
   /**
    * In the context of a list of document types - no filtering selection has been done,
    * thus the default is "all types".
    */
-  'search.document-type-list-all-types': undefined, // 'All types'
+  'search.document-type-list-all-types': 'Wszystkie typy',
   /** Accessibility label for list displaying the available document types */
-  'search.document-types-aria-label': undefined, // 'Document types'
+  'search.document-types-aria-label': 'Typy dokumentów',
   /** Label for when no document types matching the filter are found */
-  'search.document-types-no-matches-found': undefined, // 'No matches for {{filter}}'
+  'search.document-types-no-matches-found': 'Brak dopasowań dla {{filter}}',
   /** Description for error when a filter cannot be displayed, describes that you should check the schema */
-  'search.error.display-filter-description': undefined, // 'This may indicate invalid options defined in your schema.'
+  'search.error.display-filter-description':
+    'Może to wskazywać na nieprawidłowe opcje zdefiniowane w schemacie.',
   /** Title for error when a filter cannot be displayed (mainly a developer-oriented error) */
-  'search.error.display-filter-title': undefined, // 'An error occurred whilst displaying this filter.'
+  'search.error.display-filter-title': 'Wystąpił błąd podczas wyświetlania tego filtra.',
   /** Description for error when no valid asset source is found, describes that you should check the the current studio config */
-  'search.error.no-valid-asset-source-check-config-description': undefined, // 'Please ensure it\'s enabled in your studio configuration file.'
+  'search.error.no-valid-asset-source-check-config-description':
+    'Upewnij się, że jest włączone w pliku konfiguracyjnym twojego studia.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
-  'search.error.no-valid-asset-source-only-default-description': undefined, // 'Currently, only the default asset source is supported.'
+  'search.error.no-valid-asset-source-only-default-description':
+    'Obecnie obsługiwane jest tylko domyślne źródło zasobów.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': undefined, // 'No valid asset sources found.'
+  'search.error.no-valid-asset-source-title': 'Nie znaleziono prawidłowych źródeł zasobów.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
-  'search.error.unspecified-error-help-description': undefined, // 'Please try again or check your connection'
+  'search.error.unspecified-error-help-description':
+    'Spróbuj ponownie lub sprawdź swoje połączenie',
   /** Title label for when search returned an error that we are not able to describe in detail */
-  'search.error.unspecified-error-title': undefined, // 'Something went wrong while searching'
+  'search.error.unspecified-error-title': 'Coś poszło nie tak podczas wyszukiwania',
   /**
    * Label for "All fields", a label that appears above the list of available fields when filtering.
    * If one or more document type has been chosen as filter, this label is replaced with a group of
    * fields per selected document type
    */
-  'search.filter-all-fields-header': undefined, // 'All fields'
+  'search.filter-all-fields-header': 'Wszystkie pola',
   /** Label for the action of changing from one file to a different file in asset search filter */
-  'search.filter-asset-change_file': undefined, // 'Change file'
+  'search.filter-asset-change_file': 'Zmień plik',
   /** Label for the action of changing from one image to a different image in asset search filter */
-  'search.filter-asset-change_image': undefined, // 'Change image'
+  'search.filter-asset-change_image': 'Zmień obraz',
   /** Label for the action of clearing the currently selected asset in an image/file filter */
-  'search.filter-asset-clear': undefined, // 'Clear'
+  'search.filter-asset-clear': 'Wyczyść',
   /** Label for the action of selecting a file in asset search filter */
-  'search.filter-asset-select_file': undefined, // 'Select file'
+  'search.filter-asset-select_file': 'Wybierz plik',
   /** Label for the action of selecting an image in asset search filter */
-  'search.filter-asset-select_image': undefined, // 'Select image'
+  'search.filter-asset-select_image': 'Wybierz obraz',
   /** Label for boolean filter - false */
-  'search.filter-boolean-false': undefined, // 'False'
+  'search.filter-boolean-false': 'Fałsz',
   /** Label for boolean filter - true */
-  'search.filter-boolean-true': undefined, // 'True'
+  'search.filter-boolean-true': 'Prawda',
   /** Accessibility label for list that lets you filter fields by title, when adding a new filter in search */
-  'search.filter-by-title-aria-label': undefined, // 'Filter by title'
+  'search.filter-by-title-aria-label': 'Filtruj według tytułu',
   /** Accessibility label for date filter input */
-  'search.filter-date-aria-label': undefined, // 'Date'
+  'search.filter-date-aria-label': 'Data',
   /** Accessibility label for selecting end date on the date range search filter */
-  'search.filter-date-range-end-date-aria-label': undefined, // 'End date'
+  'search.filter-date-range-end-date-aria-label': 'Data końcowa',
   /** Accessibility label for selecting start date on the date range search filter */
-  'search.filter-date-range-start-date-aria-label': undefined, // 'Start date'
+  'search.filter-date-range-start-date-aria-label': 'Data początkowa',
   /**
    * Label for "Days"/"Months"/"Years" when selecting it as unit in "X days ago" search filter.
    * Capitalized, as it would be listed in a dropdown.
    */
-  'search.filter-date-unit_days': undefined, // 'Days'
-  'search.filter-date-unit_months': undefined, // 'Months'
-  'search.filter-date-unit_years': undefined, // 'Years'
+  'search.filter-date-unit_days': 'Dni',
+  'search.filter-date-unit_months': 'Miesiące',
+  'search.filter-date-unit_years': 'Lata',
   /** Accessibility label for selecting the unit (day/month/year) when adding "X days ago" search filter */
-  'search.filter-date-unit-aria-label': undefined, // 'Select unit'
+  'search.filter-date-unit-aria-label': 'Wybierz jednostkę',
   /** Accessibility label for the input value (days/months/years) when adding "X days ago" search filter */
-  'search.filter-date-value-aria-label': undefined, // 'Unit value'
+  'search.filter-date-value-aria-label': 'Wartość jednostki',
   /** Label for "field description" shown in tooltip when navigating list of possible fields to filter */
-  'search.filter-field-tooltip-description': undefined, // 'Field description'
+  'search.filter-field-tooltip-description': 'Opis pola',
   /** Label for "field name" shown in tooltip when navigating list of possible fields to filter */
-  'search.filter-field-tooltip-name': undefined, // 'Field name'
+  'search.filter-field-tooltip-name': 'Nazwa pola',
   /** Label for "Used in document types", a list of the document types a field appears in. Shown in tooltip when navigating list of possible fields to filter */
-  'search.filter-field-tooltip-used-in-document-types': undefined, // 'Used in document types'
+  'search.filter-field-tooltip-used-in-document-types': 'Używane w typach dokumentów',
   /** Label for when no fields/filters are found for the given term */
-  'search.filter-no-matches-found': undefined, // 'No matches for {{filter}}'
+  'search.filter-no-matches-found': 'Brak dopasowań dla {{filter}}',
   /** Placeholder value for maximum numeric value filter */
-  'search.filter-number-max-value-placeholder': undefined, // 'Max value'
+  'search.filter-number-max-value-placeholder': 'Maksymalna wartość',
   /** Placeholder value for minimum numeric value filter */
-  'search.filter-number-min-value-placeholder': undefined, // 'Min value'
+  'search.filter-number-min-value-placeholder': 'Minimalna wartość',
   /** Placeholder value for the number filter */
-  'search.filter-number-value-placeholder': undefined, // 'Value'
+  'search.filter-number-value-placeholder': 'Wartość',
   /** Placeholder for the "Filter" input, when narrowing possible fields/filters */
-  'search.filter-placeholder': undefined, // 'Filter'
+  'search.filter-placeholder': 'Filtr',
   /** Label for the action of clearing the currently selected document in a reference filter */
-  'search.filter-reference-clear': undefined, // 'Clear'
+  'search.filter-reference-clear': 'Wyczyść',
   /**
    * Label for "shared fields", a label that appears above a list of fields that all filtered types
    * have in common, when adding a new filter. For instance, if "book" and "employee" both have a
    * "title" field, this field would be listed under "shared fields".
    * */
-  'search.filter-shared-fields-header': undefined, // 'Shared fields'
+  'search.filter-shared-fields-header': 'Wspólne pola',
   /** Placeholder value for the string filter */
-  'search.filter-string-value-placeholder': undefined, // 'Value'
+  'search.filter-string-value-placeholder': 'Wartość',
   /** Label/placeholder prompting user to select one of the predefined, allowed values for a string field */
-  'search.filter-string-value-select-predefined-value': undefined, // 'Select…'
+  'search.filter-string-value-select-predefined-value': 'Wybierz…',
   /** Accessibility label for the "Filters" list, that is shown when using "Add filter" in search (singular) */
-  'search.filters-aria-label_one': undefined, // 'Filter'
+  'search.filters-aria-label_one': 'Filtr',
   /** Label for instructions on how to use the search - displayed when no recent searches are available */
-  'search.instructions': undefined, // 'Use <ControlsIcon/> to refine your search'
+  'search.instructions': 'Użyj <ControlsIcon/>, aby doprecyzować wyszukiwanie',
   /** Helpful description for when no search results are found */
-  'search.no-results-help-description': undefined, // 'Try another keyword or adjust your filters'
+  'search.no-results-help-description':
+    'Spróbuj użyć innego słowa kluczowego lub dostosuj swoje filtry',
   /** Title label for when no search results are found */
-  'search.no-results-title': undefined, // 'No results found'
+  'search.no-results-title': 'Nie znaleziono wyników',
   /**
    * Individual search operators.
    *
@@ -1098,307 +1141,365 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has less than or equal to <Value/>`
    **/
   /* Array should have a count the given filter value */
-  'search.operator.array-count-equal.description_one': undefined, // '<Field/> <Operator>has</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-equal.name': undefined, // 'quantity is'
+  'search.operator.array-count-equal.description_one':
+    '<Field/> <Operator>ma</Operator> <Value>{{count}} element</Value>',
+  'search.operator.array-count-equal.name': 'ilość wynosi',
   /* Array should have a count greater than given filter value */
-  'search.operator.array-count-gt.description_one': undefined, // '<Field/> <Operator>has ></Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-gt.name': undefined, // 'quantity greater than'
+  'search.operator.array-count-gt.description_one':
+    '<Field/> <Operator>ma ></Operator> <Value>{{count}} element</Value>',
+  'search.operator.array-count-gt.name': 'ilość większa niż',
   /* Array should have a count greater than or equal to the given filter value */
-  'search.operator.array-count-gte.description_one': undefined, // '<Field/> <Operator>has ≥</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-gte.name': undefined, // 'quantity greater than or equal to'
+  'search.operator.array-count-gte.description_one':
+    '<Field/> <Operator>ma ≥</Operator> <Value>{{count}} element</Value>',
+  'search.operator.array-count-gte.name': 'ilość większa lub równa',
   /* Array should have a count less than given filter value */
-  'search.operator.array-count-lt.description_one': undefined, // '<Field/> <Operator>has <</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-lt.name': undefined, // 'quantity less than'
+  'search.operator.array-count-lt.description_one':
+    '<Field/> <Operator>ma <</Operator> <Value>{{count}} element</Value>',
+  'search.operator.array-count-lt.name': 'ilość mniejsza niż',
   /* Array should have a count less than or equal to the given filter value */
-  'search.operator.array-count-lte.description_one': undefined, // '<Field/> <Operator>has ≤</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-lte.name': undefined, // 'quantity less than or equal to'
+  'search.operator.array-count-lte.description_one':
+    '<Field/> <Operator>ma ≤</Operator> <Value>{{count}} element</Value>',
+  'search.operator.array-count-lte.name': 'ilość mniejsza lub równa',
   /* Array should have a count that is not equal to the given filter value */
-  'search.operator.array-count-not-equal.description_one': undefined, // '<Field/> <Operator>does not have</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-not-equal.name': undefined, // 'quantity is not'
+  'search.operator.array-count-not-equal.description_one':
+    '<Field/> <Operator>nie ma</Operator> <Value>{{count}} elementu</Value>',
+  'search.operator.array-count-not-equal.name': 'ilość nie jest równa',
   /**
    * Array should have a count within the range of given filter values.
    * Gets passed `{{from}}` and `{{to}}` values.
    **/
-  'search.operator.array-count-range.description': undefined, // '<Field/> <Operator>has between</Operator> <Value>{{from}} → {{to}} items</Value>'
-  'search.operator.array-count-range.name': undefined, // 'quantity is between'
+  'search.operator.array-count-range.description':
+    '<Field/> <Operator>ma między</Operator> <Value>{{from}} → {{to}} elementów</Value>',
+  'search.operator.array-count-range.name': 'ilość jest pomiędzy',
   /* Array should include the given value */
-  'search.operator.array-list-includes.description': undefined, // '<Field/> <Operator>includes</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-list-includes.name': undefined, // 'includes'
+  'search.operator.array-list-includes.description':
+    '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-list-includes.name': 'zawiera',
   /* Array should not include the given value */
-  'search.operator.array-list-not-includes.description': undefined, // '<Field/> <Operator>does not include</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-list-not-includes.name': undefined, // 'does not include'
+  'search.operator.array-list-not-includes.description':
+    '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-list-not-includes.name': 'nie zawiera',
   /* Array should include the given reference */
-  'search.operator.array-reference-includes.description': undefined, // '<Field/> <Operator>includes</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-reference-includes.name': undefined, // 'includes'
+  'search.operator.array-reference-includes.description':
+    '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-reference-includes.name': 'zawiera',
   /* Array should not include the given reference */
-  'search.operator.array-reference-not-includes.description': undefined, // '<Field/> <Operator>does not include</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-reference-not-includes.name': undefined, // 'does not include'
+  'search.operator.array-reference-not-includes.description':
+    '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-reference-not-includes.name': 'nie zawiera',
   /* Asset (file) should be the selected asset */
-  'search.operator.asset-file-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-file-equal.name': undefined, // 'is'
+  'search.operator.asset-file-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-file-equal.name': 'jest',
   /* Asset (file) should not be the selected asset */
-  'search.operator.asset-file-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-file-not-equal.name': undefined, // 'is not'
+  'search.operator.asset-file-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-file-not-equal.name': 'nie jest',
   /* Asset (image) should be the selected asset */
-  'search.operator.asset-image-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-image-equal.name': undefined, // 'is'
+  'search.operator.asset-image-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-image-equal.name': 'jest',
   /* Asset (image) should not be the selected asset */
-  'search.operator.asset-image-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-image-not-equal.name': undefined, // 'is not'
+  'search.operator.asset-image-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-image-not-equal.name': 'nie jest',
   /**
    * Boolean value should be the given filter value (true/false).
    * Context passed is `true` and `false`, allowing for more specific translations:
    * - `search.operator.boolean-equal.description_true`
    * - `search.operator.boolean-equal.description_false`
    */
-  'search.operator.boolean-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.boolean-equal.name': undefined, // 'is'
+  'search.operator.boolean-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.boolean-equal.name': 'jest',
   /* Date should be after (later than) given filter value */
-  'search.operator.date-after.description': undefined, // '<Field/> <Operator>is after</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-after.name': undefined, // 'after'
+  'search.operator.date-after.description':
+    '<Field/> <Operator>jest po</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-after.name': 'po',
   /* Date should be before (earlier than) given filter value */
-  'search.operator.date-before.description': undefined, // '<Field/> <Operator>is before</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-before.name': undefined, // 'before'
+  'search.operator.date-before.description':
+    '<Field/> <Operator>jest przed</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-before.name': 'przed',
   /* Date should be the given filter value */
-  'search.operator.date-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-equal.name': undefined, // 'is'
+  'search.operator.date-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-equal.name': 'jest',
   /* Date should be within the given filter value range (eg "within the last X days") */
-  'search.operator.date-last.description': undefined, // '<Field/> <Operator>is in the last</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-last.name': undefined, // 'last'
+  'search.operator.date-last.description':
+    '<Field/> <Operator>jest w ciągu ostatnich</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-last.name': 'ostatni',
   /* Date should not be the given filter value */
-  'search.operator.date-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-not-equal.name': undefined, // 'is not'
+  'search.operator.date-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-not-equal.name': 'nie jest',
   /* Date should be within the range of given filter values */
-  'search.operator.date-range.description': undefined, // '<Field/> <Operator>is between</Operator> <Value/>'
-  'search.operator.date-range.name': undefined, // 'is between'
+  'search.operator.date-range.description': '<Field/> <Operator>jest pomiędzy</Operator> <Value/>',
+  'search.operator.date-range.name': 'jest pomiędzy',
   /* Date and time should be after (later than) given filter value */
-  'search.operator.date-time-after.description': undefined, // '<Field/> <Operator>is after</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-after.name': undefined, // 'after'
+  'search.operator.date-time-after.description':
+    '<Field/> <Operator>jest po</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-after.name': 'po',
   /* Date and time should be before (earlier than) given filter value */
-  'search.operator.date-time-before.description': undefined, // '<Field/> <Operator>is before</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-before.name': undefined, // 'before'
+  'search.operator.date-time-before.description':
+    '<Field/> <Operator>jest przed</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-before.name': 'przed',
   /* Date and time should be the given filter value */
-  'search.operator.date-time-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-equal.name': undefined, // 'is'
+  'search.operator.date-time-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-equal.name': 'jest',
   /* Date and time should be within the given filter value range (eg "within the last X days") */
-  'search.operator.date-time-last.description': undefined, // '<Field/> <Operator>is in the last</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-last.name': undefined, // 'last'
+  'search.operator.date-time-last.description':
+    '<Field/> <Operator>jest w ciągu ostatnich</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-last.name': 'ostatni',
   /* Date and time should not be the given filter value */
-  'search.operator.date-time-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-not-equal.name': undefined, // 'is not'
+  'search.operator.date-time-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-not-equal.name': 'nie jest',
   /* Date and time should be within the range of given filter values */
-  'search.operator.date-time-range.description': undefined, // '<Field/> <Operator>is between</Operator> <Value/>'
-  'search.operator.date-time-range.name': undefined, // 'is between'
+  'search.operator.date-time-range.description':
+    '<Field/> <Operator>jest pomiędzy</Operator> <Value/>',
+  'search.operator.date-time-range.name': 'jest pomiędzy',
   /* Value should be defined */
-  'search.operator.defined.description': undefined, // '<Field/> <Operator>is</Operator> <Value>not empty</Value>'
-  'search.operator.defined.name': undefined, // 'not empty'
+  'search.operator.defined.description':
+    '<Field/> <Operator>jest</Operator> <Value>niepusty</Value>',
+  'search.operator.defined.name': 'niepusty',
   /* Value should not be defined */
-  'search.operator.not-defined.description': undefined, // '<Field/> <Operator>is</Operator> <Value>empty</Value>'
-  'search.operator.not-defined.name': undefined, // 'empty'
+  'search.operator.not-defined.description':
+    '<Field/> <Operator>jest</Operator> <Value>pusty</Value>',
+  'search.operator.not-defined.name': 'pusty',
   /* Number should be the given filter value */
-  'search.operator.number-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-equal.name': undefined, // 'is'
+  'search.operator.number-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-equal.name': 'jest',
   /* Number should be greater than given filter value */
-  'search.operator.number-gt.description': undefined, // '<Field/> <Operator>></Operator> <Value>{{value}}</Value>'
-  'search.operator.number-gt.name': undefined, // 'greater than'
+  'search.operator.number-gt.description':
+    '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
+  'search.operator.number-gt.name': 'większy niż',
   /* Number should be greater than or the given filter value */
-  'search.operator.number-gte.description': undefined, // '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-gte.name': undefined, // 'greater than or equal to'
+  'search.operator.number-gte.description':
+    '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-gte.name': 'większy lub równy',
   /* Number should be less than given filter value */
-  'search.operator.number-lt.description': undefined, // '<Field/> <Operator><</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-lt.name': undefined, // 'less than'
+  'search.operator.number-lt.description':
+    '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-lt.name': 'mniej niż',
   /* Number should be less than or the given filter value */
-  'search.operator.number-lte.description': undefined, // '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-lte.name': undefined, // 'less than or equal to'
+  'search.operator.number-lte.description':
+    '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-lte.name': 'mniej niż lub równy',
   /* Number should not be the given filter value */
-  'search.operator.number-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-not-equal.name': undefined, // 'is not'
+  'search.operator.number-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-not-equal.name': 'nie jest',
   /* Number should be within the range of given filter values */
-  'search.operator.number-range.description': undefined, // '<Field/> <Operator>is between</Operator> <Value>{{from}} → {{to}}</Value>'
-  'search.operator.number-range.name': undefined, // 'is between'
+  'search.operator.number-range.description':
+    '<Field/> <Operator>jest pomiędzy</Operator> <Value>{{from}} → {{to}}</Value>',
+  'search.operator.number-range.name': 'jest pomiędzy',
   /* Portable Text should contain the given filter value */
-  'search.operator.portable-text-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-contains.name': undefined, // 'contains'
+  'search.operator.portable-text-contains.description':
+    '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-contains.name': 'zawiera',
   /* Portable Text should be the given filter value */
-  'search.operator.portable-text-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-equal.name': undefined, // 'is'
+  'search.operator.portable-text-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-equal.name': 'jest',
   /* Portable Text should not contain the given filter value */
-  'search.operator.portable-text-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-not-contains.name': undefined, // 'does not contain'
+  'search.operator.portable-text-not-contains.description':
+    '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-not-contains.name': 'nie zawiera',
   /* Portable Text should not be the given filter value */
-  'search.operator.portable-text-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-not-equal.name': undefined, // 'is not'
+  'search.operator.portable-text-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-not-equal.name': 'nie jest',
   /* References the given asset (file) */
-  'search.operator.reference-asset-file.description': undefined, // '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-asset-file.name': undefined, // 'file'
+  'search.operator.reference-asset-file.description':
+    '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-asset-file.name': 'plik',
   /* References the given asset (image) */
-  'search.operator.reference-asset-image.description': undefined, // '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-asset-image.name': undefined, // 'image'
+  'search.operator.reference-asset-image.description':
+    '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-asset-image.name': 'obraz',
   /* References the given document */
-  'search.operator.reference-document.description': undefined, // '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-document.name': undefined, // 'document'
+  'search.operator.reference-document.description':
+    '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-document.name': 'dokument',
   /* Reference should be the given document */
-  'search.operator.reference-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-equal.name': undefined, // 'is'
+  'search.operator.reference-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-equal.name': 'jest',
   /* Reference should not be the given document */
-  'search.operator.reference-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-not-equal.name': undefined, // 'is not'
+  'search.operator.reference-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-not-equal.name': 'nie jest',
   /* Slug contains the given value */
-  'search.operator.slug-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-contains.name': undefined, // 'contains'
+  'search.operator.slug-contains.description':
+    '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-contains.name': 'zawiera',
   /* Slug equals the given filter value */
-  'search.operator.slug-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-equal.name': undefined, // 'is'
+  'search.operator.slug-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-equal.name': 'jest',
   /* Slug does not contain the given value */
-  'search.operator.slug-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-not-contains.name': undefined, // 'does not contain'
+  'search.operator.slug-not-contains.description':
+    '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-not-contains.name': 'nie zawiera',
   /* Slug does not equal the given filter value */
-  'search.operator.slug-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-not-equal.name': undefined, // 'is not'
+  'search.operator.slug-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-not-equal.name': 'nie jest',
   /* String contains the given filter value */
-  'search.operator.string-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-contains.name': undefined, // 'contains'
+  'search.operator.string-contains.description':
+    '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-contains.name': 'zawiera',
   /* String equals the given filter value */
-  'search.operator.string-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-equal.name': undefined, // 'is'
+  'search.operator.string-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-equal.name': 'jest',
   /* String equals one of the predefined allowed values */
-  'search.operator.string-list-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-list-equal.name': undefined, // 'is'
+  'search.operator.string-list-equal.description':
+    '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-list-equal.name': 'jest',
   /* String does not equal one of the predefined allowed values */
-  'search.operator.string-list-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-list-not-equal.name': undefined, // 'is not'
+  'search.operator.string-list-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-list-not-equal.name': 'nie jest',
   /* String does not contain the given filter value */
-  'search.operator.string-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-not-contains.name': undefined, // 'does not contain'
+  'search.operator.string-not-contains.description':
+    '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-not-contains.name': 'nie zawiera',
   /* String does not equal the given filter value */
-  'search.operator.string-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-not-equal.name': undefined, // 'is not'
+  'search.operator.string-not-equal.description':
+    '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-not-equal.name': 'nie jest',
   /** Label for the "Best match" search ordering type */
-  'search.ordering.best-match-label': undefined, // 'Best match'
+  'search.ordering.best-match-label': 'Najlepsze dopasowanie',
   /** Label for the "Created: Oldest first" search ordering type */
-  'search.ordering.created-ascending-label': undefined, // 'Created: Oldest first'
+  'search.ordering.created-ascending-label': 'Utworzone: Najstarsze pierwsze',
   /** Label for the "Created: Newest first" search ordering type */
-  'search.ordering.created-descending-label': undefined, // 'Created: Newest first'
+  'search.ordering.created-descending-label': 'Utworzone: Najnowsze pierwsze',
   /** Label for the "Updated: Oldest first" search ordering type */
-  'search.ordering.updated-ascending-label': undefined, // 'Updated: Oldest first'
+  'search.ordering.updated-ascending-label': 'Zaktualizowane: Najstarsze pierwsze',
   /** Label for the "Updated: Newest first" search ordering type */
-  'search.ordering.updated-descending-label': undefined, // 'Updated: Newest first'
+  'search.ordering.updated-descending-label': 'Zaktualizowane: Najnowsze pierwsze',
   /** Placeholder text for the global search input field */
-  'search.placeholder': undefined, // 'Search'
+  'search.placeholder': 'Szukaj',
   /** Accessibility label for the recent searches section, shown when no valid search terms has been given */
-  'search.recent-searches-aria-label': undefined, // 'Recent searches'
+  'search.recent-searches-aria-label': 'Ostatnie wyszukiwania',
   /** Label/heading shown for the recent searches section */
-  'search.recent-searches-label': undefined, // 'Recent searches'
+  'search.recent-searches-label': 'Ostatnie wyszukiwania',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
-  'search.search-results-aria-label': undefined, // 'Search results'
+  'search.search-results-aria-label': 'Wyniki wyszukiwania',
 
   /** Description for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-description': undefined, // 'Document history transactions have not been affected.'
+  'timeline.error.load-document-changes-description':
+    'Transakcje historii dokumentu nie zostały dotknięte.',
   /** Title for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-title': undefined, // 'An error occurred whilst retrieving document changes.'
+  'timeline.error.load-document-changes-title':
+    'Wystąpił błąd podczas pobierania zmian w dokumencie.',
   /** Error description for when the document doesn't have history */
-  'timeline.error.no-document-history-description': undefined, // 'When changing the content of the document, the document versions will appear in this menu.'
+  'timeline.error.no-document-history-description':
+    'Po zmianie zawartości dokumentu, wersje dokumentu pojawią się w tym menu.',
   /** Error title for when the document doesn't have history */
-  'timeline.error.no-document-history-title': undefined, // 'No document history'
+  'timeline.error.no-document-history-title': 'Brak historii dokumentu',
   /** Error prompt when revision cannot be loaded */
-  'timeline.error.unable-to-load-revision': undefined, // 'Unable to load revision'
+  'timeline.error.unable-to-load-revision': 'Nie można załadować wersji',
   /** Label for when the timeline item is the latest in the history */
-  'timeline.latest': undefined, // 'Latest'
+  'timeline.latest': 'Najnowsze',
   /** Label for latest version for timeline menu dropdown */
-  'timeline.latest-version': undefined, // 'Latest version'
+  'timeline.latest-version': 'Najnowsza wersja',
   /** The aria-label for the list of revisions in the timeline */
-  'timeline.list.aria-label': undefined, // 'Document revisions'
+  'timeline.list.aria-label': 'Wersje dokumentu',
   /** Label for loading history */
-  'timeline.loading-history': undefined, // 'Loading history…'
+  'timeline.loading-history': 'Ładowanie historii…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': 'Utworzono',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
-  'timeline.operation.created_timestamp': undefined, // 'Created: {{timestamp, datetime}}'
+  'timeline.operation.created_timestamp': 'Utworzono: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': 'Utworzono',
   /** Label shown in review changes timeline when a document was initially created, with a timestamp */
-  'timeline.operation.created-initial_timestamp': undefined, // 'Created: {{timestamp, datetime}}'
+  'timeline.operation.created-initial_timestamp': 'Utworzono: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': 'Usunięto',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
-  'timeline.operation.deleted_timestamp': undefined, // 'Deleted: {{timestamp, datetime}}'
+  'timeline.operation.deleted_timestamp': 'Usunięto: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': 'Odrzucono szkic',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
-  'timeline.operation.draft-discarded_timestamp': undefined, // 'Discarded draft: {{timestamp, datetime}}'
+  'timeline.operation.draft-discarded_timestamp': 'Odrzucono szkic: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': 'Edytowano',
   /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
-  'timeline.operation.edited-draft_timestamp': undefined, // 'Edited: {{timestamp, datetime}}'
+  'timeline.operation.edited-draft_timestamp': 'Edytowano: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': 'Edytowano na żywo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
-  'timeline.operation.edited-live_timestamp': undefined, // 'Live edited: {{timestamp, datetime}}'
+  'timeline.operation.edited-live_timestamp': 'Edytowano na żywo: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': 'Opublikowano',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
-  'timeline.operation.published_timestamp': undefined, // 'Published: {{timestamp, datetime}}'
+  'timeline.operation.published_timestamp': 'Opublikowano: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': 'Cofnięto publikację',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
-  'timeline.operation.unpublished_timestamp': undefined, // 'Unpublished: {{timestamp, datetime}}'
+  'timeline.operation.unpublished_timestamp': 'Cofnięto publikację: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
    */
-  'timeline.since': undefined, // 'Since: {{timestamp, datetime}}'
+  'timeline.since': 'Od: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
-  'timeline.since-version-missing': undefined, // 'Since: unknown version'
+  'timeline.since-version-missing': 'Od: nieznana wersja',
 
   /** Label for action to invite members to the current sanity project */
-  'user-menu.action.invite-members': undefined, // 'Invite members'
+  'user-menu.action.invite-members': 'Zaproś członków',
   /** Accessibility label for action to invite members to the current sanity project */
-  'user-menu.action.invite-members-aria-label': undefined, // 'Invite members'
+  'user-menu.action.invite-members-aria-label': 'Zaproś członków',
   /** Label for action to manage the current sanity project */
-  'user-menu.action.manage-project': undefined, // 'Manage project'
+  'user-menu.action.manage-project': 'Zarządzaj projektem',
   /** Accessibility label for the action to manage the current project */
-  'user-menu.action.manage-project-aria-label': undefined, // 'Manage project'
+  'user-menu.action.manage-project-aria-label': 'Zarządzaj projektem',
   /** Label for action to sign out of the current sanity project */
-  'user-menu.action.sign-out': undefined, // 'Sign out'
+  'user-menu.action.sign-out': 'Wyloguj się',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
-  'user-menu.appearance-title': undefined, // 'Appearance'
+  'user-menu.appearance-title': 'Wygląd',
   /** Label for close menu button for user menu */
-  'user-menu.close-menu': undefined, // 'Close menu'
+  'user-menu.close-menu': 'Zamknij menu',
   /** Description for using the "dark theme" in the appearance user menu */
-  'user-menu.color-scheme.dark-description': undefined, // 'Use dark appearance'
+  'user-menu.color-scheme.dark-description': 'Użyj ciemnego wyglądu',
   /** Title for using the "dark theme" in the appearance user menu */
-  'user-menu.color-scheme.dark-title': undefined, // 'Dark'
+  'user-menu.color-scheme.dark-title': 'Ciemny',
   /** Description for using the "light theme" in the appearance user menu */
-  'user-menu.color-scheme.light-description': undefined, // 'Use light appearance'
+  'user-menu.color-scheme.light-description': 'Użyj jasnego wyglądu',
   /** Title for using the "light theme" in the appearance user menu */
-  'user-menu.color-scheme.light-title': undefined, // 'Light'
+  'user-menu.color-scheme.light-title': 'Jasny',
   /** Description for using "system apparence" in the appearance user menu */
-  'user-menu.color-scheme.system-description': undefined, // 'Use system appearance'
+  'user-menu.color-scheme.system-description': 'Użyj wyglądu systemowego',
   /** Title for using system apparence in the appearance user menu */
-  'user-menu.color-scheme.system-title': undefined, // 'System'
+  'user-menu.color-scheme.system-title': 'Systemowy',
   /** Title for locale section for the current studio */
-  'user-menu.locale-title': undefined, // 'Language'
+  'user-menu.locale-title': 'Język',
   /** Label for tooltip to show which provider the currently logged in user is using */
-  'user-menu.login-provider': undefined, // 'Signed in with {{providerTitle}}'
+  'user-menu.login-provider': 'Zalogowano przez {{providerTitle}}',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
    */
-  'workspaces.action.add-workspace': undefined, // 'Add workspace'
+  'workspaces.action.add-workspace': 'Dodaj przestrzeń roboczą',
   /**
    * Label for action to choose a different workspace, in the case where you are not logged in,
    * have selected a workspace, and are faced with the authentication options for the selected
    * workspace. In other words, label for the action shown when you have reconsidered which
    * workspace to authenticate in.
    */
-  'workspaces.action.choose-another-workspace': undefined, // 'Choose another workspace'
+  'workspaces.action.choose-another-workspace': 'Wybierz inną przestrzeń roboczą',
   /** Label for heading that indicates that you can choose your workspace */
-  'workspaces.choose-your-workspace-label': undefined, // 'Choose your workspace'
+  'workspaces.choose-your-workspace-label': 'Wybierz swoją przestrzeń roboczą',
   /** Label for the workspace menu */
-  'workspaces.select-workspace-aria-label': undefined, // 'Select workspace'
+  'workspaces.select-workspace-aria-label': 'Wybierz przestrzeń roboczą',
   /** Button label for opening the workspace switcher */
-  'workspaces.select-workspace-label': undefined, // 'Select workspace'
+  'workspaces.select-workspace-label': 'Wybierz obszar roboczy',
   /** Title for Workplaces dropdown menu */
-  'workspaces.title': undefined, // 'Workspaces'
+  'workspaces.title': 'Obszary robocze',
 })

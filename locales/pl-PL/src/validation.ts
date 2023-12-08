@@ -2,98 +2,98 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
-  'array.exact-length': undefined, // 'Must have exactly {{wantedLength}} items'
+  'array.exact-length': 'Musi mieć dokładnie {{wantedLength}} elementów',
   /** Portable Text array must have exactly "$wantedLength" blocks, but has more/less */
-  'array.exact-length_blocks': undefined, // 'Must have exactly {{wantedLength}} blocks'
+  'array.exact-length_blocks': 'Musi mieć dokładnie {{wantedLength}} bloków',
   /** Array item is a duplicate, but array wants only unique items */
-  'array.item-duplicate': undefined, // 'Can\'t be a duplicate'
+  'array.item-duplicate': 'Nie może być duplikatem',
   /** Array has more than the maximum of "$maxLength" items */
-  'array.maximum-length': undefined, // 'Must have at most {{maxLength}} items'
+  'array.maximum-length': 'Musi mieć najwyżej {{maxLength}} elementów',
   /** Portable Text array has more than the maximum of "$maxLength" items */
-  'array.maximum-length_blocks': undefined, // 'Must have at most {{maxLength}} blocks'
+  'array.maximum-length_blocks': 'Musi mieć najwyżej {{maxLength}} bloków',
   /** Array has less than the minimum of "$minLength" items */
-  'array.minimum-length': undefined, // 'Must have at least {{minLength}} items'
+  'array.minimum-length': 'Musi mieć przynajmniej {{minLength}} elementów',
   /** Portable Text array has less than the minimum of "$minLength" blocks */
-  'array.minimum-length_blocks': undefined, // 'Must have at least {{minLength}} blocks'
+  'array.minimum-length_blocks': 'Musi mieć przynajmniej {{minLength}} bloków',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': undefined, // 'Must be a valid ISO-8601 formatted date string'
+  'date.invalid-format': 'Musi być prawidłowym ciągiem znaków daty w formacie ISO-8601',
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': undefined, // 'Must be at or before {{maxDate}}'
+  'date.maximum': 'Musi być w dniu lub przed {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': undefined, // 'Must be at or after {{minDate}}'
+  'date.minimum': 'Musi być w dniu lub po {{minDate}}',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
-  'generic.incorrect-type': undefined, // 'Expected type "{{expectedType}}", got "{{actualType}}"'
+  'generic.incorrect-type': 'Oczekiwany typ "{{expectedType}}", otrzymano "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
-  'generic.not-allowed': undefined, // 'Value did not match any allowed values'
+  'generic.not-allowed': 'Wartość nie pasuje do żadnej z dozwolonych wartości',
   /** Value "$givenValue" is not one of the values specifically allowed */
-  'generic.not-allowed_hint': undefined, // 'Value "{{hint}}" did not match any allowed values'
+  'generic.not-allowed_hint': 'Wartość "{{hint}}" nie pasuje do żadnej z dozwolonych wartości',
   /** A value is expected, but none is provided */
-  'generic.required': undefined, // 'Required'
+  'generic.required': 'Wymagane',
 
   /** Number is less than the given minimum threshold value "$threshold" */
-  'number.greater-than': undefined, // 'Must be greater than {{threshold}}'
+  'number.greater-than': 'Musi być większa niż {{threshold}}',
   /** Number is greater than the given maximum threshold value "$threshold" */
-  'number.less-than': undefined, // 'Must be less than {{threshold}}'
+  'number.less-than': 'Musi być mniejsza niż {{threshold}}',
   /** Number is higher than the given maximum value "$maxNumber" */
-  'number.maximum': undefined, // 'Must be lower than or equal to {{maxNumber}}'
+  'number.maximum': 'Musi być mniejsza lub równa {{maxNumber}}',
   /** Number has more precision (decimals) than the allowed "$limit" */
-  'number.maximum-precision': undefined, // 'Max precision is {{limit}}'
+  'number.maximum-precision': 'Maksymalna precyzja to {{limit}}',
   /** Number is lower than the given minimum value "$minNumber" */
-  'number.minimum': undefined, // 'Must be greater than or equal to {{minNumber}}'
+  'number.minimum': 'Musi być większa lub równa {{minNumber}}',
   /** Number is not an integer ("whole number") */
-  'number.non-integer': undefined, // 'Must be an integer'
+  'number.non-integer': 'Musi być liczbą całkowitą',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': undefined, // 'Asset is required'
+  'object.asset-required': 'Asset jest wymagany',
   /** Object is missing a reference to a file asset document in its `asset` field */
-  'object.asset-required_file': undefined, // 'File is required'
+  'object.asset-required_file': 'Plik jest wymagany',
   /** Object is missing a reference to an image asset document in its `asset` field */
-  'object.asset-required_image': undefined, // 'Image is required'
+  'object.asset-required_image': 'Obraz jest wymagany',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
-  'object.not-reference': undefined, // 'Must be a reference to a document'
+  'object.not-reference': 'Musi być odniesieniem do dokumentu',
   /** Object references a document which is not published */
-  'object.reference-not-published': undefined, // 'Referenced document must be published'
+  'object.reference-not-published': 'Odniesiony dokument musi być opublikowany',
 
   /** Accessibility label for closing the validation panel */
-  'panel.close-button-aria-label': undefined, // 'Close validation'
+  'panel.close-button-aria-label': 'Zamknij panel walidacji',
   /** Message shown when the validation panel is opened but there are no errors/warnings */
-  'panel.no-errors-message': undefined, // 'No validation errors'
+  'panel.no-errors-message': 'Brak błędów walidacji',
   /** Title for the actual "Validation" panel/feature */
-  'panel.title': undefined, // 'Validation'
+  'panel.title': 'Walidacja',
 
   /** Slug is an object, but is missing a `current` string property */
-  'slug.missing-current': undefined, // 'Slug must have a value'
+  'slug.missing-current': 'Slug musi mieć wartość',
   /** Slug is not an object (eg `{current: 'some-slug'}`) */
-  'slug.not-object': undefined, // 'Slug must be an object'
+  'slug.not-object': 'Slug musi być obiektem',
   /** Slug is already in use somewhere else, but needs to be unique */
-  'slug.not-unique': undefined, // 'Slug is already in use'
+  'slug.not-unique': 'Slug jest już używany',
 
   /** String is not a valid email address */
-  'string.email': undefined, // 'Must be a valid email address'
+  'string.email': 'Musi być prawidłowym adresem e-mail',
   /** String has a different character length than the exact number "$wantedLength" */
-  'string.exact-length': undefined, // 'Must be exactly {{wantedLength}} characters long'
+  'string.exact-length': 'Musi mieć dokładnie {{wantedLength}} znaków',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': undefined, // 'Must be all lowercase characters'
+  'string.lowercase': 'Musi składać się wyłącznie z małych liter',
   /** String is longer than the limit of "$maxLength" characters */
-  'string.maximum-length': undefined, // 'Must be at most {{maxLength}} characters long'
+  'string.maximum-length': 'Musi mieć maksymalnie {{maxLength}} znaków',
   /** String is shorter than the limit of "$minLength" characters */
-  'string.minimum-length': undefined, // 'Must be at least {{minLength}} characters long'
+  'string.minimum-length': 'Musi mieć przynajmniej {{minLength}} znaków',
   /** String does not match the given regular expression, but should */
-  'string.regex-does-not-match': undefined, // 'Does not match "{{name}}"-pattern'
+  'string.regex-does-not-match': 'Nie pasuje do wzorca "{{name}}"',
   /** String matches the given regular expression, but should not */
-  'string.regex-match': undefined, // 'Should not match "{{name}}"-pattern'
+  'string.regex-match': 'Nie powinno pasować do wzorca "{{name}}"',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': undefined, // 'Must be all uppercase characters'
+  'string.uppercase': 'Musi składać się wyłącznie z wielkich liter',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
-  'string.url.disallowed-scheme': undefined, // 'Does not match allowed protocols/schemes'
+  'string.url.disallowed-scheme': 'Nie pasuje do dozwolonych protokołów/schematów',
   /** String contains a URL with a username or password specified before the host */
-  'string.url.includes-credentials': undefined, // 'Username/password not allowed'
+  'string.url.includes-credentials': 'Nazwa użytkownika/hasło niedozwolone',
   /** String is not a valid URL */
-  'string.url.invalid': undefined, // 'Not a valid URL'
+  'string.url.invalid': 'Nieprawidłowy URL',
   /** String is not an absolute URL (eg it is missing a protocol/host) */
-  'string.url.not-absolute': undefined, // 'Relative URLs are not allowed'
+  'string.url.not-absolute': 'Dozwolone są tylko bezwzględne URL',
   /** String is not a relative URL (eg it contains a protocol/host) */
-  'string.url.not-relative': undefined, // 'Only relative URLs are allowed'
+  'string.url.not-relative': 'Dozwolone są tylko względne URL',
 })
