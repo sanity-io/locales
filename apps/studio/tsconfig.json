@@ -19,6 +19,7 @@
       "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
       "@sanity/locale-th-th": ["../../locales/th-TH/src"],
       "@sanity/locale-tr-tr": ["../../locales/tr-TR/src"],
+      "@sanity/locale-vi-vn": ["../../locales/vi-VN/src"],
       "@sanity/locale-zh-cn": ["../../locales/zh-CN/src"],
       "@sanity/locale-zh-hk": ["../../locales/zh-HK/src"],
       "@sanity/locale-zh-tw": ["../../locales/zh-TW/src"]
