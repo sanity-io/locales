@@ -147,3 +147,18 @@ export const tsConfigSchema = z
     compilerOptions: true,
   })
   .passthrough()
+
+/**
+ * A very minimal release-please-config.json schema, including only the parts we care about validating
+ *
+ * @internal
+ */
+export const releasePleaseSchema = z
+  .object({
+    $schema: z.string(),
+    packages: z.record(z.string(), z.object({})),
+  })
+  .partial({
+    packages: true,
+  })
+  .passthrough()

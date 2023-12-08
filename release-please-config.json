@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "packages": {
+    "locales/cs-CZ": {},
+    "locales/de-DE": {},
+    "locales/es-ES": {},
+    "locales/fi-FI": {},
+    "locales/fr-FR": {},
+    "locales/is-IS": {},
+    "locales/it-IT": {},
+    "locales/ja-JP": {},
+    "locales/ko-KR": {},
+    "locales/nb-NO": {},
+    "locales/nl-NL": {},
+    "locales/nn-NO": {},
+    "locales/pl-PL": {},
+    "locales/pt-BR": {},
+    "locales/pt-PT": {},
+    "locales/sv-SE": {},
+    "locales/th-TH": {},
+    "locales/tr-TR": {},
+    "locales/vi-VN": {},
+    "locales/zh-CN": {},
+    "locales/zh-HK": {},
+    "locales/zh-TW": {}
+  },
+  "bump-minor-pre-major": true,
+  "always-link-local": true,
+  "plugins": ["node-workspace"]
+}

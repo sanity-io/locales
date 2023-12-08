@@ -1,8 +1,9 @@
 import type {infer as zodInfer} from 'zod'
 import type {
-  localeRegistrySchema,
   localeEntrySchema,
+  localeRegistrySchema,
   packageJsonSchema,
+  releasePleaseSchema,
   resourcesSchema,
   tsConfigSchema,
 } from './schemas'
@@ -71,6 +72,13 @@ export type PackageJson = zodInfer<typeof packageJsonSchema>
  * @internal
  */
 export type TSConfig = zodInfer<typeof tsConfigSchema>
+
+/**
+ * A very minimal release-please-config.json schema
+ *
+ * @internal
+ */
+export type ReleasePleaseConfig = zodInfer<typeof releasePleaseSchema>
 
 /**
  * Object of resources, eg `key: value` pairs

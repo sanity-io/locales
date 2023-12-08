@@ -3,8 +3,9 @@ import {promisify} from 'node:util'
 import {getRootPath} from '../util/getRootPath'
 import {reconcileCodeOwners} from './codeOwners'
 import {reconcileLocalePackages} from './locales'
-import {reconcileStudio} from './studio'
 import {reconcileRegistry} from './registry'
+import {reconcileReleasePleaseConfig} from './release'
+import {reconcileStudio} from './studio'
 
 const execFile = promisify(execFileCb)
 
@@ -13,6 +14,7 @@ export async function reconcileAll(): Promise<void> {
   await reconcileLocalePackages()
   await reconcileCodeOwners()
   await reconcileStudio()
+  await reconcileReleasePleaseConfig()
   await reconcileLockFile()
 }
 
