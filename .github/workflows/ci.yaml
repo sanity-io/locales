@@ -33,7 +33,6 @@ jobs:
       - run: pnpm lint
 
   lint:
-    needs: build
     timeout-minutes: 15
     runs-on: ubuntu-latest
     env:
@@ -48,6 +47,7 @@ jobs:
           node-version: 20
       - run: corepack enable && pnpm --version
       - run: pnpm install --loglevel=error --ignore-scripts
+      - run: pnpm build --filter=./locales/*
       - run: pnpm check
 
   test:
