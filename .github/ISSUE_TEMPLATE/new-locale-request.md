@@ -4,7 +4,6 @@ about: Request a new locale to be added to the repo
 title: 'Locale request: '
 labels: feature request
 assignees: ''
-
 ---
 
 **Which locale do you wish to add?**
