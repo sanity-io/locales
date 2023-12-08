@@ -27,6 +27,7 @@ Some description of this repository and such goes here.
 | [Spanish / Español](https://github.com/sanity-io/locales/tree/main/locales/es-ES)                            | [@sanity/locale-es-es](https://www.npmjs.com/package/@sanity/locale-es-es) | ❌              |
 | [Swedish / Svenska](https://github.com/sanity-io/locales/tree/main/locales/sv-SE)                            | [@sanity/locale-sv-se](https://www.npmjs.com/package/@sanity/locale-sv-se) | ❌              |
 | [Turkish / Türkçe](https://github.com/sanity-io/locales/tree/main/locales/tr-TR)                             | [@sanity/locale-tr-tr](https://www.npmjs.com/package/@sanity/locale-tr-tr) | ❌              |
+| [Vietnamese (Vietnam) / Tiếng Việt](https://github.com/sanity-io/locales/tree/main/locales/vi-VN)            | [@sanity/locale-vi-vn](https://www.npmjs.com/package/@sanity/locale-vi-vn) | ❌              |
 
 <!-- </locale-list> -->
 
