@@ -37,8 +37,8 @@ export async function buildRootReadme(): Promise<string> {
   }
 
   const localeList = []
-  localeList.push(`| Language | Package | Folder | Has maintainers |`)
-  localeList.push(`| -------- | ------- | ------ | --------------- |`)
+  localeList.push(`| Language | Package | Has maintainers |`)
+  localeList.push(`| -------- | ------- | --------------- |`)
 
   const enSorted = registry.slice().sort((a, b) => a.englishName.localeCompare(b.englishName))
   for (const locale of enSorted) {
@@ -47,7 +47,7 @@ export async function buildRootReadme(): Promise<string> {
     const npmUrl = `https://www.npmjs.com/package/${locale.packageName}`
     const maintainer = locale.maintainers.length > 0 ? '✅' : '❌'
     localeList.push(
-      `| ${locale.englishName} / ${locale.name} | [${locale.packageName}](${npmUrl}) | [${path}](${ghUrl}) | ${maintainer} |`,
+      `| [${locale.englishName} / ${locale.name}](${ghUrl}) | [${locale.packageName}](${npmUrl}) | ${maintainer} |`,
     )
   }
 
