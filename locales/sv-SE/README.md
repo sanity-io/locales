@@ -1,6 +1,6 @@
 # @sanity/locale-sv-se
 
-Swedish (Sweden) / Svenska language support for [Sanity Studio](https://www.sanity.io/).
+Swedish / Svenska language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

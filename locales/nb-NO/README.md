@@ -1,6 +1,6 @@
 # @sanity/locale-nb-no
 
-Norwegian Bokmål (Norway) / Norsk (Bokmål) language support for [Sanity Studio](https://www.sanity.io/).
+Norwegian (Bokmål) / Norsk (Bokmål) language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

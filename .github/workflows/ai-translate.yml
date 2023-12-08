@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '18.3.0' # Specify your Node.js version
+          node-version: '18.3.0'
 
       - name: Install dependencies
         run: pnpm install

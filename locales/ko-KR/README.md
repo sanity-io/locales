@@ -1,6 +1,6 @@
 # @sanity/locale-ko-kr
 
-Korean (South Korea) / 한국어 language support for [Sanity Studio](https://www.sanity.io/).
+Korean / 한국어 language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

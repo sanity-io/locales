@@ -3,7 +3,13 @@ import {join as joinPath, relative as relativePath} from 'node:path'
 import {getLocaleRegistry} from '../registry'
 import {getRootPath} from '../../util/getRootPath'
 
-export async function buildRootReadme() {
+/**
+ * Builds the root README.md file
+ *
+ * @returns A promise that resolves to the README.md file contents
+ * @internal
+ */
+export async function buildRootReadme(): Promise<string> {
   const registry = await getLocaleRegistry()
   const rootPath = await getRootPath()
   const readme = await readFile(joinPath(rootPath, 'README.md'), 'utf-8')
@@ -31,15 +37,17 @@ export async function buildRootReadme() {
   }
 
   const localeList = []
-  localeList.push(`| Language | Package | Folder |`)
-  localeList.push(`| -------- | ------- | ------ |`)
+  localeList.push(`| Language | Package | Has maintainers |`)
+  localeList.push(`| -------- | ------- | --------------- |`)
 
-  for (const locale of registry) {
+  const enSorted = registry.slice().sort((a, b) => a.englishName.localeCompare(b.englishName))
+  for (const locale of enSorted) {
     const path = relativePath(rootPath, locale.path)
     const ghUrl = `https://github.com/sanity-io/locales/tree/main/${path}`
     const npmUrl = `https://www.npmjs.com/package/${locale.packageName}`
+    const maintainer = locale.maintainers.length > 0 ? '✅' : '❌'
     localeList.push(
-      `| ${locale.englishName} / ${locale.name} | [${locale.packageName}](${npmUrl}) | [${path}](${ghUrl}) |`,
+      `| [${locale.englishName} / ${locale.name}](${ghUrl}) | [${locale.packageName}](${npmUrl}) | ${maintainer} |`,
     )
   }
 

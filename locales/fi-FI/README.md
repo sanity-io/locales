@@ -1,6 +1,6 @@
 # @sanity/locale-fi-fi
 
-Finnish (Finland) / Suomi language support for [Sanity Studio](https://www.sanity.io/).
+Finnish / Suomi language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

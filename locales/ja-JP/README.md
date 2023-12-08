@@ -1,6 +1,6 @@
 # @sanity/locale-ja-jp
 
-Japanese (Japan) / 日本語 language support for [Sanity Studio](https://www.sanity.io/).
+Japanese / 日本語 language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

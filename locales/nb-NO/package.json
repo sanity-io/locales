@@ -2,7 +2,7 @@
   "name": "@sanity/locale-nb-no",
   "version": "1.0.0",
   "private": false,
-  "description": "Norwegian Bokmål (Norway) / Norsk (Bokmål) locale/translation for Sanity Studio",
+  "description": "Norwegian (Bokmål) / Norsk (Bokmål) locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",

@@ -1,0 +1,44 @@
+---
+name: Reconcile
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read # for checkout
+
+jobs:
+  run:
+    name: Reconcile
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: 20
+
+      - run: pnpm install --ignore-scripts
+      - run: pnpm reconcile
+      - run: git restore .github/workflows pnpm-lock.yaml
+      - uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2
+        id: generate-token
+        with:
+          app_id: ${{ secrets.ECOSPARK_APP_ID }}
+          private_key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
+      - uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5
+        with:
+          author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
+          body: I ran `pnpm reconcile` 🧑‍💻
+          branch: actions/reconcile
+          commit-message: 'fix: reconcile'
+          labels: 🤖 bot
+          title: 'fix: reconcile'
+          token: ${{ steps.generate-token.outputs.token }}

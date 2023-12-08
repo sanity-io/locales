@@ -2,7 +2,7 @@
   "name": "@sanity/locale-is-is",
   "version": "1.0.0",
   "private": false,
-  "description": "Icelandic (Iceland) / Íslenska locale/translation for Sanity Studio",
+  "description": "Icelandic / Íslenska locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",

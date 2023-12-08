@@ -1,6 +1,6 @@
 # @sanity/locale-nl-nl
 
-Dutch (Netherlands) / Nederlands language support for [Sanity Studio](https://www.sanity.io/).
+Dutch / Nederlands language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

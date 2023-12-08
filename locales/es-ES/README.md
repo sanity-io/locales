@@ -1,6 +1,6 @@
 # @sanity/locale-es-es
 
-European Spanish / Español language support for [Sanity Studio](https://www.sanity.io/).
+Spanish / Español language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

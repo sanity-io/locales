@@ -1,6 +1,6 @@
 # @sanity/locale-fr-fr
 
-French (France) / Français language support for [Sanity Studio](https://www.sanity.io/).
+French / Français language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

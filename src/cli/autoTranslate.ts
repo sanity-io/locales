@@ -26,7 +26,7 @@ async function autoTranslateWithParams() {
         short: 'n',
         description: 'Namespace',
         multiple: true,
-      }
+      },
     },
   })
 

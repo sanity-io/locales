@@ -1,6 +1,6 @@
 # @sanity/locale-nn-no
 
-Norwegian Nynorsk (Norway) / Norsk (Nynorsk) language support for [Sanity Studio](https://www.sanity.io/).
+Norwegian (Nynorsk) / Norsk (Nynorsk) language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 
