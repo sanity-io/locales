@@ -99,6 +99,13 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
+    id: 'pl-PL',
+    name: 'Polski',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
     id: 'pt-BR',
     name: 'Português do Brasil',
     maintainers: [],

@@ -138,6 +138,9 @@ importers:
       '@sanity/locale-nn-no':
         specifier: workspace:*
         version: link:../../locales/nn-NO
+      '@sanity/locale-pl-pl':
+        specifier: workspace:*
+        version: link:../../locales/pl-PL
       '@sanity/locale-pt-br':
         specifier: workspace:*
         version: link:../../locales/pt-BR
@@ -267,6 +270,12 @@ importers:
         version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/nn-NO:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/pl-PL:
     dependencies:
       sanity:
         specifier: ^3.21.0

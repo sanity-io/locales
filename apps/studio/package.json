@@ -28,6 +28,7 @@
     "@sanity/locale-nb-no": "workspace:*",
     "@sanity/locale-nl-nl": "workspace:*",
     "@sanity/locale-nn-no": "workspace:*",
+    "@sanity/locale-pl-pl": "workspace:*",
     "@sanity/locale-pt-br": "workspace:*",
     "@sanity/locale-pt-pt": "workspace:*",
     "@sanity/locale-sv-se": "workspace:*",

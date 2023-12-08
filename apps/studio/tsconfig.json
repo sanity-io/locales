@@ -13,6 +13,7 @@
       "@sanity/locale-nb-no": ["../../locales/nb-NO/src"],
       "@sanity/locale-nl-nl": ["../../locales/nl-NL/src"],
       "@sanity/locale-nn-no": ["../../locales/nn-NO/src"],
+      "@sanity/locale-pl-pl": ["../../locales/pl-PL/src"],
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
       "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"],
       "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
