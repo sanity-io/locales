@@ -23,8 +23,8 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
     .sort((a, b) => a.id.localeCompare(b.id))
     .map(
       (locale): Locale => ({
-        ...locale,
         englishName: displayName.of(locale.id) || locale.name,
+        ...locale,
         exportName: getExportName(locale),
         packageName: getPackageName(locale),
         path: joinPath(localesPath, locale.id),

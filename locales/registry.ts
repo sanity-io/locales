@@ -5,6 +5,7 @@ const registry: LocaleRegistry = [
   {
     id: 'cs-CZ',
     name: 'Čeština',
+    englishName: 'Czech',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -12,6 +13,7 @@ const registry: LocaleRegistry = [
   {
     id: 'de-DE',
     name: 'Deutsch',
+    englishName: 'German',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -19,6 +21,7 @@ const registry: LocaleRegistry = [
   {
     id: 'es-ES',
     name: 'Español',
+    englishName: 'Spanish',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -26,6 +29,7 @@ const registry: LocaleRegistry = [
   {
     id: 'fi-FI',
     name: 'Suomi',
+    englishName: 'Finnish',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -33,6 +37,7 @@ const registry: LocaleRegistry = [
   {
     id: 'fr-FR',
     name: 'Français',
+    englishName: 'French',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -40,6 +45,7 @@ const registry: LocaleRegistry = [
   {
     id: 'is-IS',
     name: 'Íslenska',
+    englishName: 'Icelandic',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -47,6 +53,7 @@ const registry: LocaleRegistry = [
   {
     id: 'it-IT',
     name: 'Italiano',
+    englishName: 'Italian',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -54,6 +61,7 @@ const registry: LocaleRegistry = [
   {
     id: 'ja-JP',
     name: '日本語',
+    englishName: 'Japanese',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -61,6 +69,7 @@ const registry: LocaleRegistry = [
   {
     id: 'ko-KR',
     name: '한국어',
+    englishName: 'Korean',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -68,6 +77,7 @@ const registry: LocaleRegistry = [
   {
     id: 'nb-NO',
     name: 'Norsk (Bokmål)',
+    englishName: 'Norwegian (Bokmål)',
     maintainers: ['rexxars'],
     contributors: ['rexxars'],
     isOfficial: false,
@@ -82,6 +92,7 @@ const registry: LocaleRegistry = [
   {
     id: 'nn-NO',
     name: 'Norsk (Nynorsk)',
+    englishName: 'Norwegian (Nynorsk)',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -96,6 +107,7 @@ const registry: LocaleRegistry = [
   {
     id: 'pt-PT',
     name: 'Português',
+    englishName: 'Portuguese',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -103,6 +115,7 @@ const registry: LocaleRegistry = [
   {
     id: 'sv-SE',
     name: 'Svenska',
+    englishName: 'Swedish',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -110,6 +123,7 @@ const registry: LocaleRegistry = [
   {
     id: 'tr-TR',
     name: 'Türkçe',
+    englishName: 'Turkish',
     maintainers: [],
     contributors: [],
     isOfficial: false,

@@ -19,9 +19,15 @@ export const localeEntrySchema = z.object({
   id: localeIdSchema,
 
   /**
-   * Name for the locale, eg `English (US)`
+   * Name of the locale, eg `Norsk (Bokmål)`
    */
   name: z.string().min(2).max(120),
+
+  /**
+   * Name of the locale in English, eg `Norwegian (Bokmål)`.
+   * Optional, will be auto-generated if not specified.
+   */
+  englishName: z.string().min(2).max(120).optional(),
 
   /**
    * Array of GitHub usernames of maintainers for the locale, eg ['rexxars', 'bjoerge'].
