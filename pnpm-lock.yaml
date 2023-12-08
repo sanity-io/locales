@@ -159,15 +159,6 @@ importers:
       '@sanity/locale-vi-vn':
         specifier: workspace:*
         version: link:../../locales/vi-VN
-      '@sanity/locale-zh-cn':
-        specifier: workspace:*
-        version: link:../../locales/zh-CN
-      '@sanity/locale-zh-hk':
-        specifier: workspace:*
-        version: link:../../locales/zh-HK
-      '@sanity/locale-zh-tw':
-        specifier: workspace:*
-        version: link:../../locales/zh-TW
       '@sanity/ui':
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
@@ -318,24 +309,6 @@ importers:
         version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/vi-VN:
-    dependencies:
-      sanity:
-        specifier: ^3.21.0
-        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
-
-  locales/zh-CN:
-    dependencies:
-      sanity:
-        specifier: ^3.21.0
-        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
-
-  locales/zh-HK:
-    dependencies:
-      sanity:
-        specifier: ^3.21.0
-        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
-
-  locales/zh-TW:
     dependencies:
       sanity:
         specifier: ^3.21.0
