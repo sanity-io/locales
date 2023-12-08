@@ -22,9 +22,18 @@
     "locales/vi-VN": {},
     "locales/zh-CN": {},
     "locales/zh-HK": {},
-    "locales/zh-TW": {}
+    "locales/zh-TW": {},
+    ".": {
+      "changelog-path": "CHANGELOG.md",
+      "bump-minor-pre-major": false,
+      "bump-patch-for-minor-pre-major": false,
+      "draft": false,
+      "prerelease": false
+    }
   },
   "bump-minor-pre-major": true,
   "always-link-local": true,
-  "plugins": ["node-workspace"]
+  "plugins": [
+    "node-workspace"
+  ]
 }
