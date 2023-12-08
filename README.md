@@ -2,6 +2,8 @@
 
 Some description of this repository and such goes here.
 
+[Request a new locale](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&template=new-locale-request.md&title=Locale+request%3A+)
+
 ## Current locales
 
 <!-- <locale-list> -->
