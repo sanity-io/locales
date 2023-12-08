@@ -2,7 +2,7 @@
   "name": "@sanity/locale-fr-fr",
   "version": "1.0.0",
   "private": false,
-  "description": "French (France) / Français locale/translation for Sanity Studio",
+  "description": "French / Français locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",

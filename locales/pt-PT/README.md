@@ -1,6 +1,6 @@
 # @sanity/locale-pt-pt
 
-European Portuguese / Português language support for [Sanity Studio](https://www.sanity.io/).
+Portuguese / Português language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

@@ -1,6 +1,6 @@
 # @sanity/locale-cs-cz
 
-Czech (Czechia) / Čeština language support for [Sanity Studio](https://www.sanity.io/).
+Czech / Čeština language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

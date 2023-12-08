@@ -1,6 +1,6 @@
 # @sanity/locale-is-is
 
-Icelandic (Iceland) / Íslenska language support for [Sanity Studio](https://www.sanity.io/).
+Icelandic / Íslenska language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

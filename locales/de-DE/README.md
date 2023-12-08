@@ -1,6 +1,6 @@
 # @sanity/locale-de-de
 
-German (Germany) / Deutsch language support for [Sanity Studio](https://www.sanity.io/).
+German / Deutsch language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

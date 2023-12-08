@@ -1,6 +1,6 @@
 # @sanity/locale-it-it
 
-Italian (Italy) / Italiano language support for [Sanity Studio](https://www.sanity.io/).
+Italian / Italiano language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 

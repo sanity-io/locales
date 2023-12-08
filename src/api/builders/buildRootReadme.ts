@@ -40,7 +40,8 @@ export async function buildRootReadme(): Promise<string> {
   localeList.push(`| Language | Package | Folder |`)
   localeList.push(`| -------- | ------- | ------ |`)
 
-  for (const locale of registry) {
+  const enSorted = registry.slice().sort((a, b) => a.englishName.localeCompare(b.englishName))
+  for (const locale of enSorted) {
     const path = relativePath(rootPath, locale.path)
     const ghUrl = `https://github.com/sanity-io/locales/tree/main/${path}`
     const npmUrl = `https://www.npmjs.com/package/${locale.packageName}`
