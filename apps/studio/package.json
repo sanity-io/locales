@@ -31,6 +31,7 @@
     "@sanity/locale-pt-br": "workspace:*",
     "@sanity/locale-pt-pt": "workspace:*",
     "@sanity/locale-sv-se": "workspace:*",
+    "@sanity/locale-th-th": "workspace:*",
     "@sanity/locale-tr-tr": "workspace:*",
     "@sanity/locale-zh-cn": "workspace:*",
     "@sanity/locale-zh-hk": "workspace:*",

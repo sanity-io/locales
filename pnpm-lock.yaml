@@ -147,6 +147,9 @@ importers:
       '@sanity/locale-sv-se':
         specifier: workspace:*
         version: link:../../locales/sv-SE
+      '@sanity/locale-th-th':
+        specifier: workspace:*
+        version: link:../../locales/th-TH
       '@sanity/locale-tr-tr':
         specifier: workspace:*
         version: link:../../locales/tr-TR
@@ -285,6 +288,12 @@ importers:
         version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/sv-SE:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/th-TH:
     dependencies:
       sanity:
         specifier: ^3.21.0
@@ -8764,7 +8773,7 @@ packages:
     dev: false
 
   /xregexp@2.0.0:
-    resolution: {integrity: sha512-xl/50/Cf32VsGq/1R8jJE5ajH1yMCQkpmoS10QbFZWl2Oor4H0Me64Pu2yxvsRWK3m6soJbmGfzSR7BYmDcWAA==}
+    resolution: {integrity: sha1-UqY+VsoLhKfzpfPWGHLxJq16WUM=}
     dev: false
 
   /xtend@4.0.2:
