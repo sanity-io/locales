@@ -24,6 +24,7 @@
     "build:code-owners": "tsx src/cli/reconcileCodeOwners",
     "build:packages": "tsx src/cli/reconcilePackages",
     "build:studio": "tsx src/cli/reconcileStudio",
+    "check": "npm run check:lint && npm run check:types",
     "check:lint": "eslint .",
     "check:missing": "tsx src/cli/listMissingResources",
     "check:types": "tsc --noEmit",
@@ -31,7 +32,7 @@
     "format": "prettier --write .",
     "lint": "turbo run lint",
     "reconcile": "tsx src/cli/reconcile",
-    "test": "npm run check:lint && npm run check:types"
+    "test": "tsx test/testLocales"
   },
   "dependencies": {
     "@babel/generator": "^7.23.5",
@@ -60,6 +61,7 @@
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-sanity": "^7.0.1",
+    "expect": "^29.7.0",
     "openai": "^4.20.1",
     "rimraf": "^5.0.5",
     "turbo": "^1.11.1",

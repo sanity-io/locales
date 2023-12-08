@@ -15,7 +15,8 @@ permissions:
   contents: read # for checkout
 
 jobs:
-  build:
+  lint:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -26,14 +27,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
-          node-version: lts/*
+          node-version: 20
       - run: corepack enable && pnpm --version
-      - run: pnpm install --ignore-scripts
-      - run: pnpm build --filter=./locales/*
-      - run: pnpm lint
+      - run: pnpm install --loglevel=error --ignore-scripts
+      - run: pnpm check
 
   test:
-    needs: build
     timeout-minutes: 15
     strategy:
       fail-fast: true
@@ -54,3 +53,20 @@ jobs:
       - run: corepack enable && pnpm --version
       - run: pnpm install --loglevel=error --ignore-scripts
       - run: pnpm test
+
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: 20
+      - run: corepack enable && pnpm --version
+      - run: pnpm install --ignore-scripts
+      - run: pnpm build --filter=./locales/*
+      - run: pnpm lint
