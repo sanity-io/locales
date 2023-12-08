@@ -129,6 +129,13 @@ const registry: LocaleRegistry = [
     isOfficial: false,
   },
   {
+    id: 'th-TH',
+    name: 'ไทย',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
     id: 'tr-TR',
     name: 'Türkçe',
     englishName: 'Turkish',
