@@ -37,16 +37,17 @@ export async function buildRootReadme(): Promise<string> {
   }
 
   const localeList = []
-  localeList.push(`| Language | Package | Folder |`)
-  localeList.push(`| -------- | ------- | ------ |`)
+  localeList.push(`| Language | Package | Folder | Has maintainers |`)
+  localeList.push(`| -------- | ------- | ------ | --------------- |`)
 
   const enSorted = registry.slice().sort((a, b) => a.englishName.localeCompare(b.englishName))
   for (const locale of enSorted) {
     const path = relativePath(rootPath, locale.path)
     const ghUrl = `https://github.com/sanity-io/locales/tree/main/${path}`
     const npmUrl = `https://www.npmjs.com/package/${locale.packageName}`
+    const maintainer = locale.maintainers.length > 0 ? '✅' : '❌'
     localeList.push(
-      `| ${locale.englishName} / ${locale.name} | [${locale.packageName}](${npmUrl}) | [${path}](${ghUrl}) |`,
+      `| ${locale.englishName} / ${locale.name} | [${locale.packageName}](${npmUrl}) | [${path}](${ghUrl}) | ${maintainer} |`,
     )
   }
 
