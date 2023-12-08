@@ -279,7 +279,7 @@ importers:
     dependencies:
       sanity:
         specifier: ^3.21.0
-        version: 3.21.0(@types/node@18.18.14)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/pt-BR:
     dependencies:
