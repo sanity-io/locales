@@ -37,7 +37,7 @@ jobs:
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
           body: I ran `pnpm reconcile` 🧑‍💻
-          branch: actions/prettier
+          branch: actions/reconcile
           commit-message: 'fix: reconcile'
           labels: 🤖 bot
           title: 'fix: reconcile'
