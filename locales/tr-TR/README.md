@@ -1,6 +1,6 @@
 # @sanity/locale-tr-tr
 
-Turkish (Turkey) / Türkçe language support for [Sanity Studio](https://www.sanity.io/).
+Turkish (Türkiye) / Türkçe language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 
