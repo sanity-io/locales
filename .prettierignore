@@ -1,5 +1,5 @@
-/.vscode
-/.turbo
+.vscode
+.turbo
 
 /apps/*/dist
 /apps/*/.turbo
@@ -11,3 +11,6 @@
 /locales/node_modules
 
 pnpm-lock.yaml
+
+CHANGELOG.md
+.release-please-manifest.json
