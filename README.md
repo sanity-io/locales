@@ -1,8 +1,11 @@
 # Sanity Studio Locales
 
-Some description of this repository and such goes here.
+This is the community contributed locale packages for [Sanity Studio](https://sanity.io). Install one or more of these packages and add them as plugins to your Studio configuration to present your Studio in those locales. See the README in the relevant locale package for specific instructions you can copy paste.
 
-[Request a new locale](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&template=new-locale-request.md&title=Locale+request%3A+)
+Don't see your preferred locale here? [Request a new locale](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&template=new-locale-request.md&title=Locale+request%3A+)
+
+## Maintainers
+We keep these packages automatically updated with AI but we would like community contributors to help review changes and improve the AI translations. If you would like to participate please use the "Join" link next to your locale or submit a Request Maintainer issue from the Issues tab. You can still request to join if a package already has maintainers.
 
 ## Current locales
 
