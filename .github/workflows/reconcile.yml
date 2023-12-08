@@ -1,5 +1,5 @@
 ---
-name: Prettier
+name: Reconcile
 
 on:
   push:
@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   run:
-    name: Prettier
+    name: Reconcile
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,14 +23,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
-          node-version: lts/*
+          node-version: 20
 
       - run: pnpm install --ignore-scripts
-      - uses: actions/cache@v3
-        with:
-          path: node_modules/.cache/prettier/.prettier-cache
-          key: prettier-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('.prettierignore') }}-${{ hashFiles('package.json') }}
-      - run: pnpm format
+      - run: pnpm reconcile
       - run: git restore .github/workflows pnpm-lock.yaml
       - uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2
         id: generate-token
@@ -40,9 +36,9 @@ jobs:
       - uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          body: I ran `pnpm format` 🧑‍💻
+          body: I ran `pnpm reconcile` 🧑‍💻
           branch: actions/prettier
-          commit-message: 'chore(prettier): 🤖 ✨'
+          commit-message: 'fix: reconcile'
           labels: 🤖 bot
-          title: 'chore(prettier): 🤖 ✨'
+          title: 'fix: reconcile'
           token: ${{ steps.generate-token.outputs.token }}
