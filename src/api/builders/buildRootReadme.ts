@@ -45,7 +45,8 @@ export async function buildRootReadme(): Promise<string> {
     const path = relativePath(rootPath, locale.path)
     const ghUrl = `https://github.com/sanity-io/locales/tree/main/${path}`
     const npmUrl = `https://www.npmjs.com/package/${locale.packageName}`
-    const maintainer = locale.maintainers.length > 0 ? '✅' : '❌'
+    const issueUrl = `https://github.com/sanity-io/locales/issues/new?assignees=&labels=&projects=&template=request-maintainer.md&title=Maintainer%3A+${locale.id}`
+    const maintainer = locale.maintainers.length > 0 ? '✅' : ` [Join](${issueUrl}) `
     localeList.push(
       `| [${locale.englishName} / ${locale.name}](${ghUrl}) | [${locale.packageName}](${npmUrl}) | ${maintainer} |`,
     )
