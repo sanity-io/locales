@@ -48,7 +48,7 @@ jobs:
       - run: corepack enable && pnpm --version
       - run: pnpm install --loglevel=error --ignore-scripts
       - run: pnpm build --filter=./locales/*
-      - run: pnpm check
+      - run: pnpm check:lint
 
   test:
     timeout-minutes: 15
