@@ -146,6 +146,7 @@ const registry: LocaleRegistry = [
   {
     id: 'vi-VN',
     name: 'Tiếng Việt',
+    englishName: 'Vietnamese',
     maintainers: [],
     contributors: [],
     isOfficial: false,

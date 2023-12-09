@@ -29,6 +29,9 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
     private: false,
     version: prevPkg.version || '1.0.0',
     license,
+    publishConfig: {
+      access: 'public',
+    },
     scripts: {
       build: 'npm run clean && npm run pkg:build && npm run pkg:check',
       clean: 'rimraf dist',

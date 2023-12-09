@@ -2,7 +2,7 @@
   "name": "@sanity/locale-vi-vn",
   "version": "0.0.0",
   "private": false,
-  "description": "Vietnamese (Vietnam) / Tiếng Việt locale/translation for Sanity Studio",
+  "description": "Vietnamese / Tiếng Việt locale/translation for Sanity Studio",
   "keywords": [
     "sanity",
     "i18n",
@@ -48,5 +48,8 @@
   },
   "peerDependencies": {
     "sanity": "^3.21.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

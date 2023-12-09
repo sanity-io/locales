@@ -53,5 +53,8 @@
   },
   "peerDependencies": {
     "sanity": "^3.21.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

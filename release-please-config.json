@@ -19,10 +19,7 @@
     "locales/sv-SE": {},
     "locales/th-TH": {},
     "locales/tr-TR": {},
-    "locales/vi-VN": {},
-    "locales/zh-CN": {},
-    "locales/zh-HK": {},
-    "locales/zh-TW": {}
+    "locales/vi-VN": {}
   },
   "bump-minor-pre-major": true,
   "always-link-local": true,

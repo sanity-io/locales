@@ -1,6 +1,6 @@
 # @sanity/locale-vi-vn
 
-Vietnamese (Vietnam) / Tiếng Việt language support for [Sanity Studio](https://www.sanity.io/).
+Vietnamese / Tiếng Việt language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 
