@@ -101,13 +101,15 @@ const registry: LocaleRegistry = [
   {
     id: 'pl-PL',
     name: 'Polski',
+    englishName: 'Polish',
     maintainers: [],
     contributors: [],
     isOfficial: false,
   },
   {
     id: 'pt-BR',
-    name: 'Português do Brasil',
+    name: 'Português (Brasil)',
+    englishName: 'Portuguese (Brazil)',
     maintainers: [],
     contributors: [],
     isOfficial: false,
@@ -131,6 +133,7 @@ const registry: LocaleRegistry = [
   {
     id: 'th-TH',
     name: 'ไทย',
+    englishName: 'Thai',
     maintainers: [],
     contributors: [],
     isOfficial: false,
