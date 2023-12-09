@@ -159,6 +159,12 @@ importers:
       '@sanity/locale-vi-vn':
         specifier: workspace:*
         version: link:../../locales/vi-VN
+      '@sanity/locale-zh-hans':
+        specifier: workspace:*
+        version: link:../../locales/zh-Hans
+      '@sanity/locale-zh-hant':
+        specifier: workspace:*
+        version: link:../../locales/zh-Hant
       '@sanity/ui':
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
@@ -309,6 +315,18 @@ importers:
         version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/vi-VN:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/zh-Hans:
+    dependencies:
+      sanity:
+        specifier: ^3.21.0
+        version: 3.21.1(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
+
+  locales/zh-Hant:
     dependencies:
       sanity:
         specifier: ^3.21.0

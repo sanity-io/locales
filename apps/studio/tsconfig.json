@@ -19,7 +19,9 @@
       "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
       "@sanity/locale-th-th": ["../../locales/th-TH/src"],
       "@sanity/locale-tr-tr": ["../../locales/tr-TR/src"],
-      "@sanity/locale-vi-vn": ["../../locales/vi-VN/src"]
+      "@sanity/locale-vi-vn": ["../../locales/vi-VN/src"],
+      "@sanity/locale-zh-hans": ["../../locales/zh-Hans/src"],
+      "@sanity/locale-zh-hant": ["../../locales/zh-Hant/src"]
     }
   },
   "extends": "../../tsconfig.json"
