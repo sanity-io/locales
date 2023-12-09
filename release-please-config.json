@@ -1,5 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bump-minor-pre-major": true,
+  "always-link-local": true,
+  "plugins": ["node-workspace"],
   "packages": {
     "locales/cs-CZ": {},
     "locales/de-DE": {},
@@ -19,9 +22,8 @@
     "locales/sv-SE": {},
     "locales/th-TH": {},
     "locales/tr-TR": {},
-    "locales/vi-VN": {}
-  },
-  "bump-minor-pre-major": true,
-  "always-link-local": true,
-  "plugins": ["node-workspace"]
+    "locales/vi-VN": {},
+    "locales/zh-Hans": {},
+    "locales/zh-Hant": {}
+  }
 }

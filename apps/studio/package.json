@@ -35,6 +35,8 @@
     "@sanity/locale-th-th": "workspace:*",
     "@sanity/locale-tr-tr": "workspace:*",
     "@sanity/locale-vi-vn": "workspace:*",
+    "@sanity/locale-zh-hans": "workspace:*",
+    "@sanity/locale-zh-hant": "workspace:*",
     "@sanity/ui": "^1.9.3",
     "@sanity/vision": "3.21.1",
     "groq": "^3.21.1",

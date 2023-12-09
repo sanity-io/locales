@@ -154,6 +154,22 @@ const registry: LocaleRegistry = [
     contributors: [],
     isOfficial: false,
   },
+  {
+    id: 'zh-Hans',
+    name: '简体中文',
+    englishName: 'Chinese (Simplified)',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
+  {
+    id: 'zh-Hant',
+    name: '繁體中文',
+    englishName: 'Chinese (Traditional)',
+    maintainers: [],
+    contributors: [],
+    isOfficial: false,
+  },
 ]
 
 export default registry
