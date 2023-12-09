@@ -1,6 +1,6 @@
 # @sanity/locale-th-th
 
-Thai (Thailand) / ไทย language support for [Sanity Studio](https://www.sanity.io/).
+Thai / ไทย language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 
