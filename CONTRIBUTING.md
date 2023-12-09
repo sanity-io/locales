@@ -17,7 +17,7 @@ pnpm run build
 
 ## Maintaining a locale
 
-Want to help maintain a plugin? Awesome! We appreciate your help! To get started:
+Want to help maintain a plugin? Awesome! We appreciate your help! To get started can either [request to be added as a maintainer](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&projects=&template=request-maintainer.md&title=Maintainer%3A+LOCALE-ID), or add yourself as one by following these steps:
 
 1. Follow the [Getting started](#getting-started) instructions
 2. Add yourself to the `maintainers` array in the `locales/registry.ts` file for the language you have in mind.
@@ -30,9 +30,9 @@ Want to help maintain a plugin? Awesome! We appreciate your help! To get started
 
 ## Adding a new locale
 
-Hooray! We appreciate your contribution and love seeing new locales added! Initially, you probably do not want to hand-translate every single string in the studio. Instead, open an issue asking us to add the locale and we will run an initial AI translation for you. Once this is done, you can do edits/improvments to it.
+Hooray! We appreciate your contribution and love seeing new locales added! Initially, you probably do not want to hand-translate every single string in the studio. Instead, simply [request a new locale](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&template=new-locale-request.md&title=Locale+request%3A+) and we will run an initial AI translation for you. Once this is done, you can contribute edits/improvments to it and optinally be its maintainer.
 
-Should you want to manually translate everything, here are the steps involved:
+Should you want to manually translate or otherwise work directly with the source code, here are the steps involved:
 
 1. Create a new branch for your work (`git checkout -b feat/add-locale-<locale-id>`).
 2. Edit `locales/registry.ts` and add a new entry to the `registry` array

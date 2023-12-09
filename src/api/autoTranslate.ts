@@ -33,17 +33,18 @@ export async function autoTranslate(
 
   for (const locale of filteredLocales) {
     const missingResources = await findMissingResources(locale)
+    const localeName = locale.englishName || locale.name
 
     for await (const entry of missingResources) {
       if (namespaces && !namespaces.includes(entry.namespace)) {
         continue
       }
       console.log(
-        `Found ${entry.missingKeys.length} missing resources for ${locale.name} in ${entry.namespace}`,
+        `Found ${entry.missingKeys.length} missing resources for ${localeName} in ${entry.namespace}`,
       )
       const ns = locale.namespaces.find((namespace) => namespace.namespace === entry.namespace)
       if (!ns) {
-        console.log(`Could not find namespace ${entry.namespace} in locale ${locale.name}`)
+        console.log(`Could not find namespace ${entry.namespace} in locale ${localeName}`)
         continue
       }
 
@@ -73,7 +74,7 @@ export async function autoTranslate(
           } key batches for namespace ${ns.namespace}`,
         )
 
-        const translation = JSON.parse(await translateText(tpl, locale.name))
+        const translation = JSON.parse(await translateText(tpl, localeName))
 
         // Set the values from translation into the namespace
         currentBatch.forEach((key) => {

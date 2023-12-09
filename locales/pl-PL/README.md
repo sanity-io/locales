@@ -1,6 +1,6 @@
 # @sanity/locale-pl-pl
 
-Polish (Poland) / Polski language support for [Sanity Studio](https://www.sanity.io/).
+Polish / Polski language support for [Sanity Studio](https://www.sanity.io/).
 
 ## Description
 
