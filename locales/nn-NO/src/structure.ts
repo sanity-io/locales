@@ -212,11 +212,11 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'Ukjend skjematype: {{schemaType}}',
 
   /** The title shown in the dialog header, when inspecting a valid document */
-  'document-inspector.dialog.title': 'Inspekterer <DocumentTitle/>',
+  'document-inspector.dialog.title': 'Inspiserar <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Ingen verdi',
   /** Title shown for menu item that opens the "Inspect" dialog */
-  'document-inspector.menu-item.title': 'Inspekter',
+  'document-inspector.menu-item.title': 'Inspiser',
   /** the placeholder text for the search input on the inspect dialog */
   'document-inspector.search.placeholder': 'Søk',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
