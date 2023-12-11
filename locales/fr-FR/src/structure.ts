@@ -202,6 +202,11 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
     'Vous ne pourrez peut-être pas retirer la publication de “<DocumentTitle/>” car les documents suivants y font référence :',
 
+  /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
+  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
+  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Erreur : {{errorMessage}}',
   /** The text shown if the preview value for a document is non-existent or empty */
@@ -234,6 +239,16 @@ export default removeUndefinedLocaleResources({
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Chargement…',
+
+  /** --- Menu items --- */
+  /** The menu item title to use the compact view */
+  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  /** The menu item title to use the detailed view */
+  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  /** The menu item title to Sort by Created */
+  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  /** The menu item title to Sort by Last Edited */
+  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Apprenez comment ajouter un type de document →',

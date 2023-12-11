@@ -268,6 +268,21 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': '审查更改',
 
+  /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
+  'default-orderings.caption': undefined, // 'Sort by Caption'
+  /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
+  'default-orderings.description': undefined, // 'Sort by Description'
+  /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
+  'default-orderings.header': undefined, // 'Sort by Header'
+  /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
+  'default-orderings.heading': undefined, // 'Sort by Heading'
+  /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
+  'default-orderings.label': undefined, // 'Sort by Label'
+  /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
+  'default-orderings.name': undefined, // 'Sort by Name'
+  /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
+  'default-orderings.title': undefined, // 'Sort by Title'
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     '属性<code>_key</code>的值必须是唯一的字符串。',
