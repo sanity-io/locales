@@ -5,7 +5,7 @@ import {readJsonFile} from '../../util/readJsonFile'
 import {getRootPath} from '../../util/getRootPath'
 import {packageJsonSchema} from '../../schemas'
 
-const MINIMUM_SANITY_VERSION = '^3.21.0'
+const MINIMUM_SANITY_VERSION = '^3.21.1'
 
 export async function buildPackageJson(locale: Locale): Promise<string> {
   const targetPath = joinPath(await getLocalePath(locale), 'package.json')
@@ -80,6 +80,6 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
   return JSON.stringify(pkg, null, 2)
 }
 
-async function readRootPackageJson() {
+async function readRootPackageJson(): Promise<PackageJson> {
   return readJsonFile(joinPath(await getRootPath(), 'package.json'), packageJsonSchema)
 }
