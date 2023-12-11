@@ -33,12 +33,23 @@ export async function reconcileStudio(): Promise<void> {
     tryHandlePackageJsonMergeConflict,
   ])
 
+  const rootPkgDeps =
+    (await readJsonFile(joinPath(await getRootPath(), 'package.json'), packageJsonSchema))
+      .dependencies || {}
+
   const dependencies: Record<string, string> = {}
 
   // Add all the non-locale packages in existing dependencies
   const existingDeps = pkgJson.dependencies || {}
   for (const dependency in existingDeps) {
-    if (!dependency.startsWith('@sanity/locale-')) {
+    if (dependency.startsWith('@sanity/locale-')) {
+      continue
+    }
+
+    if (dependency in rootPkgDeps) {
+      // Ensure we're on the same version of sanity packages as the root package.json
+      dependencies[dependency] = rootPkgDeps[dependency]
+    } else {
       dependencies[dependency] = existingDeps[dependency]
     }
   }
