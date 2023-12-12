@@ -16,7 +16,7 @@ export async function buildLocaleIndexModule(locale: Locale): Promise<string> {
       id: ${buildStringLiteral(id)},
       title: ${buildStringLiteral(name)},
       bundles: [${bundleTemplates}],
-      weekInfo: ${JSON.stringify(getWeekInfo(id), null, 2)}
+      weekInfo: ${JSON.stringify(getWeekInfo(locale), null, 2)}
     })
 
     /**
@@ -42,7 +42,12 @@ function getBundleTemplate(namespace: string) {
     }`
 }
 
-function getWeekInfo(localeId: string): LocaleDefinition['weekInfo'] {
+function getWeekInfo(forLocale: Locale): LocaleDefinition['weekInfo'] {
+  if (forLocale.weekInfo) {
+    return forLocale.weekInfo
+  }
+
+  const localeId = forLocale.id
   const locale = new Intl.Locale(localeId)
 
   let info: Partial<LocaleDefinition['weekInfo']> = {}

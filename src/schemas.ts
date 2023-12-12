@@ -7,6 +7,33 @@ const localeIdSchema = z.string().regex(/^([a-z]+)|([a-z]+-[A-Z]+)$/, {
     'Should only include lowercase characters, or lowercased followed by uppercase, eg `en` or `en-US`',
 })
 
+const weekDaySchema = z.union([
+  z.literal(1),
+  z.literal(2),
+  z.literal(3),
+  z.literal(4),
+  z.literal(5),
+  z.literal(6),
+  z.literal(7),
+])
+
+const weekInfo = {
+  /**
+   * An integer indicating the first day of the week for the locale. Can be either 1 (Monday) or 7 (Sunday).
+   */
+  firstDay: z.union([z.literal(1), z.literal(7)]),
+
+  /**
+   * An array of integers indicating the weekend days for the locale, where 1 is Monday and 7 is Sunday.
+   */
+  weekend: z.array(weekDaySchema),
+
+  /**
+   * An integer between 1 and 7 indicating the minimal days required in the first week of a month or year, for calendar purposes.
+   */
+  minimalDays: weekDaySchema,
+}
+
 /**
  * An entry in the `locales/registry.ts` file, which records the available locales and their maintainers
  *
@@ -47,6 +74,11 @@ export const localeEntrySchema = z.object({
   contributors: z
     .array(z.string().regex(ghUsernamePattern, {message: 'Invalid GitHub username'}))
     .refine((val) => new Set(val).size === val.length, {message: 'Values should be unique'}),
+
+  /**
+   * (Default) week info for this locale
+   */
+  weekInfo: z.object(weekInfo).optional(),
 
   /**
    * Whether or not this locale is considered "official", eg maintained and vetted by Sanity.

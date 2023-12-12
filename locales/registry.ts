@@ -141,6 +141,11 @@ const registry: LocaleRegistry = [
     englishName: 'Chinese (Simplified)',
     maintainers: [],
     contributors: [],
+    weekInfo: {
+      firstDay: 1,
+      weekend: [6, 7],
+      minimalDays: 1,
+    },
   },
   {
     id: 'zh-Hant',
@@ -148,6 +153,11 @@ const registry: LocaleRegistry = [
     englishName: 'Chinese (Traditional)',
     maintainers: [],
     contributors: [],
+    weekInfo: {
+      firstDay: 7,
+      weekend: [6, 7],
+      minimalDays: 1,
+    },
   },
 ]
 
