@@ -30,6 +30,24 @@ export default defineConfig({
 
 The language should now show up in the Studio's user menu.
 
+If you want to customize the title of the locale, pass it as an option to the plugin:
+
+```ts
+// sanity.config.ts / sanity.config.js:
+import {defineConfig} from 'sanity'
+import {nbNOLocale} from '@sanity/locale-nb-no'
+
+export default defineConfig({
+  // ...
+  plugins: [
+    // ... other plugins here ...
+    nbNOLocale({
+      title: 'Norwegian (Bokmål)',
+    }),
+  ],
+})
+```
+
 ## Contributors
 
 - [@rexxars](https://github.com/rexxars)

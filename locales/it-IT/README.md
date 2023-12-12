@@ -30,6 +30,24 @@ export default defineConfig({
 
 The language should now show up in the Studio's user menu.
 
+If you want to customize the title of the locale, pass it as an option to the plugin:
+
+```ts
+// sanity.config.ts / sanity.config.js:
+import {defineConfig} from 'sanity'
+import {itITLocale} from '@sanity/locale-it-it'
+
+export default defineConfig({
+  // ...
+  plugins: [
+    // ... other plugins here ...
+    itITLocale({
+      title: 'Italian',
+    }),
+  ],
+})
+```
+
 ## Maintainers
 
 We are looking for maintainers for this plugin!

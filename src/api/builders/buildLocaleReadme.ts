@@ -34,6 +34,24 @@ export default defineConfig({
 
 The language should now show up in the Studio's user menu.
 
+If you want to customize the title of the locale, pass it as an option to the plugin:
+
+\`\`\`ts
+// sanity.config.ts / sanity.config.js:
+import {defineConfig} from 'sanity'
+import {${locale.exportName}} from '${locale.packageName}'
+
+export default defineConfig({
+  // ...
+  plugins: [
+    // ... other plugins here ...
+    ${locale.exportName}({
+      title: ${JSON.stringify(locale.englishName)},
+    }),
+  ]
+})
+\`\`\`
+
 ${buildMaintainersMessage(locale)}
 ${buildContributorsMessage(locale)}
 
