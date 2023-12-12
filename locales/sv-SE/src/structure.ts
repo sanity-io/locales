@@ -203,9 +203,9 @@ export default removeUndefinedLocaleResources({
     'Du kanske inte kan avpublicera “<DocumentTitle/>” eftersom följande dokument hänvisar till det:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  'confirm-dialog.cancel-button.fallback-text': 'Avbryt',
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+  'confirm-dialog.confirm-button.fallback-text': 'Bekräfta',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Fel: {{errorMessage}}',
@@ -242,13 +242,13 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  'menu-items.layout.compact-view': 'Kompakt vy',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  'menu-items.layout.detailed-view': 'Detaljerad vy',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  'menu-items.sort-by.created': 'Sortera efter Skapad',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
+  'menu-items.sort-by.last-edited': 'Sortera efter Senast redigerad',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lär dig hur du lägger till en dokumenttyp →',
