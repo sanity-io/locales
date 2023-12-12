@@ -300,19 +300,19 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Revisar alterações',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
-  'default-orderings.caption': undefined, // 'Sort by Caption'
+  'default-orderings.caption': 'Ordenar por Legenda',
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
-  'default-orderings.description': undefined, // 'Sort by Description'
+  'default-orderings.description': 'Ordenar por Descrição',
   /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
-  'default-orderings.header': undefined, // 'Sort by Header'
+  'default-orderings.header': 'Ordenar por Cabeçalho',
   /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
-  'default-orderings.heading': undefined, // 'Sort by Heading'
+  'default-orderings.heading': 'Ordenar por Título',
   /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
-  'default-orderings.label': undefined, // 'Sort by Label'
+  'default-orderings.label': 'Ordenar por Rótulo',
   /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
-  'default-orderings.name': undefined, // 'Sort by Name'
+  'default-orderings.name': 'Ordenar por Nome',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
-  'default-orderings.title': undefined, // 'Sort by Title'
+  'default-orderings.title': 'Ordenar por Título',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
