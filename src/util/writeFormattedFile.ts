@@ -1,5 +1,6 @@
-import {writeFile} from 'node:fs/promises'
-import {format, resolveConfig} from 'prettier'
+import {readFile, writeFile} from 'node:fs/promises'
+import {join as joinPath} from 'node:path'
+import {format} from 'prettier'
 import {getRootPath} from './getRootPath'
 
 /**
@@ -13,7 +14,7 @@ import {getRootPath} from './getRootPath'
  */
 export async function writeFormattedFile(filePath: string, content: string): Promise<void> {
   const rootPath = await getRootPath()
-  const prettierConfig = (await resolveConfig(rootPath)) || {}
+  const prettierConfig = JSON.parse(await readFile(joinPath(rootPath, '.prettierrc'), 'utf8'))
 
   const formattedCode = await format(content, {
     ...prettierConfig,
