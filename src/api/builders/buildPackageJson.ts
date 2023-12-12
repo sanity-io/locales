@@ -37,6 +37,7 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
       clean: 'rimraf dist',
       'pkg:build': 'pkg build --strict',
       'pkg:check': 'pkg check --strict',
+      prepublishOnly: 'pnpm build',
     },
     keywords: ['sanity', 'i18n', 'locale', 'localization', locale.id],
     files: ['dist', 'src'],
