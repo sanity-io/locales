@@ -8,7 +8,6 @@ const registry: LocaleRegistry = [
     englishName: 'Czech',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'de-DE',
@@ -16,7 +15,6 @@ const registry: LocaleRegistry = [
     englishName: 'German',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'es-ES',
@@ -24,7 +22,6 @@ const registry: LocaleRegistry = [
     englishName: 'Spanish',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'fi-FI',
@@ -32,7 +29,6 @@ const registry: LocaleRegistry = [
     englishName: 'Finnish',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'fr-FR',
@@ -40,7 +36,6 @@ const registry: LocaleRegistry = [
     englishName: 'French',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'is-IS',
@@ -48,7 +43,6 @@ const registry: LocaleRegistry = [
     englishName: 'Icelandic',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'it-IT',
@@ -56,7 +50,6 @@ const registry: LocaleRegistry = [
     englishName: 'Italian',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'ja-JP',
@@ -64,7 +57,6 @@ const registry: LocaleRegistry = [
     englishName: 'Japanese',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'ko-KR',
@@ -72,7 +64,6 @@ const registry: LocaleRegistry = [
     englishName: 'Korean',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'nb-NO',
@@ -80,7 +71,6 @@ const registry: LocaleRegistry = [
     englishName: 'Norwegian (Bokmål)',
     maintainers: ['rexxars'],
     contributors: ['rexxars'],
-    isOfficial: false,
   },
   {
     id: 'nl-NL',
@@ -88,7 +78,6 @@ const registry: LocaleRegistry = [
     englishName: 'Dutch',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'nn-NO',
@@ -96,7 +85,6 @@ const registry: LocaleRegistry = [
     englishName: 'Norwegian (Nynorsk)',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'pl-PL',
@@ -104,7 +92,6 @@ const registry: LocaleRegistry = [
     englishName: 'Polish',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'pt-BR',
@@ -112,7 +99,6 @@ const registry: LocaleRegistry = [
     englishName: 'Portuguese (Brazil)',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'pt-PT',
@@ -120,7 +106,6 @@ const registry: LocaleRegistry = [
     englishName: 'Portuguese',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'sv-SE',
@@ -128,7 +113,6 @@ const registry: LocaleRegistry = [
     englishName: 'Swedish',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'th-TH',
@@ -136,7 +120,6 @@ const registry: LocaleRegistry = [
     englishName: 'Thai',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'tr-TR',
@@ -144,7 +127,6 @@ const registry: LocaleRegistry = [
     englishName: 'Turkish',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'vi-VN',
@@ -152,7 +134,6 @@ const registry: LocaleRegistry = [
     englishName: 'Vietnamese',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'zh-Hans',
@@ -160,7 +141,6 @@ const registry: LocaleRegistry = [
     englishName: 'Chinese (Simplified)',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
   {
     id: 'zh-Hant',
@@ -168,7 +148,6 @@ const registry: LocaleRegistry = [
     englishName: 'Chinese (Traditional)',
     maintainers: [],
     contributors: [],
-    isOfficial: false,
   },
 ]
 

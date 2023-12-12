@@ -51,7 +51,7 @@ export const localeEntrySchema = z.object({
   /**
    * Whether or not this locale is considered "official", eg maintained and vetted by Sanity.
    */
-  isOfficial: z.boolean(),
+  isOfficial: z.boolean().default(false).optional(),
 })
 
 /**
