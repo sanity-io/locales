@@ -32,7 +32,7 @@ The language should now show up in the Studio's user menu.
 
 ## Contributors
 
-- @rexxars
+- [@rexxars](https://github.com/rexxars)
 
 ## Contributing
 

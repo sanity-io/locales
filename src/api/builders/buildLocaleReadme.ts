@@ -63,5 +63,7 @@ function buildContributorsMessage(locale: Locale) {
     return ''
   }
 
-  return `## Contributors\n\n${locale.contributors.map((name) => `- @${name}`).join('\n')}\n\n`
+  return `## Contributors\n\n${locale.contributors
+    .map((name) => `- [@${name}](https://github.com/${name})`)
+    .join('\n')}\n\n`
 }
