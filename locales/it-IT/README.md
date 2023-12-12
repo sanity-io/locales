@@ -16,8 +16,8 @@ npm install @sanity/locale-it-it
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {itITLocale} from '@sanity/locale-it-it'
+import { defineConfig } from "sanity";
+import { itITLocale } from "@sanity/locale-it-it";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     itITLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

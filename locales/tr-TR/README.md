@@ -16,8 +16,8 @@ npm install @sanity/locale-tr-tr
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {trTRLocale} from '@sanity/locale-tr-tr'
+import { defineConfig } from "sanity";
+import { trTRLocale } from "@sanity/locale-tr-tr";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     trTRLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

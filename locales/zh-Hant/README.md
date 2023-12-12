@@ -16,8 +16,8 @@ npm install @sanity/locale-zh-hant
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {zhHantLocale} from '@sanity/locale-zh-hant'
+import { defineConfig } from "sanity";
+import { zhHantLocale } from "@sanity/locale-zh-hant";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     zhHantLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

@@ -1,19 +1,19 @@
 {
   "name": "@sanity/i18n-studio",
-  "version": "1.0.0",
-  "private": true,
   "description": "Placeholder studio for testing all defined locales",
-  "keywords": [
-    "sanity"
-  ],
-  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
   "main": "package.json",
+  "license": "MIT",
   "scripts": {
     "build": "sanity build",
     "deploy": "sanity deploy",
     "dev": "sanity dev",
     "start": "sanity start"
   },
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
     "@sanity/icons": "^2.7.0",
     "@sanity/locale-cs-cz": "workspace:*",

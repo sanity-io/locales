@@ -16,8 +16,8 @@ npm install @sanity/locale-fi-fi
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {fiFILocale} from '@sanity/locale-fi-fi'
+import { defineConfig } from "sanity";
+import { fiFILocale } from "@sanity/locale-fi-fi";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     fiFILocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

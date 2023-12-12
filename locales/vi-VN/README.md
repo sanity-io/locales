@@ -16,8 +16,8 @@ npm install @sanity/locale-vi-vn
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {viVNLocale} from '@sanity/locale-vi-vn'
+import { defineConfig } from "sanity";
+import { viVNLocale } from "@sanity/locale-vi-vn";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     viVNLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

@@ -1,27 +1,27 @@
-import {defineLocale, definePlugin} from 'sanity'
+import { defineLocale, definePlugin } from "sanity";
 
 const locale = defineLocale({
-  id: 'tr-TR',
-  title: 'Türkçe',
+  id: "tr-TR",
+  title: "Türkçe",
   bundles: [
     {
-      namespace: 'structure',
-      resources: () => import('./structure'),
+      namespace: "structure",
+      resources: () => import("./structure"),
     },
 
     {
-      namespace: 'studio',
-      resources: () => import('./studio'),
+      namespace: "studio",
+      resources: () => import("./studio"),
     },
 
     {
-      namespace: 'validation',
-      resources: () => import('./validation'),
+      namespace: "validation",
+      resources: () => import("./validation"),
     },
 
     {
-      namespace: 'vision',
-      resources: () => import('./vision'),
+      namespace: "vision",
+      resources: () => import("./vision"),
     },
   ],
   weekInfo: {
@@ -29,7 +29,7 @@ const locale = defineLocale({
     minimalDays: 1,
     weekend: [6, 7],
   },
-})
+});
 
 /**
  * Türkçe locale/translation plugin for Sanity Studio
@@ -37,8 +37,8 @@ const locale = defineLocale({
  * @public
  */
 export const trTRLocale = definePlugin({
-  name: '@sanity/locale-tr-tr',
+  name: "@sanity/locale-tr-tr",
   i18n: {
     locales: [locale],
   },
-})
+});

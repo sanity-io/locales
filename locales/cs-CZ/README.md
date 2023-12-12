@@ -16,8 +16,8 @@ npm install @sanity/locale-cs-cz
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {csCZLocale} from '@sanity/locale-cs-cz'
+import { defineConfig } from "sanity";
+import { csCZLocale } from "@sanity/locale-cs-cz";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     csCZLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

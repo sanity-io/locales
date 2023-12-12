@@ -16,8 +16,8 @@ npm install @sanity/locale-ja-jp
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {jaJPLocale} from '@sanity/locale-ja-jp'
+import { defineConfig } from "sanity";
+import { jaJPLocale } from "@sanity/locale-ja-jp";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     jaJPLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

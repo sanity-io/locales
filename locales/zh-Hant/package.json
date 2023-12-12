@@ -1,14 +1,28 @@
 {
   "name": "@sanity/locale-zh-hant",
-  "version": "1.0.0",
-  "private": false,
   "description": "Chinese (Traditional) / 繁體中文 locale/translation for Sanity Studio",
+  "private": false,
+  "version": "1.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
+    "clean": "rimraf dist",
+    "pkg:build": "pkg build --strict",
+    "pkg:check": "pkg check --strict"
+  },
   "keywords": [
     "sanity",
     "i18n",
     "locale",
     "localization",
     "zh-Hant"
+  ],
+  "files": [
+    "dist",
+    "src"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
@@ -19,7 +33,9 @@
     "url": "git+ssh://git@github.com/sanity-io/locales.git",
     "directory": "locales/zh-Hant"
   },
-  "license": "MIT",
+  "peerDependencies": {
+    "sanity": "3.21.2-i18n.15+dc50df99fa"
+  },
   "contributors": [],
   "type": "module",
   "exports": {
@@ -35,21 +51,5 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "source": "./src/index.ts",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "scripts": {
-    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
-    "clean": "rimraf dist",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict"
-  },
-  "peerDependencies": {
-    "sanity": "3.21.2-i18n.15+dc50df99fa"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+  "types": "./dist/index.d.ts"
 }

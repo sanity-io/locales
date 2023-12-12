@@ -16,8 +16,8 @@ npm install @sanity/locale-ko-kr
 
 ```ts
 // sanity.config.ts / sanity.config.js:
-import {defineConfig} from 'sanity'
-import {koKRLocale} from '@sanity/locale-ko-kr'
+import { defineConfig } from "sanity";
+import { koKRLocale } from "@sanity/locale-ko-kr";
 
 export default defineConfig({
   // ...
@@ -25,7 +25,7 @@ export default defineConfig({
     // ... other plugins here ...
     koKRLocale(),
   ],
-})
+});
 ```
 
 The language should now show up in the Studio's user menu.

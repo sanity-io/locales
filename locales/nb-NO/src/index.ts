@@ -1,27 +1,27 @@
-import {defineLocale, definePlugin} from 'sanity'
+import { defineLocale, definePlugin } from "sanity";
 
 const locale = defineLocale({
-  id: 'nb-NO',
-  title: 'Norsk (Bokmål)',
+  id: "nb-NO",
+  title: "Norsk (Bokmål)",
   bundles: [
     {
-      namespace: 'structure',
-      resources: () => import('./structure'),
+      namespace: "structure",
+      resources: () => import("./structure"),
     },
 
     {
-      namespace: 'studio',
-      resources: () => import('./studio'),
+      namespace: "studio",
+      resources: () => import("./studio"),
     },
 
     {
-      namespace: 'validation',
-      resources: () => import('./validation'),
+      namespace: "validation",
+      resources: () => import("./validation"),
     },
 
     {
-      namespace: 'vision',
-      resources: () => import('./vision'),
+      namespace: "vision",
+      resources: () => import("./vision"),
     },
   ],
   weekInfo: {
@@ -29,7 +29,7 @@ const locale = defineLocale({
     minimalDays: 4,
     weekend: [6, 7],
   },
-})
+});
 
 /**
  * Norsk (Bokmål) locale/translation plugin for Sanity Studio
@@ -37,8 +37,8 @@ const locale = defineLocale({
  * @public
  */
 export const nbNOLocale = definePlugin({
-  name: '@sanity/locale-nb-no',
+  name: "@sanity/locale-nb-no",
   i18n: {
     locales: [locale],
   },
-})
+});

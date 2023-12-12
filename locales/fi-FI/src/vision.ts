@@ -1,69 +1,69 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from "sanity";
 
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
-  'action.copy-url-to-clipboard': 'Kopioi leikepöydälle',
+  "action.copy-url-to-clipboard": "Kopioi leikepöydälle",
   /** Label for stopping an ongoing listen operation */
-  'action.listen-cancel': 'Pysäytä',
+  "action.listen-cancel": "Pysäytä",
   /** Label for setting up a listener */
-  'action.listen-execute': 'Kuuntele',
+  "action.listen-execute": "Kuuntele",
   /** Label for cancelling an ongoing query */
-  'action.query-cancel': 'Peruuta',
+  "action.query-cancel": "Peruuta",
   /** Label for executing the query, eg doing a fetch */
-  'action.query-execute': 'Hae',
+  "action.query-execute": "Hae",
 
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
-  'label.new': 'Uusi',
+  "label.new": "Uusi",
 
   /** Error message for when the "Params" input are not a valid json */
-  'params.error.params-invalid-json': 'Parametrit eivät ole kelvollista JSONia',
+  "params.error.params-invalid-json": "Parametrit eivät ole kelvollista JSONia",
   /** Label for "Params" (parameters) editor/input */
-  'params.label': 'Parametrit',
+  "params.label": "Parametrit",
 
   /** Label for 'Column' indicator when there is an error within the query */
-  'query.error.column': 'Sarake',
+  "query.error.column": "Sarake",
   /** Label for 'Line' indicator when there is an error within the query */
-  'query.error.line': 'Rivi',
+  "query.error.line": "Rivi",
   /** Label for "Query" editor/input */
-  'query.label': 'Kysely',
+  "query.label": "Kysely",
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
-  'query.url': 'Kyselyn URL',
+  "query.url": "Kyselyn URL",
 
   /** Label for "End to End time" information of the fetched query */
-  'result.end-to-end-time-label': 'Päästä päähän',
+  "result.end-to-end-time-label": "Päästä päähän",
   /** Label for "Execution time" information of the fetched query */
-  'result.execution-time-label': 'Suoritusaika',
+  "result.execution-time-label": "Suoritusaika",
   /** Label for "Result" explorer/view */
-  'result.label': 'Tulos',
+  "result.label": "Tulos",
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
    */
-  'result.timing-not-applicable': 'ei sovellu',
+  "result.timing-not-applicable": "ei sovellu",
 
   /** Label for the "API version" dropdown in settings */
-  'settings.api-version-label': 'API-versio',
+  "settings.api-version-label": "API-versio",
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
-  'settings.custom-api-version-label': 'Mukautettu API-versio',
+  "settings.custom-api-version-label": "Mukautettu API-versio",
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': 'Dataset',
+  "settings.dataset-label": "Dataset",
   /** Error label for when the API version in 'Custom API version' input is invalid */
-  'settings.error.invalid-api-version': 'Virheellinen API-versio',
+  "settings.error.invalid-api-version": "Virheellinen API-versio",
   /** Label for the "other" versions within the "API version" dropdown */
-  'settings.other-api-version-label': 'Muu',
+  "settings.other-api-version-label": "Muu",
   /**
    * Label for the "Perspective" dropdown in vision settings
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
-  'settings.perspective-label': 'Perspective',
+  "settings.perspective-label": "Perspective",
   /** Call to action to read the docs related to "Perspectives" */
-  'settings.perspectives.action.docs-link': 'Lue dokumentaatiota',
+  "settings.perspectives.action.docs-link": "Lue dokumentaatiota",
   /** Description for popover that explains what "Perspectives" are */
-  'settings.perspectives.description':
+  "settings.perspectives.description":
     'Perspectives mahdollistavat kyselysi suorittamisen eri "näkymillä" sisällöstä datasetissäsi',
   /** Title for popover that explains what "Perspectives" are */
-  'settings.perspectives.title': 'Perspectives',
-})
+  "settings.perspectives.title": "Perspectives",
+});

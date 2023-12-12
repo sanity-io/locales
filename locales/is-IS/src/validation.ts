@@ -1,99 +1,106 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from "sanity";
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
-  'array.exact-length': 'Verður að hafa nákvæmlega {{wantedLength}} atriði',
+  "array.exact-length": "Verður að hafa nákvæmlega {{wantedLength}} atriði",
   /** Portable Text array must have exactly "$wantedLength" blocks, but has more/less */
-  'array.exact-length_blocks': 'Verður að hafa nákvæmlega {{wantedLength}} blokkir',
+  "array.exact-length_blocks":
+    "Verður að hafa nákvæmlega {{wantedLength}} blokkir",
   /** Array item is a duplicate, but array wants only unique items */
-  'array.item-duplicate': 'Má ekki vera afrit',
+  "array.item-duplicate": "Má ekki vera afrit",
   /** Array has more than the maximum of "$maxLength" items */
-  'array.maximum-length': 'Má hafa í mesta lagi {{maxLength}} atriði',
+  "array.maximum-length": "Má hafa í mesta lagi {{maxLength}} atriði",
   /** Portable Text array has more than the maximum of "$maxLength" items */
-  'array.maximum-length_blocks': 'Má hafa í mesta lagi {{maxLength}} blokkir',
+  "array.maximum-length_blocks": "Má hafa í mesta lagi {{maxLength}} blokkir",
   /** Array has less than the minimum of "$minLength" items */
-  'array.minimum-length': 'Verður að hafa að minnsta kosti {{minLength}} atriði',
+  "array.minimum-length":
+    "Verður að hafa að minnsta kosti {{minLength}} atriði",
   /** Portable Text array has less than the minimum of "$minLength" blocks */
-  'array.minimum-length_blocks': 'Verður að hafa að minnsta kosti {{minLength}} blokkir',
+  "array.minimum-length_blocks":
+    "Verður að hafa að minnsta kosti {{minLength}} blokkir",
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': 'Verður að vera gilt ISO-8601 sniðið dagsetning',
+  "date.invalid-format": "Verður að vera gilt ISO-8601 sniðið dagsetning",
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': 'Verður að vera á eða fyrir {{maxDate}}',
+  "date.maximum": "Verður að vera á eða fyrir {{maxDate}}",
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': 'Verður að vera á eða eftir {{minDate}}',
+  "date.minimum": "Verður að vera á eða eftir {{minDate}}",
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
-  'generic.incorrect-type': 'Væntanlegur týpa "{{expectedType}}", fékk "{{actualType}}"',
+  "generic.incorrect-type":
+    'Væntanlegur týpa "{{expectedType}}", fékk "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
-  'generic.not-allowed': 'Gildi passaði ekki við nein leyfð gildi',
+  "generic.not-allowed": "Gildi passaði ekki við nein leyfð gildi",
   /** Value "$givenValue" is not one of the values specifically allowed */
-  'generic.not-allowed_hint': 'Gildi "{{hint}}" passaði ekki við nein leyfð gildi',
+  "generic.not-allowed_hint":
+    'Gildi "{{hint}}" passaði ekki við nein leyfð gildi',
   /** A value is expected, but none is provided */
-  'generic.required': 'Krafist',
+  "generic.required": "Krafist",
 
   /** Number is less than the given minimum threshold value "$threshold" */
-  'number.greater-than': 'Verður að vera meira en {{threshold}}',
+  "number.greater-than": "Verður að vera meira en {{threshold}}",
   /** Number is greater than the given maximum threshold value "$threshold" */
-  'number.less-than': 'Verður að vera minna en {{threshold}}',
+  "number.less-than": "Verður að vera minna en {{threshold}}",
   /** Number is higher than the given maximum value "$maxNumber" */
-  'number.maximum': 'Verður að vera lægra en eða jafnt og {{maxNumber}}',
+  "number.maximum": "Verður að vera lægra en eða jafnt og {{maxNumber}}",
   /** Number has more precision (decimals) than the allowed "$limit" */
-  'number.maximum-precision': 'Hámarks nákvæmni er {{limit}}',
+  "number.maximum-precision": "Hámarks nákvæmni er {{limit}}",
   /** Number is lower than the given minimum value "$minNumber" */
-  'number.minimum': 'Verður að vera meira en eða jafnt og {{minNumber}}',
+  "number.minimum": "Verður að vera meira en eða jafnt og {{minNumber}}",
   /** Number is not an integer ("whole number") */
-  'number.non-integer': 'Verður að vera heiltala',
+  "number.non-integer": "Verður að vera heiltala",
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': 'Eign er krafist',
+  "object.asset-required": "Eign er krafist",
   /** Object is missing a reference to a file asset document in its `asset` field */
-  'object.asset-required_file': 'Skrá er krafist',
+  "object.asset-required_file": "Skrá er krafist",
   /** Object is missing a reference to an image asset document in its `asset` field */
-  'object.asset-required_image': 'Mynd er krafist',
+  "object.asset-required_image": "Mynd er krafist",
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
-  'object.not-reference': 'Verður að vera tilvísun í skjal',
+  "object.not-reference": "Verður að vera tilvísun í skjal",
   /** Object references a document which is not published */
-  'object.reference-not-published': 'Tilvísunarskjal verður að vera birt',
+  "object.reference-not-published": "Tilvísunarskjal verður að vera birt",
 
   /** Accessibility label for closing the validation panel */
-  'panel.close-button-aria-label': 'Loka staðfestingarvalmynd',
+  "panel.close-button-aria-label": "Loka staðfestingarvalmynd",
   /** Message shown when the validation panel is opened but there are no errors/warnings */
-  'panel.no-errors-message': 'Engar staðfestingarvillur',
+  "panel.no-errors-message": "Engar staðfestingarvillur",
   /** Title for the actual "Validation" panel/feature */
-  'panel.title': 'Staðfesting',
+  "panel.title": "Staðfesting",
 
   /** Slug is an object, but is missing a `current` string property */
-  'slug.missing-current': 'Slug verður að hafa gildi',
+  "slug.missing-current": "Slug verður að hafa gildi",
   /** Slug is not an object (eg `{current: 'some-slug'}`) */
-  'slug.not-object': 'Slug verður að vera hlutur',
+  "slug.not-object": "Slug verður að vera hlutur",
   /** Slug is already in use somewhere else, but needs to be unique */
-  'slug.not-unique': 'Slug er nú þegar í notkun',
+  "slug.not-unique": "Slug er nú þegar í notkun",
 
   /** String is not a valid email address */
-  'string.email': 'Verður að vera gilt netfang',
+  "string.email": "Verður að vera gilt netfang",
   /** String has a different character length than the exact number "$wantedLength" */
-  'string.exact-length': 'Verður að vera nákvæmlega {{wantedLength}} stafir að lengd',
+  "string.exact-length":
+    "Verður að vera nákvæmlega {{wantedLength}} stafir að lengd",
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': 'Verður að vera allt lágstafir',
+  "string.lowercase": "Verður að vera allt lágstafir",
   /** String is longer than the limit of "$maxLength" characters */
-  'string.maximum-length': 'Má vera í mesta lagi {{maxLength}} stafir að lengd',
+  "string.maximum-length": "Má vera í mesta lagi {{maxLength}} stafir að lengd",
   /** String is shorter than the limit of "$minLength" characters */
-  'string.minimum-length': 'Verður að vera að minnsta kosti {{minLength}} stafir að lengd',
+  "string.minimum-length":
+    "Verður að vera að minnsta kosti {{minLength}} stafir að lengd",
   /** String does not match the given regular expression, but should */
-  'string.regex-does-not-match': 'Passar ekki við "{{name}}"-mynstrið',
+  "string.regex-does-not-match": 'Passar ekki við "{{name}}"-mynstrið',
   /** String matches the given regular expression, but should not */
-  'string.regex-match': 'Á ekki að passa við "{{name}}"-mynstrið',
+  "string.regex-match": 'Á ekki að passa við "{{name}}"-mynstrið',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': 'Verður að vera allt hástafir',
+  "string.uppercase": "Verður að vera allt hástafir",
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
-  'string.url.disallowed-scheme': 'Passar ekki við leyfileg prótókól/snið',
+  "string.url.disallowed-scheme": "Passar ekki við leyfileg prótókól/snið",
   /** String contains a URL with a username or password specified before the host */
-  'string.url.includes-credentials': 'Notandanafn/lykilorð ekki leyft',
+  "string.url.includes-credentials": "Notandanafn/lykilorð ekki leyft",
   /** String is not a valid URL */
-  'string.url.invalid': 'Ekki gilt vefslóð',
+  "string.url.invalid": "Ekki gilt vefslóð",
   /** String is not an absolute URL (eg it is missing a protocol/host) */
-  'string.url.not-absolute': 'Afstæðar vefslóðir eru ekki leyfðar',
+  "string.url.not-absolute": "Afstæðar vefslóðir eru ekki leyfðar",
   /** String is not a relative URL (eg it contains a protocol/host) */
-  'string.url.not-relative': 'Aðeins afstæðar vefslóðir eru leyfðar',
-})
+  "string.url.not-relative": "Aðeins afstæðar vefslóðir eru leyfðar",
+});
