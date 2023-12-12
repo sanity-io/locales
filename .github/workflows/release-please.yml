@@ -47,8 +47,8 @@ jobs:
         with:
           cache: pnpm
           node-version: lts/*
-      - name: install deps & build
-        run: corepack enable && pnpm --version && pnpm install --ignore-scripts && pnpm build --filter=./locales/*
+      - name: install deps
+        run: corepack enable && pnpm --version && pnpm install --ignore-scripts
         if: ${{ steps.release.outputs.releases_created || github.event.inputs.publish == 'true' }}
       - name: Set publishing config
         run: pnpm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
