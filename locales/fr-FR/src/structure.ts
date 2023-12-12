@@ -203,9 +203,9 @@ export default removeUndefinedLocaleResources({
     'Vous ne pourrez peut-être pas retirer la publication de “<DocumentTitle/>” car les documents suivants y font référence :',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  'confirm-dialog.cancel-button.fallback-text': 'Annuler',
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+  'confirm-dialog.confirm-button.fallback-text': 'Confirmer',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Erreur : {{errorMessage}}',
@@ -242,13 +242,13 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  'menu-items.layout.compact-view': 'Vue compacte',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  'menu-items.layout.detailed-view': 'Vue détaillée',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  'menu-items.sort-by.created': 'Trier par Date de création',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
+  'menu-items.sort-by.last-edited': 'Trier par Dernière édition',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Apprenez comment ajouter un type de document →',
