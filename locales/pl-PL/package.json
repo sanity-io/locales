@@ -47,7 +47,7 @@
     "pkg:check": "pkg check --strict"
   },
   "peerDependencies": {
-    "sanity": "^3.21.2"
+    "sanity": "^3.21.3"
   },
   "publishConfig": {
     "access": "public"
