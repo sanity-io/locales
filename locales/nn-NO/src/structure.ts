@@ -205,9 +205,9 @@ export default removeUndefinedLocaleResources({
     'Du vil kanskje ikkje kunne avpublisere “<DocumentTitle/>” fordi dei følgjande dokumenta refererer til det:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  'confirm-dialog.cancel-button.fallback-text': 'Avbryt',
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+  'confirm-dialog.confirm-button.fallback-text': 'Stadfest',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Feil: {{errorMessage}}',
@@ -244,13 +244,13 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  'menu-items.layout.compact-view': 'Kompakt visning',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  'menu-items.layout.detailed-view': 'Detaljert visning',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  'menu-items.sort-by.created': 'Sorter etter Oppretta',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
+  'menu-items.sort-by.last-edited': 'Sorter etter Sist redigert',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lær korleis du legg til ein dokumenttype →',
