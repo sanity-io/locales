@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 import OpenAI from 'openai'
@@ -14,18 +13,24 @@ const execFile = promisify(execFileCb)
 
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
+export interface AutoTranslateOptions {
+  targetLocales?: string[]
+  namespaces?: string[]
+  logger?: (message: string) => void
+}
+
 /**
  * Automatically translate missing resources using AI.
  * Writes back the translations to namespace files on success.
  *
+ * @param options - Options for the auto translate operation
  * @returns A promise that resolves when all resources have been translated
  * @internal
  */
-export async function autoTranslate(
-  targetLocales?: string[],
-  namespaces?: string[],
-): Promise<void> {
+export async function autoTranslate(options: AutoTranslateOptions): Promise<void> {
+  const {targetLocales, namespaces, logger = noop} = options
   const {locales} = await getOrderedResources()
+
   // Filter out locales that are not requested
   const filteredLocales = locales.filter((locale) => {
     return !targetLocales || targetLocales.includes(locale.id)
@@ -39,12 +44,12 @@ export async function autoTranslate(
       if (namespaces && !namespaces.includes(entry.namespace)) {
         continue
       }
-      console.log(
+      logger(
         `Found ${entry.missingKeys.length} missing resources for ${localeName} in ${entry.namespace}`,
       )
       const ns = locale.namespaces.find((namespace) => namespace.namespace === entry.namespace)
       if (!ns) {
-        console.log(`Could not find namespace ${entry.namespace} in locale ${localeName}`)
+        logger(`Could not find namespace ${entry.namespace} in locale ${localeName}`)
         continue
       }
 
@@ -67,8 +72,7 @@ export async function autoTranslate(
       // For each of the batches, translate the keys
       for await (const currentBatch of batches) {
         const tpl = templateMissingResources(ns.indexedResources, currentBatch)
-        /* eslint-disable no-console */
-        console.log(
+        logger(
           `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
             batches.length
           } key batches for namespace ${ns.namespace}`,
@@ -294,4 +298,8 @@ async function hasExistingPR(branchName: string) {
   ])
 
   return stdout.trim() !== ''
+}
+
+function noop() {
+  /* intentional noop */
 }

@@ -30,7 +30,12 @@ async function autoTranslateWithParams() {
     },
   })
 
-  await autoTranslate(args.values.locale, args.values.namespace)
+  await autoTranslate({
+    targetLocales: args.values.locale,
+    namespaces: args.values.namespace,
+    logger: (message) => console.log(message),
+  })
+
   if (args.values.git) {
     await runScript(pushChanges)
   }
