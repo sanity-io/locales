@@ -24,6 +24,11 @@ const locale = defineLocale({
       resources: () => import('./vision'),
     },
   ],
+  weekInfo: {
+    firstDay: 1,
+    minimalDays: 4,
+    weekend: [6, 7],
+  },
 })
 
 /**

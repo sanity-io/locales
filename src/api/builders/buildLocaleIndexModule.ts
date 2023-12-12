@@ -1,3 +1,4 @@
+import {LocaleDefinition, isRecord} from 'sanity'
 import type {Locale} from '../../types'
 import {getBaseNamespaces} from '../../util/getBaseNamespaces'
 import {buildStringLiteral} from './buildStringLiteral'
@@ -15,6 +16,7 @@ export async function buildLocaleIndexModule(locale: Locale): Promise<string> {
       id: ${buildStringLiteral(id)},
       title: ${buildStringLiteral(name)},
       bundles: [${bundleTemplates}],
+      weekInfo: ${JSON.stringify(getWeekInfo(id), null, 2)}
     })
 
     /**
@@ -38,4 +40,36 @@ function getBundleTemplate(namespace: string) {
       namespace: ${buildStringLiteral(namespace)},
       resources: () => import(${buildStringLiteral(importPath)}),
     }`
+}
+
+function getWeekInfo(localeId: string): LocaleDefinition['weekInfo'] {
+  const locale = new Intl.Locale(localeId)
+
+  let info: Partial<LocaleDefinition['weekInfo']> = {}
+  if ('getWeekInfo' in locale && typeof locale.getWeekInfo === 'function') {
+    info = locale.getWeekInfo()
+  } else if ('weekInfo' in locale && isRecord(locale.weekInfo)) {
+    info = locale.weekInfo
+  }
+
+  if (!isRecord(info)) {
+    throw new Error(`Unable to determine week info for locale "${localeId}"`)
+  }
+
+  const {firstDay, minimalDays, weekend} = info
+  if (firstDay !== 1 && firstDay !== 7) {
+    throw new Error(`Invalid first day of week ${firstDay} for locale "${localeId}"`)
+  }
+
+  if (typeof minimalDays !== 'number') {
+    throw new Error(`Invalid minimal days in first week ${minimalDays} for locale "${localeId}"`)
+  }
+
+  if (!Array.isArray(weekend)) {
+    throw new Error(
+      `Invalid weekend days ${JSON.stringify(weekend, null, 2)} for locale "${localeId}"`,
+    )
+  }
+
+  return {firstDay, minimalDays, weekend}
 }
