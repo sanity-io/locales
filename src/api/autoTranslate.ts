@@ -223,7 +223,7 @@ export async function pushChanges(): Promise<void> {
   }
 
   // Push the "all changes" branch
-  await execGitCommand(['push', 'origin', 'fix/auto/translate', '--force'])
+  await execGitCommand(['push', 'origin', 'main:fix/auto/translate', '--force'])
 
   // Now revert to the original HEAD
   await execGitCommand(['reset', '--mixed', headSha])
