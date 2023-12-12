@@ -198,9 +198,9 @@ export default removeUndefinedLocaleResources({
     'Þú gætir ekki getað afturkallað birtingu “<DocumentTitle/>” þar sem eftirfarandi skjöl vísa í það:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  'confirm-dialog.cancel-button.fallback-text': 'Hætta við',
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+  'confirm-dialog.confirm-button.fallback-text': 'Staðfesta',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Villa: {{errorMessage}}',
@@ -237,13 +237,13 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  'menu-items.layout.compact-view': 'Þjappað útlit',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  'menu-items.layout.detailed-view': 'Ítarlegt útlit',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  'menu-items.sort-by.created': 'Raða eftir stofnun',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
+  'menu-items.sort-by.last-edited': 'Raða eftir síðast breytt',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lærðu hvernig á að bæta við skjalategund →',
