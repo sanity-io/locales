@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'vi-VN',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * Tiếng Việt locale/translation plugin for Sanity Studio
+ * Tiếng Việt / Vietnamese locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const viVNLocale = definePlugin({
+export const viVNLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-vi-vn',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

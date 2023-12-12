@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'tr-TR',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * Türkçe locale/translation plugin for Sanity Studio
+ * Türkçe / Turkish locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const trTRLocale = definePlugin({
+export const trTRLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-tr-tr',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

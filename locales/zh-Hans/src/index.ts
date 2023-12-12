@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'zh-Hans',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * 简体中文 locale/translation plugin for Sanity Studio
+ * 简体中文 / Chinese (Simplified) locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const zhHansLocale = definePlugin({
+export const zhHansLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-zh-hans',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'is-IS',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * Íslenska locale/translation plugin for Sanity Studio
+ * Íslenska / Icelandic locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const isISLocale = definePlugin({
+export const isISLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-is-is',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

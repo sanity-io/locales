@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'nb-NO',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * Norsk (Bokmål) locale/translation plugin for Sanity Studio
+ * Norsk (Bokmål) / Norwegian (Bokmål) locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const nbNOLocale = definePlugin({
+export const nbNOLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-nb-no',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

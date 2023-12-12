@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'ko-KR',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * 한국어 locale/translation plugin for Sanity Studio
+ * 한국어 / Korean locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const koKRLocale = definePlugin({
+export const koKRLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-ko-kr',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

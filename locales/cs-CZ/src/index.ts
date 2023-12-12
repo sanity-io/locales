@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'cs-CZ',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * Čeština locale/translation plugin for Sanity Studio
+ * Čeština / Czech locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const csCZLocale = definePlugin({
+export const csCZLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-cs-cz',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

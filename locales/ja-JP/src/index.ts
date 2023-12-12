@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'ja-JP',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * 日本語 locale/translation plugin for Sanity Studio
+ * 日本語 / Japanese locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const jaJPLocale = definePlugin({
+export const jaJPLocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-ja-jp',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))

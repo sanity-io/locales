@@ -10,7 +10,7 @@ export async function buildLocaleIndexModule(locale: Locale): Promise<string> {
     namespaces.length > 0 ? `\n${namespaces.map(getBundleTemplate).join(',\n')},\n` : ''
 
   return `
-    import {defineLocale, definePlugin} from 'sanity'
+    import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
     const locale = defineLocale({
       id: ${buildStringLiteral(id)},
@@ -20,16 +20,19 @@ export async function buildLocaleIndexModule(locale: Locale): Promise<string> {
     })
 
     /**
-     * ${locale.name} locale/translation plugin for Sanity Studio
+     * ${locale.name} / ${locale.englishName} locale/translation plugin for Sanity Studio
      *
      * @public
      */
-    export const ${exportName} = definePlugin({
+    export const ${exportName} = definePlugin<{
+      title?: string
+      weekInfo?: LocaleDefinition['weekInfo']
+    } | void>((config) => ({
       name: ${buildStringLiteral(packageName)},
       i18n: {
-        locales: [locale],
+        locales: [config ? {...locale, ...config} : locale],
       },
-    })
+    }))
   `.trim()
 }
 

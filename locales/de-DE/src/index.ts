@@ -1,4 +1,4 @@
-import {defineLocale, definePlugin} from 'sanity'
+import {defineLocale, definePlugin, type LocaleDefinition} from 'sanity'
 
 const locale = defineLocale({
   id: 'de-DE',
@@ -32,13 +32,16 @@ const locale = defineLocale({
 })
 
 /**
- * Deutsch locale/translation plugin for Sanity Studio
+ * Deutsch / German locale/translation plugin for Sanity Studio
  *
  * @public
  */
-export const deDELocale = definePlugin({
+export const deDELocale = definePlugin<{
+  title?: string
+  weekInfo?: LocaleDefinition['weekInfo']
+} | void>((config) => ({
   name: '@sanity/locale-de-de',
   i18n: {
-    locales: [locale],
+    locales: [config ? {...locale, ...config} : locale],
   },
-})
+}))
