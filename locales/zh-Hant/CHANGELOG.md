@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/sanity-io/locales/compare/locale-zh-hant-v1.0.0...locale-zh-hant-v1.0.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* add prepublish build script ([561dcfb](https://github.com/sanity-io/locales/commit/561dcfb24ab12f98fcc590b0dbc2cf297ea60485))
+
 ## 1.0.0 (2023-12-12)
 
 

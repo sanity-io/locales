@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-nn-no",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Norwegian (Nynorsk) / Norsk (Nynorsk) locale/translation for Sanity Studio",
   "keywords": [
