@@ -21,7 +21,7 @@ importers:
         specifier: ^3.3.5
         version: 3.3.5(@types/node@18.18.14)(typescript@5.3.3)
       '@sanity/vision':
-        specifier: 3.21.2
+        specifier: ^3.21.2
         version: 3.21.2(@babel/runtime@7.23.5)(@codemirror/lint@6.4.2)(@codemirror/state@6.3.3)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.1.2)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
       '@types/babel__generator':
         specifier: ^7.6.7
@@ -54,7 +54,7 @@ importers:
         specifier: ^2.4.7
         version: 2.4.7(prettier@3.1.1)
       sanity:
-        specifier: 3.21.2
+        specifier: ^3.21.2
         version: 3.21.2(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
       tsx:
         specifier: ^4.6.2
@@ -169,11 +169,11 @@ importers:
         specifier: ^1.9.3
         version: 1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
       '@sanity/vision':
-        specifier: 3.21.2
+        specifier: ^3.21.2
         version: 3.21.2(@babel/runtime@7.23.5)(@codemirror/lint@6.4.2)(@codemirror/state@6.3.3)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.1.2)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1)
       groq:
-        specifier: 3.21.2-i18n.15+dc50df99fa
-        version: 3.21.2-i18n.15
+        specifier: ^3.21.2
+        version: 3.21.2
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -184,7 +184,7 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
       sanity:
-        specifier: 3.21.2
+        specifier: ^3.21.2
         version: 3.21.2(@types/node@18.18.14)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
       styled-components:
         specifier: ^6.1.1
@@ -5543,8 +5543,8 @@ packages:
     engines: {node: '>= 14'}
     dev: false
 
-  /groq@3.21.2-i18n.15:
-    resolution: {integrity: sha512-3c7ThAo0CYz+fIxh6seabrvmc8Tl7rOu0lJTwKDbKnfyMlPzmKIGtKPsJnPJnXKgkzURMgvmrrQs4/ETst6Wfg==}
+  /groq@3.21.2:
+    resolution: {integrity: sha512-DuWRBSPruY3PFnrOA/dnLjMyrkF42R/J71f0oVdNr13A/ggPouw1znBT/X86d4uUT7BE/3cUM9/01iCKEftMSQ==}
     engines: {node: '>=18'}
     dev: false
 
