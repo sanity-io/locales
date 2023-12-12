@@ -293,19 +293,19 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Granska ändringar',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
-  'default-orderings.caption': undefined, // 'Sort by Caption'
+  'default-orderings.caption': 'Sortera efter bildtext',
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
-  'default-orderings.description': undefined, // 'Sort by Description'
+  'default-orderings.description': 'Sortera efter beskrivning',
   /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
-  'default-orderings.header': undefined, // 'Sort by Header'
+  'default-orderings.header': 'Sortera efter rubrik',
   /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
-  'default-orderings.heading': undefined, // 'Sort by Heading'
+  'default-orderings.heading': 'Sortera efter rubrik',
   /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
-  'default-orderings.label': undefined, // 'Sort by Label'
+  'default-orderings.label': 'Sortera efter etikett',
   /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
-  'default-orderings.name': undefined, // 'Sort by Name'
+  'default-orderings.name': 'Sortera efter namn',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
-  'default-orderings.title': undefined, // 'Sort by Title'
+  'default-orderings.title': 'Sortera efter titel',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
