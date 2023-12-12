@@ -25,7 +25,7 @@ const locale = defineLocale({
     },
   ],
   weekInfo: {
-    firstDay: 7,
+    firstDay: 1,
     minimalDays: 1,
     weekend: [6, 7],
   },
