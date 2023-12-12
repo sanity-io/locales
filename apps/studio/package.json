@@ -39,7 +39,7 @@
     "@sanity/locale-zh-hant": "workspace:*",
     "@sanity/ui": "^1.9.3",
     "@sanity/vision": "3.21.2",
-    "groq": "3.21.2-i18n.15+dc50df99fa",
+    "groq": "3.21.2-telemetry.28",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
