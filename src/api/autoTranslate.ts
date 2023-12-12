@@ -4,7 +4,7 @@ import {promisify} from 'node:util'
 import OpenAI from 'openai'
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
-import type {Resource} from '../types'
+import type {Locale, Resource} from '../types'
 import {getOrderedResources} from '../util/getOrderedResources'
 import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
@@ -197,6 +197,34 @@ export async function pushChanges(): Promise<void> {
   // Start from main branch
   await execGitCommand(['checkout', 'main'])
 
+  // Check if there are _any_ changes (eg across locales)
+  const {stdout: allChanges} = await execGitCommand(['status', '--porcelain'])
+  if (allChanges.trim() === '') {
+    return
+  }
+
+  // Store the current git sha so we can revert to it later
+  const {stdout: sha} = await execGitCommand(['rev-parse', '--short', 'HEAD'])
+  const headSha = sha.trim()
+
+  // Create a branch with _all_ changes and push it, but do not create a PR for it.
+  // This allows us to mass-merge all changes in one go should we _want_ to,
+  // while the _default_ approach would be to wait for
+  for (const locale of locales) {
+    // Check if the locale has changes
+    const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
+    if (changes.trim() !== '') {
+      await addAndCommit(locale)
+    }
+  }
+
+  // Push the "all changes" branch
+  await execGitCommand(['push', 'origin', 'fix/auto/translate', '--force'])
+
+  // Now revert to the original HEAD
+  await execGitCommand(['reset', '--mixed', headSha])
+
+  // Now do individual branches and send PRs
   for (const locale of locales) {
     // Check if the locale has changes
     const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
@@ -208,12 +236,8 @@ export async function pushChanges(): Promise<void> {
     const branchName = `fix/auto/${locale.id}`
     await execGitCommand(['checkout', '-B', branchName])
 
-    // The locale has changes, add the changes to index
-    await execGitCommand(['add', locale.path])
-
-    // Commit the changes
-    const commitMessage = `fix(${locale.id}): automated translation updates`
-    await execGitCommand(['commit', '-m', commitMessage])
+    // The locale has changes, add the changes to index and commit them
+    const commitMessage = await addAndCommit(locale)
 
     // Push the branch
     await execGitCommand(['push', 'origin', branchName, '--force'])
@@ -243,6 +267,17 @@ export async function pushChanges(): Promise<void> {
 
     // Switch back to main branch for next locale
     await execGitCommand(['checkout', 'main'])
+  }
+
+  async function addAndCommit(locale: Locale) {
+    // The locale has changes, add the changes to index
+    await execGitCommand(['add', locale.path])
+
+    // Commit the changes
+    const commitMessage = `fix(${locale.id}): automated translation updates`
+    await execGitCommand(['commit', '-m', commitMessage])
+
+    return commitMessage
   }
 }
 
