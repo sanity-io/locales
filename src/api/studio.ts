@@ -33,11 +33,15 @@ export async function reconcileStudio(): Promise<void> {
     tryHandlePackageJsonMergeConflict,
   ])
 
-  const rootPkgDeps =
-    (await readJsonFile(joinPath(await getRootPath(), 'package.json'), packageJsonSchema))
-      .dependencies || {}
+  const rootPkg = await readJsonFile(
+    joinPath(await getRootPath(), 'package.json'),
+    packageJsonSchema,
+  )
+  const rootPkgDeps = rootPkg.dependencies || {}
+  const rootPkgDevDeps = rootPkg.devDependencies || {}
 
   const dependencies: Record<string, string> = {}
+  const devDependencies: Record<string, string> = pkgJson.devDependencies || {}
 
   // Add all the non-locale packages in existing dependencies
   const existingDeps = pkgJson.dependencies || {}
@@ -60,6 +64,15 @@ export async function reconcileStudio(): Promise<void> {
   }
 
   pkgJson.dependencies = sortDependencies(dependencies)
+  pkgJson.devDependencies = sortDependencies(devDependencies)
+
+  for (const dependency in pkgJson.devDependencies) {
+    if (dependency in rootPkgDevDeps) {
+      // Ensure we're on the same version of sanity packages as the root package.json
+      pkgJson.devDependencies[dependency] = rootPkgDevDeps[dependency]
+    }
+  }
+
   await writeFormattedFile(pkgJsonPath, JSON.stringify(pkgJson, null, 2))
 
   // Add path entries to `tsconfig.json` for the studio, so it can use the source files for locale
