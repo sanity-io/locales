@@ -178,9 +178,9 @@ export default removeUndefinedLocaleResources({
     'คุณอาจไม่สามารถยกเลิกการเผยแพร่ “<DocumentTitle/>” เนื่องจากเอกสารต่อไปนี้อ้างอิงถึงมัน:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  'confirm-dialog.cancel-button.fallback-text': 'ยกเลิก',
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+  'confirm-dialog.confirm-button.fallback-text': 'ยืนยัน',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'ข้อผิดพลาด: {{errorMessage}}',
@@ -217,13 +217,13 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  'menu-items.layout.compact-view': 'มุมมองแบบกระชับ',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  'menu-items.layout.detailed-view': 'มุมมองแบบละเอียด',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  'menu-items.sort-by.created': 'เรียงตามวันที่สร้าง',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
+  'menu-items.sort-by.last-edited': 'เรียงตามการแก้ไขล่าสุด',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'เรียนรู้วิธีการเพิ่มประเภทเอกสาร →',
