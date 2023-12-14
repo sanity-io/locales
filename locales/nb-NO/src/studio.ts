@@ -523,7 +523,7 @@ export default removeUndefinedLocaleResources({
   /** Drag or paste type here */
   'inputs.files.common.placeholder.drag-or-paste-to-upload_file': 'Dra eller lim inn fil her',
   /** Drag or paste image here */
-  'inputs.files.common.placeholder.drag-or-paste-to-upload_image': 'Dra eller lim inn bilde her',
+  'inputs.files.common.placeholder.drag-or-paste-to-upload_image': 'Dra eller lim inn bilde',
   /** Drop to upload file */
   'inputs.files.common.placeholder.drop-to-upload_file': 'Slipp for å laste opp fil',
   /** Drop to upload image */
