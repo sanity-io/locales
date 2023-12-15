@@ -108,6 +108,13 @@ const registry: LocaleRegistry = [
     contributors: [],
   },
   {
+    id: 'ru-KZ',
+    name: 'Русский',
+    englishName: 'Russian (Kazakhstan)',
+    maintainers: ['yenbekbay'],
+    contributors: [],
+  },
+  {
     id: 'sv-SE',
     name: 'Svenska',
     englishName: 'Swedish',
