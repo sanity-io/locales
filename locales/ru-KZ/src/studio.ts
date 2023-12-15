@@ -283,6 +283,21 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Просмотр изменений',
 
+  /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
+  'default-orderings.caption': 'Сортировать по подписи',
+  /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
+  'default-orderings.description': 'Сортировать по описанию',
+  /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
+  'default-orderings.header': 'Сортировать по заголовку',
+  /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
+  'default-orderings.heading': 'Сортировать по заголовку',
+  /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
+  'default-orderings.label': 'Сортировать по метке',
+  /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
+  'default-orderings.name': 'Сортировать по имени',
+  /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
+  'default-orderings.title': 'Сортировать по названию',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     'Значение свойства <code>_key</code> должно быть уникальной строкой.',
