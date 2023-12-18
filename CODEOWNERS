@@ -1,6 +1,9 @@
 # By default, assign the studio developer experience team.
 # Later matching rules will take precedence.
-* @sanity-io/locales-reviewers
+/apps @sanity-io/locales-reviewers
+/locales/registry.ts @sanity-io/locales-reviewers
+/src @sanity-io/locales-reviewers
+/test @sanity-io/locales-reviewers
 
-# Locale-specific owners:
-/locales/nb-NO/ @rexxars
+# Root of the repo
+/* @sanity-io/locales-reviewers
