@@ -15,6 +15,10 @@ pnpm install
 pnpm run build
 ```
 
+## Suggesting improvements
+
+The strings are located in the src folder of each plugin, where the file name represents the "namespace". Send a pull request if you have suggestions for improvements, and feel free to add yourself to the contributors array in locales/registry.ts. If you want to help review new translations, add yourself to the maintainers array instead, see below for more information. After doing your changes, run pnpm run reconcile and add the changes to version control.
+
 ## Maintaining a locale
 
 Want to help maintain a plugin? Awesome! We appreciate your help! To get started can either [request to be added as a maintainer](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&projects=&template=request-maintainer.md&title=Maintainer%3A+LOCALE-ID), or add yourself as one by following these steps:
