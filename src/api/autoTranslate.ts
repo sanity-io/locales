@@ -264,6 +264,8 @@ export async function pushChanges(): Promise<void> {
           '--repo',
           'sanity-io/locales',
           '--fill',
+          '--reviewer',
+          locale.maintainers.join(','),
         ],
         {cwd: rootPath},
       )
