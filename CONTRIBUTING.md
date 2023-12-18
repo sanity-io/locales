@@ -25,7 +25,7 @@ Want to help maintain a plugin? Awesome! We appreciate your help! To get started
 
 1. Follow the [Getting started](#getting-started) instructions
 2. Add yourself to the `maintainers` array in the `locales/registry.ts` file for the language you have in mind.
-3. Run `pnpm run reconcile` - it should update a few files, like `CODEOWNERS` and `package.json` for the given locale.
+3. Run `pnpm run reconcile` - it should update a few files, such as `package.json` for the given locale.
 4. Add the changes to git, commit the changes and push to a fork.
 
 - Preferably the commit message (and PR name) should be something like "chore(<locale-id>): add @<your-github-username> as maintainer".

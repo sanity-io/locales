@@ -21,7 +21,6 @@
   "scripts": {
     "autotranslate": "tsx src/cli/autoTranslate",
     "build": "turbo run build",
-    "build:code-owners": "tsx src/cli/reconcileCodeOwners",
     "build:packages": "tsx src/cli/reconcilePackages",
     "build:studio": "tsx src/cli/reconcileStudio",
     "check": "npm run check:lint && npm run check:types",
