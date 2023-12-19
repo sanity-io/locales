@@ -270,7 +270,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': '審查變更',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': '按 {{title}} 排序',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': '按標題排序',
@@ -374,7 +374,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': '幫助與資源',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': '取消上傳',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': '上傳',
   /** Uploading <FileName/> */
@@ -739,7 +739,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '創建新的',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': '創建新文件…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': '複製',
   /** Label for action that opens the referenced document in a new tab */
@@ -858,9 +858,9 @@ export default removeUndefinedLocaleResources({
   /** Error message for when the source to generate a slug from is missing */
   'inputs.slug.error.missing-source': '來源缺失。檢查架構中的類型{{schemaType}}上的來源',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': '輸入標籤並按 ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': '輸入標籤…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': '轉換為<code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1402,9 +1402,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': '自：未知版本',
 
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_other': '試用期還剩 {{count}} 天',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': '從免費版升級',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': '邀請成員',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1414,9 +1414,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': '管理項目',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block': '不能對空白塊應用 {{name}}',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': '不能對多個塊應用 {{name}}',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': '登出',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
