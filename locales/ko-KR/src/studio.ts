@@ -295,6 +295,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': '변경 사항 검토',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': '더 보기',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': '취소',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': '확인',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': '로딩 중',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': '구성 문제 발견',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}로 정렬',
 
@@ -312,6 +326,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': '이름별 정렬',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '타이틀별 정렬',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': '{{date}}에 편집됨',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': '게시되지 않음',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': '{{date}}에 게시됨',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -424,6 +445,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': '항목 추가...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': '재정렬하려면 드래그하세요',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': '복제',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -580,11 +603,9 @@ export default removeUndefinedLocaleResources({
     '이미지를 크롭하기 위해 사각형을 조정하세요. 항상 보여야 할 영역을 지정하기 위해 원을 조정하세요.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': '오류: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': '이미지 로딩 중…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': '핫스팟 & 크롭',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code>(으)로 변환',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': '현재 값 (<code>{{actualType}}</code>)',
@@ -927,7 +948,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': '태그를 입력하고 ENTER를 누르세요…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': '태그 입력…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': '<code>{{targetType}}</code>(으)로 변환',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description': '<code>_type</code> 속성이 없는 객체 값이 발견되었습니다.',
@@ -984,6 +1005,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '예상치 못한 오류: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': '새로 만들기',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1075,6 +1098,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': '필터 숨기기',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': '필터 보이기',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': '필터 숨기기',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': '필터 보기',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': '검색',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
