@@ -299,7 +299,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Wijzigingen beoordelen',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Sorteer op {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Sorteren op bijschrift',
@@ -407,7 +407,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Hulp en bronnen',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Annuleren',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Uploaden',
   /** Uploading <FileName/> */
@@ -804,7 +804,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Maak nieuw',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Nieuw aanmaken…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Dupliceren',
   /** Label for action that opens the referenced document in a new tab */
@@ -932,9 +932,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'Bron ontbreekt. Controleer bron op type {{schemaType}} in schema',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Voer tag in en druk op ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Voer tag in…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Converteren naar <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1533,10 +1533,10 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Sinds: onbekende versie',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_one': '{{count}} dag over in proefperiode',
+  'user-menu.action.free-trial_other': '{{count}} dagen over in proefperiode',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Upgrade van gratis',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Leden uitnodigen',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1546,9 +1546,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Project beheren',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Kan {{name}} niet toepassen op leeg blok',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Kan {{name}} niet toepassen op meerdere blokken',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Uitloggen',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
