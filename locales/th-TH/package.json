@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-th-th",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": false,
   "description": "Thai / ไทย locale/translation for Sanity Studio",
   "keywords": [

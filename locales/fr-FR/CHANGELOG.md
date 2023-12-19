@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.0](https://github.com/sanity-io/locales/compare/locale-fr-fr-v0.1.1...locale-fr-fr-v1.0.0) (2023-12-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* require sanity v3.22.0 or higher
+
+### Features
+
+* require sanity v3.22.0 or higher ([aba6c8c](https://github.com/sanity-io/locales/commit/aba6c8c3fd4f6e11b193b96a3821420f72ccc47d))
+
+
+### Bug Fixes
+
+* **fr-FR:** automated translation updates ([dd6d54b](https://github.com/sanity-io/locales/commit/dd6d54b8712761534b67ffed570aed9d1353b428))
+
 ## [0.1.1](https://github.com/sanity-io/locales/compare/locale-fr-fr-v0.1.0...locale-fr-fr-v0.1.1) (2023-12-12)
 
 
