@@ -294,6 +294,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Endurskoða breytingar',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': 'Sýna meira',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': 'Hætta við',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': 'Staðfesta',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': 'Hleður',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': 'Fundin stillingarvandamál',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Raða eftir {{title}}',
 
@@ -311,6 +325,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'Raða eftir Nafni',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Raða eftir Titli',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': 'Breytt {{date}}',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': 'Óbirt',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': 'Birt {{date}}',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -423,6 +444,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Bæta við atriði...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': 'Dragðu til að raða',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Tvöfalda',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -577,11 +600,9 @@ export default removeUndefinedLocaleResources({
     'Stilltu ferninginn til að skera myndina. Stilltu hringinn til að tilgreina svæðið sem ætti alltaf að vera sýnilegt.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Villa: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'Hleð inn mynd…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Breyta í <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'Núverandi gildi (<code>{{actualType}}</code>)',
@@ -924,7 +945,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': 'Sláðu inn merki og ýttu á ENTER…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'Sláðu inn merki…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'Breyta í <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description': 'Mætti á hlutgildi án <code>_type</code> eignar.',
@@ -981,6 +1002,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Óvænt villa: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': 'Búa til',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1065,6 +1088,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'Fela síur',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Sýna síur',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': 'Fela síur',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': 'Sýna síur',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': 'Leita',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
