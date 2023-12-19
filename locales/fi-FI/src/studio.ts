@@ -294,7 +294,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Tarkista muutokset',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Lajittele {{title}} mukaan',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Lajittele kuvatekstin mukaan',
@@ -402,7 +402,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Apua ja resursseja',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Peruuta',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Lataa',
   /** Uploading <FileName/> */
@@ -796,7 +796,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Luo uusi',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Luo uusi…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Kopioi',
   /** Label for action that opens the referenced document in a new tab */
@@ -921,9 +921,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'Lähde puuttuu. Tarkista lähde tyypille {{schemaType}} skeemassa',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Syötä tagi ja paina ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Syötä tagi…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Muunna <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1519,10 +1519,10 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Alkaen: tuntematon versio',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_one': '{{count}} päivä jäljellä kokeiluajassa',
+  'user-menu.action.free-trial_other': '{{count}} päivää jäljellä kokeiluajassa',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Päivitä ilmaisesta',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Kutsu jäseniä',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1532,9 +1532,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Hallinnoi projektia',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Ei voi soveltaa {{name}} tyhjään lohkoon',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Ei voi soveltaa {{name}} useisiin lohkoihin',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Kirjaudu ulos',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
