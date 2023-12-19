@@ -297,6 +297,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': '変更をレビュー',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': 'もっと見る',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': 'キャンセル',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': '確認',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': '読み込み中',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': '設定の問題を発見',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}で並べ替え',
 
@@ -314,6 +328,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': '名前で並べ替え',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'タイトルで並べ替え',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': '{{date}}に編集されました',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': '未公開',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': '{{date}}に公開されました',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -426,6 +447,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'アイテムを追加…',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': 'ドラッグして順序を変更',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': '複製',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -585,11 +608,9 @@ export default removeUndefinedLocaleResources({
     '画像をクロップするために四角形を調整します。常に表示されるべきエリアを指定するために円を調整します。',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'エラー: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': '画像を読み込み中…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'ホットスポット & クロップ',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code>に変換',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': '現在の値(<code>{{actualType}}</code>)',
@@ -934,7 +955,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': 'タグを入力してENTERを押してください…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'タグを入力…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': '<code>{{targetType}}</code>に変換',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
@@ -992,6 +1013,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '予期せぬエラー: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': '新規作成',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1083,6 +1106,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'フィルターを隠す',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'フィルターを表示',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': 'フィルターを隠す',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': 'フィルターを表示',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': '検索',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
