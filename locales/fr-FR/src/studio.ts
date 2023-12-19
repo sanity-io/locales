@@ -298,6 +298,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Réviser les changements',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': 'Afficher plus',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': 'Annuler',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': 'Confirmer',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': 'Chargement',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': 'Problèmes de configuration trouvés',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Trier par {{title}}',
 
@@ -315,6 +329,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'Trier par Nom',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Trier par Titre',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': 'Édité {{date}}',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': 'Non publié',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': 'Publié {{date}}',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -427,6 +448,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Ajouter un élément...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': 'Glisser pour réorganiser',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Dupliquer',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -588,11 +611,9 @@ export default removeUndefinedLocaleResources({
     'Ajustez le rectangle pour recadrer l’image. Ajustez le cercle pour spécifier la zone qui devrait toujours être visible.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Erreur : {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'Chargement de l’image…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Convertir en <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'La valeur actuelle (<code>{{actualType}}</code>)',
@@ -937,7 +958,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': 'Entrez un tag et appuyez sur ENTRÉE…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'Entrez un tag…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'Convertir en <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
@@ -995,6 +1016,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Erreur inattendue : {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': 'Créer',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1086,6 +1109,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'Masquer les filtres',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Afficher les filtres',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': 'Masquer les filtres',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': 'Afficher les filtres',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': 'Rechercher',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
