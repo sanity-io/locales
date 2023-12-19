@@ -293,7 +293,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Granska ändringar',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Sortera efter {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Sortera efter bildtext',
@@ -401,7 +401,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Hjälp och resurser',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Avbryt',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Ladda upp',
   /** Uploading <FileName/> */
@@ -796,7 +796,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Skapa ny',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Skapa ny…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Duplicera',
   /** Label for action that opens the referenced document in a new tab */
@@ -921,9 +921,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'Källan saknas. Kontrollera källan på typ {{schemaType}} i schemat',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Ange tagg och tryck på ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Ange tagg…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Konvertera till <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1519,10 +1519,10 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Sedan: okänd version',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_one': '{{count}} dag kvar av provperioden',
+  'user-menu.action.free-trial_other': '{{count}} dagar kvar av provperioden',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Uppgradera från gratis',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Bjud in medlemmar',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1532,9 +1532,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Hantera projekt',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Kan inte tillämpa {{name}} på tomt block',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Kan inte tillämpa {{name}} på flera block',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Logga ut',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
