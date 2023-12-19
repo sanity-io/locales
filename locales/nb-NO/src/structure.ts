@@ -206,6 +206,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.confirm-button.fallback-text': 'Bekreft',
 
+  /** For the default structure definition, the title for the "Content" pane */
+  'default-definition.content-title': undefined, // 'Content'
+
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Feil: {{errorMessage}}',
   /** The text shown if the preview value for a document is non-existent or empty */
@@ -240,6 +243,13 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message-tooltip.loading-text': 'Laster…',
 
   /** --- Menu items --- */
+  /** The menu item group title to use for the Action menu items */
+  'menu-item-groups.actions-group': undefined, // 'Actions'
+  /** The menu item group title to use for the Layout menu items */
+  'menu-item-groups.layout-group': undefined, // 'Layout'
+  /** The menu item group title to use for the Sort menu items */
+  'menu-item-groups.sorting-group': undefined, // 'Sort'
+
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': 'Kompakt visning',
   /** The menu item title to use the detailed view */
@@ -341,6 +351,10 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Dette dokumentet eksisterer ikke, og ingen skjematype ble spesifisert for det.',
+  /** Default message shown while resolving the structure definition for an asynchronous node */
+  'panes.resolving.default-message': undefined, // 'Loading…'
+  /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
+  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     'Strukturelement mangler påkrevd <Code>type</Code>-egenskap.',

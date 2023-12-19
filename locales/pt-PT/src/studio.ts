@@ -299,6 +299,9 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Revisar alterações',
 
+  /** The fallback title for an ordering menu item if no localized titles are provided. */
+  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Ordenar por Legenda',
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
@@ -404,6 +407,8 @@ export default removeUndefinedLocaleResources({
   /** Title for help and resources menus */
   'help-resources.title': 'Ajuda e recursos',
 
+  /** Text for button to cancel an ongoing upload */
+  'input.files.common.cancel-upload': undefined, // 'Cancel'
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Carregar',
   /** Uploading <FileName/> */
@@ -793,12 +798,12 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citação',
-  /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action-create-new-document-select': 'Criar novo…',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Limpar',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Criar novo',
+  /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
+  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Duplicar',
   /** Label for action that opens the referenced document in a new tab */
@@ -924,6 +929,10 @@ export default removeUndefinedLocaleResources({
   /** Error message for when the source to generate a slug from is missing */
   'inputs.slug.error.missing-source':
     'Fonte ausente. Verifique a fonte no tipo {{schemaType}} no esquema',
+  /** Placeholder for an empty tag input */
+  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  /** Placeholder for an empty tag input on touch devices */
+  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Converter para <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1533,6 +1542,11 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Desde: versão desconhecida',
 
+  /** Label for button showing the free trial days left */
+  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
+  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  /** Label for the button showed after trial ended */
+  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Convidar membros',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1541,6 +1555,10 @@ export default removeUndefinedLocaleResources({
   'user-menu.action.manage-project': 'Gerenciar projeto',
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Gerenciar projeto',
+  /** Tooltip helper text when portable text annotation is disabled for empty block*/
+  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Sair',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
