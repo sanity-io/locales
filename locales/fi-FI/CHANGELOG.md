@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.0.0...locale-fi-fi-v1.0.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* **fi-FI:** automated translation updates ([1ae6525](https://github.com/sanity-io/locales/commit/1ae65259a52c7fe726959294cbe6c18fbec80428))
+
 ## [1.0.0](https://github.com/sanity-io/locales/compare/locale-fi-fi-v0.1.1...locale-fi-fi-v1.0.0) (2023-12-19)
 
 

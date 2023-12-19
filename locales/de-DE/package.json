@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-de-de",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "German / Deutsch locale/translation for Sanity Studio",
   "keywords": [

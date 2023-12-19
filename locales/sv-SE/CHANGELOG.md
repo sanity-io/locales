@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.0.0...locale-sv-se-v1.0.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* **sv-SE:** automated translation updates ([2e035ed](https://github.com/sanity-io/locales/commit/2e035ed77dcbf934e1c995d84aac55d3efa00cfc))
+
 ## [1.0.0](https://github.com/sanity-io/locales/compare/locale-sv-se-v0.1.1...locale-sv-se-v1.0.0) (2023-12-19)
 
 
