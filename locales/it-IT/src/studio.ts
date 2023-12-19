@@ -300,6 +300,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Rivedi modifiche',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': 'Mostra altro',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': 'Annulla',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': 'Conferma',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': 'Caricamento',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': 'Trovati problemi di configurazione',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Ordina per {{title}}',
 
@@ -317,6 +331,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'Ordina per Nome',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Ordina per Titolo',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': 'Modificato il {{date}}',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': 'Non pubblicato',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': 'Pubblicato il {{date}}',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -429,6 +450,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Aggiungi elemento...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': 'Trascina per riordinare',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Duplica',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -586,11 +609,9 @@ export default removeUndefinedLocaleResources({
     'Regola il rettangolo per ritagliare l’immagine. Regola il cerchio per specificare l’area che dovrebbe essere sempre visibile.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Errore: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'Caricamento immagine…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Converti in <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'Il valore attuale (<code>{{actualType}}</code>)',
@@ -934,7 +955,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': 'Inserisci tag e premi INVIO…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'Inserisci tag…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'Converti in <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
@@ -992,6 +1013,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Errore imprevisto: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': 'Crea',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1082,6 +1105,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'Nascondi filtri',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Mostra filtri',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': 'Nascondi filtri',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': 'Mostra filtri',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': 'Cerca',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
