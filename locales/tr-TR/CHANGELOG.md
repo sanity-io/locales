@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.0](https://github.com/sanity-io/locales/compare/locale-tr-tr-v0.1.1...locale-tr-tr-v1.0.0) (2023-12-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* require sanity v3.22.0 or higher
+
+### Features
+
+* require sanity v3.22.0 or higher ([aba6c8c](https://github.com/sanity-io/locales/commit/aba6c8c3fd4f6e11b193b96a3821420f72ccc47d))
+
+
+### Bug Fixes
+
+* **tr-TR:** automated translation updates ([e4d06ba](https://github.com/sanity-io/locales/commit/e4d06baf5dee91a83474fad3cc7ddb777babc1e4))
+
 ## [0.1.1](https://github.com/sanity-io/locales/compare/locale-tr-tr-v0.1.0...locale-tr-tr-v0.1.1) (2023-12-12)
 
 
