@@ -174,7 +174,7 @@ export default removeUndefinedLocaleResources({
   'confirm-dialog.confirm-button.fallback-text': '确认',
 
   /** For the default structure definition, the title for the "Content" pane */
-  'default-definition.content-title': undefined, // 'Content'
+  'default-definition.content-title': '内容',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': '错误：{{errorMessage}}',
@@ -211,11 +211,11 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item group title to use for the Action menu items */
-  'menu-item-groups.actions-group': undefined, // 'Actions'
+  'menu-item-groups.actions-group': '操作',
   /** The menu item group title to use for the Layout menu items */
-  'menu-item-groups.layout-group': undefined, // 'Layout'
+  'menu-item-groups.layout-group': '布局',
   /** The menu item group title to use for the Sort menu items */
-  'menu-item-groups.sorting-group': undefined, // 'Sort'
+  'menu-item-groups.sorting-group': '排序',
 
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': '紧凑视图',
@@ -318,9 +318,9 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     '此文档不存在，且未为其指定模式类型。',
   /** Default message shown while resolving the structure definition for an asynchronous node */
-  'panes.resolving.default-message': undefined, // 'Loading…'
+  'panes.resolving.default-message': '加载中…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
-  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
+  'panes.resolving.slow-resolve-message': '仍在加载…',
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text': '结构项缺少必需的<Code>type</Code>属性。',
   /** The title of the unknown pane */
