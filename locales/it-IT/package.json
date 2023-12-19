@@ -20,7 +20,12 @@
     "directory": "locales/it-IT"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "valse",
+      "url": "https://github.com/valse"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
