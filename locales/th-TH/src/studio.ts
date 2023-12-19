@@ -273,6 +273,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'ตรวจสอบการเปลี่ยนแปลง',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': 'แสดงเพิ่มเติม',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': 'ยกเลิก',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': 'ยืนยัน',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': 'กำลังโหลด',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': 'พบปัญหาการตั้งค่า',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'เรียงตาม {{title}}',
 
@@ -290,6 +304,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'เรียงตามชื่อ',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'เรียงตามชื่อเรื่อง',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': 'แก้ไข {{date}}',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': 'ไม่ได้เผยแพร่',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': 'เผยแพร่ {{date}}',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -398,6 +419,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'เพิ่มรายการ...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': 'ลากเพื่อจัดเรียงใหม่',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'ทำซ้ำ',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -537,11 +560,9 @@ export default removeUndefinedLocaleResources({
     'ปรับสี่เหลี่ยมเพื่อตัดภาพ ปรับวงกลมเพื่อระบุพื้นที่ที่ควรจะแสดงเสมอ',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'ข้อผิดพลาด: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'กำลังโหลดรูปภาพ…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'จุดศูนย์กลาง & ตัดภาพ',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'แปลงเป็น <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'ค่าปัจจุบัน (<code>{{actualType}}</code>)',
@@ -877,7 +898,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': 'ใส่แท็กและกด ENTER…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'ใส่แท็ก…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'แปลงเป็น <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description': 'พบค่าของวัตถุที่ไม่มีคุณสมบัติ <code>_type</code>',
@@ -933,6 +954,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'เกิดข้อผิดพลาดที่ไม่คาดคิด: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': 'สร้าง',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1017,6 +1040,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'ซ่อนตัวกรอง',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'แสดงตัวกรอง',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': 'ซ่อนตัวกรอง',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': 'แสดงตัวกรอง',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': 'ค้นหา',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
