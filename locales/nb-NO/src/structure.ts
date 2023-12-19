@@ -246,7 +246,7 @@ export default removeUndefinedLocaleResources({
   /** The menu item group title to use for the Action menu items */
   'menu-item-groups.actions-group': 'Handlinger',
   /** The menu item group title to use for the Layout menu items */
-  'menu-item-groups.layout-group': 'Oppsett',
+  'menu-item-groups.layout-group': 'Visning',
   /** The menu item group title to use for the Sort menu items */
   'menu-item-groups.sorting-group': 'Sortering',
 
