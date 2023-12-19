@@ -297,7 +297,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Se endringer',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Sorter etter {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Sorter etter bildetekst',
@@ -405,7 +405,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Hjelp og ressurser',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Avbryt',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Last opp',
   /** Uploading <FileName/> */
@@ -801,7 +801,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Opprett ny',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Opprett ny…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Dupliser',
   /** Label for action that opens the referenced document in a new tab */
@@ -924,9 +924,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'Kilde mangler. Sjekk `source` på skjematypen «{{schemaType}}»',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Skriv inn tagg og trykk ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Skriv inn tagg…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Konverter til <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1533,10 +1533,10 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Siden: ukjent versjon',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_one': '{{count}} dag igjen av prøveperioden',
+  'user-menu.action.free-trial_other': '{{count}} dager igjen av prøveperioden',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Oppgrader fra gratis',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Inviter medlemmer',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1546,9 +1546,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Administrer prosjekt',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Kan ikke bruke {{name}} på en tom blokk',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Kan ikke bruke {{name}} på flere blokker',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Logg ut',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
