@@ -210,7 +210,7 @@ export default removeUndefinedLocaleResources({
   'confirm-dialog.confirm-button.fallback-text': 'Stadfest',
 
   /** For the default structure definition, the title for the "Content" pane */
-  'default-definition.content-title': undefined, // 'Content'
+  'default-definition.content-title': 'Innhald',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Feil: {{errorMessage}}',
@@ -247,11 +247,11 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item group title to use for the Action menu items */
-  'menu-item-groups.actions-group': undefined, // 'Actions'
+  'menu-item-groups.actions-group': 'Handlingar',
   /** The menu item group title to use for the Layout menu items */
-  'menu-item-groups.layout-group': undefined, // 'Layout'
+  'menu-item-groups.layout-group': 'Oppsett',
   /** The menu item group title to use for the Sort menu items */
-  'menu-item-groups.sorting-group': undefined, // 'Sort'
+  'menu-item-groups.sorting-group': 'Sortering',
 
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': 'Kompakt visning',
@@ -355,9 +355,9 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Dette dokumentet eksisterer ikkje, og ingen skjematype var spesifisert for det.',
   /** Default message shown while resolving the structure definition for an asynchronous node */
-  'panes.resolving.default-message': undefined, // 'Loading…'
+  'panes.resolving.default-message': 'Lastar…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
-  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
+  'panes.resolving.slow-resolve-message': 'Lastar framleis…',
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     'Strukturelement manglar påkrevd <Code>type</Code>-eigenskap.',
