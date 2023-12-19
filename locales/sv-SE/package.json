@@ -48,7 +48,7 @@
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
-    "sanity": "^3.21.3"
+    "sanity": "^3.22.0"
   },
   "publishConfig": {
     "access": "public"

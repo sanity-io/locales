@@ -197,6 +197,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.confirm-button.fallback-text': '확인',
 
+  /** For the default structure definition, the title for the "Content" pane */
+  'default-definition.content-title': undefined, // 'Content'
+
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': '오류: {{errorMessage}}',
   /** The text shown if the preview value for a document is non-existent or empty */
@@ -231,6 +234,13 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message-tooltip.loading-text': '로딩 중…',
 
   /** --- Menu items --- */
+  /** The menu item group title to use for the Action menu items */
+  'menu-item-groups.actions-group': undefined, // 'Actions'
+  /** The menu item group title to use for the Layout menu items */
+  'menu-item-groups.layout-group': undefined, // 'Layout'
+  /** The menu item group title to use for the Sort menu items */
+  'menu-item-groups.sorting-group': undefined, // 'Sort'
+
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': '간략한 보기',
   /** The menu item title to use the detailed view */
@@ -333,6 +343,10 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     '이 문서는 존재하지 않으며, 이에 대한 스키마 유형이 지정되지 않았습니다.',
+  /** Default message shown while resolving the structure definition for an asynchronous node */
+  'panes.resolving.default-message': undefined, // 'Loading…'
+  /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
+  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     '구조 항목에 필요한 <Code>type</Code> 속성이 누락되었습니다.',
