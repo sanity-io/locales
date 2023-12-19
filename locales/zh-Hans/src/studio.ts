@@ -268,6 +268,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': '审查更改',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': undefined, // 'Show more'
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': undefined, // 'Cancel'
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': undefined, // 'Confirm'
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': undefined, // 'Loading'
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': undefined, // 'Found configuration issues'
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '按 {{title}} 排序',
 
@@ -285,6 +299,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': '按名称排序',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '按标题排序',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': undefined, // 'Edited {{date}}'
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': undefined, // 'Not published'
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': undefined, // 'Published {{date}}'
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -393,6 +414,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': '添加项...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': undefined, // 'Drag to re-order'
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': '复制',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -529,11 +552,9 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.description': '调整矩形以裁剪图片。调整圆圈以指定应始终可见的区域。',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': '错误：{{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': '正在加载图片…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': '热点 & 裁剪',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '转换为<code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': '当前值（<code>{{actualType}}</code>）',
@@ -859,7 +880,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': '输入标签并按 ENTER…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': '输入标签…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': '转换为<code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description': '遇到一个没有<code>_type</code>属性的对象值。',
@@ -914,6 +935,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外错误：{{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': undefined, // 'Create'
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -998,6 +1021,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': '隐藏过滤器',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': '显示过滤器',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': undefined, // 'Hide filters'
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': undefined, // 'Show filters'
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': undefined, // 'Search'
   /**
    * A list of provided types (use `list` formatter preferably).
    */

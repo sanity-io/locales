@@ -299,6 +299,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Revisar alterações',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': undefined, // 'Show more'
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': undefined, // 'Cancel'
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': undefined, // 'Confirm'
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': undefined, // 'Loading'
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': undefined, // 'Found configuration issues'
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Ordenar por {{title}}',
 
@@ -316,6 +330,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'Ordenar por Nome',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Ordenar por Título',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': undefined, // 'Edited {{date}}'
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': undefined, // 'Not published'
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': undefined, // 'Published {{date}}'
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -428,6 +449,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Adicionar item...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': undefined, // 'Drag to re-order'
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Duplicar',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -583,11 +606,9 @@ export default removeUndefinedLocaleResources({
     'Ajuste o retângulo para recortar a imagem. Ajuste o círculo para especificar a área que sempre deve estar visível.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Erro: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'Carregando imagem…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Converter para <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'O valor atual (<code>{{actualType}}</code>)',
@@ -933,7 +954,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': 'Digite a tag e pressione ENTER…',
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'Digite a tag…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'Converter para <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
@@ -991,6 +1012,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Erro inesperado: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': undefined, // 'Create'
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1083,6 +1106,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'Ocultar filtros',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Mostrar filtros',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': undefined, // 'Hide filters'
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': undefined, // 'Show filters'
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': undefined, // 'Search'
   /**
    * A list of provided types (use `list` formatter preferably).
    */

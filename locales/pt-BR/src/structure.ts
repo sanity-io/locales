@@ -104,6 +104,8 @@ export default removeUndefinedLocaleResources({
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Abrir ações do documento',
+  /** The action menu button tooltip */
+  'buttons.action-menu-button.tooltip': undefined, // 'Document actions'
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dividir painel à direita',
   /** The tool tip for the split pane button on the document panel header */
@@ -267,10 +269,14 @@ export default removeUndefinedLocaleResources({
   /** The title of the no document type screen */
   'no-document-types-screen.title': 'Nenhum tipo de documento',
 
+  /** Text shown on back button visible on smaller breakpoints */
+  'pane-header.back-button.text': undefined, // 'Back'
   /** tooltip text (via `title` attribute) for the menu button */
   'pane-header.context-menu-button.tooltip': 'Mostrar menu',
   /** Appears in a document list pane header if there are more than one option for create. This is the label for that menu */
   'pane-header.create-menu.label': 'Criar',
+  /** Tooltip displayed on the create new button in document lists */
+  'pane-header.create-new-button.tooltip': undefined, // 'Create new document'
   /** The `aria-label` for the disabled button in the pane header if create permissions are granted */
   'pane-header.disabled-created-button.aria-label': 'Permissões insuficientes',
 
