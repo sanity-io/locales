@@ -301,17 +301,17 @@ export default removeUndefinedLocaleResources({
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
-  'common.context-menu-button.tooltip': undefined, // 'Show more'
+  'common.context-menu-button.tooltip': 'Mostrar mais',
   /** Default text for dialog cancel button */
-  'common.dialog.cancel-button.text': undefined, // 'Cancel'
+  'common.dialog.cancel-button.text': 'Cancelar',
   /** Default text for dialog confirm button */
-  'common.dialog.confirm-button.text': undefined, // 'Confirm'
+  'common.dialog.confirm-button.text': 'Confirmar',
   /** Default text in shared loader text / spinner lockup */
-  'common.loading': undefined, // 'Loading'
+  'common.loading': 'Carregando',
 
   /** --- Configuration issues --- */
   /** Tooltip displayed on configuration issues button */
-  'configuration-issues.button.tooltip': undefined, // 'Found configuration issues'
+  'configuration-issues.button.tooltip': 'Foram encontrados problemas de configuração',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Ordenar por {{title}}',
@@ -332,11 +332,11 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Ordenar por Título',
 
   /** Label to show in the document footer indicating the last edited date of the document */
-  'document-status.edited': undefined, // 'Edited {{date}}'
+  'document-status.edited': 'Editado {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
-  'document-status.not-published': undefined, // 'Not published'
+  'document-status.not-published': 'Não publicado',
   /** Label to show in the document footer indicating the published date of the document */
-  'document-status.published': undefined, // 'Published {{date}}'
+  'document-status.published': 'Publicado {{date}}',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -450,7 +450,7 @@ export default removeUndefinedLocaleResources({
    */
   'inputs.array.action.add-item-select-type': 'Adicionar item...',
   /** Array drag handle button tooltip */
-  'inputs.array.action.drag.tooltip': undefined, // 'Drag to re-order'
+  'inputs.array.action.drag.tooltip': 'Arraste para reordenar',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Duplicar',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -1015,7 +1015,7 @@ export default removeUndefinedLocaleResources({
   'member-field-error.unexpected-error': 'Erro inesperado: {{error}}',
 
   /** Button label for "Create new document" button */
-  'new-document.button': undefined, // 'Create'
+  'new-document.button': 'Criar',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1109,11 +1109,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Mostrar filtros',
   /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
-  'search.action.toggle-filters-label_hide': undefined, // 'Hide filters'
+  'search.action.toggle-filters-label_hide': 'Ocultar filtros',
   /** Label for when the search is full screen (on narrow screens) and you want to show filters */
-  'search.action.toggle-filters-label_show': undefined, // 'Show filters'
+  'search.action.toggle-filters-label_show': 'Mostrar filtros',
   /** Tooltip text for the global search button */
-  'search.button.tooltip': undefined, // 'Search'
+  'search.button.tooltip': 'Pesquisar',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
