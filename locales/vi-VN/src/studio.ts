@@ -279,7 +279,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Xem lại các thay đổi',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Sắp xếp theo {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Sắp xếp theo Chú thích',
@@ -383,7 +383,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Trợ giúp và tài nguyên',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Hủy',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Tải lên',
   /** Uploading <FileName/> */
@@ -754,7 +754,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Tạo mới',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Tạo mới…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Nhân bản',
   /** Label for action that opens the referenced document in a new tab */
@@ -878,9 +878,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'Nguồn bị thiếu. Kiểm tra nguồn trên loại {{schemaType}} trong sơ đồ',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Nhập thẻ và nhấn ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Nhập thẻ…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Chuyển đổi thành <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1434,9 +1434,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Từ: phiên bản không xác định',
 
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_other': 'Còn {{count}} ngày thử nghiệm',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Nâng cấp từ miễn phí',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Mời thành viên',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1446,9 +1446,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Quản lý dự án',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Không thể áp dụng {{name}} cho khối trống',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Không thể áp dụng {{name}} cho nhiều khối',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Đăng xuất',
   /** Title for appearance section for the current studio (dark / light / system scheme) */

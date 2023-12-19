@@ -186,7 +186,7 @@ export default removeUndefinedLocaleResources({
   'confirm-dialog.confirm-button.fallback-text': 'Xác nhận',
 
   /** For the default structure definition, the title for the "Content" pane */
-  'default-definition.content-title': undefined, // 'Content'
+  'default-definition.content-title': 'Nội dung',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Lỗi: {{errorMessage}}',
@@ -223,11 +223,11 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item group title to use for the Action menu items */
-  'menu-item-groups.actions-group': undefined, // 'Actions'
+  'menu-item-groups.actions-group': 'Hành động',
   /** The menu item group title to use for the Layout menu items */
-  'menu-item-groups.layout-group': undefined, // 'Layout'
+  'menu-item-groups.layout-group': 'Bố cục',
   /** The menu item group title to use for the Sort menu items */
-  'menu-item-groups.sorting-group': undefined, // 'Sort'
+  'menu-item-groups.sorting-group': 'Sắp xếp',
 
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': 'Chế độ xem gọn gàng',
@@ -333,9 +333,9 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Tài liệu này không tồn tại, và không có loại schema nào được chỉ định cho nó.',
   /** Default message shown while resolving the structure definition for an asynchronous node */
-  'panes.resolving.default-message': undefined, // 'Loading…'
+  'panes.resolving.default-message': 'Đang tải…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
-  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
+  'panes.resolving.slow-resolve-message': 'Vẫn đang tải…',
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     'Mục cấu trúc thiếu thuộc tính <Code>type</Code> bắt buộc.',
