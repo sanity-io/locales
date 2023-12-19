@@ -295,7 +295,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Endurskoða breytingar',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Raða eftir {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Raða eftir Yfirskrift',
@@ -403,7 +403,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Hjálp og auðlindir',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Hætta við',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Hlaða upp',
   /** Uploading <FileName/> */
@@ -797,7 +797,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Búa til nýtt',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Búa til nýtt…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Tvöfalda',
   /** Label for action that opens the referenced document in a new tab */
@@ -921,9 +921,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'Uppruni vantar. Athugaðu uppruna á tegund {{schemaType}} í skema',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Sláðu inn merki og ýttu á ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Sláðu inn merki…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Breyta í <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1518,10 +1518,10 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Síðan: óþekkt útgáfa',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_one': '{{count}} dagur eftir af prufutíma',
+  'user-menu.action.free-trial_other': '{{count}} dagar eftir af prufutíma',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Uppfærðu frá ókeypis',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Bjóða meðlimum',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1531,9 +1531,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Stjórna verkefni',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Get ekki beitt {{name}} á tóman blokk',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Get ekki beitt {{name}} á marga blokka',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Skrá út',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
