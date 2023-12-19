@@ -298,7 +298,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': '変更をレビュー',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': '{{title}}で並べ替え',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'キャプションで並べ替え',
@@ -406,7 +406,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'ヘルプとリソース',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'アップロードをキャンセル',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'アップロード',
   /** Uploading <FileName/> */
@@ -806,7 +806,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '新規作成',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': '新規作成…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': '複製',
   /** Label for action that opens the referenced document in a new tab */
@@ -931,9 +931,9 @@ export default removeUndefinedLocaleResources({
   'inputs.slug.error.missing-source':
     'ソースがありません。スキーマの{{schemaType}}タイプでソースを確認してください',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'タグを入力してENTERを押してください…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'タグを入力…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': '<code>{{targetType}}</code>に変換',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1540,9 +1540,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'この時点から: 不明なバージョン',
 
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_other': 'トライアル期間があと{{count}}日',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': '無料からアップグレード',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'メンバーを招待する',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1552,9 +1552,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'プロジェクトを管理する',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    '空のブロックに{{name}}を適用できません',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    '複数のブロックに{{name}}を適用できません',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'サインアウト',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
