@@ -103,6 +103,8 @@ export default removeUndefinedLocaleResources({
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Belge işlemlerini aç',
+  /** The action menu button tooltip */
+  'buttons.action-menu-button.tooltip': 'Belge işlemleri',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Sağa bölünmüş paneli aç',
   /** The tool tip for the split pane button on the document panel header */
@@ -263,10 +265,14 @@ export default removeUndefinedLocaleResources({
   /** The title of the no document type screen */
   'no-document-types-screen.title': 'Belge türü yok',
 
+  /** Text shown on back button visible on smaller breakpoints */
+  'pane-header.back-button.text': 'Geri',
   /** tooltip text (via `title` attribute) for the menu button */
   'pane-header.context-menu-button.tooltip': 'Menüyü göster',
   /** Appears in a document list pane header if there are more than one option for create. This is the label for that menu */
   'pane-header.create-menu.label': 'Oluştur',
+  /** Tooltip displayed on the create new button in document lists */
+  'pane-header.create-new-button.tooltip': 'Yeni belge oluştur',
   /** The `aria-label` for the disabled button in the pane header if create permissions are granted */
   'pane-header.disabled-created-button.aria-label': 'Yetersiz izinler',
 

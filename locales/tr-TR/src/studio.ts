@@ -294,6 +294,20 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Değişiklikleri İncele',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': 'Daha fazla göster',
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': 'İptal',
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': 'Onayla',
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': 'Yükleniyor',
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': 'Yapılandırma sorunları bulundu',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sırala {{title}}',
 
@@ -311,6 +325,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'İsme Göre Sırala',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Başlığa Göre Sırala',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': '{{date}} tarihinde düzenlendi',
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': 'Yayınlanmadı',
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': '{{date}} tarihinde yayınlandı',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -423,6 +444,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Öğe ekle...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': 'Sıralamak için sürükleyin',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Çoğalt',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -578,11 +601,9 @@ export default removeUndefinedLocaleResources({
     'Dikdörtgeni resmi kırpmak için ayarlayın. Daima görünür olması gereken alanı belirtmek için daireyi ayarlayın.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Hata: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'Resim yükleniyor…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code> dönüştür',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'Mevcut değer (<code>{{actualType}}</code>)',
@@ -926,7 +947,7 @@ export default removeUndefinedLocaleResources({
   'inputs.tags.placeholder': "Etiket girin ve ENTER'a basın…",
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'Etiket girin…',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': '<code>{{targetType}}</code> olarak dönüştür',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
@@ -982,6 +1003,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Beklenmeyen hata: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': 'Oluştur',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1067,6 +1090,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'Filtreleri gizle',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Filtreleri göster',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': 'Filtreleri gizle',
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': 'Filtreleri göster',
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': 'Ara',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
