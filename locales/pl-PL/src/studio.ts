@@ -283,7 +283,7 @@ export default removeUndefinedLocaleResources({
   'changes.title': 'Przejrzyj zmiany',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Sortuj według {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Sortuj według Podpisu',
@@ -389,7 +389,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.title': 'Pomoc i zasoby',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Anuluj',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Prześlij',
   /** Uploading <FileName/> */
@@ -765,7 +765,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Utwórz nowy',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create new…'
+  'inputs.reference.action.create-new-document-select': 'Utwórz nowy…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Duplikuj',
   /** Label for action that opens the referenced document in a new tab */
@@ -888,9 +888,9 @@ export default removeUndefinedLocaleResources({
   /** Error message for when the source to generate a slug from is missing */
   'inputs.slug.error.missing-source': 'Brak źródła. Sprawdź źródło typu {{schemaType}} w schemacie',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Wpisz tag i naciśnij ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Wpisz tag…',
   /** Convert to <code>`{{targetType}}`</code> */
   'inputs.untyped-value.convert-button.text': 'Przekształć na <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
@@ -1476,9 +1476,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Od: nieznana wersja',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
+  'user-menu.action.free-trial_one': '{{count}} dzień pozostały w okresie próbnym',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Przejdź z wersji darmowej',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Zaproś członków',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1488,9 +1488,11 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Zarządzaj projektem',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Nie można zastosować {{name}} do pustego bloku',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Nie można zastosować {{name}} do wielu bloków',
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Wyloguj się',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
