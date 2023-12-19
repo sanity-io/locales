@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/sanity-io/locales/compare/locale-zh-hant-v2.0.0...locale-zh-hant-v2.0.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* **zh-Hant:** automated translation updates ([b8eafcb](https://github.com/sanity-io/locales/commit/b8eafcbcec78d265aff32595722c4a7ee817c199))
+
 ## [2.0.0](https://github.com/sanity-io/locales/compare/locale-zh-hant-v1.0.1...locale-zh-hant-v2.0.0) (2023-12-19)
 
 

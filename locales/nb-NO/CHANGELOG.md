@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.0.0...locale-nb-no-v1.0.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* **nb-NO:** automated translation updates ([4c75c48](https://github.com/sanity-io/locales/commit/4c75c48263bbea2bc1985e4ce70a765fed5e1379))
+* **nb-NO:** use `Visning` instead of `Oppsett` for layout group ([cce3c84](https://github.com/sanity-io/locales/commit/cce3c848f40428d1395fb4667b072c69796432e1))
+
 ## [1.0.0](https://github.com/sanity-io/locales/compare/locale-nb-no-v0.1.1...locale-nb-no-v1.0.0) (2023-12-19)
 
 
