@@ -183,7 +183,7 @@ export default removeUndefinedLocaleResources({
   'confirm-dialog.confirm-button.fallback-text': 'ยืนยัน',
 
   /** For the default structure definition, the title for the "Content" pane */
-  'default-definition.content-title': undefined, // 'Content'
+  'default-definition.content-title': 'เนื้อหา',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'ข้อผิดพลาด: {{errorMessage}}',
@@ -220,11 +220,11 @@ export default removeUndefinedLocaleResources({
 
   /** --- Menu items --- */
   /** The menu item group title to use for the Action menu items */
-  'menu-item-groups.actions-group': undefined, // 'Actions'
+  'menu-item-groups.actions-group': 'การกระทำ',
   /** The menu item group title to use for the Layout menu items */
-  'menu-item-groups.layout-group': undefined, // 'Layout'
+  'menu-item-groups.layout-group': 'เลย์เอาต์',
   /** The menu item group title to use for the Sort menu items */
-  'menu-item-groups.sorting-group': undefined, // 'Sort'
+  'menu-item-groups.sorting-group': 'การเรียงลำดับ',
 
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': 'มุมมองแบบกระชับ',
@@ -327,9 +327,9 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     'เอกสารนี้ไม่มีอยู่ และไม่มีการระบุประเภทสคีมาสำหรับมัน',
   /** Default message shown while resolving the structure definition for an asynchronous node */
-  'panes.resolving.default-message': undefined, // 'Loading…'
+  'panes.resolving.default-message': 'กำลังโหลด…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
-  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
+  'panes.resolving.slow-resolve-message': 'ยังกำลังโหลด…',
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     'รายการโครงสร้างขาดคุณสมบัติ <Code>type</Code> ที่จำเป็น',
