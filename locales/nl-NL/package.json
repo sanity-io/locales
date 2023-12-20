@@ -20,7 +20,12 @@
     "directory": "locales/nl-NL"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "nickspaargaren",
+      "url": "https://github.com/nickspaargaren"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
