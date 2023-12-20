@@ -20,7 +20,12 @@
     "directory": "locales/nn-NO"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "s-rd",
+      "url": "https://github.com/s-rd"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
