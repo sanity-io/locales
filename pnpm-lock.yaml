@@ -302,7 +302,7 @@ importers:
   locales/ru-KZ:
     dependencies:
       sanity:
-        specifier: ^3.21.3
+        specifier: ^3.22.0
         version: 3.23.1(@types/node@18.18.14)(@types/react@18.2.44)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/sv-SE:

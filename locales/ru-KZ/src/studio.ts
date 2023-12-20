@@ -283,6 +283,23 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Просмотр изменений',
 
+  /** --- Common components --- */
+  /** Tooltip text for context menu buttons */
+  'common.context-menu-button.tooltip': undefined, // 'Show more'
+  /** Default text for dialog cancel button */
+  'common.dialog.cancel-button.text': undefined, // 'Cancel'
+  /** Default text for dialog confirm button */
+  'common.dialog.confirm-button.text': undefined, // 'Confirm'
+  /** Default text in shared loader text / spinner lockup */
+  'common.loading': undefined, // 'Loading'
+
+  /** --- Configuration issues --- */
+  /** Tooltip displayed on configuration issues button */
+  'configuration-issues.button.tooltip': undefined, // 'Found configuration issues'
+
+  /** The fallback title for an ordering menu item if no localized titles are provided. */
+  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
   'default-orderings.caption': 'Сортировать по подписи',
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
@@ -297,6 +314,13 @@ export default removeUndefinedLocaleResources({
   'default-orderings.name': 'Сортировать по имени',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Сортировать по названию',
+
+  /** Label to show in the document footer indicating the last edited date of the document */
+  'document-status.edited': undefined, // 'Edited {{date}}'
+  /** Label to show in the document footer indicating the document is not published*/
+  'document-status.not-published': undefined, // 'Not published'
+  /** Label to show in the document footer indicating the published date of the document */
+  'document-status.published': undefined, // 'Published {{date}}'
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -386,6 +410,8 @@ export default removeUndefinedLocaleResources({
   /** Title for help and resources menus */
   'help-resources.title': 'Помощь и ресурсы',
 
+  /** Text for button to cancel an ongoing upload */
+  'input.files.common.cancel-upload': undefined, // 'Cancel'
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Загрузить',
   /** Uploading <FileName/> */
@@ -405,6 +431,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Добавить элемент...',
+  /** Array drag handle button tooltip */
+  'inputs.array.action.drag.tooltip': undefined, // 'Drag to re-order'
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Дублировать',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -548,11 +576,9 @@ export default removeUndefinedLocaleResources({
     'Настройте прямоугольник для обрезки изображения. Настройте круг, чтобы указать область, которая всегда должна быть видна.',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Ошибка: {{errorMessage}}',
-  /** Loading image… */
-  'inputs.imagetool.loading': 'Загрузка изображения…',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Хотспот и обрезка',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Преобразовать в <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'Текущее значение (<code>{{actualType}}</code>)',
@@ -760,12 +786,12 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Обычный',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Цитата',
-  /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action-create-new-document-select': 'Создать новый…',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Очистить',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Создать новый',
+  /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
+  'inputs.reference.action.create-new-document-select': 'Создать новый…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': 'Дублировать',
   /** Label for action that opens the referenced document in a new tab */
@@ -888,7 +914,11 @@ export default removeUndefinedLocaleResources({
   /** Error message for when the source to generate a slug from is missing */
   'inputs.slug.error.missing-source':
     'Источник отсутствует. Проверьте источник для типа {{schemaType}} в схеме',
-  /** Convert to <code>`{{targetType}}`</code> */
+  /** Placeholder for an empty tag input */
+  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  /** Placeholder for an empty tag input on touch devices */
+  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'Преобразовать в <code>{{targetType}}</code>',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
@@ -946,6 +976,8 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Неожиданная ошибка: {{error}}',
 
+  /** Button label for "Create new document" button */
+  'new-document.button': undefined, // 'Create'
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
@@ -1030,6 +1062,12 @@ export default removeUndefinedLocaleResources({
   'search.action.toggle-filters-aria-label_hide': 'Скрыть фильтры',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
   'search.action.toggle-filters-aria-label_show': 'Показать фильтры',
+  /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
+  'search.action.toggle-filters-label_hide': undefined, // 'Hide filters'
+  /** Label for when the search is full screen (on narrow screens) and you want to show filters */
+  'search.action.toggle-filters-label_show': undefined, // 'Show filters'
+  /** Tooltip text for the global search button */
+  'search.button.tooltip': undefined, // 'Search'
   /**
    * A list of provided types (use `list` formatter preferably).
    */
@@ -1474,6 +1512,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'С: неизвестная версия',
 
+  /** Label for button showing the free trial days left */
+  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
+  /** Label for the button showed after trial ended */
+  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Пригласить участников',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -1482,6 +1524,10 @@ export default removeUndefinedLocaleResources({
   'user-menu.action.manage-project': 'Управление проектом',
   /** Accessibility label for the action to manage the current project */
   'user-menu.action.manage-project-aria-label': 'Управление проектом',
+  /** Tooltip helper text when portable text annotation is disabled for empty block*/
+  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
   /** Label for action to sign out of the current sanity project */
   'user-menu.action.sign-out': 'Выйти',
   /** Title for appearance section for the current studio (dark / light / system scheme) */

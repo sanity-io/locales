@@ -98,6 +98,8 @@ export default removeUndefinedLocaleResources({
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Открыть действия документа',
+  /** The action menu button tooltip */
+  'buttons.action-menu-button.tooltip': undefined, // 'Document actions'
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Разделить панель справа',
   /** The tool tip for the split pane button on the document panel header */
@@ -186,6 +188,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.confirm-button.fallback-text': 'Подтвердить',
 
+  /** For the default structure definition, the title for the "Content" pane */
+  'default-definition.content-title': undefined, // 'Content'
+
   /** The text shown if there was an error while getting the document's title via a preview value */
   'doc-title.error.text': 'Ошибка: {{errorMessage}}',
   /** The text shown if the preview value for a document is non-existent or empty */
@@ -220,6 +225,13 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message-tooltip.loading-text': 'Загрузка…',
 
   /** --- Menu items --- */
+  /** The menu item group title to use for the Action menu items */
+  'menu-item-groups.actions-group': undefined, // 'Actions'
+  /** The menu item group title to use for the Layout menu items */
+  'menu-item-groups.layout-group': undefined, // 'Layout'
+  /** The menu item group title to use for the Sort menu items */
+  'menu-item-groups.sorting-group': undefined, // 'Sort'
+
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': 'Компактный вид',
   /** The menu item title to use the detailed view */
@@ -237,10 +249,14 @@ export default removeUndefinedLocaleResources({
   /** The title of the no document type screen */
   'no-document-types-screen.title': 'Нет типов документов',
 
+  /** Text shown on back button visible on smaller breakpoints */
+  'pane-header.back-button.text': undefined, // 'Back'
   /** tooltip text (via `title` attribute) for the menu button */
   'pane-header.context-menu-button.tooltip': 'Показать меню',
   /** Appears in a document list pane header if there are more than one option for create. This is the label for that menu */
   'pane-header.create-menu.label': 'Создать',
+  /** Tooltip displayed on the create new button in document lists */
+  'pane-header.create-new-button.tooltip': undefined, // 'Create new document'
   /** The `aria-label` for the disabled button in the pane header if create permissions are granted */
   'pane-header.disabled-created-button.aria-label': 'Недостаточно прав',
 
@@ -322,6 +338,10 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Этот документ не существует, и для него не был указан тип схемы.',
+  /** Default message shown while resolving the structure definition for an asynchronous node */
+  'panes.resolving.default-message': undefined, // 'Loading…'
+  /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
+  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     'Элемент структуры не содержит необходимое свойство <Code>type</Code>.',
