@@ -83,7 +83,7 @@ const registry: LocaleRegistry = [
     id: 'nn-NO',
     name: 'Norsk (Nynorsk)',
     englishName: 'Norwegian (Nynorsk)',
-    maintainers: [],
+    maintainers: ['s-rd'],
     contributors: [],
   },
   {
