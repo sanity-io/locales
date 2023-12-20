@@ -33,7 +33,7 @@ export default removeUndefinedLocaleResources({
   'query.url': 'URL запроса',
 
   /** Label for "End to End time" information of the fetched query */
-  'result.end-to-end-time-label': 'Конец-к-концу',
+  'result.end-to-end-time-label': 'Время от начала до конца',
   /** Label for "Execution time" information of the fetched query */
   'result.execution-time-label': 'Выполнение',
   /** Label for "Result" explorer/view */

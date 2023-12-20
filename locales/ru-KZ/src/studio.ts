@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
     'Это изображение не может быть удалено, так как оно используется. Чтобы удалить его, сначала нужно удалить все его использования.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
-    'Показаны только активы принятых типов: <strong>{{acceptTypes}}</strong>',
+    'Показаны только ресурсы принятых типов: <strong>{{acceptTypes}}</strong>',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Выбрать файл',
@@ -1021,7 +1021,7 @@ export default removeUndefinedLocaleResources({
    */
   'search.action.search-specific-types': 'Искать {{types, list}}',
   /** Dialog title for action to select an asset of unknown type */
-  'search.action.select-asset': 'Выбрать актив',
+  'search.action.select-asset': 'Выбрать ресурс',
   /** Dialog title for action to select a file asset */
   'search.action.select-asset_file': 'Выбрать файл',
   /** Dialog title for action to select an image asset */
@@ -1053,9 +1053,9 @@ export default removeUndefinedLocaleResources({
     'Пожалуйста, убедитесь, что он включен в файле конфигурации вашей студии.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'В настоящее время поддерживается только источник активов по умолчанию.',
+    'В настоящее время поддерживается только источник ресурсов по умолчанию.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': 'Не найдены действительные источники активов.',
+  'search.error.no-valid-asset-source-title': 'Не найдены действительные источники ресурсов.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-help-description':
     'Пожалуйста, попробуйте еще раз или проверьте ваше соединение',

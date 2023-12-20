@@ -46,7 +46,7 @@ export default removeUndefinedLocaleResources({
   'number.non-integer': 'Должно быть целым числом',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': 'Требуется актив',
+  'object.asset-required': 'Требуется ресурс',
   /** Object is missing a reference to a file asset document in its `asset` field */
   'object.asset-required_file': 'Требуется файл',
   /** Object is missing a reference to an image asset document in its `asset` field */
