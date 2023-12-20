@@ -102,6 +102,9 @@ importers:
       '@sanity/icons':
         specifier: ^2.8.0
         version: 2.8.0(react@18.2.0)
+      '@sanity/locale-be-by':
+        specifier: workspace:*
+        version: link:../../locales/be-BY
       '@sanity/locale-cs-cz':
         specifier: workspace:*
         version: link:../../locales/cs-CZ
@@ -208,6 +211,12 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
+
+  locales/be-BY:
+    dependencies:
+      sanity:
+        specifier: ^3.22.0
+        version: 3.23.1(@types/node@18.18.14)(@types/react@18.2.44)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.1)
 
   locales/cs-CZ:
     dependencies:
