@@ -20,7 +20,12 @@
     "directory": "locales/de-DE"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "wrknd",
+      "url": "https://github.com/wrknd"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
