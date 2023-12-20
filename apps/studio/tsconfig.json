@@ -16,6 +16,7 @@
       "@sanity/locale-pl-pl": ["../../locales/pl-PL/src"],
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
       "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"],
+      "@sanity/locale-ru-kz": ["../../locales/ru-KZ/src"],
       "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
       "@sanity/locale-th-th": ["../../locales/th-TH/src"],
       "@sanity/locale-tr-tr": ["../../locales/tr-TR/src"],
