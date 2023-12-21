@@ -23,6 +23,7 @@
     "build": "turbo run build",
     "build:packages": "tsx src/cli/reconcilePackages",
     "build:studio": "tsx src/cli/reconcileStudio",
+    "list:maintainers": "tsx src/cli/printMaintainers",
     "check": "npm run check:lint && npm run check:types",
     "check:lint": "eslint .",
     "check:missing": "tsx src/cli/listMissingResources",
