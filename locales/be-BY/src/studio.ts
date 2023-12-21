@@ -23,16 +23,16 @@ export default removeUndefinedLocaleResources({
   'asset-source.delete-dialog.loading': 'Загрузка…',
   /** Message confirming to delete *named* file */
   'asset-source.delete-dialog.usage-list.confirm-delete-file_named':
-    'Вы збіраецеся выдаліць файл <strong>{{filename}}}</strong> і яго метаданыя. Вы ўпэўнены?',
+    'Вы збіраецеся выдаліць файл <strong>{{filename}}}</strong> і яго метададзеныя. Вы ўпэўнены?',
   /** Message confirming to delete *unnamed* file */
   'asset-source.delete-dialog.usage-list.confirm-delete-file_unnamed':
-    'Вы збіраецеся выдаліць файл і яго метаданыя. Вы ўпэўнены?',
+    'Вы збіраецеся выдаліць файл і яго метададзеныя. Вы ўпэўнены?',
   /** Message confirming to delete *named* image */
   'asset-source.delete-dialog.usage-list.confirm-delete-image_named':
-    'Вы збіраецеся выдаліць малюнак <strong>{{filename}}</strong> і яго метаданыя. Вы ўпэўнены?',
+    'Вы збіраецеся выдаліць малюнак <strong>{{filename}}</strong> і яго метададзеныя. Вы ўпэўнены?',
   /** Message confirming to delete *unnamed* image */
   'asset-source.delete-dialog.usage-list.confirm-delete-image_unnamed':
-    'Вы збіраецеся выдаліць малюнак і яго метаданыя. Вы ўпэўнены?',
+    'Вы збіраецеся выдаліць малюнак і яго метададзеныя. Вы ўпэўнены?',
   /** Alt text showing on image preview in delete asset dialog  */
   'asset-source.delete-dialog.usage-list.image-preview-alt': 'Прадпрагляд малюнка',
   /** Warning message showing when *named* file can't be deleted because it is in use */
@@ -263,7 +263,7 @@ export default removeUndefinedLocaleResources({
   /** Portable Text diff: Removed a block containing no text (eg empty block) */
   'changes.portable-text.empty-text_removed': 'Выдалены пусты тэкст',
   /** Portable Text diff: An inline object was added */
-  'changes.portable-text.inline-object_added': "Дададзены інлайн-аб'ект",
+  'changes.portable-text.inline-object_added': "Дададзены ўбудаваны аб'ект",
   /** Portable Text diff: An inline object was changed */
   'changes.portable-text.inline-object_changed': "Зменены ўбудаваны аб'ект",
   /** Portable Text diff: An inline object was removed */
@@ -328,7 +328,7 @@ export default removeUndefinedLocaleResources({
     'Значэнне ўласцівасці <code>_key</code> павінна быць унікальным радком.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely. */
   'form.error.duplicate-keys-alert.details.description':
-    'Гэта звычайна адбываецца, калі элементы ствараюцца з дапамогай кліента API, і ўласцівасць <code>_key</code> кожнага элемента была створана неўнікальна.',
+    'Гэта звычайна адбываецца, калі элементы ствараюцца з дапамогай API-кліенту, і ўласцівасць <code>_key</code> кожнага элемента была створана неўнікальна.',
   /** Developer info */
   'form.error.duplicate-keys-alert.details.title': 'Інфармацыя для распрацоўшчыкаў',
   /** Generate unique keys */
@@ -355,10 +355,10 @@ export default removeUndefinedLocaleResources({
   'form.error.missing-keys-alert.summary':
     'У некаторых элементах спіса адсутнічаюць ключы. Гэта павінна быць выпраўлена для рэдагавання спіса.',
   /** Missing keys */
-  'form.error.missing-keys-alert.title': 'Адсутнічаючыя ключы',
+  'form.error.missing-keys-alert.title': 'Адсутныя ключы',
   /** This usually happens when items are created using an API client, or when a custom input component has added invalid data to the list. */
   'form.error.mixed-array-alert.details.description':
-    'Гэта звычайна адбываецца, калі элементы ствараюцца з дапамогай кліента API, альбо калі карыстацкі кампанент уводу дадаў няправільныя даныя ў спіс.',
+    'Гэта звычайна адбываецца, калі элементы ствараюцца з дапамогай API-кліенту, альбо калі карыстацкі кампанент уводу дадаў няправільныя дадзеныя ў спіс.',
   /** Developer info */
   'form.error.mixed-array-alert.details.title': 'Інфармацыя для распрацоўшчыкаў',
   /**  Remove non-object values */
@@ -541,7 +541,7 @@ export default removeUndefinedLocaleResources({
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Незавершаная загрузка',
   /** Tooltip text for action to crop image */
-  'inputs.image.actions-menu.crop-image-tooltip': 'Абразаць малюнак',
+  'inputs.image.actions-menu.crop-image-tooltip': 'Абрэзаць малюнак',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Адкрыць дыялог рэдагавання малюнка',
   /** Accessibility label for button to open image options menu */
@@ -557,7 +557,7 @@ export default removeUndefinedLocaleResources({
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Невядомы тып элемента: {{kind}}',
   /** Edit hotspot and crop */
-  'inputs.image.hotspot-dialog.title': 'Рэдагаваць гарачую кропку і абразаць',
+  'inputs.image.hotspot-dialog.title': 'Рэдагаваць гарачую кропку і абрэзаць',
   /** The value of this field is not a valid image. Resetting this field will let you choose a new image. */
   'inputs.image.invalid-image-warning.description':
     "Значэнне гэтага поля не з'яўляецца сапраўдным малюнкам. Скід гэтага поля дазволіць вам выбраць новы малюнак.",
@@ -605,7 +605,7 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.aria-label': 'Групы палёў',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
-    "Гэта поле з'яўляецца <strong>толькі для чытання</strong> згодна схемы дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.",
+    "Гэта поле <strong>толькі для чытання</strong> згодна схемы дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.",
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Выдаліць поле',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -613,7 +613,7 @@ export default removeUndefinedLocaleResources({
     'Выяўлена поле, якое не вызначана ў схеме.',
   /** Detailed description of unknown field warning */
   'inputs.object.unknown-fields.warning.details.description_one':
-    'Гэта поле не вызначана ў схеме, што можа азначаць, што апісанне поля было выдаленае альбо хтосьці іншы дадаў яго да свайго лакальнага праекта і яшчэ не разгарнуў свае змены.',
+    'Гэта поле не вызначана ў схеме, што можа азначаць, што апісанне поля было выдаленае, альбо хтосьці іншы дадаў яго да свайго лакальнага праекта і яшчэ не разгарнуў свае змены.',
   /** Developer info */
   'inputs.object.unknown-fields.warning.details.title': 'Інфармацыя для распрацоўшчыкаў',
   /** Unknown field found */
@@ -640,7 +640,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.activate-on-focus-message_click-focused':
     'Націсніце або націсніце прастору, каб актываваць',
   /** Label for activate on focus with context of tap and not focused */
-  'inputs.portable-text.activate-on-focus-message_tap': 'Таркніце, каб актываваць',
+  'inputs.portable-text.activate-on-focus-message_tap': 'Націсніце, каб актываваць',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Рэдагаваць {{schemaType}}',
   /** Title of the default "link" annotation */
@@ -702,7 +702,7 @@ export default removeUndefinedLocaleResources({
     'Усталяваць пустое значэнне тэксту',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a span with key `{{childKey}}` that has a missing or invalid `text` property */
   'inputs.portable-text.invalid-value.invalid-span-text.description':
-    'Спан з ключом {{childKey}} блока з ключом <code>{{key}}</code> мае адсутнічае або няправільнае <code>text</code> уласцівасць.',
+    'Спан з ключом {{childKey}} блока з ключом <code>{{key}}</code> адсутнічае або мае няправільную <code>text</code> уласцівасць.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
   'inputs.portable-text.invalid-value.missing-block-type.action':
     'Выкарыстоўвайце тып <code>{{expectedTypeName}}</code>',
@@ -728,12 +728,12 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-or-invalid-children.action': 'Выдаліце блок',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
-    'Тэкставы блок з ключом <code>{{key}}</code> мае няправільную або адсутнічае `children` уласцівасць.',
+    'Тэкставы блок з ключом <code>{{key}}</code> мае няправільную або не мае ўвогуле уласцівасць `children`.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': 'Дадайце уласцівасць',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description':
-    'Тэкставы блок з ключом <code>{{key}}</code> мае няправільную або адсутнічае `markDefs` уласцівасць.',
+    'Тэкставы блок з ключом <code>{{key}}</code> мае няправільную або не мае ўвогуле уласцівасць `markDefs`.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
   'inputs.portable-text.invalid-value.missing-type.action': 'Выдаліце блок',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
@@ -806,7 +806,7 @@ export default removeUndefinedLocaleResources({
     'Вы ўсё яшчэ можаце ачысціць існуючую спасылку ў гэтым полі, але яе нельга змяніць на іншы дакумент, пакуль функцыя адключана.',
   /** A cross-dataset reference field exists but the feature has been disabled. A <DocumentationLink> component is available. */
   'inputs.reference.cross-dataset.feature-disabled-description':
-    'Гэтая функцыя была адключана. Прачытайце, як яе ўключыць, у <DocumentationLink>дакументацыі</DocumentationLink>.',
+    'Гэтая функцыя была адключана. Прачытайце як яе ўключыць, у <DocumentationLink>дакументацыі</DocumentationLink>.',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
   'inputs.reference.cross-dataset.feature-unavailable-title':
     'Недаступная функцыя: Спасылка паміж наборамі дадзеных',
@@ -829,7 +829,7 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.invalid-type-title': 'Дакумент няправільнага тыпу',
   /** Error description for when the user does not have permissions to read the referenced document */
   'inputs.reference.error.missing-read-permissions-description':
-    'Спасыланы дакумент не можа быць доступны з-за недастатковых правоў',
+    'Спасыланы дакумент не можа быць даступны з-за недастатковых правоў',
   /** Error title for when the user does not have permissions to read the referenced document */
   'inputs.reference.error.missing-read-permissions-title': 'Недастатковыя правы',
   /** Error description for when the current reference value points to a document that does not exist (on weak references) */
@@ -840,7 +840,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button that clears the reference when it points to a document that does not exist (on weak references) */
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Ачысціць',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
-  'inputs.reference.error.search-failed-title': 'Пошук спасылкі не ўдаўся',
+  'inputs.reference.error.search-failed-title': 'Пошук спасылкі не атрымаўся',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Папярэдні прагляд малюнка спасыланага дакумента',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -858,7 +858,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button that triggers a retry attempt for reference metadata  */
   'inputs.reference.metadata-error.retry-button-label': 'Паспрабаваць зноў',
   /** Title for alert shown when reference metadata fails to be loaded */
-  'inputs.reference.metadata-error.title': 'Не ўдалося загрузіць метаданыя спасылкі',
+  'inputs.reference.metadata-error.title': 'Не ўдалося загрузіць метададзеныя спасылкі',
   /** Message shown when no documents were found that matched the given search string */
   'inputs.reference.no-results-for-query': 'Няма вынікаў для <strong>“{{searchTerm}}”</strong>',
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
@@ -896,7 +896,7 @@ export default removeUndefinedLocaleResources({
     'Гэтая спасылка <em>моцная</em>, але згодна з бягучай схемай яна павінна быць <em>слабой</em>.',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
   'inputs.reference.strength-mismatch.is-weak-consquences':
-    'Гэта дазваляе выдаляць згаданы дакумент без папярэдняга выдалення гэтай спасылкі, што пакідае гэта поле з спасылкай на неіснуючы дакумент.',
+    'Гэта дазваляе выдаляць згаданы дакумент без папярэдняга выдалення гэтай спасылкі, што пакідае гэта поле са спасылкай на неіснуючы дакумент.',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
   'inputs.reference.strength-mismatch.is-weak-description':
     'Гэтая спасылка <em>слабая</em>, але згодна з бягучай схемай яна павінна быць <em>моцнай</em>.',
@@ -928,7 +928,7 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.details.json-dump-prefix': 'Бягучае значэнне (<code>object</code>):',
   /** The following types are valid here according to schema: */
   'inputs.untyped-value.details.multi-type-description':
-    "Наступныя тыпы з'яўляюцца дапушчальнымі тут згодна схемы:",
+    "Наступныя тыпы з'яўляюцца дапушчальнымі згодна схемы:",
   /** Developer info */
   'inputs.untyped-value.details.title': 'Інфармацыя для распрацоўшчыкаў',
   /** Property value missing <code>_type</code> */
@@ -967,7 +967,7 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_unpublish-document':
     'У вас няма дазволу на зняцце з публікацыі гэтага дакумента.',
   /** Appears after the not-authorized message. Lists the current roles. */
-  'insufficient-permissions-message.roles': 'Вашы ролі: <Roles/>',
+  'insufficient-permissions-message.roles': 'Вашыя ролі: <Roles/>',
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Недастатковыя правы',
 
@@ -1051,7 +1051,7 @@ export default removeUndefinedLocaleResources({
    */
   'search.action.search-specific-types': 'Шукаць {{types, list}}',
   /** Dialog title for action to select an asset of unknown type */
-  'search.action.select-asset': 'Выбраць актыў',
+  'search.action.select-asset': 'Выбраць рэсурс',
   /** Dialog title for action to select a file asset */
   'search.action.select-asset_file': 'Выбраць файл',
   /** Dialog title for action to select an image asset */
@@ -1089,9 +1089,9 @@ export default removeUndefinedLocaleResources({
     'Калі ласка, пераканайцеся, што ён уключаны ў файл канфігурацыі вашай студыі.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'На дадзены момант падтрымліваецца толькі стандартны крыніца актываў.',
+    'На дадзены момант падтрымліваецца толькі стандартны крыніца рэсурсаў.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': 'Не знойдзены дапушчальныя крыніцы актываў.',
+  'search.error.no-valid-asset-source-title': 'Не знойдзены дапушчальныя крыніцы рэсурсаў.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-help-description':
     'Калі ласка, паспрабуйце яшчэ раз або праверце вашае злучэнне',
@@ -1159,7 +1159,7 @@ export default removeUndefinedLocaleResources({
    * have in common, when adding a new filter. For instance, if "book" and "employee" both have a
    * "title" field, this field would be listed under "shared fields".
    * */
-  'search.filter-shared-fields-header': 'Агульныя поля',
+  'search.filter-shared-fields-header': 'Агульныя палі',
   /** Placeholder value for the string filter */
   'search.filter-string-value-placeholder': 'Значэнне',
   /** Label/placeholder prompting user to select one of the predefined, allowed values for a string field */
@@ -1429,7 +1429,7 @@ export default removeUndefinedLocaleResources({
     "<Field/> <Operator>не з'яўляецца</Operator> <Value>{{value}}</Value>",
   'search.operator.string-not-equal.name': "не з'яўляецца",
   /** Label for the "Best match" search ordering type */
-  'search.ordering.best-match-label': 'Найлепшы супадзенне',
+  'search.ordering.best-match-label': 'Найлепшае супадзенне',
   /** Label for the "Created: Oldest first" search ordering type */
   'search.ordering.created-ascending-label': 'Створана: Спачатку старыя',
   /** Label for the "Created: Newest first" search ordering type */
@@ -1449,7 +1449,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
-    'Транзакцыі гісторыі дакументаў не былі паўплываны.',
+    'Транзакцыі гісторыі дакументаў не былі загружаны.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Пры атрыманні зменаў дакумента адбылася памылка.',
   /** Error description for when the document doesn't have history */
@@ -1533,15 +1533,15 @@ export default removeUndefinedLocaleResources({
   /** Label for close menu button for user menu */
   'user-menu.close-menu': 'Зачыніць меню',
   /** Description for using the "dark theme" in the appearance user menu */
-  'user-menu.color-scheme.dark-description': 'Выкарыстоўваць цёмны знешні выгляд',
+  'user-menu.color-scheme.dark-description': 'Выкарыстоўваць цёмную тэму',
   /** Title for using the "dark theme" in the appearance user menu */
-  'user-menu.color-scheme.dark-title': 'Цёмны',
+  'user-menu.color-scheme.dark-title': 'Цёмная',
   /** Description for using the "light theme" in the appearance user menu */
-  'user-menu.color-scheme.light-description': 'Выкарыстоўваць светлы знешні выгляд',
+  'user-menu.color-scheme.light-description': 'Выкарыстоўваць светлую тэму',
   /** Title for using the "light theme" in the appearance user menu */
-  'user-menu.color-scheme.light-title': 'Светлы',
+  'user-menu.color-scheme.light-title': 'Светлая',
   /** Description for using "system apparence" in the appearance user menu */
-  'user-menu.color-scheme.system-description': 'Выкарыстоўваць сістэмны знешні выгляд',
+  'user-menu.color-scheme.system-description': 'Выкарыстоўваць сістэмную тэму',
   /** Title for using system apparence in the appearance user menu */
   'user-menu.color-scheme.system-title': 'Сістэма',
   /** Title for locale section for the current studio */
@@ -1553,14 +1553,14 @@ export default removeUndefinedLocaleResources({
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
    */
-  'workspaces.action.add-workspace': 'Дадаць працоўную прастору',
+  'workspaces.action.add-workspace': 'Дадаць працоўны прастор',
   /**
    * Label for action to choose a different workspace, in the case where you are not logged in,
    * have selected a workspace, and are faced with the authentication options for the selected
    * workspace. In other words, label for the action shown when you have reconsidered which
    * workspace to authenticate in.
    */
-  'workspaces.action.choose-another-workspace': 'Выбраць іншую працоўную прастору',
+  'workspaces.action.choose-another-workspace': 'Выбраць іншы працоўны прастор',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Выберыце ваш працоўны прастор',
   /** Label for the workspace menu */

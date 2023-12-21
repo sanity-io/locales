@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Зачыніць праверку',
   /** Message shown when the validation panel is opened but there are no errors/warnings */
-  'panel.no-errors-message': 'Няма памылак праверкі',
+  'panel.no-errors-message': 'Няма памылак',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Праверка',
 

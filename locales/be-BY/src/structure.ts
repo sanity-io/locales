@@ -53,7 +53,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.running.label': 'Публікацыя…',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
-    'Ёсць памылкі праверкі, якія трэба выпраўляць перад публікацыяй гэтага дакумента',
+    'Ёсць памылкі праверкі, якія трэба выправіць перад публікацыяй гэтага дакумента',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Чаканне завяршэння задач перад публікацыяй',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
@@ -236,7 +236,7 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Падрабязны выгляд',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': 'Сартаваць па даты стварэння',
+  'menu-items.sort-by.created': 'Сартаваць па даце стварэння',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сартаваць па апошнім рэдагаванні',
 
@@ -386,5 +386,5 @@ export default removeUndefinedLocaleResources({
   /** The text in the reload button to retry rendering the structure */
   'structure-error.reload-button.text': 'Перазагрузіць',
   /** Labels the structure path of the structure error screen */
-  'structure-error.structure-path.label': 'Шлях структуры',
+  'structure-error.structure-path.label': 'Структура',
 })
