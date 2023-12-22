@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.0.1...locale-nl-nl-v1.0.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* **nl-NL:** add nickspaargaren as maintainer ([#178](https://github.com/sanity-io/locales/issues/178)) ([c55d03f](https://github.com/sanity-io/locales/commit/c55d03f49c5a0fcabb018f1bf21b17f74229153d))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.0.0...locale-nl-nl-v1.0.1) (2023-12-19)
 
 
