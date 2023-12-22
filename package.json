@@ -23,7 +23,6 @@
     "build": "turbo run build",
     "build:packages": "tsx src/cli/reconcilePackages",
     "build:studio": "tsx src/cli/reconcileStudio",
-    "list:maintainers": "tsx src/cli/printMaintainers",
     "check": "npm run check:lint && npm run check:types",
     "check:lint": "eslint .",
     "check:missing": "tsx src/cli/listMissingResources",
@@ -33,6 +32,7 @@
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write .",
     "lint": "turbo run lint",
+    "list:maintainers": "tsx src/cli/printMaintainers",
     "reconcile": "tsx src/cli/reconcile",
     "test": "tsx test/testLocales"
   },
