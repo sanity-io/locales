@@ -213,17 +213,17 @@ export default removeUndefinedLocaleResources({
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Кадраванне зменена',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
-  'changes.image.deleted': 'Выдаленае выява',
+  'changes.image.deleted': 'Выдалены малюнак',
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
-  'changes.image.error-loading-image': 'Памылка загрузкі выявы',
+  'changes.image.error-loading-image': 'Памылка загрузкі малюнка',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.hotspot-changed': 'Гарачая кропка зменена',
   /** Image diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.image.meta-info-fallback-title': 'Без назвы',
   /** Image diff: Text shown if no asset has been set for the field (but has metadata changes) */
-  'changes.image.no-asset-set': 'Выява не ўстаноўлена',
+  'changes.image.no-asset-set': 'Малюнак не ўстаноўлены',
   /** Image diff: Text shown when the from/to state has/had no image */
-  'changes.image.no-image-placeholder': '(няма выявы)',
+  'changes.image.no-image-placeholder': '(няма малюнка)',
   /** Label for the "from" value in the change inspector */
   'changes.inspector.from-label': 'Ад',
   /** Label for the "meta" (field path, action etc) information in the change inspector */
@@ -590,7 +590,7 @@ export default removeUndefinedLocaleResources({
     'Значэнне гэтай уласцівасці павінна быць тыпу <code>{{validType}}</code> згодна схеме.',
   /** Only the following types are valid here according to schema: */
   'inputs.invalid-value.details.multi-type-description':
-    "Толькі наступныя тыпы з'яўляюцца сапраўднымі тут згодна схемы:",
+    "Толькі наступныя тыпы з'яўляюцца сапраўднымі тут згодна схеме:",
   /** Mismatching value types typically occur when the schema has recently been changed. */
   'inputs.invalid-value.details.possible-reason':
     'Несупадзенне тыпаў значэнняў звычайна адбываецца, калі схема нядаўна была зменена.',
@@ -605,7 +605,7 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.aria-label': 'Групы палёў',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
-    "Гэта поле <strong>толькі для чытання</strong> згодна схемы дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.",
+    "Гэта поле <strong>толькі для чытання</strong> згодна схеме дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.",
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Выдаліць поле',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -928,7 +928,7 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.details.json-dump-prefix': 'Бягучае значэнне (<code>object</code>):',
   /** The following types are valid here according to schema: */
   'inputs.untyped-value.details.multi-type-description':
-    "Наступныя тыпы з'яўляюцца дапушчальнымі згодна схемы:",
+    "Наступныя тыпы з'яўляюцца дапушчальнымі згодна схеме:",
   /** Developer info */
   'inputs.untyped-value.details.title': 'Інфармацыя для распрацоўшчыкаў',
   /** Property value missing <code>_type</code> */
@@ -1089,7 +1089,7 @@ export default removeUndefinedLocaleResources({
     'Калі ласка, пераканайцеся, што ён уключаны ў файл канфігурацыі вашай студыі.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'На дадзены момант падтрымліваецца толькі стандартны крыніца рэсурсаў.',
+    'На дадзены момант падтрымліваецца толькі стандартная крыніца рэсурсаў.',
   /** Title for error when no valid asset sources found */
   'search.error.no-valid-asset-source-title': 'Не знойдзены дапушчальныя крыніцы рэсурсаў.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
@@ -1331,15 +1331,15 @@ export default removeUndefinedLocaleResources({
   /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
-  'search.operator.number-gt.name': 'больш чым',
+  'search.operator.number-gt.name': 'больш за',
   /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
-  'search.operator.number-gte.name': 'больш чым або роўна',
+  'search.operator.number-gte.name': 'больш за або роўна',
   /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
-  'search.operator.number-lt.name': 'менш чым',
+  'search.operator.number-lt.name': 'менш за',
   /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
@@ -1375,7 +1375,7 @@ export default removeUndefinedLocaleResources({
   /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
-  'search.operator.reference-asset-image.name': 'выява',
+  'search.operator.reference-asset-image.name': 'малюнак',
   /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',

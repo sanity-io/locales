@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.running.label': 'Выдаленне…',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
-    'Вы ўпэўненыя, што хочаце адмяніць усе змены з моманту апошняй публікацыі?',
+    'Вы ўпэўнены, што хочаце адмяніць усе змены з моманту апошняй публікацыі?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'У гэтым дакуменце няма неапублікаваных зменаў',
   /** Tooltip when action is disabled because the document is not published */
@@ -73,7 +73,7 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.label': 'Зняць з публікацыі',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
-    'Гэты дакумент мае ўключаны рэжым live edit і не можа быць зняты з публікацыі',
+    'Гэты дакумент мае ўключаны рэжым Live Edit і не можа быць зняты з публікацыі',
 
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Аднавіць апошнюю версію',
@@ -81,10 +81,10 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Гэты дакумент быў выдалены.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Ваша роля <Roles/> не мае дазволаў на стварэнне гэтага дакумента.',
+    'Ваша роля <Roles/> не мае дазволу на стварэнне гэтага дакумента.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Ваша роля <Roles/> не мае дазволаў на абнаўленне гэтага дакумента.',
+    'Ваша роля <Roles/> не мае дазволу на абнаўленне гэтага дакумента.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перазагрузіць спасылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -140,10 +140,10 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Зняць з публікацыі зараз',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
-    'Вы ўпэўненыя, што хочаце выдаліць “<DocumentTitle/>”?',
+    'Вы ўпэўнены, што хочаце выдаліць “<DocumentTitle/>”?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
-    'Вы ўпэўненыя, што хочаце зняць з публікацыі “<DocumentTitle/>”?',
+    'Вы ўпэўнены, што хочаце зняць з публікацыі “<DocumentTitle/>”?',
   /** The text body of the error dialog. */
   'confirm-delete-dialog.error.message.text':
     'Падчас загрузкі дакументаў, якія спасылаюцца, адбылася памылка.',
