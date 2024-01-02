@@ -158,7 +158,7 @@ const registry: LocaleRegistry = [
     id: 'zh-Hant',
     name: '繁體中文',
     englishName: 'Chinese (Traditional)',
-    maintainers: [],
+    maintainers: ['ymcheung'],
     contributors: [],
     weekInfo: {
       firstDay: 7,
