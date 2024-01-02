@@ -132,7 +132,7 @@ const registry: LocaleRegistry = [
     id: 'tr-TR',
     name: 'Türkçe',
     englishName: 'Turkish',
-    maintainers: [],
+    maintainers: ['kaganmert'],
     contributors: [],
   },
   {
