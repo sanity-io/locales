@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.1...locale-nn-no-v1.0.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* **nn-NO:** add s-rd as maintainer of Norsk (Nynorsk) ([#175](https://github.com/sanity-io/locales/issues/175)) ([a5b9278](https://github.com/sanity-io/locales/commit/a5b9278e6c650bfae9c312fdfbe66edb988f1b97))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.0...locale-nn-no-v1.0.1) (2023-12-19)
 
 

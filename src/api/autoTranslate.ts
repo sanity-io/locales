@@ -247,6 +247,11 @@ export async function pushChanges(): Promise<void> {
     await execGitCommand(['push', 'origin', branchName, '--force'])
 
     if (!(await hasExistingPR(branchName))) {
+      let body = `This PR includes automated translation updates.`
+      if (locale.maintainers.length > 0) {
+        const maintainers = locale.maintainers.map((maintainer) => `@${maintainer}`)
+        body += `\n\nCC: ${maintainers.join(', ')}`
+      }
       // Now create the PR 🎉
       await execFile(
         'gh',
@@ -256,7 +261,7 @@ export async function pushChanges(): Promise<void> {
           '--title',
           commitMessage,
           '--body',
-          'This PR includes automated translation updates.',
+          body,
           '--head',
           branchName,
           '--base',

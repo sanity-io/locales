@@ -20,7 +20,20 @@
     "directory": "locales/fr-FR"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "AymericWilke",
+      "url": "https://github.com/AymericWilke"
+    },
+    {
+      "name": "ahelliet",
+      "url": "https://github.com/ahelliet"
+    },
+    {
+      "name": "thierryteyssier",
+      "url": "https://github.com/thierryteyssier"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {

@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-it-it",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "Italian / Italiano locale/translation for Sanity Studio",
   "keywords": [
@@ -20,7 +20,12 @@
     "directory": "locales/it-IT"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "valse",
+      "url": "https://github.com/valse"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {

@@ -4,7 +4,7 @@ Norwegian (Nynorsk) / Norsk (Nynorsk) language support for [Sanity Studio](https
 
 ## Description
 
-This is an unofficial language pack. Initial translations were done by AI and may have errors. Contributions are [more than welcome](#contributing)!
+This is a community maintained language plugin. Initial translations were done by AI and may have errors. Contributions are [more than welcome](#contributing)!
 
 ## Installation
 
@@ -47,11 +47,6 @@ export default defineConfig({
   ],
 })
 ```
-
-## Maintainers
-
-We are looking for maintainers for this plugin!
-If you are interested, please [send a PR](/CONTRIBUTING.md#maintaining-a-locale) adding yourself as a maintainer.
 
 ## Contributing
 

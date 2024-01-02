@@ -20,14 +20,14 @@ const registry: LocaleRegistry = [
     id: 'de-DE',
     name: 'Deutsch',
     englishName: 'German',
-    maintainers: [],
+    maintainers: ['wrknd'],
     contributors: [],
   },
   {
     id: 'es-ES',
     name: 'Español',
     englishName: 'Spanish',
-    maintainers: [],
+    maintainers: ['imaprototype', 'jferrettiboke'],
     contributors: [],
   },
   {
@@ -41,7 +41,7 @@ const registry: LocaleRegistry = [
     id: 'fr-FR',
     name: 'Français',
     englishName: 'French',
-    maintainers: [],
+    maintainers: ['AymericWilke', 'thierryteyssier', 'ahelliet'],
     contributors: [],
   },
   {
@@ -55,7 +55,7 @@ const registry: LocaleRegistry = [
     id: 'it-IT',
     name: 'Italiano',
     englishName: 'Italian',
-    maintainers: [],
+    maintainers: ['valse'],
     contributors: [],
   },
   {
@@ -83,21 +83,21 @@ const registry: LocaleRegistry = [
     id: 'nl-NL',
     name: 'Nederlands',
     englishName: 'Dutch',
-    maintainers: [],
+    maintainers: ['nickspaargaren'],
     contributors: [],
   },
   {
     id: 'nn-NO',
     name: 'Norsk (Nynorsk)',
     englishName: 'Norwegian (Nynorsk)',
-    maintainers: [],
+    maintainers: ['s-rd'],
     contributors: [],
   },
   {
     id: 'pl-PL',
     name: 'Polski',
     englishName: 'Polish',
-    maintainers: [],
+    maintainers: ['marcinincreo'],
     contributors: [],
   },
   {
@@ -125,7 +125,7 @@ const registry: LocaleRegistry = [
     id: 'sv-SE',
     name: 'Svenska',
     englishName: 'Swedish',
-    maintainers: [],
+    maintainers: ['wisechimp', 'alexanderwarendh', 'marcusforsberg', 'Henkisch'],
     contributors: [],
   },
   {
@@ -139,7 +139,7 @@ const registry: LocaleRegistry = [
     id: 'tr-TR',
     name: 'Türkçe',
     englishName: 'Turkish',
-    maintainers: [],
+    maintainers: ['kaganmert'],
     contributors: [],
   },
   {
@@ -165,7 +165,7 @@ const registry: LocaleRegistry = [
     id: 'zh-Hant',
     name: '繁體中文',
     englishName: 'Chinese (Traditional)',
-    maintainers: [],
+    maintainers: ['ymcheung'],
     contributors: [],
     weekInfo: {
       firstDay: 7,

@@ -4,7 +4,7 @@ Chinese (Simplified) / 简体中文 language support for [Sanity Studio](https:/
 
 ## Description
 
-This is an unofficial language pack. Initial translations were done by AI and may have errors. Contributions are [more than welcome](#contributing)!
+This is a community maintained language plugin. Initial translations were done by AI and may have errors. Contributions are [more than welcome](#contributing)!
 
 ## Installation
 

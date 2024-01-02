@@ -8,7 +8,7 @@ ${locale.englishName} / ${locale.name} language support for [Sanity Studio](http
 
 ## Description
 
-This is an unofficial language pack. Initial translations were done by AI and may have errors. Contributions are [more than welcome](#contributing)!
+This is a community maintained language plugin. Initial translations were done by AI and may have errors. Contributions are [more than welcome](#contributing)!
 
 ## Installation
 

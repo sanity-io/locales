@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.1...locale-de-de-v1.0.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* **de-DE:** add wrknd as maintainer ([#176](https://github.com/sanity-io/locales/issues/176)) ([e4345e8](https://github.com/sanity-io/locales/commit/e4345e8f854b8b4811c9d1d4638d37b54364350f))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.0...locale-de-de-v1.0.1) (2023-12-19)
 
 

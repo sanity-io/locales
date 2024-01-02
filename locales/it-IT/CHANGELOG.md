@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-it-it-v1.0.1...locale-it-it-v1.0.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* **it-IT:** add [@valse](https://github.com/valse) as maintainer of Italian translations ([#167](https://github.com/sanity-io/locales/issues/167)) ([9c259c0](https://github.com/sanity-io/locales/commit/9c259c0d6524435c31175d07b8fe8ec31acb1d4f))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-it-it-v1.0.0...locale-it-it-v1.0.1) (2023-12-19)
 
 
