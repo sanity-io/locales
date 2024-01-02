@@ -118,7 +118,7 @@ const registry: LocaleRegistry = [
     id: 'sv-SE',
     name: 'Svenska',
     englishName: 'Swedish',
-    maintainers: [],
+    maintainers: ['wisechimp'],
     contributors: [],
   },
   {
