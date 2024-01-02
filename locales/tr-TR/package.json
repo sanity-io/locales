@@ -20,12 +20,7 @@
     "directory": "locales/tr-TR"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "kaganmert",
-      "url": "https://github.com/kaganmert"
-    }
-  ],
+  "contributors": [],
   "type": "module",
   "exports": {
     ".": {

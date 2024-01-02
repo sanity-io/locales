@@ -20,16 +20,7 @@
     "directory": "locales/es-ES"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "imaprototype",
-      "url": "https://github.com/imaprototype"
-    },
-    {
-      "name": "jferrettiboke",
-      "url": "https://github.com/jferrettiboke"
-    }
-  ],
+  "contributors": [],
   "type": "module",
   "exports": {
     ".": {
