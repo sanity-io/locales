@@ -20,12 +20,7 @@
     "directory": "locales/zh-Hant"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "ymcheung",
-      "url": "https://github.com/ymcheung"
-    }
-  ],
+  "contributors": [],
   "type": "module",
   "exports": {
     ".": {

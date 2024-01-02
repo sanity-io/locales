@@ -20,7 +20,7 @@ const registry: LocaleRegistry = [
     id: 'es-ES',
     name: 'Español',
     englishName: 'Spanish',
-    maintainers: ['imaprototype', 'jferrettiboke'],
+    maintainers: [],
     contributors: [],
   },
   {
@@ -34,7 +34,7 @@ const registry: LocaleRegistry = [
     id: 'fr-FR',
     name: 'Français',
     englishName: 'French',
-    maintainers: ['AymericWilke', 'thierryteyssier', 'ahelliet'],
+    maintainers: ['AymericWilke'],
     contributors: [],
   },
   {
@@ -90,7 +90,7 @@ const registry: LocaleRegistry = [
     id: 'pl-PL',
     name: 'Polski',
     englishName: 'Polish',
-    maintainers: ['marcinincreo'],
+    maintainers: [],
     contributors: [],
   },
   {
@@ -118,7 +118,7 @@ const registry: LocaleRegistry = [
     id: 'sv-SE',
     name: 'Svenska',
     englishName: 'Swedish',
-    maintainers: ['wisechimp', 'alexanderwarendh', 'marcusforsberg', 'Henkisch'],
+    maintainers: [],
     contributors: [],
   },
   {
@@ -132,7 +132,7 @@ const registry: LocaleRegistry = [
     id: 'tr-TR',
     name: 'Türkçe',
     englishName: 'Turkish',
-    maintainers: ['kaganmert'],
+    maintainers: [],
     contributors: [],
   },
   {
@@ -158,7 +158,7 @@ const registry: LocaleRegistry = [
     id: 'zh-Hant',
     name: '繁體中文',
     englishName: 'Chinese (Traditional)',
-    maintainers: ['ymcheung'],
+    maintainers: [],
     contributors: [],
     weekInfo: {
       firstDay: 7,
