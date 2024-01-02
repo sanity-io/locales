@@ -90,7 +90,7 @@ const registry: LocaleRegistry = [
     id: 'pl-PL',
     name: 'Polski',
     englishName: 'Polish',
-    maintainers: [],
+    maintainers: ['marcinincreo'],
     contributors: [],
   },
   {
