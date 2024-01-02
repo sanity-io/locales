@@ -6,6 +6,7 @@
       "@sanity/locale-es-es": ["../../locales/es-ES/src"],
       "@sanity/locale-fi-fi": ["../../locales/fi-FI/src"],
       "@sanity/locale-fr-fr": ["../../locales/fr-FR/src"],
+      "@sanity/locale-hu-hu": ["../../locales/hu-HU/src"],
       "@sanity/locale-is-is": ["../../locales/is-IS/src"],
       "@sanity/locale-it-it": ["../../locales/it-IT/src"],
       "@sanity/locale-ja-jp": ["../../locales/ja-JP/src"],
