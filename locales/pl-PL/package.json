@@ -20,7 +20,12 @@
     "directory": "locales/pl-PL"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "marcinincreo",
+      "url": "https://github.com/marcinincreo"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
