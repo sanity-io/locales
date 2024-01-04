@@ -40,7 +40,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<void
     const missingResources = await findMissingResources(locale)
     const localeName = locale.englishName || locale.name
 
-    for await (const entry of missingResources) {
+    for (const entry of missingResources) {
       if (namespaces && !namespaces.includes(entry.namespace)) {
         continue
       }
@@ -70,7 +70,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<void
       }
 
       // For each of the batches, translate the keys
-      for await (const currentBatch of batches) {
+      for (const currentBatch of batches) {
         const tpl = templateMissingResources(ns.indexedResources, currentBatch)
         logger(
           `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
