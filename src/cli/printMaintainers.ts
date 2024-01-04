@@ -1,4 +1,7 @@
-import {printMaintainers} from '../api/printMaintainers'
-import {runScript} from '../util/runScript'
+import registry from '../../locales/registry'
 
-runScript(printMaintainers)
+registry
+  .filter((locale) => locale.maintainers.length > 0)
+  .forEach((locale) => {
+    console.log(`${locale.englishName}:`, locale.maintainers.join(', '))
+  })
