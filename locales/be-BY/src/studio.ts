@@ -605,7 +605,7 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.aria-label': 'Групы палёў',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
-    "Гэта поле <strong>толькі для чытання</strong> згодна схеме дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.",
+    'Гэта поле <strong>толькі для чытання</strong> згодна схеме дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Выдаліць поле',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
