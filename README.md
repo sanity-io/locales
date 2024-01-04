@@ -6,7 +6,9 @@ Don't see your preferred locale here? [Request a new locale](https://github.com/
 
 ## Maintainers
 
-We keep these packages automatically updated with AI but we would like community contributors to help review changes and improve the AI translations. If you would like to participate please use the "Join" link next to your locale or submit a Request Maintainer issue from the Issues tab. You can still request to join if a package already has maintainers.
+We keep these packages automatically updated with AI but we would like community contributors to help review changes and improve the AI translations. If you would like to participate please use the "Join" link next to your locale or submit a Request Maintainer issue from the Issues tab. Maintainers receive a token of appreciation from Sanity. You can still request to join if a package already has maintainers.
+
+More information on being a maintainer, contributing to this project and a demo of how we use AI to create and keep translations updated can be found in [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Current locales
 
