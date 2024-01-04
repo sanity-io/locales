@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
+import {parseArgs} from 'node:util'
 import {autoTranslate, pushChanges} from '../api/autoTranslate'
 import {runScript} from '../util/runScript'
-import {parseArgs} from 'util'
 
 // Load environment variables from .env file, where API key for OpenAI is hopefully present.
 // The auto-translation will throw an error if the API key is missing.
