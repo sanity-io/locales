@@ -3,6 +3,13 @@ import type {LocaleRegistry} from '../src/types'
 // See CONTRIBUTING.md for more information on how to add a new locale
 const registry: LocaleRegistry = [
   {
+    id: 'be-BY',
+    name: 'Беларуская',
+    englishName: 'Belarusian',
+    maintainers: ['dogfrogfog', 'slawiko'],
+    contributors: [],
+  },
+  {
     id: 'cs-CZ',
     name: 'Čeština',
     englishName: 'Czech',
