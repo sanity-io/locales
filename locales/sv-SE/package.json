@@ -20,24 +20,7 @@
     "directory": "locales/sv-SE"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Henkisch",
-      "url": "https://github.com/Henkisch"
-    },
-    {
-      "name": "alexanderwarendh",
-      "url": "https://github.com/alexanderwarendh"
-    },
-    {
-      "name": "marcusforsberg",
-      "url": "https://github.com/marcusforsberg"
-    },
-    {
-      "name": "wisechimp",
-      "url": "https://github.com/wisechimp"
-    }
-  ],
+  "contributors": [],
   "type": "module",
   "exports": {
     ".": {
