@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
     'Esta imagen no se puede eliminar porque está en uso. Para eliminarla, primero necesita quitar todos los usos de la misma.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
-    'Mostrando solo activos de tipos aceptados: <strong>{{acceptTypes}}</strong>',
+    'Mostrando solo tipos de archivo aceptados: <strong>{{acceptTypes}}</strong>',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Seleccionar archivo',
@@ -358,7 +358,7 @@ export default removeUndefinedLocaleResources({
   'form.error.field-not-found':
     'Campo "{{fieldName}}" no encontrado entre los miembros – verifique que esté definido en el esquema y que no haya sido ocultado condicionalmente.',
   /** Add missing keys */
-  'form.error.missing-keys-alert.add-button.text': 'Agregar claves faltantes',
+  'form.error.missing-keys-alert.add-button.text': 'Añadir claves faltantes',
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.missing-keys-alert.details.additional-description':
     'El valor de la propiedad <code>_key</code> debe ser una cadena única.',
@@ -440,16 +440,16 @@ export default removeUndefinedLocaleResources({
     'Este documento no se puede abrir (no se puede resolver la URL al Estudio)',
 
   /** Label for adding item after a specific array item */
-  'inputs.array.action.add-after': 'Agregar elemento después',
+  'inputs.array.action.add-after': 'Añadir elemento después',
   /** Label for adding item before a specific array item */
-  'inputs.array.action.add-before': 'Agregar elemento antes',
+  'inputs.array.action.add-before': 'Añadir elemento antes',
   /** Label for adding array item action when the schema allows for only one schema type */
-  'inputs.array.action.add-item': 'Agregar elemento',
+  'inputs.array.action.add-item': 'Añadir elemento',
   /**
    * Label for adding one array item action when the schema allows for multiple schema types,
    * eg. will prompt the user to select a type once triggered
    */
-  'inputs.array.action.add-item-select-type': 'Agregar elemento...',
+  'inputs.array.action.add-item-select-type': 'Añadir elemento...',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Arrastrar para reordenar',
   /** Label for duplicating an array item  */
@@ -765,7 +765,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
     'Bloque de texto con clave <code>{{key}}</code> tiene una propiedad `children` inválida o faltante.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': 'Agregar propiedad',
+  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': 'Añadir propiedad',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description':
     'Bloque de texto con clave <code>{{key}}</code> tiene una propiedad `markDefs` inválida o faltante.',
@@ -1062,7 +1062,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Abrir búsqueda',
   /** Action label for adding a search filter */
-  'search.action.add-filter': 'Agregar filtro',
+  'search.action.add-filter': 'Añadir filtro',
   /** Action label for clearing search filters */
   'search.action.clear-filters': 'Limpiar filtros',
   /** Label for action to clear recent searches */
@@ -1094,7 +1094,7 @@ export default removeUndefinedLocaleResources({
    */
   'search.action.search-specific-types-truncated': 'Buscar {{types, list}} +{{count}} más',
   /** Dialog title for action to select an asset of unknown type */
-  'search.action.select-asset': 'Seleccionar activo',
+  'search.action.select-asset': 'Seleccionar archivo',
   /** Dialog title for action to select a file asset */
   'search.action.select-asset_file': 'Seleccionar archivo',
   /** Dialog title for action to select an image asset */
@@ -1138,9 +1138,9 @@ export default removeUndefinedLocaleResources({
     'Por favor, asegúrate de que esté habilitado en tu archivo de configuración del estudio.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'Actualmente, solo se admite la fuente de activos predeterminada.',
+    'Actualmente, solo se admite la fuente de archivos predeterminada.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': 'No se encontraron fuentes de activos válidas.',
+  'search.error.no-valid-asset-source-title': 'No se encontraron fuentes de archivos válidas.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-help-description':
     'Por favor, intenta de nuevo o verifica tu conexión',
@@ -1570,8 +1570,8 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Desde: versión desconocida',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': '{{count}} día restante en el periodo de prueba',
-  'user-menu.action.free-trial_other': '{{count}} días restantes en el periodo de prueba',
+  'user-menu.action.free-trial_one': '{{count}} día restante en el período de prueba',
+  'user-menu.action.free-trial_other': '{{count}} días restantes en el período de prueba',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': 'Actualizar desde la versión gratuita',
   /** Label for action to invite members to the current sanity project */

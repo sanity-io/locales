@@ -2,9 +2,9 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.delete.disabled.not-ready': 'Operación no lista',
+  'action.delete.disabled.not-ready': 'Operación no disponible',
   /** Tooltip when action button is disabled because the document does not exist */
-  'action.delete.disabled.nothing-to-delete': 'Este documento aún no existe o ya está eliminado',
+  'action.delete.disabled.nothing-to-delete': 'Este documento aún no existe o ya se ha eliminado',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Eliminar',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -17,11 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Este documento no está publicado',
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.discard-changes.disabled.not-ready': 'Operación no lista',
+  'action.discard-changes.disabled.not-ready': 'Operación no disponible',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Descartar cambios',
   /** Tooltip when action is disabled because the operation is not ready   */
-  'action.duplicate.disabled.not-ready': 'Operación no lista',
+  'action.duplicate.disabled.not-ready': 'Operación no disponible',
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Este documento aún no existe, por lo que no hay nada que duplicar',
@@ -34,17 +34,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publicado hace {{timeSincePublished}}',
   /** Tooltip when action is disabled because the studio is not ready.*/
-  'action.publish.disabled.not-ready': 'Operación no lista',
+  'action.publish.disabled.not-ready': 'Operación no disponible',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publicar',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publicar',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
   'action.publish.live-edit.publish-disabled':
-    'No se puede publicar ya que Live Edit está habilitado para este tipo de documento',
+    'No se puede publicar ya que la edición en vivo está habilitada para este tipo de documento',
   /** Tooltip for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.tooltip':
-    'Live Edit está habilitado para este tipo de contenido y la publicación ocurre automáticamente a medida que realizas cambios',
+    'La edición en vivo está habilitada para este tipo de contenido y los cambios se publicarán automáticamente a medida que se realicen',
   /** Tooltip when publish button is disabled because there are no changes.*/
   'action.publish.no-changes.tooltip': 'No hay cambios sin publicar',
   /** Label for the "Publish" document action when there are no changes.*/
@@ -68,7 +68,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Este documento no está publicado',
   /** Tooltip when action is disabled because the operation is not ready   */
-  'action.unpublish.disabled.not-ready': 'Operación no lista',
+  'action.unpublish.disabled.not-ready': 'Operación no disponible',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Despublicar',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -92,10 +92,10 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Tus roles <Roles/> no tienen permisos para actualizar este documento.',
   /** The text for the reload button */
-  'banners.reference-changed-banner.reason-changed.reload-button.text': 'Recargar referencia',
+  'banners.reference-changed-banner.reason-changed.reload-button.text': 'Refrescar referencia',
   /** The text for the reference change banner if the reason is that the reference has been changed */
   'banners.reference-changed-banner.reason-changed.text':
-    'Esta referencia ha cambiado desde que la abriste.',
+    'Esta referencia ha sido modificada desde que la abriste.',
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': 'Cerrar referencia',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
@@ -160,7 +160,7 @@ export default removeUndefinedLocaleResources({
     '¿Estás seguro de que quieres despublicar “<DocumentTitle/>”?',
   /** The text body of the error dialog. */
   'confirm-delete-dialog.error.message.text':
-    'Ocurrió un error al cargar los documentos de referencia.',
+    'Ocurrió un error al cargar los documentos referenciados.',
   /** The text in the retry button of the confirm delete dialog if an error occurred. */
   'confirm-delete-dialog.error.retry-button.text': 'Reintentar',
   /** The header of the confirm delete dialog if an error occurred while the confirm delete dialog was open. */
@@ -178,17 +178,17 @@ export default removeUndefinedLocaleResources({
     '{{count}} otras referencias no mostradas',
   /** Text in the tooltip of this component if hovering over the info icon */
   'confirm-delete-dialog.other-reference-count.tooltip':
-    'No podemos mostrar metadatos para estas referencias debido a un token de acceso faltante para los datasets relacionados.',
+    'No podemos mostrar metadatos para estas referencias debido a la ausencia de un token de acceso a los datasets relacionados.',
   /** Appears when unable to render a document preview in the referring document list */
   'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
   'confirm-delete-dialog.preview-item.preview-unavailable.title': 'Vista previa no disponible',
   /** Warns the user of affects to other documents if the action is confirmed (delete) */
   'confirm-delete-dialog.referential-integrity-disclaimer.text_delete':
-    'Si eliminas este documento, los documentos que se refieren a él ya no podrán acceder a él.',
+    'Si eliminas este documento, los documentos que lo referencian ya no podrán acceder a él.',
   /** Warns the user of affects to other documents if the action is confirmed (unpublish) */
   'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish':
-    'Si despublicas este documento, los documentos que se refieren a él ya no podrán acceder a él.',
+    'Si despublicas este documento, los documentos que lo referencian ya no podrán acceder a él.',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
   'confirm-delete-dialog.referring-document-count.text_one':
     '1 documento hace referencia a “<DocumentTitle/>”',
@@ -197,10 +197,10 @@ export default removeUndefinedLocaleResources({
     '{{count}} documentos hacen referencia a “<DocumentTitle/>”',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
   'confirm-delete-dialog.referring-documents-descriptor.text_delete':
-    'Puede que no puedas eliminar “<DocumentTitle/>” porque los siguientes documentos hacen referencia a él:',
+    'Puede que no puedas eliminar “<DocumentTitle/>” porque los siguientes documentos lo están referenciando:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
-    'Puede que no puedas despublicar “<DocumentTitle/>” porque los siguientes documentos hacen referencia a él:',
+    'Puede que no puedas despublicar “<DocumentTitle/>” porque los siguientes documentos lo están referenciando:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.cancel-button.fallback-text': 'Cancelar',
@@ -226,9 +226,9 @@ export default removeUndefinedLocaleResources({
   /** the placeholder text for the search input on the inspect dialog */
   'document-inspector.search.placeholder': 'Buscar',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
-  'document-inspector.view-mode.parsed': 'Analizado',
+  'document-inspector.view-mode.parsed': 'Interpretado',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
-  'document-inspector.view-mode.raw-json': 'JSON crudo',
+  'document-inspector.view-mode.raw-json': 'JSON sin formato',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Este formulario está oculto',
@@ -236,7 +236,7 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.loading': 'Cargando documento…',
   /** The description of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.description':
-    'Por favor, espera mientras se sincroniza el documento. Esto suele ocurrir justo después de que el documento ha sido publicado, y no debería tardar más de unos segundos',
+    'Por favor, espera mientras se sincroniza el documento. Esto suele ocurrir justo después de la publicación, y no debería tardar más de unos segundos',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sincronizando documento…',
 
@@ -261,7 +261,7 @@ export default removeUndefinedLocaleResources({
   'menu-items.sort-by.last-edited': 'Ordenar por Última edición',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
-  'no-document-types-screen.link-text': 'Aprenda cómo agregar un tipo de documento →',
+  'no-document-types-screen.link-text': 'Aprenda cómo añadir un tipo de documento →',
   /** The subtitle of the no document type screen that appears directly below the title */
   'no-document-types-screen.subtitle':
     'Por favor, defina al menos un tipo de documento en su esquema.',
@@ -282,7 +282,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
   'pane-item.draft-status.has-draft.tooltip': 'Editado <RelativeTime/>',
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
-  'pane-item.draft-status.no-draft.tooltip': 'Sin ediciones no publicadas',
+  'pane-item.draft-status.no-draft.tooltip': 'Sin cambios no publicados',
   /** The subtitle tor pane item previews if there isn't a matching schema type found */
   'pane-item.missing-schema-type.subtitle': 'Documento: <Code>{{documentId}}</Code>',
   /** The title tor pane item previews if there isn't a matching schema type found */
@@ -291,7 +291,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
   'pane-item.published-status.has-published.tooltip': 'Publicado <RelativeTime/>',
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
-  'pane-item.published-status.no-published.tooltip': 'Sin ediciones sin publicar',
+  'pane-item.published-status.no-published.tooltip': 'Sin cambios no publicados',
 
   /** The text used in the document header title if there is an error */
   'panes.document-header-title.error.text': 'Error: {{error}}',
@@ -324,10 +324,10 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-error': 'Ocurrió un error durante {{context}}',
   /** The text when a delete operation failed  */
   'panes.document-operation-results.operation-error_delete':
-    'Ocurrió un error al intentar eliminar este documento. Esto generalmente significa que hay otros documentos que se refieren a él.',
+    'Ocurrió un error al intentar eliminar este documento. Esto generalmente significa que hay otros documentos que lo referencian.',
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
-    'Ocurrió un error al intentar despublicar este documento. Esto generalmente significa que hay otros documentos que se refieren a él.',
+    'Ocurrió un error al intentar despublicar este documento. Esto generalmente significa que hay otros documentos que lo referencian.',
   /** The text when a generic operation succeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Se realizó con éxito {{context}} en el documento',
