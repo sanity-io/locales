@@ -163,17 +163,17 @@ export default removeUndefinedLocaleResources({
   /** Month name for September */
   'calendar.month-names.september': 'Szeptember',
   /** Short weekday name for Friday */
-  'calendar.weekday-names.short.friday': 'Pén',
+  'calendar.weekday-names.short.friday': 'Pé',
   /** Short weekday name for Monday */
-  'calendar.weekday-names.short.monday': 'Hét',
+  'calendar.weekday-names.short.monday': 'Hé',
   /** Short weekday name for Saturdayday */
   'calendar.weekday-names.short.saturday': 'Szo',
   /** Short weekday name for Sunday */
-  'calendar.weekday-names.short.sunday': 'Vas',
+  'calendar.weekday-names.short.sunday': 'Va',
   /** Short weekday name for Thursday */
-  'calendar.weekday-names.short.thursday': 'Csü',
+  'calendar.weekday-names.short.thursday': 'Csüt',
   /** Short weekday name for Tuesday */
-  'calendar.weekday-names.short.tuesday': 'Ked',
+  'calendar.weekday-names.short.tuesday': 'Ke',
   /** Short weekday name for Wednesday */
   'calendar.weekday-names.short.wednesday': 'Sze',
 
@@ -188,9 +188,9 @@ export default removeUndefinedLocaleResources({
   /** Revert for confirming revert (plural) label for field change action */
   'changes.action.revert-changes-confirm-change_other': 'Változások visszaállítása',
   /** Prompt for reverting changes for a field change */
-  'changes.action.revert-changes-description': 'Biztosan vissza akarja állítani a változásokat?',
+  'changes.action.revert-changes-description': 'Biztosan vissza akarod állítani a változásokat?',
   /** Prompt for reverting changes for a group change, eg multiple changes */
-  'changes.action.revert-changes-description_one': 'Biztosan vissza akarja állítani a változást?',
+  'changes.action.revert-changes-description_one': 'Biztosan vissza akarod állítani a változást?',
   /** Label for when the action of the change was to set something that was previously empty, eg a field was given a value, an array item was added, an asset was selected or similar */
   'changes.added-label': 'Hozzáadva',
   /** Array diff: An item was added in a given position (`{{position}}`) */
@@ -252,13 +252,13 @@ export default removeUndefinedLocaleResources({
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nincsenek változások',
   /** Portable Text diff: An annotation was added */
-  'changes.portable-text.annotation_added': 'Hozzáfűzés hozzáadva',
+  'changes.portable-text.annotation_added': 'Megjegyzés hozzáadva',
   /** Portable Text diff: An annotation was changed */
-  'changes.portable-text.annotation_changed': 'Hozzáfűzés megváltozott',
+  'changes.portable-text.annotation_changed': 'Megjegyzés megváltozott',
   /** Portable Text diff: An annotation was removed */
-  'changes.portable-text.annotation_removed': 'Hozzáfűzés eltávolítva',
+  'changes.portable-text.annotation_removed': 'Megjegyzés eltávolítva',
   /** Portable Text diff: An annotation was left unchanged */
-  'changes.portable-text.annotation_unchanged': 'Hozzáfűzés változatlan',
+  'changes.portable-text.annotation_unchanged': 'Megjegyzés változatlan',
   /** Portable Text diff: A block changed from one style to another (eg `normal` to `h1` or similar) */
   'changes.portable-text.block-style-changed':
     'A blokk stílusa megváltozott "{{fromStyle}}"-ről "{{toStyle}}"-re',
@@ -346,7 +346,7 @@ export default removeUndefinedLocaleResources({
   'form.error.duplicate-keys-alert.generate-button.text': 'Egyedi kulcsok generálása',
   /** Several items in this list share the same identifier (key). Every item must have an unique identifier. */
   'form.error.duplicate-keys-alert.summary':
-    'Több elem ebben a listában osztozik ugyanazon azonosítón (kulcson). Minden elemnek egyedi azonosítóval kell rendelkeznie.',
+    'Ebben a listában több elemenek egyezik az azonosítója (kulcsa). Minden elemnek egyedi azonosítóval kell rendelkeznie.',
   /** Non-unique keys */
   'form.error.duplicate-keys-alert.title': 'Nem egyedi kulcsok',
   /** Error text shown when a field with a given name cannot be found in the schema or is conditionally hidden but explicitly told to render  */
@@ -376,7 +376,7 @@ export default removeUndefinedLocaleResources({
   'form.error.mixed-array-alert.remove-button.text': 'Nem objektum értékek eltávolítása',
   /** Some items in this list are not objects. This must be fixed in order to edit the list. */
   'form.error.mixed-array-alert.summary':
-    'Néhány elem ebben a listában nem objektumok. Ezt javítani kell a lista szerkesztéséhez.',
+    'Néhány elem ebben a listában nem objektum. Ezt javítani kell a lista szerkesztéséhez.',
   /** Invalid list values */
   'form.error.mixed-array-alert.title': 'Érvénytelen lista értékek',
   /** Error text shown when form is unable to find an array item at a given indexed path */
@@ -672,7 +672,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.activate-on-focus-message_click-focused':
     'Kattints vagy nyomd meg a szóközt az aktiváláshoz',
   /** Label for activate on focus with context of tap and not focused */
-  'inputs.portable-text.activate-on-focus-message_tap': 'Koppintson az aktiváláshoz',
+  'inputs.portable-text.activate-on-focus-message_tap': 'Koppints az aktiváláshoz',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Szerkesztés {{schemaType}}',
   /** Title of the default "link" annotation */
@@ -705,7 +705,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.inline-object.remove': 'Objektum eltávolítása',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
-    'MEGJEGYZÉS: Általában biztonságos elvégezni a fenti műveletet, de ha kétségei vannak, lépjen kapcsolatba azokkal, akik felelősek a stúdió konfigurálásáért.',
+    'MEGJEGYZÉS: Általában biztonságos elvégezni a fenti műveletet, de ha kétségeid vannak, lépj kapcsolatba azokkal, akik felelősek a stúdió konfigurálásáért.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
   'inputs.portable-text.invalid-value.disallowed-child-type.action': 'Objektum eltávolítása',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
@@ -780,7 +780,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.not-an-array.action': 'Az érték törlése',
   /** Text explaining that the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
   'inputs.portable-text.invalid-value.not-an-array.description':
-    'Az értéknek Portable Text blokkokból álló tömbnek vagy undefined-nak kell lennie.',
+    'Az értéknek Portable Text blokkokból álló tömbnek vagy `undefined`-nak kell lennie.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is not an object */
   'inputs.portable-text.invalid-value.not-an-object.action': 'Elem eltávolítása',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is not an object */
@@ -974,36 +974,36 @@ export default removeUndefinedLocaleResources({
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
-    'Nincs jogosultsága hozzáférni ehhez a funkcióhoz.',
+    'Nincs jogosultságod hozzáférni ehhez a funkcióhoz.',
   /** The explanation when unable to create any document at all */
   'insufficient-permissions-message.not-authorized-explanation_create-any-document':
-    'Nincs jogosultsága dokumentumot létrehozni.',
+    'Nincs jogosultságod dokumentumot létrehozni.',
   /** The explanation when unable to create a particular document */
   'insufficient-permissions-message.not-authorized-explanation_create-document':
-    'Nincs jogosultsága ezt a dokumentumot létrehozni.',
+    'Nincs jogosultságod ezt a dokumentumot létrehozni.',
   /** The explanation when unable to create a particular type of document */
   'insufficient-permissions-message.not-authorized-explanation_create-document-type':
-    'Nincs jogosultsága ilyen típusú dokumentumot létrehozni.',
+    'Nincs jogosultságod ilyen típusú dokumentumot létrehozni.',
   /** The explanation when unable to create a new reference in a document */
   'insufficient-permissions-message.not-authorized-explanation_create-new-reference':
-    'Nincs jogosultsága új hivatkozást létrehozni.',
+    'Nincs jogosultságod új hivatkozást létrehozni.',
   /** The explanation when unable to delete a particular document */
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
-    'Nincs jogosultsága ezt a dokumentumot törölni.',
+    'Nincs jogosultságod ezt a dokumentumot törölni.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
-    'Nincs jogosultsága a változtatások elvetésére ebben a dokumentumban.',
+    'Nincs jogosultságod a változtatások elvetésére ebben a dokumentumban.',
   /** The explanation when unable to duplicate a particular document */
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
-    'Nincs jogosultsága ezt a dokumentumot duplikálni.',
+    'Nincs jogosultságod ezt a dokumentumot duplikálni.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
-    'Nincs jogosultsága ezt a dokumentumot közzétenni.',
+    'Nincs jogosultságod ezt a dokumentumot közzétenni.',
   /** The explanation when unable to unpublish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_unpublish-document':
-    'Nincs jogosultsága ezt a dokumentumot visszavonni.',
+    'Nincs jogosultságod ezt a dokumentumot visszavonni.',
   /** Appears after the not-authorized message. Lists the current roles. */
-  'insufficient-permissions-message.roles': 'Az Ön szerepei: <Roles/>',
+  'insufficient-permissions-message.roles': 'A szerepeid: <Roles/>',
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nem megfelelő jogosultságok',
 
@@ -1043,7 +1043,7 @@ export default removeUndefinedLocaleResources({
   'presence.aria-label': 'Ki van itt',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
-    'Hívjon meg embereket a projektre, hogy lássa az online státuszukat.',
+    'Hívj meg embereket a projektre, hogy lásd az online státuszukat.',
   /** Message title for when no one else is currently present */
   'presence.no-one-else-title': 'Senki más nincs itt',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
@@ -1209,7 +1209,7 @@ export default removeUndefinedLocaleResources({
   'search.instructions': 'Használja a <ControlsIcon/>-t a keresés finomításához',
   /** Helpful description for when no search results are found */
   'search.no-results-help-description':
-    'Próbáljon meg egy másik kulcsszót vagy állítsa be a szűrőket',
+    'Próbálj meg egy másik kulcsszót vagy állítsd be a szűrőket',
   /** Title label for when no search results are found */
   'search.no-results-title': 'Nincs találat',
   /**
@@ -1256,21 +1256,21 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-gte.name': 'mennyiség több vagy egyenlő',
   /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
-    '<Field/> <Operator>van <</Operator> <Value>{{count}} elem</Value>',
+    '<Field/> <Operator><</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lt.description_other':
-    '<Field/> <Operator>van <</Operator> <Value>{{count}} elem</Value>',
+    '<Field/> <Operator><</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lt.name': 'mennyiség kevesebb mint',
   /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
-    '<Field/> <Operator>van ≤</Operator> <Value>{{count}} elem</Value>',
+    '<Field/> <Operator>≤</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lte.description_other':
-    '<Field/> <Operator>van ≤</Operator> <Value>{{count}} elem</Value>',
+    '<Field/> <Operator>≤</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lte.name': 'mennyiség kevesebb vagy egyenlő',
   /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
-    '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{count}} elem</Value>',
+    '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{count}} elemet</Value>',
   'search.operator.array-count-not-equal.description_other':
-    '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{count}} elem</Value>',
+    '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{count}} elemet</Value>',
   'search.operator.array-count-not-equal.name': 'mennyiség nem az',
   /**
    * Array should have a count within the range of given filter values.
@@ -1612,9 +1612,9 @@ export default removeUndefinedLocaleResources({
    * workspace. In other words, label for the action shown when you have reconsidered which
    * workspace to authenticate in.
    */
-  'workspaces.action.choose-another-workspace': 'Válasszon másik munkaterületet',
+  'workspaces.action.choose-another-workspace': 'Válassz másik munkaterületet',
   /** Label for heading that indicates that you can choose your workspace */
-  'workspaces.choose-your-workspace-label': 'Válassza ki a munkaterületet',
+  'workspaces.choose-your-workspace-label': 'Válasszd ki a munkaterületet',
   /** Label for the workspace menu */
   'workspaces.select-workspace-aria-label': 'Munkaterület kiválasztása',
   /** Button label for opening the workspace switcher */

@@ -6,11 +6,11 @@ export default removeUndefinedLocaleResources({
   /** Portable Text array must have exactly "$wantedLength" blocks, but has more/less */
   'array.exact-length_blocks': 'Pontosan {{wantedLength}} blokkot kell tartalmaznia',
   /** Array item is a duplicate, but array wants only unique items */
-  'array.item-duplicate': 'Nem lehet duplikátum',
+  'array.item-duplicate': 'Nem lehet másolat',
   /** Array has more than the maximum of "$maxLength" items */
-  'array.maximum-length': 'Legfeljebb {{maxLength}} elemet kell tartalmaznia',
+  'array.maximum-length': 'Legfeljebb {{maxLength}} elemet tartalmazhat',
   /** Portable Text array has more than the maximum of "$maxLength" items */
-  'array.maximum-length_blocks': 'Legfeljebb {{maxLength}} blokkot kell tartalmaznia',
+  'array.maximum-length_blocks': 'Legfeljebb {{maxLength}} blokkot tartalmazhat',
   /** Array has less than the minimum of "$minLength" items */
   'array.minimum-length': 'Legalább {{minLength}} elemet kell tartalmaznia',
   /** Portable Text array has less than the minimum of "$minLength" blocks */
@@ -19,9 +19,9 @@ export default removeUndefinedLocaleResources({
   /** Date is not valid or not in the correct format (ISO-8601) */
   'date.invalid-format': 'Érvényes ISO-8601 formátumú dátumnak kell lennie',
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': 'Legkésőbb {{maxDate}} időpontig kell lennie',
+  'date.maximum': 'Legkésőbb {{maxDate}} időpontig tartó dátumnak kell lennie',
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': 'Legkorábban {{minDate}} időponttól kell lennie',
+  'date.minimum': 'Legkorábban {{minDate}} időponttól kezdődő dátumnak kell lennie',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
   'generic.incorrect-type': 'Várt típus: "{{expectedType}}", kapott: "{{actualType}}"',
@@ -46,7 +46,7 @@ export default removeUndefinedLocaleResources({
   'number.non-integer': 'Egész számnak kell lennie',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': 'Vagyontárgy szükséges',
+  'object.asset-required': 'Médiaerőforrás szükséges',
   /** Object is missing a reference to a file asset document in its `asset` field */
   'object.asset-required_file': 'Fájl szükséges',
   /** Object is missing a reference to an image asset document in its `asset` field */
@@ -57,11 +57,11 @@ export default removeUndefinedLocaleResources({
   'object.reference-not-published': 'A hivatkozott dokumentumnak közzétettnek kell lennie',
 
   /** Accessibility label for closing the validation panel */
-  'panel.close-button-aria-label': 'Érvényességvizsgálat bezárása',
+  'panel.close-button-aria-label': 'Validálás bezárása',
   /** Message shown when the validation panel is opened but there are no errors/warnings */
-  'panel.no-errors-message': 'Nincsenek érvényességvizsgálati hibák',
+  'panel.no-errors-message': 'Nincsenek validálási hibák',
   /** Title for the actual "Validation" panel/feature */
-  'panel.title': 'Érvényességvizsgálat',
+  'panel.title': 'Validálás',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'A slug-nak értékkel kell rendelkeznie',

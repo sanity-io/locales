@@ -2,7 +2,7 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.delete.disabled.not-ready': 'A művelet még nem kész',
+  'action.delete.disabled.not-ready': 'A művelet még nincs kész',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Ez a dokumentum még nem létezik vagy már törölve lett',
@@ -12,7 +12,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.running.label': 'Törlés…',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
-    'Biztosan el akarja dobni az összes változtatást az utolsó közzététel óta?',
+    'Biztosan el akarod vetni az összes változtatást az utolsó közzététel óta?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change':
     'Ennek a dokumentumnak nincsenek közzé nem tett változásai',
@@ -60,7 +60,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.waiting': 'Várakozás a feladatok befejezésére a közzététel előtt',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
   'action.restore.confirm-dialog.confirm-discard-changes':
-    'Biztosan vissza szeretné állítani ezt a dokumentumot?',
+    'Biztosan vissza szeretnéd állítani ezt a dokumentumot?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Nem állítható vissza az eredeti verzióra',
   /** Label for the "Restore" document action */
@@ -83,26 +83,26 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Ez a dokumentum törölve lett.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Az Ön szerepköre <Roles/> nem rendelkezik jogosultsággal a dokumentum létrehozására.',
+    'A szerepköröd <Roles/> nem rendelkezik jogosultsággal a dokumentum létrehozására.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Az Ön szerepkörei <Roles/> nem rendelkeznek jogosultsággal a dokumentum létrehozására.',
+    'A szerepköreid <Roles/> nem rendelkeznek jogosultsággal a dokumentum létrehozására.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Az Ön szerepköre <Roles/> nem rendelkezik jogosultsággal a dokumentum frissítésére.',
+    'A szerepköreid <Roles/> nem rendelkezik jogosultsággal a dokumentum frissítésére.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    'Az Ön szerepkörei <Roles/> nem rendelkeznek jogosultsággal a dokumentum frissítésére.',
+    'A szerepköreid <Roles/> nem rendelkeznek jogosultsággal a dokumentum frissítésére.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Hivatkozás újratöltése',
   /** The text for the reference change banner if the reason is that the reference has been changed */
   'banners.reference-changed-banner.reason-changed.text':
-    'Ez a hivatkozás megváltozott, mióta megnyitotta.',
+    'Ez a hivatkozás megváltozott, mióta megnyitottad.',
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': 'Hivatkozás bezárása',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
-    'Ez a hivatkozás eltávolításra került, mióta megnyitotta.',
+    'Ez a hivatkozás eltávolításra került, mióta megnyitottad.',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Dokumentum műveletek megnyitása',
@@ -156,10 +156,10 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Visszavonás most',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
-    'Biztosan törölni szeretné a(z) “<DocumentTitle/>” dokumentumot?',
+    'Biztosan törölni szeretnéd a(z) “<DocumentTitle/>” dokumentumot?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
-    'Biztosan vissza szeretné vonni a(z) “<DocumentTitle/>” dokumentumot?',
+    'Biztosan vissza szeretnéd vonni a(z) “<DocumentTitle/>” dokumentumot?',
   /** The text body of the error dialog. */
   'confirm-delete-dialog.error.message.text':
     'Hiba történt a hivatkozó dokumentumok betöltése közben.',
@@ -199,10 +199,10 @@ export default removeUndefinedLocaleResources({
     '{{count}} dokumentum hivatkozik a(z) „<DocumentTitle/>” dokumentumra',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
   'confirm-delete-dialog.referring-documents-descriptor.text_delete':
-    'Lehet, hogy nem tudja törölni a(z) „<DocumentTitle/>” dokumentumot, mert a következő dokumentumok hivatkoznak rá:',
+    'Lehet, hogy nem tudod törölni a(z) „<DocumentTitle/>” dokumentumot, mert a következő dokumentumok hivatkoznak rá:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
-    'Lehet, hogy nem tudja leveszi a közzétételt a(z) „<DocumentTitle/>” dokumentumról, mert a következő dokumentumok hivatkoznak rá:',
+    'Lehet, hogy nem tudod leveszi a közzétételt a(z) „<DocumentTitle/>” dokumentumról, mert a következő dokumentumok hivatkoznak rá:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.cancel-button.fallback-text': 'Mégse',
@@ -238,7 +238,7 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.loading': 'Dokumentum betöltése…',
   /** The description of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.description':
-    'Kérjük, várjon, amíg a dokumentum szinkronizálódik. Ez általában közvetlenül a dokumentum közzététele után történik, és nem kellene többet igénybe vennie néhány másodpercnél',
+    'Kérjük, várj, amíg a dokumentum szinkronizálódik. Ez általában közvetlenül a dokumentum közzététele után történik, és nem kellene többet igénybe vennie néhány másodpercnél',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Dokumentum szinkronizálása…',
 
@@ -263,10 +263,10 @@ export default removeUndefinedLocaleResources({
   'menu-items.sort-by.last-edited': 'Rendezés utoljára szerkesztett szerint',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
-  'no-document-types-screen.link-text': 'Tudjon meg többet a dokumentumtípus hozzáadásáról →',
+  'no-document-types-screen.link-text': 'Tudj meg többet a dokumentumtípus hozzáadásáról →',
   /** The subtitle of the no document type screen that appears directly below the title */
   'no-document-types-screen.subtitle':
-    'Kérjük, definiáljon legalább egy dokumentumtípust a sémájában.',
+    'Kérjük, definiálj legalább egy dokumentumtípust a sémájában.',
   /** The title of the no document type screen */
   'no-document-types-screen.title': 'Nincsenek dokumentumtípusok',
 
