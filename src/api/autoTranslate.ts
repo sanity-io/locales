@@ -55,6 +55,8 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         continue
       }
 
+      let numTranslatedInNamespace = 0
+
       // Group entry.missingKeys into max 25 keys per request
       const BATCH_SIZE = 25
       const batches = []
@@ -92,13 +94,14 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
 
           val.value = translation[key.key]
           numTotalTranslated++
+          numTranslatedInNamespace++
         }
+      }
 
-        // Write the bundle back to disk
-        for (const {filePath, resources} of locale.namespaces) {
-          const moduleCode = buildResourceBundle(resources)
-          await writeFormattedFile(filePath, moduleCode)
-        }
+      // Only write back changes if there are actual changes
+      if (numTranslatedInNamespace > 0) {
+        const moduleCode = buildResourceBundle(ns.resources)
+        await writeFormattedFile(ns.filePath, moduleCode)
       }
     }
   }
