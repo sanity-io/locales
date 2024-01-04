@@ -58,12 +58,12 @@ export default removeUndefinedLocaleResources({
    * Label for the "Perspective" dropdown in vision settings
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
-  'settings.perspective-label': 'Nézet',
+  'settings.perspective-label': 'Perspective',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Dokumentáció olvasása',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'A Perspectives lehetővé teszi a lekérdezés futtatását a dataset különböző "nézetei" ellen',
   /** Title for popover that explains what "Perspectives" are */
-  'settings.perspectives.title': 'Nézetek',
+  'settings.perspectives.title': 'Perspectives',
 })
