@@ -159,6 +159,9 @@ importers:
       '@sanity/locale-tr-tr':
         specifier: workspace:*
         version: link:../../locales/tr-TR
+      '@sanity/locale-uk-ua':
+        specifier: workspace:*
+        version: link:../../locales/uk-UA
       '@sanity/locale-vi-vn':
         specifier: workspace:*
         version: link:../../locales/vi-VN
@@ -318,6 +321,12 @@ importers:
         version: 3.23.4(@types/node@18.18.14)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.6)
 
   locales/tr-TR:
+    dependencies:
+      sanity:
+        specifier: ^3.22.0
+        version: 3.23.4(@types/node@18.18.14)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.6)
+
+  locales/uk-UA:
     dependencies:
       sanity:
         specifier: ^3.22.0

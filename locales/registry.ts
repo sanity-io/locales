@@ -136,6 +136,13 @@ const registry: LocaleRegistry = [
     contributors: [],
   },
   {
+    id: 'uk-UA',
+    name: 'Українська',
+    englishName: 'Ukrainian',
+    maintainers: ['fomazov'],
+    contributors: [],
+  },
+  {
     id: 'vi-VN',
     name: 'Tiếng Việt',
     englishName: 'Vietnamese',
