@@ -39,18 +39,18 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^2.0.0-beta.13",
+    "@sanity/ui": "^2.0.0-beta.14",
     "@sanity/vision": "^3.23.4",
     "groq": "^3.23.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "sanity": "^3.23.4",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.6"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.1",
-    "@types/react": "^18.2.44",
+    "@types/react": "^18.2.46",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3"

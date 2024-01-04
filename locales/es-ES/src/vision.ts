@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Versión personalizada de la API',
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': 'Conjunto de datos',
+  'settings.dataset-label': 'Dataset',
   /** Error label for when the API version in 'Custom API version' input is invalid */
   'settings.error.invalid-api-version': 'Versión de la API inválida',
   /** Label for the "other" versions within the "API version" dropdown */
@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.action.docs-link': 'Leer documentación',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
-    'Las perspectivas permiten que tu consulta se ejecute contra diferentes "vistas" del contenido en tu conjunto de datos',
+    'Las perspectivas permiten que tu consulta se ejecute contra diferentes "vistas" del contenido en tu dataset',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectivas',
 })

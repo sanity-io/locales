@@ -47,7 +47,7 @@ export default removeUndefinedLocaleResources({
   'number.non-integer': 'Debe ser un número entero',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': 'Se requiere un activo',
+  'object.asset-required': 'Se requiere un archivo',
   /** Object is missing a reference to a file asset document in its `asset` field */
   'object.asset-required_file': 'Se requiere un archivo',
   /** Object is missing a reference to an image asset document in its `asset` field */
@@ -76,7 +76,7 @@ export default removeUndefinedLocaleResources({
   /** String has a different character length than the exact number "$wantedLength" */
   'string.exact-length': 'Debe tener exactamente {{wantedLength}} caracteres de longitud',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': 'Debe estar en caracteres minúsculas',
+  'string.lowercase': 'Debe estar en minúsculas',
   /** String is longer than the limit of "$maxLength" characters */
   'string.maximum-length': 'Debe tener como máximo {{maxLength}} caracteres de longitud',
   /** String is shorter than the limit of "$minLength" characters */
@@ -86,7 +86,7 @@ export default removeUndefinedLocaleResources({
   /** String matches the given regular expression, but should not */
   'string.regex-match': 'No debe coincidir con el patrón "{{name}}"',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': 'Debe estar en caracteres mayúsculas',
+  'string.uppercase': 'Debe estar en mayúsculas',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
   'string.url.disallowed-scheme': 'No coincide con los protocolos/esquemas permitidos',
   /** String contains a URL with a username or password specified before the host */
