@@ -27,6 +27,7 @@ jobs:
 
       - run: pnpm install --ignore-scripts
       - run: pnpm reconcile
+      - run: pnpm format
       - run: git restore .github/workflows pnpm-lock.yaml
       - uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2
         id: generate-token
@@ -36,9 +37,9 @@ jobs:
       - uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          body: I ran `pnpm reconcile` 🧑‍💻
+          body: I ran `pnpm reconcile + pnpm format` 🧑‍💻
           branch: actions/reconcile
-          commit-message: 'fix: reconcile'
+          commit-message: 'fix: reconcile + prettify'
           labels: 🤖 bot
-          title: 'fix: reconcile'
+          title: 'fix: reconcile + prettify'
           token: ${{ steps.generate-token.outputs.token }}

@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@babel/generator": "^7.23.6",
-    "@babel/traverse": "^7.23.6",
+    "@babel/traverse": "^7.23.7",
     "@babel/types": "^7.23.6",
     "@sanity/pkg-utils": "^3.3.5",
     "@sanity/vision": "^3.23.4",

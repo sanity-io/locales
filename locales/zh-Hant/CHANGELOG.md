@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/sanity-io/locales/compare/locale-zh-hant-v2.0.1...locale-zh-hant-v2.1.0) (2024-01-04)
+
+
+### Features
+
+* add new maintainers ([#206](https://github.com/sanity-io/locales/issues/206)) ([d88f730](https://github.com/sanity-io/locales/commit/d88f730245daf267354ceb85ffbc2ff3497962b7))
+
 ## [2.0.1](https://github.com/sanity-io/locales/compare/locale-zh-hant-v2.0.0...locale-zh-hant-v2.0.1) (2023-12-19)
 
 

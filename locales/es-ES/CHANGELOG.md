@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-es-es-v1.0.1...locale-es-es-v1.1.0) (2024-01-04)
+
+
+### Features
+
+* add new maintainers ([#206](https://github.com/sanity-io/locales/issues/206)) ([d88f730](https://github.com/sanity-io/locales/commit/d88f730245daf267354ceb85ffbc2ff3497962b7))
+* **es-ES:** fix es-ES translations ([#211](https://github.com/sanity-io/locales/issues/211)) ([e8906dd](https://github.com/sanity-io/locales/commit/e8906dddecc73504c5728ba076922f4a08684037))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-es-es-v1.0.0...locale-es-es-v1.0.1) (2023-12-19)
 
 

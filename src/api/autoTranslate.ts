@@ -24,10 +24,10 @@ export interface AutoTranslateOptions {
  * Writes back the translations to namespace files on success.
  *
  * @param options - Options for the auto translate operation
- * @returns A promise that resolves when all resources have been translated
+ * @returns A promise that resolves with the total number of autotranslated resources
  * @internal
  */
-export async function autoTranslate(options: AutoTranslateOptions): Promise<void> {
+export async function autoTranslate(options: AutoTranslateOptions): Promise<number> {
   const {targetLocales, namespaces, logger = noop} = options
   const {locales} = await getOrderedResources()
 
@@ -36,11 +36,13 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<void
     return !targetLocales || targetLocales.includes(locale.id)
   })
 
+  let numTotalTranslated = 0
+
   for (const locale of filteredLocales) {
     const missingResources = await findMissingResources(locale)
     const localeName = locale.englishName || locale.name
 
-    for await (const entry of missingResources) {
+    for (const entry of missingResources) {
       if (namespaces && !namespaces.includes(entry.namespace)) {
         continue
       }
@@ -52,6 +54,8 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<void
         logger(`Could not find namespace ${entry.namespace} in locale ${localeName}`)
         continue
       }
+
+      let numTranslatedInNamespace = 0
 
       // Group entry.missingKeys into max 25 keys per request
       const BATCH_SIZE = 25
@@ -70,7 +74,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<void
       }
 
       // For each of the batches, translate the keys
-      for await (const currentBatch of batches) {
+      for (const currentBatch of batches) {
         const tpl = templateMissingResources(ns.indexedResources, currentBatch)
         logger(
           `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
@@ -81,21 +85,28 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<void
         const translation = JSON.parse(await translateText(tpl, localeName))
 
         // Set the values from translation into the namespace
-        currentBatch.forEach((key) => {
+        for (const key of currentBatch) {
           const val = ns.indexedResources[key.key]
-          if (val) {
-            val.value = translation[key.key]
+          // eslint-disable-next-line max-depth
+          if (!val) {
+            continue
           }
-        })
 
-        // Write the bundle back to disk
-        for (const {filePath, resources} of locale.namespaces) {
-          const moduleCode = buildResourceBundle(resources)
-          await writeFormattedFile(filePath, moduleCode)
+          val.value = translation[key.key]
+          numTotalTranslated++
+          numTranslatedInNamespace++
         }
+      }
+
+      // Only write back changes if there are actual changes
+      if (numTranslatedInNamespace > 0) {
+        const moduleCode = buildResourceBundle(ns.resources)
+        await writeFormattedFile(ns.filePath, moduleCode)
       }
     }
   }
+
+  return numTotalTranslated
 }
 
 /**
