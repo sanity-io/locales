@@ -22,6 +22,7 @@
     "@sanity/locale-es-es": "workspace:*",
     "@sanity/locale-fi-fi": "workspace:*",
     "@sanity/locale-fr-fr": "workspace:*",
+    "@sanity/locale-hu-hu": "workspace:*",
     "@sanity/locale-is-is": "workspace:*",
     "@sanity/locale-it-it": "workspace:*",
     "@sanity/locale-ja-jp": "workspace:*",
