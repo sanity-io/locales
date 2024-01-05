@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
     'Ova slika se ne može izbrisati jer se koristi. Da biste je izbrisali, prvo morate ukloniti sve njene upotrebe.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
-    'Prikazuju se samo imovina prihvaćenih tipova: <strong>{{acceptTypes}}</strong>',
+    'Prikazuju se samo datoteke prihvaćenih tipova: <strong>{{acceptTypes}}</strong>',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Odaberite datoteku',
@@ -87,26 +87,26 @@ export default removeUndefinedLocaleResources({
     '{{count}} dokumenata koristi datoteku <code>{{filename}}</code>',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *named* file **/
   'asset-source.usage-list.documents-using-file_named_zero':
-    'Nijedan dokument ne koristi datoteku <code>{{filename}}</code>',
+    'Niti jedan dokument ne koristi datoteku <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_unnamed_one': 'Jedan dokument koristi ovu datoteku',
   'asset-source.usage-list.documents-using-file_unnamed_other':
     '{{count}} dokumenata koristi ovu datoteku',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *unnamed* file **/
   'asset-source.usage-list.documents-using-file_unnamed_zero':
-    'Nijedan dokument ne koristi ovu datoteku',
+    'Niti jedan dokument ne koristi ovu datoteku',
   'asset-source.usage-list.documents-using-image_named_one':
     'Jedan dokument koristi sliku <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-image_named_other':
     '{{count}} dokumenata koristi sliku <code>{{filename}}</code>',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
   'asset-source.usage-list.documents-using-image_named_zero':
-    'Nijedan dokument ne koristi sliku <code>{{filename}}</code>',
+    'Niti jedan dokument ne koristi sliku <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-image_unnamed_one': 'Jedan dokument koristi ovu sliku',
   'asset-source.usage-list.documents-using-image_unnamed_other':
     '{{count}} dokumenta koriste ovu sliku',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero':
-    'Nijedan dokument ne koristi ovu sliku',
+    'Niti jedan dokument ne koristi ovu sliku',
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Idi na sljedeći mjesec',
@@ -180,7 +180,7 @@ export default removeUndefinedLocaleResources({
   /** Cancel label for revert button prompt action */
   'changes.action.revert-all-cancel': 'Odustani',
   /** Revert all confirm label for revert button action - used on prompt button + review changes pane */
-  'changes.action.revert-all-confirm': 'Vrati sve',
+  'changes.action.revert-all-confirm': 'Vrati sve promjene',
   /** Prompt for confirming revert change (singular) label for field change action */
   'changes.action.revert-changes-confirm-change_one': 'Vrati promjenu',
   /** Revert for confirming revert (plural) label for field change action */
@@ -338,7 +338,7 @@ export default removeUndefinedLocaleResources({
     'Vrijednost svojstva <code>_key</code> mora biti jedinstveni niz.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely. */
   'form.error.duplicate-keys-alert.details.description':
-    'To se obično događa kada se stavke stvaraju pomoću API klijenta, i svojstvo <code>_key</code> svakog elementa je generirano na nejedinstven način.',
+    'To se obično događa kada se stavke stvaraju pomoću API klijenta i svojstvo <code>_key</code> svakog elementa je generirano na nejedinstven način.',
   /** Developer info */
   'form.error.duplicate-keys-alert.details.title': 'Informacije za developere',
   /** Generate unique keys */
@@ -534,7 +534,7 @@ export default removeUndefinedLocaleResources({
     'Ovdje nije moguće prenijeti ovu datoteku',
   /** Can't upload any of these files here */
   'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_other':
-    'Ovdje nije moguće prenijeti nijednu od ovih datoteka',
+    'Ovdje nije moguće prenijeti niti jednu od ovih datoteka',
   /** `{{count}}` file can't be uploaded here */
   'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_one':
     '{{count}} datoteka se ne može prenijeti ovdje',
@@ -603,7 +603,7 @@ export default removeUndefinedLocaleResources({
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Greška: {{errorMessage}}',
   /** Hotspot & Crop */
-  'inputs.imagetool.title': 'Hotspot & Obrezivanje',
+  'inputs.imagetool.title': 'Izrez i Obrezivanje',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Pretvori u {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -650,11 +650,11 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_one': 'Nepoznato polje pronađeno',
   'inputs.object.unknown-fields.warning.title_other': 'Nepoznata polja pronađena',
   /** Collapse the editor to save screen space  */
-  'inputs.portable-text.action.collapse-editor': 'Skupi urednik',
+  'inputs.portable-text.action.collapse-editor': 'Skupi uređivač',
   /** Label for action to edit an existing annotation */
   'inputs.portable-text.action.edit-annotation': 'Uredi anotaciju',
   /** Expand the editor to give more editing space */
-  'inputs.portable-text.action.expand-editor': 'Proširi urednik',
+  'inputs.portable-text.action.expand-editor': 'Proširi uređivač',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-block': 'Umetni {{typeName}}',
   /** Accessibility label for action to insert a block of a given type (`{{typeName}}`) */
@@ -704,7 +704,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.inline-object.remove': 'Ukloni objekt',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
-    'NAPOMENA: Općenito je sigurno izvršiti gore navedenu radnju, ali ako ste u nedoumici, obratite se onima koji su odgovorni za konfiguraciju vašeg studija.',
+    'NAPOMENA: Općenito je sigurno izvršiti gore navedenu radnju, ali ako ste u nedoumici, obratite se onima koji su odgovorni za konfiguraciju vašeg Studija.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
   'inputs.portable-text.invalid-value.disallowed-child-type.action': 'Ukloni objekt',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
@@ -951,7 +951,7 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.convert-button.text': 'Pretvori u {{targetType}}',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
-    'Naišlo se na objektnu vrijednost bez svojstva <code>_type</code>.',
+    'Naišlo se na vrijednost objekta bez svojstva <code>_type</code>.',
   /** Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items. */
   'inputs.untyped-value.details.description':
     'Ili uklonite svojstvo <code>name</code> iz deklaracije objekta, ili postavite svojstvo <code>_type</code> na stavkama.',
@@ -1083,7 +1083,7 @@ export default removeUndefinedLocaleResources({
    */
   'search.action.search-specific-types': 'Pretraži za {{types, list}}',
   /** Dialog title for action to select an asset of unknown type */
-  'search.action.select-asset': 'Odaberi imovinu',
+  'search.action.select-asset': 'Odaberi datoteku',
   /** Dialog title for action to select a file asset */
   'search.action.select-asset_file': 'Odaberi datoteku',
   /** Dialog title for action to select an image asset */
@@ -1118,12 +1118,12 @@ export default removeUndefinedLocaleResources({
   'search.error.display-filter-title': 'Došlo je do pogreške prilikom prikazivanja ovog filtra.',
   /** Description for error when no valid asset source is found, describes that you should check the the current studio config */
   'search.error.no-valid-asset-source-check-config-description':
-    'Molimo provjerite je li omogućeno u konfiguracijskoj datoteci vašeg studija.',
+    'Molimo provjerite da li je omogućeno u konfiguracijskoj datoteci vašeg Studija.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'Trenutno je podržan samo zadani izvor sredstava.',
+    'Trenutno je podržan samo zadani izvor datoteka.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': 'Nisu pronađeni važeći izvori sredstava.',
+  'search.error.no-valid-asset-source-title': 'Nisu pronađeni važeći izvori datoteka.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-help-description':
     'Molimo pokušajte ponovno ili provjerite svoju vezu',
@@ -1534,9 +1534,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was published, with a timestamp */
   'timeline.operation.published_timestamp': 'Objavljeno: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': 'Nije objavljeno',
+  'timeline.operation.unpublished': 'Poništena objava',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
-  'timeline.operation.unpublished_timestamp': 'Nepobjavljeno: {{timestamp, datetime}}',
+  'timeline.operation.unpublished_timestamp': 'Poništena objava: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
