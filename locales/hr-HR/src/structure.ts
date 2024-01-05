@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operacija nije spremna',
   /** Tooltip when action button is disabled because the document does not exist */
-  'action.delete.disabled.nothing-to-delete': 'Ovaj dokument još ne postoji ili je već izbrisan',
+  'action.delete.disabled.nothing-to-delete': 'Ovaj dokument ne postoji',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Izbriši',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -24,7 +24,7 @@ export default removeUndefinedLocaleResources({
   'action.duplicate.disabled.not-ready': 'Operacija nije spremna',
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
-    'Ovaj dokument još ne postoji pa nema što duplicirati',
+    'Ovaj dokument još ne postoji pa se nema što duplicirati',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Dupliciraj',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -41,10 +41,10 @@ export default removeUndefinedLocaleResources({
   'action.publish.live-edit.label': 'Objavi',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
   'action.publish.live-edit.publish-disabled':
-    'Ne može se objaviti jer je za ovu vrstu dokumenta omogućeno Live Edit',
+    'Ne može se objaviti jer je za ovu vrstu dokumenta omogućen Live Edit',
   /** Tooltip for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.tooltip':
-    'Za ovu vrstu sadržaja omogućeno je Live Edit i objavljivanje se automatski događa dok vršite promjene',
+    'Za ovu vrstu sadržaja omogućen je Live Edit i objavljivanje se automatski događa dok vršite promjene',
   /** Tooltip when publish button is disabled because there are no changes.*/
   'action.publish.no-changes.tooltip': 'Nema neobjavljenih promjena',
   /** Label for the "Publish" document action when there are no changes.*/
@@ -58,7 +58,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.waiting': 'Čekanje da se zadaci završe prije objavljivanja',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
   'action.restore.confirm-dialog.confirm-discard-changes':
-    'Jeste li sigurni da želite vratiti ovaj dokument?',
+    'Jeste li sigurni da želite vratiti ovaj dokument na raniju verziju?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Ne možete vratiti na inicijalnu verziju',
   /** Label for the "Restore" document action */
@@ -70,10 +70,10 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operacija nije spremna',
   /** Label for the "Unpublish" document action */
-  'action.unpublish.label': 'Povuci objavu',
+  'action.unpublish.label': 'Poništi objavu',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
-    'Ovaj dokument ima omogućeno uređivanje uživo i ne može biti povučen',
+    'Ovaj dokument ima omogućen Live Edit i ne može biti poništena objava',
 
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Vrati najnoviju verziju',
@@ -81,16 +81,16 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Ovaj dokument je izbrisan.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Vaša uloga <Roles/> nema dozvole za kreiranje ovog dokumenta.',
+    'Vaša uloga <Roles/> nema dozvolu za kreiranje ovog dokumenta.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Vaše uloge <Roles/> nemaju dozvole za kreiranje ovog dokumenta.',
+    'Vaše uloge <Roles/> nemaju dozvolu za kreiranje ovog dokumenta.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Vaša uloga <Roles/> nema dozvole za ažuriranje ovog dokumenta.',
+    'Vaša uloga <Roles/> nema dozvolu za ažuriranje ovog dokumenta.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    'Vaše uloge <Roles/> nemaju dozvole za ažuriranje ovog dokumenta.',
+    'Vaše uloge <Roles/> nemaju dozvolu za ažuriranje ovog dokumenta.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Ponovno učitaj referencu',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -144,19 +144,19 @@ export default removeUndefinedLocaleResources({
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ID projekta',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Izbriši svejedno',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Svejedno izbriši',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Povuci objavu svejedno',
+  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Svejedno poništi objavu',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Izbriši sada',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_unpublish': 'Povuci objavu sada',
+  'confirm-delete-dialog.confirm-button.text_unpublish': 'Poništi objavu sada',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Jeste li sigurni da želite izbrisati “<DocumentTitle/>”?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
-    'Jeste li sigurni da želite povući objavu “<DocumentTitle/>”?',
+    'Jeste li sigurni da želite poništiti objavu “<DocumentTitle/>”?',
   /** The text body of the error dialog. */
   'confirm-delete-dialog.error.message.text':
     'Došlo je do pogreške prilikom učitavanja referentnih dokumenata.',
@@ -167,7 +167,7 @@ export default removeUndefinedLocaleResources({
   /** The header of the confirm delete dialog */
   'confirm-delete-dialog.header.text_delete': 'Izbrisati dokument?',
   /** The header of the confirm delete dialog */
-  'confirm-delete-dialog.header.text_unpublish': 'Povući objavu dokumenta?',
+  'confirm-delete-dialog.header.text_unpublish': 'Poništiti objavu dokumenta?',
   /** The text that appears while the referring documents are queried */
   'confirm-delete-dialog.loading.text': 'Traženje referentnih dokumenata…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
@@ -184,7 +184,7 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.preview-item.preview-unavailable.title': 'Pregled nije dostupan',
   /** Warns the user of affects to other documents if the action is confirmed (delete) */
   'confirm-delete-dialog.referential-integrity-disclaimer.text_delete':
-    'Ako izbrišete ovaj dokument, dokumenti koji na njega upućuju više neće moći pristupiti njemu.',
+    'Ako izbrišete ovaj dokument, dokumenti koji na njega upućuju više mu neće moći pristupiti.',
   /** Warns the user of affects to other documents if the action is confirmed (unpublish) */
   'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish':
     'Ako povučete objavu ovog dokumenta, dokumenti koji na njega upućuju više neće moći pristupiti njemu.',
