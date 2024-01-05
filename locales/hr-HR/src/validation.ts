@@ -19,9 +19,9 @@ export default removeUndefinedLocaleResources({
   /** Date is not valid or not in the correct format (ISO-8601) */
   'date.invalid-format': 'Mora biti valjan ISO-8601 formatiran datum',
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': 'Mora biti ili prije {{maxDate}}',
+  'date.maximum': 'Mora biti prije {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': 'Mora biti ili nakon {{minDate}}',
+  'date.minimum': 'Mora biti nakon {{minDate}}',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
   'generic.incorrect-type': 'Očekivani tip "{{expectedType}}", dobio "{{actualType}}"',
@@ -46,7 +46,7 @@ export default removeUndefinedLocaleResources({
   'number.non-integer': 'Mora biti cijeli broj',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': 'Asset je obavezan',
+  'object.asset-required': 'Datoteka je obavezna',
   /** Object is missing a reference to a file asset document in its `asset` field */
   'object.asset-required_file': 'Datoteka je obavezna',
   /** Object is missing a reference to an image asset document in its `asset` field */

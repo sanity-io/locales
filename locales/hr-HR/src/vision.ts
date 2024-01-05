@@ -33,9 +33,9 @@ export default removeUndefinedLocaleResources({
   'query.url': 'URL upita',
 
   /** Label for "End to End time" information of the fetched query */
-  'result.end-to-end-time-label': 'Kraj do kraja',
+  'result.end-to-end-time-label': '"End to End" vrijeme',
   /** Label for "Execution time" information of the fetched query */
-  'result.execution-time-label': 'Izvršenje',
+  'result.execution-time-label': 'Vrijeme izvršenja',
   /** Label for "Result" explorer/view */
   'result.label': 'Rezultat',
   /**
