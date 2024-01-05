@@ -187,7 +187,7 @@ export default removeUndefinedLocaleResources({
     'Ako izbrišete ovaj dokument, dokumenti koji na njega upućuju više mu neće moći pristupiti.',
   /** Warns the user of affects to other documents if the action is confirmed (unpublish) */
   'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish':
-    'Ako povučete objavu ovog dokumenta, dokumenti koji na njega upućuju više neće moći pristupiti njemu.',
+    'Ako poništite objavu ovog dokumenta, dokumenti koji na njega upućuju više mu neće moći pristupiti.',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
   'confirm-delete-dialog.referring-document-count.text_one':
     '1 dokument upućuje na “<DocumentTitle/>”',
@@ -199,7 +199,7 @@ export default removeUndefinedLocaleResources({
     'Možda nećete moći izbrisati “<DocumentTitle/>” jer sljedeći dokumenti upućuju na njega:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
-    'Možda nećete moći povući objavu “<DocumentTitle/>” jer sljedeći dokumenti upućuju na njega:',
+    'Možda nećete moći poništiti objavu “<DocumentTitle/>” jer sljedeći dokumenti upućuju na njega:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.cancel-button.fallback-text': 'Odustani',
@@ -235,7 +235,7 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.loading': 'Učitavanje dokumenta…',
   /** The description of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.description':
-    'Molimo vas da pričekate dok se dokument sinkronizira. To se obično događa odmah nakon što je dokument objavljen, i ne bi trebalo trajati više od nekoliko sekundi',
+    'Molimo vas da pričekate dok se dokument sinkronizira. To se obično događa odmah nakon što je dokument objavljen i ne bi trebalo trajati više od nekoliko sekundi',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sinkronizacija dokumenta…',
 
@@ -322,10 +322,10 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-error': 'Došlo je do greške tijekom {{context}}',
   /** The text when a delete operation failed  */
   'panes.document-operation-results.operation-error_delete':
-    'Došlo je do greške pri pokušaju brisanja ovog dokumenta. To obično znači da postoje drugi dokumenti koji se na njega referiraju.',
+    'Došlo je do greške pri pokušaju brisanja ovog dokumenta. To obično znači da postoje drugi dokumenti koji upućuju na njega.',
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
-    'Došlo je do greške pri pokušaju povlačenja ovog dokumenta. To obično znači da postoje drugi dokumenti koji se na njega referiraju.',
+    'Došlo je do greške pri pokušaju povlačenja ovog dokumenta. To obično znači da postoje drugi dokumenti koji upućuju na njega.',
   /** The text when a generic operation succeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Uspješno izveden {{context}} na dokumentu',
   /** The text when a delete operation succeded  */
@@ -337,37 +337,37 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_publish': 'Dokument je objavljen',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
-    'Dokument je povučen. Nacrt je stvoren iz posljednje objavljene verzije.',
+    'Dokumentu je poništena objava. Nacrt je stvoren iz posljednje objavljene verzije.',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Veza izgubljena. Ponovno povezivanje…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Učitavanje dokumenta…',
   /** The text of the document not found pane if the schema is known */
   'panes.document-pane.document-not-found.text':
-    'Vrsta dokumenta nije definirana, i dokument s identifikatorom <Code>{{id}}</Code> nije mogao biti pronađen.',
+    'Vrsta dokumenta nije definirana i dokument s identifikatorom <Code>{{id}}</Code> nije mogao biti pronađen.',
   /** The title of the document not found pane if the schema is known */
   'panes.document-pane.document-not-found.title': 'Dokument nije pronađen',
   /** The text of the document not found pane if the schema is not found */
   'panes.document-pane.document-unknown-type.text':
-    'Ovaj dokument ima vrstu sheme <Code>{{documentType}}</Code>, koja nije definirana kao tip u lokalnoj shemi sadržaja studija.',
+    'Ovaj dokument ima vrstu sheme <Code>{{documentType}}</Code>, koja nije definirana kao tip u lokalnoj shemi sadržaja Studija.',
   /** The title of the document not found pane if the schema is not found or unknown */
   'panes.document-pane.document-unknown-type.title':
     'Nepoznati tip dokumenta: <Code>{{documentType}}</Code>',
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
-    'Ovaj dokument ne postoji, i nije specificiran tip sheme za njega.',
+    'Ovaj dokument ne postoji i nije definiran tip sheme za njega.',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Učitavanje…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'Još se učitava…',
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
-    'Element strukture nedostaje obavezno svojstvo <Code>type</Code>.',
+    'Elementu strukture nedostaje obavezno svojstvo <Code>type</Code>.',
   /** The title of the unknown pane */
   'panes.unknown-pane-type.title': 'Nepoznati tip panela',
   /** The text to display when type is unknown */
   'panes.unknown-pane-type.unknown-type.text':
-    'Element strukture tipa <Code>{{type}}</Code> nije poznata entiteta.',
+    'Element strukture tipa <Code>{{type}}</Code> nije poznat.',
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Otvori pregled',
