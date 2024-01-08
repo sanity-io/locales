@@ -146,7 +146,7 @@ const registry: LocaleRegistry = [
     id: 'th-TH',
     name: 'ไทย',
     englishName: 'Thai',
-    maintainers: [],
+    maintainers: ['CcNicebruh'],
     contributors: [],
   },
   {
