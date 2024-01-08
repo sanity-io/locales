@@ -1440,47 +1440,55 @@ export default removeUndefinedLocaleResources({
   /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
-  'search.operator.slug-equal.name': undefined, // 'is'
+  'search.operator.slug-equal.name': 'je',
   /* Slug does not contain the given value */
-  'search.operator.slug-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-not-contains.name': undefined, // 'does not contain'
+  'search.operator.slug-not-contains.description':
+    '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-not-contains.name': 'ne sadrži',
   /* Slug does not equal the given filter value */
-  'search.operator.slug-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-not-equal.name': undefined, // 'is not'
+  'search.operator.slug-not-equal.description':
+    '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-not-equal.name': 'nije',
   /* String contains the given filter value */
-  'search.operator.string-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-contains.name': undefined, // 'contains'
+  'search.operator.string-contains.description':
+    '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-contains.name': 'sadrži',
   /* String equals the given filter value */
-  'search.operator.string-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-equal.name': undefined, // 'is'
+  'search.operator.string-equal.description':
+    '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-equal.name': 'je',
   /* String equals one of the predefined allowed values */
-  'search.operator.string-list-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-list-equal.name': undefined, // 'is'
+  'search.operator.string-list-equal.description':
+    '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-list-equal.name': 'je',
   /* String does not equal one of the predefined allowed values */
-  'search.operator.string-list-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-list-not-equal.name': undefined, // 'is not'
+  'search.operator.string-list-not-equal.description':
+    '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-list-not-equal.name': 'nije',
   /* String does not contain the given filter value */
-  'search.operator.string-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-not-contains.name': undefined, // 'does not contain'
+  'search.operator.string-not-contains.description':
+    '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-not-contains.name': 'ne sadrži',
   /* String does not equal the given filter value */
-  'search.operator.string-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-not-equal.name': undefined, // 'is not'
+  'search.operator.string-not-equal.description':
+    '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-not-equal.name': 'nije',
   /** Label for the "Best match" search ordering type */
-  'search.ordering.best-match-label': undefined, // 'Best match'
+  'search.ordering.best-match-label': 'Najbolje podudaranje',
   /** Label for the "Created: Oldest first" search ordering type */
-  'search.ordering.created-ascending-label': undefined, // 'Created: Oldest first'
+  'search.ordering.created-ascending-label': 'Stvoreno: Najstarije prvo',
   /** Label for the "Created: Newest first" search ordering type */
-  'search.ordering.created-descending-label': undefined, // 'Created: Newest first'
+  'search.ordering.created-descending-label': 'Stvoreno: Najnovije prvo',
   /** Label for the "Updated: Oldest first" search ordering type */
-  'search.ordering.updated-ascending-label': undefined, // 'Updated: Oldest first'
+  'search.ordering.updated-ascending-label': 'Ažurirano: Najstarije prvo',
   /** Label for the "Updated: Newest first" search ordering type */
-  'search.ordering.updated-descending-label': undefined, // 'Updated: Newest first'
+  'search.ordering.updated-descending-label': 'Ažurirano: Najnovije prvo',
   /** Placeholder text for the global search input field */
-  'search.placeholder': undefined, // 'Search'
+  'search.placeholder': 'Pretraži',
   /** Accessibility label for the recent searches section, shown when no valid search terms has been given */
-  'search.recent-searches-aria-label': undefined, // 'Recent searches'
+  'search.recent-searches-aria-label': 'Nedavne pretrage',
   /** Label/heading shown for the recent searches section */
-  'search.recent-searches-label': undefined, // 'Recent searches'
+  'search.recent-searches-label': 'Nedavne pretrage',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Rezultati pretraživanja',
 
