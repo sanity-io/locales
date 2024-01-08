@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-th-th-v1.0.1...locale-th-th-v1.0.2) (2024-01-08)
+
+
+### Bug Fixes
+
+* **th-TH:** add CcNicebruh as maintainer to th-TH ([#233](https://github.com/sanity-io/locales/issues/233)) ([3c91038](https://github.com/sanity-io/locales/commit/3c910381fbca37d216410cd507a8014716f4b52d))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-th-th-v1.0.0...locale-th-th-v1.0.1) (2023-12-19)
 
 
