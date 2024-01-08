@@ -20,7 +20,12 @@
     "directory": "locales/th-TH"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "CcNicebruh",
+      "url": "https://github.com/CcNicebruh"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
