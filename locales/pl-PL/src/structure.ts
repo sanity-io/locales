@@ -58,7 +58,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Oczekiwanie na zakończenie zadań przed publikacją',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': 'Czy na pewno chcesz przywrócić ten dokument?', // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': 'Czy na pewno chcesz przywrócić ten dokument?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Nie możesz przywrócić wersji początkowej',
   /** Label for the "Restore" document action */

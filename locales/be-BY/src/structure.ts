@@ -57,7 +57,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Чаканне завяршэння задач перад публікацыяй',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': 'Вы ўпэўнены, што хочаце аднавіць гэты дакумент?', // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': 'Вы ўпэўнены, што хочаце аднавіць гэты дакумент?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Вы не можаце аднавіць пачатковую версію',
   /** Label for the "Restore" document action */
