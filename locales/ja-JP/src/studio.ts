@@ -404,9 +404,9 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_one': '{{count}}件の警告',
   'form.validation.summary.warnings-count_other': '{{count}}件の警告',
 
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_other': '{{count}}日間のトライアルが残っています',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'プロジェクトをアップグレードしてください',
 
   /**
    * Label for "contact sales" call to action
