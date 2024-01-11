@@ -58,7 +58,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': '公開する前にタスクが完了するのを待っています',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': 'このドキュメントを復元してもよろしいですか？',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': '初期バージョンには復元できません',
   /** Label for the "Restore" document action */
@@ -231,7 +231,7 @@ export default removeUndefinedLocaleResources({
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'このフォームは非表示です',
   /** Fallback title shown when a form title is not provided */
-  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
+  'document-view.form-view.form-title-fallback': '無題',
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'ドキュメントを読み込んでいます…',
   /** The description of the sync lock toast on the form view */
