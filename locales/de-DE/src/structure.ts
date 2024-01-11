@@ -59,7 +59,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Warten auf den Abschluss von Aufgaben vor der Veröffentlichung',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message':
+    'Sind Sie sicher, dass Sie dieses Dokument wiederherstellen möchten?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial':
     'Sie können nicht zur ursprünglichen Version wiederherstellen',
@@ -235,7 +236,7 @@ export default removeUndefinedLocaleResources({
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Dieses Formular ist versteckt',
   /** Fallback title shown when a form title is not provided */
-  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
+  'document-view.form-view.form-title-fallback': 'Ohne Titel',
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'Dokument wird geladen…',
   /** The description of the sync lock toast on the form view */
