@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Várakozás a feladatok befejezésére a közzététel előtt',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': 'Biztosan vissza szeretnéd állítani ezt a dokumentumot?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Nem állítható vissza az eredeti verzióra',
   /** Label for the "Restore" document action */
@@ -234,7 +234,7 @@ export default removeUndefinedLocaleResources({
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ez az űrlap rejtett',
   /** Fallback title shown when a form title is not provided */
-  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
+  'document-view.form-view.form-title-fallback': 'Cím nélkül',
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'Dokumentum betöltése…',
   /** The description of the sync lock toast on the form view */
