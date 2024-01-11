@@ -58,7 +58,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Ventar på at oppgåver skal bli ferdige før publisering',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': 'Er du sikker på at du vil gjenopprette dette dokumentet?',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial':
     'Du kan ikkje gjenopprette til den opphavlege versjonen',
@@ -236,7 +236,7 @@ export default removeUndefinedLocaleResources({
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Dette skjemaet er skjult',
   /** Fallback title shown when a form title is not provided */
-  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
+  'document-view.form-view.form-title-fallback': 'Utan tittel',
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'Lastar dokument…',
   /** The description of the sync lock toast on the form view */
