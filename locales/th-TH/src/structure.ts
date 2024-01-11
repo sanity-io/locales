@@ -56,8 +56,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'กำลังรอให้งานเสร็จสิ้นก่อนที่จะเผยแพร่',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm-dialog.confirm-discard-changes':
-    'คุณแน่ใจหรือไม่ว่าต้องการกู้คืนเอกสารนี้?',
+  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'คุณไม่สามารถกู้คืนเป็นเวอร์ชันเริ่มต้นได้',
   /** Label for the "Restore" document action */
@@ -209,6 +208,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'ฟอร์มนี้ถูกซ่อน',
+  /** Fallback title shown when a form title is not provided */
+  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'กำลังโหลดเอกสาร…',
   /** The description of the sync lock toast on the form view */

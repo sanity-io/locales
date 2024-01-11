@@ -402,6 +402,12 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_one': '{{count}} figyelmeztetés',
   'form.validation.summary.warnings-count_other': '{{count}} figyelmeztetések',
 
+  /** Tooltip for free trial navbar button indicating remaining days */
+  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
+  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  /** Tooltip for free trial navbar button, once trial has ended */
+  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+
   /**
    * Label for "contact sales" call to action
    * These are titles for fallback links in the event the help & resources endpoint isn't able to be fetched

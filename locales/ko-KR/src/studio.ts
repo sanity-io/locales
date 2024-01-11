@@ -402,6 +402,10 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_one': '{{count}}개의 경고',
   'form.validation.summary.warnings-count_other': '{{count}}개의 경고들',
 
+  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  /** Tooltip for free trial navbar button, once trial has ended */
+  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+
   /**
    * Label for "contact sales" call to action
    * These are titles for fallback links in the event the help & resources endpoint isn't able to be fetched

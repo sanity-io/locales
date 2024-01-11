@@ -59,8 +59,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Odotetaan tehtävien valmistumista ennen julkaisua',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm-dialog.confirm-discard-changes':
-    'Oletko varma, että haluat palauttaa tämän asiakirjan?',
+  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Et voi palauttaa alkuperäistä versiota',
   /** Label for the "Restore" document action */
@@ -234,6 +233,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Tämä lomake on piilotettu',
+  /** Fallback title shown when a form title is not provided */
+  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'Ladataan asiakirjaa…',
   /** The description of the sync lock toast on the form view */

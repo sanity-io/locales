@@ -57,8 +57,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Bíð eftir að verkefni klárist áður en birt er',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm-dialog.confirm-discard-changes':
-    'Ertu viss um að þú viljir endurheimta þetta skjal?',
+  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': 'Þú getur ekki endurheimt upphaflegu útgáfuna',
   /** Label for the "Restore" document action */
@@ -229,6 +228,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Þessi eyðublað er falið',
+  /** Fallback title shown when a form title is not provided */
+  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': 'Hleð skjali…',
   /** The description of the sync lock toast on the form view */
