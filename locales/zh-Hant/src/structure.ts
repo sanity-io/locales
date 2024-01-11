@@ -53,7 +53,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': '等待任務完成後才發布',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
-  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': '您確定要還原此文件嗎？',
   /** Fallback tooltip for when user is looking at the initial version */
   'action.restore.disabled.cannot-restore-initial': '您不能還原到初始版本',
   /** Label for the "Restore" document action */
@@ -202,7 +202,7 @@ export default removeUndefinedLocaleResources({
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': '此表單已隱藏',
   /** Fallback title shown when a form title is not provided */
-  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
+  'document-view.form-view.form-title-fallback': '無標題',
   /** The text for when the form view is loading a document */
   'document-view.form-view.loading': '正在加載文件…',
   /** The description of the sync lock toast on the form view */
