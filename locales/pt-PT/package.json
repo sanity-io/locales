@@ -20,7 +20,12 @@
     "directory": "locales/pt-PT"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "jrparente",
+      "url": "https://github.com/jrparente"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
