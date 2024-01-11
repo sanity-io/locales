@@ -178,8 +178,8 @@ importers:
         specifier: workspace:*
         version: link:../../locales/zh-Hant
       '@sanity/ui':
-        specifier: ^2.0.0-beta.17
-        version: 2.0.0-beta.17(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
+        specifier: ^2.0.0-beta.18
+        version: 2.0.0-beta.18(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
       '@sanity/vision':
         specifier: ^3.24.1
         version: 3.24.1(@babel/runtime@7.23.5)(@codemirror/lint@6.4.2)(@codemirror/state@6.3.3)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.1.2)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
@@ -3100,8 +3100,8 @@ packages:
       styled-components: 6.1.6(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /@sanity/ui@2.0.0-beta.17(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6):
-    resolution: {integrity: sha512-AUFlObpuewVOKDGQutijJFn3rKtXS85Nl/MsySHwcH5rzCNojJ2/Z4DKLhl8LSXlj/+pOXVj++AFT/hhNtJ6Wg==}
+  /@sanity/ui@2.0.0-beta.18(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6):
+    resolution: {integrity: sha512-/wqnw3u4WUxCpk2dh7p6+jzHduyxSWGWRlYQrTfYERd7z744lHKT8WhHhudOfCULG7WLLTGnCWWk//nYXO6M2A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^18
