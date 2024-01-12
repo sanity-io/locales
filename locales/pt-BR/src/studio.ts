@@ -407,10 +407,10 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_other': '{{count}} avisos',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} dia restante no período de teste',
+  'free-trial.tooltip.days-count_other': '{{count}} dias restantes no período de teste',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Atualize seu projeto',
 
   /**
    * Label for "contact sales" call to action
