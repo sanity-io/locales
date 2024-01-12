@@ -44,7 +44,7 @@ jobs:
         run: |
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
-          git remote set-url origin https://x-access-token:${{ steps.generate-token.outputs.token }}@github.com/${{ github.repository }}
+          git remote set-url origin https://${{ steps.generate-token.outputs.token }}@github.com/${{ github.repository }}
 
       - name: Run autotranslate
         run: pnpm run autotranslate --git
