@@ -406,7 +406,7 @@ export default removeUndefinedLocaleResources({
   'free-trial.tooltip.days-count_one': '{{count}} nap van hátra a próbaidőből',
   'free-trial.tooltip.days-count_other': '{{count}} nap van hátra a próbaidőből',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': 'Frissítse a projektjét',
+  'free-trial.tooltip.trial-finished': 'Frissítsd a projektedet',
 
   /**
    * Label for "contact sales" call to action
