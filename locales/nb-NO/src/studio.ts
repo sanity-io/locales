@@ -404,8 +404,8 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_other': '{{count}} advarsler',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': '{{count}} dag igjen i prøveperioden',
-  'free-trial.tooltip.days-count_other': '{{count}} dager igjen i prøveperioden',
+  'free-trial.tooltip.days-count_one': '{{count}} dag igjen av prøveperioden',
+  'free-trial.tooltip.days-count_other': '{{count}} dager igjen av prøveperioden',
   /** Tooltip for free trial navbar button, once trial has ended */
   'free-trial.tooltip.trial-finished': 'Oppgrader prosjektet ditt',
 
