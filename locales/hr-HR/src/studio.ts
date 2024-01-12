@@ -402,10 +402,10 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_other': '{{count}} upozorenja',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} dan preostao u probnom razdoblju',
+  'free-trial.tooltip.days-count_other': '{{count}} dana preostalo u probnom razdoblju',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Nadogradite svoj projekt',
 
   /**
    * Label for "contact sales" call to action
