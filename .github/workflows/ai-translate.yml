@@ -2,8 +2,11 @@ name: AI translate
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      # Only run the workflow when package.json is updated, which might update sanity dependencies.
+      # Use an explicit workflow dispatch if you want to run the workflow manually.
+      - 'package.json'
   workflow_dispatch:
 
 permissions:
