@@ -19,9 +19,9 @@ export default removeUndefinedLocaleResources({
   /** Date is not valid or not in the correct format (ISO-8601) */
   'date.invalid-format': 'Doit être une chaîne de date formatée ISO-8601 valide',
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': 'Doit être à ou avant {{maxDate}}',
+  'date.maximum': 'Doit être au ou avant {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': 'Doit être à ou après {{minDate}}',
+  'date.minimum': 'Doit être au ou après {{minDate}}',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
   'generic.incorrect-type': 'Type attendu "{{expectedType}}", trouvé "{{actualType}}"',
