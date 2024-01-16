@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Opération pas prête',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
-    "Ce document n'existe pas encore ou est déjà supprimé",
+    "Ce document n'existe pas encore ou a déjà été supprimé",
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Supprimer',
   /** Label for the "Delete" document action while the document is being deleted */
