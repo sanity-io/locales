@@ -58,9 +58,9 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Charger plus',
   /** Text shown when selecting a file but there's no files to select from */
-  'asset-source.dialog.no-assets_file': 'Pas de fichiers',
+  'asset-source.dialog.no-assets_file': 'Pas de fichier',
   /** Text shown when selecting an image but there's no images to select from */
-  'asset-source.dialog.no-assets_image': "Pas d'images",
+  'asset-source.dialog.no-assets_image': "Pas d'image",
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Impossible de supprimer le fichier actuellement sélectionné',
   'asset-source.file.asset-list.action.delete.text': 'Supprimer',
@@ -230,7 +230,7 @@ export default removeUndefinedLocaleResources({
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
   'changes.image.deleted': 'Image supprimée',
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
-  'changes.image.error-loading-image': 'Erreur de chargement de l’image',
+  'changes.image.error-loading-image': 'Erreur lors du chargement de l’image',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.hotspot-changed': 'Point chaud modifié',
   /** Image diff: Fallback title for the meta info section when there is no original filename to use  */
@@ -316,19 +316,19 @@ export default removeUndefinedLocaleResources({
   'default-menu-item.fallback-title': 'Trier par {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
-  'default-orderings.caption': 'Trier par Légende',
+  'default-orderings.caption': 'Trier par légende',
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
-  'default-orderings.description': 'Trier par Description',
+  'default-orderings.description': 'Trier par description',
   /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
-  'default-orderings.header': 'Trier par En-tête',
+  'default-orderings.header': 'Trier par en-tête',
   /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
-  'default-orderings.heading': 'Trier par Rubrique',
+  'default-orderings.heading': 'Trier par rubrique',
   /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
-  'default-orderings.label': 'Trier par Étiquette',
+  'default-orderings.label': 'Trier par étiquette',
   /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
-  'default-orderings.name': 'Trier par Nom',
+  'default-orderings.name': 'Trier par nom',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
-  'default-orderings.title': 'Trier par Titre',
+  'default-orderings.title': 'Trier par titre',
 
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Édité {{date}}',
