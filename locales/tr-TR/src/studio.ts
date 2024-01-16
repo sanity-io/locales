@@ -402,7 +402,7 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_other': '{{count}} uyarı',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': '{{count}} gün kaldı deneme süresinde',
+  'free-trial.tooltip.days-count_one': 'deneme süresinde {{count}} gün kaldı',
   'free-trial.tooltip.days-count_other': '{{count}} gün kaldı deneme süresinde',
   /** Tooltip for free trial navbar button, once trial has ended */
   'free-trial.tooltip.trial-finished': 'Projeyi yükseltin',
