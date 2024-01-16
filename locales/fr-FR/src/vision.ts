@@ -8,7 +8,7 @@ export default removeUndefinedLocaleResources({
   /** Label for setting up a listener */
   'action.listen-execute': 'My suggestion here',
   /** Label for cancelling an ongoing query */
-  'action.query-cancel': 'Annuler',
+  'action.query-cancel': 'I have even more suggestions',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Récupérer',
 
