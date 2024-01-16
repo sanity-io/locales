@@ -10,18 +10,18 @@ export default removeUndefinedLocaleResources({
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'I have even more suggestions',
   /** Label for executing the query, eg doing a fetch */
-  'action.query-execute': 'Récupérer',
+  'action.query-execute': 'This is my third edit',
 
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
-  'label.new': 'Nouveau',
+  'label.new': 'Adding more lines in a single commit this time',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Les paramètres ne sont pas un JSON valide',
   /** Label for "Params" (parameters) editor/input */
-  'params.label': 'Paramètres',
+  'params.label': 'Great!',
 
   /** Label for 'Column' indicator when there is an error within the query */
   'query.error.column': 'Colonne',
