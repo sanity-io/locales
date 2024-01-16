@@ -6,7 +6,7 @@ export default removeUndefinedLocaleResources({
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Arrêter',
   /** Label for setting up a listener */
-  'action.listen-execute': 'Écouter',
+  'action.listen-execute': 'My suggestion here',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Annuler',
   /** Label for executing the query, eg doing a fetch */
