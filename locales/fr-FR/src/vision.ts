@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.action.docs-link': 'Lire la documentation',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
-    'Les perspectives permettent à votre requête de s’exécuter contre différentes "vues" du contenu de votre jeu de données',
+    `Les perspectives vous permettent d'exécuter vos requêtes à partir d'une autre "vue" des documents de votre ensemble de données.`,
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
