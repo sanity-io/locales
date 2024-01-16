@@ -407,7 +407,7 @@ export default removeUndefinedLocaleResources({
 
   /** Tooltip for free trial navbar button indicating remaining days */
   'free-trial.tooltip.days-count_one': "{{count}} jour restant d'essai",
-  'free-trial.tooltip.days-count_other': "{{count}} jours restants dans l'essai",
+  'free-trial.tooltip.days-count_other': "{{count}} jours restants d'essai",
   /** Tooltip for free trial navbar button, once trial has ended */
   'free-trial.tooltip.trial-finished': 'Mettez à niveau votre projet',
 
