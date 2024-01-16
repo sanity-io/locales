@@ -71,7 +71,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': "L'opération n'est pas prête",
   /** Label for the "Unpublish" document action */
-  'action.unpublish.label': 'Retirer de la publication',
+  'action.unpublish.label': 'Supprimer la publication',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'Ce document a l’édition en direct activée et ne peut pas être dépublié',
@@ -239,7 +239,7 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.loading': 'Chargement du document…',
   /** The description of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.description':
-    'Veuillez patienter pendant que le document est synchronisé. Cela se produit généralement juste après la publication du document et cela ne devrait pas prendre plus de quelques secondes',
+    'Veuillez patienter pendant que le document se synchronise. Cela se produit généralement juste après la publication du document et cela ne devrait pas prendre plus de quelques secondes',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synchronisation du document…',
 
@@ -259,9 +259,9 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Vue détaillée',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': 'Trier par Date de création',
+  'menu-items.sort-by.created': 'Trier par date de création',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': 'Trier par Dernière édition',
+  'menu-items.sort-by.last-edited': 'Trier par dernière édition',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Apprenez comment ajouter un type de document →',
