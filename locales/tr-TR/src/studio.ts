@@ -405,7 +405,7 @@ export default removeUndefinedLocaleResources({
   'free-trial.tooltip.days-count_one': 'deneme süresinde {{count}} gün kaldı',
   'free-trial.tooltip.days-count_other': 'deneme süresinde {{count}} gün kaldı',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': 'Projeyi yükseltin',
+  'free-trial.tooltip.trial-finished': 'Projeyi yükselt',
 
   /**
    * Label for "contact sales" call to action
