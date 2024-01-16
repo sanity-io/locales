@@ -1497,6 +1497,8 @@ export default removeUndefinedLocaleResources({
   'user-menu.locale-title': 'ภาษา',
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'เข้าสู่ระบบด้วย {{providerTitle}}',
+  /** Label for open menu button for user menu */
+  'user-menu.open-menu': undefined, // 'Open menu'
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1516,6 +1518,8 @@ export default removeUndefinedLocaleResources({
   'workspaces.select-workspace-aria-label': 'เลือกพื้นที่ทำงาน',
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'เลือกพื้นที่ทำงาน',
+  /** Tooltip for the workspace menu */
+  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'พื้นที่ทำงาน',
 })
