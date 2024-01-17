@@ -1599,7 +1599,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Přihlášen s {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Otevřít menu',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1620,7 +1620,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Vybrat pracovní prostor',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Vybrat pracovní prostor',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Pracovní prostory',
 })
