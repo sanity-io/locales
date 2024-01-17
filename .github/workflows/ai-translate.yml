@@ -9,9 +9,6 @@ on:
       - 'package.json'
   workflow_dispatch:
 
-permissions:
-  contents: read # for checkout
-
 jobs:
   translate-and-pr:
     runs-on: ubuntu-latest
@@ -33,21 +30,13 @@ jobs:
       - name: Run reconcile
         run: pnpm run reconcile
 
-      - name: Generate token
-        id: generate-token
-        uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2
-        with:
-          app_id: ${{ secrets.ECOSPARK_APP_ID }}
-          private_key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
-
       - name: Configure git
         run: |
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
-          git remote set-url origin https://${{ steps.generate-token.outputs.token }}@github.com/${{ github.repository }}
 
       - name: Run autotranslate
         run: pnpm run autotranslate --git
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
