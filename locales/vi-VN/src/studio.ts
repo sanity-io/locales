@@ -1507,7 +1507,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Đăng nhập với {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Mở menu',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1528,7 +1528,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Chọn không gian làm việc',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Chọn không gian làm việc',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Không gian làm việc',
 })
