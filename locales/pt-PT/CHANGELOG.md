@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.0.1...locale-pt-pt-v1.0.2) (2024-01-17)
+
+
+### Bug Fixes
+
+* **pt-PT:** add [@jrparente](https://github.com/jrparente) as maintainer of pt-PT ([e088f0b](https://github.com/sanity-io/locales/commit/e088f0b5d0b979cbadd2a4bb805333f29be0df8a))
+* **pt-PT:** align resource keys ([4ef60e5](https://github.com/sanity-io/locales/commit/4ef60e5edc24e8e8bbf5a6805bb9e4fb3697c2e6))
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.0.0...locale-pt-pt-v1.0.1) (2023-12-19)
 
 

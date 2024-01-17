@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.1](https://github.com/sanity-io/locales/compare/locale-be-by-v1.0.0...locale-be-by-v1.0.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* **be-BY:** align resource keys ([cd32dc8](https://github.com/sanity-io/locales/commit/cd32dc878d8c778dc48fa0c17e929000d1e145ca))
+* **be-BY:** automated translation updates ([#243](https://github.com/sanity-io/locales/issues/243)) ([21f9840](https://github.com/sanity-io/locales/commit/21f98404410ada4fde9534ccec807d4a3ba14ae7))
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#241](https://github.com/sanity-io/locales/issues/241)) ([54f90dc](https://github.com/sanity-io/locales/commit/54f90dca9b094befde329eadb710ac2e9af4c10f))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+
 ## 1.0.0 (2024-01-04)
 
 

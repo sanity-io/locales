@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.1.0...locale-fr-fr-v1.1.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* **fr-FR:** Add suggestion from and closes [#271](https://github.com/sanity-io/locales/issues/271) ([#276](https://github.com/sanity-io/locales/issues/276)) ([11e1608](https://github.com/sanity-io/locales/commit/11e160865e61fa7034d6f89060433123e4741dc2))
+* **fr-FR:** align resource keys ([d4d1f83](https://github.com/sanity-io/locales/commit/d4d1f83754b6e67839a0a4379af9219f8f751646))
+* **fr-FR:** automated translation updates ([#248](https://github.com/sanity-io/locales/issues/248)) ([ed6d392](https://github.com/sanity-io/locales/commit/ed6d392f61f924491c7fbfc6d37a19c7a7769192))
+* **fr-FR:** Better translation ([#278](https://github.com/sanity-io/locales/issues/278)) ([1370c69](https://github.com/sanity-io/locales/commit/1370c69f2da919895296afb89c3282b1c0ebc90a))
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.0.1...locale-fr-fr-v1.1.0) (2024-01-04)
 
 

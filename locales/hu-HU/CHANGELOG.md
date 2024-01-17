@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/sanity-io/locales/compare/locale-hu-hu-v1.0.0...locale-hu-hu-v1.0.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* **hu-HU:** align resource keys ([5f675ad](https://github.com/sanity-io/locales/commit/5f675adaf810f25d92622ca35913a0ee5ab28c3c))
+* **hu-HU:** automated translation updates ([#250](https://github.com/sanity-io/locales/issues/250)) ([cd01151](https://github.com/sanity-io/locales/commit/cd01151a7b571e5c1ae4d276ce5dee6166e742da))
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+
 ## 1.0.0 (2024-01-05)
 
 

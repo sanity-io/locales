@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.1.0...locale-sv-se-v1.1.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+* **sv-SE:** align resource keys ([3afa789](https://github.com/sanity-io/locales/commit/3afa789eeab7bd637c1ddf1a4e21234ab2a655b0))
+* **sv-SE:** automated translation updates ([#262](https://github.com/sanity-io/locales/issues/262)) ([822fa5d](https://github.com/sanity-io/locales/commit/822fa5d89365a9f0dd4ad0f81b06ecec479e85ba))
+
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.0.1...locale-sv-se-v1.1.0) (2024-01-04)
 
 
