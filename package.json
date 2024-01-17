@@ -28,6 +28,7 @@
     "check:missing": "tsx src/cli/listMissingResources",
     "check:types": "tsc --noEmit",
     "ci:adjust-labels": "tsx src/cli/adjustLabels",
+    "ci:assign-reviewers": "tsx src/cli/assignReviewers",
     "clean": "rimraf apps/studio/dist locales/*/dist",
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write .",

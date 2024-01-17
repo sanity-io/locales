@@ -1,0 +1,36 @@
+name: Assign reviewers
+
+on:
+  pull_request:
+    branches-ignore:
+      # Ignore auto-generated PRs, as the reviewers are assigned at creation
+      - 'fix/auto/**'
+    types: [opened]
+
+permissions:
+  contents: read # for checkout
+  pull-requests: write # for assigning reviewers
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.3.0'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Assign reviewers
+        run: pnpm run ci:assign-reviewers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
