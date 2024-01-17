@@ -1623,6 +1623,8 @@ export default removeUndefinedLocaleResources({
   'user-menu.locale-title': 'Sprache',
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Angemeldet mit {{providerTitle}}',
+  /** Label for open menu button for user menu */
+  'user-menu.open-menu': undefined, // 'Open menu'
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1642,6 +1644,8 @@ export default removeUndefinedLocaleResources({
   'workspaces.select-workspace-aria-label': 'Arbeitsbereich auswählen',
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Arbeitsbereich auswählen',
+  /** Tooltip for the workspace menu */
+  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Arbeitsbereiche',
 })

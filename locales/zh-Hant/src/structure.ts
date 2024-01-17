@@ -341,6 +341,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': '開啟預覽',
 
+  /** Label for button when status is saved */
+  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  /** Label for button when status is syncing */
+  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label': '最後發布於{{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */
