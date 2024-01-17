@@ -372,9 +372,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Opna forskoðun',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Vistað',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Er að vista...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label': 'Síðast birt {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */
