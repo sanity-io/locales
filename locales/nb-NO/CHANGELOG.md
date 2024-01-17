@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.0.1...locale-nb-no-v1.0.2) (2024-01-17)
+
+
+### Bug Fixes
+
+* **nb-NO:** align resource keys ([6f0b68c](https://github.com/sanity-io/locales/commit/6f0b68c8b9aed853385021773f8f46c6909b6915))
+* **nb-NO:** automated translation updates ([#255](https://github.com/sanity-io/locales/issues/255)) ([d35213d](https://github.com/sanity-io/locales/commit/d35213d1ab0129074ee4ecdf6cceb48d3933014a))
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.0.0...locale-nb-no-v1.0.1) (2023-12-19)
 
 

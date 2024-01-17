@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.3](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.2...locale-de-de-v1.0.3) (2024-01-17)
+
+
+### Bug Fixes
+
+* **de-DE:** align resource keys ([72c62e9](https://github.com/sanity-io/locales/commit/72c62e9638f138ad99c8f444d27f8246e24b20f1))
+* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+
 ## [1.0.2](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.1...locale-de-de-v1.0.2) (2023-12-22)
 
 
