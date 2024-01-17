@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   approved:
-    if: github.event.review.state == 'APPROVED'
+    if: contains(github.ref, 'fix/auto/') && (github.event.review.state == 'APPROVED' || github.event.review.state == 'CHANGES_REQUESTED')
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
