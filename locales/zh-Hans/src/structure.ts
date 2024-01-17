@@ -340,9 +340,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': '打开预览',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': '已保存',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': '正在保存...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label': '最后发布时间{{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */

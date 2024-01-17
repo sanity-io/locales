@@ -1471,7 +1471,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': '已通过{{providerTitle}}登录',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': '打开菜单',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1492,7 +1492,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': '选择工作区',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': '选择工作区',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': '工作区',
 })
