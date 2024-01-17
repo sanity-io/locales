@@ -1608,7 +1608,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': '{{providerTitle}}로 로그인됨',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': '메뉴 열기',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1629,7 +1629,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': '워크스페이스 선택',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': '작업 공간 선택',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': '워크스페이스',
 })
