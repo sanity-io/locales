@@ -356,9 +356,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Mở xem trước',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Đã lưu',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Đang lưu...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'Lần cuối xuất bản {{relativeTime}}',
