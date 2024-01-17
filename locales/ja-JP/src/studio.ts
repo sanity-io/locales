@@ -1613,7 +1613,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': '{{providerTitle}}でサインイン中',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'メニューを開く',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1634,7 +1634,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'ワークスペースを選択',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'ワークスペースを選択',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'ワークスペース',
 })
