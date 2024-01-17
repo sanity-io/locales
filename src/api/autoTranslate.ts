@@ -247,6 +247,8 @@ export async function pushChanges(): Promise<void> {
       continue
     }
 
+    const hasMaintainers = locale.maintainers.length > 0
+
     // Switch to a branch for the given locale
     const branchName = `fix/auto/${locale.id}`
     await execGitCommand(['checkout', '-B', branchName])
@@ -258,11 +260,16 @@ export async function pushChanges(): Promise<void> {
     await execGitCommand(['push', 'origin', branchName, '--force'])
 
     if (!(await hasExistingPR(branchName))) {
-      let body = `This PR includes automated translation updates.`
-      if (locale.maintainers.length > 0) {
+      let body = `This PR includes AI-generated, automated translation updates for the ${locale.englishName} locale.`
+
+      if (hasMaintainers) {
         const maintainers = locale.maintainers.map((maintainer) => `@${maintainer}`)
         body += `\n\nCC: ${maintainers.join(', ')}`
       }
+
+      const labels = ['autotranslate', hasMaintainers ? 'awaiting-review' : 'maintainerless']
+      const labelFlags = labels.flatMap((label) => ['--label', label])
+
       // Now create the PR 🎉
       await execFile(
         'gh',
@@ -282,6 +289,7 @@ export async function pushChanges(): Promise<void> {
           '--fill',
           '--reviewer',
           locale.maintainers.join(','),
+          ...labelFlags,
         ],
         {cwd: rootPath},
       )
