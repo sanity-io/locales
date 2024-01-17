@@ -9,7 +9,8 @@ permissions:
   pull-requests: write # for adjusting labels
 
 jobs:
-  approved:
+  adjust:
+    name: Adjust labels
     if: contains(github.ref, 'fix/auto/') && (github.event.review.state == 'APPROVED' || github.event.review.state == 'CHANGES_REQUESTED')
     runs-on: ubuntu-latest
     steps:
