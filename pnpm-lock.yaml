@@ -181,8 +181,8 @@ importers:
         specifier: workspace:*
         version: link:../../locales/zh-Hant
       '@sanity/ui':
-        specifier: ^2.0.0
-        version: 2.0.0(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
+        specifier: ^2.0.1
+        version: 2.0.1(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
       '@sanity/vision':
         specifier: ^3.25.0
         version: 3.25.0(@babel/runtime@7.23.5)(@codemirror/lint@6.4.2)(@codemirror/state@6.3.3)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.1.2)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
@@ -357,7 +357,7 @@ importers:
     dependencies:
       sanity:
         specifier: ^3.22.0
-        version: 3.23.4(@types/node@18.18.14)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.6)
+        version: 3.25.0(@types/node@18.18.14)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.6)
 
   locales/vi-VN:
     dependencies:
@@ -3052,8 +3052,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sanity/ui@2.0.0(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6):
-    resolution: {integrity: sha512-y+vRMc74DnH2FH8BBqkjiDu5eGfy1CYKRzkKRepftKFDsUoJIdQeUPl3ULq+paeN4FqKJRzKT1j4++o8HwhmmQ==}
+  /@sanity/ui@2.0.1(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6):
+    resolution: {integrity: sha512-jrdLQmU+fRLTx54uuxqfe+m/lLJTcRMk46X45UMJgOosSgvz27r0DM0uJ+hSxu/mJg0OlMNfWFZlK0e6LhDoUA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^18
@@ -3109,7 +3109,7 @@ packages:
       '@rexxars/react-split-pane': 0.1.93(react-dom@18.2.0)(react@18.2.0)
       '@sanity/color': 3.0.0
       '@sanity/icons': 2.8.0(react@18.2.0)
-      '@sanity/ui': 2.0.0(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
+      '@sanity/ui': 2.0.1(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
       '@uiw/react-codemirror': 4.21.21(@babel/runtime@7.23.5)(@codemirror/autocomplete@6.11.1)(@codemirror/language@6.9.3)(@codemirror/lint@6.4.2)(@codemirror/search@6.5.5)(@codemirror/state@6.3.3)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.22.1)(codemirror@6.0.1)(react-dom@18.2.0)(react@18.2.0)
       hashlru: 2.3.0
       is-hotkey: 0.1.8
@@ -7621,7 +7621,7 @@ packages:
       '@sanity/schema': 3.25.0
       '@sanity/telemetry': 0.7.5
       '@sanity/types': 3.25.0
-      '@sanity/ui': 2.0.0(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
+      '@sanity/ui': 2.0.1(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.6)
       '@sanity/util': 3.25.0
       '@sanity/uuid': 3.0.2
       '@tanstack/react-virtual': 3.0.0-beta.54(react@18.2.0)
