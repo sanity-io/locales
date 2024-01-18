@@ -31,7 +31,6 @@
     "clean": "rimraf apps/studio/dist locales/*/dist",
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
     "format": "prettier --write .",
-    "lint": "turbo run lint",
     "list:maintainers": "tsx src/cli/printMaintainers",
     "reconcile": "tsx src/cli/reconcile",
     "test": "tsx test/testLocales"
