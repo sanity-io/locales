@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/sanity-io/locales/compare/locale-pt-br-v1.0.2...locale-pt-br-v1.0.3) (2024-01-18)
+
+
+### Bug Fixes
+
+* **pt-BR:** add [@fernandolucchesi](https://github.com/fernandolucchesi) as maintainer of pt-BR ([4bd81c8](https://github.com/sanity-io/locales/commit/4bd81c843547838cc24ed2788403f625756c5975))
+* **pt-BR:** automated translation updates ([#292](https://github.com/sanity-io/locales/issues/292)) ([d88e479](https://github.com/sanity-io/locales/commit/d88e4798ea7a4e066dee4aa94cc6d9abedf8c34a))
+
 ## [1.0.2](https://github.com/sanity-io/locales/compare/locale-pt-br-v1.0.1...locale-pt-br-v1.0.2) (2024-01-17)
 
 
