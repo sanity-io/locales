@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-ja-jp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "Japanese / 日本語 locale/translation for Sanity Studio",
   "keywords": [
