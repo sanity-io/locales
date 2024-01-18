@@ -137,6 +137,7 @@ async function getPullRequestDetails(prNumber: number): Promise<GitHubPR> {
     ['pr', 'view', `${prNumber}`, '--json', 'reviews,labels,author,files'],
     {
       cwd: rootPath,
+      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )
@@ -162,6 +163,7 @@ async function getCommentsForPR(prNumber: number) {
     ],
     {
       cwd: rootPath,
+      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )
