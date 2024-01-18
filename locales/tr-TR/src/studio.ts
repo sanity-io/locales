@@ -1595,7 +1595,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': '{{providerTitle}} ile giriş yapıldı',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Menüyü aç',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1616,7 +1616,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Çalışma alanı seç',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Çalışma alanını seç',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'İş Alanları',
 })
