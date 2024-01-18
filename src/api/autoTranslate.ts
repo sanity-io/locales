@@ -13,9 +13,29 @@ const execFile = promisify(execFileCb)
 
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
+/**
+ * Options for the auto translate operation
+ *
+ * @internal
+ */
 export interface AutoTranslateOptions {
+  /**
+   * Array of locale IDs to translate.
+   * By default will translate all locales.
+   */
   targetLocales?: string[]
+
+  /**
+   * Array of namespaces to translate.
+   * By default will translate all namespaces.
+   */
   namespaces?: string[]
+
+  /**
+   * Optional logging function that will be called with progress messages
+   *
+   * @param message - The message to log
+   */
   logger?: (message: string) => void
 }
 
