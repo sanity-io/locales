@@ -388,6 +388,11 @@ export default removeUndefinedLocaleResources({
   /** Text shown when summarizing validation information, when the field has one or more warnings */
   'form.validation.summary.warnings-count_one': '{{count}} попередження',
 
+  /** Tooltip for free trial navbar button indicating remaining days */
+  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
+  /** Tooltip for free trial navbar button, once trial has ended */
+  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+
   /**
    * Label for "contact sales" call to action
    * These are titles for fallback links in the event the help & resources endpoint isn't able to be fetched
@@ -1548,6 +1553,8 @@ export default removeUndefinedLocaleResources({
   'user-menu.locale-title': 'Мова',
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Увійшли через {{providerTitle}}',
+  /** Label for open menu button for user menu */
+  'user-menu.open-menu': undefined, // 'Open menu'
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1567,6 +1574,8 @@ export default removeUndefinedLocaleResources({
   'workspaces.select-workspace-aria-label': 'Обрати робочий простір',
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Обрати робочий простір',
+  /** Tooltip for the workspace menu */
+  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Робочі простори',
 })
