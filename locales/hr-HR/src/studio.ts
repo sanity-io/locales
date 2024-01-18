@@ -1622,7 +1622,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Odaberite radni prostor',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': 'Odaberi radni prostor',
+  'workspaces.select-workspace-tooltip': 'Odaberite radni prostor',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Radni prostori',
 })
