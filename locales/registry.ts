@@ -118,7 +118,7 @@ const registry: LocaleRegistry = [
     id: 'pt-BR',
     name: 'Português (Brasil)',
     englishName: 'Portuguese (Brazil)',
-    maintainers: [],
+    maintainers: ['fernandolucchesi'],
     contributors: [],
   },
   {

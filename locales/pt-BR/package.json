@@ -20,7 +20,12 @@
     "directory": "locales/pt-BR"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "fernandolucchesi",
+      "url": "https://github.com/fernandolucchesi"
+    }
+  ],
   "type": "module",
   "exports": {
     ".": {
