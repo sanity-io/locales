@@ -1609,7 +1609,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Ingelogd met {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Menu openen',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1630,7 +1630,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Selecteer werkruimte',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Werkruimte selecteren',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Werkruimtes',
 })
