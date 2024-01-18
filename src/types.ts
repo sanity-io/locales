@@ -1,5 +1,10 @@
 import type {infer as zodInfer} from 'zod'
 import type {
+  githubFileSchema,
+  githubLabelSchema,
+  githubPrCommentSchema,
+  githubPrSchema,
+  githubReviewSchema,
   localeEntrySchema,
   localeRegistrySchema,
   packageJsonSchema,
@@ -241,3 +246,38 @@ export interface LocaleWithResources extends Locale {
  * @internal
  */
 export type JsonParseErrorResolver = (content: string, error: unknown) => any
+
+/**
+ * A minimal GitHub PR type
+ *
+ * @internal
+ */
+export type GitHubPR = zodInfer<typeof githubPrSchema>
+
+/**
+ * A minimal GitHub file type
+ *
+ * @internal
+ */
+export type GitHubFile = zodInfer<typeof githubFileSchema>
+
+/**
+ * A minimal GitHub label type
+ *
+ * @internal
+ */
+export type GitHubLabel = zodInfer<typeof githubLabelSchema>
+
+/**
+ * A minimal GitHub review type
+ *
+ * @internal
+ */
+export type GitHubReview = zodInfer<typeof githubReviewSchema>
+
+/**
+ * A minimal GitHub PR comment type
+ *
+ * @internal
+ */
+export type GitHubPRComment = zodInfer<typeof githubPrCommentSchema>

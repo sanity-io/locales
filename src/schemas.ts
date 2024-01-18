@@ -194,3 +194,76 @@ export const releasePleaseSchema = z
     packages: true,
   })
   .passthrough()
+
+/**
+ * Minimal version of a GitHub review - only includes the parts we care about
+ *
+ * @internal
+ */
+export const githubReviewSchema = z.object({
+  id: z.string(),
+  author: z.object({
+    login: z.string(),
+  }),
+  state: z.union([
+    z.literal('APPROVED'),
+    z.literal('CHANGES_REQUESTED'),
+    z.literal('COMMENTED'),
+    z.literal('DISMISSED'),
+  ]),
+})
+
+/**
+ * Minimal version of a GitHub label - only includes the parts we care about
+ *
+ * @internal
+ */
+export const githubLabelSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  color: z.string(),
+})
+
+/**
+ * Minimal version of a GitHub file (part of PR details) - only includes the parts we care about
+ *
+ * @internal
+ */
+export const githubFileSchema = z.object({
+  path: z.string(),
+  additions: z.number(),
+  deletions: z.number(),
+})
+
+/**
+ * Minimal version of a GitHub PR - only includes the parts we care about
+ *
+ * @internal
+ */
+export const githubPrSchema = z.object({
+  // eslint-disable-next-line camelcase
+  author: z.object({is_bot: z.boolean(), login: z.string()}),
+  reviews: z.array(githubReviewSchema),
+  labels: z.array(githubLabelSchema),
+  files: z.array(githubFileSchema),
+})
+
+/**
+ * Minimal version of a GitHub PR comment - only includes the parts we care about
+ *
+ * @internal
+ */
+export const githubPrCommentSchema = z.object({
+  // eslint-disable-next-line camelcase
+  pull_request_review_id: z.number(),
+  body: z.string(),
+  user: z.object({login: z.string()}),
+})
+
+/**
+ * Minimal version of a GitHub PR comments response
+ *
+ * @internal
+ */
+export const githubPrCommentsSchema = z.array(githubPrCommentSchema)

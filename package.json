@@ -54,7 +54,8 @@
     "prettier-plugin-packagejson": "^2.4.7",
     "sanity": "^3.25.0",
     "tsx": "^4.7.0",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "zod-validation-error": "^3.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.15.0",

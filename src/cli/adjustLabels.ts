@@ -6,4 +6,9 @@ if (!PR_NUMBER || PR_NUMBER <= 0 || isNaN(PR_NUMBER)) {
   throw new Error('PR_NUMBER environment variable is required')
 }
 
-runScript(() => adjustLabels(PR_NUMBER))
+runScript(() =>
+  adjustLabels({
+    prNumber: PR_NUMBER,
+    logger: (message) => console.log(message),
+  }),
+)

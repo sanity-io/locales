@@ -1,5 +1,9 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
+import {ZodError} from 'zod'
+import {fromZodError} from 'zod-validation-error'
+import {githubPrCommentsSchema, githubPrSchema} from '../schemas'
+import type {GitHubFile, GitHubPR} from '../types'
 import {getRootPath} from '../util/getRootPath'
 import {getLocaleRegistry} from './registry'
 
@@ -7,74 +11,82 @@ const execFile = promisify(execFileCb)
 const SANITY_REVIEWER = 'sanity-io/locales-reviewers'
 
 /**
- * The shape of an individual review within the JSON returned by `gh pr view --json`
+ * Options for the label adjustments operation
  *
  * @internal
  */
-interface Review {
-  id: string
-  author: {
-    login: string
-  }
-  authorAssociation: string
-  body: string
-  submittedAt: string
-  includesCreatedEdit: boolean
-  state: 'APPROVED' | 'CHANGES_REQUESTED' | 'COMMENTED' | 'DISMISSED'
-}
+export interface AdjustLabelsOptions {
+  /**
+   * GitHub PR number to adjust labels for
+   */
+  prNumber: number
 
-/**
- * The shape of an individual label within the JSON returned by `gh pr view --json`
- *
- * @internal
- */
-interface Label {
-  id: string
-  name: string
-  description: string
-  color: string
-}
-
-/**
- * The shape of the JSON returned by `gh pr view --json <parts>`
- *
- * @internal
- */
-interface ReviewResponse {
-  author: {is_bot: boolean; login: string}
-  reviews: Review[]
-  labels: Label[]
+  /**
+   * Optional logging function that will be called with progress messages
+   *
+   * @param message - The message to log
+   */
+  logger?: (message: string) => void
 }
 
 /**
  * Assigns reviewers to the given PR, based on the currently checked out branch.
  * There is no guarantee that the PR and the branch in question matches, so treat with caution.
  *
- * @param prNumber - The PR number to add reviewers to
- * @returns A promise that resolves to the assigned reviewers
+ * @param options - Options for the label adjustments operation
+ * @returns A promise that resolves when operation is complete
  * @internal
  */
-export async function adjustLabels(prNumber: number): Promise<void> {
-  const [rootPath, {reviews, labels, author}, maintainers] = await Promise.all([
+export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> {
+  const {prNumber, logger = noop} = options
+
+  logger(`Adjusting labels for PR #${prNumber}`)
+
+  const [rootPath, {reviews, labels, author, files}] = await Promise.all([
     getRootPath(),
     getPullRequestDetails(prNumber),
-    getMaintainersFromBranchDiff(),
   ])
 
+  const maintainers = await getMaintainersFromChangedFiles(files, logger)
+  const isMaintainer = (login: string) => maintainers.includes(login)
+
+  const labelNames = labels.map((label) => label.name)
+  logger(`Found ${labels.length} current labels for the PR: ${labelNames.join(', ')}`)
+  logger(`Found ${reviews.length} reviews for the PR`)
+  logger(`Found ${maintainers.length} maintainers: ${maintainers.join(', ')}`)
+
   let isApproved: boolean | undefined
+  let hasMaintainerReview = false
   for (const review of reviews) {
-    if (!maintainers.includes(review.author.login)) {
+    if (!isMaintainer(review.author.login)) {
+      logger(`Skipping review from ${review.author.login} as they are not a maintainer`)
       continue
     }
 
+    hasMaintainerReview = true
+
     if (review.state.toUpperCase() === 'APPROVED') {
+      logger(`Review from ${review.author.login} is approved`)
       isApproved = true
       continue
     }
 
     if (review.state.toUpperCase() === 'CHANGES_REQUESTED') {
+      logger(`Review from ${review.author.login} has requested changes`)
       isApproved = false
-      continue
+      break // Don't continue once we have a requested changes review
+    }
+  }
+
+  if (isApproved === undefined && hasMaintainerReview) {
+    // See if there are _comments_ that include a `suggestion` block,
+    // in which case we should treat it as requesting changes
+    const comments = await getCommentsForPR(prNumber)
+    if (
+      comments.some(({user, body}) => isMaintainer(user.login) && body.includes('```suggestion'))
+    ) {
+      logger('Comments include suggestions, treating as requested changes')
+      isApproved = false
     }
   }
 
@@ -85,10 +97,14 @@ export async function adjustLabels(prNumber: number): Promise<void> {
       : []
 
   if (isApproved) {
+    logger('PR is approved - adjusting labels to match')
     addLabels.push('approved')
     removeLabels.push('awaiting-review')
   } else if (isApproved === false) {
+    logger('PR has requested changes - adjusting labels to match')
     removeLabels.push('approved', 'awaiting-review')
+  } else {
+    logger(reviews.length > 0 ? 'PR is in an indeterminate state' : 'PR is awaiting review')
   }
 
   const flags = []
@@ -99,58 +115,83 @@ export async function adjustLabels(prNumber: number): Promise<void> {
     flags.push('--add-label', addLabels.join(','))
   }
 
-  if (flags.length > 0) {
-    await execFile('gh', ['pr', 'edit', `${prNumber}`, ...flags], {cwd: rootPath})
+  if (flags.length === 0) {
+    logger('No changes to labels, skipping')
+    return
   }
+
+  await execFile('gh', ['pr', 'edit', `${prNumber}`, ...flags], {cwd: rootPath})
 }
 
 /**
- * Retrieves the reviews, labels and author info for a given PR
+ * Retrieves the details for a GitHub PR
  *
  * @param prNumber - The PR number to get info for
- * @returns A promise that resolves to the reviews and labels of the PR
+ * @returns A promise that resolves with the PR details
  * @internal
  */
-async function getPullRequestDetails(prNumber: number): Promise<ReviewResponse> {
+async function getPullRequestDetails(prNumber: number): Promise<GitHubPR> {
   const rootPath = await getRootPath()
   const {stdout} = await execFile(
     'gh',
-    ['pr', 'view', `${prNumber}`, '--json', 'reviews,labels,author'],
+    ['pr', 'view', `${prNumber}`, '--json', 'reviews,labels,author,files'],
     {
       cwd: rootPath,
       env: {...process.env, CLICOLOR: '0'},
     },
   )
 
-  return JSON.parse(stdout)
+  try {
+    return githubPrSchema.parse(JSON.parse(stdout))
+  } catch (err: unknown) {
+    throw err instanceof ZodError ? fromZodError(err) : err
+  }
+}
+
+async function getCommentsForPR(prNumber: number) {
+  const rootPath = await getRootPath()
+  const {stdout} = await execFile(
+    'gh',
+    [
+      'api',
+      '-H',
+      'Accept: application/vnd.github+json',
+      '-H',
+      'X-GitHub-Api-Version: 2022-11-28',
+      `/repos/sanity-io/locales/pulls/${prNumber}/comments`,
+    ],
+    {
+      cwd: rootPath,
+      env: {...process.env, CLICOLOR: '0'},
+    },
+  )
+
+  try {
+    return githubPrCommentsSchema.parse(JSON.parse(stdout))
+  } catch (err: unknown) {
+    throw err instanceof ZodError ? fromZodError(err) : err
+  }
 }
 
 /**
- * Uses the currently checked out branch and gets the diffs from origin/main,
- * then figures out which reviewers are applicable for the changes.
+ * Uses the passed files to determine the maintainers for the changes in the PR
  *
+ * @param files - List of files to use for determining reviewers
+ * @param logger - Optional logging function that will be called with progress messages
  * @returns A promise that resolves to an array of maintainers for the locale
  * @throws If the PR touches more than a single locale
  * @internal
  */
-async function getMaintainersFromBranchDiff(): Promise<string[]> {
-  const rootPath = await getRootPath()
+async function getMaintainersFromChangedFiles(
+  files: GitHubFile[],
+  logger: AdjustLabelsOptions['logger'] = noop,
+): Promise<string[]> {
+  logger(`PR has ${files.length} changed files:`)
+  logger(files.map((file) => `  - ${file.path}`).join('\n'))
+
   const locales = await getLocaleRegistry()
-  const execGitCommand = (args: string[]) => execFile('git', args, {cwd: rootPath})
-
-  const {stdout: currentBranch} = await execGitCommand(['branch', '--show-current'])
-
-  const range = `origin/main...${currentBranch.trim()}`
-  const {stdout: fileDiffs} = await execGitCommand([
-    '--no-pager',
-    'diff',
-    '--name-only',
-    `${range}`,
-  ])
-
-  const changedFiles = fileDiffs.trim().split('\n')
   const localeDiffs = new Set(
-    changedFiles.filter((file) => file.startsWith('locales/')).map((file) => file.split('/')[1]),
+    files.filter((file) => file.path.startsWith('locales/')).map((file) => file.path.split('/')[1]),
   )
 
   if (localeDiffs.size > 1) {
@@ -169,4 +210,8 @@ async function getMaintainersFromBranchDiff(): Promise<string[]> {
   }
 
   return locale.maintainers.length > 0 ? locale.maintainers : [SANITY_REVIEWER]
+}
+
+function noop() {
+  /* intentional noop */
 }
