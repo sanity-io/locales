@@ -19,6 +19,7 @@ export async function writeFormattedFile(filePath: string, content: string): Pro
   const formattedCode = await format(content, {
     ...prettierConfig,
     filepath: filePath,
+    trailingComma: filePath.endsWith('.json') ? 'none' : prettierConfig.trailingComma,
   })
 
   return writeFile(filePath, formattedCode)

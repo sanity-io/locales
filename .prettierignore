@@ -14,5 +14,5 @@ pnpm-lock.yaml
 
 CHANGELOG.md
 .release-please-manifest.json
-tsconfig.json
-tsconfig.locale.json
+**/tsconfig.json
+**/tsconfig.locale.json

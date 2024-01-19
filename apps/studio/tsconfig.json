@@ -26,8 +26,8 @@
       "@sanity/locale-uk-ua": ["../../locales/uk-UA/src"],
       "@sanity/locale-vi-vn": ["../../locales/vi-VN/src"],
       "@sanity/locale-zh-hans": ["../../locales/zh-Hans/src"],
-      "@sanity/locale-zh-hant": ["../../locales/zh-Hant/src"],
-    },
+      "@sanity/locale-zh-hant": ["../../locales/zh-Hant/src"]
+    }
   },
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.json"
 }
