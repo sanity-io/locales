@@ -33,7 +33,7 @@ export async function readJsonFile<T extends ZodTypeAny>(
 
     // If we still haven't parsed the JSON, throw the original error
     if (typeof parsed === 'undefined') {
-      throw err
+      throw new Error(`Unable to read ${jsonFilePath}: ${err}`)
     }
   }
 
