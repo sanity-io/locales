@@ -358,6 +358,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     '在路径 <code>{{path}}</code> 上未找到 `_key` <code>"{{key}}"</code> 的数组项',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': '已弃用',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '无标题',
   /** Fallback title shown above fieldset if it has no defined title */
