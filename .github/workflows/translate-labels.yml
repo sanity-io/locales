@@ -11,7 +11,7 @@ permissions:
 jobs:
   adjust:
     name: Adjust labels
-    if: contains(github.head_ref, 'fix/auto/') && (github.event.review.state == 'APPROVED' || github.event.review.state == 'CHANGES_REQUESTED')
+    if: contains(github.ref_name, 'fix/auto/') && (github.event.review.state == 'APPROVED' || github.event.review.state == 'CHANGES_REQUESTED')
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
