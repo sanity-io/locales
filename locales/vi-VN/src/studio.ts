@@ -368,6 +368,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Không tìm thấy phần tử mảng với `_key` <code>"{{key}}"</code> ở đường dẫn <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'lỗi thời',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Không tiêu đề',
   /** Fallback title shown above fieldset if it has no defined title */
