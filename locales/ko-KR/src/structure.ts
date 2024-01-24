@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': '가장 최근 버전 복원',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': '이 문서는 삭제되었습니다.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': '이 문서 유형은 더 이상 사용되지 않습니다.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '귀하의 역할 <Roles/>은 이 문서를 생성할 권한이 없습니다.',
@@ -94,6 +96,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     '이 참조는 당신이 열었을 때부터 제거되었습니다.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': '새로운 {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': '제목 없음',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': '문서 작업 열기',
@@ -209,6 +216,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '알 수 없는 스키마 유형: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': '닫기',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/> 검사 중',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */

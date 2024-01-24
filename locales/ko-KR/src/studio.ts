@@ -385,6 +385,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     '주어진 경로 <code>{{path}}</code>에서 `_key` <code>"{{key}}"</code>를 가진 배열 항목을 찾을 수 없습니다',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': '사용되지 않음',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '제목 없음',
   /** Fallback title shown above fieldset if it has no defined title */
