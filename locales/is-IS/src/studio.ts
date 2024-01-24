@@ -384,6 +384,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Engin atriði í fylki með `_key` <code>"{{key}}"</code> fundust á slóð <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'úrelt',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Án titils',
   /** Fallback title shown above fieldset if it has no defined title */
