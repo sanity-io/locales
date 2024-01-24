@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dette dokumentet har blitt slettet.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': 'Denne dokumenttypen er utdatert.',
+  'banners.deprecated-document-type-banner.text': 'Denne dokumenttypen brukes ikke mer.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din rolle <Roles/> har ikke tillatelse til å opprette dette dokumentet.',
@@ -105,7 +105,7 @@ export default removeUndefinedLocaleResources({
     'Denne referansen har blitt fjernet siden du åpnet den.',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': 'Nytt {{schemaType}}',
+  'browser-document-title.new-document': 'Ny {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
   'browser-document-title.untitled-document': 'Uten tittel',
 
