@@ -73,6 +73,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': '还原最新版本',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': '此文档已被删除。',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': '此文档类型已被弃用。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '您的角色<Roles/>没有权限创建此文档。',
@@ -87,6 +89,11 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.close-button.text': '关闭引用',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text': '自您打开以来，此引用已被移除。',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': '新建 {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': '无标题',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': '打开文档操作',
@@ -185,6 +192,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '未知的模式类型：{{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': '关闭',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '正在检查<DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
