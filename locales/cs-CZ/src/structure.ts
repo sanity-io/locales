@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Obnovit nejnovější verzi',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Tento dokument byl smazán.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': 'Tento typ dokumentu byl zastaralý.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Vaše role <Roles/> nemá oprávnění vytvořit tento dokument.',
@@ -100,6 +102,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Tato reference byla odstraněna od doby, co jste ji otevřeli.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': 'Nový {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': 'Bez názvu',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Otevřít akce dokumentu',
@@ -214,6 +221,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Neznámý typ schématu: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': 'Zavřít',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspekce <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
