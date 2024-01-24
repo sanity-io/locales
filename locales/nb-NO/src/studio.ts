@@ -387,7 +387,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Ingen element med `_key` <code>"{{key}}"</code> funnet i stien <code>{{path}}</code>',
   /** Form field deprecated label */
-  'form.field.deprecated-label': 'foreldet',
+  'form.field.deprecated-label': 'Utfaset',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Uten navn',
   /** Fallback title shown above fieldset if it has no defined title */
