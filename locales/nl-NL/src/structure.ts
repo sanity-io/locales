@@ -80,6 +80,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Herstel meest recente versie',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dit document is verwijderd.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': 'Dit documenttype is verouderd.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Uw rol <Roles/> heeft geen toestemming om dit document te creëren.',
@@ -102,6 +104,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Deze referentie is verwijderd sinds u deze geopend heeft.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': 'Nieuw {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': 'Naamloos',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Documentacties openen',
@@ -217,6 +224,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Onbekend schema type: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': 'Sluiten',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspecteren <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */

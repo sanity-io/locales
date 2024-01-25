@@ -388,6 +388,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Geen array-item met `_key` <code>"{{key}}"</code> gevonden op pad <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'verouderd',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Zonder titel',
   /** Fallback title shown above fieldset if it has no defined title */
