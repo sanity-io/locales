@@ -23,6 +23,9 @@ jobs:
           cache: pnpm
           node-version: 20
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+
       - name: Use pnpm
         run: corepack enable && pnpm --version
 
