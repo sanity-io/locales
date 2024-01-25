@@ -80,6 +80,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Legutóbbi verzió visszaállítása',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Ez a dokumentum törölve lett.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': 'Ez a dokumentumtípus elavult.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'A szerepköröd <Roles/> nem rendelkezik jogosultsággal a dokumentum létrehozására.',
@@ -102,6 +104,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Ez a hivatkozás eltávolításra került, mióta megnyitottad.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': 'Új {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': 'Cím nélküli',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Dokumentum műveletek megnyitása',
@@ -218,6 +225,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Ismeretlen sémátípus: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': 'Bezárás',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/> megtekintése',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */

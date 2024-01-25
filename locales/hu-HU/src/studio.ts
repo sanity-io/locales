@@ -385,6 +385,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Nem található tömbelem `_key`-vel: <code>"{{key}}"</code> a következő útvonalon: <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'elavult',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Cím nélküli',
   /** Fallback title shown above fieldset if it has no defined title */
