@@ -388,6 +388,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Aucun élément de tableau avec `_key` <code>"{{key}}"</code> trouvé au chemin <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'obsolète',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Sans titre',
   /** Fallback title shown above fieldset if it has no defined title */

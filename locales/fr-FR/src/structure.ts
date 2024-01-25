@@ -80,6 +80,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Restaurer la version la plus récente',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Ce document a été supprimé.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': 'Ce type de document a été déprécié.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     "Votre rôle <Roles/> n'a pas les autorisations pour créer ce document.",
@@ -102,6 +104,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Cette référence a été supprimée depuis que vous l’avez ouverte.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': 'Nouveau {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': 'Sans titre',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Ouvrir les actions du document',
@@ -218,6 +225,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Type de schéma inconnu : {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': 'Fermer',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspection de <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
