@@ -88,8 +88,8 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0
       openai:
-        specifier: ^4.24.7
-        version: 4.24.7
+        specifier: ^4.26.0
+        version: 4.26.0
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
@@ -6565,8 +6565,8 @@ packages:
       is-wsl: 2.2.0
     dev: false
 
-  /openai@4.24.7:
-    resolution: {integrity: sha512-JUesECWPtsDHO0TlZGb6q73hnAmXUdzj9NrwgZeL4lqlRt/kR1sWrXoy8LocxN/6uOtitywvcJqe0O1PLkG45g==}
+  /openai@4.26.0:
+    resolution: {integrity: sha512-HPC7tgYdeP38F3uHA5WgnoXZyGbAp9jgcIo23p6It+q/07u4C+NZ8xHKlMShsPbDDmFRpPsa3vdbXYpbhJH3eg==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.8

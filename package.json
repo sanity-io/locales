@@ -64,7 +64,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-sanity": "^7.0.1",
     "expect": "^29.7.0",
-    "openai": "^4.24.7",
+    "openai": "^4.26.0",
     "rimraf": "^5.0.5",
     "turbo": "^1.11.3",
     "typescript": "^5.3.3"
