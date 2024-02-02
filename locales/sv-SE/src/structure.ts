@@ -81,7 +81,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Detta dokument har raderats.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': 'Denna dokumenttyp har avvecklats.',
+  'banners.deprecated-document-type-banner.text': 'Denna dokumenttyp är inte längre tillgänglig.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din roll <Roles/> har inte behörighet att skapa detta dokument.',
