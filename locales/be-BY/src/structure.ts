@@ -100,7 +100,7 @@ export default removeUndefinedLocaleResources({
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новы {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': 'Без назвы',
+  'browser-document-title.untitled-document': 'Бяз назвы',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Адкрыць дзеянні дакумента',
