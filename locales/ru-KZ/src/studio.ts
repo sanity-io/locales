@@ -393,7 +393,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for free trial navbar button indicating remaining days */
   'free-trial.tooltip.days-count_one': '{{count}} день остался в пробной версии',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': 'Обновите ваш проект',
+  'free-trial.tooltip.trial-finished': 'Перейдите на расширенный тарифный план',
 
   /**
    * Label for "contact sales" call to action
