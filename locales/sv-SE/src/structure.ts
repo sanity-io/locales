@@ -106,7 +106,7 @@ export default removeUndefinedLocaleResources({
     'Denna referens har tagits bort sedan du öppnade den.',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': 'Nytt {{schemaType}}',
+  'browser-document-title.new-document': 'Ny {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
   'browser-document-title.untitled-document': 'Namnlös',
 
