@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Restaurar la versión más reciente',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Este documento ha sido eliminado.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': 'Este tipo de documento ha sido descontinuado.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Tu rol <Roles/> no tiene permisos para crear este documento.',
@@ -100,6 +102,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Esta referencia ha sido eliminada desde que la abriste.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': 'Nuevo {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': 'Sin título',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Abrir acciones del documento',
@@ -216,6 +223,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Tipo de esquema desconocido: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': 'Cerrar',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspeccionando <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -378,9 +387,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Abrir vista previa',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Guardado',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Guardando...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'Última publicación hace {{relativeTime}}',

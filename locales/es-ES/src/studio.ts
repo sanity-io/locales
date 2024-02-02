@@ -390,6 +390,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'No se encontró un elemento de arreglo con `_key` <code>"{{key}}"</code> en la ruta <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'obsoleto',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Sin título',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -408,10 +410,10 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_other': '{{count}} advertencias',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} día restante en el periodo de prueba',
+  'free-trial.tooltip.days-count_other': '{{count}} días restantes en el periodo de prueba',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Actualiza tu proyecto',
 
   /**
    * Label for "contact sales" call to action
@@ -1617,7 +1619,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Conectado con {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Abrir menú',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1638,7 +1640,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Selecciona un espacio de trabajo',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Seleccionar espacio de trabajo',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Espacios de trabajo',
 })
