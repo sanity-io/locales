@@ -374,6 +374,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Элемент масіва з `_key` <code>"{{key}}"</code> не знойдзены па шляху <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'састарэлы',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Без назвы',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -1554,7 +1556,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Увайшлі з {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Адкрыць меню',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1575,7 +1577,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Выбраць працоўны прастор',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Выбраць працоўную вобласць',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Працоўныя прасторы',
 })
