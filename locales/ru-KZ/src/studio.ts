@@ -373,6 +373,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Элемент массива с `_key` <code>"{{key}}"</code> не найден по пути <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': 'устаревший',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Без названия',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -389,9 +391,9 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_one': '{{count}} предупреждение',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} день остался в пробной версии',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Перейдите на расширенный тарифный план',
 
   /**
    * Label for "contact sales" call to action
@@ -1558,7 +1560,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Вошли через {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Открыть меню',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1579,7 +1581,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Выбрать рабочее пространство',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Выберите рабочее пространство',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Рабочие пространства',
 })

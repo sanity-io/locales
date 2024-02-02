@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Восстановить последнюю версию',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Этот документ был удален.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': 'Этот тип документа устарел.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не имеет разрешений на создание этого документа.',
@@ -94,6 +96,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Эта ссылка была удалена с тех пор, как вы ее открыли.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': 'Новый {{schemaType}}',
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': 'Без названия',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Открыть действия документа',
@@ -197,6 +204,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Неизвестный тип схемы: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': 'Закрыть',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Инспектирование <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -356,9 +365,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Открыть предпросмотр',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Сохранено',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Сохранение...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'Последняя публикация {{relativeTime}}',
