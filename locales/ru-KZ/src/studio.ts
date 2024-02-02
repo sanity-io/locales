@@ -1581,7 +1581,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Выбрать рабочее пространство',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': 'Выберите рабочую область',
+  'workspaces.select-workspace-tooltip': 'Выберите рабочее пространство',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Рабочие пространства',
 })
