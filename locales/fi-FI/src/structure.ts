@@ -352,7 +352,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentin julkaisu on peruttu. Uusin julkaistu versio on luotu luonnokseksi.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Nimetön',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Yhteys katkesi. Yhdistetään uudelleen…',
   /** The loading message for the document not found pane */
