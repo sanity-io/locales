@@ -103,7 +103,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Prøv igjen',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': 'Åpne kommentarhandlingsmeny',
+  'list-item.open-menu-aria-label': 'Åpne kommentarmeny',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Gjenåpne',
   /** The button aria label to re-open a comment that is resolved */
