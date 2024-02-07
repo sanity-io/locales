@@ -662,7 +662,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Reduser',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Rediger annotasjon',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Utvid',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -674,7 +674,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Sett inn {{typeName}} (i linjen)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Fjern annotasjon',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Klikk for å aktivere',
   /** Label for activate on focus with context of click and focused */
@@ -683,13 +683,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Trykk for å aktivere',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Annotasjonsobjekt',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Rediger {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Lenke',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Blokkobjekt',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Rediger',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -713,15 +713,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Tom',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Innebygd objekt',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Rediger objekt',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Rediger objekt',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Fjern objekt',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Fjern objekt',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'MERK: Det er generelt sett trygt å utføre handlingen over, men om du er i tvil, ta kontakt med de som er ansvarlige for konfigurasjon av studioet.',
