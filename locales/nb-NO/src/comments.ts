@@ -132,7 +132,7 @@ export default removeUndefinedLocaleResources({
   /** Label/badge shown for users that are not authorized to see the document, and thus cannot be mentioned */
   'mentions.unauthorized-user': 'Uautorisert',
   /** Aria label for the command list for users to mention */
-  'mentions.user-list-aria-label': 'Liste over brukere å nevne',
+  'mentions.user-list-aria-label': 'Liste over brukere du kan nevne',
 
   /** The comments onboarding popover text */
   'onboarding.body':
