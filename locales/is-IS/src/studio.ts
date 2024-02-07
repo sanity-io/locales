@@ -658,7 +658,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Fella saman ritilinn',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Breyta athugasemd',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Stækka ritil',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -670,7 +670,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Setja inn {{typeName}} (innlína)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Fjarlægja athugasemd',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Smelltu til að virkja',
   /** Label for activate on focus with context of click and focused */
@@ -679,13 +679,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Ýttu til að virkja',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Athugasemdahlutur',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Breyta {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Hlekkur',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Blokka hlutur',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Breyta',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -709,15 +709,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Tómt',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Innri hlutur',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Breyta hlut',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Breyta hlut',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Fjarlægja hlut',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Fjarlægja hlut',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'ATH: Það er yfirleitt öruggt að framkvæma aðgerðina hér að ofan, en ef þú ert í vafa, hafðu samband við þá sem bera ábyrgð á uppsetningu stúdíóins þíns.',
