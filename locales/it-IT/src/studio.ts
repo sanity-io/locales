@@ -390,6 +390,8 @@ export default removeUndefinedLocaleResources({
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Nessun elemento dell\'array con `_key` <code>"{{key}}"</code> trovato nel percorso <code>{{path}}</code>',
+  /** Form field deprecated label */
+  'form.field.deprecated-label': undefined, // 'deprecated'
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Senza titolo',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -664,8 +666,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_other': 'Campi sconosciuti trovati',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Riduci editor',
-  /** Label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation': 'Modifica annotazione',
+  /** Aria label for action to edit an existing annotation */
+  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Espandi editor',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -676,8 +678,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object': 'Inserisci {{typeName}}',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Inserisci {{typeName}} (inline)',
-  /** Label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation': 'Rimuovi annotazione',
+  /** Aria label for action to remove an annotation */
+  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Clicca per attivare',
   /** Label for activate on focus with context of click and focused */
@@ -685,10 +687,14 @@ export default removeUndefinedLocaleResources({
     'Clicca o premi spazio per attivare',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Tocca per attivare',
+  /**Aria label for the annotation object */
+  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Modifica {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Collegamento',
+  /**Aria label for the block object */
+  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Modifica',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -711,10 +717,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Sottolineato',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Vuoto',
+  /**Aria label for the block object */
+  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Modifica oggetto',
+  /** Aria label for icon for action to edit an inline object item */
+  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Rimuovi oggetto',
+  /** Aria label for icon for action to remove an inline object item */
+  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     "NOTA: Di solito è sicuro eseguire l'azione sopra, ma se hai dubbi, contatta i responsabili della configurazione del tuo studio.",

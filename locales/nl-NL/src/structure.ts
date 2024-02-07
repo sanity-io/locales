@@ -353,6 +353,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'De publicatie van het document is ongedaan gemaakt. Er is een concept gemaakt van de laatste gepubliceerde versie.',
+  /** The document title shown when document title is "undefined" in operation message */
+  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Verbinding verloren. Opnieuw verbinden…',
   /** The loading message for the document not found pane */

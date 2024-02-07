@@ -663,8 +663,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_other': 'Onbekende velden gevonden',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Editor samenvouwen',
-  /** Label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation': 'Annotatie bewerken',
+  /** Aria label for action to edit an existing annotation */
+  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Editor uitbreiden',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -675,8 +675,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object': 'Voeg {{typeName}} in',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Voeg {{typeName}} in (inline)',
-  /** Label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation': 'Verwijder annotatie',
+  /** Aria label for action to remove an annotation */
+  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Klik om te activeren',
   /** Label for activate on focus with context of click and focused */
@@ -684,10 +684,14 @@ export default removeUndefinedLocaleResources({
     'Klik of druk op spatie om te activeren',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Tik om te activeren',
+  /**Aria label for the annotation object */
+  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Bewerk {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Link',
+  /**Aria label for the block object */
+  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Bewerken',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -710,10 +714,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Onderstrepen',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Leeg',
+  /**Aria label for the block object */
+  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Object bewerken',
+  /** Aria label for icon for action to edit an inline object item */
+  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Object verwijderen',
+  /** Aria label for icon for action to remove an inline object item */
+  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'LET OP: Het is over het algemeen veilig om de bovenstaande actie uit te voeren, maar als u twijfelt, neem dan contact op met degenen die verantwoordelijk zijn voor het configureren van uw studio.',

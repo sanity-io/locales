@@ -658,8 +658,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_other': '알 수 없는 필드들 발견',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': '에디터 접기',
-  /** Label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation': '주석 편집하기',
+  /** Aria label for action to edit an existing annotation */
+  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': '에디터 확장하기',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -670,8 +670,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object': '{{typeName}} 삽입하기',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': '{{typeName}} 삽입하기 (인라인)',
-  /** Label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation': '주석 제거하기',
+  /** Aria label for action to remove an annotation */
+  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': '활성화하려면 클릭하세요',
   /** Label for activate on focus with context of click and focused */
@@ -679,10 +679,14 @@ export default removeUndefinedLocaleResources({
     '활성화하려면 클릭하거나 스페이스를 누르세요',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': '활성화하려면 탭하세요',
+  /**Aria label for the annotation object */
+  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}} 편집하기',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': '링크',
+  /**Aria label for the block object */
+  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': '편집하기',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -705,10 +709,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': '밑줄',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': '비어 있음',
+  /**Aria label for the block object */
+  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': '객체 편집하기',
+  /** Aria label for icon for action to edit an inline object item */
+  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': '객체 제거하기',
+  /** Aria label for icon for action to remove an inline object item */
+  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     '참고: 위의 작업을 수행하는 것이 일반적으로 안전하지만, 확신이 서지 않는 경우 스튜디오를 구성하는 담당자에게 문의하세요.',

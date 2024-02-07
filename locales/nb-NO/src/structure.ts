@@ -349,6 +349,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentet ble avpublisert. Et utkast har blitt opprettet fra den siste publiserte versjonen.',
+  /** The document title shown when document title is "undefined" in operation message */
+  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Forbindelse mistet. Kobler til på nytt…',
   /** The loading message for the document not found pane */

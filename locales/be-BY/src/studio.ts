@@ -627,8 +627,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_one': 'Знойдзена невядомае поле',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Згарнуць рэдактар',
-  /** Label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation': 'Рэдагаваць анатацыю',
+  /** Aria label for action to edit an existing annotation */
+  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Разгарнуць рэдактар',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -639,8 +639,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object': 'Уставіць {{typeName}}',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Уставіць {{typeName}} (у лінію)',
-  /** Label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation': 'Выдаліць анатацыю',
+  /** Aria label for action to remove an annotation */
+  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Націсніце, каб актываваць',
   /** Label for activate on focus with context of click and focused */
@@ -648,10 +648,14 @@ export default removeUndefinedLocaleResources({
     'Націсніце або націсніце прастору, каб актываваць',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Націсніце, каб актываваць',
+  /**Aria label for the annotation object */
+  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Рэдагаваць {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Спасылка',
+  /**Aria label for the block object */
+  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Рэдагаваць',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -674,10 +678,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Падкрэслены',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Пуста',
+  /**Aria label for the block object */
+  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': "Рэдагаваць аб'ект",
+  /** Aria label for icon for action to edit an inline object item */
+  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': "Выдаліць аб'ект",
+  /** Aria label for icon for action to remove an inline object item */
+  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'УВАГА: Звычайна можна бяспечна выканаць дзеянне вышэй, але калі ў вас ёсць сумневы, звяжыцеся з адказнымі за канфігурацыю вашай студыі.',

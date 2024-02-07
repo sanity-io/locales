@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.restore-button.text': 'Restaurar versão mais recente',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Este documento foi excluído.',
+  /** The text content for the deprecated document type banner */
+  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'O seu papel <Roles/> não tem permissões para criar este documento.',
@@ -100,6 +102,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Esta referência foi removida desde que você a abriu.',
+
+  /** Browser/tab title when creating a new document of a given type */
+  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
+  'browser-document-title.untitled-document': undefined, // 'Untitled'
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Abrir ações do documento',
@@ -217,6 +224,8 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Tipo de esquema desconhecido: {{schemaType}}',
 
+  /** Tooltip text shown for the close button of the document inspector */
+  'document-inspector.close-button.tooltip': undefined, // 'Close'
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspecionando <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -343,6 +352,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'A publicação do documento foi retirada. Um rascunho foi criado a partir da última versão publicada.',
+  /** The document title shown when document title is "undefined" in operation message */
+  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Conexão perdida. Reconectando…',
   /** The loading message for the document not found pane */

@@ -664,8 +664,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_other': 'Campos desconocidos encontrados',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Contraer editor',
-  /** Label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation': 'Editar anotación',
+  /** Aria label for action to edit an existing annotation */
+  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Expandir editor',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -676,8 +676,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object': 'Insertar {{typeName}}',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Insertar {{typeName}} (en línea)',
-  /** Label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation': 'Eliminar anotación',
+  /** Aria label for action to remove an annotation */
+  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Haz clic para activar',
   /** Label for activate on focus with context of click and focused */
@@ -685,10 +685,14 @@ export default removeUndefinedLocaleResources({
     'Haz clic o presiona espacio para activar',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Toca para activar',
+  /**Aria label for the annotation object */
+  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Editar {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Enlace',
+  /**Aria label for the block object */
+  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Editar',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -711,10 +715,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Subrayado',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Vacío',
+  /**Aria label for the block object */
+  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Editar objeto',
+  /** Aria label for icon for action to edit an inline object item */
+  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Eliminar objeto',
+  /** Aria label for icon for action to remove an inline object item */
+  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'NOTA: Generalmente es seguro realizar la acción anterior, pero si tienes dudas, ponte en contacto con los responsables de configurar tu estudio.',

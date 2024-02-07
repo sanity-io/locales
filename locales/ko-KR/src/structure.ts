@@ -342,6 +342,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     '문서의 발행이 취소되었습니다. 최신 발행 버전에서 초안이 생성되었습니다.',
+  /** The document title shown when document title is "undefined" in operation message */
+  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': '연결이 끊겼습니다. 재연결 중…',
   /** The loading message for the document not found pane */

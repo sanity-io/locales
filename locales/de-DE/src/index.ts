@@ -20,6 +20,11 @@ const locale = defineLocale({
     },
 
     {
+      namespace: 'comments',
+      resources: () => import('./comments'),
+    },
+
+    {
       namespace: 'vision',
       resources: () => import('./vision'),
     },

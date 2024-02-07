@@ -658,8 +658,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.title_other': 'Nalezena neznámá pole',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Sbalit editor',
-  /** Label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation': 'Upravit poznámku',
+  /** Aria label for action to edit an existing annotation */
+  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Rozbalit editor',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -670,8 +670,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object': 'Vložit {{typeName}}',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Vložit {{typeName}} (inline)',
-  /** Label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation': 'Odstranit poznámku',
+  /** Aria label for action to remove an annotation */
+  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Klikněte pro aktivaci',
   /** Label for activate on focus with context of click and focused */
@@ -679,10 +679,14 @@ export default removeUndefinedLocaleResources({
     'Klikněte nebo stiskněte mezerník pro aktivaci',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Klepněte pro aktivaci',
+  /**Aria label for the annotation object */
+  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Upravit {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Odkaz',
+  /**Aria label for the block object */
+  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Upravit',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -705,10 +709,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Podtržení',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Prázdné',
+  /**Aria label for the block object */
+  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Upravit objekt',
+  /** Aria label for icon for action to edit an inline object item */
+  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Odstranit objekt',
+  /** Aria label for icon for action to remove an inline object item */
+  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'POZNÁMKA: Akce výše je obvykle bezpečná, ale pokud máte pochybnosti, obraťte se na osoby odpovědné za konfiguraci vašeho studia.',
