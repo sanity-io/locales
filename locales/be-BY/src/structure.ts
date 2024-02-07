@@ -332,7 +332,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Дакумент быў зняты з публікацыі. Чарнавік быў створаны з апошняй апублікаванай версіі.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Без назвы',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Злучэнне страчана. Перападключэнне…',
   /** The loading message for the document not found pane */
