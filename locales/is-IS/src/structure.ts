@@ -347,7 +347,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Birtingu skjalsins var afturkallað. Drög hafa verið búin til úr síðustu birtu útgáfu.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Ótitlað',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Tenging rofnaði. Endurtengi…',
   /** The loading message for the document not found pane */
