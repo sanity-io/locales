@@ -164,7 +164,7 @@ export default removeUndefinedLocaleResources({
    * - `<Text>` - should be wrapped around the text describing the action ("reacted with")
    * - `<ReactionName/>` - the name of the reaction emoji, eg ":heavy_plus_sign:"
    */
-  'reactions.users-reacted-with-reaction': '<UserList/> <Text>对</Text> <ReactionName/>做出了反应',
+  'reactions.users-reacted-with-reaction': '<UserList/> <Text>对</Text> <ReactionName/> <Text>做出了反应</Text>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
   'status-filter.status-open': '开放',
