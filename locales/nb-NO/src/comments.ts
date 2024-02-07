@@ -99,7 +99,7 @@ export default removeUndefinedLocaleResources({
   /** The error text when sending a comment has failed */
   'list-item.layout-failed-sent': 'Klarte ikke å sende.',
   /** The loading message when posting a comment is in progress */
-  'list-item.layout-posting': 'Poster...',
+  'list-item.layout-posting': 'Sender...',
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Prøv igjen',
   /** The aria label for the comments menu button to open the actions menu */
