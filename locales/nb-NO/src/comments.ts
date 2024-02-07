@@ -136,7 +136,7 @@ export default removeUndefinedLocaleResources({
 
   /** The comments onboarding popover text */
   'onboarding.body':
-    'Du kan legge til kommentarer på ethvert felt i et dokument. De vil dukke opp her, gruppert etter felt.',
+    'Du kan legge til kommentarer på hvert av dokumentets felter. De vil dukke opp her, gruppert etter felt.',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'Skjønner',
   /** The comments onboarding popover header text */
