@@ -60,6 +60,8 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
         url: `https://github.com/${contributor}`,
       })),
 
+    browserslist: 'extends @sanity/browserslist-config',
+
     // pkg-utils preferred export order
     type: 'module',
     exports: {
