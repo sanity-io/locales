@@ -613,7 +613,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Thu gọn trình soạn thảo',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Chỉnh sửa chú thích',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Mở rộng trình soạn thảo',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -625,7 +625,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Chèn {{typeName}} (nội tuyến)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Xóa chú thích',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Nhấp để kích hoạt',
   /** Label for activate on focus with context of click and focused */
@@ -634,13 +634,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Chạm để kích hoạt',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Đối tượng chú thích',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Chỉnh sửa {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Liên kết',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Đối tượng khối',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Chỉnh sửa',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -664,15 +664,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Trống',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Đối tượng nội tuyến',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Chỉnh sửa đối tượng',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Chỉnh sửa đối tượng',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Xóa đối tượng',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Xóa đối tượng',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'LƯU Ý: Thông thường việc thực hiện hành động trên là an toàn, nhưng nếu bạn còn nghi ngờ, hãy liên hệ với những người chịu trách nhiệm cấu hình studio của bạn.',

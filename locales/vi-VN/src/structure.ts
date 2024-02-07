@@ -331,7 +331,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Tài liệu đã được hủy xuất bản. Một bản nháp đã được tạo từ phiên bản xuất bản cuối cùng.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Không tiêu đề',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Mất kết nối. Đang kết nối lại…',
   /** The loading message for the document not found pane */

@@ -2,161 +2,164 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The close comments button text */
-  'close-pane-button-text': undefined, // 'Close comments'
+  'close-pane-button-text': 'Đóng bình luận',
 
   /** The aria label for the close comments button */
-  'close-pane-button-text-aria-label': undefined, // 'Close comments'
+  'close-pane-button-text-aria-label': 'Đóng bình luận',
 
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
-  'compose.add-comment-input-placeholder': undefined, // 'Add comment to <strong>{{field}}</strong>'
+  'compose.add-comment-input-placeholder': 'Thêm bình luận vào <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': undefined, // 'Upgrade to add comment'
+  'compose.add-comment-input-placeholder-upsell': 'Nâng cấp để thêm bình luận',
   /** When composing a comment, the placeholder text shown when the input is empty */
-  'compose.create-comment-placeholder': undefined, // 'Create a new comment'
+  'compose.create-comment-placeholder': 'Tạo bình luận mới',
   /** When composing a comment, the aria label for the button to mention a user */
-  'compose.mention-user-aria-label': undefined, // 'Mention user'
+  'compose.mention-user-aria-label': 'Đề cập đến người dùng',
   /** When composing a comment, the tooltip text for the button to mention a user */
-  'compose.mention-user-tooltip': undefined, // 'Mention user'
+  'compose.mention-user-tooltip': 'Đề cập đến người dùng',
   /** When composing a reply, the placeholder text shown when the input is empty */
-  'compose.reply-placeholder': undefined, // 'Reply'
+  'compose.reply-placeholder': 'Trả lời',
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
-  'compose.reply-placeholder-upsell': undefined, // 'Upgrade to reply'
+  'compose.reply-placeholder-upsell': 'Nâng cấp để trả lời',
   /** When composing a comment, the aria label for the button to send a comment */
-  'compose.send-comment-aria-label': undefined, // 'Send comment'
+  'compose.send-comment-aria-label': 'Gửi bình luận',
   /** When composing a comment, the tooltip text for the button to send a comment */
-  'compose.send-comment-tooltip': undefined, // 'Send comment'
+  'compose.send-comment-tooltip': 'Gửi bình luận',
 
   /** The inspector text when error copying link */
-  'copy-link-error-message': undefined, // 'Unable to copy link to clipboard'
+  'copy-link-error-message': 'Không thể sao chép liên kết vào bảng tạm',
 
   /** The inspector successfully copied link text */
-  'copy-link-success-message': undefined, // 'Copied link to clipboard'
+  'copy-link-success-message': 'Đã sao chép liên kết vào bảng tạm',
 
   /** The delete dialog body for a comment */
-  'delete-comment.body': undefined, // 'Once deleted, a comment cannot be recovered.'
+  'delete-comment.body': 'Một khi đã xóa, bình luận không thể khôi phục lại.',
   /** The delete dialog confirm button text for a comment */
-  'delete-comment.confirm': undefined, // 'Delete comment'
+  'delete-comment.confirm': 'Xóa bình luận',
   /** The delete dialog title for a comment */
-  'delete-comment.title': undefined, // 'Delete this comment?'
+  'delete-comment.title': 'Xóa bình luận này?',
 
   /** The delete dialog error */
-  'delete-dialog.error': undefined, // 'An error occurred while deleting the comment. Please try again.'
+  'delete-dialog.error': 'Đã xảy ra lỗi khi xóa bình luận. Vui lòng thử lại.',
 
   /** The delete dialog body for a thread */
-  'delete-thread.body': undefined, // 'This comment and its replies will be deleted, and once deleted cannot be recovered.'
+  'delete-thread.body':
+    'Bình luận này và các phản hồi của nó sẽ bị xóa, và một khi đã xóa không thể khôi phục lại.',
   /** The delete dialog conform button text for a thread */
-  'delete-thread.confirm': undefined, // 'Delete thread'
+  'delete-thread.confirm': 'Xóa chuỗi bình luận',
   /** The delete dialog title for a thread */
-  'delete-thread.title': undefined, // 'Delete this comment thread?'
+  'delete-thread.title': 'Xóa chuỗi bình luận này?',
 
   /** The button text for confirming discard */
-  'discard.button-confirm': undefined, // 'Discard'
+  'discard.button-confirm': 'Hủy bỏ',
   /** The header for discard comment dialog */
-  'discard.header': undefined, // 'Discard comment?'
+  'discard.header': 'Hủy bỏ bình luận?',
   /** The text for discard comment dialog */
-  'discard.text': undefined, // 'Do you want to discard the comment?'
+  'discard.text': 'Bạn có muốn hủy bỏ bình luận?',
 
   /** Sharing feedback on the comments feature: The link title */
-  'feature-feedback.link': undefined, // 'Share your feedback'
+  'feature-feedback.link': 'Chia sẻ phản hồi của bạn',
   /** Sharing feedback on the comments feature: The form title  */
-  'feature-feedback.title': undefined, // 'Help improve '
+  'feature-feedback.title': 'Giúp cải thiện ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': undefined, // 'Comments'
+  'feature-name': 'Comments',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
-  'field-button.aria-label-add': undefined, // 'Add comment'
+  'field-button.aria-label-add': 'Thêm bình luận',
   /** Aria label for button above fields that opens the comments for this field, when there are existing comments */
-  'field-button.aria-label-open': undefined, // 'Open comments'
+  'field-button.aria-label-open': 'Mở bình luận',
   /** Text shown in popover when hovering the button above fields that opens the comments panel, when there are more than one comment present */
-  'field-button.content_other': undefined, // 'View comments'
+  'field-button.content_other': 'Xem bình luận',
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
-  'field-button.title': undefined, // 'Add comment'
+  'field-button.title': 'Thêm bình luận',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
-  'list-item.breadcrumb-button-go-to-field-aria-label': undefined, // 'Go to {{field}} field'
+  'list-item.breadcrumb-button-go-to-field-aria-label': 'Đi đến trường {{field}}',
   /** The button tooltip content for the add reaction button */
-  'list-item.context-menu-add-reaction': undefined, // 'Add reaction'
+  'list-item.context-menu-add-reaction': 'Thêm phản ứng',
   /** The button tooltip aria label for adding a reaction */
-  'list-item.context-menu-add-reaction-aria-label': undefined, // 'Add reaction'
+  'list-item.context-menu-add-reaction-aria-label': 'Thêm phản ứng',
   /** The button tooltip content for the add reaction button and mode is upsell */
-  'list-item.context-menu-add-reaction-upsell': undefined, // 'Upgrade to add reaction'
+  'list-item.context-menu-add-reaction-upsell': 'Nâng cấp để thêm phản ứng',
   /** The action menu item for copying a comment link */
-  'list-item.copy-link': undefined, // 'Copy link to comment'
+  'list-item.copy-link': 'Sao chép liên kết đến bình luận',
   /** The action menu item for deleting a comment */
-  'list-item.delete-comment': undefined, // 'Delete comment'
+  'list-item.delete-comment': 'Xóa bình luận',
   /** The action menu item for editing a comment */
-  'list-item.edit-comment': undefined, // 'Edit comment'
+  'list-item.edit-comment': 'Chỉnh sửa bình luận',
   /** The action menu item for editing a comment and the mode is upsell */
-  'list-item.edit-comment-upsell': undefined, // 'Upgrade to edit comment'
+  'list-item.edit-comment-upsell': 'Nâng cấp để chỉnh sửa bình luận',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
-  'list-item.go-to-field-button.aria-label': undefined, // 'Go to field'
+  'list-item.go-to-field-button.aria-label': 'Đi đến trường',
   /** The marker to indicate that a comment has been edited in brackets */
-  'list-item.layout-edited': undefined, // 'edited'
+  'list-item.layout-edited': 'đã chỉnh sửa',
   /** The error text when sending a comment has failed */
-  'list-item.layout-failed-sent': undefined, // 'Failed to send.'
+  'list-item.layout-failed-sent': 'Không gửi được.',
   /** The loading message when posting a comment is in progress */
-  'list-item.layout-posting': undefined, // 'Posting...'
+  'list-item.layout-posting': 'Đang đăng...',
   /** The text for retrying posting a comment */
-  'list-item.layout-retry': undefined, // 'Retry'
+  'list-item.layout-retry': 'Thử lại',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': undefined, // 'Open comment actions menu'
+  'list-item.open-menu-aria-label': 'Mở menu hành động bình luận',
   /** The button text to re-open a resolved comment  */
-  'list-item.re-open-resolved': undefined, // 'Re-open'
+  'list-item.re-open-resolved': 'Mở lại',
   /** The button aria label to re-open a comment that is resolved */
-  'list-item.re-open-resolved-aria-label': undefined, // 'Re-open'
+  'list-item.re-open-resolved-aria-label': 'Mở lại',
   /** The button aria label to mark a comment as resolved */
-  'list-item.resolved-tooltip-aria-label': undefined, // 'Mark comment as resolved'
+  'list-item.resolved-tooltip-aria-label': 'Đánh dấu bình luận đã giải quyết',
   /** The button text to mark a comment as resolved */
-  'list-item.resolved-tooltip-content': undefined, // 'Mark as resolved'
+  'list-item.resolved-tooltip-content': 'Đánh dấu là đã giải quyết',
 
   /** The empty state text for open comments */
-  'list-status.empty-state-open-text': undefined, // 'Open comments on this document will be shown here.'
+  'list-status.empty-state-open-text': 'Bình luận mở trên tài liệu này sẽ được hiển thị ở đây.',
   /** The empty state title for open comments */
-  'list-status.empty-state-open-title': undefined, // 'No open comments yet'
+  'list-status.empty-state-open-title': 'Chưa có bình luận mở',
   /** The empty state text for resolved comments */
-  'list-status.empty-state-resolved-text': undefined, // 'Resolved comments on this document will be shown here.'
+  'list-status.empty-state-resolved-text':
+    'Các bình luận đã giải quyết trên tài liệu này sẽ được hiển thị ở đây.',
   /** The empty state title for resolved comments */
-  'list-status.empty-state-resolved-title': undefined, // 'No resolved comments yet'
+  'list-status.empty-state-resolved-title': 'Chưa có bình luận nào được giải quyết',
   /** The list status message for error */
-  'list-status.error': undefined, // 'Something went wrong'
+  'list-status.error': 'Đã xảy ra lỗi',
   /** The list status message for loading status */
-  'list-status.loading': undefined, // 'Loading comments'
+  'list-status.loading': 'Đang tải bình luận',
 
   /** Text shown when no users can be found to mention */
-  'mentions.no-users-found': undefined, // 'No users found'
+  'mentions.no-users-found': 'Không tìm thấy người dùng',
   /** Label/badge shown for users that are not authorized to see the document, and thus cannot be mentioned */
-  'mentions.unauthorized-user': undefined, // 'Unauthorized'
+  'mentions.unauthorized-user': 'Không được phép',
   /** Aria label for the command list for users to mention */
-  'mentions.user-list-aria-label': undefined, // 'List of users to mention'
+  'mentions.user-list-aria-label': 'Danh sách người dùng để nhắc đến',
 
   /** The comments onboarding popover text */
-  'onboarding.body': undefined, // 'You can add comments to any field in a document. They\'ll show up here, grouped by field.'
+  'onboarding.body':
+    'Bạn có thể thêm bình luận vào bất kỳ trường nào trong tài liệu. Chúng sẽ xuất hiện ở đây, được nhóm theo trường.',
   /** The comments onboarding dismiss text */
-  'onboarding.dismiss': undefined, // 'Got it'
+  'onboarding.dismiss': 'Đã hiểu',
   /** The comments onboarding popover header text */
-  'onboarding.header': undefined, // 'Document fields now have comments'
+  'onboarding.header': 'Các trường tài liệu giờ đây có bình luận',
 
   /** Tooltip for the button to add a reaction to a comment */
-  'reactions.add-reaction-tooltip': undefined, // 'Add reaction'
+  'reactions.add-reaction-tooltip': 'Thêm phản ứng',
   /** Aria label for the individual reactions you can choose from when reacting to a comment */
-  'reactions.react-with-aria-label': undefined, // 'React with {{reactionName}}'
+  'reactions.react-with-aria-label': 'Phản ứng với {{reactionName}}',
   /** When a users' name cannot be resolved, fall back to this name */
-  'reactions.user-list.unknown-user-fallback-name': undefined, // 'Unknown user'
+  'reactions.user-list.unknown-user-fallback-name': 'Người dùng không xác định',
   /**
    * When showing list of users who have reacted, replaces your own name with "you", eg
    * "Donna, you, James, and Tyler reacted with 👍". A different key (`_leading` suffix)
    * is used when you are the first to react, eg "You, Donna and Tyler reacted with 👍".
    * Use `{{name}}` if you want to instead use the current users' actual name.
    */
-  'reactions.user-list.you': undefined, // 'you'
+  'reactions.user-list.you': 'bạn',
   /**
    * When showing list of users who have reacted, replaces your own name with "You", eg
    * "You, Donna, James, and Tyler reacted with 👍". A different key (`_leading` suffix)
    * is used when you are not the first to react, eg "Donna, you, James and Tyler reacted with 👍".
    * Use `{{name}}` if you want to instead use the current users' actual name.
    */
-  'reactions.user-list.you_leading': undefined, // 'You'
+  'reactions.user-list.you_leading': 'Bạn',
   /**
    * The text shown for the tooltip that appears when hovering over the reaction count, eg
    * "Donna, James, and Tyler Reacted with 👍". Three components are available for use:
@@ -164,16 +167,17 @@ export default removeUndefinedLocaleResources({
    * - `<Text>` - should be wrapped around the text describing the action ("reacted with")
    * - `<ReactionName/>` - the name of the reaction emoji, eg ":heavy_plus_sign:"
    */
-  'reactions.users-reacted-with-reaction': undefined, // '<UserList/> <Text>reacted with</Text> <ReactionName/>'
+  'reactions.users-reacted-with-reaction':
+    '<UserList/> <Text>đã phản ứng với</Text> <ReactionName/>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
-  'status-filter.status-open': undefined, // 'Open'
+  'status-filter.status-open': 'Mở',
   /** Status filter: The full text for describing filtering on open (non-resolved) comments */
-  'status-filter.status-open-full': undefined, // 'Open comments'
+  'status-filter.status-open-full': 'Bình luận mở',
   /** Status filter: The short title describing filtering on resolved comments */
-  'status-filter.status-resolved': undefined, // 'Resolved'
+  'status-filter.status-resolved': 'Đã giải quyết',
   /** Status filter: The full text for describing filtering on resolved comments */
-  'status-filter.status-resolved-full': undefined, // 'Resolved comments'
+  'status-filter.status-resolved-full': 'Bình luận đã giải quyết',
   /** Status filter: The full text for describing filtering on resolved comments and is upsell mode */
-  'status-filter.status-resolved-full-upsell': undefined, // 'Upgrade to see resolved comments'
+  'status-filter.status-resolved-full-upsell': 'Nâng cấp để xem bình luận đã giải quyết',
 })
