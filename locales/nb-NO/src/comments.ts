@@ -140,7 +140,7 @@ export default removeUndefinedLocaleResources({
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'Skjønner',
   /** The comments onboarding popover header text */
-  'onboarding.header': 'Dokumentfelt har nå kommentarer',
+  'onboarding.header': 'Felter har nå kommentarer',
 
   /** Tooltip for the button to add a reaction to a comment */
   'reactions.add-reaction-tooltip': 'Legg til reaksjon',
