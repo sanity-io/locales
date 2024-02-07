@@ -352,6 +352,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'El documento fue despublicado. Se ha creado un borrador a partir de la última versión publicada.',
+  /** The document title shown when document title is "undefined" in operation message */
+  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Conexión perdida. Reconectando…',
   /** The loading message for the document not found pane */

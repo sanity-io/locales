@@ -349,6 +349,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Publikace dokumentu byla zrušena. Z poslední publikované verze byl vytvořen koncept.',
+  /** The document title shown when document title is "undefined" in operation message */
+  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title':
     'Spojení bylo přerušeno. Opětovné připojování…',
