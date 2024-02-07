@@ -8,7 +8,7 @@ export default removeUndefinedLocaleResources({
   'close-pane-button-text-aria-label': 'Lukk kommentarer',
 
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
-  'compose.add-comment-input-placeholder': 'Legg til kommentar til <strong>{{field}}</strong>',
+  'compose.add-comment-input-placeholder': 'Legg til kommentar på <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
   'compose.add-comment-input-placeholder-upsell': 'Oppgrader for å legge til kommentar',
   /** When composing a comment, the placeholder text shown when the input is empty */
