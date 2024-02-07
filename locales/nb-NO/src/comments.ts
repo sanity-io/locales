@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Hjelp til med å forbedre ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Kommentarer',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Legg til kommentar',
