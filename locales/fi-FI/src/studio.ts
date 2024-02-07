@@ -657,7 +657,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Pienennä editori säästääksesi näyttötilaa',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Muokkaa huomautusta',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Laajenna editori',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -669,7 +669,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Lisää {{typeName}} (inline)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Poista huomautus',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Klikkaa aktivoidaksesi',
   /** Label for activate on focus with context of click and focused */
@@ -678,13 +678,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Napauta aktivoidaksesi',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Huomautusobjekti',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Muokkaa {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Linkki',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Lohko-objekti',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Muokkaa',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -708,15 +708,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Tyhjä',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Sisäkkäinen objekti',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Muokkaa objektia',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Muokkaa objektia',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Poista objekti',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Poista objekti',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'HUOM: Toiminnon suorittaminen yllä on yleensä turvallista, mutta jos olet epävarma, ota yhteyttä studion konfiguroinnista vastaaviin henkilöihin.',
