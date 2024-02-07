@@ -597,7 +597,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': '折叠编辑器',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': '编辑注释',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': '展开编辑器',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -609,7 +609,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': '插入{{typeName}}（内联）',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': '移除注释',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': '点击以激活',
   /** Label for activate on focus with context of click and focused */
@@ -617,13 +617,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': '轻触以激活',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': '注释对象',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '编辑{{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': '链接',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': '块对象',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': '编辑',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -647,15 +647,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': '空',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': '内联对象',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': '编辑对象',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': '编辑对象',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': '移除对象',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': '移除对象',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     '注意：通常执行上述操作是安全的，但如果您有疑问，请与负责配置您工作室的人员联系。',
