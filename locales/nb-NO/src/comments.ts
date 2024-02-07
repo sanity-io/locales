@@ -77,7 +77,7 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'Legg til kommentar',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
-  'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}} felt',
+  'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}}-feltet',
   /** The button tooltip content for the add reaction button */
   'list-item.context-menu-add-reaction': 'Legg til reaksjon',
   /** The button tooltip aria label for adding a reaction */
