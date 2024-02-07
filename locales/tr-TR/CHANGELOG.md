@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.1.2...locale-tr-tr-v1.2.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **tr-TR:** automated translation updates ([#324](https://github.com/sanity-io/locales/issues/324)) ([fea1ec4](https://github.com/sanity-io/locales/commit/fea1ec45a936df898aba9c8a31f3d3c76fabee36))
+
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.1.1...locale-tr-tr-v1.1.2) (2024-01-18)
 
 

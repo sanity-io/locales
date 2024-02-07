@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.0.1...locale-ru-kz-v1.1.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **ru-KZ:** automated translation updates ([#261](https://github.com/sanity-io/locales/issues/261)) ([1091fb6](https://github.com/sanity-io/locales/commit/1091fb664d9a899aa731fe43b69b08ea5fa50401))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.0.0...locale-ru-kz-v1.0.1) (2024-01-17)
 
 

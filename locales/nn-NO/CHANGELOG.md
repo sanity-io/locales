@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.4...locale-nn-no-v1.1.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **nn-NO:** automated translation updates ([#320](https://github.com/sanity-io/locales/issues/320)) ([cc12519](https://github.com/sanity-io/locales/commit/cc1251900c12134d282b249256c764902d958b78))
+
 ## [1.0.4](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.3...locale-nn-no-v1.0.4) (2024-01-18)
 
 

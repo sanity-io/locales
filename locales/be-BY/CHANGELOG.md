@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-be-by-v1.0.1...locale-be-by-v1.1.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **be-BY:** automated translation updates ([#280](https://github.com/sanity-io/locales/issues/280)) ([a6af984](https://github.com/sanity-io/locales/commit/a6af98453a6d4490fa785d48a0f54685a1905374))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-be-by-v1.0.0...locale-be-by-v1.0.1) (2024-01-17)
 
 
