@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.1.2...locale-sv-se-v1.2.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **sv-SE:** automated translation updates ([#323](https://github.com/sanity-io/locales/issues/323)) ([352aa47](https://github.com/sanity-io/locales/commit/352aa47a987f5df5dea4b87b33d2795af9eb31e4))
+
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.1.1...locale-sv-se-v1.1.2) (2024-01-18)
 
 

@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.0.3...locale-cs-cz-v1.1.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **cs-CZ:** automated translation updates ([#310](https://github.com/sanity-io/locales/issues/310)) ([1b5e9dd](https://github.com/sanity-io/locales/commit/1b5e9dd12abec6c7c9b04ad194a2c8dce1c8ff36))
+* **cs-CZ:** automated translation updates ([#337](https://github.com/sanity-io/locales/issues/337)) ([9d755de](https://github.com/sanity-io/locales/commit/9d755decabde7727178217225976163a35c91c53))
+
 ## [1.0.3](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.0.2...locale-cs-cz-v1.0.3) (2024-01-18)
 
 

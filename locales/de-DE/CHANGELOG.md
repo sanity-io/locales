@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.3...locale-de-de-v1.1.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
 ## [1.0.3](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.2...locale-de-de-v1.0.3) (2024-01-17)
 
 

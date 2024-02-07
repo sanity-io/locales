@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.0.4...locale-nl-nl-v1.1.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **nl-NL:** automated translation updates ([#319](https://github.com/sanity-io/locales/issues/319)) ([39a3206](https://github.com/sanity-io/locales/commit/39a320635b5f29ec3d9972a6e097d317ffd4f731))
+
 ## [1.0.4](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.0.3...locale-nl-nl-v1.0.4) (2024-01-18)
 
 

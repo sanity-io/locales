@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/sanity-io/locales/compare/locale-es-es-v1.1.1...locale-es-es-v1.2.0) (2024-02-07)
+
+
+### Features
+
+* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
+
+
+### Bug Fixes
+
+* **es-ES:** automated translation updates ([#246](https://github.com/sanity-io/locales/issues/246)) ([5333dcf](https://github.com/sanity-io/locales/commit/5333dcfc655cb6ae95afb061f081b43b71383974))
+
 ## [1.1.1](https://github.com/sanity-io/locales/compare/locale-es-es-v1.1.0...locale-es-es-v1.1.1) (2024-01-17)
 
 
