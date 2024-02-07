@@ -12,7 +12,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
   'compose.add-comment-input-placeholder-upsell': 'Oppgrader for å legge til kommentar',
   /** When composing a comment, the placeholder text shown when the input is empty */
-  'compose.create-comment-placeholder': 'Opprett en ny kommentar',
+  'compose.create-comment-placeholder': 'Kommentér',
   /** When composing a comment, the aria label for the button to mention a user */
   'compose.mention-user-aria-label': 'Nevn bruker',
   /** When composing a comment, the tooltip text for the button to mention a user */
