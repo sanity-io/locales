@@ -103,6 +103,7 @@ export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> 
   } else if (isApproved === false) {
     logger('PR has requested changes - adjusting labels to match')
     removeLabels.push('approved', 'awaiting-review')
+    addLabels.push('changes-requested')
   } else {
     logger(reviews.length > 0 ? 'PR is in an indeterminate state' : 'PR is awaiting review')
   }
