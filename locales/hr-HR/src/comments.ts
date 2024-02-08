@@ -33,11 +33,11 @@ export default removeUndefinedLocaleResources({
   'copy-link-success-message': 'Kopirana poveznica u međuspremnik',
 
   /** The delete dialog body for a comment */
-  'delete-comment.body': 'Jednom izbrisani, komentar se ne može povratiti.',
+  'delete-comment.body': 'Jednom izbrisan, komentar se ne može povratiti.',
   /** The delete dialog confirm button text for a comment */
   'delete-comment.confirm': 'Izbriši komentar',
   /** The delete dialog title for a comment */
-  'delete-comment.title': 'Izbriši ovaj komentar?',
+  'delete-comment.title': 'Izbrisati ovaj komentar?',
 
   /** The delete dialog error */
   'delete-dialog.error':
@@ -45,16 +45,16 @@ export default removeUndefinedLocaleResources({
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
-    'Ovaj komentar i njegovi odgovori bit će izbrisani, i jednom izbrisani ne mogu se povratiti.',
+    'Ovaj komentar i njegovi odgovori bit će izbrisani, a jednom izbrisani ne mogu se povratiti.',
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'Izbriši nit',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'Izbriši ovu nit komentara?',
+  'delete-thread.title': 'Izbrisati ovu nit komentara?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'Odbaci',
   /** The header for discard comment dialog */
-  'discard.header': 'Odbaci komentar?',
+  'discard.header': 'Odbaciti komentar?',
   /** The text for discard comment dialog */
   'discard.text': 'Želite li odbaciti komentar?',
 
@@ -64,7 +64,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Pomozite unaprijediti ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Komentari',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Dodaj komentar',

@@ -660,7 +660,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Skupi uređivač',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': 'Uredi anotaciju',
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Uredi napomenu',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Proširi uređivač',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -672,7 +672,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Umetni {{typeName}} (inline)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': 'Ukloni anotaciju',
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Ukloni napomenu',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Kliknite za aktivaciju',
   /** Label for activate on focus with context of click and focused */
@@ -681,7 +681,7 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Dodirnite za aktivaciju',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': 'Objekt anotacije',
+  'inputs.portable-text.annotation-aria-label': 'Objekt napomene',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Uredi {{schemaType}}',
   /** Title of the default "link" annotation */
