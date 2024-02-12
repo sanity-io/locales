@@ -182,5 +182,6 @@ export default removeUndefinedLocaleResources({
   /** Status filter: The full text for describing filtering on resolved comments */
   'status-filter.status-resolved-full': 'Megoldott megjegyzések',
   /** Status filter: The full text for describing filtering on resolved comments and is upsell mode */
-  'status-filter.status-resolved-full-upsell': 'Fizess elő a megoldott megjegyzések megtekintéséhez',
+  'status-filter.status-resolved-full-upsell':
+    'Fizess elő a megoldott megjegyzések megtekintéséhez',
 })

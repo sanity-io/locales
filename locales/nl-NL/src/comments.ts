@@ -115,7 +115,8 @@ export default removeUndefinedLocaleResources({
   'list-item.resolved-tooltip-content': 'Als opgelost markeren',
 
   /** The empty state text for open comments */
-  'list-status.empty-state-open-text': 'Openstaande opmerkingen op dit document worden hier getoond.',
+  'list-status.empty-state-open-text':
+    'Openstaande opmerkingen op dit document worden hier getoond.',
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'Nog geen openstaande opmerkingen',
   /** The empty state text for resolved comments */
