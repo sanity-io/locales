@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Цей документ було видалено.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
+  'banners.deprecated-document-type-banner.text': 'Цей тип документа застарів.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не має дозволів на створення цього документа.',
@@ -98,9 +98,9 @@ export default removeUndefinedLocaleResources({
     'Це посилання було видалено з моменту вашого відкриття.',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  'browser-document-title.new-document': 'Новий {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': undefined, // 'Untitled'
+  'browser-document-title.untitled-document': 'Без назви',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Відкрити дії з документом',
@@ -204,7 +204,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'Невідомий тип схеми: {{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
-  'document-inspector.close-button.tooltip': undefined, // 'Close'
+  'document-inspector.close-button.tooltip': 'Закрити',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Інспектування <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -330,7 +330,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Документ було знято з публікації. Чернет було створено з останньої опублікованої версії.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Без назви',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': "З'єднання втрачено. Перепідключення…",
   /** The loading message for the document not found pane */
@@ -366,9 +366,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Відкрити перегляд',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Збережено',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Зберігається...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'Остання публікація {{relativeTime}}',
