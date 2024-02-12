@@ -104,7 +104,7 @@ export default removeUndefinedLocaleResources({
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Адкрыць меню дзеянняў каментарыя',
   /** The button text to re-open a resolved comment  */
-  'list-item.re-open-resolved': 'Зноў адкрыць',
+  'list-item.re-open-resolved': 'Адкрыць зноў',
   /** The button aria label to re-open a comment that is resolved */
   'list-item.re-open-resolved-aria-label': 'Зноў адкрыць',
   /** The button aria label to mark a comment as resolved */
@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   'list-status.loading': 'Загрузка каментароў',
 
   /** Text shown when no users can be found to mention */
-  'mentions.no-users-found': 'Карыстальнікаў не знойдзена',
+  'mentions.no-users-found': 'Карыстальнікі не знойдзены',
   /** Label/badge shown for users that are not authorized to see the document, and thus cannot be mentioned */
   'mentions.unauthorized-user': 'Неаўтарызаваны',
   /** Aria label for the command list for users to mention */
@@ -138,7 +138,7 @@ export default removeUndefinedLocaleResources({
   'onboarding.body':
     'Вы можаце дадаваць каментарыі да любога поля ў дакуменце. Яны будуць паказаны тут, сгрупаваныя па полі.',
   /** The comments onboarding dismiss text */
-  'onboarding.dismiss': 'Зразумеў',
+  'onboarding.dismiss': 'Зразумела',
   /** The comments onboarding popover header text */
   'onboarding.header': 'Палі дакументаў цяпер маюць каментарыі',
 
