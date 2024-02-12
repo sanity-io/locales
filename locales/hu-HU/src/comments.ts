@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'compose.add-comment-input-placeholder':
     '<strong>{{field}}</strong> mezőhöz hozzászólás hozzáadása',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': 'Frissítés a hozzászólás hozzáadásához',
+  'compose.add-comment-input-placeholder-upsell': 'Fizess elő a hozzászólás hozzáadásához',
   /** When composing a comment, the placeholder text shown when the input is empty */
   'compose.create-comment-placeholder': 'Új hozzászólás létrehozása',
   /** When composing a comment, the aria label for the button to mention a user */
@@ -21,7 +21,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a reply, the placeholder text shown when the input is empty */
   'compose.reply-placeholder': 'Válasz',
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
-  'compose.reply-placeholder-upsell': 'Frissítés a válaszadáshoz',
+  'compose.reply-placeholder-upsell': 'Fizess elő a válaszadáshoz',
   /** When composing a comment, the aria label for the button to send a comment */
   'compose.send-comment-aria-label': 'Hozzászólás küldése',
   /** When composing a comment, the tooltip text for the button to send a comment */
@@ -31,17 +31,17 @@ export default removeUndefinedLocaleResources({
   'copy-link-error-message': 'Nem sikerült a linket a vágólapra másolni',
 
   /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link másolva a vágólapra',
+  'copy-link-success-message': 'Link a vágólapra másolva',
 
   /** The delete dialog body for a comment */
-  'delete-comment.body': 'A törölt hozzászólás nem állítható helyre.',
+  'delete-comment.body': 'A törölt hozzászólás nem állítható vissza.',
   /** The delete dialog confirm button text for a comment */
   'delete-comment.confirm': 'Hozzászólás törlése',
   /** The delete dialog title for a comment */
   'delete-comment.title': 'Törli ezt a hozzászólást?',
 
   /** The delete dialog error */
-  'delete-dialog.error': 'Hiba történt a hozzászólás törlése közben. Kérjük, próbálja újra.',
+  'delete-dialog.error': 'Hiba történt a hozzászólás törlése közben. Kérjük, próbáld újra.',
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
@@ -56,12 +56,12 @@ export default removeUndefinedLocaleResources({
   /** The header for discard comment dialog */
   'discard.header': 'Hozzászólás elvetése?',
   /** The text for discard comment dialog */
-  'discard.text': 'El akarja vetni a hozzászólást?',
+  'discard.text': 'El akarod vetni a hozzászólást?',
 
   /** Sharing feedback on the comments feature: The link title */
-  'feature-feedback.link': 'Ossza meg visszajelzését',
+  'feature-feedback.link': 'Oszd meg visszajelzését',
   /** Sharing feedback on the comments feature: The form title  */
-  'feature-feedback.title': 'Segítsen a fejlesztésben ',
+  'feature-feedback.title': 'Segíts nekünk fejlődni ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
   'feature-name': 'Comments',
@@ -110,9 +110,9 @@ export default removeUndefinedLocaleResources({
   /** The button aria label to re-open a comment that is resolved */
   'list-item.re-open-resolved-aria-label': 'Újranyitás',
   /** The button aria label to mark a comment as resolved */
-  'list-item.resolved-tooltip-aria-label': 'Hozzászólás megjelölése megoldottként',
+  'list-item.resolved-tooltip-aria-label': 'Hozzászólás megjelölése lezártként',
   /** The button text to mark a comment as resolved */
-  'list-item.resolved-tooltip-content': 'Megjelölés megoldottként',
+  'list-item.resolved-tooltip-content': 'Megjelölés lezártként',
 
   /** The empty state text for open comments */
   'list-status.empty-state-open-text':
@@ -182,5 +182,5 @@ export default removeUndefinedLocaleResources({
   /** Status filter: The full text for describing filtering on resolved comments */
   'status-filter.status-resolved-full': 'Megoldott megjegyzések',
   /** Status filter: The full text for describing filtering on resolved comments and is upsell mode */
-  'status-filter.status-resolved-full-upsell': 'Frissítés a megoldott megjegyzések megtekintéséhez',
+  'status-filter.status-resolved-full-upsell': 'Fizess elő a megoldott megjegyzések megtekintéséhez',
 })
