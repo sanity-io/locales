@@ -2,17 +2,17 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The close comments button text */
-  'close-pane-button-text': 'Reacties sluiten',
+  'close-pane-button-text': 'Opmerkingen sluiten',
 
   /** The aria label for the close comments button */
-  'close-pane-button-text-aria-label': 'Reacties sluiten',
+  'close-pane-button-text-aria-label': 'Opmerkingen sluiten',
 
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
-  'compose.add-comment-input-placeholder': 'Voeg commentaar toe aan <strong>{{field}}</strong>',
+  'compose.add-comment-input-placeholder': 'Voeg opmerking toe aan <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': 'Upgrade om commentaar toe te voegen',
+  'compose.add-comment-input-placeholder-upsell': 'Upgrade om opmerkingen toe te voegen',
   /** When composing a comment, the placeholder text shown when the input is empty */
-  'compose.create-comment-placeholder': 'Maak een nieuw commentaar',
+  'compose.create-comment-placeholder': 'Nieuwe opmerking toevoegen',
   /** When composing a comment, the aria label for the button to mention a user */
   'compose.mention-user-aria-label': 'Vermeld gebruiker',
   /** When composing a comment, the tooltip text for the button to mention a user */
@@ -22,9 +22,9 @@ export default removeUndefinedLocaleResources({
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
   'compose.reply-placeholder-upsell': 'Upgrade om te antwoorden',
   /** When composing a comment, the aria label for the button to send a comment */
-  'compose.send-comment-aria-label': 'Verstuur commentaar',
+  'compose.send-comment-aria-label': 'Verstuur opmerking',
   /** When composing a comment, the tooltip text for the button to send a comment */
-  'compose.send-comment-tooltip': 'Verstuur commentaar',
+  'compose.send-comment-tooltip': 'Verstuur opmerking',
 
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Kan link niet naar klembord kopiëren',
@@ -33,30 +33,30 @@ export default removeUndefinedLocaleResources({
   'copy-link-success-message': 'Link gekopieerd naar klembord',
 
   /** The delete dialog body for a comment */
-  'delete-comment.body': 'Eenmaal verwijderd kan een commentaar niet worden hersteld.',
+  'delete-comment.body': 'Na het verwijderen kan een opmerking niet worden hersteld.',
   /** The delete dialog confirm button text for a comment */
-  'delete-comment.confirm': 'Verwijder commentaar',
+  'delete-comment.confirm': 'Verwijder opmerking',
   /** The delete dialog title for a comment */
-  'delete-comment.title': 'Dit commentaar verwijderen?',
+  'delete-comment.title': 'Deze opmerking verwijderen?',
 
   /** The delete dialog error */
   'delete-dialog.error':
-    'Er is een fout opgetreden bij het verwijderen van het commentaar. Probeer het opnieuw.',
+    'Er is een fout opgetreden bij het verwijderen van de opmerking. Probeer het opnieuw.',
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
-    'Dit commentaar en de antwoorden worden verwijderd, en eenmaal verwijderd kunnen ze niet worden hersteld.',
+    'Deze opmerking en de antwoorden worden verwijderd. Eenmaal verwijderd kunnen ze niet worden hersteld.',
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'Verwijder draad',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'Deze commentaardraad verwijderen?',
+  'delete-thread.title': 'Deze opmerkingendraad verwijderen?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'Verwerpen',
   /** The header for discard comment dialog */
-  'discard.header': 'Commentaar verwerpen?',
+  'discard.header': 'Opmerking verwerpen?',
   /** The text for discard comment dialog */
-  'discard.text': 'Wilt u het commentaar verwerpen?',
+  'discard.text': 'Wilt u de opmerking verwerpen?',
 
   /** Sharing feedback on the comments feature: The link title */
   'feature-feedback.link': 'Deel uw feedback',
@@ -64,18 +64,18 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Help verbeteren ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Opmerkingen',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
-  'field-button.aria-label-add': 'Commentaar toevoegen',
+  'field-button.aria-label-add': 'Opmerking toevoegen',
   /** Aria label for button above fields that opens the comments for this field, when there are existing comments */
-  'field-button.aria-label-open': 'Commentaren openen',
+  'field-button.aria-label-open': 'Opmerking openen',
   /** Text shown in popover when hovering the button above fields that opens the comments panel, when there is a single comment present */
-  'field-button.content_one': 'Bekijk commentaar',
+  'field-button.content_one': 'Bekijk opmerking',
   /** Text shown in popover when hovering the button above fields that opens the comments panel, when there are more than one comment present */
-  'field-button.content_other': 'Bekijk commentaren',
+  'field-button.content_other': 'Bekijk opmerkingen',
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
-  'field-button.title': 'Commentaar toevoegen',
+  'field-button.title': 'Opmerking toevoegen',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Ga naar {{field}} veld',
@@ -86,13 +86,13 @@ export default removeUndefinedLocaleResources({
   /** The button tooltip content for the add reaction button and mode is upsell */
   'list-item.context-menu-add-reaction-upsell': 'Upgrade om reactie toe te voegen',
   /** The action menu item for copying a comment link */
-  'list-item.copy-link': 'Link naar commentaar kopiëren',
+  'list-item.copy-link': 'Link naar opmerking kopiëren',
   /** The action menu item for deleting a comment */
-  'list-item.delete-comment': 'Commentaar verwijderen',
+  'list-item.delete-comment': 'Opmerking verwijderen',
   /** The action menu item for editing a comment */
-  'list-item.edit-comment': 'Commentaar bewerken',
+  'list-item.edit-comment': 'Opmerking bewerken',
   /** The action menu item for editing a comment and the mode is upsell */
-  'list-item.edit-comment-upsell': 'Upgrade om commentaar te bewerken',
+  'list-item.edit-comment-upsell': 'Upgrade om opmerking te bewerken',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Ga naar veld',
   /** The marker to indicate that a comment has been edited in brackets */
@@ -104,18 +104,18 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Opnieuw proberen',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': 'Menu met commentaaracties openen',
+  'list-item.open-menu-aria-label': 'Menu met opmerkingacties openen',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Opnieuw openen',
   /** The button aria label to re-open a comment that is resolved */
   'list-item.re-open-resolved-aria-label': 'Opnieuw openen',
   /** The button aria label to mark a comment as resolved */
-  'list-item.resolved-tooltip-aria-label': 'Commentaar als opgelost markeren',
+  'list-item.resolved-tooltip-aria-label': 'Opmerking als opgelost markeren',
   /** The button text to mark a comment as resolved */
   'list-item.resolved-tooltip-content': 'Als opgelost markeren',
 
   /** The empty state text for open comments */
-  'list-status.empty-state-open-text': 'Open commentaren op dit document worden hier getoond.',
+  'list-status.empty-state-open-text': 'Openstaande opmerkingen op dit document worden hier getoond.',
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'Nog geen openstaande opmerkingen',
   /** The empty state text for resolved comments */
