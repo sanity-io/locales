@@ -659,7 +659,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Editörü daraltarak ekran alanından tasarruf edin',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Notu düzenle',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Editörü Genişlet',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -671,7 +671,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': '{{typeName}} (satır içi) Ekle',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Notu kaldır',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Etkinleştirmek için tıklayın',
   /** Label for activate on focus with context of click and focused */
@@ -680,13 +680,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Etkinleştirmek için dokunun',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Not nesnesi',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}} Düzenle',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Bağlantı',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Blok nesnesi',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Düzenle',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -710,15 +710,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Boş',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Satır içi nesne',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Nesneyi Düzenle',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Nesneyi düzenle',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Nesneyi Kaldır',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Nesneyi kaldır',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'NOT: Yukarıdaki işlemi gerçekleştirmek genellikle güvenlidir, ancak şüpheniz varsa stüdyonuzu yapılandıran kişilerle iletişime geçin.',
