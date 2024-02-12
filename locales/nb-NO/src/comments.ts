@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   'list-item.resolved-tooltip-content': 'Merk som løst',
 
   /** The empty state text for open comments */
-  'list-status.empty-state-open-text': undefined, // 'Open comments on this document will be shown here.'
+  'list-status.empty-state-open-text': 'Åpne kommentarer på dette dokumentet vil bli vist her.',
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'Ingen åpne kommentarer ennå',
   /** The empty state text for resolved comments */
