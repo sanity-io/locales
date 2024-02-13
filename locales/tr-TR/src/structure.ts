@@ -347,7 +347,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Belge yayından kaldırıldı. En son yayınlanan sürümden bir taslak oluşturuldu.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Başlıksız',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Bağlantı kesildi. Yeniden bağlanıyor…',
   /** The loading message for the document not found pane */
