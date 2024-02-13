@@ -374,7 +374,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Елемент масиву з `_key` <code>"{{key}}"</code> не знайдено за шляхом <code>{{path}}</code>',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': 'застарілий',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Без назви',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -391,9 +391,9 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_one': '{{count}} попередження',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} день залишився в пробному періоді',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Оновіть ваш проект',
 
   /**
    * Label for "contact sales" call to action
@@ -627,7 +627,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Згорнути редактор',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Редагувати анотацію',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Розгорнути редактор',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -640,7 +640,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object-aria-label':
     'Вставити {{typeName}} (вбудований)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Видалити анотацію',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Клікніть, щоб активувати',
   /** Label for activate on focus with context of click and focused */
@@ -649,13 +649,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Торкніться, щоб активувати',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': "Об'єкт анотації",
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Редагувати {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Посилання',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': "Об'єкт блоку",
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Редагувати',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -679,15 +679,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Порожньо',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': "Вбудований об'єкт",
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': "Редагувати об'єкт",
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': "Редагувати об'єкт",
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': "Видалити об'єкт",
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': "Видалити об'єкт",
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     "УВАГА: Зазвичай дія вище є безпечною, але якщо ви сумніваєтеся, зв'яжіться з відповідальними за налаштування вашої студії.",
@@ -1566,7 +1566,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Увійшли через {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Відкрити меню',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1587,7 +1587,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Обрати робочий простір',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Вибрати робочий простір',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Робочі простори',
 })
