@@ -91,6 +91,8 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': '升级以编辑评论',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': '前往字段',
+  /** The text showing the comment context */
+  'list-item.layout-context': '在 <IntentLink>{{title}}</IntentLink> 上',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': '已编辑',
   /** The error text when sending a comment has failed */
