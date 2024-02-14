@@ -95,6 +95,8 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': 'Upgrade om opmerking te bewerken',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Ga naar veld',
+  /** The text showing the comment context */
+  'list-item.layout-context': 'op <IntentLink>{{title}}</IntentLink>',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': 'bewerkt',
   /** The error text when sending a comment has failed */
