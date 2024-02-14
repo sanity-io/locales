@@ -94,6 +94,8 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': 'Uppfærðu til að breyta athugasemd',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Farðu í reit',
+  /** The text showing the comment context */
+  'list-item.layout-context': 'á <IntentLink>{{title}}</IntentLink>',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': 'breytt',
   /** The error text when sending a comment has failed */
