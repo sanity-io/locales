@@ -20,7 +20,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a reply, the placeholder text shown when the input is empty */
   'compose.reply-placeholder': 'Responder',
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
-  'compose.reply-placeholder-upsell': 'Actualiza para responder',
+  'compose.reply-placeholder-upsell': 'Actualizar para responder',
   /** When composing a comment, the aria label for the button to send a comment */
   'compose.send-comment-aria-label': 'Enviar comentario',
   /** When composing a comment, the tooltip text for the button to send a comment */
