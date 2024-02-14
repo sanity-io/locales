@@ -91,6 +91,8 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': 'コメントを編集するためにアップグレード',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'フィールドに移動',
+  /** The text showing the comment context */
+  'list-item.layout-context': '<IntentLink>{{title}}</IntentLink>の上に',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': '編集済み',
   /** The error text when sending a comment has failed */
