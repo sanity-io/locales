@@ -93,6 +93,8 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': 'Абнавіць, каб рэдагаваць каментарый',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Перайсці да поля',
+  /** The text showing the comment context */
+  'list-item.layout-context': 'на <IntentLink>{{title}}</IntentLink>',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': 'адрэдагавана',
   /** The error text when sending a comment has failed */
