@@ -93,6 +93,8 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': 'Upgradujte pro úpravu komentáře',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Přejít na pole',
+  /** The text showing the comment context */
+  'list-item.layout-context': 'na <IntentLink>{{title}}</IntentLink>',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': 'upraveno',
   /** The error text when sending a comment has failed */
