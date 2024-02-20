@@ -91,7 +91,11 @@ export default removeUndefinedLocaleResources({
   'list-item.edit-comment-upsell': '댓글을 편집하려면 업그레이드하세요',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': '필드로 이동',
-  /** The text showing the comment context */
+  /**
+   * The text shown below the author and timestamp of a comment including a link back to the context in which the comment was made.
+   * Consists of a document title wrapped in a link, and a word or phrase to indicate that the link refers to a location:
+   * eg "on Home", "on Coffee Machine | Products", "on Pricing – Sanity"
+   */
   'list-item.layout-context': '<IntentLink>{{title}}</IntentLink>에서',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': '편집됨',
