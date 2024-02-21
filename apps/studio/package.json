@@ -15,7 +15,7 @@
     "start": "sanity start"
   },
   "dependencies": {
-    "@sanity/icons": "^2.10.2",
+    "@sanity/icons": "^2.10.3",
     "@sanity/locale-be-by": "workspace:*",
     "@sanity/locale-cs-cz": "workspace:*",
     "@sanity/locale-de-de": "workspace:*",
