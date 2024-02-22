@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/sanity-io/locales/compare/locale-uk-ua-v1.1.0...locale-uk-ua-v1.1.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* **uk-UA:** automated translation updates ([#302](https://github.com/sanity-io/locales/issues/302)) ([6985c9b](https://github.com/sanity-io/locales/commit/6985c9b01869bc8b5788604792705c29274ce69e))
+
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-uk-ua-v1.0.0...locale-uk-ua-v1.1.0) (2024-02-07)
 
 

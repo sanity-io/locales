@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.1](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.0...locale-zh-hans-v2.1.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* **zh-Hans:** automated translation updates ([#383](https://github.com/sanity-io/locales/issues/383)) ([4fee1b7](https://github.com/sanity-io/locales/commit/4fee1b758e02354407cd24723ba4d4a28b390988))
+* **zh-Hans:** automated translation updates ([#402](https://github.com/sanity-io/locales/issues/402)) ([7c27bfd](https://github.com/sanity-io/locales/commit/7c27bfd7fe0b85c21055ecfaed433c9ea5a872c3))
+
 ## [2.1.0](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.0.3...locale-zh-hans-v2.1.0) (2024-02-07)
 
 
