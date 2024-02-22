@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
   'compose.add-comment-input-placeholder': 'Ajouter un commentaire à <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': 'Mettez à niveau pour ajouter un commentaire',
+  'compose.add-comment-input-placeholder-upsell': 'Mettre à niveau pour ajouter un commentaire',
   /** When composing a comment, the placeholder text shown when the input is empty */
   'compose.create-comment-placeholder': 'Créer un nouveau commentaire',
   /** When composing a comment, the aria label for the button to mention a user */
@@ -20,7 +20,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a reply, the placeholder text shown when the input is empty */
   'compose.reply-placeholder': 'Répondre',
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
-  'compose.reply-placeholder-upsell': 'Mettez à niveau pour répondre',
+  'compose.reply-placeholder-upsell': 'Mettre à niveau pour répondre',
   /** When composing a comment, the aria label for the button to send a comment */
   'compose.send-comment-aria-label': 'Envoyer le commentaire',
   /** When composing a comment, the tooltip text for the button to send a comment */
@@ -52,11 +52,11 @@ export default removeUndefinedLocaleResources({
   'delete-thread.title': 'Supprimer cette discussion de commentaires ?',
 
   /** The button text for confirming discard */
-  'discard.button-confirm': 'Jeter',
+  'discard.button-confirm': 'Ignorer',
   /** The header for discard comment dialog */
-  'discard.header': 'Jeter le commentaire ?',
+  'discard.header': 'Ignorer le commentaire ?',
   /** The text for discard comment dialog */
-  'discard.text': 'Voulez-vous jeter le commentaire ?',
+  'discard.text': 'Voulez-vous ignorer le commentaire ?',
 
   /** Sharing feedback on the comments feature: The link title */
   'feature-feedback.link': 'Partagez votre avis',
