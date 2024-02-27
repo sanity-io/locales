@@ -1050,7 +1050,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': '멤버 관리',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': '여기 있는 사람',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
@@ -1059,6 +1059,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': '다른 사람이 없습니다',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': '문서에 있지 않음',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': '누가 여기에 있나요',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '제목 없음',
@@ -1519,6 +1521,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '검색 결과',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': '구성 상태',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     '문서 기록 트랜잭션은 영향을 받지 않았습니다.',
@@ -1579,6 +1584,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': '시작 시간: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': '시작 시간: 알 수 없는 버전',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   'user-menu.action.free-trial_other': '시험 사용 기간이 {{count}}일 남았습니다',
   /** Label for the button showed after trial ended */
