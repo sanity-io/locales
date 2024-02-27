@@ -1057,7 +1057,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Tagok kezelése',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Ki van itt',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
@@ -1066,6 +1066,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Senki más nincs itt',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Nincs dokumentumban',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Ki van itt',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Cím nélkül',
@@ -1516,6 +1518,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Keresési eredmények',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Konfigurációs állapot',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'A dokumentum előzmény tranzakciói nem érintettek.',
@@ -1576,6 +1581,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Ettől: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Ettől: ismeretlen verzió',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} nap van hátra a próbaidőből',

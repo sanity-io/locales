@@ -339,16 +339,19 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Hiba történt a dokumentum közzétételének megszüntetése közben. Ez általában azt jelenti, hogy más dokumentumok hivatkoznak rá.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Sikeresen végrehajtott {{context}} a dokumentumon',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'A dokumentum sikeresen törölve',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Az utolsó közzététel óta végzett összes változtatás elvetésre került. Az elvetett vázlat még visszaállítható a történetből',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'A dokumentum közzétéve',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> vissza lett állítva',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'A dokumentum közzétételét megszüntették. A legutóbbi közzétett verzióból vázlat készült.',
