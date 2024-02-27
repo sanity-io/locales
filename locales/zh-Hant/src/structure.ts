@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': '此文件已被刪除。',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
+  'banners.deprecated-document-type-banner.text': '此文件類型已被棄用。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '您的角色<Roles/>沒有創建此文件的權限。',
@@ -91,9 +91,9 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text': '自您打開它以來，此引用已被刪除。',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  'browser-document-title.new-document': '新建 {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': undefined, // 'Untitled'
+  'browser-document-title.untitled-document': '無標題',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': '打開文件操作',
@@ -194,7 +194,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': '未知的架構類型：{{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
-  'document-inspector.close-button.tooltip': undefined, // 'Close'
+  'document-inspector.close-button.tooltip': '關閉',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '正在檢查<DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -305,20 +305,22 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     '嘗試取消發布此文件時發生錯誤。這通常意味著有其他文件引用了它。',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': '成功對文件執行了{{context}}',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '文件已成功刪除',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     '自上次發布以來的所有更改現已被丟棄。被丟棄的草稿仍可從歷史記錄中恢復',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': '文件已發布',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': '<Strong>{{title}}</Strong> 已恢復',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     '文件已取消發布。已從最新的發布版本創建了一個草稿。',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': '無標題',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': '連接丟失。重新連接中…',
   /** The loading message for the document not found pane */
@@ -353,9 +355,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': '開啟預覽',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': '已儲存',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': '儲存中...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label': '最後發布於{{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */
