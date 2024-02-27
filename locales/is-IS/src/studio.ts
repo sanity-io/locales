@@ -1049,7 +1049,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Stjórna meðlimum',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Hver er hér',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Bjóddu fólki í verkefnið til að sjá netsögu þeirra.',
@@ -1057,6 +1057,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Enginn annar er hér',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Ekki í skjali',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Hver er hér',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Titill ekki gefinn',
@@ -1504,6 +1506,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Leitarniðurstöður',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Stillingarstaða',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Sögufærslur skjalsins hafa ekki verið fyrir áhrifum.',
@@ -1563,6 +1568,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Síðan: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Síðan: óþekkt útgáfa',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dagur eftir af prufutíma',
