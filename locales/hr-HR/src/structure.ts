@@ -337,15 +337,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Došlo je do greške pri pokušaju povlačenja ovog dokumenta. To obično znači da postoje drugi dokumenti koji upućuju na njega.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Uspješno izveden {{context}} na dokumentu',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokument je uspješno izbrisan',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Sve promjene od posljednjeg objavljivanja su sada odbačene. Odbačeni nacrt još uvijek se može oporaviti iz povijesti',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument je objavljen',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> je obnovljen',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentu je poništena objava. Nacrt je stvoren iz posljednje objavljene verzije.',
