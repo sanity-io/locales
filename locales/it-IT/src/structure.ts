@@ -81,7 +81,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Questo documento è stato eliminato.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
+  'banners.deprecated-document-type-banner.text': 'Questo tipo di documento è stato deprecato.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Il tuo ruolo <Roles/> non ha i permessi per creare questo documento.',
@@ -106,9 +106,9 @@ export default removeUndefinedLocaleResources({
     'Questo riferimento è stato rimosso da quando lo hai aperto.',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  'browser-document-title.new-document': 'Nuovo {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': undefined, // 'Untitled'
+  'browser-document-title.untitled-document': 'Senza titolo',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Apri le azioni del documento',
@@ -226,7 +226,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'Tipo di schema sconosciuto: {{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
-  'document-inspector.close-button.tooltip': undefined, // 'Close'
+  'document-inspector.close-button.tooltip': 'Chiudi',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Ispezione di <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -339,10 +339,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Si è verificato un errore durante il tentativo di annullare la pubblicazione di questo documento. Questo di solito significa che ci sono altri documenti che lo fanno riferimento.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Operazione su documento {{context}} eseguita con successo',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Il documento è stato eliminato con successo',
   /** The text when a discard changes operation succeeded  */
@@ -350,11 +350,14 @@ export default removeUndefinedLocaleResources({
     "Tutte le modifiche dall'ultima pubblicazione sono state scartate. La bozza scartata può comunque essere recuperata dalla cronologia",
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Il documento è stato pubblicato',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> è stato ripristinato',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'La pubblicazione del documento è stata annullata. È stata creata una bozza dalla versione pubblicata più recente.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Senza titolo',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Connessione persa. Riconnessione in corso…',
   /** The loading message for the document not found pane */
@@ -390,9 +393,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Apri anteprima',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Salvato',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Salvataggio in corso...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'Ultima pubblicazione {{relativeTime}}',
