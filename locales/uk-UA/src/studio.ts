@@ -1023,7 +1023,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Керування учасниками',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Хто тут',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Запросіть людей до проекту, щоб бачити їх онлайн-статус.',
@@ -1031,6 +1031,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Тут нікого немає',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Не в документі',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Хто тут',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Без назви',
@@ -1465,6 +1467,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Результати пошуку',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Статус конфігурації',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакції історії документів не були змінені.',
@@ -1524,6 +1529,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'З: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'З: невідома версія',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} день залишився у пробному періоді',
