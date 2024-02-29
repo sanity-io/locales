@@ -10,6 +10,7 @@ import {huHULocale} from '@sanity/locale-hu-hu'
 import {isISLocale} from '@sanity/locale-is-is'
 import {itITLocale} from '@sanity/locale-it-it'
 import {jaJPLocale} from '@sanity/locale-ja-jp'
+import {kaGELocale} from '@sanity/locale-ka-ge'
 import {koKRLocale} from '@sanity/locale-ko-kr'
 import {nbNOLocale} from '@sanity/locale-nb-no'
 import {nlNLLocale} from '@sanity/locale-nl-nl'
@@ -38,6 +39,7 @@ export const locales = [
   isISLocale(),
   itITLocale(),
   jaJPLocale(),
+  kaGELocale(),
   koKRLocale(),
   nbNOLocale(),
   nlNLLocale(),

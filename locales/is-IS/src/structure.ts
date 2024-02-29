@@ -334,15 +334,17 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Villa kom upp við tilraun til að afturkalla birtingu þessa skjals. Þetta þýðir yfirleitt að aðrar skjöl vísa til þess.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Aðgerð {{context}} á skjali tókst',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Skjalinu var eytt',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Öllum breytingum síðan síðast var birt hefur nú verið hent. Hægt er að endurheimta hent drögin úr sögunni',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Skjalið var birt',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Birtingu skjalsins var afturkallað. Drög hafa verið búin til úr síðustu birtu útgáfu.',

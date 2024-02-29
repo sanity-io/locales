@@ -134,7 +134,7 @@ async function enrichWithBundles(
 
 async function loadNamespace(locale: Locale, namespace: string): Promise<NamespaceModule> {
   const filePath = await getNamespacePath(locale, namespace)
-  const mod = await import(filePath).catch((err) => {
+  const mod = await import(filePath.replace('C:', 'file://c:')).catch((err) => {
     if (err.code === 'ERR_MODULE_NOT_FOUND') {
       return {default: {}}
     }

@@ -1005,7 +1005,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Quản lý thành viên',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Ai đang ở đây',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
@@ -1014,6 +1014,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Không có ai khác ở đây',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Không trong tài liệu nào',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': undefined, // 'Who is here'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Không tiêu đề',
@@ -1418,6 +1420,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Kết quả tìm kiếm',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': undefined, // 'Configuration status'
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Lịch sử giao dịch của tài liệu không bị ảnh hưởng.',
@@ -1478,6 +1483,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Từ: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Từ: phiên bản không xác định',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
 
   'user-menu.action.free-trial_other': 'Còn {{count}} ngày thử nghiệm',
   /** Label for the button showed after trial ended */

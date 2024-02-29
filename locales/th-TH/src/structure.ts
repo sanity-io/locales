@@ -312,15 +312,17 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'เกิดข้อผิดพลาดขณะพยายามยกเลิกการเผยแพร่เอกสารนี้ ซึ่งโดยปกติหมายความว่ามีเอกสารอื่นที่อ้างอิงถึงมัน',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'ดำเนินการ {{context}} กับเอกสารสำเร็จ',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'เอกสารถูกลบเรียบร้อยแล้ว',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'การเปลี่ยนแปลงทั้งหมดนับตั้งแต่การเผยแพร่ครั้งล่าสุดได้ถูกทิ้งไปแล้ว ร่างที่ถูกทิ้งนี้ยังสามารถกู้คืนได้จากประวัติ',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'เอกสารได้รับการเผยแพร่',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'เอกสารได้รับการยกเลิกการเผยแพร่ ร่างใหม่ได้ถูกสร้างขึ้นจากเวอร์ชันที่เผยแพร่ล่าสุด',

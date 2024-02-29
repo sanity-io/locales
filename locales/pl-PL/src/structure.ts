@@ -317,16 +317,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Wystąpił błąd podczas próby cofnięcia publikacji tego dokumentu. Zazwyczaj oznacza to, że istnieją inne dokumenty, które się do niego odnoszą.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Pomyślnie wykonano {{context}} na dokumencie',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokument został pomyślnie usunięty',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Wszystkie zmiany od ostatniej publikacji zostały teraz odrzucone. Odrzucony szkic można nadal odzyskać z historii',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument został opublikowany',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokument został cofnięty z publikacji. Z najnowszej opublikowanej wersji utworzono szkic.',

@@ -982,7 +982,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': '管理成員',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': '誰在這裡',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': '邀請人們到項目中來查看他們的在線狀態。',
@@ -990,6 +990,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': '沒有其他人在這裡',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': '不在文件中',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': undefined, // 'Who is here'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '無標題',
@@ -1389,6 +1391,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '搜索結果',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': undefined, // 'Configuration status'
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': '文檔歷史交易未受影響。',
   /** Title for error when the timeline for the given document can't be loaded */
@@ -1446,6 +1451,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': '自：{{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': '自：未知版本',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
 
   'user-menu.action.free-trial_other': '試用期還剩 {{count}} 天',
   /** Label for the button showed after trial ended */

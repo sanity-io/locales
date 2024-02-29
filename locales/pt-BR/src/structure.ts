@@ -338,10 +338,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Ocorreu um erro ao tentar retirar a publicação deste documento. Isso geralmente significa que há outros documentos que se referem a ele.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Realizado com sucesso {{context}} no documento',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'O documento foi excluído com sucesso',
   /** The text when a discard changes operation succeeded  */
@@ -349,6 +349,8 @@ export default removeUndefinedLocaleResources({
     'Todas as alterações desde a última publicação foram descartadas. O rascunho descartado ainda pode ser recuperado do histórico',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'O documento foi publicado',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'A publicação do documento foi retirada. Um rascunho foi criado a partir da última versão publicada.',

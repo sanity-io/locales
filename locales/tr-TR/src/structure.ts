@@ -333,16 +333,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Bu belgeyi yayından kaldırmaya çalışırken bir hata oluştu. Bu genellikle diğer belgelerin buna atıfta bulunduğu anlamına gelir.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Belge üzerinde {{context}} başarıyla gerçekleştirildi',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Belge başarıyla silindi',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Son yayından bu yana yapılan tüm değişiklikler şimdi atıldı. Atılan taslak hala geçmişten kurtarılabilir',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Belge yayınlandı',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Belge yayından kaldırıldı. En son yayınlanan sürümden bir taslak oluşturuldu.',

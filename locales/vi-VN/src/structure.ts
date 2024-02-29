@@ -317,16 +317,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Đã xảy ra lỗi khi cố gắng hủy xuất bản tài liệu này. Điều này thường có nghĩa là có các tài liệu khác tham chiếu đến nó.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Đã thực hiện thành công {{context}} trên tài liệu',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Tài liệu đã được xóa thành công',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Tất cả các thay đổi kể từ lần xuất bản cuối cùng đã được loại bỏ. Bản nháp đã loại bỏ vẫn có thể được khôi phục từ lịch sử',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Tài liệu đã được xuất bản',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Tài liệu đã được hủy xuất bản. Một bản nháp đã được tạo từ phiên bản xuất bản cuối cùng.',

@@ -999,7 +999,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'จัดการสมาชิก',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'ใครอยู่ที่นี่',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'เชิญคนเข้าโปรเจ็กต์เพื่อดูสถานะออนไลน์ของพวกเขา',
@@ -1007,6 +1007,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'ไม่มีคนอื่นอยู่ที่นี่',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'ไม่ได้อยู่ในเอกสาร',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': undefined, // 'Who is here'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'ไม่มีชื่อ',
@@ -1410,6 +1412,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'ผลการค้นหา',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': undefined, // 'Configuration status'
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'การทำธุรกรรมประวัติของเอกสารไม่ได้รับผลกระทบ',
@@ -1469,6 +1474,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'ตั้งแต่: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'ตั้งแต่: ไม่ทราบเวอร์ชัน',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
 
   'user-menu.action.free-trial_other': 'เหลืออีก {{count}} วันในการทดลองใช้',
   /** Label for the button showed after trial ended */

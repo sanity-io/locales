@@ -337,10 +337,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Virhe tapahtui yrittäessä perua tämän dokumentin julkaisu. Tämä yleensä tarkoittaa, että muut dokumentit viittaavat siihen.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Toiminto {{context}} suoritettu onnistuneesti dokumentille',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Dokumentti on poistettu onnistuneesti',
   /** The text when a discard changes operation succeeded  */
@@ -348,6 +348,8 @@ export default removeUndefinedLocaleResources({
     'Kaikki viime julkaisun jälkeiset muutokset on nyt hylätty. Hylätyn luonnoksen voi silti palauttaa historiasta',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentti on julkaistu',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentin julkaisu on peruttu. Uusin julkaistu versio on luotu luonnokseksi.',

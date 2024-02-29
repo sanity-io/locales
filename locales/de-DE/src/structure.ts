@@ -342,10 +342,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Beim Versuch, dieses Dokument zurückzuziehen, ist ein Fehler aufgetreten. Das bedeutet normalerweise, dass es andere Dokumente gibt, die darauf verweisen.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     '{{context}} am Dokument erfolgreich durchgeführt',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Das Dokument wurde erfolgreich gelöscht',
   /** The text when a discard changes operation succeeded  */
@@ -353,6 +353,8 @@ export default removeUndefinedLocaleResources({
     'Alle Änderungen seit der letzten Veröffentlichung wurden verworfen. Der verworfene Entwurf kann noch aus der Historie wiederhergestellt werden',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Das Dokument wurde veröffentlicht',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Das Dokument wurde zurückgezogen. Ein Entwurf wurde aus der letzten veröffentlichten Version erstellt.',

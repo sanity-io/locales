@@ -1022,7 +1022,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Управление участниками',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Кто здесь',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Пригласите людей в проект, чтобы видеть их онлайн-статус.',
@@ -1030,6 +1030,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Здесь никого нет',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Не в документе',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': undefined, // 'Who is here'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Без названия',
@@ -1467,6 +1469,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Результаты поиска',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': undefined, // 'Configuration status'
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакции истории документа не были затронуты.',
@@ -1528,6 +1533,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'С: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'С: неизвестная версия',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'Остался {{count}} день пробного периода',

@@ -339,10 +339,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Er is een fout opgetreden bij het proberen te annuleren van de publicatie van dit document. Dit betekent meestal dat er andere documenten zijn die ernaar verwijzen.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Succesvol {{context}} uitgevoerd op document',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Het document is succesvol verwijderd',
   /** The text when a discard changes operation succeeded  */
@@ -350,6 +350,8 @@ export default removeUndefinedLocaleResources({
     'Alle wijzigingen sinds de laatste publicatie zijn nu verworpen. De verworpen conceptversie kan nog steeds worden hersteld uit de geschiedenis',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Het document is gepubliceerd',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'De publicatie van het document is ongedaan gemaakt. Er is een concept gemaakt van de laatste gepubliceerde versie.',

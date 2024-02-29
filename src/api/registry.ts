@@ -97,7 +97,7 @@ async function loadRegistry(): Promise<LocaleRegistry> {
 
   let mod: any
   try {
-    mod = await import(registryFilePath)
+    mod = await import(registryFilePath.replace('C:', 'file://c:'))
   } catch (err: unknown) {
     throw new Error(
       `Failed to load locale registry (locales/registry.ts): ${

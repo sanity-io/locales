@@ -329,16 +329,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     '이 문서의 발행 취소를 시도하는 중에 오류가 발생했습니다. 이는 다른 문서가 이 문서를 참조하고 있음을 의미합니다.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     '문서에 {{context}}를 성공적으로 수행했습니다',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '문서가 성공적으로 삭제되었습니다',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     '마지막 발행 이후의 모든 변경 사항이 이제 폐기되었습니다. 폐기된 초안은 여전히 기록에서 복구할 수 있습니다',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': '문서가 발행되었습니다',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     '문서의 발행이 취소되었습니다. 최신 발행 버전에서 초안이 생성되었습니다.',

@@ -339,10 +339,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Si è verificato un errore durante il tentativo di annullare la pubblicazione di questo documento. Questo di solito significa che ci sono altri documenti che lo fanno riferimento.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Operazione su documento {{context}} eseguita con successo',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Il documento è stato eliminato con successo',
   /** The text when a discard changes operation succeeded  */
@@ -350,6 +350,8 @@ export default removeUndefinedLocaleResources({
     "Tutte le modifiche dall'ultima pubblicazione sono state scartate. La bozza scartata può comunque essere recuperata dalla cronologia",
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Il documento è stato pubblicato',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'La pubblicazione del documento è stata annullata. È stata creata una bozza dalla versione pubblicata più recente.',

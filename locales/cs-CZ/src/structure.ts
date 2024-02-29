@@ -336,16 +336,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Při pokusu o zrušení publikace tohoto dokumentu došlo k chybě. To obvykle znamená, že na něj odkazují jiné dokumenty.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Úspěšně provedeno {{context}} na dokumentu',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokument byl úspěšně smazán',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Všechny změny od poslední publikace byly nyní zrušeny. Zahozený koncept lze stále obnovit z historie',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument byl publikován',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Publikace dokumentu byla zrušena. Z poslední publikované verze byl vytvořen koncept.',

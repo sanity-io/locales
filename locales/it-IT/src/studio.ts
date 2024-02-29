@@ -1060,7 +1060,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Gestisci membri',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Chi è qui',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Invita persone al progetto per vedere il loro stato online.',
@@ -1068,6 +1068,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Non c’è nessun altro qui',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Non in un documento',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': undefined, // 'Who is here'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Senza titolo',
@@ -1527,6 +1529,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Risultati della ricerca',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': undefined, // 'Configuration status'
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Le transazioni della cronologia del documento non sono state interessate.',
@@ -1587,6 +1592,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Da: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Da: versione sconosciuta',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} giorno rimanente nel periodo di prova',

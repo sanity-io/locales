@@ -340,10 +340,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Une erreur s’est produite lors de la tentative de dépublication de ce document. Cela signifie généralement qu’il existe d’autres documents qui y font référence.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'L’opération {{context}} sur le document a été réalisée avec succès',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Le document a été supprimé avec succès',
   /** The text when a discard changes operation succeeded  */
@@ -351,6 +351,8 @@ export default removeUndefinedLocaleResources({
     'Toutes les modifications depuis la dernière publication ont maintenant été abandonnées. Le brouillon écarté peut toujours être récupéré depuis l’historique',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Le document a été publié',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Le document a été dépublié. Un brouillon a été créé à partir de la dernière version publiée.',

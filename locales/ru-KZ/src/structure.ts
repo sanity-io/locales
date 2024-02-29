@@ -317,16 +317,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Произошла ошибка при попытке снять с публикации этот документ. Обычно это означает, что есть другие документы, которые ссылаются на него.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Успешно выполнено {{context}} над документом',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Документ был успешно удален',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Все изменения с последней публикации теперь отменены. Отмененный черновик все еще можно восстановить из истории',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Документ был опубликован',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Документ был снят с публикации. Черновик был создан из последней опубликованной версии.',
