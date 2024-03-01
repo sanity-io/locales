@@ -1,6 +1,7 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 import OpenAI from 'openai'
+import pLimit from 'p-limit'
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
 import type {Locale, Resource} from '../types'
@@ -10,6 +11,7 @@ import {writeFormattedFile} from '../util/writeFormattedFile'
 import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
+const taskLimit = pLimit(3)
 
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
@@ -125,7 +127,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
           } key batches for namespace ${ns.namespace}`,
         )
 
-        const translation = JSON.parse(await translateText(tpl, localeName))
+        const translation = JSON.parse(await taskLimit(() => translateText(tpl, localeName)))
 
         // Set the values from translation into the namespace
         for (const key of currentBatch) {

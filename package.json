@@ -49,6 +49,7 @@
     "js-yaml": "^4.1.0",
     "json5": "^2.2.3",
     "magicast": "^0.3.3",
+    "p-limit": "^5.0.0",
     "package-up": "^5.0.0",
     "prettier": "^3.2.4",
     "prettier-plugin-packagejson": "^2.4.12",
