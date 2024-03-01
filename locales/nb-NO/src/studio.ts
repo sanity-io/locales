@@ -1522,7 +1522,7 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': 'Søkeresultater',
 
   /** Accessibility label for the navbar status button */
-  'status-button.aria-label': 'Konfigurasjonsstatus',
+  'status-button.aria-label': 'Status',
 
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': 'Historikk har ikke blitt påvirket.',
