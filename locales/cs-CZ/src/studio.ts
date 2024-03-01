@@ -1052,7 +1052,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Spravovat členy',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kdo je zde',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
@@ -1061,6 +1061,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Nikdo další zde není',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Není v dokumentu',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Kdo je zde',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Bez názvu',
@@ -1509,6 +1511,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Výsledky vyhledávání',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Stav konfigurace',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Transakce historie dokumentu nebyly ovlivněny.',
@@ -1568,6 +1573,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Od: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Od: neznámá verze',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} den zbývá do konce zkušební doby',
