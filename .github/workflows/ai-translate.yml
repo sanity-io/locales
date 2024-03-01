@@ -5,9 +5,7 @@ name: AI translate
       locale:
         type: choice
         description: Locale to auto translate
-        default: _ALL_
         options:
-          - _ALL_
           - be-BY
           - cs-CZ
           - de-DE
@@ -35,7 +33,6 @@ name: AI translate
           - vi-VN
           - zh-Hans
           - zh-Hant
-        required: true
   push:
     branches:
       - main
@@ -61,8 +58,15 @@ jobs:
         run: |
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
-      - name: Run autotranslate
-        run: pnpm run autotranslate --git -l ${{ github.event.inputs.locale || '_ALL_' }}
+      - name: Run autotranslate for all locales
+        if: "${{ github.event.inputs.locale == '' }}"
+        run: pnpm run autotranslate --git
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run autotranslate for specific locale
+        if: "${{ github.event.inputs.locale != '' }}"
+        run: pnpm run autotranslate --git --locale ${{ github.event.inputs.locale }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

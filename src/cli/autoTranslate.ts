@@ -1,6 +1,5 @@
 import dotenv from 'dotenv'
 import {parseArgs} from 'node:util'
-import {WILDCARD_FLAG} from '../api/workflows'
 import {autoTranslate, pushChanges} from '../api/autoTranslate'
 import {runScript} from '../util/runScript'
 
@@ -31,10 +30,8 @@ async function autoTranslateWithParams() {
     },
   })
 
-  const targetLocales = args.values.locale?.includes(WILDCARD_FLAG) ? undefined : args.values.locale
-  const namespaces = args.values.namespace?.includes(WILDCARD_FLAG)
-    ? undefined
-    : args.values.namespace
+  const targetLocales = args.values.locale
+  const namespaces = args.values.namespace
 
   await autoTranslate({
     targetLocales,
