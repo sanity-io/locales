@@ -1058,7 +1058,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'メンバーを管理する',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'ここにいる人',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
@@ -1067,6 +1067,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': '他に誰もいません',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'ドキュメントにいません',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': '誰がここにいる',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '無題',
@@ -1524,6 +1526,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '検索結果',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': '設定ステータス',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'ドキュメント履歴のトランザクションは影響を受けていません。',
@@ -1584,6 +1589,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'この時点から: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'この時点から: 不明なバージョン',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   'user-menu.action.free-trial_other': 'トライアル期間があと{{count}}日',
   /** Label for the button showed after trial ended */
