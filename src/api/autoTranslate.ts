@@ -52,7 +52,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
   const {locales} = await getOrderedResources()
 
   // Filter out locales that are not requested
-  const targetLocaleIds = targetLocales?.map(id => id.toLowerCase())
+  const targetLocaleIds = targetLocales?.map((id) => id.toLowerCase())
   const filteredLocales = locales.filter((locale) => {
     return !targetLocaleIds || targetLocaleIds.includes(locale.id.toLowerCase())
   })
