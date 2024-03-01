@@ -138,6 +138,9 @@ importers:
       '@sanity/locale-ja-jp':
         specifier: workspace:*
         version: link:../../locales/ja-JP
+      '@sanity/locale-ka-ge':
+        specifier: workspace:*
+        version: link:../../locales/ka-GE
       '@sanity/locale-ko-kr':
         specifier: workspace:*
         version: link:../../locales/ko-KR
@@ -285,6 +288,12 @@ importers:
         version: 3.30.1(@types/node@18.19.8)(@types/react@18.2.51)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
 
   locales/ja-JP:
+    dependencies:
+      sanity:
+        specifier: ^3.22.0
+        version: 3.30.1(@types/node@18.19.8)(@types/react@18.2.51)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
+
+  locales/ka-GE:
     dependencies:
       sanity:
         specifier: ^3.22.0

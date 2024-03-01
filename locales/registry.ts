@@ -80,6 +80,13 @@ const registry: LocaleRegistry = [
     contributors: [],
   },
   {
+    id: 'ka-GE',
+    name: 'ქართული',
+    englishName: 'Georgian',
+    maintainers: ['TsotneDarjania'],
+    contributors: [],
+  },
+  {
     id: 'ko-KR',
     name: '한국어',
     englishName: 'Korean',
