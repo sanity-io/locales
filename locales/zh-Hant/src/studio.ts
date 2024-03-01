@@ -360,7 +360,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     '在路徑 <code>{{path}}</code> 上未找到 `_key` <code>"{{key}}"</code> 的陣列項目',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': '已棄用',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '無標題',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -374,9 +374,9 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.errors-count_other': '{{count}} 個錯誤',
   'form.validation.summary.warnings-count_other': '{{count}} 個警告',
 
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_other': '{{count}} 天試用期剩餘',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': '升級您的項目',
 
   /**
    * Label for "contact sales" call to action
@@ -599,7 +599,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': '摺疊編輯器',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': '編輯批註',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': '展開編輯器',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -611,7 +611,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': '插入{{typeName}}（內聯）',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': '移除批註',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': '點擊以啟動',
   /** Label for activate on focus with context of click and focused */
@@ -619,13 +619,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': '輕觸以啟動',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': '批註物件',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '編輯{{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': '鏈接',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': '塊物件',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': '編輯',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -649,15 +649,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': '空的',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': '內聯物件',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': '編輯物件',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': '編輯物件',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': '移除物件',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': '移除物件',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     '注意：執行上述操作通常是安全的，但如果您有疑問，請聯繫負責配置您工作室的相關人員。',
@@ -982,7 +982,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': '管理成員',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': '誰在這裡',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': '邀請人們到項目中來查看他們的在線狀態。',
@@ -990,6 +990,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': '沒有其他人在這裡',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': '不在文件中',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': '誰在這裡',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '無標題',
@@ -1389,6 +1391,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '搜索結果',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': '配置狀態',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': '文檔歷史交易未受影響。',
   /** Title for error when the timeline for the given document can't be loaded */
@@ -1447,6 +1452,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': '自：未知版本',
 
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
+
   'user-menu.action.free-trial_other': '試用期還剩 {{count}} 天',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': '從免費版升級',
@@ -1485,7 +1493,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': '已使用{{providerTitle}}登入',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': '開啟選單',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1506,7 +1514,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': '選擇工作區',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': '選擇工作區',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': '工作區',
 })
