@@ -364,7 +364,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'ไม่พบรายการในอาร์เรย์ที่มี `_key` <code>"{{key}}"</code> ที่เส้นทาง <code>{{path}}</code>',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': 'ล้าสมัย',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'ไม่มีชื่อ',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -378,9 +378,9 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.errors-count_other': '{{count}} ข้อผิดพลาด',
   'form.validation.summary.warnings-count_other': '{{count}} คำเตือน',
 
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_other': 'เหลืออีก {{count}} วันในการทดลองใช้',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'อัพเกรดโปรเจคของคุณ',
 
   /**
    * Label for "contact sales" call to action
@@ -607,7 +607,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'ย่อตัวแก้ไข',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'แก้ไขคำอธิบายประกอบ',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'ขยายตัวแก้ไข',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -619,7 +619,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'แทรก {{typeName}} (อินไลน์)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'ลบคำอธิบายประกอบ',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'คลิกเพื่อเปิดใช้งาน',
   /** Label for activate on focus with context of click and focused */
@@ -628,13 +628,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'แตะเพื่อเปิดใช้งาน',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'วัตถุคำอธิบายประกอบ',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'แก้ไข {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'ลิงก์',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'วัตถุบล็อก',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'แก้ไข',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -658,15 +658,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'ว่างเปล่า',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'วัตถุอินไลน์',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'แก้ไขวัตถุ',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'แก้ไขวัตถุ',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'ลบวัตถุ',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'ลบวัตถุ',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'หมายเหตุ: โดยทั่วไปแล้วการดำเนินการข้างต้นนั้นปลอดภัย แต่หากคุณมีข้อสงสัย ให้ติดต่อผู้ที่รับผิดชอบในการกำหนดค่าสตูดิโอของคุณ',
@@ -999,7 +999,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'จัดการสมาชิก',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'ใครอยู่ที่นี่',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'เชิญคนเข้าโปรเจ็กต์เพื่อดูสถานะออนไลน์ของพวกเขา',
@@ -1007,6 +1007,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'ไม่มีคนอื่นอยู่ที่นี่',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'ไม่ได้อยู่ในเอกสาร',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'ใครอยู่ที่นี่',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'ไม่มีชื่อ',
@@ -1410,6 +1412,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'ผลการค้นหา',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'สถานะการกำหนดค่า',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'การทำธุรกรรมประวัติของเอกสารไม่ได้รับผลกระทบ',
@@ -1470,6 +1475,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'ตั้งแต่: ไม่ทราบเวอร์ชัน',
 
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
+
   'user-menu.action.free-trial_other': 'เหลืออีก {{count}} วันในการทดลองใช้',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': 'อัพเกรดจากฟรี',
@@ -1510,7 +1518,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'เข้าสู่ระบบด้วย {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'เปิดเมนู',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1531,7 +1539,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'เลือกพื้นที่ทำงาน',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'เลือกพื้นที่ทำงาน',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'พื้นที่ทำงาน',
 })
