@@ -288,6 +288,7 @@ export const aiTranslateWorkflowSchema = z
                   type: z.literal('choice'),
                   description: z.string().optional(),
                   options: z.array(z.string()),
+                  default: z.string().optional(),
                   required: z.boolean(),
                 })
                 .passthrough(),
@@ -296,6 +297,7 @@ export const aiTranslateWorkflowSchema = z
                   type: z.literal('choice'),
                   description: z.string().optional(),
                   options: z.array(z.string()),
+                  default: z.string().optional(),
                   required: z.boolean(),
                 })
                 .passthrough()

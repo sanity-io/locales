@@ -34,6 +34,7 @@ export async function reconcileAutoTranslateWorkflow(): Promise<void> {
   })
 
   const workflow = aiTranslateWorkflowSchema.parse(workflowYaml)
+  workflow.on.workflow_dispatch.inputs.locale.default = WILDCARD_FLAG
   workflow.on.workflow_dispatch.inputs.locale.options = [
     WILDCARD_FLAG,
     ...locales.map((locale) => locale.id),

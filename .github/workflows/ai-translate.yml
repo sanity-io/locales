@@ -5,6 +5,7 @@ name: AI translate
       locale:
         type: choice
         description: Locale to auto translate
+        default: _ALL_
         options:
           - _ALL_
           - be-BY
