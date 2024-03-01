@@ -267,3 +267,32 @@ export const githubPrCommentSchema = z.object({
  * @internal
  */
 export const githubPrCommentsSchema = z.array(githubPrCommentSchema)
+
+/**
+ * A JSON representation of the autotranslate GitHub workflow,
+ * as defined in `.github/workflows/ai-translate.yml`
+ *
+ * @internal
+ */
+export const aiTranslateWorkflowSchema = z.object({
+  name: z.string(),
+  on: z.object({
+    // eslint-disable-next-line camelcase
+    workflow_dispatch: z.object({
+      inputs: z.object({
+        locale: z.object({
+          type: z.literal('choice'),
+          description: z.string().optional(),
+          options: z.array(z.string()),
+          required: z.boolean(),
+        }),
+        namespace: z.object({
+          type: z.literal('choice'),
+          description: z.string().optional(),
+          options: z.array(z.string()),
+          required: z.boolean(),
+        }),
+      }),
+    }),
+  }),
+})

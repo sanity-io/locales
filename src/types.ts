@@ -1,5 +1,6 @@
 import type {infer as zodInfer} from 'zod'
 import type {
+  aiTranslateWorkflowSchema,
   githubFileSchema,
   githubLabelSchema,
   githubPrCommentSchema,
@@ -281,3 +282,11 @@ export type GitHubReview = zodInfer<typeof githubReviewSchema>
  * @internal
  */
 export type GitHubPRComment = zodInfer<typeof githubPrCommentSchema>
+
+/**
+ * A JSON representation of the autotranslate GitHub workflow,
+ * as defined in `.github/workflows/ai-translate.yml`
+ *
+ * @internal
+ */
+export type AutoTranslateWorkflow = zodInfer<typeof aiTranslateWorkflowSchema>

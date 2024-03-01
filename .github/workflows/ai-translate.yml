@@ -1,42 +1,75 @@
 name: AI translate
-
-on:
-  push:
-    branches: [main]
-    paths:
-      # Only run the workflow when package.json is updated, which might update sanity dependencies.
-      # Use an explicit workflow dispatch if you want to run the workflow manually.
-      - 'package.json'
+'on':
   workflow_dispatch:
-
+    inputs:
+      locale:
+        type: choice
+        description: Locale to auto translate
+        options:
+          - _ALL_
+          - be-BY
+          - cs-CZ
+          - de-DE
+          - es-ES
+          - fi-FI
+          - fr-FR
+          - hr-HR
+          - hu-HU
+          - is-IS
+          - it-IT
+          - ja-JP
+          - ka-GE
+          - ko-KR
+          - nb-NO
+          - nl-NL
+          - nn-NO
+          - pl-PL
+          - pt-BR
+          - pt-PT
+          - ru-KZ
+          - sv-SE
+          - th-TH
+          - tr-TR
+          - uk-UA
+          - vi-VN
+          - zh-Hans
+          - zh-Hant
+        required: true
+      namespace:
+        type: choice
+        description: Namespace to auto translate
+        options:
+          - _ALL_
+          - comments
+          - structure
+          - studio
+          - validation
+          - vision
+        required: true
 jobs:
   translate-and-pr:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18.3.0'
-
+          node-version: 18.3.0
       - name: Install dependencies
         run: pnpm install
-
       - name: Run reconcile
         run: pnpm run reconcile
-
       - name: Configure git
         run: |
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
-
       - name: Run autotranslate
-        run: pnpm run autotranslate --git
+        run: >-
+          pnpm run autotranslate --git --locale ${{ github.event.inputs.locale
+          }} --namespace ${{ github.event.inputs.namespace }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
