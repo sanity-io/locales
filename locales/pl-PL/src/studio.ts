@@ -373,7 +373,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Nie znaleziono elementu tablicy z `_key` <code>"{{key}}"</code> na ścieżce <code>{{path}}</code>',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': 'przestarzałe',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Bez tytułu',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -625,7 +625,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Zwiń edytor',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Edytuj adnotację',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Rozwiń edytor',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -637,7 +637,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': 'Wstaw {{typeName}} (w linii)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Usuń adnotację',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Kliknij, aby aktywować',
   /** Label for activate on focus with context of click and focused */
@@ -646,13 +646,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Stuknij, aby aktywować',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Obiekt adnotacji',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Edytuj {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Link',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Obiekt bloku',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Edytuj',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -676,15 +676,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Puste',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Obiekt w linii',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Edytuj obiekt',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Edytuj obiekt',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Usuń obiekt',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Usuń obiekt',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'UWAGA: Zazwyczaj można bezpiecznie wykonać powyższą akcję, ale jeśli masz wątpliwości, skontaktuj się z osobami odpowiedzialnymi za konfigurację twojego studia.',
@@ -1016,7 +1016,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Zarządzaj członkami',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kto jest obecny',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Zaproś osoby do projektu, aby zobaczyć ich status online.',
@@ -1024,6 +1024,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Nikogo innego tu nie ma',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Nie w dokumencie',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Kto jest obecny',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Bez tytułu',
@@ -1460,6 +1462,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Wyniki wyszukiwania',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Status konfiguracji',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Transakcje historii dokumentu nie zostały dotknięte.',
@@ -1520,6 +1525,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Od: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Od: nieznana wersja',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dzień pozostały w okresie próbnym',
