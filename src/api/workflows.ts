@@ -1,10 +1,10 @@
 import {join as joinPath} from 'node:path'
+import {readFile} from 'node:fs/promises'
 import {load as loadYaml, dump as dumpYaml} from 'js-yaml'
 import {getRootPath} from '../util/getRootPath'
-import {getLocaleRegistry} from './registry'
-import {readFile} from 'node:fs/promises'
-import {aiTranslateWorkflowSchema} from '../schemas'
 import {writeFormattedFile} from '../util/writeFormattedFile'
+import {aiTranslateWorkflowSchema} from '../schemas'
+import {getLocaleRegistry} from './registry'
 
 const WORKFLOWS_RELATIVE_PATH = joinPath('.github', 'workflows')
 const AI_TRANSLATE_WORKFLOW_FILENAME = 'ai-translate.yml'
