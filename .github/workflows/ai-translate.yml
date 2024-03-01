@@ -62,7 +62,7 @@ jobs:
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
       - name: Run autotranslate
-        run: pnpm run autotranslate --git -l ${{ github.event.inputs.locale }}
+        run: pnpm run autotranslate --git -l ${{ github.event.inputs.locale || '_ALL_' }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
