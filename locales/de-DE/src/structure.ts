@@ -83,7 +83,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dieses Dokument wurde gelöscht.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
+  'banners.deprecated-document-type-banner.text': 'Dieser Dokumenttyp ist veraltet.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ihre Rolle <Roles/> hat keine Berechtigungen, um dieses Dokument zu erstellen.',
@@ -108,9 +108,9 @@ export default removeUndefinedLocaleResources({
     'Diese Referenz wurde entfernt, seitdem Sie sie geöffnet haben.',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  'browser-document-title.new-document': 'Neues {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': undefined, // 'Untitled'
+  'browser-document-title.untitled-document': 'Ohne Titel',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'Dokumentaktionen öffnen',
@@ -228,7 +228,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'Unbekannter Schema-Typ: {{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
-  'document-inspector.close-button.tooltip': undefined, // 'Close'
+  'document-inspector.close-button.tooltip': 'Schließen',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspektion von <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -342,10 +342,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Beim Versuch, dieses Dokument zurückzuziehen, ist ein Fehler aufgetreten. Das bedeutet normalerweise, dass es andere Dokumente gibt, die darauf verweisen.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     '{{context}} am Dokument erfolgreich durchgeführt',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Das Dokument wurde erfolgreich gelöscht',
   /** The text when a discard changes operation succeeded  */
@@ -353,11 +353,14 @@ export default removeUndefinedLocaleResources({
     'Alle Änderungen seit der letzten Veröffentlichung wurden verworfen. Der verworfene Entwurf kann noch aus der Historie wiederhergestellt werden',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Das Dokument wurde veröffentlicht',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> wurde wiederhergestellt',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Das Dokument wurde zurückgezogen. Ein Entwurf wurde aus der letzten veröffentlichten Version erstellt.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Ohne Titel',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'Verbindung verloren. Wiederverbindung…',
   /** The loading message for the document not found pane */
@@ -393,9 +396,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Vorschau öffnen',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Gespeichert',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Speichern...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'Zuletzt veröffentlicht {{relativeTime}}',
