@@ -52,12 +52,20 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
   const {locales} = await getOrderedResources()
 
   // Filter out locales that are not requested
+  const targetLocaleIds = targetLocales?.map(id => id.toLowerCase())
   const filteredLocales = locales.filter((locale) => {
-    return !targetLocales || targetLocales.includes(locale.id)
+    return !targetLocaleIds || targetLocaleIds.includes(locale.id.toLowerCase())
   })
 
-  let numTotalTranslated = 0
+  if (targetLocales && targetLocales.length !== filteredLocales.length) {
+    throw new Error(
+      `Could not find one or more of the requested locales: ${targetLocales.filter(
+        (locale) => !filteredLocales.find((l) => l.id === locale),
+      )}`,
+    )
+  }
 
+  let numTotalTranslated = 0
   for (const locale of filteredLocales) {
     const missingResources = await findMissingResources(locale)
     const localeName = locale.englishName || locale.name
