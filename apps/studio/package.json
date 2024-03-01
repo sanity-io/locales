@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.1",
-    "@types/react": "^18.2.51",
+    "@types/react": "^18.2.61",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3"
