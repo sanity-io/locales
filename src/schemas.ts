@@ -289,7 +289,7 @@ export const aiTranslateWorkflowSchema = z
                   description: z.string().optional(),
                   options: z.array(z.string()),
                   default: z.string().optional(),
-                  required: z.boolean(),
+                  required: z.boolean().optional(),
                 })
                 .passthrough(),
               namespace: z
@@ -298,7 +298,7 @@ export const aiTranslateWorkflowSchema = z
                   description: z.string().optional(),
                   options: z.array(z.string()),
                   default: z.string().optional(),
-                  required: z.boolean(),
+                  required: z.boolean().optional(),
                 })
                 .passthrough()
                 .optional(),

@@ -30,12 +30,9 @@ async function autoTranslateWithParams() {
     },
   })
 
-  const targetLocales = args.values.locale
-  const namespaces = args.values.namespace
-
   await autoTranslate({
-    targetLocales,
-    namespaces,
+    targetLocales: args.values.locale,
+    namespaces: args.values.namespace,
     logger: (message) => console.log(message),
   })
 
