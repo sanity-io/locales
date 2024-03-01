@@ -4,7 +4,6 @@ import {getRootPath} from '../util/getRootPath'
 import {getLocaleRegistry} from './registry'
 import {readFile} from 'node:fs/promises'
 import {aiTranslateWorkflowSchema} from '../schemas'
-import {getOrderedResources} from '../util/getOrderedResources'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 
 const WORKFLOWS_RELATIVE_PATH = joinPath('.github', 'workflows')
@@ -28,8 +27,6 @@ export const WILDCARD_FLAG = '_ALL_'
 export async function reconcileAutoTranslateWorkflow(): Promise<void> {
   const rootPath = await getRootPath()
   const locales = await getLocaleRegistry()
-  const {base} = await getOrderedResources()
-  const namespaces = new Set(base.map((resource) => resource.namespace).sort())
 
   const workflowPath = joinPath(rootPath, WORKFLOWS_RELATIVE_PATH, AI_TRANSLATE_WORKFLOW_FILENAME)
   const workflowYaml = loadYaml(await readFile(workflowPath, 'utf-8'), {
@@ -37,7 +34,6 @@ export async function reconcileAutoTranslateWorkflow(): Promise<void> {
   })
 
   const workflow = aiTranslateWorkflowSchema.parse(workflowYaml)
-  workflow.on.workflow_dispatch.inputs.namespace.options = [WILDCARD_FLAG, ...namespaces]
   workflow.on.workflow_dispatch.inputs.locale.options = [
     WILDCARD_FLAG,
     ...locales.map((locale) => locale.id),

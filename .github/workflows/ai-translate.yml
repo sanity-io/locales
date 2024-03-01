@@ -35,17 +35,6 @@ name: AI translate
           - zh-Hans
           - zh-Hant
         required: true
-      namespace:
-        type: choice
-        description: Namespace to auto translate
-        options:
-          - _ALL_
-          - comments
-          - structure
-          - studio
-          - validation
-          - vision
-        required: true
   push:
     branches:
       - main
@@ -72,9 +61,7 @@ jobs:
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
       - name: Run autotranslate
-        run: >-
-          pnpm run autotranslate --git --locale ${{ github.event.inputs.locale
-          }} --namespace ${{ github.event.inputs.namespace }}
+        run: pnpm run autotranslate --git -l ${{ github.event.inputs.locale }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

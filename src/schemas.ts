@@ -298,7 +298,8 @@ export const aiTranslateWorkflowSchema = z
                   options: z.array(z.string()),
                   required: z.boolean(),
                 })
-                .passthrough(),
+                .passthrough()
+                .optional(),
             }),
           })
           .passthrough(),
