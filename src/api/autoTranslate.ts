@@ -14,6 +14,21 @@ const execFile = promisify(execFileCb)
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
 /**
+ * Memoized getter for the OpenAI API client
+ *
+ * @internal
+ */
+const getOpenAIApi = (() => {
+  let openai: OpenAI | null = null
+  return () => {
+    if (!openai) {
+      openai = new OpenAI()
+    }
+    return openai
+  }
+})()
+
+/**
  * Options for the auto translate operation
  *
  * @internal
@@ -171,7 +186,7 @@ function templateMissingResources(
  */
 async function translateText(text: string, targetLanguage: string): Promise<string> {
   // Note: will thrown on missing environment variable
-  const openai = new OpenAI()
+  const openai = getOpenAIApi()
 
   if (text.trim() === '') {
     return JSON.stringify({})
