@@ -338,10 +338,10 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Ocurrió un error al intentar despublicar este documento. Esto generalmente significa que hay otros documentos que lo referencian.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Se realizó con éxito {{context}} en el documento',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'El documento fue eliminado con éxito',
   /** The text when a discard changes operation succeeded  */
@@ -349,6 +349,8 @@ export default removeUndefinedLocaleResources({
     'Todos los cambios desde la última publicación han sido descartados. El borrador descartado todavía puede ser recuperado desde el historial',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'El documento fue publicado',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'El documento fue despublicado. Se ha creado un borrador a partir de la última versión publicada.',
