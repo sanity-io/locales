@@ -274,25 +274,35 @@ export const githubPrCommentsSchema = z.array(githubPrCommentSchema)
  *
  * @internal
  */
-export const aiTranslateWorkflowSchema = z.object({
-  name: z.string(),
-  on: z.object({
-    // eslint-disable-next-line camelcase
-    workflow_dispatch: z.object({
-      inputs: z.object({
-        locale: z.object({
-          type: z.literal('choice'),
-          description: z.string().optional(),
-          options: z.array(z.string()),
-          required: z.boolean(),
-        }),
-        namespace: z.object({
-          type: z.literal('choice'),
-          description: z.string().optional(),
-          options: z.array(z.string()),
-          required: z.boolean(),
-        }),
-      }),
-    }),
-  }),
-})
+export const aiTranslateWorkflowSchema = z
+  .object({
+    name: z.string(),
+    on: z
+      .object({
+        // eslint-disable-next-line camelcase
+        workflow_dispatch: z
+          .object({
+            inputs: z.object({
+              locale: z
+                .object({
+                  type: z.literal('choice'),
+                  description: z.string().optional(),
+                  options: z.array(z.string()),
+                  required: z.boolean(),
+                })
+                .passthrough(),
+              namespace: z
+                .object({
+                  type: z.literal('choice'),
+                  description: z.string().optional(),
+                  options: z.array(z.string()),
+                  required: z.boolean(),
+                })
+                .passthrough(),
+            }),
+          })
+          .passthrough(),
+      })
+      .passthrough(),
+  })
+  .passthrough()

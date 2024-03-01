@@ -36,7 +36,7 @@ export async function reconcileAutoTranslateWorkflow(): Promise<void> {
     filename: AI_TRANSLATE_WORKFLOW_FILENAME,
   })
 
-  const workflow = aiTranslateWorkflowSchema.passthrough().parse(workflowYaml)
+  const workflow = aiTranslateWorkflowSchema.parse(workflowYaml)
   workflow.on.workflow_dispatch.inputs.namespace.options = [WILDCARD_FLAG, ...namespaces]
   workflow.on.workflow_dispatch.inputs.locale.options = [
     WILDCARD_FLAG,

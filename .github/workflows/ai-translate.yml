@@ -46,6 +46,11 @@ name: AI translate
           - validation
           - vision
         required: true
+  push:
+    branches:
+      - main
+    paths:
+      - package.json
 jobs:
   translate-and-pr:
     runs-on: ubuntu-latest
