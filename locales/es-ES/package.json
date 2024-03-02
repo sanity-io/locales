@@ -30,6 +30,7 @@
       "url": "https://github.com/jferrettiboke"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

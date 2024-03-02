@@ -26,6 +26,7 @@
       "url": "https://github.com/valse"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

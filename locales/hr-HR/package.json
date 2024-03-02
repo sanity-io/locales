@@ -26,6 +26,7 @@
       "url": "https://github.com/WebShapedBiz"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

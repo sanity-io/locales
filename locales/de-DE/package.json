@@ -26,6 +26,7 @@
       "url": "https://github.com/wrknd"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

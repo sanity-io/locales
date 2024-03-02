@@ -26,6 +26,7 @@
       "url": "https://github.com/s-rd"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

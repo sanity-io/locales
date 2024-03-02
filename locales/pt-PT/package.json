@@ -26,6 +26,7 @@
       "url": "https://github.com/jrparente"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

@@ -26,6 +26,7 @@
       "url": "https://github.com/marcinincreo"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

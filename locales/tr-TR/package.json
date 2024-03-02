@@ -26,6 +26,7 @@
       "url": "https://github.com/kaganmert"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

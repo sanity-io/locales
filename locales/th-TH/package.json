@@ -26,6 +26,7 @@
       "url": "https://github.com/CcNicebruh"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

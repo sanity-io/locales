@@ -26,6 +26,7 @@
       "url": "https://github.com/yenbekbay"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

@@ -26,6 +26,7 @@
       "url": "https://github.com/ymcheung"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

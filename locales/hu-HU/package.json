@@ -26,6 +26,7 @@
       "url": "https://github.com/peter-gy"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

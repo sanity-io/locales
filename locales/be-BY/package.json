@@ -30,6 +30,7 @@
       "url": "https://github.com/slawiko"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

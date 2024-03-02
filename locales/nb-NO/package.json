@@ -26,6 +26,7 @@
       "url": "https://github.com/rexxars"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {
