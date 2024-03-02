@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.2...locale-fi-fi-v1.1.3) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.1...locale-fi-fi-v1.1.2) (2024-03-02)
 
 

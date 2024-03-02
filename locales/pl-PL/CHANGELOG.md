@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.1...locale-pl-pl-v1.2.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
 ## [1.2.1](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.0...locale-pl-pl-v1.2.1) (2024-03-02)
 
 
