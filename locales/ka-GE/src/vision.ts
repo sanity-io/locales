@@ -2,11 +2,11 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
-  'action.copy-url-to-clipboard': 'კლიპბორდზე კოპირება',
+  'action.copy-url-to-clipboard': 'დაკოპირებულია',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'შეჩერება',
   /** Label for setting up a listener */
-  'action.listen-execute': 'მისმენა',
+  'action.listen-execute': 'მოსმენა',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'გაუქმება',
   /** Label for executing the query, eg doing a fetch */
@@ -33,7 +33,7 @@ export default removeUndefinedLocaleResources({
   'query.url': 'მოძებნის URL',
 
   /** Label for "End to End time" information of the fetched query */
-  'result.end-to-end-time-label': 'ბოლოდან ბოლომდე',
+  'result.end-to-end-time-label': 'დასრულების დრო',
   /** Label for "Execution time" information of the fetched query */
   'result.execution-time-label': 'შესრულების დრო',
   /** Label for "Result" explorer/view */

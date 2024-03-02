@@ -30,14 +30,14 @@ export default removeUndefinedLocaleResources({
   'copy-link-error-message': 'ბმულის ბუფერში ასლის შენახვა ვერ მოხერხდა',
 
   /** The inspector successfully copied link text */
-  'copy-link-success-message': 'ბმული ბუფერში ასლია შენახული',
+  'copy-link-success-message': 'ბმული დაკოპებულია',
 
   /** The delete dialog body for a comment */
   'delete-comment.body': 'წაშლილი კომენტარი ვერ აღდგება.',
   /** The delete dialog confirm button text for a comment */
   'delete-comment.confirm': 'კომენტარის წაშლა',
   /** The delete dialog title for a comment */
-  'delete-comment.title': 'წაშლილიყო ეს კომენტარი?',
+  'delete-comment.title': 'ნამდვილად გსურთ კომენტარის წაშლა?',
 
   /** The delete dialog error */
   'delete-dialog.error': 'კომენტარის წაშლისას შეცდომა მოხდა. გთხოვთ, სცადეთ თავიდან.',
@@ -47,7 +47,7 @@ export default removeUndefinedLocaleResources({
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'თემის წაშლა',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'წაშლილიყო ეს კომენტარის თემა?',
+  'delete-thread.title': 'ნამდვილად გსურთ კომენტარის წაშლა?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'გაუქმება',
@@ -57,7 +57,7 @@ export default removeUndefinedLocaleResources({
   'discard.text': 'გსურთ კომენტარის გაუქმება?',
 
   /** Sharing feedback on the comments feature: The link title */
-  'feature-feedback.link': 'გაზიარება თქვენი შეფასება',
+  'feature-feedback.link': 'გაგვიზიარეთ თქვენი შეფასება',
   /** Sharing feedback on the comments feature: The form title  */
   'feature-feedback.title': 'დაეხმარეთ გაუმჯობესებაში ',
 
@@ -102,7 +102,7 @@ export default removeUndefinedLocaleResources({
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': 'რედაქტირებული',
   /** The error text when sending a comment has failed */
-  'list-item.layout-failed-sent': 'გაგზავნილი ვერ მოხერხდა.',
+  'list-item.layout-failed-sent': 'გაგზავნა ვერ მოხერხდა.',
   /** The loading message when posting a comment is in progress */
   'list-item.layout-posting': 'გაგზავნა...',
   /** The text for retrying posting a comment */
@@ -126,7 +126,7 @@ export default removeUndefinedLocaleResources({
   'list-status.empty-state-resolved-text':
     'გადაწყდებული კომენტარები ამ დოკუმენტზე აქ იქნება გამოჩენილი.',
   /** The empty state title for resolved comments */
-  'list-status.empty-state-resolved-title': 'ჯერ არ არის გადაწყდებული კომენტარები',
+  'list-status.empty-state-resolved-title': 'ჯერ არ არის გაცხრილული კომენტარები',
   /** The list status message for error */
   'list-status.error': 'რაღაც შეცდომა მოხდა',
   /** The list status message for loading status */
@@ -135,7 +135,7 @@ export default removeUndefinedLocaleResources({
   /** Text shown when no users can be found to mention */
   'mentions.no-users-found': 'ვერ მოიძებნა მომხმარებლები',
   /** Label/badge shown for users that are not authorized to see the document, and thus cannot be mentioned */
-  'mentions.unauthorized-user': 'უფლებამოსილებული',
+  'mentions.unauthorized-user': 'უფლებამოსილი',
   /** Aria label for the command list for users to mention */
   'mentions.user-list-aria-label': 'მომხმარებლების სია კომენტარის მიმართვად',
 
@@ -177,13 +177,13 @@ export default removeUndefinedLocaleResources({
   'reactions.users-reacted-with-reaction': '<UserList/> <Text>რეაგირებულია</Text> <ReactionName/>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
-  'status-filter.status-open': 'ღია',
+  'status-filter.status-open': 'გახსნა',
   /** Status filter: The full text for describing filtering on open (non-resolved) comments */
   'status-filter.status-open-full': 'ღია კომენტარები',
   /** Status filter: The short title describing filtering on resolved comments */
-  'status-filter.status-resolved': 'გადაწყდებული',
+  'status-filter.status-resolved': 'გაცხრილული',
   /** Status filter: The full text for describing filtering on resolved comments */
-  'status-filter.status-resolved-full': 'გადაწყდებული კომენტარები',
+  'status-filter.status-resolved-full': 'გაცხრილული კომენტარები',
   /** Status filter: The full text for describing filtering on resolved comments and is upsell mode */
   'status-filter.status-resolved-full-upsell': 'განახლება გადაწყდებული კომენტარების სანახავად',
 })
