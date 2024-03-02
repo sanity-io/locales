@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.1...locale-cs-cz-v1.1.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* **cs-CZ:** automated translation updates ([#412](https://github.com/sanity-io/locales/issues/412)) ([94ae7aa](https://github.com/sanity-io/locales/commit/94ae7aacc090910b2f18b8e326ab79abdbfe42b7))
+
 ## [1.1.1](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.0...locale-cs-cz-v1.1.1) (2024-02-22)
 
 
