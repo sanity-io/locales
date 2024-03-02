@@ -1,7 +1,7 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 import OpenAI from 'openai'
-import pLimit from 'p-limit'
+import pMap from 'p-map'
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
 import type {Locale, Resource} from '../types'
@@ -11,7 +11,6 @@ import {writeFormattedFile} from '../util/writeFormattedFile'
 import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
-const taskLimit = pLimit(3)
 
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
@@ -100,8 +99,6 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         continue
       }
 
-      let numTranslatedInNamespace = 0
-
       // Group entry.missingKeys into max 25 keys per request
       const BATCH_SIZE = 25
       const batches = []
@@ -118,30 +115,45 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         batches.push(batch)
       }
 
-      // For each of the batches, translate the keys
-      for (const currentBatch of batches) {
-        const tpl = templateMissingResources(ns.indexedResources, currentBatch)
-        logger(
-          `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
-            batches.length
-          } key batches for namespace ${ns.namespace}`,
-        )
+      // For each of the batches, translate the keys (do X batches in parallel)
+      const numTranslatedInBatches = await pMap(
+        batches,
+        async function translateBatch(currentBatch, index) {
+          const tpl = templateMissingResources(ns.indexedResources, currentBatch)
+          logger(
+            `[${locale.name}] Translating ${index + 1}/${
+              batches.length
+            } key batches for namespace ${ns.namespace}`,
+          )
 
-        const translation = JSON.parse(await taskLimit(() => translateText(tpl, localeName)))
+          const translation = JSON.parse(await translateText(tpl, localeName))
 
-        // Set the values from translation into the namespace
-        for (const key of currentBatch) {
-          const val = ns.indexedResources[key.key]
-          // eslint-disable-next-line max-depth
-          if (!val) {
-            continue
+          // Set the values from translation into the namespace
+          let batchTranslated = 0
+          for (const key of currentBatch) {
+            const val = ns.indexedResources[key.key]
+            // eslint-disable-next-line max-depth
+            if (!val) {
+              continue
+            }
+
+            const translated = translation[key.key]
+            if (!translated) {
+              logger(`[WARN] No translation returned for ${key.key}`)
+              continue
+            }
+
+            val.value = translation[key.key]
+            batchTranslated++
           }
 
-          val.value = translation[key.key]
-          numTotalTranslated++
-          numTranslatedInNamespace++
-        }
-      }
+          return batchTranslated
+        },
+        {concurrency: 3},
+      )
+
+      const numTranslatedInNamespace = numTranslatedInBatches.reduce((acc, val) => acc + val, 0)
+      numTotalTranslated += numTranslatedInNamespace
 
       // Only write back changes if there are actual changes
       if (numTranslatedInNamespace > 0) {
