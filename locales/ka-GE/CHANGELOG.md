@@ -1,0 +1,13 @@
+# Changelog
+
+## 1.0.0 (2024-03-02)
+
+
+### Features
+
+* **ka-GE:** add new locale ka-GE ([dd1e97c](https://github.com/sanity-io/locales/commit/dd1e97c67e45c7225abcf05166dba679246c283c))
+
+
+### Bug Fixes
+
+* **ka-GE:** translation updates ([#433](https://github.com/sanity-io/locales/issues/433)) ([94a7f74](https://github.com/sanity-io/locales/commit/94a7f74dc06ddeb91ca03dddd4c1947b73e6afe6))
