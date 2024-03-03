@@ -37,16 +37,16 @@ export default removeUndefinedLocaleResources({
   'asset-source.delete-dialog.usage-list.image-preview-alt': 'Pré-visualização da imagem',
   /** Warning message showing when *named* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_named':
-    '{{filename}} não pode ser excluído porque está em uso. Para excluir este arquivo, você precisa remover todos os usos dele primeiro.',
+    '{{filename}} não pode ser excluído porque está em uso. Para excluir este arquivo, você precisa remover todas as ocorrências dele primeiro.',
   /** Warning message showing when *unnamed* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_unnamed':
-    'Este arquivo não pode ser excluído porque está em uso. Para excluí-lo, você precisa remover todos os usos dele primeiro.',
+    'Este arquivo não pode ser excluído porque está em uso. Para excluí-lo, você precisa remover todas as ocorrências dele primeiro.',
   /** Warning message showing when *named* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_named':
-    '{{filename}} não pode ser excluída porque está em uso. Para excluir esta imagem, você precisa remover todos os usos dela primeiro.',
+    '{{filename}} não pode ser excluída porque está em uso. Para excluir esta imagem, você precisa remover todas as ocorrências dela primeiro.',
   /** Warning message showing when *unnamed* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_unnamed':
-    'Esta imagem não pode ser excluída porque está em uso. Para excluí-la, você precisa remover todos os usos dela primeiro.',
+    'Esta imagem não pode ser excluída porque está em uso. Para excluí-la, você precisa remover todas as ocorrências dela primeiro.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Mostrando apenas ativos dos tipos aceitos: <strong>{{acceptTypes}}</strong>',
@@ -227,7 +227,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Sem título',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
-  'changes.image.crop-changed': 'Corte alterado',
+  'changes.image.crop-changed': 'Recorte alterado',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
   'changes.image.deleted': 'Imagem excluída',
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
@@ -252,7 +252,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Carregando alterações…',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
-    'Edite o documento ou selecione uma versão mais antiga na linha do tempo para ver uma lista de alterações aparecer neste painel.',
+    'Edite o documento ou selecione uma versão mais antiga na linha do tempo para ver a lista de alterações neste painel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Não há alterações',
   /** Portable Text diff: An annotation was added */
@@ -343,19 +343,19 @@ export default removeUndefinedLocaleResources({
     'O valor da propriedade <code>_key</code> deve ser uma string única.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely. */
   'form.error.duplicate-keys-alert.details.description':
-    'Isso geralmente acontece quando os itens são criados usando um cliente de API, e a propriedade <code>_key</code> de cada elemento foi gerada de forma não única.',
+    'Isso geralmente acontece quando os itens são criados através de uma API, e a propriedade <code>_key</code> de cada elemento foi gerada de forma não única.',
   /** Developer info */
   'form.error.duplicate-keys-alert.details.title': 'Informações para Desenvolvedores',
   /** Generate unique keys */
   'form.error.duplicate-keys-alert.generate-button.text': 'Gerar chaves únicas',
   /** Several items in this list share the same identifier (key). Every item must have an unique identifier. */
   'form.error.duplicate-keys-alert.summary':
-    'Vários itens nesta lista compartilham o mesmo identificador (chave). Cada item deve ter um identificador único.',
+    'Vários itens nesta lista compartilham o mesmo identificador (chave). Cada item deve conter um identificador único.',
   /** Non-unique keys */
   'form.error.duplicate-keys-alert.title': 'Chaves não únicas',
   /** Error text shown when a field with a given name cannot be found in the schema or is conditionally hidden but explicitly told to render  */
   'form.error.field-not-found':
-    'Campo "{{fieldName}}" não encontrado entre os membros – verifique se está definido no esquema e que não foi ocultado condicionalmente.',
+    'Campo "{{fieldName}}" não encontrado - verifique se está definido no esquema e que não foi ocultado condicionalmente.',
   /** Add missing keys */
   'form.error.missing-keys-alert.add-button.text': 'Adicionar chaves faltantes',
   /** The value of the <code>_key</code> property must be a unique string. */
@@ -363,7 +363,7 @@ export default removeUndefinedLocaleResources({
     'O valor da propriedade <code>_key</code> deve ser uma string única.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property has not been included. */
   'form.error.missing-keys-alert.details.description':
-    'Isso geralmente acontece quando os itens são criados usando um cliente de API, e a propriedade <code>_key</code> não foi incluída.',
+    'Isso geralmente acontece quando os itens são criados através de uma API, e a propriedade <code>_key</code> não foi incluída.',
   /** Developer info */
   'form.error.missing-keys-alert.details.title': 'Informações para desenvolvedores',
   /** Some items in the list are missing their keys. This must be fixed in order to edit the list. */
@@ -412,7 +412,7 @@ export default removeUndefinedLocaleResources({
   'free-trial.tooltip.days-count_one': '{{count}} dia restante no período de teste',
   'free-trial.tooltip.days-count_other': '{{count}} dias restantes no período de teste',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': 'Atualize seu projeto',
+  'free-trial.tooltip.trial-finished': 'Atualize seu plano',
 
   /**
    * Label for "contact sales" call to action
@@ -477,13 +477,13 @@ export default removeUndefinedLocaleResources({
     'Não foi possível resolver o valor inicial para o tipo: {{schemaTypeTitle}}: {{errorMessage}}.',
   /** Error label for toast when trying to upload one array item of a type that cannot be converted to array */
   'inputs.array.error.cannot-upload-unable-to-convert_one':
-    'O seguinte item não pode ser carregado porque não há conversão conhecida de tipo de conteúdo para item de array:',
+    'O seguinte item não pode ser carregado porque seu tipo nao pode ser convertido para o tipo array:',
   /** Error label for toast when trying to upload multiple array items of a type that cannot be converted to array */
   'inputs.array.error.cannot-upload-unable-to-convert_other':
-    'Os seguintes itens não podem ser carregados porque não há conversão conhecida de tipos de conteúdo para item de array:',
+    'Os seguintes itens não podem ser carregados porque seus tipos não podem ser convertidos para o tipo array:',
   /** Error description for the array item tooltip that explains that the current type item is not valid for the list  */
   'inputs.array.error.current-schema-not-declare-description':
-    'O esquema atual não declara itens do tipo <code>{{typeName}}</code> como válidos para esta lista. Isso pode significar que o tipo foi removido como um item válido, ou que alguém adicionou ao seu próprio esquema local que ainda não está implantado.',
+    'O esquema atual não declara itens do tipo <code>{{typeName}}</code> como válidos nesta lista. Isso pode significar que o tipo foi removido como válido, ou que alguém adicionou o tipo em seu ambiente de desenvolvimento local, porém ainda não fez o deploy das mudanças.',
   /** Error description to show how the item is being represented in the json format */
   'inputs.array.error.json-representation-description': 'Representação JSON deste item:',
   /** Error description for the array item tooltip that explains what the error means with more context */
@@ -581,7 +581,7 @@ export default removeUndefinedLocaleResources({
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Upload incompleto',
   /** Tooltip text for action to crop image */
-  'inputs.image.actions-menu.crop-image-tooltip': 'Cortar imagem',
+  'inputs.image.actions-menu.crop-image-tooltip': 'Recortar imagem',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Abrir diálogo de edição de imagem',
   /** Accessibility label for button to open image options menu */
@@ -597,7 +597,7 @@ export default removeUndefinedLocaleResources({
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Tipo de membro desconhecido: {{kind}}',
   /** Edit hotspot and crop */
-  'inputs.image.hotspot-dialog.title': 'Editar ponto focal e cortar',
+  'inputs.image.hotspot-dialog.title': 'Editar foco e recortar',
   /** The value of this field is not a valid image. Resetting this field will let you choose a new image. */
   'inputs.image.invalid-image-warning.description':
     'O valor deste campo não é uma imagem válida. Redefinir este campo permitirá que você escolha uma nova imagem.',
@@ -617,14 +617,14 @@ export default removeUndefinedLocaleResources({
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Erro: {{errorMessage}}',
   /** Hotspot & Crop */
-  'inputs.imagetool.title': 'Hotspot & Crop',
+  'inputs.imagetool.title': 'Foco & Recorte',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Converter para <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'O valor atual (<code>{{actualType}}</code>)',
   /** The property value is stored as a value type that does not match the expected type. */
   'inputs.invalid-value.description':
-    'O valor da propriedade está armazenado como um tipo de valor que não corresponde ao tipo esperado.',
+    'O valor da propriedade está armazenado como um tipo que não corresponde ao tipo esperado.',
   /** The value of this property must be of type <code>`{{validType}}`</code> according to the schema. */
   'inputs.invalid-value.details.description':
     'O valor desta propriedade deve ser do tipo <code>{{validType}}</code> de acordo com o esquema.',
@@ -645,7 +645,7 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.aria-label': 'Grupos de campos',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
-    'Este campo é <strong>somente leitura</strong> de acordo com o esquema do documento e não pode ser desmarcado. Se você quiser poder desmarcar isso no Studio, certifique-se de remover o campo <code>readOnly</code> do tipo que o envolve no esquema.',
+    'Este campo é <strong>somente leitura</strong> de acordo com o esquema do documento e não pode ser desmarcado. Se você quiser poder desmarcá-lo no Studio, certifique-se de remover o campo <code>readOnly</code> do esquema.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Remover campo',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -655,9 +655,9 @@ export default removeUndefinedLocaleResources({
     'Encontrados {{count}} campos que não estão definidos no esquema.',
   /** Detailed description of unknown field warning */
   'inputs.object.unknown-fields.warning.details.description_one':
-    'Este campo não está definido no esquema, o que pode significar que a definição do campo foi removida ou que alguém adicionou ao seu próprio projeto local e ainda não implantou as mudanças.',
+    'Este campo não está definido no esquema, o que pode significar que a definição do campo foi removida, ou que alguém o adicionou em seu ambiente de desenvolvimento local, porém ainda não fez o deploy das mudanças.',
   'inputs.object.unknown-fields.warning.details.description_other':
-    'Estes campos não estão definidos no esquema do documento, o que pode significar que as definições dos campos foram removidas ou que alguém os adicionou ao seu próprio projeto local e ainda não implantou as mudanças.',
+    'Estes campos não estão definidos no esquema do documento, o que pode significar que as definições dos campos foram removidas, ou que alguém as adicionou em seu ambiente de desenvolvimento local, porém ainda não fez o deploy das mudanças.',
   /** Developer info */
   'inputs.object.unknown-fields.warning.details.title': 'Informações para desenvolvedores',
   /** Unknown field found */
@@ -762,7 +762,7 @@ export default removeUndefinedLocaleResources({
     'Usar tipo <code>{{expectedTypeName}}</code>',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
   'inputs.portable-text.invalid-value.missing-block-type.description':
-    'O bloco com chave <code>{{key}}</code> está faltando um nome de tipo. De acordo com o esquema, deveria ser <code>{{expectedTypeName}}</code>.',
+    'O bloco com chave <code>{{key}}</code> não possui um tipo. De acordo com o esquema, deveria ser <code>{{expectedTypeName}}</code>.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
   'inputs.portable-text.invalid-value.missing-child-key.action': 'Atribua uma chave aleatória',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
@@ -792,27 +792,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-type.action': 'Remover o bloco',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
   'inputs.portable-text.invalid-value.missing-type.description':
-    'O bloco com chave <code>{{key}}</code> está faltando um nome de tipo.',
+    'O bloco com chave <code>{{key}}</code> deve ter um tipo.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
   'inputs.portable-text.invalid-value.non-object-child.action': 'Remova o item',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
   'inputs.portable-text.invalid-value.non-object-child.description':
     'Filho no índice <code>{{index}}</code> do bloco com chave <code>{{key}}</code> não é um objeto.',
   /** Action presented when the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
-  'inputs.portable-text.invalid-value.not-an-array.action': 'Desconfigurar o valor',
+  'inputs.portable-text.invalid-value.not-an-array.action': 'Remover valor',
   /** Text explaining that the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
   'inputs.portable-text.invalid-value.not-an-array.description':
-    'O valor deve ser um array de blocos de Texto Portátil ou indefinido.',
+    'O valor deve ser um array de blocos do tipo Portable Text ou indefinido.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is not an object */
   'inputs.portable-text.invalid-value.not-an-object.action': 'Remover item',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is not an object */
   'inputs.portable-text.invalid-value.not-an-object.description':
     'O item em <code>{{index}}</code> não é um objeto.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.action': 'Remova as marcas não permitidas',
+  'inputs.portable-text.invalid-value.orphaned-marks.action':
+    'Remova as marcações (marks) não permitidas',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
   'inputs.portable-text.invalid-value.orphaned-marks.description':
-    'Bloco de texto com chave <code>{{key}}</code> contém marcas <code>({{orphanedMarks, list}})</code> que não são permitidas pelo esquema.',
+    'Bloco de texto com chave <code>{{key}}</code> contém marcações <code>({{orphanedMarks, list}})</code> que não são permitidas pelo esquema.',
   /** Title for the alert indicating that the Portable Text field has an invalid value */
   'inputs.portable-text.invalid-value.title': 'Valor inválido de Texto Portátil',
   /** Title of "bulleted" list type */
@@ -857,13 +858,13 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.action.replace-cancel': 'Cancelar substituição',
   /** The cross-dataset reference field currently has a reference, but the feature has been disabled since it was created. This explains what can/cannot be done in its current state. */
   'inputs.reference.cross-dataset.feature-disabled-actions':
-    'Você ainda pode limpar a referência existente deste campo, mas não poderá ser alterada para um documento diferente enquanto o recurso estiver desativado.',
+    'Você ainda pode limpar a referência existente deste campo, mas não poderá alterar para um documento diferente enquanto a funcionalidade estiver desabilitada.',
   /** A cross-dataset reference field exists but the feature has been disabled. A <DocumentationLink> component is available. */
   'inputs.reference.cross-dataset.feature-disabled-description':
-    'Este recurso foi desativado. Leia como ativá-lo em <DocumentationLink>a documentação</DocumentationLink>.',
+    'Esta funcionalidade foi desativada. Leia como ativá-la na <DocumentationLink>documentação</DocumentationLink>.',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
   'inputs.reference.cross-dataset.feature-unavailable-title':
-    'Recurso indisponível: Referência entre datasets',
+    'Funcionalidade indisponível: Referência entre datasets (cross dataset reference)',
   /** The cross-dataset reference points to a document with an invalid type  */
   'inputs.reference.cross-dataset.invalid-type':
     'O documento referenciado é de um tipo inválido ({{typeName}}) <JsonValue/>',
@@ -1025,7 +1026,7 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_unpublish-document':
     'Você não tem permissão para despublicar este documento.',
   /** Appears after the not-authorized message. Lists the current roles. */
-  'insufficient-permissions-message.roles': 'Seus papéis: <Roles/>',
+  'insufficient-permissions-message.roles': 'Suas atribuições: <Roles/>',
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Permissões insuficientes',
 
@@ -1163,9 +1164,9 @@ export default removeUndefinedLocaleResources({
     'Por favor, certifique-se de que está habilitado no arquivo de configuração do seu estúdio.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'Atualmente, apenas a fonte de ativos padrão é suportada.',
+    'Atualmente, apenas o banco de arquivos padrão é suportada.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': 'Nenhuma fonte de ativos válida encontrada.',
+  'search.error.no-valid-asset-source-title': 'Nenhum banco de arquivos válido encontrado.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-help-description':
     'Por favor, tente novamente ou verifique sua conexão',
@@ -1603,7 +1604,7 @@ export default removeUndefinedLocaleResources({
   'user-menu.action.free-trial_one': '{{count}} dia restante no teste',
   'user-menu.action.free-trial_other': '{{count}} dias restantes no teste',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': 'Atualizar a partir do gratuito',
+  'user-menu.action.free-trial-finished': 'Atualizar plano',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Convidar membros',
   /** Accessibility label for action to invite members to the current sanity project */

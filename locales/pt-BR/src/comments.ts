@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
   'compose.add-comment-input-placeholder': 'Adicionar comentário a <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': 'Atualize para adicionar comentário',
+  'compose.add-comment-input-placeholder-upsell': 'Atualize seu plano para adicionar comentário',
   /** When composing a comment, the placeholder text shown when the input is empty */
   'compose.create-comment-placeholder': 'Criar um novo comentário',
   /** When composing a comment, the aria label for the button to mention a user */
@@ -20,7 +20,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a reply, the placeholder text shown when the input is empty */
   'compose.reply-placeholder': 'Responder',
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
-  'compose.reply-placeholder-upsell': 'Atualize para responder',
+  'compose.reply-placeholder-upsell': 'Atualize seu plano para responder',
   /** When composing a comment, the aria label for the button to send a comment */
   'compose.send-comment-aria-label': 'Enviar comentário',
   /** When composing a comment, the tooltip text for the button to send a comment */
@@ -48,7 +48,7 @@ export default removeUndefinedLocaleResources({
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'Excluir conversa',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'Excluir esta conversa de comentários?',
+  'delete-thread.title': 'Excluir esta conversa?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'Descartar',
@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Ajude a melhorar ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Comentários',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Adicionar comentário',
@@ -83,7 +83,7 @@ export default removeUndefinedLocaleResources({
   /** The button tooltip aria label for adding a reaction */
   'list-item.context-menu-add-reaction-aria-label': 'Adicionar reação',
   /** The button tooltip content for the add reaction button and mode is upsell */
-  'list-item.context-menu-add-reaction-upsell': 'Atualize para adicionar reação',
+  'list-item.context-menu-add-reaction-upsell': 'Atualize seu plano para adicionar reação',
   /** The action menu item for copying a comment link */
   'list-item.copy-link': 'Copiar link para o comentário',
   /** The action menu item for deleting a comment */
@@ -91,7 +91,7 @@ export default removeUndefinedLocaleResources({
   /** The action menu item for editing a comment */
   'list-item.edit-comment': 'Editar comentário',
   /** The action menu item for editing a comment and the mode is upsell */
-  'list-item.edit-comment-upsell': 'Atualize para editar comentário',
+  'list-item.edit-comment-upsell': 'Atualize seu plano para editar comentário',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Ir para o campo',
   /**
@@ -142,11 +142,11 @@ export default removeUndefinedLocaleResources({
 
   /** The comments onboarding popover text */
   'onboarding.body':
-    'Você pode adicionar comentários a qualquer campo em um documento. Eles aparecerão aqui, agrupados por campo.',
+    'Você pode adicionar comentários a qualquer campo do documento. Eles aparecerão aqui, agrupados por campo.',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'Entendi',
   /** The comments onboarding popover header text */
-  'onboarding.header': 'Os campos do documento agora têm comentários',
+  'onboarding.header': 'Agora os campos do documento possuem comentários',
 
   /** Tooltip for the button to add a reaction to a comment */
   'reactions.add-reaction-tooltip': 'Adicionar reação',
@@ -186,5 +186,6 @@ export default removeUndefinedLocaleResources({
   /** Status filter: The full text for describing filtering on resolved comments */
   'status-filter.status-resolved-full': 'Comentários resolvidos',
   /** Status filter: The full text for describing filtering on resolved comments and is upsell mode */
-  'status-filter.status-resolved-full-upsell': 'Atualize para ver comentários resolvidos',
+  'status-filter.status-resolved-full-upsell':
+    'Atualize seu plano para ver os comentários resolvidos',
 })
