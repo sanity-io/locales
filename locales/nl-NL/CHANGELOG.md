@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.3...locale-nl-nl-v1.1.4) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
+## [1.1.3](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.2...locale-nl-nl-v1.1.3) (2024-03-02)
+
+
+### Bug Fixes
+
+* **nl-NL:** automated translation updates ([#421](https://github.com/sanity-io/locales/issues/421)) ([09a7eae](https://github.com/sanity-io/locales/commit/09a7eaedfec201c8c74d468d52709ffb191171d7))
+
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.1...locale-nl-nl-v1.1.2) (2024-02-22)
 
 

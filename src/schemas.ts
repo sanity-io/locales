@@ -106,6 +106,7 @@ export const packageJsonSchema = z
     description: z.string(),
     private: z.boolean(),
     version: z.string(),
+    sideEffects: z.boolean().optional(),
     main: z.string(),
     license: z.string(),
     scripts: z.record(z.string()),

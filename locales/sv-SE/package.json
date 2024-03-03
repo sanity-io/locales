@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-sv-se",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "private": false,
   "description": "Swedish / Svenska locale/translation for Sanity Studio",
   "keywords": [
@@ -38,6 +38,7 @@
       "url": "https://github.com/wisechimp"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

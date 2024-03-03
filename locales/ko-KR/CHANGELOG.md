@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.3](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.2...locale-ko-kr-v1.1.3) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
+## [1.1.2](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.1...locale-ko-kr-v1.1.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* **ko-KR:** automated translation updates ([#419](https://github.com/sanity-io/locales/issues/419)) ([425bb36](https://github.com/sanity-io/locales/commit/425bb361d67e150b57733057123f47f15e0e6761))
+
 ## [1.1.1](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.0...locale-ko-kr-v1.1.1) (2024-02-22)
 
 

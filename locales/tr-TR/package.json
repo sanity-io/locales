@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-tr-tr",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "private": false,
   "description": "Turkish / Türkçe locale/translation for Sanity Studio",
   "keywords": [
@@ -26,6 +26,7 @@
       "url": "https://github.com/kaganmert"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {
