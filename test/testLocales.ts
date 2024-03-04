@@ -1,3 +1,5 @@
+import {platform} from 'node:os'
+import {pathToFileURL} from 'node:url'
 import {describe, test} from 'node:test'
 import {expect} from 'expect'
 import type {LocaleDefinition, LocaleResourceRecord, PluginOptions} from 'sanity'
@@ -9,7 +11,9 @@ describe('locales', async () => {
 
   for (const {id, name, englishName, path, exportName} of locales) {
     await test(`${id} (${englishName})`, async (t) => {
-      const mod = await import(`${path}/src/index.ts`)
+      const filePath = `${path}/src/index.ts`
+      const importPath = platform() === 'win32' ? pathToFileURL(filePath).href : filePath
+      const mod = await import(importPath)
 
       // These functions are for typing only
       const getPlugin = (): PluginOptions => mod[exportName]()
