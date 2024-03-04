@@ -150,6 +150,9 @@ importers:
       '@sanity/locale-ka-ge':
         specifier: workspace:*
         version: link:../../locales/ka-GE
+      '@sanity/locale-kn-in':
+        specifier: workspace:*
+        version: link:../../locales/kn-IN
       '@sanity/locale-ko-kr':
         specifier: workspace:*
         version: link:../../locales/ko-KR
@@ -303,6 +306,12 @@ importers:
         version: 3.30.1(@types/node@18.19.8)(@types/react@18.2.61)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
 
   locales/ka-GE:
+    dependencies:
+      sanity:
+        specifier: ^3.22.0
+        version: 3.30.1(@types/node@18.19.8)(@types/react@18.2.61)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
+
+  locales/kn-IN:
     dependencies:
       sanity:
         specifier: ^3.22.0
