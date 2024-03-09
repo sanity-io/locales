@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
-  'label.new': '新',
+  'label.new': '新登場',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': '參數不是有效的JSON',
@@ -45,22 +45,22 @@ export default removeUndefinedLocaleResources({
   'result.timing-not-applicable': '不適用',
 
   /** Label for the "API version" dropdown in settings */
-  'settings.api-version-label': 'API版本',
+  'settings.api-version-label': 'API 版本',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
-  'settings.custom-api-version-label': '自定義API版本',
+  'settings.custom-api-version-label': '自定義 API 版本',
   /** Label for the "Dataset" dropdown in vision settings */
   'settings.dataset-label': '數據集',
   /** Error label for when the API version in 'Custom API version' input is invalid */
-  'settings.error.invalid-api-version': '無效的API版本',
+  'settings.error.invalid-api-version': '無效的 API 版本',
   /** Label for the "other" versions within the "API version" dropdown */
-  'settings.other-api-version-label': '其他',
+  'settings.other-api-version-label': '其它',
   /**
    * Label for the "Perspective" dropdown in vision settings
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': '視角',
   /** Call to action to read the docs related to "Perspectives" */
-  'settings.perspectives.action.docs-link': '閱讀文檔',
+  'settings.perspectives.action.docs-link': '閱讀文件',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description': '視角允許您的查詢針對數據集中不同的「視圖」運行',
   /** Title for popover that explains what "Perspectives" are */

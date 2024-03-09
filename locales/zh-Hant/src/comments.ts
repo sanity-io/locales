@@ -8,9 +8,9 @@ export default removeUndefinedLocaleResources({
   'close-pane-button-text-aria-label': '關閉評論',
 
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
-  'compose.add-comment-input-placeholder': '添加評論到 <strong>{{field}}</strong>',
+  'compose.add-comment-input-placeholder': '新增評論到 <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': '升級以添加評論',
+  'compose.add-comment-input-placeholder-upsell': '升級以新增評論',
   /** When composing a comment, the placeholder text shown when the input is empty */
   'compose.create-comment-placeholder': '創建新評論',
   /** When composing a comment, the aria label for the button to mention a user */
@@ -27,10 +27,10 @@ export default removeUndefinedLocaleResources({
   'compose.send-comment-tooltip': '發送評論',
 
   /** The inspector text when error copying link */
-  'copy-link-error-message': '無法複製鏈接到剪貼板',
+  'copy-link-error-message': '無法複製連結到剪貼簿',
 
   /** The inspector successfully copied link text */
-  'copy-link-success-message': '已複製鏈接到剪貼板',
+  'copy-link-success-message': '已複製連結到剪貼簿',
 
   /** The delete dialog body for a comment */
   'delete-comment.body': '一旦刪除，評論將無法恢復。',
@@ -57,7 +57,7 @@ export default removeUndefinedLocaleResources({
   'discard.text': '你想放棄這條評論嗎？',
 
   /** Sharing feedback on the comments feature: The link title */
-  'feature-feedback.link': '分享你的反饋',
+  'feature-feedback.link': '分享你的回饋',
   /** Sharing feedback on the comments feature: The form title  */
   'feature-feedback.title': '幫助改進 ',
 
@@ -65,24 +65,24 @@ export default removeUndefinedLocaleResources({
   'feature-name': '評論',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
-  'field-button.aria-label-add': '添加評論',
+  'field-button.aria-label-add': '新增評論',
   /** Aria label for button above fields that opens the comments for this field, when there are existing comments */
   'field-button.aria-label-open': '打開評論',
   /** Text shown in popover when hovering the button above fields that opens the comments panel, when there are more than one comment present */
   'field-button.content_other': '查看評論',
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
-  'field-button.title': '添加評論',
+  'field-button.title': '新增評論',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '前往{{field}}字段',
   /** The button tooltip content for the add reaction button */
-  'list-item.context-menu-add-reaction': '添加反應',
+  'list-item.context-menu-add-reaction': '新增反應',
   /** The button tooltip aria label for adding a reaction */
-  'list-item.context-menu-add-reaction-aria-label': '添加反應',
+  'list-item.context-menu-add-reaction-aria-label': '新增反應',
   /** The button tooltip content for the add reaction button and mode is upsell */
-  'list-item.context-menu-add-reaction-upsell': '升級以添加反應',
+  'list-item.context-menu-add-reaction-upsell': '升級以新增反應',
   /** The action menu item for copying a comment link */
-  'list-item.copy-link': '複製評論鏈接',
+  'list-item.copy-link': '複製評論連結',
   /** The action menu item for deleting a comment */
   'list-item.delete-comment': '刪除評論',
   /** The action menu item for editing a comment */
@@ -106,7 +106,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': '重試',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': '打開評論操作菜單',
+  'list-item.open-menu-aria-label': '打開評論操作選單',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': '重新打開',
   /** The button aria label to re-open a comment that is resolved */
@@ -137,14 +137,14 @@ export default removeUndefinedLocaleResources({
   'mentions.user-list-aria-label': '要提及的用戶列表',
 
   /** The comments onboarding popover text */
-  'onboarding.body': '您可以在文件的任何欄位中添加評論。它們將在這裡顯示，按欄位分組。',
+  'onboarding.body': '可以在文件的任何欄位中新增評論。它們將在這裡顯示，按欄位分組。',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': '知道了',
   /** The comments onboarding popover header text */
   'onboarding.header': '文件欄位現在有了評論功能',
 
   /** Tooltip for the button to add a reaction to a comment */
-  'reactions.add-reaction-tooltip': '添加反應',
+  'reactions.add-reaction-tooltip': '新增反應',
   /** Aria label for the individual reactions you can choose from when reacting to a comment */
   'reactions.react-with-aria-label': '用{{reactionName}}來反應',
   /** When a users' name cannot be resolved, fall back to this name */

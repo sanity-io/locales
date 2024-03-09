@@ -17,7 +17,7 @@ export default removeUndefinedLocaleResources({
   'array.minimum-length_blocks': '至少要有 {{minLength}} 個區塊',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': '必須是有效的 ISO-8601 格式日期字符串',
+  'date.invalid-format': '必須是有效的 ISO-8601 格式日期字串',
   /** Date is later than the given maximum date "$maxDate" */
   'date.maximum': '必須在 {{maxDate}} 之前或當天',
   /** Date is earlier than the given minimum date "$minDate" */
@@ -73,19 +73,19 @@ export default removeUndefinedLocaleResources({
   /** String is not a valid email address */
   'string.email': '必須是有效的電子郵件地址',
   /** String has a different character length than the exact number "$wantedLength" */
-  'string.exact-length': '必須恰好是 {{wantedLength}} 個字符長',
+  'string.exact-length': '必須恰好是 {{wantedLength}} 個字元',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': '必須全部是小寫字符',
+  'string.lowercase': '必須全部是小寫字母',
   /** String is longer than the limit of "$maxLength" characters */
-  'string.maximum-length': '最多只能有 {{maxLength}} 個字符長',
+  'string.maximum-length': '最多只能有 {{maxLength}} 個字元',
   /** String is shorter than the limit of "$minLength" characters */
-  'string.minimum-length': '至少要有 {{minLength}} 個字符長',
+  'string.minimum-length': '至少要有 {{minLength}} 個字元',
   /** String does not match the given regular expression, but should */
   'string.regex-does-not-match': '不符合 "{{name}}"-模式',
   /** String matches the given regular expression, but should not */
   'string.regex-match': '不應符合 "{{name}}"-模式',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': '必須全部是大寫字符',
+  'string.uppercase': '必須全部是大寫字母',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
   'string.url.disallowed-scheme': '不符合允許的協議/方案',
   /** String contains a URL with a username or password specified before the host */
