@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-zh-hans",
-  "version": "2.1.1",
+  "version": "2.1.3",
   "private": false,
   "description": "Chinese (Simplified) / 简体中文 locale/translation for Sanity Studio",
   "keywords": [
@@ -21,6 +21,7 @@
   },
   "license": "MIT",
   "contributors": [],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

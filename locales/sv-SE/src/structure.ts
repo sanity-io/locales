@@ -338,15 +338,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Ett fel inträffade vid försök att avpublicera detta dokument. Detta betyder vanligtvis att det finns andra dokument som refererar till det.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Lyckades utföra {{context}} på dokumentet',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokumentet raderades framgångsrikt',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Alla ändringar sedan senaste publiceringen har nu kasserats. Det kasserade utkastet kan fortfarande återhämtas från historiken',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentet publicerades',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> återställdes',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentet avpublicerades. Ett utkast har skapats från den senaste publicerade versionen.',

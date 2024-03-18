@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.2](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.1...locale-de-de-v1.1.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
+## [1.1.1](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.0...locale-de-de-v1.1.1) (2024-03-02)
+
+
+### Bug Fixes
+
+* **de-DE:** automated translation updates ([#245](https://github.com/sanity-io/locales/issues/245)) ([b6f69a0](https://github.com/sanity-io/locales/commit/b6f69a0f37fce1e9cf6ba5638ee35fa7068a6a47))
+
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-de-de-v1.0.3...locale-de-de-v1.1.0) (2024-02-07)
 
 

@@ -1,3 +1,5 @@
+import {platform} from 'node:os'
+import {pathToFileURL} from 'node:url'
 import {readFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
 import {localeRegistrySchema} from '../schemas'
@@ -97,7 +99,9 @@ async function loadRegistry(): Promise<LocaleRegistry> {
 
   let mod: any
   try {
-    mod = await import(registryFilePath)
+    mod = await import(
+      platform() === 'win32' ? pathToFileURL(registryFilePath).href : registryFilePath
+    )
   } catch (err: unknown) {
     throw new Error(
       `Failed to load locale registry (locales/registry.ts): ${

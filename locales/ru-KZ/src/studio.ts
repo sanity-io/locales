@@ -628,7 +628,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Свернуть редактор',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Редактировать аннотацию',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Развернуть редактор',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -641,7 +641,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.action.insert-inline-object-aria-label':
     'Вставить {{typeName}} (встроенный)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Удалить аннотацию',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Нажмите для активации',
   /** Label for activate on focus with context of click and focused */
@@ -650,13 +650,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Коснитесь для активации',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Объект аннотации',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Редактировать {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Ссылка',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Блочный объект',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Редактировать',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -680,15 +680,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Пусто',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Встроенный объект',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Редактировать объект',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Редактировать объект',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Удалить объект',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Удалить объект',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'ПРИМЕЧАНИЕ: Обычно безопасно выполнять действие выше, но если вы сомневаетесь, свяжитесь с ответственными за настройку вашей студии.',
@@ -1022,7 +1022,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Управление участниками',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Кто здесь',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Пригласите людей в проект, чтобы видеть их онлайн-статус.',
@@ -1030,6 +1030,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Здесь никого нет',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Не в документе',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Кто здесь',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Без названия',
@@ -1467,6 +1469,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Результаты поиска',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Статус конфигурации',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакции истории документа не были затронуты.',
@@ -1528,6 +1533,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'С: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'С: неизвестная версия',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'Остался {{count}} день пробного периода',

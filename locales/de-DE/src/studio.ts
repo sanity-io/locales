@@ -390,7 +390,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Kein Array-Element mit `_key` <code>"{{key}}"</code> unter dem Pfad <code>{{path}}</code> gefunden',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': 'veraltet',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Ohne Titel',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -409,10 +409,10 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.warnings-count_other': '{{count}} Warnungen',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} Tag verbleibend im Test',
+  'free-trial.tooltip.days-count_other': '{{count}} Tage verbleibend im Test',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Projekt upgraden',
 
   /**
    * Label for "contact sales" call to action
@@ -667,7 +667,7 @@ export default removeUndefinedLocaleResources({
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Editor minimieren',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Anmerkung bearbeiten',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': 'Editor erweitern',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -679,7 +679,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': '{{typeName}} einfügen (inline)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Anmerkung entfernen',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'Zum Aktivieren klicken',
   /** Label for activate on focus with context of click and focused */
@@ -688,13 +688,13 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Zum Aktivieren tippen',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Anmerkungsobjekt',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}} bearbeiten',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Link',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Blockobjekt',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Bearbeiten',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -718,15 +718,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Leer',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Inline-Objekt',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Objekt bearbeiten',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Objekt bearbeiten',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': 'Objekt entfernen',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Objekt entfernen',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     'HINWEIS: Es ist im Allgemeinen sicher, die obige Aktion durchzuführen, aber wenn Sie Zweifel haben, wenden Sie sich an die Verantwortlichen für die Konfiguration Ihres Studios.',
@@ -1061,7 +1061,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Mitglieder verwalten',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Wer ist hier',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description':
@@ -1070,6 +1070,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Niemand sonst ist hier',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Nicht in einem Dokument',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Wer ist hier',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Ohne Titel',
@@ -1533,6 +1535,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Suchergebnisse',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Konfigurationsstatus',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Die Transaktionen der Dokumenthistorie wurden nicht beeinträchtigt.',
@@ -1594,6 +1599,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Seit: unbekannte Version',
 
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
+
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} Tag verbleibend im Test',
   'user-menu.action.free-trial_other': '{{count}} Tage verbleibend im Test',
@@ -1636,7 +1644,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': 'Angemeldet mit {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Menü öffnen',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
@@ -1657,7 +1665,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': 'Arbeitsbereich auswählen',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Arbeitsbereich auswählen',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': 'Arbeitsbereiche',
 })

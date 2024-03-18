@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-fr-fr",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "private": false,
   "description": "French / Français locale/translation for Sanity Studio",
   "keywords": [
@@ -34,6 +34,7 @@
       "url": "https://github.com/thierryteyssier"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-hu-hu",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "private": false,
   "description": "Hungarian / Magyar locale/translation for Sanity Studio",
   "keywords": [
@@ -26,6 +26,7 @@
       "url": "https://github.com/peter-gy"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

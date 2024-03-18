@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.2](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.1...locale-th-th-v1.1.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
+## [1.1.1](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.0...locale-th-th-v1.1.1) (2024-03-02)
+
+
+### Bug Fixes
+
+* **th-TH:** automated translation updates ([#263](https://github.com/sanity-io/locales/issues/263)) ([8a531a2](https://github.com/sanity-io/locales/commit/8a531a21ee4c020d14347286c133651d526e6ac1))
+
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-th-th-v1.0.3...locale-th-th-v1.1.0) (2024-02-07)
 
 

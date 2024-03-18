@@ -27,6 +27,8 @@
     "@sanity/locale-is-is": "workspace:*",
     "@sanity/locale-it-it": "workspace:*",
     "@sanity/locale-ja-jp": "workspace:*",
+    "@sanity/locale-ka-ge": "workspace:*",
+    "@sanity/locale-kn-in": "workspace:*",
     "@sanity/locale-ko-kr": "workspace:*",
     "@sanity/locale-nb-no": "workspace:*",
     "@sanity/locale-nl-nl": "workspace:*",
@@ -53,7 +55,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.1",
-    "@types/react": "^18.2.51",
+    "@types/react": "^18.2.61",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3"

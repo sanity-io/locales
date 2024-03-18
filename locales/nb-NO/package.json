@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-nb-no",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "private": false,
   "description": "Norwegian (Bokmål) / Norsk (Bokmål) locale/translation for Sanity Studio",
   "keywords": [
@@ -26,6 +26,7 @@
       "url": "https://github.com/rexxars"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {
