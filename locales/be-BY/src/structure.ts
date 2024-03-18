@@ -329,7 +329,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Дакумент быў апублікаваны',
   /** The text when a restore operation succeeded  */
-  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> быў адноўлены',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Дакумент быў зняты з публікацыі. Чарнавік быў створаны з апошняй апублікаванай версіі.',
