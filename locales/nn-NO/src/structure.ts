@@ -350,7 +350,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentet blei publisert',
   /** The text when a restore operation succeeded  */
-  'panes.document-operation-results.operation-success_restore': '<Strong>{{title}}</Strong> blei gjenoppretta',
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> blei gjenoppretta',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentet blei avpublisert. Eit utkast har blitt oppretta frå den siste publiserte versjonen.',
