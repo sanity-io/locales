@@ -5,6 +5,7 @@ import {reconcileLocalePackages} from './locales'
 import {reconcileRegistry} from './registry'
 import {reconcileReleasePleaseConfig} from './release'
 import {reconcileStudio} from './studio'
+import {reconcileAutoTranslateWorkflow} from './workflows'
 
 const execFile = promisify(execFileCb)
 
@@ -14,6 +15,7 @@ export async function reconcileAll(): Promise<void> {
   await reconcileStudio()
   await reconcileReleasePleaseConfig()
   await reconcileLockFile()
+  await reconcileAutoTranslateWorkflow()
 }
 
 async function reconcileLockFile() {

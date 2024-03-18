@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** Header in usage dialog for image assets */
   'asset-source.asset-usage-dialog.header_image': '使用圖片的文件',
   /** Text shown in usage dialog when loading documents using the selected asset */
-  'asset-source.asset-usage-dialog.loading': '加載中…',
+  'asset-source.asset-usage-dialog.loading': '讀取中…',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': '取消',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -20,33 +20,33 @@ export default removeUndefinedLocaleResources({
   /** Dialog header for delete-asset dialog when deleting an image */
   'asset-source.delete-dialog.header_image': '刪除圖片',
   /** Text shown in delete dialog when loading documents using the selected asset */
-  'asset-source.delete-dialog.loading': '加載中…',
+  'asset-source.delete-dialog.loading': '讀取中…',
   /** Message confirming to delete *named* file */
   'asset-source.delete-dialog.usage-list.confirm-delete-file_named':
-    '您即將刪除檔案<strong>{{filename}}}</strong>及其元數據。您確定嗎？',
+    '即將刪除檔案：<strong>{{filename}}}</strong> 及其元數據。確定嗎？',
   /** Message confirming to delete *unnamed* file */
   'asset-source.delete-dialog.usage-list.confirm-delete-file_unnamed':
-    '您即將刪除檔案及其元數據。您確定嗎？',
+    '即將刪除檔案及其元數據。確定嗎？',
   /** Message confirming to delete *named* image */
   'asset-source.delete-dialog.usage-list.confirm-delete-image_named':
-    '您即將刪除圖片<strong>{{filename}}</strong>及其元數據。您確定嗎？',
+    '即將刪除圖片 <strong>{{filename}}</strong> 及其元數據。確定嗎？',
   /** Message confirming to delete *unnamed* image */
   'asset-source.delete-dialog.usage-list.confirm-delete-image_unnamed':
-    '您即將刪除圖片及其元數據。您確定嗎？',
+    '即將刪除圖片及其元數據。確定嗎？',
   /** Alt text showing on image preview in delete asset dialog  */
   'asset-source.delete-dialog.usage-list.image-preview-alt': '圖片預覽',
   /** Warning message showing when *named* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_named':
-    '{{filename}}無法刪除，因為它正在被使用。要刪除此檔案，您首先需要移除其所有用途。',
+    '{{filename}} 因為使用中而無法刪除。若要刪除，得先移除它的所有用途。',
   /** Warning message showing when *unnamed* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_unnamed':
-    '此檔案無法刪除，因為它正在被使用。要刪除它，您首先需要移除其所有用途。',
+    '檔案因為使用中而無法刪除。若要刪除，得先移除它的所有用途。',
   /** Warning message showing when *named* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_named':
-    '{{filename}}無法刪除，因為它正在被使用。要刪除此圖片，您首先需要移除其所有用途。',
+    '{{filename}} 因為使用中而無法刪除。若要刪除這張圖片，得先移除它的所有用途。',
   /** Warning message showing when *unnamed* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_unnamed':
-    '此圖片無法刪除，因為它正在被使用。要刪除它，您首先需要移除其所有用途。',
+    '圖片因為使用中而無法刪除。若要刪除，得先移除它的所有用途。',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message': '僅顯示接受類型的資產：<strong>{{acceptTypes}}</strong>',
   /** Keys shared between both image asset source and file asset source */
@@ -55,7 +55,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': '選擇圖片',
   /** Select asset dialog load more items */
-  'asset-source.dialog.load-more': '加載更多',
+  'asset-source.dialog.load-more': '繼續讀取',
   /** Text shown when selecting a file but there's no files to select from */
   'asset-source.dialog.no-assets_file': '沒有檔案',
   /** Text shown when selecting an image but there's no images to select from */
@@ -63,31 +63,31 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     '無法刪除當前選擇的文件',
   'asset-source.file.asset-list.action.delete.text': '刪除',
-  'asset-source.file.asset-list.action.delete.title': '刪除文件',
-  'asset-source.file.asset-list.action.select-file.title': '選擇文件 {{filename}}',
+  'asset-source.file.asset-list.action.delete.title': '刪除檔案',
+  'asset-source.file.asset-list.action.select-file.title': '選擇檔案 {{filename}}',
   'asset-source.file.asset-list.action.show-usage.title': '顯示使用情況',
-  'asset-source.file.asset-list.delete-failed': '文件無法被刪除',
-  'asset-source.file.asset-list.delete-successful': '文件已被刪除',
-  'asset-source.file.asset-list.header.date-added': '添加日期',
+  'asset-source.file.asset-list.delete-failed': '無法刪除文件',
+  'asset-source.file.asset-list.delete-successful': '檔案已刪除',
+  'asset-source.file.asset-list.header.date-added': '加入日期',
   /** File asset source */
-  'asset-source.file.asset-list.header.filename': '文件名',
+  'asset-source.file.asset-list.header.filename': '檔案名稱',
   'asset-source.file.asset-list.header.size': '大小',
   'asset-source.file.asset-list.header.type': '類型',
   /** Text displayed on button or menu invoking the file asset source */
-  'asset-source.file.title': '已上傳文件',
-  'asset-source.image.asset-list.delete-failed': '圖片無法被刪除',
+  'asset-source.file.title': '已上傳檔案',
+  'asset-source.image.asset-list.delete-failed': '無法刪除圖片',
   /** Image asset source */
-  'asset-source.image.asset-list.delete-successful': '圖片已被刪除',
+  'asset-source.image.asset-list.delete-successful': '圖片已刪除',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': '已上傳圖片',
   'asset-source.usage-list.documents-using-file_named_other':
-    '{{count}}份文件正在使用文件<code>{{filename}}</code>',
+    '{{count}} 份文件在使用檔案 <code>{{filename}}</code>',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *named* file **/
   'asset-source.usage-list.documents-using-file_named_zero':
-    '沒有文件正在使用文件<code>{{filename}}</code>',
-  'asset-source.usage-list.documents-using-file_unnamed_other': '{{count}}份文件正在使用這個文件',
+    '沒有文件在使用檔案 <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-file_unnamed_other': '{{count}} 份文件在使用這個檔案',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *unnamed* file **/
-  'asset-source.usage-list.documents-using-file_unnamed_zero': '沒有文件正在使用這個文件',
+  'asset-source.usage-list.documents-using-file_unnamed_zero': '沒有文件在使用這個檔案',
   'asset-source.usage-list.documents-using-image_named_other':
     '{{count}}份文件正在使用圖片<code>{{filename}}</code>',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
@@ -165,7 +165,7 @@ export default removeUndefinedLocaleResources({
   'calendar.weekday-names.short.wednesday': '週三',
 
   /** Label for the close button label in Review Changes pane */
-  'changes.action.close-label': '關閉審查更改',
+  'changes.action.close-label': '關閉修改審查',
   /** Cancel label for revert button prompt action */
   'changes.action.revert-all-cancel': '取消',
   /** Revert all confirm label for revert button action - used on prompt button + review changes pane */
@@ -173,11 +173,11 @@ export default removeUndefinedLocaleResources({
   /** Revert for confirming revert (plural) label for field change action */
   'changes.action.revert-changes-confirm-change_other': '還原更改',
   /** Prompt for reverting changes for a field change */
-  'changes.action.revert-changes-description': '您確定要還原這些更改嗎？',
+  'changes.action.revert-changes-description': '確定要還原這些更改嗎？',
   /** Label for when the action of the change was to set something that was previously empty, eg a field was given a value, an array item was added, an asset was selected or similar */
-  'changes.added-label': '已添加',
+  'changes.added-label': '已新增',
   /** Array diff: An item was added in a given position (`{{position}}`) */
-  'changes.array.item-added-in-position': '在位置 {{position}} 添加',
+  'changes.array.item-added-in-position': '在位置 {{position}} 新增',
   'changes.array.item-moved_down_other': '向下移動 {{count}} 個位置',
   'changes.array.item-moved_up_other': '向上移動 {{count}} 個位置',
   /** Array diff: An item was removed from a given position (`{{position}}`) */
@@ -202,7 +202,7 @@ export default removeUndefinedLocaleResources({
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
   'changes.image.deleted': '圖片已刪除',
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
-  'changes.image.error-loading-image': '加載圖片出錯',
+  'changes.image.error-loading-image': '讀取圖片出錯',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.hotspot-changed': '熱點已更改',
   /** Image diff: Fallback title for the meta info section when there is no original filename to use  */
@@ -218,16 +218,16 @@ export default removeUndefinedLocaleResources({
   /** Label for the "to" value in the change inspector */
   'changes.inspector.to-label': '到',
   /** Loading author of change in the differences tooltip in the review changes pane */
-  'changes.loading-author': '加載中…',
+  'changes.loading-author': '讀取中…',
   /** Loading changes in Review Changes Pane */
-  'changes.loading-changes': '正在加載更改…',
+  'changes.loading-changes': '正在讀取更改…',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     '編輯文檔或在時間線中選擇較舊的版本，以在此面板中看到更改列表。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '沒有更改',
   /** Portable Text diff: An annotation was added */
-  'changes.portable-text.annotation_added': '已添加批註',
+  'changes.portable-text.annotation_added': '已新增批註',
   /** Portable Text diff: An annotation was changed */
   'changes.portable-text.annotation_changed': '已更改批註',
   /** Portable Text diff: An annotation was removed */
@@ -243,13 +243,13 @@ export default removeUndefinedLocaleResources({
   /** Portable Text diff: An empty object is the result of adding/removing an annotation */
   'changes.portable-text.empty-object-annotation': '空的{{annotationType}}',
   /** Portable Text diff: Added a block containing no text (eg empty block) */
-  'changes.portable-text.empty-text_added': '已添加空文本',
+  'changes.portable-text.empty-text_added': '已新增空文本',
   /** Portable Text diff: Changed a block that contained no text (eg empty block) */
   'changes.portable-text.empty-text_changed': '已更改空文本',
   /** Portable Text diff: Removed a block containing no text (eg empty block) */
   'changes.portable-text.empty-text_removed': '已移除空文本',
   /** Portable Text diff: An inline object was added */
-  'changes.portable-text.inline-object_added': '已添加內聯對象',
+  'changes.portable-text.inline-object_added': '已新增內聯對象',
   /** Portable Text diff: An inline object was changed */
   'changes.portable-text.inline-object_changed': '已更改內聯對象',
   /** Portable Text diff: An inline object was removed */
@@ -277,7 +277,7 @@ export default removeUndefinedLocaleResources({
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': '確認',
   /** Default text in shared loader text / spinner lockup */
-  'common.loading': '加載中',
+  'common.loading': '讀取中',
 
   /** --- Configuration issues --- */
   /** Tooltip displayed on configuration issues button */
@@ -327,7 +327,7 @@ export default removeUndefinedLocaleResources({
   'form.error.field-not-found':
     '字段 "{{fieldName}}" 在成員中未找到 – 請確認它已在架構中定義並且沒有被條件隱藏。',
   /** Add missing keys */
-  'form.error.missing-keys-alert.add-button.text': '添加缺失的鍵值',
+  'form.error.missing-keys-alert.add-button.text': '新增缺失的鍵值',
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.missing-keys-alert.details.additional-description':
     'The value of the <code>_key</code> property must be a unique string.',
@@ -360,7 +360,7 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     '在路徑 <code>{{path}}</code> 上未找到 `_key` <code>"{{key}}"</code> 的陣列項目',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': '已棄用',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '無標題',
   /** Fallback title shown above fieldset if it has no defined title */
@@ -374,9 +374,9 @@ export default removeUndefinedLocaleResources({
   'form.validation.summary.errors-count_other': '{{count}} 個錯誤',
   'form.validation.summary.warnings-count_other': '{{count}} 個警告',
 
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_other': '{{count}} 天試用期剩餘',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': '升級您的項目',
 
   /**
    * Label for "contact sales" call to action
@@ -411,16 +411,16 @@ export default removeUndefinedLocaleResources({
     '無法打開此文件（無法解析 URL 到 Studio）',
 
   /** Label for adding item after a specific array item */
-  'inputs.array.action.add-after': '在之後添加項目',
+  'inputs.array.action.add-after': '在之後新增項目',
   /** Label for adding item before a specific array item */
-  'inputs.array.action.add-before': '在之前添加項目',
+  'inputs.array.action.add-before': '在之前新增項目',
   /** Label for adding array item action when the schema allows for only one schema type */
-  'inputs.array.action.add-item': '添加項目',
+  'inputs.array.action.add-item': '新增項目',
   /**
    * Label for adding one array item action when the schema allows for multiple schema types,
    * eg. will prompt the user to select a type once triggered
    */
-  'inputs.array.action.add-item-select-type': '添加項目...',
+  'inputs.array.action.add-item-select-type': '新增項目...',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': '拖動以重新排序',
   /** Label for duplicating an array item  */
@@ -444,7 +444,7 @@ export default removeUndefinedLocaleResources({
     '以下項目無法上傳，因為沒有已知的從內容類型到陣列項目的轉換：',
   /** Error description for the array item tooltip that explains that the current type item is not valid for the list  */
   'inputs.array.error.current-schema-not-declare-description':
-    '當前架構沒有聲明類型<code>{{typeName}}</code>的項目對此列表有效。這可能意味著該類型已被移除為有效項目類型，或者有人將其添加到他們自己的本地架構中，該架構尚未部署。',
+    '當前架構沒有聲明類型<code>{{typeName}}</code>的項目對此列表有效。這可能意味著該類型已被移除為有效項目類型，或者有人將其新增到他們自己的本地架構中，該架構尚未部署。',
   /** Error description to show how the item is being represented in the json format */
   'inputs.array.error.json-representation-description': '此項目的JSON表示形式：',
   /** Error description for the array item tooltip that explains what the error means with more context */
@@ -463,7 +463,7 @@ export default removeUndefinedLocaleResources({
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '例如 {{example}}',
   /** Acessibility label for button to open file options menu */
-  'inputs.file.actions-menu.file-options.aria-label': '打開文件選項菜單',
+  'inputs.file.actions-menu.file-options.aria-label': '打開文件選項選單',
   /** Browse */
   'inputs.file.browse-button.text': '瀏覽',
   /** Select file */
@@ -530,7 +530,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '開啟圖片編輯對話框',
   /** Accessibility label for button to open image options menu */
-  'inputs.image.actions-menu.options.aria-label': '開啟圖片選項菜單',
+  'inputs.image.actions-menu.options.aria-label': '開啟圖片選項選單',
   /** Select */
   'inputs.image.browse-menu.text': '選擇',
   /** Cannot upload this file here */
@@ -592,14 +592,14 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.remove-field-button.text': '移除欄位',
   'inputs.object.unknown-fields.warning.description_other': '遇到{{count}}個未在架構中定義的欄位。',
   'inputs.object.unknown-fields.warning.details.description_other':
-    '這些欄位未在文件的架構中定義，這可能意味著欄位定義已被移除，或者有人在他們自己的本地項目中添加了這些欄位，並且還沒有部署他們的更改。',
+    '這些欄位未在文件的架構中定義，這可能意味著欄位定義已被移除，或者有人在他們自己的本地項目中新增了這些欄位，並且還沒有部署他們的更改。',
   /** Developer info */
   'inputs.object.unknown-fields.warning.details.title': '開發者資訊',
   'inputs.object.unknown-fields.warning.title_other': '發現未知欄位',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': '摺疊編輯器',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': '編輯批註',
   /** Expand the editor to give more editing space */
   'inputs.portable-text.action.expand-editor': '展開編輯器',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
@@ -611,7 +611,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-inline-object-aria-label': '插入{{typeName}}（內聯）',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': '移除批註',
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': '點擊以啟動',
   /** Label for activate on focus with context of click and focused */
@@ -619,17 +619,17 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': '輕觸以啟動',
   /**Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': '批註物件',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '編輯{{schemaType}}',
   /** Title of the default "link" annotation */
-  'inputs.portable-text.annotation.link': '鏈接',
+  'inputs.portable-text.annotation.link': '連結',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': '塊物件',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': '編輯',
   /** Accessibility label for the button that opens the actions menu on blocks */
-  'inputs.portable-text.block.open-menu-aria-label': '打開菜單',
+  'inputs.portable-text.block.open-menu-aria-label': '打開選單',
   /** Label for action to open a reference, in the case of block-level reference types */
   'inputs.portable-text.block.open-reference': '打開參考',
   /** Label for action to remove a block item */
@@ -649,15 +649,15 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': '空的',
   /**Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': '內聯物件',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': '編輯物件',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': '編輯物件',
   /** Label for action to remove an inline object item */
   'inputs.portable-text.inline-object.remove': '移除物件',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': '移除物件',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
     '注意：執行上述操作通常是安全的，但如果您有疑問，請聯繫負責配置您工作室的相關人員。',
@@ -716,7 +716,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
     '鍵值為<code>{{key}}</code>的文字區塊有一個無效或缺失的`children`屬性。',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': '添加屬性',
+  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': '新增屬性',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description':
     '鍵值為<code>{{key}}</code>的文字區塊有一個無效或缺失的`markDefs`屬性。',
@@ -802,7 +802,7 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the document is unavailable (for any possible reason) */
   'inputs.reference.error.document-unavailable-title': '文檔不可用',
   /** Error title for when the referenced document failed to be loaded */
-  'inputs.reference.error.failed-to-load-document-title': '無法加載參考文檔',
+  'inputs.reference.error.failed-to-load-document-title': '無法讀取參考文檔',
   /** Error title for when the reference search returned a document that is not an allowed type for the field */
   'inputs.reference.error.invalid-search-result-type-title':
     '搜索返回的類型對此參考無效："{{returnedType}}"',
@@ -841,7 +841,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button that triggers a retry attempt for reference metadata  */
   'inputs.reference.metadata-error.retry-button-label': '重試',
   /** Title for alert shown when reference metadata fails to be loaded */
-  'inputs.reference.metadata-error.title': '無法加載參考元數據',
+  'inputs.reference.metadata-error.title': '無法讀取參考元數據',
   /** Message shown when no documents were found that matched the given search string */
   'inputs.reference.no-results-for-query': '沒有符合<strong>“{{searchTerm}}”</strong>的結果',
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
@@ -963,7 +963,7 @@ export default removeUndefinedLocaleResources({
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '篩選',
   /** Loading indicator text within the new document menu */
-  'new-document.loading': '加載中…',
+  'new-document.loading': '讀取中…',
   /** Accessibility label for the list displaying options in the new document menu */
   'new-document.new-document-aria-label': '新建文件',
   /** Message for when there are no document type options in the new document menu */
@@ -982,7 +982,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': '管理成員',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': '誰在這裡',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': '邀請人們到項目中來查看他們的在線狀態。',
@@ -990,6 +990,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': '沒有其他人在這裡',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': '不在文件中',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': '誰在這裡',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '無標題',
@@ -1004,7 +1006,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '打開搜索',
   /** Action label for adding a search filter */
-  'search.action.add-filter': '添加篩選器',
+  'search.action.add-filter': '新增篩選器',
   /** Action label for clearing search filters */
   'search.action.clear-filters': '清除篩選器',
   /** Label for action to clear recent searches */
@@ -1389,16 +1391,19 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '搜索結果',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': '配置狀態',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': '文檔歷史交易未受影響。',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': '檢索文檔更改時發生錯誤。',
   /** Error description for when the document doesn't have history */
-  'timeline.error.no-document-history-description': '更改文檔內容時，文檔版本將出現在此菜單中。',
+  'timeline.error.no-document-history-description': '更改文檔內容時，文檔版本將出現在此選單中。',
   /** Error title for when the document doesn't have history */
   'timeline.error.no-document-history-title': '沒有文檔歷史',
   /** Error prompt when revision cannot be loaded */
-  'timeline.error.unable-to-load-revision': '無法加載修訂版',
+  'timeline.error.unable-to-load-revision': '無法讀取修訂版',
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': '最新',
   /** Label for latest version for timeline menu dropdown */
@@ -1406,7 +1411,7 @@ export default removeUndefinedLocaleResources({
   /** The aria-label for the list of revisions in the timeline */
   'timeline.list.aria-label': '文檔修訂版',
   /** Label for loading history */
-  'timeline.loading-history': '正在加載歷史記錄…',
+  'timeline.loading-history': '正在讀取歷史記錄…',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '已創建',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1447,6 +1452,9 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': '自：未知版本',
 
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
+
   'user-menu.action.free-trial_other': '試用期還剩 {{count}} 天',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': '從免費版升級',
@@ -1467,7 +1475,7 @@ export default removeUndefinedLocaleResources({
   /** Title for appearance section for the current studio (dark / light / system scheme) */
   'user-menu.appearance-title': '外觀',
   /** Label for close menu button for user menu */
-  'user-menu.close-menu': '關閉菜單',
+  'user-menu.close-menu': '關閉選單',
   /** Description for using the "dark theme" in the appearance user menu */
   'user-menu.color-scheme.dark-description': '使用深色外觀',
   /** Title for using the "dark theme" in the appearance user menu */
@@ -1485,13 +1493,13 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip to show which provider the currently logged in user is using */
   'user-menu.login-provider': '已使用{{providerTitle}}登入',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': '開啟選單',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
    */
-  'workspaces.action.add-workspace': '添加工作區',
+  'workspaces.action.add-workspace': '新增工作區',
   /**
    * Label for action to choose a different workspace, in the case where you are not logged in,
    * have selected a workspace, and are faced with the authentication options for the selected
@@ -1506,7 +1514,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': '選擇工作區',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': '選擇工作區',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': '工作區',
 })

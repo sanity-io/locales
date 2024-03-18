@@ -1050,7 +1050,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Hallitse jäseniä',
-  /** Accessibility label for Avatar Stack */
+  /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kuka on paikalla',
   /** Message description for when no one else is currently present */
   'presence.no-one-else-description': 'Kutsu ihmisiä projektiin nähdäksesi heidän online-tilansa.',
@@ -1058,6 +1058,8 @@ export default removeUndefinedLocaleResources({
   'presence.no-one-else-title': 'Kukaan muu ei ole täällä',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Ei asiakirjassa',
+  /** Tooltip content text for presence menu button */
+  'presence.tooltip-content': 'Kuka on täällä',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Nimetön',
@@ -1505,6 +1507,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Hakutulokset',
 
+  /** Accessibility label for the navbar status button */
+  'status-button.aria-label': 'Konfiguraation tila',
+
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Asiakirjan historian transaktioita ei ole vaikuttanut.',
@@ -1564,6 +1569,9 @@ export default removeUndefinedLocaleResources({
   'timeline.since': 'Alkaen: {{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Alkaen: tuntematon versio',
+
+  /**Aria label for the action buttons in the PTE toolbar */
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} päivä jäljellä kokeiluajassa',

@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.3...locale-nb-no-v1.1.4) (2024-03-02)
+
+
+### Bug Fixes
+
+* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+
+## [1.1.3](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.2...locale-nb-no-v1.1.3) (2024-03-02)
+
+
+### Bug Fixes
+
+* **nb-NO:** translation updates ([#420](https://github.com/sanity-io/locales/issues/420)) ([3b74dad](https://github.com/sanity-io/locales/commit/3b74dad47adc68a6d174b81ec7aae08efff9bc64))
+
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.1...locale-nb-no-v1.1.2) (2024-02-26)
 
 

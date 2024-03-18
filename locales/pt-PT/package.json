@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-pt-pt",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "private": false,
   "description": "Portuguese / Português locale/translation for Sanity Studio",
   "keywords": [
@@ -26,6 +26,7 @@
       "url": "https://github.com/jrparente"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

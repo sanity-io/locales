@@ -316,16 +316,19 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Під час спроби зняти з публікації цей документ сталася помилка. Це зазвичай означає, що інші документи посилаються на нього.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Успішно виконано {{context}} над документом',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Документ було успішно видалено',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Усі зміни з моменту останньої публікації було скасовано. Відкинутий чернет можна відновити з історії',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Документ було опубліковано',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> було відновлено',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Документ було знято з публікації. Чернет було створено з останньої опублікованої версії.',

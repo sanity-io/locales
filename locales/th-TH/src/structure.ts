@@ -78,7 +78,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'เอกสารนี้ถูกลบแล้ว',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
+  'banners.deprecated-document-type-banner.text': 'ประเภทเอกสารนี้ไม่ได้ใช้งานแล้ว',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'บทบาท <Roles/> ของคุณไม่มีสิทธิ์ในการสร้างเอกสารนี้',
@@ -97,9 +97,9 @@ export default removeUndefinedLocaleResources({
     'ข้อมูลอ้างอิงนี้ถูกลบไปแล้วตั้งแต่คุณเปิดมัน',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  'browser-document-title.new-document': 'เอกสารใหม่ {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': undefined, // 'Untitled'
+  'browser-document-title.untitled-document': 'ไม่มีชื่อ',
 
   /** The action menu button aria-label */
   'buttons.action-menu-button.aria-label': 'เปิดการกระทำของเอกสาร',
@@ -201,7 +201,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'ไม่รู้จักประเภทสคีมา: {{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
-  'document-inspector.close-button.tooltip': undefined, // 'Close'
+  'document-inspector.close-button.tooltip': 'ปิด',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'กำลังตรวจสอบ <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
@@ -312,20 +312,23 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'เกิดข้อผิดพลาดขณะพยายามยกเลิกการเผยแพร่เอกสารนี้ ซึ่งโดยปกติหมายความว่ามีเอกสารอื่นที่อ้างอิงถึงมัน',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'ดำเนินการ {{context}} กับเอกสารสำเร็จ',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'เอกสารถูกลบเรียบร้อยแล้ว',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'การเปลี่ยนแปลงทั้งหมดนับตั้งแต่การเผยแพร่ครั้งล่าสุดได้ถูกทิ้งไปแล้ว ร่างที่ถูกทิ้งนี้ยังสามารถกู้คืนได้จากประวัติ',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'เอกสารได้รับการเผยแพร่',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> ได้รับการกู้คืนแล้ว',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'เอกสารได้รับการยกเลิกการเผยแพร่ ร่างใหม่ได้ถูกสร้างขึ้นจากเวอร์ชันที่เผยแพร่ล่าสุด',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'ไม่มีชื่อ',
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': 'การเชื่อมต่อขาดหาย กำลังเชื่อมต่อใหม่…',
   /** The loading message for the document not found pane */
@@ -361,9 +364,9 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'เปิดตัวอย่าง',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'บันทึกแล้ว',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'กำลังบันทึก...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
   'status-bar.publish-status-button.last-published-time.aria-label':
     'เผยแพร่ครั้งล่าสุด {{relativeTime}}',

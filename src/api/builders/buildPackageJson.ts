@@ -32,6 +32,7 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
     publishConfig: {
       access: 'public',
     },
+    sideEffects: false,
     scripts: {
       build: 'npm run clean && npm run pkg:build && npm run pkg:check',
       clean: 'rimraf dist',

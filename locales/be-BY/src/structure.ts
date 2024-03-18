@@ -318,16 +318,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'Падчас спробы зняць гэты дакумент з публікацыі адбылася памылка. Звычайна гэта азначае, што ёсць іншыя дакументы, якія на яго спасылаюцца.',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Паспяхова выканана {{context}} над дакументам',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Дакумент быў паспяхова выдалены',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Усе змены з моманту апошняй публікацыі былі адменены. Адхілены чарнавік яшчэ можна аднавіць з гісторыі',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Дакумент быў апублікаваны',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Дакумент быў зняты з публікацыі. Чарнавік быў створаны з апошняй апублікаванай версіі.',

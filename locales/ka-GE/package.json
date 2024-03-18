@@ -1,0 +1,63 @@
+{
+  "name": "@sanity/locale-ka-ge",
+  "version": "1.0.1",
+  "private": false,
+  "description": "Georgian / ქართული locale/translation for Sanity Studio",
+  "keywords": [
+    "sanity",
+    "i18n",
+    "locale",
+    "localization",
+    "ka-GE"
+  ],
+  "homepage": "https://github.com/sanity-io/locales#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/locales/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/locales.git",
+    "directory": "locales/ka-GE"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "TsotneDarjania",
+      "url": "https://github.com/TsotneDarjania"
+    }
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
+    "clean": "rimraf dist",
+    "pkg:build": "pkg build --strict",
+    "pkg:check": "pkg check --strict",
+    "prepublishOnly": "pnpm build"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "peerDependencies": {
+    "sanity": "^3.22.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

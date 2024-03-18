@@ -106,6 +106,7 @@ export const packageJsonSchema = z
     description: z.string(),
     private: z.boolean(),
     version: z.string(),
+    sideEffects: z.boolean().optional(),
     main: z.string(),
     license: z.string(),
     scripts: z.record(z.string()),
@@ -267,3 +268,45 @@ export const githubPrCommentSchema = z.object({
  * @internal
  */
 export const githubPrCommentsSchema = z.array(githubPrCommentSchema)
+
+/**
+ * A JSON representation of the autotranslate GitHub workflow,
+ * as defined in `.github/workflows/ai-translate.yml`
+ *
+ * @internal
+ */
+export const aiTranslateWorkflowSchema = z
+  .object({
+    name: z.string(),
+    on: z
+      .object({
+        // eslint-disable-next-line camelcase
+        workflow_dispatch: z
+          .object({
+            inputs: z.object({
+              locale: z
+                .object({
+                  type: z.literal('choice'),
+                  description: z.string().optional(),
+                  options: z.array(z.string()),
+                  default: z.string().optional(),
+                  required: z.boolean().optional(),
+                })
+                .passthrough(),
+              namespace: z
+                .object({
+                  type: z.literal('choice'),
+                  description: z.string().optional(),
+                  options: z.array(z.string()),
+                  default: z.string().optional(),
+                  required: z.boolean().optional(),
+                })
+                .passthrough()
+                .optional(),
+            }),
+          })
+          .passthrough(),
+      })
+      .passthrough(),
+  })
+  .passthrough()

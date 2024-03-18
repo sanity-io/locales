@@ -336,15 +336,18 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
     'このドキュメントの公開を取り消そうとした際にエラーが発生しました。これは通常、他のドキュメントがそれを参照していることを意味します。',
-  /** The text when a generic operation succeded (fallback, generally not shown)  */
+  /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'ドキュメントに{{context}}を成功させました',
-  /** The text when a delete operation succeded  */
+  /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'ドキュメントは正常に削除されました',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     '最後の公開以降のすべての変更が破棄されました。破棄されたドラフトは履歴から回復することができます',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'ドキュメントが公開されました',
+  /** The text when a restore operation succeeded  */
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong>が復元されました',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'ドキュメントの公開が取り消されました。最新の公開バージョンからドラフトが作成されました。',

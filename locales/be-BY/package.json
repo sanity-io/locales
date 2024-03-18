@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-be-by",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "private": false,
   "description": "Belarusian / Беларуская locale/translation for Sanity Studio",
   "keywords": [
@@ -30,6 +30,7 @@
       "url": "https://github.com/slawiko"
     }
   ],
+  "sideEffects": false,
   "type": "module",
   "exports": {
     ".": {

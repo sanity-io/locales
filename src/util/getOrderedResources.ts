@@ -1,3 +1,5 @@
+import {platform} from 'node:os'
+import {pathToFileURL} from 'node:url'
 import {getLocaleRegistry} from '../api/registry'
 import {resourcesSchema} from '../schemas'
 import type {
@@ -134,7 +136,8 @@ async function enrichWithBundles(
 
 async function loadNamespace(locale: Locale, namespace: string): Promise<NamespaceModule> {
   const filePath = await getNamespacePath(locale, namespace)
-  const mod = await import(filePath).catch((err) => {
+  const importPath = platform() === 'win32' ? pathToFileURL(filePath).href : filePath
+  const mod = await import(importPath).catch((err) => {
     if (err.code === 'ERR_MODULE_NOT_FOUND') {
       return {default: {}}
     }

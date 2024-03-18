@@ -1,6 +1,7 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 import OpenAI from 'openai'
+import pMap from 'p-map'
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
 import type {Locale, Resource} from '../types'
@@ -12,6 +13,21 @@ import {getLocaleRegistry} from './registry'
 const execFile = promisify(execFileCb)
 
 const OPENAI_MODEL = 'gpt-4-1106-preview'
+
+/**
+ * Memoized getter for the OpenAI API client
+ *
+ * @internal
+ */
+const getOpenAIApi = (() => {
+  let openai: OpenAI | null = null
+  return () => {
+    if (!openai) {
+      openai = new OpenAI()
+    }
+    return openai
+  }
+})()
 
 /**
  * Options for the auto translate operation
@@ -52,12 +68,20 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
   const {locales} = await getOrderedResources()
 
   // Filter out locales that are not requested
+  const targetLocaleIds = targetLocales?.map((id) => id.toLowerCase())
   const filteredLocales = locales.filter((locale) => {
-    return !targetLocales || targetLocales.includes(locale.id)
+    return !targetLocaleIds || targetLocaleIds.includes(locale.id.toLowerCase())
   })
 
-  let numTotalTranslated = 0
+  if (targetLocales && targetLocales.length !== filteredLocales.length) {
+    throw new Error(
+      `Could not find one or more of the requested locales: ${targetLocales.filter(
+        (locale) => !filteredLocales.find((l) => l.id === locale),
+      )}`,
+    )
+  }
 
+  let numTotalTranslated = 0
   for (const locale of filteredLocales) {
     const missingResources = await findMissingResources(locale)
     const localeName = locale.englishName || locale.name
@@ -75,8 +99,6 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         continue
       }
 
-      let numTranslatedInNamespace = 0
-
       // Group entry.missingKeys into max 25 keys per request
       const BATCH_SIZE = 25
       const batches = []
@@ -93,30 +115,45 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         batches.push(batch)
       }
 
-      // For each of the batches, translate the keys
-      for (const currentBatch of batches) {
-        const tpl = templateMissingResources(ns.indexedResources, currentBatch)
-        logger(
-          `[${locale.name}] Translating ${batches.indexOf(currentBatch) + 1}/${
-            batches.length
-          } key batches for namespace ${ns.namespace}`,
-        )
+      // For each of the batches, translate the keys (do X batches in parallel)
+      const numTranslatedInBatches = await pMap(
+        batches,
+        async function translateBatch(currentBatch, index) {
+          const tpl = templateMissingResources(ns.indexedResources, currentBatch)
+          logger(
+            `[${locale.name}] Translating ${index + 1}/${
+              batches.length
+            } key batches for namespace ${ns.namespace}`,
+          )
 
-        const translation = JSON.parse(await translateText(tpl, localeName))
+          const translation = JSON.parse(await translateText(tpl, localeName))
 
-        // Set the values from translation into the namespace
-        for (const key of currentBatch) {
-          const val = ns.indexedResources[key.key]
-          // eslint-disable-next-line max-depth
-          if (!val) {
-            continue
+          // Set the values from translation into the namespace
+          let batchTranslated = 0
+          for (const key of currentBatch) {
+            const val = ns.indexedResources[key.key]
+            // eslint-disable-next-line max-depth
+            if (!val) {
+              continue
+            }
+
+            const translated = translation[key.key]
+            if (!translated) {
+              logger(`[WARN] No translation returned for ${key.key}`)
+              continue
+            }
+
+            val.value = translation[key.key]
+            batchTranslated++
           }
 
-          val.value = translation[key.key]
-          numTotalTranslated++
-          numTranslatedInNamespace++
-        }
-      }
+          return batchTranslated
+        },
+        {concurrency: 3},
+      )
+
+      const numTranslatedInNamespace = numTranslatedInBatches.reduce((acc, val) => acc + val, 0)
+      numTotalTranslated += numTranslatedInNamespace
 
       // Only write back changes if there are actual changes
       if (numTranslatedInNamespace > 0) {
@@ -163,7 +200,7 @@ function templateMissingResources(
  */
 async function translateText(text: string, targetLanguage: string): Promise<string> {
   // Note: will thrown on missing environment variable
-  const openai = new OpenAI()
+  const openai = getOpenAIApi()
 
   if (text.trim() === '') {
     return JSON.stringify({})
