@@ -1061,7 +1061,7 @@ export default removeUndefinedLocaleResources({
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Ikkje i eit dokument',
   /** Tooltip content text for presence menu button */
-  'presence.tooltip-content': undefined, // 'Who is here'
+  'presence.tooltip-content': 'Kven er her',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Utan tittel',
@@ -1509,7 +1509,7 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': 'Søkjeresultat',
 
   /** Accessibility label for the navbar status button */
-  'status-button.aria-label': undefined, // 'Configuration status'
+  'status-button.aria-label': 'Konfigurasjonsstatus',
 
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
@@ -1573,7 +1573,7 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Sidan: ukjend versjon',
 
   /**Aria label for the action buttons in the PTE toolbar */
-  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag att i prøveperioden',
