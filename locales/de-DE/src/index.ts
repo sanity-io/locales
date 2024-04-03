@@ -5,13 +5,13 @@ const locale = defineLocale({
   title: 'Deutsch',
   bundles: [
     {
-      namespace: 'structure',
-      resources: () => import('./structure'),
+      namespace: 'comments',
+      resources: () => import('./comments'),
     },
 
     {
-      namespace: 'tasks',
-      resources: () => import('./tasks'),
+      namespace: 'structure',
+      resources: () => import('./structure'),
     },
 
     {
@@ -20,13 +20,13 @@ const locale = defineLocale({
     },
 
     {
-      namespace: 'validation',
-      resources: () => import('./validation'),
+      namespace: 'tasks',
+      resources: () => import('./tasks'),
     },
 
     {
-      namespace: 'comments',
-      resources: () => import('./comments'),
+      namespace: 'validation',
+      resources: () => import('./validation'),
     },
 
     {

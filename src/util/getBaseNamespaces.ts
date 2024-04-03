@@ -8,5 +8,5 @@ import {getBaseBundles} from './getBaseBundles'
  */
 export async function getBaseNamespaces(): Promise<string[]> {
   const base = await getBaseBundles()
-  return base.map((bundle) => bundle.namespace)
+  return base.map((bundle) => bundle.namespace).sort()
 }
