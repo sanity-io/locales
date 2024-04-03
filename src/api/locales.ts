@@ -1,4 +1,4 @@
-import {copyFile, mkdir} from 'node:fs/promises'
+import {copyFile, mkdir, readFile, writeFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
 import type {Locale} from '../types'
 import {getLocaleSourcePath} from '../util/getLocalesPath'
@@ -13,6 +13,7 @@ import {getLocaleRegistry} from './registry'
 import {reconcileResources} from './resources'
 
 export async function reconcileLocalePackages(): Promise<void> {
+  await writeRootLicense()
   const locales = await getLocaleRegistry()
   for (const locale of locales) {
     await reconcileLocalePackage(locale)
@@ -50,6 +51,14 @@ async function writePackageJson(locale: Locale) {
 async function writePkgConfig(locale: Locale) {
   const config = await buildPackageConfig()
   return writeFormattedFile(joinPath(locale.path, 'package.config.ts'), config)
+}
+
+async function writeRootLicense() {
+  const licensePath = joinPath(await getRootPath(), 'LICENSE')
+  const baseLicense = await readFile(licensePath, 'utf8')
+  const year = new Date().getFullYear()
+  const dstLicense = baseLicense.replace(/ 20\d\d Sanity/g, ` ${year} Sanity`)
+  return writeFile(licensePath, dstLicense, {encoding: 'utf8'})
 }
 
 async function writeLicense(locale: Locale) {
