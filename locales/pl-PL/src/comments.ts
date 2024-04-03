@@ -74,6 +74,11 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Dodaj komentarz',
 
+  /* The text shown in the inline comment button when the button is disabled due to overlap */
+  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  /** The text shown in the inline comment button */
+  'inline-add-comment-button.title': undefined, // 'Add comment'
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Przejdź do pola {{field}}',
   /** The button tooltip content for the add reaction button */
@@ -106,6 +111,8 @@ export default removeUndefinedLocaleResources({
   'list-item.layout-posting': 'Wysyłanie...',
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Ponów próbę',
+  /** The text shown when the value a comment references has been deleted */
+  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Otwórz menu akcji komentarza',
   /** The button text to re-open a resolved comment  */

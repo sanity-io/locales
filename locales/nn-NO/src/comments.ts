@@ -77,6 +77,11 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Legg til kommentar',
 
+  /* The text shown in the inline comment button when the button is disabled due to overlap */
+  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  /** The text shown in the inline comment button */
+  'inline-add-comment-button.title': undefined, // 'Add comment'
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}} felt',
   /** The button tooltip content for the add reaction button */
@@ -109,6 +114,8 @@ export default removeUndefinedLocaleResources({
   'list-item.layout-posting': 'Postar...',
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Prøv igjen',
+  /** The text shown when the value a comment references has been deleted */
+  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Opne kommentarhandlingsmeny',
   /** The button text to re-open a resolved comment  */

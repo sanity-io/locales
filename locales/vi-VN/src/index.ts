@@ -10,6 +10,11 @@ const locale = defineLocale({
     },
 
     {
+      namespace: 'tasks',
+      resources: () => import('./tasks'),
+    },
+
+    {
       namespace: 'studio',
       resources: () => import('./studio'),
     },
