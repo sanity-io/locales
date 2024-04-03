@@ -2,119 +2,122 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'สร้างงานใหม่',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'งาน',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'สร้างงาน',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'ยกเลิก',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'ร่าง',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'งานใหม่',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'ไปยังงานถัดไป',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'ไปยังงานก่อนหน้า',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Are you sure you want to delete this task?'
+  'dialog.remove-task.body': 'คุณแน่ใจหรือไม่ว่าต้องการลบงานนี้?',
   /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': undefined, // 'Once deleted, it cannot be restored.'
+  'dialog.remove-task.body2': 'เมื่อลบแล้วจะไม่สามารถกู้คืนได้',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'ยกเลิก',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Remove'
+  'dialog.remove-task.buttons.confirm.text': 'ลบ',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Remove task'
+  'dialog.remove-task.title': 'ลบงาน',
 
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'เปิดงาน',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} งานที่เปิดอยู่',
 
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
-  'empty-state.list.create-new': undefined, // 'Create new task'
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
-  'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
-  'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
-  'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
-  'empty-state.status.list.closed.subscribed.text': undefined, // 'Tasks you subscribe to marked done will show up here'
-  'empty-state.status.list.open.assigned.heading': undefined, // 'You\'re all caught up'
-  'empty-state.status.list.open.assigned.text': undefined, // 'New tasks assigned to you will show up here'
-  'empty-state.status.list.open.document.heading': undefined, // 'No tasks on this document'
-  'empty-state.status.list.open.subscribed.heading': undefined, // 'No subscribed tasks'
-  'empty-state.status.list.open.subscribed.text': undefined, // 'Tasks you subscribe to will show up here'
+  'empty-state.list.assigned.heading': 'คุณยังไม่ได้รับมอบหมายงานใดๆ',
+  'empty-state.list.assigned.text': 'เมื่อคุณได้รับมอบหมายงาน พวกเขาจะปรากฏที่นี่',
+  'empty-state.list.create-new': 'สร้างงานใหม่',
+  'empty-state.list.document.heading': 'เอกสารนี้ยังไม่มีงานใดๆ',
+  'empty-state.list.document.text': 'เมื่อเอกสารมีงานที่เชื่อมต่อกัน พวกเขาจะถูกแสดงที่นี่',
+  'empty-state.list.subscribed.heading': 'คุณยังไม่ได้สมัครรับข้อมูลงานใดๆ',
+  'empty-state.list.subscribed.text':
+    'เมื่อคุณสร้าง แก้ไข หรือแสดงความคิดเห็นเกี่ยวกับงาน คุณจะถูกสมัครรับข้อมูลโดยอัตโนมัติ',
+  'empty-state.status.list.closed.assigned.heading': 'ไม่มีงานที่เสร็จสมบูรณ์',
+  'empty-state.status.list.closed.assigned.text':
+    'งานของคุณที่ทำเครื่องหมายว่าเสร็จสิ้นจะปรากฏที่นี่',
+  'empty-state.status.list.closed.document.heading': 'ไม่มีงานที่เสร็จสมบูรณ์',
+  'empty-state.status.list.closed.subscribed.heading': 'ไม่มีงานที่เสร็จสิ้น',
+  'empty-state.status.list.closed.subscribed.text':
+    'งานที่คุณติดตามและทำเครื่องหมายว่าเสร็จสิ้นจะปรากฏที่นี่',
+  'empty-state.status.list.open.assigned.heading': 'คุณทำงานเสร็จหมดแล้ว',
+  'empty-state.status.list.open.assigned.text': 'งานใหม่ที่มอบหมายให้คุณจะปรากฏที่นี่',
+  'empty-state.status.list.open.document.heading': 'ไม่มีงานในเอกสารนี้',
+  'empty-state.status.list.open.subscribed.heading': 'ไม่มีงานที่ติดตาม',
+  'empty-state.status.list.open.subscribed.text': 'งานที่คุณติดตามจะปรากฏที่นี่',
 
   /** Text used in the assignee input when there is no user assigned */
-  'form.input.assignee.no-user-assigned.text': undefined, // 'Not assigned'
+  'form.input.assignee.no-user-assigned.text': 'ไม่ได้มอบหมาย',
   /** Text used in the assignee input when searching and no users are found */
-  'form.input.assignee.search.no-users.text': undefined, // 'No users found'
+  'form.input.assignee.search.no-users.text': 'ไม่พบผู้ใช้',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': undefined, // 'Select username'
+  'form.input.assignee.search.placeholder': 'เลือกชื่อผู้ใช้',
   /** Text used in the assignee input when user is not authorized */
-  'form.input.assignee.unauthorized.text': undefined, // 'Unauthorized'
+  'form.input.assignee.unauthorized.text': 'ไม่ได้รับอนุญาต',
   /** Text used in the assignee input when user is not found */
-  'form.input.assignee.user-not-found.text': undefined, // 'User not found'
+  'form.input.assignee.user-not-found.text': 'ไม่พบผู้ใช้',
   /** The label used in the create more toggle */
-  'form.input.create-more.text': undefined, // 'Create more'
+  'form.input.create-more.text': 'สร้างเพิ่มเติม',
   /** The label used in the date input to remove the current value */
-  'form.input.date.buttons.remove.text': undefined, // 'Remove'
+  'form.input.date.buttons.remove.text': 'ลบออก',
   /** Placeholder text used in the description input */
-  'form.input.description.placeholder': undefined, // 'Add description'
+  'form.input.description.placeholder': 'เพิ่มคำอธิบาย',
   /** The label used in the target input to remove the current value */
-  'form.input.target.buttons.remove.text': undefined, // 'Remove target content'
+  'form.input.target.buttons.remove.text': 'ลบเนื้อหาเป้าหมาย',
   /** The text used in the target input when encountering a schema error */
-  'form.input.target.error.schema-not-found': undefined, // 'Schema not found'
+  'form.input.target.error.schema-not-found': 'ไม่พบสคีมา',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': undefined, // 'Select document'
+  'form.input.target.search.placeholder': 'เลือกเอกสาร',
   /** The placeholder text for the title input */
-  'form.input.title.placeholder': undefined, // 'Task title'
+  'form.input.title.placeholder': 'ชื่องาน',
   /** The status error message presented when the user does not supply a title */
-  'form.status.error.title-required': undefined, // 'Title is required'
+  'form.status.error.title-required': 'ต้องการชื่อ',
   /** The status message upon successful creation of a task */
-  'form.status.success': undefined, // 'Task created'
+  'form.status.success': 'สร้างงานเสร็จสิ้น',
 
   /** The text displayed when no tasks are found */
-  'list.empty.text': undefined, // 'No tasks'
+  'list.empty.text': 'ไม่มีงาน',
 
   /** The label for the copy link menu item */
-  'menuitem.copylink.text': undefined, // 'Copy link to task'
+  'menuitem.copylink.text': 'คัดลอกลิงก์ไปยังงาน',
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'ลบงาน',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'ทำซ้ำงาน',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'สร้างงานนี้',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'กิจกรรม',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'ผู้ใช้ไม่ทราบชื่อ',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'ปิดแถบด้านข้าง',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'เพิ่มความคิดเห็น...',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'สร้าง',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'ร่าง',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'เปิดงาน',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'งาน',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'ที่ได้รับมอบหมาย',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'เอกสารที่กำลังใช้งาน',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'ที่ติดตาม',
 })
