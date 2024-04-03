@@ -74,9 +74,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': '댓글 추가',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': '댓글이 겹칠 수 없습니다',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': '댓글 추가',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} 필드로 이동',
@@ -111,7 +111,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': '재시도',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': '댓글이 달린 텍스트가 삭제되었습니다',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': '댓글 작업 메뉴 열기',
   /** The button text to re-open a resolved comment  */
