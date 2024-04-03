@@ -3,6 +3,7 @@
     "paths": {
       "@sanity/locale-be-by": ["../../locales/be-BY/src"],
       "@sanity/locale-cs-cz": ["../../locales/cs-CZ/src"],
+      "@sanity/locale-da-dk": ["../../locales/da-DK/src"],
       "@sanity/locale-de-de": ["../../locales/de-DE/src"],
       "@sanity/locale-es-es": ["../../locales/es-ES/src"],
       "@sanity/locale-fi-fi": ["../../locales/fi-FI/src"],

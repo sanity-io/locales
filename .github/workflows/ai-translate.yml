@@ -9,6 +9,7 @@ name: AI translate
           - ALL
           - be-BY
           - cs-CZ
+          - da-DK
           - de-DE
           - es-ES
           - fi-FI
