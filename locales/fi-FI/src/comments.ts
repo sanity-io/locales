@@ -76,9 +76,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'Lisää kommentti',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': 'Kommentit eivät voi mennä päällekkäin',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': 'Lisää kommentti',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Mene kenttään {{field}}',
@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Yritä uudelleen',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': 'Kommentoitu teksti on poistettu',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Avaa kommentin toimintovalikko',
   /** The button text to re-open a resolved comment  */
