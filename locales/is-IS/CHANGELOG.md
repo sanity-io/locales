@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-is-is-v1.1.3...locale-is-is-v1.1.4) (2024-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+* **is-IS:** automated translation updates ([#449](https://github.com/sanity-io/locales/issues/449)) ([ac70462](https://github.com/sanity-io/locales/commit/ac704621ad6274d9c2f3e753de74c8c04c564842))
+
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-is-is-v1.1.2...locale-is-is-v1.1.3) (2024-03-02)
 
 

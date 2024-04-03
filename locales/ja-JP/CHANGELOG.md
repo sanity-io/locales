@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.3...locale-ja-jp-v1.1.4) (2024-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+* **ja-JP:** automated translation updates ([#451](https://github.com/sanity-io/locales/issues/451)) ([8362c69](https://github.com/sanity-io/locales/commit/8362c695e43141b6e16b29aef5679120cbadf653))
+
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.2...locale-ja-jp-v1.1.3) (2024-03-02)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.5...locale-nn-no-v1.1.6) (2024-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+
 ## [1.1.5](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.4...locale-nn-no-v1.1.5) (2024-03-18)
 
 
