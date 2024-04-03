@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.3](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.2...locale-th-th-v1.1.3) (2024-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+* **th-TH:** automated translation updates ([#465](https://github.com/sanity-io/locales/issues/465)) ([51c914d](https://github.com/sanity-io/locales/commit/51c914dc17377f06c139be849920179819fc2925))
+* **th-TH:** remove maintainer that disappeared from github ([8673ca4](https://github.com/sanity-io/locales/commit/8673ca481a10bbb391dcdb0afd718cc55795ccf3))
+
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.1...locale-th-th-v1.1.2) (2024-03-02)
 
 

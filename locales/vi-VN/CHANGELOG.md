@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.3...locale-vi-vn-v1.1.4) (2024-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+* **vi-VN:** automated translation updates ([#469](https://github.com/sanity-io/locales/issues/469)) ([de1adfd](https://github.com/sanity-io/locales/commit/de1adfd363a7c88fb85daaa9b22f8d4ccb09e9bf))
+
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.2...locale-vi-vn-v1.1.3) (2024-03-02)
 
 
