@@ -199,7 +199,7 @@ importers:
         specifier: workspace:*
         version: link:../../locales/zh-Hant
       '@sanity/ui':
-        specifier: ^2.0.7
+        specifier: ^2.0.14
         version: 2.0.14(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.8)
       '@sanity/vision':
         specifier: ^3.36.4
