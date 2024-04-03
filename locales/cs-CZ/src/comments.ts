@@ -76,9 +76,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'Přidat komentář',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': 'Komentáře se nemohou překrývat',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': 'Přidat komentář',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Přejít na pole {{field}}',
@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Zkusit znovu',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': 'Komentovaný text byl smazán',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Otevřít menu akcí komentáře',
   /** The button text to re-open a resolved comment  */
