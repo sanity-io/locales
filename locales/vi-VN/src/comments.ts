@@ -75,9 +75,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'Thêm bình luận',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': 'Không thể chồng chéo bình luận',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': 'Thêm bình luận',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Đi đến trường {{field}}',
@@ -112,7 +112,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Thử lại',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': 'Đoạn văn bản đã bình luận đã bị xóa',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Mở menu hành động bình luận',
   /** The button text to re-open a resolved comment  */
