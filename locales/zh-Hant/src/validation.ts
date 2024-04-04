@@ -1,4 +1,4 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': '需要圖片',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
-  'object.not-reference': '必須是對文檔的引用',
+  'object.not-reference': '必須是對文件的引用',
   /** Object references a document which is not published */
-  'object.reference-not-published': '引用的文檔必須已發布',
+  'object.reference-not-published': '引用的文件必須已發布',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': '關閉驗證',

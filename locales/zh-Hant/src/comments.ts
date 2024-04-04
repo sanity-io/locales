@@ -1,4 +1,4 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The close comments button text */
@@ -124,7 +124,7 @@ export default removeUndefinedLocaleResources({
   'list-item.resolved-tooltip-content': '標記為已解決',
 
   /** The empty state text for open comments */
-  'list-status.empty-state-open-text': '這個文檔上的公開評論將顯示在這裡。',
+  'list-status.empty-state-open-text': '文件上的公開評論將在這裡顯示。',
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': '還沒有開放的評論',
   /** The empty state text for resolved comments */

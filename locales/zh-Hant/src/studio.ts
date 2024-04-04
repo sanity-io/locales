@@ -1,4 +1,4 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Menu item for deleting the asset */
@@ -98,17 +98,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero': '沒有文件正在使用這張圖片',
 
   /** Action message for navigating to next month */
-  'calendar.action.go-to-next-month': '前往下個月',
+  'calendar.action.go-to-next-month': '切換到下個月',
   /** Action message for navigating to next year */
-  'calendar.action.go-to-next-year': '前往下一年',
+  'calendar.action.go-to-next-year': '切換到下一年',
   /** Action message for navigating to previous month */
-  'calendar.action.go-to-previous-month': '前往上個月',
+  'calendar.action.go-to-previous-month': '切換到上個月',
   /** Action message for navigating to previous year */
-  'calendar.action.go-to-previous-year': '前往上一年',
+  'calendar.action.go-to-previous-year': '切換到上一年',
   /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '今天',
   /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
-  'calendar.action.go-to-today-aria-label': '前往今天',
+  'calendar.action.go-to-today-aria-label': '回到今天',
   /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '明天',
   /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
@@ -165,7 +165,7 @@ export default removeUndefinedLocaleResources({
   'calendar.weekday-names.short.wednesday': '週三',
 
   /** Label for the close button label in Review Changes pane */
-  'changes.action.close-label': '關閉修改審查',
+  'changes.action.close-label': '關閉改動回顧',
   /** Cancel label for revert button prompt action */
   'changes.action.revert-all-cancel': '取消',
   /** Revert all confirm label for revert button action - used on prompt button + review changes pane */
@@ -177,19 +177,19 @@ export default removeUndefinedLocaleResources({
   /** Label for when the action of the change was to set something that was previously empty, eg a field was given a value, an array item was added, an asset was selected or similar */
   'changes.added-label': '已新增',
   /** Array diff: An item was added in a given position (`{{position}}`) */
-  'changes.array.item-added-in-position': '在位置 {{position}} 新增',
-  'changes.array.item-moved_down_other': '向下移動 {{count}} 個位置',
-  'changes.array.item-moved_up_other': '向上移動 {{count}} 個位置',
+  'changes.array.item-added-in-position': '在第 {{position}} 位新增',
+  'changes.array.item-moved_down_other': '向下移動 {{count}} 位',
+  'changes.array.item-moved_up_other': '向上移動 {{count}} 位',
   /** Array diff: An item was removed from a given position (`{{position}}`) */
-  'changes.array.item-removed-from-position': '從位置 {{position}} 移除',
+  'changes.array.item-removed-from-position': '從第 {{position}} 位移除',
   /** Accessibility label for the "change bar" shown when there are edits on a field-level */
   'changes.change-bar.aria-label': '審查更改',
   /** Label for when the action of the change was _not_ an add/remove, eg a text field changed value, an image was changed from one asset to another or similar */
   'changes.changed-label': '已更改',
   /** Label and text for tooltip that indicates the authors of the changes */
-  'changes.changes-by-author': '更改者',
+  'changes.changes-by-author': '更改人',
   /** Additional text shown in development mode when a diff component crashes during rendering */
-  'changes.error-boundary.developer-info': '檢查開發者控制台以獲取更多信息',
+  'changes.error-boundary.developer-info': '要獲取更多訊息，請檢視開發者控制台',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '渲染此字段的更改時發生錯誤',
   /** Error message shown when the value of a field is not the expected one */
@@ -198,7 +198,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': '無標題',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
-  'changes.image.crop-changed': '裁剪已更改',
+  'changes.image.crop-changed': '已更新裁切',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
   'changes.image.deleted': '圖片已刪除',
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
@@ -223,7 +223,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': '正在讀取更改…',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
-    '編輯文檔或在時間線中選擇較舊的版本，以在此面板中看到更改列表。',
+    '編輯文件或在時間線中選擇較舊的版本，以在此面板中看到更改列表。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '沒有更改',
   /** Portable Text diff: An annotation was added */
@@ -267,7 +267,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '已移除',
   /** Title for the Review Changes pane */
-  'changes.title': '審查變更',
+  'changes.title': '回顧改動',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -507,9 +507,9 @@ export default removeUndefinedLocaleResources({
     '{{count}} 個檔案無法在此上傳',
   'inputs.files.common.placeholder.cannot-upload-some-files_other': '無法上傳 {{count}} 個檔案',
   /** Drag or paste type here */
-  'inputs.files.common.placeholder.drag-or-paste-to-upload_file': '拖曳或貼上檔案到這裡',
+  'inputs.files.common.placeholder.drag-or-paste-to-upload_file': '把檔案在這裡拖曳或貼上',
   /** Drag or paste image here */
-  'inputs.files.common.placeholder.drag-or-paste-to-upload_image': '拖曳或貼上圖片到這裡',
+  'inputs.files.common.placeholder.drag-or-paste-to-upload_image': '把圖片在這裡拖曳或貼上',
   /** Drop to upload file */
   'inputs.files.common.placeholder.drop-to-upload_file': '拖放以上傳檔案',
   /** Drop to upload image */
@@ -526,7 +526,7 @@ export default removeUndefinedLocaleResources({
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '未完成的上傳',
   /** Tooltip text for action to crop image */
-  'inputs.image.actions-menu.crop-image-tooltip': '裁剪圖片',
+  'inputs.image.actions-menu.crop-image-tooltip': '裁切圖片',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '開啟圖片編輯對話框',
   /** Accessibility label for button to open image options menu */
@@ -542,7 +542,7 @@ export default removeUndefinedLocaleResources({
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '未知的成員類型：{{kind}}',
   /** Edit hotspot and crop */
-  'inputs.image.hotspot-dialog.title': '編輯熱點和裁剪',
+  'inputs.image.hotspot-dialog.title': '編輯熱點和裁切',
   /** The value of this field is not a valid image. Resetting this field will let you choose a new image. */
   'inputs.image.invalid-image-warning.description':
     '此欄位的值不是有效的圖片。重置此欄位將讓您選擇新圖片。',
@@ -557,11 +557,11 @@ export default removeUndefinedLocaleResources({
   /** Upload failed */
   'inputs.image.upload-error.title': '上傳失敗',
   /** Adjust the rectangle to crop image. Adjust the circle to specify the area that should always be visible. */
-  'inputs.imagetool.description': '調整矩形以裁剪圖片。調整圓圈以指定應始終可見的區域。',
+  'inputs.imagetool.description': '以調整矩形進行圖片裁切；以調整圓圈指定一定可見的區域。',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': '錯誤：{{errorMessage}}',
   /** Hotspot & Crop */
-  'inputs.imagetool.title': '熱點 & 裁剪',
+  'inputs.imagetool.title': '熱點 & 裁切',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '轉換為<code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -780,7 +780,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to duplicate the current item to a new item (used within arrays) */
   'inputs.reference.action.duplicate': '複製',
   /** Label for action that opens the referenced document in a new tab */
-  'inputs.reference.action.open-in-new-tab': '在新標籤頁中打開',
+  'inputs.reference.action.open-in-new-tab': '在新頁籤打開',
   /** Label for action to remove the reference from an array */
   'inputs.reference.action.remove': '移除',
   /** Label for action to replace the current value of the field */
@@ -789,35 +789,35 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.action.replace-cancel': '取消替換',
   /** The cross-dataset reference field currently has a reference, but the feature has been disabled since it was created. This explains what can/cannot be done in its current state. */
   'inputs.reference.cross-dataset.feature-disabled-actions':
-    '您仍然可以清除此欄位的現有參考，但只要功能被禁用，就無法將其更改為不同的文檔。',
+    '您仍然可以清除此欄位的現有參考，但只要功能被禁用，就無法將其更改為不同的文件。',
   /** A cross-dataset reference field exists but the feature has been disabled. A <DocumentationLink> component is available. */
   'inputs.reference.cross-dataset.feature-disabled-description':
-    '此功能已被禁用。閱讀如何在<DocumentationLink>文檔</DocumentationLink>中啟用它。',
+    '此功能已被禁用。閱讀如何在<DocumentationLink>文件</DocumentationLink>中啟用它。',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
   'inputs.reference.cross-dataset.feature-unavailable-title': '不可用功能：跨數據集參考',
   /** The cross-dataset reference points to a document with an invalid type  */
-  'inputs.reference.cross-dataset.invalid-type': '參考的文檔類型無效 ({{typeName}}) <JsonValue/>',
+  'inputs.reference.cross-dataset.invalid-type': '參考的文件類型無效 ({{typeName}}) <JsonValue/>',
   /** The referenced document will open in a new tab (due to external studio) */
-  'inputs.reference.document-opens-in-new-tab': '此文檔將在新標籤頁中打開',
+  'inputs.reference.document-opens-in-new-tab': '此文件將在新頁籤打開',
   /** Error title for when the document is unavailable (for any possible reason) */
-  'inputs.reference.error.document-unavailable-title': '文檔不可用',
+  'inputs.reference.error.document-unavailable-title': '文件不可用',
   /** Error title for when the referenced document failed to be loaded */
-  'inputs.reference.error.failed-to-load-document-title': '無法讀取參考文檔',
+  'inputs.reference.error.failed-to-load-document-title': '無法讀取參考文件',
   /** Error title for when the reference search returned a document that is not an allowed type for the field */
   'inputs.reference.error.invalid-search-result-type-title':
     '搜索返回的類型對此參考無效："{{returnedType}}"',
   /** Error description for when the document referenced is not one of the types declared as allowed target types in schema */
   'inputs.reference.error.invalid-type-description':
-    '參考文檔（<code>{{documentId}}</code>）的類型為<code>{{actualType}}</code>。根據模式，參考文檔只能是<AllowedTypes />類型。',
+    '參考文件（<code>{{documentId}}</code>）的類型為<code>{{actualType}}</code>。根據模式，參考文件只能是<AllowedTypes />類型。',
   /** Error title for when the document referenced is not one of the types declared as allowed target types in schema */
-  'inputs.reference.error.invalid-type-title': '文檔類型無效',
+  'inputs.reference.error.invalid-type-title': '文件類型無效',
   /** Error description for when the user does not have permissions to read the referenced document */
-  'inputs.reference.error.missing-read-permissions-description': '由於權限不足，無法訪問參考文檔',
+  'inputs.reference.error.missing-read-permissions-description': '由於權限不足，無法訪問參考文件',
   /** Error title for when the user does not have permissions to read the referenced document */
   'inputs.reference.error.missing-read-permissions-title': '權限不足',
   /** Error description for when the current reference value points to a document that does not exist (on weak references) */
   'inputs.reference.error.nonexistent-document-description':
-    '參考的文檔不存在（ID：<code>{{documentId}}</code>）。您可以選擇移除參考或用另一個文檔替換。',
+    '參考的文件不存在（ID：<code>{{documentId}}</code>）。您可以選擇移除參考或用另一個文件替換。',
   /** Error title for when the current reference value points to a document that does not exist (on weak references) */
   'inputs.reference.error.nonexistent-document-title': '未找到',
   /** Label for button that clears the reference when it points to a document that does not exist (on weak references) */
@@ -845,7 +845,7 @@ export default removeUndefinedLocaleResources({
   /** Message shown when no documents were found that matched the given search string */
   'inputs.reference.no-results-for-query': '沒有符合<strong>“{{searchTerm}}”</strong>的結果',
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
-  'inputs.reference.preview.edited-at-time': '編輯於<RelativeTime/>',
+  'inputs.reference.preview.edited-at-time': '<RelativeTime/>編輯',
   /** Accessibility label for icon indicating that document does _not_ have any unpublished changes */
   'inputs.reference.preview.has-no-unpublished-changes-aria-label': '沒有未發布的編輯',
   /** Accessibility label for icon indicating that document has unpublished changes */
@@ -859,7 +859,7 @@ export default removeUndefinedLocaleResources({
   /** Text for tooltip indicating that a document has not yet been published */
   'inputs.reference.preview.not-published': '未發布',
   /** Text for tooltip showing when a document was published, using relative time (eg "how long ago was it published?") */
-  'inputs.reference.preview.published-at-time': '發布於<RelativeTime/>',
+  'inputs.reference.preview.published-at-time': '<RelativeTime/>發布',
   /** The referenced document no longer exist and might have been deleted (for weak references) */
   'inputs.reference.referenced-document-does-not-exist':
     '參考的文件不再存在，可能已被刪除（文件ID：<code>{{documentId}}</code>）。',
@@ -878,7 +878,7 @@ export default removeUndefinedLocaleResources({
     '此參考是<em>強</em>的，但根據當前架構它應該是<em>弱</em>的。',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
   'inputs.reference.strength-mismatch.is-weak-consquences':
-    '這使得可以在不先刪除此參考的情況下刪除被參考的文檔，留下此欄位參考一個不存在的文檔。',
+    '這使得可以在不先刪除此參考的情況下刪除被參考的文件，留下此欄位參考一個不存在的文件。',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
   'inputs.reference.strength-mismatch.is-weak-description':
     '這個參考是<em>弱</em>的，但根據當前架構它應該是<em>強</em>的。',
@@ -910,7 +910,7 @@ export default removeUndefinedLocaleResources({
   /** The following types are valid here according to schema: */
   'inputs.untyped-value.details.multi-type-description': '根據架構，以下類型在這裡是有效的：',
   /** Developer info */
-  'inputs.untyped-value.details.title': '開發者信息',
+  'inputs.untyped-value.details.title': '開發者訊息',
   /** Property value missing <code>_type</code> */
   'inputs.untyped-value.title': '屬性值缺少<code>_type</code>',
   /** Unset value */
@@ -920,28 +920,28 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation': '您沒有權限訪問此功能。',
   /** The explanation when unable to create any document at all */
   'insufficient-permissions-message.not-authorized-explanation_create-any-document':
-    '您沒有權限創建文檔。',
+    '您沒有權限創建文件。',
   /** The explanation when unable to create a particular document */
   'insufficient-permissions-message.not-authorized-explanation_create-document':
-    '您沒有權限創建此文檔。',
+    '您沒有權限創建此文件。',
   /** The explanation when unable to create a particular type of document */
   'insufficient-permissions-message.not-authorized-explanation_create-document-type':
-    '您沒有權限創建這種類型的文檔。',
+    '您沒有權限創建這種類型的文件。',
   /** The explanation when unable to create a new reference in a document */
   'insufficient-permissions-message.not-authorized-explanation_create-new-reference':
     '您沒有權限創建新的參考。',
   /** The explanation when unable to delete a particular document */
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
-    '您沒有權限刪除此文檔。',
+    '沒有刪除此文件的權限。',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
-    '您沒有權限在此文檔中放棄更改。',
+    '沒有捨棄更改此文件的權限。',
   /** The explanation when unable to duplicate a particular document */
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
-    '您沒有權限複製此文檔。',
+    '沒有複製此文件的權限。',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
-    '您沒有權限發布此文檔。',
+    '沒有發布此文件的權限。',
   /** The explanation when unable to unpublish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_unpublish-document':
     '您沒有權限取消發布此文件。',
@@ -985,9 +985,9 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for presence menu button */
   'presence.aria-label': '誰在這裡',
   /** Message description for when no one else is currently present */
-  'presence.no-one-else-description': '邀請人們到項目中來查看他們的在線狀態。',
+  'presence.no-one-else-description': '邀請成員到項目中，即可查看是否在線上。',
   /** Message title for when no one else is currently present */
-  'presence.no-one-else-title': '沒有其他人在這裡',
+  'presence.no-one-else-title': '只有你在這',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': '不在文件中',
   /** Tooltip content text for presence menu button */
@@ -1395,13 +1395,13 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': '配置狀態',
 
   /** Description for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-description': '文檔歷史交易未受影響。',
+  'timeline.error.load-document-changes-description': '文件歷史交易未受影響。',
   /** Title for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-title': '檢索文檔更改時發生錯誤。',
+  'timeline.error.load-document-changes-title': '檢索文件更改時發生錯誤。',
   /** Error description for when the document doesn't have history */
-  'timeline.error.no-document-history-description': '更改文檔內容時，文檔版本將出現在此選單中。',
+  'timeline.error.no-document-history-description': '更改文件內容時，文件版本將出現在此選單中。',
   /** Error title for when the document doesn't have history */
-  'timeline.error.no-document-history-title': '沒有文檔歷史',
+  'timeline.error.no-document-history-title': '沒有文件歷史',
   /** Error prompt when revision cannot be loaded */
   'timeline.error.unable-to-load-revision': '無法讀取修訂版',
   /** Label for when the timeline item is the latest in the history */
@@ -1409,15 +1409,15 @@ export default removeUndefinedLocaleResources({
   /** Label for latest version for timeline menu dropdown */
   'timeline.latest-version': '最新版本',
   /** The aria-label for the list of revisions in the timeline */
-  'timeline.list.aria-label': '文檔修訂版',
+  'timeline.list.aria-label': '文件修訂版',
   /** Label for loading history */
   'timeline.loading-history': '正在讀取歷史記錄…',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': '已創建',
+  'timeline.operation.created': '創建',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
   'timeline.operation.created_timestamp': '創建時間：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': '已創建',
+  'timeline.operation.created-initial': '創建',
   /** Label shown in review changes timeline when a document was initially created, with a timestamp */
   'timeline.operation.created-initial_timestamp': '創建時間：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
@@ -1425,11 +1425,11 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '刪除時間：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': '已丟棄草稿',
+  'timeline.operation.draft-discarded': '已捨棄草稿',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
-  'timeline.operation.draft-discarded_timestamp': '丟棄草稿時間：{{timestamp, datetime}}',
+  'timeline.operation.draft-discarded_timestamp': '捨棄草稿時間：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': '已編輯',
+  'timeline.operation.edited-draft': '編輯',
   /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
   'timeline.operation.edited-draft_timestamp': '編輯時間：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
