@@ -49,11 +49,11 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.subscribed.text':
     'Når du oppretter, endrer eller kommenterer på en oppgave, vil du automatisk bli abonnert',
   'empty-state.status.list.closed.assigned.heading': 'Ingen fullførte oppgaver',
-  'empty-state.status.list.closed.assigned.text': 'Oppgavene dine merket som utført vil vises her',
+  'empty-state.status.list.closed.assigned.text': 'Oppgavene dine merket som fullført vil vises her',
   'empty-state.status.list.closed.document.heading': 'Ingen fullførte oppgaver',
   'empty-state.status.list.closed.subscribed.heading': 'Ingen fullførte oppgaver',
   'empty-state.status.list.closed.subscribed.text':
-    'Oppgaver du abonnerer på som er merket som utført vil vises her',
+    'Oppgaver du abonnerer på som er merket som fullført vil vises her',
   'empty-state.status.list.open.assigned.heading': 'Du er helt ajour',
   'empty-state.status.list.open.assigned.text': 'Nye oppgaver tildelt deg vil vises her',
   'empty-state.status.list.open.document.heading': 'Ingen oppgaver på dette dokumentet',
@@ -108,7 +108,7 @@ export default removeUndefinedLocaleResources({
   /** The tooltip for the close button for the task panel */
   'panel.close.tooltip': 'Lukk sidefelt',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': 'Legg til en kommentar...',
+  'panel.comment.placeholder': 'Legg til en kommentar…',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Opprett',
   /** The title used in the drafts pulldown */
