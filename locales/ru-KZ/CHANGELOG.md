@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.3...locale-ru-kz-v1.1.4) (2024-04-05)
+
+
+### Bug Fixes
+
+* **ru-KZ:** automated translation updates ([#461](https://github.com/sanity-io/locales/issues/461)) ([c62ef33](https://github.com/sanity-io/locales/commit/c62ef33acf1795cd7159dd3a401021e373f8427c))
+
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.2...locale-ru-kz-v1.1.3) (2024-04-03)
 
 
