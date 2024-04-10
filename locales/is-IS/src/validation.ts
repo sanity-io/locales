@@ -17,14 +17,14 @@ export default removeUndefinedLocaleResources({
   'array.minimum-length_blocks': 'Verður að hafa að minnsta kosti {{minLength}} blokkir',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': 'Verður að vera gilt ISO-8601 sniðið dagsetning',
+  'date.invalid-format': 'Verður að vera gild ISO-8601 sniðin dagsetning',
   /** Date is later than the given maximum date "$maxDate" */
   'date.maximum': 'Verður að vera á eða fyrir {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
   'date.minimum': 'Verður að vera á eða eftir {{minDate}}',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
-  'generic.incorrect-type': 'Væntanlegur týpa "{{expectedType}}", fékk "{{actualType}}"',
+  'generic.incorrect-type': 'Væntanleg týpa "{{expectedType}}", fékk "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
   'generic.not-allowed': 'Gildi passaði ekki við nein leyfð gildi',
   /** Value "$givenValue" is not one of the values specifically allowed */
@@ -91,7 +91,7 @@ export default removeUndefinedLocaleResources({
   /** String contains a URL with a username or password specified before the host */
   'string.url.includes-credentials': 'Notandanafn/lykilorð ekki leyft',
   /** String is not a valid URL */
-  'string.url.invalid': 'Ekki gilt vefslóð',
+  'string.url.invalid': 'Ekki gild vefslóð',
   /** String is not an absolute URL (eg it is missing a protocol/host) */
   'string.url.not-absolute': 'Afstæðar vefslóðir eru ekki leyfðar',
   /** String is not a relative URL (eg it contains a protocol/host) */

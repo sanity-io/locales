@@ -37,16 +37,16 @@ export default removeUndefinedLocaleResources({
   'asset-source.delete-dialog.usage-list.image-preview-alt': 'Forskoðun myndar',
   /** Warning message showing when *named* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_named':
-    '{{filename}} er ekki hægt að eyða því að hún er í notkun. Til að eyða þessari skrá verður þú fyrst að fjarlægja allar notkun hennar.',
+    '{{filename}} er ekki hægt að eyða því að hún er í notkun. Til að eyða þessari skrá verður þú fyrst að fjarlægja alla notkun hennar.',
   /** Warning message showing when *unnamed* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_unnamed':
-    'Þessari skrá er ekki hægt að eyða því að hún er í notkun. Til að eyða henni verður þú fyrst að fjarlægja allar notkun hennar.',
+    'Þessari skrá er ekki hægt að eyða því að hún er í notkun. Til að eyða henni verður þú fyrst að fjarlægja alla notkun hennar.',
   /** Warning message showing when *named* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_named':
-    '{{filename}} er ekki hægt að eyða því að hún er í notkun. Til að eyða þessari mynd verður þú fyrst að fjarlægja allar notkun hennar.',
+    '{{filename}} er ekki hægt að eyða því að hún er í notkun. Til að eyða þessari mynd verður þú fyrst að fjarlægja alla notkun hennar.',
   /** Warning message showing when *unnamed* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_unnamed':
-    'Þessari mynd er ekki hægt að eyða því að hún er í notkun. Til að eyða henni verður þú fyrst að fjarlægja allar notkun hennar.',
+    'Þessari mynd er ekki hægt að eyða því að hún er í notkun. Til að eyða henni verður þú fyrst að fjarlægja alla notkun hennar.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Aðeins sýndar eignir af samþykktum gerðum: <strong>{{acceptTypes}}</strong>',
@@ -228,7 +228,7 @@ export default removeUndefinedLocaleResources({
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
   'changes.image.error-loading-image': 'Villa við að hlaða mynd',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
-  'changes.image.hotspot-changed': 'Brennidepill breytt',
+  'changes.image.hotspot-changed': 'Brennidepli breytt',
   /** Image diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.image.meta-info-fallback-title': 'Titilllaus',
   /** Image diff: Text shown if no asset has been set for the field (but has metadata changes) */
@@ -338,27 +338,27 @@ export default removeUndefinedLocaleResources({
     'Gildi <code>_key</code> eiginleikans verður að vera einstakt strengur.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely. */
   'form.error.duplicate-keys-alert.details.description':
-    'Þetta gerist venjulega þegar atriði eru búin til með API viðskiptavini, og <code>_key</code> eiginleiki hvers elements hefur verið búinn til ekki-einstaklega.',
+    'Þetta gerist venjulega þegar atriði eru búin til með API viðskiptavinar, og <code>_key</code> eiginleiki hvers elements hefur verið búið til ekki einstakt.',
   /** Developer info */
   'form.error.duplicate-keys-alert.details.title': 'Upplýsingar fyrir þróunaraðila',
   /** Generate unique keys */
   'form.error.duplicate-keys-alert.generate-button.text': 'Búa til einstaka lykla',
   /** Several items in this list share the same identifier (key). Every item must have an unique identifier. */
   'form.error.duplicate-keys-alert.summary':
-    'Mörg atriði í þessum lista deila sama auðkenni (lykil). Hvert atriði verður að hafa einstakt auðkenni.',
+    'Mörg atriði í þessum lista deila sama auðkenni (lykli). Hvert atriði verður að hafa einstakt auðkenni.',
   /** Non-unique keys */
-  'form.error.duplicate-keys-alert.title': 'Ekki-einstakir lyklar',
+  'form.error.duplicate-keys-alert.title': 'Ekki einstakir lyklar',
   /** Error text shown when a field with a given name cannot be found in the schema or is conditionally hidden but explicitly told to render  */
   'form.error.field-not-found':
     'Reitur "{{fieldName}}" fannst ekki meðal meðlima – staðfestu að hann sé skilgreindur í skemanu og að hann hafi ekki verið skilyrðisbundið falinn.',
   /** Add missing keys */
-  'form.error.missing-keys-alert.add-button.text': 'Bæta við vöntun lyklum',
+  'form.error.missing-keys-alert.add-button.text': 'Bæta við lyklum sem vantar',
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.missing-keys-alert.details.additional-description':
-    'Gildi <code>_key</code> eiginleikans verður að vera einstakt strengur.',
+    'Gildi <code>_key</code> eiginleikans verður að vera einstakur strengur.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property has not been included. */
   'form.error.missing-keys-alert.details.description':
-    'Þetta gerist venjulega þegar atriði eru búin til með API viðskiptavini, og <code>_key</code> eignin hefur ekki verið innifalin.',
+    'Þetta gerist venjulega þegar atriði eru búin til með API viðskiptavinar, og <code>_key</code> eigninleikinn hefur ekki verið innifalin.',
   /** Developer info */
   'form.error.missing-keys-alert.details.title': 'Upplýsingar fyrir þróunaraðila',
   /** Some items in the list are missing their keys. This must be fixed in order to edit the list. */
@@ -368,7 +368,7 @@ export default removeUndefinedLocaleResources({
   'form.error.missing-keys-alert.title': 'Vantar lykla',
   /** This usually happens when items are created using an API client, or when a custom input component has added invalid data to the list. */
   'form.error.mixed-array-alert.details.description':
-    'Þetta gerist venjulega þegar atriði eru búin til með API viðskiptavini, eða þegar sérsniðinn inntaksþáttur hefur bætt ógildum gögnum við listann.',
+    'Þetta gerist venjulega þegar atriði eru búin til með API viðskiptavinar, eða þegar sérsniðinn inntaksþáttur hefur bætt ógildum gögnum við listann.',
   /** Developer info */
   'form.error.mixed-array-alert.details.title': 'Upplýsingar fyrir þróunaraðila',
   /**  Remove non-object values */
@@ -380,7 +380,7 @@ export default removeUndefinedLocaleResources({
   'form.error.mixed-array-alert.title': 'Ógild gildi í lista',
   /** Error text shown when form is unable to find an array item at a given indexed path */
   'form.error.no-array-item-at-index':
-    'Engin atriði í fylki fundust á vísitölu <code>{{index}}</code> á slóð <code>{{path}}</code>',
+    'Engin atriði í fylki fundust á sæti <code>{{index}}</code> á slóð <code>{{path}}</code>',
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
     'Engin atriði í fylki með `_key` <code>"{{key}}"</code> fundust á slóð <code>{{path}}</code>',
@@ -439,7 +439,7 @@ export default removeUndefinedLocaleResources({
   'input.files.common.upload-progress': 'Hleður upp <FileName/>',
   /** The referenced document cannot be opened, because the URL failed to be resolved */
   'input.reference.document-cannot-be-opened.failed-to-resolve-url':
-    'Ekki er hægt að opna þetta skjal (ekki er hægt að leysa úr URL til Studio)',
+    'Ekki er hægt að opna þetta skjal (ekki er hægt að leysa úr hlekk til Studio)',
 
   /** Label for adding item after a specific array item */
   'inputs.array.action.add-after': 'Bæta við atriði á eftir',
@@ -478,12 +478,12 @@ export default removeUndefinedLocaleResources({
     'Eftirfarandi atriði er ekki hægt að hlaða upp þar sem engin þekkt umbreyting er frá efni til atriða í fylki:',
   /** Error description for the array item tooltip that explains that the current type item is not valid for the list  */
   'inputs.array.error.current-schema-not-declare-description':
-    'Núverandi skema lýsir ekki yfir atriðum af gerð <code>{{typeName}}</code> sem gild fyrir þennan lista. Þetta gæti þýtt að gerðin hefur verið fjarlægð sem gild atriði, eða að einhver annar hefur bætt henni við sitt eigið staðbundið skema sem er ekki enn útgefið.',
+    'Núverandi skema lýsir ekki atriðum af gerð <code>{{typeName}}</code> sem eru gild fyrir þennan lista. Þetta gæti þýtt að gerðin hefur verið fjarlægð sem gilt atriði, eða að einhver annar hefur bætt henni við sitt eigið staðbundið skema sem er ekki enn útgefið.',
   /** Error description to show how the item is being represented in the json format */
   'inputs.array.error.json-representation-description': 'JSON framsetning á þessu atriði:',
   /** Error description for the array item tooltip that explains what the error means with more context */
   'inputs.array.error.type-is-incompatible-prompt':
-    'Atriði af gerð <code>{{typeName}}</code> er ekki gild fyrir þennan lista',
+    'Atriði af gerð <code>{{typeName}}</code> eru ekki gild fyrir þennan lista',
   /** Error title for when an item type within an array input is incompatible, used in the tooltip */
   'inputs.array.error.type-is-incompatible-title': 'Af hverju er þetta að gerast?',
   /** Error label for unexpected errors in the Array Input */
@@ -569,7 +569,7 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.stale-upload-warning.clear': 'Hreinsa upphleðslu',
   /** An upload has made no progress for at least `{{staleThresholdMinutes}}` minutes and likely got interrupted. You can safely clear the incomplete upload and try uploading again. */
   'inputs.files.common.stale-upload-warning.description':
-    'Upphleðsla hefur ekki miðað neinum framförum í að minnsta kosti {{staleThresholdMinutes}} mínútur og líklega var truflun. Þú getur örugglega hreinsað ókláraða upphleðslu og reynt aftur að hlaða upp.',
+    'Upphleðsla hefur ekki miðað neinum framförum í að minnsta kosti {{staleThresholdMinutes}} mínútur og líklega var truflun. Þú getur hreinsað ókláraða upphleðslu og reynt aftur að hlaða upp.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ókláruð upphleðsla',
   /** Tooltip text for action to crop image */
@@ -616,7 +616,7 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.current-type': 'Núverandi gildi (<code>{{actualType}}</code>)',
   /** The property value is stored as a value type that does not match the expected type. */
   'inputs.invalid-value.description':
-    'Eignagildið er geymt sem gildistegund sem passar ekki við vænta tegund.',
+    'Eignagildið er geymt sem gildistegund sem passar ekki við tegund sem var búist við.',
   /** The value of this property must be of type <code>`{{validType}}`</code> according to the schema. */
   'inputs.invalid-value.details.description':
     'Gildi þessarar eignar verður að vera af tegund <code>{{validType}}</code> samkvæmt skemanu.',
@@ -625,7 +625,7 @@ export default removeUndefinedLocaleResources({
     'Aðeins eftirfarandi tegundir eru gildar hér samkvæmt skema:',
   /** Mismatching value types typically occur when the schema has recently been changed. */
   'inputs.invalid-value.details.possible-reason':
-    'Mismatching gildistegundir koma yfirleitt fyrir þegar skema hefur nýlega verið breytt.',
+    'Misræmdar gildistegundir koma yfirleitt fyrir þegar skema hefur nýlega verið breytt.',
   /** Developer info */
   'inputs.invalid-value.details.title': 'Upplýsingar fyrir þróunaraðila',
   /** -- Invalid Value Input -- */
@@ -647,9 +647,9 @@ export default removeUndefinedLocaleResources({
     'Rekur sig á {{count}} reiti sem eru ekki skilgreindir í skemanu.',
   /** Detailed description of unknown field warning */
   'inputs.object.unknown-fields.warning.details.description_one':
-    'Þessi reitur er ekki skilgreindur í skemanu, sem gæti þýtt að reitaskilgreiningunni hefur verið fjarlægt eða að einhver annar hefur bætt henni við sitt eigið staðbundið verkefni og hefur ekki enn útflutt breytingar sínar.',
+    'Þessi reitur er ekki skilgreindur í skemanu, sem gæti þýtt að reitaskilgreiningin hefur verið fjarlægð eða að einhver annar hefur bætt henni við sitt eigið staðbundið verkefni og hefur ekki enn útflutt breytingar sínar.',
   'inputs.object.unknown-fields.warning.details.description_other':
-    'Þessir reitir eru ekki skilgreindir í skema skjalsins, sem gæti þýtt að reitaskilgreiningunum hefur verið fjarlægt eða að einhver annar hefur bætt þeim við sitt eigið staðbundið verkefni og hefur ekki enn útflutt breytingar sínar.',
+    'Þessir reitir eru ekki skilgreindir í skema skjalsins, sem gæti þýtt að reitaskilgreiningin hefur verið fjarlægð eða að einhver annar hefur bætt þeim við sitt eigið staðbundið verkefni og hefur ekki enn útflutt breytingar sínar.',
   /** Developer info */
   'inputs.object.unknown-fields.warning.details.title': 'Upplýsingar fyrir þróunaraðila',
   /** Unknown field found */
@@ -685,7 +685,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Hlekkur',
   /**Aria label for the block object */
-  'inputs.portable-text.block.aria-label': 'Blokka hlutur',
+  'inputs.portable-text.block.aria-label': 'Blokka hlutu',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Breyta',
   /** Accessibility label for the button that opens the actions menu on blocks */
@@ -732,7 +732,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.disallowed-type.description':
     'Blokk með lykil <code>{{key}}</code> er af gerð <code>{{typeName}}</code>, sem er ekki leyft samkvæmt skemanum.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains no children */
-  'inputs.portable-text.invalid-value.empty-children.action': 'Settu inn tóman textaspönn',
+  'inputs.portable-text.invalid-value.empty-children.action': 'Settu inn tóma textaspönn',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains no children */
   'inputs.portable-text.invalid-value.empty-children.description':
     'Textablokk með lykil <code>{{key}}</code> hefur enga textaspönn.',
@@ -748,7 +748,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.invalid-span-text.action': 'Settu tómt textagildi',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a span with key `{{childKey}}` that has a missing or invalid `text` property */
   'inputs.portable-text.invalid-value.invalid-span-text.description':
-    'Spönn með lykil {{childKey}} í blokk með lykil <code>{{key}}</code> hefur vantað eða ógilt <code>text</code> eign.',
+    'Spönn með lykil {{childKey}} í blokk með lykil <code>{{key}}</code> hefur tóma eða ógilda <code>text</code> eign.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
   'inputs.portable-text.invalid-value.missing-block-type.action':
     'Nota gerð <code>{{expectedTypeName}}</code>',
@@ -759,7 +759,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-child-key.action': 'Úthluta handahófskenndum lykli',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
   'inputs.portable-text.invalid-value.missing-child-key.description':
-    'Barn á vísitölu <code>{{index}}</code> í blokk með lykil <code>{{key}}</code> vantar <code>_key</code> eign.',
+    'Barn á sæti <code>{{index}}</code> í blokk með lykil <code>{{key}}</code> vantar <code>_key</code> eign.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` which is missing a `_type` property */
   'inputs.portable-text.invalid-value.missing-child-type.action': 'Fjarlægðu hlutinn',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` which is missing a `_type` property */
@@ -769,17 +769,17 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-key.action': 'Úthluta handahófskenndum lykli',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
   'inputs.portable-text.invalid-value.missing-key.description':
-    'Blokk á vísitölu <code>{{index}}</code> vantar nauðsynlega <code>_key</code> eign.',
+    'Blokk á sæti <code>{{index}}</code> vantar nauðsynlega <code>_key</code> eign.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-children.action': 'Fjarlægðu blokkina',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
-    'Textablokk með lykil <code>{{key}}</code> hefur ógilda eða vantað `children` eign.',
+    'Textablokk með lykil <code>{{key}}</code> hefur ógilda eða tóma `children` eign.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': 'Bæta við eign',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description':
-    'Textablokk með lykil <code>{{key}}</code> hefur ógilda eða vantað `markDefs` eign.',
+    'Textablokk með lykil <code>{{key}}</code> hefur ógilda eða tóma `markDefs` eign.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
   'inputs.portable-text.invalid-value.missing-type.action': 'Fjarlægðu blokkina',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
@@ -870,7 +870,7 @@ export default removeUndefinedLocaleResources({
     'Leit skilaði gerð sem er ekki gild fyrir þessa tilvísun: "{{returnedType}}"',
   /** Error description for when the document referenced is not one of the types declared as allowed target types in schema */
   'inputs.reference.error.invalid-type-description':
-    'Tilvísað skjal (<code>{{documentId}}</code>) er af gerð <code>{{actualType}}</code>. Samkvæmt skemanu geta tilvísað skjöl aðeins verið af gerð <AllowedTypes />.',
+    'Tilvísað skjal (<code>{{documentId}}</code>) er af gerð <code>{{actualType}}</code>. Samkvæmt skemanu geta tilvísuð skjöl aðeins verið af gerð <AllowedTypes />.',
   /** Error title for when the document referenced is not one of the types declared as allowed target types in schema */
   'inputs.reference.error.invalid-type-title': 'Skjal af ógildri gerð',
   /** Error description for when the user does not have permissions to read the referenced document */
@@ -904,7 +904,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button that triggers a retry attempt for reference metadata  */
   'inputs.reference.metadata-error.retry-button-label': 'Reyna aftur',
   /** Title for alert shown when reference metadata fails to be loaded */
-  'inputs.reference.metadata-error.title': 'Ekki hægt að hlaða inn tilvísunarmetagegnum',
+  'inputs.reference.metadata-error.title': 'Ekki hægt að hlaða inn tilvísunarmetagögnum',
   /** Message shown when no documents were found that matched the given search string */
   'inputs.reference.no-results-for-query':
     'Engar niðurstöður fyrir <strong>“{{searchTerm}}”</strong>',
@@ -936,13 +936,13 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.search-placeholder': 'Sláðu inn til að leita',
   /** Explanation of the consequences of leaving the reference as strong instead of weak */
   'inputs.reference.strength-mismatch.is-strong-consquences':
-    'Það verður ekki hægt að eyða tilvísunarskjalinn án þess að fjarlægja þessa tilvísun fyrst eða breyta henni í veika.',
+    'Það verður ekki hægt að eyða tilvísunarskjalinn án þess að fjarlægja þessa tilvísun fyrst eða breyta henni í veika tilvísun.',
   /** Description for alert shown when a reference is supposed to be weak, but the actual value is strong */
   'inputs.reference.strength-mismatch.is-strong-description':
     'Þessi tilvísun er <em>sterk</em>, en samkvæmt núverandi skema ætti hún að vera <em>veik</em>.',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
   'inputs.reference.strength-mismatch.is-weak-consquences':
-    'Þetta gerir það mögulegt að eyða tilvísunarskjalinn án þess að eyða þessari tilvísun fyrst, sem skilur eftir svið sem vísar í ekki-tilvist skjal.',
+    'Þetta gerir það mögulegt að eyða tilvísunarskjalinu án þess að eyða þessari tilvísun fyrst, sem skilur eftir svið sem vísar í ótilvíst skjal.',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
   'inputs.reference.strength-mismatch.is-weak-description':
     'Þessi tilvísun er <em>veik</em>, en samkvæmt núverandi skema ætti hún að vera <em>sterk</em>.',
@@ -1134,7 +1134,7 @@ export default removeUndefinedLocaleResources({
   'search.error.display-filter-title': 'Villa kom upp við að sýna þennan síu.',
   /** Description for error when no valid asset source is found, describes that you should check the the current studio config */
   'search.error.no-valid-asset-source-check-config-description':
-    'Vinsamlegast vertu viss um að það sé virkt í stillingarskrá stúdíóinu þínu.',
+    'Vinsamlegast vertu viss um að það sé virkt í stillingarskrá í stúdíóinu þínu.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
     'Aðeins er stutt við sjálfgefna eignauppsprettu í augnablikinu.',
@@ -1150,7 +1150,7 @@ export default removeUndefinedLocaleResources({
    * If one or more document type has been chosen as filter, this label is replaced with a group of
    * fields per selected document type
    */
-  'search.filter-all-fields-header': 'Alla svið',
+  'search.filter-all-fields-header': 'Öll svið',
   /** Label for the action of changing from one file to a different file in asset search filter */
   'search.filter-asset-change_file': 'Breyta skrá',
   /** Label for the action of changing from one image to a different image in asset search filter */
@@ -1511,12 +1511,12 @@ export default removeUndefinedLocaleResources({
 
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
-    'Sögufærslur skjalsins hafa ekki verið fyrir áhrifum.',
+    'Sögufærslur skjalsins hafa ekki orðið fyrir áhrifum.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Villa kom upp við að sækja breytingar á skjali.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
-    'Þegar breytt er efni skjalsins munu útgáfur skjalsins birtast í þessum valmynd.',
+    'Þegar efni skjalsins er breytt munu útgáfur skjalsins birtast í þessum valmynd.',
   /** Error title for when the document doesn't have history */
   'timeline.error.no-document-history-title': 'Engin skjalasaga',
   /** Error prompt when revision cannot be loaded */
@@ -1542,9 +1542,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Eytt: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': 'Drög hent',
+  'timeline.operation.draft-discarded': 'Drögum hent',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
-  'timeline.operation.draft-discarded_timestamp': 'Drög hent: {{timestamp, datetime}}',
+  'timeline.operation.draft-discarded_timestamp': 'Drögum hent: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
   'timeline.operation.edited-draft': 'Breytt',
   /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
@@ -1587,7 +1587,7 @@ export default removeUndefinedLocaleResources({
   'user-menu.action.manage-project-aria-label': 'Stjórna verkefni',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
   'user-menu.action.portable-text.annotation-disabled_empty-block':
-    'Get ekki beitt {{name}} á tóman blokk',
+    'Get ekki beitt {{name}} á tóma blokk',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
   'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
     'Get ekki beitt {{name}} á marga blokka',

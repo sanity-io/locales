@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Aðgerð ekki tilbúin',
   /** Tooltip when action button is disabled because the document does not exist */
-  'action.delete.disabled.nothing-to-delete': 'Þetta skjal er ekki til eða þegar eytt',
+  'action.delete.disabled.nothing-to-delete': 'Þetta skjal er ekki til eða nú þegar eytt',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Eyða',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -55,7 +55,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.validation-issues.tooltip':
     'Það eru staðfestingarvillur sem þarf að laga áður en hægt er að birta þetta skjal',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
-  'action.publish.waiting': 'Bíð eftir að verkefni klárist áður en birt er',
+  'action.publish.waiting': 'Bíð eftir að verkefni klárist áður en er birt',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
   'action.restore.confirm.message': 'Ertu viss um að þú viljir endurheimta þetta skjal?',
   /** Fallback tooltip for when user is looking at the initial version */
@@ -77,7 +77,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Endurheimta nýjustu útgáfuna',
   /** The text content for the deleted document banner */
-  'banners.deleted-document-banner.text': 'Þetta skjal hefur verið eytt.',
+  'banners.deleted-document-banner.text': 'Þessu skjali hefur verið eytt.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Þessi skjaltýpa er úrelt.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
@@ -128,27 +128,27 @@ export default removeUndefinedLocaleResources({
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
   'confirm-delete-dialog.cdr-summary.document-count_other': '{{count}} skjöl',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  'confirm-delete-dialog.cdr-summary.subtitle_one': 'Gagnasafn: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  'confirm-delete-dialog.cdr-summary.subtitle_other': 'Gagnasöfn: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Ófáanlegt dataset',
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Ófáanlegt gagnasafn',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': 'Ófáanleg datasets',
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': 'Ófáanleg gagnasöfn',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
-  'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} í öðru dataset',
+  'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} í öðru gagnasafni',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'confirm-delete-dialog.cdr-summary.title_other': '{{documentCount}} í {{count}} datasets',
+  'confirm-delete-dialog.cdr-summary.title_other': '{{documentCount}} í {{count}} gagnasöfnum',
   /** Appears when hovering over the copy button to copy */
   'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': 'Afrita auðkenni á klippiborð',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
+  'confirm-delete-dialog.cdr-table.dataset.label': 'Gagnasanf',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.document-id.label': 'Skjal auðkenni',
+  'confirm-delete-dialog.cdr-table.document-id.label': 'Auðkenni skjals',
   /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Afritað skjal auðkenni á klippiborð!',
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Afritað aðkenni skjals á klippiborð!',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.project-id.label': 'Verkefni auðkenni',
+  'confirm-delete-dialog.cdr-table.project-id.label': 'Auðkenni verkefnis',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Eyða samt',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
@@ -182,7 +182,7 @@ export default removeUndefinedLocaleResources({
     '{{count}} aðrar tilvísanir ekki sýndar',
   /** Text in the tooltip of this component if hovering over the info icon */
   'confirm-delete-dialog.other-reference-count.tooltip':
-    'Við getum ekki birt upplýsingar um þessar tilvísanir vegna vantar aðgangstokens fyrir tengd gagnasett.',
+    'Við getum ekki birt upplýsingar um þessar tilvísanir vegna vöntunar aðgangstokens fyrir tengd gagnasett.',
   /** Appears when unable to render a document preview in the referring document list */
   'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
@@ -200,10 +200,10 @@ export default removeUndefinedLocaleResources({
     '{{count}} skjöl vísa í “<DocumentTitle/>”',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
   'confirm-delete-dialog.referring-documents-descriptor.text_delete':
-    'Þú gætir ekki getað eytt “<DocumentTitle/>” þar sem eftirfarandi skjöl vísa í það:',
+    'Þú getur ekki eytt “<DocumentTitle/>” þar sem eftirfarandi skjöl vísa í það:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
-    'Þú gætir ekki getað afturkallað birtingu “<DocumentTitle/>” þar sem eftirfarandi skjöl vísa í það:',
+    'Þú getur ekki afturkallað birtingu “<DocumentTitle/>” þar sem eftirfarandi skjöl vísa í það:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.cancel-button.fallback-text': 'Hætta við',
@@ -236,7 +236,7 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': 'Hrátt JSON',
 
   /** The text for when a form is hidden */
-  'document-view.form-view.form-hidden': 'Þessi eyðublað er falið',
+  'document-view.form-view.form-hidden': 'Þetta eyðublað er falið',
   /** Fallback title shown when a form title is not provided */
   'document-view.form-view.form-title-fallback': 'Titilllaus',
   /** The text for when the form view is loading a document */
@@ -271,9 +271,9 @@ export default removeUndefinedLocaleResources({
   'no-document-types-screen.link-text': 'Lærðu hvernig á að bæta við skjalategund →',
   /** The subtitle of the no document type screen that appears directly below the title */
   'no-document-types-screen.subtitle':
-    'Vinsamlegast skilgreindu að minnsta kosti eina skjalgert í skemanu þínu.',
+    'Vinsamlegast skilgreindu að minnsta kosti eina skjalgerð í skemanu þínu.',
   /** The title of the no document type screen */
-  'no-document-types-screen.title': 'Engar skjalgertir',
+  'no-document-types-screen.title': 'Engar skjalgerðir',
 
   /** Text shown on back button visible on smaller breakpoints */
   'pane-header.back-button.text': 'Til baka',
@@ -330,17 +330,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-error': 'Villa kom upp við {{context}}',
   /** The text when a delete operation failed  */
   'panes.document-operation-results.operation-error_delete':
-    'Villa kom upp við tilraun til að eyða þessu skjali. Þetta þýðir yfirleitt að aðrar skjöl vísa til þess.',
+    'Villa kom upp við tilraun til að eyða þessu skjali. Þetta þýðir yfirleitt að önnur skjöl vísa til þess.',
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
-    'Villa kom upp við tilraun til að afturkalla birtingu þessa skjals. Þetta þýðir yfirleitt að aðrar skjöl vísa til þess.',
+    'Villa kom upp við tilraun til að afturkalla birtingu þessa skjals. Þetta þýðir yfirleitt að önnur skjöl vísa til þess.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Aðgerð {{context}} á skjali tókst',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Skjalinu var eytt',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
-    'Öllum breytingum síðan síðast var birt hefur nú verið hent. Hægt er að endurheimta hent drögin úr sögunni',
+    'Öllum breytingum síðan síðast var birt hefur nú verið hent. Hægt er að endurheimta hentum drögum úr sögunni',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Skjalið var birt',
   /** The text when a restore operation succeeded  */
@@ -362,13 +362,13 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-not-found.title': 'Skjalið fannst ekki',
   /** The text of the document not found pane if the schema is not found */
   'panes.document-pane.document-unknown-type.text':
-    'Þetta skjal hefur skjematýpuna <Code>{{documentType}}</Code>, sem er ekki skilgreind sem týpa í staðbundnu efni stúdíó skemanu.',
+    'Þetta skjal hefur skematýpuna <Code>{{documentType}}</Code>, sem er ekki skilgreind sem týpa í staðbundnu efni stúdíó skemanu.',
   /** The title of the document not found pane if the schema is not found or unknown */
   'panes.document-pane.document-unknown-type.title':
     'Óþekkt skjalategund: <Code>{{documentType}}</Code>',
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
-    'Þetta skjal er ekki til, og engin skjematýpa var tilgreind fyrir það.',
+    'Þetta skjal er ekki til, og engin skematýpa var tilgreind fyrir það.',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Hleður…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
