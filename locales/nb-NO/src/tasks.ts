@@ -49,7 +49,8 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.subscribed.text':
     'Når du oppretter, endrer eller kommenterer på en oppgave, vil du automatisk bli abonnert',
   'empty-state.status.list.closed.assigned.heading': 'Ingen fullførte oppgaver',
-  'empty-state.status.list.closed.assigned.text': 'Oppgavene dine merket som fullført vil vises her',
+  'empty-state.status.list.closed.assigned.text':
+    'Oppgavene dine merket som fullført vil vises her',
   'empty-state.status.list.closed.document.heading': 'Ingen fullførte oppgaver',
   'empty-state.status.list.closed.subscribed.heading': 'Ingen fullførte oppgaver',
   'empty-state.status.list.closed.subscribed.text':

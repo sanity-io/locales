@@ -48,10 +48,9 @@ export default defineConfig({
 })
 ```
 
-## Maintainers
+## Contributors
 
-We are looking for maintainers for this plugin!
-If you are interested, please [send a PR](/CONTRIBUTING.md#maintaining-a-locale) adding yourself as a maintainer.
+- [@magnimarels](https://github.com/magnimarels)
 
 ## Contributing
 

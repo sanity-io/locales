@@ -69,8 +69,8 @@ const registry: LocaleRegistry = [
     id: 'is-IS',
     name: 'Íslenska',
     englishName: 'Icelandic',
-    maintainers: [],
-    contributors: [],
+    maintainers: ['magnimarels'],
+    contributors: ['magnimarels'],
   },
   {
     id: 'it-IT',
