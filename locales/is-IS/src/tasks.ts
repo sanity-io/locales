@@ -22,7 +22,7 @@ export default removeUndefinedLocaleResources({
   /** Text for the remove task dialog asking for confirmation of deletion */
   'dialog.remove-task.body': 'Ertu viss um að þú viljir eyða þessu verkefni?',
   /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': 'Einu sinni eytt, þá er ekki hægt að endurheimta það.',
+  'dialog.remove-task.body2': 'Ekki hægt að endurheimta eftir að því er eytt.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Hætta við',
   /** The label for the confirmation button on the remove task dialog */
@@ -47,13 +47,13 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.subscribed.heading': 'Þú hefur ekki skráð þig á nein verkefni',
   'empty-state.list.subscribed.text':
     'Þegar þú býrð til, breytir eða skrifar athugasemd við verkefni munt þú vera sjálfkrafa skráð(ur)',
-  'empty-state.status.list.closed.assigned.heading': 'Engin lokið verkefni',
+  'empty-state.status.list.closed.assigned.heading': 'Engin kláruð verkefni',
   'empty-state.status.list.closed.assigned.text':
-    'Verkefni sem þú hefur merkt sem lokið munu birtast hér',
-  'empty-state.status.list.closed.document.heading': 'Engin lokið verkefni',
-  'empty-state.status.list.closed.subscribed.heading': 'Engin lokið verkefni',
+    'Verkefni sem þú hefur merkt sem klárað munu birtast hér',
+  'empty-state.status.list.closed.document.heading': 'Engin kláruð verkefni',
+  'empty-state.status.list.closed.subscribed.heading': 'Engin kláruð verkefni',
   'empty-state.status.list.closed.subscribed.text':
-    'Verkefni sem þú ert áskrifandi að og eru merkt sem lokið munu birtast hér',
+    'Verkefni sem þú ert áskrifandi að og eru merkt sem kláruð munu birtast hér',
   'empty-state.status.list.open.assigned.heading': 'Þú ert alveg búinn',
   'empty-state.status.list.open.assigned.text':
     'Ný verkefni sem eru úthlutað til þín munu birtast hér',

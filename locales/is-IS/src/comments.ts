@@ -33,7 +33,7 @@ export default removeUndefinedLocaleResources({
   'copy-link-success-message': 'Tengill afritaður á klippiborð',
 
   /** The delete dialog body for a comment */
-  'delete-comment.body': 'Einu sinni eytt, er ekki hægt að endurheimta athugasemd.',
+  'delete-comment.body': 'Ekki hægt að endurheimta athugasemd eftir að henni er eitt.',
   /** The delete dialog confirm button text for a comment */
   'delete-comment.confirm': 'Eyða athugasemd',
   /** The delete dialog title for a comment */
@@ -44,7 +44,7 @@ export default removeUndefinedLocaleResources({
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
-    'Þessi athugasemd og svör hennar verða eytt, og einu sinni eytt er ekki hægt að endurheimta þau.',
+    'Þessi athugasemd og svörum hennar verða eytt, og ekki er hægt að endurheimta þau eftir að þeim er eytt.',
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'Eyða þræði',
   /** The delete dialog title for a thread */
@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Hjálpaðu til við að bæta ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Athugasemdir',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Bæta við athugasemd',
@@ -77,7 +77,7 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'Bæta við athugasemd',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': 'Ekki er hægt að hafa skarandi athugasemdir',
+  'inline-add-comment-button.disabled-overlap-title': 'Ekki er hægt að hafa athugasemdir sem skarast',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Bæta við athugasemd',
 
@@ -123,9 +123,9 @@ export default removeUndefinedLocaleResources({
   /** The button aria label to re-open a comment that is resolved */
   'list-item.re-open-resolved-aria-label': 'Opna aftur',
   /** The button aria label to mark a comment as resolved */
-  'list-item.resolved-tooltip-aria-label': 'Merktu athugasemd sem leyst',
+  'list-item.resolved-tooltip-aria-label': 'Merktu athugasemd sem leysta',
   /** The button text to mark a comment as resolved */
-  'list-item.resolved-tooltip-content': 'Merktu sem leyst',
+  'list-item.resolved-tooltip-content': 'Merktu sem leysta',
 
   /** The empty state text for open comments */
   'list-status.empty-state-open-text': 'Opnar athugasemdir á þessu skjali verða sýndar hér.',
@@ -138,7 +138,7 @@ export default removeUndefinedLocaleResources({
   /** The list status message for error */
   'list-status.error': 'Eitthvað fór úrskeiðis',
   /** The list status message for loading status */
-  'list-status.loading': 'Hleð athugasemdum',
+  'list-status.loading': 'Hleður athugasemdum',
 
   /** Text shown when no users can be found to mention */
   'mentions.no-users-found': 'Engir notendur fundust',

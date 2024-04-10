@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Sérsniðin API útgáfa',
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': 'Dataset',
+  'settings.dataset-label': 'Gagnasafn',
   /** Error label for when the API version in 'Custom API version' input is invalid */
   'settings.error.invalid-api-version': 'Ógild API útgáfa',
   /** Label for the "other" versions within the "API version" dropdown */
