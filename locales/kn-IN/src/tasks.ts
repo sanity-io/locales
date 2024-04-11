@@ -2,51 +2,53 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'ಹೊಸ ಕಾರ್ಯ ರಚಿಸಿ',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'ಕಾರ್ಯಗಳು',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'ಕಾರ್ಯ ರಚಿಸಿ',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'ತ್ಯಜಿಸು',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'ಮುಸದ್ದು',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'ಹೊಸ ಕಾರ್ಯ',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'ಮುಂದಿನ ಕಾರ್ಯಕ್ಕೆ ಹೋಗಿ',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'ಹಿಂದಿನ ಕಾರ್ಯಕ್ಕೆ ಹೋಗಿ',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Are you sure you want to delete this task?'
+  'dialog.remove-task.body': 'ನೀವು ಈ ಕಾರ್ಯವನ್ನು ಅಳಿಸಲು ಖಚಿತವಾಗಿದ್ದೀರಾ?',
   /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': undefined, // 'Once deleted, it cannot be restored.'
+  'dialog.remove-task.body2': 'ಒಮ್ಮೆ ಅಳಿಸಿದ ನಂತರ, ಅದನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'ರದ್ದುಮಾಡಿ',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Remove'
+  'dialog.remove-task.buttons.confirm.text': 'ತೆಗೆದುಹಾಕಿ',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Remove task'
+  'dialog.remove-task.title': 'ಕಾರ್ಯ ತೆಗೆದುಹಾಕಿ',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
-  'document.footer.open-tasks.placeholder_one': undefined, // 'Open task'
+  'document.footer.open-tasks.placeholder_one': 'ಕಾರ್ಯ ತೆರೆಯಿರಿ',
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'ಕಾರ್ಯಗಳನ್ನು ತೆರೆಯಿರಿ',
   /** The label used in the button in the footer action in a document with a single task */
-  'document.footer.open-tasks.text_one': undefined, // '{{count}} open task'
+  'document.footer.open-tasks.text_one': '{{count}} ತೆರೆದ ಕಾರ್ಯ',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} ತೆರೆದ ಕಾರ್ಯಗಳು',
 
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
-  'empty-state.list.create-new': undefined, // 'Create new task'
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
+  'empty-state.list.assigned.heading': 'ನಿಮಗೆ ಯಾವುದೇ ಕಾರ್ಯಗಳು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ',
+  'empty-state.list.assigned.text': 'ನೀವು ಕಾರ್ಯಗಳಿಗೆ ನಿಯೋಜಿಸಲ್ಪಟ್ಟಾಗ ಅವು ಇಲ್ಲಿ ತೋರಿಸಲ್ಪಡುತ್ತವೆ',
+  'empty-state.list.create-new': 'ಹೊಸ ಕಾರ್ಯ ರಚಿಸಿ',
+  'empty-state.list.document.heading': 'ಈ ದಾಖಲೆಗೆ ಇನ್ನೂ ಯಾವುದೇ ಕಾರ್ಯಗಳು ಇಲ್ಲ',
+  'empty-state.list.document.text':
+    'ಒಂದು ದಾಖಲೆಗೆ ಸಂಬಂಧಿಸಿದ ಕಾರ್ಯಗಳು ಇದ್ದಾಗ, ಅವು ಇಲ್ಲಿ ತೋರಿಸಲ್ಪಡುತ್ತವೆ.',
+  'empty-state.list.subscribed.heading': 'ನೀವು ಯಾವುದೇ ಕಾರ್ಯಗಳಿಗೆ ಚಂದಾದಾರರಾಗಿಲ್ಲ',
+  'empty-state.list.subscribed.text':
+    'ನೀವು ಕಾರ್ಯ ರಚಿಸಿದಾಗ, ಬದಲಾವಣೆ ಮಾಡಿದಾಗ ಅಥವಾ ಕಾರ್ಯದ ಮೇಲೆ ಪ್ರತಿಕ್ರಿಯಿಸಿದಾಗ ನೀವು ಸ್ವಯಂ ಚಂದಾದಾರರಾಗುತ್ತೀರಿ',
+  'empty-state.status.list.closed.assigned.heading': 'ಪೂರ್ಣಗೊಂಡ ಕಾರ್ಯಗಳು ಇಲ್ಲ',
   'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
   'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
   'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
@@ -92,33 +94,33 @@ export default removeUndefinedLocaleResources({
   /** The label for the copy link menu item */
   'menuitem.copylink.text': undefined, // 'Copy link to task'
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'ಕಾರ್ಯವನ್ನು ಅಳಿಸು',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'ಕಾರ್ಯವನ್ನು ನಕಲಿಸು',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'ಈ ಕಾರ್ಯವನ್ನು ರಚಿಸಿದೆ',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'ಚಟುವಟಿಕೆ',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'ಅಜ್ಞಾತ ಬಳಕೆದಾರ',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'ಪಾರ್ಶ್ವಪಟ್ಟಿಯನ್ನು ಮುಚ್ಚು',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'ಪ್ರತಿಕ್ರಿಯೆ ಸೇರಿಸಿ...',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'ರಚಿಸು',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'ಕರಡುಗಳು',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'ಕಾರ್ಯಗಳನ್ನು ತೆರೆ',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'ಕಾರ್ಯಗಳು',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'ನಿಯೋಜಿಸಲಾಗಿದೆ',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'ಸಕ್ರಿಯ ದಾಖಲೆ',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'ಚಂದಾದಾರಿಕೆ',
 })
