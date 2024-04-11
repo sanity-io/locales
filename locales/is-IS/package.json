@@ -20,7 +20,12 @@
     "directory": "locales/is-IS"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "magnimarels",
+      "url": "https://github.com/magnimarels"
+    }
+  ],
   "sideEffects": false,
   "type": "module",
   "exports": {
