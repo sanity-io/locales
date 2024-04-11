@@ -77,9 +77,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'Adicionar comentário',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': 'Comentários não podem se sobrepor',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': 'Adicionar comentário',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Ir para o campo {{field}}',
@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Tentar novamente',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': 'O texto comentado foi deletado',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Abrir menu de ações do comentário',
   /** The button text to re-open a resolved comment  */
