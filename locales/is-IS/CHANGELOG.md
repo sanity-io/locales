@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/sanity-io/locales/compare/locale-is-is-v1.1.4...locale-is-is-v1.2.0) (2024-04-11)
+
+
+### Features
+
+* **is-IS:** update is-IS locale ([2af5170](https://github.com/sanity-io/locales/commit/2af5170e91c3eefbee4e49aa828cb3ed5d27d0d8))
+
+
+### Bug Fixes
+
+* **is-IS:** add [@magnimarels](https://github.com/magnimarels) as maintainer of is-IS locale ([59de749](https://github.com/sanity-io/locales/commit/59de7494197a1f444885c72707eaf295b2ee88fc))
+
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-is-is-v1.1.3...locale-is-is-v1.1.4) (2024-04-03)
 
 
