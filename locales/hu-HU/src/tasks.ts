@@ -2,51 +2,53 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'Új feladat létrehozása',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'Feladatok',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'Feladat létrehozása',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'Elvetés',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'Vázlat',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'Új feladat',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'Ugrás a következő feladatra',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'Ugrás az előző feladatra',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Are you sure you want to delete this task?'
+  'dialog.remove-task.body': 'Biztosan törölni szeretné ezt a feladatot?',
   /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': undefined, // 'Once deleted, it cannot be restored.'
+  'dialog.remove-task.body2': 'Egyszer törölve, nem állítható helyre.',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'Mégse',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Remove'
+  'dialog.remove-task.buttons.confirm.text': 'Eltávolítás',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Remove task'
+  'dialog.remove-task.title': 'Feladat eltávolítása',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
-  'document.footer.open-tasks.placeholder_one': undefined, // 'Open task'
+  'document.footer.open-tasks.placeholder_one': 'Feladat megnyitása',
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'Feladatok megnyitása',
   /** The label used in the button in the footer action in a document with a single task */
-  'document.footer.open-tasks.text_one': undefined, // '{{count}} open task'
+  'document.footer.open-tasks.text_one': '{{count}} nyitott feladat',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} nyitott feladat',
 
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
-  'empty-state.list.create-new': undefined, // 'Create new task'
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
+  'empty-state.list.assigned.heading': 'Még nem lett feladat hozzárendelve',
+  'empty-state.list.assigned.text': 'Amint feladatok lesznek hozzárendelve, itt fognak megjelenni',
+  'empty-state.list.create-new': 'Új feladat létrehozása',
+  'empty-state.list.document.heading': 'Ehhez a dokumentumhoz még nincsenek feladatok',
+  'empty-state.list.document.text':
+    'Amint a dokumentumhoz kapcsolódó feladatok lesznek, itt fognak megjelenni.',
+  'empty-state.list.subscribed.heading': 'Még nem iratkozott fel feladatokra',
+  'empty-state.list.subscribed.text':
+    'Amikor létrehoz, módosít vagy kommentál egy feladatot, automatikusan fel lesz iratkozva',
+  'empty-state.status.list.closed.assigned.heading': 'Nincsenek befejezett feladatok',
   'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
   'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
   'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
@@ -92,33 +94,33 @@ export default removeUndefinedLocaleResources({
   /** The label for the copy link menu item */
   'menuitem.copylink.text': undefined, // 'Copy link to task'
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'Feladat törlése',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'Feladat másolása',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'létrehozta ezt a feladatot',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'Tevékenység',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'Ismeretlen felhasználó',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'Oldalsáv bezárása',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'Hozzászólás hozzáadása...',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'Létrehozás',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'Piszkozatok',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'Feladatok megnyitása',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'Feladatok',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'Hozzárendelve',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'Aktív Dokumentum',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'Feliratkozva',
 })
