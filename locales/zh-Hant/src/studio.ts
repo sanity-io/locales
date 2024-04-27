@@ -575,7 +575,7 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.details.multi-type-description': '根據架構，這裡只有以下類型是有效的：',
   /** Mismatching value types typically occur when the schema has recently been changed. */
   'inputs.invalid-value.details.possible-reason':
-    '當架構最近發生變化時，通常會出現不匹配的值類型。',
+    '當架構最近發生變化時，通常會出現不相符的值類型。',
   /** Developer info */
   'inputs.invalid-value.details.title': '開發者資訊',
   /** -- Invalid Value Input -- */
@@ -885,7 +885,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button that triggers the action that strengthens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.strengthen-button-label': '轉換為強參考',
   /** Title for alert shown when a reference is supposed to be weak/strong, but the actual value is the opposite of what it is supposed to be */
-  'inputs.reference.strength-mismatch.title': '參考強度不匹配',
+  'inputs.reference.strength-mismatch.title': '參考強度不相符',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '轉換為弱參考',
   /** Action message for generating the slug */
@@ -1059,7 +1059,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for list displaying the available document types */
   'search.document-types-aria-label': '文件類型',
   /** Label for when no document types matching the filter are found */
-  'search.document-types-no-matches-found': '沒有符合 {{filter}} 的匹配項',
+  'search.document-types-no-matches-found': '沒有相符 {{filter}} 的文件',
   /** Description for error when a filter cannot be displayed, describes that you should check the schema */
   'search.error.display-filter-description': '這可能表示您的架構中定義了無效選項。',
   /** Title for error when a filter cannot be displayed (mainly a developer-oriented error) */
@@ -1373,7 +1373,7 @@ export default removeUndefinedLocaleResources({
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': '不是',
   /** Label for the "Best match" search ordering type */
-  'search.ordering.best-match-label': '最佳匹配',
+  'search.ordering.best-match-label': '最相符',
   /** Label for the "Created: Oldest first" search ordering type */
   'search.ordering.created-ascending-label': '創建時間：最早的在前',
   /** Label for the "Created: Newest first" search ordering type */

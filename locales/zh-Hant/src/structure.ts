@@ -290,7 +290,7 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found */
   'panes.document-list-pane.no-documents.text': '未找到結果',
   /** The text of the document list pane if no documents are found matching specified criteria */
-  'panes.document-list-pane.no-matching-documents.text': '沒有匹配的文件',
+  'panes.document-list-pane.no-matching-documents.text': '沒有相符的文件',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
