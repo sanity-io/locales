@@ -72,9 +72,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '還原最新版本',
   /** The text content for the deleted document banner */
-  'banners.deleted-document-banner.text': '此文件已被刪除。',
+  'banners.deleted-document-banner.text': '此文件已刪除。',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': '此文件類型已被棄用。',
+  'banners.deprecated-document-type-banner.text': '此文件類型已棄用。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '你的角色是：<Roles/>，沒有創建此文件的權限。',
@@ -88,7 +88,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': '關閉引用',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
-  'banners.reference-changed-banner.reason-removed.text': '自您打開它以來，此引用已被刪除。',
+  'banners.reference-changed-banner.reason-removed.text': '自您打開它以來，此引用已刪除。',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新建 {{schemaType}}',
@@ -130,13 +130,13 @@ export default removeUndefinedLocaleResources({
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': '項目 ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': '仍然刪除',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': '仍要刪除',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': '仍然取消發布',
+  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': '仍要取消發布',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_delete': '現在刪除',
+  'confirm-delete-dialog.confirm-button.text_delete': '立即刪除',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_unpublish': '現在取消發布',
+  'confirm-delete-dialog.confirm-button.text_unpublish': '立即取消發布',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete': '確定要刪除「<DocumentTitle/>」嗎？',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
@@ -152,7 +152,7 @@ export default removeUndefinedLocaleResources({
   /** The header of the confirm delete dialog */
   'confirm-delete-dialog.header.text_unpublish': '下架文件？',
   /** The text that appears while the referring documents are queried */
-  'confirm-delete-dialog.loading.text': '正在查找引用文件…',
+  'confirm-delete-dialog.loading.text': '正在尋找引用文件…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'confirm-delete-dialog.other-reference-count.title_other': '{{count}} 其他引用未顯示',
   /** Text in the tooltip of this component if hovering over the info icon */
@@ -367,15 +367,15 @@ export default removeUndefinedLocaleResources({
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last updated <RelativeTime/>" */
   'status-bar.publish-status-button.last-updated-time.tooltip': '最後更新於<RelativeTime/>',
   /** Aria label for the button */
-  'status-bar.review-changes-button.aria-label': '審查更改',
+  'status-bar.review-changes-button.aria-label': '回顧更改',
   /** Label for button when status is saved */
-  'status-bar.review-changes-button.status.saved.text': '已保存！',
+  'status-bar.review-changes-button.status.saved.text': '已儲存！',
   /** Label for button when status is syncing */
-  'status-bar.review-changes-button.status.syncing.text': '正在保存...',
+  'status-bar.review-changes-button.status.syncing.text': '正在儲存...',
   /** Text for the secondary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.changes-saved': '更改已保存',
+  'status-bar.review-changes-button.tooltip.changes-saved': '已儲存變更',
   /** Primary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.text': '審查更改',
+  'status-bar.review-changes-button.tooltip.text': '回顧更改',
 
   /** The text that appears in side the documentation link */
   'structure-error.docs-link.text': '查看文件',

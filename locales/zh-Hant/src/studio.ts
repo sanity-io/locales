@@ -183,7 +183,7 @@ export default removeUndefinedLocaleResources({
   /** Array diff: An item was removed from a given position (`{{position}}`) */
   'changes.array.item-removed-from-position': '從第 {{position}} 位移除',
   /** Accessibility label for the "change bar" shown when there are edits on a field-level */
-  'changes.change-bar.aria-label': '審查更改',
+  'changes.change-bar.aria-label': '回顧更改',
   /** Label for when the action of the change was _not_ an add/remove, eg a text field changed value, an image was changed from one asset to another or similar */
   'changes.changed-label': '已更改',
   /** Label and text for tooltip that indicates the authors of the changes */
