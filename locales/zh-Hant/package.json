@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-zh-hant",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "private": false,
   "description": "Chinese (Traditional) / 繁體中文 locale/translation for Sanity Studio",
   "keywords": [
