@@ -1067,7 +1067,7 @@ export default removeUndefinedLocaleResources({
   /** Message for when a user is not in a document (displayed in the global presence menu) */
   'presence.not-in-a-document': 'Nincs dokumentumban',
   /** Tooltip content text for presence menu button */
-  'presence.tooltip-content': undefined, // 'Who is here'
+  'presence.tooltip-content': 'Ki van itt',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Cím nélkül',
@@ -1519,7 +1519,7 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': 'Keresési eredmények',
 
   /** Accessibility label for the navbar status button */
-  'status-button.aria-label': undefined, // 'Configuration status'
+  'status-button.aria-label': 'Konfiguráció állapota',
 
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
@@ -1583,7 +1583,7 @@ export default removeUndefinedLocaleResources({
   'timeline.since-version-missing': 'Ettől: ismeretlen verzió',
 
   /**Aria label for the action buttons in the PTE toolbar */
-  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} nap van hátra a próbaidőből',
