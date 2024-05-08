@@ -1,4 +1,4 @@
-import { removeUndefinedLocaleResources } from 'sanity'
+import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Menu item for deleting the asset */

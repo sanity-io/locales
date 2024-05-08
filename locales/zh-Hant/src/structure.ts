@@ -1,4 +1,4 @@
-import { removeUndefinedLocaleResources } from 'sanity'
+import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */

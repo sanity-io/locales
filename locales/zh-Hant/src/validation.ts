@@ -1,4 +1,4 @@
-import { removeUndefinedLocaleResources } from 'sanity'
+import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
