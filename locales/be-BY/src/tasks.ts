@@ -80,7 +80,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': 'Схема не знойдзена',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': 'Выберыце дакумент',
+  'form.input.target.search.placeholder': 'Выбярыце дакумент',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Назва задачы',
   /** The status error message presented when the user does not supply a title */
