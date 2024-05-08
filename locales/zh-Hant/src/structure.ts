@@ -1,4 +1,4 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -72,9 +72,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '還原最新版本',
   /** The text content for the deleted document banner */
-  'banners.deleted-document-banner.text': '此文件已被刪除。',
+  'banners.deleted-document-banner.text': '此文件已刪除。',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': '此文件類型已被棄用。',
+  'banners.deprecated-document-type-banner.text': '此文件類型已棄用。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '你的角色是：<Roles/>，沒有創建此文件的權限。',
@@ -88,7 +88,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': '關閉引用',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
-  'banners.reference-changed-banner.reason-removed.text': '自您打開它以來，此引用已被刪除。',
+  'banners.reference-changed-banner.reason-removed.text': '自您打開它以來，此引用已刪除。',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新建 {{schemaType}}',
@@ -130,13 +130,13 @@ export default removeUndefinedLocaleResources({
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': '項目 ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': '仍然刪除',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': '仍要刪除',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': '仍然取消發布',
+  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': '仍要取消發布',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_delete': '現在刪除',
+  'confirm-delete-dialog.confirm-button.text_delete': '立即刪除',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_unpublish': '現在取消發布',
+  'confirm-delete-dialog.confirm-button.text_unpublish': '立即取消發布',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete': '確定要刪除「<DocumentTitle/>」嗎？',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
@@ -152,7 +152,7 @@ export default removeUndefinedLocaleResources({
   /** The header of the confirm delete dialog */
   'confirm-delete-dialog.header.text_unpublish': '下架文件？',
   /** The text that appears while the referring documents are queried */
-  'confirm-delete-dialog.loading.text': '正在查找引用文件…',
+  'confirm-delete-dialog.loading.text': '正在尋找引用文件…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'confirm-delete-dialog.other-reference-count.title_other': '{{count}} 其他引用未顯示',
   /** Text in the tooltip of this component if hovering over the info icon */
@@ -232,20 +232,20 @@ export default removeUndefinedLocaleResources({
   'menu-item-groups.sorting-group': '排序',
 
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': '緊湊視圖',
+  'menu-items.layout.compact-view': '簡易檢視',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': '詳細視圖',
+  'menu-items.layout.detailed-view': '詳細檢視',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '按創建時間排序',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '按最後編輯排序',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
-  'no-document-types-screen.link-text': '了解如何新增文檔類型 →',
+  'no-document-types-screen.link-text': '了解如何新增文件類型 →',
   /** The subtitle of the no document type screen that appears directly below the title */
-  'no-document-types-screen.subtitle': '請在您的架構中至少定義一種文檔類型。',
+  'no-document-types-screen.subtitle': '請在架構中至少定義一種文件類型。',
   /** The title of the no document type screen */
-  'no-document-types-screen.title': '無文檔類型',
+  'no-document-types-screen.title': '無文件類型',
 
   /** Text shown on back button visible on smaller breakpoints */
   'pane-header.back-button.text': '返回',
@@ -263,7 +263,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
   'pane-item.draft-status.no-draft.tooltip': '無未發布的編輯',
   /** The subtitle tor pane item previews if there isn't a matching schema type found */
-  'pane-item.missing-schema-type.subtitle': '文檔：<Code>{{documentId}}</Code>',
+  'pane-item.missing-schema-type.subtitle': '文件：<Code>{{documentId}}</Code>',
   /** The title tor pane item previews if there isn't a matching schema type found */
   'pane-item.missing-schema-type.title': '未找到<Code>{{documentType}}</Code>的架構',
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
@@ -290,7 +290,7 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found */
   'panes.document-list-pane.no-documents.text': '未找到結果',
   /** The text of the document list pane if no documents are found matching specified criteria */
-  'panes.document-list-pane.no-matching-documents.text': '沒有匹配的文件',
+  'panes.document-list-pane.no-matching-documents.text': '沒有相符的文件',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
@@ -324,21 +324,21 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'panes.document-pane-provider.reconnecting.title': '連線已中斷。正在重新連接…',
   /** The loading message for the document not found pane */
-  'panes.document-pane.document-not-found.loading': '正在讀取文檔…',
+  'panes.document-pane.document-not-found.loading': '正在讀取文件…',
   /** The text of the document not found pane if the schema is known */
   'panes.document-pane.document-not-found.text':
-    '文檔類型未定義，無法找到標識符為<Code>{{id}}</Code>的文檔。',
+    '文件類型未定義，無法找到標識符為<Code>{{id}}</Code>的文件。',
   /** The title of the document not found pane if the schema is known */
-  'panes.document-pane.document-not-found.title': '未找到文檔',
+  'panes.document-pane.document-not-found.title': '未找到文件',
   /** The text of the document not found pane if the schema is not found */
   'panes.document-pane.document-unknown-type.text':
-    '此文檔的架構類型為<Code>{{documentType}}</Code>，它未在本地內容工作室架構中定義為一種類型。',
+    '此文件的架構類型為<Code>{{documentType}}</Code>，它未在本地內容工作室架構中定義為一種類型。',
   /** The title of the document not found pane if the schema is not found or unknown */
   'panes.document-pane.document-unknown-type.title':
-    '未知的文檔類型：<Code>{{documentType}}</Code>',
+    '未知的文件類型：<Code>{{documentType}}</Code>',
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
-    '此文檔不存在，且未為其指定架構類型。',
+    '此文件不存在，且未為其指定架構類型。',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '讀取中…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -367,18 +367,18 @@ export default removeUndefinedLocaleResources({
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last updated <RelativeTime/>" */
   'status-bar.publish-status-button.last-updated-time.tooltip': '最後更新於<RelativeTime/>',
   /** Aria label for the button */
-  'status-bar.review-changes-button.aria-label': '審查更改',
+  'status-bar.review-changes-button.aria-label': '回顧更改',
   /** Label for button when status is saved */
-  'status-bar.review-changes-button.status.saved.text': '已保存！',
+  'status-bar.review-changes-button.status.saved.text': '已儲存！',
   /** Label for button when status is syncing */
-  'status-bar.review-changes-button.status.syncing.text': '正在保存...',
+  'status-bar.review-changes-button.status.syncing.text': '正在儲存...',
   /** Text for the secondary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.changes-saved': '更改已保存',
+  'status-bar.review-changes-button.tooltip.changes-saved': '已儲存變更',
   /** Primary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.text': '審查更改',
+  'status-bar.review-changes-button.tooltip.text': '回顧更改',
 
   /** The text that appears in side the documentation link */
-  'structure-error.docs-link.text': '查看文檔',
+  'structure-error.docs-link.text': '查看文件',
   /** Labels the error message or error stack of the structure error screen */
   'structure-error.error.label': '錯誤',
   /** The header that appears at the top of the error screen */

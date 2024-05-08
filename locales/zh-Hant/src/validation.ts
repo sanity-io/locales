@@ -1,4 +1,4 @@
-import {removeUndefinedLocaleResources} from 'sanity'
+import { removeUndefinedLocaleResources } from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
@@ -24,11 +24,11 @@ export default removeUndefinedLocaleResources({
   'date.minimum': '必須在 {{minDate}} 之後或當天',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
-  'generic.incorrect-type': '預期類型為 "{{expectedType}}"，實際為 "{{actualType}}"',
+  'generic.incorrect-type': '類型預期是 "{{expectedType}}"，但實際是 "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
-  'generic.not-allowed': '值未匹配任何允許的值',
+  'generic.not-allowed': '沒有相符的允許值',
   /** Value "$givenValue" is not one of the values specifically allowed */
-  'generic.not-allowed_hint': '值 "{{hint}}" 未匹配任何允許的值',
+  'generic.not-allowed_hint': '"{{hint}}" 沒有相符的允許值',
   /** A value is expected, but none is provided */
   'generic.required': '必填',
 
@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': '需要圖片',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
-  'object.not-reference': '必須是對文檔的引用',
+  'object.not-reference': '必須是對文件的引用',
   /** Object references a document which is not published */
-  'object.reference-not-published': '引用的文檔必須已發布',
+  'object.reference-not-published': '引用的文件必須已發布',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': '關閉驗證',
@@ -66,7 +66,7 @@ export default removeUndefinedLocaleResources({
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug 必須有一個值',
   /** Slug is not an object (eg `{current: 'some-slug'}`) */
-  'slug.not-object': 'Slug 必須是一個物件',
+  'slug.not-object': 'Slug 必須是物件',
   /** Slug is already in use somewhere else, but needs to be unique */
   'slug.not-unique': 'Slug 已經被使用',
 
@@ -75,7 +75,7 @@ export default removeUndefinedLocaleResources({
   /** String has a different character length than the exact number "$wantedLength" */
   'string.exact-length': '必須恰好是 {{wantedLength}} 個字元',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': '必須全部是小寫字母',
+  'string.lowercase': '必須全小寫字母',
   /** String is longer than the limit of "$maxLength" characters */
   'string.maximum-length': '最多只能有 {{maxLength}} 個字元',
   /** String is shorter than the limit of "$minLength" characters */
@@ -85,15 +85,15 @@ export default removeUndefinedLocaleResources({
   /** String matches the given regular expression, but should not */
   'string.regex-match': '不應符合 "{{name}}"-模式',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': '必須全部是大寫字母',
+  'string.uppercase': '必須全大寫字母',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
   'string.url.disallowed-scheme': '不符合允許的協議/方案',
   /** String contains a URL with a username or password specified before the host */
   'string.url.includes-credentials': '不允許使用者名稱/密碼',
   /** String is not a valid URL */
-  'string.url.invalid': '不是一個有效的 URL',
+  'string.url.invalid': '無效的 URL',
   /** String is not an absolute URL (eg it is missing a protocol/host) */
-  'string.url.not-absolute': '不允許相對 URL',
+  'string.url.not-absolute': '不能是相對 URL',
   /** String is not a relative URL (eg it contains a protocol/host) */
-  'string.url.not-relative': '只允許相對 URL',
+  'string.url.not-relative': '只能是相對 URL',
 })
