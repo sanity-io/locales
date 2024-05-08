@@ -1,4 +1,4 @@
-import { removeUndefinedLocaleResources } from 'sanity'
+import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The close comments button text */
@@ -25,6 +25,7 @@ export default removeUndefinedLocaleResources({
   'compose.send-comment-aria-label': '送出留言',
   /** When composing a comment, the tooltip text for the button to send a comment */
   'compose.send-comment-tooltip': '送出留言',
+
   /** The inspector text when error copying link */
   'copy-link-error-message': '無法複製連結到剪貼簿',
 
