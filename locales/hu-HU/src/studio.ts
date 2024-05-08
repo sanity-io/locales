@@ -1519,7 +1519,7 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': 'Keresési eredmények',
 
   /** Accessibility label for the navbar status button */
-  'status-button.aria-label': 'Konfigurációs állapot',
+  'status-button.aria-label': 'Konfiguráció állapota',
 
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':

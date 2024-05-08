@@ -20,9 +20,9 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': 'Ugrás az előző feladatra',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'Biztosan törölni szeretné ezt a feladatot?',
+  'dialog.remove-task.body': 'Biztosan törölni szeretnéd ezt a feladatot?',
   /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': 'Egyszer törölve, nem állítható helyre.',
+  'dialog.remove-task.body2': 'A törlést követően, nem állítható vissza.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Mégse',
   /** The label for the confirmation button on the remove task dialog */
@@ -45,9 +45,9 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.document.heading': 'Ehhez a dokumentumhoz még nincsenek feladatok',
   'empty-state.list.document.text':
     'Amint a dokumentumhoz kapcsolódó feladatok lesznek, itt fognak megjelenni.',
-  'empty-state.list.subscribed.heading': 'Még nem iratkozott fel feladatokra',
+  'empty-state.list.subscribed.heading': 'Még nem iratkozotál fel feladatokra',
   'empty-state.list.subscribed.text':
-    'Amikor létrehoz, módosít vagy kommentál egy feladatot, automatikusan fel lesz iratkozva',
+    'Amikor létrehozol, módosítasz vagy kommentálsz egy feladatot, automatikusan fel leszel rá iratkozva',
   'empty-state.status.list.closed.assigned.heading': 'Nincsenek befejezett feladatok',
   'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
   'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'

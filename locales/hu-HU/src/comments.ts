@@ -115,7 +115,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Újrapróbálkozás',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': 'A kommentált szöveg törölve lett',
+  'list-item.missing-referenced-value-tooltip-content': 'A komment törölve lett',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Hozzászólás műveletek menüjének megnyitása',
   /** The button text to re-open a resolved comment  */
