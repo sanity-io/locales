@@ -7,6 +7,7 @@ name: AI translate
         description: Locale to auto translate
         options:
           - ALL
+          - ar-SA
           - be-BY
           - cs-CZ
           - da-DK
