@@ -3,6 +3,18 @@ import type {LocaleRegistry} from '../src/types'
 // See CONTRIBUTING.md for more information on how to add a new locale
 const registry: LocaleRegistry = [
   {
+    id: 'ar-SA',
+    name: 'العربية (السعودية)',
+    englishName: 'Arabic (Saudi Arabia)',
+    maintainers: ['f22hd'],
+    contributors: [],
+    weekInfo: {
+      firstDay: 7,
+      weekend: [5, 6],
+      minimalDays: 1,
+    },
+  },
+  {
     id: 'be-BY',
     name: 'Беларуская',
     englishName: 'Belarusian',
