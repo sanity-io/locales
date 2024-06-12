@@ -2,51 +2,52 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'ახალი დავალების შექმნა',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'დავალებები',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'დავალების შექმნა',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'გაუქმება',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'დრაფტი',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'ახალი დავალება',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'შემდეგი დავალებისკენ გადასვლა',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'წინა დავალებისკენ გადასვლა',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Are you sure you want to delete this task?'
+  'dialog.remove-task.body': 'დარწმუნებული ხართ, რომ გსურთ ამ დავალების წაშლა?',
   /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': undefined, // 'Once deleted, it cannot be restored.'
+  'dialog.remove-task.body2': 'წაშლილის შემდეგ, იგი ვერ აღდგება.',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'გაუქმება',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Remove'
+  'dialog.remove-task.buttons.confirm.text': 'წაშლა',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Remove task'
+  'dialog.remove-task.title': 'დავალების წაშლა',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
-  'document.footer.open-tasks.placeholder_one': undefined, // 'Open task'
+  'document.footer.open-tasks.placeholder_one': 'დავალების გახსნა',
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'დავალებების გახსნა',
   /** The label used in the button in the footer action in a document with a single task */
-  'document.footer.open-tasks.text_one': undefined, // '{{count}} open task'
+  'document.footer.open-tasks.text_one': '{{count}} ღია დავალება',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} ღია დავალება',
 
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
-  'empty-state.list.create-new': undefined, // 'Create new task'
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
+  'empty-state.list.assigned.heading': 'თქვენ ჯერ არ გეკუთვნიათ დავალებები',
+  'empty-state.list.assigned.text': 'როდესაც დაგეკუთვნებათ დავალებები, ისინი აქ გამოჩნდებიან',
+  'empty-state.list.create-new': 'ახალი დავალების შექმნა',
+  'empty-state.list.document.heading': 'ეს დოკუმენტი ჯერ არ აქვს დავალებები',
+  'empty-state.list.document.text': 'როდესაც დოკუმენტს ეკუთვნის დავალებები, ისინი აქ გამოჩნდებიან.',
+  'empty-state.list.subscribed.heading': 'თქვენ ჯერ არ გაქვთ დავალებებზე გამოწერა',
+  'empty-state.list.subscribed.text':
+    'როდესაც შექმნით, შეცვლით ან დააკომენტარებთ დავალებას, თქვენ ავტომატურად გამოგეწერებათ',
+  'empty-state.status.list.closed.assigned.heading': 'დასრულებული დავალებები არ არის',
   'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
   'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
   'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
@@ -92,33 +93,33 @@ export default removeUndefinedLocaleResources({
   /** The label for the copy link menu item */
   'menuitem.copylink.text': undefined, // 'Copy link to task'
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'წაშლის დავალება',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'დავალების დუბლირება',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'შექმნა ეს დავალება',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'აქტივობა',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'უცნობი მომხმარებელი',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'დახურეთ ზედაპირი',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'დაამატეთ კომენტარი...',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'შექმნა',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'დრაფტები',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'გახსენით დავალებები',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'დავალებები',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'დანიშნული',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'აქტიური დოკუმენტი',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'გამოწერილი',
 })
