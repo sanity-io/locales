@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.6](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.5...locale-es-es-v1.2.6) (2024-07-09)
+
+
+### Bug Fixes
+
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.2.5](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.4...locale-es-es-v1.2.5) (2024-05-08)
 
 

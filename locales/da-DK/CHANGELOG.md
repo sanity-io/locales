@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.1...locale-da-dk-v1.0.2) (2024-07-09)
+
+
+### Bug Fixes
+
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.0...locale-da-dk-v1.0.1) (2024-04-05)
 
 

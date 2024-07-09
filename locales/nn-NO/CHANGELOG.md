@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.7](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.6...locale-nn-no-v1.1.7) (2024-07-09)
+
+
+### Bug Fixes
+
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.1.6](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.5...locale-nn-no-v1.1.6) (2024-04-03)
 
 

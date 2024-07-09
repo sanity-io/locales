@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.4](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.3...locale-th-th-v1.1.4) (2024-07-09)
+
+
+### Bug Fixes
+
+* **th-TH:** automated translation updates ([#499](https://github.com/sanity-io/locales/issues/499)) ([77e172a](https://github.com/sanity-io/locales/commit/77e172aecdcb0fd243f0ce623d27ea6dc7dcb6e4))
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.2...locale-th-th-v1.1.3) (2024-04-03)
 
 

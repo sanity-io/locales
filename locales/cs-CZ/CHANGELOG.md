@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.4...locale-cs-cz-v1.1.5) (2024-07-09)
+
+
+### Bug Fixes
+
+* **cz-CZ:** add [@lukekaleta](https://github.com/lukekaleta) as maintainer ([1ecceca](https://github.com/sanity-io/locales/commit/1ecceca5733f6c65ce2ea3d4074e8cd1967325db)), closes [#482](https://github.com/sanity-io/locales/issues/482)
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.3...locale-cs-cz-v1.1.4) (2024-04-03)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.4...locale-ja-jp-v1.1.5) (2024-07-09)
+
+
+### Bug Fixes
+
+* **ja-JP:** add [@rikusen0335](https://github.com/rikusen0335) as maintainer ([5abe392](https://github.com/sanity-io/locales/commit/5abe3929d50dc7cfb7ac3f6af87ca0a3c43d25a4)), closes [#481](https://github.com/sanity-io/locales/issues/481)
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.3...locale-ja-jp-v1.1.4) (2024-04-03)
 
 
