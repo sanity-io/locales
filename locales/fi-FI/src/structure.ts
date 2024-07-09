@@ -347,7 +347,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Kaikki viime julkaisun jälkeiset muutokset on nyt hylätty. Hylätyn luonnoksen voi silti palauttaa historiasta',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Asiakirja kopioitiin onnistuneesti',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentti on julkaistu',
   /** The text when a restore operation succeeded  */
