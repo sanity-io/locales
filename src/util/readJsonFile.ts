@@ -1,5 +1,7 @@
 import fs from 'node:fs/promises'
-import type {ZodTypeAny, infer as zodInfer} from 'zod'
+
+import type {infer as zodInfer, ZodTypeAny} from 'zod'
+
 import {JsonParseErrorResolver} from '../types'
 
 /**
@@ -18,7 +20,7 @@ export async function readJsonFile<T extends ZodTypeAny>(
 ): Promise<zodInfer<T>> {
   const content = await fs.readFile(jsonFilePath, 'utf-8')
 
-  let parsed: any
+  let parsed: unknown
   try {
     parsed = JSON.parse(content)
   } catch (err: unknown) {

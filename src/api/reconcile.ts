@@ -1,5 +1,6 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
+
 import {getRootPath} from '../util/getRootPath'
 import {reconcileLocalePackages} from './locales'
 import {reconcileRegistry} from './registry'

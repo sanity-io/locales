@@ -1,6 +1,6 @@
 import type {Locale, MissingResources} from '../types'
-import {writeFormattedFile} from '../util/writeFormattedFile'
 import {getOrderedResources} from '../util/getOrderedResources'
+import {writeFormattedFile} from '../util/writeFormattedFile'
 import {buildResourceBundle} from './builders/buildResourceBundle'
 
 export async function reconcileResources(locale: Locale): Promise<void> {

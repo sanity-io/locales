@@ -1,10 +1,11 @@
+import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
+
+import {i18nDemo} from './i18n'
 import {locales} from './locales'
 import {localizationTest} from './schemas/localizationTest'
 import {structureDefinition} from './structure/definition'
-import {i18nDemo} from './i18n'
 
 export default defineConfig({
   title: 'Localization',

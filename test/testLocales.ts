@@ -1,8 +1,10 @@
 import {platform} from 'node:os'
-import {pathToFileURL} from 'node:url'
 import {describe, test} from 'node:test'
+import {pathToFileURL} from 'node:url'
+
 import {expect} from 'expect'
 import type {LocaleDefinition, LocaleResourceRecord, PluginOptions} from 'sanity'
+
 import {getLocaleRegistry} from '../src/api/registry'
 import {getBaseNamespaces} from '../src/util/getBaseNamespaces'
 
@@ -24,8 +26,8 @@ describe('locales', async () => {
         if (!Array.isArray(plug.i18n.locales)) throw new Error('Locales not an array')
         return plug.i18n.locales[0]
       }
-      const isDefaultRecord = (theMod: any): theMod is {default: LocaleResourceRecord} =>
-        'default' in theMod
+      const isDefaultRecord = (theMod: unknown): theMod is {default: LocaleResourceRecord} =>
+        typeof theMod === 'object' && theMod !== null && 'default' in theMod
 
       // The tests!
       await t.test('has correct export name', () => {

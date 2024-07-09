@@ -1,7 +1,8 @@
-import {platform} from 'node:os'
-import {pathToFileURL} from 'node:url'
 import {readFile} from 'node:fs/promises'
+import {platform} from 'node:os'
 import {join as joinPath} from 'node:path'
+import {pathToFileURL} from 'node:url'
+
 import {localeRegistrySchema} from '../schemas'
 import type {Locale, LocaleEntry, LocaleRegistry} from '../types'
 import {getLocalesPath} from '../util/getLocalesPath'
@@ -97,7 +98,7 @@ async function loadRegistry(): Promise<LocaleRegistry> {
     )
   }
 
-  let mod: any
+  let mod: unknown
   try {
     mod = await import(
       platform() === 'win32' ? pathToFileURL(registryFilePath).href : registryFilePath
@@ -117,7 +118,7 @@ async function loadRegistry(): Promise<LocaleRegistry> {
   }
 
   try {
-    const registry: LocaleRegistry = mod.default
+    const registry = mod.default
     return localeRegistrySchema.parse(registry)
   } catch (err: unknown) {
     throw new Error(

@@ -1,6 +1,8 @@
 import {readFile, writeFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
+
 import {format} from 'prettier'
+
 import {getRootPath} from './getRootPath'
 
 /**

@@ -1,7 +1,8 @@
-import {readFile} from 'fs/promises'
+import {readFile} from 'node:fs/promises'
 import {join as joinPath, relative as relativePath} from 'node:path'
-import {getLocaleRegistry} from '../registry'
+
 import {getRootPath} from '../../util/getRootPath'
+import {getLocaleRegistry} from '../registry'
 
 /**
  * Builds the root README.md file

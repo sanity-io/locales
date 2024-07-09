@@ -1,9 +1,10 @@
-import type {CallExpression, Node} from '@babel/types'
 import traverse from '@babel/traverse'
-import {type ProxifiedModule, loadFile} from 'magicast'
+import type {CallExpression, Node} from '@babel/types'
 import {globby} from 'globby'
-import {getRootPath} from './getRootPath'
+import {loadFile, type ProxifiedModule} from 'magicast'
+
 import type {BaseResource, ResourceBundle} from '../types'
+import {getRootPath} from './getRootPath'
 import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 
 const DEPENDENCIES = ['sanity', '@sanity/vision']

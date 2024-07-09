@@ -1,4 +1,5 @@
 import {parse} from 'json5'
+
 import {JsonParseErrorResolver} from '../../types'
 
 const pathEntryRegex = /^\s+".*?": \[".*?"\],?$/

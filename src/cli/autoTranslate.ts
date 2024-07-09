@@ -1,5 +1,7 @@
-import dotenv from 'dotenv'
 import {parseArgs} from 'node:util'
+
+import dotenv from 'dotenv'
+
 import {autoTranslate, pushChanges} from '../api/autoTranslate'
 import {runScript} from '../util/runScript'
 

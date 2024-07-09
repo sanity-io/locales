@@ -1,5 +1,6 @@
 import {TrashIcon} from '@sanity/icons'
 import type {ListBuilder, StructureBuilder} from 'sanity/desk'
+
 import {localizationTest} from '../schemas/localizationTest'
 import {TestDocumentDeleter} from './TestDocumentDeleter'
 

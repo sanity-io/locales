@@ -1,4 +1,5 @@
 import {join as joinPath, relative as relativePath} from 'node:path'
+
 import {releasePleaseSchema} from '../schemas'
 import {ReleasePleaseConfig} from '../types'
 import {getRootPath} from '../util/getRootPath'
@@ -47,8 +48,10 @@ function getDefaultReleasePleaseConfig(): ReleasePleaseConfig {
   }
 }
 
-function removeLocalePackages(packages: Record<string, {}>): Record<string, {}> {
-  const newPackages: Record<string, {}> = {}
+function removeLocalePackages(
+  packages: Record<string, Record<string, unknown>>,
+): Record<string, Record<string, unknown>> {
+  const newPackages: Record<string, Record<string, unknown>> = {}
   for (const pkg in packages) {
     if (!pkg.startsWith('locales/')) {
       newPackages[pkg] = packages[pkg]

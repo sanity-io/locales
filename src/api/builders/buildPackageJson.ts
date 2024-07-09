@@ -1,9 +1,10 @@
 import {join as joinPath} from 'node:path'
+
+import {packageJsonSchema} from '../../schemas'
 import type {Locale, PackageJson} from '../../types'
 import {getLocalePath} from '../../util/getLocalesPath'
-import {readJsonFile} from '../../util/readJsonFile'
 import {getRootPath} from '../../util/getRootPath'
-import {packageJsonSchema} from '../../schemas'
+import {readJsonFile} from '../../util/readJsonFile'
 
 const MINIMUM_SANITY_VERSION = '3.22.0'
 

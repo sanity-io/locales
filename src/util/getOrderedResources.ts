@@ -1,13 +1,14 @@
 import {platform} from 'node:os'
 import {pathToFileURL} from 'node:url'
+
 import {getLocaleRegistry} from '../api/registry'
 import {resourcesSchema} from '../schemas'
 import type {
   Locale,
   LocaleWithBundles,
   LocaleWithResources,
-  NamespaceModule,
   NamespacedBaseResources,
+  NamespaceModule,
   OrderedResources,
   Resource,
 } from '../types'

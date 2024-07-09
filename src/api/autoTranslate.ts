@@ -1,7 +1,9 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
+
 import OpenAI from 'openai'
 import pMap from 'p-map'
+
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
 import type {Locale, Resource} from '../types'

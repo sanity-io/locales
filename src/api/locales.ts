@@ -1,5 +1,6 @@
 import {copyFile, mkdir, readFile, writeFile} from 'node:fs/promises'
 import {join as joinPath} from 'node:path'
+
 import type {Locale} from '../types'
 import {getLocaleSourcePath} from '../util/getLocalesPath'
 import {getRootPath} from '../util/getRootPath'

@@ -8,6 +8,7 @@
  * the published ones.
  */
 import {join as joinPath, relative as relativePath} from 'node:path'
+
 import {packageJsonSchema, tsConfigSchema} from '../schemas'
 import type {Locale, TSConfig} from '../types'
 import {getRootPath} from '../util/getRootPath'

@@ -1,4 +1,5 @@
-import {LocaleDefinition, isRecord} from 'sanity'
+import {isRecord, LocaleDefinition} from 'sanity'
+
 import type {Locale} from '../../types'
 import {getBaseNamespaces} from '../../util/getBaseNamespaces'
 import {buildStringLiteral} from './buildStringLiteral'

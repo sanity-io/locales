@@ -1,9 +1,11 @@
-import {join as joinPath} from 'node:path'
 import {readFile} from 'node:fs/promises'
-import {load as loadYaml, dump as dumpYaml} from 'js-yaml'
+import {join as joinPath} from 'node:path'
+
+import {dump as dumpYaml, load as loadYaml} from 'js-yaml'
+
+import {aiTranslateWorkflowSchema} from '../schemas'
 import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
-import {aiTranslateWorkflowSchema} from '../schemas'
 import {getLocaleRegistry} from './registry'
 
 const WORKFLOWS_RELATIVE_PATH = joinPath('.github', 'workflows')

@@ -1,6 +1,7 @@
 import {join as joinPath} from 'path'
-import {getRootPath} from './getRootPath'
+
 import {Locale} from '../types'
+import {getRootPath} from './getRootPath'
 
 /**
  * Get the path to the `locales` directory

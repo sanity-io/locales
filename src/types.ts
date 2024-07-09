@@ -1,4 +1,5 @@
 import type {infer as zodInfer} from 'zod'
+
 import type {
   aiTranslateWorkflowSchema,
   githubFileSchema,
@@ -246,7 +247,7 @@ export interface LocaleWithResources extends Locale {
  * @throws If unable to resolve errors
  * @internal
  */
-export type JsonParseErrorResolver = (content: string, error: unknown) => any
+export type JsonParseErrorResolver = (content: string, error: unknown) => unknown
 
 /**
  * A minimal GitHub PR type
