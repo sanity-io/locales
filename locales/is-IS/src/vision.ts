@@ -39,7 +39,7 @@ export default removeUndefinedLocaleResources({
   /** Label for "Result" explorer/view */
   'result.label': 'Niðurstaða',
   /** Tooltip text shown when the query result is not encodable as CSV */
-  'result.save-result-as-csv.not-csv-encodable': 'Niðurstaðan er ekki hægt að kóða sem CSV',
+  'result.save-result-as-csv.not-csv-encodable': 'Niðurstöðuna er ekki hægt að umrita sem CSV',
   /** Label for "Save result as" result action */
   'result.save-result-as-format': 'Vista niðurstöðu sem <SaveResultButtons/>',
   /**
