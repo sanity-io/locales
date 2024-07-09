@@ -97,7 +97,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
       )
       const ns = locale.namespaces.find((namespace) => namespace.namespace === entry.namespace)
       if (!ns) {
-        logger(`Could not find namespace ${entry.namespace} in locale ${localeName}`)
+        logger(`[${locale.id}] Could not find namespace ${entry.namespace} in locale ${localeName}`)
         continue
       }
 
@@ -141,7 +141,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
 
             const translated = translation[key.key]
             if (!translated) {
-              logger(`[WARN] No translation returned for ${key.key}`)
+              logger(`[${locale.id}] [WARN] No translation returned for ${key.key}`)
               continue
             }
 
