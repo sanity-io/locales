@@ -326,7 +326,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Tất cả các thay đổi kể từ lần xuất bản cuối cùng đã được loại bỏ. Bản nháp đã loại bỏ vẫn có thể được khôi phục từ lịch sử',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Tài liệu đã được nhân bản thành công',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Tài liệu đã được xuất bản',
   /** The text when a restore operation succeeded  */
