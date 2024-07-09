@@ -344,6 +344,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Sve promjene od posljednjeg objavljivanja su sada odbačene. Odbačeni nacrt još uvijek se može oporaviti iz povijesti',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument je objavljen',
   /** The text when a restore operation succeeded  */

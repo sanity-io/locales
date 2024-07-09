@@ -351,6 +351,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Alle Änderungen seit der letzten Veröffentlichung wurden verworfen. Der verworfene Entwurf kann noch aus der Historie wiederhergestellt werden',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Das Dokument wurde veröffentlicht',
   /** The text when a restore operation succeeded  */

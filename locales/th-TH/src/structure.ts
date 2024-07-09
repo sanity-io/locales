@@ -319,6 +319,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'การเปลี่ยนแปลงทั้งหมดนับตั้งแต่การเผยแพร่ครั้งล่าสุดได้ถูกทิ้งไปแล้ว ร่างที่ถูกทิ้งนี้ยังสามารถกู้คืนได้จากประวัติ',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'เอกสารได้รับการเผยแพร่',
   /** The text when a restore operation succeeded  */

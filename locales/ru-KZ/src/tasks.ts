@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   'buttons.draft.text': 'Черновик',
   /** The label for the button to create a new task */
   'buttons.new.text': 'Новая задача',
+  /** The text for tooltip in the create a new task button when mode is upsell */
+  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Перейти к следующей задаче',
   /** The label for the button that will previous to the next task */
@@ -21,8 +23,6 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the remove task dialog asking for confirmation of deletion */
   'dialog.remove-task.body': 'Вы уверены, что хотите удалить эту задачу?',
-  /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': 'После удаления восстановить её будет невозможно.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Отмена',
   /** The label for the confirmation button on the remove task dialog */
@@ -35,44 +35,75 @@ export default removeUndefinedLocaleResources({
   /** The label used in the button in the footer action in a document with a single task */
   'document.footer.open-tasks.text_one': '{{count}} открытая задача',
 
+  /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.heading': 'Вам не назначено никаких задач',
+  /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.text': 'Как только вам будут назначены задачи, они появятся здесь',
+  /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'Создать новую задачу',
+  /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.heading': 'У этого документа пока нет задач',
+  /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.text':
     'Как только к документу будут привязаны задачи, они будут отображены здесь.',
+  /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': 'Вы не подписаны ни на одну задачу',
+  /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
     'Когда вы создаете, изменяете или комментируете задачу, вы автоматически подписываетесь на неё',
+  /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': 'Нет завершенных задач',
+  /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.text':
     'Здесь будут показаны ваши задачи, отмеченные как выполненные',
+  /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.document.heading': 'Нет завершенных задач',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.heading': 'Нет завершенных задач',
+  /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
     'Задачи, на которые вы подписаны и отмечены как выполненные, появятся здесь',
+  /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'Вы все сделали',
+  /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text': 'Новые задачи, назначенные вам, появятся здесь',
+  /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'Нет задач по этому документу',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.heading': 'Нет подписанных задач',
+  /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.text': 'Задачи, на которые вы подписаны, появятся здесь',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Не назначено',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Пользователи не найдены',
   /** Placeholder text used in the search box in the assignee input */
   'form.input.assignee.search.placeholder': 'Выберите имя пользователя',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Неавторизован',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Пользователь не найден',
   /** The label used in the create more toggle */
   'form.input.create-more.text': 'Создать еще',
+  /** The label used in the date input button tooltip when it's empty */
+  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': 'Удалить',
+  /** The label used in the date input button tooltip when it has value */
+  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': 'Добавить описание',
+  /**  Text used in the tooltip in the status change button  */
+  'form.input.status.button.tooltip': undefined, // 'Change status'
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'Удалить целевой контент',
   /** The text used in the target input when encountering a schema error */
@@ -88,6 +119,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text displayed when no tasks are found */
   'list.empty.text': 'Нет задач',
+  /** The text displayed at the bottom of the tasks list inviting users provide feedback */
+  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Скопировать ссылку на задачу',
@@ -95,6 +128,8 @@ export default removeUndefinedLocaleResources({
   'menuitem.delete.text': 'Удалить задачу',
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Дублировать задачу',
+  /** The text for the duplicate task menu item tooltip when mode is upsell */
+  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'создал эту задачу',
@@ -106,6 +141,8 @@ export default removeUndefinedLocaleResources({
   'panel.close.tooltip': 'Закрыть боковую панель',
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Добавить комментарий...',
+  /** The placeholder text for the comment text box when mode is upsell */
+  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Создать',
   /** The title used in the drafts pulldown */

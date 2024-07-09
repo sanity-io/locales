@@ -341,6 +341,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Öllum breytingum síðan síðast var birt hefur nú verið hent. Hægt er að endurheimta hentum drögum úr sögunni',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Skjalið var birt',
   /** The text when a restore operation succeeded  */

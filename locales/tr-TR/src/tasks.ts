@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   'buttons.draft.text': 'Taslak',
   /** The label for the button to create a new task */
   'buttons.new.text': 'Yeni görev',
+  /** The text for tooltip in the create a new task button when mode is upsell */
+  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Sonraki göreve git',
   /** The label for the button that will previous to the next task */
@@ -21,8 +23,6 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the remove task dialog asking for confirmation of deletion */
   'dialog.remove-task.body': 'Bu görevi silmek istediğinizden emin misiniz?',
-  /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': 'Bir kez silindiğinde, geri yüklenemez.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'İptal',
   /** The label for the confirmation button on the remove task dialog */
@@ -39,42 +39,73 @@ export default removeUndefinedLocaleResources({
   /** The label used in the button in the footer action in a document with multiple tasks */
   'document.footer.open-tasks.text_other': '{{count}} açık görev',
 
+  /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.heading': 'Henüz bir göreve atanmadınız',
+  /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.text': 'Atandığınız görevler burada gösterilecek',
+  /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'Yeni görev oluştur',
+  /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.heading': 'Bu belgenin henüz bir görevi yok',
+  /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.text': 'Bir belgeye görevler bağlandığında, burada gösterilecekler.',
+  /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': 'Herhangi bir göreve abone olmadınız',
+  /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
     'Bir görev oluşturduğunuzda, değiştirdiğinizde veya yorum yaptığınızda otomatik olarak abone olursunuz',
+  /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': 'Tamamlanmış görev yok',
+  /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.text': 'Tamamlanan görevleriniz burada gösterilecek',
+  /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.document.heading': 'Tamamlanan görev yok',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.heading': 'Tamamlanan görev yok',
+  /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
     'Abone olduğunuz ve tamamlanan görevler burada gösterilecek',
+  /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'Her şey güncel',
+  /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text': 'Size atanan yeni görevler burada gösterilecek',
+  /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'Bu belgede görev yok',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.heading': 'Abone olunan görev yok',
+  /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.text': 'Abone olduğunuz görevler burada gösterilecek',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Atanmamış',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Kullanıcı bulunamadı',
   /** Placeholder text used in the search box in the assignee input */
   'form.input.assignee.search.placeholder': 'Kullanıcı adı seçin',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Yetkisiz',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Kullanıcı bulunamadı',
   /** The label used in the create more toggle */
   'form.input.create-more.text': 'Daha fazla oluştur',
+  /** The label used in the date input button tooltip when it's empty */
+  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': 'Kaldır',
+  /** The label used in the date input button tooltip when it has value */
+  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': 'Açıklama ekleyin',
+  /**  Text used in the tooltip in the status change button  */
+  'form.input.status.button.tooltip': undefined, // 'Change status'
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'Hedef içeriği kaldır',
   /** The text used in the target input when encountering a schema error */
@@ -90,6 +121,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text displayed when no tasks are found */
   'list.empty.text': 'Görev yok',
+  /** The text displayed at the bottom of the tasks list inviting users provide feedback */
+  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Göreve bağlantıyı kopyala',
@@ -97,6 +130,8 @@ export default removeUndefinedLocaleResources({
   'menuitem.delete.text': 'Görevi sil',
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Görevi kopyala',
+  /** The text for the duplicate task menu item tooltip when mode is upsell */
+  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'bu görevi oluşturdu',
@@ -108,6 +143,8 @@ export default removeUndefinedLocaleResources({
   'panel.close.tooltip': 'Kenar çubuğunu kapat',
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Yorum ekle...',
+  /** The placeholder text for the comment text box when mode is upsell */
+  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Oluştur',
   /** The title used in the drafts pulldown */

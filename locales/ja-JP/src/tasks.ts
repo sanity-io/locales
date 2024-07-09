@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   'buttons.draft.text': 'ドラフト',
   /** The label for the button to create a new task */
   'buttons.new.text': '新しいタスク',
+  /** The text for tooltip in the create a new task button when mode is upsell */
+  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': '次のタスクに進む',
   /** The label for the button that will previous to the next task */
@@ -21,8 +23,6 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the remove task dialog asking for confirmation of deletion */
   'dialog.remove-task.body': 'このタスクを削除してもよろしいですか？',
-  /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': '一度削除すると、復元することはできません。',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'キャンセル',
   /** The label for the confirmation button on the remove task dialog */
@@ -35,43 +35,74 @@ export default removeUndefinedLocaleResources({
   /** The label used in the button in the footer action in a document with multiple tasks */
   'document.footer.open-tasks.text_other': '{{count}}個の開いているタスク',
 
+  /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.heading': 'あなたに割り当てられたタスクはありません',
+  /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.text': 'タスクが割り当てられると、ここに表示されます',
+  /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': '新しいタスクを作成',
+  /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.heading': 'このドキュメントにはまだタスクがありません',
+  /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.text': 'ドキュメントに関連するタスクがある場合、ここに表示されます。',
+  /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': 'あなたはどのタスクにも購読していません',
+  /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
     'タスクを作成、変更、またはコメントすると自動的に購読されます',
+  /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': '完了したタスクはありません',
+  /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.text': '完了とマークされたタスクはここに表示されます',
+  /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.document.heading': '完了したタスクはありません',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.heading': '完了したタスクはありません',
+  /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
     '完了とマークされた購読しているタスクがここに表示されます',
+  /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'すべてのタスクが完了しました',
+  /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text':
     'あなたに割り当てられた新しいタスクがここに表示されます',
+  /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'このドキュメントにタスクはありません',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.heading': '購読しているタスクはありません',
+  /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.text': '購読しているタスクがここに表示されます',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': '割り当てられていません',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'ユーザーが見つかりません',
   /** Placeholder text used in the search box in the assignee input */
   'form.input.assignee.search.placeholder': 'ユーザー名を選択',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': '許可されていません',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'ユーザーが見つかりません',
   /** The label used in the create more toggle */
   'form.input.create-more.text': 'さらに作成',
+  /** The label used in the date input button tooltip when it's empty */
+  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': '削除',
+  /** The label used in the date input button tooltip when it has value */
+  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': '説明を追加',
+  /**  Text used in the tooltip in the status change button  */
+  'form.input.status.button.tooltip': undefined, // 'Change status'
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'ターゲットコンテンツを削除',
   /** The text used in the target input when encountering a schema error */
@@ -87,6 +118,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text displayed when no tasks are found */
   'list.empty.text': 'タスクはありません',
+  /** The text displayed at the bottom of the tasks list inviting users provide feedback */
+  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'タスクへのリンクをコピー',
@@ -94,6 +127,8 @@ export default removeUndefinedLocaleResources({
   'menuitem.delete.text': 'タスクを削除',
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'タスクを複製',
+  /** The text for the duplicate task menu item tooltip when mode is upsell */
+  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'このタスクを作成しました',
@@ -105,6 +140,8 @@ export default removeUndefinedLocaleResources({
   'panel.close.tooltip': 'サイドバーを閉じる',
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'コメントを追加...',
+  /** The placeholder text for the comment text box when mode is upsell */
+  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': '作成',
   /** The title used in the drafts pulldown */

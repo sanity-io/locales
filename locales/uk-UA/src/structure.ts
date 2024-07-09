@@ -324,6 +324,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Усі зміни з моменту останньої публікації було скасовано. Відкинутий чернет можна відновити з історії',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Документ було опубліковано',
   /** The text when a restore operation succeeded  */

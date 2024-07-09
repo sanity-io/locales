@@ -343,6 +343,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'ყველა ცვლილება ბოლო გამოქვეყნებიდან ახლა გაუქმდა. გაუქმებული ჩანაწერი კვლავ აღდგენილი შეიძლება ისტორიიდან',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> გამოქვეყნდა',

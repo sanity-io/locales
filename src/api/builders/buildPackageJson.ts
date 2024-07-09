@@ -68,7 +68,6 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
     type: 'module',
     exports: {
       '.': {
-        types: './dist/index.d.ts',
         source: './src/index.ts',
         import: './dist/index.js',
         require: './dist/index.cjs',
@@ -78,7 +77,6 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
     },
     main: './dist/index.cjs',
     module: './dist/index.js',
-    source: './src/index.ts',
     types: './dist/index.d.ts',
   }
 

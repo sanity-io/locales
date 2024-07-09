@@ -341,6 +341,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Son yayından bu yana yapılan tüm değişiklikler şimdi atıldı. Atılan taslak hala geçmişten kurtarılabilir',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Belge yayınlandı',
   /** The text when a restore operation succeeded  */

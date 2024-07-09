@@ -337,6 +337,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     '마지막 발행 이후의 모든 변경 사항이 이제 폐기되었습니다. 폐기된 초안은 여전히 기록에서 복구할 수 있습니다',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': '문서가 발행되었습니다',
   /** The text when a restore operation succeeded  */

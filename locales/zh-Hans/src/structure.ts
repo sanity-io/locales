@@ -311,6 +311,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     '自上次发布以来的所有更改现已被丢弃。被丢弃的草稿仍可从历史记录中恢复',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': '文档已发布',
   /** The text when a restore operation succeeded  */

@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   'buttons.draft.text': 'Borrador',
   /** The label for the button to create a new task */
   'buttons.new.text': 'Nueva tarea',
+  /** The text for tooltip in the create a new task button when mode is upsell */
+  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Ir a la siguiente tarea',
   /** The label for the button that will previous to the next task */
@@ -21,8 +23,6 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the remove task dialog asking for confirmation of deletion */
   'dialog.remove-task.body': '¿Estás seguro de que quieres eliminar esta tarea?',
-  /** Text for the remove task dialog clarifying that deletion is permanent */
-  'dialog.remove-task.body2': 'Una vez eliminada, no se puede restaurar.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Cancelar',
   /** The label for the confirmation button on the remove task dialog */
@@ -39,44 +39,75 @@ export default removeUndefinedLocaleResources({
   /** The label used in the button in the footer action in a document with multiple tasks */
   'document.footer.open-tasks.text_other': '{{count}} tareas pendientes',
 
+  /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.heading': 'No se te han asignado tareas',
+  /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.text': 'Una vez que se te asignen tareas, aparecerán aquí',
+  /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'Crear nueva tarea',
+  /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.heading': 'Este documento aún no tiene tareas',
+  /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.text':
     'Una vez que un documento tenga tareas conectadas, se mostrarán aquí.',
+  /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
+  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': 'No estás suscrito a ninguna tarea',
+  /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
     'Cuando crees, modifiques o comentes en una tarea, te suscribirás automáticamente',
+  /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': 'No hay tareas completadas',
+  /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.text': 'Tus tareas marcadas como hechas aparecerán aquí',
+  /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.document.heading': 'No hay tareas completadas',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.heading': 'No hay tareas completadas',
+  /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
     'Las tareas a las que te suscribes marcadas como hechas aparecerán aquí',
+  /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'Estás al día',
+  /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text': 'Las nuevas tareas asignadas a ti aparecerán aquí',
+  /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'No hay tareas en este documento',
+  /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.heading': 'No hay tareas suscritas',
+  /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.text':
     'Las tareas a las que te suscribes aparecerán aquí',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'No asignado',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'No se encontraron usuarios',
   /** Placeholder text used in the search box in the assignee input */
   'form.input.assignee.search.placeholder': 'Seleccionar nombre de usuario',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'No autorizado',
+  /** Text used in the assignee input tooltip when there is no user assigned */
+  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Usuario no encontrado',
   /** The label used in the create more toggle */
   'form.input.create-more.text': 'Crear más',
+  /** The label used in the date input button tooltip when it's empty */
+  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': 'Eliminar',
+  /** The label used in the date input button tooltip when it has value */
+  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': 'Añadir descripción',
+  /**  Text used in the tooltip in the status change button  */
+  'form.input.status.button.tooltip': undefined, // 'Change status'
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'Eliminar contenido objetivo',
   /** The text used in the target input when encountering a schema error */
@@ -92,6 +123,8 @@ export default removeUndefinedLocaleResources({
 
   /** The text displayed when no tasks are found */
   'list.empty.text': 'No hay tareas',
+  /** The text displayed at the bottom of the tasks list inviting users provide feedback */
+  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Copiar enlace a la tarea',
@@ -99,6 +132,8 @@ export default removeUndefinedLocaleResources({
   'menuitem.delete.text': 'Eliminar tarea',
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Duplicar tarea',
+  /** The text for the duplicate task menu item tooltip when mode is upsell */
+  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'creó esta tarea',
@@ -110,6 +145,8 @@ export default removeUndefinedLocaleResources({
   'panel.close.tooltip': 'Cerrar barra lateral',
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Añadir un comentario...',
+  /** The placeholder text for the comment text box when mode is upsell */
+  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Crear',
   /** The title used in the drafts pulldown */

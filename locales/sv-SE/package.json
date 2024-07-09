@@ -42,7 +42,6 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "source": "./src/index.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
@@ -52,7 +51,6 @@
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",

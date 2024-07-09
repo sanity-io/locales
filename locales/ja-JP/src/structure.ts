@@ -343,6 +343,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     '最後の公開以降のすべての変更が破棄されました。破棄されたドラフトは履歴から回復することができます',
+  /** The text when a duplicate operation succeeded  */
+  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'ドキュメントが公開されました',
   /** The text when a restore operation succeeded  */
