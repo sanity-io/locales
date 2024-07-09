@@ -20,7 +20,12 @@
     "directory": "locales/cs-CZ"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "lukekaleta",
+      "url": "https://github.com/lukekaleta"
+    }
+  ],
   "sideEffects": false,
   "type": "module",
   "exports": {
