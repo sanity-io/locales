@@ -93,7 +93,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         continue
       }
       logger(
-        `Found ${entry.missingKeys.length} missing resources for ${localeName} in ${entry.namespace}`,
+        `[${locale.id}] Found ${entry.missingKeys.length} missing resources for ${localeName} in ${entry.namespace}`,
       )
       const ns = locale.namespaces.find((namespace) => namespace.namespace === entry.namespace)
       if (!ns) {
@@ -123,7 +123,7 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         async function translateBatch(currentBatch, index) {
           const tpl = templateMissingResources(ns.indexedResources, currentBatch)
           logger(
-            `[${locale.name}] Translating ${index + 1}/${
+            `[${locale.id}] Translating ${index + 1}/${
               batches.length
             } key batches for namespace ${ns.namespace}`,
           )
