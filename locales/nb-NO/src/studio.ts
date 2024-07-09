@@ -389,13 +389,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Ingen element med `_key` <code>"{{key}}"</code> funnet i stien <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': 'Kallstakk:',
+  'form.error.unhandled-runtime-error.call-stack.title': 'Call Stack:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': 'Komponentstakk:',
+  'form.error.unhandled-runtime-error.component-stack.title': 'Component Stack:',
   /** The error message for the unhandled error that crashed the Input component during render */
   'form.error.unhandled-runtime-error.error-message': 'Feil: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': 'Uhåndtert kjøretidsfeil',
+  'form.error.unhandled-runtime-error.title': 'Unhandled Runtime Error',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'Utfaset',
   /** Fallback title shown above field if it has no defined title */
@@ -1025,7 +1025,7 @@ export default removeUndefinedLocaleResources({
     'Du har ikke tilgang til å slette dette dokumentet.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
-    'Du har ikke tillatelse til å slette tidsplaner.',
+    'Du har ikke tillatelse til å slette publiseringsplaner.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Du har ikke tilgang til å forkaste endringer i dette dokumentet.',
@@ -1034,10 +1034,10 @@ export default removeUndefinedLocaleResources({
     'Du har ikke tilgang til å duplisere dette dokumentet.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
-    'Du har ikke tillatelse til å redigere tidsplaner.',
+    'Du har ikke tillatelse til å redigere publiseringsplaner.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
-    'Du har ikke tillatelse til å utføre tidsplaner.',
+    'Du har ikke tillatelse til å utføre publiseringsplaner.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Du har ikke tilgang til å publisere dette dokumentet.',
@@ -1081,9 +1081,9 @@ export default removeUndefinedLocaleResources({
 
   /** More detailed alert text letting user know they have an out-of-date version and should reload */
   'package-version.new-package-available.description':
-    'Bare last inn på nytt for å bruke den nye versjonen.',
+    'Last siden på nytt for å bruke den nye versjonen.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': 'Last inn på nytt',
+  'package-version.new-package-available.reload-button': 'Last siden på nytt',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio ble oppdatert',
 
@@ -1639,7 +1639,7 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accesibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': 'Brødsmulemeny',
+  'tree-editing-dialog.breadcrumbs.menu': 'Brødsmulenavigasjon',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Søk',
   /** Menu aria label for the search menu */

@@ -124,7 +124,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': 'Ingen oppgaver',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': 'Hjelp oss å forbedre, <Link>del tilbakemelding om Oppgaver</Link>',
+  'list.feedback.text': 'Hjelp oss å forbedre, <Link>del tilbakemelding om Tasks</Link>',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Kopier lenke til oppgaven',
