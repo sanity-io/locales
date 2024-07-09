@@ -15,7 +15,7 @@
     "start": "sanity start"
   },
   "dependencies": {
-    "@sanity/icons": "^2.10.3",
+    "@sanity/icons": "^3.3.0",
     "@sanity/locale-be-by": "workspace:*",
     "@sanity/locale-cs-cz": "workspace:*",
     "@sanity/locale-da-dk": "workspace:*",
@@ -45,20 +45,20 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^2.0.14",
+    "@sanity/ui": "^2.6.3",
     "@sanity/vision": "^3.49.0",
-    "groq": "^3.36.4",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "react-is": "^18.3.0",
+    "groq": "^3.49.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
     "sanity": "^3.49.0",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^3.0.1",
-    "@types/react": "^18.2.61",
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "@types/react": "^18.3.3",
     "eslint": "^8.57.0",
-    "prettier": "^3.1.1",
+    "prettier": "^3.3.2",
     "typescript": "^5.3.3"
   }
 }
