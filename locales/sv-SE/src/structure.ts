@@ -346,7 +346,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Alla ändringar sedan senaste publiceringen har nu kasserats. Det kasserade utkastet kan fortfarande återhämtas från historiken',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Dokumentet duplicerades framgångsrikt',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentet publicerades',
   /** The text when a restore operation succeeded  */
