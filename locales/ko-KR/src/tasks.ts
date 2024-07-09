@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.new.text': '새 작업',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
+  'buttons.new.upsell-tooltip': '업그레이드하여 작업 생성',
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': '다음 작업으로 이동',
   /** The label for the button that will previous to the next task */
@@ -46,9 +46,9 @@ export default removeUndefinedLocaleResources({
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.text': '문서에 연결된 작업이 있으면 여기에 표시됩니다.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  'empty-state.list.no-active-document.heading': '문서를 열어 해당 작업을 확인하세요',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  'empty-state.list.no-active-document.text': '활성 문서의 작업이 여기에 표시됩니다.',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': '구독한 작업이 없습니다',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
@@ -78,7 +78,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': '할당되지 않음',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
+  'form.input.assignee.no-user-assigned.tooltip': '담당자 설정',
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': '사용자를 찾을 수 없음',
   /** Placeholder text used in the search box in the assignee input */
@@ -86,21 +86,21 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': '권한 없음',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
+  'form.input.assignee.user-assigned.tooltip': '담당자 변경',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': '사용자를 찾을 수 없음',
   /** The label used in the create more toggle */
   'form.input.create-more.text': '더 생성하기',
   /** The label used in the date input button tooltip when it's empty */
-  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
+  'form.input.date.buttons.empty.tooltip': '마감일 설정',
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': '제거하기',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
+  'form.input.date.buttons.tooltip': '마감일 변경',
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': '설명 추가',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': undefined, // 'Change status'
+  'form.input.status.button.tooltip': '상태 변경',
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': '대상 콘텐츠 제거',
   /** The text used in the target input when encountering a schema error */
@@ -117,7 +117,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': '작업 없음',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
+  'list.feedback.text': '개선을 도와주세요, <Link>작업에 대한 피드백 공유하기</Link>',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': '작업에 대한 링크 복사',
@@ -126,7 +126,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': '작업 복제',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
+  'menuitem.duplicate.upsell-tooltip': '업그레이드하여 작업 복제',
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': '이 작업을 생성함',
@@ -139,7 +139,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': '댓글 추가...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
+  'panel.comment.placeholder.upsell': '업그레이드하여 작업에 댓글 달기',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': '생성',
   /** The title used in the drafts pulldown */

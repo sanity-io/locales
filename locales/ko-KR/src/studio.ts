@@ -307,7 +307,7 @@ export default removeUndefinedLocaleResources({
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': '구성 문제',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '구성 문제 발견',
 
@@ -388,13 +388,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     '주어진 경로 <code>{{path}}</code>에서 `_key` <code>"{{key}}"</code>를 가진 배열 항목을 찾을 수 없습니다',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': '호출 스택:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': '컴포넌트 스택:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': '오류: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': '처리되지 않은 런타임 오류',
   /** Form field deprecated label */
   'form.field.deprecated-label': '사용되지 않음',
   /** Fallback title shown above field if it has no defined title */
@@ -496,15 +496,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': '예상치 못한 오류: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': '전체',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': '항목을 찾을 수 없음',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': '검색',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': '그리드 보기 전환',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': '목록 보기 전환',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': '항목 없음',
   /** Label for read only array fields */
@@ -512,7 +512,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': '초기 값을 확인하는 중…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': '비활성화됨',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '예: {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1022,7 +1022,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     '이 문서를 삭제할 수 있는 권한이 없습니다.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    '일정을 삭제할 권한이 없습니다.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     '이 문서의 변경 사항을 폐기할 수 있는 권한이 없습니다.',
@@ -1030,9 +1031,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     '이 문서를 복제할 수 있는 권한이 없습니다.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    '일정을 편집할 권한이 없습니다.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    '일정을 실행할 권한이 없습니다.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     '이 문서를 게시할 수 있는 권한이 없습니다.',
@@ -1075,11 +1078,12 @@ export default removeUndefinedLocaleResources({
   'new-document.title': '새 문서 만들기',
 
   /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': undefined, // 'Simply reload to use the new version.'
+  'package-version.new-package-available.description':
+    '새 버전을 사용하려면 페이지를 새로 고침하세요.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Reload'
+  'package-version.new-package-available.reload-button': '새로 고침',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio was updated'
+  'package-version.new-package-available.title': 'Sanity Studio가 업데이트되었습니다',
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': '멤버 관리',
@@ -1555,13 +1559,13 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': '검색 결과',
 
   /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
+  'sheet-list.edit-columns': '열 편집',
   /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
+  'sheet-list.hide-field': '테이블에서 제거',
   /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
+  'sheet-list.reset-columns': '열 재설정',
   /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
+  'sheet-list.select-fields': '최대 5개의 필드 유형 선택',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '구성 상태',
@@ -1582,7 +1586,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': '최신',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': '최신 수정본',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1636,23 +1640,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accesibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': '브레드크럼 메뉴',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': '검색',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': '검색 메뉴',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': '결과를 찾을 수 없음',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': '사이드바 닫기',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': '접기',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': '완료',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': '펼치기',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': '사이드바 열기',
 
   'user-menu.action.free-trial_other': '시험 사용 기간이 {{count}}일 남았습니다',
   /** Label for the button showed after trial ended */
