@@ -20,7 +20,12 @@
     "directory": "locales/ja-JP"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "rikusen0335",
+      "url": "https://github.com/rikusen0335"
+    }
+  ],
   "sideEffects": false,
   "type": "module",
   "exports": {

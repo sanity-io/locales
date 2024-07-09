@@ -83,7 +83,7 @@ const registry: LocaleRegistry = [
     id: 'ja-JP',
     name: '日本語',
     englishName: 'Japanese',
-    maintainers: [],
+    maintainers: ['rikusen0335'],
     contributors: [],
   },
   {
