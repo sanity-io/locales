@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.4...locale-vi-vn-v1.1.5) (2024-07-09)
+
+
+### Bug Fixes
+
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+* **vi-VN:** automated translation updates ([#502](https://github.com/sanity-io/locales/issues/502)) ([08d3010](https://github.com/sanity-io/locales/commit/08d301004ed80214b2f1313d9ba3bab4128a54e6))
+
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.3...locale-vi-vn-v1.1.4) (2024-04-03)
 
 

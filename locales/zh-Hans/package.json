@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-zh-hans",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "private": false,
   "description": "Chinese (Simplified) / 简体中文 locale/translation for Sanity Studio",
   "keywords": [

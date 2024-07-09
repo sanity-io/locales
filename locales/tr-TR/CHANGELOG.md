@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.6](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.5...locale-tr-tr-v1.2.6) (2024-07-09)
+
+
+### Bug Fixes
+
+* **tr-TR:** automated translation updates ([#500](https://github.com/sanity-io/locales/issues/500)) ([0872868](https://github.com/sanity-io/locales/commit/08728682a101bba4d5377870096d5b2e2543aac9))
+* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+
 ## [1.2.5](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.4...locale-tr-tr-v1.2.5) (2024-05-08)
 
 
