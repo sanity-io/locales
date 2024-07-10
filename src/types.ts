@@ -5,6 +5,7 @@ import type {
   githubFileSchema,
   githubLabelSchema,
   githubPrCommentSchema,
+  githubPrListSchema,
   githubPrSchema,
   githubReviewSchema,
   localeEntrySchema,
@@ -255,6 +256,13 @@ export type JsonParseErrorResolver = (content: string, error: unknown) => unknow
  * @internal
  */
 export type GitHubPR = zodInfer<typeof githubPrSchema>
+
+/**
+ * A minimal GitHub PR list type
+ *
+ * @internal
+ */
+export type GitHubPRList = zodInfer<typeof githubPrListSchema>
 
 /**
  * A minimal GitHub file type

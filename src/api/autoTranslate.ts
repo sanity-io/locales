@@ -17,6 +17,14 @@ const execFile = promisify(execFileCb)
 const OPENAI_MODEL = 'gpt-4-1106-preview'
 
 /**
+ * Prefix that preceeds the name of the auto-translated locale branch
+ * (or `translate` for the complete set)
+ *
+ * @internal
+ */
+export const AUTO_TRANSLATE_BRANCH_PREFIX = 'fix/auto'
+
+/**
  * Memoized getter for the OpenAI API client
  *
  * @internal
@@ -293,7 +301,12 @@ export async function pushChanges(): Promise<void> {
   }
 
   // Push the "all changes" branch
-  await execGitCommand(['push', 'origin', 'main:fix/auto/translate', '--force'])
+  await execGitCommand([
+    'push',
+    'origin',
+    `main:${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`,
+    '--force',
+  ])
 
   // Now revert to the original HEAD
   await execGitCommand(['reset', '--mixed', headSha])
@@ -309,7 +322,7 @@ export async function pushChanges(): Promise<void> {
     const hasMaintainers = locale.maintainers.length > 0
 
     // Switch to a branch for the given locale
-    const branchName = `fix/auto/${locale.id}`
+    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
     await execGitCommand(['checkout', '-B', branchName])
 
     // The locale has changes, add the changes to index and commit them

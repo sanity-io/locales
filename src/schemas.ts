@@ -251,6 +251,22 @@ export const githubPrSchema = z.object({
 })
 
 /**
+ * Minimal version of the output from `gh pr list` - only includes the parts we care about
+ *
+ * @internal
+ */
+export const githubPrListSchema = z.array(
+  z.object({
+    createdAt: z.string(),
+    headRefName: z.string(),
+    headRepository: z.object({id: z.string(), name: z.string()}),
+    headRepositoryOwner: z.object({id: z.string(), login: z.string()}),
+    mergeable: z.enum(['MERGEABLE', 'CONFLICTING', 'UNKNOWN'] as const),
+    number: z.number(),
+  }),
+)
+
+/**
  * Minimal version of a GitHub PR comment - only includes the parts we care about
  *
  * @internal

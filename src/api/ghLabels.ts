@@ -13,6 +13,34 @@ const execFile = promisify(execFileCb)
 const SANITY_REVIEWER = 'sanity-io/locales-reviewers'
 
 /**
+ * Label applied when the PR has been approved by one of the locale maintainers
+ *
+ * @internals
+ */
+export const PR_LABEL_APPROVED = 'approved'
+
+/**
+ * Label applied when the PR is awaiting review from locale maintainers
+ *
+ * @internal
+ */
+export const PR_LABEL_AWAITING_REVIEW = 'awaiting-review'
+
+/**
+ * Label applied when the PR has been reviewed by locale maintainers and changes are requested
+ *
+ * @internal
+ */
+export const PR_LABEL_CHANGES_REQUESTED = 'changes-requested'
+
+/**
+ * Label applied when the PR has been auto-merged due to being stale
+ *
+ * @internal
+ */
+export const PR_LABEL_AUTO_MERGED_STALE = 'auto-merged-stale'
+
+/**
  * Options for the label adjustments operation
  *
  * @internal
@@ -100,12 +128,12 @@ export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> 
 
   if (isApproved) {
     logger('PR is approved - adjusting labels to match')
-    addLabels.push('approved')
-    removeLabels.push('awaiting-review')
+    addLabels.push(PR_LABEL_APPROVED)
+    removeLabels.push(PR_LABEL_AWAITING_REVIEW)
   } else if (isApproved === false) {
     logger('PR has requested changes - adjusting labels to match')
-    removeLabels.push('approved', 'awaiting-review')
-    addLabels.push('changes-requested')
+    removeLabels.push(PR_LABEL_APPROVED, PR_LABEL_AWAITING_REVIEW)
+    addLabels.push(PR_LABEL_CHANGES_REQUESTED)
   } else {
     logger(reviews.length > 0 ? 'PR is in an indeterminate state' : 'PR is awaiting review')
   }
