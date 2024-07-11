@@ -326,7 +326,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Wszystkie zmiany od ostatniej publikacji zostały teraz odrzucone. Odrzucony szkic można nadal odzyskać z historii',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Dokument został pomyślnie zduplikowany',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument został opublikowany',
   /** The text when a restore operation succeeded  */
