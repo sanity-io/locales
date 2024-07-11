@@ -77,9 +77,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'ಕಾಮೆಂಟ್ ಸೇರಿಸಿ',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': 'ಪ್ರತಿಕ್ರಿಯೆಗಳು ಅತಿಕ್ರಮಿಸಬಾರದು',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': 'ಪ್ರತಿಕ್ರಿಯೆ ಸೇರಿಸಿ',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} ಕ್ಷೇತ್ರಕ್ಕೆ ಹೋಗಿ',
@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'ಮರುಪ್ರಯತ್ನಿಸಿ',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': 'ಉಲ್ಲೇಖಿಸಿದ ಪಠ್ಯವನ್ನು ಅಳಿಸಲಾಗಿದೆ',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'ಕಾಮೆಂಟ್ ಕ್ರಿಯಾಕಲಾಪಗಳ ಮೆನು ತೆರೆಯಿರಿ',
   /** The button text to re-open a resolved comment  */
