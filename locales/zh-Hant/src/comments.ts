@@ -74,9 +74,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': '新增留言',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': '評論不能重疊',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': '添加評論',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '前往{{field}}字段',
@@ -111,7 +111,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': '重試',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': '已刪除評論的文本',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': '打開留言操作選單',
   /** The button text to re-open a resolved comment  */
