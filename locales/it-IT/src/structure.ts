@@ -349,7 +349,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     "Tutte le modifiche dall'ultima pubblicazione sono state scartate. La bozza scartata può comunque essere recuperata dalla cronologia",
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Il documento è stato duplicato con successo',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Il documento è stato pubblicato',
   /** The text when a restore operation succeeded  */
