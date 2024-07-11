@@ -294,7 +294,7 @@ export default removeUndefinedLocaleResources({
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Problemy z konfiguracją',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Znaleziono problemy z konfiguracją',
 
@@ -375,13 +375,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Nie znaleziono elementu tablicy z `_key` <code>"{{key}}"</code> na ścieżce <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'Stos wywołań:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Stos komponentów:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Błąd: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'Nieobsługiwany błąd czasu wykonania',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'przestarzałe',
   /** Fallback title shown above field if it has no defined title */
@@ -479,15 +479,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'Nieoczekiwany błąd: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Wszystkie',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Nie znaleziono żadnych elementów',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Szukaj',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Przełącz widok siatki',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Przełącz widok listy',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'Brak elementów',
   /** Label for read only array fields */
@@ -495,7 +495,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Rozwiązywanie wartości początkowej…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Wyłączone',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'np. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -988,7 +988,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'Nie masz uprawnień do usunięcia tego dokumentu.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'Nie masz uprawnień do usuwania harmonogramów.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Nie masz uprawnień do odrzucenia zmian w tym dokumencie.',
@@ -996,9 +997,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'Nie masz uprawnień do duplikowania tego dokumentu.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'Nie masz uprawnień do edycji harmonogramów.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'Nie masz uprawnień do wykonywania harmonogramów.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Nie masz uprawnień do publikacji tego dokumentu.',
@@ -1041,11 +1044,11 @@ export default removeUndefinedLocaleResources({
   'new-document.title': 'Utwórz nowy dokument',
 
   /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': undefined, // 'Simply reload to use the new version.'
+  'package-version.new-package-available.description': 'Po prostu odśwież, aby użyć nowej wersji.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Reload'
+  'package-version.new-package-available.reload-button': 'Odśwież',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio was updated'
+  'package-version.new-package-available.title': 'Sanity Studio zostało zaktualizowane',
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'Zarządzaj członkami',
@@ -1496,13 +1499,13 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': 'Wyniki wyszukiwania',
 
   /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
+  'sheet-list.edit-columns': 'Edytuj kolumny',
   /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
+  'sheet-list.hide-field': 'Usuń z tabeli',
   /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
+  'sheet-list.reset-columns': 'Resetuj kolumny',
   /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
+  'sheet-list.select-fields': 'Wybierz do 5 typów pól',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status konfiguracji',
@@ -1523,7 +1526,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'Najnowsze',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Najnowsza wersja',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1577,23 +1580,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accesibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'Menu ścieżki nawigacyjnej',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Szukaj',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Menu wyszukiwania',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Nie znaleziono wyników',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Zamknij pasek boczny',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Zwiń',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Gotowe',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Rozwiń',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Otwórz pasek boczny',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dzień pozostały w okresie próbnym',
