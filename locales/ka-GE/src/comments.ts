@@ -76,9 +76,9 @@ export default removeUndefinedLocaleResources({
   'field-button.title': 'კომენტარის დამატება',
 
   /* The text shown in the inline comment button when the button is disabled due to overlap */
-  'inline-add-comment-button.disabled-overlap-title': undefined, // 'Comments cannot overlap'
+  'inline-add-comment-button.disabled-overlap-title': 'კომენტარები ვერ გადაფარვას უნდა',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': undefined, // 'Add comment'
+  'inline-add-comment-button.title': 'დაამატეთ კომენტარი',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} ველზე გადასვლა',
@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'ხელახლა ცდა',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': undefined, // 'The commented text has been deleted'
+  'list-item.missing-referenced-value-tooltip-content': 'კომენტარის ტექსტი წაშლილი გაქვს',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'კომენტარის მენიუს გახსნა',
   /** The button text to re-open a resolved comment  */
