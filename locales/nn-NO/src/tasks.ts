@@ -2,160 +2,164 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'Opprett ny oppgåve',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'Oppgåver',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'Opprett oppgåve',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'Forkast',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'Utkast',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'Ny oppgåve',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
+  'buttons.new.upsell-tooltip': 'Oppgrader for å opprette oppgåver',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'Gå til neste oppgåve',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'Gå til førre oppgåve',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Once deleted, a task cannot be recovered.'
+  'dialog.remove-task.body': 'Når ei oppgåve er sletta, kan den ikkje hentast tilbake.',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'Avbryt',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Delete'
+  'dialog.remove-task.buttons.confirm.text': 'Slett',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Delete this task?'
+  'dialog.remove-task.title': 'Slett denne oppgåva?',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
-  'document.footer.open-tasks.placeholder_one': undefined, // 'Open task'
+  'document.footer.open-tasks.placeholder_one': 'Opne oppgåve',
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'Opne oppgåver',
   /** The label used in the button in the footer action in a document with a single task */
-  'document.footer.open-tasks.text_one': undefined, // '{{count}} open task'
+  'document.footer.open-tasks.text_one': '{{count}} open oppgåve',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} opne oppgåver',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
+  'empty-state.list.assigned.heading': 'Du har ikkje fått tildelt nokon oppgåver',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
+  'empty-state.list.assigned.text': 'Når du får tildelt oppgåver, vil dei dukke opp her',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
-  'empty-state.list.create-new': undefined, // 'Create new task'
+  'empty-state.list.create-new': 'Opprett ny oppgåve',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
+  'empty-state.list.document.heading': 'Dette dokumentet har enno ikkje nokon oppgåver',
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
+  'empty-state.list.document.text':
+    'Når eit dokument har tilknytta oppgåver, vil dei bli vist her.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  'empty-state.list.no-active-document.heading': 'Opne eit dokument for å sjå oppgåvene',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  'empty-state.list.no-active-document.text': 'Oppgåver på ditt aktive dokument vil bli vist her.',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
+  'empty-state.list.subscribed.heading': 'Du har ikkje abonnert på nokon oppgåver',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
+  'empty-state.list.subscribed.text':
+    'Når du opprettar, endrar eller kommenterer på ei oppgåve vil du automatisk bli abonnert',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.assigned.heading': 'Ingen fullførte oppgåver',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
+  'empty-state.status.list.closed.assigned.text':
+    'Oppgåvene dine merka som gjort vil dukke opp her',
   /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.document.heading': 'Ingen fullførte oppgåver',
   /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.subscribed.heading': 'Ingen fullførte oppgåver',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.text': undefined, // 'Tasks you subscribe to marked done will show up here'
+  'empty-state.status.list.closed.subscribed.text':
+    'Oppgåver du abonnerer på som er merka som gjort vil dukke opp her',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.heading': undefined, // 'You\'re all caught up'
+  'empty-state.status.list.open.assigned.heading': 'Du er heilt ajour',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.text': undefined, // 'New tasks assigned to you will show up here'
+  'empty-state.status.list.open.assigned.text': 'Nye oppgåver tildelt deg vil dukke opp her',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.document.heading': undefined, // 'No tasks on this document'
+  'empty-state.status.list.open.document.heading': 'Ingen oppgåver på dette dokumentet',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.heading': undefined, // 'No subscribed tasks'
+  'empty-state.status.list.open.subscribed.heading': 'Ingen abonnerte oppgåver',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': undefined, // 'Tasks you subscribe to will show up here'
+  'empty-state.status.list.open.subscribed.text': 'Oppgåver du abonnerer på vil dukke opp her',
 
   /** Text used in the assignee input when there is no user assigned */
-  'form.input.assignee.no-user-assigned.text': undefined, // 'Unassigned'
+  'form.input.assignee.no-user-assigned.text': 'Ikkje tildelt',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
+  'form.input.assignee.no-user-assigned.tooltip': 'Sett tildeling',
   /** Text used in the assignee input when searching and no users are found */
-  'form.input.assignee.search.no-users.text': undefined, // 'No users found'
+  'form.input.assignee.search.no-users.text': 'Ingen brukarar funne',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': undefined, // 'Select assignee'
+  'form.input.assignee.search.placeholder': 'Vel tildeling',
   /** Text used in the assignee input when user is not authorized */
-  'form.input.assignee.unauthorized.text': undefined, // 'Unauthorized'
+  'form.input.assignee.unauthorized.text': 'Uautorisert',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
+  'form.input.assignee.user-assigned.tooltip': 'Endre tildeling',
   /** Text used in the assignee input when user is not found */
-  'form.input.assignee.user-not-found.text': undefined, // 'User not found'
+  'form.input.assignee.user-not-found.text': 'Brukar ikkje funnen',
   /** The label used in the create more toggle */
-  'form.input.create-more.text': undefined, // 'Create more'
+  'form.input.create-more.text': 'Opprett fleire',
   /** The label used in the date input button tooltip when it's empty */
-  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
+  'form.input.date.buttons.empty.tooltip': 'Sett frist',
   /** The label used in the date input to remove the current value */
-  'form.input.date.buttons.remove.text': undefined, // 'Remove'
+  'form.input.date.buttons.remove.text': 'Fjern',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
+  'form.input.date.buttons.tooltip': 'Endre frist',
   /** Placeholder text used in the description input */
-  'form.input.description.placeholder': undefined, // 'Add description'
+  'form.input.description.placeholder': 'Legg til beskriving',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': undefined, // 'Change status'
+  'form.input.status.button.tooltip': 'Endre status',
   /** The label used in the target input to remove the current value */
-  'form.input.target.buttons.remove.text': undefined, // 'Remove target content'
+  'form.input.target.buttons.remove.text': 'Fjern målinnhald',
   /** The text used in the target input when encountering a schema error */
-  'form.input.target.error.schema-not-found': undefined, // 'Schema not found'
+  'form.input.target.error.schema-not-found': 'Skjema ikkje funne',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': undefined, // 'Select target document'
+  'form.input.target.search.placeholder': 'Vel dokumentmål',
   /** The placeholder text for the title input */
-  'form.input.title.placeholder': undefined, // 'Task title'
+  'form.input.title.placeholder': 'Oppgåvetittel',
   /** The status error message presented when the user does not supply a title */
-  'form.status.error.title-required': undefined, // 'Title is required'
+  'form.status.error.title-required': 'Tittel er påkravd',
   /** The status message upon successful creation of a task */
-  'form.status.success': undefined, // 'Task created'
+  'form.status.success': 'Oppgåve oppretta',
 
   /** The text displayed when no tasks are found */
-  'list.empty.text': undefined, // 'No tasks'
+  'list.empty.text': 'Ingen oppgåver',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
+  'list.feedback.text': 'Hjelp oss å bli betre, <Link>del tilbakemeldingar om Oppgåver</Link>',
 
   /** The label for the copy link menu item */
-  'menuitem.copylink.text': undefined, // 'Copy link to task'
+  'menuitem.copylink.text': 'Kopier lenke til oppgåva',
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'Slett oppgåva',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'Dupliser oppgåva',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
+  'menuitem.duplicate.upsell-tooltip': 'Oppgrader for å duplisere oppgåver',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'oppretta denne oppgåva',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'Aktivitet',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'Ukjend brukar',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'Lukk sidefeltet',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'Legg til ein kommentar...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
+  'panel.comment.placeholder.upsell': 'Oppgrader for å kommentere på oppgåver',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'Opprett',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'Utkast',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'Opne oppgåver',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'Oppgåver',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'Tildelt',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'Aktivt dokument',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'Abonnert',
 })
