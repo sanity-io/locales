@@ -2,160 +2,167 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'Criar nova tarefa',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'Tarefas',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'Criar Tarefa',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'Descartar',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'Rascunho',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'Nova tarefa',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
+  'buttons.new.upsell-tooltip': 'Atualize para criar tarefas',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'Ir para a próxima tarefa',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'Ir para a tarefa anterior',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Once deleted, a task cannot be recovered.'
+  'dialog.remove-task.body': 'Uma vez excluída, uma tarefa não pode ser recuperada.',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'Cancelar',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Delete'
+  'dialog.remove-task.buttons.confirm.text': 'Excluir',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Delete this task?'
+  'dialog.remove-task.title': 'Excluir esta tarefa?',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
-  'document.footer.open-tasks.placeholder_one': undefined, // 'Open task'
+  'document.footer.open-tasks.placeholder_one': 'Abrir tarefa',
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'Abrir tarefas',
   /** The label used in the button in the footer action in a document with a single task */
-  'document.footer.open-tasks.text_one': undefined, // '{{count}} open task'
+  'document.footer.open-tasks.text_one': '{{count}} tarefa aberta',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} tarefas abertas',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
+  'empty-state.list.assigned.heading': 'Você não foi designado a nenhuma tarefa',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
+  'empty-state.list.assigned.text':
+    'Uma vez que você for designado a tarefas, elas aparecerão aqui',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
-  'empty-state.list.create-new': undefined, // 'Create new task'
+  'empty-state.list.create-new': 'Criar nova tarefa',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
+  'empty-state.list.document.heading': 'Este documento ainda não tem tarefas',
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
+  'empty-state.list.document.text':
+    'Uma vez que um documento tenha tarefas conectadas, elas serão mostradas aqui.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  'empty-state.list.no-active-document.heading': 'Abra um documento para ver sua tarefa',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  'empty-state.list.no-active-document.text':
+    'Tarefas do seu documento ativo serão mostradas aqui.',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
+  'empty-state.list.subscribed.heading': 'Você não está inscrito em nenhuma tarefa',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
+  'empty-state.list.subscribed.text':
+    'Quando você criar, modificar ou comentar em uma tarefa, você será inscrito automaticamente',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.assigned.heading': 'Nenhuma tarefa concluída',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
+  'empty-state.status.list.closed.assigned.text':
+    'Suas tarefas marcadas como concluídas aparecerão aqui',
   /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.document.heading': 'Nenhuma tarefa concluída',
   /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.subscribed.heading': 'Nenhuma tarefa concluída',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.text': undefined, // 'Tasks you subscribe to marked done will show up here'
+  'empty-state.status.list.closed.subscribed.text':
+    'Tarefas em que você se inscreve e são marcadas como concluídas aparecerão aqui',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.heading': undefined, // 'You\'re all caught up'
+  'empty-state.status.list.open.assigned.heading': 'Você está em dia',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.text': undefined, // 'New tasks assigned to you will show up here'
+  'empty-state.status.list.open.assigned.text': 'Novas tarefas atribuídas a você aparecerão aqui',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.document.heading': undefined, // 'No tasks on this document'
+  'empty-state.status.list.open.document.heading': 'Nenhuma tarefa neste documento',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.heading': undefined, // 'No subscribed tasks'
+  'empty-state.status.list.open.subscribed.heading': 'Nenhuma tarefa inscrita',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': undefined, // 'Tasks you subscribe to will show up here'
+  'empty-state.status.list.open.subscribed.text': 'Tarefas em que você se inscreve aparecerão aqui',
 
   /** Text used in the assignee input when there is no user assigned */
-  'form.input.assignee.no-user-assigned.text': undefined, // 'Unassigned'
+  'form.input.assignee.no-user-assigned.text': 'Não atribuído',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
+  'form.input.assignee.no-user-assigned.tooltip': 'Definir responsável',
   /** Text used in the assignee input when searching and no users are found */
-  'form.input.assignee.search.no-users.text': undefined, // 'No users found'
+  'form.input.assignee.search.no-users.text': 'Nenhum usuário encontrado',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': undefined, // 'Select assignee'
+  'form.input.assignee.search.placeholder': 'Selecionar responsável',
   /** Text used in the assignee input when user is not authorized */
-  'form.input.assignee.unauthorized.text': undefined, // 'Unauthorized'
+  'form.input.assignee.unauthorized.text': 'Não autorizado',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
+  'form.input.assignee.user-assigned.tooltip': 'Alterar responsável',
   /** Text used in the assignee input when user is not found */
-  'form.input.assignee.user-not-found.text': undefined, // 'User not found'
+  'form.input.assignee.user-not-found.text': 'Usuário não encontrado',
   /** The label used in the create more toggle */
-  'form.input.create-more.text': undefined, // 'Create more'
+  'form.input.create-more.text': 'Criar mais',
   /** The label used in the date input button tooltip when it's empty */
-  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
+  'form.input.date.buttons.empty.tooltip': 'Definir data de conclusão',
   /** The label used in the date input to remove the current value */
-  'form.input.date.buttons.remove.text': undefined, // 'Remove'
+  'form.input.date.buttons.remove.text': 'Remover',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
+  'form.input.date.buttons.tooltip': 'Alterar data de conclusão',
   /** Placeholder text used in the description input */
-  'form.input.description.placeholder': undefined, // 'Add description'
+  'form.input.description.placeholder': 'Adicionar descrição',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': undefined, // 'Change status'
+  'form.input.status.button.tooltip': 'Alterar status',
   /** The label used in the target input to remove the current value */
-  'form.input.target.buttons.remove.text': undefined, // 'Remove target content'
+  'form.input.target.buttons.remove.text': 'Remover conteúdo alvo',
   /** The text used in the target input when encountering a schema error */
-  'form.input.target.error.schema-not-found': undefined, // 'Schema not found'
+  'form.input.target.error.schema-not-found': 'Esquema não encontrado',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': undefined, // 'Select target document'
+  'form.input.target.search.placeholder': 'Selecione o documento alvo',
   /** The placeholder text for the title input */
-  'form.input.title.placeholder': undefined, // 'Task title'
+  'form.input.title.placeholder': 'Título da tarefa',
   /** The status error message presented when the user does not supply a title */
-  'form.status.error.title-required': undefined, // 'Title is required'
+  'form.status.error.title-required': 'Título é obrigatório',
   /** The status message upon successful creation of a task */
-  'form.status.success': undefined, // 'Task created'
+  'form.status.success': 'Tarefa criada',
 
   /** The text displayed when no tasks are found */
-  'list.empty.text': undefined, // 'No tasks'
+  'list.empty.text': 'Nenhuma tarefa',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
+  'list.feedback.text':
+    'Ajude-nos a melhorar, <Link>compartilhe seu feedback sobre Tarefas</Link> ',
 
   /** The label for the copy link menu item */
-  'menuitem.copylink.text': undefined, // 'Copy link to task'
+  'menuitem.copylink.text': 'Copiar link da tarefa',
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'Excluir tarefa',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'Duplicar tarefa',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
+  'menuitem.duplicate.upsell-tooltip': 'Atualize para duplicar tarefas',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'criou esta tarefa',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'Atividade',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'Usuário desconhecido',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'Fechar barra lateral',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'Adicionar um comentário...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
+  'panel.comment.placeholder.upsell': 'Atualize para comentar nas tarefas',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'Criar',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'Rascunhos',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'Abrir tarefas',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'Tarefas',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'Atribuídas',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'Documento Ativo',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'Inscrito',
 })
