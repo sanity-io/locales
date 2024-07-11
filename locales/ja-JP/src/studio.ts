@@ -309,7 +309,7 @@ export default removeUndefinedLocaleResources({
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': '設定の問題',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '設定の問題を発見',
 
@@ -390,13 +390,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     '指定されたパス<code>{{path}}</code>で`_key` <code>"{{key}}"</code>の配列アイテムが見つかりません',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'コールスタック：',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'コンポーネントスタック：',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'エラー：{{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': '処理されないランタイムエラー',
   /** Form field deprecated label */
   'form.field.deprecated-label': '非推奨',
   /** Fallback title shown above field if it has no defined title */
@@ -498,15 +498,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': '予期せぬエラー: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'すべて',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': '項目が見つかりません',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': '検索',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'グリッドビューを切り替え',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'リストビューを切り替え',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'アイテムなし',
   /** Label for read only array fields */
@@ -514,7 +514,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': '初期値を解決中…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': '無効',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '例: {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1030,7 +1030,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'このドキュメントを削除する権限がありません。',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'スケジュールを削除する権限がありません。',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'このドキュメントの変更を破棄する権限がありません。',
@@ -1038,9 +1039,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'このドキュメントを複製する権限がありません。',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'スケジュールを編集する権限がありません。',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'スケジュールを実行する権限がありません。',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'このドキュメントを公開する権限がありません。',
@@ -1083,11 +1086,12 @@ export default removeUndefinedLocaleResources({
   'new-document.title': '新しいドキュメントを作成',
 
   /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': undefined, // 'Simply reload to use the new version.'
+  'package-version.new-package-available.description':
+    'リロードするだけで新しいバージョンを使用できます。',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Reload'
+  'package-version.new-package-available.reload-button': 'リロード',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio was updated'
+  'package-version.new-package-available.title': 'Sanity Studioが更新されました',
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'メンバーを管理する',
@@ -1560,13 +1564,13 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': '検索結果',
 
   /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
+  'sheet-list.edit-columns': '列を編集',
   /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
+  'sheet-list.hide-field': 'テーブルから削除',
   /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
+  'sheet-list.reset-columns': '列をリセット',
   /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
+  'sheet-list.select-fields': '最大5つのフィールドタイプを選択',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '設定ステータス',
@@ -1587,7 +1591,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': '最新',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': '最新のリビジョン',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1641,23 +1645,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accesibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'パンくずメニュー',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': '検索',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': '検索メニュー',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': '結果が見つかりません',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'サイドバーを閉じる',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': '折りたたむ',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': '完了',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': '展開する',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'サイドバーを開く',
 
   'user-menu.action.free-trial_other': 'トライアル期間があと{{count}}日',
   /** Label for the button showed after trial ended */
