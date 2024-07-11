@@ -1645,7 +1645,7 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accesibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': 'ブレッドクラムメニュー',
+  'tree-editing-dialog.breadcrumbs.menu': 'パンくずメニュー',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': '検索',
   /** Menu aria label for the search menu */
