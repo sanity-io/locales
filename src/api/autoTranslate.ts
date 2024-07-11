@@ -365,6 +365,13 @@ export async function pushChanges(): Promise<void> {
         ],
         {cwd: rootPath},
       )
+
+      if (!hasMaintainers) {
+        // Automatically merge PRs that are missing maintainers - there's no one to review
+        await execFile('gh', ['pr', 'merge', branchName, '--squash', '--delete-branch'], {
+          cwd: rootPath,
+        })
+      }
     }
 
     // Switch back to main branch for next locale
