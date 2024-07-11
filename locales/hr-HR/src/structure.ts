@@ -345,11 +345,12 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Sve promjene od posljednjeg objavljivanja su sada odbačene. Odbačeni nacrt još uvijek se može oporaviti iz povijesti',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate': 'Dokument je uspješno dupliciran',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument je objavljen',
   /** The text when a restore operation succeeded  */
-  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> je obnovljen',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentu je poništena objava. Nacrt je stvoren iz posljednje objavljene verzije.',
