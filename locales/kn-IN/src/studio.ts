@@ -304,7 +304,7 @@ export default removeUndefinedLocaleResources({
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'ಸಂರಚನಾ ಸಮಸ್ಯೆಗಳು',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'ಸಂರಚನಾ ಸಮಸ್ಯೆಗಳು ಕಂಡುಬಂದಿವೆ',
 
@@ -385,13 +385,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'ಕೀಲಿ <code>"{{key}}"</code>ಯೊಂದಿಗೆ ಯಾವುದೇ ಅನುಕ್ರಮಣಿಕಾ ಅಂಶವನ್ನು ಪಥ <code>{{path}}</code>ನಲ್ಲಿ ಕಂಡುಹಿಡಿಯಲಾಗಿಲ್ಲ',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'ಕರೆ ಸ್ಟ್ಯಾಕ್:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'ಘಟಕ ಸ್ಟ್ಯಾಕ್:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'ದೋಷ: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'ನಿರ್ವಹಿಸದ ರನ್‌ಟೈಮ್ ದೋಷ',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'ಅಪ್ರಚಲಿತ',
   /** Fallback title shown above field if it has no defined title */
@@ -495,15 +495,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'ಅನಿರೀಕ್ಷಿತ ದೋಷ: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'ಎಲ್ಲಾ',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'ಯಾವುದೇ ಐಟಂಗಳು ಕಂಡುಬಂದಿಲ್ಲ',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'ಹುಡುಕು',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'ಗ್ರಿಡ್ ವೀಕ್ಷಣೆಯನ್ನು ಬದಲಿಸಿ',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'ಪಟ್ಟಿ ವೀಕ್ಷಣೆಯನ್ನು ಬದಲಿಸಿ',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'ಯಾವುದೇ ಐಟಂಗಳಿಲ್ಲ',
   /** Label for read only array fields */
@@ -511,7 +511,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'ಪ್ರಾರಂಭಿಕ ಮೌಲ್ಯ ಪರಿಹರಿಸುತ್ತಿದೆ…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'ನಿಷ್ಕ್ರಿಯ',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'ಉದಾ. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1025,7 +1025,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'ನೀವು ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಅಳಿಸಲು ಅನುಮತಿಯಿಲ್ಲ.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'ಈ ದಾಖಲೆಯಲ್ಲಿನ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
@@ -1033,9 +1034,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'ಈ ದಾಖಲೆಯನ್ನು ನಕಲಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'ನೀವು ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಸಂಪಾದಿಸಲು ಅನುಮತಿಯಿಲ್ಲ.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'ನೀವು ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಜಾರಿಗೊಳಿಸಲು ಅನುಮತಿಯಿಲ್ಲ.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'ಈ ದಾಖಲೆಯನ್ನು ಪ್ರಕಟಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
@@ -1078,11 +1081,11 @@ export default removeUndefinedLocaleResources({
   'new-document.title': 'ಹೊಸ ದಾಖಲೆ ಸೃಷ್ಟಿಸಿ',
 
   /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': undefined, // 'Simply reload to use the new version.'
+  'package-version.new-package-available.description': 'ಹೊಸ ಆವೃತ್ತಿಯನ್ನು ಬಳಸಲು ಕೇವಲ ಮರುಲೋಡ್ ಮಾಡಿ.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Reload'
+  'package-version.new-package-available.reload-button': 'ಮರುಲೋಡ್ ಮಾಡಿ',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio was updated'
+  'package-version.new-package-available.title': 'Sanity Studio ನವೀಕರಿಸಲಾಗಿದೆ',
 
   /** Label for action to manage members of the current studio project */
   'presence.action.manage-members': 'ಸದಸ್ಯರನ್ನು ನಿರ್ವಹಿಸಿ',
@@ -1546,13 +1549,13 @@ export default removeUndefinedLocaleResources({
   'search.search-results-aria-label': 'ಹುಡುಕಾಟದ ಫಲಿತಾಂಶಗಳು',
 
   /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
+  'sheet-list.edit-columns': 'ಅಂಕಣಗಳನ್ನು ಸಂಪಾದಿಸಿ',
   /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
+  'sheet-list.hide-field': 'ಕೋಷ್ಟಕದಿಂದ ತೆಗೆದುಹಾಕಿ',
   /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
+  'sheet-list.reset-columns': 'ಅಂಕಣಗಳನ್ನು ಮರುಹೊಂದಿಸಿ',
   /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
+  'sheet-list.select-fields': 'ಐದು ಕ್ಷೇತ್ರ ಪ್ರಕಾರಗಳನ್ನು ಆರಿಸಿ',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'ಸಂರಚನಾ ಸ್ಥಿತಿ',
@@ -1571,7 +1574,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'ಇತ್ತೀಚಿನ',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'ಇತ್ತೀಚಿನ ಪರಿಷ್ಕರಣೆ',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1625,23 +1628,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accesibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'ಬ್ರೆಡ್‌ಕ್ರಂಬ್ ಮೆನು',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'ಹುಡುಕು',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'ಹುಡುಕಾಟ ಮೆನು',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'ಸೈಡ್‌ಬಾರ್ ಮುಚ್ಚಿ',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'ಸಂಕುಚಿತ',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'ಮುಗಿದಿದೆ',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'ವಿಸ್ತರಿಸಿ',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'ಸೈಡ್‌ಬಾರ್ ತೆರೆಯಿರಿ',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'ಉಚಿತ ಪರೀಕ್ಷಾ ಅವಧಿಯಲ್ಲಿ {{count}} ದಿನ ಉಳಿದಿದೆ',

@@ -346,7 +346,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'ಕೊನೆಯ ಪ್ರಕಟಣೆಯಿಂದ ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ಈಗ ತ್ಯಜಿಸಲಾಗಿದೆ. ತ್ಯಜಿಸಲಾದ ಮುಸದ್ದೆಯನ್ನು ಇನ್ನೂ ಇತಿಹಾಸದಿಂದ ಮರುಪಡೆಯಬಹುದು',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'ದಾಖಲೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನಕಲಿಸಲಾಗಿದೆ',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> ಪ್ರಕಟಿಸಲಾಗಿದೆ',
