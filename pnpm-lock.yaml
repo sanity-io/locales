@@ -18,8 +18,8 @@ importers:
         specifier: ^7.24.7
         version: 7.24.7
       '@sanity/pkg-utils':
-        specifier: ^6.10.2
-        version: 6.10.2(@types/node@18.19.39)(typescript@5.5.3)
+        specifier: ^6.10.3
+        version: 6.10.3(@types/node@18.19.39)(typescript@5.5.3)
       '@sanity/vision':
         specifier: ^3.49.0
         version: 3.49.0(@babel/runtime@7.24.7)(@codemirror/lint@6.8.1)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(codemirror@6.0.1)(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11)
@@ -528,7 +528,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.24.7
       '@babel/helper-validator-option': 7.24.7
-      browserslist: 4.23.1
+      browserslist: 4.23.2
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -3530,8 +3530,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sanity/pkg-utils@6.10.2(@types/node@18.19.39)(typescript@5.5.3):
-    resolution: {integrity: sha512-Es/rF9Za/RA29aUNDEv+mU0eOnnX/XLRheDxPVezq1S8x4RFt4DuIRBYE4fpVcKj5nVtIrJkfwJCohI7ZCQXyQ==}
+  /@sanity/pkg-utils@6.10.3(@types/node@18.19.39)(typescript@5.5.3):
+    resolution: {integrity: sha512-LdNAZr0voDMv0R9hHF1K/E8n1WEjTs++dXxWB1p9gwYIhzAmdL8BVrXHMwmqw7EWevQ2DeuRo1DTUMGRNpqt1A==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
@@ -3552,7 +3552,7 @@ packages:
       '@rollup/plugin-terser': 0.4.4(rollup@4.18.1)
       '@sanity/browserslist-config': 1.0.3
       babel-plugin-react-compiler: 0.0.0-experimental-938cd9a-20240601
-      browserslist: 4.23.1
+      browserslist: 4.23.2
       cac: 6.7.14
       chalk: 4.1.2
       chokidar: 3.6.0
@@ -4847,15 +4847,15 @@ packages:
       pako: 0.2.9
     dev: false
 
-  /browserslist@4.23.1:
-    resolution: {integrity: sha512-TUfofFo/KsK/bWZ9TWQ5O26tsWW4Uhmt8IYklbnUa70udB6P2wA7w7o4PY4muaEPBQaAX+CEnmmIA41NVHtPVw==}
+  /browserslist@4.23.2:
+    resolution: {integrity: sha512-qkqSyistMYdxAcw+CzbZwlBy8AGmS/eEWs+sEV5TnLRGDOL+C5M2EnH6tlZyg0YoAxGJAFKh61En9BR941GnHA==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001640
       electron-to-chromium: 1.4.820
       node-releases: 2.0.14
-      update-browserslist-db: 1.1.0(browserslist@4.23.1)
+      update-browserslist-db: 1.1.0(browserslist@4.23.2)
 
   /buffer-alloc-unsafe@1.1.0:
     resolution: {integrity: sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==}
@@ -5176,7 +5176,7 @@ packages:
   /core-js-compat@3.37.1:
     resolution: {integrity: sha512-9TNiImhKvQqSUkOvk/mMRZzOANTiEVC7WaBNhHcKM7x+/5E1l5NvsysR19zuDQScE8k+kfQXWRN3AtS/eOSHpg==}
     dependencies:
-      browserslist: 4.23.1
+      browserslist: 4.23.2
 
   /core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -10072,13 +10072,13 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: false
 
-  /update-browserslist-db@1.1.0(browserslist@4.23.1):
+  /update-browserslist-db@1.1.0(browserslist@4.23.2):
     resolution: {integrity: sha512-EdRAaAyk2cUE1wOf2DkEhzxqOQvFOoRJFNS6NeyJ01Gp2beMRpBAINjM2iDXE3KCuKhwnvHIQCJm6ThL2Z+HzQ==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
-      browserslist: 4.23.1
+      browserslist: 4.23.2
       escalade: 3.1.2
       picocolors: 1.0.1
 
