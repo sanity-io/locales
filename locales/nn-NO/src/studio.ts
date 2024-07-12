@@ -654,7 +654,9 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.reset-button.text': 'Tilbakestill verdi',
   /** Invalid property value */
   'inputs.invalid-value.title': 'Ugyldig eigenskapsverdi',
-  /** Field groups */
+  /** Title for the "All fields" field group */
+  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Feltgrupper',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
@@ -699,13 +701,13 @@ export default removeUndefinedLocaleResources({
     'Klikk eller trykk på mellomrom for å aktivere',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Trykk for å aktivere',
-  /**Aria label for the annotation object */
+  /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': 'Annotasjonsobjekt',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Rediger {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Lenke',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.block.aria-label': 'Blokkobjekt',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Rediger',
@@ -729,7 +731,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Understreking',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Tom',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.inline-block.aria-label': 'Innline objekt',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Rediger objekt',
@@ -1079,9 +1081,6 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Opprett nytt dokument',
 
-  /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description':
-    'Last inn på nytt for å bruke den nye versjonen.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Last inn på nytt',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
@@ -1623,10 +1622,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Sidan: ukjend versjon',
 
-  /**Aria label for the action buttons in the PTE toolbar */
+  /** Aria label for the action buttons in the PTE toolbar */
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
-  /** Accesibility label for the breadcrumb menu */
+  /** Accessibility label for the breadcrumb menu */
   'tree-editing-dialog.breadcrumbs.menu': 'Brødsmulemeny',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Søk',

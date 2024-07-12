@@ -10,6 +10,11 @@ const locale = defineLocale({
     },
 
     {
+      namespace: 'copy-paste',
+      resources: () => import('./copy-paste'),
+    },
+
+    {
       namespace: 'structure',
       resources: () => import('./structure'),
     },

@@ -652,7 +652,9 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.reset-button.text': 'მნიშვნელობის განულება',
   /** Invalid property value */
   'inputs.invalid-value.title': 'თვისების არასწორი მნიშვნელობა',
-  /** Field groups */
+  /** Title for the "All fields" field group */
+  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'ველის ჯგუფები',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
@@ -698,13 +700,13 @@ export default removeUndefinedLocaleResources({
     'დააჭირეთ ან დააჭირეთ სივრცეს აქტივაციისთვის',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'შეეხეთ აქტივაციისთვის',
-  /**Aria label for the annotation object */
+  /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': 'ანოტაციის ობიექტი',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'რედაქტირება {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'ბმული',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.block.aria-label': 'ბლოკის ობიექტი',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'რედაქტირება',
@@ -728,7 +730,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'ხაზგასმული',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'ცარიელი',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.inline-block.aria-label': 'ჩასმული ობიექტი',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'ობიექტის რედაქტირება',
@@ -1079,9 +1081,6 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'ახალი დოკუმენტის შექმნა',
 
-  /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description':
-    'გადატვირთეთ გვერდი ახალი ვერსიის გამოყენებისთვის.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'გადატვირთვა',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
@@ -1626,10 +1625,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'დან: უცნობი ვერსია',
 
-  /**Aria label for the action buttons in the PTE toolbar */
+  /** Aria label for the action buttons in the PTE toolbar */
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
-  /** Accesibility label for the breadcrumb menu */
+  /** Accessibility label for the breadcrumb menu */
   'tree-editing-dialog.breadcrumbs.menu': 'ნავიგაციის მენიუ',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'ძებნა',

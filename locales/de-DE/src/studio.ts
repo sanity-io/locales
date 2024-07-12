@@ -662,7 +662,9 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.reset-button.text': 'Wert zurücksetzen',
   /** Invalid property value */
   'inputs.invalid-value.title': 'Ungültiger Eigenschaftswert',
-  /** Field groups */
+  /** Title for the "All fields" field group */
+  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Feldgruppen',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
@@ -707,13 +709,13 @@ export default removeUndefinedLocaleResources({
     'Klicken oder Leertaste drücken zum Aktivieren',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Zum Aktivieren tippen',
-  /**Aria label for the annotation object */
+  /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': 'Anmerkungsobjekt',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}} bearbeiten',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Link',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.block.aria-label': 'Blockobjekt',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Bearbeiten',
@@ -737,7 +739,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Unterstrichen',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Leer',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.inline-block.aria-label': 'Inline-Objekt',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Objekt bearbeiten',
@@ -1088,9 +1090,6 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Neues Dokument erstellen',
 
-  /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description':
-    'Einfach neu laden, um die neue Version zu verwenden.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Neu laden',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
@@ -1650,10 +1649,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Seit: unbekannte Version',
 
-  /**Aria label for the action buttons in the PTE toolbar */
+  /** Aria label for the action buttons in the PTE toolbar */
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
-  /** Accesibility label for the breadcrumb menu */
+  /** Accessibility label for the breadcrumb menu */
   'tree-editing-dialog.breadcrumbs.menu': 'Breadcrumb-Menü',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Suchen',

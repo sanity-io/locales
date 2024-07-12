@@ -652,7 +652,9 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.reset-button.text': 'ಮೌಲ್ಯವನ್ನು ಮರುಹೊಂದಿಸಿ',
   /** Invalid property value */
   'inputs.invalid-value.title': 'ಅಮಾನ್ಯ ಆಸ್ತಿ ಮೌಲ್ಯ',
-  /** Field groups */
+  /** Title for the "All fields" field group */
+  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'ಕ್ಷೇತ್ರ ಗುಂಪುಗಳು',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
@@ -698,13 +700,13 @@ export default removeUndefinedLocaleResources({
     'ಸಕ್ರಿಯಗೊಳಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ ಅಥವಾ ಸ್ಪೇಸ್ ಒತ್ತಿ',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'ಸಕ್ರಿಯಗೊಳಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ',
-  /**Aria label for the annotation object */
+  /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': 'ಅನ್ನೋಟೇಶನ್ ವಸ್ತು',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': '{{schemaType}} ಸಂಪಾದಿಸಿ',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'ಲಿಂಕ್',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.block.aria-label': 'ಬ್ಲಾಕ್ ವಸ್ತು',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'ಸಂಪಾದಿಸಿ',
@@ -728,7 +730,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'ಅಡಿಗೆರೆ',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'ಖಾಲಿ',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.inline-block.aria-label': 'ಇನ್‌ಲೈನ್ ವಸ್ತು',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'ವಸ್ತು ಸಂಪಾದಿಸಿ',
@@ -1080,8 +1082,6 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'ಹೊಸ ದಾಖಲೆ ಸೃಷ್ಟಿಸಿ',
 
-  /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': 'ಹೊಸ ಆವೃತ್ತಿಯನ್ನು ಬಳಸಲು ಕೇವಲ ಮರುಲೋಡ್ ಮಾಡಿ.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'ಮರುಲೋಡ್ ಮಾಡಿ',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
@@ -1624,10 +1624,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'ಈ ಕಾಲದಿಂದ: ಅಜ್ಞಾತ ಆವೃತ್ತಿ',
 
-  /**Aria label for the action buttons in the PTE toolbar */
+  /** Aria label for the action buttons in the PTE toolbar */
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
-  /** Accesibility label for the breadcrumb menu */
+  /** Accessibility label for the breadcrumb menu */
   'tree-editing-dialog.breadcrumbs.menu': 'ಬ್ರೆಡ್‌ಕ್ರಂಬ್ ಮೆನು',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'ಹುಡುಕು',

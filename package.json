@@ -37,11 +37,11 @@
     "test": "tsx test/testLocales"
   },
   "dependencies": {
-    "@babel/generator": "^7.24.7",
-    "@babel/traverse": "^7.24.7",
-    "@babel/types": "^7.24.7",
+    "@babel/generator": "^7.24.8",
+    "@babel/traverse": "^7.24.8",
+    "@babel/types": "^7.24.8",
     "@sanity/pkg-utils": "^6.10.3",
-    "@sanity/vision": "^3.49.0",
+    "@sanity/vision": "^3.50.0",
     "@types/babel__generator": "^7.6.8",
     "@types/babel__traverse": "^7.20.6",
     "@types/node": "^18.19.39",
@@ -55,7 +55,7 @@
     "package-up": "^5.0.0",
     "prettier": "^3.3.2",
     "prettier-plugin-packagejson": "^2.5.0",
-    "sanity": "^3.49.0",
+    "sanity": "^3.50.0",
     "tsx": "^4.16.2",
     "zod": "^3.23.8",
     "zod-validation-error": "^3.3.0"
@@ -69,7 +69,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-sanity": "^7.1.2",
     "expect": "^29.7.0",
-    "openai": "^4.52.4",
+    "openai": "^4.52.7",
     "rimraf": "^5.0.9",
     "turbo": "^2.0.6",
     "typescript": "^5.5.3"

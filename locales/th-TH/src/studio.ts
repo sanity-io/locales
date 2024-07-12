@@ -610,7 +610,9 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.reset-button.text': 'รีเซ็ตค่า',
   /** Invalid property value */
   'inputs.invalid-value.title': 'ค่าคุณสมบัติไม่ถูกต้อง',
-  /** Field groups */
+  /** Title for the "All fields" field group */
+  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'กลุ่มฟิลด์',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
@@ -647,13 +649,13 @@ export default removeUndefinedLocaleResources({
     'คลิกหรือกดปุ่ม space เพื่อเปิดใช้งาน',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'แตะเพื่อเปิดใช้งาน',
-  /**Aria label for the annotation object */
+  /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': 'วัตถุคำอธิบายประกอบ',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'แก้ไข {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'ลิงก์',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.block.aria-label': 'วัตถุบล็อก',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'แก้ไข',
@@ -677,7 +679,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'ขีดเส้นใต้',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'ว่างเปล่า',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.inline-block.aria-label': 'วัตถุอินไลน์',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'แก้ไขวัตถุ',
@@ -1026,8 +1028,6 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'สร้างเอกสารใหม่',
 
-  /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': 'เพียงแค่รีโหลดเพื่อใช้เวอร์ชันใหม่.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'รีโหลด',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
@@ -1525,10 +1525,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'ตั้งแต่: ไม่ทราบเวอร์ชัน',
 
-  /**Aria label for the action buttons in the PTE toolbar */
+  /** Aria label for the action buttons in the PTE toolbar */
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
-  /** Accesibility label for the breadcrumb menu */
+  /** Accessibility label for the breadcrumb menu */
   'tree-editing-dialog.breadcrumbs.menu': 'เมนูแสดงเส้นทาง',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'ค้นหา',

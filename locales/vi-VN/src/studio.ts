@@ -616,7 +616,9 @@ export default removeUndefinedLocaleResources({
   'inputs.invalid-value.reset-button.text': 'Đặt lại giá trị',
   /** Invalid property value */
   'inputs.invalid-value.title': 'Giá trị thuộc tính không hợp lệ',
-  /** Field groups */
+  /** Title for the "All fields" field group */
+  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Nhóm trường',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
@@ -653,13 +655,13 @@ export default removeUndefinedLocaleResources({
     'Nhấp hoặc nhấn không gian để kích hoạt',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Chạm để kích hoạt',
-  /**Aria label for the annotation object */
+  /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': 'Đối tượng chú thích',
   /** Title for dialog that allows editing an annotation */
   'inputs.portable-text.annotation-editor.title': 'Chỉnh sửa {{schemaType}}',
   /** Title of the default "link" annotation */
   'inputs.portable-text.annotation.link': 'Liên kết',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.block.aria-label': 'Đối tượng khối',
   /** Label for action to edit a block item, in the case where it is editable */
   'inputs.portable-text.block.edit': 'Chỉnh sửa',
@@ -683,7 +685,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.decorator.underline': 'Gạch dưới',
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Trống',
-  /**Aria label for the block object */
+  /** Aria label for the block object */
   'inputs.portable-text.inline-block.aria-label': 'Đối tượng nội tuyến',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Chỉnh sửa đối tượng',
@@ -1032,8 +1034,6 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Tạo tài liệu mới',
 
-  /** More detailed alert text letting user know they have an out-of-date version and should reload */
-  'package-version.new-package-available.description': 'Chỉ cần tải lại để sử dụng phiên bản mới.',
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Tải lại',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
@@ -1534,10 +1534,10 @@ export default removeUndefinedLocaleResources({
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'Từ: phiên bản không xác định',
 
-  /**Aria label for the action buttons in the PTE toolbar */
+  /** Aria label for the action buttons in the PTE toolbar */
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
-  /** Accesibility label for the breadcrumb menu */
+  /** Accessibility label for the breadcrumb menu */
   'tree-editing-dialog.breadcrumbs.menu': 'Menu đường dẫn',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Tìm kiếm',
