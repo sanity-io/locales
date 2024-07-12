@@ -602,7 +602,7 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': '无效的属性值',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': '所有字段',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': '字段组',
   /** Read-only field description */
