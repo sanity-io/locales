@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.6](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.5...locale-ko-kr-v1.1.6) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+* **ko-KR:** automated translation updates ([#523](https://github.com/sanity-io/locales/issues/523)) ([365e77a](https://github.com/sanity-io/locales/commit/365e77a2f7a2a4c93d416b0386638fe6e879d625))
+
 ## [1.1.5](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.4...locale-ko-kr-v1.1.5) (2024-07-09)
 
 

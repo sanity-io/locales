@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-ko-kr",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "private": false,
   "description": "Korean / 한국어 locale/translation for Sanity Studio",
   "keywords": [

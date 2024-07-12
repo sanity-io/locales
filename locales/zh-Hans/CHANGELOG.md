@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.6](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.5...locale-zh-hans-v2.1.6) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+* **zh-Hans:** automated translation updates ([#531](https://github.com/sanity-io/locales/issues/531)) ([692f49b](https://github.com/sanity-io/locales/commit/692f49b8e441f2e3590023b82f399fd2e8a6ac71))
+
 ## [2.1.5](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.4...locale-zh-hans-v2.1.5) (2024-07-09)
 
 

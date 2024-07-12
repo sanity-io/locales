@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.9](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.8...locale-nn-no-v1.1.9) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+
 ## [1.1.8](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.7...locale-nn-no-v1.1.8) (2024-07-11)
 
 

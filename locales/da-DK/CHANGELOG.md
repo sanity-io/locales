@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.2...locale-da-dk-v1.0.3) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+
 ## [1.0.2](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.1...locale-da-dk-v1.0.2) (2024-07-09)
 
 
