@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.1...locale-is-is-v1.2.2) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+* **is-IS:** translation updates for copy+paste feature ([#518](https://github.com/sanity-io/locales/issues/518)) ([c0ddb7a](https://github.com/sanity-io/locales/commit/c0ddb7a85b023dd368f76583dc8e1e1fc4bc1fdf))
+
 ## [1.2.1](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.0...locale-is-is-v1.2.1) (2024-07-09)
 
 

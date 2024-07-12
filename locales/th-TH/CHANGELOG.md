@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.4...locale-th-th-v1.1.5) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+* **th-TH:** automated translation updates ([#528](https://github.com/sanity-io/locales/issues/528)) ([63d2100](https://github.com/sanity-io/locales/commit/63d21000b3d2f1ad6880521e4e038b7c4e756bd8))
+
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.3...locale-th-th-v1.1.4) (2024-07-09)
 
 

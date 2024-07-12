@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.6](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.5...locale-pl-pl-v1.2.6) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+
 ## [1.2.5](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.4...locale-pl-pl-v1.2.5) (2024-07-11)
 
 

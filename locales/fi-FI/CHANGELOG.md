@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.6](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.5...locale-fi-fi-v1.1.6) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+* **fi-FI:** automated translation updates ([#516](https://github.com/sanity-io/locales/issues/516)) ([4f94bee](https://github.com/sanity-io/locales/commit/4f94beee92417bc3a92c2eb3f57a1d5d52c57f9e))
+
 ## [1.1.5](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.4...locale-fi-fi-v1.1.5) (2024-07-09)
 
 

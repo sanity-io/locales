@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.6](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.5...locale-vi-vn-v1.1.6) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+* **vi-VN:** automated translation updates ([#530](https://github.com/sanity-io/locales/issues/530)) ([03daf73](https://github.com/sanity-io/locales/commit/03daf7325994bdb60560c20eec1f44c75930a198))
+
 ## [1.1.5](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.4...locale-vi-vn-v1.1.5) (2024-07-09)
 
 
