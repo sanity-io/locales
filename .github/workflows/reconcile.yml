@@ -29,11 +29,11 @@ jobs:
       - run: pnpm reconcile
       - run: pnpm format
       - run: git restore .github/workflows pnpm-lock.yaml
-      - uses: actions/create-github-app-token@32691ba7c9e7063bd457bd8f2a5703138591fa58 # v1
+      - uses: actions/create-github-app-token@31c86eb3b33c9b601a1f60f98dcbfd1d70f379b4 # v1.10.3
         id: generate-token
         with:
-          app_id: ${{ secrets.ECOSPARK_APP_ID }}
-          private_key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
+          app-id: ${{ secrets.ECOSPARK_APP_ID }}
+          private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
       - uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
