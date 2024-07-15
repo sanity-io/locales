@@ -2,23 +2,19 @@ import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 
 import {outdent} from 'outdent'
-import {ZodError} from 'zod'
-import {fromZodError} from 'zod-validation-error'
 
-import {githubPrListSchema} from '../schemas'
 import type {GitHubPRList, Locale} from '../types'
+import {getPendingAutoTranslatedPRs} from '../util/getPendingAutoTranslatedPRs'
 import {getRootPath} from '../util/getRootPath'
 import {STALE_MERGE_THRESHOLD_DAYS} from './autoMergeStale'
 import {AUTO_TRANSLATE_BRANCH_PREFIX} from './autoTranslate'
-import {PR_LABEL_AWAITING_REVIEW, PR_LABEL_NUDGED} from './ghLabels'
+import {PR_LABEL_NUDGED} from './ghLabels'
 import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
 const ONE_DAY_MS = 864e5
 const STALE_NUDGE_THRESHOLD_DAYS = 7
-const GH_REPO_OWNER = 'sanity-io'
-const GH_REPO_NAME = 'locales'
 
 /**
  * Options for the nudge stale operation
@@ -114,40 +110,9 @@ async function commentOnStalePR(
 }
 
 async function findPendingStaleAutoTranslatedPRs() {
-  const rootPath = await getRootPath()
-  const {stdout} = await execFile(
-    'gh',
-    [
-      'pr',
-      'list',
-      '--label',
-      PR_LABEL_AWAITING_REVIEW,
-      '--json',
-      'createdAt,mergeable,number,headRefName,headRepository,headRepositoryOwner,labels',
-    ],
-    {
-      cwd: rootPath,
-      // eslint-disable-next-line no-process-env
-      env: {...process.env, CLICOLOR: '0'},
-    },
-  )
-
-  let pending: GitHubPRList = []
-  try {
-    pending = githubPrListSchema.parse(JSON.parse(stdout))
-  } catch (err: unknown) {
-    throw err instanceof ZodError ? fromZodError(err) : err
-  }
-
+  const pending = await getPendingAutoTranslatedPRs()
   return pending.filter(
     (pr) =>
-      // PR is in our own repository
-      pr.headRepositoryOwner.login === GH_REPO_OWNER &&
-      pr.headRepository.name === GH_REPO_NAME &&
-      // PR is an auto-translated PR
-      pr.headRefName.startsWith(`${AUTO_TRANSLATE_BRANCH_PREFIX}/`) &&
-      // Does not have any conflicts
-      pr.mergeable === 'MERGEABLE' &&
       // Does not already have the "nudged" label, eg has already been nudged
       !pr.labels.some((label) => label.name === PR_LABEL_NUDGED),
   )
