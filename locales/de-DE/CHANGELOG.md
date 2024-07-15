@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.7](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.6...locale-de-de-v1.1.7) (2024-07-15)
+
+
+### Bug Fixes
+
+* **de-DE:** add [@sebastianhaiss](https://github.com/sebastianhaiss) as maintainer of de-DE ([2a171a0](https://github.com/sanity-io/locales/commit/2a171a0416d3e6e8162e85911d4691d172a605d9))
+
 ## [1.1.6](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.5...locale-de-de-v1.1.6) (2024-07-12)
 
 
