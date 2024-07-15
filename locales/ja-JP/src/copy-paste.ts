@@ -57,7 +57,7 @@ export default removeUndefinedLocaleResources({
     'タイプ "{{type}}" の値はこのフィールドでは許可されていません',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': 'ターゲットは読み取り専用です',
+  'copy-paste.on-paste.validation.read-only-target.description': '対象は読み取り専用です',
   /** The validation message that is shown when reference is incompatible with filter */
   'copy-paste.on-paste.validation.reference-filter-incompatible.description':
     '参照はフィルターによる参照フィールドでは許可されていません',
@@ -72,5 +72,5 @@ export default removeUndefinedLocaleResources({
     'パス: {{path}} のスキーマタイプを解決できませんでした',
   /** The validation message that is shown when string values are incompatible */
   'copy-paste.on-paste.validation.string-value-incompatible.description':
-    '値 "{{value}}" は "{{allowedStrings}}" に許可されていません',
+    '値 "{{value}}" は "{{allowedStrings}}" の範囲内では許可されていません',
 })
