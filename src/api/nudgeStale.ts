@@ -8,31 +8,26 @@ import {fromZodError} from 'zod-validation-error'
 import {githubPrListSchema} from '../schemas'
 import type {GitHubPRList, Locale} from '../types'
 import {getRootPath} from '../util/getRootPath'
+import {STALE_MERGE_THRESHOLD_DAYS} from './autoMergeStale'
 import {AUTO_TRANSLATE_BRANCH_PREFIX} from './autoTranslate'
-import {PR_LABEL_AWAITING_REVIEW} from './ghLabels'
+import {PR_LABEL_AWAITING_REVIEW, PR_LABEL_NUDGED} from './ghLabels'
 import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
-/**
- * Days to wait before considered a PR so stale it should be auto-merged
- *
- * @internal
- */
-export const STALE_MERGE_THRESHOLD_DAYS = 14
-
 const ONE_DAY_MS = 864e5
+const STALE_NUDGE_THRESHOLD_DAYS = 7
 const GH_REPO_OWNER = 'sanity-io'
 const GH_REPO_NAME = 'locales'
 
 /**
- * Options for the auto merge stale operation
+ * Options for the nudge stale operation
  *
  * @internal
  */
-export interface AutoMergeStaleOptions {
+export interface NudgeStaleOptions {
   /**
-   * If true, the operation will not actually merge/comment on any PRs, but will instead log what
+   * If true, the operation will not actually comment on any PRs, but will instead log what
    * it would have done. Useful for testing.
    */
   dryRun?: boolean
@@ -47,15 +42,16 @@ export interface AutoMergeStaleOptions {
 
 /**
  * Finds auto-translation PRs that are stale, eg the maintainers of the locales have
- * not responded to pull request review requests for X days, and merges them with a
- * comment for the maintainers indicating why it was done and how they can address
- * any issues with the automatic translations.
+ * not responded to pull request review requests for X days, and nudges them with a
+ * comment for the maintainers indicating that it's been a while without activity.
+ * Also adds a label to the PR to indicate that a nudge has happened, preventing it
+ * from doing the same operation again in the future.
  *
- * @param options - Options for the auto merging operation
+ * @param options - Options for the nudge operation
  * @returns A promise that resolves when operation is complete
  * @internal
  */
-export async function autoMergeStale(options: AutoMergeStaleOptions): Promise<void> {
+export async function nudgeStale(options: NudgeStaleOptions): Promise<void> {
   const {dryRun, logger = noop} = options
 
   if (dryRun) {
@@ -65,7 +61,7 @@ export async function autoMergeStale(options: AutoMergeStaleOptions): Promise<vo
   logger('Finding pending auto-translated PRs')
   const [locales, pendingPRs] = await Promise.all([
     getLocaleRegistry(),
-    findPendingMergeableAutoTranslatedPRs(),
+    findPendingStaleAutoTranslatedPRs(),
   ])
 
   // Filter down to the PRs that are _stale_, eg beyond our threshold
@@ -73,14 +69,14 @@ export async function autoMergeStale(options: AutoMergeStaleOptions): Promise<vo
   const daysSinceDate = (date: string) =>
     Math.floor((now.getTime() - new Date(date).getTime()) / ONE_DAY_MS)
 
-  const stale = pendingPRs.filter((pr) => daysSinceDate(pr.createdAt) > STALE_MERGE_THRESHOLD_DAYS)
+  const stale = pendingPRs.filter((pr) => daysSinceDate(pr.createdAt) > STALE_NUDGE_THRESHOLD_DAYS)
   logger(`Found ${pendingPRs.length} pending PRs`)
   logger(`Found ${stale.length} stale PRs`)
   if (stale.length === 0) {
     return
   }
 
-  // For each PR, comment on it and then merge it
+  // For each PR, comment on it
   for (const pr of stale) {
     logger(`Processing PR #${pr.number}`)
     const localeId = pr.headRefName.slice(AUTO_TRANSLATE_BRANCH_PREFIX.length + 1)
@@ -90,33 +86,34 @@ export async function autoMergeStale(options: AutoMergeStaleOptions): Promise<vo
       continue
     }
 
-    logger(`Merging PR #${pr.number} for locale ${localeId} (${locale.englishName || locale.name})`)
-    await commentAndMergeStalePR(pr, locale, options)
+    logger(
+      `Commenting on PR #${pr.number} for locale ${localeId} (${locale.englishName || locale.name})`,
+    )
+    await commentOnStalePR(pr, locale, options)
   }
 }
 
-async function commentAndMergeStalePR(
+async function commentOnStalePR(
   pr: GitHubPRList[number],
   locale: Locale,
-  {dryRun, logger = noop}: AutoMergeStaleOptions,
+  {dryRun, logger = noop}: NudgeStaleOptions,
 ) {
   const rootPath = await getRootPath()
   const execOptions = {cwd: rootPath, env: {...process.env, CLICOLOR: '0'}}
   const comment = getCommentBody(locale)
-  const removeLabel = PR_LABEL_AWAITING_REVIEW
+  const addLabel = PR_LABEL_NUDGED
 
   if (dryRun) {
     logger(`Would have commented on PR #${pr.number} with:\n\`\`\`\n${comment}\n\`\`\``)
-    logger(`Would have merged PR #${pr.number}`)
+    logger(`Would have added "${addLabel}" label on PR #${pr.number}`)
     return
   }
 
   await execFile('gh', ['pr', 'comment', `${pr.number}`, '--body', comment], execOptions)
-  await execFile('gh', ['pr', 'edit', `${pr.number}`, '--remove-label', removeLabel], execOptions)
-  await execFile('gh', ['pr', 'merge', `${pr.number}`, '--squash', '--delete-branch'], execOptions)
+  await execFile('gh', ['pr', 'edit', `${pr.number}`, '--add-label', addLabel], execOptions)
 }
 
-async function findPendingMergeableAutoTranslatedPRs() {
+async function findPendingStaleAutoTranslatedPRs() {
   const rootPath = await getRootPath()
   const {stdout} = await execFile(
     'gh',
@@ -150,18 +147,21 @@ async function findPendingMergeableAutoTranslatedPRs() {
       // PR is an auto-translated PR
       pr.headRefName.startsWith(`${AUTO_TRANSLATE_BRANCH_PREFIX}/`) &&
       // Does not have any conflicts
-      pr.mergeable === 'MERGEABLE',
+      pr.mergeable === 'MERGEABLE' &&
+      // Does not already have the "nudged" label, eg has already been nudged
+      !pr.labels.some((label) => label.name === PR_LABEL_NUDGED),
   )
 }
 
 function getCommentBody(locale: Locale) {
+  const daysUntilMerge = Math.max(STALE_MERGE_THRESHOLD_DAYS - STALE_NUDGE_THRESHOLD_DAYS, 1)
   const ats = locale.maintainers.map((maintainer) => `@${maintainer}`).join(' ')
   return outdent`
-    It has been ${STALE_MERGE_THRESHOLD_DAYS} days since this PR was created, and no maintainer
-    has responded to the review request. Merging with automatic translations as-is.
+    It has been ${STALE_NUDGE_THRESHOLD_DAYS} days since this PR was created, and no maintainer
+    has responded to the review request. This PR will automatically be merged as-is if no
+    review has been made within the next ${daysUntilMerge} days.
 
-    ${ats}, if you find any changes to be necessary, please open a new pull request with
-    the suggested changes.
+    ${ats}, a review of the changes suggested here would be greatly appreciated 🙏
 
     This is an automatic workflow, replies are not monitored.
   `.trim()

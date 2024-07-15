@@ -41,6 +41,13 @@ export const PR_LABEL_CHANGES_REQUESTED = 'changes-requested'
 export const PR_LABEL_AUTO_MERGED_STALE = 'auto-merged-stale'
 
 /**
+ * Label applied when the PR has been nudged for inactivity (maintainers notified by comment)
+ *
+ * @internal
+ */
+export const PR_LABEL_NUDGED = 'nudged'
+
+/**
  * Options for the label adjustments operation
  *
  * @internal
