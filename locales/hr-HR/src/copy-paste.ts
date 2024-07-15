@@ -53,7 +53,7 @@ export default removeUndefinedLocaleResources({
     'Vrijednost tipa "{{type}}" nije dopuštena u ovom polju',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': 'Cilj je samo za čitanje',
+  'copy-paste.on-paste.validation.read-only-target.description': 'Odredište je samo za čitanje',
   /** The validation message that is shown when reference is incompatible with filter */
   'copy-paste.on-paste.validation.reference-filter-incompatible.description':
     'Referenca nije dopuštena u referentnom polju prema filtru',
