@@ -5,7 +5,7 @@ name: Nudge stale PRs
     # Every 12 hours
     - cron: '0 */12 * * *'
 jobs:
-  auto-merge:
+  nudge-stale:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository

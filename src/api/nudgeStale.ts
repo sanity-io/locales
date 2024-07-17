@@ -105,8 +105,8 @@ async function commentOnStalePR(
     return
   }
 
-  await execFile('gh', ['pr', 'comment', `${pr.number}`, '--body', comment], execOptions)
   await execFile('gh', ['pr', 'edit', `${pr.number}`, '--add-label', addLabel], execOptions)
+  await execFile('gh', ['pr', 'comment', `${pr.number}`, '--body', comment], execOptions)
 }
 
 async function findPendingStaleAutoTranslatedPRs() {
