@@ -1,3 +1,4 @@
+/* eslint-disable max-statements */
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 
@@ -47,6 +48,17 @@ export const PR_LABEL_AUTO_MERGED_STALE = 'auto-merged-stale'
  */
 export const PR_LABEL_NUDGED = 'nudged'
 
+/*
+ * The result of adjusting labels on a PR
+ *
+ * @internal
+ */
+export type AdjustLabelResponse =
+  | typeof PR_LABEL_APPROVED
+  | typeof PR_LABEL_AWAITING_REVIEW
+  | typeof PR_LABEL_CHANGES_REQUESTED
+  | undefined
+
 /**
  * Options for the label adjustments operation
  *
@@ -71,10 +83,10 @@ export interface AdjustLabelsOptions {
  * There is no guarantee that the PR and the branch in question matches, so treat with caution.
  *
  * @param options - Options for the label adjustments operation
- * @returns A promise that resolves when operation is complete
+ * @returns A promise that resolves with either `"approved"`, `"awaiting-review"`, `"changes-requested"` or `undefined` if no change was performed
  * @internal
  */
-export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> {
+export async function adjustLabels(options: AdjustLabelsOptions): Promise<AdjustLabelResponse> {
   const {prNumber, logger = noop} = options
 
   logger(`Adjusting labels for PR #${prNumber}`)
@@ -133,16 +145,20 @@ export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> 
       ? ['autotranslate']
       : []
 
+  let result: AdjustLabelResponse | undefined
   if (isApproved) {
     logger('PR is approved - adjusting labels to match')
     addLabels.push(PR_LABEL_APPROVED)
     removeLabels.push(PR_LABEL_AWAITING_REVIEW)
+    result = PR_LABEL_APPROVED
   } else if (isApproved === false) {
     logger('PR has requested changes - adjusting labels to match')
     removeLabels.push(PR_LABEL_APPROVED, PR_LABEL_AWAITING_REVIEW)
     addLabels.push(PR_LABEL_CHANGES_REQUESTED)
+    result = PR_LABEL_CHANGES_REQUESTED
   } else {
     logger(reviews.length > 0 ? 'PR is in an indeterminate state' : 'PR is awaiting review')
+    result = PR_LABEL_AWAITING_REVIEW
   }
 
   const flags = []
@@ -155,10 +171,11 @@ export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> 
 
   if (flags.length === 0) {
     logger('No changes to labels, skipping')
-    return
+    return undefined
   }
 
   await execFile('gh', ['pr', 'edit', `${prNumber}`, ...flags], {cwd: rootPath})
+  return result
 }
 
 /**
