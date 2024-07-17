@@ -1,6 +1,6 @@
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import {structureTool} from 'sanity/structure'
 
 import {i18nDemo} from './i18n'
 import {locales} from './locales'
@@ -19,7 +19,7 @@ export default defineConfig({
     // A custom i18n plugin (with a namespace for this demo studio)
     i18nDemo(),
     // Our old trusty structure tool
-    deskTool({structure: structureDefinition}),
+    structureTool({structure: structureDefinition}),
     // And the vision developer tool
     visionTool(),
   ],

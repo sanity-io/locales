@@ -2,7 +2,7 @@ import {WarningOutlineIcon} from '@sanity/icons'
 import {Box, Button, Card, Container, Flex, Heading, Spinner, Stack, Text} from '@sanity/ui'
 import React, {forwardRef, useCallback, useEffect, useState} from 'react'
 import {Translate, useClient, useDataset, useDocumentStore, useTranslation} from 'sanity'
-import {UserComponent} from 'sanity/desk'
+import {UserComponent} from 'sanity/structure'
 
 import {i18nNamespace} from '../i18n'
 import {hiddenPropName, localizationTest} from '../schemas/localizationTest'
