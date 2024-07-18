@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.new.text': 'Новае заданне',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
+  'buttons.new.upsell-tooltip': 'Абновіцеся, каб ствараць задачы',
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Перайсці да наступнага задання',
   /** The label for the button that will previous to the next task */
@@ -47,9 +47,10 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.document.text':
     'Як толькі да дакумента будуць дададзеныя заданні, яны будуць паказаны тут.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  'empty-state.list.no-active-document.heading': 'Адкрыйце дакумент, каб убачыць яго задачу',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  'empty-state.list.no-active-document.text':
+    'Задачы па вашым актыўным дакуменце будуць паказаны тут.',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': 'Вы не падпісаліся на ніякія заданні',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
@@ -83,7 +84,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Не прызначана',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
+  'form.input.assignee.no-user-assigned.tooltip': 'Усталяваць выканаўцу',
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Карыстальнікі не знойдзены',
   /** Placeholder text used in the search box in the assignee input */
@@ -91,21 +92,21 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Неаўтарызаваны',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
+  'form.input.assignee.user-assigned.tooltip': 'Змяніць выканаўцу',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Карыстальнік не знойдзены',
   /** The label used in the create more toggle */
   'form.input.create-more.text': 'Стварыць яшчэ',
   /** The label used in the date input button tooltip when it's empty */
-  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
+  'form.input.date.buttons.empty.tooltip': 'Усталяваць тэрмін выканання',
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': 'Выдаліць',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
+  'form.input.date.buttons.tooltip': 'Змяніць тэрмін выканання',
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': 'Дадайце апісанне',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': undefined, // 'Change status'
+  'form.input.status.button.tooltip': 'Змяніць статус',
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'Выдаліць мэтавы кантэнт',
   /** The text used in the target input when encountering a schema error */
@@ -122,7 +123,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': 'Няма задач',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
+  'list.feedback.text': 'Дапамажыце нам стаць лепш, <Link>падзяліцеся водгукамі пра Задачы</Link>',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Скапіяваць спасылку на задачу',
@@ -131,7 +132,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Дубляваць задачу',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
+  'menuitem.duplicate.upsell-tooltip': 'Абновіцеся, каб дубляваць задачы',
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'стварыў гэта заданне',
@@ -144,7 +145,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Дадайце каментар...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
+  'panel.comment.placeholder.upsell': 'Абновіцеся, каб каментаваць задачы',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Стварыць',
   /** The title used in the drafts pulldown */
