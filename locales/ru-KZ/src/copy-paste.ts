@@ -54,7 +54,7 @@ export default removeUndefinedLocaleResources({
     'Значение типа "{{type}}" не допускается в этом поле',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': 'Цель доступна только для чтения',
+  'copy-paste.on-paste.validation.read-only-target.description': 'Целевое поле доступно только для чтения',
   /** The validation message that is shown when reference is incompatible with filter */
   'copy-paste.on-paste.validation.reference-filter-incompatible.description':
     'Ссылка не допускается в поле ссылки в соответствии с фильтром',
