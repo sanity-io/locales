@@ -263,6 +263,14 @@ export const githubPrListSchema = z.array(
     headRepositoryOwner: z.object({id: z.string(), login: z.string()}),
     mergeable: z.enum(['MERGEABLE', 'CONFLICTING', 'UNKNOWN'] as const),
     number: z.number(),
+    labels: z.array(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        description: z.string().optional(),
+        color: z.string(),
+      }),
+    ),
   }),
 )
 

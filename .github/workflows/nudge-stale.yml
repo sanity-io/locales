@@ -1,0 +1,31 @@
+name: Nudge stale PRs
+'on':
+  workflow_dispatch:
+  schedule:
+    # Every 12 hours
+    - cron: '0 */12 * * *'
+jobs:
+  nudge-stale:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Use pnpm
+        run: corepack enable && pnpm --version
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: Nudge stale PRs
+        run: pnpm run ci:nudge-stale
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
