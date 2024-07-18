@@ -20,10 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
           cache: pnpm
-          node-version: 20
+          node-version: lts/*
 
       - run: pnpm install --ignore-scripts
       - run: pnpm reconcile

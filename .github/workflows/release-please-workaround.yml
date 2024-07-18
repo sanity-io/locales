@@ -31,7 +31,8 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           token: ${{ steps.generate-token.outputs.token }}
       - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
           cache: pnpm
           node-version: lts/*
