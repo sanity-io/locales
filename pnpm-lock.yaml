@@ -18,8 +18,8 @@ importers:
         specifier: ^7.24.9
         version: 7.24.9
       '@sanity/pkg-utils':
-        specifier: ^6.10.3
-        version: 6.10.3(@types/babel__core@7.20.5)(@types/node@18.19.39)(typescript@5.5.3)
+        specifier: ^6.10.4
+        version: 6.10.4(@types/babel__core@7.20.5)(@types/node@18.19.39)(typescript@5.5.3)
       '@sanity/vision':
         specifier: ^3.50.0
         version: 3.50.0(@babel/runtime@7.24.8)(@codemirror/lint@6.8.1)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(codemirror@6.0.1(@lezer/common@1.2.1))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -2069,8 +2069,8 @@ packages:
   '@sanity/mutator@3.50.0':
     resolution: {integrity: sha512-SgWGeTj6BvBB7t00slV2Sv5SexZ8iz36q4xexTDWdCIFN2GNXvu2zbBjseFNpH6CEakCEoLmWej6I8FxPsqelw==}
 
-  '@sanity/pkg-utils@6.10.3':
-    resolution: {integrity: sha512-LdNAZr0voDMv0R9hHF1K/E8n1WEjTs++dXxWB1p9gwYIhzAmdL8BVrXHMwmqw7EWevQ2DeuRo1DTUMGRNpqt1A==}
+  '@sanity/pkg-utils@6.10.4':
+    resolution: {integrity: sha512-gLwD0dvuyd3wNu+uR8WaXdQ4EMZhejV2tOQcnjhC3qZkyIwGLsaaIF5vsesXE3+iHbBS/00kof9TlIPNjWjtlw==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
@@ -7645,7 +7645,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sanity/pkg-utils@6.10.3(@types/babel__core@7.20.5)(@types/node@18.19.39)(typescript@5.5.3)':
+  '@sanity/pkg-utils@6.10.4(@types/babel__core@7.20.5)(@types/node@18.19.39)(typescript@5.5.3)':
     dependencies:
       '@babel/core': 7.24.8
       '@babel/preset-typescript': 7.24.7(@babel/core@7.24.8)
