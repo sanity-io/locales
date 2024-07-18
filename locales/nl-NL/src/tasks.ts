@@ -97,7 +97,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Niet geautoriseerd',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': 'Verander toegewezen persoon',
+  'form.input.assignee.user-assigned.tooltip': 'Wijzig toegewezen persoon',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Gebruiker niet gevonden',
   /** The label used in the create more toggle */
@@ -107,11 +107,11 @@ export default removeUndefinedLocaleResources({
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': 'Verwijderen',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': 'Verander vervaldatum',
+  'form.input.date.buttons.tooltip': 'Wijzig vervaldatum',
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': 'Voeg beschrijving toe',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': 'Verander status',
+  'form.input.status.button.tooltip': 'Wijzig status',
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'Verwijder doelinhoud',
   /** The text used in the target input when encountering a schema error */
