@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.new.text': 'Новае заданне',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': 'Абновіцеся, каб ствараць задачы',
+  'buttons.new.upsell-tooltip': 'Абнавіцеся, каб ствараць задачы',
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Перайсці да наступнага задання',
   /** The label for the button that will previous to the next task */
@@ -132,7 +132,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Дубляваць задачу',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': 'Абновіцеся, каб дубляваць задачы',
+  'menuitem.duplicate.upsell-tooltip': 'Абнавіцеся, каб дубляваць задачы',
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'стварыў гэта заданне',
@@ -145,7 +145,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Дадайце каментар...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': 'Абновіцеся, каб каментаваць задачы',
+  'panel.comment.placeholder.upsell': 'Абнавіцеся, каб каментаваць задачы',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Стварыць',
   /** The title used in the drafts pulldown */

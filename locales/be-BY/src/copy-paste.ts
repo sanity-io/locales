@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title':
     'Дакумент "{{fieldNames}}" скапіраваны',
   /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Поле "{{fieldName}}" скапіраванае',
+  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Поле "{{fieldName}}" скапіравана',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Пустое значэнне, няма чаго капіяваць',
   /** --- On copy --- */
@@ -28,7 +28,7 @@ export default removeUndefinedLocaleResources({
     'Значэнне тыпу "{{type}}" не дазволенае ў гэтым масіўным полі',
   /** The validation message that is shown when array values are incompatible */
   'copy-paste.on-paste.validation.array-value-incompatible.description':
-    'Значэнне тыпу "{{type}}" не дазволенае ў гэтым масіўным полі',
+    'Значэнне тыпу "{{type}}" не дазволена ў гэтым масіўным полі',
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Няма чаго ўставіць',
   /** The validation message that is shown when the clipboard item is invalid */
@@ -37,10 +37,10 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.document-paste-success.title':
     'Дакумент "{{fieldNames}}" абноўлены',
   /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': 'Поле "{{fieldName}}" абноўленае',
+  'copy-paste.on-paste.validation.field_one-paste-success.title': 'Поле "{{fieldName}}" абноўлена',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
-    '"{{sourceSchemaType}}" не дазволенае ў "{{targetSchemaType}}"',
+    '"{{sourceSchemaType}}" не дазволена ў "{{targetSchemaType}}"',
   /** The error message that is shown when the MIME type is not accepted */
   'copy-paste.on-paste.validation.mime-type-incompatible.description':
     'MIME-тып "{{mimeType}}" не прыняты для гэтага поля',
@@ -51,7 +51,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.partial-warning.title': 'Не ўдалося ўставіць усе значэнні',
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
-    'Значэнне тыпу "{{type}}" не дазволенае ў гэтым полі',
+    'Значэнне тыпу "{{type}}" не дазволена ў гэтым полі',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Мэтавае поле толькі для чытання',
