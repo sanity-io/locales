@@ -327,7 +327,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Усе змены з моманту апошняй публікацыі былі адменены. Адхілены чарнавік яшчэ можна аднавіць з гісторыі',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Дакумент быў паспяхова дубляваны',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Дакумент быў апублікаваны',
   /** The text when a restore operation succeeded  */

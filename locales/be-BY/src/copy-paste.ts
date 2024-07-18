@@ -2,57 +2,72 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Text on the field action button to copy a document */
-  'copy-paste.field-action-copy-button.document.title': undefined, // 'Copy document'
+  'copy-paste.field-action-copy-button.document.title': 'Капіяваць дакумент',
   /** Text on the field action button to copy a field */
-  'copy-paste.field-action-copy-button.field.title': undefined, // 'Copy field'
+  'copy-paste.field-action-copy-button.field.title': 'Капіяваць поле',
   /** Text on the field action button to paste a document */
-  'copy-paste.field-action-paste-button.document.title': undefined, // 'Paste document'
+  'copy-paste.field-action-paste-button.document.title': 'Уставіць дакумент',
   /** Text on the field action button to paste a field */
-  'copy-paste.field-action-paste-button.field.title': undefined, // 'Paste field'
+  'copy-paste.field-action-paste-button.field.title': 'Уставіць поле',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title': undefined, // 'Your browser does not support this action'
+  'copy-paste.on-copy.validation.clipboard-not-supported.title':
+    'Ваш браўзер не падтрымлівае гэтую дзеянне',
   /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': undefined, // 'Document "{{fieldNames}}" copied'
+  'copy-paste.on-copy.validation.copy-document-success.title':
+    'Дакумент "{{fieldNames}}" скапіраваны',
   /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': undefined, // 'Field "{{fieldName}}" copied'
+  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Поле "{{fieldName}}" скапіравана',
   /** The error message that is shown when there is no value to copy */
-  'copy-paste.on-copy.validation.no-value.title': undefined, // 'Empty value, nothing to copy'
+  'copy-paste.on-copy.validation.no-value.title': 'Пустое значэнне, няма чаго капіяваць',
   /** --- On copy --- */
   /** The error message that is shown when schema types are incompatible */
-  'copy-paste.on-copy.validation.schema-type-incompatible.title': undefined, // 'Could not resolve schema type for path: {{path}}'
+  'copy-paste.on-copy.validation.schema-type-incompatible.title':
+    'Не ўдалося вызначыць тып схемы для шляху: {{path}}',
   /** The validation message that is shown when array types are incompatible */
-  'copy-paste.on-paste.validation.array-type-incompatible.description': undefined, // 'Value of type "{{type}}" is not allowed in this array field'
+  'copy-paste.on-paste.validation.array-type-incompatible.description':
+    'Значэнне тыпу "{{type}}" не дазволенае ў гэтым масіўным полі',
   /** The validation message that is shown when array values are incompatible */
-  'copy-paste.on-paste.validation.array-value-incompatible.description': undefined, // 'Value of type "{{type}}" is not allowed in this array field'
+  'copy-paste.on-paste.validation.array-value-incompatible.description':
+    'Значэнне тыпу "{{type}}" не дазволена ў гэтым масіўным полі',
   /** The validation message that is shown when the clipboard is empty */
-  'copy-paste.on-paste.validation.clipboard-empty.title': undefined, // 'Nothing to paste'
+  'copy-paste.on-paste.validation.clipboard-empty.title': 'Няма чаго ўставіць',
   /** The validation message that is shown when the clipboard item is invalid */
-  'copy-paste.on-paste.validation.clipboard-invalid.title': undefined, // 'Invalid clipboard item'
+  'copy-paste.on-paste.validation.clipboard-invalid.title': 'Няправільны элемент буфера абмену',
   /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title': undefined, // 'Document "{{fieldNames}}" updated'
+  'copy-paste.on-paste.validation.document-paste-success.title':
+    'Дакумент "{{fieldNames}}" абноўлены',
   /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': undefined, // 'Field "{{fieldName}}" updated'
+  'copy-paste.on-paste.validation.field_one-paste-success.title': 'Поле "{{fieldName}}" абноўлена',
   /** The validation message that is shown when image files are incompatible */
-  'copy-paste.on-paste.validation.image-file-incompatible.description': undefined, // 'A "{{sourceSchemaType}}" is not allowed in a "{{targetSchemaType}}"'
+  'copy-paste.on-paste.validation.image-file-incompatible.description':
+    '"{{sourceSchemaType}}" не дазволена ў "{{targetSchemaType}}"',
   /** The error message that is shown when the MIME type is not accepted */
-  'copy-paste.on-paste.validation.mime-type-incompatible.description': undefined, // 'MIME type "{{mimeType}}" is not accepted for this field'
+  'copy-paste.on-paste.validation.mime-type-incompatible.description':
+    'MIME-тып "{{mimeType}}" не прыняты для гэтага поля',
   /** The error message that is shown when the MIME type validation fails */
-  'copy-paste.on-paste.validation.mime-type-validation-failed.description': undefined, // 'MIME type validation failed'
+  'copy-paste.on-paste.validation.mime-type-validation-failed.description':
+    'Праверка MIME-тыпу не прайшла',
   /** The warning message that is shown when not all values can be pasted */
-  'copy-paste.on-paste.validation.partial-warning.title': undefined, // 'Could not paste all values'
+  'copy-paste.on-paste.validation.partial-warning.title': 'Не ўдалося ўставіць усе значэнні',
   /** The validation message that is shown when primitive types are incompatible */
-  'copy-paste.on-paste.validation.primitive-type-incompatible.description': undefined, // 'Value of type "{{type}}" is not allowed in this field'
+  'copy-paste.on-paste.validation.primitive-type-incompatible.description':
+    'Значэнне тыпу "{{type}}" не дазволена ў гэтым полі',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': undefined, // 'The target is read-only'
+  'copy-paste.on-paste.validation.read-only-target.description': 'Мэтавае поле толькі для чытання',
   /** The validation message that is shown when reference is incompatible with filter */
-  'copy-paste.on-paste.validation.reference-filter-incompatible.description': undefined, // 'Reference is not allowed in reference field according to filter'
+  'copy-paste.on-paste.validation.reference-filter-incompatible.description':
+    'Спасылка не дазволена ў полі спасылак згодна з фільтрам',
   /** The validation message that is shown when reference types are incompatible */
-  'copy-paste.on-paste.validation.reference-type-incompatible.description': undefined, // 'References of type "{{sourceReferenceType}}" is not allowed in reference field that accepts types "{{targetReferenceTypes}}"'
+  'copy-paste.on-paste.validation.reference-type-incompatible.description':
+    'Спасылкі тыпу "{{sourceReferenceType}}" не дазволены ў полі спасылак, якое прымае тыпы "{{targetReferenceTypes}}"',
   /** The validation message that is shown when the source and target schema types are incompatible */
-  'copy-paste.on-paste.validation.schema-type-incompatible.description': undefined, // 'Source and target schema types are not compatible'
+  'copy-paste.on-paste.validation.schema-type-incompatible.description':
+    'Тыпы схемы крыніцы і мэты не сумяшчальныя',
   /** The validation message that is shown when schema types are incompatible */
-  'copy-paste.on-paste.validation.schema-type-incompatible.title': undefined, // 'Could not resolve schema type for path: {{path}}'
+  'copy-paste.on-paste.validation.schema-type-incompatible.title':
+    'Не ўдалося вызначыць тып схемы для шляху: {{path}}',
   /** The validation message that is shown when string values are incompatible */
-  'copy-paste.on-paste.validation.string-value-incompatible.description': undefined, // 'Value "{{value}}" is not allowed in "{{allowedStrings}}"'
+  'copy-paste.on-paste.validation.string-value-incompatible.description':
+    'Значэнне "{{value}}" не дазволена ў "{{allowedStrings}}"',
 })
