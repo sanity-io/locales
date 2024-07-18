@@ -326,7 +326,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Все изменения с последней публикации теперь отменены. Отмененный черновик все еще можно восстановить из истории',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate': 'Документ был успешно дублирован',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Документ был опубликован',
   /** The text when a restore operation succeeded  */
