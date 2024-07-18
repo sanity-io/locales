@@ -349,7 +349,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Alle wijzigingen sinds de laatste publicatie zijn nu verworpen. De verworpen conceptversie kan nog steeds worden hersteld uit de geschiedenis',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Het document is succesvol gedupliceerd',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Het document is gepubliceerd',
   /** The text when a restore operation succeeded  */
