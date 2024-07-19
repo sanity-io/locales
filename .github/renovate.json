@@ -4,18 +4,46 @@
   "ignorePresets": [":ignoreModulesAndTests", "github>sanity-io/renovate-config:group-non-major"],
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "rangeStrategy": "bump"
+      "description": "Enable automerge with GitHub merge queues (note that this doesn't bypass required checks and code reviews)",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
     },
     {
-      "description": "Update Sanity modules that contains i18n resources automatically",
-      "matchDepNames": ["sanity", "@sanity/icons", "@sanity/ui", "@sanity/vision", "groq"],
+      "description": "Dependency updates to examples and the root should always use the chore scope as they aren't published to npm",
+      "matchFileNames": ["package.json", "apps/**/package.json"],
+      "extends": [":semanticCommitTypeAll(chore)"]
+    },
+    {
+      "description": "Group minor and patch deps in apps to a single PR",
+      "matchFileNames": ["apps/**/package.json"],
+      "groupName": "dev-non-major",
+      "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "replacement",
+        "rollback"
+      ]
+    },
+    {
+      "description": "Ensure internal and important packages open a PRs right away, without waiting for manual approval",
+      "matchPackageNames": [
+        "@sanity/icons",
+        "@sanity/presentation",
+        "@sanity/ui",
+        "@sanity/vision",
+        "groq",
+        "sanity"
+      ],
       "matchUpdateTypes": ["minor", "patch"],
-      "matchFileNames": ["package.json", "apps/studio/package.json"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "schedule": ["at any time"],
-      "groupSlug": "sanity",
+      "dependencyDashboardApproval": false,
+      "schedule": ["every weekday", "at any time"],
       "semanticCommitType": "chore",
+      "groupSlug": "sanity",
       "automerge": true,
       "automergeStrategy": "squash"
     }
