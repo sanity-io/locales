@@ -41,7 +41,7 @@
       "matchUpdateTypes": ["minor", "patch"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "dependencyDashboardApproval": false,
-      "schedule": ["every weekday", "at any time"],
+      "schedule": ["every weekday"],
       "semanticCommitType": "chore",
       "groupSlug": "sanity",
       "automerge": true,
