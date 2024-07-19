@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
-      "commitMessage": "chore(deps): update {{depName}} to {{newVersion}}",
+      "semanticCommitType": "chore",
       "automerge": false,
       "dependencyDashboardApproval": true
     },
@@ -44,6 +44,11 @@
       "semanticCommitType": "chore",
       "schedule": ["before 3am on Monday"],
       "automerge": false
+    },
+    {
+      "matchPackageNames": ["sanity"],
+      "matchDepTypes": ["peerDependencies"],
+      "enabled": false
     }
   ]
 }
