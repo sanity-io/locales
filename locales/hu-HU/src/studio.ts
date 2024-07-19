@@ -388,9 +388,9 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Nem található tömbelem `_key`-vel: <code>"{{key}}"</code> a következő útvonalon: <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': 'Hívási verem:',
+  'form.error.unhandled-runtime-error.call-stack.title': 'Call Stack:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': 'Komponens verem:',
+  'form.error.unhandled-runtime-error.component-stack.title': 'Komponens Stack:',
   /** The error message for the unhandled error that crashed the Input component during render */
   'form.error.unhandled-runtime-error.error-message': 'Hiba: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
@@ -1032,7 +1032,7 @@ export default removeUndefinedLocaleResources({
     'Nincs jogosultságod ezt a dokumentumot törölni.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
-    'Nincs jogosultsága az ütemezések törlésére.',
+    'Nincs jogosultságod az ütemezések törlésére.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Nincs jogosultságod a változtatások elvetésére ebben a dokumentumban.',
@@ -1041,10 +1041,10 @@ export default removeUndefinedLocaleResources({
     'Nincs jogosultságod ezt a dokumentumot duplikálni.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
-    'Nincs jogosultsága az ütemezések szerkesztésére.',
+    'Nincs jogosultságod az ütemezések szerkesztésére.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
-    'Nincs jogosultsága az ütemezések végrehajtására.',
+    'Nincs jogosultságod az ütemezések végrehajtására.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Nincs jogosultságod ezt a dokumentumot közzétenni.',
@@ -1087,7 +1087,7 @@ export default removeUndefinedLocaleResources({
   'new-document.title': 'Új dokumentum létrehozása',
 
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': 'Frissítéshez nyomja meg',
+  'package-version.new-package-available.reload-button': 'Frissítéshez nyomd meg',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'A Sanity Studio készen áll a frissítésre!',
 
@@ -1561,7 +1561,7 @@ export default removeUndefinedLocaleResources({
   /** Label for reset column visibilities button */
   'sheet-list.reset-columns': 'Oszlopok alaphelyzetbe állítása',
   /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Válasszon ki legfeljebb 5 mezőtípust',
+  'sheet-list.select-fields': 'Válassz ki legfeljebb 5 mezőtípust',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguráció állapota',
@@ -1636,7 +1636,7 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': 'Morzsa menü',
+  'tree-editing-dialog.breadcrumbs.menu': 'Breadcrumb menü',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Keresés',
   /** Menu aria label for the search menu */

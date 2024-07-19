@@ -67,8 +67,8 @@ export default removeUndefinedLocaleResources({
     'A forrás és a cél sématípusai nem kompatibilisek',
   /** The validation message that is shown when schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.title':
-    'Nem sikerült megoldani a sématípust az útvonalhoz: {{path}}',
+    'Nem található a sématípus az útvonalon: {{path}}',
   /** The validation message that is shown when string values are incompatible */
   'copy-paste.on-paste.validation.string-value-incompatible.description':
-    'Az "{{value}}" érték nem megengedett a "{{allowedStrings}}"-ben',
+    'A(z) "{{value}}" érték nem megengedett "{{allowedStrings}}"-ben',
 })

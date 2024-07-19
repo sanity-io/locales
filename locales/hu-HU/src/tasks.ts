@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.new.text': 'Új feladat',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': 'Frissítés feladatok létrehozásához',
+  'buttons.new.upsell-tooltip': 'Fizess elő feladatok létrehozásához',
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Ugrás a következő feladatra',
   /** The label for the button that will previous to the next task */
@@ -52,7 +52,7 @@ export default removeUndefinedLocaleResources({
     'Amint a dokumentumhoz kapcsolódó feladatok lesznek, itt fognak megjelenni.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
   'empty-state.list.no-active-document.heading':
-    'Nyisson meg egy dokumentumot a feladat megtekintéséhez',
+    'Nyiss meg egy dokumentumot a feladat megtekintéséhez',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
   'empty-state.list.no-active-document.text':
     'Az aktív dokumentumon lévő feladatok itt jelennek meg.',
@@ -65,7 +65,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.status.list.closed.assigned.heading': 'Nincsenek befejezett feladatok',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.text':
-    'Az Ön által késznek jelölt feladatok itt fognak megjelenni',
+    'Az késznek jelölt feladatok itt fognak megjelenni',
   /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.document.heading': 'Nincsenek befejezett feladatok',
   /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
@@ -138,7 +138,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Feladat másolása',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': 'Frissítsen a feladatok duplikálásához',
+  'menuitem.duplicate.upsell-tooltip': 'Frissítés a feladatok duplikálásához',
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'létrehozta ezt a feladatot',
@@ -151,7 +151,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Hozzászólás hozzáadása...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': 'Frissítsen a feladatok megjegyzéséhez',
+  'panel.comment.placeholder.upsell': 'Frissítés a feladatok megjegyzéséhez',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Létrehozás',
   /** The title used in the drafts pulldown */
