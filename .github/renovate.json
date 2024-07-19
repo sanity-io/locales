@@ -4,6 +4,7 @@
   "dependencyDashboard": true,
   "schedule": ["before 3am on Monday"],
   "semanticCommitType": "chore",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
