@@ -33,14 +33,14 @@ export default removeUndefinedLocaleResources({
   'copy-link-success-message': 'Kopierte lenke til utklippstavlen',
 
   /** The delete dialog body for a comment */
-  'delete-comment.body': 'Når en kommentar er slettet, kan den ikke gjenopprettes.',
+  'delete-comment.body': 'Når den er slettet, kan en kommentar ikke gjenopprettes.',
   /** The delete dialog confirm button text for a comment */
   'delete-comment.confirm': 'Slett kommentar',
   /** The delete dialog title for a comment */
-  'delete-comment.title': 'Slette denne kommentaren?',
+  'delete-comment.title': 'Slett denne kommentaren?',
 
   /** The delete dialog error */
-  'delete-dialog.error': 'Det oppstod en feil under sletting av kommentaren. Vennligst prøv igjen.',
+  'delete-dialog.error': 'En feil oppstod under sletting av kommentaren. Vennligst prøv igjen.',
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
@@ -48,12 +48,12 @@ export default removeUndefinedLocaleResources({
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'Slett tråd',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'Slette denne kommentartråden?',
+  'delete-thread.title': 'Slett denne kommentartråden?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'Forkast',
   /** The header for discard comment dialog */
-  'discard.header': 'Forkaste kommentar?',
+  'discard.header': 'Forkast kommentar?',
   /** The text for discard comment dialog */
   'discard.text': 'Vil du forkaste kommentaren?',
 
@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Hjelp til med å forbedre ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Kommentarer',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Legg til kommentar',
@@ -116,9 +116,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown when the value a comment references has been deleted */
   'list-item.missing-referenced-value-tooltip-content': 'Den kommenterte teksten har blitt slettet',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': 'Åpne kommentarhandlingsmeny',
+  'list-item.open-menu-aria-label': 'Åpne kommentarhandlingsmenyen',
   /** The button text to re-open a resolved comment  */
-  'list-item.re-open-resolved': 'Gjenåpne',
+  'list-item.re-open-resolved': 'Åpne på nytt',
   /** The button aria label to re-open a comment that is resolved */
   'list-item.re-open-resolved-aria-label': 'Åpne på nytt',
   /** The button aria label to mark a comment as resolved */
@@ -149,7 +149,7 @@ export default removeUndefinedLocaleResources({
 
   /** The comments onboarding popover text */
   'onboarding.body':
-    'Du kan legge til kommentarer på ethvert felt i et dokument. De vil dukke opp her, gruppert etter felt.',
+    'Du kan legge til kommentarer til ethvert felt i et dokument. De vil dukke opp her, gruppert etter felt.',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'Skjønner',
   /** The comments onboarding popover header text */
@@ -174,7 +174,7 @@ export default removeUndefinedLocaleResources({
    * is used when you are not the first to react, eg "Donna, you, James and Tyler reacted with 👍".
    * Use `{{name}}` if you want to instead use the current users' actual name.
    */
-  'reactions.user-list.you_leading': 'Du',
+  'reactions.user-list.you_leading': 'Deg',
   /**
    * The text shown for the tooltip that appears when hovering over the reaction count, eg
    * "Donna, James, and Tyler Reacted with 👍". Three components are available for use:

@@ -8,16 +8,16 @@ export default removeUndefinedLocaleResources({
   /** Array item is a duplicate, but array wants only unique items */
   'array.item-duplicate': 'Kan ikke være en duplikat',
   /** Array has more than the maximum of "$maxLength" items */
-  'array.maximum-length': 'Må ha maks {{maxLength}} elementer',
+  'array.maximum-length': 'Må ha maksimalt {{maxLength}} elementer',
   /** Portable Text array has more than the maximum of "$maxLength" items */
-  'array.maximum-length_blocks': 'Må ha maks {{maxLength}} blokker',
+  'array.maximum-length_blocks': 'Må ha maksimalt {{maxLength}} blokker',
   /** Array has less than the minimum of "$minLength" items */
   'array.minimum-length': 'Må ha minst {{minLength}} elementer',
   /** Portable Text array has less than the minimum of "$minLength" blocks */
   'array.minimum-length_blocks': 'Må ha minst {{minLength}} blokker',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': 'Må være en gyldig ISO-8601 formatert dato-streng',
+  'date.invalid-format': 'Må være en gyldig ISO-8601 formatert dato streng',
   /** Date is later than the given maximum date "$maxDate" */
   'date.maximum': 'Må være på eller før {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
@@ -28,7 +28,7 @@ export default removeUndefinedLocaleResources({
   /** Value is not one of the values specifically allowed */
   'generic.not-allowed': 'Verdien stemte ikke overens med noen tillatte verdier',
   /** Value "$givenValue" is not one of the values specifically allowed */
-  'generic.not-allowed_hint': 'Verdien "{{hint}}" stemte ikke overens med noen tillatte verdier',
+  'generic.not-allowed_hint': 'Verdi "{{hint}}" stemte ikke overens med noen tillatte verdier',
   /** A value is expected, but none is provided */
   'generic.required': 'Påkrevd',
 
@@ -46,7 +46,7 @@ export default removeUndefinedLocaleResources({
   'number.non-integer': 'Må være et heltall',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': 'Ressurs er påkrevd',
+  'object.asset-required': 'Asset er påkrevd',
   /** Object is missing a reference to a file asset document in its `asset` field */
   'object.asset-required_file': 'Fil er påkrevd',
   /** Object is missing a reference to an image asset document in its `asset` field */
@@ -75,19 +75,19 @@ export default removeUndefinedLocaleResources({
   /** String has a different character length than the exact number "$wantedLength" */
   'string.exact-length': 'Må være nøyaktig {{wantedLength}} tegn lang',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': 'Må være bare små bokstaver',
+  'string.lowercase': 'Må være alle små bokstaver',
   /** String is longer than the limit of "$maxLength" characters */
   'string.maximum-length': 'Må være på maks {{maxLength}} tegn',
   /** String is shorter than the limit of "$minLength" characters */
   'string.minimum-length': 'Må være minst {{minLength}} tegn lang',
   /** String does not match the given regular expression, but should */
-  'string.regex-does-not-match': 'Samsvarer ikke med "{{name}}"-mønsteret',
+  'string.regex-does-not-match': 'Samsvare ikke med "{{name}}"-mønster',
   /** String matches the given regular expression, but should not */
-  'string.regex-match': 'Skal ikke samsvarer med "{{name}}"-mønsteret',
+  'string.regex-match': 'Bør ikke samsvare med "{{name}}"-mønster',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': 'Må være bare store bokstaver',
+  'string.uppercase': 'Må være alle store bokstaver',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
-  'string.url.disallowed-scheme': 'Samsvarer ikke med tillatte protokoller/skjemaer',
+  'string.url.disallowed-scheme': 'Samsvare ikke med tillatte protokoller/skjemaer',
   /** String contains a URL with a username or password specified before the host */
   'string.url.includes-credentials': 'Brukernavn/passord ikke tillatt',
   /** String is not a valid URL */
@@ -95,5 +95,5 @@ export default removeUndefinedLocaleResources({
   /** String is not an absolute URL (eg it is missing a protocol/host) */
   'string.url.not-absolute': 'Relative URL-er er ikke tillatt',
   /** String is not a relative URL (eg it contains a protocol/host) */
-  'string.url.not-relative': 'Bare relative URL-er er tillatt',
+  'string.url.not-relative': 'Kun relative URL-er er tillatt',
 })

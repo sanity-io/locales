@@ -46,14 +46,14 @@ export default removeUndefinedLocaleResources({
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
    */
-  'result.timing-not-applicable': 'i/u',
+  'result.timing-not-applicable': 'i/t',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versjon',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Egendefinert API-versjon',
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': 'Dataset',
+  'settings.dataset-label': 'Datasett',
   /** Error label for when the API version in 'Custom API version' input is invalid */
   'settings.error.invalid-api-version': 'Ugyldig API-versjon',
   /** Label for the "other" versions within the "API version" dropdown */
@@ -67,7 +67,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.action.docs-link': 'Les dokumentasjon',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
-    'Perspectives lar spørringen din kjøre mot forskjellige "visninger" av innholdet i datasettet ditt',
+    'Perspectives lar forespørselen din kjøre mot forskjellige "visninger" av innholdet i datasettet ditt',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
