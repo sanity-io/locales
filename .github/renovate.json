@@ -1,35 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-config"],
-  "ignorePresets": [":ignoreModulesAndTests", "github>sanity-io/renovate-config:group-non-major"],
+  "extends": ["config:recommended"],
+  "commitMessageAction": "update",
+  "commitMessagePrefix": "chore",
+  "dependencyDashboard": true,
+  "schedule": ["before 3am on Monday"],
   "packageRules": [
     {
-      "description": "Enable automerge with GitHub merge queues (note that this doesn't bypass required checks and code reviews)",
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
-    },
-    {
-      "description": "Dependency updates to examples and the root should always use the chore scope as they aren't published to npm",
-      "matchFileNames": ["package.json", "apps/**/package.json"],
-      "extends": [":semanticCommitTypeAll(chore)"]
-    },
-    {
-      "description": "Group minor and patch deps in apps to a single PR",
-      "matchFileNames": ["apps/**/package.json"],
-      "groupName": "dev-non-major",
-      "matchUpdateTypes": [
-        "bump",
-        "digest",
-        "minor",
-        "patch",
-        "pin",
-        "pinDigest",
-        "replacement",
-        "rollback"
-      ]
-    },
-    {
-      "description": "Ensure internal and important packages open a PRs right away, without waiting for manual approval",
       "matchPackageNames": [
         "@sanity/icons",
         "@sanity/presentation",
@@ -38,14 +16,27 @@
         "groq",
         "sanity"
       ],
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "dependencyDashboardApproval": false,
-      "schedule": ["every weekday"],
-      "semanticCommitType": "chore",
-      "groupSlug": "sanity",
+      "groupName": "sanity-dependencies",
+      "groupSlug": "sanity-dependencies",
       "automerge": true,
-      "automergeStrategy": "squash"
+      "automergeType": "pr",
+      "automergeStrategy": "squash",
+      "schedule": ["at any time"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackagePatterns": ["*"],
+      "excludePackageNames": [
+        "@sanity/icons",
+        "@sanity/presentation",
+        "@sanity/ui",
+        "@sanity/vision",
+        "groq",
+        "sanity"
+      ],
+      "commitMessagePrefix": "chore",
+      "schedule": ["before 3am on Monday"],
+      "automerge": false
     }
   ]
 }
