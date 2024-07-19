@@ -17,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Feld "{{fieldName}}" kopiert',
   /** The error message that is shown when there is no value to copy */
-  'copy-paste.on-copy.validation.no-value.title': 'Leerer Wert, nichts zu kopieren',
+  'copy-paste.on-copy.validation.no-value.title': 'Leerer Wert, nichts zum Kopieren',
   /** --- On copy --- */
   /** The error message that is shown when schema types are incompatible */
   'copy-paste.on-copy.validation.schema-type-incompatible.title':
@@ -69,5 +69,5 @@ export default removeUndefinedLocaleResources({
     'Konnte Schema-Typ für Pfad nicht auflösen: {{path}}',
   /** The validation message that is shown when string values are incompatible */
   'copy-paste.on-paste.validation.string-value-incompatible.description':
-    'Wert "{{value}}" ist nicht erlaubt in "{{allowedStrings}}"',
+    'Wert "{{value}}" ist in "{{allowedStrings}}" nicht erlaubt',
 })
