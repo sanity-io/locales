@@ -29,24 +29,24 @@ export default removeUndefinedLocaleResources({
     'Du er i ferd med å slette filen og dens metadata. Er du sikker?',
   /** Message confirming to delete *named* image */
   'asset-source.delete-dialog.usage-list.confirm-delete-image_named':
-    'Du er i ferd med å slette bildet <strong>{{filename}}</strong> og dens metadata. Er du sikker?',
+    'Du er i ferd med å slette bildet <strong>{{filename}}</strong> og dets metadata. Er du sikker?',
   /** Message confirming to delete *unnamed* image */
   'asset-source.delete-dialog.usage-list.confirm-delete-image_unnamed':
-    'Du er i ferd med å slette bildet og dens metadata. Er du sikker?',
+    'Du er i ferd med å slette bildet og dets metadata. Er du sikker?',
   /** Alt text showing on image preview in delete asset dialog  */
   'asset-source.delete-dialog.usage-list.image-preview-alt': 'Forhåndsvisning av bilde',
   /** Warning message showing when *named* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_named':
-    '{{filename}} kan ikke slettes fordi den er i bruk. For å slette denne filen må du først fjerne all bruk av den.',
+    '{{filename}} kan ikke slettes fordi den er i bruk. For å slette denne filen, må du først fjerne alle bruksområder for den.',
   /** Warning message showing when *unnamed* file can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-file-is-in-use_unnamed':
-    'Denne filen kan ikke slettes fordi den er i bruk. For å slette den må du først fjerne all bruk av den.',
+    'Denne filen kan ikke slettes fordi den er i bruk. For å slette den, må du først fjerne alle bruksområder for den.',
   /** Warning message showing when *named* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_named':
-    '{{filename}} kan ikke slettes fordi den er i bruk. For å slette dette bildet må du først fjerne all bruk av det.',
+    '{{filename}} kan ikke slettes fordi det er i bruk. For å slette dette bildet, må du først fjerne alle bruksområder for det.',
   /** Warning message showing when *unnamed* image can't be deleted because it is in use */
   'asset-source.delete-dialog.usage-list.warning-image-is-in-use_unnamed':
-    'Dette bildet kan ikke slettes fordi det er i bruk. For å slette det må du først fjerne all bruk av det.',
+    'Dette bildet kan ikke slettes fordi det er i bruk. For å slette det, må du først fjerne alle bruksområder for det.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Viser kun eiendeler av aksepterte typer: <strong>{{acceptTypes}}</strong>',
@@ -56,13 +56,13 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Velg bilde',
   /** Select asset dialog load more items */
-  'asset-source.dialog.load-more': 'Last inn flere',
+  'asset-source.dialog.load-more': 'Last mer',
   /** Text shown when selecting a file but there's no files to select from */
   'asset-source.dialog.no-assets_file': 'Ingen filer',
   /** Text shown when selecting an image but there's no images to select from */
   'asset-source.dialog.no-assets_image': 'Ingen bilder',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
-    'Kan ikke slette valgt fil',
+    'Kan ikke slette den valgte filen',
   'asset-source.file.asset-list.action.delete.text': 'Slett',
   'asset-source.file.asset-list.action.delete.title': 'Slett fil',
   'asset-source.file.asset-list.action.select-file.title': 'Velg filen {{filename}}',
@@ -131,7 +131,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for selecting the minute */
   'calendar.action.select-minute': 'Velg minutt',
   /** Action message for setting to the current time */
-  'calendar.action.set-to-current-time': 'Sett til nåværende tidspunkt',
+  'calendar.action.set-to-current-time': 'Sett til nåværende tid',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} den {{date, datetime}}',
   /** Error message displayed in calendar when entered date is not the correct format */
@@ -176,7 +176,7 @@ export default removeUndefinedLocaleResources({
   'calendar.weekday-names.short.wednesday': 'Ons',
 
   /** Label for the close button label in Review Changes pane */
-  'changes.action.close-label': 'Lukk gjennomgang av endringer',
+  'changes.action.close-label': 'Lukk gjennomgangsendringer',
   /** Cancel label for revert button prompt action */
   'changes.action.revert-all-cancel': 'Avbryt',
   /** Revert all confirm label for revert button action - used on prompt button + review changes pane */
@@ -215,10 +215,10 @@ export default removeUndefinedLocaleResources({
   /** Additional text shown in development mode when a diff component crashes during rendering */
   'changes.error-boundary.developer-info': 'Sjekk utviklerkonsollen for mer informasjon',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
-  'changes.error-boundary.title': 'Å gjengi endringene i dette feltet forårsaket en feil',
+  'changes.error-boundary.title': 'Gjengivelse av endringene til dette feltet forårsaket en feil',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
-    'Verdifel: Verdien er av typen "<code>{{actualType}}</code>", forventet "<code>{{expectedType}}</code>"',
+    'Verdi feil: Verdi er av typen "<code>{{actualType}}</code>", forventet "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Uten tittel',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
@@ -247,24 +247,24 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Laster endringer…',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
-    'Rediger dokumentet eller velg en eldre versjon i tidslinjen for å se en liste over endringer dukke opp i dette panelet.',
+    'Rediger dokumentet eller velg en eldre versjon i tidslinjen for å se en liste over endringer vises i dette panelet.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Det er ingen endringer',
   /** Portable Text diff: An annotation was added */
-  'changes.portable-text.annotation_added': 'Lagt til annotasjon',
+  'changes.portable-text.annotation_added': 'Annotasjon lagt til',
   /** Portable Text diff: An annotation was changed */
-  'changes.portable-text.annotation_changed': 'Endret annotasjon',
+  'changes.portable-text.annotation_changed': 'Annotasjon endret',
   /** Portable Text diff: An annotation was removed */
-  'changes.portable-text.annotation_removed': 'Fjernet annotasjon',
+  'changes.portable-text.annotation_removed': 'Annotasjon fjernet',
   /** Portable Text diff: An annotation was left unchanged */
-  'changes.portable-text.annotation_unchanged': 'Uendret annotasjon',
+  'changes.portable-text.annotation_unchanged': 'Annotasjon uendret',
   /** Portable Text diff: A block changed from one style to another (eg `normal` to `h1` or similar) */
   'changes.portable-text.block-style-changed':
     'Endret blokkstil fra "{{fromStyle}}" til "{{toStyle}}"',
   /** Portable Text diff: Change formatting of text (setting/unsetting marks, eg bold/italic etc) */
   'changes.portable-text.changed-formatting': 'Endret formatering',
   /** Portable Text diff: An empty inline object is part of a change */
-  'changes.portable-text.empty-inline-object': 'Tomt {{inlineObjectType}}',
+  'changes.portable-text.empty-inline-object': 'Tom {{inlineObjectType}}',
   /** Portable Text diff: An empty object is the result of adding/removing an annotation */
   'changes.portable-text.empty-object-annotation': 'Tom {{annotationType}}',
   /** Portable Text diff: Added a block containing no text (eg empty block) */
@@ -286,9 +286,9 @@ export default removeUndefinedLocaleResources({
   /** Portable Text diff: Removed a chunk of text */
   'changes.portable-text.text_removed': 'Fjernet tekst',
   /** Portable Text diff: Annotation has an unknown schema type */
-  'changes.portable-text.unknown-annotation-schema-type': 'Ukjent skjematype',
+  'changes.portable-text.unknown-annotation-schema-type': 'Ukjent skjema type',
   /** Portable Text diff: Inline object has an unknown schema type */
-  'changes.portable-text.unknown-inline-object-schema-type': 'Ukjent skjematype',
+  'changes.portable-text.unknown-inline-object-schema-type': 'Ukjent skjema type',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Fjernet',
   /** Title for the Review Changes pane */
@@ -318,15 +318,15 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
   'default-orderings.description': 'Sorter etter beskrivelse',
   /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
-  'default-orderings.header': 'Sorter etter Header',
+  'default-orderings.header': 'Sorter etter overskrift',
   /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
-  'default-orderings.heading': 'Sorter etter Heading',
+  'default-orderings.heading': 'Sorter etter heading',
   /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
-  'default-orderings.label': 'Sorter etter Label',
+  'default-orderings.label': 'Sorter etter etikett',
   /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
-  'default-orderings.name': 'Sorter etter Navn',
+  'default-orderings.name': 'Sorter etter navn',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
-  'default-orderings.title': 'Sorter etter Tittel',
+  'default-orderings.title': 'Sorter etter tittel',
 
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Redigert {{date}}',
@@ -340,7 +340,7 @@ export default removeUndefinedLocaleResources({
     'Verdien av <code>_key</code>-egenskapen må være en unik streng.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely. */
   'form.error.duplicate-keys-alert.details.description':
-    'Dette skjer vanligvis når elementer opprettes ved hjelp av en API-klient, og <code>_key</code>-egenskapen for hvert element har blitt generert ikke-unikt.',
+    'Dette skjer vanligvis når elementer opprettes ved hjelp av en API-klient, og <code>_key</code>-egenskapen til hvert element har blitt generert ikke-unikt.',
   /** Developer info */
   'form.error.duplicate-keys-alert.details.title': 'Utviklerinfo',
   /** Generate unique keys */
@@ -352,7 +352,7 @@ export default removeUndefinedLocaleResources({
   'form.error.duplicate-keys-alert.title': 'Ikke-unike nøkler',
   /** Error text shown when a field with a given name cannot be found in the schema or is conditionally hidden but explicitly told to render  */
   'form.error.field-not-found':
-    'Feltet "{{fieldName}}" ble ikke funnet blant medlemmene – verifiser at det er definert i skjemaet og at det ikke har blitt betinget skjult.',
+    'Felt "{{fieldName}}" ikke funnet blant medlemmer – verifiser at det er definert i skjemaet og at det ikke har blitt betinget skjult.',
   /** Add missing keys */
   'form.error.missing-keys-alert.add-button.text': 'Legg til manglende nøkler',
   /** The value of the <code>_key</code> property must be a unique string. */
@@ -365,27 +365,27 @@ export default removeUndefinedLocaleResources({
   'form.error.missing-keys-alert.details.title': 'Utviklerinfo',
   /** Some items in the list are missing their keys. This must be fixed in order to edit the list. */
   'form.error.missing-keys-alert.summary':
-    'Noen elementer i listen mangler sine nøkler. Dette må rettes opp for å kunne redigere listen.',
+    'Noen elementer i listen mangler sine nøkler. Dette må fikses for å redigere listen.',
   /** Missing keys */
   'form.error.missing-keys-alert.title': 'Manglende nøkler',
   /** This usually happens when items are created using an API client, or when a custom input component has added invalid data to the list. */
   'form.error.mixed-array-alert.details.description':
-    'Dette skjer vanligvis når elementer opprettes ved hjelp av en API-klient, eller når en tilpasset inndatakomponent har lagt til ugyldige data i listen.',
+    'Dette skjer vanligvis når elementer opprettes ved hjelp av en API-klient, eller når en tilpasset inndata-komponent har lagt til ugyldige data i listen.',
   /** Developer info */
   'form.error.mixed-array-alert.details.title': 'Utviklerinfo',
   /**  Remove non-object values */
   'form.error.mixed-array-alert.remove-button.text': 'Fjern ikke-objektverdier',
   /** Some items in this list are not objects. This must be fixed in order to edit the list. */
   'form.error.mixed-array-alert.summary':
-    'Noen elementer i denne listen er ikke objekter. Dette må rettes opp for å kunne redigere listen.',
+    'Noen elementer i denne listen er ikke objekter. Dette må fikses for å redigere listen.',
   /** Invalid list values */
-  'form.error.mixed-array-alert.title': 'Ugyldige liste verdier',
+  'form.error.mixed-array-alert.title': 'Ugyldige listeverdier',
   /** Error text shown when form is unable to find an array item at a given indexed path */
   'form.error.no-array-item-at-index':
-    'Ingen element i listen ved indeks <code>{{index}}</code> funnet på sti <code>{{path}}</code>',
+    'Ingen listeelement på indeks <code>{{index}}</code> funnet på sti <code>{{path}}</code>',
   /** Error text shown when form is unable to find an array item at a given keyed path */
   'form.error.no-array-item-at-key':
-    'Ingen element i listen med `_key` <code>"{{key}}"</code> funnet på sti <code>{{path}}</code>',
+    'Ingen listeelement med `_key` <code>"{{key}}"</code> funnet på sti <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
   'form.error.unhandled-runtime-error.call-stack.title': 'Kallstakk:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
@@ -393,9 +393,9 @@ export default removeUndefinedLocaleResources({
   /** The error message for the unhandled error that crashed the Input component during render */
   'form.error.unhandled-runtime-error.error-message': 'Feil: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': 'Uhåndtert kjøretidsfeil',
+  'form.error.unhandled-runtime-error.title': 'Ubehandlet Kjøretidsfeil',
   /** Form field deprecated label */
-  'form.field.deprecated-label': 'foreldet',
+  'form.field.deprecated-label': 'utdatert',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Uten tittel',
   /** Accessibility label for the icon that indicates the field has a validation error */
@@ -447,7 +447,7 @@ export default removeUndefinedLocaleResources({
   'input.files.common.upload-progress': 'Laster opp <FileName/>',
   /** The referenced document cannot be opened, because the URL failed to be resolved */
   'input.reference.document-cannot-be-opened.failed-to-resolve-url':
-    'Dette dokumentet kan ikke åpnes (kan ikke løse URL til Studio)',
+    'Dette dokumentet kan ikke åpnes (klarte ikke å løse URL til Studio)',
 
   /** Label for adding item after a specific array item */
   'inputs.array.action.add-after': 'Legg til element etter',
@@ -461,7 +461,7 @@ export default removeUndefinedLocaleResources({
    */
   'inputs.array.action.add-item-select-type': 'Legg til element...',
   /** Array drag handle button tooltip */
-  'inputs.array.action.drag.tooltip': 'Dra for å endre rekkefølge',
+  'inputs.array.action.drag.tooltip': 'Dra for å omorganisere',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Dupliser',
   /** Label for editing the item of a specific type, eg "Edit Person" */
@@ -474,7 +474,7 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.view': 'Vis {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
-    'Du kan fortsatt flytte eller slette dette elementet, men det kan ikke redigeres siden skjemadefinisjonen for dens type ikke finnes.',
+    'Du kan fortsatt flytte eller slette dette elementet, men det kan ikke redigeres siden skjema definisjonen for typen ikke finnes.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Kan ikke løse initialverdi for type: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -486,12 +486,12 @@ export default removeUndefinedLocaleResources({
     'Følgende elementer kan ikke lastes opp fordi det ikke finnes noen kjent konvertering fra innholdstyper til array-element:',
   /** Error description for the array item tooltip that explains that the current type item is not valid for the list  */
   'inputs.array.error.current-schema-not-declare-description':
-    'Det nåværende skjemaet deklarerer ikke elementer av typen <code>{{typeName}}</code> som gyldige for denne listen. Dette kan bety at typen har blitt fjernet som et gyldig element, eller at noen andre har lagt det til i sitt eget lokale skjema som ennå ikke er utplassert.',
+    'Det nåværende skjemaet erklærer ikke elementer av typen <code>{{typeName}}</code> som gyldige for denne listen. Dette kan bety at typen har blitt fjernet som en gyldig elementtype, eller at noen andre har lagt den til i sitt eget lokale skjema som ennå ikke er distribuert.',
   /** Error description to show how the item is being represented in the json format */
   'inputs.array.error.json-representation-description': 'JSON-representasjon av dette elementet:',
   /** Error description for the array item tooltip that explains what the error means with more context */
   'inputs.array.error.type-is-incompatible-prompt':
-    'Element av typen <code>{{typeName}}</code> ikke gyldig for denne listen',
+    'Element av typen <code>{{typeName}}</code> er ikke gyldig for denne listen',
   /** Error title for when an item type within an array input is incompatible, used in the tooltip */
   'inputs.array.error.type-is-incompatible-title': 'Hvorfor skjer dette?',
   /** Error label for unexpected errors in the Array Input */
@@ -511,13 +511,13 @@ export default removeUndefinedLocaleResources({
   /** Label for read only array fields */
   'inputs.array.read-only-label': 'Dette feltet er skrivebeskyttet',
   /** Label for when the array input is resolving the initial value for the item */
-  'inputs.array.resolving-initial-value': 'Løser initialverdi…',
+  'inputs.array.resolving-initial-value': 'Løser innledende verdi…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Deaktivert',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'f.eks. {{example}}',
   /** Acessibility label for button to open file options menu */
-  'inputs.file.actions-menu.file-options.aria-label': 'Åpne filalternativmenyen',
+  'inputs.file.actions-menu.file-options.aria-label': 'Åpne filalternativer-menyen',
   /** Browse */
   'inputs.file.browse-button.text': 'Bla gjennom',
   /** Select file */
@@ -526,7 +526,7 @@ export default removeUndefinedLocaleResources({
   'inputs.file.error.unknown-member-kind': 'Ukjent medlemstype: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
   'inputs.file.invalid-file-warning.description':
-    'Verdien av dette feltet er ikke en gyldig fil. Å tilbakestille dette feltet lar deg velge en ny fil.',
+    'Verdien av dette feltet er ikke en gyldig fil. Tilbakestilling av dette feltet lar deg velge en ny fil.',
   /** Reset value */
   'inputs.file.invalid-file-warning.reset-button.text': 'Tilbakestill verdi',
   /** Invalid file value */
@@ -584,14 +584,14 @@ export default removeUndefinedLocaleResources({
   /** Drop to upload image */
   'inputs.files.common.placeholder.drop-to-upload_image': 'Slipp for å laste opp bilde',
   /** Read only */
-  'inputs.files.common.placeholder.read-only': 'Skrivebeskyttet',
+  'inputs.files.common.placeholder.read-only': 'Kun lesing',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Kan ikke laste opp filer her',
   /** Clear upload */
-  'inputs.files.common.stale-upload-warning.clear': 'Fjern opplasting',
+  'inputs.files.common.stale-upload-warning.clear': 'Tøm opplasting',
   /** An upload has made no progress for at least `{{staleThresholdMinutes}}` minutes and likely got interrupted. You can safely clear the incomplete upload and try uploading again. */
   'inputs.files.common.stale-upload-warning.description':
-    'En opplasting har ikke gjort noen fremgang på minst {{staleThresholdMinutes}} minutter og ble sannsynligvis avbrutt. Du kan trygt fjerne den ufullstendige opplastingen og prøve å laste opp igjen.',
+    'En opplasting har ikke gjort fremgang på minst {{staleThresholdMinutes}} minutter og har sannsynligvis blitt avbrutt. Du kan trygt tømme den ufullstendige opplastingen og prøve å laste opp igjen.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ufullstendig opplasting',
   /** Tooltip text for action to crop image */
@@ -599,7 +599,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Åpne bilde redigeringsdialog',
   /** Accessibility label for button to open image options menu */
-  'inputs.image.actions-menu.options.aria-label': 'Åpne bilde alternativmeny',
+  'inputs.image.actions-menu.options.aria-label': 'Åpne bildealternativer-meny',
   /** Select */
   'inputs.image.browse-menu.text': 'Velg',
   /** Cannot upload this file here */
@@ -607,14 +607,14 @@ export default removeUndefinedLocaleResources({
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Slipp bilde for å laste opp',
   /** This field is read only */
-  'inputs.image.drag-overlay.this-field-is-read-only': 'Dette feltet er skrivebeskyttet',
+  'inputs.image.drag-overlay.this-field-is-read-only': 'Dette feltet er kun lesing',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ukjent medlemstype: {{kind}}',
   /** Edit hotspot and crop */
-  'inputs.image.hotspot-dialog.title': 'Rediger hotspot og beskjær',
+  'inputs.image.hotspot-dialog.title': 'Rediger hotspot og beskjæring',
   /** The value of this field is not a valid image. Resetting this field will let you choose a new image. */
   'inputs.image.invalid-image-warning.description':
-    'Verdien av dette feltet er ikke et gyldig bilde. Å tilbakestille dette feltet lar deg velge et nytt bilde.',
+    'Verdien av dette feltet er ikke et gyldig bilde. Tilbakestilling av dette feltet lar deg velge et nytt bilde.',
   /** Reset value */
   'inputs.image.invalid-image-warning.reset-button.text': 'Tilbakestill verdi',
   /** Invalid image value */
@@ -632,14 +632,14 @@ export default removeUndefinedLocaleResources({
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'Feil: {{errorMessage}}',
   /** Hotspot & Crop */
-  'inputs.imagetool.title': 'Hotspot & Beskjær',
+  'inputs.imagetool.title': 'Hotspot & Beskjæring',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Konverter til {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'Den nåværende verdien (<code>{{actualType}}</code>)',
   /** The property value is stored as a value type that does not match the expected type. */
   'inputs.invalid-value.description':
-    'Egenskapsverdien er lagret som en verdi type som ikke stemmer overens med den forventede typen.',
+    'Egenskapsverdien er lagret som en verditype som ikke samsvarer med forventet type.',
   /** The value of this property must be of type <code>`{{validType}}`</code> according to the schema. */
   'inputs.invalid-value.details.description':
     'Verdien av denne egenskapen må være av typen <code>{{validType}}</code> i henhold til skjemaet.',
@@ -648,7 +648,7 @@ export default removeUndefinedLocaleResources({
     'Bare følgende typer er gyldige her i henhold til skjemaet:',
   /** Mismatching value types typically occur when the schema has recently been changed. */
   'inputs.invalid-value.details.possible-reason':
-    'Uoverensstemmende verdi typer oppstår typisk når skjemaet nylig har blitt endret.',
+    'Uoverensstemmende verdityper oppstår vanligvis når skjemaet nylig er blitt endret.',
   /** Developer info */
   'inputs.invalid-value.details.title': 'Utviklerinfo',
   /** -- Invalid Value Input -- */
@@ -662,14 +662,14 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.aria-label': 'Feltgrupper',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
-    'Dette feltet er <strong>skrivebeskyttet</strong> i henhold til dokumentets skjema og kan ikke fjernes. Hvis du vil kunne fjerne dette i Studio, sørg for å fjerne <code>readOnly</code> feltet fra den omsluttende typen i skjemaet.',
+    'Dette feltet er <strong>kun lesbart</strong> i henhold til dokumentets skjema og kan ikke fjernes. Hvis du vil kunne fjerne dette i Studio, må du sørge for å fjerne <code>readOnly</code> feltet fra den omsluttende typen i skjemaet.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Fjern felt',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
   'inputs.object.unknown-fields.warning.description_one':
-    'Støtte på et felt som ikke er definert i skjemaet.',
+    'Møtte et felt som ikke er definert i skjemaet.',
   'inputs.object.unknown-fields.warning.description_other':
-    'Støtte på {{count}} felt som ikke er definert i skjemaet.',
+    'Møtte {{count}} felt som ikke er definert i skjemaet.',
   /** Detailed description of unknown field warning */
   'inputs.object.unknown-fields.warning.details.description_one':
     'Dette feltet er ikke definert i skjemaet, noe som kan bety at feltdefinisjonen har blitt fjernet eller at noen andre har lagt det til i sitt eget lokale prosjekt og ikke har distribuert endringene sine ennå.',
@@ -679,13 +679,13 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.warning.details.title': 'Utviklerinfo',
   /** Unknown field found */
   'inputs.object.unknown-fields.warning.title_one': 'Ukjent felt funnet',
-  'inputs.object.unknown-fields.warning.title_other': 'Ukjente felter funnet',
+  'inputs.object.unknown-fields.warning.title_other': 'Ukjente felt funnet',
   /** Collapse the editor to save screen space  */
-  'inputs.portable-text.action.collapse-editor': 'Skjul redigeringsverktøy',
+  'inputs.portable-text.action.collapse-editor': 'Skjul redaktør',
   /** Aria label for action to edit an existing annotation */
   'inputs.portable-text.action.edit-annotation-aria-label': 'Rediger annotasjon',
   /** Expand the editor to give more editing space */
-  'inputs.portable-text.action.expand-editor': 'Utvid redigeringsverktøy',
+  'inputs.portable-text.action.expand-editor': 'Utvid redaktør',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-block': 'Sett inn {{typeName}}',
   /** Accessibility label for action to insert a block of a given type (`{{typeName}}`) */
@@ -734,7 +734,7 @@ export default removeUndefinedLocaleResources({
   /** Placeholder text for when the editor is empty */
   'inputs.portable-text.empty-placeholder': 'Tom',
   /** Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': 'Innebygd objekt',
+  'inputs.portable-text.inline-block.aria-label': 'Inline objekt',
   /** Label for action to edit an inline object item */
   'inputs.portable-text.inline-object.edit': 'Rediger objekt',
   /** Aria label for icon for action to edit an inline object item */
@@ -745,43 +745,43 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.inline-object.remove-aria-label': 'Fjern objekt',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
   'inputs.portable-text.invalid-value.action-disclaimer':
-    'MERK: Det er generelt sett trygt å utføre handlingen ovenfor, men hvis du er i tvil, ta kontakt med de som er ansvarlige for å konfigurere ditt studio.',
+    'MERK: Det er generelt trygt å utføre handlingen ovenfor, men hvis du er i tvil, ta kontakt med de som er ansvarlige for å konfigurere studioet ditt.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
   'inputs.portable-text.invalid-value.disallowed-child-type.action': 'Fjern objektet',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
   'inputs.portable-text.invalid-value.disallowed-child-type.description':
-    'Barn med nøkkel {{childKey}} av blokk med nøkkel <code>{{key}}</code> er av typen <code>{{childType}}</code>, som ikke er tillatt av skjemadefinisjonen.',
+    'Barn med nøkkel {{childKey}} av blokk med nøkkel <code>{{key}}</code> er av typen <code>{{childType}}</code>, som ikke er tillatt av skjemaet.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a type (`{{typeName}}`) that is not an allowed block type for this field */
   'inputs.portable-text.invalid-value.disallowed-type.action': 'Fjern blokken',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a type (`{{typeName}}`) that is not an allowed block type for this field */
   'inputs.portable-text.invalid-value.disallowed-type.description':
-    'Blokken med nøkkel <code>{{key}}</code> er av typen <code>{{typeName}}</code>, som ikke er tillatt av skjemadefinisjonen.',
+    'Blokk med nøkkel <code>{{key}}</code> er av typen <code>{{typeName}}</code>, som ikke er tillatt av skjemaet.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains no children */
-  'inputs.portable-text.invalid-value.empty-children.action': 'Sett inn tom tekstspenn',
+  'inputs.portable-text.invalid-value.empty-children.action': 'Sett inn tom tekstspan',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains no children */
   'inputs.portable-text.invalid-value.empty-children.description':
-    'Tekstblokk med nøkkel <code>{{key}}</code> har ingen tekstspenn.',
+    'Tekstblokk med nøkkel <code>{{key}}</code> har ingen tekstspan.',
   /** Label for the button to ignore invalid values in the Portable Text editor */
   'inputs.portable-text.invalid-value.ignore-button.text': 'Ignorer',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a `_type` property that is set to `block`, but the block type defined in schema has a different name (`{{expectedTypeName}}`) */
   'inputs.portable-text.invalid-value.incorrect-block-type.action':
-    'Bruk typen <code>{{expectedTypeName}}</code>',
+    'Bruk type <code>{{expectedTypeName}}</code>',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a `_type` property that is set to `block`, but the block type defined in schema has a different name (`{{expectedTypeName}}`) */
   'inputs.portable-text.invalid-value.incorrect-block-type.description':
-    'Blokken med nøkkel <code>{{key}}</code> har et ugyldig typenavn. Ifølge skjemaet, bør det være <code>{{expectedTypeName}}</code>.',
+    'Blokk med nøkkel <code>{{key}}</code> har et ugyldig typenavn. I følge skjemaet skal det være <code>{{expectedTypeName}}</code>.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a span with key `{{childKey}}` that has a missing or invalid `text` property */
   'inputs.portable-text.invalid-value.invalid-span-text.action': 'Sett tom tekstverdi',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a span with key `{{childKey}}` that has a missing or invalid `text` property */
   'inputs.portable-text.invalid-value.invalid-span-text.description':
-    'Spenn med nøkkel {{childKey}} av blokk med nøkkel <code>{{key}}</code> har en manglende eller ugyldig <code>text</code> egenskap.',
+    'Span med nøkkel {{childKey}} av blokk med nøkkel <code>{{key}}</code> har en manglende eller ugyldig <code>text</code>-egenskap.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
   'inputs.portable-text.invalid-value.missing-block-type.action':
-    'Bruk typen <code>{{expectedTypeName}}</code>',
+    'Bruk type <code>{{expectedTypeName}}</code>',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
   'inputs.portable-text.invalid-value.missing-block-type.description':
-    'Blokken med nøkkel <code>{{key}}</code> mangler et typenavn. Ifølge skjemaet, bør det være <code>{{expectedTypeName}}</code>.',
+    'Blokk med nøkkel <code>{{key}}</code> mangler et typenavn. I følge skjemaet skal det være <code>{{expectedTypeName}}</code>.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
-  'inputs.portable-text.invalid-value.missing-child-key.action': 'Tilordne tilfeldig nøkkel',
+  'inputs.portable-text.invalid-value.missing-child-key.action': 'Tildel tilfeldig nøkkel',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
   'inputs.portable-text.invalid-value.missing-child-key.description':
     'Barn på indeks <code>{{index}}</code> av blokk med nøkkel <code>{{key}}</code> mangler <code>_key</code> egenskap.',
@@ -791,7 +791,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-child-type.description':
     'Barn med nøkkel {{childKey}} av blokk med nøkkel <code>{{key}}</code> mangler <code>_type</code> egenskap.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
-  'inputs.portable-text.invalid-value.missing-key.action': 'Tilordne tilfeldig nøkkel',
+  'inputs.portable-text.invalid-value.missing-key.action': 'Tildel tilfeldig nøkkel',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
   'inputs.portable-text.invalid-value.missing-key.description':
     'Blokk på indeks <code>{{index}}</code> mangler nødvendig <code>_key</code> egenskap.',
@@ -809,7 +809,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-type.action': 'Fjern blokken',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
   'inputs.portable-text.invalid-value.missing-type.description':
-    'Blokk med nøkkel <code>{{key}}</code> mangler en typenavn.',
+    'Blokk med nøkkel <code>{{key}}</code> mangler et typenavn.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
   'inputs.portable-text.invalid-value.non-object-child.action': 'Fjern elementet',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
@@ -819,17 +819,17 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.not-an-array.action': 'Fjern verdien',
   /** Text explaining that the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
   'inputs.portable-text.invalid-value.not-an-array.description':
-    'Verdien må være en rekke av Portable Text blokker, eller udefinert.',
+    'Verdien må være en matrise av Portable Text blokker, eller undefined.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is not an object */
-  'inputs.portable-text.invalid-value.not-an-object.action': 'Fjern element',
+  'inputs.portable-text.invalid-value.not-an-object.action': 'Fjern elementet',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is not an object */
   'inputs.portable-text.invalid-value.not-an-object.description':
-    'Element på <code>{{index}}</code> er ikke et objekt,.',
+    'Element på <code>{{index}}</code> er ikke et objekt.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.action': 'Fjern ikke tillatte merker',
+  'inputs.portable-text.invalid-value.orphaned-marks.action': 'Fjern ikke tillatte markeringer',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
   'inputs.portable-text.invalid-value.orphaned-marks.description':
-    'Tekstblokk med nøkkel <code>{{key}}</code> inneholder merker <code>({{orphanedMarks, list}})</code> som ikke er tillatt av skjemaet.',
+    'Tekstblokk med nøkkel <code>{{key}}</code> inneholder markeringer <code>({{orphanedMarks, list}})</code> som ikke er tillatt av skjemaet.',
   /** Title for the alert indicating that the Portable Text field has an invalid value */
   'inputs.portable-text.invalid-value.title': 'Ugyldig Portable Text verdi',
   /** Title of "bulleted" list type */
@@ -857,7 +857,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Sitat',
   /** Label for action to clear the current value of the reference field */
-  'inputs.reference.action.clear': 'Fjern',
+  'inputs.reference.action.clear': 'Tøm',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Opprett',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -874,13 +874,13 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.action.replace-cancel': 'Avbryt erstatning',
   /** The cross-dataset reference field currently has a reference, but the feature has been disabled since it was created. This explains what can/cannot be done in its current state. */
   'inputs.reference.cross-dataset.feature-disabled-actions':
-    'Du kan fortsatt fjerne denne feltets eksisterende referanse, men den kan ikke endres til et annet dokument så lenge funksjonen er deaktivert.',
+    'Du kan fortsatt tømme dette feltets eksisterende referanse, men det kan ikke endres til et annet dokument så lenge funksjonen er deaktivert.',
   /** A cross-dataset reference field exists but the feature has been disabled. A <DocumentationLink> component is available. */
   'inputs.reference.cross-dataset.feature-disabled-description':
-    'Denne funksjonen har blitt deaktivert. Les hvordan du aktiverer den i <DocumentationLink>dokumentasjonen</DocumentationLink>.',
+    'Denne funksjonen er deaktivert. Les hvordan du aktiverer den i <DocumentationLink>dokumentasjonen</DocumentationLink>.',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
   'inputs.reference.cross-dataset.feature-unavailable-title':
-    'Utilgjengelig funksjon: Kryss datasett referanse',
+    'Utilgjengelig funksjon: Kryss-dataset referanse',
   /** The cross-dataset reference points to a document with an invalid type  */
   'inputs.reference.cross-dataset.invalid-type':
     'Det refererte dokumentet er av ugyldig type ({{typeName}}) <JsonValue/>',
@@ -889,13 +889,13 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the document is unavailable (for any possible reason) */
   'inputs.reference.error.document-unavailable-title': 'Dokument utilgjengelig',
   /** Error title for when the referenced document failed to be loaded */
-  'inputs.reference.error.failed-to-load-document-title': 'Klarte ikke å laste referert dokument',
+  'inputs.reference.error.failed-to-load-document-title': 'Kunne ikke laste referert dokument',
   /** Error title for when the reference search returned a document that is not an allowed type for the field */
   'inputs.reference.error.invalid-search-result-type-title':
     'Søket returnerte en type som ikke er gyldig for denne referansen: "{{returnedType}}"',
   /** Error description for when the document referenced is not one of the types declared as allowed target types in schema */
   'inputs.reference.error.invalid-type-description':
-    'Referert dokument (<code>{{documentId}}</code>) er av type <code>{{actualType}}</code>. Ifølge skjemaet kan refererte dokumenter bare være av type <AllowedTypes />.',
+    'Referert dokument (<code>{{documentId}}</code>) er av typen <code>{{actualType}}</code>. I henhold til skjemaet kan refererte dokumenter kun være av typen <AllowedTypes />.',
   /** Error title for when the document referenced is not one of the types declared as allowed target types in schema */
   'inputs.reference.error.invalid-type-title': 'Dokument av ugyldig type',
   /** Error description for when the user does not have permissions to read the referenced document */
@@ -911,7 +911,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button that clears the reference when it points to a document that does not exist (on weak references) */
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Fjern',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
-  'inputs.reference.error.search-failed-title': 'Søk etter referanse mislyktes',
+  'inputs.reference.error.search-failed-title': 'Referansesøk mislyktes',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Bildevisning av referert dokument',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -927,16 +927,15 @@ export default removeUndefinedLocaleResources({
   /** Label for button that triggers the action that strengthen a reference */
   'inputs.reference.incomplete-reference.strengthen-button-label': 'Konverter til sterk referanse',
   /** Label for button that triggers a retry attempt for reference metadata  */
-  'inputs.reference.metadata-error.retry-button-label': 'Prøv på nytt',
+  'inputs.reference.metadata-error.retry-button-label': 'Prøv igjen',
   /** Title for alert shown when reference metadata fails to be loaded */
-  'inputs.reference.metadata-error.title': 'Kunne ikke laste referanse-metadata',
+  'inputs.reference.metadata-error.title': 'Kan ikke laste referansemetadata',
   /** Message shown when no documents were found that matched the given search string */
   'inputs.reference.no-results-for-query': 'Ingen resultater for <strong>“{{searchTerm}}”</strong>',
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
   'inputs.reference.preview.edited-at-time': 'Redigert <RelativeTime/>',
   /** Accessibility label for icon indicating that document does _not_ have any unpublished changes */
-  'inputs.reference.preview.has-no-unpublished-changes-aria-label':
-    'Ingen upubliserte redigeringer',
+  'inputs.reference.preview.has-no-unpublished-changes-aria-label': 'Ingen upubliserte endringer',
   /** Accessibility label for icon indicating that document has unpublished changes */
   'inputs.reference.preview.has-unpublished-changes-aria-label': 'Redigert',
   /** Accessibility label for icon indicating that document does _not_ have a published version */
@@ -944,14 +943,14 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for icon indicating that document has a published version */
   'inputs.reference.preview.is-published-aria-label': 'Publisert',
   /** Text for tooltip indicating that a document has no unpublished edits */
-  'inputs.reference.preview.no-unpublished-edits': 'Ingen upubliserte redigeringer',
+  'inputs.reference.preview.no-unpublished-edits': 'Ingen upubliserte endringer',
   /** Text for tooltip indicating that a document has not yet been published */
   'inputs.reference.preview.not-published': 'Ikke publisert',
   /** Text for tooltip showing when a document was published, using relative time (eg "how long ago was it published?") */
   'inputs.reference.preview.published-at-time': 'Publisert <RelativeTime/>',
   /** The referenced document no longer exist and might have been deleted (for weak references) */
   'inputs.reference.referenced-document-does-not-exist':
-    'Det refererte dokumentet eksisterer ikke lenger og kan ha blitt slettet (dokument-ID: <code>{{documentId}}</code>).',
+    'Det refererte dokumentet eksisterer ikke lenger og kan ha blitt slettet (dokument ID: <code>{{documentId}}</code>).',
   /** The referenced document could not be displayed to the user because of insufficient permissions */
   'inputs.reference.referenced-document-insufficient-permissions':
     'Det refererte dokumentet kunne ikke nås på grunn av utilstrekkelige tillatelser',
@@ -961,20 +960,20 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.search-placeholder': 'Skriv for å søke',
   /** Explanation of the consequences of leaving the reference as strong instead of weak */
   'inputs.reference.strength-mismatch.is-strong-consquences':
-    'Det vil ikke være mulig å slette det refererte dokumentet uten først å fjerne denne referansen eller konvertere den til svak.',
+    'Det vil ikke være mulig å slette referansedokumentet uten først å fjerne denne referansen eller konvertere den til svak.',
   /** Description for alert shown when a reference is supposed to be weak, but the actual value is strong */
   'inputs.reference.strength-mismatch.is-strong-description':
-    'Denne referansen er <em>sterk</em>, men ifølge gjeldende skjema bør den være <em>svak</em>.',
+    'Denne referansen er <em>sterk</em>, men ifølge det nåværende skjemaet skal den være <em>svak</em>.',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
   'inputs.reference.strength-mismatch.is-weak-consquences':
     'Dette gjør det mulig å slette det refererte dokumentet uten først å slette denne referansen, noe som etterlater dette feltet som refererer til et ikke-eksisterende dokument.',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
   'inputs.reference.strength-mismatch.is-weak-description':
-    'Denne referansen er <em>svak</em>, men ifølge gjeldende skjema bør den være <em>sterk</em>.',
+    'Denne referansen er <em>svak</em>, men ifølge det nåværende skjemaet skal den være <em>sterk</em>.',
   /** Label for button that triggers the action that strengthens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.strengthen-button-label': 'Konverter til sterk referanse',
   /** Title for alert shown when a reference is supposed to be weak/strong, but the actual value is the opposite of what it is supposed to be */
-  'inputs.reference.strength-mismatch.title': 'Uoverensstemmelse i referansestyrke',
+  'inputs.reference.strength-mismatch.title': 'Referansestyrke mismatch',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Konverter til svak referanse',
   /** Action message for generating the slug */
@@ -982,27 +981,25 @@ export default removeUndefinedLocaleResources({
   /** Loading message for when the input is actively generating a slug */
   'inputs.slug.action.generating': 'Genererer…',
   /** Error message for when the source to generate a slug from is missing */
-  'inputs.slug.error.missing-source':
-    'Kilden mangler. Sjekk kilden for type {{schemaType}} i skjemaet',
+  'inputs.slug.error.missing-source': 'Kilde mangler. Sjekk kilde på type {{schemaType}} i skjema',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': 'Skriv inn tagg og trykk ENTER…',
+  'inputs.tags.placeholder': 'Skriv inn tag og trykk ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': 'Skriv inn tagg…',
+  'inputs.tags.placeholder_touch': 'Skriv inn tag…',
   /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': 'Konverter til {{targetType}}',
   /** Encountered an object value without a <code>_type</code> property. */
-  'inputs.untyped-value.description':
-    'Støtte på en objektverdi uten en <code>_type</code> egenskap.',
+  'inputs.untyped-value.description': 'Møtte en objektverdi uten en <code>_type</code> egenskap.',
   /** Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items. */
   'inputs.untyped-value.details.description':
-    'Fjern enten <code>name</code> egenskapen fra objektdeklarasjonen, eller sett en <code>_type</code> egenskap på elementene.',
+    'Fjern enten <code>name</code> egenskapen fra objektdeklarasjonen, eller sett <code>_type</code> egenskapen på elementer.',
   /** Current value (<code>object</code>): */
-  'inputs.untyped-value.details.json-dump-prefix': 'Nåværende verdi (<code>objekt</code>):',
+  'inputs.untyped-value.details.json-dump-prefix': 'Nåværende verdi (<code>object</code>):',
   /** The following types are valid here according to schema: */
   'inputs.untyped-value.details.multi-type-description':
-    'Følgende typer er gyldige her ifølge skjemaet:',
+    'Følgende typer er gyldige her ifølge skjema:',
   /** Developer info */
-  'inputs.untyped-value.details.title': 'Informasjon for utviklere',
+  'inputs.untyped-value.details.title': 'Utviklerinfo',
   /** Property value missing <code>_type</code> */
   'inputs.untyped-value.title': 'Egenskapsverdi mangler <code>_type</code>',
   /** Unset value */
@@ -1105,7 +1102,7 @@ export default removeUndefinedLocaleResources({
   /** Fallback preview value for types that have "no value" (eg null, undefined) */
   'preview.fallback.no-value': '(ingen verdi)',
   /** Alternative text for image being shown while image is being uploaded, in previews */
-  'preview.image.file-is-being-uploaded.alt-text': 'Bildet som lastes opp',
+  'preview.image.file-is-being-uploaded.alt-text': 'Bildet som for øyeblikket lastes opp',
 
   /* Relative time, just now */
   'relative-time.just-now': 'akkurat nå',
@@ -1119,7 +1116,7 @@ export default removeUndefinedLocaleResources({
   /** Label for action to clear recent searches */
   'search.action.clear-recent-searches': 'Fjern nylige søk',
   /** Accessibility label for action to clear all currently applied document type filters */
-  'search.action.clear-type-filters-aria-label': 'Fjern merkede filtre',
+  'search.action.clear-type-filters-aria-label': 'Fjern avmerkede filtre',
   /** Label for action to clear all currently applied document type filters */
   'search.action.clear-type-filters-label': 'Fjern',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to close the search */
@@ -1132,7 +1129,7 @@ export default removeUndefinedLocaleResources({
    * Text displayed when either no document type(s) have been selected, or we need a fallback,
    * eg "Search for all types".
    */
-  'search.action.search-all-types': 'Søk alle dokumenter',
+  'search.action.search-all-types': 'Søk i alle dokumenter',
   /**
    * Text displayed when we are able to determine one or more document types that will be used for
    * searching, and can fit within the space assigned by the design.
@@ -1174,12 +1171,12 @@ export default removeUndefinedLocaleResources({
   'search.error.display-filter-title': 'En feil oppstod under visning av dette filteret.',
   /** Description for error when no valid asset source is found, describes that you should check the the current studio config */
   'search.error.no-valid-asset-source-check-config-description':
-    'Vennligst sørg for at det er aktivert i konfigurasjonsfilen for studioet ditt.',
+    'Vennligst sørg for at det er aktivert i studio konfigurasjonsfilen din.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
   'search.error.no-valid-asset-source-only-default-description':
-    'For øyeblikket støttes kun standard kildene for eiendeler.',
+    'For øyeblikket støttes kun standard ressurskilde.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': 'Ingen gyldige kilder for eiendeler funnet.',
+  'search.error.no-valid-asset-source-title': 'Ingen gyldige ressurskilder funnet.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-help-description':
     'Vennligst prøv igjen eller sjekk tilkoblingen din',
@@ -1196,7 +1193,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the action of changing from one image to a different image in asset search filter */
   'search.filter-asset-change_image': 'Bytt bilde',
   /** Label for the action of clearing the currently selected asset in an image/file filter */
-  'search.filter-asset-clear': 'Fjern',
+  'search.filter-asset-clear': 'Tøm',
   /** Label for the action of selecting a file in asset search filter */
   'search.filter-asset-select_file': 'Velg fil',
   /** Label for the action of selecting an image in asset search filter */
@@ -1233,21 +1230,21 @@ export default removeUndefinedLocaleResources({
   /** Label for when no fields/filters are found for the given term */
   'search.filter-no-matches-found': 'Ingen treff for {{filter}}',
   /** Placeholder value for maximum numeric value filter */
-  'search.filter-number-max-value-placeholder': 'Maks verdi',
+  'search.filter-number-max-value-placeholder': 'Maksverdi',
   /** Placeholder value for minimum numeric value filter */
-  'search.filter-number-min-value-placeholder': 'Min verdi',
+  'search.filter-number-min-value-placeholder': 'Minsteverdi',
   /** Placeholder value for the number filter */
   'search.filter-number-value-placeholder': 'Verdi',
   /** Placeholder for the "Filter" input, when narrowing possible fields/filters */
-  'search.filter-placeholder': 'Filtrer',
+  'search.filter-placeholder': 'Filter',
   /** Label for the action of clearing the currently selected document in a reference filter */
-  'search.filter-reference-clear': 'Fjern',
+  'search.filter-reference-clear': 'Tøm',
   /**
    * Label for "shared fields", a label that appears above a list of fields that all filtered types
    * have in common, when adding a new filter. For instance, if "book" and "employee" both have a
    * "title" field, this field would be listed under "shared fields".
    * */
-  'search.filter-shared-fields-header': 'Delte felter',
+  'search.filter-shared-fields-header': 'Delte felt',
   /** Placeholder value for the string filter */
   'search.filter-string-value-placeholder': 'Verdi',
   /** Label/placeholder prompting user to select one of the predefined, allowed values for a string field */
@@ -1257,7 +1254,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the "Filters" list, that is shown when using "Add filter" in search (plural) */
   'search.filters-aria-label_other': 'Filtre',
   /** Label for instructions on how to use the search - displayed when no recent searches are available */
-  'search.instructions': 'Bruk <ControlsIcon/> for å forbedre søket ditt',
+  'search.instructions': 'Bruk <ControlsIcon/> for å finjustere søket ditt',
   /** Helpful description for when no search results are found */
   'search.no-results-help-description': 'Prøv et annet søkeord eller juster filtrene dine',
   /** Title label for when no search results are found */
@@ -1291,44 +1288,44 @@ export default removeUndefinedLocaleResources({
     '<Field/> <Operator>har</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>har</Operator> <Value>{{count}} elementer</Value>',
-  'search.operator.array-count-equal.name': 'mengde er',
+  'search.operator.array-count-equal.name': 'antall er',
   /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} elementer</Value>',
-  'search.operator.array-count-gt.name': 'mengde større enn',
+  'search.operator.array-count-gt.name': 'antall større enn',
   /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} elementer</Value>',
-  'search.operator.array-count-gte.name': 'mengde større enn eller lik',
+  'search.operator.array-count-gte.name': 'antall større enn eller lik',
   /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} elementer</Value>',
-  'search.operator.array-count-lt.name': 'mengde mindre enn',
+  'search.operator.array-count-lt.name': 'antall mindre enn',
   /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} elementer</Value>',
-  'search.operator.array-count-lte.name': 'mengde mindre enn eller lik',
+  'search.operator.array-count-lte.name': 'antall mindre enn eller lik',
   /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>har ikke</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-not-equal.description_other':
     '<Field/> <Operator>har ikke</Operator> <Value>{{count}} elementer</Value>',
-  'search.operator.array-count-not-equal.name': 'mengde er ikke',
+  'search.operator.array-count-not-equal.name': 'antall er ikke',
   /**
    * Array should have a count within the range of given filter values.
    * Gets passed `{{from}}` and `{{to}}` values.
    **/
   'search.operator.array-count-range.description':
     '<Field/> <Operator>har mellom</Operator> <Value>{{from}} → {{to}} elementer</Value>',
-  'search.operator.array-count-range.name': 'mengde er mellom',
+  'search.operator.array-count-range.name': 'antall er mellom',
   /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inkluderer</Operator> <Value>{{value}}</Value>',
@@ -1340,7 +1337,7 @@ export default removeUndefinedLocaleResources({
   /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inkluderer</Operator> <Value>{{value}}</Value>',
-  'search.operator.array-reference-includes.name': 'includes',
+  'search.operator.array-reference-includes.name': 'inkluderer',
   /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inkluderer ikke</Operator> <Value>{{value}}</Value>',
@@ -1407,7 +1404,7 @@ export default removeUndefinedLocaleResources({
   'search.operator.date-time-equal.name': 'er',
   /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
-    '<Field/> <Operator>er i de siste</Operator> <Value>{{value}}</Value>',
+    '<Field/> <Operator>er i løpet av de siste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'siste',
   /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
@@ -1541,7 +1538,7 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the recent searches section, shown when no valid search terms has been given */
   'search.recent-searches-aria-label': 'Nylige søk',
   /** Label/heading shown for the recent searches section */
-  'search.recent-searches-label': 'Siste søk',
+  'search.recent-searches-label': 'Nylige søk',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Søkeresultater',
 
@@ -1627,7 +1624,7 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': 'Brødsmulemeny',
+  'tree-editing-dialog.breadcrumbs.menu': 'Brødsmulesti-meny',
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Søk',
   /** Menu aria label for the search menu */
@@ -1635,7 +1632,7 @@ export default removeUndefinedLocaleResources({
   /** Title label for when no search results are found on the tree of objects */
   'tree-editing-dialog.search.no-results-title': 'Ingen resultater funnet',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': 'Lukk sidefelt',
+  'tree-editing-dialog.sidebar.action.close': 'Lukk sidepanelet',
   /** Collapse label the menu item in the sidebar  */
   'tree-editing-dialog.sidebar.action.collapse': 'Skjul',
   /** Label to close the dialog */
@@ -1643,7 +1640,7 @@ export default removeUndefinedLocaleResources({
   /** Exapnd label the menu item in the sidebar  */
   'tree-editing-dialog.sidebar.action.expand': 'Utvid',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': 'Åpne sidefelt',
+  'tree-editing-dialog.sidebar.action.open': 'Åpne sidepanelet',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag igjen av prøveperioden',
@@ -1679,7 +1676,7 @@ export default removeUndefinedLocaleResources({
   /** Title for using the "light theme" in the appearance user menu */
   'user-menu.color-scheme.light-title': 'Lys',
   /** Description for using "system apparence" in the appearance user menu */
-  'user-menu.color-scheme.system-description': 'Bruk systemets utseende',
+  'user-menu.color-scheme.system-description': 'Bruk systemutseende',
   /** Title for using system apparence in the appearance user menu */
   'user-menu.color-scheme.system-title': 'System',
   /** Title for locale section for the current studio */

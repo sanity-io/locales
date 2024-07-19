@@ -25,7 +25,7 @@ export default removeUndefinedLocaleResources({
   'action.duplicate.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
-    'Dette dokumentet eksisterer ikke ennå så det er ingenting å duplisere',
+    'Dette dokumentet eksisterer ikke ennå, så det er ingenting å duplisere',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Dupliser',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -54,7 +54,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.running.label': 'Publiserer…',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
-    'Det er valideringsfeil som må rettes opp før dette dokumentet kan publiseres',
+    'Det er valideringsfeil som må fikses før dette dokumentet kan publiseres',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Venter på at oppgaver skal fullføres før publisering',
   /** Message prompting the user to confirm that they want to restore to an earlier version*/
@@ -81,25 +81,25 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dette dokumentet har blitt slettet.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': 'Denne dokumenttypen har blitt utfaset.',
+  'banners.deprecated-document-type-banner.text': 'Denne dokumenttypen er utgått.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Din rolle <Roles/> har ikke tillatelser til å opprette dette dokumentet.',
+    'Din rolle <Roles/> har ikke tillatelse til å opprette dette dokumentet.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Dine roller <Roles/> har ikke tillatelser til å opprette dette dokumentet.',
+    'Dine roller <Roles/> har ikke tillatelse til å opprette dette dokumentet.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Din rolle <Roles/> har ikke tillatelser til å oppdatere dette dokumentet.',
+    'Din rolle <Roles/> har ikke tillatelse til å oppdatere dette dokumentet.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    'Dine roller <Roles/> har ikke tillatelser til å oppdatere dette dokumentet.',
+    'Dine roller <Roles/> har ikke tillatelse til å oppdatere dette dokumentet.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referanse på nytt',
   /** The text for the reference change banner if the reason is that the reference has been changed */
   'banners.reference-changed-banner.reason-changed.text':
-    'Denne referansen har endret seg siden du åpnet den.',
+    'Denne referansen har blitt endret siden du åpnet den.',
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': 'Lukk referanse',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
@@ -122,7 +122,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the close button on the split pane on the document panel header */
   'buttons.split-pane-close-button.title': 'Lukk delt rute',
   /** The title for the close group button on the split pane on the document panel header */
-  'buttons.split-pane-close-group-button.title': 'Lukk rute gruppe',
+  'buttons.split-pane-close-group-button.title': 'Lukk rutegruppe',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Avbryt',
@@ -131,32 +131,31 @@ export default removeUndefinedLocaleResources({
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
   'confirm-delete-dialog.cdr-summary.document-count_other': '{{count}} dokumenter',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_one': 'Datasett: {{datasets}}',
+  'confirm-delete-dialog.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_other': 'Datasett: {{datasets}}',
+  'confirm-delete-dialog.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Utilgjengelig datasett',
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Utilgjengelig dataset',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': 'Utilgjengelige datasett',
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': 'Utilgjengelige datasets',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
-  'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} i et annet datasett',
+  'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} i et annet dataset',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'confirm-delete-dialog.cdr-summary.title_other': '{{documentCount}} i {{count}} datasett',
+  'confirm-delete-dialog.cdr-summary.title_other': '{{documentCount}} i {{count}} datasets',
   /** Appears when hovering over the copy button to copy */
-  'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': 'Kopier ID til utklippstavlen',
+  'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': 'Kopier ID til utklippstavle',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.dataset.label': 'Datasett',
+  'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
   /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Kopierte dokument-ID til utklippstavlen!',
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Dokument-ID kopiert til utklippstavle!',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'Prosjekt-ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Slett uansett',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Slett likevel',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Avpubliser uansett',
+  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Avpubliser likevel',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Slett nå',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
@@ -169,9 +168,9 @@ export default removeUndefinedLocaleResources({
     'Er du sikker på at du vil avpublisere “<DocumentTitle/>”?',
   /** The text body of the error dialog. */
   'confirm-delete-dialog.error.message.text':
-    'En feil oppstod under lasting av refererende dokumenter.',
+    'En feil oppstod under lasting av referansedokumenter.',
   /** The text in the retry button of the confirm delete dialog if an error occurred. */
-  'confirm-delete-dialog.error.retry-button.text': 'Prøv på nytt',
+  'confirm-delete-dialog.error.retry-button.text': 'Prøv igjen',
   /** The header of the confirm delete dialog if an error occurred while the confirm delete dialog was open. */
   'confirm-delete-dialog.error.title.text': 'Feil',
   /** The header of the confirm delete dialog */
@@ -179,7 +178,7 @@ export default removeUndefinedLocaleResources({
   /** The header of the confirm delete dialog */
   'confirm-delete-dialog.header.text_unpublish': 'Avpublisere dokument?',
   /** The text that appears while the referring documents are queried */
-  'confirm-delete-dialog.loading.text': 'Ser etter refererende dokumenter…',
+  'confirm-delete-dialog.loading.text': 'Leter etter refererende dokumenter…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'confirm-delete-dialog.other-reference-count.title_one': '1 annen referanse ikke vist',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
@@ -190,8 +189,7 @@ export default removeUndefinedLocaleResources({
   /** Appears when unable to render a document preview in the referring document list */
   'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'confirm-delete-dialog.preview-item.preview-unavailable.title':
-    'Forhåndsvisning ikke tilgjengelig',
+  'confirm-delete-dialog.preview-item.preview-unavailable.title': 'Forhåndsvisning utilgjengelig',
   /** Warns the user of affects to other documents if the action is confirmed (delete) */
   'confirm-delete-dialog.referential-integrity-disclaimer.text_delete':
     'Hvis du sletter dette dokumentet, vil dokumenter som refererer til det ikke lenger kunne få tilgang til det.',
@@ -206,10 +204,10 @@ export default removeUndefinedLocaleResources({
     '{{count}} dokumenter refererer til “<DocumentTitle/>”',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
   'confirm-delete-dialog.referring-documents-descriptor.text_delete':
-    'Du vil kanskje ikke kunne slette “<DocumentTitle/>” fordi følgende dokumenter refererer til det:',
+    'Du kan kanskje ikke slette “<DocumentTitle/>” fordi følgende dokumenter refererer til det:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
-    'Du vil kanskje ikke kunne avpublisere “<DocumentTitle/>” fordi følgende dokumenter refererer til det:',
+    'Du kan kanskje ikke avpublisere “<DocumentTitle/>” fordi følgende dokumenter refererer til det:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.cancel-button.fallback-text': 'Avbryt',
@@ -224,20 +222,20 @@ export default removeUndefinedLocaleResources({
   /** The text shown if the preview value for a document is non-existent or empty */
   'doc-title.fallback.text': 'Uten tittel',
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
-  'doc-title.unknown-schema-type.text': 'Ukjent skjematype: {{schemaType}}',
+  'doc-title.unknown-schema-type.text': 'Ukjent skjema type: {{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Lukk',
   /** The title shown in the dialog header, when inspecting a valid document */
-  'document-inspector.dialog.title': 'Inspekterer <DocumentTitle/>',
+  'document-inspector.dialog.title': 'Inspiserer <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Ingen verdi',
   /** Title shown for menu item that opens the "Inspect" dialog */
-  'document-inspector.menu-item.title': 'Inspekter',
+  'document-inspector.menu-item.title': 'Inspiser',
   /** the placeholder text for the search input on the inspect dialog */
   'document-inspector.search.placeholder': 'Søk',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
-  'document-inspector.view-mode.parsed': 'Analyseret',
+  'document-inspector.view-mode.parsed': 'Analysert',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Rå JSON',
 
@@ -249,7 +247,7 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.loading': 'Laster dokument…',
   /** The description of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.description':
-    'Vennligst vent mens dokumentet synkroniseres. Dette skjer vanligvis rett etter at dokumentet har blitt publisert, og det bør ikke ta mer enn noen få sekunder',
+    'Vennligst hold ut mens dokumentet synkroniseres. Dette skjer vanligvis rett etter at dokumentet er publisert, og det bør ikke ta mer enn noen få sekunder',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
 
@@ -262,21 +260,21 @@ export default removeUndefinedLocaleResources({
   /** The menu item group title to use for the Layout menu items */
   'menu-item-groups.layout-group': 'Oppsett',
   /** The menu item group title to use for the Sort menu items */
-  'menu-item-groups.sorting-group': 'Sortering',
+  'menu-item-groups.sorting-group': 'Sorter',
 
   /** The menu item title to use the compact view */
   'menu-items.layout.compact-view': 'Kompakt visning',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaljert visning',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': 'Sorter etter Opprettet',
+  'menu-items.sort-by.created': 'Sorter etter opprettet',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': 'Sorter etter Sist redigert',
+  'menu-items.sort-by.last-edited': 'Sorter etter sist redigert',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lær hvordan du legger til en dokumenttype →',
   /** The subtitle of the no document type screen that appears directly below the title */
-  'no-document-types-screen.subtitle': 'Vennligst definer minst en dokumenttype i skjemaet ditt.',
+  'no-document-types-screen.subtitle': 'Vennligst definer minst én dokumenttype i skjemaet ditt.',
   /** The title of the no document type screen */
   'no-document-types-screen.title': 'Ingen dokumenttyper',
 
@@ -312,11 +310,11 @@ export default removeUndefinedLocaleResources({
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Uten tittel',
   /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Prøv på nytt',
+  'panes.document-list-pane.error.retry-button.text': 'Prøv igjen',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Feil: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
-  'panes.document-list-pane.error.title': 'Kunne ikke hente liste-elementer',
+  'panes.document-list-pane.error.title': 'Kunne ikke hente listeelementer',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Viser maksimalt {{limit}} dokumenter',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -324,21 +322,21 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found */
   'panes.document-list-pane.no-documents.text': 'Ingen resultater funnet',
   /** The text of the document list pane if no documents are found matching specified criteria */
-  'panes.document-list-pane.no-matching-documents.text': 'Ingen matchende dokumenter',
+  'panes.document-list-pane.no-matching-documents.text': 'Ingen samsvarende dokumenter',
   /** The aria-label for the search input on the document list pane */
-  'panes.document-list-pane.search-input.aria-label': 'Søk i liste',
+  'panes.document-list-pane.search-input.aria-label': 'Søk i listen',
   /** The search input for the search input on the document list pane */
-  'panes.document-list-pane.search-input.placeholder': 'Søk i liste',
+  'panes.document-list-pane.search-input.placeholder': 'Søk i listen',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detaljer',
   /** The text when a generic operation failed (fallback, generally not shown)  */
   'panes.document-operation-results.operation-error': 'En feil oppstod under {{context}}',
   /** The text when a delete operation failed  */
   'panes.document-operation-results.operation-error_delete':
-    'En feil oppstod mens dokumentet ble forsøkt slettet. Dette betyr vanligvis at det er andre dokumenter som refererer til det.',
+    'En feil oppstod under forsøk på å slette dette dokumentet. Dette betyr vanligvis at det er andre dokumenter som refererer til det.',
   /** The text when an unpublish operation failed  */
   'panes.document-operation-results.operation-error_unpublish':
-    'En feil oppstod mens dokumentet ble forsøkt avpublisert. Dette betyr vanligvis at det er andre dokumenter som refererer til det.',
+    'En feil oppstod under forsøk på å avpublisere dette dokumentet. Dette betyr vanligvis at det er andre dokumenter som refererer til det.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Vellykket utført {{context}} på dokumentet',
@@ -346,7 +344,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_delete': 'Dokumentet ble vellykket slettet',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
-    'Alle endringer siden siste publisering har nå blitt forkastet. Den forkastede utkastet kan fortsatt gjenopprettes fra historikken',
+    'Alle endringer siden siste publisering er nå forkastet. Det forkastede utkastet kan fortsatt gjenopprettes fra historikken',
   /** The text when a duplicate operation succeeded  */
   'panes.document-operation-results.operation-success_duplicate':
     'Dokumentet ble vellykket duplisert',
@@ -362,7 +360,7 @@ export default removeUndefinedLocaleResources({
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Uten tittel',
   /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Tilkoblingen tapt. Kobler til på nytt…',
+  'panes.document-pane-provider.reconnecting.title': 'Tilkoblingen ble brutt. Kobler til igjen…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Laster dokument…',
   /** The text of the document not found pane if the schema is known */
@@ -372,13 +370,13 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-not-found.title': 'Dokumentet ble ikke funnet',
   /** The text of the document not found pane if the schema is not found */
   'panes.document-pane.document-unknown-type.text':
-    'Dette dokumentet har skjematypen <Code>{{documentType}}</Code>, som ikke er definert som en type i det lokale innholdsstudioets skjema.',
+    'Dette dokumentet har skjema typen <Code>{{documentType}}</Code>, som ikke er definert som en type i det lokale innholdsstudio-skjemaet.',
   /** The title of the document not found pane if the schema is not found or unknown */
   'panes.document-pane.document-unknown-type.title':
     'Ukjent dokumenttype: <Code>{{documentType}}</Code>',
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
-    'Dette dokumentet eksisterer ikke, og ingen skjematype ble spesifisert for det.',
+    'Dette dokumentet eksisterer ikke, og ingen skjema type ble spesifisert for det.',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Laster…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -390,7 +388,7 @@ export default removeUndefinedLocaleResources({
   'panes.unknown-pane-type.title': 'Ukjent paneltype',
   /** The text to display when type is unknown */
   'panes.unknown-pane-type.unknown-type.text':
-    'Strukturelement av typen <Code>{{type}}</Code> er ikke en kjent entitet.',
+    'Strukturelement av typen <Code>{{type}}</Code> er ikke en kjent enhet.',
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Åpne forhåndsvisning',
@@ -425,9 +423,9 @@ export default removeUndefinedLocaleResources({
   /** Labels the error message or error stack of the structure error screen */
   'structure-error.error.label': 'Feil',
   /** The header that appears at the top of the error screen */
-  'structure-error.header.text': 'Oppdaget en feil under lesing av struktur',
+  'structure-error.header.text': 'Oppstod en feil under lesing av struktur',
   /** The text in the reload button to retry rendering the structure */
-  'structure-error.reload-button.text': 'Last på nytt',
+  'structure-error.reload-button.text': 'Last inn på nytt',
   /** Labels the structure path of the structure error screen */
-  'structure-error.structure-path.label': 'Struktur-sti',
+  'structure-error.structure-path.label': 'Struktursti',
 })

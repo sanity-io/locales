@@ -2,7 +2,7 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
-  'action.copy-url-to-clipboard': 'Kopier til utklippstavlen',
+  'action.copy-url-to-clipboard': 'Kopier til utklippstavle',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stopp',
   /** Label for setting up a listener */
@@ -19,9 +19,9 @@ export default removeUndefinedLocaleResources({
   'label.new': 'Ny',
 
   /** Error message for when the "Params" input are not a valid json */
-  'params.error.params-invalid-json': 'Parametre er ikke gyldig JSON',
+  'params.error.params-invalid-json': 'Parametere er ikke gyldig JSON',
   /** Label for "Params" (parameters) editor/input */
-  'params.label': 'Parametre',
+  'params.label': 'Parametere',
 
   /** Label for 'Column' indicator when there is an error within the query */
   'query.error.column': 'Kolonne',
@@ -35,7 +35,7 @@ export default removeUndefinedLocaleResources({
   /** Label for "End to End time" information of the fetched query */
   'result.end-to-end-time-label': 'Ende-til-ende',
   /** Label for "Execution time" information of the fetched query */
-  'result.execution-time-label': 'Utførelsestid',
+  'result.execution-time-label': 'Utførelse',
   /** Label for "Result" explorer/view */
   'result.label': 'Resultat',
   /** Tooltip text shown when the query result is not encodable as CSV */
@@ -46,12 +46,12 @@ export default removeUndefinedLocaleResources({
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
    */
-  'result.timing-not-applicable': 'i/u',
+  'result.timing-not-applicable': 'n/a',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versjon',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
-  'settings.custom-api-version-label': 'Egendefinert API-versjon',
+  'settings.custom-api-version-label': 'Tilpasset API-versjon',
   /** Label for the "Dataset" dropdown in vision settings */
   'settings.dataset-label': 'Dataset',
   /** Error label for when the API version in 'Custom API version' input is invalid */
@@ -67,7 +67,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.action.docs-link': 'Les dokumentasjon',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
-    'Perspectives lar spørringen din kjøre mot forskjellige "visninger" av innholdet i datasettet ditt',
+    'Perspektiver lar spørringen din kjøre mot forskjellige "visninger" av innholdet i datasettet ditt',
   /** Title for popover that explains what "Perspectives" are */
-  'settings.perspectives.title': 'Perspectives',
+  'settings.perspectives.title': 'Perspektiver',
 })

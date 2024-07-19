@@ -27,43 +27,43 @@ export default removeUndefinedLocaleResources({
   'compose.send-comment-tooltip': 'Send kommentar',
 
   /** The inspector text when error copying link */
-  'copy-link-error-message': 'Kunne ikke kopiere lenke til utklippstavlen',
+  'copy-link-error-message': 'Kan ikke kopiere lenke til utklippstavlen',
 
   /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Kopierte lenke til utklippstavlen',
+  'copy-link-success-message': 'Lenke kopiert til utklippstavlen',
 
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Når en kommentar er slettet, kan den ikke gjenopprettes.',
   /** The delete dialog confirm button text for a comment */
   'delete-comment.confirm': 'Slett kommentar',
   /** The delete dialog title for a comment */
-  'delete-comment.title': 'Slette denne kommentaren?',
+  'delete-comment.title': 'Slett denne kommentaren?',
 
   /** The delete dialog error */
-  'delete-dialog.error': 'Det oppstod en feil under sletting av kommentaren. Vennligst prøv igjen.',
+  'delete-dialog.error': 'En feil oppstod under sletting av kommentaren. Vennligst prøv igjen.',
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
-    'Denne kommentaren og dens svar vil bli slettet, og kan ikke gjenopprettes etter sletting.',
+    'Denne kommentaren og dens svar vil bli slettet, og kan ikke gjenopprettes når de er slettet.',
   /** The delete dialog conform button text for a thread */
   'delete-thread.confirm': 'Slett tråd',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'Slette denne kommentartråden?',
+  'delete-thread.title': 'Slett denne kommentartråden?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'Forkast',
   /** The header for discard comment dialog */
-  'discard.header': 'Forkaste kommentar?',
+  'discard.header': 'Forkast kommentar?',
   /** The text for discard comment dialog */
   'discard.text': 'Vil du forkaste kommentaren?',
 
   /** Sharing feedback on the comments feature: The link title */
   'feature-feedback.link': 'Del din tilbakemelding',
   /** Sharing feedback on the comments feature: The form title  */
-  'feature-feedback.title': 'Hjelp til med å forbedre ',
+  'feature-feedback.title': 'Hjelp oss å forbedre',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Kommentarer',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Legg til kommentar',
@@ -108,19 +108,19 @@ export default removeUndefinedLocaleResources({
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': 'redigert',
   /** The error text when sending a comment has failed */
-  'list-item.layout-failed-sent': 'Klarte ikke å sende.',
+  'list-item.layout-failed-sent': 'Kunne ikke sende.',
   /** The loading message when posting a comment is in progress */
-  'list-item.layout-posting': 'Poster...',
+  'list-item.layout-posting': 'Sender...',
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Prøv igjen',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': 'Den kommenterte teksten har blitt slettet',
+  'list-item.missing-referenced-value-tooltip-content': 'Den kommenterte teksten er slettet',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': 'Åpne kommentarhandlingsmeny',
+  'list-item.open-menu-aria-label': 'Åpne kommentarmenymeny',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Gjenåpne',
   /** The button aria label to re-open a comment that is resolved */
-  'list-item.re-open-resolved-aria-label': 'Åpne på nytt',
+  'list-item.re-open-resolved-aria-label': 'Gjenåpne',
   /** The button aria label to mark a comment as resolved */
   'list-item.resolved-tooltip-aria-label': 'Merk kommentar som løst',
   /** The button text to mark a comment as resolved */
@@ -149,7 +149,7 @@ export default removeUndefinedLocaleResources({
 
   /** The comments onboarding popover text */
   'onboarding.body':
-    'Du kan legge til kommentarer på ethvert felt i et dokument. De vil dukke opp her, gruppert etter felt.',
+    'Du kan legge til kommentarer til ethvert felt i et dokument. De vil vises her, gruppert etter felt.',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'Skjønner',
   /** The comments onboarding popover header text */
@@ -167,7 +167,7 @@ export default removeUndefinedLocaleResources({
    * is used when you are the first to react, eg "You, Donna and Tyler reacted with 👍".
    * Use `{{name}}` if you want to instead use the current users' actual name.
    */
-  'reactions.user-list.you': 'deg',
+  'reactions.user-list.you': 'du',
   /**
    * When showing list of users who have reacted, replaces your own name with "You", eg
    * "You, Donna, James, and Tyler reacted with 👍". A different key (`_leading` suffix)
