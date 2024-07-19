@@ -33,7 +33,7 @@ jobs:
         run: pnpm install --ignore-scripts
 
       - name: Adjust labels
-        run: pnpm run ci:adjust-labels
+        run: pnpm run ci:adjust-labels --merge-if-approved
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
