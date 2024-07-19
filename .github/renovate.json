@@ -3,6 +3,7 @@
   "extends": ["config:recommended"],
   "dependencyDashboard": true,
   "schedule": ["before 3am on Monday"],
+  "semanticCommitType": "chore",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
