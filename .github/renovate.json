@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "commitMessageAction": "update",
-  "commitMessagePrefix": "chore",
   "dependencyDashboard": true,
   "schedule": ["before 3am on Monday"],
   "packageRules": [
@@ -21,7 +19,8 @@
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "squash",
-      "schedule": ["at any time"]
+      "schedule": ["at any time"],
+      "semanticCommitType": "chore"
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
@@ -34,7 +33,7 @@
         "groq",
         "sanity"
       ],
-      "commitMessagePrefix": "chore",
+      "semanticCommitType": "chore",
       "schedule": ["before 3am on Monday"],
       "automerge": false
     }
