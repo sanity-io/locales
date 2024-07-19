@@ -8,11 +8,11 @@ export default removeUndefinedLocaleResources({
   'close-pane-button-text-aria-label': 'Lukk kommentarer',
 
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
-  'compose.add-comment-input-placeholder': 'Legg til kommentar på <strong>{{field}}</strong>',
+  'compose.add-comment-input-placeholder': 'Legg til kommentar til <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
   'compose.add-comment-input-placeholder-upsell': 'Oppgrader for å legge til kommentar',
   /** When composing a comment, the placeholder text shown when the input is empty */
-  'compose.create-comment-placeholder': 'Kommentér',
+  'compose.create-comment-placeholder': 'Opprett en ny kommentar',
   /** When composing a comment, the aria label for the button to mention a user */
   'compose.mention-user-aria-label': 'Nevn bruker',
   /** When composing a comment, the tooltip text for the button to mention a user */
@@ -40,7 +40,7 @@ export default removeUndefinedLocaleResources({
   'delete-comment.title': 'Slette denne kommentaren?',
 
   /** The delete dialog error */
-  'delete-dialog.error': 'En feil oppstod under sletting av kommentaren. Vennligst prøv igjen.',
+  'delete-dialog.error': 'Det oppstod en feil under sletting av kommentaren. Vennligst prøv igjen.',
 
   /** The delete dialog body for a thread */
   'delete-thread.body':
@@ -63,7 +63,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Hjelp til med å forbedre ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Kommentarer',
+  'feature-name': 'Comments',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Legg til kommentar',
@@ -82,7 +82,7 @@ export default removeUndefinedLocaleResources({
   'inline-add-comment-button.title': 'Legg til kommentar',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
-  'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}}-feltet',
+  'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}} felt',
   /** The button tooltip content for the add reaction button */
   'list-item.context-menu-add-reaction': 'Legg til reaksjon',
   /** The button tooltip aria label for adding a reaction */
@@ -110,17 +110,17 @@ export default removeUndefinedLocaleResources({
   /** The error text when sending a comment has failed */
   'list-item.layout-failed-sent': 'Klarte ikke å sende.',
   /** The loading message when posting a comment is in progress */
-  'list-item.layout-posting': 'Sender...',
+  'list-item.layout-posting': 'Poster...',
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'Prøv igjen',
   /** The text shown when the value a comment references has been deleted */
   'list-item.missing-referenced-value-tooltip-content': 'Den kommenterte teksten har blitt slettet',
   /** The aria label for the comments menu button to open the actions menu */
-  'list-item.open-menu-aria-label': 'Åpne kommentarmeny',
+  'list-item.open-menu-aria-label': 'Åpne kommentarhandlingsmeny',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Gjenåpne',
   /** The button aria label to re-open a comment that is resolved */
-  'list-item.re-open-resolved-aria-label': 'Gjenåpne',
+  'list-item.re-open-resolved-aria-label': 'Åpne på nytt',
   /** The button aria label to mark a comment as resolved */
   'list-item.resolved-tooltip-aria-label': 'Merk kommentar som løst',
   /** The button text to mark a comment as resolved */
@@ -145,15 +145,15 @@ export default removeUndefinedLocaleResources({
   /** Label/badge shown for users that are not authorized to see the document, and thus cannot be mentioned */
   'mentions.unauthorized-user': 'Uautorisert',
   /** Aria label for the command list for users to mention */
-  'mentions.user-list-aria-label': 'Liste over brukere du kan nevne',
+  'mentions.user-list-aria-label': 'Liste over brukere å nevne',
 
   /** The comments onboarding popover text */
   'onboarding.body':
-    'Du kan legge til kommentarer på hvert av dokumentets felter. De vil dukke opp her, gruppert etter felt.',
+    'Du kan legge til kommentarer på ethvert felt i et dokument. De vil dukke opp her, gruppert etter felt.',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'Skjønner',
   /** The comments onboarding popover header text */
-  'onboarding.header': 'Felter har nå kommentarer',
+  'onboarding.header': 'Dokumentfelt har nå kommentarer',
 
   /** Tooltip for the button to add a reaction to a comment */
   'reactions.add-reaction-tooltip': 'Legg til reaksjon',

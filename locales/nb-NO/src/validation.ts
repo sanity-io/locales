@@ -8,16 +8,16 @@ export default removeUndefinedLocaleResources({
   /** Array item is a duplicate, but array wants only unique items */
   'array.item-duplicate': 'Kan ikke være en duplikat',
   /** Array has more than the maximum of "$maxLength" items */
-  'array.maximum-length': 'Må ha maksimalt {{maxLength}} elementer',
+  'array.maximum-length': 'Må ha maks {{maxLength}} elementer',
   /** Portable Text array has more than the maximum of "$maxLength" items */
-  'array.maximum-length_blocks': 'Må ha maksimalt {{maxLength}} blokker',
+  'array.maximum-length_blocks': 'Må ha maks {{maxLength}} blokker',
   /** Array has less than the minimum of "$minLength" items */
   'array.minimum-length': 'Må ha minst {{minLength}} elementer',
   /** Portable Text array has less than the minimum of "$minLength" blocks */
   'array.minimum-length_blocks': 'Må ha minst {{minLength}} blokker',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': 'Må være en gyldig dato i ISO-8601-format',
+  'date.invalid-format': 'Må være en gyldig ISO-8601 formatert dato-streng',
   /** Date is later than the given maximum date "$maxDate" */
   'date.maximum': 'Må være på eller før {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
@@ -26,20 +26,20 @@ export default removeUndefinedLocaleResources({
   /** A value of incorrect type is found, eg found `number` instead of `string` */
   'generic.incorrect-type': 'Forventet type "{{expectedType}}", fikk "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
-  'generic.not-allowed': 'Verdien samsvarer ikke med tillatte verdier',
+  'generic.not-allowed': 'Verdien stemte ikke overens med noen tillatte verdier',
   /** Value "$givenValue" is not one of the values specifically allowed */
-  'generic.not-allowed_hint': 'Verdien "{{hint}}" samsvarer ikke med tillatte verdier',
+  'generic.not-allowed_hint': 'Verdien "{{hint}}" stemte ikke overens med noen tillatte verdier',
   /** A value is expected, but none is provided */
-  'generic.required': 'Obligatorisk',
+  'generic.required': 'Påkrevd',
 
   /** Number is less than the given minimum threshold value "$threshold" */
   'number.greater-than': 'Må være større enn {{threshold}}',
   /** Number is greater than the given maximum threshold value "$threshold" */
   'number.less-than': 'Må være mindre enn {{threshold}}',
   /** Number is higher than the given maximum value "$maxNumber" */
-  'number.maximum': 'Må være mindre enn eller lik {{maxNumber}}',
+  'number.maximum': 'Må være lavere enn eller lik {{maxNumber}}',
   /** Number has more precision (decimals) than the allowed "$limit" */
-  'number.maximum-precision': 'Maksimal presisjon er {{limit}}',
+  'number.maximum-precision': 'Maks presisjon er {{limit}}',
   /** Number is lower than the given minimum value "$minNumber" */
   'number.minimum': 'Må være større enn eller lik {{minNumber}}',
   /** Number is not an integer ("whole number") */
@@ -68,32 +68,32 @@ export default removeUndefinedLocaleResources({
   /** Slug is not an object (eg `{current: 'some-slug'}`) */
   'slug.not-object': 'Slug må være et objekt',
   /** Slug is already in use somewhere else, but needs to be unique */
-  'slug.not-unique': 'Slug er allerede i bruk et annet sted, og må være unik',
+  'slug.not-unique': 'Slug er allerede i bruk',
 
   /** String is not a valid email address */
   'string.email': 'Må være en gyldig e-postadresse',
   /** String has a different character length than the exact number "$wantedLength" */
   'string.exact-length': 'Må være nøyaktig {{wantedLength}} tegn lang',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': 'Må bestå av kun små bokstaver',
+  'string.lowercase': 'Må være bare små bokstaver',
   /** String is longer than the limit of "$maxLength" characters */
-  'string.maximum-length': 'Må være maksimalt {{maxLength}} tegn lang',
+  'string.maximum-length': 'Må være på maks {{maxLength}} tegn',
   /** String is shorter than the limit of "$minLength" characters */
   'string.minimum-length': 'Må være minst {{minLength}} tegn lang',
   /** String does not match the given regular expression, but should */
-  'string.regex-does-not-match': 'Må stemme overens med "{{name}}"-mønsteret',
+  'string.regex-does-not-match': 'Samsvarer ikke med "{{name}}"-mønsteret',
   /** String matches the given regular expression, but should not */
-  'string.regex-match': 'Må ikke stemme overens med "{{name}}"-mønsteret',
+  'string.regex-match': 'Skal ikke samsvarer med "{{name}}"-mønsteret',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': 'Må bestå av kun store bokstaver',
+  'string.uppercase': 'Må være bare store bokstaver',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
-  'string.url.disallowed-scheme': 'Stemmer ikke overens med tillatte protokoller/skjemaer',
+  'string.url.disallowed-scheme': 'Samsvarer ikke med tillatte protokoller/skjemaer',
   /** String contains a URL with a username or password specified before the host */
-  'string.url.includes-credentials': 'Brukernavn/passord er ikke tillatt',
+  'string.url.includes-credentials': 'Brukernavn/passord ikke tillatt',
   /** String is not a valid URL */
   'string.url.invalid': 'Ikke en gyldig URL',
   /** String is not an absolute URL (eg it is missing a protocol/host) */
-  'string.url.not-absolute': 'Absolutte URL-er er ikke tillatt',
+  'string.url.not-absolute': 'Relative URL-er er ikke tillatt',
   /** String is not a relative URL (eg it contains a protocol/host) */
   'string.url.not-relative': 'Bare relative URL-er er tillatt',
 })
