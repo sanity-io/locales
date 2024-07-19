@@ -7,6 +7,12 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "matchUpdateTypes": ["major"],
+      "commitMessage": "chore(deps): update {{depName}} to {{newVersion}}",
+      "automerge": false,
+      "dependencyDashboardApproval": true
+    },
+    {
       "matchUpdateTypes": ["minor", "patch"],
       "matchPackageNames": [
         "@sanity/icons",
@@ -16,7 +22,7 @@
         "groq",
         "sanity"
       ],
-      "groupName": "sanity-dependencies",
+      "groupName": "sanity dependencies",
       "groupSlug": "sanity-dependencies",
       "automerge": true,
       "automergeType": "pr",
