@@ -61,38 +61,47 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.no-assets_file': 'Ingen filer',
   /** Text shown when selecting an image but there's no images to select from */
   'asset-source.dialog.no-assets_image': 'Ingen bilder',
-  'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file': undefined, // 'Cannot delete currently selected file'
-  'asset-source.file.asset-list.action.delete.text': undefined, // 'Delete'
-  'asset-source.file.asset-list.action.delete.title': undefined, // 'Delete file'
-  'asset-source.file.asset-list.action.select-file.title': undefined, // 'Select the file {{filename}}'
-  'asset-source.file.asset-list.action.show-usage.title': undefined, // 'Show usage'
-  'asset-source.file.asset-list.delete-failed': undefined, // 'File could not be deleted'
-  'asset-source.file.asset-list.delete-successful': undefined, // 'File was deleted'
-  'asset-source.file.asset-list.header.date-added': undefined, // 'Date added'
+  'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
+    'Kan ikke slette valgt fil',
+  'asset-source.file.asset-list.action.delete.text': 'Slett',
+  'asset-source.file.asset-list.action.delete.title': 'Slett fil',
+  'asset-source.file.asset-list.action.select-file.title': 'Velg filen {{filename}}',
+  'asset-source.file.asset-list.action.show-usage.title': 'Vis bruk',
+  'asset-source.file.asset-list.delete-failed': 'Filen kunne ikke slettes',
+  'asset-source.file.asset-list.delete-successful': 'Filen ble slettet',
+  'asset-source.file.asset-list.header.date-added': 'Dato lagt til',
   /** File asset source */
-  'asset-source.file.asset-list.header.filename': undefined, // 'Filename'
-  'asset-source.file.asset-list.header.size': undefined, // 'Size'
-  'asset-source.file.asset-list.header.type': undefined, // 'Type'
+  'asset-source.file.asset-list.header.filename': 'Filnavn',
+  'asset-source.file.asset-list.header.size': 'Størrelse',
+  'asset-source.file.asset-list.header.type': 'Type',
   /** Text displayed on button or menu invoking the file asset source */
-  'asset-source.file.title': undefined, // 'Uploaded files'
-  'asset-source.image.asset-list.delete-failed': undefined, // 'Image could not be deleted'
+  'asset-source.file.title': 'Opplastede filer',
+  'asset-source.image.asset-list.delete-failed': 'Bildet kunne ikke slettes',
   /** Image asset source */
-  'asset-source.image.asset-list.delete-successful': undefined, // 'Image was deleted'
+  'asset-source.image.asset-list.delete-successful': 'Bildet ble slettet',
   /** Text displayed on button or menu invoking the image asset source */
-  'asset-source.image.title': undefined, // 'Uploaded images'
-  'asset-source.usage-list.documents-using-file_named_one': undefined, // 'One document is using file <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-file_named_other': undefined, // '{{count}} documents are using file <code>{{filename}}</code>'
+  'asset-source.image.title': 'Opplastede bilder',
+  'asset-source.usage-list.documents-using-file_named_one':
+    'Ett dokument bruker filen <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-file_named_other':
+    '{{count}} dokumenter bruker filen <code>{{filename}}</code>',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *named* file **/
-  'asset-source.usage-list.documents-using-file_named_zero': undefined, // 'No documents are using file <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-file_unnamed_one': undefined, // 'One document is using this file'
-  'asset-source.usage-list.documents-using-file_unnamed_other': undefined, // '{{count}} documents are using this file'
+  'asset-source.usage-list.documents-using-file_named_zero':
+    'Ingen dokumenter bruker filen <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-file_unnamed_one': 'Ett dokument bruker denne filen',
+  'asset-source.usage-list.documents-using-file_unnamed_other':
+    '{{count}} dokumenter bruker denne filen',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *unnamed* file **/
-  'asset-source.usage-list.documents-using-file_unnamed_zero': undefined, // 'No documents are using this file'
-  'asset-source.usage-list.documents-using-image_named_one': undefined, // 'One document is using image <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-image_named_other': undefined, // '{{count}} documents are using image <code>{{filename}}</code>'
+  'asset-source.usage-list.documents-using-file_unnamed_zero':
+    'Ingen dokumenter bruker denne filen',
+  'asset-source.usage-list.documents-using-image_named_one':
+    'Ett dokument bruker bildet <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-image_named_other':
+    '{{count}} dokumenter bruker bildet <code>{{filename}}</code>',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
-  'asset-source.usage-list.documents-using-image_named_zero': undefined, // 'No documents are using image <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-image_unnamed_one': undefined, // 'One document is using this image'
+  'asset-source.usage-list.documents-using-image_named_zero':
+    'Ingen dokumenter bruker bildet <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-image_unnamed_one': 'Ett dokument bruker dette bildet',
   'asset-source.usage-list.documents-using-image_unnamed_other':
     '{{count}} dokumenter bruker dette bildet',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
