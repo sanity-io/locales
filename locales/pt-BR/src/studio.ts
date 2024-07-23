@@ -398,7 +398,7 @@ export default removeUndefinedLocaleResources({
   /** The error message for the unhandled error that crashed the Input component during render */
   'form.error.unhandled-runtime-error.error-message': 'Erro: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': 'Erro de Tempo de Execução Não Tratado',
+  'form.error.unhandled-runtime-error.title': 'Erro de Tempo de Execução (Unhandled Runtime Error)',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'obsoleto',
   /** Fallback title shown above field if it has no defined title */
