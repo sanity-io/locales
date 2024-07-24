@@ -39,9 +39,9 @@ export default removeUndefinedLocaleResources({
   /** Label for "Result" explorer/view */
   'result.label': 'Resultat',
   /** Tooltip text shown when the query result is not encodable as CSV */
-  'result.save-result-as-csv.not-csv-encodable': undefined, // 'Result cannot be encoded as CSV'
+  'result.save-result-as-csv.not-csv-encodable': 'Resultatet kan ikke kodes som CSV',
   /** Label for "Save result as" result action */
-  'result.save-result-as-format': undefined, // 'Save result as <SaveResultButtons/>'
+  'result.save-result-as-format': 'Gem resultat som <SaveResultButtons/>',
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
