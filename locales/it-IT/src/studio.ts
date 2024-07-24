@@ -663,7 +663,7 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Valore della proprietà non valido',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Tutti i campi',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Gruppi di campi',
   /** Read-only field description */
