@@ -350,7 +350,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Toutes les modifications depuis la dernière publication ont maintenant été abandonnées. Le brouillon écarté peut toujours être récupéré depuis l’historique',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Le document a été dupliqué avec succès',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Le document a été publié',
   /** The text when a restore operation succeeded  */
