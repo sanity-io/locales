@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.new.text': 'Nouvelle tâche',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
+  'buttons.new.upsell-tooltip': 'Mettez à niveau pour créer des tâches',
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Aller à la tâche suivante',
   /** The label for the button that will previous to the next task */
@@ -51,9 +51,10 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.document.text':
     "Une fois qu'un document a des tâches associées, elles seront affichées ici.",
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see it\'s task'
+  'empty-state.list.no-active-document.heading': 'Ouvrez un document pour voir sa tâche',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  'empty-state.list.no-active-document.text':
+    'Les tâches sur votre document actif seront affichées ici.',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': "Vous n'êtes abonné à aucune tâche",
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
@@ -87,7 +88,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Non assigné',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
+  'form.input.assignee.no-user-assigned.tooltip': 'Définir le destinataire',
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Aucun utilisateur trouvé',
   /** Placeholder text used in the search box in the assignee input */
@@ -95,21 +96,21 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Non autorisé',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
+  'form.input.assignee.user-assigned.tooltip': 'Changer le destinataire',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Utilisateur non trouvé',
   /** The label used in the create more toggle */
   'form.input.create-more.text': 'Créer plus',
   /** The label used in the date input button tooltip when it's empty */
-  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
+  'form.input.date.buttons.empty.tooltip': "Définir la date d'échéance",
   /** The label used in the date input to remove the current value */
   'form.input.date.buttons.remove.text': 'Supprimer',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
+  'form.input.date.buttons.tooltip': "Changer la date d'échéance",
   /** Placeholder text used in the description input */
   'form.input.description.placeholder': 'Ajouter une description',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': undefined, // 'Change status'
+  'form.input.status.button.tooltip': 'Changer le statut',
   /** The label used in the target input to remove the current value */
   'form.input.target.buttons.remove.text': 'Supprimer le contenu cible',
   /** The text used in the target input when encountering a schema error */
@@ -126,7 +127,8 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': 'Aucune tâche',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
+  'list.feedback.text':
+    'Aidez-nous à améliorer, <Link>partagez vos commentaires sur les Tâches</Link> ',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Copier le lien vers la tâche',
@@ -135,7 +137,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'Dupliquer la tâche',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
+  'menuitem.duplicate.upsell-tooltip': 'Mettez à niveau pour dupliquer les tâches',
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'a créé cette tâche',
@@ -148,7 +150,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Ajouter un commentaire...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
+  'panel.comment.placeholder.upsell': 'Mettez à niveau pour commenter sur les tâches',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Créer',
   /** The title used in the drafts pulldown */
