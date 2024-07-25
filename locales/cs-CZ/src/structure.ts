@@ -345,7 +345,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Všechny změny od poslední publikace byly nyní zrušeny. Zahozený koncept lze stále obnovit z historie',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate': 'Dokument byl úspěšně duplikován',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument byl publikován',
   /** The text when a restore operation succeeded  */
