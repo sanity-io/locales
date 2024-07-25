@@ -347,7 +347,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'Alle ændringer siden sidste offentliggørelse er nu forkastet. Det forkastede udkast kan stadig gendannes fra historikken',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Dokumentet blev kopieret med succes',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> blev offentliggjort',
