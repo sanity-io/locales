@@ -653,7 +653,7 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'ಅಮಾನ್ಯ ಆಸ್ತಿ ಮೌಲ್ಯ',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'ಎಲ್ಲಾ ಕ್ಷೇತ್ರಗಳು',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'ಕ್ಷೇತ್ರ ಗುಂಪುಗಳು',
   /** Read-only field description */
