@@ -73,7 +73,7 @@
     "openai": "^4.52.7",
     "rimraf": "^5.0.9",
     "turbo": "^2.0.9",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   },
   "packageManager": "pnpm@9.6.0",
   "engines": {
