@@ -123,6 +123,10 @@ export default removeUndefinedLocaleResources({
   'calendar.action.set-to-current-time': '设置为当前时间',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} 在 {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': '打开日历',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': '选择日期',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': '必须是以下格式 <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
