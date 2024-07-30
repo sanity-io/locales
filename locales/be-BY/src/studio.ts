@@ -128,6 +128,10 @@ export default removeUndefinedLocaleResources({
   'calendar.action.set-to-current-time': 'Усталяваць бягучы час',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} на {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': undefined, // 'Open calendar'
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': undefined, // 'Select date'
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Павінна быць у фармаце: {{exampleDate}}',
   /** Month name for April */
