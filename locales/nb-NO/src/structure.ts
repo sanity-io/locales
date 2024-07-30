@@ -33,7 +33,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published, and published time is unavailable.*/
   'action.publish.already-published.no-time-ago.tooltip': 'Allerede publisert',
   /** Tooltip when publish button is disabled because the document is already published.*/
-  'action.publish.already-published.tooltip': 'Publisert for {{timeSincePublished}} siden',
+  'action.publish.already-published.tooltip': 'Publisert {{timeSincePublished}}',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operasjonen er ikke klar',
   /** Label for action when there are pending changes.*/
