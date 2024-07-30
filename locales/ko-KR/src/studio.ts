@@ -135,6 +135,10 @@ export default removeUndefinedLocaleResources({
   'calendar.action.set-to-current-time': '현재 시간으로 설정',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}}에 {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': '달력 열기',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': '날짜 선택',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': '<Emphasis>{{exampleDate}}</Emphasis> 형식이어야 합니다',
   /** Month name for April */
