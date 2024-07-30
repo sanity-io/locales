@@ -135,6 +135,10 @@ export default removeUndefinedLocaleResources({
   'calendar.action.set-to-current-time': 'Instellen op de huidige tijd',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} op {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Kalender openen',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Selecteer datum',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format':
     'Moet in het formaat <Emphasis>{{exampleDate}}</Emphasis> zijn',
