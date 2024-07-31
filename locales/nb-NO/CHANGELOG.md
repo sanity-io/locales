@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.11](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.10...locale-nb-no-v1.1.11) (2024-07-30)
+
+
+### Bug Fixes
+
+* **nb-NO:** automated translation updates ([#597](https://github.com/sanity-io/locales/issues/597)) ([8e4fef8](https://github.com/sanity-io/locales/commit/8e4fef827da83af848379e477803ba00f1570a61))
+* **nb-NO:** avoid duplicate words in publish tooltip ([#578](https://github.com/sanity-io/locales/issues/578)) ([fad5827](https://github.com/sanity-io/locales/commit/fad5827bc15813f720611a81642adad4789adc43))
+
 ## [1.1.10](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.9...locale-nb-no-v1.1.10) (2024-07-12)
 
 
