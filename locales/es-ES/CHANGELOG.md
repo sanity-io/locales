@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.10](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.9...locale-es-es-v1.2.10) (2024-07-31)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#611](https://github.com/sanity-io/locales/issues/611)) ([5346940](https://github.com/sanity-io/locales/commit/534694059e674d5150f7f484fd79411b0f5b74a2))
+
 ## [1.2.9](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.8...locale-es-es-v1.2.9) (2024-07-17)
 
 
