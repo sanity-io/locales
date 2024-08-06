@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-sv-se",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "private": false,
   "description": "Swedish / Svenska locale/translation for Sanity Studio",
   "keywords": [
