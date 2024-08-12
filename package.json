@@ -71,7 +71,7 @@
     "eslint-config-sanity": "^7.1.2",
     "expect": "^29.7.0",
     "openai": "^4.53.2",
-    "rimraf": "^5.0.9",
+    "rimraf": "^5.0.10",
     "turbo": "^2.0.10",
     "typescript": "^5.5.4"
   },
