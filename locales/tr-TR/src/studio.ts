@@ -134,9 +134,9 @@ export default removeUndefinedLocaleResources({
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} tarihinde {{date, datetime}}',
   /** Aria label for button to open date picker */
-  'calendar.button.aria-label': undefined, // 'Open calendar'
+  'calendar.button.aria-label': 'Takvimi aç',
   /** Tooltip content for button to open datetime input */
-  'calendar.button.tooltip-text': undefined, // 'Select date'
+  'calendar.button.tooltip-text': 'Tarih seç',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': '<Emphasis>{{exampleDate}}</Emphasis> formatında olmalıdır',
   /** Month name for April */
