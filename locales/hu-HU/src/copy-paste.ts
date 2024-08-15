@@ -17,6 +17,8 @@ export default removeUndefinedLocaleResources({
     'Dokumentum "{{fieldNames}}" másolva',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Mező "{{fieldName}}" másolva',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': '„{{typeName}}” elem másolva',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Üres érték, nincs mit másolni',
   /** --- On copy --- */
@@ -62,6 +64,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'A "{{sourceReferenceType}}" típusú hivatkozások nem megengedettek a "{{targetReferenceTypes}}" típusokat elfogadó hivatkozási mezőben',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'A hivatkozott dokumentum „{{ref}}” nem létezik',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'A forrás és a cél sématípusai nem kompatibilisek',
