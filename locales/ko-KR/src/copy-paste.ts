@@ -16,6 +16,9 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title': '문서 "{{fieldNames}}" 복사됨',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': '필드 "{{fieldName}}" 복사됨',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title':
+    '항목 "{{typeName}}"이(가) 복사되었습니다',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '빈 값, 복사할 것 없음',
   /** --- On copy --- */
@@ -58,6 +61,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     '"{{sourceReferenceType}}" 유형의 참조는 "{{targetReferenceTypes}}" 유형을 허용하는 참조 필드에 허용되지 않습니다',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    '참조된 문서 "{{ref}}"이(가) 존재하지 않습니다',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     '소스 및 대상 스키마 유형이 호환되지 않습니다',
