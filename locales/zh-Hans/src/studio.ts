@@ -432,6 +432,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': '添加项...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': '复制',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': '拖动以重新排序',
   /** Label for duplicating an array item  */
@@ -797,6 +799,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': '引用',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '清除',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': '复制',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '创建新的',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
