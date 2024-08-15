@@ -17,6 +17,8 @@ export default removeUndefinedLocaleResources({
     'Document "{{fieldNames}}" gekopieerd',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Veld "{{fieldName}}" gekopieerd',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Item "{{typeName}}" gekopieerd',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Lege waarde, niets om te kopiëren',
   /** --- On copy --- */
@@ -61,6 +63,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Referenties van type "{{sourceReferenceType}}" zijn niet toegestaan in referentieveld dat types "{{targetReferenceTypes}}" accepteert',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Het gerefereerde document "{{ref}}" bestaat niet',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Bron- en doelschema types zijn niet compatibel',
