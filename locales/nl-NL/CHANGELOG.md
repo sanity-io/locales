@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.12](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.11...locale-nl-nl-v1.1.12) (2024-08-15)
+
+
+### Bug Fixes
+
+* **nl-NL:** automated translation updates ([#642](https://github.com/sanity-io/locales/issues/642)) ([c0c8d51](https://github.com/sanity-io/locales/commit/c0c8d51690b35be8e8e63de803d49a963dcf8dd3))
+
 ## [1.1.11](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.10...locale-nl-nl-v1.1.11) (2024-07-30)
 
 
