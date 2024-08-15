@@ -137,9 +137,9 @@ export default removeUndefinedLocaleResources({
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} ekkor: {{date, datetime}}',
   /** Aria label for button to open date picker */
-  'calendar.button.aria-label': undefined, // 'Open calendar'
+  'calendar.button.aria-label': 'Naptár megnyitása',
   /** Tooltip content for button to open datetime input */
-  'calendar.button.tooltip-text': undefined, // 'Select date'
+  'calendar.button.tooltip-text': 'Dátum kiválasztása',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'A formátumnak így kell kinéznie: {{exampleDate}}',
   /** Month name for April */
@@ -465,6 +465,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Elem hozzáadása...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Másolás',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Húzza az átrendezéshez',
   /** Label for duplicating an array item  */
@@ -864,6 +866,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': 'Idézet',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Törlés',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Másolás',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Létrehozás',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
