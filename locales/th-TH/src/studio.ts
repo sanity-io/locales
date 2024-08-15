@@ -437,6 +437,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'เพิ่มรายการ...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'คัดลอก',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'ลากเพื่อจัดเรียงใหม่',
   /** Label for duplicating an array item  */
@@ -808,6 +810,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': 'อ้างอิง',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'ล้าง',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'คัดลอก',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'สร้างใหม่',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */

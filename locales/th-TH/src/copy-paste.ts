@@ -18,6 +18,8 @@ export default removeUndefinedLocaleResources({
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title':
     'คัดลอกฟิลด์ "{{fieldName}}" สำเร็จ',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'ไอเท็ม "{{typeName}}" ถูกคัดลอก',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ค่าว่างเปล่า, ไม่มีอะไรให้คัดลอก',
   /** --- On copy --- */
@@ -63,6 +65,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'อ้างอิงประเภท "{{sourceReferenceType}}" ไม่ได้รับอนุญาตในฟิลด์อ้างอิงที่ยอมรับประเภท "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'เอกสารที่อ้างอิง "{{ref}}" ไม่มีอยู่',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'ประเภทสคีมาต้นทางและเป้าหมายไม่เข้ากัน',
