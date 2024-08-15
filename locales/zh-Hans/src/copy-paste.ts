@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title': '文档 "{{fieldNames}}" 已复制',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': '字段 "{{fieldName}}" 已复制',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': '项目 "{{typeName}}" 已复制',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空值，无内容可复制',
   /** --- On copy --- */
@@ -57,6 +59,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     '类型为 "{{sourceReferenceType}}" 的引用不允许在接受类型为 "{{targetReferenceTypes}}" 的引用字段中',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    '引用的文档 "{{ref}}" 不存在',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description': '源和目标模式类型不兼容',
   /** The validation message that is shown when schema types are incompatible */
