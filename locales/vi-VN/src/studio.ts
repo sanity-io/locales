@@ -442,6 +442,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Thêm phần tử...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Sao chép',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Kéo để sắp xếp lại',
   /** Label for duplicating an array item  */
@@ -814,6 +816,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': 'Trích dẫn',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Xóa',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Sao chép',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Tạo mới',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */

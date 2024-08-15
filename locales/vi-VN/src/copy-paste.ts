@@ -18,6 +18,8 @@ export default removeUndefinedLocaleResources({
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title':
     'Trường "{{fieldName}}" đã được sao chép',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Đã sao chép mục "{{typeName}}"',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Giá trị trống, không có gì để sao chép',
   /** --- On copy --- */
@@ -63,6 +65,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Tham chiếu loại "{{sourceReferenceType}}" không được phép trong trường tham chiếu chấp nhận các loại "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Tài liệu tham khảo "{{ref}}" không tồn tại',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Các loại schema nguồn và đích không tương thích',
