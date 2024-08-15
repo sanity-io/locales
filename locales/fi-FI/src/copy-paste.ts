@@ -16,6 +16,8 @@ export default removeUndefinedLocaleResources({
     'Dokumentti "{{fieldNames}}" kopioitu',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Kenttä "{{fieldName}}" kopioitu',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Kohde "{{typeName}}" kopioitu',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tyhjä arvo, ei mitään kopioitavaa',
   /** --- On copy --- */
@@ -61,6 +63,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Viitetyyppiä "{{sourceReferenceType}}" ei sallita viitekentässä, joka hyväksyy tyypit "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Viitatun asiakirjan "{{ref}}" ei ole olemassa',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Lähde- ja kohdeskeematyypit eivät ole yhteensopivia',
