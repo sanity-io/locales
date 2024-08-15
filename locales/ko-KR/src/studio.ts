@@ -463,6 +463,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': '항목 추가...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': '복사',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': '재정렬하려면 드래그하세요',
   /** Label for duplicating an array item  */
@@ -860,6 +862,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': '인용구',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '지우기',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': '복사',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '새로 만들기',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
