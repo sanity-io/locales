@@ -16,6 +16,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title': 'Dokument "{{fieldNames}}" kopierat',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Fält "{{fieldName}}" kopierat',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Objektet "{{typeName}}" kopierat',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tomt värde, inget att kopiera',
   /** --- On copy --- */
@@ -60,6 +62,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Referenser av typen "{{sourceReferenceType}}" är inte tillåtna i referensfält som accepterar typer "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Det refererade dokumentet "{{ref}}" finns inte',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Käll- och målschematyper är inte kompatibla',
