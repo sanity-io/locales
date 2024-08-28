@@ -463,6 +463,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Legg til element...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopier',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Dra for å omorganisere',
   /** Label for duplicating an array item  */
@@ -860,6 +862,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': 'Sitat',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Fjern',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopier',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Opprett ny',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -1090,7 +1094,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio blei oppdatert',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Administrer medlemmar',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kven er her',
