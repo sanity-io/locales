@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': '复制文档 URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': '操作尚未准备好',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -306,6 +308,8 @@ export default removeUndefinedLocaleResources({
     '尝试取消发布此文档时发生错误。这通常意味着有其他文档引用了它。',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': '文档 {{context}} 操作成功',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url': '文档 URL 已复制到剪贴板',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '文档已成功删除',
   /** The text when a discard changes operation succeeded  */
