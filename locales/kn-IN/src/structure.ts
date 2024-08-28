@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': 'ಡಾಕ್ಯುಮೆಂಟ್ URL ನಕಲಿಸಿ',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -340,6 +342,9 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'ದಾಖಲೆಯ ಮೇಲೆ {{context}} ಯಶಸ್ವಿಯಾಗಿ ನಡೆಸಲಾಗಿದೆ',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'ಡಾಕ್ಯುಮೆಂಟ್ URL ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'ದಾಖಲೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ',
   /** The text when a discard changes operation succeeded  */
