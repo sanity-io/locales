@@ -17,6 +17,8 @@ export default removeUndefinedLocaleResources({
     'Дакумент "{{fieldNames}}" скапіраваны',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Поле "{{fieldName}}" скапіравана',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Элемент "{{typeName}}" скапіраваны',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Пустое значэнне, няма чаго капіяваць',
   /** --- On copy --- */
@@ -61,6 +63,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Спасылкі тыпу "{{sourceReferenceType}}" не дазволены ў полі спасылак, якое прымае тыпы "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Дакумент на які спасылаецца "{{ref}}" не існуе',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Тыпы схемы крыніцы і мэты не сумяшчальныя',
