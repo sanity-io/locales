@@ -1047,7 +1047,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio đã được cập nhật',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Quản lý thành viên',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Ai đang ở đây',
