@@ -463,6 +463,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Přidat položku...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopírovat',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Přetáhněte pro změnu pořadí',
   /** Label for duplicating an array item  */
@@ -861,6 +863,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': 'Citace',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Vymazat',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopírovat',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Vytvořit nový',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -1090,7 +1094,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio je připraveno k aktualizaci!',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Spravovat členy',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kdo je zde',
