@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': '문서 URL 복사',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': '작업 준비되지 않음',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -332,6 +334,9 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     '문서에 {{context}}를 성공적으로 수행했습니다',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    '문서 URL이 클립보드에 복사되었습니다',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '문서가 성공적으로 삭제되었습니다',
   /** The text when a discard changes operation succeeded  */
