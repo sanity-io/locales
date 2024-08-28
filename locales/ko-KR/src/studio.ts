@@ -1092,7 +1092,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio가 업데이트되었습니다',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': '멤버 관리',
   /** Accessibility label for presence menu button */
   'presence.aria-label': '여기 있는 사람',
