@@ -17,6 +17,8 @@ export default removeUndefinedLocaleResources({
     'Dokument "{{fieldNames}}" zkopírován',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Pole "{{fieldName}}" zkopírováno',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Položka "{{typeName}}" zkopírována',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Prázdná hodnota, nic ke kopírování',
   /** --- On copy --- */
@@ -62,6 +64,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Reference typu "{{sourceReferenceType}}" nejsou povoleny v referenčním poli, které akceptuje typy "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Odkazovaný dokument "{{ref}}" neexistuje',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Zdrojové a cílové typy schémat nejsou kompatibilní',
