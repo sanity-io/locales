@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': 'Капіяваць URL дакумента',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Аперацыя не гатова',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -321,6 +323,9 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Паспяхова выканана {{context}} над дакументам',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'URL дакумента скапіяваны ў буфер абмену',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Дакумент быў паспяхова выдалены',
   /** The text when a discard changes operation succeeded  */
