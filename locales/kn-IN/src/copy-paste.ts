@@ -17,6 +17,8 @@ export default removeUndefinedLocaleResources({
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title':
     'ಕ್ಷೇತ್ರ "{{fieldName}}" ನಕಲಿಸಲಾಗಿದೆ',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'ಐಟಂ "{{typeName}}" ನಕಲಿಸಲಾಗಿದೆ',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ಖಾಲಿ ಮೌಲ್ಯ, ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** --- On copy --- */
@@ -62,6 +64,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     '"{{sourceReferenceType}}" ಪ್ರಕಾರದ ಉಲ್ಲೇಖಗಳು "{{targetReferenceTypes}}" ಪ್ರಕಾರಗಳನ್ನು ಅನುಮತಿಸುವ ಉಲ್ಲೇಖ ಕ್ಷೇತ್ರದಲ್ಲಿ ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'ಉಲ್ಲೇಖಿತ ದಾಖಲೆ "{{ref}}" ಇಲ್ಲ',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'ಮೂಲ ಮತ್ತು ಗುರಿ ಸ್ಕೀಮಾ ಪ್ರಕಾರಗಳು ಹೊಂದಾಣಿಕೆಯಾಗಿಲ್ಲ',
