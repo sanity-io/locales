@@ -17,6 +17,9 @@ export default removeUndefinedLocaleResources({
     'დოკუმენტი "{{fieldNames}}" დაკოპირდა',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'ველი "{{fieldName}}" დაკოპირდა',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title':
+    'ერთეული "{{typeName}}" დაკოპირებულია',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ცარიელი მნიშვნელობა, კოპირებადი არაფერია',
   /** --- On copy --- */
@@ -61,6 +64,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     '"{{sourceReferenceType}}" ტიპის რეფერენსები არ არის ნებადართული რეფერენსის ველში, რომელიც მიიღებს ტიპებს "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'მოთხოვნილი დოკუმენტი "{{ref}}" არ არსებობს',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'წყაროს და მიმღების სქემის ტიპები არ არის თანამედროვე',
