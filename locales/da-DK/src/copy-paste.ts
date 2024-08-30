@@ -16,6 +16,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title': 'Dokument "{{fieldNames}}" kopieret',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Felt "{{fieldName}}" kopieret',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Element "{{typeName}}" kopieret',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tom værdi, intet at kopiere',
   /** --- On copy --- */
@@ -60,6 +62,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Referencer af typen "{{sourceReferenceType}}" er ikke tilladt i referencefeltet, der accepterer typer "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Det refererede dokument "{{ref}}" eksisterer ikke',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Kilde- og målskematyper er ikke kompatible',

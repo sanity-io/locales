@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': 'Kopier dokumentets URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operationen er ikke klar',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -341,6 +343,9 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Handlingen {{context}} på dokumentet blev udført med succes',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'Dokumentets URL kopieret til udklipsholder',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokumentet blev slettet med succes',
   /** The text when a discard changes operation succeeded  */
