@@ -465,6 +465,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'アイテムを追加…',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'コピー',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'ドラッグして順序を変更',
   /** Label for duplicating an array item  */
@@ -866,6 +868,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': '引用',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'クリア',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'コピー',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '新規作成',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -1096,7 +1100,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studioが更新されました',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'メンバーを管理する',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'ここにいる人',
