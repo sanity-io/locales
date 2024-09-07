@@ -17,6 +17,8 @@ export default removeUndefinedLocaleResources({
     'Документ "{{fieldNames}}" скопирован',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Поле "{{fieldName}}" скопировано',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Элемент "{{typeName}}" скопирован',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Пустое значение, нечего копировать',
   /** --- On copy --- */
@@ -62,6 +64,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Ссылки типа "{{sourceReferenceType}}" не допускаются в поле ссылки, которое принимает типы "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Ссылочный документ "{{ref}}" не существует',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Исходные и целевые типы схем несовместимы',
