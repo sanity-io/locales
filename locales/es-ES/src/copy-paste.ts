@@ -16,6 +16,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title': 'Documento "{{fieldNames}}" copiado',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Campo "{{fieldName}}" copiado',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Elemento "{{typeName}}" copiado',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Valor vacío, nada que copiar',
   /** --- On copy --- */
@@ -61,6 +63,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Referencias de tipo "{{sourceReferenceType}}" no están permitidas en campo de referencia que acepta tipos "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'El documento referenciado "{{ref}}" no existe',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Los tipos de esquema de origen y destino no son compatibles',

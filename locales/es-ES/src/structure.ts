@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': 'Copiar URL del documento',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operación no disponible',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -341,6 +343,9 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Se realizó con éxito {{context}} en el documento',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'URL del documento copiada al portapapeles',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'El documento fue eliminado con éxito',
