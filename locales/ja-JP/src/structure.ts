@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': 'ドキュメントのURLをコピー',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': '操作は準備ができていません',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -338,6 +340,9 @@ export default removeUndefinedLocaleResources({
     'このドキュメントの公開を取り消そうとした際にエラーが発生しました。これは通常、他のドキュメントがそれを参照していることを意味します。',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'ドキュメントに{{context}}を成功させました',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'ドキュメントのURLがクリップボードにコピーされました',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'ドキュメントは正常に削除されました',
   /** The text when a discard changes operation succeeded  */

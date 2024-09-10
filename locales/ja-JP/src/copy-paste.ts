@@ -18,6 +18,9 @@ export default removeUndefinedLocaleResources({
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title':
     'フィールド "{{fieldName}}" をコピーしました',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title':
+    'アイテム "{{typeName}}" をコピーしました',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空の値、コピーするものがありません',
   /** --- On copy --- */
@@ -64,6 +67,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'タイプ "{{sourceReferenceType}}" の参照はタイプ "{{targetReferenceTypes}}" を受け入れる参照フィールドでは許可されていません',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    '参照されたドキュメント "{{ref}}" は存在しません',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'ソースとターゲットのスキーマタイプが互換性がありません',
