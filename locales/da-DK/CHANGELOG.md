@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.6...locale-da-dk-v1.0.7) (2024-09-10)
+
+
+### Bug Fixes
+
+* **da-DK:** automated translation updates ([#629](https://github.com/sanity-io/locales/issues/629)) ([b5756b6](https://github.com/sanity-io/locales/commit/b5756b6463f5e928e8ce9e4f918253ace9b8ef40))
+
 ## [1.0.6](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.5...locale-da-dk-v1.0.6) (2024-08-15)
 
 
