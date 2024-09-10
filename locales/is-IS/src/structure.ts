@@ -1,6 +1,8 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy Document URL" document action */
+  'action.copy-document-url.label': 'Afrita skjalavefslóð',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Aðgerð ekki tilbúin',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -336,6 +338,9 @@ export default removeUndefinedLocaleResources({
     'Villa kom upp við tilraun til að afturkalla birtingu þessa skjals. Þetta þýðir yfirleitt að önnur skjöl vísa til þess.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Aðgerð {{context}} á skjali tókst',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'Skjalavefslóð afrituð á klippiborð',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Skjalinu var eytt',
   /** The text when a discard changes operation succeeded  */

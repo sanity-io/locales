@@ -16,6 +16,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.copy-document-success.title': 'Skjal "{{fieldNames}}" afritað',
   /** The success message that is shown when a field is copied */
   'copy-paste.on-copy.validation.copy-field_one-success.title': 'Reitur "{{fieldName}}" afritaður',
+  /** The success message that is shown when a array item is copied */
+  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Atriði "{{typeName}}" afritað',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tómt gildi, ekkert til að afrita',
   /** --- On copy --- */
@@ -60,6 +62,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Tilvísanir af taginu "{{sourceReferenceType}}" eru ekki leyfðar í tilvísunarreit sem samþykkir tög "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Tilvísunar skjalið "{{ref}}" er ekki til',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Uppruna- og markskematýpur eru ekki samrýmanlegar',
