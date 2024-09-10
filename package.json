@@ -50,7 +50,7 @@
     "globby": "^14.0.2",
     "js-yaml": "^4.1.0",
     "json5": "^2.2.3",
-    "magicast": "^0.3.4",
+    "magicast": "^0.3.5",
     "outdent": "^0.8.0",
     "p-map": "^4.0.0",
     "package-up": "^5.0.0",
