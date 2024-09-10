@@ -64,10 +64,10 @@ export default removeUndefinedLocaleResources({
     'Reference tipa "{{sourceReferenceType}}" nisu dopuštene u referentnom polju koje prihvaća tipove "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Referencirani dokument "{{ref}}" ne postoji',
+    'Referentni dokument "{{ref}}" ne postoji',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
-    'Izvorni i ciljni tipovi sheme nisu kompatibilni',
+    'Izvorni i odredišni tipovi sheme nisu kompatibilni',
   /** The validation message that is shown when schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.title':
     'Nije moguće odrediti tip sheme za putanju: {{path}}',
