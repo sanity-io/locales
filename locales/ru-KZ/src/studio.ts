@@ -450,6 +450,8 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Добавить элемент...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Копировать',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Перетащите для изменения порядка',
   /** Label for duplicating an array item  */
@@ -831,6 +833,8 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.quote': 'Цитата',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Очистить',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Копировать',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Создать новый',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -1060,7 +1064,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio готов к обновлению!',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Управление участниками',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Кто здесь',
