@@ -1092,7 +1092,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio har uppdaterats',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Hantera medlemmar',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Vem är här',
