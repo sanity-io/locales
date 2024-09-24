@@ -81,6 +81,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'เอกสารนี้ถูกลบแล้ว',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'ประเภทเอกสารนี้ไม่ได้ใช้งานแล้ว',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'ทิ้งร่าง',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'เผยแพร่เพื่อดำเนินการแก้ไขต่อ',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'ประเภท <strong>{{schemaType}}</strong> มี <code>liveEdit</code> เปิดใช้งานอยู่ แต่มีร่างของเอกสารนี้อยู่ โปรดเผยแพร่หรือทิ้งร่างเพื่อดำเนินการแก้ไขสดต่อไป',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'บทบาท <Roles/> ของคุณไม่มีสิทธิ์ในการสร้างเอกสารนี้',
@@ -286,8 +293,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'สร้างใหม่ {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'ไม่มีชื่อ',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'ลองใหม่',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'ข้อผิดพลาด: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
