@@ -1,6 +1,17 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': '关闭',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': '关闭对话框',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': '关闭',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': '忽略公告',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': '打开公告',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': '删除',
   /** Menu item for showing where a particular asset is used */

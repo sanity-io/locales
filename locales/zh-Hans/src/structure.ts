@@ -77,6 +77,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': '此文档已被删除。',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': '此文档类型已被弃用。',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': '放弃草稿',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': '发布以继续编辑',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    '类型 <strong>{{schemaType}}</strong> 已启用 <code>liveEdit</code>，但此文档的草稿版本存在。发布或放弃草稿以继续实时编辑。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '您的角色<Roles/>没有权限创建此文档。',
@@ -278,8 +285,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '新建 {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': '无标题',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': '重试',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': '错误：<Code>{{error}}</Code>',
   /** The error title on the document list pane */
