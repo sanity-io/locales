@@ -83,6 +83,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'ಈ ದಾಖಲೆ ಪ್ರಕಾರವನ್ನು ಅಪ್ರಚಲಿತಗೊಳಿಸಲಾಗಿದೆ.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'ಕರಡು ತ್ಯಜಿಸಿ',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'ಸಂಪಾದನೆ ಮುಂದುವರೆಸಲು ಪ್ರಕಟಿಸಿ',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'ಟೈಪ್ <strong>{{schemaType}}</strong> ಗೆ <code>liveEdit</code> ಸಕ್ರಿಯವಾಗಿದೆ, ಆದರೆ ಈ ದಾಖಲೆಯ ಕರಡು ಆವೃತ್ತಿ ಇದೆ. ನೇರ ಸಂಪಾದನೆ ಮುಂದುವರೆಸಲು ಕರಡು ಪ್ರಕಟಿಸಿ ಅಥವಾ ತ್ಯಜಿಸಿ.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'ನಿಮ್ಮ ಪಾತ್ರ <Roles/> ಈ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಅನುಮತಿಗಳಿಲ್ಲ.',
@@ -311,8 +318,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'ಹೊಸ {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'ಶೀರ್ಷಿಕೆ ಇಲ್ಲದ',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'ಮರುಪ್ರಯತ್ನಿಸಿ',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'ದೋಷ: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
