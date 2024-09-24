@@ -82,6 +82,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Þessu skjali hefur verið eytt.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Þessi skjaltýpa er úrelt.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Henda drögunum',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Birta til að halda áfram að breyta',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Tegundin <strong>{{schemaType}}</strong> hefur <code>liveEdit</code> virkt, en drög að þessu skjali eru til. Birta eða henda drögunum til að halda áfram að breyta því í rauntíma.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Hlutverk þitt <Roles/> hefur ekki heimildir til að búa til þetta skjal.',
@@ -308,8 +315,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nýtt {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Ótitlað',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Reyna aftur',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Villa: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
