@@ -1,6 +1,17 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': '닫기',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': '대화 상자 닫기',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': '닫기',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': '공지 사항 무시하기',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': '공지 사항 열기',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': '삭제',
   /** Menu item for showing where a particular asset is used */
