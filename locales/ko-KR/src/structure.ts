@@ -82,6 +82,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': '이 문서는 삭제되었습니다.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': '이 문서 유형은 더 이상 사용되지 않습니다.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': '초안 버리기',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': '편집을 계속하려면 게시',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    '타입 <strong>{{schemaType}}</strong>에 <code>liveEdit</code>가 활성화되어 있지만, 이 문서의 초안 버전이 존재합니다. 라이브 편집을 계속하려면 초안을 게시하거나 버려야 합니다.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '귀하의 역할 <Roles/>은 이 문서를 생성할 권한이 없습니다.',
@@ -303,8 +310,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '새로운 {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': '제목 없음',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': '재시도',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': '오류: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
