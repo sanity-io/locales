@@ -82,6 +82,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Tài liệu này đã bị xóa.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Loại tài liệu này đã không còn được sử dụng.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Hủy bản nháp',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Xuất bản để tiếp tục chỉnh sửa',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Loại <strong>{{schemaType}}</strong> đã bật <code>liveEdit</code>, nhưng một bản nháp của tài liệu này vẫn tồn tại. Xuất bản hoặc hủy bản nháp để tiếp tục chỉnh sửa trực tiếp.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'Các vai trò <Roles/> của bạn không có quyền tạo tài liệu này.',
@@ -291,8 +298,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Mới {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Không tiêu đề',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Thử lại',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Lỗi: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
