@@ -46,12 +46,12 @@
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
     "@sanity/ui": "^2.8.9",
-    "@sanity/vision": "^3.57.4",
-    "groq": "^3.57.4",
+    "@sanity/vision": "^3.58.0",
+    "groq": "^3.58.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
-    "sanity": "^3.57.4",
+    "sanity": "^3.58.0",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
