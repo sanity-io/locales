@@ -88,7 +88,7 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.publish.tooltip': 'Publiser for å fortsette redigeringen',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktivert, men det finnes en utkastversjon av dette dokumentet. Publiser eller forkast utkastet for å fortsette live redigeringen.',
+    'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktivert, men det finnes ett utkast av dette dokumentet. Publiser eller forkast utkastet for å fortsette live-redigeringen.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din rolle <Roles/> har ikke tillatelse til å opprette dette dokumentet.',
