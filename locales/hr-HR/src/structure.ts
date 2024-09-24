@@ -83,6 +83,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Ovaj dokument je izbrisan.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Ovaj tip dokumenta je zastario.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Odbaci skicu',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Objavi za nastavak uređivanja',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Tip <strong>{{schemaType}}</strong> ima omogućeno <code>liveEdit</code>, ali postoji skica ovog dokumenta. Objavite ili odbacite skicu kako biste nastavili s uređivanjem uživo.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Vaša uloga <Roles/> nema dozvolu za kreiranje ovog dokumenta.',
@@ -311,8 +318,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Novi {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Bez naslova',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Pokušaj ponovno',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Greška: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
