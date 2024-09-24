@@ -84,6 +84,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Detta dokument har raderats.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Denna dokumenttyp är inte längre tillgänglig.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Kassera utkast',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Publicera för att fortsätta redigera',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktiverat, men en utkastversion av detta dokument finns. Publicera eller kassera utkastet för att fortsätta redigera det live.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din roll <Roles/> har inte behörighet att skapa detta dokument.',
@@ -312,8 +319,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Namnlös',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Försök igen',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fel: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
