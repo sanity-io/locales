@@ -1,6 +1,17 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Sulje',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Sulje dialogi',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Sulje',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Hylkää ilmoitukset',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Avaa ilmoitukset',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Poista',
   /** Menu item for showing where a particular asset is used */

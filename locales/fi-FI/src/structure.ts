@@ -84,6 +84,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Tämä asiakirja on poistettu.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Tämä dokumenttityyppi on vanhentunut.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Hylkää luonnos',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Julkaise jatkaaksesi muokkausta',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Tyypillä <strong>{{schemaType}}</strong> on <code>liveEdit</code> käytössä, mutta tästä dokumentista on olemassa luonnosversio. Julkaise tai hylkää luonnos jatkaaksesi sen live-muokkausta.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Roolisi <Roles/> ei anna oikeuksia luoda tätä asiakirjaa.',
@@ -311,8 +318,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Uusi {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Nimetön',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Yritä uudelleen',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Virhe: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
