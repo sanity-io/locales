@@ -1,6 +1,17 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Kapat',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Diyaloğu kapat',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Kapat',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Duyuruları kapat',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Duyuruları aç',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Sil',
   /** Menu item for showing where a particular asset is used */

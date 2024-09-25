@@ -82,6 +82,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Bu belge silindi.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Bu belge türü kullanımdan kaldırılmıştır.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Taslağı Sil',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Düzenlemeye devam etmek için yayınla',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    '<strong>{{schemaType}}</strong> tipi için <code>canlı düzenleme</code> etkinleştirilmiş, ancak bu belgenin bir taslak sürümü bulunmaktadır. Canlı düzenlemeye devam etmek için taslağı yayınlayın veya silin.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Rolünüz <Roles/> bu belgeyi oluşturma iznine sahip değil.',
@@ -307,8 +314,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Yeni {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Başlıksız',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Yeniden dene',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Hata: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
