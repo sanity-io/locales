@@ -82,6 +82,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Este documento ha sido eliminado.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Este tipo de documento ha sido descontinuado.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Descartar borrador',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Publicar para continuar editando',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'El tipo <strong>{{schemaType}}</strong> tiene <code>liveEdit</code> habilitado, pero existe una versión borrador de este documento. Publica o descarta el borrador para continuar editándolo en vivo.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Tu rol <Roles/> no tiene permisos para crear este documento.',
@@ -311,8 +318,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nuevo {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Sin título',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Reintentar',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Error: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
