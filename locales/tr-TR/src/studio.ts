@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Kapat',
   /** Aria label to be used in the dialog close button */
-  'announcement.dialog.close-label': 'Diyalogu kapat',
+  'announcement.dialog.close-label': 'Diyaloğu kapat',
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': 'Kapat',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
