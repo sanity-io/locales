@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.9](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.8...locale-th-th-v1.1.9) (2024-09-26)
+
+
+### Bug Fixes
+
+* **th-TH:** automated translation updates ([#712](https://github.com/sanity-io/locales/issues/712)) ([2147972](https://github.com/sanity-io/locales/commit/2147972568d42f9792b668b2d90cb7fa66131ef4))
+
 ## [1.1.8](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.7...locale-th-th-v1.1.8) (2024-09-10)
 
 
