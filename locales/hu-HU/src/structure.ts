@@ -84,6 +84,13 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Ez a dokumentum törölve lett.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Ez a dokumentumtípus elavult.',
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Piszkozat elvetése',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Közzététel a szerkesztés folytatásához',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'A(z) <strong>{{schemaType}}</strong> típusnál engedélyezve van a <code>liveEdit</code>, de ennek a dokumentumnak létezik egy piszkozat változata. A valós idejű szerkesztés folytatásához közzé kell tenni vagy el kell vetni a piszkozatot.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'A szerepköröd <Roles/> nem rendelkezik jogosultsággal a dokumentum létrehozására.',
@@ -313,8 +320,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Új {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Cím nélkül',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Újrapróbálkozás',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Hiba: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
