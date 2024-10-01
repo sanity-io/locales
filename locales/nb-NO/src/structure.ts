@@ -102,9 +102,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Dine roller <Roles/> har ikke tillatelse til å oppdatere dette dokumentet.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Redigeringsforespørsel sendt',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Spør om å redigere',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
@@ -405,19 +405,23 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Åpne forhåndsvisning',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Send forespørsel',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Forespørselen din vil bli sendt til prosjektadministratorene. Hvis du vil, kan du også inkludere en merknad',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Be om redigeringstilgang',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text':
+    'Hvis du vil, kan du legge til en merknad',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Legg til merknad...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Din forespørsel om tilgang til dette prosjektet har blitt avslått.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Du har nådd grensen for rolleforespørsler på tvers av alle prosjekter. Vennligst vent før du sender inn flere forespørsler eller kontakt en administrator for hjelp.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Lagret',
