@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.13](https://github.com/sanity-io/locales/compare/locale-hu-hu-v1.1.12...locale-hu-hu-v1.1.13) (2024-10-01)
+
+
+### Bug Fixes
+
+* **hu-HU:** translation updates ([#697](https://github.com/sanity-io/locales/issues/697)) ([2bf5840](https://github.com/sanity-io/locales/commit/2bf584061e7c08709286408867ffd3dbd794b3cd))
+
 ## [1.1.12](https://github.com/sanity-io/locales/compare/locale-hu-hu-v1.1.11...locale-hu-hu-v1.1.12) (2024-09-10)
 
 
