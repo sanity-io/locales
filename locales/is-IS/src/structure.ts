@@ -102,9 +102,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Hlutverk þín <Roles/> hafa ekki heimildir til að uppfæra þetta skjal.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Beiðni um ritstjóra send',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Biðja um að fá að breyta',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Endurhlaða tilvísun',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -403,19 +403,22 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Opna forskoðun',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Senda beiðni',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Beiðni þín verður send til verkefnisstjóra(nna). Ef þú vilt geturðu einnig haft með athugasemd',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Biðja um breytingarheimild',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': 'Ef þú vilt geturðu bætt við athugasemd',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Bæta við athugasemd...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Beiðni þinni um aðgang að þessu verkefni hefur verið hafnað.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Þú hefur náð hámarki beiðna um hlutverk yfir öll verkefni. Vinsamlegast bíddu áður en þú sendir fleiri beiðnir eða hafðu samband við stjórnanda til að fá aðstoð.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Vistað',
