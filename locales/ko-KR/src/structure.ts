@@ -96,9 +96,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     '귀하의 역할 <Roles/>은 이 문서를 업데이트할 권한이 없습니다.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': '편집 요청이 전송되었습니다',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': '편집 요청하기',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '참조 다시 불러오기',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -399,19 +399,21 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': '미리보기 열기',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': '요청 보내기',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    '귀하의 요청은 프로젝트 관리자에게 전송될 것입니다. 원한다면, 메모를 추가할 수도 있습니다',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': '편집 접근 요청하기',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': '원한다면, 메모를 추가할 수 있습니다',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': '메모 추가...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text': '이 프로젝트에 대한 접근 요청이 거부되었습니다.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    '모든 프로젝트에 대한 역할 요청 한도에 도달했습니다. 더 많은 요청을 하기 전에 기다리거나 관리자에게 도움을 요청하세요.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': '저장됨',
