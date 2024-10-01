@@ -102,9 +102,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Dine roller <Roles/> har ikke tillatelse til å oppdatere dette dokumentet.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': 'Redigeringsforespørsel sendt',
+  'banners.permission-check-banner.request-permission-button.sent': 'Forespørsel sendt',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': 'Spør om å redigere',
+  'banners.permission-check-banner.request-permission-button.text': 'Be om tilgang',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
@@ -413,9 +413,9 @@ export default removeUndefinedLocaleResources({
   'request-permission-dialog.header.text': 'Be om redigeringstilgang',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
   'request-permission-dialog.note-input.description.text':
-    'Hvis du vil, kan du legge til en merknad',
+    'Hvis du vil, kan du legge til en kommentar',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': 'Legg til merknad...',
+  'request-permission-dialog.note-input.placeholder.text': 'Legg til kommentar…',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
   'request-permission-dialog.warning.denied.text':
     'Din forespørsel om tilgang til dette prosjektet har blitt avslått.',
