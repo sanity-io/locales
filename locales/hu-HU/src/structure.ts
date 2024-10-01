@@ -90,7 +90,7 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.publish.tooltip': 'Közzététel a szerkesztés folytatásához',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    'A(z) <strong>{{schemaType}}</strong> típusnál engedélyezve van a <code>liveEdit</code>, de ennek a dokumentumnak létezik egy piszkozat változata. A valós idejű szerkesztés folytatásához közzé kell tenni vagy elvetni a piszkozatot.',
+    'A(z) <strong>{{schemaType}}</strong> típusnál engedélyezve van a <code>liveEdit</code>, de ennek a dokumentumnak létezik egy piszkozat változata. A valós idejű szerkesztés folytatásához közzé kell tenni vagy el kell vetni a piszkozatot.',
   /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'A szerepköröd <Roles/> nem rendelkezik jogosultsággal a dokumentum létrehozására.',
