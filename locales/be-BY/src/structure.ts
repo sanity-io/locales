@@ -82,12 +82,22 @@ export default removeUndefinedLocaleResources({
   'banners.deleted-document-banner.text': 'Гэты дакумент быў выдалены.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Гэты тып дакумента застарэў.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роля <Roles/> не мае дазволу на стварэнне гэтага дакумента.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Ваша роля <Roles/> не мае дазволу на абнаўленне гэтага дакумента.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перазагрузіць спасылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -291,8 +301,6 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Новы {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Без назвы',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Паспрабаваць зноў',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Памылка: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
@@ -377,6 +385,21 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Адкрыць прагляд',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Захавана',

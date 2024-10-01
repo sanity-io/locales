@@ -89,18 +89,22 @@ export default removeUndefinedLocaleResources({
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     '<strong>{{schemaType}}</strong> tipi için <code>canlı düzenleme</code> etkinleştirilmiş, ancak bu belgenin bir taslak sürümü bulunmaktadır. Canlı düzenlemeye devam etmek için taslağı yayınlayın veya silin.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Rolünüz <Roles/> bu belgeyi oluşturma iznine sahip değil.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'Rolleriniz <Roles/> bu belgeyi oluşturma iznine sahip değil.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Rolünüz <Roles/> bu belgeyi güncelleme iznine sahip değil.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
     'Rolleriniz <Roles/> bu belgeyi güncelleme iznine sahip değil.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referansı Yeniden Yükle',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -395,6 +399,21 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Önizlemeyi aç',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Kaydedildi',
