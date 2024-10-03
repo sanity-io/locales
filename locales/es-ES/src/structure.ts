@@ -102,9 +102,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Tus roles <Roles/> no tienen permisos para actualizar este documento.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Solicitud de editor enviada',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Solicitar para editar',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Refrescar referencia',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -409,19 +409,22 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Abrir vista previa',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Enviar solicitud',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Tu solicitud será enviada a los administradores del proyecto. Si lo deseas, también puedes incluir una nota',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Solicitar acceso de edición',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': 'Si lo deseas, puedes añadir una nota',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Añadir nota...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Tu solicitud para acceder a este proyecto ha sido rechazada.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Has alcanzado el límite de solicitudes de rol en todos los proyectos. Por favor, espera antes de enviar más solicitudes o contacta a un administrador para asistencia.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Guardado',
