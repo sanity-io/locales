@@ -104,7 +104,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Uw rollen <Roles/> hebben geen toestemming om dit document bij te werken.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': 'Redactieverzoek verzonden',
+  'banners.permission-check-banner.request-permission-button.sent': 'Aanvraag verzonden',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Vraag om te bewerken',
   /** The text for the reload button */
@@ -410,7 +410,7 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Voorbeeld openen',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': 'Verzoek versturen',
+  'request-permission-dialog.confirm-button.text': 'Aanvraag versturen',
   /** The description text for the request permission dialog used in the permissions banner */
   'request-permission-dialog.description.text':
     'Uw verzoek zal worden verzonden naar de projectbeheerder(s). Als u wilt, kunt u ook een notitie toevoegen',
