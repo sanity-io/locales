@@ -103,9 +103,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'ನಿಮ್ಮ ಪಾತ್ರಗಳು <Roles/> ಈ ದಾಖಲೆಯನ್ನು ನವೀಕರಿಸಲು ಅನುಮತಿಗಳಿಲ್ಲ.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'ಸಂಪಾದಕರ ವಿನಂತಿ ಕಳುಹಿಸಲಾಗಿದೆ',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'ಸಂಪಾದನೆ ಮಾಡಲು ಕೇಳಿ',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'ಉಲ್ಲೇಖವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -408,19 +408,23 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'ಪ್ರಿವ್ಯೂ ತೆರೆ',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'ವಿನಂತಿ ಕಳುಹಿಸಿ',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಪ್ರಾಜೆಕ್ಟ್ ನಿರ್ವಾಹಕರಿಗೆ ಕಳುಹಿಸಲಾಗುವುದು. ನೀವು ಬಯಸಿದರೆ, ನೀವು ಒಂದು ಟಿಪ್ಪಣಿಯನ್ನು ಸಹ ಸೇರಿಸಬಹುದು',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'ಸಂಪಾದನೆ ಪ್ರವೇಶವನ್ನು ಕೇಳಿ',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text':
+    'ನೀವು ಬಯಸಿದರೆ, ನೀವು ಒಂದು ಟಿಪ್ಪಣಿ ಸೇರಿಸಬಹುದು',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'ಟಿಪ್ಪಣಿ ಸೇರಿಸಿ...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'ಈ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರವೇಶಕ್ಕೆ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'ಎಲ್ಲಾ ಪ್ರಾಜೆಕ್ಟ್‌ಗಳಲ್ಲಿ ಪಾತ್ರ ವಿನಂತಿಗಳ ಮಿತಿಗೆ ನೀವು ತಲುಪಿದ್ದೀರಿ. ಹೆಚ್ಚು ವಿನಂತಿಗಳನ್ನು ಸಲ್ಲಿಸುವ ಮೊದಲು ದಯವಿಟ್ಟು ಕಾಯಿರಿ ಅಥವಾ ಸಹಾಯಕ್ಕಾಗಿ ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'ಉಳಿಸಲಾಗಿದೆ',
