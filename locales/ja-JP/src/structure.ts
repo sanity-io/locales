@@ -84,11 +84,12 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'このドキュメントタイプは非推奨になりました。',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': '下書きを破棄',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip': '編集を続けるために公開する',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    '<strong>{{schemaType}}</strong>のタイプは<code>liveEdit</code>が有効になっていますが、このドキュメントの下書きバージョンが存在します。ライブ編集を続けるためには、下書きを公開するか破棄してください。',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
@@ -102,9 +103,10 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent':
+    '編集リクエストが送信されました',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': '編集を依頼する',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'リファレンスを再読み込み',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -404,19 +406,22 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'プレビューを開く',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'リクエストを送る',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'あなたのリクエストはプロジェクト管理者に送信されます。必要であれば、メモを追加することもできます',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': '編集アクセスを依頼する',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': '必要であれば、メモを追加できます',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'メモを追加...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'このプロジェクトへのアクセスリクエストが拒否されました。',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'すべてのプロジェクトにわたる役割リクエストの限界に達しました。さらにリクエストを送信する前にお待ちいただくか、管理者に連絡して支援を求めてください。',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': '保存済み',
