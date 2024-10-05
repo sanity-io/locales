@@ -96,9 +96,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Các vai trò <Roles/> của bạn không có quyền cập nhật tài liệu này.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Yêu cầu chỉnh sửa đã được gửi',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Yêu cầu chỉnh sửa',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Tải lại tham chiếu',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -387,19 +387,23 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Mở xem trước',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Gửi yêu cầu',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Yêu cầu của bạn sẽ được gửi đến người quản trị dự án. Nếu bạn muốn, bạn cũng có thể bao gồm một ghi chú',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Yêu cầu quyền chỉnh sửa',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text':
+    'Nếu bạn muốn, bạn có thể thêm một ghi chú',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Thêm ghi chú...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Yêu cầu của bạn để truy cập dự án này đã bị từ chối.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Bạn đã đạt đến giới hạn yêu cầu vai trò trên tất cả các dự án. Vui lòng đợi trước khi gửi thêm yêu cầu hoặc liên hệ với quản trị viên để được hỗ trợ.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Đã lưu',
