@@ -8,9 +8,9 @@ export default removeUndefinedLocaleResources({
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': '閉じる',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
-  'announcement.floating-button.dismiss-label': 'アナウンスメントを消す',
+  'announcement.floating-button.dismiss-label': 'アナウンスを消す',
   /**Aria label to be used in the floating button in the studio announcement card */
-  'announcement.floating-button.open-label': 'アナウンスメントを開く',
+  'announcement.floating-button.open-label': 'アナウンスを開く',
 
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': '削除',
