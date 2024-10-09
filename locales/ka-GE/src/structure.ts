@@ -83,11 +83,12 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'ეს დოკუმენტის ტიპი გაუქმებულია.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': 'მონახაზის უარყოფა',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip': 'გამოაქვეყნეთ რედაქტირების გაგრძელებად',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    'ტიპი <strong>{{schemaType}}</strong> აქვს <code>liveEdit</code> ჩართული, თუმცა ამ დოკუმენტის მონახაზი არსებობს. გამოაქვეყნეთ ან უარყეთ მონახაზი რედაქტირების გაგრძელებად.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'თქვენი როლი <Roles/> არ აქვს უფლება შექმნას ეს დოკუმენტი.',
@@ -101,9 +102,10 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'თქვენი როლები <Roles/> არ აქვთ უფლება განახლებას ამ დოკუმენტში.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent':
+    'რედაქტორის მოთხოვნა გაგზავნილია',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'მოითხოვეთ რედაქტირების უფლება',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'რეფერენციის ჩატვირთვა',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -402,19 +404,22 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'გახსნა პრევიუში',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'გაგზავნას მოთხოვნა',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'თქვენი მოთხოვნა გაიგზავნება პროექტის ადმინისტრატორ(ებ)ს. თუ გსურთ, შეგიძლიათ ასევე დაურთოთ შენიშვნა',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'მოითხოვეთ რედაქტირების უფლება',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': 'თუ გსურთ, შეგიძლიათ დაურთოთ შენიშვნა',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'დაამატეთ შენიშვნა...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'თქვენი მოთხოვნა ამ პროექტში წვდომისთვის უარყოფილია.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'თქვენ მიაღწიეთ როლების მოთხოვნების ლიმიტს ყველა პროექტში. გთხოვთ, დაელოდოთ მეტი მოთხოვნის გაგზავნამდე ან დაუკავშირდეთ ადმინისტრატორს დახმარებისთვის.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'შენახულია',
