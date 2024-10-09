@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.9...locale-ka-ge-v1.0.10) (2024-10-09)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#688](https://github.com/sanity-io/locales/issues/688)) ([3404058](https://github.com/sanity-io/locales/commit/3404058c7a55c2163d680d84953f7ac5defb2066))
+
 ## [1.0.9](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.8...locale-ka-ge-v1.0.9) (2024-09-10)
 
 
