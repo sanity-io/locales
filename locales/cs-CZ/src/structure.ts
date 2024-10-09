@@ -83,11 +83,12 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Tento typ dokumentu byl zastaralý.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': 'Zahodit koncept',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip': 'Publikovat a pokračovat v úpravách',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    'Typ <strong>{{schemaType}}</strong> má povoleno <code>liveEdit</code>, ale existuje koncept tohoto dokumentu. Pro pokračování v živém úpravách jej publikujte nebo zahoďte.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Vaše role <Roles/> nemá oprávnění vytvořit tento dokument.',
@@ -101,9 +102,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Vaše role <Roles/> nemají oprávnění aktualizovat tento dokument.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Žádost o úpravy odeslána',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Požádat o úpravy',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Znovu načíst referenci',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -405,19 +406,22 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Otevřít náhled',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Odeslat žádost',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Vaše žádost bude odeslána administrátorům projektu. Pokud chcete, můžete přiložit i poznámku',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Požádat o přístup k úpravám',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': 'Pokud chcete, můžete přidat poznámku',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Přidat poznámku...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Vaše žádost o přístup k tomuto projektu byla zamítnuta.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Dosáhli jste limitu pro žádosti o role ve všech projektech. Před odesláním dalších žádostí počkejte, nebo kontaktujte administrátora pro pomoc.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Uloženo',
