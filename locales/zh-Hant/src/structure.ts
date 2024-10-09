@@ -78,11 +78,12 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': '此文件類型已棄用。',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': '放棄草稿',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip': '發布以繼續編輯',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    '類型 <strong>{{schemaType}}</strong> 已啟用 <code>liveEdit</code>，但此文件的草稿版本存在。發布或放棄草稿以繼續即時編輯。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '你的角色是：<Roles/>，沒有創建此文件的權限。',
@@ -90,9 +91,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     '您的角色<Roles/>沒有更新此文件的權限。',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': '編輯請求已發送',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': '請求編輯',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '重新讀取引用',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -369,19 +370,21 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': '開啟預覽',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': '發送請求',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    '您的請求將發送給項目管理員。如果您願意，您也可以包括一條註釋',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': '請求編輯訪問權限',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': '如果您願意，您可以添加一條註釋',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': '添加註釋...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text': '您訪問此項目的請求已被拒絕。',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    '您已達到所有項目角色請求的限制。請等待再提交更多請求，或聯繫管理員尋求幫助。',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': '已儲存',
