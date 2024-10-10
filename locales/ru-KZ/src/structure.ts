@@ -83,11 +83,12 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Этот тип документа устарел.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': 'Отменить черновик',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip': 'Опубликовать для продолжения редактирования',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    'Тип <strong>{{schemaType}}</strong> имеет включенный <code>liveEdit</code>, но существует черновая версия этого документа. Опубликуйте или отмените черновик, чтобы продолжить его редактирование в реальном времени.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не имеет разрешений на создание этого документа.',
@@ -95,9 +96,10 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_one':
     'Ваша роль <Roles/> не имеет разрешений на обновление этого документа.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Запрос редактора отправлен',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text':
+    'Попросить разрешение на редактирование',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перезагрузить ссылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -385,19 +387,23 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Открыть предпросмотр',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Отправить запрос',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Ваш запрос будет отправлен администратору(ам) проекта. Если хотите, вы также можете включить заметку',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Запросить доступ на редактирование',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text':
+    'Если хотите, вы можете добавить заметку',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Добавить заметку...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Ваш запрос на доступ к этому проекту был отклонен.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Вы достигли лимита запросов на роль во всех проектах. Пожалуйста, подождите перед отправкой новых запросов или свяжитесь с администратором за помощью.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Сохранено',
