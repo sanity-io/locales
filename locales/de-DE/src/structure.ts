@@ -87,11 +87,13 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Dieser Dokumenttyp ist veraltet.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': 'Entwurf verwerfen',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Veröffentlichen, um die Bearbeitung fortzusetzen',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    'Der Typ <strong>{{schemaType}}</strong> hat <code>liveEdit</code> aktiviert, aber es existiert eine Entwurfsversion dieses Dokuments. Veröffentlichen oder verwerfen Sie den Entwurf, um mit dem Live-Editing fortzufahren.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ihre Rolle <Roles/> hat keine Berechtigungen, um dieses Dokument zu erstellen.',
@@ -105,9 +107,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'Ihre Rollen <Roles/> haben keine Berechtigungen, um dieses Dokument zu aktualisieren.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Editor-Anfrage gesendet',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Um Bearbeitung bitten',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referenz neu laden',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -412,19 +414,23 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Vorschau öffnen',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Anfrage senden',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Ihre Anfrage wird an den/die Projektadministrator(en) gesendet. Wenn Sie möchten, können Sie auch eine Notiz hinzufügen',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Um Bearbeitungszugriff bitten',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text':
+    'Wenn Sie möchten, können Sie eine Notiz hinzufügen',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Notiz hinzufügen...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Ihre Anfrage auf Zugriff zu diesem Projekt wurde abgelehnt.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Sie haben das Limit für Rollenanfragen über alle Projekte erreicht. Bitte warten Sie, bevor Sie weitere Anfragen einreichen, oder kontaktieren Sie einen Administrator um Hilfe zu erhalten.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Gespeichert',
