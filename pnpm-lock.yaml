@@ -94,8 +94,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.1)
       eslint-config-sanity:
-        specifier: ^7.1.2
-        version: 7.1.2(@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint@8.57.1)(typescript@5.5.4))(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint-plugin-react@7.34.3(eslint@8.57.1))(eslint@8.57.1)
+        specifier: ^7.1.3
+        version: 7.1.3(@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint@8.57.1)(typescript@5.5.4))(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint-plugin-react@7.34.3(eslint@8.57.1))(eslint@8.57.1)
       expect:
         specifier: ^29.7.0
         version: 29.7.0
@@ -3488,8 +3488,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-config-sanity@7.1.2:
-    resolution: {integrity: sha512-7Na1kh3OiteeFmeQkUqtIjThsKWIIiK/TLNUby0pOkGHhWV3AKYFsMEIhH7VuOIEOeTE53Ix/04Z6XWyvsHcuQ==}
+  eslint-config-sanity@7.1.3:
+    resolution: {integrity: sha512-hSUQIsbmOsPcCIrS+VmG4N+KnWtsIDuBTmRksZdKiDSfr4f0JZwKaOZ33QMfi9+9WDpMdBl6Pzo0NcWRbhW7uQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^6.7.5 || ^7.0.0
@@ -10675,7 +10675,7 @@ snapshots:
     dependencies:
       eslint: 8.57.1
 
-  eslint-config-sanity@7.1.2(@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint@8.57.1)(typescript@5.5.4))(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint-plugin-react@7.34.3(eslint@8.57.1))(eslint@8.57.1):
+  eslint-config-sanity@7.1.3(@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint@8.57.1)(typescript@5.5.4))(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.5.4))(eslint-plugin-react@7.34.3(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
       eslint-plugin-simple-import-sort: 12.1.1(eslint@8.57.1)
