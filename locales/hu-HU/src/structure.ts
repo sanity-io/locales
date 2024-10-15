@@ -104,9 +104,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.missing-permission_update_other':
     'A szerepköreid <Roles/> nem rendelkeznek jogosultsággal a dokumentum frissítésére.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent': 'Szerkesztői kérelem elküldve',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Szerkesztési jog kérése',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Hivatkozás újratöltése',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -409,19 +409,23 @@ export default removeUndefinedLocaleResources({
   'production-preview.menu-item.title': 'Előnézet megnyitása',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Kérelem elküldése',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'A kérelmedet a projekt adminisztrátor(ainak) fogjuk elküldeni. Ha szeretnél, mellékelhetsz egy megjegyzést is',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Szerkesztési hozzáférés kérése',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text':
+    'Ha szeretnél, hozzáfűzhetsz egy megjegyzést',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Megjegyzés hozzáadása...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'A projektbe való hozzáférési kérelmedet elutasították.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Elérted a szerepkérési limitet az összes projekten belül. Kérlek várj a további kérelmek benyújtásával vagy vedd fel a kapcsolatot egy adminisztrátorral segítségért.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Mentve',
