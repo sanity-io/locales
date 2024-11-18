@@ -100,8 +100,8 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0
       openai:
-        specifier: ^4.68.2
-        version: 4.68.2(zod@3.23.8)
+        specifier: ^4.72.0
+        version: 4.72.0(zod@3.23.8)
       rimraf:
         specifier: ^5.0.10
         version: 5.0.10
@@ -4851,8 +4851,8 @@ packages:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
 
-  openai@4.68.2:
-    resolution: {integrity: sha512-Ys3Jl9vkBUFtrFj4pgrF7rMte4JNekZoMgI6dWkkpOIwNUKGkc4I8jTqv86LB+TcoqkTPzV6DS269dPR9ILWsQ==}
+  openai@4.72.0:
+    resolution: {integrity: sha512-hFqG9BWCs7L7ifrhJXw7mJXmUBr7d9N6If3J9563o0jfwVA4wFANFDDaOIWFdgDdwgCXg5emf0Q+LoLCGszQYA==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -12146,7 +12146,7 @@ snapshots:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  openai@4.68.2(zod@3.23.8):
+  openai@4.72.0(zod@3.23.8):
     dependencies:
       '@types/node': 18.19.64
       '@types/node-fetch': 2.6.11
