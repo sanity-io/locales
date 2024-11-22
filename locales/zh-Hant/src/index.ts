@@ -15,6 +15,11 @@ const locale = defineLocale({
     },
 
     {
+      namespace: 'create',
+      resources: () => import('./create'),
+    },
+
+    {
       namespace: 'structure',
       resources: () => import('./structure'),
     },
