@@ -66,7 +66,7 @@ export default removeUndefinedLocaleResources({
   'unlink-from-create-dialog.first-paragraph':
     'Sie lösen die Verknüpfung von „<strong>{{title}}</strong>“ mit Sanity Create, damit es hier bearbeitet werden kann.',
   /** Unlink from Create dialog header */
-  'unlink-from-create-dialog.header': 'Bearbeitung zum Studio wechseln?',
+  'unlink-from-create-dialog.header': 'Für Bearbeitung zum Studio wechseln?',
   /** Unlink from Create dialog – second informational paragraph */
   'unlink-from-create-dialog.second-paragraph':
     'Ihr Inhalt bleibt an beiden Orten erhalten. Neue Änderungen in Sanity Create werden nicht mehr mit diesem Studio synchronisiert.',
