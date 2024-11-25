@@ -2,11 +2,11 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Text in badge above header in Create Link info popover */
-  'create-link-info-popover.eyebrow-badge': 'Snemmtæk aðgangur',
+  'create-link-info-popover.eyebrow-badge': 'Snemmtækur aðgangur',
   /** Text above header in Create Link info popover */
   'create-link-info-popover.eyebrow-title': 'Sanity Create',
   /** Header in Create Link info popover */
-  'create-link-info-popover.header': 'Hugmyndafyrst ritun',
+  'create-link-info-popover.header': 'Hugmyndasniðin ritun',
   /** Informational text in Create Link info popover */
   'create-link-info-popover.text':
     'Skrifaðu náttúrulega í gervigreindarstuddum ritli. Innihaldið þitt kortleggst sjálfkrafa á Studio reiti þegar þú skrifar.',
@@ -41,11 +41,11 @@ export default removeUndefinedLocaleResources({
   /** The details on what "Start writing in Create" implies */
   'start-in-create-dialog.details': 'Þetta opnast í nýjum glugga, tengt beint við þetta skjal.',
   /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Muna ekki eftir mér aftur',
+  'start-in-create-dialog.dont-remind-me-checkbox': 'Ekki minna mig á aftur',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Ekki hægt að ákvarða Sanity Create URL.',
   /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Skrifaðu náttúrulega, birtu skipulagt',
+  'start-in-create-dialog.header': 'Skrifaðu eðlilega, birtu skipulagt',
   /** The lede text in the "Start writing in Create" dialog */
   'start-in-create-dialog.lede':
     'Búðu til efni á þinn hátt í gervigreindarstuddum ritli. Það sem þú skrifar kortleggst sjálfkrafa á réttu reitina í Sanity Studio þegar þú skrifar.',
@@ -64,7 +64,7 @@ export default removeUndefinedLocaleResources({
   'unlink-from-create-dialog.first-paragraph':
     'Þú ert að aftengja “<strong>{{title}}</strong>” frá Sanity Create svo hægt sé að breyta því hér.',
   /** Unlink from Create dialog header */
-  'unlink-from-create-dialog.header': 'Skipta yfir í ritun í Studio?',
+  'unlink-from-create-dialog.header': 'Skipta ritun yfir í Studio?',
   /** Unlink from Create dialog – second informational paragraph */
   'unlink-from-create-dialog.second-paragraph': undefined, // 'You’ll keep your content in both places. Any new changes in Sanity Create will stop syncing to this Studio.'
   /** Unlink from Create dialog: Unlink button text */
