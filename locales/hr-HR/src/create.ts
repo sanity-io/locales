@@ -44,7 +44,7 @@ export default removeUndefinedLocaleResources({
   /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
   'start-in-create-dialog.dont-remind-me-checkbox': 'Ne podsjećaj me ponovno',
   /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Nije moguće odrediti URL Sanity Create.',
+  'start-in-create-dialog.error-toast.unresolved-url': 'Nije moguće odrediti URL za Sanity Create.',
   /** Header of the "Start writing in Create" dialog */
   'start-in-create-dialog.header': 'Pišite prirodno, objavljujte strukturirano',
   /** The lede text in the "Start writing in Create" dialog */
