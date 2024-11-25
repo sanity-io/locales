@@ -66,7 +66,8 @@ export default removeUndefinedLocaleResources({
   /** Unlink from Create dialog header */
   'unlink-from-create-dialog.header': 'Studio에서 편집으로 전환하시겠습니까?',
   /** Unlink from Create dialog – second informational paragraph */
-  'unlink-from-create-dialog.second-paragraph': undefined, // 'You’ll keep your content in both places. Any new changes in Sanity Create will stop syncing to this Studio.'
+  'unlink-from-create-dialog.second-paragraph':
+    '두 곳 모두에서 콘텐츠를 유지하게 됩니다. Sanity Create에서의 새로운 변경 사항은 이 Studio와 동기화되지 않을 것입니다.',
   /** Unlink from Create dialog: Unlink button text */
-  'unlink-from-create-dialog.unlink.text': undefined, // 'Unlink now'
+  'unlink-from-create-dialog.unlink.text': '지금 연결 해제',
 })
