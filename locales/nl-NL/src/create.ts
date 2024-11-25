@@ -60,7 +60,7 @@ export default removeUndefinedLocaleResources({
   /** Unlink from Create dialog: Cancel button text */
   'unlink-from-create-dialog.cancel.text': 'Annuleren',
   /** Unlink from Create dialog: Document title used if no other title can be determined */
-  'unlink-from-create-dialog.document.untitled.text': 'Zonder titel',
+  'unlink-from-create-dialog.document.untitled.text': 'Geen titel',
   /** Unlink from Create dialog – first informational paragraph */
   'unlink-from-create-dialog.first-paragraph':
     'Je ontkoppelt “<strong>{{title}}</strong>” van Sanity Create zodat het hier bewerkt kan worden.',
