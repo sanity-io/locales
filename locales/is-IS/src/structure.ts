@@ -58,9 +58,9 @@ export default removeUndefinedLocaleResources({
     'Það eru staðfestingarvillur sem þarf að laga áður en hægt er að birta þetta skjal',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Bíð eftir að verkefni klárist áður en er birt',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Ertu viss um að þú viljir endurheimta þetta skjal?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Þú getur ekki endurheimt upphaflegu útgáfuna',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Endurheimta',
@@ -133,6 +133,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Loka kljúfðum glugga',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Loka gluggahópi',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'Frá',
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': 'Saga',
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': 'Endurskoða breytingar',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'Til',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Hætta við',
@@ -454,4 +463,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Endurhlaða',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Slóð uppbyggingar',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'Opna aðgerðavalmynd',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'Aðgerðir',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'Fella saman',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'Útvíkka',
 })
