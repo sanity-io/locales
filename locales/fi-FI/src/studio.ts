@@ -348,6 +348,8 @@ export default removeUndefinedLocaleResources({
   'document-status.not-published': 'Ei julkaistu',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Julkaistu {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Versio päivämäärästä <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -1574,6 +1576,8 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguraation tila',
 
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Muutokset tekijältä',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Asiakirjan historian transaktioita ei ole vaikuttanut.',
