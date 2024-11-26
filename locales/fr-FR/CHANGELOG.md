@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.13](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.2.12...locale-fr-fr-v1.2.13) (2024-11-26)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#773](https://github.com/sanity-io/locales/issues/773)) ([037b874](https://github.com/sanity-io/locales/commit/037b8747ab096387a988bef3e632812f7217f53f))
+* reconcile + prettify ([#811](https://github.com/sanity-io/locales/issues/811)) ([4c61ca0](https://github.com/sanity-io/locales/commit/4c61ca096c2fd158aefd895681bb0b7c2a634234))
+
 ## [1.2.12](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.2.11...locale-fr-fr-v1.2.12) (2024-10-15)
 
 

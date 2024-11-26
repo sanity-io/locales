@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.12](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.11...locale-fi-fi-v1.1.12) (2024-11-26)
+
+
+### Bug Fixes
+
+* **fi-FI:** automated translation updates ([#780](https://github.com/sanity-io/locales/issues/780)) ([acbaccc](https://github.com/sanity-io/locales/commit/acbaccc7c9388f7a33d0f7a6dd2d9a614825a79e))
+* **fi-FI:** automated translation updates ([#814](https://github.com/sanity-io/locales/issues/814)) ([cf67bb3](https://github.com/sanity-io/locales/commit/cf67bb3ffc46f60acf924e35ca77c9381dbaa849))
+* reconcile + prettify ([#773](https://github.com/sanity-io/locales/issues/773)) ([037b874](https://github.com/sanity-io/locales/commit/037b8747ab096387a988bef3e632812f7217f53f))
+
 ## [1.1.11](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.10...locale-fi-fi-v1.1.11) (2024-10-15)
 
 
