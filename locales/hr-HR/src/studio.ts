@@ -1585,7 +1585,7 @@ export default removeUndefinedLocaleResources({
   'timeline.changes.title': 'Promjene od',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
-    'Transakcije povijesti dokumenta nisu bile pogođene.',
+    'Transakcije povijesti dokumenta nije moguće učitati.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Došlo je do pogreške prilikom dohvaćanja promjena dokumenta.',
