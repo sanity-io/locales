@@ -58,9 +58,9 @@ export default removeUndefinedLocaleResources({
     'Có lỗi xác thực cần được khắc phục trước khi tài liệu này có thể được xuất bản',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Đang chờ các tác vụ hoàn thành trước khi xuất bản',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Bạn có chắc chắn muốn khôi phục tài liệu này không?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Bạn không thể khôi phục về phiên bản ban đầu',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Khôi phục',
@@ -127,6 +127,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Đóng cửa sổ chia',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Đóng nhóm cửa sổ',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'Từ',
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': 'Lịch sử',
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': 'Xem xét các thay đổi',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'Đến',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Hủy bỏ',
@@ -441,4 +450,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Tải lại',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Đường dẫn cấu trúc',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'Mở menu hành động',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'Hành động',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'Thu gọn',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'Mở rộng',
 })
