@@ -58,10 +58,10 @@ export default removeUndefinedLocaleResources({
     'Postoje greške u validaciji koje treba ispraviti prije nego što se ovaj dokument može objaviti',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Čekanje da se zadaci završe prije objavljivanja',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message':
     'Jeste li sigurni da želite vratiti ovaj dokument na raniju verziju?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Ne možete vratiti na inicijalnu verziju',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Vrati',
@@ -134,6 +134,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Zatvori podijeljenu ploču',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Zatvori grupu ploča',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': undefined, // 'From'
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': undefined, // 'History'
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': undefined, // 'Review changes'
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': undefined, // 'To'
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Odustani',
@@ -458,4 +467,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Ponovno učitaj',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Putanja strukture',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': undefined, // 'Expand'
 })

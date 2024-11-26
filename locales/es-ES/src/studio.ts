@@ -355,6 +355,8 @@ export default removeUndefinedLocaleResources({
   'document-status.not-published': 'No publicado',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publicado {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -1595,6 +1597,8 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Estado de configuración',
 
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': undefined, // 'Changes by'
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Las transacciones del historial del documento no se han visto afectadas.',
