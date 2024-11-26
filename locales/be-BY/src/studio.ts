@@ -339,6 +339,8 @@ export default removeUndefinedLocaleResources({
   'document-status.not-published': 'Не апублікавана',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Апублікавана {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -1533,6 +1535,8 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Статус канфігурацыі',
 
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': undefined, // 'Changes by'
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакцыі гісторыі дакументаў не былі загружаны.',

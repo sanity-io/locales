@@ -60,9 +60,9 @@ export default removeUndefinedLocaleResources({
     'Vannak érvényességi hibák, amelyeket ki kell javítani, mielőtt ez a dokumentum közzétehető',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Várakozás a feladatok befejezésére a közzététel előtt',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Biztosan vissza szeretnéd állítani ezt a dokumentumot?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Nem állítható vissza az eredeti verzióra',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Visszaállítás',
@@ -135,6 +135,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Osztott panel bezárása',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Panelcsoport bezárása',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': undefined, // 'From'
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': undefined, // 'History'
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': undefined, // 'Review changes'
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': undefined, // 'To'
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Mégse',
@@ -464,4 +473,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Újratöltés',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Struktúra útvonala',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': undefined, // 'Expand'
 })

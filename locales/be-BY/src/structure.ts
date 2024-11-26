@@ -58,9 +58,9 @@ export default removeUndefinedLocaleResources({
     'Ёсць памылкі праверкі, якія трэба выправіць перад публікацыяй гэтага дакумента',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Чаканне завяршэння задач перад публікацыяй',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Вы ўпэўнены, што хочаце аднавіць гэты дакумент?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Вы не можаце аднавіць пачатковую версію',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Аднавіць',
@@ -128,6 +128,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Зачыніць раздзеленую панэль',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Зачыніць групу панэляў',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': undefined, // 'From'
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': undefined, // 'History'
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': undefined, // 'Review changes'
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': undefined, // 'To'
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Адмяніць',
@@ -442,4 +451,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Перазагрузіць',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Структура',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': undefined, // 'Expand'
 })
