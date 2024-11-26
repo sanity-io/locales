@@ -54,9 +54,9 @@ export default removeUndefinedLocaleResources({
   'action.publish.validation-issues.tooltip': '在此文档可以发布之前，需要修复验证错误',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': '等待任务完成后才能发布',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': '您确定要还原此文档吗？',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': '您不能还原到初始版本',
   /** Label for the "Restore" document action */
   'action.restore.label': '还原',
@@ -120,6 +120,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': '关闭分割窗格',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': '关闭窗格组',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': '从',
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': '历史',
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': '审查变更',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': '到',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': '取消',
@@ -417,4 +426,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': '重新加载',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': '结构路径',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': '打开操作菜单',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': '操作',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': '折叠',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': '展开',
 })
