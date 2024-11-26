@@ -348,7 +348,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publicerad {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Revision från <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -1576,7 +1576,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Konfigurationsstatus',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Ändringar av',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Dokumentets historiktransaktioner har inte påverkats.',
