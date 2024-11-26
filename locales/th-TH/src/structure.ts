@@ -57,9 +57,9 @@ export default removeUndefinedLocaleResources({
     'มีข้อผิดพลาดในการตรวจสอบที่ต้องแก้ไขก่อนที่เอกสารนี้จะสามารถเผยแพร่ได้',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'กำลังรอให้งานเสร็จสิ้นก่อนที่จะเผยแพร่',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'คุณแน่ใจหรือไม่ว่าต้องการกู้คืนเอกสารนี้?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'คุณไม่สามารถกู้คืนเป็นเวอร์ชันเริ่มต้นได้',
   /** Label for the "Restore" document action */
   'action.restore.label': 'กู้คืน',
@@ -126,6 +126,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'ปิดหน้าต่างแยก',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'ปิดกลุ่มหน้าต่าง',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'จาก',
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': 'ประวัติ',
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': 'ตรวจทานการเปลี่ยนแปลง',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'ไปยัง',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'ยกเลิก',
@@ -433,4 +442,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'โหลดใหม่',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'เส้นทางโครงสร้าง',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'เปิดเมนูการกระทำ',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'การกระทำ',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'ย่อ',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'ขยาย',
 })
