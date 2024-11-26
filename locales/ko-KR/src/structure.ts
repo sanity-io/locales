@@ -58,9 +58,9 @@ export default removeUndefinedLocaleResources({
     '게시하기 전에 수정해야 할 유효성 검사 오류가 있습니다',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': '게시하기 전에 작업이 완료될 때까지 기다리는 중',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': '이 문서를 복원하시겠습니까?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': '초기 버전으로 복원할 수 없습니다',
   /** Label for the "Restore" document action */
   'action.restore.label': '복원',
@@ -127,6 +127,15 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': '분할 창 닫기',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': '창 그룹 닫기',
+
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': '에서',
+  /* The label for the history tab in the changes inspector*/
+  'changes.tab.history': '역사',
+  /* The label for the review tab in the changes inspector*/
+  'changes.tab.review-changes': '변경 사항 검토',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': '까지',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': '취소',
@@ -449,4 +458,13 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': '다시 로드',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': '구조 경로',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': '작업 메뉴 열기',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': '작업',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': '접기',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': '펼치기',
 })
