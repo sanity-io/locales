@@ -66,7 +66,8 @@ export default removeUndefinedLocaleResources({
   /** Unlink from Create dialog header */
   'unlink-from-create-dialog.header': 'Skipta ritun yfir í Studio?',
   /** Unlink from Create dialog – second informational paragraph */
-  'unlink-from-create-dialog.second-paragraph': undefined, // 'You’ll keep your content in both places. Any new changes in Sanity Create will stop syncing to this Studio.'
+  'unlink-from-create-dialog.second-paragraph':
+    'Þú munt halda efni þínu á báðum stöðum. Allar nýjar breytingar í Sanity Create munu hætta að samstilla við þetta Studio.',
   /** Unlink from Create dialog: Unlink button text */
-  'unlink-from-create-dialog.unlink.text': undefined, // 'Unlink now'
+  'unlink-from-create-dialog.unlink.text': 'Aftengja núna',
 })
