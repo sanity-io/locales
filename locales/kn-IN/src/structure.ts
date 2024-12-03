@@ -136,13 +136,13 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'ಪೇನ್ ಗುಂಪು ಮುಚ್ಚು',
 
   /** The label used in the changes inspector for the from selector */
-  'changes.from.label': undefined, // 'From'
+  'changes.from.label': 'ಇಂದ',
   /* The label for the history tab in the changes inspector*/
-  'changes.tab.history': undefined, // 'History'
+  'changes.tab.history': 'ಇತಿಹಾಸ',
   /* The label for the review tab in the changes inspector*/
-  'changes.tab.review-changes': undefined, // 'Review changes'
+  'changes.tab.review-changes': 'ಪರಿಶೀಲನೆ ಬದಲಾವಣೆಗಳು',
   /** The label used in the changes inspector for the to selector */
-  'changes.to.label': undefined, // 'To'
+  'changes.to.label': 'ಗೆ',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'ರದ್ದುಮಾಡು',
@@ -474,11 +474,11 @@ export default removeUndefinedLocaleResources({
   'structure-error.structure-path.label': 'ರಚನೆಯ ಹಾದಿ',
 
   /** The aria label for the menu button in the timeline item */
-  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  'timeline-item.menu-button.aria-label': 'ಕ್ರಿಯಾ ಮೆನು ತೆರೆಯಿರಿ',
   /** The text for the tooltip in menu button the timeline item */
-  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  'timeline-item.menu-button.tooltip': 'ಕ್ರಿಯೆಗಳು',
   /** The text for the collapse action in the timeline item menu */
-  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  'timeline-item.menu.action-collapse': 'ಸಂಕೋಚಿಸಿ',
   /** The text for the expand action in the timeline item menu */
-  'timeline-item.menu.action-expand': undefined, // 'Expand'
+  'timeline-item.menu.action-expand': 'ವಿಸ್ತರಿಸಿ',
 })
