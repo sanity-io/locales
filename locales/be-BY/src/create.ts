@@ -60,7 +60,8 @@ export default removeUndefinedLocaleResources({
   /** Unlink from Create dialog header */
   'unlink-from-create-dialog.header': undefined, // 'Switch editing to Studio?'
   /** Unlink from Create dialog – second informational paragraph */
-  'unlink-from-create-dialog.second-paragraph': undefined, // 'You’ll keep your content in both places. Any new changes in Sanity Create will stop syncing to this Studio.'
+  'unlink-from-create-dialog.second-paragraph':
+    'Ваш змест застанецца ў абодвух месцах. Любыя новыя змены ў Sanity Create перастануць сінхранізавацца з гэтай студыяй.',
   /** Unlink from Create dialog: Unlink button text */
-  'unlink-from-create-dialog.unlink.text': undefined, // 'Unlink now'
+  'unlink-from-create-dialog.unlink.text': 'Адлучыць зараз',
 })

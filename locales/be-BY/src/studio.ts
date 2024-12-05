@@ -340,7 +340,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Апублікавана {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Рэвізія з <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -624,6 +624,15 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Памылка: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Сістэма кіравання актывамі не падтрымлівае гарачыя кропкі і абразанне для вектарных фарматаў. Каб уключыць гарачыя кропкі і абразанне, вывядзіце гэты малюнак у любы з падтрымліваемых растравых фарматаў. Напрыклад: <code>fm=jpg</code> у <ImageUrlDocumentationLink>URL малюнка</ImageUrlDocumentationLink> або выклічыце <code>.format('png')</code> з <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info':
+    'Глядзець інфармацыю для распрацоўшчыкаў',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Увага: Гарачыя кропкі і абразанне могуць не быць прымененыя да гэтага малюнка, дзе ён прадстаўлены.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Канвертаваць у {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1536,7 +1545,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Статус канфігурацыі',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Змены ад',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакцыі гісторыі дакументаў не былі загружаны.',
