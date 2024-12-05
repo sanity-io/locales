@@ -354,7 +354,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Gepubliceerd {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Revisie van <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -655,6 +655,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Fout: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "De Asset Pipeline ondersteunt geen hotspot en crop voor vectorformaten. Om hotspot & crop in te schakelen, zet deze afbeelding om naar een van de ondersteunde rasterformaten. Bijvoorbeeld: <code>fm=jpg</code> aan de <ImageUrlDocumentationLink>afbeeldings-URL</ImageUrlDocumentationLink> of bel <code>.format('png')</code> met <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Zie ontwikkelaarsinformatie',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Waarschuwing: Hotspot en crop worden mogelijk niet toegepast op deze afbeelding waar deze wordt gepresenteerd.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Converteren naar <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1590,7 +1598,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Configuratiestatus',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Wijzigingen door',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Documentgeschiedenistransacties zijn niet beïnvloed.',

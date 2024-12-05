@@ -67,7 +67,8 @@ export default removeUndefinedLocaleResources({
   /** Unlink from Create dialog header */
   'unlink-from-create-dialog.header': 'Overschakelen naar bewerken in Studio?',
   /** Unlink from Create dialog – second informational paragraph */
-  'unlink-from-create-dialog.second-paragraph': undefined, // 'You’ll keep your content in both places. Any new changes in Sanity Create will stop syncing to this Studio.'
+  'unlink-from-create-dialog.second-paragraph':
+    'U behoudt uw inhoud op beide plaatsen. Nieuwe wijzigingen in Sanity Create worden niet meer gesynchroniseerd met deze Studio.',
   /** Unlink from Create dialog: Unlink button text */
-  'unlink-from-create-dialog.unlink.text': undefined, // 'Unlink now'
+  'unlink-from-create-dialog.unlink.text': 'Nu ontkoppelen',
 })
