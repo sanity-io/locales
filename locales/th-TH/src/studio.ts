@@ -607,6 +607,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'ข้อผิดพลาด: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'จุดศูนย์กลาง & ตัดภาพ',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline ไม่รองรับ hotspot และ crop สำหรับรูปแบบ vector หากต้องการใช้งาน hotspot & crop ให้แสดงผลรูปภาพในรูปแบบ raster ที่รองรับ เช่น: <code>fm=jpg</code> ไปยัง <ImageUrlDocumentationLink>URL ของรูปภาพ</ImageUrlDocumentationLink> หรือเรียก <code>.format('png')</code> ด้วย <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'ดูข้อมูลนักพัฒนา',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'คำเตือน: Hotspot และ crop อาจไม่ถูกใช้กับรูปภาพนี้ในที่ที่แสดง.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'แปลงเป็น <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
