@@ -612,6 +612,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Lỗi: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Cắt ảnh',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline không hỗ trợ hotspot và crop cho các định dạng vector. Để kích hoạt hotspot & crop, xuất hình ảnh này sang bất kỳ định dạng raster được hỗ trợ nào. Ví dụ: <code>fm=jpg</code> cho <ImageUrlDocumentationLink>URL hình ảnh</ImageUrlDocumentationLink> hoặc gọi <code>.format('png')</code> với <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Xem thông tin nhà phát triển',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Cảnh báo: Hotspot và crop có thể không được áp dụng cho hình ảnh này khi nó được trình bày.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Chuyển đổi thành <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
