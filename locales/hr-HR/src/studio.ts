@@ -651,6 +651,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Greška: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Izrez i Obrezivanje',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline ne podržava hotspot i crop za vektorske formate. Da biste omogućili hotspot & crop, izvedite ovu sliku u bilo kojem od podržanih rasterskih formata. Na primjer: <code>fm=jpg</code> na <ImageUrlDocumentationLink>URL-u slike</ImageUrlDocumentationLink> ili pozovite <code>.format('png')</code> s <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Pogledajte informacije za developere',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Upozorenje: Hotspot i crop možda neće biti primijenjeni na ovoj slici gdje se prikazuje.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Pretvori u {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
