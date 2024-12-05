@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.lede':
     'Sanity Createに戻ってください。ドキュメントは自動的に同期されます（通常は数秒かかります）。',
   /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'リンクが遅れていますか？',
+  'linking-in-progress-dialog.troubleshooting.button.title': 'リンクの作成が遅れていますか？',
   /** "Linking in progress" troubleshooting content */
   'linking-in-progress-dialog.troubleshooting.content':
     'Sanity Createウィンドウがまだ開いているか、プロセスが停止しているかを確認してください。問題が解決しない場合は、スタジオを更新して再試行してください。',
@@ -65,7 +65,7 @@ export default removeUndefinedLocaleResources({
   'unlink-from-create-dialog.first-paragraph':
     '「<strong>{{title}}</strong>」のSanity Createからのリンクを解除して、ここで編集できるようにします。',
   /** Unlink from Create dialog header */
-  'unlink-from-create-dialog.header': '編集をスタジオに切り替えますか？',
+  'unlink-from-create-dialog.header': '編集を Studio に切り替えますか？',
   /** Unlink from Create dialog – second informational paragraph */
   'unlink-from-create-dialog.second-paragraph':
     '両方の場所にコンテンツが保持されます。Sanity Createでの新しい変更は、このStudioとの同期を停止します。',
