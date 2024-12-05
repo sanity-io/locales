@@ -137,13 +137,13 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'ペイングループを閉じる',
 
   /** The label used in the changes inspector for the from selector */
-  'changes.from.label': undefined, // 'From'
+  'changes.from.label': 'から',
   /* The label for the history tab in the changes inspector*/
-  'changes.tab.history': undefined, // 'History'
+  'changes.tab.history': '履歴',
   /* The label for the review tab in the changes inspector*/
-  'changes.tab.review-changes': undefined, // 'Review changes'
+  'changes.tab.review-changes': '変更をレビュー',
   /** The label used in the changes inspector for the to selector */
-  'changes.to.label': undefined, // 'To'
+  'changes.to.label': 'まで',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'キャンセル',
@@ -467,11 +467,11 @@ export default removeUndefinedLocaleResources({
   'structure-error.structure-path.label': '構造パス',
 
   /** The aria label for the menu button in the timeline item */
-  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  'timeline-item.menu-button.aria-label': 'アクションメニューを開く',
   /** The text for the tooltip in menu button the timeline item */
-  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  'timeline-item.menu-button.tooltip': 'アクション',
   /** The text for the collapse action in the timeline item menu */
-  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  'timeline-item.menu.action-collapse': '折りたたむ',
   /** The text for the expand action in the timeline item menu */
-  'timeline-item.menu.action-expand': undefined, // 'Expand'
+  'timeline-item.menu.action-expand': '展開',
 })

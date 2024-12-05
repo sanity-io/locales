@@ -353,7 +353,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}}に公開されました',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': '改訂日 <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -655,6 +655,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'エラー: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'ホットスポット & クロップ',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "アセットパイプラインはベクターフォーマットのホットスポットとクロップをサポートしていません。ホットスポットとクロップを有効にするには、この画像をサポートされているラスターフォーマットのいずれかに出力してください。例えば、<ImageUrlDocumentationLink>画像URL</ImageUrlDocumentationLink>に<code>fm=jpg</code>を追加するか、<ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>で<code>.format('png')</code>を呼び出します。",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': '開発者情報を見る',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    '警告：この画像にはホットスポットとクロップが適用されない場合があります。',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code>に変換',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1596,7 +1604,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': '設定ステータス',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': '変更者',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'ドキュメント履歴のトランザクションは影響を受けていません。',
