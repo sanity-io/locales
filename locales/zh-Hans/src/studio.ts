@@ -599,6 +599,13 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': '错误：{{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': '热点 & 裁剪',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "资产管道不支持矢量格式的热点和裁剪。要启用热点和裁剪，请将此图像输出到任何支持的光栅格式。例如：向<ImageUrlDocumentationLink>图像URL</ImageUrlDocumentationLink>添加<code>fm=jpg</code>，或者使用<ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>调用<code>.format('png')</code>。",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': '查看开发者信息',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title': '警告：热点和裁剪可能不会应用于此图像的展示。',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '转换为<code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
