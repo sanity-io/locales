@@ -41,7 +41,7 @@
     "@babel/generator": "^7.26.2",
     "@babel/traverse": "^7.25.9",
     "@babel/types": "^7.26.0",
-    "@sanity/pkg-utils": "^6.11.12",
+    "@sanity/pkg-utils": "^6.11.14",
     "@sanity/vision": "^3.66.0",
     "@types/babel__generator": "^7.6.8",
     "@types/babel__traverse": "^7.20.6",
