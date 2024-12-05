@@ -6,7 +6,7 @@ export default removeUndefinedLocaleResources({
   /** Text above header in Create Link info popover */
   'create-link-info-popover.eyebrow-title': 'Sanity Create',
   /** Header in Create Link info popover */
-  'create-link-info-popover.header': 'Autoria com foco na ideia',
+  'create-link-info-popover.header': 'Autoria orientada por ideias',
   /** Informational text in Create Link info popover */
   'create-link-info-popover.text':
     'Escreva naturalmente em um editor potencializado por IA. Seu conteúdo mapeia automaticamente para os campos do Studio enquanto você digita.',
@@ -47,7 +47,7 @@ export default removeUndefinedLocaleResources({
   'start-in-create-dialog.error-toast.unresolved-url':
     'Não foi possível determinar a URL do Sanity Create.',
   /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Escreva naturalmente, publique estruturado',
+  'start-in-create-dialog.header': 'Escreva naturalmente, publique de forma estruturada',
   /** The lede text in the "Start writing in Create" dialog */
   'start-in-create-dialog.lede':
     'Crie conteúdo do seu jeito em um editor potencializado por IA. O que você escreve mapeia automaticamente para os campos certos no Sanity Studio enquanto digita.',
@@ -66,7 +66,7 @@ export default removeUndefinedLocaleResources({
   'unlink-from-create-dialog.first-paragraph':
     'Você está desvinculando “<strong>{{title}}</strong>” do Sanity Create para que possa ser editado aqui.',
   /** Unlink from Create dialog header */
-  'unlink-from-create-dialog.header': 'Mudar a edição para o Studio?',
+  'unlink-from-create-dialog.header': 'Alterar edição para o Studio?',
   /** Unlink from Create dialog – second informational paragraph */
   'unlink-from-create-dialog.second-paragraph':
     'Você manterá seu conteúdo em ambos os lugares. Quaisquer novas alterações no Sanity Create deixarão de sincronizar com este Studio.',
