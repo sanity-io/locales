@@ -650,6 +650,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': '오류: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': '핫스팟 & 크롭',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "에셋 파이프라인은 벡터 형식에 대한 핫스팟과 크롭을 지원하지 않습니다. 핫스팟 & 크롭을 활성화하려면, 이 이미지를 지원되는 래스터 형식 중 하나로 출력하세요. 예를 들어: <code>fm=jpg</code>를 <ImageUrlDocumentationLink>이미지 URL</ImageUrlDocumentationLink>에 추가하거나 <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>을 사용하여 <code>.format('png')</code>를 호출하세요.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': '개발자 정보 보기',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    '경고: 이 이미지에 핫스팟과 크롭이 적용되지 않을 수 있습니다.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code>(으)로 변환',
   /** The current value (<code>`{{actualType}}`</code>) */
