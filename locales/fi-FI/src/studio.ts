@@ -648,6 +648,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Virhe: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline ei tue hotspot- ja crop-toimintoja vektorigrafiikkaformaatteihin. Ota hotspot & crop käyttöön tulostamalla tämä kuva mihin tahansa tuetuista rasterimuodoista. Esimerkiksi: <code>fm=jpg</code> <ImageUrlDocumentationLink>kuva-URL-osoitteeseen</ImageUrlDocumentationLink> tai kutsu <code>.format('png')</code> käyttäen <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Katso kehittäjän tiedot',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Varoitus: Hotspot ja crop eivät välttämättä tule sovelletuiksi tähän kuvaan, missä sitä esitetään.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Muunna koodiksi <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
