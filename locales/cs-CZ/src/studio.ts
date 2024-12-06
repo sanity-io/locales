@@ -349,7 +349,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publikováno {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Revize od <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -651,11 +651,13 @@ export default removeUndefinedLocaleResources({
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
-  'inputs.imagetool.vector-warning.developer-info': undefined, // 'The Asset Pipeline does not support hotspot and crop for vector formats. To enable hotspot & crop, output this image to any of the supported raster formats. For example: <code>fm=jpg</code> to the <ImageUrlDocumentationLink>image URL</ImageUrlDocumentationLink> or call <code>.format(\'png\')</code> with <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.'
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline nepodporuje hotspot a ořez pro vektorové formáty. Pro povolení hotspotu & ořezu vyexportujte tento obrázek do kteréhokoli podporovaného rastrového formátu. Například: <code>fm=jpg</code> na <ImageUrlDocumentationLink>URL obrázku</ImageUrlDocumentationLink> nebo zavolejte <code>.format('png')</code> s <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': undefined, // 'See developer info'
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Zobrazit informace pro vývojáře',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title': undefined, // 'Warning: Hotspot and crop might not be applied to this image where it\'s presented.'
+  'inputs.imagetool.vector-warning.title':
+    'Upozornění: Hotspot a ořez nemusí být na tomto obrázku aplikovány, kde je prezentován.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Převést na <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1587,7 +1589,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Stav konfigurace',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Změny od',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Transakce historie dokumentu nebyly ovlivněny.',
