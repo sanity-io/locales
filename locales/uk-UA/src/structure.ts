@@ -130,13 +130,13 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Закрити групу панелей',
 
   /** The label used in the changes inspector for the from selector */
-  'changes.from.label': undefined, // 'From'
+  'changes.from.label': 'З',
   /* The label for the history tab in the changes inspector*/
-  'changes.tab.history': undefined, // 'History'
+  'changes.tab.history': 'Історія',
   /* The label for the review tab in the changes inspector*/
-  'changes.tab.review-changes': undefined, // 'Review changes'
+  'changes.tab.review-changes': 'Переглянути зміни',
   /** The label used in the changes inspector for the to selector */
-  'changes.to.label': undefined, // 'To'
+  'changes.to.label': 'До',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Скасувати',
@@ -451,11 +451,11 @@ export default removeUndefinedLocaleResources({
   'structure-error.structure-path.label': 'Шлях структури',
 
   /** The aria label for the menu button in the timeline item */
-  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  'timeline-item.menu-button.aria-label': 'Відкрити меню дій',
   /** The text for the tooltip in menu button the timeline item */
-  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  'timeline-item.menu-button.tooltip': 'Дії',
   /** The text for the collapse action in the timeline item menu */
-  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  'timeline-item.menu.action-collapse': 'Згорнути',
   /** The text for the expand action in the timeline item menu */
-  'timeline-item.menu.action-expand': undefined, // 'Expand'
+  'timeline-item.menu.action-expand': 'Розгорнути',
 })
