@@ -353,7 +353,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}}に公開されました',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': '改訂 <em>{{date}}</em>より',
+  'document-status.revision-from': '改訂日 <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -657,7 +657,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'ホットスポット & クロップ',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "アセットパイプラインはベクターフォーマットのホットスポットとクロップをサポートしていません。ホットスポットとクロップを有効にするには、この画像をサポートされているラスターフォーマットのいずれかに出力してください。例：<code>fm=jpg</code>を<ImageUrlDocumentationLink>画像URL</ImageUrlDocumentationLink>に追加するか、<ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>で<code>.format('png')</code>を呼び出します。",
+    "アセットパイプラインはベクターフォーマットのホットスポットとクロップをサポートしていません。ホットスポットとクロップを有効にするには、この画像をサポートされているラスターフォーマットのいずれかに出力してください。例えば、<ImageUrlDocumentationLink>画像URL</ImageUrlDocumentationLink>に<code>fm=jpg</code>を追加するか、<ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>で<code>.format('png')</code>を呼び出します。",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': '開発者情報を見る',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */

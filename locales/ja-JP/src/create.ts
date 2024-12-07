@@ -21,7 +21,7 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.details':
     'リンクが完了すると、編集内容がリアルタイムでここに表示されます。',
   /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Sanity Createへのリンク',
+  'linking-in-progress-dialog.header': 'Sanity Createへのリンク中',
   /** Lede text for the "Linking in progress" dialog */
   'linking-in-progress-dialog.lede':
     'Sanity Createに戻ってください。ドキュメントは自動的に同期されます（通常は数秒かかります）。',
@@ -65,10 +65,10 @@ export default removeUndefinedLocaleResources({
   'unlink-from-create-dialog.first-paragraph':
     '「<strong>{{title}}</strong>」のSanity Createからのリンクを解除して、ここで編集できるようにします。',
   /** Unlink from Create dialog header */
-  'unlink-from-create-dialog.header': '編集をスタジオに切り替えますか？',
+  'unlink-from-create-dialog.header': '編集を Studio に切り替えますか？',
   /** Unlink from Create dialog – second informational paragraph */
   'unlink-from-create-dialog.second-paragraph':
-    '両方の場所にコンテンツが保持されます。Sanity Createでの新しい変更はこのStudioとの同期を停止します。',
+    '両方の場所にコンテンツが保持されます。Sanity Createでの新しい変更は、このStudioとの同期を停止します。',
   /** Unlink from Create dialog: Unlink button text */
   'unlink-from-create-dialog.unlink.text': '今すぐリンク解除',
 })
