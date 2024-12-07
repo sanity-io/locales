@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.9...locale-da-dk-v1.0.10) (2024-12-07)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
+
 ## [1.0.9](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.8...locale-da-dk-v1.0.9) (2024-11-26)
 
 

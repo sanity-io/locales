@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.15](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.14...locale-de-de-v1.1.15) (2024-12-07)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
+
 ## [1.1.14](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.13...locale-de-de-v1.1.14) (2024-12-05)
 
 
