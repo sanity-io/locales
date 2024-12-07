@@ -139,7 +139,7 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Van',
   /* The label for the history tab in the changes inspector*/
-  'changes.tab.history': 'Geschiedenis',
+  'changes.tab.history': 'Historie',
   /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Wijzigingen beoordelen',
   /** The label used in the changes inspector for the to selector */
