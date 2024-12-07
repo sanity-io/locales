@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.13](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.1.12...locale-pt-pt-v1.1.13) (2024-12-07)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
+
 ## [1.1.12](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.1.11...locale-pt-pt-v1.1.12) (2024-11-26)
 
 
