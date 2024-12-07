@@ -650,11 +650,13 @@ export default removeUndefinedLocaleResources({
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
-  'inputs.imagetool.vector-warning.developer-info': undefined, // 'The Asset Pipeline does not support hotspot and crop for vector formats. To enable hotspot & crop, output this image to any of the supported raster formats. For example: <code>fm=jpg</code> to the <ImageUrlDocumentationLink>image URL</ImageUrlDocumentationLink> or call <code>.format(\'png\')</code> with <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.'
+  'inputs.imagetool.vector-warning.developer-info':
+    "Eignaleiðslan styður ekki heitan reit og afskurð fyrir vektorsnið. Til að virkja heitan reit og afskurð, settu þessa mynd í eitthvað af studdu rastersniðunum. Til dæmis: <code>fm=jpg</code> við <ImageUrlDocumentationLink>myndar-URL</ImageUrlDocumentationLink> eða kallaðu <code>.format('png')</code> með <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': undefined, // 'See developer info'
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Sjá upplýsingar fyrir þróunaraðila',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title': undefined, // 'Warning: Hotspot and crop might not be applied to this image where it\'s presented.'
+  'inputs.imagetool.vector-warning.title':
+    'Viðvörun: Heitur reitur og afskurður geta ekki verið beitt á þessa mynd þar sem hún er sýnd.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Breyta í <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
