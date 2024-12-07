@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.12](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.11...locale-kn-in-v1.0.12) (2024-12-05)
+
+
+### Bug Fixes
+
+* **kn-IN:** automated translation updates ([#789](https://github.com/sanity-io/locales/issues/789)) ([707e30c](https://github.com/sanity-io/locales/commit/707e30ceaea9c7b874042dd8a96c2a37980d477a))
+
 ## [1.0.11](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.10...locale-kn-in-v1.0.11) (2024-11-26)
 
 
