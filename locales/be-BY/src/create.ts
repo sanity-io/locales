@@ -46,7 +46,7 @@ export default removeUndefinedLocaleResources({
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Немагчыма вызначыць URL Sanity Create.',
   /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Пішыце прыродна, публікуйце структуравана',
+  'start-in-create-dialog.header': 'Пішыце натуральна, публікуйце структуравана',
   /** The lede text in the "Start writing in Create" dialog */
   'start-in-create-dialog.lede':
     'Ствараць змест на вашым шляху ў рэдактары з падтрымкай штучнага інтэлекту. Ваша пісьмо аўтаматычна адлюстроўваецца ў адпаведных палях у Sanity Studio, пакуль вы пішаце.',
