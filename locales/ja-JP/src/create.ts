@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.lede':
     'Sanity Createに戻ってください。ドキュメントは自動的に同期されます（通常は数秒かかります）。',
   /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'リンクの作成が遅れていますか？',
+  'linking-in-progress-dialog.troubleshooting.button.title': 'リンキングが遅れていますか？',
   /** "Linking in progress" troubleshooting content */
   'linking-in-progress-dialog.troubleshooting.content':
     'Sanity Createウィンドウがまだ開いているか、プロセスが停止しているかを確認してください。問題が解決しない場合は、スタジオを更新して再試行してください。',
