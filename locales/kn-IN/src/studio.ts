@@ -649,11 +649,13 @@ export default removeUndefinedLocaleResources({
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'ಹಾಟ್‌ಸ್ಪಾಟ್ & ಕ್ರಾಪ್',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
-  'inputs.imagetool.vector-warning.developer-info': undefined, // 'The Asset Pipeline does not support hotspot and crop for vector formats. To enable hotspot & crop, output this image to any of the supported raster formats. For example: <code>fm=jpg</code> to the <ImageUrlDocumentationLink>image URL</ImageUrlDocumentationLink> or call <code>.format(\'png\')</code> with <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.'
+  'inputs.imagetool.vector-warning.developer-info':
+    "ಆಸ್ತಿ ಪೈಪ್‌ಲೈನ್ ವೆಕ್ಟರ್ ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಿಗೆ ಹಾಟ್‌ಸ್ಪಾಟ್ ಮತ್ತು ಕ್ರಾಪ್ ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ಹಾಟ್‌ಸ್ಪಾಟ್ & ಕ್ರಾಪ್ ಸಕ್ರಿಯಗೊಳಿಸಲು, ಈ ಚಿತ್ರವನ್ನು ಬೆಂಬಲಿಸಲಾದ ಯಾವುದೇ ರಾಸ್ಟರ್ ಫಾರ್ಮ್ಯಾಟ್‌ಗಳಿಗೆ ಔಟ್‌ಪುಟ್ ಮಾಡಿ. ಉದಾಹರಣೆಗೆ: <code>fm=jpg</code> ಅನ್ನು <ImageUrlDocumentationLink>ಚಿತ್ರ URL</ImageUrlDocumentationLink>ಗೆ ಸೇರಿಸಿ ಅಥವಾ <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink> ಬಳಸಿಕೊಂಡು <code>.format('png')</code> ಕರೆ ಮಾಡಿ.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': undefined, // 'See developer info'
+  'inputs.imagetool.vector-warning.expand-developer-info': 'ಡೆವಲಪರ್ ಮಾಹಿತಿ ನೋಡಿ',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title': undefined, // 'Warning: Hotspot and crop might not be applied to this image where it\'s presented.'
+  'inputs.imagetool.vector-warning.title':
+    'ಎಚ್ಚರಿಕೆ: ಹಾಟ್‌ಸ್ಪಾಟ್ ಮತ್ತು ಕ್ರಾಪ್ ಈ ಚಿತ್ರಕ್ಕೆ ಅನ್ವಯಿಸಲ್ಪಡಬಹುದು ಎಂದು ಎಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾಗಿದೆಯೋ ಅಲ್ಲಿ ಅನ್ವಯಿಸಲ್ಪಡದಿರಬಹುದು.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'ಪರಿವರ್ತಿಸಿ {{targetType}} ಗೆ',
   /** The current value (<code>`{{actualType}}`</code>) */
