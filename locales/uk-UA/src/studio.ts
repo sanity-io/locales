@@ -339,7 +339,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Опубліковано {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Ревізія з <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -624,11 +624,13 @@ export default removeUndefinedLocaleResources({
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
-  'inputs.imagetool.vector-warning.developer-info': undefined, // 'The Asset Pipeline does not support hotspot and crop for vector formats. To enable hotspot & crop, output this image to any of the supported raster formats. For example: <code>fm=jpg</code> to the <ImageUrlDocumentationLink>image URL</ImageUrlDocumentationLink> or call <code>.format(\'png\')</code> with <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.'
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline не підтримує гарячі точки та обрізання для векторних форматів. Щоб увімкнути гарячі точки та обрізання, виведіть це зображення у будь-якому з підтримуваних растрових форматів. Наприклад: <code>fm=jpg</code> до <ImageUrlDocumentationLink>URL зображення</ImageUrlDocumentationLink> або викличте <code>.format('png')</code> з <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': undefined, // 'See developer info'
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Дивитися інформацію для розробників',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title': undefined, // 'Warning: Hotspot and crop might not be applied to this image where it\'s presented.'
+  'inputs.imagetool.vector-warning.title':
+    'Увага: Гарячі точки та обрізання можуть не бути застосовані до цього зображення, де воно представлене.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Перетворити на {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1543,7 +1545,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Статус конфігурації',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Зміни від',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакції історії документів не були змінені.',
