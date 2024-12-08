@@ -351,7 +351,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publikálva {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Felülvizsgálat ekkortól: <em>{{date}}</em>',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -653,11 +653,13 @@ export default removeUndefinedLocaleResources({
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Vágás',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
-  'inputs.imagetool.vector-warning.developer-info': undefined, // 'The Asset Pipeline does not support hotspot and crop for vector formats. To enable hotspot & crop, output this image to any of the supported raster formats. For example: <code>fm=jpg</code> to the <ImageUrlDocumentationLink>image URL</ImageUrlDocumentationLink> or call <code>.format(\'png\')</code> with <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.'
+  'inputs.imagetool.vector-warning.developer-info':
+    "Az Asset Pipeline nem támogatja a hotspot és a crop funkciókat vektor formátumokhoz. A hotspot & crop engedélyezéséhez jelenítse meg ezt a képet bármelyik támogatott raszter formátumban. Például: <code>fm=jpg</code> az <ImageUrlDocumentationLink>kép URL-jéhez</ImageUrlDocumentationLink> vagy hívja meg a <code>.format('png')</code> funkciót a <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink> használatával.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': undefined, // 'See developer info'
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Fejlesztői információ megtekintése',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title': undefined, // 'Warning: Hotspot and crop might not be applied to this image where it\'s presented.'
+  'inputs.imagetool.vector-warning.title':
+    'Figyelmeztetés: A hotspot és a crop nem biztos, hogy alkalmazva lesz erre a képre, ahol megjelenik.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Átalakítás erre: {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1594,7 +1596,7 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Konfiguráció állapota',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Változtatások szerzője',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'A dokumentum előzmény tranzakciói nem érintettek.',
