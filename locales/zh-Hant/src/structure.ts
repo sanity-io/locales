@@ -122,13 +122,13 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': '關閉窗格組',
 
   /** The label used in the changes inspector for the from selector */
-  'changes.from.label': undefined, // 'From'
+  'changes.from.label': '從',
   /* The label for the history tab in the changes inspector*/
-  'changes.tab.history': undefined, // 'History'
+  'changes.tab.history': '歷史',
   /* The label for the review tab in the changes inspector*/
-  'changes.tab.review-changes': undefined, // 'Review changes'
+  'changes.tab.review-changes': '審查變更',
   /** The label used in the changes inspector for the to selector */
-  'changes.to.label': undefined, // 'To'
+  'changes.to.label': '到',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': '取消',
@@ -430,11 +430,11 @@ export default removeUndefinedLocaleResources({
   'structure-error.structure-path.label': '結構路徑',
 
   /** The aria label for the menu button in the timeline item */
-  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  'timeline-item.menu-button.aria-label': '開啟操作菜單',
   /** The text for the tooltip in menu button the timeline item */
-  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  'timeline-item.menu-button.tooltip': '操作',
   /** The text for the collapse action in the timeline item menu */
-  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  'timeline-item.menu.action-collapse': '折疊',
   /** The text for the expand action in the timeline item menu */
-  'timeline-item.menu.action-expand': undefined, // 'Expand'
+  'timeline-item.menu.action-expand': '展開',
 })
