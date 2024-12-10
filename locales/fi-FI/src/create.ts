@@ -31,26 +31,22 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Tarkista, onko Sanity Create -ikkunasi edelleen auki, tai vaikuttaako prosessi jumittuneelta. Jos ongelmia jatkuu, yritä päivittää Studio ja yritä uudelleen.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Aloita Sanity Createssa',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Vapaa muotoinen, tekoälyllä varustettu editori, joka synkronoituu suoraan Studio-dokumentteihisi.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Aloita käyttö Sanity Createssa',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Aikainen pääsy',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Jatka',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Lue lisää',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Tämä avautuu uudessa ikkunassa, linkitettynä suoraan tähän dokumenttiin.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Älä muistuta minua uudelleen',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url':
     'Sanity Create URL-osoitetta ei voitu määrittää.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Kirjoita luonnollisesti, julkaise rakenteisesti',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Luo sisältöä omalla tavallasi tekoälyä hyödyntävässä editorissa. Kirjoituksesi kartoittuvat automaattisesti oikeisiin kenttiin Sanity Studiossa kirjoittaessasi.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Aloita Createssa',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Tämä dokumentti on linkitetty Sanity Createen',
