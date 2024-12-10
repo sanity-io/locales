@@ -29,24 +29,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     '检查您的Sanity Create窗口是否仍然打开，或者进程是否看起来卡住了。如果问题持续存在，请尝试刷新Studio然后再试。',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': '在Sanity Create中开始',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    '一个自由形式的、AI驱动的编辑器，可以直接与您的Studio文档同步。',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': '开始使用Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': '早期访问',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': '继续',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': '了解更多',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details': '这将在新窗口中打开，直接链接到此文档。',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': '不再提醒我',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': '无法确定Sanity Create的URL。',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': '自然书写，结构化发布',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    '在AI驱动的编辑器中以您的方式创建内容。您的写作会自动映射到Sanity Studio中的正确字段。',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': '在Create中开始',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': '此文档已链接到Sanity Create',
