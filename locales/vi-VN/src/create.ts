@@ -31,25 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Kiểm tra xem cửa sổ Sanity Create của bạn có còn mở không, hoặc nếu quá trình có vẻ bị kẹt. Nếu vấn đề vẫn tiếp tục, hãy thử làm mới Studio và thử lại.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Bắt đầu với Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Một trình soạn thảo tự do, được hỗ trợ bởi AI đồng bộ trực tiếp với tài liệu Studio của bạn.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Bắt đầu với Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Truy cập sớm',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Tiếp tục',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Tìm hiểu thêm',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Điều này mở trong một cửa sổ mới, liên kết trực tiếp đến tài liệu này.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Không nhắc lại lần nữa',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Không thể xác định URL của Sanity Create.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Viết một cách tự nhiên, xuất bản có cấu trúc',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Tạo nội dung theo cách của bạn trong trình soạn thảo được hỗ trợ bởi AI. Việc viết của bạn tự động được ánh xạ vào các trường đúng trong Sanity Studio khi bạn đánh máy.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Bắt đầu với Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Tài liệu này được liên kết với Sanity Create',
