@@ -31,24 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'ตรวจสอบว่าหน้าต่าง Sanity Create ของคุณยังเปิดอยู่หรือไม่ หรือถ้ากระบวนการดูเหมือนจะหยุดนิ่ง หากปัญหายังคงอยู่ ลองรีเฟรช Studio และลองอีกครั้ง',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'เริ่มใน Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'เครื่องมือแก้ไขแบบอิสระที่ใช้ AI ซึ่งสามารถซิงค์โดยตรงกับเอกสารใน Studio ของคุณ',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'เริ่มต้นใช้งาน Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'การเข้าถึงระยะต้น',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'ดำเนินการต่อ',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'เรียนรู้เพิ่มเติม',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details': 'สิ่งนี้จะเปิดในหน้าต่างใหม่ โดยเชื่อมโยงโดยตรงกับเอกสารนี้',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'อย่าเตือนฉันอีก',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'ไม่สามารถกำหนด URL ของ Sanity Create ได้',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'เขียนอย่างเป็นธรรมชาติ, ประกาศเผยแพร่อย่างมีโครงสร้าง',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'สร้างคอนเทนต์ตามที่คุณต้องการในเครื่องมือแก้ไขที่ขับเคลื่อนด้วย AI การเขียนของคุณจะถูกจับคู่กับฟิลด์ที่ถูกต้องใน Sanity Studio ขณะที่คุณพิมพ์',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'เริ่มใช้งาน Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'เอกสารนี้ถูกเชื่อมโยงกับ Sanity Create',
