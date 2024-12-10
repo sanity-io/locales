@@ -31,24 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Sanity Create 창이 여전히 열려 있는지, 또는 프로세스가 멈춘 것 같은지 확인하세요. 문제가 지속되면, Studio를 새로고침하고 다시 시도하세요.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Sanity Create에서 시작',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    '스튜디오 문서와 직접 동기화되는 자유 형식의 AI 기반 편집기입니다.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Sanity Create 시작하기',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': '초기 접근',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': '계속',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': '더 알아보기',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details': '이것은 새 창에서 열리며, 이 문서에 직접 연결됩니다.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': '다시 알리지 마세요',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Sanity Create URL을 확인할 수 없습니다.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': '자연스럽게 작성하고, 구조화하여 출판하세요',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'AI 기반 편집기에서 원하는 방식으로 콘텐츠를 만드세요. 작성하신 내용이 입력하면서 자동으로 Sanity Studio의 올바른 필드에 매핑됩니다.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Create에서 시작하기',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': '이 문서는 Sanity Create에 연결되어 있습니다',
