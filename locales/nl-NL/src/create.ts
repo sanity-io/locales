@@ -31,25 +31,20 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Controleer of je Sanity Create venster nog open is, of als het proces vast lijkt te zitten. Als problemen aanhouden, probeer de Studio te verversen en probeer opnieuw.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Begin in Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle': undefined, // 'A free-form, AI-powered editor that syncs directly with your Studio documents.'
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': undefined, // 'Get started with Sanity Create'
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': undefined, // 'Early access'
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Doorgaan',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Meer leren',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Dit opent in een nieuw venster, direct gekoppeld aan dit document.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Herinner mij hier niet meer aan',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Kan de URL van Sanity Create niet bepalen.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Schrijf op natuurlijke wijze, publiceer gestructureerd',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Creëer inhoud op jouw manier in een door AI aangedreven editor. Je schrijfwerk wordt automatisch gekoppeld aan de juiste velden in Sanity Studio terwijl je typt.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': undefined, // 'Start in Create'
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Dit document is gekoppeld aan Sanity Create',
