@@ -31,24 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Athugaðu hvort Sanity Create glugginn þinn er enn opinn, eða ef ferlið virðist vera fast. Ef vandamál viðvarandi, reyndu að endurnýja Studio og reyndu aftur.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Byrja í Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Frjáls form ritill, knúinn af gervigreind sem samstillist beint við skjöl Studio þíns.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Byrjaðu með Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Snemmtækur aðgangur',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Halda áfram',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Lærðu meira',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details': 'Þetta opnast í nýjum glugga, tengt beint við þetta skjal.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Ekki minna mig á aftur',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Ekki hægt að ákvarða Sanity Create URL.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Skrifaðu eðlilega, birtu skipulagt',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Búðu til efni á þinn hátt í gervigreindarstuddum ritli. Það sem þú skrifar kortleggst sjálfkrafa á réttu reitina í Sanity Studio þegar þú skrifar.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Byrjaðu í Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Þetta skjal er tengt við Sanity Create',
