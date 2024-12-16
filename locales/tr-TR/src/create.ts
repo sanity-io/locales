@@ -31,24 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     "Sanity Create pencerenizin hala açık olup olmadığını kontrol edin veya sürecin takılıp takılmadığını kontrol edin. Sorunlar devam ederse, Studio'yu yenileyin ve tekrar deneyin.",
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': "Sanity Create'de Başla",
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Stüdyo belgelerinizle doğrudan senkronize olan serbest formda, AI destekli bir düzenleyici.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Sanity Create ile başlayın',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Erken erişim',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Devam et',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Daha fazla öğren',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details': 'Bu, bu belgeye doğrudan bağlı yeni bir pencerede açılır.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Bir daha hatırlatma',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': "Sanity Create URL'si belirlenemiyor.",
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Doğal yaz, yapılandırılmış yayınla',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Yapay zeka destekli bir editörde kendi yolunuzda içerik oluşturun. Yazdıklarınız yazarken doğru alanlara otomatik olarak eşlenir.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': "Create'de Başla",
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Bu belge Sanity Create ile bağlantılıdır',
