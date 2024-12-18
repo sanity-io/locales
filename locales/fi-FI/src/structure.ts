@@ -171,6 +171,9 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokumentin ID',
   /** The toast title when the copy button has been clicked */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Dokumentin ID kopioitu leikepöydälle!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Asiakirjan ID:n kopioiminen epäonnistui',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'Projektin ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
