@@ -170,6 +170,9 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID dokumenta',
   /** The toast title when the copy button has been clicked */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Kopiran ID dokumenta u međuspremnik!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Kopiranje ID-a dokumenta nije uspjelo',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ID projekta',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */

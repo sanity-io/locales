@@ -31,25 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Provjerite je li vaš prozor Sanity Create još uvijek otvoren, ili ako se proces čini zaglavljenim. Ako problemi i dalje postoje, pokušajte osvježiti Studio i pokušajte ponovno.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Započnite u Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Slobodno oblikovan, AI-pokretan urednik koji se izravno sinkronizira s vašim Studio dokumentima.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Započnite s Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Rani pristup',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Nastavite',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Saznajte više',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Ovo se otvara u novom prozoru, izravno povezanom s ovim dokumentom.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Ne podsjećaj me ponovno',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Nije moguće odrediti URL za Sanity Create.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Pišite prirodno, objavljujte strukturirano',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Stvarajte sadržaj na svoj način u AI-pokretanom uređivaču. Vaše pisanje se automatski mapira na prava polja u Sanity Studiju dok tipkate.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Započnite u Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Ovaj dokument je povezan sa Sanity Create',
