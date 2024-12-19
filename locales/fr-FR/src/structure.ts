@@ -172,6 +172,9 @@ export default removeUndefinedLocaleResources({
   /** The toast title when the copy button has been clicked */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title':
     'ID du document copié dans le presse-papiers !',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    "Échec de la copie de l'ID du document",
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ID du projet',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
