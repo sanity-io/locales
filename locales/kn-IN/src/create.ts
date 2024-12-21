@@ -31,25 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'ನಿಮ್ಮ Sanity Create ವಿಂಡೋ ಇನ್ನೂ ತೆರೆದಿದೆಯೇ ಅಥವಾ ಪ್ರಕ್ರಿಯೆ ಸ್ಥಗಿತವಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ. ಸಮಸ್ಯೆಗಳು ಮುಂದುವರಿದರೆ, Studio ಅನ್ನು ಮರುತಾಜಾಗೊಳಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Sanity Create ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'ನಿಮ್ಮ ಸ್ಟುಡಿಯೋ ದಾಖಲೆಗಳೊಂದಿಗೆ ನೇರವಾಗಿ ಸಿಂಕ್ ಆಗುವ, ಉಚಿತ-ರೂಪ, ಏಐ-ಶಕ್ತಿಯುತ ಸಂಪಾದಕ.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'ಸ್ಯಾನಿಟಿ ಕ್ರಿಯೇಟ್‌ನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಿ',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'ಪ್ರಾರಂಭಿಕ ಪ್ರವೇಶ',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'ಮುಂದುವರಿಸಿ',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'ಇದು ಹೊಸ ವಿಂಡೋವನ್ನು ತೆರೆಯುತ್ತದೆ, ನೇರವಾಗಿ ಈ ದಾಖಲೆಗೆ ಲಿಂಕ್ ಮಾಡಲಾಗಿದೆ.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'ಮತ್ತೆ ನೆನಪಿಸಬೇಡಿ',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Sanity Create URL ನಿರ್ಧಾರಿಸಲು ಅಸಾಧ್ಯ.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'ಸಹಜವಾಗಿ ಬರೆಯಿರಿ, ಸಂರಚಿತವಾಗಿ ಪ್ರಕಟಿಸಿ',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'AI-ಶಕ್ತಿಯುತ ಸಂಪಾದಕದಲ್ಲಿ ನಿಮ್ಮ ರೀತಿಯಲ್ಲಿ ವಿಷಯವನ್ನು ಸೃಷ್ಟಿಸಿ. ನೀವು ಟೈಪ್ ಮಾಡುವಂತೆಯೇ ನಿಮ್ಮ ಬರವಣಿಗೆಯು Sanity Studio ನಲ್ಲಿ ಸರಿಯಾದ ಕ್ಷೇತ್ರಗಳಿಗೆ ಅನುಸರಿಸುತ್ತದೆ.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'ಕ್ರಿಯೇಟ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'ಈ ದಾಖಲೆಯು Sanity Create ಗೆ ಲಿಂಕ್ ಮಾಡಲಾಗಿದೆ',
