@@ -31,25 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Перевірте, чи вікно Sanity Create все ще відкрите, або чи процес здається застряглим. Якщо проблеми не зникають, спробуйте оновити Studio та спробуйте знову.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Почати в Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Безкоштовний редактор з підтримкою штучного інтелекту, який синхронізується безпосередньо з вашими документами в Studio.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Розпочніть роботу з Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Доступ до ранньої версії',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Продовжити',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Дізнатися більше',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    "Це відкриється у новому вікні, прямо пов'язаному з цим документом.",
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Більше не нагадувати',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Не вдалося визначити URL Sanity Create.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Пишіть природно, публікуйте структуровано',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Створюйте контент своїм шляхом в редакторі з підтримкою штучного інтелекту. Ваші тексти автоматично відображатимуться у відповідних полях в Sanity Studio, коли ви пишете.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Розпочати в Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': "Цей документ зв'язаний з Sanity Create",
