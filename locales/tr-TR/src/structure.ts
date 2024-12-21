@@ -168,6 +168,8 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.document-id.label': 'Belge Kimliği',
   /** The toast title when the copy button has been clicked */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Belge kimliği panoya kopyalandı!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'Belge kimliği kopyalanamadı',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'Proje Kimliği',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
