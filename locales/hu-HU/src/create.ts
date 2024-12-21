@@ -31,26 +31,22 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Ellenőrizze, hogy a Sanity Create ablaka még nyitva van-e, vagy hogy a folyamat elakadt-e. Ha a problémák továbbra is fennállnak, próbálja meg frissíteni a Studiót és próbálkozzon újra.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Kezdés a Sanity Create-ben',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Egy szabad formátumú, AI által vezérelt szerkesztő, amely közvetlenül szinkronizál a Stúdió dokumentumaival.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Kezdj el használni a Sanity Create-t',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Korai hozzáférés',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Folytatás',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Tudj meg többet',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Ez egy új ablakban nyílik meg, közvetlenül ehhez a dokumentumhoz kapcsolva.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Ne emlékeztessen újra',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url':
     'Nem sikerült meghatározni a Sanity Create URL-t.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Írjon természetesen, publikáljon strukturáltan',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Hozzon létre tartalmat a maga módján egy AI által hajtott szerkesztőben. Az írása automatikusan a megfelelő mezőkhöz rendelődik a Sanity Studio-ban, ahogy ír.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Kezdés a Create-ben',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Ez a dokumentum a Sanity Create-hez van kapcsolva',
