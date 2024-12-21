@@ -31,26 +31,22 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Verifique se a janela do Sanity Create ainda está aberta, ou se o processo parece estar travado. Se os problemas persistirem, tente atualizar o Studio e tente novamente.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Começar no Sanity Create',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Um editor livre, alimentado por IA, que sincroniza diretamente com seus documentos do Studio.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Comece a usar o Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Acesso antecipado',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Continuar',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Saiba mais',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Isso abre em uma nova janela, vinculada diretamente a este documento.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Não me lembre novamente',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url':
     'Não foi possível determinar a URL do Sanity Create.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Escreva naturalmente, publique de forma estruturada',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Crie conteúdo do seu jeito em um editor potencializado por IA. O que você escreve mapeia automaticamente para os campos certos no Sanity Studio enquanto digita.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Começar no Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Este documento está vinculado ao Sanity Create',
