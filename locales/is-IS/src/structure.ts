@@ -169,6 +169,9 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.document-id.label': 'Auðkenni skjals',
   /** The toast title when the copy button has been clicked */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Afritað aðkenni skjals á klippiborð!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Mistókst að afrita skjalaauðkenni',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'Auðkenni verkefnis',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
