@@ -33,7 +33,7 @@ export default removeUndefinedLocaleResources({
 
   /** Subtitle of the "Start writing in Create" banner */
   'start-in-create-banner.subtitle':
-    'Ein freiformiger, KI-gestützter Editor, der direkt mit Ihren Studio-Dokumenten synchronisiert.',
+    'Ein flexibler, KI-gestützter Editor, der direkt mit Ihren Studio-Dokumenten synchronisiert.',
   /** Header of the "Start writing in Create" banner */
   'start-in-create-banner.title': 'Beginnen Sie mit Sanity Create',
   /** Header badge of the "Start writing in Create" banner */
@@ -46,7 +46,7 @@ export default removeUndefinedLocaleResources({
     'Sanity Create URL konnte nicht ermittelt werden.',
 
   /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'In Create beginnen',
+  'start-in-create-link.label': 'In Sanity Create beginnen',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Dieses Dokument ist mit Sanity Create verknüpft',
