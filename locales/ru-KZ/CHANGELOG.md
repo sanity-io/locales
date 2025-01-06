@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.14](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.13...locale-ru-kz-v1.1.14) (2025-01-06)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#861](https://github.com/sanity-io/locales/issues/861)) ([e9f7448](https://github.com/sanity-io/locales/commit/e9f7448460b48fc803bd6604aada91630348ab95))
+* **ru-KZ:** automated translation updates ([#797](https://github.com/sanity-io/locales/issues/797)) ([ac75895](https://github.com/sanity-io/locales/commit/ac75895d70c52a28d528279185657f7578f9b9fe))
+* **ru-KZ:** automated translation updates ([#880](https://github.com/sanity-io/locales/issues/880)) ([5c04a6f](https://github.com/sanity-io/locales/commit/5c04a6f1a67acd2e0bda8a05328a5d4e786c54ee))
+
 ## [1.1.13](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.12...locale-ru-kz-v1.1.13) (2024-12-07)
 
 
