@@ -37,7 +37,7 @@ export default removeUndefinedLocaleResources({
   /** Header of the "Start writing in Create" banner */
   'start-in-create-banner.title': 'Byrjaðu með Sanity Create',
   /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Snemmtæk aðgangur',
+  'start-in-create-banner.title-badge': 'Snemmtækur aðgangur',
 
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Lærðu meira',
