@@ -31,25 +31,21 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Sanity Createウィンドウがまだ開いているか、プロセスが停止しているかを確認してください。問題が解決しない場合は、スタジオを更新して再試行してください。',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'Sanity Createで開始',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'スタジオドキュメントと直接同期する自由形式のAIパワードエディター。',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Sanity Createで始めよう',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'アーリーアクセス',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': '続ける',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': '詳細を学ぶ',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'これは新しいウィンドウで開き、このドキュメントに直接リンクされます。',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': '再度通知しない',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url': 'Sanity CreateのURLを特定できません。',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': '自然に書いて、構造化して公開',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'AIパワードエディターであなたの方法でコンテンツを作成します。あなたがタイプすると、ライティングは自動的にSanity Studioの適切なフィールドにマッピングされます。',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'Sanity Createで始める',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'このドキュメントはSanity Createにリンクされています',
