@@ -45,7 +45,7 @@ export default removeUndefinedLocaleResources({
   'start-in-create-dialog.error-toast.unresolved-url': 'Sanity CreateのURLを特定できません。',
 
   /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Createで始める',
+  'start-in-create-link.label': 'Sanity Createで始める',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'このドキュメントはSanity Createにリンクされています',
