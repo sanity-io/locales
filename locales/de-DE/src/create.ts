@@ -31,26 +31,22 @@ export default removeUndefinedLocaleResources({
   'linking-in-progress-dialog.troubleshooting.content':
     'Überprüfen Sie, ob Ihr Sanity Create-Fenster noch geöffnet ist oder ob der Prozess hängt. Wenn Probleme bestehen bleiben, versuchen Sie, das Studio zu aktualisieren und es erneut zu versuchen.',
 
-  /** "Start in Sanity Create" action button text */
-  'start-in-create-action.label': 'In Sanity Create beginnen',
+  /** Subtitle of the "Start writing in Create" banner */
+  'start-in-create-banner.subtitle':
+    'Ein flexibler, KI-gestützter Editor, der direkt mit Ihren Studio-Dokumenten synchronisiert.',
+  /** Header of the "Start writing in Create" banner */
+  'start-in-create-banner.title': 'Beginnen Sie mit Sanity Create',
+  /** Header badge of the "Start writing in Create" banner */
+  'start-in-create-banner.title-badge': 'Früher Zugang',
 
-  /** CTA in "Start writing in Create" dialog: Continue to create */
-  'start-in-create-dialog.cta.continue': 'Fortsetzen',
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Erfahren Sie mehr',
-  /** The details on what "Start writing in Create" implies */
-  'start-in-create-dialog.details':
-    'Dies öffnet sich in einem neuen Fenster, das direkt mit diesem Dokument verknüpft ist.',
-  /** Text for checkbox in "Start writing in Create" dialog for disabling the dialog in the future */
-  'start-in-create-dialog.dont-remind-me-checkbox': 'Nicht mehr erinnern',
   /** Toast error message when we dont have a resolved Sanity Create url*/
   'start-in-create-dialog.error-toast.unresolved-url':
     'Sanity Create URL konnte nicht ermittelt werden.',
-  /** Header of the "Start writing in Create" dialog */
-  'start-in-create-dialog.header': 'Natürlich schreiben, strukturiert veröffentlichen',
-  /** The lede text in the "Start writing in Create" dialog */
-  'start-in-create-dialog.lede':
-    'Erstellen Sie Inhalte auf Ihre Weise in einem KI-gesteuerten Editor. Ihr Schreiben wird automatisch den richtigen Feldern im Sanity Studio zugeordnet, während Sie tippen.',
+
+  /** "Start in Sanity Create" link button text */
+  'start-in-create-link.label': 'In Sanity Create beginnen',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Dieses Dokument ist mit Sanity Create verknüpft',
