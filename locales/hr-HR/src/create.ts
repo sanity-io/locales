@@ -33,7 +33,7 @@ export default removeUndefinedLocaleResources({
 
   /** Subtitle of the "Start writing in Create" banner */
   'start-in-create-banner.subtitle':
-    'Slobodno oblikovan, AI-pokretan urednik koji se izravno sinkronizira s vašim Studio dokumentima.',
+    'Slobodno oblikovan, AI-pokretan urednik koji se izravno sinkronizira s vašim dokumentima u Sanity Studiu.',
   /** Header of the "Start writing in Create" banner */
   'start-in-create-banner.title': 'Započnite s Sanity Create',
   /** Header badge of the "Start writing in Create" banner */
@@ -45,7 +45,7 @@ export default removeUndefinedLocaleResources({
   'start-in-create-dialog.error-toast.unresolved-url': 'Nije moguće odrediti URL za Sanity Create.',
 
   /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Započnite u Create',
+  'start-in-create-link.label': 'Započnite u Sanity Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Ovaj dokument je povezan sa Sanity Create',
