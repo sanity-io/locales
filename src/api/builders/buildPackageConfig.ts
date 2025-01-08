@@ -4,7 +4,6 @@ export function buildPackageConfig(): string {
 
   export default defineConfig({
     tsconfig: '../../tsconfig.locale.json',
-    minify: false,
-  })
+    })
   `
 }
