@@ -32,18 +32,18 @@
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "matchPackagePatterns": ["*"],
-      "excludePackageNames": [
-        "@sanity/icons",
-        "@sanity/presentation",
-        "@sanity/ui",
-        "@sanity/vision",
-        "groq",
-        "sanity"
-      ],
       "semanticCommitType": "chore",
       "schedule": ["before 3am on Monday"],
-      "automerge": false
+      "automerge": false,
+      "matchPackageNames": [
+        "*",
+        "!@sanity/icons",
+        "!@sanity/presentation",
+        "!@sanity/ui",
+        "!@sanity/vision",
+        "!groq",
+        "!sanity"
+      ]
     },
     {
       "matchPackageNames": ["sanity"],
