@@ -18,8 +18,8 @@ importers:
         specifier: ^7.26.5
         version: 7.26.5
       '@sanity/pkg-utils':
-        specifier: ^6.13.4
-        version: 6.13.4(@types/babel__core@7.20.5)(@types/node@18.19.70)(debug@4.3.5)(typescript@5.7.2)
+        specifier: ^7.0.1
+        version: 7.0.1(@types/babel__core@7.20.5)(@types/node@18.19.70)(typescript@5.7.2)
       '@sanity/vision':
         specifier: ^3.69.0
         version: 3.69.0(@babel/runtime@7.24.8)(@codemirror/lint@6.8.1)(@codemirror/theme-one-dark@6.1.2)(@emotion/is-prop-valid@1.2.2)(@lezer/common@1.2.1)(codemirror@6.0.1(@lezer/common@1.2.1))(react-dom@19.0.0(react@19.0.0))(react-is@19.0.0)(react@19.0.0)(styled-components@6.1.14(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
@@ -1967,8 +1967,15 @@ packages:
   '@microsoft/api-extractor-model@7.30.1':
     resolution: {integrity: sha512-CTS2PlASJHxVY8hqHORVb1HdECWOEMcMnM6/kDkPr0RZapAFSIHhg9D4jxuE8g+OWYHtPc10LCpmde5pylTRlA==}
 
+  '@microsoft/api-extractor-model@7.30.2':
+    resolution: {integrity: sha512-3/t2F+WhkJgBzSNwlkTIL0tBgUoBqDqL66pT+nh2mPbM0NIDGVGtpqbGWPgHIzn/mn7kGS/Ep8D8po58e8UUIw==}
+
   '@microsoft/api-extractor@7.48.1':
     resolution: {integrity: sha512-HN9Osa1WxqLM66RaqB5nPAadx+nTIQmY/XtkFdaJvusjG8Tus++QqZtD7KPZDSkhEMGHsYeSyeU8qUzCDUXPjg==}
+    hasBin: true
+
+  '@microsoft/api-extractor@7.49.1':
+    resolution: {integrity: sha512-jRTR/XbQF2kb+dYn8hfYSicOGA99+Fo00GrsdMwdfE3eIgLtKdH6Qa2M3wZV9S2XmbgCaGX1OdPtYctbfu5jQg==}
     hasBin: true
 
   '@microsoft/tsdoc-config@0.17.1':
@@ -2405,6 +2412,14 @@ packages:
       '@types/node':
         optional: true
 
+  '@rushstack/node-core-library@5.10.2':
+    resolution: {integrity: sha512-xOF/2gVJZTfjTxbo4BDj9RtQq/HFnrrKdtem4JkyRLnwsRz2UDTg8gA1/et10fBx5RxmZD9bYVGST69W8ME5OQ==}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@rushstack/rig-package@0.5.3':
     resolution: {integrity: sha512-olzSSjYrvCNxUFZowevC3uz8gvKr3WTpHQ7BkpjtRpA3wK+T0ybep/SRUMfr195gBzJm5gaXw0ZMgjIyHqJUow==}
 
@@ -2416,8 +2431,19 @@ packages:
       '@types/node':
         optional: true
 
+  '@rushstack/terminal@0.14.5':
+    resolution: {integrity: sha512-TEOpNwwmsZVrkp0omnuTUTGZRJKTr6n6m4OITiNjkqzLAkcazVpwR1SOtBg6uzpkIBLgrcNHETqI8rbw3uiUfw==}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@rushstack/ts-command-line@4.23.2':
     resolution: {integrity: sha512-JJ7XZX5K3ThBBva38aomgsPv1L7FV6XmSOcR6HtM7HDFZJkepqT65imw26h9ggGqMjsY0R9jcl30tzKcVj9aOQ==}
+
+  '@rushstack/ts-command-line@4.23.3':
+    resolution: {integrity: sha512-HazKL8fv4HMQMzrKJCrOrhyBPPdzk7iajUXgsASwjQ8ROo1cmgyqxt/k9+SdmrNLGE1zATgRqMUH3s/6smbRMA==}
 
   '@sanity/asset-utils@1.3.0':
     resolution: {integrity: sha512-uyIOtGA4Duf+68I3BSbYHY5P+WGftn3QtNJD2Pn7h9WPGYsSrWViIPebE9yRN8N0NHhYj+hDQXaMpVdjG7r+zA==}
@@ -2576,6 +2602,17 @@ packages:
 
   '@sanity/pkg-utils@6.13.4':
     resolution: {integrity: sha512-m4x0qyu2wiUHKuVxy/B2kcQRh20RvsyvUlUjPbiM5ENt4hwpJPLFfxtPe53GOCf3NJfcSK/te4yQkMOyL8RzAA==}
+    engines: {node: '>=18.17.0'}
+    hasBin: true
+    peerDependencies:
+      babel-plugin-react-compiler: '*'
+      typescript: 5.4.x || 5.5.x || 5.6.x || 5.7.x
+    peerDependenciesMeta:
+      babel-plugin-react-compiler:
+        optional: true
+
+  '@sanity/pkg-utils@7.0.1':
+    resolution: {integrity: sha512-c65oXA0st+tGVsywu1Lwf7qXHWJgFQnsSe5lFL8pi6xiMi1sX357Ztchj0Bq2RaiehX108BSdK/trSaCmw0xSQ==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
@@ -6767,7 +6804,7 @@ snapshots:
       '@babel/helper-compilation-targets': 7.25.9
       '@babel/helper-module-transforms': 7.26.0(@babel/core@7.26.0)
       '@babel/helpers': 7.26.0
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.26.5
       '@babel/template': 7.25.9
       '@babel/traverse': 7.26.5
       '@babel/types': 7.26.5
@@ -8925,6 +8962,14 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
+  '@microsoft/api-extractor-model@7.30.2(@types/node@18.19.70)':
+    dependencies:
+      '@microsoft/tsdoc': 0.15.1
+      '@microsoft/tsdoc-config': 0.17.1
+      '@rushstack/node-core-library': 5.10.2(@types/node@18.19.70)
+    transitivePeerDependencies:
+      - '@types/node'
+
   '@microsoft/api-extractor@7.48.1(@types/node@18.19.70)':
     dependencies:
       '@microsoft/api-extractor-model': 7.30.1(@types/node@18.19.70)
@@ -8958,6 +9003,24 @@ snapshots:
       semver: 7.5.4
       source-map: 0.6.1
       typescript: 5.4.2
+    transitivePeerDependencies:
+      - '@types/node'
+
+  '@microsoft/api-extractor@7.49.1(@types/node@18.19.70)':
+    dependencies:
+      '@microsoft/api-extractor-model': 7.30.2(@types/node@18.19.70)
+      '@microsoft/tsdoc': 0.15.1
+      '@microsoft/tsdoc-config': 0.17.1
+      '@rushstack/node-core-library': 5.10.2(@types/node@18.19.70)
+      '@rushstack/rig-package': 0.5.3
+      '@rushstack/terminal': 0.14.5(@types/node@18.19.70)
+      '@rushstack/ts-command-line': 4.23.3(@types/node@18.19.70)
+      lodash: 4.17.21
+      minimatch: 3.0.8
+      resolve: 1.22.8
+      semver: 7.5.4
+      source-map: 0.6.1
+      typescript: 5.7.2
     transitivePeerDependencies:
       - '@types/node'
 
@@ -9363,6 +9426,19 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.11
 
+  '@rushstack/node-core-library@5.10.2(@types/node@18.19.70)':
+    dependencies:
+      ajv: 8.13.0
+      ajv-draft-04: 1.0.0(ajv@8.13.0)
+      ajv-formats: 3.0.1(ajv@8.13.0)
+      fs-extra: 7.0.1
+      import-lazy: 4.0.0
+      jju: 1.4.0
+      resolve: 1.22.8
+      semver: 7.5.4
+    optionalDependencies:
+      '@types/node': 18.19.70
+
   '@rushstack/rig-package@0.5.3':
     dependencies:
       resolve: 1.22.8
@@ -9382,6 +9458,13 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.11
 
+  '@rushstack/terminal@0.14.5(@types/node@18.19.70)':
+    dependencies:
+      '@rushstack/node-core-library': 5.10.2(@types/node@18.19.70)
+      supports-color: 8.1.1
+    optionalDependencies:
+      '@types/node': 18.19.70
+
   '@rushstack/ts-command-line@4.23.2(@types/node@18.19.70)':
     dependencies:
       '@rushstack/terminal': 0.14.4(@types/node@18.19.70)
@@ -9394,6 +9477,15 @@ snapshots:
   '@rushstack/ts-command-line@4.23.2(@types/node@20.14.11)':
     dependencies:
       '@rushstack/terminal': 0.14.4(@types/node@20.14.11)
+      '@types/argparse': 1.0.38
+      argparse: 1.0.10
+      string-argv: 0.3.2
+    transitivePeerDependencies:
+      - '@types/node'
+
+  '@rushstack/ts-command-line@4.23.3(@types/node@18.19.70)':
+    dependencies:
+      '@rushstack/terminal': 0.14.5(@types/node@18.19.70)
       '@types/argparse': 1.0.38
       argparse: 1.0.10
       string-argv: 0.3.2
@@ -9904,6 +9996,56 @@ snapshots:
       - debug
       - supports-color
 
+  '@sanity/pkg-utils@7.0.1(@types/babel__core@7.20.5)(@types/node@18.19.70)(typescript@5.7.2)':
+    dependencies:
+      '@babel/core': 7.26.0
+      '@babel/preset-typescript': 7.26.0(@babel/core@7.26.0)
+      '@babel/types': 7.26.5
+      '@microsoft/api-extractor': 7.49.1(@types/node@18.19.70)
+      '@microsoft/tsdoc-config': 0.17.1
+      '@optimize-lodash/rollup-plugin': 5.0.0(rollup@4.30.1)
+      '@rollup/plugin-alias': 5.1.1(rollup@4.30.1)
+      '@rollup/plugin-babel': 6.0.4(@babel/core@7.26.0)(@types/babel__core@7.20.5)(rollup@4.30.1)
+      '@rollup/plugin-commonjs': 28.0.2(rollup@4.30.1)
+      '@rollup/plugin-json': 6.1.0(rollup@4.30.1)
+      '@rollup/plugin-node-resolve': 16.0.0(rollup@4.30.1)
+      '@rollup/plugin-replace': 6.0.2(rollup@4.30.1)
+      '@rollup/plugin-terser': 0.4.4(rollup@4.30.1)
+      '@sanity/browserslist-config': 1.0.5
+      browserslist: 4.24.4
+      cac: 6.7.14
+      chalk: 4.1.2
+      chokidar: 4.0.3
+      esbuild: 0.24.2
+      esbuild-register: 3.6.0(esbuild@0.24.2)
+      find-config: 1.0.0
+      get-latest-version: 5.1.0(debug@4.3.5)
+      git-url-parse: 16.0.0
+      globby: 11.1.0
+      jsonc-parser: 3.3.1
+      mkdirp: 3.0.1
+      outdent: 0.8.0
+      parse-git-config: 3.0.0
+      pkg-up: 3.1.0
+      prettier: 3.4.2
+      pretty-bytes: 5.6.0
+      prompts: 2.4.2
+      recast: 0.23.9
+      rimraf: 4.4.1
+      rollup: 4.30.1
+      rollup-plugin-esbuild: 6.1.1(esbuild@0.24.2)(rollup@4.30.1)
+      rxjs: 7.8.1
+      treeify: 1.1.0
+      typescript: 5.7.2
+      uuid: 11.0.4
+      zod: 3.24.1
+      zod-validation-error: 3.4.0(zod@3.24.1)
+    transitivePeerDependencies:
+      - '@types/babel__core'
+      - '@types/node'
+      - debug
+      - supports-color
+
   '@sanity/presentation@1.16.2(@emotion/is-prop-valid@1.2.2)(@sanity/client@6.21.1(debug@4.3.5))(react-dom@19.0.0(react@19.0.0))(react-is@18.3.1)(react@19.0.0)(styled-components@6.1.14(react-dom@19.0.0(react@19.0.0))(react@19.0.0))':
     dependencies:
       '@sanity/client': 6.21.1(debug@4.3.5)
@@ -10296,7 +10438,7 @@ snapshots:
 
   '@types/babel__core@7.20.5':
     dependencies:
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.26.5
       '@babel/types': 7.26.5
       '@types/babel__generator': 7.6.8
       '@types/babel__template': 7.4.4
@@ -10308,7 +10450,7 @@ snapshots:
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.26.3
+      '@babel/parser': 7.26.5
       '@babel/types': 7.26.5
 
   '@types/babel__traverse@7.20.6':
@@ -11185,7 +11327,7 @@ snapshots:
 
   core-js-compat@3.37.1:
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
 
   core-util-is@1.0.3: {}
 
