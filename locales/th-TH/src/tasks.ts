@@ -157,4 +157,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'เอกสารที่กำลังใช้งาน',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'ที่ติดตาม',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'งาน',
 })
