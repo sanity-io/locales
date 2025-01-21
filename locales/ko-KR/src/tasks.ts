@@ -155,4 +155,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': '활성 문서',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': '구독됨',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': '작업',
 })
