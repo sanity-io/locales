@@ -160,4 +160,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Tài liệu đang hoạt động',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Đã đăng ký',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'Nhiệm vụ',
 })
