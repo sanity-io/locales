@@ -166,4 +166,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Aktivni dokument',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Pretplaćeno',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'Zadaci',
 })
