@@ -158,4 +158,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'アクティブドキュメント',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': '購読中',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'タスク',
 })
