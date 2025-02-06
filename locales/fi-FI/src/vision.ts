@@ -68,6 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives mahdollistavat kyselysi suorittamisen eri "näkymillä" sisällöstä datasetissäsi',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'kiinnitetty julkaisu',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
