@@ -110,6 +110,9 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero': 'ไม่มีเอกสารใดกำลังใช้รูปภาพนี้',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "การปล่อย '<strong>{{title}}</strong>' ถูกลบแล้ว",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'ไปยังเดือนถัดไป',
   /** Action message for navigating to next year */
@@ -209,6 +212,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'ตรวจสอบคอนโซลนักพัฒนาเพื่อข้อมูลเพิ่มเติม',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'การแสดงการเปลี่ยนแปลงในฟิลด์นี้ทำให้เกิดข้อผิดพลาด',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'เราไม่สามารถโหลดการเปลี่ยนแปลงสำหรับเอกสารนี้',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'เกิดข้อผิดพลาดบางอย่าง',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'ข้อผิดพลาดของค่า: ค่าเป็นประเภท "<code>{{actualType}}</code>", คาดหวัง "<code>{{expectedType}}</code>"',
@@ -243,6 +250,8 @@ export default removeUndefinedLocaleResources({
     'แก้ไขเอกสารหรือเลือกเวอร์ชันที่เก่ากว่าในไทม์ไลน์เพื่อดูรายการการเปลี่ยนแปลงที่ปรากฏในแผงนี้',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'ไม่มีการเปลี่ยนแปลง',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'ไม่สามารถเลือกเหตุการณ์นี้ได้',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'เพิ่มการอ้างอิง',
   /** Portable Text diff: An annotation was changed */
@@ -287,6 +296,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'ถูกลบ',
   /** Title for the Review Changes pane */
   'changes.title': 'ตรวจสอบการเปลี่ยนแปลง',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'ร่าง',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -322,6 +333,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'เรียงตามชื่อเรื่อง',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'สร้างเมื่อ {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'แก้ไข {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -503,6 +518,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'กำลังกำหนดค่าเริ่มต้น…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'ปิดการใช้งาน',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'เลือกวันที่ในอนาคต',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'เช่น {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1037,6 +1054,8 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'เอกสารใหม่…',
+  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  'new-document.disabled-release.tooltip': 'คุณไม่สามารถเพิ่มเอกสารในการปล่อยนี้',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'กรอง',
   /** Loading indicator text within the new document menu */
@@ -1084,6 +1103,105 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'เมื่อกี้นี้',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'เพิ่มเข้าไปในการปล่อย',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'เพิ่มเข้าไปใน {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'อยู่ในการปล่อย {{title}} แล้ว',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'คัดลอกเวอร์ชันไปยัง',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'การปล่อยใหม่',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'ทิ้งเวอร์ชัน',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'ไม่สามารถทิ้งเวอร์ชันได้',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    'เวอร์ชัน <strong>{{title}}</strong> ถูกทิ้งเรียบร้อยแล้ว',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'การปล่อยใหม่',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'ไม่สามารถตั้งค่าเวอร์ชันให้ไม่เผยแพร่ในการปล่อยได้',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'ตั้งค่า <strong>{{title}}</strong> เพื่อไม่เผยแพร่ในการปล่อยเรียบร้อยแล้ว',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'ดูการปล่อย',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'กำหนดการเผยแพร่เมื่อ {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'ร่าง',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'ร่าง',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'เผยแพร่แล้ว',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'สร้างเมื่อ {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'เอกสารนี้อยู่ในโหมดแก้ไขสด ฉบับร่างถูกปิดใช้งาน',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'แก้ไขเมื่อ {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'มีกำหนดสำหรับ {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'ไม่มีการแก้ไข',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'ยังไม่ได้เผยแพร่',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'เผยแพร่เมื่อ {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'กำหนดไว้สำหรับ {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'ไม่ทราบวันที่',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'การปล่อยนี้ได้ถูกลบแล้ว',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'คัดลอกเวอร์ชันไปยังการปล่อยใหม่',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'สร้างการปล่อย',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'สิ่งนี้ทำให้สามารถแสดงว่าเอกสารมีความขัดแย้งกันเมื่อทำงานกับหลายเวอร์ชัน',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    'หมายเหตุ: คุณสามารถเปลี่ยนเวลาการปล่อยและตั้งเวลาที่แน่นอนสำหรับการเผยแพร่ตามกำหนดเวลาในภายหลัง',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'เวลาประมาณของการปล่อย',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholer-describe-release': 'อธิบายการปล่อย…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'ซ่อนการปล่อย',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'ฉบับร่าง',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'เผยแพร่แล้ว',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'การปล่อย',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'การปล่อยที่ไม่มีชื่อ',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "การปล่อย '{{title}}' ได้ถูกเก็บถาวร",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'ไม่สามารถสร้างการปล่อยได้',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "ไม่พบการปล่อย '{{title}}'",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'การปล่อยนี้ได้ถูกกำหนดเวลาไว้แล้ว ยกเลิกการกำหนดเวลาเพื่อเพิ่มเอกสารเพิ่มเติม',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'ทันที',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'ตามเวลาที่กำหนด',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'ยังไม่ตัดสินใจ',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'ดูเวอร์ชันเอกสารทั้งหมด',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'เปิดการค้นหา',
@@ -1496,6 +1614,12 @@ export default removeUndefinedLocaleResources({
     'การทำธุรกรรมประวัติของเอกสารไม่ได้รับผลกระทบ',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'เกิดข้อผิดพลาดขณะเรียกดูการเปลี่ยนแปลงของเอกสาร',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'เปิดใช้งาน API ของเหตุการณ์ผ่านการตั้งค่า Studio เพื่อดูประวัติเอกสาร',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'ประวัติเอกสารเวอร์ชันมีให้บริการเฉพาะผ่าน API ของเหตุการณ์',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'เมื่อมีการเปลี่ยนแปลงเนื้อหาของเอกสาร รุ่นของเอกสารจะปรากฏในเมนูนี้',
@@ -1516,6 +1640,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'การแก้ไขเอกสาร',
   /** Label for loading history */
   'timeline.loading-history': 'กำลังโหลดประวัติ...',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'ไม่มีเหตุการณ์ก่อนหน้านี้',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'สร้างแล้ว',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
