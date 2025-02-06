@@ -22,12 +22,11 @@ jobs:
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
           node-version: 20
-      - run: corepack enable && pnpm --version
       - run: pnpm install --ignore-scripts
       - run: pnpm build --filter=./locales/*
 
@@ -39,12 +38,11 @@ jobs:
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
           node-version: 20
-      - run: corepack enable && pnpm --version
       - run: pnpm install --loglevel=error --ignore-scripts
       - run: pnpm check:lint
 
@@ -61,11 +59,10 @@ jobs:
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
           node-version: ${{ matrix.node }}
-      - run: corepack enable && pnpm --version
       - run: pnpm install --loglevel=error --ignore-scripts
       - run: pnpm test
