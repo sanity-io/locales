@@ -68,6 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     '관점은 여러분의 쿼리가 데이터셋의 콘텐츠에 대한 다양한 "뷰"를 대상으로 실행될 수 있게 해줍니다',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': '고정된 릴리스',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '관점들',
 })
