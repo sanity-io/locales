@@ -3,6 +3,7 @@ import {promisify} from 'node:util'
 
 import OpenAI from 'openai'
 import pMap from 'p-map'
+import prettyMs from 'pretty-ms'
 
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
@@ -125,18 +126,19 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         batches.push(batch)
       }
 
+      logger(
+        `[${locale.id}] Translating ${batches.length} key batches for namespace ${ns.namespace}`,
+      )
+
       // For each of the batches, translate the keys (do X batches in parallel)
       const numTranslatedInBatches = await pMap(
         batches,
         async function translateBatch(currentBatch, index) {
           const tpl = templateMissingResources(ns.indexedResources, currentBatch)
-          logger(
-            `[${locale.id}] Translating ${index + 1}/${
-              batches.length
-            } key batches for namespace ${ns.namespace}`,
-          )
-
+          const startTime = Date.now()
           const translation = JSON.parse(await translateText(tpl, localeName))
+          const duration = prettyMs(Date.now() - startTime)
+          logger(`[${locale.id}] Translated batch ${index + 1} in ${duration}`)
 
           // Set the values from translation into the namespace
           let batchTranslated = 0
