@@ -78,6 +78,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Tällä asiakirjalla on käytössä live-muokkaus eikä sitä voi poistaa julkaisusta',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Katsot vain luku -dokumenttia, joka arkistoitiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Palauta viimeisin versio',
   /** The text content for the deleted document banner */
@@ -107,6 +110,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Muokkauspyyntö lähetetty',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Pyydä muokkausoikeutta',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.published-release.description':
+    'Katsot vain luku -dokumenttia, joka julkaistiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Lataa viite uudelleen',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -117,6 +123,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Tämä viite on poistettu sen jälkeen, kun avasit sen.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Lisää julkaisuun',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Ei ole <Label>{{title}}</Label> julkaisussa.',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Uusi {{schemaType}}',
@@ -277,6 +287,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkronoidaan asiakirjaa…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Tutki <VersionBadge>{{releaseTitle}}</VersionBadge> dokumenttia',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Avaa <VersionBadge>luonnos</VersionBadge> dokumentti',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Avaa <VersionBadge>{{releaseTitle}}</VersionBadge> julkaisu',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Ladataan…',
 
@@ -366,6 +383,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Dokumentin URL kopioitu leikepöydälle',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> lisättiin julkaisuun',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Dokumentti on poistettu onnistuneesti',

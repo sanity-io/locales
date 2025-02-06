@@ -120,6 +120,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Yhtään asiakirjaa ei käytä tätä kuvaa',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Siirry seuraavaan kuukauteen',
   /** Action message for navigating to next year */
@@ -230,6 +233,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Tarkista kehittäjän konsoli saadaksesi lisätietoja',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Tämän kentän muutosten renderöinti aiheutti virheen',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Emme pysty lataamaan muutoksia tähän asiakirjaan.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Jotain meni vikaan',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Arvovirhe: Arvon tyyppi on "<code>{{actualType}}</code>", odotettiin "<code>{{expectedType}}</code>"',
@@ -264,6 +271,8 @@ export default removeUndefinedLocaleResources({
     'Muokkaa asiakirjaa tai valitse vanhempi versio aikajanalta nähdäksesi muutoslistan tässä paneelissa.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Ei muutoksia',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Tätä tapahtumaa ei voi valita',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Lisätty huomautus',
   /** Portable Text diff: An annotation was changed */
@@ -307,6 +316,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Poistettu',
   /** Title for the Review Changes pane */
   'changes.title': 'Tarkista muutokset',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Luonnos',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -342,6 +353,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Lajittele otsikon mukaan',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Luotu {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Muokattu {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -532,6 +547,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Selvitetään alkuperäistä arvoa…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Ei käytössä',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Valitse tulevaisuuden päivämäärä.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'esim. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1088,6 +1105,8 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Uusi asiakirja…',
+  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  'new-document.disabled-release.tooltip': 'Et voi lisätä asiakirjoja tähän julkaisuun',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Suodata',
   /** Loading indicator text within the new document menu */
@@ -1135,6 +1154,105 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'juuri nyt',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Lisää julkaisuun',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Lisää kohteeseen {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Jo julkaisussa {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopioi versio kohteeseen',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Uusi julkaisu',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Hylkää versio',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Version hylkääminen epäonnistui',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    '<strong>{{title}}</strong> versio onnistuneesti hylätty',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Uusi julkaisu',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'Version julkaisemattomaksi asettaminen epäonnistui',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Onnistuneesti asetettu <strong>{{title}}</strong> julkaisemattomaksi julkaisussa',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Näytä julkaisu',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Ajastettu julkaistavaksi {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Luonnos',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Luonnokset',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Julkaistu',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Luotu {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Tämä asiakirja on live edit -tilassa, luonnokset ovat pois käytöstä',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Muokattu {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Tarkoitettu {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Ei muokkauksia',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Ei julkaistu',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Julkaistu {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Aikataulutettu {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Tuntematon päivämäärä',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Tämä julkaisu on poistettu',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopioi versio uuteen julkaisuun',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Luo julkaisu',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Tämän avulla on mahdollista näyttää, ovatko asiakirjat ristiriidassa työskenneltäessä useiden versioiden parissa.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    'HUOM: Voit muuttaa julkaisun aikaa ja asettaa tarkan ajan ajoitetulle julkaisulle myöhemmin.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Arvioitu julkaisun aika',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholer-describe-release': 'Kuvaile julkaisua…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Piilota julkaisu',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Luonnokset',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Julkaistu',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Julkaisut',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Nimeämätön julkaisu',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "'{{title}}' julkaisu on arkistoitu",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Julkaisun luonti epäonnistui',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "'{{title}}' julkaisua ei löytynyt",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Tämä julkaisu on aikataulutettu. Poista aikataulutus lisätäksesi lisää dokumentteja.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Mahdollisimman pian',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Ajastettu',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Ei päätetty',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Näe kaikki dokumenttiversiot',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Avaa haku',
@@ -1591,6 +1709,12 @@ export default removeUndefinedLocaleResources({
     'Asiakirjan historian transaktioita ei ole vaikuttanut.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Virhe tapahtui asiakirjan muutosten noutamisessa.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Ota käyttöön tapahtumien API Studio-konfiguraation kautta nähdäksesi dokumenttihistorian.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Version dokumenttien historia on saatavilla vain Tapahtumien API:n kautta.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Asiakirjan sisällön muuttamisen yhteydessä asiakirjan versiot ilmestyvät tähän valikkoon.',
@@ -1611,6 +1735,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Asiakirjan versiot',
   /** Label for loading history */
   'timeline.loading-history': 'Ladataan historiaa…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Ei aikaisempia tapahtumia',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Luotu',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
