@@ -164,4 +164,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'ಸಕ್ರಿಯ ದಾಖಲೆ',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'ಚಂದಾದಾರಿಕೆ ಮಾಡಲಾಗಿದೆ',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'ಕಾರ್ಯಗಳು',
 })
