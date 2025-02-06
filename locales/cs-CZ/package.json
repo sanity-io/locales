@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-cs-cz",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "private": false,
   "description": "Czech / Čeština locale/translation for Sanity Studio",
   "keywords": [
