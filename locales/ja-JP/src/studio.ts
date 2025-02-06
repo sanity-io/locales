@@ -121,6 +121,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'この画像を使用しているドキュメントはありません',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': '次の月へ',
   /** Action message for navigating to next year */
@@ -234,6 +237,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '詳細は開発者コンソールを確認してください',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'このフィールドの変更をレンダリング中にエラーが発生しました',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'このドキュメントの変更を読み込むことができません。',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': '何か問題が発生しました',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     '値のエラー：値のタイプは "<code>{{actualType}}</code>" ですが、期待されるタイプは "<code>{{expectedType}}</code>" です',
@@ -268,6 +275,8 @@ export default removeUndefinedLocaleResources({
     'このパネルに変更リストが表示されるように、ドキュメントを編集するか、タイムラインで古いバージョンを選択してください。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '変更はありません',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'このイベントを選択することはできません',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '注釈を追加しました',
   /** Portable Text diff: An annotation was changed */
@@ -311,6 +320,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': '削除されました',
   /** Title for the Review Changes pane */
   'changes.title': '変更をレビュー',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'ドラフト',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -346,6 +357,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'タイトルで並べ替え',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '{{date}}に作成されました',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}}に編集されました',
   /** Label to show in the document footer indicating the document is not published*/
@@ -534,6 +549,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': '初期値を解決中…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': '無効',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': '将来の日付を選択してください。',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '例: {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1096,6 +1113,8 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '新しいドキュメント…',
+  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  'new-document.disabled-release.tooltip': 'このリリースにドキュメントを追加することはできません',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'フィルター',
   /** Loading indicator text within the new document menu */
@@ -1144,6 +1163,106 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'たった今',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'リリースに追加',
+  /** Action message to add document to release */
+  'release.action.add-to-release': '{{title}}に追加',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': '既にリリース{{title}}に含まれています',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'バージョンをコピーする',
+  /** Action message for creating new releases */
+  'release.action.create-new': '新しいリリース',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'バージョンを破棄',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'バージョンの破棄に失敗しました',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    '<strong>{{title}}</strong>バージョンは正常に破棄されました',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': '新規リリース',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'リリースで未公開に設定するバージョンの設定に失敗しました',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    '<strong>{{title}}</strong>をリリースで未公開に設定することに成功しました',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'リリースを表示',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '{{date}}に公開予定',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'ドラフト',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'ドラフト',
+  /** Label for Published chip in document header */
+  'release.chip.published': '公開済み',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '作成日 {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'このドキュメントはライブ編集モードで、ドラフトは無効です',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '編集日 {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '{{date}}用に意図されています',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': '編集なし',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': '未公開',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '公開日 {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '{{date}}に予定されています',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': '不明な日付',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'このリリースは削除されました',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': '新しいリリースにバージョンをコピー',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'リリースを作成',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'これにより、複数のバージョンで作業しているときにドキュメントが競合しているかどうかを表示することができます。',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    '注意：リリースの時間を変更し、後でスケジュールされた公開の正確な時間を設定することができます。',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'リリースのおおよその時間',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholer-describe-release': 'リリースを説明してください…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'リリースを非表示にする',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'ドラフト',
+  /** Label for published releases in navbar */
+  'release.navbar.published': '公開済み',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'リリース',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': '無題のリリース',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "'{{title}}' リリースはアーカイブされました",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'リリースの作成に失敗しました',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "'{{title}}' リリースが見つかりませんでした",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'このリリースはスケジュールされています。ドキュメントを追加するにはスケジュールを解除してください。',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'できるだけ早く',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': '指定時刻',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': '未定',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'すべてのドキュメントバージョンを見る',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '検索を開く',
@@ -1611,6 +1730,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'ドキュメントの変更を取得中にエラーが発生しました。',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'ドキュメントの履歴を表示するには、Studioの設定を通じてイベントAPIを有効にしてください。',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'バージョンドキュメントの履歴はイベントAPIを通じてのみ利用可能です。',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'ドキュメントの内容を変更すると、このメニューにドキュメントのバージョンが表示されます。',
@@ -1631,6 +1756,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'ドキュメントのリビジョン',
   /** Label for loading history */
   'timeline.loading-history': '履歴を読み込み中…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': '以前のイベントはありません',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '作成された',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */

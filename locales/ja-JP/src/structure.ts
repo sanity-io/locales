@@ -77,6 +77,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'このドキュメントはライブ編集が有効になっており、非公開にすることはできません',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'アーカイブされた<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '最新バージョンを復元',
   /** The text content for the deleted document banner */
@@ -107,6 +110,9 @@ export default removeUndefinedLocaleResources({
     '編集リクエストが送信されました',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': '編集を依頼する',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.published-release.description':
+    '公開された<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'リファレンスを再読み込み',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -117,6 +123,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'このリファレンスは開いた時から削除されています。',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'リリースに追加する',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': '<Label>{{title}}</Label>リリースに含まれていません。',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新しい {{schemaType}}',
@@ -275,6 +285,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'ドキュメントを同期中…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge>ドキュメントを検査する',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': '<VersionBadge>ドラフト</VersionBadge>ドキュメントを開く',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge>リリースを開く',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '読み込み中…',
 
@@ -365,6 +382,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'ドキュメントのURLがクリップボードにコピーされました',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong>がリリースに追加されました',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'ドキュメントは正常に削除されました',
   /** The text when a discard changes operation succeeded  */

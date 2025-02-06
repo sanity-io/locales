@@ -68,6 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'パースペクティブを使用すると、異なる"ビュー"に対してクエリを実行して、データセットのコンテンツを異なる方法で見ることができます',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'ピン留めされたリリース',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'パースペクティブ',
 })
