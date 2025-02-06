@@ -160,4 +160,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Aktivní dokument',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Přihlášeno',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': undefined, // 'Tasks'
 })

@@ -160,4 +160,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Aktif Belge',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Abone Olunan',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': undefined, // 'Tasks'
 })

@@ -159,4 +159,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Активный документ',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Подписанные',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': undefined, // 'Tasks'
 })

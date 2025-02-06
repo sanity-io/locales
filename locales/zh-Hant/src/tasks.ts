@@ -154,4 +154,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': '活動文件',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': '已訂閱',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': undefined, // 'Tasks'
 })

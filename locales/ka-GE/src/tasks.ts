@@ -164,4 +164,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'აქტიური დოკუმენტი',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'გამოწერილი',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': undefined, // 'Tasks'
 })
