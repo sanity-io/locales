@@ -69,6 +69,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ಗಳು ನಿಮ್ಮ ಡೇಟಾಸೆಟ್‌ನಲ್ಲಿನ ವಿಷಯದ ವಿವಿಧ "ನೋಟ"ಗಳ ವಿರುದ್ಧ ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಚಲಾಯಿಸಲು ಅನುಮತಿಸುತ್ತವೆ',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'ಪಿನ್ ಮಾಡಲಾದ ಬಿಡುಗಡೆ',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ಗಳು',
 })
