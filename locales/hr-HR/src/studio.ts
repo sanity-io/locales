@@ -119,6 +119,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Niti jedan dokument ne koristi ovu sliku',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Idi na sljedeći mjesec',
   /** Action message for navigating to next year */
@@ -230,6 +233,10 @@ export default removeUndefinedLocaleResources({
     'Provjerite konzolu za razvojne programere za više informacija',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Prikazivanje promjena na ovom polju uzrokovalo je grešku',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Nismo u mogućnosti učitati promjene za ovaj dokument.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Došlo je do pogreške',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Greška vrijednosti: Vrijednost je tipa "<code>{{actualType}}</code>", očekivano "<code>{{expectedType}}</code>"',
@@ -264,6 +271,8 @@ export default removeUndefinedLocaleResources({
     'Uredite dokument ili odaberite stariju verziju na vremenskoj traci kako bi se popis promjena pojavio na ovoj ploči.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nema promjena',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Nije moguće odabrati ovaj događaj',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Dodana anotacija',
   /** Portable Text diff: An annotation was changed */
@@ -308,6 +317,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Uklonjeno',
   /** Title for the Review Changes pane */
   'changes.title': 'Pregled promjena',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Nacrt',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -343,6 +354,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sortiraj po Naslovu',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Stvoreno {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Uređeno {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -533,6 +548,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Rješavanje početne vrijednosti…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Onemogućeno',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Odaberite datum u budućnosti.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'npr. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1090,6 +1107,8 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Novi dokument…',
+  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  'new-document.disabled-release.tooltip': 'Ne možete dodavati dokumente ovom izdanju',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtriraj',
   /** Loading indicator text within the new document menu */
@@ -1138,6 +1157,105 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'upravo sada',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Dodaj u izdanje',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Dodaj u {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Već u izdanju {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopiraj verziju u',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Novo izdanje',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Odbaci verziju',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Nije uspjelo odbacivanje verzije',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    'Verzija <strong>{{title}}</strong> je uspješno odbačena',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Novo Izdanje',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Nije uspjelo postavljanje verzije da se ne objavi u izdanju',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Uspješno postavljeno <strong>{{title}}</strong> da se ne objavi u izdanju',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Pogledaj izdanje',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Zakazano za objavljivanje na {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Nacrt',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Nacrti',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Objavljeno',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Stvoreno {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Ovaj dokument je u načinu uređivanja uživo, nacrti su onemogućeni',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Uređeno {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Namijenjeno za {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Nema uređivanja',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Nije objavljeno',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Objavljeno {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Zakazano za {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Nepoznat datum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Ovo izdanje je izbrisano',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopiraj verziju u novo izdanje',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Stvori izdanje',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'To omogućuje prikazivanje postojanja sukoba u dokumentima prilikom rada na više verzija.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    'NAPOMENA: Možete promijeniti vrijeme izdanja i postaviti točno vrijeme za zakazano objavljivanje kasnije.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Približno vrijeme izdanja',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholer-describe-release': 'Opišite izdanje…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Sakrij izdanje',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Nacrti',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Objavljeno',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Izdanja',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Izdanje bez naslova',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "Izdanje '{{title}}' je arhivirano",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Neuspješno stvaranje izdanja',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "Izdanje '{{title}}' nije moguće pronaći",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Verzija ovog dokumenta je već dodana',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': 'Ovo izdanje je zakazano. Otkazati ga za dodavanje više dokumenata.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Što prije',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'U to vrijeme',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Neodlučeno',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Pogledajte sve verzije dokumenta',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otvori pretragu',
@@ -1597,6 +1715,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Došlo je do pogreške prilikom dohvaćanja promjena dokumenta.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Omogućite API događaja kroz Studio konfiguraciju za pregled povijesti dokumenta.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Povijest verzija dokumenata dostupna je samo kroz API događaja.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Kada mijenjate sadržaj dokumenta, verzije dokumenta će se pojaviti u ovom izborniku.',
@@ -1617,6 +1741,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revizije dokumenta',
   /** Label for loading history */
   'timeline.loading-history': 'Učitavanje povijesti…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Nema prethodnih događaja',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Stvoreno',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */

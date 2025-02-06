@@ -68,6 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspektive omogućuju vašem upitu da se izvodi protiv različitih "pogleda" na sadržaj u vašem datasetu',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'pinned release',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspektive',
 })

@@ -77,6 +77,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Ovaj dokument ima omogućen Live Edit i ne može biti poništena objava',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Pregledavate dokument samo za čitanje koji je arhiviran kao dio <VersionBadge> izdanja</VersionBadge>. Ne može se uređivati',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Vrati najnoviju verziju',
   /** The text content for the deleted document banner */
@@ -106,6 +109,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Zahtjev za uređivanje poslan',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Zatraži pravo na uređivanje',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.published-release.description':
+    'Pregledavate dokument samo za čitanje koji je objavljen kao dio <VersionBadge> izdanja</VersionBadge>. Ne može se uređivati',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Ponovno učitaj referencu',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -116,6 +122,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Ova referenca je uklonjena otkako ste je otvorili.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Dodaj u izdanje',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Nije u <Label>{{title}}</Label> izdanju.',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Novi {{schemaType}}',
@@ -275,6 +285,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sinkronizacija dokumenta…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Pregledaj <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Otvori <VersionBadge>nacrt</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Otvori <VersionBadge>{{releaseTitle}}</VersionBadge> izdanje',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Učitavanje…',
 
@@ -365,6 +382,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL dokumenta kopiran u međuspremnik',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> je dodan u izdanje',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokument je uspješno izbrisan',
   /** The text when a discard changes operation succeeded  */
