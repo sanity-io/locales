@@ -67,6 +67,8 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.action.docs-link': '阅读文档',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description': '视角允许您的查询针对数据集中不同的“视图”运行',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': '固定发布',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '视角',
 })
