@@ -68,6 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives ช่วยให้คุณสามารถทำคิวรีกับ "มุมมอง" ที่แตกต่างกันของเนื้อหาใน dataset ของคุณ',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'ปักหมุดรีลีส',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

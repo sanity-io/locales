@@ -75,6 +75,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'เอกสารนี้เปิดใช้งานการแก้ไขสดและไม่สามารถยกเลิกการเผยแพร่ได้',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่ถูกเก็บถาวรเป็นส่วนหนึ่งของ <VersionBadge>การปล่อย</VersionBadge> ไม่สามารถแก้ไขได้',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'กู้คืนเวอร์ชันล่าสุด',
   /** The text content for the deleted document banner */
@@ -98,6 +101,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'คำขอแก้ไขถูกส่งแล้ว',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'ขอแก้ไข',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.published-release.description':
+    'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่ถูกเผยแพร่เป็นส่วนหนึ่งของ <VersionBadge>การปล่อย</VersionBadge> ไม่สามารถแก้ไขได้',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'โหลดข้อมูลอ้างอิงใหม่',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -108,6 +114,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'ข้อมูลอ้างอิงนี้ถูกลบไปแล้วตั้งแต่คุณเปิดมัน',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'เพิ่มเข้าไปในการปล่อย',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'ไม่อยู่ในการปล่อย <Label>{{title}}</Label>',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'เอกสารใหม่ {{schemaType}}',
@@ -251,6 +261,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'กำลังซิงค์เอกสาร…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'ตรวจสอบเอกสาร <VersionBadge>{{releaseTitle}}</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'เปิดเอกสาร <VersionBadge>ร่าง</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'เปิดการปล่อย <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'กำลังโหลด…',
 
@@ -339,6 +356,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'คัดลอก URL เอกสารไปยังคลิปบอร์ดแล้ว',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> ได้ถูกเพิ่มเข้าไปในการปล่อย',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'เอกสารถูกลบเรียบร้อยแล้ว',
   /** The text when a discard changes operation succeeded  */
