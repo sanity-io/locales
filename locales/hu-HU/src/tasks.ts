@@ -167,4 +167,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Aktív Dokumentum',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Feliratkozva',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'Feladatok',
 })
