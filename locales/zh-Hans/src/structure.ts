@@ -71,6 +71,9 @@ export default removeUndefinedLocaleResources({
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled': '此文档已启用实时编辑，无法取消发布',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    '您正在查看作为<VersionBadge>发布</VersionBadge>的一部分而存档的只读文档。它不能被编辑',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '还原最新版本',
   /** The text content for the deleted document banner */
@@ -94,6 +97,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': '编辑请求已发送',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': '申请编辑权限',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.published-release.description':
+    '您正在查看作为<VersionBadge>发布</VersionBadge>的一部分而发布的只读文档。它不能被编辑',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '重新加载引用',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -102,6 +108,10 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.close-button.text': '关闭引用',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text': '自您打开以来，此引用已被移除。',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': '添加到发布',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': '不在<Label>{{title}}</Label>发布中。',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新建 {{schemaType}}',
@@ -243,6 +253,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': '正在同步文档…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': '检查<VersionBadge>{{releaseTitle}}</VersionBadge>文档',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': '打开<VersionBadge>草稿</VersionBadge>文档',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': '打开<VersionBadge>{{releaseTitle}}</VersionBadge>发布',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '正在加载…',
 
@@ -330,6 +347,9 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success': '文档 {{context}} 操作成功',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url': '文档 URL 已复制到剪贴板',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong>已添加到发布',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '文档已成功删除',
   /** The text when a discard changes operation succeeded  */
