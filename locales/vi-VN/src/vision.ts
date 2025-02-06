@@ -68,6 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives cho phép truy vấn của bạn chạy trên các "góc nhìn" khác nhau của nội dung trong dataset của bạn',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'phiên bản được ghim',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
