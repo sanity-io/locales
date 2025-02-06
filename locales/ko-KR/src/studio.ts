@@ -120,6 +120,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     '이 이미지를 사용하는 문서가 없습니다',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' 릴리스가 삭제되었습니다.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': '다음 달로 이동',
   /** Action message for navigating to next year */
@@ -232,6 +235,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '자세한 정보는 개발자 콘솔을 확인하세요',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '이 필드의 변경 사항을 렌더링하는 중 오류가 발생했습니다',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': '이 문서의 변경 사항을 불러올 수 없습니다.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': '문제가 발생했습니다',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     '값 오류: 값의 유형은 "<code>{{actualType}}</code>"이며, 예상 유형은 "<code>{{expectedType}}</code>"입니다',
@@ -266,6 +273,8 @@ export default removeUndefinedLocaleResources({
     '이 패널에 변경 사항 목록이 표시되려면 문서를 편집하거나 타임라인에서 이전 버전을 선택하세요.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '변경 사항 없음',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': '이 이벤트를 선택할 수 없습니다',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '주석 추가됨',
   /** Portable Text diff: An annotation was changed */
@@ -309,6 +318,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': '제거됨',
   /** Title for the Review Changes pane */
   'changes.title': '변경 사항 검토',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': '초안',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -344,6 +355,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '타이틀별 정렬',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '{{date}}에 생성됨',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}}에 편집됨',
   /** Label to show in the document footer indicating the document is not published*/
@@ -532,6 +547,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': '초기 값을 확인하는 중…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': '비활성화됨',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': '미래의 날짜를 선택하세요.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '예: {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1088,6 +1105,8 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '새 문서…',
+  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  'new-document.disabled-release.tooltip': '이 릴리스에 문서를 추가할 수 없습니다',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '필터',
   /** Loading indicator text within the new document menu */
@@ -1136,6 +1155,104 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': '방금',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': '릴리스에 추가',
+  /** Action message to add document to release */
+  'release.action.add-to-release': '{{title}}에 추가',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': '이미 릴리스 {{title}}에 포함됨',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': '버전을 복사하기',
+  /** Action message for creating new releases */
+  'release.action.create-new': '새 릴리스',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': '버전 버리기',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': '버전 버리기에 실패했습니다',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    '<strong>{{title}}</strong> 버전이 성공적으로 버려졌습니다',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': '새 릴리스',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': '릴리스에서 버전을 비공개로 설정하는 데 실패했습니다',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    '<strong>{{title}}</strong>을(를) 릴리스에서 비공개로 성공적으로 설정했습니다',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': '릴리스 보기',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': '초안',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': '초안들',
+  /** Label for Published chip in document header */
+  'release.chip.published': '게시됨',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '생성된 날짜 {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    '이 문서는 라이브 편집 모드에 있으며, 초안이 비활성화되었습니다',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '편집된 날짜 {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '{{date}}에 대한 예정',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': '편집 없음',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': '게시되지 않음',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '게시된 날짜 {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '{{date}}에 예정됨',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': '알 수 없는 날짜',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': '이 릴리스는 삭제되었습니다',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': '새 릴리스에 버전 복사',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': '릴리스 생성',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    '이를 통해 여러 버전에서 작업할 때 문서가 충돌하는지 여부를 표시할 수 있습니다.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    '참고: 릴리스 시간을 변경하고 나중에 예약된 게시를 위한 정확한 시간을 설정할 수 있습니다.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': '릴리스의 대략적인 시간',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholer-describe-release': '릴리스 설명...',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': '릴리스 숨기기',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': '초안',
+  /** Label for published releases in navbar */
+  'release.navbar.published': '게시됨',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': '릴리스',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': '제목 없는 릴리스',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "'{{title}}' 릴리스가 보관되었습니다",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': '릴리스 생성 실패',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "'{{title}}' 릴리스를 찾을 수 없습니다",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': '이 문서의 버전이 이미 추가되었습니다',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': '이 릴리스는 예약되었습니다. 문서를 추가하려면 예약을 취소하세요.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': '가능한 한 빨리',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': '예약된 시간',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': '미정',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': '모든 문서 버전 보기',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '검색 열기',
@@ -1606,6 +1723,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     '문서 변경 사항을 검색하는 동안 오류가 발생했습니다.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    '문서 기록을 보려면 스튜디오 설정을 통해 이벤트 API를 활성화하세요.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    '버전 문서의 기록은 이벤트 API를 통해서만 사용할 수 있습니다.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     '문서 내용을 변경하면, 이 메뉴에 문서 버전이 표시됩니다.',
@@ -1626,6 +1749,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': '문서 개정 목록',
   /** Label for loading history */
   'timeline.loading-history': '기록 로딩 중…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': '이전 이벤트 없음',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '생성됨',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */

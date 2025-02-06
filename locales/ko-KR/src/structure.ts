@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     '이 문서는 라이브 편집이 활성화되어 있어서 비공개 처리할 수 없습니다',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    '아카이브된 <VersionBadge>릴리스</VersionBadge>의 일부로서 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '가장 최근 버전 복원',
   /** The text content for the deleted document banner */
@@ -99,6 +102,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': '편집 요청이 전송되었습니다',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': '편집 요청하기',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.published-release.description':
+    '<VersionBadge>릴리스</VersionBadge>의 일부로서 발행된 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '참조 다시 불러오기',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -109,6 +115,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     '이 참조는 당신이 열었을 때부터 제거되었습니다.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': '릴리스에 추가',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': '<Label>{{title}}</Label> 릴리스에 포함되지 않았습니다.',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '새로운 {{schemaType}}',
@@ -267,6 +277,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': '문서 동기화 중…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 문서 검사',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': '<VersionBadge>드래프트</VersionBadge> 문서 열기',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 릴리스 열기',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '로딩 중…',
 
@@ -357,6 +374,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     '문서 URL이 클립보드에 복사되었습니다',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong>가 릴리스에 추가되었습니다',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '문서가 성공적으로 삭제되었습니다',
   /** The text when a discard changes operation succeeded  */
