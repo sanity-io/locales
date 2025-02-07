@@ -45,7 +45,7 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^2.11.8",
+    "@sanity/ui": "^2.11.10",
     "@sanity/vision": "^3.74.1",
     "groq": "^3.74.1",
     "react": "^19.0.0",
