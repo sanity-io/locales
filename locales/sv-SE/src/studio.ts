@@ -118,6 +118,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Inga dokument använder den här bilden',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Releasen '<strong>{{title}}</strong>' har raderats.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Gå till nästa månad',
   /** Action message for navigating to next year */
@@ -229,6 +232,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Kontrollera utvecklarkonsolen för mer information',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Att rendera ändringarna för detta fält orsakade ett fel',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Vi kan inte ladda ändringarna för detta dokument.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Något gick fel',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Värdefel: Värdet är av typen "<code>{{actualType}}</code>", förväntad "<code>{{expectedType}}</code>"',
@@ -263,6 +270,8 @@ export default removeUndefinedLocaleResources({
     'Redigera dokumentet eller välj en äldre version i tidslinjen för att se en lista över ändringar som visas i det här fönstret.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Det finns inga ändringar',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Det är inte möjligt att välja denna händelse',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Tillagd anmärkning',
   /** Portable Text diff: An annotation was changed */
@@ -306,6 +315,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Borttaget',
   /** Title for the Review Changes pane */
   'changes.title': 'Granska ändringar',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Utkast',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -341,6 +352,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sortera efter titel',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Skapad {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Redigerad {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -531,6 +546,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Löser initialt värde…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Inaktiverad',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Välj ett datum i framtiden.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 't.ex. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1088,6 +1105,8 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Nytt dokument…',
+  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  'new-document.disabled-release.tooltip': 'Du kan inte lägga till dokument i denna release',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtrera',
   /** Loading indicator text within the new document menu */
@@ -1136,6 +1155,106 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'just nu',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Lägg till i release',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Lägg till i {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Redan i release {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopiera version till',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Ny release',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Kassera version',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Misslyckades med att kassera version',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    '<strong>{{title}}</strong> versionen har framgångsrikt kasserats',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Ny Release',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Misslyckades med att ställa in versionen som ej publicerad på release',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Lyckades ställa in <strong>{{title}}</strong> som ej publicerad på release',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Visa release',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Schemalagd för publicering den {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Utkast',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Utkast',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Publicerad',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Skapad {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Detta dokument är i live redigeringsläge, utkast är inaktiverade',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Redigerad {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Avsedd för {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Inga redigeringar',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Inte publicerad',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Publicerad {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Planerad för {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Okänt datum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Detta release har raderats',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopiera version till ny release',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Skapa release',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Detta gör det möjligt att visa om dokument är i konflikt när man arbetar med flera versioner.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    'OBS: Du kan ändra tidpunkten för release och ställa in en exakt tid för schemalagd publicering senare.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Ungefärlig tid för release',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholer-describe-release': 'Beskriv releasen…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Dölj release',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Utkast',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Publicerade',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Releaser',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Namnlös release',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "Releasen '{{title}}' har arkiverats",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Misslyckades med att skapa release',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "Releasen '{{title}}' kunde inte hittas",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'En version av detta dokument har redan lagts till',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Denna release har schemalagts. Avschemalägg den för att lägga till fler dokument.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Så snart som möjligt',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Vid tidpunkt',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Oavgjort',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Se alla dokumentversioner',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Öppna sökning',
@@ -1591,6 +1710,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Ett fel inträffade vid hämtning av dokumentändringar.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Aktivera events API genom Studio-konfigurationen för att visa dokumenthistorik.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Historik för versioner av dokument är endast tillgänglig genom Events API.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'När du ändrar innehållet i dokumentet kommer dokumentversionerna att visas i denna meny.',
@@ -1611,6 +1736,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentrevisioner',
   /** Label for loading history */
   'timeline.loading-history': 'Laddar historik…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Inga tidigare händelser',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Skapad',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
