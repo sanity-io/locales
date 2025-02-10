@@ -1201,9 +1201,9 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
   'release.chip.tooltip.intended-for-date': 'Avsedd för {{date}}',
   /** Label for tooltip in chip when there is no recent draft edits */
-  'release.chip.tooltip.no-edits': 'Inga redigeringar',
+  'release.chip.tooltip.no-edits': 'Inga förändringar',
   /** Label for tooltip in chip when document isn't published */
-  'release.chip.tooltip.not-published': 'Inte publicerad',
+  'release.chip.tooltip.not-published': 'Ej publicerad',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicerad {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1211,7 +1211,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'Okänt datum',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': 'Detta release har raderats',
+  'release.deleted-tooltip': 'Denna release har raderats',
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Kopiera version till ny release',
   /** Title for creating releases dialog */

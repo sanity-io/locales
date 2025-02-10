@@ -69,7 +69,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.description':
     'Perspektiv låter din förfrågan köras mot olika "vyer" av innehållet i ditt dataset',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': 'fast release',
+  'settings.perspectives.pinned-release-label': 'pinnad release',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspektiv',
 })
