@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Góc nhìn "<code>previewDrafts</code>" đã được đổi tên thành "<code>drafts</code>" và hiện không còn được sử dụng. Thay đổi này có hiệu lực cho tất cả các phiên bản hỗ trợ góc nhìn (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Đọc tài liệu',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Không có góc nhìn (mặc định API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives cho phép truy vấn của bạn chạy trên các "góc nhìn" khác nhau của nội dung trong dataset của bạn',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Góc nhìn mặc định sẽ thay đổi từ "<code>raw</code>" sang "<code>published</code>" trong phiên bản API sắp tới. Vui lòng tham khảo tài liệu để biết thêm chi tiết.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'phiên bản được ghim',
   /** Title for popover that explains what "Perspectives" are */
