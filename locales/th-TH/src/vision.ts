@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'แง่มุม "<code>previewDrafts</code>" ได้เปลี่ยนชื่อเป็น "<code>drafts</code>" และไม่ได้ใช้งานแล้ว การเปลี่ยนแปลงนี้มีผลกับทุกเวอร์ชันที่รองรับแง่มุม (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'อ่านเอกสาร',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'ไม่มีแง่มุม (ค่าเริ่มต้น API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives ช่วยให้คุณสามารถทำคิวรีกับ "มุมมอง" ที่แตกต่างกันของเนื้อหาใน dataset ของคุณ',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'แง่มุมเริ่มต้นจะเปลี่ยนจาก "<code>raw</code>" เป็น "<code>published</code>" ในเวอร์ชัน API ที่จะมาถึง กรุณาดูเอกสารเพิ่มเติมสำหรับรายละเอียด.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ปักหมุดรีลีส',
   /** Title for popover that explains what "Perspectives" are */
