@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': '관점',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    '"<code>previewDrafts</code>" 관점이 "<code>drafts</code>"로 이름이 변경되었으며 이제 사용되지 않습니다. 이 변경사항은 관점 지원이 있는 모든 버전(>= v2021-03-25)에 적용됩니다.',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': '문서 읽기',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': '관점 없음(API 기본값)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     '관점은 여러분의 쿼리가 데이터셋의 콘텐츠에 대한 다양한 "뷰"를 대상으로 실행될 수 있게 해줍니다',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    '기본 관점이 곧 "<code>raw</code>"에서 "<code>published</code>"로 변경될 예정입니다. 자세한 내용은 문서를 참조하십시오.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '고정된 릴리스',
   /** Title for popover that explains what "Perspectives" are */
