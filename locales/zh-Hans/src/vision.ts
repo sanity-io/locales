@@ -63,10 +63,18 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': '视角',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    '“<code>previewDrafts</code>”视角已重命名为“<code>drafts</code>”，现已弃用。此更改适用于所有支持视角的版本（>= v2021-03-25）。',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': '阅读文档',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': '无视角（API默认）',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description': '视角允许您的查询针对数据集中不同的“视图”运行',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    '默认视角将在即将到来的API版本中从“<code>raw</code>”更改为“<code>published</code>”。请咨询文档以获取更多详情。',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '固定发布',
   /** Title for popover that explains what "Perspectives" are */
