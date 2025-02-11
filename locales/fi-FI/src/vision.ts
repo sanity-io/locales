@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspektiivi "<code>previewDrafts</code>" on nimetty uudelleen muotoon "<code>drafts</code>" ja on nyt vanhentunut. Tämä muutos on voimassa kaikissa versioissa, joissa on perspektiivituki (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Lue dokumentaatiota',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Ei perspektiiviä (API:n oletus)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives mahdollistavat kyselysi suorittamisen eri "näkymillä" sisällöstä datasetissäsi',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Oletusperspektiivi muuttuu muodosta "<code>raw</code>" muotoon "<code>published</code>" tulevassa API-versiossa. Katso lisätietoja dokumentaatiosta.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'kiinnitetty julkaisu',
   /** Title for popover that explains what "Perspectives" are */
