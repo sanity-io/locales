@@ -1060,7 +1060,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Tài liệu mới…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Bạn không thể tạo mới tài liệu đã xuất bản',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'Bạn không thể thêm tài liệu vào phiên bản này',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Lọc',
@@ -1130,6 +1132,8 @@ export default removeUndefinedLocaleResources({
     'Phiên bản <strong>{{title}}</strong> đã được loại bỏ thành công',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Phiên bản mới',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Bạn không có quyền thực hiện hành động này',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Không thể đặt phiên bản để không xuất bản trên phiên bản',
@@ -1180,7 +1184,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'Thời gian phát hành dự kiến',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'Mô tả phiên bản…',
+  'release.form.placeholder-describe-release': 'Mô tả bản phát hành…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Ẩn phiên bản',
   /** Label for draft perspective in navbar */
