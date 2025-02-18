@@ -1105,7 +1105,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Uusi asiakirja…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Et voi luoda uusia julkaistuja dokumentteja',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'Et voi lisätä asiakirjoja tähän julkaisuun',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Suodata',
@@ -1174,6 +1176,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{title}}</strong> versio onnistuneesti hylätty',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Uusi julkaisu',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Version julkaisemattomaksi asettaminen epäonnistui',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1223,7 +1227,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'Arvioitu julkaisun aika',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'Kuvaile julkaisua…',
+  'release.form.placeholder-describe-release': 'Kuvaile julkaisua…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Piilota julkaisu',
   /** Label for draft perspective in navbar */
