@@ -1034,7 +1034,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '新建文档…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': '您不能创建新的已发布文档',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': '您不能将文档添加到此发布中',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '筛选',
@@ -1102,6 +1104,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.success': '<strong>{{title}}</strong> 版本已成功丢弃',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新发布',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': '您没有执行此操作的权限',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '设置版本在发布上未发布失败',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1147,7 +1151,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': '大约发布时间',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': '描述发布…',
+  'release.form.placeholder-describe-release': '描述发布…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': '隐藏发布',
   /** Label for draft perspective in navbar */
