@@ -1054,7 +1054,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'เอกสารใหม่…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'คุณไม่สามารถสร้างเอกสารที่เผยแพร่ใหม่ได้',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'คุณไม่สามารถเพิ่มเอกสารในการปล่อยนี้',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'กรอง',
@@ -1123,6 +1125,8 @@ export default removeUndefinedLocaleResources({
     'เวอร์ชัน <strong>{{title}}</strong> ถูกทิ้งเรียบร้อยแล้ว',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'การปล่อยใหม่',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'คุณไม่มีสิทธิ์ในการดำเนินการนี้',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'ไม่สามารถตั้งค่าเวอร์ชันให้ไม่เผยแพร่ในการปล่อยได้',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1172,7 +1176,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'เวลาประมาณของการปล่อย',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'อธิบายการปล่อย…',
+  'release.form.placeholder-describe-release': 'อธิบายเกี่ยวกับการเผยแพร่…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'ซ่อนการปล่อย',
   /** Label for draft perspective in navbar */
