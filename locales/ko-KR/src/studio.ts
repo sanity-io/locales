@@ -1105,7 +1105,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '새 문서…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': '발행된 문서를 새로 생성할 수 없습니다',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': '이 릴리스에 문서를 추가할 수 없습니다',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '필터',
@@ -1175,6 +1177,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{title}}</strong> 버전이 성공적으로 버려졌습니다',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '새 릴리스',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': '이 작업을 수행할 권한이 없습니다',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '릴리스에서 버전을 비공개로 설정하는 데 실패했습니다',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1224,7 +1228,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': '릴리스의 대략적인 시간',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': '릴리스 설명...',
+  'release.form.placeholder-describe-release': '릴리스를 설명하세요…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': '릴리스 숨기기',
   /** Label for draft perspective in navbar */
