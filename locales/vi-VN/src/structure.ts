@@ -102,7 +102,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Yêu cầu chỉnh sửa đã được gửi',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Yêu cầu chỉnh sửa',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Bạn đang xem một tài liệu chỉ đọc đã được xuất bản như một phần của <VersionBadge> một bản phát hành</VersionBadge>. Nó không thể được chỉnh sửa',
   /** The text for the reload button */
@@ -119,6 +119,9 @@ export default removeUndefinedLocaleResources({
   'banners.release.action.add-to-release': 'Thêm vào bản phát hành',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Không nằm trong bản phát hành <Label>{{title}}</Label>.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Tài liệu này sẽ được gỡ xuất bản như một phần của bản phát hành <VersionBadge>{{title}}</VersionBadge>',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Tạo mới {{schemaType}}',
