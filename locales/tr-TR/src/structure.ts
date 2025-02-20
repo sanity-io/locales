@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Bu belgede canlı düzenleme etkinleştirildi ve yayından kaldırılamaz',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Arşivlenmiş bir sürümün parçası olarak arşivlenen salt okunur bir belgeyi görüntülüyorsunuz <VersionBadge>{{title}}</VersionBadge>. Düzenlenemez',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'En son sürümü geri yükle',
   /** The text content for the deleted document banner */
@@ -105,6 +108,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Editör isteği gönderildi',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Düzenleme iste',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Yayınlanmış bir sürümün parçası olarak yayınlanan salt okunur bir belgeyi görüntülüyorsunuz <VersionBadge>{{title}}</VersionBadge>. Düzenlenemez',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referansı Yeniden Yükle',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -114,6 +120,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Bu referans açtığınızdan beri kaldırıldı.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Sürüme ekle',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': '<VersionBadge>{{title}}</VersionBadge> sürümünde değil.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Bu belge <VersionBadge>{{title}}</VersionBadge> sürümünün bir parçası olarak yayından kaldırılacak',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Yeni {{schemaType}}',
@@ -272,6 +285,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Belge senkronize ediliyor…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> belgesini incele',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': '<VersionBadge>taslak</VersionBadge> belgesini aç',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> sürümünü aç',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Yükleniyor…',
 
@@ -360,6 +380,9 @@ export default removeUndefinedLocaleResources({
     'Belge üzerinde {{context}} başarıyla gerçekleştirildi',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url': "Belge URL'si panoya kopyalandı",
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> sürüme eklendi',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Belge başarıyla silindi',
   /** The text when a discard changes operation succeeded  */
