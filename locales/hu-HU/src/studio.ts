@@ -121,6 +121,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Egyetlen dokumentum sem használja ezt a képet',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "A(z) '<strong>{{title}}</strong>' kiadás törölve lett.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ugrás a következő hónapra',
   /** Action message for navigating to next year */
@@ -232,6 +235,10 @@ export default removeUndefinedLocaleResources({
     'További információkért ellenőrizze a fejlesztői konzolt',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Hiba történt a mező változásainak megjelenítésekor',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Nem sikerült betölteni a dokumentum változásait.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Valami hiba történt',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Érték hiba: Az érték típusa "<code>{{actualType}}</code>", a várt típus: "<code>{{expectedType}}</code>"',
@@ -266,6 +273,8 @@ export default removeUndefinedLocaleResources({
     'Szerkessze a dokumentumot vagy válasszon egy régebbi verziót az idővonalon, hogy megjelenjen a változások listája ebben a panelben.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nincsenek változások',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Ezt az eseményt nem lehet kiválasztani',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Megjegyzés hozzáadva',
   /** Portable Text diff: An annotation was changed */
@@ -309,6 +318,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Eltávolítva',
   /** Title for the Review Changes pane */
   'changes.title': 'Változások áttekintése',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Vázlat',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -344,6 +355,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Cím szerinti rendezés',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Létrehozva {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Szerkesztve {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -534,6 +549,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Kezdeti érték megoldása…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Letiltva',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Válasszon egy jövőbeli dátumot.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'pl. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1095,6 +1112,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Új dokumentum…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Nem hozhat létre új közzétett dokumentumokat',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'Nem adhat dokumentumokat ehhez a kiadáshoz',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Szűrő',
   /** Loading indicator text within the new document menu */
@@ -1143,6 +1164,107 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'épp most',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Hozzáadás a kiadáshoz',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Hozzáadás a(z) {{title}} kiadáshoz',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Már hozzáadva a(z) {{title}} kiadáshoz',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Verzió másolása ide',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Új kiadás',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Verzió elvetése',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Nem sikerült a verziót elvetni',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    'A(z) <strong>{{title}}</strong> verzió sikeresen elvetve',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Új Kiadás',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Nincs jogosultsága ezt a műveletet végrehajtani',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Nem sikerült beállítani a verziót közzétételre váró állapotba a kiadásban',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Sikeresen beállítva a(z) <strong>{{title}}</strong> verzió közzétételre váró állapotba a kiadásban',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Kiadás megtekintése',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Közzétételre ütemezve erre a dátumra: {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Vázlat',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Piszkozatok',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Közzétéve',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Létrehozva {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Ez a dokumentum élő szerkesztési módban van, a piszkozatok le vannak tiltva',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Szerkesztve {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Tervezett dátum: {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Nincsenek szerkesztések',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Nincs közzétéve',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Közzétéve {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Ütemezett dátum: {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Ismeretlen dátum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Ez a kiadás törölve lett',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Verzió másolása új kiadásba',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Új kiadás',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'A tervezett kiadási időt arra használjuk, hogy jobb előnézeteket és utalásokat készítsünk arról, hogy a dokumentumok ütköznek-e.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Később mindig megváltoztathatja.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'A kiadás körülbelüli ideje',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Írja le a kiadást...',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Kiadás elrejtése',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Piszkozatok',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Közzétéve',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Kiadások',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Cím nélküli kiadás',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "Az '{{title}}' kiadás archiválva lett",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'A kiadás létrehozása sikertelen',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "A(z) '{{title}}' kiadás nem található",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'E dokumentum egy verziója már hozzá lett adva',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Ez a kiadás ütemezve lett. Törölje az ütemezést, hogy több dokumentumot adhasson hozzá.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'ASAP',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Meghatározott időpontban',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Döntetlen',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Az összes dokumentumverzió megtekintése',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Keresés megnyitása',
@@ -1603,6 +1725,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Hiba történt a dokumentum változásainak lekérése közben.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Engedélyezze az események API-ját a Studio konfigurációban a dokumentumtörténet megtekintéséhez.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'A verziódokumentumok története csak az Események API-ján keresztül érhető el.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'A dokumentum tartalmának megváltoztatásakor a dokumentum verziói megjelennek ebben a menüben.',
@@ -1623,6 +1751,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentum revíziók',
   /** Label for loading history */
   'timeline.loading-history': 'Előzmények betöltése…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Nincsenek korábbi események',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Létrehozva',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
