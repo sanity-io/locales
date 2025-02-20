@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'ეს დოკუმენტი აქვს ცოცხალი რედაქტირება ჩართული და ვერ შეწყდება გამოქვეყნება',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'თქვენ ნახულობთ მხოლოდ წაკითხვის დოკუმენტს, რომელიც არქივდა <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად. იგი ვერ შეიცვლება',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'აღადგინეთ უახლესი ვერსია',
   /** The text content for the deleted document banner */
@@ -106,6 +109,9 @@ export default removeUndefinedLocaleResources({
     'რედაქტორის მოთხოვნა გაგზავნილია',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'მოითხოვეთ რედაქტირების უფლება',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'თქვენ ნახულობთ მხოლოდ წაკითხვის დოკუმენტს, რომელიც გამოქვეყნდა <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად. იგი ვერ შეიცვლება',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'რეფერენციის ჩატვირთვა',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -116,6 +122,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'ეს რეფერენცია წაშლილია თქვენი გახსნის შემდეგ.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'დაამატეთ რელიზს',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'არ არის <VersionBadge>{{title}}</VersionBadge> რელიზში.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'ეს დოკუმენტი გამოქვეყნდება <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ახალი {{schemaType}}',
@@ -275,6 +288,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'დოკუმენტის სინქრონიზაცია…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'შეამოწმეთ <VersionBadge>{{releaseTitle}}</VersionBadge> დოკუმენტი',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'გახსენით <VersionBadge>draft</VersionBadge> დოკუმენტი',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'გახსენით <VersionBadge>{{releaseTitle}}</VersionBadge> რელიზი',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'ჩატვირთვა…',
 
@@ -364,6 +384,9 @@ export default removeUndefinedLocaleResources({
     'წარმატებით შესრულდა {{context}} დოკუმენტზე',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url': 'დოკუმენტის URL დაკოპირდა ბუფერში',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> დაემატა რელიზს',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'დოკუმენტი წარმატებით წაიშალა',
   /** The text when a discard changes operation succeeded  */
