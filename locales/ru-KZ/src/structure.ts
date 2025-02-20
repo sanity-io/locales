@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Этот документ включает редактирование в реальном времени и не может быть снят с публикации',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Вы просматриваете документ только для чтения, который был архивирован как часть <VersionBadge>{{title}}</VersionBadge>. Его нельзя редактировать',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Восстановить последнюю версию',
   /** The text content for the deleted document banner */
@@ -100,6 +103,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text':
     'Попросить разрешение на редактирование',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Вы просматриваете документ только для чтения, который был опубликован как часть <VersionBadge>{{title}}</VersionBadge>. Его нельзя редактировать',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перезагрузить ссылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -110,6 +116,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Эта ссылка была удалена с тех пор, как вы ее открыли.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Добавить в релиз',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Не входит в релиз <VersionBadge>{{title}}</VersionBadge>.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Этот документ будет снят с публикации как часть релиза <VersionBadge>{{title}}</VersionBadge>',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новый {{schemaType}}',
@@ -257,6 +270,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Синхронизация документа…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Просмотреть документ <VersionBadge>{{releaseTitle}}</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Открыть документ <VersionBadge>draft</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Открыть релиз <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Загрузка…',
 
@@ -347,6 +367,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL документа скопирован в буфер обмена',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> был добавлен в релиз',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Документ был успешно удален',
   /** The text when a discard changes operation succeeded  */

@@ -112,6 +112,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Ни один документ не использует это изображение',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Перейти к следующему месяцу',
   /** Action message for navigating to next year */
@@ -219,6 +222,10 @@ export default removeUndefinedLocaleResources({
     'Проверьте консоль разработчика для получения дополнительной информации',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Отображение изменений в этом поле вызвало ошибку',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Мы не можем загрузить изменения для этого документа.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Что-то пошло не так',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Ошибка значения: значение имеет тип "<code>{{actualType}}</code>", ожидалось "<code>{{expectedType}}</code>"',
@@ -253,6 +260,8 @@ export default removeUndefinedLocaleResources({
     'Отредактируйте документ или выберите более старую версию во временной шкале, чтобы увидеть список изменений в этой панели.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Изменений нет',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Невозможно выбрать это событие',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Добавлена аннотация',
   /** Portable Text diff: An annotation was changed */
@@ -297,6 +306,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Удалено',
   /** Title for the Review Changes pane */
   'changes.title': 'Просмотр изменений',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Черновик',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -332,6 +343,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Сортировать по названию',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Создано {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Отредактировано {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -517,6 +532,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Определение исходного значения…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Отключено',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Выберите дату в будущем.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'например, {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1060,6 +1077,11 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Новый документ…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip':
+    'Вы не можете создавать новые опубликованные документы',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'Вы не можете добавлять документы в этот релиз',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Фильтр',
   /** Loading indicator text within the new document menu */
@@ -1107,6 +1129,106 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'только что',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Добавить в релиз',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Добавить в {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Уже в релизе {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Копировать версию в',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Новый релиз',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Отменить версию',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Не удалось отменить версию',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success': 'Версия <strong>{{title}}</strong> успешно отменена',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Новый релиз',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'У вас нет разрешения на выполнение этого действия',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Не удалось установить версию как неопубликованную в релизе',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Успешно установлено, что <strong>{{title}}</strong> будет неопубликовано в релизе',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Просмотреть релиз',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Запланировано к публикации на {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Черновик',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Черновики',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Опубликовано',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Создано {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Этот документ находится в режиме реального времени, черновики отключены',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Отредактировано {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Предназначено для {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Нет правок',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Не опубликовано',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Опубликовано {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Запланировано на {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Неизвестная дата',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Этот релиз был удален',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Копировать версию в новый релиз',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Новый релиз',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Предполагаемое время релиза используется для создания лучших предварительных просмотров и подсказок о возможных конфликтах документов.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Вы всегда можете изменить это позже.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Приблизительное время релиза',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Опишите релиз…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Скрыть релиз',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Черновики',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Опубликовано',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Релизы',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Релиз без названия',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "Релиз '{{title}}' был архивирован",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Не удалось создать релиз',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "Релиз '{{title}}' не был найден",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Этот релиз был запланирован. Отмените планирование, чтобы добавить больше документов.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Как можно скорее',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'В назначенное время',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Не решено',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Посмотреть все версии документа',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Открыть поиск',
@@ -1554,6 +1676,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Произошла ошибка при получении изменений документа.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Включите API событий через конфигурацию Studio, чтобы просмотреть историю документа.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'История версий документов доступна только через API событий.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'При изменении содержимого документа версии документа появятся в этом меню.',
@@ -1574,6 +1702,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Ревизии документа',
   /** Label for loading history */
   'timeline.loading-history': 'Загрузка истории…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Предыдущие события отсутствуют',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Создано',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
