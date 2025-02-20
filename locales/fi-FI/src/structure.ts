@@ -110,7 +110,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Muokkauspyyntö lähetetty',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Pyydä muokkausoikeutta',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Katsot vain luku -dokumenttia, joka julkaistiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
   /** The text for the reload button */
@@ -127,6 +127,9 @@ export default removeUndefinedLocaleResources({
   'banners.release.action.add-to-release': 'Lisää julkaisuun',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Ei ole <Label>{{title}}</Label> julkaisussa.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Tämä dokumentti poistetaan julkaisemattomana osana <VersionBadge>{{title}}</VersionBadge> julkaisua',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Uusi {{schemaType}}',
