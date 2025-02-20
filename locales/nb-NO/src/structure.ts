@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Dette dokumentet har "Live Edit" skrudd på og kan ikke avpubliseres',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Du ser et skrivebeskyttet dokument som ble arkivert som en del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Gjenopprett nyeste versjon',
   /** The text content for the deleted document banner */
@@ -105,6 +108,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Forespørsel sendt',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Be om tilgang',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Du ser et skrivebeskyttet dokument som ble publisert som en del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
@@ -116,6 +122,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Denne referansen har blitt fjernet siden du åpnet den.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Legg til i utgivelsen',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Ikke i <VersionBadge>{{title}}</VersionBadge> utgivelsen.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Dette dokumentet vil bli avpublisert som en del av <VersionBadge>{{title}}</VersionBadge> utgivelsen',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -276,6 +289,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Inspiser <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Åpne <VersionBadge>utkast</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Åpne <VersionBadge>{{releaseTitle}}</VersionBadge> utgivelsen',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Laster…',
 
@@ -365,6 +385,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Dokumentets URL kopiert til utklippstavlen',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> ble lagt til i utgivelsen',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokumentet ble slettet',
   /** The text when a discard changes operation succeeded  */
