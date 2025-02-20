@@ -78,6 +78,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Dette dokumentet har live redigering aktivert og kan ikkje avpubliserast',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Du ser eit skrivebeskytta dokument som vart arkivert som ein del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikkje redigerast',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Gjenopprett siste versjon',
   /** The text content for the deleted document banner */
@@ -108,6 +111,9 @@ export default removeUndefinedLocaleResources({
     'Forespørsel om redaktør er sendt',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Spør om å redigere',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Du ser eit skrivebeskytta dokument som vart publisert som ein del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikkje redigerast',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
@@ -119,6 +125,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Denne referansen har blitt fjerna sidan du opna den.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Legg til i utgjevinga',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Ikkje i <VersionBadge>{{title}}</VersionBadge> utgjevinga.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Dette dokumentet vil bli avpublisert som ein del av <VersionBadge>{{title}}</VersionBadge> utgjevinga',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -280,6 +293,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Inspekter <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Opne <VersionBadge>utkast</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Opne <VersionBadge>{{releaseTitle}}</VersionBadge> utgjeving',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Lastar…',
 
@@ -369,6 +389,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Dokument-URL kopiert til utklippstavla',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> vart lagt til i utgjevinga',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokumentet blei sletta',
   /** The text when a discard changes operation succeeded  */
