@@ -118,6 +118,10 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Ingen dokumenter bruger dette billede',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text':
+    "Udgivelsen '<strong>{{title}}</strong>' er blevet slettet.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Gå til næste måned',
   /** Action message for navigating to next year */
@@ -228,6 +232,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Tjek udviklerkonsollen for mere information',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Gengivelse af ændringerne til dette felt forårsagede en fejl',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Vi kan ikke indlæse ændringerne for dette dokument.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Noget gik galt',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Værdifejl: Værdien er af typen "<code>{{actualType}}</code>", forventet "<code>{{expectedType}}</code>"',
@@ -262,6 +270,8 @@ export default removeUndefinedLocaleResources({
     'Rediger dokumentet eller vælg en ældre version i tidslinjen for at se en liste over ændringer vises i dette panel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Der er ingen ændringer',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Det er ikke muligt at vælge denne begivenhed',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Tilføjet annotation',
   /** Portable Text diff: An annotation was changed */
@@ -305,6 +315,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Fjernet',
   /** Title for the Review Changes pane */
   'changes.title': 'Gennemgå ændringer',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Kladde',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -340,6 +352,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sortér efter titel',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Oprettet {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Redigeret {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -530,6 +546,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Fastslår indledende værdi…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Deaktiveret',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Vælg en dato i fremtiden.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'f.eks. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1085,6 +1103,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Nyt dokument…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Du kan ikke oprette nye offentliggjorte dokumenter',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'Du kan ikke tilføje dokumenter til denne udgivelse',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Søg i dokumenttyper',
   /** Loading indicator text within the new document menu */
@@ -1132,6 +1154,107 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'lige nu',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Tilføj til udgivelse',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Tilføj til {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Allerede i udgivelse {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopiér version til',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Ny udgivelse',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Kassér version',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Det lykkedes ikke at kassere versionen',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    '<strong>{{title}}</strong> versionen blev kasseret med succes',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Ny Udgivelse',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Du har ikke tilladelse til at udføre denne handling',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Det lykkedes ikke at indstille versionen til at blive upubliceret ved udgivelse',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Det lykkedes at indstille <strong>{{title}}</strong> til at blive upubliceret ved udgivelse',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Se udgivelse',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Planlagt til offentliggørelse den {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Kladde',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Kladder',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Udgivet',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Oprettet {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Dette dokument er i live redigeringstilstand, kladder er deaktiveret',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Redigeret {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Beregnet til {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Ingen redigeringer',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Ikke udgivet',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Udgivet {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Planlagt til {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Ukendt dato',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Denne udgivelse er blevet slettet',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopier version til ny udgivelse',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Ny udgivelse',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Den tilsigtede udgivelsestid bruges til at skabe bedre forhåndsvisninger og hints om hvorvidt dokumenter er i konflikt.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Du kan altid ændre det senere.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Omtrentlig tid for udgivelse',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Beskriv udgivelsen…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Skjul udgivelse',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Kladder',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Udgivet',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Udgivelser',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Uden titel udgivelse',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "'{{title}}' udgivelsen blev arkiveret",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Kunne ikke oprette udgivelse',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "Udgivelsen '{{title}}' kunne ikke findes",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'En version af dette dokument er allerede blevet tilføjet',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Denne udgivelse er blevet planlagt. Afplanlæg den for at tilføje flere dokumenter.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Så hurtigt som muligt',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'På tidspunkt',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Uafgjort',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Se alle dokumentversioner',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Åbn søgning',
@@ -1587,6 +1710,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Der opstod en fejl under hentning af dokumentændringer.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    "Aktivér events API'et gennem Studio-konfigurationen for at se dokumenthistorik.",
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    "Historik for versionsdokumenter er kun tilgængelig gennem Events API'et.",
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Når du ændrer indholdet af dokumentet, vil dokumentversionerne vises i denne menu.',
@@ -1607,6 +1736,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentrevisioner',
   /** Label for loading history */
   'timeline.loading-history': 'Indlæser historik…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Ingen tidligere begivenheder',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Oprettet',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
