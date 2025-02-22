@@ -118,6 +118,9 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero': 'Hiçbir belge bu resmi kullanmıyor',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' yayını silindi.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Bir sonraki aya git',
   /** Action message for navigating to next year */
@@ -231,6 +234,10 @@ export default removeUndefinedLocaleResources({
     'Daha fazla bilgi için geliştirici konsolunu kontrol edin',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Bu alanın değişikliklerini işlerken bir hata oluştu',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Bu belgedeki değişiklikler yüklenemiyor.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Bir şeyler ters gitti',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Değer hatası: Değer "<code>{{actualType}}</code>" tipindedir, beklenen "<code>{{expectedType}}</code>"',
@@ -265,6 +272,8 @@ export default removeUndefinedLocaleResources({
     'Bu panelde bir değişiklik listesinin görünmesi için belgeyi düzenleyin veya zaman çizelgesinde daha eski bir sürümü seçin.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Değişiklik yok',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Bu olayı seçmek mümkün değil',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Eklenen not',
   /** Portable Text diff: An annotation was changed */
@@ -308,6 +317,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Kaldırıldı',
   /** Title for the Review Changes pane */
   'changes.title': 'Değişiklikleri İncele',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Taslak',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -343,6 +354,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Başlığa Göre Sırala',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '{{date}} tarihinde oluşturuldu',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}} tarihinde düzenlendi',
   /** Label to show in the document footer indicating the document is not published*/
@@ -533,6 +548,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Başlangıç değeri çözümleniyor…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Devre Dışı',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Gelecekte bir tarih seçin.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'örn. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1088,6 +1105,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Yeni belge…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Yayınlanmış yeni belgeler oluşturamazsınız',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'Bu yayına belge ekleyemezsiniz',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtre',
   /** Loading indicator text within the new document menu */
@@ -1136,6 +1157,105 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'az önce',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Yayına ekle',
+  /** Action message to add document to release */
+  'release.action.add-to-release': "{{title}}'a ekle",
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Zaten {{title}} içinde yayında',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Sürümü kopyala',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Yeni yayın',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Sürümü at',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Sürüm atılamadı',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success': '<strong>{{title}}</strong> sürümü başarıyla atıldı',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Yeni Yayın',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'Sürümün yayından kaldırılması başarısız oldu',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    '<strong>{{title}}</strong> başarıyla yayından kaldırılmak üzere ayarlandı',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Yayını görüntüle',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '{{date}} tarihinde yayımlanmak üzere planlandı',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Taslak',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Taslaklar',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Yayınlandı',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '{{date}} tarihinde oluşturuldu',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Bu belge canlı düzenleme modunda, taslaklar devre dışı bırakıldı',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '{{date}} tarihinde düzenlendi',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '{{date}} için planlandı',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Düzenleme yok',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Yayınlanmadı',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '{{date}} tarihinde yayınlandı',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '{{date}} için planlandı',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Bilinmeyen tarih',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Bu sürüm silindi',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Sürümü yeni bir sürüme kopyala',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Yeni sürüm',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Planlanan sürüm zamanı, belgelerin çakışıp çakışmadığı hakkında daha iyi önizlemeler ve ipuçları oluşturmak için kullanılır.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Daha sonra her zaman değiştirebilirsiniz.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Tahmini sürüm zamanı',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Sürümü tanımlayın…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Sürümü gizle',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Taslaklar',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Yayınlandı',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Sürümler',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Başlıksız sürüm',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "'{{title}}' sürümü arşivlendi",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Sürüm oluşturma başarısız oldu',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "'{{title}}' yayını bulunamadı",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Bu yayın planlanmış. Daha fazla belge eklemek için planlamayı iptal edin.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'ASAP',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Belirli bir zamanda',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Kararsız',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Tüm belge versiyonlarını gör',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Aramayı aç',
@@ -1591,6 +1711,12 @@ export default removeUndefinedLocaleResources({
   'timeline.error.load-document-changes-description': 'Belge geçmişi işlemleri etkilenmedi.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Belge değişikliklerini alırken bir hata oluştu.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    "Belge geçmişini görmek için Studio yapılandırmasından events API'sini etkinleştirin.",
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Versiyon belgeleri geçmişi yalnızca Events API üzerinden erişilebilir.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Belgenin içeriğini değiştirirken, belge sürümleri bu menüde görünecektir.',
@@ -1611,6 +1737,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Belge revizyonları',
   /** Label for loading history */
   'timeline.loading-history': 'Geçmiş yükleniyor…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Önceki olay yok',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Oluşturuldu',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
