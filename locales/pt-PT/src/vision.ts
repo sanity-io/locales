@@ -63,11 +63,21 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspectiva',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'A perspectiva "<code>previewDrafts</code>" foi renomeada para "<code>drafts</code>" e agora está obsoleta. Esta mudança é efetiva para todas as versões com suporte a perspectivas (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Ler documentação',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Sem perspectiva (padrão da API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'As perspectivas permitem que sua consulta seja executada contra diferentes "visões" do conteúdo no seu conjunto de dados',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'A perspectiva padrão mudará de "<code>raw</code>" para "<code>published</code>" em uma versão futura da API. Por favor, consulte a documentação para mais detalhes.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'Versão fixada',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectivas',
 })

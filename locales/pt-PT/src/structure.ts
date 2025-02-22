@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Este documento tem edição ao vivo ativada e não pode ser despublicado',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Você está visualizando um documento somente leitura que foi arquivado como parte de <VersionBadge>{{title}}</VersionBadge>. Ele não pode ser editado',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Restaurar versão mais recente',
   /** The text content for the deleted document banner */
@@ -105,6 +108,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Pedido de editor enviado',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Pedir para editar',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Você está visualizando um documento somente leitura que foi publicado como parte de <VersionBadge>{{title}}</VersionBadge>. Ele não pode ser editado',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Recarregar referência',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -115,6 +121,14 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Esta referência foi removida desde que você a abriu.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Adicionar ao lançamento',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release':
+    'Não está no lançamento <VersionBadge>{{title}}</VersionBadge>.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Este documento será despublicado como parte do lançamento <VersionBadge>{{title}}</VersionBadge>',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Novo {{schemaType}}',
@@ -276,6 +290,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sincronizando documento…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Inspecionar documento <VersionBadge>{{releaseTitle}}</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Abrir documento <VersionBadge>rascunho</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Abrir lançamento <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Carregando…',
 
@@ -367,6 +388,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL do Documento copiada para a área de transferência',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> foi adicionado ao lançamento',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'O documento foi excluído com sucesso',
