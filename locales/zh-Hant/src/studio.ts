@@ -108,6 +108,9 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero': '沒有文件正在使用這張圖片',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': '「<strong>{{title}}</strong>」發布已被刪除。',
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': '切換到下個月',
   /** Action message for navigating to next year */
@@ -207,6 +210,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '要獲取更多訊息，請檢視開發者控制台',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '渲染此字段的更改時發生錯誤',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': '我們無法載入此文件的更改。',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': '出了些問題',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     '值錯誤：值的類型為 "<code>{{actualType}}</code>"，預期為 "<code>{{expectedType}}</code>"',
@@ -241,6 +248,8 @@ export default removeUndefinedLocaleResources({
     '編輯文件或在時間線中選擇較舊的版本，以在此面板中看到更改列表。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '沒有更改',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': '無法選擇此事件',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '已新增批註',
   /** Portable Text diff: An annotation was changed */
@@ -283,6 +292,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': '已移除',
   /** Title for the Review Changes pane */
   'changes.title': '回顧改動',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': '草稿',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -318,6 +329,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '按標題排序',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '創建於 {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '編輯於 {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -499,6 +514,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': '正在解析初始值…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': '已禁用',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': '請選擇一個未來的日期。',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '例如 {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1019,6 +1036,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '新建文件…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': '您不能創建新的已發布文件',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': '您不能將文件添加到此發布中',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '篩選',
   /** Loading indicator text within the new document menu */
@@ -1066,6 +1087,101 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': '剛剛',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': '添加到發布',
+  /** Action message to add document to release */
+  'release.action.add-to-release': '添加到 {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': '已在發布 {{title}} 中',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': '複製版本到',
+  /** Action message for creating new releases */
+  'release.action.create-new': '新建發布',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': '丟棄版本',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': '丟棄版本失敗',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success': '<strong>{{title}}</strong> 版本已成功丟棄',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': '新發布',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': '您沒有執行此操作的權限',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': '設定版本在發布時未發布失敗',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success': '成功設定 <strong>{{title}}</strong> 在發布時未發布',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': '查看發布',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '預定於 {{date}} 發布',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': '草稿',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': '草稿',
+  /** Label for Published chip in document header */
+  'release.chip.published': '已發布',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '創建於 {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit': '此文件處於即時編輯模式，草稿功能已禁用',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '編輯於 {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '預計於 {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': '無編輯',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': '未發布',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '發布於 {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '預定於 {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': '未知日期',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': '此發布已被刪除',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': '複製版本到新發布',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': '新建發布',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description': '預定發布時間用於創建更好的預覽，並提示文件是否有衝突。',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': '您隨時可以更改。',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': '大約發布時間',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': '描述發布…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': '隱藏發布',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': '草稿',
+  /** Label for published releases in navbar */
+  'release.navbar.published': '已發布',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': '發布',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': '未命名發布',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': '「{{title}}」發布已存檔',
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': '創建發布失敗',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "找不到 '{{title}}' 發布",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': '此文件的一個版本已經被添加',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': '此發布已被排程。取消排程以添加更多文件。',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': '盡快',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': '定時',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': '未決定',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': '查看所有文件版本',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '打開搜索',
@@ -1473,6 +1589,11 @@ export default removeUndefinedLocaleResources({
   'timeline.error.load-document-changes-description': '文件歷史交易未受影響。',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': '檢索文件更改時發生錯誤。',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    '通過工作室配置啟用事件 API 以查看文件歷史。',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title': '版本文件的歷史記錄僅通過事件 API 提供。',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description': '更改文件內容時，文件版本將出現在此選單中。',
   /** Error title for when the document doesn't have history */
@@ -1492,6 +1613,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': '文件修訂版',
   /** Label for loading history */
   'timeline.loading-history': '正在讀取歷史記錄…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': '沒有以前的事件',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '創建',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
