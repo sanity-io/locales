@@ -119,6 +119,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'არცერთი დოკუმენტი არ იყენებს ამ სურათს',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "რელიზი '<strong>{{title}}</strong>' წაშლილია.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'გადასვლა შემდეგ თვეში',
   /** Action message for navigating to next year */
@@ -231,6 +234,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'დეველოპერის კონსოლში იხილეთ მეტი ინფორმაცია',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'ამ ველის ცვლილებების რენდერინგი გამოიწვია შეცდომა',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'ჩვენ ვერ ვტვირთავთ ცვლილებებს ამ დოკუმენტისთვის.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'რაღაც შეცდომა მოხდა',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'მნიშვნელობის შეცდომა: მნიშვნელობა არის ტიპის "<code>{{actualType}}</code>", მოსალოდნელია "<code>{{expectedType}}</code>"',
@@ -265,6 +272,8 @@ export default removeUndefinedLocaleResources({
     'რედაქტირება დოკუმენტი ან აირჩიეთ უფრო ძველი ვერსია დროის ზოლში, რათა ამ პანელზე გამოჩნდეს ცვლილებების სია.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'ცვლილებები არ არის',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'ამ მოვლენის არჩევა არ არის შესაძლებელი',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'დამატებული ანოტაცია',
   /** Portable Text diff: An annotation was changed */
@@ -308,6 +317,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'წაშლილია',
   /** Title for the Review Changes pane */
   'changes.title': 'ცვლილებების გადახედვა',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'დრაფტი',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -343,6 +354,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'დალაგება სათაურის მიხედვით',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'შეიქმნა {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'რედაქტირებულია {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -533,6 +548,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'საწყისი მნიშვნელობის გარკვევა…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'გამორთულია',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'აირჩიეთ მომავალში მყოფი თარიღი.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'მაგ. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1090,6 +1107,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'ახალი დოკუმენტი…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'თქვენ ვერ შექმნით ახალ გამოქვეყნებულ დოკუმენტებს',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'თქვენ ვერ დაამატებთ დოკუმენტებს ამ რელიზში',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'ფილტრი',
   /** Loading indicator text within the new document menu */
@@ -1137,6 +1158,105 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'წუთის წინ',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'დაამატეთ რელიზში',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'დაამატეთ {{title}}-ში',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'უკვე რელიზშია {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'კოპირება ვერსიაზე',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'ახალი რელიზი',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'ვერსიის გაუქმება',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'ვერსიის გაუქმება ჩავარდა',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success': '<strong>{{title}}</strong> ვერსია წარმატებით გაუქმდა',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'ახალი რელიზი',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'თქვენ არ გაქვთ ნებართვა ამ ქმედების შესრულებაზე',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'ვერსიის გამოქვეყნების უარყოფის დაყენება ჩავარდა',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'წარმატებით დაყენებულია <strong>{{title}}</strong> გამოქვეყნების უარყოფა რელიზზე',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'რელიზის ნახვა',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'გამოქვეყნებაზე დაგეგმილია {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'დრაფტი',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'დრაფტები',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'გამოქვეყნებული',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'შეიქმნა {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'ეს დოკუმენტი არის ცოცხალი რედაქტირების რეჟიმში, დრაფტები გამორთულია',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'რედაქტირებულია {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'გეგმილია {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'რედაქტირებები არ არის',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'არ არის გამოქვეყნებული',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'გამოქვეყნებულია {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'დაგეგმილია {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'უცნობი თარიღი',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'ეს რელიზი წაშლილია',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'ვერსიის ასლის ახალ რელიზში კოპირება',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'ახალი რელიზი',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'გეგმილი რელიზის დრო იყენება უკეთესი წინასწარი ხედვებისთვის და მინიშნებებისთვის, თუ დოკუმენტები შეერიალებიან.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'შეგიძლიათ მას შეცვალოთ შემდეგ.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'რელიზის დაახლოებითი დრო',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'აღწერეთ რელიზი…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'რელიზის დამალვა',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'დრაფტები',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'გამოქვეყნებული',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'რელიზები',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'უსათაურო რელიზი',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "რელიზი '{{title}}' დაარქივდა",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'რელიზის შექმნა ჩაიშალა',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "ვერ მოიძებნა '{{title}}' რელიზი",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'ამ დოკუმენტის ვერსია უკვე დაემატა',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'ეს რელიზი დაგეგმილია. გაუქმება დაგეგმვას, რათა დაამატოთ მეტი დოკუმენტები.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'რაც შეიძლება მალე',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'დროზე',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'უმართავი',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'იხილეთ ყველა დოკუმენტის ვერსია',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'ძებნის გახსნა',
@@ -1596,6 +1716,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'დოკუმენტის ცვლილებების მიღებისას წარმოიშვა შეცდომა.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'ჩართეთ ივენთების API სტუდიოს კონფიგურაციაში, რათა ნახოთ დოკუმენტის ისტორია.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'ვერსიის დოკუმენტების ისტორია მხოლოდ ივენთების API-ით არის მისაწვდომი.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'დოკუმენტის შინაარსის შეცვლისას, დოკუმენტის ვერსიები გამოჩნდება ამ მენიუში.',
@@ -1616,6 +1742,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'დოკუმენტის რევიზიები',
   /** Label for loading history */
   'timeline.loading-history': 'ისტორიის ჩატვირთვა…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'წინა ივენთები არ არის',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'შეიქმნა',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
