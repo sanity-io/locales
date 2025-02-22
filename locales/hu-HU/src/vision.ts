@@ -63,11 +63,21 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'A "<code>previewDrafts</code>" nézet átnevezésre került "<code>drafts</code>" névre és most már elavult. Ez a változás minden olyan verzióra érvényes, amely támogatja a nézeteket (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Dokumentáció olvasása',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Nincs nézet (API alapértelmezés)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'A Perspectives lehetővé teszi a lekérdezés futtatását a dataset különböző "nézetei" ellen',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Az alapértelmezett nézet a "<code>raw</code>"-ról "<code>published</code>"-re fog változni egy közelgő API verzióban. Kérjük, keresse fel a dokumentációt további részletekért.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'Rögzített kiadás',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

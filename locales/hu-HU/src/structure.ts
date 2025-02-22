@@ -78,6 +78,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Ez a dokumentum élő szerkesztésre van beállítva és nem vonható vissza',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Ön egy csak olvasható dokumentumot tekint meg, amely archiválásra került a <VersionBadge>{{title}}</VersionBadge> részeként. Nem szerkeszthető',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Legutóbbi verzió visszaállítása',
   /** The text content for the deleted document banner */
@@ -107,6 +110,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Szerkesztői kérelem elküldve',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Szerkesztési jog kérése',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Ön egy csak olvasható dokumentumot tekint meg, amelyet közzétettek a <VersionBadge>{{title}}</VersionBadge> részeként. Nem szerkeszthető',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Hivatkozás újratöltése',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -117,6 +123,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Ez a hivatkozás eltávolításra került, mióta megnyitottad.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Hozzáadás a kiadáshoz',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Nincs a <VersionBadge>{{title}}</VersionBadge> kiadásban.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Ez a dokumentum a <VersionBadge>{{title}}</VersionBadge> kiadás részeként lesz közzé nem téve',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Új {{schemaType}}',
@@ -277,6 +290,14 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Dokumentum szinkronizálása…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release':
+    'A <VersionBadge>{{releaseTitle}}</VersionBadge> dokumentum megtekintése',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'A <VersionBadge>piszkozat</VersionBadge> dokumentum megnyitása',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'A <VersionBadge>{{releaseTitle}}</VersionBadge> kiadás megnyitása',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Betöltés…',
 
@@ -368,6 +389,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'A dokumentum URL másolva a vágólapra',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> hozzáadva a kiadáshoz',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'A dokumentum sikeresen törölve',
   /** The text when a discard changes operation succeeded  */
