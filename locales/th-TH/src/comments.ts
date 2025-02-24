@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'ไม่สามารถคัดลอกลิงก์ไปยังคลิปบอร์ดได้',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'เมื่อลบแล้ว ความคิดเห็นจะไม่สามารถกู้คืนได้',
   /** The delete dialog confirm button text for a comment */
