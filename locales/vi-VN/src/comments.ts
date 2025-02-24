@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Không thể sao chép liên kết vào bảng tạm',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Đã sao chép liên kết vào bảng tạm',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Một khi đã xóa, bình luận không thể khôi phục lại.',
   /** The delete dialog confirm button text for a comment */
