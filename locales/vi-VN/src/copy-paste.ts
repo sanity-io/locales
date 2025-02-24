@@ -12,14 +12,6 @@ export default removeUndefinedLocaleResources({
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Trình duyệt của bạn không hỗ trợ hành động này',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title':
-    'Tài liệu "{{fieldNames}}" đã được sao chép',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title':
-    'Trường "{{fieldName}}" đã được sao chép',
-  /** The success message that is shown when a array item is copied */
-  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Đã sao chép mục "{{typeName}}"',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Giá trị trống, không có gì để sao chép',
   /** --- On copy --- */
@@ -36,12 +28,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Không có gì để dán',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Mục clipboard không hợp lệ',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Tài liệu "{{fieldNames}}" đã được cập nhật',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'Trường "{{fieldName}}" đã được cập nhật',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" không được phép trong "{{targetSchemaType}}"',
