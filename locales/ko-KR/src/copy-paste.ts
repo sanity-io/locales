@@ -12,13 +12,6 @@ export default removeUndefinedLocaleResources({
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     '브라우저가 이 작업을 지원하지 않습니다',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': '문서 "{{fieldNames}}" 복사됨',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': '필드 "{{fieldName}}" 복사됨',
-  /** The success message that is shown when a array item is copied */
-  'copy-paste.on-copy.validation.copy-item_one-success.title':
-    '항목 "{{typeName}}"이(가) 복사되었습니다',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '빈 값, 복사할 것 없음',
   /** --- On copy --- */
@@ -35,10 +28,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': '붙여넣을 것 없음',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': '잘못된 클립보드 항목',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title': '문서 "{{fieldNames}}" 업데이트됨',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': '필드 "{{fieldName}}" 업데이트됨',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}"은(는) "{{targetSchemaType}}"에 허용되지 않습니다',

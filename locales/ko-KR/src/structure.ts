@@ -175,8 +175,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': '데이터셋',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': '문서 ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': '클립보드에 문서 ID가 복사되었습니다!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': '문서 ID 복사 실패',
   /** The header for the project ID column in the list of cross-dataset references found */
