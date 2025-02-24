@@ -159,8 +159,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': '数据集',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': '文档 ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': '已复制文档 ID 到剪贴板！',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': '复制文档 ID 失败',
   /** The header for the project ID column in the list of cross-dataset references found */
