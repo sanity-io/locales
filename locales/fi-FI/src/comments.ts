@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Linkin kopioiminen leikepöydälle epäonnistui',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Linkki kopioitu leikepöydälle',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Kun kommentti on poistettu, sitä ei voi palauttaa.',
   /** The delete dialog confirm button text for a comment */
