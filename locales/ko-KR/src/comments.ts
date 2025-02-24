@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': '클립보드에 링크를 복사할 수 없습니다',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': '클립보드에 링크를 복사했습니다',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': '한 번 삭제하면 댓글을 복구할 수 없습니다.',
   /** The delete dialog confirm button text for a comment */
