@@ -109,7 +109,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'ಸಂಪಾದಕರ ವಿನಂತಿ ಕಳುಹಿಸಲಾಗಿದೆ',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'ಸಂಪಾದನೆ ಮಾಡಲು ಕೇಳಿ',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'ನೀವು ಓದಲು ಮಾತ್ರ ಅನುಮತಿಸಿದ ದಾಖಲೆಯನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ, ಇದು <VersionBadge> ಒಂದು ಬಿಡುಗಡೆಯ</VersionBadge> ಭಾಗವಾಗಿ ಪ್ರಕಟಿಸಲಾಗಿದೆ. ಇದನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** The text for the reload button */
@@ -126,6 +126,9 @@ export default removeUndefinedLocaleResources({
   'banners.release.action.add-to-release': 'ಬಿಡುಗಡೆಗೆ ಸೇರಿಸಿ',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<Label>{{title}}</Label> ಬಿಡುಗಡೆಯಲ್ಲಿ ಇಲ್ಲ.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'ಈ ದಾಖಲೆಯು <VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿ ಅಪ್ರಕಟಿತವಾಗಲಿದೆ',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ಹೊಸ {{schemaType}}',
@@ -178,9 +181,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'ಡೇಟಾಸೆಟ್',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ದಾಖಲೆ ಐಡಿ',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'ದಾಖಲೆ ಐಡಿಯನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'ಡಾಕ್ಯುಮೆಂಟ್ ID ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ',
