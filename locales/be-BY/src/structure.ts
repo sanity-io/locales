@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Гэты дакумент мае ўключаны рэжым Live Edit і не можа быць зняты з публікацыі',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Вы глядзіце на дакумент толькі для чытання, які быў архіваваны як частка <VersionBadge>{{title}}</VersionBadge>. Яго нельга рэдагаваць',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Аднавіць апошнюю версію',
   /** The text content for the deleted document banner */
@@ -100,6 +103,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text':
     'Запытаць дазвол на рэдагаванне',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Вы глядзіце на дакумент толькі для чытання, які быў апублікаваны як частка <VersionBadge>{{title}}</VersionBadge>. Яго нельга рэдагаваць',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перазагрузіць спасылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -110,6 +116,13 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Гэтая спасылка была выдалена з моманту, як вы яе адкрылі.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Дадаць да рэлізу',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Не ў <VersionBadge>{{title}}</VersionBadge> рэлізе.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Гэты дакумент будзе непублікаваны як частка <VersionBadge>{{title}}</VersionBadge> рэлізу',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новы {{schemaType}}',
@@ -154,9 +167,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID дакумента',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'ID дакумента скапіраваны ў буфер абмену!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Не атрымалася скапіяваць ідэнтыфікатар дакумента',
@@ -256,6 +266,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Сінхранізацыя дакумента…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Праверыць <VersionBadge>{{releaseTitle}}</VersionBadge> дакумент',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Адкрыць <VersionBadge>draft</VersionBadge> дакумент',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Адкрыць <VersionBadge>{{releaseTitle}}</VersionBadge> рэліз',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Загрузка…',
 
@@ -348,6 +365,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL дакумента скапіяваны ў буфер абмену',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> быў дададзены да рэлізу',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Дакумент быў паспяхова выдалены',
   /** The text when a discard changes operation succeeded  */
