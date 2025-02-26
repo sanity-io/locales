@@ -109,7 +109,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Zahtjev za uređivanje poslan',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Zatraži pravo na uređivanje',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Pregledavate dokument samo za čitanje koji je objavljen kao dio <VersionBadge> izdanja</VersionBadge>. Ne može se uređivati',
   /** The text for the reload button */
@@ -126,6 +126,9 @@ export default removeUndefinedLocaleResources({
   'banners.release.action.add-to-release': 'Dodaj u izdanje',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Nije u <Label>{{title}}</Label> izdanju.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Ovaj dokument će biti povučen kao dio <VersionBadge>{{title}}</VersionBadge> izdanja',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Novi {{schemaType}}',
@@ -178,8 +181,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID dokumenta',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Kopiran ID dokumenta u međuspremnik!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Kopiranje ID-a dokumenta nije uspjelo',
