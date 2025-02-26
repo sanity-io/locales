@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'ბმულის ბუფერში ასლის შენახვა ვერ მოხერხდა',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'ბმული დაკოპებულია',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'წაშლილი კომენტარი ვერ აღდგება.',
   /** The delete dialog confirm button text for a comment */
