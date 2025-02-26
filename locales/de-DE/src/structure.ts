@@ -80,6 +80,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Dieses Dokument hat Live-Bearbeitung aktiviert und kann nicht zurückgezogen werden',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Sie sehen ein schreibgeschütztes Dokument, das als Teil von <VersionBadge>{{title}}</VersionBadge> archiviert wurde. Es kann nicht bearbeitet werden',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Letzte Version wiederherstellen',
   /** The text content for the deleted document banner */
@@ -110,6 +113,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Editor-Anfrage gesendet',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Um Bearbeitung bitten',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Sie sehen ein schreibgeschütztes Dokument, das als Teil von <VersionBadge>{{title}}</VersionBadge> veröffentlicht wurde. Es kann nicht bearbeitet werden',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referenz neu laden',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -120,6 +126,14 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Diese Referenz wurde entfernt, seitdem Sie sie geöffnet haben.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Zur Veröffentlichung hinzufügen',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release':
+    'Nicht in der <VersionBadge>{{title}}</VersionBadge> Veröffentlichung.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Dieses Dokument wird als Teil der <VersionBadge>{{title}}</VersionBadge> Veröffentlichung nicht veröffentlicht',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Neues {{schemaType}}',
@@ -172,9 +186,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Dokument-ID in die Zwischenablage kopiert!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Dokument-ID kopieren fehlgeschlagen',
@@ -280,6 +291,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Dokument wird synchronisiert…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> Dokument inspizieren',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': '<VersionBadge>Entwurf</VersionBadge> Dokument öffnen',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> Veröffentlichung öffnen',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Lädt…',
 
@@ -372,6 +390,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Dokumenten-URL in die Zwischenablage kopiert',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> wurde zur Veröffentlichung hinzugefügt',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Das Dokument wurde erfolgreich gelöscht',
