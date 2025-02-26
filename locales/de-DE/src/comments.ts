@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Link konnte nicht in die Zwischenablage kopiert werden',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link in die Zwischenablage kopiert',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Einmal gelöscht, kann ein Kommentar nicht wiederhergestellt werden.',
   /** The delete dialog confirm button text for a comment */
