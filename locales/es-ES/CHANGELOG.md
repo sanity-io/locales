@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.19](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.18...locale-es-es-v1.2.19) (2025-02-28)
+
+
+### Bug Fixes
+
+* **es-ES:** automated translation updates ([#1010](https://github.com/sanity-io/locales/issues/1010)) ([a308efb](https://github.com/sanity-io/locales/commit/a308efb5c425440369f7e5a5e7be765c1be078d3))
+
 ## [1.2.18](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.17...locale-es-es-v1.2.18) (2025-02-06)
 
 
