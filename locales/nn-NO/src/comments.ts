@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Kunne ikkje kopiere lenke til utklippstavla',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Kopierte lenke til utklippstavla',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Når ein kommentar er sletta, kan den ikkje bli henta tilbake.',
   /** The delete dialog confirm button text for a comment */
