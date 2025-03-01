@@ -1105,7 +1105,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Nytt dokument…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Du kan inte skapa nya publicerade dokument',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'Du kan inte lägga till dokument i denna release',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtrera',
@@ -1175,6 +1177,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{title}}</strong> versionen har framgångsrikt kasserats',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Release',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Du har inte behörighet att utföra denna åtgärd',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Misslyckades med att ställa in versionen som ej publicerad på release',
@@ -1225,7 +1229,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'Ungefärlig tid för release',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'Beskriv releasen…',
+  'release.form.placeholder-describe-release': 'Beskriv releasen…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Dölj release',
   /** Label for draft perspective in navbar */
