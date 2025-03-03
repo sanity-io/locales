@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description': undefined, // 'The "<code>previewDrafts</code>" perspective has been renamed to "<code>drafts</code>" and is now deprecated. This change is effective for all versions with perspective support (>= v2021-03-25).'
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Читати документацію',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': undefined, // 'No perspective (API default)'
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives дозволяють вашому запиту працювати з різними "видами" контенту у вашому dataset',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description': undefined, // 'The default perspective will change from "<code>raw</code>" to "<code>published</code>" in an upcoming API version. Please consult docs for more details.'
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': undefined, // 'Pinned release'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
