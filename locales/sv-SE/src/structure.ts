@@ -110,7 +110,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Redaktörsförfrågan skickad',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Fråga om att redigera',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Du tittar på ett skrivskyddat dokument som publicerades som en del av <VersionBadge> en release</VersionBadge>. Det kan inte redigeras',
   /** The text for the reload button */
@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   'banners.release.action.add-to-release': 'Lägg till i release',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Inte i <Label>{{title}}</Label> release.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text': undefined, // 'This document will be unpublished as part of the <VersionBadge>{{title}}</VersionBadge> release'
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -179,8 +181,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Kopierade dokument-ID till urklipp!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Misslyckades med att kopiera dokument-ID',
