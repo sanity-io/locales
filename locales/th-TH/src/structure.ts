@@ -38,6 +38,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'เผยแพร่',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'เผยแพร่',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'เผยแพร่',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -116,8 +118,17 @@ export default removeUndefinedLocaleResources({
     'ข้อมูลอ้างอิงนี้ถูกลบไปแล้วตั้งแต่คุณเปิดมัน',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'เพิ่มเข้าไปในการปล่อย',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description': 'เกิดข้อผิดพลาดขณะเพิ่มเอกสารไปยังการปล่อย: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'ข้อผิดพลาดในการเพิ่มเอกสารไปยังการปล่อย',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'ไม่อยู่ในการปล่อย <Label>{{title}}</Label>',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'โปรดรอสักครู่ขณะที่เอกสารกำลังถูกเพิ่มไปยังการปล่อย ไม่ควรใช้เวลานานกว่าไม่กี่วินาที',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'กำลังเพิ่มเอกสารไปยังการปล่อย…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'เอกสารนี้จะไม่ได้รับการเผยแพร่เป็นส่วนหนึ่งของการปล่อย <VersionBadge>{{title}}</VersionBadge>',
@@ -148,6 +159,24 @@ export default removeUndefinedLocaleResources({
   'changes.tab.review-changes': 'ตรวจทานการเปลี่ยนแปลง',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'ไปยัง',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': '"{{input}}" ไม่ใช่โหมดการเปรียบเทียบเอกสารที่รองรับ',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'พารามิเตอร์เอกสารถัดไปไม่ถูกต้อง',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'ไม่สามารถเปรียบเทียบเอกสารได้',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'พารามิเตอร์เอกสารก่อนหน้าไม่ถูกต้อง',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'เปรียบเทียบเวอร์ชัน',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'ร่าง',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'เผยแพร่แล้ว',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'เปรียบเทียบเวอร์ชัน',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'ยกเลิก',
@@ -378,8 +407,6 @@ export default removeUndefinedLocaleResources({
     'เอกสารได้รับการยกเลิกการเผยแพร่ ร่างใหม่ได้ถูกสร้างขึ้นจากเวอร์ชันที่เผยแพร่ล่าสุด',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'ไม่มีชื่อ',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'การเชื่อมต่อขาดหาย กำลังเชื่อมต่อใหม่…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'กำลังโหลดเอกสาร…',
   /** The text of the document not found pane if the schema is known */

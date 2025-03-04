@@ -409,6 +409,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'ล้าสมัย',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'ไม่มีชื่อ',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'การเชื่อมต่อหายไป กำลังเชื่อมต่อใหม่…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'มีข้อผิดพลาด',
   /** Accessibility label for the icon that indicates the field has validation information */
