@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Thao tác chưa sẵn sàng',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Xuất bản',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Xuất bản',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Xuất bản',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -117,8 +119,18 @@ export default removeUndefinedLocaleResources({
     'Tham chiếu này đã bị xóa kể từ khi bạn mở nó.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Thêm vào bản phát hành',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Đã xảy ra lỗi khi thêm tài liệu vào bản phát hành: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Lỗi khi thêm tài liệu vào bản phát hành',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Không nằm trong bản phát hành <Label>{{title}}</Label>.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Vui lòng chờ trong khi tài liệu được thêm vào bản phát hành. Quá trình này không nên mất nhiều hơn vài giây.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Đang thêm tài liệu vào bản phát hành…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tài liệu này sẽ được gỡ xuất bản như một phần của bản phát hành <VersionBadge>{{title}}</VersionBadge>',
@@ -149,6 +161,25 @@ export default removeUndefinedLocaleResources({
   'changes.tab.review-changes': 'Xem xét các thay đổi',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Đến',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" không phải là chế độ so sánh tài liệu được hỗ trợ.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Tham số tài liệu tiếp theo không hợp lệ.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Không thể so sánh tài liệu',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'Tham số tài liệu trước đó không hợp lệ.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'So sánh các phiên bản',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Bản nháp',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Đã xuất bản',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'So sánh các phiên bản',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Hủy bỏ',
@@ -384,8 +415,6 @@ export default removeUndefinedLocaleResources({
     'Tài liệu đã được hủy xuất bản. Một bản nháp đã được tạo từ phiên bản xuất bản cuối cùng.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Không tiêu đề',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Mất kết nối. Đang kết nối lại…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Đang tải tài liệu…',
   /** The text of the document not found pane if the schema is known */
