@@ -41,6 +41,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Toiminto ei ole valmis',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Julkaise',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Julkaise',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Julkaise',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -125,8 +127,18 @@ export default removeUndefinedLocaleResources({
     'Tämä viite on poistettu sen jälkeen, kun avasit sen.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Lisää julkaisuun',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Virhe tapahtui lisättäessä asiakirjaa julkaisuun: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Virhe lisättäessä asiakirjaa julkaisuun',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Ei ole <Label>{{title}}</Label> julkaisussa.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Odota hetki, kun asiakirjaa lisätään julkaisuun. Sen ei pitäisi kestää kauempaa kuin muutama sekunti.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Lisätään asiakirjaa julkaisuun…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tämä dokumentti poistetaan julkaisemattomana osana <VersionBadge>{{title}}</VersionBadge> julkaisua',
@@ -157,6 +169,26 @@ export default removeUndefinedLocaleResources({
   'changes.tab.review-changes': 'Tarkista muutokset',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Päättyen',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': '"{{input}}" ei ole tuettu asiakirjojen vertailutila.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam':
+    'Seuraavan asiakirjan parametri on virheellinen.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Asiakirjoja ei voi verrata',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Edellisen asiakirjan parametri on virheellinen.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Vertaa versioita',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Luonnos',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Julkaistu',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Vertaa versioita',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Peruuta',
@@ -406,8 +438,6 @@ export default removeUndefinedLocaleResources({
     'Dokumentin julkaisu on peruttu. Uusin julkaistu versio on luotu luonnokseksi.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Nimetön',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Yhteys katkesi. Yhdistetään uudelleen…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Ladataan dokumenttia…',
   /** The text of the document not found pane if the schema is known */
