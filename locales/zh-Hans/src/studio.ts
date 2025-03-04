@@ -404,6 +404,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': '已弃用',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '无标题',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': '连接丢失。正在重新连接…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': '有错误',
   /** Accessibility label for the icon that indicates the field has validation information */
