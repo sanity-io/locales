@@ -414,6 +414,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'lỗi thời',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Không tiêu đề',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Mất kết nối. Đang kết nối lại…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Có lỗi',
   /** Accessibility label for the icon that indicates the field has validation information */
