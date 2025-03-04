@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': '작업 준비되지 않음',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '게시',
+  /** Label for the "Publish" document action */
+  'action.publish.label': '게시',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': '게시',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -117,8 +119,18 @@ export default removeUndefinedLocaleResources({
     '이 참조는 당신이 열었을 때부터 제거되었습니다.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': '릴리스에 추가',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    '릴리스에 문서를 추가하는 동안 오류가 발생했습니다: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': '릴리스에 문서 추가 오류',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<Label>{{title}}</Label> 릴리스에 포함되지 않았습니다.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    '릴리스에 문서가 추가될 때까지 잠시만 기다려 주십시오. 몇 초 이상 걸리지 않을 것입니다.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': '릴리스에 문서 추가 중…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '이 문서는 <VersionBadge>{{title}}</VersionBadge> 릴리스의 일부로 발행 취소될 예정입니다',
@@ -149,6 +161,24 @@ export default removeUndefinedLocaleResources({
   'changes.tab.review-changes': '변경 사항 검토',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': '까지',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': '"{{input}}"는 지원되지 않는 문서 비교 모드입니다.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': '다음 문서 매개변수가 유효하지 않습니다.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': '문서 비교 불가',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': '이전 문서 매개변수가 유효하지 않습니다.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': '버전 비교',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': '초안',
+  /** The string used to label published documents */
+  'compare-versions.status.published': '게시됨',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': '버전 비교',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': '취소',
@@ -396,8 +426,6 @@ export default removeUndefinedLocaleResources({
     '문서의 발행이 취소되었습니다. 최신 발행 버전에서 초안이 생성되었습니다.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '제목 없음',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': '연결이 끊겼습니다. 재연결 중…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': '문서를 불러오는 중…',
   /** The text of the document not found pane if the schema is known */

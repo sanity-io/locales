@@ -431,6 +431,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': '사용되지 않음',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '제목 없음',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': '연결이 끊겼습니다. 재연결 중…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': '오류가 있음',
   /** Accessibility label for the icon that indicates the field has validation information */
