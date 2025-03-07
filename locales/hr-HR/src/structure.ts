@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Operacija nije spremna',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Objavi',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Objavi',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Objavi',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -109,7 +111,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Zahtjev za uređivanje poslan',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Zatraži pravo na uređivanje',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Pregledavate dokument samo za čitanje koji je objavljen kao dio <VersionBadge> izdanja</VersionBadge>. Ne može se uređivati',
   /** The text for the reload button */
@@ -124,8 +126,38 @@ export default removeUndefinedLocaleResources({
     'Ova referenca je uklonjena otkako ste je otvorili.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Dodaj u izdanje',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Otvori izdanje za uređivanje',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Došlo je do pogreške prilikom dodavanja dokumenta u izdanje: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Pogreška pri dodavanju dokumenta u izdanje',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokument postoji samo u',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'izdanju',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'izdanjima',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Ovaj dokument je dio <VersionBadge/> izdanja i još {{count}} izdanja.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Ovaj dokument je dio <VersionBadge/> izdanja i još {{count}} izdanja',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Ovaj dokument je dio <VersionBadge/> izdanja',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Nije u <Label>{{title}}</Label> izdanju.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Molimo pričekajte dok se dokument ne doda u izdanje. Ne bi trebalo trajati duže od nekoliko sekundi.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Dodavanje dokumenta u izdanje…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Ovaj dokument će biti nepublikovan kao dio <VersionBadge>{{title}}</VersionBadge> izdanja',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Novi {{schemaType}}',
@@ -154,6 +186,25 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Do',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': '"{{input}}" nije podržani način usporedbe dokumenata.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Parametar sljedećeg dokumenta je nevažeći.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Nemoguće usporediti dokumente',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Parametar prethodnog dokumenta je nevažeći.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Usporedi verzije',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Nacrt',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Objavljeno',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Usporedi verzije',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Odustani',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -178,8 +229,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID dokumenta',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Kopiran ID dokumenta u međuspremnik!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Kopiranje ID-a dokumenta nije uspjelo',
@@ -402,8 +451,6 @@ export default removeUndefinedLocaleResources({
     'Dokumentu je poništena objava. Nacrt je stvoren iz posljednje objavljene verzije.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Bez naslova',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Veza izgubljena. Ponovno povezivanje…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Učitavanje dokumenta…',
   /** The text of the document not found pane if the schema is known */
