@@ -119,11 +119,23 @@ export default removeUndefinedLocaleResources({
     'Tham chiếu này đã bị xóa kể từ khi bạn mở nó.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Thêm vào bản phát hành',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Mở release để chỉnh sửa',
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description':
     'Đã xảy ra lỗi khi thêm tài liệu vào bản phát hành: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
   'banners.release.error.title': 'Lỗi khi thêm tài liệu vào bản phát hành',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Tài liệu chỉ tồn tại trong',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'các release',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Tài liệu này là một phần của release <VersionBadge/> và {{count}} các release khác',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Tài liệu này là một phần của release <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Không nằm trong bản phát hành <Label>{{title}}</Label>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
