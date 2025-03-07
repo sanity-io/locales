@@ -119,11 +119,21 @@ export default removeUndefinedLocaleResources({
     '이 참조는 당신이 열었을 때부터 제거되었습니다.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': '릴리스에 추가',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': undefined, // 'Open release to edit'
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description':
     '릴리스에 문서를 추가하는 동안 오류가 발생했습니다: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
   'banners.release.error.title': '릴리스에 문서 추가 오류',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': undefined, // 'The document only exists in the'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': undefined, // 'releases'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more releases'
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single': undefined, // 'This document is part of the <VersionBadge/> release'
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<Label>{{title}}</Label> 릴리스에 포함되지 않았습니다.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */

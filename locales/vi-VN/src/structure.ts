@@ -119,11 +119,21 @@ export default removeUndefinedLocaleResources({
     'Tham chiếu này đã bị xóa kể từ khi bạn mở nó.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Thêm vào bản phát hành',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': undefined, // 'Open release to edit'
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description':
     'Đã xảy ra lỗi khi thêm tài liệu vào bản phát hành: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
   'banners.release.error.title': 'Lỗi khi thêm tài liệu vào bản phát hành',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': undefined, // 'The document only exists in the'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': undefined, // 'releases'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more releases'
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single': undefined, // 'This document is part of the <VersionBadge/> release'
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Không nằm trong bản phát hành <Label>{{title}}</Label>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
