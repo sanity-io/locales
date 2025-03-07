@@ -11,12 +11,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': '粘貼欄位',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title': '您的瀏覽器不支持此操作',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': '文件 "{{fieldNames}}" 已複製',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': '欄位 "{{fieldName}}" 已複製',
-  /** The success message that is shown when a array item is copied */
-  'copy-paste.on-copy.validation.copy-item_one-success.title': '項目 "{{typeName}}" 已複製',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空值，沒有可複製的內容',
   /** --- On copy --- */
@@ -33,10 +27,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': '沒有可粘貼的內容',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': '剪貼板項目無效',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title': '文件 "{{fieldNames}}" 已更新',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': '欄位 "{{fieldName}}" 已更新',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '不允許將 "{{sourceSchemaType}}" 放在 "{{targetSchemaType}}" 中',
