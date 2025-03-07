@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Ekki tókst að afrita tengil á klippiborð',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Tengill afritaður á klippiborð',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Ekki hægt að endurheimta athugasemd eftir að henni er eitt.',
   /** The delete dialog confirm button text for a comment */

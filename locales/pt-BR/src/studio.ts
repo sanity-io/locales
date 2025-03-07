@@ -121,6 +121,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Nenhum documento está usando esta imagem',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been deleted.'
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ir para o próximo mês',
   /** Action message for navigating to next year */
@@ -236,6 +239,10 @@ export default removeUndefinedLocaleResources({
     'Verifique o console do desenvolvedor para mais informações',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Renderizar as alterações neste campo causou um erro',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': undefined, // 'We\'re unable to load the changes for this document.'
+  /** Error title when changes could not be loaded */
+  'changes.error-title': undefined, // 'Something went wrong'
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Erro de valor: O valor é do tipo "<code>{{actualType}}</code>", esperado "<code>{{expectedType}}</code>"',
@@ -270,6 +277,8 @@ export default removeUndefinedLocaleResources({
     'Edite o documento ou selecione uma versão mais antiga na linha do tempo para ver a lista de alterações neste painel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Não há alterações',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': undefined, // 'It is not possible to select this event'
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Anotação adicionada',
   /** Portable Text diff: An annotation was changed */
@@ -313,6 +322,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Removido',
   /** Title for the Review Changes pane */
   'changes.title': 'Revisar alterações',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': undefined, // 'Draft'
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -348,6 +359,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Ordenar por Título',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': undefined, // 'Created {{date}}'
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': undefined, // '{{date}}'
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Editado {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -420,6 +435,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'obsoleto',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Sem título',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': undefined, // 'Connection lost. Reconnecting…'
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Contém erro',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -538,6 +555,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Resolvendo valor inicial…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Desativado',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': undefined, // 'Select a date in the future.'
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'ex. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1100,6 +1119,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Novo documento…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': undefined, // 'You cannot create new published documents'
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': undefined, // 'You cannot add documents to this release'
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtrar',
   /** Loading indicator text within the new document menu */
@@ -1148,6 +1171,101 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'agora mesmo',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': undefined, // 'Add to release'
+  /** Action message to add document to release */
+  'release.action.add-to-release': undefined, // 'Add to {{title}}'
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': undefined, // 'Already in release {{title}}'
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': undefined, // 'Copy version to'
+  /** Action message for creating new releases */
+  'release.action.create-new': undefined, // 'New release'
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': undefined, // 'Discard version'
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': undefined, // 'Failed to discard version'
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success': undefined, // '<strong>{{title}}</strong> version was successfully discarded'
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': undefined, // 'New Release'
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': undefined, // 'You do not have permission to perform this action'
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': undefined, // 'Failed to set version to be unpublished on release'
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success': undefined, // 'Successfully set <strong>{{title}}</strong> to be unpublished on release'
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': undefined, // 'View release'
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': undefined, // 'Scheduled for publishing on {{date}}'
+  /** Label for Draft chip in document header */
+  'release.chip.draft': undefined, // 'Draft'
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': undefined, // 'Drafts'
+  /** Label for Published chip in document header */
+  'release.chip.published': undefined, // 'Published'
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': undefined, // 'Created {{date}}'
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit': undefined, // 'This document is in live edit mode, drafts are disabled'
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': undefined, // 'Edited {{date}}'
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': undefined, // 'Intended for {{date}}'
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': undefined, // 'No edits'
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': undefined, // 'Not published'
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': undefined, // 'Published {{date}}'
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': undefined, // 'Scheduled for {{date}}'
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': undefined, // 'Unknown date'
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': undefined, // 'This release has been deleted'
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': undefined, // 'Copy version to new release'
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': undefined, // 'New release'
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description': undefined, // 'The intended release time is used to create better previews and hints about whether documents conflict.'
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': undefined, // 'You can always change it later.'
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': undefined, // 'Approximate time of release'
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': undefined, // 'Describe the release…'
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': undefined, // 'Hide release'
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': undefined, // 'Drafts'
+  /** Label for published releases in navbar */
+  'release.navbar.published': undefined, // 'Published'
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': undefined, // 'Releases'
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': undefined, // 'Untitled release'
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': undefined, // 'The \'{{title}}\' release was archived'
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': undefined, // 'Failed to create release'
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': undefined, // 'The \'{{title}}\' release could not be found'
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': undefined, // 'A version of this document has already been added'
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': undefined, // 'This release has been scheduled. Unsechedule it to add more documents.'
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': undefined, // 'ASAP'
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': undefined, // 'At time'
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': undefined, // 'Undecided'
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': undefined, // 'See all document versions'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Abrir pesquisa',
@@ -1618,6 +1736,10 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Ocorreu um erro ao recuperar as alterações do documento.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description': undefined, // 'Enable the events API through the Studio config to view document history.'
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title': undefined, // 'Version documents history is only available through the Events API.'
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Ao alterar o conteúdo do documento, as versões do documento aparecerão neste menu.',
@@ -1638,6 +1760,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revisões do documento',
   /** Label for loading history */
   'timeline.loading-history': 'Carregando histórico…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': undefined, // 'No previous events'
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Criado',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */

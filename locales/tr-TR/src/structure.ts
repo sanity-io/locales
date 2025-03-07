@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'İşlem hazır değil',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Yayımla',
+  /** Label for the "Publish" document action */
+  'action.publish.label': undefined, // 'Publish'
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Yayımla',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -122,8 +124,30 @@ export default removeUndefinedLocaleResources({
     'Bu referans açtığınızdan beri kaldırıldı.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Sürüme ekle',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': undefined, // 'Open release to edit'
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description': undefined, // 'An error occurred when adding document to the release: {{message}}'
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': undefined, // 'Error adding document to release'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': undefined, // 'The document only exists in the'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': undefined, // 'release'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': undefined, // 'releases'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more release.'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more releases'
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single': undefined, // 'This document is part of the <VersionBadge/> release'
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<VersionBadge>{{title}}</VersionBadge> sürümünde değil.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description': undefined, // 'Please hold tight while the document is added to the release. It should not take longer than a few seconds.'
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': undefined, // 'Adding document to release…'
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Bu belge <VersionBadge>{{title}}</VersionBadge> sürümünün bir parçası olarak yayından kaldırılacak',
@@ -155,6 +179,24 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Bitiş',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': undefined, // '"{{input}}" is not a supported document comparison mode.'
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': undefined, // 'The next document parameter is invalid.'
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': undefined, // 'Unable to compare documents'
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': undefined, // 'The previous document parameter is invalid.'
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': undefined, // 'Compare versions'
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': undefined, // 'Draft'
+  /** The string used to label published documents */
+  'compare-versions.status.published': undefined, // 'Published'
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': undefined, // 'Compare versions'
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'İptal',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -179,8 +221,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Belge Kimliği',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Belge kimliği panoya kopyalandı!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'Belge kimliği kopyalanamadı',
   /** The header for the project ID column in the list of cross-dataset references found */
@@ -400,8 +440,6 @@ export default removeUndefinedLocaleResources({
     'Belge yayından kaldırıldı. En son yayınlanan sürümden bir taslak oluşturuldu.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Başlıksız',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Bağlantı kesildi. Yeniden bağlanıyor…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Belge yükleniyor…',
   /** The text of the document not found pane if the schema is known */

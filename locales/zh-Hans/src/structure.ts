@@ -112,10 +112,20 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text': '自您打开以来，此引用已被移除。',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': '添加到发布',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': undefined, // 'Open release to edit'
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description': '将文档添加到发布时发生错误：{{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
   'banners.release.error.title': '添加文档到发布时出错',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': undefined, // 'The document only exists in the'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': undefined, // 'releases'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more releases'
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single': undefined, // 'This document is part of the <VersionBadge/> release'
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '不在<Label>{{title}}</Label>发布中。',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
