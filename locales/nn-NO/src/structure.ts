@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Operasjonen er ikkje klar',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publiser',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Publiser',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publiser',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -127,8 +129,35 @@ export default removeUndefinedLocaleResources({
     'Denne referansen har blitt fjerna sidan du opna den.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Legg til i utgjevinga',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Opne utgjevinga for redigering',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Ein feil oppstod då dokumentet blei lagt til i utgjevinga: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Feil ved legging av dokument til utgjeving',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokumentet finst berre i',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'utgjevinga',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'utgjevingane',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Dette dokumentet er ein del av <VersionBadge/> utgjevinga og {{count}} meir utgjeving.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Dette dokumentet er ein del av <VersionBadge/> utgjevinga og {{count}} fleire utgjevingar',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Dette dokumentet er ein del av <VersionBadge/> utgjevinga',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Ikkje i <VersionBadge>{{title}}</VersionBadge> utgjevinga.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Vennligst vent medan dokumentet blir lagt til i utgjevinga. Det burde ikkje ta lengre enn nokre sekund.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Legger dokument til utgjeving…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dette dokumentet vil bli avpublisert som ein del av <VersionBadge>{{title}}</VersionBadge> utgjevinga',
@@ -160,6 +189,26 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Til',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" er ikkje ein støtta modus for dokument-samanlikning.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Parameteren for neste dokument er ugyldig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Kan ikkje samanlikne dokument',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Parameteren for førre dokument er ugyldig.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Samanlikn versjonar',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Utkast',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Publisert',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Samanlikn versjonar',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Avbryt',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -184,9 +233,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Kopierte dokument-ID til utklippstavla!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Klarte ikkje å kopiere dokument-ID',
@@ -409,8 +455,6 @@ export default removeUndefinedLocaleResources({
     'Dokumentet blei avpublisert. Eit utkast har blitt oppretta frå den siste publiserte versjonen.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Utan tittel',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Tilkobling tapt. Kobler til på nytt…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Lastar dokument…',
   /** The text of the document not found pane if the schema is known */
