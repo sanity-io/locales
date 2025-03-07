@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Nie można skopiować linku do schowka',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Skopiowano link do schowka',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Po usunięciu komentarza nie można go odzyskać.',
   /** The delete dialog confirm button text for a comment */
