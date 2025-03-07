@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Не удалось скопировать ссылку в буфер обмена',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Ссылка скопирована в буфер обмена',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'После удаления комментарий нельзя будет восстановить.',
   /** The delete dialog confirm button text for a comment */
