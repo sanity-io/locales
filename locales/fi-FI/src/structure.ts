@@ -127,11 +127,28 @@ export default removeUndefinedLocaleResources({
     'Tämä viite on poistettu sen jälkeen, kun avasit sen.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Lisää julkaisuun',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Avaa julkaisu muokattavaksi',
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description':
     'Virhe tapahtui lisättäessä asiakirjaa julkaisuun: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
   'banners.release.error.title': 'Virhe lisättäessä asiakirjaa julkaisuun',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Asiakirja on olemassa vain',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'julkaisussa',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'julkaisuissa',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Tämä asiakirja on osa <VersionBadge/> julkaisua ja {{count}} muuta julkaisua.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Tämä asiakirja on osa <VersionBadge/> julkaisua ja {{count}} muuta julkaisua',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Tämä asiakirja on osa <VersionBadge/> julkaisua',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Ei ole <Label>{{title}}</Label> julkaisussa.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
