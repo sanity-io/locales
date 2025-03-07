@@ -12,12 +12,6 @@ export default removeUndefinedLocaleResources({
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Tarayıcınız bu işlemi desteklemiyor',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': 'Belge "{{fieldNames}}" kopyalandı',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Alan "{{fieldName}}" kopyalandı',
-  /** The success message that is shown when a array item is copied */
-  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Öğe "{{typeName}}" kopyalandı',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Boş değer, kopyalanacak bir şey yok',
   /** --- On copy --- */
@@ -34,12 +28,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Yapıştırılacak bir şey yok',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Geçersiz panoya öğesi',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Belge "{{fieldNames}}" güncellendi',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'Alan "{{fieldName}}" güncellendi',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" bir "{{targetSchemaType}}" içinde kabul edilmiyor',
