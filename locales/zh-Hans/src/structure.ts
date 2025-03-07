@@ -112,10 +112,21 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text': '自您打开以来，此引用已被移除。',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': '添加到发布',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': '打开发布以编辑',
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description': '将文档添加到发布时发生错误：{{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
   'banners.release.error.title': '添加文档到发布时出错',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': '该文档仅存在于',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': '发布中',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    '此文档是<VersionBadge/>发布的一部分，以及{{count}}个更多发布',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single': '此文档是<VersionBadge/>发布的一部分',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '不在<Label>{{title}}</Label>发布中。',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
