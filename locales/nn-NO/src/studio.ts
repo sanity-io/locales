@@ -429,6 +429,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'Utfasa',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Utan tittel',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Tilkopling tapt. Kobler til på nytt…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Har feil',
   /** Accessibility label for the icon that indicates the field has validation information */
