@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Impossibile copiare il link negli appunti',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link copiato negli appunti',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Una volta eliminato, un commento non può essere recuperato.',
   /** The delete dialog confirm button text for a comment */

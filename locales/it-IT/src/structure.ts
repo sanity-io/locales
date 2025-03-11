@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Operazione non pronta',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Pubblica',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Pubblica',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Pubblica',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -125,9 +127,36 @@ export default removeUndefinedLocaleResources({
     'Questo riferimento è stato rimosso da quando lo hai aperto.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Aggiungi alla release',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Apri la release per modificare',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    "Si è verificato un errore durante l'aggiunta del documento alla release: {{message}}",
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': "Errore nell'aggiunta del documento alla release",
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Il documento esiste solo nella',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'release',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'releases',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Questo documento fa parte della release <VersionBadge/> e di {{count}} altra release.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Questo documento fa parte della release <VersionBadge/> e di altre {{count}} releases',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Questo documento fa parte della release <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release':
     'Non presente nella release <VersionBadge>{{title}}</VersionBadge>.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Attendere mentre il documento viene aggiunto alla release. Non dovrebbe richiedere più di qualche secondo.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Aggiunta del documento alla release in corso…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Questo documento sarà ritirato come parte della release <VersionBadge>{{title}}</VersionBadge>',
@@ -159,6 +188,27 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'A',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" non è una modalità di confronto documenti supportata.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam':
+    'Il parametro del documento successivo non è valido.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Impossibile confrontare i documenti',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Il parametro del documento precedente non è valido.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Confronta versioni',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Bozza',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Pubblicato',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Confronta versioni',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Annulla',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -183,9 +233,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID del documento',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'ID del documento copiato negli appunti!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     "Copia dell'ID del documento non riuscita",
@@ -411,8 +458,6 @@ export default removeUndefinedLocaleResources({
     'La pubblicazione del documento è stata annullata. È stata creata una bozza dalla versione pubblicata più recente.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Senza titolo',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Connessione persa. Riconnessione in corso…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Caricamento documento in corso…',
   /** The text of the document not found pane if the schema is known */
