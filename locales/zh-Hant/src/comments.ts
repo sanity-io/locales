@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': '無法複製連結到剪貼簿',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': '已複製連結到剪貼簿',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': '一旦刪除，留言將無法恢復。',
   /** The delete dialog confirm button text for a comment */
