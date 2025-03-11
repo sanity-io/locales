@@ -430,6 +430,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'zastarjelo',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Bez naslova',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Izgubljena veza. Ponovno povezivanje…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Ima grešku',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1107,7 +1109,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Novi dokument…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Ne možete stvoriti nove objavljene dokumente',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'Ne možete dodavati dokumente ovom izdanju',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtriraj',
@@ -1177,6 +1181,8 @@ export default removeUndefinedLocaleResources({
     'Verzija <strong>{{title}}</strong> je uspješno odbačena',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Novo Izdanje',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nije uspjelo postavljanje verzije da se ne objavi u izdanju',
@@ -1227,7 +1233,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'Približno vrijeme izdanja',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'Opišite izdanje…',
+  'release.form.placeholder-describe-release': 'Opišite izdanje…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Sakrij izdanje',
   /** Label for draft perspective in navbar */
