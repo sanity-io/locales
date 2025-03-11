@@ -12,12 +12,6 @@ export default removeUndefinedLocaleResources({
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Votre navigateur ne prend pas en charge cette action',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': 'Document "{{fieldNames}}" copié',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Champ "{{fieldName}}" copié',
-  /** The success message that is shown when a array item is copied */
-  'copy-paste.on-copy.validation.copy-item_one-success.title': 'Élément "{{typeName}}" copié',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Valeur vide, rien à copier',
   /** --- On copy --- */
@@ -34,12 +28,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Rien à coller',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Élément du presse-papiers invalide',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Document "{{fieldNames}}" mis à jour',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'Champ "{{fieldName}}" mis à jour',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     'Un "{{sourceSchemaType}}" n\'est pas autorisé dans un "{{targetSchemaType}}"',
