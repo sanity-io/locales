@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'ოპერაცია არ არის მზად',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'გამოცემა',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'გამოქვეყნება',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'გამოცემა',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -124,8 +126,35 @@ export default removeUndefinedLocaleResources({
     'ეს რეფერენცია წაშლილია თქვენი გახსნის შემდეგ.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'დაამატეთ რელიზს',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'გახსენით რელიზი რედაქტირებისთვის',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'დოკუმენტის რელიზზე დამატებისას წარმოიშვა შეცდომა: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'შეცდომა დოკუმენტის რელიზზე დამატებისას',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'დოკუმენტი არსებობს მხოლოდ',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'რელიზში',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'რელიზებში',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზისა და კიდევ {{count}} რელიზის.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზისა და კიდევ {{count}} რელიზების',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზის',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'არ არის <VersionBadge>{{title}}</VersionBadge> რელიზში.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'დაელოდეთ, სანამ დოკუმენტი რელიზზე დაემატება. ეს არ უნდა მიიღოს მეტი წამები, ვიდრე რამდენიმე წამი.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'დოკუმენტის რელიზზე დამატება…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'ეს დოკუმენტი გამოქვეყნდება <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად',
@@ -157,6 +186,25 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'მდე',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" არ არის დოკუმენტთა შედარების მხარდაჭერილი რეჟიმი.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'შემდეგი დოკუმენტის პარამეტრი არასწორია.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'დოკუმენტთა შედარება შეუძლებელია',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'წინა დოკუმენტის პარამეტრი არასწორია.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'შედარება ვერსიები',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'დრაფტი',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'გამოქვეყნებული',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'ვერსიების შედარება',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'გაუქმება',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -181,8 +229,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'დატასეტი',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'დოკუმენტის ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'დოკუმენტის ID კოპირებულია ბუფერში!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'დოკუმენტის ID-ის კოპირება ჩაიშალა',
@@ -404,8 +450,6 @@ export default removeUndefinedLocaleResources({
     '<Strong>{{title}}</Strong> გაუქმებულია. ბოლო გამოქვეყნებულ ვერსიიდან შეიქმნა დრაფტი.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'უსათაურო',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'კავშირი დაიკარგა. ხელახლა შეერთება…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'დოკუმენტის ჩატვირთვა…',
   /** The text of the document not found pane if the schema is known */
