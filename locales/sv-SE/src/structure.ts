@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Operationen är inte redo',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publicera',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Publicera',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publicera',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -110,7 +112,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Redaktörsförfrågan skickad',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Fråga om att redigera',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Du tittar på ett skrivskyddat dokument som publicerades som en del av <VersionBadge> en release</VersionBadge>. Det kan inte redigeras',
   /** The text for the reload button */
@@ -125,8 +127,38 @@ export default removeUndefinedLocaleResources({
     'Denna referens har tagits bort sedan du öppnade den.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Lägg till i release',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Öppna release för att redigera',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Ett fel inträffade när dokumentet lades till i releasen: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Fel vid tillägg av dokument till release',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokumentet finns endast i',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'releasen',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'releaser',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Detta dokument är en del av <VersionBadge/> releasen och {{count}} ytterligare release.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Detta dokument är en del av <VersionBadge/> releasen och {{count}} ytterligare releaser',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Detta dokument är en del av <VersionBadge/> releasen',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Inte i <Label>{{title}}</Label> release.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Vänligen vänta medan dokumentet läggs till i releasen. Det bör inte ta längre än några sekunder.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Lägger till dokument i release…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Detta dokument kommer att avpubliceras som en del av <VersionBadge>{{title}}</VersionBadge> releasen',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -155,6 +187,24 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Till',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': '"{{input}}" är inte ett stött dokumentjämförelseläge.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Nästa dokumentparameter är ogiltig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Kan inte jämföra dokument',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'Föregående dokumentparameter är ogiltig.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Jämför versioner',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Utkast',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Publicerad',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Jämför versioner',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Avbryt',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -179,8 +229,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Kopierade dokument-ID till urklipp!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Misslyckades med att kopiera dokument-ID',
@@ -404,8 +452,6 @@ export default removeUndefinedLocaleResources({
     'Dokumentet avpublicerades. Ett utkast har skapats från den senaste publicerade versionen.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Namnlös',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Anslutningen förlorad. Återansluter…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Laddar dokument…',
   /** The text of the document not found pane if the schema is known */
