@@ -433,6 +433,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': '非推奨',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '無題',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': '接続が失われました。再接続中…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'エラーがあります',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1113,7 +1115,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '新しいドキュメント…',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': '公開されたドキュメントを新規作成することはできません',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'このリリースにドキュメントを追加することはできません',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'フィルター',
@@ -1183,6 +1187,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{title}}</strong>バージョンは正常に破棄されました',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新規リリース',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'このアクションを実行する権限がありません',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'リリースで未公開に設定するバージョンの設定に失敗しました',
@@ -1233,7 +1239,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'リリースのおおよその時間',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'リリースを説明してください…',
+  'release.form.placeholder-describe-release': 'リリースの説明を記入してください…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'リリースを非表示にする',
   /** Label for draft perspective in navbar */
