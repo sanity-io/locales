@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Kan link niet naar klembord kopiëren',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link gekopieerd naar klembord',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Na het verwijderen kan een opmerking niet worden hersteld.',
   /** The delete dialog confirm button text for a comment */
