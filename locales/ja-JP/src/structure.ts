@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': '操作は準備ができていません',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '公開',
+  /** Label for the "Publish" document action */
+  'action.publish.label': '公開',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': '公開',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -110,7 +112,7 @@ export default removeUndefinedLocaleResources({
     '編集リクエストが送信されました',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': '編集を依頼する',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     '公開された<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
   /** The text for the reload button */
@@ -125,8 +127,33 @@ export default removeUndefinedLocaleResources({
     'このリファレンスは開いた時から削除されています。',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'リリースに追加する',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': '編集のためにリリースを開く',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'ドキュメントをリリースに追加する際にエラーが発生しました：{{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'ドキュメントをリリースに追加する際のエラー',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'このドキュメントは現在',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'リリースにのみ存在します',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'このドキュメントは<VersionBadge/>リリースの一部であり、さらに{{count}}つのリリースにも含まれています',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'このドキュメントは<VersionBadge/>リリースの一部です',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<Label>{{title}}</Label>リリースに含まれていません。',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'ドキュメントがリリースに追加されるのをお待ちください。数秒以内に完了するはずです。',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'ドキュメントをリリースに追加しています…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'このドキュメントは<VersionBadge>{{title}}</VersionBadge>リリースの一部として非公開になります',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新しい {{schemaType}}',
@@ -155,6 +182,25 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'まで',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}"はサポートされていないドキュメント比較モードです。',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': '次のドキュメントパラメータが無効です。',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'ドキュメントを比較できません',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': '前のドキュメントパラメータが無効です。',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'バージョンを比較する',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'ドラフト',
+  /** The string used to label published documents */
+  'compare-versions.status.published': '公開済み',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'バージョンを比較する',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'キャンセル',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -179,9 +225,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'データセット',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ドキュメントID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'クリップボードにドキュメントIDをコピーしました！',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'ドキュメントIDのコピーに失敗しました',
@@ -403,8 +446,6 @@ export default removeUndefinedLocaleResources({
     'ドキュメントの公開が取り消されました。最新の公開バージョンからドラフトが作成されました。',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '無題',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': '接続が失われました。再接続中…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'ドキュメントを読み込んでいます…',
   /** The text of the document not found pane if the schema is known */
