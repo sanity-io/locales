@@ -431,6 +431,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'elavult',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Cím nélküli',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Kapcsolat megszakadt. Újracsatlakozás…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Hiba van',
   /** Accessibility label for the icon that indicates the field has validation information */
