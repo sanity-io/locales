@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Operationen er ikke klar',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publicér',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Udgiv',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publicér',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -125,8 +127,35 @@ export default removeUndefinedLocaleResources({
     'Denne reference er blevet fjernet, siden du åbnede den.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Tilføj til udgivelse',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Åbn udgivelse for at redigere',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Der opstod en fejl ved tilføjelse af dokument til udgivelsen: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Fejl ved tilføjelse af dokument til udgivelse',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokumentet findes kun i',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'udgivelsen',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'udgivelserne',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Dette dokument er en del af <VersionBadge/> udgivelsen og {{count}} yderligere udgivelse.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Dette dokument er en del af <VersionBadge/> udgivelsen og {{count}} yderligere udgivelser',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Dette dokument er en del af <VersionBadge/> udgivelsen',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Ikke i <VersionBadge>{{title}}</VersionBadge> udgivelsen.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Vent venligst mens dokumentet tilføjes til udgivelsen. Det burde ikke tage mere end et par sekunder.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Tilføjer dokument til udgivelse…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dette dokument vil blive afpubliseret som en del af <VersionBadge>{{title}}</VersionBadge> udgivelsen',
@@ -158,6 +187,25 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Til',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" er ikke en understøttet dokument sammenligningsmodus.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Den næste dokumentparameter er ugyldig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Ude af stand til at sammenligne dokumenter',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'Den forrige dokumentparameter er ugyldig.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Sammenlign versioner',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Kladde',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Udgivet',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Sammenlign versioner',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Annuller',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -182,9 +230,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Datasæt',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Kopieret dokument-ID til udklipsholder!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'Kunne ikke kopiere dokument-ID',
   /** The header for the project ID column in the list of cross-dataset references found */
@@ -408,9 +453,6 @@ export default removeUndefinedLocaleResources({
     '<Strong>{{title}}</Strong> blev afpubliceret. Et udkast er blevet oprettet fra den seneste publicerede version.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Uden titel',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title':
-    'Forbindelsen mistet. Genopretter forbindelse…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Indlæser dokument…',
   /** The text of the document not found pane if the schema is known */
