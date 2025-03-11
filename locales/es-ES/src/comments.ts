@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'No se pudo copiar el enlace al portapapeles',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Enlace copiado al portapapeles',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Una vez eliminado, un comentario no se puede recuperar.',
   /** The delete dialog confirm button text for a comment */
