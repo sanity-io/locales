@@ -119,6 +119,10 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     "Aucun document n'utilise cette image",
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text':
+    "La publication '<strong>{{title}}</strong>' a été supprimée.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Aller au mois suivant',
   /** Action message for navigating to next year */
@@ -235,6 +239,10 @@ export default removeUndefinedLocaleResources({
     'Consultez la console développeur pour plus d’informations',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Le rendu des modifications de ce champ a provoqué une erreur',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Nous ne pouvons pas charger les modifications pour ce document.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': "Quelque chose s'est mal passé",
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Erreur de valeur : La valeur est de type "<code>{{actualType}}</code>", attendu "<code>{{expectedType}}</code>"',
@@ -269,6 +277,8 @@ export default removeUndefinedLocaleResources({
     'Modifiez le document ou sélectionnez une version antérieure dans la chronologie pour voir une liste de changements apparaître dans ce panneau.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Il n’y a pas de changements',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': "Il n'est pas possible de sélectionner cet événement",
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Annotation ajoutée',
   /** Portable Text diff: An annotation was changed */
@@ -312,6 +322,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Supprimé',
   /** Title for the Review Changes pane */
   'changes.title': 'Réviser les changements',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Brouillon',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -347,6 +359,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Trier par titre',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Créé le {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Édité {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -419,6 +435,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'obsolète',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Sans titre',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Connexion perdue. Reconnexion en cours…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Contient une erreur',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -537,6 +555,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Résolution de la valeur initiale…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Désactivé',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Sélectionnez une date dans le futur.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'par ex. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1102,6 +1122,12 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Nouveau document…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip':
+    'Vous ne pouvez pas créer de nouveaux documents publiés',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip':
+    'Vous ne pouvez pas ajouter de documents à cette publication',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filtrer',
   /** Loading indicator text within the new document menu */
@@ -1150,6 +1176,107 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'à l’instant',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Ajouter à la publication',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Ajouter à {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Déjà dans la publication {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Copier la version vers',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Nouvelle publication',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Supprimer la version',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Échec de la suppression de la version',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    'La version <strong>{{title}}</strong> a été supprimée avec succès',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Nouvelle Publication',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': "Vous n'avez pas la permission d'effectuer cette action",
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Échec de la définition de la version à dépublier sur la publication',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'La version <strong>{{title}}</strong> a été définie avec succès pour être dépubliée sur la publication',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Voir la publication',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Programmé pour la publication le {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Brouillon',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Brouillons',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Publié',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Créé le {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    "Ce document est en mode d'édition en direct, les brouillons sont désactivés",
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Édité le {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Prévu pour le {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Pas de modifications',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Non publié',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Publié le {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Programmé pour le {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Date inconnue',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Cette version a été supprimée',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Copier la version vers une nouvelle version',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Nouvelle version',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    "L'heure de sortie prévue est utilisée pour créer de meilleures prévisualisations et des indications sur d'éventuels conflits entre documents.",
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Vous pouvez toujours la modifier plus tard.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Heure approximative de sortie',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Décrivez la version…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Masquer la version',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Brouillons',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Publié',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Versions',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Version sans titre',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "La version '{{title}}' a été archivée",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Échec de la création de la release',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "La release '{{title}}' n'a pas pu être trouvée",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Une version de ce document a déjà été ajoutée',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    "Cette release a été planifiée. Annulez la planification pour ajouter d'autres documents.",
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Dès que possible',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'À une heure précise',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Indécis',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Voir toutes les versions du document',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Ouvrir la recherche',
@@ -1621,6 +1748,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Une erreur s’est produite lors de la récupération des modifications du document.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    "Activez l'API d'événements via la configuration du Studio pour voir l'historique du document.",
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    "L'historique des versions de documents n'est disponible qu'à travers l'API d'événements.",
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Lors de la modification du contenu du document, les versions du document apparaîtront dans ce menu.',
@@ -1641,6 +1774,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Révisions du document',
   /** Label for loading history */
   'timeline.loading-history': 'Chargement de l’historique…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Aucun événement précédent',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Créé',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
