@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Nije moguće kopirati poveznicu u međuspremnik',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Kopirana poveznica u međuspremnik',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Jednom izbrisan, komentar se ne može povratiti.',
   /** The delete dialog confirm button text for a comment */
