@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Операция не готова',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Опубликовать',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Опубликовать',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Опубликовать',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -118,8 +120,30 @@ export default removeUndefinedLocaleResources({
     'Эта ссылка была удалена с тех пор, как вы ее открыли.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Добавить в релиз',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Открыть релиз для редактирования',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Произошла ошибка при добавлении документа в релиз: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Ошибка добавления документа в релиз',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Документ существует только в',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'релизе',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Этот документ является частью <VersionBadge/> релиза и еще {{count}} релиза.',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Этот документ является частью <VersionBadge/> релиза',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Не входит в релиз <VersionBadge>{{title}}</VersionBadge>.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Пожалуйста, подождите, пока документ будет добавлен в релиз. Это не должно занять более нескольких секунд.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Добавление документа в релиз…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Этот документ будет снят с публикации как часть релиза <VersionBadge>{{title}}</VersionBadge>',
@@ -151,6 +175,26 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'До',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" не является поддерживаемым режимом сравнения документов.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Параметр следующего документа недействителен.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Невозможно сравнить документы',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Параметр предыдущего документа недействителен.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Сравнить версии',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Черновик',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Опубликовано',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Сравнение версий',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Отмена',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -167,9 +211,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Набор данных',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID документа',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'ID документа скопирован в буфер обмена!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Не удалось скопировать идентификатор документа',
@@ -387,8 +428,6 @@ export default removeUndefinedLocaleResources({
     'Документ был снят с публикации. Черновик был создан из последней опубликованной версии.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Без названия',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Соединение потеряно. Переподключение…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Загрузка документа…',
   /** The text of the document not found pane if the schema is known */
