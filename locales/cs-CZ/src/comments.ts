@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Nelze zkopírovat odkaz do schránky',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Odkaz zkopírován do schránky',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Po smazání nelze komentář obnovit.',
   /** The delete dialog confirm button text for a comment */
