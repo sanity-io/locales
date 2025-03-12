@@ -419,6 +419,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'устаревший',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Без названия',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Соединение потеряно. Переподключение…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Есть ошибка',
   /** Accessibility label for the icon that indicates the field has validation information */
