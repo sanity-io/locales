@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Bağlantıyı panoya kopyalamak mümkün değil',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Bağlantı panoya kopyalandı',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Bir kez silindikten sonra, bir yorum geri alınamaz.',
   /** The delete dialog confirm button text for a comment */
