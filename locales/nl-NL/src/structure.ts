@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Operatie niet klaar',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publiceren',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Publiceren',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publiceren',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -78,6 +80,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Dit document heeft live bewerken ingeschakeld en kan niet worden gedepubliceerd',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'U bekijkt een alleen-lezen document dat werd gearchiveerd als onderdeel van <VersionBadge>{{title}}</VersionBadge>. Het kan niet bewerkt worden',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Herstel meest recente versie',
   /** The text content for the deleted document banner */
@@ -107,6 +112,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Aanvraag verzonden',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Vraag om te bewerken',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'U bekijkt een alleen-lezen document dat werd gepubliceerd als onderdeel van <VersionBadge>{{title}}</VersionBadge>. Het kan niet bewerkt worden',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referentie herladen',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -117,6 +125,40 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Deze referentie is verwijderd sinds u deze geopend heeft.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Toevoegen aan release',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Release openen om te bewerken',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Er is een fout opgetreden bij het toevoegen van het document aan de release: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Fout bij het toevoegen van document aan release',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Het document bestaat alleen in de',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'release',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'releases',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Dit document maakt deel uit van de <VersionBadge/> release en {{count}} meer release.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Dit document maakt deel uit van de <VersionBadge/> release en {{count}} meer releases',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Dit document maakt deel uit van de <VersionBadge/> release',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Niet in de <VersionBadge>{{title}}</VersionBadge> release.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Even geduld terwijl het document wordt toegevoegd aan de release. Dit zou niet langer dan een paar seconden moeten duren.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Document wordt toegevoegd aan release…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Dit document zal niet gepubliceerd worden als onderdeel van de <VersionBadge>{{title}}</VersionBadge> release',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nieuw {{schemaType}}',
@@ -145,6 +187,25 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Naar',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" is geen ondersteunde documentvergelijkingsmodus.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'De volgende documentparameter is ongeldig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Niet in staat om documenten te vergelijken',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'De vorige documentparameter is ongeldig.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Versies vergelijken',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Concept',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Gepubliceerd',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Versies vergelijken',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Annuleren',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -169,8 +230,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Document-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Document-ID gekopieerd naar klembord!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Kopiëren van document ID mislukt',
@@ -276,6 +335,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Document synchroniseren…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Inspecteer <VersionBadge>{{releaseTitle}}</VersionBadge> document',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Open <VersionBadge>concept</VersionBadge> document',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Open <VersionBadge>{{releaseTitle}}</VersionBadge> release',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Laden…',
 
@@ -368,6 +434,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Document URL gekopieerd naar klembord',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> is toegevoegd aan de release',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Het document is succesvol verwijderd',
@@ -387,8 +456,6 @@ export default removeUndefinedLocaleResources({
     'De publicatie van het document is ongedaan gemaakt. Er is een concept gemaakt van de laatste gepubliceerde versie.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Naamloos',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Verbinding verloren. Opnieuw verbinden…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Document laden…',
   /** The text of the document not found pane if the schema is known */
