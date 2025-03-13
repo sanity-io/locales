@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Aðgerð ekki tilbúin',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Birta',
+  /** Label for the "Publish" document action */
+  'action.publish.label': undefined, // 'Publish'
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Birta',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -76,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Þetta skjal hefur beina ritun virkjaða og getur ekki verið afturkallað',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description': undefined, // 'You are viewing a read-only document that was archived as part of <VersionBadge>{{title}}</VersionBadge>. It can\'t be edited'
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Endurheimta nýjustu útgáfuna',
   /** The text content for the deleted document banner */
@@ -105,6 +109,8 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Beiðni um ritstjóra send',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Biðja um að fá að breyta',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description': undefined, // 'You are viewing a read-only document that was published as part of <VersionBadge>{{title}}</VersionBadge>. It can\'t be edited'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Endurhlaða tilvísun',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -115,6 +121,34 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Þessi tilvísun hefur verið fjarlægð síðan þú opnaðir hana.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': undefined, // 'Add to release'
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': undefined, // 'Open release to edit'
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description': undefined, // 'An error occurred when adding document to the release: {{message}}'
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': undefined, // 'Error adding document to release'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': undefined, // 'The document only exists in the'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': undefined, // 'release'
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': undefined, // 'releases'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more release.'
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more releases'
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single': undefined, // 'This document is part of the <VersionBadge/> release'
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': undefined, // 'Not in the <VersionBadge>{{title}}</VersionBadge> release.'
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description': undefined, // 'Please hold tight while the document is added to the release. It should not take longer than a few seconds.'
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': undefined, // 'Adding document to release…'
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text': undefined, // 'This document will be unpublished as part of the <VersionBadge>{{title}}</VersionBadge> release'
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nýtt {{schemaType}}',
@@ -143,6 +177,24 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Til',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': undefined, // '"{{input}}" is not a supported document comparison mode.'
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': undefined, // 'The next document parameter is invalid.'
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': undefined, // 'Unable to compare documents'
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': undefined, // 'The previous document parameter is invalid.'
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': undefined, // 'Compare versions'
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': undefined, // 'Draft'
+  /** The string used to label published documents */
+  'compare-versions.status.published': undefined, // 'Published'
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': undefined, // 'Compare versions'
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Hætta við',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -167,8 +219,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Gagnasanf',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Auðkenni skjals',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Afritað aðkenni skjals á klippiborð!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Mistókst að afrita skjalaauðkenni',
@@ -272,6 +322,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Samstilli skjal…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': undefined, // 'Inspect <VersionBadge>{{releaseTitle}}</VersionBadge> document'
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': undefined, // 'Open <VersionBadge>draft</VersionBadge> document'
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': undefined, // 'Open <VersionBadge>{{releaseTitle}}</VersionBadge> release'
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Hleður…',
 
@@ -362,6 +419,8 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Skjalavefslóð afrituð á klippiborð',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion': undefined, // '<Strong>{{title}}</Strong> was added to the release'
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Skjalinu var eytt',
   /** The text when a discard changes operation succeeded  */
@@ -380,8 +439,6 @@ export default removeUndefinedLocaleResources({
     'Birtingu skjalsins var afturkallað. Drög hafa verið búin til úr síðustu birtu útgáfu.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Ótitlað',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Tenging rofnaði. Endurtengi…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Hleð skjali…',
   /** The text of the document not found pane if the schema is known */

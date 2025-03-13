@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Impossible de copier le lien dans le presse-papiers',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Lien copié dans le presse-papiers',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Une fois supprimé, un commentaire ne peut pas être récupéré.',
   /** The delete dialog confirm button text for a comment */
