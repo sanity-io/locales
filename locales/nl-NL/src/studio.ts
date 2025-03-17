@@ -120,6 +120,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Geen documenten gebruiken deze afbeelding',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "De release '<strong>{{title}}</strong>' is verwijderd.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ga naar de volgende maand',
   /** Action message for navigating to next year */
@@ -235,6 +238,10 @@ export default removeUndefinedLocaleResources({
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title':
     'Het weergeven van de wijzigingen in dit veld veroorzaakte een fout',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'We kunnen de wijzigingen voor dit document niet laden.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Er is iets fout gegaan',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Waarde fout: Waarde is van type "<code>{{actualType}}</code>", verwacht "<code>{{expectedType}}</code>"',
@@ -269,6 +276,8 @@ export default removeUndefinedLocaleResources({
     'Bewerk het document of selecteer een oudere versie in de tijdlijn om een lijst van wijzigingen te zien verschijnen in dit paneel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Er zijn geen wijzigingen',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Het is niet mogelijk om deze gebeurtenis te selecteren',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Annotatie toegevoegd',
   /** Portable Text diff: An annotation was changed */
@@ -312,6 +321,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Verwijderd',
   /** Title for the Review Changes pane */
   'changes.title': 'Wijzigingen beoordelen',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Concept',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -347,6 +358,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorteren op titel',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Gemaakt op {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Bewerkt {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -419,6 +434,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'verouderd',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Zonder titel',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Verbinding verloren. Opnieuw verbinden…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Heeft een fout',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -537,6 +554,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Initiële waarde oplossen…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Uitgeschakeld',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Selecteer een datum in de toekomst.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'bijv. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1099,6 +1118,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Nieuw document…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'U kunt geen nieuwe gepubliceerde documenten aanmaken',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'U kunt geen documenten toevoegen aan deze release',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Filter',
   /** Loading indicator text within the new document menu */
@@ -1147,6 +1170,107 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'zojuist',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Toevoegen aan release',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Toevoegen aan {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Al in release {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopieer versie naar',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Nieuwe release',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Versie verwijderen',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Mislukt om versie te verwijderen',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    'Versie <strong>{{title}}</strong> is succesvol verwijderd',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Nieuwe Release',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'U heeft geen toestemming om deze actie uit te voeren',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Mislukt om versie in te stellen om niet gepubliceerd te worden bij release',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Succesvol ingesteld dat <strong>{{title}}</strong> niet gepubliceerd wordt bij release',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Bekijk release',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Gepland voor publicatie op {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Concept',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Concepten',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Gepubliceerd',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Gecreëerd {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Dit document is in live bewerkingsmodus, concepten zijn uitgeschakeld',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Bewerkt {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Bedoeld voor {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Geen bewerkingen',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Niet gepubliceerd',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Gepubliceerd {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Gepland voor {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Onbekende datum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Deze release is verwijderd',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Versie kopiëren naar nieuwe release',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Nieuwe release',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'De beoogde uitgavetijd wordt gebruikt om betere previews te maken en aanwijzingen te geven of documenten conflicteren.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Je kunt het altijd later wijzigen.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Geschatte tijd van uitgave',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Beschrijf de release…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Release verbergen',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Concepten',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Gepubliceerd',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Releases',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Naamloze release',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "De '{{title}}' release is gearchiveerd",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Aanmaken van release mislukt',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "De release '{{title}}' kon niet worden gevonden",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Een versie van dit document is al toegevoegd',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Deze release is gepland. Annuleer de planning om meer documenten toe te voegen.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Zo snel mogelijk',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Op tijd',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Onbeslist',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Bekijk alle documentversies',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Zoeken openen',
@@ -1605,6 +1729,12 @@ export default removeUndefinedLocaleResources({
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Er is een fout opgetreden bij het ophalen van documentwijzigingen.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Schakel de events API in via de Studio-configuratie om de documentgeschiedenis te bekijken.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Versie documentgeschiedenis is alleen beschikbaar via de Events API.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Wanneer u de inhoud van het document wijzigt, zullen de documentversies in dit menu verschijnen.',
@@ -1625,6 +1755,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Documentrevisies',
   /** Label for loading history */
   'timeline.loading-history': 'Geschiedenis laden…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Geen eerdere gebeurtenissen',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Gemaakt',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
