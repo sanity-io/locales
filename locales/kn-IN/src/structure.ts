@@ -40,6 +40,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'ಪ್ರಕಟಿಸು',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'ಪ್ರಕಟಿಸು',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'ಪ್ರಕಟಿಸು',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -109,7 +111,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'ಸಂಪಾದಕರ ವಿನಂತಿ ಕಳುಹಿಸಲಾಗಿದೆ',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'ಸಂಪಾದನೆ ಮಾಡಲು ಕೇಳಿ',
-  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'ನೀವು ಓದಲು ಮಾತ್ರ ಅನುಮತಿಸಿದ ದಾಖಲೆಯನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ, ಇದು <VersionBadge> ಒಂದು ಬಿಡುಗಡೆಯ</VersionBadge> ಭಾಗವಾಗಿ ಪ್ರಕಟಿಸಲಾಗಿದೆ. ಇದನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** The text for the reload button */
@@ -124,8 +126,37 @@ export default removeUndefinedLocaleResources({
     'ನೀವು ಇದನ್ನು ತೆರೆದ ನಂತರ ಈ ಉಲ್ಲೇಖವನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'ಬಿಡುಗಡೆಗೆ ಸೇರಿಸಿ',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'ಸಂಪಾದನೆಗೆ ಬಿಡುಗಡೆಯನ್ನು ತೆರೆಯಿರಿ',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description': 'ದಾಖಲೆಯನ್ನು ಬಿಡುಗಡೆಗೆ ಸೇರಿಸುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'ದಾಖಲೆಯನ್ನು ಬಿಡುಗಡೆಗೆ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'ದಾಖಲೆಯು ಕೇವಲ',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'ಬಿಡುಗಡೆಯಲ್ಲಿ ಮಾತ್ರ ಇದೆ',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'ಬಿಡುಗಡೆಗಳಲ್ಲಿ ಮಾತ್ರ ಇದೆ',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ ಮತ್ತು {{count}} ಹೆಚ್ಚುವರಿ ಬಿಡುಗಡೆಯಲ್ಲಿದೆ.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ ಮತ್ತು {{count}} ಹೆಚ್ಚುವರಿ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<Label>{{title}}</Label> ಬಿಡುಗಡೆಯಲ್ಲಿ ಇಲ್ಲ.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'ದಾಖಲೆಯನ್ನು ಬಿಡುಗಡೆಗೆ ಸೇರಿಸುವಾಗ ದಯವಿಟ್ಟು ಕಾಯಿರಿ. ಇದು ಕೆಲವು ಸೆಕೆಂಡುಗಳಿಗಿಂತ ಹೆಚ್ಚು ಸಮಯ ತಗೊಳ್ಳಬಾರದು.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'ದಾಖಲೆಯನ್ನು ಬಿಡುಗಡೆಗೆ ಸೇರಿಸುತ್ತಿದೆ…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'ಈ ದಾಖಲೆಯು <VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿ ಅಪ್ರಕಟಿತವಾಗಲಿದೆ',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ಹೊಸ {{schemaType}}',
@@ -154,6 +185,25 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'ಗೆ',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" ಎಂಬುದು ದಾಖಲೆ ಹೋಲಿಕೆ ಮೋಡ್‌ಗೆ ಬೆಂಬಲಿಸದ ಪರಿಕರ.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'ಮುಂದಿನ ದಾಖಲೆ ಪ್ಯಾರಾಮೀಟರ್ ಅಮಾನ್ಯವಾಗಿದೆ.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'ದಾಖಲೆಗಳನ್ನು ಹೋಲಿಸಲು ಅಸಾಧ್ಯ',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'ಹಿಂದಿನ ದಾಖಲೆ ಪ್ಯಾರಾಮೀಟರ್ ಅಮಾನ್ಯವಾಗಿದೆ.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'ಆವೃತ್ತಿಗಳನ್ನು ಹೋಲಿಸಿ',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'ಕರಡು',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'ಪ್ರಕಟಿತ',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'ಆವೃತ್ತಿಗಳನ್ನು ಹೋಲಿಸಿ',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'ರದ್ದುಮಾಡು',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -178,9 +228,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'ಡೇಟಾಸೆಟ್',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ದಾಖಲೆ ಐಡಿ',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'ದಾಖಲೆ ಐಡಿಯನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'ಡಾಕ್ಯುಮೆಂಟ್ ID ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ',
@@ -405,8 +452,6 @@ export default removeUndefinedLocaleResources({
     '<Strong>{{title}}</Strong> ಅನ್‌ಪಬ್ಲಿಷ್ ಮಾಡಲಾಗಿದೆ. ಕೊನೆಯ ಪ್ರಕಟಿತ ಆವೃತ್ತಿಯಿಂದ ಒಂದು ಡ್ರಾಫ್ಟ್ ರಚಿಸಲಾಗಿದೆ.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'ಶೀರ್ಷಿಕೆ ಇಲ್ಲದ',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'ಸಂಪರ್ಕ ಕಡಿದುಹೋಗಿದೆ. ಮರುಸಂಪರ್ಕ ಸಾಧಿಸುತ್ತಿದೆ…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'ದಾಖಲೆ ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…',
   /** The text of the document not found pane if the schema is known */
