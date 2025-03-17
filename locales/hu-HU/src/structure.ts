@@ -41,6 +41,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'A művelet még nem kész',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Közzététel',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Közzététel',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Közzététel',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -125,8 +127,35 @@ export default removeUndefinedLocaleResources({
     'Ez a hivatkozás eltávolításra került, mióta megnyitottad.',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Hozzáadás a kiadáshoz',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Nyissa meg a kiadást szerkesztésre',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Hiba történt a dokumentum hozzáadásakor a kiadáshoz: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Hiba a dokumentum hozzáadásakor a kiadáshoz',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'A dokumentum csak a',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'kiadásban',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'kiadásokban',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Ez a dokumentum a <VersionBadge/> kiadás része és még {{count}} további kiadás.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Ez a dokumentum a <VersionBadge/> kiadás része és még {{count}} további kiadások.',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Ez a dokumentum a <VersionBadge/> kiadás része',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Nincs a <VersionBadge>{{title}}</VersionBadge> kiadásban.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Kérjük, várjon, amíg a dokumentum hozzáadódik a kiadáshoz. Nem kellene tovább tartania néhány másodpercnél.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Dokumentum hozzáadása a kiadáshoz…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ez a dokumentum a <VersionBadge>{{title}}</VersionBadge> kiadás részeként lesz közzé nem téve',
@@ -158,6 +187,27 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Hová',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" nem támogatott dokumentum-összehasonlítási mód.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam':
+    'A következő dokumentum paramétere érvénytelen.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'A dokumentumok összehasonlítása nem lehetséges',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Az előző dokumentum paramétere érvénytelen.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Változatok összehasonlítása',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Vázlat',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Közzétéve',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Változatok összehasonlítása',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Mégse',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -182,9 +232,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokumentum azonosító',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Dokumentum azonosító másolva a vágólapra!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Nem sikerült a dokumentumazonosító másolása',
@@ -410,8 +457,6 @@ export default removeUndefinedLocaleResources({
     'A dokumentum közzétételét megszüntették. A legutóbbi közzétett verzióból vázlat készült.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Cím nélkül',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'A kapcsolat megszakadt. Újracsatlakozás…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Dokumentum betöltése…',
   /** The text of the document not found pane if the schema is known */
