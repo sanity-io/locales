@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'パースペクティブ',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    '<code>previewDrafts</code> パースペクティブは <code>drafts</code> に名称変更され、現在非推奨です。この変更はパースペクティブサポートがあるバージョン (>= v2021-03-25) にて有効です。',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'ドキュメントを読む',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'パースペクティブなし（APIデフォルト）',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'パースペクティブを使用すると、異なる"ビュー"に対してクエリを実行して、データセットのコンテンツを異なる方法で見ることができます',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'デフォルトのパースペクティブは、今後のAPIバージョンで「<code>raw</code>」から「<code>published</code>」に変更されます。詳細についてはドキュメントを参照してください。',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ピン留めされたリリース',
   /** Title for popover that explains what "Perspectives" are */
