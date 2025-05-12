@@ -39,6 +39,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Аперацыя не гатова',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Апублікаваць',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Апублікаваць',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Апублікаваць',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -76,6 +78,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Гэты дакумент мае ўключаны рэжым Live Edit і не можа быць зняты з публікацыі',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Вы глядзіце на дакумент толькі для чытання, які быў архіваваны як частка <VersionBadge>{{title}}</VersionBadge>. Яго нельга рэдагаваць',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Аднавіць апошнюю версію',
   /** The text content for the deleted document banner */
@@ -100,6 +105,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text':
     'Запытаць дазвол на рэдагаванне',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Вы глядзіце на дакумент толькі для чытання, які быў апублікаваны як частка <VersionBadge>{{title}}</VersionBadge>. Яго нельга рэдагаваць',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перазагрузіць спасылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -110,6 +118,35 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Гэтая спасылка была выдалена з моманту, як вы яе адкрылі.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Дадаць у выпуск',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Адкрыць выпуск для рэдагавання',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Пры даданні дакумента ў выпуск адбылася памылка: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Памылка дадання дакумента ў выпуск',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Дакумент існуе толькі ў',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'выпуску',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    "Гэты дакумент з'яўляецца часткай <VersionBadge/> выпуску і яшчэ {{count}} выпуску.",
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    "Гэты дакумент з'яўляецца часткай <VersionBadge/> выпуску",
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Не ў <VersionBadge>{{title}}</VersionBadge> выпуску.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Калі ласка, пачакайце, пакуль дакумент будзе дададзены ў выпуск. Гэта не павінна заняць больш за некалькі секунд.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Даданне дакумента ў выпуск…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Гэты дакумент будзе зняты з публікацыі як частка <VersionBadge>{{title}}</VersionBadge> выпуску',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новы {{schemaType}}',
@@ -138,6 +175,26 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Да',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" не з\'яўляецца падтрымліваемым рэжымам параўнання дакументаў.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Параметр наступнага дакумента недапушчальны.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Немагчыма параўнаць дакументы',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Параметр папярэдняга дакумента недапушчальны.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Параўнаць версіі',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Чарнавік',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Апублікаваны',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Параўнанне версій',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Адмяніць',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -154,9 +211,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID дакумента',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'ID дакумента скапіраваны ў буфер абмену!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Не атрымалася скапіяваць ідэнтыфікатар дакумента',
@@ -256,6 +310,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Сінхранізацыя дакумента…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Праверыць <VersionBadge>{{releaseTitle}}</VersionBadge> дакумент',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Адкрыць <VersionBadge>чарнавік</VersionBadge> дакумент',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Адкрыць <VersionBadge>{{releaseTitle}}</VersionBadge> выпуск',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Загрузка…',
 
@@ -348,6 +409,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL дакумента скапіяваны ў буфер абмену',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> быў дададзены да выпуску',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Дакумент быў паспяхова выдалены',
   /** The text when a discard changes operation succeeded  */
@@ -366,8 +430,6 @@ export default removeUndefinedLocaleResources({
     'Дакумент быў зняты з публікацыі. Чарнавік быў створаны з апошняй апублікаванай версіі.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Без назвы',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Злучэнне страчана. Перападключэнне…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Загрузка дакумента…',
   /** The text of the document not found pane if the schema is known */
