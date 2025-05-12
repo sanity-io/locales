@@ -120,8 +120,7 @@ export default removeUndefinedLocaleResources({
     'Keine Dokumente verwenden dieses Bild',
 
   /** Label when a release has been deleted by a different user */
-  'banners.deleted-bundle-banner.text':
-    "Das Release '<strong>{{title}}</strong>' wurde gelöscht.",
+  'banners.deleted-bundle-banner.text': "Das Release '<strong>{{title}}</strong>' wurde gelöscht.",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Zum nächsten Monat gehen',
@@ -1259,8 +1258,7 @@ export default removeUndefinedLocaleResources({
   /** The toast tiele that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Erstellung des Releases fehlgeschlagen',
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.not-found-release.title':
-    "Das Release '{{title}}' konnte nicht gefunden werden",
+  'release.toast.not-found-release.title': "Das Release '{{title}}' konnte nicht gefunden werden",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Eine Version dieses Dokuments wurde bereits hinzugefügt.',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */

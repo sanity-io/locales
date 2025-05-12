@@ -153,8 +153,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-single':
     'Dieses Dokument ist Teil des <VersionBadge/> Release',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release':
-    'Nicht in dem <VersionBadge>{{title}}</VersionBadge> Release.',
+  'banners.release.not-in-release': 'Nicht in dem <VersionBadge>{{title}}</VersionBadge> Release.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
     'Bitte warten Sie, während das Dokument zum Release hinzugefügt wird. Es sollte nicht länger als ein paar Sekunden dauern.',
