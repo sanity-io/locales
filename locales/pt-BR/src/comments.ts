@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Não foi possível copiar o link para a área de transferência',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link copiado para a área de transferência',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Uma vez excluído, um comentário não pode ser recuperado.',
   /** The delete dialog confirm button text for a comment */
