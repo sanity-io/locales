@@ -19,7 +19,7 @@ importers:
         version: 7.27.1
       '@sanity/pkg-utils':
         specifier: ^7.0.4
-        version: 7.0.4(@types/babel__core@7.20.5)(@types/node@18.19.75)(typescript@5.7.3)
+        version: 7.0.4(@types/babel__core@7.20.5)(@types/node@18.19.100)(typescript@5.7.3)
       '@sanity/vision':
         specifier: ^3.79.0
         version: 3.79.0(@babel/runtime@7.24.8)(@codemirror/lint@6.8.1)(@codemirror/theme-one-dark@6.1.2)(@emotion/is-prop-valid@1.2.2)(@lezer/common@1.2.1)(codemirror@6.0.1(@lezer/common@1.2.1))(react-dom@19.1.0(react@19.1.0))(react-is@19.1.0)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -30,8 +30,8 @@ importers:
         specifier: ^7.20.6
         version: 7.20.6
       '@types/node':
-        specifier: ^18.19.75
-        version: 18.19.75
+        specifier: ^18.19.100
+        version: 18.19.100
       ansi-colors:
         specifier: ^4.1.3
         version: 4.1.3
@@ -67,7 +67,7 @@ importers:
         version: 7.0.1
       sanity:
         specifier: ^3.79.0
-        version: 3.79.0(@emotion/is-prop-valid@1.2.2)(@types/babel__core@7.20.5)(@types/node@18.19.75)(@types/react@19.1.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.27.0)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)
+        version: 3.79.0(@emotion/is-prop-valid@1.2.2)(@types/babel__core@7.20.5)(@types/node@18.19.100)(@types/react@19.1.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.27.0)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -2647,8 +2647,8 @@ packages:
   '@types/node-fetch@2.6.11':
     resolution: {integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==}
 
-  '@types/node@18.19.75':
-    resolution: {integrity: sha512-UIksWtThob6ZVSyxcOqCLOUNg/dyO1Qvx4McgeuhrEtHTLFTf7BBhEazaE4K806FGTPtzd/2sE90qn4fVr7cyw==}
+  '@types/node@18.19.100':
+    resolution: {integrity: sha512-ojmMP8SZBKprc3qGrGk8Ujpo80AXkrP7G2tOT4VWr5jlr5DHjsJF+emXJz+Wm0glmy4Js62oKMdZZ6B9Y+tEcA==}
 
   '@types/node@20.14.11':
     resolution: {integrity: sha512-kprQpL8MMeszbz6ojB5/tU8PLN4kesnN8Gjzw349rDlNgsSzg90lAVj3llK99Dh7JON+t9AuscPPFW6mPbTnSA==}
@@ -8726,7 +8726,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
@@ -8770,11 +8770,11 @@ snapshots:
     dependencies:
       '@lezer/common': 1.2.1
 
-  '@microsoft/api-extractor-model@7.30.1(@types/node@18.19.75)':
+  '@microsoft/api-extractor-model@7.30.1(@types/node@18.19.100)':
     dependencies:
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
-      '@rushstack/node-core-library': 5.10.1(@types/node@18.19.75)
+      '@rushstack/node-core-library': 5.10.1(@types/node@18.19.100)
     transitivePeerDependencies:
       - '@types/node'
 
@@ -8786,23 +8786,23 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor-model@7.30.3(@types/node@18.19.75)':
+  '@microsoft/api-extractor-model@7.30.3(@types/node@18.19.100)':
     dependencies:
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
-      '@rushstack/node-core-library': 5.11.0(@types/node@18.19.75)
+      '@rushstack/node-core-library': 5.11.0(@types/node@18.19.100)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.48.1(@types/node@18.19.75)':
+  '@microsoft/api-extractor@7.48.1(@types/node@18.19.100)':
     dependencies:
-      '@microsoft/api-extractor-model': 7.30.1(@types/node@18.19.75)
+      '@microsoft/api-extractor-model': 7.30.1(@types/node@18.19.100)
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
-      '@rushstack/node-core-library': 5.10.1(@types/node@18.19.75)
+      '@rushstack/node-core-library': 5.10.1(@types/node@18.19.100)
       '@rushstack/rig-package': 0.5.3
-      '@rushstack/terminal': 0.14.4(@types/node@18.19.75)
-      '@rushstack/ts-command-line': 4.23.2(@types/node@18.19.75)
+      '@rushstack/terminal': 0.14.4(@types/node@18.19.100)
+      '@rushstack/ts-command-line': 4.23.2(@types/node@18.19.100)
       lodash: 4.17.21
       minimatch: 3.0.8
       resolve: 1.22.8
@@ -8830,15 +8830,15 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.49.2(@types/node@18.19.75)':
+  '@microsoft/api-extractor@7.49.2(@types/node@18.19.100)':
     dependencies:
-      '@microsoft/api-extractor-model': 7.30.3(@types/node@18.19.75)
+      '@microsoft/api-extractor-model': 7.30.3(@types/node@18.19.100)
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
-      '@rushstack/node-core-library': 5.11.0(@types/node@18.19.75)
+      '@rushstack/node-core-library': 5.11.0(@types/node@18.19.100)
       '@rushstack/rig-package': 0.5.3
-      '@rushstack/terminal': 0.14.6(@types/node@18.19.75)
-      '@rushstack/ts-command-line': 4.23.4(@types/node@18.19.75)
+      '@rushstack/terminal': 0.14.6(@types/node@18.19.100)
+      '@rushstack/ts-command-line': 4.23.4(@types/node@18.19.100)
       lodash: 4.17.21
       minimatch: 3.0.8
       resolve: 1.22.8
@@ -9247,7 +9247,7 @@ snapshots:
 
   '@rushstack/eslint-patch@1.10.3': {}
 
-  '@rushstack/node-core-library@5.10.1(@types/node@18.19.75)':
+  '@rushstack/node-core-library@5.10.1(@types/node@18.19.100)':
     dependencies:
       ajv: 8.13.0
       ajv-draft-04: 1.0.0(ajv@8.13.0)
@@ -9258,7 +9258,7 @@ snapshots:
       resolve: 1.22.8
       semver: 7.5.4
     optionalDependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
   '@rushstack/node-core-library@5.10.1(@types/node@20.14.11)':
     dependencies:
@@ -9273,7 +9273,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.11
 
-  '@rushstack/node-core-library@5.11.0(@types/node@18.19.75)':
+  '@rushstack/node-core-library@5.11.0(@types/node@18.19.100)':
     dependencies:
       ajv: 8.13.0
       ajv-draft-04: 1.0.0(ajv@8.13.0)
@@ -9284,19 +9284,19 @@ snapshots:
       resolve: 1.22.8
       semver: 7.5.4
     optionalDependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
   '@rushstack/rig-package@0.5.3':
     dependencies:
       resolve: 1.22.8
       strip-json-comments: 3.1.1
 
-  '@rushstack/terminal@0.14.4(@types/node@18.19.75)':
+  '@rushstack/terminal@0.14.4(@types/node@18.19.100)':
     dependencies:
-      '@rushstack/node-core-library': 5.10.1(@types/node@18.19.75)
+      '@rushstack/node-core-library': 5.10.1(@types/node@18.19.100)
       supports-color: 8.1.1
     optionalDependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
   '@rushstack/terminal@0.14.4(@types/node@20.14.11)':
     dependencies:
@@ -9305,16 +9305,16 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.11
 
-  '@rushstack/terminal@0.14.6(@types/node@18.19.75)':
+  '@rushstack/terminal@0.14.6(@types/node@18.19.100)':
     dependencies:
-      '@rushstack/node-core-library': 5.11.0(@types/node@18.19.75)
+      '@rushstack/node-core-library': 5.11.0(@types/node@18.19.100)
       supports-color: 8.1.1
     optionalDependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
-  '@rushstack/ts-command-line@4.23.2(@types/node@18.19.75)':
+  '@rushstack/ts-command-line@4.23.2(@types/node@18.19.100)':
     dependencies:
-      '@rushstack/terminal': 0.14.4(@types/node@18.19.75)
+      '@rushstack/terminal': 0.14.4(@types/node@18.19.100)
       '@types/argparse': 1.0.38
       argparse: 1.0.10
       string-argv: 0.3.2
@@ -9330,9 +9330,9 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@rushstack/ts-command-line@4.23.4(@types/node@18.19.75)':
+  '@rushstack/ts-command-line@4.23.4(@types/node@18.19.100)':
     dependencies:
-      '@rushstack/terminal': 0.14.6(@types/node@18.19.75)
+      '@rushstack/terminal': 0.14.6(@types/node@18.19.100)
       '@types/argparse': 1.0.38
       argparse: 1.0.10
       string-argv: 0.3.2
@@ -9376,14 +9376,14 @@ snapshots:
       - supports-color
       - typescript
 
-  '@sanity/cli@3.79.0(@types/babel__core@7.20.5)(@types/node@18.19.75)(@types/react@19.1.3)(react@19.1.0)(typescript@5.7.3)':
+  '@sanity/cli@3.79.0(@types/babel__core@7.20.5)(@types/node@18.19.100)(@types/react@19.1.3)(react@19.1.0)(typescript@5.7.3)':
     dependencies:
       '@babel/traverse': 7.27.1
       '@sanity/client': 6.28.2(debug@4.4.0)
       '@sanity/codegen': 3.79.0
       '@sanity/runtime-cli': 1.2.0
       '@sanity/telemetry': 0.7.9(react@19.1.0)
-      '@sanity/template-validator': 2.4.0(@types/babel__core@7.20.5)(@types/node@18.19.75)(debug@4.4.0)(typescript@5.7.3)
+      '@sanity/template-validator': 2.4.0(@types/babel__core@7.20.5)(@types/node@18.19.100)(debug@4.4.0)(typescript@5.7.3)
       '@sanity/util': 3.79.0(@types/react@19.1.3)(debug@4.4.0)
       chalk: 4.1.2
       debug: 4.4.0(supports-color@8.1.1)
@@ -9726,12 +9726,12 @@ snapshots:
       - '@types/react'
       - supports-color
 
-  '@sanity/pkg-utils@6.13.4(@types/babel__core@7.20.5)(@types/node@18.19.75)(debug@4.4.0)(typescript@5.7.3)':
+  '@sanity/pkg-utils@6.13.4(@types/babel__core@7.20.5)(@types/node@18.19.100)(debug@4.4.0)(typescript@5.7.3)':
     dependencies:
       '@babel/core': 7.26.7
       '@babel/preset-typescript': 7.26.0(@babel/core@7.26.7)
       '@babel/types': 7.27.1
-      '@microsoft/api-extractor': 7.48.1(@types/node@18.19.75)
+      '@microsoft/api-extractor': 7.48.1(@types/node@18.19.100)
       '@microsoft/tsdoc-config': 0.17.1
       '@optimize-lodash/rollup-plugin': 5.0.0(rollup@4.32.1)
       '@rollup/plugin-alias': 5.1.1(rollup@4.32.1)
@@ -9826,12 +9826,12 @@ snapshots:
       - debug
       - supports-color
 
-  '@sanity/pkg-utils@7.0.4(@types/babel__core@7.20.5)(@types/node@18.19.75)(typescript@5.7.3)':
+  '@sanity/pkg-utils@7.0.4(@types/babel__core@7.20.5)(@types/node@18.19.100)(typescript@5.7.3)':
     dependencies:
       '@babel/core': 7.26.7
       '@babel/preset-typescript': 7.26.0(@babel/core@7.26.7)
       '@babel/types': 7.27.1
-      '@microsoft/api-extractor': 7.49.2(@types/node@18.19.75)
+      '@microsoft/api-extractor': 7.49.2(@types/node@18.19.100)
       '@microsoft/tsdoc-config': 0.17.1
       '@optimize-lodash/rollup-plugin': 5.0.1(rollup@4.32.1)
       '@rollup/plugin-alias': 5.1.1(rollup@4.32.1)
@@ -9951,11 +9951,11 @@ snapshots:
       rxjs: 7.8.1
       typeid-js: 0.3.0
 
-  '@sanity/template-validator@2.4.0(@types/babel__core@7.20.5)(@types/node@18.19.75)(debug@4.4.0)(typescript@5.7.3)':
+  '@sanity/template-validator@2.4.0(@types/babel__core@7.20.5)(@types/node@18.19.100)(debug@4.4.0)(typescript@5.7.3)':
     dependencies:
       '@actions/core': 1.11.1
       '@actions/github': 6.0.0
-      '@sanity/pkg-utils': 6.13.4(@types/babel__core@7.20.5)(@types/node@18.19.75)(debug@4.4.0)(typescript@5.7.3)
+      '@sanity/pkg-utils': 6.13.4(@types/babel__core@7.20.5)(@types/node@18.19.100)(debug@4.4.0)(typescript@5.7.3)
       yaml: 2.6.1
     transitivePeerDependencies:
       - '@types/babel__core'
@@ -10215,7 +10215,7 @@ snapshots:
 
   '@types/follow-redirects@1.14.4':
     dependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
   '@types/hast@2.3.10':
     dependencies:
@@ -10239,10 +10239,10 @@ snapshots:
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
       form-data: 4.0.0
 
-  '@types/node@18.19.75':
+  '@types/node@18.19.100':
     dependencies:
       undici-types: 5.26.5
 
@@ -10257,7 +10257,7 @@ snapshots:
 
   '@types/progress-stream@2.0.5':
     dependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
   '@types/react-is@19.0.0':
     dependencies:
@@ -10281,7 +10281,7 @@ snapshots:
 
   '@types/tar-stream@3.1.3':
     dependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -10494,14 +10494,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.4(vite@6.1.0(@types/node@18.19.75)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1))':
+  '@vitejs/plugin-react@4.3.4(vite@6.1.0(@types/node@18.19.100)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       '@babel/core': 7.26.7
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.7)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.1.0(@types/node@18.19.75)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 6.1.0(@types/node@18.19.100)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -12442,7 +12442,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -12935,7 +12935,7 @@ snapshots:
 
   openai@4.78.1(zod@3.24.4):
     dependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
       '@types/node-fetch': 2.6.11
       abort-controller: 3.0.0
       agentkeepalive: 4.5.0
@@ -13738,7 +13738,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  sanity@3.79.0(@emotion/is-prop-valid@1.2.2)(@types/babel__core@7.20.5)(@types/node@18.19.75)(@types/react@19.1.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.27.0)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1):
+  sanity@3.79.0(@emotion/is-prop-valid@1.2.2)(@types/babel__core@7.20.5)(@types/node@18.19.100)(@types/react@19.1.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.27.0)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1):
     dependencies:
       '@dnd-kit/core': 6.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@dnd-kit/modifiers': 6.0.1(@dnd-kit/core@6.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
@@ -13752,7 +13752,7 @@ snapshots:
       '@rexxars/react-json-inspector': 9.0.1(react@19.1.0)
       '@sanity/asset-utils': 2.0.6
       '@sanity/bifur-client': 0.4.1
-      '@sanity/cli': 3.79.0(@types/babel__core@7.20.5)(@types/node@18.19.75)(@types/react@19.1.3)(react@19.1.0)(typescript@5.7.3)
+      '@sanity/cli': 3.79.0(@types/babel__core@7.20.5)(@types/node@18.19.100)(@types/react@19.1.3)(react@19.1.0)(typescript@5.7.3)
       '@sanity/client': 6.28.2(debug@4.4.0)
       '@sanity/color': 3.0.6
       '@sanity/comlink': 3.0.1
@@ -13784,7 +13784,7 @@ snapshots:
       '@types/speakingurl': 13.0.6
       '@types/tar-stream': 3.1.3
       '@types/use-sync-external-store': 0.0.6
-      '@vitejs/plugin-react': 4.3.4(vite@6.1.0(@types/node@18.19.75)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1))
+      '@vitejs/plugin-react': 4.3.4(vite@6.1.0(@types/node@18.19.100)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1))
       archiver: 7.0.1
       arrify: 2.0.1
       async-mutex: 0.4.1
@@ -13867,7 +13867,7 @@ snapshots:
       use-sync-external-store: 1.4.0(react@19.1.0)
       uuid: 11.0.5
       valibot: 0.31.1
-      vite: 6.1.0(@types/node@18.19.75)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1)
+      vite: 6.1.0(@types/node@18.19.100)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1)
       yargs: 17.7.2
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
@@ -14716,13 +14716,13 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
-  vite@6.1.0(@types/node@18.19.75)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1):
+  vite@6.1.0(@types/node@18.19.100)(terser@5.27.0)(tsx@4.19.2)(yaml@2.6.1):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.5.1
       rollup: 4.32.1
     optionalDependencies:
-      '@types/node': 18.19.75
+      '@types/node': 18.19.100
       fsevents: 2.3.3
       terser: 5.27.0
       tsx: 4.19.2
