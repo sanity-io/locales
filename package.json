@@ -58,7 +58,7 @@
     "prettier-plugin-packagejson": "^2.5.12",
     "pretty-ms": "^7.0.1",
     "sanity": "^3.79.0",
-    "tsx": "^4.19.2",
+    "tsx": "^4.19.4",
     "zod": "^3.24.4",
     "zod-validation-error": "^3.4.0"
   },
