@@ -15,8 +15,8 @@ const locale = defineLocale({
     },
 
     {
-      namespace: 'create',
-      resources: () => import('./create'),
+      namespace: 'canvas',
+      resources: () => import('./canvas'),
     },
 
     {
