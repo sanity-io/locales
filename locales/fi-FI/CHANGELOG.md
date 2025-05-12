@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.17](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.16...locale-fi-fi-v1.1.17) (2025-05-12)
+
+
+### Bug Fixes
+
+* **fi-FI:** automated translation updates ([#1044](https://github.com/sanity-io/locales/issues/1044)) ([ab75ad2](https://github.com/sanity-io/locales/commit/ab75ad20d9cb240da1aaa53fd3763cc527aca69d))
+* **fi-FI:** automated translation updates ([#1061](https://github.com/sanity-io/locales/issues/1061)) ([2f7d929](https://github.com/sanity-io/locales/commit/2f7d9298627f7d5d631c61df80831ad89a559e33))
+* **fi-FI:** automated translation updates ([#1068](https://github.com/sanity-io/locales/issues/1068)) ([e05ef96](https://github.com/sanity-io/locales/commit/e05ef9662a0814687f331084e7a9b84f841f2272))
+* **fi-FI:** automated translation updates ([#1080](https://github.com/sanity-io/locales/issues/1080)) ([0c2e3ff](https://github.com/sanity-io/locales/commit/0c2e3fff5be141c22376e7b08fb8f61108145b11))
+* **fi-FI:** automated translation updates ([#1104](https://github.com/sanity-io/locales/issues/1104)) ([298e451](https://github.com/sanity-io/locales/commit/298e451c68432270d64718766fe78b0fe38ef99c))
+* **fi-FI:** automated translation updates ([#1110](https://github.com/sanity-io/locales/issues/1110)) ([30bd9cc](https://github.com/sanity-io/locales/commit/30bd9cc277434077a45b4e4330c9e7f4b27a3ba2))
+
 ## [1.1.16](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.15...locale-fi-fi-v1.1.16) (2025-02-10)
 
 
