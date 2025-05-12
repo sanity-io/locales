@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'クリップボードへのリンクのコピーに失敗しました',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'クリップボードにリンクをコピーしました',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': '一度削除されたコメントは復旧できません。',
   /** The delete dialog confirm button text for a comment */
