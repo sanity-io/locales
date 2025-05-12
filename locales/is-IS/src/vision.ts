@@ -63,11 +63,21 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspective "<code>previewDrafts</code>" hefur verið endurnefnt í "<code>drafts</code>" og er nú úrelt. Þessi breyting er virk fyrir allar útgáfur með stuðning við perspective (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Lestu skjölin',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Engin perspective (API sjálfgefið)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives leyfa fyrirspurn þinni að keyra gegn mismunandi "sýnum" af efni í dataset þínu',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Sjálfgefið perspective mun breytast úr "<code>raw</code>" í "<code>published</code>" í væntanlegri API útgáfu. Vinsamlegast kynntu þér nánar í skjölun.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'Fest útgáfa',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
