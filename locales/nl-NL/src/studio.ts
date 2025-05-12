@@ -435,7 +435,7 @@ export default removeUndefinedLocaleResources({
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Zonder titel',
   /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Verbinding verloren. Opnieuw verbinden…',
+  'form.reconnecting.toast.title': 'Verbinding verbroken. Opnieuw verbinden…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Heeft een fout',
   /** Accessibility label for the icon that indicates the field has validation information */
