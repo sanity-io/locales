@@ -52,7 +52,7 @@
     "react-dom": "^19.0.0",
     "react-is": "^19.0.0",
     "sanity": "^3.79.0",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.18"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^4.0.0",
