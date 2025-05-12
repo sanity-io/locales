@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.running.label': 'Brisanje…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
   'action.disabled-by-canvas.tooltip':
-    'Neke akcije nad dokumentom su onemogućene za dokumente povezane s Canvas',
+    'Neke akcije nad dokumentom su onemogućene za dokumente povezane s Canvasom',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Jeste li sigurni da želite odbaciti sve promjene od posljednjeg objavljivanja?',
@@ -181,13 +181,13 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Zatvori grupu ploča',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': 'Uredi u Canvas',
+  'canvas.banner.edit-in-canvas-action': 'Uredi u Canvasu',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': 'Ovaj nacrt dokumenta je povezan s Canvas',
+  'canvas.banner.linked-text.draft': 'Ovaj nacrt dokumenta je povezan s Canvasom',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': 'Ovaj objavljeni dokument je povezan s Canvas',
+  'canvas.banner.linked-text.published': 'Ovaj objavljeni dokument je povezan s Canvasom',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': 'Ova verzija dokumenta je povezana s Canvas',
+  'canvas.banner.linked-text.version': 'Ova verzija dokumenta je povezana s Canvasom',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': 'Saznajte više',
   /** The description for the canvas linked banner popover */

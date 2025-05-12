@@ -63,5 +63,5 @@ export default removeUndefinedLocaleResources({
     'Prekidate vezu <strong>“{{documentTitle}}”</strong> s Canvasom.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': 'Nedostaju dozvole za navigaciju do Canvas',
+  'navigate-to-canvas-doc.error.missing-permissions': 'Nedostaju dozvole za navigaciju do Canvasa',
 })
