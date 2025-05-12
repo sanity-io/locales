@@ -63,11 +63,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspektiva',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspektiva "<code>previewDrafts</code>" je preimenovana u "<code>drafts</code>" i sada je zastarjela. Ova promjena je učinkovita za sve verzije s podrškom za perspektivu (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Pročitaj dokumentaciju',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Nema perspektive (zadano za API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspektive omogućuju vašem upitu da se izvodi protiv različitih "pogleda" na sadržaj u vašem datasetu',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Zadana perspektiva će se promijeniti sa "<code>raw</code>" na "<code>published</code>" u nadolazećoj verziji API-ja. Molimo konzultirajte dokumentaciju za više detalja.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'pinned release',
   /** Title for popover that explains what "Perspectives" are */
