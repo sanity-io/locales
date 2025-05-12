@@ -30,9 +30,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Nem sikerült a linket a vágólapra másolni',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link a vágólapra másolva',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'A törölt hozzászólás nem állítható vissza.',
   /** The delete dialog confirm button text for a comment */
