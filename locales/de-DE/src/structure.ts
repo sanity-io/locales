@@ -129,40 +129,40 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Diese Referenz wurde entfernt, seitdem Sie sie geöffnet haben.',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.add-to-release': 'Zur Veröffentlichung hinzufügen',
+  'banners.release.action.add-to-release': 'Zum Release hinzufügen',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.open-to-edit': 'Veröffentlichung zum Bearbeiten öffnen',
+  'banners.release.action.open-to-edit': 'Release zum Bearbeiten öffnen',
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description':
-    'Beim Hinzufügen des Dokuments zur Veröffentlichung ist ein Fehler aufgetreten: {{message}}',
+    'Beim Hinzufügen des Dokuments zum Release ist ein Fehler aufgetreten: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
-  'banners.release.error.title': 'Fehler beim Hinzufügen des Dokuments zur Veröffentlichung',
+  'banners.release.error.title': 'Fehler beim Hinzufügen des Dokuments zum Release',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description': 'Das Dokument existiert nur in der',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-end_one': 'Veröffentlichung',
+  'banners.release.navigate-to-edit-description-end_one': 'Release',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-end_other': 'Veröffentlichungen',
+  'banners.release.navigate-to-edit-description-end_other': 'Releases',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Dieses Dokument ist Teil der <VersionBadge/> Veröffentlichung und {{count}} weiteren Veröffentlichung.',
+    'Dieses Dokument ist Teil des <VersionBadge/> Release und {{count}} weiterer Releases.',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    'Dieses Dokument ist Teil der <VersionBadge/> Veröffentlichung und {{count}} weiteren Veröffentlichungen',
+    'Dieses Dokument ist Teil des <VersionBadge/> Release und {{count}} weiteren Releases',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
-    'Dieses Dokument ist Teil der <VersionBadge/> Veröffentlichung',
+    'Dieses Dokument ist Teil des <VersionBadge/> Release',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release':
-    'Nicht in der <VersionBadge>{{title}}</VersionBadge> Veröffentlichung.',
+    'Nicht in dem <VersionBadge>{{title}}</VersionBadge> Release.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
-    'Bitte warten Sie, während das Dokument zur Veröffentlichung hinzugefügt wird. Es sollte nicht länger als ein paar Sekunden dauern.',
+    'Bitte warten Sie, während das Dokument zum Release hinzugefügt wird. Es sollte nicht länger als ein paar Sekunden dauern.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.title': 'Dokument wird zur Veröffentlichung hinzugefügt…',
+  'banners.release.waiting.title': 'Dokument wird zum Release hinzugefügt…',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Dieses Dokument wird als Teil der <VersionBadge>{{title}}</VersionBadge> Veröffentlichung nicht veröffentlicht',
+    'Dieses Dokument wird als Teil des <VersionBadge>{{title}}</VersionBadge> Releases nicht veröffentlicht',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Neues {{schemaType}}',

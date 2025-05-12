@@ -77,7 +77,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.new-default.description':
     'Die Standardperspektive wird in einer kommenden API-Version von "<code>raw</code>" zu "<code>published</code>" wechseln. Bitte konsultieren Sie die Dokumentation für weitere Details.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': 'Festgepinnte Veröffentlichung',
+  'settings.perspectives.pinned-release-label': 'Angepinntes Release',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspektiven',
 })

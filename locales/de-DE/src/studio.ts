@@ -121,7 +121,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
-    "Die Veröffentlichung '<strong>{{title}}</strong>' wurde gelöscht.",
+    "Das Release '<strong>{{title}}</strong>' wurde gelöscht.",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Zum nächsten Monat gehen',
@@ -241,7 +241,7 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.title':
     'Das Rendern der Änderungen an diesem Feld verursachte einen Fehler',
   /* Error description when changes could not be loaded */
-  'changes.error-description': 'Wir können die Änderungen für dieses Dokument nicht laden.',
+  'changes.error-description': 'Änderungen für dieses Dokument können nicht geladen werden.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Etwas ist schiefgelaufen',
   /** Error message shown when the value of a field is not the expected one */
@@ -279,7 +279,7 @@ export default removeUndefinedLocaleResources({
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Es gibt keine Änderungen',
   /* Label for the tooltip that shows when an action is not selectable*/
-  'changes.not-selectable': 'Es ist nicht möglich, dieses Ereignis auszuwählen',
+  'changes.not-selectable': 'Es ist nicht möglich, dieses Ereignis auszuwählen.',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Anmerkung hinzugefügt',
   /** Portable Text diff: An annotation was changed */
@@ -1230,11 +1230,11 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'Unbekanntes Datum',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': 'Diese Veröffentlichung wurde gelöscht',
+  'release.deleted-tooltip': 'Dieses Release wurde gelöscht',
   /** Title for copying version to a new release dialog */
-  'release.dialog.copy-to-release.title': 'Version in neue Veröffentlichung kopieren',
+  'release.dialog.copy-to-release.title': 'Version in neues Release kopieren',
   /** Title for creating releases dialog */
-  'release.dialog.create.title': 'Neue Veröffentlichung',
+  'release.dialog.create.title': 'Neues Release',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Die geplante Veröffentlichungszeit wird verwendet, um bessere Vorschauen zu erstellen und Hinweise darauf zu geben, ob Dokumente in Konflikt stehen.',
@@ -1243,29 +1243,29 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'Ungefähre Zeit der Veröffentlichung',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholder-describe-release': 'Beschreiben Sie die Veröffentlichung…',
+  'release.form.placeholder-describe-release': 'Beschreiben Sie das Release…',
   /** Tooltip for button to hide release visibility */
-  'release.layer.hide': 'Veröffentlichung ausblenden',
+  'release.layer.hide': 'Release ausblenden',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Entwürfe',
   /** Label for published releases in navbar */
   'release.navbar.published': 'Veröffentlicht',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Veröffentlichungen',
+  'release.navbar.tooltip': 'Releases',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'Unbenannte Veröffentlichung',
+  'release.placeholder-untitled-release': 'Unbenanntes Release',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.title': "Die Veröffentlichung '{{title}}' wurde archiviert",
+  'release.toast.archived-release.title': "Das Release '{{title}}' wurde archiviert",
   /** The toast tiele that will be shown the creating a release fails */
-  'release.toast.create-release-error.title': 'Erstellung der Veröffentlichung fehlgeschlagen',
+  'release.toast.create-release-error.title': 'Erstellung des Releases fehlgeschlagen',
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title':
-    "Die Veröffentlichung '{{title}}' konnte nicht gefunden werden",
+    "Das Release '{{title}}' konnte nicht gefunden werden",
   /** Label for when a version of a document has already been added to the release */
-  'release.tooltip.already-added': 'Eine Version dieses Dokuments wurde bereits hinzugefügt',
+  'release.tooltip.already-added': 'Eine Version dieses Dokuments wurde bereits hinzugefügt.',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
   'release.tooltip.locked':
-    'Diese Veröffentlichung wurde geplant. Planung aufheben, um weitere Dokumente hinzuzufügen.',
+    'Dieses Release wurde geplant. Planung aufheben, um weitere Dokumente hinzuzufügen.',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'So bald wie möglich',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
