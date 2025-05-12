@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Editovat pomocí Sanity Create',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Jakmile bude propojení dokončeno, vaše úpravy se zde objeví v reálném čase.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Propojení se Sanity Create',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Vraťte se zpět do Sanity Create. Váš dokument se automaticky synchronizuje (obvykle trvá několik sekund).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Zpoždění propojení?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Zkontrolujte, zda je okno Sanity Create stále otevřené, nebo zda proces není zaseknutý. Pokud problémy přetrvávají, zkuste obnovit Studio a zkuste to znovu.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Volně formátovatelný editor s podporou AI, který se přímo synchronizuje s vašimi dokumenty ve Studiu.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Začněte používat Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Předběžný přístup',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Zjistit více',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Nelze určit URL Sanity Create.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Začít v Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Tento dokument je propojen se Sanity Create',

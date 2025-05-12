@@ -5,6 +5,11 @@ const locale = defineLocale({
   title: '简体中文',
   bundles: [
     {
+      namespace: 'canvas',
+      resources: () => import('./canvas'),
+    },
+
+    {
       namespace: 'comments',
       resources: () => import('./comments'),
     },

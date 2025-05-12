@@ -12,6 +12,8 @@ export default removeUndefinedLocaleResources({
   'action.delete.label': 'Slett',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Slettar…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Er du sikker på at du vil forkaste alle endringar sidan sist publisert?',
@@ -180,6 +182,21 @@ export default removeUndefinedLocaleResources({
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Lukk panelgruppe',
 
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Frå',
   /* The label for the history tab in the changes inspector*/
@@ -200,6 +217,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam':
     'Parameteren for førre dokument er ugyldig.',
 
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Samanlikn versjonar',
   /** The string used to label draft documents */
@@ -338,6 +357,11 @@ export default removeUndefinedLocaleResources({
     'Vennligst vent medan dokumentet blir synkronisert. Dette skjer vanligvis rett etter at dokumentet har blitt publisert, og det burde ikkje ta meir enn nokre få sekund',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspekter <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',

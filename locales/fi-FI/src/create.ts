@@ -17,36 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Muokkaa Sanity Creatella',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Kun linkitys on valmis, muokkauksesi näkyvät täällä reaaliajassa.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Linkitetään Sanity Createen',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Palaa takaisin Sanity Createen. Dokumenttisi synkronoituu automaattisesti (yleensä vie muutaman sekunnin).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Linkityksessä viivästyksiä?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Tarkista, onko Sanity Create -ikkunasi edelleen auki, tai vaikuttaako prosessi jumittuneelta. Jos ongelmia jatkuu, yritä päivittää Studio ja yritä uudelleen.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Vapaa muotoinen, tekoälyllä varustettu editori, joka synkronoituu suoraan Studio-dokumentteihisi.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Aloita käyttö Sanity Createssa',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Aikainen pääsy',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Lue lisää',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url':
-    'Sanity Create URL-osoitetta ei voitu määrittää.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Aloita Createssa',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Tämä dokumentti on linkitetty Sanity Createen',

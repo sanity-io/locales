@@ -5,6 +5,11 @@ const locale = defineLocale({
   title: 'Português (Brasil)',
   bundles: [
     {
+      namespace: 'canvas',
+      resources: () => import('./canvas'),
+    },
+
+    {
       namespace: 'comments',
       resources: () => import('./comments'),
     },

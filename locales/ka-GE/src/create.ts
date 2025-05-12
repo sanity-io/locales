@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'რედაქტირება Sanity Create-ით',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'როგორც დაკავშირებულია, თქვენი რედაქტირებები აქ ჩანს რეალურ დროში.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'კავშირის შექმნა Sanity Create-თან',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'დაბრუნდით Sanity Create-ში. თქვენი დოკუმენტი ავტომატურად სინქრონიზდება (წესით ეს წამები მართლებს).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'კავშირის შექმნა დაყოვნდა?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'შეამოწმეთ, თუ თქვენი Sanity Create ფანჯარა კვლავ ღიაა, ან თუ პროცესი ჩაჩერებული ჩანს. თუ პრობლემები გრძელდება, ცადეთ განახლება Studio-ში და კვლავ სცადეთ.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'უფორმო, ინტელექტური რედაქტორი, რომელიც პირდაპირ სინქრონიზირდება თქვენს სტუდიის დოკუმენტებთან.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'დაიწყეთ მუშაობა Sanity Create-ით',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'დროული წვდომა',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'გაიგეთ მეტი',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'ვერ მოხერხდა Sanity Create URL-ის დადგენა.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'დაიწყეთ Create-ში',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'ეს დოკუმენტი დაკავშირებულია Sanity Create-თან',

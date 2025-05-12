@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Редагувати за допомогою Sanity Create',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    "Після з'єднання ваші редагування з'являться тут у режимі реального часу.",
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': "З'єднання з Sanity Create",
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Поверніться до Sanity Create. Ваш документ буде синхронізовано автоматично (зазвичай це займає кілька секунд).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': "Затримка з'єднання?",
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Перевірте, чи вікно Sanity Create все ще відкрите, або чи процес здається застряглим. Якщо проблеми не зникають, спробуйте оновити Studio та спробуйте знову.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Безкоштовний редактор з підтримкою штучного інтелекту, який синхронізується безпосередньо з вашими документами в Studio.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Розпочніть роботу з Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Доступ до ранньої версії',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Дізнатися більше',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Не вдалося визначити URL Sanity Create.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Розпочати в Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': "Цей документ зв'язаний з Sanity Create",

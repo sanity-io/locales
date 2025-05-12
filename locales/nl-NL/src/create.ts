@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Bewerk met Sanity Create',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Eenmaal gekoppeld, zullen je wijzigingen hier in realtime verschijnen.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Koppelen aan Sanity Create',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Ga terug naar Sanity Create. Je document zal automatisch synchroniseren (duurt meestal een paar seconden).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Koppelen vertraagd?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Controleer of je Sanity Create venster nog open is, of als het proces vast lijkt te zitten. Als problemen aanhouden, probeer de Studio te verversen en probeer opnieuw.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Een vrije vorm, AI-gestuurde editor die direct synchroniseert met uw Studio-documenten.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Begin met Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Vroege toegang',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Meer leren',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Kan de URL van Sanity Create niet bepalen.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Begin in Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Dit document is gekoppeld aan Sanity Create',

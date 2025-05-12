@@ -17,36 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Szerkesztés a Sanity Create-ben',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Miután összekapcsolták, a szerkesztései valós időben jelennek meg itt.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Összekapcsolás a Sanity Create-tel',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Menjen vissza a Sanity Create-be. A dokumentuma automatikusan szinkronizálódik (általában néhány másodpercet vesz igénybe).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Az összekapcsolás késik?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Ellenőrizze, hogy a Sanity Create ablaka még nyitva van-e, vagy hogy a folyamat elakadt-e. Ha a problémák továbbra is fennállnak, próbálja meg frissíteni a Studiót és próbálkozzon újra.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Egy szabad formátumú, AI által vezérelt szerkesztő, amely közvetlenül szinkronizál a Stúdió dokumentumaival.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Kezdj el használni a Sanity Create-t',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Korai hozzáférés',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Tudj meg többet',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url':
-    'Nem sikerült meghatározni a Sanity Create URL-t.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Kezdés a Create-ben',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Ez a dokumentum a Sanity Create-hez van kapcsolva',

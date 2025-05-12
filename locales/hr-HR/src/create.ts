@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Uredite s Sanity Create',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Jednom kada se povežete, vaše izmjene će se ovdje pojaviti u stvarnom vremenu.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Povezivanje sa Sanity Create',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Vratite se na Sanity Create. Vaš dokument će se automatski sinkronizirati (obično traje nekoliko sekundi).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Povezivanje kasni?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Provjerite je li vaš prozor Sanity Create još uvijek otvoren, ili ako se proces čini zaglavljenim. Ako problemi i dalje postoje, pokušajte osvježiti Studio i pokušajte ponovno.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Slobodno oblikovan, AI-pokretan urednik koji se izravno sinkronizira s vašim dokumentima u Sanity Studiu.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Započnite s Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Rani pristup',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Saznajte više',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Nije moguće odrediti URL za Sanity Create.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Započnite u Sanity Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Ovaj dokument je povezan sa Sanity Create',

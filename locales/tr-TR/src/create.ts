@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Sanity Create ile Düzenle',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Bağlandıktan sonra, düzenlemeleriniz burada gerçek zamanlı olarak görünecek.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': "Sanity Create'e Bağlanıyor",
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    "Sanity Create'e geri dönün. Belgeniz otomatik olarak senkronize olacak (genellikle birkaç saniye sürer).",
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Bağlantı gecikti mi?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    "Sanity Create pencerenizin hala açık olup olmadığını kontrol edin veya sürecin takılıp takılmadığını kontrol edin. Sorunlar devam ederse, Studio'yu yenileyin ve tekrar deneyin.",
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Stüdyo belgelerinizle doğrudan senkronize olan serbest formda, AI destekli bir düzenleyici.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Sanity Create ile başlayın',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Erken erişim',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Daha fazla öğren',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': "Sanity Create URL'si belirlenemiyor.",
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': "Create'de Başla",
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Bu belge Sanity Create ile bağlantılıdır',

@@ -1,6 +1,31 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  /** "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  /** "Current version" header in about dialog  */
+  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  /** "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  /** "Latest version" header in about dialog */
+  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  /** "Latest version" header in about dialog */
+  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  /** "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'ಮುಚ್ಚಿ',
   /** Aria label to be used in the dialog close button */
@@ -61,11 +86,17 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'ಅಂಗೀಕೃತ ಪ್ರಕಾರಗಳ ಆಸ್ತಿಗಳನ್ನು ಮಾತ್ರ ತೋರಿಸುತ್ತಿದೆ: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': undefined, // 'Select'
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'ಹೆಚ್ಚು ಲೋಡ್ ಮಾಡಿ',
   /** Text shown when selecting a file but there's no files to select from */
@@ -92,6 +123,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'ಚಿತ್ರವನ್ನು ಅಳಿಸಲಾಗಿದೆ',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'ಅಪ್‌ಲೋಡ್ ಮಾಡಿದ ಚಿತ್ರಗಳು',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'ಒಂದು ದಾಖಲೆಯು ಫೈಲ್ <code>{{filename}}</code> ಬಳಸುತ್ತಿದೆ',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -119,6 +151,16 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'ಯಾವುದೇ ದಾಖಲೆಗಳು ಈ ಚಿತ್ರವನ್ನು ಬಳಸುತ್ತಿಲ್ಲ',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
+  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
+  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': undefined, // 'Media Library'
+  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' ಬಿಡುಗಡೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ.",
 
@@ -140,10 +182,8 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-yesterday': 'ನಿನ್ನೆ',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'ಸಮಯವನ್ನು ಸೇರಿಸಿ',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'ಗಂಟೆ ಆಯ್ಕೆಮಾಡಿ',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'ನಿಮಿಷ ಆಯ್ಕೆಮಾಡಿ',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': undefined, // 'Select time'
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'ಪ್ರಸ್ತುತ ಸಮಯಕ್ಕೆ ಹೊಂದಿಸಿ',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -365,6 +405,9 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'ಪರಿಷ್ಕರಣೆ <em>{{date}}</em> ರಿಂದ',
 
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     '<code>_key</code> ಗುಣದ ಮೌಲ್ಯವು ಅನನ್ಯ ಸ್ಟ್ರಿಂಗ್ ಆಗಿರಬೇಕು.',
@@ -473,6 +516,8 @@ export default removeUndefinedLocaleResources({
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'ಅಪ್‌ಲೋಡ್ ರದ್ದುಮಾಡಿ',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'ಅಪ್‌ಲೋಡ್ ಮಾಡಿ',
   /** Uploading <FileName/> */
@@ -619,6 +664,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'ಚಿತ್ರ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಬಿಡಿ',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'ಕೇವಲ ಓದಲು',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported':
     'ಇಲ್ಲಿ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
@@ -960,6 +1007,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'ಸ್ಪಷ್ಟ',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'ಉಲ್ಲೇಖ ಹುಡುಕಾಟ ವಿಫಲವಾಗಿದೆ',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'ಉಲ್ಲೇಖಿತ ದಾಖಲೆಯ ಚಿತ್ರ ಪೂರ್ವನೋಟ',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1176,9 +1225,6 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಿ',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಲು ವಿಫಲವಾಗಿದೆ',
-  /** Description for toast when version deletion is successfully discarded */
-  'release.action.discard-version.success':
-    '<strong>{{title}}</strong> ಆವೃತ್ತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ತ್ಯಜಿಸಲಾಗಿದೆ',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
   /** Tooltip message for not having permissions for creating new releases */
@@ -1199,6 +1245,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.global.drafts': 'ಮುಸದ್ದಿಗಳು',
   /** Label for Published chip in document header */
   'release.chip.published': 'ಪ್ರಕಟಿತ',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'ಸೃಷ್ಟಿಸಲಾಗಿದೆ {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1222,6 +1270,8 @@ export default removeUndefinedLocaleResources({
   'release.deleted-tooltip': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ',
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'ಹೊಸ ಬಿಡುಗಡೆಗೆ ಆವೃತ್ತಿಯನ್ನು ನಕಲಿಸಿ',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': undefined, // 'Create release'
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'ಬಿಡುಗಡೆ ರಚಿಸಿ',
   /** Label for description in tooltip to explain release types */
@@ -1244,12 +1294,18 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'ಬಿಡುಗಡೆಗಳು',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'ಶೀರ್ಷಿಕೆಯಿಲ್ಲದ ಬಿಡುಗಡೆ',
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ",
-  /** The toast tiele that will be shown the creating a release fails */
+  /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ಬಿಡುಗಡೆಯನ್ನು ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಹುಡುಕಲಾಗಲಿಲ್ಲ",
+  /** The toast description that will be shown when the user has a release perspective which is now published */
+  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ಈ ದಾಖಲೆಯ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */

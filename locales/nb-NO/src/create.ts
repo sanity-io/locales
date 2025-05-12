@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Rediger med Sanity Create',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Når koblingen er etablert, vil redigeringene dine vises her i sanntid.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Kobler til Sanity Create',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Gå tilbake til Sanity Create. Dokumentet ditt vil synkroniseres automatisk (tar vanligvis noen sekunder).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Treg kobling?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Sjekk om ditt Sanity Create-vindu fortsatt er åpent, eller om prosessen ser ut til å være fast. Hvis problemene vedvarer, prøv å oppdatere Studio og prøv igjen.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'En fri form, AI-drevet redaktør som synkroniseres direkte med Studio-dokumentene dine.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Kom i gang med Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Tidlig tilgang',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Lær mer',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Kunne ikke finne URL for Sanity Create.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Start i Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Dette dokumentet er koblet til Sanity Create',

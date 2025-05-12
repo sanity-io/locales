@@ -17,33 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': '用Sanity Create編輯',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details': '連結後，您的編輯將即時顯示在這裡。',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': '正在連結到Sanity Create',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede': '回到Sanity Create。您的文檔將自動同步（通常需要幾秒鐘）。',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': '連結延遲？',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    '檢查您的Sanity Create窗口是否仍然開著，或者進程是否看起來卡住了。如果問題持續存在，請嘗試刷新Studio然後再試一次。',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    '一個自由形式的、AI 驅動的編輯器，可以直接與您的 Studio 文件同步。',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': '開始使用 Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': '早期訪問',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': '了解更多',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': '無法確定Sanity Create的URL。',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': '在 Create 中開始',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': '此文檔已連結到Sanity Create',

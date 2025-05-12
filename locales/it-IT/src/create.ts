@@ -17,36 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Modifica con Sanity Create',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    'Una volta collegato, le tue modifiche appariranno qui in tempo reale.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Collegamento a Sanity Create',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Torna a Sanity Create. Il tuo documento si sincronizzerà automaticamente (di solito ci vogliono pochi secondi).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': 'Collegamento ritardato?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Controlla se la finestra di Sanity Create è ancora aperta, o se il processo sembra bloccato. Se i problemi persistono, prova ad aggiornare lo Studio e riprova.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    'Un editor libero e alimentato da AI che si sincronizza direttamente con i tuoi documenti Studio.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Inizia con Sanity Create',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': 'Accesso anticipato',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': 'Scopri di più',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url':
-    "Impossibile determinare l'URL di Sanity Create.",
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Inizia in Create',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': 'Questo documento è collegato a Sanity Create',

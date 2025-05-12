@@ -5,6 +5,11 @@ const locale = defineLocale({
   title: 'Українська',
   bundles: [
     {
+      namespace: 'canvas',
+      resources: () => import('./canvas'),
+    },
+
+    {
       namespace: 'comments',
       resources: () => import('./comments'),
     },

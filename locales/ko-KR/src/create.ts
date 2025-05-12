@@ -17,35 +17,8 @@ export default removeUndefinedLocaleResources({
   /** Edit in Create button text */
   'edit-in-create-button.text': 'Sanity Create로 편집',
 
-  /** Details for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.details':
-    '링크가 완료되면, 편집 내용이 여기에 실시간으로 표시됩니다.',
-  /** Header of the "Linking in progress" dialog */
-  'linking-in-progress-dialog.header': 'Sanity Create에 연결 중',
-  /** Lede text for the "Linking in progress" dialog */
-  'linking-in-progress-dialog.lede':
-    'Sanity Create로 돌아가세요. 문서가 자동으로 동기화됩니다(보통 몇 초 걸립니다).',
-  /** "Linking in progress" troubleshooting button title */
-  'linking-in-progress-dialog.troubleshooting.button.title': '링크 지연?',
-  /** "Linking in progress" troubleshooting content */
-  'linking-in-progress-dialog.troubleshooting.content':
-    'Sanity Create 창이 여전히 열려 있는지, 또는 프로세스가 멈춘 것 같은지 확인하세요. 문제가 지속되면, Studio를 새로고침하고 다시 시도하세요.',
-
-  /** Subtitle of the "Start writing in Create" banner */
-  'start-in-create-banner.subtitle':
-    '스튜디오 문서와 직접 동기화되는 자유 형식의 AI 기반 편집기입니다.',
-  /** Header of the "Start writing in Create" banner */
-  'start-in-create-banner.title': 'Sanity Create 시작하기',
-  /** Header badge of the "Start writing in Create" banner */
-  'start-in-create-banner.title-badge': '초기 접근',
-
   /** CTA in "Start writing in Create" dialog: Learn more */
   'start-in-create-dialog.cta.learn-more': '더 알아보기',
-  /** Toast error message when we dont have a resolved Sanity Create url*/
-  'start-in-create-dialog.error-toast.unresolved-url': 'Sanity Create URL을 확인할 수 없습니다.',
-
-  /** "Start in Sanity Create" link button text */
-  'start-in-create-link.label': 'Create에서 시작하기',
 
   /** Text for the document pane banner informing users that the document is linked to Sanity Create */
   'studio-create-link-banner.text': '이 문서는 Sanity Create에 연결되어 있습니다',
