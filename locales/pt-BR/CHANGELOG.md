@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.17](https://github.com/sanity-io/locales/compare/locale-pt-br-v1.1.16...locale-pt-br-v1.1.17) (2025-05-12)
+
+
+### Bug Fixes
+
+* **pt-BR:** translation updates ([#1025](https://github.com/sanity-io/locales/issues/1025)) ([5d82245](https://github.com/sanity-io/locales/commit/5d82245b42712bed25466018b592c8d60d1c6f55))
+
 ## [1.1.16](https://github.com/sanity-io/locales/compare/locale-pt-br-v1.1.15...locale-pt-br-v1.1.16) (2025-02-06)
 
 
