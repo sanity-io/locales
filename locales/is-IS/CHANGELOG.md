@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.13](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.12...locale-is-is-v1.2.13) (2025-05-12)
+
+
+### Bug Fixes
+
+* rename `create` namespace to `canvas` ([656500f](https://github.com/sanity-io/locales/commit/656500fc23153e0039c6ca1b57abc547a6450c87))
+* renconcile with latest sanity version ([5d27f40](https://github.com/sanity-io/locales/commit/5d27f40fc012ffed3f70297332a16bbdf688534f))
+* revert rename of `create` namespace to `canvas` ([88f63e9](https://github.com/sanity-io/locales/commit/88f63e9cac077059e6aac88f99ef00e6a09de669))
+
 ## [1.2.12](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.11...locale-is-is-v1.2.12) (2025-05-12)
 
 
