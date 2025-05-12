@@ -2,29 +2,30 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Zakázáno',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Povoleno',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Automatické aktualizace',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Jak povolit',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Zkopírováno do schránky. Veselé vkládání!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopírovat do schránky',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Současná verze',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Jak aktualizovat',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Nejnovější verze',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'Nejnovější verze je {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'Aktuální',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Uživatelský agent',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Zavřít',
@@ -87,16 +88,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.accept-message':
     'Zobrazují se pouze assety přijatých typů: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Zrušit',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Vybrat',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Vybrat soubor',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Vybrat obrázek',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    'Chyba při vkládání assetu. Více informací naleznete v konzoli.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Načíst více',
   /** Text shown when selecting a file but there's no files to select from */
@@ -153,14 +155,14 @@ export default removeUndefinedLocaleResources({
     'Žádné dokumenty nepoužívají tento obrázek',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description': 'Více informací naleznete v konzoli.',
+  'asset-sources.common.uploader.upload-failed.title': 'Nahrávání selhalo',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': 'Soubory pracovního prostoru',
+  'asset-sources.dataset.image.title': 'Obrázky pracovního prostoru',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Mediální knihovna',
+  'asset-sources.media-library.image.title': 'Mediální knihovna',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
@@ -184,7 +186,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Zahrnout čas',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': 'Vybrat čas',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Nastavit na aktuální čas',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -407,7 +409,7 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revize od <em>{{date}}</em>',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'Typ dokumentu "{{type}}" nebyl nalezen',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -518,7 +520,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Zrušit',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Výchozí',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Nahrát',
   /** Uploading <FileName/> */
@@ -668,7 +670,7 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Pouze pro čtení',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Nahrát soubory do:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Nelze zde nahrávat soubory',
   /** Clear upload */
@@ -1008,7 +1010,7 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Vyhledávání odkazu selhalo',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type': 'Odkazovaný dokument je neplatného typu ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Náhled obrázku odkazovaného dokumentu',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1246,7 +1248,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Publikováno',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Toto vydání je archivováno a nelze jej upravovat.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Vytvořeno {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1271,7 +1273,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Kopírovat verzi do nového vydání',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Vytvořit vydání',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nové vydání',
   /** Label for description in tooltip to explain release types */
@@ -1294,7 +1296,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Nepojmenované vydání',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Toto vydání bylo odšpendleno',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Vydání '{{title}}' bylo archivováno",
   /** The toast title that will be shown the creating a release fails */
@@ -1302,9 +1304,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Vydání '{{title}}' nebylo nalezeno",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Toto vydání bylo odšpendleno',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "Vydání '{{title}}' bylo publikováno",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Verze tohoto dokumentu již byla přidána',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
