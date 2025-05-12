@@ -10,8 +10,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hvordan aktivere',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Kopiert til utklippstavlen.',
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text': 'Kopiert til utklippstavlen.',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til utklippstavle',
   /** "Current version" header in about dialog  */
