@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ನಕಲಿಸಲು ಅಸಾಧ್ಯ',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'ಒಮ್ಮೆ ಅಳಿಸಿದ ನಂತರ, ಕಾಮೆಂಟ್ ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** The delete dialog confirm button text for a comment */

@@ -64,11 +64,19 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'ಪರ್ಸ್ಪೆಕ್ಟಿವ್',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'ಪರ್ಸ್ಪೆಕ್ಟಿವ್ "<code>previewDrafts</code>" ಅನ್ನು "<code>drafts</code>" ಗೆ ಮರುಹೆಸರಿಸಲಾಗಿದೆ ಮತ್ತು ಈಗ ಅಪ್ರಚಲಿತವಾಗಿದೆ. ಈ ಬದಲಾವಣೆ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಬೆಂಬಲಿಸುವ ಎಲ್ಲಾ ಆವೃತ್ತಿಗಳಿಗೆ ಅನ್ವಯಿಸುತ್ತದೆ (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'ದಾಖಲೆಗಳನ್ನು ಓದಿ',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'ಯಾವುದೇ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಇಲ್ಲ (API ಡೀಫಾಲ್ಟ್)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ಗಳು ನಿಮ್ಮ ಡೇಟಾಸೆಟ್‌ನಲ್ಲಿನ ವಿಷಯದ ವಿವಿಧ "ನೋಟ"ಗಳ ವಿರುದ್ಧ ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಚಲಾಯಿಸಲು ಅನುಮತಿಸುತ್ತವೆ',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'ಮುಂದಿನ API ಆವೃತ್ತಿಯಲ್ಲಿ ಡೀಫಾಲ್ಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ "<code>raw</code>" ನಿಂದ "<code>published</code>" ಗೆ ಬದಲಾಗಲಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಾಖಲೆಗಳನ್ನು ಸಲಹೆ ಮಾಡಿ.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ಪಿನ್ ಮಾಡಲಾದ ಬಿಡುಗಡೆ',
   /** Title for popover that explains what "Perspectives" are */

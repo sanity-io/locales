@@ -428,6 +428,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'ಅಪ್ರಚಲಿತ',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'ಶೀರ್ಷಿಕೆ ಇಲ್ಲದ',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'ಸಂಪರ್ಕ ಕಳೆದುಹೋಗಿದೆ. ಮರುಸಂಪರ್ಕ ಸಾಧಿಸುತ್ತಿದೆ…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'ದೋಷವಿದೆ',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1108,7 +1110,9 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'ಹೊಸ ದಾಖಲೆ...',
-  /** Tooltip message for add document button when the selected perspective is for published or inactive release */
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'ನೀವು ಹೊಸ ಪ್ರಕಟಿತ ದಾಖಲೆಗಳನ್ನು ಸೃಷ್ಟಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
   'new-document.disabled-release.tooltip': 'ನೀವು ಈ ಬಿಡುಗಡೆಗೆ ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'ಫಿಲ್ಟರ್',
@@ -1177,6 +1181,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{title}}</strong> ಆವೃತ್ತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ತ್ಯಜಿಸಲಾಗಿದೆ',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'ಬಿಡುಗಡೆಯಲ್ಲಿ ಅಪ್ರಕಟಿತವಾಗಿರುವ ಆವೃತ್ತಿಯನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ',
@@ -1227,7 +1233,7 @@ export default removeUndefinedLocaleResources({
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'ಬಿಡುಗಡೆಯ ಸುಮಾರು ಸಮಯ',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholer-describe-release': 'ಬಿಡುಗಡೆಯನ್ನು ವಿವರಿಸಿ...',
+  'release.form.placeholder-describe-release': 'ರಿಲೀಸ್‌ನ ವಿವರಣೆ ಮಾಡಿ…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'ಬಿಡುಗಡೆಯನ್ನು ಮರೆಮಾಡಿ',
   /** Label for draft perspective in navbar */

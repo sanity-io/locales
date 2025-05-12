@@ -12,13 +12,6 @@ export default removeUndefinedLocaleResources({
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'ನಿಮ್ಮ ಬ್ರೌಸರ್ ಈ ಕ್ರಿಯೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': 'ದಾಖಲೆ "{{fieldNames}}" ನಕಲಿಸಲಾಗಿದೆ',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title':
-    'ಕ್ಷೇತ್ರ "{{fieldName}}" ನಕಲಿಸಲಾಗಿದೆ',
-  /** The success message that is shown when a array item is copied */
-  'copy-paste.on-copy.validation.copy-item_one-success.title': 'ಐಟಂ "{{typeName}}" ನಕಲಿಸಲಾಗಿದೆ',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ಖಾಲಿ ಮೌಲ್ಯ, ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** --- On copy --- */
@@ -35,12 +28,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'ಅಂಟಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'ಅಮಾನ್ಯ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಐಟಂ',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'ದಾಖಲೆ "{{fieldNames}}" ನವೀಕರಿಸಲಾಗಿದೆ',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'ಕ್ಷೇತ್ರ "{{fieldName}}" ನವೀಕರಿಸಲಾಗಿದೆ',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" ಅನ್ನು "{{targetSchemaType}}" ನಲ್ಲಿ ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
