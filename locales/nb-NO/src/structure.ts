@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.running.label': 'Sletter…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
   'action.disabled-by-canvas.tooltip':
-    'Noen dokumenthandlinger er deaktivert for dokumenter lenket til Canvas',
+    'Noen dokumenthandlinger er deaktivert for dokumenter koblet til Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Er du sikker på at du vil forkaste alle endringer siden forrige gang dette dokumentet ble publisert?',
@@ -183,18 +183,18 @@ export default removeUndefinedLocaleResources({
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Rediger i Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': 'Dette utkastdokumentet er lenket til Canvas',
+  'canvas.banner.linked-text.draft': 'Dette utkastet er koblet til Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': 'Dette levende dokumentet er lenket til Canvas',
+  'canvas.banner.linked-text.published': 'Dette levende dokumentet er koblet til Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': 'Dette versjonsdokumentet er lenket til Canvas',
+  'canvas.banner.linked-text.version': 'Dette versjonsdokumentet er koblet til Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': 'Lær mer',
+  'canvas.banner.popover-button-text': 'Les mer',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas lar deg forfatte i en fri-form redigerer som automatisk kartlegger tilbake til Studio som strukturert innhold - mens du skriver.',
+    'Canvas lar deg skrive i fri-form, og kartlegger automatisk endringer tilbake til Studio som strukturert innhold - mens du skriver.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Idé først forfatterskap',
+  'canvas.banner.popover-heading': 'Start med en idé',
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Fra',

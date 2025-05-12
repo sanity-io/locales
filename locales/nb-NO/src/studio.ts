@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hvordan aktivere',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Kopiert til utklippstavlen. God liming!',
+    'Kopiert til utklippstavlen.,
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til utklippstavle',
   /** "Current version" header in about dialog  */
@@ -98,7 +98,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_image': 'Velg bilde',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
-    'Feil ved innsetting av eiendel. Se konsollen for mer informasjon.',
+    'En feil oppstod under innsetting av mediefil. Se konsollen for mer informasjon.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Last inn flere',
   /** Text shown when selecting a file but there's no files to select from */
@@ -157,8 +157,8 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description': 'Se konsollen for mer informasjon.',
   'asset-sources.common.uploader.upload-failed.title': 'Opplasting mislyktes',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': 'Arbeidsområde filer',
-  'asset-sources.dataset.image.title': 'Arbeidsområde bilder',
+  'asset-sources.dataset.file.title': 'Filer i workspace',
+  'asset-sources.dataset.image.title': 'Bilder i workspace',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediebibliotek',
   'asset-sources.media-library.image.title': 'Mediebibliotek',
