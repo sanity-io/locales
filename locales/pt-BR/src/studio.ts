@@ -122,7 +122,7 @@ export default removeUndefinedLocaleResources({
     'Nenhum documento está usando esta imagem',
 
   /** Label when a release has been deleted by a different user */
-  'banners.deleted-bundle-banner.text': "O '<strong>{{title}}</strong>' lançamento foi excluído.",
+  'banners.deleted-bundle-banner.text': "O lançamento '<strong>{{title}}</strong>' foi excluído.",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ir para o próximo mês',
