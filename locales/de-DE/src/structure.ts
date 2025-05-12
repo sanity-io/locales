@@ -41,6 +41,8 @@ export default removeUndefinedLocaleResources({
   'action.publish.disabled.not-ready': 'Vorgang nicht bereit',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Veröffentlichen',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Veröffentlichen',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Veröffentlichen',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -80,6 +82,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.live-edit.disabled':
     'Dieses Dokument hat Live-Bearbeitung aktiviert und kann nicht zurückgezogen werden',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Sie sehen ein schreibgeschütztes Dokument, das als Teil von <VersionBadge>{{title}}</VersionBadge> archiviert wurde. Es kann nicht bearbeitet werden',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Letzte Version wiederherstellen',
   /** The text content for the deleted document banner */
@@ -110,6 +115,9 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.sent': 'Editor-Anfrage gesendet',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': 'Um Bearbeitung bitten',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Sie sehen ein schreibgeschütztes Dokument, das als Teil von <VersionBadge>{{title}}</VersionBadge> veröffentlicht wurde. Es kann nicht bearbeitet werden',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referenz neu laden',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -120,6 +128,41 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Diese Referenz wurde entfernt, seitdem Sie sie geöffnet haben.',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Zur Veröffentlichung hinzufügen',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Veröffentlichung zum Bearbeiten öffnen',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Beim Hinzufügen des Dokuments zur Veröffentlichung ist ein Fehler aufgetreten: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Fehler beim Hinzufügen des Dokuments zur Veröffentlichung',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Das Dokument existiert nur in der',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'Veröffentlichung',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'Veröffentlichungen',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Dieses Dokument ist Teil der <VersionBadge/> Veröffentlichung und {{count}} weiteren Veröffentlichung.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Dieses Dokument ist Teil der <VersionBadge/> Veröffentlichung und {{count}} weiteren Veröffentlichungen',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Dieses Dokument ist Teil der <VersionBadge/> Veröffentlichung',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release':
+    'Nicht in der <VersionBadge>{{title}}</VersionBadge> Veröffentlichung.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Bitte warten Sie, während das Dokument zur Veröffentlichung hinzugefügt wird. Es sollte nicht länger als ein paar Sekunden dauern.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Dokument wird zur Veröffentlichung hinzugefügt…',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Dieses Dokument wird als Teil der <VersionBadge>{{title}}</VersionBadge> Veröffentlichung nicht veröffentlicht',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Neues {{schemaType}}',
@@ -148,6 +191,27 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Bis',
 
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" ist kein unterstützter Dokumentvergleichsmodus.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam':
+    'Der Parameter für das nächste Dokument ist ungültig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Dokumente können nicht verglichen werden',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Der Parameter für das vorherige Dokument ist ungültig.',
+
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Versionen vergleichen',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Entwurf',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Veröffentlicht',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Versionen vergleichen',
+
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Abbrechen',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
@@ -172,9 +236,6 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Dokument-ID in die Zwischenablage kopiert!',
   /** The toast title when the copy button has been clicked but copying failed */
   'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
     'Dokument-ID kopieren fehlgeschlagen',
@@ -280,6 +341,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Dokument wird synchronisiert…',
 
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Dokument <VersionBadge>{{releaseTitle}}</VersionBadge> inspizieren',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Dokument <VersionBadge>Entwurf</VersionBadge> öffnen',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Release <VersionBadge>{{releaseTitle}}</VersionBadge> öffnen',
+
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Lädt…',
 
@@ -372,6 +440,9 @@ export default removeUndefinedLocaleResources({
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Dokumenten-URL in die Zwischenablage kopiert',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> wurde dem Release hinzugefügt',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'Das Dokument wurde erfolgreich gelöscht',
@@ -391,8 +462,6 @@ export default removeUndefinedLocaleResources({
     'Das Dokument wurde zurückgezogen. Ein Entwurf wurde aus der letzten veröffentlichten Version erstellt.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Ohne Titel',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Verbindung verloren. Wiederverbindung…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Dokument wird geladen…',
   /** The text of the document not found pane if the schema is known */
