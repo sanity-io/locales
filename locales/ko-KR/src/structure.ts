@@ -12,7 +12,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': '삭제 중…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Canvas에 연결된 문서에 대해 일부 문서 작업이 비활성화되었습니다',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '마지막으로 발행된 이후의 모든 변경 사항을 버리시겠습니까?',
@@ -168,19 +169,20 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': '창 그룹 닫기',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Canvas에서 편집',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': '이 초안 문서는 Canvas에 연결되어 있습니다',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': '이 실시간 문서는 Canvas에 연결되어 있습니다',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': '이 버전 문서는 Canvas에 연결되어 있습니다',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': '더 알아보기',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas는 자유 형식의 편집기에서 작성을 하면서 자동으로 스튜디오로 구조화된 콘텐츠로 매핑되게 해주는 기능입니다 - 입력하는 대로.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': '아이디어 우선 작성',
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '에서',
@@ -201,7 +203,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': '이전 문서 매개변수가 유효하지 않습니다.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason': '비교할 이 문서의 다른 버전이 없습니다.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': '버전 비교',
   /** The string used to label draft documents */
@@ -340,9 +342,9 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': '문서 동기화 중…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': '즐겨찾기에 추가',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': '즐겨찾기에서 제거',
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 문서 검사',
