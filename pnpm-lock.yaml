@@ -72,11 +72,11 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
       zod:
-        specifier: ^3.24.1
-        version: 3.24.1
+        specifier: ^3.24.4
+        version: 3.24.4
       zod-validation-error:
         specifier: ^3.4.0
-        version: 3.4.0(zod@3.24.1)
+        version: 3.4.0(zod@3.24.4)
     devDependencies:
       '@types/js-yaml':
         specifier: ^4.0.9
@@ -104,7 +104,7 @@ importers:
         version: 29.7.0
       openai:
         specifier: ^4.78.1
-        version: 4.78.1(zod@3.24.1)
+        version: 4.78.1(zod@3.24.4)
       rimraf:
         specifier: ^5.0.10
         version: 5.0.10
@@ -4892,6 +4892,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -6585,6 +6586,9 @@ packages:
 
   zod@3.24.1:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
+
+  zod@3.24.4:
+    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
 snapshots:
 
@@ -9435,7 +9439,7 @@ snapshots:
       groq-js: 1.15.0
       json5: 2.2.3
       tsconfig-paths: 4.2.0
-      zod: 3.24.1
+      zod: 3.24.4
     transitivePeerDependencies:
       - supports-color
 
@@ -9455,7 +9459,7 @@ snapshots:
       groq-js: 1.16.1
       json5: 2.2.3
       tsconfig-paths: 4.2.0
-      zod: 3.24.1
+      zod: 3.24.4
     transitivePeerDependencies:
       - supports-color
 
@@ -12900,7 +12904,7 @@ snapshots:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  openai@4.78.1(zod@3.24.1):
+  openai@4.78.1(zod@3.24.4):
     dependencies:
       '@types/node': 18.19.75
       '@types/node-fetch': 2.6.11
@@ -12910,7 +12914,7 @@ snapshots:
       formdata-node: 4.4.1
       node-fetch: 2.7.0
     optionalDependencies:
-      zod: 3.24.1
+      zod: 3.24.4
     transitivePeerDependencies:
       - encoding
 
@@ -14867,4 +14871,10 @@ snapshots:
     dependencies:
       zod: 3.24.1
 
+  zod-validation-error@3.4.0(zod@3.24.4):
+    dependencies:
+      zod: 3.24.4
+
   zod@3.24.1: {}
+
+  zod@3.24.4: {}
