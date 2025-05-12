@@ -12,7 +12,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Đang xóa…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Một số hành động với tài liệu bị vô hiệu hóa cho các tài liệu được liên kết với Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Bạn có chắc chắn muốn hủy bỏ tất cả các thay đổi kể từ lần xuất bản cuối cùng không?',
@@ -168,19 +169,20 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Đóng nhóm cửa sổ',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Chỉnh sửa trong Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Bản nháp tài liệu này được liên kết với Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Tài liệu trực tiếp này được liên kết với Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Tài liệu phiên bản này được liên kết với Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Tìm hiểu thêm',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas cho phép bạn tạo nội dung trong một trình soạn thảo tự do mà tự động ánh xạ trở lại Studio dưới dạng nội dung có cấu trúc - ngay khi bạn đánh máy.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Sáng tạo ý tưởng đầu tiên',
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Từ',
@@ -202,7 +204,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Tham số tài liệu trước đó không hợp lệ.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Không có phiên bản khác của tài liệu này để so sánh.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'So sánh các phiên bản',
   /** The string used to label draft documents */
@@ -328,9 +331,9 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Đang đồng bộ tài liệu…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Thêm vào mục yêu thích',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Xóa khỏi mục yêu thích',
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Kiểm tra tài liệu <VersionBadge>{{releaseTitle}}</VersionBadge>',
