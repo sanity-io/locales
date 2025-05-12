@@ -118,6 +118,9 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Engin skjöl eru að nota þessa mynd',
 
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Útgáfan '<strong>{{title}}</strong>' hefur verið eytt.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Fara í næsta mánuð',
   /** Action message for navigating to next year */
@@ -231,6 +234,10 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Athugaðu þróunarvalmyndina fyrir frekari upplýsingar',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Það kom upp villa við að sýna breytingarnar á þessu sviði',
+  /* Error description when changes could not be loaded */
+  'changes.error-description': 'Við getum ekki hlaðið inn breytingunum fyrir þetta skjal.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Eitthvað fór úrskeiðis',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Gildisvilla: Gildið er af gerðinni "<code>{{actualType}}</code>", búist var við "<code>{{expectedType}}</code>"',
@@ -265,6 +272,8 @@ export default removeUndefinedLocaleResources({
     'Breyttu skjalinu eða veldu eldri útgáfu í tímalínunni til að sjá lista yfir breytingar birtast á þessum glugga.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Engar breytingar eru til staðar',
+  /* Label for the tooltip that shows when an action is not selectable*/
+  'changes.not-selectable': 'Ekki er hægt að velja þennan atburð',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Bætti við skýringu',
   /** Portable Text diff: An annotation was changed */
@@ -308,6 +317,8 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Fjarlægt',
   /** Title for the Review Changes pane */
   'changes.title': 'Endurskoða breytingar',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Drög',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -343,6 +354,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Raða eftir Titli',
 
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Búið til {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Breytt {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
@@ -415,6 +430,8 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'úrelt',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Án titils',
+  /** The title of the reconnecting toast */
+  'form.reconnecting.toast.title': 'Tenging rofin. Endurtengi…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Inniheldur villu',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -533,6 +550,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Leysir úr upphaflegu gildi…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Óvirkt',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Veldu dagsetningu í framtíðinni.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 't.d. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -1087,6 +1106,10 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Nýtt skjal…',
+  /** Tooltip message for add document button when the selected perspective is published  */
+  'new-document.disabled-published.tooltip': 'Þú getur ekki búið til ný skjöl sem eru birt',
+  /** Tooltip message for add document button when the selected perspective is for inactive release */
+  'new-document.disabled-release.tooltip': 'Þú getur ekki bætt skjölum við þessa útgáfu',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Sía',
   /** Loading indicator text within the new document menu */
@@ -1134,6 +1157,106 @@ export default removeUndefinedLocaleResources({
 
   /* Relative time, just now */
   'relative-time.just-now': 'rétt í þessu',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Bæta við útgáfu',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Bæta við {{title}}',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Nú þegar í útgáfu {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Afrita útgáfu til',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Ný útgáfa',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Hafna útgáfu',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Mistókst að hafna útgáfu',
+  /** Description for toast when version deletion is successfully discarded */
+  'release.action.discard-version.success':
+    '<strong>{{title}}</strong> útgáfa var hafnað með góðum árangri',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Ný útgáfa',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Þú hefur ekki leyfi til að framkvæma þessa aðgerð',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'Mistókst að setja útgáfu til að vera óbirt í útgáfu',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Tókst með góðum árangri að setja <strong>{{title}}</strong> til að vera óbirt í útgáfu',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Skoða útgáfu',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Áætlað til birtingar á {{date}}',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Drög',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Drög',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Birt',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Búið til {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Þetta skjal er í beinni ritstillingu, drög eru óvirk',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Breytt {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Ætlað fyrir {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Engar breytingar',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Óbirt',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Birt {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Áætlað fyrir {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Óþekkt dagsetning',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Þessari útgáfu hefur verið eytt',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Afrita útgáfu í nýja útgáfu',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Ný útgáfa',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Áætlaður útgáfutími er notaður til að búa til betri forskoðanir og vísbendingar um hvort skjöl rekist á.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Þú getur alltaf breytt því síðar.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Áætlaður útgáfutími',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Lýstu útgáfunni…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Fela útgáfu',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Drög',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Birt',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Útgáfur',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Ónefnd útgáfa',
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  'release.toast.archived-release.title': "Útgáfunni '{{title}}' hefur verið safnað",
+  /** The toast tiele that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Mistókst að búa til útgáfu',
+  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  'release.toast.not-found-release.title': "Ekki tókst að finna '{{title}}' útgáfuna",
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Útgáfa af þessu skjali hefur þegar verið bætt við',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Þessi útgáfa hefur verið áætluð. Aflýstu henni til að bæta við fleiri skjölum.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Eins fljótt og auðið er',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Á ákveðnum tíma',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Óákveðið',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Sjá allar útgáfur skjalsins',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Opna leit',
@@ -1590,6 +1713,12 @@ export default removeUndefinedLocaleResources({
     'Sögufærslur skjalsins hafa ekki orðið fyrir áhrifum.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Villa kom upp við að sækja breytingar á skjali.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Virkjaðu atburða API í gegnum Studio stillingarnar til að sjá sögu skjals.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Sagan um útgáfur skjala er aðeins aðgengileg í gegnum Events API.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Þegar efni skjalsins er breytt munu útgáfur skjalsins birtast í þessum valmynd.',
@@ -1610,6 +1739,8 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Endurskoðanir skjals',
   /** Label for loading history */
   'timeline.loading-history': 'Hleð sögu…',
+  /* Label for when no previous since events are available*/
+  'timeline.no-previous-events': 'Engir fyrri atburðir',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Búið til',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
