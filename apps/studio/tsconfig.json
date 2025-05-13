@@ -10,6 +10,7 @@
       "@sanity/locale-fr-fr": ["../../locales/fr-FR/src"],
       "@sanity/locale-hr-hr": ["../../locales/hr-HR/src"],
       "@sanity/locale-hu-hu": ["../../locales/hu-HU/src"],
+      "@sanity/locale-id-id": ["../../locales/id-ID/src"],
       "@sanity/locale-is-is": ["../../locales/is-IS/src"],
       "@sanity/locale-it-it": ["../../locales/it-IT/src"],
       "@sanity/locale-ja-jp": ["../../locales/ja-JP/src"],

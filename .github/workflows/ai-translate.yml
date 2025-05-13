@@ -16,6 +16,7 @@ name: AI translate
           - fr-FR
           - hr-HR
           - hu-HU
+          - id-ID
           - is-IS
           - it-IT
           - ja-JP

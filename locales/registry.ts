@@ -66,6 +66,13 @@ const registry: LocaleRegistry = [
     contributors: [],
   },
   {
+    id: 'id-ID',
+    name: 'Bahasa Indonesia',
+    englishName: 'Indonesian',
+    maintainers: ['linkb15'],
+    contributors: [],
+  },
+  {
     id: 'is-IS',
     name: 'Íslenska',
     englishName: 'Icelandic',

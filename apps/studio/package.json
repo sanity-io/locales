@@ -25,6 +25,7 @@
     "@sanity/locale-fr-fr": "workspace:*",
     "@sanity/locale-hr-hr": "workspace:*",
     "@sanity/locale-hu-hu": "workspace:*",
+    "@sanity/locale-id-id": "workspace:*",
     "@sanity/locale-is-is": "workspace:*",
     "@sanity/locale-it-it": "workspace:*",
     "@sanity/locale-ja-jp": "workspace:*",
