@@ -2,495 +2,555 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for the "Copy Document URL" document action */
-  'action.copy-document-url.label': undefined, // 'Copy Document URL'
+  'action.copy-document-url.label': 'Copiază URL-ul documentului',
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.delete.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.delete.disabled.not-ready': 'Operațiunea nu este pregătită',
   /** Tooltip when action button is disabled because the document does not exist */
-  'action.delete.disabled.nothing-to-delete': undefined, // 'This document doesn\'t yet exist or is already deleted'
+  'action.delete.disabled.nothing-to-delete': 'Acest document nu există încă sau a fost deja șters',
   /** Label for the "Delete" document action button */
-  'action.delete.label': undefined, // 'Delete'
+  'action.delete.label': 'Șterge',
   /** Label for the "Delete" document action while the document is being deleted */
-  'action.delete.running.label': undefined, // 'Deleting…'
+  'action.delete.running.label': 'Se șterge…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Unele acțiuni pentru documente sunt dezactivate pentru documentele legate de Canvas',
   /** Message prompting the user to confirm discarding changes */
-  'action.discard-changes.confirm-dialog.confirm-discard-changes': undefined, // 'Are you sure you want to discard all changes since last published?'
+  'action.discard-changes.confirm-dialog.confirm-discard-changes':
+    'Sunteți sigur că doriți să renunțați la toate modificările de la ultima publicare?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
-  'action.discard-changes.disabled.no-change': undefined, // 'This document has no unpublished changes'
+  'action.discard-changes.disabled.no-change': 'Acest document nu are modificări nepublicate',
   /** Tooltip when action is disabled because the document is not published */
-  'action.discard-changes.disabled.not-published': undefined, // 'This document is not published'
+  'action.discard-changes.disabled.not-published': 'Acest document nu este publicat',
   /** Tooltip when action button is disabled because the operation is not ready   */
-  'action.discard-changes.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.discard-changes.disabled.not-ready': 'Operațiunea nu este pregătită',
   /** Label for the "Discard changes" document action */
-  'action.discard-changes.label': undefined, // 'Discard changes'
+  'action.discard-changes.label': 'Renunță la modificări',
   /** Tooltip when action is disabled because the operation is not ready   */
-  'action.duplicate.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.duplicate.disabled.not-ready': 'Operațiunea nu este pregătită',
   /** Tooltip when action is disabled because the document doesn't exist */
-  'action.duplicate.disabled.nothing-to-duplicate': undefined, // 'This document doesn\'t yet exist so there\'s nothing to duplicate'
+  'action.duplicate.disabled.nothing-to-duplicate':
+    'Acest document nu există încă, deci nu există nimic de duplicat',
   /** Label for the "Duplicate" document action */
-  'action.duplicate.label': undefined, // 'Duplicate'
+  'action.duplicate.label': 'Duplică',
   /** Label for the "Duplicate" document action while the document is being duplicated */
-  'action.duplicate.running.label': undefined, // 'Duplicating…'
+  'action.duplicate.running.label': 'Se duplică…',
   /** Tooltip when publish button is disabled because the document is already published, and published time is unavailable.*/
-  'action.publish.already-published.no-time-ago.tooltip': undefined, // 'Already published'
+  'action.publish.already-published.no-time-ago.tooltip': 'Deja publicat',
   /** Tooltip when publish button is disabled because the document is already published.*/
-  'action.publish.already-published.tooltip': undefined, // 'Published {{timeSincePublished}}'
+  'action.publish.already-published.tooltip': 'Publicat {{timeSincePublished}}',
   /** Tooltip when action is disabled because the studio is not ready.*/
-  'action.publish.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.publish.disabled.not-ready': 'Operațiunea nu este pregătită',
   /** Label for action when there are pending changes.*/
-  'action.publish.draft.label': undefined, // 'Publish'
+  'action.publish.draft.label': 'Publică',
   /** Label for the "Publish" document action */
-  'action.publish.label': undefined, // 'Publish'
+  'action.publish.label': 'Publică',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
-  'action.publish.live-edit.label': undefined, // 'Publish'
+  'action.publish.live-edit.label': 'Publică',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
-  'action.publish.live-edit.publish-disabled': undefined, // 'Cannot publish since Live Edit is enabled for this document type'
+  'action.publish.live-edit.publish-disabled':
+    'Nu se poate publica deoarece Editarea Live este activată pentru acest tip de document',
   /** Tooltip for the "Publish" document action when the document has live edit enabled.*/
-  'action.publish.live-edit.tooltip': undefined, // 'Live Edit is enabled for this content type and publishing happens automatically as you make changes'
+  'action.publish.live-edit.tooltip':
+    'Editarea Live este activată pentru acest tip de conținut și publicarea are loc automat pe măsură ce faceți modificări',
   /** Tooltip when publish button is disabled because there are no changes.*/
-  'action.publish.no-changes.tooltip': undefined, // 'No unpublished changes'
+  'action.publish.no-changes.tooltip': 'Nu există modificări nepublicate',
   /** Label for the "Publish" document action when there are no changes.*/
-  'action.publish.published.label': undefined, // 'Published'
+  'action.publish.published.label': 'Publicat',
   /** Label for the "Publish" document action while publish is being executed.*/
-  'action.publish.running.label': undefined, // 'Publishing…'
+  'action.publish.running.label': 'Se publică…',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
-  'action.publish.validation-issues.tooltip': undefined, // 'There are validation errors that need to be fixed before this document can be published'
+  'action.publish.validation-issues.tooltip':
+    'Există erori de validare care trebuie rezolvate înainte ca acest document să poată fi publicat',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
-  'action.publish.waiting': undefined, // 'Waiting for tasks to finish before publishing'
+  'action.publish.waiting': 'Se așteaptă finalizarea sarcinilor înainte de publicare',
   /** Message prompting the user to confirm that they want to restore to an earlier revision*/
-  'action.restore.confirm.message': undefined, // 'Are you sure you want to restore this document?'
+  'action.restore.confirm.message': 'Sunteți sigur că doriți să restaurați acest document?',
   /** Fallback tooltip for when user is looking at the initial revision */
-  'action.restore.disabled.cannot-restore-initial': undefined, // 'You can\'t restore to the initial revision'
+  'action.restore.disabled.cannot-restore-initial': 'Nu puteți restaura la revizia inițială',
   /** Label for the "Restore" document action */
-  'action.restore.label': undefined, // 'Revert to revision'
+  'action.restore.label': 'Revenire la revizie',
   /** Default tooltip for the action */
-  'action.restore.tooltip': undefined, // 'Restore to this revision'
+  'action.restore.tooltip': 'Restaurați la această revizie',
   /** Tooltip when action is disabled because the document is not already published */
-  'action.unpublish.disabled.not-published': undefined, // 'This document is not published'
+  'action.unpublish.disabled.not-published': 'Acest document nu este publicat',
   /** Tooltip when action is disabled because the operation is not ready   */
-  'action.unpublish.disabled.not-ready': undefined, // 'Operation not ready'
+  'action.unpublish.disabled.not-ready': 'Operațiunea nu este pregătită',
   /** Label for the "Unpublish" document action */
-  'action.unpublish.label': undefined, // 'Unpublish'
+  'action.unpublish.label': 'Anulare publicare',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
-  'action.unpublish.live-edit.disabled': undefined, // 'This document has live edit enabled and cannot be unpublished'
+  'action.unpublish.live-edit.disabled':
+    'Acest document are editarea live activată și nu poate fi anulată publicarea',
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
-  'banners.archived-release.description': undefined, // 'This document version belongs to the archived <VersionBadge>{{title}}</VersionBadge> release'
+  'banners.archived-release.description':
+    'Această versiune a documentului aparține lansării arhivate <VersionBadge>{{title}}</VersionBadge>',
   /** The text for the restore button on the deleted document banner */
-  'banners.deleted-document-banner.restore-button.text': undefined, // 'Restore most recent revision'
+  'banners.deleted-document-banner.restore-button.text': 'Restaurați cea mai recentă revizie',
   /** The text content for the deleted document banner */
-  'banners.deleted-document-banner.text': undefined, // 'This document has been deleted.'
+  'banners.deleted-document-banner.text': 'Acest document a fost șters.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': undefined, // 'This document type has been deprecated.'
+  'banners.deprecated-document-type-banner.text': 'Acest tip de document a fost desființat.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': undefined, // 'Discard draft'
+  'banners.live-edit-draft-banner.discard.tooltip': 'Renunțați la schiță',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': undefined, // 'Publish to continue editing'
+  'banners.live-edit-draft-banner.publish.tooltip': 'Publicați pentru a continua editarea',
   /** The text content for the live edit document when it's a draft */
-  'banners.live-edit-draft-banner.text': undefined, // 'The type <strong>{{schemaType}}</strong> has <code>liveEdit</code> enabled, but a draft version of this document exists. Publish or discard the draft in order to continue live editing it.'
+  'banners.live-edit-draft-banner.text':
+    'Tipul <strong>{{schemaType}}</strong> are <code>liveEdit</code> activat, dar există o versiune schiță a acestui document. Publicați sau renunțați la schiță pentru a continua editarea live.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
-  'banners.permission-check-banner.missing-permission_create_one': undefined, // 'Your role <Roles/> does not have permission to publish this document.'
+  'banners.permission-check-banner.missing-permission_create_one':
+    'Rolul dumneavoastră <Roles/> nu are permisiunea de a publica acest document.',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
-  'banners.permission-check-banner.missing-permission_update_one': undefined, // 'Your role <Roles/> does not have permission to edit this document.'
+  'banners.permission-check-banner.missing-permission_update_one':
+    'Rolul dumneavoastră <Roles/> nu are permisiunea de a edita acest document.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': undefined, // 'Editor request sent'
+  'banners.permission-check-banner.request-permission-button.sent':
+    'Cererea de editor a fost trimisă',
   /** The text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.text': undefined, // 'Ask to edit'
+  'banners.permission-check-banner.request-permission-button.text': 'Cereți să editați',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
-  'banners.published-release.description': undefined, // 'You are viewing a read-only document that was published as part of <VersionBadge>{{title}}</VersionBadge>. It can\'t be edited'
+  'banners.published-release.description':
+    'Vizualizați un document în modul doar-citire care a fost publicat ca parte a <VersionBadge>{{title}}</VersionBadge>. Nu poate fi editat',
   /** The text for the reload button */
-  'banners.reference-changed-banner.reason-changed.reload-button.text': undefined, // 'Reload reference'
+  'banners.reference-changed-banner.reason-changed.reload-button.text': 'Reîncărcați referința',
   /** The text for the reference change banner if the reason is that the reference has been changed */
-  'banners.reference-changed-banner.reason-changed.text': undefined, // 'This reference has changed since you opened it.'
+  'banners.reference-changed-banner.reason-changed.text':
+    'Această referință s-a schimbat de când ați deschis-o.',
   /** The text for the close button */
-  'banners.reference-changed-banner.reason-removed.close-button.text': undefined, // 'Close reference'
+  'banners.reference-changed-banner.reason-removed.close-button.text': 'Închide referința',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
-  'banners.reference-changed-banner.reason-removed.text': undefined, // 'This reference has been removed since you opened it.'
+  'banners.reference-changed-banner.reason-removed.text':
+    'Această referință a fost eliminată de când ați deschis-o.',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.add-to-release': undefined, // 'Add to release'
+  'banners.release.action.add-to-release': 'Adaugă la lansare',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.open-to-edit': undefined, // 'Open release to edit'
+  'banners.release.action.open-to-edit': 'Deschide lansarea pentru editare',
   /** Toast description in case an error occurs when adding a document to a release  */
-  'banners.release.error.description': undefined, // 'An error occurred when adding document to the release: {{message}}'
+  'banners.release.error.description':
+    'A apărut o eroare la adăugarea documentului la lansare: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
-  'banners.release.error.title': undefined, // 'Error adding document to release'
+  'banners.release.error.title': 'Eroare la adăugarea documentului la lansare',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description': undefined, // 'The document only exists in the'
+  'banners.release.navigate-to-edit-description': 'Documentul există doar în',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-end_one': undefined, // 'release'
+  'banners.release.navigate-to-edit-description-end_one': 'lansare',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
-  'banners.release.navigate-to-edit-description-multiple_one': undefined, // 'This document is part of the <VersionBadge/> release and {{count}} more release.'
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Acest document face parte din lansarea <VersionBadge/> și încă {{count}} lansare.',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-single': undefined, // 'This document is part of the <VersionBadge/> release'
+  'banners.release.navigate-to-edit-description-single':
+    'Acest document face parte din lansarea <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': undefined, // 'Not in the <VersionBadge>{{title}}</VersionBadge> release.'
+  'banners.release.not-in-release': 'Nu este în lansarea <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.description': undefined, // 'Please hold tight while the document is added to the release. It should not take longer than a few seconds.'
+  'banners.release.waiting.description':
+    'Vă rugăm să așteptați în timp ce documentul este adăugat la lansare. Nu ar trebui să dureze mai mult de câteva secunde.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.title': undefined, // 'Adding document to release…'
+  'banners.release.waiting.title': 'Se adaugă documentul la lansare…',
   /** The text content for the unpublished document banner when is part of a release */
-  'banners.unpublished-release-banner.text': undefined, // 'This document will be unpublished as part of the <VersionBadge>{{title}}</VersionBadge> release'
+  'banners.unpublished-release-banner.text':
+    'Acest document va fi nepublicat ca parte a lansării <VersionBadge>{{title}}</VersionBadge>',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': undefined, // 'New {{schemaType}}'
+  'browser-document-title.new-document': 'Document nou {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
-  'browser-document-title.untitled-document': undefined, // 'Untitled'
+  'browser-document-title.untitled-document': 'Fără titlu',
 
   /** The action menu button aria-label */
-  'buttons.action-menu-button.aria-label': undefined, // 'Open document actions'
+  'buttons.action-menu-button.aria-label': 'Deschide acțiunile documentului',
   /** The action menu button tooltip */
-  'buttons.action-menu-button.tooltip': undefined, // 'Document actions'
+  'buttons.action-menu-button.tooltip': 'Acțiuni document',
   /** The aria-label for the split pane button on the document panel header */
-  'buttons.split-pane-button.aria-label': undefined, // 'Split pane right'
+  'buttons.split-pane-button.aria-label': 'Împarte panoul dreapta',
   /** The tool tip for the split pane button on the document panel header */
-  'buttons.split-pane-button.tooltip': undefined, // 'Split pane right'
+  'buttons.split-pane-button.tooltip': 'Împarte panoul dreapta',
   /** The title for the close button on the split pane on the document panel header */
-  'buttons.split-pane-close-button.title': undefined, // 'Close split pane'
+  'buttons.split-pane-close-button.title': 'Închide panoul împărțit',
   /** The title for the close group button on the split pane on the document panel header */
-  'buttons.split-pane-close-group-button.title': undefined, // 'Close pane group'
+  'buttons.split-pane-close-group-button.title': 'Închide grupul de panouri',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Editează în Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Acest document draft este legat de Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Acest document live este legat de Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Acest document versiune este legat de Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Află mai multe',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas îți permite să creezi într-un editor liber care se mapează automat înapoi în Studio ca și conținut structurat - pe măsură ce tastezi.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Autoriaza ideilor în primul rând',
 
   /** The label used in the changes inspector for the from selector */
-  'changes.from.label': undefined, // 'From'
+  'changes.from.label': 'De la',
   /* The label for the history tab in the changes inspector*/
-  'changes.tab.history': undefined, // 'History'
+  'changes.tab.history': 'Istoric',
   /* The label for the review tab in the changes inspector*/
-  'changes.tab.review-changes': undefined, // 'Review changes'
+  'changes.tab.review-changes': 'Revizuiește schimbările',
   /** The label used in the changes inspector for the to selector */
-  'changes.to.label': undefined, // 'To'
+  'changes.to.label': 'La',
 
   /** The error message shown when the specified document comparison mode is not supported */
-  'compare-version.error.invalidModeParam': undefined, // '"{{input}}" is not a supported document comparison mode.'
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" nu este un mod de comparare a documentelor suportat.',
   /** The error message shown when the next document for comparison could not be extracted from the URL */
-  'compare-version.error.invalidNextDocumentParam': undefined, // 'The next document parameter is invalid.'
+  'compare-version.error.invalidNextDocumentParam': 'Parametrul documentului următor este invalid.',
   /** The error message shown when the document comparison URL could not be parsed */
-  'compare-version.error.invalidParams.title': undefined, // 'Unable to compare documents'
+  'compare-version.error.invalidParams.title': 'Imposibil de comparat documentele',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
-  'compare-version.error.invalidPreviousDocumentParam': undefined, // 'The previous document parameter is invalid.'
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Parametrul documentului anterior este invalid.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Nu există alte versiuni ale acestui document pentru a compara.',
   /** The text for the "Compare versions" action for a document */
-  'compare-versions.menu-item.title': undefined, // 'Compare versions'
+  'compare-versions.menu-item.title': 'Compară versiunile',
   /** The string used to label draft documents */
-  'compare-versions.status.draft': undefined, // 'Draft'
+  'compare-versions.status.draft': 'Ciornă',
   /** The string used to label published documents */
-  'compare-versions.status.published': undefined, // 'Published'
+  'compare-versions.status.published': 'Publicat',
   /** The title used when comparing versions of a document */
-  'compare-versions.title': undefined, // 'Compare versions'
+  'compare-versions.title': 'Compară versiunile',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
-  'confirm-delete-dialog.cancel-button.text': undefined, // 'Cancel'
+  'confirm-delete-dialog.cancel-button.text': 'Anulează',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
-  'confirm-delete-dialog.cdr-summary.document-count_one': undefined, // '1 document'
+  'confirm-delete-dialog.cdr-summary.document-count_one': '1 document',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_one': undefined, // 'Dataset: {{datasets}}'
+  'confirm-delete-dialog.cdr-summary.subtitle_one': 'Set de date: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': undefined, // 'Unavailable dataset'
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Set de date indisponibil',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
-  'confirm-delete-dialog.cdr-summary.title_one': undefined, // '{{documentCount}} in another dataset'
+  'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} într-un alt set de date',
   /** Appears when hovering over the copy button to copy */
-  'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': 'Copiază ID-ul în clipboard',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.dataset.label': undefined, // 'Dataset'
+  'confirm-delete-dialog.cdr-table.dataset.label': 'Set de date',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.document-id.label': undefined, // 'Document ID'
+  'confirm-delete-dialog.cdr-table.document-id.label': 'ID document',
   /** The toast title when the copy button has been clicked but copying failed */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Copierea ID-ului documentului a eșuat',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'confirm-delete-dialog.cdr-table.project-id.label': undefined, // 'Project ID'
+  'confirm-delete-dialog.cdr-table.project-id.label': 'ID Proiect',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Șterge oricum',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': undefined, // 'Unpublish anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Retrage oricum',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_delete': undefined, // 'Delete now'
+  'confirm-delete-dialog.confirm-button.text_delete': 'Șterge acum',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_unpublish': undefined, // 'Unpublish now'
+  'confirm-delete-dialog.confirm-button.text_unpublish': 'Retrage acum',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
-  'confirm-delete-dialog.confirmation.text_delete': undefined, // 'Are you sure you want to delete “<DocumentTitle/>”?'
+  'confirm-delete-dialog.confirmation.text_delete':
+    'Sunteți sigur că doriți să ștergeți „<DocumentTitle/>”?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
-  'confirm-delete-dialog.confirmation.text_unpublish': undefined, // 'Are you sure you want to unpublish “<DocumentTitle/>”?'
+  'confirm-delete-dialog.confirmation.text_unpublish':
+    'Sunteți sigur că doriți să retrageți „<DocumentTitle/>”?',
   /** The text body of the error dialog. */
-  'confirm-delete-dialog.error.message.text': undefined, // 'An error occurred while loading referencing documents.'
+  'confirm-delete-dialog.error.message.text':
+    'A apărut o eroare în timpul încărcării documentelor referitoare.',
   /** The text in the retry button of the confirm delete dialog if an error occurred. */
-  'confirm-delete-dialog.error.retry-button.text': undefined, // 'Retry'
+  'confirm-delete-dialog.error.retry-button.text': 'Reîncearcă',
   /** The header of the confirm delete dialog if an error occurred while the confirm delete dialog was open. */
-  'confirm-delete-dialog.error.title.text': undefined, // 'Error'
+  'confirm-delete-dialog.error.title.text': 'Eroare',
   /** The header of the confirm delete dialog */
-  'confirm-delete-dialog.header.text_delete': undefined, // 'Delete document?'
+  'confirm-delete-dialog.header.text_delete': 'Ștergeți documentul?',
   /** The header of the confirm delete dialog */
-  'confirm-delete-dialog.header.text_unpublish': undefined, // 'Unpublish document?'
+  'confirm-delete-dialog.header.text_unpublish': 'Retrageți documentul?',
   /** The text that appears while the referring documents are queried */
-  'confirm-delete-dialog.loading.text': undefined, // 'Looking for referring documents…'
+  'confirm-delete-dialog.loading.text': 'Se caută documente referitoare…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'confirm-delete-dialog.other-reference-count.title_one': undefined, // '1 other reference not show'
+  'confirm-delete-dialog.other-reference-count.title_one': '1 altă referință nu este afișată',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'confirm-delete-dialog.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'confirm-delete-dialog.other-reference-count.tooltip':
+    'Nu putem afișa metadatele pentru aceste referințe din cauza lipsei unui token de acces pentru seturile de date relevante.',
   /** Appears when unable to render a document preview in the referring document list */
-  'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'confirm-delete-dialog.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'confirm-delete-dialog.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'confirm-delete-dialog.preview-item.preview-unavailable.title': 'Previzualizare indisponibilă',
   /** Warns the user of affects to other documents if the action is confirmed (delete) */
-  'confirm-delete-dialog.referential-integrity-disclaimer.text_delete': undefined, // 'If you delete this document, documents that refer to it will no longer be able to access it.'
+  'confirm-delete-dialog.referential-integrity-disclaimer.text_delete':
+    'Dacă ștergeți acest document, documentele care se referă la el nu vor mai putea să îl acceseze.',
   /** Warns the user of affects to other documents if the action is confirmed (unpublish) */
-  'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish': undefined, // 'If you unpublish this document, documents that refer to it will no longer be able to access it.'
+  'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish':
+    'Dacă retrageți acest document, documentele care se referă la el nu vor mai putea să îl acceseze.',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
-  'confirm-delete-dialog.referring-document-count.text_one': undefined, // '1 document refers to “<DocumentTitle/>”'
+  'confirm-delete-dialog.referring-document-count.text_one':
+    '1 document se referă la „<DocumentTitle/>”',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'confirm-delete-dialog.referring-documents-descriptor.text_delete': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'confirm-delete-dialog.referring-documents-descriptor.text_delete':
+    'Este posibil să nu puteți șterge „<DocumentTitle/>” deoarece următoarele documente se referă la el:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
-  'confirm-delete-dialog.referring-documents-descriptor.text_unpublish': undefined, // 'You may not be able to unpublish “<DocumentTitle/>” because the following documents refer to it:'
+  'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
+    'Este posibil să nu puteți retrage „<DocumentTitle/>” deoarece următoarele documente se referă la el:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.cancel-button.fallback-text': undefined, // 'Cancel'
+  'confirm-dialog.cancel-button.fallback-text': 'Anulează',
   /** The text for the confirm button in the confirm dialog used in document action shortcuts if none is provided */
-  'confirm-dialog.confirm-button.fallback-text': undefined, // 'Confirm'
+  'confirm-dialog.confirm-button.fallback-text': 'Confirmă',
 
   /** For the default structure definition, the title for the "Content" pane */
-  'default-definition.content-title': undefined, // 'Content'
+  'default-definition.content-title': 'Conținut',
 
   /** The text shown if there was an error while getting the document's title via a preview value */
-  'doc-title.error.text': undefined, // 'Error: {{errorMessage}}'
+  'doc-title.error.text': 'Eroare: {{errorMessage}}',
   /** The text shown if the preview value for a document is non-existent or empty */
-  'doc-title.fallback.text': undefined, // 'Untitled'
+  'doc-title.fallback.text': 'Fără titlu',
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
-  'doc-title.unknown-schema-type.text': undefined, // 'Unknown schema type: {{schemaType}}'
+  'doc-title.unknown-schema-type.text': 'Tip de schemă necunoscut: {{schemaType}}',
 
   /** Tooltip text shown for the close button of the document inspector */
-  'document-inspector.close-button.tooltip': undefined, // 'Close'
+  'document-inspector.close-button.tooltip': 'Închide',
   /** The title shown in the dialog header, when inspecting a valid document */
-  'document-inspector.dialog.title': undefined, // 'Inspecting <DocumentTitle/>'
+  'document-inspector.dialog.title': 'Inspectând <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
-  'document-inspector.dialog.title-no-value': undefined, // 'No value'
+  'document-inspector.dialog.title-no-value': 'Fără valoare',
   /** Title shown for menu item that opens the "Inspect" dialog */
-  'document-inspector.menu-item.title': undefined, // 'Inspect'
+  'document-inspector.menu-item.title': 'Inspectează',
   /** the placeholder text for the search input on the inspect dialog */
-  'document-inspector.search.placeholder': undefined, // 'Search'
+  'document-inspector.search.placeholder': 'Caută',
   /** The "parsed" view mode, meaning the JSON is searchable, collapsible etc */
-  'document-inspector.view-mode.parsed': undefined, // 'Parsed'
+  'document-inspector.view-mode.parsed': 'Analizat',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
-  'document-inspector.view-mode.raw-json': undefined, // 'Raw JSON'
+  'document-inspector.view-mode.raw-json': 'JSON Brut',
 
   /** The text for when a form is hidden */
-  'document-view.form-view.form-hidden': undefined, // 'This form is hidden'
+  'document-view.form-view.form-hidden': 'Acest formular este ascuns',
   /** Fallback title shown when a form title is not provided */
-  'document-view.form-view.form-title-fallback': undefined, // 'Untitled'
+  'document-view.form-view.form-title-fallback': 'Fără titlu',
   /** The text for when the form view is loading a document */
-  'document-view.form-view.loading': undefined, // 'Loading document…'
+  'document-view.form-view.loading': 'Se încarcă documentul…',
   /** The description of the sync lock toast on the form view */
-  'document-view.form-view.sync-lock-toast.description': undefined, // 'Please hold tight while the document is synced. This usually happens right after the document has been published, and it should not take more than a few seconds'
+  'document-view.form-view.sync-lock-toast.description':
+    'Vă rugăm să așteptați în timp ce documentul este sincronizat. Acest lucru se întâmplă de obicei imediat după ce documentul a fost publicat și nu ar trebui să dureze mai mult de câteva secunde',
   /** The title of the sync lock toast on the form view */
-  'document-view.form-view.sync-lock-toast.title': undefined, // 'Syncing document…'
+  'document-view.form-view.sync-lock-toast.title': 'Sincronizare document…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Adaugă la favorite',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Șterge din favorite',
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
-  'events.inspect.release': undefined, // 'Inspect <VersionBadge>{{releaseTitle}}</VersionBadge> document'
+  'events.inspect.release': 'Inspectează documentul <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': undefined, // 'Open <VersionBadge>draft</VersionBadge> document'
+  'events.open.draft': 'Deschide documentul <VersionBadge>draft</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
-  'events.open.release': undefined, // 'Open <VersionBadge>{{releaseTitle}}</VersionBadge> release'
+  'events.open.release': 'Deschide lansarea <VersionBadge>{{releaseTitle}}</VersionBadge>',
 
   /** The loading messaging for when the tooltip is still loading permission info */
-  'insufficient-permissions-message-tooltip.loading-text': undefined, // 'Loading…'
+  'insufficient-permissions-message-tooltip.loading-text': 'Se încarcă…',
 
   /** --- Menu items --- */
   /** The menu item group title to use for the Action menu items */
-  'menu-item-groups.actions-group': undefined, // 'Actions'
+  'menu-item-groups.actions-group': 'Acțiuni',
   /** The menu item group title to use for the Layout menu items */
-  'menu-item-groups.layout-group': undefined, // 'Layout'
+  'menu-item-groups.layout-group': 'Aspect',
   /** The menu item group title to use for the Sort menu items */
-  'menu-item-groups.sorting-group': undefined, // 'Sort'
+  'menu-item-groups.sorting-group': 'Sortare',
 
   /** The menu item title to use the compact view */
-  'menu-items.layout.compact-view': undefined, // 'Compact view'
+  'menu-items.layout.compact-view': 'Vizualizare compactă',
   /** The menu item title to use the detailed view */
-  'menu-items.layout.detailed-view': undefined, // 'Detailed view'
+  'menu-items.layout.detailed-view': 'Vizualizare detaliată',
   /** The menu item title to Sort by Created */
-  'menu-items.sort-by.created': undefined, // 'Sort by Created'
+  'menu-items.sort-by.created': 'Sortează după Data Creării',
   /** The menu item title to Sort by Last Edited */
-  'menu-items.sort-by.last-edited': undefined, // 'Sort by Last Edited'
+  'menu-items.sort-by.last-edited': 'Sortează după Ultima Editare',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
-  'no-document-types-screen.link-text': undefined, // 'Learn how to add a document type →'
+  'no-document-types-screen.link-text': 'Află cum să adaugi un tip de document →',
   /** The subtitle of the no document type screen that appears directly below the title */
-  'no-document-types-screen.subtitle': undefined, // 'Please define at least one document type in your schema.'
+  'no-document-types-screen.subtitle':
+    'Vă rugăm să definiți cel puțin un tip de document în schema dvs.',
   /** The title of the no document type screen */
-  'no-document-types-screen.title': undefined, // 'No document types'
+  'no-document-types-screen.title': 'Niciun tip de document',
 
   /** Text shown on back button visible on smaller breakpoints */
-  'pane-header.back-button.text': undefined, // 'Back'
+  'pane-header.back-button.text': 'Înapoi',
   /** tooltip text (via `title` attribute) for the menu button */
-  'pane-header.context-menu-button.tooltip': undefined, // 'Show menu'
+  'pane-header.context-menu-button.tooltip': 'Afișează meniul',
   /** Appears in a document list pane header if there are more than one option for create. This is the label for that menu */
-  'pane-header.create-menu.label': undefined, // 'Create'
+  'pane-header.create-menu.label': 'Creează',
   /** Tooltip displayed on the create new button in document lists */
-  'pane-header.create-new-button.tooltip': undefined, // 'Create new document'
+  'pane-header.create-new-button.tooltip': 'Creează un document nou',
   /** The `aria-label` for the disabled button in the pane header if create permissions are granted */
-  'pane-header.disabled-created-button.aria-label': undefined, // 'Insufficient permissions'
+  'pane-header.disabled-created-button.aria-label': 'Permisiuni insuficiente',
 
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
-  'pane-item.draft-status.has-draft.tooltip': undefined, // 'Edited <RelativeTime/>'
+  'pane-item.draft-status.has-draft.tooltip': 'Editat <RelativeTime/>',
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
-  'pane-item.draft-status.no-draft.tooltip': undefined, // 'No unpublished edits'
+  'pane-item.draft-status.no-draft.tooltip': 'Fără editări nepublicate',
   /** The subtitle tor pane item previews if there isn't a matching schema type found */
-  'pane-item.missing-schema-type.subtitle': undefined, // 'Document: <Code>{{documentId}}</Code>'
+  'pane-item.missing-schema-type.subtitle': 'Document: <Code>{{documentId}}</Code>',
   /** The title tor pane item previews if there isn't a matching schema type found */
-  'pane-item.missing-schema-type.title': undefined, // 'No schema found for type <Code>{{documentType}}</Code>'
+  'pane-item.missing-schema-type.title':
+    'Nu s-a găsit schema pentru tipul <Code>{{documentType}}</Code>',
   /** The text shown in the tooltip of pane item previews of documents if there are unpublished edits */
-  'pane-item.published-status.has-published.tooltip': undefined, // 'Published <RelativeTime/>'
+  'pane-item.published-status.has-published.tooltip': 'Publicat <RelativeTime/>',
   /** The text shown in the tooltip of pane item previews of documents if there are no unpublished edits */
-  'pane-item.published-status.no-published.tooltip': undefined, // 'No unpublished edits'
+  'pane-item.published-status.no-published.tooltip': 'Fără editări nepublicate',
 
   /** The text used in the document header title if there is an error */
-  'panes.document-header-title.error.text': undefined, // 'Error: {{error}}'
+  'panes.document-header-title.error.text': 'Eroare: {{error}}',
   /** The text used in the document header title if creating a new item */
-  'panes.document-header-title.new.text': undefined, // 'New {{schemaType}}'
+  'panes.document-header-title.new.text': 'Nou {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
-  'panes.document-header-title.untitled.text': undefined, // 'Untitled'
+  'panes.document-header-title.untitled.text': 'Fără titlu',
   /** The error text on the document list pane */
-  'panes.document-list-pane.error.text': undefined, // 'Error: <Code>{{error}}</Code>'
+  'panes.document-list-pane.error.text': 'Eroare: <Code>{{error}}</Code>',
   /** The error title on the document list pane */
-  'panes.document-list-pane.error.title': undefined, // 'Could not fetch list items'
+  'panes.document-list-pane.error.title': 'Nu s-au putut prelua elementele listei',
   /** The text of the document list pane if more than a maximum number of documents are returned */
-  'panes.document-list-pane.max-items.text': undefined, // 'Displaying a maximum of {{limit}} documents'
+  'panes.document-list-pane.max-items.text': 'Se afișează un număr maxim de {{limit}} documente',
   /** The text of the document list pane if no documents are found for a specified type */
-  'panes.document-list-pane.no-documents-of-type.text': undefined, // 'No documents of this type'
+  'panes.document-list-pane.no-documents-of-type.text': 'Niciun document de acest tip',
   /** The text of the document list pane if no documents are found */
-  'panes.document-list-pane.no-documents.text': undefined, // 'No results found'
+  'panes.document-list-pane.no-documents.text': 'Nu s-au găsit rezultate',
   /** The text of the document list pane if no documents are found matching specified criteria */
-  'panes.document-list-pane.no-matching-documents.text': undefined, // 'No matching documents'
+  'panes.document-list-pane.no-matching-documents.text': 'Nu există documente corespunzătoare',
   /** The aria-label for the search input on the document list pane */
-  'panes.document-list-pane.search-input.aria-label': undefined, // 'Search list'
+  'panes.document-list-pane.search-input.aria-label': 'Caută în listă',
   /** The search input for the search input on the document list pane */
-  'panes.document-list-pane.search-input.placeholder': undefined, // 'Search list'
+  'panes.document-list-pane.search-input.placeholder': 'Caută în listă',
   /** The summary title when displaying an error for a document operation result */
-  'panes.document-operation-results.error.summary.title': undefined, // 'Details'
+  'panes.document-operation-results.error.summary.title': 'Detalii',
   /** The text when a generic operation failed (fallback, generally not shown)  */
-  'panes.document-operation-results.operation-error': undefined, // 'An error occurred during {{context}}'
+  'panes.document-operation-results.operation-error': 'A apărut o eroare în timpul {{context}}',
   /** The text when a delete operation failed  */
-  'panes.document-operation-results.operation-error_delete': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refers to it.'
+  'panes.document-operation-results.operation-error_delete':
+    'A apărut o eroare în timpul încercării de a șterge acest document. De obicei, acest lucru înseamnă că există alte documente care se referă la el.',
   /** The text when an unpublish operation failed  */
-  'panes.document-operation-results.operation-error_unpublish': undefined, // 'An error occurred while attempting to unpublish this document. This usually means that there are other documents that refers to it.'
+  'panes.document-operation-results.operation-error_unpublish':
+    'A apărut o eroare în timpul încercării de a retrage publicarea acestui document. De obicei, acest lucru înseamnă că există alte documente care se referă la el.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
-  'panes.document-operation-results.operation-success': undefined, // 'Successfully performed {{op}} on document'
+  'panes.document-operation-results.operation-success':
+    'Operațiunea {{op}} a fost efectuată cu succes pe document',
   /** The text when copy URL operation succeeded  */
-  'panes.document-operation-results.operation-success_copy-url': undefined, // 'Document URL copied to clipboard'
+  'panes.document-operation-results.operation-success_copy-url':
+    'URL-ul documentului a fost copiat în clipboard',
   /**  */
-  'panes.document-operation-results.operation-success_createVersion': undefined, // '<Strong>{{title}}</Strong> was added to the release'
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> a fost adăugat la lansare',
   /** The text when a delete operation succeeded  */
-  'panes.document-operation-results.operation-success_delete': undefined, // 'The document was successfully deleted'
+  'panes.document-operation-results.operation-success_delete': 'Documentul a fost șters cu succes',
   /** The text when a discard changes operation succeeded  */
-  'panes.document-operation-results.operation-success_discardChanges': undefined, // 'All changes since last publish has now been discarded. The discarded draft can still be recovered from history'
+  'panes.document-operation-results.operation-success_discardChanges':
+    'Toate schimbările de la ultima publicare au fost acum anulate. Schița descartată poate fi încă recuperată din istoric',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Documentul a fost duplicat cu succes',
   /** The text when a publish operation succeeded  */
-  'panes.document-operation-results.operation-success_publish': undefined, // '<Strong>{{title}}</Strong> was published'
+  'panes.document-operation-results.operation-success_publish':
+    '<Strong>{{title}}</Strong> a fost publicat',
   /** The text when a restore operation succeeded  */
-  'panes.document-operation-results.operation-success_restore': undefined, // '<Strong>{{title}}</Strong> was restored'
+  'panes.document-operation-results.operation-success_restore':
+    '<Strong>{{title}}</Strong> a fost restaurat',
   /** The text when an unpublish operation succeeded  */
-  'panes.document-operation-results.operation-success_unpublish': undefined, // '<Strong>{{title}}</Strong> was unpublished. A draft has been created from the latest published revision.'
+  'panes.document-operation-results.operation-success_unpublish':
+    '<Strong>{{title}}</Strong> a fost retras de la publicare. O schiță a fost creată din ultima revizie publicată.',
   /** The document title shown when document title is "undefined" in operation message */
-  'panes.document-operation-results.operation-undefined-title': undefined, // 'Untitled'
+  'panes.document-operation-results.operation-undefined-title': 'Fără titlu',
   /** The loading message for the document not found pane */
-  'panes.document-pane.document-not-found.loading': undefined, // 'Loading document…'
+  'panes.document-pane.document-not-found.loading': 'Se încarcă documentul…',
   /** The text of the document not found pane if the schema is known */
-  'panes.document-pane.document-not-found.text': undefined, // 'The document type is not defined, and a document with the <Code>{{id}}</Code> identifier could not be found.'
+  'panes.document-pane.document-not-found.text':
+    'Tipul documentului nu este definit, și un document cu identificatorul <Code>{{id}}</Code> nu a putut fi găsit.',
   /** The title of the document not found pane if the schema is known */
-  'panes.document-pane.document-not-found.title': undefined, // 'The document was not found'
+  'panes.document-pane.document-not-found.title': 'Documentul nu a fost găsit',
   /** The text of the document not found pane if the schema is not found */
-  'panes.document-pane.document-unknown-type.text': undefined, // 'This document has the schema type <Code>{{documentType}}</Code>, which is not defined as a type in the local content studio schema.'
+  'panes.document-pane.document-unknown-type.text':
+    'Acest document are tipul de schemă <Code>{{documentType}}</Code>, care nu este definit ca un tip în schema locală a studioului de conținut.',
   /** The title of the document not found pane if the schema is not found or unknown */
-  'panes.document-pane.document-unknown-type.title': undefined, // 'Unknown document type: <Code>{{documentType}}</Code>'
+  'panes.document-pane.document-unknown-type.title':
+    'Tip de document necunoscut: <Code>{{documentType}}</Code>',
   /** The title of the document not found pane if the schema is unknown */
-  'panes.document-pane.document-unknown-type.without-schema.text': undefined, // 'This document does not exist, and no schema type was specified for it.'
+  'panes.document-pane.document-unknown-type.without-schema.text':
+    'Acest document nu există, și niciun tip de schemă nu a fost specificat pentru el.',
   /** Default message shown while resolving the structure definition for an asynchronous node */
-  'panes.resolving.default-message': undefined, // 'Loading…'
+  'panes.resolving.default-message': 'Se încarcă…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
-  'panes.resolving.slow-resolve-message': undefined, // 'Still loading…'
+  'panes.resolving.slow-resolve-message': 'Încă se încarcă…',
   /** The text to display when type is missing */
-  'panes.unknown-pane-type.missing-type.text': undefined, // 'Structure item is missing required <Code>type</Code> property.'
+  'panes.unknown-pane-type.missing-type.text':
+    'Elementul de structură nu are proprietatea <Code>type</Code> necesară.',
   /** The title of the unknown pane */
-  'panes.unknown-pane-type.title': undefined, // 'Unknown pane type'
+  'panes.unknown-pane-type.title': 'Tip de panou necunoscut',
   /** The text to display when type is unknown */
-  'panes.unknown-pane-type.unknown-type.text': undefined, // 'Structure item of type <Code>{{type}}</Code> is not a known entity.'
+  'panes.unknown-pane-type.unknown-type.text':
+    'Elementul de structură de tip <Code>{{type}}</Code> nu este o entitate cunoscută.',
 
   /** The text for the "Open preview" action for a document */
-  'production-preview.menu-item.title': undefined, // 'Open preview'
+  'production-preview.menu-item.title': 'Deschide previzualizarea',
 
   /** The text for the confirm button in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.confirm-button.text': undefined, // 'Send request'
+  'request-permission-dialog.confirm-button.text': 'Trimite cererea',
   /** The description text for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.description.text': undefined, // 'Your request will be sent to the project administrator(s). If you\'d like, you can also include a note'
+  'request-permission-dialog.description.text':
+    'Cererea dvs. va fi trimisă administratorului (administratorilor) proiectului. Dacă doriți, puteți include și o notă',
   /** The header/title for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.header.text': undefined, // 'Ask for edit access'
+  'request-permission-dialog.header.text': 'Cereți acces pentru editare',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': undefined, // 'If you\'d like, you can add a note'
+  'request-permission-dialog.note-input.description.text': 'Dacă doriți, puteți adăuga o notă',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': undefined, // 'Add note...'
+  'request-permission-dialog.note-input.placeholder.text': 'Adaugă notă...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text': undefined, // 'Your request to access this project has been declined.'
+  'request-permission-dialog.warning.denied.text':
+    'Cererea dvs. de acces la acest proiect a fost refuzată.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
-  'request-permission-dialog.warning.limit-reached.text': undefined, // 'You\'ve reached the limit for role requests across all projects. Please wait before submitting more requests or contact an administrator for assistance.'
+  'request-permission-dialog.warning.limit-reached.text':
+    'Ați atins limita pentru cererile de roluri în toate proiectele. Vă rugăm să așteptați înainte de a trimite mai multe cereri sau contactați un administrator pentru asistență.',
 
   /** Label for button when status is saved */
-  'status-bar.document-status-pulse.status.saved.text': undefined, // 'Saved'
+  'status-bar.document-status-pulse.status.saved.text': 'Salvat',
   /** Label for button when status is syncing */
-  'status-bar.document-status-pulse.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.document-status-pulse.status.syncing.text': 'Se salvează...',
   /** Accessibility label indicating when the document was last published, in relative time, eg "3 weeks ago" */
-  'status-bar.publish-status-button.last-published-time.aria-label': undefined, // 'Last published {{relativeTime}}'
+  'status-bar.publish-status-button.last-published-time.aria-label':
+    'Ultima publicare {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */
-  'status-bar.publish-status-button.last-published-time.tooltip': undefined, // 'Last published <RelativeTime/>'
+  'status-bar.publish-status-button.last-published-time.tooltip':
+    'Ultima publicare <RelativeTime/>',
   /** Accessibility label indicating when the document was last updated, in relative time, eg "2 hours ago" */
-  'status-bar.publish-status-button.last-updated-time.aria-label': undefined, // 'Last updated {{relativeTime}}'
+  'status-bar.publish-status-button.last-updated-time.aria-label':
+    'Ultima actualizare {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last updated <RelativeTime/>" */
-  'status-bar.publish-status-button.last-updated-time.tooltip': undefined, // 'Last updated <RelativeTime/>'
+  'status-bar.publish-status-button.last-updated-time.tooltip':
+    'Ultima actualizare <RelativeTime/>',
   /** Aria label for the button */
-  'status-bar.review-changes-button.aria-label': undefined, // 'Review changes'
+  'status-bar.review-changes-button.aria-label': 'Revizuiește modificările',
   /** Label for button when status is saved */
-  'status-bar.review-changes-button.status.saved.text': undefined, // 'Saved!'
+  'status-bar.review-changes-button.status.saved.text': 'Salvat!',
   /** Label for button when status is syncing */
-  'status-bar.review-changes-button.status.syncing.text': undefined, // 'Saving...'
+  'status-bar.review-changes-button.status.syncing.text': 'Se salvează...',
   /** Text for the secondary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.changes-saved': undefined, // 'Changes saved'
+  'status-bar.review-changes-button.tooltip.changes-saved': 'Modificări salvate',
   /** Primary text for tooltip for the button */
-  'status-bar.review-changes-button.tooltip.text': undefined, // 'Review changes'
+  'status-bar.review-changes-button.tooltip.text': 'Revizuiește modificările',
 
   /** The text that appears in side the documentation link */
-  'structure-error.docs-link.text': undefined, // 'View documentation'
+  'structure-error.docs-link.text': 'Vezi documentația',
   /** Labels the error message or error stack of the structure error screen */
-  'structure-error.error.label': undefined, // 'Error'
+  'structure-error.error.label': 'Eroare',
   /** The header that appears at the top of the error screen */
-  'structure-error.header.text': undefined, // 'Encountered an error while reading structure'
+  'structure-error.header.text': 'A fost întâmpinată o eroare în timpul citirii structurii',
   /** The text in the reload button to retry rendering the structure */
-  'structure-error.reload-button.text': undefined, // 'Reload'
+  'structure-error.reload-button.text': 'Reîncarcă',
   /** Labels the structure path of the structure error screen */
-  'structure-error.structure-path.label': undefined, // 'Structure path'
+  'structure-error.structure-path.label': 'Calea structurii',
 
   /** The aria label for the menu button in the timeline item */
-  'timeline-item.menu-button.aria-label': undefined, // 'Open action menu'
+  'timeline-item.menu-button.aria-label': 'Deschide meniul de acțiuni',
   /** The text for the tooltip in menu button the timeline item */
-  'timeline-item.menu-button.tooltip': undefined, // 'Actions'
+  'timeline-item.menu-button.tooltip': 'Acțiuni',
   /** The text for the collapse action in the timeline item menu */
-  'timeline-item.menu.action-collapse': undefined, // 'Collapse'
+  'timeline-item.menu.action-collapse': 'Restrânge',
   /** The text for the expand action in the timeline item menu */
-  'timeline-item.menu.action-expand': undefined, // 'Expand'
+  'timeline-item.menu.action-expand': 'Extinde',
 })

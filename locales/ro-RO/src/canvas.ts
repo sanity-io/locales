@@ -2,58 +2,65 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The text for the "Edit in Canvas" action. */
-  'action.edit-document': undefined, // 'Edit in Canvas'
+  'action.edit-document': 'Editați în Canvas',
   /** The text for the "Link to Canvas" action. */
-  'action.link-document': undefined, // 'Link to Canvas'
+  'action.link-document': 'Link către Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
-  'action.link-document-disabled.initial-value-not-resolved': undefined, // 'Please wait until the document initial values are resolved'
+  'action.link-document-disabled.initial-value-not-resolved':
+    'Vă rugăm să așteptați până când valorile inițiale ale documentului sunt rezolvate',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
-  'action.link-document-disabled.missing-permissions': undefined, // 'You don\'t have permissions to link this document to Canvas'
+  'action.link-document-disabled.missing-permissions':
+    'Nu aveți permisiuni pentru a lega acest document de Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard': undefined, // 'Open this document in Dashboard to link to Canvas'
+  'action.link-document-disabled.not-in-dashboard':
+    'Deschideți acest document în Dashboard pentru a-l lega de Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': undefined, // 'Version documents are not yet supported in Canvas'
+  'action.link-document-disabled.version-document':
+    'Documentele versiune nu sunt încă suportate în Canvas',
   /** The text for the "Unlink from Canvas" action. */
-  'action.unlink-document': undefined, // 'Unlink from Canvas'
+  'action.unlink-document': 'Dezlegați de Canvas',
 
   /** The text for the action button in the banner when the document is linked to Canvas. */
-  'banner.edit-document-in-canvas': undefined, // 'Edit in Canvas'
+  'banner.edit-document-in-canvas': 'Editați în Canvas',
   /** The text for the banner when the document is linked to Canvas. */
-  'banner.linked-to-canvas': undefined, // 'This document is linked to Canvas'
+  'banner.linked-to-canvas': 'Acest document este legat de Canvas',
 
   /** The text for the "Confirm document changes" dialog cancel button. */
-  'dialog.confirm-document-changes.cancel': undefined, // 'Cancel'
+  'dialog.confirm-document-changes.cancel': 'Anulați',
   /** The text for the "Confirm document changes" dialog confirm button. */
-  'dialog.confirm-document-changes.confirm': undefined, // 'Accept and continue'
+  'dialog.confirm-document-changes.confirm': 'Acceptați și continuați',
   /** The description for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.description': undefined, // 'This document needs to be updated to be compatible with Canvas.\n Existing content may be edited or removed as part of this process.'
+  'dialog.confirm-document-changes.description':
+    'Acest document trebuie actualizat pentru a fi compatibil cu Canvas.\n Conținutul existent poate fi editat sau eliminat ca parte a acestui proces.',
   /** The description for the "Confirm document changes" dialog footer. */
-  'dialog.confirm-document-changes.footer-description': undefined, // 'You can unlink from Canvas at any time'
+  'dialog.confirm-document-changes.footer-description': 'Puteți dezlega de Canvas în orice moment',
   /** The title for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.title': undefined, // 'Confirm document changes'
+  'dialog.confirm-document-changes.title': 'Confirmați modificările documentului',
   /** The text for the Link to Canvas dialog when there is a error. */
-  'dialog.link-to-canvas.error': undefined, // 'Failed to link to Canvas'
+  'dialog.link-to-canvas.error': 'Legarea la Canvas a eșuat',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
-  'dialog.link-to-canvas.redirecting': undefined, // 'Taking you to Canvas to complete linking...'
+  'dialog.link-to-canvas.redirecting': 'Vă redirecționăm către Canvas pentru a finaliza legarea...',
   /** The title for the "Link to Canvas" dialog. */
-  'dialog.link-to-canvas.title': undefined, // 'Link to Canvas'
+  'dialog.link-to-canvas.title': 'Legare la Canvas',
   /** The text for the "Link to Canvas" dialog when the document is being validated. */
-  'dialog.link-to-canvas.validating': undefined, // 'Validating'
+  'dialog.link-to-canvas.validating': 'Validare',
   /** The text for the "Unlink from Canvas" dialog cancel button. */
-  'dialog.unlink-from-canvas.cancel': undefined, // 'Cancel'
+  'dialog.unlink-from-canvas.cancel': 'Anulați',
   /** The text for the "Unlink from Canvas" dialog description. */
-  'dialog.unlink-from-canvas.description': undefined, // 'Once unlinked, it will be editable here and future edits in Canvas will no longer automatically map to this document.'
+  'dialog.unlink-from-canvas.description':
+    'Odată dezlegat, va fi editabil aici și viitoarele editări în Canvas nu vor mai fi automat mapate la acest document.',
   /** The text for the "Unlink from Canvas" dialog error message. */
-  'dialog.unlink-from-canvas.error': undefined, // 'Failed to unlink from Canvas'
+  'dialog.unlink-from-canvas.error': 'Dezlegarea de Canvas a eșuat',
   /** The text for the "Unlink from Canvas" dialog success message. */
-  'dialog.unlink-from-canvas.success': undefined, // 'Unlinked from Canvas'
+  'dialog.unlink-from-canvas.success': 'Dezlegat de Canvas',
   /** The title for the "Unlink from Canvas" dialog. */
-  'dialog.unlink-from-canvas.title': undefined, // 'Unlink from Canvas'
+  'dialog.unlink-from-canvas.title': 'Dezlegare de Canvas',
   /** The text for the "Unlink from Canvas" dialog unlink button. */
-  'dialog.unlink-from-canvas.unlink-action': undefined, // 'Unlink now'
+  'dialog.unlink-from-canvas.unlink-action': 'Dezlegați acum',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
-  'dialog.unlink-from-canvas.unlinking': undefined, // 'You\'re unlinking  <strong>“{{documentTitle}}”</strong> from Canvas.'
+  'dialog.unlink-from-canvas.unlinking':
+    'Dezlegați <strong>“{{documentTitle}}”</strong> de Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': undefined, // 'Missing permissions to navigate to Canvas'
+  'navigate-to-canvas-doc.error.missing-permissions': 'Permisiuni lipsă pentru a naviga la Canvas',
 })
