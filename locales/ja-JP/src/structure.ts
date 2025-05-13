@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.running.label': '削除中…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
   'action.disabled-by-canvas.tooltip':
-    'ドキュメントがCanvasにリンクされているため、一部のドキュメントアクションは無効です',
+    'ドキュメントがキャンバスにリンクされているため、一部のドキュメントアクションは無効です',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '最後に公開してからのすべての変更を破棄してもよろしいですか？',
@@ -177,13 +177,13 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'ペイングループを閉じる',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': 'Canvasで編集',
+  'canvas.banner.edit-in-canvas-action': 'キャンバスで編集',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': 'このドラフトドキュメントはCanvasにリンクされています',
+  'canvas.banner.linked-text.draft': 'このドラフトドキュメントはキャンバスにリンクされています',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': 'このライブドキュメントはCanvasにリンクされています',
+  'canvas.banner.linked-text.published': 'このライブドキュメントはキャンバスにリンクされています',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': 'このバージョンドキュメントはCanvasにリンクされています',
+  'canvas.banner.linked-text.version': 'このバージョンドキュメントはキャンバスにリンクされています',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': '詳しくはこちら',
   /** The description for the canvas linked banner popover */
