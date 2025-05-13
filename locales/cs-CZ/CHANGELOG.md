@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.18](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.17...locale-cs-cz-v1.1.18) (2025-05-13)
+
+
+### Bug Fixes
+
+* **cs-CZ:** automated translation updates ([#1130](https://github.com/sanity-io/locales/issues/1130)) ([8efc1ce](https://github.com/sanity-io/locales/commit/8efc1cef6de9654a397a2689edee2ca3dfe993c8))
+* remove `lukekaleta` as maintainer of cz-CZ (GitHub user gone) ([908c57d](https://github.com/sanity-io/locales/commit/908c57d22156ee60c5c365a71ab171a07d9e10f3))
+
 ## [1.1.17](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.16...locale-cs-cz-v1.1.17) (2025-05-12)
 
 

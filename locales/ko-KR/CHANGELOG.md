@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.19](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.18...locale-ko-kr-v1.1.19) (2025-05-13)
+
+
+### Bug Fixes
+
+* **ko-KR:** automated translation updates ([#1143](https://github.com/sanity-io/locales/issues/1143)) ([452cc97](https://github.com/sanity-io/locales/commit/452cc978b11a541f1cd5b7b0bc5a0e62e41ef1d6))
+
 ## [1.1.18](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.17...locale-ko-kr-v1.1.18) (2025-05-12)
 
 
