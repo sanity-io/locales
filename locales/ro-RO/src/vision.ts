@@ -2,79 +2,82 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
-  'action.copy-url-to-clipboard': undefined, // 'Copy to clipboard'
+  'action.copy-url-to-clipboard': 'Copiați în clipboard',
   /** Label for stopping an ongoing listen operation */
-  'action.listen-cancel': undefined, // 'Stop'
+  'action.listen-cancel': 'Oprire',
   /** Label for setting up a listener */
-  'action.listen-execute': undefined, // 'Listen'
+  'action.listen-execute': 'Ascultă',
   /** Label for cancelling an ongoing query */
-  'action.query-cancel': undefined, // 'Cancel'
+  'action.query-cancel': 'Anulează',
   /** Label for executing the query, eg doing a fetch */
-  'action.query-execute': undefined, // 'Fetch'
+  'action.query-execute': 'Interoghează',
 
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
-  'label.new': undefined, // 'New'
+  'label.new': 'Nou',
 
   /** Error message for when the "Params" input are not a valid json */
-  'params.error.params-invalid-json': undefined, // 'Parameters are not valid JSON'
+  'params.error.params-invalid-json': 'Parametrii nu sunt JSON valid',
   /** Label for "Params" (parameters) editor/input */
-  'params.label': undefined, // 'Params'
+  'params.label': 'Parametri',
 
   /** Label for 'Column' indicator when there is an error within the query */
-  'query.error.column': undefined, // 'Column'
+  'query.error.column': 'Coloană',
   /** Label for 'Line' indicator when there is an error within the query */
-  'query.error.line': undefined, // 'Line'
+  'query.error.line': 'Linie',
   /** Label for "Query" editor/input */
-  'query.label': undefined, // 'Query'
+  'query.label': 'Interogare',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
-  'query.url': undefined, // 'Query URL'
+  'query.url': 'URL interogare',
 
   /** Label for "End to End time" information of the fetched query */
-  'result.end-to-end-time-label': undefined, // 'End-to-end'
+  'result.end-to-end-time-label': 'End-to-end',
   /** Label for "Execution time" information of the fetched query */
-  'result.execution-time-label': undefined, // 'Execution'
+  'result.execution-time-label': 'Execuție',
   /** Label for "Result" explorer/view */
-  'result.label': undefined, // 'Result'
+  'result.label': 'Rezultat',
   /** Tooltip text shown when the query result is not encodable as CSV */
-  'result.save-result-as-csv.not-csv-encodable': undefined, // 'Result cannot be encoded as CSV'
+  'result.save-result-as-csv.not-csv-encodable': 'Rezultatul nu poate fi codificat ca CSV',
   /** Label for "Save result as" result action */
-  'result.save-result-as-format': undefined, // 'Save result as <SaveResultButtons/>'
+  'result.save-result-as-format': 'Salvează rezultatul ca <SaveResultButtons/>',
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
    */
-  'result.timing-not-applicable': undefined, // 'n/a'
+  'result.timing-not-applicable': 'n/a',
 
   /** Label for the "API version" dropdown in settings */
-  'settings.api-version-label': undefined, // 'API version'
+  'settings.api-version-label': 'Versiunea API',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
-  'settings.custom-api-version-label': undefined, // 'Custom API version'
+  'settings.custom-api-version-label': 'Versiunea API personalizată',
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': undefined, // 'Dataset'
+  'settings.dataset-label': 'Dataset',
   /** Error label for when the API version in 'Custom API version' input is invalid */
-  'settings.error.invalid-api-version': undefined, // 'Invalid API version'
+  'settings.error.invalid-api-version': 'Versiunea API invalidă',
   /** Label for the "other" versions within the "API version" dropdown */
-  'settings.other-api-version-label': undefined, // 'Other'
+  'settings.other-api-version-label': 'Altă',
   /**
    * Label for the "Perspective" dropdown in vision settings
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
-  'settings.perspective-label': undefined, // 'Perspective'
+  'settings.perspective-label': 'Perspective',
   /** Notification about previewDrafts to drafts rename */
-  'settings.perspective.preview-drafts-renamed-to-drafts.description': undefined, // 'The "<code>previewDrafts</code>" perspective has been renamed to "<code>drafts</code>" and is now deprecated. This change is effective for all versions with perspective support (>= v2021-03-25).'
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspectiva "<code>previewDrafts</code>" a fost redenumită în "<code>drafts</code>" și este acum învechită. Această schimbare este efectivă pentru toate versiunile cu suport de perspective (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
-  'settings.perspectives.action.docs-link': undefined, // 'Read docs'
+  'settings.perspectives.action.docs-link': 'Citiți documentația',
   /** Option for selecting default perspective */
-  'settings.perspectives.default': undefined, // 'No perspective (API default)'
+  'settings.perspectives.default': 'Fără perspectivă (implicit API)',
   /** Description for popover that explains what "Perspectives" are */
-  'settings.perspectives.description': undefined, // 'Perspectives allow your query to run against different "views" of the content in your dataset'
+  'settings.perspectives.description':
+    'Perspectivele permit interogarea diferitelor "vederi" ale conținutului din dataset-ul dvs.',
   /** Description for upcoming default perspective change */
-  'settings.perspectives.new-default.description': undefined, // 'The default perspective will change from "<code>raw</code>" to "<code>published</code>" in an upcoming API version. Please consult docs for more details.'
+  'settings.perspectives.new-default.description':
+    'Perspectiva implicită se va schimba de la "<code>raw</code>" la "<code>published</code>" într-o versiune viitoare a API-ului. Vă rugăm să consultați documentația pentru mai multe detalii.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': undefined, // 'Pinned release'
+  'settings.perspectives.pinned-release-label': 'Lansare fixată',
   /** Title for popover that explains what "Perspectives" are */
-  'settings.perspectives.title': undefined, // 'Perspectives'
+  'settings.perspectives.title': 'Perspective',
 })
