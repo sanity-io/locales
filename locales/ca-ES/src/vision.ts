@@ -2,79 +2,82 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
-  'action.copy-url-to-clipboard': undefined, // 'Copy to clipboard'
+  'action.copy-url-to-clipboard': 'Copia al porta-retalls',
   /** Label for stopping an ongoing listen operation */
-  'action.listen-cancel': undefined, // 'Stop'
+  'action.listen-cancel': 'Atura',
   /** Label for setting up a listener */
-  'action.listen-execute': undefined, // 'Listen'
+  'action.listen-execute': 'Escolta',
   /** Label for cancelling an ongoing query */
-  'action.query-cancel': undefined, // 'Cancel'
+  'action.query-cancel': 'Cancel·la',
   /** Label for executing the query, eg doing a fetch */
-  'action.query-execute': undefined, // 'Fetch'
+  'action.query-execute': 'Obté',
 
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
-  'label.new': undefined, // 'New'
+  'label.new': 'Nou',
 
   /** Error message for when the "Params" input are not a valid json */
-  'params.error.params-invalid-json': undefined, // 'Parameters are not valid JSON'
+  'params.error.params-invalid-json': 'Els paràmetres no són JSON vàlid',
   /** Label for "Params" (parameters) editor/input */
-  'params.label': undefined, // 'Params'
+  'params.label': 'Paràmetres',
 
   /** Label for 'Column' indicator when there is an error within the query */
-  'query.error.column': undefined, // 'Column'
+  'query.error.column': 'Columna',
   /** Label for 'Line' indicator when there is an error within the query */
-  'query.error.line': undefined, // 'Line'
+  'query.error.line': 'Línia',
   /** Label for "Query" editor/input */
-  'query.label': undefined, // 'Query'
+  'query.label': 'Consulta',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
-  'query.url': undefined, // 'Query URL'
+  'query.url': 'URL de la consulta',
 
   /** Label for "End to End time" information of the fetched query */
-  'result.end-to-end-time-label': undefined, // 'End-to-end'
+  'result.end-to-end-time-label': 'Temps complet',
   /** Label for "Execution time" information of the fetched query */
-  'result.execution-time-label': undefined, // 'Execution'
+  'result.execution-time-label': 'Execució',
   /** Label for "Result" explorer/view */
-  'result.label': undefined, // 'Result'
+  'result.label': 'Resultat',
   /** Tooltip text shown when the query result is not encodable as CSV */
-  'result.save-result-as-csv.not-csv-encodable': undefined, // 'Result cannot be encoded as CSV'
+  'result.save-result-as-csv.not-csv-encodable': 'El resultat no es pot codificar com a CSV',
   /** Label for "Save result as" result action */
-  'result.save-result-as-format': undefined, // 'Save result as <SaveResultButtons/>'
+  'result.save-result-as-format': 'Desa el resultat com a <SaveResultButtons/>',
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
    */
-  'result.timing-not-applicable': undefined, // 'n/a'
+  'result.timing-not-applicable': 'n/d',
 
   /** Label for the "API version" dropdown in settings */
-  'settings.api-version-label': undefined, // 'API version'
+  'settings.api-version-label': "Versió de l'API",
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
-  'settings.custom-api-version-label': undefined, // 'Custom API version'
+  'settings.custom-api-version-label': "Versió personalitzada de l'API",
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': undefined, // 'Dataset'
+  'settings.dataset-label': 'Dataset',
   /** Error label for when the API version in 'Custom API version' input is invalid */
-  'settings.error.invalid-api-version': undefined, // 'Invalid API version'
+  'settings.error.invalid-api-version': "Versió de l'API no vàlida",
   /** Label for the "other" versions within the "API version" dropdown */
-  'settings.other-api-version-label': undefined, // 'Other'
+  'settings.other-api-version-label': 'Altra',
   /**
    * Label for the "Perspective" dropdown in vision settings
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
-  'settings.perspective-label': undefined, // 'Perspective'
+  'settings.perspective-label': 'Perspectiva',
   /** Notification about previewDrafts to drafts rename */
-  'settings.perspective.preview-drafts-renamed-to-drafts.description': undefined, // 'The "<code>previewDrafts</code>" perspective has been renamed to "<code>drafts</code>" and is now deprecated. This change is effective for all versions with perspective support (>= v2021-03-25).'
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'La perspectiva "<code>previewDrafts</code>" ha estat renombrada a "<code>drafts</code>" i ara està obsoleta. Aquest canvi és efectiu per a totes les versions amb suport de perspectiva (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
-  'settings.perspectives.action.docs-link': undefined, // 'Read docs'
+  'settings.perspectives.action.docs-link': 'Llegeix la documentació',
   /** Option for selecting default perspective */
-  'settings.perspectives.default': undefined, // 'No perspective (API default)'
+  'settings.perspectives.default': "Cap perspectiva (predeterminada de l'API)",
   /** Description for popover that explains what "Perspectives" are */
-  'settings.perspectives.description': undefined, // 'Perspectives allow your query to run against different "views" of the content in your dataset'
+  'settings.perspectives.description':
+    'Les Perspectives permeten que la teva consulta s\'executi contra diferents "vistes" del contingut del teu dataset',
   /** Description for upcoming default perspective change */
-  'settings.perspectives.new-default.description': undefined, // 'The default perspective will change from "<code>raw</code>" to "<code>published</code>" in an upcoming API version. Please consult docs for more details.'
+  'settings.perspectives.new-default.description':
+    'La perspectiva predeterminada canviarà de "<code>raw</code>" a "<code>published</code>" en una propera versió de l\'API. Si us plau, consulta la documentació per a més detalls.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': undefined, // 'Pinned release'
+  'settings.perspectives.pinned-release-label': 'Versió fixada',
   /** Title for popover that explains what "Perspectives" are */
-  'settings.perspectives.title': undefined, // 'Perspectives'
+  'settings.perspectives.title': 'Perspectives',
 })

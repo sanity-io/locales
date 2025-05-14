@@ -2,163 +2,171 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The label for the create task action */
-  'actions.create.text': undefined, // 'Create new task'
+  'actions.create.text': 'Crea una nova tasca',
   /** The label for the open tasks panel action */
-  'actions.open.text': undefined, // 'Tasks'
+  'actions.open.text': 'Tasques',
 
   /** The label for the button to create a new task */
-  'buttons.create.text': undefined, // 'Create Task'
+  'buttons.create.text': 'Crea Tasca',
   /** The label for the button to discard changes */
-  'buttons.discard.text': undefined, // 'Discard'
+  'buttons.discard.text': 'Descarta',
   /** The label for the button to open the draft */
-  'buttons.draft.text': undefined, // 'Draft'
+  'buttons.draft.text': 'Esborrany',
   /** The label for the button to create a new task */
-  'buttons.new.text': undefined, // 'New task'
+  'buttons.new.text': 'Nova tasca',
   /** The text for tooltip in the create a new task button when mode is upsell */
-  'buttons.new.upsell-tooltip': undefined, // 'Upgrade to create tasks'
+  'buttons.new.upsell-tooltip': 'Actualitza per crear tasques',
   /** The label for the button that will navigate to the next task */
-  'buttons.next.tooltip': undefined, // 'Go to next task'
+  'buttons.next.tooltip': 'Vés a la següent tasca',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': undefined, // 'Go to previous task'
+  'buttons.previous.tooltip': 'Vés a la tasca anterior',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': undefined, // 'Once deleted, a task cannot be recovered.'
+  'dialog.remove-task.body': 'Un cop eliminada, una tasca no es pot recuperar.',
   /** The label for the cancel button on the remove task dialog */
-  'dialog.remove-task.buttons.cancel.text': undefined, // 'Cancel'
+  'dialog.remove-task.buttons.cancel.text': 'Cancel·la',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': undefined, // 'Delete'
+  'dialog.remove-task.buttons.confirm.text': 'Elimina',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': undefined, // 'Delete this task?'
+  'dialog.remove-task.title': 'Vols eliminar aquesta tasca?',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
-  'document.footer.open-tasks.placeholder_one': undefined, // 'Open task'
+  'document.footer.open-tasks.placeholder_one': 'Obre tasca',
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.placeholder_other': undefined, // 'Open tasks'
+  'document.footer.open-tasks.placeholder_other': 'Obre tasques',
   /** The label used in the button in the footer action in a document with a single task */
-  'document.footer.open-tasks.text_one': undefined, // '{{count}} open task'
+  'document.footer.open-tasks.text_one': '{{count}} tasca oberta',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': undefined, // '{{count}} open tasks'
+  'document.footer.open-tasks.text_other': '{{count}} tasques obertes',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': undefined, // 'You haven\'t been assigned any tasks'
+  'empty-state.list.assigned.heading': "No t'han assignat cap tasca",
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': undefined, // 'Once you\'re assigned tasks they\'ll show up here'
+  'empty-state.list.assigned.text': "Un cop t'assignin tasques, apareixeran aquí",
   /** The text in the tasks sidebar button any of the empty states is rendered*/
-  'empty-state.list.create-new': undefined, // 'Create new task'
+  'empty-state.list.create-new': 'Crea una nova tasca',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.heading': undefined, // 'This document doesn\'t have any tasks yet'
+  'empty-state.list.document.heading': 'Aquest document encara no té cap tasca',
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.text': undefined, // 'Once a document has connected tasks, they will be shown here.'
+  'empty-state.list.document.text':
+    'Un cop un document tingui tasques connectades, es mostraran aquí.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': undefined, // 'Open a document to see its task'
+  'empty-state.list.no-active-document.heading': 'Obre un document per veure la seva tasca',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': undefined, // 'Tasks on your active document will be shown here.'
+  'empty-state.list.no-active-document.text':
+    'Les tasques del teu document actiu es mostraran aquí.',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.heading': undefined, // 'You haven\'t subscribed to any tasks'
+  'empty-state.list.subscribed.heading': "No t'has subscrit a cap tasca",
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.text': undefined, // 'When you create, modify, or comment on a task you will be subscribed automatically'
+  'empty-state.list.subscribed.text':
+    'Quan creïs, modifiquis o comenteu una tasca, us hi subscriureu automàticament',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.assigned.heading': 'Cap tasca completada',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.text': undefined, // 'Your tasks marked done will show up here'
+  'empty-state.status.list.closed.assigned.text':
+    'Les vostres tasques marcades com a fetes apareixeran aquí',
   /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.document.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.document.heading': 'Cap tasca completada',
   /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.heading': undefined, // 'No completed tasks'
+  'empty-state.status.list.closed.subscribed.heading': 'Cap tasca completada',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.text': undefined, // 'Tasks you subscribe to marked done will show up here'
+  'empty-state.status.list.closed.subscribed.text':
+    'Les tasques a les quals us subscriviu marcades com a fetes apareixeran aquí',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.heading': undefined, // 'You\'re all caught up'
+  'empty-state.status.list.open.assigned.heading': 'Esteu al dia',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.text': undefined, // 'New tasks assigned to you will show up here'
+  'empty-state.status.list.open.assigned.text':
+    'Les noves tasques assignades a vosaltres apareixeran aquí',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.document.heading': undefined, // 'No tasks on this document'
+  'empty-state.status.list.open.document.heading': 'Cap tasca en aquest document',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.heading': undefined, // 'No subscribed tasks'
+  'empty-state.status.list.open.subscribed.heading': 'Cap tasca subscrita',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': undefined, // 'Tasks you subscribe to will show up here'
+  'empty-state.status.list.open.subscribed.text':
+    'Les tasques a les quals us subscriviu apareixeran aquí',
 
   /** Text used in the assignee input when there is no user assigned */
-  'form.input.assignee.no-user-assigned.text': undefined, // 'Unassigned'
+  'form.input.assignee.no-user-assigned.text': 'Sense assignar',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': undefined, // 'Set assignee'
+  'form.input.assignee.no-user-assigned.tooltip': 'Establir assignatari',
   /** Text used in the assignee input when searching and no users are found */
-  'form.input.assignee.search.no-users.text': undefined, // 'No users found'
+  'form.input.assignee.search.no-users.text': 'Cap usuari trobat',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': undefined, // 'Select assignee'
+  'form.input.assignee.search.placeholder': 'Seleccionar assignatari',
   /** Text used in the assignee input when user is not authorized */
-  'form.input.assignee.unauthorized.text': undefined, // 'Unauthorized'
+  'form.input.assignee.unauthorized.text': 'No autoritzat',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': undefined, // 'Change assignee'
+  'form.input.assignee.user-assigned.tooltip': 'Canviar assignatari',
   /** Text used in the assignee input when user is not found */
-  'form.input.assignee.user-not-found.text': undefined, // 'User not found'
+  'form.input.assignee.user-not-found.text': 'Usuari no trobat',
   /** The label used in the create more toggle */
-  'form.input.create-more.text': undefined, // 'Create more'
+  'form.input.create-more.text': 'Crear més',
   /** The label used in the date input button tooltip when it's empty */
-  'form.input.date.buttons.empty.tooltip': undefined, // 'Set due date'
+  'form.input.date.buttons.empty.tooltip': 'Establir data de venciment',
   /** The label used in the date input to remove the current value */
-  'form.input.date.buttons.remove.text': undefined, // 'Remove'
+  'form.input.date.buttons.remove.text': 'Eliminar',
   /** The label used in the date input button tooltip when it has value */
-  'form.input.date.buttons.tooltip': undefined, // 'Change due date'
+  'form.input.date.buttons.tooltip': 'Canviar data de venciment',
   /** Placeholder text used in the description input */
-  'form.input.description.placeholder': undefined, // 'Add description'
+  'form.input.description.placeholder': 'Afegir descripció',
   /**  Text used in the tooltip in the status change button  */
-  'form.input.status.button.tooltip': undefined, // 'Change status'
+  'form.input.status.button.tooltip': 'Canviar estat',
   /** The label used in the target input to remove the current value */
-  'form.input.target.buttons.remove.text': undefined, // 'Remove target content'
+  'form.input.target.buttons.remove.text': 'Eliminar contingut objectiu',
   /** The text used in the target input when encountering a schema error */
-  'form.input.target.error.schema-not-found': undefined, // 'Schema not found'
+  'form.input.target.error.schema-not-found': 'Esquema no trobat',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': undefined, // 'Select target document'
+  'form.input.target.search.placeholder': 'Selecciona el document de destinació',
   /** The placeholder text for the title input */
-  'form.input.title.placeholder': undefined, // 'Task title'
+  'form.input.title.placeholder': 'Títol de la tasca',
   /** The status error message presented when the user does not supply a title */
-  'form.status.error.title-required': undefined, // 'Title is required'
+  'form.status.error.title-required': 'El títol és obligatori',
   /** The status message upon successful creation of a task */
-  'form.status.success': undefined, // 'Task created'
+  'form.status.success': 'Tasca creada',
 
   /** The text displayed when no tasks are found */
-  'list.empty.text': undefined, // 'No tasks'
+  'list.empty.text': 'No hi ha tasques',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': undefined, // 'Help us improve, <Link>share feedback on Tasks</Link> '
+  'list.feedback.text':
+    "Ajuda'ns a millorar, <Link>comparteix la teva opinió sobre les Tasques</Link> ",
 
   /** The label for the copy link menu item */
-  'menuitem.copylink.text': undefined, // 'Copy link to task'
+  'menuitem.copylink.text': "Copia l'enllaç a la tasca",
   /** The label for the delete task menu item */
-  'menuitem.delete.text': undefined, // 'Delete task'
+  'menuitem.delete.text': 'Elimina la tasca',
   /** The label for the duplicate task menu item */
-  'menuitem.duplicate.text': undefined, // 'Duplicate task'
+  'menuitem.duplicate.text': 'Duplica la tasca',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': undefined, // 'Upgrade to duplicate tasks'
+  'menuitem.duplicate.upsell-tooltip': 'Actualitza per duplicar tasques',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': undefined, // 'created this task'
+  'panel.activity.created-fragment': 'ha creat aquesta tasca',
   /** The title of the activity section of the task */
-  'panel.activity.title': undefined, // 'Activity'
+  'panel.activity.title': 'Activitat',
   /** The text used in the activity log when unable to find the user */
-  'panel.activity.unknown-user': undefined, // 'Unknown user'
+  'panel.activity.unknown-user': 'Usuari desconegut',
   /** The tooltip for the close button for the task panel */
-  'panel.close.tooltip': undefined, // 'Close sidebar'
+  'panel.close.tooltip': 'Tanca la barra lateral',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': undefined, // 'Add a comment...'
+  'panel.comment.placeholder': 'Afegeix un comentari...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': undefined, // 'Upgrade to comment on tasks'
+  'panel.comment.placeholder.upsell': 'Actualitza per comentar en les tasques',
   /** The title used in the task panel when showing the create task form */
-  'panel.create.title': undefined, // 'Create'
+  'panel.create.title': 'Crea',
   /** The title used in the drafts pulldown */
-  'panel.drafts.title': undefined, // 'Drafts'
+  'panel.drafts.title': 'Esborranys',
   /** The tooltip for the task navigation component */
-  'panel.navigation.tooltip': undefined, // 'Open tasks'
+  'panel.navigation.tooltip': 'Obre les tasques',
   /** Title of the Tasks panel   */
-  'panel.title': undefined, // 'Tasks'
+  'panel.title': 'Tasques',
 
   /** Label for the Assigned Tab */
-  'tab.assigned.label': undefined, // 'Assigned'
+  'tab.assigned.label': 'Assignat',
   /** Label for the Active Document Tab */
-  'tab.document.label': undefined, // 'Active Document'
+  'tab.document.label': 'Document Actiu',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': undefined, // 'Subscribed'
+  'tab.subscribed.label': 'Subscrit',
 
   /** Tooltip for the tasks navbar icon */
-  'toolbar.tooltip': undefined, // 'Tasks'
+  'toolbar.tooltip': 'Tasques',
 })
