@@ -8,6 +8,7 @@ name: AI translate
         options:
           - ALL
           - be-BY
+          - ca-ES
           - cs-CZ
           - da-DK
           - de-DE
