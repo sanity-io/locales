@@ -2,1344 +2,1476 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Atspējots',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Iespējots',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Automātiskās atjaunināšanas',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Kā iespējot',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Nokopēts uz starpliktuvi. Laimīgu ielīmēšanu!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopēt uz starpliktuvi',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Pašreizējā versija',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Kā atjaunināt',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Jaunākā versija',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'Jaunākā versija ir {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'Aktuāla',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Lietotāja aģents',
 
   /** The text used in the tooltip shown in the dialog close button */
-  'announcement.dialog.close': undefined, // 'Close'
+  'announcement.dialog.close': 'Aizvērt',
   /** Aria label to be used in the dialog close button */
-  'announcement.dialog.close-label': undefined, // 'Close dialog'
+  'announcement.dialog.close-label': 'Aizvērt dialogu',
   /**Text to be used in the tooltip in the button in the studio announcement card */
-  'announcement.floating-button.dismiss': undefined, // 'Close'
+  'announcement.floating-button.dismiss': 'Aizvērt',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
-  'announcement.floating-button.dismiss-label': undefined, // 'Dismiss announcements'
+  'announcement.floating-button.dismiss-label': 'Atcelt paziņojumus',
   /**Aria label to be used in the floating button in the studio announcement card */
-  'announcement.floating-button.open-label': undefined, // 'Open announcements'
+  'announcement.floating-button.open-label': 'Atvērt paziņojumus',
 
   /** Menu item for deleting the asset */
-  'asset-source.asset-list.menu.delete': undefined, // 'Delete'
+  'asset-source.asset-list.menu.delete': 'Dzēst',
   /** Menu item for showing where a particular asset is used */
-  'asset-source.asset-list.menu.show-usage': undefined, // 'Show usage'
+  'asset-source.asset-list.menu.show-usage': 'Rādīt lietojumu',
   /** Header in usage dialog for file assets */
-  'asset-source.asset-usage-dialog.header_file': undefined, // 'Documents using file'
+  'asset-source.asset-usage-dialog.header_file': 'Dokumenti, kas izmanto failu',
   /** Header in usage dialog for image assets */
-  'asset-source.asset-usage-dialog.header_image': undefined, // 'Documents using image'
+  'asset-source.asset-usage-dialog.header_image': 'Dokumenti, kas izmanto attēlu',
   /** Text shown in usage dialog when loading documents using the selected asset */
-  'asset-source.asset-usage-dialog.loading': undefined, // 'Loading…'
+  'asset-source.asset-usage-dialog.loading': 'Ielādē…',
   /** Text for cancel action in delete-asset dialog */
-  'asset-source.delete-dialog.action.cancel': undefined, // 'Cancel'
+  'asset-source.delete-dialog.action.cancel': 'Atcelt',
   /** Text for "confirm delete" action in delete-asset dialog */
-  'asset-source.delete-dialog.action.delete': undefined, // 'Delete'
+  'asset-source.delete-dialog.action.delete': 'Dzēst',
   /** Dialog header for delete-asset dialog when deleting a file */
-  'asset-source.delete-dialog.header_file': undefined, // 'Delete file'
+  'asset-source.delete-dialog.header_file': 'Dzēst failu',
   /** Dialog header for delete-asset dialog when deleting an image */
-  'asset-source.delete-dialog.header_image': undefined, // 'Delete image'
+  'asset-source.delete-dialog.header_image': 'Dzēst attēlu',
   /** Text shown in delete dialog when loading documents using the selected asset */
-  'asset-source.delete-dialog.loading': undefined, // 'Loading…'
+  'asset-source.delete-dialog.loading': 'Ielādē…',
   /** Message confirming to delete *named* file */
-  'asset-source.delete-dialog.usage-list.confirm-delete-file_named': undefined, // 'You are about to delete the file <strong>{{filename}}</strong> and its metadata. Are you sure?'
+  'asset-source.delete-dialog.usage-list.confirm-delete-file_named':
+    'Jūs tūlīt dzēsīsiet failu <strong>{{filename}}</strong> un tā metadatus. Vai esat pārliecināts?',
   /** Message confirming to delete *unnamed* file */
-  'asset-source.delete-dialog.usage-list.confirm-delete-file_unnamed': undefined, // 'You are about to delete the file and its metadata. Are you sure?'
+  'asset-source.delete-dialog.usage-list.confirm-delete-file_unnamed':
+    'Jūs tūlīt dzēsīsiet failu un tā metadatus. Vai esat pārliecināts?',
   /** Message confirming to delete *named* image */
-  'asset-source.delete-dialog.usage-list.confirm-delete-image_named': undefined, // 'You are about to delete the image <strong>{{filename}}</strong> and its metadata. Are you sure?'
+  'asset-source.delete-dialog.usage-list.confirm-delete-image_named':
+    'Jūs tūlīt dzēsīsiet attēlu <strong>{{filename}}</strong> un tā metadatus. Vai esat pārliecināts?',
   /** Message confirming to delete *unnamed* image */
-  'asset-source.delete-dialog.usage-list.confirm-delete-image_unnamed': undefined, // 'You are about to delete the image and its metadata. Are you sure?'
+  'asset-source.delete-dialog.usage-list.confirm-delete-image_unnamed':
+    'Jūs tūlīt dzēsīsiet attēlu un tā metadatus. Vai esat pārliecināts?',
   /** Alt text showing on image preview in delete asset dialog  */
-  'asset-source.delete-dialog.usage-list.image-preview-alt': undefined, // 'Preview of image'
+  'asset-source.delete-dialog.usage-list.image-preview-alt': 'Attēla priekšskatījums',
   /** Warning message showing when *named* file can't be deleted because it is in use */
-  'asset-source.delete-dialog.usage-list.warning-file-is-in-use_named': undefined, // '{{filename}} cannot be deleted because it\'s being used. In order to delete this file, you first need to remove all uses of it.'
+  'asset-source.delete-dialog.usage-list.warning-file-is-in-use_named':
+    '{{filename}} nevar tikt dzēsts, jo tas tiek izmantots. Lai dzēstu šo failu, vispirms jums jānoņem tā lietojums.',
   /** Warning message showing when *unnamed* file can't be deleted because it is in use */
-  'asset-source.delete-dialog.usage-list.warning-file-is-in-use_unnamed': undefined, // 'This file cannot be deleted because it\'s being used. In order to delete it, you first need to remove all uses of it.'
+  'asset-source.delete-dialog.usage-list.warning-file-is-in-use_unnamed':
+    'Šis fails nevar tikt dzēsts, jo tas tiek izmantots. Lai dzēstu to, vispirms jums jānoņem tā lietojums.',
   /** Warning message showing when *named* image can't be deleted because it is in use */
-  'asset-source.delete-dialog.usage-list.warning-image-is-in-use_named': undefined, // '{{filename}} cannot be deleted because it\'s being used. In order to delete this image, you first need to remove all uses of it.'
+  'asset-source.delete-dialog.usage-list.warning-image-is-in-use_named':
+    '{{filename}} nevar tikt dzēsts, jo tas tiek izmantots. Lai dzēstu šo attēlu, vispirms jums jānoņem tā lietojums.',
   /** Warning message showing when *unnamed* image can't be deleted because it is in use */
-  'asset-source.delete-dialog.usage-list.warning-image-is-in-use_unnamed': undefined, // 'This image cannot be deleted because it\'s being used. In order to delete it, you first need to remove all uses of it.'
+  'asset-source.delete-dialog.usage-list.warning-image-is-in-use_unnamed':
+    'Šis attēls nevar tikt dzēsts, jo tas tiek izmantots. Lai dzēstu to, vispirms jums jānoņem tā lietojums.',
   /** Text shown when the list of assets only include a specific set of types */
-  'asset-source.dialog.accept-message': undefined, // 'Only showing assets of accepted types: <strong>{{acceptTypes}}</strong>'
+  'asset-source.dialog.accept-message':
+    'Tiek rādīti tikai pieņemto tipu aktīvi: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Atcelt',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Izvēlēties',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': undefined, // 'Select file'
+  'asset-source.dialog.default-title_file': 'Izvēlēties failu',
   /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': undefined, // 'Select image'
+  'asset-source.dialog.default-title_image': 'Izvēlēties attēlu',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    'Kļūda ievietojot aktīvu. Papildinformāciju skatiet konsoles logā.',
   /** Select asset dialog load more items */
-  'asset-source.dialog.load-more': undefined, // 'Load more'
+  'asset-source.dialog.load-more': 'Ielādēt vairāk',
   /** Text shown when selecting a file but there's no files to select from */
-  'asset-source.dialog.no-assets_file': undefined, // 'No files'
+  'asset-source.dialog.no-assets_file': 'Nav failu',
   /** Text shown when selecting an image but there's no images to select from */
-  'asset-source.dialog.no-assets_image': undefined, // 'No images'
-  'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file': undefined, // 'Cannot delete currently selected file'
-  'asset-source.file.asset-list.action.delete.text': undefined, // 'Delete'
-  'asset-source.file.asset-list.action.delete.title': undefined, // 'Delete file'
-  'asset-source.file.asset-list.action.select-file.title': undefined, // 'Select the file {{filename}}'
-  'asset-source.file.asset-list.action.show-usage.title': undefined, // 'Show usage'
-  'asset-source.file.asset-list.delete-failed': undefined, // 'File could not be deleted'
-  'asset-source.file.asset-list.delete-successful': undefined, // 'File was deleted'
-  'asset-source.file.asset-list.header.date-added': undefined, // 'Date added'
+  'asset-source.dialog.no-assets_image': 'Nav attēlu',
+  'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
+    'Nevar dzēst pašreizējo izvēlēto failu',
+  'asset-source.file.asset-list.action.delete.text': 'Dzēst',
+  'asset-source.file.asset-list.action.delete.title': 'Dzēst failu',
+  'asset-source.file.asset-list.action.select-file.title': 'Izvēlēties failu {{filename}}',
+  'asset-source.file.asset-list.action.show-usage.title': 'Rādīt lietojumu',
+  'asset-source.file.asset-list.delete-failed': 'Failu nevarēja izdzēst',
+  'asset-source.file.asset-list.delete-successful': 'Fails tika izdzēsts',
+  'asset-source.file.asset-list.header.date-added': 'Pievienošanas datums',
   /** File asset source */
-  'asset-source.file.asset-list.header.filename': undefined, // 'Filename'
-  'asset-source.file.asset-list.header.size': undefined, // 'Size'
-  'asset-source.file.asset-list.header.type': undefined, // 'Type'
+  'asset-source.file.asset-list.header.filename': 'Faila nosaukums',
+  'asset-source.file.asset-list.header.size': 'Izmērs',
+  'asset-source.file.asset-list.header.type': 'Tips',
   /** Text displayed on button or menu invoking the file asset source */
-  'asset-source.file.title': undefined, // 'Uploaded files'
-  'asset-source.image.asset-list.delete-failed': undefined, // 'Image could not be deleted'
+  'asset-source.file.title': 'Augšupielādētie faili',
+  'asset-source.image.asset-list.delete-failed': 'Attēlu nevarēja izdzēst',
   /** Image asset source */
-  'asset-source.image.asset-list.delete-successful': undefined, // 'Image was deleted'
+  'asset-source.image.asset-list.delete-successful': 'Attēls tika izdzēsts',
   /** Text displayed on button or menu invoking the image asset source */
-  'asset-source.image.title': undefined, // 'Uploaded images'
+  'asset-source.image.title': 'Augšupielādētie attēli',
   /** Built in asset source usage texts */
-  'asset-source.usage-list.documents-using-file_named_one': undefined, // 'One document is using file <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-file_named_other': undefined, // '{{count}} documents are using file <code>{{filename}}</code>'
+  'asset-source.usage-list.documents-using-file_named_one':
+    'Viens dokuments izmanto failu <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-file_named_other':
+    '{{count}} dokumenti izmanto failu <code>{{filename}}</code>',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *named* file **/
-  'asset-source.usage-list.documents-using-file_named_zero': undefined, // 'No documents are using file <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-file_unnamed_one': undefined, // 'One document is using this file'
-  'asset-source.usage-list.documents-using-file_unnamed_other': undefined, // '{{count}} documents are using this file'
+  'asset-source.usage-list.documents-using-file_named_zero':
+    'Neviens dokuments neizmanto failu <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-file_unnamed_one': 'Viens dokuments izmanto šo failu',
+  'asset-source.usage-list.documents-using-file_unnamed_other':
+    '{{count}} dokumenti izmanto šo failu',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *unnamed* file **/
-  'asset-source.usage-list.documents-using-file_unnamed_zero': undefined, // 'No documents are using this file'
-  'asset-source.usage-list.documents-using-image_named_one': undefined, // 'One document is using image <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-image_named_other': undefined, // '{{count}} documents are using image <code>{{filename}}</code>'
+  'asset-source.usage-list.documents-using-file_unnamed_zero':
+    'Neviens dokuments neizmanto šo failu',
+  'asset-source.usage-list.documents-using-image_named_one':
+    'Viens dokuments izmanto attēlu <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-image_named_other':
+    '{{count}} dokumenti izmanto attēlu <code>{{filename}}</code>',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
-  'asset-source.usage-list.documents-using-image_named_zero': undefined, // 'No documents are using image <code>{{filename}}</code>'
-  'asset-source.usage-list.documents-using-image_unnamed_one': undefined, // 'One document is using this image'
-  'asset-source.usage-list.documents-using-image_unnamed_other': undefined, // '{{count}} documents are using this image'
+  'asset-source.usage-list.documents-using-image_named_zero':
+    'Neviens dokuments neizmanto attēlu <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-image_unnamed_one': 'Viens dokuments izmanto šo attēlu',
+  'asset-source.usage-list.documents-using-image_unnamed_other':
+    '{{count}} dokumenti izmanto šo attēlu',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
-  'asset-source.usage-list.documents-using-image_unnamed_zero': undefined, // 'No documents are using this image'
+  'asset-source.usage-list.documents-using-image_unnamed_zero':
+    'Neviens dokuments neizmanto šo attēlu',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description': 'Plašāku informāciju skatiet konsolē.',
+  'asset-sources.common.uploader.upload-failed.title': 'Augšupielāde neizdevās',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': 'Darbvietas faili',
+  'asset-sources.dataset.image.title': 'Darbvietas attēli',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Mediju bibliotēka',
+  'asset-sources.media-library.image.title': 'Mediju bibliotēka',
 
   /** Label when a release has been deleted by a different user */
-  'banners.deleted-bundle-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been deleted.'
+  'banners.deleted-bundle-banner.text': "Laidiens '<strong>{{title}}</strong>' ir izdzēsts.",
 
   /** Action message for navigating to next month */
-  'calendar.action.go-to-next-month': undefined, // 'Go to next month'
+  'calendar.action.go-to-next-month': 'Doties uz nākamo mēnesi',
   /** Action message for navigating to next year */
-  'calendar.action.go-to-next-year': undefined, // 'Go to next year'
+  'calendar.action.go-to-next-year': 'Doties uz nākamo gadu',
   /** Action message for navigating to previous month */
-  'calendar.action.go-to-previous-month': undefined, // 'Go to previous month'
+  'calendar.action.go-to-previous-month': 'Doties uz iepriekšējo mēnesi',
   /** Action message for navigating to previous year */
-  'calendar.action.go-to-previous-year': undefined, // 'Go to previous year'
+  'calendar.action.go-to-previous-year': 'Doties uz iepriekšējo gadu',
   /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
-  'calendar.action.go-to-today': undefined, // 'Today'
+  'calendar.action.go-to-today': 'Šodien',
   /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
-  'calendar.action.go-to-today-aria-label': undefined, // 'Go to today'
+  'calendar.action.go-to-today-aria-label': 'Doties uz šodienu',
   /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
-  'calendar.action.go-to-tomorrow': undefined, // 'Tomorrow'
+  'calendar.action.go-to-tomorrow': 'Rīt',
   /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
-  'calendar.action.go-to-yesterday': undefined, // 'Yesterday'
+  'calendar.action.go-to-yesterday': 'Vakar',
   /** Label for switch that controls whether or not to include time in given timestamp */
-  'calendar.action.include-time-label': undefined, // 'Include time'
+  'calendar.action.include-time-label': 'Iekļaut laiku',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': 'Izvēlēties laiku',
   /** Action message for setting to the current time */
-  'calendar.action.set-to-current-time': undefined, // 'Set to current time'
+  'calendar.action.set-to-current-time': 'Iestatīt uz pašreizējo laiku',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
-  'calendar.action.set-to-time-preset': undefined, // '{{time}} on {{date, datetime}}'
+  'calendar.action.set-to-time-preset': '{{time}} {{date, datetime}}',
   /** Aria label for button to open date picker */
-  'calendar.button.aria-label': undefined, // 'Open calendar'
+  'calendar.button.aria-label': 'Atvērt kalendāru',
   /** Tooltip content for button to open datetime input */
-  'calendar.button.tooltip-text': undefined, // 'Select date'
+  'calendar.button.tooltip-text': 'Izvēlēties datumu',
   /** Error message displayed in calendar when entered date is not the correct format */
-  'calendar.error.must-be-in-format': undefined, // 'Must be in the format: {{exampleDate}}'
+  'calendar.error.must-be-in-format': 'Jābūt formātā: {{exampleDate}}',
   /** Month name for April */
-  'calendar.month-names.april': undefined, // 'April'
+  'calendar.month-names.april': 'Aprīlis',
   /** Month name for August */
-  'calendar.month-names.august': undefined, // 'August'
+  'calendar.month-names.august': 'Augusts',
   /** Month name for December */
-  'calendar.month-names.december': undefined, // 'December'
+  'calendar.month-names.december': 'Decembris',
   /** Month name for February */
-  'calendar.month-names.february': undefined, // 'February'
+  'calendar.month-names.february': 'Februāris',
   /** Month name for January */
-  'calendar.month-names.january': undefined, // 'January'
+  'calendar.month-names.january': 'Janvāris',
   /** Month name for July */
-  'calendar.month-names.july': undefined, // 'July'
+  'calendar.month-names.july': 'Jūlijs',
   /** Month name for June */
-  'calendar.month-names.june': undefined, // 'June'
+  'calendar.month-names.june': 'Jūnijs',
   /** Month name for March */
-  'calendar.month-names.march': undefined, // 'March'
+  'calendar.month-names.march': 'Marts',
   /** Month name for May */
-  'calendar.month-names.may': undefined, // 'May'
+  'calendar.month-names.may': 'Maijs',
   /** Month name for November */
-  'calendar.month-names.november': undefined, // 'November'
+  'calendar.month-names.november': 'Novembris',
   /** Month name for October */
-  'calendar.month-names.october': undefined, // 'October'
+  'calendar.month-names.october': 'Oktobris',
   /** Month name for September */
-  'calendar.month-names.september': undefined, // 'September'
+  'calendar.month-names.september': 'Septembris',
   /** Short weekday name for Friday */
-  'calendar.weekday-names.short.friday': undefined, // 'Fri'
+  'calendar.weekday-names.short.friday': 'Piek',
   /** Short weekday name for Monday */
-  'calendar.weekday-names.short.monday': undefined, // 'Mon'
+  'calendar.weekday-names.short.monday': 'Pir',
   /** Short weekday name for Saturdayday */
-  'calendar.weekday-names.short.saturday': undefined, // 'Sat'
+  'calendar.weekday-names.short.saturday': 'Sest',
   /** Short weekday name for Sunday */
-  'calendar.weekday-names.short.sunday': undefined, // 'Sun'
+  'calendar.weekday-names.short.sunday': 'Svēt',
   /** Short weekday name for Thursday */
-  'calendar.weekday-names.short.thursday': undefined, // 'Thu'
+  'calendar.weekday-names.short.thursday': 'Cet',
   /** Short weekday name for Tuesday */
-  'calendar.weekday-names.short.tuesday': undefined, // 'Tue'
+  'calendar.weekday-names.short.tuesday': 'Otr',
   /** Short weekday name for Wednesday */
-  'calendar.weekday-names.short.wednesday': undefined, // 'Wed'
+  'calendar.weekday-names.short.wednesday': 'Treš',
 
   /** Label for the close button label in Review Changes pane */
-  'changes.action.close-label': undefined, // 'Close history'
+  'changes.action.close-label': 'Aizvērt vēsturi',
   /** Cancel label for revert button prompt action */
-  'changes.action.revert-all-cancel': undefined, // 'Cancel'
+  'changes.action.revert-all-cancel': 'Atcelt',
   /** Revert all confirm label for revert button action - used on prompt button + review changes pane */
-  'changes.action.revert-all-confirm': undefined, // 'Revert all'
+  'changes.action.revert-all-confirm': 'Atcelt visu',
   /** Prompt for confirming revert change (singular) label for field change action */
-  'changes.action.revert-changes-confirm-change_one': undefined, // 'Revert change'
+  'changes.action.revert-changes-confirm-change_one': 'Atcelt izmaiņu',
   /** Revert for confirming revert (plural) label for field change action */
-  'changes.action.revert-changes-confirm-change_other': undefined, // 'Revert changes'
+  'changes.action.revert-changes-confirm-change_other': 'Atcelt izmaiņas',
   /** Prompt for reverting changes for a field change */
-  'changes.action.revert-changes-description': undefined, // 'Are you sure you want to revert the changes?'
+  'changes.action.revert-changes-description':
+    'Vai esat pārliecināts, ka vēlaties atcelt izmaiņas?',
   /** Prompt for reverting changes for a group change, eg multiple changes */
-  'changes.action.revert-changes-description_one': undefined, // 'Are you sure you want to revert the change?'
+  'changes.action.revert-changes-description_one':
+    'Vai esat pārliecināts, ka vēlaties atcelt izmaiņu?',
   /** Label for when the action of the change was to set something that was previously empty, eg a field was given a value, an array item was added, an asset was selected or similar */
-  'changes.added-label': undefined, // 'Added'
+  'changes.added-label': 'Pievienots',
   /** Array diff: An item was added in a given position (`{{position}}`) */
-  'changes.array.item-added-in-position': undefined, // 'Added in position {{position}}'
-  'changes.array.item-moved_down_one': undefined, // 'Moved {{count}} position down'
-  'changes.array.item-moved_down_other': undefined, // 'Moved {{count}} positions down'
+  'changes.array.item-added-in-position': 'Pievienots pozīcijā {{position}}',
+  'changes.array.item-moved_down_one': 'Pārvietots {{count}} pozīciju uz leju',
+  'changes.array.item-moved_down_other': 'Pārvietotas {{count}} pozīcijas uz leju',
   /**
    * Array diff: An item was moved within the array.
    * Receives `{{count}}` representing number of positions it moved.
    * Context is the direction of the move, either `up` or `down`.
    */
-  'changes.array.item-moved_up_one': undefined, // 'Moved {{count}} position up'
-  'changes.array.item-moved_up_other': undefined, // 'Moved {{count}} positions up'
+  'changes.array.item-moved_up_one': 'Pārvietots {{count}} pozīciju uz augšu',
+  'changes.array.item-moved_up_other': 'Pārvietots {{count}} pozīcijas uz augšu',
   /** Array diff: An item was removed from a given position (`{{position}}`) */
-  'changes.array.item-removed-from-position': undefined, // 'Removed from position {{position}}'
+  'changes.array.item-removed-from-position': 'Noņemts no pozīcijas {{position}}',
   /** Accessibility label for the "change bar" shown when there are edits on a field-level */
-  'changes.change-bar.aria-label': undefined, // 'Review changes'
+  'changes.change-bar.aria-label': 'Pārskatīt izmaiņas',
   /** Label for when the action of the change was _not_ an add/remove, eg a text field changed value, an image was changed from one asset to another or similar */
-  'changes.changed-label': undefined, // 'Changed'
+  'changes.changed-label': 'Mainīts',
   /** Label and text for tooltip that indicates the authors of the changes */
-  'changes.changes-by-author': undefined, // 'Changes by'
+  'changes.changes-by-author': 'Izmaiņas veicis',
   /** Additional text shown in development mode when a diff component crashes during rendering */
-  'changes.error-boundary.developer-info': undefined, // 'Check the developer console for more information'
+  'changes.error-boundary.developer-info': 'Papildinformāciju skatiet izstrādātāja konsolē',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
-  'changes.error-boundary.title': undefined, // 'Rendering the changes to this field caused an error'
+  'changes.error-boundary.title': 'Izmaiņu attēlošana šajā laukā izraisīja kļūdu',
   /* Error description when changes could not be loaded */
-  'changes.error-description': undefined, // 'We\'re unable to load the changes for this document.'
+  'changes.error-description': 'Mēs nevaram ielādēt šī dokumenta izmaiņas.',
   /** Error title when changes could not be loaded */
-  'changes.error-title': undefined, // 'Something went wrong'
+  'changes.error-title': 'Kaut kas nogāja greizi',
   /** Error message shown when the value of a field is not the expected one */
-  'changes.error.incorrect-type-message': undefined, // 'Value error: Value is of type "<code>{{actualType}}</code>", expected "<code>{{expectedType}}</code>"'
+  'changes.error.incorrect-type-message':
+    'Vērtības kļūda: Vērtība ir tipa "<code>{{actualType}}</code>", bet bija gaidīts "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
-  'changes.file.meta-info-fallback-title': undefined, // 'Untitled'
+  'changes.file.meta-info-fallback-title': 'Bez nosaukuma',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
-  'changes.image.crop-changed': undefined, // 'Crop changed'
+  'changes.image.crop-changed': 'Apgriezums mainīts',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
-  'changes.image.deleted': undefined, // 'Image deleted'
+  'changes.image.deleted': 'Attēls izdzēsts',
   /** Image diff: Text shown if the image failed to be loaded when previewing it */
-  'changes.image.error-loading-image': undefined, // 'Error loading image'
+  'changes.image.error-loading-image': 'Kļūda ielādējot attēlu',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
-  'changes.image.hotspot-changed': undefined, // 'Hotspot changed'
+  'changes.image.hotspot-changed': 'Aktīvā zona mainīta',
   /** Image diff: Fallback title for the meta info section when there is no original filename to use  */
-  'changes.image.meta-info-fallback-title': undefined, // 'Untitled'
+  'changes.image.meta-info-fallback-title': 'Bez nosaukuma',
   /** Image diff: Text shown if no asset has been set for the field (but has metadata changes) */
-  'changes.image.no-asset-set': undefined, // 'Image not set'
+  'changes.image.no-asset-set': 'Attēls nav iestatīts',
   /** Image diff: Text shown when the from/to state has/had no image */
-  'changes.image.no-image-placeholder': undefined, // '(no image)'
+  'changes.image.no-image-placeholder': '(nav attēla)',
   /** Label for the "from" value in the change inspector */
-  'changes.inspector.from-label': undefined, // 'From'
+  'changes.inspector.from-label': 'No',
   /** Label for the "meta" (field path, action etc) information in the change inspector */
-  'changes.inspector.meta-label': undefined, // 'Meta'
+  'changes.inspector.meta-label': 'Meta',
   /** Label for the "to" value in the change inspector */
-  'changes.inspector.to-label': undefined, // 'To'
+  'changes.inspector.to-label': 'Uz',
   /** Loading author of change in the differences tooltip in the review changes pane */
-  'changes.loading-author': undefined, // 'Loading…'
+  'changes.loading-author': 'Ielādē…',
   /** Loading changes in Review Changes Pane */
-  'changes.loading-changes': undefined, // 'Loading changes…'
+  'changes.loading-changes': 'Ielādē izmaiņas…',
   /** No Changes description in the Review Changes pane */
-  'changes.no-changes-description': undefined, // 'Edit the document or select an older version in the timeline to see a list of changes appear in this panel.'
+  'changes.no-changes-description':
+    'Rediģējiet dokumentu vai atlasiet vecāku versiju laika skalā, lai šajā panelī parādītos izmaiņu saraksts.',
   /** No Changes title in the Review Changes pane */
-  'changes.no-changes-title': undefined, // 'There are no changes'
+  'changes.no-changes-title': 'Nav izmaiņu',
   /* Label for the tooltip that shows when an action is not selectable*/
-  'changes.not-selectable': undefined, // 'It is not possible to select this event'
+  'changes.not-selectable': 'Nav iespējams izvēlēties šo notikumu',
   /** Portable Text diff: An annotation was added */
-  'changes.portable-text.annotation_added': undefined, // 'Added annotation'
+  'changes.portable-text.annotation_added': 'Pievienota anotācija',
   /** Portable Text diff: An annotation was changed */
-  'changes.portable-text.annotation_changed': undefined, // 'Changed annotation'
+  'changes.portable-text.annotation_changed': 'Mainīta anotācija',
   /** Portable Text diff: An annotation was removed */
-  'changes.portable-text.annotation_removed': undefined, // 'Removed annotation'
+  'changes.portable-text.annotation_removed': 'Noņemta anotācija',
   /** Portable Text diff: An annotation was left unchanged */
-  'changes.portable-text.annotation_unchanged': undefined, // 'Unchanged annotation'
+  'changes.portable-text.annotation_unchanged': 'Nemainīta anotācija',
   /** Portable Text diff: A block changed from one style to another (eg `normal` to `h1` or similar) */
-  'changes.portable-text.block-style-changed': undefined, // 'Changed block style from "{{fromStyle}}" to "{{toStyle}}"'
+  'changes.portable-text.block-style-changed':
+    'Mainīts bloka stils no "{{fromStyle}}" uz "{{toStyle}}"',
   /** Portable Text diff: Change formatting of text (setting/unsetting marks, eg bold/italic etc) */
-  'changes.portable-text.changed-formatting': undefined, // 'Changed formatting'
+  'changes.portable-text.changed-formatting': 'Mainīts formatējums',
   /** Portable Text diff: An empty inline object is part of a change */
-  'changes.portable-text.empty-inline-object': undefined, // 'Empty {{inlineObjectType}}'
+  'changes.portable-text.empty-inline-object': 'Tukšs {{inlineObjectType}}',
   /** Portable Text diff: An empty object is the result of adding/removing an annotation */
-  'changes.portable-text.empty-object-annotation': undefined, // 'Empty {{annotationType}}'
+  'changes.portable-text.empty-object-annotation': 'Tukšs {{annotationType}}',
   /** Portable Text diff: Added a block containing no text (eg empty block) */
-  'changes.portable-text.empty-text_added': undefined, // 'Added empty text'
+  'changes.portable-text.empty-text_added': 'Pievienots tukšs teksts',
   /** Portable Text diff: Changed a block that contained no text (eg empty block) */
-  'changes.portable-text.empty-text_changed': undefined, // 'Changed empty text'
+  'changes.portable-text.empty-text_changed': 'Mainīts tukšs teksts',
   /** Portable Text diff: Removed a block containing no text (eg empty block) */
-  'changes.portable-text.empty-text_removed': undefined, // 'Removed empty text'
+  'changes.portable-text.empty-text_removed': 'Noņemts tukšs teksts',
   /** Portable Text diff: An inline object was added */
-  'changes.portable-text.inline-object_added': undefined, // 'Added inline object'
+  'changes.portable-text.inline-object_added': 'Pievienots iekļauts objekts',
   /** Portable Text diff: An inline object was changed */
-  'changes.portable-text.inline-object_changed': undefined, // 'Changed inline object'
+  'changes.portable-text.inline-object_changed': 'Mainīts iekļauts objekts',
   /** Portable Text diff: An inline object was removed */
-  'changes.portable-text.inline-object_removed': undefined, // 'Removed inline object'
+  'changes.portable-text.inline-object_removed': 'Noņemts iekļauts objekts',
   /** Portable Text diff: An inline object was left unchanged */
-  'changes.portable-text.inline-object_unchanged': undefined, // 'Unchanged inline object'
+  'changes.portable-text.inline-object_unchanged': 'Nemainīts iekļauts objekts',
   /** Portable Text diff: Added a chunk of text */
-  'changes.portable-text.text_added': undefined, // 'Added text'
+  'changes.portable-text.text_added': 'Pievienots teksts',
   /** Portable Text diff: Removed a chunk of text */
-  'changes.portable-text.text_removed': undefined, // 'Removed text'
+  'changes.portable-text.text_removed': 'Noņemts teksts',
   /** Portable Text diff: Annotation has an unknown schema type */
-  'changes.portable-text.unknown-annotation-schema-type': undefined, // 'Unknown schema type'
+  'changes.portable-text.unknown-annotation-schema-type': 'Nezināms shēmas tips',
   /** Portable Text diff: Inline object has an unknown schema type */
-  'changes.portable-text.unknown-inline-object-schema-type': undefined, // 'Unknown schema type'
+  'changes.portable-text.unknown-inline-object-schema-type': 'Nezināms shēmas tips',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
-  'changes.removed-label': undefined, // 'Removed'
+  'changes.removed-label': 'Noņemts',
   /** Title for the Review Changes pane */
-  'changes.title': undefined, // 'History'
+  'changes.title': 'Vēsture',
   /**The title that will be shown in the badge inside the events when the item is a draft */
-  'changes.versions.draft': undefined, // 'Draft'
+  'changes.versions.draft': 'Melnraksts',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
-  'common.context-menu-button.tooltip': undefined, // 'Show more'
+  'common.context-menu-button.tooltip': 'Rādīt vairāk',
   /** Default text for dialog cancel button */
-  'common.dialog.cancel-button.text': undefined, // 'Cancel'
+  'common.dialog.cancel-button.text': 'Atcelt',
   /** Default text for dialog confirm button */
-  'common.dialog.confirm-button.text': undefined, // 'Confirm'
+  'common.dialog.confirm-button.text': 'Apstiprināt',
   /** Default text in shared loader text / spinner lockup */
-  'common.loading': undefined, // 'Loading'
+  'common.loading': 'Ielādē',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Konfigurācijas problēmas',
   /** Tooltip displayed on configuration issues button */
-  'configuration-issues.button.tooltip': undefined, // 'Found configuration issues'
+  'configuration-issues.button.tooltip': 'Atrastas konfigurācijas problēmas',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
-  'default-menu-item.fallback-title': undefined, // 'Sort by {{title}}'
+  'default-menu-item.fallback-title': 'Kārtot pēc {{title}}',
 
   /** Title for the default ordering/SortOrder if no orderings are provided and the caption field is found */
-  'default-orderings.caption': undefined, // 'Sort by Caption'
+  'default-orderings.caption': 'Kārtot pēc Uzraksta',
   /** Title for the default ordering/SortOrder if no orderings are provided and the description field is found */
-  'default-orderings.description': undefined, // 'Sort by Description'
+  'default-orderings.description': 'Kārtot pēc Apraksta',
   /** Title for the default ordering/SortOrder if no orderings are provided and the header field is found */
-  'default-orderings.header': undefined, // 'Sort by Header'
+  'default-orderings.header': 'Kārtot pēc Galvenes',
   /** Title for the default ordering/SortOrder if no orderings are provided and the heading field is found */
-  'default-orderings.heading': undefined, // 'Sort by Heading'
+  'default-orderings.heading': 'Kārtot pēc Virsraksta',
   /** Title for the default ordering/SortOrder if no orderings are provided and the label field is found */
-  'default-orderings.label': undefined, // 'Sort by Label'
+  'default-orderings.label': 'Kārtot pēc Etiķetes',
   /** Title for the default ordering/SortOrder if no orderings are provided and the name field is found */
-  'default-orderings.name': undefined, // 'Sort by Name'
+  'default-orderings.name': 'Kārtot pēc Vārda',
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
-  'default-orderings.title': undefined, // 'Sort by Title'
+  'default-orderings.title': 'Kārtot pēc Nosaukuma',
 
   /** Label to show in the document footer indicating the creation date of the document */
-  'document-status.created': undefined, // 'Created {{date}}'
+  'document-status.created': 'Izveidots {{date}}',
   /** Label to show in the document status indicating the date of the status */
-  'document-status.date': undefined, // '{{date}}'
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
-  'document-status.edited': undefined, // 'Edited {{date}}'
+  'document-status.edited': 'Rediģēts {{date}}',
   /** Label to show in the document footer indicating the document is not published*/
-  'document-status.not-published': undefined, // 'Not published'
+  'document-status.not-published': 'Nav publicēts',
   /** Label to show in the document footer indicating the published date of the document */
-  'document-status.published': undefined, // 'Published {{date}}'
+  'document-status.published': 'Publicēts {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': undefined, // 'Revision from <em>{{date}}</em>'
+  'document-status.revision-from': 'Revīzija no <em>{{date}}</em>',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'Dokumenta tips "{{type}}" nav atrasts',
 
   /** The value of the <code>_key</code> property must be a unique string. */
-  'form.error.duplicate-keys-alert.details.additional-description': undefined, // 'The value of the <code>_key</code> property must be a unique string.'
+  'form.error.duplicate-keys-alert.details.additional-description':
+    'Vērtībai <code>_key</code> īpašumam jābūt unikālai virknei.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely. */
-  'form.error.duplicate-keys-alert.details.description': undefined, // 'This usually happens when items are created using an API client, and the <code>_key</code> property of each elements has been generated non-uniquely.'
+  'form.error.duplicate-keys-alert.details.description':
+    'Tas parasti notiek, kad vienumi tiek izveidoti, izmantojot API klientu, un katram elementam ir non-unikāli ģenerēta <code>_key</code> īpašuma vērtība.',
   /** Developer info */
-  'form.error.duplicate-keys-alert.details.title': undefined, // 'Developer info'
+  'form.error.duplicate-keys-alert.details.title': 'Izstrādātāja informācija',
   /** Generate unique keys */
-  'form.error.duplicate-keys-alert.generate-button.text': undefined, // 'Generate unique keys'
+  'form.error.duplicate-keys-alert.generate-button.text': 'Ģenerēt unikālas atslēgas',
   /** Several items in this list share the same identifier (key). Every item must have an unique identifier. */
-  'form.error.duplicate-keys-alert.summary': undefined, // 'Several items in this list share the same identifier (key). Every item must have an unique identifier.'
+  'form.error.duplicate-keys-alert.summary':
+    'Vairākiem šī saraksta vienumiem ir vienāds identifikators (atslēga). Katram vienumam jābūt unikālam identifikatoram.',
   /** Non-unique keys */
-  'form.error.duplicate-keys-alert.title': undefined, // 'Non-unique keys'
+  'form.error.duplicate-keys-alert.title': 'Neunikālas atslēgas',
   /** Error text shown when a field with a given name cannot be found in the schema or is conditionally hidden but explicitly told to render  */
-  'form.error.field-not-found': undefined, // 'Field "{{fieldName}}" not found among members – verify that it is defined in the schema and that it has not been conditionally hidden.'
+  'form.error.field-not-found':
+    'Lauks "{{fieldName}}" nav atrasts starp locekļiem – pārbaudiet, vai tas ir definēts shēmā un vai tas nav nosacīti paslēpts.',
   /** Add missing keys */
-  'form.error.missing-keys-alert.add-button.text': undefined, // 'Add missing keys'
+  'form.error.missing-keys-alert.add-button.text': 'Pievienot trūkstošās atslēgas',
   /** The value of the <code>_key</code> property must be a unique string. */
-  'form.error.missing-keys-alert.details.additional-description': undefined, // 'The value of the <code>_key</code> property must be a unique string.'
+  'form.error.missing-keys-alert.details.additional-description':
+    'Vērtībai <code>_key</code> īpašumam jābūt unikālai virknei.',
   /** This usually happens when items are created using an API client, and the <code>_key</code> property has not been included. */
-  'form.error.missing-keys-alert.details.description': undefined, // 'This usually happens when items are created using an API client, and the <code>_key</code> property has not been included.'
+  'form.error.missing-keys-alert.details.description':
+    'Tas parasti notiek, kad vienumi tiek izveidoti, izmantojot API klientu, un nav iekļauts <code>_key</code> īpašums.',
   /** Developer info */
-  'form.error.missing-keys-alert.details.title': undefined, // 'Developer info'
+  'form.error.missing-keys-alert.details.title': 'Izstrādātāja informācija',
   /** Some items in the list are missing their keys. This must be fixed in order to edit the list. */
-  'form.error.missing-keys-alert.summary': undefined, // 'Some items in the list are missing their keys. This must be fixed in order to edit the list.'
+  'form.error.missing-keys-alert.summary':
+    'Dažiem saraksta vienumiem trūkst to atslēgas. Lai varētu rediģēt sarakstu, tas jālabo.',
   /** Missing keys */
-  'form.error.missing-keys-alert.title': undefined, // 'Missing keys'
+  'form.error.missing-keys-alert.title': 'Trūkstošas atslēgas',
   /** This usually happens when items are created using an API client, or when a custom input component has added invalid data to the list. */
-  'form.error.mixed-array-alert.details.description': undefined, // 'This usually happens when items are created using an API client, or when a custom input component has added invalid data to the list.'
+  'form.error.mixed-array-alert.details.description':
+    'Tas parasti notiek, kad vienumi tiek izveidoti, izmantojot API klientu, vai kad pielāgots ievades komponents ir pievienojis nederīgus datus sarakstā.',
   /** Developer info */
-  'form.error.mixed-array-alert.details.title': undefined, // 'Developer info'
+  'form.error.mixed-array-alert.details.title': 'Izstrādātāja informācija',
   /**  Remove non-object values */
-  'form.error.mixed-array-alert.remove-button.text': undefined, // 'Remove non-object values'
+  'form.error.mixed-array-alert.remove-button.text': 'Noņemt ne-objektu vērtības',
   /** Some items in this list are not objects. This must be fixed in order to edit the list. */
-  'form.error.mixed-array-alert.summary': undefined, // 'Some items in this list are not objects. This must be fixed in order to edit the list.'
+  'form.error.mixed-array-alert.summary':
+    'Daži saraksta vienumi nav objekti. Lai varētu rediģēt sarakstu, tas jālabo.',
   /** Invalid list values */
-  'form.error.mixed-array-alert.title': undefined, // 'Invalid list values'
+  'form.error.mixed-array-alert.title': 'Nederīgas saraksta vērtības',
   /** Error text shown when form is unable to find an array item at a given indexed path */
-  'form.error.no-array-item-at-index': undefined, // 'No array item at index <code>{{index}}</code> found at path <code>{{path}}</code>'
+  'form.error.no-array-item-at-index':
+    'Nav atrasts masīva vienums indeksā <code>{{index}}</code> ceļā <code>{{path}}</code>',
   /** Error text shown when form is unable to find an array item at a given keyed path */
-  'form.error.no-array-item-at-key': undefined, // 'No array item with `_key` <code>"{{key}}"</code> found at path <code>{{path}}</code>'
+  'form.error.no-array-item-at-key':
+    'Nav atrasts masīva vienums ar `_key` <code>"{{key}}"</code> ceļā <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'Izsaukumu kaudze:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Komponentu kaudze:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Kļūda: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'Neapstrādāta izpildlaika kļūda',
   /** Form field deprecated label */
-  'form.field.deprecated-label': undefined, // 'deprecated'
+  'form.field.deprecated-label': 'novecojis',
   /** Fallback title shown above field if it has no defined title */
-  'form.field.untitled-field-label': undefined, // 'Untitled'
+  'form.field.untitled-field-label': 'Bez nosaukuma',
   /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': undefined, // 'Connection lost. Reconnecting…'
+  'form.reconnecting.toast.title': 'Zaudēts savienojums. Atkārtoti savienojas…',
   /** Accessibility label for the icon that indicates the field has a validation error */
-  'form.validation.has-error-aria-label': undefined, // 'Has error'
+  'form.validation.has-error-aria-label': 'Ir kļūda',
   /** Accessibility label for the icon that indicates the field has validation information */
-  'form.validation.has-info-aria-label': undefined, // 'Has information'
+  'form.validation.has-info-aria-label': 'Ir informācija',
   /** Accessibility label for the icon that indicates the field has a validation warning */
-  'form.validation.has-warning-aria-label': undefined, // 'Has warning'
+  'form.validation.has-warning-aria-label': 'Ir brīdinājums',
   /** Text shown when summarizing validation information, when the field has one or more errors */
-  'form.validation.summary.errors-count_one': undefined, // '{{count}} error'
-  'form.validation.summary.errors-count_other': undefined, // '{{count}} errors'
+  'form.validation.summary.errors-count_one': '{{count}} kļūda',
+  'form.validation.summary.errors-count_other': '{{count}} kļūdas',
   /** Text shown when summarizing validation information, when the field has one or more warnings */
-  'form.validation.summary.warnings-count_one': undefined, // '{{count}} warning'
-  'form.validation.summary.warnings-count_other': undefined, // '{{count}} warnings'
+  'form.validation.summary.warnings-count_one': '{{count}} brīdinājums',
+  'form.validation.summary.warnings-count_other': '{{count}} brīdinājumi',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': undefined, // '{{count}} day left in trial'
-  'free-trial.tooltip.days-count_other': undefined, // '{{count}} days left in trial'
+  'free-trial.tooltip.days-count_one': '{{count}} diena atlikusi izmēģinājuma laikā',
+  'free-trial.tooltip.days-count_other': '{{count}} dienas atlikušas izmēģinājuma laikā',
   /** Tooltip for free trial navbar button, once trial has ended */
-  'free-trial.tooltip.trial-finished': undefined, // 'Upgrade your project'
+  'free-trial.tooltip.trial-finished': 'Uzlabojiet savu projektu',
 
   /**
    * Label for "contact sales" call to action
    * These are titles for fallback links in the event the help & resources endpoint isn't able to be fetched
    */
-  'help-resources.action.contact-sales': undefined, // 'Contact sales'
+  'help-resources.action.contact-sales': 'Sazināties ar pārdošanas nodaļu',
   /**
    * Label for "help and support" call to action
    * These are titles for fallback links in the event the help & resources endpoint isn't able to be fetched
    */
-  'help-resources.action.help-and-support': undefined, // 'Help and support'
+  'help-resources.action.help-and-support': 'Palīdzība un atbalsts',
   /**
    * Label for "join our community" call to action
    * These are titles for fallback links in the event the help & resources endpoint isn't able to be fetched
    */
-  'help-resources.action.join-our-community': undefined, // 'Join our community'
+  'help-resources.action.join-our-community': 'Pievienojieties mūsu kopienai',
   /** Information for what the latest sanity version is */
-  'help-resources.latest-sanity-version': undefined, // 'Latest version is {{latestVersion}}'
+  'help-resources.latest-sanity-version': 'Jaunākā versija ir {{latestVersion}}',
   /** Information for what studio version the current studio is running */
-  'help-resources.studio-version': undefined, // 'Sanity Studio version {{studioVersion}}'
+  'help-resources.studio-version': 'Sanity Studio versija {{studioVersion}}',
   /** Title for help and resources menus */
-  'help-resources.title': undefined, // 'Help and resources'
+  'help-resources.title': 'Palīdzība un resursi',
 
   /** Text for button to cancel an ongoing upload */
-  'input.files.common.cancel-upload': undefined, // 'Cancel'
+  'input.files.common.cancel-upload': 'Atcelt augšupielādi',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Noklusējums',
   /** Text for file input button in upload placeholder */
-  'input.files.common.upload-placeholder.file-input-button.text': undefined, // 'Upload'
+  'input.files.common.upload-placeholder.file-input-button.text': 'Augšupielādēt',
   /** Uploading <FileName/> */
-  'input.files.common.upload-progress': undefined, // 'Uploading <FileName/>'
+  'input.files.common.upload-progress': 'Augšupielādē <FileName/>',
   /** The referenced document cannot be opened, because the URL failed to be resolved */
-  'input.reference.document-cannot-be-opened.failed-to-resolve-url': undefined, // 'This document cannot be opened (unable to resolve URL to Studio)'
+  'input.reference.document-cannot-be-opened.failed-to-resolve-url':
+    'Šo dokumentu nevar atvērt (neizdevās atrisināt URL uz Studio)',
 
   /** Label for adding item after a specific array item */
-  'inputs.array.action.add-after': undefined, // 'Add item after'
+  'inputs.array.action.add-after': 'Pievienot vienumu pēc',
   /** Label for adding item before a specific array item */
-  'inputs.array.action.add-before': undefined, // 'Add item before'
+  'inputs.array.action.add-before': 'Pievienot vienumu pirms',
   /** Label for adding array item action when the schema allows for only one schema type */
-  'inputs.array.action.add-item': undefined, // 'Add item'
+  'inputs.array.action.add-item': 'Pievienot vienumu',
   /**
    * Label for adding one array item action when the schema allows for multiple schema types,
    * eg. will prompt the user to select a type once triggered
    */
-  'inputs.array.action.add-item-select-type': undefined, // 'Add item...'
+  'inputs.array.action.add-item-select-type': 'Pievienot vienumu...',
   /** Label for copying an array item  */
-  'inputs.array.action.copy': undefined, // 'Copy'
+  'inputs.array.action.copy': 'Kopēt',
   /** Array drag handle button tooltip */
-  'inputs.array.action.drag.tooltip': undefined, // 'Drag to re-order'
+  'inputs.array.action.drag.tooltip': 'Velciet, lai pārkārtotu',
   /** Label for duplicating an array item  */
-  'inputs.array.action.duplicate': undefined, // 'Duplicate'
+  'inputs.array.action.duplicate': 'Dublēt',
   /** Label for editing the item of a specific type, eg "Edit Person" */
-  'inputs.array.action.edit': undefined, // 'Edit {{itemTypeTitle}}'
+  'inputs.array.action.edit': 'Rediģēt {{itemTypeTitle}}',
   /** Label for removing an array item action  */
-  'inputs.array.action.remove': undefined, // 'Remove'
+  'inputs.array.action.remove': 'Noņemt',
   /** Label for removing action when an array item has an error  */
-  'inputs.array.action.remove-invalid-item': undefined, // 'Remove'
+  'inputs.array.action.remove-invalid-item': 'Noņemt',
   /** Label for viewing the item of a specific type, eg "View Person" */
-  'inputs.array.action.view': undefined, // 'View {{itemTypeTitle}}'
+  'inputs.array.action.view': 'Skatīt {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
-  'inputs.array.error.can-delete-but-no-edit-description': undefined, // 'You can still move or delete this item, but it cannot be edited since the schema definition for its type is nowhere to be found.'
+  'inputs.array.error.can-delete-but-no-edit-description':
+    'Jūs joprojām varat pārvietot vai izdzēst šo vienumu, bet to nevar rediģēt, jo šī tipa shēmas definīcija nav atrasta.',
   /** Error label for toast when array could not resolve the initial value */
-  'inputs.array.error.cannot-resolve-initial-value-title': undefined, // 'Unable to resolve initial value for type: {{schemaTypeTitle}}: {{errorMessage}}.'
+  'inputs.array.error.cannot-resolve-initial-value-title':
+    'Nevar atrisināt sākotnējo vērtību tipam: {{schemaTypeTitle}}: {{errorMessage}}.',
   /** Error label for toast when trying to upload one array item of a type that cannot be converted to array */
-  'inputs.array.error.cannot-upload-unable-to-convert_one': undefined, // 'The following item can\'t be uploaded because there\'s no known conversion from content type to array item:'
+  'inputs.array.error.cannot-upload-unable-to-convert_one':
+    'Sekojošo vienumu nevar augšupielādēt, jo nav zināmas konversijas no satura tipa uz masīva vienumu:',
   /** Error label for toast when trying to upload multiple array items of a type that cannot be converted to array */
-  'inputs.array.error.cannot-upload-unable-to-convert_other': undefined, // 'The following items can\'t be uploaded because there\'s no known conversion from content types to array item:'
+  'inputs.array.error.cannot-upload-unable-to-convert_other':
+    'Sekojošos vienumus nevar augšupielādēt, jo nav zināmas konversijas no satura tipiem uz masīva vienumu:',
   /** Error description for the array item tooltip that explains that the current type item is not valid for the list  */
-  'inputs.array.error.current-schema-not-declare-description': undefined, // 'The current schema does not declare items of type <code>{{typeName}}</code> as valid for this list. This could mean that the type has been removed as a valid item type, or that someone else has added it to their own local schema that is not yet deployed.'
+  'inputs.array.error.current-schema-not-declare-description':
+    'Pašreizējā shēma neapstiprina vienumus ar tipu <code>{{typeName}}</code> kā derīgus šim sarakstam. Tas var nozīmēt, ka tips ir noņemts kā derīgs vienuma tips, vai ka kāds cits ir pievienojis to savai lokālajai shēmai, kas vēl nav izvietota.',
   /** Error description to show how the item is being represented in the json format */
-  'inputs.array.error.json-representation-description': undefined, // 'JSON representation of this item:'
+  'inputs.array.error.json-representation-description': 'JSON reprezentācija šim vienumam:',
   /** Error description for the array item tooltip that explains what the error means with more context */
-  'inputs.array.error.type-is-incompatible-prompt': undefined, // 'Item of type <code>{{typeName}}</code> not valid for this list'
+  'inputs.array.error.type-is-incompatible-prompt':
+    'Vienums ar tipu <code>{{typeName}}</code> nav derīgs šim sarakstam',
   /** Error title for when an item type within an array input is incompatible, used in the tooltip */
-  'inputs.array.error.type-is-incompatible-title': undefined, // 'Why is this happening?'
+  'inputs.array.error.type-is-incompatible-title': 'Kāpēc tas notiek?',
   /** Error label for unexpected errors in the Array Input */
-  'inputs.array.error.unexpected-error': undefined, // 'Unexpected Error: {{error}}'
+  'inputs.array.error.unexpected-error': 'Negaidīta kļūda: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Visi',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Nav atrasti vienumi',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Meklēt',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Pārslēgt režģa skatu',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Pārslēgt saraksta skatu',
   /** Label for when the array input doesn't have any items */
-  'inputs.array.no-items-label': undefined, // 'No items'
+  'inputs.array.no-items-label': 'Nav vienumu',
   /** Label for read only array fields */
-  'inputs.array.read-only-label': undefined, // 'This field is read-only'
+  'inputs.array.read-only-label': 'Šis lauks ir tikai lasāms',
   /** Label for when the array input is resolving the initial value for the item */
-  'inputs.array.resolving-initial-value': undefined, // 'Resolving initial value…'
+  'inputs.array.resolving-initial-value': 'Atrisinām sākotnējo vērtību…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Atspējots',
   /** Warning label when selected datetime is in the past */
-  'inputs.dateTime.past-date-warning': undefined, // 'Select a date in the future.'
+  'inputs.dateTime.past-date-warning': 'Izvēlieties datumu nākotnē.',
   /** Placeholder value for datetime input */
-  'inputs.datetime.placeholder': undefined, // 'e.g. {{example}}'
+  'inputs.datetime.placeholder': 'piem., {{example}}',
   /** Acessibility label for button to open file options menu */
-  'inputs.file.actions-menu.file-options.aria-label': undefined, // 'Open file options menu'
+  'inputs.file.actions-menu.file-options.aria-label': 'Atvērt faila opciju izvēlni',
   /** Browse */
-  'inputs.file.browse-button.text': undefined, // 'Select'
+  'inputs.file.browse-button.text': 'Izvēlēties',
   /** Select file */
-  'inputs.file.dialog.title': undefined, // 'Select file'
+  'inputs.file.dialog.title': 'Izvēlieties failu',
   /** Unknown member kind: `{{kind}}` */
-  'inputs.file.error.unknown-member-kind': undefined, // 'Unknown member kind: {{kind}}'
+  'inputs.file.error.unknown-member-kind': 'Nezināms dalībnieka veids: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
-  'inputs.file.invalid-file-warning.description': undefined, // 'The value of this field is not a valid file. Resetting this field will let you choose a new file.'
+  'inputs.file.invalid-file-warning.description':
+    'Šī lauka vērtība nav derīgs fails. Atiestatot šo lauku, varēsiet izvēlēties jaunu failu.',
   /** Reset value */
-  'inputs.file.invalid-file-warning.reset-button.text': undefined, // 'Reset value'
+  'inputs.file.invalid-file-warning.reset-button.text': 'Atiestatīt vērtību',
   /** Invalid file value */
-  'inputs.file.invalid-file-warning.title': undefined, // 'Invalid file value'
+  'inputs.file.invalid-file-warning.title': 'Nederīga faila vērtība',
   /** Select */
-  'inputs.file.multi-browse-button.text': undefined, // 'Select'
+  'inputs.file.multi-browse-button.text': 'Izvēlēties',
   /** The upload could not be completed at this time. */
-  'inputs.file.upload-failed.description': undefined, // 'The upload could not be completed at this time.'
+  'inputs.file.upload-failed.description': 'Augšupielādi šobrīd nevar pabeigt.',
   /** Upload failed */
-  'inputs.file.upload-failed.title': undefined, // 'Upload failed'
+  'inputs.file.upload-failed.title': 'Augšupielāde neizdevās',
   /** Clear field */
-  'inputs.files.common.actions-menu.clear-field.label': undefined, // 'Clear field'
+  'inputs.files.common.actions-menu.clear-field.label': 'Notīrīt lauku',
   /** Copy URL */
-  'inputs.files.common.actions-menu.copy-url.label': undefined, // 'Copy URL'
+  'inputs.files.common.actions-menu.copy-url.label': 'Kopēt URL',
   /** Download */
-  'inputs.files.common.actions-menu.download.label': undefined, // 'Download'
+  'inputs.files.common.actions-menu.download.label': 'Lejupielādēt',
   /** The URL is copied to the clipboard */
-  'inputs.files.common.actions-menu.notification.url-copied': undefined, // 'The URL is copied to the clipboard'
+  'inputs.files.common.actions-menu.notification.url-copied': 'URL ir nokopēts starpliktuvē',
   /** Replace */
-  'inputs.files.common.actions-menu.replace.label': undefined, // 'Replace'
+  'inputs.files.common.actions-menu.replace.label': 'Aizstāt',
   /** Upload */
-  'inputs.files.common.actions-menu.upload.label': undefined, // 'Upload'
+  'inputs.files.common.actions-menu.upload.label': 'Augšupielādēt',
   /** Drop to upload */
-  'inputs.files.common.drop-message.drop-to-upload': undefined, // 'Drop to upload'
+  'inputs.files.common.drop-message.drop-to-upload': 'Nomest, lai augšupielādētu',
   /** Drop to upload `{{count}}` file */
-  'inputs.files.common.drop-message.drop-to-upload-multi_one': undefined, // 'Drop to upload {{count}} file'
+  'inputs.files.common.drop-message.drop-to-upload-multi_one':
+    'Nomest, lai augšupielādētu {{count}} failu',
   /** Drop to upload `{{count}}` files */
-  'inputs.files.common.drop-message.drop-to-upload-multi_other': undefined, // 'Drop to upload {{count}} files'
+  'inputs.files.common.drop-message.drop-to-upload-multi_other':
+    'Nomest, lai augšupielādētu {{count}} failus',
   /** Can't upload this file here */
-  'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_one': undefined, // 'Can\'t upload this file here'
+  'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_one':
+    'Šeit nevar augšupielādēt šo failu',
   /** Can't upload any of these files here */
-  'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_other': undefined, // 'Can\'t upload any of these files here'
+  'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_other':
+    'Šeit nevar augšupielādēt nevienu no šiem failiem',
   /** `{{count}}` file can't be uploaded here */
-  'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_one': undefined, // '{{count}} file can\'t be uploaded here'
+  'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_one':
+    '{{count}} failu nevar augšupielādēt šeit',
   /** `{{count}}` files can't be uploaded here */
-  'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_other': undefined, // '{{count}} files can\'t be uploaded here'
+  'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_other':
+    '{{count}} failus nevar augšupielādēt šeit',
   /** Cannot upload `{{count}}` files */
-  'inputs.files.common.placeholder.cannot-upload-some-files_one': undefined, // 'Cannot upload file'
-  'inputs.files.common.placeholder.cannot-upload-some-files_other': undefined, // 'Cannot upload {{count}} files'
+  'inputs.files.common.placeholder.cannot-upload-some-files_one': 'Nevar augšupielādēt failu',
+  'inputs.files.common.placeholder.cannot-upload-some-files_other':
+    'Nevar augšupielādēt {{count}} failus',
   /** Drag or paste type here */
-  'inputs.files.common.placeholder.drag-or-paste-to-upload_file': undefined, // 'Drag or paste file here'
+  'inputs.files.common.placeholder.drag-or-paste-to-upload_file':
+    'Ievelciet vai ielīmējiet failu šeit',
   /** Drag or paste image here */
-  'inputs.files.common.placeholder.drag-or-paste-to-upload_image': undefined, // 'Drag or paste image here'
+  'inputs.files.common.placeholder.drag-or-paste-to-upload_image':
+    'Ievelciet vai ielīmējiet attēlu šeit',
   /** Drop to upload file */
-  'inputs.files.common.placeholder.drop-to-upload_file': undefined, // 'Drop to upload file'
+  'inputs.files.common.placeholder.drop-to-upload_file': 'Nometiet, lai augšupielādētu failu',
   /** Drop to upload image */
-  'inputs.files.common.placeholder.drop-to-upload_image': undefined, // 'Drop to upload image'
+  'inputs.files.common.placeholder.drop-to-upload_image': 'Nometiet, lai augšupielādētu attēlu',
   /** Read only */
-  'inputs.files.common.placeholder.read-only': undefined, // 'Read only'
+  'inputs.files.common.placeholder.read-only': 'Tikai lasīšanai',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Augšupielādēt failus uz:',
   /** Can't upload files here */
-  'inputs.files.common.placeholder.upload-not-supported': undefined, // 'Can\'t upload files here'
+  'inputs.files.common.placeholder.upload-not-supported': 'Šeit nevar augšupielādēt failus',
   /** Clear upload */
-  'inputs.files.common.stale-upload-warning.clear': undefined, // 'Clear upload'
+  'inputs.files.common.stale-upload-warning.clear': 'Notīrīt augšupielādi',
   /** An upload has made no progress for at least `{{staleThresholdMinutes}}` minutes and likely got interrupted. You can safely clear the incomplete upload and try uploading again. */
-  'inputs.files.common.stale-upload-warning.description': undefined, // 'An upload has made no progress for at least {{staleThresholdMinutes}} minutes and likely got interrupted. You can safely clear the incomplete upload and try uploading again.'
+  'inputs.files.common.stale-upload-warning.description':
+    'Augšupielāde nav guvusi progresu vismaz {{staleThresholdMinutes}} minūtes un iespējams tika pārtraukta. Jūs droši varat notīrīt nepabeigtu augšupielādi un mēģināt augšupielādēt vēlreiz.',
   /** Incomplete upload */
-  'inputs.files.common.stale-upload-warning.title': undefined, // 'Incomplete upload'
+  'inputs.files.common.stale-upload-warning.title': 'Nepabeigta augšupielāde',
   /** Tooltip text for action to crop image */
-  'inputs.image.actions-menu.crop-image-tooltip': undefined, // 'Crop image'
+  'inputs.image.actions-menu.crop-image-tooltip': 'Apgriezt attēlu',
   /** Accessibility label for button to open image edit dialog */
-  'inputs.image.actions-menu.edit-details.aria-label': undefined, // 'Open image edit dialog'
+  'inputs.image.actions-menu.edit-details.aria-label': 'Atvērt attēla rediģēšanas dialogu',
   /** Accessibility label for button to open image options menu */
-  'inputs.image.actions-menu.options.aria-label': undefined, // 'Open image options menu'
+  'inputs.image.actions-menu.options.aria-label': 'Atvērt attēla opciju izvēlni',
   /** Select */
-  'inputs.image.browse-menu.text': undefined, // 'Select'
+  'inputs.image.browse-menu.text': 'Izvēlēties',
   /** Cannot upload this file here */
-  'inputs.image.drag-overlay.cannot-upload-here': undefined, // 'Cannot upload this file here'
+  'inputs.image.drag-overlay.cannot-upload-here': 'Šeit nevar augšupielādēt šo failu',
   /** Drop image to upload */
-  'inputs.image.drag-overlay.drop-to-upload-image': undefined, // 'Drop image to upload'
+  'inputs.image.drag-overlay.drop-to-upload-image': 'Nometiet attēlu, lai augšupielādētu',
   /** This field is read only */
-  'inputs.image.drag-overlay.this-field-is-read-only': undefined, // 'This field is read only'
+  'inputs.image.drag-overlay.this-field-is-read-only': 'Šis lauks ir tikai lasīšanai',
   /** Unknown member kind: `{{kind}}` */
-  'inputs.image.error.unknown-member-kind': undefined, // 'Unknown member kind: {{kind}}'
+  'inputs.image.error.unknown-member-kind': 'Nezināms biedra veids: {{kind}}',
   /** Edit hotspot and crop */
-  'inputs.image.hotspot-dialog.title': undefined, // 'Edit hotspot and crop'
+  'inputs.image.hotspot-dialog.title': 'Rediģēt karsto punktu un apgriezt',
   /** The value of this field is not a valid image. Resetting this field will let you choose a new image. */
-  'inputs.image.invalid-image-warning.description': undefined, // 'The value of this field is not a valid image. Resetting this field will let you choose a new image.'
+  'inputs.image.invalid-image-warning.description':
+    'Šī lauka vērtība nav derīgs attēls. Atiestatot šo lauku, jūs varēsiet izvēlēties jaunu attēlu.',
   /** Reset value */
-  'inputs.image.invalid-image-warning.reset-button.text': undefined, // 'Reset value'
+  'inputs.image.invalid-image-warning.reset-button.text': 'Atiestatīt vērtību',
   /** Invalid image value */
-  'inputs.image.invalid-image-warning.title': undefined, // 'Invalid image value'
+  'inputs.image.invalid-image-warning.title': 'Nederīga attēla vērtība',
   /** Preview of uploaded image */
-  'inputs.image.preview-uploaded-image': undefined, // 'Preview of uploaded image'
+  'inputs.image.preview-uploaded-image': 'Augšupielādētā attēla priekšskatījums',
   /** The upload could not be completed at this time. */
-  'inputs.image.upload-error.description': undefined, // 'The upload could not be completed at this time.'
+  'inputs.image.upload-error.description': 'Augšupielādi šobrīd nevarēja pabeigt.',
   /** Upload failed */
-  'inputs.image.upload-error.title': undefined, // 'Upload failed'
+  'inputs.image.upload-error.title': 'Augšupielāde neizdevās',
   /** Adjust the rectangle to crop image. Adjust the circle to specify the area that should always be visible. */
-  'inputs.imagetool.description': undefined, // 'Adjust the rectangle to crop image. Adjust the circle to specify the area that should always be visible.'
+  'inputs.imagetool.description':
+    'Pielāgojiet taisnstūri, lai apgrieztu attēlu. Pielāgojiet apli, lai norādītu zonu, kas vienmēr jābūt redzamai.',
   /** Error: `{{errorMessage}}` */
-  'inputs.imagetool.load-error': undefined, // 'Error: {{errorMessage}}'
+  'inputs.imagetool.load-error': 'Kļūda: {{errorMessage}}',
   /** Hotspot & Crop */
-  'inputs.imagetool.title': undefined, // 'Hotspot & Crop'
+  'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
-  'inputs.imagetool.vector-warning.developer-info': undefined, // 'The Asset Pipeline does not support hotspot and crop for vector formats. To enable hotspot & crop, output this image to any of the supported raster formats. For example: <code>fm=jpg</code> to the <ImageUrlDocumentationLink>image URL</ImageUrlDocumentationLink> or call <code>.format(\'png\')</code> with <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.'
+  'inputs.imagetool.vector-warning.developer-info':
+    "Aktīvu kanāls neatbalsta hotspot un crop vektorformātiem. Lai iespējotu hotspot & crop, izvadiet šo attēlu jebkurā no atbalstītajiem rastra formātiem. Piemēram: <code>fm=jpg</code> pie <ImageUrlDocumentationLink>attēla URL</ImageUrlDocumentationLink> vai izsauciet <code>.format('png')</code> ar <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': undefined, // 'See developer info'
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Skatīt izstrādātāja informāciju',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title': undefined, // 'Warning: Hotspot and crop might not be applied to this image where it\'s presented.'
+  'inputs.imagetool.vector-warning.title':
+    'Brīdinājums: Hotspot un crop var netikt piemēroti šim attēlam, kur tas tiek parādīts.',
   /** Convert to `{{targetType}}` */
-  'inputs.invalid-value.convert-button.text': undefined, // 'Convert to {{targetType}}'
+  'inputs.invalid-value.convert-button.text': 'Pārveidot uz {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
-  'inputs.invalid-value.current-type': undefined, // 'The current value (<code>{{actualType}}</code>)'
+  'inputs.invalid-value.current-type': 'Pašreizējā vērtība (<code>{{actualType}}</code>)',
   /** The property value is stored as a value type that does not match the expected type. */
-  'inputs.invalid-value.description': undefined, // 'The property value is stored as a value type that does not match the expected type.'
+  'inputs.invalid-value.description':
+    'Īpašuma vērtība ir saglabāta kā vērtības tips, kas neatbilst gaidītajam tipam.',
   /** The value of this property must be of type <code>`{{validType}}`</code> according to the schema. */
-  'inputs.invalid-value.details.description': undefined, // 'The value of this property must be of type <code>{{validType}}</code> according to the schema.'
+  'inputs.invalid-value.details.description':
+    'Šīs īpašuma vērtībai jābūt tipa <code>{{validType}}</code> saskaņā ar shēmu.',
   /** Only the following types are valid here according to schema: */
-  'inputs.invalid-value.details.multi-type-description': undefined, // 'Only the following types are valid here according to schema:'
+  'inputs.invalid-value.details.multi-type-description':
+    'Saskaņā ar shēmu šeit derīgi ir tikai šādi tipi:',
   /** Mismatching value types typically occur when the schema has recently been changed. */
-  'inputs.invalid-value.details.possible-reason': undefined, // 'Mismatching value types typically occur when the schema has recently been changed.'
+  'inputs.invalid-value.details.possible-reason':
+    'Nesakrītoši vērtību tipi parasti rodas, kad shēma nesen ir mainīta.',
   /** Developer info */
-  'inputs.invalid-value.details.title': undefined, // 'Developer info'
+  'inputs.invalid-value.details.title': 'Izstrādātāja informācija',
   /** -- Invalid Value Input -- */
   /** Reset value */
-  'inputs.invalid-value.reset-button.text': undefined, // 'Reset value'
+  'inputs.invalid-value.reset-button.text': 'Atiestatīt vērtību',
   /** Invalid property value */
-  'inputs.invalid-value.title': undefined, // 'Invalid property value'
+  'inputs.invalid-value.title': 'Nederīga īpašuma vērtība',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Visi lauki',
   /** Aria label for the "Field groups" select control on smaller screens */
-  'inputs.object.field-group-tabs.aria-label': undefined, // 'Field groups'
+  'inputs.object.field-group-tabs.aria-label': 'Lauku grupas',
   /** Read-only field description */
-  'inputs.object.unknown-fields.read-only.description': undefined, // 'This field is <strong>read only</strong> according to the document’s schema and cannot be unset. If you want to be able to unset this in Studio, make sure you remove the <code>readOnly</code> field from the enclosing type in the schema.'
+  'inputs.object.unknown-fields.read-only.description':
+    'Šis lauks ir <strong>tikai lasāms</strong> saskaņā ar dokumenta shēmu un to nevar noņemt. Ja vēlaties, lai to varētu noņemt Studio, pārliecinieties, ka no ietverošā tipa shēmā esat noņēmis <code>readOnly</code> lauku.',
   /** Remove field */
-  'inputs.object.unknown-fields.remove-field-button.text': undefined, // 'Remove field'
+  'inputs.object.unknown-fields.remove-field-button.text': 'Noņemt lauku',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
-  'inputs.object.unknown-fields.warning.description_one': undefined, // 'Encountered a field that is not defined in the schema.'
-  'inputs.object.unknown-fields.warning.description_other': undefined, // 'Encountered {{count}} fields that are not defined in the schema.'
+  'inputs.object.unknown-fields.warning.description_one':
+    'Konstatēts lauks, kas nav definēts shēmā.',
+  'inputs.object.unknown-fields.warning.description_other':
+    'Konstatēti {{count}} lauki, kas nav definēti shēmā.',
   /** Detailed description of unknown field warning */
-  'inputs.object.unknown-fields.warning.details.description_one': undefined, // 'This field is not defined in the schema, which could mean that the field definition has been removed or that someone else has added it to their own local project and have not deployed their changes yet.'
-  'inputs.object.unknown-fields.warning.details.description_other': undefined, // 'These fields are not defined in the document’s schema, which could mean that the field definitions have been removed or that someone else has added them to their own local project and have not deployed their changes yet.'
+  'inputs.object.unknown-fields.warning.details.description_one':
+    'Šis lauks nav definēts shēmā, kas var nozīmēt, ka lauka definīcija ir noņemta vai ka kāds cits ir pievienojis to savam lokālajam projektam un vēl nav izvietojis savas izmaiņas.',
+  'inputs.object.unknown-fields.warning.details.description_other':
+    'Šie lauki nav definēti dokumenta shēmā, kas var nozīmēt, ka lauku definīcijas ir noņemtas vai ka kāds cits ir pievienojis tās savam lokālajam projektam un vēl nav izvietojis savas izmaiņas.',
   /** Developer info */
-  'inputs.object.unknown-fields.warning.details.title': undefined, // 'Developer info'
+  'inputs.object.unknown-fields.warning.details.title': 'Izstrādātāja informācija',
   /** Unknown field found */
-  'inputs.object.unknown-fields.warning.title_one': undefined, // 'Unknown field found'
-  'inputs.object.unknown-fields.warning.title_other': undefined, // 'Unknown fields found'
+  'inputs.object.unknown-fields.warning.title_one': 'Atrasts nezināms lauks',
+  'inputs.object.unknown-fields.warning.title_other': 'Atrasti nezināmi lauki',
   /** Collapse the editor to save screen space  */
-  'inputs.portable-text.action.collapse-editor': undefined, // 'Collapse editor'
+  'inputs.portable-text.action.collapse-editor': 'Sakļaut redaktoru',
   /** Aria label for action to edit an existing annotation */
-  'inputs.portable-text.action.edit-annotation-aria-label': undefined, // 'Edit annotation'
+  'inputs.portable-text.action.edit-annotation-aria-label': 'Rediģēt anotāciju',
   /** Expand the editor to give more editing space */
-  'inputs.portable-text.action.expand-editor': undefined, // 'Expand editor'
+  'inputs.portable-text.action.expand-editor': 'Izvērst redaktoru',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
-  'inputs.portable-text.action.insert-block': undefined, // 'Insert {{typeName}}'
+  'inputs.portable-text.action.insert-block': 'Ievietot {{typeName}}',
   /** Accessibility label for action to insert a block of a given type (`{{typeName}}`) */
-  'inputs.portable-text.action.insert-block-aria-label': undefined, // 'Insert {{typeName}} (block)'
+  'inputs.portable-text.action.insert-block-aria-label': 'Ievietot {{typeName}} (bloks)',
   /** Label for action to insert an inline object of a given type (`{{typeName}}`) */
-  'inputs.portable-text.action.insert-inline-object': undefined, // 'Insert {{typeName}}'
+  'inputs.portable-text.action.insert-inline-object': 'Ievietot {{typeName}}',
   /** Accessibility label for action to insert an inline object of a given type (`{{typeName}}`) */
-  'inputs.portable-text.action.insert-inline-object-aria-label': undefined, // 'Insert {{typeName}} (inline)'
+  'inputs.portable-text.action.insert-inline-object-aria-label':
+    'Ievietot {{typeName}} (iekļauts objekts)',
   /** Aria label for action to remove an annotation */
-  'inputs.portable-text.action.remove-annotation-aria-label': undefined, // 'Remove annotation'
+  'inputs.portable-text.action.remove-annotation-aria-label': 'Noņemt anotāciju',
   /** Label for activate on focus with context of click and not focused */
-  'inputs.portable-text.activate-on-focus-message_click': undefined, // 'Click to activate'
+  'inputs.portable-text.activate-on-focus-message_click': 'Noklikšķiniet, lai aktivizētu',
   /** Label for activate on focus with context of click and focused */
-  'inputs.portable-text.activate-on-focus-message_click-focused': undefined, // 'Click or press space to activate'
+  'inputs.portable-text.activate-on-focus-message_click-focused':
+    'Noklikšķiniet vai nospiediet atstarpi, lai aktivizētu',
   /** Label for activate on focus with context of tap and not focused */
-  'inputs.portable-text.activate-on-focus-message_tap': undefined, // 'Tap to activate'
+  'inputs.portable-text.activate-on-focus-message_tap': 'Pieskarieties, lai aktivizētu',
   /** Aria label for the annotation object */
-  'inputs.portable-text.annotation-aria-label': undefined, // 'Annotation object'
+  'inputs.portable-text.annotation-aria-label': 'Anotācijas objekts',
   /** Title for dialog that allows editing an annotation */
-  'inputs.portable-text.annotation-editor.title': undefined, // 'Edit {{schemaType}}'
+  'inputs.portable-text.annotation-editor.title': 'Rediģēt {{schemaType}}',
   /** Title of the default "link" annotation */
-  'inputs.portable-text.annotation.link': undefined, // 'Link'
+  'inputs.portable-text.annotation.link': 'Saite',
   /** Aria label for the block object */
-  'inputs.portable-text.block.aria-label': undefined, // 'Block object'
+  'inputs.portable-text.block.aria-label': 'Bloka objekts',
   /** Label for action to edit a block item, in the case where it is editable */
-  'inputs.portable-text.block.edit': undefined, // 'Edit'
+  'inputs.portable-text.block.edit': 'Rediģēt',
   /** Accessibility label for the button that opens the actions menu on blocks */
-  'inputs.portable-text.block.open-menu-aria-label': undefined, // 'Open menu'
+  'inputs.portable-text.block.open-menu-aria-label': 'Atvērt izvēlni',
   /** Label for action to open a reference, in the case of block-level reference types */
-  'inputs.portable-text.block.open-reference': undefined, // 'Open reference'
+  'inputs.portable-text.block.open-reference': 'Atvērt atsauci',
   /** Label for action to remove a block item */
-  'inputs.portable-text.block.remove': undefined, // 'Remove'
+  'inputs.portable-text.block.remove': 'Noņemt',
   /** Label for action to view a block item, in the case where it is read-only and thus cannot be edited */
-  'inputs.portable-text.block.view': undefined, // 'View'
+  'inputs.portable-text.block.view': 'Skatīt',
   /** Title of the "code" decorator */
-  'inputs.portable-text.decorator.code': undefined, // 'Code'
+  'inputs.portable-text.decorator.code': 'Kods',
   /** Title of the "em" (emphasis) decorator */
-  'inputs.portable-text.decorator.emphasis': undefined, // 'Italic'
+  'inputs.portable-text.decorator.emphasis': 'Slīpraksts',
   /** Title of the "strike-through" decorator */
-  'inputs.portable-text.decorator.strike-through': undefined, // 'Strike'
+  'inputs.portable-text.decorator.strike-through': 'Pārsvītrojums',
   /** Title of the "strong" decorator */
-  'inputs.portable-text.decorator.strong': undefined, // 'Strong'
+  'inputs.portable-text.decorator.strong': 'Treknraksts',
   /** Title of the "underline" decorator */
-  'inputs.portable-text.decorator.underline': undefined, // 'Underline'
+  'inputs.portable-text.decorator.underline': 'Pasvītrojums',
   /** Placeholder text for when the editor is empty */
-  'inputs.portable-text.empty-placeholder': undefined, // 'Empty'
+  'inputs.portable-text.empty-placeholder': 'Tukšs',
   /** Aria label for the block object */
-  'inputs.portable-text.inline-block.aria-label': undefined, // 'Inline object'
+  'inputs.portable-text.inline-block.aria-label': 'Iekļauts objekts',
   /** Label for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit': 'Rediģēt objektu',
   /** Aria label for icon for action to edit an inline object item */
-  'inputs.portable-text.inline-object.edit-aria-label': undefined, // 'Edit object'
+  'inputs.portable-text.inline-object.edit-aria-label': 'Rediģēt objektu',
   /** Label for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove': 'Noņemt objektu',
   /** Aria label for icon for action to remove an inline object item */
-  'inputs.portable-text.inline-object.remove-aria-label': undefined, // 'Remove object'
+  'inputs.portable-text.inline-object.remove-aria-label': 'Noņemt objektu',
   /** Disclaimer text shown on invalid Portable Text value, when an action is available to unblock the user, but it is not guaranteed to be safe */
-  'inputs.portable-text.invalid-value.action-disclaimer': undefined, // 'NOTE: It’s generally safe to perform the action above, but if you are in doubt, get in touch with those responsible for configuring your studio.'
+  'inputs.portable-text.invalid-value.action-disclaimer':
+    'PIEZĪME: Parasti ir droši veikt iepriekš minēto darbību, bet, ja šaubāties, sazinieties ar tiem, kas ir atbildīgi par jūsu studijas konfigurēšanu.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
-  'inputs.portable-text.invalid-value.disallowed-child-type.action': undefined, // 'Remove the object'
+  'inputs.portable-text.invalid-value.disallowed-child-type.action': 'Noņemt objektu',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` of type `{{childType}}` which is not allowed by the schema definition */
-  'inputs.portable-text.invalid-value.disallowed-child-type.description': undefined, // 'Child with key {{childKey}} of block with key <code>{{key}}</code> is of type <code>{{childType}}</code>, which is not allowed by the schema.'
+  'inputs.portable-text.invalid-value.disallowed-child-type.description':
+    'Bērns ar atslēgu {{childKey}} blokā ar atslēgu <code>{{key}}</code> ir tipa <code>{{childType}}</code>, kas nav atļauts shēmas definīcijā.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a type (`{{typeName}}`) that is not an allowed block type for this field */
-  'inputs.portable-text.invalid-value.disallowed-type.action': undefined, // 'Remove the block'
+  'inputs.portable-text.invalid-value.disallowed-type.action': 'Noņemt bloku',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a type (`{{typeName}}`) that is not an allowed block type for this field */
-  'inputs.portable-text.invalid-value.disallowed-type.description': undefined, // 'Block with key <code>{{key}}</code> is of type <code>{{typeName}}</code>, which is not allowed by the schema.'
+  'inputs.portable-text.invalid-value.disallowed-type.description':
+    'Blokam ar atslēgu <code>{{key}}</code> ir tips <code>{{typeName}}</code>, kas nav atļauts shēmas definīcijā.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains no children */
-  'inputs.portable-text.invalid-value.empty-children.action': undefined, // 'Insert empty text span'
+  'inputs.portable-text.invalid-value.empty-children.action': 'Ievietot tukšu teksta fragmentu',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains no children */
-  'inputs.portable-text.invalid-value.empty-children.description': undefined, // 'Text block with key <code>{{key}}</code> has no text spans.'
+  'inputs.portable-text.invalid-value.empty-children.description':
+    'Teksta blokam ar atslēgu <code>{{key}}</code> nav teksta fragmentu.',
   /** Label for the button to ignore invalid values in the Portable Text editor */
-  'inputs.portable-text.invalid-value.ignore-button.text': undefined, // 'Ignore'
+  'inputs.portable-text.invalid-value.ignore-button.text': 'Ignorēt',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a `_type` property that is set to `block`, but the block type defined in schema has a different name (`{{expectedTypeName}}`) */
-  'inputs.portable-text.invalid-value.incorrect-block-type.action': undefined, // 'Use type <code>{{expectedTypeName}}</code>'
+  'inputs.portable-text.invalid-value.incorrect-block-type.action':
+    'Lietot tipu <code>{{expectedTypeName}}</code>',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a `_type` property that is set to `block`, but the block type defined in schema has a different name (`{{expectedTypeName}}`) */
-  'inputs.portable-text.invalid-value.incorrect-block-type.description': undefined, // 'Block with key <code>{{key}}</code> has an invalid type name. According to the schema, it should be <code>{{expectedTypeName}}</code>.'
+  'inputs.portable-text.invalid-value.incorrect-block-type.description':
+    'Blokam ar atslēgu <code>{{key}}</code> ir nederīgs tipa nosaukums. Saskaņā ar shēmu, tam jābūt <code>{{expectedTypeName}}</code>.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a span with key `{{childKey}}` that has a missing or invalid `text` property */
-  'inputs.portable-text.invalid-value.invalid-span-text.action': undefined, // 'Set empty text value'
+  'inputs.portable-text.invalid-value.invalid-span-text.action': 'Iestatīt tukšu teksta vērtību',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a span with key `{{childKey}}` that has a missing or invalid `text` property */
-  'inputs.portable-text.invalid-value.invalid-span-text.description': undefined, // 'Span with key {{childKey}} of block with key <code>{{key}}</code> has a missing or invalid <code>text</code> property.'
+  'inputs.portable-text.invalid-value.invalid-span-text.description':
+    'Fragmentam ar atslēgu {{childKey}} blokā ar atslēgu <code>{{key}}</code> trūkst vai ir nederīga <code>text</code> īpašība.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
-  'inputs.portable-text.invalid-value.missing-block-type.action': undefined, // 'Use type <code>{{expectedTypeName}}</code>'
+  'inputs.portable-text.invalid-value.missing-block-type.action':
+    'Lietot tipu <code>{{expectedTypeName}}</code>',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property, but seems to be a block of type `{{expectedTypeName}}` */
-  'inputs.portable-text.invalid-value.missing-block-type.description': undefined, // 'Block with key <code>{{key}}</code> is missing a type name. According to the schema, it should be <code>{{expectedTypeName}}</code>.'
+  'inputs.portable-text.invalid-value.missing-block-type.description':
+    'Blokam ar atslēgu <code>{{key}}</code> trūkst tipa nosaukuma. Saskaņā ar shēmu, tam jābūt <code>{{expectedTypeName}}</code>.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
-  'inputs.portable-text.invalid-value.missing-child-key.action': undefined, // 'Assign random key'
+  'inputs.portable-text.invalid-value.missing-child-key.action': 'Piešķirt nejaušu atslēgu',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child at `{{index}}` which is missing `_key` property */
-  'inputs.portable-text.invalid-value.missing-child-key.description': undefined, // 'Child at index <code>{{index}}</code> of block with key <code>{{key}}</code> is missing <code>_key</code> property.'
+  'inputs.portable-text.invalid-value.missing-child-key.description':
+    'Bērnam indeksā <code>{{index}}</code> blokā ar atslēgu <code>{{key}}</code> trūkst <code>_key</code> īpašība.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` which is missing a `_type` property */
-  'inputs.portable-text.invalid-value.missing-child-type.action': undefined, // 'Remove the object'
+  'inputs.portable-text.invalid-value.missing-child-type.action': 'Noņemt objektu',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` has a child with key `{{childKey}}` which is missing a `_type` property */
-  'inputs.portable-text.invalid-value.missing-child-type.description': undefined, // 'Child with key {{childKey}} of block with key <code>{{key}}</code> is missing <code>_type</code> property.'
+  'inputs.portable-text.invalid-value.missing-child-type.description':
+    'Bērnam ar atslēgu {{childKey}} blokā ar atslēgu <code>{{key}}</code> trūkst <code>_type</code> īpašība.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
-  'inputs.portable-text.invalid-value.missing-key.action': undefined, // 'Assign random key'
+  'inputs.portable-text.invalid-value.missing-key.action': 'Piešķirt nejaušu atslēgu',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is missing the required `_key` property */
-  'inputs.portable-text.invalid-value.missing-key.description': undefined, // 'Block at index <code>{{index}}</code> is missing required <code>_key</code> property.'
+  'inputs.portable-text.invalid-value.missing-key.description':
+    'Blokam indeksā <code>{{index}}</code> trūkst nepieciešamā <code>_key</code> īpašība.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-children.action': undefined, // 'Remove the block'
+  'inputs.portable-text.invalid-value.missing-or-invalid-children.action': 'Noņemt bloku',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-children.description': undefined, // 'Text block with key <code>{{key}}</code> has an invalid or missing `children` property.'
+  'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
+    'Teksta blokam ar atslēgu <code>{{key}}</code> ir nederīga vai trūkstoša `children` īpašība.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': undefined, // 'Add property'
+  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.action': 'Pievienot īpašību',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `markDefs` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description': undefined, // 'Text block with key <code>{{key}}</code> has an invalid or missing `markDefs` property.'
+  'inputs.portable-text.invalid-value.missing-or-invalid-markdefs.description':
+    'Teksta blokam ar atslēgu <code>{{key}}</code> ir nederīga vai trūkstoša `markDefs` īpašība.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
-  'inputs.portable-text.invalid-value.missing-type.action': undefined, // 'Remove the block'
+  'inputs.portable-text.invalid-value.missing-type.action': 'Noņemt bloku',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` is missing a `_type` property  */
-  'inputs.portable-text.invalid-value.missing-type.description': undefined, // 'Block with key <code>{{key}}</code> is missing a type name.'
+  'inputs.portable-text.invalid-value.missing-type.description':
+    'Blokam ar atslēgu <code>{{key}}</code> trūkst tipa nosaukuma.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
-  'inputs.portable-text.invalid-value.non-object-child.action': undefined, // 'Remove the item'
+  'inputs.portable-text.invalid-value.non-object-child.action': 'Noņemt elementu',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains a non-object child at index `{{index}}` */
-  'inputs.portable-text.invalid-value.non-object-child.description': undefined, // 'Child at index <code>{{index}}</code> of block with key <code>{{key}}</code> is not an object.'
+  'inputs.portable-text.invalid-value.non-object-child.description':
+    'Bērns indeksā <code>{{index}}</code> blokā ar atslēgu <code>{{key}}</code> nav objekts.',
   /** Action presented when the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
-  'inputs.portable-text.invalid-value.not-an-array.action': undefined, // 'Unset the value'
+  'inputs.portable-text.invalid-value.not-an-array.action': 'Noņemt vērtību',
   /** Text explaining that the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
-  'inputs.portable-text.invalid-value.not-an-array.description': undefined, // 'Value must be an array of Portable Text blocks, or undefined.'
+  'inputs.portable-text.invalid-value.not-an-array.description':
+    'Vērtībai jābūt Portable Text bloku masīvam vai nedefinētai.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is not an object */
-  'inputs.portable-text.invalid-value.not-an-object.action': undefined, // 'Remove item'
+  'inputs.portable-text.invalid-value.not-an-object.action': 'Noņemt elementu',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is not an object */
-  'inputs.portable-text.invalid-value.not-an-object.description': undefined, // 'Item at <code>{{index}}</code> is not an object,.'
+  'inputs.portable-text.invalid-value.not-an-object.description':
+    'Elements pie <code>{{index}}</code> nav objekts,.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.action': undefined, // 'Remove disallowed marks'
+  'inputs.portable-text.invalid-value.orphaned-marks.action': 'Noņemt neatļautās zīmes',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.description': undefined, // 'Text block with key <code>{{key}}</code> contains marks <code>({{orphanedMarks, list}})</code> that are not allowed by the schema.'
+  'inputs.portable-text.invalid-value.orphaned-marks.description':
+    'Teksta blokam ar atslēgu <code>{{key}}</code> ir zīmes <code>({{orphanedMarks, list}})</code>, kas nav atļautas shēmā.',
   /** Title for the alert indicating that the Portable Text field has an invalid value */
-  'inputs.portable-text.invalid-value.title': undefined, // 'Invalid Portable Text value'
+  'inputs.portable-text.invalid-value.title': 'Nederīga Portable Text vērtība',
   /** Title of "bulleted" list type */
-  'inputs.portable-text.list-type.bullet': undefined, // 'Bulleted list'
+  'inputs.portable-text.list-type.bullet': 'Aizzīmētais saraksts',
   /** Title of numbered list type */
-  'inputs.portable-text.list-type.number': undefined, // 'Numbered list'
+  'inputs.portable-text.list-type.number': 'Numurētais saraksts',
   /** Title of the "h1" block style */
-  'inputs.portable-text.style.h1': undefined, // 'Heading 1'
+  'inputs.portable-text.style.h1': 'Virsraksts 1',
   /** Title of the "h2" block style */
-  'inputs.portable-text.style.h2': undefined, // 'Heading 2'
+  'inputs.portable-text.style.h2': 'Virsraksts 2',
   /** Title of the "h3" block style */
-  'inputs.portable-text.style.h3': undefined, // 'Heading 3'
+  'inputs.portable-text.style.h3': 'Virsraksts 3',
   /** Title of the "h4" block style */
-  'inputs.portable-text.style.h4': undefined, // 'Heading 4'
+  'inputs.portable-text.style.h4': 'Virsraksts 4',
   /** Title of the "h5" block style */
-  'inputs.portable-text.style.h5': undefined, // 'Heading 5'
+  'inputs.portable-text.style.h5': 'Virsraksts 5',
   /** Title of the "h6" block style */
-  'inputs.portable-text.style.h6': undefined, // 'Heading 6'
+  'inputs.portable-text.style.h6': 'Virsraksts 6',
   /** Title shown when multiple blocks of varying styles is selected */
-  'inputs.portable-text.style.multiple': undefined, // 'Multiple'
+  'inputs.portable-text.style.multiple': 'Daudzveidīgs',
   /** Title of fallback when no style is given for a block */
-  'inputs.portable-text.style.none': undefined, // 'No style'
+  'inputs.portable-text.style.none': 'Bez stila',
   /** Title of the "normal" block style */
-  'inputs.portable-text.style.normal': undefined, // 'Normal'
+  'inputs.portable-text.style.normal': 'Parasts',
   /** Title of the "quote" block style */
-  'inputs.portable-text.style.quote': undefined, // 'Quote'
+  'inputs.portable-text.style.quote': 'Citāts',
   /** Label for action to clear the current value of the reference field */
-  'inputs.reference.action.clear': undefined, // 'Clear'
+  'inputs.reference.action.clear': 'Notīrīt',
   /** Label for action to copy the current item (used within arrays) */
-  'inputs.reference.action.copy': undefined, // 'Copy'
+  'inputs.reference.action.copy': 'Kopēt',
   /** Label for action to create a new document from the reference input */
-  'inputs.reference.action.create-new-document': undefined, // 'Create'
+  'inputs.reference.action.create-new-document': 'Izveidot',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
-  'inputs.reference.action.create-new-document-select': undefined, // 'Create…'
+  'inputs.reference.action.create-new-document-select': 'Izveidot…',
   /** Label for action to duplicate the current item to a new item (used within arrays) */
-  'inputs.reference.action.duplicate': undefined, // 'Duplicate'
+  'inputs.reference.action.duplicate': 'Dublēt',
   /** Label for action that opens the referenced document in a new tab */
-  'inputs.reference.action.open-in-new-tab': undefined, // 'Open in new tab'
+  'inputs.reference.action.open-in-new-tab': 'Atvērt jaunā cilnē',
   /** Label for action to remove the reference from an array */
-  'inputs.reference.action.remove': undefined, // 'Remove'
+  'inputs.reference.action.remove': 'Noņemt',
   /** Label for action to replace the current value of the field */
-  'inputs.reference.action.replace': undefined, // 'Replace'
+  'inputs.reference.action.replace': 'Aizstāt',
   /** Label for action to cancel a previously initiated replace action  */
-  'inputs.reference.action.replace-cancel': undefined, // 'Cancel replace'
+  'inputs.reference.action.replace-cancel': 'Atcelt aizstāšanu',
   /** The cross-dataset reference field currently has a reference, but the feature has been disabled since it was created. This explains what can/cannot be done in its current state. */
-  'inputs.reference.cross-dataset.feature-disabled-actions': undefined, // 'You can still clear this field\'s existing reference, but it cannot be changed to a different document as long as the feature is disabled.'
+  'inputs.reference.cross-dataset.feature-disabled-actions':
+    'Jūs joprojām varat notīrīt šī lauka esošo atsauci, bet to nevar nomainīt uz citu dokumentu, kamēr funkcija ir atspējota.',
   /** A cross-dataset reference field exists but the feature has been disabled. A <DocumentationLink> component is available. */
-  'inputs.reference.cross-dataset.feature-disabled-description': undefined, // 'This feature has been disabled. Read how to enable it in <DocumentationLink>the documentation</DocumentationLink>.'
+  'inputs.reference.cross-dataset.feature-disabled-description':
+    'Šī funkcija ir atspējota. Lasiet, kā to iespējot, <DocumentationLink>dokumentācijā</DocumentationLink>.',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
-  'inputs.reference.cross-dataset.feature-unavailable-title': undefined, // 'Unavailable feature: Cross dataset reference'
+  'inputs.reference.cross-dataset.feature-unavailable-title':
+    'Nepieejama funkcija: Krusteniskā datu kopu atsauce',
   /** The cross-dataset reference points to a document with an invalid type  */
-  'inputs.reference.cross-dataset.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}}) <JsonValue/>'
+  'inputs.reference.cross-dataset.invalid-type':
+    'Atsauktajam dokumentam ir nederīgs tips ({{typeName}}) <JsonValue/>',
   /** The referenced document will open in a new tab (due to external studio) */
-  'inputs.reference.document-opens-in-new-tab': undefined, // 'This document opens in a new tab'
+  'inputs.reference.document-opens-in-new-tab': 'Šis dokuments atveras jaunā cilnē',
   /** Error title for when the document is unavailable (for any possible reason) */
-  'inputs.reference.error.document-unavailable-title': undefined, // 'Document unavailable'
+  'inputs.reference.error.document-unavailable-title': 'Dokuments nav pieejams',
   /** Error title for when the referenced document failed to be loaded */
-  'inputs.reference.error.failed-to-load-document-title': undefined, // 'Failed to load referenced document'
+  'inputs.reference.error.failed-to-load-document-title': 'Neizdevās ielādēt atsaukto dokumentu',
   /** Error title for when the reference search returned a document that is not an allowed type for the field */
-  'inputs.reference.error.invalid-search-result-type-title': undefined, // 'Search returned a type that\'s not valid for this reference: "{{returnedType}}"'
+  'inputs.reference.error.invalid-search-result-type-title':
+    'Meklēšana atgrieza tipu, kas nav derīgs šai atsaucei: "{{returnedType}}"',
   /** Error description for when the document referenced is not one of the types declared as allowed target types in schema */
-  'inputs.reference.error.invalid-type-description': undefined, // 'Referenced document (<code>{{documentId}}</code>) is of type <code>{{actualType}}</code>. According to the schema, referenced documents can only be of type <AllowedTypes/>.'
+  'inputs.reference.error.invalid-type-description':
+    'Atsauktais dokuments (<code>{{documentId}}</code>) ir tipa <code>{{actualType}}</code>. Saskaņā ar shēmu, atsauktie dokumenti var būt tikai tipa <AllowedTypes/>.',
   /** Error title for when the document referenced is not one of the types declared as allowed target types in schema */
-  'inputs.reference.error.invalid-type-title': undefined, // 'Document of invalid type'
+  'inputs.reference.error.invalid-type-title': 'Dokuments ar nederīgu tipu',
   /** Error description for when the user does not have permissions to read the referenced document */
-  'inputs.reference.error.missing-read-permissions-description': undefined, // 'The referenced document could not be accessed due to insufficient permissions'
+  'inputs.reference.error.missing-read-permissions-description':
+    'Atsauktais dokuments nevarēja tikt piekļūts nepietiekamu atļauju dēļ',
   /** Error title for when the user does not have permissions to read the referenced document */
-  'inputs.reference.error.missing-read-permissions-title': undefined, // 'Insufficient permissions'
+  'inputs.reference.error.missing-read-permissions-title': 'Nepietiekamas atļaujas',
   /** Error description for when the current reference value points to a document that does not exist (on weak references) */
-  'inputs.reference.error.nonexistent-document-description': undefined, // 'The referenced document does not exist (ID: <code>{{documentId}}</code>). You can either remove the reference or replace it with another document.'
+  'inputs.reference.error.nonexistent-document-description':
+    'Atsauktais dokuments neeksistē (ID: <code>{{documentId}}</code>). Jūs varat vai nu noņemt atsauci, vai aizstāt to ar citu dokumentu.',
   /** Error title for when the current reference value points to a document that does not exist (on weak references) */
-  'inputs.reference.error.nonexistent-document-title': undefined, // 'Not found'
+  'inputs.reference.error.nonexistent-document-title': 'Nav atrasts',
   /** Label for button that clears the reference when it points to a document that does not exist (on weak references) */
-  'inputs.reference.error.nonexistent-document.clear-button-label': undefined, // 'Clear'
+  'inputs.reference.error.nonexistent-document.clear-button-label': 'Notīrīt',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
-  'inputs.reference.error.search-failed-title': undefined, // 'Reference search failed'
+  'inputs.reference.error.search-failed-title': 'Neizdevās meklēt atsauci',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type': 'Atsauces dokuments ir nederīga tipa ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
-  'inputs.reference.image-preview-alt-text': undefined, // 'Image preview of referenced document'
+  'inputs.reference.image-preview-alt-text': 'Atsauces dokumenta attēla priekšskatījums',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
-  'inputs.reference.incomplete-reference.finalize-action-description': undefined, // '<strong>{{referencedDocument}}</strong> is published and this reference should now be finalized.'
+  'inputs.reference.incomplete-reference.finalize-action-description':
+    '<strong>{{referencedDocument}}</strong> ir publicēts un šī atsauce tagad jāpabeidz.',
   /** Title for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
-  'inputs.reference.incomplete-reference.finalize-action-title': undefined, // 'Finalize reference'
+  'inputs.reference.incomplete-reference.finalize-action-title': 'Pabeigt atsauci',
   /** Description for alert shown when a reference in a live-edit document points to a document that exists and has been published, but the reference is still marked as weak */
-  'inputs.reference.incomplete-reference.strengthen-action-description': undefined, // '<strong>{{referencedDocument}}</strong> is published and this reference should now be converted to a strong reference.'
+  'inputs.reference.incomplete-reference.strengthen-action-description':
+    '<strong>{{referencedDocument}}</strong> ir publicēts un šī atsauce tagad jāpārvērš par stipru atsauci.',
   /** Title for alert shown when a reference in a live-edit document points to a document that exists and has been published, but the reference is still marked as weak */
-  'inputs.reference.incomplete-reference.strengthen-action-title': undefined, // 'Convert to strong reference'
+  'inputs.reference.incomplete-reference.strengthen-action-title': 'Pārvērst par stipru atsauci',
   /** Label for button that triggers the action that strengthen a reference */
-  'inputs.reference.incomplete-reference.strengthen-button-label': undefined, // 'Convert to strong reference'
+  'inputs.reference.incomplete-reference.strengthen-button-label': 'Pārvērst par stipru atsauci',
   /** Label for button that triggers a retry attempt for reference metadata  */
-  'inputs.reference.metadata-error.retry-button-label': undefined, // 'Retry'
+  'inputs.reference.metadata-error.retry-button-label': 'Mēģināt vēlreiz',
   /** Title for alert shown when reference metadata fails to be loaded */
-  'inputs.reference.metadata-error.title': undefined, // 'Unable to load reference metadata'
+  'inputs.reference.metadata-error.title': 'Nevar ielādēt atsauces metadatus',
   /** Message shown when no documents were found that matched the given search string */
-  'inputs.reference.no-results-for-query': undefined, // 'No results for <strong>“{{searchTerm}}”</strong>'
+  'inputs.reference.no-results-for-query': 'Nav rezultātu priekš <strong>“{{searchTerm}}”</strong>',
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
-  'inputs.reference.preview.edited-at-time': undefined, // 'Edited <RelativeTime/>'
+  'inputs.reference.preview.edited-at-time': 'Rediģēts <RelativeTime/>',
   /** Accessibility label for icon indicating that document does _not_ have any unpublished changes */
-  'inputs.reference.preview.has-no-unpublished-changes-aria-label': undefined, // 'No unpublished edits'
+  'inputs.reference.preview.has-no-unpublished-changes-aria-label': 'Nav nepublicētu labojumu',
   /** Accessibility label for icon indicating that document has unpublished changes */
-  'inputs.reference.preview.has-unpublished-changes-aria-label': undefined, // 'Edited'
+  'inputs.reference.preview.has-unpublished-changes-aria-label': 'Rediģēts',
   /** Accessibility label for icon indicating that document does _not_ have a published version */
-  'inputs.reference.preview.is-not-published-aria-label': undefined, // 'Not published'
+  'inputs.reference.preview.is-not-published-aria-label': 'Nav publicēts',
   /** Accessibility label for icon indicating that document has a published version */
-  'inputs.reference.preview.is-published-aria-label': undefined, // 'Published'
+  'inputs.reference.preview.is-published-aria-label': 'Publicēts',
   /** Text for tooltip indicating that a document has no unpublished edits */
-  'inputs.reference.preview.no-unpublished-edits': undefined, // 'No unpublished edits'
+  'inputs.reference.preview.no-unpublished-edits': 'Nav nepublicētu labojumu',
   /** Text for tooltip indicating that a document has not yet been published */
-  'inputs.reference.preview.not-published': undefined, // 'Not published'
+  'inputs.reference.preview.not-published': 'Nav publicēts',
   /** Text for tooltip showing when a document was published, using relative time (eg "how long ago was it published?") */
-  'inputs.reference.preview.published-at-time': undefined, // 'Published <RelativeTime/>'
+  'inputs.reference.preview.published-at-time': 'Publicēts <RelativeTime/>',
   /** The referenced document no longer exist and might have been deleted (for weak references) */
-  'inputs.reference.referenced-document-does-not-exist': undefined, // 'The referenced document no longer exist and might have been deleted (document ID: <code>{{documentId}}</code>).'
+  'inputs.reference.referenced-document-does-not-exist':
+    'Atsauces dokuments vairs neeksistē un iespējams ir izdzēsts (dokumenta ID: <code>{{documentId}}</code>).',
   /** The referenced document could not be displayed to the user because of insufficient permissions */
-  'inputs.reference.referenced-document-insufficient-permissions': undefined, // 'The referenced document could not be accessed due to insufficient permissions'
+  'inputs.reference.referenced-document-insufficient-permissions':
+    'Atsauces dokumentu nevarēja piekļūt nepietiekamu atļauju dēļ',
   /** Label for when the reference input is resolving the initial value for an item */
-  'inputs.reference.resolving-initial-value': undefined, // 'Resolving initial value…'
+  'inputs.reference.resolving-initial-value': 'Noskaidro sākotnējo vērtību…',
   /** Placeholder shown in a reference input with no current value */
-  'inputs.reference.search-placeholder': undefined, // 'Type to search'
+  'inputs.reference.search-placeholder': 'Rakstiet, lai meklētu',
   /** Explanation of the consequences of leaving the reference as strong instead of weak */
-  'inputs.reference.strength-mismatch.is-strong-consquences': undefined, // 'It will not be possible to delete the reference document without first removing this reference or converting it to weak.'
+  'inputs.reference.strength-mismatch.is-strong-consquences':
+    'Nevarēs izdzēst atsauces dokumentu, nevis pirms šīs atsauces noņemšanas vai pārvēršanas par vāju.',
   /** Description for alert shown when a reference is supposed to be weak, but the actual value is strong */
-  'inputs.reference.strength-mismatch.is-strong-description': undefined, // 'This reference is <em>strong</em>, but according to the current schema it should be <em>weak</em>.'
+  'inputs.reference.strength-mismatch.is-strong-description':
+    'Šī atsauce ir <em>stipra</em>, bet saskaņā ar pašreizējo shēmu tai vajadzētu būt <em>vājai</em>.',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
-  'inputs.reference.strength-mismatch.is-weak-consquences': undefined, // 'This makes it possible to delete the referenced document without first deleting this reference, leaving this field referencing a nonexisting document.'
+  'inputs.reference.strength-mismatch.is-weak-consquences':
+    'Tas ļauj izdzēst atsaucamo dokumentu, nevis pirmo dzēšot šo atsauci, atstājot šo lauku, kas atsaucas uz neesošu dokumentu.',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
-  'inputs.reference.strength-mismatch.is-weak-description': undefined, // 'This reference is <em>weak</em>, but according to the current schema it should be <em>strong</em>.'
+  'inputs.reference.strength-mismatch.is-weak-description':
+    'Šī atsauce ir <em>vāja</em>, bet saskaņā ar pašreizējo shēmu tai vajadzētu būt <em>stiprai</em>.',
   /** Label for button that triggers the action that strengthens a reference on strength mismatch */
-  'inputs.reference.strength-mismatch.strengthen-button-label': undefined, // 'Convert to strong reference'
+  'inputs.reference.strength-mismatch.strengthen-button-label': 'Pārvērst par stipru atsauci',
   /** Title for alert shown when a reference is supposed to be weak/strong, but the actual value is the opposite of what it is supposed to be */
-  'inputs.reference.strength-mismatch.title': undefined, // 'Reference strength mismatch'
+  'inputs.reference.strength-mismatch.title': 'Atsauces stipruma neatbilstība',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
-  'inputs.reference.strength-mismatch.weaken-button-label': undefined, // 'Convert to weak reference'
+  'inputs.reference.strength-mismatch.weaken-button-label': 'Pārvērst par vāju atsauci',
   /** Action message for generating the slug */
-  'inputs.slug.action.generate': undefined, // 'Generate'
+  'inputs.slug.action.generate': 'Ģenerēt',
   /** Loading message for when the input is actively generating a slug */
-  'inputs.slug.action.generating': undefined, // 'Generating…'
+  'inputs.slug.action.generating': 'Ģenerē…',
   /** Error message for when the source to generate a slug from is missing */
-  'inputs.slug.error.missing-source': undefined, // 'Source is missing. Check source on type {{schemaType}} in schema'
+  'inputs.slug.error.missing-source':
+    'Avots nav atrasts. Pārbaudiet avotu tipam {{schemaType}} shēmā',
   /** Placeholder for an empty tag input */
-  'inputs.tags.placeholder': undefined, // 'Enter tag and press ENTER…'
+  'inputs.tags.placeholder': 'Ievadiet tagu un nospiediet ENTER…',
   /** Placeholder for an empty tag input on touch devices */
-  'inputs.tags.placeholder_touch': undefined, // 'Enter tag…'
+  'inputs.tags.placeholder_touch': 'Ievadiet tagu…',
   /** Convert to `{{targetType}}` */
-  'inputs.untyped-value.convert-button.text': undefined, // 'Convert to {{targetType}}'
+  'inputs.untyped-value.convert-button.text': 'Pārvērst par {{targetType}}',
   /** Encountered an object value without a <code>_type</code> property. */
-  'inputs.untyped-value.description': undefined, // 'Encountered an object value without a <code>_type</code> property.'
+  'inputs.untyped-value.description': 'Konstatēta objekta vērtība bez <code>_type</code> īpašības.',
   /** Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items. */
-  'inputs.untyped-value.details.description': undefined, // 'Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items.'
+  'inputs.untyped-value.details.description':
+    'Vai nu noņemiet objekta deklarācijas <code>name</code> īpašību, vai iestatiet <code>_type</code> īpašību vienumiem.',
   /** Current value (<code>object</code>): */
-  'inputs.untyped-value.details.json-dump-prefix': undefined, // 'Current value (<code>object</code>):'
+  'inputs.untyped-value.details.json-dump-prefix': 'Pašreizējā vērtība (<code>objekts</code>):',
   /** The following types are valid here according to schema: */
-  'inputs.untyped-value.details.multi-type-description': undefined, // 'The following types are valid here according to schema:'
+  'inputs.untyped-value.details.multi-type-description':
+    'Saskaņā ar shēmu šeit ir derīgi šādi tipi:',
   /** Developer info */
-  'inputs.untyped-value.details.title': undefined, // 'Developer info'
+  'inputs.untyped-value.details.title': 'Izstrādātāju informācija',
   /** Property value missing <code>_type</code> */
-  'inputs.untyped-value.title': undefined, // 'Property value missing <code>_type</code>'
+  'inputs.untyped-value.title': 'Īpašuma vērtībai trūkst <code>_type</code>',
   /** Unset value */
-  'inputs.untyped-value.unset-item-button.text': undefined, // 'Unset value'
+  'inputs.untyped-value.unset-item-button.text': 'Noņemt vērtību',
 
   /** The fallback explanation if no context is provided */
-  'insufficient-permissions-message.not-authorized-explanation': undefined, // 'You do not have permission to access this feature.'
+  'insufficient-permissions-message.not-authorized-explanation':
+    'Jums nav atļaujas piekļūt šai funkcijai.',
   /** The explanation when unable to create any document at all */
-  'insufficient-permissions-message.not-authorized-explanation_create-any-document': undefined, // 'You do not have permission to create a document.'
+  'insufficient-permissions-message.not-authorized-explanation_create-any-document':
+    'Jums nav atļaujas izveidot dokumentu.',
   /** The explanation when unable to create a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_create-document': undefined, // 'You do not have permission to create this document.'
+  'insufficient-permissions-message.not-authorized-explanation_create-document':
+    'Jums nav atļaujas izveidot šo dokumentu.',
   /** The explanation when unable to create a particular type of document */
-  'insufficient-permissions-message.not-authorized-explanation_create-document-type': undefined, // 'You do not have permission to create this kind of document.'
+  'insufficient-permissions-message.not-authorized-explanation_create-document-type':
+    'Jums nav atļaujas izveidot šāda veida dokumentu.',
   /** The explanation when unable to create a new reference in a document */
-  'insufficient-permissions-message.not-authorized-explanation_create-new-reference': undefined, // 'You do not have permission to create a new reference.'
+  'insufficient-permissions-message.not-authorized-explanation_create-new-reference':
+    'Jums nav atļaujas izveidot jaunu atsauci.',
   /** The explanation when unable to delete a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_delete-document': undefined, // 'You do not have permission to delete this document.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-document':
+    'Jums nav atļaujas dzēst šo dokumentu.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'Jums nav atļaujas dzēst grafikus.',
   /** The explanation when unable to discard changes in a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_discard-changes': undefined, // 'You do not have permission to discard changes in this document.'
+  'insufficient-permissions-message.not-authorized-explanation_discard-changes':
+    'Jums nav atļaujas atmest izmaiņas šajā dokumentā.',
   /** The explanation when unable to duplicate a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_duplicate-document': undefined, // 'You do not have permission to duplicate this document.'
+  'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
+    'Jums nav atļaujas dublēt šo dokumentu.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'Jums nav atļaujas rediģēt grafikus.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'Jums nav atļaujas izpildīt grafikus.',
   /** The explanation when unable to publish a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_publish-document': undefined, // 'You do not have permission to publish this document.'
+  'insufficient-permissions-message.not-authorized-explanation_publish-document':
+    'Jums nav atļaujas publicēt šo dokumentu.',
   /** The explanation when unable to unpublish a particular document */
-  'insufficient-permissions-message.not-authorized-explanation_unpublish-document': undefined, // 'You do not have permission to unpublish this document.'
+  'insufficient-permissions-message.not-authorized-explanation_unpublish-document':
+    'Jums nav atļaujas atcelt šī dokumenta publicēšanu.',
   /** Appears after the not-authorized message. Lists the current roles. */
-  'insufficient-permissions-message.roles': undefined, // 'Your roles: <Roles/>'
+  'insufficient-permissions-message.roles': 'Jūsu lomas: <Roles/>',
   /** The title for the insufficient permissions message component */
-  'insufficient-permissions-message.title': undefined, // 'Insufficient permissions'
+  'insufficient-permissions-message.title': 'Nepietiekamas atļaujas',
 
   /** Unexpected error: `{{error}}` */
-  'member-field-error.unexpected-error': undefined, // 'Unexpected error: {{error}}'
+  'member-field-error.unexpected-error': 'Negaidīta kļūda: {{error}}',
 
   /** Button label for "Create new document" button */
-  'new-document.button': undefined, // 'Create'
+  'new-document.button': 'Izveidot',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are templates/types available for creation
    */
-  'new-document.create-new-document-label': undefined, // 'New document…'
+  'new-document.create-new-document-label': 'Jauns dokuments…',
   /** Tooltip message for add document button when the selected perspective is published  */
-  'new-document.disabled-published.tooltip': undefined, // 'You cannot create new published documents'
+  'new-document.disabled-published.tooltip': 'Jūs nevarat izveidot jaunus publicētus dokumentus',
   /** Tooltip message for add document button when the selected perspective is for inactive release */
-  'new-document.disabled-release.tooltip': undefined, // 'You cannot add documents to this release'
+  'new-document.disabled-release.tooltip': 'Jūs nevarat pievienot dokumentus šai laidienai',
   /** Placeholder for the "filter" input within the new document menu */
-  'new-document.filter-placeholder': undefined, // 'Search document types'
+  'new-document.filter-placeholder': 'Meklēt dokumentu tipus',
   /** Loading indicator text within the new document menu */
-  'new-document.loading': undefined, // 'Loading…'
+  'new-document.loading': 'Ielādē…',
   /** Accessibility label for the list displaying options in the new document menu */
-  'new-document.new-document-aria-label': undefined, // 'New document'
+  'new-document.new-document-aria-label': 'Jauns dokuments',
   /** Message for when there are no document type options in the new document menu */
-  'new-document.no-document-types-found': undefined, // 'No document types found'
+  'new-document.no-document-types-found': 'Nav atrasti dokumentu tipi',
   /**
    * Tooltip message displayed when hovering/activating the "Create new document" action,
    * when there are no templates/types to create from
    */
-  'new-document.no-document-types-label': undefined, // 'No document types'
+  'new-document.no-document-types-label': 'Nav dokumentu tipu',
   /** Message for when no results are found for a specific search query in the new document menu */
-  'new-document.no-results': undefined, // 'No results for <strong>{{searchQuery}}</strong>'
+  'new-document.no-results': 'Nav rezultātu priekš <strong>{{searchQuery}}</strong>',
   /** Aria label for the button that opens the "Create new document" popover/dialog */
-  'new-document.open-dialog-aria-label': undefined, // 'Create new document'
+  'new-document.open-dialog-aria-label': 'Izveidot jaunu dokumentu',
   /** Title for "Create new document" dialog */
-  'new-document.title': undefined, // 'Create new document'
+  'new-document.title': 'Izveidot jaunu dokumentu',
 
   /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Push to reload'
+  'package-version.new-package-available.reload-button': 'Nospiediet, lai pārlādētu',
   /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio is ready to update!'
+  'package-version.new-package-available.title': 'Sanity Studio ir gatavs atjauninājumam!',
 
   /** Label for action to invite members to the current studio project */
-  'presence.action.manage-members': undefined, // 'Invite members'
+  'presence.action.manage-members': 'Uzaicināt dalībniekus',
   /** Accessibility label for presence menu button */
-  'presence.aria-label': undefined, // 'Global presence'
+  'presence.aria-label': 'Globālā klātbūtne',
   /** Message description for when no one else is currently present */
-  'presence.no-one-else-description': undefined, // 'Invite people to the project to see their online status.'
+  'presence.no-one-else-description':
+    'Uzaiciniet cilvēkus uz projektu, lai redzētu viņu tiešsaistes statusu.',
   /** Message title for when no one else is currently present */
-  'presence.no-one-else-title': undefined, // 'No one else is here'
+  'presence.no-one-else-title': 'Te neviena cita nav',
   /** Message for when a user is not in a document (displayed in the global presence menu) */
-  'presence.not-in-a-document': undefined, // 'Not in a document'
+  'presence.not-in-a-document': 'Nav dokumentā',
   /** Tooltip content text for presence menu button */
-  'presence.tooltip-content': undefined, // 'Who is here'
+  'presence.tooltip-content': 'Kas ir šeit',
 
   /** Fallback title shown when a preview does not provide a title */
-  'preview.default.title-fallback': undefined, // 'Untitled'
+  'preview.default.title-fallback': 'Bez nosaukuma',
   /** Fallback preview value for types that have "no value" (eg null, undefined) */
-  'preview.fallback.no-value': undefined, // '(no value)'
+  'preview.fallback.no-value': '(nav vērtības)',
   /** Alternative text for image being shown while image is being uploaded, in previews */
-  'preview.image.file-is-being-uploaded.alt-text': undefined, // 'The image currently being uploaded'
+  'preview.image.file-is-being-uploaded.alt-text': 'Attēls, kas pašlaik tiek augšupielādēts',
 
   /* Relative time, just now */
-  'relative-time.just-now': undefined, // 'just now'
+  'relative-time.just-now': 'tieši tagad',
 
   /** Action message to add document to new release */
-  'release.action.add-to-new-release': undefined, // 'Add to release'
+  'release.action.add-to-new-release': 'Pievienot izlaidumam',
   /** Action message to add document to release */
-  'release.action.add-to-release': undefined, // 'Add to {{title}}'
+  'release.action.add-to-release': 'Pievienot {{title}}',
   /** Action message for when document is already in release  */
-  'release.action.already-in-release': undefined, // 'Already in release {{title}}'
+  'release.action.already-in-release': 'Jau ir izlaidumā {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
-  'release.action.copy-to': undefined, // 'Copy version to'
+  'release.action.copy-to': 'Kopēt versiju uz',
   /** Action message for creating new releases */
-  'release.action.create-new': undefined, // 'New release'
+  'release.action.create-new': 'Jauns izlaidums',
   /** Action message for when document is already in release  */
-  'release.action.discard-version': undefined, // 'Discard version'
+  'release.action.discard-version': 'Atmest versiju',
   /** Description for toast when version discarding failed */
-  'release.action.discard-version.failure': undefined, // 'Failed to discard version'
+  'release.action.discard-version.failure': 'Neizdevās atmest versiju',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': undefined, // 'New Release'
+  'release.action.new-release': 'Jauns izlaidums',
   /** Tooltip message for not having permissions for creating new releases */
-  'release.action.permission.error': undefined, // 'You do not have permission to perform this action'
+  'release.action.permission.error': 'Jums nav atļaujas veikt šo darbību',
   /** Error message for when a version is set to be unpublished */
-  'release.action.unpublish-version.failure': undefined, // 'Failed to set version to be unpublished on release'
+  'release.action.unpublish-version.failure': 'Neizdevās iestatīt versiju kā nepublicētu izlaidumā',
   /** Action message for when a version is set to be unpublished successfully */
-  'release.action.unpublish-version.success': undefined, // 'Successfully set <strong>{{title}}</strong> to be unpublished on release'
+  'release.action.unpublish-version.success':
+    'Veiksmīgi iestatīts <strong>{{title}}</strong> kā nepublicēts izlaidumā',
   /** Action message for when the view release is pressed */
-  'release.action.view-release': undefined, // 'View release'
+  'release.action.view-release': 'Skatīt izlaidumu',
   /** Label for banner when release is scheduled */
-  'release.banner.scheduled-for-publishing-on': undefined, // 'Scheduled to be published on {{date}}'
+  'release.banner.scheduled-for-publishing-on': 'Ieplānots publicēšanai {{date}}',
   /** Label for Draft chip in document header */
-  'release.chip.draft': undefined, // 'Draft'
+  'release.chip.draft': 'Melnraksts',
   /** Label for Draft chip in global header */
-  'release.chip.global.drafts': undefined, // 'Drafts'
+  'release.chip.global.drafts': 'Melnraksti',
   /** Label for Published chip in document header */
-  'release.chip.published': undefined, // 'Published'
+  'release.chip.published': 'Publicēts',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Šis laidienājums ir arhivēts un to nevar rediģēt.',
   /** Label for tooltip in chip with the created date */
-  'release.chip.tooltip.created-date': undefined, // 'Created {{date}}'
+  'release.chip.tooltip.created-date': 'Izveidots {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
-  'release.chip.tooltip.draft-disabled.live-edit': undefined, // 'This document is in live edit mode, drafts are disabled'
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Šis dokuments ir tiešās rediģēšanas režīmā, melnraksti ir atspējoti',
   /** Label for tooltip in chip with the lasted edited date */
-  'release.chip.tooltip.edited-date': undefined, // 'Edited {{date}}'
+  'release.chip.tooltip.edited-date': 'Rediģēts {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
-  'release.chip.tooltip.intended-for-date': undefined, // 'Intended for {{date}}'
+  'release.chip.tooltip.intended-for-date': 'Iecerēts {{date}}',
   /** Label for tooltip in chip when there is no recent draft edits */
-  'release.chip.tooltip.no-edits': undefined, // 'No edits'
+  'release.chip.tooltip.no-edits': 'Nav rediģējumu',
   /** Label for tooltip in chip when document isn't published */
-  'release.chip.tooltip.not-published': undefined, // 'Not published'
+  'release.chip.tooltip.not-published': 'Nav publicēts',
   /** Label for tooltip in chip with the published date */
-  'release.chip.tooltip.published-date': undefined, // 'Published {{date}}'
+  'release.chip.tooltip.published-date': 'Publicēts {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
-  'release.chip.tooltip.scheduled-for-date': undefined, // 'Scheduled for {{date}}'
+  'release.chip.tooltip.scheduled-for-date': 'Ieplānots {{date}}',
   /** Label for tooltip in scheduled chip without a known date */
-  'release.chip.tooltip.unknown-date': undefined, // 'Unknown date'
+  'release.chip.tooltip.unknown-date': 'Nezināms datums',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': undefined, // 'This release has been deleted'
+  'release.deleted-tooltip': 'Šis laidienājums ir izdzēsts',
   /** Title for copying version to a new release dialog */
-  'release.dialog.copy-to-release.title': undefined, // 'Copy version to new release'
+  'release.dialog.copy-to-release.title': 'Kopēt versiju uz jaunu laidienājumu',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Izveidot laidienājumu',
   /** Title for creating releases dialog */
-  'release.dialog.create.title': undefined, // 'New release'
+  'release.dialog.create.title': 'Jauns laidienājums',
   /** Label for description in tooltip to explain release types */
-  'release.dialog.tooltip.description': undefined, // 'The intended release time is used to create better previews and hints about whether documents conflict.'
+  'release.dialog.tooltip.description':
+    'Plānotais laidienājuma laiks tiek izmantots, lai izveidotu labākus priekšskatījumus un norādes par to, vai dokumenti konfliktē.',
   /** Label for noting that a release time is not final */
-  'release.dialog.tooltip.note': undefined, // 'You can always change it later.'
+  'release.dialog.tooltip.note': 'Jūs vienmēr to varat vēlāk mainīt.',
   /** Title for tooltip to explain release time */
-  'release.dialog.tooltip.title': undefined, // 'Approximate time of release'
+  'release.dialog.tooltip.title': 'Aptuvenais laidienājuma laiks',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholder-describe-release': undefined, // 'Describe the release…'
+  'release.form.placeholder-describe-release': 'Aprakstiet laidienājumu…',
   /** Tooltip for button to hide release visibility */
-  'release.layer.hide': undefined, // 'Hide release'
+  'release.layer.hide': 'Slēpt laidienājumu',
   /** Label for draft perspective in navbar */
-  'release.navbar.drafts': undefined, // 'Drafts'
+  'release.navbar.drafts': 'Melnraksti',
   /** Label for published releases in navbar */
-  'release.navbar.published': undefined, // 'Published'
+  'release.navbar.published': 'Publicēti',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': undefined, // 'Releases'
+  'release.navbar.tooltip': 'Laidienājumi',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': undefined, // 'Untitled release'
+  'release.placeholder-untitled-release': 'Nenosaukts laidienājums',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Šis laidienājums ir atsprausts',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.title': undefined, // 'The \'{{title}}\' release was archived'
+  'release.toast.archived-release.title': "Laidienājums '{{title}}' tika arhivēts",
   /** The toast title that will be shown the creating a release fails */
-  'release.toast.create-release-error.title': undefined, // 'Failed to create release'
+  'release.toast.create-release-error.title': 'Neizdevās izveidot laidieni',
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.not-found-release.title': undefined, // 'The \'{{title}}\' release could not be found'
+  'release.toast.not-found-release.title': "Laidiens '{{title}}' nav atrasts",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Šis laidienis ir atsprausts',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "Laidiens '{{title}}' ir publicēts",
   /** Label for when a version of a document has already been added to the release */
-  'release.tooltip.already-added': undefined, // 'A version of this document has already been added'
+  'release.tooltip.already-added': 'Šim dokumentam jau ir pievienota versija',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
-  'release.tooltip.locked': undefined, // 'This release has been scheduled. Unsechedule it to add more documents.'
+  'release.tooltip.locked':
+    'Šis laidienis ir ieplānots. Atceliet ieplānošanu, lai pievienotu vairāk dokumentu.',
   /** Label for the release type 'as soon as possible' */
-  'release.type.asap': undefined, // 'ASAP'
+  'release.type.asap': 'Cik ātri vien iespējams',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
-  'release.type.scheduled': undefined, // 'At time'
+  'release.type.scheduled': 'Noteiktā laikā',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': undefined, // 'Undecided'
+  'release.type.undecided': 'Nenoteikts',
   /** Tooltip for the dropdown to show all versions of document */
-  'release.version-list.tooltip': undefined, // 'See all document versions'
+  'release.version-list.tooltip': 'Skatīt visas dokumenta versijas',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
-  'search.action-open-aria-label': undefined, // 'Open search'
+  'search.action-open-aria-label': 'Atvērt meklēšanu',
   /** Action label for adding a search filter */
-  'search.action.add-filter': undefined, // 'Add filter'
+  'search.action.add-filter': 'Pievienot filtru',
   /** Action label for clearing search filters */
-  'search.action.clear-filters': undefined, // 'Clear filters'
+  'search.action.clear-filters': 'Notīrīt filtrus',
   /** Label for action to clear recent searches */
-  'search.action.clear-recent-searches': undefined, // 'Clear recent searches'
+  'search.action.clear-recent-searches': 'Notīrīt nesenās meklēšanas',
   /** Accessibility label for action to clear all currently applied document type filters */
-  'search.action.clear-type-filters-aria-label': undefined, // 'Clear checked filters'
+  'search.action.clear-type-filters-aria-label': 'Notīrīt izvēlētos filtrus',
   /** Label for action to clear all currently applied document type filters */
-  'search.action.clear-type-filters-label': undefined, // 'Clear'
+  'search.action.clear-type-filters-label': 'Notīrīt',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to close the search */
-  'search.action.close-search-aria-label': undefined, // 'Close search'
+  'search.action.close-search-aria-label': 'Aizvērt meklēšanu',
   /** Accessibility label for filtering by document type */
-  'search.action.filter-by-document-type-aria-label': undefined, // 'Filter by document type'
+  'search.action.filter-by-document-type-aria-label': 'Filtrēt pēc dokumenta tipa',
   /** Accessibility action label for removing an already applied search filter */
-  'search.action.remove-filter-aria-label': undefined, // 'Remove filter'
+  'search.action.remove-filter-aria-label': 'Noņemt filtru',
   /**
    * Text displayed when either no document type(s) have been selected, or we need a fallback,
    * eg "Search for all types".
    */
-  'search.action.search-all-types': undefined, // 'Search all documents'
+  'search.action.search-all-types': 'Meklēt visus dokumentus',
   /**
    * Text displayed when we are able to determine one or more document types that will be used for
    * searching, and can fit within the space assigned by the design.
    */
-  'search.action.search-specific-types': undefined, // 'Search for {{types, list}}'
+  'search.action.search-specific-types': 'Meklēt {{types, list}}',
   /** Dialog title for action to select an asset of unknown type */
-  'search.action.select-asset': undefined, // 'Select asset'
+  'search.action.select-asset': 'Izvēlēties aktīvu',
   /** Dialog title for action to select a file asset */
-  'search.action.select-asset_file': undefined, // 'Select file'
+  'search.action.select-asset_file': 'Izvēlēties failu',
   /** Dialog title for action to select an image asset */
-  'search.action.select-asset_image': undefined, // 'Select image'
+  'search.action.select-asset_image': 'Izvēlēties attēlu',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to hide filters */
-  'search.action.toggle-filters-aria-label_hide': undefined, // 'Hide filters'
+  'search.action.toggle-filters-aria-label_hide': 'Slēpt filtrus',
   /** Accessibility label for when the search is full screen (on narrow screens) and you want to show filters */
-  'search.action.toggle-filters-aria-label_show': undefined, // 'Show filters'
+  'search.action.toggle-filters-aria-label_show': 'Rādīt filtrus',
   /** Label for when the search is full screen (on narrow screens) and you want to hide filters */
-  'search.action.toggle-filters-label_hide': undefined, // 'Hide filters'
+  'search.action.toggle-filters-label_hide': 'Slēpt filtrus',
   /** Label for when the search is full screen (on narrow screens) and you want to show filters */
-  'search.action.toggle-filters-label_show': undefined, // 'Show filters'
+  'search.action.toggle-filters-label_show': 'Rādīt filtrus',
   /** Tooltip text for the global search button */
-  'search.button.tooltip': undefined, // 'Search'
+  'search.button.tooltip': 'Meklēt',
   /**
    * A list of provided types (use `list` formatter preferably).
    */
-  'search.document-type-list': undefined, // '{{types, list}}'
+  'search.document-type-list': '{{types, list}}',
   /**
    * In the context of a list of document types - no filtering selection has been done,
    * thus the default is "all types".
    */
-  'search.document-type-list-all-types': undefined, // 'All types'
+  'search.document-type-list-all-types': 'Visi tipi',
   /** Accessibility label for list displaying the available document types */
-  'search.document-types-aria-label': undefined, // 'Document types'
+  'search.document-types-aria-label': 'Dokumentu tipi',
   /** Label for when no document types matching the filter are found */
-  'search.document-types-no-matches-found': undefined, // 'No matches for {{filter}}'
+  'search.document-types-no-matches-found': 'Nav atbilstību {{filter}}',
   /** Description for error when a filter cannot be displayed, describes that you should check the schema */
-  'search.error.display-filter-description': undefined, // 'This may indicate invalid options defined in your schema.'
+  'search.error.display-filter-description':
+    'Tas var norādīt uz nederīgām opcijām, kas definētas jūsu shēmā.',
   /** Title for error when a filter cannot be displayed (mainly a developer-oriented error) */
-  'search.error.display-filter-title': undefined, // 'An error occurred whilst displaying this filter.'
+  'search.error.display-filter-title': 'Filtru attēlojot radās kļūda.',
   /** Description for error when no valid asset source is found, describes that you should check the the current studio config */
-  'search.error.no-valid-asset-source-check-config-description': undefined, // 'Please ensure it\'s enabled in your studio configuration file.'
+  'search.error.no-valid-asset-source-check-config-description':
+    'Lūdzu, pārliecinieties, ka tas ir iespējots jūsu studijas konfigurācijas failā.',
   /** Description for error when no valid asset source is found, describes that only the default asset is supported */
-  'search.error.no-valid-asset-source-only-default-description': undefined, // 'Currently, only the default asset source is supported.'
+  'search.error.no-valid-asset-source-only-default-description':
+    'Pašlaik tiek atbalstīts tikai noklusējuma aktīvu avots.',
   /** Title for error when no valid asset sources found */
-  'search.error.no-valid-asset-source-title': undefined, // 'No valid asset sources found.'
+  'search.error.no-valid-asset-source-title': 'Nav atrasti derīgi aktīvu avoti.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
-  'search.error.unspecified-error-help-description': undefined, // 'Please try again or check your connection'
+  'search.error.unspecified-error-help-description':
+    'Lūdzu, mēģiniet vēlreiz vai pārbaudiet savienojumu',
   /** Title label for when search returned an error that we are not able to describe in detail */
-  'search.error.unspecified-error-title': undefined, // 'Something went wrong while searching'
+  'search.error.unspecified-error-title': 'Meklējot notika kaut kas neparedzēts',
   /**
    * Label for "All fields", a label that appears above the list of available fields when filtering.
    * If one or more document type has been chosen as filter, this label is replaced with a group of
    * fields per selected document type
    */
-  'search.filter-all-fields-header': undefined, // 'All fields'
+  'search.filter-all-fields-header': 'Visi lauki',
   /** Label for the action of changing from one file to a different file in asset search filter */
-  'search.filter-asset-change_file': undefined, // 'Change file'
+  'search.filter-asset-change_file': 'Mainīt failu',
   /** Label for the action of changing from one image to a different image in asset search filter */
-  'search.filter-asset-change_image': undefined, // 'Change image'
+  'search.filter-asset-change_image': 'Mainīt attēlu',
   /** Label for the action of clearing the currently selected asset in an image/file filter */
-  'search.filter-asset-clear': undefined, // 'Clear'
+  'search.filter-asset-clear': 'Notīrīt',
   /** Label for the action of selecting a file in asset search filter */
-  'search.filter-asset-select_file': undefined, // 'Select file'
+  'search.filter-asset-select_file': 'Izvēlēties failu',
   /** Label for the action of selecting an image in asset search filter */
-  'search.filter-asset-select_image': undefined, // 'Select image'
+  'search.filter-asset-select_image': 'Izvēlēties attēlu',
   /** Label for boolean filter - false */
-  'search.filter-boolean-false': undefined, // 'False'
+  'search.filter-boolean-false': 'Nepatiesi',
   /** Label for boolean filter - true */
-  'search.filter-boolean-true': undefined, // 'True'
+  'search.filter-boolean-true': 'Patiesi',
   /** Accessibility label for list that lets you filter fields by title, when adding a new filter in search */
-  'search.filter-by-title-aria-label': undefined, // 'Filter by title'
+  'search.filter-by-title-aria-label': 'Filtrēt pēc nosaukuma',
   /** Accessibility label for date filter input */
-  'search.filter-date-aria-label': undefined, // 'Date'
+  'search.filter-date-aria-label': 'Datums',
   /** Accessibility label for selecting end date on the date range search filter */
-  'search.filter-date-range-end-date-aria-label': undefined, // 'End date'
+  'search.filter-date-range-end-date-aria-label': 'Beigu datums',
   /** Accessibility label for selecting start date on the date range search filter */
-  'search.filter-date-range-start-date-aria-label': undefined, // 'Start date'
+  'search.filter-date-range-start-date-aria-label': 'Sākuma datums',
   /**
    * Label for "Days"/"Months"/"Years" when selecting it as unit in "X days ago" search filter.
    * Capitalized, as it would be listed in a dropdown.
    */
-  'search.filter-date-unit_days': undefined, // 'Days'
-  'search.filter-date-unit_months': undefined, // 'Months'
-  'search.filter-date-unit_years': undefined, // 'Years'
+  'search.filter-date-unit_days': 'Dienas',
+  'search.filter-date-unit_months': 'Mēneši',
+  'search.filter-date-unit_years': 'Gadi',
   /** Accessibility label for selecting the unit (day/month/year) when adding "X days ago" search filter */
-  'search.filter-date-unit-aria-label': undefined, // 'Select unit'
+  'search.filter-date-unit-aria-label': 'Izvēlēties vienību',
   /** Accessibility label for the input value (days/months/years) when adding "X days ago" search filter */
-  'search.filter-date-value-aria-label': undefined, // 'Unit value'
+  'search.filter-date-value-aria-label': 'Vienības vērtība',
   /** Label for "field description" shown in tooltip when navigating list of possible fields to filter */
-  'search.filter-field-tooltip-description': undefined, // 'Field description'
+  'search.filter-field-tooltip-description': 'Lauka apraksts',
   /** Label for "field name" shown in tooltip when navigating list of possible fields to filter */
-  'search.filter-field-tooltip-name': undefined, // 'Field name'
+  'search.filter-field-tooltip-name': 'Lauka nosaukums',
   /** Label for "Used in document types", a list of the document types a field appears in. Shown in tooltip when navigating list of possible fields to filter */
-  'search.filter-field-tooltip-used-in-document-types': undefined, // 'Used in document types'
+  'search.filter-field-tooltip-used-in-document-types': 'Izmantots dokumentu tipiem',
   /** Label for when no fields/filters are found for the given term */
-  'search.filter-no-matches-found': undefined, // 'No matches for {{filter}}'
+  'search.filter-no-matches-found': 'Nav atbilstību {{filter}}',
   /** Placeholder value for maximum numeric value filter */
-  'search.filter-number-max-value-placeholder': undefined, // 'Max value'
+  'search.filter-number-max-value-placeholder': 'Maksimālā vērtība',
   /** Placeholder value for minimum numeric value filter */
-  'search.filter-number-min-value-placeholder': undefined, // 'Min value'
+  'search.filter-number-min-value-placeholder': 'Minimālā vērtība',
   /** Placeholder value for the number filter */
-  'search.filter-number-value-placeholder': undefined, // 'Value'
+  'search.filter-number-value-placeholder': 'Vērtība',
   /** Placeholder for the "Filter" input, when narrowing possible fields/filters */
-  'search.filter-placeholder': undefined, // 'Filter'
+  'search.filter-placeholder': 'Filtrs',
   /** Label for the action of clearing the currently selected document in a reference filter */
-  'search.filter-reference-clear': undefined, // 'Clear'
+  'search.filter-reference-clear': 'Notīrīt',
   /**
    * Label for "shared fields", a label that appears above a list of fields that all filtered types
    * have in common, when adding a new filter. For instance, if "book" and "employee" both have a
    * "title" field, this field would be listed under "shared fields".
    * */
-  'search.filter-shared-fields-header': undefined, // 'Shared fields'
+  'search.filter-shared-fields-header': 'Kopīgie lauki',
   /** Placeholder value for the string filter */
-  'search.filter-string-value-placeholder': undefined, // 'Value'
+  'search.filter-string-value-placeholder': 'Vērtība',
   /** Label/placeholder prompting user to select one of the predefined, allowed values for a string field */
-  'search.filter-string-value-select-predefined-value': undefined, // 'Select…'
+  'search.filter-string-value-select-predefined-value': 'Izvēlēties…',
   /** Accessibility label for the "Filters" list, that is shown when using "Add filter" in search (singular) */
-  'search.filters-aria-label_one': undefined, // 'Filter'
+  'search.filters-aria-label_one': 'Filtrs',
   /** Accessibility label for the "Filters" list, that is shown when using "Add filter" in search (plural) */
-  'search.filters-aria-label_other': undefined, // 'Filters'
+  'search.filters-aria-label_other': 'Filtri',
   /** Label for instructions on how to use the search - displayed when no recent searches are available */
-  'search.instructions': undefined, // 'Use <ControlsIcon/> to refine your search'
+  'search.instructions': 'Izmantojiet <ControlsIcon/>, lai precizētu meklēšanu',
   /** Helpful description for when no search results are found */
-  'search.no-results-help-description': undefined, // 'Try another keyword or adjust your filters'
+  'search.no-results-help-description': 'Mēģiniet citu atslēgvārdu vai pielāgojiet savus filtrus',
   /** Title label for when no search results are found */
-  'search.no-results-title': undefined, // 'No results found'
+  'search.no-results-title': 'Nav atrasts neviens rezultāts',
   /**
    * Individual search operators.
    *
@@ -1365,373 +1497,439 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has less than or equal to <Value/>`
    **/
   /* Array should have a count the given filter value */
-  'search.operator.array-count-equal.description_one': undefined, // '<Field/> <Operator>has</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-equal.description_other': undefined, // '<Field/> <Operator>has</Operator> <Value>{{count}} items</Value>'
-  'search.operator.array-count-equal.name': undefined, // 'quantity is'
+  'search.operator.array-count-equal.description_one':
+    '<Field/> <Operator>ir</Operator> <Value>{{count}} vienums</Value>',
+  'search.operator.array-count-equal.description_other':
+    '<Field/> <Operator>ir</Operator> <Value>{{count}} vienības</Value>',
+  'search.operator.array-count-equal.name': 'daudzums ir',
   /* Array should have a count greater than given filter value */
-  'search.operator.array-count-gt.description_one': undefined, // '<Field/> <Operator>has ></Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-gt.description_other': undefined, // '<Field/> <Operator>has ></Operator> <Value>{{count}} items</Value>'
-  'search.operator.array-count-gt.name': undefined, // 'quantity greater than'
+  'search.operator.array-count-gt.description_one':
+    '<Field/> <Operator>ir ></Operator> <Value>{{count}} vienība</Value>',
+  'search.operator.array-count-gt.description_other':
+    '<Field/> <Operator>ir ></Operator> <Value>{{count}} vienības</Value>',
+  'search.operator.array-count-gt.name': 'daudzums lielāks nekā',
   /* Array should have a count greater than or equal to the given filter value */
-  'search.operator.array-count-gte.description_one': undefined, // '<Field/> <Operator>has ≥</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-gte.description_other': undefined, // '<Field/> <Operator>has ≥</Operator> <Value>{{count}} items</Value>'
-  'search.operator.array-count-gte.name': undefined, // 'quantity greater than or equal to'
+  'search.operator.array-count-gte.description_one':
+    '<Field/> <Operator>ir ≥</Operator> <Value>{{count}} vienība</Value>',
+  'search.operator.array-count-gte.description_other':
+    '<Field/> <Operator>ir ≥</Operator> <Value>{{count}} vienības</Value>',
+  'search.operator.array-count-gte.name': 'daudzums lielāks vai vienāds ar',
   /* Array should have a count less than given filter value */
-  'search.operator.array-count-lt.description_one': undefined, // '<Field/> <Operator>has <</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-lt.description_other': undefined, // '<Field/> <Operator>has <</Operator> <Value>{{count}} items</Value>'
-  'search.operator.array-count-lt.name': undefined, // 'quantity less than'
+  'search.operator.array-count-lt.description_one':
+    '<Field/> <Operator>ir <</Operator> <Value>{{count}} vienība</Value>',
+  'search.operator.array-count-lt.description_other':
+    '<Field/> <Operator>ir <</Operator> <Value>{{count}} vienības</Value>',
+  'search.operator.array-count-lt.name': 'daudzums mazāks nekā',
   /* Array should have a count less than or equal to the given filter value */
-  'search.operator.array-count-lte.description_one': undefined, // '<Field/> <Operator>has ≤</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-lte.description_other': undefined, // '<Field/> <Operator>has ≤</Operator> <Value>{{count}} items</Value>'
-  'search.operator.array-count-lte.name': undefined, // 'quantity less than or equal to'
+  'search.operator.array-count-lte.description_one':
+    '<Field/> <Operator>ir ≤</Operator> <Value>{{count}} vienība</Value>',
+  'search.operator.array-count-lte.description_other':
+    '<Field/> <Operator>ir ≤</Operator> <Value>{{count}} vienības</Value>',
+  'search.operator.array-count-lte.name': 'daudzums mazāks vai vienāds ar',
   /* Array should have a count that is not equal to the given filter value */
-  'search.operator.array-count-not-equal.description_one': undefined, // '<Field/> <Operator>does not have</Operator> <Value>{{count}} item</Value>'
-  'search.operator.array-count-not-equal.description_other': undefined, // '<Field/> <Operator>does not have</Operator> <Value>{{count}} items</Value>'
-  'search.operator.array-count-not-equal.name': undefined, // 'quantity is not'
+  'search.operator.array-count-not-equal.description_one':
+    '<Field/> <Operator>nav</Operator> <Value>{{count}} vienība</Value>',
+  'search.operator.array-count-not-equal.description_other':
+    '<Field/> <Operator>nav</Operator> <Value>{{count}} vienības</Value>',
+  'search.operator.array-count-not-equal.name': 'daudzums nav',
   /**
    * Array should have a count within the range of given filter values.
    * Gets passed `{{from}}` and `{{to}}` values.
    **/
-  'search.operator.array-count-range.description': undefined, // '<Field/> <Operator>has between</Operator> <Value>{{from}} → {{to}} items</Value>'
-  'search.operator.array-count-range.name': undefined, // 'quantity is between'
+  'search.operator.array-count-range.description':
+    '<Field/> <Operator>ir starp</Operator> <Value>{{from}} → {{to}} vienībām</Value>',
+  'search.operator.array-count-range.name': 'daudzums ir starp',
   /* Array should include the given value */
-  'search.operator.array-list-includes.description': undefined, // '<Field/> <Operator>includes</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-list-includes.name': undefined, // 'includes'
+  'search.operator.array-list-includes.description':
+    '<Field/> <Operator>iekļauj</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-list-includes.name': 'iekļauj',
   /* Array should not include the given value */
-  'search.operator.array-list-not-includes.description': undefined, // '<Field/> <Operator>does not include</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-list-not-includes.name': undefined, // 'does not include'
+  'search.operator.array-list-not-includes.description':
+    '<Field/> <Operator>neiekļauj</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-list-not-includes.name': 'neiekļauj',
   /* Array should include the given reference */
-  'search.operator.array-reference-includes.description': undefined, // '<Field/> <Operator>includes</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-reference-includes.name': undefined, // 'includes'
+  'search.operator.array-reference-includes.description':
+    '<Field/> <Operator>iekļauj</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-reference-includes.name': 'iekļauj',
   /* Array should not include the given reference */
-  'search.operator.array-reference-not-includes.description': undefined, // '<Field/> <Operator>does not include</Operator> <Value>{{value}}</Value>'
-  'search.operator.array-reference-not-includes.name': undefined, // 'does not include'
+  'search.operator.array-reference-not-includes.description':
+    '<Field/> <Operator>neietver</Operator> <Value>{{value}}</Value>',
+  'search.operator.array-reference-not-includes.name': 'neietver',
   /* Asset (file) should be the selected asset */
-  'search.operator.asset-file-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-file-equal.name': undefined, // 'is'
+  'search.operator.asset-file-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-file-equal.name': 'ir',
   /* Asset (file) should not be the selected asset */
-  'search.operator.asset-file-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-file-not-equal.name': undefined, // 'is not'
+  'search.operator.asset-file-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-file-not-equal.name': 'nav',
   /* Asset (image) should be the selected asset */
-  'search.operator.asset-image-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-image-equal.name': undefined, // 'is'
+  'search.operator.asset-image-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-image-equal.name': 'ir',
   /* Asset (image) should not be the selected asset */
-  'search.operator.asset-image-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.asset-image-not-equal.name': undefined, // 'is not'
+  'search.operator.asset-image-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.asset-image-not-equal.name': 'nav',
   /**
    * Boolean value should be the given filter value (true/false).
    * Context passed is `true` and `false`, allowing for more specific translations:
    * - `search.operator.boolean-equal.description_true`
    * - `search.operator.boolean-equal.description_false`
    */
-  'search.operator.boolean-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.boolean-equal.name': undefined, // 'is'
+  'search.operator.boolean-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.boolean-equal.name': 'ir',
   /* Date should be after (later than) given filter value */
-  'search.operator.date-after.description': undefined, // '<Field/> <Operator>is after</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-after.name': undefined, // 'after'
+  'search.operator.date-after.description':
+    '<Field/> <Operator>ir pēc</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-after.name': 'pēc',
   /* Date should be before (earlier than) given filter value */
-  'search.operator.date-before.description': undefined, // '<Field/> <Operator>is before</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-before.name': undefined, // 'before'
+  'search.operator.date-before.description':
+    '<Field/> <Operator>ir pirms</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-before.name': 'pirms',
   /* Date should be the given filter value */
-  'search.operator.date-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-equal.name': undefined, // 'is'
+  'search.operator.date-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-equal.name': 'ir',
   /* Date should be within the given filter value range (eg "within the last X days") */
-  'search.operator.date-last.description': undefined, // '<Field/> <Operator>is in the last</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-last.name': undefined, // 'last'
+  'search.operator.date-last.description':
+    '<Field/> <Operator>ir pēdējo</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-last.name': 'pēdējais',
   /* Date should not be the given filter value */
-  'search.operator.date-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-not-equal.name': undefined, // 'is not'
+  'search.operator.date-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-not-equal.name': 'nav',
   /* Date should be within the range of given filter values */
-  'search.operator.date-range.description': undefined, // '<Field/> <Operator>is between</Operator> <Value/>'
-  'search.operator.date-range.name': undefined, // 'is between'
+  'search.operator.date-range.description': '<Field/> <Operator>ir starp</Operator> <Value/>',
+  'search.operator.date-range.name': 'ir starp',
   /* Date and time should be after (later than) given filter value */
-  'search.operator.date-time-after.description': undefined, // '<Field/> <Operator>is after</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-after.name': undefined, // 'after'
+  'search.operator.date-time-after.description':
+    '<Field/> <Operator>ir pēc</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-after.name': 'pēc',
   /* Date and time should be before (earlier than) given filter value */
-  'search.operator.date-time-before.description': undefined, // '<Field/> <Operator>is before</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-before.name': undefined, // 'before'
+  'search.operator.date-time-before.description':
+    '<Field/> <Operator>ir pirms</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-before.name': 'pirms',
   /* Date and time should be the given filter value */
-  'search.operator.date-time-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-equal.name': undefined, // 'is'
+  'search.operator.date-time-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-equal.name': 'ir',
   /* Date and time should be within the given filter value range (eg "within the last X days") */
-  'search.operator.date-time-last.description': undefined, // '<Field/> <Operator>is in the last</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-last.name': undefined, // 'last'
+  'search.operator.date-time-last.description':
+    '<Field/> <Operator>ir pēdējo</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-last.name': 'pēdējais',
   /* Date and time should not be the given filter value */
-  'search.operator.date-time-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.date-time-not-equal.name': undefined, // 'is not'
+  'search.operator.date-time-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.date-time-not-equal.name': 'nav',
   /* Date and time should be within the range of given filter values */
-  'search.operator.date-time-range.description': undefined, // '<Field/> <Operator>is between</Operator> <Value/>'
-  'search.operator.date-time-range.name': undefined, // 'is between'
+  'search.operator.date-time-range.description': '<Field/> <Operator>ir starp</Operator> <Value/>',
+  'search.operator.date-time-range.name': 'ir starp',
   /* Value should be defined */
-  'search.operator.defined.description': undefined, // '<Field/> <Operator>is</Operator> <Value>not empty</Value>'
-  'search.operator.defined.name': undefined, // 'not empty'
+  'search.operator.defined.description':
+    '<Field/> <Operator>ir</Operator> <Value>nav tukšs</Value>',
+  'search.operator.defined.name': 'nav tukšs',
   /* Value should not be defined */
-  'search.operator.not-defined.description': undefined, // '<Field/> <Operator>is</Operator> <Value>empty</Value>'
-  'search.operator.not-defined.name': undefined, // 'empty'
+  'search.operator.not-defined.description':
+    '<Field/> <Operator>ir</Operator> <Value>tukšs</Value>',
+  'search.operator.not-defined.name': 'tukšs',
   /* Number should be the given filter value */
-  'search.operator.number-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-equal.name': undefined, // 'is'
+  'search.operator.number-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-equal.name': 'ir',
   /* Number should be greater than given filter value */
-  'search.operator.number-gt.description': undefined, // '<Field/> <Operator>></Operator> <Value>{{value}}</Value>'
-  'search.operator.number-gt.name': undefined, // 'greater than'
+  'search.operator.number-gt.description':
+    '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
+  'search.operator.number-gt.name': 'lielāks nekā',
   /* Number should be greater than or the given filter value */
-  'search.operator.number-gte.description': undefined, // '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-gte.name': undefined, // 'greater than or equal to'
+  'search.operator.number-gte.description':
+    '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-gte.name': 'lielāks vai vienāds ar',
   /* Number should be less than given filter value */
-  'search.operator.number-lt.description': undefined, // '<Field/> <Operator><</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-lt.name': undefined, // 'less than'
+  'search.operator.number-lt.description':
+    '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-lt.name': 'mazāks nekā',
   /* Number should be less than or the given filter value */
-  'search.operator.number-lte.description': undefined, // '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-lte.name': undefined, // 'less than or equal to'
+  'search.operator.number-lte.description':
+    '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-lte.name': 'mazāks vai vienāds ar',
   /* Number should not be the given filter value */
-  'search.operator.number-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.number-not-equal.name': undefined, // 'is not'
+  'search.operator.number-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.number-not-equal.name': 'nav',
   /* Number should be within the range of given filter values */
-  'search.operator.number-range.description': undefined, // '<Field/> <Operator>is between</Operator> <Value>{{from}} → {{to}}</Value>'
-  'search.operator.number-range.name': undefined, // 'is between'
+  'search.operator.number-range.description':
+    '<Field/> <Operator>ir starp</Operator> <Value>{{from}} → {{to}}</Value>',
+  'search.operator.number-range.name': 'ir starp',
   /* Portable Text should contain the given filter value */
-  'search.operator.portable-text-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-contains.name': undefined, // 'contains'
+  'search.operator.portable-text-contains.description':
+    '<Field/> <Operator>iekļauj</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-contains.name': 'iekļauj',
   /* Portable Text should be the given filter value */
-  'search.operator.portable-text-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-equal.name': undefined, // 'is'
+  'search.operator.portable-text-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-equal.name': 'ir',
   /* Portable Text should not contain the given filter value */
-  'search.operator.portable-text-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-not-contains.name': undefined, // 'does not contain'
+  'search.operator.portable-text-not-contains.description':
+    '<Field/> <Operator>neiekļauj</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-not-contains.name': 'neiekļauj',
   /* Portable Text should not be the given filter value */
-  'search.operator.portable-text-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.portable-text-not-equal.name': undefined, // 'is not'
+  'search.operator.portable-text-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.portable-text-not-equal.name': 'nav',
   /* References the given asset (file) */
-  'search.operator.reference-asset-file.description': undefined, // '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-asset-file.name': undefined, // 'file'
+  'search.operator.reference-asset-file.description':
+    '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-asset-file.name': 'fails',
   /* References the given asset (image) */
-  'search.operator.reference-asset-image.description': undefined, // '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-asset-image.name': undefined, // 'image'
+  'search.operator.reference-asset-image.description':
+    '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-asset-image.name': 'attēls',
   /* References the given document */
-  'search.operator.reference-document.description': undefined, // '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-document.name': undefined, // 'document'
+  'search.operator.reference-document.description':
+    '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-document.name': 'dokuments',
   /* Reference should be the given document */
-  'search.operator.reference-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-equal.name': undefined, // 'is'
+  'search.operator.reference-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-equal.name': 'ir',
   /* Reference should not be the given document */
-  'search.operator.reference-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.reference-not-equal.name': undefined, // 'is not'
+  'search.operator.reference-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.reference-not-equal.name': 'nav',
   /* Slug contains the given value */
-  'search.operator.slug-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-contains.name': undefined, // 'contains'
+  'search.operator.slug-contains.description':
+    '<Field/> <Operator>iekļauj</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-contains.name': 'iekļauj',
   /* Slug equals the given filter value */
-  'search.operator.slug-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-equal.name': undefined, // 'is'
+  'search.operator.slug-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-equal.name': 'ir',
   /* Slug does not contain the given value */
-  'search.operator.slug-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-not-contains.name': undefined, // 'does not contain'
+  'search.operator.slug-not-contains.description':
+    '<Field/> <Operator>nesatur</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-not-contains.name': 'nesatur',
   /* Slug does not equal the given filter value */
-  'search.operator.slug-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.slug-not-equal.name': undefined, // 'is not'
+  'search.operator.slug-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.slug-not-equal.name': 'nav',
   /* String contains the given filter value */
-  'search.operator.string-contains.description': undefined, // '<Field/> <Operator>contains</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-contains.name': undefined, // 'contains'
+  'search.operator.string-contains.description':
+    '<Field/> <Operator>satur</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-contains.name': 'satur',
   /* String equals the given filter value */
-  'search.operator.string-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-equal.name': undefined, // 'is'
+  'search.operator.string-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-equal.name': 'ir',
   /* String equals one of the predefined allowed values */
-  'search.operator.string-list-equal.description': undefined, // '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-list-equal.name': undefined, // 'is'
+  'search.operator.string-list-equal.description':
+    '<Field/> <Operator>ir</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-list-equal.name': 'ir',
   /* String does not equal one of the predefined allowed values */
-  'search.operator.string-list-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-list-not-equal.name': undefined, // 'is not'
+  'search.operator.string-list-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-list-not-equal.name': 'nav',
   /* String does not contain the given filter value */
-  'search.operator.string-not-contains.description': undefined, // '<Field/> <Operator>does not contain</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-not-contains.name': undefined, // 'does not contain'
+  'search.operator.string-not-contains.description':
+    '<Field/> <Operator>nesatur</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-not-contains.name': 'nesatur',
   /* String does not equal the given filter value */
-  'search.operator.string-not-equal.description': undefined, // '<Field/> <Operator>is not</Operator> <Value>{{value}}</Value>'
-  'search.operator.string-not-equal.name': undefined, // 'is not'
+  'search.operator.string-not-equal.description':
+    '<Field/> <Operator>nav</Operator> <Value>{{value}}</Value>',
+  'search.operator.string-not-equal.name': 'nav',
   /** Label for the "Best match" search ordering type */
-  'search.ordering.best-match-label': undefined, // 'Best match'
+  'search.ordering.best-match-label': 'Labākā atbilstība',
   /** Label for the "Created: Oldest first" search ordering type */
-  'search.ordering.created-ascending-label': undefined, // 'Created: Oldest first'
+  'search.ordering.created-ascending-label': 'Izveidots: Vecākie vispirms',
   /** Label for the "Created: Newest first" search ordering type */
-  'search.ordering.created-descending-label': undefined, // 'Created: Newest first'
+  'search.ordering.created-descending-label': 'Izveidots: Jaunākie vispirms',
   /** Label for the "Updated: Oldest first" search ordering type */
-  'search.ordering.updated-ascending-label': undefined, // 'Updated: Oldest first'
+  'search.ordering.updated-ascending-label': 'Atjaunots: Vecākie vispirms',
   /** Label for the "Updated: Newest first" search ordering type */
-  'search.ordering.updated-descending-label': undefined, // 'Updated: Newest first'
+  'search.ordering.updated-descending-label': 'Atjaunots: Jaunākie vispirms',
   /** Placeholder text for the global search input field */
-  'search.placeholder': undefined, // 'Search'
+  'search.placeholder': 'Meklēt',
   /** Accessibility label for the recent searches section, shown when no valid search terms has been given */
-  'search.recent-searches-aria-label': undefined, // 'Recent searches'
+  'search.recent-searches-aria-label': 'Nesenās meklēšanas',
   /** Label/heading shown for the recent searches section */
-  'search.recent-searches-label': undefined, // 'Recent searches'
+  'search.recent-searches-label': 'Nesenās meklēšanas',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
-  'search.search-results-aria-label': undefined, // 'Search results'
+  'search.search-results-aria-label': 'Meklēšanas rezultāti',
 
   /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
+  'sheet-list.edit-columns': 'Rediģēt kolonnas',
   /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
+  'sheet-list.hide-field': 'Noņemt no tabulas',
   /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
+  'sheet-list.reset-columns': 'Atiestatīt kolonnas',
   /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
+  'sheet-list.select-fields': 'Izvēlieties līdz 5 lauku tipiem',
 
   /** Accessibility label for the navbar status button */
-  'status-button.aria-label': undefined, // 'Configuration status'
+  'status-button.aria-label': 'Konfigurācijas statuss',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': undefined, // 'Changes by'
+  'timeline.changes.title': 'Izmaiņas veicis',
   /** Description for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-description': undefined, // 'Document history transactions have not been affected.'
+  'timeline.error.load-document-changes-description':
+    'Dokumenta vēstures transakcijas nav ietekmētas.',
   /** Title for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-title': undefined, // 'An error occurred whilst retrieving document changes.'
+  'timeline.error.load-document-changes-title': 'Iegūstot dokumenta izmaiņas, radās kļūda.',
   /** Description for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-version-description': undefined, // 'Enable the events API through the Studio config to view document history.'
+  'timeline.error.load-document-changes-version-description':
+    'Iespējojiet notikumu API caur Studio konfigurāciju, lai skatītu dokumenta vēsturi.',
   /** Title for error when the timeline for the given version document can't be loaded */
-  'timeline.error.load-document-changes-version-title': undefined, // 'Version documents history is only available through the Events API.'
+  'timeline.error.load-document-changes-version-title':
+    'Versiju dokumentu vēsture ir pieejama tikai caur Notikumu API.',
   /** Error description for when the document doesn't have history */
-  'timeline.error.no-document-history-description': undefined, // 'When changing the content of the document, the document versions will appear in this menu.'
+  'timeline.error.no-document-history-description':
+    'Mainot dokumenta saturu, dokumenta versijas parādīsies šajā izvēlnē.',
   /** Error title for when the document doesn't have history */
-  'timeline.error.no-document-history-title': undefined, // 'No document history'
+  'timeline.error.no-document-history-title': 'Nav dokumenta vēstures',
   /** Error prompt when revision cannot be loaded */
-  'timeline.error.unable-to-load-revision': undefined, // 'Unable to load revision'
+  'timeline.error.unable-to-load-revision': 'Nevar ielādēt revīziju',
   /** Label for when the timeline item is the latest in the history */
-  'timeline.latest': undefined, // 'Latest'
+  'timeline.latest': 'Jaunākais',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Jaunākā revīzija',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
    * */
-  'timeline.latest-version': undefined, // 'Latest revision'
+  'timeline.latest-version': 'Jaunākā revīzija',
   /** The aria-label for the list of revisions in the timeline */
-  'timeline.list.aria-label': undefined, // 'Document revisions'
+  'timeline.list.aria-label': 'Dokumenta revīzijas',
   /** Label for loading history */
-  'timeline.loading-history': undefined, // 'Loading history…'
+  'timeline.loading-history': 'Ielādē vēsturi…',
   /* Label for when no previous since events are available*/
-  'timeline.no-previous-events': undefined, // 'No previous events'
+  'timeline.no-previous-events': 'Nav iepriekšēju notikumu',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.created': undefined, // 'Created'
+  'timeline.operation.created': 'Izveidots',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
-  'timeline.operation.created_timestamp': undefined, // 'Created: {{timestamp, datetime}}'
+  'timeline.operation.created_timestamp': 'Izveidots: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was initially created */
-  'timeline.operation.created-initial': undefined, // 'Created'
+  'timeline.operation.created-initial': 'Izveidots',
   /** Label shown in review changes timeline when a document was initially created, with a timestamp */
-  'timeline.operation.created-initial_timestamp': undefined, // 'Created: {{timestamp, datetime}}'
+  'timeline.operation.created-initial_timestamp': 'Izveidots: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': undefined, // 'Deleted'
+  'timeline.operation.deleted': 'Dzēsts',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
-  'timeline.operation.deleted_timestamp': undefined, // 'Deleted: {{timestamp, datetime}}'
+  'timeline.operation.deleted_timestamp': 'Dzēsts: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
-  'timeline.operation.draft-discarded': undefined, // 'Discarded draft'
+  'timeline.operation.draft-discarded': 'Melnraksts izmests',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
-  'timeline.operation.draft-discarded_timestamp': undefined, // 'Discarded draft: {{timestamp, datetime}}'
+  'timeline.operation.draft-discarded_timestamp': 'Melnraksts izmests: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been edited */
-  'timeline.operation.edited-draft': undefined, // 'Edited'
+  'timeline.operation.edited-draft': 'Rediģēts',
   /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
-  'timeline.operation.edited-draft_timestamp': undefined, // 'Edited: {{timestamp, datetime}}'
+  'timeline.operation.edited-draft_timestamp': 'Rediģēts: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': undefined, // 'Live edited'
+  'timeline.operation.edited-live': 'Tiešraidē rediģēts',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
-  'timeline.operation.edited-live_timestamp': undefined, // 'Live edited: {{timestamp, datetime}}'
+  'timeline.operation.edited-live_timestamp': 'Tiešraidē rediģēts: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was published */
-  'timeline.operation.published': undefined, // 'Published'
+  'timeline.operation.published': 'Publicēts',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
-  'timeline.operation.published_timestamp': undefined, // 'Published: {{timestamp, datetime}}'
+  'timeline.operation.published_timestamp': 'Publicēts: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': undefined, // 'Unpublished'
+  'timeline.operation.unpublished': 'Nepublicēts',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
-  'timeline.operation.unpublished_timestamp': undefined, // 'Unpublished: {{timestamp, datetime}}'
+  'timeline.operation.unpublished_timestamp': 'Nepublicēts: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
    */
-  'timeline.since': undefined, // '{{timestamp, datetime}}'
+  'timeline.since': '{{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
-  'timeline.since-version-missing': undefined, // 'Since: unknown version'
+  'timeline.since-version-missing': 'Kopš: nezināma versija',
 
   /** Aria label for the action buttons in the PTE toolbar */
-  'toolbar.portable-text.action-button-aria-label': undefined, // '{{action}}'
+  'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'Navigācijas izvēlne',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Meklēt',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Meklēšanas izvēlne',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Nav atrasts neviens rezultāts',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Aizvērt sānjoslu',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Sakļaut',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Pabeigts',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Izvērst',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Atvērt sānjoslu',
 
   /** Label for button showing the free trial days left */
-  'user-menu.action.free-trial_one': undefined, // '{{count}} day left in trial'
-  'user-menu.action.free-trial_other': undefined, // '{{count}} days left in trial'
+  'user-menu.action.free-trial_one': '{{count}} diena atlikusi līdz izmēģinājuma beigām',
+  'user-menu.action.free-trial_other': '{{count}} dienas atlikušas līdz izmēģinājuma beigām',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': undefined, // 'Upgrade from free'
+  'user-menu.action.free-trial-finished': 'Pāriet no bezmaksas',
   /** Label for action to invite members to the current sanity project */
-  'user-menu.action.invite-members': undefined, // 'Invite members'
+  'user-menu.action.invite-members': 'Uzaicināt dalībniekus',
   /** Accessibility label for action to invite members to the current sanity project */
-  'user-menu.action.invite-members-aria-label': undefined, // 'Invite members'
+  'user-menu.action.invite-members-aria-label': 'Uzaicināt dalībniekus',
   /** Label for action to manage the current sanity project */
-  'user-menu.action.manage-project': undefined, // 'Manage project'
+  'user-menu.action.manage-project': 'Pārvaldīt projektu',
   /** Accessibility label for the action to manage the current project */
-  'user-menu.action.manage-project-aria-label': undefined, // 'Manage project'
+  'user-menu.action.manage-project-aria-label': 'Pārvaldīt projektu',
   /** Tooltip helper text when portable text annotation is disabled for empty block*/
-  'user-menu.action.portable-text.annotation-disabled_empty-block': undefined, // 'Cannot apply {{name}} to empty block'
+  'user-menu.action.portable-text.annotation-disabled_empty-block':
+    'Nevar piemērot {{name}} tukšam blokam',
   /** Tooltip helper text when portable text annotation is disabled for multiple blocks */
-  'user-menu.action.portable-text.annotation-disabled_multiple-blocks': undefined, // 'Cannot apply {{name}} to multiple blocks'
+  'user-menu.action.portable-text.annotation-disabled_multiple-blocks':
+    'Nevar piemērot {{name}} vairākiem blokiem',
   /** Label for action to sign out of the current sanity project */
-  'user-menu.action.sign-out': undefined, // 'Sign out'
+  'user-menu.action.sign-out': 'Izrakstīties',
   /** Title for appearance section for the current studio (dark / light / system scheme) */
-  'user-menu.appearance-title': undefined, // 'Appearance'
+  'user-menu.appearance-title': 'Izskats',
   /** Label for close menu button for user menu */
-  'user-menu.close-menu': undefined, // 'Close menu'
+  'user-menu.close-menu': 'Aizvērt izvēlni',
   /** Description for using the "dark theme" in the appearance user menu */
-  'user-menu.color-scheme.dark-description': undefined, // 'Use dark appearance'
+  'user-menu.color-scheme.dark-description': 'Lietot tumšo izskatu',
   /** Title for using the "dark theme" in the appearance user menu */
-  'user-menu.color-scheme.dark-title': undefined, // 'Dark'
+  'user-menu.color-scheme.dark-title': 'Tumšs',
   /** Description for using the "light theme" in the appearance user menu */
-  'user-menu.color-scheme.light-description': undefined, // 'Use light appearance'
+  'user-menu.color-scheme.light-description': 'Lietot gaišo izskatu',
   /** Title for using the "light theme" in the appearance user menu */
-  'user-menu.color-scheme.light-title': undefined, // 'Light'
+  'user-menu.color-scheme.light-title': 'Gaišs',
   /** Description for using "system apparence" in the appearance user menu */
-  'user-menu.color-scheme.system-description': undefined, // 'Use system appearance'
+  'user-menu.color-scheme.system-description': 'Lietot sistēmas izskatu',
   /** Title for using system apparence in the appearance user menu */
-  'user-menu.color-scheme.system-title': undefined, // 'System'
+  'user-menu.color-scheme.system-title': 'Sistēma',
   /** Title for locale section for the current studio */
-  'user-menu.locale-title': undefined, // 'Language'
+  'user-menu.locale-title': 'Valoda',
   /** Label for tooltip to show which provider the currently logged in user is using */
-  'user-menu.login-provider': undefined, // 'Signed in with {{providerTitle}}'
+  'user-menu.login-provider': 'Pierakstījies ar {{providerTitle}}',
   /** Label for open menu button for user menu */
-  'user-menu.open-menu': undefined, // 'Open menu'
+  'user-menu.open-menu': 'Atvērt izvēlni',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
    */
-  'workspaces.action.add-workspace': undefined, // 'Add workspace'
+  'workspaces.action.add-workspace': 'Pievienot darbvietu',
   /**
    * Label for action to choose a different workspace, in the case where you are not logged in,
    * have selected a workspace, and are faced with the authentication options for the selected
    * workspace. In other words, label for the action shown when you have reconsidered which
    * workspace to authenticate in.
    */
-  'workspaces.action.choose-another-workspace': undefined, // 'Choose another workspace'
+  'workspaces.action.choose-another-workspace': 'Izvēlēties citu darbvietu',
   /** Label for heading that indicates that you can choose your workspace */
-  'workspaces.choose-your-workspace-label': undefined, // 'Choose your workspace'
+  'workspaces.choose-your-workspace-label': 'Izvēlieties savu darbvietu',
   /** Label for the workspace menu */
-  'workspaces.select-workspace-aria-label': undefined, // 'Select workspace'
+  'workspaces.select-workspace-aria-label': 'Izvēlēties darbvietu',
   /** Button label for opening the workspace switcher */
-  'workspaces.select-workspace-label': undefined, // 'Select workspace'
+  'workspaces.select-workspace-label': 'Izvēlēties darbvietu',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': undefined, // 'Select workspace'
+  'workspaces.select-workspace-tooltip': 'Izvēlēties darbvietu',
   /** Title for Workplaces dropdown menu */
-  'workspaces.title': undefined, // 'Workspaces'
+  'workspaces.title': 'Darbvietas',
 })

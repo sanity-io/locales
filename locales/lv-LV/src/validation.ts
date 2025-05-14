@@ -2,98 +2,98 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
-  'array.exact-length': undefined, // 'Must have exactly {{wantedLength}} items'
+  'array.exact-length': 'Jāsatur tieši {{wantedLength}} elementi',
   /** Portable Text array must have exactly "$wantedLength" blocks, but has more/less */
-  'array.exact-length_blocks': undefined, // 'Must have exactly {{wantedLength}} blocks'
+  'array.exact-length_blocks': 'Jāsatur tieši {{wantedLength}} bloki',
   /** Array item is a duplicate, but array wants only unique items */
-  'array.item-duplicate': undefined, // 'Can\'t be a duplicate'
+  'array.item-duplicate': 'Nevar būt dublikāts',
   /** Array has more than the maximum of "$maxLength" items */
-  'array.maximum-length': undefined, // 'Must have at most {{maxLength}} items'
+  'array.maximum-length': 'Jāsatur ne vairāk kā {{maxLength}} elementi',
   /** Portable Text array has more than the maximum of "$maxLength" items */
-  'array.maximum-length_blocks': undefined, // 'Must have at most {{maxLength}} blocks'
+  'array.maximum-length_blocks': 'Jāsatur ne vairāk kā {{maxLength}} bloki',
   /** Array has less than the minimum of "$minLength" items */
-  'array.minimum-length': undefined, // 'Must have at least {{minLength}} items'
+  'array.minimum-length': 'Jāsatur vismaz {{minLength}} elementi',
   /** Portable Text array has less than the minimum of "$minLength" blocks */
-  'array.minimum-length_blocks': undefined, // 'Must have at least {{minLength}} blocks'
+  'array.minimum-length_blocks': 'Jāsatur vismaz {{minLength}} bloki',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': undefined, // 'Must be a valid ISO-8601 formatted date string'
+  'date.invalid-format': 'Jābūt derīgam ISO-8601 formāta datuma virknei',
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': undefined, // 'Must be at or before {{maxDate}}'
+  'date.maximum': 'Jābūt līdz {{maxDate}} vai agrāk',
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': undefined, // 'Must be at or after {{minDate}}'
+  'date.minimum': 'Jābūt no {{minDate}} vai vēlāk',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
-  'generic.incorrect-type': undefined, // 'Expected type "{{expectedType}}", got "{{actualType}}"'
+  'generic.incorrect-type': 'Gaidītais tips "{{expectedType}}", bet saņemts "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
-  'generic.not-allowed': undefined, // 'Value did not match any allowed values'
+  'generic.not-allowed': 'Vērtība neatbilst nevienai atļautajai vērtībai',
   /** Value "$givenValue" is not one of the values specifically allowed */
-  'generic.not-allowed_hint': undefined, // 'Value "{{hint}}" did not match any allowed values'
+  'generic.not-allowed_hint': 'Vērtība "{{hint}}" neatbilst nevienai atļautajai vērtībai',
   /** A value is expected, but none is provided */
-  'generic.required': undefined, // 'Required'
+  'generic.required': 'Obligāts',
 
   /** Number is less than the given minimum threshold value "$threshold" */
-  'number.greater-than': undefined, // 'Must be greater than {{threshold}}'
+  'number.greater-than': 'Jābūt lielākam par {{threshold}}',
   /** Number is greater than the given maximum threshold value "$threshold" */
-  'number.less-than': undefined, // 'Must be less than {{threshold}}'
+  'number.less-than': 'Jābūt mazākam par {{threshold}}',
   /** Number is higher than the given maximum value "$maxNumber" */
-  'number.maximum': undefined, // 'Must be lower than or equal to {{maxNumber}}'
+  'number.maximum': 'Jābūt mazākam vai vienādam ar {{maxNumber}}',
   /** Number has more precision (decimals) than the allowed "$limit" */
-  'number.maximum-precision': undefined, // 'Max precision is {{limit}}'
+  'number.maximum-precision': 'Maksimālā precizitāte ir {{limit}}',
   /** Number is lower than the given minimum value "$minNumber" */
-  'number.minimum': undefined, // 'Must be greater than or equal to {{minNumber}}'
+  'number.minimum': 'Jābūt lielākam vai vienādam ar {{minNumber}}',
   /** Number is not an integer ("whole number") */
-  'number.non-integer': undefined, // 'Must be an integer'
+  'number.non-integer': 'Jābūt veselam skaitlim',
 
   /** Object is missing a reference to an asset document in its `asset` field */
-  'object.asset-required': undefined, // 'Asset is required'
+  'object.asset-required': 'Nepieciešams aktīvs',
   /** Object is missing a reference to a file asset document in its `asset` field */
-  'object.asset-required_file': undefined, // 'File is required'
+  'object.asset-required_file': 'Nepieciešams fails',
   /** Object is missing a reference to an image asset document in its `asset` field */
-  'object.asset-required_image': undefined, // 'Image is required'
+  'object.asset-required_image': 'Nepieciešams attēls',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
-  'object.not-reference': undefined, // 'Must be a reference to a document'
+  'object.not-reference': 'Jābūt atsaucei uz dokumentu',
   /** Object references a document which is not published */
-  'object.reference-not-published': undefined, // 'Referenced document must be published'
+  'object.reference-not-published': 'Atsauktajam dokumentam jābūt publicētam',
 
   /** Accessibility label for closing the validation panel */
-  'panel.close-button-aria-label': undefined, // 'Close validation'
+  'panel.close-button-aria-label': 'Aizvērt validāciju',
   /** Message shown when the validation panel is opened but there are no errors/warnings */
-  'panel.no-errors-message': undefined, // 'No validation errors'
+  'panel.no-errors-message': 'Nav validācijas kļūdu',
   /** Title for the actual "Validation" panel/feature */
-  'panel.title': undefined, // 'Validation'
+  'panel.title': 'Validācija',
 
   /** Slug is an object, but is missing a `current` string property */
-  'slug.missing-current': undefined, // 'Slug must have a value'
+  'slug.missing-current': 'Slug jābūt vērtībai',
   /** Slug is not an object (eg `{current: 'some-slug'}`) */
-  'slug.not-object': undefined, // 'Slug must be an object'
+  'slug.not-object': 'Slug jābūt objektam',
   /** Slug is already in use somewhere else, but needs to be unique */
-  'slug.not-unique': undefined, // 'Slug is already in use'
+  'slug.not-unique': 'Slug jau tiek izmantots',
 
   /** String is not a valid email address */
-  'string.email': undefined, // 'Must be a valid email address'
+  'string.email': 'Jābūt derīgai e-pasta adresei',
   /** String has a different character length than the exact number "$wantedLength" */
-  'string.exact-length': undefined, // 'Must be exactly {{wantedLength}} characters long'
+  'string.exact-length': 'Jābūt tieši {{wantedLength}} rakstzīmju garumā',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': undefined, // 'Must be all lowercase characters'
+  'string.lowercase': 'Jābūt tikai mazajiem burtiem',
   /** String is longer than the limit of "$maxLength" characters */
-  'string.maximum-length': undefined, // 'Must be at most {{maxLength}} characters long'
+  'string.maximum-length': 'Jābūt ne vairāk kā {{maxLength}} rakstzīmju garumā',
   /** String is shorter than the limit of "$minLength" characters */
-  'string.minimum-length': undefined, // 'Must be at least {{minLength}} characters long'
+  'string.minimum-length': 'Jābūt vismaz {{minLength}} rakstzīmju garumā',
   /** String does not match the given regular expression, but should */
-  'string.regex-does-not-match': undefined, // 'Does not match "{{name}}"-pattern'
+  'string.regex-does-not-match': 'Neatbilst "{{name}}"-modelim',
   /** String matches the given regular expression, but should not */
-  'string.regex-match': undefined, // 'Should not match "{{name}}"-pattern'
+  'string.regex-match': 'Nedrīkst atbilst "{{name}}"-modelim',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': undefined, // 'Must be all uppercase characters'
+  'string.uppercase': 'Jābūt tikai lielajiem burtiem',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
-  'string.url.disallowed-scheme': undefined, // 'Does not match allowed protocols/schemes'
+  'string.url.disallowed-scheme': 'Neatbilst atļautajiem protokoliem/shēmām',
   /** String contains a URL with a username or password specified before the host */
-  'string.url.includes-credentials': undefined, // 'Username/password not allowed'
+  'string.url.includes-credentials': 'Lietotājvārds/parole nav atļauti',
   /** String is not a valid URL */
-  'string.url.invalid': undefined, // 'Not a valid URL'
+  'string.url.invalid': 'Nav derīgs URL',
   /** String is not an absolute URL (eg it is missing a protocol/host) */
-  'string.url.not-absolute': undefined, // 'Relative URLs are not allowed'
+  'string.url.not-absolute': 'Relatīvie URL nav atļauti',
   /** String is not a relative URL (eg it contains a protocol/host) */
-  'string.url.not-relative': undefined, // 'Only relative URLs are allowed'
+  'string.url.not-relative': 'Atļauti tikai relatīvie URL',
 })
