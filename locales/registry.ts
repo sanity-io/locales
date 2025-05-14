@@ -112,7 +112,7 @@ const registry: LocaleRegistry = [
     name: 'Norsk (Bokmål)',
     englishName: 'Norwegian (Bokmål)',
     maintainers: ['rexxars'],
-    contributors: ['rexxars'],
+    contributors: [],
   },
   {
     id: 'nl-NL',

@@ -48,6 +48,13 @@ export default defineConfig({
 })
 ```
 
+## Contributors
+
+- [@wisechimp](https://github.com/wisechimp)
+- [@alexanderwarendh](https://github.com/alexanderwarendh)
+- [@marcusforsberg](https://github.com/marcusforsberg)
+- [@Henkisch](https://github.com/Henkisch)
+
 ## Contributing
 
 Feel free to contribute improvements/changes! The strings are located in the `src` folder, where the file name represents the "namespace". Send a pull request, and feel free to add yourself to the `contributors` array in `locales/registry.ts`. If you want to help review new translations, add yourself to the `maintainers` array instead. After doing your changes, run `pnpm run reconcile` and add the changes to version control.

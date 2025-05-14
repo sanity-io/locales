@@ -69,7 +69,9 @@ export const localeEntrySchema = z.object({
   /**
    * Array of GitHub usernames of contributors for the locale, eg ['rexxars', 'bjoerge'].
    *
-   * This may hold duplicates from `maintainers`, as it holds both active and inactive contributors
+   * This generally holds historical contributors that have stopped maintaining
+   * (eg responding to PR reviews etc), or people who are not maintainers but have made
+   * significant contributions to the locale through PRs/issues.
    */
   contributors: z
     .array(z.string().regex(ghUsernamePattern, {message: 'Invalid GitHub username'}))
