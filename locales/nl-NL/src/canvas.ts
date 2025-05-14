@@ -2,58 +2,67 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The text for the "Edit in Canvas" action. */
-  'action.edit-document': undefined, // 'Edit in Canvas'
+  'action.edit-document': 'Bewerk in Canvas',
   /** The text for the "Link to Canvas" action. */
-  'action.link-document': undefined, // 'Link to Canvas'
+  'action.link-document': 'Link naar Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
-  'action.link-document-disabled.initial-value-not-resolved': undefined, // 'Please wait until the document initial values are resolved'
+  'action.link-document-disabled.initial-value-not-resolved':
+    'Wacht alstublieft tot de initiële waarden van het document zijn opgelost',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
-  'action.link-document-disabled.missing-permissions': undefined, // 'You don\'t have permissions to link this document to Canvas'
+  'action.link-document-disabled.missing-permissions':
+    'U heeft geen toestemming om dit document te linken aan Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard': undefined, // 'Open this document in Dashboard to link to Canvas'
+  'action.link-document-disabled.not-in-dashboard':
+    'Open dit document in Dashboard om te linken aan Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': undefined, // 'Version documents are not yet supported in Canvas'
+  'action.link-document-disabled.version-document':
+    'Versiedocumenten worden nog niet ondersteund in Canvas',
   /** The text for the "Unlink from Canvas" action. */
-  'action.unlink-document': undefined, // 'Unlink from Canvas'
+  'action.unlink-document': 'Ontkoppel van Canvas',
 
   /** The text for the action button in the banner when the document is linked to Canvas. */
-  'banner.edit-document-in-canvas': undefined, // 'Edit in Canvas'
+  'banner.edit-document-in-canvas': 'Bewerk in Canvas',
   /** The text for the banner when the document is linked to Canvas. */
-  'banner.linked-to-canvas': undefined, // 'This document is linked to Canvas'
+  'banner.linked-to-canvas': 'Dit document is gekoppeld aan Canvas',
 
   /** The text for the "Confirm document changes" dialog cancel button. */
-  'dialog.confirm-document-changes.cancel': undefined, // 'Cancel'
+  'dialog.confirm-document-changes.cancel': 'Annuleren',
   /** The text for the "Confirm document changes" dialog confirm button. */
-  'dialog.confirm-document-changes.confirm': undefined, // 'Accept and continue'
+  'dialog.confirm-document-changes.confirm': 'Accepteren en doorgaan',
   /** The description for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.description': undefined, // 'This document needs to be updated to be compatible with Canvas.\n Existing content may be edited or removed as part of this process.'
+  'dialog.confirm-document-changes.description':
+    'Dit document moet worden bijgewerkt om compatibel te zijn met Canvas.\n Bestaande inhoud kan worden bewerkt of verwijderd als onderdeel van dit proces.',
   /** The description for the "Confirm document changes" dialog footer. */
-  'dialog.confirm-document-changes.footer-description': undefined, // 'You can unlink from Canvas at any time'
+  'dialog.confirm-document-changes.footer-description':
+    'U kunt op elk moment de koppeling met Canvas ongedaan maken',
   /** The title for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.title': undefined, // 'Confirm document changes'
+  'dialog.confirm-document-changes.title': 'Bevestig wijzigingen in document',
   /** The text for the Link to Canvas dialog when there is a error. */
-  'dialog.link-to-canvas.error': undefined, // 'Failed to link to Canvas'
+  'dialog.link-to-canvas.error': 'Koppelen aan Canvas mislukt',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
-  'dialog.link-to-canvas.redirecting': undefined, // 'Taking you to Canvas to complete linking...'
+  'dialog.link-to-canvas.redirecting': 'We brengen u naar Canvas om het koppelen te voltooien...',
   /** The title for the "Link to Canvas" dialog. */
-  'dialog.link-to-canvas.title': undefined, // 'Link to Canvas'
+  'dialog.link-to-canvas.title': 'Link naar Canvas',
   /** The text for the "Link to Canvas" dialog when the document is being validated. */
-  'dialog.link-to-canvas.validating': undefined, // 'Validating'
+  'dialog.link-to-canvas.validating': 'Valideren',
   /** The text for the "Unlink from Canvas" dialog cancel button. */
-  'dialog.unlink-from-canvas.cancel': undefined, // 'Cancel'
+  'dialog.unlink-from-canvas.cancel': 'Annuleren',
   /** The text for the "Unlink from Canvas" dialog description. */
-  'dialog.unlink-from-canvas.description': undefined, // 'Once unlinked, it will be editable here and future edits in Canvas will no longer automatically map to this document.'
+  'dialog.unlink-from-canvas.description':
+    'Eenmaal ontkoppeld, kan het hier bewerkt worden en zullen toekomstige bewerkingen in Canvas niet meer automatisch gekoppeld worden aan dit document.',
   /** The text for the "Unlink from Canvas" dialog error message. */
-  'dialog.unlink-from-canvas.error': undefined, // 'Failed to unlink from Canvas'
+  'dialog.unlink-from-canvas.error': 'Ontkoppelen van Canvas mislukt',
   /** The text for the "Unlink from Canvas" dialog success message. */
-  'dialog.unlink-from-canvas.success': undefined, // 'Unlinked from Canvas'
+  'dialog.unlink-from-canvas.success': 'Ontkoppeld van Canvas',
   /** The title for the "Unlink from Canvas" dialog. */
-  'dialog.unlink-from-canvas.title': undefined, // 'Unlink from Canvas'
+  'dialog.unlink-from-canvas.title': 'Ontkoppel van Canvas',
   /** The text for the "Unlink from Canvas" dialog unlink button. */
-  'dialog.unlink-from-canvas.unlink-action': undefined, // 'Unlink now'
+  'dialog.unlink-from-canvas.unlink-action': 'Nu ontkoppelen',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
-  'dialog.unlink-from-canvas.unlinking': undefined, // 'You\'re unlinking  <strong>“{{documentTitle}}”</strong> from Canvas.'
+  'dialog.unlink-from-canvas.unlinking':
+    'U bent <strong>“{{documentTitle}}”</strong> aan het ontkoppelen van Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': undefined, // 'Missing permissions to navigate to Canvas'
+  'navigate-to-canvas-doc.error.missing-permissions':
+    'Ontbrekende machtigingen om naar Canvas te navigeren',
 })
