@@ -14,6 +14,7 @@ import {jaJPLocale} from '@sanity/locale-ja-jp'
 import {kaGELocale} from '@sanity/locale-ka-ge'
 import {knINLocale} from '@sanity/locale-kn-in'
 import {koKRLocale} from '@sanity/locale-ko-kr'
+import {lvLVLocale} from '@sanity/locale-lv-lv'
 import {nbNOLocale} from '@sanity/locale-nb-no'
 import {nlNLLocale} from '@sanity/locale-nl-nl'
 import {nnNOLocale} from '@sanity/locale-nn-no'
@@ -45,6 +46,7 @@ export const locales = [
   kaGELocale(),
   knINLocale(),
   koKRLocale(),
+  lvLVLocale(),
   nbNOLocale(),
   nlNLLocale(),
   nnNOLocale(),

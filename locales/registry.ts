@@ -108,6 +108,13 @@ const registry: LocaleRegistry = [
     contributors: [],
   },
   {
+    id: 'lv-LV',
+    name: 'Latviski',
+    englishName: 'Latvian',
+    maintainers: ['exabyssus'],
+    contributors: [],
+  },
+  {
     id: 'nb-NO',
     name: 'Norsk (Bokmål)',
     englishName: 'Norwegian (Bokmål)',

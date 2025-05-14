@@ -16,6 +16,7 @@
       "@sanity/locale-ka-ge": ["../../locales/ka-GE/src"],
       "@sanity/locale-kn-in": ["../../locales/kn-IN/src"],
       "@sanity/locale-ko-kr": ["../../locales/ko-KR/src"],
+      "@sanity/locale-lv-lv": ["../../locales/lv-LV/src"],
       "@sanity/locale-nb-no": ["../../locales/nb-NO/src"],
       "@sanity/locale-nl-nl": ["../../locales/nl-NL/src"],
       "@sanity/locale-nn-no": ["../../locales/nn-NO/src"],
