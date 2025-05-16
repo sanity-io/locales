@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.15](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.14...locale-da-dk-v1.0.15) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.0.14](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.13...locale-da-dk-v1.0.14) (2025-05-12)
 
 

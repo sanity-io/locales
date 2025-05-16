@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.17](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.16...locale-ka-ge-v1.0.17) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.0.16](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.15...locale-ka-ge-v1.0.16) (2025-05-12)
 
 

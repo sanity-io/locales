@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.18](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.17...locale-pl-pl-v1.2.18) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.2.17](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.16...locale-pl-pl-v1.2.17) (2025-05-12)
 
 

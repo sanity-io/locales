@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.21](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.20...locale-ja-jp-v1.1.21) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.19...locale-ja-jp-v1.1.20) (2025-05-13)
 
 
