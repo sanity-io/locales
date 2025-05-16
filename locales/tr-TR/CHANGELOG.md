@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.20](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.19...locale-tr-tr-v1.2.20) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.2.19](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.18...locale-tr-tr-v1.2.19) (2025-05-12)
 
 

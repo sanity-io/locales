@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.24](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.23...locale-nl-nl-v1.1.24) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.1.23](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.22...locale-nl-nl-v1.1.23) (2025-05-14)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.20](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.19...locale-kn-in-v1.0.20) (2025-05-16)
+
+
+### Bug Fixes
+
+* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+
 ## [1.0.19](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.18...locale-kn-in-v1.0.19) (2025-05-13)
 
 
