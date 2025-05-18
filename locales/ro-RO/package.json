@@ -1,0 +1,61 @@
+{
+  "name": "@sanity/locale-ro-ro",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Romanian / Română locale/translation for Sanity Studio",
+  "keywords": [
+    "sanity",
+    "i18n",
+    "locale",
+    "localization",
+    "ro-RO"
+  ],
+  "homepage": "https://github.com/sanity-io/locales#readme",
+  "bugs": {
+    "url": "https://github.com/sanity-io/locales/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/locales.git",
+    "directory": "locales/ro-RO"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "rusbers",
+      "url": "https://github.com/rusbers"
+    }
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
+    "clean": "rimraf dist",
+    "pkg:build": "pkg build --strict",
+    "pkg:check": "pkg check --strict",
+    "prepublishOnly": "pnpm build"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "peerDependencies": {
+    "sanity": "^3.22.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
