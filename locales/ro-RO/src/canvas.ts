@@ -62,5 +62,6 @@ export default removeUndefinedLocaleResources({
     'Dezlegați <strong>“{{documentTitle}}”</strong> de Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': 'Nu aveți permisiuni pentru a naviga la Canvas',
+  'navigate-to-canvas-doc.error.missing-permissions':
+    'Nu aveți permisiuni pentru a naviga la Canvas',
 })
