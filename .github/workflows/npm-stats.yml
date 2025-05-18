@@ -1,0 +1,29 @@
+name: Weekly NPM Stats
+
+on:
+  schedule:
+    # Run at 09:00 UTC every Monday
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  npm-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: Run NPM Stats
+        run: pnpm ci:npm-stats

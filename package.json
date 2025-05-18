@@ -29,6 +29,7 @@
     "check:types": "tsc --noEmit",
     "ci:adjust-labels": "tsx src/cli/adjustLabels",
     "ci:auto-merge-stale": "tsx src/cli/autoMergeStale",
+    "ci:npm-stats": "tsx src/cli/npmStats",
     "ci:nudge-stale": "tsx src/cli/nudgeStale",
     "clean": "rimraf apps/studio/dist locales/*/dist",
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
