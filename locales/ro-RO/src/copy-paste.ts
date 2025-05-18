@@ -44,7 +44,8 @@ export default removeUndefinedLocaleResources({
     'Valoarea de tip "{{type}}" nu este permisă în acest câmp',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': 'Target-ul este doar pentru citire',
+  'copy-paste.on-paste.validation.read-only-target.description':
+    'Target-ul este doar pentru citire',
   /** The validation message that is shown when reference is incompatible with filter */
   'copy-paste.on-paste.validation.reference-filter-incompatible.description':
     'Referința nu este permisă în acest câmp conform filtrului',

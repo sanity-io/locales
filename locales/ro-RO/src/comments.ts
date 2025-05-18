@@ -123,8 +123,7 @@ export default removeUndefinedLocaleResources({
   'list-item.resolved-tooltip-content': 'Marchează ca rezolvat',
 
   /** The empty state text for open comments */
-  'list-status.empty-state-open-text':
-    'Comentariile active pentru acest document vor apărea aici.',
+  'list-status.empty-state-open-text': 'Comentariile active pentru acest document vor apărea aici.',
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'Niciun comentariu deschis încă',
   /** The empty state text for resolved comments */
