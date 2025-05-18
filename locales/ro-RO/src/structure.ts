@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.running.label': 'Se șterge…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
   'action.disabled-by-canvas.tooltip':
-    'Unele acțiuni pentru documente sunt dezactivate pentru documentele legate de Canvas',
+    'Anumite acțiuni sunt dezactivate pentru documentele conectate la Canvas.',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Sunteți sigur că doriți să renunțați la toate modificările de la ultima publicare?',
@@ -51,7 +51,7 @@ export default removeUndefinedLocaleResources({
     'Nu se poate publica deoarece Editarea Live este activată pentru acest tip de document',
   /** Tooltip for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.tooltip':
-    'Editarea Live este activată pentru acest tip de conținut și publicarea are loc automat pe măsură ce faceți modificări',
+    'Editare Live este activată pentru acest tip de conținut, iar publicarea are loc automat pe măsură ce faceți modificări',
   /** Tooltip when publish button is disabled because there are no changes.*/
   'action.publish.no-changes.tooltip': 'Nu există modificări nepublicate',
   /** Label for the "Publish" document action when there are no changes.*/
@@ -183,7 +183,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-description':
     'Canvas îți permite să creezi într-un editor liber care se mapează automat înapoi în Studio ca și conținut structurat - pe măsură ce tastezi.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Autoriaza ideilor în primul rând',
+  'canvas.banner.popover-heading': 'Creare orientată pe idei',
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'De la',

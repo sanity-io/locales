@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Browserul tău nu suportă această acțiune',
   /** The error message that is shown when there is no value to copy */
-  'copy-paste.on-copy.validation.no-value.title': 'Valoare goală, nimic de copiat',
+  'copy-paste.on-copy.validation.no-value.title': 'Câmp gol, nimic de copiat',
   /** --- On copy --- */
   /** The error message that is shown when schema types are incompatible */
   'copy-paste.on-copy.validation.schema-type-incompatible.title':
@@ -27,7 +27,7 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Nimic de lipit',
   /** The validation message that is shown when the clipboard item is invalid */
-  'copy-paste.on-paste.validation.clipboard-invalid.title': 'Elementul din clipboard este invalid',
+  'copy-paste.on-paste.validation.clipboard-invalid.title': 'Elementul din clipboard nu este valid',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     'Un "{{sourceSchemaType}}" nu este permis într-un "{{targetSchemaType}}"',
@@ -44,16 +44,16 @@ export default removeUndefinedLocaleResources({
     'Valoarea de tip "{{type}}" nu este permisă în acest câmp',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': 'Ținta este în modul doar-citire',
+  'copy-paste.on-paste.validation.read-only-target.description': 'Target-ul este doar pentru citire',
   /** The validation message that is shown when reference is incompatible with filter */
   'copy-paste.on-paste.validation.reference-filter-incompatible.description':
-    'Referința nu este permisă în câmpul de referință conform filtrului',
+    'Referința nu este permisă în acest câmp conform filtrului',
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
-    'Referințele de tip "{{sourceReferenceType}}" nu sunt permise în câmpul de referință care acceptă tipuri "{{targetReferenceTypes}}"',
+    'Referințele de tip "{{sourceReferenceType}}" nu sunt permise în câmpul care acceptă tipuri "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Documentul referențiat "{{ref}}" nu există',
+    'Documentul la care se face referirea "{{ref}}" nu există',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Tipurile de schemă sursă și țintă nu sunt compatibile',

@@ -44,9 +44,9 @@ export default removeUndefinedLocaleResources({
   'delete-thread.body':
     'Acest comentariu și răspunsurile sale vor fi șterse, și odată șterse nu pot fi recuperate.',
   /** The delete dialog conform button text for a thread */
-  'delete-thread.confirm': 'Șterge firul de discuție',
+  'delete-thread.confirm': 'Șterge thread-ul',
   /** The delete dialog title for a thread */
-  'delete-thread.title': 'Șterge acest fir de discuție cu comentarii?',
+  'delete-thread.title': 'Vreți să ștergeți acest thread?',
 
   /** The button text for confirming discard */
   'discard.button-confirm': 'Renunță',
@@ -124,12 +124,12 @@ export default removeUndefinedLocaleResources({
 
   /** The empty state text for open comments */
   'list-status.empty-state-open-text':
-    'Comentariile deschise pentru acest document vor fi afișate aici.',
+    'Comentariile active pentru acest document vor apărea aici.',
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'Niciun comentariu deschis încă',
   /** The empty state text for resolved comments */
   'list-status.empty-state-resolved-text':
-    'Comentariile rezolvate pentru acest document vor fi afișate aici.',
+    'Comentariile închise pentru acest document vor apărea aici.',
   /** The empty state title for resolved comments */
   'list-status.empty-state-resolved-title': 'Niciun comentariu rezolvat încă',
   /** The list status message for error */

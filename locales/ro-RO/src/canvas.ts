@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
     'Deschideți acest document în Dashboard pentru a-l lega de Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
   'action.link-document-disabled.version-document':
-    'Documentele versiune nu sunt încă suportate în Canvas',
+    'Documentele de tip versiune nu sunt încă suportate în Canvas',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': 'Dezlegați de Canvas',
 
@@ -48,7 +48,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.cancel': 'Anulați',
   /** The text for the "Unlink from Canvas" dialog description. */
   'dialog.unlink-from-canvas.description':
-    'Odată dezlegat, va fi editabil aici și viitoarele editări în Canvas nu vor mai fi automat mapate la acest document.',
+    'Odată dezlegat, va putea fi editat aici, iar modificările viitoare în Canvas nu se vor mai reflecta automat în acest document.',
   /** The text for the "Unlink from Canvas" dialog error message. */
   'dialog.unlink-from-canvas.error': 'Dezlegarea de Canvas a eșuat',
   /** The text for the "Unlink from Canvas" dialog success message. */
@@ -62,5 +62,5 @@ export default removeUndefinedLocaleResources({
     'Dezlegați <strong>“{{documentTitle}}”</strong> de Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': 'Permisiuni lipsă pentru a naviga la Canvas',
+  'navigate-to-canvas-doc.error.missing-permissions': 'Nu aveți permisiuni pentru a naviga la Canvas',
 })

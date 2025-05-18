@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cum să activezi',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Copiat în clipboard. Paste fericit!',
+    'Copiat! Acum puteți lipi cu încredere.',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copiază în clipboard',
   /** "Current version" header in about dialog  */
@@ -98,7 +98,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_image': 'Selectează imagine',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
-    'Eroare la inserarea activului. Consultați consola pentru mai multe informații.',
+    'Eroare la inserarea fișierului. Vedeți consola pentru mai multe informații.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Încarcă mai multe',
   /** Text shown when selecting a file but there's no files to select from */

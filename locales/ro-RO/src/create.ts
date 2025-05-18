@@ -6,10 +6,10 @@ export default removeUndefinedLocaleResources({
   /** Text above header in Create Link info popover */
   'create-link-info-popover.eyebrow-title': 'Sanity Create',
   /** Header in Create Link info popover */
-  'create-link-info-popover.header': 'Autorizare bazată pe idei',
+  'create-link-info-popover.header': 'Creare bazată pe idei',
   /** Informational text in Create Link info popover */
   'create-link-info-popover.text':
-    'Scrieți în mod natural într-un editor alimentat de AI. Conținutul dvs. se mapează automat pe câmpurile Studio pe măsură ce tastați.',
+    'Scrieți în mod natural într-un editor bazat pe inteligență artificială. Conținutul dvs. se mapează automat în câmpurile Studio pe măsură ce tastați.',
 
   /** Tooltip for Create Link button */
   'create-link-info.tooltip': 'Află mai multe',
