@@ -9,6 +9,7 @@ import {fiFILocale} from '@sanity/locale-fi-fi'
 import {frFRLocale} from '@sanity/locale-fr-fr'
 import {hrHRLocale} from '@sanity/locale-hr-hr'
 import {huHULocale} from '@sanity/locale-hu-hu'
+import {idIDLocale} from '@sanity/locale-id-id'
 import {isISLocale} from '@sanity/locale-is-is'
 import {itITLocale} from '@sanity/locale-it-it'
 import {jaJPLocale} from '@sanity/locale-ja-jp'
@@ -42,6 +43,7 @@ export const locales = [
   frFRLocale(),
   hrHRLocale(),
   huHULocale(),
+  idIDLocale(),
   isISLocale(),
   itITLocale(),
   jaJPLocale(),
