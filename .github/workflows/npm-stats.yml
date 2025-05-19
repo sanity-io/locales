@@ -27,3 +27,5 @@ jobs:
 
       - name: Run NPM Stats
         run: pnpm ci:npm-stats
+        env:
+          SLACK_STATS_WEBHOOK_URL: ${{ secrets.SLACK_STATS_WEBHOOK_URL }}
