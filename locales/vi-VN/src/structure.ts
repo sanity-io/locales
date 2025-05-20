@@ -401,10 +401,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Mới {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Không tiêu đề',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Đang thử lại…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Lỗi: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Lỗi: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Kết nối Internet dường như đang ngoại tuyến.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Không thể tải các mục danh sách',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Đang thử lại… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Hiển thị tối đa {{limit}} tài liệu',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -413,6 +420,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Không tìm thấy kết quả',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Không có tài liệu phù hợp',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Đang cố gắng kết nối…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Tìm kiếm danh sách',
   /** The search input for the search input on the document list pane */
