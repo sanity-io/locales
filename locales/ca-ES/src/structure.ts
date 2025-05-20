@@ -429,10 +429,21 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nou {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Sense títol',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': "S'està reintentant…",
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Error: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Error: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline':
+    'Sembla que la connexió a Internet està desconnectada.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': "No s'han pogut obtenir els elements de la llista",
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': "S'està reintentant…",
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    "S'està reintentant… (#{{count}}).",
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Mostrant un màxim de {{limit}} documents',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -441,6 +452,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': "No s'han trobat resultats",
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'No hi ha documents coincidents',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Intentant connectar…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Cerca a la llista',
   /** The search input for the search input on the document list pane */
