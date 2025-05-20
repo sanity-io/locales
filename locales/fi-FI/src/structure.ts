@@ -428,10 +428,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Uusi {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Nimetön',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Yritetään uudelleen…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Virhe: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Virhe: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Internet-yhteys näyttää olevan poissa käytöstä.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Luettelokohteita ei voitu noutaa',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Yritetään uudelleen…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Yritetään uudelleen… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Näytetään enintään {{limit}} dokumenttia',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -440,6 +450,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Tuloksia ei löytynyt',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Vastaavia dokumentteja ei löytynyt',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Yritetään muodostaa yhteyttä…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Etsi listalta',
   /** The search input for the search input on the document list pane */
