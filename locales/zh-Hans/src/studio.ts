@@ -146,9 +146,14 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Workspace 文件',
   'asset-sources.dataset.image.title': 'Workspace 图像',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    '尝试解析此项目的媒体库时出了些问题。',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '媒体库',
   'asset-sources.media-library.image.title': '媒体库',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': '请稍候，我们正在准备您的媒体库',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "发布 '<strong>{{title}}</strong>' 已被删除。",
@@ -343,6 +348,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': '确认',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '加载中',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': '尝试连接…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -447,8 +454,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': '已弃用',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '无标题',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': '连接丢失。正在重新连接…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': '有错误',
   /** Accessibility label for the icon that indicates the field has validation information */
