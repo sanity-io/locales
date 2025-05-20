@@ -159,9 +159,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'ವರ್ಕ್‌ಸ್ಪೇಸ್ ಫೈಲ್‌ಗಳು',
   'asset-sources.dataset.image.title': 'ವರ್ಕ್‌ಸ್ಪೇಸ್ ಚಿತ್ರಗಳು',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'ಈ ಯೋಜನೆಗಾಗಿ ಮೀಡಿಯಾ ಲೈಬ್ರರಿಯನ್ನು ಪರಿಹರಿಸಲು ಯತ್ನಿಸುವಾಗ ಏನೋ ತಪ್ಪಾಗಿದೆ.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
   'asset-sources.media-library.image.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'ನಿಮ್ಮ ಮೀಡಿಯಾ ಲೈಬ್ರರಿಯನ್ನು ತಯಾರಿಸುವಾಗ ದಯವಿಟ್ಟು ಕಾಯಿರಿ',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' ಬಿಡುಗಡೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ.",
@@ -369,6 +375,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'ದೃಢೀಕರಿಸಿ',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'ಲೋಡಿಂಗ್',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'ಸಂಪರ್ಕಿಸಲು ಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -473,8 +481,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'ಅಪ್ರಚಲಿತ',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'ಶೀರ್ಷಿಕೆ ಇಲ್ಲದ',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'ಸಂಪರ್ಕ ಕಳೆದುಹೋಗಿದೆ. ಮರುಸಂಪರ್ಕ ಸಾಧಿಸುತ್ತಿದೆ…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'ದೋಷವಿದೆ',
   /** Accessibility label for the icon that indicates the field has validation information */
