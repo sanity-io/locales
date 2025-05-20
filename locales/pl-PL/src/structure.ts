@@ -13,7 +13,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Usuwanie…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Niektóre akcje dokumentu są wyłączone dla dokumentów powiązanych z Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Czy na pewno chcesz odrzucić wszystkie zmiany od ostatniej publikacji?',
@@ -170,19 +171,20 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Zamknij grupę paneli',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Edytuj w Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Ten szkic dokumentu jest powiązany z Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Ten opublikowany dokument jest powiązany z Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Ten wersjonowany dokument jest powiązany z Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Dowiedz się więcej',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas pozwala na tworzenie w edytorze swobodnej formy, który automatycznie mapuje z powrotem do Studio jako strukturalna treść - podczas pisania.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Autorstwo z ideą na pierwszym miejscu',
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Od',
@@ -206,7 +208,8 @@ export default removeUndefinedLocaleResources({
     'Parametr poprzedniego dokumentu jest nieprawidłowy.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Nie ma innych wersji tego dokumentu do porównania.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Porównaj wersje',
   /** The string used to label draft documents */
@@ -332,9 +335,9 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Synchronizacja dokumentu…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Dodaj do ulubionych',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Usuń z ulubionych',
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Zbadaj dokument <VersionBadge>{{releaseTitle}}</VersionBadge>',
@@ -402,10 +405,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nowy {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Bez tytułu',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Ponawianie próby…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Błąd: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Błąd: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Połączenie internetowe wydaje się być offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nie można pobrać elementów listy',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Ponawianie próby…',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Wyświetlanie maksymalnie {{limit}} dokumentów',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -414,6 +425,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nie znaleziono wyników',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Brak pasujących dokumentów',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Próba połączenia…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Szukaj na liście',
   /** The search input for the search input on the document list pane */
