@@ -403,10 +403,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nou {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Fără titlu',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Se reîncearcă…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Eroare: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Eroare: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Conexiunea la Internet pare a fi întreruptă.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nu s-au putut prelua elementele listei',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Se reîncearcă…',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Se afișează un număr maxim de {{limit}} documente',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -415,6 +423,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nu s-au găsit rezultate',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Nu există documente corespunzătoare',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Se încearcă reconectarea…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Caută în listă',
   /** The search input for the search input on the document list pane */
