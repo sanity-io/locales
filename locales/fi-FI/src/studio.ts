@@ -160,9 +160,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Työtilan tiedostot',
   'asset-sources.dataset.image.title': 'Työtilan kuvat',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Jokin meni vikaan yrittäessä ratkaista tämän projektin Media Librarya.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediakirjasto',
   'asset-sources.media-library.image.title': 'Mediakirjasto',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Odota hetki, kun valmistelemme Media Libraryasi',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
@@ -370,6 +376,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Vahvista',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Ladataan',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Yritetään muodostaa yhteyttä…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -474,8 +482,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'vanhentunut',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Nimeämätön',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Yhteys katkesi. Yhdistetään uudelleen…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Sisältää virheen',
   /** Accessibility label for the icon that indicates the field has validation information */
