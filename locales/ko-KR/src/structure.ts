@@ -411,10 +411,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '새로운 {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': '제목 없음',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': '재시도 중...',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': '오류: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': '오류: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': '인터넷 연결이 오프라인 상태인 것 같습니다.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': '목록 항목을 가져오지 못했습니다',
+  'panes.document-list-pane.error.will-retry-automatically_other': '재시도 중... (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': '최대 {{limit}}개의 문서를 표시합니다',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -423,6 +430,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': '결과가 없습니다',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '일치하는 문서가 없습니다',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': '연결을 시도 중...',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': '목록 검색',
   /** The search input for the search input on the document list pane */
