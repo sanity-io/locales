@@ -382,10 +382,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '新建 {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': '无标题',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': '正在重试…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': '错误：<Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': '错误：<Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': '互联网连接似乎已断开。',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': '无法获取列表项',
+  'panes.document-list-pane.error.will-retry-automatically_other': '正在重试… (#{{count}})。',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': '最多显示 {{limit}} 个文档',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -394,6 +401,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': '未找到结果',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '没有匹配的文档',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': '尝试连接中…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
