@@ -429,10 +429,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nuevo {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Sin título',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Reintentando…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Error: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Error: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline':
+    'La conexión a Internet parece estar desconectada.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'No se pudieron obtener los elementos de la lista',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Reintentando…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Reintentando… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Mostrando un máximo de {{limit}} documentos',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -442,6 +452,8 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text':
     'No se encontraron documentos coincidentes',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Intentando conectar…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Buscar en la lista',
   /** The search input for the search input on the document list pane */
