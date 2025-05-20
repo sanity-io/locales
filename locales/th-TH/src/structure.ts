@@ -393,10 +393,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'สร้างใหม่ {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'ไม่มีชื่อ',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'กำลังลองใหม่…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'ข้อผิดพลาด: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'ข้อผิดพลาด: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'ดูเหมือนว่าการเชื่อมต่ออินเทอร์เน็ตจะไม่ทำงาน',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'ไม่สามารถดึงรายการได้',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'กำลังลองใหม่… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'แสดงสูงสุด {{limit}} เอกสาร',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -405,6 +412,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'ไม่พบผลลัพธ์',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'ไม่มีเอกสารที่ตรงกัน',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'กำลังพยายามเชื่อมต่อ…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'ค้นหารายการ',
   /** The search input for the search input on the document list pane */

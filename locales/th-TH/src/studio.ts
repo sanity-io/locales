@@ -149,9 +149,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'ไฟล์ของพื้นที่ทำงาน',
   'asset-sources.dataset.image.title': 'รูปภาพของพื้นที่ทำงาน',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'เกิดข้อผิดพลาดในการพยายามเชื่อมต่อกับ Media Library สำหรับโปรเจคนี้',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'ห้องสมุดสื่อ',
   'asset-sources.media-library.image.title': 'ห้องสมุดสื่อ',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'กรุณารอขณะที่เรากำลังเตรียม Media Library ของคุณ',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "การปล่อย '<strong>{{title}}</strong>' ถูกลบแล้ว",
@@ -349,6 +355,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'ยืนยัน',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'กำลังโหลด',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'กำลังพยายามเชื่อมต่อ…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -453,8 +461,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'ล้าสมัย',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'ไม่มีชื่อ',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'การเชื่อมต่อหายไป กำลังเชื่อมต่อใหม่…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'มีข้อผิดพลาด',
   /** Accessibility label for the icon that indicates the field has validation information */
