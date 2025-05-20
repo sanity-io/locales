@@ -160,9 +160,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Soubory pracovního prostoru',
   'asset-sources.dataset.image.title': 'Obrázky pracovního prostoru',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Něco se pokazilo při pokusu o vyřešení Media Library pro tento projekt.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediální knihovna',
   'asset-sources.media-library.image.title': 'Mediální knihovna',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Vyčkejte prosím, zatímco připravujeme vaši Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
@@ -370,6 +376,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Potvrdit',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Načítání',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Pokus o připojení…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -474,8 +482,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'zastaralé',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Nepojmenované',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Spojení ztraceno. Opětovné připojování…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Obsahuje chybu',
   /** Accessibility label for the icon that indicates the field has validation information */

@@ -425,10 +425,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nový {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Bez názvu',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Opakujeme pokus…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Chyba: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Chyba: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Zdá se, že internetové připojení je offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nepodařilo se načíst položky seznamu',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Opakujeme pokus…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Opakujeme pokus… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Zobrazuje se maximálně {{limit}} dokumentů',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -438,6 +447,8 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text':
     'Nebyly nalezeny žádné odpovídající dokumenty',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Pokus o opětovné připojení…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Prohledat seznam',
   /** The search input for the search input on the document list pane */
