@@ -162,9 +162,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Archivos del espacio de trabajo',
   'asset-sources.dataset.image.title': 'Imágenes del espacio de trabajo',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Algo salió mal al intentar resolver la Biblioteca de Medios para este proyecto.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de medios',
   'asset-sources.media-library.image.title': 'Biblioteca de medios',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Por favor espera mientras preparamos tu Biblioteca de Medios',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -379,6 +385,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirmar',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Cargando',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Intentando conectar…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -483,8 +491,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'obsoleto',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Sin título',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Conexión perdida. Reconectando…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Tiene error',
   /** Accessibility label for the icon that indicates the field has validation information */
