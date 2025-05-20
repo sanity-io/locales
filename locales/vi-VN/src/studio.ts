@@ -152,9 +152,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Tệp Workspace',
   'asset-sources.dataset.image.title': 'Hình ảnh Workspace',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Đã xảy ra lỗi khi cố gắng truy cập Thư viện Media cho dự án này.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Thư viện Media',
   'asset-sources.media-library.image.title': 'Thư viện Media',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Vui lòng đợi trong khi chúng tôi chuẩn bị Thư viện Media của bạn',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Phiên bản '<strong>{{title}}</strong>' đã bị xóa.",
@@ -354,6 +360,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Xác nhận',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Đang tải',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Đang cố gắng kết nối…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -458,8 +466,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'lỗi thời',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Không tiêu đề',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Mất kết nối. Đang kết nối lại…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Có lỗi',
   /** Accessibility label for the icon that indicates the field has validation information */
