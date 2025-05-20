@@ -428,10 +428,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nieuw {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Naamloos',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Opnieuw proberen…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fout: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Fout: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'De internetverbinding lijkt offline te zijn.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kon lijstitems niet ophalen',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Opnieuw proberen…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Opnieuw proberen… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Er worden maximaal {{limit}} documenten weergegeven',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -440,6 +450,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Geen resultaten gevonden',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Geen overeenkomende documenten',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Proberen te verbinden…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Lijst doorzoeken',
   /** The search input for the search input on the document list pane */
