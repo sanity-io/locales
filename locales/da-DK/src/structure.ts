@@ -13,7 +13,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Sletter…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Nogle dokumenthandlinger er deaktiveret for dokumenter, der er linket til Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Er du sikker på, at du vil forkaste alle ændringer siden sidst publiceret?',
@@ -181,19 +182,20 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Luk rudesamling',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Rediger i Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Dette udkastdokument er linket til Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Dette live dokument er linket til Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Dette versionsdokument er linket til Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Lær mere',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas lader dig forfatte i en fri-form redaktør, der automatisk kortlægger tilbage til Studiet som struktureret indhold - mens du skriver.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Idé først forfatteri',
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Fra',
@@ -215,7 +217,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Den forrige dokumentparameter er ugyldig.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Der er ingen andre versioner af dette dokument at sammenligne med.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Sammenlign versioner',
   /** The string used to label draft documents */
@@ -354,9 +357,9 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Tilføj til favoritter',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Fjern fra favoritter',
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspekter <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
@@ -423,10 +426,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Uden titel',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Prøver igen…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fejl: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Fejl: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Internetforbindelsen ser ud til at være offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kunne ikke hente liste elementer',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Prøver igen…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Prøver igen… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Viser maksimalt {{limit}} dokumenter',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -435,6 +447,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Ingen resultater fundet',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Ingen matchende dokumenter',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Forsøger at forbinde…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Søg i liste',
   /** The search input for the search input on the document list pane */
