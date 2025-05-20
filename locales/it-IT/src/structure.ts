@@ -13,7 +13,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Eliminazione in corso…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Alcune azioni sui documenti sono disabilitate per i documenti collegati a Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Sei sicuro di voler annullare tutte le modifiche dall’ultima pubblicazione?',
@@ -182,19 +183,20 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Chiudi gruppo di pannelli',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Modifica in Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Questo documento bozza è collegato a Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Questo documento live è collegato a Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Questo documento versione è collegato a Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Scopri di più',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas ti permette di scrivere in un editor libero che mappa automaticamente al Studio come contenuto strutturato - mentre digiti.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': "Scrittura incentrata sull'idea",
 
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Da',
@@ -218,7 +220,8 @@ export default removeUndefinedLocaleResources({
     'Il parametro del documento precedente non è valido.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Non ci sono altre versioni di questo documento da confrontare.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Confronta versioni',
   /** The string used to label draft documents */
@@ -358,9 +361,9 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Sincronizzazione documento in corso…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Aggiungi ai preferiti',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Rimuovi dai preferiti',
 
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Ispeziona il documento <VersionBadge>{{releaseTitle}}</VersionBadge>',
@@ -427,10 +430,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nuovo {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Senza titolo',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Riprovo…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Errore: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Errore: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'La connessione Internet sembra essere offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': "Impossibile recuperare gli elementi dell'elenco",
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Riprovo…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Riprovo… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Visualizzazione di un massimo di {{limit}} documenti',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -439,6 +451,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nessun risultato trovato',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Nessun documento corrispondente',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Tentativo di connessione in corso…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Cerca nella lista',
   /** The search input for the search input on the document list pane */
