@@ -151,9 +151,13 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': undefined, // 'Workspace files'
   'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': undefined, // 'Media Library'
   'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Рэліз '<strong>{{title}}</strong>' быў выдалены.",
@@ -359,6 +363,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Пацвердзіць',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Загрузка',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -463,8 +469,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'састарэлы',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Без назвы',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Злучэнне страчана. Перападключэнне…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Ёсць памылка',
   /** Accessibility label for the icon that indicates the field has validation information */

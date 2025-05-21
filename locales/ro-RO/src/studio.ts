@@ -153,9 +153,13 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Fișierele spațiului de lucru',
   'asset-sources.dataset.image.title': 'Imaginile spațiului de lucru',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca Media',
   'asset-sources.media-library.image.title': 'Biblioteca Media',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Lansarea '<strong>{{title}}</strong>' a fost ștearsă.",
@@ -362,6 +366,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirmă',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Se încarcă',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -466,8 +472,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'depreciat',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Fără titlu',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Conexiune pierdută. Se reconectează…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Conține eroare',
   /** Accessibility label for the icon that indicates the field has validation information */
