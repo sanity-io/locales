@@ -421,10 +421,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '新しい{{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'タイトルなし',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': '再試行しています…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'エラー: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'エラー: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'インターネット接続がオフラインのようです。',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'リストアイテムを取得できませんでした',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    '再試行しています… (#{{count}})。',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': '{{limit}}ドキュメントまで表示します',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -433,6 +441,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': '結果が見つかりません',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '一致するドキュメントがありません',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': '接続を試みています…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'リストを検索',
   /** The search input for the search input on the document list pane */
