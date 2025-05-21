@@ -424,10 +424,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'ಹೊಸ {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'ಶೀರ್ಷಿಕೆ ಇಲ್ಲದ',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'ಮರುಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'ದೋಷ: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'ದೋಷ: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಆಫ್‌ಲೈನ್ ಆಗಿರುವಂತೆ ಕಾಣುತ್ತಿದೆ.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'ಪಟ್ಟಿ ಐಟಂಗಳನ್ನು ತರಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'ಮರುಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'ಮರುಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'ಗರಿಷ್ಠ {{limit}} ದಾಖಲೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸಲಾಗಿದೆ',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -436,6 +446,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬಂದಿಲ್ಲ',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'ಹೊಂದಾಣಿಕೆಯ ದಾಖಲೆಗಳು ಇಲ್ಲ',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'ಸಂಪರ್ಕಿಸಲು ಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'ಪಟ್ಟಿಯನ್ನು ಹುಡುಕಿ',
   /** The search input for the search input on the document list pane */
