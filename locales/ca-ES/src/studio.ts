@@ -162,9 +162,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': "Fitxers de l'espai de treball",
   'asset-sources.dataset.image.title': "Imatges de l'espai de treball",
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Alguna cosa ha anat malament en intentar resoldre la Biblioteca de Mitjans per a aquest projecte.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Espereu mentre preparem la vostra Biblioteca de Mitjans',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -374,6 +380,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirma',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Carregant',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Intentant connectar…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -478,8 +486,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'obsolet',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Camp sense títol',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Connexió perduda. Reconnectant…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Té error',
   /** Accessibility label for the icon that indicates the field has validation information */
