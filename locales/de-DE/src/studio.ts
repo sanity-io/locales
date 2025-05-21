@@ -160,9 +160,13 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Workspace-Dateien',
   'asset-sources.dataset.image.title': 'Workspace-Bilder',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medienbibliothek',
   'asset-sources.media-library.image.title': 'Medienbibliothek',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Das Release '<strong>{{title}}</strong>' wurde gelöscht.",
@@ -377,6 +381,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bestätigen',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laden',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -481,8 +487,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'veraltet',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Ohne Titel',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Verbindung verloren. Wiederverbindung…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Hat einen Fehler',
   /** Accessibility label for the icon that indicates the field has validation information */

@@ -427,10 +427,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nuovo {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Senza titolo',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': undefined, // 'Retrying…'
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Errore: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': undefined, // 'Error: <Code>{{error}}</Code>'
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': undefined, // 'The Internet connection appears to be offline.'
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': "Impossibile recuperare gli elementi dell'elenco",
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': undefined, // 'Retrying…'
+  'panes.document-list-pane.error.will-retry-automatically_other': undefined, // 'Retrying… (#{{count}}).'
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Visualizzazione di un massimo di {{limit}} documenti',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -439,6 +448,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nessun risultato trovato',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Nessun documento corrispondente',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': undefined, // 'Trying to connect…'
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Cerca nella lista',
   /** The search input for the search input on the document list pane */

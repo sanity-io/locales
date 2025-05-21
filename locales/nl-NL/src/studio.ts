@@ -160,9 +160,13 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Werkruimte bestanden',
   'asset-sources.dataset.image.title': 'Werkruimte afbeeldingen',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Bibliotheek',
   'asset-sources.media-library.image.title': 'Media Bibliotheek',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "De release '<strong>{{title}}</strong>' is verwijderd.",
@@ -375,6 +379,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bevestigen',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laden',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -479,8 +485,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'verouderd',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Zonder titel',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Verbinding verbroken. Opnieuw verbinden…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Heeft een fout',
   /** Accessibility label for the icon that indicates the field has validation information */

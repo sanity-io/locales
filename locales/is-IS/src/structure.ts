@@ -420,10 +420,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nýtt {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Ótitlað',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': undefined, // 'Retrying…'
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Villa: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': undefined, // 'Error: <Code>{{error}}</Code>'
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': undefined, // 'The Internet connection appears to be offline.'
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Gat ekki sótt lista yfir atriði',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': undefined, // 'Retrying…'
+  'panes.document-list-pane.error.will-retry-automatically_other': undefined, // 'Retrying… (#{{count}}).'
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Birtir hámark af {{limit}} skjölum',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -432,6 +441,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Engar niðurstöður fundust',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Engin passandi skjöl',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': undefined, // 'Trying to connect…'
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Leita í lista',
   /** The search input for the search input on the document list pane */
