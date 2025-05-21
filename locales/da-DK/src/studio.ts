@@ -2,29 +2,30 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Deaktiveret',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Aktiveret',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Autoopdateringer',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Sådan aktiveres',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Kopieret til udklipsholder. God kopiering!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til udklipsholder',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Nuværende version',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Sådan opgraderes',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Seneste version',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'Seneste version er {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'Opdateret',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Brugeragent',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Luk',
@@ -87,16 +88,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.accept-message':
     'Viser kun aktiver af accepterede typer: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Annuller',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Vælg',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Vælg fil',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Vælg billede',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    'Fejl ved indsættelse af aktiv. Se konsollen for mere information.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Indlæs flere',
   /** Text shown when selecting a file but there's no files to select from */
@@ -151,14 +153,20 @@ export default removeUndefinedLocaleResources({
     'Ingen dokumenter bruger dette billede',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description': 'Se konsollen for mere information.',
+  'asset-sources.common.uploader.upload-failed.title': 'Upload mislykkedes',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': 'Workspace filer',
+  'asset-sources.dataset.image.title': 'Workspace billeder',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Noget gik galt i forsøget på at finde Mediebiblioteket for dette projekt.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Mediebibliotek',
+  'asset-sources.media-library.image.title': 'Mediebibliotek',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Vent venligst mens vi forbereder dit Mediebibliotek',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -183,7 +191,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Inkluder tid',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': 'Vælg tid',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Indstil til nuværende tidspunkt',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -367,6 +375,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bekræft',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Indlæser',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Forsøger at forbinde…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -406,7 +416,7 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revision fra <em>{{date}}</em>',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'Dokumenttypen "{{type}}" blev ikke fundet',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -471,8 +481,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'forældet',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Uden titel',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Forbindelse mistet. Genopretter forbindelse…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Har fejl',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -517,7 +525,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Annuller upload',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Standard',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Upload',
   /** Uploading <FileName/> */
@@ -665,7 +673,7 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Skrivebeskyttet',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Upload filer til:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Det er ikke muligt at uploade filer her',
   /** Clear upload */
@@ -1003,7 +1011,8 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Søgning efter reference mislykkedes',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type':
+    'Det refererede dokument er af en ugyldig type ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Billedforhåndsvisning af refereret dokument',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1241,7 +1250,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Udgivet',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Denne udgivelse er arkiveret og kan ikke redigeres.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Oprettet {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1266,7 +1275,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Kopier version til ny udgivelse',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Opret udgivelse',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Ny udgivelse',
   /** Label for description in tooltip to explain release types */
@@ -1289,7 +1298,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Uden titel udgivelse',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Denne udgivelse er blevet frigjort',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' udgivelsen blev arkiveret",
   /** The toast title that will be shown the creating a release fails */
@@ -1297,9 +1306,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Udgivelsen '{{title}}' kunne ikke findes",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Denne udgivelse er blevet frigjort',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "Udgivelsen '{{title}}' blev offentliggjort",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'En version af dette dokument er allerede blevet tilføjet',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
