@@ -426,10 +426,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Uten tittel',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Prøver på nytt…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Feil: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Feil: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline':
+    'Internettforbindelsen ser ut til å være frakoblet.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kunne ikke hente listeobjekter',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Prøver på nytt…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Prøver på nytt… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Viser maksimalt {{limit}} dokumenter',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -438,6 +448,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Ingen resultater funnet',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Ingen dokumenter funnet som samsvarer',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Prøver å koble til…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Søk i liste',
   /** The search input for the search input on the document list pane */
