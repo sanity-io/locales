@@ -12,7 +12,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Удаление…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Некоторые действия с документом отключены для документов, связанных с Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Вы уверены, что хотите отменить все изменения с момента последней публикации?',
@@ -146,6 +147,9 @@ export default removeUndefinedLocaleResources({
     'Пожалуйста, подождите, пока документ будет добавлен в релиз. Это не должно занять более нескольких секунд.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Добавление документа в релиз…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Мы не смогли найти выбранную версию документа, пожалуйста, выберите другую запись из списка истории.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Этот документ будет снят с публикации как часть релиза <VersionBadge>{{title}}</VersionBadge>',
@@ -169,20 +173,27 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Закрыть группу панелей',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Редактировать в Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Этот черновик документа связан с Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Этот опубликованный документ связан с Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Эта версия документа связана с Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Узнать больше',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas позволяет создавать контент в свободной форме редактора, который автоматически отображается в Studio как структурированный контент - по мере ввода текста.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Авторство с идеей на первом месте',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Показ истории для версии <strong>{{perspective}}</strong> этого документа.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Этот вид показывает изменения, произошедшие в определенной версии этого документа. Выберите другую версию, чтобы увидеть ее изменения',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'От',
   /* The label for the history tab in the changes inspector*/
@@ -204,7 +215,7 @@ export default removeUndefinedLocaleResources({
     'Параметр предыдущего документа недействителен.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason': 'Нет других версий этого документа для сравнения.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Сравнить версии',
   /** The string used to label draft documents */
@@ -331,10 +342,15 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Синхронизация документа…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Добавить в избранное',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Удалить из избранного',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Мы не можем загрузить изменения для этого документа, вероятно, из-за политики хранения истории вашего плана, это показывает вам, как версия <strong>{{version}}</strong> сравнивается с <strong>опубликованной</strong> версией.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Сравнение с опубликованным',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Просмотреть документ <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -400,10 +416,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Новый {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Без названия',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Повторная попытка…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Ошибка: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Ошибка: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Похоже, что интернет-соединение отсутствует.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Не удалось получить список элементов',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Повторная попытка…',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Отображается максимум {{limit}} документов',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -412,6 +436,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Результаты не найдены',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Соответствующих документов не найдено',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Попытка подключения…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Поиск по списку',
   /** The search input for the search input on the document list pane */
@@ -549,4 +575,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Свернуть',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Развернуть',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Релиз с идентификатором "{{releaseId}}" не найден',
 })

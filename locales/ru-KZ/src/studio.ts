@@ -2,29 +2,30 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Отключено',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Включено',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Автообновления',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Как включить',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Скопировано в буфер обмена. Счастливого копирования!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Копировать в буфер обмена',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Текущая версия',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Как обновить',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Последняя версия',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'Последняя версия {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'Актуально',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Пользовательский агент',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Закрыть',
@@ -87,16 +88,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.accept-message':
     'Показаны только ресурсы принятых типов: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Отмена',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Выбрать',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Выбрать файл',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Выбрать изображение',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    'Ошибка при вставке ресурса. Смотрите консоль для получения дополнительной информации.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Загрузить больше',
   /** Text shown when selecting a file but there's no files to select from */
@@ -145,14 +147,21 @@ export default removeUndefinedLocaleResources({
     'Ни один документ не использует это изображение',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description':
+    'Смотрите консоль для получения дополнительной информации.',
+  'asset-sources.common.uploader.upload-failed.title': 'Не удалось загрузить',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': 'Файлы рабочей области',
+  'asset-sources.dataset.image.title': 'Изображения рабочей области',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Что-то пошло не так при попытке разрешить Медиатеку для этого проекта.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Медиатека',
+  'asset-sources.media-library.image.title': 'Медиатека',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Пожалуйста, подождите, пока мы подготовим вашу Медиатеку',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
@@ -176,7 +185,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Включить время',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': 'Выбрать время',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Установить текущее время',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -295,6 +304,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Загрузка…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Загрузка изменений…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Мы не смогли найти версию документа с идентификатором: <code>{{revisionId}}</code>, с которой вы пытаетесь сравнить. <Break/> Это, вероятно, связано с политикой хранения истории вашего плана. <Break/> Пожалуйста, выберите другую запись <strong>От</strong>.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Отредактируйте документ или выберите более старую версию во временной шкале, чтобы увидеть список изменений в этой панели.',
@@ -344,6 +356,11 @@ export default removeUndefinedLocaleResources({
     'Неизвестный тип схемы встроенного объекта',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Удалено',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Вы выбрали одну и ту же <strong>from</strong> и <strong>to</strong> ревизию, пожалуйста, выберите разные ревизии, чтобы сравнить изменения между ними.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Выбрана одна и та же ревизия',
   /** Title for the Review Changes pane */
   'changes.title': 'Просмотр изменений',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -358,6 +375,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Подтвердить',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Загрузка',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Пытаюсь подключиться…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -395,9 +414,11 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Опубликовано {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Ревизия от <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Ревизия не найдена',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'Тип документа "{{type}}" не найден',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -462,8 +483,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'устаревший',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Без названия',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Соединение потеряно. Переподключение…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Есть ошибка',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -505,7 +524,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Отменить загрузку',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'По умолчанию',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Загрузить',
   /** Uploading <FileName/> */
@@ -642,7 +661,7 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Только для чтения',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Загрузить файлы в:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Загрузка файлов здесь невозможна',
   /** Clear upload */
@@ -977,7 +996,8 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Поиск ссылки не удался',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type':
+    'Ссылочный документ имеет недопустимый тип ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text':
     'Предварительный просмотр изображения ссылочного документа',
@@ -1121,6 +1141,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Неожиданная ошибка: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Ваш браузер использует устаревший HTTP протокол для связи с Sanity. Это может привести к значительному снижению производительности.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Узнать больше',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Не показывать снова за эту сессию',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'У вас включен ручной тормоз',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Создать',
   /**
@@ -1216,7 +1246,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Опубликовано',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Этот релиз заархивирован и не может быть отредактирован.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Создано {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1241,7 +1271,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Копировать версию в новый релиз',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Создать релиз',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Новый релиз',
   /** Label for description in tooltip to explain release types */
@@ -1264,7 +1294,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Релиз без названия',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Этот релиз был откреплен',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Релиз '{{title}}' был архивирован",
   /** The toast title that will be shown the creating a release fails */
@@ -1272,9 +1302,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Релиз '{{title}}' не был найден",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Этот релиз был откреплен',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "Релиз '{{title}}' был опубликован",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1775,6 +1805,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Удалено',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Удалено: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Черновик создан',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Черновик создан: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Черновик отменен',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1788,6 +1822,8 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp':
     'Отредактировано в реальном времени: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Удалено политикой хранения',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Опубликовано',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1796,6 +1832,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Снято с публикации',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Снято с публикации: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Версия создана',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Версия создана: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Версия отменена',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Версия отменена: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
