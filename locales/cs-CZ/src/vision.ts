@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Kopírovat do schránky',
+  /** Label for deleting a query */
+  'action.delete': 'Smazat',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Upravit název',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Zastavit',
   /** Label for setting up a listener */
   'action.listen-execute': 'Poslouchat',
+  /** Label for query loading table */
+  'action.load-queries': 'Načíst dotazy',
+  /** Label for loading a query */
+  'action.load-query': 'Načíst dotaz',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Zrušit',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Načíst',
+  /** Label for saving a query */
+  'action.save-query': 'Uložit dotaz',
+  /** Label for updating a query */
+  'action.update': 'Aktualizovat',
 
+  /** Label for actions user can take */
+  'label.actions': 'Akce',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Upraveno',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nové',
+  /** Label for query type "personal" */
+  'label.personal': 'Osobní',
+  /** Label for savedAt date */
+  'label.saved-at': 'Uloženo v',
+  /** Saved queries */
+  'label.saved-queries': 'Uložené dotazy',
+  /** Search queries */
+  'label.search-queries': 'Hledat dotazy',
+  /** Share query */
+  'label.share': 'Sdílet',
+  /** Label for saved query type "team" */
+  'label.team': 'Tým',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametry nejsou platný JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'nepoužitelné',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Dotaz již byl uložen',
+  /** Save error label */
+  'save-query.error': 'Chyba při ukládání dotazu',
+  /** Save success label */
+  'save-query.success': 'Dotaz uložen',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Verze API',
