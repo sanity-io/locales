@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Kopioi leikepöydälle',
+  /** Label for deleting a query */
+  'action.delete': 'Poista',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Muokkaa otsikkoa',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Pysäytä',
   /** Label for setting up a listener */
   'action.listen-execute': 'Kuuntele',
+  /** Label for query loading table */
+  'action.load-queries': 'Lataa kyselyt',
+  /** Label for loading a query */
+  'action.load-query': 'Lataa kysely',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Peruuta',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Hae',
+  /** Label for saving a query */
+  'action.save-query': 'Tallenna kysely',
+  /** Label for updating a query */
+  'action.update': 'Päivitä',
 
+  /** Label for actions user can take */
+  'label.actions': 'Toiminnot',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Muokattu',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Uusi',
+  /** Label for query type "personal" */
+  'label.personal': 'Henkilökohtainen',
+  /** Label for savedAt date */
+  'label.saved-at': 'Tallennettu',
+  /** Saved queries */
+  'label.saved-queries': 'Tallennetut kyselyt',
+  /** Search queries */
+  'label.search-queries': 'Etsi kyselyitä',
+  /** Share query */
+  'label.share': 'Jaa',
+  /** Label for saved query type "team" */
+  'label.team': 'Tiimi',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrit eivät ole kelvollista JSONia',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'ei sovellu',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Kysely on jo tallennettu',
+  /** Save error label */
+  'save-query.error': 'Virhe tallennettaessa kyselyä',
+  /** Save success label */
+  'save-query.success': 'Kysely tallennettu',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versio',

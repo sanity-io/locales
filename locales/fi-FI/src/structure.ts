@@ -159,6 +159,9 @@ export default removeUndefinedLocaleResources({
     'Odota hetki, kun asiakirjaa lisätään julkaisuun. Sen ei pitäisi kestää kauempaa kuin muutama sekunti.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Lisätään asiakirjaa julkaisuun…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Emme löytäneet valittua dokumentin versiota, valitse toinen merkintä historialistasta.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tämä dokumentti poistetaan julkaisemattomana osana <VersionBadge>{{title}}</VersionBadge> julkaisua',
@@ -197,6 +200,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Idea ensin kirjoittaminen',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Näytetään historian <strong>{{perspective}}</strong> versiolle tästä dokumentista.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Tämä näkymä näyttää muutokset, jotka ovat tapahtuneet tietyn version tässä dokumentissa. Valitse eri versio nähdäksesi sen muutokset',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Alkaen',
   /* The label for the history tab in the changes inspector*/
@@ -364,6 +373,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Poista suosikeista',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Emme pysty lataamaan muutoksia tähän dokumenttiin, todennäköisesti johtuen suunnitelmasi historian säilytyskäytännöstä, tämä näyttää kuinka <strong>{{version}}</strong> versio vertautuu <strong>julkaistuun</strong> versioon.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Vertailu julkaistuun',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Tutki <VersionBadge>{{releaseTitle}}</VersionBadge> dokumenttia',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -590,4 +604,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Tiivistä',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Laajenna',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Julkaisua tunnuksella "{{releaseId}}" ei löydy',
 })
