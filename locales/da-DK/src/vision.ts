@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Kopier til udklipsholder',
+  /** Label for deleting a query */
+  'action.delete': 'Slet',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Rediger titel',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stop',
   /** Label for setting up a listener */
   'action.listen-execute': 'Lyt',
+  /** Label for query loading table */
+  'action.load-queries': 'Indlæs forespørgsler',
+  /** Label for loading a query */
+  'action.load-query': 'Indlæs forespørgsel',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Annuller',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Hent',
+  /** Label for saving a query */
+  'action.save-query': 'Gem forespørgsel',
+  /** Label for updating a query */
+  'action.update': 'Opdater',
 
+  /** Label for actions user can take */
+  'label.actions': 'Handlinger',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Redigeret',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Ny',
+  /** Label for query type "personal" */
+  'label.personal': 'Personlig',
+  /** Label for savedAt date */
+  'label.saved-at': 'Gemt den',
+  /** Saved queries */
+  'label.saved-queries': 'Gemte forespørgsler',
+  /** Search queries */
+  'label.search-queries': 'Søg i forespørgsler',
+  /** Share query */
+  'label.share': 'Del',
+  /** Label for saved query type "team" */
+  'label.team': 'Hold',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametre er ikke gyldig JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'i/t',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Forespørgsel allerede gemt',
+  /** Save error label */
+  'save-query.error': 'Fejl ved gemning af forespørgsel',
+  /** Save success label */
+  'save-query.success': 'Forespørgsel gemt',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API version',
