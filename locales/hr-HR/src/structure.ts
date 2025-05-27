@@ -158,6 +158,9 @@ export default removeUndefinedLocaleResources({
     'Molimo pričekajte dok se dokument ne doda u izdanje. Ne bi trebalo trajati duže od nekoliko sekundi.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Dodavanje dokumenta u izdanje…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Nismo mogli pronaći odabranu reviziju dokumenta, molimo odaberite drugi unos iz povijesne liste.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ovaj dokument će biti nepublikovan kao dio <VersionBadge>{{title}}</VersionBadge> izdanja',
@@ -196,6 +199,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Autorstvo s idejom na prvom mjestu',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Prikazuje povijest za <strong>{{perspective}}</strong> verziju ovog dokumenta.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Ovaj prikaz pokazuje promjene koje su se dogodile u određenoj verziji ovog dokumenta. Odaberite drugu verziju da biste vidjeli njene promjene',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Od',
   /* The label for the history tab in the changes inspector*/
@@ -360,6 +369,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Ukloni iz favorita',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Nismo u mogućnosti učitati promjene za ovaj dokument, vjerojatno zbog politike zadržavanja povijesti vašeg plana, ovo vam pokazuje kako se <strong>{{version}}</strong> verzija uspoređuje s <strong>objavljenom</strong> verzijom.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Usporedba s objavljenim',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Pregledaj <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -426,10 +440,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Novi {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Bez naslova',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Ponovni pokušaj…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Greška: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Greška: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Čini se da je internetska veza izvan mreže.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nije moguće dohvatiti stavke popisa',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Ponovni pokušaj…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Ponovni pokušaj… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Prikazuje se maksimalno {{limit}} dokumenata',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -438,6 +461,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nema rezultata',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Nema odgovarajućih dokumenata',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Pokušavam se povezati…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Pretraži popis',
   /** The search input for the search input on the document list pane */
@@ -572,4 +597,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Skupi',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Proširi',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Izdanje s id-om "{{releaseId}}" nije pronađeno',
 })

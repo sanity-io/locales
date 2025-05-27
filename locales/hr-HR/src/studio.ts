@@ -160,9 +160,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Datoteke radnog prostora',
   'asset-sources.dataset.image.title': 'Slike radnog prostora',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Došlo je do pogreške pri pokušaju rješavanja Media Library za ovaj projekt.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medijska knjižnica',
   'asset-sources.media-library.image.title': 'Medijska knjižnica',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Molimo pričekajte dok pripremamo vašu Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",
@@ -309,6 +315,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Učitavanje…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Učitavanje promjena…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nismo mogli pronaći reviziju dokumenta s id: <code>{{revisionId}}</code> koju pokušavate usporediti. <Break/> To je vjerojatno zbog politike zadržavanja povijesti vašeg plana. <Break/> Molimo odaberite drugi <strong>From</strong> unos.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Uredite dokument ili odaberite stariju verziju na vremenskoj traci kako bi se popis promjena pojavio na ovoj ploči.',
@@ -358,6 +367,11 @@ export default removeUndefinedLocaleResources({
     'Nepoznata vrsta sheme ugrađenog objekta',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Uklonjeno',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Odabrali ste istu <strong>from</strong> i <strong>to</strong> reviziju, molimo odaberite različite revizije kako biste usporedili promjene između njih.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Odabrana ista revizija',
   /** Title for the Review Changes pane */
   'changes.title': 'Pregled promjena',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -372,6 +386,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Potvrdi',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Učitavanje',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Pokušavamo se povezati…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -409,6 +425,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Objavljeno {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revizija od <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revizija nije pronađena',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tip dokumenta "{{type}}" nije pronađen',
@@ -476,8 +494,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'zastarjelo',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Bez naslova',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Izgubljena veza. Ponovno povezivanje…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Ima grešku',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1154,6 +1170,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Neočekivana greška: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Vaš preglednik koristi zastarjeli HTTP protokol za komunikaciju sa Sanity. To može rezultirati znatno smanjenom učinkovitošću.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Saznajte više',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ne prikazuj ponovno za ovu sesiju',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Imate uključene kočnice',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Stvori',
   /**
@@ -1820,6 +1846,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Izbrisano',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Izbrisano: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Nacrt stvoren',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Nacrt stvoren: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Odbačena skica',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1832,6 +1862,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Uređeno uživo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Uređeno uživo: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Izbrisano zbog politike zadržavanja',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Objavljeno',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1840,6 +1872,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Poništena objava',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Poništena objava: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Verzija stvorena',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Verzija stvorena: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Verzija odbačena',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Verzija odbačena: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
