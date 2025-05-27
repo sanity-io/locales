@@ -12,7 +12,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Siliniyor…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    "Belge Canvas'a bağlandığı için bazı belge işlemleri devre dışı bırakıldı",
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Yayımlanandan bu yana yapılan tüm değişiklikleri atmak istediğinizden emin misiniz?',
@@ -154,6 +155,9 @@ export default removeUndefinedLocaleResources({
     'Belge yayına eklenirken lütfen bekleyin. İşlem birkaç saniyeden fazla sürmemelidir.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Belge yayına ekleniyor…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Seçilen belge revizyonunu bulamadık, lütfen geçmiş listesinden başka bir giriş seçin.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Bu belge <VersionBadge>{{title}}</VersionBadge> sürümünün bir parçası olarak yayından kaldırılacak',
@@ -177,20 +181,27 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Panel grubunu kapat',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': "Canvas'ta Düzenle",
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': "Bu taslak belge Canvas'a bağlı",
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': "Bu canlı belge Canvas'a bağlı",
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': "Bu sürüm belgesi Canvas'a bağlı",
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Daha fazla bilgi',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    "Canvas, yazdıkça otomatik olarak Studio'ya yapılandırılmış içerik olarak geri haritalanan serbest form editöründe yazarlık yapmanızı sağlar.",
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Önce fikir yazarlığı',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Bu belgenin <strong>{{perspective}}</strong> sürümü için geçmişi gösteriliyor.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Bu görünüm, bu belgenin belirli bir sürümünde meydana gelen değişiklikleri gösterir. Farklı bir sürümün değişikliklerini görmek için başka bir sürüm seçin',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Başlangıç',
   /* The label for the history tab in the changes inspector*/
@@ -211,7 +222,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Önceki belge parametresi geçersiz.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Bu belgenin karşılaştırılacak başka sürümleri yok.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Versiyonları karşılaştır',
   /** The string used to label draft documents */
@@ -350,10 +362,15 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Belge senkronize ediliyor…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Favorilere ekle',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Favorilerden çıkar',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Planınızın geçmiş saklama politikası nedeniyle bu belgenin değişikliklerini yükleyemiyoruz, bu size <strong>{{version}}</strong> sürümünün <strong>yayınlanmış</strong> sürümle nasıl karşılaştığını gösterir.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Yayınlanmış ile karşılaştırılıyor',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> belgesini incele',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -418,10 +435,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Yeni {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Başlıksız',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Yeniden deniyor…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Hata: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Hata: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'İnternet bağlantısı çevrimdışı gibi görünüyor.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Liste öğeleri getirilemedi',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Yeniden deniyor…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Yeniden deniyor… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Maksimum {{limit}} belge gösteriliyor',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -430,6 +456,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Sonuç bulunamadı',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Eşleşen belge yok',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Bağlanmaya çalışılıyor…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Listeyi ara',
   /** The search input for the search input on the document list pane */
@@ -562,4 +590,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Daralt',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Genişlet',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': '"{{releaseId}}" id\'li sürüm bulunamadı',
 })
