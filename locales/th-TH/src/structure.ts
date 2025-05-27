@@ -144,6 +144,9 @@ export default removeUndefinedLocaleResources({
     'โปรดรอสักครู่ขณะที่เอกสารกำลังถูกเพิ่มไปยังการปล่อย ไม่ควรใช้เวลานานกว่าไม่กี่วินาที',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'กำลังเพิ่มเอกสารไปยังการปล่อย…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'เราไม่พบการแก้ไขเอกสารที่เลือก กรุณาเลือกอีกครั้งจากรายการประวัติ',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'เอกสารนี้จะไม่ได้รับการเผยแพร่เป็นส่วนหนึ่งของการปล่อย <VersionBadge>{{title}}</VersionBadge>',
@@ -182,6 +185,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'การเขียนที่ให้ความสำคัญกับไอเดียเป็นอันดับแรก',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'กำลังแสดงประวัติสำหรับเวอร์ชัน <strong>{{perspective}}</strong> ของเอกสารนี้',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'มุมมองนี้แสดงการเปลี่ยนแปลงที่เกิดขึ้นในเวอร์ชันเฉพาะของเอกสารนี้ เลือกเวอร์ชันอื่นเพื่อดูการเปลี่ยนแปลงของมัน',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'จาก',
   /* The label for the history tab in the changes inspector*/
@@ -329,6 +338,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'ลบออกจากรายการโปรด',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'เราไม่สามารถโหลดการเปลี่ยนแปลงสำหรับเอกสารนี้ได้ อาจเป็นเพราะนโยบายการเก็บรักษาประวัติของแผนของคุณ นี่แสดงให้คุณเห็นว่าเวอร์ชัน <strong>{{version}}</strong> เปรียบเทียบกับเวอร์ชัน <strong>published</strong> อย่างไร',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'การเปรียบเทียบกับเวอร์ชันที่เผยแพร่',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'ตรวจสอบเอกสาร <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -548,4 +562,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'ย่อ',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'ขยาย',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'ไม่พบการเผยแพร่ที่มีรหัส "{{releaseId}}"',
 })

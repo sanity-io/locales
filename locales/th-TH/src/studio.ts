@@ -292,6 +292,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'กำลังโหลด…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'กำลังโหลดการเปลี่ยนแปลง…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'เราไม่สามารถหาการแก้ไขเอกสารด้วยไอดี: <code>{{revisionId}}</code> ที่คุณกำลังพยายามเปรียบเทียบได้ <Break/> นี่อาจเป็นเพราะนโยบายการเก็บประวัติของแผนของคุณ <Break/> กรุณาเลือก <strong>From</strong> ที่แตกต่างกัน',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'แก้ไขเอกสารหรือเลือกเวอร์ชันที่เก่ากว่าในไทม์ไลน์เพื่อดูรายการการเปลี่ยนแปลงที่ปรากฏในแผงนี้',
@@ -341,6 +344,11 @@ export default removeUndefinedLocaleResources({
     'ประเภทสคีมาของออบเจ็กต์อินไลน์ที่ไม่รู้จัก',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'ถูกลบ',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'คุณได้เลือกการแก้ไข <strong>from</strong> และ <strong>to</strong> ที่เหมือนกัน, กรุณาเลือกการแก้ไขที่แตกต่างกันเพื่อเปรียบเทียบการเปลี่ยนแปลงระหว่างพวกเขา',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'เลือกการแก้ไขเดียวกัน',
   /** Title for the Review Changes pane */
   'changes.title': 'ตรวจสอบการเปลี่ยนแปลง',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -394,6 +402,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'เผยแพร่ {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'การแก้ไขจาก <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'ไม่พบการแก้ไข',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ไม่พบประเภทเอกสาร "{{type}}"',
@@ -1105,6 +1115,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'เกิดข้อผิดพลาดที่ไม่คาดคิด: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'เบราว์เซอร์ของคุณกำลังใช้โปรโตคอล HTTP ที่ล้าสมัยในการสื่อสารกับ Sanity นี่อาจทำให้ประสิทธิภาพลดลงอย่างมาก',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'เรียนรู้เพิ่มเติม',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'ไม่แสดงอีกในเซสชันนี้',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'คุณกำลังใช้เบรก',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'สร้าง',
   /**
@@ -1723,6 +1743,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'ถูกลบ',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'ถูกลบเมื่อ: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'สร้างร่าง',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'สร้างร่าง: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'ร่างถูกทิ้ง',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1735,6 +1759,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'แก้ไขสด',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'แก้ไขสดเมื่อ: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'ถูกลบโดยนโยบายการเก็บข้อมูล',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'เผยแพร่แล้ว',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1743,6 +1769,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'ยกเลิกการเผยแพร่',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'ยกเลิกการเผยแพร่: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'สร้างเวอร์ชัน',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'สร้างเวอร์ชัน: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'เวอร์ชันถูกทิ้ง',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'เวอร์ชันถูกทิ้ง: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
