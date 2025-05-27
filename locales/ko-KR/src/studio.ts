@@ -315,6 +315,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '로딩 중…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '변경 사항 불러오는 중…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    '문서 리비전을 찾을 수 없습니다. id: <code>{{revisionId}}</code> 비교하려는. <Break/> 이것은 아마도 귀하의 계획의 역사 보존 정책 때문일 것입니다. <Break/> 다른 <strong>From</strong> 항목을 선택해 주세요.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     '이 패널에 변경 사항 목록이 표시되려면 문서를 편집하거나 타임라인에서 이전 버전을 선택하세요.',
@@ -363,6 +366,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '알 수 없는 스키마 유형',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '제거됨',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    '동일한 <strong>from</strong> 및 <strong>to</strong> 리비전을 선택했습니다. 변경 사항을 비교하려면 다른 리비전을 선택하세요.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': '동일한 리비전이 선택되었습니다',
   /** Title for the Review Changes pane */
   'changes.title': '변경 사항 검토',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -416,6 +424,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': '{{date}}에 게시됨',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '개정 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': '리비전을 찾을 수 없습니다',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '문서 유형 "{{type}}"을(를) 찾을 수 없습니다',
@@ -1156,6 +1166,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '예상치 못한 오류: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    '브라우저가 Sanity와 통신하기 위해 구식 HTTP 프로토콜을 사용하고 있습니다. 이로 인해 성능이 크게 저하될 수 있습니다.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': '더 알아보기',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': '이 세션에 다시 표시하지 않기',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': '브레이크를 걸고 있습니다',
+
   /** Button label for "Create new document" button */
   'new-document.button': '새로 만들기',
   /**
@@ -1832,6 +1852,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '삭제됨',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '삭제됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': '초안 생성됨',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': '초안 생성됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '초안 폐기됨',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1844,6 +1868,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '실시간 편집됨',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '실시간 편집됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': '보존 정책에 의해 삭제됨',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '게시됨',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1852,6 +1878,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '게시 취소됨',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '게시 취소됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': '버전 생성됨',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': '버전 생성됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': '버전 폐기됨',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': '버전 폐기됨: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
