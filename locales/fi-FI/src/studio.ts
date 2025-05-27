@@ -314,6 +314,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Ladataan…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Ladataan muutoksia…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Emme löytäneet dokumentin versiota tunnuksella: <code>{{revisionId}}</code>, jota yrität verrata. <Break/> Tämä johtuu todennäköisesti suunnitelmasi historian säilytyskäytännöstä. <Break/> Valitse eri <strong>From</strong> -merkintä.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Muokkaa asiakirjaa tai valitse vanhempi versio aikajanalta nähdäksesi muutoslistan tässä paneelissa.',
@@ -362,6 +365,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Tuntematon skeeman tyyppi',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Poistettu',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Olet valinnut saman <strong>from</strong> ja <strong>to</strong> version, valitse eri versiot vertaillaksesi niiden välisiä muutoksia.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Sama versio valittu',
   /** Title for the Review Changes pane */
   'changes.title': 'Tarkista muutokset',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -415,6 +423,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Julkaistu {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Versio päivämäärästä <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Versiota ei löydy',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Asiakirjatyyppiä "{{type}}" ei löydy',
@@ -1159,6 +1169,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Odottamaton virhe: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Selaimesi käyttää vanhentunutta HTTP-protokollaa kommunikoidakseen Sanityn kanssa. Tämä voi johtaa merkittävästi heikentyneeseen suorituskykyyn.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Lue lisää',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Älä näytä uudelleen tällä istunnolla',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Sinulla on jarrut päällä',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Luo',
   /**
@@ -1821,6 +1841,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Poistettu',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Poistettu: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Luonnos luotu',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Luonnos luotu: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Luonnos hylätty',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1833,6 +1857,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Muokattu livenä',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Muokattu livenä: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Poistettu säilytyskäytännön mukaan',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Julkaistu',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1841,6 +1867,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Julkaisematon',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Julkaisematon: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versio luotu',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versio luotu: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versio hylätty',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versio hylätty: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
