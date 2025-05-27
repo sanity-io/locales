@@ -297,6 +297,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Đang tải…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Đang tải thay đổi…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Chúng tôi không thể tìm thấy phiên bản tài liệu với id: <code>{{revisionId}}</code> mà bạn đang cố gắng so sánh. <Break/> Điều này có thể là do chính sách giữ lịch sử của gói dịch vụ của bạn. <Break/> Vui lòng chọn một mục <strong>Từ</strong> khác.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Chỉnh sửa tài liệu hoặc chọn một phiên bản cũ hơn trong dòng thời gian để xem danh sách các thay đổi xuất hiện trong bảng điều khiển này.',
@@ -346,6 +349,11 @@ export default removeUndefinedLocaleResources({
     'Loại sơ đồ đối tượng nội tuyến không xác định',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Đã xóa',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Bạn đã chọn cùng một phiên bản <strong>từ</strong> và <strong>đến</strong>, vui lòng chọn các phiên bản khác nhau để so sánh sự thay đổi giữa chúng.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Đã chọn cùng một phiên bản',
   /** Title for the Review Changes pane */
   'changes.title': 'Xem lại các thay đổi',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -399,6 +407,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Đã xuất bản {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Phiên bản từ <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Không tìm thấy phiên bản',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Không tìm thấy loại tài liệu "{{type}}"',
@@ -1112,6 +1122,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Lỗi không mong đợi: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Trình duyệt của bạn đang sử dụng giao thức HTTP lỗi thời để giao tiếp với Sanity. Điều này có thể dẫn đến hiệu suất làm việc giảm đáng kể.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Tìm hiểu thêm',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Không hiển thị lại trong phiên này',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Bạn đang bật phanh',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Tạo mới',
   /**
@@ -1733,6 +1753,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Đã xóa',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Đã xóa: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Bản nháp đã được tạo',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Bản nháp đã được tạo: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Bản nháp đã bỏ',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1745,6 +1769,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Chỉnh sửa trực tiếp',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Chỉnh sửa trực tiếp: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Đã xóa do chính sách giữ lịch sử',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Đã xuất bản',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1753,6 +1779,15 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Chưa xuất bản',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Chưa xuất bản: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Phiên bản đã được tạo',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Phiên bản đã được tạo: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Phiên bản đã bị loại bỏ',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp':
+    'Phiên bản đã bị loại bỏ: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

@@ -146,6 +146,9 @@ export default removeUndefinedLocaleResources({
     'Vui lòng chờ trong khi tài liệu được thêm vào bản phát hành. Quá trình này không nên mất nhiều hơn vài giây.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Đang thêm tài liệu vào bản phát hành…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Chúng tôi không thể tìm thấy phiên bản tài liệu đã chọn, vui lòng chọn một mục khác từ danh sách lịch sử.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tài liệu này sẽ được gỡ xuất bản như một phần của bản phát hành <VersionBadge>{{title}}</VersionBadge>',
@@ -184,6 +187,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Sáng tạo ý tưởng đầu tiên',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Đang hiển thị lịch sử cho phiên bản <strong>{{perspective}}</strong> của tài liệu này.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Chế độ xem này hiển thị những thay đổi đã xảy ra trong một phiên bản cụ thể của tài liệu này. Chọn một phiên bản khác để xem những thay đổi của nó',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Từ',
   /* The label for the history tab in the changes inspector*/
@@ -335,6 +344,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Xóa khỏi mục yêu thích',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Chúng tôi không thể tải những thay đổi cho tài liệu này, có thể do chính sách giữ lịch sử của gói dịch vụ của bạn, điều này cho bạn thấy phiên bản <strong>{{version}}</strong> so sánh như thế nào với phiên bản <strong>đã xuất bản</strong>.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'So sánh với phiên bản đã xuất bản',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Kiểm tra tài liệu <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -559,4 +573,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Thu gọn',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Mở rộng',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Không tìm thấy phiên bản với id "{{releaseId}}"',
 })
