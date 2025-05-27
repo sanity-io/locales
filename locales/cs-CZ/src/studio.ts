@@ -314,6 +314,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Načítání…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Načítání změn…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nemohli jsme najít revizi dokumentu s id: <code>{{revisionId}}</code>, kterou se snažíte porovnat. <Break/> To je pravděpodobně kvůli politice uchovávání historie vašeho plánu. <Break/> Prosím, vyberte jiný <strong>From</strong> záznam.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Upravte dokument nebo vyberte starší verzi v časové ose, aby se v tomto panelu zobrazil seznam změn.',
@@ -362,6 +365,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Neznámý typ schématu',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Odebráno',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Vybrali jste stejnou revizi <strong>from</strong> a <strong>to</strong>, prosím vyberte různé revize pro porovnání změn mezi nimi.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Vybrána stejná revize',
   /** Title for the Review Changes pane */
   'changes.title': 'Přehled změn',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -415,6 +423,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publikováno {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revize od <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revize nenalezena',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Typ dokumentu "{{type}}" nebyl nalezen',
@@ -1159,6 +1169,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Neočekávaná chyba: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Váš prohlížeč používá zastaralý HTTP protokol pro komunikaci se Sanity. To může vést k výraznému snížení výkonu.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Zjistit více',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Znovu nezobrazovat v této relaci',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Máte zapnutou ruční brzdu',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Vytvořit',
   /**
@@ -1823,6 +1843,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Smazáno',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Smazáno: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Vytvořen návrh',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Vytvořen návrh: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Zahozený koncept',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1835,6 +1859,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editováno živě',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editováno živě: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Smazáno zásadami uchovávání',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publikováno',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1843,6 +1869,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Nepublikováno',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Nepublikováno: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Vytvořena verze',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Vytvořena verze: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Verze zahozena',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Verze zahozena: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

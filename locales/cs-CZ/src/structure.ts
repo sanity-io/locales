@@ -157,6 +157,9 @@ export default removeUndefinedLocaleResources({
     'Vyčkejte prosím, než bude dokument přidán do release. Nemělo by to trvat déle než několik sekund.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Přidávání dokumentu do release…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Nemohli jsme najít vybranou revizi dokumentu, prosím vyberte jiný záznam ze seznamu historie.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tento dokument bude nepublikován jako součást vydání <VersionBadge>{{title}}</VersionBadge>',
@@ -195,6 +198,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Autorství s myšlenkou na prvním místě',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Zobrazuje historii pro verzi <strong>{{perspective}}</strong> tohoto dokumentu.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Tento pohled ukazuje změny, které nastaly ve specifické verzi tohoto dokumentu. Vyberte jinou verzi, abyste viděli její změny',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Od',
   /* The label for the history tab in the changes inspector*/
@@ -359,6 +368,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Odebrat z oblíbených',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Nemůžeme načíst změny pro tento dokument, pravděpodobně kvůli politice uchovávání historie vašeho plánu, toto vám ukazuje, jak se verze <strong>{{version}}</strong> porovnává s verzí <strong>published</strong>.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Porovnání s publikovanou verzí',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Prozkoumat dokument <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -585,4 +599,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Sbalit',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Rozbalit',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Vydání s ID "{{releaseId}}" nebylo nalezeno',
 })
