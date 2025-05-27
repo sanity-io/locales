@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Sao chép vào clipboard',
+  /** Label for deleting a query */
+  'action.delete': 'Xóa',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Chỉnh sửa tiêu đề',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Dừng lại',
   /** Label for setting up a listener */
   'action.listen-execute': 'Lắng nghe',
+  /** Label for query loading table */
+  'action.load-queries': 'Tải các truy vấn',
+  /** Label for loading a query */
+  'action.load-query': 'Tải truy vấn',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Hủy bỏ',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Truy vấn',
+  /** Label for saving a query */
+  'action.save-query': 'Lưu truy vấn',
+  /** Label for updating a query */
+  'action.update': 'Cập nhật',
 
+  /** Label for actions user can take */
+  'label.actions': 'Hành động',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Đã chỉnh sửa',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Mới',
+  /** Label for query type "personal" */
+  'label.personal': 'Cá nhân',
+  /** Label for savedAt date */
+  'label.saved-at': 'Đã lưu lúc',
+  /** Saved queries */
+  'label.saved-queries': 'Các truy vấn đã lưu',
+  /** Search queries */
+  'label.search-queries': 'Tìm kiếm truy vấn',
+  /** Share query */
+  'label.share': 'Chia sẻ',
+  /** Label for saved query type "team" */
+  'label.team': 'Nhóm',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Tham số không phải là JSON hợp lệ',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'không áp dụng',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Truy vấn đã được lưu',
+  /** Save error label */
+  'save-query.error': 'Lỗi khi lưu truy vấn',
+  /** Save success label */
+  'save-query.success': 'Truy vấn đã được lưu',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Phiên bản API',
