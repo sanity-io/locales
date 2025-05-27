@@ -146,6 +146,9 @@ export default removeUndefinedLocaleResources({
     '릴리스에 문서가 추가될 때까지 잠시만 기다려 주십시오. 몇 초 이상 걸리지 않을 것입니다.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': '릴리스에 문서 추가 중…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    '선택한 문서 리비전을 찾을 수 없습니다. 기록 목록에서 다른 항목을 선택해 주세요.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '이 문서는 <VersionBadge>{{title}}</VersionBadge> 릴리스의 일부로 발행 취소될 예정입니다',
@@ -184,6 +187,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': '아이디어 우선 작성',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    '이 문서의 <strong>{{perspective}}</strong> 버전에 대한 기록을 보여줍니다.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    '이 뷰는 이 문서의 특정 버전에서 발생한 변경 사항을 보여줍니다. 다른 버전을 선택하여 해당 변경 사항을 확인하세요',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '에서',
   /* The label for the history tab in the changes inspector*/
@@ -346,6 +355,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': '즐겨찾기에서 제거',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    '문서 변경 사항을 불러올 수 없습니다. 아마도 귀하의 플랜의 기록 보존 정책 때문일 것입니다. 이것은 <strong>{{version}}</strong> 버전이 <strong>published</strong> 버전과 어떻게 비교되는지 보여줍니다.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': '발행된 것과 비교',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 문서 검사',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -565,4 +579,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': '접기',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': '펼치기',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip':
+    '아이디 "{{releaseId}}"를 가진 릴리스를 찾을 수 없습니다',
 })

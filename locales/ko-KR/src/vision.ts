@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': '클립보드에 복사',
+  /** Label for deleting a query */
+  'action.delete': '삭제',
+  /** Label for editing a query's title */
+  'action.edit-title': '제목 편집',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': '중지',
   /** Label for setting up a listener */
   'action.listen-execute': '듣기 설정',
+  /** Label for query loading table */
+  'action.load-queries': '쿼리 불러오기',
+  /** Label for loading a query */
+  'action.load-query': '쿼리 불러오기',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': '취소',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': '가져오기',
+  /** Label for saving a query */
+  'action.save-query': '쿼리 저장',
+  /** Label for updating a query */
+  'action.update': '업데이트',
 
+  /** Label for actions user can take */
+  'label.actions': '액션',
+  /** Label for saved queries that have been edited */
+  'label.edited': '편집됨',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': '새로운',
+  /** Label for query type "personal" */
+  'label.personal': '개인',
+  /** Label for savedAt date */
+  'label.saved-at': '저장된 시간',
+  /** Saved queries */
+  'label.saved-queries': '저장된 쿼리',
+  /** Search queries */
+  'label.search-queries': '쿼리 검색',
+  /** Share query */
+  'label.share': '공유',
+  /** Label for saved query type "team" */
+  'label.team': '팀',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': '파라미터가 유효한 JSON이 아닙니다',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': '해당 없음',
+
+  /** Query already saved error label */
+  'save-query.already-saved': '쿼리가 이미 저장됨',
+  /** Save error label */
+  'save-query.error': '쿼리 저장 오류',
+  /** Save success label */
+  'save-query.success': '쿼리 저장됨',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 버전',
