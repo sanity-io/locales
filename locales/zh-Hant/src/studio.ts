@@ -2,29 +2,29 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': '已禁用',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': '已啟用',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': '自動更新',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': '如何啟用',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text': '已複製到剪貼簿。快樂粘貼！',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': '複製到剪貼簿',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': '當前版本',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': '如何升級',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': '最新版本',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': '最新版本是 {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': '已是最新',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': '用戶代理',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': '關閉',
@@ -86,16 +86,16 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message': '僅顯示接受類型的資產：<strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': '取消',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': '選擇',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': '選擇檔案',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': '選擇圖片',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error': '插入資產時出錯。請查看控制台以獲取更多信息。',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '繼續讀取',
   /** Text shown when selecting a file but there's no files to select from */
@@ -140,14 +140,19 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero': '沒有文件正在使用這張圖片',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description': '請查看控制台以獲取更多信息。',
+  'asset-sources.common.uploader.upload-failed.title': '上傳失敗',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': '工作區文件',
+  'asset-sources.dataset.image.title': '工作區圖像',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    '嘗試解析此項目的媒體庫時出了些問題。',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': '媒體庫',
+  'asset-sources.media-library.image.title': '媒體庫',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': '請稍候，我們正在準備您的媒體庫',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': '「<strong>{{title}}</strong>」發布已被刪除。',
@@ -171,7 +176,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '包括時間',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': '選擇時間',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': '設為當前時間',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -282,6 +287,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '讀取中…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '正在讀取更改…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    '我們找不到您嘗試比較的文檔修訂版，其 id 為：<code>{{revisionId}}</code>。<Break/> 這可能是由於您計劃的歷史保留政策。<Break/> 請選擇不同的 <strong>From</strong> 項目。',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     '編輯文件或在時間線中選擇較舊的版本，以在此面板中看到更改列表。',
@@ -329,6 +337,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '未知的內嵌物件架構類型',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '已移除',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    '您選擇了相同的<strong>from</strong>和<strong>to</strong>修訂版，請選擇不同的修訂版來比較它們之間的變化。',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': '選擇了相同的修訂版',
   /** Title for the Review Changes pane */
   'changes.title': '回顧改動',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -343,6 +356,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': '確認',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '讀取中',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': '嘗試連接中…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -380,9 +395,11 @@ export default removeUndefinedLocaleResources({
   'document-status.published': '發布於 {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '修訂自 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': '未找到修訂版',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': '未找到文件類型"{{type}}"',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -447,8 +464,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': '已棄用',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '無標題',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': '連接丟失。重新連接中…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': '有錯誤',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -487,7 +502,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': '取消上傳',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': '預設',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': '上傳',
   /** Uploading <FileName/> */
@@ -619,7 +634,7 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': '唯讀',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': '將文件上傳至：',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': '無法在此上傳檔案',
   /** Clear upload */
@@ -940,7 +955,7 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': '參考搜索失敗',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type': '參照的文檔類型無效 ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': '參考文件的圖片預覽',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1079,6 +1094,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外錯誤：{{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    '您的瀏覽器正在使用過時的HTTP協議與Sanity通信。這可能導致性能大幅下降。',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': '了解更多',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': '本次會話不再顯示',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': '您已經開啟了剎車',
+
   /** Button label for "Create new document" button */
   'new-document.button': '創建',
   /**
@@ -1171,7 +1196,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': '已發布',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': '此發布已存檔，無法編輯。',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': '創建於 {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1195,7 +1220,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': '複製版本到新發布',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': '創建發布',
   /** Title for creating releases dialog */
   'release.dialog.create.title': '新建發布',
   /** Label for description in tooltip to explain release types */
@@ -1217,7 +1242,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': '未命名發布',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': '此發布已被取消固定',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': '「{{title}}」發布已存檔',
   /** The toast title that will be shown the creating a release fails */
@@ -1225,9 +1250,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "找不到 '{{title}}' 發布",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': '此發布已被取消固定',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': '「{{title}}」發布已發布',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文件的一個版本已經被添加',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1685,6 +1710,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '已刪除',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '刪除時間：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': '草稿已創建',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': '草稿創建時間：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '已捨棄草稿',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1697,6 +1726,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '即時編輯',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '即時編輯時間：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': '由保留政策刪除',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '已發布',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1705,6 +1736,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '未發布',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '未發布：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': '版本已創建',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': '版本創建時間：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': '版本已丟棄',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': '版本丟棄時間：{{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

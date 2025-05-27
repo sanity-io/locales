@@ -12,7 +12,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': '正在刪除…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip': '由於文檔與 Canvas 鏈接，某些文檔操作被禁用',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '您確定要放棄自上次發布以來的所有更改嗎？',
@@ -135,6 +135,9 @@ export default removeUndefinedLocaleResources({
   'banners.release.waiting.description': '請耐心等待，文件正在添加到發布中。這應該不會超過幾秒鐘。',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': '正在將文件添加到發布中…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    '我們找不到所選的文檔修訂版本，請從歷史列表中選擇另一個條目。',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '此文件將作為<VersionBadge>{{title}}</VersionBadge>發布的一部分而取消發布',
@@ -158,20 +161,25 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': '關閉窗格組',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': '在 Canvas 中編輯',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': '此草稿文檔與 Canvas 鏈接',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': '此現行文檔與 Canvas 鏈接',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': '此版本文檔與 Canvas 鏈接',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': '了解更多',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas 讓您在自由形式的編輯器中創作，自動映射回 Studio 作為結構化內容 - 隨著您的輸入。',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': '首先構思創作',
 
+  /** The description for the changes banner */
+  'changes.banner.description': '顯示此文檔的<strong>{{perspective}}</strong>版本的歷史。',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip': '此視圖顯示特定版本文檔中發生的更改。選擇不同的版本以查看其更改',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '從',
   /* The label for the history tab in the changes inspector*/
@@ -191,7 +199,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': '上一個文件參數無效。',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason': '沒有其他版本的此文檔可供比較。',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': '比較版本',
   /** The string used to label draft documents */
@@ -314,10 +322,15 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': '正在同步文件…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': '添加到收藏夾',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': '從收藏夾中移除',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    '我們無法加載此文檔的更改，可能是由於您計劃的歷史保留政策，這顯示了<strong>{{version}}</strong>版本與<strong>已發布</strong>版本的比較。',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': '與已發布版本比較',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '檢查<VersionBadge>{{releaseTitle}}</VersionBadge>文件',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -382,10 +395,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '新 {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': '無標題',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': '正在重試…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': '錯誤：<Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': '錯誤：<Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': '互聯網連接似乎處於離線狀態。',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': '無法獲取列表項目',
+  'panes.document-list-pane.error.will-retry-automatically_other': '正在重試…（#{{count}}）。',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': '顯示最多{{limit}}份文件',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -394,6 +414,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': '未找到結果',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '沒有相符的文件',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': '嘗試連接…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
@@ -521,4 +543,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': '折疊',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': '展開',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': '未找到 id 為 "{{releaseId}}" 的發布',
 })
