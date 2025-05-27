@@ -153,9 +153,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Fișierele spațiului de lucru',
   'asset-sources.dataset.image.title': 'Imaginile spațiului de lucru',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Ceva a mers prost încercând să rezolve Media Library pentru acest proiect.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca Media',
   'asset-sources.media-library.image.title': 'Biblioteca Media',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Vă rugăm să așteptați în timp ce pregătim Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Lansarea '<strong>{{title}}</strong>' a fost ștearsă.",
@@ -300,6 +306,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Se încarcă…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Se încarcă modificările…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nu am putut găsi revizia documentului cu id-ul: <code>{{revisionId}}</code> pe care încercați să o comparați. <Break/> Acest lucru se datorează probabil politicii de retenție a istoricului planului dumneavoastră. <Break/> Vă rugăm să selectați o intrare <strong>De la</strong> diferită.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Editați documentul sau selectați o versiune mai veche în cronologie pentru a vedea o listă de modificări care apar în acest panou.',
@@ -348,6 +357,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Tip de schemă necunoscut',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Eliminat',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Ați selectat aceeași revizie <strong>de la</strong> și <strong>la</strong>, vă rugăm să selectați revizii diferite pentru a compara schimbările dintre ele.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Aceeași revizie selectată',
   /** Title for the Review Changes pane */
   'changes.title': 'Istoric',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -362,6 +376,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirmă',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Se încarcă',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Încercăm să ne conectăm…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -399,6 +415,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publicat {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revizie din <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revizie negăsită',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tipul documentului "{{type}}" nu a fost găsit',
@@ -466,8 +484,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'depreciat',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Fără titlu',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Conexiune pierdută. Se reconectează…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Conține eroare',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1127,6 +1143,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Eroare neașteptată: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Browserul dumneavoastră folosește un protocol HTTP învechit pentru a comunica cu Sanity. Acest lucru poate duce la o performanță semnificativ redusă.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Află mai multe',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Nu mai arăta în această sesiune',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Aveți frânele puse',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Creează',
   /**
@@ -1779,6 +1805,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Șters',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Șters: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Ciornă creată',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Ciornă creată: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Ciornă descartată',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1791,6 +1821,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editat live',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editat live: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Șters de politica de retenție',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publicat',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1799,6 +1831,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Nepublicat',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Nepublicat: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versiune creată',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versiune creată: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versiune eliminată',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versiune eliminată: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).

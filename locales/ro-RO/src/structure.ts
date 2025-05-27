@@ -147,6 +147,9 @@ export default removeUndefinedLocaleResources({
     'Vă rugăm să așteptați în timp ce documentul este adăugat la lansare. Nu ar trebui să dureze mai mult de câteva secunde.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Se adaugă documentul la lansare…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Nu am putut găsi revizia documentului selectată, vă rugăm să selectați o altă intrare din lista istoricului.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Acest document va fi nepublicat ca parte a lansării <VersionBadge>{{title}}</VersionBadge>',
@@ -185,6 +188,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Creare orientată pe idei',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Se afișează istoricul pentru versiunea <strong>{{perspective}}</strong> a acestui document.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Această vizualizare arată schimbările care au avut loc într-o versiune specifică a acestui document. Selectați o versiune diferită pentru a vedea schimbările acesteia',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'De la',
   /* The label for the history tab in the changes inspector*/
@@ -337,6 +346,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Șterge din favorite',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Nu putem încărca schimbările pentru acest document, probabil din cauza politicii de retenție a istoricului planului dumneavoastră, aceasta vă arată cum versiunea <strong>{{version}}</strong> se compară cu versiunea <strong>publicată</strong>.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Comparând cu versiunea publicată',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspectează documentul <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -403,10 +417,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nou {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Fără titlu',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Se reîncearcă…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Eroare: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Eroare: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Conexiunea la Internet pare să fie offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nu s-au putut prelua elementele listei',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Se reîncearcă…',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Se afișează un număr maxim de {{limit}} documente',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -415,6 +437,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nu s-au găsit rezultate',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Nu există documente corespunzătoare',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Se încearcă reconectarea…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Caută în listă',
   /** The search input for the search input on the document list pane */
@@ -553,4 +577,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Restrânge',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Extinde',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Lansarea cu id-ul "{{releaseId}}" nu a fost găsită',
 })

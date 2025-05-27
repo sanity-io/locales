@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Copiați în clipboard',
+  /** Label for deleting a query */
+  'action.delete': 'Șterge',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Editează titlul',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Oprire',
   /** Label for setting up a listener */
   'action.listen-execute': 'Ascultă',
+  /** Label for query loading table */
+  'action.load-queries': 'Încarcă interogările',
+  /** Label for loading a query */
+  'action.load-query': 'Încarcă interogarea',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Anulează',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Interoghează',
+  /** Label for saving a query */
+  'action.save-query': 'Salvează interogarea',
+  /** Label for updating a query */
+  'action.update': 'Actualizează',
 
+  /** Label for actions user can take */
+  'label.actions': 'Acțiuni',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Editat',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nou',
+  /** Label for query type "personal" */
+  'label.personal': 'Personal',
+  /** Label for savedAt date */
+  'label.saved-at': 'Salvat la',
+  /** Saved queries */
+  'label.saved-queries': 'Interogări salvate',
+  /** Search queries */
+  'label.search-queries': 'Caută interogări',
+  /** Share query */
+  'label.share': 'Partajează',
+  /** Label for saved query type "team" */
+  'label.team': 'Echipă',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrii nu sunt JSON valid',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'n/a',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Interogarea a fost deja salvată',
+  /** Save error label */
+  'save-query.error': 'Eroare la salvarea interogării',
+  /** Save success label */
+  'save-query.success': 'Interogarea a fost salvată',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Versiunea API',
