@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'คัดลอกไปยังคลิปบอร์ด',
+  /** Label for deleting a query */
+  'action.delete': 'ลบ',
+  /** Label for editing a query's title */
+  'action.edit-title': 'แก้ไขชื่อ',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'หยุด',
   /** Label for setting up a listener */
   'action.listen-execute': 'ฟัง',
+  /** Label for query loading table */
+  'action.load-queries': 'โหลดคำถาม',
+  /** Label for loading a query */
+  'action.load-query': 'โหลดคำถาม',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'ยกเลิก',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'ดึงข้อมูล',
+  /** Label for saving a query */
+  'action.save-query': 'บันทึกคำถาม',
+  /** Label for updating a query */
+  'action.update': 'อัปเดต',
 
+  /** Label for actions user can take */
+  'label.actions': 'การกระทำ',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'ที่แก้ไขแล้ว',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'ใหม่',
+  /** Label for query type "personal" */
+  'label.personal': 'ส่วนตัว',
+  /** Label for savedAt date */
+  'label.saved-at': 'บันทึกเมื่อ',
+  /** Saved queries */
+  'label.saved-queries': 'คำถามที่บันทึกไว้',
+  /** Search queries */
+  'label.search-queries': 'ค้นหาคำถาม',
+  /** Share query */
+  'label.share': 'แชร์',
+  /** Label for saved query type "team" */
+  'label.team': 'ทีม',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'พารามิเตอร์ไม่ใช่ JSON ที่ถูกต้อง',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'ไม่มีข้อมูล',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'คำถามถูกบันทึกไว้แล้ว',
+  /** Save error label */
+  'save-query.error': 'เกิดข้อผิดพลาดในการบันทึกคำถาม',
+  /** Save success label */
+  'save-query.success': 'คำถามถูกบันทึกแล้ว',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'เวอร์ชัน API',
