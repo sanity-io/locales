@@ -135,6 +135,9 @@ export default removeUndefinedLocaleResources({
   'banners.release.waiting.description': '请耐心等待，文档正在添加到发布中。这通常不会超过几秒钟。',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': '正在将文档添加到发布…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    '我们找不到所选的文档修订版，请从历史列表中选择另一个条目。',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '此文档将作为<VersionBadge>{{title}}</VersionBadge>发布的一部分而被取消发布',
@@ -173,6 +176,10 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': '首先构思创作',
 
+  /** The description for the changes banner */
+  'changes.banner.description': '显示此文档<strong>{{perspective}}</strong>版本的历史。',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip': '此视图显示了此文档特定版本中发生的更改。选择不同的版本以查看其更改',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '从',
   /* The label for the history tab in the changes inspector*/
@@ -318,6 +325,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': '从收藏夹中移除',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    '由于您计划的历史保留政策，我们无法加载此文档的更改，这显示了<strong>{{version}}</strong>版本与<strong>已发布</strong>版本的比较。',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': '与已发布版本比较',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '检查<VersionBadge>{{releaseTitle}}</VersionBadge>文档',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -529,4 +541,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': '折叠',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': '展开',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': '未找到带有 id "{{releaseId}}" 的发布',
 })
