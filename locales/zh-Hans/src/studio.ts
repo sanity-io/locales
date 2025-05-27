@@ -288,6 +288,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '正在加载…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '正在加载更改…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    '我们找不到您尝试比较的文档修订版，其id为：<code>{{revisionId}}</code>。<Break/> 这可能是由于您计划中的历史保留政策。<Break/> 请选择不同的<strong>从</strong>条目。',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description': '编辑文档或在时间线中选择旧版本，以在此面板中看到更改列表。',
   /** No Changes title in the Review Changes pane */
@@ -334,6 +337,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '未知的内联对象模式类型',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '已移除',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    '您选择了相同的<strong>从</strong>和<strong>到</strong>修订版，请选择不同的修订版来比较它们之间的变化。',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': '选择了相同的修订版',
   /** Title for the Review Changes pane */
   'changes.title': '审查更改',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -387,6 +395,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': '发布于 {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '修订自 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': '未找到修订版',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '未找到文档类型 "{{type}}"',
@@ -1083,6 +1093,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外错误：{{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    '您的浏览器正在使用过时的HTTP协议与Sanity通信。这可能会导致性能大幅下降。',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': '了解更多',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': '本次会话不再显示',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': '您已经打开了刹车',
+
   /** Button label for "Create new document" button */
   'new-document.button': '创建',
   /**
@@ -1689,6 +1709,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '已删除',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '删除时间：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': '草稿已创建',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': '草稿创建时间：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '已丢弃草稿',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1701,6 +1725,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '实时编辑',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '实时编辑时间：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': '由保留政策删除',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '已发布',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1709,6 +1735,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '未发布',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '未发布：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': '版本已创建',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': '版本创建时间：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': '版本已丢弃',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': '版本丢弃时间：{{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
