@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Copier dans le presse-papiers',
+  /** Label for deleting a query */
+  'action.delete': 'Supprimer',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Modifier le titre',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Arrêter',
   /** Label for setting up a listener */
   'action.listen-execute': 'Écouter',
+  /** Label for query loading table */
+  'action.load-queries': 'Charger les requêtes',
+  /** Label for loading a query */
+  'action.load-query': 'Charger la requête',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Annuler',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Récupérer',
+  /** Label for saving a query */
+  'action.save-query': 'Enregistrer la requête',
+  /** Label for updating a query */
+  'action.update': 'Mettre à jour',
 
+  /** Label for actions user can take */
+  'label.actions': 'Actions',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Modifié',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nouveau',
+  /** Label for query type "personal" */
+  'label.personal': 'Personnel',
+  /** Label for savedAt date */
+  'label.saved-at': 'Enregistré le',
+  /** Saved queries */
+  'label.saved-queries': 'Requêtes enregistrées',
+  /** Search queries */
+  'label.search-queries': 'Rechercher des requêtes',
+  /** Share query */
+  'label.share': 'Partager',
+  /** Label for saved query type "team" */
+  'label.team': 'Équipe',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Les paramètres ne sont pas un JSON valide',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'n/a',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Requête déjà enregistrée',
+  /** Save error label */
+  'save-query.error': "Erreur lors de l'enregistrement de la requête",
+  /** Save success label */
+  'save-query.success': 'Requête enregistrée',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Version de l’API',
