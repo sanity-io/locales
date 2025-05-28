@@ -12,7 +12,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'წაშლა…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'ზოგიერთი დოკუმენტის ქმედება გათიშულია Canvas-თან დაკავშირების გამო',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'დარწმუნებული ხართ, რომ გსურთ ყველა ცვლილებათა გაუქმება ბოლო გამოცემიდან?',
@@ -157,6 +158,9 @@ export default removeUndefinedLocaleResources({
     'დაელოდეთ, სანამ დოკუმენტი რელიზზე დაემატება. ეს არ უნდა მიიღოს მეტი წამები, ვიდრე რამდენიმე წამი.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'დოკუმენტის რელიზზე დამატება…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'ჩვენ ვერ ვპოულობთ არჩეულ დოკუმენტის რევიზიას, გთხოვთ, აირჩიეთ სხვა ჩანაწერი ისტორიის სიიდან.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'ეს დოკუმენტი გამოქვეყნდება <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად',
@@ -180,20 +184,27 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'დახურვა ფანჯრის ჯგუფის',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'რედაქტირება Canvas-ში',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'ეს დრაფტის დოკუმენტი Canvas-თან არის დაკავშირებული',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'ეს ცოცხალი დოკუმენტი Canvas-თან არის დაკავშირებული',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'ეს ვერსიის დოკუმენტი Canvas-თან არის დაკავშირებული',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'გაიგეთ მეტი',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas გთავაზობთ თავისუფლებას რედაქტირებაში უფორმო რედაქტორში, რომელიც ავტომატურად გადაიყვანს სტუდიაში როგორც სტრუქტურიზებულ კონტენტს - როგორც წერთ.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'იდეების პირველადი ავტორიზება',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'აჩვენებს ისტორიას <strong>{{perspective}}</strong> ვერსიის ამ დოკუმენტისთვის.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'ეს ხედი აჩვენებს ცვლილებებს, რომლებიც მოხდა ამ დოკუმენტის კონკრეტულ ვერსიაში. აირჩიეთ სხვა ვერსია, რათა ნახოთ მისი ცვლილებები',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'დან',
   /* The label for the history tab in the changes inspector*/
@@ -214,7 +225,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'წინა დოკუმენტის პარამეტრი არასწორია.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason': 'ამ დოკუმენტის სხვა ვერსიები არ არის შესადარებლად.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'შედარება ვერსიები',
   /** The string used to label draft documents */
@@ -354,10 +365,15 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'დოკუმენტის სინქრონიზაცია…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'დაამატეთ რჩეულებში',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'წაშალეთ რჩეულებიდან',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'ჩვენ ვერ ვტვირთავთ ამ დოკუმენტის ცვლილებებს, შესაძლოა თქვენი გეგმის ისტორიის დაცვის პოლიტიკის გამო, ეს გაჩვენებთ, როგორ შედარებულია <strong>{{version}}</strong> ვერსია <strong>გამოშვებული</strong> ვერსიით.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'შედარება გამოშვებულთან',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'შეამოწმეთ <VersionBadge>{{releaseTitle}}</VersionBadge> დოკუმენტი',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -423,10 +439,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'ახალი {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'უსათაურო',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'ხელახლა ცდა…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'შეცდომა: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'შეცდომა: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'ინტერნეტის კავშირი ჩანს გათიშული.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'სიის ელემენტების მიღება ვერ მოხერხდა',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'ხელახლა ცდა…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'ხელახლა ცდა… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'ნაჩვენებია მაქსიმუმ {{limit}} დოკუმენტი',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -435,6 +460,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'შედეგები ვერ მოიძებნა',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'დოკუმენტები არ მოიძებნა',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'კავშირის მცდელობა…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'სიის ძიება',
   /** The search input for the search input on the document list pane */
@@ -569,4 +596,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'შეკუმშვა',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'გაშლა',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'გამოშვება id-ით "{{releaseId}}" ვერ მოიძებნა',
 })
