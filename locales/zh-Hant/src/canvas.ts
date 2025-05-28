@@ -2,58 +2,61 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The text for the "Edit in Canvas" action. */
-  'action.edit-document': undefined, // 'Edit in Canvas'
+  'action.edit-document': '在 Canvas 中編輯',
   /** The text for the "Link to Canvas" action. */
-  'action.link-document': undefined, // 'Link to Canvas'
+  'action.link-document': '連結到 Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
-  'action.link-document-disabled.initial-value-not-resolved': undefined, // 'Please wait until the document initial values are resolved'
+  'action.link-document-disabled.initial-value-not-resolved': '請等待文檔初始值解析完成',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
-  'action.link-document-disabled.missing-permissions': undefined, // 'You don\'t have permissions to link this document to Canvas'
+  'action.link-document-disabled.missing-permissions': '您沒有權限將此文檔連結到 Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard': undefined, // 'Open this document in Dashboard to link to Canvas'
+  'action.link-document-disabled.not-in-dashboard': '在儀表板中打開此文檔以連結到 Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': undefined, // 'Version documents are not yet supported in Canvas'
+  'action.link-document-disabled.version-document': '版本文檔尚不支持在 Canvas 中',
   /** The text for the "Unlink from Canvas" action. */
-  'action.unlink-document': undefined, // 'Unlink from Canvas'
+  'action.unlink-document': '取消連結 Canvas',
 
   /** The text for the action button in the banner when the document is linked to Canvas. */
-  'banner.edit-document-in-canvas': undefined, // 'Edit in Canvas'
+  'banner.edit-document-in-canvas': '在 Canvas 中編輯',
   /** The text for the banner when the document is linked to Canvas. */
-  'banner.linked-to-canvas': undefined, // 'This document is linked to Canvas'
+  'banner.linked-to-canvas': '此文檔已連結到 Canvas',
 
   /** The text for the "Confirm document changes" dialog cancel button. */
-  'dialog.confirm-document-changes.cancel': undefined, // 'Cancel'
+  'dialog.confirm-document-changes.cancel': '取消',
   /** The text for the "Confirm document changes" dialog confirm button. */
-  'dialog.confirm-document-changes.confirm': undefined, // 'Accept and continue'
+  'dialog.confirm-document-changes.confirm': '接受並繼續',
   /** The description for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.description': undefined, // 'This document needs to be updated to be compatible with Canvas.\n Existing content may be edited or removed as part of this process.'
+  'dialog.confirm-document-changes.description':
+    '此文檔需要更新以與 Canvas 兼容。\n 現有內容可能會在此過程中被編輯或刪除。',
   /** The description for the "Confirm document changes" dialog footer. */
-  'dialog.confirm-document-changes.footer-description': undefined, // 'You can unlink from Canvas at any time'
+  'dialog.confirm-document-changes.footer-description': '您可以隨時取消連結 Canvas',
   /** The title for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.title': undefined, // 'Confirm document changes'
+  'dialog.confirm-document-changes.title': '確認文檔更改',
   /** The text for the Link to Canvas dialog when there is a error. */
-  'dialog.link-to-canvas.error': undefined, // 'Failed to link to Canvas'
+  'dialog.link-to-canvas.error': '連結到 Canvas 失敗',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
-  'dialog.link-to-canvas.redirecting': undefined, // 'Taking you to Canvas to complete linking...'
+  'dialog.link-to-canvas.redirecting': '正在帶您前往 Canvas 完成連結...',
   /** The title for the "Link to Canvas" dialog. */
-  'dialog.link-to-canvas.title': undefined, // 'Link to Canvas'
+  'dialog.link-to-canvas.title': '連結到 Canvas',
   /** The text for the "Link to Canvas" dialog when the document is being validated. */
-  'dialog.link-to-canvas.validating': undefined, // 'Validating'
+  'dialog.link-to-canvas.validating': '正在驗證',
   /** The text for the "Unlink from Canvas" dialog cancel button. */
-  'dialog.unlink-from-canvas.cancel': undefined, // 'Cancel'
+  'dialog.unlink-from-canvas.cancel': '取消',
   /** The text for the "Unlink from Canvas" dialog description. */
-  'dialog.unlink-from-canvas.description': undefined, // 'Once unlinked, it will be editable here and future edits in Canvas will no longer automatically map to this document.'
+  'dialog.unlink-from-canvas.description':
+    '一旦取消連結，它將可以在這裡編輯，並且未來在 Canvas 中的編輯將不再自動映射到此文檔。',
   /** The text for the "Unlink from Canvas" dialog error message. */
-  'dialog.unlink-from-canvas.error': undefined, // 'Failed to unlink from Canvas'
+  'dialog.unlink-from-canvas.error': '取消連結 Canvas 失敗',
   /** The text for the "Unlink from Canvas" dialog success message. */
-  'dialog.unlink-from-canvas.success': undefined, // 'Unlinked from Canvas'
+  'dialog.unlink-from-canvas.success': '已取消連結 Canvas',
   /** The title for the "Unlink from Canvas" dialog. */
-  'dialog.unlink-from-canvas.title': undefined, // 'Unlink from Canvas'
+  'dialog.unlink-from-canvas.title': '取消連結 Canvas',
   /** The text for the "Unlink from Canvas" dialog unlink button. */
-  'dialog.unlink-from-canvas.unlink-action': undefined, // 'Unlink now'
+  'dialog.unlink-from-canvas.unlink-action': '現在就取消連結',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
-  'dialog.unlink-from-canvas.unlinking': undefined, // 'You\'re unlinking  <strong>“{{documentTitle}}”</strong> from Canvas.'
+  'dialog.unlink-from-canvas.unlinking':
+    '您正在取消連結 <strong>“{{documentTitle}}”</strong> 與 Canvas。',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': undefined, // 'Missing permissions to navigate to Canvas'
+  'navigate-to-canvas-doc.error.missing-permissions': '缺少導航至Canvas的權限',
 })

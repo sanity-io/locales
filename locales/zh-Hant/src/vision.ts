@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': '複製到剪貼簿',
+  /** Label for deleting a query */
+  'action.delete': '刪除',
+  /** Label for editing a query's title */
+  'action.edit-title': '編輯標題',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': '停止',
   /** Label for setting up a listener */
   'action.listen-execute': '監聽',
+  /** Label for query loading table */
+  'action.load-queries': '加載查詢',
+  /** Label for loading a query */
+  'action.load-query': '加載查詢',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': '取消',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': '提取',
+  /** Label for saving a query */
+  'action.save-query': '保存查詢',
+  /** Label for updating a query */
+  'action.update': '更新',
 
+  /** Label for actions user can take */
+  'label.actions': '操作',
+  /** Label for saved queries that have been edited */
+  'label.edited': '已編輯',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': '新登場',
+  /** Label for query type "personal" */
+  'label.personal': '個人的',
+  /** Label for savedAt date */
+  'label.saved-at': '保存於',
+  /** Saved queries */
+  'label.saved-queries': '已保存的查詢',
+  /** Search queries */
+  'label.search-queries': '搜索查詢',
+  /** Share query */
+  'label.share': '分享',
+  /** Label for saved query type "team" */
+  'label.team': '團隊',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': '參數不是有效的JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': '不適用',
+
+  /** Query already saved error label */
+  'save-query.already-saved': '查詢已保存',
+  /** Save error label */
+  'save-query.error': '保存查詢時出錯',
+  /** Save success label */
+  'save-query.success': '查詢已保存',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 版本',
