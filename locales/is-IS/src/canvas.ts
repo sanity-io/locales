@@ -2,58 +2,64 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The text for the "Edit in Canvas" action. */
-  'action.edit-document': undefined, // 'Edit in Canvas'
+  'action.edit-document': 'Breyta í Canvas',
   /** The text for the "Link to Canvas" action. */
-  'action.link-document': undefined, // 'Link to Canvas'
+  'action.link-document': 'Tengja við Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
-  'action.link-document-disabled.initial-value-not-resolved': undefined, // 'Please wait until the document initial values are resolved'
+  'action.link-document-disabled.initial-value-not-resolved':
+    'Vinsamlegast bíðið þar til upphafsgildi skjalsins eru leyst',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
-  'action.link-document-disabled.missing-permissions': undefined, // 'You don\'t have permissions to link this document to Canvas'
+  'action.link-document-disabled.missing-permissions':
+    'Þú hefur ekki heimildir til að tengja þetta skjal við Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard': undefined, // 'Open this document in Dashboard to link to Canvas'
+  'action.link-document-disabled.not-in-dashboard':
+    'Opnaðu þetta skjal í mælaborði til að tengja við Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': undefined, // 'Version documents are not yet supported in Canvas'
+  'action.link-document-disabled.version-document': 'Útgáfu skjöl eru ekki enn studd í Canvas',
   /** The text for the "Unlink from Canvas" action. */
-  'action.unlink-document': undefined, // 'Unlink from Canvas'
+  'action.unlink-document': 'Aftengja frá Canvas',
 
   /** The text for the action button in the banner when the document is linked to Canvas. */
-  'banner.edit-document-in-canvas': undefined, // 'Edit in Canvas'
+  'banner.edit-document-in-canvas': 'Breyta í Canvas',
   /** The text for the banner when the document is linked to Canvas. */
-  'banner.linked-to-canvas': undefined, // 'This document is linked to Canvas'
+  'banner.linked-to-canvas': 'Þetta skjal er tengt við Canvas',
 
   /** The text for the "Confirm document changes" dialog cancel button. */
-  'dialog.confirm-document-changes.cancel': undefined, // 'Cancel'
+  'dialog.confirm-document-changes.cancel': 'Hætta við',
   /** The text for the "Confirm document changes" dialog confirm button. */
-  'dialog.confirm-document-changes.confirm': undefined, // 'Accept and continue'
+  'dialog.confirm-document-changes.confirm': 'Samþykkja og halda áfram',
   /** The description for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.description': undefined, // 'This document needs to be updated to be compatible with Canvas.\n Existing content may be edited or removed as part of this process.'
+  'dialog.confirm-document-changes.description':
+    'Þetta skjal þarf að uppfæra til að vera samhæft við Canvas.\n Núverandi efni gæti verið breytt eða fjarlægt sem hluti af þessu ferli.',
   /** The description for the "Confirm document changes" dialog footer. */
-  'dialog.confirm-document-changes.footer-description': undefined, // 'You can unlink from Canvas at any time'
+  'dialog.confirm-document-changes.footer-description': 'Þú getur aftengt frá Canvas hvenær sem er',
   /** The title for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.title': undefined, // 'Confirm document changes'
+  'dialog.confirm-document-changes.title': 'Staðfesta breytingar á skjali',
   /** The text for the Link to Canvas dialog when there is a error. */
-  'dialog.link-to-canvas.error': undefined, // 'Failed to link to Canvas'
+  'dialog.link-to-canvas.error': 'Tenging við Canvas mistókst',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
-  'dialog.link-to-canvas.redirecting': undefined, // 'Taking you to Canvas to complete linking...'
+  'dialog.link-to-canvas.redirecting': 'Fer með þig til Canvas til að ljúka tengingu...',
   /** The title for the "Link to Canvas" dialog. */
-  'dialog.link-to-canvas.title': undefined, // 'Link to Canvas'
+  'dialog.link-to-canvas.title': 'Tengja við Canvas',
   /** The text for the "Link to Canvas" dialog when the document is being validated. */
-  'dialog.link-to-canvas.validating': undefined, // 'Validating'
+  'dialog.link-to-canvas.validating': 'Staðfesting',
   /** The text for the "Unlink from Canvas" dialog cancel button. */
-  'dialog.unlink-from-canvas.cancel': undefined, // 'Cancel'
+  'dialog.unlink-from-canvas.cancel': 'Hætta við',
   /** The text for the "Unlink from Canvas" dialog description. */
-  'dialog.unlink-from-canvas.description': undefined, // 'Once unlinked, it will be editable here and future edits in Canvas will no longer automatically map to this document.'
+  'dialog.unlink-from-canvas.description':
+    'Eftir aftengingu verður hægt að breyta því hér og framtíðarbreytingar í Canvas munu ekki lengur sjálfkrafa kortleggjast við þetta skjal.',
   /** The text for the "Unlink from Canvas" dialog error message. */
-  'dialog.unlink-from-canvas.error': undefined, // 'Failed to unlink from Canvas'
+  'dialog.unlink-from-canvas.error': 'Aftenging frá Canvas mistókst',
   /** The text for the "Unlink from Canvas" dialog success message. */
-  'dialog.unlink-from-canvas.success': undefined, // 'Unlinked from Canvas'
+  'dialog.unlink-from-canvas.success': 'Aftengt frá Canvas',
   /** The title for the "Unlink from Canvas" dialog. */
-  'dialog.unlink-from-canvas.title': undefined, // 'Unlink from Canvas'
+  'dialog.unlink-from-canvas.title': 'Aftengja frá Canvas',
   /** The text for the "Unlink from Canvas" dialog unlink button. */
-  'dialog.unlink-from-canvas.unlink-action': undefined, // 'Unlink now'
+  'dialog.unlink-from-canvas.unlink-action': 'Aftengja núna',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
-  'dialog.unlink-from-canvas.unlinking': undefined, // 'You\'re unlinking  <strong>“{{documentTitle}}”</strong> from Canvas.'
+  'dialog.unlink-from-canvas.unlinking':
+    'Þú ert að aftengja <strong>“{{documentTitle}}”</strong> frá Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions': undefined, // 'Missing permissions to navigate to Canvas'
+  'navigate-to-canvas-doc.error.missing-permissions': 'Vantar heimildir til að fara í Canvas',
 })

@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Afrita á klippiborð',
+  /** Label for deleting a query */
+  'action.delete': 'Eyða',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Breyta titli',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stoppa',
   /** Label for setting up a listener */
   'action.listen-execute': 'Hlusta',
+  /** Label for query loading table */
+  'action.load-queries': 'Hlaða fyrirspurnum',
+  /** Label for loading a query */
+  'action.load-query': 'Hlaða fyrirspurn',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Hætta við',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Sækja',
+  /** Label for saving a query */
+  'action.save-query': 'Vista fyrirspurn',
+  /** Label for updating a query */
+  'action.update': 'Uppfæra',
 
+  /** Label for actions user can take */
+  'label.actions': 'Aðgerðir',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Breytt',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nýtt',
+  /** Label for query type "personal" */
+  'label.personal': 'Persónulegt',
+  /** Label for savedAt date */
+  'label.saved-at': 'Vistað þann',
+  /** Saved queries */
+  'label.saved-queries': 'Vistaðar fyrirspurnir',
+  /** Search queries */
+  'label.search-queries': 'Leita í fyrirspurnum',
+  /** Share query */
+  'label.share': 'Deila',
+  /** Label for saved query type "team" */
+  'label.team': 'Hópur',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrar eru ekki gilt JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'ekki viðeigandi',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Fyrirspurn þegar vistuð',
+  /** Save error label */
+  'save-query.error': 'Villa við að vista fyrirspurn',
+  /** Save success label */
+  'save-query.success': 'Fyrirspurn vistuð',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API útgáfa',
