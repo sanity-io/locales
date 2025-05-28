@@ -12,7 +12,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Excluindo…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Algumas ações de documento estão desativadas para documentos vinculados ao Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Tem certeza de que deseja descartar todas as alterações desde a última publicação?',
@@ -157,6 +158,9 @@ export default removeUndefinedLocaleResources({
     'Por favor, aguarde enquanto o documento é adicionado à release. Não deve demorar mais do que alguns segundos.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Adicionando documento à release…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Não conseguimos encontrar a revisão do documento selecionada, por favor selecione outra entrada da lista de histórico.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Este documento será despublicado como parte do lançamento <VersionBadge>{{title}}</VersionBadge>',
@@ -180,20 +184,27 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Fechar grupo de painéis',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Editar no Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Este rascunho de documento está vinculado ao Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Este documento ao vivo está vinculado ao Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Este documento de versão está vinculado ao Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Saiba mais',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'O Canvas permite que você crie em um editor de forma livre que mapeia automaticamente de volta para o Studio como conteúdo estruturado - enquanto você digita.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Autoria com foco na ideia',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Mostrando o histórico para a versão <strong>{{perspective}}</strong> deste documento.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Esta visualização mostra as alterações que ocorreram em uma versão específica deste documento. Selecione uma versão diferente para ver suas alterações',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'De',
   /* The label for the history tab in the changes inspector*/
@@ -215,7 +226,8 @@ export default removeUndefinedLocaleResources({
     'O parâmetro do documento anterior é inválido.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Não há outras versões deste documento para comparar.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Comparar versões',
   /** The string used to label draft documents */
@@ -356,10 +368,15 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Sincronizando documento…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Adicionar aos favoritos',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Remover dos favoritos',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Não conseguimos carregar as alterações para este documento, provavelmente devido à política de retenção de histórico do seu plano, isso mostra como a versão <strong>{{version}}</strong> se compara à versão <strong>publicada</strong>.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Comparando com a publicada',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspecionar documento <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -426,10 +443,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Novo {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Sem título',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Tentando novamente…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Erro: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Erro: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'A conexão com a Internet parece estar offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Não foi possível buscar os itens da lista',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Tentando novamente…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Tentando novamente… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Exibindo no máximo {{limit}} documentos',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -438,6 +465,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nenhum resultado encontrado',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Nenhum documento correspondente',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Tentando conectar…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Pesquisar lista',
   /** The search input for the search input on the document list pane */
@@ -577,4 +606,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Colapsar',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Expandir',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Lançamento com id "{{releaseId}}" não encontrado',
 })
