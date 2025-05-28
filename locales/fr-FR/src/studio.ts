@@ -2,29 +2,30 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Désactivé',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Activé',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Mises à jour automatiques',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Comment activer',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Copié dans le presse-papiers. Bon collage !',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Copier dans le presse-papiers',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Version actuelle',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Comment mettre à niveau',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Dernière version',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'La dernière version est {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'À jour',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Agent utilisateur',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Fermer',
@@ -87,16 +88,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.accept-message':
     'Affichage uniquement des actifs des types acceptés : <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Annuler',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Sélectionner',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Sélectionner un fichier',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Sélectionner une image',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    "Erreur lors de l'insertion de l'actif. Voir la console pour plus d'informations.",
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Charger plus',
   /** Text shown when selecting a file but there's no files to select from */
@@ -152,14 +154,21 @@ export default removeUndefinedLocaleResources({
     "Aucun document n'utilise cette image",
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description':
+    "Voir la console pour plus d'informations.",
+  'asset-sources.common.uploader.upload-failed.title': 'Échec du téléchargement',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': "Fichiers de l'espace de travail",
+  'asset-sources.dataset.image.title': "Images de l'espace de travail",
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Un problème est survenu lors de la tentative de résolution de la bibliothèque multimédia pour ce projet.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Bibliothèque multimédia',
+  'asset-sources.media-library.image.title': 'Bibliothèque multimédia',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Veuillez patienter pendant que nous préparons votre bibliothèque multimédia',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -184,7 +193,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Inclure l’heure',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': "Sélectionner l'heure",
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Régler sur l’heure actuelle',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -312,6 +321,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Chargement…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Chargement des changements…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    "Nous n'avons pas pu trouver la révision du document avec l'identifiant : <code>{{revisionId}}</code> que vous essayez de comparer. <Break/> Cela est probablement dû à la politique de conservation de l'historique de votre plan. <Break/> Veuillez sélectionner une entrée <strong>Depuis</strong> différente.",
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Modifiez le document ou sélectionnez une version antérieure dans la chronologie pour voir une liste de changements apparaître dans ce panneau.',
@@ -360,6 +372,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Type de schéma inconnu',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Supprimé',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Vous avez sélectionné la même révision <strong>de</strong> et <strong>à</strong>, veuillez sélectionner des révisions différentes pour comparer les changements entre elles.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Même révision sélectionnée',
   /** Title for the Review Changes pane */
   'changes.title': 'Réviser les changements',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -374,6 +391,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirmer',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Chargement',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Tentative de connexion…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -411,9 +430,11 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publié {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Révision à partir du <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Révision non trouvée',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'Type de document "{{type}}" non trouvé',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -478,8 +499,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'obsolète',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Sans titre',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Connexion perdue. Reconnexion en cours…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Contient une erreur',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -524,7 +543,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Annuler',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Par défaut',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Télécharger',
   /** Uploading <FileName/> */
@@ -676,7 +695,8 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Lecture seule',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Télécharger les fichiers vers :',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported':
     'Impossible de téléverser des fichiers ici',
@@ -1020,7 +1040,8 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Échec de la recherche de référence',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type':
+    "Le document référencé est d'un type invalide ({{typeName}})",
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Aperçu de l’image du document référencé',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1164,6 +1185,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Erreur inattendue : {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Votre navigateur utilise un protocole HTTP obsolète pour communiquer avec Sanity. Cela peut entraîner une performance considérablement dégradée.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'En savoir plus',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ne plus afficher pour cette session',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Vous avez mis vos freins',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Créer',
   /**
@@ -1261,7 +1292,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Publié',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Cette version est archivée et ne peut pas être modifiée.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Créé le {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1286,7 +1317,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Copier la version vers une nouvelle version',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Créer une version',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nouvelle version',
   /** Label for description in tooltip to explain release types */
@@ -1309,7 +1340,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Version sans titre',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Cette version a été détachée',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "La version '{{title}}' a été archivée",
   /** The toast title that will be shown the creating a release fails */
@@ -1317,9 +1348,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "La release '{{title}}' n'a pas pu être trouvée",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Cette version a été détachée',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "La version '{{title}}' a été publiée",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Une version de ce document a déjà été ajoutée',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1844,6 +1875,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Supprimé',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Supprimé : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Brouillon créé',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Brouillon créé : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Brouillon rejeté',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1856,6 +1891,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Édité en direct',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Édité en direct : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Supprimé par la politique de conservation',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publié',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1864,6 +1901,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Non publié',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Non publié : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Version créée',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Version créée : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Version écartée',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Version écartée : {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
