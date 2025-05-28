@@ -162,13 +162,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Slike radnog prostora',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Došlo je do pogreške pri pokušaju rješavanja Media Library za ovaj projekt.',
+    'Došlo je do pogreške pri pokušaju spajanja Medijske knjižnice.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medijska knjižnica',
   'asset-sources.media-library.image.title': 'Medijska knjižnica',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.info.provisioning':
-    'Molimo pričekajte dok pripremamo vašu Media Library',
+    'Molimo pričekajte dok pripremamo vašu Medijsku knjižnicu.',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",

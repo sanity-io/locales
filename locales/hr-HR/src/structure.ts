@@ -447,7 +447,7 @@ export default removeUndefinedLocaleResources({
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text.dev': 'Greška: <Code>{{error}}</Code>',
   /** The error text on the document list pane if the browser appears to be offlline */
-  'panes.document-list-pane.error.text.offline': 'Čini se da je internetska veza izvan mreže.',
+  'panes.document-list-pane.error.text.offline': 'Čini se da je internetska veza u prekidu.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nije moguće dohvatiti stavke popisa',
   /** The help text saying that we'll retry fetching the document list */
