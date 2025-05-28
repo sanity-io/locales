@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Másolás vágólapra',
+  /** Label for deleting a query */
+  'action.delete': 'Törlés',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Cím szerkesztése',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Leállítás',
   /** Label for setting up a listener */
   'action.listen-execute': 'Figyel',
+  /** Label for query loading table */
+  'action.load-queries': 'Lekérdezések betöltése',
+  /** Label for loading a query */
+  'action.load-query': 'Lekérdezés betöltése',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Mégse',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Lekérdezés',
+  /** Label for saving a query */
+  'action.save-query': 'Lekérdezés mentése',
+  /** Label for updating a query */
+  'action.update': 'Frissítés',
 
+  /** Label for actions user can take */
+  'label.actions': 'Műveletek',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Szerkesztett',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Új',
+  /** Label for query type "personal" */
+  'label.personal': 'Személyes',
+  /** Label for savedAt date */
+  'label.saved-at': 'Mentve',
+  /** Saved queries */
+  'label.saved-queries': 'Mentett lekérdezések',
+  /** Search queries */
+  'label.search-queries': 'Lekérdezések keresése',
+  /** Share query */
+  'label.share': 'Megosztás',
+  /** Label for saved query type "team" */
+  'label.team': 'Csapat',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'A paraméterek nem érvényes JSON formátumúak',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'n/a',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'A lekérdezés már mentve van',
+  /** Save error label */
+  'save-query.error': 'Hiba a lekérdezés mentésekor',
+  /** Save success label */
+  'save-query.success': 'Lekérdezés mentve',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API verzió',

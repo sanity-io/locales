@@ -2,29 +2,30 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Letiltva',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Engedélyezve',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Automatikus frissítések',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Hogyan engedélyezhető',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Vágólapra másolva. Boldog beillesztést!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Másolás vágólapra',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Jelenlegi verzió',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Hogyan frissíthető',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Legújabb verzió',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'A legújabb verzió {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'Naprakész',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Felhasználói ügynök',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Bezárás',
@@ -87,16 +88,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.accept-message':
     'Csak elfogadott típusú eszközök jelennek meg: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Mégse',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Kiválaszt',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Fájl kiválasztása',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Kép kiválasztása',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    'Hiba történt az eszköz beillesztésekor. További információkért nézze meg a konzolt.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Több betöltése',
   /** Text shown when selecting a file but there's no files to select from */
@@ -154,14 +156,21 @@ export default removeUndefinedLocaleResources({
     'Egyetlen dokumentum sem használja ezt a képet',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description':
+    'További információkért nézze meg a konzolt.',
+  'asset-sources.common.uploader.upload-failed.title': 'Feltöltés sikertelen',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': 'Munkaterület fájlok',
+  'asset-sources.dataset.image.title': 'Munkaterület képek',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Valami hiba történt a Média Könyvtár projektben való feloldásakor.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Média Könyvtár',
+  'asset-sources.media-library.image.title': 'Média Könyvtár',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Kérjük, várjon, amíg előkészítjük a Média Könyvtárat',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "A(z) '<strong>{{title}}</strong>' kiadás törölve lett.",
@@ -185,7 +194,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Idő hozzáadása',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': 'Időpont kiválasztása',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Beállítás az aktuális időre',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -308,6 +317,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Betöltés…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Változások betöltése…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nem találjuk a dokumentum revízióját azonosítóval: <code>{{revisionId}}</code>, amit össze szeretne hasonlítani. <Break/> Ez valószínűleg a tervek történetmegőrzési szabályzata miatt van. <Break/> Kérjük, válasszon egy másik <strong>Kezdő</strong> bejegyzést.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Szerkessze a dokumentumot vagy válasszon egy régebbi verziót az idővonalon, hogy megjelenjen a változások listája ebben a panelben.',
@@ -356,6 +368,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Ismeretlen sématípus',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Eltávolítva',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Ugyanazt a <strong>from</strong> és <strong>to</strong> revíziót választotta ki, kérjük, válasszon különböző revíziókat a közöttük lévő változások összehasonlításához.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Ugyanaz a revízió lett kiválasztva',
   /** Title for the Review Changes pane */
   'changes.title': 'Változások áttekintése',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -370,6 +387,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Megerősít',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Betöltés',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Kapcsolódás kísérlete…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -407,9 +426,11 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publikálva {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Felülvizsgálat ekkortól: <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'A revízió nem található',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'A "{{type}}" típusú dokumentum nem található',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -474,8 +495,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'elavult',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Cím nélküli',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Kapcsolat megszakadt. Újracsatlakozás…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Hiba van',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -520,7 +539,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Feltöltés megszakítása',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Alapértelmezett',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Feltöltés',
   /** Uploading <FileName/> */
@@ -670,7 +689,8 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Csak olvasható',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Fájlok feltöltése ide:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Fájlok feltöltése nem támogatott',
   /** Clear upload */
@@ -1011,7 +1031,8 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'A hivatkozás keresése sikertelen',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type':
+    'A hivatkozott dokumentum érvénytelen típusú ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'A hivatkozott dokumentum kép előnézete',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1156,6 +1177,17 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Váratlan hiba: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'A böngészője elavult HTTP protokollt használ a Sanityvel való kommunikációhoz. Ez jelentősen csökkentheti a teljesítményt.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Tudjon meg többet',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text':
+    'Ne jelenjen meg újra ebben a munkamenetben',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Fékezve halad',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Létrehozás',
   /**
@@ -1251,7 +1283,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Közzétéve',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Ez a kiadás archiválva lett és nem szerkeszthető.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Létrehozva {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1276,7 +1308,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Verzió másolása új kiadásba',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Kiadás létrehozása',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Új kiadás',
   /** Label for description in tooltip to explain release types */
@@ -1299,7 +1331,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Cím nélküli kiadás',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Ez a kiadás le lett választva',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Az '{{title}}' kiadás archiválva lett",
   /** The toast title that will be shown the creating a release fails */
@@ -1307,9 +1339,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "A(z) '{{title}}' kiadás nem található",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Ez a kiadás le lett választva',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "A(z) '{{title}}' kiadás közzétéve lett",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'E dokumentum egy verziója már hozzá lett adva',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1823,6 +1855,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Törölve',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Törölve: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Vázlat létrehozva',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Vázlat létrehozva: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Piszkozat elvetve',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1835,6 +1871,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Élőben szerkesztve',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Élőben szerkesztve: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Törlés visszatartási szabályzat által',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Közzétéve',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1843,6 +1881,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Közzététel visszavonva',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Közzététel visszavonva: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Verzió létrehozva',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Verzió létrehozva: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Verzió elvetve',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Verzió elvetve: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
