@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Kopiera till urklipp',
+  /** Label for deleting a query */
+  'action.delete': 'Radera',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Redigera titel',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stoppa',
   /** Label for setting up a listener */
   'action.listen-execute': 'Lyssna',
+  /** Label for query loading table */
+  'action.load-queries': 'Ladda frågor',
+  /** Label for loading a query */
+  'action.load-query': 'Ladda fråga',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Avbryt',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Hämta',
+  /** Label for saving a query */
+  'action.save-query': 'Spara fråga',
+  /** Label for updating a query */
+  'action.update': 'Uppdatera',
 
+  /** Label for actions user can take */
+  'label.actions': 'Åtgärder',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Redigerad',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Ny',
+  /** Label for query type "personal" */
+  'label.personal': 'Personlig',
+  /** Label for savedAt date */
+  'label.saved-at': 'Sparad den',
+  /** Saved queries */
+  'label.saved-queries': 'Sparade frågor',
+  /** Search queries */
+  'label.search-queries': 'Sök frågor',
+  /** Share query */
+  'label.share': 'Dela',
+  /** Label for saved query type "team" */
+  'label.team': 'Team',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrarna är inte giltig JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'ej tillämplig',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Frågan är redan sparad',
+  /** Save error label */
+  'save-query.error': 'Fel vid sparning av fråga',
+  /** Save success label */
+  'save-query.success': 'Frågan sparad',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-version',

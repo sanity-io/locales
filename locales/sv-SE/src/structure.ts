@@ -13,7 +13,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Raderar…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': undefined, // 'Some document actions are disabled for documents linked to Canvas'
+  'action.disabled-by-canvas.tooltip':
+    'Vissa dokumentåtgärder är inaktiverade för dokument länkade till Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Är du säker på att du vill kassera alla ändringar sedan senast publicerat?',
@@ -158,6 +159,9 @@ export default removeUndefinedLocaleResources({
     'Vänligen vänta medan dokumentet läggs till i releasen. Det bör inte ta längre än några sekunder.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Lägger till dokument i release…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Vi kunde inte hitta den valda dokumentrevisionen, vänligen välj en annan post från historiklistan.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Detta dokument kommer att avpubliceras som en del av <VersionBadge>{{title}}</VersionBadge> releasen',
@@ -181,20 +185,27 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-group-button.title': 'Stäng rute grupp',
 
   /** The text for the canvas linked banner action button */
-  'canvas.banner.edit-in-canvas-action': undefined, // 'Edit in Canvas'
+  'canvas.banner.edit-in-canvas-action': 'Redigera i Canvas',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': undefined, // 'This draft document is linked to Canvas'
+  'canvas.banner.linked-text.draft': 'Detta utkastdokument är länkat till Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': undefined, // 'This live document is linked to Canvas'
+  'canvas.banner.linked-text.published': 'Detta live-dokument är länkat till Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': undefined, // 'This version document is linked to Canvas'
+  'canvas.banner.linked-text.version': 'Detta versionsdokument är länkat till Canvas',
   /** The text for the canvas linked banner popover button */
-  'canvas.banner.popover-button-text': undefined, // 'Learn more'
+  'canvas.banner.popover-button-text': 'Läs mer',
   /** The description for the canvas linked banner popover */
-  'canvas.banner.popover-description': undefined, // 'Canvas lets you author in a free-form editor that automatically maps back to the Studio as structured content - as you type.'
+  'canvas.banner.popover-description':
+    'Canvas låter dig skapa innehåll i en fri-form redigerare som automatiskt mappas tillbaka till Studion som strukturerat innehåll - medan du skriver.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': undefined, // 'Idea first authoring'
+  'canvas.banner.popover-heading': 'Idé först författande',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Visar historiken för <strong>{{perspective}}</strong>-versionen av detta dokument.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Denna vy visar de ändringar som skett i en specifik version av detta dokument. Välj en annan version för att se dess ändringar',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Från',
   /* The label for the history tab in the changes inspector*/
@@ -214,7 +225,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Föregående dokumentparameter är ogiltig.',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': undefined, // 'There are no other versions of this document to compare.'
+  'compare-versions.menu-item.disabled-reason':
+    'Det finns inga andra versioner av detta dokument att jämföra med.',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': 'Jämför versioner',
   /** The string used to label draft documents */
@@ -355,10 +367,15 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserar dokument…',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': undefined, // 'Add to favorites'
+  'document.favorites.add-to-favorites': 'Lägg till i favoriter',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': undefined, // 'Remove from favorites'
+  'document.favorites.remove-from-favorites': 'Ta bort från favoriter',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Vi kan inte ladda ändringarna för detta dokument, troligen på grund av historikbevarandepolicyn för din plan, detta visar dig hur <strong>{{version}}</strong>-versionen jämförs med <strong>publicerad</strong> version.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Jämför med publicerad',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Granska <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -424,10 +441,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Namnlös',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Försöker igen…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fel: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Fel: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Internetanslutningen verkar vara offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kunde inte hämta listobjekt',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Försöker igen…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Försöker igen… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Visar maximalt {{limit}} dokument',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -436,6 +462,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Inga resultat hittades',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Inga matchande dokument',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Försöker ansluta…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Sök i listan',
   /** The search input for the search input on the document list pane */
@@ -572,4 +600,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Kollapsa',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Expandera',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Release med id "{{releaseId}}" hittades inte',
 })
