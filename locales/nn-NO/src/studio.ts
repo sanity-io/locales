@@ -2,29 +2,30 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': undefined, // 'Disabled'
+  'about-dialog.version-info.auto-updates.disabled': 'Deaktivert',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': undefined, // 'Enabled'
+  'about-dialog.version-info.auto-updates.enabled': 'Aktivert',
   /** "Auto Updates" status header in About-dialog */
-  'about-dialog.version-info.auto-updates.header': undefined, // 'Auto Updates'
+  'about-dialog.version-info.auto-updates.header': 'Automatiske oppdateringar',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': undefined, // 'How to enable'
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Korleis aktivere',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
-  'about-dialog.version-info.copy-to-clipboard-button.copied-text': undefined, // 'Copied to Clipboard. Happy pasting!'
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Kopiert til utklippstavla. Lukke til med liming!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
-  'about-dialog.version-info.copy-to-clipboard-button.text': undefined, // 'Copy to Clipboard'
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til utklippstavla',
   /** "Current version" header in about dialog  */
-  'about-dialog.version-info.current-version.header': undefined, // 'Current version'
+  'about-dialog.version-info.current-version.header': 'Gjeldande versjon',
   /** "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': undefined, // 'How to upgrade'
+  'about-dialog.version-info.how-to-upgrade': 'Korleis oppgradere',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.header': undefined, // 'Latest version'
+  'about-dialog.version-info.latest-version.header': 'Siste versjon',
   /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': undefined, // 'Latest version is {{latestVersion}}'
+  'about-dialog.version-info.latest-version.text': 'Siste versjon er {{latestVersion}}',
   /** "Up to date" status in About-dialog */
-  'about-dialog.version-info.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.up-to-date': 'Oppdatert',
   /** "User agent" header in About-dialog */
-  'about-dialog.version-info.user-agent.header': undefined, // 'User agent'
+  'about-dialog.version-info.user-agent.header': 'Brukaragent',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Lukk',
@@ -87,16 +88,17 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.accept-message':
     'Viser berre ressursar av aksepterte typar: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
-  'asset-source.dialog.button.cancel': undefined, // 'Cancel'
+  'asset-source.dialog.button.cancel': 'Avbryt',
   /** Select asset dialog select-button */
-  'asset-source.dialog.button.select': undefined, // 'Select'
+  'asset-source.dialog.button.select': 'Vel',
   /** Keys shared between both image asset source and file asset source */
   /** Select asset dialog title for files */
   'asset-source.dialog.default-title_file': 'Vel fil',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Vel bilete',
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error': undefined, // 'Error inserting asset. See the console for more information.'
+  'asset-source.dialog.insert-asset-error':
+    'Feil ved innsetting av eigedel. Sjå konsollen for meir informasjon.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Last meir',
   /** Text shown when selecting a file but there's no files to select from */
@@ -151,14 +153,19 @@ export default removeUndefinedLocaleResources({
     'Ingen dokument brukar dette biletet',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
-  'asset-sources.common.uploader.upload-failed.description': undefined, // 'See the console for more information.'
-  'asset-sources.common.uploader.upload-failed.title': undefined, // 'Upload failed'
+  'asset-sources.common.uploader.upload-failed.description': 'Sjå konsollen for meir informasjon.',
+  'asset-sources.common.uploader.upload-failed.title': 'Opplasting mislukka',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': undefined, // 'Workspace files'
-  'asset-sources.dataset.image.title': undefined, // 'Workspace images'
+  'asset-sources.dataset.file.title': 'Arbeidsområde filer',
+  'asset-sources.dataset.image.title': 'Arbeidsområde bilder',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Noko gjekk gale med å finne Media Library for dette prosjektet.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': undefined, // 'Media Library'
-  'asset-sources.media-library.image.title': undefined, // 'Media Library'
+  'asset-sources.media-library.file.title': 'Media Library',
+  'asset-sources.media-library.image.title': 'Media Library',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': 'Vent medan vi førebur Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Utgjevinga '<strong>{{title}}</strong>' har blitt sletta.",
@@ -182,7 +189,7 @@ export default removeUndefinedLocaleResources({
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Inkluder tid',
   /** Action message for selecting the time */
-  'calendar.action.select-time': undefined, // 'Select time'
+  'calendar.action.select-time': 'Vel tid',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Sett til noverande tid',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
@@ -306,6 +313,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Lastar…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Lastar endringar…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Vi kunne ikkje finne dokumentrevisjonen med id: <code>{{revisionId}}</code> du prøver å samanlikne. <Break/> Dette er truleg på grunn av historikkbevaringspolitikken for planen din. <Break/> Vel ein annan <strong>Frå</strong> oppføring.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Rediger dokumentet eller vel ein eldre versjon i tidslinja for å sjå ei liste over endringar som dukkar opp i dette panelet.',
@@ -354,6 +364,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Ukjend skjematype',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Fjerna',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Du har valt same <strong>frå</strong> og <strong>til</strong> revisjon, vennligst vel forskjellige revisjonar for å samanlikne endringane mellom dei.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Same revisjon valt',
   /** Title for the Review Changes pane */
   'changes.title': 'Gå gjennom endringar',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -368,6 +383,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Stadfest',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Lastar',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Prøver å kople til…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -405,9 +422,11 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publisert {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisjon frå <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revisjon ikkje funnen',
 
   /** Label to indicate that a document type was not found */
-  'document.type.not-found': undefined, // 'Document type "{{type}}" not found'
+  'document.type.not-found': 'Dokumenttypen "{{type}}" ikkje funnen',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -472,8 +491,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'Utfasa',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Utan tittel',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Tilkopling tapt. Koblar opp att…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Har feil',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -518,7 +535,7 @@ export default removeUndefinedLocaleResources({
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Avbryt',
   /** Text for menuitem upload button default asset source */
-  'input.files.common.upload-placeholder.file-input-button.default-source.badge': undefined, // 'Default'
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Standard',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Last opp',
   /** Uploading <FileName/> */
@@ -667,7 +684,7 @@ export default removeUndefinedLocaleResources({
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Berre lese',
   /** Select asset source destination for files to upload */
-  'inputs.files.common.placeholder.select-asset-source-upload-destination': undefined, // 'Upload files to:'
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Last opp filer til:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Kan ikkje laste opp filer her',
   /** Clear upload */
@@ -1007,7 +1024,8 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Referansesøk feila',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': undefined, // 'The referenced document is of invalid type ({{typeName}})'
+  'inputs.reference.global.invalid-type':
+    'Det refererte dokumentet er av ugyldig type ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Biletførehandsvisning av referert dokument',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1151,6 +1169,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Uventa feil: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Nettlesaren din brukar ein utdatert HTTP-protokoll for å kommunisere med Sanity. Dette kan føre til betydeleg redusert ytelse.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Lær meir',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ikkje vis igjen for denne økta',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Du har bremsene på',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Opprett',
   /**
@@ -1245,7 +1273,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Publisert',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': undefined, // 'This release is archived and cannot be edited.'
+  'release.chip.tooltip.archived': 'Denne utgjevinga er arkivert og kan ikkje redigerast.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Oppretta {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1270,7 +1298,7 @@ export default removeUndefinedLocaleResources({
   /** Title for copying version to a new release dialog */
   'release.dialog.copy-to-release.title': 'Kopier versjon til ny utgjeving',
   /** Title for action create a release */
-  'release.dialog.create.confirm': undefined, // 'Create release'
+  'release.dialog.create.confirm': 'Opprett utgjeving',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Ny utgjeving',
   /** Label for description in tooltip to explain release types */
@@ -1293,7 +1321,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Utan tittel på utgjeving',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.archived-release.description': 'Denne utgjevinga har blitt fråkopla',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Utgjevinga '{{title}}' blei arkivert",
   /** The toast title that will be shown the creating a release fails */
@@ -1301,9 +1329,9 @@ export default removeUndefinedLocaleResources({
   /**The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Kunne ikkje finne utgjevinga '{{title}}'",
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': undefined, // 'This release has been unpinned'
+  'release.toast.published-release.description': 'Denne utgjevinga har blitt fråkopla',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
-  'release.toast.published-release.title': undefined, // 'The \'{{title}}\' release was published'
+  'release.toast.published-release.title': "Utgjevinga '{{title}}' blei publisert",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Ein versjon av dette dokumentet har allereie blitt lagt til',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1813,6 +1841,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Sletta',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Sletta: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Utkast oppretta',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Utkast oppretta: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Forkasta utkast',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1825,6 +1857,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Redigert live',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Redigert live: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Sletta av oppbevaringspolicy',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publisert',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1833,6 +1867,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Avpublisert',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Avpublisert: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versjon oppretta',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versjon oppretta: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versjon forkasta',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versjon forkasta: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
