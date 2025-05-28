@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Скопіювати в буфер обміну',
+  /** Label for deleting a query */
+  'action.delete': 'Видалити',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Редагувати назву',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Зупинити',
   /** Label for setting up a listener */
   'action.listen-execute': 'Слухати',
+  /** Label for query loading table */
+  'action.load-queries': 'Завантажити запити',
+  /** Label for loading a query */
+  'action.load-query': 'Завантажити запит',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Скасувати',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Отримати',
+  /** Label for saving a query */
+  'action.save-query': 'Зберегти запит',
+  /** Label for updating a query */
+  'action.update': 'Оновити',
 
+  /** Label for actions user can take */
+  'label.actions': 'Дії',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Відредаговано',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Нове',
+  /** Label for query type "personal" */
+  'label.personal': 'Особистий',
+  /** Label for savedAt date */
+  'label.saved-at': 'Збережено о',
+  /** Saved queries */
+  'label.saved-queries': 'Збережені запити',
+  /** Search queries */
+  'label.search-queries': 'Пошук запитів',
+  /** Share query */
+  'label.share': 'Поділитися',
+  /** Label for saved query type "team" */
+  'label.team': 'Команда',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Параметри не є дійсним JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'не застосовно',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Запит вже збережено',
+  /** Save error label */
+  'save-query.error': 'Помилка збереження запиту',
+  /** Save success label */
+  'save-query.success': 'Запит збережено',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Версія API',
