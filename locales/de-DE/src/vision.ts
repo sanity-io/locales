@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'In die Zwischenablage kopieren',
+  /** Label for deleting a query */
+  'action.delete': 'Löschen',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Titel bearbeiten',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stopp',
   /** Label for setting up a listener */
   'action.listen-execute': 'Zuhören',
+  /** Label for query loading table */
+  'action.load-queries': 'Abfragen laden',
+  /** Label for loading a query */
+  'action.load-query': 'Abfrage laden',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Abbrechen',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Abfragen',
+  /** Label for saving a query */
+  'action.save-query': 'Abfrage speichern',
+  /** Label for updating a query */
+  'action.update': 'Aktualisieren',
 
+  /** Label for actions user can take */
+  'label.actions': 'Aktionen',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Bearbeitet',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Neu',
+  /** Label for query type "personal" */
+  'label.personal': 'Persönlich',
+  /** Label for savedAt date */
+  'label.saved-at': 'Gespeichert am',
+  /** Saved queries */
+  'label.saved-queries': 'Gespeicherte Abfragen',
+  /** Search queries */
+  'label.search-queries': 'Abfragen suchen',
+  /** Share query */
+  'label.share': 'Teilen',
+  /** Label for saved query type "team" */
+  'label.team': 'Team',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parameter sind kein gültiges JSON',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'nicht zutreffend',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Abfrage bereits gespeichert',
+  /** Save error label */
+  'save-query.error': 'Fehler beim Speichern der Abfrage',
+  /** Save success label */
+  'save-query.success': 'Abfrage gespeichert',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-Version',

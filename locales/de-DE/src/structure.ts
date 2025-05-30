@@ -162,6 +162,9 @@ export default removeUndefinedLocaleResources({
     'Bitte warten Sie, während das Dokument zum Release hinzugefügt wird. Es sollte nicht länger als ein paar Sekunden dauern.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Dokument wird zum Release hinzugefügt…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Wir konnten die ausgewählte Dokumentrevision nicht finden, bitte wählen Sie einen anderen Eintrag aus der Verlauf-Liste.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dieses Dokument wird als Teil des <VersionBadge>{{title}}</VersionBadge> Releases nicht veröffentlicht',
@@ -200,6 +203,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Ideen zuerst verfassen',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Zeigt den Verlauf für die <strong>{{perspective}}</strong> Version dieses Dokuments.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Diese Ansicht zeigt die Änderungen, die in einer bestimmten Version dieses Dokuments aufgetreten sind. Wählen Sie eine andere Version, um deren Änderungen zu sehen',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Von',
   /* The label for the history tab in the changes inspector*/
@@ -367,6 +376,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Aus Favoriten entfernen',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Wir können die Änderungen für dieses Dokument nicht laden, wahrscheinlich aufgrund der Aufbewahrungsrichtlinie für den Verlauf Ihres Tarifs, dies zeigt Ihnen, wie die <strong>{{version}}</strong> Version im Vergleich zur <strong>veröffentlichten</strong> Version aussieht.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Vergleich mit veröffentlichter Version',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Dokument <VersionBadge>{{releaseTitle}}</VersionBadge> inspizieren',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -433,10 +447,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Neues {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Ohne Titel',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Erneuter Versuch…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fehler: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Fehler: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Die Internetverbindung scheint unterbrochen zu sein.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Listenelemente konnten nicht abgerufen werden',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Erneuter Versuch…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Erneuter Versuch… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Es werden maximal {{limit}} Dokumente angezeigt',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -445,6 +469,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Keine Ergebnisse gefunden',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Keine übereinstimmenden Dokumente',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Versuche die Verbindung wiederherzustellen…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Liste durchsuchen',
   /** The search input for the search input on the document list pane */
@@ -585,4 +611,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Zusammenklappen',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Erweitern',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Release mit der ID "{{releaseId}}" nicht gefunden',
 })
