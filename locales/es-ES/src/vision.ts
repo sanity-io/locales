@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Copiar al portapapeles',
+  /** Label for deleting a query */
+  'action.delete': 'Eliminar',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Editar título',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Detener',
   /** Label for setting up a listener */
   'action.listen-execute': 'Escuchar',
+  /** Label for query loading table */
+  'action.load-queries': 'Cargar consultas',
+  /** Label for loading a query */
+  'action.load-query': 'Cargar consulta',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Cancelar',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Buscar',
+  /** Label for saving a query */
+  'action.save-query': 'Guardar consulta',
+  /** Label for updating a query */
+  'action.update': 'Actualizar',
 
+  /** Label for actions user can take */
+  'label.actions': 'Acciones',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Editado',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nuevo',
+  /** Label for query type "personal" */
+  'label.personal': 'Personal',
+  /** Label for savedAt date */
+  'label.saved-at': 'Guardado en',
+  /** Saved queries */
+  'label.saved-queries': 'Consultas guardadas',
+  /** Search queries */
+  'label.search-queries': 'Buscar consultas',
+  /** Share query */
+  'label.share': 'Compartir',
+  /** Label for saved query type "team" */
+  'label.team': 'Equipo',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Los parámetros no son un JSON válido',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'n/a',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Consulta ya guardada',
+  /** Save error label */
+  'save-query.error': 'Error al guardar la consulta',
+  /** Save success label */
+  'save-query.success': 'Consulta guardada',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Versión de la API',
