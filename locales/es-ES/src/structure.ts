@@ -158,6 +158,9 @@ export default removeUndefinedLocaleResources({
     'Por favor, espere mientras el documento se agrega al lanzamiento. No debería tardar más de unos segundos.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Agregando documento al lanzamiento…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'No pudimos encontrar la revisión del documento seleccionada, por favor seleccione otra entrada de la lista de historial.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Este documento será despublicado como parte de la publicación <VersionBadge>{{title}}</VersionBadge>',
@@ -196,6 +199,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Autoría con la idea primero',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Mostrando el historial para la versión <strong>{{perspective}}</strong> de este documento.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Esta vista muestra los cambios que ocurrieron en una versión específica de este documento. Seleccione una versión diferente para ver sus cambios',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Desde',
   /* The label for the history tab in the changes inspector*/
@@ -363,6 +372,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Eliminar de favoritos',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'No podemos cargar los cambios de este documento, probablemente debido a la política de retención de historial de su plan, esto le muestra cómo la versión <strong>{{version}}</strong> se compara con la versión <strong>publicada</strong>.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Comparando con la versión publicada',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspeccionar documento <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -429,10 +443,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nuevo {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Sin título',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Reintentando…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Error: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Error: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline':
+    'La conexión a Internet parece estar desconectada.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'No se pudieron obtener los elementos de la lista',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Reintentando…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Reintentando… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Mostrando un máximo de {{limit}} documentos',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -442,6 +466,8 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text':
     'No se encontraron documentos coincidentes',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Intentando conectar…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Buscar en la lista',
   /** The search input for the search input on the document list pane */
@@ -580,4 +606,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Colapsar',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Expandir',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip':
+    'No se encontró el lanzamiento con el id "{{releaseId}}"',
 })
