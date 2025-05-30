@@ -166,7 +166,7 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'Mediebibliotek',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.info.provisioning':
-    'Vennligst vent mens vi forbereder Media Library',
+    'Vennligst vent mens vi forbereder mediebiblioteket',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -1174,7 +1174,7 @@ export default removeUndefinedLocaleResources({
   'network-check.slow-protocol-warning.description':
     'Nettleseren din bruker et utdatert HTTP-protokoll for å kommunisere med Sanity. Dette kan føre til betydelig redusert ytelse.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.learn-more-button.text': 'Lær mer',
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Les mer',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Ikke vis igjen for denne økten',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */

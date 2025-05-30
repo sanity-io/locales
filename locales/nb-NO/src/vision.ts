@@ -12,9 +12,9 @@ export default removeUndefinedLocaleResources({
   /** Label for setting up a listener */
   'action.listen-execute': 'Lytt',
   /** Label for query loading table */
-  'action.load-queries': 'Last inn spørringer',
+  'action.load-queries': 'Last spørringer',
   /** Label for loading a query */
-  'action.load-query': 'Last inn spørring',
+  'action.load-query': 'Last spørring',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Avbryt',
   /** Label for executing the query, eg doing a fetch */
