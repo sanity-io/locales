@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.20](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.2.19...locale-fr-fr-v1.2.20) (2025-05-30)
+
+
+### Bug Fixes
+
+* **fr-FR:** automated translation updates ([#1135](https://github.com/sanity-io/locales/issues/1135)) ([685a524](https://github.com/sanity-io/locales/commit/685a52481a7ca3071e986b68e11d8be8edc363c4))
+
 ## [1.2.19](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.2.18...locale-fr-fr-v1.2.19) (2025-05-16)
 
 

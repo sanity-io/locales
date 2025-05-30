@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.22](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.21...locale-de-de-v1.1.22) (2025-05-30)
+
+
+### Bug Fixes
+
+* **de-DE:** automated translation updates ([#1174](https://github.com/sanity-io/locales/issues/1174)) ([dcffc38](https://github.com/sanity-io/locales/commit/dcffc38ba90c4783f1443b43aab62e753beb58c1))
+* reconcile + prettify ([#1172](https://github.com/sanity-io/locales/issues/1172)) ([6344acc](https://github.com/sanity-io/locales/commit/6344acc28b4d4cc8f95c06c1095037f9be5d6fac))
+
 ## [1.1.21](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.20...locale-de-de-v1.1.21) (2025-05-16)
 
 
