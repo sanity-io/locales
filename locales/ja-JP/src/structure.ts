@@ -154,6 +154,9 @@ export default removeUndefinedLocaleResources({
     'ドキュメントがリリースに追加されるのをお待ちください。数秒以内に完了するはずです。',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'ドキュメントをリリースに追加しています…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    '選択されたドキュメントのリビジョンが見つかりませんでした。履歴リストから別のエントリを選択してください。',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'このドキュメントは<VersionBadge>{{title}}</VersionBadge>リリースの一部として非公開になります',
@@ -192,6 +195,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'アイデア優先の執筆',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'このドキュメントの<strong>{{perspective}}</strong>バージョンの履歴を表示しています。',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'このビューは、このドキュメントの特定のバージョンで発生した変更を表示します。異なるバージョンを選択して、その変更を見てください',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'から',
   /* The label for the history tab in the changes inspector*/
@@ -355,6 +364,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'お気に入りから削除',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'このドキュメントの変更を読み込むことができません。おそらくプランの履歴保持ポリシーによるものです。これは、<strong>{{version}}</strong>バージョンが<strong>公開</strong>バージョンとどのように比較されるかを示しています。',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': '公開されたものと比較',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge>ドキュメントを検査する',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -421,10 +435,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '新しい{{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'タイトルなし',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': '再試行中…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'エラー: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'エラー: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'インターネット接続がオフラインのようです。',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'リストアイテムを取得できませんでした',
+  'panes.document-list-pane.error.will-retry-automatically_other': '再試行中… (#{{count}})。',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': '{{limit}}ドキュメントまで表示します',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -433,6 +454,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': '結果が見つかりません',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '一致するドキュメントがありません',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': '接続を試みています…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'リストを検索',
   /** The search input for the search input on the document list pane */
@@ -565,4 +588,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': '折りたたむ',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': '展開',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'ID "{{releaseId}}" のリリースが見つかりません',
 })
