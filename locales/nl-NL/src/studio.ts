@@ -160,9 +160,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Werkruimte bestanden',
   'asset-sources.dataset.image.title': 'Werkruimte afbeeldingen',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Er is iets misgegaan bij het oplossen van de Media Library voor dit project.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Bibliotheek',
   'asset-sources.media-library.image.title': 'Media Bibliotheek',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Een moment geduld terwijl we uw Media Library voorbereiden',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "De release '<strong>{{title}}</strong>' is verwijderd.",
@@ -313,6 +319,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Laden…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Wijzigingen laden…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'We konden de documentrevisie met id: <code>{{revisionId}}</code> waar u naar probeert te vergelijken niet vinden. <Break/> Dit komt waarschijnlijk door het retentiebeleid van uw plan. <Break/> Selecteer een andere <strong>Van</strong> invoer.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Bewerk het document of selecteer een oudere versie in de tijdlijn om een lijst van wijzigingen te zien verschijnen in dit paneel.',
@@ -361,6 +370,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Onbekend schema type',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Verwijderd',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'U heeft dezelfde <strong>van</strong> en <strong>naar</strong> revisie geselecteerd, selecteer verschillende revisies om de wijzigingen tussen hen te vergelijken.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Zelfde revisie geselecteerd',
   /** Title for the Review Changes pane */
   'changes.title': 'Wijzigingen beoordelen',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -375,6 +389,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bevestigen',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laden',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Poging tot verbinden…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -412,6 +428,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Gepubliceerd {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisie van <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revisie niet gevonden',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Documenttype "{{type}}" niet gevonden',
@@ -479,8 +497,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'verouderd',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Zonder titel',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Verbinding verbroken. Opnieuw verbinden…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Heeft een fout',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1164,6 +1180,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Onverwachte fout: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Uw browser gebruikt een verouderd HTTP-protocol om te communiceren met Sanity. Dit kan leiden tot aanzienlijk verminderde prestaties.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Meer leren',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Niet meer tonen voor deze sessie',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Je hebt je remmen erop',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Aanmaken',
   /**
@@ -1829,6 +1855,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Verwijderd',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Verwijderd: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Concept aangemaakt',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Concept aangemaakt: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Concept verworpen',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1841,6 +1871,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Live bewerkt',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Live bewerkt: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Verwijderd door retentiebeleid',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Gepubliceerd',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1849,6 +1881,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Niet gepubliceerd',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Niet gepubliceerd: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versie aangemaakt',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versie aangemaakt: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versie verworpen',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versie verworpen: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
