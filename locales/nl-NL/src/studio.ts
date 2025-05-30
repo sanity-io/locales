@@ -162,13 +162,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Werkruimte afbeeldingen',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Er is iets misgegaan bij het oplossen van de Media Library voor dit project.',
+    'Er is iets misgegaan bij het ophalen van de Media Bibliotheek voor dit project.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Bibliotheek',
   'asset-sources.media-library.image.title': 'Media Bibliotheek',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.info.provisioning':
-    'Een moment geduld terwijl we uw Media Library voorbereiden',
+    'Een moment geduld terwijl we uw Media Bibliotheek voorbereiden',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "De release '<strong>{{title}}</strong>' is verwijderd.",
@@ -390,7 +390,7 @@ export default removeUndefinedLocaleResources({
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laden',
   /** The title of the reconnecting toast */
-  'common.reconnecting.toast.title': 'Poging tot verbinden…',
+  'common.reconnecting.toast.title': 'Proberen te verbinden…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
