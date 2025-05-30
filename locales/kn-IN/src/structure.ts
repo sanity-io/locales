@@ -157,6 +157,9 @@ export default removeUndefinedLocaleResources({
     'ದಾಖಲೆಯನ್ನು ಬಿಡುಗಡೆಗೆ ಸೇರಿಸುವಾಗ ದಯವಿಟ್ಟು ಕಾಯಿರಿ. ಇದು ಕೆಲವು ಸೆಕೆಂಡುಗಳಿಗಿಂತ ಹೆಚ್ಚು ಸಮಯ ತಗೊಳ್ಳಬಾರದು.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'ದಾಖಲೆಯನ್ನು ಬಿಡುಗಡೆಗೆ ಸೇರಿಸುತ್ತಿದೆ…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'ನಾವು ಆಯ್ಕೆ ಮಾಡಿದ ದಾಖಲೆಯ ಪರಿಷ್ಕರಣೆಯನ್ನು ಹುಡುಕಲು ಆಗಲಿಲ್ಲ, ದಯವಿಟ್ಟು ಇತಿಹಾಸ ಪಟ್ಟಿಯಿಂದ ಮತ್ತೊಂದು ಎಂಟ್ರಿ ಆಯ್ಕೆ ಮಾಡಿ.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'ಈ ದಾಖಲೆಯು <VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿ ಅಪ್ರಕಟಿತವಾಗಲಿದೆ',
@@ -195,6 +198,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'ಆದ್ಯತೆಯ ಲೇಖನ',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'ಈ ದಾಖಲೆಯ <strong>{{perspective}}</strong> ಆವೃತ್ತಿಯ ಇತಿಹಾಸವನ್ನು ತೋರಿಸುತ್ತಿದೆ.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'ಈ ನೋಟ ಈ ದಾಖಲೆಯ ನಿರ್ದಿಷ್ಟ ಆವೃತ್ತಿಯಲ್ಲಿ ನಡೆದ ಬದಲಾವಣೆಗಳನ್ನು ತೋರಿಸುತ್ತದೆ. ಅದರ ಬದಲಾವಣೆಗಳನ್ನು ನೋಡಲು ಬೇರೆ ಆವೃತ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'ಇಂದ',
   /* The label for the history tab in the changes inspector*/
@@ -358,6 +367,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'ಇಷ್ಟಗಳಿಂದ ತೆಗೆದುಹಾಕಿ',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'ನಾವು ಈ ದಾಖಲೆಯ ಬದಲಾವಣೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಅಸಮರ್ಥರಾಗಿದ್ದೇವೆ, ನಿಮ್ಮ ಯೋಜನೆಯ ಇತಿಹಾಸ ಉಳಿತಾಯ ನೀತಿಯಿಂದಾಗಿ ಸಾಧ್ಯವಾಗಿರಬಹುದು, ಇದು ನಿಮಗೆ ಹೇಗೆ <strong>{{version}}</strong> ಆವೃತ್ತಿಯು <strong>ಪ್ರಕಟಿತ</strong> ಆವೃತ್ತಿಯೊಂದಿಗೆ ಹೋಲಿಕೆ ಮಾಡುತ್ತದೆ ಎಂದು ತೋರಿಸುತ್ತದೆ.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'ಪ್ರಕಟಿತದೊಂದಿಗೆ ಹೋಲಿಕೆ',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> ದಾಖಲೆಯನ್ನು ಪರಿಶೀಲಿಸಿ',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -587,4 +601,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'ಸಂಕೋಚಿಸಿ',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'ವಿಸ್ತರಿಸಿ',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'ಐಡಿ "{{releaseId}}" ನೊಂದಿಗೆ ಬಿಡುಗಡೆ ಕಾಣಲಾಗಲಿಲ್ಲ',
 })
