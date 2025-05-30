@@ -161,9 +161,13 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'ワークスペースファイル',
   'asset-sources.dataset.image.title': 'ワークスペース画像',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'メディアライブラリ',
   'asset-sources.media-library.image.title': 'メディアライブラリ',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
@@ -312,6 +316,8 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '読み込み中…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '変更を読み込み中…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error': undefined, // 'We couldn\'t find the document revision with id: <code>{{revisionId}}</code> you\'re trying to compare. <Break/> This is probably due to history retention policy of your plan. <Break/> Please select a different <strong>From</strong> entry.'
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'このパネルに変更リストが表示されるように、ドキュメントを編集するか、タイムラインで古いバージョンを選択してください。',
@@ -360,6 +366,10 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '未知のスキーマタイプ',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '削除されました',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description': undefined, // 'You have selected the same <strong>from</strong> and <strong>to</strong> revision, please select different revisions to compare the changes between them.'
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': undefined, // 'Same revision selected'
   /** Title for the Review Changes pane */
   'changes.title': '変更をレビュー',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -374,6 +384,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': '確認',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '読み込み中',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -411,6 +423,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': '{{date}}に公開されました',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '改訂日 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': undefined, // 'Revision not found'
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ドキュメントタイプ "{{type}}" が見つかりません',
@@ -478,8 +492,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': '非推奨',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': '無題',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': '接続が失われました。再接続中…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'エラーがあります',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1160,6 +1172,15 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '予期せぬエラー: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description': undefined, // 'Your browser is using an outdated HTTP protocol to communicate with Sanity. This may result in substantially degraded performance.'
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': undefined, // 'Learn more'
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': undefined, // 'Don\'t show again for this session'
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': undefined, // 'You\'ve got your breaks on'
+
   /** Button label for "Create new document" button */
   'new-document.button': '新規作成',
   /**
@@ -1835,6 +1856,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '削除された',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '削除: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': undefined, // 'Draft created'
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': undefined, // 'Draft created: {{timestamp, datetime}}'
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '下書きを破棄',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1847,6 +1872,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'ライブ編集された',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'ライブ編集: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': undefined, // 'Deleted by retention policy'
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '公開された',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1855,6 +1882,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '非公開にされた',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '非公開: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': undefined, // 'Version created'
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': undefined, // 'Version created: {{timestamp, datetime}}'
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': undefined, // 'Version discarded'
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': undefined, // 'Version discarded: {{timestamp, datetime}}'
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
