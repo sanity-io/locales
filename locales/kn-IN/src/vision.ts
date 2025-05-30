@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ',
+  /** Label for deleting a query */
+  'action.delete': 'ಅಳಿಸು',
+  /** Label for editing a query's title */
+  'action.edit-title': 'ಶೀರ್ಷಿಕೆ ಸಂಪಾದಿಸಿ',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'ನಿಲ್ಲಿಸು',
   /** Label for setting up a listener */
   'action.listen-execute': 'ಆಲಿಸು',
+  /** Label for query loading table */
+  'action.load-queries': 'ಪ್ರಶ್ನೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ',
+  /** Label for loading a query */
+  'action.load-query': 'ಪ್ರಶ್ನೆ ಲೋಡ್ ಮಾಡಿ',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'ರದ್ದುಮಾಡು',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'ಫೆಚ್ ಮಾಡು',
+  /** Label for saving a query */
+  'action.save-query': 'ಪ್ರಶ್ನೆ ಉಳಿಸಿ',
+  /** Label for updating a query */
+  'action.update': 'ನವೀಕರಿಸಿ',
 
+  /** Label for actions user can take */
+  'label.actions': 'ಕ್ರಿಯೆಗಳು',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'ಸಂಪಾದಿತ',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'ಹೊಸ',
+  /** Label for query type "personal" */
+  'label.personal': 'ವೈಯಕ್ತಿಕ',
+  /** Label for savedAt date */
+  'label.saved-at': 'ಉಳಿಸಲಾಗಿದೆ',
+  /** Saved queries */
+  'label.saved-queries': 'ಉಳಿಸಿದ ಪ್ರಶ್ನೆಗಳು',
+  /** Search queries */
+  'label.search-queries': 'ಪ್ರಶ್ನೆಗಳನ್ನು ಹುಡುಕಿ',
+  /** Share query */
+  'label.share': 'ಹಂಚಿಕೊಳ್ಳಿ',
+  /** Label for saved query type "team" */
+  'label.team': 'ತಂಡ',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು ಮಾನ್ಯ JSON ಅಲ್ಲ',
@@ -48,6 +76,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'ಲಭ್ಯವಿಲ್ಲ',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'ಪ್ರಶ್ನೆ ಈಗಾಗಲೇ ಉಳಿಸಲಾಗಿದೆ',
+  /** Save error label */
+  'save-query.error': 'ಪ್ರಶ್ನೆ ಉಳಿಸುವಲ್ಲಿ ದೋಷ',
+  /** Save success label */
+  'save-query.success': 'ಪ್ರಶ್ನೆ ಉಳಿಸಲಾಗಿದೆ',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API ಆವೃತ್ತಿ',
