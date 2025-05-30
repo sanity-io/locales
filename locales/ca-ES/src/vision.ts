@@ -3,20 +3,48 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Copia al porta-retalls',
+  /** Label for deleting a query */
+  'action.delete': undefined, // 'Delete'
+  /** Label for editing a query's title */
+  'action.edit-title': undefined, // 'Edit title'
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Atura',
   /** Label for setting up a listener */
   'action.listen-execute': 'Escolta',
+  /** Label for query loading table */
+  'action.load-queries': undefined, // 'Load queries'
+  /** Label for loading a query */
+  'action.load-query': undefined, // 'Load query'
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Cancel·la',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Obté',
+  /** Label for saving a query */
+  'action.save-query': undefined, // 'Save query'
+  /** Label for updating a query */
+  'action.update': undefined, // 'Update'
 
+  /** Label for actions user can take */
+  'label.actions': undefined, // 'Actions'
+  /** Label for saved queries that have been edited */
+  'label.edited': undefined, // 'Edited'
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nou',
+  /** Label for query type "personal" */
+  'label.personal': undefined, // 'Personal'
+  /** Label for savedAt date */
+  'label.saved-at': undefined, // 'Saved at'
+  /** Saved queries */
+  'label.saved-queries': undefined, // 'Saved queries'
+  /** Search queries */
+  'label.search-queries': undefined, // 'Search queries'
+  /** Share query */
+  'label.share': undefined, // 'Share'
+  /** Label for saved query type "team" */
+  'label.team': undefined, // 'Team'
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Els paràmetres no són JSON vàlid',
@@ -47,6 +75,13 @@ export default removeUndefinedLocaleResources({
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'n/d',
+
+  /** Query already saved error label */
+  'save-query.already-saved': undefined, // 'Query already saved'
+  /** Save error label */
+  'save-query.error': undefined, // 'Error saving query'
+  /** Save success label */
+  'save-query.success': undefined, // 'Query saved'
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': "Versió de l'API",
