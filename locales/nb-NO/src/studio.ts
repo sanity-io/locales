@@ -158,9 +158,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Filer i workspace',
   'asset-sources.dataset.image.title': 'Bilder i workspace',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Noe gikk galt med å løse opp Media Library for dette prosjektet.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediebibliotek',
   'asset-sources.media-library.image.title': 'Mediebibliotek',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Vennligst vent mens vi forbereder Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -311,6 +317,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Laster…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Laster endringer…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Vi kunne ikke finne dokumentrevisjonen med id: <code>{{revisionId}}</code> som du prøver å sammenligne. <Break/> Dette skyldes sannsynligvis historikkbevaringsreglene i abonnementet ditt. <Break/> Vennligst velg en annen <strong>From</strong>-oppføring.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Rediger dokumentet eller velg en eldre versjon i tidslinjen for å se en liste over endringer i dette panelet.',
@@ -359,6 +368,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Ukjent skjematype',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Fjernet',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Du har valgt samme <strong>from</strong> og <strong>to</strong> revisjon, vennligst velg forskjellige revisjoner for å sammenligne endringene mellom dem.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Samme revisjon valgt',
   /** Title for the Review Changes pane */
   'changes.title': 'Se endringer',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -373,6 +387,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bekreft',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laster',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Prøver å koble til…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -410,6 +426,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publisert {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisjon fra <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revisjon ikke funnet',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttypen "{{type}}" ble ikke funnet',
@@ -477,8 +495,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'Utfaset',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Uten navn',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Forbindelse tapt. Kobler til på nytt…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Har feil',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1154,6 +1170,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Uforventet feil: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Nettleseren din bruker et utdatert HTTP-protokoll for å kommunisere med Sanity. Dette kan føre til betydelig redusert ytelse.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Lær mer',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ikke vis igjen for denne økten',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Du har bremsene på',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Opprett',
   /**
@@ -1828,6 +1854,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Slettet',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Slettet: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Utkast opprettet',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Utkast opprettet: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Forkastet utkast',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1840,6 +1870,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Redigert live',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Redigert live: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Slettet av oppbevaringspolicy',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publisert',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1848,6 +1880,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Avpublisert',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Avpublisert: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versjon opprettet',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versjon opprettet: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versjon forkastet',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versjon forkastet: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
