@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.23](https://github.com/sanity-io/locales/compare/locale-hr-hr-v1.1.22...locale-hr-hr-v1.1.23) (2025-05-30)
+
+
+### Bug Fixes
+
+* **hr-HR:** automated translation updates ([#1177](https://github.com/sanity-io/locales/issues/1177)) ([e7a7d23](https://github.com/sanity-io/locales/commit/e7a7d2388212129e882b1857c6138f30ba55323c))
+
 ## [1.1.22](https://github.com/sanity-io/locales/compare/locale-hr-hr-v1.1.21...locale-hr-hr-v1.1.22) (2025-05-16)
 
 
