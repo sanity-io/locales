@@ -158,6 +158,9 @@ export default removeUndefinedLocaleResources({
     'Vennligst vent mens dokumentet legges til i utgivelsen. Det burde ikke ta lenger enn noen sekunder.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Legger dokument til utgivelsen…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Vi kunne ikke finne dokumentrevisjonen som ble valgt, vennligst velg en annen oppføring fra historikklisten.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dette dokumentet vil bli avpublisert som en del av <VersionBadge>{{title}}</VersionBadge> utgivelsen',
@@ -196,6 +199,12 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': 'Start med en idé',
 
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Viser historikken for <strong>{{perspective}}</strong>-versjonen av dette dokumentet.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Denne visningen viser endringene som har skjedd i en spesifikk versjon av dette dokumentet. Velg en annen versjon for å se dens endringer',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Fra',
   /* The label for the history tab in the changes inspector*/
@@ -361,6 +370,11 @@ export default removeUndefinedLocaleResources({
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Fjern fra favoritter',
 
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Vi klarer ikke å laste endringene for dette dokumentet, sannsynligvis på grunn av historikkbevaringsreglene i din plan, dette viser deg hvordan <strong>{{version}}</strong>-versjonen sammenlignes med <strong>publisert</strong>-versjonen.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Sammenligner med publisert',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspiser <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -426,10 +440,20 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Uten tittel',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Prøver på nytt…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Feil: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Feil: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline':
+    'Internettforbindelsen ser ut til å være frakoblet.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kunne ikke hente listeobjekter',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Prøver på nytt…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Prøver på nytt… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Viser maksimalt {{limit}} dokumenter',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -438,6 +462,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Ingen resultater funnet',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Ingen dokumenter funnet som samsvarer',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Prøver å koble til…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Søk i liste',
   /** The search input for the search input on the document list pane */
@@ -572,4 +598,6 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-collapse': 'Skjul',
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Utvid',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Utgivelse med id "{{releaseId}}" ikke funnet',
 })
