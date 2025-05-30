@@ -454,7 +454,7 @@ export default removeUndefinedLocaleResources({
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text.dev': 'Fehler: <Code>{{error}}</Code>',
   /** The error text on the document list pane if the browser appears to be offlline */
-  'panes.document-list-pane.error.text.offline': 'Die Internetverbindung scheint offline zu sein.',
+  'panes.document-list-pane.error.text.offline': 'Die Internetverbindung scheint unterbrochen zu sein.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Listenelemente konnten nicht abgerufen werden',
   /** The help text saying that we'll retry fetching the document list */

@@ -376,7 +376,7 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-description':
     'Sie haben dieselbe <strong>von</strong> und <strong>zu</strong> Revision ausgewählt, bitte wählen Sie verschiedene Revisionen, um die Änderungen zwischen ihnen zu vergleichen.',
   /** Same Revision Selected title in the Review Changes pane */
-  'changes.same-revision-selected-title': 'Dasselbe Revision ausgewählt',
+  'changes.same-revision-selected-title': 'Dieselbe Revision ausgewählt',
   /** Title for the Review Changes pane */
   'changes.title': 'Änderungen überprüfen',
   /**The title that will be shown in the badge inside the events when the item is a draft */
