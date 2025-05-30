@@ -162,9 +162,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': "Fitxers de l'espai de treball",
   'asset-sources.dataset.image.title': "Imatges de l'espai de treball",
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Alguna cosa ha anat malament intentant resoldre la Media Library per a aquest projecte.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.info.provisioning':
+    'Espereu mentre preparem la vostra Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -312,6 +318,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Carregant…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Carregant canvis…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    "No hem pogut trobar la revisió del document amb id: <code>{{revisionId}}</code> que esteu intentant comparar. <Break/> Això probablement es deu a la política de retenció d'historial del vostre pla. <Break/> Si us plau, seleccioneu una entrada <strong>From</strong> diferent.",
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Edita el document o selecciona una versió anterior en la línia de temps per veure una llista de canvis aparèixer en aquest panell.',
@@ -360,6 +369,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': "Tipus d'esquema desconegut",
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Eliminat',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Heu seleccionat la mateixa revisió <strong>from</strong> i <strong>to</strong>, si us plau seleccioneu revisions diferents per comparar els canvis entre elles.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Mateixa revisió seleccionada',
   /** Title for the Review Changes pane */
   'changes.title': 'Història',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -374,6 +388,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirma',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Carregant',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Intentant connectar…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -411,6 +427,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'Publicat {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisió de <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revisió no trobada',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'No s\'ha trobat el tipus de document "{{type}}"',
@@ -478,8 +496,6 @@ export default removeUndefinedLocaleResources({
   'form.field.deprecated-label': 'obsolet',
   /** Fallback title shown above field if it has no defined title */
   'form.field.untitled-field-label': 'Camp sense títol',
-  /** The title of the reconnecting toast */
-  'form.reconnecting.toast.title': 'Connexió perduda. Reconnectant…',
   /** Accessibility label for the icon that indicates the field has a validation error */
   'form.validation.has-error-aria-label': 'Té error',
   /** Accessibility label for the icon that indicates the field has validation information */
@@ -1159,6 +1175,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Error inesperat: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'El vostre navegador està utilitzant un protocol HTTP antiquat per comunicar-se amb Sanity. Això pot resultar en un rendiment substancialment degradat.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Aprèn més',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'No mostrar de nou en aquesta sessió',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Teniu els frens posats',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'Crear',
   /**
@@ -1822,6 +1848,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Eliminat',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Esborrat: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Esborrany creat',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Esborrany creat: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Esborrany descartat',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1834,6 +1864,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editat en viu',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editat en viu: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'Eliminat per la política de retenció',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publicat',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1842,6 +1874,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Despublicat',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Despublicat: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versió creada',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versió creada: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versió descartada',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versió descartada: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
