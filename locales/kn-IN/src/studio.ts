@@ -313,6 +313,9 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'ಲೋಡ್ ಆಗುತ್ತಿದೆ…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'ಬದಲಾವಣೆಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'ನೀವು ಹೋಲಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ದಾಖಲೆ ಪರಿಷ್ಕರಣೆಯನ್ನು ನಾವು ಹುಡುಕಲು ಆಗಲಿಲ್ಲ ಐಡಿ: <code>{{revisionId}}</code>. <Break/> ಇದು ನಿಮ್ಮ ಯೋಜನೆಯ ಇತಿಹಾಸ ಉಳಿತಾಯ ನೀತಿಯಿಂದಾಗಿರಬಹುದು. <Break/> ದಯವಿಟ್ಟು ಭಿನ್ನ <strong>ಫ್ರಾಮ್</strong> ಎಂಟ್ರಿ ಆಯ್ಕೆಮಾಡಿ.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'ದಾಖಲೆಯನ್ನು ಸಂಪಾದಿಸಿ ಅಥವಾ ಟೈಮ್‌ಲೈನ್‌ನಲ್ಲಿ ಹಳೆಯ ಆವೃತ್ತಿಯನ್ನು ಆರಿಸಿ ಈ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ಬದಲಾವಣೆಗಳ ಪಟ್ಟಿ ಕಾಣಿಸಲು.',
@@ -361,6 +364,11 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'ಅಜ್ಞಾತ ಸ್ಕೀಮಾ ಪ್ರಕಾರ',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'ತೆಗೆದುಹಾಕಲಾಗಿದೆ',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'ನೀವು ಅದೇ <strong>ಫ್ರಾಮ್</strong> ಮತ್ತು <strong>ಟು</strong> ಪರಿಷ್ಕರಣೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ, ದಯವಿಟ್ಟು ಅವುಗಳ ನಡುವಿನ ಬದಲಾವಣೆಗಳನ್ನು ಹೋಲಿಸಲು ಭಿನ್ನ ಪರಿಷ್ಕರಣೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'ಅದೇ ಪರಿಷ್ಕರಣೆ ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ',
   /** Title for the Review Changes pane */
   'changes.title': 'ಪರಿಷ್ಕರಣೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -414,6 +422,8 @@ export default removeUndefinedLocaleResources({
   'document-status.published': 'ಪ್ರಕಟಿತ {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'ಪರಿಷ್ಕರಣೆ <em>{{date}}</em> ರಿಂದ',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'ಪರಿಷ್ಕರಣೆ ಕಾಣಿಸಿಲ್ಲ',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ದಾಖಲೆ ಪ್ರಕಾರ "{{type}}" ಕಾಣಿಸಿಲ್ಲ',
@@ -1161,6 +1171,16 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'ಅನಿರೀಕ್ಷಿತ ದೋಷ: {{error}}',
 
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'ನಿಮ್ಮ ಬ್ರೌಸರ್ ಸ್ಯಾನಿಟಿಯೊಂದಿಗೆ ಸಂವಹನ ಮಾಡಲು ಹಳೆಯ HTTP ಪ್ರೋಟೋಕಾಲ್ ಅನ್ನು ಬಳಸುತ್ತಿದೆ. ಇದು ಗಣನೀಯವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಣೆಯನ್ನು ಕುಂಠಿತಗೊಳಿಸಬಹುದು.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'ಇನ್ನಷ್ಟು ಕಲಿಯಿರಿ',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'ಈ ಸೆಷನ್‌ಗೆ ಮತ್ತೆ ತೋರಿಸಬೇಡ',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'ನೀವು ನಿಮ್ಮ ಬ್ರೇಕ್‌ಗಳನ್ನು ಹಾಕಿದ್ದೀರಿ',
+
   /** Button label for "Create new document" button */
   'new-document.button': 'ಸೃಷ್ಟಿಸಿ',
   /**
@@ -1825,6 +1845,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'ಅಳಿಸಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'ಅಳಿಸಲಾಗಿದೆ: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'ಮುಸದ್ದೆ ರಚಿಸಲಾಗಿದೆ',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'ಮುಸದ್ದೆ ರಚಿಸಲಾಗಿದೆ: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'ಕರಡು ತ್ಯಜಿಸಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1837,6 +1861,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'ನೇರ ಸಂಪಾದನೆ ಮಾಡಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'ನೇರ ಸಂಪಾದನೆ ಮಾಡಲಾಗಿದೆ: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document has been created */
+  'timeline.operation.history-cleared': 'ಉಳಿತಾಯ ನೀತಿಯಿಂದ ಅಳಿಸಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1845,6 +1871,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'ಪ್ರಕಟಣೆ ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'ಪ್ರಕಟಣೆ ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'ಆವೃತ್ತಿ ರಚಿಸಲಾಗಿದೆ',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'ಆವೃತ್ತಿ ರಚಿಸಲಾಗಿದೆ: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'ಆವೃತ್ತಿ ತ್ಯಜಿಸಲಾಗಿದೆ',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'ಆವೃತ್ತಿ ತ್ಯಜಿಸಲಾಗಿದೆ: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
