@@ -4,47 +4,47 @@ export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Copia al porta-retalls',
   /** Label for deleting a query */
-  'action.delete': undefined, // 'Delete'
+  'action.delete': 'Esborra',
   /** Label for editing a query's title */
-  'action.edit-title': undefined, // 'Edit title'
+  'action.edit-title': 'Edita el títol',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Atura',
   /** Label for setting up a listener */
   'action.listen-execute': 'Escolta',
   /** Label for query loading table */
-  'action.load-queries': undefined, // 'Load queries'
+  'action.load-queries': 'Carrega consultes',
   /** Label for loading a query */
-  'action.load-query': undefined, // 'Load query'
+  'action.load-query': 'Carrega consulta',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Cancel·la',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Obté',
   /** Label for saving a query */
-  'action.save-query': undefined, // 'Save query'
+  'action.save-query': 'Desa consulta',
   /** Label for updating a query */
-  'action.update': undefined, // 'Update'
+  'action.update': 'Actualitza',
 
   /** Label for actions user can take */
-  'label.actions': undefined, // 'Actions'
+  'label.actions': 'Accions',
   /** Label for saved queries that have been edited */
-  'label.edited': undefined, // 'Edited'
+  'label.edited': 'Editat',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nou',
   /** Label for query type "personal" */
-  'label.personal': undefined, // 'Personal'
+  'label.personal': 'Personal',
   /** Label for savedAt date */
-  'label.saved-at': undefined, // 'Saved at'
+  'label.saved-at': 'Desat el',
   /** Saved queries */
-  'label.saved-queries': undefined, // 'Saved queries'
+  'label.saved-queries': 'Consultes desades',
   /** Search queries */
-  'label.search-queries': undefined, // 'Search queries'
+  'label.search-queries': 'Cerca consultes',
   /** Share query */
-  'label.share': undefined, // 'Share'
+  'label.share': 'Comparteix',
   /** Label for saved query type "team" */
-  'label.team': undefined, // 'Team'
+  'label.team': 'Equip',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Els paràmetres no són JSON vàlid',
@@ -77,11 +77,11 @@ export default removeUndefinedLocaleResources({
   'result.timing-not-applicable': 'n/d',
 
   /** Query already saved error label */
-  'save-query.already-saved': undefined, // 'Query already saved'
+  'save-query.already-saved': 'Consulta ja desada',
   /** Save error label */
-  'save-query.error': undefined, // 'Error saving query'
+  'save-query.error': 'Error en desar la consulta',
   /** Save success label */
-  'save-query.success': undefined, // 'Query saved'
+  'save-query.success': 'Consulta desada',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': "Versió de l'API",

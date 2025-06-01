@@ -160,7 +160,8 @@ export default removeUndefinedLocaleResources({
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'Afegint document a la publicació…',
   /** The text for the revision not found banner */
-  'banners.revision-not-found.description': undefined, // 'We couldn\'t find the document revision selected, please select another entry from the history list.'
+  'banners.revision-not-found.description':
+    "No hem pogut trobar la revisió del document seleccionada, si us plau seleccioneu una altra entrada de la llista d'historial.",
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Aquest document serà despublicat com a part de la publicació <VersionBadge>{{title}}</VersionBadge>',
@@ -200,9 +201,11 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-heading': 'Creació prioritzant la idea',
 
   /** The description for the changes banner */
-  'changes.banner.description': undefined, // 'Showing the history for the <strong>{{perspective}}</strong> version of this document.'
+  'changes.banner.description':
+    "Mostrant l'historial per a la versió <strong>{{perspective}}</strong> d'aquest document.",
   /** The tooltip for the changes banner */
-  'changes.banner.tooltip': undefined, // 'This view shows the changes that occurred in a specific version of this document. Select a different version to see its changes'
+  'changes.banner.tooltip':
+    "Aquesta vista mostra els canvis que han ocorregut en una versió específica d'aquest document. Seleccioneu una versió diferent per veure els seus canvis",
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Des de',
   /* The label for the history tab in the changes inspector*/
@@ -370,9 +373,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.remove-from-favorites': 'Treure de preferits',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
-  'events.compare-with-published.description': undefined, // 'We\'re unable to load the changes for this document, probably due to history retention policy of your plan, this shows you how the <strong>{{version}}</strong> version compares to the <strong>published</strong> version.'
+  'events.compare-with-published.description':
+    "No podem carregar els canvis d'aquest document, probablement a causa de la política de retenció d'historial del vostre pla, això us mostra com la versió <strong>{{version}}</strong> es compara amb la versió <strong>publicada</strong>.",
   /** The title for the events inspector when we can't load the document so we default to compare with published */
-  'events.compare-with-published.title': undefined, // 'Comparing with published'
+  'events.compare-with-published.title': 'Comparant amb la publicada',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspeccionar <VersionBadge>{{releaseTitle}}</VersionBadge> document',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -440,18 +444,20 @@ export default removeUndefinedLocaleResources({
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Sense títol',
   /** The help text saying that we'll retry fetching the document list */
-  'panes.document-list-pane.error.retrying': undefined, // 'Retrying…'
+  'panes.document-list-pane.error.retrying': 'Tornant a intentar…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Error: <Code>{{error}}</Code>',
   /** The error text on the document list pane */
-  'panes.document-list-pane.error.text.dev': undefined, // 'Error: <Code>{{error}}</Code>'
+  'panes.document-list-pane.error.text.dev': 'Error: <Code>{{error}}</Code>',
   /** The error text on the document list pane if the browser appears to be offlline */
-  'panes.document-list-pane.error.text.offline': undefined, // 'The Internet connection appears to be offline.'
+  'panes.document-list-pane.error.text.offline':
+    'La connexió a Internet sembla estar fora de línia.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': "No s'han pogut obtenir els elements de la llista",
   /** The help text saying that we'll retry fetching the document list */
-  'panes.document-list-pane.error.will-retry-automatically_one': undefined, // 'Retrying…'
-  'panes.document-list-pane.error.will-retry-automatically_other': undefined, // 'Retrying… (#{{count}}).'
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Tornant a intentar…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Tornant a intentar… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Mostrant un màxim de {{limit}} documents',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -461,7 +467,7 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'No hi ha documents coincidents',
   /** The search input for the search input on the document list pane */
-  'panes.document-list-pane.reconnecting': undefined, // 'Trying to connect…'
+  'panes.document-list-pane.reconnecting': 'Intentant connectar…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Cerca a la llista',
   /** The search input for the search input on the document list pane */
@@ -601,5 +607,5 @@ export default removeUndefinedLocaleResources({
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Expandir',
   /** The text for the published event menu tooltip when the release is not found */
-  'timeline-item.not-found-release.tooltip': undefined, // 'Release with id "{{releaseId}}" not found'
+  'timeline-item.not-found-release.tooltip': 'No s\'ha trobat la publicació amb id "{{releaseId}}"',
 })

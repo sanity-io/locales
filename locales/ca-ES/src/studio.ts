@@ -163,12 +163,14 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.file.title': "Fitxers de l'espai de treball",
   'asset-sources.dataset.image.title': "Imatges de l'espai de treball",
   /** Error messages for the Media Library Asset Source  */
-  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Alguna cosa ha anat malament intentant resoldre la Biblioteca de Mitjans per a aquest projecte.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
+  'asset-sources.media-library.info.provisioning':
+    'Espereu mentre preparem la vostra Biblioteca de Mitjans',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -317,7 +319,8 @@ export default removeUndefinedLocaleResources({
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Carregant canvis…',
   /** Error message shown when the document revision could not be found */
-  'changes.missing-since-document-error': undefined, // 'We couldn\'t find the document revision with id: <code>{{revisionId}}</code> you\'re trying to compare. <Break/> This is probably due to history retention policy of your plan. <Break/> Please select a different <strong>From</strong> entry.'
+  'changes.missing-since-document-error':
+    "No hem pogut trobar la revisió del document amb id: <code>{{revisionId}}</code> que esteu intentant comparar. <Break/> Això probablement es deu a la política de retenció d'historial del vostre pla. <Break/> Si us plau, seleccioneu una entrada <strong>Des de</strong> diferent.",
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Edita el document o selecciona una versió anterior en la línia de temps per veure una llista de canvis aparèixer en aquest panell.',
@@ -367,9 +370,10 @@ export default removeUndefinedLocaleResources({
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Eliminat',
   /** Same Revision Selected description in the Review Changes pane */
-  'changes.same-revision-selected-description': undefined, // 'You have selected the same <strong>from</strong> and <strong>to</strong> revision, please select different revisions to compare the changes between them.'
+  'changes.same-revision-selected-description':
+    'Heu seleccionat la mateixa revisió <strong>des de</strong> i <strong>fins a</strong>, si us plau seleccioneu revisions diferents per comparar els canvis entre elles.',
   /** Same Revision Selected title in the Review Changes pane */
-  'changes.same-revision-selected-title': undefined, // 'Same revision selected'
+  'changes.same-revision-selected-title': 'Seleccionada la mateixa revisió',
   /** Title for the Review Changes pane */
   'changes.title': 'Història',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -385,7 +389,7 @@ export default removeUndefinedLocaleResources({
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Carregant',
   /** The title of the reconnecting toast */
-  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
+  'common.reconnecting.toast.title': 'Intentant connectar…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -424,7 +428,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisió de <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
-  'document-status.revision-not-found': undefined, // 'Revision not found'
+  'document-status.revision-not-found': 'Revisió no trobada',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'No s\'ha trobat el tipus de document "{{type}}"',
@@ -1172,13 +1176,14 @@ export default removeUndefinedLocaleResources({
   'member-field-error.unexpected-error': 'Error inesperat: {{error}}',
 
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
-  'network-check.slow-protocol-warning.description': undefined, // 'Your browser is using an outdated HTTP protocol to communicate with Sanity. This may result in substantially degraded performance.'
+  'network-check.slow-protocol-warning.description':
+    'El vostre navegador està utilitzant un protocol HTTP antiquat per comunicar-se amb Sanity. Això pot resultar en un rendiment substancialment degradat.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.learn-more-button.text': undefined, // 'Learn more'
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Apreneu més',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.snooze-button.text': undefined, // 'Don\'t show again for this session'
+  'network-check.slow-protocol-warning.snooze-button.text': 'No mostrar de nou en aquesta sessió',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
-  'network-check.slow-protocol-warning.title': undefined, // 'You\'ve got your breaks on'
+  'network-check.slow-protocol-warning.title': 'Teniu els frens posats',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Crear',
@@ -1844,9 +1849,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Esborrat: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft document has been created*/
-  'timeline.operation.draft-created': undefined, // 'Draft created'
+  'timeline.operation.draft-created': 'Esborrany creat',
   /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
-  'timeline.operation.draft-created_timestamp': undefined, // 'Draft created: {{timestamp, datetime}}'
+  'timeline.operation.draft-created_timestamp': 'Esborrany creat: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Esborrany descartat',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1860,7 +1865,7 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editat en viu: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.history-cleared': undefined, // 'Deleted by retention policy'
+  'timeline.operation.history-cleared': 'Esborrat per la política de retenció',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publicat',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1870,13 +1875,13 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Despublicat: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been created */
-  'timeline.operation.version-created': undefined, // 'Version created'
+  'timeline.operation.version-created': 'Versió creada',
   /** Label shown in review changes timeline when a document version has been created, with a timestamp */
-  'timeline.operation.version-created_timestamp': undefined, // 'Version created: {{timestamp, datetime}}'
+  'timeline.operation.version-created_timestamp': 'Versió creada: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been discarded */
-  'timeline.operation.version-discarded': undefined, // 'Version discarded'
+  'timeline.operation.version-discarded': 'Versió descartada',
   /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
-  'timeline.operation.version-discarded_timestamp': undefined, // 'Version discarded: {{timestamp, datetime}}'
+  'timeline.operation.version-discarded_timestamp': 'Versió descartada: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
