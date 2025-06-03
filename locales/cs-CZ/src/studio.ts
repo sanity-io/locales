@@ -1255,6 +1255,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Nepodařilo se zahodit verzi',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nové vydání',
+  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemáte oprávnění k provedení této akce',
   /** Error message for when a version is set to be unpublished */

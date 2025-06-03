@@ -1256,6 +1256,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Sürüm atılamadı',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Yeni Yayın',
+  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
   /** Error message for when a version is set to be unpublished */

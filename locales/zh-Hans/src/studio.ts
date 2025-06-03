@@ -1178,6 +1178,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': '丢弃版本失败',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新发布',
+  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您没有执行此操作的权限',
   /** Error message for when a version is set to be unpublished */
