@@ -1256,6 +1256,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Nije uspjelo odbacivanje verzije',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Novo Izdanje',
+  'release.action.new-release.limit-reached_other':
+    'Ovaj radni prostor je ograničen na {{count}} izdanja',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
   /** Error message for when a version is set to be unpublished */
