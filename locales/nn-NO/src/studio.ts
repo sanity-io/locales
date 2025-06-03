@@ -1254,6 +1254,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Klarte ikkje å forkaste versjon',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Utgjeving',
+  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikkje løyve til å utføre denne handlinga',
   /** Error message for when a version is set to be unpublished */

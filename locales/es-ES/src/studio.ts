@@ -1258,6 +1258,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'No se pudo descartar la versión',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nuevo Lanzamiento',
+  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tienes permiso para realizar esta acción',
   /** Error message for when a version is set to be unpublished */

@@ -1252,6 +1252,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': '버전 버리기에 실패했습니다',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '새 릴리스',
+  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '이 작업을 수행할 권한이 없습니다',
   /** Error message for when a version is set to be unpublished */
