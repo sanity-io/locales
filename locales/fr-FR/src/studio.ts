@@ -1273,6 +1273,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Échec de la suppression de la version',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nouvelle Publication',
+  'release.action.new-release.limit-reached_other':
+    'Cet espace de travail est limité à {{count}} publications',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': "Vous n'avez pas la permission d'effectuer cette action",
   /** Error message for when a version is set to be unpublished */
