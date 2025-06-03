@@ -1200,6 +1200,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'ไม่สามารถทิ้งเวอร์ชันได้',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'การปล่อยใหม่',
+  'release.action.new-release.limit-reached_other': 'พื้นที่ทำงานนี้จำกัดไว้ที่ {{count}} รีลีส',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'คุณไม่มีสิทธิ์ในการดำเนินการนี้',
   /** Error message for when a version is set to be unpublished */
