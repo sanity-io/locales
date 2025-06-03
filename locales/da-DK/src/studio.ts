@@ -1251,6 +1251,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Det lykkedes ikke at kassere versionen',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Udgivelse',
+  'release.action.new-release.limit-reached_other':
+    'Denne arbejdsplads er begrænset til {{count}} udgivelser',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikke tilladelse til at udføre denne handling',
   /** Error message for when a version is set to be unpublished */
