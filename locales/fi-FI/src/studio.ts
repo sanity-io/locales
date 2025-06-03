@@ -1254,6 +1254,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Version hylkääminen epäonnistui',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Uusi julkaisu',
+  'release.action.new-release.limit-reached_other':
+    'Tämä työtila on rajoitettu {{count}} julkaisuun',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
   /** Error message for when a version is set to be unpublished */
