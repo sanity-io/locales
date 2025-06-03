@@ -1208,6 +1208,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Không thể loại bỏ phiên bản',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Phiên bản mới',
+  'release.action.new-release.limit-reached_other':
+    'Không gian làm việc này chỉ giới hạn {{count}} bản phát hành',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bạn không có quyền thực hiện hành động này',
   /** Error message for when a version is set to be unpublished */
