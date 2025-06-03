@@ -1256,6 +1256,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
+  'release.action.new-release.limit-reached_other':
+    'ಈ ಕಾರ್ಯಸ್ಥಾನವು {{count}} ಬಿಡುಗಡೆಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** Error message for when a version is set to be unpublished */
