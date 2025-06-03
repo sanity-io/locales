@@ -162,12 +162,14 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.file.title': 'ワークスペースファイル',
   'asset-sources.dataset.image.title': 'ワークスペース画像',
   /** Error messages for the Media Library Asset Source  */
-  'asset-sources.media-library.error.library-could-not-be-resolved': undefined, // 'Something went wrong trying to resolve the Media Library for this project.'
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'このプロジェクトのメディアライブラリを解決しようとして何か問題が発生しました。',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'メディアライブラリ',
   'asset-sources.media-library.image.title': 'メディアライブラリ',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': undefined, // 'Please wait while we prepare your Media Library'
+  'asset-sources.media-library.info.provisioning':
+    'メディアライブラリの準備が整うまでお待ちください',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
@@ -317,7 +319,8 @@ export default removeUndefinedLocaleResources({
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '変更を読み込み中…',
   /** Error message shown when the document revision could not be found */
-  'changes.missing-since-document-error': undefined, // 'We couldn\'t find the document revision with id: <code>{{revisionId}}</code> you\'re trying to compare. <Break/> This is probably due to history retention policy of your plan. <Break/> Please select a different <strong>From</strong> entry.'
+  'changes.missing-since-document-error':
+    '比較しようとしているid: <code>{{revisionId}}</code>のドキュメントリビジョンが見つかりませんでした。<Break/>これはおそらくプランの履歴保持ポリシーによるものです。<Break/>異なる<strong>From</strong>エントリを選択してください。',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'このパネルに変更リストが表示されるように、ドキュメントを編集するか、タイムラインで古いバージョンを選択してください。',
@@ -367,9 +370,10 @@ export default removeUndefinedLocaleResources({
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '削除されました',
   /** Same Revision Selected description in the Review Changes pane */
-  'changes.same-revision-selected-description': undefined, // 'You have selected the same <strong>from</strong> and <strong>to</strong> revision, please select different revisions to compare the changes between them.'
+  'changes.same-revision-selected-description':
+    '同じ<strong>from</strong>と<strong>to</strong>のリビジョンを選択しています。変更点を比較するためには、異なるリビジョンを選択してください。',
   /** Same Revision Selected title in the Review Changes pane */
-  'changes.same-revision-selected-title': undefined, // 'Same revision selected'
+  'changes.same-revision-selected-title': '同じリビジョンが選択されました',
   /** Title for the Review Changes pane */
   'changes.title': '変更をレビュー',
   /**The title that will be shown in the badge inside the events when the item is a draft */
@@ -385,7 +389,7 @@ export default removeUndefinedLocaleResources({
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '読み込み中',
   /** The title of the reconnecting toast */
-  'common.reconnecting.toast.title': undefined, // 'Trying to connect…'
+  'common.reconnecting.toast.title': '接続を試みています…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -424,7 +428,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '改訂日 <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
-  'document-status.revision-not-found': undefined, // 'Revision not found'
+  'document-status.revision-not-found': 'リビジョンが見つかりません',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ドキュメントタイプ "{{type}}" が見つかりません',
@@ -1173,13 +1177,14 @@ export default removeUndefinedLocaleResources({
   'member-field-error.unexpected-error': '予期せぬエラー: {{error}}',
 
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
-  'network-check.slow-protocol-warning.description': undefined, // 'Your browser is using an outdated HTTP protocol to communicate with Sanity. This may result in substantially degraded performance.'
+  'network-check.slow-protocol-warning.description':
+    'お使いのブラウザは、Sanityと通信するために古いHTTPプロトコルを使用しています。これにより、パフォーマンスが大幅に低下する可能性があります。',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.learn-more-button.text': undefined, // 'Learn more'
+  'network-check.slow-protocol-warning.learn-more-button.text': '詳しくはこちら',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.snooze-button.text': undefined, // 'Don\'t show again for this session'
+  'network-check.slow-protocol-warning.snooze-button.text': 'このセッションでは再表示しない',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
-  'network-check.slow-protocol-warning.title': undefined, // 'You\'ve got your breaks on'
+  'network-check.slow-protocol-warning.title': 'ブレーキがかかっています',
 
   /** Button label for "Create new document" button */
   'new-document.button': '新規作成',
@@ -1257,6 +1262,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'バージョンの破棄に失敗しました',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新規リリース',
+  'release.action.new-release.limit-reached_other':
+    'このワークスペースは{{count}}リリースに制限されています',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'このアクションを実行する権限がありません',
   /** Error message for when a version is set to be unpublished */
@@ -1857,9 +1864,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '削除: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft document has been created*/
-  'timeline.operation.draft-created': undefined, // 'Draft created'
+  'timeline.operation.draft-created': 'ドラフトが作成されました',
   /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
-  'timeline.operation.draft-created_timestamp': undefined, // 'Draft created: {{timestamp, datetime}}'
+  'timeline.operation.draft-created_timestamp': 'ドラフト作成: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '下書きを破棄',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1873,7 +1880,7 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'ライブ編集: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been created */
-  'timeline.operation.history-cleared': undefined, // 'Deleted by retention policy'
+  'timeline.operation.history-cleared': '保持ポリシーにより削除されました',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '公開された',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1883,13 +1890,13 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '非公開: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been created */
-  'timeline.operation.version-created': undefined, // 'Version created'
+  'timeline.operation.version-created': 'バージョンが作成されました',
   /** Label shown in review changes timeline when a document version has been created, with a timestamp */
-  'timeline.operation.version-created_timestamp': undefined, // 'Version created: {{timestamp, datetime}}'
+  'timeline.operation.version-created_timestamp': 'バージョン作成: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been discarded */
-  'timeline.operation.version-discarded': undefined, // 'Version discarded'
+  'timeline.operation.version-discarded': 'バージョンが破棄されました',
   /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
-  'timeline.operation.version-discarded_timestamp': undefined, // 'Version discarded: {{timestamp, datetime}}'
+  'timeline.operation.version-discarded_timestamp': 'バージョン破棄: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
