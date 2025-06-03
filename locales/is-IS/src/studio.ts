@@ -1252,6 +1252,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Mistókst að hafna útgáfu',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ný útgáfa',
+  'release.action.new-release.limit-reached_other':
+    'Þessi vinnusvæði er takmörkuð við {{count}} útgáfur',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Þú hefur ekki leyfi til að framkvæma þessa aðgerð',
   /** Error message for when a version is set to be unpublished */
