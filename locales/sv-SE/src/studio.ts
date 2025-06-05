@@ -1253,6 +1253,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Misslyckades med att kassera version',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Release',
+  'release.action.new-release.limit-reached_other':
+    'Den här arbetsytan är begränsad till {{count}} utgåvor',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har inte behörighet att utföra denna åtgärd',
   /** Error message for when a version is set to be unpublished */
