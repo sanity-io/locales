@@ -1260,6 +1260,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': "No s'ha pogut descartar la versió",
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nova Versió',
+  'release.action.new-release.limit-reached_other':
+    'Aquest espai de treball està limitat a {{count}} publicacions',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tens permís per realitzar aquesta acció',
   /** Error message for when a version is set to be unpublished */
