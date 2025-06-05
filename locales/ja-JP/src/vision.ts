@@ -4,47 +4,47 @@ export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'クリップボードにコピー',
   /** Label for deleting a query */
-  'action.delete': undefined, // 'Delete'
+  'action.delete': '削除',
   /** Label for editing a query's title */
-  'action.edit-title': undefined, // 'Edit title'
+  'action.edit-title': 'タイトルを編集',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': '停止',
   /** Label for setting up a listener */
   'action.listen-execute': 'リッスン',
   /** Label for query loading table */
-  'action.load-queries': undefined, // 'Load queries'
+  'action.load-queries': 'クエリを読み込む',
   /** Label for loading a query */
-  'action.load-query': undefined, // 'Load query'
+  'action.load-query': 'クエリを読み込む',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'キャンセル',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'フェッチ',
   /** Label for saving a query */
-  'action.save-query': undefined, // 'Save query'
+  'action.save-query': 'クエリを保存',
   /** Label for updating a query */
-  'action.update': undefined, // 'Update'
+  'action.update': '更新',
 
   /** Label for actions user can take */
-  'label.actions': undefined, // 'Actions'
+  'label.actions': 'アクション',
   /** Label for saved queries that have been edited */
-  'label.edited': undefined, // 'Edited'
+  'label.edited': '編集済み',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': '新規',
   /** Label for query type "personal" */
-  'label.personal': undefined, // 'Personal'
+  'label.personal': '個人',
   /** Label for savedAt date */
-  'label.saved-at': undefined, // 'Saved at'
+  'label.saved-at': '保存日時',
   /** Saved queries */
-  'label.saved-queries': undefined, // 'Saved queries'
+  'label.saved-queries': '保存されたクエリ',
   /** Search queries */
-  'label.search-queries': undefined, // 'Search queries'
+  'label.search-queries': 'クエリを検索',
   /** Share query */
-  'label.share': undefined, // 'Share'
+  'label.share': '共有',
   /** Label for saved query type "team" */
-  'label.team': undefined, // 'Team'
+  'label.team': 'チーム',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'パラメータが有効なJSONではありません',
@@ -77,11 +77,11 @@ export default removeUndefinedLocaleResources({
   'result.timing-not-applicable': '該当なし',
 
   /** Query already saved error label */
-  'save-query.already-saved': undefined, // 'Query already saved'
+  'save-query.already-saved': 'クエリは既に保存されています',
   /** Save error label */
-  'save-query.error': undefined, // 'Error saving query'
+  'save-query.error': 'クエリの保存中にエラーが発生しました',
   /** Save success label */
-  'save-query.success': undefined, // 'Query saved'
+  'save-query.success': 'クエリを保存しました',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'APIバージョン',
