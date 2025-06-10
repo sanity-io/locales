@@ -1256,6 +1256,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Nije uspjelo odbacivanje verzije',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Novo Izdanje',
+  'release.action.new-release.limit-reached_other':
+    'Ovaj radni prostor je ograničen na {{count}} izdanja',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
   /** Error message for when a version is set to be unpublished */
@@ -1798,6 +1800,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status konfiguracije',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Pretražite grad ili vremensku zonu',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Odaberite lokalnu vremensku zonu',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Odabrana vremenska zona će promijeniti kako su datumi prikazani u izdanjima sadržaja.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Odabrana vremenska zona će promijeniti kako su datumi prikazani samo za ovaj unos u ovom dokumentu.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Odabrana vremenska zona će promijeniti kako su datumi prikazani u rasporedima.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'lokalno vrijeme',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Vremenska zona',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Prikazivanje izdanja u {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Prikazivanje <em>{{title}}</em> u {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Prikazivanje rasporeda u {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Promjene od',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1862,7 +1891,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Uređeno uživo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Uređeno uživo: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Izbrisano zbog politike zadržavanja',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Objavljeno',
