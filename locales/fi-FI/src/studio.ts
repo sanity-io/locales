@@ -1796,6 +1796,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguraation tila',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Etsi kaupunkia tai aikavyöhykettä',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Valitse paikallinen aikavyöhyke',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään sisällön julkaisuissa.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään vain tässä syötteessä tässä dokumentissa.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään aikatauluissa.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'paikallinen aika',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Aikavyöhyke',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Näyttää julkaisut {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Näyttää <em>{{title}}</em> {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Näyttää aikataulut {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Muutokset tekijältä',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1859,7 +1886,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Muokattu livenä',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Muokattu livenä: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Poistettu säilytyskäytännön mukaan',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Julkaistu',
