@@ -1798,6 +1798,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stav konfigurace',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Hledejte město nebo časové pásmo',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Vyberte místní časové pásmo',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována v obsahových vydáních.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována pouze pro tento vstup v tomto dokumentu.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována v plánech.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'místní čas',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Časové pásmo',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Zobrazování vydání v {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Zobrazování <em>{{title}}</em> v {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Zobrazování plánů v {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Změny od',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1861,7 +1888,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editováno živě',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editováno živě: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Smazáno zásadami uchovávání',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publikováno',
