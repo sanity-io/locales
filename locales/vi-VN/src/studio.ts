@@ -1707,6 +1707,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Trạng thái cấu hình',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Tìm kiếm một thành phố hoặc múi giờ',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Chọn múi giờ địa phương',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Múi giờ được chọn sẽ thay đổi cách ngày tháng được biểu diễn trong các bản phát hành nội dung.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Múi giờ được chọn sẽ thay đổi cách ngày tháng được biểu diễn chỉ cho đầu vào này trong tài liệu này.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Múi giờ được chọn sẽ thay đổi cách ngày tháng được biểu diễn trong các lịch trình.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'giờ địa phương',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Múi giờ',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Hiển thị các bản phát hành trong {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Hiển thị <em>{{title}}</em> trong {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Hiển thị các lịch trình trong {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Thay đổi bởi',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1771,7 +1798,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Chỉnh sửa trực tiếp',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Chỉnh sửa trực tiếp: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Đã xóa do chính sách giữ lịch sử',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Đã xuất bản',
