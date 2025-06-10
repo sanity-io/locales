@@ -1697,6 +1697,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'สถานะการกำหนดค่า',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'ค้นหาเมืองหรือเขตเวลา',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'เลือกเขตเวลาท้องถิ่น',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในการปล่อยเนื้อหา',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่เฉพาะสำหรับการป้อนข้อมูลนี้ในเอกสารนี้',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในกำหนดการ',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'เวลาท้องถิ่น',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'เขตเวลา',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'แสดงการปล่อยใน {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'แสดง <em>{{title}}</em> ใน {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'แสดงกำหนดการใน {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'การเปลี่ยนแปลงโดย',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1760,7 +1787,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'แก้ไขสด',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'แก้ไขสดเมื่อ: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'ถูกลบโดยนโยบายการเก็บข้อมูล',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'เผยแพร่แล้ว',
