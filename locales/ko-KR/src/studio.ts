@@ -1806,6 +1806,32 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '구성 상태',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': '도시 또는 시간대를 검색',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': '현지 시간대 선택',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    '선택된 시간대는 콘텐츠 릴리스에서 날짜 표시 방식을 변경합니다.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    '선택된 시간대는 이 문서의 이 입력란에 대한 날짜 표시 방식만 변경합니다.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    '선택된 시간대는 일정에 표시되는 날짜를 변경합니다.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': '현지 시간',
+  /* Label for the time zone button */
+  'time-zone.time-zone': '시간대',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases': '{{alternativeName}} GMT{{offset}}에 릴리스 표시',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    '{{alternativeName}} GMT{{offset}}에 <em>{{title}}</em> 표시',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '{{alternativeName}} GMT{{offset}}에 일정 표시',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': '변경 사항',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1870,7 +1896,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '실시간 편집됨',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '실시간 편집됨: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': '보존 정책에 의해 삭제됨',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '게시됨',
