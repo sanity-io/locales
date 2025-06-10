@@ -1666,6 +1666,27 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '配置状态',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': '搜索城市或时区',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': '选择本地时区',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases': '所选时区将改变内容发布中日期的表示方式。',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input': '所选时区将仅改变此文档中此输入的日期表示方式。',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing': '所选时区将改变计划中日期的表示方式。',
+  /* Label for the local time zone button */
+  'time-zone.local-time': '本地时间',
+  /* Label for the time zone button */
+  'time-zone.time-zone': '时区',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases': '在{{alternativeName}} GMT{{offset}}显示发布内容',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input': '在{{alternativeName}} GMT{{offset}}显示<em>{{title}}</em>',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing': '在{{alternativeName}} GMT{{offset}}显示计划',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': '更改者',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1726,7 +1747,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '实时编辑',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '实时编辑时间：{{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': '由保留政策删除',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '已发布',
