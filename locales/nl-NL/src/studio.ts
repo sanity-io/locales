@@ -1266,6 +1266,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Mislukt om versie te verwijderen',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nieuwe Release',
+  'release.action.new-release.limit-reached_other':
+    'Deze werkruimte is beperkt tot {{count}} releases',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'U heeft geen toestemming om deze actie uit te voeren',
   /** Error message for when a version is set to be unpublished */
@@ -1807,6 +1809,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Configuratiestatus',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Zoek naar een stad of tijdzone',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Selecteer lokale tijdzone',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'De geselecteerde tijdzone zal veranderen hoe data wordt weergegeven in content releases.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'De geselecteerde tijdzone zal veranderen hoe data alleen voor deze invoer in dit document wordt weergegeven.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    "De geselecteerde tijdzone zal veranderen hoe data wordt weergegeven in schema's.",
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'lokale tijd',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Tijdzone',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Releases worden weergegeven in {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    '<em>{{title}}</em> wordt weergegeven in {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    "Schema's worden weergegeven in {{alternativeName}} GMT{{offset}}",
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Wijzigingen door',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1871,7 +1900,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Live bewerkt',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Live bewerkt: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Verwijderd door retentiebeleid',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Gepubliceerd',
