@@ -1255,6 +1255,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Klarte ikke å forkaste versjon',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny utgivelse',
+  'release.action.new-release.limit-reached_other':
+    'Denne arbeidsområdet er begrenset til {{count}} utgivelser',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikke tillatelse til å utføre denne handlingen',
   /** Error message for when a version is set to be unpublished */
@@ -1807,6 +1809,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Søk etter en by eller tidssone',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Velg lokal tidssone',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Den valgte tidssonen vil endre hvordan datoer representeres i innholdsutgivelser.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Den valgte tidssonen vil endre hvordan datoer representeres kun for dette inndatafeltet i dette dokumentet.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Den valgte tidssonen vil endre hvordan datoer representeres i tidsplaner.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'lokal tid',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Tidssone',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Viser utgivelser i {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Viser <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Viser tidsplaner i {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Endringer av',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1870,7 +1899,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Redigert live',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Redigert live: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Slettet av oppbevaringspolicy',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publisert',
