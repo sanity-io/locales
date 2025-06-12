@@ -1256,6 +1256,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
+  'release.action.new-release.limit-reached_other':
+    'ಈ ಕಾರ್ಯಾಲಯವು {{count}} ಬಿಡುಗಡೆಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** Error message for when a version is set to be unpublished */
@@ -1799,6 +1801,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'ಸಂರಚನಾ ಸ್ಥಿತಿ',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'ನಗರ ಅಥವಾ ಸಮಯ ವಲಯವನ್ನು ಹುಡುಕಿ',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'ಸ್ಥಳೀಯ ಸಮಯ ವಲಯವನ್ನು ಆರಿಸಿ',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'ಆಯ್ದ ಸಮಯ ವಲಯವು ವಿಷಯ ಬಿಡುಗಡೆಗಳಲ್ಲಿ ದಿನಾಂಕಗಳನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'ಆಯ್ದ ಸಮಯ ವಲಯವು ಈ ದಾಖಲೆಯಲ್ಲಿ ಈ ಇನ್‌ಪುಟ್‌ಗೆ ಮಾತ್ರ ದಿನಾಂಕಗಳನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'ಆಯ್ದ ಸಮಯ ವಲಯವು ವೇಳಾಪಟ್ಟಿಗಳಲ್ಲಿ ದಿನಾಂಕಗಳನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'ಸ್ಥಳೀಯ ಸಮಯ',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'ಸಮಯ ವಲಯ',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    '{{alternativeName}} GMT{{offset}} ನಲ್ಲಿ ಬಿಡುಗಡೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತಿದೆ',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    '{{alternativeName}} GMT{{offset}} ನಲ್ಲಿ <em>{{title}}</em> ಅನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತಿದೆ',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '{{alternativeName}} GMT{{offset}} ನಲ್ಲಿ ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತಿದೆ',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'ಬದಲಾವಣೆಗಳು ಮಾಡಿದವರು',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1861,7 +1890,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'ನೇರ ಸಂಪಾದನೆ ಮಾಡಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'ನೇರ ಸಂಪಾದನೆ ಮಾಡಲಾಗಿದೆ: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'ಉಳಿತಾಯ ನೀತಿಯಿಂದ ಅಳಿಸಲಾಗಿದೆ',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'ಪ್ರಕಟಿಸಲಾಗಿದೆ',
