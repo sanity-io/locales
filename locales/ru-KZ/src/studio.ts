@@ -1757,6 +1757,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Статус конфигурации',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Поиск города или часового пояса',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Выбрать местный часовой пояс',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Выбранный часовой пояс изменит способ отображения дат в выпусках контента.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Выбранный часовой пояс изменит способ отображения дат только для этого ввода в этом документе.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Выбранный часовой пояс изменит способ отображения дат в расписаниях.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'местное время',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Часовой пояс',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Отображение выпусков в {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Отображение <em>{{title}}</em> в {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Отображение расписаний в {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Изменения от',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1822,7 +1849,7 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp':
     'Отредактировано в реальном времени: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Удалено политикой хранения',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Опубликовано',
