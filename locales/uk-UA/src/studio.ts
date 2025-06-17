@@ -1754,6 +1754,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Статус конфігурації',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Пошук міста або часового поясу',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Вибрати локальний часовий пояс',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Обраний часовий пояс змінить спосіб відображення дат у випусках контенту.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Обраний часовий пояс змінить спосіб відображення дат лише для цього поля у цьому документі.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Обраний часовий пояс змінить спосіб відображення дат у розкладах.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'місцевий час',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Часовий пояс',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Відображення випусків у {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Відображення <em>{{title}}</em> у {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Відображення розкладів у {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Зміни від',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1817,7 +1844,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Відредаговано наживо',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Відредаговано наживо: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Видалено політикою зберігання',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Опубліковано',
