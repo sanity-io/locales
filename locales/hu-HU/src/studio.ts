@@ -1264,6 +1264,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Nem sikerült a verziót elvetni',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Új Kiadás',
+  'release.action.new-release.limit-reached_other':
+    'Ez a munkaterület korlátozva van {{count}} kiadásra',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nincs jogosultsága ezt a műveletet végrehajtani',
   /** Error message for when a version is set to be unpublished */
@@ -1807,6 +1809,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguráció állapota',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Keressen várost vagy időzónát',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Válassza ki a helyi időzónát',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'A kiválasztott időzóna megváltoztatja, hogy hogyan jelennek meg a dátumok a tartalomkiadásokban.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'A kiválasztott időzóna csak ennek a bevitelnek a dátumait változtatja meg ebben a dokumentumban.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'A kiválasztott időzóna megváltoztatja, hogy hogyan jelennek meg a dátumok az ütemezésekben.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'helyi idő',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Időzóna',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Kiadások megjelenítése {{alternativeName}} GMT{{offset}} szerint',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    '<em>{{title}}</em> megjelenítése {{alternativeName}} GMT{{offset}} szerint',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Ütemezések megjelenítése {{alternativeName}} GMT{{offset}} szerint',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Változtatások szerzője',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1871,7 +1900,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Élőben szerkesztve',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Élőben szerkesztve: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Törlés visszatartási szabályzat által',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Közzétéve',
