@@ -1179,6 +1179,7 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': '丟棄版本失敗',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新發布',
+  'release.action.new-release.limit-reached_other': '此工作區限制為 {{count}} 次發布',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您沒有執行此操作的權限',
   /** Error message for when a version is set to be unpublished */
@@ -1666,6 +1667,29 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '配置狀態',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': '搜索城市或時區',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': '選擇本地時區',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases': '選擇的時區將改變內容發布中的日期表示方式。',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input': '選擇的時區將僅改變此文檔中此輸入的日期表示方式。',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing': '選擇的時區將改變排程中的日期表示方式。',
+  /* Label for the local time zone button */
+  'time-zone.local-time': '本地時間',
+  /* Label for the time zone button */
+  'time-zone.time-zone': '時區',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases': '在 {{alternativeName}} GMT{{offset}} 顯示發布',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    '在 {{alternativeName}} GMT{{offset}} 顯示 <em>{{title}}</em>',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '在 {{alternativeName}} GMT{{offset}} 顯示排程',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': '更改者',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1726,7 +1750,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '即時編輯',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '即時編輯時間：{{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': '由保留政策刪除',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '已發布',
