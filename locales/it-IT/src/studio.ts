@@ -1266,6 +1266,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Impossibile scartare la versione',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nuovo Rilascio',
+  'release.action.new-release.limit-reached_other':
+    'Questo spazio di lavoro è limitato a {{count}} release',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Non hai il permesso di eseguire questa azione',
   /** Error message for when a version is set to be unpublished */
@@ -1818,6 +1820,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stato della configurazione',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Cerca una città o un fuso orario',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Seleziona il fuso orario locale',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Il fuso orario selezionato cambierà il modo in cui le date sono rappresentate nelle release dei contenuti.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Il fuso orario selezionato cambierà il modo in cui le date sono rappresentate solo per questo input in questo documento.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Il fuso orario selezionato cambierà il modo in cui le date sono rappresentate nelle programmazioni.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'ora locale',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Fuso orario',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Visualizzazione delle release in {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Visualizzazione di <em>{{title}}</em> in {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Visualizzazione delle programmazioni in {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Modifiche di',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1882,7 +1911,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Modificato dal vivo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Modificato dal vivo: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Cancellato dalla politica di conservazione',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Pubblicato',
