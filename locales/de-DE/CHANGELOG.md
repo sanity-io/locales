@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.23](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.22...locale-de-de-v1.1.23) (2025-06-21)
+
+
+### Bug Fixes
+
+* **de-DE:** automated translation updates ([#1207](https://github.com/sanity-io/locales/issues/1207)) ([9a0c75b](https://github.com/sanity-io/locales/commit/9a0c75b0186970225cb8c9c64e552c76982000e0))
+
 ## [1.1.22](https://github.com/sanity-io/locales/compare/locale-de-de-v1.1.21...locale-de-de-v1.1.22) (2025-05-30)
 
 
