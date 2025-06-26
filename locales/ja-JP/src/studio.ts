@@ -1815,6 +1815,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '設定ステータス',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': '都市またはタイムゾーンを検索',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'ローカルタイムゾーンを選択',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    '選択されたタイムゾーンは、コンテンツリリースでの日付の表示方法を変更します。',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    '選択されたタイムゾーンは、このドキュメントのこの入力に対してのみ、日付の表示方法を変更します。',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    '選択されたタイムゾーンは、スケジュールでの日付の表示方法を変更します。',
+  /* Label for the local time zone button */
+  'time-zone.local-time': '現地時間',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'タイムゾーン',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    '{{alternativeName}} GMT{{offset}}でリリースを表示',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    '{{alternativeName}} GMT{{offset}}で<em>{{title}}</em>を表示',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '{{alternativeName}} GMT{{offset}}でスケジュールを表示',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': '変更者',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1879,7 +1906,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'ライブ編集された',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'ライブ編集: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': '保持ポリシーにより削除されました',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '公開された',
