@@ -1757,6 +1757,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Starea configurației',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Căutați un oraș sau un fus orar',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Selectați fusul orar local',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Fusul orar selectat va schimba modul în care datele sunt reprezentate în lansările de conținut.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Fusul orar selectat va schimba modul în care datele sunt reprezentate doar pentru această intrare în acest document.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Fusul orar selectat va schimba modul în care datele sunt reprezentate în programe.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'ora locală',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Fus orar',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Afișarea lansărilor în {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Afișarea <em>{{title}}</em> în {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Afișarea programelor în {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Modificări de către',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1821,7 +1848,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editat live',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editat live: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Șters de politica de retenție',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publicat',
