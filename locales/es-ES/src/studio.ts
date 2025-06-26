@@ -1818,6 +1818,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Estado de configuración',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Buscar una ciudad o zona horaria',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Seleccionar zona horaria local',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'La zona horaria seleccionada cambiará cómo se representan las fechas en las publicaciones de contenido.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'La zona horaria seleccionada cambiará cómo se representan las fechas solo para esta entrada en este documento.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'La zona horaria seleccionada cambiará cómo se representan las fechas en los horarios.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'hora local',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Zona horaria',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Mostrando lanzamientos en {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Mostrando <em>{{title}}</em> en {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Mostrando horarios en {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Cambios por',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1882,7 +1909,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editado en vivo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editado en vivo: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Eliminado por política de retención',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publicado',
