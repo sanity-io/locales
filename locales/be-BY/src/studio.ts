@@ -1754,6 +1754,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Статус канфігурацыі',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Шукайце горад ці часавы пояс',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Выбраць мясцовы часавы пояс',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Абраны часавы пояс зменіць спосаб адлюстравання дат у выпусках кантэнту.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Абраны часавы пояс зменіць спосаб адлюстравання дат толькі для гэтага ўводу ў гэтым дакуменце.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Абраны часавы пояс зменіць спосаб адлюстравання дат у раскладах.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'мясцовы час',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Часавы пояс',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Паказ выпускаў у {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Паказ <em>{{title}}</em> у {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Паказ раскладаў у {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Змены ад',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1818,7 +1845,7 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp':
     'Адрэдагавана ў рэжыме рэальнага часу: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Выдалены палітыкай захавання',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Апублікавана',
