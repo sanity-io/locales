@@ -1748,6 +1748,33 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status konfiguracji',
 
+  /* Time zone handling */
+  'time-zone.action.search-for-timezone-placeholder': 'Wyszukaj miasto lub strefę czasową',
+  /* Label for the local time zone button */
+  'time-zone.action.select-local-time-zone': 'Wybierz lokalną strefę czasową',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.content-releases':
+    'Wybrana strefa czasowa zmieni sposób wyświetlania dat w wydaniach treści.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.input':
+    'Wybrana strefa czasowa zmieni sposób wyświetlania dat tylko dla tego pola wejściowego w tym dokumencie.',
+  /* Dialog info for the time zone dialog */
+  'time-zone.dialog-info.scheduled-publishing':
+    'Wybrana strefa czasowa zmieni sposób wyświetlania dat w harmonogramach.',
+  /* Label for the local time zone button */
+  'time-zone.local-time': 'czas lokalny',
+  /* Label for the time zone button */
+  'time-zone.time-zone': 'Strefa czasowa',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-content-releases':
+    'Wyświetlanie wydań w {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-input':
+    'Wyświetlanie <em>{{title}}</em> w {{alternativeName}} GMT{{offset}}',
+  /* Tooltip content for the time zone dialog */
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Wyświetlanie harmonogramów w {{alternativeName}} GMT{{offset}}',
+
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Zmiany dokonane przez',
   /** Description for error when the timeline for the given document can't be loaded */
@@ -1812,7 +1839,7 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Edytowano na żywo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Edytowano na żywo: {{timestamp, datetime}}',
-  /** Label shown in review changes timeline when a document has been created */
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Usunięto przez politykę retencji',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Opublikowano',
