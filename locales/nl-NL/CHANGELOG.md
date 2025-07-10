@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.26](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.25...locale-nl-nl-v1.1.26) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **nl-NL:** automated translation updates ([#1218](https://github.com/sanity-io/locales/issues/1218)) ([4e8d292](https://github.com/sanity-io/locales/commit/4e8d2922ed8585b29162aefc4b9ce8849ffc1e3d))
+
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.24...locale-nl-nl-v1.1.25) (2025-05-30)
 
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.21](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.20...locale-fi-fi-v1.1.21) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **fi-FI:** automated translation updates ([#1208](https://github.com/sanity-io/locales/issues/1208)) ([2177c99](https://github.com/sanity-io/locales/commit/2177c99fa10fafb6485608daabd7dc97722200c3))
+* **fi-FI:** automated translation updates ([#1231](https://github.com/sanity-io/locales/issues/1231)) ([a2af2b1](https://github.com/sanity-io/locales/commit/a2af2b10b9a84cc5cc38aa670ce9c787744cbac3))
+
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.19...locale-fi-fi-v1.1.20) (2025-05-30)
 
 

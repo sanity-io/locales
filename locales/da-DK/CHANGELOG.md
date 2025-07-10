@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.17](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.16...locale-da-dk-v1.0.17) (2025-07-10)
+
+
+### Bug Fixes
+
+* **da-DK:** automated translation updates ([#1206](https://github.com/sanity-io/locales/issues/1206)) ([f1dc72d](https://github.com/sanity-io/locales/commit/f1dc72d6e2a739fe594183f8785a8bb85ef51a53))
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+
 ## [1.0.16](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.15...locale-da-dk-v1.0.16) (2025-05-30)
 
 

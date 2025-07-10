@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.1...locale-ro-ro-v1.0.2) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **ro-RO:** automated translation updates ([#1235](https://github.com/sanity-io/locales/issues/1235)) ([445ae45](https://github.com/sanity-io/locales/commit/445ae45f6190890267f779f51dd9625167a1a946))
+
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.0...locale-ro-ro-v1.0.1) (2025-05-30)
 
 

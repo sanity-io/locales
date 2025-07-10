@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.19](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.18...locale-ka-ge-v1.0.19) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **ka-GE:** automated translation updates ([#1214](https://github.com/sanity-io/locales/issues/1214)) ([f7da754](https://github.com/sanity-io/locales/commit/f7da754e0f06004e99dca220b5ffa54a7cc7b0d4))
+
 ## [1.0.18](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.17...locale-ka-ge-v1.0.18) (2025-05-30)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.24](https://github.com/sanity-io/locales/compare/locale-be-by-v1.1.23...locale-be-by-v1.1.24) (2025-07-10)
+
+
+### Bug Fixes
+
+* **be-BY:** automated translation updates ([#1228](https://github.com/sanity-io/locales/issues/1228)) ([44ad598](https://github.com/sanity-io/locales/commit/44ad598c3839124a90b4e71bd1bb8758bd81e88f))
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+
 ## [1.1.23](https://github.com/sanity-io/locales/compare/locale-be-by-v1.1.22...locale-be-by-v1.1.23) (2025-05-30)
 
 

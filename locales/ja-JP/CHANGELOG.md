@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.23](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.22...locale-ja-jp-v1.1.23) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **ja-JP:** automated translation updates ([#1178](https://github.com/sanity-io/locales/issues/1178)) ([1a8b26a](https://github.com/sanity-io/locales/commit/1a8b26af9145f0b15520dbc94c6f388a6f5735ed))
+* **ja-JP:** automated translation updates ([#1232](https://github.com/sanity-io/locales/issues/1232)) ([a14aebc](https://github.com/sanity-io/locales/commit/a14aebc3f5d27ae8295050eec1ad677c0a58d70e))
+
 ## [1.1.22](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.21...locale-ja-jp-v1.1.22) (2025-05-30)
 
 
