@@ -8,6 +8,7 @@ import {getPendingAutoTranslatedPRs} from '../util/getPendingAutoTranslatedPRs'
 import {getRootPath} from '../util/getRootPath'
 import {AUTO_TRANSLATE_BRANCH_PREFIX} from './autoTranslate'
 import {PR_LABEL_AWAITING_REVIEW} from './ghLabels'
+import {mergePR} from './gitActions'
 import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
@@ -109,7 +110,7 @@ async function commentAndMergeStalePR(
 
   await execFile('gh', ['pr', 'comment', `${pr.number}`, '--body', comment], execOptions)
   await execFile('gh', ['pr', 'edit', `${pr.number}`, '--remove-label', removeLabel], execOptions)
-  await execFile('gh', ['pr', 'merge', `${pr.number}`, '--squash', '--delete-branch'], execOptions)
+  await mergePR(pr.number)
 }
 
 function getCommentBody(locale: Locale) {
