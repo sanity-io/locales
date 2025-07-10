@@ -39,9 +39,9 @@
     "test": "tsx test/testLocales"
   },
   "dependencies": {
-    "@babel/generator": "^7.27.1",
-    "@babel/traverse": "^7.27.1",
-    "@babel/types": "^7.27.1",
+    "@babel/generator": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.0",
     "@sanity/pkg-utils": "^7.0.4",
     "@sanity/vision": "^3.93.0",
     "@types/babel__generator": "^7.6.8",
