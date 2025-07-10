@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.24](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.23...locale-es-es-v1.2.24) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **es-ES:** automated translation updates ([#1175](https://github.com/sanity-io/locales/issues/1175)) ([e29035c](https://github.com/sanity-io/locales/commit/e29035c5a3b0f70358434b0db2395dd5ae6fa171))
+* **es-ES:** automated translation updates ([#1230](https://github.com/sanity-io/locales/issues/1230)) ([fa7a90a](https://github.com/sanity-io/locales/commit/fa7a90a615c49cadeff8473a39d3d350fbbeba25))
+
 ## [1.2.23](https://github.com/sanity-io/locales/compare/locale-es-es-v1.2.22...locale-es-es-v1.2.23) (2025-05-30)
 
 

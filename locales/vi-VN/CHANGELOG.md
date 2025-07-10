@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.21](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.20...locale-vi-vn-v1.1.21) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **vi-VN:** automated translation updates ([#1225](https://github.com/sanity-io/locales/issues/1225)) ([42aab40](https://github.com/sanity-io/locales/commit/42aab40c57b6f10a2d712c32aedbd6d5ccb8327c))
+* **vi-VN:** automated translation updates ([#1239](https://github.com/sanity-io/locales/issues/1239)) ([13e1a05](https://github.com/sanity-io/locales/commit/13e1a05fa9392fb421daeffad626d76fcbd9de55))
+
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.19...locale-vi-vn-v1.1.20) (2025-05-30)
 
 

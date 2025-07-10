@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.20](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.19...locale-cs-cz-v1.1.20) (2025-07-10)
+
+
+### Bug Fixes
+
+* **cs-CZ:** automated translation updates ([#1205](https://github.com/sanity-io/locales/issues/1205)) ([e05d703](https://github.com/sanity-io/locales/commit/e05d7039816bc63de52283b72d25b24b3816f4dd))
+* **cs-CZ:** automated translation updates ([#1229](https://github.com/sanity-io/locales/issues/1229)) ([e50de5d](https://github.com/sanity-io/locales/commit/e50de5d4c3585a1f02593464d390b36dfffe7caa))
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+
 ## [1.1.19](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.18...locale-cs-cz-v1.1.19) (2025-05-30)
 
 

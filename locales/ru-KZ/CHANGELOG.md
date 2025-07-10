@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.20](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.19...locale-ru-kz-v1.1.20) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **ru-KZ:** automated translation updates ([#1236](https://github.com/sanity-io/locales/issues/1236)) ([2e5c825](https://github.com/sanity-io/locales/commit/2e5c825b18192670cff176f6add5c7eb2fc6c016))
+
 ## [1.1.19](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.18...locale-ru-kz-v1.1.19) (2025-05-30)
 
 

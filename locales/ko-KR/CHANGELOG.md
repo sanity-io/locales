@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.21](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.20...locale-ko-kr-v1.1.21) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **ko-KR:** automated translation updates ([#1216](https://github.com/sanity-io/locales/issues/1216)) ([6bbb982](https://github.com/sanity-io/locales/commit/6bbb982032c51b1aa46edab2868b781814a96d66))
+* **ko-KR:** automated translation updates ([#1233](https://github.com/sanity-io/locales/issues/1233)) ([98783b6](https://github.com/sanity-io/locales/commit/98783b67ee12ea2093c7f4a4596e7ee3a93ed401))
+
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.19...locale-ko-kr-v1.1.20) (2025-05-30)
 
 

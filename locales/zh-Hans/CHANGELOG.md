@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.21](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.20...locale-zh-hans-v2.1.21) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+* **zh-Hans:** automated translation updates ([#1226](https://github.com/sanity-io/locales/issues/1226)) ([df9add7](https://github.com/sanity-io/locales/commit/df9add797a1611b1f92b4eedca413b23ca6d77e0))
+* **zh-Hans:** automated translation updates ([#1240](https://github.com/sanity-io/locales/issues/1240)) ([3371669](https://github.com/sanity-io/locales/commit/33716697db25d25da5928f936a64bd532908e3fd))
+
 ## [2.1.20](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.19...locale-zh-hans-v2.1.20) (2025-05-30)
 
 

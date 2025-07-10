@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.16](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.15...locale-is-is-v1.2.16) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+
 ## [1.2.15](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.14...locale-is-is-v1.2.15) (2025-05-30)
 
 
