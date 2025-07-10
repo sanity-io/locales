@@ -52,7 +52,7 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
     },
     peerDependencies: {
       sanity: [MINIMUM_SANITY_VERSION_3, MINIMUM_SANITY_VERSION_4]
-        .map((version) => (/^(\d+|\d+\.\d+\.\d+)$/.test(version) ? `^${version}` : version))
+        .map((version) => (/^(\d+|\d+\.\d+\.\d+(-\d+)?)$/.test(version) ? `^${version}` : version))
         .join(' || '),
     },
 
