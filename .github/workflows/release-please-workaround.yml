@@ -20,7 +20,7 @@ jobs:
     if: startsWith(github.head_ref, 'release-please--')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/create-github-app-token@df432ceedc7162793a195dd1713ff69aefc7379e # v2.0.6
+      - uses: actions/create-github-app-token@v2
         id: generate-token
         with:
           app-id: ${{ secrets.ECOSPARK_APP_ID }}
