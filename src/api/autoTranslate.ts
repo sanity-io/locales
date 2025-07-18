@@ -273,12 +273,13 @@ it is important that the branding is preserved.`
  *
  * @internal
  */
-export async function pushChanges(): Promise<void> {
+export async function pushChanges(options: {allLocales: boolean}): Promise<void> {
   const rootPath = await getRootPath()
   const locales = await getLocaleRegistry()
   const execGitCommand = (args: string[]) => execFile('git', args, {cwd: rootPath})
 
   // Start from main branch
+  await execGitCommand(['fetch', 'origin', 'main'])
   await execGitCommand(['checkout', 'main'])
 
   // Check if there are _any_ changes (eg across locales)
@@ -287,64 +288,52 @@ export async function pushChanges(): Promise<void> {
     return
   }
 
-  // Store the current git sha so we can revert to it later
-  const {stdout: sha} = await execGitCommand(['rev-parse', '--short', 'HEAD'])
-  const headSha = sha.trim()
+  // Start from a clean detached HEAD from main
+  await execGitCommand(['checkout', '--detach', 'origin/main'])
 
-  // Create a branch with _all_ changes and push it, but do not create a PR for it.
-  // This allows us to mass-merge all changes in one go should we _want_ to,
-  // while the _default_ approach would be to wait for
-  for (const locale of locales) {
-    // Check if the locale has changes
-    const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
-    if (changes.trim() !== '') {
-      await addAndCommit(locale)
-    }
+  // Optionally create "all changes" branch from stash
+  if (options.allLocales) {
+    await execGitCommand(['checkout', '-b', `${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`])
+    await execGitCommand(['add', '.'])
+    await execGitCommand(['commit', '-m', 'fix: automated translation updates (all locales)'])
+    await execGitCommand(['push', 'origin', `${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`, '--force'])
+
+    await execGitCommand(['reset', '--hard', 'origin/main'])
+    await execGitCommand(['clean', '-fd'])
   }
 
-  // Push the "all changes" branch
-  await execGitCommand([
-    'push',
-    'origin',
-    `main:${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`,
-    '--force',
-  ])
+  // Stash all changes before creating branches
+  await execGitCommand(['stash', '--include-untracked'])
 
-  // Now revert to the original HEAD
-  await execGitCommand(['reset', '--mixed', headSha])
-
-  // Now do individual branches and send PRs
   for (const locale of locales) {
-    // Check if the locale has changes
+    // Restore changes again
+    await execGitCommand(['stash', 'apply'])
+
+    // Check for locale-specific changes
     const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
     if (changes.trim() === '') {
+      await execGitCommand(['reset', '--hard'])
       continue
     }
 
     const hasMaintainers = locale.maintainers.length > 0
-
-    // Switch to a branch for the given locale
     const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
-    await execGitCommand(['checkout', '-B', branchName])
 
-    // The locale has changes, add the changes to index and commit them
+    await execGitCommand(['checkout', '-B', branchName])
     const commitMessage = await addAndCommit(locale)
 
-    // Push the branch
     await execGitCommand(['push', 'origin', branchName, '--force'])
 
     if (!(await hasExistingPR(branchName))) {
       let body = `This PR includes AI-generated, automated translation updates for the ${locale.englishName} locale.`
-
       if (hasMaintainers) {
-        const maintainers = locale.maintainers.map((maintainer) => `@${maintainer}`)
+        const maintainers = locale.maintainers.map((m) => `@${m}`)
         body += `\n\nCC: ${maintainers.join(', ')}`
       }
 
       const labels = ['autotranslate', hasMaintainers ? 'awaiting-review' : 'maintainerless']
       const labelFlags = labels.flatMap((label) => ['--label', label])
 
-      // Now create the PR 🎉
       await execFile(
         'gh',
         [
@@ -369,15 +358,15 @@ export async function pushChanges(): Promise<void> {
       )
 
       if (!hasMaintainers) {
-        // Automatically merge PRs that are missing maintainers - there's no one to review
         await execFile('gh', ['pr', 'merge', branchName, '--squash', '--delete-branch'], {
           cwd: rootPath,
         })
       }
     }
 
-    // Switch back to main branch for next locale
-    await execGitCommand(['checkout', 'main'])
+    await execGitCommand(['reset', '--hard'])
+    await execGitCommand(['clean', '-fd']) // remove untracked
+    await execGitCommand(['checkout', '--detach', 'origin/main'])
   }
 
   async function addAndCommit(locale: Locale) {

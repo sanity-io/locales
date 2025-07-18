@@ -39,7 +39,7 @@ async function autoTranslateWithParams() {
   })
 
   if (args.values.git) {
-    await runScript(pushChanges)
+    await runScript(() => pushChanges({allLocales: !args.values.locale}))
   }
 }
 
