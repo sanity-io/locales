@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Lim inn felt',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.description': undefined, // 'Clipboard access required to copy this content. Allow clipboard permissions in your browser settings, then try copying again.'
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Tilgang til utklippstavlen kreves for å kopiere dette innholdet. Tillat utklippstavle-tillatelser i nettleserinnstillingene dine, og prøv å kopiere på nytt.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Nettleseren din støtter ikke denne handlingen',
