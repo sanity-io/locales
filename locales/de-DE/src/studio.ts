@@ -1268,13 +1268,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sie haben keine Berechtigung, diese Aktion auszuführen',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Bitte versuchen Sie es erneut oder überprüfen Sie Ihre Verbindung. Das Dokument wird bei der Veröffentlichung weiterhin nicht veröffentlicht.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Das Zurücksetzen von der Einstellung auf Nichtveröffentlichung bei der Veröffentlichung ist fehlgeschlagen.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Sie können diese Version jetzt bearbeiten.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Erfolgreich von der Einstellung auf Nichtveröffentlichung bei der Veröffentlichung zurückgesetzt.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Fehler beim Einstellen der Version als unveröffentlicht im Release',
