@@ -1179,13 +1179,14 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您沒有執行此操作的權限',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    '請再試一次或檢查您的連線。文件在發布時仍將保持未發布狀態。',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title': '無法恢復設定為在發布時取消發布。',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': '您現在可以編輯此版本。',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title': '成功恢復設定為在發布時取消發布。',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '設定版本在發布時未發布失敗',
   /** Action message for when a version is set to be unpublished successfully */
