@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': "Зображення обов'язкове",
   /** Media can't be found in the Media Library */
-  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  'object.media-not-found': 'Актив не можна знайти в Медіатеці',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
+  'object.not-media-library-asset': 'Має бути посилання на актив Медіатеки',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Має бути посиланням на документ',
   /** Object references a document which is not published */
@@ -67,7 +67,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Валідація',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': undefined, // 'Document is going to unpublish, no validation errors are shown'
+  'panel.unpublish-message':
+    'Документ буде знято з публікації, помилки валідації не відображаються',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug повинен мати значення',

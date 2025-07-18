@@ -1226,13 +1226,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас немає дозволу на виконання цієї дії',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    "Будь ласка, спробуйте ще раз або перевірте ваше з'єднання. Документ все ще буде непублікованим після випуску.",
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Не вдалося відмінити налаштування на зняття з публікації при випуску.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Тепер ви можете редагувати цю версію.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Успішно відмінено налаштування на зняття з публікації при випуску.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Не вдалося встановити версію як непубліковану у релізі',
