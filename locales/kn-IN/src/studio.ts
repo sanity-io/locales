@@ -1257,13 +1257,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ. ಬಿಡುಗಡೆಯಾದ ನಂತರ ದಾಖಲೆಯು ಇನ್ನೂ ಅಪ್ರಕಟಿತವಾಗಿರಲಿದೆ.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ಅಪ್ರಕಟಿತವಾಗಿಸುವ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಹಿಂತಿರುಗಿಸಲು ವಿಫಲವಾಗಿದೆ.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'ನೀವು ಈಗ ಈ ಆವೃತ್ತಿಯನ್ನು ಸಂಪಾದಿಸಬಹುದು.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ಅಪ್ರಕಟಿತವಾಗಿಸುವ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹಿಂತಿರುಗಿಸಲಾಗಿದೆ.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'ಬಿಡುಗಡೆಯಲ್ಲಿ ಅಪ್ರಕಟಿತವಾಗಿರುವ ಆವೃತ್ತಿಯನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ',
