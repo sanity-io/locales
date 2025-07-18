@@ -1209,13 +1209,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bạn không có quyền thực hiện hành động này',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Vui lòng thử lại hoặc kiểm tra kết nối của bạn. Tài liệu vẫn sẽ không được công bố khi phát hành.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Không thể hoàn tác việc thiết lập không công bố khi phát hành.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Bạn có thể chỉnh sửa phiên bản này ngay bây giờ.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Đã hoàn tác thành công việc thiết lập không công bố khi phát hành.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Không thể đặt phiên bản để không xuất bản trên phiên bản',
