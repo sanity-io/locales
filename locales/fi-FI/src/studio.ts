@@ -1186,10 +1186,6 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Uusi asiakirja…',
-  /** Tooltip message for add document button when the selected perspective is published  */
-  'new-document.disabled-published.tooltip': 'Et voi luoda uusia julkaistuja dokumentteja',
-  /** Tooltip message for add document button when the selected perspective is for inactive release */
-  'new-document.disabled-release.tooltip': 'Et voi lisätä asiakirjoja tähän julkaisuun',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Suodata',
   /** Loading indicator text within the new document menu */
@@ -1258,6 +1254,14 @@ export default removeUndefinedLocaleResources({
     'Tämä työtila on rajoitettu {{count}} julkaisuun',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Version julkaisemattomaksi asettaminen epäonnistui',
   /** Action message for when a version is set to be unpublished successfully */

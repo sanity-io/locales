@@ -51,6 +51,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': '파일이 필요합니다',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': '이미지가 필요합니다',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': '문서에 대한 참조여야 합니다',
   /** Object references a document which is not published */
@@ -62,6 +66,8 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': '유효성 검사 오류 없음',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': '유효성 검사',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message': undefined, // 'Document is going to unpublish, no validation errors are shown'
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug는 값이 있어야 합니다',

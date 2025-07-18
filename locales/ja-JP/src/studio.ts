@@ -1193,10 +1193,6 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '新しいドキュメント…',
-  /** Tooltip message for add document button when the selected perspective is published  */
-  'new-document.disabled-published.tooltip': '公開されたドキュメントを新規作成することはできません',
-  /** Tooltip message for add document button when the selected perspective is for inactive release */
-  'new-document.disabled-release.tooltip': 'このリリースにドキュメントを追加することはできません',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'フィルター',
   /** Loading indicator text within the new document menu */
@@ -1266,6 +1262,14 @@ export default removeUndefinedLocaleResources({
     'このワークスペースは{{count}}リリースに制限されています',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'このアクションを実行する権限がありません',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'リリースで未公開に設定するバージョンの設定に失敗しました',

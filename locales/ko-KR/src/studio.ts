@@ -1183,10 +1183,6 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '새 문서…',
-  /** Tooltip message for add document button when the selected perspective is published  */
-  'new-document.disabled-published.tooltip': '발행된 문서를 새로 생성할 수 없습니다',
-  /** Tooltip message for add document button when the selected perspective is for inactive release */
-  'new-document.disabled-release.tooltip': '이 릴리스에 문서를 추가할 수 없습니다',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '필터',
   /** Loading indicator text within the new document menu */
@@ -1256,6 +1252,14 @@ export default removeUndefinedLocaleResources({
     '이 작업 공간은 {{count}}개의 릴리스로 제한됩니다',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '이 작업을 수행할 권한이 없습니다',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '릴리스에서 버전을 비공개로 설정하는 데 실패했습니다',
   /** Action message for when a version is set to be unpublished successfully */

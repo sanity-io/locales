@@ -84,6 +84,14 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Você está visualizando um documento somente leitura que foi arquivado como parte de <VersionBadge>{{title}}</VersionBadge>. Ele não pode ser editado',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Restaurar versão mais recente',
   /** The text content for the deleted document banner */
@@ -97,6 +105,14 @@ export default removeUndefinedLocaleResources({
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'O tipo <strong>{{schemaType}}</strong> tem <code>liveEdit</code> ativado, mas uma versão de rascunho deste documento existe. Publique ou descarte o rascunho para continuar editando ao vivo.',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'O seu papel <Roles/> não tem permissões para criar este documento.',
@@ -164,6 +180,8 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Este documento será despublicado como parte do lançamento <VersionBadge>{{title}}</VersionBadge>',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Novo {{schemaType}}',

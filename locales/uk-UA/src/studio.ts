@@ -1159,10 +1159,6 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': 'Новий документ…',
-  /** Tooltip message for add document button when the selected perspective is published  */
-  'new-document.disabled-published.tooltip': 'Ви не можете створювати нові опубліковані документи',
-  /** Tooltip message for add document button when the selected perspective is for inactive release */
-  'new-document.disabled-release.tooltip': 'Ви не можете додавати документи до цього релізу',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': 'Фільтр',
   /** Loading indicator text within the new document menu */
@@ -1229,6 +1225,14 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Новий Реліз',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас немає дозволу на виконання цієї дії',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Не вдалося встановити версію як непубліковану у релізі',

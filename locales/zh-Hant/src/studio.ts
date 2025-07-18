@@ -1111,10 +1111,6 @@ export default removeUndefinedLocaleResources({
    * when there are templates/types available for creation
    */
   'new-document.create-new-document-label': '新建文件…',
-  /** Tooltip message for add document button when the selected perspective is published  */
-  'new-document.disabled-published.tooltip': '您不能創建新的已發布文件',
-  /** Tooltip message for add document button when the selected perspective is for inactive release */
-  'new-document.disabled-release.tooltip': '您不能將文件添加到此發布中',
   /** Placeholder for the "filter" input within the new document menu */
   'new-document.filter-placeholder': '篩選',
   /** Loading indicator text within the new document menu */
@@ -1182,6 +1178,14 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release.limit-reached_other': '此工作區限制為 {{count}} 次發布',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您沒有執行此操作的權限',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '設定版本在發布時未發布失敗',
   /** Action message for when a version is set to be unpublished successfully */
