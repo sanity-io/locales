@@ -1256,13 +1256,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemáte oprávnění k provedení této akce',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Zkuste to prosím znovu nebo zkontrolujte své připojení. Dokument bude stále nepublikován po vydání.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Nepodařilo se vrátit z nastavení na nepublikování při vydání.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Nyní můžete tuto verzi upravovat.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Úspěšně vráceno z nastavení na nepublikování při vydání.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nepodařilo se nastavit verzi jako nepublikovanou ve vydání',
