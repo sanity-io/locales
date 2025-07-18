@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Colar campo',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.description': undefined, // 'Clipboard access required to copy this content. Allow clipboard permissions in your browser settings, then try copying again.'
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Acesso à área de transferência necessário para copiar este conteúdo. Permita as permissões da área de transferência nas configurações do seu navegador e tente copiar novamente.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Seu navegador não suporta esta ação',
