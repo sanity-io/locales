@@ -1264,13 +1264,16 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tienes permiso para realizar esta acción',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Por favor, inténtelo de nuevo o verifique su conexión. El documento seguirá estando sin publicar al lanzarse.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Error al revertir la configuración para no publicar en el lanzamiento.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': 'Ahora puede editar esta versión.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Revertido con éxito la configuración para no publicar en el lanzamiento.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'No se pudo establecer la versión para que no se publique en el lanzamiento',
