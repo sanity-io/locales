@@ -273,12 +273,13 @@ it is important that the branding is preserved.`
  *
  * @internal
  */
-export async function pushChanges(): Promise<void> {
+export async function pushChanges(options: {allLocales: boolean}): Promise<void> {
   const rootPath = await getRootPath()
   const locales = await getLocaleRegistry()
   const execGitCommand = (args: string[]) => execFile('git', args, {cwd: rootPath})
 
   // Start from main branch
+  await execGitCommand(['fetch', 'origin', 'main'])
   await execGitCommand(['checkout', 'main'])
 
   // Check if there are _any_ changes (eg across locales)
@@ -303,12 +304,14 @@ export async function pushChanges(): Promise<void> {
   }
 
   // Push the "all changes" branch
-  await execGitCommand([
-    'push',
-    'origin',
-    `main:${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`,
-    '--force',
-  ])
+  if (options.allLocales) {
+    await execGitCommand([
+      'push',
+      'origin',
+      `main:${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`,
+      '--force',
+    ])
+  }
 
   // Now revert to the original HEAD
   await execGitCommand(['reset', '--mixed', headSha])
