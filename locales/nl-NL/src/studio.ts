@@ -1267,13 +1267,16 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'U heeft geen toestemming om deze actie uit te voeren',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Probeer het opnieuw of controleer uw verbinding. Het document zal nog steeds niet gepubliceerd worden bij vrijgave.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Mislukt om terug te draaien van instelling om niet te publiceren bij vrijgave.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': 'U kunt nu deze versie bewerken.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Succesvol teruggedraaid van instelling om niet te publiceren bij vrijgave.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Mislukt om versie in te stellen om niet gepubliceerd te worden bij release',
