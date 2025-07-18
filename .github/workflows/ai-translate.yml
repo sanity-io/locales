@@ -61,10 +61,21 @@ jobs:
         run: pnpm install
       - name: Run reconcile
         run: pnpm run reconcile
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v2
+        id: generate-token
+        with:
+          app-id: ${{ secrets.ECOSPARK_APP_ID }}
+          private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
       - name: Configure git
-        run: |
+        run: >
           git config --global user.name 'AutoTranslator'
+
           git config --global user.email 'hello@sanity.io'
+
+          git remote set-url origin https://x-access-token:${{
+          steps.generate-token.outputs.token }}@github.com/${{ github.repository
+          }}
       - name: Run autotranslate for all locales
         if: >-
           ${{ github.event.inputs.locale == '' || github.event.inputs.locale ==
@@ -72,7 +83,7 @@ jobs:
         run: pnpm run autotranslate --git
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
       - name: Run autotranslate for specific locale
         if: >-
           ${{ github.event.inputs.locale != '' && github.event.inputs.locale !=
@@ -82,4 +93,4 @@ jobs:
           }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
