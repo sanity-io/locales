@@ -302,12 +302,17 @@ export async function pushChanges(options: {allLocales: boolean}): Promise<void>
     await execGitCommand(['clean', '-fd'])
   }
 
-  // Stash all changes before creating branches
-  await execGitCommand(['stash', '--include-untracked'])
+  // Create and store a named stash so we can reuse it repeatedly
+  const {stdout: stashRefRaw} = await execGitCommand(['stash', 'create'])
+  if (!stashRefRaw.trim()) {
+    return
+  }
+  await execGitCommand(['stash', 'store', '-m', 'autotranslate', stashRefRaw.trim()])
+  const stashRef = 'stash@{0}'
 
   for (const locale of locales) {
     // Restore changes again
-    await execGitCommand(['stash', 'apply'])
+    await execGitCommand(['stash', 'apply', stashRef])
 
     // Check for locale-specific changes
     const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
