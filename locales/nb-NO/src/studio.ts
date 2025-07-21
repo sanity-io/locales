@@ -1251,17 +1251,22 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Klarte ikke å forkaste versjon',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny utgivelse',
-  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
+  'release.action.new-release.limit-reached_other':
+    'Denne arbeidsområdet er begrenset til {{count}} utgivelser',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikke tillatelse til å utføre denne handlingen',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Vennligst prøv igjen eller sjekk tilkoblingen din. Dokumentet vil fortsatt være upublisert ved utgivelse.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Klarte ikke å tilbakestille fra å sette til upublisering ved utgivelse.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Du kan nå redigere denne versjonen.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Vellykket tilbakestilling fra å sette til upublisering ved utgivelse.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Klarte ikke å sette versjonen til å være upublisert på utgivelsen',
@@ -1813,25 +1818,31 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Status',
 
   /* Time zone handling */
-  'time-zone.action.search-for-timezone-placeholder': undefined, // 'Search for a city or time zone'
+  'time-zone.action.search-for-timezone-placeholder': 'Søk etter en by eller tidssone',
   /* Label for the local time zone button */
-  'time-zone.action.select-local-time-zone': undefined, // 'Select local time zone'
+  'time-zone.action.select-local-time-zone': 'Velg lokal tidssone',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.content-releases': undefined, // 'The selected time zone will change how dates are represented in content releases.'
+  'time-zone.dialog-info.content-releases':
+    'Den valgte tidssonen vil endre hvordan datoer representeres i innholdslanseringer.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.input': undefined, // 'The selected time zone will change how dates are represented only for this input in this document.'
+  'time-zone.dialog-info.input':
+    'Den valgte tidssonen vil endre hvordan datoer representeres kun for dette inndatafeltet i dette dokumentet.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.scheduled-publishing': undefined, // 'The selected time zone will change how dates are represented in schedules.'
+  'time-zone.dialog-info.scheduled-publishing':
+    'Den valgte tidssonen vil endre hvordan datoer representeres i planlagte publiseringer.',
   /* Label for the local time zone button */
-  'time-zone.local-time': undefined, // 'local time'
+  'time-zone.local-time': 'lokal tid',
   /* Label for the time zone button */
-  'time-zone.time-zone': undefined, // 'Time zone'
+  'time-zone.time-zone': 'Tidssone',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-content-releases': undefined, // 'Displaying releases in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-content-releases':
+    'Viser utgivelser i {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-input': undefined, // 'Displaying <em>{{title}}</em> in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-input':
+    'Viser <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-scheduled-publishing': undefined, // 'Displaying schedules in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Viser planlagte publiseringer i {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Endringer av',
