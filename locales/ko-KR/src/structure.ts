@@ -85,13 +85,16 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     '아카이브된 <VersionBadge>릴리스</VersionBadge>의 일부로서 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    '초안 문서를 생성할 수 없습니다.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    '게시된 문서를 생성할 수 없습니다.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination': '이 문서의 목적지를 선택하세요:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> 릴리스가 활성화되어 있지 않습니다.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '가장 최근 버전 복원',
   /** The text content for the deleted document banner */
@@ -106,13 +109,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     '타입 <strong>{{schemaType}}</strong>에 <code>liveEdit</code>가 활성화되어 있지만, 이 문서의 초안 버전이 존재합니다. 라이브 편집을 계속하려면 초안을 게시하거나 버려야 합니다.',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': '초안 비교',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': '초안 버리기',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': '초안 게시',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    '워크스페이스에는 초안이 활성화되어 있지 않지만, 이 문서의 초안 버전이 존재합니다.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '귀하의 역할 <Roles/>은 이 문서를 생성할 권한이 없습니다.',
@@ -169,7 +173,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     '이 문서는 <VersionBadge>{{title}}</VersionBadge> 릴리스의 일부로 발행 취소될 예정입니다',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    '현재 <strong>게시된</strong> 버전을 표시합니다:',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '새로운 {{schemaType}}',
