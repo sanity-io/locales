@@ -1252,7 +1252,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny utgivelse',
   'release.action.new-release.limit-reached_other':
-    'Denne arbeidsområdet er begrenset til {{count}} utgivelser',
+    'Dette arbeidsområdet er begrenset til {{count}} utgivelser',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikke tillatelse til å utføre denne handlingen',
   /** Error message description for when a version is reverted from being unpublished */

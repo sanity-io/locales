@@ -86,7 +86,7 @@ export default removeUndefinedLocaleResources({
     'Du ser et skrivebeskyttet dokument som ble arkivert som en del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
-    'Kan ikke opprette et utkastdokument.',
+    'Kan ikke opprette et utkast.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
   'banners.choose-new-document-destination.cannot-create-published-document':
     'Kan ikke opprette et publisert dokument.',
