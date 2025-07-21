@@ -87,13 +87,16 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Katsot vain luku -dokumenttia, joka arkistoitiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'Luonnosdokumenttia ei voi luoda.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'Julkaistua dokumenttia ei voi luoda.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination': 'Valitse kohde tälle dokumentille:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> julkaisu ei ole aktiivinen.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Palauta viimeisin versio',
   /** The text content for the deleted document banner */
@@ -108,13 +111,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     'Tyypillä <strong>{{schemaType}}</strong> on <code>liveEdit</code> käytössä, mutta tästä dokumentista on olemassa luonnosversio. Julkaise tai hylkää luonnos jatkaaksesi sen live-muokkausta.',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': 'Vertaa luonnosta',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': 'Hylkää luonnos',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': 'Julkaise luonnos',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'Työtilassa ei ole luonnoksia käytössä, mutta tämän dokumentin luonnosversio on olemassa.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Roolisi <Roles/> ei anna oikeuksia luoda tätä asiakirjaa.',
@@ -182,7 +186,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     'Tämä dokumentti poistetaan julkaisemattomana osana <VersionBadge>{{title}}</VersionBadge> julkaisua',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    'Näytetään nykyinen <strong>julkaistu</strong> versio:',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Uusi {{schemaType}}',
