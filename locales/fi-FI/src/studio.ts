@@ -1255,13 +1255,16 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Yritä uudelleen tai tarkista yhteytesi. Asiakirja tulee edelleen olemaan julkaisematta julkaisun yhteydessä.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Palautus julkaisemattomaksi asettamisesta julkaisun yhteydessä epäonnistui.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': 'Voit nyt muokata tätä versiota.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Palautus julkaisemattomaksi asettamisesta julkaisun yhteydessä onnistui.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Version julkaisemattomaksi asettaminen epäonnistui',
   /** Action message for when a version is set to be unpublished successfully */
