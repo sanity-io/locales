@@ -50,8 +50,8 @@ export default defineConfig({
 
 ## Contributors
 
-- [@Kasper-Buchholtz](https://github.com/Kasper-Buchholtz)
 - [@Kastholm](https://github.com/Kastholm)
+- [@Kasper-Buchholtz](https://github.com/Kasper-Buchholtz)
 
 ## Contributing
 
