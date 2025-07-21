@@ -1200,13 +1200,16 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'คุณไม่มีสิทธิ์ในการดำเนินการนี้',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'โปรดลองอีกครั้งหรือตรวจสอบการเชื่อมต่อของคุณ ข้อมูลจะยังคงไม่ได้รับการเผยแพร่เมื่อเผยแพร่',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'ไม่สามารถย้อนกลับจากการตั้งค่าเพื่อไม่เผยแพร่เมื่อเผยแพร่',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': 'คุณสามารถแก้ไขเวอร์ชันนี้ได้แล้ว',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'ย้อนกลับจากการตั้งค่าเพื่อไม่เผยแพร่เมื่อเผยแพร่เรียบร้อยแล้ว',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'ไม่สามารถตั้งค่าเวอร์ชันให้ไม่เผยแพร่ในการปล่อยได้',
   /** Action message for when a version is set to be unpublished successfully */
