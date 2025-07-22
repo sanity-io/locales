@@ -85,13 +85,17 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Estás viendo un documento de solo lectura que fue archivado como parte de <VersionBadge>{{title}}</VersionBadge>. No se puede editar',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'No se puede crear un documento borrador.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'No se puede crear un documento publicado.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination':
+    'Elija un destino para este documento:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    'La versión <VersionBadge>{{title}}</VersionBadge> no está activa.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Restaurar la versión más reciente',
   /** The text content for the deleted document banner */
@@ -106,13 +110,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     'El tipo <strong>{{schemaType}}</strong> tiene <code>liveEdit</code> habilitado, pero existe una versión borrador de este documento. Publica o descarta el borrador para continuar editándolo en vivo.',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': 'Comparar borrador',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': 'Descartar borrador',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': 'Publicar borrador',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'El espacio de trabajo no tiene borradores habilitados, pero existe una versión borrador de este documento.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Tu rol <Roles/> no tiene permisos para crear este documento.',
@@ -181,7 +186,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     'Este documento será despublicado como parte de la publicación <VersionBadge>{{title}}</VersionBadge>',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    'Mostrando la versión <strong>publicada</strong> actual:',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nuevo {{schemaType}}',
