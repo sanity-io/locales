@@ -148,11 +148,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '嘗試解析此項目的媒體庫時出了些問題。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': '此組織尚未配置媒體庫。',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '媒體庫',
   'asset-sources.media-library.image.title': '媒體庫',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': '請稍候，我們正在準備您的媒體庫',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': '「<strong>{{title}}</strong>」發布已被刪除。',
@@ -1179,13 +1179,14 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您沒有執行此操作的權限',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    '請再試一次或檢查您的連接。文件仍將在發布時保持未發布狀態。',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title': '無法還原設置為發布時取消發布的操作。',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': '您現在可以編輯此版本。',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title': '成功還原設置為發布時取消發布的操作。',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '設定版本在發布時未發布失敗',
   /** Action message for when a version is set to be unpublished successfully */
