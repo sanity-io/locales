@@ -163,12 +163,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Jokin meni vikaan yrittäessä ratkaista tämän projektin Media Librarya.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Tälle organisaatiolle ei ole varattu mediateekkiä.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediakirjasto',
   'asset-sources.media-library.image.title': 'Mediakirjasto',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Odota hetki, kun valmistelemme Media Libraryasi',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
