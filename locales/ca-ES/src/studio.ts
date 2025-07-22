@@ -165,12 +165,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Alguna cosa ha anat malament intentant resoldre la Biblioteca de Mitjans per a aquest projecte.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    "No s'ha provisionat cap biblioteca de mitjans per a aquesta organització.",
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Espereu mentre preparem la vostra Biblioteca de Mitjans',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -1256,17 +1256,21 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': "No s'ha pogut descartar la versió",
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nova Versió',
-  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
+  'release.action.new-release.limit-reached_other':
+    'Aquest espai de treball està limitat a {{count}} llançaments',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tens permís per realitzar aquesta acció',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Torneu-ho a intentar o comproveu la vostra connexió. El document encara es mantindrà sense publicar en el moment del llançament.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    "No s'ha pogut revertir l'opció de despublicar en el llançament.",
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': 'Ara podeu editar aquesta versió.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    "S'ha revertit amb èxit l'opció de despublicar en el llançament.",
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     "No s'ha pogut establir la versió per ser despublicada en la versió",
@@ -1806,25 +1810,31 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Estat de la configuració',
 
   /* Time zone handling */
-  'time-zone.action.search-for-timezone-placeholder': undefined, // 'Search for a city or time zone'
+  'time-zone.action.search-for-timezone-placeholder': 'Cerqueu una ciutat o una zona horària',
   /* Label for the local time zone button */
-  'time-zone.action.select-local-time-zone': undefined, // 'Select local time zone'
+  'time-zone.action.select-local-time-zone': 'Seleccioneu la zona horària local',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.content-releases': undefined, // 'The selected time zone will change how dates are represented in content releases.'
+  'time-zone.dialog-info.content-releases':
+    'La zona horària seleccionada canviarà com es representen les dates en els llançaments de contingut.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.input': undefined, // 'The selected time zone will change how dates are represented only for this input in this document.'
+  'time-zone.dialog-info.input':
+    'La zona horària seleccionada canviarà com es representen les dates només per a aquesta entrada en aquest document.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.scheduled-publishing': undefined, // 'The selected time zone will change how dates are represented in schedules.'
+  'time-zone.dialog-info.scheduled-publishing':
+    'La zona horària seleccionada canviarà com es representen les dates en les programacions.',
   /* Label for the local time zone button */
-  'time-zone.local-time': undefined, // 'local time'
+  'time-zone.local-time': 'hora local',
   /* Label for the time zone button */
-  'time-zone.time-zone': undefined, // 'Time zone'
+  'time-zone.time-zone': 'Zona horària',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-content-releases': undefined, // 'Displaying releases in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-content-releases':
+    'Mostrant llançaments a {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-input': undefined, // 'Displaying <em>{{title}}</em> in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-input':
+    'Mostrant <em>{{title}}</em> a {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-scheduled-publishing': undefined, // 'Displaying schedules in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Mostrant programacions a {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Canvis per',
