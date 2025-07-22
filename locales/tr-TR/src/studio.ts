@@ -162,12 +162,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Bu projede Medya Kütüphanesi çözümlenirken bir hata oluştu.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Bu organizasyon için hiçbir medya kütüphanesi sağlanmamış.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medya Kütüphanesi',
   'asset-sources.media-library.image.title': 'Medya Kütüphanesi',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Medya Kütüphaneniz hazırlanırken lütfen bekleyin',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' yayını silindi.",
@@ -1257,13 +1257,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Lütfen tekrar deneyin veya bağlantınızı kontrol edin. Belge, yayınlanmamış olarak kalmaya devam edecek.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Yayınlanmamak üzere ayarlanan sürümün geri alınması başarısız oldu.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Şimdi bu sürümü düzenleyebilirsiniz.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Yayınlanmamak üzere ayarlanan sürüm başarıyla geri alındı.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Sürümün yayından kaldırılması başarısız oldu',
   /** Action message for when a version is set to be unpublished successfully */
