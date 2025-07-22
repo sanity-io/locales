@@ -155,12 +155,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Đã xảy ra lỗi khi cố gắng truy cập Thư viện Media cho dự án này.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Không có thư viện media nào được cung cấp cho tổ chức này.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Thư viện Media',
   'asset-sources.media-library.image.title': 'Thư viện Media',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Vui lòng đợi trong khi chúng tôi chuẩn bị Thư viện Media của bạn',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Phiên bản '<strong>{{title}}</strong>' đã bị xóa.",
