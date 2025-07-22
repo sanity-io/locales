@@ -152,12 +152,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'เกิดข้อผิดพลาดในการพยายามเชื่อมต่อกับ Media Library สำหรับโปรเจคนี้',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'ไม่มีห้องสมุดสื่อที่ได้รับการจัดสรรสำหรับองค์กรนี้',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'ห้องสมุดสื่อ',
   'asset-sources.media-library.image.title': 'ห้องสมุดสื่อ',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'กรุณารอขณะที่เรากำลังเตรียม Media Library ของคุณ',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "การปล่อย '<strong>{{title}}</strong>' ถูกลบแล้ว",
