@@ -149,11 +149,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '尝试解析此项目的媒体库时出了些问题。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': '此组织尚未配置媒体库。',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '媒体库',
   'asset-sources.media-library.image.title': '媒体库',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': '请稍候，我们正在准备您的媒体库',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "发布 '<strong>{{title}}</strong>' 已被删除。",
