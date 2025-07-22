@@ -164,7 +164,7 @@ export default removeUndefinedLocaleResources({
     'Eitthvað fór úrskeiðis við að leysa úr fjölmiðlabókasafninu fyrir þetta verkefni.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'Engin miðlasafn hefur verið útvegað fyrir þessa stofnun.',
+    'Engin miðlasafn hafa verið útveguð fyrir þessa stofnun.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Fjölmiðlabókasafn',
   'asset-sources.media-library.image.title': 'Fjölmiðlabókasafn',
@@ -1249,7 +1249,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ný útgáfa',
   'release.action.new-release.limit-reached_other':
-    'Þessi vinnusvæði er takmörkuð við {{count}} útgáfur',
+    'Þetta vinnusvæði er takmarkað við {{count}} útgáfur',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Þú hefur ekki leyfi til að framkvæma þessa aðgerð',
   /** Error message description for when a version is reverted from being unpublished */
@@ -1810,7 +1810,7 @@ export default removeUndefinedLocaleResources({
     'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í efni útgáfum.',
   /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
-    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar aðeins fyrir þessa inntak í þessu skjali.',
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar aðeins fyrir þetta inntak í þessu skjali.',
   /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í áætlunum.',

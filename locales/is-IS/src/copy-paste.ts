@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': 'Líma inn reit',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
-    'Aðgangur að klippiborði nauðsynlegur til að afrita þetta efni. Leyfðu aðgang að klippiborði í vafrastillingum þínum, síðan reyndu að afrita aftur.',
+    'Aðgangur að klippiborði nauðsynlegur til að afrita þetta efni. Leyfðu aðgang að klippiborði í vafrastillingum þínum, reyndu síðan að afrita aftur.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Vafrinn þinn styður ekki þessa aðgerð',

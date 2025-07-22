@@ -117,7 +117,7 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.actions.publish-draft.text': 'Birta drög',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
-    'Vinnusvæðið hefur ekki virk drög, en drög að þessu skjali eru til.',
+    'Vinnusvæðið er ekki með virk drög, en drög að þessu skjali eru til.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Hlutverk þitt <Roles/> hefur ekki heimildir til að búa til þetta skjal.',
