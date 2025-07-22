@@ -52,9 +52,10 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Une image est requise',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  'object.media-not-found': "L'actif n'a pas pu être trouvé dans la bibliothèque multimédia",
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
+  'object.not-media-library-asset':
+    'Doit être une référence à un actif de la bibliothèque multimédia',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Doit être une référence à un document',
   /** Object references a document which is not published */
@@ -67,7 +68,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Validation',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': undefined, // 'Document is going to unpublish, no validation errors are shown'
+  'panel.unpublish-message':
+    "Le document va être retiré de la publication, aucune erreur de validation n'est affichée",
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Le slug doit avoir une valeur',
