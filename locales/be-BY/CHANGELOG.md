@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.26](https://github.com/sanity-io/locales/compare/locale-be-by-v1.1.25...locale-be-by-v1.1.26) (2025-07-22)
+
+
+### Bug Fixes
+
+* **be-BY:** translation updates ([#1261](https://github.com/sanity-io/locales/issues/1261)) ([203c8a9](https://github.com/sanity-io/locales/commit/203c8a92fa1c08c54c6ed4b279bc8697ef413c9a))
+
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-be-by-v1.1.24...locale-be-by-v1.1.25) (2025-07-22)
 
 
