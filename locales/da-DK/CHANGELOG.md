@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.18](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.17...locale-da-dk-v1.0.18) (2025-07-22)
+
+
+### Bug Fixes
+
+* **da-DK:** move Kasper-Buchholtz to contributors (gh account gone) ([168b31c](https://github.com/sanity-io/locales/commit/168b31cce01e3684a26e52ec5c981223b602ed5d))
+* reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
+
 ## [1.0.17](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.16...locale-da-dk-v1.0.17) (2025-07-10)
 
 

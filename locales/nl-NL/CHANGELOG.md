@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.27](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.26...locale-nl-nl-v1.1.27) (2025-07-22)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
+
 ## [1.1.26](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.25...locale-nl-nl-v1.1.26) (2025-07-10)
 
 
