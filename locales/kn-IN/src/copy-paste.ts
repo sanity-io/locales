@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'ಕ್ಷೇತ್ರ ಅಂಟಿಸಿ',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.description': undefined, // 'Clipboard access required to copy this content. Allow clipboard permissions in your browser settings, then try copying again.'
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'ಈ ವಿಷಯವನ್ನು ನಕಲಿಸಲು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಪ್ರವೇಶ ಅಗತ್ಯವಿದೆ. ನಿಮ್ಮ ಬ್ರೌಸರ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಅನುಮತಿಗಳನ್ನು ಅನುಮತಿಸಿ, ನಂತರ ನಕಲಿಸಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'ನಿಮ್ಮ ಬ್ರೌಸರ್ ಈ ಕ್ರಿಯೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ',
