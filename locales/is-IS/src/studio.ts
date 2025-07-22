@@ -162,12 +162,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Eitthvað fór úrskeiðis við að leysa úr fjölmiðlabókasafninu fyrir þetta verkefni.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Engin miðlasafn hafa verið útveguð fyrir þessa stofnun.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Fjölmiðlabókasafn',
   'asset-sources.media-library.image.title': 'Fjölmiðlabókasafn',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Vinsamlegast bíðið á meðan við undirbúum fjölmiðlabókasafnið ykkar',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Útgáfan '<strong>{{title}}</strong>' hefur verið eytt.",
@@ -1248,17 +1248,22 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Mistókst að hafna útgáfu',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ný útgáfa',
-  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
+  'release.action.new-release.limit-reached_other':
+    'Þetta vinnusvæði er takmarkað við {{count}} útgáfur',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Þú hefur ekki leyfi til að framkvæma þessa aðgerð',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Vinsamlegast reyndu aftur eða athugaðu tenginguna þína. Skjalið verður enn óbirt við útgáfu.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Mistókst að afturkalla stillingu á óbirtingu við útgáfu.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Þú getur nú breytt þessari útgáfu.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Tókst að afturkalla stillingu á óbirtingu við útgáfu.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Mistókst að setja útgáfu til að vera óbirt í útgáfu',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1797,25 +1802,31 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Stillingarstaða',
 
   /* Time zone handling */
-  'time-zone.action.search-for-timezone-placeholder': undefined, // 'Search for a city or time zone'
+  'time-zone.action.search-for-timezone-placeholder': 'Leitaðu að borg eða tímabelti',
   /* Label for the local time zone button */
-  'time-zone.action.select-local-time-zone': undefined, // 'Select local time zone'
+  'time-zone.action.select-local-time-zone': 'Veldu staðartímabelti',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.content-releases': undefined, // 'The selected time zone will change how dates are represented in content releases.'
+  'time-zone.dialog-info.content-releases':
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í efni útgáfum.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.input': undefined, // 'The selected time zone will change how dates are represented only for this input in this document.'
+  'time-zone.dialog-info.input':
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar aðeins fyrir þetta inntak í þessu skjali.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.scheduled-publishing': undefined, // 'The selected time zone will change how dates are represented in schedules.'
+  'time-zone.dialog-info.scheduled-publishing':
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í áætlunum.',
   /* Label for the local time zone button */
-  'time-zone.local-time': undefined, // 'local time'
+  'time-zone.local-time': 'staðartími',
   /* Label for the time zone button */
-  'time-zone.time-zone': undefined, // 'Time zone'
+  'time-zone.time-zone': 'Tímabelti',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-content-releases': undefined, // 'Displaying releases in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-content-releases':
+    'Sýnir útgáfur í {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-input': undefined, // 'Displaying <em>{{title}}</em> in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-input':
+    'Sýnir <em>{{title}}</em> í {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-scheduled-publishing': undefined, // 'Displaying schedules in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Sýnir áætlanir í {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Breytingar eftir',

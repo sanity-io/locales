@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Líma inn reit',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.description': undefined, // 'Clipboard access required to copy this content. Allow clipboard permissions in your browser settings, then try copying again.'
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Aðgangur að klippiborði nauðsynlegur til að afrita þetta efni. Leyfðu aðgang að klippiborði í vafrastillingum þínum, reyndu síðan að afrita aftur.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Vafrinn þinn styður ekki þessa aðgerð',

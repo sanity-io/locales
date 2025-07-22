@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Mynd er krafist',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  'object.media-not-found': 'Ekki tókst að finna eignina í Myndasafninu',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
+  'object.not-media-library-asset': 'Verður að vera tilvísun í eign Myndasafns',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Verður að vera tilvísun í skjal',
   /** Object references a document which is not published */
@@ -67,7 +67,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Staðfesting',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': undefined, // 'Document is going to unpublish, no validation errors are shown'
+  'panel.unpublish-message': 'Skjal er að fara í afbirtingu, engar staðfestingarvillur eru sýndar',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug verður að hafa gildi',
