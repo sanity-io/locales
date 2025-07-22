@@ -161,12 +161,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Noe gikk galt med å løse opp Media Library for dette prosjektet.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Ingen mediebibliotek har blitt opprettet for denne organisasjonen.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediebibliotek',
   'asset-sources.media-library.image.title': 'Mediebibliotek',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Vennligst vent mens vi forbereder mediebiblioteket',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
