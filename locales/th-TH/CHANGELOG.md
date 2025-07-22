@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.21](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.20...locale-th-th-v1.1.21) (2025-07-22)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
+* **th-TH:** automated translation updates ([#1279](https://github.com/sanity-io/locales/issues/1279)) ([4c026d3](https://github.com/sanity-io/locales/commit/4c026d386f5a257aa7516cf7c118176cae160ab7))
+* **th-TH:** automated translation updates ([#1292](https://github.com/sanity-io/locales/issues/1292)) ([b7946ea](https://github.com/sanity-io/locales/commit/b7946ea2c99848d971b12c0586d38b791caa1d5e))
+
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-th-th-v1.1.19...locale-th-th-v1.1.20) (2025-07-10)
 
 
