@@ -92,7 +92,7 @@ export default removeUndefinedLocaleResources({
     'Немагчыма стварыць апублікаваны дакумент.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
   'banners.choose-new-document-destination.choose-destination':
-    'Выберыце месца для гэтага дакумента:',
+    'Абярыце месца для гэтага дакумента:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
     '<VersionBadge>{{title}}</VersionBadge> рэліз не актыўны.',

@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': 'Уставіць поле',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
-    'Для капіявання гэтага змесціва патрабуецца доступ да буфера абмену. Дазвольце дазволы на буфер абмену ў наладах браўзэра, а потым паспрабуйце скапіяваць зноў.',
+    'Для капіявання гэтага змесціва патрабуецца доступ да буфера абмену. Дазвольце доступ да буфера абмену ў наладах браўзэра, а потым паспрабуйце скапіяваць зноў.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Ваш браўзер не падтрымлівае гэтую дзеянне',

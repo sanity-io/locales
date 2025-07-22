@@ -1225,16 +1225,16 @@ export default removeUndefinedLocaleResources({
   'release.action.permission.error': 'У вас няма дазволу на выкананне гэтай дзеяння',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Калі ласка, паспрабуйце яшчэ раз або праверце сваё злучэнне. Дакумент будзе застацца неапублікаваным пасля выпуску.',
+    'Калі ласка, паспрабуйце яшчэ раз або праверце сваё злучэнне. Дакумент будзе заставацца неапублікаваным пасля выпуску.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Не ўдалося адмяніць наладу на зняцце з публікацыі пры выпуску.',
+    'Не ўдалося адмяніць наладу на зняццё з публікацыі падчас выпуску.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Цяпер вы можаце рэдагаваць гэтую версію.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Паспяхова адменена налада на зняцце з публікацыі пры выпуску.',
+    'Паспяхова адменена налада на зняцце з публікацыі падчас выпуску.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Не ўдалося ўсталяваць версію як неапублікаваную ў рэлізе',
