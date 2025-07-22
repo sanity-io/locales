@@ -163,12 +163,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Došlo je do pogreške pri pokušaju spajanja Medijske knjižnice.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Nije postavljena medijska knjižnica za ovu organizaciju.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medijska knjižnica',
   'asset-sources.media-library.image.title': 'Medijska knjižnica',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Molimo pričekajte dok pripremamo vašu Medijsku knjižnicu.',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",
@@ -1257,13 +1257,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Molimo pokušajte ponovno ili provjerite svoju vezu. Dokument će i dalje biti nepobjavljen pri objavi.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Neuspjelo vraćanje s postavke za nepobjavljivanje pri objavi.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Sada možete uređivati ovu verziju.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Uspješno vraćeno s postavke za nepobjavljivanje pri objavi.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nije uspjelo postavljanje verzije da se ne objavi u izdanju',
