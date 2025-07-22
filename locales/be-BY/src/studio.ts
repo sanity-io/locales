@@ -157,12 +157,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Штосьці пайшло не так пры спробе вызначыць Медыябібліятэку для гэтага праекта.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Медыябібліятэка не была прадастаўлена для гэтай арганізацыі.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Медыябібліятэка',
   'asset-sources.media-library.image.title': 'Медыябібліятэка',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Калі ласка, пачакайце, пакуль мы падрыхтуем вашу Медыябібліятэку',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Рэліз '<strong>{{title}}</strong>' быў выдалены.",
@@ -1224,13 +1224,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас няма дазволу на выкананне гэтай дзеяння',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Калі ласка, паспрабуйце яшчэ раз або праверце сваё злучэнне. Дакумент будзе заставацца неапублікаваным пасля выпуску.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Не ўдалося адмяніць наладу на зняццё з публікацыі падчас выпуску.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Цяпер вы можаце рэдагаваць гэтую версію.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Паспяхова адменена налада на зняцце з публікацыі падчас выпуску.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Не ўдалося ўсталяваць версію як неапублікаваную ў рэлізе',
