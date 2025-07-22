@@ -163,12 +163,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Něco se pokazilo při pokusu o vyřešení Media Library pro tento projekt.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Pro tuto organizaci nebyla připravena žádná mediální knihovna.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediální knihovna',
   'asset-sources.media-library.image.title': 'Mediální knihovna',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Vyčkejte prosím, zatímco připravujeme vaši Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
