@@ -162,12 +162,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '이 프로젝트의 미디어 라이브러리를 확인하는 도중 문제가 발생했습니다.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    '이 조직을 위한 미디어 라이브러리가 프로비저닝되지 않았습니다.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '미디어 라이브러리',
   'asset-sources.media-library.image.title': '미디어 라이브러리',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    '미디어 라이브러리를 준비하는 동안 기다려 주십시오',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' 릴리스가 삭제되었습니다.",
