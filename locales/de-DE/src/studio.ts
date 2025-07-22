@@ -163,12 +163,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Etwas ist schiefgegangen beim Versuch, die Media Library für dieses Projekt zu finden.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Für diese Organisation wurde keine Medienbibliothek bereitgestellt.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medienbibliothek',
   'asset-sources.media-library.image.title': 'Medienbibliothek',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Bitte warten Sie, während wir Ihre Media Library vorbereiten',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Das Release '<strong>{{title}}</strong>' wurde gelöscht.",
@@ -1268,13 +1268,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sie haben keine Berechtigung, diese Aktion auszuführen',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Bitte versuchen Sie es erneut oder überprüfen Sie Ihre Verbindung. Das Dokument wird bei der Veröffentlichung weiterhin nicht veröffentlicht.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Das Zurücksetzen von der Einstellung, bei Veröffentlichung nicht zu veröffentlichen, ist fehlgeschlagen.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Sie können diese Version jetzt bearbeiten.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Erfolgreich von der Einstellung zurückgesetzt, bei Veröffentlichung nicht zu veröffentlichen.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Fehler beim Einstellen der Version als unveröffentlicht im Release',

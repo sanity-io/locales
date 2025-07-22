@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Feld einfügen',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.description': undefined, // 'Clipboard access required to copy this content. Allow clipboard permissions in your browser settings, then try copying again.'
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Zugriff auf die Zwischenablage erforderlich, um diesen Inhalt zu kopieren. Erlauben Sie die Zwischenablageberechtigungen in Ihren Browsereinstellungen und versuchen Sie es dann erneut zu kopieren.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Ihr Browser unterstützt diese Aktion nicht',
