@@ -57,7 +57,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          token: ${{ steps.generate-token.outputs.token }}
+          persist-credentials: false
       - name: Install pnpm
         uses: pnpm/action-setup@v2
       - name: Set up Node.js
@@ -73,6 +73,7 @@ jobs:
         run: |
           git config --global user.name 'AutoTranslator'
           git config --global user.email 'hello@sanity.io'
+          git remote set-url origin "https://x-access-token:${{ steps.generate-token.outputs.token }}@github.com/sanity-io/locales.git"
       - name: Run autotranslate for all locales
         if: >-
           ${{ github.event.inputs.locale == '' || github.event.inputs.locale ==
