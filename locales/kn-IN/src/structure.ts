@@ -86,13 +86,16 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'ನೀವು ಓದಲು ಮಾತ್ರ ಅನುಮತಿಸಿದ ದಾಖಲೆಯನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ, ಇದು <VersionBadge> ಒಂದು ಬಿಡುಗಡೆಯ</VersionBadge> ಭಾಗವಾಗಿ ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ. ಇದನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'ಡ್ರಾಫ್ಟ್ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'ಪ್ರಕಟಿತ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination': 'ಈ ದಾಖಲೆಗೆ ಗಮ್ಯಸ್ಥಾನವನ್ನು ಆರಿಸಿ:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆ ಸಕ್ರಿಯವಾಗಿಲ್ಲ.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ಮರಳಿಸು',
   /** The text content for the deleted document banner */
@@ -107,13 +110,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     'ಟೈಪ್ <strong>{{schemaType}}</strong> ಗೆ <code>liveEdit</code> ಸಕ್ರಿಯವಾಗಿದೆ, ಆದರೆ ಈ ದಾಖಲೆಯ ಕರಡು ಆವೃತ್ತಿ ಇದೆ. ನೇರ ಸಂಪಾದನೆ ಮುಂದುವರೆಸಲು ಕರಡು ಪ್ರಕಟಿಸಿ ಅಥವಾ ತ್ಯಜಿಸಿ.',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': 'ಡ್ರಾಫ್ಟ್ ಹೋಲಿಸಿ',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': 'ಡ್ರಾಫ್ಟ್ ತ್ಯಜಿಸಿ',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': 'ಡ್ರಾಫ್ಟ್ ಪ್ರಕಟಿಸಿ',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'ವರ್ಕ್‌ಸ್ಪೇಸ್‌ನಲ್ಲಿ ಡ್ರಾಫ್ಟ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿಲ್ಲ, ಆದರೆ ಈ ದಾಖಲೆಯ ಡ್ರಾಫ್ಟ್ ಆವೃತ್ತಿ ಇದೆ.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'ನಿಮ್ಮ ಪಾತ್ರ <Roles/> ಈ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಅನುಮತಿಗಳಿಲ್ಲ.',
@@ -180,7 +184,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     'ಈ ದಾಖಲೆಯು <VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿ ಅಪ್ರಕಟಿತವಾಗಲಿದೆ',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    'ಪ್ರಸ್ತುತ <strong>ಪ್ರಕಟಿತ</strong> ಆವೃತ್ತಿಯನ್ನು ತೋರಿಸುತ್ತಿದೆ:',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ಹೊಸ {{schemaType}}',
