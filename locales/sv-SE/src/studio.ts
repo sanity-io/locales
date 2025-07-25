@@ -161,11 +161,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Något gick fel när vi försökte lösa Media Library för detta projekt.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Inget mediebibliotek har tillhandahållits för denna organisation.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': 'Vänta medan vi förbereder ditt Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Releasen '<strong>{{title}}</strong>' har raderats.",
@@ -1254,13 +1255,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har inte behörighet att utföra denna åtgärd',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Försök igen eller kontrollera din anslutning. Dokumentet kommer fortfarande att vara opublicerat vid publicering.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Misslyckades med att återställa inställningen att avpublicera vid publicering.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Du kan nu redigera denna version.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Lyckades återställa inställningen att avpublicera vid publicering.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Misslyckades med att ställa in versionen som ej publicerad på release',
