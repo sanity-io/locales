@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': '已禁用',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': '已启用',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': '自动更新',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '如何启用',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': '当前版本',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '如何升级',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': '最新版本',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': '最新版本是 {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': '新版本可用',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': '预发布',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': '已是最新',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '已是最新',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': '用户代理',
