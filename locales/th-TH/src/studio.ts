@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'ปิดการใช้งาน',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'เปิดการใช้งาน',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'การอัปเดตอัตโนมัติ',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'วิธีการเปิดใช้งาน',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'เวอร์ชันปัจจุบัน',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'วิธีการอัปเกรด',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'เวอร์ชันล่าสุด',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'เวอร์ชันล่าสุดคือ {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'มีเวอร์ชันใหม่',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'เวอร์ชันทดลอง',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'เวอร์ชันล่าสุด',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'อัปเดตล่าสุด',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ตัวแทนผู้ใช้',
