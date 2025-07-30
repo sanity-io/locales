@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Désactivé',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Activé',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Mises à jour automatiques',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Comment activer',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Version actuelle',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Comment mettre à niveau',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Dernière version',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'La dernière version est {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Nouvelle version disponible',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Préversion',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'À jour',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'À jour',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agent utilisateur',
