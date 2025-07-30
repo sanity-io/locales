@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Letiltva',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Engedélyezve',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatikus frissítések',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hogyan engedélyezhető',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Jelenlegi verzió',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Hogyan frissíthető',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Legújabb verzió',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'A legújabb verzió {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Új verzió érhető el',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Előzetes kiadás',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Naprakész',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Naprakész',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Felhasználói ügynök',
@@ -165,12 +171,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Valami hiba történt a Média Könyvtár projektben való feloldásakor.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Ehhez a szervezethez nem lett média könyvtár biztosítva.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Média Könyvtár',
   'asset-sources.media-library.image.title': 'Média Könyvtár',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Kérjük, várjon, amíg előkészítjük a Média Könyvtárat',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "A(z) '<strong>{{title}}</strong>' kiadás törölve lett.",
@@ -1265,13 +1271,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nincs jogosultsága ezt a műveletet végrehajtani',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Kérjük, próbálja újra vagy ellenőrizze az internetkapcsolatát. A dokumentum továbbra is közzétételre kerül a kiadáskor.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Nem sikerült visszavonni a közzététel beállítását a kiadáskor.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Most már szerkesztheti ezt a verziót.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Sikeresen visszavonva a közzététel beállítása a kiadáskor.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nem sikerült beállítani a verziót közzétételre váró állapotba a kiadásban',
