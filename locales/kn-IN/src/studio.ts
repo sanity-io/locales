@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'ನಿಷ್ಕ್ರಿಯ',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'ಸಕ್ರಿಯ',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'ಸ್ವಯಂ ನವೀಕರಣಗಳು',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'ಹೇಗೆ ಸಕ್ರಿಯಗೊಳಿಸುವುದು',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'ಪ್ರಸ್ತುತ ಆವೃತ್ತಿ',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'ಹೇಗೆ ನವೀಕರಿಸುವುದು',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'ಇತ್ತೀಚಿನ ಆವೃತ್ತಿ',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'ಇತ್ತೀಚಿನ ಆವೃತ್ತಿ {{latestVersion}} ಆಗಿದೆ',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'ಪ್ರಿರಿಲೀಸ್',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'ಅಪ್‌ಟು ಡೇಟ್',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'ನವೀಕರಣಗೊಂಡಿದೆ',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ಬಳಕೆದಾರ ಏಜೆಂಟ್',
