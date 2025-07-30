@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Vô hiệu hóa',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Đã kích hoạt',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Cập nhật tự động',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cách kích hoạt',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Phiên bản hiện tại',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Cách nâng cấp',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Phiên bản mới nhất',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'Phiên bản mới nhất là {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Phiên bản mới có sẵn',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Phiên bản thử nghiệm',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Đã cập nhật',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Đã cập nhật',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'User agent',
