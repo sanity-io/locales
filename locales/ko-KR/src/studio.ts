@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': '비활성화됨',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': '활성화됨',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': '자동 업데이트',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '활성화 방법',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': '현재 버전',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '업그레이드 방법',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': '최신 버전',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': '최신 버전은 {{latestVersion}}입니다',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': '새 버전이 있습니다',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': '사전 출시',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': '최신 상태입니다',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '최신 상태',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': '사용자 에이전트',
