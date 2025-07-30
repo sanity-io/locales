@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Wyłączone',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Włączone',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Autoaktualizacje',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Jak włączyć',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Obecna wersja',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Jak zaktualizować',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Najnowsza wersja',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'Najnowsza wersja to {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Dostępna nowa wersja',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Przedpremiera',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Aktualna',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Aktualne',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agent użytkownika',
@@ -154,12 +160,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Coś poszło nie tak podczas próby rozwiązania problemu z Biblioteką Mediów dla tego projektu.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Nie skonfigurowano biblioteki multimediów dla tej organizacji.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteka Mediów',
   'asset-sources.media-library.image.title': 'Biblioteka Mediów',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Proszę czekać, przygotowujemy Twoją Bibliotekę Mediów',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Wydanie '<strong>{{title}}</strong>' zostało usunięte.",
@@ -1218,13 +1224,16 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nie masz uprawnień do wykonania tej akcji',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Spróbuj ponownie lub sprawdź swoje połączenie. Dokument nadal będzie nieopublikowany po wydaniu.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Nie udało się cofnąć ustawienia niepublikowania przy wydaniu.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description': 'Możesz teraz edytować tę wersję.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Pomyślnie cofnięto ustawienie niepublikowania przy wydaniu.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nie udało się ustawić wersji jako nieopublikowanej w wydaniu',
