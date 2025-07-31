@@ -85,13 +85,16 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'თქვენ ნახულობთ მხოლოდ წაკითხვის დოკუმენტს, რომელიც არქივდა <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად. იგი ვერ შეიცვლება',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'ვერ შეიქმნება დრაფტის დოკუმენტი.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'ვერ შეიქმნება გამოქვეყნებული დოკუმენტი.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination': 'აირჩიეთ ადგილი ამ დოკუმენტისთვის:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> რელიზი არაა აქტიური.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'აღადგინეთ უახლესი ვერსია',
   /** The text content for the deleted document banner */
@@ -106,13 +109,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     'ტიპი <strong>{{schemaType}}</strong> აქვს <code>liveEdit</code> ჩართული, თუმცა ამ დოკუმენტის მონახაზი არსებობს. გამოაქვეყნეთ ან უარყეთ მონახაზი რედაქტირების გაგრძელებად.',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': 'დრაფტის შედარება',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': 'დრაფტის გაუქმება',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': 'დრაფტის გამოქვეყნება',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'სამუშაო სივრცეში არ არის ჩართული დრაფტები, თუმცა ამ დოკუმენტის დრაფტის ვერსია არსებობს.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'თქვენი როლი <Roles/> არ აქვს უფლება შექმნას ეს დოკუმენტი.',
@@ -181,7 +185,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     'ეს დოკუმენტი გამოქვეყნდება <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    'მიმღებია მიმდინარე <strong>გამოქვეყნებული</strong> ვერსია:',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ახალი {{schemaType}}',

@@ -161,12 +161,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'პროექტის მედია ბიბლიოთეკის განსაზღვრაში რაღაც შეცდომა მოხდა.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'ამ ორგანიზაციისთვის მედია ბიბლიოთეკა არ არის მზადებული.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'მედია ბიბლიოთეკა',
   'asset-sources.media-library.image.title': 'მედია ბიბლიოთეკა',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'გთხოვთ, დაელოდოთ თქვენი მედია ბიბლიოთეკის მომზადებას',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "რელიზი '<strong>{{title}}</strong>' წაშლილია.",
@@ -1254,13 +1254,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'თქვენ არ გაქვთ ნებართვა ამ ქმედების შესრულებაზე',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'გთხოვთ, სცადეთ თავიდან ან შეამოწმეთ თქვენი კავშირი. დოკუმენტი კვლავ დაუქვეყნებელი დარჩება გამოშვებისას.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'ვერ მოხერხდა დაუქვეყნების გაუქმება გამოშვებისას.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'ახლა შეგიძლიათ ამ ვერსიას რედაქტირება.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'წარმატებით გაუქმდა დაუქვეყნების განყენება გამოშვებისას.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'ვერსიის გამოქვეყნების უარყოფის დაყენება ჩავარდა',
   /** Action message for when a version is set to be unpublished successfully */
