@@ -165,12 +165,12 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Qualcosa è andato storto nel tentativo di risolvere la Media Library per questo progetto.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Nessuna media library è stata provisionata per questa organizzazione.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Attendere mentre prepariamo la tua Media Library',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
