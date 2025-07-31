@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Deaktivert',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Aktivert',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatiske oppdateringer',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hvordan aktivere',
@@ -17,11 +17,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Nåværende versjon',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Hvordan oppgradere',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Siste versjon',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'Siste versjon er {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Oppdatert',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Brukeragent',

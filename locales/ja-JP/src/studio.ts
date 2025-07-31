@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': '無効',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': '有効',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': '自動更新',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '有効にする方法',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': '現在のバージョン',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'アップグレード方法',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': '最新バージョン',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': '最新バージョンは {{latestVersion}} です',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '最新の状態です',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ユーザーエージェント',
@@ -164,12 +170,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'このプロジェクトのメディアライブラリを解決しようとして何か問題が発生しました。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': undefined, // 'No media library has been provisioned for this organization.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'メディアライブラリ',
   'asset-sources.media-library.image.title': 'メディアライブラリ',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'メディアライブラリの準備が整うまでお待ちください',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",

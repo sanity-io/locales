@@ -53,7 +53,7 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': '画像が必要です',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  'object.media-not-found': undefined, // 'The asset could not be found in the Media Library'
   /** Media object is missing a reference to a document in its `_ref` field */
   'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */

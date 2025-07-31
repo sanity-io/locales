@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'გამორთულია',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'ჩართულია',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'ავტოგანახლებები',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'როგორ ჩართოთ',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'მიმდინარე ვერსია',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'როგორ განახლოთ',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'უახლესი ვერსია',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'უახლესი ვერსიაა {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'განახლებულია',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'მომხმარებლის აგენტი',
@@ -161,12 +167,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'პროექტის მედია ბიბლიოთეკის განსაზღვრაში რაღაც შეცდომა მოხდა.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': undefined, // 'No media library has been provisioned for this organization.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'მედია ბიბლიოთეკა',
   'asset-sources.media-library.image.title': 'მედია ბიბლიოთეკა',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'გთხოვთ, დაელოდოთ თქვენი მედია ბიბლიოთეკის მომზადებას',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "რელიზი '<strong>{{title}}</strong>' წაშლილია.",
