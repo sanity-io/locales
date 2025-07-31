@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Desactivat',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Activat',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Actualitzacions Automàtiques',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Com activar',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Versió actual',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Com actualitzar',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Última versió',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'La última versió és {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Actualitzat',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': "Agent d'usuari",
@@ -165,12 +171,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Alguna cosa ha anat malament intentant resoldre la Biblioteca de Mitjans per a aquest projecte.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': undefined, // 'No media library has been provisioned for this organization.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Espereu mentre preparem la vostra Biblioteca de Mitjans',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':

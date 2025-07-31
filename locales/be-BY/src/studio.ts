@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Адключана',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Уключана',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Аўтаматычныя абнаўленні',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Як уключыць',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Бягучая версія',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Як абнавіць',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Апошняя версія',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'Апошняя версія {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Актуальная',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Карыстальніцкі агент',

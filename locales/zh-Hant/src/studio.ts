@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': '已禁用',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': '已啟用',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': '自動更新',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '如何啟用',
@@ -17,11 +17,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': '當前版本',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '如何升級',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': '最新版本',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': '最新版本是 {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '已是最新',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': '用戶代理',
@@ -148,11 +154,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '嘗試解析此項目的媒體庫時出了些問題。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': undefined, // 'No media library has been provisioned for this organization.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '媒體庫',
   'asset-sources.media-library.image.title': '媒體庫',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': '請稍候，我們正在準備您的媒體庫',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': '「<strong>{{title}}</strong>」發布已被刪除。',

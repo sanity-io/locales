@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Desativado',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Ativado',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Atualizações Automáticas',
   /** "How to enable" next to Disabled state for Auto updates in about dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Como ativar',
@@ -18,11 +18,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.current-version.header': 'Versão atual',
   /** "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Como atualizar',
-  /** "Latest version" header in about dialog */
+  /** @deprecated "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.header': 'Última versão',
   /** "Latest version" header in about dialog */
   'about-dialog.version-info.latest-version.text': 'A última versão é {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Atualizado',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agente do usuário',
@@ -165,12 +171,11 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Algo deu errado ao tentar resolver a Biblioteca de Mídia para este projeto.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': undefined, // 'No media library has been provisioned for this organization.'
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de Mídia',
   'asset-sources.media-library.image.title': 'Biblioteca de Mídia',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Por favor, aguarde enquanto preparamos sua Biblioteca de Mídia',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "O '<strong>{{title}}</strong>' lançamento foi excluído.",
