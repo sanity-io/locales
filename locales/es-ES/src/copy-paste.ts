@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Pegar campo',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.description': undefined, // 'Clipboard access required to copy this content. Allow clipboard permissions in your browser settings, then try copying again.'
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Se requiere acceso al portapapeles para copiar este contenido. Permite los permisos del portapapeles en la configuración de tu navegador y luego intenta copiar de nuevo.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Tu navegador no admite esta acción',
