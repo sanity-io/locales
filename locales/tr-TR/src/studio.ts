@@ -5,27 +5,49 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Devre Dışı',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Etkin',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Otomatik Güncellemeler',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Nasıl etkinleştirilir',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Sürümü Yönet',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Panoya Kopyalandı. Mutlu yapıştırmalar!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Panoya Kopyala',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Mevcut sürüm',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Nasıl yükseltileceği',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'En son sürüm',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'En son sürüm {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Yeni sürüm mevcut',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Yeni sürüm',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Yeniden Yükle',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Güncellemek için Stüdyoyu yeniden yükleyin',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Yeni sürüm mevcut',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Ön sürüm',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Güncel',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Güncel',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Güncelle',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip':
+    "Sanity Studio'yu nasıl güncelleyeceğinizi öğrenin",
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Kullanıcı aracısı',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': "GitHub'da Görüntüle",
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Kapat',
@@ -162,12 +184,14 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Bu projede Medya Kütüphanesi çözümlenirken bir hata oluştu.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Bu organizasyon için hiçbir medya kütüphanesi sağlanmamış.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medya Kütüphanesi',
   'asset-sources.media-library.image.title': 'Medya Kütüphanesi',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Medya Kütüphaneniz hazırlanırken lütfen bekleyin',
+  'asset-sources.media-library.select-dialog.title': '{{targetTitle}} için {{assetType}} seçimi',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' yayını silindi.",
@@ -530,6 +554,9 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Topluluğumuza katılın',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'En son sürüm {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now':
+    'v{{newVersion}} sürümüne güncellemek için yeniden yükleyin',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio sürümü {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1207,9 +1234,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Yeni belge oluştur',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Yeniden Yükle',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio güncellendi',
 
   /** Label for action to invite members to the current studio project */
@@ -1257,13 +1284,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Lütfen tekrar deneyin veya bağlantınızı kontrol edin. Belge, yayından kaldırılma üzerine hala yayından kaldırılacak.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Yayından kaldırma ayarını geri alırken başarısız oldu.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Şimdi bu sürümü düzenleyebilirsiniz.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Yayından kaldırma ayarını başarıyla geri aldınız.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Sürümün yayından kaldırılması başarısız oldu',
   /** Action message for when a version is set to be unpublished successfully */
