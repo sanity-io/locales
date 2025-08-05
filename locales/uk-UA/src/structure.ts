@@ -85,13 +85,17 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Ви переглядаєте тільки для читання документ, який був архівований як частина <VersionBadge>{{title}}</VersionBadge>. Його не можна редагувати',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'Не можна створити чернетку документа.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'Не можна створити опублікований документ.',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination':
+    'Виберіть призначення для цього документа:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    'Випуск <VersionBadge>{{title}}</VersionBadge> не активний.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Відновити найновішу версію',
   /** The text content for the deleted document banner */
@@ -106,13 +110,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     'Тип <strong>{{schemaType}}</strong> має <code>liveEdit</code> увімкнено, але існує чернетка цього документа. Опублікуйте або відхиліть чернетку, щоб продовжити редагування.',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': 'Порівняти чернетку',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': 'Відхилити чернетку',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': 'Опублікувати чернетку',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'Робочий простір не має включених чернеток, але існує чернеткова версія цього документа.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не має дозволів на створення цього документа.',
@@ -170,7 +175,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     'Цей документ буде знятий з публікації як частина <VersionBadge>{{title}}</VersionBadge> релізу',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    'Показується поточна <strong>опублікована</strong> версія:',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новий {{schemaType}}',
