@@ -5,27 +5,48 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Deaktivert',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Aktivert',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatiske oppdateringar',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Korleis aktivere',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Administrer versjon',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Kopiert til utklippstavla. Lukke til med liming!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til utklippstavla',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Gjeldande versjon',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Korleis oppgradere',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Siste versjon',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'Siste versjon er {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Ny versjon tilgjengeleg',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Ny versjon',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Last på nytt',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Last Studio på nytt for å oppdatere',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Ny versjon tilgjengeleg',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Førehandsutgåve',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Oppdatert',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Oppdatert',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Oppdater',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Lær korleis du oppdaterer Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Brukaragent',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Sjå på GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Lukk',
@@ -161,11 +182,14 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Noko gjekk gale med å finne Media Library for dette prosjektet.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Ingen mediebibliotek har blitt tilrettelagt for denne organisasjonen.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning': 'Vent medan vi førebur Media Library',
+  'asset-sources.media-library.select-dialog.title': 'Vel {{assetType}} for {{targetTitle}}',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Utgjevinga '<strong>{{title}}</strong>' har blitt sletta.",
@@ -527,6 +551,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Bli med i vårt fellesskap',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Siste versjon er {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Last på nytt for å oppdatere til v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versjon {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1206,9 +1232,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Opprett nytt dokument',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Last inn på nytt',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio blei oppdatert',
 
   /** Label for action to invite members to the current studio project */
@@ -1250,17 +1276,22 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version.failure': 'Klarte ikkje å forkaste versjon',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Utgjeving',
-  'release.action.new-release.limit-reached_other': undefined, // 'This workspace is limited to {{count}} releases'
+  'release.action.new-release.limit-reached_other':
+    'Denne arbeidsområdet er begrensa til {{count}} utgjevingar',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikkje løyve til å utføre denne handlinga',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Prøv igjen eller sjekk tilkoblinga di. Dokumentet vil framleis bli upublisert ved utgjeving.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Klarte ikkje å tilbakeføre frå å setje til upublisering ved utgjeving.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Du kan no redigere denne versjonen.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Vellykka tilbakeføring frå å setje til upublisering ved utgjeving.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Klarte ikkje å setje versjonen til å bli avpublisert på utgjeving',
@@ -1799,25 +1830,31 @@ export default removeUndefinedLocaleResources({
   'status-button.aria-label': 'Konfigurasjonsstatus',
 
   /* Time zone handling */
-  'time-zone.action.search-for-timezone-placeholder': undefined, // 'Search for a city or time zone'
+  'time-zone.action.search-for-timezone-placeholder': 'Søk etter ein by eller tidssone',
   /* Label for the local time zone button */
-  'time-zone.action.select-local-time-zone': undefined, // 'Select local time zone'
+  'time-zone.action.select-local-time-zone': 'Vel lokal tidssone',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.content-releases': undefined, // 'The selected time zone will change how dates are represented in content releases.'
+  'time-zone.dialog-info.content-releases':
+    'Den valde tidssonen vil endre korleis datoar blir representert i innhaldsutgjevingar.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.input': undefined, // 'The selected time zone will change how dates are represented only for this input in this document.'
+  'time-zone.dialog-info.input':
+    'Den valde tidssonen vil endre korleis datoar blir representert berre for dette inndatafeltet i dette dokumentet.',
   /* Dialog info for the time zone dialog */
-  'time-zone.dialog-info.scheduled-publishing': undefined, // 'The selected time zone will change how dates are represented in schedules.'
+  'time-zone.dialog-info.scheduled-publishing':
+    'Den valde tidssonen vil endre korleis datoar blir representert i planlagde publiseringar.',
   /* Label for the local time zone button */
-  'time-zone.local-time': undefined, // 'local time'
+  'time-zone.local-time': 'lokal tid',
   /* Label for the time zone button */
-  'time-zone.time-zone': undefined, // 'Time zone'
+  'time-zone.time-zone': 'Tidssone',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-content-releases': undefined, // 'Displaying releases in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-content-releases':
+    'Viser utgjevingar i {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-input': undefined, // 'Displaying <em>{{title}}</em> in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-input':
+    'Viser <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
   /* Tooltip content for the time zone dialog */
-  'time-zone.time-zone-tooltip-scheduled-publishing': undefined, // 'Displaying schedules in {{alternativeName}} GMT{{offset}}'
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Viser planlagde publiseringar i {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Endringar av',
