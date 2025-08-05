@@ -5,27 +5,49 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': '無効',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': '有効',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': '自動更新',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '有効にする方法',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'バージョンを管理',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'クリップボードにコピーしました。貼り付けをお楽しみください！',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'クリップボードにコピー',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': '現在のバージョン',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'アップグレード方法',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': '最新バージョン',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': '最新バージョンは {{latestVersion}} です',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': '新しいバージョンが利用可能です',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': '新しいバージョン',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'リロード',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update':
+    'アップデートするためにスタジオをリロードしてください',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': '新しいバージョンが利用可能です',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'プレリリース',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': '最新の状態です',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '最新の状態です',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'アップデート',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Sanity Studioをアップデートする方法を学ぶ',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ユーザーエージェント',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'GitHubで見る',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': '閉じる',
@@ -164,12 +186,14 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'このプロジェクトのメディアライブラリを解決しようとして何か問題が発生しました。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'この組織にはメディアライブラリが用意されていません。',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'メディアライブラリ',
   'asset-sources.media-library.image.title': 'メディアライブラリ',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'メディアライブラリの準備が整うまでお待ちください',
+  'asset-sources.media-library.select-dialog.title': '{{targetTitle}}の{{assetType}}を選択',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
@@ -530,6 +554,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '私たちのコミュニティに参加する',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '最新バージョンは {{latestVersion}}です',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'v{{newVersion}}にアップデートするためにリロード',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studioバージョン {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1213,9 +1239,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': '新しいドキュメントを作成',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'リロード',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studioが更新されました',
 
   /** Label for action to invite members to the current studio project */
@@ -1263,13 +1289,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'このアクションを実行する権限がありません',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'もう一度試すか、接続を確認してください。リリース時にドキュメントは未公開のままになります。',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'リリース時の未公開設定を元に戻すのに失敗しました。',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'このバージョンを編集できるようになりました。',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'リリース時の未公開設定を元に戻すことに成功しました。',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'リリースで未公開に設定するバージョンの設定に失敗しました',
