@@ -5,27 +5,49 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Deaktiviert',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Aktiviert',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Auto Updates',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Wie man aktiviert',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Version verwalten',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'In die Zwischenablage kopiert. Fröhliches Einfügen!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'In die Zwischenablage kopieren',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Aktuelle Version',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Wie man aktualisiert',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Neueste Version',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'Die neueste Version ist {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Neue Version verfügbar',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Neue Version',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Neu laden',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Studio neu laden, um zu aktualisieren',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Neue Version verfügbar',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Vorabversion',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Aktuell',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Aktuell',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Aktualisieren',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip':
+    'Erfahren Sie, wie Sie Sanity Studio aktualisieren können',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'User-Agent',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Auf GitHub ansehen',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Schließen',
@@ -169,6 +191,8 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medienbibliothek',
   'asset-sources.media-library.image.title': 'Medienbibliothek',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.select-dialog.title': '{{assetType}} für {{targetTitle}} auswählen',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Das Release '<strong>{{title}}</strong>' wurde gelöscht.",
@@ -535,6 +559,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Treten Sie unserer Community bei',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Die neueste Version ist {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Neu laden, um auf v{{newVersion}} zu aktualisieren',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio Version {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1218,9 +1244,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Neues Dokument erstellen',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Neu laden',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio wurde aktualisiert',
 
   /** Label for action to invite members to the current studio project */
