@@ -5,27 +5,48 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Dezactivat',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Activat',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Actualizări automate',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cum să activezi',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Gestionează versiunea',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Copiat! Acum puteți lipi cu încredere.',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copiază în clipboard',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versiunea curentă',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Cum să actualizezi',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Ultima versiune',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'Ultima versiune este {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Versiune nouă disponibilă',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Versiune nouă',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Reîncarcă',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Reîncarcă Studio pentru actualizare',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Versiune nouă disponibilă',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Pre-lansare',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'La zi',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'La zi',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Actualizează',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Află cum să actualizezi Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agent utilizator',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Vezi pe GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Închide',
@@ -156,12 +177,15 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Ceva a mers prost încercând să rezolve Media Library pentru acest proiect.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Nu a fost provisionată nicio bibliotecă media pentru această organizație.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca Media',
   'asset-sources.media-library.image.title': 'Biblioteca Media',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Vă rugăm să așteptați în timp ce pregătim Media Library',
+  'asset-sources.media-library.select-dialog.title':
+    'Selectarea {{assetType}} pentru {{targetTitle}}',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Lansarea '<strong>{{title}}</strong>' a fost ștearsă.",
@@ -517,6 +541,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Alăturați-vă comunității noastre',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Ultima versiune este {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Reîncarcă pentru a actualiza la v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versiunea Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1180,9 +1206,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Creează document nou',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Apasă pentru a reîncărca',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio este gata să se actualizeze!',
 
   /** Label for action to invite members to the current studio project */
@@ -1228,13 +1254,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nu ai permisiunea de a efectua această acțiune',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Vă rugăm să încercați din nou sau verificați conexiunea. Documentul va rămâne nepublicat la lansare.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Eșec la revenirea de la setarea de a nu publica la lansare.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Acum puteți edita această versiune.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Revenire cu succes de la setarea de a nu publica la lansare.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nu s-a reușit setarea versiunii ca fiind nepublicată la lansare',
