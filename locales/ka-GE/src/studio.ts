@@ -5,27 +5,48 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'გამორთულია',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'ჩართულია',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'ავტოგანახლებები',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'როგორ ჩართოთ',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'ვერსიის მართვა',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'დაკოპირდა ბუფერში. ბედნიერი ჩასმა!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'კოპირება ბუფერში',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'მიმდინარე ვერსია',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'როგორ განახლოთ',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'უახლესი ვერსია',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'უახლესი ვერსიაა {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'ახალი ვერსია მზადაა',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'ახალი ვერსია',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'გადატვირთვა',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'გადატვირთეთ Studio განახლებისთვის',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'ახალი ვერსია მზადაა',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'პრერელიზი',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'განახლებულია',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'განახლებულია',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'განახლება',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'გაიგეთ, როგორ განაახლოთ Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'მომხმარებლის აგენტი',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'ნახეთ GitHub-ზე',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'დახურვა',
@@ -161,12 +182,14 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'პროექტის მედია ბიბლიოთეკის განსაზღვრაში რაღაც შეცდომა მოხდა.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'ამ ორგანიზაციისთვის მედია ბიბლიოთეკა არ არის მზადებული.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'მედია ბიბლიოთეკა',
   'asset-sources.media-library.image.title': 'მედია ბიბლიოთეკა',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'გთხოვთ, დაელოდოთ თქვენი მედია ბიბლიოთეკის მომზადებას',
+  'asset-sources.media-library.select-dialog.title': 'არჩევა {{assetType}} {{targetTitle}}-ისთვის',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "რელიზი '<strong>{{title}}</strong>' წაშლილია.",
@@ -528,6 +551,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'შეუერთდით ჩვენს თემას',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'უახლესი ვერსიაა {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'გადატვირთეთ განახლებისთვის v{{newVersion}}-ზე',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio ვერსია {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1205,9 +1230,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'ახალი დოკუმენტის შექმნა',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'გადატვირთვა',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio განახლდა',
 
   /** Label for action to invite members to the current studio project */
@@ -1254,13 +1279,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'თქვენ არ გაქვთ ნებართვა ამ ქმედების შესრულებაზე',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'სცადეთ თავიდან ან შეამოწმეთ თქვენი კავშირი. დოკუმენტი კვლავ გამოქვეყნდება გამოშვებისას.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'ვერ მოხერხდა გაუქმება გამოშვებისას გამოქვეყნების დაყენება.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'ახლა შეგიძლიათ ამ ვერსიის რედაქტირება.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'წარმატებით გაუქმდა გამოშვებისას გამოქვეყნების დაყენება.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'ვერსიის გამოქვეყნების უარყოფის დაყენება ჩავარდა',
   /** Action message for when a version is set to be unpublished successfully */
