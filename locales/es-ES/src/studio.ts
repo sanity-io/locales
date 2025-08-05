@@ -5,27 +5,48 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Deshabilitado',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Habilitado',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Actualizaciones automáticas',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cómo habilitar',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Gestionar versión',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Copiado al portapapeles. ¡Feliz pegado!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copiar al portapapeles',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versión actual',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Cómo actualizar',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Última versión',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'La última versión es {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Nueva versión disponible',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Nueva versión',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Recargar',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Recargar Studio para actualizar',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Nueva versión disponible',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Pre-lanzamiento',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Actualizado',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Actualizado',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Actualizar',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Aprende cómo actualizar Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agente de usuario',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Ver en GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Cerrar',
@@ -165,12 +186,15 @@ export default removeUndefinedLocaleResources({
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Algo salió mal al intentar resolver la Biblioteca de Medios para este proyecto.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'No se ha provisto una biblioteca de medios para esta organización.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de medios',
   'asset-sources.media-library.image.title': 'Biblioteca de medios',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.info.provisioning':
-    'Por favor, espere mientras preparamos su Biblioteca de Medios',
+  'asset-sources.media-library.select-dialog.title':
+    'Seleccionando {{assetType}} para {{targetTitle}}',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -537,6 +561,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Únete a nuestra comunidad',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La última versión es {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Recargar para actualizar a v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versión de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1215,9 +1241,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Crear nuevo documento',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Recargar',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio se actualizó',
 
   /** Label for action to invite members to the current studio project */
@@ -1264,13 +1290,17 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tienes permiso para realizar esta acción',
   /** Error message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.description': undefined, // 'Please try again or check your connection. The document is still going to be unpublished upon release.'
+  'release.action.revert-unpublish-version.failure.description':
+    'Por favor, inténtalo de nuevo o verifica tu conexión. El documento seguirá sin publicarse al lanzar.',
   /** Error message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.failure.title': undefined, // 'Failed to revert from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.failure.title':
+    'Error al revertir la configuración para no publicar al lanzar.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description': undefined, // 'You can now edit this version.'
+  'release.action.revert-unpublish-version.success.description':
+    'Ahora puedes editar esta versión.',
   /** Action message title for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.title': undefined, // 'Successfully reverted from setting to unpublish on release.'
+  'release.action.revert-unpublish-version.success.title':
+    'Revertido con éxito la configuración para no publicar al lanzar.',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'No se pudo establecer la versión para que no se publique en el lanzamiento',
