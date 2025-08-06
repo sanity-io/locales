@@ -86,13 +86,17 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'アーカイブされた<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'ドラフトドキュメントを作成できません。',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    '公開ドキュメントを作成できません。',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination':
+    'このドキュメントの行き先を選択してください：',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge>リリースはアクティブではありません。',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '最新バージョンを復元',
   /** The text content for the deleted document banner */
@@ -107,13 +111,14 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     '<strong>{{schemaType}}</strong>のタイプは<code>liveEdit</code>が有効になっていますが、このドキュメントの下書きバージョンが存在します。ライブ編集を続けるためには、下書きを公開するか破棄してください。',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': 'ドラフトを比較する',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': 'ドラフトを破棄する',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': 'ドラフトを公開する',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'ワークスペースはドラフトを有効にしていませんが、このドキュメントのドラフトバージョンが存在します。',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
@@ -177,7 +182,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     'このドキュメントは<VersionBadge>{{title}}</VersionBadge>リリースの一部として非公開になります',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    '現在の<strong>公開</strong>バージョンを表示しています：',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新しい {{schemaType}}',
