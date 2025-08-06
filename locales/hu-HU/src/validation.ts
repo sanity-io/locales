@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Kép szükséges',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  'object.media-not-found': 'Az eszköz nem található a Média Könyvtárban',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
+  'object.not-media-library-asset': 'Egy Média Könyvtári eszközre kell hivatkoznia',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Dokumentumra való hivatkozásnak kell lennie',
   /** Object references a document which is not published */
@@ -67,7 +67,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Validálás',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': undefined, // 'Document is going to unpublish, no validation errors are shown'
+  'panel.unpublish-message':
+    'A dokumentum közzétételét visszavonják, nem jelennek meg érvényességi hibák',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'A slug-nak értékkel kell rendelkeznie',
