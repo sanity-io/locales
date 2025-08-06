@@ -79,13 +79,15 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     '您正在查看作為<VersionBadge>{{title}}</VersionBadge>一部分而存檔的唯讀文件。它無法被編輯',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': undefined, // 'Cannot create a draft document.'
+  'banners.choose-new-document-destination.cannot-create-draft-document': '無法創建草稿文檔。',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
-  'banners.choose-new-document-destination.cannot-create-published-document': undefined, // 'Cannot create a published document.'
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    '無法創建已發布的文檔。',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': undefined, // 'Choose a destination for this document:'
+  'banners.choose-new-document-destination.choose-destination': '選擇該文檔的目的地：',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
-  'banners.choose-new-document-destination.release-inactive': undefined, // 'The <VersionBadge>{{title}}</VersionBadge> release is not active.'
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge>版本未激活。',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '還原最新版本',
   /** The text content for the deleted document banner */
@@ -100,13 +102,13 @@ export default removeUndefinedLocaleResources({
   'banners.live-edit-draft-banner.text':
     '類型 <strong>{{schemaType}}</strong> 已啟用 <code>liveEdit</code>，但此文件的草稿版本存在。發布或放棄草稿以繼續即時編輯。',
   /** The label for the "compare draft" action */
-  'banners.obsolete-draft.actions.compare-draft.text': undefined, // 'Compare draft'
+  'banners.obsolete-draft.actions.compare-draft.text': '比較草稿',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': undefined, // 'Discard draft'
+  'banners.obsolete-draft.actions.discard-draft.text': '丟棄草稿',
   /** The label for the "publish draft" action */
-  'banners.obsolete-draft.actions.publish-draft.text': undefined, // 'Publish draft'
+  'banners.obsolete-draft.actions.publish-draft.text': '發布草稿',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': undefined, // 'The workspace does not have drafts enabled, but a draft version of this document exists.'
+  'banners.obsolete-draft.draft-model-inactive.text': '工作區未啟用草稿，但此文檔的草稿版本存在。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '你的角色是：<Roles/>，沒有創建此文件的權限。',
@@ -158,7 +160,8 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text':
     '此文件將作為<VersionBadge>{{title}}</VersionBadge>發布的一部分而取消發布',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
-  'banners.unpublished-release-banner.text-with-published': undefined, // 'Showing the current <strong>published</strong> version:'
+  'banners.unpublished-release-banner.text-with-published':
+    '顯示當前的<strong>已發布</strong>版本：',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新建 {{schemaType}}',
