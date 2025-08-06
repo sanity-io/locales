@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'სურათი საჭიროა',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': undefined, // 'The asset could not found in the Media Library'
+  'object.media-not-found': 'აქტივი ვერ მოიძებნა მედია ბიბლიოთეკაში',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': undefined, // 'Must be a reference to a Media Library asset'
+  'object.not-media-library-asset': 'უნდა იყოს მედია ბიბლიოთეკის აქტივის მიმართულება',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'უნდა იყოს დოკუმენტის მითითება',
   /** Object references a document which is not published */
@@ -67,7 +67,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'ვალიდაცია',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': undefined, // 'Document is going to unpublish, no validation errors are shown'
+  'panel.unpublish-message': 'დოკუმენტი განახლებული იქნება, ვალიდაციის შეცდომები არ ჩანს',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug-ის უნდა ჰქონდეს მნიშვნელობა',
