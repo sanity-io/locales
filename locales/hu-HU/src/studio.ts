@@ -5,27 +5,49 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Letiltva',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Engedélyezve',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatikus frissítések',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hogyan engedélyezhető',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Verzió kezelése',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Vágólapra másolva. Boldog beillesztést!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Másolás vágólapra',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Jelenlegi verzió',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Hogyan frissíthető',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Legújabb verzió',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'A legújabb verzió {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Új verzió elérhető',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Új verzió',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Újratöltés',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'A Studio újratöltése a frissítéshez',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Új verzió elérhető',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Előzetes kiadás',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Naprakész',
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Naprakész',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Frissítés',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip':
+    'Tudj meg többet a Sanity Studio frissítéséről',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Felhasználói ügynök',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Megtekintés a GitHubon',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Bezárás',
@@ -171,6 +193,9 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Média Könyvtár',
   'asset-sources.media-library.image.title': 'Média Könyvtár',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.select-dialog.title':
+    '{{assetType}} kiválasztása a(z) {{targetTitle}} számára',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "A(z) '<strong>{{title}}</strong>' kiadás törölve lett.",
@@ -531,6 +556,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Csatlakozás a közösségünkhöz',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'A legújabb verzió {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Újratöltés a v{{newVersion}} frissítéséhez',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio verzió {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1215,9 +1242,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Új dokumentum létrehozása',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Frissítéshez nyomd meg',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'A Sanity Studio készen áll a frissítésre!',
 
   /** Label for action to invite members to the current studio project */
