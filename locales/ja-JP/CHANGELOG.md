@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.25](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.24...locale-ja-jp-v1.1.25) (2025-08-14)
+
+
+### Bug Fixes
+
+* **ja-JP:** automated translation updates ([#1270](https://github.com/sanity-io/locales/issues/1270)) ([a57c554](https://github.com/sanity-io/locales/commit/a57c5542b53e7050d6f710c64aaf0408ae0a29d2))
+
 ## [1.1.24](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.23...locale-ja-jp-v1.1.24) (2025-07-22)
 
 

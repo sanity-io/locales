@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.3...locale-ca-es-v1.0.4) (2025-08-14)
+
+
+### Bug Fixes
+
+* **ca-ES:** automated translation updates ([#1262](https://github.com/sanity-io/locales/issues/1262)) ([7c56bde](https://github.com/sanity-io/locales/commit/7c56bde1bb9b6a21c761109722bd17b7fdc6514b))
+
 ## [1.0.3](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.2...locale-ca-es-v1.0.3) (2025-07-22)
 
 
