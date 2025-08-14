@@ -47,7 +47,7 @@
     "@sanity/vision": "^4.4.1",
     "@types/babel__generator": "^7.6.8",
     "@types/babel__traverse": "^7.20.7",
-    "@types/node": "^18.19.111",
+    "@types/node": "^18.19.122",
     "ansi-colors": "^4.1.3",
     "globby": "^14.0.2",
     "js-yaml": "^4.1.0",
