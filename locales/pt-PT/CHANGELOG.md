@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.22](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.1.21...locale-pt-pt-v1.1.22) (2025-08-14)
+
+
+### Bug Fixes
+
+* **pt-PT:** automated translation updates ([#1276](https://github.com/sanity-io/locales/issues/1276)) ([9f226a4](https://github.com/sanity-io/locales/commit/9f226a496a26525978a5d7863ce09fac25fdb141))
+
 ## [1.1.21](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.1.20...locale-pt-pt-v1.1.21) (2025-07-22)
 
 
