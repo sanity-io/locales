@@ -5,27 +5,48 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': '비활성화됨',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': '활성화됨',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': '자동 업데이트',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '활성화 방법',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     '클립보드에 복사됨. 붙여넣기를 즐기세요!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': '클립보드에 복사',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': '현재 버전',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '업그레이드 방법',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': '최신 버전',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': '최신 버전은 {{latestVersion}}입니다',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': undefined, // 'Reload'
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '최신 상태',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': '사용자 에이전트',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': '닫기',
@@ -168,6 +189,8 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '미디어 라이브러리',
   'asset-sources.media-library.image.title': '미디어 라이브러리',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' 릴리스가 삭제되었습니다.",
@@ -527,6 +550,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '우리 커뮤니티에 가입하세요',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '최신 버전은 {{latestVersion}}입니다',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity 스튜디오 버전 {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1203,9 +1228,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': '새 문서 만들기',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': '새로 고침',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio가 업데이트되었습니다',
 
   /** Label for action to invite members to the current studio project */
