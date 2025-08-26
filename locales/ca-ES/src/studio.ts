@@ -5,27 +5,48 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.disabled': 'Desactivat',
   /** "Enabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.enabled': 'Activat',
-  /** "Auto Updates" status header in About-dialog */
+  /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Actualitzacions Automàtiques',
-  /** "How to enable" next to Disabled state for Auto updates in about dialog */
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Com activar',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Copiat al porta-retalls. Feliç enganxada!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copiar al Porta-retalls',
-  /** "Current version" header in about dialog  */
+  /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versió actual',
-  /** "How to upgrade" link text */
+  /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Com actualitzar',
-  /** "Latest version" header in about dialog */
+  /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Última versió',
-  /** "Latest version" header in about dialog */
-  'about-dialog.version-info.latest-version.text': 'La última versió és {{latestVersion}}',
-  /** "Up to date" status in About-dialog */
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': undefined, // 'Reload'
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Actualitzat',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': "Agent d'usuari",
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Tancar',
@@ -171,6 +192,8 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
+  /** Info messages for the Media Library Asset Source  */
+  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -532,6 +555,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Uneix-te a la nostra comunitat',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La versió més recent és {{latestVersion}}',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versió de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1212,9 +1237,9 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Crear document nou',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Prem per recarregar',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio està llest per actualitzar-se!',
 
   /** Label for action to invite members to the current studio project */
