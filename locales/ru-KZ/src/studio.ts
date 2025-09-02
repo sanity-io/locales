@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Как включить',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Управление версией',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Скопировано в буфер обмена. Счастливого копирования!',
@@ -23,30 +23,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Последняя версия',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Доступна новая версия',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Новая версия',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Перезагрузить',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Перезагрузите Studio для обновления',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Доступна новая версия',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Предварительный выпуск',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Актуальная версия',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Актуально',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Обновить',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Узнайте, как обновить Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Пользовательский агент',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Посмотреть на GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Закрыть',
@@ -184,7 +184,7 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Медиатека',
   'asset-sources.media-library.image.title': 'Медиатека',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Выбор {{assetType}} для {{targetTitle}}',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
@@ -540,7 +540,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Последняя версия {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Перезагрузите для обновления до v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Версия Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
