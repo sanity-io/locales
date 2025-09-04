@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.25](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.24...locale-kn-in-v1.0.25) (2025-09-04)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
+
 ## [1.0.24](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.23...locale-kn-in-v1.0.24) (2025-08-14)
 
 
