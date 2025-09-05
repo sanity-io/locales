@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.19](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.18...locale-is-is-v1.2.19) (2025-09-04)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
+
 ## [1.2.18](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.17...locale-is-is-v1.2.18) (2025-07-22)
 
 
