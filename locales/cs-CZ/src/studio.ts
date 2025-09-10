@@ -192,6 +192,11 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'Mediální knihovna',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': 'Výběr {{assetType}} pro {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Použití stávajícího souboru nalezeného v knihovně.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Soubor: '{{filename}}' již existuje",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
