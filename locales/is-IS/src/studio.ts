@@ -191,6 +191,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'Fjölmiðlabókasafn',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
+  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Útgáfan '<strong>{{title}}</strong>' hefur verið eytt.",
