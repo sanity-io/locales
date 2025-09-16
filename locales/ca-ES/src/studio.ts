@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Com activar',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Gestiona la versió',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Copiat al porta-retalls. Feliç enganxada!',
@@ -23,30 +23,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Última versió',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Nova versió disponible',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Nova versió',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Recarrega',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': "Recarrega l'Estudi per actualitzar",
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Nova versió disponible',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Prellançament',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Actualitzat',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Actualitzat',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Actualitza',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Aprèn com actualitzar Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': "Agent d'usuari",
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Veure a GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Tancar',
@@ -193,7 +193,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title':
+    'Seleccionant {{assetType}} per a {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Utilitzant el fitxer existent trobat a la biblioteca.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Fitxer: '{{filename}}' ja existeix",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -556,7 +562,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La versió més recent és {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Recarrega per actualitzar a v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versió de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1275,16 +1281,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Copiar la versió a',
   /** Action message for creating new releases */
   'release.action.create-new': 'Nova versió',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Elimina el calendari',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Descartar versió',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': "No s'ha pogut descartar la versió",
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Edita el calendari',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nova Versió',
   'release.action.new-release.limit-reached_other':
     'Aquest espai de treball està limitat a {{count}} llançaments',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tens permís per realitzar aquesta acció',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publica ara',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Torneu-ho a intentar o comproveu la vostra connexió. El document encara es mantindrà sense publicar en el moment del llançament.',
@@ -1341,6 +1353,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Crear versió',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nova versió',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Estàs segur que vols eliminar aquest esborrany programat? Aquesta acció no es pot desfer.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Sí, elimina el calendari',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': "Elimina l'esborrany programat",
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Selecciona una nova data i hora per a la publicació programada.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Actualitza el calendari',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Canvia el calendari',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Estàs segur que vols publicar aquest esborrany programat immediatament?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Sí, executa ara',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': "Publica l'esborrany ara",
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     "El temps previst de llançament s'utilitza per crear millors previsualitzacions i indicacions sobre si els documents entren en conflicte.",
@@ -1352,6 +1385,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Descriu la versió…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Amagar versió',
+  /** Label for the release menu */
+  'release.menu.label': 'Menú de publicació',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Accions',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Esborranys',
   /** Label for published releases in navbar */
@@ -1360,18 +1397,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Versions',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Versió sense títol',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Programa aquesta publicació per a un moment i data futurs.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Programa el',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Aquesta versió ha estat desancorada',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "La versió '{{title}}' ha estat arxivada",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': "No s'ha pogut crear la release",
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    "No s'ha pogut eliminar el document d'esborrany programat <strong>{{title}}</strong>: {{error}}",
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    "El document d'esborrany programat <strong>{{title}}</strong> ha estat eliminat.",
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "No s'ha trobat la release '{{title}}'",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    "No s'ha pogut publicar el document d'esborrany programat <strong>{{title}}</strong>: {{error}}",
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    "El document d'esborrany programat <strong>{{title}}</strong> ha estat publicat.",
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Aquesta release ha estat desancorada',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "La release '{{title}}' ha estat publicada",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    "No s'ha pogut reprogramar el document d'esborrany programat <strong>{{title}}</strong>: {{error}}",
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    "El document d'esborrany programat <strong>{{title}}</strong> ha estat reprogramat.",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': "Ja s'ha afegit una versió d'aquest document",
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1385,6 +1445,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Indecís',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Veure totes les versions del document',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Programa',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Selecciona quan aquest document hauria de ser publicat.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': "Programa l'esborrany per a la Publicació",
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Obrir cerca',
