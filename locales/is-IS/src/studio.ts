@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hvernig á að virkja',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Stjórna útgáfu',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Afritað á klippiborð. Gleðilegt líming!',
@@ -23,30 +23,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Nýjasta útgáfa',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Ný útgáfa í boði',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Ný útgáfa',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Endurhlaða',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Endurhlaða Studio til að uppfæra',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Ný útgáfa í boði',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Forskoðunarútgáfa',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Uppfært',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Uppfært',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Uppfæra',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Lærðu hvernig á að uppfæra Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Notandaaðili',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Skoða á GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Loka',
@@ -190,7 +190,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Fjölmiðlabókasafn',
   'asset-sources.media-library.image.title': 'Fjölmiðlabókasafn',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Velja {{assetType}} fyrir {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Nota þegar til staðar skrá sem finnst í safninu.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Skrá: '{{filename}}' er þegar til",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Útgáfan '<strong>{{title}}</strong>' hefur verið eytt.",
@@ -554,7 +559,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Nýjasta útgáfan er {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Endurhlaða til að uppfæra í v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Útgáfa af Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1267,16 +1272,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Afrita útgáfu til',
   /** Action message for creating new releases */
   'release.action.create-new': 'Ný útgáfa',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Eyða áætlun',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Hafna útgáfu',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Mistókst að hafna útgáfu',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Breyta áætlun',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ný útgáfa',
   'release.action.new-release.limit-reached_other':
     'Þetta vinnusvæði er takmarkað við {{count}} útgáfur',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Þú hefur ekki leyfi til að framkvæma þessa aðgerð',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Birta núna',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Vinsamlegast reyndu aftur eða athugaðu tenginguna þína. Skjalið verður enn óbirt við útgáfu.',
@@ -1333,6 +1344,26 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Búa til útgáfu',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Ný útgáfa',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Ertu viss um að þú viljir eyða þessum áætlaða drögum? Þessi aðgerð er óafturkræf.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Já, eyða áætlun',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Eyða áætluðum drögum',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Veldu nýtt dagsetningu og tíma fyrir áætlaða birtingu.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Uppfæra áætlun',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Breyta áætlun',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Ertu viss um að þú viljir birta þessa áætluðu drög strax?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Já, keyra núna',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Birta drög núna',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Áætlaður útgáfutími er notaður til að búa til betri forskoðanir og vísbendingar um hvort skjöl rekist á.',
@@ -1344,6 +1375,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Lýstu útgáfunni…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Fela útgáfu',
+  /** Label for the release menu */
+  'release.menu.label': 'Útgáfumatseðill',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Aðgerðir',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Drög',
   /** Label for published releases in navbar */
@@ -1352,18 +1387,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Útgáfur',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Ónefnd útgáfa',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Áætlaðu þessa útgáfu fyrir framtíðar tíma og dagsetningu.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Áætlaðu á',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Þessi útgáfa hefur verið afnæld',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Útgáfunni '{{title}}' hefur verið safnað",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Mistókst að búa til útgáfu',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Mistókst að eyða áætluðu drögunum <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Áætluðu drögin <strong>{{title}}</strong> hafa verið eytt.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Ekki tókst að finna '{{title}}' útgáfuna",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Mistókst að birta áætluðu drögin <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Áætluðu drögin <strong>{{title}}</strong> hafa verið birt.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Þessi útgáfa hefur verið afnæld',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Útgáfan '{{title}}' var birt",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Mistókst að enduráætla áætluðu drögin <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Áætluðu drögin <strong>{{title}}</strong> hafa verið enduráætluð.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Útgáfa af þessu skjali hefur þegar verið bætt við',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1377,6 +1435,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Óákveðið',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Sjá allar útgáfur skjalsins',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Áætla',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Veldu hvenær þetta skjal ætti að vera birt.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Áætla drög til birtingar',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Opna leit',
