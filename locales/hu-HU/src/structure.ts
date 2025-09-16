@@ -86,6 +86,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Ön egy csak olvasható dokumentumot tekint meg, amely archiválásra került a <VersionBadge>{{title}}</VersionBadge> részeként. Nem szerkeszthető',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Ez az ütemezett vázlat archiválva van',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nem lehet vázlatdokumentumot létrehozni.',
@@ -183,6 +185,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Nem találjuk a kiválasztott dokumentum revízióját, kérjük, válasszon egy másik bejegyzést a történet listából.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Ennek a dokumentumnak a vázlata már ütemezett a közzétételre. Az itt végzett módosításokat felülírhatja az a verzió.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ez a dokumentum a <VersionBadge>{{title}}</VersionBadge> kiadás részeként lesz közzé nem téve',
