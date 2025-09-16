@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Nasıl etkinleştirilir',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Sürümü Yönet',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Panoya Kopyalandı. Mutlu yapıştırmalar!',
@@ -23,30 +23,31 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'En son sürüm',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Yeni sürüm mevcut',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Yeni sürüm',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Yeniden Yükle',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Güncellemek için Stüdyoyu yeniden yükle',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Yeni sürüm mevcut',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Ön sürüm',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Güncel',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Güncel',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Güncelle',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip':
+    "Sanity Studio'yu nasıl güncelleyeceğinizi öğrenin",
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Kullanıcı aracısı',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': "GitHub'da Görüntüle",
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Kapat',
@@ -190,7 +191,11 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Medya Kütüphanesi',
   'asset-sources.media-library.image.title': 'Medya Kütüphanesi',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': '{{assetType}} için {{targetTitle}} seçiliyor',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Kütüphanede bulunan mevcut dosya kullanılıyor.',
+  'asset-sources.media-library.warning.file-already-exist.title': "Dosya: '{{filename}}' zaten var",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' yayını silindi.",
@@ -554,7 +559,8 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'En son sürüm {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now':
+    'v{{newVersion}} sürümüne güncellemek için yeniden yükle',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio sürümü {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1271,16 +1277,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Sürümü kopyala',
   /** Action message for creating new releases */
   'release.action.create-new': 'Yeni yayın',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Programı Sil',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Sürümü at',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Sürüm atılamadı',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Programı Düzenle',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Yeni Yayın',
   'release.action.new-release.limit-reached_other':
     'Bu çalışma alanı en fazla {{count}} sürümle sınırlıdır',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Şimdi Yayınla',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Lütfen tekrar deneyin veya bağlantınızı kontrol edin. Belge, yayınlanmamış olarak kalmaya devam edecek.',
@@ -1337,6 +1349,26 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Sürüm oluştur',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Yeni sürüm',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Bu planlanmış taslağı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Evet, programı sil',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Planlanmış taslağı sil',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Planlanmış yayın için yeni bir tarih ve saat seçin.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Programı güncelle',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Programı değiştir',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Bu planlanmış taslağı hemen yayınlamak istediğinizden emin misiniz?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Evet, şimdi çalıştır',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Taslağı şimdi yayınla',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Planlanan sürüm zamanı, belgelerin çakışıp çakışmadığı hakkında daha iyi önizlemeler ve ipuçları oluşturmak için kullanılır.',
@@ -1348,6 +1380,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Sürümü tanımlayın…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Sürümü gizle',
+  /** Label for the release menu */
+  'release.menu.label': 'Yayın menüsü',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Eylemler',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Taslaklar',
   /** Label for published releases in navbar */
@@ -1356,18 +1392,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Sürümler',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Başlıksız sürüm',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Bu yayını gelecek bir zaman ve tarih için planlayın.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Şu tarihte planla',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' sürümü arşivlendi",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Sürüm oluşturma başarısız oldu',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Planlanmış taslak belgesi <strong>{{title}}</strong> silinemedi: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Planlanmış taslak belgesi <strong>{{title}}</strong> silindi.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' yayını bulunamadı",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Planlanmış taslak belgesi <strong>{{title}}</strong> yayınlanamadı: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Planlanmış taslak belgesi <strong>{{title}}</strong> yayınlandı.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "'{{title}}' sürümü yayınlandı",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Planlanmış taslak belgesi <strong>{{title}}</strong> yeniden planlanamadı: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Planlanmış taslak belgesi <strong>{{title}}</strong> yeniden planlandı.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1381,6 +1440,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Kararsız',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Tüm belge versiyonlarını gör',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Planla',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Bu belgenin ne zaman yayınlanacağını seçin.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Yayın için Taslağı Planla',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Aramayı aç',
