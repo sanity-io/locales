@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Prohlížíte dokument pouze pro čtení, který byl archivován jako součást <VersionBadge>{{title}}</VersionBadge>. Nelze ho upravit',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Tento naplánovaný koncept je archivován',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nelze vytvořit koncept dokumentu.',
@@ -180,6 +182,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Nemohli jsme najít vybranou revizi dokumentu, prosím vyberte jiný záznam ze seznamu historie.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Koncept tohoto dokumentu je již naplánován k publikování. Změny, které zde provedete, mohou být přepsány touto verzí.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tento dokument bude nepublikován jako součást vydání <VersionBadge>{{title}}</VersionBadge>',

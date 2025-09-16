@@ -192,6 +192,11 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'Mediální knihovna',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': 'Výběr {{assetType}} pro {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Použití existujícího souboru nalezeného v knihovně.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Soubor: '{{filename}}' již existuje",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
@@ -1270,16 +1275,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopírovat verzi do',
   /** Action message for creating new releases */
   'release.action.create-new': 'Nové vydání',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Smazat plán',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Zahodit verzi',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Nepodařilo se zahodit verzi',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Upravit plán',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nové vydání',
   'release.action.new-release.limit-reached_other':
     'Tento pracovní prostor je omezen na {{count}} vydání',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemáte oprávnění k provedení této akce',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publikovat nyní',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Zkuste to prosím znovu nebo zkontrolujte své připojení. Dokument bude stále nepublikován po vydání.',
@@ -1337,6 +1348,26 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Vytvořit vydání',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nové vydání',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Jste si jisti, že chcete smazat tento naplánovaný koncept? Tuto akci nelze vzít zpět.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Ano, smazat plán',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Smazat naplánovaný koncept',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Vyberte nové datum a čas pro naplánovanou publikaci.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Aktualizovat plán',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Změnit plán',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Jste si jisti, že chcete okamžitě publikovat tento naplánovaný koncept?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Ano, spustit nyní',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Publikovat koncept nyní',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Předpokládaný čas vydání se používá k vytvoření lepších náhledů a nápověd, zda dokumenty konfliktní.',
@@ -1348,6 +1379,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Popište vydání…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Skrýt vydání',
+  /** Label for the release menu */
+  'release.menu.label': 'Menu vydání',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Akce',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Koncepty',
   /** Label for published releases in navbar */
@@ -1356,18 +1391,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Vydání',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Nepojmenované vydání',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Naplánujte toto vydání na budoucí čas a datum.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Naplánovat na',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Toto vydání bylo odšpendleno',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Vydání '{{title}}' bylo archivováno",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Nepodařilo se vytvořit vydání',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Nepodařilo se smazat naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl smazán.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Vydání '{{title}}' nebylo nalezeno",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Nepodařilo se publikovat naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl publikován.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Toto vydání bylo odšpendleno',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Vydání '{{title}}' bylo publikováno",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nepodařilo se přeplánovat naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl přeplánován.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Verze tohoto dokumentu již byla přidána',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1381,6 +1439,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Nerozhodnuto',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Zobrazit všechny verze dokumentu',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Naplánovat',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Vyberte, kdy má být tento dokument publikován.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Naplánovat koncept k publikaci',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otevřít vyhledávání',
