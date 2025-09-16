@@ -10,7 +10,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cómo habilitar',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Gestionar versión',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Copiado al portapapeles. ¡Feliz pegado!',
@@ -23,30 +23,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Última versión',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Nueva versión disponible',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Nueva versión',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Recargar',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Recargar Studio para actualizar',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Nueva versión disponible',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Pre-lanzamiento',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Actualizado',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Actualizado',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Actualizar',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Aprende cómo actualizar Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agente de usuario',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Ver en GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Cerrar',
@@ -193,7 +193,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Biblioteca de medios',
   'asset-sources.media-library.image.title': 'Biblioteca de medios',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title':
+    'Seleccionando {{assetType}} para {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Usando el archivo existente encontrado en la biblioteca.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Archivo: '{{filename}}' ya existe",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
@@ -561,7 +567,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La última versión es {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Recargar para actualizar a v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versión de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1278,16 +1284,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Copiar versión a',
   /** Action message for creating new releases */
   'release.action.create-new': 'Nuevo lanzamiento',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Eliminar programación',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Descartar versión',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'No se pudo descartar la versión',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Editar programación',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nuevo Lanzamiento',
   'release.action.new-release.limit-reached_other':
     'Este espacio de trabajo está limitado a {{count}} lanzamientos',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tienes permiso para realizar esta acción',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publicar ahora',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Por favor, inténtelo de nuevo o verifique su conexión. El documento seguirá estando sin publicar al lanzarse.',
@@ -1344,6 +1356,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Crear versión',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nueva publicación',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    '¿Estás seguro de que quieres eliminar este borrador programado? Esta acción no se puede deshacer.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Sí, eliminar programación',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Eliminar borrador programado',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Selecciona una nueva fecha y hora para la publicación programada.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Actualizar programación',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Cambiar programación',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    '¿Estás seguro de que quieres publicar este borrador programado inmediatamente?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Sí, ejecutar ahora',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Publicar borrador ahora',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'El tiempo de lanzamiento previsto se utiliza para crear mejores vistas previas e indicaciones sobre si los documentos entran en conflicto.',
@@ -1355,6 +1388,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Describa la publicación…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Ocultar publicación',
+  /** Label for the release menu */
+  'release.menu.label': 'Menú de lanzamiento',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Acciones',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Borradores',
   /** Label for published releases in navbar */
@@ -1363,18 +1400,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Publicaciones',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Publicación sin título',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Programe este lanzamiento para una fecha y hora futuras.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Programar en',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Esta versión ha sido desanclada',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "La publicación '{{title}}' fue archivada",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Error al crear la publicación',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'No se pudo eliminar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'El documento de borrador programado <strong>{{title}}</strong> ha sido eliminado.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "No se pudo encontrar el lanzamiento '{{title}}'",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'No se pudo publicar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'El documento de borrador programado <strong>{{title}}</strong> ha sido publicado.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Esta versión ha sido desanclada',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "La versión '{{title}}' fue publicada",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'No se pudo reprogramar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'El documento de borrador programado <strong>{{title}}</strong> ha sido reprogramado.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Ya se ha añadido una versión de este documento',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1388,6 +1448,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Indeciso',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Ver todas las versiones del documento',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Programar',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Seleccione cuándo debe publicarse este documento.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Programar borrador para Publicar',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Abrir búsqueda',
