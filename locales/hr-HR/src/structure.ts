@@ -85,6 +85,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Pregledavate dokument samo za čitanje koji je arhiviran kao dio <VersionBadge> izdanja</VersionBadge>. Ne može se uređivati',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Ovaj zakazani nacrt je arhiviran',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nije moguće stvoriti dokument nacrta.',
@@ -182,6 +184,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Nismo mogli pronaći odabranu reviziju dokumenta, molimo odaberite drugi unos iz povijesne liste.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Nacrt ovog dokumenta je već zakazan za objavu. Promjene koje ovdje napravite mogu biti pregažene tom verzijom.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ovaj dokument će biti nepublikovan kao dio <VersionBadge>{{title}}</VersionBadge> izdanja',
