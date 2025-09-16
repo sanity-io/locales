@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     '您正在查看作為<VersionBadge>{{title}}</VersionBadge>一部分而存檔的唯讀文件。它無法被編輯',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': '此預定草稿已存檔',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document': '無法創建草稿文檔。',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
@@ -156,6 +158,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     '我們找不到所選的文檔修訂版本，請從歷史列表中選擇另一個條目。',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    '此文件的草稿已經預定要發布。您在此所做的更改可能會被該版本覆蓋。',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '此文件將作為<VersionBadge>{{title}}</VersionBadge>發布的一部分而取消發布',
