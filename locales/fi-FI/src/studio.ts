@@ -192,6 +192,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'Mediakirjasto',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
+  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
@@ -1269,16 +1272,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopioi versio kohteeseen',
   /** Action message for creating new releases */
   'release.action.create-new': 'Uusi julkaisu',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': undefined, // 'Delete schedule'
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Hylkää versio',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Version hylkääminen epäonnistui',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': undefined, // 'Edit schedule'
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Uusi julkaisu',
   'release.action.new-release.limit-reached_other':
     'Tämä työtila on rajoitettu {{count}} julkaisuun',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': undefined, // 'Publish now'
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Yritä uudelleen tai tarkista yhteytesi. Asiakirja tulee edelleen olemaan julkaisematta julkaisun yhteydessä.',
@@ -1334,6 +1343,24 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Luo julkaisu',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Luo julkaisu',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Tämän avulla on mahdollista näyttää, ovatko asiakirjat ristiriidassa työskenneltäessä useiden versioiden parissa.',
@@ -1346,6 +1373,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Kuvaile julkaisua…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Piilota julkaisu',
+  /** Label for the release menu */
+  'release.menu.label': undefined, // 'Release menu'
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': undefined, // 'Actions'
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Luonnokset',
   /** Label for published releases in navbar */
@@ -1354,18 +1385,34 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Julkaisut',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Nimeämätön julkaisu',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule this release for a future time and date.'
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' julkaisu on arkistoitu",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Julkaisun luonti epäonnistui',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' julkaisua ei löytynyt",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Julkaisu '{{title}}' on julkaistu",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1379,6 +1426,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Ei päätetty',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Näe kaikki dokumenttiversiot',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': undefined, // 'Schedule draft for Publish'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Avaa haku',

@@ -177,6 +177,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': '媒体库',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
+  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "发布 '<strong>{{title}}</strong>' 已被删除。",
@@ -1193,15 +1196,21 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': '复制版本到',
   /** Action message for creating new releases */
   'release.action.create-new': '新建发布',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': undefined, // 'Delete schedule'
   /** Action message for when document is already in release  */
   'release.action.discard-version': '丢弃版本',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': '丢弃版本失败',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': undefined, // 'Edit schedule'
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新发布',
   'release.action.new-release.limit-reached_other': '此工作区限制为 {{count}} 个发布',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您没有执行此操作的权限',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': undefined, // 'Publish now'
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     '请重试或检查您的连接。文档在发布时仍将保持未发布状态。',
@@ -1253,6 +1262,24 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': '创建版本',
   /** Title for creating releases dialog */
   'release.dialog.create.title': '创建发布',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description': '这使得在处理多个版本时能够显示文档是否存在冲突。',
   /** Label for noting that a release time is not final */
@@ -1263,6 +1290,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': '描述发布…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': '隐藏发布',
+  /** Label for the release menu */
+  'release.menu.label': undefined, // 'Release menu'
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': undefined, // 'Actions'
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': '草稿',
   /** Label for published releases in navbar */
@@ -1271,18 +1302,34 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': '发布',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': '无标题发布',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule this release for a future time and date.'
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': '此版本已取消固定',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' 发布已存档",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '创建发布失败',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "找不到 '{{title}}' 发布",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': '此版本已取消固定',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "'{{title}}' 版本已发布",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文档的一个版本已被添加',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1295,6 +1342,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': '未决定',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': '查看所有文档版本',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': undefined, // 'Schedule draft for Publish'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '打开搜索',
