@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     '아카이브된 <VersionBadge>릴리스</VersionBadge>의 일부로서 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     '초안 문서를 생성할 수 없습니다.',
@@ -169,6 +171,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     '선택한 문서 리비전을 찾을 수 없습니다. 기록 목록에서 다른 항목을 선택해 주세요.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text': undefined, // 'This document\'s draft is already scheduled for publish. Changes you make here may be overridden by that version.'
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '이 문서는 <VersionBadge>{{title}}</VersionBadge> 릴리스의 일부로 발행 취소될 예정입니다',

@@ -191,6 +191,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
+  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' ಬಿಡುಗಡೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ.",
@@ -1271,16 +1274,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'ಪ್ರತಿ ಆವೃತ್ತಿಯನ್ನು ನಕಲಿಸಿ',
   /** Action message for creating new releases */
   'release.action.create-new': 'ಹೊಸ ಬಿಡುಗಡೆ',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': undefined, // 'Delete schedule'
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಿ',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಲು ವಿಫಲವಾಗಿದೆ',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': undefined, // 'Edit schedule'
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
   'release.action.new-release.limit-reached_other':
     'ಈ ಕಾರ್ಯಾಲಯವು {{count}} ಬಿಡುಗಡೆಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': undefined, // 'Publish now'
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ. ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ದಾಖಲೆಯು ಇನ್ನೂ ಅಪ್ರಕಟಿತವಾಗಿರಲಿದೆ.',
@@ -1338,6 +1347,24 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'ಬಿಡುಗಡೆ ರಚಿಸಿ',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'ಬಿಡುಗಡೆ ರಚಿಸಿ',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'ಇದು ಹಲವು ಆವೃತ್ತಿಗಳಲ್ಲಿ ದಾಖಲೆಗಳು ಸಂಘರ್ಷದಲ್ಲಿವೆ ಎಂಬುದನ್ನು ತೋರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.',
@@ -1350,6 +1377,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'ರಿಲೀಸ್‌ನ ವಿವರಣೆ ಮಾಡಿ…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'ಬಿಡುಗಡೆಯನ್ನು ಮರೆಮಾಡಿ',
+  /** Label for the release menu */
+  'release.menu.label': undefined, // 'Release menu'
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': undefined, // 'Actions'
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ಡ್ರಾಫ್ಟ್‌ಗಳು',
   /** Label for published releases in navbar */
@@ -1358,18 +1389,34 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'ಬಿಡುಗಡೆಗಳು',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'ಶೀರ್ಷಿಕೆಯಿಲ್ಲದ ಬಿಡುಗಡೆ',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule this release for a future time and date.'
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ಬಿಡುಗಡೆಯನ್ನು ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಹುಡುಕಲಾಗಲಿಲ್ಲ",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "'{{title}}' ಬಿಡುಗಡೆ ಪ್ರಕಟಿಸಲಾಗಿದೆ",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ಈ ದಾಖಲೆಯ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1383,6 +1430,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'ನಿರ್ಧಾರಿಸದ',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'ಎಲ್ಲಾ ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ನೋಡಿ',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': undefined, // 'Schedule draft for Publish'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'ಹುಡುಕಾಟ ತೆರೆಯಿರಿ',
