@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': '構成の問題が検出されました',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    '自動更新が有効ですが、<code>sanity.cli.ts</code>に<code>deployment.appId</code>が設定されていません。このStudioは<strong>最新</strong>チャンネルに対して更新されています。',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'ドキュメントを見る',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': '無効',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '有効にする方法',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'バージョンを管理する',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'クリップボードにコピーしました。貼り付けをお楽しみください！',
@@ -23,30 +30,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': '最新バージョン',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': '新しいバージョンが利用可能です',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': '新しいバージョン',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'リロード',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': '更新するためにStudioをリロードする',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': '新しいバージョンが利用可能です',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'プレリリース',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': '最新の状態です',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '最新の状態です',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': '更新',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Sanity Studioを更新する方法を学ぶ',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ユーザーエージェント',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'GitHubで見る',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': '閉じる',
@@ -192,7 +199,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'メディアライブラリ',
   'asset-sources.media-library.image.title': 'メディアライブラリ',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': '{{targetTitle}}の{{assetType}}を選択',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'ライブラリにある既存のファイルを使用します。',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "ファイル: '{{filename}}' は既に存在します",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
@@ -554,7 +566,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '最新バージョンは {{latestVersion}}です',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'v{{newVersion}}に更新するためにリロードする',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studioバージョン {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1277,16 +1289,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'バージョンをコピーする',
   /** Action message for creating new releases */
   'release.action.create-new': '新しいリリース',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'スケジュールを削除する',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'バージョンを破棄',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'バージョンの破棄に失敗しました',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'スケジュールを編集する',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新規リリース',
   'release.action.new-release.limit-reached_other':
     'このワークスペースは{{count}}リリースに制限されています',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'このアクションを実行する権限がありません',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': '今すぐ公開する',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'もう一度試すか、接続を確認してください。リリース時にドキュメントはまだ非公開になります。',
@@ -1344,6 +1362,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'リリースを作成',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'リリースを作成',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'このスケジュールされたドラフトを削除してもよろしいですか？この操作は元に戻すことができません。',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'はい、スケジュールを削除します',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'スケジュールされたドラフトを削除する',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'スケジュールされた公開のために新しい日付と時間を選択してください。',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'スケジュールを更新',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'スケジュールの変更',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'このスケジュールされたドラフトをすぐに公開してもよろしいですか？',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'はい、今すぐ実行',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'ドラフトを今すぐ公開',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'これにより、複数のバージョンで作業しているときにドキュメントが競合しているかどうかを表示することができます。',
@@ -1356,6 +1395,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'リリースの説明を記入してください…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'リリースを非表示にする',
+  /** Label for the release menu */
+  'release.menu.label': 'リリースメニュー',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'アクション',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ドラフト',
   /** Label for published releases in navbar */
@@ -1364,18 +1407,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'リリース',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': '無題のリリース',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'このリリースを将来の時間と日付にスケジュールしてください。',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'スケジュールする日',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'このリリースはピン留めが解除されました',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' リリースはアーカイブされました",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'リリースの作成に失敗しました',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'スケジュールされたドラフト文書 <strong>{{title}}</strong> の削除に失敗しました：{{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'スケジュールされたドラフト文書 <strong>{{title}}</strong> が削除されました。',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' リリースが見つかりませんでした",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'スケジュールされたドラフト文書 <strong>{{title}}</strong> の公開に失敗しました：{{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'スケジュールされたドラフト文書 <strong>{{title}}</strong> が公開されました。',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'このリリースはピン留めが解除されました',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "'{{title}}' リリースが公開されました",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'スケジュールされたドラフト文書 <strong>{{title}}</strong> の再スケジュールに失敗しました：{{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'スケジュールされたドラフト文書 <strong>{{title}}</strong> の再スケジュールが完了しました。',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1389,6 +1455,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': '未定',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'すべてのドキュメントバージョンを見る',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'スケジュールする',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'この文書をいつ公開するか選択してください。',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': '公開のためのドラフトをスケジュールする',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '検索を開く',
@@ -2041,6 +2114,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': '別のワークスペースを選ぶ',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'ワークスペースを切り替える',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'ワークスペースを選ぶ',
   /** Label for the workspace menu */
