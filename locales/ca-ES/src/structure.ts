@@ -85,6 +85,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Aquesta versió del document pertany a la versió arxivada <VersionBadge>{{title}}</VersionBadge>',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Aquest esborrany programat està arxivat',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     "No es pot crear un document d'esborrany.",
@@ -183,6 +185,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     "No hem pogut trobar la revisió del document seleccionada, si us plau seleccioneu una altra entrada de la llista d'historial.",
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    "L'esborrany d'aquest document ja està programat per a ser publicat. Els canvis que facis aquí poden ser reemplaçats per aquella versió.",
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Aquest document serà despublicat com a part de la publicació <VersionBadge>{{title}}</VersionBadge>',
