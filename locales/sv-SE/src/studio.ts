@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Konfigurationsproblem upptäckt',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatiska uppdateringar är aktiverade, men ingen <code>deployment.appId</code> är konfigurerad i <code>sanity.cli.ts</code>. Denna Studio uppdaterar mot <strong>senaste</strong>-kanalen.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Visa dokumentation',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Inaktiverad',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hur man aktiverar',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Hantera version',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Kopierat till Urklipp. Glad att klistra in!',
@@ -23,30 +30,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Senaste versionen',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Ny version tillgänglig',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Ny version',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Ladda om',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Ladda om Studio för att uppdatera',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Ny version tillgänglig',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Förhandsversion',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Uppdaterad',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Uppdaterad',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Uppdatera',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Lär dig hur du uppdaterar Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Användaragent',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Visa på GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Stäng',
@@ -189,7 +196,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Väljer {{assetType}} för {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Använder den befintliga filen som hittades i biblioteket.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Filen: '{{filename}}' finns redan",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Releasen '<strong>{{title}}</strong>' har raderats.",
@@ -551,7 +563,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Senaste versionen är {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Ladda om för att uppdatera till v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio version {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1269,16 +1281,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopiera version till',
   /** Action message for creating new releases */
   'release.action.create-new': 'Ny release',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Ta bort schema',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Kassera version',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Misslyckades med att kassera version',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Redigera schema',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Release',
   'release.action.new-release.limit-reached_other':
     'Denna arbetsyta är begränsad till {{count}} utgåvor',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har inte behörighet att utföra denna åtgärd',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publicera nu',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Försök igen eller kontrollera din anslutning. Dokumentet kommer fortfarande att vara opublicerat vid publicering.',
@@ -1336,6 +1354,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Skapa release',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Skapa release',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Är du säker på att du vill ta bort detta schemalagda utkast? Denna åtgärd kan inte ångras.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Ja, ta bort schema',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Ta bort schemalagt utkast',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Välj ett nytt datum och tid för den schemalagda publiceringen.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Uppdatera schema',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Ändra schema',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Är du säker på att du vill publicera det schemalagda utkastet omedelbart?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Ja, kör nu',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Publicera utkast nu',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Detta gör det möjligt att visa om dokument är i konflikt när man arbetar med flera versioner.',
@@ -1348,6 +1387,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Beskriv releasen…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Dölj release',
+  /** Label for the release menu */
+  'release.menu.label': 'Meny för publicering',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Åtgärder',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Utkast',
   /** Label for published releases in navbar */
@@ -1356,18 +1399,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Releaser',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Namnlös release',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Schemalägg denna publicering för en framtida tid och datum.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Schemalägg på',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Denna release har blivit avpinnad',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Releasen '{{title}}' har arkiverats",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Misslyckades med att skapa release',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Misslyckades med att ta bort det schemalagda utkastdokumentet <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Det schemalagda utkastdokumentet <strong>{{title}}</strong> har tagits bort.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Releasen '{{title}}' kunde inte hittas",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Misslyckades med att publicera det schemalagda utkastdokumentet <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Det schemalagda utkastdokumentet <strong>{{title}}</strong> har publicerats.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Denna release har blivit avpinnad',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Releasen '{{title}}' har publicerats",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Misslyckades med att omschemalägga det schemalagda utkastdokumentet <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Det schemalagda utkastdokumentet <strong>{{title}}</strong> har omschemalagts.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'En version av detta dokument har redan lagts till',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1381,6 +1447,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Oavgjort',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Se alla dokumentversioner',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Schemalägg',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Välj när detta dokument ska publiceras.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Schemalägg utkast för publicering',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Öppna sökning',
@@ -2023,6 +2096,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Välj en annan arbetsyta',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Byt arbetsyta',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Välj din arbetsyta',
   /** Label for the workspace menu */
