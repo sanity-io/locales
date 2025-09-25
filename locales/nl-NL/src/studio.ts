@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Configuratieprobleem gedetecteerd',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatische updates zijn ingeschakeld, maar er is geen <code>deployment.appId</code> geconfigureerd in <code>sanity.cli.ts</code>. Deze Studio wordt bijgewerkt tegen het <strong>latest</strong>-kanaal.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Bekijk documentatie',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Uitgeschakeld',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hoe in te schakelen',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Beheer versie',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Gekopieerd naar klembord. Gelukkig plakken!',
@@ -23,30 +30,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Laatste versie',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Nieuwe versie beschikbaar',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Nieuwe versie',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Herladen',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Herlaad Studio om bij te werken',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Nieuwe versie beschikbaar',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Vooruitgave',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Up-to-date',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Up-to-date',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Bijwerken',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Leer hoe je Sanity Studio kunt bijwerken',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'User agent',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Bekijk op GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Sluiten',
@@ -191,7 +198,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Media Bibliotheek',
   'asset-sources.media-library.image.title': 'Media Bibliotheek',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title':
+    'Selecteren van {{assetType}} voor {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Gebruik het bestaande bestand dat in de bibliotheek is gevonden.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Bestand: '{{filename}}' bestaat al",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "De release '<strong>{{title}}</strong>' is verwijderd.",
@@ -557,7 +570,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'De nieuwste versie is {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Herlaad om bij te werken naar v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versie {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1281,16 +1294,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopieer versie naar',
   /** Action message for creating new releases */
   'release.action.create-new': 'Nieuwe release',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Verwijder schema',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Versie verwijderen',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Mislukt om versie te verwijderen',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Schema bewerken',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nieuwe Release',
   'release.action.new-release.limit-reached_other':
     'Deze werkruimte is beperkt tot {{count}} releases',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'U heeft geen toestemming om deze actie uit te voeren',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Nu publiceren',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Probeer het opnieuw of controleer uw verbinding. Het document zal nog steeds niet gepubliceerd worden bij vrijgave.',
@@ -1347,6 +1366,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Release aanmaken',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nieuwe release',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Weet u zeker dat u deze geplande concept wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Ja, verwijder schema',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Gepland concept verwijderen',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Selecteer een nieuwe datum en tijd voor de geplande publicatie.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Schema bijwerken',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Schema wijzigen',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Weet u zeker dat u deze geplande conceptversie onmiddellijk wilt publiceren?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Ja, nu uitvoeren',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Conceptversie nu publiceren',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'De beoogde uitgavetijd wordt gebruikt om betere previews te maken en aanwijzingen te geven of documenten conflicteren.',
@@ -1358,6 +1398,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Beschrijf de release…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Release verbergen',
+  /** Label for the release menu */
+  'release.menu.label': 'Release menu',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Acties',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Concepten',
   /** Label for published releases in navbar */
@@ -1366,18 +1410,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Releases',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Naamloze release',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Plan deze release voor een toekomstige tijd en datum.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Plannen op',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Deze release is losgemaakt',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "De '{{title}}' release is gearchiveerd",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Aanmaken van release mislukt',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> te verwijderen: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Het geplande conceptdocument <strong>{{title}}</strong> is verwijderd.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "De release '{{title}}' kon niet worden gevonden",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> onmiddellijk te publiceren: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Het geplande conceptdocument <strong>{{title}}</strong> is gepubliceerd.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Deze release is losgemaakt',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "De '{{title}}' release is gepubliceerd",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> opnieuw te plannen: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Het geplande conceptdocument <strong>{{title}}</strong> is opnieuw gepland.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Een versie van dit document is al toegevoegd',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1391,6 +1458,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Onbeslist',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Bekijk alle documentversies',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Plannen',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Selecteer wanneer dit document gepubliceerd moet worden.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Concept plannen voor publicatie',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Zoeken openen',
@@ -2036,6 +2110,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Kies een andere werkruimte',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Werkruimte wisselen',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Kies uw werkruimte',
   /** Label for the workspace menu */
