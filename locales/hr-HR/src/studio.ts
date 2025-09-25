@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Otkriven problem s konfiguracijom',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatska ažuriranja su omogućena, ali nije konfiguriran <code>deployment.appId</code> u <code>sanity.cli.ts</code>. Ovaj Studio se ažurira protiv <strong>najnovijeg</strong> kanala.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Pogledaj dokumentaciju',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Onemogućeno',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Kako omogućiti',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Upravljaj verzijom',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Kopirano u međuspremnik. Sretno lijepljenje!',
@@ -23,30 +30,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Najnovija verzija',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Dostupna je nova verzija',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Nova verzija',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Ponovno učitaj',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Ponovno učitaj Studio za ažuriranje',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Dostupna je nova verzija',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Pretpust',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Ažurirano',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Ažurno',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Ažuriraj',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Saznaj kako ažurirati Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Korisnički agent',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Pogledaj na GitHubu',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Zatvori',
@@ -191,7 +198,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Medijska knjižnica',
   'asset-sources.media-library.image.title': 'Medijska knjižnica',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Odabir {{assetType}} za {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Koristi se postojeća datoteka pronađena u knjižnici.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Datoteka: '{{filename}}' već postoji",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",
@@ -554,7 +566,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Najnovija verzija je {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Ponovno učitaj za ažuriranje na v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verzija Sanity Studija {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1271,16 +1283,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopiraj verziju u',
   /** Action message for creating new releases */
   'release.action.create-new': 'Novo izdanje',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Izbriši raspored',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Odbaci verziju',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Nije uspjelo odbacivanje verzije',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Uredi raspored',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Novo Izdanje',
   'release.action.new-release.limit-reached_other':
     'Ovaj radni prostor je ograničen na {{count}} izdanja',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Objavi odmah',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Molimo pokušajte ponovno ili provjerite svoju vezu. Dokument će i dalje biti nepobjavljen pri objavi.',
@@ -1338,6 +1356,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Kreiraj izdanje',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Stvori izdanje',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Jeste li sigurni da želite izbrisati ovaj raspoređeni nacrt? Ova se radnja ne može poništiti.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Da, izbriši raspored',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Izbriši raspoređeni nacrt',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Odaberite novi datum i vrijeme za raspoređeno objavljivanje.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Ažuriraj raspored',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Promijeni raspored',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Jeste li sigurni da želite odmah objaviti ovaj raspoređeni nacrt?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Da, pokreni sada',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Objavi nacrt odmah',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'To omogućuje prikazivanje postojanja sukoba u dokumentima prilikom rada na više verzija.',
@@ -1350,6 +1389,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Opišite izdanje…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Sakrij izdanje',
+  /** Label for the release menu */
+  'release.menu.label': 'Izbornik izdanja',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Akcije',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Nacrti',
   /** Label for published releases in navbar */
@@ -1358,18 +1401,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Izdanja',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Izdanje bez naslova',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Zakažite ovo izdanje za buduće vrijeme i datum.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Zakaži na',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Ovo izdanje je odspojeno',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Izdanje '{{title}}' je arhivirano",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Neuspješno stvaranje izdanja',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Nije uspjelo brisanje dokumenta raspoređenog nacrta <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Dokument raspoređenog nacrta <strong>{{title}}</strong> je izbrisan.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Izdanje '{{title}}' nije moguće pronaći",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Nije uspjelo objavljivanje dokumenta raspoređenog nacrta <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Dokument raspoređenog nacrta <strong>{{title}}</strong> je objavljen.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Ovo izdanje je odspojeno',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Izdanje '{{title}}' je objavljeno",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nije uspjelo preusmjeravanje dokumenta raspoređenog nacrta <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Dokument raspoređenog nacrta <strong>{{title}}</strong> je preusmjeren.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Verzija ovog dokumenta je već dodana',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1382,6 +1448,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Neodlučeno',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Pogledajte sve verzije dokumenta',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Zakaži',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Odaberite kada bi ovaj dokument trebao biti objavljen.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Zakaži nacrt za objavu',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otvori pretragu',
@@ -2028,6 +2101,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Odaberite drugi radni prostor',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Promijeni radni prostor',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Odaberite svoj radni prostor',
   /** Label for the workspace menu */
