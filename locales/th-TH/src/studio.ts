@@ -1,6 +1,12 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': undefined, // 'Configuration issue detected'
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid': undefined, // 'Auto updates is enabled, but no <code>deployment.appId</code> configured in <code>sanity.cli.ts</code>. This Studio is updating against the <strong>latest</strong>-channel.'
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': undefined, // 'View documentation'
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'ปิดการใช้งาน',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -181,6 +187,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'ห้องสมุดสื่อ',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
+  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "การปล่อย '<strong>{{title}}</strong>' ถูกลบแล้ว",
@@ -1215,15 +1224,21 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'คัดลอกเวอร์ชันไปยัง',
   /** Action message for creating new releases */
   'release.action.create-new': 'การปล่อยใหม่',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': undefined, // 'Delete schedule'
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'ทิ้งเวอร์ชัน',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ไม่สามารถทิ้งเวอร์ชันได้',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': undefined, // 'Edit schedule'
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'การปล่อยใหม่',
   'release.action.new-release.limit-reached_other': 'พื้นที่ทำงานนี้จำกัดไว้ที่ {{count}} รีลีส',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'คุณไม่มีสิทธิ์ในการดำเนินการนี้',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': undefined, // 'Publish now'
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'โปรดลองอีกครั้งหรือตรวจสอบการเชื่อมต่อของคุณ ข้อมูลจะยังคงไม่ได้รับการเผยแพร่เมื่อเผยแพร่',
@@ -1279,6 +1294,24 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'สร้างรีลีส',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'สร้างการปล่อย',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'สิ่งนี้ทำให้สามารถแสดงว่าเอกสารมีความขัดแย้งกันเมื่อทำงานกับหลายเวอร์ชัน',
@@ -1291,6 +1324,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'อธิบายเกี่ยวกับการเผยแพร่…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'ซ่อนการปล่อย',
+  /** Label for the release menu */
+  'release.menu.label': undefined, // 'Release menu'
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': undefined, // 'Actions'
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ฉบับร่าง',
   /** Label for published releases in navbar */
@@ -1299,18 +1336,34 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'การปล่อย',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'การปล่อยที่ไม่มีชื่อ',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule this release for a future time and date.'
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "การปล่อย '{{title}}' ได้ถูกเก็บถาวร",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ไม่สามารถสร้างการปล่อยได้',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "ไม่พบการปล่อย '{{title}}'",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "รีลีส '{{title}}' ได้ถูกเผยแพร่",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1324,6 +1377,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'ยังไม่ตัดสินใจ',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'ดูเวอร์ชันเอกสารทั้งหมด',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': undefined, // 'Schedule draft for Publish'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'เปิดการค้นหา',
@@ -1921,6 +1981,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'เลือกพื้นที่ทำงานอื่น',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': undefined, // 'Switch workspace'
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'เลือกพื้นที่ทำงานของคุณ',
   /** Label for the workspace menu */

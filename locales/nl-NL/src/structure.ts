@@ -86,6 +86,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'U bekijkt een alleen-lezen document dat werd gearchiveerd als onderdeel van <VersionBadge>{{title}}</VersionBadge>. Het kan niet bewerkt worden',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Kan geen conceptdocument maken.',
@@ -183,6 +185,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'We konden de geselecteerde documentrevisie niet vinden, selecteer een andere invoer uit de geschiedenislijst.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text': undefined, // 'This document\'s draft is already scheduled for publish. Changes you make here may be overridden by that version.'
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dit document zal niet gepubliceerd worden als onderdeel van de <VersionBadge>{{title}}</VersionBadge> release',
