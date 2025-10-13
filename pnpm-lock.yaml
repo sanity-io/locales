@@ -214,8 +214,8 @@ importers:
         specifier: workspace:*
         version: link:../../locales/zh-Hant
       '@sanity/ui':
-        specifier: ^2.16.19
-        version: 2.16.19(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.0)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+        specifier: ^2.16.21
+        version: 2.16.21(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.0)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@sanity/vision':
         specifier: ^4.10.2
         version: 4.10.2(@babel/runtime@7.28.2)(@codemirror/lint@6.8.1)(@codemirror/theme-one-dark@6.1.2)(@emotion/is-prop-valid@1.2.2)(codemirror@6.0.1)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.0)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -3792,8 +3792,8 @@ packages:
     peerDependencies:
       '@types/react': 18 || 19
 
-  '@sanity/ui@2.16.19':
-    resolution: {integrity: sha512-2jke3rKsz2YoGEK6OaY5B5t8K3RE7Nv1kTqWQuAnj/bN2gnUdkMZOxPE4J6QvDVL8Vf2aDygJ4Cbk3F3BSnsuQ==}
+  '@sanity/ui@2.16.21':
+    resolution: {integrity: sha512-aslV3Uwjt4UDEuJv2kwsZQfBEUvxQ7kfoZN4Odz9PeiDqAhty+5X235L6DTVltM7RZ/LAv0czt0wVUwa/lgmHg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^18 || >=19.0.0-0
@@ -5528,6 +5528,20 @@ packages:
       react-dom:
         optional: true
 
+  framer-motion@12.23.24:
+    resolution: {integrity: sha512-HMi5HRoRCTou+3fb3h9oTLyJGBxHfW+HnNE25tAXOvVx/IvwMHK0cx7IR4a2ZU6sh3IX1Z+4ts32PcYBOqka8w==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   from2@2.3.0:
     resolution: {integrity: sha512-OMcX/4IC/uqEPVgGeyfN22LJk6AZrMkRZHxcHBMBvHScDGgwTm2GT2Wkgtocyd3JfZffjj2kYUDXXII0Fk9W0g==}
 
@@ -6579,6 +6593,9 @@ packages:
   motion-dom@12.23.21:
     resolution: {integrity: sha512-5xDXx/AbhrfgsQmSE7YESMn4Dpo6x5/DTZ4Iyy4xqDvVHWvFVoV+V2Ri2S/ksx+D40wrZ7gPYiMWshkdoqNgNQ==}
 
+  motion-dom@12.23.23:
+    resolution: {integrity: sha512-n5yolOs0TQQBRUFImrRfs/+6X4p3Q4n1dUEqt/H58Vx7OW6RF+foWEgmTVDhIWJIMXOuNNL0apKH2S16en9eiA==}
+
   motion-dom@12.23.9:
     resolution: {integrity: sha512-6Sv++iWS8XMFCgU1qwKj9l4xuC47Hp4+2jvPfyTXkqDg2tTzSgX6nWKD4kNFXk0k7llO59LZTPuJigza4A2K1A==}
 
@@ -7125,6 +7142,11 @@ packages:
     resolution: {integrity: sha512-gce9m0Pk/xYYMEojRI9bgvqQAkl6hm7ozQvqWPyQx+kULiatdHgkNM1QG4DQRx5N9BAzWSCJmt9mMV8/KsdgVg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+
+  react-compiler-runtime@1.0.0:
+    resolution: {integrity: sha512-rRfjYv66HlG8896yPUDONgKzG5BxZD1nV9U6rkm+7VCuvQc903C4MjcoZR4zPw53IKSOX9wMQVpA1IAbRtzQ7w==}
+    peerDependencies:
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0 || ^0.0.0-experimental
 
   react-compiler-runtime@19.1.0-rc.1:
     resolution: {integrity: sha512-wCt6g+cRh8g32QT18/9blfQHywGjYu+4FlEc3CW1mx3pPxYzZZl1y+VtqxRgnKKBCFLIGUYxog4j4rs5YS86hw==}
@@ -11632,7 +11654,7 @@ snapshots:
     dependencies:
       '@portabletext/sanity-bridge': 1.1.12(@sanity/schema@4.10.2(@types/react@19.1.6))(@sanity/types@4.10.2(@types/react@19.1.6))
       '@portabletext/schema': 1.2.0
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       '@types/react': 19.1.6
       get-random-values-esm: 1.0.2
       lodash: 4.17.21
@@ -11674,7 +11696,7 @@ snapshots:
       '@portabletext/schema': 1.2.0
       '@portabletext/to-html': 3.0.0
       '@sanity/schema': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       '@xstate/react': 6.0.0(@types/react@19.1.6)(react@19.1.0)(xstate@5.22.0)
       debug: 4.4.3(supports-color@8.1.1)
       get-random-values-esm: 1.0.2
@@ -11721,7 +11743,7 @@ snapshots:
     dependencies:
       '@portabletext/schema': 1.2.0
       '@sanity/schema': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       get-random-values-esm: 1.0.2
       lodash.startcase: 4.4.0
 
@@ -12334,7 +12356,7 @@ snapshots:
     dependencies:
       '@sanity/icons': 3.7.4(react@19.1.0)
       '@sanity/types': 3.93.0(@types/react@19.1.6)(debug@4.4.1)
-      '@sanity/ui': 2.16.19(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@sanity/ui': 2.16.21(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       lodash: 4.17.21
       react: 19.1.0
       react-compiler-runtime: 19.1.0-rc.2(react@19.1.0)
@@ -12347,7 +12369,7 @@ snapshots:
   '@sanity/insert-menu@2.0.2(@emotion/is-prop-valid@1.2.2)(@sanity/types@4.10.2(@types/react@19.1.6))(react-dom@19.1.0(react@19.1.0))(react-is@19.1.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       '@sanity/icons': 3.7.4(react@19.1.0)
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       '@sanity/ui': 3.1.6(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       lodash: 4.17.21
       react: 19.1.0
@@ -12679,7 +12701,7 @@ snapshots:
     dependencies:
       '@sanity/descriptors': 1.1.1
       '@sanity/generate-help-url': 3.0.0
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       arrify: 2.0.1
       groq-js: 1.19.0
       humanize-list: 1.0.1
@@ -12783,7 +12805,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@sanity/types@4.10.2(@types/react@19.1.6)':
+  '@sanity/types@4.10.2(@types/react@19.1.6)(debug@4.4.3)':
     dependencies:
       '@sanity/client': 7.11.2(debug@4.4.1)
       '@sanity/media-library-types': 1.0.1
@@ -12791,24 +12813,16 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@sanity/types@4.10.2(@types/react@19.1.6)(debug@4.4.3)':
-    dependencies:
-      '@sanity/client': 7.11.2(debug@4.4.3)
-      '@sanity/media-library-types': 1.0.1
-      '@types/react': 19.1.6
-    transitivePeerDependencies:
-      - debug
-
-  '@sanity/ui@2.16.19(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
+  '@sanity/ui@2.16.21(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       '@floating-ui/react-dom': 2.1.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@juggle/resize-observer': 3.4.0
       '@sanity/color': 3.0.6
       '@sanity/icons': 3.7.4(react@19.1.0)
       csstype: 3.1.3
-      framer-motion: 12.23.22(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      framer-motion: 12.23.24(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
-      react-compiler-runtime: 19.1.0-rc.3(react@19.1.0)
+      react-compiler-runtime: 1.0.0(react@19.1.0)
       react-dom: 19.1.0(react@19.1.0)
       react-is: 18.3.1
       react-refractor: 2.2.0(react@19.1.0)
@@ -12817,16 +12831,16 @@ snapshots:
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
 
-  '@sanity/ui@2.16.19(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.0)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
+  '@sanity/ui@2.16.21(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.0)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       '@floating-ui/react-dom': 2.1.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@juggle/resize-observer': 3.4.0
       '@sanity/color': 3.0.6
       '@sanity/icons': 3.7.4(react@19.1.0)
       csstype: 3.1.3
-      framer-motion: 12.23.22(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      framer-motion: 12.23.24(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
-      react-compiler-runtime: 19.1.0-rc.3(react@19.1.0)
+      react-compiler-runtime: 1.0.0(react@19.1.0)
       react-dom: 19.1.0(react@19.1.0)
       react-is: 19.1.0
       react-refractor: 2.2.0(react@19.1.0)
@@ -13014,13 +13028,13 @@ snapshots:
     dependencies:
       '@sanity/client': 7.11.2(debug@4.4.1)
     optionalDependencies:
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
 
   '@sanity/visual-editing-types@1.1.6(@sanity/client@7.11.2(debug@4.4.3))(@sanity/types@4.10.2(@types/react@19.1.6))':
     dependencies:
       '@sanity/client': 7.11.2(debug@4.4.3)
     optionalDependencies:
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
 
   '@sentry-internal/browser-utils@8.42.0':
     dependencies:
@@ -15030,6 +15044,16 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
+  framer-motion@12.23.24(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      motion-dom: 12.23.23
+      motion-utils: 12.23.6
+      tslib: 2.8.1
+    optionalDependencies:
+      '@emotion/is-prop-valid': 1.2.2
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
   from2@2.3.0:
     dependencies:
       inherits: 2.0.4
@@ -16171,6 +16195,10 @@ snapshots:
     dependencies:
       motion-utils: 12.23.6
 
+  motion-dom@12.23.23:
+    dependencies:
+      motion-utils: 12.23.6
+
   motion-dom@12.23.9:
     dependencies:
       motion-utils: 12.23.6
@@ -16693,6 +16721,10 @@ snapshots:
       '@babel/runtime': 7.28.2
       react: 19.1.0
 
+  react-compiler-runtime@1.0.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+
   react-compiler-runtime@19.1.0-rc.1(react@19.1.0):
     dependencies:
       react: 19.1.0
@@ -17155,7 +17187,7 @@ snapshots:
       '@sanity/sdk': 0.0.0-alpha.25(@types/react@19.1.6)(debug@4.4.1)(immer@10.1.3)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
       '@sanity/telemetry': 0.8.1(react@19.1.0)
       '@sanity/types': 3.93.0(@types/react@19.1.6)(debug@4.4.1)
-      '@sanity/ui': 2.16.19(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@sanity/ui': 2.16.21(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@sanity/util': 3.93.0(@types/react@19.1.6)(debug@4.4.1)
       '@sanity/uuid': 3.0.2
       '@sentry/react': 8.42.0(react@19.1.0)
@@ -17319,7 +17351,7 @@ snapshots:
       '@sanity/sdk': 0.0.0-alpha.25(@types/react@19.1.6)(debug@4.4.1)(immer@10.1.3)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
       '@sanity/telemetry': 0.8.1(react@19.1.0)
       '@sanity/types': 3.93.0(@types/react@19.1.6)(debug@4.4.1)
-      '@sanity/ui': 2.16.19(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@sanity/ui': 2.16.21(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@18.3.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@sanity/util': 3.93.0(@types/react@19.1.6)(debug@4.4.1)
       '@sanity/uuid': 3.0.2
       '@sentry/react': 8.42.0(react@19.1.0)
@@ -17485,7 +17517,7 @@ snapshots:
       '@sanity/schema': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       '@sanity/sdk': 2.1.2(@types/react@19.1.6)(debug@4.4.3)(immer@10.1.3)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
       '@sanity/telemetry': 0.8.1(react@19.1.0)
-      '@sanity/types': 4.10.2(@types/react@19.1.6)
+      '@sanity/types': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       '@sanity/ui': 3.1.6(@emotion/is-prop-valid@1.2.2)(react-dom@19.1.0(react@19.1.0))(react-is@19.1.1)(react@19.1.0)(styled-components@6.1.18(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@sanity/util': 4.10.2(@types/react@19.1.6)(debug@4.4.3)
       '@sanity/uuid': 3.0.2
