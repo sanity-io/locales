@@ -85,6 +85,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Przeglądasz dokument tylko do odczytu, który został zarchiwizowany jako część <VersionBadge>{{title}}</VersionBadge>. Nie można go edytować',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Ten zaplanowany szkic jest zarchiwizowany',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nie można utworzyć dokumentu roboczego.',
@@ -172,6 +174,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Nie udało się znaleźć wybranej wersji dokumentu, proszę wybrać inny wpis z listy historii.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Szkic tego dokumentu jest już zaplanowany do publikacji. Zmiany, które tutaj wprowadzisz, mogą zostać nadpisane przez tę wersję.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ten dokument zostanie wycofany jako część wydania <VersionBadge>{{title}}</VersionBadge>',
@@ -604,4 +609,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Rozwiń',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Nie znaleziono wydania z id "{{releaseId}}"',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Zmiany w tekście',
 })

@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Wykryto problem z konfiguracją',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatyczne aktualizacje są włączone, ale nie skonfigurowano <code>deployment.appId</code> w <code>sanity.cli.ts</code>. To Studio aktualizuje się w kanale <strong>latest</strong>.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Zobacz dokumentację',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Wyłączone',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Jak włączyć',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Zarządzaj wersją',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Skopiowane do schowka. Miłego wklejania!',
@@ -23,30 +30,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Najnowsza wersja',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Dostępna nowa wersja',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Nowa wersja',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Przeładuj',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Przeładuj Studio, aby zaktualizować',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Dostępna nowa wersja',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Przedpremiera',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Aktualne',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Aktualne',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Aktualizuj',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Dowiedz się, jak zaktualizować Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agent użytkownika',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Zobacz na GitHubie',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Zamknij',
@@ -182,7 +189,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Biblioteka Mediów',
   'asset-sources.media-library.image.title': 'Biblioteka Mediów',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Wybieranie {{assetType}} dla {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Używanie istniejącego pliku znalezionego w bibliotece.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Plik: '{{filename}}' już istnieje",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Wydanie '<strong>{{title}}</strong>' zostało usunięte.",
@@ -538,7 +550,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Najnowsza wersja to {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Przeładuj, aby zaktualizować do wersji v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Wersja Sanity Studio to {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1234,14 +1246,20 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopiuj wersję do',
   /** Action message for creating new releases */
   'release.action.create-new': 'Nowe wydanie',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Usuń harmonogram',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Odrzuć wersję',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Nie udało się odrzucić wersji',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Edytuj harmonogram',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nowe Wydanie',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nie masz uprawnień do wykonania tej akcji',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Opublikuj teraz',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Spróbuj ponownie lub sprawdź swoje połączenie. Dokument nadal będzie nieopublikowany po wydaniu.',
@@ -1298,6 +1316,26 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Utwórz wydanie',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nowe wydanie',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Czy na pewno chcesz usunąć ten zaplanowany szkic? Tej akcji nie można cofnąć.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Tak, usuń harmonogram',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Usuń zaplanowany szkic',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Wybierz nową datę i godzinę dla zaplanowanej publikacji.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Zaktualizuj harmonogram',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Zmień harmonogram',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Czy na pewno chcesz opublikować ten zaplanowany szkic natychmiast?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Tak, uruchom teraz',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Opublikuj szkic teraz',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Przewidywany czas wydania jest używany do tworzenia lepszych podglądów i wskazówek, czy dokumenty są sprzeczne.',
@@ -1309,6 +1347,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Opisz wydanie…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Ukryj wydanie',
+  /** Label for the release menu */
+  'release.menu.label': 'Menu wydania',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Akcje',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Szkice',
   /** Label for published releases in navbar */
@@ -1317,18 +1359,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Wydania',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Wydanie bez tytułu',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Zaplanuj to wydanie na przyszłą datę i godzinę.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Zaplanuj na',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'To wydanie zostało odpięte',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Wydanie '{{title}}' zostało zarchiwizowane",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Nie udało się utworzyć wydania',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Nie udało się usunąć zaplanowanego dokumentu szkicu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Zaplanowany dokument szkicu <strong>{{title}}</strong> został usunięty.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Nie można znaleźć wydania '{{title}}'",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Nie udało się opublikować zaplanowanego dokumentu szkicu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Zaplanowany dokument szkicu <strong>{{title}}</strong> został opublikowany.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'To wydanie zostało odpięte',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Wydanie '{{title}}' zostało opublikowane",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nie udało się zmienić harmonogramu zaplanowanego dokumentu szkicu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Harmonogram zaplanowanego dokumentu szkicu <strong>{{title}}</strong> został zmieniony.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Wersja tego dokumentu została już dodana',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1342,6 +1407,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Nieokreślony',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Zobacz wszystkie wersje dokumentu',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Zaplanuj',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Wybierz, kiedy ten dokument ma zostać opublikowany.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Zaplanuj szkic do publikacji',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otwórz wyszukiwanie',
@@ -1974,6 +2046,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Wybierz inną przestrzeń roboczą',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Zmień przestrzeń roboczą',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Wybierz swoją przestrzeń roboczą',
   /** Label for the workspace menu */
