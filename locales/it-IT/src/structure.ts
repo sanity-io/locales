@@ -86,6 +86,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Stai visualizzando un documento in sola lettura che è stato archiviato come parte di <VersionBadge>{{title}}</VersionBadge>. Non può essere modificato',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Questa bozza programmata è archiviata',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Impossibile creare un documento bozza.',
@@ -184,6 +186,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     "Non siamo riusciti a trovare la revisione del documento selezionata, si prega di selezionare un'altra voce dall'elenco della cronologia.",
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'La bozza di questo documento è già programmata per la pubblicazione. Le modifiche che apporti qui potrebbero essere sovrascritte da quella versione.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Questo documento sarà ritirato come parte della release <VersionBadge>{{title}}</VersionBadge>',
@@ -632,4 +637,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Espandi',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Release con id "{{releaseId}}" non trovata',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Modifiche in linea',
 })
