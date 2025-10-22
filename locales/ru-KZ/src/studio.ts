@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Обнаружена проблема конфигурации',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Автоматическое обновление включено, но в <code>sanity.cli.ts</code> не настроен <code>deployment.appId</code>. Эта Студия обновляется по каналу <strong>latest</strong>.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Посмотреть документацию',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Отключено',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Как включить',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Управление версией',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Скопировано в буфер обмена. Счастливого копирования!',
@@ -23,30 +30,30 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Последняя версия',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Доступна новая версия',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Новая версия',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Перезагрузить',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Перезагрузите Студию для обновления',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Доступна новая версия',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Предварительный выпуск',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Актуальная версия',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Актуально',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Обновить',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Узнайте, как обновить Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Пользовательский агент',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Посмотреть на GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Закрыть',
@@ -184,7 +191,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Медиатека',
   'asset-sources.media-library.image.title': 'Медиатека',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Выбор {{assetType}} для {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Использование существующего файла, найденного в библиотеке.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Файл: '{{filename}}' уже существует",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
@@ -540,7 +552,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Последняя версия {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Перезагрузите, чтобы обновить до v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Версия Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1241,14 +1253,20 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Копировать версию в',
   /** Action message for creating new releases */
   'release.action.create-new': 'Новый релиз',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Удалить расписание',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Отменить версию',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Не удалось отменить версию',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Изменить расписание',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Новый релиз',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас нет разрешения на выполнение этого действия',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Опубликовать сейчас',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Пожалуйста, попробуйте еще раз или проверьте ваше соединение. Документ все еще будет неопубликованным при выпуске.',
@@ -1306,6 +1324,27 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Создать релиз',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Новый релиз',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Вы уверены, что хотите удалить этот запланированный черновик? Это действие не может быть отменено.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Да, удалить расписание',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Удалить запланированный черновик',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Выберите новую дату и время для запланированной публикации.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Обновить расписание',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Изменить расписание',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Вы уверены, что хотите немедленно опубликовать этот запланированный черновик?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Да, выполнить сейчас',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Опубликовать черновик сейчас',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Предполагаемое время релиза используется для создания лучших предварительных просмотров и подсказок о возможных конфликтах документов.',
@@ -1317,6 +1356,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Опишите релиз…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Скрыть релиз',
+  /** Label for the release menu */
+  'release.menu.label': 'Меню выпуска',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Действия',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Черновики',
   /** Label for published releases in navbar */
@@ -1325,18 +1368,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Релизы',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Релиз без названия',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Запланируйте этот выпуск на будущее время и дату.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Запланировать на',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Этот релиз был откреплен',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Релиз '{{title}}' был архивирован",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Не удалось создать релиз',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Не удалось удалить документ запланированного черновика <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Документ запланированного черновика <strong>{{title}}</strong> был удален.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Релиз '{{title}}' не был найден",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Не удалось опубликовать документ запланированного черновика <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Документ запланированного черновика <strong>{{title}}</strong> был опубликован.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Этот релиз был откреплен',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Релиз '{{title}}' был опубликован",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Не удалось перенести документ запланированного черновика <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Документ запланированного черновика <strong>{{title}}</strong> был перепланирован.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1350,6 +1416,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Не решено',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Посмотреть все версии документа',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Запланировать',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Выберите, когда этот документ должен быть опубликован.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Запланировать черновик для публикации',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Открыть поиск',
@@ -1984,6 +2057,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Выбрать другое рабочее пространство',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Переключить рабочее пространство',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Выберите ваше рабочее пространство',
   /** Label for the workspace menu */
