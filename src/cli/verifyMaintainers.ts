@@ -25,8 +25,8 @@ function getGitHubToken(): string | undefined {
 /**
  * Create headers for GitHub API request
  */
-function createHeaders(): HeadersInit {
-  const headers: HeadersInit = {
+function createHeaders() {
+  const headers: Record<string, string> = {
     Accept: 'application/vnd.github.v3+json',
     'User-Agent': 'sanity-locales-maintainer-verifier',
   }
@@ -52,9 +52,9 @@ function parseRateLimitInfo(headers: Headers): RateLimitInfo | null {
   }
 
   return {
-    limit: parseInt(limit),
-    remaining: parseInt(remaining),
-    reset: new Date(parseInt(reset) * 1000),
+    limit: parseInt(limit, 10),
+    remaining: parseInt(remaining, 10),
+    reset: new Date(parseInt(reset, 10) * 1000),
   }
 }
 
@@ -67,7 +67,9 @@ async function waitForRateLimit(resetTime: Date): Promise<void> {
 
   if (waitMs > 0) {
     const waitSeconds = Math.ceil(waitMs / 1000)
-    process.stdout.write(`\r\x1b[K Rate limit reached. Waiting ${waitSeconds}s until ${resetTime.toLocaleTimeString()}...`)
+    process.stdout.write(
+      `\r\x1b[K Rate limit reached. Waiting ${waitSeconds}s until ${resetTime.toLocaleTimeString()}...`,
+    )
 
     // Wait with periodic updates
     const startTime = Date.now()
@@ -128,7 +130,7 @@ async function checkGitHubUsername(username: string): Promise<{exists: boolean; 
       if (rateLimitRemaining === '0') {
         const resetTime = response.headers.get('X-RateLimit-Reset')
         if (resetTime) {
-          const resetDate = new Date(parseInt(resetTime) * 1000)
+          const resetDate = new Date(parseInt(resetTime, 10) * 1000)
           await waitForRateLimit(resetDate)
           // Retry after waiting
           return checkGitHubUsername(username)
@@ -155,10 +157,7 @@ async function checkGitHubUsername(username: string): Promise<{exists: boolean; 
 /**
  * Collects all unique usernames from the registry
  */
-function collectUsernames(): Map<
-  string,
-  Array<{id: string; role: 'maintainer' | 'contributor'}>
-> {
+function collectUsernames(): Map<string, Array<{id: string; role: 'maintainer' | 'contributor'}>> {
   const usernamesMap = new Map<string, Array<{id: string; role: 'maintainer' | 'contributor'}>>()
 
   for (const locale of registry) {
@@ -220,9 +219,9 @@ async function verifyMaintainers() {
     process.stdout.write(`\r\x1b[K Progress: ${completed}/${totalUsernames}${rateLimitStr}`)
   }
 
-  console.log('\n\n' + '='.repeat(80))
+  console.log(`\n\n${'='.repeat(80)}`)
   console.log('VERIFICATION RESULTS')
-  console.log('='.repeat(80) + '\n')
+  console.log(`${'='.repeat(80)}\n`)
 
   // Separate valid and invalid results
   const validUsernames = results.filter((r) => r.exists)
@@ -259,9 +258,9 @@ async function verifyMaintainers() {
     console.log(`  @${result.username} - ${localeCount} locale(s): ${rolesSummary}${moreText}`)
   }
 
-  console.log('\n' + '='.repeat(80))
+  console.log(`\n${'='.repeat(80)}`)
   console.log('SUMMARY')
-  console.log('='.repeat(80) + '\n')
+  console.log(`${'='.repeat(80)}\n`)
   console.log(`Total unique usernames: ${totalUsernames}`)
   console.log(`Valid: ${validUsernames.length}`)
   console.log(`Invalid: ${invalidUsernames.length}`)
