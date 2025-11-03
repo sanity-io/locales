@@ -30,8 +30,9 @@ const weekInfo = {
 
   /**
    * An integer between 1 and 7 indicating the minimal days required in the first week of a month or year, for calendar purposes.
+   * @deprecated
    */
-  minimalDays: weekDaySchema,
+  minimalDays: z.number().optional(),
 }
 
 /**
