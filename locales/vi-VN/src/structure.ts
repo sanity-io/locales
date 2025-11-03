@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Bạn đang xem một tài liệu chỉ đọc đã được lưu trữ như một phần của <VersionBadge> một bản phát hành</VersionBadge>. Nó không thể được chỉnh sửa',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Bản nháp đã lên lịch này đã được lưu trữ',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Không thể tạo tài liệu nháp.',
@@ -170,6 +172,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Chúng tôi không thể tìm thấy phiên bản tài liệu đã chọn, vui lòng chọn một mục khác từ danh sách lịch sử.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Một bản nháp đã lên lịch cho tài liệu này tồn tại. Nếu bạn xuất bản thay đổi ngay bây giờ, chúng sẽ bị ghi đè khi lịch trình được thực hiện.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tài liệu này sẽ được gỡ xuất bản như một phần của bản phát hành <VersionBadge>{{title}}</VersionBadge>',
@@ -599,4 +604,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Mở rộng',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Không tìm thấy phiên bản với id "{{releaseId}}"',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Thay đổi nội tuyến',
 })
