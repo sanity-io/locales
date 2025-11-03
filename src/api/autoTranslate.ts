@@ -12,6 +12,7 @@ import {getOrderedResources} from '../util/getOrderedResources'
 import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
 import {getLocaleRegistry} from './registry'
+import {mergePR} from './gitActions'
 
 const execFile = promisify(execFileCb)
 
@@ -375,9 +376,7 @@ export async function pushChanges(options: {allLocales: boolean}): Promise<void>
 
       if (!hasMaintainers) {
         // Automatically merge PRs that are missing maintainers - there's no one to review
-        await execFile('gh', ['pr', 'merge', branchName, '--squash', '--delete-branch'], {
-          cwd: rootPath,
-        })
+        await mergePR(branchName)
       }
     }
 
