@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Havaittu konfiguraatio-ongelma',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automaattiset päivitykset ovat käytössä, mutta <code>deployment.appId</code> ei ole määritetty <code>sanity.cli.ts</code>-tiedostossa. Tämä Studio päivittyy <strong>latest</strong>-kanavaa vasten.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Näytä dokumentaatio',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Pois käytöstä',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Kuinka ottaa käyttöön',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Hallitse versiota',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Kopioitu leikepöydälle. Iloista liittämistä!',
@@ -23,30 +30,32 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Uusin versio',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Uusi versio saatavilla',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Uusi versio',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Lataa uudelleen',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Lataa Studio uudelleen päivittääksesi',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Kehitys',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Uusi versio saatavilla',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Esijulkaisu',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Ajan tasalla',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Ajan tasalla',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Päivitä',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Opi kuinka päivittää Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Käyttäjäagentti',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Näytä GitHubissa',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Sulje',
@@ -191,7 +200,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Mediakirjasto',
   'asset-sources.media-library.image.title': 'Mediakirjasto',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title':
+    'Valitse {{assetType}} kohteelle {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Käytetään olemassa olevaa tiedostoa kirjastosta.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Tiedosto: '{{filename}}' on jo olemassa",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
@@ -552,7 +567,8 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Uusin versio on {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now':
+    'Lataa uudelleen päivittääksesi versioon v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1269,16 +1285,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopioi versio kohteeseen',
   /** Action message for creating new releases */
   'release.action.create-new': 'Uusi julkaisu',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Poista aikataulu',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Hylkää versio',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Version hylkääminen epäonnistui',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Muokkaa aikataulua',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Uusi julkaisu',
   'release.action.new-release.limit-reached_other':
     'Tämä työtila on rajoitettu {{count}} julkaisuun',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Julkaise nyt',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Yritä uudelleen tai tarkista yhteytesi. Asiakirja tulee edelleen olemaan julkaisematta julkaisun yhteydessä.',
@@ -1297,6 +1319,8 @@ export default removeUndefinedLocaleResources({
     'Onnistuneesti asetettu <strong>{{title}}</strong> julkaisemattomaksi julkaisussa',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Näytä julkaisu',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Näytä aikataulutetut luonnokset',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Ajastettu julkaistavaksi {{date}}',
   /** Label for Draft chip in document header */
@@ -1334,6 +1358,26 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Luo julkaisu',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Luo julkaisu',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Oletko varma, että haluat poistaa tämän aikataulutetun luonnoksen? Tätä toimintoa ei voi peruuttaa.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Kyllä, poista aikataulu',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Poista ajoitettu luonnos',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Valitse uusi päivämäärä ja aika ajoitetulle julkaisulle.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Päivitä aikataulu',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Muuta aikataulua',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Oletko varma, että haluat julkaista tämän ajoitetun luonnoksen välittömästi?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Kyllä, suorita nyt',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Julkaise luonnos nyt',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Tämän avulla on mahdollista näyttää, ovatko asiakirjat ristiriidassa työskenneltäessä useiden versioiden parissa.',
@@ -1346,6 +1390,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Kuvaile julkaisua…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Piilota julkaisu',
+  /** Label for the release menu */
+  'release.menu.label': 'Julkaisuvalikko',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Toiminnot',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Luonnokset',
   /** Label for published releases in navbar */
@@ -1354,18 +1402,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Julkaisut',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Nimeämätön julkaisu',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Ajoita tämä julkaisu tulevaisuuden ajankohtaan.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Ajoita',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' julkaisu on arkistoitu",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Julkaisun luonti epäonnistui',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> poistaminen epäonnistui: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on poistettu.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' julkaisua ei löytynyt",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> julkaiseminen epäonnistui: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on julkaistu.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Julkaisu '{{title}}' on julkaistu",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> uudelleen ajoittaminen epäonnistui: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on uudelleen ajoitettu.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1379,6 +1450,16 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Ei päätetty',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Näe kaikki dokumenttiversiot',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Aikatauluta',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Valitse, milloin tämä dokumentti tulisi julkaista.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Aikatauluta luonnos julkaisua varten',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Ajoitettu julkaisu',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Avaa haku',
@@ -2022,6 +2103,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Valitse toinen työtila',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Vaihda työtilaa',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Valitse työtilasi',
   /** Label for the workspace menu */

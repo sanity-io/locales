@@ -86,6 +86,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Katsot vain luku -dokumenttia, joka arkistoitiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Tämä aikataulutettu luonnos on arkistoitu',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Luonnosdokumenttia ei voi luoda.',
@@ -182,6 +184,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Emme löytäneet valittua dokumentin versiota, valitse toinen merkintä historialistasta.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Tälle asiakirjalle on olemassa aikataulutettu luonnos. Jos julkaiset muutoksia nyt, ne korvataan, kun aikataulu suoritetaan.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tämä dokumentti poistetaan julkaisemattomana osana <VersionBadge>{{title}}</VersionBadge> julkaisua',
@@ -629,4 +634,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Laajenna',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Julkaisua tunnuksella "{{releaseId}}" ei löydy',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Sisäiset muutokset',
 })
