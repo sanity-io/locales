@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': '구성 문제가 감지되었습니다',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    '자동 업데이트가 활성화되어 있지만 <code>sanity.cli.ts</code>에 <code>deployment.appId</code>가 구성되어 있지 않습니다. 이 스튜디오는 <strong>최신</strong>-채널에 대해 업데이트됩니다.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': '문서 보기',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': '비활성화됨',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': '활성화 방법',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': '버전 관리',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     '클립보드에 복사됨. 붙여넣기를 즐기세요!',
@@ -23,30 +30,32 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': '최신 버전',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': '새 버전 사용 가능',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': '새 버전',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': '재로드',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': '업데이트하려면 스튜디오를 재로드하세요',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': '개발',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': '새 버전 사용 가능',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': '사전 출시',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': '최신 상태',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': '최신 상태',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': '업데이트',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Sanity 스튜디오를 업데이트하는 방법 알아보기',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': '사용자 에이전트',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'GitHub에서 보기',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': '닫기',
@@ -190,7 +199,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': '미디어 라이브러리',
   'asset-sources.media-library.image.title': '미디어 라이브러리',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': '{{targetTitle}}에 대한 {{assetType}} 선택',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    '라이브러리에서 찾은 기존 파일을 사용합니다.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "파일: '{{filename}}'이(가) 이미 존재합니다",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' 릴리스가 삭제되었습니다.",
@@ -551,7 +565,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '최신 버전은 {{latestVersion}}입니다',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'v{{newVersion}}로 업데이트하기 위해 재로드',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity 스튜디오 버전 {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1267,16 +1281,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': '버전을 복사하기',
   /** Action message for creating new releases */
   'release.action.create-new': '새 릴리스',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': '일정 삭제',
   /** Action message for when document is already in release  */
   'release.action.discard-version': '버전 버리기',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': '버전 버리기에 실패했습니다',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': '일정 편집',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '새 릴리스',
   'release.action.new-release.limit-reached_other':
     '이 작업 공간은 {{count}}개의 릴리스로 제한됩니다',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '이 작업을 수행할 권한이 없습니다',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': '지금 게시',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     '다시 시도하거나 연결을 확인해 주세요. 문서는 여전히 출시 시 비공개로 설정됩니다.',
@@ -1296,6 +1316,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{title}}</strong>을(를) 릴리스에서 비공개로 성공적으로 설정했습니다',
   /** Action message for when the view release is pressed */
   'release.action.view-release': '릴리스 보기',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': '예약된 초안 보기',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
   /** Label for Draft chip in document header */
@@ -1333,6 +1355,25 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': '릴리스 생성',
   /** Title for creating releases dialog */
   'release.dialog.create.title': '릴리스 생성',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    '예약된 초안을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': '예, 일정 삭제',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': '예약된 초안 삭제',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': '예약된 게시를 위한 새로운 날짜와 시간을 선택하세요.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': '일정 업데이트',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': '일정 변경',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': '예약된 초안을 즉시 게시하시겠습니까?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': '네, 지금 실행',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': '초안 지금 게시',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     '이를 통해 여러 버전에서 작업할 때 문서가 충돌하는지 여부를 표시할 수 있습니다.',
@@ -1345,6 +1386,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': '릴리스를 설명하세요…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': '릴리스 숨기기',
+  /** Label for the release menu */
+  'release.menu.label': '릴리스 메뉴',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': '작업',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': '초안',
   /** Label for published releases in navbar */
@@ -1353,18 +1398,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': '릴리스',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': '제목 없는 릴리스',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    '이 릴리스를 미래의 시간과 날짜로 예약하세요.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': '예약 날짜',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': '이 릴리스는 고정 해제되었습니다',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' 릴리스가 보관되었습니다",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '릴리스 생성 실패',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong> 삭제에 실패했습니다: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    '예약된 초안 문서 <strong>{{title}}</strong>가 삭제되었습니다.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' 릴리스를 찾을 수 없습니다",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong> 게시에 실패했습니다: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    '예약된 초안 문서 <strong>{{title}}</strong>가 게시되었습니다.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': '이 릴리스는 고정 해제되었습니다',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "'{{title}}' 릴리스가 게시되었습니다",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong>의 일정 변경에 실패했습니다: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    '예약된 초안 문서 <strong>{{title}}</strong>의 일정이 변경되었습니다.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '이 문서의 버전이 이미 추가되었습니다',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1377,6 +1445,16 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': '미정',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': '모든 문서 버전 보기',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': '예약',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': '이 문서를 언제 게시할지 선택하세요.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': '게시를 위한 초안 일정 예약',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': '예약된 게시',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '검색 열기',
@@ -2031,6 +2109,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': '다른 워크스페이스 선택',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': '작업 공간 전환',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': '워크스페이스를 선택하세요',
   /** Label for the workspace menu */
