@@ -83,6 +83,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่ถูกเก็บถาวรเป็นส่วนหนึ่งของ <VersionBadge>การปล่อย</VersionBadge> ไม่สามารถแก้ไขได้',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'แบบร่างที่กำหนดไว้นี้ถูกเก็บถาวร',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'ไม่สามารถสร้างเอกสารร่างได้',
@@ -167,6 +169,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'เราไม่พบการแก้ไขเอกสารที่เลือก กรุณาเลือกอีกครั้งจากรายการประวัติ',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'มีแบบร่างที่กำหนดไว้สำหรับเอกสารนี้ หากคุณเผยแพร่การเปลี่ยนแปลงตอนนี้ การเปลี่ยนแปลงเหล่านั้นจะถูกเขียนทับเมื่อตารางเวลาทำงาน',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'เอกสารนี้จะไม่ได้รับการเผยแพร่เป็นส่วนหนึ่งของการปล่อย <VersionBadge>{{title}}</VersionBadge>',
@@ -587,4 +592,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'ขยาย',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'ไม่พบการเผยแพร่ที่มีรหัส "{{releaseId}}"',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'การเปลี่ยนแปลงแบบอินไลน์',
 })
