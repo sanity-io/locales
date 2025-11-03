@@ -1,6 +1,13 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Phát hiện vấn đề cấu hình',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Tự động cập nhật được bật, nhưng không có <code>deployment.appId</code> được cấu hình trong <code>sanity.cli.ts</code>. Studio này đang cập nhật dựa trên kênh <strong>mới nhất</strong>.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Xem tài liệu',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Vô hiệu hóa',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -10,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cách kích hoạt',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Quản lý phiên bản',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Đã sao chép vào Clipboard. Chúc bạn dán vui vẻ!',
@@ -23,30 +30,32 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Phiên bản mới nhất',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Phiên bản mới có sẵn',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Phiên bản mới',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Tải lại',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Tải lại Studio để cập nhật',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Phát triển',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Phiên bản mới có sẵn',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Phiên bản trước',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Cập nhật',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Đã cập nhật',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Cập nhật',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Tìm hiểu cách cập nhật Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'User agent',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Xem trên GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Đóng',
@@ -183,7 +192,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Thư viện Media',
   'asset-sources.media-library.image.title': 'Thư viện Media',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title': 'Chọn {{assetType}} cho {{targetTitle}}',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Sử dụng tệp tin đã có trong thư viện.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Tệp tin: '{{filename}}' đã tồn tại",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Phiên bản '<strong>{{title}}</strong>' đã bị xóa.",
@@ -530,7 +544,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Phiên bản mới nhất là {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Tải lại để cập nhật lên v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Phiên bản Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1223,16 +1237,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Sao chép phiên bản vào',
   /** Action message for creating new releases */
   'release.action.create-new': 'Tạo phiên bản mới',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Xóa lịch trình',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Loại bỏ phiên bản',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Không thể loại bỏ phiên bản',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Chỉnh sửa lịch trình',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Phiên bản mới',
   'release.action.new-release.limit-reached_other':
     'Không gian làm việc này chỉ giới hạn {{count}} bản phát hành',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bạn không có quyền thực hiện hành động này',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Xuất bản ngay',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Vui lòng thử lại hoặc kiểm tra kết nối của bạn. Tài liệu vẫn sẽ không được công bố khi phát hành.',
@@ -1253,6 +1273,8 @@ export default removeUndefinedLocaleResources({
     'Đã đặt thành công <strong>{{title}}</strong> để không xuất bản trên phiên bản',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Xem phiên bản',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Xem bản nháp đã lên lịch',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Đã lên lịch xuất bản vào {{date}}',
   /** Label for Draft chip in document header */
@@ -1290,6 +1312,26 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Tạo phiên bản',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Tạo phiên bản',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body':
+    'Bạn có chắc chắn muốn xóa bản nháp đã lên lịch này không? Hành động này không thể hoàn tác.',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Vâng, xóa lịch trình',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Xóa bản nháp đã lên lịch',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Chọn ngày và giờ mới để xuất bản theo lịch trình.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Cập nhật lịch trình',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Thay đổi lịch trình',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Bạn có chắc chắn muốn xuất bản bản nháp đã lên lịch ngay lập tức không?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Vâng, chạy ngay',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Xuất bản bản nháp ngay',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Điều này giúp có thể hiển thị liệu các tài liệu có xung đột khi làm việc trên nhiều phiên bản.',
@@ -1302,6 +1344,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Mô tả bản phát hành…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Ẩn phiên bản',
+  /** Label for the release menu */
+  'release.menu.label': 'Menu phát hành',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Hành động',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Bản nháp',
   /** Label for published releases in navbar */
@@ -1310,18 +1356,41 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Phiên bản',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Phiên bản không tiêu đề',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Lên lịch phát hành này cho một thời gian và ngày trong tương lai.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Lên lịch vào',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Phiên bản này đã được gỡ ghim',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Phiên bản '{{title}}' đã được lưu trữ",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Tạo phiên bản không thành công',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Không thể xóa tài liệu bản nháp đã lên lịch <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã bị xóa.',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Không tìm thấy phiên bản '{{title}}'",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Không thể xuất bản tài liệu bản nháp đã lên lịch <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã được xuất bản.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Phiên bản này đã được gỡ ghim',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Phiên bản '{{title}}' đã được xuất bản",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Không thể lên lịch lại tài liệu bản nháp đã lên lịch <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã được lên lịch lại.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Một phiên bản của tài liệu này đã được thêm vào',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1334,6 +1403,16 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Chưa quyết định',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Xem tất cả các phiên bản tài liệu',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Lên lịch',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Chọn khi nào tài liệu này nên được xuất bản.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Lên lịch bản nháp để Xuất bản',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Xuất bản theo lịch trình',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Mở tìm kiếm',
@@ -1934,6 +2013,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Chọn không gian làm việc khác',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Chuyển không gian làm việc',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Chọn không gian làm việc của bạn',
   /** Label for the workspace menu */
