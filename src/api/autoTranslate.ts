@@ -364,8 +364,10 @@ export async function pushChanges(options: {allLocales: boolean}): Promise<void>
           '--repo',
           'sanity-io/locales',
           '--fill',
-          '--reviewer',
-          locale.maintainers.join(','),
+
+          // @todo (external?) reviewers have started failing with: `could not request reviewer: '<username>' not found`
+          // '--reviewer',
+          // locale.maintainers.join(','),
           ...labelFlags,
         ],
         {cwd: rootPath},
