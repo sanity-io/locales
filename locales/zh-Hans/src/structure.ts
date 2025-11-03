@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     '您正在查看作为<VersionBadge>发布</VersionBadge>的一部分而存档的只读文档。它不能被编辑',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': '此计划草稿已存档',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document': '无法创建草稿文档。',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
@@ -157,6 +159,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     '我们找不到所选的文档修订版，请从历史列表中选择另一个条目。',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    '此文档存在计划草稿。如果您现在发布更改，当计划执行时它们将被覆盖。',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '此文档将作为<VersionBadge>{{title}}</VersionBadge>发布的一部分而被取消发布',
@@ -565,4 +570,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': '展开',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': '未找到带有 id "{{releaseId}}" 的发布',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': '内联更改',
 })
