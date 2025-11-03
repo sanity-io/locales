@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     '아카이브된 <VersionBadge>릴리스</VersionBadge>의 일부로서 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': '이 예약된 초안은 보관되었습니다',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     '초안 문서를 생성할 수 없습니다.',
@@ -169,6 +171,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     '선택한 문서 리비전을 찾을 수 없습니다. 기록 목록에서 다른 항목을 선택해 주세요.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    '이 문서에 대한 예약된 초안이 존재합니다. 지금 변경 사항을 게시하면 예약이 실행될 때 덮어쓰게 됩니다.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '이 문서는 <VersionBadge>{{title}}</VersionBadge> 릴리스의 일부로 발행 취소될 예정입니다',
@@ -605,4 +610,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip':
     '아이디 "{{releaseId}}"를 가진 릴리스를 찾을 수 없습니다',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': '인라인 변경',
 })
