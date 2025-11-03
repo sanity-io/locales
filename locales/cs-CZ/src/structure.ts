@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Prohlížíte dokument pouze pro čtení, který byl archivován jako součást <VersionBadge>{{title}}</VersionBadge>. Nelze ho upravit',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Tento naplánovaný koncept je archivován',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nelze vytvořit koncept dokumentu.',
@@ -180,6 +182,9 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Nemohli jsme najít vybranou revizi dokumentu, prosím vyberte jiný záznam ze seznamu historie.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Pro tento dokument existuje naplánovaný koncept. Pokud nyní publikujete změny, budou přepsány, když se naplánování spustí.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Tento dokument bude nepublikován jako součást vydání <VersionBadge>{{title}}</VersionBadge>',
@@ -624,4 +629,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Rozbalit',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Vydání s ID "{{releaseId}}" nebylo nalezeno',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Změny v řádku',
 })
