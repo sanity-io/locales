@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '固定发布',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
+  'settings.perspectives.scheduled-drafts': '预定草稿',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '视角',
 })

@@ -126,7 +126,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': '选择图片',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': '选择视频',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
   /** Select asset dialog load more items */
@@ -191,9 +191,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': '媒体库',
   'asset-sources.media-library.image.title': '媒体库',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file': '为{{targetTitle}}选择文件',
+  'asset-sources.media-library.select-dialog.title_image': '为{{targetTitle}}选择图片',
+  'asset-sources.media-library.select-dialog.title_video': '为{{targetTitle}}选择视频',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description': '使用库中找到的现有文件。',
   'asset-sources.media-library.warning.file-already-exist.title': "文件：'{{filename}}'已存在",
@@ -1208,7 +1208,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': '添加到 {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': '文档已存在于发布中',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': '已在发布 {{title}} 中',
   /** Action message for when you click to view all versions you can copy the current document to */
