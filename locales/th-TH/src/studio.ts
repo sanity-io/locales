@@ -127,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'เลือกรูปภาพ',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'เลือกวิดีโอ',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
@@ -195,9 +195,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'ห้องสมุดสื่อ',
   'asset-sources.media-library.image.title': 'ห้องสมุดสื่อ',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file': 'กำลังเลือกไฟล์สำหรับ {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_image': 'กำลังเลือกรูปภาพสำหรับ {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_video': 'กำลังเลือกวิดีโอสำหรับ {{targetTitle}}',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ใช้ไฟล์ที่มีอยู่ในห้องสมุดแล้ว',
@@ -1231,7 +1231,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': 'เพิ่มเข้าไปใน {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'เอกสารนี้มีอยู่แล้วในการปล่อย',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'อยู่ในการปล่อย {{title}} แล้ว',
   /** Action message for when you click to view all versions you can copy the current document to */
