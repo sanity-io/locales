@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.configuration-issue.header': 'Konfigurasjonsproblem oppdaget',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
   'about-dialog.configuration-issue.missing-appid':
-    'Automatiske oppdateringer er aktivert, men ingen <code>deployment.appId</code> konfigurert i <code>sanity.cli.ts</code>. Denne Studio oppdaterer mot <strong>latest</strong>-kanalen.',
+    'Automatiske oppdateringer er aktivert, men ingen <code>deployment.appId</code> konfigurert i <code>sanity.cli.ts</code>. Dette studioet oppdaterer mot <strong>latest</strong>-kanalen.',
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'Vis dokumentasjon',
   /** "Disabled" status for auto-updates in About-dialog */
@@ -1386,7 +1386,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.body':
     'Er du sikker på at du vil publisere dette planlagte utkastet umiddelbart?',
   /** Confirm button text for running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.confirm': 'Ja, kjør nå',
+  'release.dialog.publish-scheduled-draft.confirm': 'Ja, publiser nå',
   /** Header for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.header': 'Publiser utkast nå',
   /** Label for description in tooltip to explain release types */
@@ -1411,11 +1411,11 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': 'Utgivelser',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'Uten tittel utgivelse',
+  'release.placeholder-untitled-release': 'Utgivelse uten tittel',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Planlegg for en fremtidig tid og dato.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': 'Publiser den',
+  'release.schedule-dialog.select-publish-date-label': 'Publiseringsdato',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Denne utgivelsen har blitt løsnet',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
