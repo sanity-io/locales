@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Þú ert að skoða skjal sem er aðeins til lesturs og var vistað sem hluti af <VersionBadge>{{title}}</VersionBadge>. Það er ekki hægt að breyta því',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Ekki er hægt að búa til drög að skjali.',
@@ -180,6 +182,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Við gátum ekki fundið valda endurskoðun skjalsins, vinsamlegast veldu annan færslu úr sögulistanum.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Þetta skjal verður óbirt sem hluti af <VersionBadge>{{title}}</VersionBadge> útgáfunni',
@@ -619,4 +623,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Útvíkka',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Útgáfa með id "{{releaseId}}" fannst ekki',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
 })

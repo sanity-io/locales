@@ -36,8 +36,8 @@
     "format": "prettier --write .",
     "list:maintainers": "tsx src/cli/printMaintainers",
     "reconcile": "tsx src/cli/reconcile",
-    "verify:maintainers": "tsx src/cli/verifyMaintainers",
-    "test": "tsx test/testLocales"
+    "test": "tsx test/testLocales",
+    "verify:maintainers": "tsx src/cli/verifyMaintainers"
   },
   "dependencies": {
     "@babel/generator": "^7.28.5",

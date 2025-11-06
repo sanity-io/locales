@@ -85,6 +85,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'ನೀವು ಓದಲು ಮಾತ್ರ ಅನುಮತಿಸಿದ ದಾಖಲೆಯನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ, ಇದು <VersionBadge> ಒಂದು ಬಿಡುಗಡೆಯ</VersionBadge> ಭಾಗವಾಗಿ ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ. ಇದನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'ಡ್ರಾಫ್ಟ್ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
@@ -180,6 +182,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'ನಾವು ಆಯ್ಕೆ ಮಾಡಿದ ದಾಖಲೆಯ ಪರಿಷ್ಕರಣೆಯನ್ನು ಹುಡುಕಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ದಯವಿಟ್ಟು ಇತಿಹಾಸ ಪಟ್ಟಿಯಿಂದ ಮತ್ತೊಂದು ಎಂಟ್ರಿ ಆಯ್ಕೆಮಾಡಿ.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'ಈ ದಾಖಲೆಯು <VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿ ಅಪ್ರಕಟಿತವಾಗಲಿದೆ',
@@ -626,4 +630,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'ವಿಸ್ತರಿಸಿ',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'ಐಡಿ "{{releaseId}}" ನೊಂದಿಗೆ ಬಿಡುಗಡೆ ಕಾಣಲಾಗಲಿಲ್ಲ',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
 })
