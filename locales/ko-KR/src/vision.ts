@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '고정된 릴리스',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
+  'settings.perspectives.scheduled-drafts': '예약된 초안',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '관점들',
 })
