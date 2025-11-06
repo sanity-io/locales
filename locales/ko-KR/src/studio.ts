@@ -126,13 +126,19 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': '파일 선택',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': '이미지 선택',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '자산 삽입 오류. 자세한 정보는 콘솔을 확인하세요.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '더 많이 불러오기',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': '파일 없음',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': '이미지 없음',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     '현재 선택된 파일을 삭제할 수 없습니다',
@@ -199,7 +205,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': '미디어 라이브러리',
   'asset-sources.media-library.image.title': '미디어 라이브러리',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': '{{targetTitle}}에 대한 {{assetType}} 선택',
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     '라이브러리에서 찾은 기존 파일을 사용합니다.',
@@ -1275,6 +1283,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': '릴리스에 추가',
   /** Action message to add document to release */
   'release.action.add-to-release': '{{title}}에 추가',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': '이미 릴리스 {{title}}에 포함됨',
   /** Action message for when you click to view all versions you can copy the current document to */

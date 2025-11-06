@@ -126,14 +126,20 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': 'เลือกไฟล์',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'เลือกรูปภาพ',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'โหลดเพิ่มเติม',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'ไม่มีไฟล์',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'ไม่มีรูปภาพ',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'ไม่สามารถลบไฟล์ที่เลือกไว้ในปัจจุบัน',
@@ -189,7 +195,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'ห้องสมุดสื่อ',
   'asset-sources.media-library.image.title': 'ห้องสมุดสื่อ',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': 'เลือก {{assetType}} สำหรับ {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ใช้ไฟล์ที่มีอยู่ในห้องสมุดแล้ว',
@@ -1222,6 +1230,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': 'เพิ่มเข้าไปในการปล่อย',
   /** Action message to add document to release */
   'release.action.add-to-release': 'เพิ่มเข้าไปใน {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'อยู่ในการปล่อย {{title}} แล้ว',
   /** Action message for when you click to view all versions you can copy the current document to */

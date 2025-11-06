@@ -125,13 +125,19 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': '选择文件',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': '选择图片',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '加载更多',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': '没有文件',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': '没有图片',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     '无法删除当前选中的文件',
@@ -185,7 +191,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': '媒体库',
   'asset-sources.media-library.image.title': '媒体库',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': '为{{targetTitle}}选择{{assetType}}',
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description': '使用库中找到的现有文件。',
   'asset-sources.media-library.warning.file-already-exist.title': "文件：'{{filename}}'已存在",
@@ -1199,6 +1207,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': '添加到发布',
   /** Action message to add document to release */
   'release.action.add-to-release': '添加到 {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': '已在发布 {{title}} 中',
   /** Action message for when you click to view all versions you can copy the current document to */

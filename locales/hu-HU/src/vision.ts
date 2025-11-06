@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Az alapértelmezett nézet a "<code>raw</code>"-ról "<code>published</code>"-re fog változni egy közelgő API verzióban. Kérjük, keresse fel a dokumentációt további részletekért.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Rögzített kiadás',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

@@ -126,14 +126,20 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': 'Valitse tiedosto',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Valitse kuva',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Virhe liitettäessä kohdetta. Katso lisätietoja konsolista.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Lataa lisää',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Ei tiedostoja',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Ei kuvia',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Ei voi poistaa tällä hetkellä valittua tiedostoa',
@@ -200,8 +206,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Mediakirjasto',
   'asset-sources.media-library.image.title': 'Mediakirjasto',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title':
-    'Valitse {{assetType}} kohteelle {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Käytetään olemassa olevaa tiedostoa kirjastosta.',
@@ -1279,6 +1286,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': 'Lisää julkaisuun',
   /** Action message to add document to release */
   'release.action.add-to-release': 'Lisää kohteeseen {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Jo julkaisussa {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */

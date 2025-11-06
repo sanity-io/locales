@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'სტანდარტული პერსპექტივა შეიცვლება "<code>raw</code>"-დან "<code>published</code>"-ზე მომავალ API ვერსიაში. გთხოვთ, დახედეთ დოკუმენტაციას უფრო დეტალურად.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'მიმაგრებული გამოშვება',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

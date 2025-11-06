@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Oletusperspektiivi muuttuu muodosta "<code>raw</code>" muotoon "<code>published</code>" tulevassa API-versiossa. Katso lisätietoja dokumentaatiosta.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'kiinnitetty julkaisu',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

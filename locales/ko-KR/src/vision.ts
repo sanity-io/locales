@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     '기본 관점이 곧 "<code>raw</code>"에서 "<code>published</code>"로 변경될 예정입니다. 자세한 내용은 문서를 참조하십시오.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '고정된 릴리스',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '관점들',
 })

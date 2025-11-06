@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Sjálfgefið perspective mun breytast úr "<code>raw</code>" í "<code>published</code>" í væntanlegri API útgáfu. Vinsamlegast kynntu þér nánar í skjölun.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Fest útgáfa',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

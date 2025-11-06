@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'La perspectiva predeterminada canviarà de "<code>raw</code>" a "<code>published</code>" en una propera versió de l\'API. Si us plau, consulta la documentació per a més detalls.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Versió fixada',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

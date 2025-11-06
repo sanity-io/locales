@@ -114,6 +114,8 @@ export default removeUndefinedLocaleResources({
     'ಮುಂದಿನ API ಆವೃತ್ತಿಯಲ್ಲಿ ಡೀಫಾಲ್ಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ "<code>raw</code>" ನಿಂದ "<code>published</code>" ಗೆ ಬದಲಾಗಲಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಾಖಲೆಗಳನ್ನು ಸಲಹೆ ಮಾಡಿ.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ಪಿನ್ ಮಾಡಲಾದ ಬಿಡುಗಡೆ',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ಗಳು',
 })

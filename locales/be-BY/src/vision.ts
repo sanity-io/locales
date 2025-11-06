@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Перспектыва па змаўчанні зменіцца з "<code>raw</code>" на "<code>published</code>" у будучай версіі API. Калі ласка, звярніцеся да дакументацыі для атрымання больш падрабязнай інфармацыі.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Прымацаваны рэліз',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
