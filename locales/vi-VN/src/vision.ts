@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'phiên bản được ghim',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
+  'settings.perspectives.scheduled-drafts': 'Bản nháp đã lên lịch',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })
