@@ -127,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Valitse kuva',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'Valitse video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Virhe liitettäessä kohdetta. Katso lisätietoja konsolista.',
@@ -206,9 +206,12 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Mediakirjasto',
   'asset-sources.media-library.image.title': 'Mediakirjasto',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file':
+    'Tiedoston valinta kohteelle {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_image':
+    'Kuvan valinta kohteelle {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_video':
+    'Videon valinta kohteelle {{targetTitle}}',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Käytetään olemassa olevaa tiedostoa kirjastosta.',
@@ -1287,7 +1290,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': 'Lisää kohteeseen {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'Asiakirja on jo julkaisussa',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Jo julkaisussa {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
