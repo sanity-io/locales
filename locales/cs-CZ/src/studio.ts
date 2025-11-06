@@ -127,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Vybrat obrázek',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'Vyberte video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Chyba při vkládání assetu. Více informací naleznete v konzoli.',
@@ -206,9 +206,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Mediální knihovna',
   'asset-sources.media-library.image.title': 'Mediální knihovna',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file': 'Výběr souboru pro {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_image': 'Výběr obrázku pro {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_video': 'Výběr videa pro {{targetTitle}}',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Používá se existující soubor nalezený v knihovně.',
@@ -1287,7 +1287,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': 'Přidat do {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'Dokument již existuje ve vydání',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Již ve vydání {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
