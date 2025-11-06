@@ -112,6 +112,8 @@ export default removeUndefinedLocaleResources({
     '默认视角将在即将到来的API版本中从“<code>raw</code>”更改为“<code>published</code>”。请咨询文档以获取更多详情。',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '固定发布',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '视角',
 })

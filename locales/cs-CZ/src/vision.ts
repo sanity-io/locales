@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Výchozí perspektiva se změní z "<code>raw</code>" na "<code>published</code>" v nadcházející verzi API. Pro více informací se prosím poraďte s dokumentací.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Připnuté vydání',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspektivy',
 })

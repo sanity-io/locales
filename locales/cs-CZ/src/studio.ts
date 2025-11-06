@@ -126,14 +126,20 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': 'Vybrat soubor',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Vybrat obrázek',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Chyba při vkládání assetu. Více informací naleznete v konzoli.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Načíst více',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Žádné soubory',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Žádné obrázky',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Nelze smazat aktuálně vybraný soubor',
@@ -200,7 +206,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Mediální knihovna',
   'asset-sources.media-library.image.title': 'Mediální knihovna',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': 'Výběr {{assetType}} pro {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Používá se existující soubor nalezený v knihovně.',
@@ -1278,6 +1286,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': 'Přidat do vydání',
   /** Action message to add document to release */
   'release.action.add-to-release': 'Přidat do {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Již ve vydání {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */

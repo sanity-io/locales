@@ -126,14 +126,20 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': 'Chọn tệp',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Chọn hình ảnh',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Lỗi khi chèn tài sản. Xem console để biết thêm thông tin.',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Tải thêm',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Không có tệp',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Không có hình ảnh',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Không thể xóa tệp tin đang được chọn',
@@ -192,7 +198,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Thư viện Media',
   'asset-sources.media-library.image.title': 'Thư viện Media',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': 'Chọn {{assetType}} cho {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Sử dụng tệp tin đã có trong thư viện.',
@@ -1231,6 +1239,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': 'Thêm vào phiên bản',
   /** Action message to add document to release */
   'release.action.add-to-release': 'Thêm vào {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Đã có trong phiên bản {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */

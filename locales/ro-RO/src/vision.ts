@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Perspectiva implicită se va schimba de la "<code>raw</code>" la "<code>published</code>" într-o versiune viitoare a API-ului. Vă rugăm să consultați documentația pentru mai multe detalii.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Lansare fixată',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspective',
 })

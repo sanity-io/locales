@@ -125,14 +125,20 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.default-title_file': 'Seleziona file',
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Seleziona immagine',
+  /** Select asset dialog title for videos */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     "Errore nell'inserimento dell'asset. Consulta la console per maggiori informazioni.",
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Carica altri',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Nessun file',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Nessuna immagine',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Impossibile eliminare il file selezionato attualmente',
@@ -201,7 +207,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
   'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
@@ -1286,6 +1294,8 @@ export default removeUndefinedLocaleResources({
   'release.action.add-to-new-release': 'Aggiungi al rilascio',
   /** Action message to add document to release */
   'release.action.add-to-release': 'Aggiungi a {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Già nel rilascio {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
@@ -1409,9 +1419,9 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Release senza titolo',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule this release for a future time and date.'
+  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
+  'release.schedule-dialog.select-publish-date-label': undefined, // 'Publish on'
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Questa release è stata staccata',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
@@ -1455,7 +1465,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': undefined, // 'Schedule draft for Publish'
+  'schedule-publish-dialog.header': undefined, // 'Schedule draft for publishing'
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': undefined, // 'Scheduled publish'

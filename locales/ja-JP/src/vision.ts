@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'デフォルトのパースペクティブは、今後のAPIバージョンで「<code>raw</code>」から「<code>published</code>」に変更されます。詳細についてはドキュメントを参照してください。',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ピン留めされたリリース',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'パースペクティブ',
 })

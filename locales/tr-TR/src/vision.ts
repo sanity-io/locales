@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Varsayılan perspektif, yaklaşan bir API sürümünde "<code>raw</code>"\'dan "<code>published</code>"\'e değişecek. Daha fazla detay için lütfen dokümanlara danışın.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Sabitlenmiş sürüm',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

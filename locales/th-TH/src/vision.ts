@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'แง่มุมเริ่มต้นจะเปลี่ยนจาก "<code>raw</code>" เป็น "<code>published</code>" ในเวอร์ชัน API ที่จะมาถึง กรุณาดูเอกสารเพิ่มเติมสำหรับรายละเอียด.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ปักหมุดรีลีส',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

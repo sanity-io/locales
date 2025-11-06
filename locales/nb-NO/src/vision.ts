@@ -113,6 +113,8 @@ export default removeUndefinedLocaleResources({
     'Standardperspektivet vil endre seg fra "<code>raw</code>" til "<code>published</code>" i en kommende API-versjon. Vennligst se dokumentasjonen for flere detaljer.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Festet utgivelse',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspektiver',
 })
