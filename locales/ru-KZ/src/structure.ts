@@ -84,6 +84,8 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
     'Вы просматриваете документ только для чтения, который был архивирован как часть <VersionBadge>{{title}}</VersionBadge>. Его нельзя редактировать',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Невозможно создать черновик документа.',
@@ -171,6 +173,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Мы не смогли найти выбранную версию документа, пожалуйста, выберите другую запись из списка истории.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Этот документ будет снят с публикации как часть релиза <VersionBadge>{{title}}</VersionBadge>',
@@ -601,4 +605,7 @@ export default removeUndefinedLocaleResources({
   'timeline-item.menu.action-expand': 'Развернуть',
   /** The text for the published event menu tooltip when the release is not found */
   'timeline-item.not-found-release.tooltip': 'Релиз с идентификатором "{{releaseId}}" не найден',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
 })

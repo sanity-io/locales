@@ -1,6 +1,12 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': undefined, // 'Configuration issue detected'
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid': undefined, // 'Auto updates is enabled, but no <code>deployment.appId</code> configured in <code>sanity.cli.ts</code>. This Studio is updating against the <strong>latest</strong>-channel.'
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': undefined, // 'View documentation'
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Deaktivert',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -31,6 +37,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': undefined, // 'Reload'
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': undefined, // 'Development'
   /** "New version available" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
   /** "Prerelease" tooltip in About-dialog */
@@ -190,6 +198,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.image.title': 'Media Library',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title': undefined, // 'Selecting {{assetType}} for {{targetTitle}}'
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
+  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Utgjevinga '<strong>{{title}}</strong>' har blitt sletta.",
@@ -1270,16 +1281,22 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopier versjon til',
   /** Action message for creating new releases */
   'release.action.create-new': 'Ny utgjeving',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': undefined, // 'Delete schedule'
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Forkast versjon',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Klarte ikkje å forkaste versjon',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': undefined, // 'Edit schedule'
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Ny Utgjeving',
   'release.action.new-release.limit-reached_other':
     'Denne arbeidsområdet er begrensa til {{count}} utgjevingar',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikkje løyve til å utføre denne handlinga',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': undefined, // 'Publish now'
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Prøv igjen eller sjekk tilkoblinga di. Dokumentet vil framleis vere upublisert ved utgjeving.',
@@ -1300,6 +1317,8 @@ export default removeUndefinedLocaleResources({
     'Vellukka sett <strong>{{title}}</strong> til å bli avpublisert på utgjeving',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Vis utgjeving',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': undefined, // 'View scheduled drafts'
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Planlagt for publisering den {{date}}',
   /** Label for Draft chip in document header */
@@ -1337,6 +1356,24 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Opprett utgjeving',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Ny utgjeving',
+  /** Body text for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Den tenkte utgjevingstida blir brukt til å lage betre førehandsvisningar og hint om korvidt dokument konflikterar.',
@@ -1348,6 +1385,10 @@ export default removeUndefinedLocaleResources({
   'release.form.placeholder-describe-release': 'Beskriv utgjevinga…',
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Gøym utgjeving',
+  /** Label for the release menu */
+  'release.menu.label': undefined, // 'Release menu'
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': undefined, // 'Actions'
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Utkast',
   /** Label for published releases in navbar */
@@ -1356,18 +1397,34 @@ export default removeUndefinedLocaleResources({
   'release.navbar.tooltip': 'Utgjevingar',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Utan tittel på utgjeving',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule this release for a future time and date.'
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Denne utgjevinga har blitt fråkopla',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Utgjevinga '{{title}}' blei arkivert",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Klarte ikkje å opprette utgjeving',
-  /**The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Kunne ikkje finne utgjevinga '{{title}}'",
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Denne utgjevinga har blitt fråkopla',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Utgjevinga '{{title}}' blei publisert",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Ein versjon av dette dokumentet har allereie blitt lagt til',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1381,6 +1438,16 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Uavgjort',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Sjå alle dokumentversjonar',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': undefined, // 'Schedule draft for Publish'
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': undefined, // 'Scheduled publish'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Opne søk',
@@ -2024,6 +2091,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Vel eit anna arbeidsområde',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': undefined, // 'Switch workspace'
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Vel ditt arbeidsområde',
   /** Label for the workspace menu */
