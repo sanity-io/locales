@@ -127,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Chọn hình ảnh',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'Chọn video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Lỗi khi chèn tài sản. Xem console để biết thêm thông tin.',
@@ -198,9 +198,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Thư viện Media',
   'asset-sources.media-library.image.title': 'Thư viện Media',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file': 'Chọn tệp cho {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_image': 'Chọn hình ảnh cho {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_video': 'Chọn video cho {{targetTitle}}',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Sử dụng tệp tin đã có trong thư viện.',
@@ -1240,7 +1240,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': 'Thêm vào {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'Tài liệu đã tồn tại trong bản phát hành',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Đã có trong phiên bản {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
