@@ -86,7 +86,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'ನೀವು ಓದಲು ಮಾತ್ರ ಅನುಮತಿಸಿದ ದಾಖಲೆಯನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ, ಇದು <VersionBadge> ಒಂದು ಬಿಡುಗಡೆಯ</VersionBadge> ಭಾಗವಾಗಿ ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ. ಇದನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'ಈ ನಿಗದಿತ ಮುಸದ್ದು ಆರ್ಕೈವ್ ಆಗಿದೆ',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'ಡ್ರಾಫ್ಟ್ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
@@ -183,7 +183,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'ನಾವು ಆಯ್ಕೆ ಮಾಡಿದ ದಾಖಲೆಯ ಪರಿಷ್ಕರಣೆಯನ್ನು ಹುಡುಕಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ದಯವಿಟ್ಟು ಇತಿಹಾಸ ಪಟ್ಟಿಯಿಂದ ಮತ್ತೊಂದು ಎಂಟ್ರಿ ಆಯ್ಕೆಮಾಡಿ.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'ಈ ದಾಖಲೆಗೆ ಒಂದು ನಿಗದಿತ ಮುಸದ್ದು ಇದೆ. ನೀವು ಈಗ ಬದಲಾವಣೆಗಳನ್ನು ಪ್ರಕಟಿಸಿದರೆ ಅವು ನಿಗದಿತ ಸಮಯದಲ್ಲಿ ನಡೆಯುವಾಗ ಅದನ್ನು ಓವರ್ರೈಟ್ ಮಾಡಲಾಗುವುದು.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'ಈ ದಾಖಲೆಯು <VersionBadge>{{title}}</VersionBadge> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿ ಅಪ್ರಕಟಿತವಾಗಲಿದೆ',
@@ -632,5 +633,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'ಐಡಿ "{{releaseId}}" ನೊಂದಿಗೆ ಬಿಡುಗಡೆ ಕಾಣಲಾಗಲಿಲ್ಲ',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'ಇನ್‌ಲೈನ್ ಬದಲಾವಣೆಗಳು',
 })

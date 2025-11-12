@@ -115,7 +115,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ಪಿನ್ ಮಾಡಲಾದ ಬಿಡುಗಡೆ',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': undefined, // 'Scheduled drafts'
+  'settings.perspectives.scheduled-drafts': 'ನಿಗದಿತ ಕರಡುಗಳು',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ಗಳು',
 })
