@@ -477,6 +477,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Asiakirjatyyppiä "{{type}}" ei löydy',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Toimintoa ei voi suorittaa',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     'Arvon <code>_key</code> täytyy olla uniikki merkkijono.',
@@ -1297,6 +1300,8 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopioi versio kohteeseen',
   /** Action message for creating new releases */
   'release.action.create-new': 'Uusi julkaisu',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Version luonti epäonnistui',
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': 'Poista aikataulu',
   /** Action message for when document is already in release  */
