@@ -87,7 +87,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'U bekijkt een alleen-lezen document dat werd gearchiveerd als onderdeel van <VersionBadge>{{title}}</VersionBadge>. Het kan niet bewerkt worden',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Dit geplande concept is gearchiveerd',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Kan geen conceptdocument maken.',
@@ -186,7 +186,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'We konden de geselecteerde documentrevisie niet vinden, selecteer een andere invoer uit de geschiedenislijst.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Er bestaat een gepland concept voor dit document. Als u nu wijzigingen publiceert, worden deze overschreven wanneer het schema wordt uitgevoerd.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dit document zal niet gepubliceerd worden als onderdeel van de <VersionBadge>{{title}}</VersionBadge> release',
@@ -637,5 +638,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Release met id "{{releaseId}}" niet gevonden',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Wijzigingen inline weergeven',
 })
