@@ -458,6 +458,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Không tìm thấy loại tài liệu "{{type}}"',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Không thể thực hiện hành động này',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     'Giá trị của thuộc tính <code>_key</code> phải là một chuỗi duy nhất.',
@@ -1247,6 +1250,8 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Sao chép phiên bản vào',
   /** Action message for creating new releases */
   'release.action.create-new': 'Tạo phiên bản mới',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Tạo phiên bản không thành công',
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': 'Xóa lịch trình',
   /** Action message for when document is already in release  */
