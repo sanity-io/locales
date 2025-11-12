@@ -452,6 +452,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ไม่พบประเภทเอกสาร "{{type}}"',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'ไม่สามารถดำเนินการนี้ได้',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     'ค่าของคุณสมบัติ <code>_key</code> ต้องเป็นสตริงที่ไม่ซ้ำกัน',
@@ -1238,6 +1241,8 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'คัดลอกเวอร์ชันไปยัง',
   /** Action message for creating new releases */
   'release.action.create-new': 'การปล่อยใหม่',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'ไม่สามารถสร้างเวอร์ชันได้',
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': 'ลบตารางเวลา',
   /** Action message for when document is already in release  */
