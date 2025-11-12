@@ -86,7 +86,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Pregledavate dokument samo za čitanje koji je arhiviran kao dio <VersionBadge> izdanja</VersionBadge>. Ne može se uređivati',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Ovaj zakazani nacrt je arhiviran',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nije moguće stvoriti dokument nacrta.',
@@ -185,7 +185,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'Nismo mogli pronaći odabranu reviziju dokumenta, molimo odaberite drugi unos iz povijesne liste.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Postoji zakazani nacrt za ovaj dokument. Ako sada objavite promjene, one će biti prebrisane kada se raspored izvrši.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ovaj dokument će biti nepublikovan kao dio <VersionBadge>{{title}}</VersionBadge> izdanja',
@@ -629,5 +630,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Izdanje s id-om "{{releaseId}}" nije pronađeno',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Promjene u tekstu',
 })
