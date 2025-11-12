@@ -475,6 +475,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '문서 유형 "{{type}}"을(를) 찾을 수 없습니다',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': '이 작업을 수행할 수 없습니다',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     '<code>_key</code> 속성의 값은 고유한 문자열이어야 합니다.',
@@ -1291,6 +1294,8 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': '버전을 복사하기',
   /** Action message for creating new releases */
   'release.action.create-new': '새 릴리스',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': '버전을 생성하지 못했습니다',
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': '일정 삭제',
   /** Action message for when document is already in release  */
