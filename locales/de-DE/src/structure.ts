@@ -89,7 +89,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Sie sehen ein schreibgeschütztes Dokument, das als Teil von <VersionBadge>{{title}}</VersionBadge> archiviert wurde. Es kann nicht bearbeitet werden',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Dieser geplante Entwurf ist archiviert',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Es kann kein Entwurfsdokument erstellt werden.',
@@ -189,7 +189,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'Wir konnten die ausgewählte Dokumentrevision nicht finden, bitte wählen Sie einen anderen Eintrag aus der Verlauf-Liste.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Ein geplanter Entwurf für dieses Dokument existiert. Wenn Sie jetzt Änderungen veröffentlichen, werden sie überschrieben, wenn der Zeitplan ausgeführt wird.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dieses Dokument wird als Teil des <VersionBadge>{{title}}</VersionBadge> Releases nicht veröffentlicht',
@@ -644,5 +645,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Release mit der ID "{{releaseId}}" nicht gefunden',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Änderungen inline anzeigen',
 })
