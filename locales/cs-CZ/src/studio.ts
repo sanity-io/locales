@@ -474,6 +474,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Typ dokumentu "{{type}}" nebyl nalezen',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Nelze provést tuto akci',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     'Hodnota vlastnosti <code>_key</code> musí být jedinečný řetězec.',
@@ -1294,6 +1297,8 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Kopírovat verzi do',
   /** Action message for creating new releases */
   'release.action.create-new': 'Nové vydání',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Nepodařilo se vytvořit verzi',
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': 'Smazat plán',
   /** Action message for when document is already in release  */
