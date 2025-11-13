@@ -463,6 +463,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Тып дакумента "{{type}}" не знойдзены',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': undefined, // 'Unable to perform this action'
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     'Значэнне ўласцівасці <code>_key</code> павінна быць унікальным радком.',
@@ -1261,6 +1264,8 @@ export default removeUndefinedLocaleResources({
   'release.action.copy-to': 'Капіяваць версію ў',
   /** Action message for creating new releases */
   'release.action.create-new': 'Новы рэліз',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': undefined, // 'Failed to create version'
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': undefined, // 'Delete schedule'
   /** Action message for when document is already in release  */
