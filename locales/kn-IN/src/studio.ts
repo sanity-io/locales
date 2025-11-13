@@ -2,11 +2,12 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Configuration issue" header */
-  'about-dialog.configuration-issue.header': undefined, // 'Configuration issue detected'
+  'about-dialog.configuration-issue.header': 'ಸಂರಚನಾ ಸಮಸ್ಯೆ ಪತ್ತೆಯಾಗಿದೆ',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
-  'about-dialog.configuration-issue.missing-appid': undefined, // 'Auto updates is enabled, but no <code>deployment.appId</code> configured in <code>sanity.cli.ts</code>. This Studio is updating against the <strong>latest</strong>-channel.'
+  'about-dialog.configuration-issue.missing-appid':
+    'ಸ್ವಯಂ ನವೀಕರಣಗಳು ಸಕ್ರಿಯವಾಗಿವೆ, ಆದರೆ <code>sanity.cli.ts</code> ನಲ್ಲಿ <code>deployment.appId</code> ಸಂರಚಿಸಿಲ್ಲ. ಈ ಸ್ಟುಡಿಯೋ <strong>ಅತ್ಯಂತ ಹೊಸ</strong>-ಚಾನೆಲ್ ವಿರುದ್ಧ ನವೀಕರಣಗೊಳ್ಳುತ್ತಿದೆ.',
   /** "View documentation" link for auto-updating studios */
-  'about-dialog.configuration-issue.missing-appid.view-documentation': undefined, // 'View documentation'
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'ದಾಖಲೆಗಳನ್ನು ನೋಡಿ',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'ನಿಷ್ಕ್ರಿಯ',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -16,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'ಹೇಗೆ ಸಕ್ರಿಯಗೊಳಿಸುವುದು',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'ಆವೃತ್ತಿಯನ್ನು ನಿರ್ವಹಿಸಿ',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ. ಸಂತೋಷದಿಂದ ಅಂಟಿಸಿ!',
@@ -29,32 +30,33 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'ಇತ್ತೀಚಿನ ಆವೃತ್ತಿ',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'ಹೊಸ ಆವೃತ್ತಿ',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'ಮರುಲೋಡ್ ಮಾಡಿ',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'ನವೀಕರಣಕ್ಕಾಗಿ ಸ್ಟುಡಿಯೋವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ',
   /** "Development" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.development': undefined, // 'Development'
+  'about-dialog.version-info.tooltip.development': 'ಅಭಿವೃದ್ಧಿ',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'ಪ್ರಿರಿಲೀಸ್',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'ನವೀಕರಣಗೊಂಡಿದೆ',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'ನವೀಕರಣಗೊಂಡಿದೆ',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'ನವೀಕರಿಸಿ',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip':
+    'Sanity Studio ಅನ್ನು ಹೇಗೆ ನವೀಕರಿಸುವುದು ತಿಳಿಯಿರಿ',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ಬಳಕೆದಾರ ಏಜೆಂಟ್',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'GitHub ನಲ್ಲಿ ನೋಡಿ',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'ಮುಚ್ಚಿ',
@@ -126,7 +128,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'ವೀಡಿಯೊ ಆಯ್ಕೆಮಾಡಿ',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'ಆಸ್ತಿ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
@@ -204,12 +206,16 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
   'asset-sources.media-library.image.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file':
+    '{{targetTitle}} ಗಾಗಿ ಫೈಲ್ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
+  'asset-sources.media-library.select-dialog.title_image':
+    '{{targetTitle}} ಗಾಗಿ ಚಿತ್ರ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
+  'asset-sources.media-library.select-dialog.title_video':
+    '{{targetTitle}} ಗಾಗಿ ವೀಡಿಯೊ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
-  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'ಗ್ರಂಥಾಲಯದಲ್ಲಿ ಕಂಡುಬಂದ ಇದೇ ಫೈಲ್ ಬಳಸುತ್ತಿದ್ದೀರಿ.',
+  'asset-sources.media-library.warning.file-already-exist.title': "ಫೈಲ್: '{{filename}}' ಈಗಾಗಲೇ ಇದೆ",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' ಬಿಡುಗಡೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ.",
@@ -470,6 +476,9 @@ export default removeUndefinedLocaleResources({
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ದಾಖಲೆ ಪ್ರಕಾರ "{{type}}" ಕಾಣಿಸಿಲ್ಲ',
 
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ಅಸಾಧ್ಯ',
+
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
     '<code>_key</code> ಗುಣದ ಮೌಲ್ಯವು ಅನನ್ಯ ಸ್ಟ್ರಿಂಗ್ ಆಗಿರಬೇಕು.',
@@ -570,7 +579,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'ಇತ್ತೀಚಿನ ಆವೃತ್ತಿ {{latestVersion}} ಆಗಿದೆ',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'v{{newVersion}} ಗೆ ನವೀಕರಿಸಲು ಮರುಲೋಡ್ ಮಾಡಿ',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio ಆವೃತ್ತಿ {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1285,21 +1294,23 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': '{{title}} ಗೆ ಸೇರಿಸಿ',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'ದಾಖಲೆ ಈಗಾಗಲೇ ಬಿಡುಗಡೆಯಲ್ಲಿದೆ',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'ಈಗಾಗಲೇ ಬಿಡುಗಡೆ {{title}} ನಲ್ಲಿದೆ',
   /** Action message for when you click to view all versions you can copy the current document to */
   'release.action.copy-to': 'ಪ್ರತಿ ಆವೃತ್ತಿಯನ್ನು ನಕಲಿಸಿ',
   /** Action message for creating new releases */
   'release.action.create-new': 'ಹೊಸ ಬಿಡುಗಡೆ',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'ಆವೃತ್ತಿ ರಚಿಸುವುದು ವಿಫಲವಾಗಿದೆ',
   /** Action message for deleting a scheduled publish */
-  'release.action.delete-schedule': undefined, // 'Delete schedule'
+  'release.action.delete-schedule': 'ವೇಳಾಪಟ್ಟಿ ಅಳಿಸು',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಿ',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** Action message for editing the schedule of a scheduled publish */
-  'release.action.edit-schedule': undefined, // 'Edit schedule'
+  'release.action.edit-schedule': 'ವೇಳಾಪಟ್ಟಿ ಸಂಪಾದಿಸು',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
   'release.action.new-release.limit-reached_other':
@@ -1307,7 +1318,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** Action message for running a scheduled draft immediately */
-  'release.action.publish-now': undefined, // 'Publish now'
+  'release.action.publish-now': 'ಈಗ ಪ್ರಕಟಿಸು',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ. ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ದಾಖಲೆಯು ಇನ್ನೂ ಅಪ್ರಕಟಿತವಾಗಿರಲಿದೆ.',
@@ -1329,7 +1340,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'ಬಿಡುಗಡೆಯನ್ನು ವೀಕ್ಷಿಸಿ',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': undefined, // 'View scheduled drafts'
+  'release.action.view-scheduled-drafts': 'ನಿಗದಿತ ಮುಸದ್ದುಗಳನ್ನು ವೀಕ್ಷಿಸು',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}} ರಂದು ಪ್ರಕಟಣೆಗೆ ನಿಗದಿಯಾಗಿದೆ',
   /** Label for Draft chip in document header */
@@ -1368,23 +1379,25 @@ export default removeUndefinedLocaleResources({
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'ಬಿಡುಗಡೆ ರಚಿಸಿ',
   /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  'release.dialog.delete-schedule-draft.body':
+    'ನೀವು ಈ ನಿಗದಿತ ಮುಸದ್ದುವನ್ನು ಅಳಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ? ಈ ಕ್ರಿಯೆಯನ್ನು ಹಿಂತಿರುಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  'release.dialog.delete-schedule-draft.confirm': 'ಹೌದು, ವೇಳಾಪಟ್ಟಿ ಅಳಿಸು',
   /** Header for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  'release.dialog.delete-schedule-draft.header': 'ನಿಗದಿತ ಮುಸದ್ದು ಅಳಿಸು',
   /** Body text for change schedule dialog */
-  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  'release.dialog.edit-schedule.body': 'ನಿಗದಿತ ಪ್ರಕಟಣೆಗಾಗಿ ಹೊಸ ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಆರಿಸಿ.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  'release.dialog.edit-schedule.confirm': 'ವೇಳಾಪಟ್ಟಿ ನವೀಕರಿಸು',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  'release.dialog.edit-schedule.header': 'ವೇಳಾಪಟ್ಟಿ ಬದಲಾಯಿಸು',
   /** Body text for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  'release.dialog.publish-scheduled-draft.body':
+    'ನೀವು ಈ ನಿಗದಿತ ಮುಸದ್ದುವನ್ನು ತಕ್ಷಣವೇ ಪ್ರಕಟಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
   /** Confirm button text for running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  'release.dialog.publish-scheduled-draft.confirm': 'ಹೌದು, ಈಗ ಚಲಾಯಿಸು',
   /** Header for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
+  'release.dialog.publish-scheduled-draft.header': 'ಮುಸದ್ದುವನ್ನು ಈಗ ಪ್ರಕಟಿಸು',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'ಇದು ಹಲವು ಆವೃತ್ತಿಗಳಲ್ಲಿ ದಾಖಲೆಗಳು ಸಂಘರ್ಷದಲ್ಲಿವೆ ಎಂಬುದನ್ನು ತೋರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.',
@@ -1398,9 +1411,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'ಬಿಡುಗಡೆಯನ್ನು ಮರೆಮಾಡಿ',
   /** Label for the release menu */
-  'release.menu.label': undefined, // 'Release menu'
+  'release.menu.label': 'ಬಿಡುಗಡೆ ಮೆನು',
   /** Tooltip for the release menu */
-  'release.menu.tooltip': undefined, // 'Actions'
+  'release.menu.tooltip': 'ಕ್ರಿಯೆಗಳು',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ಡ್ರಾಫ್ಟ್‌ಗಳು',
   /** Label for published releases in navbar */
@@ -1410,9 +1423,10 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'ಶೀರ್ಷಿಕೆಯಿಲ್ಲದ ಬಿಡುಗಡೆ',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'ಭವಿಷ್ಯದ ಸಮಯ ಮತ್ತು ದಿನಾಂಕಕ್ಕೆ ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': undefined, // 'Publish on'
+  'release.schedule-dialog.select-publish-date-label': 'ಮೇಲೆ ಪ್ರಕಟಿಸು',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
@@ -1420,23 +1434,29 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ಬಿಡುಗಡೆಯನ್ನು ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** Error toast for deleting a scheduled draft */
-  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.delete-schedule-draft.error':
+    'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}',
   /** Success toast for deleting a scheduled draft */
-  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  'release.toast.delete-schedule-draft.success':
+    'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಅಳಿಸಲಾಗಿದೆ.',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಹುಡುಕಲಾಗಲಿಲ್ಲ",
   /** Error toast for running a scheduled publish immediately */
-  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.publish-scheduled-draft.error':
+    'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ತಕ್ಷಣವೇ ಪ್ರಕಟಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}',
   /** Success toast for running a scheduled publish immediately */
-  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
+  'release.toast.publish-scheduled-draft.success':
+    'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಪ್ರಕಟಿಸಲಾಗಿದೆ.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "'{{title}}' ಬಿಡುಗಡೆ ಪ್ರಕಟಿಸಲಾಗಿದೆ",
   /** Error toast for rescheduling a draft */
-  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.reschedule-scheduled-draft.error':
+    'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಮರುನಿಗದಿಪಡಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}',
   /** Success toast for rescheduling a draft */
-  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
+  'release.toast.reschedule-scheduled-draft.success':
+    'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಮರುನಿಗದಿಪಡಿಸಲಾಗಿದೆ.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ಈ ದಾಖಲೆಯ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1452,14 +1472,14 @@ export default removeUndefinedLocaleResources({
   'release.version-list.tooltip': 'ಎಲ್ಲಾ ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ನೋಡಿ',
 
   /** Confirm button text for the schedule publish dialog */
-  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  'schedule-publish-dialog.confirm': 'ವೇಳಾಪಟ್ಟಿ ಮಾಡು',
   /** Description for the schedule publish dialog */
-  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  'schedule-publish-dialog.description': 'ಈ ದಾಖಲೆಯನ್ನು ಯಾವಾಗ ಪ್ರಕಟಿಸಬೇಕೆಂದು ಆರಿಸಿ.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': undefined, // 'Schedule draft for publishing'
+  'schedule-publish-dialog.header': 'ಪ್ರಕಟಣೆಗಾಗಿ ಕರಡು ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ',
 
   /** Title for a scheduled draft release */
-  'scheduled-drafts.release.title': undefined, // 'Scheduled publish'
+  'scheduled-drafts.release.title': 'ನಿಗದಿತ ಪ್ರಕಟಣೆ',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'ಹುಡುಕಾಟ ತೆರೆಯಿರಿ',
@@ -2105,7 +2125,7 @@ export default removeUndefinedLocaleResources({
    */
   'workspaces.action.choose-another-workspace': 'ಬೇರೆ ವರ್ಕ್‌ಸ್ಪೇಸ್ ಆಯ್ಕೆಮಾಡಿ',
   /** Label for title to switch workspace before workspaces are listed */
-  'workspaces.action.switch-workspace': undefined, // 'Switch workspace'
+  'workspaces.action.switch-workspace': 'ಕಾರ್ಯಸ್ಥಳ ಬದಲಾಯಿಸಿ',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'ನಿಮ್ಮ ವರ್ಕ್‌ಸ್ಪೇಸ್ ಆಯ್ಕೆಮಾಡಿ',
   /** Label for the workspace menu */
