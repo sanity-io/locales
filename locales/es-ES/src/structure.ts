@@ -85,7 +85,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Estás viendo un documento de solo lectura que fue archivado como parte de <VersionBadge>{{title}}</VersionBadge>. No se puede editar',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Este borrador programado está archivado',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'No se puede crear un documento borrador.',
@@ -185,7 +185,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'No pudimos encontrar la revisión del documento seleccionada, por favor seleccione otra entrada de la lista de historial.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Existe un borrador programado para este documento. Si publicas cambios ahora, serán sobrescritos cuando se ejecute la programación.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Este documento será despublicado como parte de la publicación <VersionBadge>{{title}}</VersionBadge>',
@@ -639,5 +640,5 @@ export default removeUndefinedLocaleResources({
     'No se encontró el lanzamiento con el id "{{releaseId}}"',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Cambios en línea',
 })
