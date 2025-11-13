@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.27](https://github.com/sanity-io/locales/compare/locale-hu-hu-v1.1.26...locale-hu-hu-v1.1.27) (2025-11-13)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1316](https://github.com/sanity-io/locales/issues/1316)) ([026edba](https://github.com/sanity-io/locales/commit/026edba00c46bdd01b68d6fb3edb3cbdffb05957))
+* reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
+* reconcile + prettify ([#1383](https://github.com/sanity-io/locales/issues/1383)) ([289d911](https://github.com/sanity-io/locales/commit/289d9117e84b3a9d35b8cd3eec8bfd15d9c4853a))
+
 ## [1.1.26](https://github.com/sanity-io/locales/compare/locale-hu-hu-v1.1.25...locale-hu-hu-v1.1.26) (2025-09-04)
 
 
