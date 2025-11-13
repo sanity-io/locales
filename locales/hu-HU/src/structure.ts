@@ -87,7 +87,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Ön egy csak olvasható dokumentumot tekint meg, amely archiválásra került a <VersionBadge>{{title}}</VersionBadge> részeként. Nem szerkeszthető',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Ez a tervezett vázlat archiválva van',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nem lehet vázlatdokumentumot létrehozni.',
@@ -186,7 +186,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'Nem találjuk a kiválasztott dokumentum revízióját, kérjük, válasszon egy másik bejegyzést a történet listából.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Egy ütemezett vázlat létezik ehhez a dokumentumhoz. Ha most közzéteszi a változásokat, azok felülírásra kerülnek, amikor az ütemezés lefut.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ez a dokumentum a <VersionBadge>{{title}}</VersionBadge> kiadás részeként lesz közzé nem téve',
@@ -638,5 +639,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'A "{{releaseId}}" azonosítójú kiadás nem található',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Változások beágyazása',
 })

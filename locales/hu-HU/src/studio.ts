@@ -2,11 +2,12 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Configuration issue" header */
-  'about-dialog.configuration-issue.header': undefined, // 'Configuration issue detected'
+  'about-dialog.configuration-issue.header': 'Konfigurációs probléma észlelve',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
-  'about-dialog.configuration-issue.missing-appid': undefined, // 'Auto updates is enabled, but no <code>deployment.appId</code> configured in <code>sanity.cli.ts</code>. This Studio is updating against the <strong>latest</strong>-channel.'
+  'about-dialog.configuration-issue.missing-appid':
+    'Az automatikus frissítések engedélyezve vannak, de nincs <code>deployment.appId</code> konfigurálva a <code>sanity.cli.ts</code>-ben. Ez a Stúdió a <strong>legújabb</strong>-csatorna ellen frissül.',
   /** "View documentation" link for auto-updating studios */
-  'about-dialog.configuration-issue.missing-appid.view-documentation': undefined, // 'View documentation'
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Dokumentáció megtekintése',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Letiltva',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -16,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Hogyan engedélyezhető',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Verzió kezelése',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Vágólapra másolva. Boldog beillesztést!',
@@ -29,32 +30,33 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Legújabb verzió',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Új verzió elérhető',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Új verzió',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Újratöltés',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Stúdió újratöltése a frissítéshez',
   /** "Development" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.development': undefined, // 'Development'
+  'about-dialog.version-info.tooltip.development': 'Fejlesztés',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Új verzió elérhető',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Előzetes kiadás',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'Naprakész',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Naprakész',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Frissítés',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip':
+    'Tudj meg többet a Sanity Studio frissítéséről',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Felhasználói ügynök',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Megtekintés a GitHubon',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Bezárás',
@@ -126,7 +128,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Kép kiválasztása',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'Videó kiválasztása',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Hiba történt az eszköz beillesztésekor. További információkért nézze meg a konzolt.',
@@ -207,12 +209,14 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Média Könyvtár',
   'asset-sources.media-library.image.title': 'Média Könyvtár',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}} fájl kiválasztása',
+  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}} kép kiválasztása',
+  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}} videó kiválasztása',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
-  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'A könyvtárban talált meglévő fájl használata.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Fájl: '{{filename}}' már létezik",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "A(z) '<strong>{{title}}</strong>' kiadás törölve lett.",
@@ -475,7 +479,7 @@ export default removeUndefinedLocaleResources({
   'document.type.not-found': 'A "{{type}}" típusú dokumentum nem található',
 
   /** Error message shown when an action cannot be performed */
-  'errors.unable-to-perform-action': undefined, // 'Unable to perform this action'
+  'errors.unable-to-perform-action': 'Nem lehet végrehajtani ezt a műveletet',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -577,7 +581,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'A legújabb verzió {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Újratöltés a v{{newVersion}} frissítéséhez',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio verzió {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1296,7 +1300,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': 'Hozzáadás a(z) {{title}} kiadáshoz',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'A dokumentum már szerepel a kiadásban',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Már hozzáadva a(z) {{title}} kiadáshoz',
   /** Action message for when you click to view all versions you can copy the current document to */
@@ -1304,15 +1308,15 @@ export default removeUndefinedLocaleResources({
   /** Action message for creating new releases */
   'release.action.create-new': 'Új kiadás',
   /** Description for toast when version creation failed */
-  'release.action.create-version.failure': undefined, // 'Failed to create version'
+  'release.action.create-version.failure': 'A verzió létrehozása sikertelen',
   /** Action message for deleting a scheduled publish */
-  'release.action.delete-schedule': undefined, // 'Delete schedule'
+  'release.action.delete-schedule': 'Ütemezés törlése',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Verzió elvetése',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Nem sikerült a verziót elvetni',
   /** Action message for editing the schedule of a scheduled publish */
-  'release.action.edit-schedule': undefined, // 'Edit schedule'
+  'release.action.edit-schedule': 'Ütemezés szerkesztése',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Új Kiadás',
   'release.action.new-release.limit-reached_other':
@@ -1320,7 +1324,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nincs jogosultsága ezt a műveletet végrehajtani',
   /** Action message for running a scheduled draft immediately */
-  'release.action.publish-now': undefined, // 'Publish now'
+  'release.action.publish-now': 'Közzététel most',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Kérjük, próbálja újra vagy ellenőrizze a kapcsolatot. A dokumentum továbbra is közzétételre kerül a kiadásnál.',
@@ -1342,7 +1346,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Kiadás megtekintése',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': undefined, // 'View scheduled drafts'
+  'release.action.view-scheduled-drafts': 'Ütemezett vázlatok megtekintése',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Közzétételre ütemezve erre a dátumra: {{date}}',
   /** Label for Draft chip in document header */
@@ -1381,23 +1385,26 @@ export default removeUndefinedLocaleResources({
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Új kiadás',
   /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  'release.dialog.delete-schedule-draft.body':
+    'Biztosan törölni szeretné ezt az ütemezett vázlatot? Ezt a műveletet nem lehet visszavonni.',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  'release.dialog.delete-schedule-draft.confirm': 'Igen, ütemezés törlése',
   /** Header for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  'release.dialog.delete-schedule-draft.header': 'Ütemezett vázlat törlése',
   /** Body text for change schedule dialog */
-  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  'release.dialog.edit-schedule.body':
+    'Válasszon új dátumot és időpontot az ütemezett közzétételhez.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  'release.dialog.edit-schedule.confirm': 'Ütemezés frissítése',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  'release.dialog.edit-schedule.header': 'Ütemezés megváltoztatása',
   /** Body text for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  'release.dialog.publish-scheduled-draft.body':
+    'Biztosan azonnal közzé szeretné tenni ezt az ütemezett vázlatot?',
   /** Confirm button text for running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  'release.dialog.publish-scheduled-draft.confirm': 'Igen, futtatás most',
   /** Header for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
+  'release.dialog.publish-scheduled-draft.header': 'Vázlat közzététele most',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'A tervezett kiadási időt arra használjuk, hogy jobb előnézeteket és utalásokat készítsünk arról, hogy a dokumentumok ütköznek-e.',
@@ -1410,9 +1417,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Kiadás elrejtése',
   /** Label for the release menu */
-  'release.menu.label': undefined, // 'Release menu'
+  'release.menu.label': 'Kiadás menü',
   /** Tooltip for the release menu */
-  'release.menu.tooltip': undefined, // 'Actions'
+  'release.menu.tooltip': 'Műveletek',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Piszkozatok',
   /** Label for published releases in navbar */
@@ -1422,9 +1429,9 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Cím nélküli kiadás',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'release.schedule-dialog.publish-date-in-past-warning': 'Jövőbeli időpontra és dátumra ütemezze.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': undefined, // 'Publish on'
+  'release.schedule-dialog.select-publish-date-label': 'Közzététel ekkor',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Ez a kiadás le lett választva',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
@@ -1432,23 +1439,29 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'A kiadás létrehozása sikertelen',
   /** Error toast for deleting a scheduled draft */
-  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.delete-schedule-draft.error':
+    'Nem sikerült törölni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
   /** Success toast for deleting a scheduled draft */
-  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  'release.toast.delete-schedule-draft.success':
+    'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> törölve lett.',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "A(z) '{{title}}' kiadás nem található",
   /** Error toast for running a scheduled publish immediately */
-  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.publish-scheduled-draft.error':
+    'Nem sikerült közzétenni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
   /** Success toast for running a scheduled publish immediately */
-  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
+  'release.toast.publish-scheduled-draft.success':
+    'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> közzétéve lett.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Ez a kiadás le lett választva',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "A(z) '{{title}}' kiadás közzétéve lett",
   /** Error toast for rescheduling a draft */
-  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nem sikerült újraütemezni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
   /** Success toast for rescheduling a draft */
-  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
+  'release.toast.reschedule-scheduled-draft.success':
+    'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> újraütemezve lett.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'E dokumentum egy verziója már hozzá lett adva',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1464,14 +1477,14 @@ export default removeUndefinedLocaleResources({
   'release.version-list.tooltip': 'Az összes dokumentumverzió megtekintése',
 
   /** Confirm button text for the schedule publish dialog */
-  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  'schedule-publish-dialog.confirm': 'Ütemezés',
   /** Description for the schedule publish dialog */
-  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  'schedule-publish-dialog.description': 'Válassza ki, mikor legyen közzétéve ez a dokumentum.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': undefined, // 'Schedule draft for publishing'
+  'schedule-publish-dialog.header': 'Tervezett vázlat közzététele',
 
   /** Title for a scheduled draft release */
-  'scheduled-drafts.release.title': undefined, // 'Scheduled publish'
+  'scheduled-drafts.release.title': 'Tervezett közzététel',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Keresés megnyitása',
@@ -2120,7 +2133,7 @@ export default removeUndefinedLocaleResources({
    */
   'workspaces.action.choose-another-workspace': 'Válassz másik munkaterületet',
   /** Label for title to switch workspace before workspaces are listed */
-  'workspaces.action.switch-workspace': undefined, // 'Switch workspace'
+  'workspaces.action.switch-workspace': 'Munkaterület váltása',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Válasszd ki a munkaterületet',
   /** Label for the workspace menu */
