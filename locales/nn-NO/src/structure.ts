@@ -87,7 +87,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Du ser eit skrivebeskytta dokument som vart arkivert som ein del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikkje redigerast',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Denne planlagde utkastet er arkivert',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Kan ikkje opprette eit utkastdokument.',
@@ -188,7 +188,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'Vi kunne ikkje finne dokumentrevisjonen som er vald, vennligst velg eit anna innlegg frå historielista.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Eit planlagt utkast for dette dokumentet eksisterer. Om du publiserer endringar no, vil dei bli overskrivne når planen utførast.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Dette dokumentet vil bli avpublisert som ein del av <VersionBadge>{{title}}</VersionBadge> utgjevinga',
@@ -633,5 +634,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Utgjeving med id "{{releaseId}}" ikkje funnet',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Endringar i teksten',
 })
