@@ -85,7 +85,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Această versiune a documentului aparține lansării arhivate <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Acest draft programat este arhivat',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nu se poate crea un document draft.',
@@ -174,7 +174,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'Nu am putut găsi revizia documentului selectată, vă rugăm să selectați o altă intrare din lista istoricului.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Există un draft programat pentru acest document. Dacă publicați modificări acum, acestea vor fi suprascrise când programarea este executată.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Acest document va fi nepublicat ca parte a lansării <VersionBadge>{{title}}</VersionBadge>',
@@ -609,5 +610,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Lansarea cu id-ul "{{releaseId}}" nu a fost găsită',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Modificări în linie',
 })
