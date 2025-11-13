@@ -86,7 +86,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Aquesta versió del document pertany a la versió arxivada <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Aquest esborrany programat està arxivat',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     "No es pot crear un document d'esborrany.",
@@ -186,7 +186,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     "No hem pogut trobar la revisió del document seleccionada, si us plau seleccioneu una altra entrada de la llista d'historial.",
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    "Existeix un esborrany programat per a aquest document. Si publiqueu canvis ara, seran sobreescrits quan s'executi la programació.",
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Aquest document serà despublicat com a part de la publicació <VersionBadge>{{title}}</VersionBadge>',
@@ -638,5 +639,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'No s\'ha trobat la publicació amb id "{{releaseId}}"',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Canvis en línia',
 })
