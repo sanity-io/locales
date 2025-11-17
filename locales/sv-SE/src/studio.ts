@@ -1377,16 +1377,16 @@ export default removeUndefinedLocaleResources({
   'release.dialog.delete-schedule-draft.body':
     'Är du säker på att du vill ta bort detta schemalagda utkast? Denna åtgärd kan inte ångras.',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': 'Ja, ta bort schema',
+  'release.dialog.delete-schedule-draft.confirm': 'Ja, ta bort schemaläggning',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Ta bort schemalagt utkast',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body':
     'Välj ett nytt datum och tid för den schemalagda publiceringen.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': 'Uppdatera schema',
+  'release.dialog.edit-schedule.confirm': 'Uppdatera schemaläggning',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': 'Ändra schema',
+  'release.dialog.edit-schedule.header': 'Ändra schemaläggning',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Är du säker på att du vill publicera detta schemalagda utkast omedelbart?',
