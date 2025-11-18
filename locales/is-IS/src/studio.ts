@@ -19,22 +19,22 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Afritað á klippiborð. Gleðilegt líming!',
+    'Afritað á klippiborð. Gleðilega límingu!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Afrita á klippiborð',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Núverandi útgáfa',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Hvernig á að uppfæra',
+  'about-dialog.version-info.how-to-upgrade': 'Hvernig á að uppfæra?',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Nýjasta útgáfa',
   /** Info text when auto updates is enabled and a new version is available */
   'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Ný útgáfa', // 'New version'
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Endurhlaða', // 'Reload'
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
   /** "Development" tooltip in About-dialog */
@@ -48,13 +48,13 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'Uppfært',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Uppfæra', // 'Update'
   /** "Upgrade"-button tooltip text */
   'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Notandaaðili',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Skoða á GitHub', // 'View on GitHub'
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Loka',
@@ -148,7 +148,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.show-usage.title': 'Sýna notkun',
   'asset-source.file.asset-list.delete-failed': 'Ekki tókst að eyða skránni',
   'asset-source.file.asset-list.delete-successful': 'Skrá var eytt',
-  'asset-source.file.asset-list.header.date-added': 'Dagsetning bætt við',
+  'asset-source.file.asset-list.header.date-added': 'Dagsetningu bætt við',
   /** File asset source */
   'asset-source.file.asset-list.header.filename': 'Skráarnafn',
   'asset-source.file.asset-list.header.size': 'Stærð',
