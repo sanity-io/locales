@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.25](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.24...locale-pl-pl-v1.2.25) (2025-11-19)
+
+
+### Bug Fixes
+
+* **pl-PL:** automated translation updates ([#1359](https://github.com/sanity-io/locales/issues/1359)) ([ef3ae43](https://github.com/sanity-io/locales/commit/ef3ae43cdf15d3d125b2a553db9d89cc66a008c2))
+
 ## [1.2.24](https://github.com/sanity-io/locales/compare/locale-pl-pl-v1.2.23...locale-pl-pl-v1.2.24) (2025-11-13)
 
 
