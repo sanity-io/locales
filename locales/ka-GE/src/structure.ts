@@ -85,7 +85,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'თქვენ ნახულობთ მხოლოდ წაკითხვის დოკუმენტს, რომელიც არქივდა <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად. იგი ვერ შეიცვლება',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'ეს დაგეგმილი ჩანაწერი დაარქივებულია',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'ვერ შეიქმნება დრაფტის დოკუმენტი.',
@@ -184,7 +184,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'ჩვენ ვერ ვპოულობთ არჩეულ დოკუმენტის რევიზიას, გთხოვთ, აირჩიეთ სხვა ჩანაწერი ისტორიის სიიდან.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'ამ დოკუმენტისთვის არსებობს დაგეგმილი ჩანაწერი. თუ ახლა გააქტიურებთ ცვლილებებს, ისინი გადაწერილი იქნება, როდესაც დაგეგმვა შესრულდება.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'ეს დოკუმენტი გამოქვეყნდება <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად',
@@ -627,5 +628,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'გამოშვება id-ით "{{releaseId}}" ვერ მოიძებნა',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'შიდა ცვლილებები',
 })
