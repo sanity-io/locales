@@ -1362,6 +1362,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '预定的草稿文档 <strong>{{title}}</strong> 已被重新安排。',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': '预定草稿已发布',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文档的一个版本已被添加',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
