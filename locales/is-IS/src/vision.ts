@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'Fest útgáfa',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': 'Áætlaðar drög',
+  'settings.perspectives.scheduled-drafts': 'Áætluð drög',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

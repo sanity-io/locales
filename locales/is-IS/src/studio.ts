@@ -210,7 +210,7 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.select-dialog.title_video': 'Velja myndband fyrir {{targetTitle}}',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
-    'Notaðu til staðar verandi skrá sem fannst í safninu.',
+    'Notaðu núverandi skrá sem fannst í safninu.',
   'asset-sources.media-library.warning.file-already-exist.title':
     "Skrá: '{{filename}}' er þegar til",
 
@@ -1372,7 +1372,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.title': 'Ný útgáfa',
   /** Body text for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.body':
-    'Ertu viss um að þú viljir eyða þessum tímasetta drögum? Þessi aðgerð er óafturkræf.',
+    'Ertu viss um að þú viljir eyða þessum tímasettu drögum? Þessi aðgerð er óafturkræf.',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Já, eyða tímasetningu',
   /** Header for the dialog confirming deletion of a scheduled draft */
