@@ -85,7 +85,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Você está visualizando um documento somente leitura que foi arquivado como parte de <VersionBadge>{{title}}</VersionBadge>. Ele não pode ser editado',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': undefined, // 'This scheduled draft is archived'
+  'banners.archived-scheduled-draft.description': 'Este rascunho agendado está arquivado',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Não é possível criar um documento rascunho.',
@@ -185,7 +185,8 @@ export default removeUndefinedLocaleResources({
   'banners.revision-not-found.description':
     'Não conseguimos encontrar a revisão do documento selecionada, por favor selecione outra entrada da lista de histórico.',
   /** The text content for the scheduled draft override banner */
-  'banners.scheduled-draft-override-banner.text': undefined, // 'A scheduled draft for this document exists. If you publish changes now they will be overwritten when the schedule runs.'
+  'banners.scheduled-draft-override-banner.text':
+    'Existe um rascunho agendado para este documento. Se você publicar alterações agora, elas serão sobrescritas quando o agendamento for executado.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Este documento será despublicado como parte do lançamento <VersionBadge>{{title}}</VersionBadge>',
@@ -638,5 +639,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Lançamento com id "{{releaseId}}" não encontrado',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': undefined, // 'Inline changes'
+  'toggle-inline-changes.menu-item.title': 'Alterações em linha',
 })
