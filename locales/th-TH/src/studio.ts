@@ -1394,6 +1394,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกเปลี่ยนกำหนดการแล้ว',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'การร่างตามกำหนดเวลาได้รับการเผยแพร่แล้ว',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
