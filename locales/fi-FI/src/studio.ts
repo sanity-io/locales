@@ -1454,6 +1454,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on uudelleen ajoitettu.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Ajastettu luonnos julkaistiin',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
