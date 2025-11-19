@@ -1448,6 +1448,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>의 일정이 변경되었습니다.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': '예약된 초안이 발행되었습니다',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '이 문서의 버전이 이미 추가되었습니다',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
