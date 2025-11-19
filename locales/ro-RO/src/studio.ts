@@ -2,11 +2,12 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Configuration issue" header */
-  'about-dialog.configuration-issue.header': undefined, // 'Configuration issue detected'
+  'about-dialog.configuration-issue.header': 'Problemă de configurare detectată',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
-  'about-dialog.configuration-issue.missing-appid': undefined, // 'Auto updates is enabled, but no <code>deployment.appId</code> configured in <code>sanity.cli.ts</code>. This Studio is updating against the <strong>latest</strong>-channel.'
+  'about-dialog.configuration-issue.missing-appid':
+    'Actualizările automate sunt activate, dar nu este configurat niciun <code>deployment.appId</code> în <code>sanity.cli.ts</code>. Acest Studio se actualizează împotriva canalului <strong>latest</strong>.',
   /** "View documentation" link for auto-updating studios */
-  'about-dialog.configuration-issue.missing-appid.view-documentation': undefined, // 'View documentation'
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Vezi documentația',
   /** "Disabled" status for auto-updates in About-dialog */
   'about-dialog.version-info.auto-updates.disabled': 'Dezactivat',
   /** "Enabled" status for auto-updates in About-dialog */
@@ -16,7 +17,7 @@ export default removeUndefinedLocaleResources({
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
   'about-dialog.version-info.auto-updates.how-to-enable': 'Cum să activezi',
   /** "Manage version" link text */
-  'about-dialog.version-info.auto-updates.manage-version': undefined, // 'Manage version'
+  'about-dialog.version-info.auto-updates.manage-version': 'Gestionează versiunea',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
     'Copiat! Acum puteți lipi cu încredere.',
@@ -29,32 +30,32 @@ export default removeUndefinedLocaleResources({
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Ultima versiune',
   /** Info text when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.new-auto-update-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.new-auto-update-version-available': 'Versiune nouă disponibilă',
   /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
-  'about-dialog.version-info.new-version.text': undefined, // 'New version'
+  'about-dialog.version-info.new-version.text': 'Versiune nouă',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': undefined, // 'Reload'
+  'about-dialog.version-info.reload': 'Reîncarcă',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': undefined, // 'Reload Studio to update'
+  'about-dialog.version-info.reload-to-update': 'Reîncarcă Studio pentru a actualiza',
   /** "Development" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.development': undefined, // 'Development'
+  'about-dialog.version-info.tooltip.development': 'Dezvoltare',
   /** "New version available" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.new-version-available': undefined, // 'New version available'
+  'about-dialog.version-info.tooltip.new-version-available': 'Versiune nouă disponibilă',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': undefined, // 'Prerelease'
+  'about-dialog.version-info.tooltip.prerelease': 'Pre-lansare',
   /** "Up to date" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.up-to-date': undefined, // 'Up to date'
+  'about-dialog.version-info.tooltip.up-to-date': 'La zi',
   /** @deprecated "Up to date" status in About-dialog */
   'about-dialog.version-info.up-to-date': 'La zi',
   /** "Upgrade"-button text */
-  'about-dialog.version-info.update-button.text': undefined, // 'Update'
+  'about-dialog.version-info.update-button.text': 'Actualizează',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip': undefined, // 'Learn how to update Sanity Studio'
+  'about-dialog.version-info.update-button.tooltip': 'Află cum să actualizezi Sanity Studio',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Agent utilizator',
   /** "View on GitHub" link from version info dialog */
-  'about-dialog.version-info.view-on-github': undefined, // 'View on GitHub'
+  'about-dialog.version-info.view-on-github': 'Vezi pe GitHub',
 
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Închide',
@@ -126,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog title for images */
   'asset-source.dialog.default-title_image': 'Selectează imagine',
   /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': undefined, // 'Select video'
+  'asset-source.dialog.default-title_video': 'Selectează video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Eroare la inserarea fișierului. Vedeți consola pentru mai multe informații.',
@@ -198,12 +199,17 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.file.title': 'Biblioteca Media',
   'asset-sources.media-library.image.title': 'Biblioteca Media',
   /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
-  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
+  'asset-sources.media-library.select-dialog.title_file':
+    'Selectarea fișierului pentru {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_image':
+    'Selectarea imaginii pentru {{targetTitle}}',
+  'asset-sources.media-library.select-dialog.title_video':
+    'Selectarea videoclipului pentru {{targetTitle}}',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description': undefined, // 'Using the existing file found in the library.'
-  'asset-sources.media-library.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Utilizând fișierul existent găsit în bibliotecă.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Fișierul: '{{filename}}' există deja",
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Lansarea '<strong>{{title}}</strong>' a fost ștearsă.",
@@ -464,7 +470,7 @@ export default removeUndefinedLocaleResources({
   'document.type.not-found': 'Tipul documentului "{{type}}" nu a fost găsit',
 
   /** Error message shown when an action cannot be performed */
-  'errors.unable-to-perform-action': undefined, // 'Unable to perform this action'
+  'errors.unable-to-perform-action': 'Nu se poate efectua această acțiune',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -563,7 +569,7 @@ export default removeUndefinedLocaleResources({
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Ultima versiune este {{latestVersion}}',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': undefined, // 'Reload to update to v{{newVersion}}'
+  'help-resources.studio-auto-update-now': 'Reîncarcă pentru a actualiza la v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versiunea Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1261,7 +1267,7 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to release */
   'release.action.add-to-release': 'Adaugă la {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': undefined, // 'Document already exists in release'
+  'release.action.already-exists-in-release': 'Documentul există deja în lansare',
   /** Action message for when document is already in release  */
   'release.action.already-in-release': 'Deja în lansarea {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
@@ -1269,21 +1275,21 @@ export default removeUndefinedLocaleResources({
   /** Action message for creating new releases */
   'release.action.create-new': 'Lansare nouă',
   /** Description for toast when version creation failed */
-  'release.action.create-version.failure': undefined, // 'Failed to create version'
+  'release.action.create-version.failure': 'Crearea versiunii a eșuat',
   /** Action message for deleting a scheduled publish */
-  'release.action.delete-schedule': undefined, // 'Delete schedule'
+  'release.action.delete-schedule': 'Șterge programarea',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Renunță la versiune',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Eșec la renunțarea versiunii',
   /** Action message for editing the schedule of a scheduled publish */
-  'release.action.edit-schedule': undefined, // 'Edit schedule'
+  'release.action.edit-schedule': 'Editează programarea',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Lansare Nouă',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nu ai permisiunea de a efectua această acțiune',
   /** Action message for running a scheduled draft immediately */
-  'release.action.publish-now': undefined, // 'Publish now'
+  'release.action.publish-now': 'Publică acum',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
     'Vă rugăm să încercați din nou sau verificați conexiunea. Documentul va rămâne nepublicat la lansare.',
@@ -1305,7 +1311,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Vizualizează lansarea',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': undefined, // 'View scheduled drafts'
+  'release.action.view-scheduled-drafts': 'Vezi schițele programate',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programată pentru publicare pe {{date}}',
   /** Label for Draft chip in document header */
@@ -1344,23 +1350,26 @@ export default removeUndefinedLocaleResources({
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Lansare nouă',
   /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body': undefined, // 'Are you sure you want to delete this scheduled draft? This action cannot be undone.'
+  'release.dialog.delete-schedule-draft.body':
+    'Ești sigur că vrei să ștergi această schiță programată? Această acțiune nu poate fi anulată.',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': undefined, // 'Yes, delete schedule'
+  'release.dialog.delete-schedule-draft.confirm': 'Da, șterge programarea',
   /** Header for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.header': undefined, // 'Delete scheduled draft'
+  'release.dialog.delete-schedule-draft.header': 'Șterge schița programată',
   /** Body text for change schedule dialog */
-  'release.dialog.edit-schedule.body': undefined, // 'Select a new date and time for the scheduled publish.'
+  'release.dialog.edit-schedule.body':
+    'Selectează o nouă dată și oră pentru publicarea programată.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': undefined, // 'Update schedule'
+  'release.dialog.edit-schedule.confirm': 'Actualizează programarea',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': undefined, // 'Change schedule'
+  'release.dialog.edit-schedule.header': 'Schimbă programarea',
   /** Body text for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.body': undefined, // 'Are you sure you want to publish this scheduled draft immediately?'
+  'release.dialog.publish-scheduled-draft.body':
+    'Ești sigur că vrei să publici imediat această schiță programată?',
   /** Confirm button text for running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.confirm': undefined, // 'Yes, run now'
+  'release.dialog.publish-scheduled-draft.confirm': 'Da, rulează acum',
   /** Header for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.header': undefined, // 'Publish draft now'
+  'release.dialog.publish-scheduled-draft.header': 'Publică schița acum',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
     'Ora estimată a lansării este folosită pentru a crea previzualizări mai bune și indicii despre posibilele conflicte între documente.',
@@ -1373,9 +1382,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Ascunde lansarea',
   /** Label for the release menu */
-  'release.menu.label': undefined, // 'Release menu'
+  'release.menu.label': 'Meniu lansare',
   /** Tooltip for the release menu */
-  'release.menu.tooltip': undefined, // 'Actions'
+  'release.menu.tooltip': 'Acțiuni',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Schițe',
   /** Label for published releases in navbar */
@@ -1385,9 +1394,10 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Lansare fără titlu',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Programează pentru o dată și oră viitoare.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': undefined, // 'Publish on'
+  'release.schedule-dialog.select-publish-date-label': 'Publică la',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Această lansare a fost dezafixată',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
@@ -1395,23 +1405,29 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Crearea lansării a eșuat',
   /** Error toast for deleting a scheduled draft */
-  'release.toast.delete-schedule-draft.error': undefined, // 'Failed to delete the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.delete-schedule-draft.error':
+    'Nu s-a reușit ștergerea documentului schiță programat <strong>{{title}}</strong>: {{error}}',
   /** Success toast for deleting a scheduled draft */
-  'release.toast.delete-schedule-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been deleted.'
+  'release.toast.delete-schedule-draft.success':
+    'Documentul schiță programat <strong>{{title}}</strong> a fost șters.',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.not-found-release.title': "Lansarea '{{title}}' nu a putut fi găsită",
   /** Error toast for running a scheduled publish immediately */
-  'release.toast.publish-scheduled-draft.error': undefined, // 'Failed to publish the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.publish-scheduled-draft.error':
+    'Nu s-a reușit publicarea documentului schiță programat <strong>{{title}}</strong>: {{error}}',
   /** Success toast for running a scheduled publish immediately */
-  'release.toast.publish-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been published.'
+  'release.toast.publish-scheduled-draft.success':
+    'Documentul schiță programat <strong>{{title}}</strong> a fost publicat.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Această lansare a fost dezafixată',
   /** The toast title that will be shown when the user has a release perspective which is now deleted */
   'release.toast.published-release.title': "Lansarea '{{title}}' a fost publicată",
   /** Error toast for rescheduling a draft */
-  'release.toast.reschedule-scheduled-draft.error': undefined, // 'Failed to reschedule the scheduled draft document <strong>{{title}}</strong>: {{error}}'
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nu s-a reușit reprogramarea documentului schiță programat <strong>{{title}}</strong>: {{error}}',
   /** Success toast for rescheduling a draft */
-  'release.toast.reschedule-scheduled-draft.success': undefined, // 'The scheduled draft document <strong>{{title}}</strong> has been rescheduled.'
+  'release.toast.reschedule-scheduled-draft.success':
+    'Documentul schiță programat <strong>{{title}}</strong> a fost reprogramat.',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'O versiune a acestui document a fost deja adăugată',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1427,14 +1443,14 @@ export default removeUndefinedLocaleResources({
   'release.version-list.tooltip': 'Vezi toate versiunile documentului',
 
   /** Confirm button text for the schedule publish dialog */
-  'schedule-publish-dialog.confirm': undefined, // 'Schedule'
+  'schedule-publish-dialog.confirm': 'Programează',
   /** Description for the schedule publish dialog */
-  'schedule-publish-dialog.description': undefined, // 'Select when this document should be published.'
+  'schedule-publish-dialog.description': 'Selectează când ar trebui publicat acest document.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': undefined, // 'Schedule draft for publishing'
+  'schedule-publish-dialog.header': 'Programează publicarea ciornelor',
 
   /** Title for a scheduled draft release */
-  'scheduled-drafts.release.title': undefined, // 'Scheduled publish'
+  'scheduled-drafts.release.title': 'Publicare programată',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Deschide căutarea',
@@ -2067,7 +2083,7 @@ export default removeUndefinedLocaleResources({
    */
   'workspaces.action.choose-another-workspace': 'Alege alt spațiu de lucru',
   /** Label for title to switch workspace before workspaces are listed */
-  'workspaces.action.switch-workspace': undefined, // 'Switch workspace'
+  'workspaces.action.switch-workspace': 'Schimbă spațiul de lucru',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Alegeți spațiul de lucru',
   /** Label for the workspace menu */
