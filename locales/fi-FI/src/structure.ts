@@ -203,6 +203,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Avaa asiakirjan toiminnot',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Asiakirjatoiminnot',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Kutista kaikki paneelit',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Keskity paneeliin',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Kutista kaikki paneelit',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Keskity paneeliin',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Jaa ruutu oikealle',
   /** The tool tip for the split pane button on the document panel header */
