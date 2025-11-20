@@ -201,6 +201,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Otevřít akce dokumentu',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Akce dokumentu',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Sbalit všechny panely',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Zaměřit panel',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Sbalit všechny panely',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Zaměřit panel',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Rozdělit panel vpravo',
   /** The tool tip for the split pane button on the document panel header */
