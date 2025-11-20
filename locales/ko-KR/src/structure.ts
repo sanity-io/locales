@@ -190,6 +190,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': '문서 작업 열기',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': '문서 작업',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': '모든 패널 접기',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': '패널에 집중',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': '모든 패널 접기',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': '패널에 집중',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': '오른쪽으로 창 분할',
   /** The tool tip for the split pane button on the document panel header */
