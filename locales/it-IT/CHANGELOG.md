@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.25](https://github.com/sanity-io/locales/compare/locale-it-it-v1.1.24...locale-it-it-v1.1.25) (2025-11-19)
+
+
+### Bug Fixes
+
+* **it-IT:** automated translation updates ([#1351](https://github.com/sanity-io/locales/issues/1351)) ([bc56fa6](https://github.com/sanity-io/locales/commit/bc56fa6ba6e531d31623bb6ede102e0247c663d9))
+
 ## [1.1.24](https://github.com/sanity-io/locales/compare/locale-it-it-v1.1.23...locale-it-it-v1.1.24) (2025-11-13)
 
 
