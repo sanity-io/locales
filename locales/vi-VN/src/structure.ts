@@ -191,6 +191,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Mở hành động tài liệu',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Hành động tài liệu',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Thu gọn tất cả các pane',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Tập trung pane',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Thu gọn tất cả các pane',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Tập trung pane',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Chia cửa sổ bên phải',
   /** The tool tip for the split pane button on the document panel header */
