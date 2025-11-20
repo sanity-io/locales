@@ -188,6 +188,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'เปิดการกระทำของเอกสาร',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'การกระทำของเอกสาร',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'ยุบทุกพาเนล',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'โฟกัสพาเนล',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'ยุบทุกพาเนล',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'โฟกัสพาเนล',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'แยกหน้าต่างไปทางขวา',
   /** The tool tip for the split pane button on the document panel header */
