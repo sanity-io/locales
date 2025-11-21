@@ -1453,6 +1453,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Zakazani dokument skice <strong>{{title}}</strong> je preusmjeren.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Planirani nacrt je objavljen',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Verzija ovog dokumenta je već dodana',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
