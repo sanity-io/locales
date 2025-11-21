@@ -192,6 +192,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Deschide acțiunile documentului',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Acțiuni document',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Restrânge toate panourile',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Focalizează panoul',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Restrânge toate panourile',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Focalizează panoul',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Împarte panoul dreapta',
   /** The tool tip for the split pane button on the document panel header */
