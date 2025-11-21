@@ -1462,6 +1462,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> újraütemezve lett.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Az ütemezett vázlat közzétéve',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'E dokumentum egy verziója már hozzá lett adva',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
