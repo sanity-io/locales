@@ -85,7 +85,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Þú ert að skoða skjal sem er aðeins til lesturs og var vistað sem hluti af <VersionBadge>{{title}}</VersionBadge>. Það er ekki hægt að breyta því',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': 'Þessi áætlaði drög eru skjalasafnað',
+  'banners.archived-scheduled-draft.description': 'Þessi áætluðu drög eru í skjalageymslu',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Ekki er hægt að búa til drög að skjali.',
