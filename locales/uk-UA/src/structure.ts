@@ -192,6 +192,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Відкрити дії з документом',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Дії з документом',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Згорнути всі панелі',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Фокусувати панель',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Згорнути всі панелі',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Фокусувати панель',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Розділити панель праворуч',
   /** The tool tip for the split pane button on the document panel header */
