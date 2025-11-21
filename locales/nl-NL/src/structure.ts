@@ -204,6 +204,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Documentacties openen',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Documentacties',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Alle panelen samenvouwen',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Paneel focussen',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Alle panelen samenvouwen',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Paneel focussen',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Deelvenster rechts splitsen',
   /** The tool tip for the split pane button on the document panel header */
