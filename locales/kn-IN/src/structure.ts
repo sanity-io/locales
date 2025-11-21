@@ -201,6 +201,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'ದಾಖಲೆ ಕ್ರಿಯೆಗಳನ್ನು ತೆರೆಯಿರಿ',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'ದಾಖಲೆ ಕ್ರಿಯೆಗಳು',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'ಎಲ್ಲಾ ಪ್ಯಾನ್‌ಗಳನ್ನು ಸಂಕೋಚಿಸಿ',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'ಪ್ಯಾನ್‌ಗೆ ಗಮನಹರಿಸಿ',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'ಎಲ್ಲಾ ಪ್ಯಾನ್‌ಗಳನ್ನು ಸಂಕೋಚಿಸಿ',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'ಪ್ಯಾನ್‌ಗೆ ಗಮನಹರಿಸಿ',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'ಪ್ಯಾನೆಲ್ ಬಲಕ್ಕೆ ವಿಭಜಿಸಿ',
   /** The tool tip for the split pane button on the document panel header */
