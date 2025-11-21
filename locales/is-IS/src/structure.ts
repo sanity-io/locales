@@ -201,6 +201,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Opna skjalaðgerðir',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Aðgerðir skjals',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Fella saman alla glugga',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Beina sjónum að glugga',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Fella saman alla glugga',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Beina sjónum að glugga',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Kljúfa glugga til hægri',
   /** The tool tip for the split pane button on the document panel header */
