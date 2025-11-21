@@ -1454,6 +1454,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> için yeni bir zamanlama yapıldı.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Zamanlanmış taslak yayınlandı',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
