@@ -1448,6 +1448,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Tímasettu drögin <strong>{{title}}</strong> hafa verið endurtímasett.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Áætlaða drögin voru birt',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Útgáfa af þessu skjali hefur þegar verið bætt við',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
