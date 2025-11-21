@@ -1457,6 +1457,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಮರುನಿಗದಿಪಡಿಸಲಾಗಿದೆ.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'ನಿಗದಿತ ಡ್ರಾಫ್ಟ್ ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ಈ ದಾಖಲೆಯ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
