@@ -205,6 +205,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Apri le azioni del documento',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Azioni documento',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': undefined, // 'Collapse all panes'
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': undefined, // 'Focus pane'
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': undefined, // 'Collapse all panes'
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': undefined, // 'Focus pane'
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dividi pannello a destra',
   /** The tool tip for the split pane button on the document panel header */

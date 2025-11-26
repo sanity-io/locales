@@ -462,6 +462,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Redigert {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': undefined, // 'Last published'
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Ikkje publisert',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1451,6 +1453,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Det planlagde utkastdokumentet <strong>{{title}}</strong> har blitt planlagt på nytt.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': undefined, // 'The scheduled draft was published'
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Ein versjon av dette dokumentet har allereie blitt lagt til',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
