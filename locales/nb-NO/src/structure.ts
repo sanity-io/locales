@@ -203,6 +203,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Åpne dokumenthandlinger',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumenthandlinger',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Skjul alle paneler',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Fokuser panel',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Skjul alle paneler',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Fokuser panel',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Del panel til høyre',
   /** The tool tip for the split pane button on the document panel header */
