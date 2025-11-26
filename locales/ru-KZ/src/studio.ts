@@ -453,6 +453,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Отредактировано {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Последняя публикация',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Не опубликовано',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1421,6 +1423,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Документ запланированного черновика <strong>{{title}}</strong> был перенесен.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Запланированный черновик опубликован',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
