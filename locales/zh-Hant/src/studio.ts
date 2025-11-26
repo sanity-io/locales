@@ -433,6 +433,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '編輯於 {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '最後發布',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '未發布',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1364,6 +1366,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '預定草稿文件 <strong>{{title}}</strong> 已被重新安排。',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': '預定草稿已發布',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文件的一個版本已經被添加',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */

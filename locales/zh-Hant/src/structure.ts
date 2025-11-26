@@ -177,6 +177,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': '打開文件操作',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': '文件操作',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': '收合所有面板',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': '專注面板',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': '收合所有面板',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': '專注面板',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': '向右分割窗格',
   /** The tool tip for the split pane button on the document panel header */
