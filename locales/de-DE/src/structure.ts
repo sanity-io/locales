@@ -207,6 +207,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Dokumentaktionen öffnen',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumentaktionen',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Alle Bereiche zusammenklappen',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Bereich fokussieren',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Alle Bereiche zusammenklappen',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Bereich fokussieren',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Teile das Fenster rechts',
   /** The tool tip for the split pane button on the document panel header */
