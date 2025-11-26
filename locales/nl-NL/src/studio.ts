@@ -468,6 +468,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Bewerkt {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Laatst gepubliceerd',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Niet gepubliceerd',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1464,6 +1466,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is opnieuw gepland.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'Het geplande concept is gepubliceerd',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Een versie van dit document is al toegevoegd',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
