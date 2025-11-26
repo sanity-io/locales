@@ -199,6 +199,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Belge işlemlerini aç',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Belge işlemleri',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Tüm panelleri daralt',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Paneli odakla',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Tüm panelleri daralt',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Paneli odakla',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Sağa bölünmüş paneli aç',
   /** The tool tip for the split pane button on the document panel header */
