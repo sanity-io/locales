@@ -474,6 +474,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Editado {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Última publicación',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'No publicado',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1462,6 +1464,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'El documento de borrador programado <strong>{{title}}</strong> ha sido reprogramado.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': 'El borrador programado fue publicado',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Ya se ha añadido una versión de este documento',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
