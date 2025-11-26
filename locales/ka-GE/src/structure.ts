@@ -202,6 +202,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'დოკუმენტის ქმედებების გახსნა',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'დოკუმენტის ქმედებები',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'ყველა პანელის შეკუმშვა',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'პანელის ფოკუსირება',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'ყველა პანელის შეკუმშვა',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'პანელის ფოკუსირება',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'გაყოფა ფანჯარა მარჯვნივ',
   /** The tool tip for the split pane button on the document panel header */
