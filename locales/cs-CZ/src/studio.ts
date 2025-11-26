@@ -462,6 +462,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Editováno {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Naposledy publikováno',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Nepublikováno',
   /** Label to show in the document footer indicating the published date of the document */
