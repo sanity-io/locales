@@ -192,6 +192,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Открыть действия документа',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Действия с документом',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Свернуть все панели',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Сфокусировать панель',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Свернуть все панели',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Сфокусировать панель',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Разделить панель справа',
   /** The tool tip for the split pane button on the document panel header */
