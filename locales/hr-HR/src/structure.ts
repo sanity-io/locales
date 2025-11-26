@@ -203,6 +203,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Otvori akcije dokumenta',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Akcije dokumenta',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Skupi sve panele',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Fokusiraj panel',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Skupi sve panele',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Fokusiraj panel',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Podijeli ploču desno',
   /** The tool tip for the split pane button on the document panel header */
