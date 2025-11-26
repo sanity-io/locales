@@ -463,6 +463,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}}에 편집됨',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '마지막으로 발행됨',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '게시되지 않음',
   /** Label to show in the document footer indicating the published date of the document */
