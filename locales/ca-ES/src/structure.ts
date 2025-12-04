@@ -204,6 +204,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Obre les accions del document',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Accions del document',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Col·lapsa tots els panells',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Centra el panell',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Col·lapsa tots els panells',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Centra el panell',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Divideix el panell a la dreta',
   /** The tool tip for the split pane button on the document panel header */
