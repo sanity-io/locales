@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '마지막으로 발행된 이후의 모든 변경 사항을 버리시겠습니까?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    '이 초안 문서의 모든 변경 사항을 버리고 삭제하시겠습니까?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': '변경 사항을 버리시겠습니까?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': '이 문서에는 발행되지 않은 변경 사항이 없습니다',
   /** Tooltip when action is disabled because the document is not published */
@@ -158,6 +163,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     '이 문서는 <VersionBadge/> 릴리스의 일부이며 {{count}}개의 릴리스가 더 있습니다',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': '이 문서는 어떤 릴리스의 일부도 아닙니다',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     '이 문서는 <VersionBadge/> 릴리스의 일부입니다',
