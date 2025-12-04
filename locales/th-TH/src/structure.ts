@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'คุณแน่ใจหรือไม่ว่าต้องการทิ้งการเปลี่ยนแปลงทั้งหมดนับตั้งแต่การเผยแพร่ครั้งล่าสุด?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'คุณแน่ใจหรือไม่ว่าต้องการทิ้งการเปลี่ยนแปลงทั้งหมดและลบเอกสารร่างนี้?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'ทิ้งการเปลี่ยนแปลง?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'เอกสารนี้ไม่มีการเปลี่ยนแปลงที่ยังไม่ได้เผยแพร่',
   /** Tooltip when action is disabled because the document is not published */
@@ -156,6 +161,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'เอกสารนี้เป็นส่วนหนึ่งของการปล่อย <VersionBadge/> และอีก {{count}} การปล่อย',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'เอกสารนี้ไม่ได้เป็นส่วนหนึ่งของการปล่อยใดๆ',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'เอกสารนี้เป็นส่วนหนึ่งของการปล่อย <VersionBadge/>',
