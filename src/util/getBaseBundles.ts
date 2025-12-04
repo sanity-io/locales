@@ -10,7 +10,7 @@ import {getRootPath} from './getRootPath'
 import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 
 const DEPENDENCIES = ['sanity', '@sanity/vision']
-const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/lib/**/*.mjs`
+const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/lib/**/*.js`
 const LOCALE_DEF_FN_NAME = 'defineLocalesResources'
 
 /**
