@@ -466,6 +466,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}}に編集されました',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '最終公開',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '未公開',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1460,6 +1462,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> のスケジュールが変更されました。',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  'release.toast.scheduled-draft-published.title': '予定されていたドラフトが公開されました',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
