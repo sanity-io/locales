@@ -1317,11 +1317,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'สร้างรีลีส',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'สร้างการปล่อย',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'คุณแน่ใจหรือไม่ว่าต้องการลบร่างที่มีตารางเวลานี้? การกระทำนี้ไม่สามารถย้อนกลับได้',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'ลบร่างที่กำหนดเวลานี้หรือไม่? ร่างของคุณอัปเดตแล้ว',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'ลบร่างที่กำหนดเวลานี้หรือไม่? การเปลี่ยนแปลงของคุณจะถูกบันทึกไว้ในร่าง',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'ลบร่างที่กำหนดเวลานี้หรือไม่?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'ใช่ ลบตารางเวลา',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'เก็บการเปลี่ยนแปลงที่กำหนดเวลาไว้โดยการคัดลอกไปยังร่าง (แนะนำ)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'ร่างที่กำหนดเวลาของคุณมีการเปลี่ยนแปลงที่แตกต่างจากร่างปัจจุบันของคุณ',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'ลบร่างที่กำหนดการไว้',
   /** Body text for change schedule dialog */
@@ -1366,9 +1377,13 @@ export default removeUndefinedLocaleResources({
     'กำหนดการเผยแพร่นี้สำหรับเวลาและวันในอนาคต',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'กำหนดการเผยแพร่ใน',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "การปล่อย '{{title}}' ได้ถูกเก็บถาวร",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ไม่สามารถสร้างการปล่อยได้',
@@ -1378,7 +1393,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกลบแล้ว',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "ไม่พบการปล่อย '{{title}}'",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1386,9 +1403,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกเผยแพร่แล้ว',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "รีลีส '{{title}}' ได้ถูกเผยแพร่",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1396,7 +1417,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกเปลี่ยนกำหนดการแล้ว',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'การร่างตามกำหนดเวลาได้รับการเผยแพร่แล้ว',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
@@ -1411,6 +1434,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'ยังไม่ตัดสินใจ',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'ดูเวอร์ชันเอกสารทั้งหมด',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'ติดต่อฝ่ายสนับสนุน',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'ปัญหาการกำหนดค่าการเผยแพร่เนื้อหา',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'การเผยแพร่เนื้อหาถูกเปิดใช้งานสำหรับโปรเจคของคุณ แต่ดูเหมือนว่าจะมีปัญหาการกำหนดค่ากับขีดจำกัดการเผยแพร่ของคุณ กรุณาติดต่อฝ่ายสนับสนุนเพื่อให้การเผยแพร่เนื้อหาของคุณได้รับการกำหนดค่าอย่างถูกต้อง',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'กำหนดการ',
