@@ -1377,11 +1377,23 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Luo julkaisu',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Luo julkaisu',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Oletko varma, että haluat poistaa tämän aikataulutetun luonnoksen? Tätä toimintoa ei voi peruuttaa.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Poistetaanko tämä aikataulutettu luonnos? Luonnoksesi on jo ajan tasalla.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Poistetaanko tämä aikataulutettu luonnos? Muutoksesi tallennetaan luonnokseen.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'Poistetaanko tämä aikataulutettu luonnos?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Kyllä, poista aikataulu',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Säilytä aikataulutetut muutokset kopioimalla ne luonnokseen (suositeltavaa)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Aikataulutetussa luonnoksessasi on erilaisia muutoksia kuin nykyisessä luonnoksessasi.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Poista ajoitettu luonnos',
   /** Body text for change schedule dialog */
@@ -1426,9 +1438,13 @@ export default removeUndefinedLocaleResources({
     'Ajoita tämä julkaisu tulevaisuuden ajankohtaan.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Ajoita',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "'{{title}}' julkaisu on arkistoitu",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Julkaisun luonti epäonnistui',
@@ -1438,7 +1454,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on poistettu.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "'{{title}}' julkaisua ei löytynyt",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1446,9 +1464,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on julkaistu.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Julkaisu '{{title}}' on julkaistu",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1456,7 +1478,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on uudelleen ajoitettu.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Ajastettu luonnos julkaistiin',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
@@ -1471,6 +1495,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Ei päätetty',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Näe kaikki dokumenttiversiot',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Ota yhteyttä tukeen',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Sisällön julkaisujen konfiguraatio-ongelma',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Sisällön julkaisut ovat käytössä projektissasi, mutta julkaisurajoituksesi konfiguraatiossa näyttää olevan ongelma. Ota yhteyttä tukeen, jotta sisällön julkaisusi saadaan asianmukaisesti konfiguroitua.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Aikatauluta',
