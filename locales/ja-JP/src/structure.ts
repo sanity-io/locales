@@ -18,6 +18,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '最後に公開してからのすべての変更を破棄してもよろしいですか？',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'このドラフトドキュメントのすべての変更を破棄してもよろしいですか？',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': '変更を破棄しますか？',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'このドキュメントには未公開の変更がありません',
   /** Tooltip when action is disabled because the document is not published */
@@ -168,6 +173,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'このドキュメントは<VersionBadge/>リリースの一部であり、さらに{{count}}つのリリースにも含まれています',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'このドキュメントはどのリリースにも属していません',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'このドキュメントは<VersionBadge/>リリースの一部です',
