@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.26](https://github.com/sanity-io/locales/compare/locale-it-it-v1.1.25...locale-it-it-v1.1.26) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **it-IT:** automated translation updates ([#1408](https://github.com/sanity-io/locales/issues/1408)) ([daef2b1](https://github.com/sanity-io/locales/commit/daef2b18881e7b7b79ff3704a786bdef6662bd0a))
+
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-it-it-v1.1.24...locale-it-it-v1.1.25) (2025-11-19)
 
 
