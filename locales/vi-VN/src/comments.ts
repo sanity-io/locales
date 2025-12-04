@@ -76,6 +76,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Thêm bình luận',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Đã xảy ra lỗi trong quá trình tải bình luận',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Đi đến trường {{field}}',
   /** The button tooltip content for the add reaction button */

@@ -1329,11 +1329,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Tạo phiên bản',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Tạo phiên bản',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Bạn có chắc chắn muốn xóa bản nháp đã lên lịch này không? Hành động này không thể hoàn tác.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Xóa bản nháp lịch trình này? Bản nháp của bạn đã được cập nhật.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Xóa bản nháp lịch trình này? Thay đổi của bạn sẽ được lưu vào bản nháp.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Xóa bản nháp lịch trình này?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Vâng, xóa lịch trình',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Giữ lại các thay đổi theo lịch trình của tôi bằng cách sao chép chúng vào bản nháp (được khuyến nghị)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Bản nháp lịch trình của bạn có những thay đổi khác biệt so với bản nháp hiện tại của bạn.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Xóa bản nháp đã lên lịch',
   /** Body text for change schedule dialog */
@@ -1378,9 +1389,13 @@ export default removeUndefinedLocaleResources({
     'Lên lịch phát hành này cho một thời gian và ngày trong tương lai.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Lên lịch vào',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Phiên bản này đã được gỡ ghim',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Phiên bản '{{title}}' đã được lưu trữ",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Tạo phiên bản không thành công',
@@ -1390,7 +1405,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã bị xóa.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Không tìm thấy phiên bản '{{title}}'",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1398,9 +1415,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã được xuất bản.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Phiên bản này đã được gỡ ghim',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Phiên bản '{{title}}' đã được xuất bản",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1408,7 +1429,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã được lên lịch lại.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Bản nháp đã lên lịch đã được xuất bản',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Một phiên bản của tài liệu này đã được thêm vào',
@@ -1422,6 +1445,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Chưa quyết định',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Xem tất cả các phiên bản tài liệu',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Liên hệ Hỗ trợ',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Vấn đề cấu hình phát hành nội dung',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Phát hành nội dung đã được kích hoạt cho dự án của bạn, nhưng có vẻ như có một vấn đề cấu hình với giới hạn phát hành của bạn. Vui lòng liên hệ hỗ trợ để cấu hình phát hành nội dung của bạn một cách chính xác.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Lên lịch',
