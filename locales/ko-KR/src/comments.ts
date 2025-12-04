@@ -75,6 +75,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': '댓글 추가',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': '댓글을 로딩하는 동안 문제가 발생했습니다',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} 필드로 이동',
   /** The button tooltip content for the add reaction button */

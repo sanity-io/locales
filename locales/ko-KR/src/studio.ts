@@ -1372,11 +1372,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': '릴리스 생성',
   /** Title for creating releases dialog */
   'release.dialog.create.title': '릴리스 생성',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    '예약된 초안을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    '이 예약된 초안을 삭제하시겠습니까? 귀하의 초안은 이미 최신 상태입니다.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    '이 예약된 초안을 삭제하시겠습니까? 변경 사항은 초안에 저장됩니다.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': '이 예약된 초안을 삭제하시겠습니까?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': '예, 일정 삭제',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    '예약된 변경 사항을 초안에 복사하여 보관합니다(권장)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    '귀하의 예약된 초안은 현재 초안과 다른 변경 사항이 있습니다.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '예약된 초안 삭제',
   /** Body text for change schedule dialog */
@@ -1420,9 +1431,13 @@ export default removeUndefinedLocaleResources({
     '이 릴리스를 미래의 시간과 날짜로 예약하세요.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '예약 날짜',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': '이 릴리스는 고정 해제되었습니다',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "'{{title}}' 릴리스가 보관되었습니다",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '릴리스 생성 실패',
@@ -1432,7 +1447,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>가 삭제되었습니다.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "'{{title}}' 릴리스를 찾을 수 없습니다",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1440,9 +1457,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>가 게시되었습니다.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': '이 릴리스는 고정 해제되었습니다',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "'{{title}}' 릴리스가 게시되었습니다",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1450,7 +1471,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>의 일정이 변경되었습니다.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': '예약된 초안이 발행되었습니다',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '이 문서의 버전이 이미 추가되었습니다',
@@ -1464,6 +1487,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': '미정',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': '모든 문서 버전 보기',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': '지원팀에 문의하기',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': '콘텐츠 릴리스 구성 문제',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    '귀하의 프로젝트에 콘텐츠 릴리스가 활성화되어 있지만, 릴리스 제한에 구성 문제가 있는 것으로 보입니다. 콘텐츠 릴리스가 올바르게 구성되도록 지원팀에 문의해 주세요.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': '예약',
