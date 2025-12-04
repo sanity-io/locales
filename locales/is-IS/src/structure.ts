@@ -17,6 +17,10 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Ertu viss um að þú viljir henda öllum breytingum síðan síðast var birt?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft': undefined, // 'Are you sure you want to discard all changes and delete this draft document?'
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': undefined, // 'Discard changes?'
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Þetta skjal hefur engar óbirtar breytingar',
   /** Tooltip when action is disabled because the document is not published */
@@ -169,6 +173,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Þetta skjal er hluti af <VersionBadge/> útgáfunni og {{count}} öðrum útgáfum',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': undefined, // 'This document is not part of any release'
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Þetta skjal er hluti af <VersionBadge/> útgáfunni',
@@ -201,6 +209,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Opna skjalaðgerðir',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Aðgerðir skjals',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': undefined, // 'Exit focus mode (show navigation)'
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': undefined, // 'Enter focus mode (hide navigation)'
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': undefined, // 'Exit focus mode'
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': undefined, // 'Enter focus mode'
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Kljúfa glugga til hægri',
   /** The tool tip for the split pane button on the document panel header */

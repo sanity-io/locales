@@ -1386,11 +1386,18 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Kiadás létrehozása',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Új kiadás',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Biztosan törölni szeretné ezt az ütemezett vázlatot? Ezt a műveletet nem lehet visszavonni.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current': undefined, // 'Delete this scheduled draft? Your draft is already up to date.'
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft': undefined, // 'Delete this scheduled draft? Your changes will be saved to draft.'
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': undefined, // 'Delete this scheduled draft?'
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Igen, ütemezés törlése',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox': undefined, // 'Keep my scheduled changes by copying them to draft (recommended)'
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation': undefined, // 'Your scheduled draft has different changes than your current draft.'
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Ütemezett vázlat törlése',
   /** Body text for change schedule dialog */
@@ -1434,9 +1441,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Jövőbeli időpontra és dátumra ütemezze.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Közzététel ekkor',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Ez a kiadás le lett választva',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Az '{{title}}' kiadás archiválva lett",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'A kiadás létrehozása sikertelen',
@@ -1446,7 +1457,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> törölve lett.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "A(z) '{{title}}' kiadás nem található",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1454,9 +1467,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> közzétéve lett.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Ez a kiadás le lett választva',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "A(z) '{{title}}' kiadás közzétéve lett",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1464,7 +1481,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> újraütemezve lett.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Az ütemezett vázlat közzététele megtörtént',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'E dokumentum egy verziója már hozzá lett adva',
@@ -1479,6 +1498,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Döntetlen',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Az összes dokumentumverzió megtekintése',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': undefined, // 'Contact Support'
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': undefined, // 'Content releases configuration issue'
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message': undefined, // 'Content releases are enabled for your project, but there appears to be a configuration issue with your release limits. Please contact support to have your content releases properly configured.'
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Ütemezés',

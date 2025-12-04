@@ -1383,11 +1383,18 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'リリースを作成',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'リリースを作成',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'この予定された下書きを削除してもよろしいですか？この操作は元に戻せません。',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current': undefined, // 'Delete this scheduled draft? Your draft is already up to date.'
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft': undefined, // 'Delete this scheduled draft? Your changes will be saved to draft.'
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': undefined, // 'Delete this scheduled draft?'
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'はい、スケジュールを削除',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox': undefined, // 'Keep my scheduled changes by copying them to draft (recommended)'
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation': undefined, // 'Your scheduled draft has different changes than your current draft.'
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '予定された下書きを削除',
   /** Body text for change schedule dialog */
@@ -1432,9 +1439,13 @@ export default removeUndefinedLocaleResources({
     '将来の時間と日付にスケジュールしてください。',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '公開日',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'このリリースはピン留めが解除されました',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "'{{title}}' リリースはアーカイブされました",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'リリースの作成に失敗しました',
@@ -1444,7 +1455,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> が削除されました。',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "'{{title}}' リリースが見つかりませんでした",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1452,9 +1465,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> が公開されました。',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'このリリースはピン留めが解除されました',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "'{{title}}' リリースが公開されました",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1462,7 +1479,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> のスケジュールが変更されました。',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': '予定されていたドラフトが公開されました',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
@@ -1477,6 +1496,13 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': '未定',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'すべてのドキュメントバージョンを見る',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': undefined, // 'Contact Support'
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': undefined, // 'Content releases configuration issue'
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message': undefined, // 'Content releases are enabled for your project, but there appears to be a configuration issue with your release limits. Please contact support to have your content releases properly configured.'
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'スケジュールする',
