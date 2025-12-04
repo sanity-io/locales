@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '¿Estás seguro de que quieres descartar todos los cambios desde la última publicación?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    '¿Está seguro de que desea descartar todos los cambios y eliminar este documento borrador?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': '¿Descartar cambios?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Este documento no tiene cambios sin publicar',
   /** Tooltip when action is disabled because the document is not published */
@@ -170,6 +175,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Este documento es parte del lanzamiento <VersionBadge/> y {{count}} lanzamientos más',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Este documento no forma parte de ningún lanzamiento',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Este documento es parte del lanzamiento <VersionBadge/>',
