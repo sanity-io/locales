@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Bạn có chắc chắn muốn hủy bỏ tất cả các thay đổi kể từ lần xuất bản cuối cùng không?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Bạn có chắc chắn muốn loại bỏ tất cả các thay đổi và xóa bản nháp này không?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Loại bỏ các thay đổi?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Tài liệu này không có thay đổi chưa xuất bản',
   /** Tooltip when action is disabled because the document is not published */
@@ -159,6 +164,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Tài liệu này là một phần của release <VersionBadge/> và {{count}} các release khác',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Tài liệu này không thuộc bất kỳ bản phát hành nào',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Tài liệu này là một phần của release <VersionBadge/>',
