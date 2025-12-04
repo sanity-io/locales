@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.29](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.28...locale-nn-no-v1.1.29) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **nn-NO:** automated translation updates ([#1415](https://github.com/sanity-io/locales/issues/1415)) ([be959b6](https://github.com/sanity-io/locales/commit/be959b6dacb6866da2638f9b3380856af04b3eb9))
+
 ## [1.1.28](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.27...locale-nn-no-v1.1.28) (2025-11-19)
 
 

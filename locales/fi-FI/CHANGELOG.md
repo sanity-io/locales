@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.27](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.26...locale-fi-fi-v1.1.27) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **fi-FI:** automated translation updates ([#1457](https://github.com/sanity-io/locales/issues/1457)) ([adffdcf](https://github.com/sanity-io/locales/commit/adffdcf8b508bb39c170dfdd0ca62a3ccc257ce6))
+* **fi-FI:** automated translation updates ([#1478](https://github.com/sanity-io/locales/issues/1478)) ([8028b50](https://github.com/sanity-io/locales/commit/8028b50a3508f0dd8e71a75084488a19ff53ffff))
+
 ## [1.1.26](https://github.com/sanity-io/locales/compare/locale-fi-fi-v1.1.25...locale-fi-fi-v1.1.26) (2025-11-26)
 
 

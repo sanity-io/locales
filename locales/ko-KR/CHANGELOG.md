@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.27](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.26...locale-ko-kr-v1.1.27) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **ko-KR:** automated translation updates ([#1463](https://github.com/sanity-io/locales/issues/1463)) ([b7d9bc6](https://github.com/sanity-io/locales/commit/b7d9bc6da7d458933417e2c17fbd8f84413d809d))
+* **ko-KR:** automated translation updates ([#1479](https://github.com/sanity-io/locales/issues/1479)) ([f180b12](https://github.com/sanity-io/locales/commit/f180b12e5654db96bd2ecabfacd85ab9bb9d9381))
+
 ## [1.1.26](https://github.com/sanity-io/locales/compare/locale-ko-kr-v1.1.25...locale-ko-kr-v1.1.26) (2025-11-26)
 
 

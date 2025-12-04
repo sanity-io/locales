@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.29](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.28...locale-ja-jp-v1.1.29) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **ja-JP:** automated translation updates ([#1409](https://github.com/sanity-io/locales/issues/1409)) ([6160b93](https://github.com/sanity-io/locales/commit/6160b93013251737f12e1bd52340d605efe82ebe))
+
 ## [1.1.28](https://github.com/sanity-io/locales/compare/locale-ja-jp-v1.1.27...locale-ja-jp-v1.1.28) (2025-11-19)
 
 

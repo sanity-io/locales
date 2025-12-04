@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.26](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.25...locale-cs-cz-v1.1.26) (2025-12-04)
+
+
+### Bug Fixes
+
+* **cs-CZ:** automated translation updates ([#1454](https://github.com/sanity-io/locales/issues/1454)) ([bc62cf3](https://github.com/sanity-io/locales/commit/bc62cf3482c2254e7ccd31b8a879d3817fcc6ea1))
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.24...locale-cs-cz-v1.1.25) (2025-11-26)
 
 

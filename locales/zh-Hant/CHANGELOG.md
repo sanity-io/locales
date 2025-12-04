@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.29](https://github.com/sanity-io/locales/compare/locale-zh-hant-v2.2.28...locale-zh-hant-v2.2.29) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+
 ## [2.2.28](https://github.com/sanity-io/locales/compare/locale-zh-hant-v2.2.27...locale-zh-hant-v2.2.28) (2025-11-26)
 
 

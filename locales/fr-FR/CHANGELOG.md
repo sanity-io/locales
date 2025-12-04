@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.27](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.2.26...locale-fr-fr-v1.2.27) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **fr-FR:** automated translation updates ([#1404](https://github.com/sanity-io/locales/issues/1404)) ([59e4625](https://github.com/sanity-io/locales/commit/59e4625fcd579da6b032bf4755a09e00f35fae47))
+
 ## [1.2.26](https://github.com/sanity-io/locales/compare/locale-fr-fr-v1.2.25...locale-fr-fr-v1.2.26) (2025-11-19)
 
 
