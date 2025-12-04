@@ -204,6 +204,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Dokumentum műveletek megnyitása',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumentum műveletek',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Összes panel összecsukása',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Panel fókuszálása',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Összes panel összecsukása',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Panel fókuszálása',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Jobbra osztott panel',
   /** The tool tip for the split pane button on the document panel header */
