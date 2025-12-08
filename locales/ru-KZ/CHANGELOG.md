@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.26](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.25...locale-ru-kz-v1.1.26) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **ru-KZ:** automated translation updates ([#1420](https://github.com/sanity-io/locales/issues/1420)) ([2aed660](https://github.com/sanity-io/locales/commit/2aed6604694782dfb128f13692e731eabce12b0d))
+
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-ru-kz-v1.1.24...locale-ru-kz-v1.1.25) (2025-11-19)
 
 

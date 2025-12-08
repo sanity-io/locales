@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.23](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.22...locale-da-dk-v1.0.23) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+
 ## [1.0.22](https://github.com/sanity-io/locales/compare/locale-da-dk-v1.0.21...locale-da-dk-v1.0.22) (2025-11-19)
 
 

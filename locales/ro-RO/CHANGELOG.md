@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.8](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.7...locale-ro-ro-v1.0.8) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+* **ro-RO:** automated translation updates ([#1419](https://github.com/sanity-io/locales/issues/1419)) ([0776be3](https://github.com/sanity-io/locales/commit/0776be31cf4bbf2f6e62dc81de938c1e97328545))
+
 ## [1.0.7](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.6...locale-ro-ro-v1.0.7) (2025-11-19)
 
 
