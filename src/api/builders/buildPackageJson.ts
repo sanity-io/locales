@@ -8,6 +8,7 @@ import {readJsonFile} from '../../util/readJsonFile'
 
 const MINIMUM_SANITY_VERSION_3 = '3.22.0'
 const MINIMUM_SANITY_VERSION_4 = '4.0.0-0'
+const MINIMUM_SANITY_VERSION_5 = '5.0.0-0'
 
 export async function buildPackageJson(locale: Locale): Promise<string> {
   const targetPath = joinPath(await getLocalePath(locale), 'package.json')
@@ -51,7 +52,7 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
       directory: `locales/${locale.id}`,
     },
     peerDependencies: {
-      sanity: [MINIMUM_SANITY_VERSION_3, MINIMUM_SANITY_VERSION_4]
+      sanity: [MINIMUM_SANITY_VERSION_3, MINIMUM_SANITY_VERSION_4, MINIMUM_SANITY_VERSION_5]
         .map((version) => (/^(\d+|\d+\.\d+\.\d+(-\d+)?)$/.test(version) ? `^${version}` : version))
         .join(' || '),
     },
