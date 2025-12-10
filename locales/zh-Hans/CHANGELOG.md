@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.28](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.27...locale-zh-hans-v2.1.28) (2025-12-10)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1486](https://github.com/sanity-io/locales/issues/1486)) ([6bc3469](https://github.com/sanity-io/locales/commit/6bc34698d2ffece2e3a04b84d65ee3317a7cb3a5))
+* **zh-Hans:** automated translation updates ([#1492](https://github.com/sanity-io/locales/issues/1492)) ([551dc3c](https://github.com/sanity-io/locales/commit/551dc3c01706048266f74e5e75fc79cdb39e5642))
+
 ## [2.1.27](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.26...locale-zh-hans-v2.1.27) (2025-12-04)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.28](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.27...locale-vi-vn-v1.1.28) (2025-12-10)
+
+
+### Bug Fixes
+
+* **deps:** allow sanity v5 as peer dependency ([#1486](https://github.com/sanity-io/locales/issues/1486)) ([6bc3469](https://github.com/sanity-io/locales/commit/6bc34698d2ffece2e3a04b84d65ee3317a7cb3a5))
+* **vi-VN:** automated translation updates ([#1491](https://github.com/sanity-io/locales/issues/1491)) ([628f9af](https://github.com/sanity-io/locales/commit/628f9af836bea411e0695b3b384c1ae54a1bba79))
+
 ## [1.1.27](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.26...locale-vi-vn-v1.1.27) (2025-12-04)
 
 
