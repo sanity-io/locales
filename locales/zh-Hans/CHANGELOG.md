@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.29](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.28...locale-zh-hans-v2.1.29) (2025-12-10)
+
+
+### Bug Fixes
+
+* **deps:** update peer range of `sanity` package ([#1493](https://github.com/sanity-io/locales/issues/1493)) ([bdfc3b7](https://github.com/sanity-io/locales/commit/bdfc3b78bfdbeee6928d9031cba3c940a23549ef))
+
 ## [2.1.28](https://github.com/sanity-io/locales/compare/locale-zh-hans-v2.1.27...locale-zh-hans-v2.1.28) (2025-12-10)
 
 
