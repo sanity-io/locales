@@ -433,6 +433,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '編輯於 {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '最後發布',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '未發布',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1290,10 +1292,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': '創建發布',
   /** Title for creating releases dialog */
   'release.dialog.create.title': '新建發布',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body': '您確定要刪除這個預定草稿嗎？此操作無法撤銷。',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    '刪除這個預定草稿？您的草稿已經是最新的。',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    '刪除這個預定草稿？您的更改將被保存到草稿。',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': '刪除這個預定草稿？',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': '是的，刪除排程',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    '通過將它們複製到草稿來保留我的預定更改（推薦）',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    '您的預定草稿與您當前的草稿有不同的更改。',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '刪除預定草稿',
   /** Body text for change schedule dialog */
@@ -1334,9 +1348,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': '請安排一個未來的時間和日期。',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '發布於',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': '此發布已被取消固定',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': '「{{title}}」發布已存檔',
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '創建發布失敗',
@@ -1346,7 +1364,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     '預定草稿文件 <strong>{{title}}</strong> 已被刪除。',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "找不到 '{{title}}' 發布",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1354,9 +1374,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '預定草稿文件 <strong>{{title}}</strong> 已被發布。',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': '此發布已被取消固定',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': '「{{title}}」發布已發布',
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1364,7 +1388,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '預定草稿文件 <strong>{{title}}</strong> 已被重新安排。',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': '已發布預定草稿',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文件的一個版本已經被添加',
@@ -1378,6 +1404,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': '未決定',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': '查看所有文件版本',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': '聯繫支持',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': '內容發布配置問題',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    '您的項目已啟用內容發布，但您的發布限制配置似乎存在問題。請聯繫支持以正確配置您的內容發布。',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': '安排',

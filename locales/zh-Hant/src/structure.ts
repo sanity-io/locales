@@ -16,6 +16,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '您確定要放棄自上次發布以來的所有更改嗎？',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    '您確定要放棄所有更改並刪除此草稿文件嗎？',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': '放棄更改？',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': '此文件沒有未發布的更改',
   /** Tooltip when action is disabled because the document is not published */
@@ -147,6 +152,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     '此文件是<VersionBadge/>發布的一部分，以及其他{{count}}個發布',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': '此文件不屬於任何發布',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single': '此文件是<VersionBadge/>發布的一部分',
   /** The text for the banner that appears when a document is not in the current global release */
