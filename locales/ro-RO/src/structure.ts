@@ -17,6 +17,10 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Sunteți sigur că doriți să renunțați la toate modificările de la ultima publicare?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft': undefined, // 'Are you sure you want to discard all changes and delete this draft document?'
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': undefined, // 'Discard changes?'
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Acest document nu are modificări nepublicate',
   /** Tooltip when action is disabled because the document is not published */
@@ -160,6 +164,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
     'Acest document face parte din lansarea <VersionBadge/> și încă {{count}} lansare.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': undefined, // 'This document is not part of any release'
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Acest document face parte din lansarea <VersionBadge/>',
