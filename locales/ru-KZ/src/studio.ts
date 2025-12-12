@@ -1345,11 +1345,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Создать релиз',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Новый релиз',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Вы уверены, что хотите удалить этот запланированный черновик? Это действие не может быть отменено.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Удалить этот запланированный черновик? Ваш черновик уже обновлен.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Удалить этот запланированный черновик? Ваши изменения будут сохранены в черновик.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Удалить этот запланированный черновик?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Да, удалить расписание',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Сохранить мои запланированные изменения, скопировав их в черновик (рекомендуется)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Ваш запланированный черновик содержит изменения, отличные от текущего черновика.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Удалить запланированный черновик',
   /** Body text for change schedule dialog */
@@ -1393,9 +1404,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Запланируйте на будущее время и дату.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Опубликовать в',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Этот релиз был откреплен',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Релиз '{{title}}' был архивирован",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Не удалось создать релиз',
@@ -1405,7 +1420,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Документ запланированного черновика <strong>{{title}}</strong> был удален.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Релиз '{{title}}' не был найден",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1413,9 +1430,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Документ запланированного черновика <strong>{{title}}</strong> был опубликован.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Этот релиз был откреплен',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Релиз '{{title}}' был опубликован",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1423,7 +1444,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Документ запланированного черновика <strong>{{title}}</strong> был перенесен.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Запланированный черновик опубликован',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
@@ -1438,6 +1461,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Не решено',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Посмотреть все версии документа',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Связаться со службой поддержки',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Проблема конфигурации выпусков контента',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Выпуски контента включены для вашего проекта, но, похоже, есть проблема с конфигурацией ваших лимитов выпусков. Пожалуйста, свяжитесь со службой поддержки, чтобы правильно настроить выпуски вашего контента.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Запланировать',
