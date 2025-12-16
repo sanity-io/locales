@@ -1373,11 +1373,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'გამოშვების შექმნა',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'ახალი რელიზი',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'დარწმუნებული ხართ, რომ გსურთ ამ დაგეგმილი ჩანაწერის წაშლა? ეს ქმედება არ შეიძლება გაუქმება.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'წაშალოთ დაგეგმილი დრაფტი? თქვენი დრაფტი უკვე განახლებულია.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'წაშალოთ დაგეგმილი დრაფტი? თქვენი ცვლილებები შეინახება დრაფტში.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'წაშალოთ დაგეგმილი დრაფტი?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'დიახ, წაშალე განრიგი',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'შეინახეთ დაგეგმილი ცვლილებები, ასლის გაკეთებით დრაფტში (რეკომენდირებულია)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'თქვენი დაგეგმილი დრაფტი შეიცავს ცვლილებებს, რომლებიც განსხვავებულია თქვენი მიმდინარე დრაფტისგან.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'დაგეგმილი ჩანაწერის წაშლა',
   /** Body text for change schedule dialog */
@@ -1420,9 +1431,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'დაგეგმეთ მომავალ დროსა და თარიღზე.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'გამოქვეყნება',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'ეს გამოშვება გამოიშვა',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "რელიზი '{{title}}' დაარქივდა",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'რელიზის შექმნა ჩაიშალა',
@@ -1432,7 +1447,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'დაგეგმილი ჩანაწერის დოკუმენტი <strong>{{title}}</strong> წაშლილია.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "ვერ მოიძებნა '{{title}}' რელიზი",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1440,9 +1457,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'დაგეგმილი ჩანაწერის დოკუმენტი <strong>{{title}}</strong> გამოქვეყნებულია.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'ეს გამოშვება გამოიშვა',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "გამოშვება '{{title}}' გამოიცა",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1450,7 +1471,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'დაგეგმილი ჩანაწერის დოკუმენტი <strong>{{title}}</strong> გადაგეგმილია.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'დაგეგმილი დრაფტი გამოქვეყნდა',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ამ დოკუმენტის ვერსია უკვე დაემატა',
@@ -1465,6 +1488,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'უმართავი',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'იხილეთ ყველა დოკუმენტის ვერსია',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'დაკავშირება სამხარდაჭერო გუნდთან',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'კონტენტის გამოშვების კონფიგურაციის პრობლემა',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'თქვენს პროექტში ჩართულია კონტენტის გამოშვებები, თუმცა ჩანს, რომ არსებობს კონფიგურაციის პრობლემა თქვენი გამოშვების ლიმიტებით. გთხოვთ, დაკავშირდით სამხარდაჭერო გუნდთან, რათა თქვენი კონტენტის გამოშვებები სწორად კონფიგურირდეს.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'დაგეგმვა',
