@@ -77,6 +77,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Додати коментар',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Щось пішло не так під час завантаження коментарів',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Перейти до поля {{field}}',
   /** The button tooltip content for the add reaction button */
