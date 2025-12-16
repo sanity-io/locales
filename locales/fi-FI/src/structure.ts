@@ -232,6 +232,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Muokkaa Canvasissa',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Tätä dokumenttia voi muokata Canvasissa.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvasin avulla voit kirjoittaa vapaasti ja sen jälkeen päivittää sisältöä Studioon ilman manuaalista kenttä kentältä -kopioimista.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Vapaa muotoilu',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Tämä luonnosdokumentti on linkitetty Canvasiin',
   /** The text for the canvas linked banner when the document is a live document */
