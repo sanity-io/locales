@@ -1378,11 +1378,23 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Sürüm oluştur',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Yeni sürüm',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Bu zamanlanmış taslağı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Bu zamanlanmış taslağı silmek istiyor musunuz? Taslağınız zaten güncel.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Bu zamanlanmış taslağı silmek istiyor musunuz? Değişiklikleriniz taslağa kaydedilecek.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'Bu zamanlanmış taslağı silmek istiyor musunuz?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Evet, zamanlamayı sil',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Zamanlanmış değişikliklerimi kopyalayarak taslağımda sakla (önerilir)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Zamanlanmış taslağınızın mevcut taslağınızdan farklı değişiklikleri var.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Zamanlanmış Taslağı Sil',
   /** Body text for change schedule dialog */
@@ -1426,9 +1438,13 @@ export default removeUndefinedLocaleResources({
     'Gelecek bir tarih ve saat için zamanlama yapın.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Yayınlanma Tarihi',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "'{{title}}' sürümü arşivlendi",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Sürüm oluşturma başarısız oldu',
@@ -1438,7 +1454,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> silindi.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "'{{title}}' yayını bulunamadı",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1446,9 +1464,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> yayınlandı.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "'{{title}}' sürümü yayınlandı",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1456,7 +1478,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> için yeni bir zamanlama yapıldı.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Planlanan taslak yayınlandı',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
@@ -1471,6 +1495,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Kararsız',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Tüm belge versiyonlarını gör',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Destek ile İletişime Geç',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'İçerik yayınları yapılandırma sorunu',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Projeniz için içerik yayınları etkinleştirilmiş, ancak yayın limitlerinizle ilgili bir yapılandırma sorunu görünüyor. İçerik yayınlarınızın doğru şekilde yapılandırılması için lütfen destek ile iletişime geçin.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Zamanla',
