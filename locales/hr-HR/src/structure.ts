@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Jeste li sigurni da želite odbaciti sve promjene od posljednjeg objavljivanja?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Jeste li sigurni da želite odbaciti sve promjene i izbrisati ovaj nacrt dokumenta?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Odbaciti promjene?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Ovaj dokument nema neobjavljenih promjena',
   /** Tooltip when action is disabled because the document is not published */
@@ -171,6 +176,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Ovaj dokument je dio <VersionBadge/> izdanja i još {{count}} izdanja',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'Ovaj dokument nije dio nijednog izdanja',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Ovaj dokument je dio <VersionBadge/> izdanja',
@@ -203,6 +212,15 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Otvori akcije dokumenta',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Akcije dokumenta',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Izađite iz fokusnog načina (prikažite navigaciju)',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Uđite u fokusni način (sakrijte navigaciju)',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Izađite iz fokusnog načina',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Uđite u fokusni način',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Podijeli ploču desno',
   /** The tool tip for the split pane button on the document panel header */
@@ -214,6 +232,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Uredi u Canvasu',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Ovaj dokument se može uređivati u Canvasu.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas vam omogućuje slobodno pisanje, a zatim ažuriranje sadržaja u Studiju bez ručnog kopiranja polje po polje.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Pisanje slobodnim stilom',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Ovaj nacrt dokumenta je povezan s Canvasom',
   /** The text for the canvas linked banner when the document is a live document */
