@@ -218,6 +218,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Canvas에서 편집',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': '이 문서는 Canvas에서 편집할 수 있습니다.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas를 사용하면 자유롭게 작성한 다음 Studio에서 수동으로 필드 별로 복사하지 않고도 내용을 업데이트할 수 있습니다.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': '자유 형식 글쓰기',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': '이 초안 문서는 Canvas에 연결되어 있습니다',
   /** The text for the canvas linked banner when the document is a live document */
