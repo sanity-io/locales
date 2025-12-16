@@ -18,6 +18,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Biztosan el akarod vetni az összes változtatást az utolsó közzététel óta?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Biztosan el szeretné dobni az összes változtatást és törölni ezt a vázlat dokumentumot?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Változtatások elvetése?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change':
     'Ennek a dokumentumnak nincsenek közzé nem tett változásai',
@@ -172,6 +177,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Ez a dokumentum a <VersionBadge/> kiadás része és még {{count}} további kiadások.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Ez a dokumentum nem része semmilyen kiadásnak',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Ez a dokumentum a <VersionBadge/> kiadás része',
@@ -223,6 +233,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Szerkesztés a Canvas-ban',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Ezt a dokumentumot a Canvasban lehet szerkeszteni.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'A Canvasban szabadon írhat, majd frissítheti a tartalmat a Stúdióban anélkül, hogy manuálisan kellene másolni mezőről mezőre.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Szabad formájú írás',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Ez a vázlat dokumentum a Canvas-hoz van kapcsolva',
   /** The text for the canvas linked banner when the document is a live document */
