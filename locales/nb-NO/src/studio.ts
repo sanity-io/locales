@@ -1376,11 +1376,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Opprett utgivelse',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Ny utgivelse',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Er du sikker på at du vil slette dette planlagte utkastet? Denne handlingen kan ikke angres.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Slette dette planlagte utkastet? Utkastet ditt er allerede oppdatert.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Slette dette planlagte utkastet? Endringene dine vil bli lagret til utkast.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Slette dette planlagte utkastet?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Ja, slett planlegging',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Behold mine planlagte endringer ved å kopiere dem til utkast (anbefales)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Ditt planlagte utkast har forskjellige endringer enn ditt nåværende utkast.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Slett planlagt utkast',
   /** Body text for change schedule dialog */
@@ -1423,9 +1434,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Planlegg for en fremtidig tid og dato.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publiseringsdato',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Denne utgivelsen har blitt løsnet',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Utgivelsen '{{title}}' ble arkivert",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Klarte ikke å opprette utgivelse',
@@ -1435,7 +1450,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt slettet.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Utgivelsen '{{title}}' kunne ikke bli funnet",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1443,9 +1460,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt publisert.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Denne utgivelsen har blitt løsnet',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Utgivelsen '{{title}}' ble publisert",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1453,7 +1474,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt planlagt på nytt.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Det planlagte utkastet ble publisert',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'En versjon av dette dokumentet har allerede blitt lagt til',
@@ -1468,6 +1491,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Ubestemt',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Se alle dokumentversjoner',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Kontakt kundestøtte',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Konfigurasjonsproblem med innholdsutgivelser',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Innholdsutgivelser er aktivert for prosjektet ditt, men det ser ut til å være et konfigurasjonsproblem med grensene for utgivelsene dine. Vennligst kontakt kundestøtte for å få innholdsutgivelsene dine riktig konfigurert.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Planlegg',
