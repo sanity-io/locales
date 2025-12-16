@@ -220,6 +220,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Chỉnh sửa trong Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Tài liệu này có thể được chỉnh sửa trong Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas cho phép bạn viết tự do, sau đó cập nhật nội dung trong Studio mà không cần sao chép thủ công từng trường một.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Viết tự do',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Bản nháp tài liệu này được liên kết với Canvas',
   /** The text for the canvas linked banner when the document is a live document */
