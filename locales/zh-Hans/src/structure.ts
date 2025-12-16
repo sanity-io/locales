@@ -206,6 +206,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': '在Canvas中编辑',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': '此文档可以在Canvas中编辑。',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas允许您自由书写，然后在Studio中更新内容，无需手动逐个字段复制。',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': '自由形式写作',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': '此草稿文档已链接到Canvas',
   /** The text for the canvas linked banner when the document is a live document */
