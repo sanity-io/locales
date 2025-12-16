@@ -216,6 +216,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'แก้ไขใน Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'เอกสารนี้สามารถแก้ไขใน Canvas ได้',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas ช่วยให้คุณเขียนได้อย่างอิสระ แล้วอัปเดตเนื้อหาใน Studio โดยไม่ต้องคัดลอกทีละฟิลด์ด้วยตนเอง',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'การเขียนแบบอิสระ',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'เอกสารร่างนี้เชื่อมโยงกับ Canvas',
   /** The text for the canvas linked banner when the document is a live document */
