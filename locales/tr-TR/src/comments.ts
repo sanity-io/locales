@@ -78,6 +78,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Yorum ekle',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Yorumlar yüklenirken bir hata oluştu',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} alanına git',
   /** The button tooltip content for the add reaction button */

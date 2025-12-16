@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Yayımlanandan bu yana yapılan tüm değişiklikleri atmak istediğinizden emin misiniz?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Bu taslak belgeyi silip tüm değişikliklerden vazgeçmek istediğinizden emin misiniz?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Değişikliklerden vazgeçilsin mi?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Bu belgede yayımlanmamış değişiklik yok',
   /** Tooltip when action is disabled because the document is not published */
@@ -167,6 +172,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Bu belge <VersionBadge/> yayınının bir parçası ve {{count}} fazladan yayınlar.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Bu belge herhangi bir sürümün parçası değil',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Bu belge <VersionBadge/> yayınının bir parçası',
@@ -218,6 +228,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': "Canvas'ta Düzenle",
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': "Bu belge Canvas'ta düzenlenebilir.",
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    "Canvas'ta serbestçe yazabilir, ardından içeriği Studio'da manuel alan bazında kopyalama yapmadan güncelleyebilirsiniz.",
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Serbest formda yazma',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': "Bu taslak belge Canvas'a bağlı",
   /** The text for the canvas linked banner when the document is a live document */
