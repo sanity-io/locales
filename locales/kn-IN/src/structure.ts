@@ -18,6 +18,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'ನೀವು ಕೊನೆಯ ಬಾರಿ ಪ್ರಕಟಿಸಿದ ನಂತರದ ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'ನೀವು ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಿ ಈ ಡ್ರಾಫ್ಟ್ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲು ಖಚಿತವಾಗಿದ್ದೀರಾ?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲು?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'ಈ ದಾಖಲೆಯು ಅಪ್ರಕಟಿತ ಬದಲಾವಣೆಗಳಿಲ್ಲ',
   /** Tooltip when action is disabled because the document is not published */
@@ -169,6 +174,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ ಮತ್ತು {{count}} ಹೆಚ್ಚುವರಿ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'ಈ ದಾಖಲೆಯು ಯಾವುದೇ ಬಿಡುಗಡೆಯ ಭಾಗವಲ್ಲ',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ',
@@ -201,6 +210,15 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'ದಾಖಲೆ ಕ್ರಿಯೆಗಳನ್ನು ತೆರೆಯಿರಿ',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'ದಾಖಲೆ ಕ್ರಿಯೆಗಳು',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse':
+    'ಫೋಕಸ್ ಮೋಡ್ ನಿಂದ ಹೊರಬರುವುದು (ನ್ಯಾವಿಗೇಶನ್ ತೋರಿಸು)',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'ಫೋಕಸ್ ಮೋಡ್ ಗೆ ಪ್ರವೇಶಿಸಿ (ನ್ಯಾವಿಗೇಶನ್ ಮರೆಮಾಡು)',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'ಫೋಕಸ್ ಮೋಡ್ ನಿಂದ ಹೊರಬರುವುದು',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'ಫೋಕಸ್ ಮೋಡ್ ಗೆ ಪ್ರವೇಶಿಸಿ',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'ಪ್ಯಾನೆಲ್ ಬಲಕ್ಕೆ ವಿಭಜಿಸಿ',
   /** The tool tip for the split pane button on the document panel header */
@@ -212,6 +230,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Canvas ನಲ್ಲಿ ಸಂಪಾದಿಸಿ',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'ಈ ದಾಖಲೆಯನ್ನು ಕ್ಯಾನ್ವಾಸ್‌ನಲ್ಲಿ ಸಂಪಾದಿಸಬಹುದು.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'ಕ್ಯಾನ್ವಾಸ್ ನಿಮಗೆ ಸ್ವತಂತ್ರವಾಗಿ ಬರೆಯಲು ಅನುಮತಿಸುತ್ತದೆ, ನಂತರ ಸ್ಟುಡಿಯೋದಲ್ಲಿ ಕಂಟೆಂಟ್ ಅನ್ನು ಕೈಪಿಡಿ ಕ್ಷೇತ್ರ-ಕ್ಷೇತ್ರದ ನಕಲು ಇಲ್ಲದೆ ನವೀಕರಿಸಬಹುದು.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'ಸ್ವತಂತ್ರ-ರೂಪ ಬರವಣಿಗೆ',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'ಈ ಮುಸದ್ದೆ ದಾಖಲೆಯು Canvas ಗೆ ಲಿಂಕ್ ಮಾಡಲಾಗಿದೆ',
   /** The text for the canvas linked banner when the document is a live document */
