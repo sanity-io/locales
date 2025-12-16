@@ -1383,11 +1383,23 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Crear versió',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nova versió',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Estàs segur que vols eliminar aquest esborrany programat? Aquesta acció no es pot desfer.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Voleu eliminar aquest esborrany programat? El vostre esborrany ja està actualitzat.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    "Voleu eliminar aquest esborrany programat? Els vostres canvis es desaran a l'esborrany.",
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'Voleu eliminar aquest esborrany programat?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Sí, elimina el calendari',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    "Mantingueu els meus canvis programats copiant-los a l'esborrany (recomanat)",
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'El vostre esborrany programat té canvis diferents dels del vostre esborrany actual.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': "Elimina l'esborrany programat",
   /** Body text for change schedule dialog */
@@ -1431,9 +1443,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Programa per a un temps i data futurs.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publica el',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Aquesta versió ha estat desancorada',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "La versió '{{title}}' ha estat arxivada",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': "No s'ha pogut crear la release",
@@ -1443,7 +1459,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     "El document d'esborrany programat <strong>{{title}}</strong> ha estat eliminat.",
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "No s'ha trobat la release '{{title}}'",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1451,9 +1469,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     "El document d'esborrany programat <strong>{{title}}</strong> ha estat publicat.",
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Aquesta release ha estat desancorada',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "La release '{{title}}' ha estat publicada",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1461,7 +1483,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     "El document d'esborrany programat <strong>{{title}}</strong> ha estat reprogramat.",
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': "L'esborrany programat ha estat publicat",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': "Ja s'ha afegit una versió d'aquest document",
@@ -1476,6 +1500,15 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Indecís',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Veure totes les versions del document',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Contacteu amb el Suport',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header':
+    'Problema de configuració de les publicacions de contingut',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Les publicacions de contingut estan habilitades per al vostre projecte, però sembla que hi ha un problema de configuració amb els límits de les vostres publicacions. Si us plau, contacteu amb el suport per configurar correctament les vostres publicacions de contingut.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Programa',

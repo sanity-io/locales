@@ -18,6 +18,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     "Estàs segur que vols descartar tots els canvis des de l'última publicació?",
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    "Esteu segurs que voleu descartar tots els canvis i eliminar aquest document d'esborrany?",
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Descartar els canvis?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Aquest document no té canvis sense publicar',
   /** Tooltip when action is disabled because the document is not published */
@@ -171,6 +176,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Aquest document forma part de la publicació <VersionBadge/> i {{count}} publicacions més',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Aquest document no forma part de cap llançament',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Aquest document forma part de la publicació <VersionBadge/>',
@@ -223,6 +233,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Edita a Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Aquest document es pot editar a Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas et permet escriure lliurement, després actualitzar el contingut a Studio sense haver de copiar manualment camp per camp.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Escriptura de forma lliure',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Aquest document esborrany està vinculat a Canvas',
   /** The text for the canvas linked banner when the document is a live document */
