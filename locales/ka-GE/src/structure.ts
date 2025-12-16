@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'დარწმუნებული ხართ, რომ გსურთ ყველა ცვლილებათა გაუქმება ბოლო გამოცემიდან?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'დარწმუნებული ხართ, რომ გსურთ ყველა ცვლილების გაუქმება და ეს დრაფტის დოკუმენტის წაშლა?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'ცვლილებების გაუქმება?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'ეს დოკუმენტი არ აქვს გამოუშვებელი ცვლილებები',
   /** Tooltip when action is disabled because the document is not published */
@@ -170,6 +175,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზისა და კიდევ {{count}} რელიზების',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'ეს დოკუმენტი არ შედის რაიმე გამოშვებაში',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზის',
@@ -221,6 +230,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'რედაქტირება Canvas-ში',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'ეს დოკუმენტი შეიძლება რედაქტირებადი იყოს Canvas-ში.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas გაძლევთ თავისუფლებას თავისუფლად წერაში, შემდეგ კი შინაარსის განახლებას Studio-ში ხელით ველით-ველის კოპირების გარეშე.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'თავისუფლება წერაში',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'ეს დრაფტის დოკუმენტი Canvas-თან არის დაკავშირებული',
   /** The text for the canvas linked banner when the document is a live document */
