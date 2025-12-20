@@ -18,6 +18,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Czy na pewno chcesz odrzucić wszystkie zmiany od ostatniej publikacji?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Czy na pewno chcesz odrzucić wszystkie zmiany i usunąć ten szkic dokumentu?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Odrzucić zmiany?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Ten dokument nie ma nieopublikowanych zmian',
   /** Tooltip when action is disabled because the document is not published */
@@ -161,6 +166,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
     'Ten dokument jest częścią wersji <VersionBadge/> i {{count}} innej wersji.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Ten dokument nie jest częścią żadnego wydania',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Ten dokument jest częścią wersji <VersionBadge/>',
@@ -212,6 +222,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Edytuj w Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Ten dokument może być edytowany w Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas pozwala na swobodne pisanie, a następnie aktualizowanie treści w Studio bez ręcznego kopiowania pola po polu.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Pisanie w formie swobodnej',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Ten szkic dokumentu jest powiązany z Canvas',
   /** The text for the canvas linked banner when the document is a live document */

@@ -1337,11 +1337,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Utwórz wydanie',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nowe wydanie',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Czy na pewno chcesz usunąć ten zaplanowany szkic? Tej akcji nie można cofnąć.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Usunąć ten zaplanowany draft? Twój draft jest już aktualny.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Usunąć ten zaplanowany draft? Twoje zmiany zostaną zapisane do draftu.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Usunąć ten zaplanowany draft?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Tak, usuń harmonogram',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Zachowaj moje zaplanowane zmiany, kopiując je do draftu (zalecane)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Twój zaplanowany draft zawiera inne zmiany niż Twój obecny draft.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Usuń zaplanowany szkic',
   /** Body text for change schedule dialog */
@@ -1384,9 +1395,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Zaplanuj na przyszłą datę i godzinę.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Opublikuj dnia',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'To wydanie zostało odpięte',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Wydanie '{{title}}' zostało zarchiwizowane",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Nie udało się utworzyć wydania',
@@ -1396,7 +1411,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Zaplanowany dokument szkicu <strong>{{title}}</strong> został usunięty.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Nie można znaleźć wydania '{{title}}'",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1404,9 +1421,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Zaplanowany dokument szkicu <strong>{{title}}</strong> został opublikowany.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'To wydanie zostało odpięte',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Wydanie '{{title}}' zostało opublikowane",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1414,7 +1435,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Harmonogram zaplanowanego dokumentu szkicu <strong>{{title}}</strong> został zmieniony.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Zaplanowany szkic został opublikowany',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Wersja tego dokumentu została już dodana',
@@ -1429,6 +1452,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Nieokreślony',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Zobacz wszystkie wersje dokumentu',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Skontaktuj się z pomocą techniczną',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Problem z konfiguracją wydań treści',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Wydań treści są włączone dla Twojego projektu, ale wydaje się, że istnieje problem z konfiguracją limitów wydań. Prosimy o kontakt z pomocą techniczną, aby właściwie skonfigurować wydań treści.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Zaplanuj',
