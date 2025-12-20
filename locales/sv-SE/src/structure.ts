@@ -18,6 +18,10 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Är du säker på att du vill kassera alla ändringar sedan senast publicerat?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft': undefined, // 'Are you sure you want to discard all changes and delete this draft document?'
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': undefined, // 'Discard changes?'
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Detta dokument har inga opubliserade ändringar',
   /** Tooltip when action is disabled because the document is not published */
@@ -172,6 +176,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Detta dokument är en del av <VersionBadge/> releasen och {{count}} ytterligare releaser',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': undefined, // 'This document is not part of any release'
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Detta dokument är en del av <VersionBadge/> releasen',
@@ -223,6 +231,12 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Redigera i Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': undefined, // 'This document can be edited in Canvas.'
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description': undefined, // 'Canvas lets you write freely, then update content in Studio without manual field-by-field copying.'
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': undefined, // 'Free-form writing'
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Detta utkastdokument är länkat till Canvas',
   /** The text for the canvas linked banner when the document is a live document */
