@@ -1396,11 +1396,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Créer une version',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nouvelle version',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Êtes-vous sûr de vouloir supprimer ce brouillon programmé ? Cette action ne peut pas être annulée.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Supprimer ce brouillon programmé ? Votre brouillon est déjà à jour.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Supprimer ce brouillon programmé ? Vos modifications seront enregistrées dans le brouillon.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Supprimer ce brouillon programmé ?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Oui, supprimer le programme',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Conserver mes modifications programmées en les copiant dans le brouillon (recommandé)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Votre brouillon programmé comporte des modifications différentes de votre brouillon actuel.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Supprimer le brouillon programmé',
   /** Body text for change schedule dialog */
@@ -1445,9 +1456,13 @@ export default removeUndefinedLocaleResources({
     'Programmez pour une date et une heure futures.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publier le',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Cette version a été détachée',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "La version '{{title}}' a été archivée",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Échec de la création de la release',
@@ -1457,7 +1472,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Le document de brouillon programmé <strong>{{title}}</strong> a été supprimé.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "La release '{{title}}' n'a pas pu être trouvée",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1465,9 +1482,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Le document de brouillon programmé <strong>{{title}}</strong> a été publié.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Cette version a été détachée',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "La version '{{title}}' a été publiée",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1475,7 +1496,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Le document de brouillon programmé <strong>{{title}}</strong> a été reprogrammé.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Le brouillon programmé a été publié',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Une version de ce document a déjà été ajoutée',
@@ -1490,6 +1513,15 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Indécis',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Voir toutes les versions du document',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Contacter le Support',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header':
+    'Problème de configuration des publications de contenu',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Les publications de contenu sont activées pour votre projet, mais il semble y avoir un problème de configuration avec les limites de vos publications. Veuillez contacter le support pour que vos publications de contenu soient correctement configurées.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Programmer',

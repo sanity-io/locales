@@ -80,6 +80,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Ajouter un commentaire',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': "Une erreur s'est produite lors du chargement des commentaires",
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Aller au champ {{field}}',
   /** The button tooltip content for the add reaction button */
