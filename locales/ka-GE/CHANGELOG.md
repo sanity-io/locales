@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.26](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.25...locale-ka-ge-v1.0.26) (2025-12-20)
+
+
+### Bug Fixes
+
+* **ka-GE:** automated translation updates ([#1462](https://github.com/sanity-io/locales/issues/1462)) ([3adaa95](https://github.com/sanity-io/locales/commit/3adaa955025a4b7b8ce7fdc47907ba736828a8d6))
+
 ## [1.0.25](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.24...locale-ka-ge-v1.0.25) (2025-12-04)
 
 
