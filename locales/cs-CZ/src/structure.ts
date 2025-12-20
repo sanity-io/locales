@@ -230,6 +230,12 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Upravit v Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': undefined, // 'This document can be edited in Canvas.'
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description': undefined, // 'Canvas lets you write freely, then update content in Studio without manual field-by-field copying.'
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': undefined, // 'Free-form writing'
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Tento koncept dokumentu je propojen s Canvas',
   /** The text for the canvas linked banner when the document is a live document */
