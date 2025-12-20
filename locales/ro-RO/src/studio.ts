@@ -1351,11 +1351,23 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Creează lansare',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Lansare nouă',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Ești sigur că vrei să ștergi această schiță programată? Această acțiune nu poate fi anulată.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Ștergeți această programare a draftului? Draftul dumneavoastră este deja actualizat.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Ștergeți această programare a draftului? Modificările dumneavoastră vor fi salvate în draft.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'Ștergeți această programare a draftului?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Da, șterge programarea',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Păstrați modificările programate copiindu-le în draft (recomandat)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Draftul dumneavoastră programat are modificări diferite față de draftul actual.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Șterge schița programată',
   /** Body text for change schedule dialog */
@@ -1400,9 +1412,13 @@ export default removeUndefinedLocaleResources({
     'Programează pentru o dată și oră viitoare.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publică la',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Această lansare a fost dezafixată',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Lansarea '{{title}}' a fost arhivată",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Crearea lansării a eșuat',
@@ -1412,7 +1428,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Documentul schiță programat <strong>{{title}}</strong> a fost șters.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Lansarea '{{title}}' nu a putut fi găsită",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1420,9 +1438,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Documentul schiță programat <strong>{{title}}</strong> a fost publicat.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Această lansare a fost dezafixată',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Lansarea '{{title}}' a fost publicată",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1430,7 +1452,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Documentul schiță programat <strong>{{title}}</strong> a fost reprogramat.',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
   'release.toast.scheduled-draft-published.title': 'Ciorna programată a fost publicată',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'O versiune a acestui document a fost deja adăugată',
@@ -1445,6 +1469,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Nedecis',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Vezi toate versiunile documentului',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Contactați Suportul',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Problemă de configurare a lansărilor de conținut',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Lansările de conținut sunt activate pentru proiectul dumneavoastră, dar pare să existe o problemă de configurare cu limitele lansărilor dumneavoastră. Vă rugăm să contactați suportul pentru a avea lansările de conținut configurate corespunzător.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Programează',
