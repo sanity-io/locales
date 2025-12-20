@@ -78,6 +78,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Legg til kommentar',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Noe gikk galt under lasting av kommentarer',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}}-feltet',
   /** The button tooltip content for the add reaction button */
