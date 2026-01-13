@@ -464,6 +464,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'ಸಂಪಾದಿತ {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'ಕೊನೆಯದಾಗಿ ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1378,11 +1380,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'ಬಿಡುಗಡೆ ರಚಿಸಿ',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'ಬಿಡುಗಡೆ ರಚಿಸಿ',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'ನೀವು ಈ ನಿಗದಿತ ಮುಸದ್ದುವನ್ನು ಅಳಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ? ಈ ಕ್ರಿಯೆಯನ್ನು ಹಿಂತಿರುಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'ಈ ನಿಗದಿತ ಡ್ರಾಫ್ಟ್ ಅಳಿಸಬೇಕೆ? ನಿಮ್ಮ ಡ್ರಾಫ್ಟ್ ಈಗಾಗಲೇ ನವೀಕರಿಸಲಾಗಿದೆ.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'ಈ ನಿಗದಿತ ಡ್ರಾಫ್ಟ್ ಅಳಿಸಬೇಕೆ? ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಡ್ರಾಫ್ಟ್‌ಗೆ ಉಳಿಸಲ್ಪಡುತ್ತವೆ.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'ಈ ನಿಗದಿತ ಡ್ರಾಫ್ಟ್ ಅಳಿಸಬೇಕೆ?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'ಹೌದು, ವೇಳಾಪಟ್ಟಿ ಅಳಿಸು',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'ನನ್ನ ನಿಗದಿತ ಬದಲಾವಣೆಗಳನ್ನು ಡ್ರಾಫ್ಟ್‌ಗೆ ನಕಲಿಸಿ ಉಳಿಸಿಕೊಳ್ಳಿ (ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'ನಿಮ್ಮ ನಿಗದಿತ ಡ್ರಾಫ್ಟ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಡ್ರಾಫ್ಟ್‌ಗಿಂತ ಭಿನ್ನ ಬದಲಾವಣೆಗಳಿವೆ.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'ನಿಗದಿತ ಮುಸದ್ದು ಅಳಿಸು',
   /** Body text for change schedule dialog */
@@ -1427,9 +1440,13 @@ export default removeUndefinedLocaleResources({
     'ಭವಿಷ್ಯದ ಸಮಯ ಮತ್ತು ದಿನಾಂಕಕ್ಕೆ ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'ಮೇಲೆ ಪ್ರಕಟಿಸು',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ಬಿಡುಗಡೆಯನ್ನು ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ',
@@ -1439,7 +1456,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಅಳಿಸಲಾಗಿದೆ.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಹುಡುಕಲಾಗಲಿಲ್ಲ",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1447,9 +1466,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಪ್ರಕಟಿಸಲಾಗಿದೆ.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "'{{title}}' ಬಿಡುಗಡೆ ಪ್ರಕಟಿಸಲಾಗಿದೆ",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1457,6 +1480,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಮರುನಿಗದಿಪಡಿಸಲಾಗಿದೆ.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'ನಿಗದಿತ ಡ್ರಾಫ್ಟ್ ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ಈ ದಾಖಲೆಯ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1470,6 +1497,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'ನಿರ್ಧಾರಿಸದ',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'ಎಲ್ಲಾ ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ನೋಡಿ',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'ಸಹಾಯವಾಣಿ ಸಂಪರ್ಕಿಸಿ',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'ಕಂಟೆಂಟ್ ಬಿಡುಗಡೆಗಳ ಸಂರಚನಾ ಸಮಸ್ಯೆ',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'ನಿಮ್ಮ ಯೋಜನೆಗೆ ಕಂಟೆಂಟ್ ಬಿಡುಗಡೆಗಳು ಸಕ್ರಿಯಗೊಂಡಿವೆ, ಆದರೆ ನಿಮ್ಮ ಬಿಡುಗಡೆ ಮಿತಿಗಳ ಸಂರಚನೆಯಲ್ಲಿ ಸಮಸ್ಯೆ ಇರುವಂತೆ ಕಾಣುತ್ತದೆ. ನಿಮ್ಮ ಕಂಟೆಂಟ್ ಬಿಡುಗಡೆಗಳನ್ನು ಸರಿಯಾಗಿ ಸಂರಚಿಸಲು ದಯವಿಟ್ಟು ಸಹಾಯವಾಣಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'ವೇಳಾಪಟ್ಟಿ ಮಾಡು',
