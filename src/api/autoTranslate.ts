@@ -11,6 +11,7 @@ import type {Locale, Resource} from '../types'
 import {getOrderedResources} from '../util/getOrderedResources'
 import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
+import {PR_LABEL_APPROVED, PR_LABEL_CHANGES_REQUESTED} from './ghLabels'
 import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
@@ -269,11 +270,44 @@ it is important that the branding is preserved.`
 }
 
 /**
+ * Returns locale IDs that have an open, reviewed PR (approved or changes requested).
+ * These should be excluded from translation to avoid wasting API calls on translations
+ * that won't be pushed.
+ *
+ * @internal
+ */
+export async function getLocalesWithReviewedPRs(options?: {
+  logger?: (message: string) => void
+}): Promise<string[]> {
+  const {logger = noop} = options ?? {}
+  const locales = await getLocaleRegistry()
+  const skipped: string[] = []
+
+  for (const locale of locales) {
+    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
+    const prLabels = await getPRLabels(branchName)
+    if (
+      prLabels?.includes(PR_LABEL_APPROVED) ||
+      prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)
+    ) {
+      logger(`Skipping ${locale.id}: existing PR has been reviewed`)
+      skipped.push(locale.id)
+    }
+  }
+
+  return skipped
+}
+
+/**
  * Push the automated changes back to origin repository
  *
  * @internal
  */
-export async function pushChanges(options: {allLocales: boolean}): Promise<void> {
+export async function pushChanges(options: {
+  allLocales: boolean
+  logger?: (message: string) => void
+}): Promise<void> {
+  const {logger = noop} = options
   const rootPath = await getRootPath()
   const locales = await getLocaleRegistry()
   const execGitCommand = (args: string[]) => execFile('git', args, {cwd: rootPath})
@@ -325,9 +359,22 @@ export async function pushChanges(options: {allLocales: boolean}): Promise<void>
     }
 
     const hasMaintainers = locale.maintainers.length > 0
+    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
+
+    // Check if an existing PR has been reviewed (approved or changes requested).
+    // If so, skip this locale to avoid overwriting reviewed translations with
+    // new non-deterministic AI translations. Labels are managed by the
+    // translate-labels workflow which handles nuanced review states.
+    const prLabels = await getPRLabels(branchName)
+    if (
+      prLabels?.includes(PR_LABEL_APPROVED) ||
+      prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)
+    ) {
+      logger(`Skipping ${locale.id}: existing PR has been reviewed`)
+      continue
+    }
 
     // Switch to a branch for the given locale
-    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
     await execGitCommand(['checkout', '-B', branchName])
 
     // The locale has changes, add the changes to index and commit them
@@ -336,7 +383,7 @@ export async function pushChanges(options: {allLocales: boolean}): Promise<void>
     // Push the branch
     await execGitCommand(['push', 'origin', branchName, '--force'])
 
-    if (!(await hasExistingPR(branchName))) {
+    if (prLabels === null) {
       let body = `This PR includes AI-generated, automated translation updates for the ${locale.englishName} locale.`
 
       if (hasMaintainers) {
@@ -397,7 +444,12 @@ export async function pushChanges(options: {allLocales: boolean}): Promise<void>
   }
 }
 
-async function hasExistingPR(branchName: string) {
+/**
+ * Get the labels for an existing PR on the given branch.
+ *
+ * @returns Array of label names if a PR exists, or `null` if no PR exists.
+ */
+async function getPRLabels(branchName: string): Promise<string[] | null> {
   const {stdout} = await execFile('gh', [
     'pr',
     'list',
@@ -407,9 +459,16 @@ async function hasExistingPR(branchName: string) {
     'sanity-io/locales',
     '--limit',
     '1',
+    '--json',
+    'labels',
   ])
 
-  return stdout.trim() !== ''
+  const prs = JSON.parse(stdout.trim() || '[]')
+  if (prs.length === 0) {
+    return null
+  }
+
+  return prs[0].labels.map((label: {name: string}) => label.name)
 }
 
 function noop() {
