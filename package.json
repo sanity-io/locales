@@ -57,7 +57,7 @@
     "p-map": "^4.0.0",
     "package-up": "^5.0.0",
     "prettier": "^3.4.2",
-    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-packagejson": "^2.5.22",
     "pretty-ms": "^7.0.1",
     "sanity": "^4.22.0",
     "tsx": "^4.19.4",
