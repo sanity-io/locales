@@ -79,6 +79,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Dodaj komentar',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Došlo je do pogreške prilikom učitavanja komentara',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Idi na polje {{field}}',
   /** The button tooltip content for the add reaction button */
