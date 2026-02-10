@@ -453,6 +453,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Адрэдагавана {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Апублікавана апошні раз',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Не апублікавана',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1341,11 +1343,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Стварыць рэліз',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Новы рэліз',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Вы ўпэўненыя, што хочаце выдаліць гэты запланаваны чарнавік? Гэта дзеянне нельга адмяніць.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Выдаліць гэты запланаваны чарнавік? Ваш чарнавік ужо абноўлены.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Выдаліць гэты запланаваны чарнавік? Вашы змены будуць захаваны ў чарнавіку.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Выдаліць гэты запланаваны чарнавік?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Так, выдаліць расклад',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Захаваць мае запланаваныя змены, скапіраваўшы іх у чарнавік (рэкамендуецца)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Ваш запланаваны чарнавік мае іншыя змены, чым ваш бягучы чарнавік.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Выдаліць запланаваны чарнавік',
   /** Body text for change schedule dialog */
@@ -1388,9 +1401,13 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Заплануйце на будучы час і дату.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Апублікаваць у',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Гэты рэліз быў адпінены',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Рэліз '{{title}}' быў архіваваны",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Не ўдалося стварыць рэліз',
@@ -1400,7 +1417,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Дакумент запланаванага чарнавіка <strong>{{title}}</strong> быў выдалены.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Рэліз '{{title}}' не можа быць знойдзены",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1408,9 +1427,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Дакумент запланаванага чарнавіка <strong>{{title}}</strong> быў апублікаваны.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Гэты рэліз быў адпінены',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Рэліз '{{title}}' быў апублікаваны",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1418,6 +1441,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Дакумент запланаванага чарнавіка <strong>{{title}}</strong> быў перапланаваны.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Запланаваны чарнавік быў апублікаваны',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версія гэтага дакумента ўжо была дададзена',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1431,6 +1458,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Не вызначана',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Прагледзець усе версіі дакумента',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Звярнуцца ў службу падтрымкі',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Праблема канфігурацыі выпускаў кантэнту',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Выпускі кантэнту ўключаны для вашага праекта, але ёсць праблема з канфігурацыяй лімітаў выпускаў. Калі ласка, звяжыцеся са службай падтрымкі, каб правільна наладзіць выпускі вашага кантэнту.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Запланаваць',
