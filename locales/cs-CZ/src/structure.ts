@@ -230,6 +230,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Upravit v Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Tento dokument lze upravovat v Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas vám umožňuje psát volně a poté aktualizovat obsah ve Studiu bez ručního kopírování polí po polích.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Svobodné psaní',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Tento koncept dokumentu je propojen s Canvas',
   /** The text for the canvas linked banner when the document is a live document */
