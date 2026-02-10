@@ -47,19 +47,19 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^2.16.22",
-    "@sanity/vision": "^4.22.0",
-    "groq": "^4.22.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-is": "^19.1.0",
-    "sanity": "^4.22.0",
-    "styled-components": "^6.1.19"
+    "@sanity/ui": "^3.1.11",
+    "@sanity/vision": "^5.9.0",
+    "groq": "^5.9.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-is": "^19.2.4",
+    "sanity": "^5.9.0",
+    "styled-components": "^6.3.9"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^4.0.0",
-    "@types/react": "^19.1.6",
-    "eslint": "^8.57.1",
+    "@sanity/eslint-config-studio": "^6.0.0",
+    "@types/react": "^19.2.13",
+    "eslint": "^9.0.0",
     "prettier": "^3.4.2",
     "typescript": "^5.7.3"
   }
