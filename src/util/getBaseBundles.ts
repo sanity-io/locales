@@ -25,7 +25,6 @@ export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles
   const rootPath = await getRootPath()
   const files = await glob(GLOB_PATTERN, {cwd: rootPath})
 
-
   let fileCount = 0
 
   const bundles: ResourceBundle[] = []

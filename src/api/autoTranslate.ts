@@ -286,10 +286,7 @@ export async function getLocalesWithReviewedPRs(options?: {
   for (const locale of locales) {
     const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
     const prLabels = await getPRLabels(branchName)
-    if (
-      prLabels?.includes(PR_LABEL_APPROVED) ||
-      prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)
-    ) {
+    if (prLabels?.includes(PR_LABEL_APPROVED) || prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)) {
       logger(`Skipping ${locale.id}: existing PR has been reviewed`)
       skipped.push(locale.id)
     }
@@ -366,10 +363,7 @@ export async function pushChanges(options: {
     // new non-deterministic AI translations. Labels are managed by the
     // translate-labels workflow which handles nuanced review states.
     const prLabels = await getPRLabels(branchName)
-    if (
-      prLabels?.includes(PR_LABEL_APPROVED) ||
-      prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)
-    ) {
+    if (prLabels?.includes(PR_LABEL_APPROVED) || prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)) {
       logger(`Skipping ${locale.id}: existing PR has been reviewed`)
       continue
     }
