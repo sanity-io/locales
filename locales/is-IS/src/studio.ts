@@ -20,13 +20,13 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.manage-version': 'Stjórna útgáfu',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Afritað á klippiborð. Gleðilegt líming!',
+    'Afritað á klippiborð. Gleðilega límingu!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Afrita á klippiborð',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Núverandi útgáfa',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Hvernig á að uppfæra',
+  'about-dialog.version-info.how-to-upgrade': 'Hvernig á að uppfæra?',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Nýjasta útgáfa',
   /** Info text when auto updates is enabled and a new version is available */
@@ -149,7 +149,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.show-usage.title': 'Sýna notkun',
   'asset-source.file.asset-list.delete-failed': 'Ekki tókst að eyða skránni',
   'asset-source.file.asset-list.delete-successful': 'Skrá var eytt',
-  'asset-source.file.asset-list.header.date-added': 'Dagsetning bætt við',
+  'asset-source.file.asset-list.header.date-added': 'Dagsetningu bætt við',
   /** File asset source */
   'asset-source.file.asset-list.header.filename': 'Skráarnafn',
   'asset-source.file.asset-list.header.size': 'Stærð',
