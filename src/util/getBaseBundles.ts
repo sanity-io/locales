@@ -1,9 +1,8 @@
-import {readFile} from 'node:fs/promises'
+import {glob, readFile} from 'node:fs/promises'
 
 import {parse} from '@babel/parser'
 import traverse from '@babel/traverse'
 import type {CallExpression, File, Node} from '@babel/types'
-import {globby} from 'globby'
 
 import type {BaseResource, ResourceBundle} from '../types'
 import {getRootPath} from './getRootPath'
@@ -24,14 +23,15 @@ const LOCALE_DEF_FN_NAME = 'defineLocalesResources'
 
 export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles() {
   const rootPath = await getRootPath()
-  const files = await globby(GLOB_PATTERN, {cwd: rootPath})
+  const files = await glob(GLOB_PATTERN, {cwd: rootPath})
 
-  if (files.length === 0) {
-    throw new Error('No files found for dependencies - did you install dependencies?')
-  }
+
+  let fileCount = 0
 
   const bundles: ResourceBundle[] = []
-  for (const file of files) {
+  for await (const file of files) {
+    fileCount++
+
     const ast = await parse(await readFile(file, 'utf-8'), {
       sourceFilename: file,
       sourceType: 'module',
@@ -43,6 +43,10 @@ export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles
     }
 
     bundles.push(...extractResources(ast, resourceDefName, file))
+  }
+
+  if (fileCount === 0) {
+    throw new Error('No files found for dependencies - did you install dependencies?')
   }
 
   if (bundles.length === 0) {

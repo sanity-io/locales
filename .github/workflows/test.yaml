@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
-          node-version: 20.20.0
+          node-version: 22
       - run: pnpm install --ignore-scripts
       - run: pnpm build --filter=./locales/*
 
@@ -42,7 +42,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
-          node-version: 20.20.0
+          node-version: 22
       - run: pnpm install --loglevel=error --ignore-scripts
       - run: pnpm check:lint
 
