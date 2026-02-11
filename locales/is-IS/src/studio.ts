@@ -464,6 +464,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Breytt {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Síðast birt',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Óbirt',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1370,11 +1372,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Búa til útgáfu',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Ný útgáfa',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Ertu viss um að þú viljir eyða þessum tímasetta drögum? Þessi aðgerð er óafturkræf.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Eyða þessum áætluðu drögum? Drögin þín eru þegar uppfærð.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Eyða þessum áætluðu drögum? Breytingarnar þínar verða vistaðar í drögum.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Eyða þessum áætluðu drögum?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Já, eyða tímasetningu',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Halda í áætlaðar breytingar mínar með því að afrita þær í drög (mælt með því)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Áætluð drög þín hafa aðrar breytingar en núverandi drög þín.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Eyða tímasettum drögum',
   /** Body text for change schedule dialog */
@@ -1418,9 +1431,13 @@ export default removeUndefinedLocaleResources({
     'Tímasettu fyrir framtíðar dagsetningu og tíma.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Birta á',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Þessi útgáfa hefur verið afnæld',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "Útgáfunni '{{title}}' hefur verið safnað",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Mistókst að búa til útgáfu',
@@ -1430,7 +1447,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Tímasettu drögunum <strong>{{title}}</strong> hefur verið eytt.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "Ekki tókst að finna '{{title}}' útgáfuna",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1438,9 +1457,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Tímasettu drögin <strong>{{title}}</strong> hafa verið birt.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Þessi útgáfa hefur verið afnæld',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "Útgáfan '{{title}}' var birt",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1448,6 +1471,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Tímasettu drögin <strong>{{title}}</strong> hafa verið endurtímasett.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Áætluð drög voru birt',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Útgáfa af þessu skjali hefur þegar verið bætt við',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1461,6 +1488,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Óákveðið',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Sjá allar útgáfur skjalsins',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Hafðu samband við þjónustuver',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Vandamál við stillingar innihaldsútgáfna',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Innihaldsútgáfur eru virkjaðar fyrir verkefnið þitt, en það virðist vera stillingarvandamál með útgáfumörk þín. Vinsamlegast hafðu samband við þjónustuver til að fá innihaldsútgáfur þínar rétt stilltar.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Tímasetja',
