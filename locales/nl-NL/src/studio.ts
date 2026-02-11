@@ -468,6 +468,8 @@ export default removeUndefinedLocaleResources({
   'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Bewerkt {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Laatst gepubliceerd',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Niet gepubliceerd',
   /** Label to show in the document footer indicating the published date of the document */
@@ -1385,11 +1387,22 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.confirm': 'Release aanmaken',
   /** Title for creating releases dialog */
   'release.dialog.create.title': 'Nieuwe release',
-  /** Body text for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.body':
-    'Weet u zeker dat u dit geplande concept wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Dit geplande concept verwijderen? Uw concept is al up-to-date.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Dit geplande concept verwijderen? Uw wijzigingen worden opgeslagen in het concept.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Dit geplande concept verwijderen?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Ja, schema verwijderen',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Bewaar mijn geplande wijzigingen door ze naar het concept te kopiëren (aanbevolen)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Uw geplande concept heeft andere wijzigingen dan uw huidige concept.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Gepland concept verwijderen',
   /** Body text for change schedule dialog */
@@ -1434,9 +1447,13 @@ export default removeUndefinedLocaleResources({
     'Plan voor een toekomstige tijd en datum.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publiceren op',
-  /** The toast description that will be shown when the user has a release perspective which is now archived */
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.description': 'Deze release is losgemaakt',
-  /** The toast title that will be shown when the user has a release perspective which is now archived */
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
   'release.toast.archived-release.title': "De '{{title}}' release is gearchiveerd",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Aanmaken van release mislukt',
@@ -1446,7 +1463,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is verwijderd.',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
   'release.toast.not-found-release.title': "De release '{{title}}' kon niet worden gevonden",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
@@ -1454,9 +1473,13 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is gepubliceerd.',
-  /** The toast description that will be shown when the user has a release perspective which is now published */
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.description': 'Deze release is losgemaakt',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted */
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
   'release.toast.published-release.title': "De '{{title}}' release is gepubliceerd",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1464,6 +1487,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is opnieuw gepland.',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Het geplande conceptdocument is gepubliceerd',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Een versie van dit document is al toegevoegd',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1477,6 +1504,14 @@ export default removeUndefinedLocaleResources({
   'release.type.undecided': 'Onbeslist',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Bekijk alle documentversies',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Contact Ondersteuning',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Configuratieprobleem met content releases',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Content releases zijn ingeschakeld voor uw project, maar er lijkt een configuratieprobleem te zijn met uw release limieten. Neem contact op met de ondersteuning om uw content releases correct te configureren.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Plannen',
