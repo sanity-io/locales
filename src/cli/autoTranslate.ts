@@ -2,7 +2,8 @@ import {parseArgs} from 'node:util'
 
 import dotenv from 'dotenv'
 
-import {autoTranslate, pushChanges} from '../api/autoTranslate'
+import {autoTranslate, getLocalesWithReviewedPRs, pushChanges} from '../api/autoTranslate'
+import {getLocaleRegistry} from '../api/registry'
 import {runScript} from '../util/runScript'
 
 // Load environment variables from .env file, where API key for OpenAI is hopefully present.
@@ -32,14 +33,27 @@ async function autoTranslateWithParams() {
     },
   })
 
+  const logger = (message: string) => console.log(message)
+
+  // When running in git mode, skip locales whose PRs have already been reviewed
+  // to avoid wasting translation API calls on changes that won't be pushed.
+  let targetLocales = args.values.locale
+  if (args.values.git) {
+    const reviewedLocales = await getLocalesWithReviewedPRs({logger})
+    if (reviewedLocales.length > 0) {
+      const allLocales = targetLocales ?? (await getLocaleRegistry()).map((l) => l.id)
+      targetLocales = allLocales.filter((id) => !reviewedLocales.includes(id))
+    }
+  }
+
   await autoTranslate({
-    targetLocales: args.values.locale,
+    targetLocales,
     namespaces: args.values.namespace,
-    logger: (message) => console.log(message),
+    logger,
   })
 
   if (args.values.git) {
-    await runScript(() => pushChanges({allLocales: !args.values.locale}))
+    await runScript(() => pushChanges({allLocales: !args.values.locale, logger}))
   }
 }
 

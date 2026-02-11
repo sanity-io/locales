@@ -237,6 +237,7 @@ export default removeUndefinedLocaleResources({
     'Canvas vám umožňuje psát volně a poté aktualizovat obsah ve Studiu bez ručního kopírování pole po poli.',
   /** The heading for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-heading': 'Psaní volnou formou',
+    'Canvas vám umožňuje psát volně a poté aktualizovat obsah ve Studiu bez ručního kopírování polí po polích.',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Tento koncept dokumentu je propojen s Canvas',
   /** The text for the canvas linked banner when the document is a live document */
