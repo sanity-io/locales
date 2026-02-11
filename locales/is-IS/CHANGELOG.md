@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.23](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.22...locale-is-is-v1.2.23) (2026-02-11)
+
+
+### Bug Fixes
+
+* **is-IS:** apply remaining grammar fixes from [#1393](https://github.com/sanity-io/locales/issues/1393) ([42f63df](https://github.com/sanity-io/locales/commit/42f63dfd1219017429097d41d4a92fb63bc6fd31))
+* **is-IS:** translation updates ([#1407](https://github.com/sanity-io/locales/issues/1407)) ([c93edc2](https://github.com/sanity-io/locales/commit/c93edc2d0d2370ddc17497ee051548f35445673b))
+
 ## [1.2.22](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.21...locale-is-is-v1.2.22) (2025-12-04)
 
 
