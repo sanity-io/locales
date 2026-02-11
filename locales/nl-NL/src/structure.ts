@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Weet u zeker dat u alle wijzigingen wilt verwijderen sinds de laatste publicatie?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Weet u zeker dat u alle wijzigingen wilt verwijderen en dit conceptdocument wilt verwijderen?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Wijzigingen verwijderen?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change':
     'Dit document heeft geen ongepubliceerde wijzigingen',
@@ -172,6 +177,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Dit document maakt deel uit van de <VersionBadge/> release en {{count}} meer releases',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Dit document maakt deel uit van geen enkele release',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Dit document maakt deel uit van de <VersionBadge/> release',
@@ -204,6 +214,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Documentacties openen',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Documentacties',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Verlaat focusmodus (toon navigatie)',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Ga naar focusmodus (verberg navigatie)',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Verlaat focusmodus',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Ga naar focusmodus',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Deelvenster rechts splitsen',
   /** The tool tip for the split pane button on the document panel header */
@@ -215,6 +233,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Bewerk in Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Dit document kan bewerkt worden in Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas stelt je in staat vrij te schrijven, waarna je de inhoud in Studio kunt bijwerken zonder handmatig veld voor veld te kopiëren.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Vrij schrijven',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Dit conceptdocument is gekoppeld aan Canvas',
   /** The text for the canvas linked banner when the document is a live document */

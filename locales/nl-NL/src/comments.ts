@@ -79,6 +79,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Voeg opmerking toe',
 
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Er is iets misgegaan bij het laden van de reacties',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Ga naar {{field}} veld',
   /** The button tooltip content for the add reaction button */
