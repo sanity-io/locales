@@ -1490,7 +1490,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'Het geplande concept is gepubliceerd',
+  'release.toast.scheduled-draft-published.title': 'Het geplande conceptdocument is gepubliceerd',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Een versie van dit document is al toegevoegd',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
