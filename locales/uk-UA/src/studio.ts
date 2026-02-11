@@ -1446,7 +1446,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'Запланований чернетка було опубліковано',
+  'release.toast.scheduled-draft-published.title': 'Заплановану чернетку було опубліковано',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версія цього документа вже була додана',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
