@@ -18,8 +18,13 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Är du säker på att du vill kassera alla ändringar sedan senast publicerat?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Är du säker på att du vill kassera alla ändringar och radera detta utkastdokument?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Kassera ändringar?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
-  'action.discard-changes.disabled.no-change': 'Detta dokument har inga opubliserade ändringar',
+  'action.discard-changes.disabled.no-change': 'Detta dokument har inga opublicerade ändringar',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -54,7 +59,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.live-edit.tooltip':
     'Live Edit är aktiverat för denna innehållstyp och publicering sker automatiskt när du gör ändringar',
   /** Tooltip when publish button is disabled because there are no changes.*/
-  'action.publish.no-changes.tooltip': 'Inga opubliserade ändringar',
+  'action.publish.no-changes.tooltip': 'Inga opublicerade ändringar',
   /** Label for the "Publish" document action when there are no changes.*/
   'action.publish.published.label': 'Publicerad',
   /** Label for the "Publish" document action while publish is being executed.*/
@@ -172,6 +177,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Detta dokument är en del av <VersionBadge/> releasen och {{count}} ytterligare releaser',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Detta dokument är inte en del av någon release',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Detta dokument är en del av <VersionBadge/> releasen',
@@ -223,6 +233,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Redigera i Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Detta dokument kan redigeras i Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas låter dig skriva fritt och sedan uppdatera innehållet i Studio utan manuell kopiering fält för fält.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Fritt skrivande',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Detta utkastdokument är länkat till Canvas',
   /** The text for the canvas linked banner when the document is a live document */
