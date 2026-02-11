@@ -17,6 +17,11 @@ export default removeUndefinedLocaleResources({
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Ви впевнені, що хочете скасувати всі зміни з моменту останньої публікації?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Ви впевнені, що хочете скасувати всі зміни та видалити цей чернетковий документ?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Скасувати зміни?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Цей документ не має неопублікованих змін',
   /** Tooltip when action is disabled because the document is not published */
@@ -160,6 +165,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
     'Цей документ є частиною <VersionBadge/> релізу та {{count}} іншого релізу.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'Цей документ не входить до жодного релізу',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Цей документ є частиною <VersionBadge/> релізу',
@@ -192,6 +201,15 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Відкрити дії з документом',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Дії з документом',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Вийти з режиму фокусування (показати навігацію)',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Увійти в режим фокусування (сховати навігацію)',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Вийти з режиму фокусування',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Увійти в режим фокусування',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Розділити панель праворуч',
   /** The tool tip for the split pane button on the document panel header */
@@ -203,6 +221,13 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the canvas linked banner action button */
   'canvas.banner.edit-in-canvas-action': 'Редагувати в Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Цей документ можна редагувати в Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas дозволяє вам вільно писати, а потім оновлювати контент у Studio без ручного копіювання з поля в поле.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Вільне письмо',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': "Цей чернетковий документ пов'язаний з Canvas",
   /** The text for the canvas linked banner when the document is a live document */
