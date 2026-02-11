@@ -24,7 +24,7 @@ export default removeUndefinedLocaleResources({
   /**Header for the confirm discard dialog */
   'action.discard-changes.confirm-dialog.header.text': 'Kassera ändringar?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
-  'action.discard-changes.disabled.no-change': 'Detta dokument har inga opubliserade ändringar',
+  'action.discard-changes.disabled.no-change': 'Detta dokument har inga opublicerade ändringar',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.live-edit.tooltip':
     'Live Edit är aktiverat för denna innehållstyp och publicering sker automatiskt när du gör ändringar',
   /** Tooltip when publish button is disabled because there are no changes.*/
-  'action.publish.no-changes.tooltip': 'Inga opubliserade ändringar',
+  'action.publish.no-changes.tooltip': 'Inga opublicerade ändringar',
   /** Label for the "Publish" document action when there are no changes.*/
   'action.publish.published.label': 'Publicerad',
   /** Label for the "Publish" document action while publish is being executed.*/
@@ -181,7 +181,7 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer in use
    * */
   'banners.release.navigate-to-edit-description-none':
-    'Detta dokument är inte en del av någon utgivning',
+    'Detta dokument är inte en del av någon release',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Detta dokument är en del av <VersionBadge/> releasen',

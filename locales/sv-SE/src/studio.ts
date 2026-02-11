@@ -1498,10 +1498,10 @@ export default removeUndefinedLocaleResources({
   /** Button text for contacting support in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.contact-support': 'Kontakta supporten',
   /** Header for the releases misconfiguration dialog */
-  'releases.upsell.misconfiguration.header': 'Konfigurationsproblem för innehållsutgivningar',
+  'releases.upsell.misconfiguration.header': 'Konfigurationsproblem för content releaser',
   /** Message shown in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.message':
-    'Innehållsutgivningar är aktiverade för ditt projekt, men det verkar vara ett konfigurationsproblem med dina utgivningsgränser. Vänligen kontakta supporten för att få dina innehållsutgivningar korrekt konfigurerade.',
+    'Content releaser är aktiverade för ditt projekt, men det verkar vara ett konfigurationsproblem med dina release-gränser. Vänligen kontakta supporten för att få dina content releaser korrekt konfigurerade.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Schemalägg',
