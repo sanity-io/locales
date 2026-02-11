@@ -1474,7 +1474,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'Áætluð drög voru birt',
+  'release.toast.scheduled-draft-published.title': 'Áætluðu drögin voru birt',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Útgáfa af þessu skjali hefur þegar verið bætt við',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
