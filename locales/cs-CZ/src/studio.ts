@@ -205,6 +205,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediální knihovna',
   'asset-sources.media-library.image.title': 'Mediální knihovna',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Hotovo',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Vyberte nový asset pro “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Vyberte nový asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Upravit asset',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Výběr souboru pro {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Výběr obrázku pro {{targetTitle}}',
@@ -578,12 +587,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Připojte se k naší komunitě',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Nejnovější verze je {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrovat studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID aplikace',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Znovu načíst pro aktualizaci na verzi v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verze Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Nápověda a zdroje',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Aktuální',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Příchozí reference',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Zrušit',
@@ -689,6 +711,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Nahrávání se v tuto chvíli nepodařilo dokončit.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Nahrávání selhalo',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Soukromý asset',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Přístup CDN omezen na podepsané URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Vyčistit pole',
   /** Copy URL */
@@ -697,6 +723,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Stáhnout',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL byla zkopírována do schránky',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Otevřít v {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Nahradit',
   /** Upload */
@@ -762,6 +790,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Pusťte obrázek pro nahrání',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Toto pole je pouze pro čtení',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nelze načíst obrázek. To může být způsobeno omezením přístupu.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Neznámý typ člena: {{kind}}',
   /** Edit hotspot and crop */
@@ -821,6 +852,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Všechna pole',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Skupiny polí',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'chyba',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informace',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'varování',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Toto pole je podle schématu dokumentu <strong>pouze pro čtení</strong> a nelze jej zrušit. Pokud chcete, aby bylo možné toto v Studio zrušit, ujistěte se, že jste odstranili pole <code>readOnly</code> z obklopujícího typu ve schématu.',
@@ -1143,6 +1180,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Nesoulad síly reference',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Převést na slabou referenci',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Vymazat',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Vygenerovat',
   /** Loading message for when the input is actively generating a slug */
@@ -1329,6 +1368,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Úspěšně vráceno z nastavení na nepublikování při vydání.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Naplánovat publikaci',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nepodařilo se nastavit verzi jako nepublikovanou ve vydání',
@@ -1341,6 +1382,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Zobrazit naplánované koncepty',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Naplánováno k publikování dne {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} verze',
+  'release.chip.button.other-versions_other': '+{{count}} verzí',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Koncept',
   /** Label for Draft chip in global header */
@@ -1362,6 +1405,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Žádné úpravy',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nepublikováno',
+  'release.chip.tooltip.other-versions_one': 'Jedna další verze mimo vydání',
+  'release.chip.tooltip.other-versions_other': '{{count}} dalších verzí mimo vydání',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publikováno {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1420,8 +1465,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Skrýt vydání',
   /** Label for the release menu */
   'release.menu.label': 'Menu vydání',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Zobrazit naplánované koncepty',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Akce',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Zobrazit vydání obsahu',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Koncepty',
   /** Label for published releases in navbar */
@@ -1455,6 +1504,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Vydání '{{title}}' nebylo nalezeno",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nepodařilo se pozastavit naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Nepodařilo se publikovat naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
@@ -1475,6 +1527,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl přeplánován.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nepodařilo se naplánovat koncept: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Koncept byl úspěšně naplánován',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
