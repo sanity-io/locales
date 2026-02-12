@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Operace není připravena',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Tento dokument ještě neexistuje nebo je již smazán',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Tento dokument nelze smazat, protože je součástí naplánovaných vydání',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Smazat',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Zveřejněno',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Zveřejňuje se…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Ověřování dokumentu…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Před publikováním prosím opravte chyby ověření',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Chyby ověření',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Existují validační chyby, které je třeba opravit, než bude možné tento dokument zveřejnit',
@@ -124,6 +134,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Pracovní prostor nemá povolené koncepty, ale existuje konceptová verze tohoto dokumentu.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Plánování pozastaveno během úprav. Stiskněte Plánování pro reaktivaci nebo vyberte nové datum.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Vaše role <Roles/> nemá oprávnění vytvořit tento dokument.',
@@ -276,6 +289,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'Parametr pro předchozí dokument je neplatný.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Nepodařilo se načíst vydání',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -432,6 +447,31 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Otevřít dokument <VersionBadge>draft</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Otevřít vydání <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Přidat položku',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Příchozí odkazy typu {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Žádné položky',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Odkaz od {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Typ schématu {{type}} nebyl nalezen',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Zadejte pro vyhledávání',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Načítání dokumentů...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': 'Načítání dokumentů napříč datasetem...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Pro tento typ nejsou definovány žádné příchozí odkazy, více informací naleznete v dokumentaci.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Nebyly nalezeny žádné odkazy tohoto typu.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Typ schématu {{type}} nebyl nalezen',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Načítání…',
