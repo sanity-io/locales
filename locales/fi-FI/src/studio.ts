@@ -205,6 +205,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediakirjasto',
   'asset-sources.media-library.image.title': 'Mediakirjasto',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Valmis',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Valitse uusi assetti kohteelle “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Valitse uusi assetti',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Muokkaa assettia',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file':
     'Tiedoston valinta kohteelle {{targetTitle}}',
@@ -581,6 +590,12 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Liity yhteisöömme',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Uusin versio on {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Rekisteröi studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Sovelluksen id',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now':
     'Lataa uudelleen päivittääksesi versioon v{{newVersion}}',
@@ -588,6 +603,13 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-version': 'Sanity Studio versio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Apua ja resursseja',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Ajan tasalla',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Saapuvat viitteet',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Peruuta',
@@ -693,6 +715,11 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Latausta ei voitu suorittaa tällä hetkellä.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Lataus epäonnistui',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Yksityinen assetti',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'CDN-pääsy rajoitettu allekirjoitettuihin URL-osoitteisiin',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Tyhjennä kenttä',
   /** Copy URL */
@@ -701,6 +728,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Lataa',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL on kopioitu leikepöydälle',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Avaa kohteessa {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Korvaa',
   /** Upload */
@@ -765,6 +794,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Pudota kuva ladataksesi sen',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Tämä kenttä on vain luku',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kuvan lataaminen epäonnistui. Tämä voi johtua pääsyrajoituksista.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Tuntematon jäsenen tyyppi: {{kind}}',
   /** Edit hotspot and crop */
@@ -824,6 +856,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Kaikki kentät',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Kenttäryhmät',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'virhe',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'tieto',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'varoitus',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Tämä kenttä on <strong>luettavissa vain</strong> asiakirjan skeeman mukaan eikä sitä voi poistaa. Jos haluat pystyä poistamaan tämän Studiosta, varmista, että poistat <code>readOnly</code> kentän ympäröivästä tyypistä skeemassa.',
@@ -1147,6 +1185,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Viitteen vahvuuden epäjohdonmukaisuus',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Muunna heikoksi viitteeksi',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Tyhjennä',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Luo',
   /** Loading message for when the input is actively generating a slug */
@@ -1331,6 +1371,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Palautus julkaisemattomaksi asettamisesta julkaisun yhteydessä onnistui.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Aikatauluta julkaisu',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Version julkaisemattomaksi asettaminen epäonnistui',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1342,6 +1384,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Näytä aikataulutetut luonnokset',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Ajastettu julkaistavaksi {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} versio',
+  'release.chip.button.other-versions_other': '+{{count}} versiota',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Luonnos',
   /** Label for Draft chip in global header */
@@ -1363,6 +1407,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Ei muokkauksia',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ei julkaistu',
+  'release.chip.tooltip.other-versions_one': 'Yksi lisäversio julkaisujen ulkopuolella',
+  'release.chip.tooltip.other-versions_other': '{{count}} lisäversiota julkaisujen ulkopuolella',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Julkaistu {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1423,8 +1469,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Piilota julkaisu',
   /** Label for the release menu */
   'release.menu.label': 'Julkaisuvalikko',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Näytä aikataulutetut luonnokset',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Toiminnot',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Näytä sisältöjulkaisut',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Luonnokset',
   /** Label for published releases in navbar */
@@ -1458,6 +1508,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "'{{title}}' julkaisua ei löytynyt",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Aikataulutetun luonnoksen keskeyttäminen epäonnistui <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> julkaiseminen epäonnistui: {{error}}',
@@ -1478,6 +1531,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on uudelleen ajoitettu.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Luonnoksen aikatauluttaminen epäonnistui: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Luonnos aikataulutettu onnistuneesti',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
