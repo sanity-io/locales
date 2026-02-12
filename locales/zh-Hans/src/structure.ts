@@ -7,6 +7,8 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': '操作尚未准备好',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': '此文档尚未存在或已被删除',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release': '由于该文档存在于预定发布中，因此无法删除',
   /** Label for the "Delete" document action button */
   'action.delete.label': '删除',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -59,6 +61,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': '已发布',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': '正在发布…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': '正在验证文档…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description': '请在发布前修复验证错误',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': '验证错误',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip': '在此文档可以发布之前，需要修复验证错误',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
@@ -117,6 +125,8 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     '工作区未启用草稿功能，但此文档的草稿版本存在。',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text': '编辑时暂停计划。按下计划以重新激活或选择新日期。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '您的角色<Roles/>没有权限创建此文档。',
@@ -248,6 +258,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': '无法比较文档',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': '上一个文档参数无效。',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': '加载发布失败',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': '没有其他版本的文档可以比较。',
@@ -387,6 +399,30 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': '打开<VersionBadge>草稿</VersionBadge>文档',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': '打开<VersionBadge>{{releaseTitle}}</VersionBadge>发布',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': '添加项目',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': '类型为{{type}}的传入引用',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': '无项目',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': '来自{{type}}的引用',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': '未找到模式类型{{type}}',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': '输入以搜索',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': '正在加载文档...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': '正在加载跨数据集文档...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined': '此类型未定义传入引用，请查看文档了解更多信息。',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': '未找到此类型的引用。',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': '未找到文档的模式类型{{type}}',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '正在加载…',
