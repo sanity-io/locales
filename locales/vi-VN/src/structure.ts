@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Thao tác chưa sẵn sàng',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Tài liệu này chưa tồn tại hoặc đã bị xóa',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Không thể xóa tài liệu này vì nó tồn tại trong các lịch trình phát hành',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Xóa',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Đã xuất bản',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Đang xuất bản…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Đang kiểm tra tài liệu…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Vui lòng sửa các lỗi kiểm tra trước khi xuất bản',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Lỗi kiểm tra',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Có lỗi xác thực cần được khắc phục trước khi tài liệu này có thể được xuất bản',
@@ -125,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Không gian làm việc không kích hoạt chế độ nháp, nhưng một phiên bản nháp của tài liệu này tồn tại.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Lịch trình đã tạm dừng trong khi chỉnh sửa. Nhấn Lịch trình để kích hoạt lại hoặc chọn ngày mới.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'Các vai trò <Roles/> của bạn không có quyền tạo tài liệu này.',
@@ -265,6 +278,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'Không thể so sánh tài liệu',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'Tham số tài liệu trước đó không hợp lệ.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Không tải được các phiên bản',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -409,6 +424,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Mở tài liệu <VersionBadge>nháp</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Mở bản phát hành <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Thêm mục',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Tham chiếu đến loại {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Không có mục',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Tham chiếu từ {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Không tìm thấy loại sơ đồ {{type}}',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Nhập để tìm kiếm',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Đang tải tài liệu...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Đang tải tài liệu qua các bộ dữ liệu...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Không có tham chiếu đến được xác định cho loại này, xem tài liệu để biết thêm thông tin.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Không tìm thấy tham chiếu của loại này.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Không tìm thấy loại sơ đồ {{type}}',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Đang tải…',

@@ -197,6 +197,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Thư viện Media',
   'asset-sources.media-library.image.title': 'Thư viện Media',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Hoàn tất',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Chọn tài sản mới cho “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Chọn tài sản mới',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Chỉnh sửa tài sản',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Chọn tệp cho {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Chọn hình ảnh cho {{targetTitle}}',
@@ -556,12 +565,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Tham gia cộng đồng của chúng tôi',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Phiên bản mới nhất là {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Đăng ký studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App id',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Tải lại để cập nhật lên v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Phiên bản Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Trợ giúp và tài nguyên',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Cập nhật',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Tham chiếu đến',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Hủy',
@@ -664,6 +686,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Không thể hoàn thành việc tải lên vào lúc này.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Tải lên thất bại',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Tài sản riêng tư',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Truy cập CDN giới hạn bởi URL đã ký',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Xóa trường',
   /** Copy URL */
@@ -672,6 +698,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Tải xuống',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL đã được sao chép vào bảng tạm',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Mở trong {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Thay thế',
   /** Upload */
@@ -723,6 +751,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Thả hình ảnh để tải lên',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Trường này chỉ đọc',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Không thể tải hình ảnh. Có thể do hạn chế truy cập.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Loại thành viên không xác định: {{kind}}',
   /** Edit hotspot and crop */
@@ -782,6 +813,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Tất cả các trường',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Nhóm trường',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'lỗi',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'thông tin',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'cảnh báo',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Trường này là <strong>chỉ đọc</strong> theo sơ đồ tài liệu và không thể bỏ chọn. Nếu bạn muốn có thể bỏ chọn này trong Studio, hãy chắc chắn bạn loại bỏ trường <code>readOnly</code> từ loại bao quanh trong sơ đồ.',
@@ -1096,6 +1133,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Sự không khớp về độ mạnh của tham chiếu',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Chuyển thành tham chiếu yếu',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Xóa',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Tạo',
   /** Loading message for when the input is actively generating a slug */
@@ -1282,6 +1321,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Đã hoàn tác thành công việc thiết lập không công bố khi phát hành.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Lên lịch xuất bản',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Không thể đặt phiên bản để không xuất bản trên phiên bản',
@@ -1294,6 +1335,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Xem bản nháp đã lên lịch',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Đã lên lịch xuất bản vào {{date}}',
+  'release.chip.button.other-versions_other': '+{{count}} phiên bản',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Bản nháp',
   /** Label for Draft chip in global header */
@@ -1315,6 +1357,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Không có chỉnh sửa',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Chưa được xuất bản',
+  'release.chip.tooltip.other-versions_other':
+    '{{count}} phiên bản bổ sung ngoài các bản phát hành',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Đã xuất bản {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1374,8 +1418,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Ẩn phiên bản',
   /** Label for the release menu */
   'release.menu.label': 'Menu phát hành',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Xem Bản Nháp Đã Lên Lịch',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Hành động',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Xem Bản Phát Hành Nội Dung',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Bản nháp',
   /** Label for published releases in navbar */
@@ -1409,6 +1457,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Không tìm thấy phiên bản '{{title}}'",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Không thể tạm dừng bản nháp đã lên lịch <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Không thể xuất bản tài liệu bản nháp đã lên lịch <strong>{{title}}</strong>: {{error}}',
@@ -1429,6 +1480,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã được lên lịch lại.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Không thể lên lịch bản nháp: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Đã lên lịch bản nháp thành công',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
