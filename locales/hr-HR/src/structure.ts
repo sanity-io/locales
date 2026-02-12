@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Operacija nije spremna',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Ovaj dokument ne postoji',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Ovaj dokument se ne može obrisati jer postoji unutar zakazanih objava',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Izbriši',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Objavljeno',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Objavljivanje…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validacija dokumenta u tijeku…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Molimo ispravite greške u validaciji prije objavljivanja',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Greške u validaciji',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Postoje greške u validaciji koje treba ispraviti prije nego što se ovaj dokument može objaviti',
@@ -126,6 +136,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Radni prostor nema omogućene nacrte, ali postoji nacrt verzija ovog dokumenta.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Raspored je pauziran tijekom uređivanja. Pritisnite Raspored za reaktivaciju ili odaberite novi datum.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Vaša uloga <Roles/> nema dozvolu za kreiranje ovog dokumenta.',
@@ -277,6 +290,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'Parametar prethodnog dokumenta je nevažeći.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Učitavanje izdanja nije uspjelo',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'Nema drugih verzija ovog dokumenta za usporedbu.',
@@ -434,6 +449,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Otvori <VersionBadge>nacrt</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Otvori <VersionBadge>{{releaseTitle}}</VersionBadge> izdanje',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Dodaj stavku',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Dolazne reference tipa {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Nema stavki',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Referenca od {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Tip sheme {{type}} nije pronađen',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Upišite za pretragu',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Učitavanje dokumenata...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Učitavanje dokumenata između skupova podataka...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Nisu definirane dolazne reference za ovaj tip, pogledajte dokumentaciju za više informacija.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Nisu pronađene reference ovog tipa.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Tip sheme {{type}} nije pronađen',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Učitavanje…',

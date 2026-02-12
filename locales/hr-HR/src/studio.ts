@@ -205,6 +205,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medijska knjižnica',
   'asset-sources.media-library.image.title': 'Medijska knjižnica',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Gotovo',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Odaberite novi asset za “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Odaberite novi asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Uredi asset',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Odabir datoteke za {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Odabir slike za {{targetTitle}}',
@@ -580,12 +589,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Pridružite se našoj zajednici',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Najnovija verzija je {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrirajte studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID aplikacije',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Ponovno učitaj za ažuriranje na v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verzija Sanity Studija {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Pomoć i resursi',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Ažurirano',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Dolazne reference',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Otkaži',
@@ -691,6 +713,11 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Prijenos nije moguće dovršiti u ovom trenutku.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Prijenos nije uspio',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privatni asset',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'Pristup CDN-u ograničen na potpisane URL-ove',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Očisti polje',
   /** Copy URL */
@@ -699,6 +726,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Preuzmi',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL je kopiran u međuspremnik',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Otvori u {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Zamijeni',
   /** Upload */
@@ -764,6 +793,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Ispusti sliku za učitavanje',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Ovo polje je samo za čitanje',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nije moguće učitati sliku. To može biti zbog ograničenja pristupa.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Nepoznata vrsta člana: {{kind}}',
   /** Edit hotspot and crop */
@@ -823,6 +855,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Sva polja',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Grupe polja',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'greška',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informacija',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'upozorenje',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Ovo polje je <strong>samo za čitanje</strong> prema shemi dokumenta i ne može se poništiti. Ako želite moći poništiti ovo u Studiju, pobrinite se da uklonite <code>readOnly</code> polje iz obuhvaćenog tipa u shemi.',
@@ -1144,6 +1182,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Neslaganje jačine reference',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Pretvori u slabu referencu',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Očisti',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generiraj',
   /** Loading message for when the input is actively generating a slug */
@@ -1330,6 +1370,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Uspješno vraćeno s postavke za nepobjavljivanje pri objavi.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Zakaži objavljivanje',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nije uspjelo postavljanje verzije da se ne objavi u izdanju',
@@ -1342,6 +1384,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Pogledaj zakazane skice',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Zakazano za objavljivanje na {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} verzija',
+  'release.chip.button.other-versions_other': '+{{count}} verzije',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Nacrt',
   /** Label for Draft chip in global header */
@@ -1363,6 +1407,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Nema uređivanja',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nije objavljeno',
+  'release.chip.tooltip.other-versions_one': 'Jedna dodatna verzija izvan izdanja',
+  'release.chip.tooltip.other-versions_other': '{{count}} dodatnih verzija izvan izdanja',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Objavljeno {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1422,8 +1468,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Sakrij izdanje',
   /** Label for the release menu */
   'release.menu.label': 'Izbornik izdanja',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Pogledajte zakazane skice',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Akcije',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Pogledajte izdanja sadržaja',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Nacrti',
   /** Label for published releases in navbar */
@@ -1456,6 +1506,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Izdanje '{{title}}' nije moguće pronaći",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nije uspjelo pauziranje zakazanog nacrta dokumenta <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Nije uspjelo objavljivanje zakazanog dokumenta skice <strong>{{title}}</strong>: {{error}}',
@@ -1476,6 +1529,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Zakazani dokument skice <strong>{{title}}</strong> je preusmjeren.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nije uspjelo zakazivanje nacrta: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Nacrt je uspješno zakazan',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
