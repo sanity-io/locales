@@ -204,6 +204,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '미디어 라이브러리',
   'asset-sources.media-library.image.title': '미디어 라이브러리',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': '완료',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '“{{targetTitle}}”에 대한 새 자산 선택',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    '새 자산 선택',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': '자산 편집',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}을(를) 위한 파일 선택',
   'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}을(를) 위한 이미지 선택',
@@ -577,12 +586,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '우리 커뮤니티에 가입하세요',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '최신 버전은 {{latestVersion}}입니다',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': '스튜디오 등록',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': '앱 ID',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'v{{newVersion}}로 업데이트하기 위해 재로드',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity 스튜디오 버전 {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': '도움말 및 리소스',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': '최신 상태',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': '들어오는 참조',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': '업로드 취소',
@@ -688,6 +710,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': '현재 업로드를 완료할 수 없습니다.',
   /** Upload failed */
   'inputs.file.upload-failed.title': '업로드 실패',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': '비공개 자산',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN 접근은 서명된 URL에 한정됩니다',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': '필드 지우기',
   /** Copy URL */
@@ -696,6 +722,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': '다운로드',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL이 클립보드에 복사되었습니다',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}}에서 열기',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': '교체',
   /** Upload */
@@ -761,6 +789,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': '업로드할 이미지를 드롭하세요',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': '이 필드는 읽기 전용입니다',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    '이미지를 불러올 수 없습니다. 접근 제한 때문일 수 있습니다.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '알 수 없는 멤버 종류: {{kind}}',
   /** Edit hotspot and crop */
@@ -820,6 +851,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': '모든 필드',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': '필드 그룹',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': '오류',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': '정보',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': '경고',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     '이 필드는 문서의 스키마에 따라 <strong>읽기 전용</strong>이며 해제할 수 없습니다. 스튜디오에서 이를 해제할 수 있게 하려면 스키마의 포함 유형에서 <code>readOnly</code> 필드를 제거하세요.',
@@ -1141,6 +1178,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': '참조 강도 불일치',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '약한 참조로 변환',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': '지우기',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': '생성하기',
   /** Loading message for when the input is actively generating a slug */
@@ -1326,6 +1365,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     '출시 시 비공개 설정을 성공적으로 되돌렸습니다.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': '게시 예약',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '릴리스에서 버전을 비공개로 설정하는 데 실패했습니다',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1337,6 +1378,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': '예약된 초안 보기',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
+  'release.chip.button.other-versions_other': '+{{count}} 버전',
   /** Label for Draft chip in document header */
   'release.chip.draft': '초안',
   /** Label for Draft chip in global header */
@@ -1358,6 +1400,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '편집 없음',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '게시되지 않음',
+  'release.chip.tooltip.other-versions_other': '릴리스 외부의 추가 {{count}} 버전',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '게시된 날짜 {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1416,8 +1459,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': '릴리스 숨기기',
   /** Label for the release menu */
   'release.menu.label': '릴리스 메뉴',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': '예약된 초안 보기',
   /** Tooltip for the release menu */
   'release.menu.tooltip': '작업',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': '콘텐츠 릴리스 보기',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': '초안',
   /** Label for published releases in navbar */
@@ -1451,6 +1498,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "'{{title}}' 릴리스를 찾을 수 없습니다",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong>을(를) 일시 중지하는 데 실패했습니다: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     '예약된 초안 문서 <strong>{{title}}</strong> 게시에 실패했습니다: {{error}}',
@@ -1471,6 +1521,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>의 일정이 변경되었습니다.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': '초안 예약에 실패했습니다: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': '일정에 따른 초안이 성공적으로 예약되었습니다',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */

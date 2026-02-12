@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': '작업 준비되지 않음',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': '이 문서는 아직 존재하지 않거나 이미 삭제되었습니다',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    '이 문서는 예약된 릴리스 내에 존재하기 때문에 삭제할 수 없습니다',
   /** Label for the "Delete" document action button */
   'action.delete.label': '삭제',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': '게시됨',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': '게시 중…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': '문서 검증 중...',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    '게시하기 전에 유효성 검사 오류를 수정하세요',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': '유효성 검사 오류',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     '게시하기 전에 수정해야 할 유효성 검사 오류가 있습니다',
@@ -124,6 +134,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     '워크스페이스에는 초안이 활성화되어 있지 않지만, 이 문서의 초안 버전이 존재합니다.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    '편집 중에 일정이 일시 중지되었습니다. 일정을 다시 활성화하거나 새 날짜를 선택하려면 일정을 누르세요.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '귀하의 역할 <Roles/>은 이 문서를 생성할 권한이 없습니다.',
@@ -262,6 +275,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': '문서 비교 불가',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': '이전 문서 매개변수가 유효하지 않습니다.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': '릴리스를 불러오는 데 실패했습니다',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': '비교할 이 문서의 다른 버전이 없습니다.',
@@ -418,6 +433,31 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': '<VersionBadge>드래프트</VersionBadge> 문서 열기',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 릴리스 열기',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': '항목 추가',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': '{{type}} 유형의 들어오는 참조',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': '항목 없음',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': '{{type}}에서 참조',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': '스키마 유형 {{type}}을(를) 찾을 수 없습니다',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': '검색할 유형 입력',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': '문서를 불러오는 중...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': '교차 데이터셋 문서를 불러오는 중...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    '이 유형에 대해 정의된 들어오는 참조가 없습니다. 자세한 내용은 문서를 참조하세요.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': '이 유형의 참조를 찾을 수 없습니다.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': '스키마 유형 {{type}}을(를) 찾을 수 없습니다',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '로딩 중…',
