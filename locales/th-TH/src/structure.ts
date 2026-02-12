@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'เอกสารนี้ยังไม่มีหรือถูกลบไปแล้ว',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'ไม่สามารถลบเอกสารนี้ได้เนื่องจากมีอยู่ในการเผยแพร่ตามกำหนดเวลา',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ลบ',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -62,6 +65,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'เผยแพร่แล้ว',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'กำลังเผยแพร่…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'กำลังตรวจสอบเอกสาร…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'โปรดแก้ไขข้อผิดพลาดในการตรวจสอบก่อนทำการเผยแพร่',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'ข้อผิดพลาดในการตรวจสอบ',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'มีข้อผิดพลาดในการตรวจสอบที่ต้องแก้ไขก่อนที่เอกสารนี้จะสามารถเผยแพร่ได้',
@@ -123,6 +133,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'พื้นที่ทำงานไม่ได้เปิดใช้งานร่าง แต่มีร่างของเอกสารนี้อยู่',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'การกำหนดเวลาถูกหยุดชั่วคราวขณะที่กำลังแก้ไข เลือกตารางเวลาเพื่อเปิดใช้งานอีกครั้งหรือเลือกวันที่ใหม่',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'บทบาท <Roles/> ของคุณไม่มีสิทธิ์ในการสร้างเอกสารนี้',
@@ -260,6 +273,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'ไม่สามารถเปรียบเทียบเอกสารได้',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'พารามิเตอร์เอกสารก่อนหน้าไม่ถูกต้อง',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'ไม่สามารถโหลดการเผยแพร่ได้',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'ไม่มีเวอร์ชันอื่นของเอกสารนี้ที่จะเปรียบเทียบ',
@@ -401,6 +416,31 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'เปิดเอกสาร <VersionBadge>ร่าง</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'เปิดการปล่อย <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'เพิ่มรายการ',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'การอ้างอิงที่เข้ามาของประเภท {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'ไม่มีรายการ',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'การอ้างอิงจาก {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'ไม่พบประเภทสคีมา {{type}}',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'พิมพ์เพื่อค้นหา',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'กำลังโหลดเอกสาร...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': 'กำลังโหลดเอกสารข้ามชุดข้อมูล...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'ไม่ได้กำหนดการอ้างอิงที่เข้ามาสำหรับประเภทนี้ ดูเอกสารเพิ่มเติมเพื่อข้อมูลเพิ่มเติม',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'ไม่พบการอ้างอิงของประเภทนี้',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'ไม่พบประเภทสคีมา {{type}}',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'กำลังโหลด…',
