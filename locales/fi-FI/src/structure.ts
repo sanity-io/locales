@@ -8,6 +8,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Tätä dokumenttia ei ole vielä olemassa tai se on jo poistettu',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Tätä dokumenttia ei voi poistaa, koska se on osa aikataulutettuja julkaisuja',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Poista',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -65,6 +68,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Julkaistu',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Julkaistaan…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validoidaan dokumenttia…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description': 'Korjaa validointivirheet ennen julkaisua',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Validointivirheet',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Ennen tämän dokumentin julkaisemista on korjattava validointivirheet',
@@ -126,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Työtilassa ei ole luonnoksia käytössä, mutta tämän dokumentin luonnosversio on olemassa.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Aikataulutus keskeytetty muokkauksen ajaksi. Paina Aikatauluta aktivoidaksesi uudelleen tai valitaksesi uuden päivämäärän.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Roolisi <Roles/> ei anna oikeuksia luoda tätä asiakirjaa.',
@@ -278,6 +290,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'Edellisen asiakirjan parametri on virheellinen.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Julkaisujen lataaminen epäonnistui',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -437,6 +451,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Avaa <VersionBadge>luonnos</VersionBadge> dokumentti',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Avaa <VersionBadge>{{releaseTitle}}</VersionBadge> julkaisu',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Lisää kohde',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Saapuvat viitteet tyypille {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Ei kohteita',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Viite kohteesta {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Skeematyyppiä {{type}} ei löydy',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Kirjoita hakuun',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Ladataan dokumentteja...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Ladataan ristiin datasettien dokumentteja...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Tälle tyypille ei ole määritelty saapuvia viitteitä, katso lisätietoja dokumentaatiosta.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Tämän tyyppisiä viitteitä ei löytynyt.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Skeematyyppiä {{type}} ei löydy',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Ladataan…',
