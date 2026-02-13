@@ -207,11 +207,11 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.open-in-source-dialog.button.done': 'Ferdig',
   /** Select new asset button text with target title */
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
-    'Velg nytt asset for “{{targetTitle}}”',
+    'Velg ny mediefil for “{{targetTitle}}”',
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
-    'Velg nytt asset',
+    'Velg ny mediefil',
   /** Title for the open in source dialog */
-  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger asset',
+  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger mediefil',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Velger fil for {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Velger bilde for {{targetTitle}}',
@@ -595,7 +595,7 @@ export default removeUndefinedLocaleResources({
   /** Name of the sanity studio */
   'help-resources.studio': 'Sanity Studio',
   /** Menu item for registered studios (i.e. copies app id) */
-  'help-resources.studio-app-id': 'App id',
+  'help-resources.studio-app-id': 'App ID',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Last inn på nytt for å oppdatere til v{{newVersion}}',
   /** Information for what studio version the current studio is running */
@@ -603,7 +603,7 @@ export default removeUndefinedLocaleResources({
   /** Title for help and resources menus */
   'help-resources.title': 'Hjelp og ressurser',
   /** Label for studio's which are up to date */
-  'help-resources.up-to-date': 'Oppdatert',
+  'help-resources.up-to-date': 'Siste versjon',
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
@@ -715,7 +715,7 @@ export default removeUndefinedLocaleResources({
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Opplasting mislykkes',
   /** Private access policy badge label */
-  'inputs.files.common.access-policy.private.label': 'Privat asset',
+  'inputs.files.common.access-policy.private.label': 'Privat mediefil',
   /** Private access policy badge tooltip */
   'inputs.files.common.access-policy.private.tooltip': 'CDN-tilgang begrenset til signerte URL-er',
   /** Clear field */
@@ -1505,7 +1505,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "Utgivelsen '{{title}}' kunne ikke bli funnet",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Kunne ikke pause det planlagte utkastdokumentet <strong>{{title}}</strong>: {{error}}',
+    'Kunne ikke pause det planlagte utkastet <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Kunne ikke publisere det planlagte utkastdokumentet <strong>{{title}}</strong>: {{error}}',
@@ -1529,7 +1529,7 @@ export default removeUndefinedLocaleResources({
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': 'Kunne ikke planlegge utkast: {{error}}',
   /** Success toast for scheduling a paused draft */
-  'release.toast.schedule-publish.success': 'Planla utkastet vellykket',
+  'release.toast.schedule-publish.success': 'Utkast planlagt',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */

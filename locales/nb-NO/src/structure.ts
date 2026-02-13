@@ -460,7 +460,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference from in the incoming references input */
   'incoming-references-input.reference-from': 'Referanse fra {{type}}',
   /** The text for the schema type not found in the incoming references input */
-  'incoming-references-input.schema-type-not-found': 'Skjematype {{type}} ikke funnet',
+  'incoming-references-input.schema-type-not-found': 'Skjematypen {{type}} finnes ikke',
   /** The text for the type to search in the incoming references input */
   'incoming-references-input.type-to-search': 'Skriv for å søke',
   /** The text for the loading state in the incoming references input */
@@ -475,7 +475,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Ingen referanser av denne typen funnet.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
-  'incoming-references-pane.schema-type-not-found': 'Skjematype {{type}} ikke funnet',
+  'incoming-references-pane.schema-type-not-found': 'Skjematypen {{type}} finnes ikke',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Laster…',
