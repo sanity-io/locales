@@ -115,14 +115,13 @@ export async function adjustLabels(options: AdjustLabelsOptions): Promise<void> 
     }
   }
 
-  if (isApproved === undefined && hasMaintainerReview) {
-    // See if there are _comments_ that include a `suggestion` block,
-    // in which case we should treat it as requesting changes
+  if ((isApproved === true || isApproved === undefined) && hasMaintainerReview) {
+    // See if there are inline comments from maintainers, which indicate changes are needed
+    // even if the review state is "APPROVED" (maintainers sometimes approve but leave
+    // inline comments with corrections)
     const comments = await getCommentsForPR(prNumber)
-    if (
-      comments.some(({user, body}) => isMaintainer(user.login) && body.includes('```suggestion'))
-    ) {
-      logger('Comments include suggestions, treating as requested changes')
+    if (comments.some(({user}) => isMaintainer(user.login))) {
+      logger('Maintainer left inline comments, treating as requested changes')
       isApproved = false
     }
   }
