@@ -209,11 +209,11 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.open-in-source-dialog.button.done': 'Gotovo',
   /** Select new asset button text with target title */
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
-    'Odaberite novi asset za “{{targetTitle}}”',
+    'Odaberite novu datoteku za "{{targetTitle}}"',
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
-    'Odaberite novi asset',
+    'Odaberite novu datoteku',
   /** Title for the open in source dialog */
-  'asset-sources.media-library.open-in-source-dialog.title': 'Uredi asset',
+  'asset-sources.media-library.open-in-source-dialog.title': 'Uredi datoteku',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Odabir datoteke za {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Odabir slike za {{targetTitle}}',
@@ -714,7 +714,7 @@ export default removeUndefinedLocaleResources({
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Prijenos nije uspio',
   /** Private access policy badge label */
-  'inputs.files.common.access-policy.private.label': 'Privatni asset',
+  'inputs.files.common.access-policy.private.label': 'Privatna datoteka',
   /** Private access policy badge tooltip */
   'inputs.files.common.access-policy.private.tooltip':
     'Pristup CDN-u ograničen na potpisane URL-ove',
