@@ -206,6 +206,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'メディアライブラリ',
   'asset-sources.media-library.image.title': 'メディアライブラリ',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': '完了',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '「{{targetTitle}}」の新しいアセットを選択',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    '新しいアセットを選択',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'アセットを編集',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}のファイルを選択中',
   'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}の画像を選択中',
@@ -580,12 +589,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '私たちのコミュニティに参加する',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '最新バージョンは {{latestVersion}}です',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'スタジオを登録',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'アプリID',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'v{{newVersion}}に更新するためにリロードする',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studioバージョン {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'ヘルプとリソース',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': '最新の状態',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': '参照元',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'アップロードをキャンセル',
@@ -691,6 +713,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': '現在、アップロードを完了できませんでした。',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'アップロード失敗',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'プライベートアセット',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDNアクセスは署名付きURLに限定されます',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'フィールドをクリア',
   /** Copy URL */
@@ -700,6 +726,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'URLがクリップボードにコピーされました',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}}で開く',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': '置き換え',
   /** Upload */
@@ -768,6 +796,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'アップロードするために画像をドロップ',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'このフィールドは読み取り専用です',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'アクセス制限のため画像を読み込めませんでした。',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '不明なメンバーの種類: {{kind}}',
   /** Edit hotspot and crop */
@@ -827,6 +858,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'すべてのフィールド',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'フィールドグループ',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'エラー',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': '情報',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': '警告',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'このフィールドはドキュメントのスキーマによると<strong>読み取り専用</strong>であり、解除することはできません。Studioでこれを解除できるようにするには、スキーマのエンクロージングタイプから<code>readOnly</code>フィールドを削除してください。',
@@ -1150,6 +1187,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': '参照の強さの不一致',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '弱い参照に変換',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'クリア',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': '生成',
   /** Loading message for when the input is actively generating a slug */
@@ -1336,6 +1375,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'リリース時の非公開設定を元に戻すことに成功しました。',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': '公開をスケジュール',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'リリースで未公開に設定するバージョンの設定に失敗しました',
@@ -1348,6 +1389,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': '予定された下書きを見る',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}に公開予定',
+  'release.chip.button.other-versions_other': '+{{count}}バージョン',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'ドラフト',
   /** Label for Draft chip in global header */
@@ -1369,6 +1411,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '編集なし',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '未公開',
+  'release.chip.tooltip.other-versions_other': 'リリース外の追加{{count}}バージョン',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '公開日 {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1429,8 +1472,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'リリースを非表示にする',
   /** Label for the release menu */
   'release.menu.label': 'リリースメニュー',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'スケジュールされた下書きを見る',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'アクション',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'コンテンツリリースを見る',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ドラフト',
   /** Label for published releases in navbar */
@@ -1464,6 +1511,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "'{{title}}' リリースが見つかりませんでした",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>の一時停止に失敗しました：{{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     '予定された下書きドキュメント <strong>{{title}}</strong> の即時公開に失敗しました：{{error}}',
@@ -1484,6 +1534,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> のスケジュールが変更されました。',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': '下書きのスケジュールに失敗しました：{{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'ドラフトのスケジュール設定に成功しました',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */

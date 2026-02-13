@@ -8,6 +8,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'このドキュメントはまだ存在していないか、すでに削除されています',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'このドキュメントはスケジュールされたリリース内に存在するため、削除できません',
   /** Label for the "Delete" document action button */
   'action.delete.label': '削除',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -64,6 +67,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': '公開済み',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': '公開中…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'ドキュメントを検証中...',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description': '公開する前に検証エラーを修正してください',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': '検証エラー',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     '公開する前に修正する必要があるバリデーションエラーがあります',
@@ -127,6 +136,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'ワークスペースはドラフトを有効にしていませんが、このドキュメントのドラフトバージョンが存在します。',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    '編集中にスケジュールが一時停止されました。スケジュールを再開するか、新しい日付を選択してください。',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
@@ -274,6 +286,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'ドキュメントを比較できません',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': '前のドキュメントパラメータが無効です。',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'リリースの読み込みに失敗しました',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -430,6 +444,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': '<VersionBadge>ドラフト</VersionBadge>ドキュメントを開く',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge>リリースを開く',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'アイテムを追加',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': '{{type}}タイプの外部参照',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'アイテムなし',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': '{{type}}からの参照',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'スキーマタイプ{{type}}が見つかりません',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': '検索するタイプを入力',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'ドキュメントを読み込み中...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'クロスデータセットドキュメントを読み込み中...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'このタイプには外部参照が定義されていません。詳細はドキュメントを参照してください。',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'このタイプの参照は見つかりませんでした。',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'スキーマタイプ{{type}}が見つかりません',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '読み込み中…',
