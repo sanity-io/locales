@@ -448,7 +448,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the add reference item in the incoming references input */
   'incoming-references-input.add-reference-item': 'アイテムを追加',
   /** The aria-label for the incoming references list */
-  'incoming-references-input.list-label': '{{type}}タイプの着信参照',
+  'incoming-references-input.list-label': '{{type}}タイプの外部参照',
   /** The text for the no items in the incoming references input */
   'incoming-references-input.no-items': 'アイテムなし',
   /** The text for the reference from in the incoming references input */
@@ -464,7 +464,7 @@ export default removeUndefinedLocaleResources({
     'クロスデータセットドキュメントを読み込み中...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
-    'このタイプには着信参照が定義されていません。詳細はドキュメントを参照してください。',
+    'このタイプには外部参照が定義されていません。詳細はドキュメントを参照してください。',
 
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'このタイプの参照は見つかりませんでした。',
