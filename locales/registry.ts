@@ -34,8 +34,8 @@ const registry: LocaleRegistry = [
     id: 'de-DE',
     name: 'Deutsch',
     englishName: 'German',
-    maintainers: ['wrknd', 'sebastianhaiss'],
-    contributors: [],
+    maintainers: ['wrknd'],
+    contributors: ['sebastianhaiss'],
   },
   {
     id: 'es-ES',
