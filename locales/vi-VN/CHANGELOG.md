@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.31](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.30...locale-vi-vn-v1.1.31) (2026-02-16)
+
+
+### Bug Fixes
+
+* **vi-VN:** automated translation updates ([#1580](https://github.com/sanity-io/locales/issues/1580)) ([9efcaf9](https://github.com/sanity-io/locales/commit/9efcaf9809e33a1932519424f564a62e83a63f0d))
+
 ## [1.1.30](https://github.com/sanity-io/locales/compare/locale-vi-vn-v1.1.29...locale-vi-vn-v1.1.30) (2026-02-10)
 
 
