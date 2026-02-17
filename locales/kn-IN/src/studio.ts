@@ -205,6 +205,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
   'asset-sources.media-library.image.title': 'ಮೀಡಿಯಾ ಲೈಬ್ರರಿ',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'ಮುಗಿದ',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '“{{targetTitle}}” ಗಾಗಿ ಹೊಸ ಆಸ್ತಿ ಆಯ್ಕೆಮಾಡಿ',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'ಹೊಸ ಆಸ್ತಿ ಆಯ್ಕೆಮಾಡಿ',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'ಆಸ್ತಿ ಸಂಪಾದಿಸಿ',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file':
     '{{targetTitle}} ಗಾಗಿ ಫೈಲ್ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
@@ -580,12 +589,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'ನಮ್ಮ ಸಮುದಾಯದಲ್ಲಿ ಸೇರಿ',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'ಇತ್ತೀಚಿನ ಆವೃತ್ತಿ {{latestVersion}} ಆಗಿದೆ',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'ಸ್ಟುಡಿಯೋ ನೋಂದಾಯಿಸಿ',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ಅಪ್ಲಿಕೇಶನ್ ಐಡಿ',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'v{{newVersion}} ಗೆ ನವೀಕರಿಸಲು ಮರುಲೋಡ್ ಮಾಡಿ',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio ಆವೃತ್ತಿ {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'ಸಹಾಯ ಮತ್ತು ಸಂಪನ್ಮೂಲಗಳು',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'ನವೀಕರಿಸಲಾಗಿದೆ',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'ಒಳಬರುವ ಉಲ್ಲೇಖಗಳು',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'ಅಪ್‌ಲೋಡ್ ರದ್ದುಮಾಡಿ',
@@ -691,6 +713,11 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'ಅಪ್‌ಲೋಡ್ ಈ ಸಮಯದಲ್ಲಿ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'ಅಪ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'ಖಾಸಗಿ ಆಸ್ತಿ',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'CDN ಪ್ರವೇಶವು ಸೈನ್ ಮಾಡಲಾದ URLಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'ಕ್ಷೇತ್ರ ಖಾಲಿಮಾಡಿ',
   /** Copy URL */
@@ -700,6 +727,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'URL ನನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}} ನಲ್ಲಿ ತೆರೆಯಿರಿ',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'ಬದಲಾಯಿಸಿ',
   /** Upload */
@@ -764,6 +793,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'ಚಿತ್ರ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಬಿಡಿ',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'ಈ ಕ್ಷೇತ್ರ ಕೇವಲ ಓದಲು ಮಾತ್ರ',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'ಚಿತ್ರವನ್ನು ಲೋಡ್ ಮಾಡಲು ಆಗಲಿಲ್ಲ. ಇದು ಪ್ರವೇಶ ನಿರ್ಬಂಧಗಳಿಂದಾಗಿರಬಹುದು.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'ಅಜ್ಞಾತ ಸದಸ್ಯ ಪ್ರಕಾರ: {{kind}}',
   /** Edit hotspot and crop */
@@ -823,6 +855,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'ಎಲ್ಲಾ ಕ್ಷೇತ್ರಗಳು',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'ಕ್ಷೇತ್ರ ಗುಂಪುಗಳು',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'ದೋಷ',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'ಮಾಹಿತಿ',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'ಎಚ್ಚರಿಕೆ',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'ಈ ಕ್ಷೇತ್ರವು ದಾಖಲೆಯ ಸ್ಕೀಮಾ ಪ್ರಕಾರ <strong>ಓದಲು ಮಾತ್ರ</strong> ಮತ್ತು ಅನ್ಸೆಟ್ ಮಾಡಲಾಗದು. ನೀವು ಸ್ಟುಡಿಯೋದಲ್ಲಿ ಇದನ್ನು ಅನ್ಸೆಟ್ ಮಾಡಲು ಬಯಸಿದರೆ, ಸ್ಕೀಮಾದಲ್ಲಿನ ಸುತ್ತುವರಿದ ಪ್ರಕಾರದಲ್ಲಿ <code>readOnly</code> ಕ್ಷೇತ್ರವನ್ನು ತೆಗೆದುಹಾಕಿ.',
@@ -1148,6 +1186,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'ಉಲ್ಲೇಖದ ಬಲದ ಅಸಮತೋಲನ',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'ದುರ್ಬಲ ಉಲ್ಲೇಖಕ್ಕೆ ಪರಿವರ್ತಿಸಿ',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'ಅಳಿಸಿ',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'ಉತ್ಪನ್ನಮಾಡಿ',
   /** Loading message for when the input is actively generating a slug */
@@ -1333,6 +1373,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ಅಪ್ರಕಟಿಸಲು ಹೊಂದಿಸುವಿಕೆಯಿಂದ ಯಶಸ್ವಿಯಾಗಿ ಹಿಂತಿರುಗಲಾಗಿದೆ.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'ಪ್ರಕಟಣೆ ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'ಬಿಡುಗಡೆಯಲ್ಲಿ ಅಪ್ರಕಟಿತವಾಗಿರುವ ಆವೃತ್ತಿಯನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ',
@@ -1345,6 +1387,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'ನಿಗದಿತ ಮುಸದ್ದುಗಳನ್ನು ವೀಕ್ಷಿಸು',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}} ರಂದು ಪ್ರಕಟಣೆಗೆ ನಿಗದಿಯಾಗಿದೆ',
+  'release.chip.button.other-versions_one': '+{{count}} ಆವೃತ್ತಿ',
+  'release.chip.button.other-versions_other': '+{{count}} ಆವೃತ್ತಿಗಳು',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'ಮುಸದ್ದಿ',
   /** Label for Draft chip in global header */
@@ -1366,6 +1410,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'ಸಂಪಾದನೆಗಳು ಇಲ್ಲ',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
+  'release.chip.tooltip.other-versions_one': 'ಬಿಡುಗಡೆಗಳ ಹೊರಗೆ ಒಂದು ಹೆಚ್ಚುವರಿ ಆವೃತ್ತಿ',
+  'release.chip.tooltip.other-versions_other': 'ಬಿಡುಗಡೆಗಳ ಹೊರಗೆ {{count}} ಹೆಚ್ಚುವರಿ ಆವೃತ್ತಿಗಳು',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'ಪ್ರಕಟಿಸಲಾಗಿದೆ {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1425,8 +1471,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'ಬಿಡುಗಡೆಯನ್ನು ಮರೆಮಾಡಿ',
   /** Label for the release menu */
   'release.menu.label': 'ಬಿಡುಗಡೆ ಮೆನು',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'ನಿಗದಿತ ಡ್ರಾಫ್ಟ್‌ಗಳನ್ನು ನೋಡಿ',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'ಕ್ರಿಯೆಗಳು',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'ವಿಷಯ ಬಿಡುಗಡೆಗಳನ್ನು ನೋಡಿ',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ಡ್ರಾಫ್ಟ್‌ಗಳು',
   /** Label for published releases in navbar */
@@ -1460,6 +1510,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "'{{title}}' ಬಿಡುಗಡೆಯನ್ನು ಹುಡುಕಲಾಗಲಿಲ್ಲ",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'ನಿಗದಿತ ಮಸೂದೆ ದಾಖಲೆಯನ್ನು ವಿರಾಮಿಸಲು ವಿಫಲವಾಗಿದೆ <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ತಕ್ಷಣವೇ ಪ್ರಕಟಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}',
@@ -1480,6 +1533,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಮರುನಿಗದಿಪಡಿಸಲಾಗಿದೆ.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'ಮಸೂದೆಯನ್ನು ನಿಗದಿಪಡಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'ಮಸೂದೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನಿಗದಿಪಡಿಸಲಾಗಿದೆ',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */

@@ -8,6 +8,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಅಥವಾ ಈಗಾಗಲೇ ಅಳಿಸಲಾಗಿದೆ',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲಾಗದು ಏಕೆಂದರೆ ಇದು ನಿಗದಿತ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ಅಳಿಸು',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -64,6 +67,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'ಪ್ರಕಟಿಸುತ್ತಿದ್ದಾರೆ…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'ದಾಖಲೆಯನ್ನು ಮಾನ್ಯತೆ ಪರಿಶೀಲನೆ ನಡೆಯುತ್ತಿದೆ…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'ಪ್ರಕಟಿಸುವ ಮುನ್ನ ಮಾನ್ಯತೆ ದೋಷಗಳನ್ನು ಸರಿಪಡಿಸಿ',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'ಮಾನ್ಯತೆ ದೋಷಗಳು',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'ಈ ದಾಖಲೆಯನ್ನು ಪ್ರಕಟಿಸುವ ಮೊದಲು ಸರಿಪಡಿಸಬೇಕಾದ ಮಾನ್ಯತಾ ದೋಷಗಳಿವೆ',
@@ -125,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'ವರ್ಕ್‌ಸ್ಪೇಸ್‌ನಲ್ಲಿ ಡ್ರಾಫ್ಟ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿಲ್ಲ, ಆದರೆ ಈ ದಾಖಲೆಯ ಡ್ರಾಫ್ಟ್ ಆವೃತ್ತಿ ಇದೆ.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'ಸಂಪಾದನೆಯ ವೇಳೆ ವೇಳಾಪಟ್ಟಿ ವಿರಾಮಿಸಲಾಗಿದೆ. ವೇಳಾಪಟ್ಟಿಯನ್ನು ಮರುಸಕ್ರಿಯಾಗೊಳಿಸಲು ಅಥವಾ ಹೊಸ ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಲು ವೇಳಾಪಟ್ಟಿಯನ್ನು ಒತ್ತಿರಿ.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'ನಿಮ್ಮ ಪಾತ್ರ <Roles/> ಈ ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ಅನುಮತಿಗಳಿಲ್ಲ.',
@@ -275,6 +288,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'ದಾಖಲೆಗಳನ್ನು ಹೋಲಿಸಲು ಅಸಾಧ್ಯ',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'ಹಿಂದಿನ ದಾಖಲೆ ಪ್ಯಾರಾಮೀಟರ್ ಅಮಾನ್ಯವಾಗಿದೆ.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'ಬಿಡುಗಡೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'ಈ ದಾಖಲೆಯ ಇತರ ಆವೃತ್ತಿಗಳನ್ನು ಹೋಲಿಸಲು ಯಾವುದೂ ಇಲ್ಲ.',
@@ -431,6 +446,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': '<VersionBadge>ಕರಡು</VersionBadge> ದಾಖಲೆಯನ್ನು ತೆರೆಯಿರಿ',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> ಬಿಡುಗಡೆಯನ್ನು ತೆರೆಯಿರಿ',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'ಐಟಂ ಸೇರಿಸಿ',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'ಟೈಪ್ {{type}} ನ ಬರುವ ಉಲ್ಲೇಖಗಳು',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'ಐಟಂಗಳು ಇಲ್ಲ',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'ಟೈಪ್ {{type}} ನಿಂದ ಉಲ್ಲೇಖ',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'ಸ್ಕೀಮಾ ಟೈಪ್ {{type}} ಕಾಣಿಸಿಲ್ಲ',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'ಹುಡುಕಲು ಟೈಪ್ ಮಾಡಿ',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'ದಾಖಲೆಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತಿದೆ...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'ಅಡ್ಡ ಡೇಟಾಸೆಟ್ ದಾಖಲೆಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತಿದೆ...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'ಈ ಟೈಪ್‌ಗೆ ಬರುವ ಉಲ್ಲೇಖಗಳು ನಿಗದಿತವಾಗಿಲ್ಲ, ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಾಖಲೆಗಳನ್ನು ನೋಡಿ.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'ಈ ಟೈಪ್‌ನ ಉಲ್ಲೇಖಗಳು ಕಾಣಿಸಿಲ್ಲ.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'ಸ್ಕೀಮಾ ಟೈಪ್ {{type}} ಕಾಣಿಸಿಲ್ಲ',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'ಲೋಡ್ ಆಗುತ್ತಿದೆ…',
