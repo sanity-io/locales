@@ -51,6 +51,7 @@ export default defineConfig({
 ## Contributors
 
 - [@jrparente](https://github.com/jrparente)
+- [@RitaDias](https://github.com/RitaDias)
 
 ## Contributing
 
