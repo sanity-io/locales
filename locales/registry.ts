@@ -41,7 +41,7 @@ const registry: LocaleRegistry = [
     id: 'es-ES',
     name: 'Español',
     englishName: 'Spanish',
-    maintainers: ['imaprototype', 'jferrettiboke'],
+    maintainers: ['imaprototype', 'jferrettiboke', 'pedrobonamin'],
     contributors: [],
   },
   {
@@ -118,7 +118,7 @@ const registry: LocaleRegistry = [
     id: 'nb-NO',
     name: 'Norsk (Bokmål)',
     englishName: 'Norwegian (Bokmål)',
-    maintainers: ['rexxars'],
+    maintainers: ['rexxars', 'bjoerge'],
     contributors: [],
   },
   {
@@ -153,7 +153,7 @@ const registry: LocaleRegistry = [
     id: 'pt-PT',
     name: 'Português',
     englishName: 'Portuguese',
-    maintainers: ['jrparente'],
+    maintainers: ['jrparente', 'RitaDias'],
     contributors: [],
   },
   {
