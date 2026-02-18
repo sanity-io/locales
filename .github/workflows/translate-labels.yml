@@ -37,7 +37,7 @@ jobs:
           private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
 
       - name: Adjust labels
-        run: pnpm run ci:adjust-labels
+        run: pnpm run ci:adjust-labels --merge-if-approved
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
