@@ -16,7 +16,7 @@ import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
-const OPENAI_MODEL = 'gpt-4-1106-preview'
+const OPENAI_MODEL = 'gpt-4o'
 
 /**
  * Prefix that preceeds the name of the auto-translated locale branch
