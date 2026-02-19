@@ -51,6 +51,7 @@ export default defineConfig({
 ## Contributors
 
 - [@rexxars](https://github.com/rexxars)
+- [@bjoerge](https://github.com/bjoerge)
 
 ## Contributing
 

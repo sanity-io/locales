@@ -22,6 +22,10 @@
   "license": "MIT",
   "contributors": [
     {
+      "name": "bjoerge",
+      "url": "https://github.com/bjoerge"
+    },
+    {
       "name": "rexxars",
       "url": "https://github.com/rexxars"
     }
