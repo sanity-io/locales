@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.32](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.31...locale-nb-no-v1.1.32) (2026-02-20)
+
+
+### Bug Fixes
+
+* **nb-NO:** automated translation updates ([#1593](https://github.com/sanity-io/locales/issues/1593)) ([fe2bfaf](https://github.com/sanity-io/locales/commit/fe2bfafa09df6dde3b21caa4a3c32d264505c132))
+
 ## [1.1.31](https://github.com/sanity-io/locales/compare/locale-nb-no-v1.1.30...locale-nb-no-v1.1.31) (2026-02-16)
 
 
