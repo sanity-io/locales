@@ -103,7 +103,7 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0
       openai:
-        specifier: ^4.78.1
+        specifier: ^4.104.0
         version: 4.104.0(ws@8.19.0)(zod@3.25.76)
       rimraf:
         specifier: ^5.0.10
