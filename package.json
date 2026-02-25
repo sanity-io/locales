@@ -45,7 +45,7 @@
     "@babel/traverse": "^7.29.0",
     "@babel/types": "^7.29.0",
     "@sanity/pkg-utils": "^7.11.9",
-    "@sanity/vision": "^5.11.0",
+    "@sanity/vision": "^5.12.0",
     "@types/babel__generator": "^7.27.0",
     "@types/babel__traverse": "^7.28.0",
     "@types/node": "^22.0.0",
@@ -59,7 +59,7 @@
     "prettier": "^3.4.2",
     "prettier-plugin-packagejson": "^2.5.22",
     "pretty-ms": "^7.0.1",
-    "sanity": "^5.11.0",
+    "sanity": "^5.12.0",
     "tsx": "^4.19.4",
     "zod": "^3.24.4",
     "zod-validation-error": "^3.4.0"
