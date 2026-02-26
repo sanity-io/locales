@@ -57,7 +57,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       prettier:
-        specifier: ^3.4.2
+        specifier: ^3.8.1
         version: 3.8.1
       prettier-plugin-packagejson:
         specifier: ^2.5.22

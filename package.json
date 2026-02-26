@@ -56,7 +56,7 @@
     "outdent": "^0.8.0",
     "p-map": "^4.0.0",
     "package-up": "^5.0.0",
-    "prettier": "^3.4.2",
+    "prettier": "^3.8.1",
     "prettier-plugin-packagejson": "^2.5.22",
     "pretty-ms": "^7.0.1",
     "sanity": "^5.12.0",
