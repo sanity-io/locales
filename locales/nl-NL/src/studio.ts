@@ -205,6 +205,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Bibliotheek',
   'asset-sources.media-library.image.title': 'Media Bibliotheek',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Klaar',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Selecteer een nieuw asset voor “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Selecteer een nieuw asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Bewerk asset',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Bestand selecteren voor {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image':
@@ -584,12 +593,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Word lid van onze gemeenschap',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'De nieuwste versie is {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registreer studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App id',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Herlaad om bij te werken naar v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versie {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hulp en bronnen',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Up-to-date',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Inkomende referenties',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Annuleren',
@@ -695,6 +717,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'De upload kon op dit moment niet worden voltooid.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Upload mislukt',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privé asset',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': "CDN-toegang beperkt tot ondertekende URL's",
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Veld wissen',
   /** Copy URL */
@@ -704,6 +730,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'De URL is naar het klembord gekopieerd',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Open in {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Vervangen',
   /** Upload */
@@ -769,6 +797,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Laat afbeelding vallen om te uploaden',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Dit veld is alleen-lezen',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kon afbeelding niet laden. Dit kan te wijten zijn aan toegangsbeperkingen.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Onbekend lidtype: {{kind}}',
   /** Edit hotspot and crop */
@@ -828,6 +859,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Alle velden',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Veldgroepen',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'fout',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'info',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'waarschuwing',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Dit veld is <strong>alleen-lezen</strong> volgens het schema van het document en kan niet worden uitgezet. Als je dit in Studio wilt kunnen uitzetten, zorg er dan voor dat je het <code>readOnly</code> veld uit het omvattende type in het schema verwijdert.',
@@ -1155,6 +1192,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Mismatch in referentiekracht',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Converteren naar zwakke referentie',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Wissen',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Genereren',
   /** Loading message for when the input is actively generating a slug */
@@ -1340,6 +1379,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Succesvol teruggekeerd van de instelling om niet te publiceren bij vrijgave.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Publicatie plannen',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Mislukt om versie in te stellen om niet gepubliceerd te worden bij release',
@@ -1352,6 +1393,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Geplande concepten bekijken',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Gepland voor publicatie op {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} versie',
+  'release.chip.button.other-versions_other': '+{{count}} versies',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Concept',
   /** Label for Draft chip in global header */
@@ -1373,6 +1416,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Geen bewerkingen',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Niet gepubliceerd',
+  'release.chip.tooltip.other-versions_one': 'Eén extra versie buiten de releases',
+  'release.chip.tooltip.other-versions_other': '{{count}} extra versies buiten de releases',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Gepubliceerd {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1432,8 +1477,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Release verbergen',
   /** Label for the release menu */
   'release.menu.label': 'Release menu',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Geplande concepten bekijken',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Acties',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Content Releases bekijken',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Concepten',
   /** Label for published releases in navbar */
@@ -1467,6 +1516,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "De release '{{title}}' kon niet worden gevonden",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Mislukt om het geplande conceptdocument <strong>{{title}}</strong> te pauzeren: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> onmiddellijk te publiceren: {{error}}',
@@ -1487,6 +1539,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is opnieuw gepland.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Mislukt om concept te plannen: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Concept succesvol gepland',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
