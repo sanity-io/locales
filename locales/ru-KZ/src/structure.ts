@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Операция не готова',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Этот документ еще не существует или уже удален',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Этот документ не может быть удален, так как он находится в запланированных релизах',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Удалить',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Опубликовано',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Публикация…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Проверка документа…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Пожалуйста, исправьте ошибки проверки перед публикацией',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Ошибки проверки',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Есть ошибки валидации, которые необходимо исправить перед публикацией этого документа',
@@ -125,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'В рабочей области не включены черновики, но существует черновая версия этого документа.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Планирование приостановлено во время редактирования. Нажмите Планировать для повторной активации или выберите новую дату.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не имеет разрешений на создание этого документа.',
@@ -266,6 +279,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'Параметр предыдущего документа недействителен.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Не удалось загрузить релизы',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'Нет других версий этого документа для сравнения.',
@@ -410,6 +425,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Открыть документ <VersionBadge>draft</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Открыть релиз <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Добавить элемент',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Входящие ссылки типа {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Нет элементов',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Ссылка из {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Тип схемы {{type}} не найден',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Введите для поиска',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Загрузка документов...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Загрузка документов из разных наборов данных...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Для этого типа не определены входящие ссылки, смотрите документацию для получения дополнительной информации.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Ссылок этого типа не найдено.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Тип схемы {{type}} не найден',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Загрузка…',
