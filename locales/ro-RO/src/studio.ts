@@ -198,6 +198,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca Media',
   'asset-sources.media-library.image.title': 'Biblioteca Media',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Gata',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Selectează un nou asset pentru “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Selectează un nou asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Editează asset',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file':
     'Selectarea fișierului pentru {{targetTitle}}',
@@ -570,12 +579,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Alăturați-vă comunității noastre',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Ultima versiune este {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Înregistrează studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID aplicație',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Reîncarcă pentru a actualiza la v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versiunea Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Ajutor și resurse',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'La zi',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Referințe primite',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Anulează',
@@ -678,6 +700,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Încărcarea nu a putut fi finalizată în acest moment.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Încărcare eșuată',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Asset privat',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Acces CDN limitat la URL-uri semnate',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Șterge câmpul',
   /** Copy URL */
@@ -686,6 +712,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Descarcă',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL-ul a fost copiat în clipboard',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Deschide în {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Înlocuiește',
   /** Upload */
@@ -741,6 +769,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Trageți imaginea pentru a o încărca',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Acest câmp este doar pentru citire',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nu s-a putut încărca imaginea. Acest lucru poate fi datorat restricțiilor de acces.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Tip de membru necunoscut: {{kind}}',
   /** Edit hotspot and crop */
@@ -800,6 +831,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Toate câmpurile',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Grupuri de câmpuri',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'eroare',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informație',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'avertisment',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Acest câmp este <strong>doar pentru citire</strong> conform schemei documentului și nu poate fi eliminat. Dacă doriți să puteți elimina acest lucru în Studio, asigurați-vă că eliminați câmpul <code>readOnly</code> din tipul închis în schema.',
@@ -1120,6 +1157,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Nepotrivire a puterii referinței',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Convertiți în referință slabă',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Șterge',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generează',
   /** Loading message for when the input is actively generating a slug */
@@ -1304,6 +1343,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Revenirea de la setarea de a nu publica la lansare a fost realizată cu succes.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Programează publicarea',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nu s-a reușit setarea versiunii ca fiind nepublicată la lansare',
@@ -1316,6 +1357,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Vezi schițele programate',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programată pentru publicare pe {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} versiune',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Ciornă',
   /** Label for Draft chip in global header */
@@ -1337,6 +1379,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Fără modificări',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nepublicat',
+  'release.chip.tooltip.other-versions_one': 'O versiune suplimentară în afara lansărilor',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicată {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1397,8 +1440,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Ascunde lansarea',
   /** Label for the release menu */
   'release.menu.label': 'Meniu lansare',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Vezi Schițele Programate',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Acțiuni',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Vezi Lansările de Conținut',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Schițe',
   /** Label for published releases in navbar */
@@ -1432,6 +1479,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Lansarea '{{title}}' nu a putut fi găsită",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nu s-a reușit suspendarea documentului schiță programat <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Nu s-a reușit publicarea documentului schiță programat <strong>{{title}}</strong>: {{error}}',
@@ -1452,6 +1502,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Documentul schiță programat <strong>{{title}}</strong> a fost reprogramat.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nu s-a reușit programarea schiței: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Ciorna programată cu succes',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
