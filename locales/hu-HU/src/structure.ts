@@ -8,6 +8,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Ez a dokumentum még nem létezik vagy már törölve lett',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Ezt a dokumentumot nem lehet törölni, mivel az időzített kiadások között szerepel',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Törlés',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -65,6 +68,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Közzétéve',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Közzététel…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Dokumentum érvényesítése folyamatban…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Kérjük, javítsa ki az érvényesítési hibákat a közzététel előtt',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Érvényesítési hibák',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Vannak érvényességi hibák, amelyeket ki kell javítani, mielőtt ez a dokumentum közzétehető',
@@ -127,6 +137,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'A munkaterület nem engedélyezi a vázlatokat, de ennek a dokumentumnak létezik egy vázlat verziója.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Az ütemezés szünetel a szerkesztés alatt. Nyomja meg az Ütemezés gombot az újraaktiváláshoz vagy válasszon új dátumot.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'A szerepköröd <Roles/> nem rendelkezik jogosultsággal a dokumentum létrehozására.',
@@ -280,6 +293,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'Az előző dokumentum paramétere érvénytelen.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Nem sikerült betölteni a kiadásokat',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -439,6 +454,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'A <VersionBadge>piszkozat</VersionBadge> dokumentum megnyitása',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'A <VersionBadge>{{releaseTitle}}</VersionBadge> kiadás megnyitása',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Elem hozzáadása',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Bejövő hivatkozások a(z) {{type}} típusból',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Nincsenek elemek',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Hivatkozás innen: {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'A(z) {{type}} sématípus nem található',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Írjon be kereséshez',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Dokumentumok betöltése...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Keresztdataset dokumentumok betöltése...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Ehhez a típushoz nem definiáltak bejövő hivatkozásokat, további információkért lásd a dokumentációt.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Ebben a típusban nem találhatók hivatkozások.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'A(z) {{type}} sématípus nem található',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Betöltés…',
