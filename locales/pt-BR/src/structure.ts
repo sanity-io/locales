@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Operação não está pronta',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Este documento ainda não existe ou já foi excluído',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Este documento não pode ser excluído pois está dentro de lançamentos programados',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Excluir',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Publicado',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publicando…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validando documento…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Por favor, corrija os erros de validação antes de publicar',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Erros de validação',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Existem erros de validação que precisam ser corrigidos antes que este documento possa ser publicado',
@@ -125,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'O espaço de trabalho não tem rascunhos habilitados, mas uma versão rascunho deste documento existe.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Programação pausada durante a edição. Pressione Programar para reativar ou escolha uma nova data.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Seu papel <Roles/> não tem permissão para criar este documento.',
@@ -278,6 +291,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'O parâmetro do documento anterior é inválido.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Falha ao carregar lançamentos',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -437,6 +452,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Abrir documento <VersionBadge>rascunho</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Abrir lançamento <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Adicionar item',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Referências recebidas do tipo {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Nenhum item',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Referência de {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Tipo de esquema {{type}} não encontrado',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Digite para buscar',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Carregando documentos...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Carregando documentos entre conjuntos de dados...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Nenhuma referência recebida definida para este tipo, consulte a documentação para mais informações.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Nenhuma referência deste tipo encontrada.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Tipo de esquema {{type}} não encontrado',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Carregando…',
