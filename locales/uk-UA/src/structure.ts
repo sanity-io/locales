@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Операція ще не готова',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Цей документ ще не існує або вже видалений',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Цей документ не можна видалити, оскільки він є у запланованих релізах',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Видалити',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Опубліковано',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Публікується…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Перевірка документа…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Будь ласка, виправте помилки перевірки перед публікацією',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Помилки перевірки',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Є помилки перевірки, які потрібно виправити перед публікацією цього документа',
@@ -125,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Робочий простір не має включених чернеток, але існує чернеткова версія цього документа.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Розклад зупинено під час редагування. Натисніть Розклад, щоб активувати знову або вибрати нову дату.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не має дозволів на створення цього документа.',
@@ -267,6 +280,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'Параметр попереднього документа недійсний.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Не вдалося завантажити релізи',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -411,6 +426,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Відкрити <VersionBadge>чернетку</VersionBadge> документ',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Відкрити випуск <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Додати елемент',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Вхідні посилання типу {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Немає елементів',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Посилання з {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Тип схеми {{type}} не знайдено',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Введіть для пошуку',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Завантаження документів...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Завантаження документів з різних наборів даних...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Для цього типу не визначено вхідних посилань, дивіться документацію для отримання додаткової інформації.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Посилань цього типу не знайдено.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Тип схеми {{type}} не знайдено',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Завантаження…',
