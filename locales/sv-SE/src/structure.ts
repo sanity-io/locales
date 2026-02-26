@@ -8,6 +8,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Detta dokument existerar inte än eller är redan raderat',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Detta dokument kan inte raderas eftersom det finns inom schemalagda utgåvor',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Radera',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -64,6 +67,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Publicerad',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publicerar…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validerar dokument…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Vänligen åtgärda valideringsfelen innan publicering',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Valideringsfel',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Det finns valideringsfel som måste åtgärdas innan detta dokument kan publiceras',
@@ -127,6 +137,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Arbetsytan har inte utkast aktiverade, men en utkastversion av detta dokument finns.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Schemaläggning pausad under redigering. Tryck på Schemalägg för att återaktivera eller välj ett nytt datum.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din roll <Roles/> har inte behörighet att skapa detta dokument.',
@@ -277,6 +290,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'Kan inte jämföra dokument',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'Föregående dokumentparameter är ogiltig.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Misslyckades med att ladda utgåvor',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -436,6 +451,31 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Öppna <VersionBadge>utkast</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Öppna <VersionBadge>{{releaseTitle}}</VersionBadge> release',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Lägg till objekt',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Inkommande referenser av typ {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Inga objekt',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Referens från {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Schematyp {{type}} hittades inte',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Skriv för att söka',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Laddar dokument...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': 'Laddar dokument över dataset...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Inga inkommande referenser definierade för denna typ, se dokumentationen för mer information.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Inga referenser av denna typ hittades.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Schematyp {{type}} hittades inte',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Laddar…',
