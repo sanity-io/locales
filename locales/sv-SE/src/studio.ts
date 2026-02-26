@@ -203,6 +203,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Klar',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Välj ny tillgång för “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Välj ny tillgång',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Redigera tillgång',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Väljer fil för {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Väljer bild för {{targetTitle}}',
@@ -577,12 +586,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Gå med i vårt community',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Senaste versionen är {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrera studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App id',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Ladda om för att uppdatera till v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio version {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjälp och resurser',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Uppdaterad',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Inkommande referenser',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Avbryt',
@@ -688,6 +710,11 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Uppladdningen kunde inte slutföras just nu.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Uppladdning misslyckades',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privat tillgång',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'CDN-åtkomst begränsad till signerade URL:er',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Rensa fält',
   /** Copy URL */
@@ -696,6 +723,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Ladda ner',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL:en är kopierad till urklipp',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Öppna i {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Ersätt',
   /** Upload */
@@ -760,6 +789,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Släpp bilden för att ladda upp',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Detta fält är endast läsning',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kunde inte ladda bild. Detta kan bero på åtkomstbegränsningar.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Okänd medlemstyp: {{kind}}',
   /** Edit hotspot and crop */
@@ -819,6 +851,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Alla fält',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Fältgrupper',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'fel',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'info',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'varning',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Detta fält är <strong>skrivskyddat</strong> enligt dokumentets schema och kan inte avmarkeras. Om du vill kunna avmarkera detta i Studio, se till att du tar bort <code>readOnly</code> fältet från den inneslutande typen i schemat.',
@@ -1142,6 +1180,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Motsvarighet i referensstyrka',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Omvandla till svag referens',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Rensa',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generera',
   /** Loading message for when the input is actively generating a slug */
@@ -1328,6 +1368,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Lyckades återställa inställningen att avpublicera vid publicering.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Schemalägg publicering',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Misslyckades med att ställa in versionen som ej publicerad på release',
@@ -1340,6 +1382,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Visa schemalagda utkast',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Schemalagd för publicering den {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} version',
+  'release.chip.button.other-versions_other': '+{{count}} versioner',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Utkast',
   /** Label for Draft chip in global header */
@@ -1361,6 +1405,9 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Inga förändringar',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ej publicerad',
+  'release.chip.tooltip.other-versions_one': 'En ytterligare version utanför utgivningar',
+  'release.chip.tooltip.other-versions_other':
+    '{{count}} ytterligare versioner utanför utgivningar',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicerad {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1422,8 +1469,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Dölj release',
   /** Label for the release menu */
   'release.menu.label': 'Meny för publicering',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Visa schemalagda utkast',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Åtgärder',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Visa innehållsutgivningar',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Utkast',
   /** Label for published releases in navbar */
@@ -1457,6 +1508,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Releasen '{{title}}' kunde inte hittas",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Misslyckades med att pausa det schemalagda utkastdokumentet <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Misslyckades med att publicera det schemalagda utkastdokumentet <strong>{{title}}</strong>: {{error}}',
@@ -1477,6 +1531,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Det schemalagda utkastdokumentet <strong>{{title}}</strong> har omschemalagts.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Misslyckades med att schemalägga utkast: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Utkastet har schemalagts framgångsrikt',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
