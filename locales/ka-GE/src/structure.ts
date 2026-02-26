@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'ოპერაცია არ არის მზად',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'ეს დოკუმენტი ჯერ არ არსებობს ან უკვე წაშლილია',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'ეს დოკუმენტი ვერ წაიშლება, რადგან იგი შედის დაგეგმილ გამოშვებებში',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'წაშლა',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'გამოცემულია',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'გამოცემა…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'დოკუმენტის ვალიდაცია...',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'გთხოვთ, გაასწორეთ ვალიდაციის შეცდომები გამოშვებამდე',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'ვალიდაციის შეცდომები',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'არის ვალიდაციის შეცდომები, რომლებიც უნდა გასწორდეს, სანამ ეს დოკუმენტი გამოიცემა',
@@ -124,6 +134,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'სამუშაო სივრცეში არ არის ჩართული დრაფტები, თუმცა ამ დოკუმენტის დრაფტის ვერსია არსებობს.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'დაგეგმილი გამოშვება შეჩერებულია რედაქტირებისას. დააჭირეთ განრიგს რეაქტივაციისთვის ან აირჩიეთ ახალი თარიღი.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'თქვენი როლი <Roles/> არ აქვს უფლება შექმნას ეს დოკუმენტი.',
@@ -275,6 +288,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'დოკუმენტთა შედარება შეუძლებელია',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'წინა დოკუმენტის პარამეტრი არასწორია.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'გამოშვებების ჩატვირთვა ჩავარდა',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'ამ დოკუმენტის სხვა ვერსიები არ არის შესადარებლად.',
@@ -432,6 +447,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'გახსენით <VersionBadge>draft</VersionBadge> დოკუმენტი',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'გახსენით <VersionBadge>{{releaseTitle}}</VersionBadge> რელიზი',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'დაამატეთ ერთეული',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'შემომავალი მიმართულებები ტიპის {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'ერთეულები არ არის',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'მიმართულება ტიპიდან {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'სქემის ტიპი {{type}} ვერ მოიძებნა',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'ჩაწერეთ რათა მოძებნოთ',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'დოკუმენტების ჩატვირთვა...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'კროს-დატასეტის დოკუმენტების ჩატვირთვა...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'ამ ტიპისთვის შემომავალი მიმართულებები არ არის განსაზღვრული, იხილეთ დოკუმენტაცია უფრო დეტალურად.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'ამ ტიპის მიმართულებები ვერ მოიძებნა.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'სქემის ტიპი {{type}} ვერ მოიძებნა',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'ჩატვირთვა…',
