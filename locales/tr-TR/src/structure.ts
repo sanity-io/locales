@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'İşlem hazır değil',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Bu belge henüz mevcut değil veya zaten silinmiş',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Bu belge, planlanmış yayınlarda bulunduğu için silinemez',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Sil',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Yayımlandı',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Yayımlanıyor…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Belge doğrulanıyor…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Yayınlamadan önce lütfen doğrulama hatalarını düzeltin',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Doğrulama hataları',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Bu belgenin yayımlanabilmesi için düzeltilmesi gereken doğrulama hataları var',
@@ -124,6 +134,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Çalışma alanında taslaklar etkinleştirilmemiş, ancak bu belgenin bir taslak versiyonu mevcut.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    "Düzenleme sırasında program duraklatıldı. Yeniden etkinleştirmek için Program'a basın veya yeni bir tarih seçin.",
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Rolünüz <Roles/> bu belgeyi oluşturma iznine sahip değil.',
@@ -273,6 +286,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'Belgeler karşılaştırılamıyor',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'Önceki belge parametresi geçersiz.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Yayınlar yüklenemedi',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -430,6 +445,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': '<VersionBadge>taslak</VersionBadge> belgesini aç',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> sürümünü aç',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Öğe ekle',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': '{{type}} türünden gelen referanslar',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Öğe yok',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': '{{type}} türünden referans',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': '{{type}} şema türü bulunamadı',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Aramak için yazın',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Belgeler yükleniyor...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Çapraz veri seti belgeleri yükleniyor...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Bu tür için gelen referanslar tanımlanmamış, daha fazla bilgi için dokümanlara bakın.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Bu türden referans bulunamadı.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': '{{type}} şema türü bulunamadı',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Yükleniyor…',

@@ -205,6 +205,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Medya Kütüphanesi',
   'asset-sources.media-library.image.title': 'Medya Kütüphanesi',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Tamam',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '“{{targetTitle}}” için yeni varlık seç',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Yeni varlık seç',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Varlığı Düzenle',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}} için dosya seçimi',
   'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}} için resim seçimi',
@@ -581,6 +590,12 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Topluluğumuza katılın',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'En son sürüm {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Stüdyo kaydı',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Uygulama kimliği',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now':
     'v{{newVersion}} sürümüne güncellemek için yeniden yükle',
@@ -588,6 +603,13 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-version': 'Sanity Studio sürümü {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Yardım ve kaynaklar',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Güncel',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Gelen referanslar',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'İptal Et',
@@ -693,6 +715,11 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Yükleme şu anda tamamlanamadı.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Yükleme başarısız',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Özel varlık',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    "CDN erişimi yalnızca imzalı URL'ler ile sınırlıdır",
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Alanı temizle',
   /** Copy URL */
@@ -701,6 +728,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'İndir',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL panoya kopyalandı',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}} içinde aç',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Değiştir',
   /** Upload */
@@ -766,6 +795,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Yüklemek için resmi bırakın',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Bu alan salt okunurdur',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Resim yüklenemedi. Bu, erişim kısıtlamalarından kaynaklanıyor olabilir.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Bilinmeyen üye türü: {{kind}}',
   /** Edit hotspot and crop */
@@ -825,6 +857,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Tüm alanlar',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Alan grupları',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'hata',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'bilgi',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'uyarı',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Bu alan, belgenin şemasına göre <strong>sadece okunabilir</strong> ve kaldırılamaz. Stüdyoda bunu kaldırabilmek istiyorsanız, şemadaki kapsayıcı türden <code>readOnly</code> alanını kaldırdığınızdan emin olun.',
@@ -1148,6 +1186,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Referans gücü uyuşmazlığı',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Zayıf referansa dönüştür',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Temizle',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Oluştur',
   /** Loading message for when the input is actively generating a slug */
@@ -1332,6 +1372,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Yayınlanmamak üzere ayarlanan sürüm başarıyla geri alındı.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Yayınlamayı planla',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Sürümün yayından kaldırılması başarısız oldu',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1343,6 +1385,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Zamanlanmış Taslakları Görüntüle',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}} tarihinde yayımlanmak üzere planlandı',
+  'release.chip.button.other-versions_one': '+{{count}} versiyon',
+  'release.chip.button.other-versions_other': '+{{count}} versiyonlar',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Taslak',
   /** Label for Draft chip in global header */
@@ -1364,6 +1408,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Düzenleme yok',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Yayınlanmadı',
+  'release.chip.tooltip.other-versions_one': 'Yayınlardan bağımsız bir ek versiyon',
+  'release.chip.tooltip.other-versions_other': 'Yayınlardan bağımsız {{count}} ek versiyon',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '{{date}} tarihinde yayınlandı',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1423,8 +1469,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Sürümü gizle',
   /** Label for the release menu */
   'release.menu.label': 'Yayın Menüsü',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Planlanmış Taslakları Görüntüle',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Aksiyonlar',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'İçerik Yayınlarını Görüntüle',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Taslaklar',
   /** Label for published releases in navbar */
@@ -1458,6 +1508,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "'{{title}}' yayını bulunamadı",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Planlanmış taslak belgeyi duraklatma başarısız oldu <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> yayınlanamadı: {{error}}',
@@ -1478,6 +1531,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> için yeni bir zamanlama yapıldı.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Taslak planlaması başarısız oldu: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Taslak başarıyla planlandı',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
