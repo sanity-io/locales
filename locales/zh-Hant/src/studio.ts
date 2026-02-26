@@ -189,6 +189,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': '媒體庫',
   'asset-sources.media-library.image.title': '媒體庫',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': '完成',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '為“{{targetTitle}}”選擇新資產',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    '選擇新資產',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': '編輯資產',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': '為 {{targetTitle}} 選擇文件',
   'asset-sources.media-library.select-dialog.title_image': '為 {{targetTitle}} 選擇圖片',
@@ -543,12 +552,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '加入我們的社群',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '最新版本是 {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': '註冊工作室',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': '應用程式ID',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': '重新加載以更新至 v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio 版本 {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': '幫助與資源',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': '最新的',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': '傳入的參考',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': '取消上傳',
@@ -651,6 +673,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': '此時無法完成上傳。',
   /** Upload failed */
   'inputs.file.upload-failed.title': '上傳失敗',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': '私有資產',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN訪問限於簽名的URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': '清除欄位',
   /** Copy URL */
@@ -659,6 +685,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': '下載',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': '網址已複製到剪貼簿',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '在{{sourceName}}中打開',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': '替換',
   /** Upload */
@@ -709,6 +737,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': '拖放圖片以上傳',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': '此欄位為唯讀',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction': '無法加載圖像。這可能是由於訪問限制。',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '未知的成員類型：{{kind}}',
   /** Edit hotspot and crop */
@@ -764,6 +794,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': '所有欄位',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': '欄位群組',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': '錯誤',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': '信息',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': '警告',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     '根據文件的架構，此欄位為<strong>唯讀</strong>，不能被取消設置。如果您希望在Studio中能夠取消設置此欄位，請確保您從架構中的封閉類型中移除<code>readOnly</code>欄位。',
@@ -1071,6 +1107,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': '參考強度不相符',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '轉換為弱參考',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': '清除',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': '生成',
   /** Loading message for when the input is actively generating a slug */
@@ -1248,6 +1286,8 @@ export default removeUndefinedLocaleResources({
   'release.action.revert-unpublish-version.success.description': '您現在可以編輯此版本。',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title': '成功還原設置為發布時取消發布的操作。',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': '安排發布',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': '設定版本在發布時未發布失敗',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1258,6 +1298,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': '查看預定草稿',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '預定於 {{date}} 發布',
+  'release.chip.button.other-versions_other': '+{{count}}個版本',
   /** Label for Draft chip in document header */
   'release.chip.draft': '草稿',
   /** Label for Draft chip in global header */
@@ -1278,6 +1319,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '無編輯',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '未發布',
+  'release.chip.tooltip.other-versions_other': '{{count}}個額外版本不在發布範圍內',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '發布於 {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1334,8 +1376,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': '隱藏發布',
   /** Label for the release menu */
   'release.menu.label': '發布菜單',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': '查看預定草稿',
   /** Tooltip for the release menu */
   'release.menu.tooltip': '操作',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': '查看內容發布',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': '草稿',
   /** Label for published releases in navbar */
@@ -1368,6 +1414,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "找不到 '{{title}}' 發布",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    '無法暫停預定的草稿文件<strong>{{title}}</strong>：{{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     '無法立即發布預定草稿文件 <strong>{{title}}</strong>：{{error}}',
@@ -1388,6 +1437,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     '預定草稿文件 <strong>{{title}}</strong> 已被重新安排。',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': '安排草稿失敗：{{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': '已成功安排草稿',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
