@@ -52,6 +52,7 @@ export default defineConfig({
 
 - [@imaprototype](https://github.com/imaprototype)
 - [@jferrettiboke](https://github.com/jferrettiboke)
+- [@pedrobonamin](https://github.com/pedrobonamin)
 
 ## Contributing
 
