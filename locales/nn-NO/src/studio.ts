@@ -203,6 +203,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Ferdig',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Vel ny eigedom for “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Vel ny eigedom',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger eigedom',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Vel fil for {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Vel bilde for {{targetTitle}}',
@@ -578,12 +587,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Bli med i vårt fellesskap',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Siste versjon er {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrer studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App id',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Last inn på nytt for å oppdatere til v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versjon {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjelp og ressursar',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Oppdatert',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Innkommende referansar',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Avbryt',
@@ -690,6 +712,10 @@ export default removeUndefinedLocaleResources({
     'Opplastinga kunne ikkje fullførast på dette tidspunktet.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Opplasting feila',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privat eigedom',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN-tilgang avgrensa til signerte URL-ar',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Tøm felt',
   /** Copy URL */
@@ -698,6 +724,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Last ned',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL-en er kopiert til utklippstavla',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Opne i {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Erstatt',
   /** Upload */
@@ -761,6 +789,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Slepp bilete for å laste opp',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Dette feltet er berre lese',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kunne ikkje laste bilde. Dette kan skyldast tilgangsavgrensingar.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ukjend medlemstype: {{kind}}',
   /** Edit hotspot and crop */
@@ -821,6 +852,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Alle felt',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Feltgrupper',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'feil',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informasjon',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'åtvaring',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Dette feltet er <strong>berre les</strong> i følge dokumentets skjema og kan ikkje fjernast. Om du vil kunne fjerne dette i Studio, sørg for å fjerne <code>readOnly</code> feltet frå den omsluttande typen i skjemaet.',
@@ -1144,6 +1181,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Uoverensstemmelse i referansestyrke',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Konverter til svak referanse',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Fjern',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generer',
   /** Loading message for when the input is actively generating a slug */
@@ -1329,6 +1368,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Vellykka tilbakestilling frå å setje til upublisering ved utgjeving.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Planlegg publisering',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Klarte ikkje å setje versjonen til å bli avpublisert på utgjeving',
@@ -1341,6 +1382,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Vis planlagde utkast',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Planlagt for publisering den {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} versjon',
+  'release.chip.button.other-versions_other': '+{{count}} versjonar',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Utkast',
   /** Label for Draft chip in global header */
@@ -1362,6 +1405,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Ingen redigeringar',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ikkje publisert',
+  'release.chip.tooltip.other-versions_one': 'Ein ekstra versjon utanfor utgjevingar',
+  'release.chip.tooltip.other-versions_other': '{{count}} ekstra versjonar utanfor utgjevingar',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publisert {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1420,8 +1465,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Gøym utgjeving',
   /** Label for the release menu */
   'release.menu.label': 'Meny for utgjeving',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Vis planlagde utkast',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Handlingar',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Vis innhaldsutgjevingar',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Utkast',
   /** Label for published releases in navbar */
@@ -1454,6 +1503,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Kunne ikkje finne utgjevinga '{{title}}'",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Klarte ikkje å pause det planlagde utkastdokumentet <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Klarte ikkje å publisere det planlagde utkastdokumentet <strong>{{title}}</strong>: {{error}}',
@@ -1474,6 +1526,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Det planlagde utkastdokumentet <strong>{{title}}</strong> har blitt planlagt på nytt.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Klarte ikkje å planlegge utkast: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Planla utkastet vellukka',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
