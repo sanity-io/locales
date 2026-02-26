@@ -208,6 +208,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Média Könyvtár',
   'asset-sources.media-library.image.title': 'Média Könyvtár',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Kész',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Új eszköz kiválasztása a(z) „{{targetTitle}}” számára',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Új eszköz kiválasztása',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Eszköz szerkesztése',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}} fájl kiválasztása',
   'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}} kép kiválasztása',
@@ -582,12 +591,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Csatlakozás a közösségünkhöz',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'A legújabb verzió {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Stúdió regisztrálása',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Alkalmazás azonosító',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Újratöltés a v{{newVersion}} frissítéséhez',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio verzió {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Segítség és erőforrások',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Naprakész',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Bejövő hivatkozások',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Feltöltés megszakítása',
@@ -693,6 +715,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'A feltöltés jelenleg nem hajtható végre.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'A feltöltés sikertelen',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privát eszköz',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN hozzáférés korlátozva aláírt URL-ekre',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Mező törlése',
   /** Copy URL */
@@ -701,6 +727,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Letöltés',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'Az URL vágólapra másolva',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Megnyitás itt: {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Csere',
   /** Upload */
@@ -767,6 +795,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Dobja ide a képet a feltöltéshez',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Ez a mező csak olvasható',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nem sikerült betölteni a képet. Ez hozzáférési korlátozások miatt lehet.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ismeretlen tagtípus: {{kind}}',
   /** Edit hotspot and crop */
@@ -826,6 +857,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Összes mező',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Mezőcsoportok',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'hiba',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'információ',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'figyelmeztetés',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Ez a mező <strong>csak olvasható</strong> a dokumentum sémája szerint és nem távolítható el. Ha szeretnéd, hogy ezt a Studioban el lehessen távolítani, győződj meg róla, hogy eltávolítod a <code>readOnly</code> mezőt a séma beágyazott típusából.',
@@ -1152,6 +1189,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Hivatkozás erősségének eltérése',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Átalakítás gyenge hivatkozássá',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Törlés',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generálás',
   /** Loading message for when the input is actively generating a slug */
@@ -1339,6 +1378,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Sikeresen visszavonva a közzététel beállítása a kiadásnál.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Közzététel ütemezése',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Nem sikerült beállítani a verziót közzétételre váró állapotba a kiadásban',
@@ -1351,6 +1392,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Ütemezett vázlatok megtekintése',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Közzétételre ütemezve erre a dátumra: {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} verzió',
+  'release.chip.button.other-versions_other': '+{{count}} verziók',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Vázlat',
   /** Label for Draft chip in global header */
@@ -1372,6 +1415,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Nincsenek szerkesztések',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nincs közzétéve',
+  'release.chip.tooltip.other-versions_one': 'Egy további verzió a kiadásokon kívül',
+  'release.chip.tooltip.other-versions_other': '{{count}} további verziók a kiadásokon kívül',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Közzétéve {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1431,8 +1476,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Kiadás elrejtése',
   /** Label for the release menu */
   'release.menu.label': 'Kiadás menü',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Ütemezett vázlatok megtekintése',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Műveletek',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Tartalomkiadások megtekintése',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Piszkozatok',
   /** Label for published releases in navbar */
@@ -1465,6 +1514,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "A(z) '{{title}}' kiadás nem található",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nem sikerült szüneteltetni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Nem sikerült közzétenni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
@@ -1485,6 +1537,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> újraütemezve lett.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nem sikerült ütemezni a vázlatot: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'A vázlat ütemezése sikeresen megtörtént',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
