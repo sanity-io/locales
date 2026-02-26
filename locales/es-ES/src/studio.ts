@@ -207,6 +207,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de medios',
   'asset-sources.media-library.image.title': 'Biblioteca de medios',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Hecho',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Seleccionar nuevo activo para “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Seleccionar nuevo activo',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Editar activo',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file':
     'Seleccionando archivo para {{targetTitle}}',
@@ -590,12 +599,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Únete a nuestra comunidad',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La última versión es {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrar estudio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID de la aplicación',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Recargar para actualizar a v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versión de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Ayuda y recursos',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Actualizado',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Referencias entrantes',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Cancelar',
@@ -701,6 +723,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'La carga no se pudo completar en este momento.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Fallo en la carga',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Activo privado',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Acceso CDN limitado a URLs firmadas',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Limpiar campo',
   /** Copy URL */
@@ -710,6 +736,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'La URL se ha copiado al portapapeles',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Abrir en {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Reemplazar',
   /** Upload */
@@ -773,6 +801,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Suelta la imagen para cargar',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Este campo es de solo lectura',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'No se pudo cargar la imagen. Esto puede deberse a restricciones de acceso.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Tipo de miembro desconocido: {{kind}}',
   /** Edit hotspot and crop */
@@ -832,6 +863,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Todos los campos',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Grupos de campos',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'error',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'información',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'advertencia',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Este campo es <strong>solo lectura</strong> según el esquema del documento y no puede ser eliminado. Si quieres poder eliminar esto en Studio, asegúrate de quitar el campo <code>readOnly</code> del tipo que lo encierra en el esquema.',
@@ -1155,6 +1192,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Incongruencia en la fortaleza de la referencia',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Convertir a referencia débil',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Limpiar',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generar',
   /** Loading message for when the input is actively generating a slug */
@@ -1339,6 +1378,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Se ha revertido con éxito la configuración para no publicar al lanzar.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Programar publicación',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'No se pudo establecer la versión para que no se publique en el lanzamiento',
@@ -1351,6 +1392,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Ver borradores programados',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programado para publicarse el {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} versión',
+  'release.chip.button.other-versions_other': '+{{count}} versiones',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Borrador',
   /** Label for Draft chip in global header */
@@ -1372,6 +1415,9 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Sin ediciones',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'No publicado',
+  'release.chip.tooltip.other-versions_one': 'Una versión adicional fuera de las publicaciones',
+  'release.chip.tooltip.other-versions_other':
+    '{{count}} versiones adicionales fuera de las publicaciones',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicado {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1431,8 +1477,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Ocultar publicación',
   /** Label for the release menu */
   'release.menu.label': 'Menú de lanzamiento',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Ver borradores programados',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Acciones',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Ver publicaciones de contenido',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Borradores',
   /** Label for published releases in navbar */
@@ -1465,6 +1515,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "No se pudo encontrar el lanzamiento '{{title}}'",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Error al pausar el documento programado <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'No se pudo publicar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
@@ -1485,6 +1538,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'El documento de borrador programado <strong>{{title}}</strong> ha sido reprogramado.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Error al programar el borrador: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Borrador programado con éxito',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
