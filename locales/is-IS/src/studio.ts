@@ -204,6 +204,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Fjölmiðlabókasafn',
   'asset-sources.media-library.image.title': 'Fjölmiðlabókasafn',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Lokið',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Veldu nýja eign fyrir „{{targetTitle}}“',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Veldu nýja eign',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Breyta eign',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Velja skrá fyrir {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Velja mynd fyrir {{targetTitle}}',
@@ -580,12 +589,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Vertu með í samfélagi okkar',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Nýjasta útgáfan er {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Skrá stúdíó',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Forritsauðkenni',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Endurhlaða til að uppfæra í v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Útgáfa af Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjálp og auðlindir',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Uppfært',
+  /** Version text */
+  'help-resources.version': 'útgáfa {{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Innkoma tilvísanir',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Hætta við',
@@ -691,6 +713,11 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Ekki var hægt að ljúka upphleðslu á þessum tíma.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Upphleðsla mistókst',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Einkaeign',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'Aðgangur að CDN takmarkaður við undirritaðar URL-slóðir',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Hreinsa reit',
   /** Copy URL */
@@ -699,6 +726,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Sækja',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'Vefslóð er afrituð á klippiborð',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Opna í {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Skipta út',
   /** Upload */
@@ -762,6 +791,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Slepptu mynd til að hlaða upp',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Þetta svæði er aðeins til lesturs',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Gat ekki hlaðið mynd. Þetta gæti verið vegna aðgangstakmarkana.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Óþekkt tegund meðlims: {{kind}}',
   /** Edit hotspot and crop */
@@ -821,6 +853,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Allir reitir',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Hópar reita',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'villa',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'upplýsingar',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'viðvörun',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Þessi reitur er <strong>aðeins til lesturs</strong> samkvæmt skema skjalsins og getur ekki verið óskilgreindur. Ef þú vilt geta óskilgreint þetta í Studio, vertu viss um að fjarlægja <code>readOnly</code> reitinn frá umlykjandi tegund í skemanu.',
@@ -1142,6 +1180,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Mismunur á styrkleika tilvísunar',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Breyta í veika tilvísun',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Hreinsa',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Búa til',
   /** Loading message for when the input is actively generating a slug */
@@ -1326,6 +1366,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Tókst að afturkalla stillingu á óbirtingu við útgáfu.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Áætla birtingu',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'Mistókst að setja útgáfu til að vera óbirt í útgáfu',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1337,6 +1379,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Skoða tímasettar drög',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Áætlað til birtingar á {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} útgáfa',
+  'release.chip.button.other-versions_other': '+{{count}} útgáfur',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Drög',
   /** Label for Draft chip in global header */
@@ -1358,6 +1402,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Engar breytingar',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Óbirt',
+  'release.chip.tooltip.other-versions_one': 'Ein auka útgáfa utan útgáfna',
+  'release.chip.tooltip.other-versions_other': '{{count}} auka útgáfur utan útgáfna',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Birt {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1416,8 +1462,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Fela útgáfu',
   /** Label for the release menu */
   'release.menu.label': 'Valmynd útgáfu',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Skoða Áætlaðar Drög',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Aðgerðir',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Skoða Efnisútgáfur',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Drög',
   /** Label for published releases in navbar */
@@ -1451,6 +1501,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Ekki tókst að finna '{{title}}' útgáfuna",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Tókst ekki að setja á bið áætlaðan drögskjal <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Mistókst að birta tímasettu drögin <strong>{{title}}</strong>: {{error}}',
@@ -1471,6 +1524,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Tímasettu drögin <strong>{{title}}</strong> hafa verið endurtímasett.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Tókst ekki að áætla drög: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Drög áætluð með góðum árangri',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */

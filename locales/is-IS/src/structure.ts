@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Aðgerð ekki tilbúin',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Þetta skjal er ekki til eða nú þegar eytt',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Ekki er hægt að eyða þessu skjali þar sem það er innan áætlunar um útgáfur',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Eyða',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -63,6 +66,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Birt',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Birti…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Staðfesting skjals í gangi…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Vinsamlegast lagfærðu staðfestingarvillurnar áður en þú birtir',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Staðfestingarvillur',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Það eru staðfestingarvillur sem þarf að laga áður en hægt er að birta þetta skjal',
@@ -125,6 +135,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'Vinnusvæðið er ekki með virk drög, en drög að þessu skjali eru til.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Áætlun stöðvuð á meðan ritun stendur yfir. Ýttu á Áætla til að virkja aftur eða veldu nýtt dagsetningu.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Hlutverk þitt <Roles/> hefur ekki heimildir til að búa til þetta skjal.',
@@ -274,6 +287,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'Ekki hægt að bera saman skjöl',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'Fyrri skjals parameter er ógilt.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Mistókst að hlaða útgáfum',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -430,6 +445,31 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Opna <VersionBadge>drög</VersionBadge> skjal',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Opna <VersionBadge>{{releaseTitle}}</VersionBadge> útgáfu',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Bæta við atriði',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Innkoma vísanir af gerð {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Engin atriði',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Vísun frá {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Skema gerð {{type}} fannst ekki',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Sláðu inn til að leita',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Hleð skjölum...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': 'Hleð skjölum yfir gagnasett...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Engar innkomandi vísanir skilgreindar fyrir þessa gerð, sjá skjöl fyrir frekari upplýsingar.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Engar vísanir af þessari gerð fundust.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Skema gerð {{type}} fannst ekki',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Hleður…',
