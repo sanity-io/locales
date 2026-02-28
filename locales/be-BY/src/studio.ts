@@ -199,6 +199,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Медыябібліятэка',
   'asset-sources.media-library.image.title': 'Медыябібліятэка',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Гатова',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Выбраць новы актыў для “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Выбраць новы актыў',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Рэдагаваць актыў',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Выбар файла для {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Выбар малюнка для {{targetTitle}}',
@@ -566,12 +575,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Далучайцеся да нашай супольнасці',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Апошняя версія - {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Зарэгістраваць студыю',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID прыкладання',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Перазагрузіце, каб абнавіць да версіі v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Версія Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Дапамога і рэсурсы',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Актуальная версія',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Уваходныя спасылкі',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Адмяніць загрузку',
@@ -674,6 +696,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Загрузка не можа быць завершана ў гэты час.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Загрузка не атрымалася',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Прыватны актыў',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Доступ да CDN абмежаваны падпісанымі URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Ачысціць поле',
   /** Copy URL */
@@ -682,6 +708,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Спампаваць',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL скапіраваны ў буфер абмену',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Адкрыць у {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Замяніць',
   /** Upload */
@@ -736,6 +764,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Пакіньце малюнак, каб загрузіць',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Гэта поле толькі для чытання',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Не ўдалося загрузіць малюнак. Гэта можа быць звязана з абмежаваннямі доступу.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Невядомы тып элемента: {{kind}}',
   /** Edit hotspot and crop */
@@ -796,6 +827,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Усе палі',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Групы палёў',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'памылка',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'інфармацыя',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'папярэджанне',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Гэта поле <strong>толькі для чытання</strong> згодна схеме дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.',
@@ -1114,6 +1151,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Несупадзенне моцнасці спасылкі',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Ператварыць у слабую спасылку',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Ачысціць',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Стварыць',
   /** Loading message for when the input is actively generating a slug */
@@ -1296,6 +1335,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Паспяхова адменена налада на зняцце з публікацыі падчас выпуску.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Запланаваць публікацыю',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Не ўдалося ўсталяваць версію як неапублікаваную ў рэлізе',
@@ -1308,6 +1349,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Прагляд запланаваных чарнавікоў',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Запланавана да публікацыі на {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} версія',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Чарнавік',
   /** Label for Draft chip in global header */
@@ -1329,6 +1371,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Няма рэдагаванняў',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Не апублікавана',
+  'release.chip.tooltip.other-versions_one': 'Адна дадатковая версія па-за рэлізамі',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Апублікавана {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1387,8 +1430,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Схаваць рэліз',
   /** Label for the release menu */
   'release.menu.label': 'Меню выпуску',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Прагляд запланаваных чарнавікоў',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Дзеянні',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Прагляд кантэнт-рэлізаў',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Чарнавікі',
   /** Label for published releases in navbar */
@@ -1421,6 +1468,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Рэліз '{{title}}' не можа быць знойдзены",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Не ўдалося прыпыніць запланаваны чарнавік дакумента <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Не ўдалося апублікаваць дакумент запланаванага чарнавіка <strong>{{title}}</strong>: {{error}}',
@@ -1441,6 +1491,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Дакумент запланаванага чарнавіка <strong>{{title}}</strong> быў перапланаваны.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Не ўдалося запланаваць чарнавік: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Чарнавік запланаваны паспяхова',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
