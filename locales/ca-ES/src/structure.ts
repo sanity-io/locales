@@ -8,6 +8,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Aquest document encara no existeix o ja ha estat eliminat',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Aquest document no es pot eliminar ja que existeix dins de les publicacions programades',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Elimina',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -64,6 +67,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Publicat',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publicant…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validant el document…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Si us plau, corregeix els errors de validació abans de publicar',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Errors de validació',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Hi ha errors de validació que cal corregir abans que aquest document pugui ser publicat',
@@ -126,6 +136,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     "L'espai de treball no té esborranys habilitats, però existeix una versió d'esborrany d'aquest document.",
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    "Programació pausada mentre s'edita. Prem Programar per reactivar o triar una nova data.",
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'El teu rol <Roles/> no té permís per publicar aquest document.',
@@ -279,6 +292,8 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'El paràmetre del document anterior és invàlid.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Error en carregar les publicacions',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -437,6 +452,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Obrir <VersionBadge>esborrany</VersionBadge> document',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Obrir <VersionBadge>{{releaseTitle}}</VersionBadge> alliberament',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Afegeix element',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Referències entrants de tipus {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Cap element',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Referència de {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': "Tipus d'esquema {{type}} no trobat",
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Escriu per cercar',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Carregant documents...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Carregant documents entre conjunts de dades...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    "No s'han definit referències entrants per a aquest tipus, consulta la documentació per a més informació.",
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': "No s'han trobat referències d'aquest tipus.",
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': "Tipus d'esquema {{type}} no trobat",
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Carregant…',

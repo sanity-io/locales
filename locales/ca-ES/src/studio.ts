@@ -207,6 +207,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de mitjans',
   'asset-sources.media-library.image.title': 'Biblioteca de mitjans',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Fet',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Selecciona un nou actiu per a “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Selecciona un nou actiu',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': "Edita l'actiu",
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file':
     'Seleccionant fitxer per a {{targetTitle}}',
@@ -585,12 +594,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Uneix-te a la nostra comunitat',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La versió més recent és {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': "Registra l'estudi",
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': "Id de l'aplicació",
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Recarrega per actualitzar a la v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versió de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Ajuda i recursos',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Actualitzat',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Referències entrants',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Cancel·la',
@@ -696,6 +718,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': "La càrrega no s'ha pogut completar en aquest moment.",
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Càrrega fallida',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Actiu privat',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Accés CDN limitat a URLs signades',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Neteja camp',
   /** Copy URL */
@@ -704,6 +730,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Descarrega',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': "L'URL s'ha copiat al porta-retalls",
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Obre a {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Reemplaça',
   /** Upload */
@@ -769,6 +797,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Deixa caure la imatge per pujar-la',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Aquest camp és de només lectura',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    "No s'ha pogut carregar la imatge. Això pot ser degut a restriccions d'accés.",
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Tipus de membre desconegut: {{kind}}',
   /** Edit hotspot and crop */
@@ -828,6 +859,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Tots els camps',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Grups de camps',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'error',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informació',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'advertència',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     "Aquest camp és <strong>només de lectura</strong> segons l'esquema del document i no es pot desactivar. Si vols poder desactivar això a l'Estudi, assegura't de treure el camp <code>readOnly</code> del tipus que l'envolta a l'esquema.",
@@ -1152,6 +1189,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Desajust de la fortalesa de la referència',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Convertir a referència dèbil',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Neteja',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generar',
   /** Loading message for when the input is actively generating a slug */
@@ -1336,6 +1375,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     "S'ha revertit amb èxit l'opció de despublicar en el llançament.",
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Programa la publicació',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     "No s'ha pogut establir la versió per ser despublicada en la versió",
@@ -1348,6 +1389,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Veure esborranys programats',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programat per ser publicat el {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} versió',
+  'release.chip.button.other-versions_other': '+{{count}} versions',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Esborrany',
   /** Label for Draft chip in global header */
@@ -1369,6 +1412,9 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Sense edicions',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'No publicat',
+  'release.chip.tooltip.other-versions_one': 'Una versió addicional fora de les publicacions',
+  'release.chip.tooltip.other-versions_other':
+    '{{count}} versions addicionals fora de les publicacions',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicada {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1429,8 +1475,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Amagar versió',
   /** Label for the release menu */
   'release.menu.label': 'Menú de publicació',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Veure esborranys programats',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Accions',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Veure Publicacions de Contingut',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Esborranys',
   /** Label for published releases in navbar */
@@ -1463,6 +1513,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "No s'ha trobat la release '{{title}}'",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    "No s'ha pogut pausar el document programat <strong>{{title}}</strong>: {{error}}",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     "No s'ha pogut publicar el document d'esborrany programat <strong>{{title}}</strong>: {{error}}",
@@ -1483,6 +1536,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     "El document d'esborrany programat <strong>{{title}}</strong> ha estat reprogramat.",
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': "No s'ha pogut programar l'esborrany: {{error}}",
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Esborrany programat amb èxit',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
