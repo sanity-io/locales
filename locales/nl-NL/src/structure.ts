@@ -7,6 +7,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.not-ready': 'Operatie niet klaar',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Dit document bestaat nog niet of is al verwijderd',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Dit document kan niet worden verwijderd omdat het bestaat binnen geplande publicaties',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Verwijderen',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -64,6 +67,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Gepubliceerd',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publiceren…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Document valideren…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Los de validatiefouten op voordat u publiceert',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Validatiefouten',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Er zijn validatiefouten die opgelost moeten worden voordat dit document kan worden gepubliceerd',
@@ -127,6 +137,9 @@ export default removeUndefinedLocaleResources({
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
     'De werkruimte heeft geen concepten ingeschakeld, maar er bestaat een conceptversie van dit document.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Planning gepauzeerd tijdens het bewerken. Druk op Plannen om te reactiveren of kies een nieuwe datum.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Uw rol <Roles/> heeft geen toestemming om dit document te creëren.',
@@ -278,6 +291,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidParams.title': 'Niet in staat om documenten te vergelijken',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'De vorige documentparameter is ongeldig.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Laden van publicaties mislukt',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
@@ -436,6 +451,32 @@ export default removeUndefinedLocaleResources({
   'events.open.draft': 'Open <VersionBadge>concept</VersionBadge> document',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Open <VersionBadge>{{releaseTitle}}</VersionBadge> release',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Item toevoegen',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Binnenkomende referenties van type {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Geen items',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Referentie van {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Schema type {{type}} niet gevonden',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Typ om te zoeken',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Documenten laden...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Documenten uit verschillende datasets laden...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Geen binnenkomende referenties gedefinieerd voor dit type, zie de documentatie voor meer informatie.',
+
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Geen referenties van dit type gevonden.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Schema type {{type}} niet gevonden',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Laden…',
