@@ -203,6 +203,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'მედია ბიბლიოთეკა',
   'asset-sources.media-library.image.title': 'მედია ბიბლიოთეკა',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'დასრულებულია',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'აირჩიეთ ახალი აქტივი “{{targetTitle}}”-ისთვის',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'აირჩიეთ ახალი აქტივი',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'აქტივის რედაქტირება',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}-ისთვის ფაილის არჩევა',
   'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}-ისთვის სურათის არჩევა',
@@ -578,12 +587,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'შეუერთდით ჩვენს თემას',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'უახლესი ვერსიაა {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'სტუდიოს რეგისტრაცია',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'აპლიკაციის ID',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'გადატვირთეთ განახლება v{{newVersion}}-ზე',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio ვერსია {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'დახმარება და რესურსები',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'განახლებულია',
+  /** Version text */
+  'help-resources.version': 'ვერსია {{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'შემომავალი რეფერენსები',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'ატვირთვის შეწყვეტა',
@@ -689,6 +711,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'ატვირთვა ამ დროს ვერ შესრულდა.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'ატვირთვა ჩაიშალა',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'პირადი აქტივი',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN წვდომა შეზღუდულია ხელმოწერილი URL-ებით',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'ველის გასუფთავება',
   /** Copy URL */
@@ -697,6 +723,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'ჩამოტვირთვა',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL დაკოპირდა ბუფერში',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'გახსნა {{sourceName}}-ში',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'შეცვლა',
   /** Upload */
@@ -759,6 +787,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'ჩააგდეთ სურათი ატვირთვისთვის',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'ეს ველი მხოლოდ კითხვისაა',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'სურათის ჩატვირთვა ვერ მოხერხდა. ეს შესაძლოა წვდომის შეზღუდვების გამო იყოს.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'უცნობი წევრის ტიპი: {{kind}}',
   /** Edit hotspot and crop */
@@ -818,6 +849,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'ყველა ველი',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'ველის ჯგუფები',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'შეცდომა',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'ინფორმაცია',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'გაფრთხილება',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'ეს ველი <strong>წაკითხვადი მხარეა</strong> დოკუმენტის სქემის თანახმად და ვერ მოიხსნება. თუ გსურთ, რომ სტუდიაში შეძლოთ ამის გაუქმება, დარწმუნდით, რომ სქემის შემოსავალ ტიპში ამოიღებთ <code>readOnly</code> ველს.',
@@ -1143,6 +1180,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'რეფერენსის სიმტკიცის შეუსაბამოება',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'გადაქცევა სუსტ რეფერენსად',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'გასუფთავება',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'გენერირება',
   /** Loading message for when the input is actively generating a slug */
@@ -1327,6 +1366,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'წარმატებით გაუქმდა დაუქვეყნების განყენება გამოშვებისას.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'განრიგის დაგეგმა',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure': 'ვერსიის გამოქვეყნების უარყოფის დაყენება ჩავარდა',
   /** Action message for when a version is set to be unpublished successfully */
@@ -1338,6 +1379,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'დაგეგმილი ჩანაწერების ნახვა',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'გამოქვეყნებაზე დაგეგმილია {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} ვერსია',
+  'release.chip.button.other-versions_other': '+{{count}} ვერსიები',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'დრაფტი',
   /** Label for Draft chip in global header */
@@ -1359,6 +1402,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'რედაქტირებები არ არის',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'არ არის გამოქვეყნებული',
+  'release.chip.tooltip.other-versions_one': 'ერთი დამატებითი ვერსია რელიზების გარეთ',
+  'release.chip.tooltip.other-versions_other': '{{count}} დამატებითი ვერსია რელიზების გარეთ',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'გამოქვეყნებულია {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1417,8 +1462,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'რელიზის დამალვა',
   /** Label for the release menu */
   'release.menu.label': 'გამოშვების მენიუ',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'დაგეგმილი დრაფტების ნახვა',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'ქმედებები',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'კონტენტის რელიზების ნახვა',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'დრაფტები',
   /** Label for published releases in navbar */
@@ -1451,6 +1500,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "ვერ მოიძებნა '{{title}}' რელიზი",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'ვერ გაჩერდა დრაფტის დოკუმენტის დაგეგმვა <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'ვერ მოხერხდა დაგეგმილი ჩანაწერის დოკუმენტის <strong>{{title}}</strong> მყისიერად გამოქვეყნება: {{error}}',
@@ -1471,6 +1523,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'დაგეგმილი ჩანაწერის დოკუმენტი <strong>{{title}}</strong> გადაგეგმილია.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'ვერ მოხერხდა დრაფტის დაგეგმვა: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'დრაფტი წარმატებით დაგეგმილია',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
