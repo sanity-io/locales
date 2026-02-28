@@ -203,6 +203,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Mediebibliotek',
   'asset-sources.media-library.image.title': 'Mediebibliotek',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Færdig',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Vælg nyt aktiv for “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Vælg nyt aktiv',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger aktiv',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Vælger fil til {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Vælger billede til {{targetTitle}}',
@@ -577,12 +586,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Deltag i vores fællesskab',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Seneste version er {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrer studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App id',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Genindlæs for at opdatere til v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio version {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjælp og ressourcer',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Opdateret',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Indkommende referencer',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Annuller upload',
@@ -688,6 +710,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Upload kunne ikke fuldføres på dette tidspunkt.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Upload mislykkedes',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privat aktiv',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': "CDN adgang begrænset til signerede URL'er",
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Ryd felt',
   /** Copy URL */
@@ -697,6 +723,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     "URL'en er kopieret til udklipsholderen",
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Åbn i {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Erstat',
   /** Upload */
@@ -759,6 +787,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Slip billede for at uploade',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Dette felt er skrivebeskyttet',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kunne ikke indlæse billede. Dette kan skyldes adgangsbegrænsninger.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ukendt medlemstype: {{kind}}',
   /** Edit hotspot and crop */
@@ -818,6 +849,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Alle felter',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Feltgrupper',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'fejl',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'info',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'advarsel',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Dette felt er <strong>skrivebeskyttet</strong> ifølge dokumentets skema og kan ikke fjernes. Hvis du vil kunne fjerne dette i Studio, skal du sørge for at fjerne <code>readOnly</code> feltet fra den omsluttende type i skemaet.',
@@ -1140,6 +1177,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Referencestyrke mismatch',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Konverter til svag reference',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Ryd',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generer',
   /** Loading message for when the input is actively generating a slug */
@@ -1325,6 +1364,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Succesfuldt fortrudt indstillingen til ikke at offentliggøre ved udgivelse.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Planlæg udgivelse',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Det lykkedes ikke at indstille versionen til at blive upubliceret ved udgivelse',
@@ -1337,6 +1378,8 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Se planlagte kladder',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Planlagt til offentliggørelse den {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} version',
+  'release.chip.button.other-versions_other': '+{{count}} versioner',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Kladde',
   /** Label for Draft chip in global header */
@@ -1358,6 +1401,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Ingen redigeringer',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ikke udgivet',
+  'release.chip.tooltip.other-versions_one': 'En yderligere version uden for udgivelser',
+  'release.chip.tooltip.other-versions_other': '{{count}} yderligere versioner uden for udgivelser',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Udgivet {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1416,8 +1461,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Skjul udgivelse',
   /** Label for the release menu */
   'release.menu.label': 'Udgivelsesmenu',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Se planlagte kladder',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Handlinger',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Se indholdudgivelser',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Kladder',
   /** Label for published releases in navbar */
@@ -1450,6 +1499,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Udgivelsen '{{title}}' kunne ikke findes",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Kunne ikke sætte det planlagte udkast på pause <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Kunne ikke udgive det planlagte kladde dokument <strong>{{title}}</strong>: {{error}}',
@@ -1470,6 +1522,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Det planlagte kladde dokument <strong>{{title}}</strong> er blevet omplanlagt.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Kunne ikke planlægge udkast: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Udkast planlagt med succes',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
