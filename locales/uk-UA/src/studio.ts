@@ -198,6 +198,15 @@ export default removeUndefinedLocaleResources({
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Готово',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Вибрати новий актив для “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Вибрати новий актив',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Редагувати актив',
   /** Info messages for the Media Library Asset Source  */
   'asset-sources.media-library.select-dialog.title_file': 'Вибір файлу для {{targetTitle}}',
   'asset-sources.media-library.select-dialog.title_image': 'Вибір зображення для {{targetTitle}}',
@@ -565,12 +574,25 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Приєднатися до нашої спільноти',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Остання версія {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Зареєструвати студію',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID додатку',
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Перезавантажте, щоб оновити до v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Версія Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Допомога та ресурси',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Актуальна версія',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Вхідні посилання',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Скасувати',
@@ -674,6 +696,10 @@ export default removeUndefinedLocaleResources({
   'inputs.file.upload-failed.description': 'Завантаження не може бути завершене на даний момент.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Завантаження не вдалося',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Приватний актив',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Доступ до CDN обмежений підписаними URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Очистити поле',
   /** Copy URL */
@@ -682,6 +708,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Завантажити',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL скопійовано до буфера обміну',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Відкрити в {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Замінити',
   /** Upload */
@@ -736,6 +764,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'Перетягніть зображення, щоб завантажити',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Це поле тільки для читання',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    "Не вдалося завантажити зображення. Це може бути пов'язано з обмеженнями доступу.",
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Невідомий тип елемента: {{kind}}',
   /** Edit hotspot and crop */
@@ -795,6 +826,12 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Всі поля',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Групи полів',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'помилка',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'інформація',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'попередження',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Це поле є <strong>тільки для читання</strong> згідно зі схемою документа і не може бути видалене. Якщо ви хочете мати можливість видалити це в Studio, переконайтеся, що ви видалили поле <code>readOnly</code> з охоплюючого типу в схемі.',
@@ -1116,6 +1153,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Невідповідність міцності посилання',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Перетворити на слабке посилання',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Очистити',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Згенерувати',
   /** Loading message for when the input is actively generating a slug */
@@ -1298,6 +1337,8 @@ export default removeUndefinedLocaleResources({
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'Успішно скасовано налаштування на зняття з публікації при випуску.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Запланувати публікацію',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
     'Не вдалося встановити версію як непубліковану у релізі',
@@ -1310,6 +1351,7 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Переглянути заплановані чернетки',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Заплановано до публікації на {{date}}',
+  'release.chip.button.other-versions_one': '+{{count}} версія',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Чернетка',
   /** Label for Draft chip in global header */
@@ -1331,6 +1373,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Без редагувань',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Не опубліковано',
+  'release.chip.tooltip.other-versions_one': 'Одна додаткова версія поза релізами',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Опубліковано {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1389,8 +1432,12 @@ export default removeUndefinedLocaleResources({
   'release.layer.hide': 'Сховати реліз',
   /** Label for the release menu */
   'release.menu.label': 'Меню випуску',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Переглянути заплановані чернетки',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Дії',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Переглянути релізи контенту',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Чернетки',
   /** Label for published releases in navbar */
@@ -1423,6 +1470,9 @@ export default removeUndefinedLocaleResources({
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Реліз '{{title}}' не вдалося знайти",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Не вдалося призупинити запланований документ чернетки <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Не вдалося опублікувати документ запланованої чернетки <strong>{{title}}</strong>: {{error}}',
@@ -1443,6 +1493,10 @@ export default removeUndefinedLocaleResources({
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Документ запланованої чернетки <strong>{{title}}</strong> було переплановано.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Не вдалося запланувати чернетку: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Чернетку успішно заплановано',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
