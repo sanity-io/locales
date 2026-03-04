@@ -638,6 +638,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'Duplikovat',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Upravit {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Dosaženo maximálního počtu položek',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Odstranit',
   /** Label for removing action when an array item has an error  */
@@ -861,6 +863,9 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Toto pole je podle schématu dokumentu <strong>pouze pro čtení</strong> a nelze jej zrušit. Pokud chcete, aby bylo možné toto v Studio zrušit, ujistěte se, že jste odstranili pole <code>readOnly</code> z obklopujícího typu ve schématu.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nelze načíst náhled pro referenci "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Odstranit pole',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
