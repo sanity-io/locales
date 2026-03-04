@@ -616,6 +616,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'Nhân bản',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Chỉnh sửa {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Đã đạt số lượng mục tối đa',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Xóa',
   /** Label for removing action when an array item has an error  */
@@ -822,6 +824,9 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Trường này là <strong>chỉ đọc</strong> theo sơ đồ tài liệu và không thể bỏ chọn. Nếu bạn muốn có thể bỏ chọn này trong Studio, hãy chắc chắn bạn loại bỏ trường <code>readOnly</code> từ loại bao quanh trong sơ đồ.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Không thể tải xem trước cho tham chiếu "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Xóa trường',
   'inputs.object.unknown-fields.warning.description_other':
