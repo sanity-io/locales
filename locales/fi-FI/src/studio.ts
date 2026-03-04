@@ -642,6 +642,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'Kopioi',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Muokkaa {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Maksimimäärä kohteita saavutettu',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Poista',
   /** Label for removing action when an array item has an error  */
@@ -865,6 +867,9 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Tämä kenttä on <strong>luettavissa vain</strong> asiakirjan skeeman mukaan eikä sitä voi poistaa. Jos haluat pystyä poistamaan tämän Studiosta, varmista, että poistat <code>readOnly</code> kentän ympäröivästä tyypistä skeemassa.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Viitteen "{{documentId}}" esikatselua ei voi ladata.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Poista kenttä',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
