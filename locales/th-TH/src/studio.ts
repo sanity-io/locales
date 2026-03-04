@@ -610,6 +610,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'ทำซ้ำ',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'แก้ไข {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'ถึงขีดจำกัดสูงสุดของรายการแล้ว',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'ลบ',
   /** Label for removing action when an array item has an error  */
@@ -815,6 +817,9 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'ฟิลด์นี้เป็น <strong>อ่านอย่างเดียว</strong> ตามสคีมาของเอกสารและไม่สามารถยกเลิกได้ หากคุณต้องการยกเลิกใน Studio ให้แน่ใจว่าคุณได้ลบฟิลด์ <code>readOnly</code> ออกจากประเภทที่รวมอยู่ในสคีมา',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'ไม่สามารถโหลดตัวอย่างสำหรับการอ้างอิง "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'ลบฟิลด์',
   'inputs.object.unknown-fields.warning.description_other':
