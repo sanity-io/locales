@@ -637,6 +637,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': '복제',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} 편집',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': '최대 항목 수에 도달했습니다',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '제거',
   /** Label for removing action when an array item has an error  */
@@ -860,6 +862,9 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     '이 필드는 문서의 스키마에 따라 <strong>읽기 전용</strong>이며 해제할 수 없습니다. 스튜디오에서 이를 해제할 수 있게 하려면 스키마의 포함 유형에서 <code>readOnly</code> 필드를 제거하세요.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '"{{documentId}}"에 대한 미리보기를 불러올 수 없습니다.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': '필드 제거',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
