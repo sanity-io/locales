@@ -639,7 +639,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Rediger {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Maksimalt tal på element nådd',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Fjern',
   /** Label for removing action when an array item has an error  */
@@ -864,7 +864,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Dette feltet er <strong>berre les</strong> i følge dokumentets skjema og kan ikkje fjernast. Om du vil kunne fjerne dette i Studio, sørg for å fjerne <code>readOnly</code> feltet frå den omsluttande typen i skjemaet.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Kan ikkje laste førehandsvising for referanse "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Fjern felt',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
