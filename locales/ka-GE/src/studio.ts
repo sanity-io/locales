@@ -639,7 +639,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'რედაქტირება {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'მაქსიმუმ ელემენტები მიღწეულია',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'წაშლა',
   /** Label for removing action when an array item has an error  */
@@ -861,7 +861,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'ეს ველი <strong>წაკითხვადი მხარეა</strong> დოკუმენტის სქემის თანახმად და ვერ მოიხსნება. თუ გსურთ, რომ სტუდიაში შეძლოთ ამის გაუქმება, დარწმუნდით, რომ სქემის შემოსავალ ტიპში ამოიღებთ <code>readOnly</code> ველს.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'ვერ მოხერხდა "{{documentId}}" რეფერენციის წინასწარი ჩვენების ჩატვირთვა.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'ველის ამოღება',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
