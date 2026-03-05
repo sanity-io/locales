@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.29](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.1.28...locale-pt-pt-v1.1.29) (2026-03-05)
+
+
+### Bug Fixes
+
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+
 ## [1.1.28](https://github.com/sanity-io/locales/compare/locale-pt-pt-v1.1.27...locale-pt-pt-v1.1.28) (2026-02-19)
 
 
