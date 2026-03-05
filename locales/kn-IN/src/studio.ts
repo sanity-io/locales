@@ -641,7 +641,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} ಸಂಪಾದಿಸಿ',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'ಗರಿಷ್ಠ ಐಟಂಗಳು ತಲುಪಿದೆ',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'ತೆಗೆದುಹಾಕಿ',
   /** Label for removing action when an array item has an error  */
@@ -867,7 +867,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'ಈ ಕ್ಷೇತ್ರವು ದಾಖಲೆಯ ಸ್ಕೀಮಾ ಪ್ರಕಾರ <strong>ಓದಲು ಮಾತ್ರ</strong> ಮತ್ತು ಅನ್ಸೆಟ್ ಮಾಡಲಾಗದು. ನೀವು ಸ್ಟುಡಿಯೋದಲ್ಲಿ ಇದನ್ನು ಅನ್ಸೆಟ್ ಮಾಡಲು ಬಯಸಿದರೆ, ಸ್ಕೀಮಾದಲ್ಲಿನ ಸುತ್ತುವರಿದ ಪ್ರಕಾರದಲ್ಲಿ <code>readOnly</code> ಕ್ಷೇತ್ರವನ್ನು ತೆಗೆದುಹಾಕಿ.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'ಉಲ್ಲೇಖ "{{documentId}}" ಗಾಗಿ ಮುನ್ನೋಟವನ್ನು ಲೋಡ್ ಮಾಡಲು ಅಸಾಧ್ಯ.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'ಕ್ಷೇತ್ರವನ್ನು ತೆಗೆದುಹಾಕಿ',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
