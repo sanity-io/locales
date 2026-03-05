@@ -2,11 +2,11 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
-  'action.copy-document-id.label': undefined, // 'Copy document ID'
+  'action.copy-document-id.label': 'Kopiraj ID dokumenta',
   /** Tooltip for the copy actions dropdown button in the document panel header */
   'action.copy-document-url.label': 'Kopiraj URL dokumenta',
   /** Label for the "Copy document URL" menu item */
-  'action.copy-link-to-document.label': undefined, // 'Copy document URL'
+  'action.copy-link-to-document.label': 'Kopiraj URL dokumenta',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operacija nije spremna',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -579,7 +579,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Uspješno izveden {{context}} na dokumentu',
   /** The text when copy document ID operation succeeded */
-  'panes.document-operation-results.operation-success_copy-id': undefined, // 'Document ID copied to clipboard'
+  'panes.document-operation-results.operation-success_copy-id':
+    'ID dokumenta kopiran u međuspremnik',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL dokumenta kopiran u međuspremnik',
