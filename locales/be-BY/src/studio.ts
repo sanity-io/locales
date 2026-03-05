@@ -626,6 +626,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'Дубляваць',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Рэдагаваць {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Выдаліць',
   /** Label for removing action when an array item has an error  */
@@ -836,6 +838,8 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Гэта поле <strong>толькі для чытання</strong> згодна схеме дакумента і не можа быць выключана. Калі вы хочаце мець магчымасць выключыць гэта ў Studio, пераканайцеся, што вы выдалілі поле <code>readOnly</code> з ахопнага тыпу ў схеме.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Выдаліць поле',
   /** Encountered `{{count}}` fields that are not defined in the schema. */

@@ -640,6 +640,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'Dupliciraj',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Uredi {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Ukloni',
   /** Label for removing action when an array item has an error  */
@@ -864,6 +866,8 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Ovo polje je <strong>samo za čitanje</strong> prema shemi dokumenta i ne može se poništiti. Ako želite moći poništiti ovo u Studiju, pobrinite se da uklonite <code>readOnly</code> polje iz obuhvaćenog tipa u shemi.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Ukloni polje',
   /** Encountered `{{count}}` fields that are not defined in the schema. */

@@ -25,6 +25,11 @@ const locale = defineLocale({
     },
 
     {
+      namespace: 'media-library',
+      resources: () => import('./media-library'),
+    },
+
+    {
       namespace: 'structure',
       resources: () => import('./structure'),
     },
@@ -50,7 +55,7 @@ const locale = defineLocale({
     },
   ],
   weekInfo: {
-    firstDay: 7,
+    firstDay: 1,
     minimalDays: 1,
     weekend: [6, 7],
   },
