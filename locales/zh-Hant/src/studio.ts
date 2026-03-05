@@ -603,6 +603,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': '複製',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '編輯 {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '移除',
   /** Label for removing action when an array item has an error  */
@@ -803,6 +805,8 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     '根據文件的架構，此欄位為<strong>唯讀</strong>，不能被取消設置。如果您希望在Studio中能夠取消設置此欄位，請確保您從架構中的封閉類型中移除<code>readOnly</code>欄位。',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': '移除欄位',
   'inputs.object.unknown-fields.warning.description_other': '遇到{{count}}個未在架構中定義的欄位。',

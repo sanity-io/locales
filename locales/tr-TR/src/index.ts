@@ -25,6 +25,11 @@ const locale = defineLocale({
     },
 
     {
+      namespace: 'media-library',
+      resources: () => import('./media-library'),
+    },
+
+    {
       namespace: 'structure',
       resources: () => import('./structure'),
     },

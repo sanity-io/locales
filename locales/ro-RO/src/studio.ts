@@ -630,6 +630,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': 'Duplică',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Editează {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Elimină',
   /** Label for removing action when an array item has an error  */
@@ -840,6 +842,8 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Acest câmp este <strong>doar pentru citire</strong> conform schemei documentului și nu poate fi eliminat. Dacă doriți să puteți elimina acest lucru în Studio, asigurați-vă că eliminați câmpul <code>readOnly</code> din tipul închis în schema.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Elimină câmpul',
   /** Encountered `{{count}}` fields that are not defined in the schema. */

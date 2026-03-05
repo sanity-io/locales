@@ -640,6 +640,8 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.duplicate': '複製',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}}を編集',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '削除',
   /** Label for removing action when an array item has an error  */
@@ -867,6 +869,8 @@ export default removeUndefinedLocaleResources({
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'このフィールドはドキュメントのスキーマによると<strong>読み取り専用</strong>であり、解除することはできません。Studioでこれを解除できるようにするには、スキーマのエンクロージングタイプから<code>readOnly</code>フィールドを削除してください。',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'フィールドを削除',
   /** Encountered `{{count}}` fields that are not defined in the schema. */

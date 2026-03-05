@@ -1,8 +1,12 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
-  /** Label for the "Copy Document URL" document action */
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': undefined, // 'Copy document ID'
+  /** Tooltip for the copy actions dropdown button in the document panel header */
   'action.copy-document-url.label': '複製文件 URL',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': undefined, // 'Copy document URL'
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': '操作尚未就緒',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -518,6 +522,8 @@ export default removeUndefinedLocaleResources({
     '嘗試取消發布此文件時發生錯誤。這通常意味著有其他文件引用了它。',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': '成功對文件執行了{{context}}',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id': undefined, // 'Document ID copied to clipboard'
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url': '文件 URL 已複製到剪貼簿',
   /**  */
