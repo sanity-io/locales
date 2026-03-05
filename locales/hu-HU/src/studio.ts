@@ -643,7 +643,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} szerkesztése',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Elérte a maximális elemek számát',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Eltávolítás',
   /** Label for removing action when an array item has an error  */
@@ -869,7 +869,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Ez a mező <strong>csak olvasható</strong> a dokumentum sémája szerint és nem távolítható el. Ha szeretnéd, hogy ezt a Studioban el lehessen távolítani, győződj meg róla, hogy eltávolítod a <code>readOnly</code> mezőt a séma beágyazott típusából.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nem lehet betölteni az előnézetet a(z) "{{documentId}}" hivatkozáshoz.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Mező eltávolítása',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
