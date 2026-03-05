@@ -2,11 +2,11 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
-  'action.copy-document-id.label': undefined, // 'Copy document ID'
+  'action.copy-document-id.label': 'Kopier dokument-ID',
   /** Tooltip for the copy actions dropdown button in the document panel header */
   'action.copy-document-url.label': 'Kopier dokumentets URL',
   /** Label for the "Copy document URL" menu item */
-  'action.copy-link-to-document.label': undefined, // 'Copy document URL'
+  'action.copy-link-to-document.label': 'Kopier dokumentets URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operationen er ikke klar',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -580,7 +580,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success':
     'Handlingen {{context}} på dokumentet blev udført med succes',
   /** The text when copy document ID operation succeeded */
-  'panes.document-operation-results.operation-success_copy-id': undefined, // 'Document ID copied to clipboard'
+  'panes.document-operation-results.operation-success_copy-id':
+    'Dokument-ID kopieret til udklipsholder',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'Dokumentets URL kopieret til udklipsholder',
