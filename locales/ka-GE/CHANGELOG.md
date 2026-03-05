@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.27](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.26...locale-ka-ge-v1.0.27) (2026-03-05)
+
+
+### Bug Fixes
+
+* **ka-GE:** automated translation updates ([#1564](https://github.com/sanity-io/locales/issues/1564)) ([9f6213e](https://github.com/sanity-io/locales/commit/9f6213eae1adb948515de2b210c323bd82869cee))
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+
 ## [1.0.26](https://github.com/sanity-io/locales/compare/locale-ka-ge-v1.0.25...locale-ka-ge-v1.0.26) (2026-02-10)
 
 

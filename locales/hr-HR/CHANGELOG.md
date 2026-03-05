@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.32](https://github.com/sanity-io/locales/compare/locale-hr-hr-v1.1.31...locale-hr-hr-v1.1.32) (2026-03-05)
+
+
+### Bug Fixes
+
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+
 ## [1.1.31](https://github.com/sanity-io/locales/compare/locale-hr-hr-v1.1.30...locale-hr-hr-v1.1.31) (2026-02-16)
 
 
