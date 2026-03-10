@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Kuvaa käyttävät dokumentit',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Ladataan…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Valitse',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Peruuta',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Valitse',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Valitse tiedosto',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Valitse kuva',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Valitse video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Virhe liitettäessä kohdetta. Katso lisätietoja konsolista.',
@@ -214,13 +210,8 @@ export default removeUndefinedLocaleResources({
     'Valitse uusi assetti',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Muokkaa assettia',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file':
-    'Tiedoston valinta kohteelle {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image':
-    'Kuvan valinta kohteelle {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video':
-    'Videon valinta kohteelle {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Lataa Media-kirjastoon',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Käytetään olemassa olevaa tiedostoa kirjastosta.',
@@ -485,6 +476,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Versiota ei löydy',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Muutoksiasi tallennetaan edelleen.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Tallennus kestää odotettua kauemmin',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Asiakirjatyyppiä "{{type}}" ei löydy',
 
@@ -698,10 +694,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'esim. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Avaa tiedoston asetusvalikko',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Selaa',
-  /** Select file */
-  'inputs.file.dialog.title': 'Valitse tiedosto',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Tuntematon jäsenen tyyppi: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -711,8 +703,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Nollaa arvo',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Kelvoton tiedostoarvo',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Valitse',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Latausta ei voitu suorittaa tällä hetkellä.',
   /** Upload failed */
@@ -782,14 +772,14 @@ export default removeUndefinedLocaleResources({
     'Lataus ei ole edennyt vähintään {{staleThresholdMinutes}} minuuttiin ja on todennäköisesti keskeytynyt. Voit turvallisesti tyhjentää keskeneräisen latauksen ja yrittää ladata uudelleen.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Keskeneräinen lataus',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Valitse tiedosto kohteelle "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Rajaa kuva',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Avaa kuvan muokkausdialogi',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Avaa kuvan asetusvalikko',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Valitse',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Tätä tiedostoa ei voi ladata tähän',
   /** Drop image to upload */
@@ -812,6 +802,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Kelvoton kuvan arvo',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Esikatselu ladatusta kuvasta',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Valitse kuva kohteelle "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Latausta ei voitu suorittaa loppuun tällä hetkellä.',
   /** Upload failed */
@@ -1222,6 +1214,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Ominaisuuden arvo puuttuu <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Poista arvo',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Valitse video kohteelle "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2205,6 +2199,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Kirjauduttu sisään palvelun {{providerTitle}} kautta',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Avaa valikko',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentin muutokset',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Ehdotetut muutokset',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
