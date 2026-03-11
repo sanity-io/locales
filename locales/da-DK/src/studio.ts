@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenter der bruger billede',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Indlæser…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Vælg',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Annuller',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Vælg',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Vælg fil',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Vælg billede',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Vælg video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Fejl ved indsættelse af aktiv. Se konsollen for mere information.',
@@ -212,10 +208,8 @@ export default removeUndefinedLocaleResources({
     'Vælg nyt aktiv',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Rediger aktiv',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Vælger fil til {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Vælger billede til {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Vælger video til {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Upload til Mediebiblioteket',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Bruger den eksisterende fil fundet i biblioteket.',
@@ -481,6 +475,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revision ikke fundet',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Dine ændringer bliver stadig gemt.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Gemning tager længere tid end forventet',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttype "{{type}}" ikke fundet',
 
@@ -638,7 +637,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Rediger {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Maksimalt antal elementer nået',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Fjern',
   /** Label for removing action when an array item has an error  */
@@ -693,10 +692,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'f.eks. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Åbn filindstillingsmenuen',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Gennemse',
-  /** Select file */
-  'inputs.file.dialog.title': 'Vælg fil',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Ukendt medlemstype: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -706,8 +701,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Nulstil værdi',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ugyldig filværdi',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Vælg',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Upload kunne ikke fuldføres på dette tidspunkt.',
   /** Upload failed */
@@ -775,14 +768,14 @@ export default removeUndefinedLocaleResources({
     'En upload har ikke gjort fremskridt i mindst {{staleThresholdMinutes}} minutter og er sandsynligvis blevet afbrudt. Du kan sikkert annullere den ufuldstændige upload og prøve at uploade igen.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ufuldstændig upload',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Vælg fil for "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Beskær billede',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Åbn dialogboks for redigering af billede',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Åbn menu for billedindstillinger',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Vælg',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Kan ikke uploade denne fil her',
   /** Drop image to upload */
@@ -805,6 +798,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ugyldig billedværdi',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Forhåndsvisning af uploadet billede',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Vælg billede for "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Uploadet kunne ikke fuldføres på dette tidspunkt.',
   /** Upload failed */
@@ -861,7 +856,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Dette felt er <strong>skrivebeskyttet</strong> ifølge dokumentets skema og kan ikke fjernes. Hvis du vil kunne fjerne dette i Studio, skal du sørge for at fjerne <code>readOnly</code> feltet fra den omsluttende type i skemaet.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Kan ikke indlæse forhåndsvisning for reference "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Fjern felt',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1213,6 +1209,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Egenskabsværdi mangler <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Fjern værdi',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Vælg video for "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2194,6 +2192,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Logget ind med {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Åbn menu',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentændringer',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Foreslåede ændringer',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
