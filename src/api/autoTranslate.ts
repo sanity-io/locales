@@ -219,6 +219,9 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
     return JSON.stringify({})
   }
 
+  // Use tool calling to guarantee valid JSON output. The model is forced to call
+  // this tool, so the response is always machine-parseable — no markdown fences,
+  // no trailing text, no truncated JSON.
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
     // eslint-disable-next-line camelcase
@@ -227,17 +230,32 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
     messages: [
       {
         role: 'user',
-        content: `I would like this translated to ${targetLanguage}. Respond ONLY with a raw JSON object — no markdown, no code fences, no explanation:\n\n${text}`,
+        content: `I would like this translated to ${targetLanguage}:\n\n${text}`,
       },
     ],
     temperature: 0,
+    tools: [
+      {
+        name: 'submit_translations',
+        description:
+          'Submit the translated key-value pairs. Each key must match the original key exactly, and each value is the translated string.',
+        // eslint-disable-next-line camelcase
+        input_schema: {
+          type: 'object' as const,
+          additionalProperties: {type: 'string'},
+        },
+      },
+    ],
+    // eslint-disable-next-line camelcase
+    tool_choice: {type: 'tool' as const, name: 'submit_translations'},
   })
 
-  const responseText = message.content[0].type === 'text' ? message.content[0].text : ''
+  const toolBlock = message.content.find((block) => block.type === 'tool_use')
+  if (!toolBlock || toolBlock.type !== 'tool_use') {
+    throw new Error('No tool_use block in response')
+  }
 
-  // Strip markdown code fences if present
-  const jsonMatch = responseText.match(/^```(?:json)?\s*\n([\s\S]*?)\n```\s*$/)
-  return jsonMatch ? jsonMatch[1] : responseText
+  return JSON.stringify(toolBlock.input)
 }
 
 /**
@@ -247,15 +265,13 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
  * @internal
  */
 function getSystemPrompt(): string {
-  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. You translate the values into the requested target language and respond with a JSON object mapping the same keys to translated values.
+  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. Translate the values into the requested target language and submit them using the submit_translations tool.
 
 Rules:
-- Respond ONLY with a valid JSON object. No markdown, no code fences, no explanation.
 - Preserve every key exactly as given.
 - Translate only the values.
 - If there is nothing to translate, return the input as-is.
-- The values may contain branded feature names of the Sanity.io platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake" etc. Do not translate these branded terms.
-- Your output is read programmatically by a Node.js script, so valid JSON is critical.`
+- The values may contain branded feature names of the Sanity.io platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake" etc. Do not translate these branded terms.`
 }
 
 /**
