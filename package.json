@@ -65,6 +65,7 @@
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "@types/js-yaml": "^4.0.9",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
@@ -73,7 +74,6 @@
     "eslint-config-prettier": "^9.1.2",
     "eslint-config-sanity": "^7.1.4",
     "expect": "^29.7.0",
-    "openai": "^4.104.0",
     "rimraf": "^5.0.10",
     "turbo": "^2.3.3",
     "typescript": "^5.7.3"
