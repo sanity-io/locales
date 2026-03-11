@@ -84,7 +84,7 @@ jobs:
           'ALL' }}
         run: pnpm run autotranslate --git
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
       - name: Run autotranslate for specific locale
         if: >-
@@ -94,5 +94,5 @@ jobs:
           pnpm run autotranslate --git --locale ${{ github.event.inputs.locale
           }}
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}

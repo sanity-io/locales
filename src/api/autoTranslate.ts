@@ -1,7 +1,7 @@
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 
-import OpenAI from 'openai'
+import Anthropic from '@anthropic-ai/sdk'
 import pMap from 'p-map'
 import prettyMs from 'pretty-ms'
 
@@ -16,7 +16,7 @@ import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
-const OPENAI_MODEL = 'gpt-4-1106-preview'
+const ANTHROPIC_MODEL = 'claude-sonnet-4-6'
 
 /**
  * Prefix that preceeds the name of the auto-translated locale branch
@@ -27,17 +27,17 @@ const OPENAI_MODEL = 'gpt-4-1106-preview'
 export const AUTO_TRANSLATE_BRANCH_PREFIX = 'fix/auto'
 
 /**
- * Memoized getter for the OpenAI API client
+ * Memoized getter for the Anthropic API client
  *
  * @internal
  */
-const getOpenAIApi = (() => {
-  let openai: OpenAI | null = null
+const getAnthropicApi = (() => {
+  let anthropic: Anthropic | null = null
   return () => {
-    if (!openai) {
-      openai = new OpenAI()
+    if (!anthropic) {
+      anthropic = new Anthropic()
     }
-    return openai
+    return anthropic
   }
 })()
 
@@ -212,38 +212,31 @@ function templateMissingResources(
  * @returns
  */
 async function translateText(text: string, targetLanguage: string): Promise<string> {
-  // Note: will thrown on missing environment variable
-  const openai = getOpenAIApi()
+  // Note: will throw on missing environment variable
+  const anthropic = getAnthropicApi()
 
   if (text.trim() === '') {
     return JSON.stringify({})
   }
 
-  const chatCompletion = await openai.chat.completions.create({
+  const message = await anthropic.messages.create({
+    model: ANTHROPIC_MODEL,
+    max_tokens: 4096,
+    system: getSystemPrompt(),
     messages: [
       {
-        role: 'system',
-        content: getSystemPrompt(),
-      },
-      {
         role: 'user',
-        content: `I would like this translated to ${targetLanguage}. Respond with JSON:`,
-      },
-      {
-        role: 'user',
-        content: text,
+        content: `I would like this translated to ${targetLanguage}. Respond ONLY with a raw JSON object — no markdown, no code fences, no explanation:\n\n${text}`,
       },
     ],
-    model: OPENAI_MODEL,
-    stream: false,
     temperature: 0,
-    // eslint-disable-next-line camelcase
-    response_format: {
-      type: 'json_object',
-    },
   })
 
-  return chatCompletion.choices[0].message.content || ''
+  const responseText = message.content[0].type === 'text' ? message.content[0].text : ''
+
+  // Strip markdown code fences if present
+  const jsonMatch = responseText.match(/^```(?:json)?\s*\n([\s\S]*?)\n```\s*$/)
+  return jsonMatch ? jsonMatch[1] : responseText
 }
 
 /**
@@ -253,20 +246,15 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
  * @internal
  */
 function getSystemPrompt(): string {
-  return `You are a helpful translation assistant. Your job is to
-receive source code files and translate the values within, and return the exact same
-file back to the user, with the translations included. The user will give you a
-segment from a typescript file representing i18next resource bundles. Preserve
-exactly the source code, english comments and keys. Do not translate any of
-those. You WILL translate the values of the keys into the requested target
-language. Respond with valid JSON, keeping it EXACTLY the same as given to you,
-except your translation. If there is nothing to translate, just return the input
-back. Your output will be read programmatically by a node script so it is very
-important that you do not change its structure at all, except translation of the
-value strings. The values may contain branded feature names of the Sanity.io
-platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake"
-etc. Do not translate any words and terms that are Sanity.io product features as
-it is important that the branding is preserved.`
+  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. You translate the values into the requested target language and respond with a JSON object mapping the same keys to translated values.
+
+Rules:
+- Respond ONLY with a valid JSON object. No markdown, no code fences, no explanation.
+- Preserve every key exactly as given.
+- Translate only the values.
+- If there is nothing to translate, return the input as-is.
+- The values may contain branded feature names of the Sanity.io platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake" etc. Do not translate these branded terms.
+- Your output is read programmatically by a Node.js script, so valid JSON is critical.`
 }
 
 /**
