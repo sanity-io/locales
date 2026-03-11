@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.30](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.29...locale-kn-in-v1.0.30) (2026-03-11)
+
+
+### Bug Fixes
+
+* **kn-IN:** automated translation updates ([#1636](https://github.com/sanity-io/locales/issues/1636)) ([0901748](https://github.com/sanity-io/locales/commit/09017480b04d209adfbf0bd0de99d1c1b75bbccc))
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+
 ## [1.0.29](https://github.com/sanity-io/locales/compare/locale-kn-in-v1.0.28...locale-kn-in-v1.0.29) (2026-02-19)
 
 
