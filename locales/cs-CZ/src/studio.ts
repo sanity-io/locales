@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenty používající obrázek',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Načítání…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Vybrat',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Zrušit',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Vybrat',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Vybrat soubor',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Vybrat obrázek',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Vyberte video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Chyba při vkládání assetu. Více informací naleznete v konzoli.',
@@ -214,10 +210,8 @@ export default removeUndefinedLocaleResources({
     'Vyberte nový asset',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Upravit asset',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Výběr souboru pro {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Výběr obrázku pro {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Výběr videa pro {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Nahrát do knihovny médií',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Používá se existující soubor nalezený v knihovně.',
@@ -482,6 +476,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revize nenalezena',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Vaše změny se stále ukládají.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Ukládání trvá déle než se očekávalo',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Typ dokumentu "{{type}}" nebyl nalezen',
 
@@ -694,10 +693,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'např. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Otevřít menu možností souboru',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Procházet',
-  /** Select file */
-  'inputs.file.dialog.title': 'Vybrat soubor',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Neznámý typ člena: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -707,8 +702,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Resetovat hodnotu',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Neplatná hodnota souboru',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Vybrat',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Nahrávání se v tuto chvíli nepodařilo dokončit.',
   /** Upload failed */
@@ -778,14 +771,14 @@ export default removeUndefinedLocaleResources({
     'Nahrávání nepokročilo po dobu alespoň {{staleThresholdMinutes}} minut a pravděpodobně bylo přerušeno. Bezpečně můžete vymazat nedokončené nahrávání a pokusit se o nahrání znovu.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Nedokončené nahrávání',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Vyberte soubor pro "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Oříznout obrázek',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Otevřít dialog úpravy obrázku',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Otevřít menu možností obrázku',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Vybrat',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Zde nelze nahrát tento soubor',
   /** Drop image to upload */
@@ -808,6 +801,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Neplatná hodnota obrázku',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Náhled nahraného obrázku',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Vyberte obrázek pro "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Nahrávání se v tuto chvíli nemohlo dokončit.',
   /** Upload failed */
@@ -1217,6 +1212,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Chybí vlastnost hodnoty <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Zrušit hodnotu',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Vyberte video pro "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2202,6 +2199,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Přihlášen s {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Otevřít menu',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Změny agenta',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Navrhované změny',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
