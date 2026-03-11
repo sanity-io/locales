@@ -221,6 +221,7 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
 
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
+    // eslint-disable-next-line camelcase
     max_tokens: 4096,
     system: getSystemPrompt(),
     messages: [
