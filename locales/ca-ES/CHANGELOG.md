@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.10](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.9...locale-ca-es-v1.0.10) (2026-03-11)
+
+
+### Bug Fixes
+
+* **ca-ES:** automated translation updates ([#1551](https://github.com/sanity-io/locales/issues/1551)) ([bcd302b](https://github.com/sanity-io/locales/commit/bcd302bf1ae8d261d138a6d2a87641cf5c7cc1db))
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+
 ## [1.0.9](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.8...locale-ca-es-v1.0.9) (2026-02-10)
 
 

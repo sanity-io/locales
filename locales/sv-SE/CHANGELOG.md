@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.30](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.2.29...locale-sv-se-v1.2.30) (2026-03-11)
+
+
+### Bug Fixes
+
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+* **sv-SE:** automated translation updates ([#1576](https://github.com/sanity-io/locales/issues/1576)) ([4750e3d](https://github.com/sanity-io/locales/commit/4750e3d521e2d15981ad885a084b09701ef8c611))
+
 ## [1.2.29](https://github.com/sanity-io/locales/compare/locale-sv-se-v1.2.28...locale-sv-se-v1.2.29) (2026-02-11)
 
 

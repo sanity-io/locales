@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.29](https://github.com/sanity-io/locales/compare/locale-uk-ua-v1.1.28...locale-uk-ua-v1.1.29) (2026-03-11)
+
+
+### Bug Fixes
+
+* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+* **uk-UA:** automated translation updates ([#1579](https://github.com/sanity-io/locales/issues/1579)) ([bf5cb63](https://github.com/sanity-io/locales/commit/bf5cb6317e02a21e5e5405df243c631855a9dd06))
+
 ## [1.1.28](https://github.com/sanity-io/locales/compare/locale-uk-ua-v1.1.27...locale-uk-ua-v1.1.28) (2026-02-11)
 
 
