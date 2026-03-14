@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Documentos usando imagem',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Carregando…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Selecionar',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Cancelar',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Selecionar',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Selecionar arquivo',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Selecionar imagem',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Selecionar vídeo',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Erro ao inserir ativo. Veja o console para mais informações.',
@@ -216,13 +212,8 @@ export default removeUndefinedLocaleResources({
     'Selecionar novo ativo',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Editar ativo',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file':
-    'Selecionando arquivo para {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image':
-    'Selecionando imagem para {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video':
-    'Selecionando vídeo para {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Carregar para a Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Usando o arquivo existente encontrado na biblioteca.',
@@ -492,6 +483,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revisão não encontrada',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'As suas alterações ainda estão a ser guardadas.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Guardar está a demorar mais do que o esperado',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tipo de documento "{{type}}" não encontrado',
 
@@ -704,10 +700,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'ex.: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Abrir menu de opções de arquivo',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Procurar',
-  /** Select file */
-  'inputs.file.dialog.title': 'Selecionar arquivo',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Tipo de membro desconhecido: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -717,8 +709,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Redefinir valor',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Valor de arquivo inválido',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Selecionar',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'O upload não pôde ser concluído neste momento.',
   /** Upload failed */
@@ -787,14 +777,14 @@ export default removeUndefinedLocaleResources({
     'Um carregamento não teve progresso por pelo menos {{staleThresholdMinutes}} minutos e provavelmente foi interrompido. Você pode limpar o carregamento incompleto com segurança e tentar carregar novamente.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Carregamento incompleto',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Selecionar ficheiro para "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Cortar imagem',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Abrir diálogo de edição de imagem',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Abrir menu de opções de imagem',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Selecionar',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Não é possível carregar este arquivo aqui',
   /** Drop image to upload */
@@ -817,6 +807,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Valor de imagem inválido',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Pré-visualização da imagem carregada',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Selecionar imagem para "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Não foi possível completar o upload neste momento.',
   /** Upload failed */
@@ -1229,6 +1221,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Valor da propriedade faltando <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Desconfigurar valor',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Selecionar vídeo para "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2228,6 +2222,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Conectado com {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Abrir menu',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Alterações do agente',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Alterações propostas',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
