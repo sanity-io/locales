@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': '画像を使用しているドキュメント',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': '読み込み中…',
+  /** Browse button text */
+  'asset-source.browse-button.text': '選択',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'キャンセル',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '選択',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'ファイルを選択',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': '画像を選択',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'ビデオを選択',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'アセットの挿入エラー。詳細はコンソールを参照してください。',
@@ -215,10 +211,8 @@ export default removeUndefinedLocaleResources({
     '新しいアセットを選択',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'アセットを編集',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}のファイルを選択中',
-  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}の画像を選択中',
-  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}}のビデオを選択中',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Media Libraryにアップロード',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ライブラリにある既存のファイルを使用しています。',
@@ -486,6 +480,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'リビジョンが見つかりません',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': '変更はまだ保存中です。',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': '保存に予想以上の時間がかかっています',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ドキュメントタイプ "{{type}}" が見つかりません',
 
@@ -641,7 +640,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}}を編集',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': '最大アイテム数に達しました',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '削除',
   /** Label for removing action when an array item has an error  */
@@ -696,10 +695,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': '例: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'ファイルオプションメニューを開く',
-  /** Browse */
-  'inputs.file.browse-button.text': '参照',
-  /** Select file */
-  'inputs.file.dialog.title': 'ファイルを選択',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': '未知のメンバー種類: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -709,8 +704,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': '値をリセット',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': '無効なファイル値',
-  /** Select */
-  'inputs.file.multi-browse-button.text': '選択',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': '現在、アップロードを完了できませんでした。',
   /** Upload failed */
@@ -783,14 +776,14 @@ export default removeUndefinedLocaleResources({
     'アップロードは少なくとも{{staleThresholdMinutes}}分間進行しておらず、おそらく中断されました。不完全なアップロードを安全にクリアして、再度アップロードを試みることができます。',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '不完全なアップロード',
+  /** Select file */
+  'inputs.files.select-dialog.title': '「{{targetTitle}}」のファイルを選択',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': '画像を切り抜く',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '画像編集ダイアログを開く',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': '画像オプションメニューを開く',
-  /** Select */
-  'inputs.image.browse-menu.text': '選択',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here':
     'ここにファイルをアップロードすることはできません',
@@ -814,6 +807,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': '無効な画像値',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'アップロードされた画像のプレビュー',
+  /** Select image */
+  'inputs.image.select-dialog.title': '「{{targetTitle}}」の画像を選択',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': '現在、アップロードを完了することはできません。',
   /** Upload failed */
@@ -870,7 +865,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'このフィールドはドキュメントのスキーマによると<strong>読み取り専用</strong>であり、解除することはできません。Studioでこれを解除できるようにするには、スキーマのエンクロージングタイプから<code>readOnly</code>フィールドを削除してください。',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '参照「{{documentId}}」のプレビューを読み込めません。',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'フィールドを削除',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1223,6 +1219,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'プロパティ値に<code>_type</code>がありません',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': '値を未設定にする',
+  /** Select video */
+  'inputs.video.select-dialog.title': '「{{targetTitle}}」の動画を選択',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2216,6 +2214,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': '{{providerTitle}}でサインイン中',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'メニューを開く',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentの変更',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': '提案された変更',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
