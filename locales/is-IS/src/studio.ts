@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Skjöl sem nota mynd',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Hleður…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Velja',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Hætta við',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Velja',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Veldu skrá',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Veldu mynd',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Veldu myndband',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Villa við að setja inn eign. Sjáðu ráskjáinn fyrir frekari upplýsingar.',
@@ -213,10 +209,8 @@ export default removeUndefinedLocaleResources({
     'Veldu nýja eign',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Breyta eign',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Velja skrá fyrir {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Velja mynd fyrir {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Velja myndband fyrir {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Hlaða upp í Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Notaðu til staðar verandi skrá sem fannst í safninu.',
@@ -484,6 +478,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Útgáfa fannst ekki',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Breytingar þínar eru enn að vera vistaðar.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Vistun tekur lengri tíma en búist var við',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Skjaltýpa "{{type}}" fannst ekki',
 
@@ -641,7 +640,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Breyta {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Hámarksfjölda atriða náð',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Fjarlægja',
   /** Label for removing action when an array item has an error  */
@@ -696,10 +695,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 't.d. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Opna valmynd fyrir skráarvalkosti',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Fletta',
-  /** Select file */
-  'inputs.file.dialog.title': 'Veldu skrá',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Óþekkt tegund meðlims: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -709,8 +704,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Endurstilla gildi',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ógilt skráargildi',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Veldu',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Ekki var hægt að ljúka upphleðslu á þessum tíma.',
   /** Upload failed */
@@ -779,14 +772,14 @@ export default removeUndefinedLocaleResources({
     'Upphleðsla hefur ekki miðað neinum framförum í að minnsta kosti {{staleThresholdMinutes}} mínútur og líklega var truflun. Þú getur hreinsað ókláraða upphleðslu og reynt aftur að hlaða upp.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ókláruð upphleðsla',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Veldu skrá fyrir „{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Klippa mynd',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Opna myndabreytingarglugga',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Opna valmynd myndarvalkosta',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Veldu',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Get ekki hlaðið þessari skrá hér',
   /** Drop image to upload */
@@ -809,6 +802,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ógild myndagildi',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Forskoðun á hlaðinni mynd',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Veldu mynd fyrir „{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Upphleðslan gat ekki verið lokið að þessu sinni.',
   /** Upload failed */
@@ -865,7 +860,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Þessi reitur er <strong>aðeins til lesturs</strong> samkvæmt skema skjalsins og getur ekki verið óskilgreindur. Ef þú vilt geta óskilgreint þetta í Studio, vertu viss um að fjarlægja <code>readOnly</code> reitinn frá umlykjandi tegund í skemanu.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Ekki tókst að hlaða forskoðun fyrir tilvísunina „{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Fjarlægja reit',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1215,6 +1211,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Eign gildis vantar <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Fjarlægja gildi',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Veldu myndband fyrir „{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2197,6 +2195,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Skráður inn með {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Opna valmynd',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Breytingar umboðsmanns',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Lagðar til breytingar',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
