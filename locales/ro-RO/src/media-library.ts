@@ -2,14 +2,15 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Warning description for invalid video value */
-  'invalid-video-warning.description': undefined, // 'The value of this field is not a valid video. Resetting this field will let you choose a new video.'
+  'invalid-video-warning.description':
+    'Valoarea acestui câmp nu este un video valid. Resetarea acestui câmp vă va permite să alegeți un nou video.',
   /** Reset button text for invalid video warning */
-  'invalid-video-warning.reset-button.text': undefined, // 'Reset value'
+  'invalid-video-warning.reset-button.text': 'Resetați valoarea',
   /** Warning title for invalid video value */
-  'invalid-video-warning.title': undefined, // 'Invalid video value'
+  'invalid-video-warning.title': 'Valoare video invalidă',
 
   /** Video error fallback description */
-  'video-error.description': undefined, // 'Failed to load video'
+  'video-error.description': 'Încărcarea video a eșuat',
   /** Retry button text for video loading errors */
-  'video-error.retry-button.text': undefined, // 'Retry'
+  'video-error.retry-button.text': 'Reîncercați',
 })
