@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Documents que utilitzen la imatge',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Carregant…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Selecciona',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Cancel·lar',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Selecciona',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': "Selecciona l'arxiu",
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Selecciona la imatge',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Selecciona vídeo',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     "Error en inserir l'actiu. Consulta la consola per a més informació.",
@@ -216,13 +212,8 @@ export default removeUndefinedLocaleResources({
     'Selecciona un nou actiu',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': "Edita l'actiu",
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file':
-    'Seleccionant fitxer per a {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image':
-    'Seleccionant imatge per a {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video':
-    'Seleccionant vídeo per a {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Puja a la Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Utilitzant el fitxer existent trobat a la biblioteca.',
@@ -472,6 +463,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Ordena per Títol',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Tanca',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignora',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Següent',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Anterior',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Copia de la base',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'canviat',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} a la versió {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Canvi no resolt a la versió {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} canvis no resolts a la versió {{versionName}}',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Creat {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -488,6 +499,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revisió de <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revisió no trobada',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': "Els vostres canvis s'estan desant.",
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'El desament està trigant més del previst',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'No s\'ha trobat el tipus de document "{{type}}"',
@@ -646,7 +662,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Edita {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': "S'ha assolit el nombre màxim d'elements",
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Elimina',
   /** Label for removing action when an array item has an error  */
@@ -701,10 +717,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'p. ex. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': "Obre el menú d'opcions de fitxer",
-  /** Browse */
-  'inputs.file.browse-button.text': 'Selecciona',
-  /** Select file */
-  'inputs.file.dialog.title': 'Seleccioneu fitxer',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Tipus de membre desconegut: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -714,8 +726,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Restableix valor',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Valor de fitxer no vàlid',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Seleccioneu',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': "La càrrega no s'ha pogut completar en aquest moment.",
   /** Upload failed */
@@ -785,14 +795,14 @@ export default removeUndefinedLocaleResources({
     "Una pujada no ha progressat durant almenys {{staleThresholdMinutes}} minuts i probablement s'ha interromput. Pots netejar la pujada incompleta i intentar pujar de nou sense problemes.",
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Pujada incompleta',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Selecciona un fitxer per a «{{targetTitle}}»',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Retalla la imatge',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': "Obre el diàleg d'edició de la imatge",
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': "Obre el menú d'opcions de la imatge",
-  /** Select */
-  'inputs.image.browse-menu.text': 'Selecciona',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'No es pot pujar aquest arxiu aquí',
   /** Drop image to upload */
@@ -815,6 +825,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Valor de la imatge invàlid',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Previsualització de la imatge pujada',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Selecciona una imatge per a «{{targetTitle}}»',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': "La pujada no s'ha pogut completar en aquest moment.",
   /** Upload failed */
@@ -871,7 +883,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     "Aquest camp és <strong>només de lectura</strong> segons l'esquema del document i no es pot desactivar. Si vols poder desactivar això a l'Estudi, assegura't de treure el camp <code>readOnly</code> del tipus que l'envolta a l'esquema.",
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    "No s'ha pogut carregar la previsualització de la referència «{{documentId}}».",
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Elimina camp',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1225,6 +1238,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Valor de la propietat sense <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Desestablir valor',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Selecciona un vídeo per a «{{targetTitle}}»',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2211,6 +2226,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Has iniciat sessió amb {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Obre el menú',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': "Canvis de l'agent",
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Canvis proposats',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
