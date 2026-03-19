@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenti koji koriste sliku',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Učitavanje…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Odaberi',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Odustani',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Odaberi',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Odaberite datoteku',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Odaberite sliku',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Odaberite video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Greška pri umetanju resursa. Za više informacija pogledajte konzolu.',
@@ -214,10 +210,8 @@ export default removeUndefinedLocaleResources({
     'Odaberite novu datoteku',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Uredi datoteku',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Odabir datoteke za {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Odabir slike za {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Odabir videa za {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Učitaj u Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Koristi se postojeća datoteka pronađena u knjižnici.',
@@ -484,6 +478,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revizija nije pronađena',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Vaše promjene se još uvijek spremaju.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Spremanje traje dulje nego očekivano',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tip dokumenta "{{type}}" nije pronađen',
 
@@ -641,7 +640,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Uredi {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Dostignut maksimalan broj stavki',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Ukloni',
   /** Label for removing action when an array item has an error  */
@@ -696,10 +695,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'npr. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Otvori izbornik opcija datoteke',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Pretraži',
-  /** Select file */
-  'inputs.file.dialog.title': 'Odaberi datoteku',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Nepoznata vrsta člana: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -709,8 +704,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Resetiraj vrijednost',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Neispravna vrijednost datoteke',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Odaberi',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Prijenos nije moguće dovršiti u ovom trenutku.',
   /** Upload failed */
@@ -781,14 +774,14 @@ export default removeUndefinedLocaleResources({
     'Prijenos nije napredovao najmanje {{staleThresholdMinutes}} minuta i vjerojatno je prekinut. Možete sigurno očistiti nedovršeni prijenos i pokušati ponovno učitati.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Nedovršeni prijenos',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Odaberi datoteku za „{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Obreži sliku',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Otvori dijalog za uređivanje slike',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Otvori izbornik opcija slike',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Odaberi',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Ovdje nije moguće učitati datoteku',
   /** Drop image to upload */
@@ -811,6 +804,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Nevažeća vrijednost slike',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Pregled učitane slike',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Odaberi sliku za „{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Prijenos trenutno nije moguće dovršiti.',
   /** Upload failed */
@@ -867,7 +862,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Ovo polje je <strong>samo za čitanje</strong> prema shemi dokumenta i ne može se poništiti. Ako želite moći poništiti ovo u Studiju, pobrinite se da uklonite <code>readOnly</code> polje iz obuhvaćenog tipa u shemi.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nije moguće učitati pregled za referencu „{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Ukloni polje',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1218,6 +1214,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Vrijednost svojstva nedostaje <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Poništi vrijednost',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Odaberi video za „{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2204,6 +2202,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Prijavljeni s {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Otvori izbornik',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Promjene agenta',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Predložene promjene',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
