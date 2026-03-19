@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'სურათს გამოყენებული დოკუმენტები',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'იტვირთება…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'არჩევა',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'გაუქმება',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'არჩევა',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'ფაილის არჩევა',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'სურათის არჩევა',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'ვიდეოს არჩევა',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': 'აქტივის ჩასმის შეცდომა. დეტალებისთვის იხილეთ კონსოლი.',
   /** Select asset dialog load more items */
@@ -212,10 +208,8 @@ export default removeUndefinedLocaleResources({
     'აირჩიეთ ახალი აქტივი',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'აქტივის რედაქტირება',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}-ისთვის ფაილის არჩევა',
-  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}-ისთვის სურათის არჩევა',
-  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}}-ისთვის ვიდეოს არჩევა',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Media Library-ში ატვირთვა',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ბიბლიოთეკაში ნაპოვნი არსებული ფაილის გამოყენება.',
@@ -482,6 +476,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'რევიზია ვერ მოიძებნა',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'თქვენი ცვლილებები ჯერ კიდევ ინახება.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'შენახვა მოსალოდნელზე მეტ დროს იღებს',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'დოკუმენტის ტიპი "{{type}}" ვერ მოიძებნა',
 
@@ -639,7 +638,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'რედაქტირება {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'მიღწეულია ელემენტების მაქსიმალური რაოდენობა',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'წაშლა',
   /** Label for removing action when an array item has an error  */
@@ -694,10 +693,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'მაგ. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'ფაილის ოპციების მენიუს გახსნა',
-  /** Browse */
-  'inputs.file.browse-button.text': 'დათვალიერება',
-  /** Select file */
-  'inputs.file.dialog.title': 'ფაილის არჩევა',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'უცნობი წევრის ტიპი: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -707,8 +702,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'მნიშვნელობის განულება',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'არამართებული ფაილის მნიშვნელობა',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'არჩევა',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'ატვირთვა ამ დროს ვერ შესრულდა.',
   /** Upload failed */
@@ -775,14 +768,14 @@ export default removeUndefinedLocaleResources({
     'ატვირთვა არ განახლდა მინიმუმ {{staleThresholdMinutes}} წუთის განმავლობაში და შესაძლოა შეწყდა. შეგიძლიათ უსაფრთხოდ წაშალოთ დაუსრულებელი ატვირთვა და სცადოთ ხელახლა ატვირთვა.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'დაუსრულებელი ატვირთვა',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'ფაილის არჩევა „{{targetTitle}}"-სთვის',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'სურათის მოჭრა',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'სურათის რედაქტირების დიალოგის გახსნა',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'სურათის ოპციების მენიუს გახსნა',
-  /** Select */
-  'inputs.image.browse-menu.text': 'არჩევა',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'აქ არ შეიძლება ატვირთვა ამ ფაილის',
   /** Drop image to upload */
@@ -805,6 +798,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'არასწორი სურათის მნიშვნელობა',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'ატვირთული სურათის წინასწარი ხილვა',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'სურათის არჩევა „{{targetTitle}}"-სთვის',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'ატვირთვა ამ დროს ვერ შესრულდა.',
   /** Upload failed */
@@ -861,7 +856,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'ეს ველი <strong>წაკითხვადი მხარეა</strong> დოკუმენტის სქემის თანახმად და ვერ მოიხსნება. თუ გსურთ, რომ სტუდიაში შეძლოთ ამის გაუქმება, დარწმუნდით, რომ სქემის შემოსავალ ტიპში ამოიღებთ <code>readOnly</code> ველს.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '„{{documentId}}" რეფერენსის გადახედვის ჩატვირთვა შეუძლებელია.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'ველის ამოღება',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1215,6 +1211,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'თვისების მნიშვნელობაში აკლია <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'მნიშვნელობის გაუქმება',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'ვიდეოს არჩევა „{{targetTitle}}"-სთვის',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2199,6 +2197,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'შესული {{providerTitle}}-ით',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'გახსენი მენიუ',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agent-ის ცვლილებები',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'შემოთავაზებული ცვლილებები',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
