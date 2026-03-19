@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Documentos que utilizan la imagen',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Cargando…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Seleccionar',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Cancelar',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Seleccionar',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Seleccionar archivo',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Seleccionar imagen',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Seleccionar video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Error al insertar el activo. Consulta la consola para más información.',
@@ -216,13 +212,8 @@ export default removeUndefinedLocaleResources({
     'Seleccionar nuevo activo',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Editar activo',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file':
-    'Seleccionando archivo para {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image':
-    'Seleccionando imagen para {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video':
-    'Seleccionando video para {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Subir a Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Usando el archivo existente encontrado en la biblioteca.',
@@ -477,6 +468,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Ordenar por Título',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Cerrar',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignorar',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Siguiente',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Anterior',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Copiar desde la base',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'cambiado',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} en la versión {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Cambio sin resolver en la versión {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} cambios sin resolver en la versión {{versionName}}',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Creado {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -493,6 +504,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revisión desde <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revisión no encontrada',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Sus cambios aún se están guardando.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'El guardado está tardando más de lo esperado',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tipo de documento "{{type}}" no encontrado',
@@ -651,7 +667,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Editar {{itemTypeTitle}}',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Se alcanzó el número máximo de elementos',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Eliminar',
   /** Label for removing action when an array item has an error  */
@@ -706,10 +722,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'p. ej. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Abrir el menú de opciones de archivo',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Explorar',
-  /** Select file */
-  'inputs.file.dialog.title': 'Seleccionar archivo',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Tipo de miembro desconocido: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -719,8 +731,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Restablecer valor',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Valor de archivo no válido',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Seleccionar',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'La carga no se pudo completar en este momento.',
   /** Upload failed */
@@ -789,14 +799,14 @@ export default removeUndefinedLocaleResources({
     'Una subida no ha progresado durante al menos {{staleThresholdMinutes}} minutos y probablemente se interrumpió. Puedes borrar con seguridad la subida incompleta e intentar subir de nuevo.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Subida incompleta',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Seleccionar archivo para "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Recortar imagen',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Abrir el diálogo de edición de imagen',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Abrir el menú de opciones de imagen',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Seleccionar',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'No se puede cargar este archivo aquí',
   /** Drop image to upload */
@@ -819,6 +829,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Valor de imagen no válido',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Vista previa de la imagen cargada',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Seleccionar imagen para "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'La carga no se pudo completar en este momento.',
   /** Upload failed */
@@ -875,7 +887,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Este campo es <strong>solo lectura</strong> según el esquema del documento y no puede ser eliminado. Si quieres poder eliminar esto en Studio, asegúrate de quitar el campo <code>readOnly</code> del tipo que lo encierra en el esquema.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'No se puede cargar la vista previa de la referencia "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Eliminar campo',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1228,6 +1241,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Falta el valor de la propiedad <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Desestablecer valor',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Seleccionar video para "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2226,6 +2241,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Conectado con {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Abrir menú',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Cambios del agente',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Cambios propuestos',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
