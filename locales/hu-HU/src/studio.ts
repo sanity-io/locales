@@ -79,6 +79,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Képet használó dokumentumok',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Betöltés…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Kiválasztás',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Mégse',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -123,12 +125,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Kiválaszt',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Fájl kiválasztása',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Kép kiválasztása',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Videó kiválasztása',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Hiba történt az eszköz beillesztésekor. További információkért nézze meg a konzolt.',
@@ -217,10 +213,8 @@ export default removeUndefinedLocaleResources({
     'Új eszköz kiválasztása',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Eszköz szerkesztése',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}} fájl kiválasztása',
-  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}} kép kiválasztása',
-  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}} videó kiválasztása',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Feltöltés a Media Library-ba',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'A könyvtárban talált meglévő fájl használata.',
@@ -486,6 +480,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'A revízió nem található',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'A módosítások mentése még folyamatban van.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'A mentés a vártnál tovább tart',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'A "{{type}}" típusú dokumentum nem található',
 
@@ -643,7 +642,7 @@ export default removeUndefinedLocaleResources({
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} szerkesztése',
   /** Tooltip text explaining why adding items is disabled when array max is reached */
-  'inputs.array.action.max-reached': undefined, // 'Maximum items reached'
+  'inputs.array.action.max-reached': 'Elérte az elemek maximális számát',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Eltávolítás',
   /** Label for removing action when an array item has an error  */
@@ -698,10 +697,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'pl. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Fájlopciók menü megnyitása',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Tallózás',
-  /** Select file */
-  'inputs.file.dialog.title': 'Fájl kiválasztása',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Ismeretlen tagtípus: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -711,8 +706,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Érték alaphelyzetbe állítása',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Érvénytelen fájlérték',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Kiválasztás',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'A feltöltés jelenleg nem hajtható végre.',
   /** Upload failed */
@@ -783,14 +776,14 @@ export default removeUndefinedLocaleResources({
     'Egy feltöltés legalább {{staleThresholdMinutes}} perce nem haladt előre és valószínűleg megszakadt. Biztonságosan törölheti a befejezetlen feltöltést és újra megpróbálhatja feltölteni.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Befejezetlen feltöltés',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Fájl kiválasztása a következőhöz: „{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Kép vágása',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Képszerkesztő párbeszédablak megnyitása',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Képbeállítások menüjének megnyitása',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Kiválasztás',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Itt nem lehet feltölteni ezt a fájlt',
   /** Drop image to upload */
@@ -813,6 +806,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Érvénytelen képérték',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Feltöltött kép előnézete',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Kép kiválasztása a következőhöz: „{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'A feltöltés jelenleg nem fejezhető be.',
   /** Upload failed */
@@ -869,7 +864,8 @@ export default removeUndefinedLocaleResources({
   'inputs.object.unknown-fields.read-only.description':
     'Ez a mező <strong>csak olvasható</strong> a dokumentum sémája szerint és nem távolítható el. Ha szeretnéd, hogy ezt a Studioban el lehessen távolítani, győződj meg róla, hogy eltávolítod a <code>readOnly</code> mezőt a séma beágyazott típusából.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
-  'inputs.object.unknown-fields.reference.preview.unavailable': undefined, // 'Unable to load preview for reference "{{documentId}}".'
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nem sikerült betölteni az előnézetet a következő hivatkozáshoz: „{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Mező eltávolítása',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1225,6 +1221,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Hiányzó tulajdonságérték <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Érték törlése',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Videó kiválasztása a következőhöz: „{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2214,6 +2212,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Bejelentkezve a következővel: {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Menü megnyitása',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agent módosítások',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Javasolt módosítások',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
