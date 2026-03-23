@@ -458,6 +458,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sortera efter titel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Stäng',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignorera',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Nästa',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Föregående',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopiera från bas',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'ändrades',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} i {{versionName}}-versionen',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Olöst ändring i {{versionName}}-versionen',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} olösta ändringar i {{versionName}}-versionen',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Skapad {{date}}',
   /** Label to show in the document status indicating the date of the status */
