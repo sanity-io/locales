@@ -79,6 +79,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Resmi kullanan belgeler',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Yükleniyor…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Seç',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'İptal',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -123,12 +125,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Seç',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Dosya seç',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Resim seç',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Video seç',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Varlık eklenirken hata oluştu. Daha fazla bilgi için konsolu görüntüleyin.',
@@ -214,10 +210,8 @@ export default removeUndefinedLocaleResources({
     'Yeni varlık seç',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Varlığı Düzenle',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}} için dosya seçimi',
-  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}} için resim seçimi',
-  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}} için video seçimi',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': "Media Library'ye Yükle",
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Kütüphanede bulunan mevcut dosya kullanılıyor.',
@@ -468,6 +462,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Başlığa Göre Sırala',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Kapat',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Yoksay',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Sonraki',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Önceki',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Tabandan kopyala',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'değiştirildi',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{versionName}} sürümünde {{title}} {{effect}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': '{{versionName}} sürümünde çözümlenmemiş değişiklik',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} sürümünde {{count}} çözümlenmemiş değişiklik',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}} tarihinde oluşturuldu',
   /** Label to show in the document status indicating the date of the status */
@@ -484,6 +498,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revizyon tarihi <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revizyon bulunamadı',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Değişiklikleriniz hâlâ kaydediliyor.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Kaydetme beklenenden uzun sürüyor',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Belge türü "{{type}}" bulunamadı',
@@ -698,10 +717,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'örn. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Dosya seçenekleri menüsünü aç',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Göz at',
-  /** Select file */
-  'inputs.file.dialog.title': 'Dosya seç',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Bilinmeyen üye türü: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -711,8 +726,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Değeri sıfırla',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Geçersiz dosya değeri',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Seç',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Yükleme şu anda tamamlanamadı.',
   /** Upload failed */
@@ -783,14 +796,14 @@ export default removeUndefinedLocaleResources({
     'Bir yükleme en az {{staleThresholdMinutes}} dakika boyunca ilerleme kaydetmedi ve muhtemelen kesildi. Eksik yüklemeyi güvenle temizleyebilir ve tekrar yüklemeyi deneyebilirsiniz.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Eksik yükleme',
+  /** Select file */
+  'inputs.files.select-dialog.title': '"{{targetTitle}}" için dosya seç',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Resmi kırp',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Resim düzenleme diyalogunu aç',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Resim seçenekleri menüsünü aç',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Seç',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Bu dosya buraya yüklenemez',
   /** Drop image to upload */
@@ -813,6 +826,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Geçersiz resim değeri',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Yüklenen resmin önizlemesi',
+  /** Select image */
+  'inputs.image.select-dialog.title': '"{{targetTitle}}" için görsel seç',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Yükleme şu anda tamamlanamadı.',
   /** Upload failed */
@@ -1222,6 +1237,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': '<code>_type</code> özelliği eksik olan özellik değeri',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Değeri kaldır',
+  /** Select video */
+  'inputs.video.select-dialog.title': '"{{targetTitle}}" için video seç',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation': 'Bu özelliğe erişim izniniz yok.',
@@ -2204,6 +2221,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': '{{providerTitle}} ile giriş yapıldı',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Menüyü aç',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Ajan değişiklikleri',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Önerilen değişiklikler',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
