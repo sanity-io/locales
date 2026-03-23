@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': '이미지를 사용하는 문서',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': '로딩 중…',
+  /** Browse button text */
+  'asset-source.browse-button.text': '선택',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': '취소',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '선택',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': '파일 선택',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': '이미지 선택',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': '비디오 선택',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '자산 삽입 오류. 자세한 정보는 콘솔을 확인하세요.',
   /** Select asset dialog load more items */
@@ -213,10 +209,8 @@ export default removeUndefinedLocaleResources({
     '새 자산 선택',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': '자산 편집',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}을(를) 위한 파일 선택',
-  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}을(를) 위한 이미지 선택',
-  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}}을(를) 위한 비디오 선택',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Media Library에 업로드',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     '라이브러리에서 찾은 기존 파일을 사용합니다.',
@@ -466,6 +460,24 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '타이틀별 정렬',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': '닫기',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': '무시',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': '다음',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': '이전',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': '베이스에서 복사',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': '변경됨',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{versionName}} 버전에서 {{title}}이(가) {{effect}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} 버전에서 {{count}}개의 미해결 변경 사항',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}}에 생성됨',
   /** Label to show in the document status indicating the date of the status */
@@ -482,6 +494,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': '개정 <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': '리비전을 찾을 수 없습니다',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': '변경 사항이 아직 저장 중입니다.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': '저장이 예상보다 오래 걸리고 있습니다',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '문서 유형 "{{type}}"을(를) 찾을 수 없습니다',
@@ -693,10 +710,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': '예: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': '파일 옵션 메뉴 열기',
-  /** Browse */
-  'inputs.file.browse-button.text': '찾아보기',
-  /** Select file */
-  'inputs.file.dialog.title': '파일 선택',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': '알 수 없는 멤버 종류: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -706,8 +719,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': '값 재설정',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': '잘못된 파일 값',
-  /** Select */
-  'inputs.file.multi-browse-button.text': '선택',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': '현재 업로드를 완료할 수 없습니다.',
   /** Upload failed */
@@ -777,14 +788,14 @@ export default removeUndefinedLocaleResources({
     '업로드가 적어도 {{staleThresholdMinutes}}분 동안 진행되지 않고 중단되었을 가능성이 있습니다. 미완료된 업로드를 안전하게 지우고 다시 업로드를 시도할 수 있습니다.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '미완료된 업로드',
+  /** Select file */
+  'inputs.files.select-dialog.title': '"{{targetTitle}}"의 파일 선택',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': '이미지 자르기',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '이미지 편집 대화 상자 열기',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': '이미지 옵션 메뉴 열기',
-  /** Select */
-  'inputs.image.browse-menu.text': '선택',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': '여기에 이 파일을 업로드할 수 없습니다',
   /** Drop image to upload */
@@ -807,6 +818,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': '잘못된 이미지 값',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': '업로드된 이미지 미리보기',
+  /** Select image */
+  'inputs.image.select-dialog.title': '"{{targetTitle}}"의 이미지 선택',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': '현재 업로드를 완료할 수 없습니다.',
   /** Upload failed */
@@ -1214,6 +1227,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': '속성 값에 <code>_type</code>이 누락됨',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': '값 해제',
+  /** Select video */
+  'inputs.video.select-dialog.title': '"{{targetTitle}}"의 동영상 선택',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2205,6 +2220,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': '{{providerTitle}}로 로그인됨',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': '메뉴 열기',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': '에이전트 변경 사항',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': '제안된 변경 사항',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
