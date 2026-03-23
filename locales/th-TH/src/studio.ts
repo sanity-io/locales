@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'เอกสารที่ใช้รูปภาพ',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'กำลังโหลด…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'เลือก',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'ยกเลิก',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'เลือก',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'เลือกไฟล์',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'เลือกรูปภาพ',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'เลือกวิดีโอ',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
@@ -203,10 +199,8 @@ export default removeUndefinedLocaleResources({
     'เลือกสินทรัพย์ใหม่',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'แก้ไขสินทรัพย์',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'กำลังเลือกไฟล์สำหรับ {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'กำลังเลือกรูปภาพสำหรับ {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'กำลังเลือกวิดีโอสำหรับ {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'อัปโหลดไปยัง Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ใช้ไฟล์ที่มีอยู่ในห้องสมุดแล้ว',
@@ -443,6 +437,24 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'เรียงตามชื่อเรื่อง',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'ปิด',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'ละเว้น',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'ถัดไป',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'ก่อนหน้า',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'คัดลอกจากฐาน',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'เปลี่ยนแปลงแล้ว',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} ใน {{versionName}} เวอร์ชัน',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} การเปลี่ยนแปลงที่ยังไม่ได้รับการแก้ไขใน {{versionName}} เวอร์ชัน',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'สร้างเมื่อ {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -459,6 +471,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'การแก้ไขจาก <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'ไม่พบการแก้ไข',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'การเปลี่ยนแปลงของคุณยังคงถูกบันทึกอยู่',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'การบันทึกใช้เวลานานกว่าที่คาดไว้',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ไม่พบประเภทเอกสาร "{{type}}"',
@@ -663,10 +680,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'เช่น {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'เปิดเมนูตัวเลือกไฟล์',
-  /** Browse */
-  'inputs.file.browse-button.text': 'เรียกดู',
-  /** Select file */
-  'inputs.file.dialog.title': 'เลือกไฟล์',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'ไม่รู้จักประเภทสมาชิก: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -676,8 +689,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'รีเซ็ตค่า',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'ค่าไฟล์ไม่ถูกต้อง',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'เลือก',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'การอัปโหลดไม่สามารถเสร็จสิ้นได้ในขณะนี้',
   /** Upload failed */
@@ -733,14 +744,14 @@ export default removeUndefinedLocaleResources({
     'การอัปโหลดไม่มีความคืบหน้าอย่างน้อย {{staleThresholdMinutes}} นาทีและอาจถูกขัดจังหวะ คุณสามารถล้างการอัปโหลดที่ไม่สมบูรณ์และลองอัปโหลดอีกครั้งได้อย่างปลอดภัย',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'การอัปโหลดไม่สมบูรณ์',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'เลือกไฟล์สำหรับ "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'ครอบตัดรูปภาพ',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'เปิดกล่องโต้ตอบแก้ไขรูปภาพ',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'เปิดเมนูตัวเลือกรูปภาพ',
-  /** Select */
-  'inputs.image.browse-menu.text': 'เลือก',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'ไม่สามารถอัปโหลดไฟล์นี้ที่นี่',
   /** Drop image to upload */
@@ -763,6 +774,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'ค่ารูปภาพไม่ถูกต้อง',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'ตัวอย่างรูปภาพที่อัปโหลด',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'เลือกรูปภาพสำหรับ "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'ไม่สามารถอัปโหลดได้ในเวลานี้',
   /** Upload failed */
@@ -1162,6 +1175,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'คุณสมบัติของค่าที่ไม่มี <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'ยกเลิกการตั้งค่า',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'เลือกวิดีโอสำหรับ "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2095,6 +2110,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'เข้าสู่ระบบด้วย {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'เปิดเมนู',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'การเปลี่ยนแปลงของ Agent',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'การเปลี่ยนแปลงที่เสนอ',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
