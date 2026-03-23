@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': '使用图片的文档',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': '加载中…',
+  /** Browse button text */
+  'asset-source.browse-button.text': undefined, // 'Select'
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': '取消',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -121,12 +123,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '选择',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': '选择文件',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': '选择图片',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': '选择视频',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
   /** Select asset dialog load more items */
@@ -199,10 +195,8 @@ export default removeUndefinedLocaleResources({
     '选择新资源',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': '编辑资源',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': '为{{targetTitle}}选择文件',
-  'asset-sources.media-library.select-dialog.title_image': '为{{targetTitle}}选择图片',
-  'asset-sources.media-library.select-dialog.title_video': '为{{targetTitle}}选择视频',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': undefined, // 'Upload to Media Library'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description': '使用库中找到的现有文件。',
   'asset-sources.media-library.warning.file-already-exist.title': "文件：'{{filename}}'已存在",
@@ -435,6 +429,23 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '按标题排序',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': undefined, // 'Close'
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': undefined, // 'Ignore'
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': undefined, // 'Next'
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': undefined, // 'Previous'
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': undefined, // 'Copy from base'
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': undefined, // 'changed'
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': undefined, // '{{title}} {{effect}} in {{versionName}} version'
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other': undefined, // '{{count}} unresolved changes in {{versionName}} version'
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '创建于 {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -451,6 +462,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': '修订自 <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': '未找到修订版',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': undefined, // 'Your changes are still being saved.'
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': undefined, // 'Saving is taking longer than expected'
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '未找到文档类型 "{{type}}"',
@@ -654,10 +670,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': '例如 {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': '打开文件选项菜单',
-  /** Browse */
-  'inputs.file.browse-button.text': '浏览',
-  /** Select file */
-  'inputs.file.dialog.title': '选择文件',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': '未知成员类型：{{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -667,8 +679,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': '重置值',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': '文件值无效',
-  /** Select */
-  'inputs.file.multi-browse-button.text': '选择',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': '此时无法完成上传。',
   /** Upload failed */
@@ -723,14 +733,14 @@ export default removeUndefinedLocaleResources({
     '至少{{staleThresholdMinutes}}分钟没有上传进度，很可能被中断了。您可以安全地清除未完成的上传并再次尝试上传。',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '上传未完成',
+  /** Select file */
+  'inputs.files.select-dialog.title': undefined, // 'Select file for "{{targetTitle}}"'
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': '裁剪图片',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '打开图片编辑对话框',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': '打开图片选项菜单',
-  /** Select */
-  'inputs.image.browse-menu.text': '选择',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': '无法在这里上传此文件',
   /** Drop image to upload */
@@ -752,6 +762,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': '无效的图片值',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': '上传图片的预览',
+  /** Select image */
+  'inputs.image.select-dialog.title': undefined, // 'Select image for "{{targetTitle}}"'
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': '此时无法完成上传。',
   /** Upload failed */
@@ -1139,6 +1151,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': '属性值缺少<code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': '取消设置值',
+  /** Select video */
+  'inputs.video.select-dialog.title': undefined, // 'Select video for "{{targetTitle}}"'
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation': '您没有权限访问此功能。',
@@ -2047,6 +2061,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': '已通过{{providerTitle}}登录',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': '打开菜单',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': undefined, // 'Agent changes'
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': undefined, // 'Proposed changes'
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will

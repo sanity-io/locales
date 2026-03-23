@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Documenten die afbeelding gebruiken',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Laden…',
+  /** Browse button text */
+  'asset-source.browse-button.text': undefined, // 'Select'
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Annuleren',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Selecteren',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Selecteer bestand',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Selecteer afbeelding',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Selecteer video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Fout bij het invoegen van asset. Zie de console voor meer informatie.',
@@ -214,11 +210,8 @@ export default removeUndefinedLocaleResources({
     'Selecteer een nieuw asset',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Bewerk asset',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Bestand selecteren voor {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image':
-    'Afbeelding selecteren voor {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Video selecteren voor {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': undefined, // 'Upload to Media Library'
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Het bestaande bestand dat in de bibliotheek is gevonden wordt gebruikt.',
@@ -471,6 +464,25 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorteren op titel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': undefined, // 'Close'
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': undefined, // 'Ignore'
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': undefined, // 'Next'
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': undefined, // 'Previous'
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': undefined, // 'Copy from base'
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': undefined, // 'changed'
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': undefined, // '{{title}} {{effect}} in {{versionName}} version'
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': undefined, // 'Unresolved change in {{versionName}} version'
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other': undefined, // '{{count}} unresolved changes in {{versionName}} version'
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Gemaakt op {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -487,6 +499,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revisie van <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revisie niet gevonden',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': undefined, // 'Your changes are still being saved.'
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': undefined, // 'Saving is taking longer than expected'
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Documenttype "{{type}}" niet gevonden',
@@ -700,10 +717,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'bijv. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Bestandsopties menu openen',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Bladeren',
-  /** Select file */
-  'inputs.file.dialog.title': 'Selecteer bestand',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Onbekend lidtype: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -713,8 +726,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Waarde resetten',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ongeldige bestandswaarde',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Selecteren',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'De upload kon op dit moment niet worden voltooid.',
   /** Upload failed */
@@ -784,6 +795,8 @@ export default removeUndefinedLocaleResources({
     'Een upload heeft ten minste {{staleThresholdMinutes}} minuten geen voortgang gemaakt en is waarschijnlijk onderbroken. U kunt de onvolledige upload veilig wissen en opnieuw proberen te uploaden.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Onvolledige upload',
+  /** Select file */
+  'inputs.files.select-dialog.title': undefined, // 'Select file for "{{targetTitle}}"'
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Afbeelding bijsnijden',
   /** Accessibility label for button to open image edit dialog */
@@ -791,8 +804,6 @@ export default removeUndefinedLocaleResources({
     'Dialoogvenster voor het bewerken van afbeeldingen openen',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Menu met afbeeldingsopties openen',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Selecteren',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Kan dit bestand hier niet uploaden',
   /** Drop image to upload */
@@ -815,6 +826,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ongeldige afbeeldingswaarde',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Voorbeeld van geüploade afbeelding',
+  /** Select image */
+  'inputs.image.select-dialog.title': undefined, // 'Select image for "{{targetTitle}}"'
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'De upload kon op dit moment niet worden voltooid.',
   /** Upload failed */
@@ -1229,6 +1242,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Eigenschapwaarde mist <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Waarde ongedaan maken',
+  /** Select video */
+  'inputs.video.select-dialog.title': undefined, // 'Select video for "{{targetTitle}}"'
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2215,6 +2230,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Ingelogd met {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Menu openen',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': undefined, // 'Agent changes'
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': undefined, // 'Proposed changes'
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
