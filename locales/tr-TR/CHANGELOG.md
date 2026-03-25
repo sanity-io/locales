@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.31](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.30...locale-tr-tr-v1.2.31) (2026-03-23)
+
+
+### Bug Fixes
+
+* **tr-TR:** automated translation updates ([#1628](https://github.com/sanity-io/locales/issues/1628)) ([063925a](https://github.com/sanity-io/locales/commit/063925aed4774798f80a1c2b64119e72e3bb6a6a))
+
 ## [1.2.30](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.29...locale-tr-tr-v1.2.30) (2026-03-11)
 
 

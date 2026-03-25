@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.25](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.24...locale-is-is-v1.2.25) (2026-03-23)
+
+
+### Bug Fixes
+
+* **is-IS:** automated translation updates ([#1611](https://github.com/sanity-io/locales/issues/1611)) ([b907af2](https://github.com/sanity-io/locales/commit/b907af26f48986c3492354b9ff8430de6de0edf4))
+
 ## [1.2.24](https://github.com/sanity-io/locales/compare/locale-is-is-v1.2.23...locale-is-is-v1.2.24) (2026-03-11)
 
 

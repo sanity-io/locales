@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.11](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.10...locale-ro-ro-v1.0.11) (2026-03-23)
+
+
+### Bug Fixes
+
+* **ro-RO:** automated translation updates ([#1624](https://github.com/sanity-io/locales/issues/1624)) ([0c2cad4](https://github.com/sanity-io/locales/commit/0c2cad4dd76f7989683d4b1408a762cd6006fd1d))
+
 ## [1.0.10](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.9...locale-ro-ro-v1.0.10) (2026-03-11)
 
 
