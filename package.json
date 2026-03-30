@@ -61,7 +61,7 @@
     "pretty-ms": "^7.0.1",
     "sanity": "^5.17.1",
     "tsx": "^4.21.0",
-    "zod": "^3.24.4",
+    "zod": "^3.25.76",
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {

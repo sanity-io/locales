@@ -72,7 +72,7 @@ importers:
         specifier: ^4.21.0
         version: 4.21.0
       zod:
-        specifier: ^3.24.4
+        specifier: ^3.25.76
         version: 3.25.76
       zod-validation-error:
         specifier: ^3.4.0
