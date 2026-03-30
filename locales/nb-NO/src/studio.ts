@@ -77,6 +77,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenter som bruker bildet',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Laster…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Velg',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Avbryt',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -121,12 +123,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Velg',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Velg fil',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Velg bilde',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Velg video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'En feil oppstod under innsetting av mediefil. Se konsollen for mer informasjon.',
@@ -212,10 +208,8 @@ export default removeUndefinedLocaleResources({
     'Velg ny mediefil',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Rediger mediefil',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Velger fil for {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Velger bilde for {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Velger video for {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Last opp til Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Bruker den eksisterende filen funnet i biblioteket.',
@@ -468,6 +462,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorter etter tittel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Lukk',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignorer',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Neste',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Forrige',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopier fra base',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'endret',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} i {{versionName}}-versjonen',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Uløst endring i {{versionName}}-versjonen',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} uløste endringer i {{versionName}}-versjonen',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Opprettet {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -484,6 +498,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Revisjon fra <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Revisjon ikke funnet',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Endringene dine lagres fortsatt.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Lagring tar lengre tid enn forventet',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttypen "{{type}}" ble ikke funnet',
@@ -697,10 +716,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'f.eks. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Åpne filinnstillingsmeny',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Bla gjennom',
-  /** Select file */
-  'inputs.file.dialog.title': 'Velg fil',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Ukjent medlemstype: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -710,8 +725,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Nullstill verdi',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ugyldig filverdi',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Velg',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Opplastingen kunne ikke fullføres akkurat nå.',
   /** Upload failed */
@@ -780,14 +793,14 @@ export default removeUndefinedLocaleResources({
     'En opplasting har ikke gjort fremskritt på minst {{staleThresholdMinutes}} minutter og ble sannsynligvis avbrutt. Du kan trygt fjerne den ufullstendige opplastingen og prøve å laste opp på nytt.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ufullstendig opplasting',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Velg fil for «{{targetTitle}}»',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Beskjær bilde',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Åpne bilderedigeringsdialog',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Åpne bildeinnstillingsmeny',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Velg',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Kan ikke laste opp denne filen her',
   /** Drop image to upload */
@@ -810,6 +823,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ugyldig bildeverdi',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Forhåndsvisning av opplastet bilde',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Velg bilde for «{{targetTitle}}»',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description':
     'Opplastingen kunne ikke fullføres på dette tidspunktet.',
@@ -1218,6 +1233,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Verdi mangler <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Fjern verdi',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Velg video for «{{targetTitle}}»',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2212,6 +2229,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Logget inn med {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Åpne meny',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentendringer',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Foreslåtte endringer',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
