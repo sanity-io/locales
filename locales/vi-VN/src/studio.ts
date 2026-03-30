@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Tài liệu sử dụng hình ảnh',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Đang tải…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Chọn',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Hủy bỏ',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Chọn',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Chọn tệp',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Chọn hình ảnh',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Chọn video',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Lỗi khi chèn tài sản. Xem console để biết thêm thông tin.',
@@ -206,10 +202,8 @@ export default removeUndefinedLocaleResources({
     'Chọn tài sản mới',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Chỉnh sửa tài sản',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Chọn tệp cho {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Chọn hình ảnh cho {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Chọn video cho {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Tải lên Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Sử dụng tệp tin đã có trong thư viện.',
@@ -449,6 +443,24 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sắp xếp theo Tiêu đề',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Đóng',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Bỏ qua',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Tiếp theo',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Trước đó',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Sao chép từ cơ sở',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'đã thay đổi',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} trong phiên bản {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} thay đổi chưa được giải quyết trong phiên bản {{versionName}}',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Đã tạo {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -465,6 +477,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Phiên bản từ <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Không tìm thấy phiên bản',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Các thay đổi của bạn vẫn đang được lưu.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Quá trình lưu đang mất nhiều thời gian hơn dự kiến',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Không tìm thấy loại tài liệu "{{type}}"',
@@ -669,10 +686,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'ví dụ: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Mở menu tùy chọn tệp',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Duyệt',
-  /** Select file */
-  'inputs.file.dialog.title': 'Chọn tệp',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Loại thành viên không xác định: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -682,8 +695,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Đặt lại giá trị',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Giá trị tệp không hợp lệ',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Chọn',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Không thể hoàn thành việc tải lên vào lúc này.',
   /** Upload failed */
@@ -739,14 +750,14 @@ export default removeUndefinedLocaleResources({
     'Một tải lên không có tiến triển trong ít nhất {{staleThresholdMinutes}} phút và có thể đã bị gián đoạn. Bạn có thể an toàn xóa tải lên không hoàn chỉnh và thử tải lên lại.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Tải lên không hoàn chỉnh',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Chọn tệp cho "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Cắt hình ảnh',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Mở hộp thoại chỉnh sửa hình ảnh',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Mở menu tùy chọn hình ảnh',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Chọn',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Không thể tải lên tệp này ở đây',
   /** Drop image to upload */
@@ -769,6 +780,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Giá trị hình ảnh không hợp lệ',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Xem trước hình ảnh đã tải lên',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Chọn hình ảnh cho "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Không thể hoàn thành việc tải lên vào lúc này.',
   /** Upload failed */
@@ -1170,6 +1183,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Giá trị thuộc tính thiếu <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Bỏ thiết lập giá trị',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Chọn video cho "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2110,6 +2125,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Đăng nhập với {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Mở menu',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Thay đổi của tác nhân',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Thay đổi được đề xuất',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
