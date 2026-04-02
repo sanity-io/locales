@@ -458,6 +458,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'ಶೀರ್ಷಿಕೆ ಪ್ರಕಾರ ವಿಂಗಡಿಸಿ',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'ಮುಚ್ಚಿರಿ',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'ನಿರ್ಲಕ್ಷಿಸಿ',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'ಮುಂದೆ',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'ಹಿಂದೆ',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'ಬೇಸ್‌ನಿಂದ ನಕಲಿಸಿ',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'ಬದಲಾಯಿಸಲಾಗಿದೆ',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ {{title}} {{effect}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ ಪರಿಹರಿಸದ ಬದಲಾವಣೆ',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ {{count}} ಪರಿಹರಿಸದ ಬದಲಾವಣೆಗಳು',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}} ರಂದು ರಚಿಸಲಾಗಿದೆ',
   /** Label to show in the document status indicating the date of the status */
