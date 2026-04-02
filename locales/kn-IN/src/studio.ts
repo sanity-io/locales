@@ -79,6 +79,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'ಚಿತ್ರ ಬಳಸುವ ದಾಖಲೆಗಳು',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'ಲೋಡ್ ಆಗುತ್ತಿದೆ…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'ಆಯ್ಕೆ ಮಾಡಿ',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'ರದ್ದುಮಾಡು',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -123,12 +125,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'ಆರಿಸಿ',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'ವೀಡಿಯೊ ಆಯ್ಕೆಮಾಡಿ',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'ಆಸ್ತಿ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
@@ -214,13 +210,8 @@ export default removeUndefinedLocaleResources({
     'ಹೊಸ ಆಸ್ತಿ ಆಯ್ಕೆಮಾಡಿ',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'ಆಸ್ತಿ ಸಂಪಾದಿಸಿ',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file':
-    '{{targetTitle}} ಗಾಗಿ ಫೈಲ್ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
-  'asset-sources.media-library.select-dialog.title_image':
-    '{{targetTitle}} ಗಾಗಿ ಚಿತ್ರ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
-  'asset-sources.media-library.select-dialog.title_video':
-    '{{targetTitle}} ಗಾಗಿ ವೀಡಿಯೊ ಆಯ್ಕೆಮಾಡುತ್ತಿದ್ದೀರಿ',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Media Library ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ಗ್ರಂಥಾಲಯದಲ್ಲಿ ಕಂಡುಬಂದ ಇದೇ ಫೈಲ್ ಬಳಸುತ್ತಿದ್ದೀರಿ.',
@@ -484,6 +475,11 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'ಪರಿಷ್ಕರಣೆ ಕಾಣಿಸಲಿಲ್ಲ',
 
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ಇನ್ನೂ ಉಳಿಸಲಾಗುತ್ತಿದೆ.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'ಉಳಿಸಲು ನಿರೀಕ್ಷಿತಕ್ಕಿಂತ ಹೆಚ್ಚು ಸಮಯ ತಗಲುತ್ತಿದೆ',
+
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ದಾಖಲೆ ಪ್ರಕಾರ "{{type}}" ಕಾಣಿಸಿಲ್ಲ',
 
@@ -696,10 +692,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'ಉದಾ. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'ಫೈಲ್ ಆಯ್ಕೆಗಳ ಮೆನು ತೆರೆಯಿರಿ',
-  /** Browse */
-  'inputs.file.browse-button.text': 'ಬ್ರೌಸ್ ಮಾಡಿ',
-  /** Select file */
-  'inputs.file.dialog.title': 'ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'ಅಜ್ಞಾತ ಸದಸ್ಯ ಪ್ರಕಾರ: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -709,8 +701,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'ಮೌಲ್ಯ ಮರುಹೊಂದಿಸಿ',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'ಅಮಾನ್ಯ ಫೈಲ್ ಮೌಲ್ಯ',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'ಆಯ್ಕೆಮಾಡಿ',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'ಅಪ್‌ಲೋಡ್ ಈ ಸಮಯದಲ್ಲಿ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** Upload failed */
@@ -781,14 +771,14 @@ export default removeUndefinedLocaleResources({
     '{{staleThresholdMinutes}} ನಿಮಿಷಗಳಿಗಿಂತ ಕನಿಷ್ಠ ಅವಧಿಯಲ್ಲಿ ಯಾವುದೇ ಪ್ರಗತಿ ಇಲ್ಲದೆ ಅಪ್‌ಲೋಡ್ ಅಂತರಾಯಗೊಂಡಿರಬಹುದು. ಅಪೂರ್ಣ ಅಪ್‌ಲೋಡ್ ಅನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಅಳಿಸಿ ಮತ್ತೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಯತ್ನಿಸಬಹುದು.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'ಅಪೂರ್ಣ ಅಪ್‌ಲೋಡ್',
+  /** Select file */
+  'inputs.files.select-dialog.title': '"{{targetTitle}}" ಗಾಗಿ ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'ಚಿತ್ರ ಕ್ರಾಪ್ ಮಾಡಿ',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'ಚಿತ್ರ ಸಂಪಾದನಾ ಡೈಲಾಗ್ ತೆರೆಯಿರಿ',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'ಚಿತ್ರ ಆಯ್ಕೆಗಳ ಮೆನು ತೆರೆಯಿರಿ',
-  /** Select */
-  'inputs.image.browse-menu.text': 'ಆಯ್ಕೆ ಮಾಡಿ',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'ಇಲ್ಲಿ ಈ ಫೈಲ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Drop image to upload */
@@ -811,6 +801,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'ಅಮಾನ್ಯ ಚಿತ್ರ ಮೌಲ್ಯ',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'ಅಪ್‌ಲೋಡ್ ಮಾಡಿದ ಚಿತ್ರದ ಮುನ್ನೋಟ',
+  /** Select image */
+  'inputs.image.select-dialog.title': '"{{targetTitle}}" ಗಾಗಿ ಚಿತ್ರ ಆಯ್ಕೆ ಮಾಡಿ',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'ಈ ಸಮಯದಲ್ಲಿ ಅಪ್‌ಲೋಡ್ ಪೂರ್ಣಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** Upload failed */
@@ -1223,6 +1215,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'ಗುಣಲಕ್ಷಣ ಮೌಲ್ಯದಲ್ಲಿ <code>_type</code> ಕಾಣೆಯಾಗಿದೆ',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'ಮೌಲ್ಯವನ್ನು ಅನ್ಸೆಟ್ ಮಾಡಿ',
+  /** Select video */
+  'inputs.video.select-dialog.title': '"{{targetTitle}}" ಗಾಗಿ ವೀಡಿಯೊ ಆಯ್ಕೆ ಮಾಡಿ',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2208,6 +2202,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': '{{providerTitle}} ಮೂಲಕ ಸೈನ್ ಇನ್ ಆಗಿದ್ದೀರಿ',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'ಮೆನು ತೆರೆ',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agent ಬದಲಾವಣೆಗಳು',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'ಪ್ರಸ್ತಾವಿತ ಬದಲಾವಣೆಗಳು',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
