@@ -75,7 +75,7 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
       zod-validation-error:
-        specifier: ^3.4.0
+        specifier: ^3.5.4
         version: 3.5.4(zod@3.25.76)
     devDependencies:
       '@anthropic-ai/sdk':
