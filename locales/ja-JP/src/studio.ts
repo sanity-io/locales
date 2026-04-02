@@ -463,6 +463,24 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'タイトルで並べ替え',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': '閉じる',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': '無視する',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': '次へ',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': '前へ',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'ベースからコピー',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': '変更されました',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{versionName}} バージョンで {{title}} が {{effect}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} バージョンに {{count}} 件の未解決の変更があります',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}}に作成されました',
   /** Label to show in the document status indicating the date of the status */
