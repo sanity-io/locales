@@ -448,6 +448,23 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sortuj według Tytułu',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Zamknij',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignoruj',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Następny',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Poprzedni',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopiuj z bazy',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'zmieniono',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} w wersji {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Nierozwiązana zmiana w wersji {{versionName}}',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Utworzono {{date}}',
   /** Label to show in the document status indicating the date of the status */
