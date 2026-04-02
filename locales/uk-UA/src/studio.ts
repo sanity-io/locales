@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Документи, що використовують зображення',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Завантаження…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Вибрати',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Скасувати',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -122,12 +124,6 @@ export default removeUndefinedLocaleResources({
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Вибрати',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Вибрати файл',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Вибрати зображення',
-  /** Select asset dialog title for videos */
-  'asset-source.dialog.default-title_video': 'Вибрати відео',
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Помилка вставки ресурсу. Дивіться консоль для отримання додаткової інформації.',
@@ -207,10 +203,8 @@ export default removeUndefinedLocaleResources({
     'Вибрати новий актив',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Редагувати актив',
-  /** Info messages for the Media Library Asset Source  */
-  'asset-sources.media-library.select-dialog.title_file': 'Вибір файлу для {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_image': 'Вибір зображення для {{targetTitle}}',
-  'asset-sources.media-library.select-dialog.title_video': 'Вибір відео для {{targetTitle}}',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Завантажити до Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Використання існуючого файлу, знайденого в бібліотеці.',
@@ -455,6 +449,23 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Сортувати за назвою',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Закрити',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ігнорувати',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Далі',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Назад',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Копіювати з бази',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'змінено',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} у версії {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Невирішена зміна у версії {{versionName}}',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Створено {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -471,6 +482,11 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-from': 'Ревізія з <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Ревізію не знайдено',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Ваші зміни все ще зберігаються.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Збереження займає більше часу, ніж очікувалося',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Тип документу "{{type}}" не знайдено',
@@ -679,10 +695,6 @@ export default removeUndefinedLocaleResources({
   'inputs.datetime.placeholder': 'наприклад, {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Відкрити меню опцій файлу',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Переглянути',
-  /** Select file */
-  'inputs.file.dialog.title': 'Вибрати файл',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Невідомий тип елемента: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -692,8 +704,6 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Скинути значення',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Недійсне значення файлу',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Вибрати',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Завантаження не може бути завершене на даний момент.',
   /** Upload failed */
@@ -752,14 +762,14 @@ export default removeUndefinedLocaleResources({
     'Завантаження не робилося протягом щонайменше {{staleThresholdMinutes}} хвилин і, ймовірно, було перервано. Ви можете безпечно очистити неповне завантаження та спробувати завантажити знову.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Неповне завантаження',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Вибрати файл для «{{targetTitle}}»',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Обрізати зображення',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Відкрити діалог редагування зображення',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Відкрити меню параметрів зображення',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Вибрати',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Не можна завантажити цей файл тут',
   /** Drop image to upload */
@@ -782,6 +792,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Недійсне значення зображення',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Попередній перегляд завантаженого зображення',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Вибрати зображення для «{{targetTitle}}»',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Завантаження не може бути завершене на даний момент.',
   /** Upload failed */
@@ -1189,6 +1201,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': "Властивість об'єкта відсутня <code>_type</code>",
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Скинути значення',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Вибрати відео для «{{targetTitle}}»',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -2153,6 +2167,11 @@ export default removeUndefinedLocaleResources({
   'user-menu.login-provider': 'Увійшли через {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Відкрити меню',
+
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Зміни агента',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Запропоновані зміни',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
