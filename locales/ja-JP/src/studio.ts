@@ -212,7 +212,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'アセットを編集',
   /** Title for the upload dialog (component mode) */
-  'asset-sources.media-library.upload-dialog.title': 'Media Libraryにアップロード',
+  'asset-sources.media-library.upload-dialog.title': 'メディアライブラリにアップロード',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'ライブラリにある既存のファイルを使用しています。',
