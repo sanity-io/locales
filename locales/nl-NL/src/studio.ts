@@ -464,6 +464,26 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorteren op titel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Sluiten',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Negeren',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Volgende',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Vorige',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopiëren van basis',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'gewijzigd',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} in {{versionName}} versie',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Onopgeloste wijziging in {{versionName}} versie',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} onopgeloste wijzigingen in {{versionName}} versie',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Gemaakt op {{date}}',
   /** Label to show in the document status indicating the date of the status */
