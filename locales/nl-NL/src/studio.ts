@@ -464,6 +464,25 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorteren op titel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': undefined, // 'Close'
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': undefined, // 'Ignore'
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': undefined, // 'Next'
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': undefined, // 'Previous'
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': undefined, // 'Copy from base'
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': undefined, // 'changed'
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': undefined, // '{{title}} {{effect}} in {{versionName}} version'
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': undefined, // 'Unresolved change in {{versionName}} version'
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other': undefined, // '{{count}} unresolved changes in {{versionName}} version'
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Gemaakt op {{date}}',
   /** Label to show in the document status indicating the date of the status */
