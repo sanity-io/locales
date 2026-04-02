@@ -450,6 +450,23 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Сортировать по названию',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Закрыть',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Игнорировать',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Келесі',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Алдыңғы',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Негізден көшіру',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'өзгертілді',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} {{versionName}} нұсқасында',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': '{{versionName}} нұсқасындағы шешілмеген өзгеріс',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Создано {{date}}',
   /** Label to show in the document status indicating the date of the status */
