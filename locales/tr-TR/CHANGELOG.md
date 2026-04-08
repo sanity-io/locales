@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.32](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.31...locale-tr-tr-v1.2.32) (2026-04-08)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1640](https://github.com/sanity-io/locales/issues/1640)) ([649cbba](https://github.com/sanity-io/locales/commit/649cbba0616924d53ecaafa20c463a7124f1fb48))
+
 ## [1.2.31](https://github.com/sanity-io/locales/compare/locale-tr-tr-v1.2.30...locale-tr-tr-v1.2.31) (2026-04-02)
 
 
