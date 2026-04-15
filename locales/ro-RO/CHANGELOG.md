@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.12](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.11...locale-ro-ro-v1.0.12) (2026-04-08)
+
+
+### Bug Fixes
+
+* reconcile + prettify ([#1640](https://github.com/sanity-io/locales/issues/1640)) ([649cbba](https://github.com/sanity-io/locales/commit/649cbba0616924d53ecaafa20c463a7124f1fb48))
+
 ## [1.0.11](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.10...locale-ro-ro-v1.0.11) (2026-04-02)
 
 
