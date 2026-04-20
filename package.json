@@ -75,7 +75,7 @@
     "eslint-config-sanity": "^7.1.4",
     "expect": "^29.7.0",
     "rimraf": "^5.0.10",
-    "turbo": "^2.9.5",
+    "turbo": "^2.9.6",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.29.2",
