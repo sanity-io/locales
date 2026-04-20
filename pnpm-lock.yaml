@@ -57,11 +57,11 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       prettier:
-        specifier: ^3.8.1
-        version: 3.8.1
+        specifier: ^3.8.3
+        version: 3.8.3
       prettier-plugin-packagejson:
         specifier: ^2.5.22
-        version: 2.5.22(prettier@3.8.1)
+        version: 2.5.22(prettier@3.8.3)
       pretty-ms:
         specifier: ^7.0.1
         version: 7.0.1
@@ -3848,7 +3848,7 @@ packages:
   basic-ftp@5.1.0:
     resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
     engines: {node: '>=10.0.0'}
-    deprecated: Security vulnerability fixed in 5.2.0, please upgrade
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   before-after-hook@4.0.0:
     resolution: {integrity: sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ==}
@@ -6277,8 +6277,8 @@ packages:
       prettier:
         optional: true
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -10349,7 +10349,7 @@ snapshots:
       get-latest-version: 5.1.0(debug@4.4.3)
       jsonc-parser: 3.3.1
       pkg-dir: 5.0.0
-      prettier: 3.8.1
+      prettier: 3.8.3
       semver: 7.7.4
     optionalDependencies:
       babel-plugin-react-compiler: 1.0.0
@@ -10510,7 +10510,7 @@ snapshots:
       groq-js: 1.29.0
       json5: 2.2.3
       lodash-es: 4.17.23
-      prettier: 3.8.1
+      prettier: 3.8.3
       reselect: 5.1.1
       tsconfig-paths: 4.2.0
       zod: 4.3.6
@@ -10553,7 +10553,7 @@ snapshots:
       groq-js: 1.29.0
       json5: 2.2.3
       lodash-es: 4.17.23
-      prettier: 3.8.1
+      prettier: 3.8.3
       reselect: 5.1.1
       tsconfig-paths: 4.2.0
       zod: 4.3.6
@@ -10963,7 +10963,7 @@ snapshots:
       mkdirp: 3.0.1
       outdent: 0.8.0
       pkg-up: 3.1.0
-      prettier: 3.8.1
+      prettier: 3.8.3
       pretty-bytes: 5.6.0
       prompts: 2.4.2
       recast: 0.23.11
@@ -14776,13 +14776,13 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.22(prettier@3.8.1):
+  prettier-plugin-packagejson@2.5.22(prettier@3.8.3):
     dependencies:
       sort-package-json: 3.6.0
     optionalDependencies:
-      prettier: 3.8.1
+      prettier: 3.8.3
 
-  prettier@3.8.1: {}
+  prettier@3.8.3: {}
 
   pretty-bytes@5.6.0: {}
 
