@@ -1503,7 +1503,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Acties',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'Content Releases bekijken',
+  'release.menu.view-releases': 'Content releases bekijken',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Concepten',
   /** Label for published releases in navbar */
