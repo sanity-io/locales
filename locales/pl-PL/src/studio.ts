@@ -449,21 +449,21 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Sortuj według Tytułu',
 
   /** Label for action that closes divergence inspector */
-  'divergence.action.close.label': undefined, // 'Close'
+  'divergence.action.close.label': 'Zamknij',
   /** Label for action that marks divergence as resolved */
-  'divergence.action.markResolved.label': undefined, // 'Ignore'
+  'divergence.action.markResolved.label': 'Ignoruj',
   /** Label for action that moves inspector to the next divergence in the document */
-  'divergence.action.next.label': undefined, // 'Next'
+  'divergence.action.next.label': 'Następny',
   /** Label for action that moves inspector to the previous divergence in the document */
-  'divergence.action.previous.label': undefined, // 'Previous'
+  'divergence.action.previous.label': 'Poprzedni',
   /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
-  'divergence.action.takeFromUpstream.label': undefined, // 'Copy from base'
+  'divergence.action.takeFromUpstream.label': 'Kopiuj z bazy',
   /** Verb to describe the node's value changed */
-  'divergence.effect.changed': undefined, // 'changed'
+  'divergence.effect.changed': 'zmieniono',
   /** Summary of the change that occurred */
-  'divergence.effect.summary': undefined, // '{{title}} {{effect}} in {{versionName}} version'
+  'divergence.effect.summary': '{{title}} {{effect}} w wersji {{versionName}}',
   /** Label for divergence in a single node */
-  'divergence.unresolved-divergence_one': undefined, // 'Unresolved change in {{versionName}} version'
+  'divergence.unresolved-divergence_one': 'Nierozwiązana zmiana w wersji {{versionName}}',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Utworzono {{date}}',
