@@ -80,7 +80,7 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Yükleniyor…',
   /** Browse button text */
-  'asset-source.browse-button.text': undefined, // 'Select'
+  'asset-source.browse-button.text': 'Seç',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'İptal',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -211,7 +211,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Varlığı Düzenle',
   /** Title for the upload dialog (component mode) */
-  'asset-sources.media-library.upload-dialog.title': undefined, // 'Upload to Media Library'
+  'asset-sources.media-library.upload-dialog.title': "Media Library'ye Yükle",
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Kütüphanede bulunan mevcut dosya kullanılıyor.',
@@ -463,23 +463,24 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Başlığa Göre Sırala',
 
   /** Label for action that closes divergence inspector */
-  'divergence.action.close.label': undefined, // 'Close'
+  'divergence.action.close.label': 'Kapat',
   /** Label for action that marks divergence as resolved */
-  'divergence.action.markResolved.label': undefined, // 'Ignore'
+  'divergence.action.markResolved.label': 'Yoksay',
   /** Label for action that moves inspector to the next divergence in the document */
-  'divergence.action.next.label': undefined, // 'Next'
+  'divergence.action.next.label': 'Sonraki',
   /** Label for action that moves inspector to the previous divergence in the document */
-  'divergence.action.previous.label': undefined, // 'Previous'
+  'divergence.action.previous.label': 'Önceki',
   /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
-  'divergence.action.takeFromUpstream.label': undefined, // 'Copy from base'
+  'divergence.action.takeFromUpstream.label': 'Tabandan kopyala',
   /** Verb to describe the node's value changed */
-  'divergence.effect.changed': undefined, // 'changed'
+  'divergence.effect.changed': 'değiştirildi',
   /** Summary of the change that occurred */
-  'divergence.effect.summary': undefined, // '{{title}} {{effect}} in {{versionName}} version'
+  'divergence.effect.summary': '{{versionName}} sürümünde {{title}} {{effect}}',
   /** Label for divergence in a single node */
-  'divergence.unresolved-divergence_one': undefined, // 'Unresolved change in {{versionName}} version'
+  'divergence.unresolved-divergence_one': '{{versionName}} sürümünde çözümlenmemiş değişiklik',
   /** Label for divergences in multiple nodes */
-  'divergence.unresolved-divergence_other': undefined, // '{{count}} unresolved changes in {{versionName}} version'
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} sürümünde {{count}} çözümlenmemiş değişiklik',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}} tarihinde oluşturuldu',
@@ -499,9 +500,9 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-not-found': 'Revizyon bulunamadı',
 
   /** Toast description shown when saving changes is taking longer than expected */
-  'document-store.slow-commit.description': undefined, // 'Your changes are still being saved.'
+  'document-store.slow-commit.description': 'Değişiklikleriniz hâlâ kaydediliyor.',
   /** Toast title shown when saving changes is taking longer than expected */
-  'document-store.slow-commit.title': undefined, // 'Saving is taking longer than expected'
+  'document-store.slow-commit.title': 'Kaydetme beklenenden uzun sürüyor',
 
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Belge türü "{{type}}" bulunamadı',
@@ -796,7 +797,7 @@ export default removeUndefinedLocaleResources({
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Eksik yükleme',
   /** Select file */
-  'inputs.files.select-dialog.title': undefined, // 'Select file for "{{targetTitle}}"'
+  'inputs.files.select-dialog.title': '"{{targetTitle}}" için dosya seç',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Resmi kırp',
   /** Accessibility label for button to open image edit dialog */
@@ -826,7 +827,7 @@ export default removeUndefinedLocaleResources({
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Yüklenen resmin önizlemesi',
   /** Select image */
-  'inputs.image.select-dialog.title': undefined, // 'Select image for "{{targetTitle}}"'
+  'inputs.image.select-dialog.title': '"{{targetTitle}}" için görsel seç',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Yükleme şu anda tamamlanamadı.',
   /** Upload failed */
@@ -1237,7 +1238,7 @@ export default removeUndefinedLocaleResources({
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Değeri kaldır',
   /** Select video */
-  'inputs.video.select-dialog.title': undefined, // 'Select video for "{{targetTitle}}"'
+  'inputs.video.select-dialog.title': '"{{targetTitle}}" için video seç',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation': 'Bu özelliğe erişim izniniz yok.',
@@ -2222,9 +2223,9 @@ export default removeUndefinedLocaleResources({
   'user-menu.open-menu': 'Menüyü aç',
 
   /** Label for other users' agent bundle versions */
-  'version.agent-bundle.agent-changes': undefined, // 'Agent changes'
+  'version.agent-bundle.agent-changes': 'Ajan değişiklikleri',
   /** Label for the current user's agent bundle versions */
-  'version.agent-bundle.proposed-changes': undefined, // 'Proposed changes'
+  'version.agent-bundle.proposed-changes': 'Önerilen değişiklikler',
 
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
