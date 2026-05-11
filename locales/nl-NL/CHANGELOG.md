@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.36](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.35...locale-nl-nl-v1.1.36) (2026-05-11)
+
+
+### Bug Fixes
+
+* **nl-NL:** lowercase 'releases' in release.menu.view-releases ([#1697](https://github.com/sanity-io/locales/issues/1697)) ([953373c](https://github.com/sanity-io/locales/commit/953373cb4a7dc8528e85fd1ce90ef455d356e465))
+
 ## [1.1.35](https://github.com/sanity-io/locales/compare/locale-nl-nl-v1.1.34...locale-nl-nl-v1.1.35) (2026-04-08)
 
 
