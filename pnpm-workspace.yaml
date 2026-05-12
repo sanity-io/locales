@@ -2,3 +2,12 @@ packages:
   - 'apps/*'
   - 'packages/*'
   - 'locales/*'
+
+minimumReleaseAge: 4320
+minimumReleaseAgeExclude:
+  - '@portabletext/*'
+  - '@sanity/*'
+  - '@types/*'
+  - 'groq'
+  - 'groq-js'
+  - 'sanity'
