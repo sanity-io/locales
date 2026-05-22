@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.13](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.12...locale-ro-ro-v1.0.13) (2026-05-22)
+
+
+### Bug Fixes
+
+* allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
+
 ## [1.0.12](https://github.com/sanity-io/locales/compare/locale-ro-ro-v1.0.11...locale-ro-ro-v1.0.12) (2026-04-08)
 
 
