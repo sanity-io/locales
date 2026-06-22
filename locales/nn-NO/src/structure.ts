@@ -176,7 +176,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Denne referansen har blitt fjerna sidan du opna den.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Legg til i bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Legg til i utgjevinga',
   /** The text that appears for the action button to add the current document to the global release */
@@ -484,7 +484,7 @@ export default removeUndefinedLocaleResources({
     'Ingen innkommende referansar definert for denne typen, sjå dokumentasjonen for meir informasjon.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Ingen innkommande referansar funne.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Ingen referansar av denne typen funne.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -576,7 +576,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Søk i liste',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Dette sorteringsalternativet brukar felt som ikkje er ein del av denne dokumenttypen',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detaljar',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -608,7 +609,7 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentet blei publisert',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'Versjonen vart publisert',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> blei gjenoppretta',
