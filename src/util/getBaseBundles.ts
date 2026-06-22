@@ -169,7 +169,13 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
         )
       }
 
-      if (prop.key.type !== 'StringLiteral') {
+      const key =
+        prop.key.type === 'StringLiteral'
+          ? prop.key.value
+          : prop.key.type === 'Identifier'
+            ? prop.key.name
+            : undefined
+      if (!key) {
         throw new Error(`Found non-string key in ${LOCALE_DEF_FN_NAME} in ${fileName}`)
       }
 
@@ -191,7 +197,6 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
         }
       }
 
-      const key = prop.key.value
       const comments = (prop.leadingComments || [])
         .filter((comment) => comment.type === 'CommentBlock')
         .map((comment) => comment.value)
