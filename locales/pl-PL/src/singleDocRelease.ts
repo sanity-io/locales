@@ -2,22 +2,25 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for scheduling publish of a draft document */
-  'action.schedule-publish': undefined, // 'Schedule publish'
+  'action.schedule-publish': 'Zaplanuj publikację',
   /** Tooltip text for when schedule publish fails */
-  'action.schedule-publish-error': undefined, // 'Failed to schedule publishing'
+  'action.schedule-publish-error': 'Nie udało się zaplanować publikacji',
   /** Tooltip text for when a document is scheduled for publishing */
-  'action.schedule-publish-success': undefined, // 'Document scheduled for publishing'
+  'action.schedule-publish-success': 'Dokument zaplanowany do publikacji',
   /** Tooltip description for when a document is scheduled for publishing */
-  'action.schedule-publish-success-description': undefined, // 'Publishing scheduled for {{publishAt}}'
+  'action.schedule-publish-success-description': 'Publikacja zaplanowana na {{publishAt}}',
   /** Tooltip text for when schedule publish is disabled due to cardinality one releases */
-  'action.schedule-publish.disabled.cardinality-one': undefined, // 'A Scheduled Draft for this document already exists.'
+  'action.schedule-publish.disabled.cardinality-one':
+    'Zaplanowany szkic dla tego dokumentu już istnieje.',
   /** Tooltip text for when schedule publish is disabled due to validation errors */
-  'action.schedule-publish.disabled.validation-issues': undefined, // 'Cannot Schedule Draft due to validation errors in the current draft.'
+  'action.schedule-publish.disabled.validation-issues':
+    'Nie można zaplanować szkicu z powodu błędów walidacji w bieżącym szkicu.',
 
   /** Empty state action documentation for scheduled drafts */
-  'empty-state.action.documentation': undefined, // 'Learn about scheduling'
+  'empty-state.action.documentation': 'Dowiedz się więcej o planowaniu',
   /** Empty state description for scheduled drafts */
-  'empty-state.description': undefined, // 'Schedule and lock draft documents for publishing at a future date and time.'
+  'empty-state.description':
+    'Planuj i blokuj szkice dokumentów do publikacji w przyszłej dacie i godzinie.',
   /** Empty state title for scheduled drafts */
-  'empty-state.title': undefined, // 'Scheduled Drafts'
+  'empty-state.title': 'Zaplanowane szkice',
 })
