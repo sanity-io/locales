@@ -172,7 +172,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Þessi tilvísun hefur verið fjarlægð síðan þú opnaðir hana.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Bæta við bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Bæta við útgáfu',
   /** The text that appears for the action button to add the current document to the global release */
@@ -473,7 +473,7 @@ export default removeUndefinedLocaleResources({
     'Engar innkomandi vísanir skilgreindar fyrir þessa gerð, sjá skjöl fyrir frekari upplýsingar.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Engar innkomnar tilvísanir fundust.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Engar vísanir af þessari gerð fundust.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -566,7 +566,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Leita í lista',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Þessi röðunarvalkostur notar reiti sem eru ekki hluti af þessari skjalagerð',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Upplýsingar',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -599,7 +600,7 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Skjalið var birt',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'Útgáfan var birt',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> var endurheimt',
