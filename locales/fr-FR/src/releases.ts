@@ -2,517 +2,561 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for adding a document to release */
-  'action.add-document': undefined, // 'Add document'
+  'action.add-document': 'Ajouter un document',
   /** Action text for archiving a release */
-  'action.archive': undefined, // 'Archive release'
+  'action.archive': 'Archiver la version',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': undefined, // 'Unschedule this release to archive it'
+  'action.archive.tooltip': "Déplanifiez cette version pour l'archiver",
   /** Action text for showing the archived releases */
-  'action.archived': undefined, // 'Archived'
+  'action.archived': 'Archivées',
   /** Menu item label for copying release ID */
-  'action.copy-release-id.label': undefined, // 'Copy release ID'
+  'action.copy-release-id.label': "Copier l'ID de la version",
   /** Menu item label for copying release URL */
-  'action.copy-release-link.label': undefined, // 'Copy release URL'
+  'action.copy-release-link.label': "Copier l'URL de la version",
   /** Menu item label for copying release title */
-  'action.copy-release-title.label': undefined, // 'Copy release title'
+  'action.copy-release-title.label': 'Copier le titre de la version',
   /** Tooltip for copy release actions button */
-  'action.copy-release.label': undefined, // 'Copy'
+  'action.copy-release.label': 'Copier',
   /** Action text for staging a new revert release */
-  'action.create-revert-release': undefined, // 'Create a new release'
+  'action.create-revert-release': 'Créer une nouvelle version',
   /** Action text for deleting a release */
-  'action.delete-release': undefined, // 'Delete release'
+  'action.delete-release': 'Supprimer la version',
   /** Menu item label for showing scheduled drafts */
-  'action.drafts': undefined, // 'Scheduled drafts'
+  'action.drafts': 'Brouillons planifiés',
   /** Action text for duplicating a release */
-  'action.duplicate-release': undefined, // 'Duplicate release'
+  'action.duplicate-release': 'Dupliquer la version',
   /** Action text for editing a release */
-  'action.edit': undefined, // 'Edit release'
+  'action.edit': 'Modifier la version',
   /** Action text for reverting a release immediately without staging changes */
-  'action.immediate-revert-release': undefined, // 'Revert now'
+  'action.immediate-revert-release': 'Rétablir maintenant',
   /** Action text for opening a release */
-  'action.open': undefined, // 'Active'
+  'action.open': 'Active',
   /** Action text for showing the paused scheduled drafts */
-  'action.paused': undefined, // 'Paused'
+  'action.paused': 'En pause',
   /** Action text for publishing all documents in a release (and the release itself) */
-  'action.publish-all-documents': undefined, // 'Run release'
+  'action.publish-all-documents': 'Exécuter la version',
   /** Menu item label for showing releases (multi-document releases) */
-  'action.releases': undefined, // 'Releases'
+  'action.releases': 'Versions',
   /** Action text for reverting a release */
-  'action.revert': undefined, // 'Revert release'
+  'action.revert': 'Rétablir la version',
   /** Action message for when document is scheduled for unpublishing a document and you want to no longer unpublish it */
-  'action.revert-unpublish-actions': undefined, // 'Revert unpublish when releasing'
+  'action.revert-unpublish-actions': 'Annuler la dépublication lors de la mise en ligne',
   /** Text for the review changes button in release tool */
-  'action.review': undefined, // 'Review changes'
+  'action.review': 'Examiner les modifications',
   /** Action text for scheduling a release */
-  'action.schedule': undefined, // 'Schedule release...'
+  'action.schedule': 'Planifier la version...',
   /** Action text for scheduling unpublish of a draft document */
-  'action.schedule-unpublish': undefined, // 'Schedule Unpublish'
+  'action.schedule-unpublish': 'Planifier la dépublication',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
-  'action.schedule-unpublish.disabled.not-published': undefined, // 'Document must be published to schedule unpublish'
+  'action.schedule-unpublish.disabled.not-published':
+    'Le document doit être publié pour planifier sa dépublication',
   /** Label for unarchiving a release */
-  'action.unarchive': undefined, // 'Unarchive release'
+  'action.unarchive': 'Désarchiver la version',
   /** Action text for unpublishing a document in a release in the context menu */
-  'action.unpublish': undefined, // 'Unpublish'
+  'action.unpublish': 'Dépublier',
   /** Action message for scheduling an unpublished of a document  */
-  'action.unpublish-doc-actions': undefined, // 'Unpublish when releasing'
+  'action.unpublish-doc-actions': 'Dépublier lors de la publication de la version',
   /** Action text for unscheduling a release */
-  'action.unschedule': undefined, // 'Unschedule release'
+  'action.unschedule': 'Annuler la planification de la version',
 
   /** Text for the summary button in release tool */
-  'actions.summary': undefined, // 'Summary'
+  'actions.summary': 'Résumé',
 
   /* The text for the activity event when a document is added to a release */
-  'activity.event.add-document': undefined, // 'Added a document version'
+  'activity.event.add-document': 'A ajouté une version de document',
   /* The text for the activity event when the release is archived */
-  'activity.event.archive': undefined, // 'Archived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.archive': 'A archivé la version <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is created */
-  'activity.event.create': undefined, // 'Created the <strong>{{releaseTitle}}</strong> release <ScheduleTarget>targeting </ScheduleTarget>'
+  'activity.event.create':
+    'A créé la version <strong>{{releaseTitle}}</strong> <ScheduleTarget>ciblant </ScheduleTarget>',
   /* The text for the activity event when a document is removed from a release */
-  'activity.event.discard-document': undefined, // 'Discarded a document version'
-  'activity.event.edit': undefined, // 'Set release time to <ScheduleTarget></ScheduleTarget>'
+  'activity.event.discard-document': 'A supprimé une version de document',
+  'activity.event.edit': "A défini l'heure de la version sur <ScheduleTarget></ScheduleTarget>",
   /**The text to display in the changes when the release type changes to asap */
-  'activity.event.edit-time-asap': undefined, // 'As soon as possible'
+  'activity.event.edit-time-asap': 'Dès que possible',
   /**The text to display in the changes when the release type changes to undecided */
-  'activity.event.edit-time-undecided': undefined, // 'Undecided'
+  'activity.event.edit-time-undecided': 'Indécis',
   /* The text for the activity event when the release is published */
-  'activity.event.publish': undefined, // 'Published the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.publish': 'A publié la version <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is scheduled */
-  'activity.event.schedule': undefined, // 'Marked as scheduled'
+  'activity.event.schedule': 'Marqué comme planifié',
   /** The text for the activity event when the release is unarchived */
-  'activity.event.unarchive': undefined, // 'Unarchived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.unarchive': 'A désarchivé la version <strong>{{releaseTitle}}</strong>',
   /** The text for the activity event when the release is unscheduled */
-  'activity.event.unschedule': undefined, // 'Marked as unscheduled'
+  'activity.event.unschedule': 'Marqué comme non planifié',
   /** The loading text for when releases are loading */
-  'activity.panel.error': undefined, // 'An error occurred getting the release activity'
+  'activity.panel.error':
+    "Une erreur s'est produite lors de la récupération de l'activité de la version",
   /** The loading text for when releases are loading */
-  'activity.panel.loading': undefined, // 'Loading release activity'
+  'activity.panel.loading': "Chargement de l'activité de la version",
   /** The title for the activity panel shown in the releases detail screen */
-  'activity.panel.title': undefined, // 'Activity'
+  'activity.panel.title': 'Activité',
 
   /** Label for the button to proceed with archiving a release */
-  'archive-dialog.confirm-archive-button': undefined, // 'Yes, archive release'
+  'archive-dialog.confirm-archive-button': 'Oui, archiver la version',
   /** Description for the dialog confirming the archive of a release with one document */
-  'archive-dialog.confirm-archive-description_one': undefined, // 'This will archive 1 document version.'
+  'archive-dialog.confirm-archive-description_one': 'Cela archivera 1 version de document.',
   /** Description for the dialog confirming the archive of a release with more than one document */
-  'archive-dialog.confirm-archive-description_other': undefined, // 'This will archive {{count}} document versions.'
+  'archive-dialog.confirm-archive-description_other':
+    'Cela archivera {{count}} versions de document.',
   /** Header for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-header': undefined, // 'Are you sure you want to archive this release?'
+  'archive-dialog.confirm-archive-header': 'Êtes-vous sûr de vouloir archiver cette version ?',
   /** Title for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-title': undefined, // 'Are you sure you want to archive the <strong>\'{{title}}\'</strong> release?'
+  'archive-dialog.confirm-archive-title':
+    "Êtes-vous sûr de vouloir archiver la version <strong>'{{title}}'</strong> ?",
 
   /** Description for information card on a published or archived release to description retention effects */
-  'archive-info.description': undefined, // 'It will be available for {{retentionDays}} days, then automatically removed on {{removalDate}}. <Link>Learn about retention</Link>.'
+  'archive-info.description':
+    'Elle sera disponible pendant {{retentionDays}} jours, puis automatiquement supprimée le {{removalDate}}. <Link>En savoir plus sur la rétention</Link>.',
   /** Title for information card on a archived release */
-  'archive-info.title': undefined, // 'This release is archived'
+  'archive-info.title': 'Cette version est archivée',
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
-  'banner.confirm-active-scheduled-drafts_one': undefined, // 'There is {{count}} Scheduled Draft that requires scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_one':
+    'Il y a {{count}} Scheduled Draft qui nécessite une confirmation de planification',
   /** Banner text showing count of active scheduled drafts requiring confirmation with multiple drafts */
-  'banner.confirm-active-scheduled-drafts_other': undefined, // 'There are {{count}} Scheduled Drafts that require scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_other':
+    'Il y a {{count}} Scheduled Drafts qui nécessitent une confirmation de planification',
   /** Button text for confirming scheduling of active drafts */
-  'banner.confirm-active-scheduled-drafts.button': undefined, // 'Resume scheduling'
+  'banner.confirm-active-scheduled-drafts.button': 'Reprendre la planification',
   /** Button text when confirming schedules from paused mode */
-  'banner.confirm-active-scheduled-drafts.button-paused': undefined, // 'Resume all schedules'
+  'banner.confirm-active-scheduled-drafts.button-paused': 'Reprendre toutes les planifications',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
-  'banner.drafts-mode-disabled': undefined, // 'Drafts mode has been disabled but there are still scheduled drafts to be published.'
+  'banner.drafts-mode-disabled':
+    'Le mode Drafts a été désactivé, mais il reste encore des Scheduled Drafts à publier.',
   /** Banner text shown when navigating to a release that does not exist */
-  'banner.release-not-found': undefined, // 'This release could not be found'
+  'banner.release-not-found': 'Cette release est introuvable',
   /** Tooltip for the dismiss button in the release not found banner */
-  'banner.release-not-found.dismiss': undefined, // 'Dismiss'
+  'banner.release-not-found.dismiss': 'Ignorer',
   /** Banner text shown when scheduled drafts feature is disabled but there are still scheduled drafts */
-  'banner.scheduled-drafts-disabled': undefined, // 'Scheduled drafts has been disabled but there are still scheduled drafts to be published.'
+  'banner.scheduled-drafts-disabled':
+    'Les Scheduled Drafts ont été désactivés, mais il reste encore des Scheduled Drafts à publier.',
 
   /** Title for changes to published documents */
-  'changes-published-docs.title': undefined, // 'Changes to published documents'
+  'changes-published-docs.title': 'Modifications des documents publiés',
 
   /** Dialog confirm button text for confirming all scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.confirm-button': undefined, // 'Confirm Schedules'
+  'confirm-active-scheduled-drafts-dialog.confirm-button': 'Confirmer les planifications',
   /** Dialog description for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.description': undefined, // 'Schedule all paused Scheduled Drafts for their intended publish dates'
+  'confirm-active-scheduled-drafts-dialog.description':
+    'Planifier tous les Scheduled Drafts mis en pause pour leurs dates de publication prévues',
   /** Dialog warning when some scheduled drafts have past dates */
-  'confirm-active-scheduled-drafts-dialog.past-dates-warning': undefined, // 'Some of these Scheduled Drafts are scheduled for past dates. Confirming schedules will immediately publish those versions of documents.'
+  'confirm-active-scheduled-drafts-dialog.past-dates-warning':
+    'Certains de ces Scheduled Drafts sont planifiés pour des dates passées. La confirmation des planifications publiera immédiatement ces versions de documents.',
   /** Dialog title for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.title': undefined, // 'Resume Scheduled Drafts'
+  'confirm-active-scheduled-drafts-dialog.title': 'Reprendre les Scheduled Drafts',
 
   /** Suffix for when a release is a copy of another release */
-  'copy-suffix': undefined, // 'Copy'
+  'copy-suffix': 'Copie',
 
   /** Confirm button text for overriding existing draft */
-  'copy-to-draft-dialog.confirm-button': undefined, // 'Yes, override Draft'
+  'copy-to-draft-dialog.confirm-button': 'Oui, remplacer le Draft',
   /** Description for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.description': undefined, // 'A draft version of this document already exists. Copy the current version to the draft and override the existing draft version.'
+  'copy-to-draft-dialog.description':
+    'Une version draft de ce document existe déjà. Copiez la version actuelle dans le draft et remplacez la version draft existante.',
   /** Title for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.title': undefined, // 'Draft version already exists'
+  'copy-to-draft-dialog.title': 'La version draft existe déjà',
 
   /** Text for when a release / document was created */
-  created: undefined, // 'Created <RelativeTime/>'
+  created: 'Créé <RelativeTime/>',
 
   /** Activity inspector button text */
-  'dashboard.details.activity': undefined, // 'Activity'
+  'dashboard.details.activity': 'Activité',
   /** Text for the releases detail screen in the pin release button. */
-  'dashboard.details.pin-release': undefined, // 'Pin release to studio'
+  'dashboard.details.pin-release': 'Épingler la release au studio',
   /** Text for the releases detail screen when a release was published ASAP */
-  'dashboard.details.published-asap': undefined, // 'Published'
+  'dashboard.details.published-asap': 'Publié',
   /** Text for the releases detail screen when a release was published from scheduling */
-  'dashboard.details.published-on': undefined, // 'Published on {{date}}'
+  'dashboard.details.published-on': 'Publié le {{date}}',
   /** Text for the releases detail screen in the unpin release button. */
-  'dashboard.details.unpin-release': undefined, // 'Unpin release from studio'
+  'dashboard.details.unpin-release': 'Désépingler la release du studio',
 
   /** Label for the button to proceed deleting a release */
-  'delete-dialog.confirm-delete-button': undefined, // 'Yes, delete release'
+  'delete-dialog.confirm-delete-button': 'Oui, supprimer la release',
   /** Description for the dialog confirming the deleting of a release with one document */
-  'delete-dialog.confirm-delete-description_one': undefined, // 'This will delete 1 document version.'
+  'delete-dialog.confirm-delete-description_one': 'Cela supprimera 1 version de document.',
   /** Description for the dialog confirming the deleting of a release with more than one document */
-  'delete-dialog.confirm-delete-description_other': undefined, // 'This will delete {{count}} document versions.'
+  'delete-dialog.confirm-delete-description_other':
+    'Cela supprimera {{count}} versions de documents.',
   /** Header for deleting a release dialog */
-  'delete-dialog.confirm-delete.header': undefined, // 'Are you sure you want to delete this release?'
+  'delete-dialog.confirm-delete.header': 'Êtes-vous sûr de vouloir supprimer cette release ?',
 
   /** Label when a release has been deleted by a different user */
-  'deleted-release': undefined, // 'The \'<strong>{{title}}</strong>\' release has been deleted'
+  'deleted-release': "La release '<strong>{{title}}</strong>' a été supprimée",
 
   /** Text for when there's no changes in a release diff */
-  'diff.list-empty': undefined, // 'Changes list is empty, see document'
+  'diff.list-empty': 'La liste des modifications est vide, voir le document',
   /** Text for when there's no changes in a release diff */
-  'diff.no-changes': undefined, // 'No changes'
+  'diff.no-changes': 'Aucune modification',
 
   /** Description for discarding a draft of a document dialog */
-  'discard-version-dialog.description-draft': undefined, // 'This will permanently remove all changes made to this document. This action cannot be undone.'
+  'discard-version-dialog.description-draft':
+    'Cela supprimera définitivement toutes les modifications apportées à ce document. Cette action est irréversible.',
   /** Description for discarding a version of a document dialog */
-  'discard-version-dialog.description-release': undefined, // 'This will permanently remove all changes made to this document within the \'<strong>{{releaseTitle}}</strong>\' release. This action cannot be undone.'
+  'discard-version-dialog.description-release':
+    "Cela supprimera définitivement toutes les modifications apportées à ce document dans la release '<strong>{{releaseTitle}}</strong>'. Cette action est irréversible.",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.header-draft': undefined, // 'Discard draft?'
+  'discard-version-dialog.header-draft': 'Abandonner le brouillon ?',
   /** Header for discarding a version from a release of a document dialog */
-  'discard-version-dialog.header-release': undefined, // 'Remove document from the \'<strong>{{releaseTitle}}</strong>\' release?'
+  'discard-version-dialog.header-release':
+    "Retirer le document de la release '<strong>{{releaseTitle}}</strong>' ?",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.title-draft': undefined, // 'Discard draft'
+  'discard-version-dialog.title-draft': 'Abandonner le brouillon',
   /** Title for dialog for discarding a version of a document */
-  'discard-version-dialog.title-release': undefined, // 'Remove from release'
+  'discard-version-dialog.title-release': 'Retirer de la release',
 
   /** Label for when a document in a release has a single validation warning */
-  'document-validation.error_one': undefined, // '{{count}} validation error'
+  'document-validation.error_one': '{{count}} erreur de validation',
   /** Label for when a document in a release has multiple validation warnings */
-  'document-validation.error_other': undefined, // '{{count}} validation errors'
+  'document-validation.error_other': '{{count}} erreurs de validation',
 
   /** Label for the button to proceed with duplicating a release */
-  'duplicate-dialog.confirm-duplicate-button': undefined, // 'Yes, duplicate release'
+  'duplicate-dialog.confirm-duplicate-button': 'Oui, dupliquer la release',
   /** Description for the dialog confirming the duplicate of a release with one document */
-  'duplicate-dialog.confirm-duplicate-description_one': undefined, // 'This will duplicate the release and the 1 document version.'
+  'duplicate-dialog.confirm-duplicate-description_one':
+    'Cela dupliquera la release et la 1 version de document.',
   /** Description for the dialog confirming the duplicate of a release with more than one document */
-  'duplicate-dialog.confirm-duplicate-description_other': undefined, // 'This will duplicate the release and the {{count}} document versions.'
+  'duplicate-dialog.confirm-duplicate-description_other':
+    'Cela dupliquera la release et les {{count}} versions de documents.',
   /** Header for the dialog confirming the duplicate of a release */
-  'duplicate-dialog.confirm-duplicate-header': undefined, // 'Are you sure you want to duplicate this release?'
+  'duplicate-dialog.confirm-duplicate-header': 'Êtes-vous sûr de vouloir dupliquer cette release ?',
 
   /** Title text displayed for technical error details */
-  'error-details-title': undefined, // 'Error details'
+  'error-details-title': "Détails de l'erreur",
 
   /** Title text when error during release update */
-  'failed-edit-title': undefined, // 'Failed to save changes'
+  'failed-edit-title': "Échec de l'enregistrement des modifications",
 
   /** Title text displayed for releases that failed to publish  */
-  'failed-publish-title': undefined, // 'Failed to publish'
+  'failed-publish-title': 'Échec de la publication',
 
   /** Title text displayed for releases that failed to schedule  */
-  'failed-schedule-title': undefined, // 'Failed to schedule'
+  'failed-schedule-title': 'Échec de la planification',
 
   /** Filter tab label for all documents */
-  'filter-tab.all': undefined, // 'All'
+  'filter-tab.all': 'Tous',
   /** Filter tab label for documents with validation errors */
-  'filter-tab.errors': undefined, // 'Errors'
+  'filter-tab.errors': 'Erreurs',
 
   /**The text that will be shown in the footer to indicate the time the release was archived */
-  'footer.status.archived': undefined, // 'Archived'
+  'footer.status.archived': 'Archivée',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.created': undefined, // 'Created'
+  'footer.status.created': 'Créée',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.edited': undefined, // 'Edited'
+  'footer.status.edited': 'Modifié',
   /**The text that will be shown in the footer to indicate the time the release was published */
-  'footer.status.published': undefined, // 'Published'
+  'footer.status.published': 'Publié',
   /**The text that will be shown in the footer to indicate the time the release was unarchived */
-  'footer.status.unarchived': undefined, // 'Unarchived'
+  'footer.status.unarchived': 'Désarchivé',
 
   /** Label text for the loading state whilst release is being loaded */
-  'loading-release': undefined, // 'Loading release'
+  'loading-release': 'Chargement de la version',
 
   /** Text for when documents of a release are loading */
-  'loading-release-documents': undefined, // 'Loading documents'
+  'loading-release-documents': 'Chargement des documents',
   /** Description text for when loading documents on a release failed */
-  'loading-release-documents.error.description': undefined, // 'We\'re unable to load the documents for this release. Please try again later.'
+  'loading-release-documents.error.description':
+    'Nous ne sommes pas en mesure de charger les documents pour cette version. Veuillez réessayer ultérieurement.',
   /** Title text for when loading documents on a release failed */
-  'loading-release-documents.error.title': undefined, // 'Something went wrong'
+  'loading-release-documents.error.title': "Une erreur s'est produite",
 
   /** Label for title of actions for "when releasing" */
-  'menu.group.when-releasing': undefined, // 'When releasing'
+  'menu.group.when-releasing': 'Lors de la publication',
   /** Label for the release menu */
-  'menu.label': undefined, // 'Release menu'
+  'menu.label': 'Menu de la version',
   /** Tooltip for the release menu */
-  'menu.tooltip': undefined, // 'Actions'
+  'menu.tooltip': 'Actions',
 
   /** Text for when no archived releases are found */
-  'no-archived-release': undefined, // 'No archived releases'
+  'no-archived-release': 'Aucune version archivée',
 
   /** Tooltip text when there are no paused scheduled drafts */
-  'no-paused-release': undefined, // 'No paused scheduled drafts'
+  'no-paused-release': 'Aucun brouillon planifié en pause',
 
   /** Text for when no releases are found */
-  'no-releases': undefined, // 'No Releases'
+  'no-releases': 'Aucune version',
 
   /** Text for when no scheduled drafts are found */
-  'no-scheduled-drafts': undefined, // 'No Scheduled Drafts'
+  'no-scheduled-drafts': 'Aucun brouillon planifié',
 
   /** Text for the button name for the release tool */
-  'overview.action.documentation': undefined, // 'Documentation'
+  'overview.action.documentation': 'Documentation',
   /** Tooltip for the calendar button in the release overview */
-  'overview.calendar.tooltip': undefined, // 'View calendar'
+  'overview.calendar.tooltip': 'Voir le calendrier',
   /** Description for the release tool */
-  'overview.description': undefined, // 'Releases are collections of document changes which can be managed, scheduled, and rolled back together.'
+  'overview.description':
+    'Les versions sont des collections de modifications de documents qui peuvent être gérées, planifiées et annulées ensemble.',
   /** Text for the placeholder in the search release input  */
-  'overview.search-releases-placeholder': undefined, // 'Search releases'
+  'overview.search-releases-placeholder': 'Rechercher des versions',
   /** Title for the release tool */
-  'overview.title': undefined, // 'Releases'
+  'overview.title': 'Versions',
 
   /** Tooltip text for releases that have passed their intended publish date */
-  'passed-intended-publish-date': undefined, // 'This release has passed its intended publish date'
+  'passed-intended-publish-date': 'Cette version a dépassé sa date de publication prévue',
 
   /** Tooltip text for scheduled drafts that have passed their intended publish date */
-  'passed-intended-publish-date-draft': undefined, // 'This draft has passed its intended publish date'
+  'passed-intended-publish-date-draft': 'Ce brouillon a dépassé sa date de publication prévue',
 
   /** Description for when a user doesn't have publish or schedule releases */
-  'permission-missing-description': undefined, // 'Your role currently limits what you can see in this release. You may not publish nor schedule this release.'
+  'permission-missing-description':
+    'Votre rôle limite actuellement ce que vous pouvez voir dans cette version. Vous ne pouvez ni publier ni planifier cette version.',
 
   /** Text for when a user doesn't have publish or schedule releases */
-  'permission-missing-title': undefined, // 'Limited access'
+  'permission-missing-title': 'Accès limité',
 
   /** Tooltip label when the user doesn't have permission to archive release */
-  'permissions.error.archive': undefined, // 'You do not have permission to archive this release'
+  'permissions.error.archive': "Vous n'avez pas la permission d'archiver cette version",
   /** Tooltip label when the user doesn't have permission to delete release */
-  'permissions.error.delete': undefined, // 'You do not have permission to delete this release'
+  'permissions.error.delete': "Vous n'avez pas la permission de supprimer cette version",
   /** Tooltip label when the user doesn't have permission for discarding a version */
-  'permissions.error.discard-version': undefined, // 'You do not have permission to discard this version'
+  'permissions.error.discard-version': "Vous n'avez pas la permission de supprimer cette version",
   /** Tooltip label when the user doesn't have permission to duplicate release */
-  'permissions.error.duplicate': undefined, // 'You do not have permission to duplicate this release'
+  'permissions.error.duplicate': "Vous n'avez pas la permission de dupliquer cette release",
   /** Tooltip label when the user doesn't have permission to unarchive release */
-  'permissions.error.unarchive': undefined, // 'You do not have permission to unarchive this release'
+  'permissions.error.unarchive': "Vous n'avez pas la permission de désarchiver cette release",
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
-  'permissions.error.unpublish': undefined, // 'You do not have permission to unpublish this document'
+  'permissions.error.unpublish': "Vous n'avez pas la permission de dépublier ce document",
 
   /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  'presence.tooltip.one':
+    '{{displayName}} est en train de modifier ce document dans la release « {{releaseTitle}} » en ce moment',
 
   /** Tooltip text for publish release action when there are no documents */
-  'publish-action.validation.no-documents': undefined, // 'There are no documents to publish'
+  'publish-action.validation.no-documents': "Il n'y a aucun document à publier",
 
   /** Description for the dialog confirming the publish of a release with one document */
-  'publish-dialog.confirm-publish-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published.'
+  'publish-dialog.confirm-publish-description_one':
+    "La release '<strong>{{title}}</strong>' et son document seront publiés.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
-  'publish-dialog.confirm-publish-description_other': undefined, // 'The \'<strong>{{title}}</strong>\' release and its {{releaseDocumentsLength}} documents will be published.'
+  'publish-dialog.confirm-publish-description_other':
+    "La release '<strong>{{title}}</strong>' et ses {{releaseDocumentsLength}} documents seront publiés.",
   /** Title for the dialog confirming the publish of a release */
-  'publish-dialog.confirm-publish.title': undefined, // 'Are you sure you want to publish the release and all document versions?'
+  'publish-dialog.confirm-publish.title':
+    'Êtes-vous sûr de vouloir publier la release et toutes les versions des documents ?',
   /** Label for when documents in release have validation errors */
-  'publish-dialog.validation.error': undefined, // 'Some documents have validation errors'
+  'publish-dialog.validation.error': 'Certains documents contiennent des erreurs de validation',
   /** Label for when documents are being validated */
-  'publish-dialog.validation.loading': undefined, // 'Validating documents...'
+  'publish-dialog.validation.loading': 'Validation des documents en cours...',
   /** Label for the button when the user doesn't have permissions to publish a release */
-  'publish-dialog.validation.no-permission': undefined, // 'You do not have permission to publish'
+  'publish-dialog.validation.no-permission': "Vous n'avez pas la permission de publier",
 
   /** Title for information card on a published release */
-  'publish-info.title': undefined, // 'This release is published successfully.'
+  'publish-info.title': 'Cette release a été publiée avec succès.',
 
   /** Placeholder title for a release with no title */
-  'release-placeholder.title': undefined, // 'Untitled'
+  'release-placeholder.title': 'Sans titre',
 
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_one': undefined, // 'This will revert {{releaseDocumentsLength}} document version.'
+  'revert-dialog.confirm-revert-description_one':
+    'Cela annulera {{releaseDocumentsLength}} version de document.',
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_other': undefined, // 'This will revert {{releaseDocumentsLength}} document versions.'
+  'revert-dialog.confirm-revert-description_other':
+    'Cela annulera {{releaseDocumentsLength}} versions de documents.',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
-  'revert-dialog.confirm-revert.stage-revert-checkbox-label': undefined, // 'Immediately revert the release'
+  'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Annuler immédiatement la release',
   /** Title for the dialog confirming the revert of a release */
-  'revert-dialog.confirm-revert.title': undefined, // 'Are you sure you want to revert the \'{{title}}\' release?'
+  'revert-dialog.confirm-revert.title':
+    'Êtes-vous sûr de vouloir annuler la release « {{title}} » ?',
   /** Warning card text for when immediately revert a release with history */
-  'revert-dialog.confirm-revert.warning-card': undefined, // 'Changes were made to documents in this release after they were published. Reverting will overwrite these changes.'
+  'revert-dialog.confirm-revert.warning-card':
+    "Des modifications ont été apportées aux documents de cette release après leur publication. L'annulation écrasera ces modifications.",
 
   /** Description of a reverted release */
-  'revert-release.description': undefined, // 'Revert changes to document versions in "{{title}}".'
+  'revert-release.description':
+    'Annuler les modifications apportées aux versions des documents dans « {{title}} ».',
   /** Title of a reverted release */
-  'revert-release.title': undefined, // 'Reverting "{{title}}"'
+  'revert-release.title': 'Annulation de « {{title}} »',
 
   /** Description for the review changes button in release tool */
-  'review.description': undefined, // 'Add documents to this release to review changes'
+  'review.description': 'Ajoutez des documents à cette release pour examiner les modifications',
   /** Text for when a document is edited */
-  'review.edited': undefined, // 'Edited <RelativeTime/>'
+  'review.edited': 'Modifié <RelativeTime/>',
 
   /** Schedule release button tooltip when there are no documents to schedule */
-  'schedule-action.validation.no-documents': undefined, // 'There are no documents to schedule'
+  'schedule-action.validation.no-documents': "Il n'y a aucun document à planifier",
 
   /** Schedule release button tooltip when the release is already scheduled */
-  'schedule-button-tooltip.already-scheduled': undefined, // 'This release is already scheduled'
+  'schedule-button-tooltip.already-scheduled': 'Cette release est déjà planifiée',
   /** Schedule release button tooltip when there are validation errors */
-  'schedule-button-tooltip.validation.error': undefined, // 'Some documents have validation errors'
+  'schedule-button-tooltip.validation.error':
+    'Certains documents contiennent des erreurs de validation',
   /** Schedule release button tooltip when validation is loading */
-  'schedule-button-tooltip.validation.loading': undefined, // 'Validating documents...'
+  'schedule-button-tooltip.validation.loading': 'Validation des documents en cours...',
   /** Schedule release button tooltip when user has no permissions to schedule */
-  'schedule-button-tooltip.validation.no-permission': undefined, // 'You do not have permission to schedule'
+  'schedule-button-tooltip.validation.no-permission': "Vous n'avez pas la permission de planifier",
 
   /** Title of unschedule release dialog */
-  'schedule-button.tooltip': undefined, // 'Are you sure you want to unschedule the release?'
+  'schedule-button.tooltip': 'Êtes-vous sûr de vouloir annuler la planification de la version ?',
 
   /** Description for the confirm button for scheduling a release */
-  'schedule-dialog.confirm-button': undefined, // 'Yes, schedule'
+  'schedule-dialog.confirm-button': 'Oui, planifier',
   /** Description shown in unschedule relaease dialog */
-  'schedule-dialog.confirm-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published on the selected date.'
+  'schedule-dialog.confirm-description_one':
+    "La version '<strong>{{title}}</strong>' et son document seront publiés à la date sélectionnée.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
-  'schedule-dialog.confirm-description_other': undefined, // 'The <strong>{{title}}</strong> release and its {{count}} document versions will be scheduled.'
+  'schedule-dialog.confirm-description_other':
+    'La version <strong>{{title}}</strong> et ses {{count}} versions de documents seront planifiées.',
   /** Title for unschedule release dialog */
-  'schedule-dialog.confirm-title': undefined, // 'Schedule the release'
+  'schedule-dialog.confirm-title': 'Planifier la version',
   /** Description for warning that the published schedule time is in the past */
-  'schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'schedule-dialog.publish-date-in-past-warning': 'Planifiez pour une date et une heure futures.',
   /** Label for date picker when scheduling a release */
-  'schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
+  'schedule-dialog.select-publish-date-label': 'Planifier le',
 
   /** Confirm button text for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.confirm': undefined, // 'Schedule Unpublish'
+  'schedule-unpublish-dialog.confirm': 'Planifier la dépublication',
   /** Description for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.description': undefined, // 'Select when this document should be unpublished.'
+  'schedule-unpublish-dialog.description': 'Sélectionnez quand ce document doit être dépublié.',
   /** Header for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.header': undefined, // 'Schedule draft for Unpublish'
+  'schedule-unpublish-dialog.header': 'Planifier le brouillon pour la dépublication',
 
   /** Placeholder for search of documents in a release */
-  'search-documents-placeholder': undefined, // 'Search documents'
+  'search-documents-placeholder': 'Rechercher des documents',
 
   /** Text for when the release has no errors found */
-  'summary.all-documents-errors-found': undefined, // 'All documents validated, issues found'
+  'summary.all-documents-errors-found': 'Tous les documents validés, des problèmes ont été trouvés',
   /** Text for when the release has validated all documents */
-  'summary.all-documents-validated': undefined, // 'All documents validated, no issues found'
+  'summary.all-documents-validated': 'Tous les documents validés, aucun problème trouvé',
   /** Text for when the release was created */
-  'summary.created': undefined, // 'Created <RelativeTime/>'
+  'summary.created': 'Créé <RelativeTime/>',
   /** Text for when the release is composed of one document */
-  'summary.document-count_one': undefined, // '{{count}} document'
+  'summary.document-count_one': '{{count}} document',
   /** Text for when the release is composed of multiple documents */
-  'summary.document-count_other': undefined, // '{{count}} documents'
+  'summary.document-count_other': '{{count}} documents',
   /** Text for when the release has some errors found */
-  'summary.errors-found': undefined, // 'In order to publish or schedule the release, please resolve the issues found in the documents'
+  'summary.errors-found':
+    'Afin de publier ou de planifier la version, veuillez résoudre les problèmes trouvés dans les documents',
   /** Text for when the release has no documents */
-  'summary.no-documents': undefined, // 'No documents'
+  'summary.no-documents': 'Aucun document',
   /** Description for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.description': undefined, // 'This scheduled draft does not contain a document. It may have been removed.'
+  'summary.no-documents-cardinality-one.description':
+    'Ce brouillon planifié ne contient pas de document. Il a peut-être été supprimé.',
   /** Title for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.title': undefined, // 'No document in this release'
+  'summary.no-documents-cardinality-one.title': 'Aucun document dans cette version',
   /** Text for when the release has not published */
-  'summary.not-published': undefined, // 'Not published'
+  'summary.not-published': 'Non publié',
   /** Text for when the release was published */
-  'summary.published': undefined, // 'Published <RelativeTime/>'
+  'summary.published': 'Publié <RelativeTime/>',
   /** Text for when the release has validated documents */
-  'summary.validated-documents': undefined, // '{{validatedCount}} of {{totalCount}} documents validated'
+  'summary.validated-documents': '{{validatedCount}} sur {{totalCount}} documents validés',
   /** Text for validation loading indicator */
-  'summary.validating-documents': undefined, // 'Validating documents: {{validatedCount}} of {{totalCount}}'
+  'summary.validating-documents':
+    'Validation des documents : {{validatedCount}} sur {{totalCount}}',
 
   /** add action type that will be shown in the table*/
-  'table-body.action.add': undefined, // 'Add'
+  'table-body.action.add': 'Ajouter',
   /** Change action type that will be shown in the table*/
-  'table-body.action.change': undefined, // 'Change'
+  'table-body.action.change': 'Modifier',
   /** Change action type that will be shown in the table*/
-  'table-body.action.unpublish': undefined, // 'Unpublish'
+  'table-body.action.unpublish': 'Dépublier',
 
   /** Header for the document table in the release tool - action */
-  'table-header.action': undefined, // 'Action'
+  'table-header.action': 'Action',
   /** Header for the document table in the release tool - Archived */
-  'table-header.archivedAt': undefined, // 'Archived'
+  'table-header.archivedAt': 'Archivé',
   /** Header for the document table in the release tool - contributors */
-  'table-header.contributors': undefined, // 'Contributors'
+  'table-header.contributors': 'Contributeurs',
   /** Header for the document table in the release tool - created by */
-  'table-header.created-by': undefined, // 'Created by'
+  'table-header.created-by': 'Créé par',
   /** Header for the document table in the release tool - document preview */
-  'table-header.document': undefined, // 'Document'
+  'table-header.document': 'Document',
   /** Header for the document table in the release tool - title */
-  'table-header.documents': undefined, // 'Documents'
+  'table-header.documents': 'Documents',
   /** Header for the document table in the release tool - edited */
-  'table-header.edited': undefined, // 'Edited'
+  'table-header.edited': 'Modifié',
   /** Header for the paused scheduled drafts table - intended for */
-  'table-header.intended-for': undefined, // 'Intended for'
+  'table-header.intended-for': 'Destiné à',
   /** Header for the document table in the release tool - Published */
-  'table-header.published-at': undefined, // 'Published'
+  'table-header.published-at': 'Publié',
   /** Header for the document table in the release tool - Published */
-  'table-header.publishedAt': undefined, // 'Published'
+  'table-header.publishedAt': 'Publié',
   /** Header for the scheduled drafts document table in the release tool - published at */
-  'table-header.scheduled-draft.published-at': undefined, // 'Published at'
+  'table-header.scheduled-draft.published-at': 'Publié le',
   /** Header for the scheduled drafts document table in the release tool - scheduled for */
-  'table-header.scheduled-for': undefined, // 'Scheduled for'
+  'table-header.scheduled-for': 'Planifié pour',
   /** Header for the document table in the release tool - time */
-  'table-header.time': undefined, // 'Time'
+  'table-header.time': 'Heure',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': undefined, // 'Release'
+  'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
-  'table-header.type': undefined, // 'Type'
+  'table-header.type': 'Type',
   /** Header for the document table in the release tool - when */
-  'table-header.when': undefined, // 'When'
+  'table-header.when': 'Quand',
 
   /** Text for the release time label for scheduled releases  which has not been scheduled yet*/
-  'time.estimated': undefined, // 'Estimated'
+  'time.estimated': 'Estimé',
   /** Text for the release time label for scheduled releases  which has been scheduled*/
-  'time.scheduled': undefined, // 'Scheduled'
+  'time.scheduled': 'Planifié',
 
   /** Text for toast when release failed to archive */
-  'toast.archive.error': undefined, // 'Failed to archive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.archive.error': "Échec de l'archivage de « <strong>{{title}}</strong> » : {{error}}",
   /** Toast error message when bulk scheduling of active drafts fails */
-  'toast.confirm-active-scheduled-drafts.error': undefined, // 'Failed to schedule drafts: {{error}}'
+  'toast.confirm-active-scheduled-drafts.error':
+    'Échec de la planification des brouillons : {{error}}',
   /** Toast message after copying release ID */
-  'toast.copy-release-id.success': undefined, // 'Release ID copied to clipboard'
+  'toast.copy-release-id.success': 'ID de version copié dans le presse-papiers',
   /** Toast message after copying release link */
-  'toast.copy-release-link.success': undefined, // 'Release link copied to clipboard'
+  'toast.copy-release-link.success': 'Lien de version copié dans le presse-papiers',
   /** Toast message after copying release title */
-  'toast.copy-release-title.success': undefined, // 'Release title copied to clipboard'
+  'toast.copy-release-title.success': 'Titre de version copié dans le presse-papiers',
   /** Description for toast when creating new version of document in release failed */
-  'toast.create-version.error': undefined, // 'Failed to add document to release: {{error}}'
+  'toast.create-version.error': "Échec de l'ajout du document à la version : {{error}}",
   /** Description for toast when release deletion failed */
-  'toast.delete.error': undefined, // 'Failed to delete \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.delete.error': 'Échec de la suppression de « <strong>{{title}}</strong> » : {{error}}',
   /** Description for toast when release is successfully deleted */
-  'toast.delete.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was successfully deleted'
+  'toast.delete.success': 'La version « <strong>{{title}}</strong> » a été supprimée avec succès',
   /** Description for toast when release duplication failed */
-  'toast.duplicate.error': undefined, // 'Failed to duplicate \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.duplicate.error': 'Échec de la duplication de « <strong>{{title}}</strong> » : {{error}}',
   /** Description for toast when release is successfully duplicated */
-  'toast.duplicate.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was duplicated. <Link/>'
+  'toast.duplicate.success': 'La version « <strong>{{title}}</strong> » a été dupliquée. <Link/>',
   /** Link text for toast link to the duplicated release */
-  'toast.duplicate.success-link': undefined, // 'View duplicated release'
+  'toast.duplicate.success-link': 'Voir la version dupliquée',
   /** Text for toast when release has been reverted immediately */
-  'toast.immediate-revert.success': undefined, // 'The \'{{title}}\' release was successfully reverted'
+  'toast.immediate-revert.success': 'La version « {{title}} » a été rétablie avec succès',
   /** Text for toast when release failed to publish */
-  'toast.publish.error': undefined, // 'Failed to publish \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.publish.error': 'Échec de la publication de « <strong>{{title}}</strong> » : {{error}}',
   /** Text for toast when release has reverted release successfully staged */
-  'toast.revert-stage.success': undefined, // 'Revert release for \'{{title}}\' was successfully created. <Link/>'
+  'toast.revert-stage.success':
+    'La version de rétablissement pour « {{title}} » a été créée avec succès. <Link/>',
   /** Link text for toast link to the generated revert release */
-  'toast.revert-stage.success-link': undefined, // 'View revert release'
+  'toast.revert-stage.success-link': 'Voir la version de rétablissement',
   /** Text for toast when release failed to revert */
-  'toast.revert.error': undefined, // 'Failed to revert release: {{error}}'
+  'toast.revert.error': 'Échec du rétablissement de la version : {{error}}',
   /** Text for toast when release failed to schedule */
-  'toast.schedule.error': undefined, // 'Failed to schedule \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.schedule.error': 'Échec de la planification de « <strong>{{title}}</strong> » : {{error}}',
   /** Text for toast when release has been scheduled */
-  'toast.schedule.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was scheduled.'
+  'toast.schedule.success': 'La version « <strong>{{title}}</strong> » a été planifiée.',
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error': undefined, // 'Failed to unarchive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unarchive.error': 'Échec du désarchivage de « <strong>{{title}}</strong> » : {{error}}',
   /** Text for toast when release failed to unschedule */
-  'toast.unschedule.error': undefined, // 'Failed to unscheduled \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unschedule.error':
+    'Échec de la déplanification de « <strong>{{title}}</strong> » : {{error}}',
 
   /** Text for tooltip when a release has been scheduled */
-  'type-picker.tooltip.scheduled': undefined, // 'The release is scheduled, unschedule it to change type'
+  'type-picker.tooltip.scheduled': 'La version est planifiée, déplanifiez-la pour changer de type',
 
   /** Text action in unpublish dialog to cancel */
-  'unpublish-dialog.action.cancel': undefined, // 'Cancel'
+  'unpublish-dialog.action.cancel': 'Annuler',
   /** Text action in unpublish dialog to unpublish */
-  'unpublish-dialog.action.unpublish': undefined, // 'Yes, unpublish when releasing'
+  'unpublish-dialog.action.unpublish': 'Oui, dépublier lors de la publication de la version',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
-  'unpublish-dialog.description.lost-changes': undefined, // 'Any changes made to this document version will be lost.'
+  'unpublish-dialog.description.lost-changes':
+    'Toute modification apportée à cette version du document sera perdue.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
-  'unpublish-dialog.description.to-draft': undefined, // 'This will unpublish the document as part of the <Label>{{title}}</Label> release, and create a draft if no draft exists at the time of release.'
+  'unpublish-dialog.description.to-draft':
+    "Cela dépubliera le document dans le cadre de la version <Label>{{title}}</Label>, et créera un brouillon si aucun brouillon n'existe au moment de la publication de la version.",
   /** Title for the dialog confirming the unpublish of a release */
-  'unpublish-dialog.header': undefined, // 'Are you sure you want to unpublish this document when releasing?'
+  'unpublish-dialog.header':
+    'Êtes-vous sûr de vouloir dépublier ce document lors de la publication de la version ?',
 
   /** Text for when a document is unpublished */
-  'unpublish.already-unpublished': undefined, // 'This document is already unpublished.'
+  'unpublish.already-unpublished': 'Ce document est déjà dépublié.',
   /** Tooltip label for when a document is unpublished */
-  'unpublish.no-published-version': undefined, // 'There is no published version of this document.'
+  'unpublish.no-published-version': "Il n'existe pas de version publiée de ce document.",
 
   /** Description shown in unschedule relaease dialog */
-  'unschedule-dialog.confirm-description': undefined, // 'The release will no longer be published on the scheduled date'
+  'unschedule-dialog.confirm-description': 'La release ne sera plus publiée à la date prévue.',
   /** Title for unschedule release dialog */
-  'unschedule-dialog.confirm-title': undefined, // 'Are you sure you want to unschedule the release?'
+  'unschedule-dialog.confirm-title':
+    'Êtes-vous sûr de vouloir annuler la planification de la release ?',
 })
