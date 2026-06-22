@@ -5,17 +5,27 @@ import {getPackageName} from '../../src/api/registry'
 import {getLocaleSourcePath} from '../../src/util/getLocalesPath'
 
 export default defineCliConfig({
-  vite: async (config) => ({
-    ...config,
+  vite: async (config: unknown) => {
+    const inputConfig =
+      typeof config === 'object' && config !== null
+        ? (config as {
+            resolve?: {
+              alias?: Record<string, string>
+            }
+          })
+        : {}
 
-    resolve: {
-      ...config.resolve,
-      alias: {
-        ...config.resolve?.alias,
-        ...(await findLocaleAliases()),
+    return {
+      ...inputConfig,
+      resolve: {
+        ...inputConfig.resolve,
+        alias: {
+          ...inputConfig.resolve?.alias,
+          ...(await findLocaleAliases()),
+        },
       },
-    },
-  }),
+    }
+  },
 })
 
 /**

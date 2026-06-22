@@ -424,6 +424,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': '同じリビジョンが選択されました',
   /** Title for the Review Changes pane */
   'changes.title': '変更をレビュー',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'ドラフト',
 
@@ -2038,15 +2040,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': '最近の検索',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '検索結果',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': '列を編集',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'テーブルから削除',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': '列をリセット',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': '最大5つのフィールドタイプを選択',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '設定ステータス',

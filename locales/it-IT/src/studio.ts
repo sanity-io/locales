@@ -430,6 +430,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': 'Stessa revisione selezionata',
   /** Title for the Review Changes pane */
   'changes.title': 'Rivedi modifiche',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Bozza',
 
@@ -2051,15 +2053,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': 'Ricerche recenti',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Risultati della ricerca',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Modifica colonne',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Rimuovi dalla tabella',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Reimposta colonne',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Seleziona fino a 5 tipi di campo',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stato della configurazione',

@@ -20,12 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Hent',
   /** Label for saving a query */
+  'action.save-personal-copy': undefined, // 'Save personal copy'
+  /** Label for saving a personal query */
+  'action.save-personal-query': undefined, // 'Save as personal'
+  /** Label for saving a query */
   'action.save-query': 'Gem forespørgsel',
+  /** Label for saving a shared query */
+  'action.save-shared-query': undefined, // 'Save as shared'
+  /** Label for unsharing a query */
+  'action.unshare': undefined, // 'Unshare'
   /** Label for updating a query */
   'action.update': 'Opdater',
 
   /** Label for actions user can take */
   'label.actions': 'Handlinger',
+  /** Label for all saved queries */
+  'label.all': undefined, // 'All'
   /** Label for saved queries that have been edited */
   'label.edited': 'Redigeret',
   /**
@@ -43,8 +53,12 @@ export default removeUndefinedLocaleResources({
   'label.search-queries': 'Søg i forespørgsler',
   /** Share query */
   'label.share': 'Del',
+  /** Label for query type "shared" */
+  'label.shared': undefined, // 'Shared'
   /** Label for saved query type "team" */
   'label.team': 'Hold',
+  /** Label for untitled query fallback */
+  'label.untitled-query': undefined, // 'Untitled'
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametre er ikke gyldig JSON',
@@ -80,8 +94,16 @@ export default removeUndefinedLocaleResources({
   'save-query.already-saved': 'Forespørgsel allerede gemt',
   /** Save error label */
   'save-query.error': 'Fejl ved gemning af forespørgsel',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  /** Save shared query success label */
+  'save-query.shared-success': undefined, // 'Shared query saved'
   /** Save success label */
   'save-query.success': 'Forespørgsel gemt',
+  /** Save unshared query success label */
+  'save-query.unshared-success': undefined, // 'Query moved to personal'
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API version',

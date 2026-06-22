@@ -169,12 +169,12 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
         )
       }
 
-      const key =
-        prop.key.type === 'StringLiteral'
-          ? prop.key.value
-          : prop.key.type === 'Identifier'
-            ? prop.key.name
-            : undefined
+      let key: string | undefined
+      if (prop.key.type === 'StringLiteral') {
+        key = prop.key.value
+      } else if (prop.key.type === 'Identifier') {
+        key = prop.key.name
+      }
       if (!key) {
         throw new Error(`Found non-string key in ${LOCALE_DEF_FN_NAME} in ${fileName}`)
       }
