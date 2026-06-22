@@ -165,6 +165,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Tham chiếu này đã bị xóa kể từ khi bạn mở nó.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Thêm vào bản phát hành',
   /** The text that appears for the action button to add the current document to the global release */
@@ -450,6 +452,8 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-not-defined':
     'Không có tham chiếu đến được xác định cho loại này, xem tài liệu để biết thêm thông tin.',
 
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Không tìm thấy tham chiếu của loại này.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -539,6 +543,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Tìm kiếm danh sách',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Tìm kiếm danh sách',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Chi tiết',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -571,6 +577,8 @@ export default removeUndefinedLocaleResources({
     'Tài liệu đã được nhân bản thành công',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Tài liệu đã được xuất bản',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> đã được khôi phục',

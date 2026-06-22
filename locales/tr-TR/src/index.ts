@@ -20,13 +20,28 @@ const locale = defineLocale({
     },
 
     {
-      namespace: 'create',
-      resources: () => import('./create'),
+      namespace: 'feedback',
+      resources: () => import('./feedback'),
     },
 
     {
       namespace: 'media-library',
       resources: () => import('./media-library'),
+    },
+
+    {
+      namespace: 'presentation',
+      resources: () => import('./presentation'),
+    },
+
+    {
+      namespace: 'releases',
+      resources: () => import('./releases'),
+    },
+
+    {
+      namespace: 'singleDocRelease',
+      resources: () => import('./singleDocRelease'),
     },
 
     {

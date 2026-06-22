@@ -20,12 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Sækja',
   /** Label for saving a query */
+  'action.save-personal-copy': undefined, // 'Save personal copy'
+  /** Label for saving a personal query */
+  'action.save-personal-query': undefined, // 'Save as personal'
+  /** Label for saving a query */
   'action.save-query': 'Vista fyrirspurn',
+  /** Label for saving a shared query */
+  'action.save-shared-query': undefined, // 'Save as shared'
+  /** Label for unsharing a query */
+  'action.unshare': undefined, // 'Unshare'
   /** Label for updating a query */
   'action.update': 'Uppfæra',
 
   /** Label for actions user can take */
   'label.actions': 'Aðgerðir',
+  /** Label for all saved queries */
+  'label.all': undefined, // 'All'
   /** Label for saved queries that have been edited */
   'label.edited': 'Breytt',
   /**
@@ -43,8 +53,12 @@ export default removeUndefinedLocaleResources({
   'label.search-queries': 'Leita í fyrirspurnum',
   /** Share query */
   'label.share': 'Deila',
+  /** Label for query type "shared" */
+  'label.shared': undefined, // 'Shared'
   /** Label for saved query type "team" */
   'label.team': 'Hópur',
+  /** Label for untitled query fallback */
+  'label.untitled-query': undefined, // 'Untitled'
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrar eru ekki gilt JSON',
@@ -80,8 +94,16 @@ export default removeUndefinedLocaleResources({
   'save-query.already-saved': 'Fyrirspurn þegar vistuð',
   /** Save error label */
   'save-query.error': 'Villa við að vista fyrirspurn',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  /** Save shared query success label */
+  'save-query.shared-success': undefined, // 'Shared query saved'
   /** Save success label */
   'save-query.success': 'Fyrirspurn vistuð',
+  /** Save unshared query success label */
+  'save-query.unshared-success': undefined, // 'Query moved to personal'
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API útgáfa',

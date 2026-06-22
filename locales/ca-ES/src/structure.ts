@@ -172,6 +172,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     "Aquesta referència s'ha eliminat des que l'has oberta.",
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Afegeix a la publicació',
   /** The text that appears for the action button to add the current document to the global release */
@@ -478,6 +480,8 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-not-defined':
     "No s'han definit referències entrants per a aquest tipus, consulta la documentació per a més informació.",
 
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': "No s'han trobat referències d'aquest tipus.",
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -571,6 +575,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Cerca a la llista',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Cerca a la llista',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detalls',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -604,6 +610,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     "<Strong>{{title}}</Strong> s'ha publicat",
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ha estat restaurat',

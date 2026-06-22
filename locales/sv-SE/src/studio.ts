@@ -419,6 +419,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': 'Samma revision vald',
   /** Title for the Review Changes pane */
   'changes.title': 'Granska ändringar',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Utkast',
 
@@ -2025,15 +2027,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': 'Senaste sökningar',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Sökresultat',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Redigera kolumner',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Ta bort från tabellen',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Återställ kolumner',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Välj upp till 5 fälttyper',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfigurationsstatus',
