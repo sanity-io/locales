@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Truy vấn',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': 'Lưu bản sao cá nhân',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': 'Lưu dưới dạng cá nhân',
   /** Label for saving a query */
   'action.save-query': 'Lưu truy vấn',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': 'Lưu dưới dạng chia sẻ',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': 'Hủy chia sẻ',
   /** Label for updating a query */
   'action.update': 'Cập nhật',
 
   /** Label for actions user can take */
   'label.actions': 'Hành động',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': 'Tất cả',
   /** Label for saved queries that have been edited */
   'label.edited': 'Đã chỉnh sửa',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'Chia sẻ',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': 'Đã chia sẻ',
   /** Label for saved query type "team" */
   'label.team': 'Nhóm',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': 'Chưa đặt tên',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Tham số không phải là JSON hợp lệ',
@@ -95,15 +95,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'Lỗi khi lưu truy vấn',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': 'Đã lưu bản sao cá nhân',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning':
+    'Các truy vấn được chia sẻ được lưu trữ dưới dạng tài liệu trong dataset của bạn và được tính vào hạn mức tài liệu của bạn.',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': 'Đã lưu truy vấn được chia sẻ',
   /** Save success label */
   'save-query.success': 'Truy vấn đã được lưu',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': 'Truy vấn đã được chuyển về cá nhân',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Phiên bản API',
