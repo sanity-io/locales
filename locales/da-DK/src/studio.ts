@@ -420,7 +420,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Gennemgå ændringer',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
+  'changes.unknown-schema-field.description':
+    'Dette felt er ikke defineret i skemaet. Værdier vises som JSON.',
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Kladde',
 
