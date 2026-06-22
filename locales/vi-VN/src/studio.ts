@@ -404,6 +404,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': 'Đã chọn cùng một phiên bản',
   /** Title for the Review Changes pane */
   'changes.title': 'Xem lại các thay đổi',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Bản nháp',
 
@@ -1931,15 +1933,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': 'Tìm kiếm gần đây',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Kết quả tìm kiếm',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Chỉnh sửa cột',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Loại bỏ khỏi bảng',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Đặt lại cột',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Chọn tối đa 5 loại trường',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Trạng thái cấu hình',

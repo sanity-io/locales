@@ -5,6 +5,7 @@
   "schedule": ["before 3am on Monday"],
   "semanticCommitType": "chore",
   "rangeStrategy": "bump",
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],

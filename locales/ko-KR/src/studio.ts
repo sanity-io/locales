@@ -421,6 +421,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': '동일한 리비전이 선택되었습니다',
   /** Title for the Review Changes pane */
   'changes.title': '변경 사항 검토',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': '초안',
 
@@ -2028,15 +2030,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': '최근 검색',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '검색 결과',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': '열 편집',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': '테이블에서 제거',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': '열 재설정',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': '최대 5개의 필드 유형 선택',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '구성 상태',
