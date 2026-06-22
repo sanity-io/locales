@@ -152,6 +152,8 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.close-button.text': '关闭引用',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text': '自您打开以来，此引用已被移除。',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': '添加到发布',
   /** The text that appears for the action button to add the current document to the global release */
@@ -423,6 +425,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined': '此类型未定义传入引用，请查看文档了解更多信息。',
 
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': '未找到此类型的引用。',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -510,6 +514,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': '搜索列表',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': '详情',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -538,6 +544,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_duplicate': '文档已成功复制',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': '文档已发布',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore': '<Strong>{{title}}</Strong> 已恢复',
   /** The text when an unpublish operation succeeded  */
