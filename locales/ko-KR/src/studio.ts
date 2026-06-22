@@ -422,7 +422,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': '변경 사항 검토',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
+  'changes.unknown-schema-field.description':
+    '이 필드는 스키마에 정의되어 있지 않습니다. 값은 JSON으로 표시됩니다.',
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': '초안',
 
