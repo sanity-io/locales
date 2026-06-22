@@ -172,7 +172,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Tämä viite on poistettu sen jälkeen, kun avasit sen.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Lisää bundleen',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Lisää julkaisuun',
   /** The text that appears for the action button to add the current document to the global release */
@@ -480,7 +480,7 @@ export default removeUndefinedLocaleResources({
     'Tälle tyypille ei ole määritelty saapuvia viitteitä, katso lisätietoja dokumentaatiosta.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Saapuvia viittauksia ei löydy.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Tämän tyyppisiä viitteitä ei löytynyt.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -572,7 +572,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Etsi listalta',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Tämä lajitteluvaihtoehto käyttää kenttiä, jotka eivät kuulu tähän asiakirjatyyppiin',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Yksityiskohdat',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -607,7 +608,7 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentti on julkaistu',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'Versio julkaistiin',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> palautettiin',
