@@ -173,6 +173,8 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Deze referentie is verwijderd sinds u deze geopend heeft.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Toevoegen aan release',
   /** The text that appears for the action button to add the current document to the global release */
@@ -477,6 +479,8 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-not-defined':
     'Geen binnenkomende referenties gedefinieerd voor dit type, zie de documentatie voor meer informatie.',
 
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Geen referenties van dit type gevonden.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -569,6 +573,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Lijst doorzoeken',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Lijst doorzoeken',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Details',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -603,6 +609,8 @@ export default removeUndefinedLocaleResources({
     'Het document is succesvol gedupliceerd',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Het document is gepubliceerd',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> is hersteld',

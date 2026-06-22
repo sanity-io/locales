@@ -419,6 +419,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': 'ಅದೇ ಪರಿಷ್ಕರಣೆ ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ',
   /** Title for the Review Changes pane */
   'changes.title': 'ಪರಿಷ್ಕರಣೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'ಮುಸದ್ದಿ',
 
@@ -2029,15 +2031,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': 'ಇತ್ತೀಚಿನ ಹುಡುಕಾಟಗಳು',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'ಹುಡುಕಾಟದ ಫಲಿತಾಂಶಗಳು',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'ಅಂಕಣಗಳನ್ನು ಸಂಪಾದಿಸಿ',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'ಕೋಷ್ಟಕದಿಂದ ತೆಗೆದುಹಾಕಿ',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'ಅಂಕಣಗಳನ್ನು ಮರುಹೊಂದಿಸಿ',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'ಐದು ಕ್ಷೇತ್ರ ಪ್ರಕಾರಗಳನ್ನು ಆರಿಸಿ',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'ಸಂರಚನಾ ಸ್ಥಿತಿ',

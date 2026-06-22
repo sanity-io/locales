@@ -398,6 +398,8 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-title': 'เลือกการแก้ไขเดียวกัน',
   /** Title for the Review Changes pane */
   'changes.title': 'ตรวจสอบการเปลี่ยนแปลง',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'ร่าง',
 
@@ -1918,15 +1920,6 @@ export default removeUndefinedLocaleResources({
   'search.recent-searches-label': 'การค้นหาล่าสุด',
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'ผลการค้นหา',
-
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'แก้ไขคอลัมน์',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'ลบออกจากตาราง',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'รีเซ็ตคอลัมน์',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'เลือกได้ถึง 5 ประเภทฟิลด์',
 
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'สถานะการกำหนดค่า',

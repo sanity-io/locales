@@ -48,16 +48,17 @@
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
     "@sanity/ui": "^3.1.14",
-    "@sanity/vision": "^5.17.1",
-    "groq": "^5.17.1",
+    "@sanity/vision": "^6.1.0",
+    "groq": "^6.1.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-is": "^19.2.7",
-    "sanity": "^5.17.1",
+    "sanity": "^6.1.0",
     "styled-components": "^6.4.2"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "vite": "^8.0.16"
   }
 }
