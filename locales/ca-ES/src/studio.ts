@@ -425,7 +425,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Història',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
+  'changes.unknown-schema-field.description':
+    "Aquest camp no està definit a l'esquema. Els valors es mostren com a JSON.",
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Esborrany',
 
