@@ -47,7 +47,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'タイプ "{{type}}" の値はこのフィールドでは許可されていません',
   /** The validation message that is shown when read-only fields are skipped during document paste */
-  'copy-paste.on-paste.validation.read-only-fields-skipped.description': undefined, // 'Skipped read-only fields: {{fieldNames}}'
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    '読み取り専用フィールドをスキップしました: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': '対象は読み取り専用です',
