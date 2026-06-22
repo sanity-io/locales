@@ -2,45 +2,46 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Browse button text */
-  'feedback.attachment.browse': undefined, // 'Browse'
+  'feedback.attachment.browse': '参照',
   /** Drop zone text for image attachment */
-  'feedback.attachment.drop-zone': undefined, // 'Drag or paste file here'
+  'feedback.attachment.drop-zone': 'ファイルをここにドラッグまたは貼り付け',
   /** Error shown when attached image exceeds size limit */
-  'feedback.attachment.error.size': undefined, // 'Image must be under 20 MB'
+  'feedback.attachment.error.size': '画像は20MB未満である必要があります',
   /** Label for the image attachment section */
-  'feedback.attachment.label': undefined, // 'Attach an image'
+  'feedback.attachment.label': '画像を添付する',
   /** Remove attached image button text */
-  'feedback.attachment.remove': undefined, // 'Remove'
+  'feedback.attachment.remove': '削除',
   /** Cancel button text */
-  'feedback.cancel': undefined, // 'Cancel'
+  'feedback.cancel': 'キャンセル',
   /** Consent disclaimer shown when the user agrees to follow up */
-  'feedback.consent.disclaimer': undefined, // 'We\'d love to learn more. Selecting yes shares your name and email with the Sanity team.'
+  'feedback.consent.disclaimer':
+    '詳しくお聞かせください。「はい」を選択すると、あなたの名前とメールアドレスがSanityチームと共有されます。',
   /** Label for the contact consent toggle */
-  'feedback.consent.label': undefined, // 'Can we follow up with you about this feedback?'
+  'feedback.consent.label': 'このフィードバックについてフォローアップしてもよろしいですか？',
   /** Consent toggle: no */
-  'feedback.consent.no': undefined, // 'No'
+  'feedback.consent.no': 'いいえ',
   /** Consent toggle: yes */
-  'feedback.consent.yes': undefined, // 'Yes'
+  'feedback.consent.yes': 'はい',
   /** Title of the feedback dialog */
-  'feedback.dialog.title': undefined, // 'Share feedback with Sanity'
+  'feedback.dialog.title': 'Sanityにフィードバックを送る',
   /** Toast message after failed submission */
-  'feedback.error': undefined, // 'Failed to submit feedback with error'
+  'feedback.error': 'フィードバックの送信に失敗しました。エラー：',
   /** Label for "send feedback" in the help resources menu */
-  'feedback.menu-item': undefined, // 'Send feedback'
+  'feedback.menu-item': 'フィードバックを送る',
   /** Label for the message field */
-  'feedback.message.label': undefined, // 'What is working? What could be better?'
+  'feedback.message.label': 'うまくいっていることは何ですか？改善できることは何ですか？',
   /** Placeholder for the message field */
-  'feedback.message.placeholder': undefined, // 'Describe your issue or request...'
+  'feedback.message.placeholder': '問題やリクエストを説明してください...',
   /** Sentiment option: happy */
-  'feedback.sentiment.happy': undefined, // 'Easy'
+  'feedback.sentiment.happy': '簡単',
   /** Label for the sentiment question */
-  'feedback.sentiment.label': undefined, // 'How easy or difficult is Sanity to use?'
+  'feedback.sentiment.label': 'Sanityは使いやすいですか、それとも難しいですか？',
   /** Sentiment option: neutral */
-  'feedback.sentiment.neutral': undefined, // 'Not sure'
+  'feedback.sentiment.neutral': 'わからない',
   /** Sentiment option: unhappy */
-  'feedback.sentiment.unhappy': undefined, // 'Difficult'
+  'feedback.sentiment.unhappy': '難しい',
   /** Submit button text */
-  'feedback.submit': undefined, // 'Send feedback'
+  'feedback.submit': 'フィードバックを送る',
   /** Toast message after successful submission */
-  'feedback.success': undefined, // 'Feedback submitted, thank you!'
+  'feedback.success': 'フィードバックを送信しました。ありがとうございます！',
 })
