@@ -172,7 +172,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'ეს რეფერენცია წაშლილია თქვენი გახსნის შემდეგ.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Bundle-ში დამატება',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'დაამატეთ რელიზს',
   /** The text that appears for the action button to add the current document to the global release */
@@ -476,7 +476,7 @@ export default removeUndefinedLocaleResources({
     'ამ ტიპისთვის შემომავალი მიმართულებები არ არის განსაზღვრული, იხილეთ დოკუმენტაცია უფრო დეტალურად.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'შემომავალი მითითებები ვერ მოიძებნა.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'ამ ტიპის მიმართულებები ვერ მოიძებნა.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -568,7 +568,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'სიის ძიება',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'დახარისხების ეს პარამეტრი იყენებს ველებს, რომლებიც არ არის ამ დოკუმენტის ტიპის ნაწილი',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'დეტალები',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -600,7 +601,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> გამოქვეყნდა',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'ვერსია გამოქვეყნდა',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore': '<Strong>{{title}}</Strong> აღდგა',
   /** The text when an unpublish operation succeeded  */
