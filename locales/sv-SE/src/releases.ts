@@ -2,517 +2,558 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for adding a document to release */
-  'action.add-document': undefined, // 'Add document'
+  'action.add-document': 'Lägg till dokument',
   /** Action text for archiving a release */
-  'action.archive': undefined, // 'Archive release'
+  'action.archive': 'Arkivera release',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': undefined, // 'Unschedule this release to archive it'
+  'action.archive.tooltip': 'Avschemalägg denna release för att arkivera den',
   /** Action text for showing the archived releases */
-  'action.archived': undefined, // 'Archived'
+  'action.archived': 'Arkiverade',
   /** Menu item label for copying release ID */
-  'action.copy-release-id.label': undefined, // 'Copy release ID'
+  'action.copy-release-id.label': 'Kopiera release-ID',
   /** Menu item label for copying release URL */
-  'action.copy-release-link.label': undefined, // 'Copy release URL'
+  'action.copy-release-link.label': 'Kopiera release-URL',
   /** Menu item label for copying release title */
-  'action.copy-release-title.label': undefined, // 'Copy release title'
+  'action.copy-release-title.label': 'Kopiera release-titel',
   /** Tooltip for copy release actions button */
-  'action.copy-release.label': undefined, // 'Copy'
+  'action.copy-release.label': 'Kopiera',
   /** Action text for staging a new revert release */
-  'action.create-revert-release': undefined, // 'Create a new release'
+  'action.create-revert-release': 'Skapa en ny release',
   /** Action text for deleting a release */
-  'action.delete-release': undefined, // 'Delete release'
+  'action.delete-release': 'Ta bort release',
   /** Menu item label for showing scheduled drafts */
-  'action.drafts': undefined, // 'Scheduled drafts'
+  'action.drafts': 'Schemalagda utkast',
   /** Action text for duplicating a release */
-  'action.duplicate-release': undefined, // 'Duplicate release'
+  'action.duplicate-release': 'Duplicera release',
   /** Action text for editing a release */
-  'action.edit': undefined, // 'Edit release'
+  'action.edit': 'Redigera release',
   /** Action text for reverting a release immediately without staging changes */
-  'action.immediate-revert-release': undefined, // 'Revert now'
+  'action.immediate-revert-release': 'Återställ nu',
   /** Action text for opening a release */
-  'action.open': undefined, // 'Active'
+  'action.open': 'Aktiv',
   /** Action text for showing the paused scheduled drafts */
-  'action.paused': undefined, // 'Paused'
+  'action.paused': 'Pausade',
   /** Action text for publishing all documents in a release (and the release itself) */
-  'action.publish-all-documents': undefined, // 'Run release'
+  'action.publish-all-documents': 'Kör release',
   /** Menu item label for showing releases (multi-document releases) */
-  'action.releases': undefined, // 'Releases'
+  'action.releases': 'Releases',
   /** Action text for reverting a release */
-  'action.revert': undefined, // 'Revert release'
+  'action.revert': 'Återställ release',
   /** Action message for when document is scheduled for unpublishing a document and you want to no longer unpublish it */
-  'action.revert-unpublish-actions': undefined, // 'Revert unpublish when releasing'
+  'action.revert-unpublish-actions': 'Återställ avpublicering vid lansering',
   /** Text for the review changes button in release tool */
-  'action.review': undefined, // 'Review changes'
+  'action.review': 'Granska ändringar',
   /** Action text for scheduling a release */
-  'action.schedule': undefined, // 'Schedule release...'
+  'action.schedule': 'Schemalägg release...',
   /** Action text for scheduling unpublish of a draft document */
-  'action.schedule-unpublish': undefined, // 'Schedule Unpublish'
+  'action.schedule-unpublish': 'Schemalägg avpublicering',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
-  'action.schedule-unpublish.disabled.not-published': undefined, // 'Document must be published to schedule unpublish'
+  'action.schedule-unpublish.disabled.not-published':
+    'Dokumentet måste vara publicerat för att schemalägga avpublicering',
   /** Label for unarchiving a release */
-  'action.unarchive': undefined, // 'Unarchive release'
+  'action.unarchive': 'Avarkivera release',
   /** Action text for unpublishing a document in a release in the context menu */
-  'action.unpublish': undefined, // 'Unpublish'
+  'action.unpublish': 'Avpublicera',
   /** Action message for scheduling an unpublished of a document  */
-  'action.unpublish-doc-actions': undefined, // 'Unpublish when releasing'
+  'action.unpublish-doc-actions': 'Avpublicera vid lansering',
   /** Action text for unscheduling a release */
-  'action.unschedule': undefined, // 'Unschedule release'
+  'action.unschedule': 'Avschemalägg lansering',
 
   /** Text for the summary button in release tool */
-  'actions.summary': undefined, // 'Summary'
+  'actions.summary': 'Sammanfattning',
 
   /* The text for the activity event when a document is added to a release */
-  'activity.event.add-document': undefined, // 'Added a document version'
+  'activity.event.add-document': 'Lade till en dokumentversion',
   /* The text for the activity event when the release is archived */
-  'activity.event.archive': undefined, // 'Archived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.archive': 'Arkiverade lanseringen <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is created */
-  'activity.event.create': undefined, // 'Created the <strong>{{releaseTitle}}</strong> release <ScheduleTarget>targeting </ScheduleTarget>'
+  'activity.event.create':
+    'Skapade lanseringen <strong>{{releaseTitle}}</strong> <ScheduleTarget>med målet </ScheduleTarget>',
   /* The text for the activity event when a document is removed from a release */
-  'activity.event.discard-document': undefined, // 'Discarded a document version'
-  'activity.event.edit': undefined, // 'Set release time to <ScheduleTarget></ScheduleTarget>'
+  'activity.event.discard-document': 'Kasserade en dokumentversion',
+  'activity.event.edit': 'Ställde in lanseringstid till <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
-  'activity.event.edit-time-asap': undefined, // 'As soon as possible'
+  'activity.event.edit-time-asap': 'Så snart som möjligt',
   /**The text to display in the changes when the release type changes to undecided */
-  'activity.event.edit-time-undecided': undefined, // 'Undecided'
+  'activity.event.edit-time-undecided': 'Obestämt',
   /* The text for the activity event when the release is published */
-  'activity.event.publish': undefined, // 'Published the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.publish': 'Publicerade lanseringen <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is scheduled */
-  'activity.event.schedule': undefined, // 'Marked as scheduled'
+  'activity.event.schedule': 'Markerad som schemalagd',
   /** The text for the activity event when the release is unarchived */
-  'activity.event.unarchive': undefined, // 'Unarchived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.unarchive': 'Avarkiverade lanseringen <strong>{{releaseTitle}}</strong>',
   /** The text for the activity event when the release is unscheduled */
-  'activity.event.unschedule': undefined, // 'Marked as unscheduled'
+  'activity.event.unschedule': 'Markerad som oschemalagd',
   /** The loading text for when releases are loading */
-  'activity.panel.error': undefined, // 'An error occurred getting the release activity'
+  'activity.panel.error': 'Ett fel uppstod vid hämtning av lanseringsaktivitet',
   /** The loading text for when releases are loading */
-  'activity.panel.loading': undefined, // 'Loading release activity'
+  'activity.panel.loading': 'Laddar lanseringsaktivitet',
   /** The title for the activity panel shown in the releases detail screen */
-  'activity.panel.title': undefined, // 'Activity'
+  'activity.panel.title': 'Aktivitet',
 
   /** Label for the button to proceed with archiving a release */
-  'archive-dialog.confirm-archive-button': undefined, // 'Yes, archive release'
+  'archive-dialog.confirm-archive-button': 'Ja, arkivera lansering',
   /** Description for the dialog confirming the archive of a release with one document */
-  'archive-dialog.confirm-archive-description_one': undefined, // 'This will archive 1 document version.'
+  'archive-dialog.confirm-archive-description_one': 'Detta kommer att arkivera 1 dokumentversion.',
   /** Description for the dialog confirming the archive of a release with more than one document */
-  'archive-dialog.confirm-archive-description_other': undefined, // 'This will archive {{count}} document versions.'
+  'archive-dialog.confirm-archive-description_other':
+    'Detta kommer att arkivera {{count}} dokumentversioner.',
   /** Header for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-header': undefined, // 'Are you sure you want to archive this release?'
+  'archive-dialog.confirm-archive-header':
+    'Är du säker på att du vill arkivera den här lanseringen?',
   /** Title for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-title': undefined, // 'Are you sure you want to archive the <strong>\'{{title}}\'</strong> release?'
+  'archive-dialog.confirm-archive-title':
+    "Är du säker på att du vill arkivera lanseringen <strong>'{{title}}'</strong>?",
 
   /** Description for information card on a published or archived release to description retention effects */
-  'archive-info.description': undefined, // 'It will be available for {{retentionDays}} days, then automatically removed on {{removalDate}}. <Link>Learn about retention</Link>.'
+  'archive-info.description':
+    'Den kommer att vara tillgänglig i {{retentionDays}} dagar och tas sedan automatiskt bort den {{removalDate}}. <Link>Läs om lagring</Link>.',
   /** Title for information card on a archived release */
-  'archive-info.title': undefined, // 'This release is archived'
+  'archive-info.title': 'Den här lanseringen är arkiverad',
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
-  'banner.confirm-active-scheduled-drafts_one': undefined, // 'There is {{count}} Scheduled Draft that requires scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_one':
+    'Det finns {{count}} Scheduled Draft som kräver schemaläggningsbekräftelse',
   /** Banner text showing count of active scheduled drafts requiring confirmation with multiple drafts */
-  'banner.confirm-active-scheduled-drafts_other': undefined, // 'There are {{count}} Scheduled Drafts that require scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_other':
+    'Det finns {{count}} Scheduled Drafts som kräver schemaläggningsbekräftelse',
   /** Button text for confirming scheduling of active drafts */
-  'banner.confirm-active-scheduled-drafts.button': undefined, // 'Resume scheduling'
+  'banner.confirm-active-scheduled-drafts.button': 'Återuppta schemaläggning',
   /** Button text when confirming schedules from paused mode */
-  'banner.confirm-active-scheduled-drafts.button-paused': undefined, // 'Resume all schedules'
+  'banner.confirm-active-scheduled-drafts.button-paused': 'Återuppta alla scheman',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
-  'banner.drafts-mode-disabled': undefined, // 'Drafts mode has been disabled but there are still scheduled drafts to be published.'
+  'banner.drafts-mode-disabled':
+    'Utkastsläget har inaktiverats men det finns fortfarande schemalagda utkast som ska publiceras.',
   /** Banner text shown when navigating to a release that does not exist */
-  'banner.release-not-found': undefined, // 'This release could not be found'
+  'banner.release-not-found': 'Den här versionen kunde inte hittas',
   /** Tooltip for the dismiss button in the release not found banner */
-  'banner.release-not-found.dismiss': undefined, // 'Dismiss'
+  'banner.release-not-found.dismiss': 'Stäng',
   /** Banner text shown when scheduled drafts feature is disabled but there are still scheduled drafts */
-  'banner.scheduled-drafts-disabled': undefined, // 'Scheduled drafts has been disabled but there are still scheduled drafts to be published.'
+  'banner.scheduled-drafts-disabled':
+    'Scheduled drafts har inaktiverats men det finns fortfarande schemalagda utkast som ska publiceras.',
 
   /** Title for changes to published documents */
-  'changes-published-docs.title': undefined, // 'Changes to published documents'
+  'changes-published-docs.title': 'Ändringar i publicerade dokument',
 
   /** Dialog confirm button text for confirming all scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.confirm-button': undefined, // 'Confirm Schedules'
+  'confirm-active-scheduled-drafts-dialog.confirm-button': 'Bekräfta scheman',
   /** Dialog description for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.description': undefined, // 'Schedule all paused Scheduled Drafts for their intended publish dates'
+  'confirm-active-scheduled-drafts-dialog.description':
+    'Schemalägg alla pausade Scheduled Drafts för deras avsedda publiceringsdatum',
   /** Dialog warning when some scheduled drafts have past dates */
-  'confirm-active-scheduled-drafts-dialog.past-dates-warning': undefined, // 'Some of these Scheduled Drafts are scheduled for past dates. Confirming schedules will immediately publish those versions of documents.'
+  'confirm-active-scheduled-drafts-dialog.past-dates-warning':
+    'Vissa av dessa Scheduled Drafts är schemalagda för tidigare datum. Att bekräfta scheman kommer omedelbart att publicera dessa versioner av dokumenten.',
   /** Dialog title for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.title': undefined, // 'Resume Scheduled Drafts'
+  'confirm-active-scheduled-drafts-dialog.title': 'Återuppta Scheduled Drafts',
 
   /** Suffix for when a release is a copy of another release */
-  'copy-suffix': undefined, // 'Copy'
+  'copy-suffix': 'Kopia',
 
   /** Confirm button text for overriding existing draft */
-  'copy-to-draft-dialog.confirm-button': undefined, // 'Yes, override Draft'
+  'copy-to-draft-dialog.confirm-button': 'Ja, skriv över utkast',
   /** Description for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.description': undefined, // 'A draft version of this document already exists. Copy the current version to the draft and override the existing draft version.'
+  'copy-to-draft-dialog.description':
+    'En utkastversion av det här dokumentet finns redan. Kopiera den aktuella versionen till utkastet och skriv över den befintliga utkastversionen.',
   /** Title for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.title': undefined, // 'Draft version already exists'
+  'copy-to-draft-dialog.title': 'Utkastversion finns redan',
 
   /** Text for when a release / document was created */
-  created: undefined, // 'Created <RelativeTime/>'
+  created: 'Skapad <RelativeTime/>',
 
   /** Activity inspector button text */
-  'dashboard.details.activity': undefined, // 'Activity'
+  'dashboard.details.activity': 'Aktivitet',
   /** Text for the releases detail screen in the pin release button. */
-  'dashboard.details.pin-release': undefined, // 'Pin release to studio'
+  'dashboard.details.pin-release': 'Fäst version i studio',
   /** Text for the releases detail screen when a release was published ASAP */
-  'dashboard.details.published-asap': undefined, // 'Published'
+  'dashboard.details.published-asap': 'Publicerad',
   /** Text for the releases detail screen when a release was published from scheduling */
-  'dashboard.details.published-on': undefined, // 'Published on {{date}}'
+  'dashboard.details.published-on': 'Publicerad den {{date}}',
   /** Text for the releases detail screen in the unpin release button. */
-  'dashboard.details.unpin-release': undefined, // 'Unpin release from studio'
+  'dashboard.details.unpin-release': 'Lossa version från studio',
 
   /** Label for the button to proceed deleting a release */
-  'delete-dialog.confirm-delete-button': undefined, // 'Yes, delete release'
+  'delete-dialog.confirm-delete-button': 'Ja, ta bort version',
   /** Description for the dialog confirming the deleting of a release with one document */
-  'delete-dialog.confirm-delete-description_one': undefined, // 'This will delete 1 document version.'
+  'delete-dialog.confirm-delete-description_one': 'Detta kommer att ta bort 1 dokumentversion.',
   /** Description for the dialog confirming the deleting of a release with more than one document */
-  'delete-dialog.confirm-delete-description_other': undefined, // 'This will delete {{count}} document versions.'
+  'delete-dialog.confirm-delete-description_other':
+    'Detta kommer att radera {{count}} dokumentversioner.',
   /** Header for deleting a release dialog */
-  'delete-dialog.confirm-delete.header': undefined, // 'Are you sure you want to delete this release?'
+  'delete-dialog.confirm-delete.header': 'Är du säker på att du vill radera den här releasen?',
 
   /** Label when a release has been deleted by a different user */
-  'deleted-release': undefined, // 'The \'<strong>{{title}}</strong>\' release has been deleted'
+  'deleted-release': "'<strong>{{title}}</strong>'-releasen har raderats",
 
   /** Text for when there's no changes in a release diff */
-  'diff.list-empty': undefined, // 'Changes list is empty, see document'
+  'diff.list-empty': 'Ändringslistans är tom, se dokument',
   /** Text for when there's no changes in a release diff */
-  'diff.no-changes': undefined, // 'No changes'
+  'diff.no-changes': 'Inga ändringar',
 
   /** Description for discarding a draft of a document dialog */
-  'discard-version-dialog.description-draft': undefined, // 'This will permanently remove all changes made to this document. This action cannot be undone.'
+  'discard-version-dialog.description-draft':
+    'Detta kommer permanent att ta bort alla ändringar som gjorts i det här dokumentet. Denna åtgärd kan inte ångras.',
   /** Description for discarding a version of a document dialog */
-  'discard-version-dialog.description-release': undefined, // 'This will permanently remove all changes made to this document within the \'<strong>{{releaseTitle}}</strong>\' release. This action cannot be undone.'
+  'discard-version-dialog.description-release':
+    "Detta kommer permanent att ta bort alla ändringar som gjorts i det här dokumentet inom '<strong>{{releaseTitle}}</strong>'-releasen. Denna åtgärd kan inte ångras.",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.header-draft': undefined, // 'Discard draft?'
+  'discard-version-dialog.header-draft': 'Ignorera utkast?',
   /** Header for discarding a version from a release of a document dialog */
-  'discard-version-dialog.header-release': undefined, // 'Remove document from the \'<strong>{{releaseTitle}}</strong>\' release?'
+  'discard-version-dialog.header-release':
+    "Ta bort dokumentet från '<strong>{{releaseTitle}}</strong>'-releasen?",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.title-draft': undefined, // 'Discard draft'
+  'discard-version-dialog.title-draft': 'Ignorera utkast',
   /** Title for dialog for discarding a version of a document */
-  'discard-version-dialog.title-release': undefined, // 'Remove from release'
+  'discard-version-dialog.title-release': 'Ta bort från release',
 
   /** Label for when a document in a release has a single validation warning */
-  'document-validation.error_one': undefined, // '{{count}} validation error'
+  'document-validation.error_one': '{{count}} valideringsfel',
   /** Label for when a document in a release has multiple validation warnings */
-  'document-validation.error_other': undefined, // '{{count}} validation errors'
+  'document-validation.error_other': '{{count}} valideringsfel',
 
   /** Label for the button to proceed with duplicating a release */
-  'duplicate-dialog.confirm-duplicate-button': undefined, // 'Yes, duplicate release'
+  'duplicate-dialog.confirm-duplicate-button': 'Ja, duplicera release',
   /** Description for the dialog confirming the duplicate of a release with one document */
-  'duplicate-dialog.confirm-duplicate-description_one': undefined, // 'This will duplicate the release and the 1 document version.'
+  'duplicate-dialog.confirm-duplicate-description_one':
+    'Detta kommer att duplicera releasen och 1 dokumentversion.',
   /** Description for the dialog confirming the duplicate of a release with more than one document */
-  'duplicate-dialog.confirm-duplicate-description_other': undefined, // 'This will duplicate the release and the {{count}} document versions.'
+  'duplicate-dialog.confirm-duplicate-description_other':
+    'Detta kommer att duplicera releasen och {{count}} dokumentversioner.',
   /** Header for the dialog confirming the duplicate of a release */
-  'duplicate-dialog.confirm-duplicate-header': undefined, // 'Are you sure you want to duplicate this release?'
+  'duplicate-dialog.confirm-duplicate-header':
+    'Är du säker på att du vill duplicera den här releasen?',
 
   /** Title text displayed for technical error details */
-  'error-details-title': undefined, // 'Error details'
+  'error-details-title': 'Felinformation',
 
   /** Title text when error during release update */
-  'failed-edit-title': undefined, // 'Failed to save changes'
+  'failed-edit-title': 'Det gick inte att spara ändringar',
 
   /** Title text displayed for releases that failed to publish  */
-  'failed-publish-title': undefined, // 'Failed to publish'
+  'failed-publish-title': 'Det gick inte att publicera',
 
   /** Title text displayed for releases that failed to schedule  */
-  'failed-schedule-title': undefined, // 'Failed to schedule'
+  'failed-schedule-title': 'Det gick inte att schemalägga',
 
   /** Filter tab label for all documents */
-  'filter-tab.all': undefined, // 'All'
+  'filter-tab.all': 'Alla',
   /** Filter tab label for documents with validation errors */
-  'filter-tab.errors': undefined, // 'Errors'
+  'filter-tab.errors': 'Fel',
 
   /**The text that will be shown in the footer to indicate the time the release was archived */
-  'footer.status.archived': undefined, // 'Archived'
+  'footer.status.archived': 'Arkiverad',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.created': undefined, // 'Created'
+  'footer.status.created': 'Skapad',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.edited': undefined, // 'Edited'
+  'footer.status.edited': 'Redigerad',
   /**The text that will be shown in the footer to indicate the time the release was published */
-  'footer.status.published': undefined, // 'Published'
+  'footer.status.published': 'Publicerad',
   /**The text that will be shown in the footer to indicate the time the release was unarchived */
-  'footer.status.unarchived': undefined, // 'Unarchived'
+  'footer.status.unarchived': 'Återställd från arkiv',
 
   /** Label text for the loading state whilst release is being loaded */
-  'loading-release': undefined, // 'Loading release'
+  'loading-release': 'Laddar release',
 
   /** Text for when documents of a release are loading */
-  'loading-release-documents': undefined, // 'Loading documents'
+  'loading-release-documents': 'Laddar dokument',
   /** Description text for when loading documents on a release failed */
-  'loading-release-documents.error.description': undefined, // 'We\'re unable to load the documents for this release. Please try again later.'
+  'loading-release-documents.error.description':
+    'Vi kan inte ladda dokumenten för den här releasen. Försök igen senare.',
   /** Title text for when loading documents on a release failed */
-  'loading-release-documents.error.title': undefined, // 'Something went wrong'
+  'loading-release-documents.error.title': 'Något gick fel',
 
   /** Label for title of actions for "when releasing" */
-  'menu.group.when-releasing': undefined, // 'When releasing'
+  'menu.group.when-releasing': 'Vid publicering',
   /** Label for the release menu */
-  'menu.label': undefined, // 'Release menu'
+  'menu.label': 'Release-meny',
   /** Tooltip for the release menu */
-  'menu.tooltip': undefined, // 'Actions'
+  'menu.tooltip': 'Åtgärder',
 
   /** Text for when no archived releases are found */
-  'no-archived-release': undefined, // 'No archived releases'
+  'no-archived-release': 'Inga arkiverade releases',
 
   /** Tooltip text when there are no paused scheduled drafts */
-  'no-paused-release': undefined, // 'No paused scheduled drafts'
+  'no-paused-release': 'Inga pausade schemalagda utkast',
 
   /** Text for when no releases are found */
-  'no-releases': undefined, // 'No Releases'
+  'no-releases': 'Inga releases',
 
   /** Text for when no scheduled drafts are found */
-  'no-scheduled-drafts': undefined, // 'No Scheduled Drafts'
+  'no-scheduled-drafts': 'Inga schemalagda utkast',
 
   /** Text for the button name for the release tool */
-  'overview.action.documentation': undefined, // 'Documentation'
+  'overview.action.documentation': 'Dokumentation',
   /** Tooltip for the calendar button in the release overview */
-  'overview.calendar.tooltip': undefined, // 'View calendar'
+  'overview.calendar.tooltip': 'Visa kalender',
   /** Description for the release tool */
-  'overview.description': undefined, // 'Releases are collections of document changes which can be managed, scheduled, and rolled back together.'
+  'overview.description':
+    'Releases är samlingar av dokumentändringar som kan hanteras, schemaläggas och återställas tillsammans.',
   /** Text for the placeholder in the search release input  */
-  'overview.search-releases-placeholder': undefined, // 'Search releases'
+  'overview.search-releases-placeholder': 'Sök releases',
   /** Title for the release tool */
-  'overview.title': undefined, // 'Releases'
+  'overview.title': 'Releases',
 
   /** Tooltip text for releases that have passed their intended publish date */
-  'passed-intended-publish-date': undefined, // 'This release has passed its intended publish date'
+  'passed-intended-publish-date': 'Den här releasen har passerat sitt avsedda publiceringsdatum',
 
   /** Tooltip text for scheduled drafts that have passed their intended publish date */
-  'passed-intended-publish-date-draft': undefined, // 'This draft has passed its intended publish date'
+  'passed-intended-publish-date-draft':
+    'Det här utkastet har passerat sitt avsedda publiceringsdatum',
 
   /** Description for when a user doesn't have publish or schedule releases */
-  'permission-missing-description': undefined, // 'Your role currently limits what you can see in this release. You may not publish nor schedule this release.'
+  'permission-missing-description':
+    'Din roll begränsar för närvarande vad du kan se i den här releasen. Du kan varken publicera eller schemalägga den här releasen.',
 
   /** Text for when a user doesn't have publish or schedule releases */
-  'permission-missing-title': undefined, // 'Limited access'
+  'permission-missing-title': 'Begränsad åtkomst',
 
   /** Tooltip label when the user doesn't have permission to archive release */
-  'permissions.error.archive': undefined, // 'You do not have permission to archive this release'
+  'permissions.error.archive': 'Du har inte behörighet att arkivera den här releasen',
   /** Tooltip label when the user doesn't have permission to delete release */
-  'permissions.error.delete': undefined, // 'You do not have permission to delete this release'
+  'permissions.error.delete': 'Du har inte behörighet att ta bort den här releasen',
   /** Tooltip label when the user doesn't have permission for discarding a version */
-  'permissions.error.discard-version': undefined, // 'You do not have permission to discard this version'
+  'permissions.error.discard-version': 'Du har inte behörighet att kassera den här versionen',
   /** Tooltip label when the user doesn't have permission to duplicate release */
-  'permissions.error.duplicate': undefined, // 'You do not have permission to duplicate this release'
+  'permissions.error.duplicate': 'Du har inte behörighet att duplicera den här releasen',
   /** Tooltip label when the user doesn't have permission to unarchive release */
-  'permissions.error.unarchive': undefined, // 'You do not have permission to unarchive this release'
+  'permissions.error.unarchive': 'Du har inte behörighet att avarkivera den här releasen',
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
-  'permissions.error.unpublish': undefined, // 'You do not have permission to unpublish this document'
+  'permissions.error.unpublish': 'Du har inte behörighet att avpublicera det här dokumentet',
 
   /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  'presence.tooltip.one':
+    '{{displayName}} redigerar det här dokumentet i releasen "{{releaseTitle}}" just nu',
 
   /** Tooltip text for publish release action when there are no documents */
-  'publish-action.validation.no-documents': undefined, // 'There are no documents to publish'
+  'publish-action.validation.no-documents': 'Det finns inga dokument att publicera',
 
   /** Description for the dialog confirming the publish of a release with one document */
-  'publish-dialog.confirm-publish-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published.'
+  'publish-dialog.confirm-publish-description_one':
+    "Releasen '<strong>{{title}}</strong>' och dess dokument kommer att publiceras.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
-  'publish-dialog.confirm-publish-description_other': undefined, // 'The \'<strong>{{title}}</strong>\' release and its {{releaseDocumentsLength}} documents will be published.'
+  'publish-dialog.confirm-publish-description_other':
+    "Releasen '<strong>{{title}}</strong>' och dess {{releaseDocumentsLength}} dokument kommer att publiceras.",
   /** Title for the dialog confirming the publish of a release */
-  'publish-dialog.confirm-publish.title': undefined, // 'Are you sure you want to publish the release and all document versions?'
+  'publish-dialog.confirm-publish.title':
+    'Är du säker på att du vill publicera releasen och alla dokumentversioner?',
   /** Label for when documents in release have validation errors */
-  'publish-dialog.validation.error': undefined, // 'Some documents have validation errors'
+  'publish-dialog.validation.error': 'Vissa dokument har valideringsfel',
   /** Label for when documents are being validated */
-  'publish-dialog.validation.loading': undefined, // 'Validating documents...'
+  'publish-dialog.validation.loading': 'Validerar dokument...',
   /** Label for the button when the user doesn't have permissions to publish a release */
-  'publish-dialog.validation.no-permission': undefined, // 'You do not have permission to publish'
+  'publish-dialog.validation.no-permission': 'Du har inte behörighet att publicera',
 
   /** Title for information card on a published release */
-  'publish-info.title': undefined, // 'This release is published successfully.'
+  'publish-info.title': 'Den här releasen har publicerats.',
 
   /** Placeholder title for a release with no title */
-  'release-placeholder.title': undefined, // 'Untitled'
+  'release-placeholder.title': 'Namnlös',
 
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_one': undefined, // 'This will revert {{releaseDocumentsLength}} document version.'
+  'revert-dialog.confirm-revert-description_one':
+    'Detta kommer att återställa {{releaseDocumentsLength}} dokumentversion.',
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_other': undefined, // 'This will revert {{releaseDocumentsLength}} document versions.'
+  'revert-dialog.confirm-revert-description_other':
+    'Detta kommer att återställa {{releaseDocumentsLength}} dokumentversioner.',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
-  'revert-dialog.confirm-revert.stage-revert-checkbox-label': undefined, // 'Immediately revert the release'
+  'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Återställ releasen omedelbart',
   /** Title for the dialog confirming the revert of a release */
-  'revert-dialog.confirm-revert.title': undefined, // 'Are you sure you want to revert the \'{{title}}\' release?'
+  'revert-dialog.confirm-revert.title':
+    'Är du säker på att du vill återställa releasen "{{title}}"?',
   /** Warning card text for when immediately revert a release with history */
-  'revert-dialog.confirm-revert.warning-card': undefined, // 'Changes were made to documents in this release after they were published. Reverting will overwrite these changes.'
+  'revert-dialog.confirm-revert.warning-card':
+    'Ändringar gjordes i dokument i den här releasen efter att de publicerades. Återställning kommer att skriva över dessa ändringar.',
 
   /** Description of a reverted release */
-  'revert-release.description': undefined, // 'Revert changes to document versions in "{{title}}".'
+  'revert-release.description': 'Återställ ändringar till dokumentversioner i "{{title}}".',
   /** Title of a reverted release */
-  'revert-release.title': undefined, // 'Reverting "{{title}}"'
+  'revert-release.title': 'Återställer "{{title}}"',
 
   /** Description for the review changes button in release tool */
-  'review.description': undefined, // 'Add documents to this release to review changes'
+  'review.description': 'Lägg till dokument i den här releasen för att granska ändringar',
   /** Text for when a document is edited */
-  'review.edited': undefined, // 'Edited <RelativeTime/>'
+  'review.edited': 'Redigerad <RelativeTime/>',
 
   /** Schedule release button tooltip when there are no documents to schedule */
-  'schedule-action.validation.no-documents': undefined, // 'There are no documents to schedule'
+  'schedule-action.validation.no-documents': 'Det finns inga dokument att schemalägga',
 
   /** Schedule release button tooltip when the release is already scheduled */
-  'schedule-button-tooltip.already-scheduled': undefined, // 'This release is already scheduled'
+  'schedule-button-tooltip.already-scheduled': 'Den här releasen är redan schemalagd',
   /** Schedule release button tooltip when there are validation errors */
-  'schedule-button-tooltip.validation.error': undefined, // 'Some documents have validation errors'
+  'schedule-button-tooltip.validation.error': 'Vissa dokument har valideringsfel',
   /** Schedule release button tooltip when validation is loading */
-  'schedule-button-tooltip.validation.loading': undefined, // 'Validating documents...'
+  'schedule-button-tooltip.validation.loading': 'Validerar dokument...',
   /** Schedule release button tooltip when user has no permissions to schedule */
-  'schedule-button-tooltip.validation.no-permission': undefined, // 'You do not have permission to schedule'
+  'schedule-button-tooltip.validation.no-permission': 'Du har inte behörighet att schemalägga',
 
   /** Title of unschedule release dialog */
-  'schedule-button.tooltip': undefined, // 'Are you sure you want to unschedule the release?'
+  'schedule-button.tooltip': 'Är du säker på att du vill avschemalägg releasen?',
 
   /** Description for the confirm button for scheduling a release */
-  'schedule-dialog.confirm-button': undefined, // 'Yes, schedule'
+  'schedule-dialog.confirm-button': 'Ja, schemalägg',
   /** Description shown in unschedule relaease dialog */
-  'schedule-dialog.confirm-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published on the selected date.'
+  'schedule-dialog.confirm-description_one':
+    "Releasen '<strong>{{title}}</strong>' och dess dokument kommer att publiceras på det valda datumet.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
-  'schedule-dialog.confirm-description_other': undefined, // 'The <strong>{{title}}</strong> release and its {{count}} document versions will be scheduled.'
+  'schedule-dialog.confirm-description_other':
+    'Releasen <strong>{{title}}</strong> och dess {{count}} dokumentversioner kommer att schemaläggas.',
   /** Title for unschedule release dialog */
-  'schedule-dialog.confirm-title': undefined, // 'Schedule the release'
+  'schedule-dialog.confirm-title': 'Schemalägg releasen',
   /** Description for warning that the published schedule time is in the past */
-  'schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'schedule-dialog.publish-date-in-past-warning': 'Schemalägg för ett framtida datum och tid.',
   /** Label for date picker when scheduling a release */
-  'schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
+  'schedule-dialog.select-publish-date-label': 'Schemalägg den',
 
   /** Confirm button text for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.confirm': undefined, // 'Schedule Unpublish'
+  'schedule-unpublish-dialog.confirm': 'Schemalägg avpublicering',
   /** Description for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.description': undefined, // 'Select when this document should be unpublished.'
+  'schedule-unpublish-dialog.description': 'Välj när detta dokument ska avpubliceras.',
   /** Header for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.header': undefined, // 'Schedule draft for Unpublish'
+  'schedule-unpublish-dialog.header': 'Schemalägg utkast för avpublicering',
 
   /** Placeholder for search of documents in a release */
-  'search-documents-placeholder': undefined, // 'Search documents'
+  'search-documents-placeholder': 'Sök dokument',
 
   /** Text for when the release has no errors found */
-  'summary.all-documents-errors-found': undefined, // 'All documents validated, issues found'
+  'summary.all-documents-errors-found': 'Alla dokument validerade, problem hittades',
   /** Text for when the release has validated all documents */
-  'summary.all-documents-validated': undefined, // 'All documents validated, no issues found'
+  'summary.all-documents-validated': 'Alla dokument validerade, inga problem hittades',
   /** Text for when the release was created */
-  'summary.created': undefined, // 'Created <RelativeTime/>'
+  'summary.created': 'Skapad <RelativeTime/>',
   /** Text for when the release is composed of one document */
-  'summary.document-count_one': undefined, // '{{count}} document'
+  'summary.document-count_one': '{{count}} dokument',
   /** Text for when the release is composed of multiple documents */
-  'summary.document-count_other': undefined, // '{{count}} documents'
+  'summary.document-count_other': '{{count}} dokument',
   /** Text for when the release has some errors found */
-  'summary.errors-found': undefined, // 'In order to publish or schedule the release, please resolve the issues found in the documents'
+  'summary.errors-found':
+    'För att publicera eller schemalägga releasen, vänligen åtgärda problemen som hittades i dokumenten',
   /** Text for when the release has no documents */
-  'summary.no-documents': undefined, // 'No documents'
+  'summary.no-documents': 'Inga dokument',
   /** Description for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.description': undefined, // 'This scheduled draft does not contain a document. It may have been removed.'
+  'summary.no-documents-cardinality-one.description':
+    'Detta schemalagda utkast innehåller inget dokument. Det kan ha tagits bort.',
   /** Title for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.title': undefined, // 'No document in this release'
+  'summary.no-documents-cardinality-one.title': 'Inget dokument i denna release',
   /** Text for when the release has not published */
-  'summary.not-published': undefined, // 'Not published'
+  'summary.not-published': 'Inte publicerad',
   /** Text for when the release was published */
-  'summary.published': undefined, // 'Published <RelativeTime/>'
+  'summary.published': 'Publicerad <RelativeTime/>',
   /** Text for when the release has validated documents */
-  'summary.validated-documents': undefined, // '{{validatedCount}} of {{totalCount}} documents validated'
+  'summary.validated-documents': '{{validatedCount}} av {{totalCount}} dokument validerade',
   /** Text for validation loading indicator */
-  'summary.validating-documents': undefined, // 'Validating documents: {{validatedCount}} of {{totalCount}}'
+  'summary.validating-documents': 'Validerar dokument: {{validatedCount}} av {{totalCount}}',
 
   /** add action type that will be shown in the table*/
-  'table-body.action.add': undefined, // 'Add'
+  'table-body.action.add': 'Lägg till',
   /** Change action type that will be shown in the table*/
-  'table-body.action.change': undefined, // 'Change'
+  'table-body.action.change': 'Ändra',
   /** Change action type that will be shown in the table*/
-  'table-body.action.unpublish': undefined, // 'Unpublish'
+  'table-body.action.unpublish': 'Avpublicera',
 
   /** Header for the document table in the release tool - action */
-  'table-header.action': undefined, // 'Action'
+  'table-header.action': 'Åtgärd',
   /** Header for the document table in the release tool - Archived */
-  'table-header.archivedAt': undefined, // 'Archived'
+  'table-header.archivedAt': 'Arkiverad',
   /** Header for the document table in the release tool - contributors */
-  'table-header.contributors': undefined, // 'Contributors'
+  'table-header.contributors': 'Bidragsgivare',
   /** Header for the document table in the release tool - created by */
-  'table-header.created-by': undefined, // 'Created by'
+  'table-header.created-by': 'Skapad av',
   /** Header for the document table in the release tool - document preview */
-  'table-header.document': undefined, // 'Document'
+  'table-header.document': 'Dokument',
   /** Header for the document table in the release tool - title */
-  'table-header.documents': undefined, // 'Documents'
+  'table-header.documents': 'Dokument',
   /** Header for the document table in the release tool - edited */
-  'table-header.edited': undefined, // 'Edited'
+  'table-header.edited': 'Redigerad',
   /** Header for the paused scheduled drafts table - intended for */
-  'table-header.intended-for': undefined, // 'Intended for'
+  'table-header.intended-for': 'Avsedd för',
   /** Header for the document table in the release tool - Published */
-  'table-header.published-at': undefined, // 'Published'
+  'table-header.published-at': 'Publicerad',
   /** Header for the document table in the release tool - Published */
-  'table-header.publishedAt': undefined, // 'Published'
+  'table-header.publishedAt': 'Publicerad',
   /** Header for the scheduled drafts document table in the release tool - published at */
-  'table-header.scheduled-draft.published-at': undefined, // 'Published at'
+  'table-header.scheduled-draft.published-at': 'Publicerad den',
   /** Header for the scheduled drafts document table in the release tool - scheduled for */
-  'table-header.scheduled-for': undefined, // 'Scheduled for'
+  'table-header.scheduled-for': 'Schemalagd för',
   /** Header for the document table in the release tool - time */
-  'table-header.time': undefined, // 'Time'
+  'table-header.time': 'Tid',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': undefined, // 'Release'
+  'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
-  'table-header.type': undefined, // 'Type'
+  'table-header.type': 'Typ',
   /** Header for the document table in the release tool - when */
-  'table-header.when': undefined, // 'When'
+  'table-header.when': 'När',
 
   /** Text for the release time label for scheduled releases  which has not been scheduled yet*/
-  'time.estimated': undefined, // 'Estimated'
+  'time.estimated': 'Beräknad',
   /** Text for the release time label for scheduled releases  which has been scheduled*/
-  'time.scheduled': undefined, // 'Scheduled'
+  'time.scheduled': 'Schemalagd',
 
   /** Text for toast when release failed to archive */
-  'toast.archive.error': undefined, // 'Failed to archive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.archive.error': "Det gick inte att arkivera '<strong>{{title}}</strong>': {{error}}",
   /** Toast error message when bulk scheduling of active drafts fails */
-  'toast.confirm-active-scheduled-drafts.error': undefined, // 'Failed to schedule drafts: {{error}}'
+  'toast.confirm-active-scheduled-drafts.error': 'Det gick inte att schemalägga utkast: {{error}}',
   /** Toast message after copying release ID */
-  'toast.copy-release-id.success': undefined, // 'Release ID copied to clipboard'
+  'toast.copy-release-id.success': 'Release-ID kopierat till urklipp',
   /** Toast message after copying release link */
-  'toast.copy-release-link.success': undefined, // 'Release link copied to clipboard'
+  'toast.copy-release-link.success': 'Release-länk kopierad till urklipp',
   /** Toast message after copying release title */
-  'toast.copy-release-title.success': undefined, // 'Release title copied to clipboard'
+  'toast.copy-release-title.success': 'Release-titel kopierad till urklipp',
   /** Description for toast when creating new version of document in release failed */
-  'toast.create-version.error': undefined, // 'Failed to add document to release: {{error}}'
+  'toast.create-version.error': 'Det gick inte att lägga till dokumentet i release: {{error}}',
   /** Description for toast when release deletion failed */
-  'toast.delete.error': undefined, // 'Failed to delete \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.delete.error': "Det gick inte att ta bort '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully deleted */
-  'toast.delete.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was successfully deleted'
+  'toast.delete.success': "Release '<strong>{{title}}</strong>' togs bort.",
   /** Description for toast when release duplication failed */
-  'toast.duplicate.error': undefined, // 'Failed to duplicate \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.duplicate.error': "Det gick inte att duplicera '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully duplicated */
-  'toast.duplicate.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was duplicated. <Link/>'
+  'toast.duplicate.success': "Release '<strong>{{title}}</strong>' duplicerades. <Link/>",
   /** Link text for toast link to the duplicated release */
-  'toast.duplicate.success-link': undefined, // 'View duplicated release'
+  'toast.duplicate.success-link': 'Visa duplicerad release',
   /** Text for toast when release has been reverted immediately */
-  'toast.immediate-revert.success': undefined, // 'The \'{{title}}\' release was successfully reverted'
+  'toast.immediate-revert.success': "Release '{{title}}' återställdes.",
   /** Text for toast when release failed to publish */
-  'toast.publish.error': undefined, // 'Failed to publish \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.publish.error': "Det gick inte att publicera '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release has reverted release successfully staged */
-  'toast.revert-stage.success': undefined, // 'Revert release for \'{{title}}\' was successfully created. <Link/>'
+  'toast.revert-stage.success': "Återställningsrelease för '{{title}}' skapades. <Link/>",
   /** Link text for toast link to the generated revert release */
-  'toast.revert-stage.success-link': undefined, // 'View revert release'
+  'toast.revert-stage.success-link': 'Visa återställningsrelease',
   /** Text for toast when release failed to revert */
-  'toast.revert.error': undefined, // 'Failed to revert release: {{error}}'
+  'toast.revert.error': 'Det gick inte att återställa release: {{error}}',
   /** Text for toast when release failed to schedule */
-  'toast.schedule.error': undefined, // 'Failed to schedule \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.schedule.error': "Det gick inte att schemalägga '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release has been scheduled */
-  'toast.schedule.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was scheduled.'
+  'toast.schedule.success': "Release '<strong>{{title}}</strong>' schemalagdes.",
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error': undefined, // 'Failed to unarchive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unarchive.error': "Det gick inte att avarkivera '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release failed to unschedule */
-  'toast.unschedule.error': undefined, // 'Failed to unscheduled \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unschedule.error':
+    "Det gick inte att avschemalägg '<strong>{{title}}</strong>': {{error}}",
 
   /** Text for tooltip when a release has been scheduled */
-  'type-picker.tooltip.scheduled': undefined, // 'The release is scheduled, unschedule it to change type'
+  'type-picker.tooltip.scheduled': 'Releasen är schemalagd, avschemalägg den för att ändra typ',
 
   /** Text action in unpublish dialog to cancel */
-  'unpublish-dialog.action.cancel': undefined, // 'Cancel'
+  'unpublish-dialog.action.cancel': 'Avbryt',
   /** Text action in unpublish dialog to unpublish */
-  'unpublish-dialog.action.unpublish': undefined, // 'Yes, unpublish when releasing'
+  'unpublish-dialog.action.unpublish': 'Ja, avpublicera vid release',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
-  'unpublish-dialog.description.lost-changes': undefined, // 'Any changes made to this document version will be lost.'
+  'unpublish-dialog.description.lost-changes':
+    'Alla ändringar som gjorts i den här dokumentversionen kommer att gå förlorade.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
-  'unpublish-dialog.description.to-draft': undefined, // 'This will unpublish the document as part of the <Label>{{title}}</Label> release, and create a draft if no draft exists at the time of release.'
+  'unpublish-dialog.description.to-draft':
+    'Detta kommer att avpublicera dokumentet som en del av releasen <Label>{{title}}</Label> och skapa ett utkast om inget utkast finns vid tidpunkten för releasen.',
   /** Title for the dialog confirming the unpublish of a release */
-  'unpublish-dialog.header': undefined, // 'Are you sure you want to unpublish this document when releasing?'
+  'unpublish-dialog.header':
+    'Är du säker på att du vill avpublicera det här dokumentet vid release?',
 
   /** Text for when a document is unpublished */
-  'unpublish.already-unpublished': undefined, // 'This document is already unpublished.'
+  'unpublish.already-unpublished': 'Det här dokumentet är redan avpublicerat.',
   /** Tooltip label for when a document is unpublished */
-  'unpublish.no-published-version': undefined, // 'There is no published version of this document.'
+  'unpublish.no-published-version': 'Det finns ingen publicerad version av det här dokumentet.',
 
   /** Description shown in unschedule relaease dialog */
-  'unschedule-dialog.confirm-description': undefined, // 'The release will no longer be published on the scheduled date'
+  'unschedule-dialog.confirm-description':
+    'Releasen kommer inte längre att publiceras på det schemalagda datumet.',
   /** Title for unschedule release dialog */
-  'unschedule-dialog.confirm-title': undefined, // 'Are you sure you want to unschedule the release?'
+  'unschedule-dialog.confirm-title': 'Är du säker på att du vill avschemalägg releasen?',
 })
