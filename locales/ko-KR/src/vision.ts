@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': '가져오기',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': '개인 사본 저장',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': '개인으로 저장',
   /** Label for saving a query */
   'action.save-query': '쿼리 저장',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': '공유로 저장',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': '공유 해제',
   /** Label for updating a query */
   'action.update': '업데이트',
 
   /** Label for actions user can take */
   'label.actions': '액션',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': '전체',
   /** Label for saved queries that have been edited */
   'label.edited': '편집됨',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': '공유',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': '공유됨',
   /** Label for saved query type "team" */
   'label.team': '팀',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': '제목 없음',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': '파라미터가 유효한 JSON이 아닙니다',
@@ -95,15 +95,15 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': '쿼리 저장 오류',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': '개인 사본이 저장되었습니다',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning': '공유된 쿼리는 dataset의 문서로 저장되며 문서 할당량에 포함됩니다.',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': '공유 쿼리가 저장되었습니다',
   /** Save success label */
   'save-query.success': '쿼리 저장됨',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': '쿼리가 개인으로 이동되었습니다',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 버전',
