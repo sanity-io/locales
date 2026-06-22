@@ -399,7 +399,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'ตรวจสอบการเปลี่ยนแปลง',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
+  'changes.unknown-schema-field.description':
+    'ฟิลด์นี้ไม่ได้ถูกกำหนดไว้ใน schema ค่าต่างๆ จะแสดงในรูปแบบ JSON',
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'ร่าง',
 

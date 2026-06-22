@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'ดึงข้อมูล',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': 'บันทึกสำเนาส่วนตัว',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': 'บันทึกเป็นส่วนตัว',
   /** Label for saving a query */
   'action.save-query': 'บันทึกคำถาม',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': 'บันทึกเป็นแบบแชร์',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': 'ยกเลิกการแชร์',
   /** Label for updating a query */
   'action.update': 'อัปเดต',
 
   /** Label for actions user can take */
   'label.actions': 'การกระทำ',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': 'ทั้งหมด',
   /** Label for saved queries that have been edited */
   'label.edited': 'ที่แก้ไขแล้ว',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'แชร์',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': 'แชร์แล้ว',
   /** Label for saved query type "team" */
   'label.team': 'ทีม',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': 'ไม่มีชื่อ',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'พารามิเตอร์ไม่ใช่ JSON ที่ถูกต้อง',
@@ -95,15 +95,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'เกิดข้อผิดพลาดในการบันทึกคำถาม',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': 'บันทึกสำเนาส่วนตัวแล้ว',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning':
+    'คิวรีที่แชร์จะถูกจัดเก็บเป็นเอกสารใน dataset ของคุณ และนับรวมในโควตาเอกสารของคุณ',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': 'บันทึกคิวรีที่แชร์แล้ว',
   /** Save success label */
   'save-query.success': 'คำถามถูกบันทึกแล้ว',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': 'ย้ายคิวรีไปยังส่วนตัวแล้ว',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'เวอร์ชัน API',
