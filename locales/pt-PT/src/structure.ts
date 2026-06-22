@@ -172,7 +172,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Esta referência foi removida desde que você a abriu.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Adicionar ao bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Adicionar ao lançamento',
   /** The text that appears for the action button to add the current document to the global release */
@@ -481,7 +481,7 @@ export default removeUndefinedLocaleResources({
     'Não há referências recebidas definidas para este tipo, consulte a documentação para mais informações.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Nenhuma referência de entrada encontrada.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Nenhuma referência deste tipo encontrada.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -575,7 +575,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Pesquisar lista',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Esta opção de ordenação utiliza campos que não fazem parte deste tipo de documento',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detalhes',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -610,7 +611,7 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'O documento foi publicado',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'A versão foi publicada',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> foi restaurado',
