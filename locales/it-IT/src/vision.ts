@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Esegui',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': 'Salva copia personale',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': 'Salva come personale',
   /** Label for saving a query */
   'action.save-query': 'Salva query',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': 'Salva come condivisa',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': 'Annulla condivisione',
   /** Label for updating a query */
   'action.update': 'Aggiorna',
 
   /** Label for actions user can take */
   'label.actions': 'Azioni',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': 'Tutte',
   /** Label for saved queries that have been edited */
   'label.edited': 'Modificato',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'Condividi',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': 'Condivisa',
   /** Label for saved query type "team" */
   'label.team': 'Squadra',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': 'Senza titolo',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'I parametri non sono un JSON valido',
@@ -95,15 +95,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'Errore nel salvataggio della query',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': 'Copia personale salvata',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning':
+    'Le query condivise vengono archiviate come documenti nel tuo dataset e vengono conteggiate nella quota documenti.',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': 'Query condivisa salvata',
   /** Save success label */
   'save-query.success': 'Query salvata',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': 'Query spostata in personale',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Versione API',
