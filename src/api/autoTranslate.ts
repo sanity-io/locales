@@ -421,7 +421,7 @@ export async function pushChanges(options: {
 
       if (!hasMaintainers) {
         // Automatically merge PRs that are missing maintainers - there's no one to review
-        await execFile('gh', ['pr', 'merge', branchName, '--squash', '--delete-branch'], {
+        await execFile('gh', ['pr', 'merge', branchName, '--squash', '--delete-branch', '--auto'], {
           cwd: rootPath,
         })
       }
