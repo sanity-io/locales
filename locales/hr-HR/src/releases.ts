@@ -523,7 +523,8 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release has been scheduled */
   'toast.schedule.success': "Izdanje '<strong>{{title}}</strong>' je zakazano.",
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error': "Nije uspjelo vraćanje iz arhive '<strong>{{title}}</strong>': {{error}}",
+  'toast.unarchive.error':
+    "Nije uspjelo vraćanje iz arhive '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release failed to unschedule */
   'toast.unschedule.error':
     "Nije uspjelo otkazivanje zakazivanja '<strong>{{title}}</strong>': {{error}}",
