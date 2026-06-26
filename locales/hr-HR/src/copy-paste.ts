@@ -46,7 +46,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Vrijednost tipa "{{type}}" nije dopuštena u ovom polju',
   /** The validation message that is shown when read-only fields are skipped during document paste */
-  'copy-paste.on-paste.validation.read-only-fields-skipped.description': undefined, // 'Skipped read-only fields: {{fieldNames}}'
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Preskočena polja samo za čitanje: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Odredište je samo za čitanje',
