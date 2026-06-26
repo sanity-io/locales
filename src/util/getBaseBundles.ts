@@ -129,6 +129,7 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
   })
 
   if (nodes.length === 0) {
+    // Some bundled files re-export the helper without defining any locale resources.
     return []
   }
 
