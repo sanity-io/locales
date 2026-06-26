@@ -30,7 +30,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown when the document is used in multiple locations */
   'locations-banner.locations-count_other': 'Koristi se na {{count}} stranica',
   /** The text shown when a resolver exists but the document is not used in any locations */
-  'locations-banner.locations-count_zero': 'Ne koristi se ni na jednoj stranici',
+  'locations-banner.locations-count_zero': 'Ne koristi se niti na jednoj stranici',
   /** The text shown whilst the locations resolver is executing */
   'locations-banner.resolving.text': 'Razrješavanje lokacija...',
 

@@ -51,7 +51,7 @@ export default removeUndefinedLocaleResources({
   'action.schedule-unpublish.disabled.not-published':
     'Dokument mora biti objavljen kako bi se moglo zakazati poništavanje objave',
   /** Label for unarchiving a release */
-  'action.unarchive': 'Razarhiviraj izdanje',
+  'action.unarchive': 'Vrati izdanje iz arhive',
   /** Action text for unpublishing a document in a release in the context menu */
   'action.unpublish': 'Poništi objavu',
   /** Action message for scheduling an unpublished of a document  */
@@ -168,7 +168,7 @@ export default removeUndefinedLocaleResources({
   /** Text for the releases detail screen when a release was published from scheduling */
   'dashboard.details.published-on': 'Objavljeno {{date}}',
   /** Text for the releases detail screen in the unpin release button. */
-  'dashboard.details.unpin-release': 'Odkvači izdanje sa studija',
+  'dashboard.details.unpin-release': 'Otkači izdanje sa studija',
 
   /** Label for the button to proceed deleting a release */
   'delete-dialog.confirm-delete-button': 'Da, izbriši izdanje',
@@ -178,10 +178,10 @@ export default removeUndefinedLocaleResources({
   'delete-dialog.confirm-delete-description_other':
     'Ovo će izbrisati {{count}} verzija dokumenata.',
   /** Header for deleting a release dialog */
-  'delete-dialog.confirm-delete.header': 'Jeste li sigurni da želite izbrisati ovaj release?',
+  'delete-dialog.confirm-delete.header': 'Jeste li sigurni da želite izbrisati ovo izdanje?',
 
   /** Label when a release has been deleted by a different user */
-  'deleted-release': "Release '<strong>{{title}}</strong>' je izbrisan",
+  'deleted-release': "Izdanje '<strong>{{title}}</strong>' je izbrisan",
 
   /** Text for when there's no changes in a release diff */
   'diff.list-empty': 'Popis promjena je prazan, pogledajte dokument',
@@ -202,7 +202,7 @@ export default removeUndefinedLocaleResources({
   /** Title for dialog for discarding a draft of a document */
   'discard-version-dialog.title-draft': 'Odbaci nacrt',
   /** Title for dialog for discarding a version of a document */
-  'discard-version-dialog.title-release': 'Ukloni iz releasea',
+  'discard-version-dialog.title-release': 'Ukloni iz izdanja',
 
   /** Label for when a document in a release has a single validation warning */
   'document-validation.error_one': '{{count}} greška validacije',
@@ -210,7 +210,7 @@ export default removeUndefinedLocaleResources({
   'document-validation.error_other': '{{count}} greške/grešaka validacije',
 
   /** Label for the button to proceed with duplicating a release */
-  'duplicate-dialog.confirm-duplicate-button': 'Da, dupliciraj release',
+  'duplicate-dialog.confirm-duplicate-button': 'Da, dupliciraj izdanje',
   /** Description for the dialog confirming the duplicate of a release with one document */
   'duplicate-dialog.confirm-duplicate-description_one':
     'Ovo će duplicirati release i 1 verziju dokumenta.',
@@ -247,7 +247,7 @@ export default removeUndefinedLocaleResources({
   /**The text that will be shown in the footer to indicate the time the release was published */
   'footer.status.published': 'Objavljeno',
   /**The text that will be shown in the footer to indicate the time the release was unarchived */
-  'footer.status.unarchived': 'Razarhivirano',
+  'footer.status.unarchived': 'Vraćeno iz arhive',
 
   /** Label text for the loading state whilst release is being loaded */
   'loading-release': 'Učitavanje izdanja',
@@ -313,7 +313,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission to duplicate release */
   'permissions.error.duplicate': 'Nemate dopuštenje za dupliciranje ovog izdanja',
   /** Tooltip label when the user doesn't have permission to unarchive release */
-  'permissions.error.unarchive': 'Nemate dopuštenje za razarhiviranje ovog izdanja',
+  'permissions.error.unarchive': 'Nemate dopuštenje za vraćanje ovog izdanja iz arhive',
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Nemate dopuštenje za poništavanje objave ovog dokumenta',
 
@@ -474,7 +474,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - time */
   'table-header.time': 'Vrijeme',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': 'Release',
+  'table-header.title': 'Izdanje',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Vrsta',
   /** Header for the document table in the release tool - when */
@@ -523,7 +523,7 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release has been scheduled */
   'toast.schedule.success': "Izdanje '<strong>{{title}}</strong>' je zakazano.",
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error': "Nije uspjelo razarhiviranje '<strong>{{title}}</strong>': {{error}}",
+  'toast.unarchive.error': "Nije uspjelo vraćanje iz arhive '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release failed to unschedule */
   'toast.unschedule.error':
     "Nije uspjelo otkazivanje zakazivanja '<strong>{{title}}</strong>': {{error}}",

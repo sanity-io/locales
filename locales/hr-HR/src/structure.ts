@@ -173,7 +173,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Ova referenca je uklonjena otkako ste je otvorili.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': 'Dodaj u bundle',
+  'banners.release.action.add-to-bundle': 'Dodaj u paket',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Dodaj u izdanje',
   /** The text that appears for the action button to add the current document to the global release */
