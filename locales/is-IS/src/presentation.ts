@@ -42,7 +42,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the tab that shows the document editor at narrow viewports */
   'narrow-tabs.content-tab.label': 'Uppbygging',
   /** The label for the tab that shows the navigator at narrow viewports */
-  'narrow-tabs.navigator-tab.label': 'Flakkar',
+  'narrow-tabs.navigator-tab.label': 'Leiðsögumaður',
   /** The label for the tab that shows the preview at narrow viewports */
   'narrow-tabs.preview-tab.label': 'Kynning',
 
@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown on the button for dismissing the error overlay after a timeout */
   'preview-frame.continue-button.text': 'Halda áfram engu að síður',
   /** The label for the loader's connection status */
-  'preview-frame.loader.connection-status.label': 'Tengiststaða loader',
+  'preview-frame.loader.connection-status.label': 'Tengiststaða hleðslutækis',
   /** The `aria-label` for the navigator toggle button */
   'preview-frame.navigator.toggle-button.aria-label': 'Kveikja/slökkva á yfirliti',
   /** The tooltip text for the navigator toggle button */
@@ -102,7 +102,7 @@ export default removeUndefinedLocaleResources({
   'preview-location-input.error_missing-origin': 'Vefslóð verður að byrja á {{origin}}',
   /** The validation error message shown when the preview location input's base path matches that of the studio */
   'preview-location-input.error_same-base-path':
-    'Vefslóð má ekki hafa sömu grunnslóð og Studio {{basePath}}',
+    'Vefslóð getur ekki haft sama grunnslóð og Studio {{basePath}}',
 
   /** The toast description for the error message explaining that the iframe won't navigate to the new preview URL due to an URL origin security mismatch. */
   'preview-search-param.configuration.error.description':
@@ -112,12 +112,12 @@ export default removeUndefinedLocaleResources({
 
   /** Error toast that notifies that URL Preview Secrets can't be generated as the user lacks ACL grants */
   'preview-url-secret.missing-grants':
-    'Þú hefur ekki leyfi til að búa til URL Preview Secrets. Þetta mun líklega valda því að forskoðunin mistakist við hleðslu.',
+    'Þú hefur ekki leyfi til að búa til URL forskoðunarleyndarmál. Þetta mun líklega valda því að forskoðunin mistakist við hleðslu.',
 
   /** Menu item in the share preview menu that allows copying the current preview URL, if sharing is enabled */
   'share-preview-menu.copy-url.text': 'Afrita forskoðunartengil',
   /** Fallback message shown when the current user is not permitted to share previews */
-  'share-preview-menu.error_missing-grants': 'Þú hefur ekki leyfi til að deila forskoðunum. ',
+  'share-preview-menu.error_missing-grants': 'Þú hefur ekki leyfi til að deila forskoðunum.',
   /** Error message toast that shows the current user does not have permission to toggle sharing of the current preview */
   'share-preview-menu.error_toggle-sharing':
     'Þú hefur ekki leyfi til að kveikja eða slökkva á deilingu þessarar forskoðunar',
@@ -127,22 +127,22 @@ export default removeUndefinedLocaleResources({
   /** Placeholder message for the QR Code SVG when sharing is yet to be enabled */
   'share-preview-menu.qr-code.placeholder': 'QR kóði mun birtast hér',
   /** The <title> for the QR Code SVG that shows a link to the current preview */
-  'share-preview-menu.qr-code.title': 'QR kóði sem inniheldur slóðina: {{url}}',
+  'share-preview-menu.qr-code.title': 'QR kóði sem kóðar vefslóðina: {{url}}',
   /** The first line of the label that renders next to the sharing toggle, it renders on two rows */
   'share-preview-menu.toggle-button.label_first-line': 'Deildu þessari forskoðun',
   /** The second line of the label that renders next to the sharing toggle, it renders on two rows */
-  'share-preview-menu.toggle-button.label_second-line': 'með öllum sem hafa hlekkinn',
+  'share-preview-menu.toggle-button.label_second-line': 'með öllum sem hafa tengilinn',
   /** The text shown on the sharing toggle tooltip when sharing is enabled */
   'share-preview-menu.toggle-button.tooltip_disable': 'Slökkva á deilingu',
   /** The text shown on the sharing toggle tooltip when sharing is disabled */
   'share-preview-menu.toggle-button.tooltip_enable': 'Kveikja á deilingu',
 
   /** The status of the clipboard operation when copying a URL */
-  'share-url.clipboard.status_copying': 'Afritar slóð á klippiborð…',
+  'share-url.clipboard.status_copying': 'Afritar vefslóð á klippiborð…',
   /** The status of the clipboard operation when copying a URL */
   'share-url.clipboard.status_failed': 'Afritun mistókst',
   /** The status of the clipboard operation when copying a URL */
-  'share-url.clipboard.status_success': 'Slóðin hefur verið afrituð á klippiborðið',
+  'share-url.clipboard.status_success': 'Vefslóðin hefur verið afrituð á klippiborðið',
   /** The status of the clipboard operation when copying a URL */
   'share-url.clipboard.status_unsupported': 'Klippiborð er ekki stutt',
   /** The share URL menu item text for opening a preview window */

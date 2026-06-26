@@ -4,9 +4,9 @@ export default removeUndefinedLocaleResources({
   /** Action text for adding a document to release */
   'action.add-document': 'Bæta við skjali',
   /** Action text for archiving a release */
-  'action.archive': 'Geymsla útgáfu',
+  'action.archive': 'Geyma útgáfu',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': 'Afskráðu þessa útgáfu til að geyma hana',
+  'action.archive.tooltip': 'Afplanaðu þessa útgáfu til að geyma hana',
   /** Action text for showing the archived releases */
   'action.archived': 'Geymt',
   /** Menu item label for copying release ID */
@@ -22,7 +22,7 @@ export default removeUndefinedLocaleResources({
   /** Action text for deleting a release */
   'action.delete-release': 'Eyða útgáfu',
   /** Menu item label for showing scheduled drafts */
-  'action.drafts': 'Áætlaðar drög',
+  'action.drafts': 'Tímasettar drög',
   /** Action text for duplicating a release */
   'action.duplicate-release': 'Tvítaka útgáfu',
   /** Action text for editing a release */
@@ -44,12 +44,12 @@ export default removeUndefinedLocaleResources({
   /** Text for the review changes button in release tool */
   'action.review': 'Yfirfara breytingar',
   /** Action text for scheduling a release */
-  'action.schedule': 'Áætla útgáfu...',
+  'action.schedule': 'Tímasetja útgáfu...',
   /** Action text for scheduling unpublish of a draft document */
-  'action.schedule-unpublish': 'Áætla afbirtingu',
+  'action.schedule-unpublish': 'Tímasetja afbirtingu',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
   'action.schedule-unpublish.disabled.not-published':
-    'Skjalið verður að vera birt til að áætla afbirtingu',
+    'Skjalið verður að vera birt til að tímasetja afbirtingu',
   /** Label for unarchiving a release */
   'action.unarchive': 'Taka útgáfu úr geymslu',
   /** Action text for unpublishing a document in a release in the context menu */
@@ -68,12 +68,12 @@ export default removeUndefinedLocaleResources({
   'activity.event.archive': 'Safnvistað útgáfuna <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is created */
   'activity.event.create':
-    'Bjó til útgáfuna <strong>{{releaseTitle}}</strong> <ScheduleTarget>með markmiðstíma </ScheduleTarget>',
+    'Stofnaði útgáfuna <strong>{{releaseTitle}}</strong> <ScheduleTarget>með markmiðstíma </ScheduleTarget>',
   /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Fleygði skjalaútgáfu',
   'activity.event.edit': 'Stillti útgáfutíma á <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
-  'activity.event.edit-time-asap': 'Eins fljótt og mögulegt er',
+  'activity.event.edit-time-asap': 'Eins fljótt og auðið er',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Óákveðið',
   /* The text for the activity event when the release is published */
@@ -112,38 +112,38 @@ export default removeUndefinedLocaleResources({
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
   'banner.confirm-active-scheduled-drafts_one':
-    'Það er {{count}} Scheduled Draft sem þarfnast staðfestingar á tímaáætlun',
+    'Það er {{count}} Scheduled Draft sem þarfnast staðfestingar á tímasetningunni',
   /** Banner text showing count of active scheduled drafts requiring confirmation with multiple drafts */
   'banner.confirm-active-scheduled-drafts_other':
-    'Það eru {{count}} Scheduled Drafts sem þarfnast staðfestingar á tímaáætlun',
+    'Það eru {{count}} Scheduled Drafts sem þarfnast staðfestingar á tímasetningunni',
   /** Button text for confirming scheduling of active drafts */
-  'banner.confirm-active-scheduled-drafts.button': 'Halda áfram tímaáætlun',
+  'banner.confirm-active-scheduled-drafts.button': 'Halda áfram með tímasetningu',
   /** Button text when confirming schedules from paused mode */
-  'banner.confirm-active-scheduled-drafts.button-paused': 'Halda áfram öllum tímaáætlunum',
+  'banner.confirm-active-scheduled-drafts.button-paused': 'Halda áfram með allar tímasetningar',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
   'banner.drafts-mode-disabled':
-    'Drafts-stilling hefur verið óvirk en það eru enn Scheduled Drafts sem bíða birtingar.',
+    'Drafts-stilling hefur verið óvirk en það eru enn scheduled drafts sem á að birta.',
   /** Banner text shown when navigating to a release that does not exist */
   'banner.release-not-found': 'Þessa útgáfu var ekki hægt að finna',
   /** Tooltip for the dismiss button in the release not found banner */
   'banner.release-not-found.dismiss': 'Hunsa',
   /** Banner text shown when scheduled drafts feature is disabled but there are still scheduled drafts */
   'banner.scheduled-drafts-disabled':
-    'Scheduled drafts hefur verið gert óvirkt en það eru enn Scheduled Drafts sem bíða birtingar.',
+    'Scheduled drafts hefur verið gert óvirkt en það eru enn scheduled drafts sem á að birta.',
 
   /** Title for changes to published documents */
   'changes-published-docs.title': 'Breytingar á birtum skjölum',
 
   /** Dialog confirm button text for confirming all scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.confirm-button': 'Staðfesta tímaáætlanir',
+  'confirm-active-scheduled-drafts-dialog.confirm-button': 'Staðfesta tímasetningar',
   /** Dialog description for confirming active scheduled drafts */
   'confirm-active-scheduled-drafts-dialog.description':
-    'Setja allar hlédregnar Scheduled Drafts í tímaáætlun fyrir fyrirhugaðar birtingardagsetningar',
+    'Tímasetja allar hlédregnar Scheduled Drafts á fyrirhugaðar birtingardagsetningar',
   /** Dialog warning when some scheduled drafts have past dates */
   'confirm-active-scheduled-drafts-dialog.past-dates-warning':
-    'Sumar þessara Scheduled Drafts eru tímasettar fyrir liðnar dagsetningar. Staðfesting tímaáætlana mun birta þær útgáfur skjala strax.',
+    'Sumar þessara Scheduled Drafts eru tímasettar á liðnar dagsetningar. Staðfesting tímasetninganna mun birta þær útgáfur skjalanna strax.',
   /** Dialog title for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.title': 'Halda áfram Scheduled Drafts',
+  'confirm-active-scheduled-drafts-dialog.title': 'Halda áfram með Scheduled Drafts',
 
   /** Suffix for when a release is a copy of another release */
   'copy-suffix': 'Afrit',
@@ -220,7 +220,7 @@ export default removeUndefinedLocaleResources({
   'duplicate-dialog.confirm-duplicate-header': 'Ertu viss um að þú viljir tvítaka þessa útgáfu?',
 
   /** Title text displayed for technical error details */
-  'error-details-title': 'Villulegar upplýsingar',
+  'error-details-title': 'Villuupplýsingar',
 
   /** Title text when error during release update */
   'failed-edit-title': 'Mistókst að vista breytingar',
@@ -297,7 +297,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for when a user doesn't have publish or schedule releases */
   'permission-missing-description':
-    'Hlutverkið þitt takmarkar hvað þú getur séð í þessari útgáfu. Þú getur hvorki birt né tímasett þessa útgáfu.',
+    'Hlutverk þitt takmarkar hvað þú getur séð í þessari útgáfu. Þú getur hvorki birt né tímasett þessa útgáfu.',
 
   /** Text for when a user doesn't have publish or schedule releases */
   'permission-missing-title': 'Takmarkaður aðgangur',
@@ -317,17 +317,17 @@ export default removeUndefinedLocaleResources({
 
   /** Tooltip text for when one user is editing a document in a release */
   'presence.tooltip.one':
-    '{{displayName}} er að breyta þessu skjali í „{{releaseTitle}}" útgáfunni núna',
+    '{{displayName}} er að breyta þessu skjali í útgáfunni „{{releaseTitle}}" núna',
 
   /** Tooltip text for publish release action when there are no documents */
-  'publish-action.validation.no-documents': 'Engin skjöl eru til birtingar',
+  'publish-action.validation.no-documents': 'Engin skjöl eru til að birta',
 
   /** Description for the dialog confirming the publish of a release with one document */
   'publish-dialog.confirm-publish-description_one':
-    '„<strong>{{title}}</strong>" útgáfan og skjalið hennar verða birt.',
+    "Útgáfan '<strong>{{title}}</strong>' og skjalið hennar verða birt.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
   'publish-dialog.confirm-publish-description_other':
-    '„<strong>{{title}}</strong>" útgáfan og {{releaseDocumentsLength}} skjöl hennar verða birt.',
+    "Útgáfan '<strong>{{title}}</strong>' og {{releaseDocumentsLength}} skjöl hennar verða birt.",
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Ertu viss um að þú viljir birta útgáfuna og allar skjalaútgáfur?',
@@ -339,7 +339,7 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.validation.no-permission': 'Þú hefur ekki leyfi til að birta',
 
   /** Title for information card on a published release */
-  'publish-info.title': 'Þessi útgáfa hefur verið birt.',
+  'publish-info.title': 'Þessi útgáfa er birt.',
 
   /** Placeholder title for a release with no title */
   'release-placeholder.title': 'Án titils',
@@ -353,7 +353,7 @@ export default removeUndefinedLocaleResources({
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Snúa við útgáfunni strax',
   /** Title for the dialog confirming the revert of a release */
-  'revert-dialog.confirm-revert.title': 'Ertu viss um að þú viljir snúa við „{{title}}" útgáfunni?',
+  'revert-dialog.confirm-revert.title': "Ertu viss um að þú viljir snúa við útgáfunni '{{title}}'?",
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Breytingar voru gerðar á skjölum í þessari útgáfu eftir að þau voru birt. Ef snúið er við mun það skrifa yfir þessar breytingar.',
@@ -394,16 +394,16 @@ export default removeUndefinedLocaleResources({
   /** Title for unschedule release dialog */
   'schedule-dialog.confirm-title': 'Tímasetja útgáfuna',
   /** Description for warning that the published schedule time is in the past */
-  'schedule-dialog.publish-date-in-past-warning': 'Tímasettu fyrir framtíðartíma og dagsetningu.',
+  'schedule-dialog.publish-date-in-past-warning': 'Tímasettu fyrir framtíðartíma og -dag.',
   /** Label for date picker when scheduling a release */
   'schedule-dialog.select-publish-date-label': 'Tímasetja þann',
 
   /** Confirm button text for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.confirm': 'Tímasetja birtingarbrottfall',
+  'schedule-unpublish-dialog.confirm': 'Tímasetja birtingarlok',
   /** Description for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.description': 'Veldu hvenær þetta skjal á að fara úr birtingu.',
+  'schedule-unpublish-dialog.description': 'Veldu hvenær þetta skjal á að taka úr birtingu.',
   /** Header for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.header': 'Tímasetja drög fyrir birtingarbrottfall',
+  'schedule-unpublish-dialog.header': 'Tímasetja drög fyrir birtingarlok',
 
   /** Placeholder for search of documents in a release */
   'search-documents-placeholder': 'Leita í skjölum',
@@ -535,7 +535,7 @@ export default removeUndefinedLocaleResources({
     'Allar breytingar sem gerðar voru á þessari útgáfu skjalsins munu glatast.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
   'unpublish-dialog.description.to-draft':
-    'Þetta mun taka skjalið úr birtingu sem hluta af <Label>{{title}}</Label> útgáfunni, og búa til drög ef engin drög eru til við útgáfutímann.',
+    'Þetta mun taka skjalið úr birtingu sem hluta af <Label>{{title}}</Label> útgáfunni, og búa til drög ef engin drög eru til á útgáfutímanum.',
   /** Title for the dialog confirming the unpublish of a release */
   'unpublish-dialog.header': 'Ertu viss um að þú viljir taka þetta skjal úr birtingu við útgáfu?',
 
