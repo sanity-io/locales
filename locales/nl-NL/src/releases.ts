@@ -94,7 +94,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the button to proceed with archiving a release */
   'archive-dialog.confirm-archive-button': 'Ja, release archiveren',
   /** Description for the dialog confirming the archive of a release with one document */
-  'archive-dialog.confirm-archive-description_one': 'Dit archiveert 1 documentversie.',
+  'archive-dialog.confirm-archive-description_one': 'Dit archiveert één documentversie.',
   /** Description for the dialog confirming the archive of a release with more than one document */
   'archive-dialog.confirm-archive-description_other': 'Dit archiveert {{count}} documentversies.',
   /** Header for the dialog confirming the archive of a release */
@@ -111,7 +111,7 @@ export default removeUndefinedLocaleResources({
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
   'banner.confirm-active-scheduled-drafts_one':
-    'Er is {{count}} Scheduled Draft die planningsbevestiging vereist',
+    'Er is één Scheduled Draft die planningsbevestiging vereist',
   /** Banner text showing count of active scheduled drafts requiring confirmation with multiple drafts */
   'banner.confirm-active-scheduled-drafts_other':
     'Er zijn {{count}} Scheduled Drafts die planningsbevestiging vereisen',
@@ -172,7 +172,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the button to proceed deleting a release */
   'delete-dialog.confirm-delete-button': 'Ja, release verwijderen',
   /** Description for the dialog confirming the deleting of a release with one document */
-  'delete-dialog.confirm-delete-description_one': 'Dit zal 1 documentversie verwijderen.',
+  'delete-dialog.confirm-delete-description_one': 'Dit zal één documentversie verwijderen.',
   /** Description for the dialog confirming the deleting of a release with more than one document */
   'delete-dialog.confirm-delete-description_other':
     'Dit zal {{count}} documentversies verwijderen.',

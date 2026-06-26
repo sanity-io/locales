@@ -125,7 +125,7 @@ export default removeUndefinedLocaleResources({
   'share-preview-menu.qr-code.instructions':
     'Scan de QR Code om het voorbeeld op je telefoon te openen.',
   /** Placeholder message for the QR Code SVG when sharing is yet to be enabled */
-  'share-preview-menu.qr-code.placeholder': 'QR-code verschijnt hier',
+  'share-preview-menu.qr-code.placeholder': 'QR code verschijnt hier',
   /** The <title> for the QR Code SVG that shows a link to the current preview */
   'share-preview-menu.qr-code.title': 'Een QR Code die de URL codeert: {{url}}',
   /** The first line of the label that renders next to the sharing toggle, it renders on two rows */
