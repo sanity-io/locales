@@ -6,7 +6,7 @@ export default removeUndefinedLocaleResources({
   /** Action text for archiving a release */
   'action.archive': 'Geyma útgáfu',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': 'Afskedulaðu þessa útgáfu til að geyma hana',
+  'action.archive.tooltip': 'Afplanaðu þessa útgáfu til að geyma hana',
   /** Action text for showing the archived releases */
   'action.archived': 'Geymt',
   /** Menu item label for copying release ID */
