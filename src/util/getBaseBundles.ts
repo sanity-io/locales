@@ -129,7 +129,7 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
   })
 
   if (nodes.length === 0) {
-    throw new Error(`Could not find call to ${LOCALE_DEF_FN_NAME} in ${fileName}`)
+    return []
   }
 
   const bundles: Array<ResourceBundle> = []

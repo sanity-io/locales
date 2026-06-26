@@ -49,8 +49,13 @@ function withDefaultConfig(
   }
 }
 
-function localePluginToWorkspace(plugin: PluginOptions): WorkspaceOptions | null {
-  const i18n = plugin.i18n || {}
+function localePluginToWorkspace(plugin: unknown): WorkspaceOptions | null {
+  if (!plugin || typeof plugin !== 'object') {
+    return null
+  }
+
+  const localePlugin = plugin as PluginOptions
+  const i18n = localePlugin.i18n || {}
   if (!Array.isArray(i18n.locales)) {
     return null
   }
@@ -60,5 +65,5 @@ function localePluginToWorkspace(plugin: PluginOptions): WorkspaceOptions | null
     return null
   }
 
-  return withDefaultConfig(locale, plugin)
+  return withDefaultConfig(locale, localePlugin)
 }
