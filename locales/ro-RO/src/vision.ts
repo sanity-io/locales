@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Interoghează',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': 'Salvează copie personală',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': 'Salvează ca personal',
   /** Label for saving a query */
   'action.save-query': 'Salvează interogarea',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': 'Salvează ca partajat',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': 'Anulează partajarea',
   /** Label for updating a query */
   'action.update': 'Actualizează',
 
   /** Label for actions user can take */
   'label.actions': 'Acțiuni',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': 'Toate',
   /** Label for saved queries that have been edited */
   'label.edited': 'Editat',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'Partajează',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': 'Partajat',
   /** Label for saved query type "team" */
   'label.team': 'Echipă',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': 'Fără titlu',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrii nu sunt JSON valid',
@@ -95,15 +95,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'Eroare la salvarea interogării',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': 'Copie personală salvată',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning':
+    'Interogările partajate sunt stocate ca documente în dataset-ul dvs. și sunt contorizate în cota dvs. de documente.',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': 'Interogare partajată salvată',
   /** Save success label */
   'save-query.success': 'Interogarea a fost salvată',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': 'Interogare mutată la personal',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Versiunea API',

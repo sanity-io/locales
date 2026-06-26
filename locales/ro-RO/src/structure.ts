@@ -167,7 +167,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Această referință a fost eliminată de când ați deschis-o.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Adaugă la bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Adaugă la lansare',
   /** The text that appears for the action button to add the current document to the global release */
@@ -455,7 +455,7 @@ export default removeUndefinedLocaleResources({
     'Nu sunt definite referințe de intrare pentru acest tip, consultați documentația pentru mai multe informații.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Nu au fost găsite referințe primite.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Nu s-au găsit referințe de acest tip.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -547,7 +547,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Caută în listă',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Această opțiune de sortare folosește câmpuri care nu fac parte din acest tip de document',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detalii',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -582,7 +583,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> a fost publicat',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'Versiunea a fost publicată',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> a fost restaurat',

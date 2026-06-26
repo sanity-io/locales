@@ -2,22 +2,25 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for scheduling publish of a draft document */
-  'action.schedule-publish': undefined, // 'Schedule publish'
+  'action.schedule-publish': 'Agendar publicação',
   /** Tooltip text for when schedule publish fails */
-  'action.schedule-publish-error': undefined, // 'Failed to schedule publishing'
+  'action.schedule-publish-error': 'Falha ao agendar a publicação',
   /** Tooltip text for when a document is scheduled for publishing */
-  'action.schedule-publish-success': undefined, // 'Document scheduled for publishing'
+  'action.schedule-publish-success': 'Documento agendado para publicação',
   /** Tooltip description for when a document is scheduled for publishing */
-  'action.schedule-publish-success-description': undefined, // 'Publishing scheduled for {{publishAt}}'
+  'action.schedule-publish-success-description': 'Publicação agendada para {{publishAt}}',
   /** Tooltip text for when schedule publish is disabled due to cardinality one releases */
-  'action.schedule-publish.disabled.cardinality-one': undefined, // 'A Scheduled Draft for this document already exists.'
+  'action.schedule-publish.disabled.cardinality-one':
+    'Já existe um Rascunho Agendado para este documento.',
   /** Tooltip text for when schedule publish is disabled due to validation errors */
-  'action.schedule-publish.disabled.validation-issues': undefined, // 'Cannot Schedule Draft due to validation errors in the current draft.'
+  'action.schedule-publish.disabled.validation-issues':
+    'Não é possível agendar o rascunho devido a erros de validação no rascunho atual.',
 
   /** Empty state action documentation for scheduled drafts */
-  'empty-state.action.documentation': undefined, // 'Learn about scheduling'
+  'empty-state.action.documentation': 'Saiba mais sobre agendamento',
   /** Empty state description for scheduled drafts */
-  'empty-state.description': undefined, // 'Schedule and lock draft documents for publishing at a future date and time.'
+  'empty-state.description':
+    'Agende e bloqueie documentos em rascunho para publicação em uma data e hora futuras.',
   /** Empty state title for scheduled drafts */
-  'empty-state.title': undefined, // 'Scheduled Drafts'
+  'empty-state.title': 'Rascunhos Agendados',
 })

@@ -2,45 +2,46 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Browse button text */
-  'feedback.attachment.browse': undefined, // 'Browse'
+  'feedback.attachment.browse': 'Gennemse',
   /** Drop zone text for image attachment */
-  'feedback.attachment.drop-zone': undefined, // 'Drag or paste file here'
+  'feedback.attachment.drop-zone': 'Træk eller indsæt fil her',
   /** Error shown when attached image exceeds size limit */
-  'feedback.attachment.error.size': undefined, // 'Image must be under 20 MB'
+  'feedback.attachment.error.size': 'Billedet skal være under 20 MB',
   /** Label for the image attachment section */
-  'feedback.attachment.label': undefined, // 'Attach an image'
+  'feedback.attachment.label': 'Vedhæft et billede',
   /** Remove attached image button text */
-  'feedback.attachment.remove': undefined, // 'Remove'
+  'feedback.attachment.remove': 'Fjern',
   /** Cancel button text */
-  'feedback.cancel': undefined, // 'Cancel'
+  'feedback.cancel': 'Annuller',
   /** Consent disclaimer shown when the user agrees to follow up */
-  'feedback.consent.disclaimer': undefined, // 'We\'d love to learn more. Selecting yes shares your name and email with the Sanity team.'
+  'feedback.consent.disclaimer':
+    'Vi vil gerne høre mere. Hvis du vælger ja, deles dit navn og din e-mail med Sanity-teamet.',
   /** Label for the contact consent toggle */
-  'feedback.consent.label': undefined, // 'Can we follow up with you about this feedback?'
+  'feedback.consent.label': 'Må vi følge op med dig om denne feedback?',
   /** Consent toggle: no */
-  'feedback.consent.no': undefined, // 'No'
+  'feedback.consent.no': 'Nej',
   /** Consent toggle: yes */
-  'feedback.consent.yes': undefined, // 'Yes'
+  'feedback.consent.yes': 'Ja',
   /** Title of the feedback dialog */
-  'feedback.dialog.title': undefined, // 'Share feedback with Sanity'
+  'feedback.dialog.title': 'Del feedback med Sanity',
   /** Toast message after failed submission */
-  'feedback.error': undefined, // 'Failed to submit feedback with error'
+  'feedback.error': 'Kunne ikke indsende feedback med fejl',
   /** Label for "send feedback" in the help resources menu */
-  'feedback.menu-item': undefined, // 'Send feedback'
+  'feedback.menu-item': 'Send feedback',
   /** Label for the message field */
-  'feedback.message.label': undefined, // 'What is working? What could be better?'
+  'feedback.message.label': 'Hvad fungerer godt? Hvad kan gøres bedre?',
   /** Placeholder for the message field */
-  'feedback.message.placeholder': undefined, // 'Describe your issue or request...'
+  'feedback.message.placeholder': 'Beskriv dit problem eller din anmodning...',
   /** Sentiment option: happy */
-  'feedback.sentiment.happy': undefined, // 'Easy'
+  'feedback.sentiment.happy': 'Nemt',
   /** Label for the sentiment question */
-  'feedback.sentiment.label': undefined, // 'How easy or difficult is Sanity to use?'
+  'feedback.sentiment.label': 'Hvor nemt eller svært er Sanity at bruge?',
   /** Sentiment option: neutral */
-  'feedback.sentiment.neutral': undefined, // 'Not sure'
+  'feedback.sentiment.neutral': 'Ikke sikker',
   /** Sentiment option: unhappy */
-  'feedback.sentiment.unhappy': undefined, // 'Difficult'
+  'feedback.sentiment.unhappy': 'Svært',
   /** Submit button text */
-  'feedback.submit': undefined, // 'Send feedback'
+  'feedback.submit': 'Send feedback',
   /** Toast message after successful submission */
-  'feedback.success': undefined, // 'Feedback submitted, thank you!'
+  'feedback.success': 'Feedback indsendt, tak!',
 })

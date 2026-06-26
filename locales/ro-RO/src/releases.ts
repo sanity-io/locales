@@ -2,499 +2,530 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for adding a document to release */
-  'action.add-document': undefined, // 'Add document'
+  'action.add-document': 'Adaugă document',
   /** Action text for archiving a release */
-  'action.archive': undefined, // 'Archive release'
+  'action.archive': 'Arhivează lansarea',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': undefined, // 'Unschedule this release to archive it'
+  'action.archive.tooltip': 'Anulați programarea acestei lansări pentru a o arhiva',
   /** Action text for showing the archived releases */
-  'action.archived': undefined, // 'Archived'
+  'action.archived': 'Arhivate',
   /** Menu item label for copying release ID */
-  'action.copy-release-id.label': undefined, // 'Copy release ID'
+  'action.copy-release-id.label': 'Copiați ID-ul lansării',
   /** Menu item label for copying release URL */
-  'action.copy-release-link.label': undefined, // 'Copy release URL'
+  'action.copy-release-link.label': 'Copiați URL-ul lansării',
   /** Menu item label for copying release title */
-  'action.copy-release-title.label': undefined, // 'Copy release title'
+  'action.copy-release-title.label': 'Copiați titlul lansării',
   /** Tooltip for copy release actions button */
-  'action.copy-release.label': undefined, // 'Copy'
+  'action.copy-release.label': 'Copiați',
   /** Action text for staging a new revert release */
-  'action.create-revert-release': undefined, // 'Create a new release'
+  'action.create-revert-release': 'Creați o lansare nouă',
   /** Action text for deleting a release */
-  'action.delete-release': undefined, // 'Delete release'
+  'action.delete-release': 'Ștergeți lansarea',
   /** Menu item label for showing scheduled drafts */
-  'action.drafts': undefined, // 'Scheduled drafts'
+  'action.drafts': 'Ciorne programate',
   /** Action text for duplicating a release */
-  'action.duplicate-release': undefined, // 'Duplicate release'
+  'action.duplicate-release': 'Duplicați lansarea',
   /** Action text for editing a release */
-  'action.edit': undefined, // 'Edit release'
+  'action.edit': 'Editați lansarea',
   /** Action text for reverting a release immediately without staging changes */
-  'action.immediate-revert-release': undefined, // 'Revert now'
+  'action.immediate-revert-release': 'Reveniți acum',
   /** Action text for opening a release */
-  'action.open': undefined, // 'Active'
+  'action.open': 'Activ',
   /** Action text for showing the paused scheduled drafts */
-  'action.paused': undefined, // 'Paused'
+  'action.paused': 'În pauză',
   /** Action text for publishing all documents in a release (and the release itself) */
-  'action.publish-all-documents': undefined, // 'Run release'
+  'action.publish-all-documents': 'Rulați lansarea',
   /** Menu item label for showing releases (multi-document releases) */
-  'action.releases': undefined, // 'Releases'
+  'action.releases': 'Lansări',
   /** Action text for reverting a release */
-  'action.revert': undefined, // 'Revert release'
+  'action.revert': 'Reveniți la lansare',
   /** Action message for when document is scheduled for unpublishing a document and you want to no longer unpublish it */
-  'action.revert-unpublish-actions': undefined, // 'Revert unpublish when releasing'
+  'action.revert-unpublish-actions': 'Anulați retragerea publicării la lansare',
   /** Text for the review changes button in release tool */
-  'action.review': undefined, // 'Review changes'
+  'action.review': 'Revizuiți modificările',
   /** Action text for scheduling a release */
-  'action.schedule': undefined, // 'Schedule release...'
+  'action.schedule': 'Programați lansarea...',
   /** Action text for scheduling unpublish of a draft document */
-  'action.schedule-unpublish': undefined, // 'Schedule Unpublish'
+  'action.schedule-unpublish': 'Programați retragerea publicării',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
-  'action.schedule-unpublish.disabled.not-published': undefined, // 'Document must be published to schedule unpublish'
+  'action.schedule-unpublish.disabled.not-published':
+    'Documentul trebuie să fie publicat pentru a programa retragerea publicării',
   /** Label for unarchiving a release */
-  'action.unarchive': undefined, // 'Unarchive release'
+  'action.unarchive': 'Dezarhivați lansarea',
   /** Action text for unpublishing a document in a release in the context menu */
-  'action.unpublish': undefined, // 'Unpublish'
+  'action.unpublish': 'Anulează publicarea',
   /** Action message for scheduling an unpublished of a document  */
-  'action.unpublish-doc-actions': undefined, // 'Unpublish when releasing'
+  'action.unpublish-doc-actions': 'Anulează publicarea la lansare',
   /** Action text for unscheduling a release */
-  'action.unschedule': undefined, // 'Unschedule release'
+  'action.unschedule': 'Anulează programarea lansării',
 
   /** Text for the summary button in release tool */
-  'actions.summary': undefined, // 'Summary'
+  'actions.summary': 'Rezumat',
 
   /* The text for the activity event when a document is added to a release */
-  'activity.event.add-document': undefined, // 'Added a document version'
+  'activity.event.add-document': 'A adăugat o versiune de document',
   /* The text for the activity event when the release is archived */
-  'activity.event.archive': undefined, // 'Archived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.archive': 'A arhivat lansarea <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is created */
-  'activity.event.create': undefined, // 'Created the <strong>{{releaseTitle}}</strong> release <ScheduleTarget>targeting </ScheduleTarget>'
+  'activity.event.create':
+    'A creat lansarea <strong>{{releaseTitle}}</strong> <ScheduleTarget>cu ținta </ScheduleTarget>',
   /* The text for the activity event when a document is removed from a release */
-  'activity.event.discard-document': undefined, // 'Discarded a document version'
-  'activity.event.edit': undefined, // 'Set release time to <ScheduleTarget></ScheduleTarget>'
+  'activity.event.discard-document': 'A eliminat o versiune de document',
+  'activity.event.edit': 'A setat ora lansării la <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
-  'activity.event.edit-time-asap': undefined, // 'As soon as possible'
+  'activity.event.edit-time-asap': 'Cât mai curând posibil',
   /**The text to display in the changes when the release type changes to undecided */
-  'activity.event.edit-time-undecided': undefined, // 'Undecided'
+  'activity.event.edit-time-undecided': 'Nedecis',
   /* The text for the activity event when the release is published */
-  'activity.event.publish': undefined, // 'Published the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.publish': 'A publicat lansarea <strong>{{releaseTitle}}</strong>',
   /* The text for the activity event when the release is scheduled */
-  'activity.event.schedule': undefined, // 'Marked as scheduled'
+  'activity.event.schedule': 'Marcat ca programat',
   /** The text for the activity event when the release is unarchived */
-  'activity.event.unarchive': undefined, // 'Unarchived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.unarchive': 'A dezarhivat lansarea <strong>{{releaseTitle}}</strong>',
   /** The text for the activity event when the release is unscheduled */
-  'activity.event.unschedule': undefined, // 'Marked as unscheduled'
+  'activity.event.unschedule': 'Marcat ca neprogramat',
   /** The loading text for when releases are loading */
-  'activity.panel.error': undefined, // 'An error occurred getting the release activity'
+  'activity.panel.error': 'A apărut o eroare la obținerea activității lansării',
   /** The loading text for when releases are loading */
-  'activity.panel.loading': undefined, // 'Loading release activity'
+  'activity.panel.loading': 'Se încarcă activitatea lansării',
   /** The title for the activity panel shown in the releases detail screen */
-  'activity.panel.title': undefined, // 'Activity'
+  'activity.panel.title': 'Activitate',
 
   /** Label for the button to proceed with archiving a release */
-  'archive-dialog.confirm-archive-button': undefined, // 'Yes, archive release'
+  'archive-dialog.confirm-archive-button': 'Da, arhivează lansarea',
   /** Description for the dialog confirming the archive of a release with one document */
-  'archive-dialog.confirm-archive-description_one': undefined, // 'This will archive 1 document version.'
+  'archive-dialog.confirm-archive-description_one': 'Aceasta va arhiva 1 versiune de document.',
   /** Header for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-header': undefined, // 'Are you sure you want to archive this release?'
+  'archive-dialog.confirm-archive-header': 'Sigur doriți să arhivați această lansare?',
   /** Title for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-title': undefined, // 'Are you sure you want to archive the <strong>\'{{title}}\'</strong> release?'
+  'archive-dialog.confirm-archive-title':
+    "Sigur doriți să arhivați lansarea <strong>'{{title}}'</strong>?",
 
   /** Description for information card on a published or archived release to description retention effects */
-  'archive-info.description': undefined, // 'It will be available for {{retentionDays}} days, then automatically removed on {{removalDate}}. <Link>Learn about retention</Link>.'
+  'archive-info.description':
+    'Va fi disponibilă timp de {{retentionDays}} zile, apoi eliminată automat pe {{removalDate}}. <Link>Aflați despre retenție</Link>.',
   /** Title for information card on a archived release */
-  'archive-info.title': undefined, // 'This release is archived'
+  'archive-info.title': 'Această lansare este arhivată',
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
-  'banner.confirm-active-scheduled-drafts_one': undefined, // 'There is {{count}} Scheduled Draft that requires scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_one':
+    'Există {{count}} Schiță Programată care necesită confirmare de programare',
   /** Button text for confirming scheduling of active drafts */
-  'banner.confirm-active-scheduled-drafts.button': undefined, // 'Resume scheduling'
+  'banner.confirm-active-scheduled-drafts.button': 'Reluați programarea',
   /** Button text when confirming schedules from paused mode */
-  'banner.confirm-active-scheduled-drafts.button-paused': undefined, // 'Resume all schedules'
+  'banner.confirm-active-scheduled-drafts.button-paused': 'Reluați toate programările',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
-  'banner.drafts-mode-disabled': undefined, // 'Drafts mode has been disabled but there are still scheduled drafts to be published.'
+  'banner.drafts-mode-disabled':
+    'Modul drafts a fost dezactivat, dar există în continuare drafturi programate pentru publicare.',
   /** Banner text shown when navigating to a release that does not exist */
-  'banner.release-not-found': undefined, // 'This release could not be found'
+  'banner.release-not-found': 'Această lansare nu a putut fi găsită',
   /** Tooltip for the dismiss button in the release not found banner */
-  'banner.release-not-found.dismiss': undefined, // 'Dismiss'
+  'banner.release-not-found.dismiss': 'Închide',
   /** Banner text shown when scheduled drafts feature is disabled but there are still scheduled drafts */
-  'banner.scheduled-drafts-disabled': undefined, // 'Scheduled drafts has been disabled but there are still scheduled drafts to be published.'
+  'banner.scheduled-drafts-disabled':
+    'Drafturi programate a fost dezactivat, dar există în continuare drafturi programate pentru publicare.',
 
   /** Title for changes to published documents */
-  'changes-published-docs.title': undefined, // 'Changes to published documents'
+  'changes-published-docs.title': 'Modificări ale documentelor publicate',
 
   /** Dialog confirm button text for confirming all scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.confirm-button': undefined, // 'Confirm Schedules'
+  'confirm-active-scheduled-drafts-dialog.confirm-button': 'Confirmați programările',
   /** Dialog description for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.description': undefined, // 'Schedule all paused Scheduled Drafts for their intended publish dates'
+  'confirm-active-scheduled-drafts-dialog.description':
+    'Programați toate Drafturile Programate în pauză pentru datele de publicare intenționare',
   /** Dialog warning when some scheduled drafts have past dates */
-  'confirm-active-scheduled-drafts-dialog.past-dates-warning': undefined, // 'Some of these Scheduled Drafts are scheduled for past dates. Confirming schedules will immediately publish those versions of documents.'
+  'confirm-active-scheduled-drafts-dialog.past-dates-warning':
+    'Unele dintre aceste Drafturi Programate sunt programate pentru date trecute. Confirmarea programărilor va publica imediat acele versiuni ale documentelor.',
   /** Dialog title for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.title': undefined, // 'Resume Scheduled Drafts'
+  'confirm-active-scheduled-drafts-dialog.title': 'Reluați Drafturile Programate',
 
   /** Suffix for when a release is a copy of another release */
-  'copy-suffix': undefined, // 'Copy'
+  'copy-suffix': 'Copie',
 
   /** Confirm button text for overriding existing draft */
-  'copy-to-draft-dialog.confirm-button': undefined, // 'Yes, override Draft'
+  'copy-to-draft-dialog.confirm-button': 'Da, suprascrie Draft-ul',
   /** Description for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.description': undefined, // 'A draft version of this document already exists. Copy the current version to the draft and override the existing draft version.'
+  'copy-to-draft-dialog.description':
+    'O versiune draft a acestui document există deja. Copiați versiunea curentă în draft și suprascrieți versiunea draft existentă.',
   /** Title for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.title': undefined, // 'Draft version already exists'
+  'copy-to-draft-dialog.title': 'Versiunea draft există deja',
 
   /** Text for when a release / document was created */
-  created: undefined, // 'Created <RelativeTime/>'
+  created: 'Creat <RelativeTime/>',
 
   /** Activity inspector button text */
-  'dashboard.details.activity': undefined, // 'Activity'
+  'dashboard.details.activity': 'Activitate',
   /** Text for the releases detail screen in the pin release button. */
-  'dashboard.details.pin-release': undefined, // 'Pin release to studio'
+  'dashboard.details.pin-release': 'Fixați lansarea în studio',
   /** Text for the releases detail screen when a release was published ASAP */
-  'dashboard.details.published-asap': undefined, // 'Published'
+  'dashboard.details.published-asap': 'Publicat',
   /** Text for the releases detail screen when a release was published from scheduling */
-  'dashboard.details.published-on': undefined, // 'Published on {{date}}'
+  'dashboard.details.published-on': 'Publicat pe {{date}}',
   /** Text for the releases detail screen in the unpin release button. */
-  'dashboard.details.unpin-release': undefined, // 'Unpin release from studio'
+  'dashboard.details.unpin-release': 'Anulați fixarea lansării din studio',
 
   /** Label for the button to proceed deleting a release */
-  'delete-dialog.confirm-delete-button': undefined, // 'Yes, delete release'
+  'delete-dialog.confirm-delete-button': 'Da, ștergeți lansarea',
   /** Description for the dialog confirming the deleting of a release with one document */
-  'delete-dialog.confirm-delete-description_one': undefined, // 'This will delete 1 document version.'
+  'delete-dialog.confirm-delete-description_one': 'Aceasta va șterge 1 versiune de document.',
   /** Header for deleting a release dialog */
-  'delete-dialog.confirm-delete.header': undefined, // 'Are you sure you want to delete this release?'
+  'delete-dialog.confirm-delete.header': 'Sigur doriți să ștergeți această lansare?',
 
   /** Label when a release has been deleted by a different user */
-  'deleted-release': undefined, // 'The \'<strong>{{title}}</strong>\' release has been deleted'
+  'deleted-release': "Lansarea '<strong>{{title}}</strong>' a fost ștearsă",
 
   /** Text for when there's no changes in a release diff */
-  'diff.list-empty': undefined, // 'Changes list is empty, see document'
+  'diff.list-empty': 'Lista de modificări este goală, consultați documentul',
   /** Text for when there's no changes in a release diff */
-  'diff.no-changes': undefined, // 'No changes'
+  'diff.no-changes': 'Nicio modificare',
 
   /** Description for discarding a draft of a document dialog */
-  'discard-version-dialog.description-draft': undefined, // 'This will permanently remove all changes made to this document. This action cannot be undone.'
+  'discard-version-dialog.description-draft':
+    'Aceasta va elimina permanent toate modificările aduse acestui document. Această acțiune nu poate fi anulată.',
   /** Description for discarding a version of a document dialog */
-  'discard-version-dialog.description-release': undefined, // 'This will permanently remove all changes made to this document within the \'<strong>{{releaseTitle}}</strong>\' release. This action cannot be undone.'
+  'discard-version-dialog.description-release':
+    "Aceasta va elimina permanent toate modificările aduse acestui document în cadrul release-ului '<strong>{{releaseTitle}}</strong>'. Această acțiune nu poate fi anulată.",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.header-draft': undefined, // 'Discard draft?'
+  'discard-version-dialog.header-draft': 'Renunțați la ciornă?',
   /** Header for discarding a version from a release of a document dialog */
-  'discard-version-dialog.header-release': undefined, // 'Remove document from the \'<strong>{{releaseTitle}}</strong>\' release?'
+  'discard-version-dialog.header-release':
+    "Eliminați documentul din release-ul '<strong>{{releaseTitle}}</strong>'?",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.title-draft': undefined, // 'Discard draft'
+  'discard-version-dialog.title-draft': 'Renunțați la ciornă',
   /** Title for dialog for discarding a version of a document */
-  'discard-version-dialog.title-release': undefined, // 'Remove from release'
+  'discard-version-dialog.title-release': 'Eliminați din release',
 
   /** Label for when a document in a release has a single validation warning */
-  'document-validation.error_one': undefined, // '{{count}} validation error'
+  'document-validation.error_one': '{{count}} eroare de validare',
 
   /** Label for the button to proceed with duplicating a release */
-  'duplicate-dialog.confirm-duplicate-button': undefined, // 'Yes, duplicate release'
+  'duplicate-dialog.confirm-duplicate-button': 'Da, duplicați release-ul',
   /** Description for the dialog confirming the duplicate of a release with one document */
-  'duplicate-dialog.confirm-duplicate-description_one': undefined, // 'This will duplicate the release and the 1 document version.'
+  'duplicate-dialog.confirm-duplicate-description_one':
+    'Aceasta va duplica release-ul și cele 1 versiune de document.',
   /** Header for the dialog confirming the duplicate of a release */
-  'duplicate-dialog.confirm-duplicate-header': undefined, // 'Are you sure you want to duplicate this release?'
+  'duplicate-dialog.confirm-duplicate-header': 'Sigur doriți să duplicați acest release?',
 
   /** Title text displayed for technical error details */
-  'error-details-title': undefined, // 'Error details'
+  'error-details-title': 'Detalii eroare',
 
   /** Title text when error during release update */
-  'failed-edit-title': undefined, // 'Failed to save changes'
+  'failed-edit-title': 'Salvarea modificărilor a eșuat',
 
   /** Title text displayed for releases that failed to publish  */
-  'failed-publish-title': undefined, // 'Failed to publish'
+  'failed-publish-title': 'Publicarea a eșuat',
 
   /** Title text displayed for releases that failed to schedule  */
-  'failed-schedule-title': undefined, // 'Failed to schedule'
+  'failed-schedule-title': 'Programarea a eșuat',
 
   /** Filter tab label for all documents */
-  'filter-tab.all': undefined, // 'All'
+  'filter-tab.all': 'Toate',
   /** Filter tab label for documents with validation errors */
-  'filter-tab.errors': undefined, // 'Errors'
+  'filter-tab.errors': 'Erori',
 
   /**The text that will be shown in the footer to indicate the time the release was archived */
-  'footer.status.archived': undefined, // 'Archived'
+  'footer.status.archived': 'Arhivat',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.created': undefined, // 'Created'
+  'footer.status.created': 'Creat',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.edited': undefined, // 'Edited'
+  'footer.status.edited': 'Editat',
   /**The text that will be shown in the footer to indicate the time the release was published */
-  'footer.status.published': undefined, // 'Published'
+  'footer.status.published': 'Publicat',
   /**The text that will be shown in the footer to indicate the time the release was unarchived */
-  'footer.status.unarchived': undefined, // 'Unarchived'
+  'footer.status.unarchived': 'Dezarhivat',
 
   /** Label text for the loading state whilst release is being loaded */
-  'loading-release': undefined, // 'Loading release'
+  'loading-release': 'Se încarcă release-ul',
 
   /** Text for when documents of a release are loading */
-  'loading-release-documents': undefined, // 'Loading documents'
+  'loading-release-documents': 'Se încarcă documentele',
   /** Description text for when loading documents on a release failed */
-  'loading-release-documents.error.description': undefined, // 'We\'re unable to load the documents for this release. Please try again later.'
+  'loading-release-documents.error.description':
+    'Nu putem încărca documentele pentru această lansare. Vă rugăm să încercați din nou mai târziu.',
   /** Title text for when loading documents on a release failed */
-  'loading-release-documents.error.title': undefined, // 'Something went wrong'
+  'loading-release-documents.error.title': 'Ceva a mers greșit',
 
   /** Label for title of actions for "when releasing" */
-  'menu.group.when-releasing': undefined, // 'When releasing'
+  'menu.group.when-releasing': 'La lansare',
   /** Label for the release menu */
-  'menu.label': undefined, // 'Release menu'
+  'menu.label': 'Meniu lansare',
   /** Tooltip for the release menu */
-  'menu.tooltip': undefined, // 'Actions'
+  'menu.tooltip': 'Acțiuni',
 
   /** Text for when no archived releases are found */
-  'no-archived-release': undefined, // 'No archived releases'
+  'no-archived-release': 'Nicio lansare arhivată',
 
   /** Tooltip text when there are no paused scheduled drafts */
-  'no-paused-release': undefined, // 'No paused scheduled drafts'
+  'no-paused-release': 'Niciun draft programat în pauză',
 
   /** Text for when no releases are found */
-  'no-releases': undefined, // 'No Releases'
+  'no-releases': 'Nicio lansare',
 
   /** Text for when no scheduled drafts are found */
-  'no-scheduled-drafts': undefined, // 'No Scheduled Drafts'
+  'no-scheduled-drafts': 'Niciun draft programat',
 
   /** Text for the button name for the release tool */
-  'overview.action.documentation': undefined, // 'Documentation'
+  'overview.action.documentation': 'Documentație',
   /** Tooltip for the calendar button in the release overview */
-  'overview.calendar.tooltip': undefined, // 'View calendar'
+  'overview.calendar.tooltip': 'Vizualizați calendarul',
   /** Description for the release tool */
-  'overview.description': undefined, // 'Releases are collections of document changes which can be managed, scheduled, and rolled back together.'
+  'overview.description':
+    'Lansările sunt colecții de modificări ale documentelor care pot fi gestionate, programate și revenite împreună.',
   /** Text for the placeholder in the search release input  */
-  'overview.search-releases-placeholder': undefined, // 'Search releases'
+  'overview.search-releases-placeholder': 'Căutați lansări',
   /** Title for the release tool */
-  'overview.title': undefined, // 'Releases'
+  'overview.title': 'Lansări',
 
   /** Tooltip text for releases that have passed their intended publish date */
-  'passed-intended-publish-date': undefined, // 'This release has passed its intended publish date'
+  'passed-intended-publish-date': 'Această lansare a depășit data de publicare intenționată',
 
   /** Tooltip text for scheduled drafts that have passed their intended publish date */
-  'passed-intended-publish-date-draft': undefined, // 'This draft has passed its intended publish date'
+  'passed-intended-publish-date-draft': 'Acest draft a depășit data de publicare intenționată',
 
   /** Description for when a user doesn't have publish or schedule releases */
-  'permission-missing-description': undefined, // 'Your role currently limits what you can see in this release. You may not publish nor schedule this release.'
+  'permission-missing-description':
+    'Rolul dvs. limitează în prezent ceea ce puteți vedea în această lansare. Este posibil să nu puteți publica sau programa această lansare.',
 
   /** Text for when a user doesn't have publish or schedule releases */
-  'permission-missing-title': undefined, // 'Limited access'
+  'permission-missing-title': 'Acces limitat',
 
   /** Tooltip label when the user doesn't have permission to archive release */
-  'permissions.error.archive': undefined, // 'You do not have permission to archive this release'
+  'permissions.error.archive': 'Nu aveți permisiunea de a arhiva această lansare',
   /** Tooltip label when the user doesn't have permission to delete release */
-  'permissions.error.delete': undefined, // 'You do not have permission to delete this release'
+  'permissions.error.delete': 'Nu aveți permisiunea de a șterge această lansare',
   /** Tooltip label when the user doesn't have permission for discarding a version */
-  'permissions.error.discard-version': undefined, // 'You do not have permission to discard this version'
+  'permissions.error.discard-version': 'Nu aveți permisiunea de a renunța la această versiune',
   /** Tooltip label when the user doesn't have permission to duplicate release */
-  'permissions.error.duplicate': undefined, // 'You do not have permission to duplicate this release'
+  'permissions.error.duplicate': 'Nu aveți permisiunea de a duplica această lansare',
   /** Tooltip label when the user doesn't have permission to unarchive release */
-  'permissions.error.unarchive': undefined, // 'You do not have permission to unarchive this release'
+  'permissions.error.unarchive': 'Nu aveți permisiunea de a dezarhiva această lansare',
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
-  'permissions.error.unpublish': undefined, // 'You do not have permission to unpublish this document'
+  'permissions.error.unpublish': 'Nu aveți permisiunea de a anula publicarea acestui document',
 
   /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  'presence.tooltip.one':
+    '{{displayName}} editează acest document în lansarea „{{releaseTitle}}" chiar acum',
 
   /** Tooltip text for publish release action when there are no documents */
-  'publish-action.validation.no-documents': undefined, // 'There are no documents to publish'
+  'publish-action.validation.no-documents': 'Nu există documente de publicat',
 
   /** Description for the dialog confirming the publish of a release with one document */
-  'publish-dialog.confirm-publish-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published.'
+  'publish-dialog.confirm-publish-description_one':
+    "Lansarea '<strong>{{title}}</strong>' și documentul său vor fi publicate.",
   /** Title for the dialog confirming the publish of a release */
-  'publish-dialog.confirm-publish.title': undefined, // 'Are you sure you want to publish the release and all document versions?'
+  'publish-dialog.confirm-publish.title':
+    'Sigur doriți să publicați lansarea și toate versiunile documentelor?',
   /** Label for when documents in release have validation errors */
-  'publish-dialog.validation.error': undefined, // 'Some documents have validation errors'
+  'publish-dialog.validation.error': 'Unele documente conțin erori de validare',
   /** Label for when documents are being validated */
-  'publish-dialog.validation.loading': undefined, // 'Validating documents...'
+  'publish-dialog.validation.loading': 'Se validează documentele...',
   /** Label for the button when the user doesn't have permissions to publish a release */
-  'publish-dialog.validation.no-permission': undefined, // 'You do not have permission to publish'
+  'publish-dialog.validation.no-permission': 'Nu aveți permisiunea de a publica',
 
   /** Title for information card on a published release */
-  'publish-info.title': undefined, // 'This release is published successfully.'
+  'publish-info.title': 'Această lansare a fost publicată cu succes.',
 
   /** Placeholder title for a release with no title */
-  'release-placeholder.title': undefined, // 'Untitled'
+  'release-placeholder.title': 'Fără titlu',
 
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_one': undefined, // 'This will revert {{releaseDocumentsLength}} document version.'
+  'revert-dialog.confirm-revert-description_one':
+    'Aceasta va reveni la versiunea anterioară a {{releaseDocumentsLength}} document.',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
-  'revert-dialog.confirm-revert.stage-revert-checkbox-label': undefined, // 'Immediately revert the release'
+  'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Revenire imediată la lansare',
   /** Title for the dialog confirming the revert of a release */
-  'revert-dialog.confirm-revert.title': undefined, // 'Are you sure you want to revert the \'{{title}}\' release?'
+  'revert-dialog.confirm-revert.title': "Sigur doriți să reveniți la lansarea '{{title}}'?",
   /** Warning card text for when immediately revert a release with history */
-  'revert-dialog.confirm-revert.warning-card': undefined, // 'Changes were made to documents in this release after they were published. Reverting will overwrite these changes.'
+  'revert-dialog.confirm-revert.warning-card':
+    'Au fost efectuate modificări asupra documentelor din această lansare după ce au fost publicate. Revenirea va suprascrie aceste modificări.',
 
   /** Description of a reverted release */
-  'revert-release.description': undefined, // 'Revert changes to document versions in "{{title}}".'
+  'revert-release.description':
+    'Revenire la modificările versiunilor de documente din „{{title}}".',
   /** Title of a reverted release */
-  'revert-release.title': undefined, // 'Reverting "{{title}}"'
+  'revert-release.title': 'Se revine la „{{title}}"',
 
   /** Description for the review changes button in release tool */
-  'review.description': undefined, // 'Add documents to this release to review changes'
+  'review.description': 'Adăugați documente la această lansare pentru a revizui modificările',
   /** Text for when a document is edited */
-  'review.edited': undefined, // 'Edited <RelativeTime/>'
+  'review.edited': 'Editat <RelativeTime/>',
 
   /** Schedule release button tooltip when there are no documents to schedule */
-  'schedule-action.validation.no-documents': undefined, // 'There are no documents to schedule'
+  'schedule-action.validation.no-documents': 'Nu există documente de programat',
 
   /** Schedule release button tooltip when the release is already scheduled */
-  'schedule-button-tooltip.already-scheduled': undefined, // 'This release is already scheduled'
+  'schedule-button-tooltip.already-scheduled': 'Această lansare este deja programată',
   /** Schedule release button tooltip when there are validation errors */
-  'schedule-button-tooltip.validation.error': undefined, // 'Some documents have validation errors'
+  'schedule-button-tooltip.validation.error': 'Unele documente conțin erori de validare',
   /** Schedule release button tooltip when validation is loading */
-  'schedule-button-tooltip.validation.loading': undefined, // 'Validating documents...'
+  'schedule-button-tooltip.validation.loading': 'Se validează documentele...',
   /** Schedule release button tooltip when user has no permissions to schedule */
-  'schedule-button-tooltip.validation.no-permission': undefined, // 'You do not have permission to schedule'
+  'schedule-button-tooltip.validation.no-permission': 'Nu aveți permisiunea de a programa',
 
   /** Title of unschedule release dialog */
-  'schedule-button.tooltip': undefined, // 'Are you sure you want to unschedule the release?'
+  'schedule-button.tooltip': 'Sigur doriți să anulați programarea lansării?',
 
   /** Description for the confirm button for scheduling a release */
-  'schedule-dialog.confirm-button': undefined, // 'Yes, schedule'
+  'schedule-dialog.confirm-button': 'Da, programează',
   /** Description shown in unschedule relaease dialog */
-  'schedule-dialog.confirm-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published on the selected date.'
+  'schedule-dialog.confirm-description_one':
+    "Lansarea '<strong>{{title}}</strong>' și documentul său vor fi publicate la data selectată.",
   /** Title for unschedule release dialog */
-  'schedule-dialog.confirm-title': undefined, // 'Schedule the release'
+  'schedule-dialog.confirm-title': 'Programați lansarea',
   /** Description for warning that the published schedule time is in the past */
-  'schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'schedule-dialog.publish-date-in-past-warning': 'Programați pentru o dată și oră viitoare.',
   /** Label for date picker when scheduling a release */
-  'schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
+  'schedule-dialog.select-publish-date-label': 'Programează pe',
 
   /** Confirm button text for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.confirm': undefined, // 'Schedule Unpublish'
+  'schedule-unpublish-dialog.confirm': 'Programează anularea publicării',
   /** Description for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.description': undefined, // 'Select when this document should be unpublished.'
+  'schedule-unpublish-dialog.description':
+    'Selectați când ar trebui anulată publicarea acestui document.',
   /** Header for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.header': undefined, // 'Schedule draft for Unpublish'
+  'schedule-unpublish-dialog.header': 'Programează ciorna pentru anularea publicării',
 
   /** Placeholder for search of documents in a release */
-  'search-documents-placeholder': undefined, // 'Search documents'
+  'search-documents-placeholder': 'Căutați documente',
 
   /** Text for when the release has no errors found */
-  'summary.all-documents-errors-found': undefined, // 'All documents validated, issues found'
+  'summary.all-documents-errors-found': 'Toate documentele validate, probleme găsite',
   /** Text for when the release has validated all documents */
-  'summary.all-documents-validated': undefined, // 'All documents validated, no issues found'
+  'summary.all-documents-validated': 'Toate documentele validate, nicio problemă găsită',
   /** Text for when the release was created */
-  'summary.created': undefined, // 'Created <RelativeTime/>'
+  'summary.created': 'Creat <RelativeTime/>',
   /** Text for when the release is composed of one document */
-  'summary.document-count_one': undefined, // '{{count}} document'
+  'summary.document-count_one': '{{count}} document',
   /** Text for when the release has some errors found */
-  'summary.errors-found': undefined, // 'In order to publish or schedule the release, please resolve the issues found in the documents'
+  'summary.errors-found':
+    'Pentru a publica sau programa lansarea, vă rugăm să rezolvați problemele găsite în documente',
   /** Text for when the release has no documents */
-  'summary.no-documents': undefined, // 'No documents'
+  'summary.no-documents': 'Niciun document',
   /** Description for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.description': undefined, // 'This scheduled draft does not contain a document. It may have been removed.'
+  'summary.no-documents-cardinality-one.description':
+    'Această ciornă programată nu conține un document. Este posibil să fi fost eliminat.',
   /** Title for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.title': undefined, // 'No document in this release'
+  'summary.no-documents-cardinality-one.title': 'Niciun document în această lansare',
   /** Text for when the release has not published */
-  'summary.not-published': undefined, // 'Not published'
+  'summary.not-published': 'Nepublicat',
   /** Text for when the release was published */
-  'summary.published': undefined, // 'Published <RelativeTime/>'
+  'summary.published': 'Publicat <RelativeTime/>',
   /** Text for when the release has validated documents */
-  'summary.validated-documents': undefined, // '{{validatedCount}} of {{totalCount}} documents validated'
+  'summary.validated-documents': '{{validatedCount}} din {{totalCount}} documente validate',
   /** Text for validation loading indicator */
-  'summary.validating-documents': undefined, // 'Validating documents: {{validatedCount}} of {{totalCount}}'
+  'summary.validating-documents': 'Se validează documentele: {{validatedCount}} din {{totalCount}}',
 
   /** add action type that will be shown in the table*/
-  'table-body.action.add': undefined, // 'Add'
+  'table-body.action.add': 'Adăugare',
   /** Change action type that will be shown in the table*/
-  'table-body.action.change': undefined, // 'Change'
+  'table-body.action.change': 'Modificare',
   /** Change action type that will be shown in the table*/
-  'table-body.action.unpublish': undefined, // 'Unpublish'
+  'table-body.action.unpublish': 'Anulare publicare',
 
   /** Header for the document table in the release tool - action */
-  'table-header.action': undefined, // 'Action'
+  'table-header.action': 'Acțiune',
   /** Header for the document table in the release tool - Archived */
-  'table-header.archivedAt': undefined, // 'Archived'
+  'table-header.archivedAt': 'Arhivat',
   /** Header for the document table in the release tool - contributors */
-  'table-header.contributors': undefined, // 'Contributors'
+  'table-header.contributors': 'Contribuitori',
   /** Header for the document table in the release tool - created by */
-  'table-header.created-by': undefined, // 'Created by'
+  'table-header.created-by': 'Creat de',
   /** Header for the document table in the release tool - document preview */
-  'table-header.document': undefined, // 'Document'
+  'table-header.document': 'Document',
   /** Header for the document table in the release tool - title */
-  'table-header.documents': undefined, // 'Documents'
+  'table-header.documents': 'Documente',
   /** Header for the document table in the release tool - edited */
-  'table-header.edited': undefined, // 'Edited'
+  'table-header.edited': 'Editat',
   /** Header for the paused scheduled drafts table - intended for */
-  'table-header.intended-for': undefined, // 'Intended for'
+  'table-header.intended-for': 'Destinat pentru',
   /** Header for the document table in the release tool - Published */
-  'table-header.published-at': undefined, // 'Published'
+  'table-header.published-at': 'Publicat',
   /** Header for the document table in the release tool - Published */
-  'table-header.publishedAt': undefined, // 'Published'
+  'table-header.publishedAt': 'Publicat',
   /** Header for the scheduled drafts document table in the release tool - published at */
-  'table-header.scheduled-draft.published-at': undefined, // 'Published at'
+  'table-header.scheduled-draft.published-at': 'Publicat la',
   /** Header for the scheduled drafts document table in the release tool - scheduled for */
-  'table-header.scheduled-for': undefined, // 'Scheduled for'
+  'table-header.scheduled-for': 'Programat pentru',
   /** Header for the document table in the release tool - time */
-  'table-header.time': undefined, // 'Time'
+  'table-header.time': 'Timp',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': undefined, // 'Release'
+  'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
-  'table-header.type': undefined, // 'Type'
+  'table-header.type': 'Tip',
   /** Header for the document table in the release tool - when */
-  'table-header.when': undefined, // 'When'
+  'table-header.when': 'Când',
 
   /** Text for the release time label for scheduled releases  which has not been scheduled yet*/
-  'time.estimated': undefined, // 'Estimated'
+  'time.estimated': 'Estimat',
   /** Text for the release time label for scheduled releases  which has been scheduled*/
-  'time.scheduled': undefined, // 'Scheduled'
+  'time.scheduled': 'Programat',
 
   /** Text for toast when release failed to archive */
-  'toast.archive.error': undefined, // 'Failed to archive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.archive.error': "Arhivarea '<strong>{{title}}</strong>' a eșuat: {{error}}",
   /** Toast error message when bulk scheduling of active drafts fails */
-  'toast.confirm-active-scheduled-drafts.error': undefined, // 'Failed to schedule drafts: {{error}}'
+  'toast.confirm-active-scheduled-drafts.error': 'Programarea schițelor a eșuat: {{error}}',
   /** Toast message after copying release ID */
-  'toast.copy-release-id.success': undefined, // 'Release ID copied to clipboard'
+  'toast.copy-release-id.success': 'ID-ul release-ului a fost copiat în clipboard',
   /** Toast message after copying release link */
-  'toast.copy-release-link.success': undefined, // 'Release link copied to clipboard'
+  'toast.copy-release-link.success': 'Linkul release-ului a fost copiat în clipboard',
   /** Toast message after copying release title */
-  'toast.copy-release-title.success': undefined, // 'Release title copied to clipboard'
+  'toast.copy-release-title.success': 'Titlul release-ului a fost copiat în clipboard',
   /** Description for toast when creating new version of document in release failed */
-  'toast.create-version.error': undefined, // 'Failed to add document to release: {{error}}'
+  'toast.create-version.error': 'Adăugarea documentului la release a eșuat: {{error}}',
   /** Description for toast when release deletion failed */
-  'toast.delete.error': undefined, // 'Failed to delete \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.delete.error': "Ștergerea '<strong>{{title}}</strong>' a eșuat: {{error}}",
   /** Description for toast when release is successfully deleted */
-  'toast.delete.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was successfully deleted'
+  'toast.delete.success': "Release-ul '<strong>{{title}}</strong>' a fost șters cu succes",
   /** Description for toast when release duplication failed */
-  'toast.duplicate.error': undefined, // 'Failed to duplicate \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.duplicate.error': "Duplicarea '<strong>{{title}}</strong>' a eșuat: {{error}}",
   /** Description for toast when release is successfully duplicated */
-  'toast.duplicate.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was duplicated. <Link/>'
+  'toast.duplicate.success': "Release-ul '<strong>{{title}}</strong>' a fost duplicat. <Link/>",
   /** Link text for toast link to the duplicated release */
-  'toast.duplicate.success-link': undefined, // 'View duplicated release'
+  'toast.duplicate.success-link': 'Vizualizați release-ul duplicat',
   /** Text for toast when release has been reverted immediately */
-  'toast.immediate-revert.success': undefined, // 'The \'{{title}}\' release was successfully reverted'
+  'toast.immediate-revert.success': "Lansarea '{{title}}' a fost revenită cu succes",
   /** Text for toast when release failed to publish */
-  'toast.publish.error': undefined, // 'Failed to publish \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.publish.error': "Publicarea '<strong>{{title}}</strong>' a eșuat: {{error}}",
   /** Text for toast when release has reverted release successfully staged */
-  'toast.revert-stage.success': undefined, // 'Revert release for \'{{title}}\' was successfully created. <Link/>'
+  'toast.revert-stage.success':
+    "Revenirea lansării pentru '{{title}}' a fost creată cu succes. <Link/>",
   /** Link text for toast link to the generated revert release */
-  'toast.revert-stage.success-link': undefined, // 'View revert release'
+  'toast.revert-stage.success-link': 'Vizualizați lansarea revenită',
   /** Text for toast when release failed to revert */
-  'toast.revert.error': undefined, // 'Failed to revert release: {{error}}'
+  'toast.revert.error': 'Revenirea lansării a eșuat: {{error}}',
   /** Text for toast when release failed to schedule */
-  'toast.schedule.error': undefined, // 'Failed to schedule \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.schedule.error': "Programarea '<strong>{{title}}</strong>' a eșuat: {{error}}",
   /** Text for toast when release has been scheduled */
-  'toast.schedule.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was scheduled.'
+  'toast.schedule.success': "Lansarea '<strong>{{title}}</strong>' a fost programată.",
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error': undefined, // 'Failed to unarchive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unarchive.error': "Dezarhivarea '<strong>{{title}}</strong>' a eșuat: {{error}}",
   /** Text for toast when release failed to unschedule */
-  'toast.unschedule.error': undefined, // 'Failed to unscheduled \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unschedule.error': "Anularea programării '<strong>{{title}}</strong>' a eșuat: {{error}}",
 
   /** Text for tooltip when a release has been scheduled */
-  'type-picker.tooltip.scheduled': undefined, // 'The release is scheduled, unschedule it to change type'
+  'type-picker.tooltip.scheduled':
+    'Lansarea este programată, anulați programarea pentru a schimba tipul',
 
   /** Text action in unpublish dialog to cancel */
-  'unpublish-dialog.action.cancel': undefined, // 'Cancel'
+  'unpublish-dialog.action.cancel': 'Anulare',
   /** Text action in unpublish dialog to unpublish */
-  'unpublish-dialog.action.unpublish': undefined, // 'Yes, unpublish when releasing'
+  'unpublish-dialog.action.unpublish': 'Da, anulați publicarea la lansare',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
-  'unpublish-dialog.description.lost-changes': undefined, // 'Any changes made to this document version will be lost.'
+  'unpublish-dialog.description.lost-changes':
+    'Orice modificări aduse acestei versiuni a documentului vor fi pierdute.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
-  'unpublish-dialog.description.to-draft': undefined, // 'This will unpublish the document as part of the <Label>{{title}}</Label> release, and create a draft if no draft exists at the time of release.'
+  'unpublish-dialog.description.to-draft':
+    'Aceasta va anula publicarea documentului ca parte a lansării <Label>{{title}}</Label> și va crea o schiță dacă nu există nicio schiță la momentul lansării.',
   /** Title for the dialog confirming the unpublish of a release */
-  'unpublish-dialog.header': undefined, // 'Are you sure you want to unpublish this document when releasing?'
+  'unpublish-dialog.header': 'Sigur doriți să anulați publicarea acestui document la lansare?',
 
   /** Text for when a document is unpublished */
-  'unpublish.already-unpublished': undefined, // 'This document is already unpublished.'
+  'unpublish.already-unpublished': 'Acest document este deja nepublicat.',
   /** Tooltip label for when a document is unpublished */
-  'unpublish.no-published-version': undefined, // 'There is no published version of this document.'
+  'unpublish.no-published-version': 'Nu există nicio versiune publicată a acestui document.',
 
   /** Description shown in unschedule relaease dialog */
-  'unschedule-dialog.confirm-description': undefined, // 'The release will no longer be published on the scheduled date'
+  'unschedule-dialog.confirm-description': 'Lansarea nu va mai fi publicată la data programată',
   /** Title for unschedule release dialog */
-  'unschedule-dialog.confirm-title': undefined, // 'Are you sure you want to unschedule the release?'
+  'unschedule-dialog.confirm-title': 'Sigur doriți să anulați programarea lansării?',
 })

@@ -2,517 +2,560 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for adding a document to release */
-  'action.add-document': undefined, // 'Add document'
+  'action.add-document': 'Dokumentum hozzáadása',
   /** Action text for archiving a release */
-  'action.archive': undefined, // 'Archive release'
+  'action.archive': 'Kiadás archiválása',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': undefined, // 'Unschedule this release to archive it'
+  'action.archive.tooltip': 'A kiadás archiválásához törölje az ütemezést',
   /** Action text for showing the archived releases */
-  'action.archived': undefined, // 'Archived'
+  'action.archived': 'Archivált',
   /** Menu item label for copying release ID */
-  'action.copy-release-id.label': undefined, // 'Copy release ID'
+  'action.copy-release-id.label': 'Kiadás azonosítójának másolása',
   /** Menu item label for copying release URL */
-  'action.copy-release-link.label': undefined, // 'Copy release URL'
+  'action.copy-release-link.label': 'Kiadás URL-jének másolása',
   /** Menu item label for copying release title */
-  'action.copy-release-title.label': undefined, // 'Copy release title'
+  'action.copy-release-title.label': 'Kiadás címének másolása',
   /** Tooltip for copy release actions button */
-  'action.copy-release.label': undefined, // 'Copy'
+  'action.copy-release.label': 'Másolás',
   /** Action text for staging a new revert release */
-  'action.create-revert-release': undefined, // 'Create a new release'
+  'action.create-revert-release': 'Új kiadás létrehozása',
   /** Action text for deleting a release */
-  'action.delete-release': undefined, // 'Delete release'
+  'action.delete-release': 'Kiadás törlése',
   /** Menu item label for showing scheduled drafts */
-  'action.drafts': undefined, // 'Scheduled drafts'
+  'action.drafts': 'Ütemezett piszkozatok',
   /** Action text for duplicating a release */
-  'action.duplicate-release': undefined, // 'Duplicate release'
+  'action.duplicate-release': 'Kiadás duplikálása',
   /** Action text for editing a release */
-  'action.edit': undefined, // 'Edit release'
+  'action.edit': 'Kiadás szerkesztése',
   /** Action text for reverting a release immediately without staging changes */
-  'action.immediate-revert-release': undefined, // 'Revert now'
+  'action.immediate-revert-release': 'Visszaállítás most',
   /** Action text for opening a release */
-  'action.open': undefined, // 'Active'
+  'action.open': 'Aktív',
   /** Action text for showing the paused scheduled drafts */
-  'action.paused': undefined, // 'Paused'
+  'action.paused': 'Szüneteltetve',
   /** Action text for publishing all documents in a release (and the release itself) */
-  'action.publish-all-documents': undefined, // 'Run release'
+  'action.publish-all-documents': 'Kiadás futtatása',
   /** Menu item label for showing releases (multi-document releases) */
-  'action.releases': undefined, // 'Releases'
+  'action.releases': 'Kiadások',
   /** Action text for reverting a release */
-  'action.revert': undefined, // 'Revert release'
+  'action.revert': 'Kiadás visszaállítása',
   /** Action message for when document is scheduled for unpublishing a document and you want to no longer unpublish it */
-  'action.revert-unpublish-actions': undefined, // 'Revert unpublish when releasing'
+  'action.revert-unpublish-actions': 'Közzétételvisszavonás visszaállítása kiadáskor',
   /** Text for the review changes button in release tool */
-  'action.review': undefined, // 'Review changes'
+  'action.review': 'Változtatások áttekintése',
   /** Action text for scheduling a release */
-  'action.schedule': undefined, // 'Schedule release...'
+  'action.schedule': 'Kiadás ütemezése...',
   /** Action text for scheduling unpublish of a draft document */
-  'action.schedule-unpublish': undefined, // 'Schedule Unpublish'
+  'action.schedule-unpublish': 'Közzétételvisszavonás ütemezése',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
-  'action.schedule-unpublish.disabled.not-published': undefined, // 'Document must be published to schedule unpublish'
+  'action.schedule-unpublish.disabled.not-published':
+    'A dokumentumnak közzétettnek kell lennie a közzétételvisszavonás ütemezéséhez',
   /** Label for unarchiving a release */
-  'action.unarchive': undefined, // 'Unarchive release'
+  'action.unarchive': 'Kiadás archiválásának visszavonása',
   /** Action text for unpublishing a document in a release in the context menu */
-  'action.unpublish': undefined, // 'Unpublish'
+  'action.unpublish': 'Közzététel visszavonása',
   /** Action message for scheduling an unpublished of a document  */
-  'action.unpublish-doc-actions': undefined, // 'Unpublish when releasing'
+  'action.unpublish-doc-actions': 'Közzététel visszavonása a kiadáskor',
   /** Action text for unscheduling a release */
-  'action.unschedule': undefined, // 'Unschedule release'
+  'action.unschedule': 'Kiadás ütemezésének törlése',
 
   /** Text for the summary button in release tool */
-  'actions.summary': undefined, // 'Summary'
+  'actions.summary': 'Összefoglaló',
 
   /* The text for the activity event when a document is added to a release */
-  'activity.event.add-document': undefined, // 'Added a document version'
+  'activity.event.add-document': 'Dokumentumverzió hozzáadva',
   /* The text for the activity event when the release is archived */
-  'activity.event.archive': undefined, // 'Archived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.archive': 'A <strong>{{releaseTitle}}</strong> kiadás archiválva',
   /* The text for the activity event when the release is created */
-  'activity.event.create': undefined, // 'Created the <strong>{{releaseTitle}}</strong> release <ScheduleTarget>targeting </ScheduleTarget>'
+  'activity.event.create':
+    'A <strong>{{releaseTitle}}</strong> kiadás létrehozva <ScheduleTarget>célozva </ScheduleTarget>',
   /* The text for the activity event when a document is removed from a release */
-  'activity.event.discard-document': undefined, // 'Discarded a document version'
-  'activity.event.edit': undefined, // 'Set release time to <ScheduleTarget></ScheduleTarget>'
+  'activity.event.discard-document': 'Dokumentumverzió elvetve',
+  'activity.event.edit': 'Kiadás időpontja beállítva: <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
-  'activity.event.edit-time-asap': undefined, // 'As soon as possible'
+  'activity.event.edit-time-asap': 'Amint lehetséges',
   /**The text to display in the changes when the release type changes to undecided */
-  'activity.event.edit-time-undecided': undefined, // 'Undecided'
+  'activity.event.edit-time-undecided': 'Nem meghatározott',
   /* The text for the activity event when the release is published */
-  'activity.event.publish': undefined, // 'Published the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.publish': 'A <strong>{{releaseTitle}}</strong> kiadás közzétéve',
   /* The text for the activity event when the release is scheduled */
-  'activity.event.schedule': undefined, // 'Marked as scheduled'
+  'activity.event.schedule': 'Ütemezettként megjelölve',
   /** The text for the activity event when the release is unarchived */
-  'activity.event.unarchive': undefined, // 'Unarchived the <strong>{{releaseTitle}}</strong> release'
+  'activity.event.unarchive': 'A <strong>{{releaseTitle}}</strong> kiadás archiválása visszavonva',
   /** The text for the activity event when the release is unscheduled */
-  'activity.event.unschedule': undefined, // 'Marked as unscheduled'
+  'activity.event.unschedule': 'Nem ütemezettként megjelölve',
   /** The loading text for when releases are loading */
-  'activity.panel.error': undefined, // 'An error occurred getting the release activity'
+  'activity.panel.error': 'Hiba történt a kiadás aktivitásának lekérésekor',
   /** The loading text for when releases are loading */
-  'activity.panel.loading': undefined, // 'Loading release activity'
+  'activity.panel.loading': 'Kiadás aktivitásának betöltése',
   /** The title for the activity panel shown in the releases detail screen */
-  'activity.panel.title': undefined, // 'Activity'
+  'activity.panel.title': 'Aktivitás',
 
   /** Label for the button to proceed with archiving a release */
-  'archive-dialog.confirm-archive-button': undefined, // 'Yes, archive release'
+  'archive-dialog.confirm-archive-button': 'Igen, kiadás archiválása',
   /** Description for the dialog confirming the archive of a release with one document */
-  'archive-dialog.confirm-archive-description_one': undefined, // 'This will archive 1 document version.'
+  'archive-dialog.confirm-archive-description_one': 'Ez 1 dokumentumverziót fog archiválni.',
   /** Description for the dialog confirming the archive of a release with more than one document */
-  'archive-dialog.confirm-archive-description_other': undefined, // 'This will archive {{count}} document versions.'
+  'archive-dialog.confirm-archive-description_other':
+    'Ez {{count}} dokumentumverziót fog archiválni.',
   /** Header for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-header': undefined, // 'Are you sure you want to archive this release?'
+  'archive-dialog.confirm-archive-header': 'Biztosan archiválni szeretné ezt a kiadást?',
   /** Title for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-title': undefined, // 'Are you sure you want to archive the <strong>\'{{title}}\'</strong> release?'
+  'archive-dialog.confirm-archive-title':
+    "Biztosan archiválni szeretné a <strong>'{{title}}'</strong> kiadást?",
 
   /** Description for information card on a published or archived release to description retention effects */
-  'archive-info.description': undefined, // 'It will be available for {{retentionDays}} days, then automatically removed on {{removalDate}}. <Link>Learn about retention</Link>.'
+  'archive-info.description':
+    '{{retentionDays}} napig lesz elérhető, majd automatikusan eltávolításra kerül {{removalDate}}-n. <Link>Tudjon meg többet a megőrzésről</Link>.',
   /** Title for information card on a archived release */
-  'archive-info.title': undefined, // 'This release is archived'
+  'archive-info.title': 'Ez a kiadás archiválva van',
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
-  'banner.confirm-active-scheduled-drafts_one': undefined, // 'There is {{count}} Scheduled Draft that requires scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_one':
+    '{{count}} Ütemezett Vázlat van, amely ütemezési megerősítést igényel',
   /** Banner text showing count of active scheduled drafts requiring confirmation with multiple drafts */
-  'banner.confirm-active-scheduled-drafts_other': undefined, // 'There are {{count}} Scheduled Drafts that require scheduling confirmation'
+  'banner.confirm-active-scheduled-drafts_other':
+    '{{count}} Ütemezett Vázlat van, amelyek ütemezési megerősítést igényelnek',
   /** Button text for confirming scheduling of active drafts */
-  'banner.confirm-active-scheduled-drafts.button': undefined, // 'Resume scheduling'
+  'banner.confirm-active-scheduled-drafts.button': 'Ütemezés folytatása',
   /** Button text when confirming schedules from paused mode */
-  'banner.confirm-active-scheduled-drafts.button-paused': undefined, // 'Resume all schedules'
+  'banner.confirm-active-scheduled-drafts.button-paused': 'Összes ütemezés folytatása',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
-  'banner.drafts-mode-disabled': undefined, // 'Drafts mode has been disabled but there are still scheduled drafts to be published.'
+  'banner.drafts-mode-disabled':
+    'A vázlat mód le lett tiltva, de még vannak közzétételre váró ütemezett vázlatok.',
   /** Banner text shown when navigating to a release that does not exist */
-  'banner.release-not-found': undefined, // 'This release could not be found'
+  'banner.release-not-found': 'Ez a kiadás nem található',
   /** Tooltip for the dismiss button in the release not found banner */
-  'banner.release-not-found.dismiss': undefined, // 'Dismiss'
+  'banner.release-not-found.dismiss': 'Elvetés',
   /** Banner text shown when scheduled drafts feature is disabled but there are still scheduled drafts */
-  'banner.scheduled-drafts-disabled': undefined, // 'Scheduled drafts has been disabled but there are still scheduled drafts to be published.'
+  'banner.scheduled-drafts-disabled':
+    'Az ütemezett vázlatok le lettek tiltva, de még vannak közzétételre váró ütemezett vázlatok.',
 
   /** Title for changes to published documents */
-  'changes-published-docs.title': undefined, // 'Changes to published documents'
+  'changes-published-docs.title': 'Változások a közzétett dokumentumokban',
 
   /** Dialog confirm button text for confirming all scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.confirm-button': undefined, // 'Confirm Schedules'
+  'confirm-active-scheduled-drafts-dialog.confirm-button': 'Ütemezések megerősítése',
   /** Dialog description for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.description': undefined, // 'Schedule all paused Scheduled Drafts for their intended publish dates'
+  'confirm-active-scheduled-drafts-dialog.description':
+    'Az összes szüneteltetett Ütemezett Vázlat ütemezése a tervezett közzétételi dátumokra',
   /** Dialog warning when some scheduled drafts have past dates */
-  'confirm-active-scheduled-drafts-dialog.past-dates-warning': undefined, // 'Some of these Scheduled Drafts are scheduled for past dates. Confirming schedules will immediately publish those versions of documents.'
+  'confirm-active-scheduled-drafts-dialog.past-dates-warning':
+    'Néhány Ütemezett Vázlat múltbeli dátumra van ütemezve. Az ütemezések megerősítése azonnal közzéteszi a dokumentumok ezen verzióit.',
   /** Dialog title for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.title': undefined, // 'Resume Scheduled Drafts'
+  'confirm-active-scheduled-drafts-dialog.title': 'Ütemezett Vázlatok folytatása',
 
   /** Suffix for when a release is a copy of another release */
-  'copy-suffix': undefined, // 'Copy'
+  'copy-suffix': 'Másolat',
 
   /** Confirm button text for overriding existing draft */
-  'copy-to-draft-dialog.confirm-button': undefined, // 'Yes, override Draft'
+  'copy-to-draft-dialog.confirm-button': 'Igen, felülírom a vázlatot',
   /** Description for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.description': undefined, // 'A draft version of this document already exists. Copy the current version to the draft and override the existing draft version.'
+  'copy-to-draft-dialog.description':
+    'A dokumentum vázlat verziója már létezik. Másolja az aktuális verziót a vázlatba, és írja felül a meglévő vázlat verziót.',
   /** Title for dialog when copying version to draft that already exists */
-  'copy-to-draft-dialog.title': undefined, // 'Draft version already exists'
+  'copy-to-draft-dialog.title': 'A vázlat verzió már létezik',
 
   /** Text for when a release / document was created */
-  created: undefined, // 'Created <RelativeTime/>'
+  created: 'Létrehozva: <RelativeTime/>',
 
   /** Activity inspector button text */
-  'dashboard.details.activity': undefined, // 'Activity'
+  'dashboard.details.activity': 'Tevékenység',
   /** Text for the releases detail screen in the pin release button. */
-  'dashboard.details.pin-release': undefined, // 'Pin release to studio'
+  'dashboard.details.pin-release': 'Kiadás rögzítése a stúdióhoz',
   /** Text for the releases detail screen when a release was published ASAP */
-  'dashboard.details.published-asap': undefined, // 'Published'
+  'dashboard.details.published-asap': 'Közzétéve',
   /** Text for the releases detail screen when a release was published from scheduling */
-  'dashboard.details.published-on': undefined, // 'Published on {{date}}'
+  'dashboard.details.published-on': 'Közzétéve: {{date}}',
   /** Text for the releases detail screen in the unpin release button. */
-  'dashboard.details.unpin-release': undefined, // 'Unpin release from studio'
+  'dashboard.details.unpin-release': 'Kiadás rögzítésének feloldása a stúdióból',
 
   /** Label for the button to proceed deleting a release */
-  'delete-dialog.confirm-delete-button': undefined, // 'Yes, delete release'
+  'delete-dialog.confirm-delete-button': 'Igen, törlöm a kiadást',
   /** Description for the dialog confirming the deleting of a release with one document */
-  'delete-dialog.confirm-delete-description_one': undefined, // 'This will delete 1 document version.'
+  'delete-dialog.confirm-delete-description_one': 'Ez 1 dokumentumverziót töröl.',
   /** Description for the dialog confirming the deleting of a release with more than one document */
-  'delete-dialog.confirm-delete-description_other': undefined, // 'This will delete {{count}} document versions.'
+  'delete-dialog.confirm-delete-description_other': 'Ez {{count}} dokumentumverziót fog törölni.',
   /** Header for deleting a release dialog */
-  'delete-dialog.confirm-delete.header': undefined, // 'Are you sure you want to delete this release?'
+  'delete-dialog.confirm-delete.header': 'Biztosan törölni szeretné ezt a kiadást?',
 
   /** Label when a release has been deleted by a different user */
-  'deleted-release': undefined, // 'The \'<strong>{{title}}</strong>\' release has been deleted'
+  'deleted-release': "A '<strong>{{title}}</strong>' kiadás törölve lett",
 
   /** Text for when there's no changes in a release diff */
-  'diff.list-empty': undefined, // 'Changes list is empty, see document'
+  'diff.list-empty': 'A változások listája üres, lásd a dokumentumot',
   /** Text for when there's no changes in a release diff */
-  'diff.no-changes': undefined, // 'No changes'
+  'diff.no-changes': 'Nincs változás',
 
   /** Description for discarding a draft of a document dialog */
-  'discard-version-dialog.description-draft': undefined, // 'This will permanently remove all changes made to this document. This action cannot be undone.'
+  'discard-version-dialog.description-draft':
+    'Ez véglegesen eltávolítja a dokumentumon végzett összes módosítást. Ez a művelet nem vonható vissza.',
   /** Description for discarding a version of a document dialog */
-  'discard-version-dialog.description-release': undefined, // 'This will permanently remove all changes made to this document within the \'<strong>{{releaseTitle}}</strong>\' release. This action cannot be undone.'
+  'discard-version-dialog.description-release':
+    "Ez véglegesen eltávolítja a dokumentumon a '<strong>{{releaseTitle}}</strong>' kiadáson belül végzett összes módosítást. Ez a művelet nem vonható vissza.",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.header-draft': undefined, // 'Discard draft?'
+  'discard-version-dialog.header-draft': 'Elveti a piszkozatot?',
   /** Header for discarding a version from a release of a document dialog */
-  'discard-version-dialog.header-release': undefined, // 'Remove document from the \'<strong>{{releaseTitle}}</strong>\' release?'
+  'discard-version-dialog.header-release':
+    "Eltávolítja a dokumentumot a '<strong>{{releaseTitle}}</strong>' kiadásból?",
   /** Title for dialog for discarding a draft of a document */
-  'discard-version-dialog.title-draft': undefined, // 'Discard draft'
+  'discard-version-dialog.title-draft': 'Piszkozat elvetése',
   /** Title for dialog for discarding a version of a document */
-  'discard-version-dialog.title-release': undefined, // 'Remove from release'
+  'discard-version-dialog.title-release': 'Eltávolítás a kiadásból',
 
   /** Label for when a document in a release has a single validation warning */
-  'document-validation.error_one': undefined, // '{{count}} validation error'
+  'document-validation.error_one': '{{count}} érvényesítési hiba',
   /** Label for when a document in a release has multiple validation warnings */
-  'document-validation.error_other': undefined, // '{{count}} validation errors'
+  'document-validation.error_other': '{{count}} érvényesítési hiba',
 
   /** Label for the button to proceed with duplicating a release */
-  'duplicate-dialog.confirm-duplicate-button': undefined, // 'Yes, duplicate release'
+  'duplicate-dialog.confirm-duplicate-button': 'Igen, kiadás duplikálása',
   /** Description for the dialog confirming the duplicate of a release with one document */
-  'duplicate-dialog.confirm-duplicate-description_one': undefined, // 'This will duplicate the release and the 1 document version.'
+  'duplicate-dialog.confirm-duplicate-description_one':
+    'Ez duplikálja a kiadást és az 1 dokumentumverziót.',
   /** Description for the dialog confirming the duplicate of a release with more than one document */
-  'duplicate-dialog.confirm-duplicate-description_other': undefined, // 'This will duplicate the release and the {{count}} document versions.'
+  'duplicate-dialog.confirm-duplicate-description_other':
+    'Ez duplikálja a kiadást és a {{count}} dokumentumverziót.',
   /** Header for the dialog confirming the duplicate of a release */
-  'duplicate-dialog.confirm-duplicate-header': undefined, // 'Are you sure you want to duplicate this release?'
+  'duplicate-dialog.confirm-duplicate-header': 'Biztosan duplikálni szeretné ezt a kiadást?',
 
   /** Title text displayed for technical error details */
-  'error-details-title': undefined, // 'Error details'
+  'error-details-title': 'Hiba részletei',
 
   /** Title text when error during release update */
-  'failed-edit-title': undefined, // 'Failed to save changes'
+  'failed-edit-title': 'Nem sikerült menteni a módosításokat',
 
   /** Title text displayed for releases that failed to publish  */
-  'failed-publish-title': undefined, // 'Failed to publish'
+  'failed-publish-title': 'Nem sikerült közzétenni',
 
   /** Title text displayed for releases that failed to schedule  */
-  'failed-schedule-title': undefined, // 'Failed to schedule'
+  'failed-schedule-title': 'Nem sikerült ütemezni',
 
   /** Filter tab label for all documents */
-  'filter-tab.all': undefined, // 'All'
+  'filter-tab.all': 'Összes',
   /** Filter tab label for documents with validation errors */
-  'filter-tab.errors': undefined, // 'Errors'
+  'filter-tab.errors': 'Hibák',
 
   /**The text that will be shown in the footer to indicate the time the release was archived */
-  'footer.status.archived': undefined, // 'Archived'
+  'footer.status.archived': 'Archiválva',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.created': undefined, // 'Created'
+  'footer.status.created': 'Létrehozva',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.edited': undefined, // 'Edited'
+  'footer.status.edited': 'Szerkesztve',
   /**The text that will be shown in the footer to indicate the time the release was published */
-  'footer.status.published': undefined, // 'Published'
+  'footer.status.published': 'Közzétéve',
   /**The text that will be shown in the footer to indicate the time the release was unarchived */
-  'footer.status.unarchived': undefined, // 'Unarchived'
+  'footer.status.unarchived': 'Archiválásból visszaállítva',
 
   /** Label text for the loading state whilst release is being loaded */
-  'loading-release': undefined, // 'Loading release'
+  'loading-release': 'Kiadás betöltése',
 
   /** Text for when documents of a release are loading */
-  'loading-release-documents': undefined, // 'Loading documents'
+  'loading-release-documents': 'Dokumentumok betöltése',
   /** Description text for when loading documents on a release failed */
-  'loading-release-documents.error.description': undefined, // 'We\'re unable to load the documents for this release. Please try again later.'
+  'loading-release-documents.error.description':
+    'Nem sikerült betölteni a kiadáshoz tartozó dokumentumokat. Kérjük, próbálja meg később.',
   /** Title text for when loading documents on a release failed */
-  'loading-release-documents.error.title': undefined, // 'Something went wrong'
+  'loading-release-documents.error.title': 'Valami hiba történt',
 
   /** Label for title of actions for "when releasing" */
-  'menu.group.when-releasing': undefined, // 'When releasing'
+  'menu.group.when-releasing': 'Kiadáskor',
   /** Label for the release menu */
-  'menu.label': undefined, // 'Release menu'
+  'menu.label': 'Kiadás menü',
   /** Tooltip for the release menu */
-  'menu.tooltip': undefined, // 'Actions'
+  'menu.tooltip': 'Műveletek',
 
   /** Text for when no archived releases are found */
-  'no-archived-release': undefined, // 'No archived releases'
+  'no-archived-release': 'Nincsenek archivált kiadások',
 
   /** Tooltip text when there are no paused scheduled drafts */
-  'no-paused-release': undefined, // 'No paused scheduled drafts'
+  'no-paused-release': 'Nincsenek szüneteltetett ütemezett piszkozatok',
 
   /** Text for when no releases are found */
-  'no-releases': undefined, // 'No Releases'
+  'no-releases': 'Nincsenek kiadások',
 
   /** Text for when no scheduled drafts are found */
-  'no-scheduled-drafts': undefined, // 'No Scheduled Drafts'
+  'no-scheduled-drafts': 'Nincsenek ütemezett piszkozatok',
 
   /** Text for the button name for the release tool */
-  'overview.action.documentation': undefined, // 'Documentation'
+  'overview.action.documentation': 'Dokumentáció',
   /** Tooltip for the calendar button in the release overview */
-  'overview.calendar.tooltip': undefined, // 'View calendar'
+  'overview.calendar.tooltip': 'Naptár megtekintése',
   /** Description for the release tool */
-  'overview.description': undefined, // 'Releases are collections of document changes which can be managed, scheduled, and rolled back together.'
+  'overview.description':
+    'A kiadások dokumentummódosítások gyűjteményei, amelyek együttesen kezelhetők, ütemezhetők és visszaállíthatók.',
   /** Text for the placeholder in the search release input  */
-  'overview.search-releases-placeholder': undefined, // 'Search releases'
+  'overview.search-releases-placeholder': 'Kiadások keresése',
   /** Title for the release tool */
-  'overview.title': undefined, // 'Releases'
+  'overview.title': 'Kiadások',
 
   /** Tooltip text for releases that have passed their intended publish date */
-  'passed-intended-publish-date': undefined, // 'This release has passed its intended publish date'
+  'passed-intended-publish-date': 'Ez a kiadás túllépte a tervezett közzétételi dátumát',
 
   /** Tooltip text for scheduled drafts that have passed their intended publish date */
-  'passed-intended-publish-date-draft': undefined, // 'This draft has passed its intended publish date'
+  'passed-intended-publish-date-draft': 'Ez a piszkozat túllépte a tervezett közzétételi dátumát',
 
   /** Description for when a user doesn't have publish or schedule releases */
-  'permission-missing-description': undefined, // 'Your role currently limits what you can see in this release. You may not publish nor schedule this release.'
+  'permission-missing-description':
+    'Az Ön szerepköre jelenleg korlátozza, hogy mit láthat ebben a kiadásban. Előfordulhat, hogy nem tudja közzétenni vagy ütemezni ezt a kiadást.',
 
   /** Text for when a user doesn't have publish or schedule releases */
-  'permission-missing-title': undefined, // 'Limited access'
+  'permission-missing-title': 'Korlátozott hozzáférés',
 
   /** Tooltip label when the user doesn't have permission to archive release */
-  'permissions.error.archive': undefined, // 'You do not have permission to archive this release'
+  'permissions.error.archive': 'Önnek nincs jogosultsága ennek a kiadásnak az archiválásához',
   /** Tooltip label when the user doesn't have permission to delete release */
-  'permissions.error.delete': undefined, // 'You do not have permission to delete this release'
+  'permissions.error.delete': 'Önnek nincs jogosultsága ennek a kiadásnak a törléséhez',
   /** Tooltip label when the user doesn't have permission for discarding a version */
-  'permissions.error.discard-version': undefined, // 'You do not have permission to discard this version'
+  'permissions.error.discard-version': 'Nincs jogosultsága elvetni ezt a verziót',
   /** Tooltip label when the user doesn't have permission to duplicate release */
-  'permissions.error.duplicate': undefined, // 'You do not have permission to duplicate this release'
+  'permissions.error.duplicate': 'Nincs jogosultsága duplikálni ezt a release-t',
   /** Tooltip label when the user doesn't have permission to unarchive release */
-  'permissions.error.unarchive': undefined, // 'You do not have permission to unarchive this release'
+  'permissions.error.unarchive':
+    'Nincs jogosultsága archiválás visszavonásához ennél a release-nél',
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
-  'permissions.error.unpublish': undefined, // 'You do not have permission to unpublish this document'
+  'permissions.error.unpublish':
+    'Nincs jogosultsága visszavonni ennek a dokumentumnak a közzétételét',
 
   /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  'presence.tooltip.one':
+    '{{displayName}} éppen ezt a dokumentumot szerkeszti a „{{releaseTitle}}" release-ben',
 
   /** Tooltip text for publish release action when there are no documents */
-  'publish-action.validation.no-documents': undefined, // 'There are no documents to publish'
+  'publish-action.validation.no-documents': 'Nincsenek közzéteendő dokumentumok',
 
   /** Description for the dialog confirming the publish of a release with one document */
-  'publish-dialog.confirm-publish-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published.'
+  'publish-dialog.confirm-publish-description_one':
+    "A '<strong>{{title}}</strong>' release és a hozzá tartozó dokumentum közzé lesz téve.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
-  'publish-dialog.confirm-publish-description_other': undefined, // 'The \'<strong>{{title}}</strong>\' release and its {{releaseDocumentsLength}} documents will be published.'
+  'publish-dialog.confirm-publish-description_other':
+    "A '<strong>{{title}}</strong>' release és a hozzá tartozó {{releaseDocumentsLength}} dokumentum közzé lesz téve.",
   /** Title for the dialog confirming the publish of a release */
-  'publish-dialog.confirm-publish.title': undefined, // 'Are you sure you want to publish the release and all document versions?'
+  'publish-dialog.confirm-publish.title':
+    'Biztosan közzé szeretné tenni a release-t és az összes dokumentumverziót?',
   /** Label for when documents in release have validation errors */
-  'publish-dialog.validation.error': undefined, // 'Some documents have validation errors'
+  'publish-dialog.validation.error': 'Egyes dokumentumokban érvényesítési hibák vannak',
   /** Label for when documents are being validated */
-  'publish-dialog.validation.loading': undefined, // 'Validating documents...'
+  'publish-dialog.validation.loading': 'Dokumentumok érvényesítése...',
   /** Label for the button when the user doesn't have permissions to publish a release */
-  'publish-dialog.validation.no-permission': undefined, // 'You do not have permission to publish'
+  'publish-dialog.validation.no-permission': 'Nincs jogosultsága a közzétételhez',
 
   /** Title for information card on a published release */
-  'publish-info.title': undefined, // 'This release is published successfully.'
+  'publish-info.title': 'Ez a release sikeresen közzé lett téve.',
 
   /** Placeholder title for a release with no title */
-  'release-placeholder.title': undefined, // 'Untitled'
+  'release-placeholder.title': 'Cím nélküli',
 
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_one': undefined, // 'This will revert {{releaseDocumentsLength}} document version.'
+  'revert-dialog.confirm-revert-description_one':
+    'Ez visszaállítja {{releaseDocumentsLength}} dokumentumverziót.',
   /** Description for the dialog confirming the revert of a release with multiple documents */
-  'revert-dialog.confirm-revert-description_other': undefined, // 'This will revert {{releaseDocumentsLength}} document versions.'
+  'revert-dialog.confirm-revert-description_other':
+    'Ez visszaállítja {{releaseDocumentsLength}} dokumentumverziót.',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
-  'revert-dialog.confirm-revert.stage-revert-checkbox-label': undefined, // 'Immediately revert the release'
+  'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'A release azonnali visszaállítása',
   /** Title for the dialog confirming the revert of a release */
-  'revert-dialog.confirm-revert.title': undefined, // 'Are you sure you want to revert the \'{{title}}\' release?'
+  'revert-dialog.confirm-revert.title':
+    'Biztosan vissza szeretné állítani a „{{title}}" release-t?',
   /** Warning card text for when immediately revert a release with history */
-  'revert-dialog.confirm-revert.warning-card': undefined, // 'Changes were made to documents in this release after they were published. Reverting will overwrite these changes.'
+  'revert-dialog.confirm-revert.warning-card':
+    'A release dokumentumain a közzétételük után módosítások történtek. A visszaállítás felülírja ezeket a változtatásokat.',
 
   /** Description of a reverted release */
-  'revert-release.description': undefined, // 'Revert changes to document versions in "{{title}}".'
+  'revert-release.description':
+    'Dokumentumverziók módosításainak visszaállítása a következőben: „{{title}}".',
   /** Title of a reverted release */
-  'revert-release.title': undefined, // 'Reverting "{{title}}"'
+  'revert-release.title': '„{{title}}" visszaállítása',
 
   /** Description for the review changes button in release tool */
-  'review.description': undefined, // 'Add documents to this release to review changes'
+  'review.description': 'Adjon dokumentumokat ehhez a release-hez a változtatások áttekintéséhez',
   /** Text for when a document is edited */
-  'review.edited': undefined, // 'Edited <RelativeTime/>'
+  'review.edited': 'Szerkesztve: <RelativeTime/>',
 
   /** Schedule release button tooltip when there are no documents to schedule */
-  'schedule-action.validation.no-documents': undefined, // 'There are no documents to schedule'
+  'schedule-action.validation.no-documents': 'Nincsenek ütemezendő dokumentumok',
 
   /** Schedule release button tooltip when the release is already scheduled */
-  'schedule-button-tooltip.already-scheduled': undefined, // 'This release is already scheduled'
+  'schedule-button-tooltip.already-scheduled': 'Ez a release már ütemezve van',
   /** Schedule release button tooltip when there are validation errors */
-  'schedule-button-tooltip.validation.error': undefined, // 'Some documents have validation errors'
+  'schedule-button-tooltip.validation.error': 'Egyes dokumentumokban érvényesítési hibák vannak',
   /** Schedule release button tooltip when validation is loading */
-  'schedule-button-tooltip.validation.loading': undefined, // 'Validating documents...'
+  'schedule-button-tooltip.validation.loading': 'Dokumentumok érvényesítése...',
   /** Schedule release button tooltip when user has no permissions to schedule */
-  'schedule-button-tooltip.validation.no-permission': undefined, // 'You do not have permission to schedule'
+  'schedule-button-tooltip.validation.no-permission': 'Nincs jogosultsága az ütemezéshez',
 
   /** Title of unschedule release dialog */
-  'schedule-button.tooltip': undefined, // 'Are you sure you want to unschedule the release?'
+  'schedule-button.tooltip': 'Biztosan törölni szeretné a kiadás ütemezését?',
 
   /** Description for the confirm button for scheduling a release */
-  'schedule-dialog.confirm-button': undefined, // 'Yes, schedule'
+  'schedule-dialog.confirm-button': 'Igen, ütemezés',
   /** Description shown in unschedule relaease dialog */
-  'schedule-dialog.confirm-description_one': undefined, // 'The \'<strong>{{title}}</strong>\' release and its document will be published on the selected date.'
+  'schedule-dialog.confirm-description_one':
+    "A '<strong>{{title}}</strong>' kiadás és dokumentuma a kiválasztott időpontban kerül közzétételre.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
-  'schedule-dialog.confirm-description_other': undefined, // 'The <strong>{{title}}</strong> release and its {{count}} document versions will be scheduled.'
+  'schedule-dialog.confirm-description_other':
+    'A <strong>{{title}}</strong> kiadás és annak {{count}} dokumentumverziója ütemezésre kerül.',
   /** Title for unschedule release dialog */
-  'schedule-dialog.confirm-title': undefined, // 'Schedule the release'
+  'schedule-dialog.confirm-title': 'A kiadás ütemezése',
   /** Description for warning that the published schedule time is in the past */
-  'schedule-dialog.publish-date-in-past-warning': undefined, // 'Schedule for a future time and date.'
+  'schedule-dialog.publish-date-in-past-warning': 'Jövőbeli időpontra és dátumra ütemezzen.',
   /** Label for date picker when scheduling a release */
-  'schedule-dialog.select-publish-date-label': undefined, // 'Schedule on'
+  'schedule-dialog.select-publish-date-label': 'Ütemezés időpontja',
 
   /** Confirm button text for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.confirm': undefined, // 'Schedule Unpublish'
+  'schedule-unpublish-dialog.confirm': 'Közzététel visszavonásának ütemezése',
   /** Description for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.description': undefined, // 'Select when this document should be unpublished.'
+  'schedule-unpublish-dialog.description':
+    'Válassza ki, mikor szüntesse meg a dokumentum közzétételét.',
   /** Header for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.header': undefined, // 'Schedule draft for Unpublish'
+  'schedule-unpublish-dialog.header': 'Vázlat ütemezése a közzététel visszavonásához',
 
   /** Placeholder for search of documents in a release */
-  'search-documents-placeholder': undefined, // 'Search documents'
+  'search-documents-placeholder': 'Dokumentumok keresése',
 
   /** Text for when the release has no errors found */
-  'summary.all-documents-errors-found': undefined, // 'All documents validated, issues found'
+  'summary.all-documents-errors-found': 'Minden dokumentum érvényesítve, problémák találhatók',
   /** Text for when the release has validated all documents */
-  'summary.all-documents-validated': undefined, // 'All documents validated, no issues found'
+  'summary.all-documents-validated': 'Minden dokumentum érvényesítve, nem találhatók problémák',
   /** Text for when the release was created */
-  'summary.created': undefined, // 'Created <RelativeTime/>'
+  'summary.created': 'Létrehozva: <RelativeTime/>',
   /** Text for when the release is composed of one document */
-  'summary.document-count_one': undefined, // '{{count}} document'
+  'summary.document-count_one': '{{count}} dokumentum',
   /** Text for when the release is composed of multiple documents */
-  'summary.document-count_other': undefined, // '{{count}} documents'
+  'summary.document-count_other': '{{count}} dokumentum',
   /** Text for when the release has some errors found */
-  'summary.errors-found': undefined, // 'In order to publish or schedule the release, please resolve the issues found in the documents'
+  'summary.errors-found':
+    'A kiadás közzétételéhez vagy ütemezéséhez kérjük, oldja meg a dokumentumokban talált problémákat',
   /** Text for when the release has no documents */
-  'summary.no-documents': undefined, // 'No documents'
+  'summary.no-documents': 'Nincsenek dokumentumok',
   /** Description for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.description': undefined, // 'This scheduled draft does not contain a document. It may have been removed.'
+  'summary.no-documents-cardinality-one.description':
+    'Ez az ütemezett vázlat nem tartalmaz dokumentumot. Lehetséges, hogy eltávolításra került.',
   /** Title for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.title': undefined, // 'No document in this release'
+  'summary.no-documents-cardinality-one.title': 'Nincs dokumentum ebben a kiadásban',
   /** Text for when the release has not published */
-  'summary.not-published': undefined, // 'Not published'
+  'summary.not-published': 'Nincs közzétéve',
   /** Text for when the release was published */
-  'summary.published': undefined, // 'Published <RelativeTime/>'
+  'summary.published': 'Közzétéve: <RelativeTime/>',
   /** Text for when the release has validated documents */
-  'summary.validated-documents': undefined, // '{{validatedCount}} of {{totalCount}} documents validated'
+  'summary.validated-documents': '{{validatedCount}} / {{totalCount}} dokumentum érvényesítve',
   /** Text for validation loading indicator */
-  'summary.validating-documents': undefined, // 'Validating documents: {{validatedCount}} of {{totalCount}}'
+  'summary.validating-documents': 'Dokumentumok érvényesítése: {{validatedCount}} / {{totalCount}}',
 
   /** add action type that will be shown in the table*/
-  'table-body.action.add': undefined, // 'Add'
+  'table-body.action.add': 'Hozzáadás',
   /** Change action type that will be shown in the table*/
-  'table-body.action.change': undefined, // 'Change'
+  'table-body.action.change': 'Módosítás',
   /** Change action type that will be shown in the table*/
-  'table-body.action.unpublish': undefined, // 'Unpublish'
+  'table-body.action.unpublish': 'Közzététel visszavonása',
 
   /** Header for the document table in the release tool - action */
-  'table-header.action': undefined, // 'Action'
+  'table-header.action': 'Művelet',
   /** Header for the document table in the release tool - Archived */
-  'table-header.archivedAt': undefined, // 'Archived'
+  'table-header.archivedAt': 'Archiválva',
   /** Header for the document table in the release tool - contributors */
-  'table-header.contributors': undefined, // 'Contributors'
+  'table-header.contributors': 'Közreműködők',
   /** Header for the document table in the release tool - created by */
-  'table-header.created-by': undefined, // 'Created by'
+  'table-header.created-by': 'Létrehozta',
   /** Header for the document table in the release tool - document preview */
-  'table-header.document': undefined, // 'Document'
+  'table-header.document': 'Dokumentum',
   /** Header for the document table in the release tool - title */
-  'table-header.documents': undefined, // 'Documents'
+  'table-header.documents': 'Dokumentumok',
   /** Header for the document table in the release tool - edited */
-  'table-header.edited': undefined, // 'Edited'
+  'table-header.edited': 'Szerkesztve',
   /** Header for the paused scheduled drafts table - intended for */
-  'table-header.intended-for': undefined, // 'Intended for'
+  'table-header.intended-for': 'Szánva',
   /** Header for the document table in the release tool - Published */
-  'table-header.published-at': undefined, // 'Published'
+  'table-header.published-at': 'Közzétéve',
   /** Header for the document table in the release tool - Published */
-  'table-header.publishedAt': undefined, // 'Published'
+  'table-header.publishedAt': 'Közzétéve',
   /** Header for the scheduled drafts document table in the release tool - published at */
-  'table-header.scheduled-draft.published-at': undefined, // 'Published at'
+  'table-header.scheduled-draft.published-at': 'Közzétéve ekkor',
   /** Header for the scheduled drafts document table in the release tool - scheduled for */
-  'table-header.scheduled-for': undefined, // 'Scheduled for'
+  'table-header.scheduled-for': 'Ütemezve erre',
   /** Header for the document table in the release tool - time */
-  'table-header.time': undefined, // 'Time'
+  'table-header.time': 'Idő',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': undefined, // 'Release'
+  'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
-  'table-header.type': undefined, // 'Type'
+  'table-header.type': 'Típus',
   /** Header for the document table in the release tool - when */
-  'table-header.when': undefined, // 'When'
+  'table-header.when': 'Mikor',
 
   /** Text for the release time label for scheduled releases  which has not been scheduled yet*/
-  'time.estimated': undefined, // 'Estimated'
+  'time.estimated': 'Becsült',
   /** Text for the release time label for scheduled releases  which has been scheduled*/
-  'time.scheduled': undefined, // 'Scheduled'
+  'time.scheduled': 'Ütemezett',
 
   /** Text for toast when release failed to archive */
-  'toast.archive.error': undefined, // 'Failed to archive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.archive.error': 'Nem sikerült archiválni: „<strong>{{title}}</strong>": {{error}}',
   /** Toast error message when bulk scheduling of active drafts fails */
-  'toast.confirm-active-scheduled-drafts.error': undefined, // 'Failed to schedule drafts: {{error}}'
+  'toast.confirm-active-scheduled-drafts.error': 'Nem sikerült ütemezni a vázlatokat: {{error}}',
   /** Toast message after copying release ID */
-  'toast.copy-release-id.success': undefined, // 'Release ID copied to clipboard'
+  'toast.copy-release-id.success': 'A kiadás azonosítója a vágólapra másolva',
   /** Toast message after copying release link */
-  'toast.copy-release-link.success': undefined, // 'Release link copied to clipboard'
+  'toast.copy-release-link.success': 'A kiadás hivatkozása a vágólapra másolva',
   /** Toast message after copying release title */
-  'toast.copy-release-title.success': undefined, // 'Release title copied to clipboard'
+  'toast.copy-release-title.success': 'A kiadás címe a vágólapra másolva',
   /** Description for toast when creating new version of document in release failed */
-  'toast.create-version.error': undefined, // 'Failed to add document to release: {{error}}'
+  'toast.create-version.error': 'Nem sikerült hozzáadni a dokumentumot a kiadáshoz: {{error}}',
   /** Description for toast when release deletion failed */
-  'toast.delete.error': undefined, // 'Failed to delete \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.delete.error': "Nem sikerült törölni: '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully deleted */
-  'toast.delete.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was successfully deleted'
+  'toast.delete.success': "A '<strong>{{title}}</strong>' kiadás sikeresen törölve lett",
   /** Description for toast when release duplication failed */
-  'toast.duplicate.error': undefined, // 'Failed to duplicate \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.duplicate.error': "Nem sikerült másolni: '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully duplicated */
-  'toast.duplicate.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was duplicated. <Link/>'
+  'toast.duplicate.success': "A '<strong>{{title}}</strong>' kiadás másolva lett. <Link/>",
   /** Link text for toast link to the duplicated release */
-  'toast.duplicate.success-link': undefined, // 'View duplicated release'
+  'toast.duplicate.success-link': 'Másolt kiadás megtekintése',
   /** Text for toast when release has been reverted immediately */
-  'toast.immediate-revert.success': undefined, // 'The \'{{title}}\' release was successfully reverted'
+  'toast.immediate-revert.success': "A '{{title}}' kiadás sikeresen visszaállítva",
   /** Text for toast when release failed to publish */
-  'toast.publish.error': undefined, // 'Failed to publish \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.publish.error': "Nem sikerült közzétenni: '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release has reverted release successfully staged */
-  'toast.revert-stage.success': undefined, // 'Revert release for \'{{title}}\' was successfully created. <Link/>'
+  'toast.revert-stage.success':
+    "A '{{title}}' visszaállítási kiadása sikeresen létrehozva. <Link/>",
   /** Link text for toast link to the generated revert release */
-  'toast.revert-stage.success-link': undefined, // 'View revert release'
+  'toast.revert-stage.success-link': 'Visszaállítási kiadás megtekintése',
   /** Text for toast when release failed to revert */
-  'toast.revert.error': undefined, // 'Failed to revert release: {{error}}'
+  'toast.revert.error': 'Nem sikerült visszaállítani a kiadást: {{error}}',
   /** Text for toast when release failed to schedule */
-  'toast.schedule.error': undefined, // 'Failed to schedule \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.schedule.error': "Nem sikerült ütemezni: '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release has been scheduled */
-  'toast.schedule.success': undefined, // 'The \'<strong>{{title}}</strong>\' release was scheduled.'
+  'toast.schedule.success': "A '<strong>{{title}}</strong>' kiadás ütemezve lett.",
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error': undefined, // 'Failed to unarchive \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unarchive.error':
+    "Nem sikerült archiválásból visszaállítani: '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release failed to unschedule */
-  'toast.unschedule.error': undefined, // 'Failed to unscheduled \'<strong>{{title}}</strong>\': {{error}}'
+  'toast.unschedule.error':
+    "Nem sikerült az ütemezést törölni: '<strong>{{title}}</strong>': {{error}}",
 
   /** Text for tooltip when a release has been scheduled */
-  'type-picker.tooltip.scheduled': undefined, // 'The release is scheduled, unschedule it to change type'
+  'type-picker.tooltip.scheduled':
+    'A kiadás ütemezve van, az ütemezés törlésével módosíthatja a típust',
 
   /** Text action in unpublish dialog to cancel */
-  'unpublish-dialog.action.cancel': undefined, // 'Cancel'
+  'unpublish-dialog.action.cancel': 'Mégse',
   /** Text action in unpublish dialog to unpublish */
-  'unpublish-dialog.action.unpublish': undefined, // 'Yes, unpublish when releasing'
+  'unpublish-dialog.action.unpublish': 'Igen, közzététel visszavonása kiadáskor',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
-  'unpublish-dialog.description.lost-changes': undefined, // 'Any changes made to this document version will be lost.'
+  'unpublish-dialog.description.lost-changes':
+    'A dokumentum ezen verziójában végzett módosítások elvesznek.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
-  'unpublish-dialog.description.to-draft': undefined, // 'This will unpublish the document as part of the <Label>{{title}}</Label> release, and create a draft if no draft exists at the time of release.'
+  'unpublish-dialog.description.to-draft':
+    'Ez a dokumentumot a <Label>{{title}}</Label> kiadás részeként visszavonja a közzétételből, és piszkozatot hoz létre, ha a kiadás időpontjában nem létezik piszkozat.',
   /** Title for the dialog confirming the unpublish of a release */
-  'unpublish-dialog.header': undefined, // 'Are you sure you want to unpublish this document when releasing?'
+  'unpublish-dialog.header': 'Biztosan vissza szeretné vonni a dokumentum közzétételét kiadáskor?',
 
   /** Text for when a document is unpublished */
-  'unpublish.already-unpublished': undefined, // 'This document is already unpublished.'
+  'unpublish.already-unpublished': 'Ez a dokumentum már nincs közzétéve.',
   /** Tooltip label for when a document is unpublished */
-  'unpublish.no-published-version': undefined, // 'There is no published version of this document.'
+  'unpublish.no-published-version': 'Ennek a dokumentumnak nincs közzétett verziója.',
 
   /** Description shown in unschedule relaease dialog */
-  'unschedule-dialog.confirm-description': undefined, // 'The release will no longer be published on the scheduled date'
+  'unschedule-dialog.confirm-description':
+    'A kiadás a továbbiakban nem kerül közzétételre az ütemezett időpontban.',
   /** Title for unschedule release dialog */
-  'unschedule-dialog.confirm-title': undefined, // 'Are you sure you want to unschedule the release?'
+  'unschedule-dialog.confirm-title': 'Biztosan törölni szeretné a kiadás ütemezését?',
 })

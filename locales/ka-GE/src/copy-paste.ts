@@ -46,7 +46,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'ტიპის "{{type}}" მნიშვნელობა არ არის ნებადართული ამ ველში',
   /** The validation message that is shown when read-only fields are skipped during document paste */
-  'copy-paste.on-paste.validation.read-only-fields-skipped.description': undefined, // 'Skipped read-only fields: {{fieldNames}}'
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'გამოტოვებული მხოლოდ წასაკითხი ველები: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'მიმღები არის მხოლოდ კითხვისთვის',

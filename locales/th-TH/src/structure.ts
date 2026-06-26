@@ -164,7 +164,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'ข้อมูลอ้างอิงนี้ถูกลบไปแล้วตั้งแต่คุณเปิดมัน',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'เพิ่มใน bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'เพิ่มเข้าไปในการปล่อย',
   /** The text that appears for the action button to add the current document to the global release */
@@ -444,7 +444,7 @@ export default removeUndefinedLocaleResources({
     'ไม่ได้กำหนดการอ้างอิงที่เข้ามาสำหรับประเภทนี้ ดูเอกสารเพิ่มเติมเพื่อข้อมูลเพิ่มเติม',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'ไม่พบการอ้างอิงขาเข้า',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'ไม่พบการอ้างอิงของประเภทนี้',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -533,7 +533,8 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'ค้นหารายการ',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'ตัวเลือกการเรียงลำดับนี้ใช้ฟิลด์ที่ไม่ได้เป็นส่วนหนึ่งของประเภทเอกสารนี้',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'รายละเอียด',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -566,7 +567,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'เอกสารได้รับการเผยแพร่',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion':
+    'เวอร์ชันได้รับการเผยแพร่แล้ว',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ได้รับการกู้คืนแล้ว',

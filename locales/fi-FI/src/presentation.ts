@@ -2,142 +2,149 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** The status of the channel connection */
-  'channel.status_connected': undefined, // 'Connected'
+  'channel.status_connected': 'Yhdistetty',
   /** The status of the channel connection */
-  'channel.status_connecting': undefined, // 'Connecting'
+  'channel.status_connecting': 'Yhdistetään',
   /** The status of the channel connection */
-  'channel.status_disconnected': undefined, // 'Disconnected'
+  'channel.status_disconnected': 'Yhteys katkaistu',
   /** The status of the channel connection */
-  'channel.status_reconnecting': undefined, // 'Reconnecting'
+  'channel.status_reconnecting': 'Yhdistetään uudelleen',
 
   /** The title shown above the document list */
-  'document-list-pane.document-list.title': undefined, // 'Documents on this page'
+  'document-list-pane.document-list.title': 'Tämän sivun dokumentit',
   /** The text shown if the document list is unable to render */
-  'document-list-pane.error.text': undefined, // 'Could not render the document list'
+  'document-list-pane.error.text': 'Dokumenttiluettelon renderöinti epäonnistui',
 
   /** The text shown if the document editor is unable to render */
-  'document-pane.error.text': undefined, // 'Could not render the document editor'
+  'document-pane.error.text': 'Dokumenttieditorin renderöinti epäonnistui',
 
   /** The text shown on the button for bypassing after a connection has failed */
-  'error-card.continue-button.text': undefined, // 'Continue anyway'
+  'error-card.continue-button.text': 'Jatka silti',
   /** The text shown on the button for retrying after a connection has failed */
-  'error-card.retry-button.text': undefined, // 'Retry'
+  'error-card.retry-button.text': 'Yritä uudelleen',
   /** The title on the card shown after a connection has failed */
-  'error-card.title': undefined, // 'An error occurred'
+  'error-card.title': 'Tapahtui virhe',
 
   /** The text shown when the document is used in a single location */
-  'locations-banner.locations-count_one': undefined, // 'Used on one page'
+  'locations-banner.locations-count_one': 'Käytetty yhdellä sivulla',
   /** The text shown when the document is used in multiple locations */
-  'locations-banner.locations-count_other': undefined, // 'Used on {{count}} pages'
+  'locations-banner.locations-count_other': 'Käytetty {{count}} sivulla',
   /** The text shown when a resolver exists but the document is not used in any locations */
-  'locations-banner.locations-count_zero': undefined, // 'Not used on any pages'
+  'locations-banner.locations-count_zero': 'Ei käytetty millään sivulla',
   /** The text shown whilst the locations resolver is executing */
-  'locations-banner.resolving.text': undefined, // 'Resolving locations...'
+  'locations-banner.resolving.text': 'Ratkaistaan sijainteja...',
 
   /** The label shown on a main document in the list pane */
-  'main-document.label': undefined, // 'Main document'
+  'main-document.label': 'Pääasiakirja',
   /** The warning message text shown when a defined resolver fails to return a main document */
-  'main-document.missing.text': undefined, // 'Missing a main document for <Code>{{path}}</Code>'
+  'main-document.missing.text': 'Pääasiakirja puuttuu kohteelle <Code>{{path}}</Code>',
 
   /** The label for the tab that shows the document editor at narrow viewports */
-  'narrow-tabs.content-tab.label': undefined, // 'Structure'
+  'narrow-tabs.content-tab.label': 'Rakenne',
   /** The label for the tab that shows the navigator at narrow viewports */
-  'narrow-tabs.navigator-tab.label': undefined, // 'Navigator'
+  'narrow-tabs.navigator-tab.label': 'Navigaattori',
   /** The label for the tab that shows the preview at narrow viewports */
-  'narrow-tabs.preview-tab.label': undefined, // 'Presentation'
+  'narrow-tabs.preview-tab.label': 'Esitys',
 
   /** The label for a generic error message */
-  'presentation-error.label': undefined, // 'Error message'
+  'presentation-error.label': 'Virheilmoitus',
 
   /** The toast description for the error message explaining that the iframe is blocked from loading due to a security mismatch. */
-  'preview-frame.configuration.error.description': undefined, // 'The preview iframe is configured to load <Code>{{targetOrigin}}</Code>, but the reported origin is <Code>{{reportedOrigin}}</Code>. Presentation Tool is unable to connect to unknown origins for security purposes. Update your <Code>presentationTool.allowOrigins</Code> configuration to allow connecting to Visual Editing and Loaders.'
+  'preview-frame.configuration.error.description':
+    'Esikatselun iframe on määritetty lataamaan <Code>{{targetOrigin}}</Code>, mutta ilmoitettu alkuperä on <Code>{{reportedOrigin}}</Code>. Presentation Tool ei pysty muodostamaan yhteyttä tuntemattomiin alkuperiin tietoturvasyistä. Päivitä <Code>presentationTool.allowOrigins</Code>-määritys salliaksesi yhteyden Visual Editingiin ja Loadersiin.',
   /** The title of the error toast that shows when the preview iframe times out while waiting for a connection over comlink to establish, and the root cause is discovered to be that the iframe is loading on an URL origin that's not in the allow list. */
-  'preview-frame.configuration.error.title': undefined, // 'Preview URL origin mismatch'
+  'preview-frame.configuration.error.title': 'Esikatselun URL-alkuperä ei täsmää',
   /** The text shown when the preview frame cannot connect to Presentation */
-  'preview-frame.connection.error.text': undefined, // 'Could not connect to the preview'
+  'preview-frame.connection.error.text': 'Esikatselu ei pystynyt muodostamaan yhteyttä',
   /** The text shown on the button for dismissing the error overlay after a timeout */
-  'preview-frame.continue-button.text': undefined, // 'Continue anyway'
+  'preview-frame.continue-button.text': 'Jatka silti',
   /** The label for the loader's connection status */
-  'preview-frame.loader.connection-status.label': undefined, // 'Loader connection status'
+  'preview-frame.loader.connection-status.label': 'Loaderin yhteystila',
   /** The `aria-label` for the navigator toggle button */
-  'preview-frame.navigator.toggle-button.aria-label': undefined, // 'Toggle navigator'
+  'preview-frame.navigator.toggle-button.aria-label': 'Vaihda navigaattori',
   /** The tooltip text for the navigator toggle button */
-  'preview-frame.navigator.toggle-button.tooltip': undefined, // 'Toggle navigator'
+  'preview-frame.navigator.toggle-button.tooltip': 'Vaihda navigaattori',
   /** The label for the overlay's connection status */
-  'preview-frame.overlay.connection-status.label': undefined, // 'Overlay connection status'
+  'preview-frame.overlay.connection-status.label': 'Overlayn yhteystila',
   /** The text shown on the overlay toggle button */
-  'preview-frame.overlay.toggle-button.text': undefined, // 'Edit'
+  'preview-frame.overlay.toggle-button.text': 'Muokkaa',
   /** The text shown on the overlay toggle tooltip when overlays are enabled */
-  'preview-frame.overlay.toggle-button.tooltip_disable': undefined, // 'Disable edit overlay'
+  'preview-frame.overlay.toggle-button.tooltip_disable': 'Poista muokkausoverlay käytöstä',
   /** The text shown on the overlay toggle tooltip when overlays are disabled */
-  'preview-frame.overlay.toggle-button.tooltip_enable': undefined, // 'Enable edit overlay'
+  'preview-frame.overlay.toggle-button.tooltip_enable': 'Ota muokkausoverlay käyttöön',
   /** The text description for the published perspective switcher menu item */
-  'preview-frame.perspective.published.text': undefined, // 'View this page with published content'
+  'preview-frame.perspective.published.text': 'Näytä tämä sivu julkaistulla sisällöllä',
   /** The `aria-label` for the refresh button */
-  'preview-frame.refresh-button.aria-label': undefined, // 'Refresh preview'
+  'preview-frame.refresh-button.aria-label': 'Päivitä esikatselu',
   /** The tooltip text for the refresh button */
-  'preview-frame.refresh-button.tooltip': undefined, // 'Refresh preview'
+  'preview-frame.refresh-button.tooltip': 'Päivitä esikatselu',
   /** The `aria-label` for the button that opens the share menu */
-  'preview-frame.share-button.aria-label': undefined, // 'Share this preview'
+  'preview-frame.share-button.aria-label': 'Jaa tämä esikatselu',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_connecting': undefined, // 'Connecting.'
+  'preview-frame.status_connecting': 'Yhdistetään.',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_loading': undefined, // 'Loading.'
+  'preview-frame.status_loading': 'Ladataan.',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_refreshing': undefined, // 'Refreshing.'
+  'preview-frame.status_refreshing': 'Päivitetään.',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_reloading': undefined, // 'Refreshing.'
+  'preview-frame.status_reloading': 'Päivitetään.',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_timeout': undefined, // 'Unable to connect, check the browser console for more information.'
+  'preview-frame.status_timeout':
+    'Yhteyden muodostaminen epäonnistui, tarkista lisätiedot selaimen konsolista.',
   /** The `aria-label` for the button that switches viewport size */
-  'preview-frame.viewport-button.aria-label': undefined, // 'Toggle viewport size'
+  'preview-frame.viewport-button.aria-label': 'Vaihda näkymäkoko',
   /** The viewport size button tooltip text when switching to a full width viewport */
-  'preview-frame.viewport-button.tooltip_full': undefined, // 'Switch to full viewport'
+  'preview-frame.viewport-button.tooltip_full': 'Vaihda koko leveyden näkymään',
   /** The viewport size button tooltip text when switching to a narrow viewport */
-  'preview-frame.viewport-button.tooltip_narrow': undefined, // 'Switch to narrow viewport'
+  'preview-frame.viewport-button.tooltip_narrow': 'Vaihda kapeaan näkymään',
 
   /** The validation error message shown when the preview location input is missing an origin */
-  'preview-location-input.error_missing-origin': undefined, // 'URL must start with {{origin}}'
+  'preview-location-input.error_missing-origin': 'URL:n täytyy alkaa kohteella {{origin}}',
   /** The validation error message shown when the preview location input's base path matches that of the studio */
-  'preview-location-input.error_same-base-path': undefined, // 'URL can’t have the same base path as the Studio {{basePath}}'
+  'preview-location-input.error_same-base-path':
+    'URL:lla ei voi olla sama peruspolku kuin Studiolla {{basePath}}',
 
   /** The toast description for the error message explaining that the iframe won't navigate to the new preview URL due to an URL origin security mismatch. */
-  'preview-search-param.configuration.error.description': undefined, // 'The router wants to navigate to <Code>{{previewSearchParam}}</Code>, but the origin <Code>{{blockedOrigin}}</Code> is not allowed. Update your <Code>presentationTool.allowOrigins</Code> configuration to allow it.'
+  'preview-search-param.configuration.error.description':
+    'Reititin haluaa navigoida osoitteeseen <Code>{{previewSearchParam}}</Code>, mutta alkuperä <Code>{{blockedOrigin}}</Code> ei ole sallittu. Päivitä <Code>presentationTool.allowOrigins</Code>-asetuksesi salliaksesi sen.',
   /** The title of the error toast that shows when attempting to navigate to a preview URL origin that's not in the allow list. */
-  'preview-search-param.configuration.error.title': undefined, // 'Blocked preview URL'
+  'preview-search-param.configuration.error.title': 'Estetty esikatselun URL',
 
   /** Error toast that notifies that URL Preview Secrets can't be generated as the user lacks ACL grants */
-  'preview-url-secret.missing-grants': undefined, // 'You don\'t have permission to create URL Preview Secrets. This will likely cause the preview to fail loading.'
+  'preview-url-secret.missing-grants':
+    'Sinulla ei ole oikeutta luoda URL-esikatselusalaisuuksia. Tämä todennäköisesti estää esikatselun lataamisen.',
 
   /** Menu item in the share preview menu that allows copying the current preview URL, if sharing is enabled */
-  'share-preview-menu.copy-url.text': undefined, // 'Copy preview link'
+  'share-preview-menu.copy-url.text': 'Kopioi esikatselulinkki',
   /** Fallback message shown when the current user is not permitted to share previews */
-  'share-preview-menu.error_missing-grants': undefined, // 'You don\'t have permission to share previews. '
+  'share-preview-menu.error_missing-grants': 'Sinulla ei ole oikeutta jakaa esikatseluja.',
   /** Error message toast that shows the current user does not have permission to toggle sharing of the current preview */
-  'share-preview-menu.error_toggle-sharing': undefined, // 'You don\'t have permission to toggle sharing of this preview'
+  'share-preview-menu.error_toggle-sharing':
+    'Sinulla ei ole oikeutta muuttaa tämän esikatselun jakamista',
   /** The text show below the QR Code SVG, with instructions on how to use it */
-  'share-preview-menu.qr-code.instructions': undefined, // 'Scan the QR Code to open the preview on your phone.'
+  'share-preview-menu.qr-code.instructions':
+    'Skannaa QR-koodi avataksesi esikatselun puhelimellasi.',
   /** Placeholder message for the QR Code SVG when sharing is yet to be enabled */
-  'share-preview-menu.qr-code.placeholder': undefined, // 'QR code will appear here'
+  'share-preview-menu.qr-code.placeholder': 'QR-koodi ilmestyy tähän',
   /** The <title> for the QR Code SVG that shows a link to the current preview */
-  'share-preview-menu.qr-code.title': undefined, // 'A QR Code which encodes the URL: {{url}}'
+  'share-preview-menu.qr-code.title': 'QR-koodi, joka sisältää URL-osoitteen: {{url}}',
   /** The first line of the label that renders next to the sharing toggle, it renders on two rows */
-  'share-preview-menu.toggle-button.label_first-line': undefined, // 'Share this preview'
+  'share-preview-menu.toggle-button.label_first-line': 'Jaa tämä esikatselu',
   /** The second line of the label that renders next to the sharing toggle, it renders on two rows */
-  'share-preview-menu.toggle-button.label_second-line': undefined, // 'with anyone who has the link'
+  'share-preview-menu.toggle-button.label_second-line': 'kaikille, joilla on linkki',
   /** The text shown on the sharing toggle tooltip when sharing is enabled */
-  'share-preview-menu.toggle-button.tooltip_disable': undefined, // 'Disable sharing'
+  'share-preview-menu.toggle-button.tooltip_disable': 'Poista jakaminen käytöstä',
   /** The text shown on the sharing toggle tooltip when sharing is disabled */
-  'share-preview-menu.toggle-button.tooltip_enable': undefined, // 'Enable sharing'
+  'share-preview-menu.toggle-button.tooltip_enable': 'Ota jakaminen käyttöön',
 
   /** The status of the clipboard operation when copying a URL */
-  'share-url.clipboard.status_copying': undefined, // 'Copying URL to clipboard…'
+  'share-url.clipboard.status_copying': 'Kopioidaan URL-osoitetta leikepöydälle…',
   /** The status of the clipboard operation when copying a URL */
-  'share-url.clipboard.status_failed': undefined, // 'Copy failed'
+  'share-url.clipboard.status_failed': 'Kopiointi epäonnistui',
   /** The status of the clipboard operation when copying a URL */
-  'share-url.clipboard.status_success': undefined, // 'The URL is copied to the clipboard'
+  'share-url.clipboard.status_success': 'URL-osoite on kopioitu leikepöydälle',
   /** The status of the clipboard operation when copying a URL */
-  'share-url.clipboard.status_unsupported': undefined, // 'Clipboard not supported'
+  'share-url.clipboard.status_unsupported': 'Leikepöytää ei tueta',
   /** The share URL menu item text for opening a preview window */
-  'share-url.menu-item.open.text': undefined, // 'Open preview'
+  'share-url.menu-item.open.text': 'Avaa esikatselu',
 })
