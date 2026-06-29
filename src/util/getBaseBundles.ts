@@ -128,8 +128,12 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
     },
   })
 
+  // A file may reference `defineLocalesResources` (e.g. a barrel that re-exports
+  // it) without actually calling it. Such files contribute no bundles, so skip
+  // them rather than treating it as an error. The caller verifies that at least
+  // one bundle was found across all files.
   if (nodes.length === 0) {
-    throw new Error(`Could not find call to ${LOCALE_DEF_FN_NAME} in ${fileName}`)
+    return []
   }
 
   const bundles: Array<ResourceBundle> = []
