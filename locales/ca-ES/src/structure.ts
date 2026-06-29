@@ -173,7 +173,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     "Aquesta referència s'ha eliminat des que l'has oberta.",
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Afegeix al bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Afegeix a la publicació',
   /** The text that appears for the action button to add the current document to the global release */
@@ -481,7 +481,7 @@ export default removeUndefinedLocaleResources({
     "No s'han definit referències entrants per a aquest tipus, consulta la documentació per a més informació.",
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': "No s'han trobat referències entrants.",
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': "No s'han trobat referències d'aquest tipus.",
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -502,10 +502,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Vista compacta',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Vista detallada',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Vista per defecte',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': "Ja s'està utilitzant la vista per defecte",
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Ordenar per Creat',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Ordenar per Última edició',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Ordenació per defecte',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    "Ja s'està utilitzant l'ordenació per defecte",
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Aprèn com afegir un tipus de document →',
@@ -575,8 +584,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Cerca a la llista',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Cerca a la llista',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label':
+    "Canvia l'ordenació dels resultats de cerca",
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Ordenat per {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Rellevància',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Ordenat per rellevància',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    "Aquesta opció d'ordenació utilitza camps que no formen part d'aquest tipus de document",
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detalls',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -611,7 +630,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_publish':
     "<Strong>{{title}}</Strong> s'ha publicat",
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': "La versió s'ha publicat",
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ha estat restaurat',
