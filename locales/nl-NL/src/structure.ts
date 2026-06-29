@@ -501,10 +501,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Compacte weergave',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Gedetailleerde weergave',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Standaardweergave',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Standaardweergave is al in gebruik',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sorteren op Aangemaakt',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sorteren op Laatst bewerkt',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Standaard sortering',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Standaard sorteervolgorde is al in gebruik',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Leer hoe u een documenttype kunt toevoegen →',
@@ -573,6 +582,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Lijst doorzoeken',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Lijst doorzoeken',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Volgorde van zoekresultaten wijzigen',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Gesorteerd op {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevantie',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Gesorteerd op relevantie',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Deze sorteeroptie gebruikt velden die geen deel uitmaken van dit documenttype',
