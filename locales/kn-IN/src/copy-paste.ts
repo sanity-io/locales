@@ -46,7 +46,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'ಈ ಕ್ಷೇತ್ರದಲ್ಲಿ "{{type}}" ಪ್ರಕಾರದ ಮೌಲ್ಯ ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
   /** The validation message that is shown when read-only fields are skipped during document paste */
-  'copy-paste.on-paste.validation.read-only-fields-skipped.description': undefined, // 'Skipped read-only fields: {{fieldNames}}'
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'ಓದಲು-ಮಾತ್ರ ಕ್ಷೇತ್ರಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'ಗುರಿ ಕೇವಲ ಓದಲು ಮಾತ್ರ',
