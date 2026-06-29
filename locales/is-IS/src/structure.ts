@@ -494,10 +494,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Þjappað útlit',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Ítarlegt útlit',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Sjálfgefin sýn',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Notar þegar sjálfgefna sýn',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Raða eftir stofnun',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Raða eftir síðast breytt',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Sjálfgefin röðun',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'Notar þegar sjálfgefna röðun',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lærðu hvernig á að bæta við skjalategund →',
@@ -565,6 +573,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Leita í lista',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Leita í lista',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Breyta röðun leitarniðurstaðna',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Raðað eftir {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Mikilvægi',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Raðað eftir mikilvægi',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Þessi röðunarvalkostur notar reiti sem eru ekki hluti af þessari skjalagerð',
