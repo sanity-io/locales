@@ -14,6 +14,10 @@ export default removeUndefinedLocaleResources({
   'document-list-pane.document-list.title': 'Документтер осы бетте',
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'Документ тізімін көрсету мүмкін болмады',
+  /** The label for the ordering that lists documents in the order they appear on the page */
+  'document-list-pane.ordering.by-appearance': 'Көрініс бойынша',
+  /** The label for the ordering that lists documents by when they were last edited */
+  'document-list-pane.ordering.last-edited': 'Соңғы өңделген',
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': 'Документ редакторын көрсету мүмкін болмады',
