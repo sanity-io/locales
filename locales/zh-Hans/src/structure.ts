@@ -447,10 +447,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': '紧凑视图',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '详细视图',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': '默认视图',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': '已在使用默认视图',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '按创建时间排序',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '按最后编辑排序',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': '默认排序',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': '已在使用默认排序顺序',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': '了解如何添加文档类型 →',
@@ -514,6 +522,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': '搜索列表',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': '更改搜索结果排序',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '按 {{order}} 排序',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': '相关性',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': '按相关性排序',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason': '此排序选项使用了不属于该文档类型的字段',
   /** The summary title when displaying an error for a document operation result */
