@@ -46,7 +46,8 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Verdi av typen "{{type}}" er ikke tillatt i dette feltet',
   /** The validation message that is shown when read-only fields are skipped during document paste */
-  'copy-paste.on-paste.validation.read-only-fields-skipped.description': undefined, // 'Skipped read-only fields: {{fieldNames}}'
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Hoppet over skrivebeskyttede felt: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Feltet er skrivebeskyttet',
