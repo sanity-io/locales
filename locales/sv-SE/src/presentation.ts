@@ -14,6 +14,10 @@ export default removeUndefinedLocaleResources({
   'document-list-pane.document-list.title': 'Dokument på den här sidan',
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'Kunde inte rendera dokumentlistan',
+  /** The label for the ordering that lists documents in the order they appear on the page */
+  'document-list-pane.ordering.by-appearance': 'Efter utseende',
+  /** The label for the ordering that lists documents by when they were last edited */
+  'document-list-pane.ordering.last-edited': 'Senast redigerad',
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': 'Kunde inte rendera dokumentredigeraren',
