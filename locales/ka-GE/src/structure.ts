@@ -497,10 +497,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'კომპაქტური ხედვა',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'დეტალური ხედვა',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'ნაგულისხმევი ხედი',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'უკვე გამოიყენება ნაგულისხმევი ხედი',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'დალაგება შექმნის თარიღით',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'დალაგება ბოლოს რედაქტირებულით',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'ნაგულისხმევი დალაგება',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'უკვე გამოიყენება ნაგულისხმევი დალაგების თანმიმდევრობა',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'გაიგეთ, როგორ დაამატოთ დოკუმენტის ტიპი →',
@@ -567,6 +576,15 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'სიის ძიება',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'სიის ძიება',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'საძიებო შედეგების დალაგების შეცვლა',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'დალაგებულია {{order}}-ის მიხედვით',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'რელევანტურობა',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance':
+    'დალაგებულია რელევანტურობის მიხედვით',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'დახარისხების ეს პარამეტრი იყენებს ველებს, რომლებიც არ არის ამ დოკუმენტის ტიპის ნაწილი',
