@@ -476,10 +476,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Компактний вигляд',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Детальний вигляд',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Стандартний вигляд',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Стандартний вигляд вже використовується',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Сортувати за датою створення',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сортувати за датою останнього редагування',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Стандартне сортування',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Стандартний порядок сортування вже використовується',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Дізнайтеся, як додати тип документа →',
@@ -545,6 +554,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Пошук у списку',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Пошук у списку',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Змінити порядок результатів пошуку',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Відсортовано за {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Релевантність',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Відсортовано за релевантністю',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Цей параметр сортування використовує поля, які не є частиною цього типу документа',
