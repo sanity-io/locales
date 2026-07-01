@@ -482,10 +482,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': '간략한 보기',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '상세 보기',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': '기본 보기',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': '이미 기본 보기를 사용 중입니다',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '생성 순으로 정렬',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '마지막 편집 순으로 정렬',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': '기본 정렬',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': '이미 기본 정렬 순서를 사용 중입니다',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': '문서 유형 추가하는 방법 알아보기 →',
@@ -550,6 +558,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': '목록 검색',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': '목록 검색',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': '검색 결과 정렬 순서 변경',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}} 기준으로 정렬됨',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': '관련성',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': '관련성 기준으로 정렬됨',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     '이 정렬 옵션은 현재 문서 유형에 포함되지 않은 필드를 사용합니다',
