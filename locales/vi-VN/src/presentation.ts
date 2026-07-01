@@ -14,6 +14,10 @@ export default removeUndefinedLocaleResources({
   'document-list-pane.document-list.title': 'Tài liệu trên trang này',
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'Không thể hiển thị danh sách tài liệu',
+  /** The label for the ordering that lists documents in the order they appear on the page */
+  'document-list-pane.ordering.by-appearance': 'Theo thứ tự xuất hiện',
+  /** The label for the ordering that lists documents by when they were last edited */
+  'document-list-pane.ordering.last-edited': 'Chỉnh sửa gần nhất',
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': 'Không thể hiển thị trình chỉnh sửa tài liệu',
