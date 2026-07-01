@@ -14,6 +14,10 @@ export default removeUndefinedLocaleResources({
   'document-list-pane.document-list.title': 'Documente pe această pagină',
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'Nu s-a putut reda lista de documente',
+  /** The label for the ordering that lists documents in the order they appear on the page */
+  'document-list-pane.ordering.by-appearance': undefined, // 'By appearance'
+  /** The label for the ordering that lists documents by when they were last edited */
+  'document-list-pane.ordering.last-edited': undefined, // 'Last edited'
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': 'Nu s-a putut reda editorul de documente',
