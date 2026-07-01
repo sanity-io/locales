@@ -475,10 +475,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Компактный вид',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Подробный вид',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Әдепкі көрініс',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Әдепкі көрініс қазірдің өзінде қолданылуда',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Сортировать по дате создания',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сортировать по последнему редактированию',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Әдепкі сұрыптау',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Әдепкі сұрыптау тәртібі қазірдің өзінде қолданылуда',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Узнайте, как добавить тип документа →',
@@ -544,6 +553,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Поиск по списку',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Поиск по списку',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Іздеу нәтижелерінің тәртібін өзгерту',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}} бойынша сұрыпталған',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Өзектілік',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Өзектілік бойынша сұрыпталған',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Этот параметр сортировки использует поля, которые не входят в данный тип документа',
