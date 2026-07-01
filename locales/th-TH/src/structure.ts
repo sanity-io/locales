@@ -465,10 +465,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'มุมมองแบบกระชับ',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'มุมมองแบบละเอียด',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'มุมมองเริ่มต้น',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'กำลังใช้มุมมองเริ่มต้นอยู่แล้ว',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'เรียงตามวันที่สร้าง',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'เรียงตามการแก้ไขล่าสุด',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'การเรียงลำดับเริ่มต้น',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'กำลังใช้ลำดับการเรียงเริ่มต้นอยู่แล้ว',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'เรียนรู้วิธีการเพิ่มประเภทเอกสาร →',
@@ -532,6 +540,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'ค้นหารายการ',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'ค้นหารายการ',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'เปลี่ยนลำดับผลการค้นหา',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'เรียงลำดับตาม {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'ความเกี่ยวข้อง',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'เรียงลำดับตามความเกี่ยวข้อง',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'ตัวเลือกการเรียงลำดับนี้ใช้ฟิลด์ที่ไม่ได้เป็นส่วนหนึ่งของประเภทเอกสารนี้',
