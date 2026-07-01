@@ -14,6 +14,10 @@ export default removeUndefinedLocaleResources({
   'document-list-pane.document-list.title': 'Tämän sivun dokumentit',
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'Dokumenttiluettelon renderöinti epäonnistui',
+  /** The label for the ordering that lists documents in the order they appear on the page */
+  'document-list-pane.ordering.by-appearance': 'Ulkoasun mukaan',
+  /** The label for the ordering that lists documents by when they were last edited */
+  'document-list-pane.ordering.last-edited': 'Viimeksi muokattu',
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': 'Dokumenttieditorin renderöinti epäonnistui',
