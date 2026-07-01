@@ -476,10 +476,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Vizualizare compactă',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Vizualizare detaliată',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Vizualizare implicită',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Se utilizează deja vizualizarea implicită',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortează după Data Creării',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortează după Ultima Editare',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Sortare implicită',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Se utilizează deja ordinea de sortare implicită',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Află cum să adaugi un tip de document →',
@@ -546,6 +555,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Caută în listă',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Caută în listă',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Modificați ordinea rezultatelor căutării',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sortat după {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevanță',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sortat după relevanță',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Această opțiune de sortare folosește câmpuri care nu fac parte din acest tip de document',
