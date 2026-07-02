@@ -2,45 +2,46 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Browse button text */
-  'feedback.attachment.browse': undefined, // 'Browse'
+  'feedback.attachment.browse': 'Durchsuchen',
   /** Drop zone text for image attachment */
-  'feedback.attachment.drop-zone': undefined, // 'Drag or paste file here'
+  'feedback.attachment.drop-zone': 'Datei hierher ziehen oder einfügen',
   /** Error shown when attached image exceeds size limit */
-  'feedback.attachment.error.size': undefined, // 'Image must be under 20 MB'
+  'feedback.attachment.error.size': 'Das Bild muss kleiner als 20 MB sein',
   /** Label for the image attachment section */
-  'feedback.attachment.label': undefined, // 'Attach an image'
+  'feedback.attachment.label': 'Bild anhängen',
   /** Remove attached image button text */
-  'feedback.attachment.remove': undefined, // 'Remove'
+  'feedback.attachment.remove': 'Entfernen',
   /** Cancel button text */
-  'feedback.cancel': undefined, // 'Cancel'
+  'feedback.cancel': 'Abbrechen',
   /** Consent disclaimer shown when the user agrees to follow up */
-  'feedback.consent.disclaimer': undefined, // 'We\'d love to learn more. Selecting yes shares your name and email with the Sanity team.'
+  'feedback.consent.disclaimer':
+    'Wir würden gerne mehr erfahren. Mit „Ja" teilen Sie Ihren Namen und Ihre E-Mail-Adresse mit dem Sanity-Team.',
   /** Label for the contact consent toggle */
-  'feedback.consent.label': undefined, // 'Can we follow up with you about this feedback?'
+  'feedback.consent.label': 'Dürfen wir uns bezüglich dieses Feedbacks bei Ihnen melden?',
   /** Consent toggle: no */
-  'feedback.consent.no': undefined, // 'No'
+  'feedback.consent.no': 'Nein',
   /** Consent toggle: yes */
-  'feedback.consent.yes': undefined, // 'Yes'
+  'feedback.consent.yes': 'Ja',
   /** Title of the feedback dialog */
-  'feedback.dialog.title': undefined, // 'Share feedback with Sanity'
+  'feedback.dialog.title': 'Feedback an Sanity senden',
   /** Toast message after failed submission */
-  'feedback.error': undefined, // 'Failed to submit feedback with error'
+  'feedback.error': 'Feedback konnte nicht übermittelt werden, Fehler',
   /** Label for "send feedback" in the help resources menu */
-  'feedback.menu-item': undefined, // 'Send feedback'
+  'feedback.menu-item': 'Feedback senden',
   /** Label for the message field */
-  'feedback.message.label': undefined, // 'What is working? What could be better?'
+  'feedback.message.label': 'Was funktioniert gut? Was könnte besser sein?',
   /** Placeholder for the message field */
-  'feedback.message.placeholder': undefined, // 'Describe your issue or request...'
+  'feedback.message.placeholder': 'Beschreiben Sie Ihr Problem oder Ihre Anfrage...',
   /** Sentiment option: happy */
-  'feedback.sentiment.happy': undefined, // 'Easy'
+  'feedback.sentiment.happy': 'Einfach',
   /** Label for the sentiment question */
-  'feedback.sentiment.label': undefined, // 'How easy or difficult is Sanity to use?'
+  'feedback.sentiment.label': 'Wie einfach oder schwierig ist die Nutzung von Sanity?',
   /** Sentiment option: neutral */
-  'feedback.sentiment.neutral': undefined, // 'Not sure'
+  'feedback.sentiment.neutral': 'Nicht sicher',
   /** Sentiment option: unhappy */
-  'feedback.sentiment.unhappy': undefined, // 'Difficult'
+  'feedback.sentiment.unhappy': 'Schwierig',
   /** Submit button text */
-  'feedback.submit': undefined, // 'Send feedback'
+  'feedback.submit': 'Feedback senden',
   /** Toast message after successful submission */
-  'feedback.success': undefined, // 'Feedback submitted, thank you!'
+  'feedback.success': 'Feedback übermittelt, vielen Dank!',
 })

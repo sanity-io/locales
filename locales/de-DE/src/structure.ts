@@ -177,7 +177,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Diese Referenz wurde entfernt, seitdem Sie sie geöffnet haben.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Zum Bundle hinzufügen',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Zum Release hinzufügen',
   /** The text that appears for the action button to add the current document to the global release */
@@ -485,7 +485,7 @@ export default removeUndefinedLocaleResources({
     'Für diesen Typ sind keine eingehenden Referenzen definiert, siehe die Dokumentation für weitere Informationen.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Keine eingehenden Referenzen gefunden.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Keine Referenzen dieses Typs gefunden.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -506,10 +506,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompakte Ansicht',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaillierte Ansicht',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Standardansicht',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Standardansicht wird bereits verwendet',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortieren nach Erstellung',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortieren nach Letzter Bearbeitung',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Standardsortierung',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'Standardsortierung wird bereits verwendet',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Erfahren Sie, wie Sie einen Dokumenttyp hinzufügen →',
@@ -579,8 +587,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Liste durchsuchen',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Liste durchsuchen',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Reihenfolge der Suchergebnisse ändern',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sortiert nach {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevanz',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sortiert nach Relevanz',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Diese Sortieroption verwendet Felder, die nicht Teil dieses Dokumenttyps sind',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Details',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -616,7 +633,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Das Dokument wurde veröffentlicht',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion':
+    'Version wurde veröffentlicht',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> wurde wiederhergestellt',
