@@ -36,7 +36,6 @@
       "semanticCommitType": "chore",
       "schedule": ["before 3am on Monday"],
       "automerge": false,
-      "matchPackageNames": ["*"],
       "excludePackageNames": [
         "@sanity/icons",
         "@sanity/presentation",
