@@ -67,6 +67,7 @@ function getLocaleResourceImportName(file: File) {
         return
       }
 
+      // Guard against string-literal export names that happen to be aliased locally.
       if (localNameMatches && path.node.imported.type !== 'Identifier') {
         return
       }
