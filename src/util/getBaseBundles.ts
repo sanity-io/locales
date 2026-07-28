@@ -59,14 +59,15 @@ function getLocaleResourceImportName(file: File) {
   let importName: string | undefined
   traverse(file, {
     ImportSpecifier(path) {
-      if (path.node.local.name !== LOCALE_DEF_FN_NAME) {
-        if (
-          path.node.imported.type !== 'Identifier' ||
-          path.node.imported.name !== LOCALE_DEF_FN_NAME
-        ) {
-          return
-        }
-      } else if (path.node.imported.type !== 'Identifier') {
+      const hasExpectedLocal = path.node.local.name === LOCALE_DEF_FN_NAME
+      const hasExpectedImported =
+        path.node.imported.type === 'Identifier' && path.node.imported.name === LOCALE_DEF_FN_NAME
+
+      if (!hasExpectedLocal && !hasExpectedImported) {
+        return
+      }
+
+      if (hasExpectedLocal && path.node.imported.type !== 'Identifier') {
         return
       }
 
