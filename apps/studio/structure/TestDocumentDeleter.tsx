@@ -1,4 +1,4 @@
-import {WarningOutlineIcon} from '@sanity/icons'
+import {WarningOutlineIcon} from '@sanity/icons/WarningOutline'
 import {Box, Button, Card, Container, Flex, Heading, Spinner, Stack, Text} from '@sanity/ui'
 import React, {forwardRef, useCallback, useEffect, useState} from 'react'
 import {Translate, useClient, useDataset, useDocumentStore, useTranslation} from 'sanity'
