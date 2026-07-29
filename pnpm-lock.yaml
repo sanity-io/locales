@@ -118,8 +118,8 @@ importers:
   apps/studio:
     dependencies:
       '@sanity/icons':
-        specifier: ^3.8.0
-        version: 3.8.0(react@19.2.7)
+        specifier: ^5.2.1
+        version: 5.2.1(react@19.2.7)
       '@sanity/locale-be-by':
         specifier: workspace:*
         version: link:../../locales/be-BY
