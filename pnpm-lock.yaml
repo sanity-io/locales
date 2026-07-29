@@ -43,7 +43,7 @@ importers:
         version: 14.1.0
       js-yaml:
         specifier: ^4.1.1
-        version: 4.2.0
+        version: 4.3.0
       json5:
         specifier: ^2.2.3
         version: 2.2.3
@@ -5305,8 +5305,8 @@ packages:
     resolution: {integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==}
     hasBin: true
 
-  js-yaml@4.2.0:
-    resolution: {integrity: sha512-ePWsvanv0DWuDRsW8dnt+R4jQ31SCRCQ7hhNcPXZPsoBZiemuZNYGf7adZdqX2D86j6rvKp3RpCxVTSb8WQlOw==}
+  js-yaml@4.3.0:
+    resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
     hasBin: true
 
   jsdom@26.1.0:
@@ -6599,8 +6599,8 @@ packages:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
 
-  string-width@8.2.1:
-    resolution: {integrity: sha512-IIaP0g3iy9Cyy18w3M9YcaDudujEAVHKt3a3QJg1+sr/oX96TbaGUubG0hJyCjCBThFH+tFpcIyoUHUn1ogaLA==}
+  string-width@8.2.2:
+    resolution: {integrity: sha512-GaPUh5gfdrYzqeVNZvUfT23vYYxXzKYidUcnMtJg/3rxRV63EFZy3k6xfKlmfeJD0176lnUV/Usr3XcwSvFzpg==}
     engines: {node: '>=20'}
 
   string_decoder@1.1.1:
@@ -8595,7 +8595,7 @@ snapshots:
       globals: 13.24.0
       ignore: 5.3.2
       import-fresh: 3.3.1
-      js-yaml: 4.2.0
+      js-yaml: 4.3.0
       minimatch: 3.1.5
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -11242,7 +11242,7 @@ snapshots:
   '@sanity/sdk@2.14.1(@types/react@19.2.17)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))(xstate@5.32.5)':
     dependencies:
       '@sanity/bifur-client': 1.0.0
-      '@sanity/client': 7.23.0
+      '@sanity/client': 7.25.0
       '@sanity/comlink': 4.0.1
       '@sanity/diff-match-patch': 3.2.0
       '@sanity/diff-patch': 6.0.0
@@ -11252,9 +11252,9 @@ snapshots:
       '@sanity/message-protocol': 0.23.0
       '@sanity/mutate': 0.18.1(xstate@5.32.5)
       '@sanity/telemetry': 1.1.0(react@19.2.7)
-      '@sanity/types': 6.2.0(@types/react@19.2.17)
+      '@sanity/types': 6.7.0(@types/react@19.2.17)
       groq: 3.88.1-typegen-experimental.0
-      groq-js: 1.30.2
+      groq-js: 1.30.3
       reselect: 5.2.0
       rxjs: 7.8.2
       zustand: 5.0.14(@types/react@19.2.17)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))
@@ -12712,7 +12712,7 @@ snapshots:
       imurmurhash: 0.1.4
       is-glob: 4.0.3
       is-path-inside: 3.0.3
-      js-yaml: 4.2.0
+      js-yaml: 4.3.0
       json-stable-stringify-without-jsonify: 1.0.1
       levn: 0.4.1
       lodash.merge: 4.6.2
@@ -13409,7 +13409,7 @@ snapshots:
       argparse: 1.0.10
       esprima: 4.0.1
 
-  js-yaml@4.2.0:
+  js-yaml@4.3.0:
     dependencies:
       argparse: 2.0.1
 
@@ -13903,7 +13903,7 @@ snapshots:
       is-unicode-supported: 2.1.0
       log-symbols: 7.0.1
       stdin-discarder: 0.3.2
-      string-width: 8.2.1
+      string-width: 8.2.2
 
   ora@9.4.1:
     dependencies:
@@ -13914,7 +13914,7 @@ snapshots:
       is-unicode-supported: 2.1.0
       log-symbols: 7.0.1
       stdin-discarder: 0.3.2
-      string-width: 8.2.1
+      string-width: 8.2.2
 
   os-homedir@1.0.2: {}
 
@@ -15157,7 +15157,7 @@ snapshots:
       get-east-asian-width: 1.6.0
       strip-ansi: 7.2.0
 
-  string-width@8.2.1:
+  string-width@8.2.2:
     dependencies:
       get-east-asian-width: 1.6.0
       strip-ansi: 7.2.0
