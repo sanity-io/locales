@@ -214,7 +214,7 @@ importers:
         specifier: workspace:*
         version: link:../../locales/zh-Hant
       '@sanity/ui':
-        specifier: ^3.4.5
+        specifier: ^3.5.0
         version: 3.5.0(@emotion/is-prop-valid@1.4.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(styled-components@6.4.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       '@sanity/vision':
         specifier: ^6.6.0
@@ -8609,7 +8609,7 @@ snapshots:
 
   '@floating-ui/core@1.7.5':
     dependencies:
-      '@floating-ui/utils': 0.2.11
+      '@floating-ui/utils': 0.2.12
 
   '@floating-ui/core@1.8.0':
     dependencies:
@@ -10502,7 +10502,7 @@ snapshots:
       promise-props-recursive: 2.0.2
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-is: 19.2.7
+      react-is: 19.2.8
       rxjs: 7.8.2
       semver: 7.8.4
       skills: 1.5.12
@@ -10770,7 +10770,7 @@ snapshots:
       '@sanity/ui': 3.5.0(@emotion/is-prop-valid@1.4.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(styled-components@6.4.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       lodash-es: 4.18.1
       react: 19.2.7
-      react-is: 19.2.7
+      react-is: 19.2.8
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
       - react-dom
@@ -10787,7 +10787,7 @@ snapshots:
 
   '@sanity/logos@2.2.2(react@19.2.7)':
     dependencies:
-      '@sanity/color': 3.0.6
+      '@sanity/color': 3.0.8
       react: 19.2.7
 
   '@sanity/logos@2.2.5(react@19.2.7)':
@@ -11242,7 +11242,7 @@ snapshots:
   '@sanity/sdk@2.14.1(@types/react@19.2.17)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))(xstate@5.32.5)':
     dependencies:
       '@sanity/bifur-client': 1.0.0
-      '@sanity/client': 7.25.0
+      '@sanity/client': 7.23.0
       '@sanity/comlink': 4.0.1
       '@sanity/diff-match-patch': 3.2.0
       '@sanity/diff-patch': 6.0.0
@@ -11252,9 +11252,9 @@ snapshots:
       '@sanity/message-protocol': 0.23.0
       '@sanity/mutate': 0.18.1(xstate@5.32.5)
       '@sanity/telemetry': 1.1.0(react@19.2.7)
-      '@sanity/types': 6.7.0(@types/react@19.2.17)
+      '@sanity/types': 6.2.0(@types/react@19.2.17)
       groq: 3.88.1-typegen-experimental.0
-      groq-js: 1.30.3
+      groq-js: 1.30.2
       reselect: 5.2.0
       rxjs: 7.8.2
       zustand: 5.0.14(@types/react@19.2.17)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))
