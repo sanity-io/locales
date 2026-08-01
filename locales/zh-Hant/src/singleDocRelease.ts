@@ -13,6 +13,8 @@ export default removeUndefinedLocaleResources({
   'action.schedule-publish.disabled.cardinality-one': '此文件的排程草稿已存在。',
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues': '由於目前草稿存在驗證錯誤，無法排程草稿。',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': '排程功能目前尚不支援 variants。',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': '了解排程功能',
