@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Sažetak',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Dodana verzija dokumenta',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Arhivirano izdanje <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Stvoreno izdanje <strong>{{releaseTitle}}</strong> <ScheduleTarget>s ciljanim </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Odbačena verzija dokumenta',
   'activity.event.edit': 'Postavljeno vrijeme izdanja na <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Što je prije moguće',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Neodlučeno',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Objavljeno izdanje <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Označeno kao zakazano',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Razarhivirano izdanje <strong>{{releaseTitle}}</strong>',
@@ -333,6 +327,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Jeste li sigurni da želite objaviti izdanje i sve verzije dokumenata?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Ažuriraj postojeće nacrte',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Postojeći nacrt od {{draftDocumentsLength}} dokumenta bit će odbačen kako bi nacrte odgovarali objavljenom izdanju. Neobjavljene promjene nacrta bit će izgubljene.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Postojeći nacrte od {{draftDocumentsLength}} dokumenata bit će odbačeni kako bi nacrte odgovarali objavljenom izdanju. Neobjavljene promjene nacrta bit će izgubljene.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Neki dokumenti imaju pogreške pri validaciji',
   /** Label for when documents are being validated */
@@ -511,6 +513,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Izdanje '{{title}}' uspješno je vraćeno na prethodno stanje",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Nije uspjelo objavljivanje '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Izdanje je objavljeno, ali postojeći nacrte nisu mogli biti ažurirani: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Izdanje za vraćanje na prethodno stanje za '{{title}}' uspješno je kreirano. <Link/>",

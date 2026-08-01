@@ -14,6 +14,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Ovaj dokument se ne može obrisati jer postoji unutar zakazanih objava',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Odabrano izdanje ili varijanta ne sadrži ovaj dokument',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Izbriši',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +38,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Ovaj dokument nije objavljen',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operacija nije spremna',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Odabrano izdanje ili varijanta ne sadrži ovaj dokument',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Odbaci promjene',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Ovaj dokument još ne postoji pa se nema što duplicirati',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Odabrano izdanje ili varijanta ne sadrži ovaj dokument',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Dupliciraj',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +59,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Već objavljeno',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Objavljeno prije {{timeSincePublished}}',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Ova verzija je objavljena kao dio svog izdanja',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operacija nije spremna',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Odabrano izdanje ili varijanta ne sadrži ovaj dokument',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Objavi',
   /** Label for the "Publish" document action */
@@ -95,6 +109,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Ovaj dokument nije objavljen',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operacija nije spremna',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Odabrano izdanje ili varijanta ne sadrži ovaj dokument',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Poništi objavu',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -221,6 +238,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Prikazuje se trenutna <strong>objavljena</strong> verzija:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Stvori varijantu',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Odabrana varijanta <VariantName>{{name}}</VariantName> nije pronađena.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Došlo je do pogreške pri dodavanju dokumenta u varijantu: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Pogreška pri dodavanju dokumenta u varijantu',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Ne postoji <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> dokument varijante za <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Molimo pričekajte dok se dokument dodaje u varijantu. To ne bi trebalo trajati dulje od nekoliko sekundi.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Dodavanje dokumenta u varijantu…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Novi {{schemaType}}',
@@ -280,9 +315,7 @@ export default removeUndefinedLocaleResources({
     'Ovaj prikaz pokazuje promjene koje su se dogodile u određenoj verziji ovog dokumenta. Odaberite drugu verziju da biste vidjeli njene promjene',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Od',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Povijest',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Pregled promjena',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Do',
@@ -412,6 +445,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Nepoznati tip sheme: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Gdje su nestali gumbi verzija?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Zatvori',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -438,6 +474,21 @@ export default removeUndefinedLocaleResources({
     'Molimo vas da pričekate dok se dokument sinkronizira. To se obično događa odmah nakon što je dokument objavljen i ne bi trebalo trajati više od nekoliko sekundi',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sinkronizacija dokumenta…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Nastavit ćemo pokušavati. Vaše promjene su u međuvremenu pohranjene u vašem pregledniku.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Vaše promjene se ne spremaju',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Uređivanje se nastavlja čim se vaše promjene pohrane.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Spremanje vaših promjena…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Uređivanje je pauzirano dok se ne pohrane. Vaše promjene su pohranjene u vašem pregledniku, stoga ostavite ovu karticu otvorenom dok nastavljamo pokušavati.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Vaše promjene se još uvijek ne spremaju',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Dodaj u favorite',
@@ -499,10 +550,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompaktan prikaz',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaljan prikaz',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Zadani prikaz',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Zadani prikaz je već u upotrebi',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortiraj po datumu stvaranja',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortiraj po zadnjoj izmjeni',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Zadano sortiranje',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Zadani redoslijed sortiranja je već u upotrebi',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Saznajte kako dodati vrstu dokumenta →',
@@ -570,6 +630,15 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Pretraži popis',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Pretraži popis',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label':
+    'Promijeni redoslijed rezultata pretraživanja',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sortirano po {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevantnost',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sortirano po relevantnosti',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Ova opcija sortiranja koristi polja koja nisu dio ovog tipa dokumenta',
@@ -629,6 +698,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Ovaj dokument ne postoji i nije definiran tip sheme za njega.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Učitavanje dokumenta…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Učitavanje…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
