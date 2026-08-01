@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Fejl ved indsættelse af aktiv. Se konsollen for mere information.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Kunne ikke indlæse aktiver',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Indlæs flere',
   /** Text shown when selecting a file but there's no files to select from
@@ -228,13 +230,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Gå til forrige måned',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Gå til forrige år',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'I dag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Gå til i dag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'I morgen',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'I går',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Inkluder tid',
@@ -328,7 +326,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Tjek udviklerkonsollen for mere information',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Gengivelse af ændringerne til dette felt forårsagede en fejl',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Vi kan ikke indlæse ændringerne for dette dokument.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Noget gik galt',
@@ -369,7 +366,6 @@ export default removeUndefinedLocaleResources({
     'Rediger dokumentet eller vælg en ældre version i tidslinjen for at se en liste over ændringer vises i dette panel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Der er ingen ændringer',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Det er ikke muligt at vælge denne begivenhed',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Tilføjet annotation',
@@ -443,6 +439,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Fundet konfigurationsproblemer',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sorter efter {{title}}',
 
@@ -481,6 +480,94 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} uløste ændringer i {{versionName}}-versionen',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Annuller',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Hvor nemt eller svært er det at bruge den nye versionsoversigt?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrer {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'viser',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Alle brugere (Standard)',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Annuller',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumenter',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Utilgængeligt dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Utilgængelige datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} i et andet dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} i {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopiér ID til udklipsholder',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Dokument-ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': 'Kunne ikke kopiere dokument-ID',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Projekt-ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Slet (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Slet ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Der opstod en fejl under forsøget på at slette dette dokument. Dette betyder normalt, at der er andre dokumenter, der refererer til det.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 anden reference vises ikke',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} andre referencer vises ikke',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Vi kan ikke vise metadata for disse referencer på grund af et manglende adgangstoken for de relaterede datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title':
+    'Forhåndsvisning ikke tilgængelig',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument refererer til "<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumenter refererer til "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Du er muligvis ikke i stand til at slette "<DocumentTitle/>" fordi følgende dokumenter refererer til det:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Slet {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Slet {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varianter',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'version',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versioner',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Oprettet {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -503,6 +590,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Gemning tager længere tid end forventet',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokumentet blev åbnet med en tom værdi. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Kunne ikke løse startværdi',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttype "{{type}}" ikke fundet',
 
@@ -1074,6 +1169,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Tilføj kolonne i slutningen',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Tilføj række i slutningen',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Kolonnehåndtag',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Slet kolonne',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Slet række',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Slet tabel',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Overskriftsrække',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Indsæt her',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Tabelindstillinger',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Rækketag',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Vælg tabel',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Ryd',
   /** Label for action to copy the current item (used within arrays) */
@@ -1279,6 +1396,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Utilstrækkelige tilladelser',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Din session er ikke længere gyldig. Log venligst ind igen.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Din session er udløbet. Log venligst ind igen.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Du er blevet logget ud',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Uventet fejl: {{error}}',
 
@@ -1344,7 +1468,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Billedet der er ved at blive uploadet',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'lige nu',
 
   /** Action message to add document to new release */
@@ -1403,7 +1526,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Se planlagte kladder',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Planlagt til offentliggørelse den {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variant',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varianter',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} version',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} versioner',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Kladde',
@@ -1426,6 +1555,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Ingen redigeringer',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ikke udgivet',
+  'release.chip.tooltip.other-variants_one': 'Én variant',
+  'release.chip.tooltip.other-variants_other': '{{count}} varianter',
   'release.chip.tooltip.other-versions_one': 'En yderligere version uden for udgivelser',
   'release.chip.tooltip.other-versions_other': '{{count}} yderligere versioner uden for udgivelser',
   /** Label for tooltip in chip with the published date */
@@ -1762,37 +1893,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>har</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>har</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-equal.name': 'mængde er',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-gt.name': 'mængde større end',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-gte.name': 'mængde større end eller lig med',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-lt.name': 'mængde mindre end',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-lte.name': 'mængde mindre end eller lig med',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>har ikke</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1805,35 +1930,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>har mellem</Operator> <Value>{{from}} → {{to}} elementer</Value>',
   'search.operator.array-count-range.name': 'mængden er mellem',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inkluderer</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inkluderer',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>inkluderer ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'inkluderer ikke',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inkluderer</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inkluderer',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inkluderer ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'inkluderer ikke',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'er',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'er ikke',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'er',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'er ikke',
@@ -1846,159 +1963,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'er',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>er efter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'efter',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>er før</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'før',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'er',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>er inden for de sidste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'sidste',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'er ikke',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>er mellem</Operator> <Value/>',
   'search.operator.date-range.name': 'er mellem',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>er efter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'efter',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>er før</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'før',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'er',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>er inden for de sidste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'sidste',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'er ikke',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>er mellem</Operator> <Value/>',
   'search.operator.date-time-range.name': 'er mellem',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>er</Operator> <Value>ikke tom</Value>',
   'search.operator.defined.name': 'ikke tom',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>er</Operator> <Value>tom</Value>',
   'search.operator.not-defined.name': 'tom',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'er',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'større end',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'større end eller lig med',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'mindre end',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'mindre end eller lig med',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'er ikke',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>er mellem</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'er mellem',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>indeholder</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'indeholder',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'er',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>indeholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'indeholder ikke',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'er ikke',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fil',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'billede',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'er',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'er ikke',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>indeholder</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'indeholder',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'er',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>indeholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'indeholder ikke',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'er ikke',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>indeholder</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'indeholder',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'er',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'er',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'er ikke',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>indeholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'indeholder ikke',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'er ikke',
@@ -2024,30 +2101,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfigurationsstatus',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Søg efter en by eller tidszone',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Vælg lokal tidszone',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Den valgte tidszone vil ændre hvordan datoer repræsenteres i indholdsudgivelser.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Den valgte tidszone vil ændre hvordan datoer repræsenteres kun for denne indtastning i dette dokument.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Den valgte tidszone vil ændre hvordan datoer repræsenteres i tidsplaner.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'lokal tid',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Tidszone',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Viser udgivelser i {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Viser <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Viser tidsplaner i {{alternativeName}} GMT{{offset}}',
 
@@ -2085,7 +2152,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentrevisioner',
   /** Label for loading history */
   'timeline.loading-history': 'Indlæser historik…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Ingen tidligere begivenheder',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Oprettet',

@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Kan ikke planlægge kladde på grund af valideringsfejl i den aktuelle kladde.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant':
+    'Planlægning er endnu ikke tilgængelig for varianter.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Lær om planlægning',
