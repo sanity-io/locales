@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.34](https://github.com/sanity-io/locales/compare/locale-pt-br-v1.1.33...locale-pt-br-v1.1.34) (2026-08-06)
+
+
+### Bug Fixes
+
+* **pt-BR:** address remaining review feedback from [#1776](https://github.com/sanity-io/locales/issues/1776) ([#1802](https://github.com/sanity-io/locales/issues/1802)) ([3c5d67d](https://github.com/sanity-io/locales/commit/3c5d67db6ef9b422156a4d4683733a9d12b631ca))
+* **pt-BR:** automated translation updates ([#1776](https://github.com/sanity-io/locales/issues/1776)) ([1a136c4](https://github.com/sanity-io/locales/commit/1a136c407b6796eeea180ea47d3cdb40731b39e8))
+
 ## [1.1.33](https://github.com/sanity-io/locales/compare/locale-pt-br-v1.1.32...locale-pt-br-v1.1.33) (2026-06-22)
 
 
