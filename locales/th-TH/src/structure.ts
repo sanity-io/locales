@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'ไม่สามารถลบเอกสารนี้ได้เนื่องจากมีอยู่ในการเผยแพร่ตามกำหนดเวลา',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ลบ',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,12 +37,16 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'เอกสารนี้ยังไม่ได้เผยแพร่',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'ทิ้งการเปลี่ยนแปลง',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.duplicate.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate': 'เอกสารนี้ยังไม่มีดังนั้นไม่มีอะไรให้ทำซ้ำ',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'ทำซ้ำ',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -49,8 +55,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'เผยแพร่แล้ว',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'เผยแพร่ไปแล้ว {{timeSincePublished}} ที่ผ่านมา',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'เวอร์ชันนี้ถูกเผยแพร่เป็นส่วนหนึ่งของ release',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'เผยแพร่',
   /** Label for the "Publish" document action */
@@ -93,6 +103,8 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'เอกสารนี้ยังไม่ได้เผยแพร่',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'ยกเลิกการเผยแพร่',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -206,6 +218,23 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'กำลังแสดงเวอร์ชันที่<strong>เผยแพร่</strong>ปัจจุบัน:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'สร้าง variant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'ไม่พบ variant ที่เลือก <VariantName>{{name}}</VariantName>',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description': 'เกิดข้อผิดพลาดขณะเพิ่มเอกสารไปยัง variant: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'เกิดข้อผิดพลาดในการเพิ่มเอกสารไปยัง variant',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'ไม่มีเอกสาร variant <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> สำหรับ <VariantBadge>{{variantTitle}}</VariantBadge>',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'กรุณารอสักครู่ขณะที่เอกสารกำลังถูกเพิ่มไปยัง variant ซึ่งจะใช้เวลาไม่เกินสองสามวินาที',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'กำลังเพิ่มเอกสารไปยัง variant…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'เอกสารใหม่ {{schemaType}}',
@@ -264,9 +293,7 @@ export default removeUndefinedLocaleResources({
     'มุมมองนี้แสดงการเปลี่ยนแปลงที่เกิดขึ้นในเวอร์ชันเฉพาะของเอกสารนี้ เลือกเวอร์ชันอื่นเพื่อดูการเปลี่ยนแปลงของมัน',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'จาก',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'ประวัติ',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'ตรวจทานการเปลี่ยนแปลง',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'ไปยัง',
@@ -379,12 +406,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'ไม่รู้จักประเภทสคีมา: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'ปุ่มเวอร์ชันหายไปไหน?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'ปิด',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'กำลังตรวจสอบ <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'ไม่มีค่า',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'ปิดแผง',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'เกิดข้อผิดพลาดขณะแสดงผลแผงนี้',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'ลองอีกครั้ง',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'เกิดข้อผิดพลาดบางอย่าง',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'ตรวจสอบ',
   /** the placeholder text for the search input on the inspect dialog */
@@ -393,6 +431,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'วิเคราะห์แล้ว',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'JSON ดิบ',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': 'เอกสารยังไม่มีอยู่ใน perspective ที่เลือก',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'ฟอร์มนี้ถูกซ่อน',
@@ -405,6 +446,21 @@ export default removeUndefinedLocaleResources({
     'โปรดรอสักครู่ขณะที่เอกสารกำลังถูกซิงค์ สิ่งนี้มักเกิดขึ้นทันทีหลังจากที่เอกสารได้รับการเผยแพร่ และไม่ควรใช้เวลามากกว่าไม่กี่วินาที',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'กำลังซิงค์เอกสาร…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'เราจะพยายามต่อไป การเปลี่ยนแปลงของคุณถูกเก็บไว้ในเบราว์เซอร์ในระหว่างนี้',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'การเปลี่ยนแปลงของคุณยังไม่ได้บันทึก',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'การแก้ไขจะกลับมาทำงานทันทีที่การเปลี่ยนแปลงของคุณถูกบันทึก',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'กำลังบันทึกการเปลี่ยนแปลงของคุณ…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'การแก้ไขถูกหยุดชั่วคราวจนกว่าจะบันทึกสำเร็จ การเปลี่ยนแปลงของคุณถูกเก็บไว้ในเบราว์เซอร์ ดังนั้นโปรดเปิดแท็บนี้ไว้ขณะที่เราพยายามต่อไป',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'การเปลี่ยนแปลงของคุณยังคงไม่ได้บันทึก',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'เพิ่มลงในรายการโปรด',
@@ -465,10 +521,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'มุมมองแบบกระชับ',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'มุมมองแบบละเอียด',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'มุมมองเริ่มต้น',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'กำลังใช้มุมมองเริ่มต้นอยู่แล้ว',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'เรียงตามวันที่สร้าง',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'เรียงตามการแก้ไขล่าสุด',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'การเรียงลำดับเริ่มต้น',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'กำลังใช้ลำดับการเรียงเริ่มต้นอยู่แล้ว',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'เรียนรู้วิธีการเพิ่มประเภทเอกสาร →',
@@ -532,6 +596,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'ค้นหารายการ',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'ค้นหารายการ',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'เปลี่ยนลำดับผลการค้นหา',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'เรียงลำดับตาม {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'ความเกี่ยวข้อง',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'เรียงลำดับตามความเกี่ยวข้อง',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'ตัวเลือกการเรียงลำดับนี้ใช้ฟิลด์ที่ไม่ได้เป็นส่วนหนึ่งของประเภทเอกสารนี้',
@@ -593,6 +665,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'เอกสารนี้ไม่มีอยู่ และไม่มีการระบุประเภทสคีมาสำหรับมัน',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'กำลังโหลดเอกสาร…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'กำลังโหลด…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

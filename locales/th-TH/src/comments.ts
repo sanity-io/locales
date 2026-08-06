@@ -70,7 +70,6 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'เพิ่มความคิดเห็น',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'ไม่สามารถทับซ้อนความคิดเห็นได้',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'เพิ่มความคิดเห็น',
