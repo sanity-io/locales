@@ -55,61 +55,55 @@ export default removeUndefinedLocaleResources({
   /** Action text for unpublishing a document in a release in the context menu */
   'action.unpublish': 'Avpubliser',
   /** Action message for scheduling an unpublished of a document  */
-  'action.unpublish-doc-actions': 'Avpubliser ved utsending',
+  'action.unpublish-doc-actions': 'Avpubliser ved utgivelse',
   /** Action text for unscheduling a release */
-  'action.unschedule': 'Avplanlegg utsending',
+  'action.unschedule': 'Avplanlegg utgivelse',
 
   /** Text for the summary button in release tool */
   'actions.summary': 'Sammendrag',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'La til en dokumentversjon',
-  /* The text for the activity event when the release is archived */
-  'activity.event.archive': 'Arkiverte <strong>{{releaseTitle}}</strong>-utsendingen',
-  /* The text for the activity event when the release is created */
+  'activity.event.archive': 'Arkiverte <strong>{{releaseTitle}}</strong>-utgivelsen',
   'activity.event.create':
-    'Opprettet <strong>{{releaseTitle}}</strong>-utsendingen <ScheduleTarget>med mål </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
+    'Opprettet <strong>{{releaseTitle}}</strong>-utgivelsen <ScheduleTarget>med mål </ScheduleTarget>',
   'activity.event.discard-document': 'Forkastet en dokumentversjon',
-  'activity.event.edit': 'Satte utsendingstidspunkt til <ScheduleTarget></ScheduleTarget>',
+  'activity.event.edit': 'Satte utgivelsestidspunkt til <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Så snart som mulig',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Ubestemt',
-  /* The text for the activity event when the release is published */
-  'activity.event.publish': 'Publiserte <strong>{{releaseTitle}}</strong>-utsendingen',
-  /* The text for the activity event when the release is scheduled */
+  'activity.event.publish': 'Publiserte <strong>{{releaseTitle}}</strong>-utgivelsen',
   'activity.event.schedule': 'Merket som planlagt',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive':
-    'Gjenopprettet <strong>{{releaseTitle}}</strong>-utsendingen fra arkivet',
+    'Gjenopprettet <strong>{{releaseTitle}}</strong>-utgivelsen fra arkivet',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Merket som ikke planlagt',
   /** The loading text for when releases are loading */
-  'activity.panel.error': 'Det oppstod en feil ved henting av utsendingsaktivitet',
+  'activity.panel.error': 'Det oppstod en feil ved henting av utgivelsesaktivitet',
   /** The loading text for when releases are loading */
-  'activity.panel.loading': 'Laster utsendingsaktivitet',
+  'activity.panel.loading': 'Laster utgivelsesaktivitet',
   /** The title for the activity panel shown in the releases detail screen */
   'activity.panel.title': 'Aktivitet',
 
   /** Label for the button to proceed with archiving a release */
-  'archive-dialog.confirm-archive-button': 'Ja, arkiver utsendingen',
+  'archive-dialog.confirm-archive-button': 'Ja, arkiver utgivelsen',
   /** Description for the dialog confirming the archive of a release with one document */
   'archive-dialog.confirm-archive-description_one': 'Dette vil arkivere 1 dokumentversjon.',
   /** Description for the dialog confirming the archive of a release with more than one document */
   'archive-dialog.confirm-archive-description_other':
     'Dette vil arkivere {{count}} dokumentversjoner.',
   /** Header for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-header': 'Er du sikker på at du vil arkivere denne utsendingen?',
+  'archive-dialog.confirm-archive-header': 'Er du sikker på at du vil arkivere denne utgivelsen?',
   /** Title for the dialog confirming the archive of a release */
   'archive-dialog.confirm-archive-title':
-    "Er du sikker på at du vil arkivere <strong>'{{title}}'</strong>-utsendingen?",
+    "Er du sikker på at du vil arkivere <strong>'{{title}}'</strong>-utgivelsen?",
 
   /** Description for information card on a published or archived release to description retention effects */
   'archive-info.description':
     'Den vil være tilgjengelig i {{retentionDays}} dager, og fjernes automatisk den {{removalDate}}. <Link>Les om oppbevaring</Link>.',
   /** Title for information card on a archived release */
-  'archive-info.title': 'Denne utsendingen er arkivert',
+  'archive-info.title': 'Denne utgivelsen er arkivert',
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
   'banner.confirm-active-scheduled-drafts_one':
@@ -312,29 +306,37 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for discarding a version */
   'permissions.error.discard-version': 'Du har ikke tillatelse til å forkaste denne versjonen',
   /** Tooltip label when the user doesn't have permission to duplicate release */
-  'permissions.error.duplicate': 'Du har ikke tillatelse til å duplisere denne release',
+  'permissions.error.duplicate': 'Du har ikke tillatelse til å duplisere denne utgivelsen',
   /** Tooltip label when the user doesn't have permission to unarchive release */
   'permissions.error.unarchive':
-    'Du har ikke tillatelse til å gjenopprette denne release fra arkiv',
+    'Du har ikke tillatelse til å gjenopprette denne utgivelsen fra arkivet',
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Du har ikke tillatelse til å avpublisere dette dokumentet',
 
   /** Tooltip text for when one user is editing a document in a release */
   'presence.tooltip.one':
-    '{{displayName}} redigerer dette dokumentet i release-en «{{releaseTitle}}» akkurat nå',
+    '{{displayName}} redigerer dette dokumentet i utgivelsen «{{releaseTitle}}» akkurat nå',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Det er ingen dokumenter å publisere',
 
   /** Description for the dialog confirming the publish of a release with one document */
   'publish-dialog.confirm-publish-description_one':
-    "Release-en '<strong>{{title}}</strong>' og dens dokument vil bli publisert.",
+    "Utgivelsen '<strong>{{title}}</strong>' og dens dokument vil bli publisert.",
   /** Description for the dialog confirming the publish of a release with multiple documents */
   'publish-dialog.confirm-publish-description_other':
-    "Release-en '<strong>{{title}}</strong>' og dens {{releaseDocumentsLength}} dokumenter vil bli publisert.",
+    "Utgivelsen '<strong>{{title}}</strong>' og dens {{releaseDocumentsLength}} dokumenter vil bli publisert.",
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
-    'Er du sikker på at du vil publisere release-en og alle dokumentversjoner?',
+    'Er du sikker på at du vil publisere utgivelsen og alle dokumentversjoner?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Oppdater eksisterende utkast',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Det eksisterende utkastet av {{draftDocumentsLength}} dokument vil bli forkastet slik at utkast samsvarer med den publiserte utgivelsen. Upubliserte utkastendringer vil gå tapt.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'De eksisterende utkastene av {{draftDocumentsLength}} dokumenter vil bli forkastet slik at utkast samsvarer med den publiserte utgivelsen. Upubliserte utkastendringer vil gå tapt.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Noen dokumenter har valideringsfeil',
   /** Label for when documents are being validated */
@@ -343,7 +345,7 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.validation.no-permission': 'Du har ikke tillatelse til å publisere',
 
   /** Title for information card on a published release */
-  'publish-info.title': 'Denne release-en er publisert.',
+  'publish-info.title': 'Denne utgivelsen er publisert.',
 
   /** Placeholder title for a release with no title */
   'release-placeholder.title': 'Uten tittel',
@@ -355,13 +357,13 @@ export default removeUndefinedLocaleResources({
   'revert-dialog.confirm-revert-description_other':
     'Dette vil tilbakestille {{releaseDocumentsLength}} dokumentversjoner.',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
-  'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Tilbakestill release-en umiddelbart',
+  'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Tilbakestill utgivelsen umiddelbart',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
-    'Er du sikker på at du vil tilbakestille release-en «{{title}}»?',
+    'Er du sikker på at du vil tilbakestille utgivelsen «{{title}}»?',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
-    'Det ble gjort endringer i dokumenter i denne release-en etter at de ble publisert. Tilbakestilling vil overskrive disse endringene.',
+    'Det ble gjort endringer i dokumenter i denne utgivelsen etter at de ble publisert. Tilbakestilling vil overskrive disse endringene.',
 
   /** Description of a reverted release */
   'revert-release.description': 'Tilbakestill endringer i dokumentversjoner i «{{title}}».',
@@ -369,7 +371,7 @@ export default removeUndefinedLocaleResources({
   'revert-release.title': 'Tilbakestiller «{{title}}»',
 
   /** Description for the review changes button in release tool */
-  'review.description': 'Legg til dokumenter i denne release-en for å gjennomgå endringer',
+  'review.description': 'Legg til dokumenter i denne utgivelsen for å gjennomgå endringer',
   /** Text for when a document is edited */
   'review.edited': 'Redigert <RelativeTime/>',
 
@@ -377,7 +379,7 @@ export default removeUndefinedLocaleResources({
   'schedule-action.validation.no-documents': 'Det er ingen dokumenter å planlegge',
 
   /** Schedule release button tooltip when the release is already scheduled */
-  'schedule-button-tooltip.already-scheduled': 'Denne release-en er allerede planlagt',
+  'schedule-button-tooltip.already-scheduled': 'Denne utgivelsen er allerede planlagt',
   /** Schedule release button tooltip when there are validation errors */
   'schedule-button-tooltip.validation.error': 'Noen dokumenter har valideringsfeil',
   /** Schedule release button tooltip when validation is loading */
@@ -476,7 +478,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - time */
   'table-header.time': 'Tid',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': 'Release',
+  'table-header.title': 'Utgivelse',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Type',
   /** Header for the document table in the release tool - when */
@@ -492,37 +494,41 @@ export default removeUndefinedLocaleResources({
   /** Toast error message when bulk scheduling of active drafts fails */
   'toast.confirm-active-scheduled-drafts.error': 'Kunne ikke planlegge utkast: {{error}}',
   /** Toast message after copying release ID */
-  'toast.copy-release-id.success': 'Release-ID kopiert til utklippstavlen',
+  'toast.copy-release-id.success': 'Utgivelses-ID kopiert til utklippstavlen',
   /** Toast message after copying release link */
-  'toast.copy-release-link.success': 'Release-lenke kopiert til utklippstavlen',
+  'toast.copy-release-link.success': 'Utgivelseslenke kopiert til utklippstavlen',
   /** Toast message after copying release title */
-  'toast.copy-release-title.success': 'Release-tittel kopiert til utklippstavlen',
+  'toast.copy-release-title.success': 'Utgivelsestittel kopiert til utklippstavlen',
   /** Description for toast when creating new version of document in release failed */
-  'toast.create-version.error': 'Kunne ikke legge til dokument i release: {{error}}',
+  'toast.create-version.error': 'Kunne ikke legge til dokument i utgivelsen: {{error}}',
   /** Description for toast when release deletion failed */
   'toast.delete.error': "Kunne ikke slette '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully deleted */
-  'toast.delete.success': "Release '<strong>{{title}}</strong>' ble slettet",
+  'toast.delete.success': "Utgivelsen '<strong>{{title}}</strong>' ble slettet",
   /** Description for toast when release duplication failed */
   'toast.duplicate.error': "Kunne ikke duplisere '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully duplicated */
-  'toast.duplicate.success': "Release '<strong>{{title}}</strong>' ble duplisert. <Link/>",
+  'toast.duplicate.success': "Utgivelsen '<strong>{{title}}</strong>' ble duplisert. <Link/>",
   /** Link text for toast link to the duplicated release */
-  'toast.duplicate.success-link': 'Vis duplisert release',
+  'toast.duplicate.success-link': 'Vis duplisert utgivelse',
   /** Text for toast when release has been reverted immediately */
-  'toast.immediate-revert.success': "Release '{{title}}' ble tilbakestilt",
+  'toast.immediate-revert.success': "Utgivelsen '{{title}}' ble tilbakestilt",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Kunne ikke publisere '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Utgivelsen ble publisert, men eksisterende utkast kunne ikke oppdateres: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
-  'toast.revert-stage.success': "Tilbakestilling av release for '{{title}}' ble opprettet. <Link/>",
+  'toast.revert-stage.success':
+    "Tilbakestilling av utgivelse for '{{title}}' ble opprettet. <Link/>",
   /** Link text for toast link to the generated revert release */
-  'toast.revert-stage.success-link': 'Vis tilbakestilt release',
+  'toast.revert-stage.success-link': 'Vis tilbakestilt utgivelse',
   /** Text for toast when release failed to revert */
-  'toast.revert.error': 'Kunne ikke tilbakestille release: {{error}}',
+  'toast.revert.error': 'Kunne ikke tilbakestille utgivelsen: {{error}}',
   /** Text for toast when release failed to schedule */
   'toast.schedule.error': "Kunne ikke planlegge '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when release has been scheduled */
-  'toast.schedule.success': "Release '<strong>{{title}}</strong>' ble planlagt.",
+  'toast.schedule.success': "Utgivelsen '<strong>{{title}}</strong>' ble planlagt.",
   /** Text for toast when release failed to unarchive */
   'toast.unarchive.error':
     "Kunne ikke gjenopprette '<strong>{{title}}</strong>' fra arkiv: {{error}}",
@@ -530,21 +536,21 @@ export default removeUndefinedLocaleResources({
   'toast.unschedule.error': "Kunne ikke avplanlegge '<strong>{{title}}</strong>': {{error}}",
 
   /** Text for tooltip when a release has been scheduled */
-  'type-picker.tooltip.scheduled': 'Release er planlagt – avplanlegg den for å endre type',
+  'type-picker.tooltip.scheduled': 'Utgivelsen er planlagt – avplanlegg den for å endre type',
 
   /** Text action in unpublish dialog to cancel */
   'unpublish-dialog.action.cancel': 'Avbryt',
   /** Text action in unpublish dialog to unpublish */
-  'unpublish-dialog.action.unpublish': 'Ja, avpubliser ved utsending',
+  'unpublish-dialog.action.unpublish': 'Ja, avpubliser ved utgivelse',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
   'unpublish-dialog.description.lost-changes':
     'Alle endringer gjort i denne dokumentversjonen vil gå tapt.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
   'unpublish-dialog.description.to-draft':
-    'Dette vil avpublisere dokumentet som en del av <Label>{{title}}</Label>-release, og opprette et utkast hvis det ikke finnes et utkast på tidspunktet for utsending.',
+    'Dette vil avpublisere dokumentet som en del av <Label>{{title}}</Label>-utgivelsen, og opprette et utkast hvis det ikke finnes et utkast på tidspunktet for utgivelsen.',
   /** Title for the dialog confirming the unpublish of a release */
   'unpublish-dialog.header':
-    'Er du sikker på at du vil avpublisere dette dokumentet ved utsending?',
+    'Er du sikker på at du vil avpublisere dette dokumentet ved utgivelse?',
 
   /** Text for when a document is unpublished */
   'unpublish.already-unpublished': 'Dette dokumentet er allerede avpublisert.',
