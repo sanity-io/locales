@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Fel vid infogning av tillgång. Se konsolen för mer information.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Det gick inte att läsa in resurser',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Ladda fler',
   /** Text shown when selecting a file but there's no files to select from
@@ -227,13 +229,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Gå till föregående månad',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Gå till föregående år',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Idag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Gå till idag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Imorgon',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Igår',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Inkludera tid',
@@ -328,7 +326,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Kontrollera utvecklarkonsolen för mer information',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Att rendera ändringarna för detta fält orsakade ett fel',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Vi kan inte ladda ändringarna för detta dokument.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Något gick fel',
@@ -369,7 +366,6 @@ export default removeUndefinedLocaleResources({
     'Redigera dokumentet eller välj en äldre version i tidslinjen för att se en lista över ändringar som visas i det här fönstret.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Det finns inga ändringar',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Det är inte möjligt att välja denna händelse',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Tillagd anmärkning',
@@ -443,6 +439,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Hittade konfigurationsproblem',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sortera efter {{title}}',
 
@@ -481,6 +480,105 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} olösta ändringar i {{versionName}}-versionen',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Avbryt',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Hur lätt eller svårt är den nya versionsförteckningen att använda?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrera {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'visas',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Alla användare (Standard)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Skapa variant',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Skapa variant för {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Som ett utkast',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Till en release',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Eller visa befintliga varianter',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Avbryt',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokument',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Otillgängligt dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Otillgängliga dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} i ett annat dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} i {{count}} dataset',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopiera ID till urklipp',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Dokument-ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Det gick inte att kopiera dokument-ID',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Projekt-ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Radera (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Radera ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Ett fel uppstod vid försök att radera det här dokumentet. Det beror vanligtvis på att det finns andra dokument som refererar till det.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 annan referens visas inte',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} andra referenser visas inte',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Vi kan inte visa metadata för dessa referenser på grund av en saknad åtkomsttoken för de relaterade datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title':
+    'Förhandsgranskning ej tillgänglig',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument refererar till "<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokument refererar till "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Du kanske inte kan radera "<DocumentTitle/>" eftersom följande dokument refererar till det:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Radera {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Radera {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varianter',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'version',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versioner',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Skapad {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -503,6 +601,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Sparandet tar längre tid än förväntat',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokumentet öppnades med ett tomt värde. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Det gick inte att lösa initialt värde',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttypen "{{type}}" hittades inte',
 
@@ -1076,6 +1182,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Lägg till kolumn i slutet',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Lägg till rad i slutet',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Kolumnhandtag',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Ta bort kolumn',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Ta bort rad',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Ta bort tabell',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Rubrikrad',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Infoga här',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Tabellalternativ',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Radhandtag',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Markera tabell',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Rensa',
   /** Label for action to copy the current item (used within arrays) */
@@ -1282,6 +1410,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Otillräckliga behörigheter',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Din session är inte längre giltig. Vänligen logga in igen.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Din session har gått ut. Vänligen logga in igen.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Du har loggats ut',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Oväntat fel: {{error}}',
 
@@ -1348,7 +1483,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Bilden som för närvarande laddas upp',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'just nu',
 
   /** Action message to add document to new release */
@@ -1407,7 +1541,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Visa schemalagda utkast',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Schemalagd för publicering den {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variant',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varianter',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} version',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} versioner',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Utkast',
@@ -1430,6 +1570,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Inga förändringar',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ej publicerad',
+  'release.chip.tooltip.other-variants_one': 'En variant',
+  'release.chip.tooltip.other-variants_other': '{{count}} varianter',
   'release.chip.tooltip.other-versions_one': 'En ytterligare version utanför utgivningar',
   'release.chip.tooltip.other-versions_other':
     '{{count}} ytterligare versioner utanför utgivningar',
@@ -1771,37 +1913,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>har</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>har</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-equal.name': 'kvantitet är',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-gt.name': 'kvantitet större än',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-gte.name': 'kvantitet större än eller lika med',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-lt.name': 'kvantitet mindre än',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-lte.name': 'kvantitet mindre än eller lika med',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>har inte</Operator> <Value>{{count}} objekt</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1814,35 +1950,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>har mellan</Operator> <Value>{{from}} → {{to}} objekt</Value>',
   'search.operator.array-count-range.name': 'kvantitet är mellan',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inkluderar</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inkluderar',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>inkluderar inte</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'inkluderar inte',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inkluderar</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inkluderar',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inkluderar inte</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'inkluderar inte',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'är',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'är inte',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'är',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'är inte',
@@ -1855,159 +1983,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'är',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>är efter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'efter',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>är före</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'före',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'är',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>är inom de senaste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'senaste',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'är inte',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>är mellan</Operator> <Value/>',
   'search.operator.date-range.name': 'är mellan',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>är efter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'efter',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>är före</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'före',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'är',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>är under de senaste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'sista',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'är inte',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>är mellan</Operator> <Value/>',
   'search.operator.date-time-range.name': 'är mellan',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>är</Operator> <Value>inte tom</Value>',
   'search.operator.defined.name': 'inte tom',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>är</Operator> <Value>tom</Value>',
   'search.operator.not-defined.name': 'tom',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'är',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'större än',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'större än eller lika med',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'mindre än',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'mindre än eller lika med',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'är inte',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>är mellan</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'är mellan',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>innehåller</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'innehåller',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'är',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>innehåller inte</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'innehåller inte',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'är inte',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fil',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'bild',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'är',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'är inte',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>innehåller</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'innehåller',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'är',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>innehåller inte</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'innehåller inte',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'är inte',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>innehåller</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'innehåller',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'är',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>är</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'är',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'är inte',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>innehåller inte</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'innehåller inte',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>är inte</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'är inte',
@@ -2033,30 +2121,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfigurationsstatus',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Sök efter en stad eller tidszon',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Välj lokal tidszon',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Den valda tidszonen kommer att ändra hur datum representeras i innehållsutgåvor.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Den valda tidszonen kommer att ändra hur datum representeras endast för detta inmatningsfält i detta dokument.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Den valda tidszonen kommer att ändra hur datum representeras i schemaläggningar.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'lokal tid',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Tidszon',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Visar utgåvor i {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Visar <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Visar scheman i {{alternativeName}} GMT{{offset}}',
 
@@ -2094,7 +2172,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentrevisioner',
   /** Label for loading history */
   'timeline.loading-history': 'Laddar historik…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Inga tidigare händelser',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Skapad',

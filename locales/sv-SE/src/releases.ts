@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Sammanfattning',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Lade till en dokumentversion',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Arkiverade lanseringen <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Skapade lanseringen <strong>{{releaseTitle}}</strong> <ScheduleTarget>med målet </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Kasserade en dokumentversion',
   'activity.event.edit': 'Ställde in lanseringstid till <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Så snart som möjligt',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Obestämt',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Publicerade lanseringen <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Markerad som schemalagd',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Avarkiverade lanseringen <strong>{{releaseTitle}}</strong>',
@@ -335,6 +329,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Är du säker på att du vill publicera releasen och alla dokumentversioner?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Uppdatera befintliga utkast',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Det befintliga utkastet av {{draftDocumentsLength}} dokument kommer att tas bort så att utkast matchar den publicerade releasen. Opublicerade utkaständringar kommer att gå förlorade.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'De befintliga utkasten av {{draftDocumentsLength}} dokument kommer att tas bort så att utkast matchar den publicerade releasen. Opublicerade utkaständringar kommer att gå förlorade.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Vissa dokument har valideringsfel',
   /** Label for when documents are being validated */
@@ -513,6 +515,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Releasen '{{title}}' återställdes.",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Det gick inte att publicera '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Releasen publicerades, men befintliga utkast kunde inte uppdateras: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Återställningsrelease för '{{title}}' skapades. <Link/>",
   /** Link text for toast link to the generated revert release */
