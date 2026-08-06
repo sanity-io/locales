@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲಾಗದು ಏಕೆಂದರೆ ಇದು ನಿಗದಿತ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ಅಳಿಸು',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,6 +39,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'ಈ ದಾಖಲೆಯು ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸು',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -43,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಹಾಗಾಗಿ ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'ನಕಲು',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -51,8 +60,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'ಈಗಾಗಲೇ ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'ಪ್ರಕಟಿಸಿದ {{timeSincePublished}} ಹಿಂದೆ',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'ಈ ಆವೃತ್ತಿಯನ್ನು ಅದರ release ನ ಭಾಗವಾಗಿ ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'ಪ್ರಕಟಿಸು',
   /** Label for the "Publish" document action */
@@ -95,6 +109,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'ಈ ದಾಖಲೆ ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಿಲ್ಲ',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'ಪ್ರಕಟಣೆ ರದ್ದುಗೊಳಿಸು',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -219,6 +236,23 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'ಪ್ರಸ್ತುತ <strong>ಪ್ರಕಟಿತ</strong> ಆವೃತ್ತಿಯನ್ನು ತೋರಿಸುತ್ತಿದೆ:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Variant ರಚಿಸಿ',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'ಆಯ್ಕೆ ಮಾಡಿದ variant <VariantName>{{name}}</VariantName> ಕಂಡುಬರಲಿಲ್ಲ.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description': 'ದಾಖಲೆಯನ್ನು variant ಗೆ ಸೇರಿಸುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Variant ಗೆ ದಾಖಲೆ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    '<PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> ಗಾಗಿ <VariantBadge>{{variantTitle}}</VariantBadge> variant ದಾಖಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'ದಾಖಲೆಯನ್ನು variant ಗೆ ಸೇರಿಸುವವರೆಗೆ ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ. ಇದು ಕೆಲವು ಸೆಕೆಂಡುಗಳಿಗಿಂತ ಹೆಚ್ಚು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಾರದು.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Variant ಗೆ ದಾಖಲೆ ಸೇರಿಸಲಾಗುತ್ತಿದೆ…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ಹೊಸ {{schemaType}}',
@@ -278,9 +312,7 @@ export default removeUndefinedLocaleResources({
     'ಈ ನೋಟ ಈ ದಾಖಲೆಯ ನಿರ್ದಿಷ್ಟ ಆವೃತ್ತಿಯಲ್ಲಿ ನಡೆದ ಬದಲಾವಣೆಗಳನ್ನು ತೋರಿಸುತ್ತದೆ. ಅದರ ಬದಲಾವಣೆಗಳನ್ನು ನೋಡಲು ಬೇರೆ ಆವೃತ್ತಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'ಇಂದ',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'ಇತಿಹಾಸ',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'ಪರಿಶೀಲನೆ ಬದಲಾವಣೆಗಳು',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'ಗೆ',
@@ -409,12 +441,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'ಅಜ್ಞಾತ ಸ್ಕೀಮಾ ಪ್ರಕಾರ: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'ಆವೃತ್ತಿ ಬಟನ್‌ಗಳು ಎಲ್ಲಿ ಹೋದವು?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'ಮುಚ್ಚಿ',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/> ಪರಿಶೀಲನೆ',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'ಮೌಲ್ಯವಿಲ್ಲ',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'ಪ್ಯಾನೆಲ್ ಮುಚ್ಚಿ',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'ಈ ಪ್ಯಾನೆಲ್ ಅನ್ನು ರೆಂಡರ್ ಮಾಡುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'ಏನೋ ತಪ್ಪಾಗಿದೆ',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'ಪರಿಶೀಲನೆ',
   /** the placeholder text for the search input on the inspect dialog */
@@ -423,6 +466,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'ಪಾರ್ಸ್ ಮಾಡಲಾಗಿದೆ',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'ಕಚ್ಚಾ JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'ಆಯ್ಕೆ ಮಾಡಿದ perspective ನಲ್ಲಿ ದಾಖಲೆ ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'ಈ ಫಾರ್ಮ್ ಅಡಗಿಸಲಾಗಿದೆ',
@@ -435,6 +482,21 @@ export default removeUndefinedLocaleResources({
     'ದಾಖಲೆ ಸಿಂಕ್ ಆಗುವವರೆಗೆ ದಯವಿಟ್ಟು ಕಾಯಿರಿ. ಇದು ಸಾಮಾನ್ಯವಾಗಿ ದಾಖಲೆ ಪ್ರಕಟಿಸಲಾದ ನಂತರ ನಡೆಯುತ್ತದೆ, ಮತ್ತು ಇದು ಕೆಲವು ಸೆಕೆಂಡುಗಳಿಗಿಂತ ಹೆಚ್ಚು ಸಮಯ ತಗೊಳ್ಳಬಾರದು',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'ದಾಖಲೆ ಸಿಂಕ್ ಆಗುತ್ತಿದೆ…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'ನಾವು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುತ್ತಲೇ ಇರುತ್ತೇವೆ. ಅಷ್ಟರಲ್ಲಿ ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಉಳಿಯುತ್ತಿಲ್ಲ',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಉಳಿದ ತಕ್ಷಣ ಸಂಪಾದನೆ ಮುಂದುವರಿಯುತ್ತದೆ.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'ಅವು ಉಳಿಯುವವರೆಗೆ ಸಂಪಾದನೆ ನಿಲ್ಲಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಉಳಿಸಿಕೊಳ್ಳಲಾಗಿದೆ, ಆದ್ದರಿಂದ ನಾವು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಈ ಟ್ಯಾಬ್ ತೆರೆದಿರಿಸಿ.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಇನ್ನೂ ಉಳಿಯುತ್ತಿಲ್ಲ',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'ಇಷ್ಟಗಳಿಗೆ ಸೇರಿಸಿ',
@@ -647,6 +709,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'ಈ ದಾಖಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ, ಮತ್ತು ಅದಕ್ಕೆ ಯಾವುದೇ ಸ್ಕೀಮಾ ಪ್ರಕಾರವನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿಲ್ಲ.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'ದಾಖಲೆಯನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

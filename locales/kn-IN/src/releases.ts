@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'ಸಾರಾಂಶ',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'ಒಂದು ದಾಖಲೆ ಆವೃತ್ತಿಯನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ರಚಿಸಲಾಗಿದೆ <ScheduleTarget>ಗುರಿಯಾಗಿ </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'ಒಂದು ದಾಖಲೆ ಆವೃತ್ತಿಯನ್ನು ತಿರಸ್ಕರಿಸಲಾಗಿದೆ',
   'activity.event.edit': 'ರಿಲೀಸ್ ಸಮಯವನ್ನು <ScheduleTarget></ScheduleTarget> ಗೆ ಹೊಂದಿಸಲಾಗಿದೆ',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'ಸಾಧ್ಯವಾದಷ್ಟು ಬೇಗ',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'ನಿರ್ಧರಿಸಿಲ್ಲ',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ಪ್ರಕಟಿಸಲಾಗಿದೆ',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'ನಿಗದಿಪಡಿಸಿದಂತೆ ಗುರುತಿಸಲಾಗಿದೆ',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ಅನ್ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ',
@@ -331,6 +325,15 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'ನೀವು release ಮತ್ತು ಎಲ್ಲಾ ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ಪ್ರಕಟಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox':
+    'ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಡ್ರಾಫ್ಟ್‌ಗಳನ್ನು ನವೀಕರಿಸಿ',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'ಡ್ರಾಫ್ಟ್‌ಗಳು ಪ್ರಕಟಿತ release ಗೆ ಹೊಂದಿಕೆಯಾಗುವಂತೆ {{draftDocumentsLength}} ದಾಖಲೆಯ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಡ್ರಾಫ್ಟ್ ಅನ್ನು ತ್ಯಜಿಸಲಾಗುವುದು. ಪ್ರಕಟಿಸದ ಡ್ರಾಫ್ಟ್ ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'ಡ್ರಾಫ್ಟ್‌ಗಳು ಪ್ರಕಟಿತ release ಗೆ ಹೊಂದಿಕೆಯಾಗುವಂತೆ {{draftDocumentsLength}} ದಾಖಲೆಗಳ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಡ್ರಾಫ್ಟ್‌ಗಳನ್ನು ತ್ಯಜಿಸಲಾಗುವುದು. ಪ್ರಕಟಿಸದ ಡ್ರಾಫ್ಟ್ ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'ಕೆಲವು ದಾಖಲೆಗಳಲ್ಲಿ ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳಿವೆ',
   /** Label for when documents are being validated */
@@ -510,6 +513,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "'{{title}}' release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹಿಂತಿರುಗಿಸಲಾಗಿದೆ",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' ಅನ್ನು ಪ್ರಕಟಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'release ಅನ್ನು ಪ್ರಕಟಿಸಲಾಯಿತು, ಆದರೆ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಡ್ರಾಫ್ಟ್‌ಗಳನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "'{{title}}' ಗಾಗಿ revert release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ. <Link/>",
