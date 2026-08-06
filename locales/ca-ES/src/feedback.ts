@@ -2,45 +2,46 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Browse button text */
-  'feedback.attachment.browse': undefined, // 'Browse'
+  'feedback.attachment.browse': 'Navega',
   /** Drop zone text for image attachment */
-  'feedback.attachment.drop-zone': undefined, // 'Drag or paste file here'
+  'feedback.attachment.drop-zone': 'Arrossega o enganxa el fitxer aquí',
   /** Error shown when attached image exceeds size limit */
-  'feedback.attachment.error.size': undefined, // 'Image must be under 20 MB'
+  'feedback.attachment.error.size': 'La imatge ha de ser inferior a 20 MB',
   /** Label for the image attachment section */
-  'feedback.attachment.label': undefined, // 'Attach an image'
+  'feedback.attachment.label': 'Adjunta una imatge',
   /** Remove attached image button text */
-  'feedback.attachment.remove': undefined, // 'Remove'
+  'feedback.attachment.remove': 'Elimina',
   /** Cancel button text */
-  'feedback.cancel': undefined, // 'Cancel'
+  'feedback.cancel': 'Cancel·la',
   /** Consent disclaimer shown when the user agrees to follow up */
-  'feedback.consent.disclaimer': undefined, // 'We\'d love to learn more. Selecting yes shares your name and email with the Sanity team.'
+  'feedback.consent.disclaimer':
+    "Ens agradaria saber-ne més. Seleccionar sí comparteix el vostre nom i correu electrònic amb l'equip de Sanity.",
   /** Label for the contact consent toggle */
-  'feedback.consent.label': undefined, // 'Can we follow up with you about this feedback?'
+  'feedback.consent.label': 'Podem fer-vos un seguiment sobre aquest comentari?',
   /** Consent toggle: no */
-  'feedback.consent.no': undefined, // 'No'
+  'feedback.consent.no': 'No',
   /** Consent toggle: yes */
-  'feedback.consent.yes': undefined, // 'Yes'
+  'feedback.consent.yes': 'Sí',
   /** Title of the feedback dialog */
-  'feedback.dialog.title': undefined, // 'Share feedback with Sanity'
+  'feedback.dialog.title': 'Comparteix comentaris amb Sanity',
   /** Toast message after failed submission */
-  'feedback.error': undefined, // 'Failed to submit feedback with error'
+  'feedback.error': "No s'ha pogut enviar el comentari amb l'error",
   /** Label for "send feedback" in the help resources menu */
-  'feedback.menu-item': undefined, // 'Send feedback'
+  'feedback.menu-item': 'Envia comentaris',
   /** Label for the message field */
-  'feedback.message.label': undefined, // 'What is working? What could be better?'
+  'feedback.message.label': 'Què funciona bé? Què es podria millorar?',
   /** Placeholder for the message field */
-  'feedback.message.placeholder': undefined, // 'Describe your issue or request...'
+  'feedback.message.placeholder': 'Descriu el teu problema o sol·licitud...',
   /** Sentiment option: happy */
-  'feedback.sentiment.happy': undefined, // 'Easy'
+  'feedback.sentiment.happy': 'Fàcil',
   /** Label for the sentiment question */
-  'feedback.sentiment.label': undefined, // 'How easy or difficult is Sanity to use?'
+  'feedback.sentiment.label': 'Fins a quin punt és fàcil o difícil utilitzar Sanity?',
   /** Sentiment option: neutral */
-  'feedback.sentiment.neutral': undefined, // 'Not sure'
+  'feedback.sentiment.neutral': 'No estic segur/a',
   /** Sentiment option: unhappy */
-  'feedback.sentiment.unhappy': undefined, // 'Difficult'
+  'feedback.sentiment.unhappy': 'Difícil',
   /** Submit button text */
-  'feedback.submit': undefined, // 'Send feedback'
+  'feedback.submit': 'Envia comentaris',
   /** Toast message after successful submission */
-  'feedback.success': undefined, // 'Feedback submitted, thank you!'
+  'feedback.success': 'Comentari enviat, gràcies!',
 })
