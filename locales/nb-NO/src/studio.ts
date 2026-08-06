@@ -610,7 +610,7 @@ export default removeUndefinedLocaleResources({
   'document.initial-value.error.description':
     'Dokumentet ble åpnet med en tom verdi. {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': 'Kunne ikke løse opp startverdi',
+  'document.initial-value.error.title': 'Kunne ikke hente startverdi',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttypen "{{type}}" ble ikke funnet',
 

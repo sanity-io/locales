@@ -333,10 +333,10 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.confirm-publish.update-drafts-checkbox': 'Oppdater eksisterende utkast',
   /** Description for the update existing drafts checkbox when one document has an existing draft */
   'publish-dialog.confirm-publish.update-drafts-description_one':
-    'Det eksisterende utkastet av {{draftDocumentsLength}} dokument vil bli forkastet slik at utkast samsvarer med den publiserte release. Upubliserte utkastendringer vil gå tapt.',
+    'Det eksisterende utkastet av {{draftDocumentsLength}} dokument vil bli forkastet slik at utkast samsvarer med den publiserte release-en. Upubliserte utkastendringer vil gå tapt.',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
   'publish-dialog.confirm-publish.update-drafts-description_other':
-    'De eksisterende utkastene av {{draftDocumentsLength}} dokumenter vil bli forkastet slik at utkast samsvarer med den publiserte release. Upubliserte utkastendringer vil gå tapt.',
+    'De eksisterende utkastene av {{draftDocumentsLength}} dokumenter vil bli forkastet slik at utkast samsvarer med den publiserte release-en. Upubliserte utkastendringer vil gå tapt.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Noen dokumenter har valideringsfeil',
   /** Label for when documents are being validated */

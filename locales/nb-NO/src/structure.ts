@@ -474,7 +474,7 @@ export default removeUndefinedLocaleResources({
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
   'document-target-badges.not-in-target.tooltip':
-    'Dokumentet finnes ikke i det valgte perspective ennå.',
+    'Dokumentet finnes ikke i det valgte perspektivet ennå.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Dette skjemaet er skjult',
