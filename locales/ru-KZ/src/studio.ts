@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Ошибка при вставке ресурса. Смотрите консоль для получения дополнительной информации.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Не удалось загрузить ресурсы',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Загрузить больше',
   /** Text shown when selecting a file but there's no files to select from
@@ -222,13 +224,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Перейти к предыдущему месяцу',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Перейти к предыдущему году',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Сегодня',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Перейти к сегодняшнему дню',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Завтра',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Вчера',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Включить время',
@@ -319,7 +317,6 @@ export default removeUndefinedLocaleResources({
     'Проверьте консоль разработчика для получения дополнительной информации',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Отображение изменений в этом поле вызвало ошибку',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Мы не можем загрузить изменения для этого документа.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Что-то пошло не так',
@@ -360,7 +357,6 @@ export default removeUndefinedLocaleResources({
     'Отредактируйте документ или выберите более старую версию во временной шкале, чтобы увидеть список изменений в этой панели.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Изменений нет',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Невозможно выбрать это событие',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Добавлена аннотация',
@@ -435,6 +431,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Обнаружены проблемы конфигурации',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Сортировать по {{title}}',
 
@@ -470,6 +469,81 @@ export default removeUndefinedLocaleResources({
   /** Label for divergence in a single node */
   'divergence.unresolved-divergence_one': '{{versionName}} нұсқасындағы шешілмеген өзгеріс',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Отмена',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Насколько легко или сложно пользоваться новой версией инвентаря?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Фильтр {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'просмотр',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Все пользователи (по умолчанию)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Создать вариант',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Создать вариант для {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Как черновик',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'В релиз',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Или просмотреть существующие варианты',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Отмена',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 документ',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Недоступный dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} в другом dataset',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Скопировать ID в буфер обмена',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID документа',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Не удалось скопировать ID документа',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID проекта',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Удалить (1)',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'При попытке удалить этот документ произошла ошибка. Обычно это означает, что на него ссылаются другие документы.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 другая ссылка не отображается',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Мы не можем отобразить метаданные для этих ссылок из-за отсутствия токена доступа для связанных datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title':
+    'Предварительный просмотр недоступен',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 документ ссылается на «<DocumentTitle/>»',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Возможно, вы не сможете удалить «<DocumentTitle/>», так как на него ссылаются следующие документы:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Удалить {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'вариант',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'версия',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Создано {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -492,6 +566,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Сохранение занимает больше времени, чем ожидалось',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Документ открыт с пустым значением. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Не удалось определить начальное значение',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Тип документа "{{type}}" не найден',
 
@@ -1047,6 +1129,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Обычный',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Цитата',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Добавить столбец в конец',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Добавить строку в конец',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Маркер столбца',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Удалить столбец',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Удалить строку',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Удалить таблицу',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Строка заголовка',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Вставить здесь',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Параметры таблицы',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Маркер строки',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Выбрать таблицу',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Очистить',
   /** Label for action to copy the current item (used within arrays) */
@@ -1252,6 +1356,14 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Недостаточно прав',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Ваша сессия больше не действительна. Пожалуйста, войдите снова.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired':
+    'Срок действия вашей сессии истёк. Пожалуйста, войдите снова.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Вы вышли из системы',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Неожиданная ошибка: {{error}}',
 
@@ -1317,7 +1429,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Изображение в процессе загрузки',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'только что',
 
   /** Action message to add document to new release */
@@ -1374,6 +1485,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Просмотр запланированных черновиков',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Запланировано к публикации на {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} нұсқа',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} версия',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Черновик',
@@ -1396,6 +1510,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Нет правок',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Не опубликовано',
+  'release.chip.tooltip.other-variants_one': 'Бір нұсқа',
   'release.chip.tooltip.other-versions_one': 'Одна дополнительная версия вне релизов',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Опубликовано {{date}}',
@@ -1732,27 +1847,21 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>имеет</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-equal.name': 'количество равно',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>имеет ></Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-gt.name': 'количество больше',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>имеет ≥</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-gte.name': 'количество больше или равно',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>имеет <</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-lt.name': 'количество меньше',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>имеет ≤</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-lte.name': 'количество меньше или равно',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>не имеет</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-not-equal.name': 'количество не равно',
@@ -1763,35 +1872,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>имеет от</Operator> <Value>{{from}} → {{to}} элементов</Value>',
   'search.operator.array-count-range.name': 'количество между',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'включает',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>не включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'не включает',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'включает',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>не включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'не включает',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'является',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'не является',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'является',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'не является',
@@ -1804,163 +1905,123 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'является',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>после</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'после',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>до</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'до',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'является',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>в последние</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'последние',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'не является',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description':
     '<Field/> <Operator>находится между</Operator> <Value/>',
   'search.operator.date-range.name': 'между',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>после</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'после',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>до</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'до',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'является',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>в последние</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'последние',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'не является',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>находится между</Operator> <Value/>',
   'search.operator.date-time-range.name': 'между',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>является</Operator> <Value>не пустым</Value>',
   'search.operator.defined.name': 'не пустое',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>является</Operator> <Value>пустым</Value>',
   'search.operator.not-defined.name': 'пустое',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'является',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'больше чем',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'больше или равно',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'меньше чем',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'меньше или равно',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'не является',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>находится между</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'находится между',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'содержит',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'является',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>не содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'не содержит',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'не является',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'файл',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'изображение',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'документ',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'является',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'не является',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'содержит',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'является',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>не содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'не содержит',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'не является',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'содержит',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'является',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'является',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'не является',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>не содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'не содержит',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'не является',
@@ -1986,30 +2047,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Статус конфигурации',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Поиск города или часового пояса',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Выбрать местный часовой пояс',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Выбранный часовой пояс изменит способ отображения дат в выпусках контента.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Выбранный часовой пояс изменит способ отображения дат только для этого ввода в этом документе.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Выбранный часовой пояс изменит способ отображения дат в расписаниях.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'местное время',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Часовой пояс',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Отображение выпусков в {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Отображение <em>{{title}}</em> в {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Отображение расписаний в {{alternativeName}} GMT{{offset}}',
 
@@ -2047,7 +2098,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Ревизии документа',
   /** Label for loading history */
   'timeline.loading-history': 'Загрузка истории…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Предыдущие события отсутствуют',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Создано',
