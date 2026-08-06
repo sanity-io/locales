@@ -36,14 +36,13 @@
       "semanticCommitType": "chore",
       "schedule": ["before 3am on Monday"],
       "automerge": false,
-      "matchPackageNames": [
-        "*",
-        "!@sanity/icons",
-        "!@sanity/presentation",
-        "!@sanity/ui",
-        "!@sanity/vision",
-        "!groq",
-        "!sanity"
+      "excludePackageNames": [
+        "@sanity/icons",
+        "@sanity/presentation",
+        "@sanity/ui",
+        "@sanity/vision",
+        "groq",
+        "sanity"
       ]
     },
     {

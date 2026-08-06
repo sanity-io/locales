@@ -1,4 +1,4 @@
-import {TrashIcon} from '@sanity/icons'
+import {TrashIcon} from '@sanity/icons/Trash'
 import type {ListBuilder, StructureBuilder} from 'sanity/structure'
 
 import {localizationTest} from '../schemas/localizationTest'

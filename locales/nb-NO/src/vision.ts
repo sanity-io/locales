@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Utfør',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': 'Lagre personlig kopi',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': 'Lagre som personlig',
   /** Label for saving a query */
   'action.save-query': 'Lagre spørring',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': 'Lagre som delt',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': 'Avslutt deling',
   /** Label for updating a query */
   'action.update': 'Oppdater',
 
   /** Label for actions user can take */
   'label.actions': 'Handlinger',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': 'Alle',
   /** Label for saved queries that have been edited */
   'label.edited': 'Redigert',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'Del',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': 'Delt',
   /** Label for saved query type "team" */
   'label.team': 'Team',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': 'Uten tittel',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametere er ikke gyldig JSON',
@@ -95,15 +95,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'Feil ved lagring av spørring',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': 'Personlig kopi lagret',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning':
+    'Delte spørringer lagres som dokumenter i dataset og teller mot dokumentkvoten din.',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': 'Delt spørring lagret',
   /** Save success label */
   'save-query.success': 'Spørringen er lagret',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': 'Spørring flyttet til personlig',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versjon',

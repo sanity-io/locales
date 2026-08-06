@@ -17,7 +17,7 @@ export default removeUndefinedLocaleResources({
   'feedback.consent.disclaimer':
     'Við myndum gjarnan vilja fræðast meira. Með því að velja já deilirðu nafni þínu og netfangi með Sanity teyminu.',
   /** Label for the contact consent toggle */
-  'feedback.consent.label': 'Megum við hafa samband við þig vegna þessara endurgjafa?',
+  'feedback.consent.label': 'Megum við hafa samband við þig vegna þessara athugasemda?',
   /** Consent toggle: no */
   'feedback.consent.no': 'Nei',
   /** Consent toggle: yes */

@@ -173,7 +173,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Denne referansen har blitt fjernet siden du åpnet den.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Legg til i bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Legg til i utgivelsen',
   /** The text that appears for the action button to add the current document to the global release */
@@ -479,7 +479,7 @@ export default removeUndefinedLocaleResources({
     'Ingen innkommende referanser definert for denne typen, se dokumentasjonen for mer informasjon.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Ingen innkommende referanser funnet.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Ingen referanser av denne typen funnet.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -500,10 +500,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompakt visning',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaljert visning',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Standardvisning',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Bruker allerede standardvisningen',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sorter etter Opprettet',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sorter etter Sist redigert',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Standard sortering',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Bruker allerede standard sorteringsrekkefølge',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lær hvordan du legger til en dokumenttype →',
@@ -571,8 +580,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Søk i liste',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Søk i liste',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Endre rekkefølge på søkeresultater',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sortert etter {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevans',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sortert etter relevans',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Dette sorteringsalternativet bruker felt som ikke er en del av denne dokumenttypen',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detaljer',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -604,7 +622,7 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentet ble publisert',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'Versjonen ble publisert',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ble gjenopprettet',

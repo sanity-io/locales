@@ -11,3 +11,7 @@ minimumReleaseAgeExclude:
   - 'groq'
   - 'groq-js'
   - 'sanity'
+  # Renovate security update: js-yaml@4.3.0
+  - js-yaml@4.3.0
+  # Renovate dependency update: @sanity/vision@6.9.0 -> @sanity/client@get-it@8.8.3
+  - get-it@8.8.3

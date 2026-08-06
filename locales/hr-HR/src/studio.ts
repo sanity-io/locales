@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Greška pri umetanju resursa. Za više informacija pogledajte konzolu.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Učitavanje resursa nije uspjelo',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Učitaj više',
   /** Text shown when selecting a file but there's no files to select from
@@ -229,13 +231,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Idi na prethodni mjesec',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Idi na prethodnu godinu',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Danas',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Idi na današnji dan',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Sutra',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Jučer',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Uključi vrijeme',
@@ -330,7 +328,6 @@ export default removeUndefinedLocaleResources({
     'Provjerite konzolu za razvojne programere za više informacija',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Prikazivanje promjena na ovom polju uzrokovalo je grešku',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Nismo u mogućnosti učitati promjene za ovaj dokument.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Došlo je do pogreške',
@@ -371,7 +368,6 @@ export default removeUndefinedLocaleResources({
     'Uredite dokument ili odaberite stariju verziju na vremenskoj traci kako bi se popis promjena pojavio na ovoj ploči.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nema promjena',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Nije moguće odabrati ovaj događaj',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Dodana anotacija',
@@ -446,6 +442,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Pronađeni problemi s konfiguracijom',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sortiraj po {{title}}',
 
@@ -484,6 +483,94 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} neriješenih promjena u verziji {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Odustani',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Koliko je lako ili teško koristiti novi inventar verzija?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtriraj {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'pregledava se',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Svi korisnici (Zadano)',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Odustani',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumenata',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Dataseti: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Nedostupan dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Nedostupni dataseti',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} u drugom datasetu',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} u {{count}} dataseta',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopiraj ID u međuspremnik',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID dokumenta',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Kopiranje ID-a dokumenta nije uspjelo',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID projekta',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Izbriši (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Izbriši ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Došlo je do pogreške prilikom pokušaja brisanja ovog dokumenta. To obično znači da postoje drugi dokumenti koji se na njega referiraju.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 druga referenca nije prikazana',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} druge reference nisu prikazane',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Ne možemo prikazati metapodatke za ove reference zbog nedostajućeg pristupnog tokena za povezane dataset-ove.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Pregled nije dostupan',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument se referira na „<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumenata se referira na „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Možda nećete moći izbrisati „<DocumentTitle/>" jer se sljedeći dokumenti referiraju na njega:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Izbriši {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Izbriši {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'varijantu',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varijante',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'verziju',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'verzije',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Stvoreno {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -506,6 +593,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Spremanje traje dulje nego očekivano',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokument je otvoren s praznom vrijednošću. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Nije moguće razriješiti početnu vrijednost',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tip dokumenta "{{type}}" nije pronađen',
 
@@ -1080,6 +1175,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normalno',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Dodaj stupac na kraj',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Dodaj redak na kraj',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Ručica stupca',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Izbriši stupac',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Izbriši redak',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Izbriši tablicu',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Zaglavni redak',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Umetni ovdje',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Opcije tablice',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Ručica retka',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Odaberi tablicu',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Očisti',
   /** Label for action to copy the current item (used within arrays) */
@@ -1284,6 +1401,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nedovoljne dozvole',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Vaša sesija više nije važeća. Molimo prijavite se ponovo.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Vaša sesija je istekla. Molimo prijavite se ponovo.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Odjavljeni ste',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Neočekivana greška: {{error}}',
 
@@ -1350,7 +1474,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Slika se trenutno učitava',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'upravo sada',
 
   /** Action message to add document to new release */
@@ -1409,7 +1532,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Pogledaj zakazane skice',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Zakazano za objavljivanje na {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} varijanta',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varijante',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} verzija',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} verzije',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Nacrt',
@@ -1432,6 +1561,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Nema uređivanja',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nije objavljeno',
+  'release.chip.tooltip.other-variants_one': 'Jedna varijanta',
+  'release.chip.tooltip.other-variants_other': '{{count}} varijante',
   'release.chip.tooltip.other-versions_one': 'Jedna dodatna verzija izvan izdanja',
   'release.chip.tooltip.other-versions_other': '{{count}} dodatnih verzija izvan izdanja',
   /** Label for tooltip in chip with the published date */
@@ -1770,37 +1901,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>ima</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>ima</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-equal.name': 'količina je',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>ima ></Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>ima ></Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-gt.name': 'količina veća od',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>ima ≥</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>ima ≥</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-gte.name': 'količina veća ili jednaka',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>ima <</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>ima <</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-lt.name': 'količina manja od',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>ima ≤</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>ima ≤</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-lte.name': 'količina manja ili jednaka',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nema</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1813,35 +1938,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>ima između</Operator> <Value>{{from}} → {{to}} stavki</Value>',
   'search.operator.array-count-range.name': 'količina je između',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'uključuje',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>ne uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'ne uključuje',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'uključuje',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>ne uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'ne uključuje',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'je',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'nije',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'je',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'nije',
@@ -1854,161 +1971,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'je',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>je nakon</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'nakon',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>je prije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'prije',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'je',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>je u zadnjem</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'zadnji',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'nije',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>je između</Operator> <Value/>',
   'search.operator.date-range.name': 'je između',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>je nakon</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'poslije',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>je prije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'prije',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'je',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>je u zadnjih</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'zadnji',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'nije',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>je između</Operator> <Value/>',
   'search.operator.date-time-range.name': 'je između',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>je</Operator> <Value>nije prazno</Value>',
   'search.operator.defined.name': 'nije prazno',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>je</Operator> <Value>prazno</Value>',
   'search.operator.not-defined.name': 'prazno',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'je',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'veće od',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'veće ili jednako',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'manje od',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'manje ili jednako',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'nije',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>je između</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'je između',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'sadrži',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'je',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'ne sadrži',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'nije',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'datoteka',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'slika',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'je',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'nije',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'sadrži',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'je',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'ne sadrži',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'nije',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'sadrži',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'je',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'je',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'nije',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'ne sadrži',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'nije',
@@ -2034,30 +2111,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status konfiguracije',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Pretražite grad ili vremensku zonu',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Odaberite lokalnu vremensku zonu',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Odabrana vremenska zona će promijeniti kako su datumi prikazani u izdanjima sadržaja.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Odabrana vremenska zona će promijeniti kako su datumi prikazani samo za ovaj unos u ovom dokumentu.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Odabrana vremenska zona će promijeniti kako su datumi prikazani u rasporedima.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'lokalno vrijeme',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Vremenska zona',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Prikazivanje izdanja u {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Prikazivanje <em>{{title}}</em> u {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Prikazivanje rasporeda u {{alternativeName}} GMT{{offset}}',
 
@@ -2095,7 +2162,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revizije dokumenta',
   /** Label for loading history */
   'timeline.loading-history': 'Učitavanje povijesti…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Nema prethodnih događaja',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Stvoreno',

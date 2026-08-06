@@ -1,4 +1,4 @@
-import {EarthGlobeIcon} from '@sanity/icons'
+import {EarthGlobeIcon} from '@sanity/icons/EarthGlobe'
 import {defineField, defineType} from 'sanity'
 
 const schemaTypeName = 'localesStudioLocalizationTest'

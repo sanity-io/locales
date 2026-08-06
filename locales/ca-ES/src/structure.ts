@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Aquest document no es pot eliminar ja que existeix dins de les publicacions programades',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'La versió o variant seleccionada no conté aquest document',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Elimina',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,6 +39,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Aquest document no està publicat',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operació no preparada',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'La versió o variant seleccionada no conté aquest document',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Descarta els canvis',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -43,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Aquest document encara no existeix, així que no hi ha res per duplicar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'La versió o variant seleccionada no conté aquest document',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplica',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -51,8 +60,14 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Ja publicat',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publicat {{timeSincePublished}}',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable':
+    'Aquesta versió es publica com a part de la seva versió de llançament',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operació no preparada',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'La versió o variant seleccionada no conté aquest document',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publica',
   /** Label for the "Publish" document action */
@@ -95,6 +110,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Aquest document no està publicat',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operació no preparada',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'La versió o variant seleccionada no conté aquest document',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Despublicar',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -173,7 +191,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     "Aquesta referència s'ha eliminat des que l'has oberta.",
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Afegeix al bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Afegeix a la publicació',
   /** The text that appears for the action button to add the current document to the global release */
@@ -223,6 +241,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Mostrant la versió <strong>publicada</strong> actual:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Crea una variant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    "No s'ha pogut trobar la variant seleccionada <VariantName>{{name}}</VariantName>.",
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    "S'ha produït un error en afegir el document a la variant: {{message}}",
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Error en afegir el document a la variant',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'No existeix cap document de variant <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> per a <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    "Espereu mentre s'afegeix el document a la variant. No hauria de trigar més d'uns quants segons.",
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Afegint el document a la variant…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nou {{schemaType}}',
@@ -281,9 +317,7 @@ export default removeUndefinedLocaleResources({
     "Aquesta vista mostra els canvis que han ocorregut en una versió específica d'aquest document. Seleccioneu una versió diferent per veure els seus canvis",
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Des de',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Història',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Revisa els canvis',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'A',
@@ -415,6 +449,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': "Tipus d'esquema desconegut: {{schemaType}}",
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'On han anat els botons de versió?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Tanca',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -441,6 +478,21 @@ export default removeUndefinedLocaleResources({
     'Espera mentre el document es sincronitza. Això sol passar just després que el document ha estat publicat, i no hauria de trigar més de uns segons',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sincronitzant document…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Ho continuarem intentant. Mentrestant, els vostres canvis es conserven al navegador.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': "Els vostres canvis no s'estan desant",
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    "L'edició es reprendrà tan aviat com es desin els vostres canvis.",
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Desant els vostres canvis…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    "L'edició està en pausa fins que es desin. Els vostres canvis es conserven al navegador, així que manteniu aquesta pestanya oberta mentre ho continuem intentant.",
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': "Els vostres canvis encara no s'estan desant",
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Afegir a preferits',
@@ -481,7 +533,7 @@ export default removeUndefinedLocaleResources({
     "No s'han definit referències entrants per a aquest tipus, consulta la documentació per a més informació.",
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': "No s'han trobat referències entrants.",
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': "No s'han trobat referències d'aquest tipus.",
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -502,10 +554,20 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Vista compacta',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Vista detallada',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Vista predeterminada',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason':
+    "Ja s'està utilitzant la vista predeterminada",
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Ordenar per Creat',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Ordenar per Última edició',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Ordenació predeterminada',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    "Ja s'està utilitzant l'ordre de classificació predeterminat",
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Aprèn com afegir un tipus de document →',
@@ -575,8 +637,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Cerca a la llista',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Cerca a la llista',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': "Canvia l'ordre dels resultats de cerca",
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Ordenat per {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Rellevància',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Ordenat per rellevància',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    "Aquesta opció d'ordenació utilitza camps que no formen part d'aquest tipus de document",
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detalls',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -611,7 +682,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_publish':
     "<Strong>{{title}}</Strong> s'ha publicat",
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': "La versió s'ha publicat",
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ha estat restaurat',
@@ -636,6 +707,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     "Aquest document no existeix, i no s'ha especificat cap tipus d'esquema per a ell.",
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': "S'està carregant el document…",
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Carregant…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
