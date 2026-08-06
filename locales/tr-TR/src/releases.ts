@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Özet',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Bir belge sürümü eklendi',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '<strong>{{releaseTitle}}</strong> yayını arşivlendi',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '<strong>{{releaseTitle}}</strong> yayını oluşturuldu <ScheduleTarget>hedef: </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Bir belge sürümü silindi',
   'activity.event.edit': 'Yayın zamanı <ScheduleTarget></ScheduleTarget> olarak ayarlandı',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'En kısa sürede',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Belirsiz',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '<strong>{{releaseTitle}}</strong> yayını yayımlandı',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Zamanlandı olarak işaretlendi',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '<strong>{{releaseTitle}}</strong> yayını arşivden çıkarıldı',
@@ -332,6 +326,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     "Release'i ve tüm belge sürümlerini yayımlamak istediğinizden emin misiniz?",
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Mevcut taslakları güncelle',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Taslakların yayımlanan release ile eşleşmesi için {{draftDocumentsLength}} belgenin mevcut taslağı silinecek. Yayımlanmamış taslak değişiklikleri kaybolacak.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Taslakların yayımlanan release ile eşleşmesi için {{draftDocumentsLength}} belgenin mevcut taslakları silinecek. Yayımlanmamış taslak değişiklikleri kaybolacak.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Bazı belgelerde doğrulama hataları var',
   /** Label for when documents are being validated */
@@ -509,6 +511,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "'{{title}}' release'i başarıyla geri alındı",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' yayımlanamadı: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Release yayımlandı, ancak mevcut taslaklar güncellenemedi: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "'{{title}}' için geri alma release'i başarıyla oluşturuldu. <Link/>",
