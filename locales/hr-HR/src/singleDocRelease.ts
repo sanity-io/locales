@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Nije moguće zakazati skicu zbog grešaka u provjeri valjanosti trenutne skice.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Zakazivanje još nije dostupno za varijante.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Saznajte više o zakazivanju',
