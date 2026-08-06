@@ -29,7 +29,7 @@ jobs:
       - run: pnpm install --ignore-scripts
       - run: pnpm reconcile
       - run: pnpm format
-      - run: git restore .github/workflows pnpm-lock.yaml
+      - run: git restore .cursor .github/workflows pnpm-lock.yaml
       - uses: actions/create-github-app-token@v3
         id: generate-token
         with:
