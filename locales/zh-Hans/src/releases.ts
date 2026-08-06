@@ -61,28 +61,24 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': '摘要',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': '已添加文档版本',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '已归档 <strong>{{releaseTitle}}</strong> 发布',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '已创建 <strong>{{releaseTitle}}</strong> 发布 <ScheduleTarget>目标时间为 </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': '已丢弃文档版本',
   'activity.event.edit': '将发布时间设置为 <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': '尽快',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': '未决定',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '已发布 <strong>{{releaseTitle}}</strong> 发布',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': '已标记为已计划',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '已取消归档 <strong>{{releaseTitle}}</strong> 发布',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': '已标记为未计划',
+  /** Tooltip/label for the button that closes the activity overlay panel */
+  'activity.panel.close': undefined, // 'Close activity'
   /** The loading text for when releases are loading */
   'activity.panel.error': '获取发布活动时发生错误',
   /** The loading text for when releases are loading */
@@ -149,6 +145,22 @@ export default removeUndefinedLocaleResources({
 
   /** Activity inspector button text */
   'dashboard.details.activity': '活动',
+  /** Label for the "created" metadata in the release detail header zone. */
+  'dashboard.details.metadata.created': undefined, // 'Created'
+  /** Label for the document-count metadata in the release detail header zone. */
+  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  /** Label for the schedule/type metadata in the release detail header zone. */
+  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  /** Label for the validation status metadata in the release detail header zone. */
+  'dashboard.details.metadata.status': undefined, // 'Status'
+  /** Status badge value when the release has no documents to validate. */
+  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  /** Status badge value when one or more documents have validation errors. */
+  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  /** Status badge value when every document in the release is valid. */
+  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  /** Status badge value while document validation is still running. */
+  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': '将版本固定到 studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -191,6 +203,8 @@ export default removeUndefinedLocaleResources({
 
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} 个验证错误',
+  /** Tooltip for the validation status when a document has no errors (the "ready" state) */
+  'document-validation.valid': undefined, // 'No validation errors'
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': '是，复制 release',
@@ -259,6 +273,9 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the button name for the release tool */
   'overview.action.documentation': '文档',
+  /** Label for the back button on a release detail page (returns to the releases list). The
+   * leading arrow already conveys "back", so the label names the destination only. */
+  'overview.back-to-all-releases': undefined, // 'All releases'
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': '查看日历',
   /** Description for the release tool */
@@ -305,6 +322,10 @@ export default removeUndefinedLocaleResources({
     '"<strong>{{title}}</strong>"版本及其 {{releaseDocumentsLength}} 个文档将被发布。',
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title': '您确定要发布该版本及所有文档版本吗？',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '部分文档存在验证错误',
   /** Label for when documents are being validated */
@@ -422,8 +443,12 @@ export default removeUndefinedLocaleResources({
   'table-header.documents': '文档',
   /** Header for the document table in the release tool - edited */
   'table-header.edited': '已编辑',
+  /** Header for the document table - last editor (person) column */
+  'table-header.edited-by': undefined, // 'Edited by'
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': '预定用于',
+  /** Header for the document table - last edited (relative time) column */
+  'table-header.last-edited': undefined, // 'Last edited'
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': '已发布',
   /** Header for the document table in the release tool - Published */
@@ -438,6 +463,8 @@ export default removeUndefinedLocaleResources({
   'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
   'table-header.type': '类型',
+  /** Header for the document table in the release tool - variant (which variant a document targets) */
+  'table-header.variant': undefined, // 'Variant'
   /** Header for the document table in the release tool - when */
   'table-header.when': '时间',
 
@@ -472,6 +499,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "'{{title}}' 版本已成功还原",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "发布 '<strong>{{title}}</strong>' 失败：{{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "'{{title}}' 的还原版本已成功创建。<Link/>",
   /** Link text for toast link to the generated revert release */

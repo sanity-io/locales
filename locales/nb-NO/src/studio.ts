@@ -126,6 +126,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'En feil oppstod under innsetting av mediefil. Se konsollen for mer informasjon.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Last inn flere',
   /** Text shown when selecting a file but there's no files to select from
@@ -228,13 +230,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Gå til forrige måned',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Gå til forrige år',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'I dag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Gå til i dag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'I morgen',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'I går',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Med klokkeslett',
@@ -332,7 +330,6 @@ export default removeUndefinedLocaleResources({
     'Sjekk konsollen i utviklerverktøyet for mer informasjon',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'En feil oppsto under visning av endringer',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Vi klarer ikke å laste endringene for dette dokumentet.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Noe gikk galt',
@@ -373,7 +370,6 @@ export default removeUndefinedLocaleResources({
     'Rediger dokumentet eller velg en eldre versjon i tidslinjen for å se en liste over endringer i dette panelet.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Det er ingen endringer',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Det er ikke mulig å velge denne hendelsen',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'La til berikelse',
@@ -447,6 +443,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Fant konfigurasjonsproblemer',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': undefined, // 'Content Agent'
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sorter etter {{title}}',
 
@@ -486,6 +485,8 @@ export default removeUndefinedLocaleResources({
     '{{count}} uløste endringer i {{versionName}}-versjonen',
 
   /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': undefined, // 'Cancel'
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Hvor enkelt eller vanskelig er den nye versjonslageret å bruke?',
@@ -499,6 +500,18 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.viewing-item-label': 'viser',
 
   /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': undefined, // 'All users (Default)'
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': undefined, // 'Create variant'
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'Avbryt',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -590,6 +603,13 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Lagring tar lengre tid enn forventet',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Dokumenttypen "{{type}}" ble ikke funnet',
 
@@ -1163,6 +1183,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Sitat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': undefined, // 'Select table'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Tøm',
   /** Label for action to copy the current item (used within arrays) */
@@ -1366,6 +1408,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Utilstrekkelig tilgang',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Uforventet feil: {{error}}',
 
@@ -1431,7 +1480,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Bildet blir lastet opp',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'akkurat nå',
 
   /** Action message to add document to new release */
@@ -1454,6 +1502,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version': 'Forkast versjon',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Klarte ikke å forkaste versjon',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Rediger tidsplan',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1490,7 +1540,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Vis planlagte utkast',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Planlagt for publisering den {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': undefined, // '+{{count}} variant'
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} versjon',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} versjoner',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Utkast',
@@ -1513,6 +1569,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Ingen redigeringer',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Ikke publisert',
+  'release.chip.tooltip.other-variants_one': undefined, // 'One variant'
+  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
   'release.chip.tooltip.other-versions_one': 'Én ekstra versjon utenfor utgivelser',
   'release.chip.tooltip.other-versions_other': '{{count}} ekstra versjoner utenfor utgivelser',
   /** Label for tooltip in chip with the published date */
@@ -1553,6 +1611,14 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit-schedule.confirm': 'Oppdater planlegging',
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Endre planlegging',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Er du sikker på at du vil publisere dette planlagte utkastet umiddelbart?',
@@ -1607,6 +1673,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt slettet.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
@@ -1862,37 +1930,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>har</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>har</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-equal.name': 'antall er',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-gt.name': 'antall større enn',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-gte.name': 'antall større enn eller lik',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-lt.name': 'antall mindre enn',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-lte.name': 'antall mindre enn eller lik',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>antall er ikke</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1905,35 +1967,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>har mellom</Operator> <Value>{{from}} → {{to}} elementer</Value>',
   'search.operator.array-count-range.name': 'antall er mellom',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inneholder',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'inneholder ikke',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inneholder',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'inneholder ikke',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'er',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'er ikke',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'er',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'er ikke',
@@ -1946,160 +2000,120 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'er',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>er etter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'etter',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>er før</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'før',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'er',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>er innenfor siste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'siste',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'er ikke',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>er mellom</Operator> <Value/>',
   'search.operator.date-range.name': 'er mellom',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>er etter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'etter',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>er før</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'før',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'er',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>er innenfor siste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'siste',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'er ikke',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>er mellom</Operator> <Value/>',
   'search.operator.date-time-range.name': 'er mellom',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>er</Operator> <Value>definert</Value>',
   'search.operator.defined.name': 'er definert',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>er</Operator> <Value>ikke definert</Value>',
   'search.operator.not-defined.name': 'ikke definert',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'er',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'større enn',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'større enn eller lik',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'mindre enn',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'mindre enn eller lik',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'er ikke',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>er mellom</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'er mellom',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'inneholder',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'er',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'inneholder ikke',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'er ikke',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fil',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'bilde',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'er',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'er ikke',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'inneholder',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'er',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'inneholder ikke',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'er ikke',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'inneholder',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'er',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'er',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'er ikke',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'inneholder ikke',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'er ikke',
@@ -2125,30 +2139,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Søk etter en by eller tidssone',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Velg lokal tidssone',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Den valgte tidssonen vil endre hvordan datoer representeres i innholdslanseringer.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Den valgte tidssonen vil endre hvordan datoer representeres kun for dette inndatafeltet i dette dokumentet.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Den valgte tidssonen vil endre hvordan datoer representeres i planlagte publiseringer.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'lokal tid',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Tidssone',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Viser utgivelser i {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Viser <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Viser planlagte publiseringer i {{alternativeName}} GMT{{offset}}',
 
@@ -2185,7 +2189,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentrevisjoner',
   /** Label for loading history */
   'timeline.loading-history': 'Laster historikk…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Ingen tidligere hendelser',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Opprettet',

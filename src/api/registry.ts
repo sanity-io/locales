@@ -24,17 +24,15 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
 
   return locales
     .sort((a, b) => a.id.localeCompare(b.id))
-    .map(
-      (locale): Locale => ({
-        englishName: displayName.of(locale.id) || locale.name,
-        ...locale,
-        exportName: getExportName(locale),
-        packageName: getPackageName(locale),
-        path: joinPath(localesPath, locale.id),
-        cardinalSuffixes: getPluralSuffixes(locale, 'cardinal'),
-        ordinalSuffixes: getPluralSuffixes(locale, 'ordinal'),
-      }),
-    )
+    .map((locale): Locale => ({
+      englishName: displayName.of(locale.id) || locale.name,
+      ...locale,
+      exportName: getExportName(locale),
+      packageName: getPackageName(locale),
+      path: joinPath(localesPath, locale.id),
+      cardinalSuffixes: getPluralSuffixes(locale, 'cardinal'),
+      ordinalSuffixes: getPluralSuffixes(locale, 'ordinal'),
+    }))
 })
 
 /**

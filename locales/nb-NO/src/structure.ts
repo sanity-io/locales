@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Dette dokumentet kan ikke slettes ettersom det finnes i planlagte utgivelser',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Slett',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,6 +38,8 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Dette dokumentet er ikke publisert',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operasjonen er ikke klar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Forkast endringer',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -43,6 +47,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Dette dokumentet er tomt og kan ikke dupliseres',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Dupliser',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -51,8 +57,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Allerede publisert',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publisert {{timeSincePublished}}',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': undefined, // 'This version is published as part of its release'
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operasjonen er ikke klar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publiser',
   /** Label for the "Publish" document action */
@@ -94,6 +104,8 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Dette dokumentet er ikke publisert',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operasjonen er ikke klar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Avpubliser',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -222,6 +234,20 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Viser den nåværende <strong>publiserte</strong> versjonen:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': undefined, // 'Create variant'
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found': undefined, // 'The selected variant <VariantName>{{name}}</VariantName> could not be found.'
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description': undefined, // 'An error occurred when adding document to the variant: {{message}}'
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': undefined, // 'Error adding document to variant'
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant': undefined, // 'No <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variant document exists for <VariantBadge>{{variantTitle}}</VariantBadge>.'
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description': undefined, // 'Please hold tight while the document is added to the variant. It should not take longer than a few seconds.'
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': undefined, // 'Adding document to variant…'
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -280,9 +306,7 @@ export default removeUndefinedLocaleResources({
     'Denne visningen viser endringene som har skjedd i en spesifikk versjon av dette dokumentet. Velg en annen versjon for å se dens endringer',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Fra',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Historikk',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Gjennomgå endringer',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Til',
@@ -413,12 +437,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Ukjent skjematype: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': undefined, // 'Where did the version buttons go?'
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Lukk',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspiserer <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Ingen verdi',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': undefined, // 'Something went wrong'
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspiser',
   /** the placeholder text for the search input on the inspect dialog */
@@ -427,6 +462,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Behandlet',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Rå JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Dette skjemaet er skjult',
@@ -439,6 +477,18 @@ export default removeUndefinedLocaleResources({
     'Vennligst vent mens dokumentet synkroniseres. Dette skjer vanligvis rett etter at dokumentet har blitt publisert, og det bør ikke ta mer enn noen få sekunder',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description': undefined, // 'We\'ll keep trying. Your changes are kept in your browser in the meantime.'
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': undefined, // 'Your changes aren\'t saving'
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description': undefined, // 'Editing resumes as soon as your changes are saved.'
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': undefined, // 'Saving your changes…'
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description': undefined, // 'Editing is paused until they save. Your changes are kept in your browser, so keep this tab open while we keep trying.'
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': undefined, // 'Your changes still aren\'t saving'
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Legg til i favoritter',
@@ -647,6 +697,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Dette dokumentet eksisterer ikke, og ingen skjematype ble spesifisert for det.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': undefined, // 'Loading document…'
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Laster…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

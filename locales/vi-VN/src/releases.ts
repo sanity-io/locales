@@ -62,28 +62,24 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Tóm tắt',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Đã thêm một phiên bản tài liệu',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Đã lưu trữ bản phát hành <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Đã tạo bản phát hành <strong>{{releaseTitle}}</strong> <ScheduleTarget>nhắm mục tiêu </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Đã loại bỏ một phiên bản tài liệu',
   'activity.event.edit': 'Đặt thời gian phát hành thành <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Càng sớm càng tốt',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Chưa quyết định',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Đã xuất bản bản phát hành <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Đã đánh dấu là đã lên lịch',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Đã hủy lưu trữ bản phát hành <strong>{{releaseTitle}}</strong>',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Đã đánh dấu là chưa lên lịch',
+  /** Tooltip/label for the button that closes the activity overlay panel */
+  'activity.panel.close': undefined, // 'Close activity'
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Đã xảy ra lỗi khi lấy hoạt động phát hành',
   /** The loading text for when releases are loading */
@@ -156,6 +152,22 @@ export default removeUndefinedLocaleResources({
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Hoạt động',
+  /** Label for the "created" metadata in the release detail header zone. */
+  'dashboard.details.metadata.created': undefined, // 'Created'
+  /** Label for the document-count metadata in the release detail header zone. */
+  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  /** Label for the schedule/type metadata in the release detail header zone. */
+  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  /** Label for the validation status metadata in the release detail header zone. */
+  'dashboard.details.metadata.status': undefined, // 'Status'
+  /** Status badge value when the release has no documents to validate. */
+  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  /** Status badge value when one or more documents have validation errors. */
+  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  /** Status badge value when every document in the release is valid. */
+  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  /** Status badge value while document validation is still running. */
+  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Ghim bản phát hành vào studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -199,6 +211,8 @@ export default removeUndefinedLocaleResources({
 
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} lỗi xác thực',
+  /** Tooltip for the validation status when a document has no errors (the "ready" state) */
+  'document-validation.valid': undefined, // 'No validation errors'
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Có, nhân bản release',
@@ -268,6 +282,9 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the button name for the release tool */
   'overview.action.documentation': 'Tài liệu',
+  /** Label for the back button on a release detail page (returns to the releases list). The
+   * leading arrow already conveys "back", so the label names the destination only. */
+  'overview.back-to-all-releases': undefined, // 'All releases'
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Xem lịch',
   /** Description for the release tool */
@@ -317,6 +334,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Bạn có chắc chắn muốn xuất bản bản phát hành và tất cả các phiên bản tài liệu không?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Một số tài liệu có lỗi xác thực',
   /** Label for when documents are being validated */
@@ -442,8 +463,12 @@ export default removeUndefinedLocaleResources({
   'table-header.documents': 'Tài liệu',
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Đã chỉnh sửa',
+  /** Header for the document table - last editor (person) column */
+  'table-header.edited-by': undefined, // 'Edited by'
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Dành cho',
+  /** Header for the document table - last edited (relative time) column */
+  'table-header.last-edited': undefined, // 'Last edited'
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Đã xuất bản',
   /** Header for the document table in the release tool - Published */
@@ -458,6 +483,8 @@ export default removeUndefinedLocaleResources({
   'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Loại',
+  /** Header for the document table in the release tool - variant (which variant a document targets) */
+  'table-header.variant': undefined, // 'Variant'
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Khi nào',
 
@@ -492,6 +519,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Bản phát hành '{{title}}' đã được hoàn nguyên thành công",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Không thể xuất bản '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Bản phát hành hoàn nguyên cho '{{title}}' đã được tạo thành công. <Link/>",

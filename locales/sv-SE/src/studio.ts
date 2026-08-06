@@ -1505,6 +1505,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version': 'Kassera version',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Misslyckades med att kassera version',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Redigera schema',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1615,6 +1617,14 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit-schedule.confirm': 'Uppdatera schemaläggning',
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Ändra schemaläggning',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Är du säker på att du vill publicera detta schemalagda utkast omedelbart?',
@@ -1671,6 +1681,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Det schemalagda utkastdokumentet <strong>{{title}}</strong> har tagits bort.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */

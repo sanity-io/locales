@@ -62,28 +62,24 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'สรุป',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'เพิ่มเวอร์ชันเอกสารแล้ว',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'เก็บถาวร release <strong>{{releaseTitle}}</strong> แล้ว',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'สร้าง release <strong>{{releaseTitle}}</strong> แล้ว <ScheduleTarget>โดยกำหนดเป้าหมาย </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'ยกเลิกเวอร์ชันเอกสารแล้ว',
   'activity.event.edit': 'ตั้งเวลา release เป็น <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'โดยเร็วที่สุด',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'ยังไม่ตัดสินใจ',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'เผยแพร่ release <strong>{{releaseTitle}}</strong> แล้ว',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'ทำเครื่องหมายว่ากำหนดเวลาแล้ว',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'ยกเลิกการเก็บถาวร release <strong>{{releaseTitle}}</strong> แล้ว',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'ทำเครื่องหมายว่ายกเลิกการกำหนดเวลาแล้ว',
+  /** Tooltip/label for the button that closes the activity overlay panel */
+  'activity.panel.close': undefined, // 'Close activity'
   /** The loading text for when releases are loading */
   'activity.panel.error': 'เกิดข้อผิดพลาดในการดึงข้อมูลกิจกรรมของ release',
   /** The loading text for when releases are loading */
@@ -156,6 +152,22 @@ export default removeUndefinedLocaleResources({
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'กิจกรรม',
+  /** Label for the "created" metadata in the release detail header zone. */
+  'dashboard.details.metadata.created': undefined, // 'Created'
+  /** Label for the document-count metadata in the release detail header zone. */
+  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  /** Label for the schedule/type metadata in the release detail header zone. */
+  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  /** Label for the validation status metadata in the release detail header zone. */
+  'dashboard.details.metadata.status': undefined, // 'Status'
+  /** Status badge value when the release has no documents to validate. */
+  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  /** Status badge value when one or more documents have validation errors. */
+  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  /** Status badge value when every document in the release is valid. */
+  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  /** Status badge value while document validation is still running. */
+  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'ปักหมุด release ไว้ที่ studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -198,6 +210,8 @@ export default removeUndefinedLocaleResources({
 
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': 'ข้อผิดพลาดการตรวจสอบ {{count}} รายการ',
+  /** Tooltip for the validation status when a document has no errors (the "ready" state) */
+  'document-validation.valid': undefined, // 'No validation errors'
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'ใช่ ทำซ้ำ release',
@@ -267,6 +281,9 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the button name for the release tool */
   'overview.action.documentation': 'เอกสารประกอบ',
+  /** Label for the back button on a release detail page (returns to the releases list). The
+   * leading arrow already conveys "back", so the label names the destination only. */
+  'overview.back-to-all-releases': undefined, // 'All releases'
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'ดูปฏิทิน',
   /** Description for the release tool */
@@ -316,6 +333,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ release และเอกสารทุกเวอร์ชัน?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'เอกสารบางรายการมีข้อผิดพลาดในการตรวจสอบ',
   /** Label for when documents are being validated */
@@ -434,8 +455,12 @@ export default removeUndefinedLocaleResources({
   'table-header.documents': 'เอกสาร',
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'แก้ไขแล้ว',
+  /** Header for the document table - last editor (person) column */
+  'table-header.edited-by': undefined, // 'Edited by'
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'ตั้งใจสำหรับ',
+  /** Header for the document table - last edited (relative time) column */
+  'table-header.last-edited': undefined, // 'Last edited'
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'เผยแพร่แล้ว',
   /** Header for the document table in the release tool - Published */
@@ -450,6 +475,8 @@ export default removeUndefinedLocaleResources({
   'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'ประเภท',
+  /** Header for the document table in the release tool - variant (which variant a document targets) */
+  'table-header.variant': undefined, // 'Variant'
   /** Header for the document table in the release tool - when */
   'table-header.when': 'เมื่อ',
 
@@ -484,6 +511,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "รีเวิร์ต release '{{title}}' สำเร็จแล้ว",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "ไม่สามารถเผยแพร่ '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "สร้าง revert release สำหรับ '{{title}}' สำเร็จแล้ว <Link/>",
   /** Link text for toast link to the generated revert release */

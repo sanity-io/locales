@@ -125,6 +125,8 @@ export default removeUndefinedLocaleResources({
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '加载更多',
   /** Text shown when selecting a file but there's no files to select from
@@ -212,13 +214,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': '转到上个月',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': '转到上一年',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '今天',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': '转到今天',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '明天',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': '昨天',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '包括时间',
@@ -301,7 +299,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '检查开发者控制台以获取更多信息',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '渲染此字段的更改时出现错误',
-  /* Error description when changes could not be loaded */
   'changes.error-description': '我们无法加载此文档的更改。',
   /** Error title when changes could not be loaded */
   'changes.error-title': '出了些问题',
@@ -341,7 +338,6 @@ export default removeUndefinedLocaleResources({
   'changes.no-changes-description': '编辑文档或在时间线中选择旧版本，以在此面板中看到更改列表。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '没有更改',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': '无法选择此事件',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '已添加注释',
@@ -413,6 +409,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '发现配置问题',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': undefined, // 'Content Agent'
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '按 {{title}} 排序',
 
@@ -448,6 +447,74 @@ export default removeUndefinedLocaleResources({
   /** Label for divergences in multiple nodes */
   'divergence.unresolved-divergence_other': '{{versionName}} 版本中有 {{count}} 个未解决的更改',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': undefined, // 'All users (Default)'
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': undefined, // 'Create variant'
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': undefined, // 'variants'
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': undefined, // 'versions'
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '创建于 {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -470,6 +537,13 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': '保存时间超出预期',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '未找到文档类型 "{{type}}"',
 
@@ -1003,6 +1077,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': '正常',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '引用',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': undefined, // 'Select table'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '清除',
   /** Label for action to copy the current item (used within arrays) */
@@ -1199,6 +1295,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': '权限不足',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外错误：{{error}}',
 
@@ -1264,7 +1367,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '当前正在上传的图片',
 
-  /* Relative time, just now */
   'relative-time.just-now': '刚刚',
 
   /** Action message to add document to new release */
@@ -1287,6 +1389,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version': '丢弃版本',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': '丢弃版本失败',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': '编辑计划',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1317,6 +1421,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': '查看计划草稿',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '计划在 {{date}} 发布',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}}个版本',
   /** Label for Draft chip in document header */
   'release.chip.draft': '草稿',
@@ -1338,6 +1445,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '无编辑',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '未发布',
+  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
   'release.chip.tooltip.other-versions_other': '发布之外的{{count}}个额外版本',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '发布于 {{date}}',
@@ -1377,6 +1485,14 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit-schedule.confirm': '更新计划',
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': '更改计划',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body': '您确定要立即发布这个预定草稿吗？',
   /** Confirm button text for running a scheduled draft immediately */
@@ -1429,6 +1545,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     '预定的草稿文档 <strong>{{title}}</strong> 已被删除。',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
@@ -1667,35 +1785,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>有</Operator> <Value>{{from}} → {{to}} 项</Value>',
   'search.operator.array-count-range.name': '数量介于',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>包括</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': '包括',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>不包括</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': '不包括',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': '包含',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': '不包含',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': '是',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': '不是',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': '是',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': '不是',
@@ -1708,159 +1818,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': '是',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>在之后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': '之后',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>在之前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': '之前',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': '是',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>在最后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': '最后',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': '不是',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>在之间</Operator> <Value/>',
   'search.operator.date-range.name': '介于',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>在之后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': '之后',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>在之前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': '之前',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': '是',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>在最后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': '最后',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': '不是',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>介于</Operator> <Value/>',
   'search.operator.date-time-range.name': '介于',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>是</Operator> <Value>非空</Value>',
   'search.operator.defined.name': '非空',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>是</Operator> <Value>空</Value>',
   'search.operator.not-defined.name': '空',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': '是',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': '大于',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': '大于或等于',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': '小于',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': '小于或等于',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': '不是',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>介于</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': '介于',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': '包含',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': '是',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': '不包含',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': '不是',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': '文件',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': '图像',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': '文档',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': '是',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': '不是',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': '包含',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': '是',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': '不包含',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': '不是',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': '包含',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': '是',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': '是',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': '不是',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': '不包含',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': '不是',
@@ -1886,25 +1956,15 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '配置状态',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': '搜索城市或时区',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': '选择本地时区',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases': '所选时区将改变内容发布中日期的表示方式。',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input': '所选时区将仅改变此文档中此输入的日期表示方式。',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing': '所选时区将改变计划中日期的表示方式。',
-  /* Label for the local time zone button */
   'time-zone.local-time': '本地时间',
-  /* Label for the time zone button */
   'time-zone.time-zone': '时区',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases': '在{{alternativeName}} GMT{{offset}}显示发布内容',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input': '在{{alternativeName}} GMT{{offset}}显示<em>{{title}}</em>',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing': '在{{alternativeName}} GMT{{offset}}显示计划',
 
   /** Title for the changes tooltip in the history inspector*/
@@ -1937,7 +1997,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': '文档修订版',
   /** Label for loading history */
   'timeline.loading-history': '正在加载历史记录…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': '没有以前的事件',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '已创建',
