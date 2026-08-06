@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Гэты дакумент нельга выдаліць, паколькі ён змяшчаецца ў запланаваных выпусках',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found': 'Абраны рэліз або варыянт не змяшчае гэты дакумент',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Выдаліць',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +37,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Гэты дакумент не апублікаваны',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Аперацыя не гатова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Абраны рэліз або варыянт не змяшчае гэты дакумент',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Адмяніць змены',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +47,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Гэты дакумент яшчэ не існуе, таму няма чаго дубляваць',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found': 'Абраны рэліз або варыянт не змяшчае гэты дакумент',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Дубляваць',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +57,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Ужо апублікаваны',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Апублікавана {{timeSincePublished}} таму',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Гэтая версія апублікавана ў складзе свайго рэлізу',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Аперацыя не гатова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found': 'Абраны рэліз або варыянт не змяшчае гэты дакумент',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Апублікаваць',
   /** Label for the "Publish" document action */
@@ -94,6 +105,8 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Гэты дакумент не апублікаваны',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Аперацыя не гатова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found': 'Абраны рэліз або варыянт не змяшчае гэты дакумент',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Зняць з публікацыі',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -167,7 +180,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Гэтая спасылка была выдалена з моманту, як вы яе адкрылі.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Дадаць у bundle',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Дадаць у выпуск',
   /** The text that appears for the action button to add the current document to the global release */
@@ -211,6 +224,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Паказваецца бягучая <strong>апублікаваная</strong> версія:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Стварыць варыянт',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Абраны варыянт <VariantName>{{name}}</VariantName> не знойдзены.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Пры даданні дакумента ў варыянт узнікла памылка: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Памылка пры даданні дакумента ў варыянт',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Варыянтны дакумент <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> для <VariantBadge>{{variantTitle}}</VariantBadge> не існуе.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Калі ласка, пачакайце, пакуль дакумент дадаецца ў варыянт. Гэта не зойме больш за некалькі секунд.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Даданне дакумента ў варыянт…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новы {{schemaType}}',
@@ -269,9 +300,7 @@ export default removeUndefinedLocaleResources({
     'Гэты прагляд паказвае змены, якія адбыліся ў канкрэтнай версіі гэтага дакумента. Выберыце іншую версію, каб убачыць яе змены',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Ад',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Гісторыя',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Прагляд зменаў',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Да',
@@ -389,12 +418,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Невядомы тып схемы: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Куды зніклі кнопкі версій?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Зачыніць',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Інспекцыя <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Няма значэння',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Закрыць панэль',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Пры адлюстраванні гэтай панэлі ўзнікла памылка.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Паўтарыць',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Нешта пайшло не так',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Інспекцыя',
   /** the placeholder text for the search input on the inspect dialog */
@@ -403,6 +443,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Разабраны',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Сыры JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': 'Дакумент яшчэ не існуе ў абраным perspective.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Гэтая форма схаваная',
@@ -415,6 +458,21 @@ export default removeUndefinedLocaleResources({
     'Калі ласка, пачакайце, пакуль дакумент будзе сінхранізаваны. Гэта звычайна адбываецца адразу пасля публікацыі дакумента і не павінна заняць больш за некалькі секунд',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Сінхранізацыя дакумента…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Мы будзем працягваць спробы. Тым часам вашы змены захоўваюцца ў браўзеры.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Вашы змены не захоўваюцца',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Рэдагаванне аднавіцца, як толькі вашы змены будуць захаваны.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Захаванне вашых змен…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Рэдагаванне прыпынена да захавання змен. Вашы змены захоўваюцца ў браўзеры, таму пакіньце гэтую ўкладку адкрытай, пакуль мы працягваем спробы.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Вашы змены ўсё яшчэ не захоўваюцца',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Дадаць у абранае',
@@ -455,7 +513,7 @@ export default removeUndefinedLocaleResources({
     'Для гэтага тыпу не вызначаны ўваходныя спасылкі, глядзіце дакументацыю для атрымання дадатковай інфармацыі.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'Уваходных спасылак не знойдзена.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'Спасылак гэтага тыпу не знойдзена.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -476,10 +534,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Кампактны выгляд',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Падрабязны выгляд',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Від па змаўчанні',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Від па змаўчанні ўжо выкарыстоўваецца',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Сартаваць па даце стварэння',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сартаваць па апошнім рэдагаванні',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Сартаванне па змаўчанні',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Парадак сартавання па змаўчанні ўжо выкарыстоўваецца',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Даведайцеся, як дадаць тып дакумента →',
@@ -547,8 +614,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Пошук у спісе',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Пошук у спісе',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Змяніць парадак вынікаў пошуку',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Адсартавана па {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Рэлевантнасць',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Адсартавана па рэлевантнасці',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Гэты варыянт сартавання выкарыстоўвае палі, якія не ўваходзяць у гэты тып дакумента',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Падрабязнасці',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -582,7 +658,7 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Дакумент быў апублікаваны',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'Версія была апублікавана',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> быў адноўлены',
@@ -607,6 +683,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Гэты дакумент не існуе, і для яго не быў вызначаны тып схемы.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Загрузка дакумента…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Загрузка…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
