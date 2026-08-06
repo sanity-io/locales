@@ -61,7 +61,8 @@ function getLocaleResourceImportName(file: File) {
     ImportSpecifier(path) {
       if (
         path.node.imported.type !== 'Identifier' ||
-        path.node.imported.name !== LOCALE_DEF_FN_NAME
+        (path.node.imported.name !== LOCALE_DEF_FN_NAME &&
+          path.node.local.name !== LOCALE_DEF_FN_NAME)
       ) {
         return
       }
