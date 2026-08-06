@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Nu se poate programa draft-ul din cauza erorilor de validare din draft-ul curent.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant':
+    'Programarea nu este încă disponibilă pentru variante.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Aflați despre programare',

@@ -14,6 +14,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Acest document nu poate fi șters deoarece există în cadrul lansărilor programate',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Versiunea sau varianta selectată nu conține acest document',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Șterge',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +38,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Acest document nu este publicat',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operațiunea nu este pregătită',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Versiunea sau varianta selectată nu conține acest document',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Renunță la modificări',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Acest document nu există încă, deci nu există nimic de duplicat',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Versiunea sau varianta selectată nu conține acest document',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplică',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +59,14 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Deja publicat',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publicat {{timeSincePublished}}',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable':
+    'Această versiune este publicată ca parte a lansării sale',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operațiunea nu este pregătită',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Versiunea sau varianta selectată nu conține acest document',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publică',
   /** Label for the "Publish" document action */
@@ -94,6 +109,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Acest document nu este publicat',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operațiunea nu este pregătită',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Versiunea sau varianta selectată nu conține acest document',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Anulare publicare',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -211,6 +229,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Se afișează versiunea <strong>publicată</strong> curentă:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Creează variantă',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Varianta selectată <VariantName>{{name}}</VariantName> nu a putut fi găsită.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'A apărut o eroare la adăugarea documentului în variantă: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Eroare la adăugarea documentului în variantă',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Nu există niciun document de variantă <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> pentru <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Vă rugăm să așteptați în timp ce documentul este adăugat în variantă. Nu ar trebui să dureze mai mult de câteva secunde.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Se adaugă documentul în variantă…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Document nou {{schemaType}}',
@@ -269,9 +305,7 @@ export default removeUndefinedLocaleResources({
     'Această vizualizare arată schimbările care au avut loc într-o versiune specifică a acestui document. Selectați o versiune diferită pentru a vedea schimbările acesteia',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'De la',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Istoric',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Revizuiește schimbările',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'La',
@@ -389,12 +423,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Tip de schemă necunoscut: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Unde au dispărut butoanele de versiune?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Închide',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspectând <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Fără valoare',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Închide panoul',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'A apărut o eroare la randarea acestui panou.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Reîncearcă',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Ceva a mers greșit',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspectează',
   /** the placeholder text for the search input on the inspect dialog */
@@ -403,6 +448,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Analizat',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'JSON Brut',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'Documentul nu există încă în perspective-ul selectat.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Acest formular este ascuns',
@@ -415,6 +464,21 @@ export default removeUndefinedLocaleResources({
     'Vă rugăm să așteptați în timp ce documentul este sincronizat. Acest lucru se întâmplă de obicei imediat după ce documentul a fost publicat și nu ar trebui să dureze mai mult de câteva secunde',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Sincronizare document…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Vom continua să încercăm. Modificările dvs. sunt păstrate în browser între timp.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Modificările dvs. nu se salvează',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Editarea va relua imediat ce modificările dvs. sunt salvate.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Se salvează modificările dvs.…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Editarea este întreruptă până când acestea se salvează. Modificările dvs. sunt păstrate în browser, deci păstrați această filă deschisă în timp ce continuăm să încercăm.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Modificările dvs. tot nu se salvează',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Adaugă la favorite',
@@ -476,10 +540,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Vizualizare compactă',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Vizualizare detaliată',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Vizualizare implicită',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Se utilizează deja vizualizarea implicită',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortează după Data Creării',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortează după Ultima Editare',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Sortare implicită',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Se utilizează deja ordinea de sortare implicită',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Află cum să adaugi un tip de document →',
@@ -546,6 +619,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Caută în listă',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Caută în listă',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Modificați ordinea rezultatelor căutării',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sortat după {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevanță',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sortat după relevanță',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Această opțiune de sortare folosește câmpuri care nu fac parte din acest tip de document',
@@ -608,6 +689,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Acest document nu există, și niciun tip de schemă nu a fost specificat pentru el.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Se încarcă documentul…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Se încarcă…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
