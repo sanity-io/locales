@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Sammendrag',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'La til en dokumentversjon',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Arkiverte <strong>{{releaseTitle}}</strong>-utsendingen',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Opprettet <strong>{{releaseTitle}}</strong>-utsendingen <ScheduleTarget>med mål </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Forkastet en dokumentversjon',
   'activity.event.edit': 'Satte utsendingstidspunkt til <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Så snart som mulig',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Ubestemt',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Publiserte <strong>{{releaseTitle}}</strong>-utsendingen',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Merket som planlagt',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive':
@@ -335,6 +329,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Er du sikker på at du vil publisere release-en og alle dokumentversjoner?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Oppdater eksisterende utkast',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Det eksisterende utkastet av {{draftDocumentsLength}} dokument vil bli forkastet slik at utkast samsvarer med den publiserte release. Upubliserte utkastendringer vil gå tapt.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'De eksisterende utkastene av {{draftDocumentsLength}} dokumenter vil bli forkastet slik at utkast samsvarer med den publiserte release. Upubliserte utkastendringer vil gå tapt.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Noen dokumenter har valideringsfeil',
   /** Label for when documents are being validated */
@@ -513,6 +515,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Release '{{title}}' ble tilbakestilt",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Kunne ikke publisere '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Release-en ble publisert, men eksisterende utkast kunne ikke oppdateres: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Tilbakestilling av release for '{{title}}' ble opprettet. <Link/>",
   /** Link text for toast link to the generated revert release */
