@@ -513,7 +513,7 @@ export default removeUndefinedLocaleResources({
   'menu-items.sort-by.restore-default': 'Standaard sortering',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
   'menu-items.sort-by.restore-default.disabled-reason':
-    'Standaard sorteervolgorde is al in gebruik',
+    'Standaard sortering is al in gebruik',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Leer hoe u een documenttype kunt toevoegen →',
