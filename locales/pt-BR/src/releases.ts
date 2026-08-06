@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Resumo',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Adicionou uma versão de documento',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Arquivou o release <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Criou o release <strong>{{releaseTitle}}</strong> <ScheduleTarget>com destino </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Descartou uma versão de documento',
   'activity.event.edit': 'Definiu o horário do release para <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'O mais rápido possível',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Indefinido',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Publicou o release <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Marcado como agendado',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Desarquivou o release <strong>{{releaseTitle}}</strong>',
@@ -334,6 +328,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Tem certeza de que deseja publicar o release e todas as versões dos documentos?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Atualizar rascunhos existentes',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'O rascunho existente de {{draftDocumentsLength}} documento será descartado para que os rascunhos correspondam à versão publicada. As alterações de rascunho não publicadas serão perdidas.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Os rascunhos existentes de {{draftDocumentsLength}} documentos serão descartados para que os rascunhos correspondam à versão publicada. As alterações de rascunho não publicadas serão perdidas.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Alguns documentos têm erros de validação',
   /** Label for when documents are being validated */
@@ -511,6 +513,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "O release '{{title}}' foi revertido com sucesso",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Falha ao publicar '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'A versão foi publicada, mas os rascunhos existentes não puderam ser atualizados: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "O release de reversão para '{{title}}' foi criado com sucesso. <Link/>",
