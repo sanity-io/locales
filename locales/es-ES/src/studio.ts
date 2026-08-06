@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Error al insertar el activo. Consulta la consola para más información.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Error al cargar los recursos',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Cargar más',
   /** Text shown when selecting a file but there's no files to select from
@@ -232,13 +234,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Ir al mes anterior',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Ir al año anterior',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Hoy',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Ir a hoy',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Mañana',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Ayer',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Incluir hora',
@@ -338,7 +336,6 @@ export default removeUndefinedLocaleResources({
     'Consulta la consola de desarrollador para más información',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Renderizar los cambios en este campo causó un error',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'No podemos cargar los cambios para este documento.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Algo salió mal',
@@ -379,7 +376,6 @@ export default removeUndefinedLocaleResources({
     'Edita el documento o selecciona una versión anterior en la línea de tiempo para ver una lista de cambios en este panel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'No hay cambios',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'No es posible seleccionar este evento',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Anotación añadida',
@@ -430,7 +426,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Revisar cambios',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
+  'changes.unknown-schema-field.description':
+    'Este campo no está definido en el esquema. Los valores se muestran como JSON.',
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Borrador',
 
@@ -451,6 +448,9 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.label': 'Problemas de configuración',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Se encontraron problemas de configuración',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Ordenar por {{title}}',
@@ -490,6 +490,104 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} cambios sin resolver en la versión {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Cancelar',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    '¿Qué tan fácil o difícil es usar la nueva versión del inventario?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrar {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'viendo',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Todos los usuarios (Predeterminado)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Crear variante',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Crear variante para {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Como borrador',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'En un release',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'O ver variantes existentes',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Cancelar',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 documento',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} documentos',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Dataset no disponible',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Datasets no disponibles',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} en otro dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} en {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Copiar ID al portapapeles',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID de documento',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Error al copiar el ID del documento',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID de proyecto',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Eliminar (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Eliminar ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Se produjo un error al intentar eliminar este documento. Esto generalmente significa que hay otros documentos que hacen referencia a él.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 otra referencia no mostrada',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} otras referencias no mostradas',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'No podemos mostrar los metadatos de estas referencias debido a que falta un token de acceso para los datasets relacionados.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Vista previa no disponible',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 documento hace referencia a "<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} documentos hacen referencia a "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Es posible que no puedas eliminar "<DocumentTitle/>" porque los siguientes documentos hacen referencia a él:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Eliminar {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Eliminar {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variante',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'variantes',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'versión',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versiones',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Creado {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -512,6 +610,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'El guardado está tardando más de lo esperado',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'El documento se abrió con un valor vacío. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'No se pudo resolver el valor inicial',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tipo de documento "{{type}}" no encontrado',
 
@@ -1084,6 +1190,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Cita',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Agregar columna al final',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Agregar fila al final',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Controlador de columna',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Eliminar columna',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Eliminar fila',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Eliminar tabla',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Fila de encabezado',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Insertar aquí',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Opciones de tabla',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Controlador de fila',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Seleccionar tabla',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Limpiar',
   /** Label for action to copy the current item (used within arrays) */
@@ -1290,6 +1418,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Permisos insuficientes',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Tu sesión ya no es válida. Por favor, inicia sesión de nuevo.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Tu sesión ha expirado. Por favor, inicia sesión de nuevo.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Has cerrado sesión',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Error inesperado: {{error}}',
 
@@ -1355,7 +1490,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'La imagen que se está subiendo',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'justo ahora',
 
   /** Action message to add document to new release */
@@ -1413,7 +1547,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Ver borradores programados',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programado para publicarse el {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variante',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} variantes',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} versión',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} versiones',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Borrador',
@@ -1436,6 +1576,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Sin ediciones',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'No publicado',
+  'release.chip.tooltip.other-variants_one': 'Una variante',
+  'release.chip.tooltip.other-variants_other': '{{count}} variantes',
   'release.chip.tooltip.other-versions_one': 'Una versión adicional fuera de las publicaciones',
   'release.chip.tooltip.other-versions_other':
     '{{count}} versiones adicionales fuera de las publicaciones',
@@ -1788,37 +1930,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>tiene</Operator> <Value>{{count}} elemento</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>tiene</Operator> <Value>{{count}} elementos</Value>',
   'search.operator.array-count-equal.name': 'la cantidad es',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>tiene ></Operator> <Value>{{count}} elemento</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>tiene ></Operator> <Value>{{count}} elementos</Value>',
   'search.operator.array-count-gt.name': 'cantidad mayor que',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>tiene ≥</Operator> <Value>{{count}} elemento</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>tiene ≥</Operator> <Value>{{count}} elementos</Value>',
   'search.operator.array-count-gte.name': 'cantidad mayor o igual que',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>tiene <</Operator> <Value>{{count}} elemento</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>tiene <</Operator> <Value>{{count}} elementos</Value>',
   'search.operator.array-count-lt.name': 'cantidad menor que',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>tiene ≤</Operator> <Value>{{count}} elemento</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>tiene ≤</Operator> <Value>{{count}} elementos</Value>',
   'search.operator.array-count-lte.name': 'cantidad menor o igual que',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>no tiene</Operator> <Value>{{count}} elemento</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1831,35 +1967,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>tiene entre</Operator> <Value>{{from}} → {{to}} elementos</Value>',
   'search.operator.array-count-range.name': 'la cantidad está entre',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>incluye</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'incluye',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>no incluye</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'no incluye',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>incluye</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'incluye',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>no incluye</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'no incluye',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'es',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'no es',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'es',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'no es',
@@ -1872,161 +2000,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'es',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>es después de</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'después',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>es antes de</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'antes',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'es',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>está en los últimos</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'último',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'no es',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>está entre</Operator> <Value/>',
   'search.operator.date-range.name': 'está entre',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>es después de</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'después',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>es antes de</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'antes',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'es',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>está en los últimos</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'último',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'no es',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>está entre</Operator> <Value/>',
   'search.operator.date-time-range.name': 'está entre',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>es</Operator> <Value>no vacío</Value>',
   'search.operator.defined.name': 'no vacío',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>es</Operator> <Value>vacío</Value>',
   'search.operator.not-defined.name': 'vacío',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'es',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'mayor que',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'mayor o igual que',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'menor que',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'menor o igual que',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'no es',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>está entre</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'está entre',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>contiene</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'contiene',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'es',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>no contiene</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'no contiene',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'no es',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'archivo',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'imagen',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'documento',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'es',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'no es',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>contiene</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'contiene',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'es',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>no contiene</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'no contiene',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'no es',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>contiene</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'contiene',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'es',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>es</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'es',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'no es',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>no contiene</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'no contiene',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>no es</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'no es',
@@ -2052,30 +2140,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Estado de configuración',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Buscar una ciudad o zona horaria',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Seleccionar zona horaria local',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'La zona horaria seleccionada cambiará cómo se representan las fechas en las publicaciones de contenido.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'La zona horaria seleccionada cambiará cómo se representan las fechas solo para esta entrada en este documento.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'La zona horaria seleccionada cambiará cómo se representan las fechas en los horarios.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'hora local',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Zona horaria',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Mostrando lanzamientos en {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Mostrando <em>{{title}}</em> en {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Mostrando horarios en {{alternativeName}} GMT{{offset}}',
 
@@ -2113,7 +2191,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revisiones del documento',
   /** Label for loading history */
   'timeline.loading-history': 'Cargando historial…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'No hay eventos anteriores',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Creado',
