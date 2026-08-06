@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Rezumat',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'A adăugat o versiune de document',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'A arhivat lansarea <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'A creat lansarea <strong>{{releaseTitle}}</strong> <ScheduleTarget>cu ținta </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'A eliminat o versiune de document',
   'activity.event.edit': 'A setat ora lansării la <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Cât mai curând posibil',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Nedecis',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'A publicat lansarea <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Marcat ca programat',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'A dezarhivat lansarea <strong>{{releaseTitle}}</strong>',
@@ -315,6 +309,11 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Sigur doriți să publicați lansarea și toate versiunile documentelor?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Actualizați ciornele existente',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Ciorna existentă a {{draftDocumentsLength}} document va fi eliminată astfel încât ciornele să corespundă versiunii publicate. Modificările nepublicate din ciorne vor fi pierdute.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Unele documente conțin erori de validare',
   /** Label for when documents are being validated */
@@ -486,6 +485,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Lansarea '{{title}}' a fost revenită cu succes",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Publicarea '<strong>{{title}}</strong>' a eșuat: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Versiunea a fost publicată, dar ciornele existente nu au putut fi actualizate: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Revenirea lansării pentru '{{title}}' a fost creată cu succes. <Link/>",

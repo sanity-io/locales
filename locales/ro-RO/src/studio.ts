@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Eroare la inserarea fișierului. Vedeți consola pentru mai multe informații.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Încărcarea resurselor a eșuat',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Încarcă mai multe',
   /** Text shown when selecting a file but there's no files to select from
@@ -222,13 +224,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Mergi la luna precedentă',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Mergi la anul precedent',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Astăzi',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Mergi la data de astăzi',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Mâine',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Ieri',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Include ora',
@@ -321,7 +319,6 @@ export default removeUndefinedLocaleResources({
     'Verificați consola de dezvoltare pentru mai multe informații',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Redarea schimbărilor în acest câmp a cauzat o eroare',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Nu putem încărca modificările pentru acest document.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Ceva a mers prost',
@@ -362,7 +359,6 @@ export default removeUndefinedLocaleResources({
     'Editați documentul sau selectați o versiune mai veche în cronologie pentru a vedea o listă de modificări care apar în acest panou.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nu există modificări',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Nu este posibil să selectați acest eveniment',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Adăugată adnotare',
@@ -436,6 +432,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Au fost găsite probleme de configurare',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sortează după {{title}}',
 
@@ -471,6 +470,80 @@ export default removeUndefinedLocaleResources({
   /** Label for divergence in a single node */
   'divergence.unresolved-divergence_one': 'Modificare nerezolvată în versiunea {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Anulare',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Cât de ușor sau dificil este de utilizat noul inventar de versiuni?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrare {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'vizualizare',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Toți utilizatorii (Implicit)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Creare variantă',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Creare variantă pentru {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Ca ciornă',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Într-un release',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Sau vizualizați variantele existente',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Anulare',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 document',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Dataset indisponibil',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} într-un alt dataset',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Copiați ID-ul în clipboard',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID document',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Copierea ID-ului documentului a eșuat',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID proiect',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Ștergere (1)',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'A apărut o eroare în timpul încercării de a șterge acest document. De obicei, aceasta înseamnă că există alte documente care fac referire la acesta.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 altă referință neafișată',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Nu putem afișa metadate pentru aceste referințe din cauza unui token de acces lipsă pentru dataset-urile asociate.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Previzualizare indisponibilă',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 document face referire la „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Este posibil să nu puteți șterge „<DocumentTitle/>" deoarece următoarele documente fac referire la acesta:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Ștergeți {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variantă',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'versiune',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Creat {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -493,6 +566,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Salvarea durează mai mult decât era de așteptat',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Documentul s-a deschis cu o valoare goală. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Nu s-a putut rezolva valoarea inițială',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Tipul documentului "{{type}}" nu a fost găsit',
 
@@ -1045,6 +1126,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Adăugați coloană la sfârșit',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Adăugați rând la sfârșit',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Mâner coloană',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Ștergeți coloana',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Ștergeți rândul',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Ștergeți tabelul',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Rând antet',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Inserați aici',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Opțiuni tabel',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Mâner rând',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Selectați tabelul',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Șterge',
   /** Label for action to copy the current item (used within arrays) */
@@ -1253,6 +1356,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Permisiuni insuficiente',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Sesiunea dvs. nu mai este validă. Vă rugăm să vă conectați din nou.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Sesiunea dvs. a expirat. Vă rugăm să vă conectați din nou.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Ați fost deconectat',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Eroare neașteptată: {{error}}',
 
@@ -1319,7 +1429,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Imaginea este în curs de încărcare',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'chiar acum',
 
   /** Action message to add document to new release */
@@ -1376,6 +1485,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Vezi schițele programate',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programată pentru publicare pe {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variantă',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} versiune',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Ciornă',
@@ -1398,6 +1510,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Fără modificări',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nepublicat',
+  'release.chip.tooltip.other-variants_one': 'O variantă',
   'release.chip.tooltip.other-versions_one': 'O versiune suplimentară în afara lansărilor',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicată {{date}}',
@@ -1735,27 +1848,21 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>are</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.name': 'cantitatea este',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>are ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.name': 'cantitatea mai mare decât',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>are ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.name': 'cantitatea mai mare sau egală cu',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>are <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.name': 'cantitatea mai mică decât',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>are ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.name': 'cantitatea mai mică sau egală cu',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nu are</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-not-equal.name': 'cantitatea nu este',
@@ -1766,35 +1873,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>are între</Operator> <Value>{{from}} → {{to}} elemente</Value>',
   'search.operator.array-count-range.name': 'cantitatea este între',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>include</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'include',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>nu include</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'nu include',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>include</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'include',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>nu include</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'nu include',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'este',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'nu este',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'este',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'nu este',
@@ -1807,162 +1906,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'este',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>este după</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'după',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>este înainte de</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'înainte de',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'este',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>este în ultimele</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'ultimele',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'nu este',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>este între</Operator> <Value/>',
   'search.operator.date-range.name': 'este între',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>este după</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'după',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>este înainte de</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'înainte de',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'este',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>este în ultimele</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'ultimele',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'nu este',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>este între</Operator> <Value/>',
   'search.operator.date-time-range.name': 'este între',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>este</Operator> <Value>nu este gol</Value>',
   'search.operator.defined.name': 'nu este gol',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>este</Operator> <Value>gol</Value>',
   'search.operator.not-defined.name': 'gol',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'este',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'mai mare decât',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'mai mare sau egal cu',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'mai mic decât',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'mai mic sau egal cu',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'nu este',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>este între</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'este între',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>conține</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'conține',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'este',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>nu conține</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'nu conține',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'nu este',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fișier',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'imagine',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'document',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'este',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'nu este',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>conține</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'conține',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'este',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>nu conține</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'nu conține',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'nu este',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>conține</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'conține',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'este',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>este</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'este',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'nu este',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>nu conține</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'nu conține',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>nu este</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'nu este',
@@ -1988,30 +2047,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Starea configurației',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Căutați un oraș sau un fus orar',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Selectați fusul orar local',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Fusul orar selectat va schimba modul în care datele sunt reprezentate în lansările de conținut.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Fusul orar selectat va schimba modul în care datele sunt reprezentate doar pentru această intrare în acest document.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Fusul orar selectat va schimba modul în care datele sunt reprezentate în programe.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'ora locală',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Fus orar',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Afișarea lansărilor în {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Afișarea <em>{{title}}</em> în {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Afișarea programelor în {{alternativeName}} GMT{{offset}}',
 
@@ -2049,7 +2098,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Reviziile documentului',
   /** Label for loading history */
   'timeline.loading-history': 'Se încarcă istoricul…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Niciun eveniment anterior',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Creat',
