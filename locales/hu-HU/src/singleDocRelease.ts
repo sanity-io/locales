@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Nem lehet ütemezni a vázlatot, mert az aktuális vázlatban érvényesítési hibák vannak.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Az ütemezés még nem érhető el a variantokhoz.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Tudjon meg többet az ütemezésről',
