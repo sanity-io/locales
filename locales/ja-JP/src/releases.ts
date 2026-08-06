@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'サマリー',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'ドキュメントバージョンを追加しました',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '<strong>{{releaseTitle}}</strong> リリースをアーカイブしました',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '<strong>{{releaseTitle}}</strong> リリースを作成しました <ScheduleTarget>ターゲット: </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'ドキュメントバージョンを破棄しました',
   'activity.event.edit': 'リリース時刻を <ScheduleTarget></ScheduleTarget> に設定しました',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'できるだけ早く',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': '未定',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '<strong>{{releaseTitle}}</strong> リリースを公開しました',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'スケジュール済みとしてマークしました',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive':
@@ -318,6 +312,11 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'リリースとすべてのドキュメントバージョンを公開してもよろしいですか？',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': '既存の下書きを更新',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}}件のドキュメントの既存の下書きは破棄され、下書きが公開済みのリリースと一致するようになります。未公開の下書きの変更は失われます。',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '一部のドキュメントにバリデーションエラーがあります',
   /** Label for when documents are being validated */
@@ -490,6 +489,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': '「{{title}}」リリースは正常に元に戻されました',
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' の公開に失敗しました: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'リリースは公開されましたが、既存の下書きを更新できませんでした：{{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': '「{{title}}」のリリースの取り消しが正常に作成されました。<Link/>',
   /** Link text for toast link to the generated revert release */

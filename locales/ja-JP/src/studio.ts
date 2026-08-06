@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'アセットの挿入エラー。詳細はコンソールを参照してください。',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'アセットの読み込みに失敗しました',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'もっと読み込む',
   /** Text shown when selecting a file but there's no files to select from
@@ -230,13 +232,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': '前の月へ',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': '前の年へ',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '今日',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': '今日に移動',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '明日',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': '昨日',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '時間を含む',
@@ -333,7 +331,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '詳細は開発者コンソールを確認してください',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'このフィールドの変更をレンダリング中にエラーが発生しました',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'このドキュメントの変更を読み込むことができません。',
   /** Error title when changes could not be loaded */
   'changes.error-title': '何か問題が発生しました',
@@ -374,7 +371,6 @@ export default removeUndefinedLocaleResources({
     'このパネルに変更リストが表示されるように、ドキュメントを編集するか、タイムラインで古いバージョンを選択してください。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '変更はありません',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'このイベントを選択することはできません',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '注釈を追加しました',
@@ -448,6 +444,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '設定の問題を発見',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}で並べ替え',
 
@@ -484,6 +483,81 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{versionName}}バージョンに{{count}}件の未解決の変更があります',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'キャンセル',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    '新しいバージョンのインベントリは使いやすいですか、それとも使いにくいですか？',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}}をフィルター',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': '表示中',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'すべてのユーザー（デフォルト）',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'バリアントを作成',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': '{{variantDefinitionName}}のバリアントを作成',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': '下書きとして',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'リリースに追加',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'または既存のバリアントを表示',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'キャンセル',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}}件のドキュメント',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '利用不可のdataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{count}}個のdatasetに{{documentCount}}件',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'IDをクリップボードにコピー',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ドキュメントID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'ドキュメントIDのコピーに失敗しました',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'プロジェクトID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': '削除（{{count}}）',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'このドキュメントを削除しようとした際にエラーが発生しました。通常、このドキュメントを参照している他のドキュメントが存在することが原因です。',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} 件の他の参照は表示されていません',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    '関連する dataset のアクセストークンが見つからないため、これらの参照のメタデータを表示できません。',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'プレビューを利用できません',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} 件のドキュメントが「<DocumentTitle/>」を参照しています',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    '以下のドキュメントが「<DocumentTitle/>」を参照しているため、削除できない場合があります：',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} 件の{{subject}}を削除',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'バリアント',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'バージョン',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}}に作成されました',
   /** Label to show in the document status indicating the date of the status */
@@ -506,6 +580,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': '保存に予想以上の時間がかかっています',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'ドキュメントは空の値で開かれました。{{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': '初期値を解決できませんでした',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ドキュメントタイプ "{{type}}" が見つかりません',
 
@@ -1082,6 +1164,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': '標準',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '引用',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': '末尾に列を追加',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': '末尾に行を追加',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': '列ハンドル',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': '列を削除',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': '行を削除',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'テーブルを削除',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'ヘッダー行',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'ここに挿入',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'テーブルオプション',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': '行ハンドル',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'テーブルを選択',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'クリア',
   /** Label for action to copy the current item (used within arrays) */
@@ -1287,6 +1391,14 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': '権限が不足しています',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'セッションが無効になりました。再度サインインしてください。',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired':
+    'セッションの有効期限が切れました。再度サインインしてください。',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'ログアウトされました',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '予期せぬエラー: {{error}}',
 
@@ -1353,7 +1465,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '現在アップロード中の画像',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'たった今',
 
   /** Action message to add document to new release */
@@ -1412,6 +1523,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': '予定された下書きを見る',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}に公開予定',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} バリアント',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}}バージョン',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'ドラフト',
@@ -1434,6 +1548,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '編集なし',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '未公開',
+  'release.chip.tooltip.other-variants_other': '{{count}} バリアント',
   'release.chip.tooltip.other-versions_other': 'リリース外の追加{{count}}バージョン',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '公開日 {{date}}',
@@ -1784,37 +1899,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>は</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>は</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-equal.name': '数量が等しい',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>は ></Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>は ></Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gt.name': '数量がより大きい',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>は ≥</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>は ≥</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gte.name': '数量が以上',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>は <</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>は <</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lt.name': '数量がより少ない',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>は ≤</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>は ≤</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lte.name': '数量が以下',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>は持っていない</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1827,35 +1936,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>は</Operator> <Value>{{from}} → {{to}} アイテムの間</Value>',
   'search.operator.array-count-range.name': '数量が範囲内',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': '含む',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': '含まない',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': '含む',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': '含まない',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'が等しい',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'が等しくない',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'が等しい',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'が等しくない',
@@ -1868,159 +1969,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'が等しい',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>は後</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'より後',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>は前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'より前',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'が等しい',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>は最後の</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': '最後の',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'が等しくない',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>は範囲内</Operator> <Value/>',
   'search.operator.date-range.name': '範囲内',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>は後</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'より後',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>は前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'より前',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'が等しい',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>は最後の</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': '最後の',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'が等しくない',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>は範囲内</Operator> <Value/>',
   'search.operator.date-time-range.name': '範囲内',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>は</Operator> <Value>空でない</Value>',
   'search.operator.defined.name': '空でない',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>は</Operator> <Value>空</Value>',
   'search.operator.not-defined.name': '空',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'が等しい',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'より大きい',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': '以上',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'より少ない',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': '以下',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'が等しくない',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>は範囲内</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': '範囲内',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': '含む',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'が等しい',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': '含まない',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'が等しくない',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'ファイル',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': '画像',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'ドキュメント',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'が等しい',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'が等しくない',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': '含む',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'が等しい',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': '含まない',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'が等しくない',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': '含む',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'が等しい',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'が等しい',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'が等しくない',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': '含まない',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'が等しくない',
@@ -2046,30 +2107,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '設定ステータス',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': '都市またはタイムゾーンを検索',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'ローカルタイムゾーンを選択',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     '選択されたタイムゾーンは、コンテンツリリースでの日付の表示方法を変更します。',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     '選択されたタイムゾーンは、このドキュメントのこの入力に対してのみ、日付の表示方法を変更します。',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     '選択されたタイムゾーンは、スケジュールでの日付の表示方法を変更します。',
-  /* Label for the local time zone button */
   'time-zone.local-time': '現地時間',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'タイムゾーン',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     '{{alternativeName}} GMT{{offset}}でリリースを表示',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     '{{alternativeName}} GMT{{offset}}で<em>{{title}}</em>を表示',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     '{{alternativeName}} GMT{{offset}}でスケジュールを表示',
 
@@ -2107,7 +2158,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'ドキュメントのリビジョン',
   /** Label for loading history */
   'timeline.loading-history': '履歴を読み込み中…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': '以前のイベントはありません',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '作成された',
