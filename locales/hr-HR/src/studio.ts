@@ -508,7 +508,7 @@ export default removeUndefinedLocaleResources({
   /** The heading for the option to create a variant as a draft */
   'document-group.create-variant.target-drafts': 'Kao nacrt',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': 'U release',
+  'document-group.create-variant.target-releases': 'U izdanjima',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
   'document-group.create-variant.view-existing-variants': 'Ili pregledaj postojeće varijante',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */

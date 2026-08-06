@@ -473,7 +473,7 @@ export default removeUndefinedLocaleResources({
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
   'document-target-badges.not-in-target.tooltip':
-    'Dokument još ne postoji u odabranom perspective.',
+    'Dokument još ne postoji u odabranoj perspektivi.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ovaj obrazac je skriven',
