@@ -14,6 +14,10 @@ export default removeUndefinedLocaleResources({
   'document-list-pane.document-list.title': 'დოკუმენტები ამ გვერდზე',
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'დოკუმენტების სიის ჩვენება ვერ მოხერხდა',
+  /** The label for the ordering that lists documents in the order they appear on the page */
+  'document-list-pane.ordering.by-appearance': 'გარეგნობის მიხედვით',
+  /** The label for the ordering that lists documents by when they were last edited */
+  'document-list-pane.ordering.last-edited': 'ბოლოს რედაქტირებული',
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': 'დოკუმენტის რედაქტორის ჩვენება ვერ მოხერხდა',

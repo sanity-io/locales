@@ -126,6 +126,8 @@ export default removeUndefinedLocaleResources({
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': 'აქტივის ჩასმის შეცდომა. დეტალებისთვის იხილეთ კონსოლი.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'აქტივების ჩატვირთვა ვერ მოხერხდა',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'მეტის ჩატვირთვა',
   /** Text shown when selecting a file but there's no files to select from
@@ -227,13 +229,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'გადასვლა წინა თვეში',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'გადასვლა წინა წელში',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'დღეს',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'გადასვლა დღეს',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'ხვალ',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'გუშინ',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'დროის ჩათვლა',
@@ -329,7 +327,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'დეველოპერის კონსოლში იხილეთ მეტი ინფორმაცია',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'ამ ველის ცვლილებების რენდერინგი გამოიწვია შეცდომა',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'ჩვენ ვერ ვტვირთავთ ცვლილებებს ამ დოკუმენტისთვის.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'რაღაც შეცდომა მოხდა',
@@ -370,7 +367,6 @@ export default removeUndefinedLocaleResources({
     'რედაქტირება დოკუმენტი ან აირჩიეთ უფრო ძველი ვერსია დროის ზოლში, რათა ამ პანელზე გამოჩნდეს ცვლილებების სია.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'ცვლილებები არ არის',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'ამ მოვლენის არჩევა არ არის შესაძლებელი',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'დამატებული ანოტაცია',
@@ -444,6 +440,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'კონფიგურაციის პრობლემები აღმოჩენილია',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'დალაგება {{title}}-ით',
 
@@ -482,6 +481,104 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} გადაუჭრელი ცვლილება {{versionName}} ვერსიაში',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'გაუქმება',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'რამდენად მარტივი ან რთულია ახალი ვერსიის ინვენტარის გამოყენება?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}}-ის ფილტრი',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'ნახვა',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'ყველა მომხმარებელი (ნაგულისხმევი)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'ვარიანტის შექმნა',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'ვარიანტის შექმნა {{variantDefinitionName}}-სთვის',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'როგორც პროექტი',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'გამოშვებაში',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'ან ნახეთ არსებული ვარიანტები',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'გაუქმება',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 დოკუმენტი',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} დოკუმენტი',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'მიუწვდომელი dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'მიუწვდომელი datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} სხვა dataset-ში',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} {{count}} dataset-ში',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'ID-ის კლიპბორდზე კოპირება',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'დოკუმენტის ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'დოკუმენტის ID-ის კოპირება ვერ მოხერხდა',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'პროექტის ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'წაშლა (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'წაშლა ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'წაშლის მცდელობისას მოხდა შეცდომა. ეს ჩვეულებრივ ნიშნავს, რომ სხვა დოკუმენტები მიმართავენ ამ დოკუმენტს.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 სხვა მითითება არ არის ნაჩვენები',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} სხვა მითითება არ არის ნაჩვენები',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'ამ მითითებების მეტამონაცემების ჩვენება შეუძლებელია, რადგან დაკავშირებული dataset-ებისთვის წვდომის ტოკენი არ არის.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'გადახედვა მიუწვდომელია',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 დოკუმენტი მიმართავს "<DocumentTitle/>"-ს',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} დოკუმენტი მიმართავს "<DocumentTitle/>"-ს',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'შესაძლოა ვერ შეძლოთ "<DocumentTitle/>"-ის წაშლა, რადგან შემდეგი დოკუმენტები მიმართავენ მას:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': '{{count}} {{subject}}-ის წაშლა',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} {{subject}}-ის წაშლა',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'ვარიანტი',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'ვარიანტი',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'ვერსია',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'ვერსიები',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'შეიქმნა {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -504,6 +601,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'შენახვა მოსალოდნელზე მეტ დროს იღებს',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'დოკუმენტი გაიხსნა ცარიელი მნიშვნელობით. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'საწყისი მნიშვნელობის განსაზღვრა ვერ მოხერხდა',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'დოკუმენტის ტიპი "{{type}}" ვერ მოიძებნა',
 
@@ -1076,6 +1181,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'ნორმალური',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'ციტატა',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'სვეტის დამატება ბოლოში',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'მწკრივის დამატება ბოლოში',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'სვეტის სახელური',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'სვეტის წაშლა',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'მწკრივის წაშლა',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'ცხრილის წაშლა',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'სათაურის მწკრივი',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'აქ ჩასმა',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'ცხრილის პარამეტრები',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'მწკრივის სახელური',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'ცხრილის არჩევა',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'გასუფთავება',
   /** Label for action to copy the current item (used within arrays) */
@@ -1281,6 +1408,14 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'არასაკმარისი ნებართვები',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'თქვენი სესია აღარ არის მოქმედი. გთხოვთ, კვლავ შეხვიდეთ სისტემაში.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired':
+    'თქვენი სესიის ვადა გავიდა. გთხოვთ, კვლავ შეხვიდეთ სისტემაში.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'თქვენ გამოხვედით სისტემიდან',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'მოულოდნელი შეცდომა: {{error}}',
 
@@ -1346,7 +1481,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'ამ დროს იტვირთება სურათი',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'წუთის წინ',
 
   /** Action message to add document to new release */
@@ -1404,7 +1538,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'დაგეგმილი ჩანაწერების ნახვა',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'გამოქვეყნებაზე დაგეგმილია {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} ვარიანტი',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} ვარიანტი',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} ვერსია',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} ვერსიები',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'დრაფტი',
@@ -1427,6 +1567,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'რედაქტირებები არ არის',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'არ არის გამოქვეყნებული',
+  'release.chip.tooltip.other-variants_one': 'ერთი ვარიანტი',
+  'release.chip.tooltip.other-variants_other': '{{count}} ვარიანტი',
   'release.chip.tooltip.other-versions_one': 'ერთი დამატებითი ვერსია რელიზების გარეთ',
   'release.chip.tooltip.other-versions_other': '{{count}} დამატებითი ვერსია რელიზების გარეთ',
   /** Label for tooltip in chip with the published date */
@@ -1764,37 +1906,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>აქვს</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>აქვს</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-equal.name': 'რაოდენობა არის',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>აქვს ></Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>აქვს ></Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-gt.name': 'რაოდენობა მეტია',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>აქვს ≥</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>აქვს ≥</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-gte.name': 'რაოდენობა მეტია ან ტოლი',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>აქვს <</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>აქვს <</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-lt.name': 'რაოდენობა ნაკლებია',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>აქვს ≤</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>აქვს ≤</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-lte.name': 'რაოდენობა ნაკლებია ან ტოლი',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>არ აქვს</Operator> <Value>{{count}} ერთეული</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1807,35 +1943,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>შეიცავს</Operator> <Value>{{from}} → {{to}} ერთეულს</Value>',
   'search.operator.array-count-range.name': 'რაოდენობა შედის შუალედში',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'შეიცავს',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>არ შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'არ შეიცავს',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'შეიცავს',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>არ შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'არ შეიცავს',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'არის',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'არ არის',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'არის',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'არ არის',
@@ -1848,162 +1976,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'არის',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>არის შემდეგ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'შემდეგ',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>არის უკან</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'უფრო ადრე',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'არის',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>არის ბოლო</Operator> <Value>{{value}}</Value> დღეებში',
   'search.operator.date-last.name': 'ბოლო',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'არ არის',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>არის შუალედში</Operator> <Value/>',
   'search.operator.date-range.name': 'არის შუალედში',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>არის შემდეგ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'შემდეგ',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>არის ადრე</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'უფრო ადრე',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'არის',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>არის ბოლო</Operator> <Value>{{value}}</Value> დღეებში',
   'search.operator.date-time-last.name': 'ბოლო',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'არ არის',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>არის შუალედში</Operator> <Value/>',
   'search.operator.date-time-range.name': 'არის შუალედში',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>არის</Operator> <Value>არაცარიელი</Value>',
   'search.operator.defined.name': 'არაცარიელი',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>არის</Operator> <Value>ცარიელი</Value>',
   'search.operator.not-defined.name': 'ცარიელი',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'არის',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'მეტია',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'მეტია ან ტოლია',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'ნაკლებია',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'ნაკლებია ან ტოლია',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'არ არის',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>არის შუალედში</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'არის შუალედში',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'შეიცავს',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'არის',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>არ შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'არ შეიცავს',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'არ არის',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'ფაილი',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'სურათი',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'დოკუმენტი',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'არის',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'არ არის',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'შეიცავს',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'არის',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>არ შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'არ შეიცავს',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'არ არის',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'შეიცავს',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'არის',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>არის</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'არის',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'არ არის',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>არ შეიცავს</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'არ შეიცავს',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>არ არის</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'არ არის',
@@ -2029,30 +2117,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'კონფიგურაციის სტატუსი',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'მოძებნეთ ქალაქი ან დროის ზონა',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'აირჩიეთ ლოკალური დროის ზონა',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'არჩეული დროის ზონა შეცვლის თარიღების წარმოჩენას კონტენტის რელიზებში.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'არჩეული დროის ზონა შეცვლის თარიღების წარმოჩენას მხოლოდ ამ შეყვანისთვის ამ დოკუმენტში.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'არჩეული დროის ზონა შეცვლის თარიღების წარმოჩენას გრაფიკებში.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'ლოკალური დრო',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'დროის ზონა',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'რელიზების ჩვენება {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'ჩვენება <em>{{title}}</em> {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'გრაფიკების ჩვენება {{alternativeName}} GMT{{offset}}',
 
@@ -2090,7 +2168,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'დოკუმენტის რევიზიები',
   /** Label for loading history */
   'timeline.loading-history': 'ისტორიის ჩატვირთვა…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'წინა ივენთები არ არის',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'შეიქმნა',

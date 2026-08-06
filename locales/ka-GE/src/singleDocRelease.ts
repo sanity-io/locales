@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Draft-ის დაგეგმვა შეუძლებელია მიმდინარე draft-ში არსებული ვალიდაციის შეცდომების გამო.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'დაგეგმვა ჯერ არ არის ხელმისაწვდომი ვარიანტებისთვის.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'შეიტყვეთ დაგეგმვის შესახებ',
