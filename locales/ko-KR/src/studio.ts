@@ -126,6 +126,8 @@ export default removeUndefinedLocaleResources({
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '자산 삽입 오류. 자세한 정보는 콘솔을 확인하세요.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '더 많이 불러오기',
   /** Text shown when selecting a file but there's no files to select from
@@ -228,13 +230,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': '이전 달로 이동',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': '이전 해로 이동',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '오늘',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': '오늘로 가기',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '내일',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': '어제',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '시간 포함',
@@ -330,7 +328,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '자세한 정보는 개발자 콘솔을 확인하세요',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '이 필드의 변경 사항을 렌더링하는 중 오류가 발생했습니다',
-  /* Error description when changes could not be loaded */
   'changes.error-description': '이 문서의 변경 사항을 불러올 수 없습니다.',
   /** Error title when changes could not be loaded */
   'changes.error-title': '문제가 발생했습니다',
@@ -371,7 +368,6 @@ export default removeUndefinedLocaleResources({
     '이 패널에 변경 사항 목록이 표시되려면 문서를 편집하거나 타임라인에서 이전 버전을 선택하세요.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '변경 사항 없음',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': '이 이벤트를 선택할 수 없습니다',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '주석 추가됨',
@@ -445,6 +441,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '구성 문제 발견',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': undefined, // 'Content Agent'
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}로 정렬',
 
@@ -481,6 +480,74 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{versionName}} 버전에서 {{count}}개의 미해결 변경 사항',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': undefined, // 'All users (Default)'
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': undefined, // 'Create variant'
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': undefined, // 'variants'
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': undefined, // 'versions'
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}}에 생성됨',
   /** Label to show in the document status indicating the date of the status */
@@ -503,6 +570,13 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': '저장이 예상보다 오래 걸리고 있습니다',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '문서 유형 "{{type}}"을(를) 찾을 수 없습니다',
 
@@ -1074,6 +1148,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': '보통',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '인용구',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': undefined, // 'Select table'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '지우기',
   /** Label for action to copy the current item (used within arrays) */
@@ -1277,6 +1373,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': '권한 부족',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '예상치 못한 오류: {{error}}',
 
@@ -1343,7 +1446,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '현재 업로드 중인 이미지',
 
-  /* Relative time, just now */
   'relative-time.just-now': '방금',
 
   /** Action message to add document to new release */
@@ -1401,6 +1503,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': '예약된 초안 보기',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} 버전',
   /** Label for Draft chip in document header */
   'release.chip.draft': '초안',
@@ -1423,6 +1528,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '편집 없음',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '게시되지 않음',
+  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
   'release.chip.tooltip.other-versions_other': '릴리스 외부의 추가 {{count}} 버전',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '게시된 날짜 {{date}}',
@@ -1770,37 +1876,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>는</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>는</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-equal.name': '수량이',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>는 ></Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>는 ></Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-gt.name': '수량이 더 많음',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>는 ≥</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>는 ≥</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-gte.name': '수량이 더 많거나 같음',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>는 <</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>는 <</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-lt.name': '수량이 더 적음',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>는 ≤</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>는 ≤</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-lte.name': '수량이 더 적거나 같음',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>는 가지고 있지 않음</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1813,35 +1913,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>는 사이에 있음</Operator> <Value>{{from}} → {{to}}개 항목들</Value>',
   'search.operator.array-count-range.name': '수량이 사이에 있음',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': '포함함',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': '포함하지 않음',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': '포함함',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': '포함하지 않음',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': '임',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': '아님',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': '임',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': '아님',
@@ -1854,162 +1946,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': '임',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>는 이후임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': '이후',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>는 이전임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': '이전',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': '임',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>는 마지막에 있음</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': '마지막',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': '아님',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>사이에 있음</Operator> <Value/>',
   'search.operator.date-range.name': '사이에 있음',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>는 이후임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': '이후',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>는 이전임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': '이전',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': '임',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>는 마지막에 있음</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': '마지막',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': '아님',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>사이에 있음</Operator> <Value/>',
   'search.operator.date-time-range.name': '사이에 있음',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>임</Operator> <Value>비어 있지 않음</Value>',
   'search.operator.defined.name': '비어 있지 않음',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>임</Operator> <Value>비어 있음</Value>',
   'search.operator.not-defined.name': '비어 있음',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': '임',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': '더 큼',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': '더 크거나 같음',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': '더 작음',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': '더 작거나 같음',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': '아님',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>사이에 있음</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': '사이에 있음',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': '포함함',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': '임',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': '포함하지 않음',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': '아님',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': '파일',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': '이미지',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': '문서',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': '임',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': '아님',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': '포함함',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': '임',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': '포함하지 않음',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': '아님',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': '포함함',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': '임',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': '임',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': '아님',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': '포함하지 않음',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': '아님',
@@ -2035,29 +2087,19 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '구성 상태',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': '도시 또는 시간대를 검색',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': '현지 시간대 선택',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     '선택된 시간대는 콘텐츠 릴리스에서 날짜 표시 방식을 변경합니다.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     '선택된 시간대는 이 문서의 이 입력란에 대한 날짜 표시 방식만 변경합니다.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     '선택된 시간대는 일정에 표시되는 날짜를 변경합니다.',
-  /* Label for the local time zone button */
   'time-zone.local-time': '현지 시간',
-  /* Label for the time zone button */
   'time-zone.time-zone': '시간대',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases': '{{alternativeName}} GMT{{offset}}에 릴리스 표시',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     '{{alternativeName}} GMT{{offset}}에 <em>{{title}}</em> 표시',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     '{{alternativeName}} GMT{{offset}}에 일정 표시',
 
@@ -2095,7 +2137,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': '문서 개정 목록',
   /** Label for loading history */
   'timeline.loading-history': '기록 로딩 중…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': '이전 이벤트 없음',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '생성됨',

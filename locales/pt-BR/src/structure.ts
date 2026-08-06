@@ -457,6 +457,14 @@ export default removeUndefinedLocaleResources({
   'document-inspector.dialog.title': 'Inspecionando <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Sem valor',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': undefined, // 'Something went wrong'
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspecionar',
   /** the placeholder text for the search input on the inspect dialog */
@@ -465,6 +473,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Analisado',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'JSON Bruto',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Este formulário está oculto',

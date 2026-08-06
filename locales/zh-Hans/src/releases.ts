@@ -61,23 +61,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': '摘要',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': '已添加文档版本',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '已归档 <strong>{{releaseTitle}}</strong> 发布',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '已创建 <strong>{{releaseTitle}}</strong> 发布 <ScheduleTarget>目标时间为 </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': '已丢弃文档版本',
   'activity.event.edit': '将发布时间设置为 <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': '尽快',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': '未决定',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '已发布 <strong>{{releaseTitle}}</strong> 发布',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': '已标记为已计划',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '已取消归档 <strong>{{releaseTitle}}</strong> 发布',
@@ -305,6 +299,10 @@ export default removeUndefinedLocaleResources({
     '"<strong>{{title}}</strong>"版本及其 {{releaseDocumentsLength}} 个文档将被发布。',
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title': '您确定要发布该版本及所有文档版本吗？',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '部分文档存在验证错误',
   /** Label for when documents are being validated */
@@ -472,6 +470,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "'{{title}}' 版本已成功还原",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "发布 '<strong>{{title}}</strong>' 失败：{{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "'{{title}}' 的还原版本已成功创建。<Link/>",
   /** Link text for toast link to the generated revert release */

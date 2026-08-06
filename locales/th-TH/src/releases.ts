@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'สรุป',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'เพิ่มเวอร์ชันเอกสารแล้ว',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'เก็บถาวร release <strong>{{releaseTitle}}</strong> แล้ว',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'สร้าง release <strong>{{releaseTitle}}</strong> แล้ว <ScheduleTarget>โดยกำหนดเป้าหมาย </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'ยกเลิกเวอร์ชันเอกสารแล้ว',
   'activity.event.edit': 'ตั้งเวลา release เป็น <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'โดยเร็วที่สุด',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'ยังไม่ตัดสินใจ',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'เผยแพร่ release <strong>{{releaseTitle}}</strong> แล้ว',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'ทำเครื่องหมายว่ากำหนดเวลาแล้ว',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'ยกเลิกการเก็บถาวร release <strong>{{releaseTitle}}</strong> แล้ว',
@@ -316,6 +310,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ release และเอกสารทุกเวอร์ชัน?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'เอกสารบางรายการมีข้อผิดพลาดในการตรวจสอบ',
   /** Label for when documents are being validated */
@@ -484,6 +482,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "รีเวิร์ต release '{{title}}' สำเร็จแล้ว",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "ไม่สามารถเผยแพร่ '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "สร้าง revert release สำหรับ '{{title}}' สำเร็จแล้ว <Link/>",
   /** Link text for toast link to the generated revert release */

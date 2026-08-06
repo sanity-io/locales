@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Samenvatting',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Een documentversie toegevoegd',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'De <strong>{{releaseTitle}}</strong> release gearchiveerd',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'De <strong>{{releaseTitle}}</strong> release aangemaakt <ScheduleTarget>gericht op </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Een documentversie verwijderd',
   'activity.event.edit': 'Releasetijd ingesteld op <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Zo snel mogelijk',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Onbeslist',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'De <strong>{{releaseTitle}}</strong> release gepubliceerd',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Gemarkeerd als ingepland',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'De <strong>{{releaseTitle}}</strong> release gedearchiveerd',
@@ -331,6 +325,12 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Weet u zeker dat u de release en alle documentversies wilt publiceren?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one': undefined, // 'The existing draft of {{draftDocumentsLength}} document will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Sommige documenten bevatten validatiefouten',
   /** Label for when documents are being validated */
@@ -510,6 +510,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "De release '{{title}}' is succesvol teruggedraaid",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Publiceren van '<strong>{{title}}</strong>' mislukt: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Terugdraai-release voor '{{title}}' is succesvol aangemaakt. <Link/>",

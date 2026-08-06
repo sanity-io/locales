@@ -128,6 +128,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'ಆಸ್ತಿ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'ಹೆಚ್ಚು ಲೋಡ್ ಮಾಡಿ',
   /** Text shown when selecting a file but there's no files to select from
@@ -228,13 +230,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'ಹಿಂದಿನ ತಿಂಗಳಿಗೆ ಹೋಗಿ',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'ಹಿಂದಿನ ವರ್ಷಕ್ಕೆ ಹೋಗಿ',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'ಇಂದು',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'ಇಂದಿನ ದಿನಕ್ಕೆ ಹೋಗಿ',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'ನಾಳೆ',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'ನಿನ್ನೆ',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'ಸಮಯವನ್ನು ಸೇರಿಸಿ',
@@ -328,7 +326,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'ಹೆಚ್ಚು ಮಾಹಿತಿಗಾಗಿ ಡೆವಲಪರ್ ಕನ್ಸೋಲ್ ಪರಿಶೀಲಿಸಿ',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'ಈ ಕ್ಷೇತ್ರದ ಬದಲಾವಣೆಗಳನ್ನು ರೆಂಡರ್ ಮಾಡುವಾಗ ದೋಷವೊಂದು ಉಂಟಾಗಿದೆ',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'ಈ ದಾಖಲೆಯ ಬದಲಾವಣೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ನಾವು ಅಸಮರ್ಥರಾಗಿದ್ದೇವೆ.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'ಏನೋ ತಪ್ಪಾಗಿದೆ',
@@ -369,7 +366,6 @@ export default removeUndefinedLocaleResources({
     'ದಾಖಲೆಯನ್ನು ಸಂಪಾದಿಸಿ ಅಥವಾ ಟೈಮ್‌ಲೈನ್‌ನಲ್ಲಿ ಹಳೆಯ ಆವೃತ್ತಿಯನ್ನು ಆರಿಸಿ ಈ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ಬದಲಾವಣೆಗಳ ಪಟ್ಟಿ ಕಾಣಿಸಲು.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'ಯಾವುದೇ ಬದಲಾವಣೆಗಳಿಲ್ಲ',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'ಈ ಘಟನೆಯನ್ನು ಆರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'ಅನ್ನೋಟೇಶನ್ ಸೇರಿಸಲಾಗಿದೆ',
@@ -443,6 +439,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'ಸಂರಚನಾ ಸಮಸ್ಯೆಗಳು ಕಂಡುಬಂದಿವೆ',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': undefined, // 'Content Agent'
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}} ಪ್ರಕಾರ ವಿಂಗಡಿಸಿ',
 
@@ -482,6 +481,8 @@ export default removeUndefinedLocaleResources({
     '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ {{count}} ಪರಿಹರಿಸದ ಬದಲಾವಣೆಗಳು',
 
   /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': undefined, // 'Cancel'
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'ಹೊಸ ಆವೃತ್ತಿ inventory ಬಳಸಲು ಎಷ್ಟು ಸುಲಭ ಅಥವಾ ಕಷ್ಟ?',
@@ -495,6 +496,18 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.viewing-item-label': 'ವೀಕ್ಷಿಸಲಾಗುತ್ತಿದೆ',
 
   /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': undefined, // 'All users (Default)'
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': undefined, // 'Create variant'
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'ರದ್ದುಮಾಡಿ',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -585,6 +598,13 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'ಉಳಿಸಲು ನಿರೀಕ್ಷಿತಕ್ಕಿಂತ ಹೆಚ್ಚು ಸಮಯ ತಗಲುತ್ತಿದೆ',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ದಾಖಲೆ ಪ್ರಕಾರ "{{type}}" ಕಾಣಿಸಿಲ್ಲ',
 
@@ -1162,6 +1182,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'ಸಾಮಾನ್ಯ',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'ಉಲ್ಲೇಖ',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': undefined, // 'Select table'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'ಸ್ಪಷ್ಟ',
   /** Label for action to copy the current item (used within arrays) */
@@ -1367,6 +1409,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'ಅಪರ್ಯಾಪ್ತ ಅನುಮತಿಗಳು',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'ಅನಿರೀಕ್ಷಿತ ದೋಷ: {{error}}',
 
@@ -1432,7 +1481,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'ಪ್ರಸ್ತುತ ಅಪ್‌ಲೋಡ್ ಆಗುತ್ತಿರುವ ಚಿತ್ರ',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'ಈಗ ಮಾತ್ರ',
 
   /** Action message to add document to new release */
@@ -1491,7 +1539,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'ನಿಗದಿತ ಮುಸದ್ದುಗಳನ್ನು ವೀಕ್ಷಿಸು',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}} ರಂದು ಪ್ರಕಟಣೆಗೆ ನಿಗದಿಯಾಗಿದೆ',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': undefined, // '+{{count}} variant'
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} ಆವೃತ್ತಿ',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} ಆವೃತ್ತಿಗಳು',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'ಮುಸದ್ದಿ',
@@ -1514,6 +1568,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'ಸಂಪಾದನೆಗಳು ಇಲ್ಲ',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
+  'release.chip.tooltip.other-variants_one': undefined, // 'One variant'
+  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
   'release.chip.tooltip.other-versions_one': 'ಬಿಡುಗಡೆಗಳ ಹೊರಗೆ ಒಂದು ಹೆಚ್ಚುವರಿ ಆವೃತ್ತಿ',
   'release.chip.tooltip.other-versions_other': 'ಬಿಡುಗಡೆಗಳ ಹೊರಗೆ {{count}} ಹೆಚ್ಚುವರಿ ಆವೃತ್ತಿಗಳು',
   /** Label for tooltip in chip with the published date */
@@ -1854,37 +1910,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>ಹೊಂದಿದೆ</Operator> <Value>{{count}} ವಸ್ತು</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>ಹೊಂದಿದೆ</Operator> <Value>{{count}} ವಸ್ತುಗಳು</Value>',
   'search.operator.array-count-equal.name': 'ಪ್ರಮಾಣ ಇದೆ',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>ಹೆಚ್ಚು ></Operator> <Value>{{count}} ವಸ್ತು</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>ಹೆಚ್ಚು ></Operator> <Value>{{count}} ವಸ್ತುಗಳು</Value>',
   'search.operator.array-count-gt.name': 'ಪ್ರಮಾಣ ಹೆಚ್ಚು ಇದೆ',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>ಹೆಚ್ಚು ಅಥವಾ ಸಮಾನ ≥</Operator> <Value>{{count}} ವಸ್ತು</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>ಹೆಚ್ಚು ಅಥವಾ ಸಮಾನ ≥</Operator> <Value>{{count}} ವಸ್ತುಗಳು</Value>',
   'search.operator.array-count-gte.name': 'ಪ್ರಮಾಣ ಹೆಚ್ಚು ಅಥವಾ ಸಮಾನ ಇದೆ',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>ಕಡಿಮೆ <</Operator> <Value>{{count}} ವಸ್ತು</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>ಕಡಿಮೆ <</Operator> <Value>{{count}} ವಸ್ತುಗಳು</Value>',
   'search.operator.array-count-lt.name': 'ಪ್ರಮಾಣ ಕಡಿಮೆ ಇದೆ',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>ಕಡಿಮೆ ಅಥವಾ ಸಮಾನ ≤</Operator> <Value>{{count}} ವಸ್ತು</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>ಕಡಿಮೆ ಅಥವಾ ಸಮಾನ ≤</Operator> <Value>{{count}} ವಸ್ತುಗಳು</Value>',
   'search.operator.array-count-lte.name': 'ಪ್ರಮಾಣ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನ ಇದೆ',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>ಹೊಂದಿಲ್ಲ</Operator> <Value>{{count}} ವಸ್ತು</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1897,35 +1947,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>ನಡುವೆ ಹೊಂದಿದೆ</Operator> <Value>{{from}} → {{to}} ವಸ್ತುಗಳು</Value>',
   'search.operator.array-count-range.name': 'ಪ್ರಮಾಣವು ನಡುವೆ ಇದೆ',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'ಒಳಗೊಂಡಿದೆ',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'ಒಳಗೊಂಡಿಲ್ಲ',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'ಒಳಗೊಂಡಿದೆ',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'ಒಳಗೊಂಡಿಲ್ಲ',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'ಇದೆ',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'ಅಲ್ಲ',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'ಇದೆ',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'ಅಲ್ಲ',
@@ -1938,161 +1980,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'ಇದೆ',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>ನಂತರ ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'ನಂತರ',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>ಮೊದಲು ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'ಮೊದಲು',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>ಅದು</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'ಅದು',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>ಕೊನೆಯ</Operator> <Value>{{value}}</Value>ರಲ್ಲಿ ಇದೆ',
   'search.operator.date-last.name': 'ಕೊನೆಯ',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>ಅದು ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'ಅದು ಅಲ್ಲ',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>ನಡುವೆ ಇದೆ</Operator> <Value/>',
   'search.operator.date-range.name': 'ನಡುವೆ ಇದೆ',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>ನಂತರ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'ನಂತರ',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>ಮೊದಲು</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'ಮೊದಲು',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>ಅದು</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'ಅದು',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>ಕೊನೆಯ</Operator> <Value>{{value}}</Value>ರಲ್ಲಿ ಇದೆ',
   'search.operator.date-time-last.name': 'ಕೊನೆಯ',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>ಅದು ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'ಅದು ಅಲ್ಲ',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>ನಡುವೆ ಇದೆ</Operator> <Value/>',
   'search.operator.date-time-range.name': 'ನಡುವೆ ಇದೆ',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>ಅದು</Operator> <Value>ಖಾಲಿ ಅಲ್ಲ</Value>',
   'search.operator.defined.name': 'ಖಾಲಿ ಅಲ್ಲ',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>ಅದು</Operator> <Value>ಖಾಲಿ</Value>',
   'search.operator.not-defined.name': 'ಖಾಲಿ',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'ಇದೆ',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'ಗಿಂತ ಹೆಚ್ಚು',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'ಗಿಂತ ಹೆಚ್ಚು ಅಥವಾ ಸಮ',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'ಗಿಂತ ಕಡಿಮೆ',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮ',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'ಅಲ್ಲ',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>ನಡುವೆ ಇದೆ</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'ನಡುವೆ ಇದೆ',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'ಒಳಗೊಂಡಿದೆ',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'ಇದೆ',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'ಒಳಗೊಂಡಿಲ್ಲ',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'ಅಲ್ಲ',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'ಫೈಲ್',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'ಚಿತ್ರ',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'ದಾಖಲೆ',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'ಇದೆ',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>ಇಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'ಇಲ್ಲ',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'ಒಳಗೊಂಡಿದೆ',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'ಇದೆ',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'ಒಳಗೊಂಡಿಲ್ಲ',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>ಇಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'ಇಲ್ಲ',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'ಒಳಗೊಂಡಿದೆ',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'ಇದೆ',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'ಇದೆ',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>ಇಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'ಇಲ್ಲ',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>ಒಳಗೊಂಡಿಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'ಒಳಗೊಂಡಿಲ್ಲ',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>ಅಲ್ಲ</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'ಅಲ್ಲ',
@@ -2118,30 +2120,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'ಸಂರಚನಾ ಸ್ಥಿತಿ',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'ನಗರ ಅಥವಾ ಸಮಯ ವಲಯವನ್ನು ಹುಡುಕಿ',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'ಸ್ಥಳೀಯ ಸಮಯ ವಲಯವನ್ನು ಆರಿಸಿ',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'ಆಯ್ದ ಸಮಯ ವಲಯವು ವಿಷಯ ಬಿಡುಗಡೆಗಳಲ್ಲಿ ದಿನಾಂಕಗಳನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'ಆಯ್ದ ಸಮಯ ವಲಯವು ಈ ದಾಖಲೆಯಲ್ಲಿ ಈ ಇನ್‌ಪುಟ್‌ಗೆ ಮಾತ್ರ ದಿನಾಂಕಗಳನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'ಆಯ್ದ ಸಮಯ ವಲಯವು ವೇಳಾಪಟ್ಟಿಗಳಲ್ಲಿ ದಿನಾಂಕಗಳನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'ಸ್ಥಳೀಯ ಸಮಯ',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'ಸಮಯ ವಲಯ',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     '{{alternativeName}} GMT{{offset}} ನಲ್ಲಿ ಬಿಡುಗಡೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತಿದೆ',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     '{{alternativeName}} GMT{{offset}} ನಲ್ಲಿ <em>{{title}}</em> ಅನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತಿದೆ',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     '{{alternativeName}} GMT{{offset}} ನಲ್ಲಿ ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತಿದೆ',
 
@@ -2177,7 +2169,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'ದಾಖಲೆಯ ಪರಿಷ್ಕರಣೆಗಳು',
   /** Label for loading history */
   'timeline.loading-history': 'ಇತಿಹಾಸ ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'ಹಿಂದಿನ ಘಟನೆಗಳು ಇಲ್ಲ',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'ರಚಿಸಲಾಗಿದೆ',

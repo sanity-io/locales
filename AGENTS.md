@@ -11,8 +11,8 @@ This is the [Sanity Studio Locales](https://github.com/sanity-io/locales) monore
 
 ### Services
 
-| Service | Command | Notes |
-| --- | --- | --- |
+| Service          | Command                     | Notes                                                                                                                                                                             |
+| ---------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | i18n demo Studio | `pnpm dev` (from repo root) | Serves at `http://localhost:3333`. Uses Sanity project `ppsg7ml5` / dataset `test`. Vite aliases locale packages to their `src/` so you can edit translations without rebuilding. |
 
 ### Studio auth (cloud / local)
@@ -24,6 +24,7 @@ This is the [Sanity Studio Locales](https://github.com/sanity-io/locales) monore
   ```
 
   Example locale paths: `en-US`, `de-DE`, `ja-JP`. Always `encodeURIComponent` the token. Do not commit or log the token.
+
 - Secret name: `SANITY_TEST_STUDIO_AUTH_TOKEN`.
 - Pre-auth chrome (login / workspace picker) often stays on a default locale; **full UI translation is visible after auth** inside a locale workspace. That is expected.
 
