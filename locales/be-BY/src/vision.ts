@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Выканаць запыт',
   /** Label for saving a query */
-  'action.save-personal-copy': undefined, // 'Save personal copy'
+  'action.save-personal-copy': 'Захаваць асабісты экзэмпляр',
   /** Label for saving a personal query */
-  'action.save-personal-query': undefined, // 'Save as personal'
+  'action.save-personal-query': 'Захаваць як асабісты',
   /** Label for saving a query */
   'action.save-query': 'Захаваць запыт',
   /** Label for saving a shared query */
-  'action.save-shared-query': undefined, // 'Save as shared'
+  'action.save-shared-query': 'Захаваць як агульны',
   /** Label for unsharing a query */
-  'action.unshare': undefined, // 'Unshare'
+  'action.unshare': 'Адмяніць агульны доступ',
   /** Label for updating a query */
   'action.update': 'Абнавіць',
 
   /** Label for actions user can take */
   'label.actions': 'Дзеянні',
   /** Label for all saved queries */
-  'label.all': undefined, // 'All'
+  'label.all': 'Усе',
   /** Label for saved queries that have been edited */
   'label.edited': 'Адрэдагавана',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'Падзяліцца',
   /** Label for query type "shared" */
-  'label.shared': undefined, // 'Shared'
+  'label.shared': 'Агульны',
   /** Label for saved query type "team" */
   'label.team': 'Каманда',
   /** Label for untitled query fallback */
-  'label.untitled-query': undefined, // 'Untitled'
+  'label.untitled-query': 'Без назвы',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': "Параметры не з'яўляюцца сапраўдным JSON",
@@ -95,15 +95,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'Памылка пры захаванні запыту',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': undefined, // 'Personal copy saved'
+  'save-query.personal-copy-success': 'Асабісты экзэмпляр захаваны',
   /** Warning displayed before sharing a query */
-  'save-query.share-warning': undefined, // 'Shared queries are stored as documents in your dataset and count toward your document quota.'
+  'save-query.share-warning':
+    'Агульныя запыты захоўваюцца як дакументы ў вашым dataset і ўлічваюцца ў вашай квоце дакументаў.',
   /** Save shared query success label */
-  'save-query.shared-success': undefined, // 'Shared query saved'
+  'save-query.shared-success': 'Агульны запыт захаваны',
   /** Save success label */
   'save-query.success': 'Запыт захаваны',
   /** Save unshared query success label */
-  'save-query.unshared-success': undefined, // 'Query moved to personal'
+  'save-query.unshared-success': 'Запыт перанесены ў асабістыя',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Версія API',

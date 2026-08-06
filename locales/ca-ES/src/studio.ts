@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     "Error en inserir l'actiu. Consulta la consola per a més informació.",
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': "No s'han pogut carregar els recursos",
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Carrega més',
   /** Text shown when selecting a file but there's no files to select from
@@ -232,13 +234,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Anar al mes anterior',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': "Anar a l'any anterior",
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Avui',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Anar a avui',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Demà',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Ahir',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Incloure hora',
@@ -333,7 +331,6 @@ export default removeUndefinedLocaleResources({
     'Consulta la consola de desenvolupadors per a més informació',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': "Renderitzar els canvis d'aquest camp ha provocat un error",
-  /* Error description when changes could not be loaded */
   'changes.error-description': "No podem carregar els canvis d'aquest document.",
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Alguna cosa ha anat malament',
@@ -374,7 +371,6 @@ export default removeUndefinedLocaleResources({
     'Edita el document o selecciona una versió anterior en la línia de temps per veure una llista de canvis aparèixer en aquest panell.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'No hi ha canvis',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'No és possible seleccionar aquest esdeveniment',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Anotació afegida',
@@ -425,7 +421,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'Història',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description': undefined, // 'This field is not defined in the schema. Values are shown as JSON.'
+  'changes.unknown-schema-field.description':
+    "Aquest camp no està definit a l'esquema. Els valors es mostren com a JSON.",
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Esborrany',
 
@@ -446,6 +443,9 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.label': 'Problemes de configuració',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': "S'han trobat problemes de configuració",
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Ordena per {{title}}',
@@ -485,6 +485,94 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} canvis no resolts a la versió {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Cancel·la',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    "Quina facilitat o dificultat té la nova versió de l'inventari per utilitzar-la?",
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtra {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'visualitzant',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Tots els usuaris (Per defecte)',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Cancel·la',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 document',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} documents',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Dataset no disponible',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Datasets no disponibles',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} en un altre dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} en {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': "Copia l'ID al porta-retalls",
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID del document',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    "No s'ha pogut copiar l'ID del document",
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID del projecte',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Elimina (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Elimina ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    "S'ha produït un error en intentar eliminar aquest document. Normalment això significa que hi ha altres documents que hi fan referència.",
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 altra referència no mostrada',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} altres referències no mostrades',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    "No podem mostrar metadades per a aquestes referències a causa d'un token d'accés que falta per als datasets relacionats.",
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Previsualització no disponible',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 document fa referència a "<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} documents fan referència a "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'És possible que no pugueu eliminar "<DocumentTitle/>" perquè els documents següents hi fan referència:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Elimina {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Elimina {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'variants',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'versió',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versions',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Creat {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -507,6 +595,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'El desament està trigant més del previst',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    "El document s'ha obert amb un valor buit. {{errorMessage}}",
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': "No s'ha pogut resoldre el valor inicial",
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'No s\'ha trobat el tipus de document "{{type}}"',
 
@@ -1080,6 +1176,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Cita',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Afegeix una columna al final',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Afegeix una fila al final',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Controlador de columna',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Elimina la columna',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Elimina la fila',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Elimina la taula',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Fila de capçalera',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Insereix aquí',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Opcions de la taula',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Controlador de fila',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Selecciona la taula',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Esborrar',
   /** Label for action to copy the current item (used within arrays) */
@@ -1287,6 +1405,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Permisos insuficients',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'La vostra sessió ja no és vàlida. Inicieu sessió de nou.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'La vostra sessió ha caducat. Inicieu sessió de nou.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Heu tancat la sessió',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Error inesperat: {{error}}',
 
@@ -1352,7 +1477,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': "La imatge que s'està pujant",
 
-  /* Relative time, just now */
   'relative-time.just-now': 'ara mateix',
 
   /** Action message to add document to new release */
@@ -1410,7 +1534,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Veure esborranys programats',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programat per ser publicat el {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variant',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} variants',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} versió',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} versions',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Esborrany',
@@ -1433,6 +1563,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Sense edicions',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'No publicat',
+  'release.chip.tooltip.other-variants_one': 'Una variant',
+  'release.chip.tooltip.other-variants_other': '{{count}} variants',
   'release.chip.tooltip.other-versions_one': 'Una versió addicional fora de les publicacions',
   'release.chip.tooltip.other-versions_other':
     '{{count}} versions addicionals fora de les publicacions',
@@ -1774,37 +1906,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>té</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>té</Operator> <Value>{{count}} elements</Value>',
   'search.operator.array-count-equal.name': 'la quantitat és',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>té ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>té ></Operator> <Value>{{count}} elements</Value>',
   'search.operator.array-count-gt.name': 'quantitat més gran que',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>té ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>té ≥</Operator> <Value>{{count}} elements</Value>',
   'search.operator.array-count-gte.name': 'quantitat més gran o igual a',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>té <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>té <</Operator> <Value>{{count}} elements</Value>',
   'search.operator.array-count-lt.name': 'quantitat menor que',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>té ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>té ≤</Operator> <Value>{{count}} elements</Value>',
   'search.operator.array-count-lte.name': 'quantitat menor o igual a',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>no té</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1817,35 +1943,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>té entre</Operator> <Value>{{from}} → {{to}} elements</Value>',
   'search.operator.array-count-range.name': 'la quantitat està entre',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inclou</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inclou',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>no inclou</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'no inclou',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inclou</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inclou',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>no inclou</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'no inclou',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'és',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'no és',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'és',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'no és',
@@ -1858,160 +1976,120 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'és',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>és després</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'després',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>és abans</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'abans',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'és',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>és en els últims</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'últims',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'no és',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>és entre</Operator> <Value/>',
   'search.operator.date-range.name': 'és entre',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>és després</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'després',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>és abans</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'abans',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'és',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>està en els últims</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'últims',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'no és',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>està entre</Operator> <Value/>',
   'search.operator.date-time-range.name': 'està entre',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>és</Operator> <Value>no buit</Value>',
   'search.operator.defined.name': 'no buit',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>és</Operator> <Value>buit</Value>',
   'search.operator.not-defined.name': 'buit',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'és',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'més gran que',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'més gran o igual a',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'menys que',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'menys o igual a',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'no és',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>està entre</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'està entre',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>conté</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'conté',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'és',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>no conté</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'no conté',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'no és',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fitxer',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'imatge',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'document',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'és',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'no és',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>conté</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'conté',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'és',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>no conté</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'no conté',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'no és',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>conté</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'conté',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'és',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>és</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'és',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'no és',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>no conté</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'no conté',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>no és</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'no és',
@@ -2037,30 +2115,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Estat de la configuració',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Cerqueu una ciutat o una zona horària',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Seleccioneu la zona horària local',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'La zona horària seleccionada canviarà com es representen les dates en els llançaments de contingut.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'La zona horària seleccionada canviarà com es representen les dates només per a aquesta entrada en aquest document.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'La zona horària seleccionada canviarà com es representen les dates en les programacions.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'hora local',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Zona horària',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Mostrant llançaments a {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Mostrant <em>{{title}}</em> a {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Mostrant programacions a {{alternativeName}} GMT{{offset}}',
 
@@ -2098,7 +2166,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revisions del document',
   /** Label for loading history */
   'timeline.loading-history': "Carregant l'historial…",
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'No hi ha esdeveniments anteriors',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Creat',

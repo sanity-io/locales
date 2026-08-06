@@ -332,8 +332,7 @@ export default removeUndefinedLocaleResources({
     'Existující koncept {{draftDocumentsLength}} dokumentu bude zahozen, aby koncepty odpovídaly publikovanému vydání. Nepublikované změny konceptu budou ztraceny.',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
   'publish-dialog.confirm-publish.update-drafts-description_other':
-    'Existující koncepty {{draftDocumentsLength}} dokumentů budou zahozeny, aby koncepty odpovídaly publikovanému vydání. Nepublikované změny konceptů budou ztraceny.',
-  /** Label for when documents in release have validation errors */
+    'Existující koncepty {{draftDocumentsLength}} dokumentů budou zahozeny, aby koncepty odpovídaly publikovanému vydání. Nepublikované změny konceptů budou ztraceny.',  /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Některé dokumenty obsahují chyby ověření',
   /** Label for when documents are being validated */
   'publish-dialog.validation.loading': 'Ověřování dokumentů...',
@@ -512,8 +511,7 @@ export default removeUndefinedLocaleResources({
   'toast.publish.error': "Nepodařilo se publikovat '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
   'toast.publish.update-drafts-error':
-    'Vydání bylo publikováno, ale existující koncepty nebylo možné aktualizovat: {{error}}',
-  /** Text for toast when release has reverted release successfully staged */
+    'Vydání bylo publikováno, ale existující koncepty nebylo možné aktualizovat: {{error}}',  /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Vydání pro vrácení '{{title}}' bylo úspěšně vytvořeno. <Link/>",
   /** Link text for toast link to the generated revert release */
   'toast.revert-stage.success-link': 'Zobrazit vydání pro vrácení',

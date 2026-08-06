@@ -61,23 +61,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': '摘要',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': '已新增文件版本',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '已封存 <strong>{{releaseTitle}}</strong> 版本',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '已建立 <strong>{{releaseTitle}}</strong> 版本 <ScheduleTarget>目標為 </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': '已捨棄文件版本',
   'activity.event.edit': '將版本時間設定為 <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': '盡快',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': '未決定',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '已發佈 <strong>{{releaseTitle}}</strong> 版本',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': '已標記為已排程',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '已取消封存 <strong>{{releaseTitle}}</strong> 版本',
@@ -306,6 +300,11 @@ export default removeUndefinedLocaleResources({
     '「<strong>{{title}}</strong>」版本及其 {{releaseDocumentsLength}} 份文件將會發布。',
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title': '您確定要發布此版本及所有文件版本嗎？',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': '更新現有草稿',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}} 份文件的現有草稿將被捨棄，以使草稿與已發布的 release 保持一致。未發布的草稿變更將會遺失。',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '部分文件有驗證錯誤',
   /** Label for when documents are being validated */
@@ -473,6 +472,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': '「{{title}}」版本已成功還原',
   /** Text for toast when release failed to publish */
   'toast.publish.error': '發佈「<strong>{{title}}</strong>」失敗：{{error}}',
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': '該 release 已發布，但現有草稿無法更新：{{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': '「{{title}}」的還原版本已成功建立。<Link/>',
   /** Link text for toast link to the generated revert release */

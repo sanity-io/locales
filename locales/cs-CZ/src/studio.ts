@@ -493,7 +493,7 @@ export default removeUndefinedLocaleResources({
   /** The document inventory title (plural) */
   'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': 'prohlížení',
+  'document-group-inventory.viewing-item-label': 'zobrazeno',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
@@ -543,7 +543,7 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.confirm-button.text_other': 'Smazat ({{count}})',
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
-    'Při pokusu o smazání tohoto dokumentu došlo k chybě. To obvykle znamená, že na něj odkazují jiné dokumenty.',
+    'Při pokusu o smazání tohoto dokumentu došlo k chybě. To obvykle znamená, že existují jiné dokumenty, které na něj odkazují.',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'document-group.delete.other-reference-count.title_one': '1 další odkaz není zobrazen',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
@@ -555,7 +555,7 @@ export default removeUndefinedLocaleResources({
   /** Appears when unable to render a document preview in the referring document list */
   'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.title': 'Náhled není k dispozici',
+  'document-group.delete.preview-item.preview-unavailable.title': 'Náhled není dostupný',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
   'document-group.delete.referring-document-count.text_one':
     '1 dokument odkazuje na „<DocumentTitle/>"',
@@ -1195,7 +1195,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the table menu item that deletes the table */
   'inputs.portable-text.table.delete-table': 'Smazat tabulku',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': 'Řádek záhlaví',
+  'inputs.portable-text.table.header-row': 'Záhlaví řádku',
   /** Aria label for the dots that insert a row or column at a boundary */
   'inputs.portable-text.table.insert-here': 'Vložit zde',
   /** Aria label for the table menu button */
