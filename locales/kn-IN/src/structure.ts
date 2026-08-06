@@ -172,7 +172,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'ನೀವು ಇದನ್ನು ತೆರೆದ ನಂತರ ಈ ಉಲ್ಲೇಖವನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': undefined, // 'Add to bundle'
+  'banners.release.action.add-to-bundle': 'Bundle ಗೆ ಸೇರಿಸಿ',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'ಬಿಡುಗಡೆಗೆ ಸೇರಿಸಿ',
   /** The text that appears for the action button to add the current document to the global release */
@@ -475,7 +475,7 @@ export default removeUndefinedLocaleResources({
     'ಈ ಟೈಪ್‌ಗೆ ಬರುವ ಉಲ್ಲೇಖಗಳು ನಿಗದಿತವಾಗಿಲ್ಲ, ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಾಖಲೆಗಳನ್ನು ನೋಡಿ.',
 
   /** The text shown if there are no incoming references in the inspector */
-  'incoming-references-pane.no-references': undefined, // 'No incoming references found.'
+  'incoming-references-pane.no-references': 'ಯಾವುದೇ ಒಳಬರುವ ಉಲ್ಲೇಖಗಳು ಕಂಡುಬಂದಿಲ್ಲ.',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': 'ಈ ಟೈಪ್‌ನ ಉಲ್ಲೇಖಗಳು ಕಾಣಿಸಿಲ್ಲ.',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
@@ -496,10 +496,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'ಸಂಕ್ಷಿಪ್ತ ನೋಟ',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'ವಿವರವಾದ ನೋಟ',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'ಡೀಫಾಲ್ಟ್ ವೀಕ್ಷಣೆ',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'ಈಗಾಗಲೇ ಡೀಫಾಲ್ಟ್ ವೀಕ್ಷಣೆ ಬಳಸಲಾಗುತ್ತಿದೆ',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'ಸೃಷ್ಟಿಸಲಾದ ಪ್ರಕಾರ ವರ್ಗಾವಣೆ',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'ಕೊನೆಯಾಗಿ ಸಂಪಾದಿಸಲಾದ ಪ್ರಕಾರ ವರ್ಗಾವಣೆ',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'ಡೀಫಾಲ್ಟ್ ವಿಂಗಡಣೆ',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'ಈಗಾಗಲೇ ಡೀಫಾಲ್ಟ್ ವಿಂಗಡಣೆ ಕ್ರಮ ಬಳಸಲಾಗುತ್ತಿದೆ',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'ದಾಖಲೆ ಪ್ರಕಾರ ಸೇರಿಸುವ ಬಗ್ಗೆ ಕಲಿಯಿರಿ →',
@@ -568,8 +577,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'ಪಟ್ಟಿಯನ್ನು ಹುಡುಕಿ',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'ಪಟ್ಟಿಯನ್ನು ಹುಡುಕಿ',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'ಹುಡುಕಾಟ ಫಲಿತಾಂಶದ ಕ್ರಮವನ್ನು ಬದಲಾಯಿಸಿ',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}} ಮೂಲಕ ವಿಂಗಡಿಸಲಾಗಿದೆ',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'ಪ್ರಸ್ತುತತೆ',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'ಪ್ರಸ್ತುತತೆ ಮೂಲಕ ವಿಂಗಡಿಸಲಾಗಿದೆ',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
-  'panes.document-list-pane.sort-order.disabled-reason': undefined, // 'This sorting option uses fields that are not part of this document type'
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'ಈ ವಿಂಗಡಣೆ ಆಯ್ಕೆಯು ಈ ದಾಖಲೆ ಪ್ರಕಾರದ ಭಾಗವಲ್ಲದ ಕ್ಷೇತ್ರಗಳನ್ನು ಬಳಸುತ್ತದೆ',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'ವಿವರಗಳು',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -604,7 +622,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion': undefined, // 'Version was published'
+  'panes.document-operation-results.operation-success_publishVersion': 'ಆವೃತ್ತಿಯನ್ನು ಪ್ರಕಟಿಸಲಾಯಿತು',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ',
