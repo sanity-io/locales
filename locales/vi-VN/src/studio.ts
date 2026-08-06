@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Lỗi khi chèn tài sản. Xem console để biết thêm thông tin.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Không thể tải tài nguyên',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Tải thêm',
   /** Text shown when selecting a file but there's no files to select from
@@ -221,13 +223,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Đi tới tháng trước',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Đi tới năm trước',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Hôm nay',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Đi tới hôm nay',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Ngày mai',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Hôm qua',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Bao gồm thời gian',
@@ -312,7 +310,6 @@ export default removeUndefinedLocaleResources({
     'Kiểm tra bảng điều khiển của nhà phát triển để biết thêm thông tin',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Hiển thị các thay đổi cho trường này gây ra lỗi',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Chúng tôi không thể tải các thay đổi cho tài liệu này.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Đã xảy ra lỗi',
@@ -353,7 +350,6 @@ export default removeUndefinedLocaleResources({
     'Chỉnh sửa tài liệu hoặc chọn một phiên bản cũ hơn trong dòng thời gian để xem danh sách các thay đổi xuất hiện trong bảng điều khiển này.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Không có thay đổi',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Không thể chọn sự kiện này',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Đã thêm chú thích',
@@ -428,6 +424,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Phát hiện vấn đề cấu hình',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sắp xếp theo {{title}}',
 
@@ -464,6 +463,80 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} thay đổi chưa được giải quyết trong phiên bản {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Hủy',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Phiên bản inventory mới dễ hay khó sử dụng?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Lọc {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'đang xem',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Tất cả người dùng (Mặc định)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Tạo biến thể',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Tạo biến thể cho {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Dưới dạng bản nháp',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Vào một bản phát hành',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Hoặc xem các biến thể hiện có',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Hủy',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} tài liệu',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Các dataset không khả dụng',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} trong {{count}} dataset',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Sao chép ID vào clipboard',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID tài liệu',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': 'Không thể sao chép ID tài liệu',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID dự án',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Xóa ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Đã xảy ra lỗi khi cố gắng xóa tài liệu này. Điều này thường có nghĩa là có các tài liệu khác đang tham chiếu đến nó.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} tham chiếu khác không được hiển thị',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Chúng tôi không thể hiển thị siêu dữ liệu cho các tham chiếu này do thiếu mã truy cập cho các dataset liên quan.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Xem trước không khả dụng',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} tài liệu tham chiếu đến "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Bạn có thể không thể xóa "<DocumentTitle/>" vì các tài liệu sau đây tham chiếu đến nó:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Xóa {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'biến thể',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'phiên bản',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Đã tạo {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -486,6 +559,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Quá trình lưu đang mất nhiều thời gian hơn dự kiến',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Tài liệu được mở với giá trị trống. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Không thể xác định giá trị ban đầu',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Không tìm thấy loại tài liệu "{{type}}"',
 
@@ -1028,6 +1109,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Bình thường',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Trích dẫn',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Thêm cột vào cuối',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Thêm hàng vào cuối',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Tay cầm cột',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Xóa cột',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Xóa hàng',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Xóa bảng',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Hàng tiêu đề',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Chèn vào đây',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Tùy chọn bảng',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Tay cầm hàng',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Chọn bảng',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Xóa',
   /** Label for action to copy the current item (used within arrays) */
@@ -1233,6 +1336,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Quyền không đủ',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Phiên của bạn không còn hợp lệ. Vui lòng đăng nhập lại.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Phiên của bạn đã hết hạn. Vui lòng đăng nhập lại.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Bạn đã đăng xuất',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Lỗi không mong đợi: {{error}}',
 
@@ -1299,7 +1409,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Hình ảnh đang được tải lên',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'vừa xong',
 
   /** Action message to add document to new release */
@@ -1358,6 +1467,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Xem bản nháp đã lên lịch',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Đã lên lịch xuất bản vào {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} biến thể',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} phiên bản',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Bản nháp',
@@ -1380,6 +1492,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Không có chỉnh sửa',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Chưa được xuất bản',
+  'release.chip.tooltip.other-variants_other': '{{count}} biến thể',
   'release.chip.tooltip.other-versions_other':
     '{{count}} phiên bản bổ sung ngoài các bản phát hành',
   /** Label for tooltip in chip with the published date */
@@ -1717,35 +1830,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>có từ</Operator> <Value>{{from}} → {{to}} mục</Value>',
   'search.operator.array-count-range.name': 'số lượng nằm giữa',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>bao gồm</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'bao gồm',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>không bao gồm</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'không bao gồm',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>bao gồm</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'bao gồm',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>không bao gồm</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'không bao gồm',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'là',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'không phải là',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'là',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'không phải là',
@@ -1758,161 +1863,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'là',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>sau</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'sau',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>trước</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'trước',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'là',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>trong những ngày cuối cùng</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'cuối cùng',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'không phải là',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>nằm giữa</Operator> <Value/>',
   'search.operator.date-range.name': 'nằm giữa',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>sau</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'sau',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>trước</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'trước',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'là',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>trong những ngày cuối cùng</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'cuối cùng',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'không phải là',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>nằm giữa</Operator> <Value/>',
   'search.operator.date-time-range.name': 'nằm giữa',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>là</Operator> <Value>không trống</Value>',
   'search.operator.defined.name': 'không trống',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>là</Operator> <Value>trống</Value>',
   'search.operator.not-defined.name': 'trống',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'là',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'lớn hơn',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'lớn hơn hoặc bằng',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'nhỏ hơn',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'nhỏ hơn hoặc bằng',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'không phải là',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>nằm trong khoảng</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'nằm trong khoảng',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>chứa</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'chứa',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'là',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>không chứa</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'không chứa',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'không phải là',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'tệp',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'hình ảnh',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'tài liệu',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'là',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'không phải là',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>chứa</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'chứa',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'là',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>không chứa</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'không chứa',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'không phải là',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>chứa</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'chứa',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'là',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>là</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'là',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'không phải là',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>không chứa</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'không chứa',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>không phải là</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'không phải là',
@@ -1938,30 +2003,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Trạng thái cấu hình',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Tìm kiếm một thành phố hoặc múi giờ',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Chọn múi giờ địa phương',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Múi giờ được chọn sẽ thay đổi cách ngày tháng được biểu diễn trong các bản phát hành nội dung.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Múi giờ được chọn sẽ thay đổi cách ngày tháng được biểu diễn chỉ cho đầu vào này trong tài liệu này.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Múi giờ được chọn sẽ thay đổi cách ngày tháng được biểu diễn trong các lịch trình.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'giờ địa phương',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Múi giờ',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Hiển thị các bản phát hành trong {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Hiển thị <em>{{title}}</em> trong {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Hiển thị các lịch trình trong {{alternativeName}} GMT{{offset}}',
 
@@ -1999,7 +2054,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Các bản sửa đổi tài liệu',
   /** Label for loading history */
   'timeline.loading-history': 'Đang tải lịch sử…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Không có sự kiện trước đó',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Đã tạo',

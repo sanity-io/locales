@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Tóm tắt',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Đã thêm một phiên bản tài liệu',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Đã lưu trữ bản phát hành <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Đã tạo bản phát hành <strong>{{releaseTitle}}</strong> <ScheduleTarget>nhắm mục tiêu </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Đã loại bỏ một phiên bản tài liệu',
   'activity.event.edit': 'Đặt thời gian phát hành thành <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Càng sớm càng tốt',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Chưa quyết định',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Đã xuất bản bản phát hành <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Đã đánh dấu là đã lên lịch',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Đã hủy lưu trữ bản phát hành <strong>{{releaseTitle}}</strong>',
@@ -317,6 +311,11 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Bạn có chắc chắn muốn xuất bản bản phát hành và tất cả các phiên bản tài liệu không?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Cập nhật bản nháp hiện có',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Các bản nháp hiện có của {{draftDocumentsLength}} tài liệu sẽ bị loại bỏ để các bản nháp khớp với bản phát hành đã xuất bản. Các thay đổi bản nháp chưa xuất bản sẽ bị mất.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Một số tài liệu có lỗi xác thực',
   /** Label for when documents are being validated */
@@ -492,6 +491,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Bản phát hành '{{title}}' đã được hoàn nguyên thành công",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Không thể xuất bản '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Bản phát hành đã được xuất bản, nhưng các bản nháp hiện có không thể được cập nhật: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Bản phát hành hoàn nguyên cho '{{title}}' đã được tạo thành công. <Link/>",

@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Không thể lên lịch Draft do có lỗi xác thực trong bản nháp hiện tại.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Lên lịch chưa khả dụng cho các biến thể.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Tìm hiểu về lên lịch',
