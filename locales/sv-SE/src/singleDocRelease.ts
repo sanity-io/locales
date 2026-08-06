@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Kan inte schemalägga utkast på grund av valideringsfel i det aktuella utkastet.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant':
+    'Schemaläggning är ännu inte tillgängligt för varianter.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Lär dig om schemaläggning',

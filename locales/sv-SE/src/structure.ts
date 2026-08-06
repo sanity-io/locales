@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Detta dokument kan inte raderas eftersom det finns inom schemalagda utgåvor',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Radera',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,6 +39,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operationen är inte redo',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Kassera ändringar',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -43,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Detta dokument existerar inte än så det finns inget att duplicera',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplicera',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -51,8 +60,14 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Redan publicerad',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publicerad för {{timeSincePublished}} sedan',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable':
+    'Den här versionen publiceras som en del av sin release',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operationen är inte redo',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publicera',
   /** Label for the "Publish" document action */
@@ -96,6 +111,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operationen är inte redo',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Avpublicera',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -223,6 +241,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Visar den nuvarande <strong>publicerade</strong> versionen:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Skapa variant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Den valda varianten <VariantName>{{name}}</VariantName> kunde inte hittas.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Ett fel uppstod när dokumentet lades till i varianten: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Fel vid tillägg av dokument till variant',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Det finns inget <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle>-variantdokument för <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Vänta medan dokumentet läggs till i varianten. Det bör inte ta mer än några sekunder.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Lägger till dokument i variant…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -281,9 +317,7 @@ export default removeUndefinedLocaleResources({
     'Denna vy visar de ändringar som skett i en specifik version av detta dokument. Välj en annan version för att se dess ändringar',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Från',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Historik',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Granska ändringar',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Till',
@@ -414,12 +448,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Okänd schematyp: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Vart tog versionsknapparna vägen?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Stäng',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspekterar <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Inget värde',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Stäng panel',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Ett fel uppstod när den här panelen renderades.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Försök igen',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Något gick fel',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspektera',
   /** the placeholder text for the search input on the inspect dialog */
@@ -428,6 +473,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Analyserad',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Rå JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'Dokumentet finns inte i det valda perspective ännu.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Detta formulär är dolt',
@@ -440,6 +489,21 @@ export default removeUndefinedLocaleResources({
     'Vänligen vänta medan dokumentet synkroniseras. Detta sker vanligtvis precis efter att dokumentet har publicerats, och det bör inte ta mer än några sekunder',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserar dokument…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Vi fortsätter att försöka. Dina ändringar sparas i din webbläsare under tiden.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Dina ändringar sparas inte',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Redigering återupptas så snart dina ändringar har sparats.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Sparar dina ändringar…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Redigering är pausad tills de sparas. Dina ändringar finns kvar i din webbläsare, så håll den här fliken öppen medan vi fortsätter att försöka.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Dina ändringar sparas fortfarande inte',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Lägg till i favoriter',
@@ -500,10 +564,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompakt vy',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaljerad vy',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Standardvy',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Använder redan standardvyn',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortera efter Skapad',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortera efter Senast redigerad',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Standardsortering',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Använder redan standardsorteringsordningen',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lär dig hur du lägger till en dokumenttyp →',
@@ -570,6 +643,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Sök i listan',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Sök i listan',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Ändra sorteringsordning för sökresultat',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sorterat efter {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevans',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sorterat efter relevans',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Det här sorteringsalternativet använder fält som inte ingår i den här dokumenttypen',
@@ -629,6 +710,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Detta dokument finns inte, och ingen schematyp specificerades för det.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Läser in dokument…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Laddar…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
