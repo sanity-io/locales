@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Ezt a dokumentumot nem lehet törölni, mivel az időzített kiadások között szerepel',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'A kiválasztott kiadás vagy változat nem tartalmazza ezt a dokumentumot',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Törlés',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -37,6 +40,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Ez a dokumentum nincs közzétéve',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'A művelet még nem kész',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'A kiválasztott kiadás vagy változat nem tartalmazza ezt a dokumentumot',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Változtatások elvetése',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -44,6 +50,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Ez a dokumentum még nem létezik, így nincs mit duplikálni',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'A kiválasztott kiadás vagy változat nem tartalmazza ezt a dokumentumot',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplikálás',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -52,8 +61,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Már közzétéve',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Közzétéve {{timeSincePublished}} óta',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Ez a verzió a kiadás részeként kerül közzétételre',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'A művelet még nem kész',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'A kiválasztott kiadás vagy változat nem tartalmazza ezt a dokumentumot',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Közzététel',
   /** Label for the "Publish" document action */
@@ -96,6 +110,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Ez a dokumentum nincs közzétéve',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'A művelet nem kész',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'A kiválasztott kiadás vagy változat nem tartalmazza ezt a dokumentumot',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Közzététel visszavonása',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -223,6 +240,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'A jelenlegi <strong>közzétett</strong> verzió megjelenítése:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Változat létrehozása',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'A kiválasztott <VariantName>{{name}}</VariantName> változat nem található.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Hiba történt a dokumentum változathoz való hozzáadásakor: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Hiba a dokumentum változathoz való hozzáadásakor',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Nem létezik <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> változatú dokumentum a <VariantBadge>{{variantTitle}}</VariantBadge> számára.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Kérjük, várjon, amíg a dokumentum hozzáadódik a változathoz. Ez nem tarthat tovább néhány másodpercnél.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Dokumentum hozzáadása a változathoz…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Új {{schemaType}}',
@@ -281,9 +316,7 @@ export default removeUndefinedLocaleResources({
     'Ez a nézet a dokumentum egy adott verziójában bekövetkezett változásokat mutatja. Válasszon egy másik verziót a változások megtekintéséhez',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Honnan',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Előzmények',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Változások áttekintése',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Hová',
@@ -416,12 +449,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Ismeretlen sémátípus: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Hová tűntek a verzió gombok?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Bezárás',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/> megtekintése',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Nincs érték',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Panel bezárása',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Hiba történt a panel megjelenítése közben.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Újrapróbálás',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Valami hiba történt',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Megtekintés',
   /** the placeholder text for the search input on the inspect dialog */
@@ -430,6 +474,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Elemzett',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Nyers JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'A dokumentum még nem létezik a kiválasztott perspective-ben.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ez az űrlap rejtett',
@@ -442,6 +490,21 @@ export default removeUndefinedLocaleResources({
     'Kérjük, várj, amíg a dokumentum szinkronizálódik. Ez általában közvetlenül a dokumentum közzététele után történik, és nem kellene többet igénybe vennie néhány másodpercnél',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Dokumentum szinkronizálása…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Folyamatosan próbálkozunk. A módosítások addig a böngészőjében vannak tárolva.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'A módosítások nem mentődnek',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'A szerkesztés azonnal folytatódik, amint a módosítások mentésre kerülnek.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Módosítások mentése…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'A szerkesztés szünetel, amíg a mentés meg nem történik. A módosítások a böngészőjében vannak tárolva, ezért tartsa nyitva ezt a lapot, amíg tovább próbálkozunk.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'A módosítások még mindig nem mentődnek',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Hozzáadás a kedvencekhez',
@@ -504,10 +567,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Tömör nézet',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Részletes nézet',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Alapértelmezett nézet',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Már az alapértelmezett nézetet használja',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Rendezés létrehozás szerint',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Rendezés utoljára szerkesztett szerint',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Alapértelmezett rendezés',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Már az alapértelmezett rendezési sorrendet használja',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Tudj meg többet a dokumentumtípus hozzáadásáról →',
@@ -575,6 +647,15 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Lista keresése',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Lista keresése',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label':
+    'Keresési eredmények sorrendjének módosítása',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Rendezve: {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevancia',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Relevancia szerint rendezve',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Ez a rendezési lehetőség olyan mezőket használ, amelyek nem részei ennek a dokumentumtípusnak',
@@ -637,6 +718,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Ez a dokumentum nem létezik, és nem lett meghatározva hozzá sémátípus.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Dokumentum betöltése…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Betöltés…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

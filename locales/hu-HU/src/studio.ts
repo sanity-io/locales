@@ -128,6 +128,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Hiba történt az eszköz beillesztésekor. További információkért nézze meg a konzolt.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Nem sikerült betölteni az eszközöket',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Több betöltése',
   /** Text shown when selecting a file but there's no files to select from
@@ -232,13 +234,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Ugrás az előző hónapra',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Ugrás az előző évre',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Ma',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Ugrás a mai napra',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Holnap',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Tegnap',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Idő hozzáadása',
@@ -333,7 +331,6 @@ export default removeUndefinedLocaleResources({
     'További információkért ellenőrizze a fejlesztői konzolt',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Hiba történt a mező változásainak megjelenítésekor',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Nem sikerült betölteni a dokumentum változásait.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Valami hiba történt',
@@ -374,7 +371,6 @@ export default removeUndefinedLocaleResources({
     'Szerkessze a dokumentumot vagy válasszon egy régebbi verziót az idővonalon, hogy megjelenjen a változások listája ebben a panelben.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nincsenek változások',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Ezt az eseményt nem lehet kiválasztani',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Megjegyzés hozzáadva',
@@ -448,6 +444,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Konfigurációs problémák találhatók',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Rendezés {{title}} szerint',
 
@@ -486,6 +485,105 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} feloldatlan változás a {{versionName}} verzióban',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Mégse',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Mennyire könnyű vagy nehéz az új verziókönyvtárat használni?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}} szűrése',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'megtekintés alatt',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Minden felhasználó (Alapértelmezett)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Variáns létrehozása',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target':
+    'Variáns létrehozása ehhez: {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Piszkozatként',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Kiadásba',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Vagy meglévő variánsok megtekintése',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Mégse',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokumentum',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumentum',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasetek: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Nem elérhető dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Nem elérhető datasetek',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} egy másik datasetben',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} {{count}} datasetben',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Azonosító másolása a vágólapra',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Dokumentum azonosító',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'A dokumentum azonosító másolása sikertelen',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Projekt azonosító',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Törlés (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Törlés ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Hiba történt a dokumentum törlésének kísérlete során. Ez általában azt jelenti, hogy más dokumentumok hivatkoznak rá.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 másik hivatkozás nem jelenik meg',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} másik hivatkozás nem jelenik meg',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Ezekhez a hivatkozásokhoz nem tudjuk megjeleníteni a metaadatokat, mert hiányzik a hozzáférési token a kapcsolódó dataset-ekhez.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'Azonosító: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Az előnézet nem érhető el',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokumentum hivatkozik a(z) „<DocumentTitle/>" elemre',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumentum hivatkozik a(z) „<DocumentTitle/>" elemre',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Előfordulhat, hogy nem tudja törölni a(z) „<DocumentTitle/>" elemet, mert a következő dokumentumok hivatkoznak rá:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': '{{count}} {{subject}} törlése',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} {{subject}} törlése',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'változat',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'változat',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'verzió',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'verzió',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Létrehozva {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -508,6 +606,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'A mentés a vártnál tovább tart',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'A dokumentum üres értékkel nyílt meg. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'A kezdeti érték nem oldható fel',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'A "{{type}}" típusú dokumentum nem található',
 
@@ -1084,6 +1190,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normál',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Idézet',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Oszlop hozzáadása a végéhez',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Sor hozzáadása a végéhez',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Oszlop fogantyú',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Oszlop törlése',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Sor törlése',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Táblázat törlése',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Fejlécsor',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Beszúrás ide',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Táblázat beállításai',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Sor fogantyú',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Táblázat kijelölése',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Törlés',
   /** Label for action to copy the current item (used within arrays) */
@@ -1291,6 +1419,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nem megfelelő jogosultságok',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'A munkamenete már nem érvényes. Kérjük, jelentkezzen be újra.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'A munkamenete lejárt. Kérjük, jelentkezzen be újra.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Kijelentkezett',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Váratlan hiba: {{error}}',
 
@@ -1358,7 +1493,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'A kép jelenleg feltöltés alatt áll',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'épp most',
 
   /** Action message to add document to new release */
@@ -1417,7 +1551,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Ütemezett vázlatok megtekintése',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Közzétételre ütemezve erre a dátumra: {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} változat',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} változat',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} verzió',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} verziók',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Vázlat',
@@ -1440,6 +1580,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Nincsenek szerkesztések',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nincs közzétéve',
+  'release.chip.tooltip.other-variants_one': 'Egy változat',
+  'release.chip.tooltip.other-variants_other': '{{count}} változat',
   'release.chip.tooltip.other-versions_one': 'Egy további verzió a kiadásokon kívül',
   'release.chip.tooltip.other-versions_other': '{{count}} további verziók a kiadásokon kívül',
   /** Label for tooltip in chip with the published date */
@@ -1779,37 +1921,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>van</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>van</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-equal.name': 'mennyiség az',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>van ></Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>van ></Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gt.name': 'mennyiség több mint',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>van ≥</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>van ≥</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gte.name': 'mennyiség több vagy egyenlő',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator><</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator><</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lt.name': 'mennyiség kevesebb mint',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>≤</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>≤</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lte.name': 'mennyiség kevesebb vagy egyenlő',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{count}} elemet</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1822,35 +1958,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>van között</Operator> <Value>{{from}} → {{to}} elem</Value>',
   'search.operator.array-count-range.name': 'mennyiség között van',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>tartalmaz</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'tartalmaz',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'nem tartalmaz',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>tartalmaz</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'tartalmaz',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'nem tartalmazza',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'az',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>nem az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'nem az',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'az',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>nem az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'nem az',
@@ -1863,162 +1991,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'az',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>utána van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'utána van',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>előtte van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'előtte van',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'az',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>az utolsóban van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'az utolsóban van',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>nem az</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'nem az',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>között van</Operator> <Value/>',
   'search.operator.date-range.name': 'között van',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>utána van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'után',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>korábbi, mint</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'előtt',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>ez</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'ez',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>az utolsó</Operator> <Value>{{value}}</Value> időszakban van',
   'search.operator.date-time-last.name': 'utolsó',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'nem',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>között van</Operator> <Value/>',
   'search.operator.date-time-range.name': 'között van',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>van</Operator> <Value>nem üres</Value>',
   'search.operator.defined.name': 'nem üres',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>van</Operator> <Value>üres</Value>',
   'search.operator.not-defined.name': 'üres',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>ez</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'ez',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'nagyobb, mint',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'nagyobb vagy egyenlő',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'kisebb, mint',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'kisebb vagy egyenlő',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'nem',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>között van</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'között van',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'tartalmazza',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'az',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'nem tartalmazza',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'nem',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fájl',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'kép',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokumentum',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'az',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'nem',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'tartalmazza',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'az',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'nem tartalmazza',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'nem',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'tartalmazza',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'az',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'az',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'nem',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'nem tartalmazza',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'nem',
@@ -2044,30 +2132,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguráció állapota',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Keressen várost vagy időzónát',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Válassza ki a helyi időzónát',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'A kiválasztott időzóna megváltoztatja, hogy hogyan jelennek meg a dátumok a tartalomkiadásokban.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'A kiválasztott időzóna csak ennek a bevitelnek a dátumait változtatja meg ebben a dokumentumban.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'A kiválasztott időzóna megváltoztatja, hogy hogyan jelennek meg a dátumok az ütemezésekben.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'helyi idő',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Időzóna',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Kiadások megjelenítése {{alternativeName}} GMT{{offset}} szerint',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     '<em>{{title}}</em> megjelenítése {{alternativeName}} GMT{{offset}} szerint',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Ütemezések megjelenítése {{alternativeName}} GMT{{offset}} szerint',
 
@@ -2105,7 +2183,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentum revíziók',
   /** Label for loading history */
   'timeline.loading-history': 'Előzmények betöltése…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Nincsenek korábbi események',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Létrehozva',

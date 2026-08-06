@@ -74,7 +74,6 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Hozzászólás hozzáadása',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'A hozzászólások nem fedhetik egymást',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Hozzászólás hozzáadása',
