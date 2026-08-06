@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Podsumowanie',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Dodano wersję dokumentu',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Zarchiwizowano wydanie <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Utworzono wydanie <strong>{{releaseTitle}}</strong> <ScheduleTarget>z celem </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Odrzucono wersję dokumentu',
   'activity.event.edit': 'Ustawiono czas wydania na <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Jak najszybciej',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Niezdecydowany',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Opublikowano wydanie <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Oznaczono jako zaplanowane',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Przywrócono z archiwum wydanie <strong>{{releaseTitle}}</strong>',
@@ -315,6 +309,11 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Czy na pewno chcesz opublikować wydanie i wszystkie wersje dokumentów?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Zaktualizuj istniejące wersje robocze',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Istniejąca wersja robocza {{draftDocumentsLength}} dokumentu zostanie odrzucona, aby wersje robocze były zgodne z opublikowanym wydaniem. Nieopublikowane zmiany w wersji roboczej zostaną utracone.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Niektóre dokumenty zawierają błędy walidacji',
   /** Label for when documents are being validated */
@@ -486,6 +485,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Wydanie '{{title}}' zostało pomyślnie cofnięte",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Nie udało się opublikować '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Wydanie zostało opublikowane, ale nie udało się zaktualizować istniejących wersji roboczych: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Cofnięcie wydania dla '{{title}}' zostało pomyślnie utworzone. <Link/>",

@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Błąd podczas wstawiania zasobu. Więcej informacji w konsoli.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Nie udało się załadować zasobów',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Załaduj więcej',
   /** Text shown when selecting a file but there's no files to select from
@@ -220,13 +222,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Idź do poprzedniego miesiąca',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Idź do poprzedniego roku',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Dzisiaj',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Idź do dzisiaj',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Jutro',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Wczoraj',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Uwzględnij czas',
@@ -317,7 +315,6 @@ export default removeUndefinedLocaleResources({
     'Sprawdź konsolę deweloperską, aby uzyskać więcej informacji',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Renderowanie zmian w tym polu spowodowało błąd',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Nie możemy załadować zmian dla tego dokumentu.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Coś poszło nie tak',
@@ -358,7 +355,6 @@ export default removeUndefinedLocaleResources({
     'Edytuj dokument lub wybierz starszą wersję na osi czasu, aby zobaczyć listę zmian w tym panelu.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nie ma zmian',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Nie można wybrać tego zdarzenia',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Dodano adnotację',
@@ -433,6 +429,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Znaleziono problemy z konfiguracją',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sortuj według {{title}}',
 
@@ -468,6 +467,80 @@ export default removeUndefinedLocaleResources({
   /** Label for divergence in a single node */
   'divergence.unresolved-divergence_one': 'Nierozwiązana zmiana w wersji {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Anuluj',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Jak łatwa lub trudna jest w użyciu nowa wersja inwentarza?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtruj {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'wyświetlanie',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Wszyscy użytkownicy (domyślnie)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Utwórz wariant',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Utwórz wariant dla {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Jako wersja robocza',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Do wydania',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Lub wyświetl istniejące warianty',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Anuluj',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Niedostępny dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} w innym dataset',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopiuj ID do schowka',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID dokumentu',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Nie udało się skopiować ID dokumentu',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID projektu',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Usuń (1)',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Wystąpił błąd podczas próby usunięcia tego dokumentu. Zazwyczaj oznacza to, że istnieją inne dokumenty, które się do niego odwołują.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 inne odwołanie nie jest wyświetlane',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Nie możemy wyświetlić metadanych dla tych odwołań z powodu brakującego tokenu dostępu dla powiązanych datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Podgląd niedostępny',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument odwołuje się do „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Możliwe, że nie będziesz w stanie usunąć „<DocumentTitle/>", ponieważ następujące dokumenty się do niego odwołują:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Usuń {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'wariant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'wersja',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Utworzono {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -490,6 +563,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Zapisywanie trwa dłużej niż oczekiwano',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokument został otwarty z pustą wartością. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Nie można rozwiązać wartości początkowej',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Nie znaleziono typu dokumentu "{{type}}"',
 
@@ -1041,6 +1122,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normalny',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Cytat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Dodaj kolumnę na końcu',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Dodaj wiersz na końcu',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Uchwyt kolumny',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Usuń kolumnę',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Usuń wiersz',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Usuń tabelę',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Wiersz nagłówka',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Wstaw tutaj',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Opcje tabeli',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Uchwyt wiersza',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Zaznacz tabelę',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Wyczyść',
   /** Label for action to copy the current item (used within arrays) */
@@ -1245,6 +1348,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Niewystarczające uprawnienia',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Twoja sesja jest już nieważna. Zaloguj się ponownie.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Twoja sesja wygasła. Zaloguj się ponownie.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Zostałeś wylogowany',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Nieoczekiwany błąd: {{error}}',
 
@@ -1310,7 +1420,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Obraz jest aktualnie przesyłany',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'przed chwilą',
 
   /** Action message to add document to new release */
@@ -1366,6 +1475,9 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Zobacz zaplanowane szkice',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Zaplanowano do publikacji na {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} wariant',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} wersja',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Szkic',
@@ -1388,6 +1500,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Brak edycji',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nieopublikowane',
+  'release.chip.tooltip.other-variants_one': 'Jeden wariant',
   'release.chip.tooltip.other-versions_one': 'Jedna dodatkowa wersja poza wydaniami',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Opublikowano {{date}}',
@@ -1724,27 +1837,21 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>ma</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.name': 'ilość wynosi',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>ma ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.name': 'ilość większa niż',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>ma ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.name': 'ilość większa lub równa',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>ma <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.name': 'ilość mniejsza niż',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>ma ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.name': 'ilość mniejsza lub równa',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nie ma</Operator> <Value>{{count}} elementu</Value>',
   'search.operator.array-count-not-equal.name': 'ilość nie jest równa',
@@ -1755,35 +1862,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>ma między</Operator> <Value>{{from}} → {{to}} elementów</Value>',
   'search.operator.array-count-range.name': 'ilość jest pomiędzy',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'zawiera',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'nie zawiera',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'zawiera',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'nie zawiera',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'jest',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'nie jest',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'jest',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'nie jest',
@@ -1796,162 +1895,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'jest',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>jest po</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'po',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>jest przed</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'przed',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'jest',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>jest w ciągu ostatnich</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'ostatni',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'nie jest',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>jest pomiędzy</Operator> <Value/>',
   'search.operator.date-range.name': 'jest pomiędzy',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>jest po</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'po',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>jest przed</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'przed',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'jest',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>jest w ciągu ostatnich</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'ostatni',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'nie jest',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>jest pomiędzy</Operator> <Value/>',
   'search.operator.date-time-range.name': 'jest pomiędzy',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>jest</Operator> <Value>niepusty</Value>',
   'search.operator.defined.name': 'niepusty',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>jest</Operator> <Value>pusty</Value>',
   'search.operator.not-defined.name': 'pusty',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'jest',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'większy niż',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'większy lub równy',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'mniej niż',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'mniej niż lub równy',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'nie jest',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>jest pomiędzy</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'jest pomiędzy',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'zawiera',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'jest',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'nie zawiera',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'nie jest',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'plik',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'obraz',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'jest',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'nie jest',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'zawiera',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'jest',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'nie zawiera',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'nie jest',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'zawiera',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'jest',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>jest</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'jest',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'nie jest',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>nie zawiera</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'nie zawiera',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>nie jest</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'nie jest',
@@ -1977,30 +2036,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status konfiguracji',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Wyszukaj miasto lub strefę czasową',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Wybierz lokalną strefę czasową',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Wybrana strefa czasowa zmieni sposób wyświetlania dat w wydaniach treści.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Wybrana strefa czasowa zmieni sposób wyświetlania dat tylko dla tego pola wejściowego w tym dokumencie.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Wybrana strefa czasowa zmieni sposób wyświetlania dat w harmonogramach.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'czas lokalny',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Strefa czasowa',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Wyświetlanie wydań w {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Wyświetlanie <em>{{title}}</em> w {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Wyświetlanie harmonogramów w {{alternativeName}} GMT{{offset}}',
 
@@ -2038,7 +2087,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Wersje dokumentu',
   /** Label for loading history */
   'timeline.loading-history': 'Ładowanie historii…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Brak poprzednich wydarzeń',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Utworzono',

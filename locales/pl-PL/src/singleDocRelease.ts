@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Nie można zaplanować szkicu z powodu błędów walidacji w bieżącym szkicu.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Planowanie nie jest jeszcze dostępne dla wariantów.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Dowiedz się więcej o planowaniu',

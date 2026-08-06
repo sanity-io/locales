@@ -71,7 +71,6 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Dodaj komentarz',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'Komentarze nie mogą się nakładać',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Dodaj komentarz',

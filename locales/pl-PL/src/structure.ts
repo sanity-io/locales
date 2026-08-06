@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Ten dokument nie może zostać usunięty, ponieważ znajduje się w zaplanowanych publikacjach',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Usuń',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,6 +39,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Ten dokument nie jest opublikowany',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operacja nie jest gotowa',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Odrzuć zmiany',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -43,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Ten dokument jeszcze nie istnieje, więc nie ma nic do skopiowania',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplikuj',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -51,8 +60,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Już opublikowany',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Opublikowano {{timeSincePublished}} temu',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Ta wersja jest publikowana w ramach swojego wydania',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operacja nie jest gotowa',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publikuj',
   /** Label for the "Publish" document action */
@@ -95,6 +109,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Ten dokument nie jest opublikowany',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operacja nie jest gotowa',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Cofnij publikację',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -212,6 +229,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Pokazuje aktualną <strong>opublikowaną</strong> wersję:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Utwórz wariant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Nie można znaleźć wybranego wariantu <VariantName>{{name}}</VariantName>.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Wystąpił błąd podczas dodawania dokumentu do wariantu: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Błąd podczas dodawania dokumentu do wariantu',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Nie istnieje dokument wariantu <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> dla <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Proszę czekać, trwa dodawanie dokumentu do wariantu. Nie powinno to potrwać dłużej niż kilka sekund.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Dodawanie dokumentu do wariantu…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nowy {{schemaType}}',
@@ -270,9 +305,7 @@ export default removeUndefinedLocaleResources({
     'Ten widok pokazuje zmiany, które wystąpiły w określonej wersji tego dokumentu. Wybierz inną wersję, aby zobaczyć jej zmiany',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Od',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Historia',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Przejrzyj zmiany',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Do',
@@ -391,12 +424,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Nieznany typ schematu: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Gdzie zniknęły przyciski wersji?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Zamknij',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspekcja <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Brak wartości',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Zamknij panel',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Wystąpił błąd podczas renderowania tego panelu.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Spróbuj ponownie',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Coś poszło nie tak',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspekcja',
   /** the placeholder text for the search input on the inspect dialog */
@@ -405,6 +449,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Przetworzony',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Surowy JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'Dokument nie istnieje jeszcze w wybranym perspective.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ten formularz jest ukryty',
@@ -417,6 +465,21 @@ export default removeUndefinedLocaleResources({
     'Proszę czekać, aż dokument zostanie zsynchronizowany. Zwykle dzieje się to zaraz po opublikowaniu dokumentu i nie powinno trwać dłużej niż kilka sekund',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synchronizacja dokumentu…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Będziemy próbować dalej. W międzyczasie Twoje zmiany są przechowywane w przeglądarce.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Twoje zmiany nie są zapisywane',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Edytowanie zostanie wznowione, gdy tylko Twoje zmiany zostaną zapisane.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Zapisywanie zmian…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Edytowanie jest wstrzymane do czasu zapisania zmian. Twoje zmiany są przechowywane w przeglądarce, więc nie zamykaj tej karty, dopóki nie zakończymy prób.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Twoje zmiany nadal nie są zapisywane',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Dodaj do ulubionych',
@@ -478,10 +541,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Widok kompaktowy',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Widok szczegółowy',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Widok domyślny',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Widok domyślny jest już używany',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortuj według daty utworzenia',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortuj według ostatniej edycji',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Domyślne sortowanie',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Domyślna kolejność sortowania jest już używana',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Dowiedz się, jak dodać typ dokumentu →',
@@ -548,6 +620,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Szukaj na liście',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Szukaj na liście',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Zmień kolejność wyników wyszukiwania',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Posortowane według: {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Trafność',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Posortowane według trafności',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Ta opcja sortowania używa pól, które nie są częścią tego typu dokumentu',
@@ -610,6 +690,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Ten dokument nie istnieje i nie został dla niego określony żaden typ schematu.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Ładowanie dokumentu…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Ładowanie…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
