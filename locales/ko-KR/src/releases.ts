@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': '요약',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': '문서 버전이 추가되었습니다',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '<strong>{{releaseTitle}}</strong> 릴리스가 보관되었습니다',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '<strong>{{releaseTitle}}</strong> 릴리스가 생성되었습니다 <ScheduleTarget>대상: </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': '문서 버전이 삭제되었습니다',
   'activity.event.edit': '릴리스 시간을 <ScheduleTarget></ScheduleTarget>(으)로 설정했습니다',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': '가능한 한 빨리',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': '미정',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '<strong>{{releaseTitle}}</strong> 릴리스가 게시되었습니다',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': '예약됨으로 표시되었습니다',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '<strong>{{releaseTitle}}</strong> 릴리스의 보관이 해제되었습니다',
@@ -312,6 +306,11 @@ export default removeUndefinedLocaleResources({
     "'<strong>{{title}}</strong>' 릴리스와 {{releaseDocumentsLength}}개의 문서가 게시됩니다.",
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title': '릴리스와 모든 문서 버전을 게시하시겠습니까?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': '기존 초안 업데이트',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}}개 문서의 기존 초안이 삭제되어 초안이 게시된 release와 일치하게 됩니다. 게시되지 않은 초안 변경 사항은 손실됩니다.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '일부 문서에 유효성 검사 오류가 있습니다',
   /** Label for when documents are being validated */
@@ -480,6 +479,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "'{{title}}' 릴리스가 성공적으로 되돌려졌습니다",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' 게시 실패: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'release가 게시되었지만 기존 초안을 업데이트할 수 없습니다: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "'{{title}}'에 대한 릴리스 되돌리기가 성공적으로 생성되었습니다. <Link/>",
