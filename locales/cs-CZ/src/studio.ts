@@ -485,7 +485,7 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.action.cancel': 'Zrušit',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
-    'Jak snadné nebo obtížné je používání nové verze inventáře?',
+    'Jak snadné nebo obtížné je používání nového inventáře verzí?',
   /** The label for the input that filters the variants in the document group inventory */
   'document-group-inventory.filter-string.label': 'Filtrovat {{subject}}',
   /** The document inventory title (plural) */

@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
     'Tento dokument nelze smazat, protože je součástí naplánovaných vydání',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
-    'Vybraná verze nebo varianta tento dokument neobsahuje',
+    'Vybrané vydání nebo varianta tento dokument neobsahuje',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Smazat',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -40,7 +40,7 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-ready': 'Operace není připravena',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.discard-changes.disabled.target-not-found':
-    'Vybraná verze nebo varianta tento dokument neobsahuje',
+    'Vybrané vydání nebo varianta tento dokument neobsahuje',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Zahodit změny',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -50,7 +50,7 @@ export default removeUndefinedLocaleResources({
     'Tento dokument ještě neexistuje, takže není co duplikovat',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.duplicate.disabled.target-not-found':
-    'Vybraná verze nebo varianta tento dokument neobsahuje',
+    'Vybrané vydání nebo varianta tento dokument neobsahuje',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplikovat',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -60,12 +60,12 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Zveřejněno před {{timeSincePublished}}',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': 'Tato verze je publikována jako součást své verze',
+  'action.publish.disabled.not-publishable': 'Tato verze je publikována jako součást svého vydání',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operace není připravena',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.publish.disabled.target-not-found':
-    'Vybraná verze nebo varianta tento dokument neobsahuje',
+    'Vybrané vydání nebo varianta tento dokument neobsahuje',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Zveřejnit',
   /** Label for the "Publish" document action */
@@ -110,7 +110,7 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-ready': 'Operace není připravena',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.unpublish.disabled.target-not-found':
-    'Vybraná verze nebo varianta tento dokument neobsahuje',
+    'Vybrané vydání nebo varianta tento dokument neobsahuje',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Zrušit publikaci',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -471,7 +471,7 @@ export default removeUndefinedLocaleResources({
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
   'document-target-badges.not-in-target.tooltip':
-    'Dokument v vybraném perspective zatím neexistuje.',
+    'Dokument ve vybrané perspektivě zatím neexistuje.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Tento formulář je skrytý',
