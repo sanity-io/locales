@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.insert-asset-error':
     'Erro ao inserir o ativo. Consulte o console para mais informações.',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': 'Falha ao carregar assets',
+  'asset-source.dialog.load-error': 'Falha ao carregar ativos',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Carregar mais',
   /** Text shown when selecting a file but there's no files to select from
@@ -493,7 +493,7 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.action.cancel': 'Cancelar',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
-    'Quão fácil ou difícil é usar a nova versão do inventário?',
+    'Quão fácil ou difícil é usar o novo inventário de versões?',
   /** The label for the input that filters the variants in the document group inventory */
   'document-group-inventory.filter-string.label': 'Filtrar {{subject}}',
   /** The document inventory title (plural) */

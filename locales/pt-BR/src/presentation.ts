@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': 'Não foi possível renderizar a lista de documentos',
   /** The label for the ordering that lists documents in the order they appear on the page */
-  'document-list-pane.ordering.by-appearance': 'Por aparência',
+  'document-list-pane.ordering.by-appearance': 'Por ordem de aparição',
   /** The label for the ordering that lists documents by when they were last edited */
   'document-list-pane.ordering.last-edited': 'Última edição',
 
