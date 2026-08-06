@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Não é possível agendar o rascunho devido a erros de validação no rascunho atual.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant':
+    'O agendamento ainda não está disponível para variantes.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Saiba mais sobre agendamento',
