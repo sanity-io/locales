@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Nelze naplánovat koncept kvůli chybám ověření v aktuálním konceptu.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Plánování zatím není dostupné pro varianty.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Zjistit více o plánování',

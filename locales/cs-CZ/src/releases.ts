@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Souhrn',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Přidána verze dokumentu',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Vydání <strong>{{releaseTitle}}</strong> bylo archivováno',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Vydání <strong>{{releaseTitle}}</strong> bylo vytvořeno <ScheduleTarget>s cílem </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Verze dokumentu byla zahozena',
   'activity.event.edit': 'Čas vydání nastaven na <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Co nejdříve',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Nerozhodnuto',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Vydání <strong>{{releaseTitle}}</strong> bylo publikováno',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Označeno jako naplánované',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Vydání <strong>{{releaseTitle}}</strong> bylo obnoveno z archivu',
@@ -331,6 +325,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Opravdu chcete publikovat release a všechny verze dokumentů?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Aktualizovat existující koncepty',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Existující koncept {{draftDocumentsLength}} dokumentu bude zahozen, aby koncepty odpovídaly publikovanému release. Nepublikované změny konceptu budou ztraceny.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Existující koncepty {{draftDocumentsLength}} dokumentů budou zahozeny, aby koncepty odpovídaly publikovanému release. Nepublikované změny konceptů budou ztraceny.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Některé dokumenty obsahují chyby ověření',
   /** Label for when documents are being validated */
@@ -508,6 +510,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Vydání '{{title}}' bylo úspěšně vráceno",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Nepodařilo se publikovat '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Release byl publikován, ale existující koncepty nebylo možné aktualizovat: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Vydání pro vrácení '{{title}}' bylo úspěšně vytvořeno. <Link/>",
   /** Link text for toast link to the generated revert release */
