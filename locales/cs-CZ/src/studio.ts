@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Chyba při vkládání assetu. Více informací naleznete v konzoli.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Načtení assetů se nezdařilo',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Načíst více',
   /** Text shown when selecting a file but there's no files to select from
@@ -229,13 +231,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Přejít na předchozí měsíc',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Přejít na předchozí rok',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Dnes',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Přejít na dnešek',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Zítra',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Včera',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Zahrnout čas',
@@ -329,7 +327,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Pro více informací zkontrolujte konzoli pro vývojáře',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Zobrazení změn tohoto pole způsobilo chybu',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Nemůžeme načíst změny pro tento dokument.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Něco se pokazilo',
@@ -370,7 +367,6 @@ export default removeUndefinedLocaleResources({
     'Upravte dokument nebo vyberte starší verzi v časové ose, aby se v tomto panelu zobrazil seznam změn.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nejsou žádné změny',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Tuto událost není možné vybrat',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Přidána anotace',
@@ -444,6 +440,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Nalezeny problémy s konfigurací',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Seřadit podle {{title}}',
 
@@ -481,6 +480,104 @@ export default removeUndefinedLocaleResources({
   /** Label for divergences in multiple nodes */
   'divergence.unresolved-divergence_other': '{{count}} nevyřešených změn ve verzi {{versionName}}',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Zrušit',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Jak snadné nebo obtížné je používání nové verze inventáře?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrovat {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'prohlížení',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Všichni uživatelé (výchozí)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Vytvořit variantu',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Vytvořit variantu pro {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Jako koncept',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Do vydání',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Nebo zobrazit existující varianty',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Zrušit',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumentů',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasety: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Nedostupný dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Nedostupné datasety',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} v jiném datasetu',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} v {{count}} datasetech',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopírovat ID do schránky',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID dokumentu',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Kopírování ID dokumentu se nezdařilo',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID projektu',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Smazat (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Smazat ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Při pokusu o smazání tohoto dokumentu došlo k chybě. To obvykle znamená, že na něj odkazují jiné dokumenty.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 další odkaz není zobrazen',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} dalších odkazů není zobrazeno',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Metadata těchto odkazů nelze zobrazit z důvodu chybějícího přístupového tokenu pro příslušné datasety.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Náhled není k dispozici',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument odkazuje na „<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumentů odkazuje na „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Možná nebude možné smazat „<DocumentTitle/>", protože na něj odkazují následující dokumenty:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Smazat {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Smazat {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variantu',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'verzi',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'verzí',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Vytvořeno {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -503,6 +600,14 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Ukládání trvá déle než se očekávalo',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokument byl otevřen s prázdnou hodnotou. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Počáteční hodnotu se nepodařilo načíst',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Typ dokumentu "{{type}}" nebyl nalezen',
 
@@ -1077,6 +1182,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normální',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citace',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Přidat sloupec na konec',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Přidat řádek na konec',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Úchyt sloupce',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Smazat sloupec',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Smazat řádek',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Smazat tabulku',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Řádek záhlaví',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Vložit zde',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Možnosti tabulky',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Úchyt řádku',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Vybrat tabulku',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Vymazat',
   /** Label for action to copy the current item (used within arrays) */
@@ -1281,6 +1408,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nedostatečná oprávnění',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Vaše relace již není platná. Přihlaste se prosím znovu.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Vaše relace vypršela. Přihlaste se prosím znovu.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Byli jste odhlášeni',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Neočekávaná chyba: {{error}}',
 
@@ -1347,7 +1481,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Obrázek, který se právě nahrává',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'právě teď',
 
   /** Action message to add document to new release */
@@ -1406,7 +1539,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Zobrazit naplánované koncepty',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Naplánováno k publikování dne {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} varianta',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} variant',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} verze',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} verzí',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Koncept',
@@ -1429,6 +1568,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Žádné úpravy',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Nepublikováno',
+  'release.chip.tooltip.other-variants_one': 'Jedna varianta',
+  'release.chip.tooltip.other-variants_other': '{{count}} variant',
   'release.chip.tooltip.other-versions_one': 'Jedna další verze mimo vydání',
   'release.chip.tooltip.other-versions_other': '{{count}} dalších verzí mimo vydání',
   /** Label for tooltip in chip with the published date */
@@ -1767,37 +1908,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>má</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>má</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-equal.name': 'množství je',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>má ></Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>má ></Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-gt.name': 'množství větší než',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>má ≥</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>má ≥</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-gte.name': 'množství větší než nebo rovno',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>má <</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>má <</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-lt.name': 'množství menší než',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>má ≤</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>má ≤</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-lte.name': 'množství menší než nebo rovno',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nemá</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1810,35 +1945,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>má mezi</Operator> <Value>{{from}} → {{to}} položkami</Value>',
   'search.operator.array-count-range.name': 'množství je mezi',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'obsahuje',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'neobsahuje',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'obsahuje',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'neobsahuje',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'je',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'není',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'je',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'není',
@@ -1851,161 +1978,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'je',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>je po</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'po',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>je před</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'před',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'je',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>je v posledních</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'poslední',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'není',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>je mezi</Operator> <Value/>',
   'search.operator.date-range.name': 'je mezi',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>je po</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'po',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>je před</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'před',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'je',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>je v posledních</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'poslední',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'není',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>je mezi</Operator> <Value/>',
   'search.operator.date-time-range.name': 'je mezi',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>je</Operator> <Value>neprázdný</Value>',
   'search.operator.defined.name': 'neprázdný',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>je</Operator> <Value>prázdný</Value>',
   'search.operator.not-defined.name': 'prázdný',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'je',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'větší než',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'větší nebo rovno',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'menší než',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'menší nebo rovno',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'není',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>je mezi</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'je mezi',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'obsahuje',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'je',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'neobsahuje',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'není',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'soubor',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'obrázek',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'je',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'není',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'obsahuje',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'je',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'neobsahuje',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'není',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'obsahuje',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'je',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'je',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'není',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'neobsahuje',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'není',
@@ -2031,30 +2118,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stav konfigurace',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Hledejte město nebo časové pásmo',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Vyberte místní časové pásmo',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována v obsahových vydáních.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována pouze pro tento vstup v tomto dokumentu.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována v plánech.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'místní čas',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Časové pásmo',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Zobrazování vydání v {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Zobrazování <em>{{title}}</em> v {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Zobrazování plánů v {{alternativeName}} GMT{{offset}}',
 
@@ -2091,7 +2168,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revize dokumentu',
   /** Label for loading history */
   'timeline.loading-history': 'Načítání historie…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Žádné předchozí události',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Vytvořeno',
