@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Oversigt',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Tilføjede en dokumentversion',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Arkiverede udgivelsen <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Oprettede udgivelsen <strong>{{releaseTitle}}</strong> <ScheduleTarget>med mål </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Kasserede en dokumentversion',
   'activity.event.edit': 'Indstillede udgivelsestidspunkt til <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Så hurtigt som muligt',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Uafgjort',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Publicerede udgivelsen <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Markeret som planlagt',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Gendannede udgivelsen <strong>{{releaseTitle}}</strong> fra arkiv',
@@ -333,6 +327,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Er du sikker på, at du vil publicere releasen og alle dokumentversioner?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Opdater eksisterende kladder',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Den eksisterende kladde af {{draftDocumentsLength}} dokument vil blive kasseret, så kladder matcher den publicerede release. Upublicerede kladdeændringer vil gå tabt.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'De eksisterende kladder af {{draftDocumentsLength}} dokumenter vil blive kasseret, så kladder matcher den publicerede release. Upublicerede kladdeændringer vil gå tabt.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Nogle dokumenter har valideringsfejl',
   /** Label for when documents are being validated */
@@ -510,6 +512,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Releasen '{{title}}' blev genoprettet",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Kunne ikke udgive '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    "Release'en blev publiceret, men eksisterende kladder kunne ikke opdateres: {{error}}",
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Genopretnings-release for '{{title}}' blev oprettet. <Link/>",
   /** Link text for toast link to the generated revert release */
