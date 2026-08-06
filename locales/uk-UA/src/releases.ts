@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Підсумок',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Додано версію документа',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Архівовано випуск <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Створено випуск <strong>{{releaseTitle}}</strong> <ScheduleTarget>з ціллю </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Відхилено версію документа',
   'activity.event.edit': 'Встановлено час випуску на <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Якнайшвидше',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Не визначено',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Опубліковано випуск <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Позначено як заплановане',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Розархівовано випуск <strong>{{releaseTitle}}</strong>',
@@ -313,6 +307,11 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Ви впевнені, що хочете опублікувати реліз та всі версії документів?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Оновити наявні чернетки',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Наявна чернетка {{draftDocumentsLength}} документа буде відхилена, щоб чернетки відповідали опублікованому release. Неопубліковані зміни в чернетках буде втрачено.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Деякі документи мають помилки валідації',
   /** Label for when documents are being validated */
@@ -483,6 +482,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Реліз '{{title}}' було успішно скасовано",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Не вдалося опублікувати '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Release було опубліковано, але наявні чернетки не вдалося оновити: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Реліз для скасування '{{title}}' було успішно створено. <Link/>",
   /** Link text for toast link to the generated revert release */
