@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Mevcut taslaktaki doğrulama hataları nedeniyle Taslak zamanlanamıyor.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Zamanlama, varyantlar için henüz mevcut değil.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Zamanlama hakkında bilgi edinin',

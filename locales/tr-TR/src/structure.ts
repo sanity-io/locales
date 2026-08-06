@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Bu belge, planlanmış yayınlarda bulunduğu için silinemez',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found': 'Seçilen sürüm veya varyant bu belgeyi içermiyor',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Sil',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +37,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Bu belge yayımlanmamış',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'İşlem hazır değil',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Seçilen sürüm veya varyant bu belgeyi içermiyor',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Değişiklikleri at',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +47,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Bu belge henüz mevcut olmadığı için çoğaltılacak bir şey yok',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found': 'Seçilen sürüm veya varyant bu belgeyi içermiyor',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Çoğalt',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +57,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Zaten yayımlanmış',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '{{timeSincePublished}} önce yayımlandı',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable':
+    'Bu sürüm, kendi yayınının bir parçası olarak yayımlanmıştır',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'İşlem hazır değil',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found': 'Seçilen sürüm veya varyant bu belgeyi içermiyor',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Yayımla',
   /** Label for the "Publish" document action */
@@ -94,6 +106,8 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Bu belge yayınlanmadı',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'İşlem hazır değil',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found': 'Seçilen sürüm veya varyant bu belgeyi içermiyor',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Yayından Kaldır',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -218,6 +232,23 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Mevcut <strong>yayınlanmış</strong> versiyon gösteriliyor:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Varyant oluştur',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Seçilen varyant <VariantName>{{name}}</VariantName> bulunamadı.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description': 'Belge varyanta eklenirken bir hata oluştu: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Belge varyanta eklenirken hata oluştu',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    '<VariantBadge>{{variantTitle}}</VariantBadge> için <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> varyant belgesi mevcut değil.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Belge varyanta eklenirken lütfen bekleyin. Bu işlem birkaç saniyeden uzun sürmeyecektir.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Belge varyanta ekleniyor…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Yeni {{schemaType}}',
@@ -276,9 +307,7 @@ export default removeUndefinedLocaleResources({
     'Bu görünüm, bu belgenin belirli bir sürümünde meydana gelen değişiklikleri gösterir. Farklı bir sürümün değişikliklerini görmek için başka bir sürüm seçin',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Başlangıç',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Geçmiş',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Değişiklikleri İncele',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Bitiş',
@@ -408,12 +437,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Bilinmeyen şema tipi: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Sürüm düğmeleri nereye gitti?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Kapat',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/> İnceleme',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Değer yok',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Paneli kapat',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Bu panel oluşturulurken bir hata meydana geldi.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Yeniden dene',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Bir şeyler ters gitti',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'İncele',
   /** the placeholder text for the search input on the inspect dialog */
@@ -422,6 +462,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Ayrıştırılmış',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Ham JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'Belge henüz seçilen perspective içinde mevcut değil.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Bu form gizlidir',
@@ -434,6 +478,21 @@ export default removeUndefinedLocaleResources({
     'Belge senkronize edilirken lütfen bekleyin. Bu genellikle belge yayınlandıktan hemen sonra gerçekleşir ve birkaç saniyeden fazla sürmemesi gerekir',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Belge senkronize ediliyor…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Denemeye devam edeceğiz. Bu süre zarfında değişiklikleriniz tarayıcınızda saklanmaktadır.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Değişiklikleriniz kaydedilemiyor',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Değişiklikleriniz kaydedilir kaydedilmez düzenleme devam edecektir.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Değişiklikleriniz kaydediliyor…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Kaydedilinceye kadar düzenleme duraklatıldı. Değişiklikleriniz tarayıcınızda saklanıyor; denemeye devam ederken bu sekmeyi açık tutun.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Değişiklikleriniz hâlâ kaydedilemiyor',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Favorilere ekle',
@@ -495,10 +554,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompakt görünüm',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaylı görünüm',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Varsayılan görünüm',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Zaten varsayılan görünüm kullanılıyor',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Oluşturulma Tarihine Göre Sırala',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Son Düzenlenme Tarihine Göre Sırala',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Varsayılan sıralama',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Zaten varsayılan sıralama düzeni kullanılıyor',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Belge tipi nasıl ekleneceğini öğrenin →',
@@ -564,6 +632,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Listeyi ara',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Listeyi ara',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Arama sonucu sıralamasını değiştir',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}} ölçütüne göre sıralandı',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Alaka düzeyi',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Alaka düzeyine göre sıralandı',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Bu sıralama seçeneği, bu belge türünün bir parçası olmayan alanları kullanıyor',
@@ -622,6 +698,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Bu belge mevcut değil ve bunun için belirtilmiş bir şema türü yok.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Belge yükleniyor…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Yükleniyor…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
