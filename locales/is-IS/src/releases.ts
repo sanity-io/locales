@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Samantekt',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Bætti við skjalaútgáfu',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Safnvistað útgáfuna <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Stofnaði útgáfuna <strong>{{releaseTitle}}</strong> <ScheduleTarget>með markmiðstíma </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Fleygði skjalaútgáfu',
   'activity.event.edit': 'Stillti útgáfutíma á <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Eins fljótt og auðið er',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Óákveðið',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Birti útgáfuna <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Merkt sem tímasett',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'Tók útgáfuna <strong>{{releaseTitle}}</strong> úr safnvistun',
@@ -331,6 +325,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Ertu viss um að þú viljir birta útgáfuna og allar skjalaútgáfur?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Uppfæra fyrirliggjandi drög',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Fyrirliggjandi drög af {{draftDocumentsLength}} skjali verða felld niður svo að drög passi við útgefna útgáfu. Óbirtum breytingum á drögum verður fargað.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Fyrirliggjandi drög af {{draftDocumentsLength}} skjölum verða felld niður svo að drög passi við útgefna útgáfu. Óbirtum breytingum á drögum verður fargað.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Sum skjöl hafa villur í staðfestingu',
   /** Label for when documents are being validated */
@@ -508,6 +510,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "Útgáfan '{{title}}' var endurreist",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Mistókst að birta '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'Útgáfan var gefin út, en ekki var hægt að uppfæra fyrirliggjandi drög: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Endurreisnarútgáfa fyrir '{{title}}' var búin til. <Link/>",
   /** Link text for toast link to the generated revert release */
