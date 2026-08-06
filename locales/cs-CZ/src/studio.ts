@@ -485,7 +485,7 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.action.cancel': 'Zrušit',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
-    'Jak snadné nebo obtížné je používání nové verze inventáře?',
+    'Jak snadné nebo obtížné je používání nového inventáře verzí?',
   /** The label for the input that filters the variants in the document group inventory */
   'document-group-inventory.filter-string.label': 'Filtrovat {{subject}}',
   /** The document inventory title (plural) */
@@ -498,6 +498,16 @@ export default removeUndefinedLocaleResources({
   /** --- Document group --- */
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Všichni uživatelé (výchozí)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Vytvořit variantu',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Vytvořit variantu pro {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Jako koncept',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Do vydání',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Nebo zobrazit existující varianty',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'Zrušit',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -541,7 +551,7 @@ export default removeUndefinedLocaleResources({
     '{{count}} dalších odkazů není zobrazeno',
   /** Text in the tooltip of this component if hovering over the info icon */
   'document-group.delete.other-reference-count.tooltip':
-    'Metadata těchto odkazů nelze zobrazit z důvodu chybějícího přístupového tokenu pro příslušné datasets.',
+    'Metadata těchto odkazů nelze zobrazit z důvodu chybějícího přístupového tokenu pro příslušné datasety.',
   /** Appears when unable to render a document preview in the referring document list */
   'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
@@ -560,13 +570,13 @@ export default removeUndefinedLocaleResources({
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
   'document-group.delete.title_other': 'Smazat {{count}} {{subject}}',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
-  'document-group.subject.variant_one': 'varianta',
+  'document-group.subject.variant_one': 'variantu',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.variant_other': 'varianty',
+  'document-group.subject.variant_other': 'variant',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
-  'document-group.subject.version_one': 'verze',
+  'document-group.subject.version_one': 'verzi',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': 'verze',
+  'document-group.subject.version_other': 'verzí',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Vytvořeno {{date}}',
