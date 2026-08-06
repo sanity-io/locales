@@ -37,3 +37,7 @@ This is the [Sanity Studio Locales](https://github.com/sanity-io/locales) monore
 ### Hello-world check
 
 After `pnpm dev`, open an auth URL for a non-English workspace (e.g. `de-DE`), confirm German Studio chrome (e.g. **Entwurf**, **Veröffentlichen**), and create/save a **Localization test** draft.
+
+### Bugbot Autofix
+
+Repo Autofix mode is **Create New Branch** (not commit-to-existing). See `.cursor/BUGBOT.md`. PR approval routing for autotranslate locales lives under `.cursor/approval-policies/`.
