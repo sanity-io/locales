@@ -62,23 +62,17 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Riepilogo',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Aggiunta una versione del documento',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'Archiviata la release <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'Creata la release <strong>{{releaseTitle}}</strong> <ScheduleTarget>con destinazione </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Eliminata una versione del documento',
   'activity.event.edit': 'Orario della release impostato su <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Il prima possibile',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Non deciso',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'Pubblicata la release <strong>{{releaseTitle}}</strong>',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Contrassegnata come pianificata',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive':
@@ -336,6 +330,14 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Sei sicuro di voler pubblicare la release e tutte le versioni dei documenti?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Aggiorna le bozze esistenti',
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'La bozza esistente di {{draftDocumentsLength}} documento verrà eliminata in modo che le bozze corrispondano alla release pubblicata. Le modifiche alle bozze non pubblicate andranno perse.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Le bozze esistenti di {{draftDocumentsLength}} documenti verranno eliminate in modo che le bozze corrispondano alla release pubblicata. Le modifiche alle bozze non pubblicate andranno perse.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Alcuni documenti presentano errori di validazione',
   /** Label for when documents are being validated */
@@ -518,6 +520,9 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "La release '{{title}}' è stata ripristinata con successo",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Impossibile pubblicare '<strong>{{title}}</strong>': {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error':
+    'La release è stata pubblicata, ma le bozze esistenti non hanno potuto essere aggiornate: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "La release di ripristino per '{{title}}' è stata creata con successo. <Link/>",
