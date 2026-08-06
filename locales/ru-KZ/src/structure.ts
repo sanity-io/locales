@@ -14,6 +14,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Этот документ не может быть удален, так как он находится в запланированных релизах',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Удалить',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +38,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Этот документ не опубликован',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Операция не готова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Отменить изменения',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Этот документ еще не существует, поэтому нет ничего для дублирования',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Дублировать',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +59,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Уже опубликовано',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Опубликовано {{timeSincePublished}} назад',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Бұл нұсқа өз релизінің бөлігі ретінде жарияланған',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Операция не готова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Опубликовать',
   /** Label for the "Publish" document action */
@@ -94,6 +108,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Этот документ не опубликован',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Операция не готова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Снять с публикации',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -210,6 +227,23 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Показана текущая <strong>опубликованная</strong> версия:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Вариант жасау',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Таңдалған вариант <VariantName>{{name}}</VariantName> табылмады.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description': 'Құжатты варiantқа қосу кезінде қате орын алды: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Құжатты варiantқа қосу қатесі',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    '<PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> үшін <VariantBadge>{{variantTitle}}</VariantBadge> вариант құжаты жоқ.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Құжат варiantқа қосылып жатқанда күте тұрыңыз. Бұл бірнеше секундтан артық уақыт алмауы керек.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Құжат варiantқа қосылуда…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новый {{schemaType}}',
@@ -268,9 +302,7 @@ export default removeUndefinedLocaleResources({
     'Этот вид показывает изменения, произошедшие в определенной версии этого документа. Выберите другую версию, чтобы увидеть ее изменения',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'От',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'История',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Просмотр изменений',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'До',
@@ -388,12 +420,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Неизвестный тип схемы: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Нұсқа түймелері қайда кетті?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Закрыть',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Инспектирование <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Нет значения',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Панельді жабу',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Бұл панельді көрсету кезінде қате орын алды.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Қайталау',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Бірдеңе дұрыс болмады',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Инспектировать',
   /** the placeholder text for the search input on the inspect dialog */
@@ -402,6 +445,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Разобранный',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Исходный JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': 'Құжат әлі таңдалған perspective ішінде жоқ.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Эта форма скрыта',
@@ -414,6 +460,21 @@ export default removeUndefinedLocaleResources({
     'Пожалуйста, подождите, пока документ синхронизируется. Это обычно происходит сразу после публикации документа и не должно занять более нескольких секунд',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Синхронизация документа…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Біз әрекетті жалғастыра береміз. Сіздің өзгертулеріңіз осы уақытта браузеріңізде сақталады.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Өзгертулеріңіз сақталмай тұр',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Өзгертулеріңіз сақталғаннан кейін өңдеу жалғасады.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Өзгертулеріңіз сақталуда…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Өзгертулер сақталғанша өңдеу тоқтатылды. Өзгертулеріңіз браузеріңізде сақталады, сондықтан біз әрекетті жалғастырып жатқанда бұл қойындыны ашық ұстаңыз.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Өзгертулеріңіз әлі де сақталмай тұр',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Добавить в избранное',
@@ -475,10 +536,20 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Компактный вид',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Подробный вид',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Стандартты көрініс',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason':
+    'Стандартты көрініс қазірдің өзінде қолданылуда',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Сортировать по дате создания',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сортировать по последнему редактированию',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Стандартты сұрыптау',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Стандартты сұрыптау тәртібі қазірдің өзінде қолданылуда',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Узнайте, как добавить тип документа →',
@@ -544,6 +615,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Поиск по списку',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Поиск по списку',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Іздеу нәтижелерінің тәртібін өзгерту',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}} бойынша сұрыпталған',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Өзектілік',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Өзектілік бойынша сұрыпталған',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Этот параметр сортировки использует поля, которые не входят в данный тип документа',
@@ -604,6 +683,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Этот документ не существует, и для него не был указан тип схемы.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Құжат жүктелуде…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Загрузка…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

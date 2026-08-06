@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Невозможно запланировать черновик из-за ошибок валидации в текущем черновике.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Планирование пока недоступно для вариантов.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Узнать о планировании',
