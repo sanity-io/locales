@@ -15,6 +15,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'このドキュメントはスケジュールされたリリース内に存在するため、削除できません',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Delete" document action button */
   'action.delete.label': '削除',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,6 +39,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'このドキュメントは公開されていません',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': '操作は準備ができていません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': '変更を破棄',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -43,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'このドキュメントはまだ存在していないので、複製するものがありません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': '複製',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -51,8 +60,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': '既に公開済み',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '{{timeSincePublished}}前に公開済み',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'このバージョンはリリースの一部として公開されています',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': '操作は準備ができていません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '公開',
   /** Label for the "Publish" document action */
@@ -94,6 +108,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'このドキュメントは公開されていません',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': '操作は準備ができていません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': '公開取り消し',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -218,6 +235,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     '現在の<strong>公開</strong>バージョンを表示しています：',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'バリアントを作成',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    '選択したバリアント <VariantName>{{name}}</VariantName> が見つかりませんでした。',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'バリアントへのドキュメント追加中にエラーが発生しました：{{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'バリアントへのドキュメント追加エラー',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    '<PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> の <VariantBadge>{{variantTitle}}</VariantBadge> バリアントドキュメントが存在しません。',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'ドキュメントをバリアントに追加しています。数秒以上かかることはありません。しばらくお待ちください。',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'バリアントにドキュメントを追加中…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新しい {{schemaType}}',
@@ -276,9 +311,7 @@ export default removeUndefinedLocaleResources({
     'このビューは、このドキュメントの特定のバージョンで発生した変更を表示します。異なるバージョンを選択して、その変更を見てください',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'から',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': '履歴',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': '変更をレビュー',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'まで',
@@ -407,12 +440,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '未知のスキーマタイプ: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'バージョンボタンはどこへ？',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '閉じる',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/>の検査中',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': '値なし',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'パネルを閉じる',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'このパネルのレンダリング中にエラーが発生しました。',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': '再試行',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': '問題が発生しました',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '検査',
   /** the placeholder text for the search input on the inspect dialog */
@@ -421,6 +465,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'パース済み',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': '生のJSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'このドキュメントは選択した perspective にまだ存在しません。',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'このフォームは非表示です',
@@ -433,6 +481,20 @@ export default removeUndefinedLocaleResources({
     'ドキュメントが同期される間、しばらくお待ちください。これは通常、ドキュメントが公開された直後に行われ、数秒以上かかることはありません',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'ドキュメントを同期中…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    '引き続き再試行します。それまでの間、変更内容はブラウザに保持されます。',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': '変更が保存されていません',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description': '変更が保存され次第、編集を再開できます。',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': '変更を保存中…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    '変更が保存されるまで編集は一時停止されます。変更内容はブラウザに保持されているため、再試行中はこのタブを開いたままにしてください。',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': '変更がまだ保存されていません',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'お気に入りに追加',
@@ -494,10 +556,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'コンパクトビュー',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '詳細ビュー',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'デフォルトビュー',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'すでにデフォルトビューを使用しています',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '作成日で並び替え',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '最終編集で並び替え',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'デフォルトの並び順',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'すでにデフォルトの並び順を使用しています',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'ドキュメントタイプの追加方法を学ぶ →',
@@ -563,6 +633,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'リストを検索',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'リストを検索',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': '検索結果の並び順を変更',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}}で並び替え',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': '関連度',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': '関連度で並び替え',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'この並び替えオプションは、このドキュメントタイプに含まれていないフィールドを使用しています',
@@ -623,6 +701,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'このドキュメントは存在せず、それに対するスキーマタイプも指定されていません。',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'ドキュメントを読み込み中…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '読み込み中…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

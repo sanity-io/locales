@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     '現在の下書きにバリデーションエラーがあるため、下書きをスケジュールできません。',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'バリアントのスケジュール設定はまだ利用できません。',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'スケジュール設定について学ぶ',
