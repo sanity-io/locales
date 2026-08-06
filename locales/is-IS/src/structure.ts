@@ -14,6 +14,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     'Ekki er hægt að eyða þessu skjali þar sem það er innan áætlunar um útgáfur',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Valin útgáfa eða afbrigði inniheldur ekki þetta skjal',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Eyða',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +38,9 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': 'Þetta skjal er ekki birt',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Aðgerð ekki tilbúin',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Valin útgáfa eða afbrigði inniheldur ekki þetta skjal',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Henda breytingum',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Þetta skjal er ekki til svo það er ekkert að afrita',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Valin útgáfa eða afbrigði inniheldur ekki þetta skjal',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Afrita',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +59,13 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Nú þegar birt',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Birt fyrir {{timeSincePublished}} síðan',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Þessi útgáfa er birt sem hluti af útgáfunni sinni',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Aðgerð ekki tilbúin',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Valin útgáfa eða afbrigði inniheldur ekki þetta skjal',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Birta',
   /** Label for the "Publish" document action */
@@ -94,6 +108,9 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Þetta skjal er ekki birt',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Aðgerð ekki tilbúin',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Valin útgáfa eða afbrigði inniheldur ekki þetta skjal',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Afturkalla birtingu',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -219,6 +236,24 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Sýni núverandi <strong>birta</strong> útgáfu:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Búa til afbrigði',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Valið afbrigði <VariantName>{{name}}</VariantName> fannst ekki.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Villa kom upp þegar skjalið var bætt við afbrigðið: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Villa við að bæta skjali við afbrigði',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Ekkert <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> afbrigðisskjal er til fyrir <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Vinsamlegast bíddu á meðan skjalinu er bætt við afbrigðið. Þetta ætti ekki að taka meira en nokkrar sekúndur.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Bæti skjali við afbrigði…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nýtt {{schemaType}}',
@@ -277,9 +312,7 @@ export default removeUndefinedLocaleResources({
     'Þessi skoðun sýnir breytingarnar sem áttu sér stað í ákveðinni útgáfu þessa skjals. Veldu aðra útgáfu til að sjá breytingar hennar',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Frá',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': 'Saga',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': 'Endurskoða breytingar',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': 'Til',
@@ -408,12 +441,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Óþekkt skema tegund: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Hvert fóru útgáfuhnapparnir?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Loka',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Skoða <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Engin gildi',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Loka spjaldi',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Villa kom upp við að birta þetta spjald.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Reyna aftur',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Eitthvað fór úrskeiðis',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Skoða',
   /** the placeholder text for the search input on the inspect dialog */
@@ -422,6 +466,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Greindur',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Hrátt JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': 'Skjalið er ekki til í völdum perspective enn.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Þetta eyðublað er falið',
@@ -434,6 +481,21 @@ export default removeUndefinedLocaleResources({
     'Vinsamlegast bíddu á meðan skjalið er samstillt. Þetta gerist venjulega strax eftir að skjalið hefur verið birt, og ætti ekki að taka meira en nokkrar sekúndur',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Samstilli skjal…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Við höldum áfram að reyna. Breytingar þínar eru geymdar í vafranum á meðan.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Breytingar þínar eru ekki að vistast',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Ritun heldur áfram um leið og breytingar þínar eru vistaðar.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Vista breytingar þínar…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Ritun er í bið þar til þær vistast. Breytingar þínar eru geymdar í vafranum, svo haltu þessum flipa opnum á meðan við höldum áfram að reyna.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Breytingar þínar eru enn ekki að vistast',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Bæta við uppáhöldum',
@@ -494,10 +556,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Þjappað útlit',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Ítarlegt útlit',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Sjálfgefin sýn',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Notar þegar sjálfgefna sýn',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Raða eftir stofnun',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Raða eftir síðast breytt',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Sjálfgefin röðun',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'Notar þegar sjálfgefna röðun',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lærðu hvernig á að bæta við skjalategund →',
@@ -565,6 +635,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': 'Leita í lista',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Leita í lista',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Breyta röðun leitarniðurstaðna',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Raðað eftir {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Mikilvægi',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Raðað eftir mikilvægi',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Þessi röðunarvalkostur notar reiti sem eru ekki hluti af þessari skjalagerð',
@@ -625,6 +703,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Þetta skjal er ekki til, og engin skematýpa var tilgreind fyrir það.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Hleður skjali…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Hleður…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

@@ -127,6 +127,8 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
     'Villa við að setja inn eign. Sjáðu ráskjáinn fyrir frekari upplýsingar.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Tókst ekki að hlaða inn eignum',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Hlaða meira',
   /** Text shown when selecting a file but there's no files to select from
@@ -228,13 +230,9 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Fara í fyrri mánuð',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Fara í fyrri ár',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Í dag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Fara í dag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Á morgun',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Í gær',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Innifalið tíma',
@@ -331,7 +329,6 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Athugaðu þróunarvalmyndina fyrir frekari upplýsingar',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Það kom upp villa við að sýna breytingarnar á þessu sviði',
-  /* Error description when changes could not be loaded */
   'changes.error-description': 'Við getum ekki hlaðið inn breytingunum fyrir þetta skjal.',
   /** Error title when changes could not be loaded */
   'changes.error-title': 'Eitthvað fór úrskeiðis',
@@ -372,7 +369,6 @@ export default removeUndefinedLocaleResources({
     'Breyttu skjalinu eða veldu eldri útgáfu í tímalínunni til að sjá lista yfir breytingar birtast á þessum glugga.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Engar breytingar eru til staðar',
-  /* Label for the tooltip that shows when an action is not selectable*/
   'changes.not-selectable': 'Ekki er hægt að velja þennan atburð',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Bætti við skýringu',
@@ -446,6 +442,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Fundin stillingarvandamál',
 
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
+
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Raða eftir {{title}}',
 
@@ -484,6 +483,103 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other':
     '{{count}} óleystar breytingar í {{versionName}} útgáfu',
 
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Hætta við',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Hversu auðvelt eða erfitt er að nota nýju útgáfubirgðirnar?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Sía {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'skoðar',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Allir notendur (Sjálfgefið)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Búa til afbrigði',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Búa til afbrigði fyrir {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Sem drög',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Í útgáfu',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Eða skoða fyrirliggjandi afbrigði',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Hætta við',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 skjal',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} skjöl',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Óaðgengilegt dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Óaðgengileg datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} í öðru dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} í {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Afrita auðkenni á klippiborð',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Skjalaauðkenni',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Mistókst að afrita skjalaauðkenni',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Verkefnisauðkenni',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Eyða (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Eyða ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Villa kom upp við tilraun til að eyða þessu skjali. Þetta þýðir venjulega að önnur skjöl vísa í það.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 önnur tilvísun ekki sýnd',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} aðrar tilvísanir ekki sýndar',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Við getum ekki birt lýsigögn fyrir þessar tilvísanir vegna þess að aðgangslykill vantar fyrir tengdar datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'Auðkenni: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Forskoðun ekki tiltæk',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one': '1 skjal vísar í „<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} skjöl vísa í „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Þú gætir ekki getað eytt „<DocumentTitle/>" vegna þess að eftirfarandi skjöl vísa í það:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Eyða {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Eyða {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'afbrigði',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'afbrigði',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'útgáfa',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'útgáfur',
+
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Búið til {{date}}',
   /** Label to show in the document status indicating the date of the status */
@@ -506,6 +602,13 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Vistun tekur lengri tíma en búist var við',
 
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': 'Skjalið opnaðist með tómt gildi. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Tókst ekki að leysa upphafsgildi',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Skjaltýpa "{{type}}" fannst ekki',
 
@@ -1078,6 +1181,28 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Venjulegur',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Tilvitnun',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Bæta við dálki í lok',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Bæta við röð í lok',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Dálkhandfang',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Eyða dálki',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Eyða röð',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Eyða töflu',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Hauslína',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Setja inn hér',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Töfluvalkostir',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Handfang raðar',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Velja töflu',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Hreinsa',
   /** Label for action to copy the current item (used within arrays) */
@@ -1281,6 +1406,13 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Ófullnægjandi heimildir',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Lota þín er ekki lengur gild. Vinsamlegast skráðu þig inn aftur.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Lota þín rann út. Vinsamlegast skráðu þig inn aftur.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Þú hefur verið skráð/ur út',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Óvænt villa: {{error}}',
 
@@ -1346,7 +1478,6 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Myndin sem er verið að hlaða upp',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'rétt í þessu',
 
   /** Action message to add document to new release */
@@ -1404,7 +1535,13 @@ export default removeUndefinedLocaleResources({
   'release.action.view-scheduled-drafts': 'Skoða tímasettar drög',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Áætlað til birtingar á {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} afbrigði',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} afbrigði',
+  /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} útgáfa',
+  /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} útgáfur',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Drög',
@@ -1427,6 +1564,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Engar breytingar',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Óbirt',
+  'release.chip.tooltip.other-variants_one': 'Eitt afbrigði',
+  'release.chip.tooltip.other-variants_other': '{{count}} afbrigði',
   'release.chip.tooltip.other-versions_one': 'Ein auka útgáfa utan útgáfna',
   'release.chip.tooltip.other-versions_other': '{{count}} auka útgáfur utan útgáfna',
   /** Label for tooltip in chip with the published date */
@@ -1765,37 +1904,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>hefur</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>hefur</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-equal.name': 'magn er',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>hefur ></Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>hefur ></Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-gt.name': 'magn meira en',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>hefur ≥</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>hefur ≥</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-gte.name': 'magn meira en eða jafnt og',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>hefur <</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>hefur <</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-lt.name': 'magn minna en',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>hefur ≤</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>hefur ≤</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-lte.name': 'magn minna en eða jafnt og',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>hefur ekki</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1808,35 +1941,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>hefur á milli</Operator> <Value>{{from}} → {{to}} hluti</Value>',
   'search.operator.array-count-range.name': 'magn er á milli',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inniheldur',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'inniheldur ekki',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inniheldur',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'inniheldur ekki',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'er',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'er ekki',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'er',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'er ekki',
@@ -1849,160 +1974,120 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'er',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>er eftir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'eftir',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>er fyrir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'fyrir',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'er',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>er á síðustu</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'síðustu',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'er ekki',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>er á milli</Operator> <Value/>',
   'search.operator.date-range.name': 'er á milli',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>er eftir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'eftir',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>er fyrir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'fyrir',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'er',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>er á síðustu</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'síðustu',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'er ekki',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>er á milli</Operator> <Value/>',
   'search.operator.date-time-range.name': 'er á milli',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>er</Operator> <Value>ekki tóm</Value>',
   'search.operator.defined.name': 'ekki tóm',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>er</Operator> <Value>tóm</Value>',
   'search.operator.not-defined.name': 'tóm',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'er',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'stærri en',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'stærri en eða jafnt og',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'minni en',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'minna en eða jafnt og',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'er ekki',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>er á milli</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'er á milli',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'inniheldur',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'er',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'inniheldur ekki',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'er ekki',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'skrá',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'mynd',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'skjal',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'er',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'er ekki',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'inniheldur',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'er',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'inniheldur ekki',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'er ekki',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'inniheldur',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'er',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'er',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'er ekki',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'inniheldur ekki',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'er ekki',
@@ -2028,30 +2113,20 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stillingarstaða',
 
-  /* Time zone handling */
   'time-zone.action.search-for-timezone-placeholder': 'Leitaðu að borg eða tímabelti',
-  /* Label for the local time zone button */
   'time-zone.action.select-local-time-zone': 'Veldu staðartímabelti',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.content-releases':
     'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í efni útgáfum.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.input':
     'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar aðeins fyrir þetta inntak í þessu skjali.',
-  /* Dialog info for the time zone dialog */
   'time-zone.dialog-info.scheduled-publishing':
     'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í áætlunum.',
-  /* Label for the local time zone button */
   'time-zone.local-time': 'staðartími',
-  /* Label for the time zone button */
   'time-zone.time-zone': 'Tímabelti',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-content-releases':
     'Sýnir útgáfur í {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-input':
     'Sýnir <em>{{title}}</em> í {{alternativeName}} GMT{{offset}}',
-  /* Tooltip content for the time zone dialog */
   'time-zone.time-zone-tooltip-scheduled-publishing':
     'Sýnir áætlanir í {{alternativeName}} GMT{{offset}}',
 
@@ -2088,7 +2163,6 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Endurskoðanir skjals',
   /** Label for loading history */
   'timeline.loading-history': 'Hleð sögu…',
-  /* Label for when no previous since events are available*/
   'timeline.no-previous-events': 'Engir fyrri atburðir',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Búið til',

@@ -15,6 +15,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'Ekki er hægt að tímasetja drög vegna villna í villuleit í núverandi drögum.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Tímasetning er ekki enn í boði fyrir afbrigði.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Lærðu um tímasetningu',
