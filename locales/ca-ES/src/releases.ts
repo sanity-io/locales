@@ -80,7 +80,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Marcat com a no programat',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': "Tanca l'activitat",
   /** The loading text for when releases are loading */
   'activity.panel.error': "S'ha produït un error en obtenir l'activitat de l'alliberament",
   /** The loading text for when releases are loading */
@@ -159,21 +159,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'Activitat',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'Creat',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'Documents',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'Programació',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'Estat',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'Cap document',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'Errors',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'Vàlid',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'Validant',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': "Fixa la versió a l'estudi",
   /** Text for the releases detail screen when a release was published ASAP */
@@ -222,7 +222,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} errors de validació',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'Sense errors de validació',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Sí, duplicar la versió',
@@ -297,7 +297,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Documentació',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'Totes les versions',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Veure el calendari',
   /** Description for the release tool */
@@ -487,11 +487,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Editat',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'Editat per',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Destinat a',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'Última edició',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Publicat',
   /** Header for the document table in the release tool - Published */
@@ -507,7 +507,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Tipus',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Variant',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Quan',
 
