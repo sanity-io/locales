@@ -74,8 +74,8 @@ export async function sendToSlack(webhookUrl: string, message: SlackMessage): Pr
  * @returns The formatted stats
  * @internal
  */
-export async function formatStatsForSlack(stats: PackageStats[]): Promise<SlackMessage> {
-  const sortedStats = [...stats].sort((a, b) => b.weeklyDownloads - a.weeklyDownloads)
+export function formatStatsForSlack(stats: PackageStats[]): SlackMessage {
+  const sortedStats = stats.toSorted((a, b) => b.weeklyDownloads - a.weeklyDownloads)
 
   const tableText = codeBlock(
     markdownTable(

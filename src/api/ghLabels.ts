@@ -32,14 +32,6 @@ export const PR_LABEL_AWAITING_REVIEW = 'awaiting-review'
  * @internal
  */
 export const PR_LABEL_CHANGES_REQUESTED = 'changes-requested'
-
-/**
- * Label applied when the PR has been auto-merged due to being stale
- *
- * @internal
- */
-export const PR_LABEL_AUTO_MERGED_STALE = 'auto-merged-stale'
-
 /**
  * Label applied when the PR has been nudged for inactivity (maintainers notified by comment)
  *
@@ -174,7 +166,6 @@ async function getPullRequestDetails(prNumber: number): Promise<GitHubPR> {
     ['pr', 'view', `${prNumber}`, '--json', 'reviews,labels,author,files'],
     {
       cwd: rootPath,
-      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )
@@ -200,7 +191,6 @@ async function getCommentsForPR(prNumber: number) {
     ],
     {
       cwd: rootPath,
-      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )

@@ -1,6 +1,6 @@
-import {join as joinPath} from 'path'
+import {join as joinPath} from 'node:path'
 
-import {Locale} from '../types'
+import type {Locale} from '../types'
 import {getRootPath} from './getRootPath'
 
 /**

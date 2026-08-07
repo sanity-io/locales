@@ -87,9 +87,9 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
 
   if (targetLocales && targetLocales.length !== filteredLocales.length) {
     throw new Error(
-      `Could not find one or more of the requested locales: ${targetLocales.filter(
-        (locale) => !filteredLocales.find((l) => l.id === locale),
-      )}`,
+      `Could not find one or more of the requested locales: ${targetLocales
+        .filter((locale) => !filteredLocales.find((l) => l.id === locale))
+        .join(', ')}`,
     )
   }
 
@@ -145,7 +145,6 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
           let batchTranslated = 0
           for (const key of currentBatch) {
             const val = ns.indexedResources[key.key]
-            // eslint-disable-next-line max-depth
             if (!val) {
               continue
             }
@@ -196,7 +195,7 @@ function templateMissingResources(
   missingKeys.forEach((entry) => {
     const val = indexedResources[entry.key]
     if (val) {
-      tpl += `  // ${val.comments}\n`
+      tpl += `  // ${(val.comments ?? []).join(',')}\n`
       tpl += `  ${JSON.stringify(entry.key)}: ${JSON.stringify(val.baseValue)},\n`
     }
   })
@@ -224,7 +223,6 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
   // no trailing text, no truncated JSON.
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
-    // eslint-disable-next-line camelcase
     max_tokens: 4096,
     system: getSystemPrompt(),
     messages: [
@@ -233,20 +231,19 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
         content: `I would like this translated to ${targetLanguage}:\n\n${text}`,
       },
     ],
+    // oxlint-disable-next-line typescript/no-deprecated -- deterministic output is preferred for translations, and the model in use still supports setting temperature
     temperature: 0,
     tools: [
       {
         name: 'submit_translations',
         description:
           'Submit the translated key-value pairs. Each key must match the original key exactly, and each value is the translated string.',
-        // eslint-disable-next-line camelcase
         input_schema: {
           type: 'object' as const,
           additionalProperties: {type: 'string'},
         },
       },
     ],
-    // eslint-disable-next-line camelcase
     tool_choice: {type: 'tool' as const, name: 'submit_translations'},
   })
 

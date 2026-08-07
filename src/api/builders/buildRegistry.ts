@@ -1,7 +1,7 @@
 import type {LocaleRegistry} from '../../types'
 
 export function buildRegistry(registry: LocaleRegistry): string {
-  const locales = registry.sort((a, b) => a.id.localeCompare(b.id))
+  const locales = registry.toSorted((a, b) => a.id.localeCompare(b.id))
   return `
   import type {LocaleRegistry} from '../src/types'
 

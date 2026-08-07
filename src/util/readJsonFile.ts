@@ -1,8 +1,8 @@
 import fs from 'node:fs/promises'
 
-import type {infer as zodInfer, ZodTypeAny} from 'zod'
+import type {infer as zodInfer, ZodType} from 'zod'
 
-import {JsonParseErrorResolver} from '../types'
+import type {JsonParseErrorResolver} from '../types'
 
 /**
  * Read a JSON file and parse it. Throws with a helpful message (include file path) on errors.
@@ -13,7 +13,7 @@ import {JsonParseErrorResolver} from '../types'
  * @returns The parsed JSON file
  * @internal
  */
-export async function readJsonFile<T extends ZodTypeAny>(
+export async function readJsonFile<T extends ZodType>(
   jsonFilePath: string,
   schema: T,
   resolvers?: JsonParseErrorResolver[],
@@ -35,14 +35,14 @@ export async function readJsonFile<T extends ZodTypeAny>(
 
     // If we still haven't parsed the JSON, throw the original error
     if (typeof parsed === 'undefined') {
-      throw new Error(`Unable to read ${jsonFilePath}: ${err}`)
+      throw new Error(`Unable to read ${jsonFilePath}`, {cause: err})
     }
   }
 
   try {
     return schema.parse(parsed)
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : `${err}`
-    throw new Error(`Failed to parse JSON file: ${jsonFilePath}: ${message}`)
+    const message = err instanceof Error ? err.message : String(err)
+    throw new Error(`Failed to parse JSON file: ${jsonFilePath}: ${message}`, {cause: err})
   }
 }

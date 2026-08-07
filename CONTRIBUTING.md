@@ -14,7 +14,7 @@ You can easily add suggestions to existing pull requests from AI and other contr
 
 ### Submitting your own PRs
 
-Make sure you have Node.js version 18.3 or newer, as well as pnpm.
+Make sure you have Node.js version 24.18 or newer, as well as pnpm.
 
 ```bash
 git clone git@github.com:sanity-io/locales.git
@@ -71,6 +71,6 @@ If you run into build issues, you might want to try deleting `node_modules` fold
 
 When a PR upgrades the sanity package to a version that adds a new locale namespace, you may see test failures due to an unrecognized namespace. To fix this, do the following:
 
-- Run the [reconcile action](https://github.com/sanity-io/locales/actions/workflows/release-please.yml#rgh-run-workflow) from main.
+- Run the [reconcile action](https://github.com/sanity-io/locales/actions/workflows/reconcile.yml#rgh-run-workflow) from main.
 - This action runs `pnpm reconcile` and opens a PR with the locale packages updated to include the new namespace. Once this action has completed, you can find the PR here: https://github.com/sanity-io/locales/pull/actions/reconcile.
 - The test failures should be resolved when this PR is merged.

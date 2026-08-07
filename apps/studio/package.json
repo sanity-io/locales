@@ -49,10 +49,8 @@
     "@sanity/locale-zh-hant": "workspace:*",
     "@sanity/ui": "^3.5.1",
     "@sanity/vision": "^6.9.1",
-    "groq": "^6.9.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-is": "^19.2.4",
     "sanity": "^6.9.1",
     "styled-components": "^6.4.2"
   },

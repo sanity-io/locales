@@ -4,7 +4,6 @@ import {promisify} from 'node:util'
 import {getRootPath} from '../util/getRootPath'
 import {reconcileLocalePackages} from './locales'
 import {reconcileRegistry} from './registry'
-import {reconcileReleasePleaseConfig} from './release'
 import {reconcileStudio} from './studio'
 import {reconcileAutoTranslateWorkflow} from './workflows'
 
@@ -14,7 +13,6 @@ export async function reconcileAll(): Promise<void> {
   await reconcileRegistry()
   await reconcileLocalePackages()
   await reconcileStudio()
-  await reconcileReleasePleaseConfig()
   await reconcileLockFile()
   await reconcileAutoTranslateWorkflow()
 }
