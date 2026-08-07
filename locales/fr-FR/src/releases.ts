@@ -78,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'activity.event.unarchive': 'A désarchivé la release <strong>{{releaseTitle}}</strong>',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Marqué comme non planifié',
+  /** Tooltip/label for the button that closes the activity overlay panel */
+  'activity.panel.close': undefined, // 'Close activity'
   /** The loading text for when releases are loading */
   'activity.panel.error':
     "Une erreur s'est produite lors de la récupération de l'activité de la release",
@@ -156,6 +158,22 @@ export default removeUndefinedLocaleResources({
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Activité',
+  /** Label for the "created" metadata in the release detail header zone. */
+  'dashboard.details.metadata.created': undefined, // 'Created'
+  /** Label for the document-count metadata in the release detail header zone. */
+  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  /** Label for the schedule/type metadata in the release detail header zone. */
+  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  /** Label for the validation status metadata in the release detail header zone. */
+  'dashboard.details.metadata.status': undefined, // 'Status'
+  /** Status badge value when the release has no documents to validate. */
+  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  /** Status badge value when one or more documents have validation errors. */
+  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  /** Status badge value when every document in the release is valid. */
+  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  /** Status badge value while document validation is still running. */
+  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Épingler la release au studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -203,6 +221,8 @@ export default removeUndefinedLocaleResources({
   'document-validation.error_one': '{{count}} erreur de validation',
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} erreurs de validation',
+  /** Tooltip for the validation status when a document has no errors (the "ready" state) */
+  'document-validation.valid': undefined, // 'No validation errors'
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Oui, dupliquer la release',
@@ -275,6 +295,9 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the button name for the release tool */
   'overview.action.documentation': 'Documentation',
+  /** Label for the back button on a release detail page (returns to the releases list). The
+   * leading arrow already conveys "back", so the label names the destination only. */
+  'overview.back-to-all-releases': undefined, // 'All releases'
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Voir le calendrier',
   /** Description for the release tool */
@@ -466,8 +489,12 @@ export default removeUndefinedLocaleResources({
   'table-header.documents': 'Documents',
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Modifié',
+  /** Header for the document table - last editor (person) column */
+  'table-header.edited-by': undefined, // 'Edited by'
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Destiné à',
+  /** Header for the document table - last edited (relative time) column */
+  'table-header.last-edited': undefined, // 'Last edited'
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Publié',
   /** Header for the document table in the release tool - Published */
@@ -482,6 +509,8 @@ export default removeUndefinedLocaleResources({
   'table-header.title': 'Version',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Type',
+  /** Header for the document table in the release tool - variant (which variant a document targets) */
+  'table-header.variant': undefined, // 'Variant'
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Quand',
 
