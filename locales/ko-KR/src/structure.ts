@@ -14,6 +14,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
     '이 문서는 예약된 릴리스 내에 존재하기 때문에 삭제할 수 없습니다',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Delete" document action button */
   'action.delete.label': '삭제',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -35,6 +37,8 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-published': '이 문서는 발행되지 않았습니다',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': '작업 준비가 되지 않았습니다',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': '변경 사항 버리기',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -42,6 +46,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     '이 문서는 아직 존재하지 않아 복제할 것이 없습니다',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': '복제',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -50,8 +56,12 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': '이미 게시됨',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '{{timeSincePublished}} 전에 게시됨',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': undefined, // 'This version is published as part of its release'
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': '작업 준비되지 않음',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '게시',
   /** Label for the "Publish" document action */
@@ -94,6 +104,8 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': '이 문서는 발행되지 않았습니다',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': '작업 준비가 되지 않았습니다',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': '발행 취소',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -208,6 +220,20 @@ export default removeUndefinedLocaleResources({
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     '현재 <strong>게시된</strong> 버전을 표시합니다:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': undefined, // 'Create variant'
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found': undefined, // 'The selected variant <VariantName>{{name}}</VariantName> could not be found.'
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description': undefined, // 'An error occurred when adding document to the variant: {{message}}'
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': undefined, // 'Error adding document to variant'
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant': undefined, // 'No <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variant document exists for <VariantBadge>{{variantTitle}}</VariantBadge>.'
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description': undefined, // 'Please hold tight while the document is added to the variant. It should not take longer than a few seconds.'
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': undefined, // 'Adding document to variant…'
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '새로운 {{schemaType}}',
@@ -266,9 +292,7 @@ export default removeUndefinedLocaleResources({
     '이 뷰는 이 문서의 특정 버전에서 발생한 변경 사항을 보여줍니다. 다른 버전을 선택하여 해당 변경 사항을 확인하세요',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '에서',
-  /* The label for the history tab in the changes inspector*/
   'changes.tab.history': '역사',
-  /* The label for the review tab in the changes inspector*/
   'changes.tab.review-changes': '변경 사항 검토',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': '까지',
@@ -396,12 +420,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '알 수 없는 스키마 유형: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': undefined, // 'Where did the version buttons go?'
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '닫기',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/> 검사 중',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': '값 없음',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': undefined, // 'Something went wrong'
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '검사',
   /** the placeholder text for the search input on the inspect dialog */
@@ -410,6 +445,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': '파싱됨',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': '원시 JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': '이 양식은 숨겨져 있습니다',
@@ -422,6 +460,18 @@ export default removeUndefinedLocaleResources({
     '문서가 동기화되는 동안 잠시만 기다려 주세요. 이는 보통 문서가 게시된 직후에 발생하며, 몇 초 이상 걸리지 않아야 합니다',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': '문서 동기화 중…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description': undefined, // 'We\'ll keep trying. Your changes are kept in your browser in the meantime.'
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': undefined, // 'Your changes aren\'t saving'
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description': undefined, // 'Editing resumes as soon as your changes are saved.'
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': undefined, // 'Saving your changes…'
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description': undefined, // 'Editing is paused until they save. Your changes are kept in your browser, so keep this tab open while we keep trying.'
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': undefined, // 'Your changes still aren\'t saving'
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': '즐겨찾기에 추가',
@@ -482,10 +532,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': '간략한 보기',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '상세 보기',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': undefined, // 'Default view'
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': undefined, // 'Already using the default view'
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '생성 순으로 정렬',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '마지막 편집 순으로 정렬',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': undefined, // 'Default sort'
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': undefined, // 'Already using the default sort order'
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': '문서 유형 추가하는 방법 알아보기 →',
@@ -550,6 +608,14 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.search-input.aria-label': '목록 검색',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': '목록 검색',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': undefined, // 'Change search result ordering'
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': undefined, // 'Sorted by {{order}}'
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': undefined, // 'Relevance'
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': undefined, // 'Sorted by relevance'
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     '이 정렬 옵션은 현재 문서 유형에 포함되지 않은 필드를 사용합니다',
@@ -611,6 +677,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     '이 문서는 존재하지 않으며, 이에 대한 스키마 유형이 지정되지 않았습니다.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': undefined, // 'Loading document…'
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '로딩 중…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

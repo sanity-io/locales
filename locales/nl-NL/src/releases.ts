@@ -62,28 +62,24 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'Samenvatting',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'Een documentversie toegevoegd',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': 'De <strong>{{releaseTitle}}</strong> release gearchiveerd',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     'De <strong>{{releaseTitle}}</strong> release aangemaakt <ScheduleTarget>gericht op </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'Een documentversie verwijderd',
   'activity.event.edit': 'Releasetijd ingesteld op <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Zo snel mogelijk',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Onbeslist',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': 'De <strong>{{releaseTitle}}</strong> release gepubliceerd',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'Gemarkeerd als ingepland',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': 'De <strong>{{releaseTitle}}</strong> release gedearchiveerd',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Gemarkeerd als niet ingepland',
+  /** Tooltip/label for the button that closes the activity overlay panel */
+  'activity.panel.close': undefined, // 'Close activity'
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Er is een fout opgetreden bij het ophalen van de release-activiteit',
   /** The loading text for when releases are loading */
@@ -160,6 +156,22 @@ export default removeUndefinedLocaleResources({
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Activiteit',
+  /** Label for the "created" metadata in the release detail header zone. */
+  'dashboard.details.metadata.created': undefined, // 'Created'
+  /** Label for the document-count metadata in the release detail header zone. */
+  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  /** Label for the schedule/type metadata in the release detail header zone. */
+  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  /** Label for the validation status metadata in the release detail header zone. */
+  'dashboard.details.metadata.status': undefined, // 'Status'
+  /** Status badge value when the release has no documents to validate. */
+  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  /** Status badge value when one or more documents have validation errors. */
+  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  /** Status badge value when every document in the release is valid. */
+  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  /** Status badge value while document validation is still running. */
+  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Release vastzetten in studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -207,6 +219,8 @@ export default removeUndefinedLocaleResources({
   'document-validation.error_one': '{{count}} validatiefout',
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} validatiefouten',
+  /** Tooltip for the validation status when a document has no errors (the "ready" state) */
+  'document-validation.valid': undefined, // 'No validation errors'
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Ja, release dupliceren',
@@ -279,6 +293,9 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the button name for the release tool */
   'overview.action.documentation': 'Documentatie',
+  /** Label for the back button on a release detail page (returns to the releases list). The
+   * leading arrow already conveys "back", so the label names the destination only. */
+  'overview.back-to-all-releases': undefined, // 'All releases'
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Kalender bekijken',
   /** Description for the release tool */
@@ -331,6 +348,12 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Weet u zeker dat u de release en alle documentversies wilt publiceren?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one': undefined, // 'The existing draft of {{draftDocumentsLength}} document will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Sommige documenten bevatten validatiefouten',
   /** Label for when documents are being validated */
@@ -460,8 +483,12 @@ export default removeUndefinedLocaleResources({
   'table-header.documents': 'Documenten',
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Bewerkt',
+  /** Header for the document table - last editor (person) column */
+  'table-header.edited-by': undefined, // 'Edited by'
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Bedoeld voor',
+  /** Header for the document table - last edited (relative time) column */
+  'table-header.last-edited': undefined, // 'Last edited'
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Gepubliceerd',
   /** Header for the document table in the release tool - Published */
@@ -476,6 +503,8 @@ export default removeUndefinedLocaleResources({
   'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Type',
+  /** Header for the document table in the release tool - variant (which variant a document targets) */
+  'table-header.variant': undefined, // 'Variant'
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Wanneer',
 
@@ -510,6 +539,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "De release '{{title}}' is succesvol teruggedraaid",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Publiceren van '<strong>{{title}}</strong>' mislukt: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Terugdraai-release voor '{{title}}' is succesvol aangemaakt. <Link/>",

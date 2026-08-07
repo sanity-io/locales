@@ -62,28 +62,24 @@ export default removeUndefinedLocaleResources({
   /** Text for the summary button in release tool */
   'actions.summary': 'ಸಾರಾಂಶ',
 
-  /* The text for the activity event when a document is added to a release */
   'activity.event.add-document': 'ಒಂದು ದಾಖಲೆ ಆವೃತ್ತಿಯನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
-  /* The text for the activity event when the release is archived */
   'activity.event.archive': '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ',
-  /* The text for the activity event when the release is created */
   'activity.event.create':
     '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ರಚಿಸಲಾಗಿದೆ <ScheduleTarget>ಗುರಿಯಾಗಿ </ScheduleTarget>',
-  /* The text for the activity event when a document is removed from a release */
   'activity.event.discard-document': 'ಒಂದು ದಾಖಲೆ ಆವೃತ್ತಿಯನ್ನು ತಿರಸ್ಕರಿಸಲಾಗಿದೆ',
   'activity.event.edit': 'ರಿಲೀಸ್ ಸಮಯವನ್ನು <ScheduleTarget></ScheduleTarget> ಗೆ ಹೊಂದಿಸಲಾಗಿದೆ',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'ಸಾಧ್ಯವಾದಷ್ಟು ಬೇಗ',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'ನಿರ್ಧರಿಸಿಲ್ಲ',
-  /* The text for the activity event when the release is published */
   'activity.event.publish': '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ಪ್ರಕಟಿಸಲಾಗಿದೆ',
-  /* The text for the activity event when the release is scheduled */
   'activity.event.schedule': 'ನಿಗದಿಪಡಿಸಿದಂತೆ ಗುರುತಿಸಲಾಗಿದೆ',
   /** The text for the activity event when the release is unarchived */
   'activity.event.unarchive': '<strong>{{releaseTitle}}</strong> ರಿಲೀಸ್ ಅನ್ನು ಅನ್ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'ಅನ್ಶೆಡ್ಯೂಲ್ ಆಗಿದೆ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ',
+  /** Tooltip/label for the button that closes the activity overlay panel */
+  'activity.panel.close': undefined, // 'Close activity'
   /** The loading text for when releases are loading */
   'activity.panel.error': 'ರಿಲೀಸ್ ಚಟುವಟಿಕೆಯನ್ನು ಪಡೆಯುವಲ್ಲಿ ದೋಷ ಸಂಭವಿಸಿದೆ',
   /** The loading text for when releases are loading */
@@ -161,6 +157,22 @@ export default removeUndefinedLocaleResources({
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'ಚಟುವಟಿಕೆ',
+  /** Label for the "created" metadata in the release detail header zone. */
+  'dashboard.details.metadata.created': undefined, // 'Created'
+  /** Label for the document-count metadata in the release detail header zone. */
+  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  /** Label for the schedule/type metadata in the release detail header zone. */
+  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  /** Label for the validation status metadata in the release detail header zone. */
+  'dashboard.details.metadata.status': undefined, // 'Status'
+  /** Status badge value when the release has no documents to validate. */
+  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  /** Status badge value when one or more documents have validation errors. */
+  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  /** Status badge value when every document in the release is valid. */
+  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  /** Status badge value while document validation is still running. */
+  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Release ಅನ್ನು studio ಗೆ ಪಿನ್ ಮಾಡಿ',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -207,6 +219,8 @@ export default removeUndefinedLocaleResources({
   'document-validation.error_one': '{{count}} ಮೌಲ್ಯೀಕರಣ ದೋಷ',
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳು',
+  /** Tooltip for the validation status when a document has no errors (the "ready" state) */
+  'document-validation.valid': undefined, // 'No validation errors'
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'ಹೌದು, release ಅನ್ನು ನಕಲಿಸಿ',
@@ -279,6 +293,9 @@ export default removeUndefinedLocaleResources({
 
   /** Text for the button name for the release tool */
   'overview.action.documentation': 'ದಾಖಲಾತಿ',
+  /** Label for the back button on a release detail page (returns to the releases list). The
+   * leading arrow already conveys "back", so the label names the destination only. */
+  'overview.back-to-all-releases': undefined, // 'All releases'
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'ಕ್ಯಾಲೆಂಡರ್ ವೀಕ್ಷಿಸಿ',
   /** Description for the release tool */
@@ -331,6 +348,12 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'ನೀವು release ಮತ್ತು ಎಲ್ಲಾ ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ಪ್ರಕಟಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?',
+  /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
+  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  /** Description for the update existing drafts checkbox when one document has an existing draft */
+  'publish-dialog.confirm-publish.update-drafts-description_one': undefined, // 'The existing draft of {{draftDocumentsLength}} document will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'ಕೆಲವು ದಾಖಲೆಗಳಲ್ಲಿ ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳಿವೆ',
   /** Label for when documents are being validated */
@@ -460,8 +483,12 @@ export default removeUndefinedLocaleResources({
   'table-header.documents': 'ದಾಖಲೆಗಳು',
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'ಸಂಪಾದಿಸಲಾಗಿದೆ',
+  /** Header for the document table - last editor (person) column */
+  'table-header.edited-by': undefined, // 'Edited by'
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'ಉದ್ದೇಶಿಸಿದವರಿಗೆ',
+  /** Header for the document table - last edited (relative time) column */
+  'table-header.last-edited': undefined, // 'Last edited'
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Header for the document table in the release tool - Published */
@@ -476,6 +503,8 @@ export default removeUndefinedLocaleResources({
   'table-header.title': 'Release',
   /** Header for the document table in the release tool - type */
   'table-header.type': 'ಪ್ರಕಾರ',
+  /** Header for the document table in the release tool - variant (which variant a document targets) */
+  'table-header.variant': undefined, // 'Variant'
   /** Header for the document table in the release tool - when */
   'table-header.when': 'ಯಾವಾಗ',
 
@@ -510,6 +539,8 @@ export default removeUndefinedLocaleResources({
   'toast.immediate-revert.success': "'{{title}}' release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹಿಂತಿರುಗಿಸಲಾಗಿದೆ",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' ಅನ್ನು ಪ್ರಕಟಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
+  /** Text for toast when the release was published but the existing drafts could not be updated */
+  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "'{{title}}' ಗಾಗಿ revert release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ. <Link/>",

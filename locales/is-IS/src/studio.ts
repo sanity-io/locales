@@ -1500,6 +1500,8 @@ export default removeUndefinedLocaleResources({
   'release.action.discard-version': 'Hafna útgáfu',
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Mistókst að hafna útgáfu',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Breyta tímasetningu',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1606,6 +1608,14 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit-schedule.confirm': 'Uppfæra tímasetningu',
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Breyta tímasetningu',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Ertu viss um að þú viljir birta þessi tímasettu drög strax?',
@@ -1661,6 +1671,8 @@ export default removeUndefinedLocaleResources({
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
     'Tímasettu drögunum <strong>{{title}}</strong> hefur verið eytt.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
