@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
   'action.schedule-publish.disabled.validation-issues':
     'Kan concept niet inplannen vanwege validatiefouten in het huidige concept.',
   /** Tooltip text for when schedule publish is disabled because a variant is selected */
-  'action.schedule-publish.disabled.variant': undefined, // 'Scheduling is not yet available for variants.'
+  'action.schedule-publish.disabled.variant': 'Plannen is nog niet beschikbaar voor varianten.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Meer informatie over inplannen',
