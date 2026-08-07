@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.insert-asset-error':
     'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
+  'asset-source.dialog.load-error': 'ไม่สามารถโหลดสินทรัพย์ได้',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'โหลดเพิ่มเติม',
   /** Text shown when selecting a file but there's no files to select from
@@ -419,7 +419,7 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.tooltip': 'พบปัญหาการตั้งค่า',
 
   /** The name of Content Agent, the product. */
-  'content-agent': undefined, // 'Content Agent'
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'เรียงตาม {{title}}',
@@ -459,71 +459,76 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  'document-group-inventory.action.cancel': 'ยกเลิก',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
-  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  'document-group-inventory.feedback.sentiment-label':
+    'เวอร์ชันใหม่ของ inventory ใช้งานง่ายหรือยากเพียงใด?',
   /** The label for the input that filters the variants in the document group inventory */
-  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  'document-group-inventory.filter-string.label': 'กรอง {{subject}}',
   /** The document inventory title (plural) */
-  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+  'document-group-inventory.viewing-item-label': 'กำลังดู',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': undefined, // 'All users (Default)'
+  'document-group.base-variant': 'ผู้ใช้ทั้งหมด (ค่าเริ่มต้น)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'สร้าง variant',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': 'สร้าง variant สำหรับ {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'เป็นแบบร่าง',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'ใส่ใน release',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': 'หรือดู variant ที่มีอยู่',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
-  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  'document-group.delete.cancel-button.text': 'ยกเลิก',
   /** Used in `document-group.delete.cdr-summary.title` */
-  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} เอกสาร',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'dataset ที่ไม่พร้อมใช้งาน',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} ใน {{count}} datasets',
   /** Appears when hovering over the copy button to copy */
-  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'คัดลอก ID ไปยังคลิปบอร์ด',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  'document-group.delete.cdr-table.document-id.label': 'Document ID',
   /** The toast title when the copy button has been clicked but copying failed */
-  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': 'ไม่สามารถคัดลอก document ID ได้',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  'document-group.delete.cdr-table.project-id.label': 'Project ID',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  'document-group.delete.confirm-button.text_other': 'ลบ ({{count}})',
   /** The message shown after deletion fails */
-  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  'document-group.delete.error.message':
+    'เกิดข้อผิดพลาดขณะพยายามลบเอกสารนี้ โดยปกติหมายความว่ามีเอกสารอื่นที่อ้างอิงถึงเอกสารนี้อยู่',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  'document-group.delete.other-reference-count.title_other': '{{count}} การอ้างอิงอื่นๆ ที่ไม่แสดง',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'document-group.delete.other-reference-count.tooltip':
+    'เราไม่สามารถแสดงข้อมูลเมตาสำหรับการอ้างอิงเหล่านี้ได้ เนื่องจากไม่มี access token สำหรับ dataset ที่เกี่ยวข้อง',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'document-group.delete.preview-item.preview-unavailable.title': 'ไม่สามารถแสดงตัวอย่างได้',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
-  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} เอกสารอ้างอิงถึง "<DocumentTitle/>"',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'document-group.delete.referring-documents-descriptor.text':
+    'คุณอาจไม่สามารถลบ "<DocumentTitle/>" ได้ เนื่องจากเอกสารต่อไปนี้อ้างอิงถึงเอกสารนั้น:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
-  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  'document-group.delete.title_other': 'ลบ {{count}} {{subject}}',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.variant_other': undefined, // 'variants'
+  'document-group.subject.variant_other': 'variants',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': undefined, // 'versions'
+  'document-group.subject.version_other': 'versions',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'สร้างเมื่อ {{date}}',
@@ -551,9 +556,9 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  'document.initial-value.error.description': 'เอกสารถูกเปิดด้วยค่าว่าง {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
+  'document.initial-value.error.title': 'ไม่สามารถกำหนดค่าเริ่มต้นได้',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ไม่พบประเภทเอกสาร "{{type}}"',
 
@@ -1096,27 +1101,27 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'อ้างอิง',
   /** Label for the table lane that appends a column */
-  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  'inputs.portable-text.table.add-column': 'เพิ่มคอลัมน์ที่ท้าย',
   /** Label for the table lane that appends a row */
-  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  'inputs.portable-text.table.add-row': 'เพิ่มแถวที่ท้าย',
   /** Aria label for a table column's drag/select handle */
-  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  'inputs.portable-text.table.column-handle': 'จุดจับคอลัมน์',
   /** Label for the trash chip that deletes the selected column */
-  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  'inputs.portable-text.table.delete-column': 'ลบคอลัมน์',
   /** Label for the trash chip that deletes the selected row */
-  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  'inputs.portable-text.table.delete-row': 'ลบแถว',
   /** Label for the table menu item that deletes the table */
-  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  'inputs.portable-text.table.delete-table': 'ลบตาราง',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  'inputs.portable-text.table.header-row': 'แถวส่วนหัว',
   /** Aria label for the dots that insert a row or column at a boundary */
-  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  'inputs.portable-text.table.insert-here': 'แทรกที่นี่',
   /** Aria label for the table menu button */
-  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  'inputs.portable-text.table.menu-aria-label': 'ตัวเลือกตาราง',
   /** Aria label for a table row's drag/select handle */
-  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  'inputs.portable-text.table.row-handle': 'จุดจับแถว',
   /** Label for the table menu item that selects the whole table */
-  'inputs.portable-text.table.select-table': undefined, // 'Select table'
+  'inputs.portable-text.table.select-table': 'เลือกตาราง',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'ล้าง',
   /** Label for action to copy the current item (used within arrays) */
@@ -1322,11 +1327,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': 'สิทธิ์ไม่เพียงพอ',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  'login.logged-out.generic': 'เซสชันของคุณหมดอายุแล้ว กรุณาลงชื่อเข้าใช้อีกครั้ง',
   /** Body of the logged-out banner shown above the login form when the session expired */
-  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  'login.logged-out.session-expired': 'เซสชันของคุณหมดอายุแล้ว กรุณาลงชื่อเข้าใช้อีกครั้ง',
   /** Title of the banner shown above the login form after the studio logs the user out */
-  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+  'login.logged-out.title': 'คุณได้ออกจากระบบแล้ว',
 
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'เกิดข้อผิดพลาดที่ไม่คาดคิด: {{error}}',
@@ -1416,7 +1421,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ไม่สามารถทิ้งเวอร์ชันได้',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'แก้ไขรายละเอียด',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'แก้ไขตารางเวลา',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1451,7 +1456,7 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'กำหนดการเผยแพร่เมื่อ {{date}}',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  'release.chip.button.other-variants_other': '+{{count}} ตัวแปร',
   /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} เวอร์ชัน',
   /** Label for Draft chip in document header */
@@ -1475,7 +1480,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'ไม่มีการแก้ไข',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'ยังไม่ได้เผยแพร่',
-  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
+  'release.chip.tooltip.other-variants_other': '{{count}} ตัวแปร',
   'release.chip.tooltip.other-versions_other': '{{count}} เวอร์ชันเพิ่มเติมนอกเหนือจากการเผยแพร่',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'เผยแพร่เมื่อ {{date}}',
@@ -1516,13 +1521,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'เปลี่ยนกำหนดการ',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'บันทึก',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'คำอธิบาย',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'แก้ไข release',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'ชื่อเรื่อง',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ร่างที่กำหนดการไว้ทันที?',
@@ -1580,7 +1585,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกลบแล้ว',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'บันทึกรายละเอียด release ไม่สำเร็จ',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
