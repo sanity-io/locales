@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'ಅನ್ಶೆಡ್ಯೂಲ್ ಆಗಿದೆ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'ಚಟುವಟಿಕೆಯನ್ನು ಮುಚ್ಚಿರಿ',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'ರಿಲೀಸ್ ಚಟುವಟಿಕೆಯನ್ನು ಪಡೆಯುವಲ್ಲಿ ದೋಷ ಸಂಭವಿಸಿದೆ',
   /** The loading text for when releases are loading */
@@ -158,21 +158,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'ಚಟುವಟಿಕೆ',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'ರಚಿಸಲಾಗಿದೆ',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'Documents',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'Schedule',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'ಸ್ಥಿತಿ',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'Documents ಇಲ್ಲ',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'ದೋಷಗಳು',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'ಮಾನ್ಯ',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'ಮಾನ್ಯತೆ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Release ಅನ್ನು studio ಗೆ ಪಿನ್ ಮಾಡಿ',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -220,7 +220,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳು',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'ಯಾವುದೇ ಮಾನ್ಯತೆ ದೋಷಗಳಿಲ್ಲ',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'ಹೌದು, release ಅನ್ನು ನಕಲಿಸಿ',
@@ -295,7 +295,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'ದಾಖಲಾತಿ',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'ಎಲ್ಲಾ releases',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'ಕ್ಯಾಲೆಂಡರ್ ವೀಕ್ಷಿಸಿ',
   /** Description for the release tool */
@@ -349,11 +349,13 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.confirm-publish.title':
     'ನೀವು release ಮತ್ತು ಎಲ್ಲಾ ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ಪ್ರಕಟಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
-  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ drafts ಅನ್ನು ನವೀಕರಿಸಿ',
   /** Description for the update existing drafts checkbox when one document has an existing draft */
-  'publish-dialog.confirm-publish.update-drafts-description_one': undefined, // 'The existing draft of {{draftDocumentsLength}} document will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    '{{draftDocumentsLength}} document ನ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ draft ಅನ್ನು ತಿರಸ್ಕರಿಸಲಾಗುತ್ತದೆ, ಇದರಿಂದ drafts ಪ್ರಕಟಿತ release ಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತವೆ. ಪ್ರಕಟಿಸದ draft ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
-  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}} documents ನ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ drafts ಅನ್ನು ತಿರಸ್ಕರಿಸಲಾಗುತ್ತದೆ, ಇದರಿಂದ drafts ಪ್ರಕಟಿತ release ಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತವೆ. ಪ್ರಕಟಿಸದ draft ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'ಕೆಲವು ದಾಖಲೆಗಳಲ್ಲಿ ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳಿವೆ',
   /** Label for when documents are being validated */
@@ -484,11 +486,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'ಸಂಪಾದಿಸಲಾಗಿದೆ',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'ಸಂಪಾದಿಸಿದವರು',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'ಉದ್ದೇಶಿಸಿದವರಿಗೆ',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'ಕೊನೆಯದಾಗಿ ಸಂಪಾದಿಸಲಾಗಿದೆ',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Header for the document table in the release tool - Published */
@@ -504,7 +506,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'ಪ್ರಕಾರ',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Variant',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'ಯಾವಾಗ',
 
@@ -540,7 +542,8 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' ಅನ್ನು ಪ್ರಕಟಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
+  'toast.publish.update-drafts-error':
+    'Release ಅನ್ನು ಪ್ರಕಟಿಸಲಾಯಿತು, ಆದರೆ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ drafts ಅನ್ನು ನವೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "'{{title}}' ಗಾಗಿ revert release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ. <Link/>",
