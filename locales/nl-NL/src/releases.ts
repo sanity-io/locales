@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Gemarkeerd als niet ingepland',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'Activiteit sluiten',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Er is een fout opgetreden bij het ophalen van de release-activiteit',
   /** The loading text for when releases are loading */
@@ -157,21 +157,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'Activiteit',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'Aangemaakt',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'Documenten',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'Schema',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'Status',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'Geen documenten',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'Fouten',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'Geldig',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'Valideren',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Release vastzetten in studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -220,7 +220,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} validatiefouten',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'Geen validatiefouten',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Ja, release dupliceren',
@@ -295,7 +295,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Documentatie',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'Alle releases',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Kalender bekijken',
   /** Description for the release tool */
@@ -349,11 +349,13 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.confirm-publish.title':
     'Weet u zeker dat u de release en alle documentversies wilt publiceren?',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
-  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Bestaande concepten bijwerken',
   /** Description for the update existing drafts checkbox when one document has an existing draft */
-  'publish-dialog.confirm-publish.update-drafts-description_one': undefined, // 'The existing draft of {{draftDocumentsLength}} document will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    'Het bestaande concept van {{draftDocumentsLength}} document wordt verwijderd zodat concepten overeenkomen met de gepubliceerde release. Niet-gepubliceerde conceptwijzigingen gaan verloren.',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
-  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'De bestaande concepten van {{draftDocumentsLength}} documenten worden verwijderd zodat concepten overeenkomen met de gepubliceerde release. Niet-gepubliceerde conceptwijzigingen gaan verloren.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Sommige documenten bevatten validatiefouten',
   /** Label for when documents are being validated */
@@ -484,11 +486,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Bewerkt',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'Bewerkt door',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Bedoeld voor',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'Laatst bewerkt',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Gepubliceerd',
   /** Header for the document table in the release tool - Published */
@@ -504,7 +506,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Type',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Variant',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Wanneer',
 
@@ -540,7 +542,8 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Publiceren van '<strong>{{title}}</strong>' mislukt: {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
+  'toast.publish.update-drafts-error':
+    'De release is gepubliceerd, maar bestaande concepten konden niet worden bijgewerkt: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "Terugdraai-release voor '{{title}}' is succesvol aangemaakt. <Link/>",
