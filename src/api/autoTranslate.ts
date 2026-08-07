@@ -16,7 +16,21 @@ import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
-const ANTHROPIC_MODEL = 'claude-sonnet-4-6'
+const ANTHROPIC_MODEL = 'claude-sonnet-5'
+
+/**
+ * Controls how many tokens the model spends (thinking depth, verbosity), not sampling
+ * randomness. Adaptive thinking is on by default on this model, and `low` lets it skip
+ * thinking entirely on simple requests - closest to how this workload behaved on
+ * Sonnet 4.6, which ran without thinking. Step up to `medium` if translations regress.
+ */
+const ANTHROPIC_EFFORT = 'low'
+
+/**
+ * Ceiling for thinking plus response tokens. Generous on purpose: unused budget is not
+ * billed, and a truncated response arrives without the tool call we require.
+ */
+const ANTHROPIC_MAX_TOKENS = 16000
 
 /**
  * Prefix that preceeds the name of the auto-translated locale branch
@@ -220,12 +234,12 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
   }
 
   // Use tool calling to guarantee valid JSON output. The model is forced to call
-  // this tool, so the response is always machine-parseable — no markdown fences,
+  // this tool, so a completed response is machine-parseable — no markdown fences,
   // no trailing text, no truncated JSON.
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
     // eslint-disable-next-line camelcase
-    max_tokens: 4096,
+    max_tokens: ANTHROPIC_MAX_TOKENS,
     system: getSystemPrompt(),
     messages: [
       {
@@ -233,7 +247,8 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
         content: `I would like this translated to ${targetLanguage}:\n\n${text}`,
       },
     ],
-    temperature: 0,
+    // eslint-disable-next-line camelcase
+    output_config: {effort: ANTHROPIC_EFFORT},
     tools: [
       {
         name: 'submit_translations',
@@ -252,7 +267,9 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
 
   const toolBlock = message.content.find((block) => block.type === 'tool_use')
   if (!toolBlock || toolBlock.type !== 'tool_use') {
-    throw new Error('No tool_use block in response')
+    // A `max_tokens` stop reason means thinking plus response outgrew the budget,
+    // which is worth distinguishing from the model declining to call the tool.
+    throw new Error(`No tool_use block in response (stop_reason: ${message.stop_reason})`)
   }
 
   return JSON.stringify(toolBlock.input)
