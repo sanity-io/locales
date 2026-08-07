@@ -16,7 +16,8 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.scheduled-release':
     'Tätä dokumenttia ei voi poistaa, koska se on osa aikataulutettuja julkaisuja',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
-  'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.delete.disabled.target-not-found':
+    'Valittu julkaisu tai variantti ei sisällä tätä dokumenttia',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Poista',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -40,7 +41,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Toiminto ei ole valmis',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.discard-changes.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.discard-changes.disabled.target-not-found':
+    'Valittu julkaisu tai variantti ei sisällä tätä dokumenttia',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Hylkää muutokset',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -49,7 +51,8 @@ export default removeUndefinedLocaleResources({
   'action.duplicate.disabled.nothing-to-duplicate':
     'Tätä dokumenttia ei ole vielä olemassa, joten sitä ei voi kopioida',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.duplicate.disabled.target-not-found':
+    'Valittu julkaisu tai variantti ei sisällä tätä dokumenttia',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Kopioi',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -59,11 +62,12 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Julkaistu {{timeSincePublished}} sitten',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': undefined, // 'This version is published as part of its release'
+  'action.publish.disabled.not-publishable': 'Tämä versio julkaistaan osana sen julkaisua',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Toiminto ei ole valmis',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.publish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.publish.disabled.target-not-found':
+    'Valittu julkaisu tai variantti ei sisällä tätä dokumenttia',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Julkaise',
   /** Label for the "Publish" document action */
@@ -106,7 +110,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Toiminto ei ole valmis',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.unpublish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.unpublish.disabled.target-not-found':
+    'Valittu julkaisu tai variantti ei sisällä tätä dokumenttia',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Poista julkaisu',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -234,19 +239,23 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text-with-published':
     'Näytetään nykyinen <strong>julkaistu</strong> versio:',
   /** The text that appears for the action button to add the current document to the selected variant */
-  'banners.variant.action.add-to-variant': undefined, // 'Create variant'
+  'banners.variant.action.add-to-variant': 'Luo variantti',
   /** The text for the banner that appears when the selected variant matches no variant definition */
-  'banners.variant.definition-not-found': undefined, // 'The selected variant <VariantName>{{name}}</VariantName> could not be found.'
+  'banners.variant.definition-not-found':
+    'Valittua varianttia <VariantName>{{name}}</VariantName> ei löydy.',
   /** Toast description in case an error occurs when adding a document to a variant */
-  'banners.variant.error.description': undefined, // 'An error occurred when adding document to the variant: {{message}}'
+  'banners.variant.error.description':
+    'Virhe tapahtui lisättäessä dokumenttia varianttiin: {{message}}',
   /** Toast title in case an error occurs when adding a document to a variant */
-  'banners.variant.error.title': undefined, // 'Error adding document to variant'
+  'banners.variant.error.title': 'Virhe lisättäessä dokumenttia varianttiin',
   /** The text for the banner that appears when a document is not in the selected variant */
-  'banners.variant.not-in-variant': undefined, // 'No <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variant document exists for <VariantBadge>{{variantTitle}}</VariantBadge>.'
+  'banners.variant.not-in-variant':
+    'Varianttidokumenttia <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> ei ole olemassa kohteelle <VariantBadge>{{variantTitle}}</VariantBadge>.',
   /** Description of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.description': undefined, // 'Please hold tight while the document is added to the variant. It should not take longer than a few seconds.'
+  'banners.variant.waiting.description':
+    'Odota hetki, kun dokumenttia lisätään varianttiin. Tämä ei kestä kauaa.',
   /** Title of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.title': undefined, // 'Adding document to variant…'
+  'banners.variant.waiting.title': 'Lisätään dokumenttia varianttiin…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Uusi {{schemaType}}',
@@ -439,7 +448,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'Tuntematon skeematyyppi: {{schemaType}}',
 
   /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': undefined, // 'Where did the version buttons go?'
+  'document-group-inventory.onboarding-hint': 'Minne versiopainikkeet katosivat?',
 
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Sulje',
@@ -448,13 +457,13 @@ export default removeUndefinedLocaleResources({
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Ei arvoa',
   /** Accessibility label for the close button shown when an inspector panel failed to render */
-  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  'document-inspector.error.close-button.aria-label': 'Sulje paneeli',
   /** Text explaining that the inspector panel failed to render */
-  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  'document-inspector.error.description': 'Virhe tapahtui tämän paneelin renderöinnin aikana.',
   /** Label for the button that attempts to render the inspector panel again */
-  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  'document-inspector.error.retry-button.text': 'Yritä uudelleen',
   /** The title shown in the inspector panel header when the panel failed to render */
-  'document-inspector.error.title': undefined, // 'Something went wrong'
+  'document-inspector.error.title': 'Jokin meni pieleen',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Tutki',
   /** the placeholder text for the search input on the inspect dialog */
@@ -465,7 +474,8 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': 'Raaka JSON',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
+  'document-target-badges.not-in-target.tooltip':
+    'Dokumenttia ei vielä ole valitussa perspective-näkymässä.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Tämä lomake on piilotettu',
@@ -479,17 +489,20 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkronoidaan asiakirjaa…',
   /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.description': undefined, // 'We\'ll keep trying. Your changes are kept in your browser in the meantime.'
+  'document-view.form-view.sync-pending.description':
+    'Yritämme edelleen. Muutoksesi säilytetään selaimessasi sillä välin.',
   /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.title': undefined, // 'Your changes aren\'t saving'
+  'document-view.form-view.sync-pending.title': 'Muutoksiasi ei tallenneta',
   /** Description of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.description': undefined, // 'Editing resumes as soon as your changes are saved.'
+  'document-view.form-view.sync-recovering.description':
+    'Muokkaus jatkuu heti, kun muutoksesi on tallennettu.',
   /** Title of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.title': undefined, // 'Saving your changes…'
+  'document-view.form-view.sync-recovering.title': 'Tallennetaan muutoksiasi…',
   /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.description': undefined, // 'Editing is paused until they save. Your changes are kept in your browser, so keep this tab open while we keep trying.'
+  'document-view.form-view.sync-stalled.description':
+    'Muokkaus on keskeytetty, kunnes muutokset tallentuvat. Muutoksesi säilytetään selaimessasi, joten pidä tämä välilehti auki, kun yritämme edelleen.',
   /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.title': undefined, // 'Your changes still aren\'t saving'
+  'document-view.form-view.sync-stalled.title': 'Muutoksiasi ei edelleenkään tallenneta',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Lisää suosikkeihin',
@@ -552,17 +565,17 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Yksityiskohtainen näkymä',
   /** The menu item title that restores the structure-configured default layout */
-  'menu-items.layout.restore-default': undefined, // 'Default view'
+  'menu-items.layout.restore-default': 'Oletusnäkymä',
   /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
-  'menu-items.layout.restore-default.disabled-reason': undefined, // 'Already using the default view'
+  'menu-items.layout.restore-default.disabled-reason': 'Oletusnäkymä on jo käytössä',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Lajittele luontipäivämäärän mukaan',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Lajittele viimeksi muokatun mukaan',
   /** The menu item title that restores the structure-configured default sort order */
-  'menu-items.sort-by.restore-default': undefined, // 'Default sort'
+  'menu-items.sort-by.restore-default': 'Oletusjärjestys',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
-  'menu-items.sort-by.restore-default.disabled-reason': undefined, // 'Already using the default sort order'
+  'menu-items.sort-by.restore-default.disabled-reason': 'Oletusjärjestys on jo käytössä',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Opi lisäämään asiakirjatyyppi →',
@@ -630,13 +643,13 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Etsi listalta',
   /** The aria-label for the sort-order control shown beneath the document list search input */
-  'panes.document-list-pane.search-ordering.aria-label': undefined, // 'Change search result ordering'
+  'panes.document-list-pane.search-ordering.aria-label': 'Muuta hakutulosten järjestystä',
   /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
-  'panes.document-list-pane.search-ordering.label': undefined, // 'Sorted by {{order}}'
+  'panes.document-list-pane.search-ordering.label': 'Järjestetty: {{order}}',
   /** The label for the relevance (best match) option in the document list search sort-order control */
-  'panes.document-list-pane.search-ordering.relevance': undefined, // 'Relevance'
+  'panes.document-list-pane.search-ordering.relevance': 'Osuvuus',
   /** The sort-order control summary shown when results are ranked by relevance */
-  'panes.document-list-pane.search-ordering.summary-relevance': undefined, // 'Sorted by relevance'
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Järjestetty osuvuuden mukaan',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Tämä lajitteluvaihtoehto käyttää kenttiä, jotka eivät kuulu tähän dokumenttityyppiin',
@@ -700,7 +713,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Tätä dokumenttia ei ole olemassa, eikä sille ole määritelty skeematyyppiä.',
   /** The loading message shown while the document targeted by the selected variant is resolving */
-  'panes.document-pane.variant-target.loading': undefined, // 'Loading document…'
+  'panes.document-pane.variant-target.loading': 'Ladataan dokumenttia…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Ladataan…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
