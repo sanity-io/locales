@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
   'action.schedule-publish.disabled.validation-issues':
     'Luonnosta ei voi ajastaa nykyisen luonnoksen vahvistusvirheiden vuoksi.',
   /** Tooltip text for when schedule publish is disabled because a variant is selected */
-  'action.schedule-publish.disabled.variant': undefined, // 'Scheduling is not yet available for variants.'
+  'action.schedule-publish.disabled.variant': 'Ajastus ei ole vielä käytettävissä varianteille.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'Lue ajastamisesta',
