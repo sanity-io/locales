@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.insert-asset-error':
     'Lỗi khi chèn tài sản. Xem console để biết thêm thông tin.',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
+  'asset-source.dialog.load-error': 'Không thể tải tài sản',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Tải thêm',
   /** Text shown when selecting a file but there's no files to select from
@@ -425,7 +425,7 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.tooltip': 'Phát hiện vấn đề cấu hình',
 
   /** The name of Content Agent, the product. */
-  'content-agent': undefined, // 'Content Agent'
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sắp xếp theo {{title}}',
@@ -465,71 +465,77 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  'document-group-inventory.action.cancel': 'Hủy',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
-  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  'document-group-inventory.feedback.sentiment-label':
+    'Phiên bản kho lưu trữ mới dễ hay khó sử dụng?',
   /** The label for the input that filters the variants in the document group inventory */
-  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  'document-group-inventory.filter-string.label': 'Lọc {{subject}}',
   /** The document inventory title (plural) */
-  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+  'document-group-inventory.viewing-item-label': 'đang xem',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': undefined, // 'All users (Default)'
+  'document-group.base-variant': 'Tất cả người dùng (Mặc định)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'Tạo biến thể',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': 'Tạo biến thể cho {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'Dưới dạng bản nháp',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'Vào một bản phát hành',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': 'Hoặc xem các biến thể hiện có',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
-  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  'document-group.delete.cancel-button.text': 'Hủy',
   /** Used in `document-group.delete.cdr-summary.title` */
-  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} tài liệu',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Datasets không khả dụng',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} trong {{count}} datasets',
   /** Appears when hovering over the copy button to copy */
-  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Sao chép ID vào clipboard',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  'document-group.delete.cdr-table.document-id.label': 'ID tài liệu',
   /** The toast title when the copy button has been clicked but copying failed */
-  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': 'Không thể sao chép ID tài liệu',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  'document-group.delete.cdr-table.project-id.label': 'ID dự án',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  'document-group.delete.confirm-button.text_other': 'Xóa ({{count}})',
   /** The message shown after deletion fails */
-  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  'document-group.delete.error.message':
+    'Đã xảy ra lỗi khi cố gắng xóa tài liệu này. Điều này thường có nghĩa là có các tài liệu khác đang tham chiếu đến nó.',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} tham chiếu khác không được hiển thị',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'document-group.delete.other-reference-count.tooltip':
+    'Chúng tôi không thể hiển thị siêu dữ liệu cho các tham chiếu này do thiếu access token cho các dataset liên quan.',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'document-group.delete.preview-item.preview-unavailable.title': 'Không có bản xem trước',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
-  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} tài liệu tham chiếu đến "<DocumentTitle/>"',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'document-group.delete.referring-documents-descriptor.text':
+    'Bạn có thể không thể xóa "<DocumentTitle/>" vì các tài liệu sau đây tham chiếu đến nó:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
-  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  'document-group.delete.title_other': 'Xóa {{count}} {{subject}}',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.variant_other': undefined, // 'variants'
+  'document-group.subject.variant_other': 'biến thể',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': undefined, // 'versions'
+  'document-group.subject.version_other': 'phiên bản',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Đã tạo {{date}}',
@@ -557,9 +563,10 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  'document.initial-value.error.description':
+    'Tài liệu được mở với giá trị trống. {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
+  'document.initial-value.error.title': 'Không thể xác định giá trị ban đầu',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Không tìm thấy loại tài liệu "{{type}}"',
 
@@ -1103,27 +1110,27 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Trích dẫn',
   /** Label for the table lane that appends a column */
-  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  'inputs.portable-text.table.add-column': 'Thêm cột vào cuối',
   /** Label for the table lane that appends a row */
-  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  'inputs.portable-text.table.add-row': 'Thêm hàng vào cuối',
   /** Aria label for a table column's drag/select handle */
-  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  'inputs.portable-text.table.column-handle': 'Tay cầm cột',
   /** Label for the trash chip that deletes the selected column */
-  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  'inputs.portable-text.table.delete-column': 'Xóa cột',
   /** Label for the trash chip that deletes the selected row */
-  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  'inputs.portable-text.table.delete-row': 'Xóa hàng',
   /** Label for the table menu item that deletes the table */
-  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  'inputs.portable-text.table.delete-table': 'Xóa bảng',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  'inputs.portable-text.table.header-row': 'Hàng tiêu đề',
   /** Aria label for the dots that insert a row or column at a boundary */
-  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  'inputs.portable-text.table.insert-here': 'Chèn vào đây',
   /** Aria label for the table menu button */
-  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  'inputs.portable-text.table.menu-aria-label': 'Tùy chọn bảng',
   /** Aria label for a table row's drag/select handle */
-  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  'inputs.portable-text.table.row-handle': 'Tay cầm hàng',
   /** Label for the table menu item that selects the whole table */
-  'inputs.portable-text.table.select-table': undefined, // 'Select table'
+  'inputs.portable-text.table.select-table': 'Chọn bảng',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Xóa',
   /** Label for action to copy the current item (used within arrays) */
@@ -1330,11 +1337,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': 'Quyền không đủ',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  'login.logged-out.generic': 'Phiên của bạn không còn hợp lệ. Vui lòng đăng nhập lại.',
   /** Body of the logged-out banner shown above the login form when the session expired */
-  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  'login.logged-out.session-expired': 'Phiên của bạn đã hết hạn. Vui lòng đăng nhập lại.',
   /** Title of the banner shown above the login form after the studio logs the user out */
-  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+  'login.logged-out.title': 'Bạn đã đăng xuất',
 
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Lỗi không mong đợi: {{error}}',
@@ -1425,7 +1432,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Không thể loại bỏ phiên bản',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'Chỉnh sửa chi tiết',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Chỉnh sửa lịch trình',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1463,7 +1470,7 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Đã lên lịch xuất bản vào {{date}}',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  'release.chip.button.other-variants_other': '+{{count}} biến thể',
   /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} phiên bản',
   /** Label for Draft chip in document header */
@@ -1487,7 +1494,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Không có chỉnh sửa',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Chưa được xuất bản',
-  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
+  'release.chip.tooltip.other-variants_other': '{{count}} biến thể',
   'release.chip.tooltip.other-versions_other':
     '{{count}} phiên bản bổ sung ngoài các bản phát hành',
   /** Label for tooltip in chip with the published date */
@@ -1529,13 +1536,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Thay đổi lịch trình',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'Lưu',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'Mô tả',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'Chỉnh sửa release',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'Tiêu đề',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Bạn có chắc chắn muốn xuất bản bản nháp đã lên lịch ngay lập tức không?',
@@ -1593,7 +1600,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã bị xóa.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'Không thể lưu chi tiết release',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
