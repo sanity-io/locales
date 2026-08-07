@@ -20,7 +20,12 @@
     "directory": "locales/cs-CZ"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "jansindl3r",
+      "url": "https://github.com/jansindl3r"
+    }
+  ],
   "sideEffects": false,
   "type": "module",
   "exports": {
