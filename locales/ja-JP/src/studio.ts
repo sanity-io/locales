@@ -1488,7 +1488,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'バージョンの破棄に失敗しました',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': '詳細を編集',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'スケジュールを編集',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1592,13 +1592,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'スケジュールを変更',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': '保存',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': '説明',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'リリースを編集',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'タイトル',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'この予定された下書きをすぐに公開してもよろしいですか？',
@@ -1656,7 +1656,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> が削除されました。',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'リリースの詳細の保存に失敗しました',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
