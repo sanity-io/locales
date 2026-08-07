@@ -502,15 +502,15 @@ export default removeUndefinedLocaleResources({
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Svi korisnici (Zadano)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'Stvori varijantu',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': 'Stvori varijantu za {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'Kao nacrt',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'U release',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': 'Ili pregledaj postojeće varijante',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'Odustani',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -1507,7 +1507,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Nije uspjelo odbacivanje verzije',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'Uredi detalje',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Uredi raspored',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1616,13 +1616,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Promijeni raspored',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'Spremi',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'Opis',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'Uredi release',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'Naslov',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Jeste li sigurni da želite odmah objaviti ovu zakazanu skicu?',
@@ -1679,7 +1679,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'Zakazani dokument skice <strong>{{title}}</strong> je izbrisan.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'Spremanje detalja releasea nije uspjelo',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
