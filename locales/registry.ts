@@ -20,7 +20,7 @@ const registry: LocaleRegistry = [
     id: 'cs-CZ',
     name: 'Čeština',
     englishName: 'Czech',
-    maintainers: [],
+    maintainers: ['jansindl3r'],
     contributors: [],
   },
   {
