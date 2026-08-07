@@ -15,9 +15,9 @@ export default removeUndefinedLocaleResources({
   /** The text shown if the document list is unable to render */
   'document-list-pane.error.text': '문서 목록을 렌더링할 수 없습니다',
   /** The label for the ordering that lists documents in the order they appear on the page */
-  'document-list-pane.ordering.by-appearance': undefined, // 'By appearance'
+  'document-list-pane.ordering.by-appearance': '표시 순서',
   /** The label for the ordering that lists documents by when they were last edited */
-  'document-list-pane.ordering.last-edited': undefined, // 'Last edited'
+  'document-list-pane.ordering.last-edited': '마지막 편집순',
 
   /** The text shown if the document editor is unable to render */
   'document-pane.error.text': '문서 편집기를 렌더링할 수 없습니다',

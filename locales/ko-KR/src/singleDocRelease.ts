@@ -16,7 +16,8 @@ export default removeUndefinedLocaleResources({
   'action.schedule-publish.disabled.validation-issues':
     '현재 초안의 유효성 검사 오류로 인해 초안을 예약할 수 없습니다.',
   /** Tooltip text for when schedule publish is disabled because a variant is selected */
-  'action.schedule-publish.disabled.variant': undefined, // 'Scheduling is not yet available for variants.'
+  'action.schedule-publish.disabled.variant':
+    '변형(variant)에 대한 예약 기능은 아직 사용할 수 없습니다.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': '예약에 대해 알아보기',
