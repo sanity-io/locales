@@ -171,7 +171,7 @@ export const resourcesSchema = z.record(
 export const tsConfigSchema = z
   .looseObject({
     compilerOptions: z
-      .object({
+      .looseObject({
         paths: z.record(z.string(), z.array(z.string())),
       })
       .partial(),
