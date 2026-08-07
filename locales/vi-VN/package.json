@@ -20,7 +20,12 @@
     "directory": "locales/vi-VN"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "ntbaoni28",
+      "url": "https://github.com/ntbaoni28"
+    }
+  ],
   "sideEffects": false,
   "type": "module",
   "exports": {

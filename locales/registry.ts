@@ -202,7 +202,7 @@ const registry: LocaleRegistry = [
     id: 'vi-VN',
     name: 'Tiếng Việt',
     englishName: 'Vietnamese',
-    maintainers: [],
+    maintainers: ['ntbaoni28'],
     contributors: [],
   },
   {
