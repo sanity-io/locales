@@ -22,7 +22,7 @@ export async function reconcileLocalePackages(): Promise<void> {
   await writeRootReadme()
 }
 
-export async function reconcileLocalePackage(locale: Locale): Promise<void> {
+async function reconcileLocalePackage(locale: Locale): Promise<void> {
   await ensureLocaleSourceDir(locale)
   await writeIndexModule(locale)
   await writePackageJson(locale)
@@ -50,7 +50,7 @@ async function writePackageJson(locale: Locale) {
 }
 
 async function writePkgConfig(locale: Locale) {
-  const config = await buildPackageConfig()
+  const config = buildPackageConfig()
   return writeFormattedFile(joinPath(locale.path, 'package.config.ts'), config)
 }
 
@@ -70,7 +70,7 @@ async function writeLicense(locale: Locale) {
 
 async function writeReadme(locale: Locale) {
   const targetPath = joinPath(locale.path, 'README.md')
-  const readme = await buildLocaleReadme(locale)
+  const readme = buildLocaleReadme(locale)
   return writeFormattedFile(targetPath, readme)
 }
 

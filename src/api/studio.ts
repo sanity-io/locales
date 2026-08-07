@@ -24,7 +24,7 @@ export async function reconcileStudio(): Promise<void> {
 
   // Write the `locales.ts` file which imports all the modules and exports an array of them all
   const locales = await getLocaleRegistry()
-  const code = await buildLocalesImporter(locales)
+  const code = buildLocalesImporter(locales)
   const localesFilePath = joinPath(studioRootPath, 'locales.ts')
   await writeFormattedFile(localesFilePath, code)
 
@@ -46,17 +46,13 @@ export async function reconcileStudio(): Promise<void> {
 
   // Add all the non-locale packages in existing dependencies
   const existingDeps = pkgJson.dependencies || {}
-  for (const dependency in existingDeps) {
+  for (const [dependency, version] of Object.entries(existingDeps)) {
     if (dependency.startsWith('@sanity/locale-')) {
       continue
     }
 
-    if (dependency in rootPkgDeps) {
-      // Ensure we're on the same version of sanity packages as the root package.json
-      dependencies[dependency] = rootPkgDeps[dependency]
-    } else {
-      dependencies[dependency] = existingDeps[dependency]
-    }
+    // Ensure we're on the same version of sanity packages as the root package.json
+    dependencies[dependency] = rootPkgDeps[dependency] ?? version
   }
 
   // Add all locale packages as dependencies
@@ -67,10 +63,11 @@ export async function reconcileStudio(): Promise<void> {
   pkgJson.dependencies = sortDependencies(dependencies)
   pkgJson.devDependencies = sortDependencies(devDependencies)
 
-  for (const dependency in pkgJson.devDependencies) {
-    if (dependency in rootPkgDevDeps) {
+  for (const dependency of Object.keys(pkgJson.devDependencies)) {
+    const rootVersion = rootPkgDevDeps[dependency]
+    if (rootVersion !== undefined) {
       // Ensure we're on the same version of sanity packages as the root package.json
-      pkgJson.devDependencies[dependency] = rootPkgDevDeps[dependency]
+      pkgJson.devDependencies[dependency] = rootVersion
     }
   }
 
@@ -98,7 +95,7 @@ async function reconcileTsConfigPaths(locales: Locale[], studioRootPath: string)
     },
   } satisfies TSConfig
 
-  const sortedLocales = locales.slice().sort((a, b) => a.packageName.localeCompare(b.packageName))
+  const sortedLocales = locales.toSorted((a, b) => a.packageName.localeCompare(b.packageName))
   for (const locale of sortedLocales) {
     newConfig.compilerOptions.paths[locale.packageName] = [
       relativePath(studioRootPath, joinPath(locale.path, 'src')),
@@ -109,14 +106,14 @@ async function reconcileTsConfigPaths(locales: Locale[], studioRootPath: string)
 }
 
 function sortDependencies(dependencies: Record<string, string>): Record<string, string> {
-  return Object.fromEntries(Object.entries(dependencies).sort(([a], [b]) => a.localeCompare(b)))
+  return Object.fromEntries(Object.entries(dependencies).toSorted(([a], [b]) => a.localeCompare(b)))
 }
 
 function removeLocalePaths(paths: Record<string, string[]>): Record<string, string[]> {
   const newPaths: Record<string, string[]> = {}
-  for (const path in paths) {
+  for (const [path, value] of Object.entries(paths)) {
     if (!path.startsWith('@sanity/locale-')) {
-      newPaths[path] = paths[path]
+      newPaths[path] = value
     }
   }
   return newPaths

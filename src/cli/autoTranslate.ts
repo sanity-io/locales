@@ -10,6 +10,8 @@ import {runScript} from '../util/runScript'
 // The auto-translation will throw an error if the API key is missing.
 dotenv.config()
 
+const logger = (message: string) => console.log(message)
+
 async function autoTranslateWithParams() {
   const args = parseArgs({
     strict: true,
@@ -33,8 +35,6 @@ async function autoTranslateWithParams() {
     },
   })
 
-  const logger = (message: string) => console.log(message)
-
   // When running in git mode, skip locales whose PRs have already been reviewed
   // to avoid wasting translation API calls on changes that won't be pushed.
   let targetLocales = args.values.locale
@@ -53,7 +53,7 @@ async function autoTranslateWithParams() {
   })
 
   if (args.values.git) {
-    await runScript(() => pushChanges({allLocales: !args.values.locale, logger}))
+    await pushChanges({allLocales: !args.values.locale, logger})
   }
 }
 

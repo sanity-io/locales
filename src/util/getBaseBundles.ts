@@ -23,7 +23,7 @@ const LOCALE_DEF_FN_NAME = 'defineLocalesResources'
 
 export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles() {
   const rootPath = await getRootPath()
-  const files = await glob(GLOB_PATTERN, {cwd: rootPath})
+  const files = glob(GLOB_PATTERN, {cwd: rootPath})
 
   let fileCount = 0
 
@@ -31,7 +31,7 @@ export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles
   for await (const file of files) {
     fileCount++
 
-    const ast = await parse(await readFile(file, 'utf-8'), {
+    const ast = parse(await readFile(file, 'utf-8'), {
       sourceFilename: file,
       sourceType: 'module',
     })
@@ -83,19 +83,19 @@ function getLocaleResourceDefinerFn(ast: File) {
   let fnName: string | undefined
   traverse(ast, {
     FunctionDeclaration(path) {
+      const [namespaceParam, resourcesParam] = path.node.params
       if (
         path.node.id?.name !== LOCALE_DEF_FN_NAME ||
         path.node.params.length !== 2 ||
-        path.node.params[0].type !== 'Identifier' ||
-        path.node.params[0].name !== 'namespace' ||
+        namespaceParam?.type !== 'Identifier' ||
+        namespaceParam.name !== 'namespace' ||
         path.node.body.type !== 'BlockStatement'
       ) {
         path.skip()
         return
       }
 
-      const resourcesParam = path.node.params[1]
-      if (resourcesParam.type !== 'Identifier') {
+      if (resourcesParam?.type !== 'Identifier') {
         path.skip()
         return
       }
@@ -149,7 +149,7 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
     }
 
     const namespaceArg = node.arguments[0]
-    if (namespaceArg.type !== 'StringLiteral') {
+    if (namespaceArg?.type !== 'StringLiteral') {
       throw new Error(
         `Expected first argument to ${LOCALE_DEF_FN_NAME} to be a string literal in ${fileName}`,
       )
@@ -158,11 +158,11 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
     let resourcesArg = node.arguments[1]
 
     // Handle `{key: value} as const`
-    if (resourcesArg.type === 'TSAsExpression') {
+    if (resourcesArg?.type === 'TSAsExpression') {
       resourcesArg = resourcesArg.expression
     }
 
-    if (resourcesArg.type !== 'ObjectExpression') {
+    if (resourcesArg?.type !== 'ObjectExpression') {
       throw new Error(
         `Expected second argument to ${LOCALE_DEF_FN_NAME} to be an object expression in ${fileName}`,
       )
@@ -232,5 +232,5 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
 }
 
 function sortResources(resources: BaseResource[]) {
-  return resources.sort((a, b) => a.key.localeCompare(b.key))
+  return resources.toSorted((a, b) => a.key.localeCompare(b.key))
 }

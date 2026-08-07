@@ -1,0 +1,19 @@
+---
+name: Add changeset from conventional commits
+
+on:
+  pull_request_target: # zizmor: ignore[dangerous-triggers] gated to ecospark[bot]/renovate[bot]; no PR code is checked out or executed in the reusable workflow
+    types: [opened, synchronize]
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  contents: read # for checkout
+
+jobs:
+  call:
+    uses: sanity-io/.github/.github/workflows/changesets-from-conventional-commits.yml@main
+    if: github.event.pull_request.user.login == 'ecospark[bot]' || github.event.pull_request.user.login == 'renovate[bot]'
+    secrets:
+      ECOSPARK_APP_ID: ${{ secrets.ECOSPARK_APP_ID }}
+      ECOSPARK_APP_PRIVATE_KEY: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}

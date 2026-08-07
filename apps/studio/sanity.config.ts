@@ -18,7 +18,7 @@ export default defineConfig([
   ...locales
     .map((plugin) => localePluginToWorkspace(plugin))
     .filter((workspace) => workspace !== null)
-    .sort((a, b) => a?.title?.localeCompare(b?.title || '') || 0),
+    .toSorted((a, b) => a?.title?.localeCompare(b?.title || '') || 0),
 ])
 
 function withDefaultConfig(

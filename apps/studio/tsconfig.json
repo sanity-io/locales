@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "rootDir": "../..",
     "paths": {
       "@sanity/locale-be-by": ["../../locales/be-BY/src"],
       "@sanity/locale-ca-es": ["../../locales/ca-ES/src"],
@@ -34,5 +35,7 @@
       "@sanity/locale-zh-hant": ["../../locales/zh-Hant/src"]
     }
   },
-  "extends": "../../tsconfig.json"
+  "extends": "../../tsconfig.json",
+  "include": ["./**/*.ts", "./**/*.tsx"],
+  "exclude": ["node_modules", "dist", ".sanity"]
 }

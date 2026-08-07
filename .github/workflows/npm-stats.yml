@@ -13,17 +13,11 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v7
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
+      - name: Install pnpm, Node.js and dependencies
+        uses: pnpm/setup@v2
         with:
-          cache: pnpm
-          node-version: lts/*
-
-      - name: Install dependencies
-        run: pnpm install --ignore-scripts
+          runtime: node@lts
+          cache: true
 
       - name: Run NPM Stats
         run: pnpm ci:npm-stats

@@ -1,17 +1,12 @@
 import type {infer as zodInfer} from 'zod'
 
 import type {
-  aiTranslateWorkflowSchema,
   githubFileSchema,
-  githubLabelSchema,
-  githubPrCommentSchema,
   githubPrListSchema,
   githubPrSchema,
-  githubReviewSchema,
   localeEntrySchema,
   localeRegistrySchema,
   packageJsonSchema,
-  releasePleaseSchema,
   resourcesSchema,
   tsConfigSchema,
 } from './schemas'
@@ -82,18 +77,11 @@ export type PackageJson = zodInfer<typeof packageJsonSchema>
 export type TSConfig = zodInfer<typeof tsConfigSchema>
 
 /**
- * A very minimal release-please-config.json schema
- *
- * @internal
- */
-export type ReleasePleaseConfig = zodInfer<typeof releasePleaseSchema>
-
-/**
  * Object of resources, eg `key: value` pairs
  *
  * @internal
  */
-export type ResourceMap = zodInfer<typeof resourcesSchema>
+type ResourceMap = zodInfer<typeof resourcesSchema>
 
 /**
  * A locale, with the bundles loaded from the filesystem
@@ -186,16 +174,6 @@ export interface MissingResources {
   missingKeys: {key: string; pluralizable: boolean}[]
 }
 
-/**
- * Result of a missing resources operation (eg either find, add missing etc),
- * with the original bundle resources included under the `missingResources` property
- *
- * @internal
- */
-export interface MissingResourcesWithOriginals extends MissingResources {
-  missingResources: Resource[]
-}
-
 export interface OrderedResources {
   base: NamespacedBaseResources[]
   locales: LocaleWithResources[]
@@ -270,32 +248,3 @@ export type GitHubPRList = zodInfer<typeof githubPrListSchema>
  * @internal
  */
 export type GitHubFile = zodInfer<typeof githubFileSchema>
-
-/**
- * A minimal GitHub label type
- *
- * @internal
- */
-export type GitHubLabel = zodInfer<typeof githubLabelSchema>
-
-/**
- * A minimal GitHub review type
- *
- * @internal
- */
-export type GitHubReview = zodInfer<typeof githubReviewSchema>
-
-/**
- * A minimal GitHub PR comment type
- *
- * @internal
- */
-export type GitHubPRComment = zodInfer<typeof githubPrCommentSchema>
-
-/**
- * A JSON representation of the autotranslate GitHub workflow,
- * as defined in `.github/workflows/ai-translate.yml`
- *
- * @internal
- */
-export type AutoTranslateWorkflow = zodInfer<typeof aiTranslateWorkflowSchema>
