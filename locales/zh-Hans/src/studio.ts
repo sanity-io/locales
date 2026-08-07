@@ -126,7 +126,7 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
+  'asset-source.dialog.load-error': '加载资产失败',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '加载更多',
   /** Text shown when selecting a file but there's no files to select from
@@ -410,7 +410,7 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.tooltip': '发现配置问题',
 
   /** The name of Content Agent, the product. */
-  'content-agent': undefined, // 'Content Agent'
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '按 {{title}} 排序',
@@ -449,71 +449,76 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  'document-group-inventory.action.cancel': '取消',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
-  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  'document-group-inventory.feedback.sentiment-label': '新版本清单的使用难易程度如何？',
   /** The label for the input that filters the variants in the document group inventory */
-  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  'document-group-inventory.filter-string.label': '筛选 {{subject}}',
   /** The document inventory title (plural) */
-  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+  'document-group-inventory.viewing-item-label': '正在查看',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': undefined, // 'All users (Default)'
+  'document-group.base-variant': '所有用户（默认）',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': '创建变体',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': '为 {{variantDefinitionName}} 创建变体',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': '作为草稿',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': '加入发布版本',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': '或查看现有变体',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
-  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  'document-group.delete.cancel-button.text': '取消',
   /** Used in `document-group.delete.cdr-summary.title` */
-  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} 个文档',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets：{{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '不可用的 datasets',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  'document-group.delete.cdr-summary.title_other':
+    '{{documentCount}} 位于 {{count}} 个 datasets 中',
   /** Appears when hovering over the copy button to copy */
-  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'document-group.delete.cdr-table.copy-id-button.tooltip': '复制 ID 到剪贴板',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  'document-group.delete.cdr-table.document-id.label': '文档 ID',
   /** The toast title when the copy button has been clicked but copying failed */
-  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': '复制文档 ID 失败',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  'document-group.delete.cdr-table.project-id.label': '项目 ID',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  'document-group.delete.confirm-button.text_other': '删除（{{count}}）',
   /** The message shown after deletion fails */
-  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  'document-group.delete.error.message':
+    '尝试删除此文档时发生错误。这通常意味着有其他文档引用了该文档。',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  'document-group.delete.other-reference-count.title_other': '{{count}} 个其他引用未显示',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'document-group.delete.other-reference-count.tooltip':
+    '由于相关 dataset 缺少访问令牌，我们无法显示这些引用的元数据。',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID：{{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'document-group.delete.preview-item.preview-unavailable.title': '预览不可用',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
-  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} 个文档引用了"<DocumentTitle/>"',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'document-group.delete.referring-documents-descriptor.text':
+    '您可能无法删除"<DocumentTitle/>"，因为以下文档引用了它：',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
-  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  'document-group.delete.title_other': '删除 {{count}} 个{{subject}}',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.variant_other': undefined, // 'variants'
+  'document-group.subject.variant_other': '变体',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': undefined, // 'versions'
+  'document-group.subject.version_other': '版本',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '创建于 {{date}}',
@@ -541,9 +546,9 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  'document.initial-value.error.description': '文档以空值打开。{{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
+  'document.initial-value.error.title': '无法解析初始值',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '未找到文档类型 "{{type}}"',
 
@@ -1078,27 +1083,27 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '引用',
   /** Label for the table lane that appends a column */
-  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  'inputs.portable-text.table.add-column': '在末尾添加列',
   /** Label for the table lane that appends a row */
-  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  'inputs.portable-text.table.add-row': '在末尾添加行',
   /** Aria label for a table column's drag/select handle */
-  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  'inputs.portable-text.table.column-handle': '列控制柄',
   /** Label for the trash chip that deletes the selected column */
-  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  'inputs.portable-text.table.delete-column': '删除列',
   /** Label for the trash chip that deletes the selected row */
-  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  'inputs.portable-text.table.delete-row': '删除行',
   /** Label for the table menu item that deletes the table */
-  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  'inputs.portable-text.table.delete-table': '删除表格',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  'inputs.portable-text.table.header-row': '标题行',
   /** Aria label for the dots that insert a row or column at a boundary */
-  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  'inputs.portable-text.table.insert-here': '在此插入',
   /** Aria label for the table menu button */
-  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  'inputs.portable-text.table.menu-aria-label': '表格选项',
   /** Aria label for a table row's drag/select handle */
-  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  'inputs.portable-text.table.row-handle': '行控制柄',
   /** Label for the table menu item that selects the whole table */
-  'inputs.portable-text.table.select-table': undefined, // 'Select table'
+  'inputs.portable-text.table.select-table': '选择表格',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '清除',
   /** Label for action to copy the current item (used within arrays) */
@@ -1296,11 +1301,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': '权限不足',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  'login.logged-out.generic': '您的会话已失效，请重新登录。',
   /** Body of the logged-out banner shown above the login form when the session expired */
-  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  'login.logged-out.session-expired': '您的会话已过期，请重新登录。',
   /** Title of the banner shown above the login form after the studio logs the user out */
-  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+  'login.logged-out.title': '您已退出登录',
 
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外错误：{{error}}',
@@ -1390,7 +1395,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': '丢弃版本失败',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': '编辑详情',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': '编辑计划',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1422,7 +1427,7 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '计划在 {{date}} 发布',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  'release.chip.button.other-variants_other': '+{{count}} 个变体',
   /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}}个版本',
   /** Label for Draft chip in document header */
@@ -1445,7 +1450,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '无编辑',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '未发布',
-  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
+  'release.chip.tooltip.other-variants_other': '{{count}} 个变体',
   'release.chip.tooltip.other-versions_other': '发布之外的{{count}}个额外版本',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '发布于 {{date}}',
@@ -1486,13 +1491,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': '更改计划',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': '保存',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': '描述',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': '编辑发布',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': '标题',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body': '您确定要立即发布这个预定草稿吗？',
   /** Confirm button text for running a scheduled draft immediately */
@@ -1546,7 +1551,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     '预定的草稿文档 <strong>{{title}}</strong> 已被删除。',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': '保存发布详情失败',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */

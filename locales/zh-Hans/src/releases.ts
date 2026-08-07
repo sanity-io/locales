@@ -78,7 +78,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': '已标记为未计划',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': '关闭活动',
   /** The loading text for when releases are loading */
   'activity.panel.error': '获取发布活动时发生错误',
   /** The loading text for when releases are loading */
@@ -146,21 +146,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': '活动',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': '创建时间',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': '文档',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': '计划',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': '状态',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': '无文档',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': '错误',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': '有效',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': '验证中',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': '将版本固定到 studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -204,7 +204,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} 个验证错误',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': '无验证错误',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': '是，复制 release',
@@ -275,7 +275,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': '文档',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': '所有版本',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': '查看日历',
   /** Description for the release tool */
@@ -323,9 +323,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title': '您确定要发布该版本及所有文档版本吗？',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
-  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  'publish-dialog.confirm-publish.update-drafts-checkbox': '更新现有草稿',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
-  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}} 个文档的现有草稿将被丢弃，以使草稿与已发布的版本保持一致。未发布的草稿更改将丢失。',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '部分文档存在验证错误',
   /** Label for when documents are being validated */
@@ -444,11 +445,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': '已编辑',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': '编辑者',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': '预定用于',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': '最后编辑时间',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': '已发布',
   /** Header for the document table in the release tool - Published */
@@ -464,7 +465,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': '类型',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': '变体',
   /** Header for the document table in the release tool - when */
   'table-header.when': '时间',
 
@@ -500,7 +501,7 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release failed to publish */
   'toast.publish.error': "发布 '<strong>{{title}}</strong>' 失败：{{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
+  'toast.publish.update-drafts-error': '版本已发布，但现有草稿无法更新：{{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "'{{title}}' 的还原版本已成功创建。<Link/>",
   /** Link text for toast link to the generated revert release */
