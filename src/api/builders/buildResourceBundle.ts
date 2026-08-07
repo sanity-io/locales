@@ -5,12 +5,12 @@ import {buildStringLiteral} from './buildStringLiteral'
  * Builds the code used to export a resource bundle
  *
  * @param resources - Resources to include
- * @returns The code, which should be run through prettier
+ * @returns The code, which should be run through a formatter (see `writeFormattedFile`)
  * @internal
  */
 export function buildResourceBundle(resources: Resource[]): string {
   // Note: We're not using an AST approach here because the semantics around comments are difficult
-  // and often leaves comments on the same line as the property. Prettier doesn't always understand
+  // and often leaves comments on the same line as the property. Formatters don't always understand
   // quite how to format it, so this was the best I could come up with for now.
   let prevKeySegment = ''
   const props = resources.map((resource) => {
@@ -24,7 +24,7 @@ export function buildResourceBundle(resources: Resource[]): string {
     return `${spacing}${comments}  '${resource.key}': ${propValue}`
   })
 
-  // Sorta correctly formatted code, but should be run through prettier
+  // Sorta correctly formatted code, but should be run through a formatter
   const resourcesObject = `{\n  ${props.join('\n').trimStart()}\n}`
   const defaultExport = `export default removeUndefinedLocaleResources(${resourcesObject})\n`
   const moduleCode = `import {removeUndefinedLocaleResources} from 'sanity'\n\n${defaultExport}`

@@ -152,7 +152,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'მონახაზის ვერსია უკვე არსებობს',
 
   /** Text for when a release / document was created */
-  created: 'შექმნილია <RelativeTime/>',
+  'created': 'შექმნილია <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'აქტივობა',

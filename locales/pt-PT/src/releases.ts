@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Versão draft já existe',
 
   /** Text for when a release / document was created */
-  created: 'Criado <RelativeTime/>',
+  'created': 'Criado <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Atividade',

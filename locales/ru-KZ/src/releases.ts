@@ -148,7 +148,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Черновая версия уже существует',
 
   /** Text for when a release / document was created */
-  created: 'Создано <RelativeTime/>',
+  'created': 'Создано <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Активность',

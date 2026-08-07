@@ -27,7 +27,7 @@ function getGitHubToken(): string | undefined {
  */
 function createHeaders() {
   const headers: Record<string, string> = {
-    Accept: 'application/vnd.github.v3+json',
+    'Accept': 'application/vnd.github.v3+json',
     'User-Agent': 'sanity-locales-maintainer-verifier',
   }
 

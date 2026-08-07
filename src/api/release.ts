@@ -40,11 +40,12 @@ export async function reconcileReleasePleaseConfig(): Promise<void> {
 
 function getDefaultReleasePleaseConfig(): ReleasePleaseConfig {
   return {
-    $schema: 'https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json',
+    '$schema':
+      'https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json',
     'bump-minor-pre-major': true,
     'always-link-local': true,
-    plugins: ['node-workspace'],
-    packages: {},
+    'plugins': ['node-workspace'],
+    'packages': {},
   }
 }
 

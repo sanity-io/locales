@@ -130,8 +130,7 @@ export default removeUndefinedLocaleResources({
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'ಇನ್ನೂ ಯಾವುದೇ ತೆರೆದ ಕಾಮೆಂಟುಗಳಿಲ್ಲ',
   /** The empty state text for resolved comments */
-  'list-status.empty-state-resolved-text':
-    'ಈ ದಾಖಲೆಯ ಮೇಲೆ ಬಗೆಹರಿಸಲಾದ ಕಾಮೆಂಟುಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು.',
+  'list-status.empty-state-resolved-text': 'ಈ ದಾಖಲೆಯ ಮೇಲೆ ಬಗೆಹರಿಸಲಾದ ಕಾಮೆಂಟುಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು.',
   /** The empty state title for resolved comments */
   'list-status.empty-state-resolved-title': 'ಇನ್ನೂ ಯಾವುದೇ ಬಗೆಹರಿಸಲಾದ ಕಾಮೆಂಟುಗಳಿಲ್ಲ',
   /** The list status message for error */
@@ -181,8 +180,7 @@ export default removeUndefinedLocaleResources({
    * - `<Text>` - should be wrapped around the text describing the action ("reacted with")
    * - `<ReactionName/>` - the name of the reaction emoji, eg ":heavy_plus_sign:"
    */
-  'reactions.users-reacted-with-reaction':
-    '<UserList/> <Text>ಪ್ರತಿಕ್ರಿಯಿಸಿದ್ದಾರೆ</Text> <ReactionName/>',
+  'reactions.users-reacted-with-reaction': '<UserList/> <Text>ಪ್ರತಿಕ್ರಿಯಿಸಿದ್ದಾರೆ</Text> <ReactionName/>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
   'status-filter.status-open': 'ತೆರೆದ',

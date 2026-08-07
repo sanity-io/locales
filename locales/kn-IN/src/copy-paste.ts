@@ -13,8 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     'ಈ ವಿಷಯವನ್ನು ನಕಲಿಸಲು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಪ್ರವೇಶ ಅಗತ್ಯವಿದೆ. ನಿಮ್ಮ ಬ್ರೌಸರ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಅನುಮತಿಗಳನ್ನು ಅನುಮತಿಸಿ, ನಂತರ ನಕಲಿಸಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'ನಿಮ್ಮ ಬ್ರೌಸರ್ ಈ ಕ್ರಿಯೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'ನಿಮ್ಮ ಬ್ರೌಸರ್ ಈ ಕ್ರಿಯೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ಖಾಲಿ ಮೌಲ್ಯ, ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** --- On copy --- */

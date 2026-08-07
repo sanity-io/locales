@@ -149,7 +149,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Draftバージョンはすでに存在します',
 
   /** Text for when a release / document was created */
-  created: '<RelativeTime/>に作成',
+  'created': '<RelativeTime/>に作成',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'アクティビティ',

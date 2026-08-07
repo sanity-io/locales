@@ -20,8 +20,7 @@ export default removeUndefinedLocaleResources({
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'เรียนรู้เกี่ยวกับการกำหนดเวลา',
   /** Empty state description for scheduled drafts */
-  'empty-state.description':
-    'กำหนดเวลาและล็อก draft เอกสารสำหรับการเผยแพร่ในวันและเวลาที่กำหนดในอนาคต',
+  'empty-state.description': 'กำหนดเวลาและล็อก draft เอกสารสำหรับการเผยแพร่ในวันและเวลาที่กำหนดในอนาคต',
   /** Empty state title for scheduled drafts */
   'empty-state.title': 'Scheduled Drafts',
 })

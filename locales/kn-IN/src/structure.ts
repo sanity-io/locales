@@ -10,11 +10,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
   /** Tooltip when action button is disabled because the document does not exist */
-  'action.delete.disabled.nothing-to-delete':
-    'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಅಥವಾ ಈಗಾಗಲೇ ಅಳಿಸಲಾಗಿದೆ',
+  'action.delete.disabled.nothing-to-delete': 'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಅಥವಾ ಈಗಾಗಲೇ ಅಳಿಸಲಾಗಿದೆ',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
-  'action.delete.disabled.scheduled-release':
-    'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲಾಗದು ಏಕೆಂದರೆ ಇದು ನಿಗದಿತ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
+  'action.delete.disabled.scheduled-release': 'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲಾಗದು ಏಕೆಂದರೆ ಇದು ನಿಗದಿತ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Delete" document action button */
@@ -22,8 +20,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'ಅಳಿಸುತ್ತಿದ್ದಾರೆ…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip':
-    'ಕೆಲವು ದಾಖಲೆ ಕ್ರಿಯೆಗಳು Canvas ಗೆ ಲಿಂಕ್ ಮಾಡಲಾದ ದಾಖಲೆಗಳಿಗೆ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ',
+  'action.disabled-by-canvas.tooltip': 'ಕೆಲವು ದಾಖಲೆ ಕ್ರಿಯೆಗಳು Canvas ಗೆ ಲಿಂಕ್ ಮಾಡಲಾದ ದಾಖಲೆಗಳಿಗೆ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'ನೀವು ಕೊನೆಯ ಬಾರಿ ಪ್ರಕಟಿಸಿದ ನಂತರದ ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
@@ -45,8 +42,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.duplicate.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
   /** Tooltip when action is disabled because the document doesn't exist */
-  'action.duplicate.disabled.nothing-to-duplicate':
-    'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಹಾಗಾಗಿ ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
+  'action.duplicate.disabled.nothing-to-duplicate': 'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಹಾಗಾಗಿ ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
   /** Label for the "Duplicate" document action */
@@ -70,8 +66,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'ಪ್ರಕಟಿಸು',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
-  'action.publish.live-edit.publish-disabled':
-    'ಈ ದಾಖಲೆ ಪ್ರಕಾರಕ್ಕೆ ಲೈವ್ ಎಡಿಟ್ ಸಕ್ರಿಯವಾಗಿದ್ದು, ಪ್ರಕಟಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
+  'action.publish.live-edit.publish-disabled': 'ಈ ದಾಖಲೆ ಪ್ರಕಾರಕ್ಕೆ ಲೈವ್ ಎಡಿಟ್ ಸಕ್ರಿಯವಾಗಿದ್ದು, ಪ್ರಕಟಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Tooltip for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.tooltip':
     'ಈ ವಿಷಯ ಪ್ರಕಾರಕ್ಕೆ ಲೈವ್ ಎಡಿಟ್ ಸಕ್ರಿಯವಾಗಿದ್ದು, ನೀವು ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡುವಂತೆಯೇ ಪ್ರಕಟಣೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಡೆಯುತ್ತದೆ',
@@ -84,13 +79,11 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.validation-in-progress.label': 'ದಾಖಲೆಯನ್ನು ಮಾನ್ಯತೆ ಪರಿಶೀಲನೆ ನಡೆಯುತ್ತಿದೆ…',
   /** Toast description when trying to publish with validation errors */
-  'action.publish.validation-issues-toast.description':
-    'ಪ್ರಕಟಿಸುವ ಮುನ್ನ ಮಾನ್ಯತೆ ದೋಷಗಳನ್ನು ಸರಿಪಡಿಸಿ',
+  'action.publish.validation-issues-toast.description': 'ಪ್ರಕಟಿಸುವ ಮುನ್ನ ಮಾನ್ಯತೆ ದೋಷಗಳನ್ನು ಸರಿಪಡಿಸಿ',
   /** Toast title when trying to publish with validation errors */
   'action.publish.validation-issues-toast.title': 'ಮಾನ್ಯತೆ ದೋಷಗಳು',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
-  'action.publish.validation-issues.tooltip':
-    'ಈ ದಾಖಲೆಯನ್ನು ಪ್ರಕಟಿಸುವ ಮೊದಲು ಸರಿಪಡಿಸಬೇಕಾದ ಮಾನ್ಯತಾ ದೋಷಗಳಿವೆ',
+  'action.publish.validation-issues.tooltip': 'ಈ ದಾಖಲೆಯನ್ನು ಪ್ರಕಟಿಸುವ ಮೊದಲು ಸರಿಪಡಿಸಬೇಕಾದ ಮಾನ್ಯತಾ ದೋಷಗಳಿವೆ',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'ಪ್ರಕಟಿಸುವ ಮೊದಲು ಕಾರ್ಯಗಳು ಮುಗಿಯುವವರೆಗೆ ಕಾಯುತ್ತಿದೆ',
   /** Message prompting the user to confirm that they want to restore to an earlier revision*/
@@ -176,8 +169,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'ಉಲ್ಲೇಖವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ',
   /** The text for the reference change banner if the reason is that the reference has been changed */
-  'banners.reference-changed-banner.reason-changed.text':
-    'ನೀವು ಇದನ್ನು ತೆರೆದ ನಂತರ ಈ ಉಲ್ಲೇಖ ಬದಲಾಗಿದೆ.',
+  'banners.reference-changed-banner.reason-changed.text': 'ನೀವು ಇದನ್ನು ತೆರೆದ ನಂತರ ಈ ಉಲ್ಲೇಖ ಬದಲಾಗಿದೆ.',
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': 'ಉಲ್ಲೇಖವನ್ನು ಮುಚ್ಚಿ',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
@@ -210,8 +202,7 @@ export default removeUndefinedLocaleResources({
    * */
   'banners.release.navigate-to-edit-description-none': 'ಈ ದಾಖಲೆಯು ಯಾವುದೇ ಬಿಡುಗಡೆಯ ಭಾಗವಲ್ಲ',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-single':
-    'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ',
+  'banners.release.navigate-to-edit-description-single': 'ಈ ದಾಖಲೆಯು <VersionBadge/> ಬಿಡುಗಡೆಯ ಭಾಗವಾಗಿದೆ',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '<Label>{{title}}</Label> ಬಿಡುಗಡೆಯಲ್ಲಿ ಇಲ್ಲ.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
@@ -256,8 +247,7 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'ದಾಖಲೆ ಕ್ರಿಯೆಗಳು',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse':
-    'ಫೋಕಸ್ ಮೋಡ್ ನಿಂದ ಹೊರಬರುವುದು (ನ್ಯಾವಿಗೇಶನ್ ತೋರಿಸು)',
+  'buttons.focus-pane-button.aria-label.collapse': 'ಫೋಕಸ್ ಮೋಡ್ ನಿಂದ ಹೊರಬರುವುದು (ನ್ಯಾವಿಗೇಶನ್ ತೋರಿಸು)',
   /** The aria-label for the focus pane button on the document panel header */
   'buttons.focus-pane-button.aria-label.focus': 'ಫೋಕಸ್ ಮೋಡ್ ಗೆ ಪ್ರವೇಶಿಸಿ (ನ್ಯಾವಿಗೇಶನ್ ಮರೆಮಾಡು)',
   /** The tooltip for the collapse pane button on the document panel header */
@@ -310,8 +300,7 @@ export default removeUndefinedLocaleResources({
   'changes.to.label': 'ಗೆ',
 
   /** The error message shown when the specified document comparison mode is not supported */
-  'compare-version.error.invalidModeParam':
-    '"{{input}}" ಎಂಬುದು ದಾಖಲೆ ಹೋಲಿಕೆ ಮೋಡ್‌ಗೆ ಬೆಂಬಲಿಸದ ಪರಿಕರ.',
+  'compare-version.error.invalidModeParam': '"{{input}}" ಎಂಬುದು ದಾಖಲೆ ಹೋಲಿಕೆ ಮೋಡ್‌ಗೆ ಬೆಂಬಲಿಸದ ಪರಿಕರ.',
   /** The error message shown when the next document for comparison could not be extracted from the URL */
   'compare-version.error.invalidNextDocumentParam': 'ಮುಂದಿನ ದಾಖಲೆ ಪ್ಯಾರಾಮೀಟರ್ ಅಮಾನ್ಯವಾಗಿದೆ.',
   /** The error message shown when the document comparison URL could not be parsed */
@@ -357,8 +346,7 @@ export default removeUndefinedLocaleResources({
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ದಾಖಲೆ ಐಡಿ',
   /** The toast title when the copy button has been clicked but copying failed */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
-    'ಡಾಕ್ಯುಮೆಂಟ್ ID ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ',
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'ಡಾಕ್ಯುಮೆಂಟ್ ID ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ಪ್ರಾಜೆಕ್ಟ್ ಐಡಿ',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
@@ -370,8 +358,7 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'ಈಗ ಪ್ರಕಟಣೆ ತೆಗೆದುಹಾಕಿ',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
-  'confirm-delete-dialog.confirmation.text_delete':
-    'ನೀವು “<DocumentTitle/>” ಅನ್ನು ಅಳಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
+  'confirm-delete-dialog.confirmation.text_delete': 'ನೀವು “<DocumentTitle/>” ಅನ್ನು ಅಳಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'ನೀವು “<DocumentTitle/>” ಅನ್ನು ಪ್ರಕಟಣೆ ತೆಗೆದುಹಾಕಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
@@ -390,8 +377,7 @@ export default removeUndefinedLocaleResources({
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'confirm-delete-dialog.other-reference-count.title_one': '1 ಇತರ ಉಲ್ಲೇಖವನ್ನು ತೋರಿಸಲಾಗಿಲ್ಲ',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'confirm-delete-dialog.other-reference-count.title_other':
-    '{{count}} ಇತರ ಉಲ್ಲೇಖಗಳನ್ನು ತೋರಿಸಲಾಗಿಲ್ಲ',
+  'confirm-delete-dialog.other-reference-count.title_other': '{{count}} ಇತರ ಉಲ್ಲೇಖಗಳನ್ನು ತೋರಿಸಲಾಗಿಲ್ಲ',
   /** Text in the tooltip of this component if hovering over the info icon */
   'confirm-delete-dialog.other-reference-count.tooltip':
     'ಸಂಬಂಧಿತ ಡೇಟಾಸೆಟ್‌ಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಪ್ರವೇಶ ಟೋಕನ್ ಇಲ್ಲದ ಕಾರಣ ಈ ಉಲ್ಲೇಖಗಳ ಮೆಟಾಡೇಟಾವನ್ನು ನಾವು ಪ್ರದರ್ಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
@@ -406,8 +392,7 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.referential-integrity-disclaimer.text_unpublish':
     'ನೀವು ಈ ದಾಖಲೆಯನ್ನು ಅಪ್ರಕಟಿಸಿದರೆ, ಇದಕ್ಕೆ ಉಲ್ಲೇಖಿಸುವ ದಾಖಲೆಗಳು ಇದನ್ನು ಪ್ರವೇಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
-  'confirm-delete-dialog.referring-document-count.text_one':
-    '1 ದಾಖಲೆ “<DocumentTitle/>”ಗೆ ಉಲ್ಲೇಖಿಸಿದೆ',
+  'confirm-delete-dialog.referring-document-count.text_one': '1 ದಾಖಲೆ “<DocumentTitle/>”ಗೆ ಉಲ್ಲೇಖಿಸಿದೆ',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
   'confirm-delete-dialog.referring-document-count.text_other':
     '{{count}} ದಾಖಲೆಗಳು “<DocumentTitle/>”ಗೆ ಉಲ್ಲೇಖಿಸಿವೆ',
@@ -518,8 +503,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the loading state in the incoming references input */
   'incoming-references-input.types-loading': 'ದಾಖಲೆಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತಿದೆ...',
   /** The text for the loading state in the incoming references input */
-  'incoming-references-input.types-loading-cross-dataset':
-    'ಅಡ್ಡ ಡೇಟಾಸೆಟ್ ದಾಖಲೆಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತಿದೆ...',
+  'incoming-references-input.types-loading-cross-dataset': 'ಅಡ್ಡ ಡೇಟಾಸೆಟ್ ದಾಖಲೆಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತಿದೆ...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
     'ಈ ಟೈಪ್‌ಗೆ ಬರುವ ಉಲ್ಲೇಖಗಳು ನಿಗದಿತವಾಗಿಲ್ಲ, ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಾಖಲೆಗಳನ್ನು ನೋಡಿ.',
@@ -557,14 +541,12 @@ export default removeUndefinedLocaleResources({
   /** The menu item title that restores the structure-configured default sort order */
   'menu-items.sort-by.restore-default': 'ಡೀಫಾಲ್ಟ್ ವಿಂಗಡಣೆ',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
-  'menu-items.sort-by.restore-default.disabled-reason':
-    'ಈಗಾಗಲೇ ಡೀಫಾಲ್ಟ್ ವಿಂಗಡಣೆ ಕ್ರಮ ಬಳಸಲಾಗುತ್ತಿದೆ',
+  'menu-items.sort-by.restore-default.disabled-reason': 'ಈಗಾಗಲೇ ಡೀಫಾಲ್ಟ್ ವಿಂಗಡಣೆ ಕ್ರಮ ಬಳಸಲಾಗುತ್ತಿದೆ',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'ದಾಖಲೆ ಪ್ರಕಾರ ಸೇರಿಸುವ ಬಗ್ಗೆ ಕಲಿಯಿರಿ →',
   /** The subtitle of the no document type screen that appears directly below the title */
-  'no-document-types-screen.subtitle':
-    'ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸ್ಕೀಮಾದಲ್ಲಿ ಕನಿಷ್ಠ ಒಂದು ದಾಖಲೆ ಪ್ರಕಾರ ವ್ಯಾಖ್ಯಾನಿಸಿ.',
+  'no-document-types-screen.subtitle': 'ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸ್ಕೀಮಾದಲ್ಲಿ ಕನಿಷ್ಠ ಒಂದು ದಾಖಲೆ ಪ್ರಕಾರ ವ್ಯಾಖ್ಯಾನಿಸಿ.',
   /** The title of the no document type screen */
   'no-document-types-screen.title': 'ದಾಖಲೆ ಪ್ರಕಾರಗಳು ಇಲ್ಲ',
 
@@ -611,8 +593,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.error.title': 'ಪಟ್ಟಿ ಐಟಂಗಳನ್ನು ತರಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ',
   /** The help text saying that we'll retry fetching the document list */
   'panes.document-list-pane.error.will-retry-automatically_one': 'ಮರುಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ…',
-  'panes.document-list-pane.error.will-retry-automatically_other':
-    'ಮರುಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ… (#{{count}}).',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'ಮರುಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'ಗರಿಷ್ಠ {{limit}} ದಾಖಲೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸಲಾಗಿದೆ',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -649,11 +630,9 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-error_unpublish':
     'ಈ ದಾಖಲೆಯನ್ನು ಅಪ್ರಕಟಿತಗೊಳಿಸಲು ಯತ್ನಿಸುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ. ಇದು ಸಾಮಾನ್ಯವಾಗಿ ಇತರ ದಾಖಲೆಗಳು ಇದಕ್ಕೆ ಉಲ್ಲೇಖಿಸಿರುವುದನ್ನು ಅರ್ಥಪಡಿಸುತ್ತದೆ.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
-  'panes.document-operation-results.operation-success':
-    'ದಾಖಲೆಯ ಮೇಲೆ {{context}} ಯಶಸ್ವಿಯಾಗಿ ನಡೆಸಲಾಗಿದೆ',
+  'panes.document-operation-results.operation-success': 'ದಾಖಲೆಯ ಮೇಲೆ {{context}} ಯಶಸ್ವಿಯಾಗಿ ನಡೆಸಲಾಗಿದೆ',
   /** The text when copy document ID operation succeeded */
-  'panes.document-operation-results.operation-success_copy-id':
-    'ದಾಖಲೆ ID ನನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
+  'panes.document-operation-results.operation-success_copy-id': 'ದಾಖಲೆ ID ನನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'ಡಾಕ್ಯುಮೆಂಟ್ URL ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
@@ -666,8 +645,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'ಕೊನೆಯ ಪ್ರಕಟಣೆಯಿಂದ ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ಈಗ ತ್ಯಜಿಸಲಾಗಿದೆ. ತ್ಯಜಿಸಲಾದ ಮುಸದ್ದೆಯನ್ನು ಇನ್ನೂ ಇತಿಹಾಸದಿಂದ ಮರುಪಡೆಯಬಹುದು',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate':
-    'ದಾಖಲೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನಕಲಿಸಲಾಗಿದೆ',
+  'panes.document-operation-results.operation-success_duplicate': 'ದಾಖಲೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನಕಲಿಸಲಾಗಿದೆ',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> ಪ್ರಕಟಿಸಲಾಗಿದೆ',
@@ -704,8 +682,7 @@ export default removeUndefinedLocaleResources({
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'ಇನ್ನೂ ಲೋಡ್ ಮಾಡುತ್ತಿದೆ…',
   /** The text to display when type is missing */
-  'panes.unknown-pane-type.missing-type.text':
-    'ಸ್ಟ್ರಕ್ಚರ್ ಐಟಂಗೆ ಅಗತ್ಯವಾದ <Code>type</Code> ಗುಣಲಕ್ಷಣ ಇಲ್ಲ.',
+  'panes.unknown-pane-type.missing-type.text': 'ಸ್ಟ್ರಕ್ಚರ್ ಐಟಂಗೆ ಅಗತ್ಯವಾದ <Code>type</Code> ಗುಣಲಕ್ಷಣ ಇಲ್ಲ.',
   /** The title of the unknown pane */
   'panes.unknown-pane-type.title': 'ಅಜ್ಞಾತ ಪೇನ್ ಪ್ರಕಾರ',
   /** The text to display when type is unknown */
@@ -723,13 +700,11 @@ export default removeUndefinedLocaleResources({
   /** The header/title for the request permission dialog used in the permissions banner */
   'request-permission-dialog.header.text': 'ಸಂಪಾದನೆ ಪ್ರವೇಶವನ್ನು ಕೇಳಿ',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text':
-    'ನೀವು ಬಯಸಿದರೆ, ನೀವು ಒಂದು ಟಿಪ್ಪಣಿ ಸೇರಿಸಬಹುದು',
+  'request-permission-dialog.note-input.description.text': 'ನೀವು ಬಯಸಿದರೆ, ನೀವು ಒಂದು ಟಿಪ್ಪಣಿ ಸೇರಿಸಬಹುದು',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
   'request-permission-dialog.note-input.placeholder.text': 'ಟಿಪ್ಪಣಿ ಸೇರಿಸಿ...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
-  'request-permission-dialog.warning.denied.text':
-    'ಈ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರವೇಶಕ್ಕೆ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ.',
+  'request-permission-dialog.warning.denied.text': 'ಈ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರವೇಶಕ್ಕೆ ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
   'request-permission-dialog.warning.limit-reached.text':
     'ಎಲ್ಲಾ ಪ್ರಾಜೆಕ್ಟ್‌ಗಳಲ್ಲಿ ಪಾತ್ರ ವಿನಂತಿಗಳ ಮಿತಿಗೆ ನೀವು ತಲುಪಿದ್ದೀರಿ. ಹೆಚ್ಚು ವಿನಂತಿಗಳನ್ನು ಸಲ್ಲಿಸುವ ಮೊದಲು ದಯವಿಟ್ಟು ಕಾಯಿರಿ ಅಥವಾ ಸಹಾಯಕ್ಕಾಗಿ ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
@@ -748,8 +723,7 @@ export default removeUndefinedLocaleResources({
   'status-bar.publish-status-button.last-updated-time.aria-label':
     'ಕೊನೆಯ ಬಾರಿ ನವೀಕರಿಸಲಾಗಿದೆ {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last updated <RelativeTime/>" */
-  'status-bar.publish-status-button.last-updated-time.tooltip':
-    'ಕೊನೆಯ ಬಾರಿ ನವೀಕರಿಸಲಾಗಿದೆ <RelativeTime/>',
+  'status-bar.publish-status-button.last-updated-time.tooltip': 'ಕೊನೆಯ ಬಾರಿ ನವೀಕರಿಸಲಾಗಿದೆ <RelativeTime/>',
   /** Aria label for the button */
   'status-bar.review-changes-button.aria-label': 'ಬದಲಾವಣೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ',
   /** Label for button when status is saved */

@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Verzija nacrta već postoji',
 
   /** Text for when a release / document was created */
-  created: 'Stvoreno <RelativeTime/>',
+  'created': 'Stvoreno <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Aktivnost',

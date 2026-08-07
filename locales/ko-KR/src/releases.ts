@@ -146,7 +146,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': '초안 버전이 이미 존재합니다',
 
   /** Text for when a release / document was created */
-  created: '<RelativeTime/>에 생성됨',
+  'created': '<RelativeTime/>에 생성됨',
 
   /** Activity inspector button text */
   'dashboard.details.activity': '활동',

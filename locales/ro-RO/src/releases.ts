@@ -147,7 +147,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Versiunea draft există deja',
 
   /** Text for when a release / document was created */
-  created: 'Creat <RelativeTime/>',
+  'created': 'Creat <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Activitate',

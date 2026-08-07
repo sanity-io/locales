@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Draft-útgáfa er þegar til',
 
   /** Text for when a release / document was created */
-  created: 'Búið til <RelativeTime/>',
+  'created': 'Búið til <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Virkni',

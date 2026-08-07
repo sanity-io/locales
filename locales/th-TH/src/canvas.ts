@@ -9,14 +9,11 @@ export default removeUndefinedLocaleResources({
   'action.link-document-disabled.initial-value-not-resolved':
     'โปรดรอจนกว่าค่าเริ่มต้นของเอกสารจะได้รับการแก้ไข',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
-  'action.link-document-disabled.missing-permissions':
-    'คุณไม่มีสิทธิ์ในการเชื่อมโยงเอกสารนี้ไปยัง Canvas',
+  'action.link-document-disabled.missing-permissions': 'คุณไม่มีสิทธิ์ในการเชื่อมโยงเอกสารนี้ไปยัง Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard':
-    'เปิดเอกสารนี้ใน Dashboard เพื่อเชื่อมโยงไปยัง Canvas',
+  'action.link-document-disabled.not-in-dashboard': 'เปิดเอกสารนี้ใน Dashboard เพื่อเชื่อมโยงไปยัง Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document':
-    'เอกสารเวอร์ชันยังไม่ได้รับการสนับสนุนใน Canvas',
+  'action.link-document-disabled.version-document': 'เอกสารเวอร์ชันยังไม่ได้รับการสนับสนุนใน Canvas',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': 'ยกเลิกการเชื่อมโยงจาก Canvas',
 
@@ -33,8 +30,7 @@ export default removeUndefinedLocaleResources({
   'dialog.confirm-document-changes.description':
     'เอกสารนี้ต้องได้รับการอัปเดตเพื่อให้เข้ากันได้กับ Canvas\nเนื้อหาที่มีอยู่อาจถูกแก้ไขหรือลบออกเป็นส่วนหนึ่งของกระบวนการนี้',
   /** The description for the "Confirm document changes" dialog footer. */
-  'dialog.confirm-document-changes.footer-description':
-    'คุณสามารถยกเลิกการเชื่อมโยงจาก Canvas ได้ทุกเมื่อ',
+  'dialog.confirm-document-changes.footer-description': 'คุณสามารถยกเลิกการเชื่อมโยงจาก Canvas ได้ทุกเมื่อ',
   /** The title for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.title': 'ยืนยันการเปลี่ยนแปลงเอกสาร',
   /** The text for the Link to Canvas dialog when there is a error. */

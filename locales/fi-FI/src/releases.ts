@@ -152,7 +152,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Luonnosversio on jo olemassa',
 
   /** Text for when a release / document was created */
-  created: 'Luotu <RelativeTime/>',
+  'created': 'Luotu <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Toiminta',

@@ -14,8 +14,7 @@ export default removeUndefinedLocaleResources({
   /** Cancel button text */
   'feedback.cancel': 'ยกเลิก',
   /** Consent disclaimer shown when the user agrees to follow up */
-  'feedback.consent.disclaimer':
-    'เราอยากเรียนรู้เพิ่มเติม การเลือกใช่จะแชร์ชื่อและอีเมลของคุณกับทีม Sanity',
+  'feedback.consent.disclaimer': 'เราอยากเรียนรู้เพิ่มเติม การเลือกใช่จะแชร์ชื่อและอีเมลของคุณกับทีม Sanity',
   /** Label for the contact consent toggle */
   'feedback.consent.label': 'เราสามารถติดตามผลกับคุณเกี่ยวกับความคิดเห็นนี้ได้ไหม?',
   /** Consent toggle: no */

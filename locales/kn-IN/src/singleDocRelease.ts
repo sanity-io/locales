@@ -10,8 +10,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip description for when a document is scheduled for publishing */
   'action.schedule-publish-success-description': '{{publishAt}} ಗಾಗಿ ಪ್ರಕಟಣೆಯನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ',
   /** Tooltip text for when schedule publish is disabled due to cardinality one releases */
-  'action.schedule-publish.disabled.cardinality-one':
-    'ಈ ದಾಖಲೆಗಾಗಿ ನಿಗದಿತ Draft ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.',
+  'action.schedule-publish.disabled.cardinality-one': 'ಈ ದಾಖಲೆಗಾಗಿ ನಿಗದಿತ Draft ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.',
   /** Tooltip text for when schedule publish is disabled due to validation errors */
   'action.schedule-publish.disabled.validation-issues':
     'ಪ್ರಸ್ತುತ draft ನಲ್ಲಿ ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳಿರುವ ಕಾರಣ Draft ಅನ್ನು ನಿಗದಿಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',

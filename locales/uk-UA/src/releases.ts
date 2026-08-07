@@ -147,7 +147,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Версія чернетки вже існує',
 
   /** Text for when a release / document was created */
-  created: 'Створено <RelativeTime/>',
+  'created': 'Створено <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Активність',

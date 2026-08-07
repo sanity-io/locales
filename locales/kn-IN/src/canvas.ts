@@ -12,11 +12,9 @@ export default removeUndefinedLocaleResources({
   'action.link-document-disabled.missing-permissions':
     'ಈ ದಾಖಲೆಯನ್ನು ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಲು ನಿಮಗೆ ಅನುಮತಿಗಳು ಇಲ್ಲ',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard':
-    'ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಲು ಈ ದಾಖಲೆಯನ್ನು ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ',
+  'action.link-document-disabled.not-in-dashboard': 'ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಲು ಈ ದಾಖಲೆಯನ್ನು ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document':
-    'ಆವೃತ್ತಿ ದಾಖಲೆಗಳು ಇನ್ನೂ ಕ್ಯಾನ್ವಾಸ್‌ನಲ್ಲಿ ಬೆಂಬಲಿಸಲಾಗಿಲ್ಲ',
+  'action.link-document-disabled.version-document': 'ಆವೃತ್ತಿ ದಾಖಲೆಗಳು ಇನ್ನೂ ಕ್ಯಾನ್ವಾಸ್‌ನಲ್ಲಿ ಬೆಂಬಲಿಸಲಾಗಿಲ್ಲ',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': 'ಕ್ಯಾನ್ವಾಸ್‌ನಿಂದ ಅನ್‌ಲಿಂಕ್ ಮಾಡಿ',
 
@@ -33,15 +31,13 @@ export default removeUndefinedLocaleResources({
   'dialog.confirm-document-changes.description':
     'ಈ ದಾಖಲೆಯನ್ನು ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಅನುಕೂಲವಾಗಿ ನವೀಕರಿಸಲು ಅಗತ್ಯವಿದೆ.\n ಈ ಪ್ರಕ್ರಿಯೆಯ ಭಾಗವಾಗಿ ಇದುವರೆಗಿನ ವಿಷಯವನ್ನು ಸಂಪಾದಿಸಲಾಗುವುದು ಅಥವಾ ತೆಗೆದುಹಾಕಲಾಗುವುದು.',
   /** The description for the "Confirm document changes" dialog footer. */
-  'dialog.confirm-document-changes.footer-description':
-    'ನೀವು ಯಾವಾಗಲೂ ಕ್ಯಾನ್ವಾಸ್‌ನಿಂದ ಅನ್‌ಲಿಂಕ್ ಮಾಡಬಹುದು',
+  'dialog.confirm-document-changes.footer-description': 'ನೀವು ಯಾವಾಗಲೂ ಕ್ಯಾನ್ವಾಸ್‌ನಿಂದ ಅನ್‌ಲಿಂಕ್ ಮಾಡಬಹುದು',
   /** The title for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.title': 'ದಾಖಲೆ ಬದಲಾವಣೆಗಳನ್ನು ದೃಢೀಕರಿಸಿ',
   /** The text for the Link to Canvas dialog when there is a error. */
   'dialog.link-to-canvas.error': 'ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
-  'dialog.link-to-canvas.redirecting':
-    'ಲಿಂಕ್ ಪೂರ್ಣಗೊಳಿಸಲು ನಿಮ್ಮನ್ನು ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಕರೆತರುತ್ತಿದ್ದೇನೆ...',
+  'dialog.link-to-canvas.redirecting': 'ಲಿಂಕ್ ಪೂರ್ಣಗೊಳಿಸಲು ನಿಮ್ಮನ್ನು ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಕರೆತರುತ್ತಿದ್ದೇನೆ...',
   /** The title for the "Link to Canvas" dialog. */
   'dialog.link-to-canvas.title': 'ಕ್ಯಾನ್ವಾಸ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಿ',
   /** The text for the "Link to Canvas" dialog when the document is being validated. */

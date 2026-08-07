@@ -21,8 +21,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'กำลังลบ…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip':
-    'การกระทำบางอย่างถูกปิดใช้งานสำหรับเอกสารที่เชื่อมโยงกับ Canvas',
+  'action.disabled-by-canvas.tooltip': 'การกระทำบางอย่างถูกปิดใช้งานสำหรับเอกสารที่เชื่อมโยงกับ Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'คุณแน่ใจหรือไม่ว่าต้องการทิ้งการเปลี่ยนแปลงทั้งหมดนับตั้งแต่การเผยแพร่ครั้งล่าสุด?',
@@ -108,8 +107,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'ยกเลิกการเผยแพร่',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
-  'action.unpublish.live-edit.disabled':
-    'เอกสารนี้เปิดใช้งานการแก้ไขสดและไม่สามารถยกเลิกการเผยแพร่ได้',
+  'action.unpublish.live-edit.disabled': 'เอกสารนี้เปิดใช้งานการแก้ไขสดและไม่สามารถยกเลิกการเผยแพร่ได้',
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
@@ -117,8 +115,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'แบบร่างที่กำหนดไว้นี้ถูกเก็บถาวร',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document':
-    'ไม่สามารถสร้างเอกสารร่างได้',
+  'banners.choose-new-document-destination.cannot-create-draft-document': 'ไม่สามารถสร้างเอกสารร่างได้',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
   'banners.choose-new-document-destination.cannot-create-published-document':
     'ไม่สามารถสร้างเอกสารที่เผยแพร่ได้',
@@ -147,8 +144,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the "publish draft" action */
   'banners.obsolete-draft.actions.publish-draft.text': 'เผยแพร่ร่าง',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text':
-    'พื้นที่ทำงานไม่ได้เปิดใช้งานร่าง แต่มีร่างของเอกสารนี้อยู่',
+  'banners.obsolete-draft.draft-model-inactive.text': 'พื้นที่ทำงานไม่ได้เปิดใช้งานร่าง แต่มีร่างของเอกสารนี้อยู่',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
     'การกำหนดเวลาถูกหยุดชั่วคราวขณะที่กำลังแก้ไข เลือกตารางเวลาเพื่อเปิดใช้งานอีกครั้งหรือเลือกวันที่ใหม่',
@@ -168,13 +164,11 @@ export default removeUndefinedLocaleResources({
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'โหลดข้อมูลอ้างอิงใหม่',
   /** The text for the reference change banner if the reason is that the reference has been changed */
-  'banners.reference-changed-banner.reason-changed.text':
-    'ข้อมูลอ้างอิงนี้มีการเปลี่ยนแปลงตั้งแต่คุณเปิดมัน',
+  'banners.reference-changed-banner.reason-changed.text': 'ข้อมูลอ้างอิงนี้มีการเปลี่ยนแปลงตั้งแต่คุณเปิดมัน',
   /** The text for the close button */
   'banners.reference-changed-banner.reason-removed.close-button.text': 'ปิดข้อมูลอ้างอิง',
   /** The text for the reference change banner if the reason is that the reference has been deleted */
-  'banners.reference-changed-banner.reason-removed.text':
-    'ข้อมูลอ้างอิงนี้ถูกลบไปแล้วตั้งแต่คุณเปิดมัน',
+  'banners.reference-changed-banner.reason-removed.text': 'ข้อมูลอ้างอิงนี้ถูกลบไปแล้วตั้งแต่คุณเปิดมัน',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
   'banners.release.action.add-to-bundle': 'เพิ่มใน bundle',
   /** The text that appears for the action button to add the current document to the global release */
@@ -207,8 +201,7 @@ export default removeUndefinedLocaleResources({
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.title': 'กำลังเพิ่มเอกสารไปยังการปล่อย…',
   /** The text for the revision not found banner */
-  'banners.revision-not-found.description':
-    'เราไม่พบการแก้ไขเอกสารที่เลือก กรุณาเลือกอีกครั้งจากรายการประวัติ',
+  'banners.revision-not-found.description': 'เราไม่พบการแก้ไขเอกสารที่เลือก กรุณาเลือกอีกครั้งจากรายการประวัติ',
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
     'มีแบบร่างที่กำหนดไว้สำหรับเอกสารนี้ หากคุณเผยแพร่การเปลี่ยนแปลงตอนนี้ การเปลี่ยนแปลงเหล่านั้นจะถูกเขียนทับเมื่อตารางเวลาทำงาน',
@@ -346,8 +339,7 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'ยกเลิกการเผยแพร่ทันที',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
-  'confirm-delete-dialog.confirmation.text_delete':
-    'คุณแน่ใจหรือไม่ว่าต้องการลบ “<DocumentTitle/>”?',
+  'confirm-delete-dialog.confirmation.text_delete': 'คุณแน่ใจหรือไม่ว่าต้องการลบ “<DocumentTitle/>”?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'คุณแน่ใจหรือไม่ว่าต้องการยกเลิกการเผยแพร่ “<DocumentTitle/>”?',
@@ -614,11 +606,9 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'ดำเนินการ {{context}} กับเอกสารสำเร็จ',
   /** The text when copy document ID operation succeeded */
-  'panes.document-operation-results.operation-success_copy-id':
-    'คัดลอก ID เอกสารไปยังคลิปบอร์ดแล้ว',
+  'panes.document-operation-results.operation-success_copy-id': 'คัดลอก ID เอกสารไปยังคลิปบอร์ดแล้ว',
   /** The text when copy URL operation succeeded  */
-  'panes.document-operation-results.operation-success_copy-url':
-    'คัดลอก URL เอกสารไปยังคลิปบอร์ดแล้ว',
+  'panes.document-operation-results.operation-success_copy-url': 'คัดลอก URL เอกสารไปยังคลิปบอร์ดแล้ว',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
     '<Strong>{{title}}</Strong> ได้ถูกเพิ่มเข้าไปในการปล่อย',
@@ -628,13 +618,11 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_discardChanges':
     'การเปลี่ยนแปลงทั้งหมดนับตั้งแต่การเผยแพร่ครั้งล่าสุดได้ถูกทิ้งไปแล้ว ร่างที่ถูกทิ้งนี้ยังสามารถกู้คืนได้จากประวัติ',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate':
-    'เอกสารได้รับการทำซ้ำเรียบร้อยแล้ว',
+  'panes.document-operation-results.operation-success_duplicate': 'เอกสารได้รับการทำซ้ำเรียบร้อยแล้ว',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'เอกสารได้รับการเผยแพร่',
   /** The text when a publish operation succeeded in an anonymous version */
-  'panes.document-operation-results.operation-success_publishVersion':
-    'เวอร์ชันได้รับการเผยแพร่แล้ว',
+  'panes.document-operation-results.operation-success_publishVersion': 'เวอร์ชันได้รับการเผยแพร่แล้ว',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> ได้รับการกู้คืนแล้ว',
@@ -666,8 +654,7 @@ export default removeUndefinedLocaleResources({
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'ยังกำลังโหลด…',
   /** The text to display when type is missing */
-  'panes.unknown-pane-type.missing-type.text':
-    'รายการโครงสร้างขาดคุณสมบัติ <Code>type</Code> ที่จำเป็น',
+  'panes.unknown-pane-type.missing-type.text': 'รายการโครงสร้างขาดคุณสมบัติ <Code>type</Code> ที่จำเป็น',
   /** The title of the unknown pane */
   'panes.unknown-pane-type.title': 'ประเภทของพาเนลที่ไม่รู้จัก',
   /** The text to display when type is unknown */
@@ -702,11 +689,9 @@ export default removeUndefinedLocaleResources({
   'status-bar.publish-status-button.last-published-time.aria-label':
     'เผยแพร่ครั้งล่าสุด {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last published <RelativeTime/>" */
-  'status-bar.publish-status-button.last-published-time.tooltip':
-    'เผยแพร่ครั้งล่าสุด <RelativeTime/>',
+  'status-bar.publish-status-button.last-published-time.tooltip': 'เผยแพร่ครั้งล่าสุด <RelativeTime/>',
   /** Accessibility label indicating when the document was last updated, in relative time, eg "2 hours ago" */
-  'status-bar.publish-status-button.last-updated-time.aria-label':
-    'อัปเดตครั้งล่าสุด {{relativeTime}}',
+  'status-bar.publish-status-button.last-updated-time.aria-label': 'อัปเดตครั้งล่าสุด {{relativeTime}}',
   /** Text for tooltip showing explanation of timestamp/relative time, eg "Last updated <RelativeTime/>" */
   'status-bar.publish-status-button.last-updated-time.tooltip': 'อัปเดตครั้งล่าสุด <RelativeTime/>',
   /** Aria label for the button */

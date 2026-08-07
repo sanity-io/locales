@@ -1,6 +1,7 @@
+import {dirname} from 'node:path'
+import {fileURLToPath} from 'node:url'
+
 import {packageUp} from 'package-up'
-import {dirname} from 'path'
-import {fileURLToPath} from 'url'
 
 import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 

@@ -4,20 +4,15 @@
   "private": false,
   "description": "Ukrainian / Українська locale/translation for Sanity Studio",
   "keywords": [
-    "sanity",
     "i18n",
     "locale",
     "localization",
+    "sanity",
     "uk-UA"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
     "url": "https://github.com/sanity-io/locales/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/sanity-io/locales.git",
-    "directory": "locales/uk-UA"
   },
   "license": "MIT",
   "contributors": [
@@ -26,8 +21,20 @@
       "url": "https://github.com/fomazov"
     }
   ],
-  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/locales.git",
+    "directory": "locales/uk-UA"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "source": "./src/index.ts",
@@ -37,13 +44,9 @@
     },
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npm run clean && npm run pkg:build && npm run pkg:check",
     "clean": "rimraf dist",
@@ -51,11 +54,8 @@
     "pkg:check": "pkg check --strict",
     "prepublishOnly": "pnpm build"
   },
-  "browserslist": "extends @sanity/browserslist-config",
   "peerDependencies": {
     "sanity": "^3.22.0 || ^4.0.0-0 || ^5.0.0-0 || ^6.0.0-0"
   },
-  "publishConfig": {
-    "access": "public"
-  }
+  "browserslist": "extends @sanity/browserslist-config"
 }

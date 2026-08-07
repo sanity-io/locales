@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'A vázlat verzió már létezik',
 
   /** Text for when a release / document was created */
-  created: 'Létrehozva: <RelativeTime/>',
+  'created': 'Létrehozva: <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Tevékenység',
