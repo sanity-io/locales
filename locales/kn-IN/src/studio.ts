@@ -127,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': 'ಆಸ್ತಿ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
+  'asset-source.dialog.load-error': 'ಆಸ್ತಿಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'ಹೆಚ್ಚು ಲೋಡ್ ಮಾಡಿ',
   /** Text shown when selecting a file but there's no files to select from
@@ -435,7 +435,7 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.tooltip': 'ಸಂರಚನಾ ಸಮಸ್ಯೆಗಳು ಕಂಡುಬಂದಿವೆ',
 
   /** The name of Content Agent, the product. */
-  'content-agent': undefined, // 'Content Agent'
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}} ಪ್ರಕಾರ ವಿಂಗಡಿಸಿ',
@@ -476,7 +476,7 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  'document-group-inventory.action.cancel': 'ರದ್ದುಮಾಡಿ',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'ಹೊಸ ಆವೃತ್ತಿ inventory ಬಳಸಲು ಎಷ್ಟು ಸುಲಭ ಅಥವಾ ಕಷ್ಟ?',
@@ -491,17 +491,18 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': undefined, // 'All users (Default)'
+  'document-group.base-variant': 'ಎಲ್ಲಾ ಬಳಕೆದಾರರು (ಡೀಫಾಲ್ಟ್)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'ರೂಪಾಂತರ ರಚಿಸಿ',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': '{{variantDefinitionName}} ಗಾಗಿ ರೂಪಾಂತರ ರಚಿಸಿ',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'ಕರಡಾಗಿ',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'ಒಂದು ರಿಲೀಸ್‌ಗೆ',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants':
+    'ಅಥವಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೂಪಾಂತರಗಳನ್ನು ವೀಕ್ಷಿಸಿ',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'ರದ್ದುಮಾಡಿ',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -596,9 +597,10 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  'document.initial-value.error.description':
+    'ದಾಖಲೆಯು ಖಾಲಿ ಮೌಲ್ಯದೊಂದಿಗೆ ತೆರೆಯಲ್ಪಟ್ಟಿದೆ. {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
+  'document.initial-value.error.title': 'ಆರಂಭಿಕ ಮೌಲ್ಯವನ್ನು ಪರಿಹರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'ದಾಖಲೆ ಪ್ರಕಾರ "{{type}}" ಕಾಣಿಸಿಲ್ಲ',
 
@@ -1168,27 +1170,27 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'ಉಲ್ಲೇಖ',
   /** Label for the table lane that appends a column */
-  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  'inputs.portable-text.table.add-column': 'ಕೊನೆಯಲ್ಲಿ ಕಾಲಮ್ ಸೇರಿಸಿ',
   /** Label for the table lane that appends a row */
-  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  'inputs.portable-text.table.add-row': 'ಕೊನೆಯಲ್ಲಿ ಸಾಲು ಸೇರಿಸಿ',
   /** Aria label for a table column's drag/select handle */
-  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  'inputs.portable-text.table.column-handle': 'ಕಾಲಮ್ ಹ್ಯಾಂಡಲ್',
   /** Label for the trash chip that deletes the selected column */
-  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  'inputs.portable-text.table.delete-column': 'ಕಾಲಮ್ ಅಳಿಸಿ',
   /** Label for the trash chip that deletes the selected row */
-  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  'inputs.portable-text.table.delete-row': 'ಸಾಲು ಅಳಿಸಿ',
   /** Label for the table menu item that deletes the table */
-  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  'inputs.portable-text.table.delete-table': 'ಟೇಬಲ್ ಅಳಿಸಿ',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  'inputs.portable-text.table.header-row': 'ಹೆಡರ್ ಸಾಲು',
   /** Aria label for the dots that insert a row or column at a boundary */
-  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  'inputs.portable-text.table.insert-here': 'ಇಲ್ಲಿ ಸೇರಿಸಿ',
   /** Aria label for the table menu button */
-  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  'inputs.portable-text.table.menu-aria-label': 'ಟೇಬಲ್ ಆಯ್ಕೆಗಳು',
   /** Aria label for a table row's drag/select handle */
-  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  'inputs.portable-text.table.row-handle': 'ಸಾಲು ಹ್ಯಾಂಡಲ್',
   /** Label for the table menu item that selects the whole table */
-  'inputs.portable-text.table.select-table': undefined, // 'Select table'
+  'inputs.portable-text.table.select-table': 'ಟೇಬಲ್ ಆಯ್ಕೆಮಾಡಿ',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'ಸ್ಪಷ್ಟ',
   /** Label for action to copy the current item (used within arrays) */
@@ -1389,11 +1391,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': 'ಅಪರ್ಯಾಪ್ತ ಅನುಮತಿಗಳು',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  'login.logged-out.generic': 'ನಿಮ್ಮ ಸೆಷನ್ ಇನ್ನು ಮಾನ್ಯವಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.',
   /** Body of the logged-out banner shown above the login form when the session expired */
-  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  'login.logged-out.session-expired': 'ನಿಮ್ಮ ಸೆಷನ್ ಅವಧಿ ಮೀರಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.',
   /** Title of the banner shown above the login form after the studio logs the user out */
-  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+  'login.logged-out.title': 'ನೀವು ಲಾಗ್ ಔಟ್ ಆಗಿದ್ದೀರಿ',
 
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'ಅನಿರೀಕ್ಷಿತ ದೋಷ: {{error}}',
@@ -1483,7 +1485,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ಆವೃತ್ತಿಯನ್ನು ತ್ಯಜಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'ವಿವರಗಳನ್ನು ಸಂಪಾದಿಸಿ',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'ವೇಳಾಪಟ್ಟಿ ಸಂಪಾದಿಸು',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1518,9 +1520,9 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}} ರಂದು ಪ್ರಕಟಣೆಗೆ ನಿಗದಿಯಾಗಿದೆ',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_one': undefined, // '+{{count}} variant'
+  'release.chip.button.other-variants_one': '+{{count}} ರೂಪಾಂತರ',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  'release.chip.button.other-variants_other': '+{{count}} ರೂಪಾಂತರಗಳು',
   /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} ಆವೃತ್ತಿ',
   /** Label for button to show other versions in the document perspective list */
@@ -1545,8 +1547,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'ಸಂಪಾದನೆಗಳು ಇಲ್ಲ',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
-  'release.chip.tooltip.other-variants_one': undefined, // 'One variant'
-  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
+  'release.chip.tooltip.other-variants_one': 'ಒಂದು ರೂಪಾಂತರ',
+  'release.chip.tooltip.other-variants_other': '{{count}} ರೂಪಾಂತರಗಳು',
   'release.chip.tooltip.other-versions_one': 'ಬಿಡುಗಡೆಗಳ ಹೊರಗೆ ಒಂದು ಹೆಚ್ಚುವರಿ ಆವೃತ್ತಿ',
   'release.chip.tooltip.other-versions_other': 'ಬಿಡುಗಡೆಗಳ ಹೊರಗೆ {{count}} ಹೆಚ್ಚುವರಿ ಆವೃತ್ತಿಗಳು',
   /** Label for tooltip in chip with the published date */
@@ -1588,13 +1590,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'ವೇಳಾಪಟ್ಟಿ ಬದಲಾಯಿಸು',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'ಉಳಿಸಿ',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'ವಿವರಣೆ',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'ರಿಲೀಸ್ ಸಂಪಾದಿಸಿ',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'ಶೀರ್ಷಿಕೆ',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body': 'ನೀವು ಈ ನಿಗದಿತ ಮುಸದ್ದುವನ್ನು ತಕ್ಷಣವೇ ಪ್ರಕಟಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
   /** Confirm button text for running a scheduled draft immediately */
@@ -1650,7 +1652,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'ನಿಗದಿತ ಮುಸದ್ದು ದಾಖಲೆ <strong>{{title}}</strong> ಅಳಿಸಲಾಗಿದೆ.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'ರಿಲೀಸ್ ವಿವರಗಳನ್ನು ಉಳಿಸಲು ವಿಫಲವಾಯಿತು',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
