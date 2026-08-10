@@ -15,7 +15,8 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.scheduled-release':
     '이 문서는 예약된 릴리스 내에 존재하기 때문에 삭제할 수 없습니다',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
-  'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.delete.disabled.target-not-found':
+    '선택한 릴리스 또는 변형에 이 문서가 포함되어 있지 않습니다',
   /** Label for the "Delete" document action button */
   'action.delete.label': '삭제',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -38,7 +39,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': '작업 준비가 되지 않았습니다',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.discard-changes.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.discard-changes.disabled.target-not-found':
+    '선택한 릴리스 또는 변형에 이 문서가 포함되어 있지 않습니다',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': '변경 사항 버리기',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -47,7 +49,8 @@ export default removeUndefinedLocaleResources({
   'action.duplicate.disabled.nothing-to-duplicate':
     '이 문서는 아직 존재하지 않아 복제할 것이 없습니다',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.duplicate.disabled.target-not-found':
+    '선택한 릴리스 또는 변형에 이 문서가 포함되어 있지 않습니다',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': '복제',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -57,11 +60,12 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '{{timeSincePublished}} 전에 게시됨',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': undefined, // 'This version is published as part of its release'
+  'action.publish.disabled.not-publishable': '이 버전은 해당 릴리스의 일부로 게시됩니다',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': '작업 준비되지 않음',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.publish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.publish.disabled.target-not-found':
+    '선택한 릴리스 또는 변형에 이 문서가 포함되어 있지 않습니다',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '게시',
   /** Label for the "Publish" document action */
@@ -105,7 +109,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': '작업 준비가 되지 않았습니다',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.unpublish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.unpublish.disabled.target-not-found':
+    '선택한 릴리스 또는 변형에 이 문서가 포함되어 있지 않습니다',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': '발행 취소',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -221,19 +226,22 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text-with-published':
     '현재 <strong>게시된</strong> 버전을 표시합니다:',
   /** The text that appears for the action button to add the current document to the selected variant */
-  'banners.variant.action.add-to-variant': undefined, // 'Create variant'
+  'banners.variant.action.add-to-variant': '변형 만들기',
   /** The text for the banner that appears when the selected variant matches no variant definition */
-  'banners.variant.definition-not-found': undefined, // 'The selected variant <VariantName>{{name}}</VariantName> could not be found.'
+  'banners.variant.definition-not-found':
+    '선택한 변형 <VariantName>{{name}}</VariantName>을(를) 찾을 수 없습니다.',
   /** Toast description in case an error occurs when adding a document to a variant */
-  'banners.variant.error.description': undefined, // 'An error occurred when adding document to the variant: {{message}}'
+  'banners.variant.error.description': '변형에 문서를 추가하는 중 오류가 발생했습니다: {{message}}',
   /** Toast title in case an error occurs when adding a document to a variant */
-  'banners.variant.error.title': undefined, // 'Error adding document to variant'
+  'banners.variant.error.title': '변형에 문서 추가 오류',
   /** The text for the banner that appears when a document is not in the selected variant */
-  'banners.variant.not-in-variant': undefined, // 'No <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variant document exists for <VariantBadge>{{variantTitle}}</VariantBadge>.'
+  'banners.variant.not-in-variant':
+    '<VariantBadge>{{variantTitle}}</VariantBadge>에 대한 <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> 변형 문서가 존재하지 않습니다.',
   /** Description of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.description': undefined, // 'Please hold tight while the document is added to the variant. It should not take longer than a few seconds.'
+  'banners.variant.waiting.description':
+    '문서가 변형에 추가되는 동안 잠시 기다려 주세요. 몇 초 이상 걸리지 않을 것입니다.',
   /** Title of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.title': undefined, // 'Adding document to variant…'
+  'banners.variant.waiting.title': '변형에 문서 추가 중…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '새로운 {{schemaType}}',
@@ -421,7 +429,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': '알 수 없는 스키마 유형: {{schemaType}}',
 
   /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': undefined, // 'Where did the version buttons go?'
+  'document-group-inventory.onboarding-hint': '버전 버튼이 어디로 갔나요?',
 
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '닫기',
@@ -430,13 +438,13 @@ export default removeUndefinedLocaleResources({
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': '값 없음',
   /** Accessibility label for the close button shown when an inspector panel failed to render */
-  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  'document-inspector.error.close-button.aria-label': '패널 닫기',
   /** Text explaining that the inspector panel failed to render */
-  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  'document-inspector.error.description': '이 패널을 렌더링하는 중 오류가 발생했습니다.',
   /** Label for the button that attempts to render the inspector panel again */
-  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  'document-inspector.error.retry-button.text': '다시 시도',
   /** The title shown in the inspector panel header when the panel failed to render */
-  'document-inspector.error.title': undefined, // 'Something went wrong'
+  'document-inspector.error.title': '문제가 발생했습니다',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '검사',
   /** the placeholder text for the search input on the inspect dialog */
@@ -447,7 +455,8 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': '원시 JSON',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
+  'document-target-badges.not-in-target.tooltip':
+    '선택한 perspective에 문서가 아직 존재하지 않습니다.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': '이 양식은 숨겨져 있습니다',
@@ -461,17 +470,20 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': '문서 동기화 중…',
   /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.description': undefined, // 'We\'ll keep trying. Your changes are kept in your browser in the meantime.'
+  'document-view.form-view.sync-pending.description':
+    '계속 재시도합니다. 그동안 변경 사항은 브라우저에 보관됩니다.',
   /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.title': undefined, // 'Your changes aren\'t saving'
+  'document-view.form-view.sync-pending.title': '변경 사항이 저장되지 않고 있습니다',
   /** Description of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.description': undefined, // 'Editing resumes as soon as your changes are saved.'
+  'document-view.form-view.sync-recovering.description':
+    '변경 사항이 저장되는 즉시 편집이 재개됩니다.',
   /** Title of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.title': undefined, // 'Saving your changes…'
+  'document-view.form-view.sync-recovering.title': '변경 사항 저장 중…',
   /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.description': undefined, // 'Editing is paused until they save. Your changes are kept in your browser, so keep this tab open while we keep trying.'
+  'document-view.form-view.sync-stalled.description':
+    '변경 사항이 저장될 때까지 편집이 일시 중지됩니다. 변경 사항은 브라우저에 보관되므로 계속 재시도하는 동안 이 탭을 열어 두세요.',
   /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.title': undefined, // 'Your changes still aren\'t saving'
+  'document-view.form-view.sync-stalled.title': '변경 사항이 여전히 저장되지 않고 있습니다',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': '즐겨찾기에 추가',
@@ -533,17 +545,17 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '상세 보기',
   /** The menu item title that restores the structure-configured default layout */
-  'menu-items.layout.restore-default': undefined, // 'Default view'
+  'menu-items.layout.restore-default': '기본 보기',
   /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
-  'menu-items.layout.restore-default.disabled-reason': undefined, // 'Already using the default view'
+  'menu-items.layout.restore-default.disabled-reason': '이미 기본 보기를 사용 중입니다',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '생성 순으로 정렬',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '마지막 편집 순으로 정렬',
   /** The menu item title that restores the structure-configured default sort order */
-  'menu-items.sort-by.restore-default': undefined, // 'Default sort'
+  'menu-items.sort-by.restore-default': '기본 정렬',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
-  'menu-items.sort-by.restore-default.disabled-reason': undefined, // 'Already using the default sort order'
+  'menu-items.sort-by.restore-default.disabled-reason': '이미 기본 정렬 순서를 사용 중입니다',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': '문서 유형 추가하는 방법 알아보기 →',
@@ -609,13 +621,13 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': '목록 검색',
   /** The aria-label for the sort-order control shown beneath the document list search input */
-  'panes.document-list-pane.search-ordering.aria-label': undefined, // 'Change search result ordering'
+  'panes.document-list-pane.search-ordering.aria-label': '검색 결과 정렬 순서 변경',
   /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
-  'panes.document-list-pane.search-ordering.label': undefined, // 'Sorted by {{order}}'
+  'panes.document-list-pane.search-ordering.label': '{{order}} 기준으로 정렬됨',
   /** The label for the relevance (best match) option in the document list search sort-order control */
-  'panes.document-list-pane.search-ordering.relevance': undefined, // 'Relevance'
+  'panes.document-list-pane.search-ordering.relevance': '관련성',
   /** The sort-order control summary shown when results are ranked by relevance */
-  'panes.document-list-pane.search-ordering.summary-relevance': undefined, // 'Sorted by relevance'
+  'panes.document-list-pane.search-ordering.summary-relevance': '관련성 기준으로 정렬됨',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     '이 정렬 옵션은 현재 문서 유형에 포함되지 않은 필드를 사용합니다',
@@ -678,7 +690,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     '이 문서는 존재하지 않으며, 이에 대한 스키마 유형이 지정되지 않았습니다.',
   /** The loading message shown while the document targeted by the selected variant is resolving */
-  'panes.document-pane.variant-target.loading': undefined, // 'Loading document…'
+  'panes.document-pane.variant-target.loading': '문서 불러오는 중…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '로딩 중…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

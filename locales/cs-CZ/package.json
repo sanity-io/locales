@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-cs-cz",
-  "version": "1.1.34",
+  "version": "1.1.35",
   "private": false,
   "description": "Czech / Čeština locale/translation for Sanity Studio",
   "keywords": [
@@ -15,7 +15,12 @@
     "url": "https://github.com/sanity-io/locales/issues"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "jansindl3r",
+      "url": "https://github.com/jansindl3r"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git",

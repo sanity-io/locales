@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.scheduled-release':
     'ไม่สามารถลบเอกสารนี้ได้เนื่องจากมีอยู่ในการเผยแพร่ตามกำหนดเวลา',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
-  'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.delete.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ลบ',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -37,7 +37,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.discard-changes.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.discard-changes.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'ทิ้งการเปลี่ยนแปลง',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -45,7 +45,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate': 'เอกสารนี้ยังไม่มีดังนั้นไม่มีอะไรให้ทำซ้ำ',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.duplicate.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'ทำซ้ำ',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -55,11 +55,11 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'เผยแพร่ไปแล้ว {{timeSincePublished}} ที่ผ่านมา',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': undefined, // 'This version is published as part of its release'
+  'action.publish.disabled.not-publishable': 'เวอร์ชันนี้ถูกเผยแพร่เป็นส่วนหนึ่งของรีลีส',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.publish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.publish.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'เผยแพร่',
   /** Label for the "Publish" document action */
@@ -103,7 +103,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.unpublish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.unpublish.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'ยกเลิกการเผยแพร่',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -212,19 +212,21 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text-with-published':
     'กำลังแสดงเวอร์ชันที่<strong>เผยแพร่</strong>ปัจจุบัน:',
   /** The text that appears for the action button to add the current document to the selected variant */
-  'banners.variant.action.add-to-variant': undefined, // 'Create variant'
+  'banners.variant.action.add-to-variant': 'สร้าง variant',
   /** The text for the banner that appears when the selected variant matches no variant definition */
-  'banners.variant.definition-not-found': undefined, // 'The selected variant <VariantName>{{name}}</VariantName> could not be found.'
+  'banners.variant.definition-not-found': 'ไม่พบ variant ที่เลือก <VariantName>{{name}}</VariantName>',
   /** Toast description in case an error occurs when adding a document to a variant */
-  'banners.variant.error.description': undefined, // 'An error occurred when adding document to the variant: {{message}}'
+  'banners.variant.error.description': 'เกิดข้อผิดพลาดขณะเพิ่มเอกสารไปยัง variant: {{message}}',
   /** Toast title in case an error occurs when adding a document to a variant */
-  'banners.variant.error.title': undefined, // 'Error adding document to variant'
+  'banners.variant.error.title': 'เกิดข้อผิดพลาดในการเพิ่มเอกสารไปยัง variant',
   /** The text for the banner that appears when a document is not in the selected variant */
-  'banners.variant.not-in-variant': undefined, // 'No <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variant document exists for <VariantBadge>{{variantTitle}}</VariantBadge>.'
+  'banners.variant.not-in-variant':
+    'ไม่มีเอกสาร variant <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> สำหรับ <VariantBadge>{{variantTitle}}</VariantBadge>',
   /** Description of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.description': undefined, // 'Please hold tight while the document is added to the variant. It should not take longer than a few seconds.'
+  'banners.variant.waiting.description':
+    'กรุณารอสักครู่ขณะที่เอกสารกำลังถูกเพิ่มไปยัง variant ซึ่งจะใช้เวลาไม่เกินสองสามวินาที',
   /** Title of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.title': undefined, // 'Adding document to variant…'
+  'banners.variant.waiting.title': 'กำลังเพิ่มเอกสารไปยัง variant…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'เอกสารใหม่ {{schemaType}}',
@@ -396,7 +398,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'ไม่รู้จักประเภทสคีมา: {{schemaType}}',
 
   /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': undefined, // 'Where did the version buttons go?'
+  'document-group-inventory.onboarding-hint': 'ปุ่มเวอร์ชันไปอยู่ที่ไหน?',
 
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'ปิด',
@@ -405,13 +407,13 @@ export default removeUndefinedLocaleResources({
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'ไม่มีค่า',
   /** Accessibility label for the close button shown when an inspector panel failed to render */
-  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  'document-inspector.error.close-button.aria-label': 'ปิดแผงควบคุม',
   /** Text explaining that the inspector panel failed to render */
-  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  'document-inspector.error.description': 'เกิดข้อผิดพลาดขณะแสดงผลแผงควบคุมนี้',
   /** Label for the button that attempts to render the inspector panel again */
-  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  'document-inspector.error.retry-button.text': 'ลองอีกครั้ง',
   /** The title shown in the inspector panel header when the panel failed to render */
-  'document-inspector.error.title': undefined, // 'Something went wrong'
+  'document-inspector.error.title': 'เกิดข้อผิดพลาดบางอย่าง',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'ตรวจสอบ',
   /** the placeholder text for the search input on the inspect dialog */
@@ -422,7 +424,7 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': 'JSON ดิบ',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
+  'document-target-badges.not-in-target.tooltip': 'เอกสารยังไม่มีอยู่ใน perspective ที่เลือก',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'ฟอร์มนี้ถูกซ่อน',
@@ -436,17 +438,20 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'กำลังซิงค์เอกสาร…',
   /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.description': undefined, // 'We\'ll keep trying. Your changes are kept in your browser in the meantime.'
+  'document-view.form-view.sync-pending.description':
+    'เราจะพยายามต่อไป การเปลี่ยนแปลงของคุณถูกเก็บไว้ในเบราว์เซอร์ในระหว่างนี้',
   /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.title': undefined, // 'Your changes aren\'t saving'
+  'document-view.form-view.sync-pending.title': 'การเปลี่ยนแปลงของคุณยังไม่ได้บันทึก',
   /** Description of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.description': undefined, // 'Editing resumes as soon as your changes are saved.'
+  'document-view.form-view.sync-recovering.description':
+    'การแก้ไขจะกลับมาทำงานทันทีที่การเปลี่ยนแปลงของคุณถูกบันทึก',
   /** Title of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.title': undefined, // 'Saving your changes…'
+  'document-view.form-view.sync-recovering.title': 'กำลังบันทึกการเปลี่ยนแปลงของคุณ…',
   /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.description': undefined, // 'Editing is paused until they save. Your changes are kept in your browser, so keep this tab open while we keep trying.'
+  'document-view.form-view.sync-stalled.description':
+    'การแก้ไขถูกหยุดชั่วคราวจนกว่าจะบันทึกสำเร็จ การเปลี่ยนแปลงของคุณถูกเก็บไว้ในเบราว์เซอร์ ดังนั้นโปรดเปิดแท็บนี้ไว้ขณะที่เราพยายามต่อไป',
   /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.title': undefined, // 'Your changes still aren\'t saving'
+  'document-view.form-view.sync-stalled.title': 'การเปลี่ยนแปลงของคุณยังคงไม่ได้บันทึก',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'เพิ่มลงในรายการโปรด',
@@ -508,17 +513,17 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'มุมมองแบบละเอียด',
   /** The menu item title that restores the structure-configured default layout */
-  'menu-items.layout.restore-default': undefined, // 'Default view'
+  'menu-items.layout.restore-default': 'มุมมองเริ่มต้น',
   /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
-  'menu-items.layout.restore-default.disabled-reason': undefined, // 'Already using the default view'
+  'menu-items.layout.restore-default.disabled-reason': 'กำลังใช้มุมมองเริ่มต้นอยู่แล้ว',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'เรียงตามวันที่สร้าง',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'เรียงตามการแก้ไขล่าสุด',
   /** The menu item title that restores the structure-configured default sort order */
-  'menu-items.sort-by.restore-default': undefined, // 'Default sort'
+  'menu-items.sort-by.restore-default': 'การเรียงลำดับเริ่มต้น',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
-  'menu-items.sort-by.restore-default.disabled-reason': undefined, // 'Already using the default sort order'
+  'menu-items.sort-by.restore-default.disabled-reason': 'กำลังใช้ลำดับการเรียงเริ่มต้นอยู่แล้ว',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'เรียนรู้วิธีการเพิ่มประเภทเอกสาร →',
@@ -583,13 +588,13 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'ค้นหารายการ',
   /** The aria-label for the sort-order control shown beneath the document list search input */
-  'panes.document-list-pane.search-ordering.aria-label': undefined, // 'Change search result ordering'
+  'panes.document-list-pane.search-ordering.aria-label': 'เปลี่ยนลำดับผลการค้นหา',
   /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
-  'panes.document-list-pane.search-ordering.label': undefined, // 'Sorted by {{order}}'
+  'panes.document-list-pane.search-ordering.label': 'เรียงลำดับตาม {{order}}',
   /** The label for the relevance (best match) option in the document list search sort-order control */
-  'panes.document-list-pane.search-ordering.relevance': undefined, // 'Relevance'
+  'panes.document-list-pane.search-ordering.relevance': 'ความเกี่ยวข้อง',
   /** The sort-order control summary shown when results are ranked by relevance */
-  'panes.document-list-pane.search-ordering.summary-relevance': undefined, // 'Sorted by relevance'
+  'panes.document-list-pane.search-ordering.summary-relevance': 'เรียงลำดับตามความเกี่ยวข้อง',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'ตัวเลือกการเรียงลำดับนี้ใช้ฟิลด์ที่ไม่ได้เป็นส่วนหนึ่งของประเภทเอกสารนี้',
@@ -648,7 +653,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     'เอกสารนี้ไม่มีอยู่ และไม่มีการระบุประเภทสคีมาสำหรับมัน',
   /** The loading message shown while the document targeted by the selected variant is resolving */
-  'panes.document-pane.variant-target.loading': undefined, // 'Loading document…'
+  'panes.document-pane.variant-target.loading': 'กำลังโหลดเอกสาร…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'กำลังโหลด…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */

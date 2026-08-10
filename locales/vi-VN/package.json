@@ -1,6 +1,6 @@
 {
   "name": "@sanity/locale-vi-vn",
-  "version": "1.1.36",
+  "version": "1.1.37",
   "private": false,
   "description": "Vietnamese / Tiếng Việt locale/translation for Sanity Studio",
   "keywords": [
@@ -15,7 +15,12 @@
     "url": "https://github.com/sanity-io/locales/issues"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "ntbaoni28",
+      "url": "https://github.com/ntbaoni28"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git",

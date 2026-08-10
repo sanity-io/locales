@@ -48,9 +48,10 @@ export default defineConfig({
 })
 ```
 
-## Contributors
+## Maintainers
 
-- [@s-rd](https://github.com/s-rd)
+We are looking for maintainers for this plugin!
+If you are interested, please [send a PR](/CONTRIBUTING.md#maintaining-a-locale) adding yourself as a maintainer.
 
 ## Contributing
 

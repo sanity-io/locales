@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': '예약 취소됨으로 표시되었습니다',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': '활동 닫기',
   /** The loading text for when releases are loading */
   'activity.panel.error': '릴리스 활동을 가져오는 중 오류가 발생했습니다',
   /** The loading text for when releases are loading */
@@ -151,21 +151,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': '활동',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': '생성됨',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': '문서',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': '일정',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': '상태',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': '문서 없음',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': '오류',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': '유효함',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': '유효성 검사 중',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': '스튜디오에 릴리스 고정',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -209,7 +209,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '유효성 검사 오류 {{count}}개',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': '유효성 검사 오류 없음',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': '예, 릴리스 복제',
@@ -281,7 +281,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': '문서',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': '모든 릴리스',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': '캘린더 보기',
   /** Description for the release tool */
@@ -330,9 +330,10 @@ export default removeUndefinedLocaleResources({
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title': '릴리스와 모든 문서 버전을 게시하시겠습니까?',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
-  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  'publish-dialog.confirm-publish.update-drafts-checkbox': '기존 초안 업데이트',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
-  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}}개 문서의 기존 초안이 삭제되어 초안이 게시된 릴리스와 일치하게 됩니다. 게시되지 않은 초안 변경 사항은 손실됩니다.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': '일부 문서에 유효성 검사 오류가 있습니다',
   /** Label for when documents are being validated */
@@ -452,11 +453,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': '편집됨',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': '편집자',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': '대상',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': '마지막 편집',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': '게시됨',
   /** Header for the document table in the release tool - Published */
@@ -472,7 +473,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': '유형',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Variant',
   /** Header for the document table in the release tool - when */
   'table-header.when': '시기',
 
@@ -508,7 +509,8 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release failed to publish */
   'toast.publish.error': "'<strong>{{title}}</strong>' 게시 실패: {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
+  'toast.publish.update-drafts-error':
+    '릴리스가 게시되었지만 기존 초안을 업데이트할 수 없습니다: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success':
     "'{{title}}'에 대한 릴리스 되돌리기가 성공적으로 생성되었습니다. <Link/>",

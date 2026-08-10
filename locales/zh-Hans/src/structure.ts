@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release': '由于该文档存在于预定发布中，因此无法删除',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
-  'action.delete.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.delete.disabled.target-not-found': '所选版本或变体不包含此文档',
   /** Label for the "Delete" document action button */
   'action.delete.label': '删除',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -36,7 +36,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': '操作尚未准备好',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.discard-changes.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.discard-changes.disabled.target-not-found': '所选版本或变体不包含此文档',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': '放弃更改',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -44,7 +44,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate': '此文档尚未存在，因此没有可复制的内容',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.duplicate.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.duplicate.disabled.target-not-found': '所选版本或变体不包含此文档',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': '复制',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '已发布 {{timeSincePublished}} 前',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': undefined, // 'This version is published as part of its release'
+  'action.publish.disabled.not-publishable': '此版本已作为其发布版本的一部分发布',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': '操作尚未准备好',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.publish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.publish.disabled.target-not-found': '所选版本或变体不包含此文档',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '发布',
   /** Label for the "Publish" document action */
@@ -98,7 +98,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': '操作未就绪',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.unpublish.disabled.target-not-found': undefined, // 'The selected release or variant does not contain this document'
+  'action.unpublish.disabled.target-not-found': '所选版本或变体不包含此文档',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': '取消发布',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -206,19 +206,20 @@ export default removeUndefinedLocaleResources({
   'banners.unpublished-release-banner.text-with-published':
     '显示当前的<strong>已发布</strong>版本：',
   /** The text that appears for the action button to add the current document to the selected variant */
-  'banners.variant.action.add-to-variant': undefined, // 'Create variant'
+  'banners.variant.action.add-to-variant': '创建变体',
   /** The text for the banner that appears when the selected variant matches no variant definition */
-  'banners.variant.definition-not-found': undefined, // 'The selected variant <VariantName>{{name}}</VariantName> could not be found.'
+  'banners.variant.definition-not-found': '找不到所选变体 <VariantName>{{name}}</VariantName>。',
   /** Toast description in case an error occurs when adding a document to a variant */
-  'banners.variant.error.description': undefined, // 'An error occurred when adding document to the variant: {{message}}'
+  'banners.variant.error.description': '将文档添加到变体时发生错误：{{message}}',
   /** Toast title in case an error occurs when adding a document to a variant */
-  'banners.variant.error.title': undefined, // 'Error adding document to variant'
+  'banners.variant.error.title': '将文档添加到变体时出错',
   /** The text for the banner that appears when a document is not in the selected variant */
-  'banners.variant.not-in-variant': undefined, // 'No <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variant document exists for <VariantBadge>{{variantTitle}}</VariantBadge>.'
+  'banners.variant.not-in-variant':
+    '不存在适用于 <VariantBadge>{{variantTitle}}</VariantBadge> 的 <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> 变体文档。',
   /** Description of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.description': undefined, // 'Please hold tight while the document is added to the variant. It should not take longer than a few seconds.'
+  'banners.variant.waiting.description': '请稍候，文档正在添加到变体中，此过程不会超过几秒钟。',
   /** Title of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.title': undefined, // 'Adding document to variant…'
+  'banners.variant.waiting.title': '正在将文档添加到变体…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新建 {{schemaType}}',
@@ -387,7 +388,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': '未知的模式类型：{{schemaType}}',
 
   /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': undefined, // 'Where did the version buttons go?'
+  'document-group-inventory.onboarding-hint': '版本按钮去哪了？',
 
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '关闭',
@@ -396,13 +397,13 @@ export default removeUndefinedLocaleResources({
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': '无值',
   /** Accessibility label for the close button shown when an inspector panel failed to render */
-  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  'document-inspector.error.close-button.aria-label': '关闭面板',
   /** Text explaining that the inspector panel failed to render */
-  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  'document-inspector.error.description': '渲染此面板时发生错误。',
   /** Label for the button that attempts to render the inspector panel again */
-  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  'document-inspector.error.retry-button.text': '重试',
   /** The title shown in the inspector panel header when the panel failed to render */
-  'document-inspector.error.title': undefined, // 'Something went wrong'
+  'document-inspector.error.title': '出现错误',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '检查',
   /** the placeholder text for the search input on the inspect dialog */
@@ -413,7 +414,7 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': '原始 JSON',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
+  'document-target-badges.not-in-target.tooltip': '文档尚不存在于所选 perspective 中。',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': '此表单已隐藏',
@@ -427,17 +428,19 @@ export default removeUndefinedLocaleResources({
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': '正在同步文档…',
   /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.description': undefined, // 'We\'ll keep trying. Your changes are kept in your browser in the meantime.'
+  'document-view.form-view.sync-pending.description':
+    '我们将持续重试。您的更改已暂时保存在浏览器中。',
   /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.title': undefined, // 'Your changes aren\'t saving'
+  'document-view.form-view.sync-pending.title': '您的更改未能保存',
   /** Description of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.description': undefined, // 'Editing resumes as soon as your changes are saved.'
+  'document-view.form-view.sync-recovering.description': '您的更改保存完成后即可继续编辑。',
   /** Title of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.title': undefined, // 'Saving your changes…'
+  'document-view.form-view.sync-recovering.title': '正在保存您的更改…',
   /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.description': undefined, // 'Editing is paused until they save. Your changes are kept in your browser, so keep this tab open while we keep trying.'
+  'document-view.form-view.sync-stalled.description':
+    '编辑已暂停，直到更改保存成功。您的更改已保存在浏览器中，请保持此标签页打开，我们将持续重试。',
   /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.title': undefined, // 'Your changes still aren\'t saving'
+  'document-view.form-view.sync-stalled.title': '您的更改仍未能保存',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': '添加到收藏夹',
@@ -498,17 +501,17 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '详细视图',
   /** The menu item title that restores the structure-configured default layout */
-  'menu-items.layout.restore-default': undefined, // 'Default view'
+  'menu-items.layout.restore-default': '默认视图',
   /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
-  'menu-items.layout.restore-default.disabled-reason': undefined, // 'Already using the default view'
+  'menu-items.layout.restore-default.disabled-reason': '已在使用默认视图',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '按创建时间排序',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '按最后编辑排序',
   /** The menu item title that restores the structure-configured default sort order */
-  'menu-items.sort-by.restore-default': undefined, // 'Default sort'
+  'menu-items.sort-by.restore-default': '默认排序',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
-  'menu-items.sort-by.restore-default.disabled-reason': undefined, // 'Already using the default sort order'
+  'menu-items.sort-by.restore-default.disabled-reason': '已在使用默认排序顺序',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': '了解如何添加文档类型 →',
@@ -573,13 +576,13 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': '搜索列表',
   /** The aria-label for the sort-order control shown beneath the document list search input */
-  'panes.document-list-pane.search-ordering.aria-label': undefined, // 'Change search result ordering'
+  'panes.document-list-pane.search-ordering.aria-label': '更改搜索结果排序',
   /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
-  'panes.document-list-pane.search-ordering.label': undefined, // 'Sorted by {{order}}'
+  'panes.document-list-pane.search-ordering.label': '按 {{order}} 排序',
   /** The label for the relevance (best match) option in the document list search sort-order control */
-  'panes.document-list-pane.search-ordering.relevance': undefined, // 'Relevance'
+  'panes.document-list-pane.search-ordering.relevance': '相关性',
   /** The sort-order control summary shown when results are ranked by relevance */
-  'panes.document-list-pane.search-ordering.summary-relevance': undefined, // 'Sorted by relevance'
+  'panes.document-list-pane.search-ordering.summary-relevance': '按相关性排序',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason': '此排序选项使用了不属于该文档类型的字段',
   /** The summary title when displaying an error for a document operation result */
@@ -636,7 +639,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     '此文档不存在，且未为其指定模式类型。',
   /** The loading message shown while the document targeted by the selected variant is resolving */
-  'panes.document-pane.variant-target.loading': undefined, // 'Loading document…'
+  'panes.document-pane.variant-target.loading': '正在加载文档…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '加载中…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
