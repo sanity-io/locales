@@ -1,4 +1,3 @@
-import {format} from 'prettier'
 import {z} from 'zod'
 import {fromZodError} from 'zod-validation-error'
 
@@ -78,13 +77,16 @@ export async function sendToSlack(webhookUrl: string, message: SlackMessage): Pr
 export async function formatStatsForSlack(stats: PackageStats[]): Promise<SlackMessage> {
   const sortedStats = [...stats].sort((a, b) => b.weeklyDownloads - a.weeklyDownloads)
 
-  let tableText = '| ID | Locale | Downloads |\n|--|--|--|\n'
-
-  for (const stat of sortedStats) {
-    tableText += `| ${stat.localeId} | ${stat.localeName} | ${stat.weeklyDownloads.toLocaleString()} |\n`
-  }
-
-  tableText = codeBlock(await format(tableText, {parser: 'markdown'}))
+  const tableText = codeBlock(
+    markdownTable(
+      ['ID', 'Locale', 'Downloads'],
+      sortedStats.map((stat) => [
+        stat.localeId,
+        stat.localeName,
+        stat.weeklyDownloads.toLocaleString(),
+      ]),
+    ),
+  )
 
   const blocks = [
     {
@@ -151,4 +153,18 @@ async function fetchWeeklyStats(packageName: string): Promise<NpmStats> {
 
 function codeBlock(text: string): string {
   return `\`\`\`\n${text.trimEnd()}\n\`\`\``
+}
+
+function markdownTable(header: string[], rows: string[][]): string {
+  const widths = header.map((cell, column) =>
+    Math.max(cell.length, ...rows.map((row) => row[column]?.length ?? 0)),
+  )
+  const formatRow = (cells: string[]) =>
+    `| ${cells.map((cell, column) => cell.padEnd(widths[column] ?? 0)).join(' | ')} |`
+
+  return [
+    formatRow(header),
+    `| ${widths.map((width) => '-'.repeat(Math.max(width, 2))).join(' | ')} |`,
+    ...rows.map(formatRow),
+  ].join('\n')
 }

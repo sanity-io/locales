@@ -125,8 +125,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.select': 'เลือก',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error':
-    'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
+  'asset-source.dialog.insert-asset-error': 'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
   /** Toast title shown when the list of assets failed to load */
   'asset-source.dialog.load-error': 'ไม่สามารถโหลดสินทรัพย์ได้',
   /** Select asset dialog load more items */
@@ -172,8 +171,7 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
   'asset-source.usage-list.documents-using-image_named_zero':
     'ไม่มีเอกสารใดกำลังใช้รูปภาพ <code>{{filename}}</code>',
-  'asset-source.usage-list.documents-using-image_unnamed_other':
-    '{{count}} เอกสารกำลังใช้รูปภาพนี้',
+  'asset-source.usage-list.documents-using-image_unnamed_other': '{{count}} เอกสารกำลังใช้รูปภาพนี้',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero': 'ไม่มีเอกสารใดกำลังใช้รูปภาพนี้',
 
@@ -204,8 +202,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'อัปโหลดไปยัง Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'ใช้ไฟล์ที่มีอยู่ในห้องสมุดแล้ว',
+  'asset-sources.media-library.warning.file-already-exist.description': 'ใช้ไฟล์ที่มีอยู่ในห้องสมุดแล้ว',
   'asset-sources.media-library.warning.file-already-exist.title': "ไฟล์: '{{filename}}' มีอยู่แล้ว",
 
   /** Label when a release has been deleted by a different user */
@@ -354,8 +351,7 @@ export default removeUndefinedLocaleResources({
   /** Portable Text diff: An annotation was left unchanged */
   'changes.portable-text.annotation_unchanged': 'การอ้างอิงไม่เปลี่ยนแปลง',
   /** Portable Text diff: A block changed from one style to another (eg `normal` to `h1` or similar) */
-  'changes.portable-text.block-style-changed':
-    'เปลี่ยนสไตล์บล็อกจาก "{{fromStyle}}" เป็น "{{toStyle}}"',
+  'changes.portable-text.block-style-changed': 'เปลี่ยนสไตล์บล็อกจาก "{{fromStyle}}" เป็น "{{toStyle}}"',
   /** Portable Text diff: Change formatting of text (setting/unsetting marks, eg bold/italic etc) */
   'changes.portable-text.changed-formatting': 'เปลี่ยนการจัดรูปแบบ',
   /** Portable Text diff: An empty inline object is part of a change */
@@ -383,8 +379,7 @@ export default removeUndefinedLocaleResources({
   /** Portable Text diff: Annotation has an unknown schema type */
   'changes.portable-text.unknown-annotation-schema-type': 'ประเภทสคีมาที่ไม่รู้จัก',
   /** Portable Text diff: Inline object has an unknown schema type */
-  'changes.portable-text.unknown-inline-object-schema-type':
-    'ประเภทสคีมาของออบเจ็กต์อินไลน์ที่ไม่รู้จัก',
+  'changes.portable-text.unknown-inline-object-schema-type': 'ประเภทสคีมาของออบเจ็กต์อินไลน์ที่ไม่รู้จัก',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'ถูกลบ',
   /** Same Revision Selected description in the Review Changes pane */
@@ -395,8 +390,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the Review Changes pane */
   'changes.title': 'ตรวจสอบการเปลี่ยนแปลง',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
-  'changes.unknown-schema-field.description':
-    'ฟิลด์นี้ไม่ได้ถูกกำหนดไว้ในสคีมา ค่าต่างๆ จะแสดงในรูปแบบ JSON',
+  'changes.unknown-schema-field.description': 'ฟิลด์นี้ไม่ได้ถูกกำหนดไว้ในสคีมา ค่าต่างๆ จะแสดงในรูปแบบ JSON',
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'ร่าง',
 
@@ -594,8 +588,7 @@ export default removeUndefinedLocaleResources({
   /** Developer info */
   'form.error.missing-keys-alert.details.title': 'ข้อมูลสำหรับนักพัฒนา',
   /** Some items in the list are missing their keys. This must be fixed in order to edit the list. */
-  'form.error.missing-keys-alert.summary':
-    'บางรายการในรายการนี้ขาดคีย์ ต้องแก้ไขเพื่อที่จะแก้ไขรายการ',
+  'form.error.missing-keys-alert.summary': 'บางรายการในรายการนี้ขาดคีย์ ต้องแก้ไขเพื่อที่จะแก้ไขรายการ',
   /** Missing keys */
   'form.error.missing-keys-alert.title': 'คีย์ที่ขาดหายไป',
   /** This usually happens when items are created using an API client, or when a custom input component has added invalid data to the list. */
@@ -606,8 +599,7 @@ export default removeUndefinedLocaleResources({
   /**  Remove non-object values */
   'form.error.mixed-array-alert.remove-button.text': 'ลบค่าที่ไม่ใช่ออบเจ็กต์',
   /** Some items in this list are not objects. This must be fixed in order to edit the list. */
-  'form.error.mixed-array-alert.summary':
-    'บางรายการในรายการนี้ไม่ใช่ออบเจ็กต์ ต้องแก้ไขเพื่อที่จะแก้ไขรายการ',
+  'form.error.mixed-array-alert.summary': 'บางรายการในรายการนี้ไม่ใช่ออบเจ็กต์ ต้องแก้ไขเพื่อที่จะแก้ไขรายการ',
   /** Invalid list values */
   'form.error.mixed-array-alert.title': 'ค่าในรายการไม่ถูกต้อง',
   /** Error text shown when form is unable to find an array item at a given indexed path */
@@ -803,8 +795,7 @@ export default removeUndefinedLocaleResources({
   /** `{{count}}` files can't be uploaded here */
   'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_other':
     '{{count}} ไฟล์ไม่สามารถอัปโหลดที่นี่',
-  'inputs.files.common.placeholder.cannot-upload-some-files_other':
-    'ไม่สามารถอัปโหลด {{count}} ไฟล์',
+  'inputs.files.common.placeholder.cannot-upload-some-files_other': 'ไม่สามารถอัปโหลด {{count}} ไฟล์',
   /** Drag or paste type here */
   'inputs.files.common.placeholder.drag-or-paste-to-upload_file': 'ลากหรือวางไฟล์ที่นี่',
   /** Drag or paste image here */
@@ -841,8 +832,7 @@ export default removeUndefinedLocaleResources({
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'ฟิลด์นี้เป็นแบบอ่านอย่างเดียว',
   /** Image could not be loaded due to possible access restrictions */
-  'inputs.image.error.possible-access-restriction':
-    'ไม่สามารถโหลดภาพได้ อาจเป็นเพราะข้อจำกัดในการเข้าถึง',
+  'inputs.image.error.possible-access-restriction': 'ไม่สามารถโหลดภาพได้ อาจเป็นเพราะข้อจำกัดในการเข้าถึง',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'ไม่รู้จักประเภทสมาชิก: {{kind}}',
   /** Edit hotspot and crop */
@@ -863,8 +853,7 @@ export default removeUndefinedLocaleResources({
   /** Upload failed */
   'inputs.image.upload-error.title': 'อัปโหลดไม่สำเร็จ',
   /** Adjust the rectangle to crop image. Adjust the circle to specify the area that should always be visible. */
-  'inputs.imagetool.description':
-    'ปรับสี่เหลี่ยมเพื่อตัดภาพ ปรับวงกลมเพื่อระบุพื้นที่ที่ควรจะแสดงเสมอ',
+  'inputs.imagetool.description': 'ปรับสี่เหลี่ยมเพื่อตัดภาพ ปรับวงกลมเพื่อระบุพื้นที่ที่ควรจะแสดงเสมอ',
   /** Error: `{{errorMessage}}` */
   'inputs.imagetool.load-error': 'ข้อผิดพลาด: {{errorMessage}}',
   /** Hotspot & Crop */
@@ -875,15 +864,13 @@ export default removeUndefinedLocaleResources({
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': 'ดูข้อมูลนักพัฒนา',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
-  'inputs.imagetool.vector-warning.title':
-    'คำเตือน: Hotspot และ crop อาจไม่ถูกใช้กับรูปภาพนี้ในที่ที่แสดง.',
+  'inputs.imagetool.vector-warning.title': 'คำเตือน: Hotspot และ crop อาจไม่ถูกใช้กับรูปภาพนี้ในที่ที่แสดง.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'แปลงเป็น <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'ค่าปัจจุบัน (<code>{{actualType}}</code>)',
   /** The property value is stored as a value type that does not match the expected type. */
-  'inputs.invalid-value.description':
-    'ค่าของคุณสมบัตินี้ถูกเก็บเป็นประเภทค่าที่ไม่ตรงกับประเภทที่คาดหวัง',
+  'inputs.invalid-value.description': 'ค่าของคุณสมบัตินี้ถูกเก็บเป็นประเภทค่าที่ไม่ตรงกับประเภทที่คาดหวัง',
   /** The value of this property must be of type <code>`{{validType}}`</code> according to the schema. */
   'inputs.invalid-value.details.description':
     'ค่าของคุณสมบัตินี้ต้องเป็นประเภท <code>{{validType}}</code> ตามสคีมา',
@@ -917,8 +904,7 @@ export default removeUndefinedLocaleResources({
     'ไม่สามารถโหลดตัวอย่างสำหรับการอ้างอิง "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'ลบฟิลด์',
-  'inputs.object.unknown-fields.warning.description_other':
-    'พบฟิลด์ที่ไม่ได้กำหนดไว้ในสคีมา {{count}} ฟิลด์',
+  'inputs.object.unknown-fields.warning.description_other': 'พบฟิลด์ที่ไม่ได้กำหนดไว้ในสคีมา {{count}} ฟิลด์',
   'inputs.object.unknown-fields.warning.details.description_other':
     'ฟิลด์เหล่านี้ไม่ได้ถูกกำหนดไว้ในสคีมาของเอกสาร ซึ่งอาจหมายความว่าการกำหนดฟิลด์ได้ถูกลบออก หรือว่ามีคนอื่นเพิ่มพวกมันเข้าไปในโปรเจคส่วนตัวของตนเองและยังไม่ได้ทำการปรับปรุงการเปลี่ยนแปลงเหล่านั้น',
   /** Developer info */
@@ -943,8 +929,7 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'คลิกเพื่อเปิดใช้งาน',
   /** Label for activate on focus with context of click and focused */
-  'inputs.portable-text.activate-on-focus-message_click-focused':
-    'คลิกหรือกดปุ่ม space เพื่อเปิดใช้งาน',
+  'inputs.portable-text.activate-on-focus-message_click-focused': 'คลิกหรือกดปุ่ม space เพื่อเปิดใช้งาน',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'แตะเพื่อเปิดใช้งาน',
   /** Aria label for the annotation object */
@@ -1193,11 +1178,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.incomplete-reference.strengthen-action-description':
     '<strong>{{referencedDocument}}</strong> ได้รับการเผยแพร่และการอ้างอิงนี้ควรจะถูกเปลี่ยนเป็นการอ้างอิงที่แข็งแกร่ง',
   /** Title for alert shown when a reference in a live-edit document points to a document that exists and has been published, but the reference is still marked as weak */
-  'inputs.reference.incomplete-reference.strengthen-action-title':
-    'เปลี่ยนเป็นการอ้างอิงที่แข็งแกร่ง',
+  'inputs.reference.incomplete-reference.strengthen-action-title': 'เปลี่ยนเป็นการอ้างอิงที่แข็งแกร่ง',
   /** Label for button that triggers the action that strengthen a reference */
-  'inputs.reference.incomplete-reference.strengthen-button-label':
-    'เปลี่ยนเป็นการอ้างอิงที่แข็งแกร่ง',
+  'inputs.reference.incomplete-reference.strengthen-button-label': 'เปลี่ยนเป็นการอ้างอิงที่แข็งแกร่ง',
   /** Label for button that triggers a retry attempt for reference metadata  */
   'inputs.reference.metadata-error.retry-button-label': 'ลองใหม่',
   /** Title for alert shown when reference metadata fails to be loaded */
@@ -1207,8 +1190,7 @@ export default removeUndefinedLocaleResources({
   /** Text for tooltip showing when a document was edited, using relative time (eg "how long ago was it edited?") */
   'inputs.reference.preview.edited-at-time': 'แก้ไข <RelativeTime/>',
   /** Accessibility label for icon indicating that document does _not_ have any unpublished changes */
-  'inputs.reference.preview.has-no-unpublished-changes-aria-label':
-    'ไม่มีการแก้ไขที่ยังไม่ได้เผยแพร่',
+  'inputs.reference.preview.has-no-unpublished-changes-aria-label': 'ไม่มีการแก้ไขที่ยังไม่ได้เผยแพร่',
   /** Accessibility label for icon indicating that document has unpublished changes */
   'inputs.reference.preview.has-unpublished-changes-aria-label': 'แก้ไขแล้ว',
   /** Accessibility label for icon indicating that document does _not_ have a published version */
@@ -1256,8 +1238,7 @@ export default removeUndefinedLocaleResources({
   /** Loading message for when the input is actively generating a slug */
   'inputs.slug.action.generating': 'กำลังสร้าง…',
   /** Error message for when the source to generate a slug from is missing */
-  'inputs.slug.error.missing-source':
-    'ไม่มีแหล่งที่มา ตรวจสอบแหล่งที่มาในประเภท {{schemaType}} ในสคีมา',
+  'inputs.slug.error.missing-source': 'ไม่มีแหล่งที่มา ตรวจสอบแหล่งที่มาในประเภท {{schemaType}} ในสคีมา',
   /** Placeholder for an empty tag input */
   'inputs.tags.placeholder': 'ใส่แท็กและกด ENTER…',
   /** Placeholder for an empty tag input on touch devices */
@@ -1283,8 +1264,7 @@ export default removeUndefinedLocaleResources({
   'inputs.video.select-dialog.title': 'เลือกวิดีโอสำหรับ "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
-  'insufficient-permissions-message.not-authorized-explanation':
-    'คุณไม่มีสิทธิ์เข้าถึงคุณสมบัตินี้',
+  'insufficient-permissions-message.not-authorized-explanation': 'คุณไม่มีสิทธิ์เข้าถึงคุณสมบัตินี้',
   /** The explanation when unable to create any document at all */
   'insufficient-permissions-message.not-authorized-explanation_create-any-document':
     'คุณไม่มีสิทธิ์สร้างเอกสาร',
@@ -1470,8 +1450,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'สร้างเมื่อ {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
-  'release.chip.tooltip.draft-disabled.live-edit':
-    'เอกสารนี้อยู่ในโหมดแก้ไขสด ฉบับร่างถูกปิดใช้งาน',
+  'release.chip.tooltip.draft-disabled.live-edit': 'เอกสารนี้อยู่ในโหมดแก้ไขสด ฉบับร่างถูกปิดใช้งาน',
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': 'แก้ไขเมื่อ {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
@@ -1529,15 +1508,13 @@ export default removeUndefinedLocaleResources({
   /** Field label for the release title in the edit release dialog */
   'release.dialog.edit.title-label': 'ชื่อเรื่อง',
   /** Body text for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.body':
-    'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ร่างที่กำหนดการไว้ทันที?',
+  'release.dialog.publish-scheduled-draft.body': 'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ร่างที่กำหนดการไว้ทันที?',
   /** Confirm button text for running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.confirm': 'ใช่, ทำตอนนี้',
   /** Header for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.header': 'เผยแพร่ร่างทันที',
   /** Label for description in tooltip to explain release types */
-  'release.dialog.tooltip.description':
-    'สิ่งนี้ทำให้สามารถแสดงว่าเอกสารมีความขัดแย้งกันเมื่อทำงานกับหลายเวอร์ชัน',
+  'release.dialog.tooltip.description': 'สิ่งนี้ทำให้สามารถแสดงว่าเอกสารมีความขัดแย้งกันเมื่อทำงานกับหลายเวอร์ชัน',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note':
     'หมายเหตุ: คุณสามารถเปลี่ยนเวลาการปล่อยและตั้งเวลาที่แน่นอนสำหรับการเผยแพร่ตามกำหนดเวลาในภายหลัง',
@@ -1564,8 +1541,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'การปล่อยที่ไม่มีชื่อ',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning':
-    'กำหนดการเผยแพร่นี้สำหรับเวลาและวันในอนาคต',
+  'release.schedule-dialog.publish-date-in-past-warning': 'กำหนดการเผยแพร่นี้สำหรับเวลาและวันในอนาคต',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'กำหนดการเผยแพร่ใน',
   /** The toast description that will be shown when the user has a release perspective which is now archived
@@ -1624,8 +1600,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
-  'release.tooltip.locked':
-    'การปล่อยนี้ได้ถูกกำหนดเวลาไว้แล้ว ยกเลิกการกำหนดเวลาเพื่อเพิ่มเอกสารเพิ่มเติม',
+  'release.tooltip.locked': 'การปล่อยนี้ได้ถูกกำหนดเวลาไว้แล้ว ยกเลิกการกำหนดเวลาเพื่อเพิ่มเอกสารเพิ่มเติม',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'ทันที',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
@@ -1711,8 +1686,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when no document types matching the filter are found */
   'search.document-types-no-matches-found': 'ไม่พบการจับคู่สำหรับ {{filter}}',
   /** Description for error when a filter cannot be displayed, describes that you should check the schema */
-  'search.error.display-filter-description':
-    'นี่อาจบ่งบอกถึงตัวเลือกที่ไม่ถูกต้องที่กำหนดไว้ในสคีมาของคุณ',
+  'search.error.display-filter-description': 'นี่อาจบ่งบอกถึงตัวเลือกที่ไม่ถูกต้องที่กำหนดไว้ในสคีมาของคุณ',
   /** Title for error when a filter cannot be displayed (mainly a developer-oriented error) */
   'search.error.display-filter-title': 'เกิดข้อผิดพลาดขณะแสดงตัวกรองนี้',
   /** Description for error when no valid asset source is found, describes that you should check the the current studio config */
@@ -1892,13 +1866,11 @@ export default removeUndefinedLocaleResources({
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>ไม่ใช่</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'ไม่ใช่',
-  'search.operator.date-time-range.description':
-    '<Field/> <Operator>อยู่ระหว่าง</Operator> <Value/>',
+  'search.operator.date-time-range.description': '<Field/> <Operator>อยู่ระหว่าง</Operator> <Value/>',
   'search.operator.date-time-range.name': 'อยู่ระหว่าง',
   'search.operator.defined.description': '<Field/> <Operator>คือ</Operator> <Value>ไม่ว่าง</Value>',
   'search.operator.defined.name': 'ไม่ว่าง',
-  'search.operator.not-defined.description':
-    '<Field/> <Operator>คือ</Operator> <Value>ว่าง</Value>',
+  'search.operator.not-defined.description': '<Field/> <Operator>คือ</Operator> <Value>ว่าง</Value>',
   'search.operator.not-defined.name': 'ว่าง',
   'search.operator.number-equal.description':
     '<Field/> <Operator>คือ</Operator> <Value>{{value}}</Value>',
@@ -2002,16 +1974,12 @@ export default removeUndefinedLocaleResources({
 
   'time-zone.action.search-for-timezone-placeholder': 'ค้นหาเมืองหรือเขตเวลา',
   'time-zone.action.select-local-time-zone': 'เลือกเขตเวลาท้องถิ่น',
-  'time-zone.dialog-info.content-releases':
-    'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในการปล่อยเนื้อหา',
-  'time-zone.dialog-info.input':
-    'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่เฉพาะสำหรับการป้อนข้อมูลนี้ในเอกสารนี้',
-  'time-zone.dialog-info.scheduled-publishing':
-    'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในกำหนดการ',
+  'time-zone.dialog-info.content-releases': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในการปล่อยเนื้อหา',
+  'time-zone.dialog-info.input': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่เฉพาะสำหรับการป้อนข้อมูลนี้ในเอกสารนี้',
+  'time-zone.dialog-info.scheduled-publishing': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในกำหนดการ',
   'time-zone.local-time': 'เวลาท้องถิ่น',
   'time-zone.time-zone': 'เขตเวลา',
-  'time-zone.time-zone-tooltip-content-releases':
-    'แสดงการปล่อยใน {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-content-releases': 'แสดงการปล่อยใน {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-input':
     'แสดง <em>{{title}}</em> ใน {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':
@@ -2020,8 +1988,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'การเปลี่ยนแปลงโดย',
   /** Description for error when the timeline for the given document can't be loaded */
-  'timeline.error.load-document-changes-description':
-    'การทำธุรกรรมประวัติของเอกสารไม่ได้รับผลกระทบ',
+  'timeline.error.load-document-changes-description': 'การทำธุรกรรมประวัติของเอกสารไม่ได้รับผลกระทบ',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'เกิดข้อผิดพลาดขณะเรียกดูการเปลี่ยนแปลงของเอกสาร',
   /** Description for error when the timeline for the given document can't be loaded */

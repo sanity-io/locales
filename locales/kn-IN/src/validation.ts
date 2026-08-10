@@ -67,8 +67,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'ಪರಿಶೀಲನೆ',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message':
-    'ದಾಖಲೆಯು ಅಪ್ರಕಟಿಸಲು ಹೋಗುತ್ತಿದೆ, ಯಾವುದೇ ಮಾನ್ಯತಾ ದೋಷಗಳು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ',
+  'panel.unpublish-message': 'ದಾಖಲೆಯು ಅಪ್ರಕಟಿಸಲು ಹೋಗುತ್ತಿದೆ, ಯಾವುದೇ ಮಾನ್ಯತಾ ದೋಷಗಳು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'ಸ್ಲಗ್ ಗೆ ಒಂದು ಮೌಲ್ಯವಿರಬೇಕು',

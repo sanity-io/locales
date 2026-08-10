@@ -91,8 +91,7 @@ export default removeUndefinedLocaleResources({
   /** Text describing the current status of the preview frame */
   'preview-frame.status_reloading': 'กำลังรีเฟรช',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_timeout':
-    'ไม่สามารถเชื่อมต่อได้ โปรดตรวจสอบคอนโซลของเบราว์เซอร์เพื่อดูข้อมูลเพิ่มเติม',
+  'preview-frame.status_timeout': 'ไม่สามารถเชื่อมต่อได้ โปรดตรวจสอบคอนโซลของเบราว์เซอร์เพื่อดูข้อมูลเพิ่มเติม',
   /** The `aria-label` for the button that switches viewport size */
   'preview-frame.viewport-button.aria-label': 'สลับขนาด viewport',
   /** The viewport size button tooltip text when switching to a full width viewport */

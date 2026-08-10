@@ -4,20 +4,20 @@
   "private": true,
   "description": "Locales for the Sanity Studio",
   "keywords": [
-    "locale",
     "i18n",
+    "locale",
     "sanity"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
     "url": "https://github.com/sanity-io/locales/issues"
   },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git"
   },
-  "license": "MIT",
-  "author": "Sanity.io <hello@sanity.io>",
   "scripts": {
     "autotranslate": "tsx src/cli/autoTranslate",
     "build": "turbo run build",
@@ -33,7 +33,7 @@
     "ci:nudge-stale": "tsx src/cli/nudgeStale",
     "clean": "rimraf apps/studio/dist locales/*/dist",
     "dev": "SANITY_STUDIO_DEBUG_I18N=log turbo run dev",
-    "format": "prettier --write .",
+    "format": "oxfmt",
     "list:maintainers": "tsx src/cli/printMaintainers",
     "reconcile": "tsx src/cli/reconcile",
     "test": "tsx test/testLocales",
@@ -54,10 +54,9 @@
     "js-yaml": "^4.1.1",
     "json5": "^2.2.3",
     "outdent": "^0.8.0",
+    "oxfmt": "^0.62.0",
     "p-map": "^4.0.0",
     "package-up": "^5.0.0",
-    "prettier": "^3.8.3",
-    "prettier-plugin-packagejson": "^2.5.22",
     "pretty-ms": "^7.0.1",
     "sanity": "^6.9.1",
     "tsx": "^4.21.0",
@@ -78,8 +77,8 @@
     "turbo": "^2.9.12",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.29.2",
   "engines": {
     "node": ">=24.18.0"
-  }
+  },
+  "packageManager": "pnpm@10.29.2"
 }

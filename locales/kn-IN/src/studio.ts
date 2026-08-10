@@ -51,8 +51,7 @@ export default removeUndefinedLocaleResources({
   /** "Upgrade"-button text */
   'about-dialog.version-info.update-button.text': 'ನವೀಕರಿಸಿ',
   /** "Upgrade"-button tooltip text */
-  'about-dialog.version-info.update-button.tooltip':
-    'Sanity Studio ಅನ್ನು ಹೇಗೆ ನವೀಕರಿಸುವುದು ತಿಳಿಯಿರಿ',
+  'about-dialog.version-info.update-button.tooltip': 'Sanity Studio ಅನ್ನು ಹೇಗೆ ನವೀಕರಿಸುವುದು ತಿಳಿಯಿರಿ',
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'ಬಳಕೆದಾರ ಏಜೆಂಟ್',
   /** "View on GitHub" link from version info dialog */
@@ -126,8 +125,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.select': 'ಆರಿಸಿ',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
-  'asset-source.dialog.insert-asset-error':
-    'ಆಸ್ತಿ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
+  'asset-source.dialog.insert-asset-error': 'ಆಸ್ತಿ ಸೇರಿಸುವಲ್ಲಿ ದೋಷ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
   /** Toast title shown when the list of assets failed to load */
   'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
   /** Select asset dialog load more items */
@@ -169,8 +167,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-file_named_zero':
     'ಯಾವುದೇ ದಾಖಲೆಗಳು ಫೈಲ್ <code>{{filename}}</code> ಬಳಸುತ್ತಿಲ್ಲ',
   'asset-source.usage-list.documents-using-file_unnamed_one': 'ಒಂದು ದಾಖಲೆಯು ಈ ಫೈಲ್ ಬಳಸುತ್ತಿದೆ',
-  'asset-source.usage-list.documents-using-file_unnamed_other':
-    '{{count}} ದಾಖಲೆಗಳು ಈ ಫೈಲ್ ಬಳಸುತ್ತಿವೆ',
+  'asset-source.usage-list.documents-using-file_unnamed_other': '{{count}} ದಾಖಲೆಗಳು ಈ ಫೈಲ್ ಬಳಸುತ್ತಿವೆ',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *unnamed* file **/
   'asset-source.usage-list.documents-using-file_unnamed_zero': 'ಯಾವುದೇ ದಾಖಲೆಗಳು ಈ ಫೈಲ್ ಬಳಸುತ್ತಿಲ್ಲ',
   'asset-source.usage-list.documents-using-image_named_one':
@@ -180,13 +177,11 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
   'asset-source.usage-list.documents-using-image_named_zero':
     'ಯಾವುದೇ ದಾಖಲೆಗಳು ಚಿತ್ರ <code>{{filename}}</code> ಬಳಸುತ್ತಿಲ್ಲ',
-  'asset-source.usage-list.documents-using-image_unnamed_one':
-    'ಒಂದು ದಾಖಲೆಯು ಈ ಚಿತ್ರವನ್ನು ಬಳಸುತ್ತಿದೆ',
+  'asset-source.usage-list.documents-using-image_unnamed_one': 'ಒಂದು ದಾಖಲೆಯು ಈ ಚಿತ್ರವನ್ನು ಬಳಸುತ್ತಿದೆ',
   'asset-source.usage-list.documents-using-image_unnamed_other':
     '{{count}} ದಾಖಲೆಗಳು ಈ ಚಿತ್ರವನ್ನು ಬಳಸುತ್ತಿವೆ',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
-  'asset-source.usage-list.documents-using-image_unnamed_zero':
-    'ಯಾವುದೇ ದಾಖಲೆಗಳು ಈ ಚಿತ್ರವನ್ನು ಬಳಸುತ್ತಿಲ್ಲ',
+  'asset-source.usage-list.documents-using-image_unnamed_zero': 'ಯಾವುದೇ ದಾಖಲೆಗಳು ಈ ಚಿತ್ರವನ್ನು ಬಳಸುತ್ತಿಲ್ಲ',
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': 'ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಕನ್ಸೋಲ್ ನೋಡಿ.',
@@ -477,8 +472,7 @@ export default removeUndefinedLocaleResources({
   /** Label for divergence in a single node */
   'divergence.unresolved-divergence_one': '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ ಪರಿಹರಿಸದ ಬದಲಾವಣೆ',
   /** Label for divergences in multiple nodes */
-  'divergence.unresolved-divergence_other':
-    '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ {{count}} ಪರಿಹರಿಸದ ಬದಲಾವಣೆಗಳು',
+  'divergence.unresolved-divergence_other': '{{versionName}} ಆವೃತ್ತಿಯಲ್ಲಿ {{count}} ಪರಿಹರಿಸದ ಬದಲಾವಣೆಗಳು',
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
@@ -833,8 +827,7 @@ export default removeUndefinedLocaleResources({
   /** Private access policy badge label */
   'inputs.files.common.access-policy.private.label': 'ಖಾಸಗಿ ಆಸ್ತಿ',
   /** Private access policy badge tooltip */
-  'inputs.files.common.access-policy.private.tooltip':
-    'CDN ಪ್ರವೇಶವು ಸೈನ್ ಮಾಡಲಾದ URLಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
+  'inputs.files.common.access-policy.private.tooltip': 'CDN ಪ್ರವೇಶವು ಸೈನ್ ಮಾಡಲಾದ URLಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'ಕ್ಷೇತ್ರ ಖಾಲಿಮಾಡಿ',
   /** Copy URL */
@@ -842,8 +835,7 @@ export default removeUndefinedLocaleResources({
   /** Download */
   'inputs.files.common.actions-menu.download.label': 'ಡೌನ್‌ಲೋಡ್',
   /** The URL is copied to the clipboard */
-  'inputs.files.common.actions-menu.notification.url-copied':
-    'URL ನನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
+  'inputs.files.common.actions-menu.notification.url-copied': 'URL ನನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ',
   /** Open in source */
   'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}} ನಲ್ಲಿ ತೆರೆಯಿರಿ',
   /** Replace */
@@ -855,8 +847,7 @@ export default removeUndefinedLocaleResources({
   /** Drop to upload `{{count}}` file */
   'inputs.files.common.drop-message.drop-to-upload-multi_one': '{{count}} ಫೈಲ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಬಿಡಿ',
   /** Drop to upload `{{count}}` files */
-  'inputs.files.common.drop-message.drop-to-upload-multi_other':
-    '{{count}} ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಬಿಡಿ',
+  'inputs.files.common.drop-message.drop-to-upload-multi_other': '{{count}} ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಬಿಡಿ',
   /** Can't upload this file here */
   'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_one':
     'ಈ ಫೈಲ್ ಇಲ್ಲಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
@@ -887,8 +878,7 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.select-asset-source-upload-destination':
     'ಫೈಲ್‌ಗಳನ್ನು ಇಲ್ಲಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ:',
   /** Can't upload files here */
-  'inputs.files.common.placeholder.upload-not-supported':
-    'ಇಲ್ಲಿ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
+  'inputs.files.common.placeholder.upload-not-supported': 'ಇಲ್ಲಿ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Clear upload */
   'inputs.files.common.stale-upload-warning.clear': 'ಅಪ್‌ಲೋಡ್ ಅಳಿಸಿ',
   /** An upload has made no progress for at least `{{staleThresholdMinutes}}` minutes and likely got interrupted. You can safely clear the incomplete upload and try uploading again. */
@@ -989,8 +979,7 @@ export default removeUndefinedLocaleResources({
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'ಕ್ಷೇತ್ರವನ್ನು ತೆಗೆದುಹಾಕಿ',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
-  'inputs.object.unknown-fields.warning.description_one':
-    'ಸ್ಕೀಮಾದಲ್ಲಿ ನಿರ್ವಚಿಸದ ಕ್ಷೇತ್ರವೊಂದನ್ನು ಕಂಡುಕೊಂಡಿದೆ.',
+  'inputs.object.unknown-fields.warning.description_one': 'ಸ್ಕೀಮಾದಲ್ಲಿ ನಿರ್ವಚಿಸದ ಕ್ಷೇತ್ರವೊಂದನ್ನು ಕಂಡುಕೊಂಡಿದೆ.',
   'inputs.object.unknown-fields.warning.description_other':
     'ಸ್ಕೀಮಾದಲ್ಲಿ ನಿರ್ವಚಿಸದ {{count}} ಕ್ಷೇತ್ರಗಳನ್ನು ಕಂಡುಕೊಂಡಿದೆ.',
   /** Detailed description of unknown field warning */
@@ -1008,8 +997,7 @@ export default removeUndefinedLocaleResources({
   /** Aria label for action to edit an existing annotation */
   'inputs.portable-text.action.edit-annotation-aria-label': 'ಟಿಪ್ಪಣಿಯನ್ನು ಸಂಪಾದಿಸಿ',
   /** Expand the editor to give more editing space */
-  'inputs.portable-text.action.expand-editor':
-    'ಹೆಚ್ಚು ಸಂಪಾದನಾ ಜಾಗವನ್ನು ನೀಡಲು ಸಂಪಾದಕವನ್ನು ವಿಸ್ತರಿಸಿ',
+  'inputs.portable-text.action.expand-editor': 'ಹೆಚ್ಚು ಸಂಪಾದನಾ ಜಾಗವನ್ನು ನೀಡಲು ಸಂಪಾದಕವನ್ನು ವಿಸ್ತರಿಸಿ',
   /** Label label for action to insert a block of a given type (`{{typeName}}`) */
   'inputs.portable-text.action.insert-block': 'ಸೇರಿಸಿ {{typeName}}',
   /** Accessibility label for action to insert a block of a given type (`{{typeName}}`) */
@@ -1023,8 +1011,7 @@ export default removeUndefinedLocaleResources({
   /** Label for activate on focus with context of click and not focused */
   'inputs.portable-text.activate-on-focus-message_click': 'ಸಕ್ರಿಯಗೊಳಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',
   /** Label for activate on focus with context of click and focused */
-  'inputs.portable-text.activate-on-focus-message_click-focused':
-    'ಸಕ್ರಿಯಗೊಳಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ ಅಥವಾ ಸ್ಪೇಸ್ ಒತ್ತಿ',
+  'inputs.portable-text.activate-on-focus-message_click-focused': 'ಸಕ್ರಿಯಗೊಳಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ ಅಥವಾ ಸ್ಪೇಸ್ ಒತ್ತಿ',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'ಸಕ್ರಿಯಗೊಳಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ',
   /** Aria label for the annotation object */
@@ -1120,8 +1107,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.missing-key.description':
     'ಸೂಚ್ಯಂಕ <code>{{index}}</code> ನಲ್ಲಿರುವ ಬ್ಲಾಕ್ ಅಗತ್ಯವಾದ <code>_key</code> ಗುಣಧರ್ಮವನ್ನು ಕಾಣಿಸಿಲ್ಲ.',
   /** Action presented when the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
-  'inputs.portable-text.invalid-value.missing-or-invalid-children.action':
-    'ಬ್ಲಾಕ್ ಅನ್ನು ತೆಗೆದುಹಾಕಿ',
+  'inputs.portable-text.invalid-value.missing-or-invalid-children.action': 'ಬ್ಲಾಕ್ ಅನ್ನು ತೆಗೆದುಹಾಕಿ',
   /** Text explaining that the Portable Text field value is invalid, when child with key `{{key}}` has a missing or invalid `children` property */
   'inputs.portable-text.invalid-value.missing-or-invalid-children.description':
     'ಕೀ <code>{{key}}</code> ಹೊಂದಿರುವ ಪಠ್ಯ ಬ್ಲಾಕ್ ಅಸಮರ್ಪಕ ಅಥವಾ ಕಾಣೆಯಾದ `children` ಗುಣಧರ್ಮವನ್ನು ಹೊಂದಿದೆ.',
@@ -1151,8 +1137,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.not-an-object.description':
     'ಸೂಚಿಸುವ <code>{{index}}</code> ನಲ್ಲಿರುವ ಐಟಂ ಒಂದು ವಸ್ತುವಲ್ಲ,.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
-  'inputs.portable-text.invalid-value.orphaned-marks.action':
-    'ಅನುಮತಿಯಿಲ್ಲದ ಗುರುತುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ',
+  'inputs.portable-text.invalid-value.orphaned-marks.action': 'ಅನುಮತಿಯಿಲ್ಲದ ಗುರುತುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
   'inputs.portable-text.invalid-value.orphaned-marks.description':
     'ಕೀ <code>{{key}}</code> ಹೊಂದಿರುವ ಟೆಕ್ಸ್ಟ್ ಬ್ಲಾಕ್ ಗುರುತುಗಳನ್ನು <code>({{orphanedMarks, list}})</code> ಯೋಜನೆಯಿಂದ ಅನುಮತಿಯಿಲ್ಲದವುಗಳನ್ನು ಹೊಂದಿದೆ.',
@@ -1229,8 +1214,7 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.cross-dataset.feature-disabled-description':
     'ಈ ಫೀಚರ್ ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ. ಹೇಗೆ ಸಕ್ರಿಯಗೊಳಿಸುವುದು ಎಂದು <DocumentationLink>ದಾಖಲೆಗಳಲ್ಲಿ</DocumentationLink> ಓದಿ.',
   /** Title for a warning telling the user that the current project does not have the "cross dataset references" feature */
-  'inputs.reference.cross-dataset.feature-unavailable-title':
-    'ಲಭ್ಯವಿಲ್ಲದ ಫೀಚರ್: ಅಡ್ಡ ಡೇಟಾಸೆಟ್ ಉಲ್ಲೇಖ',
+  'inputs.reference.cross-dataset.feature-unavailable-title': 'ಲಭ್ಯವಿಲ್ಲದ ಫೀಚರ್: ಅಡ್ಡ ಡೇಟಾಸೆಟ್ ಉಲ್ಲೇಖ',
   /** The cross-dataset reference points to a document with an invalid type  */
   'inputs.reference.cross-dataset.invalid-type':
     'ಉಲ್ಲೇಖಿತ ದಾಖಲೆ ಅಮಾನ್ಯ ಪ್ರಕಾರದದ್ದು ({{typeName}}) <JsonValue/>',
@@ -1239,8 +1223,7 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the document is unavailable (for any possible reason) */
   'inputs.reference.error.document-unavailable-title': 'ದಾಖಲೆ ಲಭ್ಯವಿಲ್ಲ',
   /** Error title for when the referenced document failed to be loaded */
-  'inputs.reference.error.failed-to-load-document-title':
-    'ಉಲ್ಲೇಖಿತ ದಾಖಲೆಯನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
+  'inputs.reference.error.failed-to-load-document-title': 'ಉಲ್ಲೇಖಿತ ದಾಖಲೆಯನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
   /** Error title for when the reference search returned a document that is not an allowed type for the field */
   'inputs.reference.error.invalid-search-result-type-title':
     'ಹುಡುಕಾಟ ಒಂದು ಅಮಾನ್ಯ ಪ್ರಕಾರವನ್ನು ಹಿಂತಿರುಗಿಸಿದೆ ಈ ಉಲ್ಲೇಖಕ್ಕೆ: "{{returnedType}}"',
@@ -1337,8 +1320,7 @@ export default removeUndefinedLocaleResources({
   /** Loading message for when the input is actively generating a slug */
   'inputs.slug.action.generating': 'ರೂಪಿಸುತ್ತಿದೆ…',
   /** Error message for when the source to generate a slug from is missing */
-  'inputs.slug.error.missing-source':
-    'ಮೂಲ ಕಾಣೆಯಾಗಿದೆ. ಸ್ಕೀಮಾದಲ್ಲಿ {{schemaType}} ಮೇಲೆ ಮೂಲವನ್ನು ಪರಿಶೀಲಿಸಿ',
+  'inputs.slug.error.missing-source': 'ಮೂಲ ಕಾಣೆಯಾಗಿದೆ. ಸ್ಕೀಮಾದಲ್ಲಿ {{schemaType}} ಮೇಲೆ ಮೂಲವನ್ನು ಪರಿಶೀಲಿಸಿ',
   /** Placeholder for an empty tag input */
   'inputs.tags.placeholder': 'ಟ್ಯಾಗ್ ನಮೂದಿಸಿ ಮತ್ತು ENTER ಒತ್ತಿ…',
   /** Placeholder for an empty tag input on touch devices */
@@ -1346,16 +1328,14 @@ export default removeUndefinedLocaleResources({
   /** Convert to `{{targetType}}` */
   'inputs.untyped-value.convert-button.text': '{{targetType}} ಗೆ ಪರಿವರ್ತಿಸಿ',
   /** Encountered an object value without a <code>_type</code> property. */
-  'inputs.untyped-value.description':
-    '<code>_type</code> ಗುಣಲಕ್ಷಣವಿಲ್ಲದ ವಸ್ತು ಮೌಲ್ಯವನ್ನು ಎದುರಿಸಲಾಗಿದೆ.',
+  'inputs.untyped-value.description': '<code>_type</code> ಗುಣಲಕ್ಷಣವಿಲ್ಲದ ವಸ್ತು ಮೌಲ್ಯವನ್ನು ಎದುರಿಸಲಾಗಿದೆ.',
   /** Either remove the <code>name</code> property of the object declaration, or set <code>_type</code> property on items. */
   'inputs.untyped-value.details.description':
     'ವಸ್ತು ಘೋಷಣೆಯ <code>name</code> ಗುಣಲಕ್ಷಣವನ್ನು ತೆಗೆದುಹಾಕಿ, ಅಥವಾ ವಸ್ತುಗಳ ಮೇಲೆ <code>_type</code> ಗುಣಲಕ್ಷಣವನ್ನು ಹೊಂದಿಸಿ.',
   /** Current value (<code>object</code>): */
   'inputs.untyped-value.details.json-dump-prefix': 'ಪ್ರಸ್ತುತ ಮೌಲ್ಯ (<code>ವಸ್ತು</code>):',
   /** The following types are valid here according to schema: */
-  'inputs.untyped-value.details.multi-type-description':
-    'ಸ್ಕೀಮಾದ ಪ್ರಕಾರ ಇಲ್ಲಿ ಈ ಕೆಳಗಿನ ವಿಧಗಳು ಸರಿಯಾಗಿವೆ:',
+  'inputs.untyped-value.details.multi-type-description': 'ಸ್ಕೀಮಾದ ಪ್ರಕಾರ ಇಲ್ಲಿ ಈ ಕೆಳಗಿನ ವಿಧಗಳು ಸರಿಯಾಗಿವೆ:',
   /** Developer info */
   'inputs.untyped-value.details.title': 'ಡೆವಲಪರ್ ಮಾಹಿತಿ',
   /** Property value missing <code>_type</code> */
@@ -1366,8 +1346,7 @@ export default removeUndefinedLocaleResources({
   'inputs.video.select-dialog.title': '"{{targetTitle}}" ಗಾಗಿ ವೀಡಿಯೊ ಆಯ್ಕೆ ಮಾಡಿ',
 
   /** The fallback explanation if no context is provided */
-  'insufficient-permissions-message.not-authorized-explanation':
-    'ಈ ಸೌಲಭ್ಯಕ್ಕೆ ಪ್ರವೇಶಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
+  'insufficient-permissions-message.not-authorized-explanation': 'ಈ ಸೌಲಭ್ಯಕ್ಕೆ ಪ್ರವೇಶಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to create any document at all */
   'insufficient-permissions-message.not-authorized-explanation_create-any-document':
     'ದಾಖಲೆಯನ್ನು ರಚಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
@@ -1509,8 +1488,7 @@ export default removeUndefinedLocaleResources({
   'release.action.edit-schedule': 'ವೇಳಾಪಟ್ಟಿ ಸಂಪಾದಿಸು',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'ಹೊಸ ಬಿಡುಗಡೆ',
-  'release.action.new-release.limit-reached_other':
-    'ಈ ಕಾರ್ಯಾಲಯವು {{count}} ಬಿಡುಗಡೆಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
+  'release.action.new-release.limit-reached_other': 'ಈ ಕಾರ್ಯಾಲಯವು {{count}} ಬಿಡುಗಡೆಗಳಿಗೆ ಸೀಮಿತವಾಗಿದೆ',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'ಈ ಕ್ರಿಯೆಯನ್ನು ನಡೆಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** Action message for running a scheduled draft immediately */
@@ -1522,16 +1500,14 @@ export default removeUndefinedLocaleResources({
   'release.action.revert-unpublish-version.failure.title':
     'ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ಅಪ್ರಕಟಿಸಲು ಹೊಂದಿಸುವಿಕೆಯಿಂದ ಹಿಂತಿರುಗುವಿಕೆ ವಿಫಲವಾಗಿದೆ.',
   /** Action message description for when a version is reverted from being unpublished */
-  'release.action.revert-unpublish-version.success.description':
-    'ನೀವೀಗ ಈ ಆವೃತ್ತಿಯನ್ನು ಸಂಪಾದಿಸಬಹುದು.',
+  'release.action.revert-unpublish-version.success.description': 'ನೀವೀಗ ಈ ಆವೃತ್ತಿಯನ್ನು ಸಂಪಾದಿಸಬಹುದು.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
     'ಬಿಡುಗಡೆಯಾದ ಮೇಲೆ ಅಪ್ರಕಟಿಸಲು ಹೊಂದಿಸುವಿಕೆಯಿಂದ ಯಶಸ್ವಿಯಾಗಿ ಹಿಂತಿರುಗಲಾಗಿದೆ.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'ಪ್ರಕಟಣೆ ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ',
   /** Error message for when a version is set to be unpublished */
-  'release.action.unpublish-version.failure':
-    'ಬಿಡುಗಡೆಯಲ್ಲಿ ಅಪ್ರಕಟಿತವಾಗಿರುವ ಆವೃತ್ತಿಯನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ',
+  'release.action.unpublish-version.failure': 'ಬಿಡುಗಡೆಯಲ್ಲಿ ಅಪ್ರಕಟಿತವಾಗಿರುವ ಆವೃತ್ತಿಯನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
     'ಯಶಸ್ವಿಯಾಗಿ <strong>{{title}}</strong> ಅನ್ನು ಬಿಡುಗಡೆಯಲ್ಲಿ ಅಪ್ರಕಟಿತವಾಗಿರುವಂತೆ ಹೊಂದಿಸಲಾಗಿದೆ',
@@ -1560,8 +1536,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'ಸೃಷ್ಟಿಸಲಾಗಿದೆ {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
-  'release.chip.tooltip.draft-disabled.live-edit':
-    'ಈ ದಾಖಲೆಯು ಲೈವ್ ಎಡಿಟ್ ಮೋಡ್‌ನಲ್ಲಿದೆ, ಡ್ರಾಫ್ಟ್‌ಗಳು ಅಸಕ್ತಗೊಳಿಸಲಾಗಿದೆ',
+  'release.chip.tooltip.draft-disabled.live-edit': 'ಈ ದಾಖಲೆಯು ಲೈವ್ ಎಡಿಟ್ ಮೋಡ್‌ನಲ್ಲಿದೆ, ಡ್ರಾಫ್ಟ್‌ಗಳು ಅಸಕ್ತಗೊಳಿಸಲಾಗಿದೆ',
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': 'ಸಂಪಾದಿಸಲಾಗಿದೆ {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
@@ -1621,8 +1596,7 @@ export default removeUndefinedLocaleResources({
   /** Field label for the release title in the edit release dialog */
   'release.dialog.edit.title-label': undefined, // 'Title'
   /** Body text for the dialog confirming running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.body':
-    'ನೀವು ಈ ನಿಗದಿತ ಮುಸದ್ದುವನ್ನು ತಕ್ಷಣವೇ ಪ್ರಕಟಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
+  'release.dialog.publish-scheduled-draft.body': 'ನೀವು ಈ ನಿಗದಿತ ಮುಸದ್ದುವನ್ನು ತಕ್ಷಣವೇ ಪ್ರಕಟಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
   /** Confirm button text for running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.confirm': 'ಹೌದು, ಈಗ ಚಲಾಯಿಸು',
   /** Header for the dialog confirming running a scheduled draft immediately */
@@ -1656,8 +1630,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'ಶೀರ್ಷಿಕೆಯಿಲ್ಲದ ಬಿಡುಗಡೆ',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning':
-    'ಭವಿಷ್ಯದ ಸಮಯ ಮತ್ತು ದಿನಾಂಕಕ್ಕೆ ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ.',
+  'release.schedule-dialog.publish-date-in-past-warning': 'ಭವಿಷ್ಯದ ಸಮಯ ಮತ್ತು ದಿನಾಂಕಕ್ಕೆ ವೇಳಾಪಟ್ಟಿ ಮಾಡಿ.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'ಮೇಲೆ ಪ್ರಕಟಿಸು',
   /** The toast description that will be shown when the user has a release perspective which is now archived
@@ -1716,8 +1689,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'ಈ ದಾಖಲೆಯ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
-  'release.tooltip.locked':
-    'ಈ ಬಿಡುಗಡೆಯನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ. ಹೆಚ್ಚು ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸಲು ಅನಿಗದಿಪಡಿಸಿ.',
+  'release.tooltip.locked': 'ಈ ಬಿಡುಗಡೆಯನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ. ಹೆಚ್ಚು ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸಲು ಅನಿಗದಿಪಡಿಸಿ.',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'ಶೀಘ್ರದಲ್ಲೇ',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
@@ -1816,8 +1788,7 @@ export default removeUndefinedLocaleResources({
   /** Title for error when no valid asset sources found */
   'search.error.no-valid-asset-source-title': 'ಯಾವುದೇ ಮಾನ್ಯ ಆಸ್ತಿ ಮೂಲಗಳು ಕಂಡುಬಂದಿಲ್ಲ.',
   /** Helpful description for when search returned an error that we are not able to describe in detail */
-  'search.error.unspecified-error-help-description':
-    'ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ',
+  'search.error.unspecified-error-help-description': 'ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ',
   /** Title label for when search returned an error that we are not able to describe in detail */
   'search.error.unspecified-error-title': 'ಹುಡುಕಾಟದ ವೇಳೆ ಏನೋ ತಪ್ಪಾಗಿದೆ',
   /**
@@ -1894,8 +1865,7 @@ export default removeUndefinedLocaleResources({
   /** Label for instructions on how to use the search - displayed when no recent searches are available */
   'search.instructions': 'ನಿಮ್ಮ ಹುಡುಕಾಟವನ್ನು ಸೂಕ್ಷ್ಮಗೊಳಿಸಲು <ControlsIcon/> ಬಳಸಿ',
   /** Helpful description for when no search results are found */
-  'search.no-results-help-description':
-    'ಬೇರೆ ಕೀವರ್ಡ್ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಫಿಲ್ಟರ್‌ಗಳನ್ನು ಸರಿಹೊಂದಿಸಿ',
+  'search.no-results-help-description': 'ಬೇರೆ ಕೀವರ್ಡ್ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಫಿಲ್ಟರ್‌ಗಳನ್ನು ಸರಿಹೊಂದಿಸಿ',
   /** Title label for when no search results are found */
   'search.no-results-title': 'ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಸಿಗಲಿಲ್ಲ',
   /**
@@ -2026,11 +1996,9 @@ export default removeUndefinedLocaleResources({
   'search.operator.date-time-not-equal.name': 'ಅದು ಅಲ್ಲ',
   'search.operator.date-time-range.description': '<Field/> <Operator>ನಡುವೆ ಇದೆ</Operator> <Value/>',
   'search.operator.date-time-range.name': 'ನಡುವೆ ಇದೆ',
-  'search.operator.defined.description':
-    '<Field/> <Operator>ಅದು</Operator> <Value>ಖಾಲಿ ಅಲ್ಲ</Value>',
+  'search.operator.defined.description': '<Field/> <Operator>ಅದು</Operator> <Value>ಖಾಲಿ ಅಲ್ಲ</Value>',
   'search.operator.defined.name': 'ಖಾಲಿ ಅಲ್ಲ',
-  'search.operator.not-defined.description':
-    '<Field/> <Operator>ಅದು</Operator> <Value>ಖಾಲಿ</Value>',
+  'search.operator.not-defined.description': '<Field/> <Operator>ಅದು</Operator> <Value>ಖಾಲಿ</Value>',
   'search.operator.not-defined.name': 'ಖಾಲಿ',
   'search.operator.number-equal.description':
     '<Field/> <Operator>ಇದೆ</Operator> <Value>{{value}}</Value>',

@@ -81,8 +81,7 @@ export default removeUndefinedLocaleResources({
   /** Label for "Result" explorer/view */
   'result.label': 'ಫಲಿತಾಂಶ',
   /** Tooltip text shown when the query result is not encodable as CSV */
-  'result.save-result-as-csv.not-csv-encodable':
-    'ಫಲಿತಾಂಶವನ್ನು CSV ರೂಪದಲ್ಲಿ ಎನ್ಕೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
+  'result.save-result-as-csv.not-csv-encodable': 'ಫಲಿತಾಂಶವನ್ನು CSV ರೂಪದಲ್ಲಿ ಎನ್ಕೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** Label for "Save result as" result action */
   'result.save-result-as-format': 'ಫಲಿತಾಂಶವನ್ನು ಹೀಗೆ ಉಳಿಸಿ <SaveResultButtons/>',
   /**

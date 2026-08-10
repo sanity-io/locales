@@ -143,8 +143,7 @@ export default removeUndefinedLocaleResources({
   'mentions.user-list-aria-label': 'รายชื่อผู้ใช้ที่จะกล่าวถึง',
 
   /** The comments onboarding popover text */
-  'onboarding.body':
-    'คุณสามารถเพิ่มความคิดเห็นในฟิลด์ใดก็ได้ในเอกสาร พวกมันจะแสดงที่นี่ จัดกลุ่มตามฟิลด์',
+  'onboarding.body': 'คุณสามารถเพิ่มความคิดเห็นในฟิลด์ใดก็ได้ในเอกสาร พวกมันจะแสดงที่นี่ จัดกลุ่มตามฟิลด์',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'เข้าใจแล้ว',
   /** The comments onboarding popover header text */
@@ -177,8 +176,7 @@ export default removeUndefinedLocaleResources({
    * - `<Text>` - should be wrapped around the text describing the action ("reacted with")
    * - `<ReactionName/>` - the name of the reaction emoji, eg ":heavy_plus_sign:"
    */
-  'reactions.users-reacted-with-reaction':
-    '<UserList/> <Text>ได้ตอบกลับด้วย</Text> <ReactionName/>',
+  'reactions.users-reacted-with-reaction': '<UserList/> <Text>ได้ตอบกลับด้วย</Text> <ReactionName/>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
   'status-filter.status-open': 'เปิด',

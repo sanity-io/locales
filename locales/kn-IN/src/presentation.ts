@@ -93,8 +93,7 @@ export default removeUndefinedLocaleResources({
   /** Text describing the current status of the preview frame */
   'preview-frame.status_reloading': 'ರಿಫ್ರೆಶ್ ಆಗುತ್ತಿದೆ.',
   /** Text describing the current status of the preview frame */
-  'preview-frame.status_timeout':
-    'ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಬ್ರೌಸರ್ ಕನ್ಸೋಲ್ ಪರಿಶೀಲಿಸಿ.',
+  'preview-frame.status_timeout': 'ಸಂಪರ್ಕಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಬ್ರೌಸರ್ ಕನ್ಸೋಲ್ ಪರಿಶೀಲಿಸಿ.',
   /** The `aria-label` for the button that switches viewport size */
   'preview-frame.viewport-button.aria-label': 'Viewport ಗಾತ್ರ ಟಾಗಲ್ ಮಾಡಿ',
   /** The viewport size button tooltip text when switching to a full width viewport */
@@ -123,11 +122,9 @@ export default removeUndefinedLocaleResources({
   /** Fallback message shown when the current user is not permitted to share previews */
   'share-preview-menu.error_missing-grants': 'ಪ್ರಿವ್ಯೂಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ. ',
   /** Error message toast that shows the current user does not have permission to toggle sharing of the current preview */
-  'share-preview-menu.error_toggle-sharing':
-    'ಈ ಪ್ರಿವ್ಯೂ ಹಂಚಿಕೆಯನ್ನು ಆನ್/ಆಫ್ ಮಾಡಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
+  'share-preview-menu.error_toggle-sharing': 'ಈ ಪ್ರಿವ್ಯೂ ಹಂಚಿಕೆಯನ್ನು ಆನ್/ಆಫ್ ಮಾಡಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ',
   /** The text show below the QR Code SVG, with instructions on how to use it */
-  'share-preview-menu.qr-code.instructions':
-    'ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಪ್ರಿವ್ಯೂ ತೆರೆಯಲು QR Code ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.',
+  'share-preview-menu.qr-code.instructions': 'ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಪ್ರಿವ್ಯೂ ತೆರೆಯಲು QR Code ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.',
   /** Placeholder message for the QR Code SVG when sharing is yet to be enabled */
   'share-preview-menu.qr-code.placeholder': 'QR code ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ',
   /** The <title> for the QR Code SVG that shows a link to the current preview */

@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Taslak sürüm zaten mevcut',
 
   /** Text for when a release / document was created */
-  created: 'Oluşturuldu <RelativeTime/>',
+  'created': 'Oluşturuldu <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Etkinlik',

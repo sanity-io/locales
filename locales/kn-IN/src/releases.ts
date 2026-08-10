@@ -48,8 +48,7 @@ export default removeUndefinedLocaleResources({
   /** Action text for scheduling unpublish of a draft document */
   'action.schedule-unpublish': 'ಅನ್‌ಪಬ್ಲಿಷ್ ನಿಗದಿಪಡಿಸಿ',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
-  'action.schedule-unpublish.disabled.not-published':
-    'ಅನ್‌ಪಬ್ಲಿಷ್ ನಿಗದಿಪಡಿಸಲು ಡಾಕ್ಯುಮೆಂಟ್ ಪ್ರಕಟಿಸಲ್ಪಟ್ಟಿರಬೇಕು',
+  'action.schedule-unpublish.disabled.not-published': 'ಅನ್‌ಪಬ್ಲಿಷ್ ನಿಗದಿಪಡಿಸಲು ಡಾಕ್ಯುಮೆಂಟ್ ಪ್ರಕಟಿಸಲ್ಪಟ್ಟಿರಬೇಕು',
   /** Label for unarchiving a release */
   'action.unarchive': 'ರಿಲೀಸ್ ಅನ್‌ಆರ್ಕೈವ್ ಮಾಡಿ',
   /** Action text for unpublishing a document in a release in the context menu */
@@ -92,8 +91,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the archive of a release with one document */
   'archive-dialog.confirm-archive-description_one': 'ಇದು 1 ದಾಖಲೆ ಆವೃತ್ತಿಯನ್ನು ಆರ್ಕೈವ್ ಮಾಡುತ್ತದೆ.',
   /** Description for the dialog confirming the archive of a release with more than one document */
-  'archive-dialog.confirm-archive-description_other':
-    'ಇದು {{count}} ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ಆರ್ಕೈವ್ ಮಾಡುತ್ತದೆ.',
+  'archive-dialog.confirm-archive-description_other': 'ಇದು {{count}} ದಾಖಲೆ ಆವೃತ್ತಿಗಳನ್ನು ಆರ್ಕೈವ್ ಮಾಡುತ್ತದೆ.',
   /** Header for the dialog confirming the archive of a release */
   'archive-dialog.confirm-archive-header': 'ನೀವು ಈ ರಿಲೀಸ್ ಅನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?',
   /** Title for the dialog confirming the archive of a release */
@@ -117,8 +115,7 @@ export default removeUndefinedLocaleResources({
   /** Button text when confirming schedules from paused mode */
   'banner.confirm-active-scheduled-drafts.button-paused': 'ಎಲ್ಲಾ ಶೆಡ್ಯೂಲ್‌ಗಳನ್ನು ಮುಂದುವರಿಸಿ',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
-  'banner.drafts-mode-disabled':
-    'Drafts mode ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ ಆದರೆ ಇನ್ನೂ ಪ್ರಕಟಿಸಬೇಕಾದ scheduled drafts ಇವೆ.',
+  'banner.drafts-mode-disabled': 'Drafts mode ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ ಆದರೆ ಇನ್ನೂ ಪ್ರಕಟಿಸಬೇಕಾದ scheduled drafts ಇವೆ.',
   /** Banner text shown when navigating to a release that does not exist */
   'banner.release-not-found': 'ಈ release ಅನ್ನು ಕಂಡುಹಿಡಿಯಲಾಗಲಿಲ್ಲ',
   /** Tooltip for the dismiss button in the release not found banner */
@@ -153,7 +150,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Draft ಆವೃತ್ತಿ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ',
 
   /** Text for when a release / document was created */
-  created: '<RelativeTime/> ರಂದು ರಚಿಸಲಾಗಿದೆ',
+  'created': '<RelativeTime/> ರಂದು ರಚಿಸಲಾಗಿದೆ',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'ಚಟುವಟಿಕೆ',
@@ -376,8 +373,7 @@ export default removeUndefinedLocaleResources({
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'release ಅನ್ನು ತಕ್ಷಣವೇ ಹಿಂತಿರುಗಿಸಿ',
   /** Title for the dialog confirming the revert of a release */
-  'revert-dialog.confirm-revert.title':
-    "ನೀವು '{{title}}' release ಅನ್ನು ಹಿಂತಿರುಗಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?",
+  'revert-dialog.confirm-revert.title': "ನೀವು '{{title}}' release ಅನ್ನು ಹಿಂತಿರುಗಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುತ್ತೀರಾ?",
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'ಈ release ನಲ್ಲಿನ ದಾಖಲೆಗಳಿಗೆ ಅವು ಪ್ರಕಟಿಸಲ್ಪಟ್ಟ ನಂತರ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲಾಗಿದೆ. ಹಿಂತಿರುಗಿಸುವುದರಿಂದ ಈ ಬದಲಾವಣೆಗಳನ್ನು ತಿದ್ದಿ ಬರೆಯಲಾಗುತ್ತದೆ.',
@@ -443,8 +439,7 @@ export default removeUndefinedLocaleResources({
   /** Text for when the release is composed of multiple documents */
   'summary.document-count_other': '{{count}} ದಾಖಲೆಗಳು',
   /** Text for when the release has some errors found */
-  'summary.errors-found':
-    'ರಿಲೀಸ್ ಅನ್ನು ಪ್ರಕಟಿಸಲು ಅಥವಾ ಶೆಡ್ಯೂಲ್ ಮಾಡಲು, ದಾಖಲೆಗಳಲ್ಲಿ ಕಂಡುಬಂದ ಸಮಸ್ಯೆಗಳನ್ನು ಪರಿಹರಿಸಿ',
+  'summary.errors-found': 'ರಿಲೀಸ್ ಅನ್ನು ಪ್ರಕಟಿಸಲು ಅಥವಾ ಶೆಡ್ಯೂಲ್ ಮಾಡಲು, ದಾಖಲೆಗಳಲ್ಲಿ ಕಂಡುಬಂದ ಸಮಸ್ಯೆಗಳನ್ನು ಪರಿಹರಿಸಿ',
   /** Text for when the release has no documents */
   'summary.no-documents': 'ದಾಖಲೆಗಳಿಲ್ಲ',
   /** Description for the empty state when a cardinality-one release has no documents */
@@ -459,8 +454,7 @@ export default removeUndefinedLocaleResources({
   /** Text for when the release has validated documents */
   'summary.validated-documents': '{{totalCount}} ದಾಖಲೆಗಳಲ್ಲಿ {{validatedCount}} ಮೌಲ್ಯೀಕರಿಸಲಾಗಿದೆ',
   /** Text for validation loading indicator */
-  'summary.validating-documents':
-    'ದಾಖಲೆಗಳನ್ನು ಮೌಲ್ಯೀಕರಿಸಲಾಗುತ್ತಿದೆ: {{totalCount}} ರಲ್ಲಿ {{validatedCount}}',
+  'summary.validating-documents': 'ದಾಖಲೆಗಳನ್ನು ಮೌಲ್ಯೀಕರಿಸಲಾಗುತ್ತಿದೆ: {{totalCount}} ರಲ್ಲಿ {{validatedCount}}',
 
   /** add action type that will be shown in the table*/
   'table-body.action.add': 'ಸೇರಿಸಿ',
@@ -542,8 +536,7 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when the release was published but the existing drafts could not be updated */
   'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
   /** Text for toast when release has reverted release successfully staged */
-  'toast.revert-stage.success':
-    "'{{title}}' ಗಾಗಿ revert release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ. <Link/>",
+  'toast.revert-stage.success': "'{{title}}' ಗಾಗಿ revert release ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ. <Link/>",
   /** Link text for toast link to the generated revert release */
   'toast.revert-stage.success-link': 'Revert release ವೀಕ್ಷಿಸಿ',
   /** Text for toast when release failed to revert */
@@ -553,23 +546,19 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release has been scheduled */
   'toast.schedule.success': "'<strong>{{title}}</strong>' release ಅನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ.",
   /** Text for toast when release failed to unarchive */
-  'toast.unarchive.error':
-    "'<strong>{{title}}</strong>' ಅನ್ನು ಆರ್ಕೈವ್‌ನಿಂದ ತೆಗೆಯಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
+  'toast.unarchive.error': "'<strong>{{title}}</strong>' ಅನ್ನು ಆರ್ಕೈವ್‌ನಿಂದ ತೆಗೆಯಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
   /** Text for toast when release failed to unschedule */
-  'toast.unschedule.error':
-    "'<strong>{{title}}</strong>' ಅನ್ನು ನಿಗದಿ ರದ್ದುಗೊಳಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
+  'toast.unschedule.error': "'<strong>{{title}}</strong>' ಅನ್ನು ನಿಗದಿ ರದ್ದುಗೊಳಿಸಲು ವಿಫಲವಾಗಿದೆ: {{error}}",
 
   /** Text for tooltip when a release has been scheduled */
-  'type-picker.tooltip.scheduled':
-    'Release ಅನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ, ಪ್ರಕಾರ ಬದಲಾಯಿಸಲು ನಿಗದಿಯನ್ನು ರದ್ದುಗೊಳಿಸಿ',
+  'type-picker.tooltip.scheduled': 'Release ಅನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ, ಪ್ರಕಾರ ಬದಲಾಯಿಸಲು ನಿಗದಿಯನ್ನು ರದ್ದುಗೊಳಿಸಿ',
 
   /** Text action in unpublish dialog to cancel */
   'unpublish-dialog.action.cancel': 'ರದ್ದುಗೊಳಿಸಿ',
   /** Text action in unpublish dialog to unpublish */
   'unpublish-dialog.action.unpublish': 'ಹೌದು, ಬಿಡುಗಡೆ ಮಾಡುವಾಗ ಅಪ್ರಕಟಿಸಿ',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
-  'unpublish-dialog.description.lost-changes':
-    'ಈ ದಾಖಲೆಯ ಆವೃತ್ತಿಗೆ ಮಾಡಿದ ಯಾವುದೇ ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.',
+  'unpublish-dialog.description.lost-changes': 'ಈ ದಾಖಲೆಯ ಆವೃತ್ತಿಗೆ ಮಾಡಿದ ಯಾವುದೇ ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
   'unpublish-dialog.description.to-draft':
     'ಇದು <Label>{{title}}</Label> release ನ ಭಾಗವಾಗಿ ದಾಖಲೆಯನ್ನು ಅಪ್ರಕಟಿಸುತ್ತದೆ, ಮತ್ತು ಬಿಡುಗಡೆಯ ಸಮಯದಲ್ಲಿ ಯಾವುದೇ ಕರಡು ಇಲ್ಲದಿದ್ದರೆ ಒಂದು ಕರಡನ್ನು ರಚಿಸುತ್ತದೆ.',
@@ -582,8 +571,7 @@ export default removeUndefinedLocaleResources({
   'unpublish.no-published-version': 'ಈ ದಾಖಲೆಯ ಯಾವುದೇ ಪ್ರಕಟಿತ ಆವೃತ್ತಿ ಇಲ್ಲ.',
 
   /** Description shown in unschedule relaease dialog */
-  'unschedule-dialog.confirm-description':
-    'ನಿಗದಿತ ದಿನಾಂಕದಂದು ರಿಲೀಸ್ ಇನ್ನು ಮುಂದೆ ಪ್ರಕಟಿಸಲ್ಪಡುವುದಿಲ್ಲ',
+  'unschedule-dialog.confirm-description': 'ನಿಗದಿತ ದಿನಾಂಕದಂದು ರಿಲೀಸ್ ಇನ್ನು ಮುಂದೆ ಪ್ರಕಟಿಸಲ್ಪಡುವುದಿಲ್ಲ',
   /** Title for unschedule release dialog */
   'unschedule-dialog.confirm-title': 'ನೀವು ನಿಜವಾಗಿಯೂ ರಿಲೀಸ್ ಅನ್ನು ಅನ್‌ಶೆಡ್ಯೂಲ್ ಮಾಡಲು ಬಯಸುತ್ತೀರಾ?',
 })

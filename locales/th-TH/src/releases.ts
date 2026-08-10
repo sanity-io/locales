@@ -112,8 +112,7 @@ export default removeUndefinedLocaleResources({
   /** Button text when confirming schedules from paused mode */
   'banner.confirm-active-scheduled-drafts.button-paused': 'ดำเนินการกำหนดเวลาทั้งหมดต่อ',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
-  'banner.drafts-mode-disabled':
-    'โหมด Drafts ถูกปิดใช้งานแล้ว แต่ยังมี scheduled drafts ที่รอการเผยแพร่อยู่',
+  'banner.drafts-mode-disabled': 'โหมด Drafts ถูกปิดใช้งานแล้ว แต่ยังมี scheduled drafts ที่รอการเผยแพร่อยู่',
   /** Banner text shown when navigating to a release that does not exist */
   'banner.release-not-found': 'ไม่พบ release นี้',
   /** Tooltip for the dismiss button in the release not found banner */
@@ -148,7 +147,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'มีเวอร์ชัน Draft อยู่แล้ว',
 
   /** Text for when a release / document was created */
-  created: 'สร้างแล้ว <RelativeTime/>',
+  'created': 'สร้างแล้ว <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'กิจกรรม',
@@ -321,8 +320,7 @@ export default removeUndefinedLocaleResources({
   'permissions.error.unpublish': 'คุณไม่มีสิทธิ์ยกเลิกการเผยแพร่เอกสารนี้',
 
   /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} กำลังแก้ไขเอกสารนี้ใน release "{{releaseTitle}}" อยู่ในขณะนี้',
+  'presence.tooltip.one': '{{displayName}} กำลังแก้ไขเอกสารนี้ใน release "{{releaseTitle}}" อยู่ในขณะนี้',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'ไม่มีเอกสารที่จะเผยแพร่',
@@ -331,8 +329,7 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.confirm-publish-description_other':
     "release '<strong>{{title}}</strong>' และเอกสาร {{releaseDocumentsLength}} รายการจะถูกเผยแพร่",
   /** Title for the dialog confirming the publish of a release */
-  'publish-dialog.confirm-publish.title':
-    'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ release และเอกสารทุกเวอร์ชัน?',
+  'publish-dialog.confirm-publish.title': 'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ release และเอกสารทุกเวอร์ชัน?',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
   'publish-dialog.confirm-publish.update-drafts-checkbox': 'อัปเดตแบบร่างที่มีอยู่',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
@@ -422,8 +419,7 @@ export default removeUndefinedLocaleResources({
   /** Text for when the release has no documents */
   'summary.no-documents': 'ไม่มีเอกสาร',
   /** Description for the empty state when a cardinality-one release has no documents */
-  'summary.no-documents-cardinality-one.description':
-    'แบบร่างที่กำหนดเวลานี้ไม่มีเอกสาร อาจถูกลบออกไปแล้ว',
+  'summary.no-documents-cardinality-one.description': 'แบบร่างที่กำหนดเวลานี้ไม่มีเอกสาร อาจถูกลบออกไปแล้ว',
   /** Title for the empty state when a cardinality-one release has no documents */
   'summary.no-documents-cardinality-one.title': 'ไม่มีเอกสารใน release นี้',
   /** Text for when the release has not published */
@@ -513,8 +509,7 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release failed to publish */
   'toast.publish.error': "ไม่สามารถเผยแพร่ '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error':
-    'รีลีสได้รับการเผยแพร่แล้ว แต่ไม่สามารถอัปเดตแบบร่างที่มีอยู่ได้: {{error}}',
+  'toast.publish.update-drafts-error': 'รีลีสได้รับการเผยแพร่แล้ว แต่ไม่สามารถอัปเดตแบบร่างที่มีอยู่ได้: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "สร้าง revert release สำหรับ '{{title}}' สำเร็จแล้ว <Link/>",
   /** Link text for toast link to the generated revert release */
@@ -538,8 +533,7 @@ export default removeUndefinedLocaleResources({
   /** Text action in unpublish dialog to unpublish */
   'unpublish-dialog.action.unpublish': 'ใช่ ยกเลิกการเผยแพร่เมื่อปล่อย',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
-  'unpublish-dialog.description.lost-changes':
-    'การเปลี่ยนแปลงใดๆ ที่ทำกับเวอร์ชันเอกสารนี้จะสูญหาย',
+  'unpublish-dialog.description.lost-changes': 'การเปลี่ยนแปลงใดๆ ที่ทำกับเวอร์ชันเอกสารนี้จะสูญหาย',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
   'unpublish-dialog.description.to-draft':
     'การดำเนินการนี้จะยกเลิกการเผยแพร่เอกสารในฐานะส่วนหนึ่งของ release <Label>{{title}}</Label> และสร้างฉบับร่างหากไม่มีฉบับร่างอยู่ในขณะที่ปล่อย',

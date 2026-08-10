@@ -152,7 +152,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Conceptversie bestaat al',
 
   /** Text for when a release / document was created */
-  created: 'Aangemaakt <RelativeTime/>',
+  'created': 'Aangemaakt <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Activiteit',

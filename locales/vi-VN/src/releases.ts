@@ -148,7 +148,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Phiên bản nháp đã tồn tại',
 
   /** Text for when a release / document was created */
-  created: 'Đã tạo <RelativeTime/>',
+  'created': 'Đã tạo <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Hoạt động',

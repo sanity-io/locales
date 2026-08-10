@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Draft-versjon finst allereie',
 
   /** Text for when a release / document was created */
-  created: 'Oppretta <RelativeTime/>',
+  'created': 'Oppretta <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Aktivitet',

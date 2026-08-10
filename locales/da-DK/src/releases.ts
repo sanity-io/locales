@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Kladdeversion findes allerede',
 
   /** Text for when a release / document was created */
-  created: 'Oprettet <RelativeTime/>',
+  'created': 'Oprettet <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Aktivitet',

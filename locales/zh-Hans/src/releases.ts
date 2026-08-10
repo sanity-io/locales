@@ -141,7 +141,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': '草稿版本已存在',
 
   /** Text for when a release / document was created */
-  created: '创建于 <RelativeTime/>',
+  'created': '创建于 <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': '活动',

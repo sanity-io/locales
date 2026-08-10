@@ -40,7 +40,7 @@ jobs:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
           body: I ran `pnpm reconcile + pnpm format` 🧑‍💻
           branch: actions/reconcile
-          commit-message: 'fix: reconcile + prettify'
+          commit-message: 'fix: reconcile + format'
           labels: 🤖 bot
-          title: 'fix: reconcile + prettify'
+          title: 'fix: reconcile + format'
           token: ${{ steps.generate-token.outputs.token }}

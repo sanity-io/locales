@@ -153,7 +153,7 @@ export default removeUndefinedLocaleResources({
   'copy-to-draft-dialog.title': 'Verze konceptu již existuje',
 
   /** Text for when a release / document was created */
-  created: 'Vytvořeno <RelativeTime/>',
+  'created': 'Vytvořeno <RelativeTime/>',
 
   /** Activity inspector button text */
   'dashboard.details.activity': 'Aktivita',
