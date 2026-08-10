@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "../..",
     "paths": {
       "@sanity/locale-be-by": ["../../locales/be-BY/src"],
       "@sanity/locale-ca-es": ["../../locales/ca-ES/src"],
@@ -33,7 +32,8 @@
       "@sanity/locale-vi-vn": ["../../locales/vi-VN/src"],
       "@sanity/locale-zh-hans": ["../../locales/zh-Hans/src"],
       "@sanity/locale-zh-hant": ["../../locales/zh-Hant/src"]
-    }
+    },
+    "rootDir": "../.."
   },
   "extends": "../../tsconfig.json",
   "include": ["./**/*.ts", "./**/*.tsx"],
