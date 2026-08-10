@@ -1,4 +1,6 @@
 import {execFile as execFileCb} from 'node:child_process'
+import {writeFile} from 'node:fs/promises'
+import {join as joinPath} from 'node:path'
 import {promisify} from 'node:util'
 
 import Anthropic from '@anthropic-ai/sdk'
@@ -432,11 +434,30 @@ export async function pushChanges(options: {
     // The locale has changes, add the changes to index
     await execGitCommand(['add', locale.path])
 
+    // Include a changeset so the translation update is released once the PR is merged.
+    // Releases are managed by changesets, which only publishes packages that have a pending
+    // changeset - a conventional commit message alone does not trigger a release.
+    const changesetPath = await writeChangeset(locale)
+    await execGitCommand(['add', changesetPath])
+
     // Commit the changes
     const commitMessage = `fix(${locale.id}): automated translation updates`
     await execGitCommand(['commit', '-m', commitMessage])
 
     return commitMessage
+  }
+
+  /**
+   * Write a changeset declaring a patch release for the given locale package.
+   * Uses a deterministic filename so repeated runs for the same locale overwrite
+   * the previous changeset instead of accumulating new ones.
+   */
+  async function writeChangeset(locale: Locale) {
+    const fileName = `auto-translate-${locale.id.toLowerCase()}.md`
+    const changesetPath = joinPath(rootPath, '.changeset', fileName)
+    const content = `---\n"${locale.packageName}": patch\n---\n\nAutomated translation updates\n`
+    await writeFile(changesetPath, content)
+    return changesetPath
   }
 }
 

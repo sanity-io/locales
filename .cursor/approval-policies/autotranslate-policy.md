@@ -1,14 +1,18 @@
 # Autotranslate locale approval policy
 
 Applies only to PRs whose changed files are exclusively under
-`locales/*/src/**/*.ts` (see `.cursor/approval-policies/ROUTING.md`).
+`locales/*/src/**/*.ts`, plus optionally `.changeset/*.md` — the release note
+file that is added automatically to autotranslate PRs (see
+`.cursor/approval-policies/ROUTING.md`).
 
 ## Scope gates (evaluate first)
 
 Skip (do not approve or deny) when any of the following is true:
 
 - The PR does **not** have the `autotranslate` label.
-- Any changed file is **outside** `locales/*/src/**/*.ts`.
+- Any changed file is **outside** `locales/*/src/**/*.ts` and `.changeset/*.md`.
+- A changed `.changeset/*.md` file declares anything other than a `patch` bump,
+  or declares packages other than the locale packages changed in the PR.
 
 ## Label decisions (`autotranslate` required)
 

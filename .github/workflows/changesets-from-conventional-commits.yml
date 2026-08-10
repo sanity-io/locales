@@ -2,7 +2,7 @@
 name: Add changeset from conventional commits
 
 on:
-  pull_request_target: # zizmor: ignore[dangerous-triggers] gated to ecospark[bot]/renovate[bot]; no PR code is checked out or executed in the reusable workflow
+  pull_request_target: # zizmor: ignore[dangerous-triggers] gated to known bots; no PR code is checked out or executed in the reusable workflow
     types: [opened, synchronize]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
@@ -13,7 +13,11 @@ permissions:
 jobs:
   call:
     uses: sanity-io/.github/.github/workflows/changesets-from-conventional-commits.yml@main
-    if: github.event.pull_request.user.login == 'ecospark[bot]' || github.event.pull_request.user.login == 'renovate[bot]'
+    # Covers the bots that open conventional-commit PRs on this repo: squiggler-app[bot] opens the
+    # autotranslate ("fix(<locale>): automated translation updates") and reconcile PRs,
+    # renovate[bot] opens dependency PRs. ecospark[bot]/squiggler-legacy[bot] cover older bot
+    # identities backed by the same app credentials.
+    if: github.event.pull_request.user.login == 'squiggler-app[bot]' || github.event.pull_request.user.login == 'squiggler-legacy[bot]' || github.event.pull_request.user.login == 'ecospark[bot]' || github.event.pull_request.user.login == 'renovate[bot]'
     secrets:
       ECOSPARK_APP_ID: ${{ secrets.ECOSPARK_APP_ID }}
       ECOSPARK_APP_PRIVATE_KEY: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
