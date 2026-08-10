@@ -15,12 +15,7 @@
     "url": "https://github.com/sanity-io/locales/issues"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "s-rd",
-      "url": "https://github.com/s-rd"
-    }
-  ],
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sanity-io/locales.git",

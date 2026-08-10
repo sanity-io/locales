@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Merkitty ajastamattomaksi',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'Sulje toiminto',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Julkaisun toiminnan hakemisessa tapahtui virhe',
   /** The loading text for when releases are loading */
@@ -157,21 +157,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'Toiminta',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'Luotu',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'Dokumentit',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'Aikataulu',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'Tila',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'Ei dokumentteja',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'Virheitä',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'Kelvollinen',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'Validoidaan',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Kiinnitä julkaisu studioon',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -219,7 +219,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} vahvistusvirhettä',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'Ei validointivirheitä',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Kyllä, kopioi julkaisu',
@@ -294,7 +294,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Dokumentaatio',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'Kaikki julkaisut',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Näytä kalenteri',
   /** Description for the release tool */
@@ -349,11 +349,13 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.confirm-publish.title':
     'Haluatko varmasti julkaista releasen ja kaikki asiakirjaversiot?',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
-  'publish-dialog.confirm-publish.update-drafts-checkbox': undefined, // 'Update existing drafts'
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Päivitä olemassa olevat luonnokset',
   /** Description for the update existing drafts checkbox when one document has an existing draft */
-  'publish-dialog.confirm-publish.update-drafts-description_one': undefined, // 'The existing draft of {{draftDocumentsLength}} document will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_one':
+    '{{draftDocumentsLength}} dokumentin olemassa oleva luonnos hylätään, jotta luonnokset vastaavat julkaistua julkaisua. Julkaisemattomat luonnosmuutokset menetetään.',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
-  'publish-dialog.confirm-publish.update-drafts-description_other': undefined, // 'The existing drafts of {{draftDocumentsLength}} documents will be discarded so that drafts match the published release. Unpublished draft changes will be lost.'
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    '{{draftDocumentsLength}} dokumentin olemassa olevat luonnokset hylätään, jotta luonnokset vastaavat julkaistua julkaisua. Julkaisemattomat luonnosmuutokset menetetään.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Joissakin asiakirjoissa on vahvistusvirheitä',
   /** Label for when documents are being validated */
@@ -483,11 +485,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Muokattu',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'Muokannut',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Tarkoitettu',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'Viimeksi muokattu',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Julkaistu',
   /** Header for the document table in the release tool - Published */
@@ -503,7 +505,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Tyyppi',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Variantti',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Milloin',
 
@@ -541,7 +543,8 @@ export default removeUndefinedLocaleResources({
   'toast.publish.error':
     "Kohteen '<strong>{{title}}</strong>' julkaiseminen epäonnistui: {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error': undefined, // 'The release was published, but existing drafts could not be updated: {{error}}'
+  'toast.publish.update-drafts-error':
+    'Julkaisu julkaistiin, mutta olemassa olevia luonnoksia ei voitu päivittää: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Julkaisun '{{title}}' palautus luotiin onnistuneesti. <Link/>",
   /** Link text for toast link to the generated revert release */

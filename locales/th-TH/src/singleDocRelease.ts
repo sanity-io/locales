@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   'action.schedule-publish.disabled.validation-issues':
     'ไม่สามารถกำหนดเวลา Draft ได้เนื่องจากมีข้อผิดพลาดในการตรวจสอบใน draft ปัจจุบัน',
   /** Tooltip text for when schedule publish is disabled because a variant is selected */
-  'action.schedule-publish.disabled.variant': undefined, // 'Scheduling is not yet available for variants.'
+  'action.schedule-publish.disabled.variant': 'ยังไม่มีการกำหนดเวลาสำหรับ variants ในขณะนี้',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'เรียนรู้เกี่ยวกับการกำหนดเวลา',

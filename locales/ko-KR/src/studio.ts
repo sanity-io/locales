@@ -127,7 +127,7 @@ export default removeUndefinedLocaleResources({
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '자산 삽입 오류. 자세한 정보는 콘솔을 확인하세요.',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
+  'asset-source.dialog.load-error': '자산을 불러오지 못했습니다',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '더 많이 불러오기',
   /** Text shown when selecting a file but there's no files to select from
@@ -442,7 +442,7 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.tooltip': '구성 문제 발견',
 
   /** The name of Content Agent, the product. */
-  'content-agent': undefined, // 'Content Agent'
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}로 정렬',
@@ -482,71 +482,77 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  'document-group-inventory.action.cancel': '취소',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
-  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  'document-group-inventory.feedback.sentiment-label':
+    '새 버전 인벤토리는 얼마나 사용하기 쉽거나 어렵습니까?',
   /** The label for the input that filters the variants in the document group inventory */
-  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  'document-group-inventory.filter-string.label': '{{subject}} 필터',
   /** The document inventory title (plural) */
-  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+  'document-group-inventory.viewing-item-label': '보는 중',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': undefined, // 'All users (Default)'
+  'document-group.base-variant': '모든 사용자 (기본값)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': '변형 만들기',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': '{{variantDefinitionName}}에 대한 변형 만들기',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': '초안으로',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': '릴리스에 추가',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': '또는 기존 변형 보기',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
-  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  'document-group.delete.cancel-button.text': '취소',
   /** Used in `document-group.delete.cdr-summary.title` */
-  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  'document-group.delete.cdr-summary.document-count_other': '{{count}}개 문서',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  'document-group.delete.cdr-summary.subtitle_other': 'Dataset: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '사용할 수 없는 dataset',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  'document-group.delete.cdr-summary.title_other': '{{count}}개 dataset의 {{documentCount}}',
   /** Appears when hovering over the copy button to copy */
-  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'document-group.delete.cdr-table.copy-id-button.tooltip': '클립보드에 ID 복사',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  'document-group.delete.cdr-table.document-id.label': '문서 ID',
   /** The toast title when the copy button has been clicked but copying failed */
-  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': '문서 ID 복사 실패',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  'document-group.delete.cdr-table.project-id.label': '프로젝트 ID',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  'document-group.delete.confirm-button.text_other': '삭제 ({{count}})',
   /** The message shown after deletion fails */
-  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  'document-group.delete.error.message':
+    '이 문서를 삭제하는 중 오류가 발생했습니다. 일반적으로 이 문서를 참조하는 다른 문서가 있음을 의미합니다.',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}}개의 다른 참조가 표시되지 않음',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'document-group.delete.other-reference-count.tooltip':
+    '관련 dataset에 대한 액세스 토큰이 없어 이 참조들의 메타데이터를 표시할 수 없습니다.',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'document-group.delete.preview-item.preview-unavailable.title': '미리보기를 사용할 수 없음',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
-  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}}개의 문서가 "<DocumentTitle/>"을(를) 참조합니다',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'document-group.delete.referring-documents-descriptor.text':
+    '다음 문서들이 "<DocumentTitle/>"을(를) 참조하고 있으므로 삭제하지 못할 수 있습니다:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
-  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  'document-group.delete.title_other': '{{count}}개의 {{subject}} 삭제',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.variant_other': undefined, // 'variants'
+  'document-group.subject.variant_other': '변형',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': undefined, // 'versions'
+  'document-group.subject.version_other': '버전',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}}에 생성됨',
@@ -574,9 +580,9 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  'document.initial-value.error.description': '문서가 빈 값으로 열렸습니다. {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
+  'document.initial-value.error.title': '초기 값을 확인할 수 없습니다',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': '문서 유형 "{{type}}"을(를) 찾을 수 없습니다',
 
@@ -1149,27 +1155,27 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '인용구',
   /** Label for the table lane that appends a column */
-  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  'inputs.portable-text.table.add-column': '끝에 열 추가',
   /** Label for the table lane that appends a row */
-  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  'inputs.portable-text.table.add-row': '끝에 행 추가',
   /** Aria label for a table column's drag/select handle */
-  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  'inputs.portable-text.table.column-handle': '열 핸들',
   /** Label for the trash chip that deletes the selected column */
-  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  'inputs.portable-text.table.delete-column': '열 삭제',
   /** Label for the trash chip that deletes the selected row */
-  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  'inputs.portable-text.table.delete-row': '행 삭제',
   /** Label for the table menu item that deletes the table */
-  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  'inputs.portable-text.table.delete-table': '표 삭제',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  'inputs.portable-text.table.header-row': '헤더 행',
   /** Aria label for the dots that insert a row or column at a boundary */
-  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  'inputs.portable-text.table.insert-here': '여기에 삽입',
   /** Aria label for the table menu button */
-  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  'inputs.portable-text.table.menu-aria-label': '표 옵션',
   /** Aria label for a table row's drag/select handle */
-  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  'inputs.portable-text.table.row-handle': '행 핸들',
   /** Label for the table menu item that selects the whole table */
-  'inputs.portable-text.table.select-table': undefined, // 'Select table'
+  'inputs.portable-text.table.select-table': '표 선택',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '지우기',
   /** Label for action to copy the current item (used within arrays) */
@@ -1374,11 +1380,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': '권한 부족',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  'login.logged-out.generic': '세션이 더 이상 유효하지 않습니다. 다시 로그인해 주세요.',
   /** Body of the logged-out banner shown above the login form when the session expired */
-  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  'login.logged-out.session-expired': '세션이 만료되었습니다. 다시 로그인해 주세요.',
   /** Title of the banner shown above the login form after the studio logs the user out */
-  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+  'login.logged-out.title': '로그아웃되었습니다',
 
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '예상치 못한 오류: {{error}}',
@@ -1469,7 +1475,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': '버전 버리기에 실패했습니다',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': '세부 정보 편집',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': '일정 편집',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1506,7 +1512,7 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  'release.chip.button.other-variants_other': '+{{count}}개의 변형',
   /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} 버전',
   /** Label for Draft chip in document header */
@@ -1530,7 +1536,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': '편집 없음',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': '게시되지 않음',
-  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
+  'release.chip.tooltip.other-variants_other': '{{count}}개의 변형',
   'release.chip.tooltip.other-versions_other': '릴리스 외부의 추가 {{count}} 버전',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '게시된 날짜 {{date}}',
@@ -1571,13 +1577,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': '일정 변경',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': '저장',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': '설명',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': '릴리스 편집',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': '제목',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body': '예약된 초안을 즉시 게시하시겠습니까?',
   /** Confirm button text for running a scheduled draft immediately */
@@ -1634,7 +1640,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>가 삭제되었습니다.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': '릴리스 세부 정보 저장에 실패했습니다',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
