@@ -2,7 +2,7 @@
   "name": "@sanity/locale-ro-ro",
   "version": "1.0.17",
   "private": false,
-  "description": "Romanian / Rom\u00e2n\u0103 locale/translation for Sanity Studio",
+  "description": "Romanian / Română locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "locale",

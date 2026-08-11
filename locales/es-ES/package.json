@@ -2,7 +2,7 @@
   "name": "@sanity/locale-es-es",
   "version": "1.2.38",
   "private": false,
-  "description": "Spanish / Espa\u00f1ol locale/translation for Sanity Studio",
+  "description": "Spanish / Español locale/translation for Sanity Studio",
   "keywords": [
     "es-ES",
     "i18n",

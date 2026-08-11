@@ -2,7 +2,7 @@
   "name": "@sanity/locale-tr-tr",
   "version": "1.2.37",
   "private": false,
-  "description": "Turkish / T\u00fcrk\u00e7e locale/translation for Sanity Studio",
+  "description": "Turkish / Türkçe locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "locale",
