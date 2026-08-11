@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   'action.schedule-publish.disabled.validation-issues':
     'ಪ್ರಸ್ತುತ draft ನಲ್ಲಿ ಮೌಲ್ಯೀಕರಣ ದೋಷಗಳಿರುವ ಕಾರಣ Draft ಅನ್ನು ನಿಗದಿಪಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** Tooltip text for when schedule publish is disabled because a variant is selected */
-  'action.schedule-publish.disabled.variant': undefined, // 'Scheduling is not yet available for variants.'
+  'action.schedule-publish.disabled.variant': 'ವೇರಿಯಂಟ್‌ಗಳಿಗೆ ಶೆಡ್ಯೂಲಿಂಗ್ ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ.',
 
   /** Empty state action documentation for scheduled drafts */
   'empty-state.action.documentation': 'ನಿಗದಿಪಡಿಸುವಿಕೆಯ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ',

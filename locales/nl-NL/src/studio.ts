@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.insert-asset-error':
     'Fout bij het invoegen van asset. Zie de console voor meer informatie.',
   /** Toast title shown when the list of assets failed to load */
-  'asset-source.dialog.load-error': undefined, // 'Failed to load assets'
+  'asset-source.dialog.load-error': 'Laden van assets mislukt',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Meer laden',
   /** Text shown when selecting a file but there's no files to select from
@@ -446,7 +446,7 @@ export default removeUndefinedLocaleResources({
   'configuration-issues.button.tooltip': 'Configuratieproblemen gevonden',
 
   /** The name of Content Agent, the product. */
-  'content-agent': undefined, // 'Content Agent'
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sorteer op {{title}}',
@@ -488,93 +488,101 @@ export default removeUndefinedLocaleResources({
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': undefined, // 'Cancel'
+  'document-group-inventory.action.cancel': 'Annuleren',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
-  'document-group-inventory.feedback.sentiment-label': undefined, // 'How easy or difficult is the new version inventory to use?'
+  'document-group-inventory.feedback.sentiment-label':
+    'Hoe gemakkelijk of moeilijk is de nieuwe versie-inventaris in gebruik?',
   /** The label for the input that filters the variants in the document group inventory */
-  'document-group-inventory.filter-string.label': undefined, // 'Filter {{subject}}'
+  'document-group-inventory.filter-string.label': 'Filter {{subject}}',
   /** The document inventory title (plural) */
-  'document-group-inventory.title_one': undefined, // '{{count}} {{subject}}'
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
   /** The document inventory title (plural) */
-  'document-group-inventory.title_other': undefined, // '{{count}} {{subject}}'
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': undefined, // 'viewing'
+  'document-group-inventory.viewing-item-label': 'bekijken',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': undefined, // 'All users (Default)'
+  'document-group.base-variant': 'Alle gebruikers (Standaard)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'Variant aanmaken',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': 'Variant aanmaken voor {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'Als concept',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'In een release',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': 'Of bekijk bestaande varianten',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
-  'document-group.delete.cancel-button.text': undefined, // 'Cancel'
+  'document-group.delete.cancel-button.text': 'Annuleren',
   /** Used in `document-group.delete.cdr-summary.title` */
-  'document-group.delete.cdr-summary.document-count_one': undefined, // '1 document'
+  'document-group.delete.cdr-summary.document-count_one': '1 document',
   /** Used in `document-group.delete.cdr-summary.title` */
-  'document-group.delete.cdr-summary.document-count_other': undefined, // '{{count}} documents'
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} documenten',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_one': undefined, // 'Dataset: {{datasets}}'
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_other': undefined, // 'Datasets: {{datasets}}'
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_one': undefined, // 'Unavailable dataset'
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Niet-beschikbare dataset',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': undefined, // 'Unavailable datasets'
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Niet-beschikbare datasets',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
-  'document-group.delete.cdr-summary.title_one': undefined, // '{{documentCount}} in another dataset'
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} in een andere dataset',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'document-group.delete.cdr-summary.title_other': undefined, // '{{documentCount}} in {{count}} datasets'
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} in {{count}} datasets',
   /** Appears when hovering over the copy button to copy */
-  'document-group.delete.cdr-table.copy-id-button.tooltip': undefined, // 'Copy ID to clipboard'
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'ID naar klembord kopiëren',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': undefined, // 'Dataset'
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.document-id.label': undefined, // 'Document ID'
+  'document-group.delete.cdr-table.document-id.label': 'Document ID',
   /** The toast title when the copy button has been clicked but copying failed */
-  'document-group.delete.cdr-table.id-copied-toast.title-failed': undefined, // 'Failed to copy document ID'
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Kopiëren van document ID mislukt',
   /** The header for the project ID column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.project-id.label': undefined, // 'Project ID'
+  'document-group.delete.cdr-table.project-id.label': 'Project ID',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
-  'document-group.delete.confirm-button.text_one': undefined, // 'Delete (1)'
+  'document-group.delete.confirm-button.text_one': 'Verwijderen (1)',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': undefined, // 'Delete ({{count}})'
+  'document-group.delete.confirm-button.text_other': 'Verwijderen ({{count}})',
   /** The message shown after deletion fails */
-  'document-group.delete.error.message': undefined, // 'An error occurred while attempting to delete this document. This usually means that there are other documents that refer to it.'
+  'document-group.delete.error.message':
+    'Er is een fout opgetreden bij het verwijderen van dit document. Dit betekent meestal dat er andere documenten zijn die ernaar verwijzen.',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'document-group.delete.other-reference-count.title_one': undefined, // '1 other reference not show'
+  'document-group.delete.other-reference-count.title_one': '1 andere verwijzing niet weergegeven',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
-  'document-group.delete.other-reference-count.title_other': undefined, // '{{count}} other references not shown'
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} andere verwijzingen niet weergegeven',
   /** Text in the tooltip of this component if hovering over the info icon */
-  'document-group.delete.other-reference-count.tooltip': undefined, // 'We can\'t display metadata for these references due to a missing access token for the related datasets.'
+  'document-group.delete.other-reference-count.tooltip':
+    'We kunnen geen metadata weergeven voor deze verwijzingen omdat er een toegangstoken ontbreekt voor de gerelateerde datasets.',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.subtitle': undefined, // 'ID: {{documentId}}'
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
-  'document-group.delete.preview-item.preview-unavailable.title': undefined, // 'Preview unavailable'
+  'document-group.delete.preview-item.preview-unavailable.title': 'Voorbeeld niet beschikbaar',
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
-  'document-group.delete.referring-document-count.text_one': undefined, // '1 document refers to “<DocumentTitle/>”'
+  'document-group.delete.referring-document-count.text_one':
+    '1 document verwijst naar "<DocumentTitle/>"',
   /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
-  'document-group.delete.referring-document-count.text_other': undefined, // '{{count}} documents refer to “<DocumentTitle/>”'
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} documenten verwijzen naar "<DocumentTitle/>"',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
-  'document-group.delete.referring-documents-descriptor.text': undefined, // 'You may not be able to delete “<DocumentTitle/>” because the following documents refer to it:'
+  'document-group.delete.referring-documents-descriptor.text':
+    'Mogelijk kunt u "<DocumentTitle/>" niet verwijderen omdat de volgende documenten ernaar verwijzen:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
-  'document-group.delete.title_one': undefined, // 'Delete {{count}} {{subject}}'
+  'document-group.delete.title_one': '{{count}} {{subject}} verwijderen',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
-  'document-group.delete.title_other': undefined, // 'Delete {{count}} {{subject}}'
+  'document-group.delete.title_other': '{{count}} {{subject}} verwijderen',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
-  'document-group.subject.variant_one': undefined, // 'variant'
+  'document-group.subject.variant_one': 'variant',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.variant_other': undefined, // 'variants'
+  'document-group.subject.variant_other': 'varianten',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
-  'document-group.subject.version_one': undefined, // 'version'
+  'document-group.subject.version_one': 'versie',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': undefined, // 'versions'
+  'document-group.subject.version_other': 'versies',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Gemaakt op {{date}}',
@@ -602,9 +610,10 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description': undefined, // 'The document opened with an empty value. {{errorMessage}}'
+  'document.initial-value.error.description':
+    'Het document is geopend met een lege waarde. {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
-  'document.initial-value.error.title': undefined, // 'Could not resolve initial value'
+  'document.initial-value.error.title': 'Kan beginwaarde niet bepalen',
   /** Label to indicate that a document type was not found */
   'document.type.not-found': 'Documenttype "{{type}}" niet gevonden',
 
@@ -1181,27 +1190,27 @@ export default removeUndefinedLocaleResources({
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citaat',
   /** Label for the table lane that appends a column */
-  'inputs.portable-text.table.add-column': undefined, // 'Add column at end'
+  'inputs.portable-text.table.add-column': 'Kolom aan het einde toevoegen',
   /** Label for the table lane that appends a row */
-  'inputs.portable-text.table.add-row': undefined, // 'Add row at end'
+  'inputs.portable-text.table.add-row': 'Rij aan het einde toevoegen',
   /** Aria label for a table column's drag/select handle */
-  'inputs.portable-text.table.column-handle': undefined, // 'Column handle'
+  'inputs.portable-text.table.column-handle': 'Kolomgreep',
   /** Label for the trash chip that deletes the selected column */
-  'inputs.portable-text.table.delete-column': undefined, // 'Delete column'
+  'inputs.portable-text.table.delete-column': 'Kolom verwijderen',
   /** Label for the trash chip that deletes the selected row */
-  'inputs.portable-text.table.delete-row': undefined, // 'Delete row'
+  'inputs.portable-text.table.delete-row': 'Rij verwijderen',
   /** Label for the table menu item that deletes the table */
-  'inputs.portable-text.table.delete-table': undefined, // 'Delete table'
+  'inputs.portable-text.table.delete-table': 'Tabel verwijderen',
   /** Label for the table menu's header row toggle */
-  'inputs.portable-text.table.header-row': undefined, // 'Header row'
+  'inputs.portable-text.table.header-row': 'Headerrij',
   /** Aria label for the dots that insert a row or column at a boundary */
-  'inputs.portable-text.table.insert-here': undefined, // 'Insert here'
+  'inputs.portable-text.table.insert-here': 'Hier invoegen',
   /** Aria label for the table menu button */
-  'inputs.portable-text.table.menu-aria-label': undefined, // 'Table options'
+  'inputs.portable-text.table.menu-aria-label': 'Tabelopties',
   /** Aria label for a table row's drag/select handle */
-  'inputs.portable-text.table.row-handle': undefined, // 'Row handle'
+  'inputs.portable-text.table.row-handle': 'Rijgreep',
   /** Label for the table menu item that selects the whole table */
-  'inputs.portable-text.table.select-table': undefined, // 'Select table'
+  'inputs.portable-text.table.select-table': 'Tabel selecteren',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Wissen',
   /** Label for action to copy the current item (used within arrays) */
@@ -1412,11 +1421,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': 'Onvoldoende rechten',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': undefined, // 'Your session is no longer valid. Please sign in again.'
+  'login.logged-out.generic': 'Uw sessie is niet meer geldig. Meld u opnieuw aan.',
   /** Body of the logged-out banner shown above the login form when the session expired */
-  'login.logged-out.session-expired': undefined, // 'Your session expired. Please sign in again.'
+  'login.logged-out.session-expired': 'Uw sessie is verlopen. Meld u opnieuw aan.',
   /** Title of the banner shown above the login form after the studio logs the user out */
-  'login.logged-out.title': undefined, // 'You\'ve been logged out'
+  'login.logged-out.title': 'U bent uitgelogd',
 
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Onverwachte fout: {{error}}',
@@ -1507,7 +1516,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Mislukt om versie te verwijderen',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'Details bewerken',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Schema bewerken',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1544,9 +1553,9 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Gepland voor publicatie op {{date}}',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_one': undefined, // '+{{count}} variant'
+  'release.chip.button.other-variants_one': '+{{count}} variant',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': undefined, // '+{{count}} variants'
+  'release.chip.button.other-variants_other': '+{{count}} varianten',
   /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} versie',
   /** Label for button to show other versions in the document perspective list */
@@ -1572,8 +1581,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Geen bewerkingen',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Niet gepubliceerd',
-  'release.chip.tooltip.other-variants_one': undefined, // 'One variant'
-  'release.chip.tooltip.other-variants_other': undefined, // '{{count}} variants'
+  'release.chip.tooltip.other-variants_one': 'Één variant',
+  'release.chip.tooltip.other-variants_other': '{{count}} varianten',
   'release.chip.tooltip.other-versions_one': 'Eén extra versie buiten de releases',
   'release.chip.tooltip.other-versions_other': '{{count}} extra versies buiten de releases',
   /** Label for tooltip in chip with the published date */
@@ -1616,13 +1625,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Schema wijzigen',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'Opslaan',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'Beschrijving',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'Release bewerken',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'Titel',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Weet u zeker dat u dit geplande concept onmiddellijk wilt publiceren?',
@@ -1679,7 +1688,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is verwijderd.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'Opslaan van release-details mislukt',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
