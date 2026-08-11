@@ -1,120 +1,110 @@
 # Changelog
 
-## [1.0.15](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.14...locale-ca-es-v1.0.15) (2026-08-07)
+## 1.0.16
 
+### Patch Changes
+
+- [#1859](https://github.com/sanity-io/locales/pull/1859) [`c727342`](https://github.com/sanity-io/locales/commit/c7273420d51e28e8f2835c6af00af36306a09efa) Thanks [@stipsan](https://github.com/stipsan)! - Modernize the build and release toolchain: build with `@sanity/pkg-utils` v12, publish only `dist` to npm (no more `src` or `CHANGELOG.md` in the tarball), declare `engines.node` matching the oldest supported `sanity` release, add `publishConfig.exports`, and ship content-hashed chunks instead of `_chunks-es`/`_chunks-cjs` folders.
+
+## [1.0.15](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.14...locale-ca-es-v1.0.15) (2026-08-07)
 
 ### Bug Fixes
 
-* reconcile + prettify ([#1822](https://github.com/sanity-io/locales/issues/1822)) ([a793c48](https://github.com/sanity-io/locales/commit/a793c48ff1048067022d66fa6a291d4e1305d78f))
+- reconcile + prettify ([#1822](https://github.com/sanity-io/locales/issues/1822)) ([a793c48](https://github.com/sanity-io/locales/commit/a793c48ff1048067022d66fa6a291d4e1305d78f))
 
 ## [1.0.14](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.13...locale-ca-es-v1.0.14) (2026-08-06)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1757](https://github.com/sanity-io/locales/issues/1757)) ([f636d3c](https://github.com/sanity-io/locales/commit/f636d3c75f89ced4d1dc4e7073caf4393fa6bfa4))
+- **ca-ES:** automated translation updates ([#1757](https://github.com/sanity-io/locales/issues/1757)) ([f636d3c](https://github.com/sanity-io/locales/commit/f636d3c75f89ced4d1dc4e7073caf4393fa6bfa4))
 
 ## [1.0.13](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.12...locale-ca-es-v1.0.13) (2026-06-22)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1708](https://github.com/sanity-io/locales/issues/1708)) ([c83f39a](https://github.com/sanity-io/locales/commit/c83f39a3682e0a942e2d9fa64b91118d6152f3d5))
+- reconcile + prettify ([#1708](https://github.com/sanity-io/locales/issues/1708)) ([c83f39a](https://github.com/sanity-io/locales/commit/c83f39a3682e0a942e2d9fa64b91118d6152f3d5))
 
 ## [1.0.12](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.11...locale-ca-es-v1.0.12) (2026-05-22)
 
-
 ### Bug Fixes
 
-* allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
+- allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
 
 ## [1.0.11](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.10...locale-ca-es-v1.0.11) (2026-04-02)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1602](https://github.com/sanity-io/locales/issues/1602)) ([4077b9b](https://github.com/sanity-io/locales/commit/4077b9b92c6c1031350774997dc8fb16f0d602cf))
+- **ca-ES:** automated translation updates ([#1602](https://github.com/sanity-io/locales/issues/1602)) ([4077b9b](https://github.com/sanity-io/locales/commit/4077b9b92c6c1031350774997dc8fb16f0d602cf))
 
 ## [1.0.10](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.9...locale-ca-es-v1.0.10) (2026-03-11)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1551](https://github.com/sanity-io/locales/issues/1551)) ([bcd302b](https://github.com/sanity-io/locales/commit/bcd302bf1ae8d261d138a6d2a87641cf5c7cc1db))
-* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+- **ca-ES:** automated translation updates ([#1551](https://github.com/sanity-io/locales/issues/1551)) ([bcd302b](https://github.com/sanity-io/locales/commit/bcd302bf1ae8d261d138a6d2a87641cf5c7cc1db))
+- run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
 
 ## [1.0.9](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.8...locale-ca-es-v1.0.9) (2026-02-10)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1453](https://github.com/sanity-io/locales/issues/1453)) ([bb3844d](https://github.com/sanity-io/locales/commit/bb3844dad3d73529e6526fd04a4c6d310d55af0f))
-* **ca-ES:** automated translation updates ([#1513](https://github.com/sanity-io/locales/issues/1513)) ([bd28275](https://github.com/sanity-io/locales/commit/bd28275e6e6d823d191f6a5ff6f54ea9cf462be8))
+- **ca-ES:** automated translation updates ([#1453](https://github.com/sanity-io/locales/issues/1453)) ([bb3844d](https://github.com/sanity-io/locales/commit/bb3844dad3d73529e6526fd04a4c6d310d55af0f))
+- **ca-ES:** automated translation updates ([#1513](https://github.com/sanity-io/locales/issues/1513)) ([bd28275](https://github.com/sanity-io/locales/commit/bd28275e6e6d823d191f6a5ff6f54ea9cf462be8))
 
 ## [1.0.8](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.7...locale-ca-es-v1.0.8) (2025-12-04)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1398](https://github.com/sanity-io/locales/issues/1398)) ([86a65d6](https://github.com/sanity-io/locales/commit/86a65d65e8b5d4b99eb76fc0517f1edfcca538ff))
-* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+- **ca-ES:** automated translation updates ([#1398](https://github.com/sanity-io/locales/issues/1398)) ([86a65d6](https://github.com/sanity-io/locales/commit/86a65d65e8b5d4b99eb76fc0517f1edfcca538ff))
+- **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
 
 ## [1.0.7](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.6...locale-ca-es-v1.0.7) (2025-11-19)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1341](https://github.com/sanity-io/locales/issues/1341)) ([dbde19f](https://github.com/sanity-io/locales/commit/dbde19f6968f4826ae25121fa199e8208beba33f))
+- **ca-ES:** automated translation updates ([#1341](https://github.com/sanity-io/locales/issues/1341)) ([dbde19f](https://github.com/sanity-io/locales/commit/dbde19f6968f4826ae25121fa199e8208beba33f))
 
 ## [1.0.6](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.5...locale-ca-es-v1.0.6) (2025-11-13)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1316](https://github.com/sanity-io/locales/issues/1316)) ([026edba](https://github.com/sanity-io/locales/commit/026edba00c46bdd01b68d6fb3edb3cbdffb05957))
-* reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
-* reconcile + prettify ([#1383](https://github.com/sanity-io/locales/issues/1383)) ([289d911](https://github.com/sanity-io/locales/commit/289d9117e84b3a9d35b8cd3eec8bfd15d9c4853a))
+- reconcile + prettify ([#1316](https://github.com/sanity-io/locales/issues/1316)) ([026edba](https://github.com/sanity-io/locales/commit/026edba00c46bdd01b68d6fb3edb3cbdffb05957))
+- reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
+- reconcile + prettify ([#1383](https://github.com/sanity-io/locales/issues/1383)) ([289d911](https://github.com/sanity-io/locales/commit/289d9117e84b3a9d35b8cd3eec8bfd15d9c4853a))
 
 ## [1.0.5](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.4...locale-ca-es-v1.0.5) (2025-09-04)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
+- reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
 
 ## [1.0.4](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.3...locale-ca-es-v1.0.4) (2025-08-14)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1262](https://github.com/sanity-io/locales/issues/1262)) ([7c56bde](https://github.com/sanity-io/locales/commit/7c56bde1bb9b6a21c761109722bd17b7fdc6514b))
+- **ca-ES:** automated translation updates ([#1262](https://github.com/sanity-io/locales/issues/1262)) ([7c56bde](https://github.com/sanity-io/locales/commit/7c56bde1bb9b6a21c761109722bd17b7fdc6514b))
 
 ## [1.0.3](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.2...locale-ca-es-v1.0.3) (2025-07-22)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
+- reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
 
 ## [1.0.2](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.1...locale-ca-es-v1.0.2) (2025-07-10)
 
-
 ### Bug Fixes
 
-* **ca-ES:** automated translation updates ([#1168](https://github.com/sanity-io/locales/issues/1168)) ([ba31002](https://github.com/sanity-io/locales/commit/ba3100278aadbf42edb4f5b1133889b0cf9e9edb))
-* **ca-ES:** automated translation updates ([#1204](https://github.com/sanity-io/locales/issues/1204)) ([e20a76f](https://github.com/sanity-io/locales/commit/e20a76f21ecc6924f3a4231a7c21b5067bf8aa68))
-* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+- **ca-ES:** automated translation updates ([#1168](https://github.com/sanity-io/locales/issues/1168)) ([ba31002](https://github.com/sanity-io/locales/commit/ba3100278aadbf42edb4f5b1133889b0cf9e9edb))
+- **ca-ES:** automated translation updates ([#1204](https://github.com/sanity-io/locales/issues/1204)) ([e20a76f](https://github.com/sanity-io/locales/commit/e20a76f21ecc6924f3a4231a7c21b5067bf8aa68))
+- **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
 
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-ca-es-v1.0.0...locale-ca-es-v1.0.1) (2025-05-30)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1172](https://github.com/sanity-io/locales/issues/1172)) ([6344acc](https://github.com/sanity-io/locales/commit/6344acc28b4d4cc8f95c06c1095037f9be5d6fac))
+- reconcile + prettify ([#1172](https://github.com/sanity-io/locales/issues/1172)) ([6344acc](https://github.com/sanity-io/locales/commit/6344acc28b4d4cc8f95c06c1095037f9be5d6fac))
 
 ## 1.0.0 (2025-05-16)
 
-
 ### Features
 
-* **ca-ES:** add Catalan locale module ([#1165](https://github.com/sanity-io/locales/issues/1165)) ([d7de2e4](https://github.com/sanity-io/locales/commit/d7de2e41143f413bce1d83b7b8f8d0d899b1c605))
+- **ca-ES:** add Catalan locale module ([#1165](https://github.com/sanity-io/locales/issues/1165)) ([d7de2e4](https://github.com/sanity-io/locales/commit/d7de2e41143f413bce1d83b7b8f8d0d899b1c605))

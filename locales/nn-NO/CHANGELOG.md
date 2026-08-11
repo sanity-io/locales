@@ -1,361 +1,319 @@
 # Changelog
 
-## [1.1.37](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.36...locale-nn-no-v1.1.37) (2026-08-07)
+## 1.1.38
 
+### Patch Changes
+
+- [#1859](https://github.com/sanity-io/locales/pull/1859) [`c727342`](https://github.com/sanity-io/locales/commit/c7273420d51e28e8f2835c6af00af36306a09efa) Thanks [@stipsan](https://github.com/stipsan)! - Modernize the build and release toolchain: build with `@sanity/pkg-utils` v12, publish only `dist` to npm (no more `src` or `CHANGELOG.md` in the tarball), declare `engines.node` matching the oldest supported `sanity` release, add `publishConfig.exports`, and ship content-hashed chunks instead of `_chunks-es`/`_chunks-cjs` folders.
+
+## [1.1.37](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.36...locale-nn-no-v1.1.37) (2026-08-07)
 
 ### Bug Fixes
 
-* reconcile + prettify ([#1822](https://github.com/sanity-io/locales/issues/1822)) ([a793c48](https://github.com/sanity-io/locales/commit/a793c48ff1048067022d66fa6a291d4e1305d78f))
+- reconcile + prettify ([#1822](https://github.com/sanity-io/locales/issues/1822)) ([a793c48](https://github.com/sanity-io/locales/commit/a793c48ff1048067022d66fa6a291d4e1305d78f))
 
 ## [1.1.36](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.35...locale-nn-no-v1.1.36) (2026-08-06)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1774](https://github.com/sanity-io/locales/issues/1774)) ([511f29a](https://github.com/sanity-io/locales/commit/511f29a014717df3397ed6e50a7d5970b169d443))
+- **nn-NO:** automated translation updates ([#1774](https://github.com/sanity-io/locales/issues/1774)) ([511f29a](https://github.com/sanity-io/locales/commit/511f29a014717df3397ed6e50a7d5970b169d443))
 
 ## [1.1.35](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.34...locale-nn-no-v1.1.35) (2026-06-22)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1669](https://github.com/sanity-io/locales/issues/1669)) ([652b663](https://github.com/sanity-io/locales/commit/652b663f167fe66f1990b10c6cf96af2eb9fe87b))
-* reconcile + prettify ([#1708](https://github.com/sanity-io/locales/issues/1708)) ([c83f39a](https://github.com/sanity-io/locales/commit/c83f39a3682e0a942e2d9fa64b91118d6152f3d5))
+- **nn-NO:** automated translation updates ([#1669](https://github.com/sanity-io/locales/issues/1669)) ([652b663](https://github.com/sanity-io/locales/commit/652b663f167fe66f1990b10c6cf96af2eb9fe87b))
+- reconcile + prettify ([#1708](https://github.com/sanity-io/locales/issues/1708)) ([c83f39a](https://github.com/sanity-io/locales/commit/c83f39a3682e0a942e2d9fa64b91118d6152f3d5))
 
 ## [1.1.34](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.33...locale-nn-no-v1.1.34) (2026-05-22)
 
-
 ### Bug Fixes
 
-* allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
+- allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
 
 ## [1.1.33](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.32...locale-nn-no-v1.1.33) (2026-04-08)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1640](https://github.com/sanity-io/locales/issues/1640)) ([649cbba](https://github.com/sanity-io/locales/commit/649cbba0616924d53ecaafa20c463a7124f1fb48))
+- reconcile + prettify ([#1640](https://github.com/sanity-io/locales/issues/1640)) ([649cbba](https://github.com/sanity-io/locales/commit/649cbba0616924d53ecaafa20c463a7124f1fb48))
 
 ## [1.1.32](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.31...locale-nn-no-v1.1.32) (2026-04-02)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1620](https://github.com/sanity-io/locales/issues/1620)) ([db62303](https://github.com/sanity-io/locales/commit/db6230339f85596d8b47066383b4afe84681722c))
+- **nn-NO:** automated translation updates ([#1620](https://github.com/sanity-io/locales/issues/1620)) ([db62303](https://github.com/sanity-io/locales/commit/db6230339f85596d8b47066383b4afe84681722c))
 
 ## [1.1.31](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.30...locale-nn-no-v1.1.31) (2026-03-11)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1570](https://github.com/sanity-io/locales/issues/1570)) ([3bdc0a7](https://github.com/sanity-io/locales/commit/3bdc0a776d3eb612a05687f462485ce250faaf8a))
-* run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
+- **nn-NO:** automated translation updates ([#1570](https://github.com/sanity-io/locales/issues/1570)) ([3bdc0a7](https://github.com/sanity-io/locales/commit/3bdc0a776d3eb612a05687f462485ce250faaf8a))
+- run reconcile after upgrading sanity ([#1633](https://github.com/sanity-io/locales/issues/1633)) ([a9805cc](https://github.com/sanity-io/locales/commit/a9805cc4f7532d9292991a714e2322ea7ea1119b))
 
 ## [1.1.30](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.29...locale-nn-no-v1.1.30) (2026-02-10)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1465](https://github.com/sanity-io/locales/issues/1465)) ([4ebbfd0](https://github.com/sanity-io/locales/commit/4ebbfd02049c9491550f75dc40f0c757cf23d3f8))
-* **nn-NO:** automated translation updates ([#1528](https://github.com/sanity-io/locales/issues/1528)) ([1296c0c](https://github.com/sanity-io/locales/commit/1296c0cb824023341f41219d603b5d7223f18ffe))
+- **nn-NO:** automated translation updates ([#1465](https://github.com/sanity-io/locales/issues/1465)) ([4ebbfd0](https://github.com/sanity-io/locales/commit/4ebbfd02049c9491550f75dc40f0c757cf23d3f8))
+- **nn-NO:** automated translation updates ([#1528](https://github.com/sanity-io/locales/issues/1528)) ([1296c0c](https://github.com/sanity-io/locales/commit/1296c0cb824023341f41219d603b5d7223f18ffe))
 
 ## [1.1.29](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.28...locale-nn-no-v1.1.29) (2025-12-04)
 
-
 ### Bug Fixes
 
-* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
-* **nn-NO:** automated translation updates ([#1415](https://github.com/sanity-io/locales/issues/1415)) ([be959b6](https://github.com/sanity-io/locales/commit/be959b6dacb6866da2638f9b3380856af04b3eb9))
+- **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+- **nn-NO:** automated translation updates ([#1415](https://github.com/sanity-io/locales/issues/1415)) ([be959b6](https://github.com/sanity-io/locales/commit/be959b6dacb6866da2638f9b3380856af04b3eb9))
 
 ## [1.1.28](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.27...locale-nn-no-v1.1.28) (2025-11-19)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1358](https://github.com/sanity-io/locales/issues/1358)) ([72d1d4a](https://github.com/sanity-io/locales/commit/72d1d4a12289cd5b594407eeb8218ead984808e1))
+- **nn-NO:** automated translation updates ([#1358](https://github.com/sanity-io/locales/issues/1358)) ([72d1d4a](https://github.com/sanity-io/locales/commit/72d1d4a12289cd5b594407eeb8218ead984808e1))
 
 ## [1.1.27](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.26...locale-nn-no-v1.1.27) (2025-11-13)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1316](https://github.com/sanity-io/locales/issues/1316)) ([026edba](https://github.com/sanity-io/locales/commit/026edba00c46bdd01b68d6fb3edb3cbdffb05957))
-* reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
-* reconcile + prettify ([#1383](https://github.com/sanity-io/locales/issues/1383)) ([289d911](https://github.com/sanity-io/locales/commit/289d9117e84b3a9d35b8cd3eec8bfd15d9c4853a))
+- reconcile + prettify ([#1316](https://github.com/sanity-io/locales/issues/1316)) ([026edba](https://github.com/sanity-io/locales/commit/026edba00c46bdd01b68d6fb3edb3cbdffb05957))
+- reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
+- reconcile + prettify ([#1383](https://github.com/sanity-io/locales/issues/1383)) ([289d911](https://github.com/sanity-io/locales/commit/289d9117e84b3a9d35b8cd3eec8bfd15d9c4853a))
 
 ## [1.1.26](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.25...locale-nn-no-v1.1.26) (2025-09-04)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
+- reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
 
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.24...locale-nn-no-v1.1.25) (2025-08-14)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1273](https://github.com/sanity-io/locales/issues/1273)) ([6ef538b](https://github.com/sanity-io/locales/commit/6ef538be8a2dc3a96f259f458eee9219fe071b9c))
+- **nn-NO:** automated translation updates ([#1273](https://github.com/sanity-io/locales/issues/1273)) ([6ef538b](https://github.com/sanity-io/locales/commit/6ef538be8a2dc3a96f259f458eee9219fe071b9c))
 
 ## [1.1.24](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.23...locale-nn-no-v1.1.24) (2025-07-22)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
+- reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
 
 ## [1.1.23](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.22...locale-nn-no-v1.1.23) (2025-07-10)
 
-
 ### Bug Fixes
 
-* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
-* **nn-NO:** automated translation updates ([#1219](https://github.com/sanity-io/locales/issues/1219)) ([8dc4c79](https://github.com/sanity-io/locales/commit/8dc4c79819fb58ff9dec0dc48d66da3277e596ef))
+- **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+- **nn-NO:** automated translation updates ([#1219](https://github.com/sanity-io/locales/issues/1219)) ([8dc4c79](https://github.com/sanity-io/locales/commit/8dc4c79819fb58ff9dec0dc48d66da3277e596ef))
 
 ## [1.1.22](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.21...locale-nn-no-v1.1.22) (2025-05-30)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1146](https://github.com/sanity-io/locales/issues/1146)) ([41c3ea5](https://github.com/sanity-io/locales/commit/41c3ea5772cd70d7774a68fb3a67390fad74f9f2))
+- **nn-NO:** automated translation updates ([#1146](https://github.com/sanity-io/locales/issues/1146)) ([41c3ea5](https://github.com/sanity-io/locales/commit/41c3ea5772cd70d7774a68fb3a67390fad74f9f2))
 
 ## [1.1.21](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.20...locale-nn-no-v1.1.21) (2025-05-16)
 
-
 ### Bug Fixes
 
-* add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
+- add maintainers and contributors to readmes ([fe1ba53](https://github.com/sanity-io/locales/commit/fe1ba5364624d8e0cd850403e63215e345d27060))
 
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.19...locale-nn-no-v1.1.20) (2025-05-12)
 
-
 ### Bug Fixes
 
-* rename `create` namespace to `canvas` ([656500f](https://github.com/sanity-io/locales/commit/656500fc23153e0039c6ca1b57abc547a6450c87))
-* renconcile with latest sanity version ([5d27f40](https://github.com/sanity-io/locales/commit/5d27f40fc012ffed3f70297332a16bbdf688534f))
-* revert rename of `create` namespace to `canvas` ([88f63e9](https://github.com/sanity-io/locales/commit/88f63e9cac077059e6aac88f99ef00e6a09de669))
+- rename `create` namespace to `canvas` ([656500f](https://github.com/sanity-io/locales/commit/656500fc23153e0039c6ca1b57abc547a6450c87))
+- renconcile with latest sanity version ([5d27f40](https://github.com/sanity-io/locales/commit/5d27f40fc012ffed3f70297332a16bbdf688534f))
+- revert rename of `create` namespace to `canvas` ([88f63e9](https://github.com/sanity-io/locales/commit/88f63e9cac077059e6aac88f99ef00e6a09de669))
 
 ## [1.1.19](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.18...locale-nn-no-v1.1.19) (2025-05-12)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#1023](https://github.com/sanity-io/locales/issues/1023)) ([d1f1517](https://github.com/sanity-io/locales/commit/d1f15177ccccc4772c0d85a859627870db12f633))
-* **nn-NO:** automated translation updates ([#1086](https://github.com/sanity-io/locales/issues/1086)) ([bd98c4e](https://github.com/sanity-io/locales/commit/bd98c4e56d90c812908a3014ac0d321d9898e0cd))
+- **nn-NO:** automated translation updates ([#1023](https://github.com/sanity-io/locales/issues/1023)) ([d1f1517](https://github.com/sanity-io/locales/commit/d1f15177ccccc4772c0d85a859627870db12f633))
+- **nn-NO:** automated translation updates ([#1086](https://github.com/sanity-io/locales/issues/1086)) ([bd98c4e](https://github.com/sanity-io/locales/commit/bd98c4e56d90c812908a3014ac0d321d9898e0cd))
 
 ## [1.1.18](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.17...locale-nn-no-v1.1.18) (2025-02-06)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#980](https://github.com/sanity-io/locales/issues/980)) ([b27f722](https://github.com/sanity-io/locales/commit/b27f722c5711f8da03d7fc79d6d79c0ec49d946e))
+- **nn-NO:** automated translation updates ([#980](https://github.com/sanity-io/locales/issues/980)) ([b27f722](https://github.com/sanity-io/locales/commit/b27f722c5711f8da03d7fc79d6d79c0ec49d946e))
 
 ## [1.1.17](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.16...locale-nn-no-v1.1.17) (2025-01-06)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#793](https://github.com/sanity-io/locales/issues/793)) ([f43fa24](https://github.com/sanity-io/locales/commit/f43fa24142ad6f5a00a967780fd770ea54bc8265))
-* **nn-NO:** automated translation updates ([#877](https://github.com/sanity-io/locales/issues/877)) ([e4ae054](https://github.com/sanity-io/locales/commit/e4ae0541c757badfab1e20e8f47ed10f7311fc3c))
-* reconcile + prettify ([#861](https://github.com/sanity-io/locales/issues/861)) ([e9f7448](https://github.com/sanity-io/locales/commit/e9f7448460b48fc803bd6604aada91630348ab95))
+- **nn-NO:** automated translation updates ([#793](https://github.com/sanity-io/locales/issues/793)) ([f43fa24](https://github.com/sanity-io/locales/commit/f43fa24142ad6f5a00a967780fd770ea54bc8265))
+- **nn-NO:** automated translation updates ([#877](https://github.com/sanity-io/locales/issues/877)) ([e4ae054](https://github.com/sanity-io/locales/commit/e4ae0541c757badfab1e20e8f47ed10f7311fc3c))
+- reconcile + prettify ([#861](https://github.com/sanity-io/locales/issues/861)) ([e9f7448](https://github.com/sanity-io/locales/commit/e9f7448460b48fc803bd6604aada91630348ab95))
 
 ## [1.1.16](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.15...locale-nn-no-v1.1.16) (2024-12-07)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
+- reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
 
 ## [1.1.15](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.14...locale-nn-no-v1.1.15) (2024-11-26)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#773](https://github.com/sanity-io/locales/issues/773)) ([037b874](https://github.com/sanity-io/locales/commit/037b8747ab096387a988bef3e632812f7217f53f))
-* reconcile + prettify ([#811](https://github.com/sanity-io/locales/issues/811)) ([4c61ca0](https://github.com/sanity-io/locales/commit/4c61ca096c2fd158aefd895681bb0b7c2a634234))
+- reconcile + prettify ([#773](https://github.com/sanity-io/locales/issues/773)) ([037b874](https://github.com/sanity-io/locales/commit/037b8747ab096387a988bef3e632812f7217f53f))
+- reconcile + prettify ([#811](https://github.com/sanity-io/locales/issues/811)) ([4c61ca0](https://github.com/sanity-io/locales/commit/4c61ca096c2fd158aefd895681bb0b7c2a634234))
 
 ## [1.1.14](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.13...locale-nn-no-v1.1.14) (2024-10-15)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#706](https://github.com/sanity-io/locales/issues/706)) ([d06b152](https://github.com/sanity-io/locales/commit/d06b15247fe1e6f84557cff12b69c3e456100b17))
-* reconcile + prettify ([#688](https://github.com/sanity-io/locales/issues/688)) ([3404058](https://github.com/sanity-io/locales/commit/3404058c7a55c2163d680d84953f7ac5defb2066))
+- **nn-NO:** automated translation updates ([#706](https://github.com/sanity-io/locales/issues/706)) ([d06b152](https://github.com/sanity-io/locales/commit/d06b15247fe1e6f84557cff12b69c3e456100b17))
+- reconcile + prettify ([#688](https://github.com/sanity-io/locales/issues/688)) ([3404058](https://github.com/sanity-io/locales/commit/3404058c7a55c2163d680d84953f7ac5defb2066))
 
 ## [1.1.13](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.12...locale-nn-no-v1.1.13) (2024-09-10)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#643](https://github.com/sanity-io/locales/issues/643)) ([b0f3210](https://github.com/sanity-io/locales/commit/b0f32103c5fdfab3db050c697287b0dc82b86d7a))
+- **nn-NO:** automated translation updates ([#643](https://github.com/sanity-io/locales/issues/643)) ([b0f3210](https://github.com/sanity-io/locales/commit/b0f32103c5fdfab3db050c697287b0dc82b86d7a))
 
 ## [1.1.12](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.11...locale-nn-no-v1.1.12) (2024-08-15)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#599](https://github.com/sanity-io/locales/issues/599)) ([66a29a9](https://github.com/sanity-io/locales/commit/66a29a9a88d79f3e6b29f1093ade2ec36e1a6722))
+- **nn-NO:** automated translation updates ([#599](https://github.com/sanity-io/locales/issues/599)) ([66a29a9](https://github.com/sanity-io/locales/commit/66a29a9a88d79f3e6b29f1093ade2ec36e1a6722))
 
 ## [1.1.11](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.10...locale-nn-no-v1.1.11) (2024-07-31)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#611](https://github.com/sanity-io/locales/issues/611)) ([5346940](https://github.com/sanity-io/locales/commit/534694059e674d5150f7f484fd79411b0f5b74a2))
+- reconcile + prettify ([#611](https://github.com/sanity-io/locales/issues/611)) ([5346940](https://github.com/sanity-io/locales/commit/534694059e674d5150f7f484fd79411b0f5b74a2))
 
 ## [1.1.10](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.9...locale-nn-no-v1.1.10) (2024-07-23)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#525](https://github.com/sanity-io/locales/issues/525)) ([6d6dab6](https://github.com/sanity-io/locales/commit/6d6dab64ea450fbcb515cf17859ca26423ccaf1a))
+- **nn-NO:** automated translation updates ([#525](https://github.com/sanity-io/locales/issues/525)) ([6d6dab6](https://github.com/sanity-io/locales/commit/6d6dab64ea450fbcb515cf17859ca26423ccaf1a))
 
 ## [1.1.9](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.8...locale-nn-no-v1.1.9) (2024-07-12)
 
-
 ### Bug Fixes
 
-* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+- **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
 
 ## [1.1.8](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.7...locale-nn-no-v1.1.8) (2024-07-11)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#457](https://github.com/sanity-io/locales/issues/457)) ([db1ee28](https://github.com/sanity-io/locales/commit/db1ee280c8045ba7e859732e66879a5d0d321dbb))
+- **nn-NO:** automated translation updates ([#457](https://github.com/sanity-io/locales/issues/457)) ([db1ee28](https://github.com/sanity-io/locales/commit/db1ee280c8045ba7e859732e66879a5d0d321dbb))
 
 ## [1.1.7](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.6...locale-nn-no-v1.1.7) (2024-07-09)
 
-
 ### Bug Fixes
 
-* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+- upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
 
 ## [1.1.6](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.5...locale-nn-no-v1.1.6) (2024-04-03)
 
-
 ### Bug Fixes
 
-* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+- **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
 
 ## [1.1.5](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.4...locale-nn-no-v1.1.5) (2024-03-18)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#422](https://github.com/sanity-io/locales/issues/422)) ([bcf10b8](https://github.com/sanity-io/locales/commit/bcf10b8317a61af80cdf05ab8d255c6b35861481))
-* reconcile + prettify ([#440](https://github.com/sanity-io/locales/issues/440)) ([e46bf77](https://github.com/sanity-io/locales/commit/e46bf77ac38a317cb049b80afe1b85b97432f3c0))
+- **nn-NO:** automated translation updates ([#422](https://github.com/sanity-io/locales/issues/422)) ([bcf10b8](https://github.com/sanity-io/locales/commit/bcf10b8317a61af80cdf05ab8d255c6b35861481))
+- reconcile + prettify ([#440](https://github.com/sanity-io/locales/issues/440)) ([e46bf77](https://github.com/sanity-io/locales/commit/e46bf77ac38a317cb049b80afe1b85b97432f3c0))
 
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.3...locale-nn-no-v1.1.4) (2024-03-02)
 
-
 ### Bug Fixes
 
-* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+- mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
 
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.2...locale-nn-no-v1.1.3) (2024-03-02)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#368](https://github.com/sanity-io/locales/issues/368)) ([4b8584b](https://github.com/sanity-io/locales/commit/4b8584ba9804ab51af8da45211076c0ba86eda7b))
+- reconcile + prettify ([#368](https://github.com/sanity-io/locales/issues/368)) ([4b8584b](https://github.com/sanity-io/locales/commit/4b8584ba9804ab51af8da45211076c0ba86eda7b))
 
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.1...locale-nn-no-v1.1.2) (2024-02-22)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#378](https://github.com/sanity-io/locales/issues/378)) ([2731a02](https://github.com/sanity-io/locales/commit/2731a02d8f55cbce1b08032486ae2cdac3458a34))
-* **nn-NO:** automated translation updates ([#399](https://github.com/sanity-io/locales/issues/399)) ([63ee666](https://github.com/sanity-io/locales/commit/63ee666b8a1bd2b7d2d943f1575cf75f1455ed59))
+- **nn-NO:** automated translation updates ([#378](https://github.com/sanity-io/locales/issues/378)) ([2731a02](https://github.com/sanity-io/locales/commit/2731a02d8f55cbce1b08032486ae2cdac3458a34))
+- **nn-NO:** automated translation updates ([#399](https://github.com/sanity-io/locales/issues/399)) ([63ee666](https://github.com/sanity-io/locales/commit/63ee666b8a1bd2b7d2d943f1575cf75f1455ed59))
 
 ## [1.1.1](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.1.0...locale-nn-no-v1.1.1) (2024-02-12)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#348](https://github.com/sanity-io/locales/issues/348)) ([29f7013](https://github.com/sanity-io/locales/commit/29f70135f892f4c4800c84368db11e3d6e003706))
+- **nn-NO:** automated translation updates ([#348](https://github.com/sanity-io/locales/issues/348)) ([29f7013](https://github.com/sanity-io/locales/commit/29f70135f892f4c4800c84368db11e3d6e003706))
 
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.4...locale-nn-no-v1.1.0) (2024-02-07)
 
-
 ### Features
 
-* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
-
+- add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
 
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#320](https://github.com/sanity-io/locales/issues/320)) ([cc12519](https://github.com/sanity-io/locales/commit/cc1251900c12134d282b249256c764902d958b78))
+- **nn-NO:** automated translation updates ([#320](https://github.com/sanity-io/locales/issues/320)) ([cc12519](https://github.com/sanity-io/locales/commit/cc1251900c12134d282b249256c764902d958b78))
 
 ## [1.0.4](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.3...locale-nn-no-v1.0.4) (2024-01-18)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([#291](https://github.com/sanity-io/locales/issues/291)) ([be56822](https://github.com/sanity-io/locales/commit/be56822be1fb4510aa420f9b9f07c077cd03ee4e))
+- **nn-NO:** automated translation updates ([#291](https://github.com/sanity-io/locales/issues/291)) ([be56822](https://github.com/sanity-io/locales/commit/be56822be1fb4510aa420f9b9f07c077cd03ee4e))
 
 ## [1.0.3](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.2...locale-nn-no-v1.0.3) (2024-01-17)
 
-
 ### Bug Fixes
 
-* **nn-NO:** align resource keys ([838f904](https://github.com/sanity-io/locales/commit/838f9044d0857ffddbfe28062a23e6d7724183e6))
-* **nn-NO:** automated translation updates ([#257](https://github.com/sanity-io/locales/issues/257)) ([9d646ac](https://github.com/sanity-io/locales/commit/9d646acebbc2c52f7c0f9cae3fdd27e7ddbf9d5f))
-* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
-* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+- **nn-NO:** align resource keys ([838f904](https://github.com/sanity-io/locales/commit/838f9044d0857ffddbfe28062a23e6d7724183e6))
+- **nn-NO:** automated translation updates ([#257](https://github.com/sanity-io/locales/issues/257)) ([9d646ac](https://github.com/sanity-io/locales/commit/9d646acebbc2c52f7c0f9cae3fdd27e7ddbf9d5f))
+- reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+- reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
 
 ## [1.0.2](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.1...locale-nn-no-v1.0.2) (2023-12-22)
 
-
 ### Bug Fixes
 
-* **nn-NO:** add s-rd as maintainer of Norsk (Nynorsk) ([#175](https://github.com/sanity-io/locales/issues/175)) ([a5b9278](https://github.com/sanity-io/locales/commit/a5b9278e6c650bfae9c312fdfbe66edb988f1b97))
+- **nn-NO:** add s-rd as maintainer of Norsk (Nynorsk) ([#175](https://github.com/sanity-io/locales/issues/175)) ([a5b9278](https://github.com/sanity-io/locales/commit/a5b9278e6c650bfae9c312fdfbe66edb988f1b97))
 
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-nn-no-v1.0.0...locale-nn-no-v1.0.1) (2023-12-19)
 
-
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([0b1c3b4](https://github.com/sanity-io/locales/commit/0b1c3b48cbc3a5b17e6c4c4dcdd2b5e609fffc56))
+- **nn-NO:** automated translation updates ([0b1c3b4](https://github.com/sanity-io/locales/commit/0b1c3b48cbc3a5b17e6c4c4dcdd2b5e609fffc56))
 
 ## [1.0.0](https://github.com/sanity-io/locales/compare/locale-nn-no-v0.1.1...locale-nn-no-v1.0.0) (2023-12-19)
 
-
 ### ⚠ BREAKING CHANGES
 
-* require sanity v3.22.0 or higher
+- require sanity v3.22.0 or higher
 
 ### Features
 
-* require sanity v3.22.0 or higher ([aba6c8c](https://github.com/sanity-io/locales/commit/aba6c8c3fd4f6e11b193b96a3821420f72ccc47d))
-
+- require sanity v3.22.0 or higher ([aba6c8c](https://github.com/sanity-io/locales/commit/aba6c8c3fd4f6e11b193b96a3821420f72ccc47d))
 
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([be87e66](https://github.com/sanity-io/locales/commit/be87e66836c9292608d269bb44eafad683522a1b))
+- **nn-NO:** automated translation updates ([be87e66](https://github.com/sanity-io/locales/commit/be87e66836c9292608d269bb44eafad683522a1b))
 
 ## [0.1.1](https://github.com/sanity-io/locales/compare/locale-nn-no-v0.1.0...locale-nn-no-v0.1.1) (2023-12-12)
 
-
 ### Bug Fixes
 
-* add prepublish build script ([561dcfb](https://github.com/sanity-io/locales/commit/561dcfb24ab12f98fcc590b0dbc2cf297ea60485))
+- add prepublish build script ([561dcfb](https://github.com/sanity-io/locales/commit/561dcfb24ab12f98fcc590b0dbc2cf297ea60485))
 
 ## [0.1.0](https://github.com/sanity-io/locales/compare/locale-nn-no-v0.0.1...locale-nn-no-v0.1.0) (2023-12-12)
 
-
 ### Features
 
-* allow specifying title and week info during plugin init ([c1d1116](https://github.com/sanity-io/locales/commit/c1d1116bab0c99c6506a9744e33d6cf282bf1c1b))
-* include week info in locale definition ([73cec7f](https://github.com/sanity-io/locales/commit/73cec7fb69ac92a565282aac0d08f13b634372fb))
-* reconcile, sort readme locale list by english name ([1c6ada6](https://github.com/sanity-io/locales/commit/1c6ada624e83307f820d6c4ce1e7560eaf94b151))
-* update resources from latest version ([e4d4f9d](https://github.com/sanity-io/locales/commit/e4d4f9daf8c2566f3ee7c9b002ac6d0051a2734c))
-
+- allow specifying title and week info during plugin init ([c1d1116](https://github.com/sanity-io/locales/commit/c1d1116bab0c99c6506a9744e33d6cf282bf1c1b))
+- include week info in locale definition ([73cec7f](https://github.com/sanity-io/locales/commit/73cec7fb69ac92a565282aac0d08f13b634372fb))
+- reconcile, sort readme locale list by english name ([1c6ada6](https://github.com/sanity-io/locales/commit/1c6ada624e83307f820d6c4ce1e7560eaf94b151))
+- update resources from latest version ([e4d4f9d](https://github.com/sanity-io/locales/commit/e4d4f9daf8c2566f3ee7c9b002ac6d0051a2734c))
 
 ### Bug Fixes
 
-* **nn-NO:** automated translation updates ([13b36fe](https://github.com/sanity-io/locales/commit/13b36fe024bff474cead52be5bde0a37cf8cf9ba))
-* **nn-NO:** fixed a couple of not-good AI translations ([36df91b](https://github.com/sanity-io/locales/commit/36df91bc3d5abd253699f782d7fe6abce353d516))
-* restore norwegian languages ([#30](https://github.com/sanity-io/locales/issues/30)) ([b3a8c2b](https://github.com/sanity-io/locales/commit/b3a8c2ba377ee4b739b8b5eb93ccf354ba1fb22c))
-* use exported week info type ([7be1ab2](https://github.com/sanity-io/locales/commit/7be1ab27939e1836e000155c576362fb5f54bd3e))
-* use public publishConfig ([780ed3e](https://github.com/sanity-io/locales/commit/780ed3e6d35198fedebd769e71bf1dcc09fc6528))
+- **nn-NO:** automated translation updates ([13b36fe](https://github.com/sanity-io/locales/commit/13b36fe024bff474cead52be5bde0a37cf8cf9ba))
+- **nn-NO:** fixed a couple of not-good AI translations ([36df91b](https://github.com/sanity-io/locales/commit/36df91bc3d5abd253699f782d7fe6abce353d516))
+- restore norwegian languages ([#30](https://github.com/sanity-io/locales/issues/30)) ([b3a8c2b](https://github.com/sanity-io/locales/commit/b3a8c2ba377ee4b739b8b5eb93ccf354ba1fb22c))
+- use exported week info type ([7be1ab2](https://github.com/sanity-io/locales/commit/7be1ab27939e1836e000155c576362fb5f54bd3e))
+- use public publishConfig ([780ed3e](https://github.com/sanity-io/locales/commit/780ed3e6d35198fedebd769e71bf1dcc09fc6528))
