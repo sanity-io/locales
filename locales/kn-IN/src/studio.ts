@@ -501,8 +501,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the list of releases a variant can be created in */
   'document-group.create-variant.target-releases': 'ಒಂದು ರಿಲೀಸ್‌ಗೆ',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants':
-    'ಅಥವಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೂಪಾಂತರಗಳನ್ನು ವೀಕ್ಷಿಸಿ',
+  'document-group.create-variant.view-existing-variants': 'ಅಥವಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ರೂಪಾಂತರಗಳನ್ನು ವೀಕ್ಷಿಸಿ',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'ರದ್ದುಮಾಡಿ',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -597,8 +596,7 @@ export default removeUndefinedLocaleResources({
    * Toast description shown when a document's initial value could not be
    * resolved. Includes the underlying error message.
    */
-  'document.initial-value.error.description':
-    'ದಾಖಲೆಯು ಖಾಲಿ ಮೌಲ್ಯದೊಂದಿಗೆ ತೆರೆಯಲ್ಪಟ್ಟಿದೆ. {{errorMessage}}',
+  'document.initial-value.error.description': 'ದಾಖಲೆಯು ಖಾಲಿ ಮೌಲ್ಯದೊಂದಿಗೆ ತೆರೆಯಲ್ಪಟ್ಟಿದೆ. {{errorMessage}}',
   /** Toast title shown when a document's initial value could not be resolved */
   'document.initial-value.error.title': 'ಆರಂಭಿಕ ಮೌಲ್ಯವನ್ನು ಪರಿಹರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ',
   /** Label to indicate that a document type was not found */

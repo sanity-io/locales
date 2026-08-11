@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "denyWarnings": true,
+    "reportUnusedDisableDirectives": "error"
+  },
+  "ignorePatterns": ["**/dist", "apps/studio/.sanity"],
+  "plugins": ["unicorn", "typescript", "oxc", "import", "node"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "error"
+  },
+  "rules": {
+    "typescript/ban-ts-comment": "error",
+    "typescript/prefer-ts-expect-error": "error",
+    "typescript/switch-exhaustiveness-check": "error",
+    "typescript/no-deprecated": "error",
+    "typescript/no-explicit-any": "off",
+    "typescript/no-unsafe-type-assertion": "off",
+    "typescript/no-unnecessary-type-assertion": "off",
+    "import/no-cycle": "error",
+    "oxc/no-barrel-file": "error",
+    "eslint/no-console": ["error", {"allow": ["warn", "error"]}],
+    "eslint/no-await-in-loop": "off",
+    "eslint/no-shadow": "off",
+    "eslint/no-underscore-dangle": "off",
+    "consistent-return": "off"
+  },
+  "overrides": [
+    {
+      "files": ["src/cli/**", "src/api/**", "src/util/**", "test/**"],
+      "rules": {
+        "eslint/no-console": "off"
+      }
+    },
+    {
+      "files": ["locales/*/src/**", "apps/studio/i18n/**"],
+      "rules": {
+        "typescript/no-deprecated": "off"
+      }
+    }
+  ]
+}

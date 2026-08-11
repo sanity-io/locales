@@ -1,4 +1,6 @@
 import {execFile as execFileCb} from 'node:child_process'
+import {writeFile} from 'node:fs/promises'
+import {join as joinPath} from 'node:path'
 import {promisify} from 'node:util'
 
 import Anthropic from '@anthropic-ai/sdk'
@@ -87,9 +89,9 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
 
   if (targetLocales && targetLocales.length !== filteredLocales.length) {
     throw new Error(
-      `Could not find one or more of the requested locales: ${targetLocales.filter(
-        (locale) => !filteredLocales.find((l) => l.id === locale),
-      )}`,
+      `Could not find one or more of the requested locales: ${targetLocales
+        .filter((locale) => !filteredLocales.find((l) => l.id === locale))
+        .join(', ')}`,
     )
   }
 
@@ -145,7 +147,6 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
           let batchTranslated = 0
           for (const key of currentBatch) {
             const val = ns.indexedResources[key.key]
-            // eslint-disable-next-line max-depth
             if (!val) {
               continue
             }
@@ -196,7 +197,7 @@ function templateMissingResources(
   missingKeys.forEach((entry) => {
     const val = indexedResources[entry.key]
     if (val) {
-      tpl += `  // ${val.comments}\n`
+      tpl += `  // ${(val.comments ?? []).join(',')}\n`
       tpl += `  ${JSON.stringify(entry.key)}: ${JSON.stringify(val.baseValue)},\n`
     }
   })
@@ -224,7 +225,6 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
   // no trailing text, no truncated JSON.
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
-    // eslint-disable-next-line camelcase
     max_tokens: 4096,
     system: getSystemPrompt(),
     messages: [
@@ -233,20 +233,19 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
         content: `I would like this translated to ${targetLanguage}:\n\n${text}`,
       },
     ],
+    // oxlint-disable-next-line typescript/no-deprecated -- deterministic output is preferred for translations, and the model in use still supports setting temperature
     temperature: 0,
     tools: [
       {
         name: 'submit_translations',
         description:
           'Submit the translated key-value pairs. Each key must match the original key exactly, and each value is the translated string.',
-        // eslint-disable-next-line camelcase
         input_schema: {
           type: 'object' as const,
           additionalProperties: {type: 'string'},
         },
       },
     ],
-    // eslint-disable-next-line camelcase
     tool_choice: {type: 'tool' as const, name: 'submit_translations'},
   })
 
@@ -435,11 +434,30 @@ export async function pushChanges(options: {
     // The locale has changes, add the changes to index
     await execGitCommand(['add', locale.path])
 
+    // Include a changeset so the translation update is released once the PR is merged.
+    // Releases are managed by changesets, which only publishes packages that have a pending
+    // changeset - a conventional commit message alone does not trigger a release.
+    const changesetPath = await writeChangeset(locale)
+    await execGitCommand(['add', changesetPath])
+
     // Commit the changes
     const commitMessage = `fix(${locale.id}): automated translation updates`
     await execGitCommand(['commit', '-m', commitMessage])
 
     return commitMessage
+  }
+
+  /**
+   * Write a changeset declaring a patch release for the given locale package.
+   * Uses a deterministic filename so repeated runs for the same locale overwrite
+   * the previous changeset instead of accumulating new ones.
+   */
+  async function writeChangeset(locale: Locale) {
+    const fileName = `auto-translate-${locale.id.toLowerCase()}.md`
+    const changesetPath = joinPath(rootPath, '.changeset', fileName)
+    const content = `---\n"${locale.packageName}": patch\n---\n\nAutomated translation updates\n`
+    await writeFile(changesetPath, content)
+    return changesetPath
   }
 }
 

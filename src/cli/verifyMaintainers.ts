@@ -19,7 +19,7 @@ let cachedRateLimitInfo: RateLimitInfo | null = null
  * Get GitHub token from environment variable if available
  */
 function getGitHubToken(): string | undefined {
-  return process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+  return process.env['GITHUB_TOKEN'] || process.env['GH_TOKEN']
 }
 
 /**
@@ -33,7 +33,7 @@ function createHeaders() {
 
   const token = getGitHubToken()
   if (token) {
-    headers.Authorization = `Bearer ${token}`
+    headers['Authorization'] = `Bearer ${token}`
   }
 
   return headers

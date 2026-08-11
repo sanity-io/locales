@@ -21,7 +21,7 @@ export async function buildRootReadme(): Promise<string> {
   let inLocaleList = false
 
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]
+    const line = lines[i] ?? ''
     if (line.includes('<!-- <locale-list> -->')) {
       localeListIndex = i + 1
       inLocaleList = true
@@ -41,7 +41,7 @@ export async function buildRootReadme(): Promise<string> {
   localeList.push(`| Language | Package | Has maintainers |`)
   localeList.push(`| -------- | ------- | --------------- |`)
 
-  const enSorted = registry.slice().sort((a, b) => a.englishName.localeCompare(b.englishName))
+  const enSorted = registry.toSorted((a, b) => a.englishName.localeCompare(b.englishName))
   for (const locale of enSorted) {
     const path = relativePath(rootPath, locale.path)
     const ghUrl = `https://github.com/sanity-io/locales/tree/main/${path}`

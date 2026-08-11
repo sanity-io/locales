@@ -27,8 +27,7 @@
     "directory": "locales/uk-UA"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "type": "module",
   "sideEffects": false,
@@ -45,11 +44,18 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs",
+        "default": "./dist/index.js"
+      },
+      "./package.json": "./package.json"
+    },
     "access": "public"
   },
   "scripts": {
-    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
-    "clean": "rimraf dist",
+    "build": "npm run pkg:build && npm run pkg:check",
     "pkg:build": "pkg build --strict",
     "pkg:check": "pkg check --strict",
     "prepublishOnly": "pnpm build"
@@ -57,5 +63,8 @@
   "peerDependencies": {
     "sanity": "^3.22.0 || ^4.0.0-0 || ^5.0.0-0 || ^6.0.0-0"
   },
-  "browserslist": "extends @sanity/browserslist-config"
+  "browserslist": "extends @sanity/browserslist-config",
+  "engines": {
+    "node": ">=18"
+  }
 }

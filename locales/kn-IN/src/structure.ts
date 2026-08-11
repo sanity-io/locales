@@ -14,8 +14,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release': 'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲಾಗದು ಏಕೆಂದರೆ ಇದು ನಿಗದಿತ ಬಿಡುಗಡೆಗಳಲ್ಲಿದೆ',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
-  'action.delete.disabled.target-not-found':
-    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
+  'action.delete.disabled.target-not-found': 'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ಅಳಿಸು',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -46,8 +45,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate': 'ಈ ದಾಖಲೆಯು ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ ಹಾಗಾಗಿ ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.duplicate.disabled.target-not-found':
-    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
+  'action.duplicate.disabled.target-not-found': 'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'ನಕಲು',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -61,8 +59,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಾಗಿಲ್ಲ',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.publish.disabled.target-not-found':
-    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
+  'action.publish.disabled.target-not-found': 'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'ಪ್ರಕಟಿಸು',
   /** Label for the "Publish" document action */
@@ -103,8 +100,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'ಕಾರ್ಯಾಚರಣೆ ಸಿದ್ಧವಿಲ್ಲ',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.unpublish.disabled.target-not-found':
-    'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
+  'action.unpublish.disabled.target-not-found': 'ಆಯ್ಕೆ ಮಾಡಿದ release ಅಥವಾ variant ಈ ದಾಖಲೆಯನ್ನು ಒಳಗೊಂಡಿಲ್ಲ',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'ಪ್ರಕಟಣೆ ರದ್ದುಗೊಳಿಸು',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -453,8 +449,7 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': 'ಕಚ್ಚಾ JSON',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    'ಆಯ್ಕೆ ಮಾಡಿದ perspective ನಲ್ಲಿ ದಾಖಲೆ ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
+  'document-target-badges.not-in-target.tooltip': 'ಆಯ್ಕೆ ಮಾಡಿದ perspective ನಲ್ಲಿ ದಾಖಲೆ ಇನ್ನೂ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'ಈ ಫಾರ್ಮ್ ಅಡಗಿಸಲಾಗಿದೆ',
