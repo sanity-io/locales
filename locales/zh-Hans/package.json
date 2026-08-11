@@ -2,7 +2,7 @@
   "name": "@sanity/locale-zh-hans",
   "version": "2.1.38",
   "private": false,
-  "description": "Chinese (Simplified) / 简体中文 locale/translation for Sanity Studio",
+  "description": "Chinese (Simplified) / \u7b80\u4f53\u4e2d\u6587 locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "locale",
@@ -50,9 +50,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

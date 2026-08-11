@@ -2,7 +2,7 @@
   "name": "@sanity/locale-vi-vn",
   "version": "1.1.38",
   "private": false,
-  "description": "Vietnamese / Tiếng Việt locale/translation for Sanity Studio",
+  "description": "Vietnamese / Ti\u1ebfng Vi\u1ec7t locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "locale",
@@ -55,9 +55,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

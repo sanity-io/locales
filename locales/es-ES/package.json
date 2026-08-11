@@ -2,7 +2,7 @@
   "name": "@sanity/locale-es-es",
   "version": "1.2.38",
   "private": false,
-  "description": "Spanish / Español locale/translation for Sanity Studio",
+  "description": "Spanish / Espa\u00f1ol locale/translation for Sanity Studio",
   "keywords": [
     "es-ES",
     "i18n",
@@ -63,9 +63,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

@@ -2,7 +2,7 @@
   "name": "@sanity/locale-fr-fr",
   "version": "1.2.36",
   "private": false,
-  "description": "French / Français locale/translation for Sanity Studio",
+  "description": "French / Fran\u00e7ais locale/translation for Sanity Studio",
   "keywords": [
     "fr-FR",
     "i18n",
@@ -63,9 +63,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

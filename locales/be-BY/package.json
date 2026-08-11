@@ -2,7 +2,7 @@
   "name": "@sanity/locale-be-by",
   "version": "1.1.37",
   "private": false,
-  "description": "Belarusian / Беларуская locale/translation for Sanity Studio",
+  "description": "Belarusian / \u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f locale/translation for Sanity Studio",
   "keywords": [
     "be-BY",
     "i18n",
@@ -59,9 +59,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

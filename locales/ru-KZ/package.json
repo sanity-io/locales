@@ -2,7 +2,7 @@
   "name": "@sanity/locale-ru-kz",
   "version": "1.1.35",
   "private": false,
-  "description": "Russian (Kazakhstan) / Русский locale/translation for Sanity Studio",
+  "description": "Russian (Kazakhstan) / \u0420\u0443\u0441\u0441\u043a\u0438\u0439 locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "locale",
@@ -55,9 +55,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

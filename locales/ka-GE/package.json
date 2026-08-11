@@ -2,7 +2,7 @@
   "name": "@sanity/locale-ka-ge",
   "version": "1.0.34",
   "private": false,
-  "description": "Georgian / ქართული locale/translation for Sanity Studio",
+  "description": "Georgian / \u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8 locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "ka-GE",
@@ -55,9 +55,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {

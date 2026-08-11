@@ -52,10 +52,8 @@ export async function buildPackageJson(locale: Locale): Promise<string> {
     },
     sideEffects: false,
     scripts: {
-      'build': 'npm run pkg:build && npm run pkg:check',
-      'pkg:build': 'pkg build --strict',
-      'pkg:check': 'pkg check --strict',
-      'prepublishOnly': 'pnpm build',
+      build: 'pkg build --strict --check',
+      prepublishOnly: 'pnpm build',
     },
     keywords: ['sanity', 'i18n', 'locale', 'localization', locale.id],
     files: ['dist'],

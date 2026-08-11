@@ -2,7 +2,7 @@
   "name": "@sanity/locale-kn-in",
   "version": "1.0.36",
   "private": false,
-  "description": "Kannada (India) / ಕನ್ನಡ locale/translation for Sanity Studio",
+  "description": "Kannada (India) / \u0c95\u0ca8\u0ccd\u0ca8\u0ca1 locale/translation for Sanity Studio",
   "keywords": [
     "i18n",
     "kn-IN",
@@ -55,9 +55,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run pkg:build && npm run pkg:check",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
