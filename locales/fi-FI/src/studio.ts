@@ -485,7 +485,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Peruuta',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Hallinnoi versioita',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Kuinka helppoa tai vaikeaa uuden version inventaarin käyttäminen on?',
