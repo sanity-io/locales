@@ -47,11 +47,11 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^3.5.2",
-    "@sanity/vision": "^6.9.1",
+    "@sanity/ui": "^4.0.1",
+    "@sanity/vision": "^6.9.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "sanity": "^6.9.1",
+    "sanity": "^6.9.2",
     "styled-components": "^6.5.1"
   },
   "devDependencies": {
