@@ -8,6 +8,7 @@ const registry: LocaleRegistry = [
     englishName: 'Belarusian',
     maintainers: ['dogfrogfog', 'slawiko'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ca-ES',
@@ -15,6 +16,7 @@ const registry: LocaleRegistry = [
     englishName: 'Catalan',
     maintainers: ['jorvixsky'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'cs-CZ',
@@ -22,6 +24,7 @@ const registry: LocaleRegistry = [
     englishName: 'Czech',
     maintainers: ['jansindl3r'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'da-DK',
@@ -29,6 +32,7 @@ const registry: LocaleRegistry = [
     englishName: 'Danish',
     maintainers: ['Kastholm'],
     contributors: ['Kasper-Buchholtz'],
+    isOfficial: false,
   },
   {
     id: 'de-DE',
@@ -36,6 +40,7 @@ const registry: LocaleRegistry = [
     englishName: 'German',
     maintainers: ['wrknd'],
     contributors: ['sebastianhaiss'],
+    isOfficial: false,
   },
   {
     id: 'es-ES',
@@ -43,6 +48,7 @@ const registry: LocaleRegistry = [
     englishName: 'Spanish',
     maintainers: ['imaprototype', 'jferrettiboke', 'pedrobonamin'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'fi-FI',
@@ -50,6 +56,7 @@ const registry: LocaleRegistry = [
     englishName: 'Finnish',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'fr-FR',
@@ -57,6 +64,7 @@ const registry: LocaleRegistry = [
     englishName: 'French',
     maintainers: ['AymericWilke', 'thierryteyssier', 'ahelliet'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'hr-HR',
@@ -64,6 +72,7 @@ const registry: LocaleRegistry = [
     englishName: 'Croatian',
     maintainers: ['WebShapedBiz'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'hu-HU',
@@ -71,6 +80,7 @@ const registry: LocaleRegistry = [
     englishName: 'Hungarian',
     maintainers: ['peter-gy'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'is-IS',
@@ -78,6 +88,7 @@ const registry: LocaleRegistry = [
     englishName: 'Icelandic',
     maintainers: ['magnimarels'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'it-IT',
@@ -85,6 +96,7 @@ const registry: LocaleRegistry = [
     englishName: 'Italian',
     maintainers: ['valse'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ja-JP',
@@ -92,6 +104,7 @@ const registry: LocaleRegistry = [
     englishName: 'Japanese',
     maintainers: ['rikusen0335'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ka-GE',
@@ -99,6 +112,7 @@ const registry: LocaleRegistry = [
     englishName: 'Georgian',
     maintainers: ['TsotneDarjania'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'kn-IN',
@@ -106,6 +120,7 @@ const registry: LocaleRegistry = [
     englishName: 'Kannada (India)',
     maintainers: ['achanda101'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ko-KR',
@@ -113,6 +128,7 @@ const registry: LocaleRegistry = [
     englishName: 'Korean',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'nb-NO',
@@ -120,6 +136,7 @@ const registry: LocaleRegistry = [
     englishName: 'Norwegian (Bokmål)',
     maintainers: ['rexxars', 'bjoerge'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'nl-NL',
@@ -127,6 +144,7 @@ const registry: LocaleRegistry = [
     englishName: 'Dutch',
     maintainers: ['nickspaargaren'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'nn-NO',
@@ -134,6 +152,7 @@ const registry: LocaleRegistry = [
     englishName: 'Norwegian (Nynorsk)',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'pl-PL',
@@ -141,6 +160,7 @@ const registry: LocaleRegistry = [
     englishName: 'Polish',
     maintainers: ['marcinincreo'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'pt-BR',
@@ -148,6 +168,7 @@ const registry: LocaleRegistry = [
     englishName: 'Portuguese (Brazil)',
     maintainers: ['fernandolucchesi'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'pt-PT',
@@ -155,6 +176,7 @@ const registry: LocaleRegistry = [
     englishName: 'Portuguese',
     maintainers: ['jrparente', 'RitaDias'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ro-RO',
@@ -162,6 +184,7 @@ const registry: LocaleRegistry = [
     englishName: 'Romanian',
     maintainers: ['rusbers'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ru-KZ',
@@ -169,6 +192,7 @@ const registry: LocaleRegistry = [
     englishName: 'Russian (Kazakhstan)',
     maintainers: ['yenbekbay'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'sv-SE',
@@ -176,6 +200,7 @@ const registry: LocaleRegistry = [
     englishName: 'Swedish',
     maintainers: ['wisechimp', 'alexanderwarendh', 'marcusforsberg', 'Henkisch'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'th-TH',
@@ -183,6 +208,7 @@ const registry: LocaleRegistry = [
     englishName: 'Thai',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'tr-TR',
@@ -190,6 +216,7 @@ const registry: LocaleRegistry = [
     englishName: 'Turkish',
     maintainers: ['kaganmert'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'uk-UA',
@@ -197,6 +224,7 @@ const registry: LocaleRegistry = [
     englishName: 'Ukrainian',
     maintainers: ['fomazov'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'vi-VN',
@@ -204,6 +232,7 @@ const registry: LocaleRegistry = [
     englishName: 'Vietnamese',
     maintainers: ['ntbaoni28'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'zh-Hans',
@@ -216,6 +245,7 @@ const registry: LocaleRegistry = [
       weekend: [6, 7],
       minimalDays: 1,
     },
+    isOfficial: false,
   },
   {
     id: 'zh-Hant',
@@ -228,6 +258,7 @@ const registry: LocaleRegistry = [
       weekend: [6, 7],
       minimalDays: 1,
     },
+    isOfficial: false,
   },
 ]
 
