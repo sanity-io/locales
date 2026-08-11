@@ -60,7 +60,7 @@
     "package-up": "^5.0.0",
     "pretty-ms": "^9.3.0",
     "sanity": "^6.9.1",
-    "tsx": "^4.21.0",
+    "tsx": "^4.23.11",
     "zod": "^4.4.3",
     "zod-validation-error": "^5.0.0"
   },
