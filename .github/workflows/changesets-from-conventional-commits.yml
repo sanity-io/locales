@@ -2,7 +2,11 @@
 name: Add changeset from conventional commits
 
 on:
-  pull_request_target: # zizmor: ignore[dangerous-triggers] gated to known bots; no PR code is checked out or executed in the reusable workflow
+  # All the bots that open conventional-commit PRs here (squiggler-app[bot] for
+  # autotranslate/reconcile, renovate[bot] for dependencies) push branches to this repository, so
+  # the plain `pull_request` event is sufficient - secrets are available for same-repo PRs, and
+  # the risky `pull_request_target` trigger is not needed.
+  pull_request:
     types: [opened, synchronize]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
