@@ -359,20 +359,20 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': '그래도 삭제하기',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': '어쨌든 모든 버전 삭제',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': '그래도 발행 취소하기',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': '지금 삭제하기',
   /** The text in the "Delete now" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
+  'confirm-delete-dialog.confirm-button.text_delete_other': '모든 버전 삭제',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': '지금 발행 취소하기',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     '“<DocumentTitle/>”을(를) 정말로 삭제하시겠습니까?',
   /** The confirmation text when the document has multiple versions */
-  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
+  'confirm-delete-dialog.confirmation.text_delete_other': '이 문서의 모든 버전을 삭제하시겠습니까?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     '“<DocumentTitle/>”의 발행을 정말로 취소하시겠습니까?',
