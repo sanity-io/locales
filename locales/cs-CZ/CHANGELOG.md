@@ -1,349 +1,310 @@
 # Changelog
 
-## [1.1.35](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.34...locale-cs-cz-v1.1.35) (2026-08-07)
+## 1.1.36
 
+### Patch Changes
+
+- [#1859](https://github.com/sanity-io/locales/pull/1859) [`c727342`](https://github.com/sanity-io/locales/commit/c7273420d51e28e8f2835c6af00af36306a09efa) Thanks [@stipsan](https://github.com/stipsan)! - Modernize the build and release toolchain: build with `@sanity/pkg-utils` v12, publish only `dist` to npm (no more `src` or `CHANGELOG.md` in the tarball), declare `engines.node` matching the oldest supported `sanity` release, add `publishConfig.exports`, and ship content-hashed chunks instead of `_chunks-es`/`_chunks-cjs` folders.
+
+## [1.1.35](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.34...locale-cs-cz-v1.1.35) (2026-08-07)
 
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1825](https://github.com/sanity-io/locales/issues/1825)) ([318d8c4](https://github.com/sanity-io/locales/commit/318d8c4d178ee27fb7c711faf6a1aaefb743e2a2))
+- **cs-CZ:** automated translation updates ([#1825](https://github.com/sanity-io/locales/issues/1825)) ([318d8c4](https://github.com/sanity-io/locales/commit/318d8c4d178ee27fb7c711faf6a1aaefb743e2a2))
 
 ## [1.1.34](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.33...locale-cs-cz-v1.1.34) (2026-08-07)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#1822](https://github.com/sanity-io/locales/issues/1822)) ([a793c48](https://github.com/sanity-io/locales/commit/a793c48ff1048067022d66fa6a291d4e1305d78f))
+- reconcile + prettify ([#1822](https://github.com/sanity-io/locales/issues/1822)) ([a793c48](https://github.com/sanity-io/locales/commit/a793c48ff1048067022d66fa6a291d4e1305d78f))
 
 ## [1.1.33](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.32...locale-cs-cz-v1.1.33) (2026-08-06)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1758](https://github.com/sanity-io/locales/issues/1758)) ([8126d36](https://github.com/sanity-io/locales/commit/8126d361647714a4a965e55efeaaa254cdafb068))
-* **cs-CZ:** automated translation updates ([#1805](https://github.com/sanity-io/locales/issues/1805)) ([01e1531](https://github.com/sanity-io/locales/commit/01e153116a225df8325faa56ce81f88692b9d52e))
+- **cs-CZ:** automated translation updates ([#1758](https://github.com/sanity-io/locales/issues/1758)) ([8126d36](https://github.com/sanity-io/locales/commit/8126d361647714a4a965e55efeaaa254cdafb068))
+- **cs-CZ:** automated translation updates ([#1805](https://github.com/sanity-io/locales/issues/1805)) ([01e1531](https://github.com/sanity-io/locales/commit/01e153116a225df8325faa56ce81f88692b9d52e))
 
 ## [1.1.32](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.31...locale-cs-cz-v1.1.32) (2026-06-22)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1713](https://github.com/sanity-io/locales/issues/1713)) ([31b0fa4](https://github.com/sanity-io/locales/commit/31b0fa4402eba76b893f4dc0f8ca23c0bd1fbfce))
-* reconcile + prettify ([#1708](https://github.com/sanity-io/locales/issues/1708)) ([c83f39a](https://github.com/sanity-io/locales/commit/c83f39a3682e0a942e2d9fa64b91118d6152f3d5))
+- **cs-CZ:** automated translation updates ([#1713](https://github.com/sanity-io/locales/issues/1713)) ([31b0fa4](https://github.com/sanity-io/locales/commit/31b0fa4402eba76b893f4dc0f8ca23c0bd1fbfce))
+- reconcile + prettify ([#1708](https://github.com/sanity-io/locales/issues/1708)) ([c83f39a](https://github.com/sanity-io/locales/commit/c83f39a3682e0a942e2d9fa64b91118d6152f3d5))
 
 ## [1.1.31](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.30...locale-cs-cz-v1.1.31) (2026-05-22)
 
-
 ### Bug Fixes
 
-* allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
+- allow sanity v6 as peer dependency ([#1704](https://github.com/sanity-io/locales/issues/1704)) ([f23e0c7](https://github.com/sanity-io/locales/commit/f23e0c7009696528e8cbd32565f2fadaae50d505))
 
 ## [1.1.30](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.29...locale-cs-cz-v1.1.30) (2026-04-02)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1657](https://github.com/sanity-io/locales/issues/1657)) ([14c08b2](https://github.com/sanity-io/locales/commit/14c08b2dbec84f5820fb32c776f4ab0790096c5a))
+- **cs-CZ:** automated translation updates ([#1657](https://github.com/sanity-io/locales/issues/1657)) ([14c08b2](https://github.com/sanity-io/locales/commit/14c08b2dbec84f5820fb32c776f4ab0790096c5a))
 
 ## [1.1.29](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.28...locale-cs-cz-v1.1.29) (2026-03-11)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1603](https://github.com/sanity-io/locales/issues/1603)) ([7b6073f](https://github.com/sanity-io/locales/commit/7b6073f5d8484410bef663ced56271b59aab2a5f))
-* **cs-CZ:** automated translation updates ([#1641](https://github.com/sanity-io/locales/issues/1641)) ([4183f2e](https://github.com/sanity-io/locales/commit/4183f2e494a539895ce1c6bc5a12c42a721713a8))
+- **cs-CZ:** automated translation updates ([#1603](https://github.com/sanity-io/locales/issues/1603)) ([7b6073f](https://github.com/sanity-io/locales/commit/7b6073f5d8484410bef663ced56271b59aab2a5f))
+- **cs-CZ:** automated translation updates ([#1641](https://github.com/sanity-io/locales/issues/1641)) ([4183f2e](https://github.com/sanity-io/locales/commit/4183f2e494a539895ce1c6bc5a12c42a721713a8))
 
 ## [1.1.28](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.27...locale-cs-cz-v1.1.28) (2026-02-16)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1552](https://github.com/sanity-io/locales/issues/1552)) ([72271d8](https://github.com/sanity-io/locales/commit/72271d8b08c07dda0888933660f81d7bc04200a2))
+- **cs-CZ:** automated translation updates ([#1552](https://github.com/sanity-io/locales/issues/1552)) ([72271d8](https://github.com/sanity-io/locales/commit/72271d8b08c07dda0888933660f81d7bc04200a2))
 
 ## [1.1.27](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.26...locale-cs-cz-v1.1.27) (2026-02-10)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1476](https://github.com/sanity-io/locales/issues/1476)) ([a5b1b90](https://github.com/sanity-io/locales/commit/a5b1b90f17b7dd0bfd2d304a3fc68e8d148e687c))
+- **cs-CZ:** automated translation updates ([#1476](https://github.com/sanity-io/locales/issues/1476)) ([a5b1b90](https://github.com/sanity-io/locales/commit/a5b1b90f17b7dd0bfd2d304a3fc68e8d148e687c))
 
 ## [1.1.26](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.25...locale-cs-cz-v1.1.26) (2025-12-04)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1454](https://github.com/sanity-io/locales/issues/1454)) ([bc62cf3](https://github.com/sanity-io/locales/commit/bc62cf3482c2254e7ccd31b8a879d3817fcc6ea1))
-* **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
+- **cs-CZ:** automated translation updates ([#1454](https://github.com/sanity-io/locales/issues/1454)) ([bc62cf3](https://github.com/sanity-io/locales/commit/bc62cf3482c2254e7ccd31b8a879d3817fcc6ea1))
+- **deps:** allow sanity v5 as peer dependency ([#1450](https://github.com/sanity-io/locales/issues/1450)) ([812a54a](https://github.com/sanity-io/locales/commit/812a54aefd3dca7440b6dd76406e8f73e3dd416f))
 
 ## [1.1.25](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.24...locale-cs-cz-v1.1.25) (2025-11-26)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1430](https://github.com/sanity-io/locales/issues/1430)) ([434377d](https://github.com/sanity-io/locales/commit/434377d2d79e5764de73fc7efc044dbc3750b38c))
-* **cs-CZ:** automated translation updates ([#1441](https://github.com/sanity-io/locales/issues/1441)) ([b485786](https://github.com/sanity-io/locales/commit/b4857867666e6ef2de95270509f86509ea4c788a))
+- **cs-CZ:** automated translation updates ([#1430](https://github.com/sanity-io/locales/issues/1430)) ([434377d](https://github.com/sanity-io/locales/commit/434377d2d79e5764de73fc7efc044dbc3750b38c))
+- **cs-CZ:** automated translation updates ([#1441](https://github.com/sanity-io/locales/issues/1441)) ([b485786](https://github.com/sanity-io/locales/commit/b4857867666e6ef2de95270509f86509ea4c788a))
 
 ## [1.1.24](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.23...locale-cs-cz-v1.1.24) (2025-11-19)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1399](https://github.com/sanity-io/locales/issues/1399)) ([1a62d54](https://github.com/sanity-io/locales/commit/1a62d540f7257c5c586ac6db69aeeccc821d9b9e))
+- **cs-CZ:** automated translation updates ([#1399](https://github.com/sanity-io/locales/issues/1399)) ([1a62d54](https://github.com/sanity-io/locales/commit/1a62d540f7257c5c586ac6db69aeeccc821d9b9e))
 
 ## [1.1.23](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.22...locale-cs-cz-v1.1.23) (2025-11-13)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1342](https://github.com/sanity-io/locales/issues/1342)) ([306e262](https://github.com/sanity-io/locales/commit/306e262b9a7e7649ec8bd1bf006856371d05e797))
-* **cs-CZ:** automated translation updates ([#1371](https://github.com/sanity-io/locales/issues/1371)) ([59adb07](https://github.com/sanity-io/locales/commit/59adb07482f9c5bc8696a3499423e84fe767f234))
-* **cs-CZ:** automated translation updates ([#1384](https://github.com/sanity-io/locales/issues/1384)) ([9f2ecb3](https://github.com/sanity-io/locales/commit/9f2ecb32f714b0f1b33cd5966696e80d0c4b0067))
-* reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
+- **cs-CZ:** automated translation updates ([#1342](https://github.com/sanity-io/locales/issues/1342)) ([306e262](https://github.com/sanity-io/locales/commit/306e262b9a7e7649ec8bd1bf006856371d05e797))
+- **cs-CZ:** automated translation updates ([#1371](https://github.com/sanity-io/locales/issues/1371)) ([59adb07](https://github.com/sanity-io/locales/commit/59adb07482f9c5bc8696a3499423e84fe767f234))
+- **cs-CZ:** automated translation updates ([#1384](https://github.com/sanity-io/locales/issues/1384)) ([9f2ecb3](https://github.com/sanity-io/locales/commit/9f2ecb32f714b0f1b33cd5966696e80d0c4b0067))
+- reconcile + prettify ([#1374](https://github.com/sanity-io/locales/issues/1374)) ([b91ef95](https://github.com/sanity-io/locales/commit/b91ef952e1eb21d7c4651025969380fdf94a5b56))
 
 ## [1.1.22](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.21...locale-cs-cz-v1.1.22) (2025-09-04)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1311](https://github.com/sanity-io/locales/issues/1311)) ([239724d](https://github.com/sanity-io/locales/commit/239724d423844bcc56be4db509b79824f39c53ab))
-* reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
+- **cs-CZ:** automated translation updates ([#1311](https://github.com/sanity-io/locales/issues/1311)) ([239724d](https://github.com/sanity-io/locales/commit/239724d423844bcc56be4db509b79824f39c53ab))
+- reconcile + prettify ([#1286](https://github.com/sanity-io/locales/issues/1286)) ([99819d7](https://github.com/sanity-io/locales/commit/99819d7d47be1ecee0b4b2529b0f4f2981cb948a))
 
 ## [1.1.21](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.20...locale-cs-cz-v1.1.21) (2025-07-22)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1263](https://github.com/sanity-io/locales/issues/1263)) ([b86da22](https://github.com/sanity-io/locales/commit/b86da2206cf84b8a8583c1dd508071e27b4114c0))
-* **cs-CZ:** automated translation updates ([#1287](https://github.com/sanity-io/locales/issues/1287)) ([2e8a363](https://github.com/sanity-io/locales/commit/2e8a363f5a091a4001dd0a773b9e7b79c98d6954))
-* reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
+- **cs-CZ:** automated translation updates ([#1263](https://github.com/sanity-io/locales/issues/1263)) ([b86da22](https://github.com/sanity-io/locales/commit/b86da2206cf84b8a8583c1dd508071e27b4114c0))
+- **cs-CZ:** automated translation updates ([#1287](https://github.com/sanity-io/locales/issues/1287)) ([2e8a363](https://github.com/sanity-io/locales/commit/2e8a363f5a091a4001dd0a773b9e7b79c98d6954))
+- reconcile + prettify ([#1258](https://github.com/sanity-io/locales/issues/1258)) ([edb2ba1](https://github.com/sanity-io/locales/commit/edb2ba1fd5c7f161930c606425384a0c29ed1897))
 
 ## [1.1.20](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.19...locale-cs-cz-v1.1.20) (2025-07-10)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1205](https://github.com/sanity-io/locales/issues/1205)) ([e05d703](https://github.com/sanity-io/locales/commit/e05d7039816bc63de52283b72d25b24b3816f4dd))
-* **cs-CZ:** automated translation updates ([#1229](https://github.com/sanity-io/locales/issues/1229)) ([e50de5d](https://github.com/sanity-io/locales/commit/e50de5d4c3585a1f02593464d390b36dfffe7caa))
-* **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
+- **cs-CZ:** automated translation updates ([#1205](https://github.com/sanity-io/locales/issues/1205)) ([e05d703](https://github.com/sanity-io/locales/commit/e05d7039816bc63de52283b72d25b24b3816f4dd))
+- **cs-CZ:** automated translation updates ([#1229](https://github.com/sanity-io/locales/issues/1229)) ([e50de5d](https://github.com/sanity-io/locales/commit/e50de5d4c3585a1f02593464d390b36dfffe7caa))
+- **deps:** allow studio v4 in peer dep ranges ([#1252](https://github.com/sanity-io/locales/issues/1252)) ([dd2aa32](https://github.com/sanity-io/locales/commit/dd2aa32b4186f0749f744d74b2e81a2c8b172fe8))
 
 ## [1.1.19](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.18...locale-cs-cz-v1.1.19) (2025-05-30)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1173](https://github.com/sanity-io/locales/issues/1173)) ([e87ccca](https://github.com/sanity-io/locales/commit/e87ccca8d340d92a56cca12f70c6300e181f067f))
-* **cs-CZ:** automated translation updates ([#1191](https://github.com/sanity-io/locales/issues/1191)) ([d473018](https://github.com/sanity-io/locales/commit/d47301801e6c3729b153d5cd831910e47ef88d33))
+- **cs-CZ:** automated translation updates ([#1173](https://github.com/sanity-io/locales/issues/1173)) ([e87ccca](https://github.com/sanity-io/locales/commit/e87ccca8d340d92a56cca12f70c6300e181f067f))
+- **cs-CZ:** automated translation updates ([#1191](https://github.com/sanity-io/locales/issues/1191)) ([d473018](https://github.com/sanity-io/locales/commit/d47301801e6c3729b153d5cd831910e47ef88d33))
 
 ## [1.1.18](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.17...locale-cs-cz-v1.1.18) (2025-05-13)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1130](https://github.com/sanity-io/locales/issues/1130)) ([8efc1ce](https://github.com/sanity-io/locales/commit/8efc1cef6de9654a397a2689edee2ca3dfe993c8))
-* remove `lukekaleta` as maintainer of cz-CZ (GitHub user gone) ([908c57d](https://github.com/sanity-io/locales/commit/908c57d22156ee60c5c365a71ab171a07d9e10f3))
+- **cs-CZ:** automated translation updates ([#1130](https://github.com/sanity-io/locales/issues/1130)) ([8efc1ce](https://github.com/sanity-io/locales/commit/8efc1cef6de9654a397a2689edee2ca3dfe993c8))
+- remove `lukekaleta` as maintainer of cz-CZ (GitHub user gone) ([908c57d](https://github.com/sanity-io/locales/commit/908c57d22156ee60c5c365a71ab171a07d9e10f3))
 
 ## [1.1.17](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.16...locale-cs-cz-v1.1.17) (2025-05-12)
 
-
 ### Bug Fixes
 
-* rename `create` namespace to `canvas` ([656500f](https://github.com/sanity-io/locales/commit/656500fc23153e0039c6ca1b57abc547a6450c87))
-* renconcile with latest sanity version ([5d27f40](https://github.com/sanity-io/locales/commit/5d27f40fc012ffed3f70297332a16bbdf688534f))
-* revert rename of `create` namespace to `canvas` ([88f63e9](https://github.com/sanity-io/locales/commit/88f63e9cac077059e6aac88f99ef00e6a09de669))
+- rename `create` namespace to `canvas` ([656500f](https://github.com/sanity-io/locales/commit/656500fc23153e0039c6ca1b57abc547a6450c87))
+- renconcile with latest sanity version ([5d27f40](https://github.com/sanity-io/locales/commit/5d27f40fc012ffed3f70297332a16bbdf688534f))
+- revert rename of `create` namespace to `canvas` ([88f63e9](https://github.com/sanity-io/locales/commit/88f63e9cac077059e6aac88f99ef00e6a09de669))
 
 ## [1.1.16](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.15...locale-cs-cz-v1.1.16) (2025-05-12)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#1007](https://github.com/sanity-io/locales/issues/1007)) ([c89a18e](https://github.com/sanity-io/locales/commit/c89a18e4c3fd82619ab40a3a6c6c802c349c7eeb))
-* **cs-CZ:** automated translation updates ([#1077](https://github.com/sanity-io/locales/issues/1077)) ([cf4eb58](https://github.com/sanity-io/locales/commit/cf4eb5889b11aaa63713a197083095317630a521))
+- **cs-CZ:** automated translation updates ([#1007](https://github.com/sanity-io/locales/issues/1007)) ([c89a18e](https://github.com/sanity-io/locales/commit/c89a18e4c3fd82619ab40a3a6c6c802c349c7eeb))
+- **cs-CZ:** automated translation updates ([#1077](https://github.com/sanity-io/locales/issues/1077)) ([cf4eb58](https://github.com/sanity-io/locales/commit/cf4eb5889b11aaa63713a197083095317630a521))
 
 ## [1.1.15](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.14...locale-cs-cz-v1.1.15) (2025-02-06)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#964](https://github.com/sanity-io/locales/issues/964)) ([87def75](https://github.com/sanity-io/locales/commit/87def75d78c113c08e33edecf041e07ad4e2c403))
+- **cs-CZ:** automated translation updates ([#964](https://github.com/sanity-io/locales/issues/964)) ([87def75](https://github.com/sanity-io/locales/commit/87def75d78c113c08e33edecf041e07ad4e2c403))
 
 ## [1.1.14](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.13...locale-cs-cz-v1.1.14) (2025-01-06)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#776](https://github.com/sanity-io/locales/issues/776)) ([f3fe5df](https://github.com/sanity-io/locales/commit/f3fe5dfac029d761b9ce7e264aa53601f243dee9))
-* **cs-CZ:** automated translation updates ([#863](https://github.com/sanity-io/locales/issues/863)) ([0f4c5e2](https://github.com/sanity-io/locales/commit/0f4c5e2a4786482cbe3f84b7ed691f68cb6b810d))
-* reconcile + prettify ([#861](https://github.com/sanity-io/locales/issues/861)) ([e9f7448](https://github.com/sanity-io/locales/commit/e9f7448460b48fc803bd6604aada91630348ab95))
+- **cs-CZ:** automated translation updates ([#776](https://github.com/sanity-io/locales/issues/776)) ([f3fe5df](https://github.com/sanity-io/locales/commit/f3fe5dfac029d761b9ce7e264aa53601f243dee9))
+- **cs-CZ:** automated translation updates ([#863](https://github.com/sanity-io/locales/issues/863)) ([0f4c5e2](https://github.com/sanity-io/locales/commit/0f4c5e2a4786482cbe3f84b7ed691f68cb6b810d))
+- reconcile + prettify ([#861](https://github.com/sanity-io/locales/issues/861)) ([e9f7448](https://github.com/sanity-io/locales/commit/e9f7448460b48fc803bd6604aada91630348ab95))
 
 ## [1.1.13](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.12...locale-cs-cz-v1.1.13) (2024-12-07)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
+- reconcile + prettify ([#832](https://github.com/sanity-io/locales/issues/832)) ([e962010](https://github.com/sanity-io/locales/commit/e9620109a7ee1a0ad4eadeaebf8f3d05ee703747))
 
 ## [1.1.12](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.11...locale-cs-cz-v1.1.12) (2024-11-26)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#773](https://github.com/sanity-io/locales/issues/773)) ([037b874](https://github.com/sanity-io/locales/commit/037b8747ab096387a988bef3e632812f7217f53f))
-* reconcile + prettify ([#811](https://github.com/sanity-io/locales/issues/811)) ([4c61ca0](https://github.com/sanity-io/locales/commit/4c61ca096c2fd158aefd895681bb0b7c2a634234))
+- reconcile + prettify ([#773](https://github.com/sanity-io/locales/issues/773)) ([037b874](https://github.com/sanity-io/locales/commit/037b8747ab096387a988bef3e632812f7217f53f))
+- reconcile + prettify ([#811](https://github.com/sanity-io/locales/issues/811)) ([4c61ca0](https://github.com/sanity-io/locales/commit/4c61ca096c2fd158aefd895681bb0b7c2a634234))
 
 ## [1.1.11](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.10...locale-cs-cz-v1.1.11) (2024-10-15)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#690](https://github.com/sanity-io/locales/issues/690)) ([fd17ca2](https://github.com/sanity-io/locales/commit/fd17ca2e5f4b010d1f8ebe4fa60f8cddad572e02))
-* reconcile + prettify ([#688](https://github.com/sanity-io/locales/issues/688)) ([3404058](https://github.com/sanity-io/locales/commit/3404058c7a55c2163d680d84953f7ac5defb2066))
+- **cs-CZ:** automated translation updates ([#690](https://github.com/sanity-io/locales/issues/690)) ([fd17ca2](https://github.com/sanity-io/locales/commit/fd17ca2e5f4b010d1f8ebe4fa60f8cddad572e02))
+- reconcile + prettify ([#688](https://github.com/sanity-io/locales/issues/688)) ([3404058](https://github.com/sanity-io/locales/commit/3404058c7a55c2163d680d84953f7ac5defb2066))
 
 ## [1.1.10](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.9...locale-cs-cz-v1.1.10) (2024-09-10)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#628](https://github.com/sanity-io/locales/issues/628)) ([607536e](https://github.com/sanity-io/locales/commit/607536e4293692205e95b95f8359e471b8b24847))
+- **cs-CZ:** automated translation updates ([#628](https://github.com/sanity-io/locales/issues/628)) ([607536e](https://github.com/sanity-io/locales/commit/607536e4293692205e95b95f8359e471b8b24847))
 
 ## [1.1.9](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.8...locale-cs-cz-v1.1.9) (2024-08-15)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#583](https://github.com/sanity-io/locales/issues/583)) ([98e8151](https://github.com/sanity-io/locales/commit/98e8151c073ccb3fa6ae273c209dc63fd47e0d28))
+- **cs-CZ:** automated translation updates ([#583](https://github.com/sanity-io/locales/issues/583)) ([98e8151](https://github.com/sanity-io/locales/commit/98e8151c073ccb3fa6ae273c209dc63fd47e0d28))
 
 ## [1.1.8](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.7...locale-cs-cz-v1.1.8) (2024-07-31)
 
-
 ### Bug Fixes
 
-* reconcile + prettify ([#611](https://github.com/sanity-io/locales/issues/611)) ([5346940](https://github.com/sanity-io/locales/commit/534694059e674d5150f7f484fd79411b0f5b74a2))
+- reconcile + prettify ([#611](https://github.com/sanity-io/locales/issues/611)) ([5346940](https://github.com/sanity-io/locales/commit/534694059e674d5150f7f484fd79411b0f5b74a2))
 
 ## [1.1.7](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.6...locale-cs-cz-v1.1.7) (2024-07-30)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#486](https://github.com/sanity-io/locales/issues/486)) ([ddc338e](https://github.com/sanity-io/locales/commit/ddc338eac40b905d16f518871d86985a07779ec9))
+- **cs-CZ:** automated translation updates ([#486](https://github.com/sanity-io/locales/issues/486)) ([ddc338e](https://github.com/sanity-io/locales/commit/ddc338eac40b905d16f518871d86985a07779ec9))
 
 ## [1.1.6](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.5...locale-cs-cz-v1.1.6) (2024-07-12)
 
-
 ### Bug Fixes
 
-* **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
+- **deps:** upgrade sanity to 3.50.0, reconcile new copy+paste resources ([5ad5440](https://github.com/sanity-io/locales/commit/5ad5440692ba75d76b5de468a5ed5cdfd01de995))
 
 ## [1.1.5](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.4...locale-cs-cz-v1.1.5) (2024-07-09)
 
-
 ### Bug Fixes
 
-* **cz-CZ:** add [@lukekaleta](https://github.com/lukekaleta) as maintainer ([1ecceca](https://github.com/sanity-io/locales/commit/1ecceca5733f6c65ce2ea3d4074e8cd1967325db)), closes [#482](https://github.com/sanity-io/locales/issues/482)
-* upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
+- **cz-CZ:** add [@lukekaleta](https://github.com/lukekaleta) as maintainer ([1ecceca](https://github.com/sanity-io/locales/commit/1ecceca5733f6c65ce2ea3d4074e8cd1967325db)), closes [#482](https://github.com/sanity-io/locales/issues/482)
+- upgrade @sanity/pkg-utils to ^6, reconcile packages ([fa2c42a](https://github.com/sanity-io/locales/commit/fa2c42a0e8550ead90dcc61fe1abcecdacf8fd20))
 
 ## [1.1.4](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.3...locale-cs-cz-v1.1.4) (2024-04-03)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#445](https://github.com/sanity-io/locales/issues/445)) ([ce823a6](https://github.com/sanity-io/locales/commit/ce823a6b6b4763495e55b2085b2eb9109892f1fd))
-* **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
+- **cs-CZ:** automated translation updates ([#445](https://github.com/sanity-io/locales/issues/445)) ([ce823a6](https://github.com/sanity-io/locales/commit/ce823a6b6b4763495e55b2085b2eb9109892f1fd))
+- **deps:** update sanity monorepo to ^3.36.4 ([#442](https://github.com/sanity-io/locales/issues/442)) ([2a4142e](https://github.com/sanity-io/locales/commit/2a4142e6e50eb5992b3432169cd71676c353276f))
 
 ## [1.1.3](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.2...locale-cs-cz-v1.1.3) (2024-03-02)
 
-
 ### Bug Fixes
 
-* mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
+- mark all packages as free of side effects ([7ffcb69](https://github.com/sanity-io/locales/commit/7ffcb6939ba729c3c6c528d81e14a833b9096f50))
 
 ## [1.1.2](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.1...locale-cs-cz-v1.1.2) (2024-03-02)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#412](https://github.com/sanity-io/locales/issues/412)) ([94ae7aa](https://github.com/sanity-io/locales/commit/94ae7aacc090910b2f18b8e326ab79abdbfe42b7))
+- **cs-CZ:** automated translation updates ([#412](https://github.com/sanity-io/locales/issues/412)) ([94ae7aa](https://github.com/sanity-io/locales/commit/94ae7aacc090910b2f18b8e326ab79abdbfe42b7))
 
 ## [1.1.1](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.1.0...locale-cs-cz-v1.1.1) (2024-02-22)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#370](https://github.com/sanity-io/locales/issues/370)) ([d19023c](https://github.com/sanity-io/locales/commit/d19023c2622c6c0d607f14d1c92c674bd58e1de6))
-* **cs-CZ:** automated translation updates ([#391](https://github.com/sanity-io/locales/issues/391)) ([4fee4cb](https://github.com/sanity-io/locales/commit/4fee4cb9f51a2839ad07bb850da89bf6686c0b24))
+- **cs-CZ:** automated translation updates ([#370](https://github.com/sanity-io/locales/issues/370)) ([d19023c](https://github.com/sanity-io/locales/commit/d19023c2622c6c0d607f14d1c92c674bd58e1de6))
+- **cs-CZ:** automated translation updates ([#391](https://github.com/sanity-io/locales/issues/391)) ([4fee4cb](https://github.com/sanity-io/locales/commit/4fee4cb9f51a2839ad07bb850da89bf6686c0b24))
 
 ## [1.1.0](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.0.3...locale-cs-cz-v1.1.0) (2024-02-07)
 
-
 ### Features
 
-* add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
-
+- add new comments namespace ([0729dc5](https://github.com/sanity-io/locales/commit/0729dc52cd29ac2611250663a32a7f1a5a039500))
 
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#310](https://github.com/sanity-io/locales/issues/310)) ([1b5e9dd](https://github.com/sanity-io/locales/commit/1b5e9dd12abec6c7c9b04ad194a2c8dce1c8ff36))
-* **cs-CZ:** automated translation updates ([#337](https://github.com/sanity-io/locales/issues/337)) ([9d755de](https://github.com/sanity-io/locales/commit/9d755decabde7727178217225976163a35c91c53))
+- **cs-CZ:** automated translation updates ([#310](https://github.com/sanity-io/locales/issues/310)) ([1b5e9dd](https://github.com/sanity-io/locales/commit/1b5e9dd12abec6c7c9b04ad194a2c8dce1c8ff36))
+- **cs-CZ:** automated translation updates ([#337](https://github.com/sanity-io/locales/issues/337)) ([9d755de](https://github.com/sanity-io/locales/commit/9d755decabde7727178217225976163a35c91c53))
 
 ## [1.0.3](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.0.2...locale-cs-cz-v1.0.3) (2024-01-18)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([#281](https://github.com/sanity-io/locales/issues/281)) ([314eb21](https://github.com/sanity-io/locales/commit/314eb219be84b9e5041ac1ac9be2382c7299cd3d))
+- **cs-CZ:** automated translation updates ([#281](https://github.com/sanity-io/locales/issues/281)) ([314eb21](https://github.com/sanity-io/locales/commit/314eb219be84b9e5041ac1ac9be2382c7299cd3d))
 
 ## [1.0.2](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.0.1...locale-cs-cz-v1.0.2) (2024-01-17)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** align resource keys ([f73322a](https://github.com/sanity-io/locales/commit/f73322abc4ee3206c6d2fd9e44853e5ab961110f))
-* **cs-CZ:** automated translation updates ([#244](https://github.com/sanity-io/locales/issues/244)) ([e29bbeb](https://github.com/sanity-io/locales/commit/e29bbeb2c44d8ed291dde6dbbc01d2618f3412d3))
-* reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
-* reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
+- **cs-CZ:** align resource keys ([f73322a](https://github.com/sanity-io/locales/commit/f73322abc4ee3206c6d2fd9e44853e5ab961110f))
+- **cs-CZ:** automated translation updates ([#244](https://github.com/sanity-io/locales/issues/244)) ([e29bbeb](https://github.com/sanity-io/locales/commit/e29bbeb2c44d8ed291dde6dbbc01d2618f3412d3))
+- reconcile + prettify ([dbeb153](https://github.com/sanity-io/locales/commit/dbeb153fc3f80207e357a888431d2fd739617821))
+- reconcile + prettify ([#275](https://github.com/sanity-io/locales/issues/275)) ([57d0a21](https://github.com/sanity-io/locales/commit/57d0a21e05f631d47d74a2c029c9dcc3993bc7b0))
 
 ## [1.0.1](https://github.com/sanity-io/locales/compare/locale-cs-cz-v1.0.0...locale-cs-cz-v1.0.1) (2023-12-19)
 
-
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([ab49609](https://github.com/sanity-io/locales/commit/ab49609b23f1392d282bfff5a35778786e3dd836))
+- **cs-CZ:** automated translation updates ([ab49609](https://github.com/sanity-io/locales/commit/ab49609b23f1392d282bfff5a35778786e3dd836))
 
 ## [1.0.0](https://github.com/sanity-io/locales/compare/locale-cs-cz-v0.1.1...locale-cs-cz-v1.0.0) (2023-12-19)
 
-
 ### ⚠ BREAKING CHANGES
 
-* require sanity v3.22.0 or higher
+- require sanity v3.22.0 or higher
 
 ### Features
 
-* require sanity v3.22.0 or higher ([aba6c8c](https://github.com/sanity-io/locales/commit/aba6c8c3fd4f6e11b193b96a3821420f72ccc47d))
-
+- require sanity v3.22.0 or higher ([aba6c8c](https://github.com/sanity-io/locales/commit/aba6c8c3fd4f6e11b193b96a3821420f72ccc47d))
 
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([bf29fc1](https://github.com/sanity-io/locales/commit/bf29fc139bcbba4a5bce48deb96de450aa32f9c1))
+- **cs-CZ:** automated translation updates ([bf29fc1](https://github.com/sanity-io/locales/commit/bf29fc139bcbba4a5bce48deb96de450aa32f9c1))
 
 ## [0.1.1](https://github.com/sanity-io/locales/compare/locale-cs-cz-v0.1.0...locale-cs-cz-v0.1.1) (2023-12-12)
 
-
 ### Bug Fixes
 
-* add prepublish build script ([561dcfb](https://github.com/sanity-io/locales/commit/561dcfb24ab12f98fcc590b0dbc2cf297ea60485))
+- add prepublish build script ([561dcfb](https://github.com/sanity-io/locales/commit/561dcfb24ab12f98fcc590b0dbc2cf297ea60485))
 
 ## [0.1.0](https://github.com/sanity-io/locales/compare/locale-cs-cz-v0.0.1...locale-cs-cz-v0.1.0) (2023-12-12)
 
-
 ### Features
 
-* allow specifying title and week info during plugin init ([c1d1116](https://github.com/sanity-io/locales/commit/c1d1116bab0c99c6506a9744e33d6cf282bf1c1b))
-* **cs-CZ:** autogenerated locale cs-CZ ([#51](https://github.com/sanity-io/locales/issues/51)) ([5bdfb0d](https://github.com/sanity-io/locales/commit/5bdfb0d4266b95a47ac0e2d3474f9aed2c0cd0da))
-* include week info in locale definition ([73cec7f](https://github.com/sanity-io/locales/commit/73cec7fb69ac92a565282aac0d08f13b634372fb))
-* reconcile, sort readme locale list by english name ([1c6ada6](https://github.com/sanity-io/locales/commit/1c6ada624e83307f820d6c4ce1e7560eaf94b151))
-* update resources from latest version ([e4d4f9d](https://github.com/sanity-io/locales/commit/e4d4f9daf8c2566f3ee7c9b002ac6d0051a2734c))
-
+- allow specifying title and week info during plugin init ([c1d1116](https://github.com/sanity-io/locales/commit/c1d1116bab0c99c6506a9744e33d6cf282bf1c1b))
+- **cs-CZ:** autogenerated locale cs-CZ ([#51](https://github.com/sanity-io/locales/issues/51)) ([5bdfb0d](https://github.com/sanity-io/locales/commit/5bdfb0d4266b95a47ac0e2d3474f9aed2c0cd0da))
+- include week info in locale definition ([73cec7f](https://github.com/sanity-io/locales/commit/73cec7fb69ac92a565282aac0d08f13b634372fb))
+- reconcile, sort readme locale list by english name ([1c6ada6](https://github.com/sanity-io/locales/commit/1c6ada624e83307f820d6c4ce1e7560eaf94b151))
+- update resources from latest version ([e4d4f9d](https://github.com/sanity-io/locales/commit/e4d4f9daf8c2566f3ee7c9b002ac6d0051a2734c))
 
 ### Bug Fixes
 
-* **cs-CZ:** automated translation updates ([db36597](https://github.com/sanity-io/locales/commit/db36597eb6496eaac699809814d452cc20a68efe))
-* use exported week info type ([7be1ab2](https://github.com/sanity-io/locales/commit/7be1ab27939e1836e000155c576362fb5f54bd3e))
-* use public publishConfig ([780ed3e](https://github.com/sanity-io/locales/commit/780ed3e6d35198fedebd769e71bf1dcc09fc6528))
+- **cs-CZ:** automated translation updates ([db36597](https://github.com/sanity-io/locales/commit/db36597eb6496eaac699809814d452cc20a68efe))
+- use exported week info type ([7be1ab2](https://github.com/sanity-io/locales/commit/7be1ab27939e1836e000155c576362fb5f54bd3e))
+- use public publishConfig ([780ed3e](https://github.com/sanity-io/locales/commit/780ed3e6d35198fedebd769e71bf1dcc09fc6528))
