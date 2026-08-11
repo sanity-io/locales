@@ -94,7 +94,7 @@ importers:
         specifier: ^30.4.1
         version: 30.4.1
       knip:
-        specifier: ^6.31.0
+        specifier: ^6.32.0
         version: 6.32.0
       oxlint:
         specifier: ^1.77.0
