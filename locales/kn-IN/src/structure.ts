@@ -355,14 +355,26 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.project-id.label': 'ಪ್ರಾಜೆಕ್ಟ್ ಐಡಿ',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'ಹೌದು, ಅಳಿಸಿ',
+  /** The text in the "Delete anyway" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  /** The text in the "Delete anyway" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'ಹೌದು, ಪ್ರಕಟಣೆ ತೆಗೆದುಹಾಕಿ',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'ಈಗ ಅಳಿಸಿ',
+  /** The text in the "Delete now" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  /** The text in the "Delete now" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'ಈಗ ಪ್ರಕಟಣೆ ತೆಗೆದುಹಾಕಿ',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete': 'ನೀವು “<DocumentTitle/>” ಅನ್ನು ಅಳಿಸಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',
+  /** The confirmation text when the document only has a single version */
+  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  /** The confirmation text when the document has multiple versions */
+  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'ನೀವು “<DocumentTitle/>” ಅನ್ನು ಪ್ರಕಟಣೆ ತೆಗೆದುಹಾಕಲು ಖಚಿತರಾಗಿದ್ದೀರಾ?',

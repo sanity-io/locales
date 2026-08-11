@@ -472,6 +472,8 @@ export default removeUndefinedLocaleResources({
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Отмена',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Насколько легко или сложно пользоваться новой версией инвентаря?',
