@@ -16,7 +16,7 @@ jobs:
       - name: Install pnpm, Node.js and dependencies
         uses: pnpm/setup@v2
         with:
-          runtime: node@24.18.0
+          runtime: node@lts
           cache: true
 
       - name: Generate GitHub App token
