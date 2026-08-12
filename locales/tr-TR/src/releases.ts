@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Zamanlanmadı olarak işaretlendi',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'Aktiviteyi kapat',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Yayın etkinliği alınırken bir hata oluştu',
   /** The loading text for when releases are loading */
@@ -158,21 +158,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'Etkinlik',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'Oluşturuldu',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'Belgeler',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'Zamanlama',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'Durum',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'Belge yok',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'Hatalar',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'Geçerli',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'Doğrulanıyor',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': "Sürümü studio'ya sabitle",
   /** Text for the releases detail screen when a release was published ASAP */
@@ -220,7 +220,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} doğrulama hatası',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'Doğrulama hatası yok',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': "Evet, release'i çoğalt",
@@ -296,7 +296,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Dokümantasyon',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'Tüm sürümler',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Takvimi görüntüle',
   /** Description for the release tool */
@@ -485,11 +485,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Düzenlendi',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'Düzenleyen',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Hedeflenen',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'Son düzenleme',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Yayımlandı',
   /** Header for the document table in the release tool - Published */
@@ -505,7 +505,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Tür',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Varyant',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Ne zaman',
 
