@@ -478,7 +478,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'ರದ್ದುಮಾಡಿ',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'ಆವೃತ್ತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'ಹೊಸ ಆವೃತ್ತಿ inventory ಬಳಸಲು ಎಷ್ಟು ಸುಲಭ ಅಥವಾ ಕಷ್ಟ?',
