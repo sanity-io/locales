@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': '구성 문제가 감지되었습니다',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    '자동 업데이트가 활성화되어 있지만 <code>sanity.cli.ts</code>에 <code>deployment.appId</code>가 구성되어 있지 않습니다. 이 스튜디오는 <strong>최신</strong>-채널에 대해 업데이트됩니다.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': '문서 보기',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': '비활성화됨',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': '활성화됨',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': '자동 업데이트',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': '활성화 방법',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': '버전 관리',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    '클립보드에 복사됨. 붙여넣기를 즐기세요!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': '클립보드에 복사',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': '현재 버전',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': '업그레이드 방법',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': '최신 버전',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': '새 버전 사용 가능',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': '새 버전',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': '재로드',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': '업데이트하려면 스튜디오를 재로드하세요',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': '개발',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': '새 버전 사용 가능',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': '사전 출시',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': '최신 상태',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': '최신 상태',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': '업데이트',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Sanity 스튜디오를 업데이트하는 방법 알아보기',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': '사용자 에이전트',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'GitHub에서 보기',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': '닫기',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': '대화 상자 닫기',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': '닫기',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': '공지 사항 무시하기',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': '공지 사항 열기',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': '삭제',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': '이미지를 사용하는 문서',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': '로딩 중…',
+  /** Browse button text */
+  'asset-source.browse-button.text': '선택',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': '취소',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,24 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     '허용된 유형의 자산만 표시: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': '취소',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': '선택',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': '파일 선택',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': '이미지 선택',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error': '자산 삽입 오류. 자세한 정보는 콘솔을 확인하세요.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': '자산을 불러오지 못했습니다',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '더 많이 불러오기',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': '파일 없음',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': '이미지 없음',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     '현재 선택된 파일을 삭제할 수 없습니다',
@@ -81,6 +158,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': '이미지가 삭제되었습니다',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': '업로드된 이미지들',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     '하나의 문서가 파일 <code>{{filename}}</code>을 사용하고 있습니다',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -109,6 +187,41 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     '이 이미지를 사용하는 문서가 없습니다',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': '자세한 정보는 콘솔을 확인하세요.',
+  'asset-sources.common.uploader.upload-failed.title': '업로드 실패',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': '워크스페이스 파일',
+  'asset-sources.dataset.image.title': '워크스페이스 이미지',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    '이 프로젝트의 미디어 라이브러리를 확인하는 도중 문제가 발생했습니다.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    '이 조직을 위한 미디어 라이브러리가 프로비저닝되지 않았습니다.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': '미디어 라이브러리',
+  'asset-sources.media-library.image.title': '미디어 라이브러리',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': '완료',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '“{{targetTitle}}”에 대한 새 자산 선택',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    '새 자산 선택',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': '자산 편집',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Media Library에 업로드',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    '라이브러리에서 찾은 기존 파일을 사용합니다.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "파일: '{{filename}}'이(가) 이미 존재합니다",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' 릴리스가 삭제되었습니다.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': '다음 달로 이동',
   /** Action message for navigating to next year */
@@ -117,24 +230,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': '이전 달로 이동',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': '이전 해로 이동',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '오늘',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': '오늘로 가기',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '내일',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': '어제',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '시간 포함',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': '시간 선택',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': '분 선택',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': '시간 선택',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': '현재 시간으로 설정',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}}에 {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': '달력 열기',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': '날짜 선택',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': '<Emphasis>{{exampleDate}}</Emphasis> 형식이어야 합니다',
   /** Month name for April */
@@ -217,6 +328,9 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '자세한 정보는 개발자 콘솔을 확인하세요',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '이 필드의 변경 사항을 렌더링하는 중 오류가 발생했습니다',
+  'changes.error-description': '이 문서의 변경 사항을 불러올 수 없습니다.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': '문제가 발생했습니다',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     '값 오류: 값의 유형은 "<code>{{actualType}}</code>"이며, 예상 유형은 "<code>{{expectedType}}</code>"입니다',
@@ -246,11 +360,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '로딩 중…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '변경 사항 불러오는 중…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    '문서 리비전을 찾을 수 없습니다. id: <code>{{revisionId}}</code> 비교하려는. <Break/> 이것은 아마도 귀하의 계획의 역사 보존 정책 때문일 것입니다. <Break/> 다른 <strong>From</strong> 항목을 선택해 주세요.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     '이 패널에 변경 사항 목록이 표시되려면 문서를 편집하거나 타임라인에서 이전 버전을 선택하세요.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '변경 사항 없음',
+  'changes.not-selectable': '이 이벤트를 선택할 수 없습니다',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '주석 추가됨',
   /** Portable Text diff: An annotation was changed */
@@ -292,8 +410,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '알 수 없는 스키마 유형',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '제거됨',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    '동일한 <strong>from</strong> 및 <strong>to</strong> 리비전을 선택했습니다. 변경 사항을 비교하려면 다른 리비전을 선택하세요.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': '동일한 리비전이 선택되었습니다',
   /** Title for the Review Changes pane */
   'changes.title': '변경 사항 검토',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    '이 필드는 스키마에 정의되어 있지 않습니다. 값은 JSON으로 표시됩니다.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': '초안',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -304,12 +432,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': '확인',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '로딩 중',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': '연결을 시도하는 중…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': '구성 문제',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '구성 문제 발견',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}로 정렬',
@@ -329,12 +462,134 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '타이틀별 정렬',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': '닫기',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': '무시',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': '다음',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': '이전',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': '기본에서 복사',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': '변경됨',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{versionName}} 버전에서 {{title}}이(가) {{effect}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} 버전에서 {{count}}개의 미해결 변경 사항',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': '취소',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': '버전 관리',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    '새 버전 인벤토리는 얼마나 사용하기 쉽거나 어렵습니까?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}} 필터',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': '보는 중',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': '모든 사용자 (기본값)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': '변형 만들기',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': '{{variantDefinitionName}}에 대한 변형 만들기',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': '초안으로',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': '릴리스에 추가',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': '또는 기존 변형 보기',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': '취소',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}}개 문서',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '사용할 수 없는 dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{count}}개 dataset의 {{documentCount}}',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': '클립보드에 ID 복사',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': '문서 ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': '문서 ID 복사 실패',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': '프로젝트 ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': '삭제 ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    '이 문서를 삭제하는 중 오류가 발생했습니다. 일반적으로 이 문서를 참조하는 다른 문서가 있음을 의미합니다.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}}개의 다른 참조가 표시되지 않음',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    '관련 dataset에 대한 액세스 토큰이 없어 이 참조들의 메타데이터를 표시할 수 없습니다.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': '미리보기를 사용할 수 없음',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}}개의 문서가 "<DocumentTitle/>"을(를) 참조합니다',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    '다음 문서들이 "<DocumentTitle/>"을(를) 참조하고 있으므로 삭제하지 못할 수 있습니다:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}}개의 {{subject}} 삭제',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': '변형',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': '버전',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '{{date}}에 생성됨',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}}에 편집됨',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '마지막으로 발행됨',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '게시되지 않음',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}}에 게시됨',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': '개정 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': '리비전을 찾을 수 없습니다',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': '변경 사항이 아직 저장 중입니다.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': '저장이 예상보다 오래 걸리고 있습니다',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': '문서가 빈 값으로 열렸습니다. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': '초기 값을 확인할 수 없습니다',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': '문서 유형 "{{type}}"을(를) 찾을 수 없습니다',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': '이 작업을 수행할 수 없습니다',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -433,13 +688,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '우리 커뮤니티에 가입하세요',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '최신 버전은 {{latestVersion}}입니다',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': '스튜디오 등록',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': '앱 ID',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'v{{newVersion}}로 업데이트하기 위해 재로드',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity 스튜디오 버전 {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': '도움말 및 리소스',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': '최신 상태',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': '들어오는 참조',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': '업로드 취소',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': '기본',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': '업로드',
   /** Uploading <FileName/> */
@@ -459,12 +731,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': '항목 추가...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': '복사',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': '재정렬하려면 드래그하세요',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': '복제',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} 편집',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': '최대 항목 수에 도달했습니다',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '제거',
   /** Label for removing action when an array item has an error  */
@@ -513,14 +789,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': '초기 값을 확인하는 중…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': '비활성화됨',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': '미래의 날짜를 선택하세요.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '예: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': '파일 옵션 메뉴 열기',
-  /** Browse */
-  'inputs.file.browse-button.text': '찾아보기',
-  /** Select file */
-  'inputs.file.dialog.title': '파일 선택',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': '알 수 없는 멤버 종류: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -530,12 +804,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': '값 재설정',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': '잘못된 파일 값',
-  /** Select */
-  'inputs.file.multi-browse-button.text': '선택',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': '현재 업로드를 완료할 수 없습니다.',
   /** Upload failed */
   'inputs.file.upload-failed.title': '업로드 실패',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': '비공개 자산',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN 접근은 서명된 URL에 한정됩니다',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': '필드 지우기',
   /** Copy URL */
@@ -544,6 +820,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': '다운로드',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL이 클립보드에 복사되었습니다',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}}에서 열기',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': '교체',
   /** Upload */
@@ -584,6 +862,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': '이미지 업로드를 위해 놓기',
   /** Read only */
   'inputs.files.common.placeholder.read-only': '읽기 전용',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': '파일을 업로드할 위치:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': '여기에 파일을 업로드할 수 없습니다',
   /** Clear upload */
@@ -593,20 +873,23 @@ export default removeUndefinedLocaleResources({
     '업로드가 적어도 {{staleThresholdMinutes}}분 동안 진행되지 않고 중단되었을 가능성이 있습니다. 미완료된 업로드를 안전하게 지우고 다시 업로드를 시도할 수 있습니다.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '미완료된 업로드',
+  /** Select file */
+  'inputs.files.select-dialog.title': '"{{targetTitle}}"의 파일 선택',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': '이미지 자르기',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '이미지 편집 대화 상자 열기',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': '이미지 옵션 메뉴 열기',
-  /** Select */
-  'inputs.image.browse-menu.text': '선택',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': '여기에 이 파일을 업로드할 수 없습니다',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': '업로드할 이미지를 드롭하세요',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': '이 필드는 읽기 전용입니다',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    '이미지를 불러올 수 없습니다. 접근 제한 때문일 수 있습니다.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '알 수 없는 멤버 종류: {{kind}}',
   /** Edit hotspot and crop */
@@ -620,6 +903,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': '잘못된 이미지 값',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': '업로드된 이미지 미리보기',
+  /** Select image */
+  'inputs.image.select-dialog.title': '"{{targetTitle}}"의 이미지 선택',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': '현재 업로드를 완료할 수 없습니다.',
   /** Upload failed */
@@ -631,6 +916,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': '오류: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': '핫스팟 & 크롭',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "에셋 파이프라인은 벡터 형식에 대한 핫스팟과 크롭을 지원하지 않습니다. 핫스팟 & 크롭을 활성화하려면, 이 이미지를 지원되는 래스터 형식 중 하나로 출력하세요. 예를 들어: <code>fm=jpg</code>를 <ImageUrlDocumentationLink>이미지 URL</ImageUrlDocumentationLink>에 추가하거나 <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>을 사용하여 <code>.format('png')</code>를 호출하세요.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': '개발자 정보 보기',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    '경고: 이 이미지에 핫스팟과 크롭이 적용되지 않을 수 있습니다.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code>(으)로 변환',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -658,9 +951,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': '모든 필드',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': '필드 그룹',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': '오류',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': '정보',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': '경고',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     '이 필드는 문서의 스키마에 따라 <strong>읽기 전용</strong>이며 해제할 수 없습니다. 스튜디오에서 이를 해제할 수 있게 하려면 스키마의 포함 유형에서 <code>readOnly</code> 필드를 제거하세요.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '"{{documentId}}"에 대한 미리보기를 불러올 수 없습니다.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': '필드 제거',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -854,8 +1156,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': '보통',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '인용구',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': '끝에 열 추가',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': '끝에 행 추가',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': '열 핸들',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': '열 삭제',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': '행 삭제',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': '표 삭제',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': '헤더 행',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': '여기에 삽입',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': '표 옵션',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': '행 핸들',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': '표 선택',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '지우기',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': '복사',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '새로 만들기',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -910,6 +1236,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': '지우기',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': '참조 검색 실패',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': '참조된 문서가 잘못된 유형입니다 ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': '참조된 문서의 이미지 미리보기',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -975,6 +1303,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': '참조 강도 불일치',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '약한 참조로 변환',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': '지우기',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': '생성하기',
   /** Loading message for when the input is actively generating a slug */
@@ -1004,6 +1334,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': '속성 값에 <code>_type</code>이 누락됨',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': '값 해제',
+  /** Select video */
+  'inputs.video.select-dialog.title': '"{{targetTitle}}"의 동영상 선택',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1049,8 +1381,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': '권한 부족',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': '세션이 더 이상 유효하지 않습니다. 다시 로그인해 주세요.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': '세션이 만료되었습니다. 다시 로그인해 주세요.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': '로그아웃되었습니다',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '예상치 못한 오류: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    '브라우저가 Sanity와 통신하기 위해 구식 HTTP 프로토콜을 사용하고 있습니다. 이로 인해 성능이 크게 저하될 수 있습니다.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': '더 알아보기',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': '이 세션에 다시 표시하지 않기',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': '브레이크를 걸고 있습니다',
 
   /** Button label for "Create new document" button */
   'new-document.button': '새로 만들기',
@@ -1079,12 +1428,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': '새 문서 만들기',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': '새로 고침',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio가 업데이트되었습니다',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': '멤버 관리',
   /** Accessibility label for presence menu button */
   'presence.aria-label': '여기 있는 사람',
@@ -1105,8 +1454,260 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '현재 업로드 중인 이미지',
 
-  /* Relative time, just now */
   'relative-time.just-now': '방금',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': '릴리스에 추가',
+  /** Action message to add document to release */
+  'release.action.add-to-release': '{{title}}에 추가',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': '문서가 이미 릴리스에 존재합니다',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': '이미 릴리스 {{title}}에 포함됨',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': '버전을 복사하기',
+  /** Action message for creating new releases */
+  'release.action.create-new': '새 릴리스',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': '버전을 생성하지 못했습니다',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': '일정 삭제',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': '버전 버리기',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': '버전 버리기에 실패했습니다',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': '세부 정보 편집',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': '일정 편집',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': '새 릴리스',
+  'release.action.new-release.limit-reached_other':
+    '이 작업 공간은 {{count}}개의 릴리스로 제한됩니다',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': '이 작업을 수행할 권한이 없습니다',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': '지금 게시',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    '다시 시도하거나 연결을 확인해 주세요. 문서는 여전히 출시 시 비공개로 설정됩니다.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    '출시 시 비공개 설정을 되돌리지 못했습니다.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    '이제 이 버전을 편집할 수 있습니다.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    '출시 시 비공개 설정을 성공적으로 되돌렸습니다.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': '게시 예약',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': '릴리스에서 버전을 비공개로 설정하는 데 실패했습니다',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    '<strong>{{title}}</strong>을(를) 릴리스에서 비공개로 성공적으로 설정했습니다',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': '릴리스 보기',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': '예약된 초안 보기',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}}개의 변형',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} 버전',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': '초안',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': '초안들',
+  /** Label for Published chip in document header */
+  'release.chip.published': '게시됨',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': '이 릴리스는 보관되어 있으며 편집할 수 없습니다.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '생성된 날짜 {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    '이 문서는 라이브 편집 모드에 있으며, 초안이 비활성화되었습니다',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '편집된 날짜 {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '{{date}}에 대한 예정',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': '편집 없음',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': '게시되지 않음',
+  'release.chip.tooltip.other-variants_other': '{{count}}개의 변형',
+  'release.chip.tooltip.other-versions_other': '릴리스 외부의 추가 {{count}} 버전',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '게시된 날짜 {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '{{date}}에 예정됨',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': '알 수 없는 날짜',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': '이 릴리스는 삭제되었습니다',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': '새 릴리스에 버전 복사',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': '릴리스 생성',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': '릴리스 생성',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    '이 예약된 초안을 삭제하시겠습니까? 귀하의 초안은 이미 최신 상태입니다.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    '이 예약된 초안을 삭제하시겠습니까? 변경 사항은 초안에 저장됩니다.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': '이 예약된 초안을 삭제하시겠습니까?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': '예, 일정 삭제',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    '예약된 변경 사항을 초안에 복사하여 보관합니다(권장)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    '귀하의 예약된 초안은 현재 초안과 다른 변경 사항이 있습니다.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': '예약된 초안 삭제',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': '예약된 게시를 위한 새로운 날짜와 시간을 선택하세요.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': '일정 업데이트',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': '일정 변경',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': '저장',
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': '설명',
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': '릴리스 편집',
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': '제목',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': '예약된 초안을 즉시 게시하시겠습니까?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': '네, 지금 실행',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': '초안 지금 게시',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    '이를 통해 여러 버전에서 작업할 때 문서가 충돌하는지 여부를 표시할 수 있습니다.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    '참고: 릴리스 시간을 변경하고 나중에 예약된 게시를 위한 정확한 시간을 설정할 수 있습니다.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': '릴리스의 대략적인 시간',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': '릴리스를 설명하세요…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': '릴리스 숨기기',
+  /** Label for the release menu */
+  'release.menu.label': '릴리스 메뉴',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': '예약된 초안 보기',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': '작업',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': '콘텐츠 릴리스 보기',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': '초안',
+  /** Label for published releases in navbar */
+  'release.navbar.published': '게시됨',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': '릴리스',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': '제목 없는 릴리스',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    '이 릴리스를 미래의 시간과 날짜로 예약하세요.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': '예약 날짜',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': '이 릴리스는 고정 해제되었습니다',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "'{{title}}' 릴리스가 보관되었습니다",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': '릴리스 생성 실패',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong> 삭제에 실패했습니다: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    '예약된 초안 문서 <strong>{{title}}</strong>가 삭제되었습니다.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': '릴리스 세부 정보 저장에 실패했습니다',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "'{{title}}' 릴리스를 찾을 수 없습니다",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong>을(를) 일시 중지하는 데 실패했습니다: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong> 게시에 실패했습니다: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    '예약된 초안 문서 <strong>{{title}}</strong>가 게시되었습니다.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': '이 릴리스는 고정 해제되었습니다',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "'{{title}}' 릴리스가 게시되었습니다",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    '예약된 초안 문서 <strong>{{title}}</strong>의 일정 변경에 실패했습니다: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    '예약된 초안 문서 <strong>{{title}}</strong>의 일정이 변경되었습니다.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': '초안 예약에 실패했습니다: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': '일정에 따른 초안이 성공적으로 예약되었습니다',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': '예약된 초안이 발행되었습니다',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': '이 문서의 버전이 이미 추가되었습니다',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': '이 릴리스는 예약되었습니다. 문서를 추가하려면 예약을 취소하세요.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': '가능한 한 빨리',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': '예약된 시간',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': '미정',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': '모든 문서 버전 보기',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': '지원팀에 문의하기',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': '콘텐츠 릴리스 구성 문제',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    '귀하의 프로젝트에 콘텐츠 릴리스가 활성화되어 있지만, 릴리스 제한에 구성 문제가 있는 것으로 보입니다. 콘텐츠 릴리스가 올바르게 구성되도록 지원팀에 문의해 주세요.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': '예약',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': '이 문서를 언제 게시할지 선택하세요.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': '게시를 위한 초안 일정 예약',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': '예약된 게시',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '검색 열기',
@@ -1295,37 +1896,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>는</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>는</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-equal.name': '수량이',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>는 ></Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>는 ></Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-gt.name': '수량이 더 많음',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>는 ≥</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>는 ≥</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-gte.name': '수량이 더 많거나 같음',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>는 <</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>는 <</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-lt.name': '수량이 더 적음',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>는 ≤</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>는 ≤</Operator> <Value>{{count}}개 항목들</Value>',
   'search.operator.array-count-lte.name': '수량이 더 적거나 같음',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>는 가지고 있지 않음</Operator> <Value>{{count}}개 항목</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1338,35 +1933,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>는 사이에 있음</Operator> <Value>{{from}} → {{to}}개 항목들</Value>',
   'search.operator.array-count-range.name': '수량이 사이에 있음',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': '포함함',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': '포함하지 않음',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': '포함함',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': '포함하지 않음',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': '임',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': '아님',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': '임',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': '아님',
@@ -1379,162 +1966,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': '임',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>는 이후임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': '이후',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>는 이전임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': '이전',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': '임',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>는 마지막에 있음</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': '마지막',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': '아님',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>사이에 있음</Operator> <Value/>',
   'search.operator.date-range.name': '사이에 있음',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>는 이후임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': '이후',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>는 이전임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': '이전',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': '임',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>는 마지막에 있음</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': '마지막',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': '아님',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>사이에 있음</Operator> <Value/>',
   'search.operator.date-time-range.name': '사이에 있음',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>임</Operator> <Value>비어 있지 않음</Value>',
   'search.operator.defined.name': '비어 있지 않음',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>임</Operator> <Value>비어 있음</Value>',
   'search.operator.not-defined.name': '비어 있음',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': '임',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': '더 큼',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': '더 크거나 같음',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': '더 작음',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': '더 작거나 같음',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': '아님',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>사이에 있음</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': '사이에 있음',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': '포함함',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': '임',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': '포함하지 않음',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': '아님',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': '파일',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': '이미지',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': '문서',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': '임',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': '아님',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': '포함함',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': '임',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': '포함하지 않음',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': '아님',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>포함함</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': '포함함',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': '임',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>임</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': '임',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': '아님',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>포함하지 않음</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': '포함하지 않음',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>아님</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': '아님',
@@ -1557,24 +2104,39 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '검색 결과',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': '열 편집',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': '테이블에서 제거',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': '열 재설정',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': '최대 5개의 필드 유형 선택',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '구성 상태',
 
+  'time-zone.action.search-for-timezone-placeholder': '도시 또는 시간대를 검색',
+  'time-zone.action.select-local-time-zone': '현지 시간대 선택',
+  'time-zone.dialog-info.content-releases':
+    '선택된 시간대는 콘텐츠 릴리스에서 날짜 표시 방식을 변경합니다.',
+  'time-zone.dialog-info.input':
+    '선택된 시간대는 이 문서의 이 입력란에 대한 날짜 표시 방식만 변경합니다.',
+  'time-zone.dialog-info.scheduled-publishing':
+    '선택된 시간대는 일정에 표시되는 날짜를 변경합니다.',
+  'time-zone.local-time': '현지 시간',
+  'time-zone.time-zone': '시간대',
+  'time-zone.time-zone-tooltip-content-releases': '{{alternativeName}} GMT{{offset}}에 릴리스 표시',
+  'time-zone.time-zone-tooltip-input':
+    '{{alternativeName}} GMT{{offset}}에 <em>{{title}}</em> 표시',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '{{alternativeName}} GMT{{offset}}에 일정 표시',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': '변경 사항',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     '문서 기록 트랜잭션은 영향을 받지 않았습니다.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     '문서 변경 사항을 검색하는 동안 오류가 발생했습니다.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    '문서 기록을 보려면 스튜디오 설정을 통해 이벤트 API를 활성화하세요.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    '버전 문서의 기록은 이벤트 API를 통해서만 사용할 수 있습니다.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     '문서 내용을 변경하면, 이 메뉴에 문서 버전이 표시됩니다.',
@@ -1595,6 +2157,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': '문서 개정 목록',
   /** Label for loading history */
   'timeline.loading-history': '기록 로딩 중…',
+  'timeline.no-previous-events': '이전 이벤트 없음',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '생성됨',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1607,6 +2170,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '삭제됨',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '삭제됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': '초안 생성됨',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': '초안 생성됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '초안 폐기됨',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1619,6 +2186,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '실시간 편집됨',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '실시간 편집됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': '보존 정책에 의해 삭제됨',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '게시됨',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1627,6 +2196,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '게시 취소됨',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '게시 취소됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': '버전 생성됨',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': '버전 생성됨: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': '버전 폐기됨',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': '버전 폐기됨: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1699,6 +2276,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': '메뉴 열기',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': '에이전트 변경 사항',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': '제안된 변경 사항',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1711,6 +2293,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': '다른 워크스페이스 선택',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': '작업 공간 전환',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': '워크스페이스를 선택하세요',
   /** Label for the workspace menu */

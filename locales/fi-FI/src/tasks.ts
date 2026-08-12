@@ -161,4 +161,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Aktiivinen asiakirja',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Tilattu',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'Tehtävät',
 })

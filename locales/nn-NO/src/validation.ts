@@ -51,6 +51,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': 'Fil er påkravd',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Bilete er påkravd',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': 'Fila kunne ikkje finnast i Media Library',
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': 'Må vere ei referanse til eit Media Library-objekt',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Må vere ein referanse til eit dokument',
   /** Object references a document which is not published */
@@ -62,6 +66,8 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': 'Ingen valideringsfeil',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Validering',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message': 'Dokumentet skal avpubliserast, ingen valideringsfeil vert viste',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug må ha ein verdi',

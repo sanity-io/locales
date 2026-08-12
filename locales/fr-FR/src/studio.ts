@@ -1,6 +1,74 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Problème de configuration détecté',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Les mises à jour automatiques sont activées, mais aucun <code>deployment.appId</code> configuré dans <code>sanity.cli.ts</code>. Ce Studio se met à jour contre le canal <strong>latest</strong>.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Voir la documentation',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Désactivé',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Activé',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Mises à jour automatiques',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Comment activer',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Gérer la version',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Copié dans le presse-papiers. Bon collage !',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Copier dans le presse-papiers',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Version actuelle',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Comment mettre à niveau',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Dernière version',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Nouvelle version disponible',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Nouvelle version',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Recharger',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Recharger le Studio pour mettre à jour',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Développement',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Nouvelle version disponible',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Préversion',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'À jour',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'À jour',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Mettre à jour',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip':
+    'Apprendre comment mettre à jour Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Agent utilisateur',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Voir sur GitHub',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Fermer',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Fermer le dialogue',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Fermer',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Ignorer les annonces',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Ouvrir les annonces',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Supprimer',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +79,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Documents utilisant l’image',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Chargement…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Sélectionner',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Annuler',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +120,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Affichage uniquement des actifs des types acceptés : <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Annuler',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Sélectionner',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Sélectionner un fichier',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Sélectionner une image',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    "Erreur lors de l'insertion de l'actif. Voir la console pour plus d'informations.",
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Échec du chargement des ressources',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Charger plus',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Pas de fichier',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': "Pas d'image",
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Impossible de supprimer le fichier actuellement sélectionné',
@@ -81,6 +160,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'L’image a été supprimée',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Images téléchargées',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Un document utilise le fichier <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -108,6 +188,43 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     "Aucun document n'utilise cette image",
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description':
+    "Voir la console pour plus d'informations.",
+  'asset-sources.common.uploader.upload-failed.title': 'Échec du téléchargement',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': "Fichiers de l'espace de travail",
+  'asset-sources.dataset.image.title': "Images de l'espace de travail",
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Un problème est survenu lors de la tentative de résolution de la bibliothèque multimédia pour ce projet.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    "Aucune bibliothèque de médias n'a été provisionnée pour cette organisation.",
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Bibliothèque multimédia',
+  'asset-sources.media-library.image.title': 'Bibliothèque multimédia',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Terminé',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Sélectionner un nouvel asset pour «\xA0{{targetTitle}}\xA0»',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Sélectionner un nouvel asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': "Modifier l'asset",
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Téléverser dans la Media Library',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Utilisation du fichier existant trouvé dans la bibliothèque.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Le fichier : '{{filename}}' existe déjà",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text':
+    "La publication '<strong>{{title}}</strong>' a été supprimée.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Aller au mois suivant',
   /** Action message for navigating to next year */
@@ -116,24 +233,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Aller au mois précédent',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Aller à l’année précédente',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Aujourd’hui',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Aller à aujourd’hui',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Demain',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Hier',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Inclure l’heure',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Sélectionner l’heure',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Sélectionner la minute',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': "Sélectionner l'heure",
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Régler sur l’heure actuelle',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} le {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Ouvrir le calendrier',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Sélectionner une date',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Doit être au format <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
@@ -220,6 +335,9 @@ export default removeUndefinedLocaleResources({
     'Consultez la console développeur pour plus d’informations',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Le rendu des modifications de ce champ a provoqué une erreur',
+  'changes.error-description': 'Nous ne pouvons pas charger les modifications pour ce document.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': "Quelque chose s'est mal passé",
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Erreur de valeur : La valeur est de type "<code>{{actualType}}</code>", attendu "<code>{{expectedType}}</code>"',
@@ -249,11 +367,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Chargement…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Chargement des changements…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    "Nous n'avons pas pu trouver la révision du document avec l'identifiant : <code>{{revisionId}}</code> que vous essayez de comparer. <Break/> Cela est probablement dû à la politique de conservation de l'historique de votre plan. <Break/> Veuillez sélectionner une entrée <strong>Depuis</strong> différente.",
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Modifiez le document ou sélectionnez une version antérieure dans la chronologie pour voir une liste de changements apparaître dans ce panneau.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Il n’y a pas de changements',
+  'changes.not-selectable': "Il n'est pas possible de sélectionner cet événement",
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Annotation ajoutée',
   /** Portable Text diff: An annotation was changed */
@@ -295,8 +417,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Type de schéma inconnu',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Supprimé',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Vous avez sélectionné la même révision <strong>de</strong> et <strong>à</strong>, veuillez sélectionner des révisions différentes pour comparer les changements entre elles.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Même révision sélectionnée',
   /** Title for the Review Changes pane */
   'changes.title': 'Réviser les changements',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    "Ce champ n'est pas défini dans le schéma. Les valeurs sont affichées en JSON.",
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Brouillon',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -307,12 +439,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Confirmer',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Chargement',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Tentative de connexion…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Problèmes de configuration',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Problèmes de configuration trouvés',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Trier par {{title}}',
@@ -332,12 +469,163 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Trier par titre',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Fermer',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignorer',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Suivant',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Précédent',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Copier depuis la base',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'modifié',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} dans la version {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one':
+    'Modification non résolue dans la version {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} modifications non résolues dans la version {{versionName}}',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Annuler',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    "Dans quelle mesure la nouvelle version de l'inventaire est-elle facile ou difficile à utiliser ?",
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrer {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'en cours de consultation',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Tous les utilisateurs (Par défaut)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Créer une variante',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Créer une variante pour {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'En tant que brouillon',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Dans une version',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Ou consulter les variantes existantes',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Annuler',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 document',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} documents',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset : {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets : {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Dataset indisponible',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Datasets indisponibles',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} dans un autre dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} dans {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': "Copier l'ID dans le presse-papiers",
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID du document',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    "Échec de la copie de l'ID du document",
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID du projet',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Supprimer (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Supprimer ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    "Une erreur s'est produite lors de la tentative de suppression de ce document. Cela signifie généralement que d'autres documents y font référence.",
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 autre référence non affichée',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} autres références non affichées',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    "Nous ne pouvons pas afficher les métadonnées de ces références en raison d'un jeton d'accès manquant pour les datasets associés.",
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID : {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Aperçu indisponible',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 document fait référence à « <DocumentTitle/> »',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} documents font référence à « <DocumentTitle/> »',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Vous ne pourrez peut-être pas supprimer « <DocumentTitle/> » car les documents suivants y font référence :',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Supprimer {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Supprimer {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variante',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'variantes',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'version',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versions',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Créé le {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Édité {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Dernière publication',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Non publié',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publié {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Révision à partir du <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Révision non trouvée',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description':
+    "Vos modifications sont toujours en cours d'enregistrement.",
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': "L'enregistrement prend plus de temps que prévu",
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    "Le document s'est ouvert avec une valeur vide. {{errorMessage}}",
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Impossible de résoudre la valeur initiale',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Type de document "{{type}}" non trouvé',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': "Impossible d'effectuer cette action",
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -391,13 +679,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Aucun élément de tableau avec `_key` <code>"{{key}}"</code> trouvé au chemin <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': "Pile d'appels :",
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Pile de composants :',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Erreur : {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': "Erreur d'exécution non gérée",
   /** Form field deprecated label */
   'form.field.deprecated-label': 'obsolète',
   /** Fallback title shown above field if it has no defined title */
@@ -438,13 +726,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Rejoignez notre communauté',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'La dernière version est {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Enregistrer le studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': "ID de l'application",
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Recharger pour mettre à jour vers v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Version de Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Aide et ressources',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'À jour',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Références entrantes',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Annuler',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Par défaut',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Télécharger',
   /** Uploading <FileName/> */
@@ -464,12 +769,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Ajouter un élément...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Copier',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Glisser pour réorganiser',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Dupliquer',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Modifier {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': "Nombre maximum d'éléments atteint",
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Supprimer',
   /** Label for removing action when an array item has an error  */
@@ -501,15 +810,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'Erreur inattendue : {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Tous',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Aucun élément trouvé',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Rechercher',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Basculer en vue grille',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Basculer en vue liste',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'Aucun élément',
   /** Label for read only array fields */
@@ -517,15 +826,13 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Résolution de la valeur initiale…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Désactivé',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Sélectionnez une date dans le futur.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'par ex. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Ouvrir le menu des options de fichier',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Parcourir',
-  /** Select file */
-  'inputs.file.dialog.title': 'Sélectionner un fichier',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Type de membre inconnu : {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -535,13 +842,15 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Réinitialiser la valeur',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Valeur de fichier invalide',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Sélectionner',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description':
     "Le téléchargement n'a pas pu être complété pour le moment.",
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Échec du téléchargement',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Asset privé',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Accès CDN limité aux URL signées',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Effacer le champ',
   /** Copy URL */
@@ -551,6 +860,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     "L'URL est copiée dans le presse-papiers",
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Ouvrir dans {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Remplacer',
   /** Upload */
@@ -591,6 +902,9 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Déposez pour téléverser une image',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Lecture seule',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Télécharger les fichiers vers :',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported':
     'Impossible de téléverser des fichiers ici',
@@ -601,6 +915,8 @@ export default removeUndefinedLocaleResources({
     'Un téléchargement n’a fait aucun progrès depuis au moins {{staleThresholdMinutes}} minutes et a probablement été interrompu. Vous pouvez effacer en toute sécurité le téléchargement incomplet et essayer de télécharger à nouveau.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Téléchargement incomplet',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Sélectionner un fichier pour « {{targetTitle}} »',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Rogner l’image',
   /** Accessibility label for button to open image edit dialog */
@@ -608,14 +924,15 @@ export default removeUndefinedLocaleResources({
     'Ouvrir la boîte de dialogue d’édition d’image',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Ouvrir le menu des options d’image',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Sélectionner',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Impossible de télécharger ce fichier ici',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Déposez l’image pour la télécharger',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Ce champ est en lecture seule',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    "Impossible de charger l'image. Cela peut être dû à des restrictions d'accès.",
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Type de membre inconnu : {{kind}}',
   /** Edit hotspot and crop */
@@ -629,6 +946,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Valeur d’image invalide',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Aperçu de l’image téléchargée',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Sélectionner une image pour « {{targetTitle}} »',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description':
     'Le téléchargement n’a pas pu être complété pour le moment.',
@@ -641,6 +960,15 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Erreur : {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Le pipeline d'actifs ne prend pas en charge le point chaud et le recadrage pour les formats vectoriels. Pour activer le point chaud et le recadrage, sortez cette image dans l'un des formats raster pris en charge. Par exemple : <code>fm=jpg</code> à l'<ImageUrlDocumentationLink>URL de l'image</ImageUrlDocumentationLink> ou appelez <code>.format('png')</code> avec <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info':
+    'Voir les informations pour les développeurs',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    "Avertissement : Le point chaud et le recadrage pourraient ne pas être appliqués à cette image lorsqu'elle est présentée.",
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Convertir en <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -665,12 +993,21 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Valeur de propriété invalide',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Tous les champs',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Groupes de champs',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'erreur',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'info',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'avertissement',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Ce champ est <strong>en lecture seule</strong> selon le schéma du document et ne peut pas être désactivé. Si vous souhaitez pouvoir le désactiver dans le Studio, assurez-vous de retirer le champ <code>readOnly</code> du type englobant dans le schéma.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    "Impossible de charger l'aperçu pour la référence « {{documentId}} ».",
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Supprimer le champ',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -865,8 +1202,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citation',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Ajouter une colonne à la fin',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Ajouter une ligne à la fin',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Poignée de colonne',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Supprimer la colonne',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Supprimer la ligne',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Supprimer le tableau',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': "Ligne d'en-tête",
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Insérer ici',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Options du tableau',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Poignée de ligne',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Sélectionner le tableau',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Effacer',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Copier',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Créer nouveau',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -922,6 +1283,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Effacer',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Échec de la recherche de référence',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    "Le document référencé est d'un type invalide ({{typeName}})",
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Aperçu de l’image du document référencé',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -987,6 +1351,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Incohérence de la force de la référence',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Convertir en référence faible',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Effacer',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Générer',
   /** Loading message for when the input is actively generating a slug */
@@ -1017,6 +1383,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Valeur de propriété manquante <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Désaffecter la valeur',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Sélectionner une vidéo pour « {{targetTitle}} »',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1037,7 +1405,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'Vous n’avez pas la permission de supprimer ce document.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    "Vous n'avez pas la permission de supprimer des plannings.",
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Vous n’avez pas la permission d’abandonner les modifications dans ce document.',
@@ -1045,9 +1414,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'Vous n’avez pas la permission de dupliquer ce document.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    "Vous n'avez pas la permission de modifier des plannings.",
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    "Vous n'avez pas la permission d'exécuter des plannings.",
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Vous n’avez pas la permission de publier ce document.',
@@ -1059,8 +1430,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Permissions insuffisantes',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': "Votre session n'est plus valide. Veuillez vous reconnecter.",
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Votre session a expiré. Veuillez vous reconnecter.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Vous avez été déconnecté',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Erreur inattendue : {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Votre navigateur utilise un protocole HTTP obsolète pour communiquer avec Sanity. Cela peut entraîner une performance considérablement dégradée.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'En savoir plus',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ne plus afficher pour cette session',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Vous avez mis vos freins',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Créer',
@@ -1089,12 +1477,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Créer un nouveau document',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Push to reload'
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio is ready to update!'
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
+  'package-version.new-package-available.reload-button': 'Appuyez pour recharger',
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
+  'package-version.new-package-available.title': 'Sanity Studio est prêt à être mis à jour !',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Gérer les membres',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Qui est là',
@@ -1115,8 +1503,272 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'L’image en cours de téléchargement',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'à l’instant',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Ajouter à la publication',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Ajouter à {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Le document existe déjà dans la version',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Déjà dans la publication {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Copier la version vers',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Nouvelle publication',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Échec de la création de la version',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Supprimer le programme',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Supprimer la version',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Échec de la suppression de la version',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Modifier le programme',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Nouvelle Publication',
+  'release.action.new-release.limit-reached_other':
+    'Cet espace de travail est limité à {{count}} publications',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': "Vous n'avez pas la permission d'effectuer cette action",
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publier maintenant',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Veuillez réessayer ou vérifier votre connexion. Le document va toujours être non publié lors de la sortie.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    "Échec de l'annulation de la configuration pour ne pas publier lors de la sortie.",
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Vous pouvez maintenant modifier cette version.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Annulation réussie de la configuration pour ne pas publier lors de la sortie.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Planifier la publication',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Échec de la définition de la version à dépublier sur la publication',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'La version <strong>{{title}}</strong> a été définie avec succès pour être dépubliée sur la publication',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Voir la publication',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Voir les brouillons programmés',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Programmé pour la publication le {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variante',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} variantes',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} version',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} versions',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Brouillon',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Brouillons',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Publié',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Cette version est archivée et ne peut pas être modifiée.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Créé le {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    "Ce document est en mode d'édition en direct, les brouillons sont désactivés",
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Édité le {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Prévu pour le {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Pas de modifications',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Non publié',
+  'release.chip.tooltip.other-variants_one': 'Une variante',
+  'release.chip.tooltip.other-variants_other': '{{count}} variantes',
+  'release.chip.tooltip.other-versions_one':
+    'Une version supplémentaire en dehors des publications',
+  'release.chip.tooltip.other-versions_other':
+    '{{count}} versions supplémentaires en dehors des publications',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Publié le {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Programmé pour le {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Date inconnue',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Cette version a été supprimée',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Copier la version vers une nouvelle version',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Créer une version',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Nouvelle version',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Supprimer ce brouillon programmé ? Votre brouillon est déjà à jour.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Supprimer ce brouillon programmé ? Vos modifications seront enregistrées dans le brouillon.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Supprimer ce brouillon programmé ?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Oui, supprimer le programme',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Conserver mes modifications programmées en les copiant dans le brouillon (recommandé)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Votre brouillon programmé comporte des modifications différentes de votre brouillon actuel.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Supprimer le brouillon programmé',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Sélectionnez une nouvelle date et heure pour la publication programmée.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Mettre à jour le programme',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Modifier le programme',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Êtes-vous sûr de vouloir publier ce brouillon programmé immédiatement ?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Oui, exécuter maintenant',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Publier le brouillon maintenant',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    "L'heure de sortie prévue est utilisée pour créer de meilleures prévisualisations et des indications sur d'éventuels conflits entre documents.",
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Vous pouvez toujours la modifier plus tard.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Heure approximative de sortie',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Décrivez la version…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Masquer la version',
+  /** Label for the release menu */
+  'release.menu.label': 'Menu de publication',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Voir les brouillons planifiés',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Actions',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Voir les publications de contenu',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Brouillons',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Publié',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Versions',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Version sans titre',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Programmez pour une date et une heure futures.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Publier le',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Cette version a été détachée',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "La version '{{title}}' a été archivée",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Échec de la création de la release',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Échec de la suppression du document de brouillon programmé <strong>{{title}}</strong> : {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Le document de brouillon programmé <strong>{{title}}</strong> a été supprimé.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "La release '{{title}}' n'a pas pu être trouvée",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Échec de la mise en pause du document de brouillon planifié <strong>{{title}}</strong> : {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Échec de la publication immédiate du document de brouillon programmé <strong>{{title}}</strong> : {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Le document de brouillon programmé <strong>{{title}}</strong> a été publié.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Cette version a été détachée',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "La version '{{title}}' a été publiée",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Échec de la reprogrammation du document de brouillon programmé <strong>{{title}}</strong> : {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Le document de brouillon programmé <strong>{{title}}</strong> a été reprogrammé.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Échec de la planification du brouillon : {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Brouillon planifié avec succès',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Le brouillon programmé a été publié',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Une version de ce document a déjà été ajoutée',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    "Cette release a été planifiée. Annulez la planification pour ajouter d'autres documents.",
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Dès que possible',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'À une heure précise',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Indécis',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Voir toutes les versions du document',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Contacter le Support',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header':
+    'Problème de configuration des publications de contenu',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Les publications de contenu sont activées pour votre projet, mais il semble y avoir un problème de configuration avec les limites de vos publications. Veuillez contacter le support pour que vos publications de contenu soient correctement configurées.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Programmer',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Sélectionnez quand ce document doit être publié.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Planifier la publication du brouillon',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Publication planifiée',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Ouvrir la recherche',
@@ -1307,37 +1959,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>a</Operator> <Value>{{count}} élément</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>a</Operator> <Value>{{count}} éléments</Value>',
   'search.operator.array-count-equal.name': 'quantité est',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>a ></Operator> <Value>{{count}} élément</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>a ></Operator> <Value>{{count}} éléments</Value>',
   'search.operator.array-count-gt.name': 'quantité supérieure à',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>a ≥</Operator> <Value>{{count}} élément</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>a ≥</Operator> <Value>{{count}} éléments</Value>',
   'search.operator.array-count-gte.name': 'quantité supérieure ou égale à',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>a <</Operator> <Value>{{count}} élément</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>a <</Operator> <Value>{{count}} éléments</Value>',
   'search.operator.array-count-lt.name': 'quantité inférieure à',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>a ≤</Operator> <Value>{{count}} élément</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>a ≤</Operator> <Value>{{count}} éléments</Value>',
   'search.operator.array-count-lte.name': 'quantité inférieure ou égale à',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>n’a pas</Operator> <Value>{{count}} élément</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1350,35 +1996,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>a entre</Operator> <Value>{{from}} → {{to}} éléments</Value>',
   'search.operator.array-count-range.name': 'quantité est entre',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inclut</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inclut',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>n’inclut pas</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'n’inclut pas',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inclut</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inclut',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>n’inclut pas</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'n’inclut pas',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'est',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'n’est pas',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'est',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'n’est pas',
@@ -1391,161 +2029,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'est',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>est après</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'après',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>est avant</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'avant',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'est',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>est dans le dernier</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'dernier',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'n’est pas',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>est entre</Operator> <Value/>',
   'search.operator.date-range.name': 'est entre',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>est après</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'après',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>est avant</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'avant',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'est',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>est dans le dernier</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'dernier',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'n’est pas',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>est entre</Operator> <Value/>',
   'search.operator.date-time-range.name': 'est entre',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>est</Operator> <Value>non vide</Value>',
   'search.operator.defined.name': 'non vide',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>est</Operator> <Value>vide</Value>',
   'search.operator.not-defined.name': 'vide',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'est',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'supérieur à',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'supérieur ou égal à',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'inférieur à',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'inférieur ou égal à',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'n’est pas',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>est entre</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'est entre',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>contient</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'contient',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'est',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>ne contient pas</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'ne contient pas',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'n’est pas',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fichier',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'image',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'document',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'est',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'n’est pas',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>contient</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'contient',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'est',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>ne contient pas</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'ne contient pas',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'n’est pas',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>contient</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'contient',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'est',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>est</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'est',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'n’est pas',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>ne contient pas</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'ne contient pas',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>n’est pas</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'n’est pas',
@@ -1568,24 +2166,40 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Résultats de recherche',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Statut de la configuration',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Rechercher une ville ou un fuseau horaire',
+  'time-zone.action.select-local-time-zone': 'Sélectionner le fuseau horaire local',
+  'time-zone.dialog-info.content-releases':
+    'Le fuseau horaire sélectionné changera la manière dont les dates sont représentées dans les publications de contenu.',
+  'time-zone.dialog-info.input':
+    'Le fuseau horaire sélectionné changera la manière dont les dates sont représentées uniquement pour cette entrée dans ce document.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Le fuseau horaire sélectionné changera la manière dont les dates sont représentées dans les planifications.',
+  'time-zone.local-time': 'heure locale',
+  'time-zone.time-zone': 'Fuseau horaire',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Affichage des publications dans {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Affichage de <em>{{title}}</em> dans {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Affichage des planifications dans {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Modifications par',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Les transactions de l’historique du document n’ont pas été affectées.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Une erreur s’est produite lors de la récupération des modifications du document.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    "Activez l'API d'événements via la configuration du Studio pour voir l'historique du document.",
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    "L'historique des versions de documents n'est disponible qu'à travers l'API d'événements.",
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Lors de la modification du contenu du document, les versions du document apparaîtront dans ce menu.',
@@ -1596,7 +2210,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'Le plus récent',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Dernière révision',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1606,6 +2220,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Révisions du document',
   /** Label for loading history */
   'timeline.loading-history': 'Chargement de l’historique…',
+  'timeline.no-previous-events': 'Aucun événement précédent',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Créé',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1618,6 +2233,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Supprimé',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Supprimé : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Brouillon créé',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Brouillon créé : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Brouillon rejeté',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1630,6 +2249,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Édité en direct',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Édité en direct : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Supprimé par la politique de conservation',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publié',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1638,6 +2259,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Non publié',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Non publié : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Version créée',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Version créée : {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Version écartée',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Version écartée : {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1650,23 +2279,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': "Menu du fil d'Ariane",
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Recherche',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Menu de recherche',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Aucun résultat trouvé',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Fermer la barre latérale',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Réduire',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Terminé',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Développer',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Ouvrir la barre latérale',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': "{{count}} jour restant dans l'essai",
@@ -1712,6 +2341,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Ouvrir le menu',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': "Modifications de l'agent",
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Modifications proposées',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1724,6 +2358,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Choisissez un autre espace de travail',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': "Changer d'espace de travail",
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Choisissez votre espace de travail',
   /** Label for the workspace menu */

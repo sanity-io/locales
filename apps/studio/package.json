@@ -15,8 +15,9 @@
     "start": "sanity start"
   },
   "dependencies": {
-    "@sanity/icons": "^3.3.0",
+    "@sanity/icons": "^5.2.1",
     "@sanity/locale-be-by": "workspace:*",
+    "@sanity/locale-ca-es": "workspace:*",
     "@sanity/locale-cs-cz": "workspace:*",
     "@sanity/locale-da-dk": "workspace:*",
     "@sanity/locale-de-de": "workspace:*",
@@ -37,6 +38,7 @@
     "@sanity/locale-pl-pl": "workspace:*",
     "@sanity/locale-pt-br": "workspace:*",
     "@sanity/locale-pt-pt": "workspace:*",
+    "@sanity/locale-ro-ro": "workspace:*",
     "@sanity/locale-ru-kz": "workspace:*",
     "@sanity/locale-sv-se": "workspace:*",
     "@sanity/locale-th-th": "workspace:*",
@@ -45,20 +47,16 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^2.8.2",
-    "@sanity/vision": "^3.51.0",
-    "groq": "^3.51.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1",
-    "sanity": "^3.51.0",
-    "styled-components": "^6.1.12"
+    "@sanity/ui": "^4.0.1",
+    "@sanity/vision": "^6.9.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sanity": "^6.9.2",
+    "styled-components": "^6.5.1"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^4.0.0",
-    "@types/react": "^18.3.3",
-    "eslint": "^8.57.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.3"
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "vite": "^8.2.1"
   }
 }

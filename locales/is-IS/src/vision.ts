@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Afrita á klippiborð',
+  /** Label for deleting a query */
+  'action.delete': 'Eyða',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Breyta titli',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stoppa',
   /** Label for setting up a listener */
   'action.listen-execute': 'Hlusta',
+  /** Label for query loading table */
+  'action.load-queries': 'Hlaða fyrirspurnum',
+  /** Label for loading a query */
+  'action.load-query': 'Hlaða fyrirspurn',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Hætta við',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Sækja',
+  /** Label for saving a query */
+  'action.save-personal-copy': 'Vista persónulegt eintak',
+  /** Label for saving a personal query */
+  'action.save-personal-query': 'Vista sem persónulegt',
+  /** Label for saving a query */
+  'action.save-query': 'Vista fyrirspurn',
+  /** Label for saving a shared query */
+  'action.save-shared-query': 'Vista sem samnýtt',
+  /** Label for unsharing a query */
+  'action.unshare': 'Hætta samnýtingu',
+  /** Label for updating a query */
+  'action.update': 'Uppfæra',
 
+  /** Label for actions user can take */
+  'label.actions': 'Aðgerðir',
+  /** Label for all saved queries */
+  'label.all': 'Allt',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Breytt',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nýtt',
+  /** Label for query type "personal" */
+  'label.personal': 'Persónulegt',
+  /** Label for savedAt date */
+  'label.saved-at': 'Vistað þann',
+  /** Saved queries */
+  'label.saved-queries': 'Vistaðar fyrirspurnir',
+  /** Search queries */
+  'label.search-queries': 'Leita í fyrirspurnum',
+  /** Share query */
+  'label.share': 'Deila',
+  /** Label for query type "shared" */
+  'label.shared': 'Samnýtt',
+  /** Label for saved query type "team" */
+  'label.team': 'Hópur',
+  /** Label for untitled query fallback */
+  'label.untitled-query': 'Án titils',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrar eru ekki gilt JSON',
@@ -48,6 +90,22 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': 'ekki viðeigandi',
 
+  /** Query already saved error label */
+  'save-query.already-saved': 'Fyrirspurn þegar vistuð',
+  /** Save error label */
+  'save-query.error': 'Villa við að vista fyrirspurn',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': 'Persónulegt eintak vistað',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    'Samnýttar fyrirspurnir eru geymdar sem skjöl í dataset þínum og teljast með í skjalakvóta þínum.',
+  /** Save shared query success label */
+  'save-query.shared-success': 'Samnýtt fyrirspurn vistuð',
+  /** Save success label */
+  'save-query.success': 'Fyrirspurn vistuð',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'Fyrirspurn færð í persónulegt',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API útgáfa',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspective "<code>previewDrafts</code>" hefur verið endurnefnt í "<code>drafts</code>" og er nú úrelt. Þessi breyting er virk fyrir allar útgáfur með stuðning við perspective (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Lestu skjölin',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Engin perspective (API sjálfgefið)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives leyfa fyrirspurn þinni að keyra gegn mismunandi "sýnum" af efni í dataset þínu',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Sjálfgefið perspective mun breytast úr "<code>raw</code>" í "<code>published</code>" í væntanlegri API útgáfu. Vinsamlegast kynntu þér nánar í skjölun.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'Fest útgáfa',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': 'Áætlaðar drög',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

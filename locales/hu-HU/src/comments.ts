@@ -30,9 +30,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Nem sikerült a linket a vágólapra másolni',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link a vágólapra másolva',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'A törölt hozzászólás nem állítható vissza.',
   /** The delete dialog confirm button text for a comment */
@@ -77,10 +74,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Hozzászólás hozzáadása',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'A hozzászólások nem fedhetik egymást',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Hozzászólás hozzáadása',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Hiba történt a megjegyzések betöltése közben',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Ugrás a(z) {{field}} mezőhöz',

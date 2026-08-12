@@ -1,23 +1,18 @@
 {
   "name": "@sanity/locale-de-de",
-  "version": "1.1.7",
+  "version": "1.1.36",
   "private": false,
   "description": "German / Deutsch locale/translation for Sanity Studio",
   "keywords": [
-    "sanity",
+    "de-DE",
     "i18n",
     "locale",
     "localization",
-    "de-DE"
+    "sanity"
   ],
   "homepage": "https://github.com/sanity-io/locales#readme",
   "bugs": {
     "url": "https://github.com/sanity-io/locales/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/sanity-io/locales.git",
-    "directory": "locales/de-DE"
   },
   "license": "MIT",
   "contributors": [
@@ -30,8 +25,19 @@
       "url": "https://github.com/wrknd"
     }
   ],
-  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/locales.git",
+    "directory": "locales/de-DE"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "source": "./src/index.ts",
@@ -41,25 +47,26 @@
     },
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs",
+        "default": "./dist/index.js"
+      },
+      "./package.json": "./package.json"
+    },
+    "access": "public"
+  },
   "scripts": {
-    "build": "npm run clean && npm run pkg:build && npm run pkg:check",
-    "clean": "rimraf dist",
-    "pkg:build": "pkg build --strict",
-    "pkg:check": "pkg check --strict",
+    "build": "pkg build --strict --check",
     "prepublishOnly": "pnpm build"
   },
-  "browserslist": "extends @sanity/browserslist-config",
   "peerDependencies": {
-    "sanity": "^3.22.0"
+    "sanity": "^3.22.0 || ^4.0.0-0 || ^5.0.0-0 || ^6.0.0-0"
   },
-  "publishConfig": {
-    "access": "public"
+  "browserslist": "extends @sanity/browserslist-config",
+  "engines": {
+    "node": ">=18"
   }
 }

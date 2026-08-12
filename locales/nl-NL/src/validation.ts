@@ -51,6 +51,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': 'Bestand is vereist',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Afbeelding is vereist',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': 'Het bestand kon niet worden gevonden in de Media Library',
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': 'Moet een verwijzing zijn naar een Media Library asset',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Moet een verwijzing naar een document zijn',
   /** Object references a document which is not published */
@@ -62,6 +66,9 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': 'Geen validatiefouten',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Validatie',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message':
+    'Document wordt teruggetrokken, er worden geen validatiefouten getoond',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug moet een waarde hebben',

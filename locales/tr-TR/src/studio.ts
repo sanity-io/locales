@@ -1,6 +1,74 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Yapılandırma sorunu tespit edildi',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Otomatik güncellemeler etkin, ancak <code>sanity.cli.ts</code> içinde <code>deployment.appId</code> yapılandırılmamış. Bu Stüdyo <strong>en son</strong> kanalına göre güncelleniyor.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Dokümantasyonu görüntüle',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Devre Dışı',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Etkin',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Otomatik Güncellemeler',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Nasıl etkinleştirilir',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Sürümü yönet',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Panoya Kopyalandı. Mutlu yapıştırmalar!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Panoya Kopyala',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Mevcut sürüm',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Nasıl yükseltileceği',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'En son sürüm',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Yeni sürüm mevcut',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Yeni sürüm',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Yeniden Yükle',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Güncellemek için Stüdyoyu yeniden yükle',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Geliştirme',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Yeni sürüm mevcut',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Ön sürüm',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Güncel',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Güncel',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Güncelle',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip':
+    'Sanity Stüdyosunu nasıl güncelleyeceğinizi öğrenin',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Kullanıcı aracısı',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': "GitHub'da görüntüle",
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Kapat',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Diyaloğu kapat',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Kapat',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Duyuruları kapat',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Duyuruları aç',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Sil',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +79,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Resmi kullanan belgeler',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Yükleniyor…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Seç',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'İptal',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +120,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Sadece kabul edilen türlerdeki varlıklar gösteriliyor: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'İptal',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Seç',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Dosya seç',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Resim seç',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Varlık eklenirken hata oluştu. Daha fazla bilgi için konsolu görüntüleyin.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Varlıklar yüklenemedi',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Daha fazla yükle',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Dosya yok',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Resim yok',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Şu anda seçili olan dosya silinemez',
@@ -81,6 +160,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Resim silindi',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Yüklenen resimler',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Bir belge <code>{{filename}}</code> dosyasını kullanıyor',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -107,6 +187,42 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero': 'Hiçbir belge bu resmi kullanmıyor',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description':
+    'Daha fazla bilgi için konsolu görüntüleyin.',
+  'asset-sources.common.uploader.upload-failed.title': 'Yükleme başarısız',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Çalışma alanı dosyaları',
+  'asset-sources.dataset.image.title': 'Çalışma alanı resimleri',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Bu projede Medya Kütüphanesi çözümlenirken bir hata oluştu.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Bu organizasyon için hiçbir medya kütüphanesi sağlanmamış.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Medya Kütüphanesi',
+  'asset-sources.media-library.image.title': 'Medya Kütüphanesi',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Tamam',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '“{{targetTitle}}” için yeni varlık seç',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Yeni varlık seç',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Varlığı Düzenle',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': "Media Library'ye Yükle",
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Kütüphanede bulunan mevcut dosya kullanılıyor.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "'{{filename}}' adlı dosya zaten var",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' yayını silindi.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Bir sonraki aya git',
   /** Action message for navigating to next year */
@@ -115,24 +231,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Bir önceki aya git',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Bir önceki yıla git',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Bugün',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Bugüne git',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Yarın',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Dün',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Zamanı dahil et',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Saati seç',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Dakikayı seç',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Zaman seç',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Şu anki zamana ayarla',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} tarihinde {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Takvimi aç',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Tarih seç',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': '<Emphasis>{{exampleDate}}</Emphasis> formatında olmalıdır',
   /** Month name for April */
@@ -216,6 +330,9 @@ export default removeUndefinedLocaleResources({
     'Daha fazla bilgi için geliştirici konsolunu kontrol edin',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Bu alanın değişikliklerini işlerken bir hata oluştu',
+  'changes.error-description': 'Bu belgedeki değişiklikler yüklenemiyor.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Bir şeyler ters gitti',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Değer hatası: Değer "<code>{{actualType}}</code>" tipindedir, beklenen "<code>{{expectedType}}</code>"',
@@ -245,11 +362,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Yükleniyor…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Değişiklikler yükleniyor…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Karşılaştırmaya çalıştığınız <code>{{revisionId}}</code> kimlikli belge revizyonunu bulamadık. <Break/> Bu muhtemelen planınızın geçmiş saklama politikasından kaynaklanmaktadır. <Break/> Lütfen farklı bir <strong>Başlangıç</strong> girişi seçin.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Bu panelde bir değişiklik listesinin görünmesi için belgeyi düzenleyin veya zaman çizelgesinde daha eski bir sürümü seçin.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Değişiklik yok',
+  'changes.not-selectable': 'Bu olayı seçmek mümkün değil',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Eklenen not',
   /** Portable Text diff: An annotation was changed */
@@ -291,8 +412,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Bilinmeyen şema tipi',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Kaldırıldı',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Aynı <strong>from</strong> ve <strong>to</strong> revizyonunu seçtiniz, lütfen aralarındaki değişiklikleri karşılaştırmak için farklı revizyonlar seçin.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Aynı revizyon seçildi',
   /** Title for the Review Changes pane */
   'changes.title': 'Değişiklikleri İncele',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Bu alan şemada tanımlanmamış. Değerler JSON olarak gösterilmektedir.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Taslak',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -303,12 +434,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Onayla',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Yükleniyor',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Bağlanmaya çalışılıyor…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Yapılandırma sorunları',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Yapılandırma sorunları bulundu',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sırala {{title}}',
@@ -328,12 +464,159 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Başlığa Göre Sırala',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Kapat',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Yoksay',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Sonraki',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Önceki',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Tabandan kopyala',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'değiştirildi',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{versionName}} sürümünde {{effect}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': '{{versionName}} sürümünde çözümlenmemiş bir değişiklik',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}} sürümünde {{count}} çözümlenmemiş değişiklik',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'İptal',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Yeni sürüm envanterini kullanmak ne kadar kolay veya zor?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}} filtrele',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'görüntüleniyor',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Tüm kullanıcılar (Varsayılan)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Varyant oluştur',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': '{{variantDefinitionName}} için varyant oluştur',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Taslak olarak',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Bir sürüme ekle',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Veya mevcut varyantları görüntüle',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'İptal',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 belge',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} belge',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasetler: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Kullanılamayan dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Kullanılamayan datasetler',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} başka bir datasette',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}}, {{count}} datasette',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': "ID'yi panoya kopyala",
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Belge Kimliği',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': 'Belge kimliği kopyalanamadı',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Proje Kimliği',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Sil (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Sil ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Bu belgeyi silmeye çalışırken bir hata oluştu. Bu genellikle belgeye başvuran başka belgeler olduğu anlamına gelir.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 diğer referans gösterilmiyor',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} diğer referans gösterilmiyor',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    "İlgili dataset'ler için erişim jetonu eksik olduğundan bu referanslara ait meta verileri görüntüleyemiyoruz.",
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'Kimlik: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Önizleme kullanılamıyor',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 belge "<DocumentTitle/>" öğesine başvuruyor',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} belge "<DocumentTitle/>" öğesine başvuruyor',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Aşağıdaki belgeler "<DocumentTitle/>" öğesine başvurduğundan onu silemeyebilirsiniz:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': '{{count}} {{subject}} sil',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} {{subject}} sil',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'varyant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varyant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'sürüm',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'sürüm',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '{{date}} tarihinde oluşturuldu',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}} tarihinde düzenlendi',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Son yayınlanma',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Yayınlanmadı',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}} tarihinde yayınlandı',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Revizyon tarihi <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revizyon bulunamadı',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Değişiklikleriniz hâlâ kaydediliyor.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Kaydetme beklenenden uzun sürüyor',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': 'Belge boş bir değerle açıldı. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Başlangıç değeri çözümlenemedi',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Belge türü "{{type}}" bulunamadı',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Bu işlemi gerçekleştiremiyor',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -434,13 +717,31 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Topluluğumuza katılın',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'En son sürüm {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Stüdyo kaydı',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Uygulama kimliği',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now':
+    'v{{newVersion}} sürümüne güncellemek için yeniden yükle',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio sürümü {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Yardım ve kaynaklar',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Güncel',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Gelen referanslar',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'İptal Et',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Varsayılan',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Yükle',
   /** Uploading <FileName/> */
@@ -460,12 +761,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Öğe ekle...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopyala',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Sıralamak için sürükleyin',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Çoğalt',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} Düzenle',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Maksimum öğe sayısına ulaşıldı',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Kaldır',
   /** Label for removing action when an array item has an error  */
@@ -514,14 +819,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Başlangıç değeri çözümleniyor…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Devre Dışı',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Gelecekte bir tarih seçin.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'örn. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Dosya seçenekleri menüsünü aç',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Göz at',
-  /** Select file */
-  'inputs.file.dialog.title': 'Dosya seç',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Bilinmeyen üye türü: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -531,12 +834,15 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Değeri sıfırla',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Geçersiz dosya değeri',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Seç',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Yükleme şu anda tamamlanamadı.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Yükleme başarısız',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Özel varlık',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    "CDN erişimi yalnızca imzalı URL'ler ile sınırlıdır",
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Alanı temizle',
   /** Copy URL */
@@ -545,6 +851,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'İndir',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL panoya kopyalandı',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}} içinde aç',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Değiştir',
   /** Upload */
@@ -584,6 +892,9 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Yüklemek için resmi bırakın',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Salt okunur',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Dosyaları şuraya yükleyin:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Dosyalar buraya yüklenemez',
   /** Clear upload */
@@ -593,20 +904,23 @@ export default removeUndefinedLocaleResources({
     'Bir yükleme en az {{staleThresholdMinutes}} dakika boyunca ilerleme kaydetmedi ve muhtemelen kesildi. Eksik yüklemeyi güvenle temizleyebilir ve tekrar yüklemeyi deneyebilirsiniz.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Eksik yükleme',
+  /** Select file */
+  'inputs.files.select-dialog.title': '"{{targetTitle}}" için dosya seçin',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Resmi kırp',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Resim düzenleme diyalogunu aç',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Resim seçenekleri menüsünü aç',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Seç',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Bu dosya buraya yüklenemez',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Yüklemek için resmi bırakın',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Bu alan salt okunurdur',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Resim yüklenemedi. Bu, erişim kısıtlamalarından kaynaklanıyor olabilir.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Bilinmeyen üye türü: {{kind}}',
   /** Edit hotspot and crop */
@@ -620,6 +934,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Geçersiz resim değeri',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Yüklenen resmin önizlemesi',
+  /** Select image */
+  'inputs.image.select-dialog.title': '"{{targetTitle}}" için görsel seçin',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Yükleme şu anda tamamlanamadı.',
   /** Upload failed */
@@ -631,6 +947,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Hata: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline, vektör formatları için hotspot ve crop desteklememektedir. Hotspot & crop'ı etkinleştirmek için, bu resmi desteklenen raster formatlarından birine çıktı olarak verin. Örneğin: <ImageUrlDocumentationLink>resim URL'sine</ImageUrlDocumentationLink> <code>fm=jpg</code> ekleyin veya <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink> ile <code>.format('png')</code> çağrısı yapın.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Geliştirici bilgisini görüntüleyin',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Uyarı: Hotspot ve crop, bu resim sunulduğu yerde uygulanmayabilir.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code> dönüştür',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -655,12 +979,21 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Geçersiz özellik değeri',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Tüm alanlar',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Alan grupları',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'hata',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'bilgi',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'uyarı',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Bu alan, belgenin şemasına göre <strong>sadece okunabilir</strong> ve kaldırılamaz. Stüdyoda bunu kaldırabilmek istiyorsanız, şemadaki kapsayıcı türden <code>readOnly</code> alanını kaldırdığınızdan emin olun.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '"{{documentId}}" referansı için önizleme yüklenemiyor.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Alanı kaldır',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -854,8 +1187,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Alıntı',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Sona sütun ekle',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Sona satır ekle',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Sütun tutamacı',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Sütunu sil',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Satırı sil',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Tabloyu sil',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Başlık satırı',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Buraya ekle',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Tablo seçenekleri',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Satır tutamacı',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Tabloyu seç',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Temizle',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopyala',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Yeni oluştur',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -910,6 +1267,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Temizle',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Referans araması başarısız oldu',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    'Referans gösterilen belge geçersiz bir türde ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Referans gösterilen belgenin resim önizlemesi',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -976,6 +1336,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Referans gücü uyuşmazlığı',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Zayıf referansa dönüştür',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Temizle',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Oluştur',
   /** Loading message for when the input is actively generating a slug */
@@ -1005,6 +1367,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': '<code>_type</code> özelliği eksik olan özellik değeri',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Değeri kaldır',
+  /** Select video */
+  'inputs.video.select-dialog.title': '"{{targetTitle}}" için video seçin',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation': 'Bu özelliğe erişim izniniz yok.',
@@ -1049,8 +1413,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Yetersiz izinler',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Oturumunuz artık geçerli değil. Lütfen tekrar giriş yapın.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Oturumunuzun süresi doldu. Lütfen tekrar giriş yapın.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Oturumunuz kapatıldı',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Beklenmeyen hata: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Tarayıcınız Sanity ile iletişim kurmak için modası geçmiş bir HTTP protokolü kullanıyor. Bu, önemli ölçüde düşük performansa neden olabilir.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Daha fazla bilgi edinin',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Bu oturum için tekrar gösterme',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Frenlerinizi çekmişsiniz',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Oluştur',
@@ -1079,12 +1460,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Yeni belge oluştur',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Yeniden Yükle',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio güncellendi',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Üyeleri yönet',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Burada kim var',
@@ -1105,8 +1486,268 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Yüklenmekte olan resim',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'az önce',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Yayına ekle',
+  /** Action message to add document to release */
+  'release.action.add-to-release': "{{title}}'a ekle",
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Belge zaten yayında mevcut',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Zaten {{title}} içinde yayında',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Sürümü kopyala',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Yeni yayın',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Sürüm oluşturma başarısız oldu',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Zamanlamayı Sil',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Sürümü at',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Sürüm atılamadı',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Zamanlamayı Düzenle',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Yeni Yayın',
+  'release.action.new-release.limit-reached_other':
+    'Bu çalışma alanı en fazla {{count}} sürümle sınırlıdır',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Şimdi Yayınla',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Lütfen tekrar deneyin veya bağlantınızı kontrol edin. Belge, yayınlanmamış olarak kalmaya devam edecek.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Yayınlanmamak üzere ayarlanan sürümün geri alınması başarısız oldu.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Şimdi bu sürümü düzenleyebilirsiniz.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Yayınlanmamak üzere ayarlanan sürüm başarıyla geri alındı.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Yayınlamayı planla',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'Sürümün yayından kaldırılması başarısız oldu',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    '<strong>{{title}}</strong> başarıyla yayından kaldırılmak üzere ayarlandı',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Yayını görüntüle',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Zamanlanmış Taslakları Görüntüle',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '{{date}} tarihinde yayımlanmak üzere planlandı',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} varyant',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varyant',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} versiyon',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} versiyonlar',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Taslak',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Taslaklar',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Yayınlandı',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Bu sürüm arşivlenmiş ve düzenlenemez.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '{{date}} tarihinde oluşturuldu',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Bu belge canlı düzenleme modunda, taslaklar devre dışı bırakıldı',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '{{date}} tarihinde düzenlendi',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '{{date}} için planlandı',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Düzenleme yok',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Yayınlanmadı',
+  'release.chip.tooltip.other-variants_one': 'Bir varyant',
+  'release.chip.tooltip.other-variants_other': '{{count}} varyant',
+  'release.chip.tooltip.other-versions_one': 'Yayınlardan bağımsız bir ek versiyon',
+  'release.chip.tooltip.other-versions_other': 'Yayınlardan bağımsız {{count}} ek versiyon',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '{{date}} tarihinde yayınlandı',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '{{date}} için planlandı',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Bilinmeyen tarih',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Bu sürüm silindi',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Sürümü yeni bir sürüme kopyala',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Sürüm oluştur',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Yeni sürüm',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Bu zamanlanmış taslağı silmek istiyor musunuz? Taslağınız zaten güncel.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Bu zamanlanmış taslağı silmek istiyor musunuz? Değişiklikleriniz taslağa kaydedilecek.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'Bu zamanlanmış taslağı silmek istiyor musunuz?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Evet, zamanlamayı sil',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Zamanlanmış değişikliklerimi kopyalayarak taslağımda sakla (önerilir)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Zamanlanmış taslağınızın mevcut taslağınızdan farklı değişiklikleri var.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Zamanlanmış Taslağı Sil',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Zamanlanmış yayın için yeni bir tarih ve saat seçin.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Zamanlamayı Güncelle',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Zamanlamayı Değiştir',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Bu zamanlanmış taslağı hemen yayınlamak istediğinizden emin misiniz?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Evet, şimdi çalıştır',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Taslağı Şimdi Yayınla',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Planlanan sürüm zamanı, belgelerin çakışıp çakışmadığı hakkında daha iyi önizlemeler ve ipuçları oluşturmak için kullanılır.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Daha sonra her zaman değiştirebilirsiniz.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Tahmini sürüm zamanı',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Sürümü tanımlayın…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Sürümü gizle',
+  /** Label for the release menu */
+  'release.menu.label': 'Yayın Menüsü',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Planlanmış Taslakları Görüntüle',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Aksiyonlar',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'İçerik Yayınlarını Görüntüle',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Taslaklar',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Yayınlandı',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Sürümler',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Başlıksız sürüm',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Gelecek bir tarih ve saat için zamanlama yapın.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Yayınlanma Tarihi',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "'{{title}}' sürümü arşivlendi",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Sürüm oluşturma başarısız oldu',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Zamanlanmış taslak belgesi <strong>{{title}}</strong> silinemedi: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Zamanlanmış taslak belgesi <strong>{{title}}</strong> silindi.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "'{{title}}' yayını bulunamadı",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Planlanmış taslak belgeyi duraklatma başarısız oldu <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Zamanlanmış taslak belgesi <strong>{{title}}</strong> yayınlanamadı: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Zamanlanmış taslak belgesi <strong>{{title}}</strong> yayınlandı.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "'{{title}}' sürümü yayınlandı",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Zamanlanmış taslak belgesi <strong>{{title}}</strong> için yeni bir zamanlama yapılamadı: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Zamanlanmış taslak belgesi <strong>{{title}}</strong> için yeni bir zamanlama yapıldı.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Taslak planlaması başarısız oldu: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Taslak başarıyla planlandı',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Planlanan taslak yayınlandı',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Bu yayın planlanmış. Daha fazla belge eklemek için planlamayı iptal edin.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'ASAP',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Belirli bir zamanda',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Kararsız',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Tüm belge versiyonlarını gör',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Destek ile İletişime Geç',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'İçerik yayınları yapılandırma sorunu',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Projeniz için içerik yayınları etkinleştirilmiş, ancak yayın limitlerinizle ilgili bir yapılandırma sorunu görünüyor. İçerik yayınlarınızın doğru şekilde yapılandırılması için lütfen destek ile iletişime geçin.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Zamanla',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Bu belgenin ne zaman yayınlanması gerektiğini seçin.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Taslak yayını için zamanlama',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Zamanlanmış yayın',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Aramayı aç',
@@ -1285,37 +1926,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>has</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>has</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-equal.name': 'miktar',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>has ></Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>has ></Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-gt.name': 'miktarı şundan büyük',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>has ≥</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>has ≥</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-gte.name': 'miktarı şuna eşit veya daha büyük',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>has <</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>has <</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-lt.name': 'miktarı şundan az',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>has ≤</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>has ≤</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-lte.name': 'miktarı şuna eşit veya daha az',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>does not have</Operator> <Value>{{count}} öğe</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1328,35 +1963,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>has between</Operator> <Value>{{from}} → {{to}} öğe</Value>',
   'search.operator.array-count-range.name': 'miktarı şu aralıkta',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>includes</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'içerir',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>does not include</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'içermez',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator> içerir </Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'içerir',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator> içermez </Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'içermez',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator> şudur </Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'şudur',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator> şu değildir </Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'şu değildir',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator> şudur </Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'şudur',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator> şu değildir </Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'şu değildir',
@@ -1369,159 +1996,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator> şudur </Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'şudur',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator> sonrasıdır </Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'sonrası',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator> öncesidir </Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'öncesi',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator> şudur </Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'şudur',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator> son içindedir </Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'son',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator> şu değildir </Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'şu değildir',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator> arasındadır </Operator> <Value/>',
   'search.operator.date-range.name': 'arasında',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>sonra</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'sonra',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>önce</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'önce',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>şu</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'şu',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>son</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'son',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>değil</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'değil',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>arasında</Operator> <Value/>',
   'search.operator.date-time-range.name': 'arasında',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>şu</Operator> <Value>dolu</Value>',
   'search.operator.defined.name': 'dolu',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>şu</Operator> <Value>boş</Value>',
   'search.operator.not-defined.name': 'boş',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>şu</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'şu',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'büyük',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'büyük veya eşit',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'küçük',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'eşit veya daha küçük',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>değildir</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'değildir',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>arasında</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'arasında',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>içerir</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'içerir',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>şudur</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'şudur',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>içermez</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'içermez',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>değildir</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'değildir',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'dosya',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'resim',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'belge',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>şudur</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'şudur',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>değildir</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'değildir',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>içerir</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'içerir',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>şudur</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'şudur',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>içermez</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'içermez',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>şu değildir</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'şu değildir',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>içerir</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'içerir',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>şudur</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'şudur',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>şudur</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'şudur',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>şu değildir</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'şu değildir',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>içermez</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'içermez',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>şu değildir</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'şu değildir',
@@ -1544,22 +2131,38 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Arama sonuçları',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Sütunları düzenle',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Tablodan kaldır',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Sütunları sıfırla',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'En fazla 5 alan türü seçin',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfigürasyon durumu',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Bir şehir veya zaman dilimi arayın',
+  'time-zone.action.select-local-time-zone': 'Yerel zaman dilimini seçin',
+  'time-zone.dialog-info.content-releases':
+    'Seçilen zaman dilimi içerik sürümlerinde tarihlerin nasıl gösterileceğini değiştirecektir.',
+  'time-zone.dialog-info.input':
+    'Seçilen zaman dilimi sadece bu belgedeki bu giriş için tarihlerin nasıl gösterileceğini değiştirecektir.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Seçilen zaman dilimi programlarda tarihlerin nasıl gösterileceğini değiştirecektir.',
+  'time-zone.local-time': 'yerel zaman',
+  'time-zone.time-zone': 'Zaman dilimi',
+  'time-zone.time-zone-tooltip-content-releases':
+    '{{alternativeName}} GMT{{offset}} göre sürümleri gösteriyor',
+  'time-zone.time-zone-tooltip-input':
+    '<em>{{title}}</em> {{alternativeName}} GMT{{offset}} göre gösteriliyor',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '{{alternativeName}} GMT{{offset}} göre programları gösteriyor',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Değişiklikler tarafından',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': 'Belge geçmişi işlemleri etkilenmedi.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Belge değişikliklerini alırken bir hata oluştu.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    "Belge geçmişini görmek için Studio yapılandırmasından events API'sini etkinleştirin.",
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Versiyon belgeleri geçmişi yalnızca Events API üzerinden erişilebilir.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Belgenin içeriğini değiştirirken, belge sürümleri bu menüde görünecektir.',
@@ -1580,6 +2183,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Belge revizyonları',
   /** Label for loading history */
   'timeline.loading-history': 'Geçmiş yükleniyor…',
+  'timeline.no-previous-events': 'Önceki olay yok',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Oluşturuldu',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1592,6 +2196,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Silindi',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Silindi: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Taslak oluşturuldu',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Taslak oluşturuldu: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Taslak atıldı',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1604,6 +2212,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Canlı düzenlendi',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Canlı düzenlendi: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Saklama politikası tarafından silindi',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Yayınlandı',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1612,6 +2222,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Yayından kaldırıldı',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Yayından kaldırıldı: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versiyon oluşturuldu',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versiyon oluşturuldu: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versiyon atıldı',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versiyon atıldı: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1686,6 +2304,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Menüyü aç',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agent değişiklikleri',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Önerilen değişiklikler',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1698,6 +2321,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Başka bir çalışma alanı seç',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Çalışma alanını değiştir',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Çalışma alanınızı seçin',
   /** Label for the workspace menu */

@@ -51,6 +51,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': 'Datoteka je obavezna',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Slika je obavezna',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': 'Resurs se ne može pronaći u Medijateci',
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': 'Mora biti referenca na resurs Medijateke',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Mora biti referenca na dokument',
   /** Object references a document which is not published */
@@ -62,6 +66,8 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': 'Nema grešaka u validaciji',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Validacija',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message': 'Dokument će biti povučen, ne prikazuju se greške validacije',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug mora imati vrijednost',

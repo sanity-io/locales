@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Zjištěn problém s konfigurací',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatické aktualizace jsou povoleny, ale v <code>sanity.cli.ts</code> není nakonfigurováno <code>deployment.appId</code>. Toto Studio se aktualizuje proti kanálu <strong>latest</strong>.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Zobrazit dokumentaci',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Zakázáno',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Povoleno',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Automatické aktualizace',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Jak povolit',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Spravovat verzi',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Zkopírováno do schránky. Veselé vkládání!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopírovat do schránky',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Současná verze',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Jak aktualizovat',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Nejnovější verze',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Dostupná nová verze',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Nová verze',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Znovu načíst',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Znovu načíst Studio pro aktualizaci',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Vývoj',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Dostupná nová verze',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Předběžné vydání',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Aktuální',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Aktuální',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Aktualizovat',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Zjistěte, jak aktualizovat Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Uživatelský agent',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Zobrazit na GitHubu',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Zavřít',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Zavřít dialog',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Zavřít',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Odmítnout oznámení',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Otevřít oznámení',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Smazat',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenty používající obrázek',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Načítání…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Vybrat',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Zrušit',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Zobrazují se pouze assety přijatých typů: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Zrušit',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Vybrat',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Vybrat soubor',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Vybrat obrázek',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Chyba při vkládání assetu. Více informací naleznete v konzoli.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Načtení assetů se nezdařilo',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Načíst více',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Žádné soubory',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Žádné obrázky',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Nelze smazat aktuálně vybraný soubor',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Obrázek byl smazán',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Nahrané obrázky',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Jeden dokument používá soubor <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -109,6 +188,41 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Žádné dokumenty nepoužívají tento obrázek',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': 'Více informací naleznete v konzoli.',
+  'asset-sources.common.uploader.upload-failed.title': 'Nahrávání selhalo',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Soubory pracovního prostoru',
+  'asset-sources.dataset.image.title': 'Obrázky pracovního prostoru',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Něco se pokazilo při pokusu o vyřešení Media Library pro tento projekt.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Pro tuto organizaci nebyla připravena žádná mediální knihovna.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Mediální knihovna',
+  'asset-sources.media-library.image.title': 'Mediální knihovna',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Hotovo',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Vyberte nový asset pro “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Vyberte nový asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Upravit asset',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Nahrát do knihovny médií',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Používá se existující soubor nalezený v knihovně.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Soubor: '{{filename}}' již existuje",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Přejít na příští měsíc',
   /** Action message for navigating to next year */
@@ -117,24 +231,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Přejít na předchozí měsíc',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Přejít na předchozí rok',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Dnes',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Přejít na dnešek',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Zítra',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Včera',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Zahrnout čas',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Vybrat hodinu',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Vybrat minutu',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Vybrat čas',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Nastavit na aktuální čas',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} dne {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Otevřít kalendář',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Vybrat datum',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Musí být ve formátu <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
@@ -215,6 +327,9 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Pro více informací zkontrolujte konzoli pro vývojáře',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Zobrazení změn tohoto pole způsobilo chybu',
+  'changes.error-description': 'Nemůžeme načíst změny pro tento dokument.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Něco se pokazilo',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Chyba hodnoty: Hodnota je typu "<code>{{actualType}}</code>", očekáván typ "<code>{{expectedType}}</code>"',
@@ -244,11 +359,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Načítání…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Načítání změn…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nemohli jsme najít revizi dokumentu s id: <code>{{revisionId}}</code>, kterou se snažíte porovnat. <Break/> To je pravděpodobně kvůli politice uchovávání historie vašeho plánu. <Break/> Prosím, vyberte jiný <strong>From</strong> záznam.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Upravte dokument nebo vyberte starší verzi v časové ose, aby se v tomto panelu zobrazil seznam změn.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nejsou žádné změny',
+  'changes.not-selectable': 'Tuto událost není možné vybrat',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Přidána anotace',
   /** Portable Text diff: An annotation was changed */
@@ -290,8 +409,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Neznámý typ schématu',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Odebráno',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Vybrali jste stejnou revizi <strong>from</strong> a <strong>to</strong>, prosím vyberte různé revize pro porovnání změn mezi nimi.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Vybrána stejná revize',
   /** Title for the Review Changes pane */
   'changes.title': 'Přehled změn',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Toto pole není definováno ve schématu. Hodnoty jsou zobrazeny jako JSON.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Koncept',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -302,12 +431,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Potvrdit',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Načítání',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Pokus o připojení…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Problémy s konfigurací',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Nalezeny problémy s konfigurací',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Seřadit podle {{title}}',
@@ -327,12 +461,160 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Seřadit podle Titulku',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Zavřít',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignorovat',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Další',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Předchozí',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopírovat ze základny',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'změněno',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} ve verzi {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Nevyřešená změna ve verzi {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other': '{{count}} nevyřešených změn ve verzi {{versionName}}',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Zrušit',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Jak snadné nebo obtížné je používání nového inventáře verzí?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrovat {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'zobrazeno',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Všichni uživatelé (výchozí)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Vytvořit variantu',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Vytvořit variantu pro {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Jako koncept',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Do vydání',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Nebo zobrazit existující varianty',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Zrušit',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumentů',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasety: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Nedostupný dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Nedostupné datasety',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} v jiném datasetu',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} v {{count}} datasetech',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopírovat ID do schránky',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID dokumentu',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Kopírování ID dokumentu se nezdařilo',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID projektu',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Smazat (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Smazat ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Při pokusu o smazání tohoto dokumentu došlo k chybě. To obvykle znamená, že existují jiné dokumenty, které na něj odkazují.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 další odkaz není zobrazen',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} dalších odkazů není zobrazeno',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Metadata těchto odkazů nelze zobrazit z důvodu chybějícího přístupového tokenu pro příslušné datasety.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Náhled není dostupný',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument odkazuje na „<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumentů odkazuje na „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Možná nebude možné smazat „<DocumentTitle/>", protože na něj odkazují následující dokumenty:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Smazat {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Smazat {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variantu',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'verzi',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'verzí',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Vytvořeno {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Editováno {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Naposledy publikováno',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Nepublikováno',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publikováno {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Revize od <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revize nenalezena',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Vaše změny se stále ukládají.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Ukládání trvá déle než se očekávalo',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokument byl otevřen s prázdnou hodnotou. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Počáteční hodnotu se nepodařilo načíst',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Typ dokumentu "{{type}}" nebyl nalezen',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Nelze provést tuto akci',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -386,13 +668,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Na cestě <code>{{path}}</code> nebyla nalezena žádná položka pole s `_key` <code>"{{key}}"</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'Zásobník volání:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Komponentový zásobník:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Chyba: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'Nezpracovaná chyba za běhu',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'zastaralé',
   /** Fallback title shown above field if it has no defined title */
@@ -433,13 +715,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Připojte se k naší komunitě',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Nejnovější verze je {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrovat studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID aplikace',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Znovu načíst pro aktualizaci na verzi v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verze Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Nápověda a zdroje',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Aktuální',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Příchozí reference',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Zrušit',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Výchozí',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Nahrát',
   /** Uploading <FileName/> */
@@ -459,12 +758,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Přidat položku...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopírovat',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Přetáhněte pro změnu pořadí',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Duplikovat',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Upravit {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Dosaženo maximálního počtu položek',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Odstranit',
   /** Label for removing action when an array item has an error  */
@@ -496,15 +799,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'Neočekávaná chyba: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Vše',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Nebyly nalezeny žádné položky',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Hledat',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Přepnout zobrazení mřížky',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Přepnout zobrazení seznamu',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'Žádné položky',
   /** Label for read only array fields */
@@ -512,15 +815,13 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Řešení počáteční hodnoty…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Zakázáno',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Vyberte datum v budoucnosti.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'např. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Otevřít menu možností souboru',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Procházet',
-  /** Select file */
-  'inputs.file.dialog.title': 'Vybrat soubor',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Neznámý typ člena: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -530,12 +831,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Resetovat hodnotu',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Neplatná hodnota souboru',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Vybrat',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Nahrávání se v tuto chvíli nepodařilo dokončit.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Nahrávání selhalo',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Soukromý asset',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'Přístup CDN omezen na podepsané URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Vyčistit pole',
   /** Copy URL */
@@ -544,6 +847,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Stáhnout',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL byla zkopírována do schránky',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Otevřít v {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Nahradit',
   /** Upload */
@@ -584,6 +889,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Pusťte pro nahrání obrázku',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Pouze pro čtení',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Nahrát soubory do:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Nelze zde nahrávat soubory',
   /** Clear upload */
@@ -593,20 +900,23 @@ export default removeUndefinedLocaleResources({
     'Nahrávání nepokročilo po dobu alespoň {{staleThresholdMinutes}} minut a pravděpodobně bylo přerušeno. Bezpečně můžete vymazat nedokončené nahrávání a pokusit se o nahrání znovu.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Nedokončené nahrávání',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Vyberte soubor pro "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Oříznout obrázek',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Otevřít dialog úpravy obrázku',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Otevřít menu možností obrázku',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Vybrat',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Zde nelze nahrát tento soubor',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Pusťte obrázek pro nahrání',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Toto pole je pouze pro čtení',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nelze načíst obrázek. To může být způsobeno omezením přístupu.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Neznámý typ člena: {{kind}}',
   /** Edit hotspot and crop */
@@ -620,6 +930,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Neplatná hodnota obrázku',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Náhled nahraného obrázku',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Vyberte obrázek pro "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Nahrávání se v tuto chvíli nemohlo dokončit.',
   /** Upload failed */
@@ -631,6 +943,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Chyba: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline nepodporuje hotspot a ořez pro vektorové formáty. Pro povolení hotspotu & ořezu vyexportujte tento obrázek do kteréhokoli podporovaného rastrového formátu. Například: <code>fm=jpg</code> na <ImageUrlDocumentationLink>URL obrázku</ImageUrlDocumentationLink> nebo zavolejte <code>.format('png')</code> s <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Zobrazit informace pro vývojáře',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Upozornění: Hotspot a ořez nemusí být na tomto obrázku aplikovány, kde je prezentován.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Převést na <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -655,12 +975,21 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Neplatná hodnota vlastnosti',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Všechna pole',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Skupiny polí',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'chyba',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informace',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'varování',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Toto pole je podle schématu dokumentu <strong>pouze pro čtení</strong> a nelze jej zrušit. Pokud chcete, aby bylo možné toto v Studio zrušit, ujistěte se, že jste odstranili pole <code>readOnly</code> z obklopujícího typu ve schématu.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nelze načíst náhled pro referenci "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Odstranit pole',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -855,8 +1184,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normální',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citace',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Přidat sloupec na konec',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Přidat řádek na konec',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Úchyt sloupce',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Smazat sloupec',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Smazat řádek',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Smazat tabulku',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Záhlaví řádku',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Vložit zde',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Možnosti tabulky',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Úchyt řádku',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Vybrat tabulku',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Vymazat',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopírovat',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Vytvořit nový',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -912,6 +1265,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Vymazat',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Vyhledávání odkazu selhalo',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': 'Odkazovaný dokument je neplatného typu ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Náhled obrázku odkazovaného dokumentu',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -976,6 +1331,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Nesoulad síly reference',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Převést na slabou referenci',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Vymazat',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Vygenerovat',
   /** Loading message for when the input is actively generating a slug */
@@ -1006,6 +1363,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Chybí vlastnost hodnoty <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Zrušit hodnotu',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Vyberte video pro "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1026,7 +1385,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'Nemáte oprávnění smazat tento dokument.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'Nemáte oprávnění mazat plány.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Nemáte oprávnění zahodit změny v tomto dokumentu.',
@@ -1034,9 +1394,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'Nemáte oprávnění duplikovat tento dokument.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'Nemáte oprávnění upravovat plány.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'Nemáte oprávnění spouštět plány.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Nemáte oprávnění publikovat tento dokument.',
@@ -1048,8 +1410,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nedostatečná oprávnění',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Vaše relace již není platná. Přihlaste se prosím znovu.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Vaše relace vypršela. Přihlaste se prosím znovu.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Byli jste odhlášeni',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Neočekávaná chyba: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Váš prohlížeč používá zastaralý HTTP protokol pro komunikaci se Sanity. To může vést k výraznému snížení výkonu.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Zjistit více',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Znovu nezobrazovat v této relaci',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Máte zapnutou ruční brzdu',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Vytvořit',
@@ -1078,12 +1457,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Vytvořit nový dokument',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Push to reload'
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio is ready to update!'
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
+  'package-version.new-package-available.reload-button': 'Klikněte pro obnovení',
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
+  'package-version.new-package-available.title': 'Sanity Studio je připraveno k aktualizaci!',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Spravovat členy',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kdo je zde',
@@ -1104,8 +1483,268 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Obrázek, který se právě nahrává',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'právě teď',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Přidat do vydání',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Přidat do {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Dokument již existuje ve vydání',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Již ve vydání {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopírovat verzi do',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Nové vydání',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Nepodařilo se vytvořit verzi',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Smazat plán',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Zahodit verzi',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Nepodařilo se zahodit verzi',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': 'Upravit podrobnosti',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Upravit plán',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Nové vydání',
+  'release.action.new-release.limit-reached_other':
+    'Tento pracovní prostor je omezen na {{count}} vydání',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Nemáte oprávnění k provedení této akce',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publikovat nyní',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Zkuste to prosím znovu nebo zkontrolujte své připojení. Dokument bude stále nepublikován po vydání.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Nepodařilo se vrátit z nastavení na nepublikování při vydání.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Nyní můžete tuto verzi upravovat.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Úspěšně vráceno z nastavení na nepublikování při vydání.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Naplánovat publikaci',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Nepodařilo se nastavit verzi jako nepublikovanou ve vydání',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Úspěšně nastaveno <strong>{{title}}</strong> jako nepublikované ve vydání',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Zobrazit vydání',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Zobrazit naplánované koncepty',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Naplánováno k publikování dne {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} varianta',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} variant',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} verze',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} verzí',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Koncept',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Koncepty',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Publikováno',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Toto vydání je archivováno a nelze jej upravovat.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Vytvořeno {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Tento dokument je v režimu živé úpravy, koncepty jsou zakázány',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Upraveno {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Určeno pro {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Žádné úpravy',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Nepublikováno',
+  'release.chip.tooltip.other-variants_one': 'Jedna varianta',
+  'release.chip.tooltip.other-variants_other': '{{count}} variant',
+  'release.chip.tooltip.other-versions_one': 'Jedna další verze mimo vydání',
+  'release.chip.tooltip.other-versions_other': '{{count}} dalších verzí mimo vydání',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Publikováno {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Naplánováno na {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Neznámé datum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Toto vydání bylo smazáno',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopírovat verzi do nového vydání',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Vytvořit vydání',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Nové vydání',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Smazat tento naplánovaný koncept? Váš koncept je již aktuální.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Smazat tento naplánovaný koncept? Vaše změny budou uloženy do konceptu.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Smazat tento naplánovaný koncept?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Ano, smazat plán',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Zachovejte mé naplánované změny kopírováním do konceptu (doporučeno)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Váš naplánovaný koncept má odlišné změny než váš aktuální koncept.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Smazat naplánovaný koncept',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Vyberte nové datum a čas pro naplánované publikování.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Aktualizovat plán',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Změnit plán',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': 'Uložit',
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': 'Popis',
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': 'Upravit release',
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': 'Název',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Jste si jisti, že chcete okamžitě publikovat tento naplánovaný koncept?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Ano, spustit nyní',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Publikovat koncept nyní',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Předpokládaný čas vydání se používá k vytvoření lepších náhledů a nápověd, zda dokumenty konfliktní.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Vždy to můžete později změnit.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Přibližný čas vydání',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Popište vydání…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Skrýt vydání',
+  /** Label for the release menu */
+  'release.menu.label': 'Menu vydání',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Zobrazit naplánované koncepty',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Akce',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Zobrazit vydání obsahu',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Koncepty',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Publikováno',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Vydání',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Nepojmenované vydání',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Naplánujte toto vydání na budoucí čas a datum.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Naplánovat na',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Toto vydání bylo odšpendleno',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "Vydání '{{title}}' bylo archivováno",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Nepodařilo se vytvořit vydání',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Nepodařilo se smazat dokument naplánovaného konceptu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Dokument naplánovaného konceptu <strong>{{title}}</strong> byl smazán.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': 'Uložení podrobností release se nezdařilo',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "Vydání '{{title}}' nebylo nalezeno",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nepodařilo se pozastavit naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Nepodařilo se publikovat naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl publikován.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Toto vydání bylo odšpendleno',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "Vydání '{{title}}' bylo publikováno",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nepodařilo se přeplánovat naplánovaný koncept dokumentu <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl přeplánován.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nepodařilo se naplánovat koncept: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Koncept byl úspěšně naplánován',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Naplánovaný koncept byl publikován',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Verze tohoto dokumentu již byla přidána',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Toto vydání bylo naplánováno. Zrušte plánování, abyste mohli přidat další dokumenty.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Co nejdříve',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'V určený čas',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Nerozhodnuto',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Zobrazit všechny verze dokumentu',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Kontaktovat podporu',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Problém s konfigurací vydání obsahu',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Vydání obsahu jsou pro váš projekt povolena, ale zdá se, že existuje problém s konfigurací limitů vydání. Prosím, kontaktujte podporu, aby byla vaše vydání obsahu správně nakonfigurována.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Naplánovat',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Vyberte, kdy má být tento dokument publikován.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Naplánovat koncept k publikaci',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Naplánovaná publikace',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otevřít vyhledávání',
@@ -1283,37 +1922,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>má</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>má</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-equal.name': 'množství je',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>má ></Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>má ></Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-gt.name': 'množství větší než',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>má ≥</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>má ≥</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-gte.name': 'množství větší než nebo rovno',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>má <</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>má <</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-lt.name': 'množství menší než',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>má ≤</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>má ≤</Operator> <Value>{{count}} položek</Value>',
   'search.operator.array-count-lte.name': 'množství menší než nebo rovno',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nemá</Operator> <Value>{{count}} položku</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1326,35 +1959,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>má mezi</Operator> <Value>{{from}} → {{to}} položkami</Value>',
   'search.operator.array-count-range.name': 'množství je mezi',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'obsahuje',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'neobsahuje',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'obsahuje',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'neobsahuje',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'je',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'není',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'je',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'není',
@@ -1367,161 +1992,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'je',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>je po</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'po',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>je před</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'před',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'je',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>je v posledních</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'poslední',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'není',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>je mezi</Operator> <Value/>',
   'search.operator.date-range.name': 'je mezi',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>je po</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'po',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>je před</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'před',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'je',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>je v posledních</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'poslední',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'není',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>je mezi</Operator> <Value/>',
   'search.operator.date-time-range.name': 'je mezi',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>je</Operator> <Value>neprázdný</Value>',
   'search.operator.defined.name': 'neprázdný',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>je</Operator> <Value>prázdný</Value>',
   'search.operator.not-defined.name': 'prázdný',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'je',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'větší než',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'větší nebo rovno',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'menší než',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'menší nebo rovno',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'není',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>je mezi</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'je mezi',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'obsahuje',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'je',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'neobsahuje',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'není',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'soubor',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'obrázek',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'je',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'není',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'obsahuje',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'je',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'neobsahuje',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'není',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>obsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'obsahuje',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'je',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'je',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'není',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>neobsahuje</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'neobsahuje',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>není</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'není',
@@ -1544,23 +2129,39 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Výsledky vyhledávání',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stav konfigurace',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Hledejte město nebo časové pásmo',
+  'time-zone.action.select-local-time-zone': 'Vyberte místní časové pásmo',
+  'time-zone.dialog-info.content-releases':
+    'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována v obsahových vydáních.',
+  'time-zone.dialog-info.input':
+    'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována pouze pro tento vstup v tomto dokumentu.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Vybrané časové pásmo změní způsob, jakým jsou data reprezentována v plánech.',
+  'time-zone.local-time': 'místní čas',
+  'time-zone.time-zone': 'Časové pásmo',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Zobrazování vydání v {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Zobrazování <em>{{title}}</em> v {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Zobrazování plánů v {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Změny od',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Transakce historie dokumentu nebyly ovlivněny.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Při načítání změn dokumentu došlo k chybě.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Pro zobrazení historie dokumentu povolte API událostí v konfiguraci Studia.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Historie verzí dokumentů je dostupná pouze prostřednictvím API událostí.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Po změně obsahu dokumentu se zde objeví verze dokumentu.',
@@ -1571,7 +2172,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'Nejnovější',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Poslední revize',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1581,6 +2182,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revize dokumentu',
   /** Label for loading history */
   'timeline.loading-history': 'Načítání historie…',
+  'timeline.no-previous-events': 'Žádné předchozí události',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Vytvořeno',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1593,6 +2195,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Smazáno',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Smazáno: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Vytvořen návrh',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Vytvořen návrh: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Zahozený koncept',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1605,6 +2211,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Editováno živě',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Editováno živě: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Smazáno zásadami uchovávání',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publikováno',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1613,6 +2221,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Nepublikováno',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Nepublikováno: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Vytvořena verze',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Vytvořena verze: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Verze zahozena',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Verze zahozena: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1625,23 +2241,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'Menu drobečkové navigace',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Hledat',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Menu vyhledávání',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Nebyly nalezeny žádné výsledky',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Zavřít postranní panel',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Sbalit',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Hotovo',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Rozbalit',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Otevřít postranní panel',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} den zbývá do konce zkušební doby',
@@ -1687,6 +2303,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Otevřít menu',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Změny agenta',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Navrhované změny',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1699,6 +2320,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Vybrat jiný pracovní prostor',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Přepnout pracovní prostor',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Vyberte svůj pracovní prostor',
   /** Label for the workspace menu */

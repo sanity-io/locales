@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Капіяваць у буфер абмену',
+  /** Label for deleting a query */
+  'action.delete': 'Выдаліць',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Рэдагаваць назву',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Спыніць',
   /** Label for setting up a listener */
   'action.listen-execute': 'Слухаць',
+  /** Label for query loading table */
+  'action.load-queries': 'Загрузіць запыты',
+  /** Label for loading a query */
+  'action.load-query': 'Загрузіць запыт',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Адмяніць',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Выканаць запыт',
+  /** Label for saving a query */
+  'action.save-personal-copy': 'Захаваць асабісты экзэмпляр',
+  /** Label for saving a personal query */
+  'action.save-personal-query': 'Захаваць як асабісты',
+  /** Label for saving a query */
+  'action.save-query': 'Захаваць запыт',
+  /** Label for saving a shared query */
+  'action.save-shared-query': 'Захаваць як агульны',
+  /** Label for unsharing a query */
+  'action.unshare': 'Адмяніць агульны доступ',
+  /** Label for updating a query */
+  'action.update': 'Абнавіць',
 
+  /** Label for actions user can take */
+  'label.actions': 'Дзеянні',
+  /** Label for all saved queries */
+  'label.all': 'Усе',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Адрэдагавана',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Новае',
+  /** Label for query type "personal" */
+  'label.personal': 'Асабісты',
+  /** Label for savedAt date */
+  'label.saved-at': 'Захавана ў',
+  /** Saved queries */
+  'label.saved-queries': 'Захаваныя запыты',
+  /** Search queries */
+  'label.search-queries': 'Шукаць запыты',
+  /** Share query */
+  'label.share': 'Падзяліцца',
+  /** Label for query type "shared" */
+  'label.shared': 'Агульны',
+  /** Label for saved query type "team" */
+  'label.team': 'Каманда',
+  /** Label for untitled query fallback */
+  'label.untitled-query': 'Без назвы',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': "Параметры не з'яўляюцца сапраўдным JSON",
@@ -39,14 +81,30 @@ export default removeUndefinedLocaleResources({
   /** Label for "Result" explorer/view */
   'result.label': 'Вынік',
   /** Tooltip text shown when the query result is not encodable as CSV */
-  'result.save-result-as-csv.not-csv-encodable': undefined, // 'Result cannot be encoded as CSV'
+  'result.save-result-as-csv.not-csv-encodable': 'Рэзультат немагчыма закадаваць у фармаце CSV',
   /** Label for "Save result as" result action */
-  'result.save-result-as-format': undefined, // 'Save result as <SaveResultButtons/>'
+  'result.save-result-as-format': 'Захаваць вынік як <SaveResultButtons/>',
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
    */
   'result.timing-not-applicable': 'не прымяняецца',
+
+  /** Query already saved error label */
+  'save-query.already-saved': 'Запыт ужо захаваны',
+  /** Save error label */
+  'save-query.error': 'Памылка пры захаванні запыту',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': 'Асабісты экзэмпляр захаваны',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    'Агульныя запыты захоўваюцца як дакументы ў вашым dataset і ўлічваюцца ў вашай квоце дакументаў.',
+  /** Save shared query success label */
+  'save-query.shared-success': 'Агульны запыт захаваны',
+  /** Save success label */
+  'save-query.success': 'Запыт захаваны',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'Запыт перанесены ў асабістыя',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Версія API',
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Перспектыва "<code>previewDrafts</code>" была перайменавана ў "<code>drafts</code>" і цяпер застарэлая. Гэтая змена дзейнічае для ўсіх версій з падтрымкай перспектывы (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Чытаць дакументацыю',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Няма перспектывы (API па змаўчанні)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives дазваляюць вашаму запыту працаваць з рознымі "відамі" кантэнту ў вашым dataset',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Перспектыва па змаўчанні зменіцца з "<code>raw</code>" на "<code>published</code>" у будучай версіі API. Калі ласка, звярніцеся да дакументацыі для атрымання больш падрабязнай інфармацыі.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'Прымацаваны рэліз',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': 'Запланаваныя чарнавікі',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

@@ -1,21 +1,12 @@
 import {defineCliConfig} from 'sanity/cli'
+import {mergeConfig} from 'vite'
 
 import locales from '../../locales/registry'
 import {getPackageName} from '../../src/api/registry'
 import {getLocaleSourcePath} from '../../src/util/getLocalesPath'
 
 export default defineCliConfig({
-  vite: async (config) => ({
-    ...config,
-
-    resolve: {
-      ...config.resolve,
-      alias: {
-        ...config.resolve?.alias,
-        ...(await findLocaleAliases()),
-      },
-    },
-  }),
+  vite: async (config) => mergeConfig(config, {resolve: {alias: await findLocaleAliases()}}),
 })
 
 /**

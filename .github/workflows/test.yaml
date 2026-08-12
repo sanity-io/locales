@@ -21,14 +21,11 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/setup@v2
         with:
-          cache: pnpm
-          node-version: 20
-      - run: corepack enable && pnpm --version
-      - run: pnpm install --ignore-scripts
+          runtime: node@lts
+          cache: true
       - run: pnpm build --filter=./locales/*
 
   lint:
@@ -38,34 +35,29 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/setup@v2
         with:
-          cache: pnpm
-          node-version: 20
-      - run: corepack enable && pnpm --version
-      - run: pnpm install --loglevel=error --ignore-scripts
+          runtime: node@lts
+          cache: true
       - run: pnpm check:lint
+      - run: pnpm knip
 
   test:
     timeout-minutes: 15
     strategy:
       fail-fast: true
       matrix:
-        node: [lts/*, current]
+        node: [lts, latest]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/setup@v2
         with:
-          cache: pnpm
-          node-version: ${{ matrix.node }}
-      - run: corepack enable && pnpm --version
-      - run: pnpm install --loglevel=error --ignore-scripts
+          runtime: node@${{ matrix.node }}
+          cache: true
       - run: pnpm test

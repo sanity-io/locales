@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Copiar al portapapeles',
+  /** Label for deleting a query */
+  'action.delete': 'Eliminar',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Editar título',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Detener',
   /** Label for setting up a listener */
   'action.listen-execute': 'Escuchar',
+  /** Label for query loading table */
+  'action.load-queries': 'Cargar consultas',
+  /** Label for loading a query */
+  'action.load-query': 'Cargar consulta',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Cancelar',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Buscar',
+  /** Label for saving a query */
+  'action.save-personal-copy': 'Guardar copia personal',
+  /** Label for saving a personal query */
+  'action.save-personal-query': 'Guardar como personal',
+  /** Label for saving a query */
+  'action.save-query': 'Guardar consulta',
+  /** Label for saving a shared query */
+  'action.save-shared-query': 'Guardar como compartida',
+  /** Label for unsharing a query */
+  'action.unshare': 'Dejar de compartir',
+  /** Label for updating a query */
+  'action.update': 'Actualizar',
 
+  /** Label for actions user can take */
+  'label.actions': 'Acciones',
+  /** Label for all saved queries */
+  'label.all': 'Todas',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Editado',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Nuevo',
+  /** Label for query type "personal" */
+  'label.personal': 'Personal',
+  /** Label for savedAt date */
+  'label.saved-at': 'Guardado en',
+  /** Saved queries */
+  'label.saved-queries': 'Consultas guardadas',
+  /** Search queries */
+  'label.search-queries': 'Buscar consultas',
+  /** Share query */
+  'label.share': 'Compartir',
+  /** Label for query type "shared" */
+  'label.shared': 'Compartida',
+  /** Label for saved query type "team" */
+  'label.team': 'Equipo',
+  /** Label for untitled query fallback */
+  'label.untitled-query': 'Sin título',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Los parámetros no son un JSON válido',
@@ -48,6 +90,22 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': 'n/a',
 
+  /** Query already saved error label */
+  'save-query.already-saved': 'Consulta ya guardada',
+  /** Save error label */
+  'save-query.error': 'Error al guardar la consulta',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': 'Copia personal guardada',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    'Las consultas compartidas se almacenan como documentos en tu dataset y cuentan para tu cuota de documentos.',
+  /** Save shared query success label */
+  'save-query.shared-success': 'Consulta compartida guardada',
+  /** Save success label */
+  'save-query.success': 'Consulta guardada',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'Consulta movida a personal',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Versión de la API',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspectiva',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'La perspectiva "<code>previewDrafts</code>" ha sido renombrada a "<code>drafts</code>" y ahora está en desuso. Este cambio es efectivo para todas las versiones con soporte de perspectiva (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Leer documentación',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Sin perspectiva (predeterminado de la API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Las perspectivas permiten que tu consulta se ejecute contra diferentes "vistas" del contenido en tu dataset',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'La perspectiva predeterminada cambiará de "<code>raw</code>" a "<code>published</code>" en una próxima versión de la API. Por favor, consulte la documentación para más detalles.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'Lanzamiento fijado',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': 'Borradores programados',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectivas',
 })

@@ -163,4 +163,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'Virk skjal',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Áskrifandi',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'Verkefni',
 })

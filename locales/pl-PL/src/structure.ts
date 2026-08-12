@@ -1,24 +1,47 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': 'Kopiuj ID dokumentu',
+  /** Tooltip for the copy actions dropdown button in the document panel header */
+  'action.copy-document-url.label': 'Kopiuj adres URL dokumentu',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': 'Kopiuj URL dokumentu',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operacja nie jest gotowa',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Ten dokument jeszcze nie istnieje lub został już usunięty',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Ten dokument nie może zostać usunięty, ponieważ znajduje się w zaplanowanych publikacjach',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Usuń',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Usuwanie…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip':
+    'Niektóre akcje dokumentu są wyłączone dla dokumentów powiązanych z Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Czy na pewno chcesz odrzucić wszystkie zmiany od ostatniej publikacji?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Czy na pewno chcesz odrzucić wszystkie zmiany i usunąć ten szkic dokumentu?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Odrzucić zmiany?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Ten dokument nie ma nieopublikowanych zmian',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Ten dokument nie jest opublikowany',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operacja nie jest gotowa',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Odrzuć zmiany',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -26,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Ten dokument jeszcze nie istnieje, więc nie ma nic do skopiowania',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplikuj',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -34,10 +60,17 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Już opublikowany',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Opublikowano {{timeSincePublished}} temu',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Ta wersja jest publikowana w ramach swojego wydania',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operacja nie jest gotowa',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publikuj',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Opublikuj',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publikuj',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -52,14 +85,21 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Opublikowany',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publikowanie…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Walidacja dokumentu…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Proszę naprawić błędy walidacji przed publikacją',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Błędy walidacji',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Istnieją błędy walidacji, które należy naprawić przed opublikowaniem tego dokumentu',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Oczekiwanie na zakończenie zadań przed publikacją',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Czy na pewno chcesz przywrócić ten dokument?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Nie możesz przywrócić wersji początkowej',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Przywróć',
@@ -69,24 +109,71 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Ten dokument nie jest opublikowany',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operacja nie jest gotowa',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Wybrana wersja lub wariant nie zawiera tego dokumentu',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Cofnij publikację',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'Ten dokument ma włączoną edycję na żywo i nie może zostać cofnięty z publikacji',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Przeglądasz dokument tylko do odczytu, który został zarchiwizowany jako część <VersionBadge>{{title}}</VersionBadge>. Nie można go edytować',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Ten zaplanowany szkic jest zarchiwizowany',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'Nie można utworzyć dokumentu roboczego.',
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'Nie można utworzyć opublikowanego dokumentu.',
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination':
+    'Wybierz miejsce docelowe dla tego dokumentu:',
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> wersja nie jest aktywna.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Przywróć najnowszą wersję',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Ten dokument został usunięty.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Ten typ dokumentu został wycofany.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Odrzuć szkic',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Opublikuj, aby kontynuować edycję',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Typ <strong>{{schemaType}}</strong> ma włączoną opcję <code>liveEdit</code>, ale istnieje szkic tego dokumentu. Opublikuj lub odrzuć szkic, aby móc kontynuować edycję na żywo.',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': 'Porównaj wersję roboczą',
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': 'Odrzuć wersję roboczą',
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': 'Opublikuj wersję roboczą',
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'Przestrzeń robocza nie ma włączonych wersji roboczych, ale istnieje wersja robocza tego dokumentu.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Harmonogram wstrzymany podczas edycji. Naciśnij Harmonogram, aby ponownie aktywować lub wybrać nową datę.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Twoja rola <Roles/> nie ma uprawnień do utworzenia tego dokumentu.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Twoja rola <Roles/> nie ma uprawnień do aktualizacji tego dokumentu.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent':
+    'Wysłano prośbę o uprawnienia redaktora',
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': 'Poproś o możliwość edycji',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Przeglądasz dokument tylko do odczytu, który został opublikowany jako część <VersionBadge>{{title}}</VersionBadge>. Nie można go edytować',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Przeładuj odniesienie',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -97,6 +184,69 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'To odniesienie zostało usunięte od kiedy je otworzyłeś.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': 'Dodaj do bundle',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Dodaj do wydania',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Otwórz wersję do edycji',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Wystąpił błąd podczas dodawania dokumentu do wersji: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Błąd dodawania dokumentu do wersji',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokument istnieje tylko w',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'wersji',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Ten dokument jest częścią wersji <VersionBadge/> i {{count}} innej wersji.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Ten dokument nie jest częścią żadnego wydania',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Ten dokument jest częścią wersji <VersionBadge/>',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Nie w wydaniu <VersionBadge>{{title}}</VersionBadge>.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Proszę czekać, aż dokument zostanie dodany do wersji. Nie powinno to trwać dłużej niż kilka sekund.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Dodawanie dokumentu do wersji…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Nie udało się znaleźć wybranej wersji dokumentu, proszę wybrać inny wpis z listy historii.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Istnieje zaplanowany szkic tego dokumentu. Jeśli teraz opublikujesz zmiany, zostaną one nadpisane, gdy harmonogram zostanie uruchomiony.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Ten dokument zostanie wycofany jako część wydania <VersionBadge>{{title}}</VersionBadge>',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published':
+    'Pokazuje aktualną <strong>opublikowaną</strong> wersję:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Utwórz wariant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Nie można znaleźć wybranego wariantu <VariantName>{{name}}</VariantName>.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Wystąpił błąd podczas dodawania dokumentu do wariantu: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Błąd podczas dodawania dokumentu do wariantu',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Nie istnieje dokument wariantu <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> dla <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Proszę czekać, trwa dodawanie dokumentu do wariantu. Nie powinno to potrwać dłużej niż kilka sekund.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Dodawanie dokumentu do wariantu…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nowy {{schemaType}}',
@@ -107,6 +257,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Otwórz działania dokumentu',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Akcje dokumentu',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Zwiń wszystkie panele',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Skup się na panelu',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Zwiń wszystkie panele',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Skup się na panelu',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Podziel panel po prawej',
   /** The tool tip for the split pane button on the document panel header */
@@ -115,6 +273,68 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Zamknij podzielony panel',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Zamknij grupę paneli',
+
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': 'Edytuj w Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Ten dokument może być edytowany w Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas pozwala na swobodne pisanie, a następnie aktualizowanie treści w Studio bez ręcznego kopiowania pola po polu.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Pisanie w formie swobodnej',
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': 'Ten szkic dokumentu jest powiązany z Canvas',
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': 'Ten opublikowany dokument jest powiązany z Canvas',
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': 'Ta wersja dokumentu jest powiązana z Canvas',
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': 'Dowiedz się więcej',
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description':
+    'Canvas pozwala na tworzenie w edytorze swobodnej formy, który automatycznie mapuje się z powrotem do Studio jako strukturalna treść - podczas pisania.',
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': 'Autorstwo z ideą na pierwszym miejscu',
+
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Pokazuje historię wersji <strong>{{perspective}}</strong> tego dokumentu.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Ten widok pokazuje zmiany, które wystąpiły w określonej wersji tego dokumentu. Wybierz inną wersję, aby zobaczyć jej zmiany',
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'Od',
+  'changes.tab.history': 'Historia',
+  'changes.tab.review-changes': 'Przejrzyj zmiany',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'Do',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" nie jest obsługiwanym trybem porównywania dokumentów.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam':
+    'Parametr następnego dokumentu jest nieprawidłowy.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Nie można porównać dokumentów',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Parametr poprzedniego dokumentu jest nieprawidłowy.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Nie udało się załadować publikacji',
+
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason':
+    'Nie ma innych wersji tego dokumentu do porównania.',
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Porównaj wersje',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Szkic',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Opublikowany',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Porównanie wersji',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Anuluj',
@@ -132,21 +352,28 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Zbiór danych',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID dokumentu',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Skopiowano ID dokumentu do schowka!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Nie udało się skopiować identyfikatora dokumentu',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ID projektu',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Usuń mimo to',
+  /** The text in the "Delete anyway" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Cofnij publikację mimo to',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Usuń teraz',
+  /** The text in the "Delete now" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Cofnij publikację teraz',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Czy na pewno chcesz usunąć „<DocumentTitle/>”?',
+  /** The confirmation text when the document only has a single version */
+  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Czy na pewno chcesz cofnąć publikację „<DocumentTitle/>”?',
@@ -203,12 +430,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Nieznany typ schematu: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Gdzie zniknęły przyciski wersji?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Zamknij',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspekcja <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Brak wartości',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Zamknij panel',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Wystąpił błąd podczas renderowania tego panelu.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Spróbuj ponownie',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Coś poszło nie tak',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspekcja',
   /** the placeholder text for the search input on the inspect dialog */
@@ -217,6 +455,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Przetworzony',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Surowy JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'Dokument nie istnieje jeszcze w wybranym perspective.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ten formularz jest ukryty',
@@ -229,6 +471,66 @@ export default removeUndefinedLocaleResources({
     'Proszę czekać, aż dokument zostanie zsynchronizowany. Zwykle dzieje się to zaraz po opublikowaniu dokumentu i nie powinno trwać dłużej niż kilka sekund',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synchronizacja dokumentu…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Będziemy próbować dalej. W międzyczasie Twoje zmiany są przechowywane w przeglądarce.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Twoje zmiany nie są zapisywane',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Edytowanie zostanie wznowione, gdy tylko Twoje zmiany zostaną zapisane.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Zapisywanie zmian…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Edytowanie jest wstrzymane do czasu zapisania zmian. Twoje zmiany są przechowywane w przeglądarce, więc nie zamykaj tej karty, dopóki nie zakończymy prób.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Twoje zmiany nadal nie są zapisywane',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': 'Dodaj do ulubionych',
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': 'Usuń z ulubionych',
+
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Nie możemy załadować zmian dla tego dokumentu, prawdopodobnie z powodu polityki retencji historii w Twoim planie, pokazuje to, jak wersja <strong>{{version}}</strong> porównuje się z wersją <strong>opublikowaną</strong>.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Porównanie z opublikowaną wersją',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Zbadaj dokument <VersionBadge>{{releaseTitle}}</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Otwórz dokument <VersionBadge>draft</VersionBadge>',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Otwórz wydanie <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Dodaj element',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Przychodzące odniesienia typu {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Brak elementów',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Odniesienie od {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Nie znaleziono typu schematu {{type}}',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Wpisz, aby wyszukać',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Ładowanie dokumentów...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Ładowanie dokumentów między zbiorami danych...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Nie zdefiniowano przychodzących odniesień dla tego typu, zobacz dokumentację po więcej informacji.',
+
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': 'Nie znaleziono żadnych odwołań przychodzących.',
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Nie znaleziono odniesień tego typu.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Nie znaleziono typu schematu {{type}}',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Ładowanie…',
@@ -245,10 +547,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Widok kompaktowy',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Widok szczegółowy',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Widok domyślny',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Widok domyślny jest już używany',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortuj według daty utworzenia',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortuj według ostatniej edycji',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Domyślne sortowanie',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Domyślna kolejność sortowania jest już używana',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Dowiedz się, jak dodać typ dokumentu →',
@@ -289,12 +600,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Nowy {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Bez tytułu',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Ponów próbę',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Ponawianie próby…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Błąd: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Błąd: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Połączenie internetowe wydaje się być offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Nie można pobrać elementów listy',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Ponawianie próby…',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Wyświetlanie maksymalnie {{limit}} dokumentów',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -303,10 +620,23 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Nie znaleziono wyników',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Brak pasujących dokumentów',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Próba połączenia…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Szukaj na liście',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Szukaj na liście',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Zmień kolejność wyników wyszukiwania',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Posortowane według: {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Trafność',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Posortowane według trafności',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Ta opcja sortowania używa pól, które nie są częścią tego typu dokumentu',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Szczegóły',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -320,6 +650,15 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Pomyślnie wykonano {{context}} na dokumencie',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id':
+    'ID dokumentu skopiowane do schowka',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'Adres URL dokumentu skopiowany do schowka',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> został dodany do wydania',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokument został pomyślnie usunięty',
   /** The text when a discard changes operation succeeded  */
@@ -330,6 +669,9 @@ export default removeUndefinedLocaleResources({
     'Dokument został pomyślnie zduplikowany',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokument został opublikowany',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion':
+    'Wersja została opublikowana',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> został przywrócony',
@@ -338,8 +680,6 @@ export default removeUndefinedLocaleResources({
     'Dokument został cofnięty z publikacji. Z najnowszej opublikowanej wersji utworzono szkic.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Bez tytułu',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Utracono połączenie. Ponowne łączenie…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Ładowanie dokumentu…',
   /** The text of the document not found pane if the schema is known */
@@ -356,6 +696,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Ten dokument nie istnieje i nie został dla niego określony żaden typ schematu.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Ładowanie dokumentu…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Ładowanie…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -371,6 +713,24 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Otwórz podgląd',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': 'Wyślij prośbę',
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text':
+    'Twoja prośba zostanie wysłana do administratora(ów) projektu. Jeśli chcesz, możesz również dołączyć notatkę',
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': 'Poproś o dostęp do edycji',
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': 'Jeśli chcesz, możesz dodać notatkę',
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': 'Dodaj notatkę...',
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text':
+    'Twoja prośba o dostęp do tego projektu została odrzucona.',
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text':
+    'Osiągnięto limit wniosków o role we wszystkich projektach. Poczekaj przed wysłaniem kolejnych wniosków lub skontaktuj się z administratorem w celu uzyskania pomocy.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Zapisano',
@@ -409,4 +769,18 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Przeładuj',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Ścieżka struktury',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'Otwórz menu akcji',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'Akcje',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'Zwiń',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'Rozwiń',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Nie znaleziono wydania z id "{{releaseId}}"',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Zmiany w tekście',
 })

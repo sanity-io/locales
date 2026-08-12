@@ -48,8 +48,7 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.heading': 'ಈ ದಾಖಲೆಗೆ ಇನ್ನೂ ಯಾವುದೇ ಕಾರ್ಯಗಳು ಇಲ್ಲ',
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.text':
-    'ಒಮ್ಮೆ ದಾಖಲೆಗೆ ಸಂಬಂಧಿಸಿದ ಕಾರ್ಯಗಳು ಇದ್ದರೆ, ಅವು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು.',
+  'empty-state.list.document.text': 'ಒಮ್ಮೆ ದಾಖಲೆಗೆ ಸಂಬಂಧಿಸಿದ ಕಾರ್ಯಗಳು ಇದ್ದರೆ, ಅವು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
   'empty-state.list.no-active-document.heading': 'ಅದರ ಕಾರ್ಯವನ್ನು ನೋಡಲು ದಾಖಲೆಯನ್ನು ತೆರೆಯಿರಿ',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
@@ -74,8 +73,7 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'ನೀವು ಎಲ್ಲಾ ಕೆಲಸಗಳನ್ನು ಮುಗಿಸಿದ್ದೀರಿ',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.text':
-    'ನಿಮಗೆ ಹೊಸದಾಗಿ ನಿಯೋಜಿಸಲಾದ ಕೆಲಸಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
+  'empty-state.status.list.open.assigned.text': 'ನಿಮಗೆ ಹೊಸದಾಗಿ ನಿಯೋಜಿಸಲಾದ ಕೆಲಸಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'ಈ ದಾಖಲೆಯ ಮೇಲೆ ಯಾವುದೇ ಕೆಲಸಗಳು ಇಲ್ಲ',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
@@ -125,8 +123,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': 'ಕಾರ್ಯಗಳು ಇಲ್ಲ',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text':
-    'ನಮಗೆ ಸುಧಾರಣೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡಿ, <Link>ಕಾರ್ಯಗಳ ಬಗ್ಗೆ ಪ್ರತಿಕ್ರಿಯೆ ಹಂಚಿಕೊಳ್ಳಿ</Link>',
+  'list.feedback.text': 'ನಮಗೆ ಸುಧಾರಣೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡಿ, <Link>ಕಾರ್ಯಗಳ ಬಗ್ಗೆ ಪ್ರತಿಕ್ರಿಯೆ ಹಂಚಿಕೊಳ್ಳಿ</Link>',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'ಕಾರ್ಯಕ್ಕೆ ಲಿಂಕ್ ನಕಲಿಸಿ',
@@ -164,4 +161,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'ಸಕ್ರಿಯ ದಾಖಲೆ',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'ಚಂದಾದಾರಿಕೆ ಮಾಡಲಾಗಿದೆ',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'ಕಾರ್ಯಗಳು',
 })

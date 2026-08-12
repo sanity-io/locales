@@ -1,24 +1,47 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': 'Kopier dokument-ID',
+  /** Tooltip for the copy actions dropdown button in the document panel header */
+  'action.copy-document-url.label': 'Kopier dokumentets URL',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': 'Kopier dokumentets URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operationen er ikke klar',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Dette dokument eksisterer endnu ikke eller er allerede slettet',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Dette dokument kan ikke slettes, da det findes inden for planlagte udgivelser',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Den valgte udgivelse eller variant indeholder ikke dette dokument',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Slet',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Sletter…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip':
+    'Nogle dokumenthandlinger er deaktiveret for dokumenter, der er linket til Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Er du sikker på, at du vil forkaste alle ændringer siden sidst publiceret?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Er du sikker på, at du vil kassere alle ændringer og slette dette udkastsdokument?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Kassér ændringer?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Dette dokument har ingen upublicerede ændringer',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Dette dokument er ikke publiceret',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operationen er ikke klar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Den valgte udgivelse eller variant indeholder ikke dette dokument',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Forkast ændringer',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -26,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Dette dokument eksisterer endnu ikke, så der er intet at duplikere',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Den valgte udgivelse eller variant indeholder ikke dette dokument',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplikér',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -34,10 +60,17 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Allerede publiceret',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publiceret for {{timeSincePublished}} siden',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Denne version udgives som en del af dens udgivelse',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operationen er ikke klar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Den valgte udgivelse eller variant indeholder ikke dette dokument',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publicér',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Udgiv',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publicér',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -52,14 +85,21 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Publiceret',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publicerer…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validerer dokument…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Ret venligst valideringsfejlene før udgivelse',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Valideringsfejl',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Der er valideringsfejl, der skal rettes, før dette dokument kan publiceres',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Venter på, at opgaverne er færdige før publicering',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Er du sikker på, at du vil gendanne dette dokument?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial':
     'Du kan ikke gendanne til den oprindelige version',
   /** Label for the "Restore" document action */
@@ -70,30 +110,76 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Dette dokument er ikke offentliggjort',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operationen er ikke klar',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Den valgte udgivelse eller variant indeholder ikke dette dokument',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Afpublisér',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'Dette dokument har live redigering aktiveret og kan ikke afpubliseres',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Du ser et skrivebeskyttet dokument, der blev arkiveret som en del af <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Denne planlagte kladde er arkiveret',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'Kan ikke oprette et kladde dokument.',
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'Kan ikke oprette et offentliggjort dokument.',
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination':
+    'Vælg en destination for dette dokument:',
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> udgivelsen er ikke aktiv.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Gendan seneste version',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Dette dokument er blevet slettet.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Denne dokumenttype er blevet udfaset.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Kassér kladde',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Udgiv for at fortsætte redigering',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktiveret, men der findes en kladdeversion af dette dokument. Udgiv eller kassér kladden for at fortsætte med at redigere den live.',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': 'Sammenlign kladde',
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': 'Kassér kladde',
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': 'Offentliggør kladde',
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'Arbejdsområdet har ikke kladder aktiveret, men der findes en kladdeversion af dette dokument.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Planlægning sat på pause under redigering. Tryk på Planlæg for at genaktivere eller vælg en ny dato.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din rolle <Roles/> har ikke tilladelse til at oprette dette dokument.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'Dine roller <Roles/> har ikke tilladelse til at oprette dette dokument.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Din rolle <Roles/> har ikke tilladelse til at opdatere dette dokument.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
     'Dine roller <Roles/> har ikke tilladelse til at opdatere dette dokument.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent': 'Redaktøranmodning sendt',
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': 'Spørg om at redigere',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Du ser et skrivebeskyttet dokument, der blev offentliggjort som en del af <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Genindlæs reference',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -104,6 +190,74 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Denne reference er blevet fjernet, siden du åbnede den.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': 'Tilføj til bundle',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Tilføj til udgivelse',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Åbn udgivelse for at redigere',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Der opstod en fejl ved tilføjelse af dokument til udgivelsen: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Fejl ved tilføjelse af dokument til udgivelse',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokumentet findes kun i',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'udgivelsen',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'udgivelserne',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Dette dokument er en del af <VersionBadge/> udgivelsen og {{count}} yderligere udgivelse.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Dette dokument er en del af <VersionBadge/> udgivelsen og {{count}} yderligere udgivelser',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Dette dokument er ikke en del af nogen udgivelse',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Dette dokument er en del af <VersionBadge/> udgivelsen',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Ikke i <VersionBadge>{{title}}</VersionBadge> udgivelsen.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Vent venligst mens dokumentet tilføjes til udgivelsen. Det burde ikke tage mere end et par sekunder.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Tilføjer dokument til udgivelse…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Vi kunne ikke finde den valgte dokumentrevision, vælg venligst en anden post fra historiklisten.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Der findes en planlagt kladde for dette dokument. Hvis du offentliggør ændringer nu, vil de blive overskrevet, når planen udføres.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Dette dokument vil blive afpubliseret som en del af <VersionBadge>{{title}}</VersionBadge> udgivelsen',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published':
+    'Viser den nuværende <strong>offentliggjorte</strong> version:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Opret variant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Den valgte variant <VariantName>{{name}}</VariantName> kunne ikke findes.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Der opstod en fejl ved tilføjelse af dokument til varianten: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Fejl ved tilføjelse af dokument til variant',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Der findes intet <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> variantdokument for <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Vent venligst, mens dokumentet tilføjes til varianten. Det bør ikke tage mere end et par sekunder.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Tilføjer dokument til variant…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Nyt {{schemaType}}',
@@ -114,6 +268,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Åbn dokumenthandlinger',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumenthandlinger',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Forlad fokusmodus (vis navigation)',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Gå ind i fokusmodus (skjul navigation)',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Forlad fokusmodus',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Gå ind i fokusmodus',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Opdel rude til højre',
   /** The tool tip for the split pane button on the document panel header */
@@ -122,6 +284,66 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Luk splitrude',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Luk rudesamling',
+
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': 'Rediger i Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Dette dokument kan redigeres i Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas lader dig skrive frit og derefter opdatere indhold i Studio uden manuel kopiering felt for felt.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Frit formuleret skrivning',
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': 'Dette udkastdokument er linket til Canvas',
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': 'Dette live dokument er linket til Canvas',
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': 'Dette versionsdokument er linket til Canvas',
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': 'Lær mere',
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description':
+    'Canvas lader dig forfatte i en fri-form redaktør, der automatisk kortlægger tilbage til Studio som struktureret indhold - mens du skriver.',
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': 'Idé først forfatterskab',
+
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Viser historikken for <strong>{{perspective}}</strong> versionen af dette dokument.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Denne visning viser de ændringer, der er sket i en specifik version af dette dokument. Vælg en anden version for at se dens ændringer',
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'Fra',
+  'changes.tab.history': 'Historik',
+  'changes.tab.review-changes': 'Gennemgå ændringer',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'Til',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" er ikke en understøttet dokument sammenligningsmodus.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Den næste dokumentparameter er ugyldig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Ude af stand til at sammenligne dokumenter',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'Den forrige dokumentparameter er ugyldig.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Kunne ikke indlæse udgivelser',
+
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason':
+    'Der er ingen andre versioner af dette dokument at sammenligne med.',
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Sammenlign versioner',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Kladde',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Udgivet',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Sammenlign versioner',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Annuller',
@@ -147,22 +369,33 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Datasæt',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Kopieret dokument-ID til udklipsholder!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'Kunne ikke kopiere dokument-ID',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'Projekt-ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Slet alligevel',
+  /** The text in the "Delete anyway" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  /** The text in the "Delete anyway" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Afpublicer alligevel',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Slet nu',
+  /** The text in the "Delete now" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  /** The text in the "Delete now" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Afpublicer nu',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Er du sikker på, at du vil slette “<DocumentTitle/>”?',
+  /** The confirmation text when the document only has a single version */
+  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  /** The confirmation text when the document has multiple versions */
+  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Er du sikker på, at du vil afpublicere “<DocumentTitle/>”?',
@@ -225,12 +458,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Ukendt skematype: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Hvor er versionsknapperne blevet af?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Luk',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspekterer <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Ingen værdi',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': undefined, // 'Something went wrong'
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspekter',
   /** the placeholder text for the search input on the inspect dialog */
@@ -239,6 +483,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Analyseret',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Rå JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Denne formular er skjult',
@@ -251,6 +498,66 @@ export default removeUndefinedLocaleResources({
     'Vent venligst mens dokumentet synkroniseres. Dette sker normalt lige efter at dokumentet er blevet offentliggjort, og det burde ikke tage mere end et par sekunder',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserer dokument…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Vi bliver ved med at prøve. Dine ændringer gemmes i din browser i mellemtiden.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Dine ændringer gemmes ikke',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Redigering genoptages, så snart dine ændringer er gemt.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Gemmer dine ændringer…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Redigering er sat på pause, indtil de gemmes. Dine ændringer gemmes i din browser, så hold denne fane åben, mens vi fortsætter med at prøve.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Dine ændringer gemmes stadig ikke',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': 'Tilføj til favoritter',
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': 'Fjern fra favoritter',
+
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Vi kan ikke indlæse ændringerne for dette dokument, sandsynligvis på grund af historikbevaringspolitikken for din plan, dette viser dig hvordan <strong>{{version}}</strong> versionen sammenlignes med <strong>udgivet</strong> version.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Sammenligning med udgivet',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Inspekter <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Åbn <VersionBadge>kladde</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Åbn <VersionBadge>{{releaseTitle}}</VersionBadge> udgivelse',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Tilføj element',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Indkommende referencer af typen {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Ingen elementer',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Reference fra {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Skematypen {{type}} blev ikke fundet',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Skriv for at søge',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Indlæser dokumenter...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Indlæser dokumenter på tværs af datasæt...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Ingen indkommende referencer defineret for denne type, se dokumentationen for mere information.',
+
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': 'Ingen indgående referencer fundet.',
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Ingen referencer af denne type fundet.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Skematypen {{type}} blev ikke fundet',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Indlæser…',
@@ -267,10 +574,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompakt visning',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaljeret visning',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Standardvisning',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Bruger allerede standardvisningen',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sorter efter Oprettet',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sorter efter Sidst redigeret',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Standardsortering',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Bruger allerede standardsorteringsrækkefølgen',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lær hvordan du tilføjer en dokumenttype →',
@@ -310,12 +626,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Uden titel',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Prøv igen',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Prøver igen…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fejl: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Fejl: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Internetforbindelsen ser ud til at være offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kunne ikke hente liste elementer',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Prøver igen…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Prøver igen… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Viser maksimalt {{limit}} dokumenter',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -324,10 +647,23 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Ingen resultater fundet',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Ingen matchende dokumenter',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Forsøger at forbinde…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Søg i liste',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Søg i liste',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Skift rækkefølge for søgeresultater',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sorteret efter {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevans',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sorteret efter relevans',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Denne sorteringsmulighed bruger felter, der ikke er en del af denne dokumenttype',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detaljer',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -341,16 +677,28 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Handlingen {{context}} på dokumentet blev udført med succes',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id':
+    'Dokument-ID kopieret til udklipsholder',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'Dokumentets URL kopieret til udklipsholder',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> blev tilføjet til udgivelsen',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokumentet blev slettet med succes',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Alle ændringer siden sidste offentliggørelse er nu forkastet. Det forkastede udkast kan stadig gendannes fra historikken',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Dokumentet blev kopieret med succes',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> blev offentliggjort',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': 'Versionen blev publiceret',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> blev gendannet',
@@ -359,9 +707,6 @@ export default removeUndefinedLocaleResources({
     '<Strong>{{title}}</Strong> blev afpubliceret. Et udkast er blevet oprettet fra den seneste publicerede version.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Uden titel',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title':
-    'Forbindelsen mistet. Genopretter forbindelse…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Indlæser dokument…',
   /** The text of the document not found pane if the schema is known */
@@ -378,6 +723,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Dette dokument eksisterer ikke, og der blev ikke angivet nogen skematype for det.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Indlæser dokument…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Indlæser…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -393,6 +740,24 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Åbn forhåndsvisning',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': 'Send anmodning',
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text':
+    'Din anmodning vil blive sendt til projektadministratoren(-erne). Hvis du vil, kan du også inkludere en note',
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': 'Bed om redigeringsadgang',
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': 'Hvis du vil, kan du tilføje en note',
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': 'Tilføj note...',
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text':
+    'Din anmodning om adgang til dette projekt er blevet afvist.',
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text':
+    'Du har nået grænsen for rolleanmodninger på tværs af alle projekter. Vent venligst før du sender flere anmodninger eller kontakt en administrator for hjælp.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Gemt',
@@ -430,4 +795,18 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Genindlæs',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Struktur sti',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'Åbn handlingsmenu',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'Handlinger',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'Kollaps',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'Udvid',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Udgivelse med id "{{releaseId}}" ikke fundet',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Indlejrede ændringer',
 })

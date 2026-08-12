@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'クリップボードへのリンクのコピーに失敗しました',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'クリップボードにリンクをコピーしました',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': '一度削除されたコメントは復旧できません。',
   /** The delete dialog confirm button text for a comment */
@@ -73,10 +70,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'コメントを追加',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'コメントは重複できません',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'コメントを追加',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'コメントの読み込み中に問題が発生しました',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}}フィールドに移動',

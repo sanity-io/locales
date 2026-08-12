@@ -1,6 +1,72 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Konfigurasjonsproblem oppdaget',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatiske oppdateringer er aktivert, men ingen <code>deployment.appId</code> konfigurert i <code>sanity.cli.ts</code>. Dette studioet oppdaterer mot <strong>latest</strong>-kanalen.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Vis dokumentasjon',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Deaktivert',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Aktivert',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Automatiske oppdateringer',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Hvordan aktivere',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Administrer versjon',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text': 'Kopiert til utklippstavlen.',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til utklippstavle',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Nåværende versjon',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Hvordan oppgradere',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Siste versjon',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Ny versjon tilgjengelig',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Ny versjon',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Last inn på nytt',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Last Studio på nytt for å oppdatere',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Utvikling',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Ny versjon tilgjengelig',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Forhåndsutgivelse',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Oppdatert',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Oppdatert',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Oppdater',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Lær hvordan du oppdaterer Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Brukeragent',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Vis på GitHub',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Lukk',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Lukk dialog',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Lukk',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Avvis kunngjøringer',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Åpne kunngjøringer',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Slett',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +77,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenter som bruker bildet',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Laster…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Velg',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Avbryt',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +118,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Viser kun media av godkjente typer: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Avbryt',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Velg',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Velg fil',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Velg bilde',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'En feil oppstod under innsetting av mediefil. Se konsollen for mer informasjon.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Kunne ikke laste inn ressurser',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Last inn flere',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Ingen filer',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Ingen bilder',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Kan ikke slette nåværende valgt fil',
@@ -81,6 +158,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Bildet slettet',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Opplastede bilder',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Ett dokument bruker filen <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -108,6 +186,42 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Ingen dokumenter bruker dette bildet',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': 'Se konsollen for mer informasjon.',
+  'asset-sources.common.uploader.upload-failed.title': 'Opplasting mislyktes',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Filer i workspace',
+  'asset-sources.dataset.image.title': 'Bilder i workspace',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Noe gikk galt med å løse opp Media Library for dette prosjektet.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Ingen mediebibliotek har blitt opprettet for denne organisasjonen.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Mediebibliotek',
+  'asset-sources.media-library.image.title': 'Mediebibliotek',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Ferdig',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Velg ny mediefil for “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Velg ny mediefil',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger mediefil',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Last opp til Media Library',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Bruker den eksisterende filen funnet i biblioteket.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Fil: '{{filename}}' finnes allerede",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text':
+    "Utgivelsen '<strong>{{title}}</strong>' har blitt slettet.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Gå til neste måned',
   /** Action message for navigating to next year */
@@ -116,24 +230,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Gå til forrige måned',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Gå til forrige år',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'I dag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Gå til i dag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'I morgen',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'I går',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Med klokkeslett',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Velg time',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Velg minutt',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Velg tid',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Sett til nå',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} on {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Åpne kalender',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Velg dato',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Må være i formatet <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
@@ -218,6 +330,9 @@ export default removeUndefinedLocaleResources({
     'Sjekk konsollen i utviklerverktøyet for mer informasjon',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'En feil oppsto under visning av endringer',
+  'changes.error-description': 'Vi klarer ikke å laste endringene for dette dokumentet.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Noe gikk galt',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Verdifeil: Vedien har typen «<code>{{actualType}}</code>», forventet «<code>{{expectedType}}</code>»',
@@ -247,11 +362,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Laster…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Laster endringer…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Vi kunne ikke finne dokumentrevisjonen med id: <code>{{revisionId}}</code> som du prøver å sammenligne. <Break/> Dette skyldes sannsynligvis historikkbevaringsreglene i abonnementet ditt. <Break/> Vennligst velg en annen <strong>From</strong>-oppføring.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Rediger dokumentet eller velg en eldre versjon i tidslinjen for å se en liste over endringer i dette panelet.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Det er ingen endringer',
+  'changes.not-selectable': 'Det er ikke mulig å velge denne hendelsen',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'La til berikelse',
   /** Portable Text diff: An annotation was changed */
@@ -293,8 +412,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Ukjent skjematype',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Fjernet',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Du har valgt samme <strong>from</strong> og <strong>to</strong> revisjon, vennligst velg forskjellige revisjoner for å sammenligne endringene mellom dem.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Samme revisjon valgt',
   /** Title for the Review Changes pane */
   'changes.title': 'Se endringer',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Dette feltet er ikke definert i skjemaet. Verdier vises som JSON.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Utkast',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -305,12 +434,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bekreft',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laster',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Prøver å koble til…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Konfigurasjonsproblemer',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Fant konfigurasjonsproblemer',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sorter etter {{title}}',
@@ -330,12 +464,160 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorter etter tittel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Lukk',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ignorer',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Neste',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Forrige',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopier fra base',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'endret',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} i {{versionName}}-versjonen',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Uløst endring i {{versionName}}-versjonen',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} uløste endringer i {{versionName}}-versjonen',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Avbryt',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Hvor enkelt eller vanskelig er den nye versjonslageret å bruke?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtrer {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'viser',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Alle brukere (standard)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Opprett variant',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Opprett variant for {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Som et utkast',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'I en utgivelse',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Eller vis eksisterende varianter',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Avbryt',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumenter',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Utilgjengelig dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Utilgjengelige datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} i et annet dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} i {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopier ID til utklippstavlen',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Dokument-ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': 'Kunne ikke kopiere dokument-ID',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Prosjekt-ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Slett (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Slett ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Det oppstod en feil under forsøket på å slette dette dokumentet. Dette betyr vanligvis at det finnes andre dokumenter som refererer til det.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 annen referanse vises ikke',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} andre referanser vises ikke',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Vi kan ikke vise metadata for disse referansene på grunn av et manglende tilgangstoken for de relaterte datasettene.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Forhåndsvisning utilgjengelig',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument refererer til «<DocumentTitle/>»',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumenter refererer til «<DocumentTitle/>»',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Du kan kanskje ikke slette «<DocumentTitle/>» fordi følgende dokumenter refererer til det:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Slett {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Slett {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varianter',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'versjon',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versjoner',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Opprettet {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Redigert {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Sist publisert',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Ikke publisert',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publisert {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Revisjon fra <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revisjon ikke funnet',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Endringene dine lagres fortsatt.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Lagring tar lengre tid enn forventet',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokumentet ble åpnet med en tom verdi. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Kunne ikke hente startverdi',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Dokumenttypen "{{type}}" ble ikke funnet',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Kan ikke utføre denne handlingen',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -436,13 +718,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Bli med i vårt community',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Siste versjon er {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrer studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App ID',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Last inn på nytt for å oppdatere til v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versjon {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjelp og ressurser',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Siste versjon',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Innkommende referanser',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Avbryt',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Standard',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Last opp',
   /** Uploading <FileName/> */
@@ -462,12 +761,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Legg til...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopier',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Dra for å endre rekkefølge',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Dupliser',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Rediger {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Maksimalt antall elementer nådd',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Fjern',
   /** Label for removing action when an array item has an error  */
@@ -516,14 +819,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Finner startverdi…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Deaktivert',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Velg en dato i fremtiden.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'f.eks. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Åpne filinnstillingsmeny',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Bla gjennom',
-  /** Select file */
-  'inputs.file.dialog.title': 'Velg fil',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Ukjent medlemstype: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -533,12 +834,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Nullstill verdi',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ugyldig filverdi',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Velg',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Opplastingen kunne ikke fullføres akkurat nå.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Opplasting mislykkes',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privat mediefil',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN-tilgang begrenset til signerte URL-er',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Tøm felt',
   /** Copy URL */
@@ -548,6 +851,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'URL-en er kopiert til utklippstavlen',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Åpne i {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Erstatt',
   /** Upload */
@@ -586,6 +891,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Slipp for å laste opp bilde',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Skrivebeskyttet',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Last opp filer til:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Kan ikke laste opp filer her',
   /** Clear upload */
@@ -595,20 +902,23 @@ export default removeUndefinedLocaleResources({
     'En opplasting har ikke gjort fremskritt på minst {{staleThresholdMinutes}} minutter og ble sannsynligvis avbrutt. Du kan trygt fjerne den ufullstendige opplastingen og prøve å laste opp på nytt.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ufullstendig opplasting',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Velg fil for «{{targetTitle}}»',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Beskjær bilde',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Åpne bilderedigeringsdialog',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Åpne bildeinnstillingsmeny',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Velg',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Kan ikke laste opp denne filen her',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Slipp bilde for å laste opp',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Dette feltet er skrivebeskyttet',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kunne ikke laste bilde. Dette kan skyldes tilgangsbegrensninger.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ukjent medlemstype: {{kind}}',
   /** Edit hotspot and crop */
@@ -622,6 +932,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ugyldig bildeverdi',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Forhåndsvisning av opplastet bilde',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Velg bilde for «{{targetTitle}}»',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description':
     'Opplastingen kunne ikke fullføres på dette tidspunktet.',
@@ -634,6 +946,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Feil: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Fokuspunkt & beskjæring',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Bildetjenesten støtter ikke hotspot og beskjæring for vektorformater. For å bruke disse funksjonene, sørg for at dette bildet blir levert i et av de støttede rasterformatene. For eksempel: <code>fm=jpg</code> i <ImageUrlDocumentationLink>bilde-URL-en</ImageUrlDocumentationLink>, eller kall <code>.format('png')</code> med <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Se utviklerinfo',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Advarsel: Hotspot og beskjæring blir potensielt ikke brukt der dette bildet blir presentert.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Konverter til <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -661,9 +981,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Alle felt',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Feltgrupper',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'feil',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'info',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'advarsel',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Dette feltet er markert som <strong>skrivebeskyttet</strong> i skjemadefinisjonen, og kan ikke bli nullstillt. Hvis du ønsker å kunne fjerne verdien i studioet, må <code>readOnly</code> innstillingen fjernes eller settes til <code>false</code> i feltdefinisjonen.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Kan ikke laste forhåndsvisning for referanse "{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Fjern felt',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -857,8 +1186,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Sitat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Legg til kolonne på slutten',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Legg til rad på slutten',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Kolonnehåndtak',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Slett kolonne',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Slett rad',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Slett tabell',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Overskriftsrad',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Sett inn her',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Tabellalternativer',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Radhåndtak',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Velg tabell',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Tøm',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopier',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Opprett ny',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -913,6 +1266,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Tøm',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Referansesøk mislyktes',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    'Det refererte dokumentet er av ugyldig type ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Forhåndsvisning av referert dokument',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -977,6 +1333,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Avvik i referansestyrke',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Gjør om til svak referanse',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Tøm',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generer',
   /** Loading message for when the input is actively generating a slug */
@@ -1006,6 +1364,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Verdi mangler <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Fjern verdi',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Velg video for «{{targetTitle}}»',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1051,8 +1411,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Utilstrekkelig tilgang',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Økten din er ikke lenger gyldig. Vennligst logg inn på nytt.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Økten din har utløpt. Vennligst logg inn på nytt.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Du har blitt logget ut',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Uforventet feil: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Nettleseren din bruker et utdatert HTTP-protokoll for å kommunisere med Sanity. Dette kan føre til betydelig redusert ytelse.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Les mer',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ikke vis igjen for denne økten',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Du har bremsene på',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Opprett',
@@ -1081,12 +1458,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Opprett nytt dokument',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Last siden på nytt',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio ble oppdatert',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Administrer medlemmer',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Hvem er her',
@@ -1106,8 +1483,267 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Bildet blir lastet opp',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'akkurat nå',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Legg til i utgivelse',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Legg til i {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Dokumentet finnes allerede i utgivelsen',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Allerede i utgivelse {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopier versjon til',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Ny utgivelse',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Kunne ikke opprette versjon',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Slett tidsplan',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Forkast versjon',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Klarte ikke å forkaste versjon',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Rediger tidsplan',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Ny utgivelse',
+  'release.action.new-release.limit-reached_other':
+    'Dette arbeidsområdet er begrenset til {{count}} utgivelser',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Du har ikke tillatelse til å utføre denne handlingen',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Publiser nå',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Vennligst prøv igjen eller sjekk tilkoblingen din. Dokumentet vil fortsatt være upublisert ved utgivelse.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Klarte ikke å tilbakestille fra å sette til upublisering ved utgivelse.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Du kan nå redigere denne versjonen.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Vellykket tilbakestilling fra å sette til upublisering ved utgivelse.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Planlegg publisering',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Klarte ikke å sette versjonen til å være upublisert på utgivelsen',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Vellykket satt <strong>{{title}}</strong> til å være upublisert på utgivelsen',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Vis utgivelse',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Vis planlagte utkast',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Planlagt for publisering den {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variant',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varianter',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} versjon',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} versjoner',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Utkast',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Utkast',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Publisert',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Denne utgivelsen er arkivert og kan ikke redigeres.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Opprettet {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Dette dokumentet er i live redigeringsmodus, utkast er deaktivert',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Redigert {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Ment for {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Ingen redigeringer',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Ikke publisert',
+  'release.chip.tooltip.other-variants_one': 'Én variant',
+  'release.chip.tooltip.other-variants_other': '{{count}} varianter',
+  'release.chip.tooltip.other-versions_one': 'Én ekstra versjon utenfor utgivelser',
+  'release.chip.tooltip.other-versions_other': '{{count}} ekstra versjoner utenfor utgivelser',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Publisert {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Planlagt for {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Ukjent dato',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Denne utgivelsen har blitt slettet',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopier versjon til ny utgivelse',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Opprett utgivelse',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Ny utgivelse',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Slette dette planlagte utkastet? Utkastet ditt er allerede oppdatert.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Slette dette planlagte utkastet? Endringene dine vil bli lagret til utkast.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Slette dette planlagte utkastet?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Ja, slett planlegging',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Behold mine planlagte endringer ved å kopiere dem til utkast (anbefales)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Ditt planlagte utkast har forskjellige endringer enn ditt nåværende utkast.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Slett planlagt utkast',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Velg en ny dato og tid for den planlagte publiseringen.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Oppdater planlegging',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Endre planlegging',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Er du sikker på at du vil publisere dette planlagte utkastet umiddelbart?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Ja, publiser nå',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Publiser utkast nå',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Den tiltenkte utgivelsestiden brukes til å lage bedre forhåndsvisninger og hint om hvorvidt dokumenter er i konflikt.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Du kan alltid endre det senere.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Omtrentlig tidspunkt for utgivelse',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Beskriv utgivelsen…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Skjul utgivelse',
+  /** Label for the release menu */
+  'release.menu.label': 'Meny for utgivelse',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Vis planlagte utkast',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Handlinger',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Vis innholdsutgivelser',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Utkast',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Publisert',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Utgivelser',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Utgivelse uten tittel',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': 'Planlegg for en fremtidig tid og dato.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Publiseringsdato',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Denne utgivelsen har blitt løsnet',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "Utgivelsen '{{title}}' ble arkivert",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Klarte ikke å opprette utgivelse',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Kunne ikke slette det planlagte utkastdokumentet <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt slettet.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "Utgivelsen '{{title}}' kunne ikke bli funnet",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Kunne ikke pause det planlagte utkastet <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Kunne ikke publisere det planlagte utkastdokumentet <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt publisert.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Denne utgivelsen har blitt løsnet',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "Utgivelsen '{{title}}' ble publisert",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Kunne ikke planlegge det planlagte utkastdokumentet <strong>{{title}}</strong> på nytt: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt planlagt på nytt.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Kunne ikke planlegge utkast: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Utkast planlagt',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Det planlagte utkastet ble publisert',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'En versjon av dette dokumentet har allerede blitt lagt til',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Denne utgivelsen har blitt planlagt. Avplanlegg den for å legge til flere dokumenter.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Så snart som mulig',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Til angitt tid',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Ubestemt',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Se alle dokumentversjoner',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Kontakt kundestøtte',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Konfigurasjonsproblem med innholdsutgivelser',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Innholdsutgivelser er aktivert for prosjektet ditt, men det ser ut til å være et konfigurasjonsproblem med grensene for utgivelsene dine. Vennligst kontakt kundestøtte for å få innholdsutgivelsene dine riktig konfigurert.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Planlegg',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Velg når dette dokumentet skal publiseres.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Planlegg utkast for publisering',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Planlagt publisering',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Åpne søk',
@@ -1297,37 +1933,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>har</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>har</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-equal.name': 'antall er',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>har ></Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-gt.name': 'antall større enn',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>har ≥</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-gte.name': 'antall større enn eller lik',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>har <</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-lt.name': 'antall mindre enn',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>har ≤</Operator> <Value>{{count}} elementer</Value>',
   'search.operator.array-count-lte.name': 'antall mindre enn eller lik',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>antall er ikke</Operator> <Value>{{count}} element</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1340,35 +1970,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>har mellom</Operator> <Value>{{from}} → {{to}} elementer</Value>',
   'search.operator.array-count-range.name': 'antall er mellom',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inneholder',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'inneholder ikke',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inneholder',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'inneholder ikke',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'er',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'er ikke',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'er',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'er ikke',
@@ -1381,160 +2003,120 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'er',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>er etter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'etter',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>er før</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'før',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'er',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>er innenfor siste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'siste',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'er ikke',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>er mellom</Operator> <Value/>',
   'search.operator.date-range.name': 'er mellom',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>er etter</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'etter',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>er før</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'før',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'er',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>er innenfor siste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'siste',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'er ikke',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>er mellom</Operator> <Value/>',
   'search.operator.date-time-range.name': 'er mellom',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>er</Operator> <Value>definert</Value>',
   'search.operator.defined.name': 'er definert',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>er</Operator> <Value>ikke definert</Value>',
   'search.operator.not-defined.name': 'ikke definert',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'er',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'større enn',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'større enn eller lik',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'mindre enn',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'mindre enn eller lik',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'er ikke',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>er mellom</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'er mellom',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'inneholder',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'er',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'inneholder ikke',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'er ikke',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fil',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'bilde',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'er',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'er ikke',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'inneholder',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'er',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'inneholder ikke',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'er ikke',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>inneholder</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'inneholder',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'er',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'er',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'er ikke',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>inneholder ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'inneholder ikke',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>er ikke</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'er ikke',
@@ -1557,23 +2139,39 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Søkeresultater',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Rediger kolonner',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Fjern fra tabell',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Tilbakestill kolonner',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Velg opptil 5 felttyper',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Søk etter en by eller tidssone',
+  'time-zone.action.select-local-time-zone': 'Velg lokal tidssone',
+  'time-zone.dialog-info.content-releases':
+    'Den valgte tidssonen vil endre hvordan datoer representeres i innholdslanseringer.',
+  'time-zone.dialog-info.input':
+    'Den valgte tidssonen vil endre hvordan datoer representeres kun for dette inndatafeltet i dette dokumentet.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Den valgte tidssonen vil endre hvordan datoer representeres i planlagte publiseringer.',
+  'time-zone.local-time': 'lokal tid',
+  'time-zone.time-zone': 'Tidssone',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Viser utgivelser i {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Viser <em>{{title}}</em> i {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Viser planlagte publiseringer i {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Endringer av',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': 'Historikk har ikke blitt påvirket.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'En feil oppstod under henting av dokumentendringer.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Aktiver events API gjennom Studio-konfigurasjonen for å se dokumenthistorikk.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Historikk for versjonsdokumenter er kun tilgjengelig gjennom Events API.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Når du endrer innholdet i dokumentet, vil dokumentversjonene vises i denne menyen.',
@@ -1594,6 +2192,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentrevisjoner',
   /** Label for loading history */
   'timeline.loading-history': 'Laster historikk…',
+  'timeline.no-previous-events': 'Ingen tidligere hendelser',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Opprettet',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1606,6 +2205,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Slettet',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Slettet: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Utkast opprettet',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Utkast opprettet: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Forkastet utkast',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1618,6 +2221,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Redigert live',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Redigert live: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Slettet av oppbevaringspolicy',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Publisert',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1626,6 +2231,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Avpublisert',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Avpublisert: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versjon opprettet',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versjon opprettet: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versjon forkastet',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versjon forkastet: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1700,6 +2313,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Åpne meny',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentendringer',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Foreslåtte endringer',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1712,6 +2330,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Velg et annet arbeidsområde',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Bytt arbeidsområde',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Velg ditt arbeidsområde',
   /** Label for the workspace menu */

@@ -1,6 +1,74 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Konfigurációs probléma észlelve',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Az automatikus frissítések engedélyezve vannak, de nincs <code>deployment.appId</code> konfigurálva a <code>sanity.cli.ts</code>-ben. Ez a Stúdió a <strong>legújabb</strong>-csatorna ellen frissül.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Dokumentáció megtekintése',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Letiltva',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Engedélyezve',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Automatikus frissítések',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Hogyan engedélyezhető',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Verzió kezelése',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Vágólapra másolva. Boldog beillesztést!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Másolás vágólapra',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Jelenlegi verzió',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Hogyan frissíthető',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Legújabb verzió',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Új verzió elérhető',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Új verzió',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Újratöltés',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Stúdió újratöltése a frissítéshez',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Fejlesztés',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Új verzió elérhető',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Előzetes kiadás',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Naprakész',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Naprakész',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Frissítés',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip':
+    'Tudj meg többet a Sanity Studio frissítéséről',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Felhasználói ügynök',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Megtekintés a GitHubon',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Bezárás',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Párbeszédablak bezárása',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Bezárás',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Bejelentések elutasítása',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Bejelentések megnyitása',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Törlés',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +79,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Képet használó dokumentumok',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Betöltés…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Kiválasztás',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Mégse',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +120,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Csak elfogadott típusú eszközök jelennek meg: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Mégse',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Kiválaszt',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Fájl kiválasztása',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Kép kiválasztása',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Hiba történt az eszköz beillesztésekor. További információkért nézze meg a konzolt.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Nem sikerült betölteni az eszközöket',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Több betöltése',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Nincsenek fájlok',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Nincsenek képek',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Nem lehet törölni a jelenleg kiválasztott fájlt',
@@ -81,6 +160,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'A képet törölték',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Feltöltött képek',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Egy dokumentum használja a(z) <code>{{filename}}</code> fájlt',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -110,6 +190,42 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Egyetlen dokumentum sem használja ezt a képet',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description':
+    'További információkért nézze meg a konzolt.',
+  'asset-sources.common.uploader.upload-failed.title': 'Feltöltés sikertelen',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Munkaterület fájlok',
+  'asset-sources.dataset.image.title': 'Munkaterület képek',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Valami hiba történt a Média Könyvtár projektben való feloldásakor.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Ehhez a szervezethez nem lett média könyvtár létrehozva.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Média Könyvtár',
+  'asset-sources.media-library.image.title': 'Média Könyvtár',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Kész',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Új eszköz kiválasztása a(z) „{{targetTitle}}” számára',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Új eszköz kiválasztása',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Eszköz szerkesztése',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Feltöltés a Media Library-ba',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'A könyvtárban talált meglévő fájl használata.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Fájl: '{{filename}}' már létezik",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "A(z) '<strong>{{title}}</strong>' kiadás törölve lett.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ugrás a következő hónapra',
   /** Action message for navigating to next year */
@@ -118,24 +234,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Ugrás az előző hónapra',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Ugrás az előző évre',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Ma',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Ugrás a mai napra',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Holnap',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Tegnap',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Idő hozzáadása',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Óra kiválasztása',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Perc kiválasztása',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Időpont kiválasztása',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Beállítás az aktuális időre',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} ekkor: {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Naptár megnyitása',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Dátum kiválasztása',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'A formátumnak így kell kinéznie: {{exampleDate}}',
   /** Month name for April */
@@ -217,6 +331,9 @@ export default removeUndefinedLocaleResources({
     'További információkért ellenőrizze a fejlesztői konzolt',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Hiba történt a mező változásainak megjelenítésekor',
+  'changes.error-description': 'Nem sikerült betölteni a dokumentum változásait.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Valami hiba történt',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Érték hiba: Az érték típusa "<code>{{actualType}}</code>", a várt típus: "<code>{{expectedType}}</code>"',
@@ -246,11 +363,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Betöltés…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Változások betöltése…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nem találjuk a dokumentum revízióját azonosítóval: <code>{{revisionId}}</code>, amit össze szeretne hasonlítani. <Break/> Ez valószínűleg a tervek történetmegőrzési szabályzata miatt van. <Break/> Kérjük, válasszon egy másik <strong>Kezdő</strong> bejegyzést.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Szerkessze a dokumentumot vagy válasszon egy régebbi verziót az idővonalon, hogy megjelenjen a változások listája ebben a panelben.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nincsenek változások',
+  'changes.not-selectable': 'Ezt az eseményt nem lehet kiválasztani',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Megjegyzés hozzáadva',
   /** Portable Text diff: An annotation was changed */
@@ -292,8 +413,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Ismeretlen sématípus',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Eltávolítva',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Ugyanazt a <strong>from</strong> és <strong>to</strong> revíziót választotta ki, kérjük, válasszon különböző revíziókat a közöttük lévő változások összehasonlításához.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Ugyanaz a revízió lett kiválasztva',
   /** Title for the Review Changes pane */
   'changes.title': 'Változások áttekintése',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Ez a mező nincs definiálva a sémában. Az értékek JSON formátumban jelennek meg.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Vázlat',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -304,12 +435,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Megerősít',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Betöltés',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Kapcsolódás kísérlete…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Konfigurációs problémák',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Konfigurációs problémák találhatók',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Rendezés {{title}} szerint',
@@ -329,12 +465,162 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Cím szerinti rendezés',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Bezárás',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Figyelmen kívül hagyás',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Következő',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Előző',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Másolás az alapból',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'megváltozott',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} a {{versionName}} verzióban',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Feloldatlan változás a {{versionName}} verzióban',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} feloldatlan változás a {{versionName}} verzióban',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Mégse',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Mennyire könnyű vagy nehéz az új verziókönyvtárat használni?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}} szűrése',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'megtekintés alatt',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Minden felhasználó (Alapértelmezett)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Variáns létrehozása',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target':
+    'Variáns létrehozása ehhez: {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Piszkozatként',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Kiadásba',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Vagy meglévő variánsok megtekintése',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Mégse',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokumentum',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumentum',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasetek: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Nem elérhető dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Nem elérhető datasetek',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} egy másik datasetben',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} {{count}} datasetben',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Azonosító másolása a vágólapra',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Dokumentum azonosító',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'A dokumentum azonosító másolása sikertelen',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Projekt azonosító',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Törlés (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Törlés ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Hiba történt a dokumentum törlésének kísérlete során. Ez általában azt jelenti, hogy más dokumentumok hivatkoznak rá.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 másik hivatkozás nem jelenik meg',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} másik hivatkozás nem jelenik meg',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Ezekhez a hivatkozásokhoz nem tudjuk megjeleníteni a metaadatokat, mert hiányzik a hozzáférési token a kapcsolódó dataset-ekhez.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'Azonosító: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Az előnézet nem érhető el',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokumentum hivatkozik a(z) „<DocumentTitle/>" elemre',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumentum hivatkozik a(z) „<DocumentTitle/>" elemre',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Előfordulhat, hogy nem tudja törölni a(z) „<DocumentTitle/>" elemet, mert a következő dokumentumok hivatkoznak rá:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': '{{count}} {{subject}} törlése',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} {{subject}} törlése',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'változat',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'változat',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'verzió',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'verzió',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Létrehozva {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Szerkesztve {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Utoljára közzétéve',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Nem publikált',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publikálva {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Felülvizsgálat ekkortól: <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'A revízió nem található',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'A módosítások mentése még folyamatban van.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'A mentés a vártnál tovább tart',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'A dokumentum üres értékkel nyílt meg. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'A kezdeti érték nem oldható fel',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'A "{{type}}" típusú dokumentum nem található',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Nem lehet végrehajtani ezt a műveletet',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -388,13 +674,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Nem található tömbelem `_key`-vel: <code>"{{key}}"</code> a következő útvonalon: <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'Call Stack:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Komponens Stack:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Hiba: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'Kezeletlen futásidejű hiba',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'elavult',
   /** Fallback title shown above field if it has no defined title */
@@ -435,13 +721,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Csatlakozás a közösségünkhöz',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'A legújabb verzió {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Stúdió regisztrálása',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Alkalmazás azonosító',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Újratöltés a v{{newVersion}} frissítéséhez',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio verzió {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Segítség és erőforrások',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Naprakész',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Bejövő hivatkozások',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Feltöltés megszakítása',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Alapértelmezett',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Feltöltés',
   /** Uploading <FileName/> */
@@ -461,12 +764,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Elem hozzáadása...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Másolás',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Húzza az átrendezéshez',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Másolat készítése',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}} szerkesztése',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Elérte az elemek maximális számát',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Eltávolítás',
   /** Label for removing action when an array item has an error  */
@@ -498,15 +805,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'Váratlan hiba: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Összes',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Nincs találat',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Keresés',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Rácsnézet váltása',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Listanézet váltása',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'Nincsenek elemek',
   /** Label for read only array fields */
@@ -514,15 +821,13 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Kezdeti érték megoldása…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Letiltva',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Válasszon egy jövőbeli dátumot.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'pl. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Fájlopciók menü megnyitása',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Tallózás',
-  /** Select file */
-  'inputs.file.dialog.title': 'Fájl kiválasztása',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Ismeretlen tagtípus: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -532,12 +837,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Érték alaphelyzetbe állítása',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Érvénytelen fájlérték',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Kiválasztás',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'A feltöltés jelenleg nem hajtható végre.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'A feltöltés sikertelen',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privát eszköz',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN hozzáférés korlátozva aláírt URL-ekre',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Mező törlése',
   /** Copy URL */
@@ -546,6 +853,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Letöltés',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'Az URL vágólapra másolva',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Megnyitás itt: {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Csere',
   /** Upload */
@@ -586,6 +895,9 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Dobja ide a képet a feltöltéshez',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Csak olvasható',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Fájlok feltöltése ide:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Fájlok feltöltése nem támogatott',
   /** Clear upload */
@@ -595,20 +907,23 @@ export default removeUndefinedLocaleResources({
     'Egy feltöltés legalább {{staleThresholdMinutes}} perce nem haladt előre és valószínűleg megszakadt. Biztonságosan törölheti a befejezetlen feltöltést és újra megpróbálhatja feltölteni.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Befejezetlen feltöltés',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Fájl kiválasztása a következőhöz: „{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Kép vágása',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Képszerkesztő párbeszédablak megnyitása',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Képbeállítások menüjének megnyitása',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Kiválasztás',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Itt nem lehet feltölteni ezt a fájlt',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Dobja ide a képet a feltöltéshez',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Ez a mező csak olvasható',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nem sikerült betölteni a képet. Ez hozzáférési korlátozások miatt lehet.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ismeretlen tagtípus: {{kind}}',
   /** Edit hotspot and crop */
@@ -622,6 +937,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Érvénytelen képérték',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Feltöltött kép előnézete',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Kép kiválasztása a következőhöz: „{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'A feltöltés jelenleg nem fejezhető be.',
   /** Upload failed */
@@ -633,6 +950,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Hiba: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Vágás',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Az Asset Pipeline nem támogatja a hotspot és a crop funkciókat vektor formátumokhoz. A hotspot & crop engedélyezéséhez jelenítse meg ezt a képet bármelyik támogatott raszter formátumban. Például: <code>fm=jpg</code> az <ImageUrlDocumentationLink>kép URL-jéhez</ImageUrlDocumentationLink> vagy hívja meg a <code>.format('png')</code> funkciót a <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink> használatával.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Fejlesztői információ megtekintése',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Figyelmeztetés: A hotspot és a crop nem biztos, hogy alkalmazva lesz erre a képre, ahol megjelenik.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Átalakítás erre: {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -657,12 +982,21 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Érvénytelen tulajdonságérték',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Összes mező',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Mezőcsoportok',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'hiba',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'információ',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'figyelmeztetés',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Ez a mező <strong>csak olvasható</strong> a dokumentum sémája szerint és nem távolítható el. Ha szeretnéd, hogy ezt a Studioban el lehessen távolítani, győződj meg róla, hogy eltávolítod a <code>readOnly</code> mezőt a séma beágyazott típusából.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nem sikerült betölteni az előnézetet a következő hivatkozáshoz: „{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Mező eltávolítása',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -858,8 +1192,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normál',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Idézet',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Oszlop hozzáadása a végéhez',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Sor hozzáadása a végéhez',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Oszlop fogantyú',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Oszlop törlése',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Sor törlése',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Táblázat törlése',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Fejlécsor',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Beszúrás ide',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Táblázat beállításai',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Sor fogantyú',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Táblázat kijelölése',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Törlés',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Másolás',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Létrehozás',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -915,6 +1273,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Törlés',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'A hivatkozás keresése sikertelen',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    'A hivatkozott dokumentum érvénytelen típusú ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'A hivatkozott dokumentum kép előnézete',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -981,6 +1342,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Hivatkozás erősségének eltérése',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Átalakítás gyenge hivatkozássá',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Törlés',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generálás',
   /** Loading message for when the input is actively generating a slug */
@@ -1011,6 +1374,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Hiányzó tulajdonságérték <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Érték törlése',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Videó kiválasztása a következőhöz: „{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1031,7 +1396,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'Nincs jogosultságod ezt a dokumentumot törölni.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'Nincs jogosultságod az ütemezések törlésére.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Nincs jogosultságod a változtatások elvetésére ebben a dokumentumban.',
@@ -1039,9 +1405,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'Nincs jogosultságod ezt a dokumentumot duplikálni.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'Nincs jogosultságod az ütemezések szerkesztésére.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'Nincs jogosultságod az ütemezések végrehajtására.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Nincs jogosultságod ezt a dokumentumot közzétenni.',
@@ -1053,8 +1421,26 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nem megfelelő jogosultságok',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'A munkamenete már nem érvényes. Kérjük, jelentkezzen be újra.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'A munkamenete lejárt. Kérjük, jelentkezzen be újra.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Kijelentkezett',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Váratlan hiba: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'A böngészője elavult HTTP protokollt használ a Sanityvel való kommunikációhoz. Ez jelentősen csökkentheti a teljesítményt.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Tudjon meg többet',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text':
+    'Ne jelenjen meg újra ebben a munkamenetben',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Fékezve halad',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Létrehozás',
@@ -1083,12 +1469,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Új dokumentum létrehozása',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Push to reload'
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio is ready to update!'
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
+  'package-version.new-package-available.reload-button': 'Frissítéshez nyomd meg',
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
+  'package-version.new-package-available.title': 'A Sanity Studio készen áll a frissítésre!',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Tagok kezelése',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Ki van itt',
@@ -1109,8 +1495,268 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'A kép jelenleg feltöltés alatt áll',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'épp most',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Hozzáadás a kiadáshoz',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Hozzáadás a(z) {{title}} kiadáshoz',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'A dokumentum már szerepel a kiadásban',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Már hozzáadva a(z) {{title}} kiadáshoz',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Verzió másolása ide',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Új kiadás',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'A verzió létrehozása sikertelen',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Ütemezés törlése',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Verzió elvetése',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Nem sikerült a verziót elvetni',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Ütemezés szerkesztése',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Új Kiadás',
+  'release.action.new-release.limit-reached_other':
+    'Ez a munkaterület korlátozva van {{count}} kiadásra',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Nincs jogosultsága ezt a műveletet végrehajtani',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Közzététel most',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Kérjük, próbálja újra vagy ellenőrizze a kapcsolatot. A dokumentum továbbra is közzétételre kerül a kiadásnál.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Nem sikerült visszavonni a közzététel beállítását a kiadásnál.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Most már szerkesztheti ezt a verziót.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Sikeresen visszavonva a közzététel beállítása a kiadásnál.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Közzététel ütemezése',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Nem sikerült beállítani a verziót közzétételre váró állapotba a kiadásban',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Sikeresen beállítva a(z) <strong>{{title}}</strong> verzió közzétételre váró állapotba a kiadásban',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Kiadás megtekintése',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Ütemezett vázlatok megtekintése',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Közzétételre ütemezve erre a dátumra: {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} változat',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} változat',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} verzió',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} verziók',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Vázlat',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Piszkozatok',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Közzétéve',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Ez a kiadás archiválva lett és nem szerkeszthető.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Létrehozva {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Ez a dokumentum élő szerkesztési módban van, a piszkozatok le vannak tiltva',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Szerkesztve {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Tervezett dátum: {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Nincsenek szerkesztések',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Nincs közzétéve',
+  'release.chip.tooltip.other-variants_one': 'Egy változat',
+  'release.chip.tooltip.other-variants_other': '{{count}} változat',
+  'release.chip.tooltip.other-versions_one': 'Egy további verzió a kiadásokon kívül',
+  'release.chip.tooltip.other-versions_other': '{{count}} további verziók a kiadásokon kívül',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Közzétéve {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Ütemezett dátum: {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Ismeretlen dátum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Ez a kiadás törölve lett',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Verzió másolása új kiadásba',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Kiadás létrehozása',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Új kiadás',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Töröljük ezt az ütemezett vázlatot? A vázlatod már naprakész.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Töröljük ezt az ütemezett vázlatot? A változások mentésre kerülnek a vázlatba.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Töröljük ezt az ütemezett vázlatot?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Igen, ütemezés törlése',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Megtartom az ütemezett változásaimat azzal, hogy másolom őket a vázlatba (ajánlott)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Az ütemezett vázlatod különböző változásokat tartalmaz, mint a jelenlegi vázlatod.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Ütemezett vázlat törlése',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Válasszon új dátumot és időpontot az ütemezett közzétételhez.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Ütemezés frissítése',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Ütemezés megváltoztatása',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Biztosan azonnal közzé szeretné tenni ezt az ütemezett vázlatot?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Igen, futtatás most',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Vázlat közzététele most',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'A tervezett kiadási időt arra használjuk, hogy jobb előnézeteket és utalásokat készítsünk arról, hogy a dokumentumok ütköznek-e.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Később mindig megváltoztathatja.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'A kiadás körülbelüli ideje',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Írja le a kiadást...',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Kiadás elrejtése',
+  /** Label for the release menu */
+  'release.menu.label': 'Kiadás menü',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Ütemezett vázlatok megtekintése',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Műveletek',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Tartalomkiadások megtekintése',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Piszkozatok',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Közzétéve',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Kiadások',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Cím nélküli kiadás',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': 'Jövőbeli időpontra és dátumra ütemezze.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Közzététel ekkor',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Ez a kiadás le lett választva',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "Az '{{title}}' kiadás archiválva lett",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'A kiadás létrehozása sikertelen',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Nem sikerült törölni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> törölve lett.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "A(z) '{{title}}' kiadás nem található",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nem sikerült szüneteltetni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Nem sikerült közzétenni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> közzétéve lett.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Ez a kiadás le lett választva',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "A(z) '{{title}}' kiadás közzétéve lett",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nem sikerült újraütemezni az ütemezett vázlatdokumentumot <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Az ütemezett vázlatdokumentum <strong>{{title}}</strong> újraütemezve lett.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nem sikerült ütemezni a vázlatot: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'A vázlat ütemezése sikeresen megtörtént',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Az ütemezett vázlat közzététele megtörtént',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'E dokumentum egy verziója már hozzá lett adva',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Ez a kiadás ütemezve lett. Törölje az ütemezést, hogy több dokumentumot adhasson hozzá.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'ASAP',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Meghatározott időpontban',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Döntetlen',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Az összes dokumentumverzió megtekintése',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Kapcsolatfelvétel a támogatással',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'A tartalomkiadások konfigurációs problémája',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'A tartalomkiadások engedélyezve vannak a projektedhez, de úgy tűnik, hogy konfigurációs probléma van a kiadási korlátaiddal. Kérjük, lépj kapcsolatba a támogatással, hogy a tartalomkiadásaid megfelelően legyenek konfigurálva.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Ütemezés',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Válassza ki, mikor legyen közzétéve ez a dokumentum.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Tervezett vázlat közzététele',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Tervezett közzététel',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Keresés megnyitása',
@@ -1289,37 +1935,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>van</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>van</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-equal.name': 'mennyiség az',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>van ></Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>van ></Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gt.name': 'mennyiség több mint',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>van ≥</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>van ≥</Operator> <Value>{{count}} elem</Value>',
   'search.operator.array-count-gte.name': 'mennyiség több vagy egyenlő',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator><</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator><</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lt.name': 'mennyiség kevesebb mint',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>≤</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>≤</Operator> <Value>{{count}} elemet tartalmaz</Value>',
   'search.operator.array-count-lte.name': 'mennyiség kevesebb vagy egyenlő',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{count}} elemet</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1332,35 +1972,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>van között</Operator> <Value>{{from}} → {{to}} elem</Value>',
   'search.operator.array-count-range.name': 'mennyiség között van',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>tartalmaz</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'tartalmaz',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>nem tartalmaz</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'nem tartalmaz',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>tartalmaz</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'tartalmaz',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'nem tartalmazza',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'az',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>nem az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'nem az',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'az',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>nem az</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'nem az',
@@ -1373,162 +2005,122 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'az',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>utána van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'utána van',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>előtte van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'előtte van',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'az',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>az utolsóban van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'az utolsóban van',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>nem az</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'nem az',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>között van</Operator> <Value/>',
   'search.operator.date-range.name': 'között van',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>utána van</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'után',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>korábbi, mint</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'előtt',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>ez</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'ez',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>az utolsó</Operator> <Value>{{value}}</Value> időszakban van',
   'search.operator.date-time-last.name': 'utolsó',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'nem',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>között van</Operator> <Value/>',
   'search.operator.date-time-range.name': 'között van',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>van</Operator> <Value>nem üres</Value>',
   'search.operator.defined.name': 'nem üres',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>van</Operator> <Value>üres</Value>',
   'search.operator.not-defined.name': 'üres',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>ez</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'ez',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'nagyobb, mint',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'nagyobb vagy egyenlő',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'kisebb, mint',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'kisebb vagy egyenlő',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'nem',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>között van</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'között van',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'tartalmazza',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'az',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'nem tartalmazza',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'nem',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'fájl',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'kép',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokumentum',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'az',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'nem',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'tartalmazza',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'az',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'nem tartalmazza',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'nem',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'tartalmazza',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'az',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>az</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'az',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'nem',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>nem tartalmazza</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'nem tartalmazza',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>nem</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'nem',
@@ -1551,24 +2143,40 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Keresési eredmények',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguráció állapota',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Keressen várost vagy időzónát',
+  'time-zone.action.select-local-time-zone': 'Válassza ki a helyi időzónát',
+  'time-zone.dialog-info.content-releases':
+    'A kiválasztott időzóna megváltoztatja, hogy hogyan jelennek meg a dátumok a tartalomkiadásokban.',
+  'time-zone.dialog-info.input':
+    'A kiválasztott időzóna csak ennek a bevitelnek a dátumait változtatja meg ebben a dokumentumban.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'A kiválasztott időzóna megváltoztatja, hogy hogyan jelennek meg a dátumok az ütemezésekben.',
+  'time-zone.local-time': 'helyi idő',
+  'time-zone.time-zone': 'Időzóna',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Kiadások megjelenítése {{alternativeName}} GMT{{offset}} szerint',
+  'time-zone.time-zone-tooltip-input':
+    '<em>{{title}}</em> megjelenítése {{alternativeName}} GMT{{offset}} szerint',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Ütemezések megjelenítése {{alternativeName}} GMT{{offset}} szerint',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Változtatások szerzője',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'A dokumentum előzmény tranzakciói nem érintettek.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Hiba történt a dokumentum változásainak lekérése közben.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Engedélyezze az események API-ját a Studio konfigurációban a dokumentumtörténet megtekintéséhez.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'A verziódokumentumok története csak az Események API-ján keresztül érhető el.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'A dokumentum tartalmának megváltoztatásakor a dokumentum verziói megjelennek ebben a menüben.',
@@ -1579,7 +2187,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'Legújabb',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Legújabb verzió',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1589,6 +2197,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Dokumentum revíziók',
   /** Label for loading history */
   'timeline.loading-history': 'Előzmények betöltése…',
+  'timeline.no-previous-events': 'Nincsenek korábbi események',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Létrehozva',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1601,6 +2210,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Törölve',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Törölve: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Vázlat létrehozva',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Vázlat létrehozva: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Piszkozat elvetve',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1613,6 +2226,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Élőben szerkesztve',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Élőben szerkesztve: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Törlés visszatartási szabályzat által',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Közzétéve',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1621,6 +2236,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Közzététel visszavonva',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Közzététel visszavonva: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Verzió létrehozva',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Verzió létrehozva: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Verzió elvetve',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Verzió elvetve: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1633,23 +2256,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'Breadcrumb menü',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Keresés',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Keresési menü',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Nincs találat',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Oldalsáv bezárása',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Összecsukás',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Kész',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Kibontás',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Oldalsáv megnyitása',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} nap van hátra a próbaidőből',
@@ -1695,6 +2318,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Menü megnyitása',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agent módosítások',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Javasolt módosítások',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1707,6 +2335,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Válassz másik munkaterületet',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Munkaterület váltása',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Válasszd ki a munkaterületet',
   /** Label for the workspace menu */

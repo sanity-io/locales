@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Kan link niet naar klembord kopiëren',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Link gekopieerd naar klembord',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Na het verwijderen kan een opmerking niet worden hersteld.',
   /** The delete dialog confirm button text for a comment */
@@ -77,10 +74,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Opmerking toevoegen',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'Opmerkingen kunnen niet overlappen',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Voeg opmerking toe',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Er is iets misgegaan bij het laden van de reacties',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Ga naar {{field}} veld',

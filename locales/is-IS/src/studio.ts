@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Uppsetningavandamál greint',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Sjálfvirkar uppfærslur eru virkjaðar, en engin <code>deployment.appId</code> stillt í <code>sanity.cli.ts</code>. Þetta Studio er að uppfæra gegn <strong>latest</strong>-rásinni.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Skoða skjölun',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Óvirkt',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Virkjað',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Sjálfvirkar uppfærslur',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Hvernig á að virkja',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Stjórna útgáfu',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Afritað á klippiborð. Gleðilega límingu!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Afrita á klippiborð',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Núverandi útgáfa',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Hvernig á að uppfæra?',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Nýjasta útgáfa',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Ný útgáfa í boði',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Ný útgáfa',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Endurhlaða',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Endurhlaða Studio til að uppfæra',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Þróun',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Ný útgáfa í boði',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Forskoðun',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Uppfært',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Uppfært',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Uppfæra',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Lærðu hvernig á að uppfæra Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Notandaaðili',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Skoða á GitHub',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Loka',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Loka glugga',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Loka',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Hafna tilkynningum',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Opna tilkynningar',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Eyða',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Skjöl sem nota mynd',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Hleður…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Velja',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Hætta við',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Aðeins sýndar eignir af samþykktum gerðum: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Hætta við',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Velja',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Veldu skrá',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Veldu mynd',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Villa við að setja inn eign. Sjáðu ráskjáinn fyrir frekari upplýsingar.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Tókst ekki að hlaða inn eignum',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Hlaða meira',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Engar skrár',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Engar myndir',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Ekki er hægt að eyða valinni skrá núna',
@@ -69,7 +147,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.file.asset-list.action.show-usage.title': 'Sýna notkun',
   'asset-source.file.asset-list.delete-failed': 'Ekki tókst að eyða skránni',
   'asset-source.file.asset-list.delete-successful': 'Skrá var eytt',
-  'asset-source.file.asset-list.header.date-added': 'Dagsetning bætt við',
+  'asset-source.file.asset-list.header.date-added': 'Dagsetningu bætt við',
   /** File asset source */
   'asset-source.file.asset-list.header.filename': 'Skráarnafn',
   'asset-source.file.asset-list.header.size': 'Stærð',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Mynd var eytt',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Upphlaðnar myndir',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Eitt skjal er að nota skrána <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -107,6 +186,42 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Engin skjöl eru að nota þessa mynd',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description':
+    'Sjáðu ráskjáinn fyrir frekari upplýsingar.',
+  'asset-sources.common.uploader.upload-failed.title': 'Upphleðsla mistókst',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Vinnusvæðisskrár',
+  'asset-sources.dataset.image.title': 'Vinnusvæðismyndir',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Eitthvað fór úrskeiðis við að leysa úr fjölmiðlabókasafninu fyrir þetta verkefni.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Engin miðlasafn hafa verið útveguð fyrir þessa stofnun.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Fjölmiðlabókasafn',
+  'asset-sources.media-library.image.title': 'Fjölmiðlabókasafn',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Lokið',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Veldu nýja eign fyrir „{{targetTitle}}“',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Veldu nýja eign',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Breyta eign',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Hlaða upp í Media Library',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Notaðu til staðar verandi skrá sem fannst í safninu.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Skrá: '{{filename}}' er þegar til",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Útgáfan '<strong>{{title}}</strong>' hefur verið eytt.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Fara í næsta mánuð',
   /** Action message for navigating to next year */
@@ -115,24 +230,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Fara í fyrri mánuð',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Fara í fyrri ár',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Í dag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Fara í dag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Á morgun',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Í gær',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Innifalið tíma',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Veldu klukkustund',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Veldu mínútu',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Veldu tíma',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Stilltu á núverandi tíma',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} á {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Opna dagatal',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Veldu dagsetningu',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format':
     'Verður að vera á sniðinu <Emphasis>{{exampleDate}}</Emphasis>',
@@ -216,6 +329,9 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Athugaðu þróunarvalmyndina fyrir frekari upplýsingar',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Það kom upp villa við að sýna breytingarnar á þessu sviði',
+  'changes.error-description': 'Við getum ekki hlaðið inn breytingunum fyrir þetta skjal.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Eitthvað fór úrskeiðis',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Gildisvilla: Gildið er af gerðinni "<code>{{actualType}}</code>", búist var við "<code>{{expectedType}}</code>"',
@@ -245,11 +361,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Hleður…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Hleður breytingum…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Við gátum ekki fundið skjalsendurskoðunina með auðkenni: <code>{{revisionId}}</code> sem þú ert að reyna að bera saman. <Break/> Þetta er líklega vegna sögubevarandi stefnu áætlunar þinnar. <Break/> Vinsamlegast veldu annan <strong>Frá</strong> færslu.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Breyttu skjalinu eða veldu eldri útgáfu í tímalínunni til að sjá lista yfir breytingar birtast á þessum glugga.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Engar breytingar eru til staðar',
+  'changes.not-selectable': 'Ekki er hægt að velja þennan atburð',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Bætti við skýringu',
   /** Portable Text diff: An annotation was changed */
@@ -291,8 +411,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Óþekkt skema týpa',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Fjarlægt',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Þú hefur valið sömu <strong>frá</strong> og <strong>til</strong> útgáfuna, vinsamlegast veldu mismunandi útgáfur til að bera saman breytingarnar á milli þeirra.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Sama útgáfa valin',
   /** Title for the Review Changes pane */
   'changes.title': 'Endurskoða breytingar',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Þetta svæði er ekki skilgreint í skemanu. Gildi eru sýnd sem JSON.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Drög',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -303,12 +433,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Staðfesta',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Hleður',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Reyni að tengjast…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Stillingarvandamál',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Fundin stillingarvandamál',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Raða eftir {{title}}',
@@ -328,12 +463,159 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Raða eftir Titli',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Loka',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Hunsa',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Næsta',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Fyrra',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Afrita frá grunni',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'breyttist',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} í {{versionName}} útgáfu',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Óleyst breyting í {{versionName}} útgáfu',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} óleystar breytingar í {{versionName}} útgáfu',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Hætta við',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Hversu auðvelt eða erfitt er að nota nýju útgáfubirgðirnar?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Sía {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'skoðar',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Allir notendur (Sjálfgefið)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Búa til afbrigði',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Búa til afbrigði fyrir {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Sem drög',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Í útgáfu',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Eða skoða fyrirliggjandi afbrigði',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Hætta við',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 skjal',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} skjöl',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Óaðgengilegt dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Óaðgengileg datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} í öðru dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} í {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Afrita auðkenni á klippiborð',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Skjalaauðkenni',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Mistókst að afrita skjalaauðkenni',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Verkefnisauðkenni',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Eyða (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Eyða ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Villa kom upp við tilraun til að eyða þessu skjali. Þetta þýðir venjulega að önnur skjöl vísa í það.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 önnur tilvísun ekki sýnd',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} aðrar tilvísanir ekki sýndar',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Við getum ekki birt lýsigögn fyrir þessar tilvísanir vegna þess að aðgangslykill vantar fyrir tengdar datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'Auðkenni: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Forskoðun ekki tiltæk',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one': '1 skjal vísar í „<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} skjöl vísa í „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Þú gætir ekki getað eytt „<DocumentTitle/>" vegna þess að eftirfarandi skjöl vísa í það:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Eyða {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Eyða {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'afbrigði',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'afbrigði',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'útgáfa',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'útgáfur',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Búið til {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Breytt {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Síðast birt',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Óbirt',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Birt {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Endurskoðun frá <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Útgáfa fannst ekki',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Breytingar þínar eru enn að vera vistaðar.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Vistun tekur lengri tíma en búist var við',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': 'Skjalið opnaðist með tómt gildi. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Tókst ekki að leysa upphafsgildi',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Skjaltýpa "{{type}}" fannst ekki',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Ekki hægt að framkvæma þessa aðgerð',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -434,13 +716,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Vertu með í samfélagi okkar',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Nýjasta útgáfan er {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Skrá stúdíó',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Forritsauðkenni',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Endurhlaða til að uppfæra í v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Útgáfa af Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjálp og auðlindir',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Uppfært',
+  /** Version text */
+  'help-resources.version': 'útgáfa {{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Innkoma tilvísanir',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Hætta við',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Sjálfgefið',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Hlaða upp',
   /** Uploading <FileName/> */
@@ -460,12 +759,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Bæta við atriði...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Afrita',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Dragðu til að raða',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Tvöfalda',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Breyta {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Hámarksfjölda atriða náð',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Fjarlægja',
   /** Label for removing action when an array item has an error  */
@@ -514,14 +817,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Leysir úr upphaflegu gildi…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Óvirkt',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Veldu dagsetningu í framtíðinni.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 't.d. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Opna valmynd fyrir skráarvalkosti',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Fletta',
-  /** Select file */
-  'inputs.file.dialog.title': 'Veldu skrá',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Óþekkt tegund meðlims: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -531,12 +832,15 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Endurstilla gildi',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ógilt skráargildi',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Veldu',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Ekki var hægt að ljúka upphleðslu á þessum tíma.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Upphleðsla mistókst',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Einkaeign',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'Aðgangur að CDN takmarkaður við undirritaðar URL-slóðir',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Hreinsa reit',
   /** Copy URL */
@@ -545,6 +849,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Sækja',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'Vefslóð er afrituð á klippiborð',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Opna í {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Skipta út',
   /** Upload */
@@ -583,6 +889,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Slepptu til að hlaða upp mynd',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Aðeins til lesturs',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Hlaða upp skrám í:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Get ekki hlaðið upp skrám hér',
   /** Clear upload */
@@ -592,20 +900,23 @@ export default removeUndefinedLocaleResources({
     'Upphleðsla hefur ekki miðað neinum framförum í að minnsta kosti {{staleThresholdMinutes}} mínútur og líklega var truflun. Þú getur hreinsað ókláraða upphleðslu og reynt aftur að hlaða upp.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Ókláruð upphleðsla',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Veldu skrá fyrir „{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Klippa mynd',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Opna myndabreytingarglugga',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Opna valmynd myndarvalkosta',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Veldu',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Get ekki hlaðið þessari skrá hér',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Slepptu mynd til að hlaða upp',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Þetta svæði er aðeins til lesturs',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Gat ekki hlaðið mynd. Þetta gæti verið vegna aðgangstakmarkana.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Óþekkt tegund meðlims: {{kind}}',
   /** Edit hotspot and crop */
@@ -619,6 +930,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ógild myndagildi',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Forskoðun á hlaðinni mynd',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Veldu mynd fyrir „{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Upphleðslan gat ekki verið lokið að þessu sinni.',
   /** Upload failed */
@@ -630,6 +943,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Villa: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Eignaleiðslan styður ekki heitan reit og afskurð fyrir vektorsnið. Til að virkja heitan reit og afskurð, settu þessa mynd í eitthvað af studdu rastersniðunum. Til dæmis: <code>fm=jpg</code> við <ImageUrlDocumentationLink>myndar-URL</ImageUrlDocumentationLink> eða kallaðu <code>.format('png')</code> með <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Sjá upplýsingar fyrir þróunaraðila',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Viðvörun: Heitur reitur og afskurður geta ekki verið beitt á þessa mynd þar sem hún er sýnd.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Breyta í <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -657,9 +978,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Allir reitir',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Hópar reita',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'villa',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'upplýsingar',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'viðvörun',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Þessi reitur er <strong>aðeins til lesturs</strong> samkvæmt skema skjalsins og getur ekki verið óskilgreindur. Ef þú vilt geta óskilgreint þetta í Studio, vertu viss um að fjarlægja <code>readOnly</code> reitinn frá umlykjandi tegund í skemanu.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Ekki tókst að hlaða forskoðun fyrir tilvísunina „{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Fjarlægja reit',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -853,8 +1183,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Venjulegur',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Tilvitnun',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Bæta við dálki í lok',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Bæta við röð í lok',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Dálkhandfang',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Eyða dálki',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Eyða röð',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Eyða töflu',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Hauslína',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Setja inn hér',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Töfluvalkostir',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Handfang raðar',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Velja töflu',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Hreinsa',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Afrita',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Búa til nýtt',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -909,6 +1263,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Hreinsa',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Leit að tilvísun mistókst',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': 'Tilvísuð skjal er af ógildri gerð ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Myndforskoðun af tilvísaðu skjali',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -974,6 +1330,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Mismunur á styrkleika tilvísunar',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Breyta í veika tilvísun',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Hreinsa',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Búa til',
   /** Loading message for when the input is actively generating a slug */
@@ -1003,6 +1361,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Eign gildis vantar <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Fjarlægja gildi',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Veldu myndband fyrir „{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1048,8 +1408,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Ófullnægjandi heimildir',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Lota þín er ekki lengur gild. Vinsamlegast skráðu þig inn aftur.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Lota þín rann út. Vinsamlegast skráðu þig inn aftur.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Þú hefur verið skráð/ur út',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Óvænt villa: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Vafrinn þinn notar úrelt HTTP-protokoll til að eiga samskipti við Sanity. Þetta gæti leitt til verulega skertrar frammistöðu.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Lærðu meira',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Sýna ekki aftur í þessum lotu',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Þú ert með bremsurnar á',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Búa til',
@@ -1078,12 +1455,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Búa til nýtt skjal',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Endurhlaða',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio var uppfært',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Stjórna meðlimum',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Hver er hér',
@@ -1103,8 +1480,267 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Myndin sem er verið að hlaða upp',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'rétt í þessu',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Bæta við útgáfu',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Bæta við {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Skjal er nú þegar til í útgáfu',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Nú þegar í útgáfu {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Afrita útgáfu til',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Ný útgáfa',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Mistókst að búa til útgáfu',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Eyða tímasetningu',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Hafna útgáfu',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Mistókst að hafna útgáfu',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Breyta tímasetningu',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Ný útgáfa',
+  'release.action.new-release.limit-reached_other':
+    'Þetta vinnusvæði er takmarkað við {{count}} útgáfur',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Þú hefur ekki leyfi til að framkvæma þessa aðgerð',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Birta núna',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Vinsamlegast reyndu aftur eða athugaðu tenginguna þína. Skjalið verður enn óbirt við útgáfu.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Mistókst að afturkalla stillingu á óbirtingu við útgáfu.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Þú getur nú breytt þessari útgáfu.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Tókst að afturkalla stillingu á óbirtingu við útgáfu.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Áætla birtingu',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'Mistókst að setja útgáfu til að vera óbirt í útgáfu',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Tókst með góðum árangri að setja <strong>{{title}}</strong> til að vera óbirt í útgáfu',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Skoða útgáfu',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Skoða tímasettar drög',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Áætlað til birtingar á {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} afbrigði',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} afbrigði',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} útgáfa',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} útgáfur',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Drög',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Drög',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Birt',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Þessi útgáfa er skjalasafnað og ekki hægt að breyta henni.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Búið til {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Þetta skjal er í beinni ritstillingu, drög eru óvirk',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Breytt {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Ætlað fyrir {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Engar breytingar',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Óbirt',
+  'release.chip.tooltip.other-variants_one': 'Eitt afbrigði',
+  'release.chip.tooltip.other-variants_other': '{{count}} afbrigði',
+  'release.chip.tooltip.other-versions_one': 'Ein auka útgáfa utan útgáfna',
+  'release.chip.tooltip.other-versions_other': '{{count}} auka útgáfur utan útgáfna',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Birt {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Áætlað fyrir {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Óþekkt dagsetning',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Þessari útgáfu hefur verið eytt',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Afrita útgáfu í nýja útgáfu',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Búa til útgáfu',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Ný útgáfa',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Eyða þessum áætluðu drögum? Drögin þín eru þegar uppfærð.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Eyða þessum áætluðu drögum? Breytingarnar þínar verða vistaðar í drögum.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Eyða þessum áætluðu drögum?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Já, eyða tímasetningu',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Halda í áætlaðar breytingar mínar með því að afrita þær í drög (mælt með því)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Áætluð drög þín hafa aðrar breytingar en núverandi drög þín.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Eyða tímasettum drögum',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Veldu nýja dagsetningu og tíma fyrir tímasetta birtingu.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Uppfæra tímasetningu',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Breyta tímasetningu',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Ertu viss um að þú viljir birta þessi tímasettu drög strax?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Já, keyra núna',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Birta drög núna',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Áætlaður útgáfutími er notaður til að búa til betri forskoðanir og vísbendingar um hvort skjöl rekist á.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Þú getur alltaf breytt því síðar.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Áætlaður útgáfutími',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Lýstu útgáfunni…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Fela útgáfu',
+  /** Label for the release menu */
+  'release.menu.label': 'Valmynd útgáfu',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Skoða Áætlaðar Drög',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Aðgerðir',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Skoða Efnisútgáfur',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Drög',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Birt',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Útgáfur',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Ónefnd útgáfa',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Tímasettu fyrir framtíðar dagsetningu og tíma.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Birta á',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Þessi útgáfa hefur verið afnæld',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "Útgáfunni '{{title}}' hefur verið safnað",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Mistókst að búa til útgáfu',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Mistókst að eyða tímasettu drögunum <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Tímasettu drögunum <strong>{{title}}</strong> hefur verið eytt.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "Ekki tókst að finna '{{title}}' útgáfuna",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Tókst ekki að setja á bið áætlaðan drögskjal <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Mistókst að birta tímasettu drögin <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Tímasettu drögin <strong>{{title}}</strong> hafa verið birt.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Þessi útgáfa hefur verið afnæld',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "Útgáfan '{{title}}' var birt",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Mistókst að endurtímasetja tímasettu drögin <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Tímasettu drögin <strong>{{title}}</strong> hafa verið endurtímasett.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Tókst ekki að áætla drög: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Drög áætluð með góðum árangri',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Áætluðu drögin voru birt',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Útgáfa af þessu skjali hefur þegar verið bætt við',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Þessi útgáfa hefur verið áætluð. Aflýstu henni til að bæta við fleiri skjölum.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Eins fljótt og auðið er',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Á ákveðnum tíma',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Óákveðið',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Sjá allar útgáfur skjalsins',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Hafðu samband við þjónustuver',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Vandamál við stillingar innihaldsútgáfna',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Innihaldsútgáfur eru virkjaðar fyrir verkefnið þitt, en það virðist vera stillingarvandamál með útgáfumörk þín. Vinsamlegast hafðu samband við þjónustuver til að fá innihaldsútgáfur þínar rétt stilltar.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Tímasetja',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Veldu hvenær þetta skjal ætti að vera birt.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Áætlaðu drög til birtingar',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Áætluð birting',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Opna leit',
@@ -1282,37 +1918,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>hefur</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>hefur</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-equal.name': 'magn er',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>hefur ></Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>hefur ></Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-gt.name': 'magn meira en',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>hefur ≥</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>hefur ≥</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-gte.name': 'magn meira en eða jafnt og',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>hefur <</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>hefur <</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-lt.name': 'magn minna en',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>hefur ≤</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>hefur ≤</Operator> <Value>{{count}} hluti</Value>',
   'search.operator.array-count-lte.name': 'magn minna en eða jafnt og',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>hefur ekki</Operator> <Value>{{count}} hlut</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1325,35 +1955,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>hefur á milli</Operator> <Value>{{from}} → {{to}} hluti</Value>',
   'search.operator.array-count-range.name': 'magn er á milli',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'inniheldur',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'inniheldur ekki',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'inniheldur',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'inniheldur ekki',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'er',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'er ekki',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'er',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'er ekki',
@@ -1366,160 +1988,120 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'er',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>er eftir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'eftir',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>er fyrir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'fyrir',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'er',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>er á síðustu</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'síðustu',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'er ekki',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>er á milli</Operator> <Value/>',
   'search.operator.date-range.name': 'er á milli',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>er eftir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'eftir',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>er fyrir</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'fyrir',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'er',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>er á síðustu</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'síðustu',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'er ekki',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>er á milli</Operator> <Value/>',
   'search.operator.date-time-range.name': 'er á milli',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>er</Operator> <Value>ekki tóm</Value>',
   'search.operator.defined.name': 'ekki tóm',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>er</Operator> <Value>tóm</Value>',
   'search.operator.not-defined.name': 'tóm',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'er',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'stærri en',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'stærri en eða jafnt og',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'minni en',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'minna en eða jafnt og',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'er ekki',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>er á milli</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'er á milli',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'inniheldur',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'er',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'inniheldur ekki',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'er ekki',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'skrá',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'mynd',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'skjal',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'er',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'er ekki',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'inniheldur',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'er',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'inniheldur ekki',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'er ekki',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>inniheldur</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'inniheldur',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'er',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>er</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'er',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'er ekki',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>inniheldur ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'inniheldur ekki',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>er ekki</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'er ekki',
@@ -1542,23 +2124,39 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Leitarniðurstöður',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Breyta dálkum',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Fjarlægja úr töflu',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Endurstilla dálka',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Veldu allt að 5 sviðstegundir',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Stillingarstaða',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Leitaðu að borg eða tímabelti',
+  'time-zone.action.select-local-time-zone': 'Veldu staðartímabelti',
+  'time-zone.dialog-info.content-releases':
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í efni útgáfum.',
+  'time-zone.dialog-info.input':
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar aðeins fyrir þetta inntak í þessu skjali.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Valið tímabelti mun breyta hvernig dagsetningar eru sýndar í áætlunum.',
+  'time-zone.local-time': 'staðartími',
+  'time-zone.time-zone': 'Tímabelti',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Sýnir útgáfur í {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Sýnir <em>{{title}}</em> í {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Sýnir áætlanir í {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Breytingar eftir',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Sögufærslur skjalsins hafa ekki orðið fyrir áhrifum.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Villa kom upp við að sækja breytingar á skjali.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Virkjaðu atburða API í gegnum Studio stillingarnar til að sjá sögu skjals.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Sagan um útgáfur skjala er aðeins aðgengileg í gegnum Events API.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Þegar efni skjalsins er breytt munu útgáfur skjalsins birtast í þessum valmynd.',
@@ -1579,6 +2177,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Endurskoðanir skjals',
   /** Label for loading history */
   'timeline.loading-history': 'Hleð sögu…',
+  'timeline.no-previous-events': 'Engir fyrri atburðir',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Búið til',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1591,6 +2190,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Eytt',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Eytt: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Drög búin til',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Drög búin til: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Drögum hent',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1603,6 +2206,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Breytt í beinni',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Breytt í beinni: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Eydd af varðveislustefnu',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Birt',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1611,6 +2216,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Óbirt',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Óbirt: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Útgáfa búin til',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Útgáfa búin til: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Útgáfa hafnað',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Útgáfa hafnað: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1685,6 +2298,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Opna valmynd',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Breytingar umboðsmanns',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Lagðar til breytingar',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1697,6 +2315,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Veldu annað vinnusvæði',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Skiptu um vinnurými',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Veldu þitt vinnusvæði',
   /** Label for the workspace menu */

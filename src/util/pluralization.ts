@@ -7,18 +7,6 @@ const enPluralSuffixes = ['zero', 'one', 'other']
 const enPluralSuffixRegex = new RegExp(`_(${enPluralSuffixes.join('|')})$`)
 
 /**
- * Checks whether or not the given key is a pluralized resource key, eg ends with `_other`, `_one`,
- *  - OR - that the value contains `{{count}}`.
- *
- * @param resource - The resource to check
- * @returns `true` if the key is pluralized, `false` otherwise
- * @internal
- */
-export function isPluralizedResource(resource: BaseResource): boolean {
-  return pluralSuffixRegex.test(resource.key) || resource.value.includes('{{count}}')
-}
-
-/**
  * Checks whether or not the given resource is a pluralizable English resource.
  * Determined by the key ending with suffixes recognized in English pluralization rules,
  * in other words `_zero`, `_one` or `_other` - OR - that the value contains `{{count}}`.

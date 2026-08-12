@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Kopiera till urklipp',
+  /** Label for deleting a query */
+  'action.delete': 'Radera',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Redigera titel',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Stoppa',
   /** Label for setting up a listener */
   'action.listen-execute': 'Lyssna',
+  /** Label for query loading table */
+  'action.load-queries': 'Ladda frågor',
+  /** Label for loading a query */
+  'action.load-query': 'Ladda fråga',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Avbryt',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Hämta',
+  /** Label for saving a query */
+  'action.save-personal-copy': 'Spara personlig kopia',
+  /** Label for saving a personal query */
+  'action.save-personal-query': 'Spara som personlig',
+  /** Label for saving a query */
+  'action.save-query': 'Spara fråga',
+  /** Label for saving a shared query */
+  'action.save-shared-query': 'Spara som delad',
+  /** Label for unsharing a query */
+  'action.unshare': 'Sluta dela',
+  /** Label for updating a query */
+  'action.update': 'Uppdatera',
 
+  /** Label for actions user can take */
+  'label.actions': 'Åtgärder',
+  /** Label for all saved queries */
+  'label.all': 'Alla',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Redigerad',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Ny',
+  /** Label for query type "personal" */
+  'label.personal': 'Personlig',
+  /** Label for savedAt date */
+  'label.saved-at': 'Sparad den',
+  /** Saved queries */
+  'label.saved-queries': 'Sparade frågor',
+  /** Search queries */
+  'label.search-queries': 'Sök frågor',
+  /** Share query */
+  'label.share': 'Dela',
+  /** Label for query type "shared" */
+  'label.shared': 'Delad',
+  /** Label for saved query type "team" */
+  'label.team': 'Team',
+  /** Label for untitled query fallback */
+  'label.untitled-query': 'Namnlös',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrarna är inte giltig JSON',
@@ -48,6 +90,22 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': 'ej tillämplig',
 
+  /** Query already saved error label */
+  'save-query.already-saved': 'Frågan är redan sparad',
+  /** Save error label */
+  'save-query.error': 'Fel vid sparning av fråga',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': 'Personlig kopia sparad',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    'Delade frågor lagras som dokument i ditt dataset och räknas mot din dokumentkvot.',
+  /** Save shared query success label */
+  'save-query.shared-success': 'Delad fråga sparad',
+  /** Save success label */
+  'save-query.success': 'Frågan sparad',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'Fråga flyttad till personlig',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-version',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspektiv',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspektivet "<code>previewDrafts</code>" har bytt namn till "<code>drafts</code>" och är nu inaktuellt. Denna ändring gäller för alla versioner med stöd för perspektiv (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Läs dokumentationen',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Inget perspektiv (API-standard)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspektiv låter din förfrågan köras mot olika "vyer" av innehållet i ditt dataset',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Standardperspektivet kommer att ändras från "<code>raw</code>" till "<code>published</code>" i en kommande API-version. Vänligen se dokumentationen för mer detaljer.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'pinnad release',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': 'Schemalagda utkast',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspektiv',
 })

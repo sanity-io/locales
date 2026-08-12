@@ -1,24 +1,47 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': 'Kopiera dokument-ID',
+  /** Tooltip for the copy actions dropdown button in the document panel header */
+  'action.copy-document-url.label': 'Kopiera dokumentets URL',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': 'Kopiera dokument-URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Operationen är inte redo',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'Detta dokument existerar inte än eller är redan raderat',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Detta dokument kan inte raderas eftersom det finns inom schemalagda utgåvor',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Radera',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Raderar…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip':
+    'Vissa dokumentåtgärder är inaktiverade för dokument länkade till Canvas',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Är du säker på att du vill kassera alla ändringar sedan senast publicerat?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Är du säker på att du vill kassera alla ändringar och radera detta utkastdokument?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Kassera ändringar?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
-  'action.discard-changes.disabled.no-change': 'Detta dokument har inga opubliserade ändringar',
+  'action.discard-changes.disabled.no-change': 'Detta dokument har inga opublicerade ändringar',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Operationen är inte redo',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Kassera ändringar',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -26,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Detta dokument existerar inte än så det finns inget att duplicera',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Duplicera',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -34,10 +60,18 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Redan publicerad',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Publicerad för {{timeSincePublished}} sedan',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable':
+    'Den här versionen publiceras som en del av sin release',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Operationen är inte redo',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Publicera',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Publicera',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Publicera',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -47,19 +81,26 @@ export default removeUndefinedLocaleResources({
   'action.publish.live-edit.tooltip':
     'Live Edit är aktiverat för denna innehållstyp och publicering sker automatiskt när du gör ändringar',
   /** Tooltip when publish button is disabled because there are no changes.*/
-  'action.publish.no-changes.tooltip': 'Inga opubliserade ändringar',
+  'action.publish.no-changes.tooltip': 'Inga opublicerade ändringar',
   /** Label for the "Publish" document action when there are no changes.*/
   'action.publish.published.label': 'Publicerad',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Publicerar…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Validerar dokument…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Vänligen åtgärda valideringsfelen innan publicering',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Valideringsfel',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Det finns valideringsfel som måste åtgärdas innan detta dokument kan publiceras',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Väntar på att uppgifter ska slutföras innan publicering',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Är du säker på att du vill återställa detta dokument?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial':
     'Du kan inte återställa till den ursprungliga versionen',
   /** Label for the "Restore" document action */
@@ -70,30 +111,76 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Operationen är inte redo',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Den valda versionen eller varianten innehåller inte det här dokumentet',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Avpublicera',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'Detta dokument har live redigering aktiverad och kan inte avpubliceras',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Du tittar på ett skrivskyddat dokument som arkiverades som en del av <VersionBadge> en release</VersionBadge>. Det kan inte redigeras',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Det här schemalagda utkastet är arkiverat',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'Kan inte skapa ett utkastdokument.',
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'Kan inte skapa ett publicerat dokument.',
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination':
+    'Välj en destination för detta dokument:',
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> utgåvan är inte aktiv.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Återställ senaste versionen',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Detta dokument har raderats.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Denna dokumenttyp är inte längre tillgänglig.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Kassera utkast',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Publicera för att fortsätta redigera',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktiverat, men en utkastversion av detta dokument finns. Publicera eller kassera utkastet för att fortsätta redigera det live.',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': 'Jämför utkast',
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': 'Kassera utkast',
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': 'Publicera utkast',
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'Arbetsytan har inte utkast aktiverade, men en utkastversion av detta dokument finns.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Schemaläggning pausad under redigering. Tryck på Schemalägg för att återaktivera eller välj ett nytt datum.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Din roll <Roles/> har inte behörighet att skapa detta dokument.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'Dina roller <Roles/> har inte behörighet att skapa detta dokument.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Din roll <Roles/> har inte behörighet att uppdatera detta dokument.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
     'Dina roller <Roles/> har inte behörighet att uppdatera detta dokument.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent': 'Redaktörsförfrågan skickad',
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': 'Fråga om att redigera',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Du tittar på ett skrivskyddat dokument som publicerades som en del av <VersionBadge> en release</VersionBadge>. Det kan inte redigeras',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Ladda om referens',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -104,6 +191,74 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Denna referens har tagits bort sedan du öppnade den.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': 'Lägg till i bundle',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Lägg till i release',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Öppna release för att redigera',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Ett fel inträffade när dokumentet lades till i releasen: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Fel vid tillägg av dokument till release',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Dokumentet finns endast i',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'releasen',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'releaser',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Detta dokument är en del av <VersionBadge/> releasen och {{count}} ytterligare release.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Detta dokument är en del av <VersionBadge/> releasen och {{count}} ytterligare releaser',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'Detta dokument är inte en del av någon release',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Detta dokument är en del av <VersionBadge/> releasen',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Inte i <Label>{{title}}</Label> release.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Vänligen vänta medan dokumentet läggs till i releasen. Det bör inte ta längre än några sekunder.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Lägger till dokument i release…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Vi kunde inte hitta den valda dokumentrevisionen, vänligen välj en annan post från historiklistan.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Ett schemalagt utkast för detta dokument finns. Om du publicerar ändringar nu kommer de att skrivas över när schemat körs.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Detta dokument kommer att avpubliceras som en del av <VersionBadge>{{title}}</VersionBadge> releasen',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published':
+    'Visar den nuvarande <strong>publicerade</strong> versionen:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Skapa variant',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Den valda varianten <VariantName>{{name}}</VariantName> kunde inte hittas.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Ett fel uppstod när dokumentet lades till i varianten: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Fel vid tillägg av dokument till variant',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Det finns inget <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle>-variantdokument för <VariantBadge>{{variantTitle}}</VariantBadge>.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Vänta medan dokumentet läggs till i varianten. Det bör inte ta mer än några sekunder.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Lägger till dokument i variant…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Ny {{schemaType}}',
@@ -114,6 +269,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Öppna dokumentåtgärder',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumentåtgärder',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'Kollapsa alla paneler',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Fokusera panel',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Kollapsa alla paneler',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Fokusera panel',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dela ruta till höger',
   /** The tool tip for the split pane button on the document panel header */
@@ -122,6 +285,65 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Stäng delad ruta',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Stäng rute grupp',
+
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': 'Redigera i Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Detta dokument kan redigeras i Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas låter dig skriva fritt och sedan uppdatera innehållet i Studio utan manuell kopiering fält för fält.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Fritt skrivande',
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': 'Detta utkastdokument är länkat till Canvas',
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': 'Detta live-dokument är länkat till Canvas',
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': 'Detta versionsdokument är länkat till Canvas',
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': 'Läs mer',
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description':
+    'Canvas låter dig skapa innehåll i en fri-form redigerare som automatiskt mappas tillbaka till Studion som strukturerat innehåll - medan du skriver.',
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': 'Idé först författande',
+
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Visar historiken för <strong>{{perspective}}</strong>-versionen av detta dokument.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Denna vy visar de ändringar som skett i en specifik version av detta dokument. Välj en annan version för att se dess ändringar',
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'Från',
+  'changes.tab.history': 'Historik',
+  'changes.tab.review-changes': 'Granska ändringar',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'Till',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam': '"{{input}}" är inte ett stött dokumentjämförelseläge.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Nästa dokumentparameter är ogiltig.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Kan inte jämföra dokument',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'Föregående dokumentparameter är ogiltig.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Misslyckades med att ladda utgåvor',
+
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason':
+    'Det finns inga andra versioner av detta dokument att jämföra med.',
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Jämför versioner',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Utkast',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Publicerad',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Jämför versioner',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Avbryt',
@@ -147,21 +369,34 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'Dokument-ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'Kopierade dokument-ID till urklipp!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Misslyckades med att kopiera dokument-ID',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'Projekt-ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Radera ändå',
+  /** The text in the "Delete anyway" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  /** The text in the "Delete anyway" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Avpublicera ändå',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Radera nu',
+  /** The text in the "Delete now" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  /** The text in the "Delete now" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Avpublicera nu',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Är du säker på att du vill radera “<DocumentTitle/>”?',
+  /** The confirmation text when the document only has a single version */
+  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  /** The confirmation text when the document has multiple versions */
+  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Är du säker på att du vill avpublicera “<DocumentTitle/>”?',
@@ -225,12 +460,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Okänd schematyp: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Vart tog versionsknapparna vägen?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Stäng',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Inspekterar <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Inget värde',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Stäng panel',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Ett fel uppstod när den här panelen renderades.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Försök igen',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Något gick fel',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspektera',
   /** the placeholder text for the search input on the inspect dialog */
@@ -239,6 +485,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Analyserad',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Rå JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'Dokumentet finns inte i det valda perspective ännu.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Detta formulär är dolt',
@@ -251,6 +501,65 @@ export default removeUndefinedLocaleResources({
     'Vänligen vänta medan dokumentet synkroniseras. Detta sker vanligtvis precis efter att dokumentet har publicerats, och det bör inte ta mer än några sekunder',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Synkroniserar dokument…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Vi fortsätter att försöka. Dina ändringar sparas i din webbläsare under tiden.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Dina ändringar sparas inte',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Redigering återupptas så snart dina ändringar har sparats.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Sparar dina ändringar…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Redigering är pausad tills de sparas. Dina ändringar finns kvar i din webbläsare, så håll den här fliken öppen medan vi fortsätter att försöka.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Dina ändringar sparas fortfarande inte',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': 'Lägg till i favoriter',
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': 'Ta bort från favoriter',
+
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Vi kan inte ladda ändringarna för detta dokument, troligen på grund av historikbevarandepolicyn för din plan, detta visar dig hur <strong>{{version}}</strong>-versionen jämförs med <strong>publicerad</strong> version.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Jämför med publicerad',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Granska <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Öppna <VersionBadge>utkast</VersionBadge> dokument',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Öppna <VersionBadge>{{releaseTitle}}</VersionBadge> release',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Lägg till objekt',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Inkommande referenser av typ {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Inga objekt',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Referens från {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Schematyp {{type}} hittades inte',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Skriv för att söka',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Laddar dokument...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset': 'Laddar dokument över dataset...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Inga inkommande referenser definierade för denna typ, se dokumentationen för mer information.',
+
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': 'Inga inkommande referenser hittades.',
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Inga referenser av denna typ hittades.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Schematyp {{type}} hittades inte',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Laddar…',
@@ -267,10 +576,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Kompakt vy',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Detaljerad vy',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Standardvy',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Använder redan standardvyn',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Sortera efter Skapad',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Sortera efter Senast redigerad',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Standardsortering',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Använder redan standardsorteringsordningen',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Lär dig hur du lägger till en dokumenttyp →',
@@ -310,12 +628,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Ny {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Namnlös',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Försök igen',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Försöker igen…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Fel: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Fel: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'Internetanslutningen verkar vara offline.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Kunde inte hämta listobjekt',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Försöker igen…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'Försöker igen… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Visar maximalt {{limit}} dokument',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -324,10 +649,23 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Inga resultat hittades',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Inga matchande dokument',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'Försöker ansluta…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Sök i listan',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Sök i listan',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Ändra sorteringsordning för sökresultat',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Sorterat efter {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Relevans',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Sorterat efter relevans',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Det här sorteringsalternativet använder fält som inte ingår i den här dokumenttypen',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Detaljer',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -340,6 +678,14 @@ export default removeUndefinedLocaleResources({
     'Ett fel inträffade vid försök att avpublicera detta dokument. Detta betyder vanligtvis att det finns andra dokument som refererar till det.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'Lyckades utföra {{context}} på dokumentet',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id': 'Dokument-ID kopierat till urklipp',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'Dokumentets URL kopierad till urklipp',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> lades till i releasen',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Dokumentet raderades framgångsrikt',
   /** The text when a discard changes operation succeeded  */
@@ -350,6 +696,8 @@ export default removeUndefinedLocaleResources({
     'Dokumentet duplicerades framgångsrikt',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Dokumentet publicerades',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': 'Versionen publicerades',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> återställdes',
@@ -358,8 +706,6 @@ export default removeUndefinedLocaleResources({
     'Dokumentet avpublicerades. Ett utkast har skapats från den senaste publicerade versionen.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Namnlös',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'Anslutningen förlorad. Återansluter…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Laddar dokument…',
   /** The text of the document not found pane if the schema is known */
@@ -376,6 +722,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Detta dokument finns inte, och ingen schematyp specificerades för det.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Läser in dokument…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Laddar…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -391,6 +739,25 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Öppna förhandsgranskning',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': 'Skicka förfrågan',
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text':
+    'Din förfrågan kommer att skickas till projektadministratör(erna). Om du vill kan du också inkludera en anteckning',
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': 'Be om redigeringsåtkomst',
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text':
+    'Om du vill kan du lägga till en anteckning',
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': 'Lägg till anteckning...',
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text':
+    'Din förfrågan om åtkomst till detta projekt har avslagits.',
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text':
+    'Du har nått gränsen för rollförfrågningar över alla projekt. Vänta innan du skickar fler förfrågningar eller kontakta en administratör för hjälp.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Sparad',
@@ -428,4 +795,18 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Ladda om',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Strukturväg',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'Öppna åtgärdsmenyn',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'Åtgärder',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'Kollapsa',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'Expandera',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Release med id "{{releaseId}}" hittades inte',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Inbäddade ändringar',
 })

@@ -1,5 +1,6 @@
-import {isRecord, LocaleDefinition} from 'sanity'
+import {isRecord, type LocaleDefinition} from 'sanity'
 
+import {weekInfoSchema} from '../../schemas'
 import type {Locale} from '../../types'
 import {getBaseNamespaces} from '../../util/getBaseNamespaces'
 import {buildStringLiteral} from './buildStringLiteral'
@@ -54,31 +55,21 @@ function getWeekInfo(forLocale: Locale): LocaleDefinition['weekInfo'] {
   const localeId = forLocale.id
   const locale = new Intl.Locale(localeId)
 
-  let info: Partial<LocaleDefinition['weekInfo']> = {}
+  let info: unknown = {}
   if ('getWeekInfo' in locale && typeof locale.getWeekInfo === 'function') {
     info = locale.getWeekInfo()
   } else if ('weekInfo' in locale && isRecord(locale.weekInfo)) {
     info = locale.weekInfo
   }
 
-  if (!isRecord(info)) {
-    throw new Error(`Unable to determine week info for locale "${localeId}"`)
+  const result = weekInfoSchema.safeParse(info)
+  if (!result.success) {
+    throw new Error(`Unable to determine week info for locale "${localeId}"`, {
+      cause: result.error,
+    })
   }
 
-  const {firstDay, minimalDays, weekend} = info
-  if (firstDay !== 1 && firstDay !== 7) {
-    throw new Error(`Invalid first day of week ${firstDay} for locale "${localeId}"`)
-  }
-
-  if (typeof minimalDays !== 'number') {
-    throw new Error(`Invalid minimal days in first week ${minimalDays} for locale "${localeId}"`)
-  }
-
-  if (!Array.isArray(weekend)) {
-    throw new Error(
-      `Invalid weekend days ${JSON.stringify(weekend, null, 2)} for locale "${localeId}"`,
-    )
-  }
-
+  const {firstDay, minimalDays = 1, weekend} = result.data
+  // oxlint-disable-next-line typescript/no-deprecated -- deprecated upstream, but still emitted for backwards compatibility with older studios
   return {firstDay, minimalDays, weekend}
 }

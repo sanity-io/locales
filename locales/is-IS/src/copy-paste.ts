@@ -10,12 +10,11 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Líma inn reit',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Aðgangur að klippiborði nauðsynlegur til að afrita þetta efni. Leyfðu aðgang að klippiborði í vafrastillingum þínum, reyndu síðan að afrita aftur.',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Vafrinn þinn styður ekki þessa aðgerð',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': 'Skjal "{{fieldNames}}" afritað',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Reitur "{{fieldName}}" afritaður',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tómt gildi, ekkert til að afrita',
   /** --- On copy --- */
@@ -32,11 +31,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Ekkert til að líma inn',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Ógilt klippiborðsatriði',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title': 'Skjal "{{fieldNames}}" uppfært',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'Reitur "{{fieldName}}" uppfærður',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" er ekki leyfilegt í "{{targetSchemaType}}"',
@@ -51,6 +45,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Gildi af taginu "{{type}}" er ekki leyfilegt í þessum reit',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Sleppt skrifvarnum reitum: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Markið er skrifvarið',
@@ -60,6 +57,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Tilvísanir af taginu "{{sourceReferenceType}}" eru ekki leyfðar í tilvísunarreit sem samþykkir tög "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Tilvísunar skjalið "{{ref}}" er ekki til',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Uppruna- og markskematýpur eru ekki samrýmanlegar',

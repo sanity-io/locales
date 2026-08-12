@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': '复制到剪贴板',
+  /** Label for deleting a query */
+  'action.delete': '删除',
+  /** Label for editing a query's title */
+  'action.edit-title': '编辑标题',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': '停止',
   /** Label for setting up a listener */
   'action.listen-execute': '监听',
+  /** Label for query loading table */
+  'action.load-queries': '加载查询',
+  /** Label for loading a query */
+  'action.load-query': '加载查询',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': '取消',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': '获取',
+  /** Label for saving a query */
+  'action.save-personal-copy': '保存个人副本',
+  /** Label for saving a personal query */
+  'action.save-personal-query': '另存为个人',
+  /** Label for saving a query */
+  'action.save-query': '保存查询',
+  /** Label for saving a shared query */
+  'action.save-shared-query': '另存为共享',
+  /** Label for unsharing a query */
+  'action.unshare': '取消共享',
+  /** Label for updating a query */
+  'action.update': '更新',
 
+  /** Label for actions user can take */
+  'label.actions': '操作',
+  /** Label for all saved queries */
+  'label.all': '全部',
+  /** Label for saved queries that have been edited */
+  'label.edited': '已编辑',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': '新',
+  /** Label for query type "personal" */
+  'label.personal': '个人',
+  /** Label for savedAt date */
+  'label.saved-at': '保存于',
+  /** Saved queries */
+  'label.saved-queries': '已保存的查询',
+  /** Search queries */
+  'label.search-queries': '搜索查询',
+  /** Share query */
+  'label.share': '分享',
+  /** Label for query type "shared" */
+  'label.shared': '已共享',
+  /** Label for saved query type "team" */
+  'label.team': '团队',
+  /** Label for untitled query fallback */
+  'label.untitled-query': '未命名',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': '参数不是有效的JSON',
@@ -48,6 +90,21 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': '不适用',
 
+  /** Query already saved error label */
+  'save-query.already-saved': '查询已保存',
+  /** Save error label */
+  'save-query.error': '保存查询时出错',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': '个人副本已保存',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning': '共享查询作为文档存储在您的 dataset 中，并计入您的文档配额。',
+  /** Save shared query success label */
+  'save-query.shared-success': '共享查询已保存',
+  /** Save success label */
+  'save-query.success': '查询已保存',
+  /** Save unshared query success label */
+  'save-query.unshared-success': '查询已移至个人',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 版本',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,10 +120,22 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': '视角',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    '“<code>previewDrafts</code>”视角已重命名为“<code>drafts</code>”，现已弃用。此更改适用于所有支持视角的版本（>= v2021-03-25）。',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': '阅读文档',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': '无视角（API默认）',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description': '视角允许您的查询针对数据集中不同的“视图”运行',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    '默认视角将在即将到来的API版本中从“<code>raw</code>”更改为“<code>published</code>”。请咨询文档以获取更多详情。',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': '固定发布',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': '预定草稿',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '视角',
 })

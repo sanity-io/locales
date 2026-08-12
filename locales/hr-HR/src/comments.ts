@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Nije moguće kopirati poveznicu u međuspremnik',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Kopirana poveznica u međuspremnik',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Jednom izbrisan, komentar se ne može povratiti.',
   /** The delete dialog confirm button text for a comment */
@@ -77,10 +74,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Dodaj komentar',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'Komentari se ne mogu preklapati',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Dodaj komentar',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Došlo je do pogreške prilikom učitavanja komentara',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Idi na polje {{field}}',

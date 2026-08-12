@@ -110,7 +110,7 @@ async function commentAndMergeStalePR(
 
   await execFile('gh', ['pr', 'comment', `${pr.number}`, '--body', comment], execOptions)
   await execFile('gh', ['pr', 'edit', `${pr.number}`, '--remove-label', removeLabel], execOptions)
-  await mergePR(pr.number)
+  await mergePR(pr.number, {auto: true})
 }
 
 function getCommentBody(locale: Locale) {

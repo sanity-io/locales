@@ -10,12 +10,11 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Lim inn felt',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Tilgang til utklippstavlen kreves for å kopiere dette innholdet. Tillat utklippstavle-tillatelser i nettleserinnstillingene dine, og prøv å kopiere på nytt.',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Nettleseren din støtter ikke denne handlingen',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': 'Dokument "{{fieldNames}}" kopiert',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Felt "{{fieldName}}" kopiert',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tom verdi, ingenting å kopiere',
   /** --- On copy --- */
@@ -32,11 +31,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Ingenting å lime inn',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Ugyldig utklippselement',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Dokument "{{fieldNames}}" oppdatert',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': 'Felt "{{fieldName}}" oppdatert',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     'En "{{sourceSchemaType}}" er ikke tillatt i en "{{targetSchemaType}}"',
@@ -51,6 +45,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Verdi av typen "{{type}}" er ikke tillatt i dette feltet',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Hoppet over skrivebeskyttede felt: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Feltet er skrivebeskyttet',
@@ -60,6 +57,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Referanser av typen "{{sourceReferenceType}}" er ikke tillatt i referansefelt som aksepterer typer "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Det refererte dokumentet "{{ref}}" eksisterer ikke',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Kilde- og målskjematyper er ikke kompatible',

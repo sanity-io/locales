@@ -1,0 +1,25 @@
+name: Weekly NPM Stats
+
+on:
+  schedule:
+    # Run at 09:00 UTC every Monday
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  npm-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Install pnpm, Node.js and dependencies
+        uses: pnpm/setup@v2
+        with:
+          runtime: node@lts
+          cache: true
+
+      - name: Run NPM Stats
+        run: pnpm ci:npm-stats
+        env:
+          SLACK_STATS_WEBHOOK_URL: ${{ secrets.SLACK_STATS_WEBHOOK_URL }}

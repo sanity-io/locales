@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': '检测到配置问题',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    '自动更新已启用，但在<code>sanity.cli.ts</code>中未配置<code>deployment.appId</code>。此工作室正在针对<strong>最新</strong>频道更新。',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': '查看文档',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': '已禁用',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': '已启用',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': '自动更新',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': '如何启用',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': '管理版本',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    '已复制到剪贴板。愉快地粘贴吧！',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': '复制到剪贴板',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': '当前版本',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': '如何升级',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': '最新版本',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': '新版本可用',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': '新版本',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': '重新加载',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': '重新加载工作室以更新',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': '开发',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': '新版本可用',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': '预发布',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': '已是最新',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': '已是最新',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': '更新',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': '了解如何更新Sanity工作室',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': '用户代理',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': '在GitHub上查看',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': '关闭',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': '关闭对话框',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': '关闭',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': '忽略公告',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': '打开公告',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': '删除',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': '使用图片的文档',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': '加载中…',
+  /** Browse button text */
+  'asset-source.browse-button.text': '选择',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': '取消',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -49,16 +118,24 @@ export default removeUndefinedLocaleResources({
     '此图片无法删除，因为它正在被使用。要删除它，您首先需要移除它的所有用途。',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message': '仅显示接受类型的资产：<strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': '取消',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': '选择',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': '选择文件',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': '选择图片',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': '加载资产失败',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': '加载更多',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': '没有文件',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': '没有图片',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     '无法删除当前选中的文件',
@@ -97,6 +174,38 @@ export default removeUndefinedLocaleResources({
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero': '没有文档正在使用此图片',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': '更多信息请查看控制台。',
+  'asset-sources.common.uploader.upload-failed.title': '上传失败',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Workspace 文件',
+  'asset-sources.dataset.image.title': 'Workspace 图像',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    '尝试解析此项目的媒体库时出了些问题。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned': '此组织尚未配置媒体库。',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': '媒体库',
+  'asset-sources.media-library.image.title': '媒体库',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': '完成',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '为“{{targetTitle}}”选择新资源',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    '选择新资源',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': '编辑资源',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': '上传到 Media Library',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description': '使用库中找到的现有文件。',
+  'asset-sources.media-library.warning.file-already-exist.title': "文件：'{{filename}}'已存在",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "发布 '<strong>{{title}}</strong>' 已被删除。",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': '前往下个月',
   /** Action message for navigating to next year */
@@ -105,24 +214,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': '转到上个月',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': '转到上一年',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '今天',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': '转到今天',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '明天',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': '昨天',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '包括时间',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': '选择小时',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': '选择分钟',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': '选择时间',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': '设置为当前时间',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} 在 {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': '打开日历',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': '选择日期',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': '必须是以下格式 <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
@@ -192,6 +299,9 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '检查开发者控制台以获取更多信息',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': '渲染此字段的更改时出现错误',
+  'changes.error-description': '我们无法加载此文档的更改。',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': '出了些问题',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     '值错误：值的类型为 "<code>{{actualType}}</code>", 期望的类型为 "<code>{{expectedType}}</code>"',
@@ -221,10 +331,14 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '正在加载…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '正在加载更改…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    '我们找不到您尝试比较的文档修订版，其id为：<code>{{revisionId}}</code>。<Break/> 这可能是由于您计划中的历史保留政策。<Break/> 请选择不同的<strong>从</strong>条目。',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description': '编辑文档或在时间线中选择旧版本，以在此面板中看到更改列表。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '没有更改',
+  'changes.not-selectable': '无法选择此事件',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '已添加注释',
   /** Portable Text diff: An annotation was changed */
@@ -265,8 +379,17 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '未知的内联对象模式类型',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '已移除',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    '您选择了相同的<strong>从</strong>和<strong>到</strong>修订版，请选择不同的修订版来比较它们之间的变化。',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': '选择了相同的修订版',
   /** Title for the Review Changes pane */
   'changes.title': '审查更改',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description': '此字段未在 schema 中定义。值以 JSON 形式显示。',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': '草稿',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -277,12 +400,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': '确认',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '加载中',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': '尝试连接…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': '配置问题',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '发现配置问题',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '按 {{title}} 排序',
@@ -302,12 +430,132 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': '按标题排序',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': '关闭',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': '忽略',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': '下一个',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': '上一个',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': '从基础版本复制',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': '已更改',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} 在 {{versionName}} 版本中{{effect}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other': '{{versionName}} 版本中有 {{count}} 个未解决的更改',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': '取消',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': '管理版本',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label': '新版本清单的使用难易程度如何？',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '筛选 {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': '正在查看',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': '所有用户（默认）',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': '创建变体',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': '为 {{variantDefinitionName}} 创建变体',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': '作为草稿',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': '加入发布版本',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': '或查看现有变体',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': '取消',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} 个文档',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets：{{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '不可用的 datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other':
+    '{{documentCount}} 位于 {{count}} 个 datasets 中',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': '复制 ID 到剪贴板',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': '文档 ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed': '复制文档 ID 失败',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': '项目 ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': '删除（{{count}}）',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    '尝试删除此文档时发生错误。这通常意味着有其他文档引用了该文档。',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other': '{{count}} 个其他引用未显示',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    '由于相关 dataset 缺少访问令牌，我们无法显示这些引用的元数据。',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID：{{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': '预览不可用',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} 个文档引用了"<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    '您可能无法删除"<DocumentTitle/>"，因为以下文档引用了它：',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '删除 {{count}} 个{{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': '变体',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': '版本',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '创建于 {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '编辑于 {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '最后发布',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '未发布',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '发布于 {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': '修订自 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': '未找到修订版',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': '您的更改仍在保存中。',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': '保存时间超出预期',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description': '文档以空值打开。{{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': '无法解析初始值',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': '未找到文档类型 "{{type}}"',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': '无法执行此操作',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -402,13 +650,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '加入我们的社区',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '最新版本是 {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': '注册工作室',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': '应用程序ID',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': '重新加载以更新至v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio 版本 {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': '帮助与资源',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': '最新的',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': '传入引用',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': '取消',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': '默认',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': '上传',
   /** Uploading <FileName/> */
@@ -428,12 +693,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': '添加项...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': '复制',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': '拖动以重新排序',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': '复制',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '编辑 {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': '已达到最大项目数',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '删除',
   /** Label for removing action when an array item has an error  */
@@ -478,14 +747,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': '正在解析初始值…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': '已禁用',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': '请选择一个未来的日期。',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '例如 {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': '打开文件选项菜单',
-  /** Browse */
-  'inputs.file.browse-button.text': '浏览',
-  /** Select file */
-  'inputs.file.dialog.title': '选择文件',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': '未知成员类型：{{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -495,12 +762,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': '重置值',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': '文件值无效',
-  /** Select */
-  'inputs.file.multi-browse-button.text': '选择',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': '此时无法完成上传。',
   /** Upload failed */
   'inputs.file.upload-failed.title': '上传失败',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': '私有资源',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDN访问限于签名的URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': '清除字段',
   /** Copy URL */
@@ -509,6 +778,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': '下载',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL已复制到剪贴板',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '在{{sourceName}}中打开',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': '替换',
   /** Upload */
@@ -534,6 +805,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': '拖放以上传图片',
   /** Read only */
   'inputs.files.common.placeholder.read-only': '只读',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': '上传文件至：',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': '无法在这里上传文件',
   /** Clear upload */
@@ -543,20 +816,22 @@ export default removeUndefinedLocaleResources({
     '至少{{staleThresholdMinutes}}分钟没有上传进度，很可能被中断了。您可以安全地清除未完成的上传并再次尝试上传。',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '上传未完成',
+  /** Select file */
+  'inputs.files.select-dialog.title': '为"{{targetTitle}}"选择文件',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': '裁剪图片',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '打开图片编辑对话框',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': '打开图片选项菜单',
-  /** Select */
-  'inputs.image.browse-menu.text': '选择',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': '无法在这里上传此文件',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': '拖放图片以上传',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': '此字段为只读',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction': '无法加载图片。这可能是由于访问限制。',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '未知成员类型：{{kind}}',
   /** Edit hotspot and crop */
@@ -570,6 +845,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': '无效的图片值',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': '上传图片的预览',
+  /** Select image */
+  'inputs.image.select-dialog.title': '为"{{targetTitle}}"选择图片',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': '此时无法完成上传。',
   /** Upload failed */
@@ -580,6 +857,13 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': '错误：{{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': '热点 & 裁剪',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "资产管道不支持矢量格式的热点和裁剪。要启用热点和裁剪，请将此图像输出到任何支持的光栅格式。例如：向<ImageUrlDocumentationLink>图像URL</ImageUrlDocumentationLink>添加<code>fm=jpg</code>，或者使用<ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>调用<code>.format('png')</code>。",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': '查看开发者信息',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title': '警告：热点和裁剪可能不会应用于此图像的展示。',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '转换为<code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -605,9 +889,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': '所有字段',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': '字段组',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': '错误',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': '信息',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': '警告',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     '根据文档的架构，此字段为<strong>只读</strong>，不能被取消设置。如果您希望在Studio中能够取消设置此字段，请确保从架构中的封闭类型中移除<code>readOnly</code>字段。',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '无法为引用“{{documentId}}”加载预览。',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': '移除字段',
   'inputs.object.unknown-fields.warning.description_other': '遇到{{count}}个未在模式中定义的字段。',
@@ -791,8 +1084,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': '正常',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '引用',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': '在末尾添加列',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': '在末尾添加行',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': '列控制柄',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': '删除列',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': '删除行',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': '删除表格',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': '标题行',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': '在此插入',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': '表格选项',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': '行控制柄',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': '选择表格',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '清除',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': '复制',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '创建新的',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -844,6 +1161,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': '清除',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': '引用搜索失败',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': '引用的文档类型无效 ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': '引用文档的图片预览',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -908,6 +1227,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': '引用强度不匹配',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '转换为弱引用',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': '清除',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': '生成',
   /** Loading message for when the input is actively generating a slug */
@@ -935,6 +1256,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': '属性值缺少<code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': '取消设置值',
+  /** Select video */
+  'inputs.video.select-dialog.title': '为"{{targetTitle}}"选择视频',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation': '您没有权限访问此功能。',
@@ -979,8 +1302,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': '权限不足',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': '您的会话已失效，请重新登录。',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': '您的会话已过期，请重新登录。',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': '您已退出登录',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外错误：{{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    '您的浏览器正在使用过时的HTTP协议与Sanity通信。这可能会导致性能大幅下降。',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': '了解更多',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': '本次会话不再显示',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': '您已经打开了刹车',
 
   /** Button label for "Create new document" button */
   'new-document.button': '创建',
@@ -1009,12 +1349,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': '创建新文档',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': '重新加载',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio 已更新',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': '管理成员',
   /** Accessibility label for presence menu button */
   'presence.aria-label': '谁在这里',
@@ -1034,8 +1374,251 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '当前正在上传的图片',
 
-  /* Relative time, just now */
   'relative-time.just-now': '刚刚',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': '添加到发布',
+  /** Action message to add document to release */
+  'release.action.add-to-release': '添加到 {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': '文档已存在于发布中',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': '已在发布 {{title}} 中',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': '复制版本到',
+  /** Action message for creating new releases */
+  'release.action.create-new': '新建发布',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': '创建版本失败',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': '删除计划',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': '丢弃版本',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': '丢弃版本失败',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': '编辑详情',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': '编辑计划',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': '新发布',
+  'release.action.new-release.limit-reached_other': '此工作区限制为 {{count}} 个发布',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': '您没有执行此操作的权限',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': '立即发布',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    '请重试或检查您的连接。文档在发布时仍将保持未发布状态。',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title': '未能撤销发布时设置为未发布。',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': '您现在可以编辑此版本。',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title': '成功撤销发布时设置为未发布。',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': '计划发布',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': '设置版本在发布上未发布失败',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success': '成功设置 <strong>{{title}}</strong> 在发布上未发布',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': '查看发布',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': '查看计划草稿',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '计划在 {{date}} 发布',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} 个变体',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}}个版本',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': '草稿',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': '草稿',
+  /** Label for Published chip in document header */
+  'release.chip.published': '已发布',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': '此版本已归档，无法编辑。',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '创建于 {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit': '此文档处于实时编辑模式，草稿已禁用',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '编辑于 {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '计划于 {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': '无编辑',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': '未发布',
+  'release.chip.tooltip.other-variants_other': '{{count}} 个变体',
+  'release.chip.tooltip.other-versions_other': '发布之外的{{count}}个额外版本',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '发布于 {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '计划于 {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': '未知日期',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': '此发布已被删除',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': '复制版本到新发布',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': '创建版本',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': '创建发布',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    '删除这个预定的草稿？您的草稿已经是最新的。',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    '删除这个预定的草稿？您的更改将被保存到草稿。',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': '删除这个预定的草稿？',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': '是的，删除计划',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    '通过将它们复制到草稿来保留我的预定更改（推荐）',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    '您的预定草稿与您当前的草稿有不同的更改。',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': '删除预定草稿',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': '选择一个新的日期和时间来安排发布。',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': '更新计划',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': '更改计划',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': '保存',
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': '描述',
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': '编辑发布',
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': '标题',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body': '您确定要立即发布这个预定草稿吗？',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': '是的，现在运行',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': '立即发布草稿',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description': '这使得在处理多个版本时能够显示文档是否存在冲突。',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': '注意：您可以稍后更改发布时间，并设置预定发布的确切时间。',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': '大约发布时间',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': '描述发布…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': '隐藏发布',
+  /** Label for the release menu */
+  'release.menu.label': '发布菜单',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': '查看计划中的草稿',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': '操作',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': '查看内容发布',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': '草稿',
+  /** Label for published releases in navbar */
+  'release.navbar.published': '已发布',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': '发布',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': '无标题发布',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': '为这个发布安排一个将来的时间和日期。',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': '计划在',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': '此版本已取消固定',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "'{{title}}' 发布已存档",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': '创建发布失败',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    '未能删除预定的草稿文档 <strong>{{title}}</strong>：{{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    '预定的草稿文档 <strong>{{title}}</strong> 已被删除。',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': '保存发布详情失败',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "找不到 '{{title}}' 发布",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    '暂停计划中的草稿文档<strong>{{title}}</strong>失败：{{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    '未能立即发布预定的草稿文档 <strong>{{title}}</strong>：{{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    '预定的草稿文档 <strong>{{title}}</strong> 已被发布。',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': '此版本已取消固定',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "'{{title}}' 版本已发布",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    '未能重新安排预定的草稿文档 <strong>{{title}}</strong>：{{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    '预定的草稿文档 <strong>{{title}}</strong> 已被重新安排。',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': '安排草稿失败：{{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': '已成功安排草稿',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': '预定草稿已发布',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': '此文档的一个版本已被添加',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': '此发布已被计划。取消计划以添加更多文档。',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': '尽快',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': '定时',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': '未决定',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': '查看所有文档版本',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': '联系支持',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': '内容发布配置问题',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    '内容发布已为您的项目启用，但似乎存在与您的发布限制相关的配置问题。请联系支持以正确配置您的内容发布。',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': '安排',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': '选择这个文档应该何时发布。',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': '安排草稿发布',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': '预定发布',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '打开搜索',
@@ -1209,35 +1792,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>有</Operator> <Value>{{from}} → {{to}} 项</Value>',
   'search.operator.array-count-range.name': '数量介于',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>包括</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': '包括',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>不包括</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': '不包括',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': '包含',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': '不包含',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': '是',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': '不是',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': '是',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': '不是',
@@ -1250,159 +1825,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': '是',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>在之后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': '之后',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>在之前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': '之前',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': '是',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>在最后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': '最后',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': '不是',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>在之间</Operator> <Value/>',
   'search.operator.date-range.name': '介于',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>在之后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': '之后',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>在之前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': '之前',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': '是',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>在最后</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': '最后',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': '不是',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>介于</Operator> <Value/>',
   'search.operator.date-time-range.name': '介于',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>是</Operator> <Value>非空</Value>',
   'search.operator.defined.name': '非空',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>是</Operator> <Value>空</Value>',
   'search.operator.not-defined.name': '空',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': '是',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': '大于',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': '大于或等于',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': '小于',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': '小于或等于',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': '不是',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>介于</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': '介于',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': '包含',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': '是',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': '不包含',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': '不是',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': '文件',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': '图像',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': '文档',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': '是',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': '不是',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': '包含',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': '是',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': '不包含',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': '不是',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>包含</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': '包含',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': '是',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': '是',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': '不是',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>不包含</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': '不包含',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>不是</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': '不是',
@@ -1425,22 +1960,31 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '搜索结果',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': '编辑列',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': '从表格中移除',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': '重置列',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': '选择最多 5 种字段类型',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '配置状态',
 
+  'time-zone.action.search-for-timezone-placeholder': '搜索城市或时区',
+  'time-zone.action.select-local-time-zone': '选择本地时区',
+  'time-zone.dialog-info.content-releases': '所选时区将改变内容发布中日期的表示方式。',
+  'time-zone.dialog-info.input': '所选时区将仅改变此文档中此输入的日期表示方式。',
+  'time-zone.dialog-info.scheduled-publishing': '所选时区将改变计划中日期的表示方式。',
+  'time-zone.local-time': '本地时间',
+  'time-zone.time-zone': '时区',
+  'time-zone.time-zone-tooltip-content-releases': '在{{alternativeName}} GMT{{offset}}显示发布内容',
+  'time-zone.time-zone-tooltip-input': '在{{alternativeName}} GMT{{offset}}显示<em>{{title}}</em>',
+  'time-zone.time-zone-tooltip-scheduled-publishing': '在{{alternativeName}} GMT{{offset}}显示计划',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': '更改者',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': '文档历史事务未受影响。',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': '检索文档更改时发生错误。',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    '通过工作室配置启用事件 API 以查看文档历史。',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title': '版本文档历史仅通过事件 API 可用。',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description': '更改文档内容时，文档版本将出现在此菜单中。',
   /** Error title for when the document doesn't have history */
@@ -1460,6 +2004,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': '文档修订版',
   /** Label for loading history */
   'timeline.loading-history': '正在加载历史记录…',
+  'timeline.no-previous-events': '没有以前的事件',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '已创建',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1472,6 +2017,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '已删除',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '删除时间：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': '草稿已创建',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': '草稿创建时间：{{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '已丢弃草稿',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1484,6 +2033,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': '实时编辑',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': '实时编辑时间：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': '由保留政策删除',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '已发布',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1492,6 +2043,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '未发布',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '未发布：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': '版本已创建',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': '版本创建时间：{{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': '版本已丢弃',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': '版本丢弃时间：{{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1562,6 +2121,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': '打开菜单',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agent 更改',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': '建议的更改',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1574,6 +2138,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': '选择另一个工作区',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': '切换工作区',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': '选择您的工作区',
   /** Label for the workspace menu */

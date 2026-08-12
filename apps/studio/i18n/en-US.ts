@@ -1,4 +1,3 @@
-/* eslint sort-keys: "error" */
 export default {
   /** Action to delete a single test document */
   'test-documents.action.delete-test-documents_one': 'Delete test document',

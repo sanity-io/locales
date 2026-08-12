@@ -10,12 +10,11 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Zalijepi polje',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Potreban je pristup međuspremniku za kopiranje ovog sadržaja. Dopustite dozvole međuspremnika u postavkama vašeg preglednika, a zatim pokušajte ponovno kopirati.',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Vaš preglednik ne podržava ovu akciju',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': 'Dokument "{{fieldNames}}" kopiran',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Polje "{{fieldName}}" kopirano',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Prazna vrijednost, nema što kopirati',
   /** --- On copy --- */
@@ -32,11 +31,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Nema što zalijepiti',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Neispravan sadržaj međuspremnika',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Dokument "{{fieldNames}}" ažuriran',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': 'Polje "{{fieldName}}" ažurirano',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" nije dopušten u "{{targetSchemaType}}"',
@@ -51,6 +45,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Vrijednost tipa "{{type}}" nije dopuštena u ovom polju',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Preskočena polja samo za čitanje: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Odredište je samo za čitanje',
@@ -60,9 +57,12 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Reference tipa "{{sourceReferenceType}}" nisu dopuštene u referentnom polju koje prihvaća tipove "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Referentni dokument "{{ref}}" ne postoji',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
-    'Izvorni i ciljni tipovi sheme nisu kompatibilni',
+    'Izvorni i odredišni tipovi sheme nisu kompatibilni',
   /** The validation message that is shown when schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.title':
     'Nije moguće odrediti tip sheme za putanju: {{path}}',

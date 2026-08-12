@@ -1,4 +1,3 @@
-/* eslint-disable max-statements */
 import {execFile as execFileCb} from 'node:child_process'
 import {promisify} from 'node:util'
 
@@ -33,14 +32,6 @@ export const PR_LABEL_AWAITING_REVIEW = 'awaiting-review'
  * @internal
  */
 export const PR_LABEL_CHANGES_REQUESTED = 'changes-requested'
-
-/**
- * Label applied when the PR has been auto-merged due to being stale
- *
- * @internal
- */
-export const PR_LABEL_AUTO_MERGED_STALE = 'auto-merged-stale'
-
 /**
  * Label applied when the PR has been nudged for inactivity (maintainers notified by comment)
  *
@@ -127,14 +118,13 @@ export async function adjustLabels(options: AdjustLabelsOptions): Promise<Adjust
     }
   }
 
-  if (isApproved === undefined && hasMaintainerReview) {
-    // See if there are _comments_ that include a `suggestion` block,
-    // in which case we should treat it as requesting changes
+  if ((isApproved === true || isApproved === undefined) && hasMaintainerReview) {
+    // See if there are inline comments from maintainers, which indicate changes are needed
+    // even if the review state is "APPROVED" (maintainers sometimes approve but leave
+    // inline comments with corrections)
     const comments = await getCommentsForPR(prNumber)
-    if (
-      comments.some(({user, body}) => isMaintainer(user.login) && body.includes('```suggestion'))
-    ) {
-      logger('Comments include suggestions, treating as requested changes')
+    if (comments.some(({user}) => isMaintainer(user.login))) {
+      logger('Maintainer left inline comments, treating as requested changes')
       isApproved = false
     }
   }
@@ -192,7 +182,6 @@ async function getPullRequestDetails(prNumber: number): Promise<GitHubPR> {
     ['pr', 'view', `${prNumber}`, '--json', 'reviews,labels,author,files'],
     {
       cwd: rootPath,
-      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )
@@ -218,7 +207,6 @@ async function getCommentsForPR(prNumber: number) {
     ],
     {
       cwd: rootPath,
-      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )

@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'ბმულის ბუფერში ასლის შენახვა ვერ მოხერხდა',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'ბმული დაკოპებულია',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'წაშლილი კომენტარი ვერ აღდგება.',
   /** The delete dialog confirm button text for a comment */
@@ -75,10 +72,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'კომენტარის დამატება',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'კომენტარები ვერ გადაფარვას უნდა',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'დაამატეთ კომენტარი',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'კომენტარების ჩატვირთვისას რაღაც შეცდომა მოხდა',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} ველზე გადასვლა',

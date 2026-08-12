@@ -1,23 +1,46 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': 'Скопіювати ID документа',
+  /** Tooltip for the copy actions dropdown button in the document panel header */
+  'action.copy-document-url.label': 'Скопіювати URL документа',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': 'Скопіювати URL документа',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Операція ще не готова',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'Цей документ ще не існує або вже видалений',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'Цей документ не можна видалити, оскільки він є у запланованих релізах',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'Вибраний реліз або варіант не містить цього документа',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Видалити',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'Видаляється…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip':
+    "Деякі дії з документом вимкнено для документів, пов'язаних з Canvas",
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'Ви впевнені, що хочете скасувати всі зміни з моменту останньої публікації?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'Ви впевнені, що хочете скасувати всі зміни та видалити цей чернетковий документ?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'Скасувати зміни?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'Цей документ не має неопублікованих змін',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'Цей документ не опублікований',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'Операція ще не готова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'Вибраний реліз або варіант не містить цього документа',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Скасувати зміни',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -25,6 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'Цей документ ще не існує, тому немає чого дублювати',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'Вибраний реліз або варіант не містить цього документа',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Дублювати',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -33,10 +59,17 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'Вже опубліковано',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'Опубліковано {{timeSincePublished}} тому',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'Ця версія опублікована як частина свого релізу',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Операція ще не готова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'Вибраний реліз або варіант не містить цього документа',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Опублікувати',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'Опублікувати',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'Опублікувати',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -51,14 +84,21 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'Опубліковано',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'Публікується…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'Перевірка документа…',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'Будь ласка, виправте помилки перевірки перед публікацією',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'Помилки перевірки',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Є помилки перевірки, які потрібно виправити перед публікацією цього документа',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'Очікування завершення завдань перед публікацією',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'Ви впевнені, що хочете відновити цей документ?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'Ви не можете відновити початкову версію',
   /** Label for the "Restore" document action */
   'action.restore.label': 'Відновити',
@@ -68,24 +108,71 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'Цей документ не опубліковано',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'Операція не готова',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'Вибраний реліз або варіант не містить цього документа',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Зняти з публікації',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'Цей документ має увімкнене редагування в реальному часі і не може бути знятий з публікації',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'Ви переглядаєте тільки для читання документ, який був архівований як частина <VersionBadge>{{title}}</VersionBadge>. Його не можна редагувати',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'Ця запланована чернетка заархівована',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'Не можна створити чернетку документа.',
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'Не можна створити опублікований документ.',
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination':
+    'Виберіть призначення для цього документа:',
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive':
+    'Випуск <VersionBadge>{{title}}</VersionBadge> не активний.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Відновити найновішу версію',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Цей документ було видалено.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Цей тип документа застарів.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'Відхилити чернетку',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'Опублікувати, щоб продовжити редагування',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'Тип <strong>{{schemaType}}</strong> має <code>liveEdit</code> увімкнено, але існує чернетка цього документа. Опублікуйте або відхиліть чернетку, щоб продовжити редагування.',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': 'Порівняти чернетку',
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': 'Відхилити чернетку',
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': 'Опублікувати чернетку',
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'Робочий простір не має включених чернеток, але існує чернеткова версія цього документа.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'Розклад зупинено під час редагування. Натисніть Розклад, щоб активувати знову або вибрати нову дату.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Ваша роль <Roles/> не має дозволів на створення цього документа.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Ваша роль <Roles/> не має дозволів на оновлення цього документа.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent': 'Запит редактора відправлено',
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text':
+    'Попросити право на редагування',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'Ви переглядаєте тільки для читання документ, який був опублікований як частина <VersionBadge>{{title}}</VersionBadge>. Його не можна редагувати',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перезавантажити посилання',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -96,6 +183,68 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'Це посилання було видалено з моменту вашого відкриття.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': 'Додати до bundle',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'Додати до релізу',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'Відкрити реліз для редагування',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'Під час додавання документа до релізу сталася помилка: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'Помилка додавання документа до релізу',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'Документ існує тільки в',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'релізі',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'Цей документ є частиною <VersionBadge/> релізу та {{count}} іншого релізу.',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'Цей документ не входить до жодного релізу',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'Цей документ є частиною <VersionBadge/> релізу',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'Не в <VersionBadge>{{title}}</VersionBadge> релізі.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'Будь ласка, зачекайте, поки документ буде доданий до релізу. Це не повинно зайняти більше кількох секунд.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'Додавання документа до релізу…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'Ми не можемо знайти обрану ревізію документа, будь ласка, виберіть інший запис зі списку історії.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'Для цього документа існує запланована чернетка. Якщо ви опублікуєте зміни зараз, вони будуть перезаписані, коли заплановане виконання відбудеться.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'Цей документ буде знятий з публікації як частина <VersionBadge>{{title}}</VersionBadge> релізу',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published':
+    'Показується поточна <strong>опублікована</strong> версія:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'Створити варіант',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'Вибраний варіант <VariantName>{{name}}</VariantName> не знайдено.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'Під час додавання документа до варіанту сталася помилка: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'Помилка додавання документа до варіанту',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'Варіантний документ <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> для <VariantBadge>{{variantTitle}}</VariantBadge> не існує.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'Зачекайте, поки документ додається до варіанту. Це не займе більше кількох секунд.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'Додавання документа до варіанту…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новий {{schemaType}}',
@@ -106,6 +255,15 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'Відкрити дії з документом',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Дії з документом',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Вийти з режиму фокусування (показати навігацію)',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'Увійти в режим фокусування (сховати навігацію)',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'Вийти з режиму фокусування',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'Увійти в режим фокусування',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Розділити панель праворуч',
   /** The tool tip for the split pane button on the document panel header */
@@ -114,6 +272,67 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'Закрити розділену панель',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'Закрити групу панелей',
+
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': 'Редагувати в Canvas',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'Цей документ можна редагувати в Canvas.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas дозволяє вам вільно писати, а потім оновлювати контент у Studio без ручного копіювання з поля в поле.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'Вільне письмо',
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': "Цей чернетковий документ пов'язаний з Canvas",
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': "Цей опублікований документ пов'язаний з Canvas",
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': "Цей версійний документ пов'язаний з Canvas",
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': 'Дізнатися більше',
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description':
+    'Canvas дозволяє створювати вільноформатний редактор, який автоматично відображається у Studio як структурований контент - під час набору тексту.',
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': 'Авторство з ідеї',
+
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'Показ історії для версії <strong>{{perspective}}</strong> цього документа.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'Цей вид показує зміни, які сталися в певній версії цього документа. Виберіть іншу версію, щоб побачити її зміни',
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'З',
+  'changes.tab.history': 'Історія',
+  'changes.tab.review-changes': 'Переглянути зміни',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'До',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" не є підтримуваним режимом порівняння документів.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'Параметр наступного документа недійсний.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'Неможливо порівняти документи',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Параметр попереднього документа недійсний.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'Не вдалося завантажити релізи',
+
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason':
+    'Немає інших версій цього документа для порівняння.',
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'Порівняти версії',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'Чернетка',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'Опубліковано',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'Порівняння версій',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'Скасувати',
@@ -131,22 +350,28 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'Dataset',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ID документа',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'Скопійовано ID документа до буфера обміну!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'Не вдалося скопіювати ID документа',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ID проекту',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Видалити все одно',
+  /** The text in the "Delete anyway" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Зняти з публікації все одно',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Видалити зараз',
+  /** The text in the "Delete now" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Зняти з публікації зараз',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Ви впевнені, що хочете видалити “<DocumentTitle/>”?',
+  /** The confirmation text when the document only has a single version */
+  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Ви впевнені, що хочете зняти з публікації “<DocumentTitle/>”?',
@@ -203,12 +428,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Невідомий тип схеми: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'Куди зникли кнопки версій?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Закрити',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'Інспектування <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Немає значення',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'Закрити панель',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'Під час відображення цієї панелі сталася помилка.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'Повторити',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'Щось пішло не так',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Інспектувати',
   /** the placeholder text for the search input on the inspect dialog */
@@ -217,6 +453,9 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'Розібраний',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Сирий JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip': 'Документ ще не існує у вибраному perspective.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ця форма прихована',
@@ -229,6 +468,66 @@ export default removeUndefinedLocaleResources({
     'Будь ласка, зачекайте, поки документ синхронізується. Це зазвичай відбувається відразу після публікації документа, і це не повинно зайняти більше кількох секунд',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'Синхронізація документа…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'Ми продовжуємо спроби. Тим часом ваші зміни зберігаються у вашому браузері.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'Ваші зміни не зберігаються',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'Редагування відновиться, щойно ваші зміни будуть збережені.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'Збереження ваших змін…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'Редагування призупинено до збереження змін. Ваші зміни зберігаються у вашому браузері, тому тримайте цю вкладку відкритою, поки ми продовжуємо спроби.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'Ваші зміни досі не зберігаються',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': 'Додати до улюблених',
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': 'Видалити з улюблених',
+
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'Ми не можемо завантажити зміни для цього документа, ймовірно через політику зберігання історії вашого плану, це показує, як версія <strong>{{version}}</strong> порівнюється з <strong>опублікованою</strong> версією.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'Порівняння з опублікованим',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'Переглянути <VersionBadge>{{releaseTitle}}</VersionBadge> документ',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'Відкрити <VersionBadge>чернетку</VersionBadge> документ',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'Відкрити випуск <VersionBadge>{{releaseTitle}}</VersionBadge>',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'Додати елемент',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'Вхідні посилання типу {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'Немає елементів',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'Посилання з {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'Тип схеми {{type}} не знайдено',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'Введіть для пошуку',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'Завантаження документів...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'Завантаження документів з різних наборів даних...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'Для цього типу не визначено вхідних посилань, дивіться документацію для отримання додаткової інформації.',
+
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': 'Вхідних посилань не знайдено.',
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'Посилань цього типу не знайдено.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'Тип схеми {{type}} не знайдено',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'Завантаження…',
@@ -245,10 +544,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'Компактний вигляд',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Детальний вигляд',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'Стандартний вигляд',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'Стандартний вигляд вже використовується',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Сортувати за датою створення',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сортувати за датою останнього редагування',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'Стандартне сортування',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'Стандартний порядок сортування вже використовується',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Дізнайтеся, як додати тип документа →',
@@ -288,12 +596,18 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Новий {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Без назви',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'Спробувати знову',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'Повторна спроба…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Помилка: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'Помилка: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': "Здається, інтернет-з'єднання відсутнє.",
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'Не вдалося отримати список елементів',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Повторна спроба…',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Показано максимум {{limit}} документів',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -302,10 +616,23 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'Результатів не знайдено',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'Немає відповідних документів',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': "Спроба відновити з'єднання…",
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'Пошук у списку',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Пошук у списку',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'Змінити порядок результатів пошуку',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'Відсортовано за {{order}}',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'Релевантність',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Відсортовано за релевантністю',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'Цей параметр сортування використовує поля, які не є частиною цього типу документа',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'Деталі',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -319,15 +646,27 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'Успішно виконано {{context}} над документом',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id':
+    'ID документа скопійовано до буфера обміну',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'URL документа скопійовано до буфера обміну',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> було додано до випуску',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Документ було успішно видалено',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
     'Усі зміни з моменту останньої публікації було скасовано. Відкинутий чернет можна відновити з історії',
   /** The text when a duplicate operation succeeded  */
-  'panes.document-operation-results.operation-success_duplicate': undefined, // 'The document was successfully duplicated'
+  'panes.document-operation-results.operation-success_duplicate':
+    'Документ було успішно дубльовано',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'Документ було опубліковано',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': 'Версію опубліковано',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong> було відновлено',
@@ -336,8 +675,6 @@ export default removeUndefinedLocaleResources({
     'Документ було знято з публікації. Чернет було створено з останньої опублікованої версії.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Без назви',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': "З'єднання втрачено. Перепідключення…",
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'Завантаження документа…',
   /** The text of the document not found pane if the schema is known */
@@ -354,6 +691,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Цей документ не існує, і для нього не було вказано тип схеми.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'Завантаження документа…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Завантаження…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -369,6 +708,24 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'Відкрити перегляд',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': 'Відправити запит',
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text':
+    'Ваш запит буде відправлено адміністратору(ам) проекту. Якщо хочете, ви також можете додати примітку',
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': 'Попросити доступ до редагування',
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': 'Якщо хочете, ви можете додати примітку',
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': 'Додати примітку...',
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text':
+    'Ваш запит на доступ до цього проекту було відхилено.',
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text':
+    'Ви досягли ліміту запитів на ролі у всіх проектах. Будь ласка, зачекайте перед поданням нових запитів або зверніться за допомогою до адміністратора.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Збережено',
@@ -406,4 +763,18 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'Перезавантажити',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'Шлях структури',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'Відкрити меню дій',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'Дії',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'Згорнути',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'Розгорнути',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'Реліз з ідентифікатором "{{releaseId}}" не знайдено',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'Внутрішні зміни',
 })

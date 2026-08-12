@@ -1,24 +1,47 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': 'ドキュメントIDをコピー',
+  /** Tooltip for the copy actions dropdown button in the document panel header */
+  'action.copy-document-url.label': 'ドキュメントのURLをコピー',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': 'ドキュメントURLをコピー',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': '操作は準備ができていません',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete':
     'このドキュメントはまだ存在していないか、すでに削除されています',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'このドキュメントはスケジュールされたリリース内に存在するため、削除できません',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Delete" document action button */
   'action.delete.label': '削除',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': '削除中…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip':
+    'ドキュメントがキャンバスにリンクされているため、一部のドキュメントアクションは無効です',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '最後に公開してからのすべての変更を破棄してもよろしいですか？',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'このドラフトドキュメントのすべての変更を破棄してもよろしいですか？',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': '変更を破棄しますか？',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'このドキュメントには未公開の変更がありません',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'このドキュメントは公開されていません',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': '操作は準備ができていません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': '変更を破棄',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -26,6 +49,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'このドキュメントはまだ存在していないので、複製するものがありません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': '複製',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -34,10 +60,17 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': '既に公開済み',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '{{timeSincePublished}}前に公開済み',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'このバージョンはリリースの一部として公開されています',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': '操作は準備ができていません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': '公開',
+  /** Label for the "Publish" document action */
+  'action.publish.label': '公開',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': '公開',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -52,14 +85,20 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': '公開済み',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': '公開中…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'ドキュメントを検証中...',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description': '公開する前に検証エラーを修正してください',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': '検証エラー',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     '公開する前に修正する必要があるバリデーションエラーがあります',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': '公開する前にタスクが完了するのを待っています',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'このドキュメントを復元してもよろしいですか？',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': '初期バージョンには復元できません',
   /** Label for the "Restore" document action */
   'action.restore.label': '復元',
@@ -69,30 +108,78 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'このドキュメントは公開されていません',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': '操作は準備ができていません',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    '選択したリリースまたはバリアントにこのドキュメントが含まれていません',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': '公開取り消し',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'このドキュメントはライブ編集が有効になっており、非公開にすることはできません',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'アーカイブされた<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description':
+    'このスケジュールされたドラフトはアーカイブされています',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'ドラフトドキュメントを作成できません。',
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    '公開ドキュメントを作成できません。',
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination':
+    'このドキュメントの行き先を選択してください：',
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge>リリースはアクティブではありません。',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '最新バージョンを復元',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'このドキュメントは削除されました。',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'このドキュメントタイプは非推奨になりました。',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': '下書きを破棄',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': '編集を続けるために公開する',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    '<strong>{{schemaType}}</strong>のタイプは<code>liveEdit</code>が有効になっていますが、このドキュメントの下書きバージョンが存在します。ライブ編集を続けるためには、下書きを公開するか破棄してください。',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': 'ドラフトを比較する',
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': 'ドラフトを破棄する',
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': 'ドラフトを公開する',
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'ワークスペースはドラフトを有効にしていませんが、このドキュメントのドラフトバージョンが存在します。',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    '編集中にスケジュールが一時停止されました。スケジュールを再開するか、新しい日付を選択してください。',
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
     'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent':
+    '編集リクエストが送信されました',
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': '編集を依頼する',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    '公開された<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'リファレンスを再読み込み',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -103,6 +190,69 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'このリファレンスは開いた時から削除されています。',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': 'バンドルに追加',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'リリースに追加する',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': '編集のためにリリースを開く',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'ドキュメントをリリースに追加する際にエラーが発生しました：{{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'ドキュメントをリリースに追加する際のエラー',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'このドキュメントは現在',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'リリースにのみ存在します',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'このドキュメントは<VersionBadge/>リリースの一部であり、さらに{{count}}つのリリースにも含まれています',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none':
+    'このドキュメントはどのリリースにも属していません',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'このドキュメントは<VersionBadge/>リリースの一部です',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': '<Label>{{title}}</Label>リリースに含まれていません。',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'ドキュメントがリリースに追加されるのをお待ちください。数秒以内に完了するはずです。',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'ドキュメントをリリースに追加しています…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    '選択されたドキュメントのリビジョンが見つかりませんでした。履歴リストから別のエントリを選択してください。',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'このドキュメントにはスケジュールされたドラフトが存在します。今変更を公開すると、スケジュールが実行されるときに上書きされます。',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'このドキュメントは<VersionBadge>{{title}}</VersionBadge>リリースの一部として非公開になります',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published':
+    '現在の<strong>公開</strong>バージョンを表示しています：',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'バリアントを作成',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    '選択したバリアント <VariantName>{{name}}</VariantName> が見つかりませんでした。',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'バリアントへのドキュメント追加中にエラーが発生しました：{{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'バリアントへのドキュメント追加エラー',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    '<PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> の <VariantBadge>{{variantTitle}}</VariantBadge> バリアントドキュメントが存在しません。',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'ドキュメントをバリアントに追加しています。数秒以上かかることはありません。しばらくお待ちください。',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'バリアントにドキュメントを追加中…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': '新しい {{schemaType}}',
@@ -113,6 +263,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'ドキュメントアクションを開く',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'ドキュメントアクション',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'すべてのペインを折りたたむ',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'ペインにフォーカス',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'すべてのペインを折りたたむ',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'ペインにフォーカス',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': '右にペインを分割',
   /** The tool tip for the split pane button on the document panel header */
@@ -121,6 +279,66 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': '分割ペインを閉じる',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'ペイングループを閉じる',
+
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': 'キャンバスで編集',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'このドキュメントはCanvasで編集できます。',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvasを使用すると、自由に書き込んだ後で、手動でフィールドごとにコピーすることなくStudioのコンテンツを更新できます。',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': '自由形式のライティング',
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': 'このドラフトドキュメントはキャンバスにリンクされています',
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': 'このライブドキュメントはキャンバスにリンクされています',
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': 'このバージョンドキュメントはキャンバスにリンクされています',
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': '詳しくはこちら',
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description':
+    'Canvasを使用すると、自由形式のエディターで執筆しながら、入力すると同時にStudioに構造化されたコンテンツとして自動的にマッピングされます。',
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': 'アイデア優先の執筆',
+
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'このドキュメントの<strong>{{perspective}}</strong>バージョンの履歴を表示しています。',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'このビューは、このドキュメントの特定のバージョンで発生した変更を表示します。異なるバージョンを選択して、その変更を見てください',
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'から',
+  'changes.tab.history': '履歴',
+  'changes.tab.review-changes': '変更をレビュー',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'まで',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}"はサポートされていないドキュメント比較モードです。',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': '次のドキュメントパラメータが無効です。',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'ドキュメントを比較できません',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': '前のドキュメントパラメータが無効です。',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'リリースの読み込みに失敗しました',
+
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason':
+    '比較する他のバージョンのドキュメントがありません。',
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'バージョンを比較する',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'ドラフト',
+  /** The string used to label published documents */
+  'compare-versions.status.published': '公開済み',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'バージョンを比較する',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'キャンセル',
@@ -146,21 +364,27 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'データセット',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ドキュメントID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title':
-    'クリップボードにドキュメントIDをコピーしました！',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'ドキュメントIDのコピーに失敗しました',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'プロジェクトID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'それでも削除',
+  /** The text in the "Delete anyway" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'それでも公開を取り消す',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': '今すぐ削除',
+  /** The text in the "Delete now" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': '今すぐ公開を取り消す',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete': '本当に“<DocumentTitle/>”を削除しますか？',
+  /** The confirmation text when the document has multiple versions */
+  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     '本当に“<DocumentTitle/>”の公開を取り消しますか？',
@@ -222,12 +446,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '未知のスキーマタイプ: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'バージョンボタンはどこへ？',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '閉じる',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': '<DocumentTitle/>の検査中',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': '値なし',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'パネルを閉じる',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'このパネルのレンダリング中にエラーが発生しました。',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': '再試行',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': '問題が発生しました',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': '検査',
   /** the placeholder text for the search input on the inspect dialog */
@@ -236,6 +471,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'パース済み',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': '生のJSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'このドキュメントは選択した perspective にまだ存在しません。',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'このフォームは非表示です',
@@ -248,6 +487,65 @@ export default removeUndefinedLocaleResources({
     'ドキュメントが同期される間、しばらくお待ちください。これは通常、ドキュメントが公開された直後に行われ、数秒以上かかることはありません',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'ドキュメントを同期中…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    '引き続き再試行します。それまでの間、変更内容はブラウザに保持されます。',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': '変更が保存されていません',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description': '変更が保存され次第、編集を再開できます。',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': '変更を保存中…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    '変更が保存されるまで編集は一時停止されます。変更内容はブラウザに保持されているため、再試行中はこのタブを開いたままにしてください。',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': '変更がまだ保存されていません',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': 'お気に入りに追加',
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': 'お気に入りから削除',
+
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'プランの履歴保持ポリシーにより、このドキュメントの変更を読み込むことができないため、<strong>{{version}}</strong>バージョンが<strong>公開</strong>バージョンとどのように比較されるかを表示しています。',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': '公開されたものと比較',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge>ドキュメントを検査する',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': '<VersionBadge>ドラフト</VersionBadge>ドキュメントを開く',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge>リリースを開く',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'アイテムを追加',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': '{{type}}タイプの外部参照',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'アイテムなし',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': '{{type}}からの参照',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'スキーマタイプ{{type}}が見つかりません',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': '検索するタイプを入力',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'ドキュメントを読み込み中...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'クロスデータセットドキュメントを読み込み中...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'このタイプには外部参照が定義されていません。詳細はドキュメントを参照してください。',
+
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': '受信参照が見つかりませんでした。',
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'このタイプの参照は見つかりませんでした。',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'スキーマタイプ{{type}}が見つかりません',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '読み込み中…',
@@ -264,10 +562,18 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'コンパクトビュー',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': '詳細ビュー',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'デフォルトビュー',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'すでにデフォルトビューを使用しています',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': '作成日で並び替え',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': '最終編集で並び替え',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'デフォルトの並び順',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason': 'すでにデフォルトの並び順を使用しています',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'ドキュメントタイプの追加方法を学ぶ →',
@@ -308,12 +614,17 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': '新しい{{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'タイトルなし',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': '再試行',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': '再試行中…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'エラー: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'エラー: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'インターネット接続がオフラインのようです。',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'リストアイテムを取得できませんでした',
+  'panes.document-list-pane.error.will-retry-automatically_other': '再試行中… (#{{count}})。',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': '{{limit}}ドキュメントまで表示します',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -322,10 +633,23 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': '結果が見つかりません',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '一致するドキュメントがありません',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': '接続を試みています…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'リストを検索',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'リストを検索',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': '検索結果の並び順を変更',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': '{{order}}で並び替え',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': '関連度',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance': '関連度で並び替え',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'この並び替えオプションは、このドキュメントタイプに含まれていないフィールドを使用しています',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': '詳細',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -338,6 +662,15 @@ export default removeUndefinedLocaleResources({
     'このドキュメントの公開を取り消そうとした際にエラーが発生しました。これは通常、他のドキュメントがそれを参照していることを意味します。',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success': 'ドキュメントに{{context}}を成功させました',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id':
+    'ドキュメントIDをクリップボードにコピーしました',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url':
+    'ドキュメントのURLがクリップボードにコピーされました',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong>がリリースに追加されました',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'ドキュメントは正常に削除されました',
   /** The text when a discard changes operation succeeded  */
@@ -348,6 +681,8 @@ export default removeUndefinedLocaleResources({
     'ドキュメントは正常に複製されました',
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish': 'ドキュメントが公開されました',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': 'バージョンが公開されました',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
     '<Strong>{{title}}</Strong>が復元されました',
@@ -356,8 +691,6 @@ export default removeUndefinedLocaleResources({
     'ドキュメントの公開が取り消されました。最新の公開バージョンからドラフトが作成されました。',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '無題',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': '接続が失われました。再接続中…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'ドキュメントを読み込んでいます…',
   /** The text of the document not found pane if the schema is known */
@@ -374,6 +707,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'このドキュメントは存在せず、それに対するスキーマタイプも指定されていません。',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'ドキュメントを読み込み中…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '読み込み中…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -389,6 +724,24 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'プレビューを開く',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': 'リクエストを送る',
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text':
+    'あなたのリクエストはプロジェクト管理者に送信されます。必要であれば、メモを追加することもできます',
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': '編集アクセスを依頼する',
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': '必要であれば、メモを追加できます',
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': 'メモを追加...',
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text':
+    'このプロジェクトへのアクセスリクエストが拒否されました。',
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text':
+    'すべてのプロジェクトにわたる役割リクエストの限界に達しました。さらにリクエストを送信する前にお待ちいただくか、管理者に連絡して支援を求めてください。',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': '保存済み',
@@ -423,4 +776,18 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': '再読み込み',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': '構造パス',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'アクションメニューを開く',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'アクション',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': '折りたたむ',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': '展開',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'ID "{{releaseId}}" のリリースが見つかりません',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'インライン変更',
 })

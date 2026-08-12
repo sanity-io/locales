@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Impossible de copier le lien dans le presse-papiers',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Lien copié dans le presse-papiers',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Une fois supprimé, un commentaire ne peut pas être récupéré.',
   /** The delete dialog confirm button text for a comment */
@@ -77,11 +74,13 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Ajouter un commentaire',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title':
     'Les commentaires ne peuvent pas se chevaucher',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Ajouter un commentaire',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': "Une erreur s'est produite lors du chargement des commentaires",
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Aller au champ {{field}}',

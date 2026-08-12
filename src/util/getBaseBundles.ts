@@ -1,14 +1,16 @@
+import {glob, readFile} from 'node:fs/promises'
+
+import {parse} from '@babel/parser'
 import traverse from '@babel/traverse'
-import type {CallExpression, Node} from '@babel/types'
-import {globby} from 'globby'
-import {loadFile, type ProxifiedModule} from 'magicast'
+import type {CallExpression, File, Node} from '@babel/types'
 
 import type {BaseResource, ResourceBundle} from '../types'
 import {getRootPath} from './getRootPath'
 import {memoizeAsyncFunction} from './memoizeAsyncFunction'
 
 const DEPENDENCIES = ['sanity', '@sanity/vision']
-const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/src/**/*.ts`
+const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/lib/**/*.js`
+const LOCALE_DEF_FN_NAME = 'defineLocalesResources'
 
 /**
  * Get officially defined bundles from the Sanity source code.
@@ -21,22 +23,29 @@ const GLOB_PATTERN = `node_modules/{${DEPENDENCIES.join(',')}}/src/**/*.ts`
 
 export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles() {
   const rootPath = await getRootPath()
-  const files = await globby(GLOB_PATTERN, {cwd: rootPath})
+  const files = glob(GLOB_PATTERN, {cwd: rootPath})
 
-  if (files.length === 0) {
-    throw new Error('No files found for dependencies - did you install dependencies?')
-  }
+  let fileCount = 0
 
   const bundles: ResourceBundle[] = []
-  for (const file of files) {
-    const mod = await loadFile(file)
-    const importDecl = getLocaleResourceImport(mod)
-    if (!importDecl) {
+  for await (const file of files) {
+    fileCount++
+
+    const ast = parse(await readFile(file, 'utf-8'), {
+      sourceFilename: file,
+      sourceType: 'module',
+    })
+
+    const resourceDefName = getLocaleResourceImportName(ast) || getLocaleResourceDefinerFn(ast)
+    if (!resourceDefName) {
       continue
     }
 
-    const local = importDecl.local
-    bundles.push(extractResources(mod.$ast, local, file))
+    bundles.push(...extractResources(ast, resourceDefName, file))
+  }
+
+  if (fileCount === 0) {
+    throw new Error('No files found for dependencies - did you install dependencies?')
   }
 
   if (bundles.length === 0) {
@@ -46,105 +55,182 @@ export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles
   return bundles
 })
 
-function getLocaleResourceImport(file: ProxifiedModule) {
-  return file.imports.$items.find((item) => item.imported === 'defineLocalesResources')
+function getLocaleResourceImportName(file: File) {
+  let importName: string | undefined
+  traverse(file, {
+    ImportSpecifier(path) {
+      const localNameMatches = path.node.local.name === LOCALE_DEF_FN_NAME
+      const importedNameMatches =
+        path.node.imported.type === 'Identifier' && path.node.imported.name === LOCALE_DEF_FN_NAME
+
+      if (!(localNameMatches || importedNameMatches)) {
+        return
+      }
+
+      // Guard against string-literal export names that happen to be aliased locally.
+      if (localNameMatches && path.node.imported.type !== 'Identifier') {
+        return
+      }
+
+      importName = path.node.local.name
+      path.stop()
+    },
+  })
+  return importName
 }
 
-function extractResources(ast: Node, local: string, fileName: string): ResourceBundle {
-  let node: CallExpression | undefined
+function getLocaleResourceDefinerFn(ast: File) {
+  let fnName: string | undefined
+  traverse(ast, {
+    FunctionDeclaration(path) {
+      const [namespaceParam, resourcesParam] = path.node.params
+      if (
+        path.node.id?.name !== LOCALE_DEF_FN_NAME ||
+        path.node.params.length !== 2 ||
+        namespaceParam?.type !== 'Identifier' ||
+        namespaceParam.name !== 'namespace' ||
+        path.node.body.type !== 'BlockStatement'
+      ) {
+        path.skip()
+        return
+      }
+
+      if (resourcesParam?.type !== 'Identifier') {
+        path.skip()
+        return
+      }
+
+      const resourcesName = resourcesParam.name
+      const retCall = path.node.body.body[0]
+      if (
+        !retCall ||
+        path.node.body.body.length !== 1 ||
+        retCall.type !== 'ReturnStatement' ||
+        !retCall.argument ||
+        retCall.argument.type !== 'Identifier' ||
+        retCall.argument.name !== resourcesName
+      ) {
+        path.skip()
+        return
+      }
+
+      fnName = path.node.id.name
+      path.stop()
+    },
+  })
+
+  return fnName
+}
+
+function extractResources(ast: Node, local: string, fileName: string): Array<ResourceBundle> {
+  const nodes: Array<CallExpression> = []
   traverse(ast, {
     CallExpression(path) {
       if (path.node.callee.type !== 'Identifier' || path.node.callee.name !== local) {
         return
       }
 
-      node = path.node
+      nodes.push(path.node)
     },
   })
 
-  if (!node) {
-    throw new Error(`Could not find call to defineLocaleResources in ${fileName}`)
+  // A file may reference `defineLocalesResources` (e.g. a barrel that re-exports
+  // it) without actually calling it. Such files contribute no bundles, so skip
+  // them rather than treating it as an error. The caller verifies that at least
+  // one bundle was found across all files.
+  if (nodes.length === 0) {
+    return []
   }
 
-  if (node.arguments.length !== 2) {
-    throw new Error(`Expected two arguments to defineLocaleResources in ${fileName}`)
-  }
-
-  const namespaceArg = node.arguments[0]
-  if (namespaceArg.type !== 'StringLiteral') {
-    throw new Error(
-      `Expected first argument to defineLocaleResources to be a string literal in ${fileName}`,
-    )
-  }
-
-  let resourcesArg = node.arguments[1]
-
-  // Handle `{key: value} as const`
-  if (resourcesArg.type === 'TSAsExpression') {
-    resourcesArg = resourcesArg.expression
-  }
-
-  if (resourcesArg.type !== 'ObjectExpression') {
-    throw new Error(
-      `Expected second argument to defineLocaleResources to be an object expression in ${fileName}`,
-    )
-  }
-
-  const resources: BaseResource[] = resourcesArg.properties.map((prop) => {
-    if (prop.type !== 'ObjectProperty') {
-      throw new Error(`Found non-object property in defineLocaleResources in ${fileName}`)
+  const bundles: Array<ResourceBundle> = []
+  for (const node of nodes) {
+    if (node.arguments.length !== 2) {
+      throw new Error(`Expected two arguments to ${LOCALE_DEF_FN_NAME} in ${fileName}`)
     }
 
-    if (prop.computed || prop.shorthand) {
+    const namespaceArg = node.arguments[0]
+    if (namespaceArg?.type !== 'StringLiteral') {
       throw new Error(
-        `Found computed or shorthand property in defineLocaleResources in ${fileName}`,
+        `Expected first argument to ${LOCALE_DEF_FN_NAME} to be a string literal in ${fileName}`,
       )
     }
 
-    if (prop.key.type !== 'StringLiteral') {
-      throw new Error(`Found non-string key in defineLocaleResources in ${fileName}`)
+    let resourcesArg = node.arguments[1]
+
+    // Handle `{key: value} as const`
+    if (resourcesArg?.type === 'TSAsExpression') {
+      resourcesArg = resourcesArg.expression
     }
 
-    if (prop.value.type !== 'StringLiteral' && prop.value.type !== 'TemplateLiteral') {
-      throw new Error(`Found non-string value in defineLocaleResources in ${fileName}`)
+    if (resourcesArg?.type !== 'ObjectExpression') {
+      throw new Error(
+        `Expected second argument to ${LOCALE_DEF_FN_NAME} to be an object expression in ${fileName}`,
+      )
     }
 
-    if (prop.value.type === 'TemplateLiteral') {
-      if (prop.value.expressions.length > 0) {
+    const resources: BaseResource[] = resourcesArg.properties.map((prop) => {
+      if (prop.type !== 'ObjectProperty') {
+        throw new Error(`Found non-object property in ${LOCALE_DEF_FN_NAME} in ${fileName}`)
+      }
+
+      if (prop.computed || prop.shorthand) {
         throw new Error(
-          `Found template literal with expressions in defineLocaleResources in ${fileName}`,
+          `Found computed or shorthand property in ${LOCALE_DEF_FN_NAME} in ${fileName}`,
         )
       }
 
-      if (prop.value.quasis.length > 1) {
-        throw new Error(
-          `Found template literal with multiple quasis in defineLocaleResources in ${fileName}`,
-        )
+      let key: string | undefined
+      if (prop.key.type === 'StringLiteral') {
+        key = prop.key.value
+      } else if (prop.key.type === 'Identifier') {
+        key = prop.key.name
       }
-    }
+      if (!key) {
+        throw new Error(`Found non-string key in ${LOCALE_DEF_FN_NAME} in ${fileName}`)
+      }
 
-    const key = prop.key.value
-    const comments = (prop.leadingComments || [])
-      .filter((comment) => comment.type === 'CommentBlock')
-      .map((comment) => comment.value)
-    const value =
-      prop.value.type === 'StringLiteral'
-        ? prop.value.value
-        : prop.value.quasis.map((tplEl) => tplEl.value.cooked).join('')
+      if (prop.value.type !== 'StringLiteral' && prop.value.type !== 'TemplateLiteral') {
+        throw new Error(`Found non-string value in ${LOCALE_DEF_FN_NAME} in ${fileName}`)
+      }
 
-    return {
-      key,
-      value,
-      comments,
-    }
-  })
+      if (prop.value.type === 'TemplateLiteral') {
+        if (prop.value.expressions.length > 0) {
+          throw new Error(
+            `Found template literal with expressions in ${LOCALE_DEF_FN_NAME} in ${fileName}`,
+          )
+        }
 
-  return {
-    namespace: namespaceArg.value,
-    resources: sortResources(resources),
+        if (prop.value.quasis.length > 1) {
+          throw new Error(
+            `Found template literal with multiple quasis in ${LOCALE_DEF_FN_NAME} in ${fileName}`,
+          )
+        }
+      }
+
+      const comments = (prop.leadingComments || [])
+        .filter((comment) => comment.type === 'CommentBlock')
+        .map((comment) => comment.value)
+      const value =
+        prop.value.type === 'StringLiteral'
+          ? prop.value.value
+          : prop.value.quasis.map((tplEl) => tplEl.value.cooked).join('')
+
+      return {
+        key,
+        value,
+        comments,
+      }
+    })
+
+    bundles.push({
+      namespace: namespaceArg.value,
+      resources: sortResources(resources),
+    })
   }
+
+  return bundles
 }
 
 function sortResources(resources: BaseResource[]) {
-  return resources.sort((a, b) => a.key.localeCompare(b.key))
+  return resources.toSorted((a, b) => a.key.localeCompare(b.key))
 }

@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': '无法复制链接到剪贴板',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': '已复制链接到剪贴板',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': '一旦删除，评论将无法恢复。',
   /** The delete dialog confirm button text for a comment */
@@ -73,10 +70,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': '添加评论',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': '评论不能重叠',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': '添加评论',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': '加载评论时出现了问题',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '前往{{field}}字段',

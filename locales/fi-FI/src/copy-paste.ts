@@ -10,12 +10,10 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Liitä kenttä',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Leikepöydän käyttö vaaditaan tämän sisällön kopioimiseen. Salli leikepöydän käyttöoikeudet selaimen asetuksista ja yritä kopioimista uudelleen.',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Selaimesi ei tue tätä toimintoa',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title':
-    'Dokumentti "{{fieldNames}}" kopioitu',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': 'Kenttä "{{fieldName}}" kopioitu',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tyhjä arvo, ei mitään kopioitavaa',
   /** --- On copy --- */
@@ -32,12 +30,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Ei mitään liitettävää',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Epäkelpo leikepöydän kohde',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Dokumentti "{{fieldNames}}" päivitetty',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'Kenttä "{{fieldName}}" päivitetty',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" ei ole sallittu "{{targetSchemaType}}"-tyypissä',
@@ -52,6 +44,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Tyyppiä "{{type}}" ei sallita tässä kentässä',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Ohitetut vain luku -kentät: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Kohde on vain luku -tilassa',
@@ -61,6 +56,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Viitetyyppiä "{{sourceReferenceType}}" ei sallita viitekentässä, joka hyväksyy tyypit "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Viitatun asiakirjan "{{ref}}" ei ole olemassa',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Lähde- ja kohdeskeematyypit eivät ole yhteensopivia',

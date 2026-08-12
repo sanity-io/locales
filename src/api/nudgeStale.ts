@@ -121,7 +121,8 @@ async function findPendingStaleAutoTranslatedPRs() {
 function getCommentBody(locale: Locale) {
   const daysUntilMerge = Math.max(STALE_MERGE_THRESHOLD_DAYS - STALE_NUDGE_THRESHOLD_DAYS, 1)
   const ats = locale.maintainers.map((maintainer) => `@${maintainer}`).join(' ')
-  return outdent`
+  return (
+    outdent`
     It has been ${STALE_NUDGE_THRESHOLD_DAYS} days since this PR was created, and no maintainer
     has responded to the review request. This PR will automatically be merged as-is if no
     review has been made within the next ${daysUntilMerge} days.
@@ -129,7 +130,13 @@ function getCommentBody(locale: Locale) {
     ${ats}, a review of the changes suggested here would be greatly appreciated 🙏
 
     This is an automatic workflow, replies are not monitored.
-  `.trim()
+  `
+      // Remove soft-wraps (`\n`) in the comment body, only leave paragraphs
+      .trim()
+      .split('\n\n')
+      .map((paragraph) => paragraph.replace(/\n/g, ''))
+      .join('\n\n')
+  )
 }
 
 function noop() {

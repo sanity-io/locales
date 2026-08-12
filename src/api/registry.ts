@@ -23,11 +23,10 @@ export const getLocaleRegistry = memoizeAsyncFunction(async () => {
   const displayName = new Intl.DisplayNames(['en-US'], {type: 'language'})
 
   return locales
-    .sort((a, b) => a.id.localeCompare(b.id))
-    .map(
-      (locale): Locale => ({
-        englishName: displayName.of(locale.id) || locale.name,
-        ...locale,
+    .toSorted((a, b) => a.id.localeCompare(b.id))
+    .map((locale): Locale =>
+      Object.assign({}, locale, {
+        englishName: locale.englishName || displayName.of(locale.id) || locale.name,
         exportName: getExportName(locale),
         packageName: getPackageName(locale),
         path: joinPath(localesPath, locale.id),
@@ -106,8 +105,9 @@ async function loadRegistry(): Promise<LocaleRegistry> {
   } catch (err: unknown) {
     throw new Error(
       `Failed to load locale registry (locales/registry.ts): ${
-        err instanceof Error ? err.message : err
+        err instanceof Error ? err.message : String(err)
       }`,
+      {cause: err},
     )
   }
 
@@ -123,8 +123,9 @@ async function loadRegistry(): Promise<LocaleRegistry> {
   } catch (err: unknown) {
     throw new Error(
       `Locale registry (locales/registry.ts) is invalid: ${
-        err instanceof Error ? err.message : err
+        err instanceof Error ? err.message : String(err)
       }`,
+      {cause: err},
     )
   }
 }

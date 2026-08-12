@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Sao chép vào clipboard',
+  /** Label for deleting a query */
+  'action.delete': 'Xóa',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Chỉnh sửa tiêu đề',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Dừng lại',
   /** Label for setting up a listener */
   'action.listen-execute': 'Lắng nghe',
+  /** Label for query loading table */
+  'action.load-queries': 'Tải các truy vấn',
+  /** Label for loading a query */
+  'action.load-query': 'Tải truy vấn',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Hủy bỏ',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Truy vấn',
+  /** Label for saving a query */
+  'action.save-personal-copy': 'Lưu bản sao cá nhân',
+  /** Label for saving a personal query */
+  'action.save-personal-query': 'Lưu dưới dạng cá nhân',
+  /** Label for saving a query */
+  'action.save-query': 'Lưu truy vấn',
+  /** Label for saving a shared query */
+  'action.save-shared-query': 'Lưu dưới dạng chia sẻ',
+  /** Label for unsharing a query */
+  'action.unshare': 'Hủy chia sẻ',
+  /** Label for updating a query */
+  'action.update': 'Cập nhật',
 
+  /** Label for actions user can take */
+  'label.actions': 'Hành động',
+  /** Label for all saved queries */
+  'label.all': 'Tất cả',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Đã chỉnh sửa',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Mới',
+  /** Label for query type "personal" */
+  'label.personal': 'Cá nhân',
+  /** Label for savedAt date */
+  'label.saved-at': 'Đã lưu lúc',
+  /** Saved queries */
+  'label.saved-queries': 'Các truy vấn đã lưu',
+  /** Search queries */
+  'label.search-queries': 'Tìm kiếm truy vấn',
+  /** Share query */
+  'label.share': 'Chia sẻ',
+  /** Label for query type "shared" */
+  'label.shared': 'Đã chia sẻ',
+  /** Label for saved query type "team" */
+  'label.team': 'Nhóm',
+  /** Label for untitled query fallback */
+  'label.untitled-query': 'Chưa đặt tên',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Tham số không phải là JSON hợp lệ',
@@ -48,6 +90,22 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': 'không áp dụng',
 
+  /** Query already saved error label */
+  'save-query.already-saved': 'Truy vấn đã được lưu',
+  /** Save error label */
+  'save-query.error': 'Lỗi khi lưu truy vấn',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': 'Đã lưu bản sao cá nhân',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    'Các truy vấn được chia sẻ được lưu trữ dưới dạng tài liệu trong dataset của bạn và được tính vào hạn mức tài liệu của bạn.',
+  /** Save shared query success label */
+  'save-query.shared-success': 'Đã lưu truy vấn được chia sẻ',
+  /** Save success label */
+  'save-query.success': 'Truy vấn đã được lưu',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'Truy vấn đã được chuyển sang cá nhân',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Phiên bản API',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Góc nhìn "<code>previewDrafts</code>" đã được đổi tên thành "<code>drafts</code>" và hiện không còn được sử dụng. Thay đổi này có hiệu lực cho tất cả các phiên bản hỗ trợ góc nhìn (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Đọc tài liệu',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Không có góc nhìn (mặc định API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives cho phép truy vấn của bạn chạy trên các "góc nhìn" khác nhau của nội dung trong dataset của bạn',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Góc nhìn mặc định sẽ thay đổi từ "<code>raw</code>" sang "<code>published</code>" trong phiên bản API sắp tới. Vui lòng tham khảo tài liệu để biết thêm chi tiết.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'phiên bản được ghim',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': 'Bản nháp đã lên lịch',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

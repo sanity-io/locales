@@ -34,7 +34,6 @@ export async function getPendingAutoTranslatedPRs(): Promise<GitHubPRList> {
     ],
     {
       cwd: rootPath,
-      // eslint-disable-next-line no-process-env
       env: {...process.env, CLICOLOR: '0'},
     },
   )

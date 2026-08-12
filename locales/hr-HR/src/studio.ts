@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Otkriven problem s konfiguracijom',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatska ažuriranja su omogućena, ali nije konfiguriran <code>deployment.appId</code> u <code>sanity.cli.ts</code>. Ovaj Studio se ažurira protiv <strong>najnovijeg</strong> kanala.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Pogledaj dokumentaciju',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Onemogućeno',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Omogućeno',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Automatska ažuriranja',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Kako omogućiti',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Upravljanje verzijom',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Kopirano u međuspremnik. Sretno lijepljenje!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopiraj u međuspremnik',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Trenutna verzija',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Kako nadograditi',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Najnovija verzija',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Dostupna je nova verzija',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Nova verzija',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Ponovno učitaj',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Ponovno učitaj Studio za ažuriranje',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Razvoj',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Dostupna je nova verzija',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Predizdanje',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Ažurirano',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Ažurno',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Ažuriraj',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Saznajte kako ažurirati Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Korisnički agent',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Pogledaj na GitHubu',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Zatvori',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Zatvori dijalog',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Zatvori',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Odbaci obavijesti',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Otvori obavijesti',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Izbriši',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Dokumenti koji koriste sliku',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Učitavanje…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Odaberi',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Odustani',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Prikazuju se samo datoteke prihvaćenih tipova: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Odustani',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Odaberi',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Odaberite datoteku',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Odaberite sliku',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Greška pri umetanju resursa. Za više informacija pogledajte konzolu.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Učitavanje resursa nije uspjelo',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Učitaj više',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Nema datoteka',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Nema slika',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Trenutno odabrana datoteka ne može biti obrisana',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Slika je obrisana',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Prenesene slike',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Jedan dokument koristi datoteku <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -108,6 +187,42 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Niti jedan dokument ne koristi ovu sliku',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description':
+    'Za više informacija pogledajte konzolu.',
+  'asset-sources.common.uploader.upload-failed.title': 'Prijenos nije uspio',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Datoteke radnog prostora',
+  'asset-sources.dataset.image.title': 'Slike radnog prostora',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Došlo je do pogreške pri pokušaju spajanja Medijske knjižnice.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Nije postavljena medijska knjižnica za ovu organizaciju.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Medijska knjižnica',
+  'asset-sources.media-library.image.title': 'Medijska knjižnica',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Gotovo',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Odaberite novu datoteku za "{{targetTitle}}"',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Odaberite novu datoteku',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Uredi datoteku',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Učitaj u Media Library',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Koristi se postojeća datoteka pronađena u knjižnici.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Datoteka: '{{filename}}' već postoji",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Idi na sljedeći mjesec',
   /** Action message for navigating to next year */
@@ -116,24 +231,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Idi na prethodni mjesec',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Idi na prethodnu godinu',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Danas',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Idi na današnji dan',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Sutra',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Jučer',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Uključi vrijeme',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Odaberi sat',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Odaberi minutu',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Odaberi vrijeme',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Postavi na trenutno vrijeme',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} na {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Otvori kalendar',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Odaberi datum',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Mora biti u formatu: {{exampleDate}}',
   /** Month name for April */
@@ -215,6 +328,9 @@ export default removeUndefinedLocaleResources({
     'Provjerite konzolu za razvojne programere za više informacija',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Prikazivanje promjena na ovom polju uzrokovalo je grešku',
+  'changes.error-description': 'Nismo u mogućnosti učitati promjene za ovaj dokument.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Došlo je do pogreške',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Greška vrijednosti: Vrijednost je tipa "<code>{{actualType}}</code>", očekivano "<code>{{expectedType}}</code>"',
@@ -244,11 +360,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Učitavanje…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Učitavanje promjena…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Nismo mogli pronaći reviziju dokumenta s id: <code>{{revisionId}}</code> koju pokušavate usporediti. <Break/> To je vjerojatno zbog politike zadržavanja povijesti vašeg plana. <Break/> Molimo odaberite drugi <strong>From</strong> unos.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Uredite dokument ili odaberite stariju verziju na vremenskoj traci kako bi se popis promjena pojavio na ovoj ploči.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Nema promjena',
+  'changes.not-selectable': 'Nije moguće odabrati ovaj događaj',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Dodana anotacija',
   /** Portable Text diff: An annotation was changed */
@@ -291,8 +411,18 @@ export default removeUndefinedLocaleResources({
     'Nepoznata vrsta sheme ugrađenog objekta',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Uklonjeno',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Odabrali ste istu <strong>from</strong> i <strong>to</strong> reviziju, molimo odaberite različite revizije kako biste usporedili promjene između njih.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Odabrana ista revizija',
   /** Title for the Review Changes pane */
   'changes.title': 'Pregled promjena',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Ovo polje nije definirano u shemi. Vrijednosti su prikazane kao JSON.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Nacrt',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -303,12 +433,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Potvrdi',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Učitavanje',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Pokušavamo se povezati…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Problemi s konfiguracijom',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Pronađeni problemi s konfiguracijom',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sortiraj po {{title}}',
@@ -328,12 +463,161 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sortiraj po Naslovu',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Zatvori',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Zanemari',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Sljedeće',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Prethodno',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopiraj iz baze',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'promijenjeno',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} u verziji {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Neriješena promjena u verziji {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} neriješenih promjena u verziji {{versionName}}',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Odustani',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Koliko je lako ili teško koristiti novi inventar verzija?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filtriraj {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'pregledava se',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Svi korisnici (Zadano)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': undefined, // 'Create variant'
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Odustani',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 dokument',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} dokumenata',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Dataseti: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Nedostupan dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Nedostupni dataseti',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} u drugom datasetu',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} u {{count}} dataseta',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopiraj ID u međuspremnik',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID dokumenta',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Kopiranje ID-a dokumenta nije uspjelo',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID projekta',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Izbriši (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Izbriši ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Došlo je do pogreške prilikom pokušaja brisanja ovog dokumenta. To obično znači da postoje drugi dokumenti koji se na njega referiraju.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 druga referenca nije prikazana',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} druge reference nisu prikazane',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Ne možemo prikazati metapodatke za ove reference zbog nedostajućeg pristupnog tokena za povezane dataset-ove.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Pregled nije dostupan',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokument se referira na „<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumenata se referira na „<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Možda nećete moći izbrisati „<DocumentTitle/>" jer se sljedeći dokumenti referiraju na njega:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Izbriši {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Izbriši {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'varijantu',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varijante',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'verziju',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'verzije',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Stvoreno {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Uređeno {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Zadnje objavljeno',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Nije objavljeno',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Objavljeno {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Revizija od <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revizija nije pronađena',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Vaše promjene se još uvijek spremaju.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Spremanje traje dulje nego očekivano',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokument je otvoren s praznom vrijednošću. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Nije moguće razriješiti početnu vrijednost',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Tip dokumenta "{{type}}" nije pronađen',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Nije moguće izvršiti ovu akciju',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -434,13 +718,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Pridružite se našoj zajednici',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Najnovija verzija je {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registrirajte studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID aplikacije',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Ponovno učitaj za ažuriranje na v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verzija Sanity Studija {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Pomoć i resursi',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Ažurirano',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Dolazne reference',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Otkaži',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Zadano',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Prenesi',
   /** Uploading <FileName/> */
@@ -460,12 +761,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Dodaj element...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopiraj',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Povucite za promjenu redoslijeda',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Dupliciraj',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Uredi {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Dostignut maksimalan broj stavki',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Ukloni',
   /** Label for removing action when an array item has an error  */
@@ -514,14 +819,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Rješavanje početne vrijednosti…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Onemogućeno',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Odaberite datum u budućnosti.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'npr. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Otvori izbornik opcija datoteke',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Pretraži',
-  /** Select file */
-  'inputs.file.dialog.title': 'Odaberi datoteku',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Nepoznata vrsta člana: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -531,12 +834,15 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Resetiraj vrijednost',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Neispravna vrijednost datoteke',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Odaberi',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Prijenos nije moguće dovršiti u ovom trenutku.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Prijenos nije uspio',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privatna datoteka',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'Pristup CDN-u ograničen na potpisane URL-ove',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Očisti polje',
   /** Copy URL */
@@ -545,6 +851,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Preuzmi',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL je kopiran u međuspremnik',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Otvori u {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Zamijeni',
   /** Upload */
@@ -585,6 +893,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Ispusti za prijenos slike',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Samo za čitanje',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Prenesi datoteke u:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Ovdje nije moguće prenijeti datoteke',
   /** Clear upload */
@@ -594,20 +904,23 @@ export default removeUndefinedLocaleResources({
     'Prijenos nije napredovao najmanje {{staleThresholdMinutes}} minuta i vjerojatno je prekinut. Možete sigurno očistiti nedovršeni prijenos i pokušati ponovno učitati.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Nedovršeni prijenos',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Odaberi datoteku za „{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Obreži sliku',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Otvori dijalog za uređivanje slike',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Otvori izbornik opcija slike',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Odaberi',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Ovdje nije moguće učitati datoteku',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Ispusti sliku za učitavanje',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Ovo polje je samo za čitanje',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Nije moguće učitati sliku. To može biti zbog ograničenja pristupa.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Nepoznata vrsta člana: {{kind}}',
   /** Edit hotspot and crop */
@@ -621,6 +934,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Nevažeća vrijednost slike',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Pregled učitane slike',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Odaberi sliku za „{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Prijenos trenutno nije moguće dovršiti.',
   /** Upload failed */
@@ -632,6 +947,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Greška: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Izrez i Obrezivanje',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline ne podržava hotspot i crop za vektorske formate. Da biste omogućili hotspot i crop, prebacite ovu sliku u bilo koji od podržanih rasterskih formata. Na primjer: <code>fm=jpg</code> na <ImageUrlDocumentationLink>URL-u slike</ImageUrlDocumentationLink> ili pozovite <code>.format('png')</code> s <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Pogledajte informacije za developere',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Upozorenje: Hotspot i crop možda neće biti primijenjeni prilikom prikazivanja ove slike.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Pretvori u {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -659,9 +982,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Sva polja',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Grupe polja',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'greška',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'informacija',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'upozorenje',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Ovo polje je <strong>samo za čitanje</strong> prema shemi dokumenta i ne može se poništiti. Ako želite moći poništiti ovo u Studiju, pobrinite se da uklonite <code>readOnly</code> polje iz obuhvaćenog tipa u shemi.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Nije moguće učitati pregled za referencu „{{documentId}}".',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Ukloni polje',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -855,8 +1187,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normalno',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Dodaj stupac na kraj',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Dodaj redak na kraj',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Ručica stupca',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Izbriši stupac',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Izbriši redak',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Izbriši tablicu',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Zaglavni redak',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Umetni ovdje',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Opcije tablice',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Ručica retka',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Odaberi tablicu',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Očisti',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopiraj',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Stvori',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -912,6 +1268,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Očisti',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Pretraga reference nije uspjela',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': 'Referencirani dokument je nevažećeg tipa ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Pregled slike referentnog dokumenta',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -976,6 +1334,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Neslaganje jačine reference',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Pretvori u slabu referencu',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Očisti',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Generiraj',
   /** Loading message for when the input is actively generating a slug */
@@ -1006,6 +1366,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Vrijednost svojstva nedostaje <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Poništi vrijednost',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Odaberi video za „{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1051,8 +1413,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Nedovoljne dozvole',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Vaša sesija više nije važeća. Molimo prijavite se ponovo.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Vaša sesija je istekla. Molimo prijavite se ponovo.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Odjavljeni ste',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Neočekivana greška: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Vaš preglednik koristi zastarjeli HTTP protokol za komunikaciju sa Sanity. To može rezultirati znatno smanjenom učinkovitošću.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Saznajte više',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ne prikazuj ponovno za ovu sesiju',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Imate uključene kočnice',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Stvori',
@@ -1081,12 +1460,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Stvori novi dokument',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Ponovno učitaj',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio je ažuriran',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Upravljanje članovima',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Tko je ovdje',
@@ -1107,8 +1486,267 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Slika se trenutno učitava',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'upravo sada',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Dodaj u izdanje',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Dodaj u {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Dokument već postoji u izdanju',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Već u izdanju {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopiraj verziju u',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Novo izdanje',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Stvaranje verzije nije uspjelo',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Izbriši raspored',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Odbaci verziju',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Nije uspjelo odbacivanje verzije',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Uredi raspored',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Novo Izdanje',
+  'release.action.new-release.limit-reached_other':
+    'Ovaj radni prostor je ograničen na {{count}} izdanja',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Objavi odmah',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Molimo pokušajte ponovno ili provjerite svoju vezu. Dokument će i dalje biti nepobjavljen pri objavi.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Neuspjelo vraćanje s postavke za nepobjavljivanje pri objavi.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Sada možete uređivati ovu verziju.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Uspješno vraćeno s postavke za nepobjavljivanje pri objavi.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Zakaži objavljivanje',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Nije uspjelo postavljanje verzije da se ne objavi u izdanju',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Uspješno postavljeno <strong>{{title}}</strong> da se ne objavi u izdanju',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Pogledaj izdanje',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Pogledaj zakazane skice',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Zakazano za objavljivanje na {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} varijanta',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varijante',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} verzija',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} verzije',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Nacrt',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Nacrti',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Objavljeno',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Ovo izdanje je arhivirano i ne može se uređivati.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Stvoreno {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Ovaj dokument je u načinu uređivanja uživo, nacrti su onemogućeni',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Uređeno {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Namijenjeno za {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Nema uređivanja',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Nije objavljeno',
+  'release.chip.tooltip.other-variants_one': 'Jedna varijanta',
+  'release.chip.tooltip.other-variants_other': '{{count}} varijante',
+  'release.chip.tooltip.other-versions_one': 'Jedna dodatna verzija izvan izdanja',
+  'release.chip.tooltip.other-versions_other': '{{count}} dodatnih verzija izvan izdanja',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Objavljeno {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Zakazano za {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Nepoznat datum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Ovo izdanje je izbrisano',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopiraj verziju u novo izdanje',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Kreiraj izdanje',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Stvori izdanje',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Izbrisati ovaj zakazani nacrt? Vaš nacrt je već ažuriran.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Izbrisati ovaj zakazani nacrt? Vaše promjene će biti spremljene u nacrt.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Izbrisati ovaj zakazani nacrt?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Da, izbriši raspored',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Zadržite moje zakazane promjene kopiranjem u nacrt (preporučeno)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Vaš zakazani nacrt ima različite promjene od vašeg trenutnog nacrta.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Izbriši zakazanu skicu',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Odaberite novi datum i vrijeme za zakazano objavljivanje.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Ažuriraj raspored',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Promijeni raspored',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Jeste li sigurni da želite odmah objaviti ovu zakazanu skicu?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Da, pokreni odmah',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Objavi skicu odmah',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'To omogućuje prikazivanje postojanja sukoba u dokumentima prilikom rada na više verzija.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    'NAPOMENA: Možete promijeniti vrijeme izdanja i postaviti točno vrijeme za zakazano objavljivanje kasnije.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Približno vrijeme izdanja',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Opišite izdanje…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Sakrij izdanje',
+  /** Label for the release menu */
+  'release.menu.label': 'Izbornik izdanja',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Pogledajte zakazane skice',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Akcije',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Pogledajte izdanja sadržaja',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Nacrti',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Objavljeno',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Izdanja',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Izdanje bez naslova',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': 'Zakažite za budući datum i vrijeme.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Objavi na',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Ovo izdanje je odspojeno',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "Izdanje '{{title}}' je arhivirano",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Neuspješno stvaranje izdanja',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Nije uspjelo brisanje zakazanog dokumenta skice <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Zakazani dokument skice <strong>{{title}}</strong> je izbrisan.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "Izdanje '{{title}}' nije moguće pronaći",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Nije uspjelo pauziranje zakazanog nacrta dokumenta <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Nije uspjelo objavljivanje zakazanog dokumenta skice <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Zakazani dokument skice <strong>{{title}}</strong> je objavljen.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Ovo izdanje je odspojeno',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "Izdanje '{{title}}' je objavljeno",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Nije uspjelo preusmjeravanje zakazanog dokumenta skice <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Zakazani dokument skice <strong>{{title}}</strong> je preusmjeren.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Nije uspjelo zakazivanje nacrta: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Nacrt je uspješno zakazan',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Zakazani nacrt je objavljen',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Verzija ovog dokumenta je već dodana',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked': 'Ovo izdanje je zakazano. Otkazati ga za dodavanje više dokumenata.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Što prije',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'U to vrijeme',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Neodlučeno',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Pogledajte sve verzije dokumenta',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Kontaktirajte podršku',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Problem s konfiguracijom izdanja sadržaja',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Izdanja sadržaja su omogućena za vaš projekt, ali čini se da postoji problem s konfiguracijom vaših ograničenja izdanja. Molimo kontaktirajte podršku kako bi vaša izdanja sadržaja bila pravilno konfigurirana.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Zakaži',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Odaberite kada bi ovaj dokument trebao biti objavljen.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Zakaži objavljivanje nacrta',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Zakazano objavljivanje',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otvori pretragu',
@@ -1287,37 +1925,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>ima</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>ima</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-equal.name': 'količina je',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>ima ></Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>ima ></Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-gt.name': 'količina veća od',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>ima ≥</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>ima ≥</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-gte.name': 'količina veća ili jednaka',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>ima <</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>ima <</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-lt.name': 'količina manja od',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>ima ≤</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>ima ≤</Operator> <Value>{{count}} stavki</Value>',
   'search.operator.array-count-lte.name': 'količina manja ili jednaka',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>nema</Operator> <Value>{{count}} stavku</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1330,35 +1962,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>ima između</Operator> <Value>{{from}} → {{to}} stavki</Value>',
   'search.operator.array-count-range.name': 'količina je između',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'uključuje',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>ne uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'ne uključuje',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'uključuje',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>ne uključuje</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'ne uključuje',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'je',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'nije',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'je',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'nije',
@@ -1371,161 +1995,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'je',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>je nakon</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'nakon',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>je prije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'prije',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'je',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>je u zadnjem</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'zadnji',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'nije',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>je između</Operator> <Value/>',
   'search.operator.date-range.name': 'je između',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>je nakon</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'poslije',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>je prije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'prije',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'je',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>je u zadnjih</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'zadnji',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'nije',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>je između</Operator> <Value/>',
   'search.operator.date-time-range.name': 'je između',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>je</Operator> <Value>nije prazno</Value>',
   'search.operator.defined.name': 'nije prazno',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>je</Operator> <Value>prazno</Value>',
   'search.operator.not-defined.name': 'prazno',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'je',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'veće od',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'veće ili jednako',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'manje od',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'manje ili jednako',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'nije',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>je između</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'je između',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'sadrži',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'je',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'ne sadrži',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'nije',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'datoteka',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'slika',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'dokument',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'je',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'nije',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'sadrži',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'je',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'ne sadrži',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'nije',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'sadrži',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'je',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>je</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'je',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'nije',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>ne sadrži</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'ne sadrži',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>nije</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'nije',
@@ -1548,24 +2132,40 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Rezultati pretraživanja',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Uredi stupce',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Ukloni iz tablice',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Resetiraj stupce',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Odaberite do 5 vrsta polja',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Status konfiguracije',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Pretražite grad ili vremensku zonu',
+  'time-zone.action.select-local-time-zone': 'Odaberite lokalnu vremensku zonu',
+  'time-zone.dialog-info.content-releases':
+    'Odabrana vremenska zona će promijeniti kako su datumi prikazani u izdanjima sadržaja.',
+  'time-zone.dialog-info.input':
+    'Odabrana vremenska zona će promijeniti kako su datumi prikazani samo za ovaj unos u ovom dokumentu.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Odabrana vremenska zona će promijeniti kako su datumi prikazani u rasporedima.',
+  'time-zone.local-time': 'lokalno vrijeme',
+  'time-zone.time-zone': 'Vremenska zona',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Prikazivanje izdanja u {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Prikazivanje <em>{{title}}</em> u {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Prikazivanje rasporeda u {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Promjene od',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
-    'Transakcije povijesti dokumenta nisu bile pogođene.',
+    'Transakcije povijesti dokumenta nije moguće učitati.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Došlo je do pogreške prilikom dohvaćanja promjena dokumenta.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Omogućite API događaja kroz Studio konfiguraciju za pregled povijesti dokumenta.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Povijest verzija dokumenata dostupna je samo kroz API događaja.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Kada mijenjate sadržaj dokumenta, verzije dokumenta će se pojaviti u ovom izborniku.',
@@ -1586,6 +2186,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Revizije dokumenta',
   /** Label for loading history */
   'timeline.loading-history': 'Učitavanje povijesti…',
+  'timeline.no-previous-events': 'Nema prethodnih događaja',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Stvoreno',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1598,6 +2199,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Izbrisano',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Izbrisano: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Nacrt stvoren',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Nacrt stvoren: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Odbačena skica',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1610,6 +2215,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Uređeno uživo',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Uređeno uživo: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Izbrisano zbog politike zadržavanja',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Objavljeno',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1618,6 +2225,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Poništena objava',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Poništena objava: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Verzija stvorena',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Verzija stvorena: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Verzija odbačena',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Verzija odbačena: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1692,6 +2307,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Otvori izbornik',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Promjene agenta',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Predložene promjene',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1704,6 +2324,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Odaberite drugi radni prostor',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Promijeni radni prostor',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Odaberite svoj radni prostor',
   /** Label for the workspace menu */

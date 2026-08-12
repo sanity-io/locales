@@ -51,6 +51,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': '需要文件',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': '需要图片',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': '在媒体库中找不到该资源',
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': '必须是对媒体库资源的引用',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': '必须是文档的引用',
   /** Object references a document which is not published */
@@ -62,6 +66,8 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': '没有验证错误',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': '验证',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message': '文档将要取消发布，不显示验证错误',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug 必须有一个值',

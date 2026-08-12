@@ -51,6 +51,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': 'Dosya gerekli',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Resim gerekli',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': 'Medya Kütüphanesinde varlık bulunamadı',
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': 'Medya Kütüphanesi varlığına bir referans olmalı',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Bir belgeye referans olmalıdır',
   /** Object references a document which is not published */
@@ -62,6 +66,8 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': 'Doğrulama hataları yok',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Doğrulama',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message': 'Belge yayından kaldırılacak, doğrulama hataları gösterilmiyor',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug bir değere sahip olmalı',

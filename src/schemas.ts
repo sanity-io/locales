@@ -3,7 +3,7 @@ import {z} from 'zod'
 const ghUsernamePattern = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i
 
 const localeIdSchema = z.string().regex(/^([a-z]+)|([a-z]+-[A-Z]+)$/, {
-  message:
+  error:
     'Should only include lowercase characters, or lowercased followed by uppercase, eg `en` or `en-US`',
 })
 
@@ -30,9 +30,17 @@ const weekInfo = {
 
   /**
    * An integer between 1 and 7 indicating the minimal days required in the first week of a month or year, for calendar purposes.
+   * Deprecated upstream in `sanity`, but still emitted for backwards compatibility with older studios.
    */
-  minimalDays: weekDaySchema,
+  minimalDays: weekDaySchema.optional(),
 }
+
+/**
+ * (Default) week info for a locale
+ *
+ * @internal
+ */
+export const weekInfoSchema = z.object(weekInfo)
 
 /**
  * An entry in the `locales/registry.ts` file, which records the available locales and their maintainers
@@ -63,17 +71,19 @@ export const localeEntrySchema = z.object({
    * maintaining (eg responding to PR reviews etc) should be moved to `contributors`.
    */
   maintainers: z
-    .array(z.string().regex(ghUsernamePattern, {message: 'Invalid GitHub username'}))
-    .refine((val) => new Set(val).size === val.length, {message: 'Values should be unique'}),
+    .array(z.string().regex(ghUsernamePattern, {error: 'Invalid GitHub username'}))
+    .refine((val) => new Set(val).size === val.length, {error: 'Values should be unique'}),
 
   /**
    * Array of GitHub usernames of contributors for the locale, eg ['rexxars', 'bjoerge'].
    *
-   * This may hold duplicates from `maintainers`, as it holds both active and inactive contributors
+   * This generally holds historical contributors that have stopped maintaining
+   * (eg responding to PR reviews etc), or people who are not maintainers but have made
+   * significant contributions to the locale through PRs/issues.
    */
   contributors: z
-    .array(z.string().regex(ghUsernamePattern, {message: 'Invalid GitHub username'}))
-    .refine((val) => new Set(val).size === val.length, {message: 'Values should be unique'}),
+    .array(z.string().regex(ghUsernamePattern, {error: 'Invalid GitHub username'}))
+    .refine((val) => new Set(val).size === val.length, {error: 'Values should be unique'}),
 
   /**
    * (Default) week info for this locale
@@ -99,7 +109,7 @@ export const localeRegistrySchema = z.array(localeEntrySchema)
  * @internal
  */
 export const packageJsonSchema = z
-  .object({
+  .looseObject({
     // NOTE: Intentionally NOT ordered alphabetically, but by "preferred order",
     // since zod orders the returned objects according to this
     name: z.string(),
@@ -109,7 +119,7 @@ export const packageJsonSchema = z
     sideEffects: z.boolean().optional(),
     main: z.string(),
     license: z.string(),
-    scripts: z.record(z.string()),
+    scripts: z.record(z.string(), z.string()),
     keywords: z.array(z.string()),
     homepage: z.string(),
     bugs: z.object({
@@ -122,17 +132,9 @@ export const packageJsonSchema = z
         directory: z.string(),
       })
       .partial(),
-    dependencies: z.record(z.string()),
-    devDependencies: z.record(z.string()),
-    peerDependencies: z.record(z.string()),
-    prettier: z
-      .object({
-        bracketSpacing: z.boolean(),
-        printWidth: z.number(),
-        semi: z.boolean(),
-        singleQuote: z.boolean(),
-      })
-      .partial(),
+    dependencies: z.record(z.string(), z.string()),
+    devDependencies: z.record(z.string(), z.string()),
+    peerDependencies: z.record(z.string(), z.string()),
   })
   .partial({
     private: true,
@@ -146,9 +148,7 @@ export const packageJsonSchema = z
     dependencies: true,
     devDependencies: true,
     peerDependencies: true,
-    prettier: true,
   })
-  .passthrough()
 
 /**
  * Object of resources, eg `key: value` pairs
@@ -169,9 +169,9 @@ export const resourcesSchema = z.record(
  * @internal
  */
 export const tsConfigSchema = z
-  .object({
+  .looseObject({
     compilerOptions: z
-      .object({
+      .looseObject({
         paths: z.record(z.string(), z.array(z.string())),
       })
       .partial(),
@@ -179,29 +179,13 @@ export const tsConfigSchema = z
   .partial({
     compilerOptions: true,
   })
-  .passthrough()
-
-/**
- * A very minimal release-please-config.json schema, including only the parts we care about validating
- *
- * @internal
- */
-export const releasePleaseSchema = z
-  .object({
-    $schema: z.string(),
-    packages: z.record(z.string(), z.object({})),
-  })
-  .partial({
-    packages: true,
-  })
-  .passthrough()
 
 /**
  * Minimal version of a GitHub review - only includes the parts we care about
  *
  * @internal
  */
-export const githubReviewSchema = z.object({
+const githubReviewSchema = z.object({
   id: z.string(),
   author: z.object({
     login: z.string(),
@@ -219,7 +203,7 @@ export const githubReviewSchema = z.object({
  *
  * @internal
  */
-export const githubLabelSchema = z.object({
+const githubLabelSchema = z.object({
   id: z.string(),
   name: z.string(),
   description: z.string(),
@@ -243,7 +227,6 @@ export const githubFileSchema = z.object({
  * @internal
  */
 export const githubPrSchema = z.object({
-  // eslint-disable-next-line camelcase
   author: z.object({is_bot: z.boolean(), login: z.string()}),
   reviews: z.array(githubReviewSchema),
   labels: z.array(githubLabelSchema),
@@ -279,8 +262,7 @@ export const githubPrListSchema = z.array(
  *
  * @internal
  */
-export const githubPrCommentSchema = z.object({
-  // eslint-disable-next-line camelcase
+const githubPrCommentSchema = z.object({
   pull_request_review_id: z.number(),
   body: z.string(),
   user: z.object({login: z.string()}),
@@ -299,38 +281,28 @@ export const githubPrCommentsSchema = z.array(githubPrCommentSchema)
  *
  * @internal
  */
-export const aiTranslateWorkflowSchema = z
-  .object({
-    name: z.string(),
-    on: z
-      .object({
-        // eslint-disable-next-line camelcase
-        workflow_dispatch: z
-          .object({
-            inputs: z.object({
-              locale: z
-                .object({
-                  type: z.literal('choice'),
-                  description: z.string().optional(),
-                  options: z.array(z.string()),
-                  default: z.string().optional(),
-                  required: z.boolean().optional(),
-                })
-                .passthrough(),
-              namespace: z
-                .object({
-                  type: z.literal('choice'),
-                  description: z.string().optional(),
-                  options: z.array(z.string()),
-                  default: z.string().optional(),
-                  required: z.boolean().optional(),
-                })
-                .passthrough()
-                .optional(),
-            }),
+export const aiTranslateWorkflowSchema = z.looseObject({
+  name: z.string(),
+  on: z.looseObject({
+    workflow_dispatch: z.looseObject({
+      inputs: z.object({
+        locale: z.looseObject({
+          type: z.literal('choice'),
+          description: z.string().optional(),
+          options: z.array(z.string()),
+          default: z.string().optional(),
+          required: z.boolean().optional(),
+        }),
+        namespace: z
+          .looseObject({
+            type: z.literal('choice'),
+            description: z.string().optional(),
+            options: z.array(z.string()),
+            default: z.string().optional(),
+            required: z.boolean().optional(),
           })
-          .passthrough(),
-      })
-      .passthrough(),
-  })
-  .passthrough()
+          .optional(),
+      }),
+    }),
+  }),
+})

@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': '클립보드에 링크를 복사할 수 없습니다',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': '클립보드에 링크를 복사했습니다',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': '한 번 삭제하면 댓글을 복구할 수 없습니다.',
   /** The delete dialog confirm button text for a comment */
@@ -73,10 +70,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': '댓글 추가',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': '댓글이 겹칠 수 없습니다',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': '댓글 추가',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': '댓글을 로딩하는 동안 문제가 발생했습니다',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} 필드로 이동',

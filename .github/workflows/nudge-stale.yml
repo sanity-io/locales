@@ -9,23 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/checkout@v7
         with:
-          node-version: 20
+          persist-credentials: false
 
-      - name: Use pnpm
-        run: corepack enable && pnpm --version
+      - name: Install pnpm, Node.js and dependencies
+        uses: pnpm/setup@v2
+        with:
+          runtime: node@lts
+          cache: true
 
-      - name: Install dependencies
-        run: pnpm install --ignore-scripts
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v3
+        id: generate-token
+        with:
+          client-id: ${{ vars.ECOSPARK_CLIENT_ID }}
+          private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
 
       - name: Nudge stale PRs
         run: pnpm run ci:nudge-stale
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}

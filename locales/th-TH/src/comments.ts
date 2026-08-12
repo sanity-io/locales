@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'ไม่สามารถคัดลอกลิงก์ไปยังคลิปบอร์ดได้',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'เมื่อลบแล้ว ความคิดเห็นจะไม่สามารถกู้คืนได้',
   /** The delete dialog confirm button text for a comment */
@@ -73,10 +70,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'เพิ่มความคิดเห็น',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'ไม่สามารถทับซ้อนความคิดเห็นได้',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'เพิ่มความคิดเห็น',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'เกิดข้อผิดพลาดขณะโหลดความคิดเห็น',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'ไปที่ฟิลด์ {{field}}',
@@ -144,8 +143,7 @@ export default removeUndefinedLocaleResources({
   'mentions.user-list-aria-label': 'รายชื่อผู้ใช้ที่จะกล่าวถึง',
 
   /** The comments onboarding popover text */
-  'onboarding.body':
-    'คุณสามารถเพิ่มความคิดเห็นในฟิลด์ใดก็ได้ในเอกสาร พวกมันจะแสดงที่นี่ จัดกลุ่มตามฟิลด์',
+  'onboarding.body': 'คุณสามารถเพิ่มความคิดเห็นในฟิลด์ใดก็ได้ในเอกสาร พวกมันจะแสดงที่นี่ จัดกลุ่มตามฟิลด์',
   /** The comments onboarding dismiss text */
   'onboarding.dismiss': 'เข้าใจแล้ว',
   /** The comments onboarding popover header text */
@@ -178,8 +176,7 @@ export default removeUndefinedLocaleResources({
    * - `<Text>` - should be wrapped around the text describing the action ("reacted with")
    * - `<ReactionName/>` - the name of the reaction emoji, eg ":heavy_plus_sign:"
    */
-  'reactions.users-reacted-with-reaction':
-    '<UserList/> <Text>ได้ตอบกลับด้วย</Text> <ReactionName/>',
+  'reactions.users-reacted-with-reaction': '<UserList/> <Text>ได้ตอบกลับด้วย</Text> <ReactionName/>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
   'status-filter.status-open': 'เปิด',

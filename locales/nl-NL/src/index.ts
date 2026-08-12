@@ -5,6 +5,11 @@ const locale = defineLocale({
   title: 'Nederlands',
   bundles: [
     {
+      namespace: 'canvas',
+      resources: () => import('./canvas'),
+    },
+
+    {
       namespace: 'comments',
       resources: () => import('./comments'),
     },
@@ -12,6 +17,31 @@ const locale = defineLocale({
     {
       namespace: 'copy-paste',
       resources: () => import('./copy-paste'),
+    },
+
+    {
+      namespace: 'feedback',
+      resources: () => import('./feedback'),
+    },
+
+    {
+      namespace: 'media-library',
+      resources: () => import('./media-library'),
+    },
+
+    {
+      namespace: 'presentation',
+      resources: () => import('./presentation'),
+    },
+
+    {
+      namespace: 'releases',
+      resources: () => import('./releases'),
+    },
+
+    {
+      namespace: 'singleDocRelease',
+      resources: () => import('./singleDocRelease'),
     },
 
     {
@@ -41,7 +71,7 @@ const locale = defineLocale({
   ],
   weekInfo: {
     firstDay: 1,
-    minimalDays: 4,
+    minimalDays: 1,
     weekend: [6, 7],
   },
 })

@@ -10,11 +10,10 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': '粘贴字段',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    '复制此内容需要访问剪贴板。请在浏览器设置中允许剪贴板权限，然后再次尝试复制。',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title': '您的浏览器不支持此操作',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': '文档 "{{fieldNames}}" 已复制',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': '字段 "{{fieldName}}" 已复制',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空值，无内容可复制',
   /** --- On copy --- */
@@ -31,10 +30,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': '无内容可粘贴',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': '剪贴板项无效',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title': '文档 "{{fieldNames}}" 已更新',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': '字段 "{{fieldName}}" 已更新',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '一个 "{{sourceSchemaType}}" 不允许在一个 "{{targetSchemaType}}"',
@@ -48,6 +43,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     '类型为 "{{type}}" 的值不允许在此字段中',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    '已跳过只读字段：{{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': '目标是只读的',
@@ -57,6 +55,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     '类型为 "{{sourceReferenceType}}" 的引用不允许在接受类型为 "{{targetReferenceTypes}}" 的引用字段中',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    '引用的文档 "{{ref}}" 不存在',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description': '源和目标模式类型不兼容',
   /** The validation message that is shown when schema types are incompatible */

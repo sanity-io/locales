@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Configuratieprobleem gedetecteerd',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automatische updates zijn ingeschakeld, maar er is geen <code>deployment.appId</code> geconfigureerd in <code>sanity.cli.ts</code>. Deze Studio wordt bijgewerkt tegen het <strong>latest</strong>-kanaal.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Bekijk documentatie',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Uitgeschakeld',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Ingeschakeld',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Automatische Updates',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Hoe in te schakelen',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Beheer versie',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Gekopieerd naar klembord. Gelukkig plakken!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopiëren naar klembord',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Huidige versie',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Hoe te upgraden',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Laatste versie',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Nieuwe versie beschikbaar',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Nieuwe versie',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Herladen',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Herlaad Studio om bij te werken',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Ontwikkeling',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Nieuwe versie beschikbaar',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Vooruitgave',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Up-to-date',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Up-to-date',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Bijwerken',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Leer hoe je Sanity Studio kunt bijwerken',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'User agent',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Bekijk op GitHub',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Sluiten',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Dialoog sluiten',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Sluiten',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Aankondigingen negeren',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Aankondigingen openen',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Verwijderen',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Documenten die afbeelding gebruiken',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Laden…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Selecteren',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Annuleren',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Alleen assets van geaccepteerde typen worden getoond: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Annuleren',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Selecteren',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Selecteer bestand',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Selecteer afbeelding',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Fout bij het invoegen van asset. Zie de console voor meer informatie.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Laden van assets mislukt',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Meer laden',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Geen bestanden',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Geen afbeeldingen',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Kan het momenteel geselecteerde bestand niet verwijderen',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Afbeelding is verwijderd',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Geüploade afbeeldingen',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Eén document gebruikt bestand <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -109,6 +188,41 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Geen documenten gebruiken deze afbeelding',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': 'Zie de console voor meer informatie.',
+  'asset-sources.common.uploader.upload-failed.title': 'Upload mislukt',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Werkruimte bestanden',
+  'asset-sources.dataset.image.title': 'Werkruimte afbeeldingen',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Er is iets misgegaan bij het ophalen van de Media Bibliotheek voor dit project.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Er is geen mediabibliotheek voor deze organisatie ingericht.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Media Bibliotheek',
+  'asset-sources.media-library.image.title': 'Media Bibliotheek',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Klaar',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Selecteer een nieuw asset voor “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Selecteer een nieuw asset',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Bewerk asset',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Uploaden naar Media Library',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Het bestaande bestand dat in de bibliotheek is gevonden wordt gebruikt.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Bestand: '{{filename}}' bestaat al",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "De release '<strong>{{title}}</strong>' is verwijderd.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ga naar de volgende maand',
   /** Action message for navigating to next year */
@@ -117,24 +231,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Ga naar de vorige maand',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Ga naar het vorige jaar',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Vandaag',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Ga naar vandaag',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Morgen',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Gisteren',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Tijd opnemen',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Selecteer uur',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Selecteer minuut',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Selecteer tijd',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Instellen op de huidige tijd',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} op {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Kalender openen',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Selecteer datum',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format':
     'Moet in het formaat <Emphasis>{{exampleDate}}</Emphasis> zijn',
@@ -220,6 +332,9 @@ export default removeUndefinedLocaleResources({
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title':
     'Het weergeven van de wijzigingen in dit veld veroorzaakte een fout',
+  'changes.error-description': 'We kunnen de wijzigingen voor dit document niet laden.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Er is iets fout gegaan',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Waarde fout: Waarde is van type "<code>{{actualType}}</code>", verwacht "<code>{{expectedType}}</code>"',
@@ -249,11 +364,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Laden…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Wijzigingen laden…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'We konden de documentrevisie met id: <code>{{revisionId}}</code> waar u naar probeert te vergelijken niet vinden. <Break/> Dit komt waarschijnlijk door het retentiebeleid van uw plan. <Break/> Selecteer een andere <strong>Van</strong> invoer.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Bewerk het document of selecteer een oudere versie in de tijdlijn om een lijst van wijzigingen te zien verschijnen in dit paneel.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Er zijn geen wijzigingen',
+  'changes.not-selectable': 'Het is niet mogelijk om deze gebeurtenis te selecteren',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Annotatie toegevoegd',
   /** Portable Text diff: An annotation was changed */
@@ -295,8 +414,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Onbekend schema type',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Verwijderd',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'U heeft dezelfde <strong>van</strong> en <strong>naar</strong> revisie geselecteerd, selecteer verschillende revisies om de wijzigingen tussen hen te vergelijken.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Zelfde revisie geselecteerd',
   /** Title for the Review Changes pane */
   'changes.title': 'Wijzigingen beoordelen',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Dit veld is niet gedefinieerd in het schema. Waarden worden weergegeven als JSON.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Concept',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -307,12 +436,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Bevestigen',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Laden',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Proberen te verbinden…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Configuratieproblemen',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Configuratieproblemen gevonden',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Sorteer op {{title}}',
@@ -332,12 +466,161 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sorteren op titel',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Sluiten',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Negeren',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Volgende',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Vorige',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopiëren van basis',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'gewijzigd',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} in {{versionName}} versie',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Onopgeloste wijziging in {{versionName}} versie',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} onopgeloste wijzigingen in {{versionName}} versie',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Annuleren',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Hoe gemakkelijk of moeilijk is de nieuwe versie-inventaris in gebruik?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Filter {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'bekijken',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Alle gebruikers (Standaard)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Variant aanmaken',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Variant aanmaken voor {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Als concept',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'In een release',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Of bekijk bestaande varianten',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Annuleren',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 document',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} documenten',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasets: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Niet-beschikbare dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Niet-beschikbare datasets',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} in een andere dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} in {{count}} datasets',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'ID naar klembord kopiëren',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Document ID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Kopiëren van document ID mislukt',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Project ID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Verwijderen (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Verwijderen ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Er is een fout opgetreden bij het verwijderen van dit document. Dit betekent meestal dat er andere documenten zijn die ernaar verwijzen.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 andere verwijzing niet weergegeven',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} andere verwijzingen niet weergegeven',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'We kunnen geen metadata weergeven voor deze verwijzingen omdat er een toegangstoken ontbreekt voor de gerelateerde datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Voorbeeld niet beschikbaar',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 document verwijst naar "<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} documenten verwijzen naar "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Mogelijk kunt u "<DocumentTitle/>" niet verwijderen omdat de volgende documenten ernaar verwijzen:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': '{{count}} {{subject}} verwijderen',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} {{subject}} verwijderen',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variant',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'varianten',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'versie',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versies',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Gemaakt op {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Bewerkt {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Laatst gepubliceerd',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Niet gepubliceerd',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Gepubliceerd {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Revisie van <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Revisie niet gevonden',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Uw wijzigingen worden nog opgeslagen.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Opslaan duurt langer dan verwacht',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Het document is geopend met een lege waarde. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Kan beginwaarde niet bepalen',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Documenttype "{{type}}" niet gevonden',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Niet in staat om deze actie uit te voeren',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -391,13 +674,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Geen array-item met `_key` <code>"{{key}}"</code> gevonden op pad <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'Call Stack:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Component Stack:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Fout: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'Onafgehandelde Runtime Fout',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'verouderd',
   /** Fallback title shown above field if it has no defined title */
@@ -438,13 +721,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Word lid van onze gemeenschap',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'De nieuwste versie is {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Registreer studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'App id',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Herlaad om bij te werken naar v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versie {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Hulp en bronnen',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Up-to-date',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Inkomende referenties',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Annuleren',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Standaard',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Uploaden',
   /** Uploading <FileName/> */
@@ -464,12 +764,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Voeg item toe...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopiëren',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Slepen om te herschikken',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Dupliceren',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Bewerk {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Maximum aantal items bereikt',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Verwijderen',
   /** Label for removing action when an array item has an error  */
@@ -501,15 +805,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'Onverwachte fout: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Alles',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Geen items gevonden',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Zoeken',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Rasterweergave wisselen',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Lijstweergave wisselen',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'Geen items',
   /** Label for read only array fields */
@@ -517,15 +821,13 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Initiële waarde oplossen…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Uitgeschakeld',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Selecteer een datum in de toekomst.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'bijv. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Bestandsopties menu openen',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Bladeren',
-  /** Select file */
-  'inputs.file.dialog.title': 'Selecteer bestand',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Onbekend lidtype: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -535,12 +837,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Waarde resetten',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Ongeldige bestandswaarde',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Selecteren',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'De upload kon op dit moment niet worden voltooid.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Upload mislukt',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Privé asset',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': "CDN-toegang beperkt tot ondertekende URL's",
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Veld wissen',
   /** Copy URL */
@@ -550,6 +854,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'De URL is naar het klembord gekopieerd',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Open in {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Vervangen',
   /** Upload */
@@ -588,6 +894,9 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Laat vallen om afbeelding te uploaden',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Alleen-lezen',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Upload bestanden naar:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Kan hier geen bestanden uploaden',
   /** Clear upload */
@@ -597,6 +906,8 @@ export default removeUndefinedLocaleResources({
     'Een upload heeft ten minste {{staleThresholdMinutes}} minuten geen voortgang gemaakt en is waarschijnlijk onderbroken. U kunt de onvolledige upload veilig wissen en opnieuw proberen te uploaden.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Onvolledige upload',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Selecteer bestand voor "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Afbeelding bijsnijden',
   /** Accessibility label for button to open image edit dialog */
@@ -604,14 +915,15 @@ export default removeUndefinedLocaleResources({
     'Dialoogvenster voor het bewerken van afbeeldingen openen',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Menu met afbeeldingsopties openen',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Selecteren',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Kan dit bestand hier niet uploaden',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Laat afbeelding vallen om te uploaden',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Dit veld is alleen-lezen',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kon afbeelding niet laden. Dit kan te wijten zijn aan toegangsbeperkingen.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Onbekend lidtype: {{kind}}',
   /** Edit hotspot and crop */
@@ -625,6 +937,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Ongeldige afbeeldingswaarde',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Voorbeeld van geüploade afbeelding',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Selecteer afbeelding voor "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'De upload kon op dit moment niet worden voltooid.',
   /** Upload failed */
@@ -636,6 +950,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Fout: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "De Asset Pipeline ondersteunt geen hotspot en crop voor vectorformaten. Om hotspot & crop te gebruiken, zet de afbeelding om naar een van de ondersteunde rasterformaten. Bijvoorbeeld: <code>fm=jpg</code> in combinatie met de <ImageUrlDocumentationLink>afbeeldings-URL</ImageUrlDocumentationLink> of gebruik <code>.format('png')</code> in combinatie met <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Zie ontwikkelaarsinformatie',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Waarschuwing: Hotspot en crop worden mogelijk niet toegepast op deze afbeelding waar deze wordt gepresenteerd.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Converteren naar <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -660,12 +982,21 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Ongeldige eigenschapswaarde',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Alle velden',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Veldgroepen',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'fout',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'info',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'waarschuwing',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Dit veld is <strong>alleen-lezen</strong> volgens het schema van het document en kan niet worden uitgezet. Als je dit in Studio wilt kunnen uitzetten, zorg er dan voor dat je het <code>readOnly</code> veld uit het omvattende type in het schema verwijdert.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Kan voorvertoning voor referentie "{{documentId}}" niet laden.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Veld verwijderen',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -860,8 +1191,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normaal',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Citaat',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Kolom aan het einde toevoegen',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Rij aan het einde toevoegen',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Kolomgreep',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Kolom verwijderen',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Rij verwijderen',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Tabel verwijderen',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Headerrij',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Hier invoegen',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Tabelopties',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Rijgreep',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Tabel selecteren',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Wissen',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopiëren',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Maak nieuw',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -917,6 +1272,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Wissen',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Zoeken naar referentie mislukt',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    'Het gerefereerde document is van een ongeldig type ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Afbeeldingsvoorbeeld van het gerefereerde document',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -985,6 +1343,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Mismatch in referentiekracht',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Converteren naar zwakke referentie',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Wissen',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Genereren',
   /** Loading message for when the input is actively generating a slug */
@@ -1015,6 +1375,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Eigenschapwaarde mist <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Waarde ongedaan maken',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Selecteer video voor "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1035,7 +1397,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'U heeft geen toestemming om dit document te verwijderen.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    "U hebt geen toestemming om schema's te verwijderen.",
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'U heeft geen toestemming om wijzigingen in dit document te verwerpen.',
@@ -1043,9 +1406,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'U heeft geen toestemming om dit document te dupliceren.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    "U hebt geen toestemming om schema's te bewerken.",
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    "U hebt geen toestemming om schema's uit te voeren.",
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'U heeft geen toestemming om dit document te publiceren.',
@@ -1057,8 +1422,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Onvoldoende rechten',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Uw sessie is niet meer geldig. Meld u opnieuw aan.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Uw sessie is verlopen. Meld u opnieuw aan.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'U bent uitgelogd',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Onverwachte fout: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Uw browser gebruikt een verouderd HTTP-protocol om te communiceren met Sanity. Dit kan leiden tot aanzienlijk verminderde prestaties.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Meer leren',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Niet meer tonen voor deze sessie',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Je hebt je remmen erop',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Aanmaken',
@@ -1087,12 +1469,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Nieuw document maken',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Push to reload'
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio is ready to update!'
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
+  'package-version.new-package-available.reload-button': 'Druk om te herladen',
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
+  'package-version.new-package-available.title': 'Sanity Studio is klaar om te updaten!',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Leden beheren',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Wie is hier',
@@ -1113,8 +1495,268 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'De afbeelding die momenteel wordt geüpload',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'zojuist',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Toevoegen aan release',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Toevoegen aan {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Document bestaat al in release',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Al in release {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopieer versie naar',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Nieuwe release',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Versie maken mislukt',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Schema verwijderen',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Versie verwijderen',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Mislukt om versie te verwijderen',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': 'Details bewerken',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Schema bewerken',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Nieuwe Release',
+  'release.action.new-release.limit-reached_other':
+    'Deze werkruimte is beperkt tot {{count}} releases',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'U heeft geen toestemming om deze actie uit te voeren',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Nu publiceren',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Probeer het opnieuw of controleer uw verbinding. Het document zal nog steeds niet gepubliceerd worden bij vrijgave.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Het terugdraaien van de instelling om niet te publiceren bij vrijgave is mislukt.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': 'U kunt nu deze versie bewerken.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Succesvol teruggekeerd van de instelling om niet te publiceren bij vrijgave.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Publicatie plannen',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Mislukt om versie in te stellen om niet gepubliceerd te worden bij release',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Succesvol ingesteld dat <strong>{{title}}</strong> niet gepubliceerd wordt bij release',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Bekijk release',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Geplande concepten bekijken',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Gepland voor publicatie op {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variant',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varianten',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} versie',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} versies',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Concept',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Concepten',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Gepubliceerd',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Deze release is gearchiveerd en kan niet worden bewerkt.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Gecreëerd {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Dit document is in live bewerkingsmodus, concepten zijn uitgeschakeld',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Bewerkt {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Bedoeld voor {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Geen bewerkingen',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Niet gepubliceerd',
+  'release.chip.tooltip.other-variants_one': 'Één variant',
+  'release.chip.tooltip.other-variants_other': '{{count}} varianten',
+  'release.chip.tooltip.other-versions_one': 'Eén extra versie buiten de releases',
+  'release.chip.tooltip.other-versions_other': '{{count}} extra versies buiten de releases',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Gepubliceerd {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Gepland voor {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Onbekende datum',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Deze release is verwijderd',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Versie kopiëren naar nieuwe release',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Release aanmaken',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Nieuwe release',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Dit geplande concept verwijderen? Uw concept is al up-to-date.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Dit geplande concept verwijderen? Uw wijzigingen worden opgeslagen in het concept.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Dit geplande concept verwijderen?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Ja, schema verwijderen',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Bewaar mijn geplande wijzigingen door ze naar het concept te kopiëren (aanbevolen)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Uw geplande concept heeft andere wijzigingen dan uw huidige concept.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Gepland concept verwijderen',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Selecteer een nieuwe datum en tijd voor de geplande publicatie.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Schema bijwerken',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Schema wijzigen',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': 'Opslaan',
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': 'Beschrijving',
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': 'Release bewerken',
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': 'Titel',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Weet u zeker dat u dit geplande concept onmiddellijk wilt publiceren?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Ja, nu uitvoeren',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Concept nu publiceren',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'De beoogde uitgavetijd wordt gebruikt om betere previews te maken en aanwijzingen te geven of documenten conflicteren.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Je kunt het altijd later wijzigen.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Geschatte tijd van uitgave',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Beschrijf de release…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Release verbergen',
+  /** Label for the release menu */
+  'release.menu.label': 'Release menu',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Geplande concepten bekijken',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Acties',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Content releases bekijken',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Concepten',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Gepubliceerd',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Releases',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Naamloze release',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Plan voor een toekomstige tijd en datum.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Publiceren op',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Deze release is losgemaakt',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "De '{{title}}' release is gearchiveerd",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Aanmaken van release mislukt',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> te verwijderen: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Het geplande conceptdocument <strong>{{title}}</strong> is verwijderd.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': 'Opslaan van release-details mislukt',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "De release '{{title}}' kon niet worden gevonden",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Mislukt om het geplande conceptdocument <strong>{{title}}</strong> te pauzeren: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> onmiddellijk te publiceren: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Het geplande conceptdocument <strong>{{title}}</strong> is gepubliceerd.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Deze release is losgemaakt',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "De '{{title}}' release is gepubliceerd",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> opnieuw te plannen: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Het geplande conceptdocument <strong>{{title}}</strong> is opnieuw gepland.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Mislukt om concept te plannen: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Concept succesvol gepland',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Het geplande conceptdocument is gepubliceerd',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Een versie van dit document is al toegevoegd',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Deze release is gepland. Annuleer de planning om meer documenten toe te voegen.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Zo snel mogelijk',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Op tijd',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Onbeslist',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Bekijk alle documentversies',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Contact Ondersteuning',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Configuratieprobleem met content releases',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Content releases zijn ingeschakeld voor uw project, maar er lijkt een configuratieprobleem te zijn met uw release limieten. Neem contact op met de ondersteuning om uw content releases correct te configureren.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Plannen',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Selecteer wanneer dit document gepubliceerd moet worden.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Plan concept voor publicatie',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Geplande publicatie',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Zoeken openen',
@@ -1293,37 +1935,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>heeft</Operator> <Value>{{count}} item</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>heeft</Operator> <Value>{{count}} items</Value>',
   'search.operator.array-count-equal.name': 'hoeveelheid is',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>heeft ></Operator> <Value>{{count}} item</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>heeft ></Operator> <Value>{{count}} items</Value>',
   'search.operator.array-count-gt.name': 'hoeveelheid groter dan',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>heeft ≥</Operator> <Value>{{count}} item</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>heeft ≥</Operator> <Value>{{count}} items</Value>',
   'search.operator.array-count-gte.name': 'hoeveelheid groter dan of gelijk aan',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>heeft <</Operator> <Value>{{count}} item</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>heeft <</Operator> <Value>{{count}} items</Value>',
   'search.operator.array-count-lt.name': 'hoeveelheid minder dan',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>heeft ≤</Operator> <Value>{{count}} item</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>heeft ≤</Operator> <Value>{{count}} items</Value>',
   'search.operator.array-count-lte.name': 'hoeveelheid minder dan of gelijk aan',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>heeft niet</Operator> <Value>{{count}} item</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1336,35 +1972,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>heeft tussen</Operator> <Value>{{from}} → {{to}} items</Value>',
   'search.operator.array-count-range.name': 'hoeveelheid ligt tussen',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>bevat</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'bevat',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>bevat niet</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'bevat niet',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>bevat</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'bevat',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>bevat niet</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'bevat niet',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'is',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'is niet',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'is',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'is niet',
@@ -1377,160 +2005,120 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'is',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>is na</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'na',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>is voor</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'voor',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'is',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>is in de laatste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'laatste',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'is niet',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>ligt tussen</Operator> <Value/>',
   'search.operator.date-range.name': 'is tussen',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>is na</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'na',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>is voor</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'voor',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'is',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>is in de laatste</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'laatste',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'is niet',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>is tussen</Operator> <Value/>',
   'search.operator.date-time-range.name': 'is tussen',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>is</Operator> <Value>niet leeg</Value>',
   'search.operator.defined.name': 'niet leeg',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>is</Operator> <Value>leeg</Value>',
   'search.operator.not-defined.name': 'leeg',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'is',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'groter dan',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'groter dan of gelijk aan',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'minder dan',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'minder dan of gelijk aan',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'is niet',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>ligt tussen</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'ligt tussen',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>bevat</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'bevat',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'is',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>bevat niet</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'bevat niet',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'is niet',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'bestand',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'afbeelding',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'document',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'is',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'is niet',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>bevat</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'bevat',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'is',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>bevat niet</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'bevat niet',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'is niet',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>bevat</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'bevat',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'is',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>is</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'is',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'is niet',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>bevat niet</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'bevat niet',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>is niet</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'is niet',
@@ -1553,24 +2141,40 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Zoekresultaten',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Configuratiestatus',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Zoek naar een stad of tijdzone',
+  'time-zone.action.select-local-time-zone': 'Selecteer lokale tijdzone',
+  'time-zone.dialog-info.content-releases':
+    'De geselecteerde tijdzone zal veranderen hoe data wordt weergegeven in content releases.',
+  'time-zone.dialog-info.input':
+    'De geselecteerde tijdzone zal veranderen hoe data alleen voor deze invoer in dit document wordt weergegeven.',
+  'time-zone.dialog-info.scheduled-publishing':
+    "De geselecteerde tijdzone zal veranderen hoe data wordt weergegeven in schema's.",
+  'time-zone.local-time': 'lokale tijd',
+  'time-zone.time-zone': 'Tijdzone',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Releases worden weergegeven in {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    '<em>{{title}}</em> wordt weergegeven in {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    "Schema's worden weergegeven in {{alternativeName}} GMT{{offset}}",
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Wijzigingen door',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Documentgeschiedenistransacties zijn niet beïnvloed.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Er is een fout opgetreden bij het ophalen van documentwijzigingen.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Schakel de events API in via de Studio-configuratie om de documentgeschiedenis te bekijken.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Versie documentgeschiedenis is alleen beschikbaar via de Events API.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Wanneer u de inhoud van het document wijzigt, zullen de documentversies in dit menu verschijnen.',
@@ -1581,7 +2185,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'Laatste',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Laatste revisie',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1591,6 +2195,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Documentrevisies',
   /** Label for loading history */
   'timeline.loading-history': 'Geschiedenis laden…',
+  'timeline.no-previous-events': 'Geen eerdere gebeurtenissen',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Gemaakt',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1603,6 +2208,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Verwijderd',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Verwijderd: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Concept aangemaakt',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Concept aangemaakt: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Concept verworpen',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1615,6 +2224,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Live bewerkt',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Live bewerkt: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Verwijderd door retentiebeleid',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Gepubliceerd',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1623,6 +2234,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Niet gepubliceerd',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Niet gepubliceerd: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versie aangemaakt',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versie aangemaakt: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versie verworpen',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versie verworpen: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1635,23 +2254,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'Broodkruimelmenu',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Zoeken',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Zoekmenu',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Geen resultaten gevonden',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Zijbalk sluiten',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Inklappen',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Klaar',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Uitklappen',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Zijbalk openen',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag over in proefperiode',
@@ -1697,6 +2316,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Menu openen',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentwijzigingen',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Voorgestelde wijzigingen',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1709,6 +2333,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Kies een andere werkruimte',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Werkruimte wisselen',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Kies uw werkruimte',
   /** Label for the workspace menu */

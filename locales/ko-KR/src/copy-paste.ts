@@ -10,12 +10,11 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': '필드 붙여넣기',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    '이 내용을 복사하려면 클립보드 접근이 필요합니다. 브라우저 설정에서 클립보드 권한을 허용한 후 다시 복사해 보세요.',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     '브라우저가 이 작업을 지원하지 않습니다',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title': '문서 "{{fieldNames}}" 복사됨',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title': '필드 "{{fieldName}}" 복사됨',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '빈 값, 복사할 것 없음',
   /** --- On copy --- */
@@ -32,10 +31,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': '붙여넣을 것 없음',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': '잘못된 클립보드 항목',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title': '문서 "{{fieldNames}}" 업데이트됨',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title': '필드 "{{fieldName}}" 업데이트됨',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}"은(는) "{{targetSchemaType}}"에 허용되지 않습니다',
@@ -49,6 +44,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     '"{{type}}" 유형의 값은 이 필드에 허용되지 않습니다',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    '건너뛴 읽기 전용 필드: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': '대상이 읽기 전용입니다',
@@ -58,6 +56,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     '"{{sourceReferenceType}}" 유형의 참조는 "{{targetReferenceTypes}}" 유형을 허용하는 참조 필드에 허용되지 않습니다',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    '참조된 문서 "{{ref}}"이(가) 존재하지 않습니다',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     '소스 및 대상 스키마 유형이 호환되지 않습니다',

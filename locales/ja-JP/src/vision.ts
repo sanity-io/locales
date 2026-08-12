@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'クリップボードにコピー',
+  /** Label for deleting a query */
+  'action.delete': '削除',
+  /** Label for editing a query's title */
+  'action.edit-title': 'タイトルを編集',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': '停止',
   /** Label for setting up a listener */
   'action.listen-execute': 'リッスン',
+  /** Label for query loading table */
+  'action.load-queries': 'クエリを読み込む',
+  /** Label for loading a query */
+  'action.load-query': 'クエリを読み込む',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'キャンセル',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'フェッチ',
+  /** Label for saving a query */
+  'action.save-personal-copy': '個人用コピーを保存',
+  /** Label for saving a personal query */
+  'action.save-personal-query': '個人用として保存',
+  /** Label for saving a query */
+  'action.save-query': 'クエリを保存',
+  /** Label for saving a shared query */
+  'action.save-shared-query': '共有として保存',
+  /** Label for unsharing a query */
+  'action.unshare': '共有を解除',
+  /** Label for updating a query */
+  'action.update': '更新',
 
+  /** Label for actions user can take */
+  'label.actions': 'アクション',
+  /** Label for all saved queries */
+  'label.all': 'すべて',
+  /** Label for saved queries that have been edited */
+  'label.edited': '編集済み',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': '新規',
+  /** Label for query type "personal" */
+  'label.personal': '個人',
+  /** Label for savedAt date */
+  'label.saved-at': '保存日時',
+  /** Saved queries */
+  'label.saved-queries': '保存されたクエリ',
+  /** Search queries */
+  'label.search-queries': 'クエリを検索',
+  /** Share query */
+  'label.share': '共有',
+  /** Label for query type "shared" */
+  'label.shared': '共有',
+  /** Label for saved query type "team" */
+  'label.team': 'チーム',
+  /** Label for untitled query fallback */
+  'label.untitled-query': '無題',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'パラメータが有効なJSONではありません',
@@ -48,6 +90,22 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': '該当なし',
 
+  /** Query already saved error label */
+  'save-query.already-saved': 'クエリは既に保存されています',
+  /** Save error label */
+  'save-query.error': 'クエリの保存中にエラーが発生しました',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': '個人用コピーを保存しました',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    '共有クエリはdataset内のドキュメントとして保存され、ドキュメントクォータにカウントされます。',
+  /** Save shared query success label */
+  'save-query.shared-success': '共有クエリを保存しました',
+  /** Save success label */
+  'save-query.success': 'クエリを保存しました',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'クエリを個人用に移動しました',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'APIバージョン',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'パースペクティブ',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    '<code>previewDrafts</code> パースペクティブは <code>drafts</code> に名称変更され、現在非推奨です。この変更はパースペクティブサポートがあるバージョン (>= v2021-03-25) にて有効です。',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'ドキュメントを読む',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'パースペクティブなし（APIデフォルト）',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'パースペクティブを使用すると、異なる"ビュー"に対してクエリを実行して、データセットのコンテンツを異なる方法で見ることができます',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'デフォルトのパースペクティブは、今後のAPIバージョンで「<code>raw</code>」から「<code>published</code>」に変更されます。詳細についてはドキュメントを参照してください。',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'ピン留めされたリリース',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': '予定された下書き',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'パースペクティブ',
 })

@@ -15,25 +15,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Install pnpm, Node.js and dependencies
+        uses: pnpm/setup@v2
         with:
-          cache: pnpm
-          node-version: lts/*
+          runtime: node@lts
+          cache: true
 
-      - name: Use pnpm
-        run: corepack enable && pnpm --version
-
-      - name: Install dependencies
-        run: pnpm install --ignore-scripts
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v3
+        id: generate-token
+        with:
+          client-id: ${{ vars.ECOSPARK_CLIENT_ID }}
+          private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
 
       - name: Adjust labels
         run: pnpm run ci:adjust-labels --merge-if-approved
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}

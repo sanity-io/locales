@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Обнаружена проблема с конфигурацией',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Автообновления включены, но в <code>sanity.cli.ts</code> не настроен <code>deployment.appId</code>. Эта Студия обновляется по каналу <strong>latest</strong>.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Посмотреть документацию',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Отключено',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Включено',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Автообновления',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Как включить',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Управление версией',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Скопировано в буфер обмена. Счастливого копирования!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Копировать в буфер обмена',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Текущая версия',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Как обновить',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Последняя версия',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Доступна новая версия',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Новая версия',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Перезагрузить',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Перезагрузите Студию для обновления',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Разработка',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Доступна новая версия',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Предварительный выпуск',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Актуальная версия',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Актуально',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Обновить',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Узнайте, как обновить Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Пользовательский агент',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Посмотреть на GitHub',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Закрыть',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Закрыть диалог',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Закрыть',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Скрыть объявления',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Открыть объявления',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Удалить',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Документы, использующие изображение',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Загрузка…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Выбрать',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Отмена',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Показаны только ресурсы принятых типов: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Отмена',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Выбрать',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Выбрать файл',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Выбрать изображение',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Ошибка при вставке ресурса. Смотрите консоль для получения дополнительной информации.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Не удалось загрузить ресурсы',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Загрузить больше',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Нет файлов',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Нет изображений',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Невозможно удалить текущий выбранный файл',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Изображение было удалено',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Загруженные изображения',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Один документ использует файл <code>{{filename}}</code>',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *named* file **/
@@ -101,6 +180,42 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Ни один документ не использует это изображение',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description':
+    'Смотрите консоль для получения дополнительной информации.',
+  'asset-sources.common.uploader.upload-failed.title': 'Не удалось загрузить',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Файлы рабочей области',
+  'asset-sources.dataset.image.title': 'Изображения рабочей области',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Что-то пошло не так при попытке разрешить Медиатеку для этого проекта.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Медиа-библиотека для этой организации не предоставлена.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Медиатека',
+  'asset-sources.media-library.image.title': 'Медиатека',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Готово',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Выберите новый актив для «{{targetTitle}}»',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Выберите новый актив',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Редактировать актив',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Загрузить в медиатеку',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Использование существующего файла, найденного в библиотеке.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Файл: '{{filename}}' уже существует",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Перейти к следующему месяцу',
   /** Action message for navigating to next year */
@@ -109,24 +224,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Перейти к предыдущему месяцу',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Перейти к предыдущему году',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Сегодня',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Перейти к сегодняшнему дню',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Завтра',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Вчера',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Включить время',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Выбрать час',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Выбрать минуту',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Выбрать время',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Установить текущее время',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} на {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Открыть календарь',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Выбрать дату',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Должно быть в формате <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
@@ -204,6 +317,9 @@ export default removeUndefinedLocaleResources({
     'Проверьте консоль разработчика для получения дополнительной информации',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Отображение изменений в этом поле вызвало ошибку',
+  'changes.error-description': 'Мы не можем загрузить изменения для этого документа.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Что-то пошло не так',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Ошибка значения: значение имеет тип "<code>{{actualType}}</code>", ожидалось "<code>{{expectedType}}</code>"',
@@ -233,11 +349,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Загрузка…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Загрузка изменений…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Мы не смогли найти версию документа с идентификатором: <code>{{revisionId}}</code>, с которой вы пытаетесь сравнить. <Break/> Это, вероятно, связано с политикой хранения истории вашего плана. <Break/> Пожалуйста, выберите другую запись <strong>От</strong>.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Отредактируйте документ или выберите более старую версию во временной шкале, чтобы увидеть список изменений в этой панели.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Изменений нет',
+  'changes.not-selectable': 'Невозможно выбрать это событие',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Добавлена аннотация',
   /** Portable Text diff: An annotation was changed */
@@ -280,8 +400,18 @@ export default removeUndefinedLocaleResources({
     'Неизвестный тип схемы встроенного объекта',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Удалено',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Вы выбрали одну и ту же <strong>from</strong> и <strong>to</strong> ревизию, пожалуйста, выберите разные ревизии, чтобы сравнить изменения между ними.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Выбрана одна и та же ревизия',
   /** Title for the Review Changes pane */
   'changes.title': 'Просмотр изменений',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Бұл өріс схемада анықталмаған. Мәндер JSON түрінде көрсетіледі.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Черновик',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -292,12 +422,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Подтвердить',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Загрузка',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Пытаюсь подключиться…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
-  'configuration-issues.button.label': undefined, // 'Configuration issues'
+  'configuration-issues.button.label': 'Проблемы с конфигурацией',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Обнаружены проблемы конфигурации',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Сортировать по {{title}}',
@@ -317,12 +452,135 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Сортировать по названию',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Жабу',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Елемеу',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Келесі',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Алдыңғы',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Негізден көшіру',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'өзгертілді',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} {{versionName}} нұсқасында',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': '{{versionName}} нұсқасындағы шешілмеген өзгеріс',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Отмена',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Насколько легко или сложно пользоваться новой версией инвентаря?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Фильтр {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'просмотр',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Все пользователи (по умолчанию)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Создать вариант',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Создать вариант для {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Как черновик',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'В релиз',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'Или просмотреть существующие варианты',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Отмена',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 документ',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Недоступный dataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} в другом dataset',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Скопировать ID в буфер обмена',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ID документа',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Не удалось скопировать ID документа',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'ID проекта',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Удалить (1)',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'При попытке удалить этот документ произошла ошибка. Обычно это означает, что на него ссылаются другие документы.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 другая ссылка не отображается',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Мы не можем отобразить метаданные для этих ссылок из-за отсутствия токена доступа для связанных datasets.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title':
+    'Предварительный просмотр недоступен',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 документ ссылается на «<DocumentTitle/>»',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Возможно, вы не сможете удалить «<DocumentTitle/>», так как на него ссылаются следующие документы:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Удалить {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'вариант',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'версия',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Создано {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Отредактировано {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Последняя публикация',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Не опубликовано',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Опубликовано {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Ревизия от <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Ревизия не найдена',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Ваши изменения всё ещё сохраняются.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Сохранение занимает больше времени, чем ожидалось',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Документ открыт с пустым значением. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Не удалось определить начальное значение',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Тип документа "{{type}}" не найден',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Невозможно выполнить это действие',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -376,13 +634,13 @@ export default removeUndefinedLocaleResources({
   'form.error.no-array-item-at-key':
     'Элемент массива с `_key` <code>"{{key}}"</code> не найден по пути <code>{{path}}</code>',
   /** The title above the error call stack output related to the crash */
-  'form.error.unhandled-runtime-error.call-stack.title': undefined, // 'Call Stack:'
+  'form.error.unhandled-runtime-error.call-stack.title': 'Стек вызовов:',
   /** The title above the error component stack provided by React's underlying ErrorBoundary component */
-  'form.error.unhandled-runtime-error.component-stack.title': undefined, // 'Component Stack:'
+  'form.error.unhandled-runtime-error.component-stack.title': 'Стек компонентов:',
   /** The error message for the unhandled error that crashed the Input component during render */
-  'form.error.unhandled-runtime-error.error-message': undefined, // 'Error: {{message}}'
+  'form.error.unhandled-runtime-error.error-message': 'Ошибка: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': undefined, // 'Unhandled Runtime Error'
+  'form.error.unhandled-runtime-error.title': 'Необработанная ошибка времени выполнения',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'устаревший',
   /** Fallback title shown above field if it has no defined title */
@@ -420,13 +678,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Присоединиться к нашему сообществу',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Последняя версия {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Зарегистрировать студию',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'ID приложения',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'Перезагрузить для обновления до v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Версия Sanity Studio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Помощь и ресурсы',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Актуальная версия',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Входящие ссылки',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Отменить загрузку',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'По умолчанию',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Загрузить',
   /** Uploading <FileName/> */
@@ -446,12 +721,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Добавить элемент...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Копировать',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Перетащите для изменения порядка',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Дублировать',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Редактировать {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Достигнуто максимальное количество элементов',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Удалить',
   /** Label for removing action when an array item has an error  */
@@ -481,15 +760,15 @@ export default removeUndefinedLocaleResources({
   /** Error label for unexpected errors in the Array Input */
   'inputs.array.error.unexpected-error': 'Неожиданная ошибка: {{error}}',
   /** Label for the array insert menu all items filter  */
-  'inputs.array.insert-menu.filter.all-items': undefined, // 'All'
+  'inputs.array.insert-menu.filter.all-items': 'Все',
   /** Label for when the array insert menu search shows no items */
-  'inputs.array.insert-menu.search.no-results': undefined, // 'No items found'
+  'inputs.array.insert-menu.search.no-results': 'Элементы не найдены',
   /** Placeholder for the array insert menu search field */
-  'inputs.array.insert-menu.search.placeholder': undefined, // 'Search'
+  'inputs.array.insert-menu.search.placeholder': 'Поиск',
   /** Tooltip for the array insert menu grid view toggle */
-  'inputs.array.insert-menu.toggle-grid-view.tooltip': undefined, // 'Toggle grid view'
+  'inputs.array.insert-menu.toggle-grid-view.tooltip': 'Переключить вид сетки',
   /** Tooltip for the array insert menu list view toggle */
-  'inputs.array.insert-menu.toggle-list-view.tooltip': undefined, // 'Toggle list view'
+  'inputs.array.insert-menu.toggle-list-view.tooltip': 'Переключить вид списка',
   /** Label for when the array input doesn't have any items */
   'inputs.array.no-items-label': 'Нет элементов',
   /** Label for read only array fields */
@@ -497,15 +776,13 @@ export default removeUndefinedLocaleResources({
   /** Label for when the array input is resolving the initial value for the item */
   'inputs.array.resolving-initial-value': 'Определение исходного значения…',
   /** Tooltip content when boolean input is disabled */
-  'inputs.boolean.disabled': undefined, // 'Disabled'
+  'inputs.boolean.disabled': 'Отключено',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Выберите дату в будущем.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'например, {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Открыть меню параметров файла',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Обзор',
-  /** Select file */
-  'inputs.file.dialog.title': 'Выбрать файл',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Неизвестный тип элемента: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -515,12 +792,15 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Сбросить значение',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Недопустимое значение файла',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Выбрать',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Загрузка не может быть завершена в настоящее время.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Загрузка не удалась',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Частный актив',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'Доступ через CDN ограничен подписанными URL',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Очистить поле',
   /** Copy URL */
@@ -529,6 +809,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Скачать',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL скопирован в буфер обмена',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Открыть в {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Заменить',
   /** Upload */
@@ -558,6 +840,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Перетащите для загрузки изображения',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Только для чтения',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination': 'Загрузить файлы в:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Загрузка файлов здесь невозможна',
   /** Clear upload */
@@ -567,20 +851,23 @@ export default removeUndefinedLocaleResources({
     'Загрузка не продвигалась как минимум {{staleThresholdMinutes}} минут и, вероятно, была прервана. Вы можете безопасно очистить незавершенную загрузку и попробовать загрузить снова.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Незавершенная загрузка',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Выбрать файл для «{{targetTitle}}»',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Обрезать изображение',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Открыть диалог редактирования изображения',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Открыть меню опций изображения',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Выбрать',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Здесь нельзя загружать этот файл',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Перетащите изображение для загрузки',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Это поле только для чтения',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Не удалось загрузить изображение. Это может быть связано с ограничениями доступа.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Неизвестный тип элемента: {{kind}}',
   /** Edit hotspot and crop */
@@ -594,6 +881,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Недопустимое значение изображения',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Предварительный просмотр загруженного изображения',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Выбрать изображение для «{{targetTitle}}»',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Загрузка не может быть завершена в данный момент.',
   /** Upload failed */
@@ -605,6 +894,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Ошибка: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Хотспот и обрезка',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline не поддерживает горячие точки и обрезку для векторных форматов. Чтобы включить горячие точки и обрезку, выведите это изображение в любой из поддерживаемых растровых форматов. Например: <code>fm=jpg</code> в <ImageUrlDocumentationLink>URL изображения</ImageUrlDocumentationLink> или вызовите <code>.format('png')</code> с <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Смотреть информацию для разработчиков',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Внимание: Горячие точки и обрезка могут не применяться к этому изображению там, где оно представлено.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Преобразовать в <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -629,12 +926,21 @@ export default removeUndefinedLocaleResources({
   /** Invalid property value */
   'inputs.invalid-value.title': 'Недопустимое значение свойства',
   /** Title for the "All fields" field group */
-  'inputs.object.field-group-tabs.all-fields-title': undefined, // 'All fields'
+  'inputs.object.field-group-tabs.all-fields-title': 'Все поля',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Группы полей',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'ошибка',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'информация',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'предупреждение',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Это поле является <strong>только для чтения</strong> согласно схеме документа и не может быть снято. Если вы хотите иметь возможность снимать это в Studio, убедитесь, что вы удалили поле <code>readOnly</code> из окружающего типа в схеме.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Не удалось загрузить предварительный просмотр для ссылки «{{documentId}}».',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Удалить поле',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -825,8 +1131,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Обычный',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Цитата',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Добавить столбец в конец',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Добавить строку в конец',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Маркер столбца',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Удалить столбец',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Удалить строку',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Удалить таблицу',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Строка заголовка',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Вставить здесь',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Параметры таблицы',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Маркер строки',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Выбрать таблицу',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Очистить',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Копировать',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Создать новый',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -881,6 +1211,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Очистить',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Поиск ссылки не удался',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    'Ссылочный документ имеет недопустимый тип ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text':
     'Предварительный просмотр изображения ссылочного документа',
@@ -946,6 +1279,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Несоответствие силы ссылки',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Преобразовать в слабую ссылку',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Очистить',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Сгенерировать',
   /** Loading message for when the input is actively generating a slug */
@@ -976,6 +1311,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Отсутствует значение свойства <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Сбросить значение',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Выбрать видео для «{{targetTitle}}»',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -996,7 +1333,8 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_delete-document':
     'У вас нет разрешения на удаление этого документа.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_delete-schedules': undefined, // 'You do not have permission to delete schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
+    'У вас нет разрешения на удаление расписаний.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'У вас нет разрешения на отмену изменений в этом документе.',
@@ -1004,9 +1342,11 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.not-authorized-explanation_duplicate-document':
     'У вас нет разрешения на дублирование этого документа.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_edit-schedules': undefined, // 'You do not have permission to edit schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
+    'У вас нет разрешения на редактирование расписаний.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
-  'insufficient-permissions-message.not-authorized-explanation_execute-schedules': undefined, // 'You do not have permission to execute schedules.'
+  'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
+    'У вас нет разрешения на выполнение расписаний.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'У вас нет разрешения на публикацию этого документа.',
@@ -1018,8 +1358,26 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Недостаточно прав',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Ваша сессия больше не действительна. Пожалуйста, войдите снова.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired':
+    'Срок действия вашей сессии истёк. Пожалуйста, войдите снова.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Вы вышли из системы',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Неожиданная ошибка: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Ваш браузер использует устаревший HTTP протокол для связи с Sanity. Это может привести к значительному снижению производительности.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Узнать больше',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Не показывать снова за эту сессию',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'У вас включен ручной тормоз',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Создать',
@@ -1048,12 +1406,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Создать новый документ',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
-  'package-version.new-package-available.reload-button': undefined, // 'Push to reload'
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': undefined, // 'Sanity Studio is ready to update!'
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
+  'package-version.new-package-available.reload-button': 'Нажмите, чтобы перезагрузить',
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
+  'package-version.new-package-available.title': 'Sanity Studio готов к обновлению!',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Управление участниками',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Кто здесь',
@@ -1073,8 +1431,260 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Изображение в процессе загрузки',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'только что',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Добавить в релиз',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Добавить в {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Документ уже существует в релизе',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Уже в релизе {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Копировать версию в',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Новый релиз',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Не удалось создать версию',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Удалить расписание',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Отменить версию',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Не удалось отменить версию',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Редактировать расписание',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Новый релиз',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'У вас нет разрешения на выполнение этого действия',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Опубликовать сейчас',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Пожалуйста, попробуйте еще раз или проверьте ваше соединение. Документ все еще будет неопубликованным при выпуске.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Не удалось отменить настройку на отмену публикации при выпуске.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'Теперь вы можете редактировать эту версию.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Успешно отменена настройка на отмену публикации при выпуске.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Запланировать публикацию',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'Не удалось установить версию как неопубликованную в релизе',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Успешно установлено, что <strong>{{title}}</strong> будет неопубликовано в релизе',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Просмотреть релиз',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Просмотр запланированных черновиков',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Запланировано к публикации на {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} нұсқа',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} версия',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Черновик',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Черновики',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Опубликовано',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Этот релиз заархивирован и не может быть отредактирован.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Создано {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Этот документ находится в режиме реального времени, черновики отключены',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Отредактировано {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Предназначено для {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Нет правок',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Не опубликовано',
+  'release.chip.tooltip.other-variants_one': 'Бір нұсқа',
+  'release.chip.tooltip.other-versions_one': 'Одна дополнительная версия вне релизов',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Опубликовано {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Запланировано на {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Неизвестная дата',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Этот релиз был удален',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Копировать версию в новый релиз',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Создать релиз',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Новый релиз',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Удалить этот запланированный черновик? Ваш черновик уже обновлен.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Удалить этот запланированный черновик? Ваши изменения будут сохранены в черновик.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Удалить этот запланированный черновик?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Да, удалить расписание',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Сохранить мои запланированные изменения, скопировав их в черновик (рекомендуется)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Ваш запланированный черновик содержит изменения, отличные от текущего черновика.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Удалить запланированный черновик',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body':
+    'Выберите новую дату и время для запланированной публикации.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Обновить расписание',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Изменить расписание',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Вы уверены, что хотите немедленно опубликовать этот запланированный черновик?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Да, выполнить сейчас',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Опубликовать черновик сейчас',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Предполагаемое время релиза используется для создания лучших предварительных просмотров и подсказок о возможных конфликтах документов.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note': 'Вы всегда можете изменить это позже.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Приблизительное время релиза',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Опишите релиз…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Скрыть релиз',
+  /** Label for the release menu */
+  'release.menu.label': 'Меню выпуска',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Просмотреть запланированные черновики',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Действия',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Просмотреть контентные релизы',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Черновики',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Опубликовано',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Релизы',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Релиз без названия',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning': 'Запланируйте на будущее время и дату.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Опубликовать в',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Этот релиз был откреплен',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "Релиз '{{title}}' был архивирован",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Не удалось создать релиз',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Не удалось удалить документ запланированного черновика <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Документ запланированного черновика <strong>{{title}}</strong> был удален.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "Релиз '{{title}}' не был найден",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Не удалось приостановить запланированный черновик документа <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Не удалось опубликовать документ запланированного черновика <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Документ запланированного черновика <strong>{{title}}</strong> был опубликован.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Этот релиз был откреплен',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "Релиз '{{title}}' был опубликован",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Не удалось перенести документ запланированного черновика <strong>{{title}}</strong>: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Документ запланированного черновика <strong>{{title}}</strong> был перенесен.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Не удалось запланировать черновик: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Черновик успешно запланирован',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Запланированный черновик опубликован',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Этот релиз был запланирован. Отмените планирование, чтобы добавить больше документов.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Как можно скорее',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'В назначенное время',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Не решено',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Посмотреть все версии документа',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Связаться со службой поддержки',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Проблема конфигурации выпусков контента',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Выпуски контента включены для вашего проекта, но, похоже, есть проблема с конфигурацией ваших лимитов выпусков. Пожалуйста, свяжитесь со службой поддержки, чтобы правильно настроить выпуски вашего контента.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Запланировать',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Выберите, когда этот документ должен быть опубликован.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Запланировать публикацию черновика',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Запланированная публикация',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Открыть поиск',
@@ -1251,27 +1861,21 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>имеет</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-equal.name': 'количество равно',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>имеет ></Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-gt.name': 'количество больше',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>имеет ≥</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-gte.name': 'количество больше или равно',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>имеет <</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-lt.name': 'количество меньше',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>имеет ≤</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-lte.name': 'количество меньше или равно',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>не имеет</Operator> <Value>{{count}} элемент</Value>',
   'search.operator.array-count-not-equal.name': 'количество не равно',
@@ -1282,35 +1886,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>имеет от</Operator> <Value>{{from}} → {{to}} элементов</Value>',
   'search.operator.array-count-range.name': 'количество между',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'включает',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>не включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'не включает',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'включает',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>не включает</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'не включает',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'является',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'не является',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'является',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'не является',
@@ -1323,163 +1919,123 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'является',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>после</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'после',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>до</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'до',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'является',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>в последние</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'последние',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'не является',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description':
     '<Field/> <Operator>находится между</Operator> <Value/>',
   'search.operator.date-range.name': 'между',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>после</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'после',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>до</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'до',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'является',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>в последние</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'последние',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'не является',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>находится между</Operator> <Value/>',
   'search.operator.date-time-range.name': 'между',
-  /* Value should be defined */
   'search.operator.defined.description':
     '<Field/> <Operator>является</Operator> <Value>не пустым</Value>',
   'search.operator.defined.name': 'не пустое',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>является</Operator> <Value>пустым</Value>',
   'search.operator.not-defined.name': 'пустое',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'является',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'больше чем',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'больше или равно',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'меньше чем',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'меньше или равно',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'не является',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>находится между</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'находится между',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'содержит',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'является',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>не содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'не содержит',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'не является',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'файл',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'изображение',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'документ',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'является',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'не является',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'содержит',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'является',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>не содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'не содержит',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'не является',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'содержит',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'является',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'является',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'не является',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>не содержит</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'не содержит',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>не является</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'не является',
@@ -1502,24 +2058,40 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Результаты поиска',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': undefined, // 'Edit columns'
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': undefined, // 'Remove from table'
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': undefined, // 'Reset columns'
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': undefined, // 'Select up to 5 field types'
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Статус конфигурации',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Поиск города или часового пояса',
+  'time-zone.action.select-local-time-zone': 'Выбрать местный часовой пояс',
+  'time-zone.dialog-info.content-releases':
+    'Выбранный часовой пояс изменит способ отображения дат в выпусках контента.',
+  'time-zone.dialog-info.input':
+    'Выбранный часовой пояс изменит способ отображения дат только для этого ввода в этом документе.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Выбранный часовой пояс изменит способ отображения дат в расписаниях.',
+  'time-zone.local-time': 'местное время',
+  'time-zone.time-zone': 'Часовой пояс',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Отображение выпусков в {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Отображение <em>{{title}}</em> в {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Отображение расписаний в {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Изменения от',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Транзакции истории документа не были затронуты.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'Произошла ошибка при получении изменений документа.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Включите API событий через конфигурацию Studio, чтобы просмотреть историю документа.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'История версий документов доступна только через API событий.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'При изменении содержимого документа версии документа появятся в этом меню.',
@@ -1530,7 +2102,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when the timeline item is the latest in the history */
   'timeline.latest': 'Последний',
   /** Label for latest revision for timeline menu dropdown */
-  'timeline.latest-revision': undefined, // 'Latest revision'
+  'timeline.latest-revision': 'Последняя ревизия',
   /**
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
@@ -1540,6 +2112,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Ревизии документа',
   /** Label for loading history */
   'timeline.loading-history': 'Загрузка истории…',
+  'timeline.no-previous-events': 'Предыдущие события отсутствуют',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Создано',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1552,6 +2125,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Удалено',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Удалено: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Черновик создан',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Черновик создан: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Черновик отменен',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1565,6 +2142,8 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp':
     'Отредактировано в реальном времени: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Удалено политикой хранения',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Опубликовано',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1573,6 +2152,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Снято с публикации',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Снято с публикации: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Версия создана',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Версия создана: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Версия отменена',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Версия отменена: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1585,23 +2172,23 @@ export default removeUndefinedLocaleResources({
   'toolbar.portable-text.action-button-aria-label': '{{action}}',
 
   /** Accessibility label for the breadcrumb menu */
-  'tree-editing-dialog.breadcrumbs.menu': undefined, // 'Breadcrumb menu'
+  'tree-editing-dialog.breadcrumbs.menu': 'Меню хлебных крошек',
   /** Title placeholder for search input in array of objects */
-  'tree-editing-dialog.search-placeholder': undefined, // 'Search'
+  'tree-editing-dialog.search-placeholder': 'Поиск',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': undefined, // 'Search menu'
+  'tree-editing-dialog.search.menu-label': 'Меню поиска',
   /** Title label for when no search results are found on the tree of objects */
-  'tree-editing-dialog.search.no-results-title': undefined, // 'No results found'
+  'tree-editing-dialog.search.no-results-title': 'Результаты не найдены',
   /** Label to close the sidebar */
-  'tree-editing-dialog.sidebar.action.close': undefined, // 'Close sidebar'
+  'tree-editing-dialog.sidebar.action.close': 'Закрыть боковую панель',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': undefined, // 'Collapse'
+  'tree-editing-dialog.sidebar.action.collapse': 'Свернуть',
   /** Label to close the dialog */
-  'tree-editing-dialog.sidebar.action.done': undefined, // 'Done'
+  'tree-editing-dialog.sidebar.action.done': 'Готово',
   /** Exapnd label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.expand': undefined, // 'Expand'
+  'tree-editing-dialog.sidebar.action.expand': 'Развернуть',
   /** Label to open the sidebar */
-  'tree-editing-dialog.sidebar.action.open': undefined, // 'Open sidebar'
+  'tree-editing-dialog.sidebar.action.open': 'Открыть боковую панель',
 
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'Остался {{count}} день пробного периода',
@@ -1646,6 +2233,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Открыть меню',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Изменения агента',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Предлагаемые изменения',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1658,6 +2250,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Выбрать другое рабочее пространство',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Переключить рабочее пространство',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Выберите ваше рабочее пространство',
   /** Label for the workspace menu */

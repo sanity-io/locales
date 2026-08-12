@@ -12,6 +12,12 @@ const execFile = promisify(execFileCb)
  */
 export interface MergePROptions {
   /**
+   * Whether to enable auto-merge instead of merging immediately
+   * Defaults to `false`
+   */
+  auto?: boolean
+
+  /**
    * Whether or not to delete the branch after merging
    * Defaults to `true`
    */
@@ -30,7 +36,10 @@ export async function mergePR(
   prNumberOrBranchName: number | string,
   options: MergePROptions = {},
 ): Promise<void> {
-  const flags = options.deleteBranch === false ? [] : ['--delete-branch']
+  const flags = [
+    ...(options.deleteBranch === false ? [] : ['--delete-branch']),
+    ...(options.auto ? ['--auto'] : []),
+  ]
   await execFile('gh', ['pr', 'merge', `${prNumberOrBranchName}`, '--squash', ...flags], {
     cwd: await getRootPath(),
   })

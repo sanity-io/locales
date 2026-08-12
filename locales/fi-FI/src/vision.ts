@@ -3,20 +3,62 @@ import {removeUndefinedLocaleResources} from 'sanity'
 export default removeUndefinedLocaleResources({
   /** Label for action "Copy to clipboard", tied to the "Query URL" field. Also used for accessibility purposes on button */
   'action.copy-url-to-clipboard': 'Kopioi leikepöydälle',
+  /** Label for deleting a query */
+  'action.delete': 'Poista',
+  /** Label for editing a query's title */
+  'action.edit-title': 'Muokkaa otsikkoa',
   /** Label for stopping an ongoing listen operation */
   'action.listen-cancel': 'Pysäytä',
   /** Label for setting up a listener */
   'action.listen-execute': 'Kuuntele',
+  /** Label for query loading table */
+  'action.load-queries': 'Lataa kyselyt',
+  /** Label for loading a query */
+  'action.load-query': 'Lataa kysely',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'Peruuta',
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Hae',
+  /** Label for saving a query */
+  'action.save-personal-copy': 'Tallenna henkilökohtainen kopio',
+  /** Label for saving a personal query */
+  'action.save-personal-query': 'Tallenna henkilökohtaisena',
+  /** Label for saving a query */
+  'action.save-query': 'Tallenna kysely',
+  /** Label for saving a shared query */
+  'action.save-shared-query': 'Tallenna jaettuna',
+  /** Label for unsharing a query */
+  'action.unshare': 'Poista jakaminen',
+  /** Label for updating a query */
+  'action.update': 'Päivitä',
 
+  /** Label for actions user can take */
+  'label.actions': 'Toiminnot',
+  /** Label for all saved queries */
+  'label.all': 'Kaikki',
+  /** Label for saved queries that have been edited */
+  'label.edited': 'Muokattu',
   /**
    * Some features has a "New" label indicating that the feature was recently introduced.
    * This defines what the text of that label is. Keep it short and sweet.
    */
   'label.new': 'Uusi',
+  /** Label for query type "personal" */
+  'label.personal': 'Henkilökohtainen',
+  /** Label for savedAt date */
+  'label.saved-at': 'Tallennettu',
+  /** Saved queries */
+  'label.saved-queries': 'Tallennetut kyselyt',
+  /** Search queries */
+  'label.search-queries': 'Etsi kyselyitä',
+  /** Share query */
+  'label.share': 'Jaa',
+  /** Label for query type "shared" */
+  'label.shared': 'Jaettu',
+  /** Label for saved query type "team" */
+  'label.team': 'Tiimi',
+  /** Label for untitled query fallback */
+  'label.untitled-query': 'Nimetön',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Parametrit eivät ole kelvollista JSONia',
@@ -48,6 +90,22 @@ export default removeUndefinedLocaleResources({
    */
   'result.timing-not-applicable': 'ei sovellu',
 
+  /** Query already saved error label */
+  'save-query.already-saved': 'Kysely on jo tallennettu',
+  /** Save error label */
+  'save-query.error': 'Virhe tallennettaessa kyselyä',
+  /** Save personal copy success label */
+  'save-query.personal-copy-success': 'Henkilökohtainen kopio tallennettu',
+  /** Warning displayed before sharing a query */
+  'save-query.share-warning':
+    'Jaetut kyselyt tallennetaan asiakirjoina dataset-tietokantaasi ja lasketaan asiakirjakiintiöösi.',
+  /** Save shared query success label */
+  'save-query.shared-success': 'Jaettu kysely tallennettu',
+  /** Save success label */
+  'save-query.success': 'Kysely tallennettu',
+  /** Save unshared query success label */
+  'save-query.unshared-success': 'Kysely siirretty henkilökohtaisiin',
+
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versio',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -63,11 +121,23 @@ export default removeUndefinedLocaleResources({
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
   'settings.perspective-label': 'Perspective',
+  /** Notification about previewDrafts to drafts rename */
+  'settings.perspective.preview-drafts-renamed-to-drafts.description':
+    'Perspektiivi "<code>previewDrafts</code>" on nimetty uudelleen muotoon "<code>drafts</code>" ja on nyt vanhentunut. Tämä muutos on voimassa kaikissa versioissa, joissa on perspektiivituki (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Lue dokumentaatiota',
+  /** Option for selecting default perspective */
+  'settings.perspectives.default': 'Ei perspektiiviä (API:n oletus)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives mahdollistavat kyselysi suorittamisen eri "näkymillä" sisällöstä datasetissäsi',
+  /** Description for upcoming default perspective change */
+  'settings.perspectives.new-default.description':
+    'Oletusperspektiivi muuttuu muodosta "<code>raw</code>" muotoon "<code>published</code>" tulevassa API-versiossa. Katso lisätietoja dokumentaatiosta.',
+  /** Label for the pinned release perspective */
+  'settings.perspectives.pinned-release-label': 'kiinnitetty julkaisu',
+  /** Label for the scheduled drafts perspective */
+  'settings.perspectives.scheduled-drafts': 'Ajastetut luonnokset',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
 })

@@ -57,15 +57,13 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': 'ไม่มีงานที่เสร็จสมบูรณ์',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.text':
-    'งานของคุณที่ทำเครื่องหมายว่าเสร็จสิ้นจะปรากฏที่นี่',
+  'empty-state.status.list.closed.assigned.text': 'งานของคุณที่ทำเครื่องหมายว่าเสร็จสิ้นจะปรากฏที่นี่',
   /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.document.heading': 'ไม่มีงานที่เสร็จสมบูรณ์',
   /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.heading': 'ไม่มีงานที่เสร็จสิ้น',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.text':
-    'งานที่คุณติดตามและทำเครื่องหมายว่าเสร็จสิ้นจะปรากฏที่นี่',
+  'empty-state.status.list.closed.subscribed.text': 'งานที่คุณติดตามและทำเครื่องหมายว่าเสร็จสิ้นจะปรากฏที่นี่',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'คุณทำงานเสร็จหมดแล้ว',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
@@ -157,4 +155,7 @@ export default removeUndefinedLocaleResources({
   'tab.document.label': 'เอกสารที่กำลังใช้งาน',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'ที่ติดตาม',
+
+  /** Tooltip for the tasks navbar icon */
+  'toolbar.tooltip': 'งาน',
 })

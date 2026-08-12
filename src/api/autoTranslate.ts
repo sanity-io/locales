@@ -1,8 +1,11 @@
 import {execFile as execFileCb} from 'node:child_process'
+import {writeFile} from 'node:fs/promises'
+import {join as joinPath} from 'node:path'
 import {promisify} from 'node:util'
 
-import OpenAI from 'openai'
+import Anthropic from '@anthropic-ai/sdk'
 import pMap from 'p-map'
+import prettyMs from 'pretty-ms'
 
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
@@ -10,12 +13,13 @@ import type {Locale, Resource} from '../types'
 import {getOrderedResources} from '../util/getOrderedResources'
 import {getRootPath} from '../util/getRootPath'
 import {writeFormattedFile} from '../util/writeFormattedFile'
-import {getLocaleRegistry} from './registry'
+import {PR_LABEL_APPROVED, PR_LABEL_CHANGES_REQUESTED} from './ghLabels'
 import {mergePR} from './gitActions'
+import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
-const OPENAI_MODEL = 'gpt-4-1106-preview'
+const ANTHROPIC_MODEL = 'claude-sonnet-4-6'
 
 /**
  * Prefix that preceeds the name of the auto-translated locale branch
@@ -26,17 +30,17 @@ const OPENAI_MODEL = 'gpt-4-1106-preview'
 export const AUTO_TRANSLATE_BRANCH_PREFIX = 'fix/auto'
 
 /**
- * Memoized getter for the OpenAI API client
+ * Memoized getter for the Anthropic API client
  *
  * @internal
  */
-const getOpenAIApi = (() => {
-  let openai: OpenAI | null = null
+const getAnthropicApi = (() => {
+  let anthropic: Anthropic | null = null
   return () => {
-    if (!openai) {
-      openai = new OpenAI()
+    if (!anthropic) {
+      anthropic = new Anthropic()
     }
-    return openai
+    return anthropic
   }
 })()
 
@@ -86,9 +90,9 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
 
   if (targetLocales && targetLocales.length !== filteredLocales.length) {
     throw new Error(
-      `Could not find one or more of the requested locales: ${targetLocales.filter(
-        (locale) => !filteredLocales.find((l) => l.id === locale),
-      )}`,
+      `Could not find one or more of the requested locales: ${targetLocales
+        .filter((locale) => !filteredLocales.find((l) => l.id === locale))
+        .join(', ')}`,
     )
   }
 
@@ -126,24 +130,24 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         batches.push(batch)
       }
 
+      logger(
+        `[${locale.id}] Translating ${batches.length} key batches for namespace ${ns.namespace}`,
+      )
+
       // For each of the batches, translate the keys (do X batches in parallel)
       const numTranslatedInBatches = await pMap(
         batches,
         async function translateBatch(currentBatch, index) {
           const tpl = templateMissingResources(ns.indexedResources, currentBatch)
-          logger(
-            `[${locale.id}] Translating ${index + 1}/${
-              batches.length
-            } key batches for namespace ${ns.namespace}`,
-          )
-
+          const startTime = Date.now()
           const translation = JSON.parse(await translateText(tpl, localeName))
+          const duration = prettyMs(Date.now() - startTime)
+          logger(`[${locale.id}] Translated batch ${index + 1} in ${duration}`)
 
           // Set the values from translation into the namespace
           let batchTranslated = 0
           for (const key of currentBatch) {
             const val = ns.indexedResources[key.key]
-            // eslint-disable-next-line max-depth
             if (!val) {
               continue
             }
@@ -194,7 +198,7 @@ function templateMissingResources(
   missingKeys.forEach((entry) => {
     const val = indexedResources[entry.key]
     if (val) {
-      tpl += `  // ${val.comments}\n`
+      tpl += `  // ${(val.comments ?? []).join(',')}\n`
       tpl += `  ${JSON.stringify(entry.key)}: ${JSON.stringify(val.baseValue)},\n`
     }
   })
@@ -210,38 +214,48 @@ function templateMissingResources(
  * @returns
  */
 async function translateText(text: string, targetLanguage: string): Promise<string> {
-  // Note: will thrown on missing environment variable
-  const openai = getOpenAIApi()
+  // Note: will throw on missing environment variable
+  const anthropic = getAnthropicApi()
 
   if (text.trim() === '') {
     return JSON.stringify({})
   }
 
-  const chatCompletion = await openai.chat.completions.create({
+  // Use tool calling to guarantee valid JSON output. The model is forced to call
+  // this tool, so the response is always machine-parseable — no markdown fences,
+  // no trailing text, no truncated JSON.
+  const message = await anthropic.messages.create({
+    model: ANTHROPIC_MODEL,
+    max_tokens: 4096,
+    system: getSystemPrompt(),
     messages: [
       {
-        role: 'system',
-        content: getSystemPrompt(),
-      },
-      {
         role: 'user',
-        content: `I would like this translated to ${targetLanguage}. Respond with JSON:`,
-      },
-      {
-        role: 'user',
-        content: text,
+        content: `I would like this translated to ${targetLanguage}:\n\n${text}`,
       },
     ],
-    model: OPENAI_MODEL,
-    stream: false,
+    // oxlint-disable-next-line typescript/no-deprecated -- deterministic output is preferred for translations, and the model in use still supports setting temperature
     temperature: 0,
-    // eslint-disable-next-line camelcase
-    response_format: {
-      type: 'json_object',
-    },
+    tools: [
+      {
+        name: 'submit_translations',
+        description:
+          'Submit the translated key-value pairs. Each key must match the original key exactly, and each value is the translated string.',
+        input_schema: {
+          type: 'object' as const,
+          additionalProperties: {type: 'string'},
+        },
+      },
+    ],
+    tool_choice: {type: 'tool' as const, name: 'submit_translations'},
   })
 
-  return chatCompletion.choices[0].message.content || ''
+  const toolBlock = message.content.find((block) => block.type === 'tool_use')
+  if (!toolBlock || toolBlock.type !== 'tool_use') {
+    throw new Error('No tool_use block in response')
+  }
+
+  return JSON.stringify(toolBlock.input)
 }
 
 /**
@@ -251,20 +265,39 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
  * @internal
  */
 function getSystemPrompt(): string {
-  return `You are a helpful translation assistant. Your job is to
-receive source code files and translate the values within, and return the exact same
-file back to the user, with the translations included. The user will give you a
-segment from a typescript file representing i18next resource bundles. Preserve
-exactly the source code, english comments and keys. Do not translate any of
-those. You WILL translate the values of the keys into the requested target
-language. Respond with valid JSON, keeping it EXACTLY the same as given to you,
-except your translation. If there is nothing to translate, just return the input
-back. Your output will be read programmatically by a node script so it is very
-important that you do not change its structure at all, except translation of the
-value strings. The values may contain branded feature names of the Sanity.io
-platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake"
-etc. Do not translate any words and terms that are Sanity.io product features as
-it is important that the branding is preserved.`
+  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. Translate the values into the requested target language and submit them using the submit_translations tool.
+
+Rules:
+- Preserve every key exactly as given.
+- Translate only the values.
+- If there is nothing to translate, return the input as-is.
+- The values may contain branded feature names of the Sanity.io platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake" etc. Do not translate these branded terms.`
+}
+
+/**
+ * Returns locale IDs that have an open, reviewed PR (approved or changes requested).
+ * These should be excluded from translation to avoid wasting API calls on translations
+ * that won't be pushed.
+ *
+ * @internal
+ */
+export async function getLocalesWithReviewedPRs(options?: {
+  logger?: (message: string) => void
+}): Promise<string[]> {
+  const {logger = noop} = options ?? {}
+  const locales = await getLocaleRegistry()
+  const skipped: string[] = []
+
+  for (const locale of locales) {
+    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
+    const prLabels = await getPRLabels(branchName)
+    if (prLabels?.includes(PR_LABEL_APPROVED) || prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)) {
+      logger(`Skipping ${locale.id}: existing PR has been reviewed`)
+      skipped.push(locale.id)
+    }
+  }
+
+  return skipped
 }
 
 /**
@@ -272,12 +305,17 @@ it is important that the branding is preserved.`
  *
  * @internal
  */
-export async function pushChanges(): Promise<void> {
+export async function pushChanges(options: {
+  allLocales: boolean
+  logger?: (message: string) => void
+}): Promise<void> {
+  const {logger = noop} = options
   const rootPath = await getRootPath()
   const locales = await getLocaleRegistry()
   const execGitCommand = (args: string[]) => execFile('git', args, {cwd: rootPath})
 
   // Start from main branch
+  await execGitCommand(['fetch', 'origin', 'main'])
   await execGitCommand(['checkout', 'main'])
 
   // Check if there are _any_ changes (eg across locales)
@@ -292,7 +330,7 @@ export async function pushChanges(): Promise<void> {
 
   // Create a branch with _all_ changes and push it, but do not create a PR for it.
   // This allows us to mass-merge all changes in one go should we _want_ to,
-  // while the _default_ approach would be to wait for
+  // while the _default_ approach would be to wait for approvals on individual PRs.
   for (const locale of locales) {
     // Check if the locale has changes
     const {stdout: changes} = await execGitCommand(['status', '--porcelain', locale.path])
@@ -301,13 +339,15 @@ export async function pushChanges(): Promise<void> {
     }
   }
 
-  // Push the "all changes" branch
-  await execGitCommand([
-    'push',
-    'origin',
-    `main:${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`,
-    '--force',
-  ])
+  if (options.allLocales) {
+    // Push the "all changes" branch
+    await execGitCommand([
+      'push',
+      'origin',
+      `main:${AUTO_TRANSLATE_BRANCH_PREFIX}/translate`,
+      '--force',
+    ])
+  }
 
   // Now revert to the original HEAD
   await execGitCommand(['reset', '--mixed', headSha])
@@ -321,9 +361,19 @@ export async function pushChanges(): Promise<void> {
     }
 
     const hasMaintainers = locale.maintainers.length > 0
+    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
+
+    // Check if an existing PR has been reviewed (approved or changes requested).
+    // If so, skip this locale to avoid overwriting reviewed translations with
+    // new non-deterministic AI translations. Labels are managed by the
+    // translate-labels workflow which handles nuanced review states.
+    const prLabels = await getPRLabels(branchName)
+    if (prLabels?.includes(PR_LABEL_APPROVED) || prLabels?.includes(PR_LABEL_CHANGES_REQUESTED)) {
+      logger(`Skipping ${locale.id}: existing PR has been reviewed`)
+      continue
+    }
 
     // Switch to a branch for the given locale
-    const branchName = `${AUTO_TRANSLATE_BRANCH_PREFIX}/${locale.id}`
     await execGitCommand(['checkout', '-B', branchName])
 
     // The locale has changes, add the changes to index and commit them
@@ -332,7 +382,7 @@ export async function pushChanges(): Promise<void> {
     // Push the branch
     await execGitCommand(['push', 'origin', branchName, '--force'])
 
-    if (!(await hasExistingPR(branchName))) {
+    if (prLabels === null) {
       let body = `This PR includes AI-generated, automated translation updates for the ${locale.englishName} locale.`
 
       if (hasMaintainers) {
@@ -360,8 +410,10 @@ export async function pushChanges(): Promise<void> {
           '--repo',
           'sanity-io/locales',
           '--fill',
-          '--reviewer',
-          locale.maintainers.join(','),
+
+          // @todo (external?) reviewers have started failing with: `could not request reviewer: '<username>' not found`
+          // '--reviewer',
+          // locale.maintainers.join(','),
           ...labelFlags,
         ],
         {cwd: rootPath},
@@ -369,7 +421,7 @@ export async function pushChanges(): Promise<void> {
 
       if (!hasMaintainers) {
         // Automatically merge PRs that are missing maintainers - there's no one to review
-        await mergePR(branchName)
+        await mergePR(branchName, {auto: true})
       }
     }
 
@@ -381,15 +433,39 @@ export async function pushChanges(): Promise<void> {
     // The locale has changes, add the changes to index
     await execGitCommand(['add', locale.path])
 
+    // Include a changeset so the translation update is released once the PR is merged.
+    // Releases are managed by changesets, which only publishes packages that have a pending
+    // changeset - a conventional commit message alone does not trigger a release.
+    const changesetPath = await writeChangeset(locale)
+    await execGitCommand(['add', changesetPath])
+
     // Commit the changes
     const commitMessage = `fix(${locale.id}): automated translation updates`
     await execGitCommand(['commit', '-m', commitMessage])
 
     return commitMessage
   }
+
+  /**
+   * Write a changeset declaring a patch release for the given locale package.
+   * Uses a deterministic filename so repeated runs for the same locale overwrite
+   * the previous changeset instead of accumulating new ones.
+   */
+  async function writeChangeset(locale: Locale) {
+    const fileName = `auto-translate-${locale.id.toLowerCase()}.md`
+    const changesetPath = joinPath(rootPath, '.changeset', fileName)
+    const content = `---\n"${locale.packageName}": patch\n---\n\nAutomated translation updates\n`
+    await writeFile(changesetPath, content)
+    return changesetPath
+  }
 }
 
-async function hasExistingPR(branchName: string) {
+/**
+ * Get the labels for an existing PR on the given branch.
+ *
+ * @returns Array of label names if a PR exists, or `null` if no PR exists.
+ */
+async function getPRLabels(branchName: string): Promise<string[] | null> {
   const {stdout} = await execFile('gh', [
     'pr',
     'list',
@@ -399,9 +475,16 @@ async function hasExistingPR(branchName: string) {
     'sanity-io/locales',
     '--limit',
     '1',
+    '--json',
+    'labels',
   ])
 
-  return stdout.trim() !== ''
+  const prs = JSON.parse(stdout.trim() || '[]')
+  if (prs.length === 0) {
+    return null
+  }
+
+  return prs[0].labels.map((label: {name: string}) => label.name)
 }
 
 function noop() {

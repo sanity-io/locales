@@ -2,6 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@sanity/locale-be-by": ["../../locales/be-BY/src"],
+      "@sanity/locale-ca-es": ["../../locales/ca-ES/src"],
       "@sanity/locale-cs-cz": ["../../locales/cs-CZ/src"],
       "@sanity/locale-da-dk": ["../../locales/da-DK/src"],
       "@sanity/locale-de-de": ["../../locales/de-DE/src"],
@@ -22,6 +23,7 @@
       "@sanity/locale-pl-pl": ["../../locales/pl-PL/src"],
       "@sanity/locale-pt-br": ["../../locales/pt-BR/src"],
       "@sanity/locale-pt-pt": ["../../locales/pt-PT/src"],
+      "@sanity/locale-ro-ro": ["../../locales/ro-RO/src"],
       "@sanity/locale-ru-kz": ["../../locales/ru-KZ/src"],
       "@sanity/locale-sv-se": ["../../locales/sv-SE/src"],
       "@sanity/locale-th-th": ["../../locales/th-TH/src"],
@@ -30,7 +32,10 @@
       "@sanity/locale-vi-vn": ["../../locales/vi-VN/src"],
       "@sanity/locale-zh-hans": ["../../locales/zh-Hans/src"],
       "@sanity/locale-zh-hant": ["../../locales/zh-Hant/src"]
-    }
+    },
+    "rootDir": "../.."
   },
-  "extends": "../../tsconfig.json"
+  "extends": "../../tsconfig.json",
+  "include": ["./**/*.ts", "./**/*.tsx"],
+  "exclude": ["node_modules", "dist", ".sanity"]
 }

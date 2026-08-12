@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': 'Havaittu konfiguraatio-ongelma',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    'Automaattiset päivitykset ovat käytössä, mutta <code>deployment.appId</code> ei ole määritetty <code>sanity.cli.ts</code>-tiedostossa. Tämä Studio päivittyy <strong>latest</strong>-kanavaa vasten.',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'Näytä dokumentaatio',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': 'Pois käytöstä',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': 'Käytössä',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': 'Automaattiset päivitykset',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Kuinka ottaa käyttöön',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'Hallitse versiota',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'Kopioitu leikepöydälle. Iloista liittämistä!',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopioi leikepöydälle',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': 'Nykyinen versio',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'Kuinka päivittää',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': 'Uusin versio',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': 'Uusi versio saatavilla',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': 'Uusi versio',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'Lataa uudelleen',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': 'Lataa Studio uudelleen päivittääksesi',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': 'Kehitys',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': 'Uusi versio saatavilla',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'Esijulkaisu',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': 'Ajan tasalla',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': 'Ajan tasalla',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': 'Päivitä',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Opi kuinka päivittää Sanity Studio',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'Käyttäjäagentti',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'Näytä GitHubissa',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': 'Sulje',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'Sulje dialogi',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': 'Sulje',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'Hylkää ilmoitukset',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'Avaa ilmoitukset',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Poista',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': 'Kuvaa käyttävät dokumentit',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': 'Ladataan…',
+  /** Browse button text */
+  'asset-source.browse-button.text': 'Valitse',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'Peruuta',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     'Näytetään vain hyväksyttyjen tyyppien omaisuutta: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'Peruuta',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': 'Valitse',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'Valitse tiedosto',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': 'Valitse kuva',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'Virhe liitettäessä kohdetta. Katso lisätietoja konsolista.',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'Resurssien lataaminen epäonnistui',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'Lataa lisää',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'Ei tiedostoja',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': 'Ei kuvia',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     'Ei voi poistaa tällä hetkellä valittua tiedostoa',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': 'Kuva poistettiin',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'Ladatut kuvat',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Yksi asiakirja käyttää tiedostoa <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -109,6 +188,41 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Yhtään asiakirjaa ei käytä tätä kuvaa',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': 'Katso lisätietoja konsolista.',
+  'asset-sources.common.uploader.upload-failed.title': 'Lataus epäonnistui',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'Työtilan tiedostot',
+  'asset-sources.dataset.image.title': 'Työtilan kuvat',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'Jokin meni vikaan yrittäessä ratkaista tämän projektin Media Librarya.',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'Tälle organisaatiolle ei ole varattu mediateekkiä.',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'Mediakirjasto',
+  'asset-sources.media-library.image.title': 'Mediakirjasto',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': 'Valmis',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    'Valitse uusi assetti kohteelle “{{targetTitle}}”',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    'Valitse uusi assetti',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'Muokkaa assettia',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'Lataa Media-kirjastoon',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'Käytetään olemassa olevaa tiedostoa kirjastosta.',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "Tiedosto: '{{filename}}' on jo olemassa",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Siirry seuraavaan kuukauteen',
   /** Action message for navigating to next year */
@@ -117,24 +231,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': 'Siirry edelliseen kuukauteen',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': 'Siirry edelliseen vuoteen',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': 'Tänään',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': 'Siirry tähän päivään',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': 'Huomenna',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': 'Eilen',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': 'Sisällytä aika',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': 'Valitse tunti',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': 'Valitse minuutti',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': 'Valitse aika',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Aseta nykyiseen aikaan',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}} {{date, datetime}}',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'Avaa kalenteri',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': 'Valitse päivämäärä',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format': 'Täytyy olla muodossa <Emphasis>{{exampleDate}}</Emphasis>',
   /** Month name for April */
@@ -215,6 +327,9 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': 'Tarkista kehittäjän konsoli saadaksesi lisätietoja',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'Tämän kentän muutosten renderöinti aiheutti virheen',
+  'changes.error-description': 'Emme pysty lataamaan muutoksia tähän asiakirjaan.',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': 'Jotain meni vikaan',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     'Arvovirhe: Arvon tyyppi on "<code>{{actualType}}</code>", odotettiin "<code>{{expectedType}}</code>"',
@@ -244,11 +359,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': 'Ladataan…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': 'Ladataan muutoksia…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    'Emme löytäneet dokumentin versiota tunnuksella: <code>{{revisionId}}</code>, jota yrität verrata. <Break/> Tämä johtuu todennäköisesti suunnitelmasi historian säilytyskäytännöstä. <Break/> Valitse eri <strong>From</strong> -merkintä.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Muokkaa asiakirjaa tai valitse vanhempi versio aikajanalta nähdäksesi muutoslistan tässä paneelissa.',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': 'Ei muutoksia',
+  'changes.not-selectable': 'Tätä tapahtumaa ei voi valita',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': 'Lisätty huomautus',
   /** Portable Text diff: An annotation was changed */
@@ -290,8 +409,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': 'Tuntematon skeeman tyyppi',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': 'Poistettu',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    'Olet valinnut saman <strong>from</strong> ja <strong>to</strong> version, valitse eri versiot vertaillaksesi niiden välisiä muutoksia.',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': 'Sama versio valittu',
   /** Title for the Review Changes pane */
   'changes.title': 'Tarkista muutokset',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'Tätä kenttää ei ole määritelty skeemassa. Arvot näytetään JSON-muodossa.',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'Luonnos',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -302,12 +431,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': 'Vahvista',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Ladataan',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': 'Yritetään muodostaa yhteyttä…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Konfiguraatio-ongelmat',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': 'Löydetty konfiguraatio-ongelmia',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': 'Lajittele {{title}} mukaan',
@@ -327,12 +461,162 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Lajittele otsikon mukaan',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': 'Sulje',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': 'Ohita',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': 'Seuraava',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': 'Edellinen',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'Kopioi pohjasta',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': 'muutettu',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{title}} {{effect}} versiossa {{versionName}}',
+  /** Label for divergence in a single node */
+  'divergence.unresolved-divergence_one': 'Ratkaisematon muutos versiossa {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{count}} ratkaisematonta muutosta versiossa {{versionName}}',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'Peruuta',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': 'Hallinnoi versioita',
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    'Kuinka helppoa tai vaikeaa uuden version inventaarin käyttäminen on?',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': 'Suodata {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': 'tarkastellaan',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'Kaikki käyttäjät (Oletus)',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'Luo variantti',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': 'Luo variantti kohteelle {{variantDefinitionName}}',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': 'Luonnoksena',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'Julkaisuun',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants':
+    'Tai tarkastele olemassa olevia variantteja',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'Peruuta',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_one': '1 asiakirja',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}} asiakirjaa',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'Datasetit: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Ei saatavilla oleva dataset',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Ei saatavilla olevat datasetit',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} toisessa datasetissä',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{documentCount}} {{count}} datasetissä',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'Kopioi tunnus leikepöydälle',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'Dokumentin tunnus',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'Dokumentin tunnuksen kopiointi epäonnistui',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'Projektin tunnus',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
+  'document-group.delete.confirm-button.text_one': 'Poista (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Poista ({{count}})',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'Dokumentin poistamisen aikana tapahtui virhe. Tämä tarkoittaa yleensä, että muut dokumentit viittaavat siihen.',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_one': '1 muu viittaus ei näytetä',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} muuta viittausta ei näytetä',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    'Emme voi näyttää näiden viittausten metatietoja, koska liittyviltä dataset-kohteilta puuttuu käyttöoikeustunnus.',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'Tunnus: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'Esikatselu ei saatavilla',
+  /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
+  'document-group.delete.referring-document-count.text_one':
+    '1 dokumentti viittaa kohteeseen "<DocumentTitle/>"',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} dokumenttia viittaa kohteeseen "<DocumentTitle/>"',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    'Et ehkä pysty poistamaan kohdetta "<DocumentTitle/>", koska seuraavat dokumentit viittaavat siihen:',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
+  'document-group.delete.title_one': 'Poista {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Poista {{count}} {{subject}}',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.variant_one': 'variantti',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'variantit',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
+  'document-group.subject.version_one': 'versio',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'versiot',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': 'Luotu {{date}}',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': 'Muokattu {{date}}',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': 'Viimeksi julkaistu',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': 'Ei julkaistu',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Julkaistu {{date}}',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': 'Versio päivämäärästä <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'Versiota ei löydy',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': 'Muutoksiasi tallennetaan edelleen.',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': 'Tallennus kestää odotettua kauemmin',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'Dokumentti avautui tyhjällä arvolla. {{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': 'Alkuarvoa ei voitu ratkaista',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'Asiakirjatyyppiä "{{type}}" ei löydy',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'Toimintoa ei voi suorittaa',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -433,13 +717,31 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': 'Liity yhteisöömme',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': 'Uusin versio on {{latestVersion}}',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'Rekisteröi studio',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'Sovelluksen id',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now':
+    'Lataa uudelleen päivittääksesi versioon v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versio {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Apua ja resursseja',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': 'Ajan tasalla',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': 'Saapuvat viitteet',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Peruuta',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'Oletus',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'Lataa',
   /** Uploading <FileName/> */
@@ -459,12 +761,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'Lisää kohde...',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'Kopioi',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'Vedä järjestääksesi uudelleen',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': 'Kopioi',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': 'Muokkaa {{itemTypeTitle}}',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': 'Maksimimäärä kohteita saavutettu',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': 'Poista',
   /** Label for removing action when an array item has an error  */
@@ -513,14 +819,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': 'Selvitetään alkuperäistä arvoa…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'Ei käytössä',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': 'Valitse tulevaisuuden päivämäärä.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'esim. {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'Avaa tiedoston asetusvalikko',
-  /** Browse */
-  'inputs.file.browse-button.text': 'Selaa',
-  /** Select file */
-  'inputs.file.dialog.title': 'Valitse tiedosto',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': 'Tuntematon jäsenen tyyppi: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -530,12 +834,15 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': 'Nollaa arvo',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': 'Kelvoton tiedostoarvo',
-  /** Select */
-  'inputs.file.multi-browse-button.text': 'Valitse',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': 'Latausta ei voitu suorittaa tällä hetkellä.',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Lataus epäonnistui',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'Yksityinen assetti',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip':
+    'CDN-pääsy rajoitettu allekirjoitettuihin URL-osoitteisiin',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'Tyhjennä kenttä',
   /** Copy URL */
@@ -544,6 +851,8 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.actions-menu.download.label': 'Lataa',
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied': 'URL on kopioitu leikepöydälle',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': 'Avaa kohteessa {{sourceName}}',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': 'Korvaa',
   /** Upload */
@@ -582,6 +891,9 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': 'Pudota ladataksesi kuvan',
   /** Read only */
   'inputs.files.common.placeholder.read-only': 'Vain luku',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'Lataa tiedostot kohteeseen:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'Tiedostoja ei voi ladata tähän',
   /** Clear upload */
@@ -591,20 +903,23 @@ export default removeUndefinedLocaleResources({
     'Lataus ei ole edennyt vähintään {{staleThresholdMinutes}} minuuttiin ja on todennäköisesti keskeytynyt. Voit turvallisesti tyhjentää keskeneräisen latauksen ja yrittää ladata uudelleen.',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Keskeneräinen lataus',
+  /** Select file */
+  'inputs.files.select-dialog.title': 'Valitse tiedosto kohteelle "{{targetTitle}}"',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Rajaa kuva',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': 'Avaa kuvan muokkausdialogi',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': 'Avaa kuvan asetusvalikko',
-  /** Select */
-  'inputs.image.browse-menu.text': 'Valitse',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here': 'Tätä tiedostoa ei voi ladata tähän',
   /** Drop image to upload */
   'inputs.image.drag-overlay.drop-to-upload-image': 'Pudota kuva ladataksesi sen',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'Tämä kenttä on vain luku',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'Kuvan lataaminen epäonnistui. Tämä voi johtua pääsyrajoituksista.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Tuntematon jäsenen tyyppi: {{kind}}',
   /** Edit hotspot and crop */
@@ -618,6 +933,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': 'Kelvoton kuvan arvo',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Esikatselu ladatusta kuvasta',
+  /** Select image */
+  'inputs.image.select-dialog.title': 'Valitse kuva kohteelle "{{targetTitle}}"',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Latausta ei voitu suorittaa loppuun tällä hetkellä.',
   /** Upload failed */
@@ -629,6 +946,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'Virhe: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'Hotspot & Crop',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "Asset Pipeline ei tue hotspot- ja crop-toimintoja vektorigrafiikkaformaatteihin. Ota hotspot & crop käyttöön tulostamalla tämä kuva mihin tahansa tuetuista rasterimuodoista. Esimerkiksi: <code>fm=jpg</code> <ImageUrlDocumentationLink>kuva-URL-osoitteeseen</ImageUrlDocumentationLink> tai kutsu <code>.format('png')</code> käyttäen <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Katso kehittäjän tiedot',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    'Varoitus: Hotspot ja crop eivät välttämättä tule sovelletuiksi tähän kuvaan, missä sitä esitetään.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Muunna koodiksi <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -656,9 +981,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'Kaikki kentät',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'Kenttäryhmät',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'virhe',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': 'tieto',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': 'varoitus',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'Tämä kenttä on <strong>luettavissa vain</strong> asiakirjan skeeman mukaan eikä sitä voi poistaa. Jos haluat pystyä poistamaan tämän Studiosta, varmista, että poistat <code>readOnly</code> kentän ympäröivästä tyypistä skeemassa.',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    'Viitteen "{{documentId}}" esikatselua ei voi ladata.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Poista kenttä',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -852,8 +1186,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': 'Normaali',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': 'Lainaus',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': 'Lisää sarake loppuun',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': 'Lisää rivi loppuun',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': 'Sarakkeen kahva',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': 'Poista sarake',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': 'Poista rivi',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'Poista taulukko',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'Otsikkorivi',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'Lisää tähän',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'Taulukon asetukset',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': 'Rivin kahva',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'Valitse taulukko',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Tyhjennä',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'Kopioi',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': 'Luo uusi',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -909,6 +1267,9 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'Tyhjennä',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Viitteen haku epäonnistui',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type':
+    'Viitattu dokumentti on virheellistä tyyppiä ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Viitatun asiakirjan kuvan esikatselu',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -974,6 +1335,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': 'Viitteen vahvuuden epäjohdonmukaisuus',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': 'Muunna heikoksi viitteeksi',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'Tyhjennä',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': 'Luo',
   /** Loading message for when the input is actively generating a slug */
@@ -1004,6 +1367,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'Ominaisuuden arvo puuttuu <code>_type</code>',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Poista arvo',
+  /** Select video */
+  'inputs.video.select-dialog.title': 'Valitse video kohteelle "{{targetTitle}}"',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1049,8 +1414,25 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': 'Riittämättömät oikeudet',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'Istuntosi ei ole enää voimassa. Kirjaudu sisään uudelleen.',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired': 'Istuntosi on vanhentunut. Kirjaudu sisään uudelleen.',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'Sinut on kirjattu ulos',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Odottamaton virhe: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'Selaimesi käyttää vanhentunutta HTTP-protokollaa kommunikoidakseen Sanityn kanssa. Tämä voi johtaa merkittävästi heikentyneeseen suorituskykyyn.',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': 'Lue lisää',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'Älä näytä uudelleen tällä istunnolla',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'Sinulla on jarrut päällä',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Luo',
@@ -1079,12 +1461,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': 'Luo uusi asiakirja',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Lataa uudelleen',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio päivitettiin',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Hallitse jäseniä',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Kuka on paikalla',
@@ -1104,8 +1486,268 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'Kuvaa parhaillaan lähetetään',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'juuri nyt',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'Lisää julkaisuun',
+  /** Action message to add document to release */
+  'release.action.add-to-release': 'Lisää kohteeseen {{title}}',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'Asiakirja on jo julkaisussa',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': 'Jo julkaisussa {{title}}',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'Kopioi versio kohteeseen',
+  /** Action message for creating new releases */
+  'release.action.create-new': 'Uusi julkaisu',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'Version luonti epäonnistui',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'Poista aikataulu',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'Hylkää versio',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'Version hylkääminen epäonnistui',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': 'Muokkaa tietoja',
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'Muokkaa aikataulua',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': 'Uusi julkaisu',
+  'release.action.new-release.limit-reached_other':
+    'Tämä työtila on rajoitettu {{count}} julkaisuun',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': 'Julkaise nyt',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'Yritä uudelleen tai tarkista yhteytesi. Asiakirja tulee edelleen olemaan julkaisematta julkaisun yhteydessä.',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'Palautus julkaisemattomaksi asettamisesta julkaisun yhteydessä epäonnistui.',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description': 'Voit nyt muokata tätä versiota.',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'Palautus julkaisemattomaksi asettamisesta julkaisun yhteydessä onnistui.',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': 'Aikatauluta julkaisu',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure': 'Version julkaisemattomaksi asettaminen epäonnistui',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    'Onnistuneesti asetettu <strong>{{title}}</strong> julkaisemattomaksi julkaisussa',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'Näytä julkaisu',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': 'Näytä aikataulutetut luonnokset',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': 'Ajastettu julkaistavaksi {{date}}',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_one': '+{{count}} variantti',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} varianttia',
+  /** Label for button to show other versions in the document perspective list*/
+  'release.chip.button.other-versions_one': '+{{count}} versio',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} versiota',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'Luonnos',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'Luonnokset',
+  /** Label for Published chip in document header */
+  'release.chip.published': 'Julkaistu',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'Tämä julkaisu on arkistoitu eikä sitä voi muokata.',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': 'Luotu {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'Tämä asiakirja on live edit -tilassa, luonnokset ovat pois käytöstä',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': 'Muokattu {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': 'Tarkoitettu {{date}}',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': 'Ei muokkauksia',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': 'Ei julkaistu',
+  'release.chip.tooltip.other-variants_one': 'Yksi variantti',
+  'release.chip.tooltip.other-variants_other': '{{count}} varianttia',
+  'release.chip.tooltip.other-versions_one': 'Yksi lisäversio julkaisujen ulkopuolella',
+  'release.chip.tooltip.other-versions_other': '{{count}} lisäversiota julkaisujen ulkopuolella',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': 'Julkaistu {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': 'Aikataulutettu {{date}}',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': 'Tuntematon päivämäärä',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'Tämä julkaisu on poistettu',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': 'Kopioi versio uuteen julkaisuun',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'Luo julkaisu',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'Luo julkaisu',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'Poistetaanko tämä aikataulutettu luonnos? Luonnoksesi on jo ajan tasalla.',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'Poistetaanko tämä aikataulutettu luonnos? Muutoksesi tallennetaan luonnokseen.',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'Poistetaanko tämä aikataulutettu luonnos?',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'Kyllä, poista aikataulu',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'Säilytä aikataulutetut muutokset kopioimalla ne luonnokseen (suositeltavaa)',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'Aikataulutetussa luonnoksessasi on erilaisia muutoksia kuin nykyisessä luonnoksessasi.',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': 'Poista ajoitettu luonnos',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': 'Valitse uusi päivämäärä ja aika ajoitetulle julkaisulle.',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'Päivitä aikataulu',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'Muuta aikataulua',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': 'Tallenna',
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': 'Kuvaus',
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': 'Muokkaa julkaisua',
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': 'Otsikko',
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'Oletko varma, että haluat julkaista tämän ajoitetun luonnoksen välittömästi?',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'Kyllä, suorita nyt',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': 'Julkaise luonnos nyt',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'Tämän avulla on mahdollista näyttää, ovatko asiakirjat ristiriidassa työskenneltäessä useiden versioiden parissa.',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    'HUOM: Voit muuttaa julkaisun aikaa ja asettaa tarkan ajan ajoitetulle julkaisulle myöhemmin.',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'Arvioitu julkaisun aika',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'Kuvaile julkaisua…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'Piilota julkaisu',
+  /** Label for the release menu */
+  'release.menu.label': 'Julkaisuvalikko',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'Näytä aikataulutetut luonnokset',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'Toiminnot',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'Näytä sisältöjulkaisut',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'Luonnokset',
+  /** Label for published releases in navbar */
+  'release.navbar.published': 'Julkaistu',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'Julkaisut',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': 'Nimeämätön julkaisu',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    'Ajoita tämä julkaisu tulevaisuuden ajankohtaan.',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': 'Ajoita',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "'{{title}}' julkaisu on arkistoitu",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'Julkaisun luonti epäonnistui',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> poistaminen epäonnistui: {{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on poistettu.',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': 'Julkaisun tietojen tallentaminen epäonnistui',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "'{{title}}' julkaisua ei löytynyt",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'Aikataulutetun luonnoksen keskeyttäminen epäonnistui <strong>{{title}}</strong>: {{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> julkaiseminen epäonnistui: {{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on julkaistu.',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "Julkaisu '{{title}}' on julkaistu",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    'Ajoitetun luonnosdokumentin <strong>{{title}}</strong> uudelleen ajoittaminen epäonnistui: {{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on uudelleen ajoitettu.',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': 'Luonnoksen aikatauluttaminen epäonnistui: {{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'Luonnos aikataulutettu onnistuneesti',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': 'Ajastettu luonnos julkaistiin',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'Tämä julkaisu on aikataulutettu. Poista aikataulutus lisätäksesi lisää dokumentteja.',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'Mahdollisimman pian',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': 'Ajastettu',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': 'Ei päätetty',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'Näe kaikki dokumenttiversiot',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'Ota yhteyttä tukeen',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'Sisällön julkaisujen konfiguraatio-ongelma',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'Sisällön julkaisut ovat käytössä projektissasi, mutta julkaisurajoituksesi konfiguraatiossa näyttää olevan ongelma. Ota yhteyttä tukeen, jotta sisällön julkaisusi saadaan asianmukaisesti konfiguroitua.',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'Aikatauluta',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'Valitse, milloin tämä dokumentti tulisi julkaista.',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': 'Aikatauluta luonnos julkaisua varten',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': 'Ajoitettu julkaisu',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Avaa haku',
@@ -1282,37 +1924,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>on</Operator> <Value>{{count}} kohde</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>on</Operator> <Value>{{count}} kohdetta</Value>',
   'search.operator.array-count-equal.name': 'määrä on',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>on ></Operator> <Value>{{count}} kohde</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>on ></Operator> <Value>{{count}} kohdetta</Value>',
   'search.operator.array-count-gt.name': 'määrä suurempi kuin',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>on ≥</Operator> <Value>{{count}} kohde</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>on ≥</Operator> <Value>{{count}} kohdetta</Value>',
   'search.operator.array-count-gte.name': 'määrä suurempi tai yhtä suuri kuin',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>on <</Operator> <Value>{{count}} kohde</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>on <</Operator> <Value>{{count}} kohdetta</Value>',
   'search.operator.array-count-lt.name': 'määrä pienempi kuin',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>on ≤</Operator> <Value>{{count}} kohde</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>on ≤</Operator> <Value>{{count}} kohdetta</Value>',
   'search.operator.array-count-lte.name': 'määrä pienempi tai yhtä suuri kuin',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>ei ole</Operator> <Value>{{count}} kohde</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1325,35 +1961,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>on välillä</Operator> <Value>{{from}} → {{to}} kohdetta</Value>',
   'search.operator.array-count-range.name': 'määrä on välillä',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>sisältää</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': 'sisältää',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>ei sisällä</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': 'ei sisällä',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>sisältää</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': 'sisältää',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>ei sisällä</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': 'ei sisällä',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'on',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'ei ole',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'on',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'ei ole',
@@ -1366,161 +1994,121 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'on',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>on jälkeen</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'jälkeen',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>on ennen</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'ennen',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'on',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>on viimeisen</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': 'viimeinen',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'ei ole',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>on välillä</Operator> <Value/>',
   'search.operator.date-range.name': 'on välillä',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>on jälkeen</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'jälkeen',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>on ennen</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'ennen',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'on',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>on viimeisen</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': 'viimeinen',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'ei ole',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description':
     '<Field/> <Operator>on välillä</Operator> <Value/>',
   'search.operator.date-time-range.name': 'on välillä',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>on</Operator> <Value>ei tyhjä</Value>',
   'search.operator.defined.name': 'ei tyhjä',
-  /* Value should not be defined */
   'search.operator.not-defined.description':
     '<Field/> <Operator>on</Operator> <Value>tyhjä</Value>',
   'search.operator.not-defined.name': 'tyhjä',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'on',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'suurempi kuin',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': 'suurempi tai yhtä suuri kuin',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'pienempi kuin',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': 'pienempi tai yhtä suuri kuin',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'ei ole',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>on välillä</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': 'on välillä',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>sisältää</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': 'sisältää',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'on',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>ei sisällä</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': 'ei sisällä',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'ei ole',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'tiedosto',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': 'kuva',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'asiakirja',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'on',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'ei ole',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>sisältää</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': 'sisältää',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'on',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>ei sisällä</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': 'ei sisällä',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'ei ole',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>sisältää</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': 'sisältää',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'on',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>on</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'on',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'ei ole',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>ei sisällä</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': 'ei sisällä',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>ei ole</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'ei ole',
@@ -1543,23 +2131,39 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': 'Hakutulokset',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': 'Muokkaa sarakkeita',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'Poista taulukosta',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': 'Palauta sarakkeet',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': 'Valitse enintään 5 kenttätyyppiä',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': 'Konfiguraation tila',
 
+  'time-zone.action.search-for-timezone-placeholder': 'Etsi kaupunkia tai aikavyöhykettä',
+  'time-zone.action.select-local-time-zone': 'Valitse paikallinen aikavyöhyke',
+  'time-zone.dialog-info.content-releases':
+    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään sisällön julkaisuissa.',
+  'time-zone.dialog-info.input':
+    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään vain tässä syötteessä tässä dokumentissa.',
+  'time-zone.dialog-info.scheduled-publishing':
+    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään aikatauluissa.',
+  'time-zone.local-time': 'paikallinen aika',
+  'time-zone.time-zone': 'Aikavyöhyke',
+  'time-zone.time-zone-tooltip-content-releases':
+    'Näyttää julkaisut {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-input':
+    'Näyttää <em>{{title}}</em> {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    'Näyttää aikataulut {{alternativeName}} GMT{{offset}}',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': 'Muutokset tekijältä',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'Asiakirjan historian transaktioita ei ole vaikuttanut.',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title': 'Virhe tapahtui asiakirjan muutosten noutamisessa.',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'Ota käyttöön tapahtumien API Studio-konfiguraation kautta nähdäksesi dokumenttihistorian.',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'Version dokumenttien historia on saatavilla vain Tapahtumien API:n kautta.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Asiakirjan sisällön muuttamisen yhteydessä asiakirjan versiot ilmestyvät tähän valikkoon.',
@@ -1580,6 +2184,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'Asiakirjan versiot',
   /** Label for loading history */
   'timeline.loading-history': 'Ladataan historiaa…',
+  'timeline.no-previous-events': 'Ei aikaisempia tapahtumia',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': 'Luotu',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1592,6 +2197,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': 'Poistettu',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Poistettu: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'Luonnos luotu',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'Luonnos luotu: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Luonnos hylätty',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1604,6 +2213,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'Muokattu livenä',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Muokattu livenä: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': 'Poistettu säilytyskäytännön mukaan',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Julkaistu',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1612,6 +2223,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': 'Julkaisematon',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Julkaisematon: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'Versio luotu',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'Versio luotu: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'Versio hylätty',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'Versio hylätty: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1686,6 +2305,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Avaa valikko',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentin muutokset',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': 'Ehdotetut muutokset',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1698,6 +2322,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': 'Valitse toinen työtila',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'Vaihda työtilaa',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Valitse työtilasi',
   /** Label for the workspace menu */

@@ -8,6 +8,7 @@ name: AI translate
         options:
           - ALL
           - be-BY
+          - ca-ES
           - cs-CZ
           - da-DK
           - de-DE
@@ -28,6 +29,7 @@ name: AI translate
           - pl-PL
           - pt-BR
           - pt-PT
+          - ro-RO
           - ru-KZ
           - sv-SE
           - th-TH
@@ -46,31 +48,40 @@ jobs:
   translate-and-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v3
+        id: generate-token
         with:
-          cache: pnpm
-          node-version: lts/*
-      - name: Install dependencies
-        run: pnpm install
+          client-id: ${{ vars.ECOSPARK_CLIENT_ID }}
+          private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install pnpm, Node.js and dependencies
+        uses: pnpm/setup@v2
+        with:
+          runtime: node@lts
+          cache: true
       - name: Run reconcile
         run: pnpm run reconcile
       - name: Configure git
-        run: |
+        run: >
           git config --global user.name 'AutoTranslator'
+
           git config --global user.email 'hello@sanity.io'
+
+          git remote set-url origin "https://x-access-token:${{
+          steps.generate-token.outputs.token
+          }}@github.com/sanity-io/locales.git"
       - name: Run autotranslate for all locales
         if: >-
           ${{ github.event.inputs.locale == '' || github.event.inputs.locale ==
           'ALL' }}
         run: pnpm run autotranslate --git
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
       - name: Run autotranslate for specific locale
         if: >-
           ${{ github.event.inputs.locale != '' && github.event.inputs.locale !=
@@ -79,5 +90,5 @@ jobs:
           pnpm run autotranslate --git --locale ${{ github.event.inputs.locale
           }}
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}

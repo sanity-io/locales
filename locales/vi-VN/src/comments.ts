@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Không thể sao chép liên kết vào bảng tạm',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Đã sao chép liên kết vào bảng tạm',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Một khi đã xóa, bình luận không thể khôi phục lại.',
   /** The delete dialog confirm button text for a comment */
@@ -74,10 +71,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Thêm bình luận',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'Không thể chồng chéo bình luận',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Thêm bình luận',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Đã xảy ra lỗi trong quá trình tải bình luận',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Đi đến trường {{field}}',

@@ -1,23 +1,46 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** Label for the "Copy document ID" menu item */
+  'action.copy-document-id.label': 'დოკუმენტის ID-ის კოპირება',
+  /** Tooltip for the copy actions dropdown button in the document panel header */
+  'action.copy-document-url.label': 'დოკუმენტის URL-ის კოპირება',
+  /** Label for the "Copy document URL" menu item */
+  'action.copy-link-to-document.label': 'დოკუმენტის URL-ის კოპირება',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'ოპერაცია არ არის მზად',
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': 'ეს დოკუმენტი ჯერ არ არსებობს ან უკვე წაშლილია',
+  /** Tooltip when action button is disabled because the document exists in scheduled releases */
+  'action.delete.disabled.scheduled-release':
+    'ეს დოკუმენტი ვერ წაიშლება, რადგან იგი შედის დაგეგმილ გამოშვებებში',
+  /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
+  'action.delete.disabled.target-not-found':
+    'არჩეული გამოშვება ან ვარიანტი არ შეიცავს ამ დოკუმენტს',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'წაშლა',
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': 'წაშლა…',
+  /** Tooltip when action is disabled because the document is linked to Canvas */
+  'action.disabled-by-canvas.tooltip':
+    'ზოგიერთი დოკუმენტის ქმედება გათიშულია Canvas-თან დაკავშირების გამო',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     'დარწმუნებული ხართ, რომ გსურთ ყველა ცვლილებათა გაუქმება ბოლო გამოცემიდან?',
+  /** Message prompting the user to confirm discarding changes */
+  'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
+    'დარწმუნებული ხართ, რომ გსურთ ყველა ცვლილების გაუქმება და ეს დრაფტის დოკუმენტის წაშლა?',
+  /**Header for the confirm discard dialog */
+  'action.discard-changes.confirm-dialog.header.text': 'ცვლილებების გაუქმება?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
   'action.discard-changes.disabled.no-change': 'ეს დოკუმენტი არ აქვს გამოუშვებელი ცვლილებები',
   /** Tooltip when action is disabled because the document is not published */
   'action.discard-changes.disabled.not-published': 'ეს დოკუმენტი არ არის გამოცემული',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'ოპერაცია არ არის მზად',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.discard-changes.disabled.target-not-found':
+    'არჩეული გამოშვება ან ვარიანტი არ შეიცავს ამ დოკუმენტს',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'ცვლილებების უარყოფა',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -25,6 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate':
     'ეს დოკუმენტი ჯერ არ არსებობს, ამიტომ არაფერია დუბლირება',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.duplicate.disabled.target-not-found':
+    'არჩეული გამოშვება ან ვარიანტი არ შეიცავს ამ დოკუმენტს',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'დუბლირება',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -33,10 +59,17 @@ export default removeUndefinedLocaleResources({
   'action.publish.already-published.no-time-ago.tooltip': 'უკვე გამოცემულია',
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'გამოცემულია {{timeSincePublished}} წინ',
+  /** Tooltip when action is disabled because the version is published as part of its release */
+  'action.publish.disabled.not-publishable': 'ეს ვერსია გამოქვეყნებულია მისი გამოშვების ფარგლებში',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'ოპერაცია არ არის მზად',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.publish.disabled.target-not-found':
+    'არჩეული გამოშვება ან ვარიანტი არ შეიცავს ამ დოკუმენტს',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'გამოცემა',
+  /** Label for the "Publish" document action */
+  'action.publish.label': 'გამოქვეყნება',
   /** Label for the "Publish" document action when the document has live edit enabled.*/
   'action.publish.live-edit.label': 'გამოცემა',
   /** Fallback tooltip for the "Publish" document action when publish is invoked for a document with live edit enabled.*/
@@ -51,14 +84,21 @@ export default removeUndefinedLocaleResources({
   'action.publish.published.label': 'გამოცემულია',
   /** Label for the "Publish" document action while publish is being executed.*/
   'action.publish.running.label': 'გამოცემა…',
+  /** Label for the "Publish" document action while publish is being executed.*/
+  'action.publish.validation-in-progress.label': 'დოკუმენტის ვალიდაცია...',
+  /** Toast description when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.description':
+    'გთხოვთ, გაასწორეთ ვალიდაციის შეცდომები გამოშვებამდე',
+  /** Toast title when trying to publish with validation errors */
+  'action.publish.validation-issues-toast.title': 'ვალიდაციის შეცდომები',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'არის ვალიდაციის შეცდომები, რომლებიც უნდა გასწორდეს, სანამ ეს დოკუმენტი გამოიცემა',
   /** Tooltip when publish button is waiting for validation and async tasks to complete.*/
   'action.publish.waiting': 'ველოდებით დავალებების დასრულებას გამოცემამდე',
-  /** Message prompting the user to confirm that they want to restore to an earlier version*/
+  /** Message prompting the user to confirm that they want to restore to an earlier revision*/
   'action.restore.confirm.message': 'დარწმუნებული ხართ, რომ გსურთ ამ დოკუმენტის აღდგენა?',
-  /** Fallback tooltip for when user is looking at the initial version */
+  /** Fallback tooltip for when user is looking at the initial revision */
   'action.restore.disabled.cannot-restore-initial': 'თქვენ ვერ აღადგენთ საწყის ვერსიას',
   /** Label for the "Restore" document action */
   'action.restore.label': 'აღდგენა',
@@ -68,30 +108,76 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-published': 'ეს დოკუმენტი არ არის გამოქვეყნებული',
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'ოპერაცია ჯერ არ არის მზად',
+  /** Tooltip when action is disabled because the selected release or variant does not contain this document */
+  'action.unpublish.disabled.target-not-found':
+    'არჩეული გამოშვება ან ვარიანტი არ შეიცავს ამ დოკუმენტს',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'გამოქვეყნების შეწყვეტა',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
     'ეს დოკუმენტი აქვს ცოცხალი რედაქტირება ჩართული და ვერ შეწყდება გამოქვეყნება',
 
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
+  'banners.archived-release.description':
+    'თქვენ ნახულობთ მხოლოდ წაკითხვის დოკუმენტს, რომელიც არქივდა <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად. იგი ვერ შეიცვლება',
+  /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
+  'banners.archived-scheduled-draft.description': 'ეს დაგეგმილი ჩანაწერი დაარქივებულია',
+  /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
+  'banners.choose-new-document-destination.cannot-create-draft-document':
+    'ვერ შეიქმნება დრაფტის დოკუმენტი.',
+  /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
+  'banners.choose-new-document-destination.cannot-create-published-document':
+    'ვერ შეიქმნება გამოქვეყნებული დოკუმენტი.',
+  /** The prompt displayed when a user must select a different perspective in order to create a document */
+  'banners.choose-new-document-destination.choose-destination': 'აირჩიეთ ადგილი ამ დოკუმენტისთვის:',
+  /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
+  'banners.choose-new-document-destination.release-inactive':
+    '<VersionBadge>{{title}}</VersionBadge> რელიზი არაა აქტიური.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'აღადგინეთ უახლესი ვერსია',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'ეს დოკუმენტი წაშლილია.',
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'ეს დოკუმენტის ტიპი გაუქმებულია.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for publish action for discarding the version */
+  'banners.live-edit-draft-banner.discard.tooltip': 'მონახაზის უარყოფა',
+  /** The text for publish action for the draft banner */
+  'banners.live-edit-draft-banner.publish.tooltip': 'გამოაქვეყნეთ რედაქტირების გაგრძელებად',
+  /** The text content for the live edit document when it's a draft */
+  'banners.live-edit-draft-banner.text':
+    'ტიპი <strong>{{schemaType}}</strong> აქვს <code>liveEdit</code> ჩართული, თუმცა ამ დოკუმენტის მონახაზი არსებობს. გამოაქვეყნეთ ან უარყეთ მონახაზი რედაქტირების გაგრძელებად.',
+  /** The label for the "compare draft" action */
+  'banners.obsolete-draft.actions.compare-draft.text': 'დრაფტის შედარება',
+  /** The label for the "discard draft" action */
+  'banners.obsolete-draft.actions.discard-draft.text': 'დრაფტის გაუქმება',
+  /** The label for the "publish draft" action */
+  'banners.obsolete-draft.actions.publish-draft.text': 'დრაფტის გამოქვეყნება',
+  /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
+  'banners.obsolete-draft.draft-model-inactive.text':
+    'სამუშაო სივრცეში არ არის ჩართული დრაფტები, თუმცა ამ დოკუმენტის დრაფტის ვერსია არსებობს.',
+  /** The text content for the paused scheduled draft banner */
+  'banners.paused-scheduled-draft.text':
+    'დაგეგმილი გამოშვება შეჩერებულია რედაქტირებისას. დააჭირეთ განრიგს რეაქტივაციისთვის ან აირჩიეთ ახალი თარიღი.',
+  /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'თქვენი როლი <Roles/> არ აქვს უფლება შექმნას ეს დოკუმენტი.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'თქვენი როლები <Roles/> არ აქვთ უფლება შექმნას ეს დოკუმენტი.',
-  /** The text for the permission check banner if the user only has one role, and it does not allow updating this document */
+  /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'თქვენი როლი <Roles/> არ აქვს უფლება განახლებას ამ დოკუმენტში.',
-  /** The text for the permission check banner if the user only has multiple roles, but they do not allow updating this document */
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
     'თქვენი როლები <Roles/> არ აქვთ უფლება განახლებას ამ დოკუმენტში.',
+  /** The pending text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.sent':
+    'რედაქტორის მოთხოვნა გაგზავნილია',
+  /** The text for the request permission button that appears for viewer roles */
+  'banners.permission-check-banner.request-permission-button.text': 'მოითხოვეთ რედაქტირების უფლება',
+  /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
+  'banners.published-release.description':
+    'თქვენ ნახულობთ მხოლოდ წაკითხვის დოკუმენტს, რომელიც გამოქვეყნდა <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად. იგი ვერ შეიცვლება',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'რეფერენციის ჩატვირთვა',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -102,6 +188,73 @@ export default removeUndefinedLocaleResources({
   /** The text for the reference change banner if the reason is that the reference has been deleted */
   'banners.reference-changed-banner.reason-removed.text':
     'ეს რეფერენცია წაშლილია თქვენი გახსნის შემდეგ.',
+  /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
+  'banners.release.action.add-to-bundle': 'Bundle-ში დამატება',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.add-to-release': 'დაამატეთ რელიზს',
+  /** The text that appears for the action button to add the current document to the global release */
+  'banners.release.action.open-to-edit': 'გახსენით რელიზი რედაქტირებისთვის',
+  /** Toast description in case an error occurs when adding a document to a release  */
+  'banners.release.error.description':
+    'დოკუმენტის რელიზზე დამატებისას წარმოიშვა შეცდომა: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a release  */
+  'banners.release.error.title': 'შეცდომა დოკუმენტის რელიზზე დამატებისას',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description': 'დოკუმენტი არსებობს მხოლოდ',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_one': 'რელიზში',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'რელიზებში',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_one':
+    'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზისა და კიდევ {{count}} რელიზის.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზისა და კიდევ {{count}} რელიზების',
+  /** The text for the banner that appears when a document is not part of any release
+   * @deprecated – no longer in use
+   * */
+  'banners.release.navigate-to-edit-description-none': 'ეს დოკუმენტი არ შედის რაიმე გამოშვებაში',
+  /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-single':
+    'ეს დოკუმენტი ნაწილია <VersionBadge/> რელიზის',
+  /** The text for the banner that appears when a document is not in the current global release */
+  'banners.release.not-in-release': 'არ არის <VersionBadge>{{title}}</VersionBadge> რელიზში.',
+  /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.description':
+    'დაელოდეთ, სანამ დოკუმენტი რელიზზე დაემატება. ეს არ უნდა მიიღოს მეტი წამები, ვიდრე რამდენიმე წამი.',
+  /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
+  'banners.release.waiting.title': 'დოკუმენტის რელიზზე დამატება…',
+  /** The text for the revision not found banner */
+  'banners.revision-not-found.description':
+    'ჩვენ ვერ ვპოულობთ არჩეულ დოკუმენტის რევიზიას, გთხოვთ, აირჩიეთ სხვა ჩანაწერი ისტორიის სიიდან.',
+  /** The text content for the scheduled draft override banner */
+  'banners.scheduled-draft-override-banner.text':
+    'ამ დოკუმენტისთვის არსებობს დაგეგმილი ჩანაწერი. თუ ახლა გააქტიურებთ ცვლილებებს, ისინი გადაწერილი იქნება, როდესაც დაგეგმვა შესრულდება.',
+  /** The text content for the unpublished document banner when is part of a release */
+  'banners.unpublished-release-banner.text':
+    'ეს დოკუმენტი გამოქვეყნდება <VersionBadge>{{title}}</VersionBadge> რელიზის ნაწილად',
+  /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
+  'banners.unpublished-release-banner.text-with-published':
+    'მიმღებია მიმდინარე <strong>გამოქვეყნებული</strong> ვერსია:',
+  /** The text that appears for the action button to add the current document to the selected variant */
+  'banners.variant.action.add-to-variant': 'ვარიანტის შექმნა',
+  /** The text for the banner that appears when the selected variant matches no variant definition */
+  'banners.variant.definition-not-found':
+    'არჩეული ვარიანტი <VariantName>{{name}}</VariantName> ვერ მოიძებნა.',
+  /** Toast description in case an error occurs when adding a document to a variant */
+  'banners.variant.error.description':
+    'შეცდომა მოხდა დოკუმენტის ვარიანტში დამატებისას: {{message}}',
+  /** Toast title in case an error occurs when adding a document to a variant */
+  'banners.variant.error.title': 'შეცდომა დოკუმენტის ვარიანტში დამატებისას',
+  /** The text for the banner that appears when a document is not in the selected variant */
+  'banners.variant.not-in-variant':
+    'არ არსებობს <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> ვარიანტის დოკუმენტი <VariantBadge>{{variantTitle}}</VariantBadge>-სთვის.',
+  /** Description of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.description':
+    'გთხოვთ, მოიცადოთ, სანამ დოკუმენტი ვარიანტში დაემატება. ეს რამდენიმე წამზე მეტს არ უნდა გაგრძელდეს.',
+  /** Title of toast that will appear while the document is added to the variant */
+  'banners.variant.waiting.title': 'დოკუმენტი ვარიანტში ემატება…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'ახალი {{schemaType}}',
@@ -112,6 +265,14 @@ export default removeUndefinedLocaleResources({
   'buttons.action-menu-button.aria-label': 'დოკუმენტის ქმედებების გახსნა',
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'დოკუმენტის ქმედებები',
+  /** The aria-label for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.collapse': 'ყველა პანელის შეკუმშვა',
+  /** The aria-label for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.aria-label.focus': 'პანელის ფოკუსირება',
+  /** The tooltip for the collapse pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.collapse': 'ყველა პანელის შეკუმშვა',
+  /** The tooltip for the focus pane button on the document panel header */
+  'buttons.focus-pane-button.tooltip.focus': 'პანელის ფოკუსირება',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'გაყოფა ფანჯარა მარჯვნივ',
   /** The tool tip for the split pane button on the document panel header */
@@ -120,6 +281,65 @@ export default removeUndefinedLocaleResources({
   'buttons.split-pane-close-button.title': 'დახურვა გაყოფილი ფანჯრის',
   /** The title for the close group button on the split pane on the document panel header */
   'buttons.split-pane-close-group-button.title': 'დახურვა ფანჯრის ჯგუფის',
+
+  /** The text for the canvas linked banner action button */
+  'canvas.banner.edit-in-canvas-action': 'რედაქტირება Canvas-ში',
+  /** The text for the canvas linked banner when the document in editable mode*/
+  'canvas.banner.editable.linked-text': 'ეს დოკუმენტი შეიძლება რედაქტირებადი იყოს Canvas-ში.',
+  /** The description for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-description':
+    'Canvas გაძლევთ თავისუფლებას თავისუფლად წერაში, შემდეგ კი შინაარსის განახლებას Studio-ში ხელით ველით-ველის კოპირების გარეშე.',
+  /** The heading for the canvas linked banner popover in editable mode*/
+  'canvas.banner.editable.popover-heading': 'თავისუფლება წერაში',
+  /** The text for the canvas linked banner when the document is a draft */
+  'canvas.banner.linked-text.draft': 'ეს დრაფტის დოკუმენტი Canvas-თან არის დაკავშირებული',
+  /** The text for the canvas linked banner when the document is a live document */
+  'canvas.banner.linked-text.published': 'ეს ცოცხალი დოკუმენტი Canvas-თან არის დაკავშირებული',
+  /** The text for the canvas linked banner when the document is a version document */
+  'canvas.banner.linked-text.version': 'ეს ვერსიის დოკუმენტი Canvas-თან არის დაკავშირებული',
+  /** The text for the canvas linked banner popover button */
+  'canvas.banner.popover-button-text': 'გაიგეთ მეტი',
+  /** The description for the canvas linked banner popover */
+  'canvas.banner.popover-description':
+    'Canvas გთავაზობთ თავისუფლებას რედაქტირებაში უფორმო რედაქტორში, რომელიც ავტომატურად გადაიყვანს სტუდიაში როგორც სტრუქტურიზებულ კონტენტს - როგორც წერთ.',
+  /** The heading for the canvas linked banner popover */
+  'canvas.banner.popover-heading': 'იდეების პირველადი ავტორიზება',
+
+  /** The description for the changes banner */
+  'changes.banner.description':
+    'აჩვენებს ისტორიას <strong>{{perspective}}</strong> ვერსიის ამ დოკუმენტისთვის.',
+  /** The tooltip for the changes banner */
+  'changes.banner.tooltip':
+    'ეს ხედი აჩვენებს ცვლილებებს, რომლებიც მოხდა ამ დოკუმენტის კონკრეტულ ვერსიაში. აირჩიეთ სხვა ვერსია, რათა ნახოთ მისი ცვლილებები',
+  /** The label used in the changes inspector for the from selector */
+  'changes.from.label': 'დან',
+  'changes.tab.history': 'ისტორია',
+  'changes.tab.review-changes': 'ცვლილებების გადახედვა',
+  /** The label used in the changes inspector for the to selector */
+  'changes.to.label': 'მდე',
+
+  /** The error message shown when the specified document comparison mode is not supported */
+  'compare-version.error.invalidModeParam':
+    '"{{input}}" არ არის დოკუმენტთა შედარების მხარდაჭერილი რეჟიმი.',
+  /** The error message shown when the next document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidNextDocumentParam': 'შემდეგი დოკუმენტის პარამეტრი არასწორია.',
+  /** The error message shown when the document comparison URL could not be parsed */
+  'compare-version.error.invalidParams.title': 'დოკუმენტთა შედარება შეუძლებელია',
+  /** The error message shown when the previous document for comparison could not be extracted from the URL */
+  'compare-version.error.invalidPreviousDocumentParam': 'წინა დოკუმენტის პარამეტრი არასწორია.',
+  /** The error message shown when releases failed to load */
+  'compare-version.error.loadReleases.title': 'გამოშვებების ჩატვირთვა ჩავარდა',
+
+  /** The text for the tooltip when the "Compare versions" action for a document is disabled */
+  'compare-versions.menu-item.disabled-reason': 'ამ დოკუმენტის სხვა ვერსიები არ არის შესადარებლად.',
+  /** The text for the "Compare versions" action for a document */
+  'compare-versions.menu-item.title': 'შედარება ვერსიები',
+  /** The string used to label draft documents */
+  'compare-versions.status.draft': 'დრაფტი',
+  /** The string used to label published documents */
+  'compare-versions.status.published': 'გამოქვეყნებული',
+  /** The title used when comparing versions of a document */
+  'compare-versions.title': 'ვერსიების შედარება',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'გაუქმება',
@@ -145,21 +365,34 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cdr-table.dataset.label': 'დატასეტი',
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'დოკუმენტის ID',
-  /** The toast title when the copy button has been clicked */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title': 'დოკუმენტის ID კოპირებულია ბუფერში!',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed':
+    'დოკუმენტის ID-ის კოპირება ჩაიშალა',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'პროექტის ID',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'წაშლა მაინც',
+  /** The text in the "Delete anyway" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  /** The text in the "Delete anyway" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'გაუქმება მაინც',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'წაშლა ახლავე',
+  /** The text in the "Delete now" button when the document only has a single version */
+  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  /** The text in the "Delete now" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'გაუქმება ახლავე',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'დარწმუნებული ხართ, რომ გსურთ „<DocumentTitle/>“-ის წაშლა?',
+  /** The confirmation text when the document only has a single version */
+  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  /** The confirmation text when the document has multiple versions */
+  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'დარწმუნებული ხართ, რომ გსურთ „<DocumentTitle/>“-ის გაუქმება?',
@@ -222,12 +455,23 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'უცნობი სქემის ტიპი: {{schemaType}}',
 
+  /** Hint shown to help guide users to the new document group inventory */
+  'document-group-inventory.onboarding-hint': 'სად გაქრა ვერსიის ღილაკები?',
+
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'დახურვა',
   /** The title shown in the dialog header, when inspecting a valid document */
   'document-inspector.dialog.title': 'შემოწმება <DocumentTitle/>',
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'არაფერის მქონე',
+  /** Accessibility label for the close button shown when an inspector panel failed to render */
+  'document-inspector.error.close-button.aria-label': 'პანელის დახურვა',
+  /** Text explaining that the inspector panel failed to render */
+  'document-inspector.error.description': 'ამ პანელის რენდერინგისას შეცდომა მოხდა.',
+  /** Label for the button that attempts to render the inspector panel again */
+  'document-inspector.error.retry-button.text': 'თავიდან ცდა',
+  /** The title shown in the inspector panel header when the panel failed to render */
+  'document-inspector.error.title': 'რაღაც შეფერხება მოხდა',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'შემოწმება',
   /** the placeholder text for the search input on the inspect dialog */
@@ -236,6 +480,10 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.parsed': 'განმარტებული',
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'მუშარი JSON',
+
+  /** Tooltip on target badges when the document does not exist in the selected perspective */
+  'document-target-badges.not-in-target.tooltip':
+    'დოკუმენტი ჯერ არ არსებობს არჩეულ perspective-ში.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'ეს ფორმა დამალულია',
@@ -248,6 +496,66 @@ export default removeUndefinedLocaleResources({
     'გთხოვთ, დაელოდოთ, სანამ დოკუმენტი სინქრონიზდება. ეს ხშირად ხდება მაშინ, როცა დოკუმენტი გამოქვეყნდება, და არ უნდა მიიღოს მეტი, ვიდრე რამდენიმე წამი',
   /** The title of the sync lock toast on the form view */
   'document-view.form-view.sync-lock-toast.title': 'დოკუმენტის სინქრონიზაცია…',
+  /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.description':
+    'ჩვენ გავაგრძელებთ მცდელობას. თქვენი ცვლილებები ამასობაში ბრაუზერში ინახება.',
+  /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
+  'document-view.form-view.sync-pending.title': 'თქვენი ცვლილებები არ ინახება',
+  /** Description of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.description':
+    'რედაქტირება განახლდება მაშინვე, როგორც კი თქვენი ცვლილებები შეინახება.',
+  /** Title of the toast shown when the connection is back and buffered edits are being submitted */
+  'document-view.form-view.sync-recovering.title': 'თქვენი ცვლილებები ინახება…',
+  /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.description':
+    'რედაქტირება შეჩერებულია შენახვამდე. თქვენი ცვლილებები ბრაუზერში ინახება, ამიტომ გააღეთ ეს ჩანართი, სანამ ჩვენ ვაგრძელებთ მცდელობას.',
+  /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
+  'document-view.form-view.sync-stalled.title': 'თქვენი ცვლილებები კვლავ არ ინახება',
+
+  /** The description for the document favorite action */
+  'document.favorites.add-to-favorites': 'დაამატეთ რჩეულებში',
+  /** The description for the document unfavorite action */
+  'document.favorites.remove-from-favorites': 'წაშალეთ რჩეულებიდან',
+
+  /** The description for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.description':
+    'ჩვენ ვერ ვტვირთავთ ამ დოკუმენტის ცვლილებებს, შესაძლოა თქვენი გეგმის ისტორიის დაცვის პოლიტიკის გამო, ეს გაჩვენებთ, როგორ შედარებულია <strong>{{version}}</strong> ვერსია <strong>გამოშვებული</strong> ვერსიით.',
+  /** The title for the events inspector when we can't load the document so we default to compare with published */
+  'events.compare-with-published.title': 'შედარება გამოშვებულთან',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
+  'events.inspect.release': 'შეამოწმეთ <VersionBadge>{{releaseTitle}}</VersionBadge> დოკუმენტი',
+  /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
+  'events.open.draft': 'გახსენით <VersionBadge>draft</VersionBadge> დოკუმენტი',
+  /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
+  'events.open.release': 'გახსენით <VersionBadge>{{releaseTitle}}</VersionBadge> რელიზი',
+
+  /** The text for the add reference item in the incoming references input */
+  'incoming-references-input.add-reference-item': 'დაამატეთ ერთეული',
+  /** The aria-label for the incoming references list */
+  'incoming-references-input.list-label': 'შემომავალი მიმართულებები ტიპის {{type}}',
+  /** The text for the no items in the incoming references input */
+  'incoming-references-input.no-items': 'ერთეულები არ არის',
+  /** The text for the reference from in the incoming references input */
+  'incoming-references-input.reference-from': 'მიმართულება ტიპიდან {{type}}',
+  /** The text for the schema type not found in the incoming references input */
+  'incoming-references-input.schema-type-not-found': 'სქემის ტიპი {{type}} ვერ მოიძებნა',
+  /** The text for the type to search in the incoming references input */
+  'incoming-references-input.type-to-search': 'ჩაწერეთ რათა მოძებნოთ',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading': 'დოკუმენტების ჩატვირთვა...',
+  /** The text for the loading state in the incoming references input */
+  'incoming-references-input.types-loading-cross-dataset':
+    'კროს-დატასეტის დოკუმენტების ჩატვირთვა...',
+  /** The text for the no references defined in the incoming references input */
+  'incoming-references-input.types-not-defined':
+    'ამ ტიპისთვის შემომავალი მიმართულებები არ არის განსაზღვრული, იხილეთ დოკუმენტაცია უფრო დეტალურად.',
+
+  /** The text shown if there are no incoming references in the inspector */
+  'incoming-references-pane.no-references': 'შემომავალი მითითებები ვერ მოიძებნა.',
+  /** The text shown if there are no incoming references for a type */
+  'incoming-references-pane.no-references-found': 'ამ ტიპის მიმართულებები ვერ მოიძებნა.',
+  /** The text shown if there is no schema type found for a document in the incoming references pane */
+  'incoming-references-pane.schema-type-not-found': 'სქემის ტიპი {{type}} ვერ მოიძებნა',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': 'ჩატვირთვა…',
@@ -264,10 +572,19 @@ export default removeUndefinedLocaleResources({
   'menu-items.layout.compact-view': 'კომპაქტური ხედვა',
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'დეტალური ხედვა',
+  /** The menu item title that restores the structure-configured default layout */
+  'menu-items.layout.restore-default': 'ნაგულისხმევი ხედი',
+  /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
+  'menu-items.layout.restore-default.disabled-reason': 'უკვე გამოიყენება ნაგულისხმევი ხედი',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'დალაგება შექმნის თარიღით',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'დალაგება ბოლოს რედაქტირებულით',
+  /** The menu item title that restores the structure-configured default sort order */
+  'menu-items.sort-by.restore-default': 'ნაგულისხმევი დალაგება',
+  /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
+  'menu-items.sort-by.restore-default.disabled-reason':
+    'უკვე გამოიყენება ნაგულისხმევი დალაგების თანმიმდევრობა',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'გაიგეთ, როგორ დაამატოთ დოკუმენტის ტიპი →',
@@ -307,12 +624,19 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'ახალი {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'უსათაურო',
-  /** The text for the retry button on the document list pane */
-  'panes.document-list-pane.error.retry-button.text': 'ხელახლა ცდა',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.retrying': 'ხელახლა ცდა…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'შეცდომა: <Code>{{error}}</Code>',
+  /** The error text on the document list pane */
+  'panes.document-list-pane.error.text.dev': 'შეცდომა: <Code>{{error}}</Code>',
+  /** The error text on the document list pane if the browser appears to be offlline */
+  'panes.document-list-pane.error.text.offline': 'ინტერნეტის კავშირი ჩანს გათიშული.',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': 'სიის ელემენტების მიღება ვერ მოხერხდა',
+  /** The help text saying that we'll retry fetching the document list */
+  'panes.document-list-pane.error.will-retry-automatically_one': 'ხელახლა ცდა…',
+  'panes.document-list-pane.error.will-retry-automatically_other': 'ხელახლა ცდა… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'ნაჩვენებია მაქსიმუმ {{limit}} დოკუმენტი',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -321,10 +645,24 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.no-documents.text': 'შედეგები ვერ მოიძებნა',
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': 'დოკუმენტები არ მოიძებნა',
+  /** The search input for the search input on the document list pane */
+  'panes.document-list-pane.reconnecting': 'კავშირის მცდელობა…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': 'სიის ძიება',
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'სიის ძიება',
+  /** The aria-label for the sort-order control shown beneath the document list search input */
+  'panes.document-list-pane.search-ordering.aria-label': 'საძიებო შედეგების თანმიმდევრობის შეცვლა',
+  /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
+  'panes.document-list-pane.search-ordering.label': 'დალაგებულია {{order}}-ის მიხედვით',
+  /** The label for the relevance (best match) option in the document list search sort-order control */
+  'panes.document-list-pane.search-ordering.relevance': 'რელევანტურობა',
+  /** The sort-order control summary shown when results are ranked by relevance */
+  'panes.document-list-pane.search-ordering.summary-relevance':
+    'დალაგებულია რელევანტურობის მიხედვით',
+  /** The tooltip text shown when a sort menu item references fields not present in the current schema */
+  'panes.document-list-pane.sort-order.disabled-reason':
+    'დახარისხების ეს პარამეტრი იყენებს ველებს, რომლებიც არ არის ამ დოკუმენტის ტიპის ნაწილი',
   /** The summary title when displaying an error for a document operation result */
   'panes.document-operation-results.error.summary.title': 'დეტალები',
   /** The text when a generic operation failed (fallback, generally not shown)  */
@@ -338,6 +676,13 @@ export default removeUndefinedLocaleResources({
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
   'panes.document-operation-results.operation-success':
     'წარმატებით შესრულდა {{context}} დოკუმენტზე',
+  /** The text when copy document ID operation succeeded */
+  'panes.document-operation-results.operation-success_copy-id': 'დოკუმენტის ID დაკოპირდა ბუფერში',
+  /** The text when copy URL operation succeeded  */
+  'panes.document-operation-results.operation-success_copy-url': 'დოკუმენტის URL დაკოპირდა ბუფერში',
+  /**  */
+  'panes.document-operation-results.operation-success_createVersion':
+    '<Strong>{{title}}</Strong> დაემატა რელიზს',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'დოკუმენტი წარმატებით წაიშალა',
   /** The text when a discard changes operation succeeded  */
@@ -348,6 +693,8 @@ export default removeUndefinedLocaleResources({
   /** The text when a publish operation succeeded  */
   'panes.document-operation-results.operation-success_publish':
     '<Strong>{{title}}</Strong> გამოქვეყნდა',
+  /** The text when a publish operation succeeded in an anonymous version */
+  'panes.document-operation-results.operation-success_publishVersion': 'ვერსია გამოქვეყნდა',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore': '<Strong>{{title}}</Strong> აღდგა',
   /** The text when an unpublish operation succeeded  */
@@ -355,8 +702,6 @@ export default removeUndefinedLocaleResources({
     '<Strong>{{title}}</Strong> გაუქმებულია. ბოლო გამოქვეყნებულ ვერსიიდან შეიქმნა დრაფტი.',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'უსათაურო',
-  /** The title of the reconnecting toast */
-  'panes.document-pane-provider.reconnecting.title': 'კავშირი დაიკარგა. ხელახლა შეერთება…',
   /** The loading message for the document not found pane */
   'panes.document-pane.document-not-found.loading': 'დოკუმენტის ჩატვირთვა…',
   /** The text of the document not found pane if the schema is known */
@@ -373,6 +718,8 @@ export default removeUndefinedLocaleResources({
   /** The title of the document not found pane if the schema is unknown */
   'panes.document-pane.document-unknown-type.without-schema.text':
     'ეს დოკუმენტი არ არსებობს, და მასთვის არ იყო განსაზღვრული სქემის ტიპი.',
+  /** The loading message shown while the document targeted by the selected variant is resolving */
+  'panes.document-pane.variant-target.loading': 'დოკუმენტი იტვირთება…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'ჩატვირთვა…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
@@ -388,6 +735,24 @@ export default removeUndefinedLocaleResources({
 
   /** The text for the "Open preview" action for a document */
   'production-preview.menu-item.title': 'გახსნა პრევიუში',
+
+  /** The text for the confirm button in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.confirm-button.text': 'გაგზავნას მოთხოვნა',
+  /** The description text for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.description.text':
+    'თქვენი მოთხოვნა გაიგზავნება პროექტის ადმინისტრატორ(ებ)ს. თუ გსურთ, შეგიძლიათ ასევე დაურთოთ შენიშვნა',
+  /** The header/title for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.header.text': 'მოითხოვეთ რედაქტირების უფლება',
+  /** The text describing the note input for the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.description.text': 'თუ გსურთ, შეგიძლიათ დაურთოთ შენიშვნა',
+  /** The placeholder for the note input in the request permission dialog used in the permissions banner */
+  'request-permission-dialog.note-input.placeholder.text': 'დაამატეთ შენიშვნა...',
+  /** The error/warning text in the request permission dialog when the user's request has been declined */
+  'request-permission-dialog.warning.denied.text':
+    'თქვენი მოთხოვნა ამ პროექტში წვდომისთვის უარყოფილია.',
+  /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
+  'request-permission-dialog.warning.limit-reached.text':
+    'თქვენ მიაღწიეთ როლების მოთხოვნების ლიმიტს ყველა პროექტში. გთხოვთ, დაელოდოთ მეტი მოთხოვნის გაგზავნამდე ან დაუკავშირდეთ ადმინისტრატორს დახმარებისთვის.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'შენახულია',
@@ -425,4 +790,18 @@ export default removeUndefinedLocaleResources({
   'structure-error.reload-button.text': 'გადატვირთვა',
   /** Labels the structure path of the structure error screen */
   'structure-error.structure-path.label': 'სტრუქტურის გზა',
+
+  /** The aria label for the menu button in the timeline item */
+  'timeline-item.menu-button.aria-label': 'მენიუს ღილაკის გახსნა',
+  /** The text for the tooltip in menu button the timeline item */
+  'timeline-item.menu-button.tooltip': 'ქმედებები',
+  /** The text for the collapse action in the timeline item menu */
+  'timeline-item.menu.action-collapse': 'შეკუმშვა',
+  /** The text for the expand action in the timeline item menu */
+  'timeline-item.menu.action-expand': 'გაშლა',
+  /** The text for the published event menu tooltip when the release is not found */
+  'timeline-item.not-found-release.tooltip': 'გამოშვება id-ით "{{releaseId}}" ვერ მოიძებნა',
+
+  /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
+  'toggle-inline-changes.menu-item.title': 'შიდა ცვლილებები',
 })

@@ -1,0 +1,28 @@
+import {removeUndefinedLocaleResources} from 'sanity'
+
+export default removeUndefinedLocaleResources({
+  /** Action text for scheduling publish of a draft document */
+  'action.schedule-publish': 'Közzététel ütemezése',
+  /** Tooltip text for when schedule publish fails */
+  'action.schedule-publish-error': 'Nem sikerült ütemezni a közzétételt',
+  /** Tooltip text for when a document is scheduled for publishing */
+  'action.schedule-publish-success': 'A dokumentum közzétételre van ütemezve',
+  /** Tooltip description for when a document is scheduled for publishing */
+  'action.schedule-publish-success-description': 'A közzététel ütemezve: {{publishAt}}',
+  /** Tooltip text for when schedule publish is disabled due to cardinality one releases */
+  'action.schedule-publish.disabled.cardinality-one':
+    'Ehhez a dokumentumhoz már létezik egy ütemezett vázlat.',
+  /** Tooltip text for when schedule publish is disabled due to validation errors */
+  'action.schedule-publish.disabled.validation-issues':
+    'Nem lehet ütemezni a vázlatot, mert az aktuális vázlatban érvényesítési hibák vannak.',
+  /** Tooltip text for when schedule publish is disabled because a variant is selected */
+  'action.schedule-publish.disabled.variant': 'Az ütemezés még nem érhető el a variantokhoz.',
+
+  /** Empty state action documentation for scheduled drafts */
+  'empty-state.action.documentation': 'Tudjon meg többet az ütemezésről',
+  /** Empty state description for scheduled drafts */
+  'empty-state.description':
+    'Ütemezze és zárolja a vázlat dokumentumokat egy jövőbeli dátumra és időpontra való közzétételhez.',
+  /** Empty state title for scheduled drafts */
+  'empty-state.title': 'Ütemezett vázlatok',
+})

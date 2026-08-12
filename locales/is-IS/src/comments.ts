@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'Ekki tókst að afrita tengil á klippiborð',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'Tengill afritaður á klippiborð',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'Ekki hægt að endurheimta athugasemd eftir að henni er eitt.',
   /** The delete dialog confirm button text for a comment */
@@ -76,11 +73,13 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Bæta við athugasemd',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title':
     'Ekki er hægt að hafa athugasemdir sem skarast',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'Bæta við athugasemd',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'Eitthvað fór úrskeiðis við að hlaða inn athugasemdum',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Farðu í {{field}} reit',

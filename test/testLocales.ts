@@ -8,7 +8,10 @@ import type {LocaleDefinition, LocaleResourceRecord, PluginOptions} from 'sanity
 import {getLocaleRegistry} from '../src/api/registry'
 import {getBaseNamespaces} from '../src/util/getBaseNamespaces'
 
-describe('locales', async () => {
+const isDefaultRecord = (theMod: unknown): theMod is {default: LocaleResourceRecord} =>
+  typeof theMod === 'object' && theMod !== null && 'default' in theMod
+
+void describe('locales', async () => {
   const locales = await getLocaleRegistry()
 
   for (const {id, name, englishName, path, exportName} of locales) {
@@ -24,10 +27,10 @@ describe('locales', async () => {
         if (!plug.i18n) throw new Error('No i18n')
         if (!plug.i18n.locales) throw new Error('No locales')
         if (!Array.isArray(plug.i18n.locales)) throw new Error('Locales not an array')
-        return plug.i18n.locales[0]
+        const [locale] = plug.i18n.locales
+        if (!locale) throw new Error('No locale defined')
+        return locale
       }
-      const isDefaultRecord = (theMod: unknown): theMod is {default: LocaleResourceRecord} =>
-        typeof theMod === 'object' && theMod !== null && 'default' in theMod
 
       // The tests!
       await t.test('has correct export name', () => {

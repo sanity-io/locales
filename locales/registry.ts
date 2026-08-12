@@ -8,34 +8,47 @@ const registry: LocaleRegistry = [
     englishName: 'Belarusian',
     maintainers: ['dogfrogfog', 'slawiko'],
     contributors: [],
+    isOfficial: false,
+  },
+  {
+    id: 'ca-ES',
+    name: 'Català',
+    englishName: 'Catalan',
+    maintainers: ['jorvixsky'],
+    contributors: [],
+    isOfficial: false,
   },
   {
     id: 'cs-CZ',
     name: 'Čeština',
     englishName: 'Czech',
-    maintainers: ['lukekaleta'],
+    maintainers: ['jansindl3r'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'da-DK',
     name: 'Dansk',
     englishName: 'Danish',
-    maintainers: ['Kasper-Buchholtz', 'Kastholm'],
-    contributors: [],
+    maintainers: ['Kastholm'],
+    contributors: ['Kasper-Buchholtz'],
+    isOfficial: false,
   },
   {
     id: 'de-DE',
     name: 'Deutsch',
     englishName: 'German',
-    maintainers: ['wrknd', 'sebastianhaiss'],
-    contributors: [],
+    maintainers: ['wrknd'],
+    contributors: ['sebastianhaiss'],
+    isOfficial: false,
   },
   {
     id: 'es-ES',
     name: 'Español',
     englishName: 'Spanish',
-    maintainers: ['imaprototype', 'jferrettiboke'],
+    maintainers: ['imaprototype', 'jferrettiboke', 'pedrobonamin'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'fi-FI',
@@ -43,6 +56,7 @@ const registry: LocaleRegistry = [
     englishName: 'Finnish',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'fr-FR',
@@ -50,6 +64,7 @@ const registry: LocaleRegistry = [
     englishName: 'French',
     maintainers: ['AymericWilke', 'thierryteyssier', 'ahelliet'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'hr-HR',
@@ -57,6 +72,7 @@ const registry: LocaleRegistry = [
     englishName: 'Croatian',
     maintainers: ['WebShapedBiz'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'hu-HU',
@@ -64,6 +80,7 @@ const registry: LocaleRegistry = [
     englishName: 'Hungarian',
     maintainers: ['peter-gy'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'is-IS',
@@ -71,6 +88,7 @@ const registry: LocaleRegistry = [
     englishName: 'Icelandic',
     maintainers: ['magnimarels'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'it-IT',
@@ -78,6 +96,7 @@ const registry: LocaleRegistry = [
     englishName: 'Italian',
     maintainers: ['valse'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ja-JP',
@@ -85,6 +104,7 @@ const registry: LocaleRegistry = [
     englishName: 'Japanese',
     maintainers: ['rikusen0335'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ka-GE',
@@ -92,6 +112,7 @@ const registry: LocaleRegistry = [
     englishName: 'Georgian',
     maintainers: ['TsotneDarjania'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'kn-IN',
@@ -99,6 +120,7 @@ const registry: LocaleRegistry = [
     englishName: 'Kannada (India)',
     maintainers: ['achanda101'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ko-KR',
@@ -106,13 +128,15 @@ const registry: LocaleRegistry = [
     englishName: 'Korean',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'nb-NO',
     name: 'Norsk (Bokmål)',
     englishName: 'Norwegian (Bokmål)',
-    maintainers: ['rexxars'],
-    contributors: ['rexxars'],
+    maintainers: ['rexxars', 'bjoerge'],
+    contributors: [],
+    isOfficial: false,
   },
   {
     id: 'nl-NL',
@@ -120,13 +144,15 @@ const registry: LocaleRegistry = [
     englishName: 'Dutch',
     maintainers: ['nickspaargaren'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'nn-NO',
     name: 'Norsk (Nynorsk)',
     englishName: 'Norwegian (Nynorsk)',
-    maintainers: ['s-rd'],
+    maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'pl-PL',
@@ -134,6 +160,7 @@ const registry: LocaleRegistry = [
     englishName: 'Polish',
     maintainers: ['marcinincreo'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'pt-BR',
@@ -141,13 +168,23 @@ const registry: LocaleRegistry = [
     englishName: 'Portuguese (Brazil)',
     maintainers: ['fernandolucchesi'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'pt-PT',
     name: 'Português',
     englishName: 'Portuguese',
-    maintainers: ['jrparente'],
+    maintainers: ['jrparente', 'RitaDias'],
     contributors: [],
+    isOfficial: false,
+  },
+  {
+    id: 'ro-RO',
+    name: 'Română',
+    englishName: 'Romanian',
+    maintainers: ['rusbers'],
+    contributors: [],
+    isOfficial: false,
   },
   {
     id: 'ru-KZ',
@@ -155,6 +192,7 @@ const registry: LocaleRegistry = [
     englishName: 'Russian (Kazakhstan)',
     maintainers: ['yenbekbay'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'sv-SE',
@@ -162,6 +200,7 @@ const registry: LocaleRegistry = [
     englishName: 'Swedish',
     maintainers: ['wisechimp', 'alexanderwarendh', 'marcusforsberg', 'Henkisch'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'th-TH',
@@ -169,6 +208,7 @@ const registry: LocaleRegistry = [
     englishName: 'Thai',
     maintainers: [],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'tr-TR',
@@ -176,6 +216,7 @@ const registry: LocaleRegistry = [
     englishName: 'Turkish',
     maintainers: ['kaganmert'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'uk-UA',
@@ -183,13 +224,15 @@ const registry: LocaleRegistry = [
     englishName: 'Ukrainian',
     maintainers: ['fomazov'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'vi-VN',
     name: 'Tiếng Việt',
     englishName: 'Vietnamese',
-    maintainers: [],
+    maintainers: ['ntbaoni28'],
     contributors: [],
+    isOfficial: false,
   },
   {
     id: 'zh-Hans',
@@ -202,6 +245,7 @@ const registry: LocaleRegistry = [
       weekend: [6, 7],
       minimalDays: 1,
     },
+    isOfficial: false,
   },
   {
     id: 'zh-Hant',
@@ -214,6 +258,7 @@ const registry: LocaleRegistry = [
       weekend: [6, 7],
       minimalDays: 1,
     },
+    isOfficial: false,
   },
 ]
 

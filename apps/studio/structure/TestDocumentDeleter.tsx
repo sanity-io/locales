@@ -1,8 +1,8 @@
-import {WarningOutlineIcon} from '@sanity/icons'
+import {WarningOutlineIcon} from '@sanity/icons/WarningOutline'
 import {Box, Button, Card, Container, Flex, Heading, Spinner, Stack, Text} from '@sanity/ui'
-import React, {forwardRef, useCallback, useEffect, useState} from 'react'
+import {forwardRef, useCallback, useEffect, useState} from 'react'
 import {Translate, useClient, useDataset, useDocumentStore, useTranslation} from 'sanity'
-import {UserComponent} from 'sanity/desk'
+import type {UserComponent} from 'sanity/structure'
 
 import {i18nNamespace} from '../i18n'
 import {hiddenPropName, localizationTest} from '../schemas/localizationTest'
@@ -29,7 +29,7 @@ export const TestDocumentDeleter: UserComponent = forwardRef(function TestDocume
         {visibility: 'async', tag: 'i18n.delete-test-documents'},
       )
     } catch (err) {
-      console.error(`Failed to delete test documents: ${err}`)
+      console.error('Failed to delete test documents:', err)
       setIsDeleting(false)
     }
   }, [client])
@@ -69,7 +69,7 @@ export const TestDocumentDeleter: UserComponent = forwardRef(function TestDocume
       <Flex padding={2} height="fill" align="center">
         <Container width={1}>
           <Card padding={3} radius={2} tone="caution" marginBottom={4} flex="none">
-            <Stack space={4}>
+            <Stack gap={4}>
               <Flex>
                 <Text aria-hidden="true" size={4}>
                   <WarningOutlineIcon />
@@ -79,7 +79,7 @@ export const TestDocumentDeleter: UserComponent = forwardRef(function TestDocume
                 </Box>
               </Flex>
 
-              <Stack space={4}>
+              <Stack gap={4}>
                 <Text size={textSize} as="p">
                   <Translate
                     t={t}

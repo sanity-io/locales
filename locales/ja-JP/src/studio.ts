@@ -1,6 +1,73 @@
 import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
+  /** "Configuration issue" header */
+  'about-dialog.configuration-issue.header': '構成の問題が検出されました',
+  /** Message shown if sanity.cli.ts is missing deployment.appId */
+  'about-dialog.configuration-issue.missing-appid':
+    '自動更新が有効ですが、<code>sanity.cli.ts</code>に<code>deployment.appId</code>が設定されていません。このStudioは<strong>最新</strong>チャンネルに対して更新しています。',
+  /** "View documentation" link for auto-updating studios */
+  'about-dialog.configuration-issue.missing-appid.view-documentation': 'ドキュメントを見る',
+  /** "Disabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.disabled': '無効',
+  /** "Enabled" status for auto-updates in About-dialog */
+  'about-dialog.version-info.auto-updates.enabled': '有効',
+  /** @deprecated "Auto Updates" status header in About-dialog */
+  'about-dialog.version-info.auto-updates.header': '自動更新',
+  /** "How to enable" next to Disabled state for Auto updates in version info dialog */
+  'about-dialog.version-info.auto-updates.how-to-enable': '有効にする方法',
+  /** "Manage version" link text */
+  'about-dialog.version-info.auto-updates.manage-version': 'バージョンを管理する',
+  /** Text displayed on the "Copy to clipboard"-button after clicked */
+  'about-dialog.version-info.copy-to-clipboard-button.copied-text':
+    'クリップボードにコピーしました。貼り付けをお楽しみください！',
+  /** "Copy to Clipboard" button text for copying version details from About-dialog */
+  'about-dialog.version-info.copy-to-clipboard-button.text': 'クリップボードにコピー',
+  /** "Current version" header in version info dialog  */
+  'about-dialog.version-info.current-version.header': '現在のバージョン',
+  /** @deprecated "How to upgrade" link text */
+  'about-dialog.version-info.how-to-upgrade': 'アップグレード方法',
+  /** "Latest version" header in version info dialog */
+  'about-dialog.version-info.latest-version.header': '最新バージョン',
+  /** Info text when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.new-auto-update-version-available': '新しいバージョンが利用可能です',
+  /** "New version" header in version info dialog - Note that this is not necessary a *higher* version compared to current:
+   *  It's a new version configured for auto updates which in some cases could even be a version below current  */
+  'about-dialog.version-info.new-version.text': '新しいバージョン',
+  /** "Reload"-button when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload': 'リロード',
+  /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
+  'about-dialog.version-info.reload-to-update': '更新するためにStudioをリロードする',
+  /** "Development" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.development': '開発',
+  /** "New version available" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.new-version-available': '新しいバージョンが利用可能です',
+  /** "Prerelease" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.prerelease': 'プレリリース',
+  /** "Up to date" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.up-to-date': '最新の状態です',
+  /** @deprecated "Up to date" status in About-dialog */
+  'about-dialog.version-info.up-to-date': '最新の状態です',
+  /** "Upgrade"-button text */
+  'about-dialog.version-info.update-button.text': '更新',
+  /** "Upgrade"-button tooltip text */
+  'about-dialog.version-info.update-button.tooltip': 'Sanity Studioの更新方法を学ぶ',
+  /** "User agent" header in About-dialog */
+  'about-dialog.version-info.user-agent.header': 'ユーザーエージェント',
+  /** "View on GitHub" link from version info dialog */
+  'about-dialog.version-info.view-on-github': 'GitHubで見る',
+
+  /** The text used in the tooltip shown in the dialog close button */
+  'announcement.dialog.close': '閉じる',
+  /** Aria label to be used in the dialog close button */
+  'announcement.dialog.close-label': 'ダイアログを閉じる',
+  /**Text to be used in the tooltip in the button in the studio announcement card */
+  'announcement.floating-button.dismiss': '閉じる',
+  /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
+  'announcement.floating-button.dismiss-label': 'アナウンスを消す',
+  /**Aria label to be used in the floating button in the studio announcement card */
+  'announcement.floating-button.open-label': 'アナウンスを開く',
+
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': '削除',
   /** Menu item for showing where a particular asset is used */
@@ -11,6 +78,8 @@ export default removeUndefinedLocaleResources({
   'asset-source.asset-usage-dialog.header_image': '画像を使用しているドキュメント',
   /** Text shown in usage dialog when loading documents using the selected asset */
   'asset-source.asset-usage-dialog.loading': '読み込み中…',
+  /** Browse button text */
+  'asset-source.browse-button.text': '選択',
   /** Text for cancel action in delete-asset dialog */
   'asset-source.delete-dialog.action.cancel': 'キャンセル',
   /** Text for "confirm delete" action in delete-asset dialog */
@@ -50,16 +119,25 @@ export default removeUndefinedLocaleResources({
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
     '承認されたタイプのアセットのみ表示: <strong>{{acceptTypes}}</strong>',
+  /** Select asset dialog cancel-button */
+  'asset-source.dialog.button.cancel': 'キャンセル',
+  /** Select asset dialog select-button */
+  'asset-source.dialog.button.select': '選択',
   /** Keys shared between both image asset source and file asset source */
-  /** Select asset dialog title for files */
-  'asset-source.dialog.default-title_file': 'ファイルを選択',
-  /** Select asset dialog title for images */
-  'asset-source.dialog.default-title_image': '画像を選択',
+  /** Insert asset error */
+  'asset-source.dialog.insert-asset-error':
+    'アセットの挿入エラー。詳細はコンソールを参照してください。',
+  /** Toast title shown when the list of assets failed to load */
+  'asset-source.dialog.load-error': 'アセットの読み込みに失敗しました',
   /** Select asset dialog load more items */
   'asset-source.dialog.load-more': 'もっと読み込む',
-  /** Text shown when selecting a file but there's no files to select from */
+  /** Text shown when selecting a file but there's no files to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_file': 'ファイルがありません',
-  /** Text shown when selecting an image but there's no images to select from */
+  /** Text shown when selecting an image but there's no images to select from
+   * @deprecated no longer in use
+   */
   'asset-source.dialog.no-assets_image': '画像がありません',
   'asset-source.file.asset-list.action.delete.disabled-cannot-delete-current-file':
     '現在選択されているファイルは削除できません',
@@ -81,6 +159,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.image.asset-list.delete-successful': '画像が削除されました',
   /** Text displayed on button or menu invoking the image asset source */
   'asset-source.image.title': 'アップロードされた画像',
+  /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'ファイル<code>{{filename}}</code>を使用しているドキュメントが1つあります',
   'asset-source.usage-list.documents-using-file_named_other':
@@ -110,6 +189,41 @@ export default removeUndefinedLocaleResources({
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'この画像を使用しているドキュメントはありません',
 
+  /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
+  'asset-sources.common.uploader.upload-failed.description': '詳細はコンソールを参照してください。',
+  'asset-sources.common.uploader.upload-failed.title': 'アップロードに失敗しました',
+  /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
+  'asset-sources.dataset.file.title': 'ワークスペースファイル',
+  'asset-sources.dataset.image.title': 'ワークスペース画像',
+  /** Error messages for the Media Library Asset Source  */
+  'asset-sources.media-library.error.library-could-not-be-resolved':
+    'このプロジェクトのメディアライブラリを解決しようとして何か問題が発生しました。',
+  /** Error message shown when no media library has been provisioned for the current organization */
+  'asset-sources.media-library.error.no-media-library-provisioned':
+    'この組織にはメディアライブラリが提供されていません。',
+  /** Menu Items for Media Library Asset Source */
+  'asset-sources.media-library.file.title': 'メディアライブラリ',
+  'asset-sources.media-library.image.title': 'メディアライブラリ',
+  /** Done button text */
+  'asset-sources.media-library.open-in-source-dialog.button.done': '完了',
+  /** Select new asset button text with target title */
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
+    '「{{targetTitle}}」の新しいアセットを選択',
+  'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
+    '新しいアセットを選択',
+  /** Title for the open in source dialog */
+  'asset-sources.media-library.open-in-source-dialog.title': 'アセットを編集',
+  /** Title for the upload dialog (component mode) */
+  'asset-sources.media-library.upload-dialog.title': 'メディアライブラリにアップロード',
+  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
+  'asset-sources.media-library.warning.file-already-exist.description':
+    'ライブラリにある既存のファイルを使用しています。',
+  'asset-sources.media-library.warning.file-already-exist.title':
+    "ファイル: '{{filename}}' は既に存在します",
+
+  /** Label when a release has been deleted by a different user */
+  'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
+
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': '次の月へ',
   /** Action message for navigating to next year */
@@ -118,24 +232,22 @@ export default removeUndefinedLocaleResources({
   'calendar.action.go-to-previous-month': '前の月へ',
   /** Action message for navigating to previous year */
   'calendar.action.go-to-previous-year': '前の年へ',
-  /* Label for navigating the calendar to "today", without _selecting_ today. Short form, eg `Today`, not `Go to today` */
   'calendar.action.go-to-today': '今日',
-  /* Accessibility label for navigating the calendar to "today", without _selecting_ today */
   'calendar.action.go-to-today-aria-label': '今日に移動',
-  /* Label for navigating the calendar to "tomorrow", without _selecting_ tomorrow. Short form, eg `Tomorrow`, not `Go to tomorrow` */
   'calendar.action.go-to-tomorrow': '明日',
-  /* Label for navigating the calendar to "yesterday", without _selecting_ yesterday. Short form, eg `Yesterday`, not `Go to yesterday` */
   'calendar.action.go-to-yesterday': '昨日',
   /** Label for switch that controls whether or not to include time in given timestamp */
   'calendar.action.include-time-label': '時間を含む',
-  /** Action message for selecting the hour */
-  'calendar.action.select-hour': '時間を選択',
-  /** Action message for selecting the minute */
-  'calendar.action.select-minute': '分を選択',
+  /** Action message for selecting the time */
+  'calendar.action.select-time': '時間を選択',
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': '現在の時刻に設定',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
   'calendar.action.set-to-time-preset': '{{time}}の{{date, datetime}}に設定',
+  /** Aria label for button to open date picker */
+  'calendar.button.aria-label': 'カレンダーを開く',
+  /** Tooltip content for button to open datetime input */
+  'calendar.button.tooltip-text': '日付を選択',
   /** Error message displayed in calendar when entered date is not the correct format */
   'calendar.error.must-be-in-format':
     '<Emphasis>{{exampleDate}}</Emphasis>の形式でなければなりません',
@@ -219,6 +331,9 @@ export default removeUndefinedLocaleResources({
   'changes.error-boundary.developer-info': '詳細は開発者コンソールを確認してください',
   /** Text shown when a diff component crashes during rendering, triggering the error boundary */
   'changes.error-boundary.title': 'このフィールドの変更をレンダリング中にエラーが発生しました',
+  'changes.error-description': 'このドキュメントの変更を読み込むことができません。',
+  /** Error title when changes could not be loaded */
+  'changes.error-title': '何か問題が発生しました',
   /** Error message shown when the value of a field is not the expected one */
   'changes.error.incorrect-type-message':
     '値のエラー：値のタイプは "<code>{{actualType}}</code>" ですが、期待されるタイプは "<code>{{expectedType}}</code>" です',
@@ -248,11 +363,15 @@ export default removeUndefinedLocaleResources({
   'changes.loading-author': '読み込み中…',
   /** Loading changes in Review Changes Pane */
   'changes.loading-changes': '変更を読み込み中…',
+  /** Error message shown when the document revision could not be found */
+  'changes.missing-since-document-error':
+    '比較しようとしているid: <code>{{revisionId}}</code>のドキュメントリビジョンが見つかりませんでした。<Break/>これはおそらくプランの履歴保持ポリシーによるものです。<Break/>異なる<strong>From</strong>エントリを選択してください。',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'このパネルに変更リストが表示されるように、ドキュメントを編集するか、タイムラインで古いバージョンを選択してください。',
   /** No Changes title in the Review Changes pane */
   'changes.no-changes-title': '変更はありません',
+  'changes.not-selectable': 'このイベントを選択することはできません',
   /** Portable Text diff: An annotation was added */
   'changes.portable-text.annotation_added': '注釈を追加しました',
   /** Portable Text diff: An annotation was changed */
@@ -294,8 +413,18 @@ export default removeUndefinedLocaleResources({
   'changes.portable-text.unknown-inline-object-schema-type': '未知のスキーマタイプ',
   /** Label for when the action of the change was a removal, eg a field was cleared, an array item was removed, an asset was deselected or similar */
   'changes.removed-label': '削除されました',
+  /** Same Revision Selected description in the Review Changes pane */
+  'changes.same-revision-selected-description':
+    '同じ<strong>from</strong>と<strong>to</strong>のリビジョンを選択しています。変更点を比較するためには、異なるリビジョンを選択してください。',
+  /** Same Revision Selected title in the Review Changes pane */
+  'changes.same-revision-selected-title': '同じリビジョンが選択されました',
   /** Title for the Review Changes pane */
   'changes.title': '変更をレビュー',
+  /** Shown above raw JSON diff for document fields that are not defined in the schema */
+  'changes.unknown-schema-field.description':
+    'このフィールドはスキーマに定義されていません。値はJSONとして表示されます。',
+  /**The title that will be shown in the badge inside the events when the item is a draft */
+  'changes.versions.draft': 'ドラフト',
 
   /** --- Common components --- */
   /** Tooltip text for context menu buttons */
@@ -306,12 +435,17 @@ export default removeUndefinedLocaleResources({
   'common.dialog.confirm-button.text': '確認',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '読み込み中',
+  /** The title of the reconnecting toast */
+  'common.reconnecting.toast.title': '接続を試みています…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': '設定の問題',
   /** Tooltip displayed on configuration issues button */
   'configuration-issues.button.tooltip': '設定の問題を発見',
+
+  /** The name of Content Agent, the product. */
+  'content-agent': 'Content Agent',
 
   /** The fallback title for an ordering menu item if no localized titles are provided. */
   'default-menu-item.fallback-title': '{{title}}で並べ替え',
@@ -331,12 +465,136 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'タイトルで並べ替え',
 
+  /** Label for action that closes divergence inspector */
+  'divergence.action.close.label': '閉じる',
+  /** Label for action that marks divergence as resolved */
+  'divergence.action.markResolved.label': '無視する',
+  /** Label for action that moves inspector to the next divergence in the document */
+  'divergence.action.next.label': '次へ',
+  /** Label for action that moves inspector to the previous divergence in the document */
+  'divergence.action.previous.label': '前へ',
+  /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
+  'divergence.action.takeFromUpstream.label': 'ベースからコピー',
+  /** Verb to describe the node's value changed */
+  'divergence.effect.changed': '変更されました',
+  /** Summary of the change that occurred */
+  'divergence.effect.summary': '{{versionName}}バージョンで{{title}}が{{effect}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    '{{versionName}}バージョンに{{count}}件の未解決の変更があります',
+
+  /** --- Document inventory --- */
+  /** The label shown when dismissing the document group inventory */
+  'document-group-inventory.action.cancel': 'キャンセル',
+  /** The label for the button that opens the document group inventory */
+  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  /** The label used in the feedback dialog asking how easy the document group inventory is to use */
+  'document-group-inventory.feedback.sentiment-label':
+    '新しいバージョンのインベントリは使いやすいですか、それとも使いにくいですか？',
+  /** The label for the input that filters the variants in the document group inventory */
+  'document-group-inventory.filter-string.label': '{{subject}}をフィルター',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
+  /** The label text that indicates an item in the document group inventory is currently being viewed */
+  'document-group-inventory.viewing-item-label': '表示中',
+
+  /** --- Document group --- */
+  /** The label given to a document group's base variant */
+  'document-group.base-variant': 'すべてのユーザー（デフォルト）',
+  /** The header label for the variant creation flow before a variant definition has been selected */
+  'document-group.create-variant': 'バリアントを作成',
+  /** The header label for the variant creation flow once a variant definition has been selected */
+  'document-group.create-variant.for-target': '{{variantDefinitionName}}のバリアントを作成',
+  /** The heading for the option to create a variant as a draft */
+  'document-group.create-variant.target-drafts': '下書きとして',
+  /** The label for the list of releases a variant can be created in */
+  'document-group.create-variant.target-releases': 'リリースに追加',
+  /** The label for the list of existing variants that can be viewed instead of creating a new one */
+  'document-group.create-variant.view-existing-variants': 'または既存のバリアントを表示',
+  /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
+  'document-group.delete.cancel-button.text': 'キャンセル',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': '{{count}}件のドキュメント',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_other': 'dataset: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '利用不可のdataset',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other': '{{count}}個のdatasetに{{documentCount}}件',
+  /** Appears when hovering over the copy button to copy */
+  'document-group.delete.cdr-table.copy-id-button.tooltip': 'IDをクリップボードにコピー',
+  /** The header for the dataset column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  /** The header for the document ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.document-id.label': 'ドキュメントID',
+  /** The toast title when the copy button has been clicked but copying failed */
+  'document-group.delete.cdr-table.id-copied-toast.title-failed':
+    'ドキュメントIDのコピーに失敗しました',
+  /** The header for the project ID column in the list of cross-dataset references found */
+  'document-group.delete.cdr-table.project-id.label': 'プロジェクトID',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': '削除（{{count}}）',
+  /** The message shown after deletion fails */
+  'document-group.delete.error.message':
+    'このドキュメントを削除しようとした際にエラーが発生しました。通常、このドキュメントを参照している他のドキュメントが存在することが原因です。',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    '{{count}} 件の他の参照は表示されていません',
+  /** Text in the tooltip of this component if hovering over the info icon */
+  'document-group.delete.other-reference-count.tooltip':
+    '関連する dataset のアクセストークンが見つからないため、これらの参照のメタデータを表示できません。',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
+  /** Appears when unable to render a document preview in the referring document list */
+  'document-group.delete.preview-item.preview-unavailable.title': 'プレビューを利用できません',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    '{{count}} 件のドキュメントが「<DocumentTitle/>」を参照しています',
+  /** Describes the list of documents that refer to the one trying to be deleted (delete) */
+  'document-group.delete.referring-documents-descriptor.text':
+    '以下のドキュメントが「<DocumentTitle/>」を参照しているため、削除できない場合があります：',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': '{{count}} 件の{{subject}}を削除',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'バリアント',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'バージョン',
+
+  /** Label to show in the document footer indicating the creation date of the document */
+  'document-status.created': '{{date}}に作成されました',
+  /** Label to show in the document status indicating the date of the status */
+  'document-status.date': '{{date}}',
   /** Label to show in the document footer indicating the last edited date of the document */
   'document-status.edited': '{{date}}に編集されました',
+  /** Label to show in the document footer status line when a document was last published */
+  'document-status.last-published': '最終公開',
   /** Label to show in the document footer indicating the document is not published*/
   'document-status.not-published': '未公開',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}}に公開されました',
+  /** Label to show in the document footer indicating the revision from date of the document */
+  'document-status.revision-from': '改訂日 <em>{{date}}</em>',
+  /** Label to show in the document footer indicating that the revision was not found */
+  'document-status.revision-not-found': 'リビジョンが見つかりません',
+
+  /** Toast description shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.description': '変更はまだ保存中です。',
+  /** Toast title shown when saving changes is taking longer than expected */
+  'document-store.slow-commit.title': '保存に予想以上の時間がかかっています',
+
+  /**
+   * Toast description shown when a document's initial value could not be
+   * resolved. Includes the underlying error message.
+   */
+  'document.initial-value.error.description':
+    'ドキュメントは空の値で開かれました。{{errorMessage}}',
+  /** Toast title shown when a document's initial value could not be resolved */
+  'document.initial-value.error.title': '初期値を解決できませんでした',
+  /** Label to indicate that a document type was not found */
+  'document.type.not-found': 'ドキュメントタイプ "{{type}}" が見つかりません',
+
+  /** Error message shown when an action cannot be performed */
+  'errors.unable-to-perform-action': 'このアクションを実行できません',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -435,13 +693,30 @@ export default removeUndefinedLocaleResources({
   'help-resources.action.join-our-community': '私たちのコミュニティに参加する',
   /** Information for what the latest sanity version is */
   'help-resources.latest-sanity-version': '最新バージョンは {{latestVersion}}です',
+  /** Text for link to register a studio */
+  'help-resources.register-studio': 'スタジオを登録',
+  /** Name of the sanity studio */
+  'help-resources.studio': 'Sanity Studio',
+  /** Menu item for registered studios (i.e. copies app id) */
+  'help-resources.studio-app-id': 'アプリID',
+  /** Menu item for reloading Studio to update */
+  'help-resources.studio-auto-update-now': 'v{{newVersion}}に更新するためにリロードする',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studioバージョン {{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'ヘルプとリソース',
+  /** Label for studio's which are up to date */
+  'help-resources.up-to-date': '最新の状態',
+  /** Version text */
+  'help-resources.version': 'v{{version}}',
+
+  /**Incoming references inspector title */
+  'incoming-references.title': '参照元',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'アップロードをキャンセル',
+  /** Text for menuitem upload button default asset source */
+  'input.files.common.upload-placeholder.file-input-button.default-source.badge': 'デフォルト',
   /** Text for file input button in upload placeholder */
   'input.files.common.upload-placeholder.file-input-button.text': 'アップロード',
   /** Uploading <FileName/> */
@@ -461,12 +736,16 @@ export default removeUndefinedLocaleResources({
    * eg. will prompt the user to select a type once triggered
    */
   'inputs.array.action.add-item-select-type': 'アイテムを追加…',
+  /** Label for copying an array item  */
+  'inputs.array.action.copy': 'コピー',
   /** Array drag handle button tooltip */
   'inputs.array.action.drag.tooltip': 'ドラッグして順序を変更',
   /** Label for duplicating an array item  */
   'inputs.array.action.duplicate': '複製',
   /** Label for editing the item of a specific type, eg "Edit Person" */
   'inputs.array.action.edit': '{{itemTypeTitle}}を編集',
+  /** Tooltip text explaining why adding items is disabled when array max is reached */
+  'inputs.array.action.max-reached': '最大アイテム数に達しました',
   /** Label for removing an array item action  */
   'inputs.array.action.remove': '削除',
   /** Label for removing action when an array item has an error  */
@@ -515,14 +794,12 @@ export default removeUndefinedLocaleResources({
   'inputs.array.resolving-initial-value': '初期値を解決中…',
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': '無効',
+  /** Warning label when selected datetime is in the past */
+  'inputs.dateTime.past-date-warning': '将来の日付を選択してください。',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': '例: {{example}}',
   /** Acessibility label for button to open file options menu */
   'inputs.file.actions-menu.file-options.aria-label': 'ファイルオプションメニューを開く',
-  /** Browse */
-  'inputs.file.browse-button.text': '参照',
-  /** Select file */
-  'inputs.file.dialog.title': 'ファイルを選択',
   /** Unknown member kind: `{{kind}}` */
   'inputs.file.error.unknown-member-kind': '未知のメンバー種類: {{kind}}',
   /** The value of this field is not a valid file. Resetting this field will let you choose a new file. */
@@ -532,12 +809,14 @@ export default removeUndefinedLocaleResources({
   'inputs.file.invalid-file-warning.reset-button.text': '値をリセット',
   /** Invalid file value */
   'inputs.file.invalid-file-warning.title': '無効なファイル値',
-  /** Select */
-  'inputs.file.multi-browse-button.text': '選択',
   /** The upload could not be completed at this time. */
   'inputs.file.upload-failed.description': '現在、アップロードを完了できませんでした。',
   /** Upload failed */
   'inputs.file.upload-failed.title': 'アップロード失敗',
+  /** Private access policy badge label */
+  'inputs.files.common.access-policy.private.label': 'プライベートアセット',
+  /** Private access policy badge tooltip */
+  'inputs.files.common.access-policy.private.tooltip': 'CDNアクセスは署名付きURLに限定されます',
   /** Clear field */
   'inputs.files.common.actions-menu.clear-field.label': 'フィールドをクリア',
   /** Copy URL */
@@ -547,6 +826,8 @@ export default removeUndefinedLocaleResources({
   /** The URL is copied to the clipboard */
   'inputs.files.common.actions-menu.notification.url-copied':
     'URLがクリップボードにコピーされました',
+  /** Open in source */
+  'inputs.files.common.actions-menu.open-in-source.label': '{{sourceName}}で開く',
   /** Replace */
   'inputs.files.common.actions-menu.replace.label': '置き換え',
   /** Upload */
@@ -588,6 +869,9 @@ export default removeUndefinedLocaleResources({
   'inputs.files.common.placeholder.drop-to-upload_image': '画像をドロップしてアップロード',
   /** Read only */
   'inputs.files.common.placeholder.read-only': '読み取り専用',
+  /** Select asset source destination for files to upload */
+  'inputs.files.common.placeholder.select-asset-source-upload-destination':
+    'ファイルをアップロードする場所:',
   /** Can't upload files here */
   'inputs.files.common.placeholder.upload-not-supported': 'ここにファイルをアップロードできません',
   /** Clear upload */
@@ -597,14 +881,14 @@ export default removeUndefinedLocaleResources({
     'アップロードは少なくとも{{staleThresholdMinutes}}分間進行しておらず、おそらく中断されました。不完全なアップロードを安全にクリアして、再度アップロードを試みることができます。',
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': '不完全なアップロード',
+  /** Select file */
+  'inputs.files.select-dialog.title': '「{{targetTitle}}」のファイルを選択',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': '画像を切り抜く',
   /** Accessibility label for button to open image edit dialog */
   'inputs.image.actions-menu.edit-details.aria-label': '画像編集ダイアログを開く',
   /** Accessibility label for button to open image options menu */
   'inputs.image.actions-menu.options.aria-label': '画像オプションメニューを開く',
-  /** Select */
-  'inputs.image.browse-menu.text': '選択',
   /** Cannot upload this file here */
   'inputs.image.drag-overlay.cannot-upload-here':
     'ここにファイルをアップロードすることはできません',
@@ -612,6 +896,9 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.drop-to-upload-image': 'アップロードするために画像をドロップ',
   /** This field is read only */
   'inputs.image.drag-overlay.this-field-is-read-only': 'このフィールドは読み取り専用です',
+  /** Image could not be loaded due to possible access restrictions */
+  'inputs.image.error.possible-access-restriction':
+    'アクセス制限のため画像を読み込めませんでした。',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': '不明なメンバーの種類: {{kind}}',
   /** Edit hotspot and crop */
@@ -625,6 +912,8 @@ export default removeUndefinedLocaleResources({
   'inputs.image.invalid-image-warning.title': '無効な画像値',
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'アップロードされた画像のプレビュー',
+  /** Select image */
+  'inputs.image.select-dialog.title': '「{{targetTitle}}」の画像を選択',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': '現在、アップロードを完了することはできません。',
   /** Upload failed */
@@ -636,6 +925,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.load-error': 'エラー: {{errorMessage}}',
   /** Hotspot & Crop */
   'inputs.imagetool.title': 'ホットスポット & クロップ',
+  /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
+  'inputs.imagetool.vector-warning.developer-info':
+    "アセットパイプラインはベクターフォーマットのホットスポットとクロップをサポートしていません。ホットスポットとクロップを有効にするには、この画像をサポートされているラスターフォーマットのいずれかに出力してください。例えば、<ImageUrlDocumentationLink>画像URL</ImageUrlDocumentationLink>に<code>fm=jpg</code>を追加するか、<ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>で<code>.format('png')</code>を呼び出します。",
+  /** See developer info */
+  'inputs.imagetool.vector-warning.expand-developer-info': '開発者情報を見る',
+  /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
+  'inputs.imagetool.vector-warning.title':
+    '警告：この画像にはホットスポットとクロップが適用されない場合があります。',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': '<code>{{targetType}}</code>に変換',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -663,9 +960,18 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.all-fields-title': 'すべてのフィールド',
   /** Aria label for the "Field groups" select control on smaller screens */
   'inputs.object.field-group-tabs.aria-label': 'フィールドグループ',
+  /** Text shown in field group select for a group with error validation */
+  'inputs.object.field-group-tabs.validation-error': 'エラー',
+  /** Text shown in field group select for a group with info validation */
+  'inputs.object.field-group-tabs.validation-info': '情報',
+  /** Text shown in field group select for a group with warning validation */
+  'inputs.object.field-group-tabs.validation-warning': '警告',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
     'このフィールドはドキュメントのスキーマによると<strong>読み取り専用</strong>であり、解除することはできません。Studioでこれを解除できるようにするには、スキーマのエンクロージングタイプから<code>readOnly</code>フィールドを削除してください。',
+  /** Fallback description shown when the unknown reference preview cannot be loaded */
+  'inputs.object.unknown-fields.reference.preview.unavailable':
+    '参照「{{documentId}}」のプレビューを読み込めません。',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'フィールドを削除',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -860,8 +1166,32 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.style.normal': '標準',
   /** Title of the "quote" block style */
   'inputs.portable-text.style.quote': '引用',
+  /** Label for the table lane that appends a column */
+  'inputs.portable-text.table.add-column': '末尾に列を追加',
+  /** Label for the table lane that appends a row */
+  'inputs.portable-text.table.add-row': '末尾に行を追加',
+  /** Aria label for a table column's drag/select handle */
+  'inputs.portable-text.table.column-handle': '列ハンドル',
+  /** Label for the trash chip that deletes the selected column */
+  'inputs.portable-text.table.delete-column': '列を削除',
+  /** Label for the trash chip that deletes the selected row */
+  'inputs.portable-text.table.delete-row': '行を削除',
+  /** Label for the table menu item that deletes the table */
+  'inputs.portable-text.table.delete-table': 'テーブルを削除',
+  /** Label for the table menu's header row toggle */
+  'inputs.portable-text.table.header-row': 'ヘッダー行',
+  /** Aria label for the dots that insert a row or column at a boundary */
+  'inputs.portable-text.table.insert-here': 'ここに挿入',
+  /** Aria label for the table menu button */
+  'inputs.portable-text.table.menu-aria-label': 'テーブルオプション',
+  /** Aria label for a table row's drag/select handle */
+  'inputs.portable-text.table.row-handle': '行ハンドル',
+  /** Label for the table menu item that selects the whole table */
+  'inputs.portable-text.table.select-table': 'テーブルを選択',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'クリア',
+  /** Label for action to copy the current item (used within arrays) */
+  'inputs.reference.action.copy': 'コピー',
   /** Label for action to create a new document from the reference input */
   'inputs.reference.action.create-new-document': '新規作成',
   /** Label for action to create a new document from the reference input, when there are multiple templates or document types to choose from */
@@ -917,6 +1247,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.error.nonexistent-document.clear-button-label': 'クリア',
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': '参照検索に失敗しました',
+  /** Label for when the GDR points to an invalid type  */
+  'inputs.reference.global.invalid-type': '参照されたドキュメントのタイプが無効です ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': '参照されたドキュメントの画像プレビュー',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -982,6 +1314,8 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.strength-mismatch.title': '参照の強さの不一致',
   /** Label for button that triggers the action that weakens a reference on strength mismatch */
   'inputs.reference.strength-mismatch.weaken-button-label': '弱い参照に変換',
+  /** Label for action to clear the current value of the select field */
+  'inputs.select.action.clear': 'クリア',
   /** Action message for generating the slug */
   'inputs.slug.action.generate': '生成',
   /** Loading message for when the input is actively generating a slug */
@@ -1012,6 +1346,8 @@ export default removeUndefinedLocaleResources({
   'inputs.untyped-value.title': 'プロパティ値に<code>_type</code>がありません',
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': '値を未設定にする',
+  /** Select video */
+  'inputs.video.select-dialog.title': '「{{targetTitle}}」の動画を選択',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1057,8 +1393,26 @@ export default removeUndefinedLocaleResources({
   /** The title for the insufficient permissions message component */
   'insufficient-permissions-message.title': '権限が不足しています',
 
+  /** Body of the logged-out banner shown above the login form for an unknown reason */
+  'login.logged-out.generic': 'セッションが無効になりました。再度サインインしてください。',
+  /** Body of the logged-out banner shown above the login form when the session expired */
+  'login.logged-out.session-expired':
+    'セッションの有効期限が切れました。再度サインインしてください。',
+  /** Title of the banner shown above the login form after the studio logs the user out */
+  'login.logged-out.title': 'ログアウトされました',
+
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '予期せぬエラー: {{error}}',
+
+  /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.description':
+    'お使いのブラウザは、Sanityと通信するために古いHTTPプロトコルを使用しています。これにより、パフォーマンスが大幅に低下する可能性があります。',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.text': '詳しくはこちら',
+  /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
+  'network-check.slow-protocol-warning.snooze-button.text': 'このセッションでは再表示しない',
+  /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
+  'network-check.slow-protocol-warning.title': 'ブレーキがかかっています',
 
   /** Button label for "Create new document" button */
   'new-document.button': '新規作成',
@@ -1087,12 +1441,12 @@ export default removeUndefinedLocaleResources({
   /** Title for "Create new document" dialog */
   'new-document.title': '新しいドキュメントを作成',
 
-  /** Label for button that will make the browser reload when users' studio version is out-of-date */
+  /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'リロード',
-  /** Title of the alert for studio users when packages in their studio are out-of-date */
+  /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studioが更新されました',
 
-  /** Label for action to manage members of the current studio project */
+  /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'メンバーを管理する',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'ここにいる人',
@@ -1113,8 +1467,264 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '現在アップロード中の画像',
 
-  /* Relative time, just now */
   'relative-time.just-now': 'たった今',
+
+  /** Action message to add document to new release */
+  'release.action.add-to-new-release': 'リリースに追加',
+  /** Action message to add document to release */
+  'release.action.add-to-release': '{{title}}に追加',
+  /** Tooltip message for document that is already added to release */
+  'release.action.already-exists-in-release': 'ドキュメントはすでにリリースに存在しています',
+  /** Action message for when document is already in release  */
+  'release.action.already-in-release': '既にリリース{{title}}に含まれています',
+  /** Action message for when you click to view all versions you can copy the current document to */
+  'release.action.copy-to': 'バージョンをコピーする',
+  /** Action message for creating new releases */
+  'release.action.create-new': '新しいリリース',
+  /** Description for toast when version creation failed */
+  'release.action.create-version.failure': 'バージョンの作成に失敗しました',
+  /** Action message for deleting a scheduled publish */
+  'release.action.delete-schedule': 'スケジュールを削除',
+  /** Action message for when document is already in release  */
+  'release.action.discard-version': 'バージョンを破棄',
+  /** Description for toast when version discarding failed */
+  'release.action.discard-version.failure': 'バージョンの破棄に失敗しました',
+  /** Tooltip/label for the action that opens the release edit dialog on the detail page */
+  'release.action.edit-details': undefined, // 'Edit details'
+  /** Action message for editing the schedule of a scheduled publish */
+  'release.action.edit-schedule': 'スケジュールを編集',
+  /** Action message for when a new release is created off an existing version, draft or published document */
+  'release.action.new-release': '新規リリース',
+  'release.action.new-release.limit-reached_other':
+    'このワークスペースは{{count}}リリースに制限されています',
+  /** Tooltip message for not having permissions for creating new releases */
+  'release.action.permission.error': 'このアクションを実行する権限がありません',
+  /** Action message for running a scheduled draft immediately */
+  'release.action.publish-now': '今すぐ公開',
+  /** Error message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.description':
+    'もう一度試すか、接続を確認してください。リリース時にドキュメントはまだ非公開になります。',
+  /** Error message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.failure.title':
+    'リリース時の非公開設定を元に戻すことに失敗しました。',
+  /** Action message description for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.description':
+    'このバージョンを編集できるようになりました。',
+  /** Action message title for when a version is reverted from being unpublished */
+  'release.action.revert-unpublish-version.success.title':
+    'リリース時の非公開設定を元に戻すことに成功しました。',
+  /** Action message for scheduling a paused draft */
+  'release.action.schedule-publish': '公開をスケジュール',
+  /** Error message for when a version is set to be unpublished */
+  'release.action.unpublish-version.failure':
+    'リリースで未公開に設定するバージョンの設定に失敗しました',
+  /** Action message for when a version is set to be unpublished successfully */
+  'release.action.unpublish-version.success':
+    '<strong>{{title}}</strong>をリリースで未公開に設定することに成功しました',
+  /** Action message for when the view release is pressed */
+  'release.action.view-release': 'リリースを表示',
+  /** Action message for when the view scheduled drafts is pressed */
+  'release.action.view-scheduled-drafts': '予定された下書きを見る',
+  /** Label for banner when release is scheduled */
+  'release.banner.scheduled-for-publishing-on': '{{date}}に公開予定',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} バリアント',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}}バージョン',
+  /** Label for Draft chip in document header */
+  'release.chip.draft': 'ドラフト',
+  /** Label for Draft chip in global header */
+  'release.chip.global.drafts': 'ドラフト',
+  /** Label for Published chip in document header */
+  'release.chip.published': '公開済み',
+  /** Label for tooltip in chip when document is in an archived release */
+  'release.chip.tooltip.archived': 'このリリースはアーカイブされており、編集できません。',
+  /** Label for tooltip in chip with the created date */
+  'release.chip.tooltip.created-date': '作成日 {{date}}',
+  /** Label for tooltip in draft chip when it's a live edit document */
+  'release.chip.tooltip.draft-disabled.live-edit':
+    'このドキュメントはライブ編集モードで、ドラフトは無効です',
+  /** Label for tooltip in chip with the lasted edited date */
+  'release.chip.tooltip.edited-date': '編集日 {{date}}',
+  /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
+  'release.chip.tooltip.intended-for-date': '{{date}}用に意図されています',
+  /** Label for tooltip in chip when there is no recent draft edits */
+  'release.chip.tooltip.no-edits': '編集なし',
+  /** Label for tooltip in chip when document isn't published */
+  'release.chip.tooltip.not-published': '未公開',
+  'release.chip.tooltip.other-variants_other': '{{count}} バリアント',
+  'release.chip.tooltip.other-versions_other': 'リリース外の追加{{count}}バージョン',
+  /** Label for tooltip in chip with the published date */
+  'release.chip.tooltip.published-date': '公開日 {{date}}',
+  /** Label for tooltip in chip when document is in a release that has been scheduled */
+  'release.chip.tooltip.scheduled-for-date': '{{date}}に予定されています',
+  /** Label for tooltip in scheduled chip without a known date */
+  'release.chip.tooltip.unknown-date': '不明な日付',
+  /** Label for tooltip on deleted release */
+  'release.deleted-tooltip': 'このリリースは削除されました',
+  /** Title for copying version to a new release dialog */
+  'release.dialog.copy-to-release.title': '新しいリリースにバージョンをコピー',
+  /** Title for action create a release */
+  'release.dialog.create.confirm': 'リリースを作成',
+  /** Title for creating releases dialog */
+  'release.dialog.create.title': 'リリースを作成',
+  /** Body text when deleting scheduled draft and draft is already up to date */
+  'release.dialog.delete-schedule-draft.body-already-current':
+    'このスケジュールされたドラフトを削除しますか？あなたのドラフトはすでに最新です。',
+  /** Body text when deleting scheduled draft and changes will be saved to draft */
+  'release.dialog.delete-schedule-draft.body-will-save-to-draft':
+    'このスケジュールされたドラフトを削除しますか？変更はドラフトに保存されます。',
+  /** Body text when deleting scheduled draft with checkbox shown for user choice */
+  'release.dialog.delete-schedule-draft.body-with-choice':
+    'このスケジュールされたドラフトを削除しますか？',
+  /** Confirm button text for deleting a scheduled draft */
+  'release.dialog.delete-schedule-draft.confirm': 'はい、スケジュールを削除',
+  /** Checkbox label for copying scheduled draft to draft before deletion */
+  'release.dialog.delete-schedule-draft.copy-checkbox':
+    'スケジュールされた変更をドラフトにコピーして保持する（推奨）',
+  /** Explanation text shown when scheduled draft has different changes than current draft */
+  'release.dialog.delete-schedule-draft.different-changes-explanation':
+    'あなたのスケジュールされたドラフトは現在のドラフトと異なる変更があります。',
+  /** Header for the dialog confirming deletion of a scheduled draft */
+  'release.dialog.delete-schedule-draft.header': '予定された下書きを削除',
+  /** Body text for change schedule dialog */
+  'release.dialog.edit-schedule.body': '予定された公開のための新しい日付と時間を選択してください。',
+  /** Confirm button text for change schedule dialog */
+  'release.dialog.edit-schedule.confirm': 'スケジュールを更新',
+  /** Header for change schedule dialog */
+  'release.dialog.edit-schedule.header': 'スケジュールを変更',
+  /** Label for the save action in the edit release dialog */
+  'release.dialog.edit.confirm': undefined, // 'Save'
+  /** Field label for the release description in the edit release dialog */
+  'release.dialog.edit.description-label': undefined, // 'Description'
+  /** Title for the edit release dialog */
+  'release.dialog.edit.title': undefined, // 'Edit release'
+  /** Field label for the release title in the edit release dialog */
+  'release.dialog.edit.title-label': undefined, // 'Title'
+  /** Body text for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.body':
+    'この予定された下書きをすぐに公開してもよろしいですか？',
+  /** Confirm button text for running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.confirm': 'はい、今すぐ実行',
+  /** Header for the dialog confirming running a scheduled draft immediately */
+  'release.dialog.publish-scheduled-draft.header': '下書きを今すぐ公開',
+  /** Label for description in tooltip to explain release types */
+  'release.dialog.tooltip.description':
+    'これにより、複数のバージョンで作業しているときにドキュメントが競合しているかどうかを表示することができます。',
+  /** Label for noting that a release time is not final */
+  'release.dialog.tooltip.note':
+    '注意：リリースの時間を変更し、後でスケジュールされた公開の正確な時間を設定することができます。',
+  /** Title for tooltip to explain release time */
+  'release.dialog.tooltip.title': 'リリースのおおよその時間',
+  /** The placeholder text when the release doesn't have a description */
+  'release.form.placeholder-describe-release': 'リリースの説明を記入してください…',
+  /** Tooltip for button to hide release visibility */
+  'release.layer.hide': 'リリースを非表示にする',
+  /** Label for the release menu */
+  'release.menu.label': 'リリースメニュー',
+  /** Menu item label for scheduled drafts */
+  'release.menu.scheduled-drafts': 'スケジュールされた下書きを見る',
+  /** Tooltip for the release menu */
+  'release.menu.tooltip': 'アクション',
+  /** Menu item label for viewing content releases */
+  'release.menu.view-releases': 'コンテンツリリースを見る',
+  /** Label for draft perspective in navbar */
+  'release.navbar.drafts': 'ドラフト',
+  /** Label for published releases in navbar */
+  'release.navbar.published': '公開済み',
+  /** Tooltip for releases navigation in navbar */
+  'release.navbar.tooltip': 'リリース',
+  /** The placeholder text when the release doesn't have a title */
+  'release.placeholder-untitled-release': '無題のリリース',
+  /** Description for warning that the published schedule time is in the past */
+  'release.schedule-dialog.publish-date-in-past-warning':
+    '将来の時間と日付にスケジュールしてください。',
+  /** Label for date picker when scheduling a release */
+  'release.schedule-dialog.select-publish-date-label': '公開日',
+  /** The toast description that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.description': 'このリリースはピン留めが解除されました',
+  /** The toast title that will be shown when the user has a release perspective which is now archived
+   * @deprecated – no longer needed
+   * */
+  'release.toast.archived-release.title': "'{{title}}' リリースはアーカイブされました",
+  /** The toast title that will be shown the creating a release fails */
+  'release.toast.create-release-error.title': 'リリースの作成に失敗しました',
+  /** Error toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.error':
+    '予定された下書きドキュメント <strong>{{title}}</strong> の削除に失敗しました：{{error}}',
+  /** Success toast for deleting a scheduled draft */
+  'release.toast.delete-schedule-draft.success':
+    '予定された下書きドキュメント <strong>{{title}}</strong> が削除されました。',
+  /** The toast title shown when saving edits to a release's details fails */
+  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   * */
+  'release.toast.not-found-release.title': "'{{title}}' リリースが見つかりませんでした",
+  /** Error toast for pausing a scheduled draft */
+  'release.toast.pause-scheduled-draft.error':
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>の一時停止に失敗しました：{{error}}',
+  /** Error toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.error':
+    '予定された下書きドキュメント <strong>{{title}}</strong> の即時公開に失敗しました：{{error}}',
+  /** Success toast for running a scheduled publish immediately */
+  'release.toast.publish-scheduled-draft.success':
+    '予定された下書きドキュメント <strong>{{title}}</strong> が公開されました。',
+  /** The toast description that will be shown when the user has a release perspective which is now published
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.description': 'このリリースはピン留めが解除されました',
+  /** The toast title that will be shown when the user has a release perspective which is now deleted
+   * @deprecated – no longer needed
+   **/
+  'release.toast.published-release.title': "'{{title}}' リリースが公開されました",
+  /** Error toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.error':
+    '予定された下書きドキュメント <strong>{{title}}</strong> の再スケジュールに失敗しました：{{error}}',
+  /** Success toast for rescheduling a draft */
+  'release.toast.reschedule-scheduled-draft.success':
+    '予定された下書きドキュメント <strong>{{title}}</strong> のスケジュールが変更されました。',
+  /** Error toast for scheduling a paused draft */
+  'release.toast.schedule-publish.error': '下書きのスケジュールに失敗しました：{{error}}',
+  /** Success toast for scheduling a paused draft */
+  'release.toast.schedule-publish.success': 'ドラフトのスケジュール設定に成功しました',
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
+   * @deprecated – no longer needed
+   * */
+  'release.toast.scheduled-draft-published.title': '予定されていたドラフトが公開されました',
+  /** Label for when a version of a document has already been added to the release */
+  'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
+  /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
+  'release.tooltip.locked':
+    'このリリースはスケジュールされています。ドキュメントを追加するにはスケジュールを解除してください。',
+  /** Label for the release type 'as soon as possible' */
+  'release.type.asap': 'できるだけ早く',
+  /** Label for the release type 'at time', meaning it's a release with a scheduled date */
+  'release.type.scheduled': '指定時刻',
+  /** Label for the release type 'undecided' */
+  'release.type.undecided': '未定',
+  /** Tooltip for the dropdown to show all versions of document */
+  'release.version-list.tooltip': 'すべてのドキュメントバージョンを見る',
+
+  /** Button text for contacting support in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.contact-support': 'サポートに連絡する',
+  /** Header for the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.header': 'コンテンツリリースの設定問題',
+  /** Message shown in the releases misconfiguration dialog */
+  'releases.upsell.misconfiguration.message':
+    'あなたのプロジェクトにはコンテンツリリースが有効になっていますが、リリース制限の設定に問題があるようです。コンテンツリリースが適切に設定されるようにサポートに連絡してください。',
+
+  /** Confirm button text for the schedule publish dialog */
+  'schedule-publish-dialog.confirm': 'スケジュールする',
+  /** Description for the schedule publish dialog */
+  'schedule-publish-dialog.description': 'このドキュメントをいつ公開するか選択してください。',
+  /** Header for the schedule publish dialog */
+  'schedule-publish-dialog.header': '公開のためのドラフトをスケジュールする',
+
+  /** Title for a scheduled draft release */
+  'scheduled-drafts.release.title': '予定された公開',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '検索を開く',
@@ -1303,37 +1913,31 @@ export default removeUndefinedLocaleResources({
    * `<Field/> has ≤ <Value/>` may be better than
    * `<Field/> has less than or equal to <Value/>`
    **/
-  /* Array should have a count the given filter value */
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>は</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-equal.description_other':
     '<Field/> <Operator>は</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-equal.name': '数量が等しい',
-  /* Array should have a count greater than given filter value */
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>は ></Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gt.description_other':
     '<Field/> <Operator>は ></Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gt.name': '数量がより大きい',
-  /* Array should have a count greater than or equal to the given filter value */
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>は ≥</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gte.description_other':
     '<Field/> <Operator>は ≥</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-gte.name': '数量が以上',
-  /* Array should have a count less than given filter value */
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>は <</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lt.description_other':
     '<Field/> <Operator>は <</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lt.name': '数量がより少ない',
-  /* Array should have a count less than or equal to the given filter value */
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>は ≤</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lte.description_other':
     '<Field/> <Operator>は ≤</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-lte.name': '数量が以下',
-  /* Array should have a count that is not equal to the given filter value */
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>は持っていない</Operator> <Value>{{count}} アイテム</Value>',
   'search.operator.array-count-not-equal.description_other':
@@ -1346,35 +1950,27 @@ export default removeUndefinedLocaleResources({
   'search.operator.array-count-range.description':
     '<Field/> <Operator>は</Operator> <Value>{{from}} → {{to}} アイテムの間</Value>',
   'search.operator.array-count-range.name': '数量が範囲内',
-  /* Array should include the given value */
   'search.operator.array-list-includes.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-includes.name': '含む',
-  /* Array should not include the given value */
   'search.operator.array-list-not-includes.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.array-list-not-includes.name': '含まない',
-  /* Array should include the given reference */
   'search.operator.array-reference-includes.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-includes.name': '含む',
-  /* Array should not include the given reference */
   'search.operator.array-reference-not-includes.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.array-reference-not-includes.name': '含まない',
-  /* Asset (file) should be the selected asset */
   'search.operator.asset-file-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-equal.name': 'が等しい',
-  /* Asset (file) should not be the selected asset */
   'search.operator.asset-file-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-file-not-equal.name': 'が等しくない',
-  /* Asset (image) should be the selected asset */
   'search.operator.asset-image-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-equal.name': 'が等しい',
-  /* Asset (image) should not be the selected asset */
   'search.operator.asset-image-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.asset-image-not-equal.name': 'が等しくない',
@@ -1387,159 +1983,119 @@ export default removeUndefinedLocaleResources({
   'search.operator.boolean-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.boolean-equal.name': 'が等しい',
-  /* Date should be after (later than) given filter value */
   'search.operator.date-after.description':
     '<Field/> <Operator>は後</Operator> <Value>{{value}}</Value>',
   'search.operator.date-after.name': 'より後',
-  /* Date should be before (earlier than) given filter value */
   'search.operator.date-before.description':
     '<Field/> <Operator>は前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-before.name': 'より前',
-  /* Date should be the given filter value */
   'search.operator.date-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-equal.name': 'が等しい',
-  /* Date should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-last.description':
     '<Field/> <Operator>は最後の</Operator> <Value>{{value}}</Value>',
   'search.operator.date-last.name': '最後の',
-  /* Date should not be the given filter value */
   'search.operator.date-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-not-equal.name': 'が等しくない',
-  /* Date should be within the range of given filter values */
   'search.operator.date-range.description': '<Field/> <Operator>は範囲内</Operator> <Value/>',
   'search.operator.date-range.name': '範囲内',
-  /* Date and time should be after (later than) given filter value */
   'search.operator.date-time-after.description':
     '<Field/> <Operator>は後</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-after.name': 'より後',
-  /* Date and time should be before (earlier than) given filter value */
   'search.operator.date-time-before.description':
     '<Field/> <Operator>は前</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-before.name': 'より前',
-  /* Date and time should be the given filter value */
   'search.operator.date-time-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-equal.name': 'が等しい',
-  /* Date and time should be within the given filter value range (eg "within the last X days") */
   'search.operator.date-time-last.description':
     '<Field/> <Operator>は最後の</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-last.name': '最後の',
-  /* Date and time should not be the given filter value */
   'search.operator.date-time-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.date-time-not-equal.name': 'が等しくない',
-  /* Date and time should be within the range of given filter values */
   'search.operator.date-time-range.description': '<Field/> <Operator>は範囲内</Operator> <Value/>',
   'search.operator.date-time-range.name': '範囲内',
-  /* Value should be defined */
   'search.operator.defined.description': '<Field/> <Operator>は</Operator> <Value>空でない</Value>',
   'search.operator.defined.name': '空でない',
-  /* Value should not be defined */
   'search.operator.not-defined.description': '<Field/> <Operator>は</Operator> <Value>空</Value>',
   'search.operator.not-defined.name': '空',
-  /* Number should be the given filter value */
   'search.operator.number-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.number-equal.name': 'が等しい',
-  /* Number should be greater than given filter value */
   'search.operator.number-gt.description':
     '<Field/> <Operator>></Operator> <Value>{{value}}</Value>',
   'search.operator.number-gt.name': 'より大きい',
-  /* Number should be greater than or the given filter value */
   'search.operator.number-gte.description':
     '<Field/> <Operator>≥</Operator> <Value>{{value}}</Value>',
   'search.operator.number-gte.name': '以上',
-  /* Number should be less than given filter value */
   'search.operator.number-lt.description':
     '<Field/> <Operator><</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lt.name': 'より少ない',
-  /* Number should be less than or the given filter value */
   'search.operator.number-lte.description':
     '<Field/> <Operator>≤</Operator> <Value>{{value}}</Value>',
   'search.operator.number-lte.name': '以下',
-  /* Number should not be the given filter value */
   'search.operator.number-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.number-not-equal.name': 'が等しくない',
-  /* Number should be within the range of given filter values */
   'search.operator.number-range.description':
     '<Field/> <Operator>は範囲内</Operator> <Value>{{from}} → {{to}}</Value>',
   'search.operator.number-range.name': '範囲内',
-  /* Portable Text should contain the given filter value */
   'search.operator.portable-text-contains.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-contains.name': '含む',
-  /* Portable Text should be the given filter value */
   'search.operator.portable-text-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-equal.name': 'が等しい',
-  /* Portable Text should not contain the given filter value */
   'search.operator.portable-text-not-contains.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-contains.name': '含まない',
-  /* Portable Text should not be the given filter value */
   'search.operator.portable-text-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.portable-text-not-equal.name': 'が等しくない',
-  /* References the given asset (file) */
   'search.operator.reference-asset-file.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-file.name': 'ファイル',
-  /* References the given asset (image) */
   'search.operator.reference-asset-image.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-asset-image.name': '画像',
-  /* References the given document */
   'search.operator.reference-document.description':
     '<Field/> <Operator>→</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-document.name': 'ドキュメント',
-  /* Reference should be the given document */
   'search.operator.reference-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-equal.name': 'が等しい',
-  /* Reference should not be the given document */
   'search.operator.reference-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.reference-not-equal.name': 'が等しくない',
-  /* Slug contains the given value */
   'search.operator.slug-contains.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-contains.name': '含む',
-  /* Slug equals the given filter value */
   'search.operator.slug-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-equal.name': 'が等しい',
-  /* Slug does not contain the given value */
   'search.operator.slug-not-contains.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-contains.name': '含まない',
-  /* Slug does not equal the given filter value */
   'search.operator.slug-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.slug-not-equal.name': 'が等しくない',
-  /* String contains the given filter value */
   'search.operator.string-contains.description':
     '<Field/> <Operator>は含む</Operator> <Value>{{value}}</Value>',
   'search.operator.string-contains.name': '含む',
-  /* String equals the given filter value */
   'search.operator.string-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-equal.name': 'が等しい',
-  /* String equals one of the predefined allowed values */
   'search.operator.string-list-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-equal.name': 'が等しい',
-  /* String does not equal one of the predefined allowed values */
   'search.operator.string-list-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-list-not-equal.name': 'が等しくない',
-  /* String does not contain the given filter value */
   'search.operator.string-not-contains.description':
     '<Field/> <Operator>は含まない</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-contains.name': '含まない',
-  /* String does not equal the given filter value */
   'search.operator.string-not-equal.description':
     '<Field/> <Operator>は</Operator> <Value>{{value}}</Value>',
   'search.operator.string-not-equal.name': 'が等しくない',
@@ -1562,24 +2118,40 @@ export default removeUndefinedLocaleResources({
   /** Accessibility label for the search results section, shown when the user has typed valid terms */
   'search.search-results-aria-label': '検索結果',
 
-  /** Label for the edit columns button to change field visibility in sheet list */
-  'sheet-list.edit-columns': '列を編集',
-  /** Label for the header menu option to hide a field from the sheet list */
-  'sheet-list.hide-field': 'テーブルから削除',
-  /** Label for reset column visibilities button */
-  'sheet-list.reset-columns': '列をリセット',
-  /** Title for the edit columns menu */
-  'sheet-list.select-fields': '最大5つのフィールドタイプを選択',
-
   /** Accessibility label for the navbar status button */
   'status-button.aria-label': '設定ステータス',
 
+  'time-zone.action.search-for-timezone-placeholder': '都市またはタイムゾーンを検索',
+  'time-zone.action.select-local-time-zone': 'ローカルタイムゾーンを選択',
+  'time-zone.dialog-info.content-releases':
+    '選択されたタイムゾーンは、コンテンツリリースでの日付の表示方法を変更します。',
+  'time-zone.dialog-info.input':
+    '選択されたタイムゾーンは、このドキュメントのこの入力に対してのみ、日付の表示方法を変更します。',
+  'time-zone.dialog-info.scheduled-publishing':
+    '選択されたタイムゾーンは、スケジュールでの日付の表示方法を変更します。',
+  'time-zone.local-time': '現地時間',
+  'time-zone.time-zone': 'タイムゾーン',
+  'time-zone.time-zone-tooltip-content-releases':
+    '{{alternativeName}} GMT{{offset}}でリリースを表示',
+  'time-zone.time-zone-tooltip-input':
+    '{{alternativeName}} GMT{{offset}}で<em>{{title}}</em>を表示',
+  'time-zone.time-zone-tooltip-scheduled-publishing':
+    '{{alternativeName}} GMT{{offset}}でスケジュールを表示',
+
+  /** Title for the changes tooltip in the history inspector*/
+  'timeline.changes.title': '変更者',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'ドキュメント履歴のトランザクションは影響を受けていません。',
   /** Title for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-title':
     'ドキュメントの変更を取得中にエラーが発生しました。',
+  /** Description for error when the timeline for the given document can't be loaded */
+  'timeline.error.load-document-changes-version-description':
+    'ドキュメントの履歴を表示するには、Studioの設定を通じてイベントAPIを有効にしてください。',
+  /** Title for error when the timeline for the given version document can't be loaded */
+  'timeline.error.load-document-changes-version-title':
+    'バージョンドキュメントの履歴はイベントAPIを通じてのみ利用可能です。',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'ドキュメントの内容を変更すると、このメニューにドキュメントのバージョンが表示されます。',
@@ -1600,6 +2172,7 @@ export default removeUndefinedLocaleResources({
   'timeline.list.aria-label': 'ドキュメントのリビジョン',
   /** Label for loading history */
   'timeline.loading-history': '履歴を読み込み中…',
+  'timeline.no-previous-events': '以前のイベントはありません',
   /** Label shown in review changes timeline when a document has been created */
   'timeline.operation.created': '作成された',
   /** Label shown in review changes timeline when a document has been created, with a timestamp */
@@ -1612,6 +2185,10 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.deleted': '削除された',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': '削除: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a draft document has been created*/
+  'timeline.operation.draft-created': 'ドラフトが作成されました',
+  /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
+  'timeline.operation.draft-created_timestamp': 'ドラフト作成: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': '下書きを破棄',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */
@@ -1624,6 +2201,8 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.edited-live': 'ライブ編集された',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'ライブ編集: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
+  'timeline.operation.history-cleared': '保持ポリシーにより削除されました',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': '公開された',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -1632,6 +2211,14 @@ export default removeUndefinedLocaleResources({
   'timeline.operation.unpublished': '非公開にされた',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': '非公開: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been created */
+  'timeline.operation.version-created': 'バージョンが作成されました',
+  /** Label shown in review changes timeline when a document version has been created, with a timestamp */
+  'timeline.operation.version-created_timestamp': 'バージョン作成: {{timestamp, datetime}}',
+  /** Label shown in review changes timeline when a document version has been discarded */
+  'timeline.operation.version-discarded': 'バージョンが破棄されました',
+  /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
+  'timeline.operation.version-discarded_timestamp': 'バージョン破棄: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -1704,6 +2291,11 @@ export default removeUndefinedLocaleResources({
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'メニューを開く',
 
+  /** Label for other users' agent bundle versions */
+  'version.agent-bundle.agent-changes': 'Agentの変更',
+  /** Label for the current user's agent bundle versions */
+  'version.agent-bundle.proposed-changes': '提案された変更',
+
   /**
    * Label for action to add a workspace (currently a developer-oriented action, as this will
    * lead to the documentation on workspace configuration)
@@ -1716,6 +2308,8 @@ export default removeUndefinedLocaleResources({
    * workspace to authenticate in.
    */
   'workspaces.action.choose-another-workspace': '別のワークスペースを選ぶ',
+  /** Label for title to switch workspace before workspaces are listed */
+  'workspaces.action.switch-workspace': 'ワークスペースを切り替える',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'ワークスペースを選ぶ',
   /** Label for the workspace menu */

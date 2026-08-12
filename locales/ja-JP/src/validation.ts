@@ -52,6 +52,10 @@ export default removeUndefinedLocaleResources({
   'object.asset-required_file': 'ファイルが必要です',
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': '画像が必要です',
+  /** Media can't be found in the Media Library */
+  'object.media-not-found': 'メディアライブラリでアセットが見つかりませんでした',
+  /** Media object is missing a reference to a document in its `_ref` field */
+  'object.not-media-library-asset': 'メディアライブラリのアセットへの参照でなければなりません',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'ドキュメントへの参照でなければなりません',
   /** Object references a document which is not published */
@@ -63,6 +67,8 @@ export default removeUndefinedLocaleResources({
   'panel.no-errors-message': 'バリデーションエラーはありません',
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'バリデーション',
+  /** Message shown when the validation panel is opened but the document is going to unpublish */
+  'panel.unpublish-message': 'ドキュメントの公開取り消しが行われるため、検証エラーは表示されません',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'スラッグには値が必要です',

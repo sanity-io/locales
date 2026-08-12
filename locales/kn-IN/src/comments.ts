@@ -29,9 +29,6 @@ export default removeUndefinedLocaleResources({
   /** The inspector text when error copying link */
   'copy-link-error-message': 'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ನಕಲಿಸಲು ಅಸಾಧ್ಯ',
 
-  /** The inspector successfully copied link text */
-  'copy-link-success-message': 'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ',
-
   /** The delete dialog body for a comment */
   'delete-comment.body': 'ಒಮ್ಮೆ ಅಳಿಸಿದ ನಂತರ, ಕಾಮೆಂಟ್ ಮರುಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** The delete dialog confirm button text for a comment */
@@ -76,10 +73,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'ಕಾಮೆಂಟ್ ಸೇರಿಸಿ',
 
-  /* The text shown in the inline comment button when the button is disabled due to overlap */
   'inline-add-comment-button.disabled-overlap-title': 'ಪ್ರತಿಕ್ರಿಯೆಗಳು ಅತಿಕ್ರಮಿಸಬಾರದು',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'ಪ್ರತಿಕ್ರಿಯೆ ಸೇರಿಸಿ',
+
+  /** The title of the error card shown in the comments inspector */
+  'inspector-error.title': 'ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡುವಾಗ ಏನೋ ತಪ್ಪಾಗಿದೆ',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} ಕ್ಷೇತ್ರಕ್ಕೆ ಹೋಗಿ',
@@ -131,8 +130,7 @@ export default removeUndefinedLocaleResources({
   /** The empty state title for open comments */
   'list-status.empty-state-open-title': 'ಇನ್ನೂ ಯಾವುದೇ ತೆರೆದ ಕಾಮೆಂಟುಗಳಿಲ್ಲ',
   /** The empty state text for resolved comments */
-  'list-status.empty-state-resolved-text':
-    'ಈ ದಾಖಲೆಯ ಮೇಲೆ ಬಗೆಹರಿಸಲಾದ ಕಾಮೆಂಟುಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು.',
+  'list-status.empty-state-resolved-text': 'ಈ ದಾಖಲೆಯ ಮೇಲೆ ಬಗೆಹರಿಸಲಾದ ಕಾಮೆಂಟುಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು.',
   /** The empty state title for resolved comments */
   'list-status.empty-state-resolved-title': 'ಇನ್ನೂ ಯಾವುದೇ ಬಗೆಹರಿಸಲಾದ ಕಾಮೆಂಟುಗಳಿಲ್ಲ',
   /** The list status message for error */
@@ -182,8 +180,7 @@ export default removeUndefinedLocaleResources({
    * - `<Text>` - should be wrapped around the text describing the action ("reacted with")
    * - `<ReactionName/>` - the name of the reaction emoji, eg ":heavy_plus_sign:"
    */
-  'reactions.users-reacted-with-reaction':
-    '<UserList/> <Text>ಪ್ರತಿಕ್ರಿಯಿಸಿದ್ದಾರೆ</Text> <ReactionName/>',
+  'reactions.users-reacted-with-reaction': '<UserList/> <Text>ಪ್ರತಿಕ್ರಿಯಿಸಿದ್ದಾರೆ</Text> <ReactionName/>',
 
   /** Status filter: The short title describing filtering on open (non-resolved) comments */
   'status-filter.status-open': 'ತೆರೆದ',

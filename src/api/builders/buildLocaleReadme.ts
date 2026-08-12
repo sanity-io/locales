@@ -77,11 +77,12 @@ function buildMaintainersMessage(locale: Locale): string {
 }
 
 function buildContributorsMessage(locale: Locale) {
-  if (locale.contributors.length === 0) {
+  const allContributors = [...locale.maintainers, ...locale.contributors]
+  if (allContributors.length === 0) {
     return ''
   }
 
-  return `## Contributors\n\n${locale.contributors
+  return `## Contributors\n\n${allContributors
     .map((name) => `- [@${name}](https://github.com/${name})`)
     .join('\n')}\n\n`
 }

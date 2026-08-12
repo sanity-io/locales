@@ -10,14 +10,11 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'Dán trường',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'Yêu cầu quyền truy cập bảng ghi để sao chép nội dung này. Cho phép quyền truy cập bảng ghi trong cài đặt trình duyệt của bạn, sau đó thử sao chép lại.',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'Trình duyệt của bạn không hỗ trợ hành động này',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title':
-    'Tài liệu "{{fieldNames}}" đã được sao chép',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title':
-    'Trường "{{fieldName}}" đã được sao chép',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Giá trị trống, không có gì để sao chép',
   /** --- On copy --- */
@@ -34,12 +31,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Không có gì để dán',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': 'Mục clipboard không hợp lệ',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'Tài liệu "{{fieldNames}}" đã được cập nhật',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'Trường "{{fieldName}}" đã được cập nhật',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" không được phép trong "{{targetSchemaType}}"',
@@ -54,6 +45,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Giá trị loại "{{type}}" không được phép trong trường này',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    'Đã bỏ qua các trường chỉ đọc: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': 'Mục tiêu chỉ đọc',
@@ -63,6 +57,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'Tham chiếu loại "{{sourceReferenceType}}" không được phép trong trường tham chiếu chấp nhận các loại "{{targetReferenceTypes}}"',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    'Tài liệu tham khảo "{{ref}}" không tồn tại',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Các loại schema nguồn và đích không tương thích',

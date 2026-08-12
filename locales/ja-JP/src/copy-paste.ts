@@ -10,14 +10,11 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to paste a field */
   'copy-paste.field-action-paste-button.field.title': 'フィールドを貼り付け',
   /** The error message that is shown when the clipboard is not supported */
+  'copy-paste.on-copy.validation.clipboard-not-supported.description':
+    'このコンテンツをコピーするにはクリップボードへのアクセスが必要です。ブラウザの設定でクリップボードの権限を許可してから、もう一度コピーしてみてください。',
+  /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
     'お使いのブラウザはこのアクションをサポートしていません',
-  /** The success message that is shown when a document is copied */
-  'copy-paste.on-copy.validation.copy-document-success.title':
-    'ドキュメント "{{fieldNames}}" をコピーしました',
-  /** The success message that is shown when a field is copied */
-  'copy-paste.on-copy.validation.copy-field_one-success.title':
-    'フィールド "{{fieldName}}" をコピーしました',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空の値、コピーするものがありません',
   /** --- On copy --- */
@@ -34,12 +31,6 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-empty.title': '貼り付けるものがありません',
   /** The validation message that is shown when the clipboard item is invalid */
   'copy-paste.on-paste.validation.clipboard-invalid.title': '無効なクリップボードアイテムです',
-  /** The success message that is shown when a document is pasted */
-  'copy-paste.on-paste.validation.document-paste-success.title':
-    'ドキュメント "{{fieldNames}}" を更新しました',
-  /** The success message that is shown when a field is pasted */
-  'copy-paste.on-paste.validation.field_one-paste-success.title':
-    'フィールド "{{fieldName}}" を更新しました',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '"{{sourceSchemaType}}" は "{{targetSchemaType}}" には許可されていません',
@@ -55,6 +46,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'タイプ "{{type}}" の値はこのフィールドでは許可されていません',
+  /** The validation message that is shown when read-only fields are skipped during document paste */
+  'copy-paste.on-paste.validation.read-only-fields-skipped.description':
+    '読み取り専用フィールドをスキップしました: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
   'copy-paste.on-paste.validation.read-only-target.description': '対象は読み取り専用です',
@@ -64,6 +58,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
     'タイプ "{{sourceReferenceType}}" の参照はタイプ "{{targetReferenceTypes}}" を受け入れる参照フィールドでは許可されていません',
+  /** The validation message that is shown when reference does not exist */
+  'copy-paste.on-paste.validation.reference-validation-failed.description':
+    '参照されたドキュメント "{{ref}}" は存在しません',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'ソースとターゲットのスキーマタイプが互換性がありません',
