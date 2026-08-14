@@ -1619,7 +1619,7 @@ export default removeUndefinedLocaleResources({
   /** Field label for the release description in the edit release dialog */
   'release.dialog.edit.description-label': 'Beskrivelse',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': 'Rediger release',
+  'release.dialog.edit.title': 'Rediger utgivelse',
   /** Field label for the release title in the edit release dialog */
   'release.dialog.edit.title-label': 'Tittel',
   /** Body text for the dialog confirming running a scheduled draft immediately */
@@ -1677,7 +1677,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt slettet.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': 'Kunne ikke lagre release-detaljer',
+  'release.toast.edit-release-error.title': 'Kunne ikke lagre utgivelsesdetaljer',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
