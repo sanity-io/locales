@@ -47,7 +47,7 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^4.0.1",
+    "@sanity/ui": "^4.0.2",
     "@sanity/vision": "^6.9.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
