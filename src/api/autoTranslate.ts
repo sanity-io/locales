@@ -6,6 +6,8 @@ import {promisify} from 'node:util'
 import Anthropic from '@anthropic-ai/sdk'
 import pMap from 'p-map'
 import prettyMs from 'pretty-ms'
+import {z} from 'zod'
+import {fromZodError} from 'zod-validation-error'
 
 import {buildResourceBundle} from '../api/builders/buildResourceBundle'
 import {findMissingResources} from '../api/resources'
@@ -153,26 +155,39 @@ export async function autoTranslate(options: AutoTranslateOptions): Promise<numb
         async function translateBatch(currentBatch, index) {
           const tpl = templateMissingResources(ns.indexedResources, currentBatch)
           const startTime = Date.now()
-          const translation = JSON.parse(await translateText(tpl, localeName))
+          const translation = await translateText(tpl, localeName)
           const duration = prettyMs(Date.now() - startTime)
           logger(`[${locale.id}] Translated batch ${index + 1} in ${duration}`)
 
           // Set the values from translation into the namespace
           let batchTranslated = 0
+          let batchExpected = 0
           for (const key of currentBatch) {
             const val = ns.indexedResources[key.key]
             if (!val) {
               continue
             }
 
+            batchExpected++
             const translated = translation[key.key]
             if (!translated) {
               logger(`[${locale.id}] [WARN] No translation returned for ${key.key}`)
               continue
             }
 
-            val.value = translation[key.key]
+            val.value = translated
             batchTranslated++
+          }
+
+          // A batch where _none_ of the requested keys came back means the model
+          // returned a differently shaped/keyed payload, not that individual
+          // translations are missing. Fail loudly (with what was actually returned)
+          // instead of letting the run "succeed" without translating anything.
+          if (batchExpected > 0 && batchTranslated === 0) {
+            throw new Error(
+              `[${locale.id}] Model returned no matching translations for batch ${index + 1} ` +
+                `of namespace ${ns.namespace}. Returned keys: ${JSON.stringify(Object.keys(translation))}`,
+            )
           }
 
           return batchTranslated
@@ -220,23 +235,38 @@ function templateMissingResources(
 }
 
 /**
- * Translate the given text to the given target language, returning JSON
+ * Shape of the `submit_translations` tool input. An array of `{key, value}` pairs
+ * rather than a free-form map: strict tool use requires `additionalProperties: false`
+ * on every object, which rules out schemas with dynamic keys.
+ */
+const translationPairsSchema = z.object({
+  translations: z.array(z.object({key: z.string(), value: z.string()})),
+})
+
+/**
+ * Translate the given text to the given target language, returning a map of
+ * resource keys to translated values
  *
  * @param text
  * @param targetLanguage
  * @returns
  */
-async function translateText(text: string, targetLanguage: string): Promise<string> {
+async function translateText(
+  text: string,
+  targetLanguage: string,
+): Promise<Record<string, string>> {
   // Note: will throw on missing environment variable
   const anthropic = getAnthropicApi()
 
   if (text.trim() === '') {
-    return JSON.stringify({})
+    return {}
   }
 
-  // Use tool calling to guarantee valid JSON output. The model is forced to call
-  // this tool, so a completed response is machine-parseable — no markdown fences,
-  // no trailing text, no truncated JSON.
+  // Use forced tool calling with `strict: true` to guarantee the response shape.
+  // Strict mode grammar-constrains sampling to the schema, so the model cannot
+  // invent its own payload shape - which Sonnet 5 otherwise does for custom,
+  // non-strict tool schemas (it drifts towards tool shapes from its training
+  // data, silently dropping or renaming our keys).
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
     max_tokens: ANTHROPIC_MAX_TOKENS,
@@ -252,10 +282,32 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
       {
         name: 'submit_translations',
         description:
-          'Submit the translated key-value pairs. Each key must match the original key exactly, and each value is the translated string.',
+          'Submit the translated resources. Each entry holds the original resource key (copied exactly, character for character) and the translated string as its value.',
+        strict: true,
         input_schema: {
           type: 'object' as const,
-          additionalProperties: {type: 'string'},
+          properties: {
+            translations: {
+              type: 'array',
+              items: {
+                type: 'object',
+                properties: {
+                  key: {
+                    type: 'string',
+                    description: 'The resource key, copied exactly from the input',
+                  },
+                  value: {
+                    type: 'string',
+                    description: 'The translated string',
+                  },
+                },
+                required: ['key', 'value'],
+                additionalProperties: false,
+              },
+            },
+          },
+          required: ['translations'],
+          additionalProperties: false,
         },
       },
     ],
@@ -269,7 +321,15 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
     throw new Error(`No tool_use block in response (stop_reason: ${message.stop_reason})`)
   }
 
-  return JSON.stringify(toolBlock.input)
+  const parsed = translationPairsSchema.safeParse(toolBlock.input)
+  if (!parsed.success) {
+    throw new Error(
+      `Unexpected tool input from model: ${fromZodError(parsed.error).message}. ` +
+        `Received: ${JSON.stringify(toolBlock.input)}`,
+    )
+  }
+
+  return Object.fromEntries(parsed.data.translations.map(({key, value}) => [key, value]))
 }
 
 /**
@@ -279,12 +339,12 @@ async function translateText(text: string, targetLanguage: string): Promise<stri
  * @internal
  */
 function getSystemPrompt(): string {
-  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. Translate the values into the requested target language and submit them using the submit_translations tool.
+  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. Translate the values into the requested target language and submit them using the submit_translations tool, as an array of {key, value} entries.
 
 Rules:
-- Preserve every key exactly as given.
+- Submit one entry per resource, copying each key exactly as given - including any dots, underscores and plural suffixes (like "_one" or "_other").
 - Translate only the values.
-- If there is nothing to translate, return the input as-is.
+- If there is nothing to translate, submit the input values as-is.
 - The values may contain branded feature names of the Sanity.io platform, such as "dataset", "webhook", "GROQ", "perspective", "Content Lake" etc. Do not translate these branded terms.`
 }
 
