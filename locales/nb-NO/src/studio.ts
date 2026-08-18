@@ -2270,7 +2270,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Åpne sidefeltet',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Gjør krav på dette prosjektet',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag igjen av prøveperioden',
   'user-menu.action.free-trial_other': '{{count}} dager igjen av prøveperioden',
