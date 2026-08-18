@@ -490,7 +490,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Annuleren',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Versies beheren',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Hoe gemakkelijk of moeilijk is de nieuwe versie-inventaris in gebruik?',
@@ -2273,7 +2273,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Zijbalk openen',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Dit project claimen',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag over in proefperiode',
   'user-menu.action.free-trial_other': '{{count}} dagen over in proefperiode',
