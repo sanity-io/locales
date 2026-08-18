@@ -2097,7 +2097,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'เปิดแถบด้านข้าง',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'ขอสิทธิ์เป็นเจ้าของโปรเจกต์นี้',
   'user-menu.action.free-trial_other': 'เหลืออีก {{count}} วันในการทดลองใช้',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': 'อัพเกรดจากฟรี',
