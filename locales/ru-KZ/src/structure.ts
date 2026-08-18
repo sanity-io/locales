@@ -105,7 +105,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Восстановить до этой версии',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Этот документ уже настроен на снятие с публикации',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Этот документ не опубликован',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -357,20 +358,21 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Удалить в любом случае',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Удалить всё равно',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Снять с публикации в любом случае',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Удалить сейчас',
   /** The text in the "Delete now" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  'confirm-delete-dialog.confirm-button.text_delete_one': 'Удалить документ',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Снять с публикации сейчас',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Вы уверены, что хотите удалить «<DocumentTitle/>»?',
   /** The confirmation text when the document only has a single version */
-  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  'confirm-delete-dialog.confirmation.text_delete_one':
+    'Вы уверены, что хотите удалить этот документ?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Вы уверены, что хотите снять с публикации «<DocumentTitle/>»?',
@@ -674,7 +676,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Документ был снят с публикации. Черновик был создан из последней опубликованной версии.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Версия будет снята с публикации при публикации релиза',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Без названия',
   /** The loading message for the document not found pane */
