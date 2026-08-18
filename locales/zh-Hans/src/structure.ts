@@ -93,6 +93,8 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': '还原',
   /** Default tooltip for the action */
   'action.restore.tooltip': '还原到此版本',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': '此文档未发布',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -626,6 +628,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     '文档已取消发布。已从最新发布版本创建了一个草稿。',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '无标题',
   /** The loading message for the document not found pane */

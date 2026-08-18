@@ -2228,6 +2228,8 @@ export default removeUndefinedLocaleResources({
   /** Label to open the sidebar */
   'tree-editing-dialog.sidebar.action.open': 'ಸೈಡ್‌ಬಾರ್ ತೆರೆಯಿರಿ',
 
+  /** Label for action to claim a project created through unauthenticated provisioning */
+  'user-menu.action.claim-project': undefined, // 'Claim this project'
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'ಉಚಿತ ಪರೀಕ್ಷಾ ಅವಧಿಯಲ್ಲಿ {{count}} ದಿನ ಉಳಿದಿದೆ',
   'user-menu.action.free-trial_other': 'ಉಚಿತ ಪರೀಕ್ಷಾ ಅವಧಿಯಲ್ಲಿ {{count}} ದಿನಗಳು ಉಳಿದಿವೆ',

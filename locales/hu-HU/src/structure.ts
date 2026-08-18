@@ -106,6 +106,8 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': 'Visszaállítás',
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Visszaállítás erre a verzióra',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Ez a dokumentum nincs közzétéve',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -712,6 +714,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'A dokumentum közzétételét megszüntették. A legutóbbi közzétett verzióból vázlat készült.',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Cím nélkül',
   /** The loading message for the document not found pane */

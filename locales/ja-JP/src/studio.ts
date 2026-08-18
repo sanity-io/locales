@@ -2249,6 +2249,8 @@ export default removeUndefinedLocaleResources({
   /** Label to open the sidebar */
   'tree-editing-dialog.sidebar.action.open': 'サイドバーを開く',
 
+  /** Label for action to claim a project created through unauthenticated provisioning */
+  'user-menu.action.claim-project': undefined, // 'Claim this project'
   'user-menu.action.free-trial_other': 'トライアル期間があと{{count}}日',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': '無料からアップグレード',

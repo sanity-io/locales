@@ -104,6 +104,8 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': '復元',
   /** Default tooltip for the action */
   'action.restore.tooltip': 'このバージョンに復元',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'このドキュメントは公開されていません',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -689,6 +691,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'ドキュメントの公開が取り消されました。最新の公開バージョンからドラフトが作成されました。',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '無題',
   /** The loading message for the document not found pane */
