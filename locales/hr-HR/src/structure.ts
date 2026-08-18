@@ -106,7 +106,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Vrati na ovu verziju',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Ovaj dokument je već postavljen za poništavanje objave',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Ovaj dokument nije objavljen',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -377,26 +378,28 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Svejedno izbriši',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Ipak izbriši',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': 'Ipak izbriši sve verzije',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Svejedno poništi objavu',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Izbriši sada',
   /** The text in the "Delete now" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  'confirm-delete-dialog.confirm-button.text_delete_one': 'Izbriši dokument',
   /** The text in the "Delete now" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
+  'confirm-delete-dialog.confirm-button.text_delete_other': 'Izbriši sve verzije',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Poništi objavu sada',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Jeste li sigurni da želite izbrisati “<DocumentTitle/>”?',
   /** The confirmation text when the document only has a single version */
-  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  'confirm-delete-dialog.confirmation.text_delete_one':
+    'Jeste li sigurni da želite izbrisati ovaj dokument?',
   /** The confirmation text when the document has multiple versions */
-  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
+  'confirm-delete-dialog.confirmation.text_delete_other':
+    'Jeste li sigurni da želite izbrisati sve verzije ovog dokumenta?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Jeste li sigurni da želite poništiti objavu “<DocumentTitle/>”?',
@@ -469,13 +472,13 @@ export default removeUndefinedLocaleResources({
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Nema vrijednosti',
   /** Accessibility label for the close button shown when an inspector panel failed to render */
-  'document-inspector.error.close-button.aria-label': undefined, // 'Close panel'
+  'document-inspector.error.close-button.aria-label': 'Zatvori ploču',
   /** Text explaining that the inspector panel failed to render */
-  'document-inspector.error.description': undefined, // 'An error occurred while rendering this panel.'
+  'document-inspector.error.description': 'Došlo je do pogreške prilikom prikazivanja ove ploče.',
   /** Label for the button that attempts to render the inspector panel again */
-  'document-inspector.error.retry-button.text': undefined, // 'Retry'
+  'document-inspector.error.retry-button.text': 'Pokušaj ponovno',
   /** The title shown in the inspector panel header when the panel failed to render */
-  'document-inspector.error.title': undefined, // 'Something went wrong'
+  'document-inspector.error.title': 'Nešto je pošlo po zlu',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Inspekcija',
   /** the placeholder text for the search input on the inspect dialog */
@@ -486,7 +489,8 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': 'Sirovi JSON',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': undefined, // 'Document doesn\'t exist in the selected perspective yet.'
+  'document-target-badges.not-in-target.tooltip':
+    'Dokument još ne postoji u odabranoj perspektivi.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ovaj obrazac je skriven',
@@ -706,7 +710,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentu je poništena objava. Nacrt je stvoren iz posljednje objavljene verzije.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Verziji će biti poništena objava kada se izdanje objavi',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Bez naslova',
   /** The loading message for the document not found pane */
