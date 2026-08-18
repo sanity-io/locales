@@ -96,7 +96,7 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'ಈ ಆವೃತ್ತಿಗೆ ಮರಳಿಸು',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished': 'ಈ ದಾಖಲೆಯನ್ನು ಈಗಾಗಲೇ ಅಪ್ರಕಟಿಸಲು ಹೊಂದಿಸಲಾಗಿದೆ',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'ಈ ದಾಖಲೆ ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -680,7 +680,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     '<Strong>{{title}}</Strong> ಅನ್‌ಪಬ್ಲಿಷ್ ಮಾಡಲಾಗಿದೆ. ಕೊನೆಯ ಪ್ರಕಟಿತ ಆವೃತ್ತಿಯಿಂದ ಒಂದು ಡ್ರಾಫ್ಟ್ ರಚಿಸಲಾಗಿದೆ.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'ಬಿಡುಗಡೆಯನ್ನು ಪ್ರಕಟಿಸಿದಾಗ ಆವೃತ್ತಿಯನ್ನು ಅಪ್ರಕಟಿಸಲಾಗುತ್ತದೆ',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'ಶೀರ್ಷಿಕೆ ಇಲ್ಲದ',
   /** The loading message for the document not found pane */
