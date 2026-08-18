@@ -105,7 +105,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': '이 버전으로 복원',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    '이 문서는 이미 게시 취소되도록 설정되어 있습니다',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': '이 문서는 발행되지 않았습니다',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -680,7 +681,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     '문서의 발행이 취소되었습니다. 최신 발행 버전에서 초안이 생성되었습니다.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    '릴리스가 게시되면 버전이 게시 취소됩니다',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '제목 없음',
   /** The loading message for the document not found pane */
