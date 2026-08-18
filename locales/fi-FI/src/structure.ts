@@ -106,7 +106,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Palauta tähän versioon',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Tämä dokumentti on jo asetettu julkaisemattomaksi',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Tätä asiakirjaa ei ole julkaistu',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -712,7 +713,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentin julkaisu on peruttu. Uusin julkaistu versio on luotu luonnokseksi.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Versio perutaan julkaisusta, kun julkaisu julkaistaan',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Nimetön',
   /** The loading message for the document not found pane */
