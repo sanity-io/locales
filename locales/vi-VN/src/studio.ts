@@ -467,7 +467,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Hủy',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Quản lý phiên bản',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Phiên bản kho lưu trữ mới dễ hay khó sử dụng?',
@@ -2147,7 +2147,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Mở thanh bên',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Yêu cầu dự án này',
   'user-menu.action.free-trial_other': 'Còn {{count}} ngày thử nghiệm',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': 'Nâng cấp từ miễn phí',
