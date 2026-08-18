@@ -2082,7 +2082,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': '打开侧边栏',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': '认领此项目',
   'user-menu.action.free-trial_other': '试用期还剩 {{count}} 天',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': '从免费版升级',
