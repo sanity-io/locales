@@ -484,7 +484,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Zrušit',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Správa verzí',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Jak snadné nebo obtížné je používání nového inventáře verzí?',
@@ -2260,7 +2260,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Otevřít postranní panel',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Nárokovat tento projekt',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} den zbývá do konce zkušební doby',
   'user-menu.action.free-trial_other': '{{count}} dní zbývá do konce zkušební doby',
