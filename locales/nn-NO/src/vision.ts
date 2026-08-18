@@ -109,7 +109,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versjon',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
-  'settings.api-version-locked-for-variant': undefined, // 'When a variant is selected, the API version needs to be vX.'
+  'settings.api-version-locked-for-variant': 'Når ein variant er vald, må API-versjonen vere vX.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Tilpassa API-versjon',
   /** Label for the "Dataset" dropdown in vision settings */
