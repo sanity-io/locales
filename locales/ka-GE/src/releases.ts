@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'მონიშნულია როგორც დაუგეგმავი',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'აქტივობის დახურვა',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'გამოშვების აქტივობის მიღებისას მოხდა შეცდომა',
   /** The loading text for when releases are loading */
@@ -157,21 +157,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'აქტივობა',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'შექმნილია',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'დოკუმენტები',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'განრიგი',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'სტატუსი',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'დოკუმენტები არ არის',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'შეცდომები',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'სწორია',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'მოწმდება',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'გამოშვების დამაგრება სტუდიოში',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -219,7 +219,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} ვალიდაციის შეცდომა',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'ვალიდაციის შეცდომები არ არის',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'დიახ, გადავამრავლო release',
@@ -295,7 +295,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'დოკუმენტაცია',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'ყველა გამოშვება',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'კალენდრის ნახვა',
   /** Description for the release tool */
@@ -487,11 +487,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'რედაქტირებულია',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'რედაქტორი',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'განკუთვნილია',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'ბოლო რედაქტირება',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'გამოქვეყნებულია',
   /** Header for the document table in the release tool - Published */
@@ -507,7 +507,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'ტიპი',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'ვარიანტი',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'როდის',
 
