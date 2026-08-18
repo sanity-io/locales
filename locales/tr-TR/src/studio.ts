@@ -2261,7 +2261,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Kenar çubuğunu aç',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Bu projeyi talep et',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'Deneme sürenizin sonuna {{count}} gün kaldı',
   'user-menu.action.free-trial_other': 'Deneme sürenizin sonuna {{count}} gün kaldı',
