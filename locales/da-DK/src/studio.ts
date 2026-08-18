@@ -484,7 +484,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Annuller',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Administrer versioner',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Hvor nemt eller svært er det at bruge den nye versionsoversigt?',
@@ -501,15 +501,15 @@ export default removeUndefinedLocaleResources({
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Alle brugere (Standard)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'Opret variant',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': 'Opret variant for {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'Som kladde',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'I en udgivelse',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': 'Eller se eksisterende varianter',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'Annuller',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -1503,7 +1503,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'Det lykkedes ikke at kassere versionen',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'Rediger detaljer',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Rediger tidsplan',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1612,13 +1612,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Ændre tidsplan',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'Gem',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'Beskrivelse',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'Rediger udgivelse',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'Titel',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Er du sikker på, at du vil udgive denne planlagte kladde med det samme?',
@@ -1674,7 +1674,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'Det planlagte kladde dokument <strong>{{title}}</strong> er blevet slettet.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'Kunne ikke gemme udgivelsesdetaljer',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
@@ -2254,7 +2254,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Åbn sidebar',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Gør krav på dette projekt',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag tilbage i prøveperioden',
   'user-menu.action.free-trial_other': '{{count}} dage tilbage i prøveperioden',
