@@ -2274,6 +2274,8 @@ export default removeUndefinedLocaleResources({
   /** Label to open the sidebar */
   'tree-editing-dialog.sidebar.action.open': 'Oldalsáv megnyitása',
 
+  /** Label for action to claim a project created through unauthenticated provisioning */
+  'user-menu.action.claim-project': undefined, // 'Claim this project'
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} nap van hátra a próbaidőből',
   'user-menu.action.free-trial_other': '{{count}} nap van hátra a próbaidőből',

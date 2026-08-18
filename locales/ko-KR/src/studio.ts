@@ -2234,6 +2234,8 @@ export default removeUndefinedLocaleResources({
   /** Label to open the sidebar */
   'tree-editing-dialog.sidebar.action.open': '사이드바 열기',
 
+  /** Label for action to claim a project created through unauthenticated provisioning */
+  'user-menu.action.claim-project': undefined, // 'Claim this project'
   'user-menu.action.free-trial_other': '시험 사용 기간이 {{count}}일 남았습니다',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': '무료에서 업그레이드',
