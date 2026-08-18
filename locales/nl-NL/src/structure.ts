@@ -108,7 +108,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Herstel naar deze versie',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Dit document is al ingesteld om gepubliceerd ongedaan te maken',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Dit document is niet gepubliceerd',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -380,26 +381,28 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Toch verwijderen',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Toch verwijderen',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': 'Toch alle versies verwijderen',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Toch ontpubliceren',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Nu verwijderen',
   /** The text in the "Delete now" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  'confirm-delete-dialog.confirm-button.text_delete_one': 'Document verwijderen',
   /** The text in the "Delete now" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
+  'confirm-delete-dialog.confirm-button.text_delete_other': 'Alle versies verwijderen',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Nu ontpubliceren',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Weet u zeker dat u “<DocumentTitle/>” wilt verwijderen?',
   /** The confirmation text when the document only has a single version */
-  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  'confirm-delete-dialog.confirmation.text_delete_one':
+    'Weet u zeker dat u dit document wilt verwijderen?',
   /** The confirmation text when the document has multiple versions */
-  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
+  'confirm-delete-dialog.confirmation.text_delete_other':
+    'Weet u zeker dat u alle versies van dit document wilt verwijderen?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Weet u zeker dat u “<DocumentTitle/>” wilt ontpubliceren?',
@@ -714,7 +717,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'De publicatie van het document is ongedaan gemaakt. Er is een concept gemaakt van de laatste gepubliceerde versie.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'De publicatie van deze versie wordt ongedaan gemaakt wanneer de release wordt gepubliceerd',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Naamloos',
   /** The loading message for the document not found pane */
