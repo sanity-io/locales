@@ -16,5 +16,5 @@ minimumReleaseAgeExclude:
   - 'sanity'
   # Renovate security update: js-yaml@4.3.0 || 4.3.1
   - js-yaml@4.3.0 || 4.3.1
-  # Renovate dependency update: @sanity/vision@6.9.0 -> @sanity/client@get-it@8.8.3
-  - get-it@8.8.3
+  # Renovate dependency updates can temporarily require a new get-it release
+  - get-it
