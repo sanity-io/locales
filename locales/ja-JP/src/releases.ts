@@ -80,7 +80,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'スケジュール解除済みとしてマークしました',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'アクティビティを閉じる',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'リリースアクティビティの取得中にエラーが発生しました',
   /** The loading text for when releases are loading */
@@ -154,21 +154,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'アクティビティ',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': '作成日',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'ドキュメント',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'スケジュール',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'ステータス',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'ドキュメントなし',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'エラー',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': '有効',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': '検証中',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'releaseをstudioにピン留め',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -213,7 +213,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} 件のバリデーションエラー',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': '検証エラーなし',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'はい、リリースを複製します',
@@ -285,7 +285,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'ドキュメント',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'すべてのリリース',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'カレンダーを表示',
   /** Description for the release tool */
@@ -462,11 +462,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': '編集済み',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': '編集者',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': '対象',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': '最終編集',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': '公開済み',
   /** Header for the document table in the release tool - Published */
@@ -482,7 +482,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'タイプ',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'バリアント',
   /** Header for the document table in the release tool - when */
   'table-header.when': '日時',
 
