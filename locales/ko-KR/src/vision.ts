@@ -107,6 +107,9 @@ export default removeUndefinedLocaleResources({
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 버전',
+  /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
+  'settings.api-version-locked-for-variant':
+    '변형(variant)이 선택된 경우, API 버전은 vX여야 합니다.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': '사용자 정의 API 버전',
   /** Label for the "Dataset" dropdown in vision settings */

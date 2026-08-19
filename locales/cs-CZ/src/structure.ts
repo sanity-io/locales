@@ -104,6 +104,8 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': 'Obnovit',
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Obnovit na tuto verzi',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Tento dokument není publikován',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -701,6 +703,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Publikace dokumentu byla zrušena. Z poslední publikované verze byl vytvořen koncept.',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Bez názvu',
   /** The loading message for the document not found pane */

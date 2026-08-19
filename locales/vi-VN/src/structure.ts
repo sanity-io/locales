@@ -105,6 +105,8 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': 'Khôi phục',
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Khôi phục về phiên bản này',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Tài liệu này chưa được xuất bản',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -671,6 +673,8 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Tài liệu đã được hủy xuất bản. Một bản nháp đã được tạo từ phiên bản xuất bản cuối cùng.',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Không tiêu đề',
   /** The loading message for the document not found pane */

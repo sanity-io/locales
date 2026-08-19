@@ -98,6 +98,8 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': 'กู้คืน',
   /** Default tooltip for the action */
   'action.restore.tooltip': 'กู้คืนไปยังเวอร์ชันนี้',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished': 'เอกสารนี้ถูกตั้งค่าให้ยกเลิกการเผยแพร่อยู่แล้ว',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'เอกสารนี้ยังไม่ได้เผยแพร่',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -641,6 +643,9 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'เอกสารได้รับการยกเลิกการเผยแพร่ ร่างใหม่ได้ถูกสร้างขึ้นจากเวอร์ชันที่เผยแพร่ล่าสุด',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'เวอร์ชันนี้จะถูกยกเลิกการเผยแพร่เมื่อมีการเผยแพร่รีลีส',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'ไม่มีชื่อ',
   /** The loading message for the document not found pane */

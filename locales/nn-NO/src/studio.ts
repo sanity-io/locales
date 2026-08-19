@@ -2258,6 +2258,8 @@ export default removeUndefinedLocaleResources({
   /** Label to open the sidebar */
   'tree-editing-dialog.sidebar.action.open': 'Opne sidefeltet',
 
+  /** Label for action to claim a project created through unauthenticated provisioning */
+  'user-menu.action.claim-project': 'Krev dette prosjektet',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag att i prøveperioden',
   'user-menu.action.free-trial_other': '{{count}} dagar att i prøveperioden',

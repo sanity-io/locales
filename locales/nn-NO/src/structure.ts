@@ -107,6 +107,9 @@ export default removeUndefinedLocaleResources({
   'action.restore.label': 'Gjenopprett',
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Gjenopprett til denne versjonen',
+  /** Tooltip when action is disabled because the version is already marked for unpublishing */
+  'action.unpublish.disabled.already-unpublished':
+    'Dette dokumentet er allereie sett til å bli avpublisert',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Dette dokumentet er ikkje publisert',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -711,6 +714,9 @@ export default removeUndefinedLocaleResources({
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentet blei avpublisert. Eit utkast har blitt oppretta frå den siste publiserte versjonen.',
+  /** The text when an unpublish operation succeeded for a document in a release */
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Versjonen vil bli avpublisert når utgivinga blir publisert',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Utan tittel',
   /** The loading message for the document not found pane */
