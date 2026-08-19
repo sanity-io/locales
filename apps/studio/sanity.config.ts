@@ -1,5 +1,5 @@
 import {visionTool} from '@sanity/vision'
-import {defineConfig, type PluginOptions, type WorkspaceOptions} from 'sanity'
+import {defineConfig, type WorkspaceOptions} from 'sanity'
 import {structureTool} from 'sanity/structure'
 
 import {i18nDemo} from './i18n'
@@ -23,7 +23,7 @@ export default defineConfig([
 
 function withDefaultConfig(
   {id, title}: {id: string; title: string},
-  plugin?: PluginOptions,
+  plugin?: unknown,
 ): WorkspaceOptions {
   return {
     name: id,
@@ -34,7 +34,7 @@ function withDefaultConfig(
     projectId,
     dataset,
 
-    plugins: (plugin ? [plugin] : []).concat([
+    plugins: (plugin ? [plugin as NonNullable<WorkspaceOptions['plugins']>[number]] : []).concat([
       // A custom i18n plugin (with a namespace for this demo studio)
       i18nDemo(),
       // Our old trusty structure tool
@@ -49,8 +49,13 @@ function withDefaultConfig(
   }
 }
 
-function localePluginToWorkspace(plugin: PluginOptions): WorkspaceOptions | null {
-  const i18n = plugin.i18n || {}
+function localePluginToWorkspace(plugin: unknown): WorkspaceOptions | null {
+  if (!plugin || typeof plugin !== 'object' || !('i18n' in plugin)) {
+    return null
+  }
+
+  const pluginWithI18n = plugin as {i18n?: {locales?: Array<{id: string; title: string}>}}
+  const i18n = pluginWithI18n.i18n || {}
   if (!Array.isArray(i18n.locales)) {
     return null
   }
