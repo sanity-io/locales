@@ -723,7 +723,7 @@ export default removeUndefinedLocaleResources({
     'La pubblicazione del documento è stata annullata. È stata creata una bozza dalla versione pubblicata più recente.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'La versione verrà annullata dalla pubblicazione quando la release verrà pubblicata',
+    'La versione verrà depubblicata quando la release verrà pubblicata',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Senza titolo',
   /** The loading message for the document not found pane */
