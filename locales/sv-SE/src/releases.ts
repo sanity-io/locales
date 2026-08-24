@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Markerad som oschemalagd',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': 'Stäng aktivitet',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Ett fel uppstod vid hämtning av lanseringsaktivitet',
   /** The loading text for when releases are loading */
@@ -159,21 +159,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': 'Aktivitet',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': 'Skapad',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': 'Dokument',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': 'Schema',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': 'Status',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': 'Inga dokument',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': 'Fel',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': 'Giltig',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': 'Validerar',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': 'Fäst release i studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -222,7 +222,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} valideringsfel',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': 'Inga valideringsfel',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Ja, duplicera release',
@@ -298,7 +298,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Dokumentation',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': 'Alla utgåvor',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Visa kalender',
   /** Description for the release tool */
@@ -489,11 +489,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': 'Redigerad',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': 'Redigerad av',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': 'Avsedd för',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': 'Senast redigerad',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': 'Publicerad',
   /** Header for the document table in the release tool - Published */
@@ -509,7 +509,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Typ',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': 'Variant',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'När',
 
