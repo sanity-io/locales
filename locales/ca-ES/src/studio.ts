@@ -489,7 +489,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Cancel·la',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Gestiona les versions',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     "Quina facilitat o dificultat té la nova versió de l'inventari per utilitzar-la?",
@@ -506,15 +506,15 @@ export default removeUndefinedLocaleResources({
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Tots els usuaris (Per defecte)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': undefined, // 'Create variant'
+  'document-group.create-variant': 'Crea una variant',
   /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': undefined, // 'Create variant for {{variantDefinitionName}}'
+  'document-group.create-variant.for-target': 'Crea una variant per a {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': undefined, // 'As a draft'
+  'document-group.create-variant.target-drafts': 'Com a esborrany',
   /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': undefined, // 'Into a release'
+  'document-group.create-variant.target-releases': 'En una publicació',
   /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': undefined, // 'Or view existing variants'
+  'document-group.create-variant.view-existing-variants': 'O visualitza les variants existents',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'Cancel·la',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -1512,7 +1512,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': "No s'ha pogut descartar la versió",
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'Edita els detalls',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Edita el calendari',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1623,13 +1623,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'Canvia el calendari',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'Desa',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'Descripció',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'Edita la publicació',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'Títol',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'Estàs segur que vols publicar aquest esborrany programat immediatament?',
@@ -1685,7 +1685,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     "El document d'esborrany programat <strong>{{title}}</strong> ha estat eliminat.",
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': "No s'han pogut desar els detalls de la publicació",
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
@@ -2268,7 +2268,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Obre la barra lateral',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Reclama aquest projecte',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dia restant en el període de prova',
   'user-menu.action.free-trial_other': '{{count}} dies restants en el període de prova',
