@@ -107,7 +107,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Visszaállítás erre a verzióra',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Ez a dokumentum már be van állítva a publikálás visszavonására',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Ez a dokumentum nincs közzétéve',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -381,26 +382,29 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Mégis töröl',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Törlés mindenképp',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other':
+    'Összes verzió törlése mindenképp',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Mégis visszavon',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Törlés most',
   /** The text in the "Delete now" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  'confirm-delete-dialog.confirm-button.text_delete_one': 'Dokumentum törlése',
   /** The text in the "Delete now" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
+  'confirm-delete-dialog.confirm-button.text_delete_other': 'Összes verzió törlése',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Visszavonás most',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Biztosan törölni szeretnéd a(z) “<DocumentTitle/>” dokumentumot?',
   /** The confirmation text when the document only has a single version */
-  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  'confirm-delete-dialog.confirmation.text_delete_one':
+    'Biztosan törölni szeretné ezt a dokumentumot?',
   /** The confirmation text when the document has multiple versions */
-  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
+  'confirm-delete-dialog.confirmation.text_delete_other':
+    'Biztosan törölni szeretné a dokumentum összes verzióját?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Biztosan vissza szeretnéd vonni a(z) “<DocumentTitle/>” dokumentumot?',
@@ -715,7 +719,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'A dokumentum közzétételét megszüntették. A legutóbbi közzétett verzióból vázlat készült.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'A verzió publikálása visszavonásra kerül, amikor a kiadás publikálásra kerül',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Cím nélkül',
   /** The loading message for the document not found pane */
