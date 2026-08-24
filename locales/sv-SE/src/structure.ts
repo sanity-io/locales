@@ -108,7 +108,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Återställ till denna version',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Detta dokument är redan inställt på att avpubliceras',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Detta dokument är inte publicerat',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -379,26 +380,28 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Radera ändå',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Ta bort ändå',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': 'Ta bort alla versioner ändå',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Avpublicera ändå',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Radera nu',
   /** The text in the "Delete now" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  'confirm-delete-dialog.confirm-button.text_delete_one': 'Ta bort dokument',
   /** The text in the "Delete now" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
+  'confirm-delete-dialog.confirm-button.text_delete_other': 'Ta bort alla versioner',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Avpublicera nu',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Är du säker på att du vill radera “<DocumentTitle/>”?',
   /** The confirmation text when the document only has a single version */
-  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  'confirm-delete-dialog.confirmation.text_delete_one':
+    'Är du säker på att du vill ta bort detta dokument?',
   /** The confirmation text when the document has multiple versions */
-  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
+  'confirm-delete-dialog.confirmation.text_delete_other':
+    'Är du säker på att du vill ta bort alla versioner av detta dokument?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Är du säker på att du vill avpublicera “<DocumentTitle/>”?',
@@ -707,7 +710,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Dokumentet avpublicerades. Ett utkast har skapats från den senaste publicerade versionen.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Versionen kommer att avpubliceras när utgåvan publiceras',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Namnlös',
   /** The loading message for the document not found pane */
