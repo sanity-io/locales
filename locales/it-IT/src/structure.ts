@@ -109,7 +109,7 @@ export default removeUndefinedLocaleResources({
   'action.restore.tooltip': 'Ripristina a questa versione',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
   'action.unpublish.disabled.already-unpublished':
-    'Questo documento è già impostato per essere annullata la pubblicazione',
+    'Questo documento è già impostato per essere depubblicato',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Questo documento non è pubblicato',
   /** Tooltip when action is disabled because the operation is not ready   */
