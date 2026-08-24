@@ -106,7 +106,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Restaurați la această revizie',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Acest document este deja setat pentru a fi anulat din publicare',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Acest document nu este publicat',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -361,20 +362,20 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Șterge oricum',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': undefined, // 'Delete anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Șterge oricum',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Retrage oricum',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': 'Șterge acum',
   /** The text in the "Delete now" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-button.text_delete_one': undefined, // 'Delete document'
+  'confirm-delete-dialog.confirm-button.text_delete_one': 'Șterge documentul',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Retrage acum',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
     'Sunteți sigur că doriți să ștergeți „<DocumentTitle/>”?',
   /** The confirmation text when the document only has a single version */
-  'confirm-delete-dialog.confirmation.text_delete_one': undefined, // 'Are you sure you want to delete this document?'
+  'confirm-delete-dialog.confirmation.text_delete_one': 'Sigur doriți să ștergeți acest document?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Sunteți sigur că doriți să retrageți „<DocumentTitle/>”?',
@@ -680,7 +681,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     '<Strong>{{title}}</Strong> a fost retras de la publicare. O schiță a fost creată din ultima revizie publicată.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Versiunea va fi anulată din publicare când versiunea (release) va fi publicată',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Fără titlu',
   /** The loading message for the document not found pane */
