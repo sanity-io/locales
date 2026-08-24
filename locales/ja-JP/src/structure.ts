@@ -105,7 +105,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'このバージョンに復元',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'このドキュメントはすでに非公開に設定されています',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'このドキュメントは公開されていません',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -374,19 +375,20 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'それでも削除',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': undefined, // 'Delete all versions anyway'
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': 'すべてのバージョンを削除する',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'それでも公開を取り消す',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_delete': '今すぐ削除',
   /** The text in the "Delete now" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-button.text_delete_other': undefined, // 'Delete all versions'
+  'confirm-delete-dialog.confirm-button.text_delete_other': 'すべてのバージョンを削除',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': '今すぐ公開を取り消す',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete': '本当に“<DocumentTitle/>”を削除しますか？',
   /** The confirmation text when the document has multiple versions */
-  'confirm-delete-dialog.confirmation.text_delete_other': undefined, // 'Are you sure you want to delete all the versions of this document?'
+  'confirm-delete-dialog.confirmation.text_delete_other':
+    'このドキュメントのすべてのバージョンを削除してもよろしいですか?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     '本当に“<DocumentTitle/>”の公開を取り消しますか？',
@@ -692,7 +694,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'ドキュメントの公開が取り消されました。最新の公開バージョンからドラフトが作成されました。',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'リリースが公開されると、このバージョンは非公開になります',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': '無題',
   /** The loading message for the document not found pane */
