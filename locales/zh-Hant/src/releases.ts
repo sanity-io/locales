@@ -78,7 +78,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': '已標記為未排程',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': undefined, // 'Close activity'
+  'activity.panel.close': '關閉活動',
   /** The loading text for when releases are loading */
   'activity.panel.error': '取得版本活動時發生錯誤',
   /** The loading text for when releases are loading */
@@ -147,21 +147,21 @@ export default removeUndefinedLocaleResources({
   /** Activity inspector button text */
   'dashboard.details.activity': '活動',
   /** Label for the "created" metadata in the release detail header zone. */
-  'dashboard.details.metadata.created': undefined, // 'Created'
+  'dashboard.details.metadata.created': '建立時間',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': undefined, // 'Documents'
+  'dashboard.details.metadata.documents': '文件',
   /** Label for the schedule/type metadata in the release detail header zone. */
-  'dashboard.details.metadata.schedule': undefined, // 'Schedule'
+  'dashboard.details.metadata.schedule': '排程',
   /** Label for the validation status metadata in the release detail header zone. */
-  'dashboard.details.metadata.status': undefined, // 'Status'
+  'dashboard.details.metadata.status': '狀態',
   /** Status badge value when the release has no documents to validate. */
-  'dashboard.details.metadata.status-empty': undefined, // 'No documents'
+  'dashboard.details.metadata.status-empty': '無文件',
   /** Status badge value when one or more documents have validation errors. */
-  'dashboard.details.metadata.status-errors': undefined, // 'Errors'
+  'dashboard.details.metadata.status-errors': '錯誤',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': undefined, // 'Valid'
+  'dashboard.details.metadata.status-valid': '有效',
   /** Status badge value while document validation is still running. */
-  'dashboard.details.metadata.status-validating': undefined, // 'Validating'
+  'dashboard.details.metadata.status-validating': '驗證中',
   /** Text for the releases detail screen in the pin release button. */
   'dashboard.details.pin-release': '將 release 固定至 studio',
   /** Text for the releases detail screen when a release was published ASAP */
@@ -205,7 +205,7 @@ export default removeUndefinedLocaleResources({
   /** Label for when a document in a release has multiple validation warnings */
   'document-validation.error_other': '{{count}} 個驗證錯誤',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': undefined, // 'No validation errors'
+  'document-validation.valid': '無驗證錯誤',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': '是，複製 release',
@@ -276,7 +276,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': '說明文件',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': undefined, // 'All releases'
+  'overview.back-to-all-releases': '所有發行版本',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': '檢視日曆',
   /** Description for the release tool */
@@ -446,11 +446,11 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - edited */
   'table-header.edited': '已編輯',
   /** Header for the document table - last editor (person) column */
-  'table-header.edited-by': undefined, // 'Edited by'
+  'table-header.edited-by': '編輯者',
   /** Header for the paused scheduled drafts table - intended for */
   'table-header.intended-for': '預定用於',
   /** Header for the document table - last edited (relative time) column */
-  'table-header.last-edited': undefined, // 'Last edited'
+  'table-header.last-edited': '最後編輯時間',
   /** Header for the document table in the release tool - Published */
   'table-header.published-at': '已發佈',
   /** Header for the document table in the release tool - Published */
@@ -466,7 +466,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': '類型',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': undefined, // 'Variant'
+  'table-header.variant': '變體',
   /** Header for the document table in the release tool - when */
   'table-header.when': '時間點',
 
