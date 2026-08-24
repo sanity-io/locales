@@ -485,7 +485,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'გაუქმება',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'ვერსიების მართვა',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'რამდენად მარტივი ან რთულია ახალი ვერსიის ინვენტარის გამოყენება?',
@@ -1506,7 +1506,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version discarding failed */
   'release.action.discard-version.failure': 'ვერსიის გაუქმება ჩავარდა',
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
-  'release.action.edit-details': undefined, // 'Edit details'
+  'release.action.edit-details': 'დეტალების რედაქტირება',
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'განრიგის რედაქტირება',
   /** Action message for when a new release is created off an existing version, draft or published document */
@@ -1614,13 +1614,13 @@ export default removeUndefinedLocaleResources({
   /** Header for change schedule dialog */
   'release.dialog.edit-schedule.header': 'განრიგის შეცვლა',
   /** Label for the save action in the edit release dialog */
-  'release.dialog.edit.confirm': undefined, // 'Save'
+  'release.dialog.edit.confirm': 'შენახვა',
   /** Field label for the release description in the edit release dialog */
-  'release.dialog.edit.description-label': undefined, // 'Description'
+  'release.dialog.edit.description-label': 'აღწერა',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': undefined, // 'Edit release'
+  'release.dialog.edit.title': 'გამოშვების რედაქტირება',
   /** Field label for the release title in the edit release dialog */
-  'release.dialog.edit.title-label': undefined, // 'Title'
+  'release.dialog.edit.title-label': 'სათაური',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
     'დარწმუნებული ხართ, რომ გსურთ ამ დაგეგმილი ჩანაწერის მყისიერად გამოქვეყნება?',
@@ -1676,7 +1676,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'დაგეგმილი ჩანაწერის დოკუმენტი <strong>{{title}}</strong> წაშლილია.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': undefined, // 'Failed to save release details'
+  'release.toast.edit-release-error.title': 'გამოშვების დეტალების შენახვა ვერ მოხერხდა',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
@@ -2260,7 +2260,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'გვერდითი ზოლის გახსნა',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'ამ პროექტის მითვისება',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} დღე დარჩენილია ცდუნებრივი ვერსიიდან',
   'user-menu.action.free-trial_other': '{{count}} დღე დარჩენილია ცდუნებრივი ვერსიიდან',
