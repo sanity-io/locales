@@ -97,7 +97,7 @@ importers:
         specifier: ^6.32.2
         version: 6.32.2
       oxlint:
-        specifier: ^1.78.0
+        specifier: ^1.79.0
         version: 1.79.0(oxlint-tsgolint@7.0.2001)
       oxlint-tsgolint:
         specifier: ^7.0.2001
