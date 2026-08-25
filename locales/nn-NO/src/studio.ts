@@ -462,7 +462,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Sorter etter tittel',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'Diagnostikk',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Lukk',
@@ -597,7 +597,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publisert {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': 'Publisert {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisjon frå <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -682,7 +682,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Uhandtert kjøretidsfeil',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'Feltåtgjerder',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'Utfasa',
   /** Fallback title shown above field if it has no defined title */
