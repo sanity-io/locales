@@ -463,7 +463,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': '타이틀별 정렬',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': '진단',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': '닫기',
@@ -572,7 +572,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}}에 게시됨',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': '{{date}}에 게시됨',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '개정 <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -656,7 +656,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': '처리되지 않은 런타임 오류',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': '필드 작업',
   /** Form field deprecated label */
   'form.field.deprecated-label': '사용되지 않음',
   /** Fallback title shown above field if it has no defined title */
