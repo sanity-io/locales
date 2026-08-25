@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.33
+
+### Patch Changes
+
+- [#1826](https://github.com/sanity-io/locales/pull/1826) [`d508087`](https://github.com/sanity-io/locales/commit/d508087ab8ae359853aca9ba826a9d678b4827f5) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - Automated translation updates
+
 ## 1.0.32
 
 ### Patch Changes
