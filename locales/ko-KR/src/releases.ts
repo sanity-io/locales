@@ -321,7 +321,7 @@ export default removeUndefinedLocaleResources({
   'presence.tooltip.one':
     '{{displayName}}님이 지금 "{{releaseTitle}}" 릴리스에서 이 문서를 편집 중입니다',
   /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  'presence.tooltip.one-without-release': '{{displayName}}님이 현재 이 문서를 편집하고 있습니다',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': '게시할 문서가 없습니다',
