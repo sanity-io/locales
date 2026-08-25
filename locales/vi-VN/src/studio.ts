@@ -445,6 +445,9 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'Sắp xếp theo Tiêu đề',
 
+  /** Menu item that opens Studio diagnostics */
+  'diagnostics.menu-item': undefined, // 'Diagnostics'
+
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Đóng',
   /** Label for action that marks divergence as resolved */
@@ -551,6 +554,8 @@ export default removeUndefinedLocaleResources({
   'document-status.not-published': 'Chưa được xuất bản',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Đã xuất bản {{date}}',
+  /** Label to show in document versions status for a published (non-live-edit) document */
+  'document-status.published-at': undefined, // 'Published {{date}}'
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Phiên bản từ <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -634,6 +639,8 @@ export default removeUndefinedLocaleResources({
   'form.error.unhandled-runtime-error.error-message': 'Lỗi: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Lỗi Runtime Không Xử Lý Được',
+  /** Tooltip / accessible label for the field actions overflow menu button */
+  'form.field.actions-menu.title': undefined, // 'Field actions'
   /** Form field deprecated label */
   'form.field.deprecated-label': 'lỗi thời',
   /** Fallback title shown above field if it has no defined title */

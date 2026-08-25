@@ -337,6 +337,8 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when one user is editing a document in a release */
   'presence.tooltip.one':
     '{{displayName}} est en train de modifier ce document dans la release « {{releaseTitle}} » en ce moment',
+  /** Tooltip text for when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': "Il n'y a aucun document à publier",
