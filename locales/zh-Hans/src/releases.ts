@@ -314,7 +314,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when one user is editing a document in a release */
   'presence.tooltip.one': '{{displayName}} 正在"{{releaseTitle}}"版本中编辑此文档',
   /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  'presence.tooltip.one-without-release': '{{displayName}} 正在编辑此文档',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': '没有可发布的文档',
