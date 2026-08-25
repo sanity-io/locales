@@ -456,7 +456,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'ಶೀರ್ಷಿಕೆ ಪ್ರಕಾರ ವಿಂಗಡಿಸಿ',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'ಮುಚ್ಚಿರಿ',
@@ -588,7 +588,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'ಪ್ರಕಟಿತ {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': '{{date}} ರಂದು ಪ್ರಕಟಿಸಲಾಗಿದೆ',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'ಪರಿಷ್ಕರಣೆ <em>{{date}}</em> ರಿಂದ',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -672,7 +672,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'ನಿರ್ವಹಿಸದ ರನ್‌ಟೈಮ್ ದೋಷ',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'ಫೀಲ್ಡ್ ಕ್ರಿಯೆಗಳು',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'ಅಪ್ರಚಲಿತ',
   /** Fallback title shown above field if it has no defined title */
