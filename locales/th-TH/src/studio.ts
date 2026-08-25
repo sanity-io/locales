@@ -433,6 +433,9 @@ export default removeUndefinedLocaleResources({
   /** Title for the default ordering/SortOrder if no orderings are provided and the title field is found */
   'default-orderings.title': 'เรียงตามชื่อเรื่อง',
 
+  /** Menu item that opens Studio diagnostics */
+  'diagnostics.menu-item': undefined, // 'Diagnostics'
+
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'ปิด',
   /** Label for action that marks divergence as resolved */
@@ -538,6 +541,8 @@ export default removeUndefinedLocaleResources({
   'document-status.not-published': 'ไม่ได้เผยแพร่',
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'เผยแพร่ {{date}}',
+  /** Label to show in document versions status for a published (non-live-edit) document */
+  'document-status.published-at': undefined, // 'Published {{date}}'
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'การแก้ไขจาก <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -618,6 +623,8 @@ export default removeUndefinedLocaleResources({
   'form.error.unhandled-runtime-error.error-message': 'ข้อผิดพลาด: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'ข้อผิดพลาดที่ไม่ได้จัดการในระหว่างการทำงาน',
+  /** Tooltip / accessible label for the field actions overflow menu button */
+  'form.field.actions-menu.title': undefined, // 'Field actions'
   /** Form field deprecated label */
   'form.field.deprecated-label': 'ล้าสมัย',
   /** Fallback title shown above field if it has no defined title */
