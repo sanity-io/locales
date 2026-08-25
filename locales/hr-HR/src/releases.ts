@@ -338,7 +338,7 @@ export default removeUndefinedLocaleResources({
   'presence.tooltip.one':
     '{{displayName}} trenutno uređuje ovaj dokument u izdanju „{{releaseTitle}}"',
   /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  'presence.tooltip.one-without-release': '{{displayName}} upravo uređuje ovaj dokument',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Nema dokumenata za objavu',
