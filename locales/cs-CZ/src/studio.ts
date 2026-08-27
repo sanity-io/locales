@@ -462,7 +462,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Seřadit podle Titulku',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'Diagnostika',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Zavřít',
@@ -487,7 +487,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Zrušit',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Správa verzí',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Jak snadné nebo obtížné je používání nového inventáře verzí?',
@@ -596,7 +596,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publikováno {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': 'Publikováno {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revize od <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -681,7 +681,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Nezpracovaná chyba za běhu',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'Akce pole',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'zastaralé',
   /** Fallback title shown above field if it has no defined title */
@@ -2267,7 +2267,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Otevřít postranní panel',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Nárokovat tento projekt',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} den zbývá do konce zkušební doby',
   'user-menu.action.free-trial_other': '{{count}} dní zbývá do konce zkušební doby',
