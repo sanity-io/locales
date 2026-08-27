@@ -467,7 +467,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Sorteren op titel',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'Diagnostiek',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Sluiten',
@@ -493,7 +493,7 @@ export default removeUndefinedLocaleResources({
   /** The label shown when dismissing the document group inventory */
   'document-group-inventory.action.cancel': 'Annuleren',
   /** The label for the button that opens the document group inventory */
-  'document-group-inventory.action.manage-versions': undefined, // 'Manage versions'
+  'document-group-inventory.action.manage-versions': 'Versies beheren',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
     'Hoe gemakkelijk of moeilijk is de nieuwe versie-inventaris in gebruik?',
@@ -602,7 +602,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Gepubliceerd {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': 'Gepubliceerd op {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revisie van <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -687,7 +687,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Onafgehandelde Runtime Fout',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'Veldacties',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'verouderd',
   /** Fallback title shown above field if it has no defined title */
@@ -2280,7 +2280,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Zijbalk openen',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Dit project claimen',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag over in proefperiode',
   'user-menu.action.free-trial_other': '{{count}} dagen over in proefperiode',
