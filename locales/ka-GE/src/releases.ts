@@ -337,7 +337,7 @@ export default removeUndefinedLocaleResources({
   'presence.tooltip.one':
     '{{displayName}} ახლა ამ დოკუმენტს ასწორებს „{{releaseTitle}}" გამოშვებაში',
   /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  'presence.tooltip.one-without-release': '{{displayName}} ამჟამად ასწორებს ამ დოკუმენტს',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'გამოსაქვეყნებელი დოკუმენტები არ არის',
