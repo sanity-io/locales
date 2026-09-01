@@ -103,7 +103,8 @@ export default removeUndefinedLocaleResources({
   /** Default tooltip for the action */
   'action.restore.tooltip': 'Bu sürüme geri yükle',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
-  'action.unpublish.disabled.already-unpublished': undefined, // 'This document is already set to be unpublished'
+  'action.unpublish.disabled.already-unpublished':
+    'Bu belge zaten yayından kaldırılacak şekilde ayarlanmış',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Bu belge yayınlanmadı',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -697,7 +698,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_unpublish':
     'Belge yayından kaldırıldı. En son yayınlanan sürümden bir taslak oluşturuldu.',
   /** The text when an unpublish operation succeeded for a document in a release */
-  'panes.document-operation-results.operation-success_unpublishVersion': undefined, // 'Version will be unpublished when the release is published'
+  'panes.document-operation-results.operation-success_unpublishVersion':
+    'Sürüm yayınlandığında bu versiyon yayından kaldırılacak',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Başlıksız',
   /** The loading message for the document not found pane */

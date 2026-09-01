@@ -465,7 +465,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Başlığa Göre Sırala',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'Tanılama',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Kapat',
@@ -599,7 +599,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '{{date}} tarihinde yayınlandı',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': '{{date}} tarihinde yayınlandı',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revizyon tarihi <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -683,7 +683,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Ele Alınamayan Çalışma Zamanı Hatası',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'Alan işlemleri',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'kullanım dışı',
   /** Fallback title shown above field if it has no defined title */
@@ -2268,7 +2268,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Kenar çubuğunu aç',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': undefined, // 'Claim this project'
+  'user-menu.action.claim-project': 'Bu projeye sahip çık',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'Deneme sürenizin sonuna {{count}} gün kaldı',
   'user-menu.action.free-trial_other': 'Deneme sürenizin sonuna {{count}} gün kaldı',
