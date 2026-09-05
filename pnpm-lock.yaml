@@ -233,7 +233,7 @@ importers:
         specifier: ^19.2.18
         version: 19.2.18
       '@types/react-dom':
-        specifier: ^19.2.4
+        specifier: ^19.2.5
         version: 19.2.5(@types/react@19.2.18)
       vite:
         specifier: ^8.2.2
