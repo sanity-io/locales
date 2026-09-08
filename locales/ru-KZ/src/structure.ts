@@ -152,6 +152,8 @@ export default removeUndefinedLocaleResources({
     'Тип <strong>{{schemaType}}</strong> имеет включенный <code>liveEdit</code>, но существует черновая версия этого документа. Опубликуйте или отмените черновик, чтобы продолжить его редактирование в реальном времени.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Сравнить черновик',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Отменить черновик',
   /** The label for the "publish draft" action */
@@ -322,6 +324,8 @@ export default removeUndefinedLocaleResources({
     'Параметр предыдущего документа недействителен.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Не удалось загрузить релизы',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'Нет других версий этого документа для сравнения.',

@@ -154,6 +154,8 @@ export default removeUndefinedLocaleResources({
     "Le type <strong>{{schemaType}}</strong> a <code>liveEdit</code> activé, mais une version brouillon de ce document existe. Publiez ou jetez le brouillon pour continuer à l'éditer en direct.",
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Comparer le brouillon',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Supprimer le brouillon',
   /** The label for the "publish draft" action */
@@ -338,6 +340,8 @@ export default removeUndefinedLocaleResources({
     'Le paramètre du document précédent est invalide.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Échec du chargement des publications',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

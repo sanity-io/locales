@@ -335,6 +335,8 @@ export default removeUndefinedLocaleResources({
     'მნიშვნელობის შეცდომა: მნიშვნელობა არის ტიპის "<code>{{actualType}}</code>", მოსალოდნელია "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'უსათაურო',
+  /** The label displayed to indicate a document's value is different to its base variant. */
+  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'კროპი შეცვლილია',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -429,6 +431,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.cancel-button.text': 'გაუქმება',
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': 'დადასტურება',
+  /** Default text in shared error text */
+  'common.error': undefined, // 'Error'
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'იტვირთება',
   /** The title of the reconnecting toast */

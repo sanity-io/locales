@@ -154,6 +154,8 @@ export default removeUndefinedLocaleResources({
     'A(z) <strong>{{schemaType}}</strong> típusnál engedélyezve van a <code>liveEdit</code>, de ennek a dokumentumnak létezik egy piszkozat változata. A valós idejű szerkesztés folytatásához közzé kell tenni vagy el kell vetni a piszkozatot.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Vázlat összehasonlítása',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Vázlat elvetése',
   /** The label for the "publish draft" action */
@@ -337,6 +339,8 @@ export default removeUndefinedLocaleResources({
     'Az előző dokumentum paramétere érvénytelen.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Nem sikerült betölteni a kiadásokat',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

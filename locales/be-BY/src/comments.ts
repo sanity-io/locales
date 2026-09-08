@@ -115,6 +115,10 @@ export default removeUndefinedLocaleResources({
   'list-item.missing-referenced-value-tooltip-content': 'Каментаваны тэкст быў выдалены',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Адкрыць меню дзеянняў каментарыя',
+  /** Badge shown when a comment was created on the draft but is viewed elsewhere */
+  'list-item.origin.draft': undefined, // 'From draft'
+  /** Badge shown when a comment was created on the published document but is viewed elsewhere */
+  'list-item.origin.published': undefined, // 'From published'
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Адкрыць зноў',
   /** The button aria label to re-open a comment that is resolved */

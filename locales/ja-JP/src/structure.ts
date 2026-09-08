@@ -153,6 +153,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{schemaType}}</strong>のタイプは<code>liveEdit</code>が有効になっていますが、このドキュメントの下書きバージョンが存在します。ライブ編集を続けるためには、下書きを公開するか破棄してください。',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'ドラフトを比較する',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'ドラフトを破棄する',
   /** The label for the "publish draft" action */
@@ -330,6 +332,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': '前のドキュメントパラメータが無効です。',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'リリースの読み込みに失敗しました',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

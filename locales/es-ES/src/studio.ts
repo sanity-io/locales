@@ -344,6 +344,8 @@ export default removeUndefinedLocaleResources({
     'Error de valor: El valor es del tipo "<code>{{actualType}}</code>", se esperaba "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Sin título',
+  /** The label displayed to indicate a document's value is different to its base variant. */
+  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Recorte cambiado',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -438,6 +440,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.cancel-button.text': 'Cancelar',
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': 'Confirmar',
+  /** Default text in shared error text */
+  'common.error': undefined, // 'Error'
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Cargando',
   /** The title of the reconnecting toast */

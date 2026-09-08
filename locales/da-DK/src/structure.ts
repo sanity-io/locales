@@ -154,6 +154,8 @@ export default removeUndefinedLocaleResources({
     'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktiveret, men der findes en kladdeversion af dette dokument. Udgiv eller kassér kladden for at fortsætte med at redigere den live.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Sammenlign kladde',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Kassér kladde',
   /** The label for the "publish draft" action */
@@ -335,6 +337,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Den forrige dokumentparameter er ugyldig.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Kunne ikke indlæse udgivelser',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

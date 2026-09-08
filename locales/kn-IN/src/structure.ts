@@ -140,6 +140,8 @@ export default removeUndefinedLocaleResources({
     'ಟೈಪ್ <strong>{{schemaType}}</strong> ಗೆ <code>liveEdit</code> ಸಕ್ರಿಯವಾಗಿದೆ, ಆದರೆ ಈ ದಾಖಲೆಯ ಕರಡು ಆವೃತ್ತಿ ಇದೆ. ನೇರ ಸಂಪಾದನೆ ಮುಂದುವರೆಸಲು ಕರಡು ಪ್ರಕಟಿಸಿ ಅಥವಾ ತ್ಯಜಿಸಿ.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'ಡ್ರಾಫ್ಟ್ ಹೋಲಿಸಿ',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'ಡ್ರಾಫ್ಟ್ ತ್ಯಜಿಸಿ',
   /** The label for the "publish draft" action */
@@ -315,6 +317,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'ಹಿಂದಿನ ದಾಖಲೆ ಪ್ಯಾರಾಮೀಟರ್ ಅಮಾನ್ಯವಾಗಿದೆ.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'ಬಿಡುಗಡೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'ಈ ದಾಖಲೆಯ ಇತರ ಆವೃತ್ತಿಗಳನ್ನು ಹೋಲಿಸಲು ಯಾವುದೂ ಇಲ್ಲ.',

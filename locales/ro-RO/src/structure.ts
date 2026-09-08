@@ -153,6 +153,8 @@ export default removeUndefinedLocaleResources({
     'Tipul <strong>{{schemaType}}</strong> are <code>liveEdit</code> activat, dar există o versiune schiță a acestui document. Publicați sau renunțați la schiță pentru a continua editarea live.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Compară draft',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Descartă draft',
   /** The label for the "publish draft" action */
@@ -325,6 +327,8 @@ export default removeUndefinedLocaleResources({
     'Parametrul documentului anterior este invalid.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Încărcarea lansărilor a eșuat',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

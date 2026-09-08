@@ -327,6 +327,8 @@ export default removeUndefinedLocaleResources({
     'Eroare de valoare: Valoarea este de tipul "<code>{{actualType}}</code>", se aștepta "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Fără titlu',
+  /** The label displayed to indicate a document's value is different to its base variant. */
+  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Decupajul s-a schimbat',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -421,6 +423,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.cancel-button.text': 'Anulează',
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': 'Confirmă',
+  /** Default text in shared error text */
+  'common.error': undefined, // 'Error'
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Se încarcă',
   /** The title of the reconnecting toast */

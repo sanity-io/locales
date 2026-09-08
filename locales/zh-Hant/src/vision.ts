@@ -69,6 +69,10 @@ export default removeUndefinedLocaleResources({
   'query.error.column': '列',
   /** Label for 'Line' indicator when there is an error within the query */
   'query.error.line': '行',
+  /** Extra explanation when a 400 is returned for a release perspective on an old API version */
+  'query.error.unsupported-release-perspective': undefined, // 'This API version does not support complex perspectives. Use {{apiVersion}} or later.'
+  /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
+  'query.error.unsupported-variant': undefined, // 'This API version does not support content variants. Use the experimental API version ({{apiVersion}}).'
   /** Label for "Query" editor/input */
   'query.label': '查詢',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */

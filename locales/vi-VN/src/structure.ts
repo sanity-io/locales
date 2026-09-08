@@ -152,6 +152,8 @@ export default removeUndefinedLocaleResources({
     'Loại <strong>{{schemaType}}</strong> đã bật <code>liveEdit</code>, nhưng một bản nháp của tài liệu này vẫn tồn tại. Xuất bản hoặc hủy bản nháp để tiếp tục chỉnh sửa trực tiếp.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'So sánh bản nháp',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Bỏ qua bản nháp',
   /** The label for the "publish draft" action */
@@ -321,6 +323,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Tham số tài liệu trước đó không hợp lệ.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Không tải được các phiên bản',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
