@@ -151,6 +151,8 @@ export default removeUndefinedLocaleResources({
     'ტიპი <strong>{{schemaType}}</strong> აქვს <code>liveEdit</code> ჩართული, თუმცა ამ დოკუმენტის მონახაზი არსებობს. გამოაქვეყნეთ ან უარყეთ მონახაზი რედაქტირების გაგრძელებად.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'დრაფტის შედარება',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'დრაფტის გაუქმება',
   /** The label for the "publish draft" action */
@@ -332,6 +334,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'წინა დოკუმენტის პარამეტრი არასწორია.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'გამოშვებების ჩატვირთვა ჩავარდა',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'ამ დოკუმენტის სხვა ვერსიები არ არის შესადარებლად.',

@@ -117,6 +117,10 @@ export default removeUndefinedLocaleResources({
   'list-item.missing-referenced-value-tooltip-content': 'El text comentat ha estat esborrat',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': "Obre el menú d'accions del comentari",
+  /** Badge shown when a comment was created on the draft but is viewed elsewhere */
+  'list-item.origin.draft': undefined, // 'From draft'
+  /** Badge shown when a comment was created on the published document but is viewed elsewhere */
+  'list-item.origin.published': undefined, // 'From published'
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Reobre',
   /** The button aria label to re-open a comment that is resolved */

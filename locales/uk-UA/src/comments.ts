@@ -116,6 +116,10 @@ export default removeUndefinedLocaleResources({
     'Текст, на який було залишено коментар, видалено',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Відкрити меню дій коментаря',
+  /** Badge shown when a comment was created on the draft but is viewed elsewhere */
+  'list-item.origin.draft': undefined, // 'From draft'
+  /** Badge shown when a comment was created on the published document but is viewed elsewhere */
+  'list-item.origin.published': undefined, // 'From published'
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Відновити',
   /** The button aria label to re-open a comment that is resolved */

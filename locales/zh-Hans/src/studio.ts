@@ -307,6 +307,8 @@ export default removeUndefinedLocaleResources({
     '值错误：值的类型为 "<code>{{actualType}}</code>", 期望的类型为 "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': '无标题',
+  /** The label displayed to indicate a document's value is different to its base variant. */
+  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': '裁剪已更改',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -398,6 +400,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.cancel-button.text': '取消',
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': '确认',
+  /** Default text in shared error text */
+  'common.error': undefined, // 'Error'
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '加载中',
   /** The title of the reconnecting toast */

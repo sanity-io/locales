@@ -155,6 +155,8 @@ export default removeUndefinedLocaleResources({
     'Het type <strong>{{schemaType}}</strong> heeft <code>liveEdit</code> ingeschakeld, maar er bestaat een conceptversie van dit document. Publiceer of verwijder het concept om door te gaan met het live bewerken ervan.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Vergelijk concept',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Verwerp concept',
   /** The label for the "publish draft" action */
@@ -336,6 +338,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'De vorige documentparameter is ongeldig.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Laden van publicaties mislukt',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

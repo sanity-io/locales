@@ -148,6 +148,8 @@ export default removeUndefinedLocaleResources({
     'Тып <strong>{{schemaType}}</strong> мае <code>liveEdit</code> уключаны, але існуе чарнавіковая версія гэтага дакумента. Апублікуйце або адхіліце чарнавік, каб працягнуць яго рэдагаванне.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Параўнаць чарнавік',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Адхіліць чарнавік',
   /** The label for the "publish draft" action */
@@ -320,6 +322,8 @@ export default removeUndefinedLocaleResources({
     'Параметр папярэдняга дакумента недапушчальны.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Не ўдалося загрузіць выпускі',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

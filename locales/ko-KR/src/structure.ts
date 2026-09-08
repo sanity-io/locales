@@ -151,6 +151,8 @@ export default removeUndefinedLocaleResources({
     '타입 <strong>{{schemaType}}</strong>에 <code>liveEdit</code>가 활성화되어 있지만, 이 문서의 초안 버전이 존재합니다. 라이브 편집을 계속하려면 초안을 게시하거나 버려야 합니다.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': '초안 비교',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': '초안 버리기',
   /** The label for the "publish draft" action */
@@ -318,6 +320,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': '이전 문서 매개변수가 유효하지 않습니다.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': '릴리스를 불러오는 데 실패했습니다',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': '비교할 이 문서의 다른 버전이 없습니다.',

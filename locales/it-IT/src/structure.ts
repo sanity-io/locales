@@ -155,6 +155,8 @@ export default removeUndefinedLocaleResources({
     'Il tipo <strong>{{schemaType}}</strong> ha <code>liveEdit</code> abilitato, ma esiste una versione bozza di questo documento. Pubblica o scarta la bozza per continuare a modificarlo dal vivo.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Confronta bozza',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Scarta bozza',
   /** The label for the "publish draft" action */
@@ -339,6 +341,8 @@ export default removeUndefinedLocaleResources({
     'Il parametro del documento precedente non è valido.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Caricamento delle pubblicazioni non riuscito',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

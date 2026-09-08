@@ -151,6 +151,8 @@ export default removeUndefinedLocaleResources({
     'Tegundin <strong>{{schemaType}}</strong> hefur <code>liveEdit</code> virkt, en drög að þessu skjali eru til. Birta eða henda drögunum til að halda áfram að breyta því í rauntíma.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Bera saman drög',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Hafna drögum',
   /** The label for the "publish draft" action */
@@ -330,6 +332,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Fyrri skjals parameter er ógilt.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Mistókst að hlaða útgáfum',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

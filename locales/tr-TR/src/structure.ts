@@ -148,6 +148,8 @@ export default removeUndefinedLocaleResources({
     '<strong>{{schemaType}}</strong> tipi için <code>canlı düzenleme</code> etkinleştirilmiş, ancak bu belgenin bir taslak sürümü bulunmaktadır. Canlı düzenlemeye devam etmek için taslağı yayınlayın veya silin.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Taslağı karşılaştır',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Taslağı sil',
   /** The label for the "publish draft" action */
@@ -326,6 +328,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Önceki belge parametresi geçersiz.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Yayınlar yüklenemedi',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

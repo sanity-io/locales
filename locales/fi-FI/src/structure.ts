@@ -152,6 +152,8 @@ export default removeUndefinedLocaleResources({
     'Tyypillä <strong>{{schemaType}}</strong> on <code>liveEdit</code> käytössä, mutta tästä dokumentista on olemassa luonnosversio. Julkaise tai hylkää luonnos jatkaaksesi sen live-muokkausta.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Vertaa luonnosta',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Hylkää luonnos',
   /** The label for the "publish draft" action */
@@ -334,6 +336,8 @@ export default removeUndefinedLocaleResources({
     'Edellisen asiakirjan parametri on virheellinen.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Julkaisujen lataaminen epäonnistui',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':

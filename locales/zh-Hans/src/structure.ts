@@ -136,6 +136,8 @@ export default removeUndefinedLocaleResources({
     '类型 <strong>{{schemaType}}</strong> 已启用 <code>liveEdit</code>，但此文档的草稿版本存在。发布或放弃草稿以继续实时编辑。',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': '比较草稿',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': '丢弃草稿',
   /** The label for the "publish draft" action */
@@ -293,6 +295,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': '上一个文档参数无效。',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': '加载发布失败',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': '没有其他版本的文档可以比较。',

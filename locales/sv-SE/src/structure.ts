@@ -155,6 +155,8 @@ export default removeUndefinedLocaleResources({
     'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktiverat, men en utkastversion av detta dokument finns. Publicera eller kassera utkastet för att fortsätta redigera det live.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Jämför utkast',
+  /** Tooltip when compare draft is disabled because the published document does not exist */
+  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Kassera utkast',
   /** The label for the "publish draft" action */
@@ -335,6 +337,8 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam': 'Föregående dokumentparameter är ogiltig.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Misslyckades med att ladda utgåvor',
+  /** The error message shown when document versions or variants failed to load */
+  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
