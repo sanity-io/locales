@@ -339,7 +339,7 @@ export default removeUndefinedLocaleResources({
   'presence.tooltip.one':
     '{{displayName}} està editant aquest document a la release "{{releaseTitle}}" ara mateix',
   /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  'presence.tooltip.one-without-release': '{{displayName}} està editant aquest document ara mateix',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'No hi ha documents per publicar',
