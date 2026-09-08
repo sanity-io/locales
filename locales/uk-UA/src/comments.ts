@@ -117,9 +117,9 @@ export default removeUndefinedLocaleResources({
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Відкрити меню дій коментаря',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */
-  'list-item.origin.draft': undefined, // 'From draft'
+  'list-item.origin.draft': 'Із чернетки',
   /** Badge shown when a comment was created on the published document but is viewed elsewhere */
-  'list-item.origin.published': undefined, // 'From published'
+  'list-item.origin.published': 'З опублікованого',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Відновити',
   /** The button aria label to re-open a comment that is resolved */
