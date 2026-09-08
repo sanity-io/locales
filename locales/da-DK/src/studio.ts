@@ -335,7 +335,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Uden titel',
   /** The label displayed to indicate a document's value is different to its base variant. */
-  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
+  'changes.from-base-variant.label': 'Ændret fra basisvariant',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Beskæring ændret',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -431,7 +431,7 @@ export default removeUndefinedLocaleResources({
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': 'Bekræft',
   /** Default text in shared error text */
-  'common.error': undefined, // 'Error'
+  'common.error': 'Fejl',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Indlæser',
   /** The title of the reconnecting toast */
@@ -465,7 +465,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Sortér efter titel',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'Diagnosticering',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Luk',
@@ -600,7 +600,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Offentliggjort {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': 'Udgivet {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revision fra <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -685,7 +685,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Uhåndteret kørselsfejl',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'Felthandlinger',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'forældet',
   /** Fallback title shown above field if it has no defined title */
