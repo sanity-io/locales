@@ -117,9 +117,9 @@ export default removeUndefinedLocaleResources({
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'Åbn kommentarhandlingsmenu',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */
-  'list-item.origin.draft': undefined, // 'From draft'
+  'list-item.origin.draft': 'Fra kladde',
   /** Badge shown when a comment was created on the published document but is viewed elsewhere */
-  'list-item.origin.published': undefined, // 'From published'
+  'list-item.origin.published': 'Fra udgivet',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Genåbn',
   /** The button aria label to re-open a comment that is resolved */
