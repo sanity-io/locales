@@ -152,7 +152,8 @@ export default removeUndefinedLocaleResources({
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Bera saman drög',
   /** Tooltip when compare draft is disabled because the published document does not exist */
-  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
+  'banners.obsolete-draft.actions.compare-draft.tooltip':
+    'Útgefna skjalið er ekki til, svo ekki er hægt að bera þessi drög saman.',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Hafna drögum',
   /** The label for the "publish draft" action */
@@ -333,7 +334,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Mistókst að hlaða útgáfum',
   /** The error message shown when document versions or variants failed to load */
-  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
+  'compare-version.error.loadVersions.title': 'Ekki tókst að hlaða útgáfum',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
