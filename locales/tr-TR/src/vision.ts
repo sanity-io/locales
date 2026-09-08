@@ -69,6 +69,12 @@ export default removeUndefinedLocaleResources({
   'query.error.column': 'Sütun',
   /** Label for 'Line' indicator when there is an error within the query */
   'query.error.line': 'Satır',
+  /** Extra explanation when a 400 is returned for a release perspective on an old API version */
+  'query.error.unsupported-release-perspective':
+    'Bu API sürümü karmaşık perspektifleri desteklemiyor. {{apiVersion}} veya daha yenisini kullanın.',
+  /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
+  'query.error.unsupported-variant':
+    'Bu API sürümü içerik varyantlarını desteklemiyor. Deneysel API sürümünü ({{apiVersion}}) kullanın.',
   /** Label for "Query" editor/input */
   'query.label': 'Sorgu',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
