@@ -308,7 +308,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': '無標題',
   /** The label displayed to indicate a document's value is different to its base variant. */
-  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
+  'changes.from-base-variant.label': '與基本版本不同',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': '已更新裁切',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -402,7 +402,7 @@ export default removeUndefinedLocaleResources({
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': '確認',
   /** Default text in shared error text */
-  'common.error': undefined, // 'Error'
+  'common.error': '錯誤',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '讀取中',
   /** The title of the reconnecting toast */
@@ -436,7 +436,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': '按標題排序',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': '診斷',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': '關閉',
@@ -542,7 +542,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': '發布於 {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': '已於 {{date}} 發布',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': '修訂自 <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -626,7 +626,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': '未處理的運行時錯誤',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': '欄位操作',
   /** Form field deprecated label */
   'form.field.deprecated-label': '已棄用',
   /** Fallback title shown above field if it has no defined title */
