@@ -328,7 +328,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Fără titlu',
   /** The label displayed to indicate a document's value is different to its base variant. */
-  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
+  'changes.from-base-variant.label': 'Modificat față de varianta de bază',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Decupajul s-a schimbat',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -424,7 +424,7 @@ export default removeUndefinedLocaleResources({
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': 'Confirmă',
   /** Default text in shared error text */
-  'common.error': undefined, // 'Error'
+  'common.error': 'Eroare',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Se încarcă',
   /** The title of the reconnecting toast */
@@ -458,7 +458,7 @@ export default removeUndefinedLocaleResources({
   'default-orderings.title': 'Sortează după Titlu',
 
   /** Menu item that opens Studio diagnostics */
-  'diagnostics.menu-item': undefined, // 'Diagnostics'
+  'diagnostics.menu-item': 'Diagnostice',
 
   /** Label for action that closes divergence inspector */
   'divergence.action.close.label': 'Închide',
@@ -566,7 +566,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in the document footer indicating the published date of the document */
   'document-status.published': 'Publicat {{date}}',
   /** Label to show in document versions status for a published (non-live-edit) document */
-  'document-status.published-at': undefined, // 'Published {{date}}'
+  'document-status.published-at': 'Publicat {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
   'document-status.revision-from': 'Revizie din <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
@@ -651,7 +651,7 @@ export default removeUndefinedLocaleResources({
   /** The title for the error card rendered inside a field in place of a crashing input */
   'form.error.unhandled-runtime-error.title': 'Eroare de Runtime Necontrolată',
   /** Tooltip / accessible label for the field actions overflow menu button */
-  'form.field.actions-menu.title': undefined, // 'Field actions'
+  'form.field.actions-menu.title': 'Acțiuni câmp',
   /** Form field deprecated label */
   'form.field.deprecated-label': 'depreciat',
   /** Fallback title shown above field if it has no defined title */
