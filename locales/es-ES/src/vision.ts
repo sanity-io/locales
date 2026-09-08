@@ -70,9 +70,11 @@ export default removeUndefinedLocaleResources({
   /** Label for 'Line' indicator when there is an error within the query */
   'query.error.line': 'Línea',
   /** Extra explanation when a 400 is returned for a release perspective on an old API version */
-  'query.error.unsupported-release-perspective': undefined, // 'This API version does not support complex perspectives. Use {{apiVersion}} or later.'
+  'query.error.unsupported-release-perspective':
+    'Esta versión de la API no admite perspectivas complejas. Use {{apiVersion}} o una versión posterior.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
-  'query.error.unsupported-variant': undefined, // 'This API version does not support content variants. Use the experimental API version ({{apiVersion}}).'
+  'query.error.unsupported-variant':
+    'Esta versión de la API no admite variantes de contenido. Use la versión experimental de la API ({{apiVersion}}).',
   /** Label for "Query" editor/input */
   'query.label': 'Consulta',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
