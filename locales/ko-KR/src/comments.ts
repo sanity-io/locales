@@ -114,9 +114,9 @@ export default removeUndefinedLocaleResources({
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': '댓글 작업 메뉴 열기',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */
-  'list-item.origin.draft': undefined, // 'From draft'
+  'list-item.origin.draft': '초안에서',
   /** Badge shown when a comment was created on the published document but is viewed elsewhere */
-  'list-item.origin.published': undefined, // 'From published'
+  'list-item.origin.published': '게시본에서',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': '다시 열기',
   /** The button aria label to re-open a comment that is resolved */
