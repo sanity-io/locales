@@ -52,7 +52,7 @@ export const getBaseBundles = memoizeAsyncFunction(async function getBaseBundles
     throw new Error('No bundles found - did you install dependencies?')
   }
 
-  return bundles
+  return mergeBundlesByNamespace(bundles)
 })
 
 function getLocaleResourceImportName(file: File) {
@@ -233,4 +233,30 @@ function extractResources(ast: Node, local: string, fileName: string): Array<Res
 
 function sortResources(resources: BaseResource[]) {
   return resources.toSorted((a, b) => a.key.localeCompare(b.key))
+}
+
+/**
+ * Dependencies may (due to code-splitting/chunking) end up defining the same
+ * namespace across multiple files, eg because a resource file gets duplicated
+ * in the build output. Merge such bundles into a single one per namespace, so
+ * namespaces aren't reported more than once, and their resources are the
+ * union of what's defined across all occurrences.
+ */
+function mergeBundlesByNamespace(bundles: ResourceBundle[]): ResourceBundle[] {
+  const byNamespace = new Map<string, Map<string, BaseResource>>()
+
+  for (const bundle of bundles) {
+    const resources = byNamespace.get(bundle.namespace) ?? new Map<string, BaseResource>()
+    for (const resource of bundle.resources) {
+      if (!resources.has(resource.key)) {
+        resources.set(resource.key, resource)
+      }
+    }
+    byNamespace.set(bundle.namespace, resources)
+  }
+
+  return Array.from(byNamespace.entries()).map(([namespace, resources]) => ({
+    namespace,
+    resources: sortResources(Array.from(resources.values())),
+  }))
 }
