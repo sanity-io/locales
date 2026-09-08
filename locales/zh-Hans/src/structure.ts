@@ -137,7 +137,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': '比较草稿',
   /** Tooltip when compare draft is disabled because the published document does not exist */
-  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
+  'banners.obsolete-draft.actions.compare-draft.tooltip': '已发布的文档不存在,因此无法比较此草稿。',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': '丢弃草稿',
   /** The label for the "publish draft" action */
@@ -296,7 +296,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': '加载发布失败',
   /** The error message shown when document versions or variants failed to load */
-  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
+  'compare-version.error.loadVersions.title': '加载版本失败',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': '没有其他版本的文档可以比较。',
