@@ -338,6 +338,8 @@ export default removeUndefinedLocaleResources({
     'Değer hatası: Değer "<code>{{actualType}}</code>" tipindedir, beklenen "<code>{{expectedType}}</code>"',
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Başlıksız',
+  /** The label displayed to indicate a document's value is different to its base variant. */
+  'changes.from-base-variant.label': 'Temel varyanttan değiştirildi',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Kırpma değişti',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -432,6 +434,8 @@ export default removeUndefinedLocaleResources({
   'common.dialog.cancel-button.text': 'İptal',
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': 'Onayla',
+  /** Default text in shared error text */
+  'common.error': 'Hata',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Yükleniyor',
   /** The title of the reconnecting toast */
