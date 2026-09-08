@@ -153,7 +153,8 @@ export default removeUndefinedLocaleResources({
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Сравнить черновик',
   /** Tooltip when compare draft is disabled because the published document does not exist */
-  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
+  'banners.obsolete-draft.actions.compare-draft.tooltip':
+    'Опубликованный документ не существует, поэтому этот черновик нельзя сравнить.',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Отменить черновик',
   /** The label for the "publish draft" action */
@@ -325,7 +326,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Не удалось загрузить релизы',
   /** The error message shown when document versions or variants failed to load */
-  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
+  'compare-version.error.loadVersions.title': 'Не удалось загрузить версии',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'Нет других версий этого документа для сравнения.',
