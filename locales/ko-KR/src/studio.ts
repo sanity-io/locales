@@ -337,7 +337,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': '제목 없음',
   /** The label displayed to indicate a document's value is different to its base variant. */
-  'changes.from-base-variant.label': undefined, // 'Changed from base variant'
+  'changes.from-base-variant.label': '기본 변형에서 변경됨',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': '크롭 변경됨',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -433,7 +433,7 @@ export default removeUndefinedLocaleResources({
   /** Default text for dialog confirm button */
   'common.dialog.confirm-button.text': '확인',
   /** Default text in shared error text */
-  'common.error': undefined, // 'Error'
+  'common.error': '오류',
   /** Default text in shared loader text / spinner lockup */
   'common.loading': '로딩 중',
   /** The title of the reconnecting toast */
