@@ -114,9 +114,9 @@ export default removeUndefinedLocaleResources({
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': '打开评论操作菜单',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */
-  'list-item.origin.draft': undefined, // 'From draft'
+  'list-item.origin.draft': '来自草稿',
   /** Badge shown when a comment was created on the published document but is viewed elsewhere */
-  'list-item.origin.published': undefined, // 'From published'
+  'list-item.origin.published': '来自已发布内容',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': '重新打开',
   /** The button aria label to re-open a comment that is resolved */
