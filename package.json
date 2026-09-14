@@ -67,7 +67,7 @@
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.120.0",
     "@changesets/changelog-github": "^1.0.0",
-    "@changesets/cli": "^3.0.1",
+    "@changesets/cli": "^3.0.2",
     "@sanity/tsconfig": "^2.2.1",
     "@types/js-yaml": "^4.0.9",
     "dotenv": "^17.4.2",
