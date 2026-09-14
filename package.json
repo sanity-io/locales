@@ -71,7 +71,7 @@
     "@sanity/tsconfig": "^2.2.1",
     "@types/js-yaml": "^4.0.9",
     "dotenv": "^17.4.2",
-    "expect": "^30.4.1",
+    "expect": "^30.5.1",
     "knip": "^6.34.0",
     "oxlint": "^1.79.0",
     "oxlint-tsgolint": "^7.0.2001",
