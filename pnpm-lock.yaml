@@ -91,7 +91,7 @@ importers:
         specifier: ^17.4.2
         version: 17.4.2
       expect:
-        specifier: ^30.4.1
+        specifier: ^30.5.1
         version: 30.5.1
       knip:
         specifier: ^6.34.0
