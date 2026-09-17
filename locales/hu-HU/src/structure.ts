@@ -155,7 +155,8 @@ export default removeUndefinedLocaleResources({
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Vázlat összehasonlítása',
   /** Tooltip when compare draft is disabled because the published document does not exist */
-  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
+  'banners.obsolete-draft.actions.compare-draft.tooltip':
+    'A közzétett dokumentum nem létezik, ezért ez a piszkozat nem hasonlítható össze.',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Vázlat elvetése',
   /** The label for the "publish draft" action */
@@ -340,7 +341,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Nem sikerült betölteni a kiadásokat',
   /** The error message shown when document versions or variants failed to load */
-  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
+  'compare-version.error.loadVersions.title': 'Nem sikerült betölteni a verziókat',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason':
