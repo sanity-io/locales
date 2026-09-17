@@ -338,7 +338,7 @@ export default removeUndefinedLocaleResources({
   'presence.tooltip.one':
     '{{displayName}} redigerer dette dokument i releasen "{{releaseTitle}}" lige nu',
   /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  'presence.tooltip.one-without-release': '{{displayName}} redigerer dette dokument lige nu',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Der er ingen dokumenter at publicere',
