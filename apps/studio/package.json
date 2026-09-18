@@ -15,7 +15,7 @@
     "start": "sanity start"
   },
   "dependencies": {
-    "@sanity/icons": "^5.2.1",
+    "@sanity/icons": "^5.2.2",
     "@sanity/locale-be-by": "workspace:*",
     "@sanity/locale-ca-es": "workspace:*",
     "@sanity/locale-cs-cz": "workspace:*",
@@ -47,8 +47,8 @@
     "@sanity/locale-vi-vn": "workspace:*",
     "@sanity/locale-zh-hans": "workspace:*",
     "@sanity/locale-zh-hant": "workspace:*",
-    "@sanity/ui": "^4.2.0",
-    "@sanity/vision": "^6.13.0",
+    "@sanity/ui": "^4.2.1",
+    "@sanity/vision": "^6.14.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "sanity": "^6.13.0",
