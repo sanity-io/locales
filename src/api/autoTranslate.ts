@@ -530,7 +530,7 @@ export async function pushChanges(options: {
   async function writeChangeset(locale: Locale) {
     const fileName = `auto-translate-${locale.id.toLowerCase()}.md`
     const changesetPath = joinPath(rootPath, '.changeset', fileName)
-    const content = `---\n"${locale.packageName}": patch\n---\n\nAutomated translation updates\n`
+    const content = `---\n'${locale.packageName}': patch\n---\n\nAutomated translation updates\n`
     await writeFile(changesetPath, content)
     return changesetPath
   }
