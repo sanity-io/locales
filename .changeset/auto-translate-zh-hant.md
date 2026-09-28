@@ -1,5 +1,5 @@
 ---
-"@sanity/locale-zh-hant": patch
+'@sanity/locale-zh-hant': patch
 ---
 
 Automated translation updates
