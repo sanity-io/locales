@@ -2,118 +2,124 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Action text for adding a document to release */
-  'action.add-document': 'Қосу құжатты',
+  'action.add-document': 'Добавить документ',
   /** Action text for archiving a release */
-  'action.archive': 'Мұрағатқа жіберу',
+  'action.archive': 'Архивировать релиз',
   /** Tooltip for when the archive release action is disabled due to release being scheduled  */
-  'action.archive.tooltip': 'Мұрағатқа жіберу үшін осы релизді жоспардан алып тастаңыз',
+  'action.archive.tooltip': 'Чтобы архивировать этот релиз, отмените его планирование',
   /** Action text for showing the archived releases */
-  'action.archived': 'Мұрағатталған',
+  'action.archived': 'В архиве',
   /** Menu item label for copying release ID */
-  'action.copy-release-id.label': 'Релиз идентификаторын көшіру',
+  'action.copy-release-id.label': 'Копировать ID релиза',
   /** Menu item label for copying release URL */
-  'action.copy-release-link.label': 'Релиз URL мекенжайын көшіру',
+  'action.copy-release-link.label': 'Копировать URL релиза',
   /** Menu item label for copying release title */
-  'action.copy-release-title.label': 'Релиз атауын көшіру',
+  'action.copy-release-title.label': 'Копировать название релиза',
   /** Tooltip for copy release actions button */
-  'action.copy-release.label': 'Көшіру',
+  'action.copy-release.label': 'Копировать',
   /** Action text for staging a new revert release */
-  'action.create-revert-release': 'Жаңа релиз жасау',
+  'action.create-revert-release': 'Создать новый релиз',
   /** Action text for deleting a release */
-  'action.delete-release': 'Релизді жою',
+  'action.delete-release': 'Удалить релиз',
   /** Menu item label for showing scheduled drafts */
-  'action.drafts': 'Жоспарланған жобалар',
+  'action.drafts': 'Запланированные черновики',
   /** Action text for duplicating a release */
-  'action.duplicate-release': 'Релизді көшірмелеу',
+  'action.duplicate-release': 'Дублировать релиз',
   /** Action text for editing a release */
-  'action.edit': 'Релизді өңдеу',
+  'action.edit': 'Редактировать релиз',
   /** Action text for reverting a release immediately without staging changes */
-  'action.immediate-revert-release': 'Қазір қайтару',
+  'action.immediate-revert-release': 'Откатить сейчас',
   /** Action text for opening a release */
-  'action.open': 'Белсенді',
+  'action.open': 'Активные',
   /** Action text for showing the paused scheduled drafts */
-  'action.paused': 'Тоқтатылған',
+  'action.paused': 'Приостановленные',
   /** Action text for publishing all documents in a release (and the release itself) */
-  'action.publish-all-documents': 'Релизді іске қосу',
+  'action.publish-all-documents': 'Выпустить релиз',
   /** Menu item label for showing releases (multi-document releases) */
-  'action.releases': 'Релиздер',
+  'action.releases': 'Релизы',
   /** Action text for reverting a release */
-  'action.revert': 'Релизді қайтару',
+  'action.revert': 'Откатить релиз',
   /** Action message for when document is scheduled for unpublishing a document and you want to no longer unpublish it */
-  'action.revert-unpublish-actions': 'Релиз кезінде жариялаудан алуды болдырмау',
+  'action.revert-unpublish-actions': 'Отменить снятие с публикации при выпуске',
   /** Text for the review changes button in release tool */
-  'action.review': 'Өзгерістерді қарау',
+  'action.review': 'Просмотреть изменения',
   /** Action text for scheduling a release */
-  'action.schedule': 'Релизді жоспарлау...',
+  'action.schedule': 'Запланировать релиз...',
   /** Action text for scheduling unpublish of a draft document */
-  'action.schedule-unpublish': 'Жариялаудан алуды жоспарлау',
+  'action.schedule-unpublish': 'Запланировать снятие с публикации',
   /** Tooltip text for when schedule unpublish is disabled because document is not published */
   'action.schedule-unpublish.disabled.not-published':
-    'Жариялаудан алуды жоспарлау үшін құжат жарияланған болуы керек',
+    'Чтобы запланировать снятие с публикации, документ должен быть опубликован',
   /** Label for unarchiving a release */
-  'action.unarchive': 'Мұрағаттан шығару',
+  'action.unarchive': 'Разархивировать релиз',
   /** Action text for unpublishing a document in a release in the context menu */
   'action.unpublish': 'Снять с публикации',
   /** Action message for scheduling an unpublished of a document  */
   'action.unpublish-doc-actions': 'Снять с публикации при выпуске',
   /** Action text for unscheduling a release */
-  'action.unschedule': 'Отменить расписание выпуска',
+  'action.unschedule': 'Отменить планирование релиза',
 
   /** Text for the summary button in release tool */
   'actions.summary': 'Сводка',
 
   'activity.event.add-document': 'Добавлена версия документа',
-  'activity.event.archive': 'Выпуск <strong>{{releaseTitle}}</strong> архивирован',
+  'activity.event.archive': 'Релиз <strong>{{releaseTitle}}</strong> архивирован',
   'activity.event.create':
-    'Создан выпуск <strong>{{releaseTitle}}</strong> <ScheduleTarget>с целевым временем </ScheduleTarget>',
+    'Создан релиз <strong>{{releaseTitle}}</strong> <ScheduleTarget>с целевым временем </ScheduleTarget>',
   'activity.event.discard-document': 'Версия документа удалена',
-  'activity.event.edit': 'Время выпуска установлено на <ScheduleTarget></ScheduleTarget>',
+  'activity.event.edit': 'Время релиза установлено на <ScheduleTarget></ScheduleTarget>',
   /**The text to display in the changes when the release type changes to asap */
   'activity.event.edit-time-asap': 'Как можно скорее',
   /**The text to display in the changes when the release type changes to undecided */
   'activity.event.edit-time-undecided': 'Не определено',
-  'activity.event.publish': 'Выпуск <strong>{{releaseTitle}}</strong> опубликован',
+  'activity.event.publish': 'Релиз <strong>{{releaseTitle}}</strong> опубликован',
   'activity.event.schedule': 'Отмечен как запланированный',
   /** The text for the activity event when the release is unarchived */
-  'activity.event.unarchive': 'Выпуск <strong>{{releaseTitle}}</strong> разархивирован',
+  'activity.event.unarchive': 'Релиз <strong>{{releaseTitle}}</strong> разархивирован',
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Отмечен как незапланированный',
   /** Tooltip/label for the button that closes the activity overlay panel */
   'activity.panel.close': 'Закрыть активность',
   /** The loading text for when releases are loading */
-  'activity.panel.error': 'Произошла ошибка при получении активности выпуска',
+  'activity.panel.error': 'Произошла ошибка при получении активности релиза',
   /** The loading text for when releases are loading */
-  'activity.panel.loading': 'Загрузка активности выпуска',
+  'activity.panel.loading': 'Загрузка активности релиза',
   /** The title for the activity panel shown in the releases detail screen */
   'activity.panel.title': 'Активность',
 
   /** Label for the button to proceed with archiving a release */
-  'archive-dialog.confirm-archive-button': 'Да, архивировать выпуск',
+  'archive-dialog.confirm-archive-button': 'Да, архивировать релиз',
   /** Description for the dialog confirming the archive of a release with one document */
   'archive-dialog.confirm-archive-description_one':
-    'Это приведёт к архивированию 1 версии документа.',
+    'Это приведет к архивированию 1 версии документа.',
+  /** Description for the dialog confirming the archive of a release with more than one document */
+  'archive-dialog.confirm-archive-description_other':
+    'Будут архивированы версии документов: {{count}}.',
   /** Header for the dialog confirming the archive of a release */
-  'archive-dialog.confirm-archive-header': 'Вы уверены, что хотите архивировать этот выпуск?',
+  'archive-dialog.confirm-archive-header': 'Вы уверены, что хотите архивировать этот релиз?',
   /** Title for the dialog confirming the archive of a release */
   'archive-dialog.confirm-archive-title':
-    "Вы уверены, что хотите архивировать выпуск <strong>'{{title}}'</strong>?",
+    "Вы уверены, что хотите архивировать релиз <strong>'{{title}}'</strong>?",
 
   /** Description for information card on a published or archived release to description retention effects */
   'archive-info.description':
-    'Он будет доступен в течение {{retentionDays}} дней, затем автоматически удалён {{removalDate}}. <Link>Узнать о хранении данных</Link>.',
+    'Он будет доступен в течение {{retentionDays}} дней, затем автоматически удален {{removalDate}}. <Link>Узнать о хранении данных</Link>.',
   /** Title for information card on a archived release */
-  'archive-info.title': 'Этот выпуск архивирован',
+  'archive-info.title': 'Этот релиз архивирован',
 
   /** Banner text showing count of active scheduled drafts requiring confirmation with one draft */
   'banner.confirm-active-scheduled-drafts_one':
-    'Есть {{count}} Запланированный черновик, требующий подтверждения расписания',
+    '{{count}} запланированный черновик требует подтверждения расписания',
+  /** Banner text showing count of active scheduled drafts requiring confirmation with multiple drafts */
+  'banner.confirm-active-scheduled-drafts_other':
+    'Запланированных черновиков, требующих подтверждения расписания: {{count}}',
   /** Button text for confirming scheduling of active drafts */
   'banner.confirm-active-scheduled-drafts.button': 'Возобновить планирование',
   /** Button text when confirming schedules from paused mode */
   'banner.confirm-active-scheduled-drafts.button-paused': 'Возобновить все расписания',
   /** Banner text shown when drafts mode is disabled but there are still scheduled drafts */
   'banner.drafts-mode-disabled':
-    'Режим черновиков отключён, но есть запланированные черновики, ожидающие публикации.',
+    'Режим черновиков отключен, но есть запланированные черновики, ожидающие публикации.',
   /** Banner text shown when navigating to a release that does not exist */
   'banner.release-not-found': 'Этот релиз не найден',
   /** Tooltip for the dismiss button in the release not found banner */
@@ -129,12 +135,12 @@ export default removeUndefinedLocaleResources({
   'confirm-active-scheduled-drafts-dialog.confirm-button': 'Подтвердить расписания',
   /** Dialog description for confirming active scheduled drafts */
   'confirm-active-scheduled-drafts-dialog.description':
-    'Запланировать все приостановленные Scheduled Drafts на предполагаемые даты публикации',
+    'Запланировать все приостановленные запланированные черновики на их плановые даты публикации',
   /** Dialog warning when some scheduled drafts have past dates */
   'confirm-active-scheduled-drafts-dialog.past-dates-warning':
-    'Некоторые из этих Scheduled Drafts запланированы на прошедшие даты. Подтверждение расписаний немедленно опубликует эти версии документов.',
+    'Некоторые из этих черновиков запланированы на прошедшие даты. После подтверждения расписаний эти версии документов будут сразу опубликованы.',
   /** Dialog title for confirming active scheduled drafts */
-  'confirm-active-scheduled-drafts-dialog.title': 'Возобновить Scheduled Drafts',
+  'confirm-active-scheduled-drafts-dialog.title': 'Возобновить запланированные черновики',
 
   /** Suffix for when a release is a copy of another release */
   'copy-suffix': 'Копия',
@@ -165,7 +171,7 @@ export default removeUndefinedLocaleResources({
   /** Status badge value when one or more documents have validation errors. */
   'dashboard.details.metadata.status-errors': 'Ошибки',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': 'Действительно',
+  'dashboard.details.metadata.status-valid': 'Без ошибок',
   /** Status badge value while document validation is still running. */
   'dashboard.details.metadata.status-validating': 'Проверка',
   /** Text for the releases detail screen in the pin release button. */
@@ -181,11 +187,13 @@ export default removeUndefinedLocaleResources({
   'delete-dialog.confirm-delete-button': 'Да, удалить релиз',
   /** Description for the dialog confirming the deleting of a release with one document */
   'delete-dialog.confirm-delete-description_one': 'Это удалит 1 версию документа.',
+  /** Description for the dialog confirming the deleting of a release with more than one document */
+  'delete-dialog.confirm-delete-description_other': 'Будут удалены версии документов: {{count}}.',
   /** Header for deleting a release dialog */
   'delete-dialog.confirm-delete.header': 'Вы уверены, что хотите удалить этот релиз?',
 
   /** Label when a release has been deleted by a different user */
-  'deleted-release': "Релиз '<strong>{{title}}</strong>' был удалён",
+  'deleted-release': "Релиз '<strong>{{title}}</strong>' был удален",
 
   /** Text for when there's no changes in a release diff */
   'diff.list-empty': 'Список изменений пуст, смотрите документ',
@@ -194,10 +202,10 @@ export default removeUndefinedLocaleResources({
 
   /** Description for discarding a draft of a document dialog */
   'discard-version-dialog.description-draft':
-    'Это навсегда удалит все изменения, внесённые в этот документ. Это действие нельзя отменить.',
+    'Это навсегда удалит все изменения, внесенные в этот документ. Это действие нельзя отменить.',
   /** Description for discarding a version of a document dialog */
   'discard-version-dialog.description-release':
-    "Это навсегда удалит все изменения, внесённые в этот документ в рамках релиза '<strong>{{releaseTitle}}</strong>'. Это действие нельзя отменить.",
+    "Это навсегда удалит все изменения, внесенные в этот документ в рамках релиза '<strong>{{releaseTitle}}</strong>'. Это действие нельзя отменить.",
   /** Title for dialog for discarding a draft of a document */
   'discard-version-dialog.header-draft': 'Отменить черновик?',
   /** Header for discarding a version from a release of a document dialog */
@@ -210,14 +218,19 @@ export default removeUndefinedLocaleResources({
 
   /** Label for when a document in a release has a single validation warning */
   'document-validation.error_one': '{{count}} ошибка валидации',
+  /** Label for when a document in a release has multiple validation warnings */
+  'document-validation.error_other': 'Ошибок валидации: {{count}}',
   /** Tooltip for the validation status when a document has no errors (the "ready" state) */
-  'document-validation.valid': 'Нет ошибок проверки',
+  'document-validation.valid': 'Нет ошибок валидации',
 
   /** Label for the button to proceed with duplicating a release */
   'duplicate-dialog.confirm-duplicate-button': 'Да, дублировать релиз',
   /** Description for the dialog confirming the duplicate of a release with one document */
   'duplicate-dialog.confirm-duplicate-description_one':
     'Это продублирует релиз и 1 версию документа.',
+  /** Description for the dialog confirming the duplicate of a release with more than one document */
+  'duplicate-dialog.confirm-duplicate-description_other':
+    'Будут продублированы релиз и версии документов ({{count}}).',
   /** Header for the dialog confirming the duplicate of a release */
   'duplicate-dialog.confirm-duplicate-header': 'Вы уверены, что хотите дублировать этот релиз?',
 
@@ -243,7 +256,7 @@ export default removeUndefinedLocaleResources({
   /**The text that will be shown in the footer to indicate the time the release was created */
   'footer.status.created': 'Создан',
   /**The text that will be shown in the footer to indicate the time the release was created */
-  'footer.status.edited': 'Изменён',
+  'footer.status.edited': 'Изменен',
   /**The text that will be shown in the footer to indicate the time the release was published */
   'footer.status.published': 'Опубликован',
   /**The text that will be shown in the footer to indicate the time the release was unarchived */
@@ -256,7 +269,7 @@ export default removeUndefinedLocaleResources({
   'loading-release-documents': 'Загрузка документов',
   /** Description text for when loading documents on a release failed */
   'loading-release-documents.error.description':
-    'Нам не удаётся загрузить документы для этого релиза. Пожалуйста, повторите попытку позже.',
+    'Нам не удается загрузить документы для этого релиза. Пожалуйста, повторите попытку позже.',
   /** Title text for when loading documents on a release failed */
   'loading-release-documents.error.title': 'Что-то пошло не так',
 
@@ -295,10 +308,11 @@ export default removeUndefinedLocaleResources({
   'overview.title': 'Релизы',
 
   /** Tooltip text for releases that have passed their intended publish date */
-  'passed-intended-publish-date': 'Этот релиз прошёл запланированную дату публикации',
+  'passed-intended-publish-date': 'Запланированная дата публикации этого релиза уже прошла',
 
   /** Tooltip text for scheduled drafts that have passed their intended publish date */
-  'passed-intended-publish-date-draft': 'Этот черновик прошёл запланированную дату публикации',
+  'passed-intended-publish-date-draft':
+    'Запланированная дата публикации этого черновика уже прошла',
 
   /** Description for when a user doesn't have publish or schedule releases */
   'permission-missing-description':
@@ -325,6 +339,8 @@ export default removeUndefinedLocaleResources({
     '{{displayName}} сейчас редактирует этот документ в релизе «{{releaseTitle}}»',
   /** Tooltip text for when one user is editing a published or draft document */
   'presence.tooltip.one-without-release': '{{displayName}} сейчас редактирует этот документ',
+  /** Tooltip text for when multiple users are editing a document in a release */
+  'presence.tooltip.other': 'Этот документ сейчас редактируют пользователи: {{count}}',
 
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Нет документов для публикации',
@@ -332,14 +348,20 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the publish of a release with one document */
   'publish-dialog.confirm-publish-description_one':
     "Релиз '<strong>{{title}}</strong>' и его документ будут опубликованы.",
+  /** Description for the dialog confirming the publish of a release with multiple documents */
+  'publish-dialog.confirm-publish-description_other':
+    "Релиз '<strong>{{title}}</strong>' и его документы ({{releaseDocumentsLength}}) будут опубликованы.",
   /** Title for the dialog confirming the publish of a release */
   'publish-dialog.confirm-publish.title':
     'Вы уверены, что хотите опубликовать релиз и все версии документов?',
   /** Label for the checkbox in the publish confirmation dialog for also updating existing drafts to match the release */
-  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Бар жобаларды жаңарту',
+  'publish-dialog.confirm-publish.update-drafts-checkbox': 'Обновить существующие черновики',
   /** Description for the update existing drafts checkbox when one document has an existing draft */
   'publish-dialog.confirm-publish.update-drafts-description_one':
-    '{{draftDocumentsLength}} құжаттың бар жобасы жойылады, сонда жобалар жарияланған релизге сәйкес келеді. Жарияланбаған жоба өзгерістері жоғалады.',
+    'Существующий черновик документа ({{draftDocumentsLength}}) будет удален, чтобы черновики соответствовали опубликованному релизу. Неопубликованные изменения черновика будут потеряны.',
+  /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
+  'publish-dialog.confirm-publish.update-drafts-description_other':
+    'Существующие черновики документов ({{draftDocumentsLength}}) будут удалены, чтобы черновики соответствовали опубликованному релизу. Неопубликованные изменения черновиков будут потеряны.',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'Некоторые документы содержат ошибки валидации',
   /** Label for when documents are being validated */
@@ -356,6 +378,9 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_one':
     'Это откатит {{releaseDocumentsLength}} версию документа.',
+  /** Description for the dialog confirming the revert of a release with multiple documents */
+  'revert-dialog.confirm-revert-description_other':
+    'Будут откачены версии документов: {{releaseDocumentsLength}}.',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Немедленно откатить релиз',
   /** Title for the dialog confirming the revert of a release */
@@ -394,6 +419,9 @@ export default removeUndefinedLocaleResources({
   /** Description shown in unschedule relaease dialog */
   'schedule-dialog.confirm-description_one':
     "Релиз '<strong>{{title}}</strong>' и его документ будут опубликованы в выбранную дату.",
+  /** Description for the dialog confirming the publish of a release with multiple documents */
+  'schedule-dialog.confirm-description_other':
+    'Релиз <strong>{{title}}</strong> и его версии документов ({{count}}) будут запланированы.',
   /** Title for unschedule release dialog */
   'schedule-dialog.confirm-title': 'Запланировать релиз',
   /** Description for warning that the published schedule time is in the past */
@@ -407,7 +435,7 @@ export default removeUndefinedLocaleResources({
   'schedule-unpublish-dialog.description':
     'Выберите, когда этот документ должен быть снят с публикации.',
   /** Header for the schedule unpublish dialog */
-  'schedule-unpublish-dialog.header': 'Запланировать черновик для снятия с публикации',
+  'schedule-unpublish-dialog.header': 'Запланировать снятие с публикации',
 
   /** Placeholder for search of documents in a release */
   'search-documents-placeholder': 'Поиск документов',
@@ -420,6 +448,8 @@ export default removeUndefinedLocaleResources({
   'summary.created': 'Создано <RelativeTime/>',
   /** Text for when the release is composed of one document */
   'summary.document-count_one': '{{count}} документ',
+  /** Text for when the release is composed of multiple documents */
+  'summary.document-count_other': 'Документов: {{count}}',
   /** Text for when the release has some errors found */
   'summary.errors-found':
     'Для публикации или планирования релиза, пожалуйста, устраните проблемы, обнаруженные в документах',
@@ -427,7 +457,7 @@ export default removeUndefinedLocaleResources({
   'summary.no-documents': 'Нет документов',
   /** Description for the empty state when a cardinality-one release has no documents */
   'summary.no-documents-cardinality-one.description':
-    'Этот запланированный черновик не содержит документа. Возможно, он был удалён.',
+    'Этот запланированный черновик не содержит документа. Возможно, он был удален.',
   /** Title for the empty state when a cardinality-one release has no documents */
   'summary.no-documents-cardinality-one.title': 'Нет документа в этом релизе',
   /** Text for when the release has not published */
@@ -435,7 +465,7 @@ export default removeUndefinedLocaleResources({
   /** Text for when the release was published */
   'summary.published': 'Опубликовано <RelativeTime/>',
   /** Text for when the release has validated documents */
-  'summary.validated-documents': '{{validatedCount}} из {{totalCount}} документов проверено',
+  'summary.validated-documents': 'Проверено документов: {{validatedCount}} из {{totalCount}}',
   /** Text for validation loading indicator */
   'summary.validating-documents': 'Проверка документов: {{validatedCount}} из {{totalCount}}',
 
@@ -453,73 +483,72 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - contributors */
   'table-header.contributors': 'Участники',
   /** Header for the document table in the release tool - created by */
-  'table-header.created-by': 'Создано',
+  'table-header.created-by': 'Автор',
   /** Header for the document table in the release tool - document preview */
   'table-header.document': 'Документ',
   /** Header for the document table in the release tool - title */
-  'table-header.documents': 'Документтер',
+  'table-header.documents': 'Документы',
   /** Header for the document table in the release tool - edited */
-  'table-header.edited': 'Өңделген',
+  'table-header.edited': 'Изменено',
   /** Header for the document table - last editor (person) column */
   'table-header.edited-by': 'Кем изменено',
   /** Header for the paused scheduled drafts table - intended for */
-  'table-header.intended-for': 'Арналған',
+  'table-header.intended-for': 'Плановое время',
   /** Header for the document table - last edited (relative time) column */
   'table-header.last-edited': 'Последнее изменение',
   /** Header for the document table in the release tool - Published */
-  'table-header.published-at': 'Жарияланған',
+  'table-header.published-at': 'Опубликовано',
   /** Header for the document table in the release tool - Published */
-  'table-header.publishedAt': 'Жарияланған',
+  'table-header.publishedAt': 'Опубликовано',
   /** Header for the scheduled drafts document table in the release tool - published at */
-  'table-header.scheduled-draft.published-at': 'Жарияланған уақыты',
+  'table-header.scheduled-draft.published-at': 'Время публикации',
   /** Header for the scheduled drafts document table in the release tool - scheduled for */
-  'table-header.scheduled-for': 'Жоспарланған уақыт',
+  'table-header.scheduled-for': 'Запланировано на',
   /** Header for the document table in the release tool - time */
-  'table-header.time': 'Уақыт',
+  'table-header.time': 'Время',
   /** Header for the  document table in the release tool - release title */
-  'table-header.title': 'Release',
+  'table-header.title': 'Релиз',
   /** Header for the document table in the release tool - type */
-  'table-header.type': 'Түрі',
+  'table-header.type': 'Тип',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
   'table-header.variant': 'Вариант',
   /** Header for the document table in the release tool - when */
-  'table-header.when': 'Қашан',
+  'table-header.when': 'Когда',
 
   /** Text for the release time label for scheduled releases  which has not been scheduled yet*/
-  'time.estimated': 'Болжамды',
+  'time.estimated': 'Ориентировочно',
   /** Text for the release time label for scheduled releases  which has been scheduled*/
-  'time.scheduled': 'Жоспарланған',
+  'time.scheduled': 'Запланировано',
 
   /** Text for toast when release failed to archive */
-  'toast.archive.error': "'<strong>{{title}}</strong>' мұрағатқа салу сәтсіз аяқталды: {{error}}",
+  'toast.archive.error': "Не удалось архивировать '<strong>{{title}}</strong>': {{error}}",
   /** Toast error message when bulk scheduling of active drafts fails */
-  'toast.confirm-active-scheduled-drafts.error': 'Жобаларды жоспарлау сәтсіз аяқталды: {{error}}',
+  'toast.confirm-active-scheduled-drafts.error': 'Не удалось запланировать черновики: {{error}}',
   /** Toast message after copying release ID */
-  'toast.copy-release-id.success': 'Release идентификаторы алмасу буферіне көшірілді',
+  'toast.copy-release-id.success': 'ID релиза скопирован в буфер обмена',
   /** Toast message after copying release link */
-  'toast.copy-release-link.success': 'Release сілтемесі алмасу буферіне көшірілді',
+  'toast.copy-release-link.success': 'Ссылка на релиз скопирована в буфер обмена',
   /** Toast message after copying release title */
-  'toast.copy-release-title.success': 'Release атауы алмасу буферіне көшірілді',
+  'toast.copy-release-title.success': 'Название релиза скопировано в буфер обмена',
   /** Description for toast when creating new version of document in release failed */
-  'toast.create-version.error': 'Документті release-ке қосу сәтсіз аяқталды: {{error}}',
+  'toast.create-version.error': 'Не удалось добавить документ в релиз: {{error}}',
   /** Description for toast when release deletion failed */
-  'toast.delete.error': "'<strong>{{title}}</strong>' жою сәтсіз аяқталды: {{error}}",
+  'toast.delete.error': "Не удалось удалить '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully deleted */
-  'toast.delete.success': "'<strong>{{title}}</strong>' release сәтті жойылды",
+  'toast.delete.success': "Релиз '<strong>{{title}}</strong>' успешно удален",
   /** Description for toast when release duplication failed */
-  'toast.duplicate.error':
-    "'<strong>{{title}}</strong>' көшірмесін жасау сәтсіз аяқталды: {{error}}",
+  'toast.duplicate.error': "Не удалось дублировать '<strong>{{title}}</strong>': {{error}}",
   /** Description for toast when release is successfully duplicated */
-  'toast.duplicate.success': "'<strong>{{title}}</strong>' release көшірмесі жасалды. <Link/>",
+  'toast.duplicate.success': "Релиз '<strong>{{title}}</strong>' продублирован. <Link/>",
   /** Link text for toast link to the duplicated release */
-  'toast.duplicate.success-link': 'Көшірілген release-ті қарау',
+  'toast.duplicate.success-link': 'Просмотреть копию релиза',
   /** Text for toast when release has been reverted immediately */
-  'toast.immediate-revert.success': "Релиз '{{title}}' успешно откатан",
+  'toast.immediate-revert.success': "Релиз '{{title}}' успешно откачен",
   /** Text for toast when release failed to publish */
   'toast.publish.error': "Не удалось опубликовать '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
   'toast.publish.update-drafts-error':
-    'Релиз жарияланды, бірақ бар жобаларды жаңарту мүмкін болмады: {{error}}',
+    'Релиз опубликован, но не удалось обновить существующие черновики: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "Откат релиза для '{{title}}' успешно создан. <Link/>",
   /** Link text for toast link to the generated revert release */
@@ -542,24 +571,25 @@ export default removeUndefinedLocaleResources({
   /** Text action in unpublish dialog to cancel */
   'unpublish-dialog.action.cancel': 'Отмена',
   /** Text action in unpublish dialog to unpublish */
-  'unpublish-dialog.action.unpublish': 'Иә, жариялауды тоқтату кезінде алып тастау',
+  'unpublish-dialog.action.unpublish': 'Да, снять с публикации при выпуске',
   /** Description for unpublish dialog, explaining that all changes made to this document will be lost */
   'unpublish-dialog.description.lost-changes':
-    'Осы құжат нұсқасына енгізілген барлық өзгерістер жоғалады.',
+    'Все изменения в этой версии документа будут потеряны.',
   /** Description for the unpublish dialog, explaining that it will create a draft if no draft exists at time of release */
   'unpublish-dialog.description.to-draft':
-    'Бұл құжатты <Label>{{title}}</Label> релизінің бөлігі ретінде жарияланымнан алып тастайды және релиз кезінде жоба болмаса, жоба жасайды.',
+    'Документ будет снят с публикации в рамках релиза <Label>{{title}}</Label>. Если на момент выпуска черновика нет, он будет создан.',
   /** Title for the dialog confirming the unpublish of a release */
   'unpublish-dialog.header':
-    'Релиз кезінде бұл құжатты жарияланымнан алып тастағыңыз келетініне сенімдісіз бе?',
+    'Вы уверены, что хотите снять этот документ с публикации при выпуске релиза?',
 
   /** Text for when a document is unpublished */
-  'unpublish.already-unpublished': 'Бұл құжат әлдеқашан жарияланымнан алып тасталған.',
+  'unpublish.already-unpublished': 'Этот документ уже снят с публикации.',
   /** Tooltip label for when a document is unpublished */
-  'unpublish.no-published-version': 'Бұл құжаттың жарияланған нұсқасы жоқ.',
+  'unpublish.no-published-version': 'У этого документа нет опубликованной версии.',
 
   /** Description shown in unschedule relaease dialog */
-  'unschedule-dialog.confirm-description': 'Релиз жоспарланған күні енді жарияланбайды',
+  'unschedule-dialog.confirm-description':
+    'Релиз больше не будет опубликован в запланированную дату',
   /** Title for unschedule release dialog */
-  'unschedule-dialog.confirm-title': 'Релиздің жоспарлауын шынымен тоқтатқыңыз келе ме?',
+  'unschedule-dialog.confirm-title': 'Вы уверены, что хотите отменить планирование релиза?',
 })

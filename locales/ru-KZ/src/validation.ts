@@ -2,9 +2,9 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Array must have exactly "$wantedLength" items, but has more/less */
-  'array.exact-length': 'Должно быть ровно {{wantedLength}} элементов',
+  'array.exact-length': 'Число элементов должно быть равно {{wantedLength}}',
   /** Portable Text array must have exactly "$wantedLength" blocks, but has more/less */
-  'array.exact-length_blocks': 'Должно быть ровно {{wantedLength}} блоков',
+  'array.exact-length_blocks': 'Число блоков должно быть равно {{wantedLength}}',
   /** Array item is a duplicate, but array wants only unique items */
   'array.item-duplicate': 'Не может быть дубликатом',
   /** Array has more than the maximum of "$maxLength" items */
@@ -17,20 +17,20 @@ export default removeUndefinedLocaleResources({
   'array.minimum-length_blocks': 'Должно быть не менее {{minLength}} блоков',
 
   /** Date is not valid or not in the correct format (ISO-8601) */
-  'date.invalid-format': 'Должна быть действительная строка даты в формате ISO-8601',
+  'date.invalid-format': 'Дата должна быть строкой в формате ISO-8601',
   /** Date is later than the given maximum date "$maxDate" */
-  'date.maximum': 'Должна быть до или включая {{maxDate}}',
+  'date.maximum': 'Дата должна быть не позже {{maxDate}}',
   /** Date is earlier than the given minimum date "$minDate" */
-  'date.minimum': 'Должна быть после или включая {{minDate}}',
+  'date.minimum': 'Дата должна быть не раньше {{minDate}}',
 
   /** A value of incorrect type is found, eg found `number` instead of `string` */
-  'generic.incorrect-type': 'Ожидаемый тип "{{expectedType}}", получен "{{actualType}}"',
+  'generic.incorrect-type': 'Ожидался тип "{{expectedType}}", получен "{{actualType}}"',
   /** Value is not one of the values specifically allowed */
   'generic.not-allowed': 'Значение не соответствует разрешенным',
   /** Value "$givenValue" is not one of the values specifically allowed */
   'generic.not-allowed_hint': 'Значение "{{hint}}" не соответствует разрешенным',
   /** A value is expected, but none is provided */
-  'generic.required': 'Требуется',
+  'generic.required': 'Обязательное поле',
 
   /** Number is less than the given minimum threshold value "$threshold" */
   'number.greater-than': 'Должно быть больше {{threshold}}',
@@ -39,7 +39,7 @@ export default removeUndefinedLocaleResources({
   /** Number is higher than the given maximum value "$maxNumber" */
   'number.maximum': 'Должно быть меньше или равно {{maxNumber}}',
   /** Number has more precision (decimals) than the allowed "$limit" */
-  'number.maximum-precision': 'Максимальная точность {{limit}}',
+  'number.maximum-precision': 'Максимальная точность — {{limit}}',
   /** Number is lower than the given minimum value "$minNumber" */
   'number.minimum': 'Должно быть больше или равно {{minNumber}}',
   /** Number is not an integer ("whole number") */
@@ -52,16 +52,17 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Требуется изображение',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': 'Актив не может быть найден в Медиатеке',
+  'object.media-not-found': 'Ресурс не найден в медиатеке',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': 'Должна быть ссылка на актив Медиатеки',
+  'object.not-media-library-asset': 'Должно быть ссылкой на ресурс медиатеки',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Должно быть ссылкой на документ',
   /** Object references a document which is not published */
-  'object.reference-not-published': 'Ссылка на документ должна быть опубликована',
+  'object.reference-not-published':
+    'Документ, на который указывает ссылка, должен быть опубликован',
 
   /** Accessibility label for closing the validation panel */
-  'panel.close-button-aria-label': 'Закрыть валидацию',
+  'panel.close-button-aria-label': 'Закрыть панель валидации',
   /** Message shown when the validation panel is opened but there are no errors/warnings */
   'panel.no-errors-message': 'Нет ошибок валидации',
   /** Title for the actual "Validation" panel/feature */
@@ -77,21 +78,21 @@ export default removeUndefinedLocaleResources({
   'slug.not-unique': 'Slug уже используется',
 
   /** String is not a valid email address */
-  'string.email': 'Должен быть действительным адресом электронной почты',
+  'string.email': 'Укажите действительный адрес электронной почты',
   /** String has a different character length than the exact number "$wantedLength" */
-  'string.exact-length': 'Должен быть ровно {{wantedLength}} символов в длину',
+  'string.exact-length': 'Число символов должно быть равно {{wantedLength}}',
   /** String contains characters that are not in lowercase  */
-  'string.lowercase': 'Должен состоять только из строчных букв',
+  'string.lowercase': 'Допускаются только строчные буквы',
   /** String is longer than the limit of "$maxLength" characters */
-  'string.maximum-length': 'Должен быть не более {{maxLength}} символов в длину',
+  'string.maximum-length': 'Длина должна быть не более {{maxLength}} символов',
   /** String is shorter than the limit of "$minLength" characters */
-  'string.minimum-length': 'Должен быть не менее {{minLength}} символов в длину',
+  'string.minimum-length': 'Длина должна быть не менее {{minLength}} символов',
   /** String does not match the given regular expression, but should */
   'string.regex-does-not-match': 'Не соответствует шаблону "{{name}}"',
   /** String matches the given regular expression, but should not */
-  'string.regex-match': 'Не должен соответствовать шаблону "{{name}}"',
+  'string.regex-match': 'Не должно соответствовать шаблону "{{name}}"',
   /** String contains characters that are not in uppercase */
-  'string.uppercase': 'Должен состоять только из заглавных букв',
+  'string.uppercase': 'Допускаются только заглавные буквы',
   /** String contains a protocol/scheme that is not allowed, eg (`ftp`, `mailto`…) */
   'string.url.disallowed-scheme': 'Не соответствует разрешенным протоколам/схемам',
   /** String contains a URL with a username or password specified before the host */

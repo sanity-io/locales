@@ -2,46 +2,46 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Browse button text */
-  'feedback.attachment.browse': 'Шолу',
+  'feedback.attachment.browse': 'Выбрать',
   /** Drop zone text for image attachment */
-  'feedback.attachment.drop-zone': 'Файлды осында сүйреңіз немесе қойыңыз',
+  'feedback.attachment.drop-zone': 'Перетащите или вставьте файл сюда',
   /** Error shown when attached image exceeds size limit */
-  'feedback.attachment.error.size': 'Сурет 20 МБ-тан аспауы керек',
+  'feedback.attachment.error.size': 'Размер изображения должен быть меньше 20 МБ',
   /** Label for the image attachment section */
-  'feedback.attachment.label': 'Сурет тіркеу',
+  'feedback.attachment.label': 'Прикрепить изображение',
   /** Remove attached image button text */
-  'feedback.attachment.remove': 'Жою',
+  'feedback.attachment.remove': 'Удалить',
   /** Cancel button text */
-  'feedback.cancel': 'Болдырмау',
+  'feedback.cancel': 'Отмена',
   /** Consent disclaimer shown when the user agrees to follow up */
   'feedback.consent.disclaimer':
-    'Біз көбірек білгіміз келеді. «Иә» таңдасаңыз, атыңыз бен электрондық поштаңыз Sanity командасымен бөлісіледі.',
+    'Мы будем рады узнать больше. Если вы выберете «Да», ваше имя и адрес электронной почты будут переданы команде Sanity.',
   /** Label for the contact consent toggle */
-  'feedback.consent.label': 'Осы пікір бойынша сізбен байланыса аламыз ба?',
+  'feedback.consent.label': 'Можем ли мы связаться с вами по поводу этого отзыва?',
   /** Consent toggle: no */
-  'feedback.consent.no': 'Жоқ',
+  'feedback.consent.no': 'Нет',
   /** Consent toggle: yes */
-  'feedback.consent.yes': 'Иә',
+  'feedback.consent.yes': 'Да',
   /** Title of the feedback dialog */
-  'feedback.dialog.title': 'Sanity-мен пікір бөлісу',
+  'feedback.dialog.title': 'Отправить отзыв команде Sanity',
   /** Toast message after failed submission */
-  'feedback.error': 'Пікірді жіберу қатемен сәтсіз аяқталды',
+  'feedback.error': 'Не удалось отправить отзыв',
   /** Label for "send feedback" in the help resources menu */
-  'feedback.menu-item': 'Пікір жіберу',
+  'feedback.menu-item': 'Отправить отзыв',
   /** Label for the message field */
-  'feedback.message.label': 'Не жақсы жұмыс істейді? Нені жақсартуға болады?',
+  'feedback.message.label': 'Что работает хорошо? Что можно улучшить?',
   /** Placeholder for the message field */
-  'feedback.message.placeholder': 'Мәселеңізді немесе сұрауыңызды сипаттаңыз...',
+  'feedback.message.placeholder': 'Опишите проблему или запрос...',
   /** Sentiment option: happy */
-  'feedback.sentiment.happy': 'Оңай',
+  'feedback.sentiment.happy': 'Легко',
   /** Label for the sentiment question */
-  'feedback.sentiment.label': 'Sanity пайдалану қаншалықты оңай немесе қиын?',
+  'feedback.sentiment.label': 'Насколько легко или сложно пользоваться Sanity?',
   /** Sentiment option: neutral */
-  'feedback.sentiment.neutral': 'Белгісіз',
+  'feedback.sentiment.neutral': 'Затрудняюсь ответить',
   /** Sentiment option: unhappy */
-  'feedback.sentiment.unhappy': 'Қиын',
+  'feedback.sentiment.unhappy': 'Сложно',
   /** Submit button text */
-  'feedback.submit': 'Пікір жіберу',
+  'feedback.submit': 'Отправить отзыв',
   /** Toast message after successful submission */
-  'feedback.success': 'Пікір жіберілді, рахмет!',
+  'feedback.success': 'Отзыв отправлен, спасибо!',
 })

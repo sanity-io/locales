@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
     'Для копирования этого содержимого требуется доступ к буферу обмена. Разрешите доступ к буферу обмена в настройках вашего браузера, затем попробуйте скопировать снова.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Ваш браузер не поддерживает это действие',
+    'Доступ к буферу обмена заблокирован',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Пустое значение, нечего копировать',
   /** --- On copy --- */
@@ -23,10 +23,10 @@ export default removeUndefinedLocaleResources({
     'Не удалось определить тип схемы для пути: {{path}}',
   /** The validation message that is shown when array types are incompatible */
   'copy-paste.on-paste.validation.array-type-incompatible.description':
-    'Значение типа "{{type}}" не допускается в этом массиве полей',
+    'Значение типа "{{type}}" не допускается в этом поле-массиве',
   /** The validation message that is shown when array values are incompatible */
   'copy-paste.on-paste.validation.array-value-incompatible.description':
-    'Значение типа "{{type}}" не допускается в этом массиве полей',
+    'Значение типа "{{type}}" не допускается в этом поле-массиве',
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Нечего вставлять',
   /** The validation message that is shown when the clipboard item is invalid */
@@ -45,6 +45,9 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     'Значение типа "{{type}}" не допускается в этом поле',
+  /** The validation message for skipped read-only fields when truncated */
+  'copy-paste.on-paste.validation.read-only-fields-skipped-truncated.description':
+    'Пропущены поля только для чтения: {{fieldNames}} и еще {{count}}',
   /** The validation message that is shown when read-only fields are skipped during document paste */
   'copy-paste.on-paste.validation.read-only-fields-skipped.description':
     'Пропущены поля только для чтения: {{fieldNames}}',
@@ -60,7 +63,7 @@ export default removeUndefinedLocaleResources({
     'Ссылки типа "{{sourceReferenceType}}" не допускаются в поле ссылки, которое принимает типы "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Ссылочный документ "{{ref}}" не существует',
+    'Документ "{{ref}}", на который указывает ссылка, не существует',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Исходные и целевые типы схем несовместимы',

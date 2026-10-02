@@ -10,7 +10,8 @@ export default removeUndefinedLocaleResources({
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments */
   'compose.add-comment-input-placeholder': 'Добавить комментарий к <strong>{{field}}</strong>',
   /** When composing a comment, the placeholder text shown when adding a comment to a field with no current comments and the mode is upsell */
-  'compose.add-comment-input-placeholder-upsell': 'Обновитесь, чтобы добавить комментарий',
+  'compose.add-comment-input-placeholder-upsell':
+    'Перейдите на платный план, чтобы добавить комментарий',
   /** When composing a comment, the placeholder text shown when the input is empty */
   'compose.create-comment-placeholder': 'Создать новый комментарий',
   /** When composing a comment, the aria label for the button to mention a user */
@@ -20,7 +21,7 @@ export default removeUndefinedLocaleResources({
   /** When composing a reply, the placeholder text shown when the input is empty */
   'compose.reply-placeholder': 'Ответить',
   /** When composing a reply, the placeholder text shown when the input is empty and the mode is upsell */
-  'compose.reply-placeholder-upsell': 'Обновитесь, чтобы ответить',
+  'compose.reply-placeholder-upsell': 'Перейдите на платный план, чтобы ответить',
   /** When composing a comment, the aria label for the button to send a comment */
   'compose.send-comment-aria-label': 'Отправить комментарий',
   /** When composing a comment, the tooltip text for the button to send a comment */
@@ -61,7 +62,7 @@ export default removeUndefinedLocaleResources({
   'feature-feedback.title': 'Помогите улучшить ',
 
   /** The name of the comments feature, for use in header. Capitalized, eg "Comments". */
-  'feature-name': 'Comments',
+  'feature-name': 'Комментарии',
 
   /** Aria label for button above fields to add a comment, when the field currently do not have any comments */
   'field-button.aria-label-add': 'Добавить комментарий',
@@ -69,6 +70,8 @@ export default removeUndefinedLocaleResources({
   'field-button.aria-label-open': 'Открыть комментарии',
   /** Text shown in popover when hovering the button above fields that opens the comments panel, when there is a single comment present */
   'field-button.content_one': 'Просмотреть комментарий',
+  /** Text shown in popover when hovering the button above fields that opens the comments panel, when there are more than one comment present */
+  'field-button.content_other': 'Просмотреть комментарии',
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'Добавить комментарий',
 
@@ -86,7 +89,7 @@ export default removeUndefinedLocaleResources({
   /** The button tooltip aria label for adding a reaction */
   'list-item.context-menu-add-reaction-aria-label': 'Добавить реакцию',
   /** The button tooltip content for the add reaction button and mode is upsell */
-  'list-item.context-menu-add-reaction-upsell': 'Обновите, чтобы добавить реакцию',
+  'list-item.context-menu-add-reaction-upsell': 'Перейдите на платный план, чтобы добавить реакцию',
   /** The action menu item for copying a comment link */
   'list-item.copy-link': 'Скопировать ссылку на комментарий',
   /** The action menu item for deleting a comment */
@@ -94,7 +97,7 @@ export default removeUndefinedLocaleResources({
   /** The action menu item for editing a comment */
   'list-item.edit-comment': 'Редактировать комментарий',
   /** The action menu item for editing a comment and the mode is upsell */
-  'list-item.edit-comment-upsell': 'Обновите, чтобы редактировать комментарий',
+  'list-item.edit-comment-upsell': 'Перейдите на платный план, чтобы редактировать комментарий',
   /** Aria label for the button that takes you to the field, which wraps a thread/comment */
   'list-item.go-to-field-button.aria-label': 'Перейти к полю',
   /**
@@ -124,9 +127,9 @@ export default removeUndefinedLocaleResources({
   /** The button aria label to re-open a comment that is resolved */
   'list-item.re-open-resolved-aria-label': 'Вновь открыть',
   /** The button aria label to mark a comment as resolved */
-  'list-item.resolved-tooltip-aria-label': 'Отметить комментарий как решённый',
+  'list-item.resolved-tooltip-aria-label': 'Отметить комментарий как решенный',
   /** The button text to mark a comment as resolved */
-  'list-item.resolved-tooltip-content': 'Отметить как решённый',
+  'list-item.resolved-tooltip-content': 'Отметить как решенный',
 
   /** The empty state text for open comments */
   'list-status.empty-state-open-text':
@@ -135,9 +138,9 @@ export default removeUndefinedLocaleResources({
   'list-status.empty-state-open-title': 'Пока нет открытых комментариев',
   /** The empty state text for resolved comments */
   'list-status.empty-state-resolved-text':
-    'Разрешенные комментарии к этому документу будут показаны здесь.',
+    'Здесь будут отображаться решенные комментарии к этому документу.',
   /** The empty state title for resolved comments */
-  'list-status.empty-state-resolved-title': 'Пока нет разрешенных комментариев',
+  'list-status.empty-state-resolved-title': 'Пока нет решенных комментариев',
   /** The list status message for error */
   'list-status.error': 'Что-то пошло не так',
   /** The list status message for loading status */
@@ -146,7 +149,7 @@ export default removeUndefinedLocaleResources({
   /** Text shown when no users can be found to mention */
   'mentions.no-users-found': 'Пользователи не найдены',
   /** Label/badge shown for users that are not authorized to see the document, and thus cannot be mentioned */
-  'mentions.unauthorized-user': 'Неавторизованный',
+  'mentions.unauthorized-user': 'Нет доступа',
   /** Aria label for the command list for users to mention */
   'mentions.user-list-aria-label': 'Список пользователей для упоминания',
 
@@ -154,14 +157,14 @@ export default removeUndefinedLocaleResources({
   'onboarding.body':
     'Вы можете добавлять комментарии к любому полю в документе. Они будут отображаться здесь, сгруппированные по полям.',
   /** The comments onboarding dismiss text */
-  'onboarding.dismiss': 'Понял',
+  'onboarding.dismiss': 'Понятно',
   /** The comments onboarding popover header text */
   'onboarding.header': 'Теперь у полей документов есть комментарии',
 
   /** Tooltip for the button to add a reaction to a comment */
   'reactions.add-reaction-tooltip': 'Добавить реакцию',
   /** Aria label for the individual reactions you can choose from when reacting to a comment */
-  'reactions.react-with-aria-label': 'Реагировать с {{reactionName}}',
+  'reactions.react-with-aria-label': 'Отреагировать: {{reactionName}}',
   /** When a users' name cannot be resolved, fall back to this name */
   'reactions.user-list.unknown-user-fallback-name': 'Неизвестный пользователь',
   /**
@@ -192,9 +195,10 @@ export default removeUndefinedLocaleResources({
   /** Status filter: The full text for describing filtering on open (non-resolved) comments */
   'status-filter.status-open-full': 'Открытые комментарии',
   /** Status filter: The short title describing filtering on resolved comments */
-  'status-filter.status-resolved': 'Разрешенные',
+  'status-filter.status-resolved': 'Решенные',
   /** Status filter: The full text for describing filtering on resolved comments */
-  'status-filter.status-resolved-full': 'Разрешенные комментарии',
+  'status-filter.status-resolved-full': 'Решенные комментарии',
   /** Status filter: The full text for describing filtering on resolved comments and is upsell mode */
-  'status-filter.status-resolved-full-upsell': 'Обновите, чтобы видеть разрешенные комментарии',
+  'status-filter.status-resolved-full-upsell':
+    'Перейдите на платный план, чтобы видеть решенные комментарии',
 })

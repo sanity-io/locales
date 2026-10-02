@@ -9,24 +9,24 @@ export default removeUndefinedLocaleResources({
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'Посмотреть документацию',
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': 'Отключено',
+  'about-dialog.version-info.auto-updates.disabled': 'Автообновления отключены',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': 'Включено',
+  'about-dialog.version-info.auto-updates.enabled': 'Автообновления включены',
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Автообновления',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Как включить',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Включить',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Управление версией',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Скопировано в буфер обмена. Счастливого копирования!',
+    'Скопировано в буфер обмена. Удачной вставки!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Копировать в буфер обмена',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Текущая версия',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Как обновить',
+  'about-dialog.version-info.how-to-upgrade': 'Обновить сейчас',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Последняя версия',
   /** Info text when auto updates is enabled and a new version is available */
@@ -92,7 +92,7 @@ export default removeUndefinedLocaleResources({
   'asset-source.delete-dialog.loading': 'Загрузка…',
   /** Message confirming to delete *named* file */
   'asset-source.delete-dialog.usage-list.confirm-delete-file_named':
-    'Вы собираетесь удалить файл <strong>{{filename}}}</strong> и его метаданные. Вы уверены?',
+    'Вы собираетесь удалить файл <strong>{{filename}}</strong> и его метаданные. Вы уверены?',
   /** Message confirming to delete *unnamed* file */
   'asset-source.delete-dialog.usage-list.confirm-delete-file_unnamed':
     'Вы собираетесь удалить файл и его метаданные. Вы уверены?',
@@ -118,7 +118,7 @@ export default removeUndefinedLocaleResources({
     'Это изображение не может быть удалено, так как оно используется. Чтобы удалить его, сначала нужно удалить все его использования.',
   /** Text shown when the list of assets only include a specific set of types */
   'asset-source.dialog.accept-message':
-    'Показаны только ресурсы принятых типов: <strong>{{acceptTypes}}</strong>',
+    'Показаны только ресурсы допустимых типов: <strong>{{acceptTypes}}</strong>',
   /** Select asset dialog cancel-button */
   'asset-source.dialog.button.cancel': 'Отмена',
   /** Select asset dialog select-button */
@@ -130,7 +130,7 @@ export default removeUndefinedLocaleResources({
   /** Toast title shown when the list of assets failed to load */
   'asset-source.dialog.load-error': 'Не удалось загрузить ресурсы',
   /** Select asset dialog load more items */
-  'asset-source.dialog.load-more': 'Загрузить больше',
+  'asset-source.dialog.load-more': 'Загрузить еще',
   /** Text shown when selecting a file but there's no files to select from
    * @deprecated no longer in use
    */
@@ -162,20 +162,28 @@ export default removeUndefinedLocaleResources({
   /** Built in asset source usage texts */
   'asset-source.usage-list.documents-using-file_named_one':
     'Один документ использует файл <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-file_named_other':
+    'Документов, использующих файл <code>{{filename}}</code>: {{count}}',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *named* file **/
   'asset-source.usage-list.documents-using-file_named_zero':
     'Ни один документ не использует файл <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-file_unnamed_one': 'Один документ использует этот файл',
+  'asset-source.usage-list.documents-using-file_unnamed_other':
+    'Документов, использующих этот файл: {{count}}',
   /** Text shown in usage dialog for a file asset when there are zero, one or more documents using the *unnamed* file **/
   'asset-source.usage-list.documents-using-file_unnamed_zero':
     'Ни один документ не использует этот файл',
   'asset-source.usage-list.documents-using-image_named_one':
     'Один документ использует изображение <code>{{filename}}</code>',
+  'asset-source.usage-list.documents-using-image_named_other':
+    'Документов, использующих изображение <code>{{filename}}</code>: {{count}}',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *named* image **/
   'asset-source.usage-list.documents-using-image_named_zero':
     'Ни один документ не использует изображение <code>{{filename}}</code>',
   'asset-source.usage-list.documents-using-image_unnamed_one':
     'Один документ использует это изображение',
+  'asset-source.usage-list.documents-using-image_unnamed_other':
+    'Документов, использующих это изображение: {{count}}',
   /** Text shown in usage dialog for an image asset when there are zero, one or more documents using the *unnamed* image **/
   'asset-source.usage-list.documents-using-image_unnamed_zero':
     'Ни один документ не использует это изображение',
@@ -189,10 +197,10 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Изображения рабочей области',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Что-то пошло не так при попытке разрешить Медиатеку для этого проекта.',
+    'Не удалось определить медиатеку для этого проекта.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'Медиа-библиотека для этой организации не предоставлена.',
+    'Для этой организации не подключена медиатека.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Медиатека',
   'asset-sources.media-library.image.title': 'Медиатека',
@@ -200,18 +208,18 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.open-in-source-dialog.button.done': 'Готово',
   /** Select new asset button text with target title */
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
-    'Выберите новый актив для «{{targetTitle}}»',
+    'Выбрать новый ресурс для «{{targetTitle}}»',
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
-    'Выберите новый актив',
+    'Выбрать новый ресурс',
   /** Title for the open in source dialog */
-  'asset-sources.media-library.open-in-source-dialog.title': 'Редактировать актив',
+  'asset-sources.media-library.open-in-source-dialog.title': 'Редактировать ресурс',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Загрузить в медиатеку',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
-    'Использование существующего файла, найденного в библиотеке.',
+    'Используется существующий файл из медиатеки.',
   'asset-sources.media-library.warning.file-already-exist.title':
-    "Файл: '{{filename}}' уже существует",
+    'Файл «{{filename}}» уже существует',
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
@@ -235,13 +243,13 @@ export default removeUndefinedLocaleResources({
   /** Action message for setting to the current time */
   'calendar.action.set-to-current-time': 'Установить текущее время',
   /** Label for selecting an hour preset. Receives a `time` param as a string on hh:mm format and a `date` param as a Date instance denoting the preset date */
-  'calendar.action.set-to-time-preset': '{{time}} на {{date, datetime}}',
+  'calendar.action.set-to-time-preset': '{{time}}, {{date, datetime}}',
   /** Aria label for button to open date picker */
   'calendar.button.aria-label': 'Открыть календарь',
   /** Tooltip content for button to open datetime input */
   'calendar.button.tooltip-text': 'Выбрать дату',
   /** Error message displayed in calendar when entered date is not the correct format */
-  'calendar.error.must-be-in-format': 'Должно быть в формате <Emphasis>{{exampleDate}}</Emphasis>',
+  'calendar.error.must-be-in-format': 'Должно быть в формате: {{exampleDate}}',
   /** Month name for April */
   'calendar.month-names.april': 'Апрель',
   /** Month name for August */
@@ -282,13 +290,18 @@ export default removeUndefinedLocaleResources({
   'calendar.weekday-names.short.wednesday': 'Ср',
 
   /** Label for the close button label in Review Changes pane */
-  'changes.action.close-label': 'Закрыть просмотр изменений',
+  'changes.action.close-label': 'Закрыть историю',
   /** Cancel label for revert button prompt action */
   'changes.action.revert-all-cancel': 'Отмена',
   /** Revert all confirm label for revert button action - used on prompt button + review changes pane */
   'changes.action.revert-all-confirm': 'Отменить все',
+  /** Prompt for reverting all changes in document in Review Changes pane. Includes a count of changes. */
+  'changes.action.revert-all-description':
+    'Вы уверены, что хотите отменить все изменения ({{count}})?',
   /** Prompt for confirming revert change (singular) label for field change action */
   'changes.action.revert-changes-confirm-change_one': 'Отменить изменение',
+  /** Revert for confirming revert (plural) label for field change action */
+  'changes.action.revert-changes-confirm-change_other': 'Отменить изменения',
   /** Prompt for reverting changes for a field change */
   'changes.action.revert-changes-description': 'Вы уверены, что хотите отменить изменения?',
   /** Prompt for reverting changes for a group change, eg multiple changes */
@@ -298,12 +311,14 @@ export default removeUndefinedLocaleResources({
   /** Array diff: An item was added in a given position (`{{position}}`) */
   'changes.array.item-added-in-position': 'Добавлено на позицию {{position}}',
   'changes.array.item-moved_down_one': 'Перемещено на {{count}} позицию вниз',
+  'changes.array.item-moved_down_other': 'Перемещено вниз на позиций: {{count}}',
   /**
    * Array diff: An item was moved within the array.
    * Receives `{{count}}` representing number of positions it moved.
    * Context is the direction of the move, either `up` or `down`.
    */
   'changes.array.item-moved_up_one': 'Перемещено на {{count}} позицию вверх',
+  'changes.array.item-moved_up_other': 'Перемещено вверх на позиций: {{count}}',
   /** Array diff: An item was removed from a given position (`{{position}}`) */
   'changes.array.item-removed-from-position': 'Удалено с позиции {{position}}',
   /** Accessibility label for the "change bar" shown when there are edits on a field-level */
@@ -404,14 +419,14 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Удалено',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Вы выбрали одну и ту же <strong>from</strong> и <strong>to</strong> ревизию, пожалуйста, выберите разные ревизии, чтобы сравнить изменения между ними.',
+    'Вы выбрали одну и ту же ревизию в полях <strong>От</strong> и <strong>К</strong>. Выберите разные ревизии, чтобы сравнить изменения между ними.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'Выбрана одна и та же ревизия',
   /** Title for the Review Changes pane */
-  'changes.title': 'Просмотр изменений',
+  'changes.title': 'История',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
   'changes.unknown-schema-field.description':
-    'Бұл өріс схемада анықталмаған. Мәндер JSON түрінде көрсетіледі.',
+    'Это поле не определено в схеме. Значения показаны в формате JSON.',
   /**The title that will be shown in the badge inside the events when the item is a draft */
   'changes.versions.draft': 'Черновик',
 
@@ -460,21 +475,26 @@ export default removeUndefinedLocaleResources({
   'diagnostics.menu-item': 'Диагностика',
 
   /** Label for action that closes divergence inspector */
-  'divergence.action.close.label': 'Жабу',
+  'divergence.action.close.label': 'Закрыть',
   /** Label for action that marks divergence as resolved */
-  'divergence.action.markResolved.label': 'Елемеу',
+  'divergence.action.markResolved.label': 'Игнорировать',
   /** Label for action that moves inspector to the next divergence in the document */
-  'divergence.action.next.label': 'Келесі',
+  'divergence.action.next.label': 'Следующее',
   /** Label for action that moves inspector to the previous divergence in the document */
-  'divergence.action.previous.label': 'Алдыңғы',
+  'divergence.action.previous.label': 'Предыдущее',
   /** Label for action that replaces the node's value in the current version with its latest value in the upstream version */
-  'divergence.action.takeFromUpstream.label': 'Негізден көшіру',
+  'divergence.action.takeFromUpstream.label': 'Скопировать из базового варианта',
   /** Verb to describe the node's value changed */
-  'divergence.effect.changed': 'өзгертілді',
+  'divergence.effect.changed': 'изменено',
   /** Summary of the change that occurred */
-  'divergence.effect.summary': '{{title}} {{effect}} {{versionName}} нұсқасында',
+  'divergence.effect.summary': '{{title}}: {{effect}} в версии {{versionName}}',
+  /** Description of the position of the current divergence being inspected, compared to the total count of divergences */
+  'divergence.pagination': '{{position}} из {{count}}',
   /** Label for divergence in a single node */
-  'divergence.unresolved-divergence_one': '{{versionName}} нұсқасындағы шешілмеген өзгеріс',
+  'divergence.unresolved-divergence_one': 'Нерешенное изменение в версии {{versionName}}',
+  /** Label for divergences in multiple nodes */
+  'divergence.unresolved-divergence_other':
+    'Нерешенных изменений в версии {{versionName}}: {{count}}',
 
   /** --- Document inventory --- */
   /** The label shown when dismissing the document group inventory */
@@ -483,11 +503,15 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.action.manage-versions': 'Управление версиями',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
-    'Насколько легко или сложно пользоваться новой версией инвентаря?',
+    'Насколько легко или сложно пользоваться новым списком версий?',
   /** The label for the input that filters the variants in the document group inventory */
   'document-group-inventory.filter-string.label': 'Фильтр {{subject}}',
+  /** The document inventory title (singular) */
+  'document-group-inventory.title': '{{count}} {{subject}}',
   /** The document inventory title (plural) */
   'document-group-inventory.title_one': '{{count}} {{subject}}',
+  /** The document inventory title (plural) */
+  'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
   'document-group-inventory.viewing-item-label': 'просмотр',
 
@@ -508,16 +532,25 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.cancel-button.text': 'Отмена',
   /** Used in `document-group.delete.cdr-summary.title` */
   'document-group.delete.cdr-summary.document-count_one': '1 документ',
+  /** Used in `document-group.delete.cdr-summary.title` */
+  'document-group.delete.cdr-summary.document-count_other': 'Документов: {{count}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_one': 'Dataset: {{datasets}}',
+  'document-group.delete.cdr-summary.subtitle_one': 'Набор данных: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Недоступный dataset',
+  'document-group.delete.cdr-summary.subtitle_other': 'Наборы данных: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Недоступный набор данных',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Недоступные наборы данных',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
-  'document-group.delete.cdr-summary.title_one': '{{documentCount}} в другом dataset',
+  'document-group.delete.cdr-summary.title_one': '{{documentCount}} в другом наборе данных',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'document-group.delete.cdr-summary.title_other':
+    '{{documentCount}} в других наборах данных ({{count}})',
   /** Appears when hovering over the copy button to copy */
   'document-group.delete.cdr-table.copy-id-button.tooltip': 'Скопировать ID в буфер обмена',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  'document-group.delete.cdr-table.dataset.label': 'Набор данных',
   /** The header for the document ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.document-id.label': 'ID документа',
   /** The toast title when the copy button has been clicked but copying failed */
@@ -527,14 +560,19 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.cdr-table.project-id.label': 'ID проекта',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
   'document-group.delete.confirm-button.text_one': 'Удалить (1)',
+  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
+  'document-group.delete.confirm-button.text_other': 'Удалить ({{count}})',
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
     'При попытке удалить этот документ произошла ошибка. Обычно это означает, что на него ссылаются другие документы.',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'document-group.delete.other-reference-count.title_one': '1 другая ссылка не отображается',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'document-group.delete.other-reference-count.title_other':
+    'Другие ссылки не отображаются: {{count}}',
   /** Text in the tooltip of this component if hovering over the info icon */
   'document-group.delete.other-reference-count.tooltip':
-    'Мы не можем отобразить метаданные для этих ссылок из-за отсутствия токена доступа для связанных datasets.',
+    'Мы не можем отобразить метаданные для этих ссылок из-за отсутствия токена доступа для связанных наборов данных.',
   /** Appears when unable to render a document preview in the referring document list */
   'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
@@ -543,15 +581,24 @@ export default removeUndefinedLocaleResources({
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
   'document-group.delete.referring-document-count.text_one':
     '1 документ ссылается на «<DocumentTitle/>»',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'document-group.delete.referring-document-count.text_other':
+    'Документов, ссылающихся на «<DocumentTitle/>»: {{count}}',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
   'document-group.delete.referring-documents-descriptor.text':
     'Возможно, вы не сможете удалить «<DocumentTitle/>», так как на него ссылаются следующие документы:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
   'document-group.delete.title_one': 'Удалить {{count}} {{subject}}',
+  /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
+  'document-group.delete.title_other': 'Удалить {{count}} {{subject}}',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
   'document-group.subject.variant_one': 'вариант',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.variant_other': 'вариантов',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
   'document-group.subject.version_one': 'версия',
+  /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
+  'document-group.subject.version_other': 'версий',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Создано {{date}}',
@@ -573,7 +620,7 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-not-found': 'Ревизия не найдена',
 
   /** Toast description shown when saving changes is taking longer than expected */
-  'document-store.slow-commit.description': 'Ваши изменения всё ещё сохраняются.',
+  'document-store.slow-commit.description': 'Ваши изменения все еще сохраняются.',
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Сохранение занимает больше времени, чем ожидалось',
 
@@ -664,11 +711,14 @@ export default removeUndefinedLocaleResources({
   'form.validation.has-warning-aria-label': 'Есть предупреждение',
   /** Text shown when summarizing validation information, when the field has one or more errors */
   'form.validation.summary.errors-count_one': '{{count}} ошибка',
+  'form.validation.summary.errors-count_other': 'Ошибок: {{count}}',
   /** Text shown when summarizing validation information, when the field has one or more warnings */
   'form.validation.summary.warnings-count_one': '{{count}} предупреждение',
+  'form.validation.summary.warnings-count_other': 'Предупреждений: {{count}}',
 
   /** Tooltip for free trial navbar button indicating remaining days */
-  'free-trial.tooltip.days-count_one': '{{count}} день остался в пробной версии',
+  'free-trial.tooltip.days-count_one': 'До конца пробного периода остался {{count}} день',
+  'free-trial.tooltip.days-count_other': 'Дней до конца пробного периода: {{count}}',
   /** Tooltip for free trial navbar button, once trial has ended */
   'free-trial.tooltip.trial-finished': 'Перейдите на расширенный тарифный план',
 
@@ -688,7 +738,7 @@ export default removeUndefinedLocaleResources({
    */
   'help-resources.action.join-our-community': 'Присоединиться к нашему сообществу',
   /** Information for what the latest sanity version is */
-  'help-resources.latest-sanity-version': 'Последняя версия {{latestVersion}}',
+  'help-resources.latest-sanity-version': 'Последняя версия — v{{latestVersion}}',
   /** Text for link to register a studio */
   'help-resources.register-studio': 'Зарегистрировать студию',
   /** Name of the sanity studio */
@@ -698,7 +748,7 @@ export default removeUndefinedLocaleResources({
   /** Menu item for reloading Studio to update */
   'help-resources.studio-auto-update-now': 'Перезагрузить для обновления до v{{newVersion}}',
   /** Information for what studio version the current studio is running */
-  'help-resources.studio-version': 'Версия Sanity Studio {{studioVersion}}',
+  'help-resources.studio-version': 'Sanity Studio v{{studioVersion}}',
   /** Title for help and resources menus */
   'help-resources.title': 'Помощь и ресурсы',
   /** Label for studio's which are up to date */
@@ -719,7 +769,7 @@ export default removeUndefinedLocaleResources({
   'input.files.common.upload-progress': 'Загрузка <FileName/>',
   /** The referenced document cannot be opened, because the URL failed to be resolved */
   'input.reference.document-cannot-be-opened.failed-to-resolve-url':
-    'Этот документ не может быть открыт (не удалось разрешить URL к Studio)',
+    'Этот документ нельзя открыть (не удалось определить URL студии)',
 
   /** Label for adding item after a specific array item */
   'inputs.array.action.add-after': 'Добавить элемент после',
@@ -757,6 +807,9 @@ export default removeUndefinedLocaleResources({
   /** Error label for toast when trying to upload one array item of a type that cannot be converted to array */
   'inputs.array.error.cannot-upload-unable-to-convert_one':
     'Следующий элемент не может быть загружен, потому что нет известного преобразования из типа содержимого в элемент массива:',
+  /** Error label for toast when trying to upload multiple array items of a type that cannot be converted to array */
+  'inputs.array.error.cannot-upload-unable-to-convert_other':
+    'Следующие элементы нельзя загрузить, потому что неизвестно, как преобразовать эти типы содержимого в элемент массива:',
   /** Error description for the array item tooltip that explains that the current type item is not valid for the list  */
   'inputs.array.error.current-schema-not-declare-description':
     'Текущая схема не объявляет элементы типа <code>{{typeName}}</code> допустимыми для этого списка. Это может означать, что тип был удален как допустимый тип элемента, или кто-то другой добавил его в свою локальную схему, которая еще не развернута.',
@@ -808,7 +861,7 @@ export default removeUndefinedLocaleResources({
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Загрузка не удалась',
   /** Private access policy badge label */
-  'inputs.files.common.access-policy.private.label': 'Частный актив',
+  'inputs.files.common.access-policy.private.label': 'Закрытый ресурс',
   /** Private access policy badge tooltip */
   'inputs.files.common.access-policy.private.tooltip':
     'Доступ через CDN ограничен подписанными URL',
@@ -831,14 +884,25 @@ export default removeUndefinedLocaleResources({
   /** Drop to upload `{{count}}` file */
   'inputs.files.common.drop-message.drop-to-upload-multi_one':
     'Перетащите для загрузки {{count}} файла',
+  /** Drop to upload `{{count}}` files */
+  'inputs.files.common.drop-message.drop-to-upload-multi_other':
+    'Перетащите, чтобы загрузить файлы ({{count}})',
   /** Can't upload this file here */
   'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_one':
     'Невозможно загрузить этот файл здесь',
+  /** Can't upload any of these files here */
+  'inputs.files.common.drop-message.drop-to-upload.no-accepted-file-message_other':
+    'Ни один из этих файлов нельзя загрузить сюда',
   /** `{{count}}` file can't be uploaded here */
   'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_one':
     '{{count}} файл не может быть загружен здесь',
+  /** `{{count}}` files can't be uploaded here */
+  'inputs.files.common.drop-message.drop-to-upload.rejected-file-message_other':
+    'Файлов, которые нельзя загрузить сюда: {{count}}',
   /** Cannot upload `{{count}}` files */
   'inputs.files.common.placeholder.cannot-upload-some-files_one': 'Невозможно загрузить файл',
+  'inputs.files.common.placeholder.cannot-upload-some-files_other':
+    'Невозможно загрузить файлы ({{count}})',
   /** Drag or paste type here */
   'inputs.files.common.placeholder.drag-or-paste-to-upload_file':
     'Перетащите или вставьте файл сюда',
@@ -907,14 +971,14 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'Хотспот и обрезка',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "Asset Pipeline не поддерживает горячие точки и обрезку для векторных форматов. Чтобы включить горячие точки и обрезку, выведите это изображение в любой из поддерживаемых растровых форматов. Например: <code>fm=jpg</code> в <ImageUrlDocumentationLink>URL изображения</ImageUrlDocumentationLink> или вызовите <code>.format('png')</code> с <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+    "Asset Pipeline не поддерживает хотспот и обрезку для векторных форматов. Чтобы включить хотспот и обрезку, выводите это изображение в любом из поддерживаемых растровых форматов. Например, добавьте <code>fm=jpg</code> в <ImageUrlDocumentationLink>URL изображения</ImageUrlDocumentationLink> или вызовите <code>.format('png')</code> в <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
-  'inputs.imagetool.vector-warning.expand-developer-info': 'Смотреть информацию для разработчиков',
+  'inputs.imagetool.vector-warning.expand-developer-info': 'Показать информацию для разработчиков',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
   'inputs.imagetool.vector-warning.title':
-    'Внимание: Горячие точки и обрезка могут не применяться к этому изображению там, где оно представлено.',
+    'Внимание: хотспот и обрезка могут не примениться к этому изображению там, где оно показывается.',
   /** Convert to `{{targetType}}` */
-  'inputs.invalid-value.convert-button.text': 'Преобразовать в <code>{{targetType}}</code>',
+  'inputs.invalid-value.convert-button.text': 'Преобразовать в {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
   'inputs.invalid-value.current-type': 'Текущее значение (<code>{{actualType}}</code>)',
   /** The property value is stored as a value type that does not match the expected type. */
@@ -948,7 +1012,7 @@ export default removeUndefinedLocaleResources({
   'inputs.object.field-group-tabs.validation-warning': 'предупреждение',
   /** Read-only field description */
   'inputs.object.unknown-fields.read-only.description':
-    'Это поле является <strong>только для чтения</strong> согласно схеме документа и не может быть снято. Если вы хотите иметь возможность снимать это в Studio, убедитесь, что вы удалили поле <code>readOnly</code> из окружающего типа в схеме.',
+    'Согласно схеме документа это поле <strong>доступно только для чтения</strong>, и его значение нельзя удалить. Чтобы удалять его в Studio, уберите поле <code>readOnly</code> из родительского типа в схеме.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
   'inputs.object.unknown-fields.reference.preview.unavailable':
     'Не удалось загрузить предварительный просмотр для ссылки «{{documentId}}».',
@@ -957,13 +1021,18 @@ export default removeUndefinedLocaleResources({
   /** Encountered `{{count}}` fields that are not defined in the schema. */
   'inputs.object.unknown-fields.warning.description_one':
     'Обнаружено поле, которое не определено в схеме.',
+  'inputs.object.unknown-fields.warning.description_other':
+    'Обнаружены поля, которые не определены в схеме: {{count}}.',
   /** Detailed description of unknown field warning */
   'inputs.object.unknown-fields.warning.details.description_one':
     'Это поле не определено в схеме, что может означать, что определение поля было удалено или кто-то другой добавил его в свой локальный проект и еще не развернул свои изменения.',
+  'inputs.object.unknown-fields.warning.details.description_other':
+    'Эти поля не определены в схеме документа. Возможно, их определения были удалены или кто-то другой добавил их в свой локальный проект и еще не развернул изменения.',
   /** Developer info */
   'inputs.object.unknown-fields.warning.details.title': 'Информация для разработчиков',
   /** Unknown field found */
   'inputs.object.unknown-fields.warning.title_one': 'Обнаружено неизвестное поле',
+  'inputs.object.unknown-fields.warning.title_other': 'Обнаружены неизвестные поля',
   /** Collapse the editor to save screen space  */
   'inputs.portable-text.action.collapse-editor': 'Свернуть редактор',
   /** Aria label for action to edit an existing annotation */
@@ -982,10 +1051,10 @@ export default removeUndefinedLocaleResources({
   /** Aria label for action to remove an annotation */
   'inputs.portable-text.action.remove-annotation-aria-label': 'Удалить аннотацию',
   /** Label for activate on focus with context of click and not focused */
-  'inputs.portable-text.activate-on-focus-message_click': 'Нажмите для активации',
+  'inputs.portable-text.activate-on-focus-message_click': 'Щелкните для активации',
   /** Label for activate on focus with context of click and focused */
   'inputs.portable-text.activate-on-focus-message_click-focused':
-    'Нажмите или нажмите пробел для активации',
+    'Щелкните или нажмите пробел для активации',
   /** Label for activate on focus with context of tap and not focused */
   'inputs.portable-text.activate-on-focus-message_tap': 'Коснитесь для активации',
   /** Aria label for the annotation object */
@@ -1105,12 +1174,12 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.invalid-value.not-an-array.action': 'Сбросить значение',
   /** Text explaining that the Portable Text field value is invalid, when the Portable Text field is not an array, or the array is empty */
   'inputs.portable-text.invalid-value.not-an-array.description':
-    'Значение должно быть массивом блоков Portable Text или неопределенным.',
+    'Значение должно быть массивом блоков Portable Text или отсутствовать.',
   /** Action presented when the Portable Text field value is invalid, when child at `{{index}}` is not an object */
   'inputs.portable-text.invalid-value.not-an-object.action': 'Удалить элемент',
   /** Text explaining that the Portable Text field value is invalid, when child at `{{index}}` is not an object */
   'inputs.portable-text.invalid-value.not-an-object.description':
-    'Элемент с <code>{{index}}</code> не является объектом,.',
+    'Элемент с индексом <code>{{index}}</code> не является объектом.',
   /** Action presented when the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
   'inputs.portable-text.invalid-value.orphaned-marks.action': 'Удалить недопустимые маркировки',
   /** Text explaining that the Portable Text field value is invalid, when block with key `{{key}}` contains marks (`{{orphanedMarks}}`) that are not supported by the current schema */
@@ -1274,13 +1343,13 @@ export default removeUndefinedLocaleResources({
   'inputs.reference.search-placeholder': 'Начните печатать для поиска',
   /** Explanation of the consequences of leaving the reference as strong instead of weak */
   'inputs.reference.strength-mismatch.is-strong-consquences':
-    'Будет невозможно удалить документ-ссылку без предварительного удаления этой ссылки или преобразования ее в слабую.',
+    'Документ, на который указывает ссылка, нельзя будет удалить, пока эта ссылка не будет удалена или преобразована в слабую.',
   /** Description for alert shown when a reference is supposed to be weak, but the actual value is strong */
   'inputs.reference.strength-mismatch.is-strong-description':
     'Эта ссылка <em>сильная</em>, но согласно текущей схеме она должна быть <em>слабой</em>.',
   /** Explanation of the consequences of leaving the reference as weak instead of strong */
   'inputs.reference.strength-mismatch.is-weak-consquences':
-    'Это позволяет удалять ссылочный документ без предварительного удаления этой ссылки, оставляя это поле, ссылающееся на несуществующий документ.',
+    'Это позволяет удалить документ, на который указывает ссылка, не удаляя саму ссылку. В этом случае поле будет ссылаться на несуществующий документ.',
   /** Description for alert shown when a reference is supposed to be strong, but the actual value is weak */
   'inputs.reference.strength-mismatch.is-weak-description':
     'Эта ссылка <em>слабая</em>, но согласно текущей схеме она должна быть <em>сильной</em>.',
@@ -1304,7 +1373,7 @@ export default removeUndefinedLocaleResources({
   /** Placeholder for an empty tag input on touch devices */
   'inputs.tags.placeholder_touch': 'Введите тег…',
   /** Convert to `{{targetType}}` */
-  'inputs.untyped-value.convert-button.text': 'Преобразовать в <code>{{targetType}}</code>',
+  'inputs.untyped-value.convert-button.text': 'Преобразовать в {{targetType}}',
   /** Encountered an object value without a <code>_type</code> property. */
   'inputs.untyped-value.description':
     'Обнаружено значение объекта без свойства <code>_type</code>.',
@@ -1373,7 +1442,7 @@ export default removeUndefinedLocaleResources({
   'login.logged-out.generic': 'Ваша сессия больше не действительна. Пожалуйста, войдите снова.',
   /** Body of the logged-out banner shown above the login form when the session expired */
   'login.logged-out.session-expired':
-    'Срок действия вашей сессии истёк. Пожалуйста, войдите снова.',
+    'Срок действия вашей сессии истек. Пожалуйста, войдите снова.',
   /** Title of the banner shown above the login form after the studio logs the user out */
   'login.logged-out.title': 'Вы вышли из системы',
 
@@ -1386,7 +1455,7 @@ export default removeUndefinedLocaleResources({
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Узнать больше',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.snooze-button.text': 'Не показывать снова за эту сессию',
+  'network-check.slow-protocol-warning.snooze-button.text': 'Больше не показывать в этом сеансе',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.title': 'У вас включен ручной тормоз',
 
@@ -1398,7 +1467,7 @@ export default removeUndefinedLocaleResources({
    */
   'new-document.create-new-document-label': 'Новый документ…',
   /** Placeholder for the "filter" input within the new document menu */
-  'new-document.filter-placeholder': 'Фильтр',
+  'new-document.filter-placeholder': 'Поиск типов документов',
   /** Loading indicator text within the new document menu */
   'new-document.loading': 'Загрузка…',
   /** Accessibility label for the list displaying options in the new document menu */
@@ -1423,7 +1492,7 @@ export default removeUndefinedLocaleResources({
   'package-version.new-package-available.title': 'Sanity Studio готов к обновлению!',
 
   /** Label for action to invite members to the current studio project */
-  'presence.action.manage-members': 'Управление участниками',
+  'presence.action.manage-members': 'Пригласить участников',
   /** Accessibility label for presence menu button */
   'presence.aria-label': 'Кто здесь',
   /** Message description for when no one else is currently present */
@@ -1470,30 +1539,35 @@ export default removeUndefinedLocaleResources({
   'release.action.edit-schedule': 'Редактировать расписание',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Новый релиз',
+  /** Explanation provided when releases can't be created because the workspace release limit has been reached */
+  'release.action.new-release.limit-reached':
+    'Максимальное число релизов в этом рабочем пространстве: {{count}}',
+  'release.action.new-release.limit-reached_other':
+    'Максимальное число релизов в этом рабочем пространстве: {{count}}',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас нет разрешения на выполнение этого действия',
   /** Action message for running a scheduled draft immediately */
   'release.action.publish-now': 'Опубликовать сейчас',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Пожалуйста, попробуйте еще раз или проверьте ваше соединение. Документ все еще будет неопубликованным при выпуске.',
+    'Попробуйте еще раз или проверьте подключение. Документ по-прежнему будет снят с публикации при выпуске релиза.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Не удалось отменить настройку на отмену публикации при выпуске.',
+    'Не удалось отменить снятие с публикации при выпуске релиза.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Теперь вы можете редактировать эту версию.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Успешно отменена настройка на отмену публикации при выпуске.',
+    'Снятие с публикации при выпуске релиза отменено.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Запланировать публикацию',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
-    'Не удалось установить версию как неопубликованную в релизе',
+    'Не удалось запланировать снятие версии с публикации при выпуске релиза',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Успешно установлено, что <strong>{{title}}</strong> будет неопубликовано в релизе',
+    'Документ <strong>{{title}}</strong> будет снят с публикации при выпуске релиза',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Просмотреть релиз',
   /** Action message for when the view scheduled drafts is pressed */
@@ -1501,9 +1575,13 @@ export default removeUndefinedLocaleResources({
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Запланировано к публикации на {{date}}',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_one': '+{{count}} нұсқа',
+  'release.chip.button.other-variants_one': '+{{count}} вариант',
+  /** Label for button to show other variants in the document perspective list */
+  'release.chip.button.other-variants_other': '+{{count}} вариантов',
   /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} версия',
+  /** Label for button to show other versions in the document perspective list */
+  'release.chip.button.other-versions_other': '+{{count}} версий',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Черновик',
   /** Label for Draft chip in global header */
@@ -1516,7 +1594,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.created-date': 'Создано {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
   'release.chip.tooltip.draft-disabled.live-edit':
-    'Этот документ находится в режиме реального времени, черновики отключены',
+    'Этот документ редактируется в режиме реального времени, черновики отключены',
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': 'Отредактировано {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
@@ -1525,8 +1603,10 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'Нет правок',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'Не опубликовано',
-  'release.chip.tooltip.other-variants_one': 'Бір нұсқа',
+  'release.chip.tooltip.other-variants_one': 'Один вариант',
+  'release.chip.tooltip.other-variants_other': 'Вариантов: {{count}}',
   'release.chip.tooltip.other-versions_one': 'Одна дополнительная версия вне релизов',
+  'release.chip.tooltip.other-versions_other': 'Дополнительных версий вне релизов: {{count}}',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Опубликовано {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1583,7 +1663,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Опубликовать черновик сейчас',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Предполагаемое время релиза используется для создания лучших предварительных просмотров и подсказок о возможных конфликтах документов.',
+    'Это время используется только для планирования, предварительного просмотра и подсказок о конфликтах документов. Указанное здесь время не планирует релиз. Когда все документы будут готовы, релиз все равно нужно будет выпустить или запланировать.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Вы всегда можете изменить это позже.',
   /** Title for tooltip to explain release time */
@@ -1593,7 +1673,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Скрыть релиз',
   /** Label for the release menu */
-  'release.menu.label': 'Меню выпуска',
+  'release.menu.label': 'Меню релиза',
   /** Menu item label for scheduled drafts */
   'release.menu.scheduled-drafts': 'Просмотреть запланированные черновики',
   /** Tooltip for the release menu */
@@ -1682,10 +1762,10 @@ export default removeUndefinedLocaleResources({
   /** Button text for contacting support in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.contact-support': 'Связаться со службой поддержки',
   /** Header for the releases misconfiguration dialog */
-  'releases.upsell.misconfiguration.header': 'Проблема конфигурации выпусков контента',
+  'releases.upsell.misconfiguration.header': 'Проблема конфигурации контентных релизов',
   /** Message shown in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.message':
-    'Выпуски контента включены для вашего проекта, но, похоже, есть проблема с конфигурацией ваших лимитов выпусков. Пожалуйста, свяжитесь со службой поддержки, чтобы правильно настроить выпуски вашего контента.',
+    'Контентные релизы включены для вашего проекта, но в конфигурации лимитов релизов есть проблема. Свяжитесь со службой поддержки, чтобы правильно настроить контентные релизы.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Запланировать',
@@ -1725,6 +1805,12 @@ export default removeUndefinedLocaleResources({
    * searching, and can fit within the space assigned by the design.
    */
   'search.action.search-specific-types': 'Искать {{types, list}}',
+  /**
+   * Text displayed when we are able to determine one or more document types that will be used for
+   * searching, but cannot list them all within the space assigned by the design, so we need an
+   * additional "and X more" suffix. Allows using pluralization suffixes, eg `_one`, `_other` etc.
+   */
+  'search.action.search-specific-types-truncated': 'Искать {{types, list}} и еще {{count}}',
   /** Dialog title for action to select an asset of unknown type */
   'search.action.select-asset': 'Выбрать ресурс',
   /** Dialog title for action to select a file asset */
@@ -1750,6 +1836,12 @@ export default removeUndefinedLocaleResources({
    * thus the default is "all types".
    */
   'search.document-type-list-all-types': 'Все типы',
+  /**
+   * A list of provided types that has been truncated - more types are included but not displayed,
+   * thus we need to indicate that there are more. Allows using pluralization suffixes,
+   * eg `_one`, `_other` etc.
+   */
+  'search.document-type-list-truncated': '{{types, list}} и еще {{count}}',
   /** Accessibility label for list displaying the available document types */
   'search.document-types-aria-label': 'Типы документов',
   /** Label for when no document types matching the filter are found */
@@ -1841,6 +1933,8 @@ export default removeUndefinedLocaleResources({
   'search.filter-string-value-select-predefined-value': 'Выбрать…',
   /** Accessibility label for the "Filters" list, that is shown when using "Add filter" in search (singular) */
   'search.filters-aria-label_one': 'Фильтр',
+  /** Accessibility label for the "Filters" list, that is shown when using "Add filter" in search (plural) */
+  'search.filters-aria-label_other': 'Фильтры',
   /** Label for instructions on how to use the search - displayed when no recent searches are available */
   'search.instructions': 'Используйте <ControlsIcon/>, чтобы уточнить поиск',
   /** Helpful description for when no search results are found */
@@ -1874,21 +1968,33 @@ export default removeUndefinedLocaleResources({
    **/
   'search.operator.array-count-equal.description_one':
     '<Field/> <Operator>имеет</Operator> <Value>{{count}} элемент</Value>',
+  'search.operator.array-count-equal.description_other':
+    '<Field/> <Operator>имеет</Operator> <Value>{{count}} элементов</Value>',
   'search.operator.array-count-equal.name': 'количество равно',
   'search.operator.array-count-gt.description_one':
     '<Field/> <Operator>имеет ></Operator> <Value>{{count}} элемент</Value>',
+  'search.operator.array-count-gt.description_other':
+    '<Field/> <Operator>имеет ></Operator> <Value>{{count}} элементов</Value>',
   'search.operator.array-count-gt.name': 'количество больше',
   'search.operator.array-count-gte.description_one':
     '<Field/> <Operator>имеет ≥</Operator> <Value>{{count}} элемент</Value>',
+  'search.operator.array-count-gte.description_other':
+    '<Field/> <Operator>имеет ≥</Operator> <Value>{{count}} элементов</Value>',
   'search.operator.array-count-gte.name': 'количество больше или равно',
   'search.operator.array-count-lt.description_one':
     '<Field/> <Operator>имеет <</Operator> <Value>{{count}} элемент</Value>',
+  'search.operator.array-count-lt.description_other':
+    '<Field/> <Operator>имеет <</Operator> <Value>{{count}} элементов</Value>',
   'search.operator.array-count-lt.name': 'количество меньше',
   'search.operator.array-count-lte.description_one':
     '<Field/> <Operator>имеет ≤</Operator> <Value>{{count}} элемент</Value>',
+  'search.operator.array-count-lte.description_other':
+    '<Field/> <Operator>имеет ≤</Operator> <Value>{{count}} элементов</Value>',
   'search.operator.array-count-lte.name': 'количество меньше или равно',
   'search.operator.array-count-not-equal.description_one':
     '<Field/> <Operator>не имеет</Operator> <Value>{{count}} элемент</Value>',
+  'search.operator.array-count-not-equal.description_other':
+    '<Field/> <Operator>не имеет</Operator> <Value>{{count}} элементов</Value>',
   'search.operator.array-count-not-equal.name': 'количество не равно',
   /**
    * Array should have a count within the range of given filter values.
@@ -2075,7 +2181,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.action.search-for-timezone-placeholder': 'Поиск города или часового пояса',
   'time-zone.action.select-local-time-zone': 'Выбрать местный часовой пояс',
   'time-zone.dialog-info.content-releases':
-    'Выбранный часовой пояс изменит способ отображения дат в выпусках контента.',
+    'Выбранный часовой пояс изменит способ отображения дат в контентных релизах.',
   'time-zone.dialog-info.input':
     'Выбранный часовой пояс изменит способ отображения дат только для этого ввода в этом документе.',
   'time-zone.dialog-info.scheduled-publishing':
@@ -2083,7 +2189,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.local-time': 'местное время',
   'time-zone.time-zone': 'Часовой пояс',
   'time-zone.time-zone-tooltip-content-releases':
-    'Отображение выпусков в {{alternativeName}} GMT{{offset}}',
+    'Отображение релизов в {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-input':
     'Отображение <em>{{title}}</em> в {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':
@@ -2118,7 +2224,7 @@ export default removeUndefinedLocaleResources({
    * Label for latest revision for timeline menu dropdown
    * @deprecated as of `v3.47.0` `timeline.latest-revision` should be used instead. Note: _usage_ of this key is deprecated, but Studios on `< v3.47.0` still require this key to be _defined_
    * */
-  'timeline.latest-version': 'Последняя версия',
+  'timeline.latest-version': 'Последняя ревизия',
   /** The aria-label for the list of revisions in the timeline */
   'timeline.list.aria-label': 'Ревизии документа',
   /** Label for loading history */
@@ -2175,7 +2281,7 @@ export default removeUndefinedLocaleResources({
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
    */
-  'timeline.since': 'С: {{timestamp, datetime}}',
+  'timeline.since': '{{timestamp, datetime}}',
   /** Label for missing change version for timeline menu dropdown are showing */
   'timeline.since-version-missing': 'С: неизвестная версия',
 
@@ -2202,11 +2308,12 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Открыть боковую панель',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': 'Присвоить этот проект',
+  'user-menu.action.claim-project': 'Стать владельцем проекта',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': 'Остался {{count}} день пробного периода',
+  'user-menu.action.free-trial_other': 'Дней до конца пробного периода: {{count}}',
   /** Label for the button showed after trial ended */
-  'user-menu.action.free-trial-finished': 'Перейти с бесплатной версии',
+  'user-menu.action.free-trial-finished': 'Перейти на платный тариф',
   /** Label for action to invite members to the current sanity project */
   'user-menu.action.invite-members': 'Пригласить участников',
   /** Accessibility label for action to invite members to the current sanity project */
@@ -2242,7 +2349,7 @@ export default removeUndefinedLocaleResources({
   /** Title for locale section for the current studio */
   'user-menu.locale-title': 'Язык',
   /** Label for tooltip to show which provider the currently logged in user is using */
-  'user-menu.login-provider': 'Вошли через {{providerTitle}}',
+  'user-menu.login-provider': 'Вход выполнен через {{providerTitle}}',
   /** Label for open menu button for user menu */
   'user-menu.open-menu': 'Открыть меню',
 

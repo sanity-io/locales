@@ -20,22 +20,22 @@ export default removeUndefinedLocaleResources({
   /** Label for executing the query, eg doing a fetch */
   'action.query-execute': 'Получить',
   /** Label for saving a query */
-  'action.save-personal-copy': 'Жеке көшірмені сақтау',
+  'action.save-personal-copy': 'Сохранить личную копию',
   /** Label for saving a personal query */
-  'action.save-personal-query': 'Жеке ретінде сақтау',
+  'action.save-personal-query': 'Сохранить как личный',
   /** Label for saving a query */
   'action.save-query': 'Сохранить запрос',
   /** Label for saving a shared query */
-  'action.save-shared-query': 'Ортақ ретінде сақтау',
+  'action.save-shared-query': 'Сохранить как общий',
   /** Label for unsharing a query */
-  'action.unshare': 'Ортақтасуды тоқтату',
+  'action.unshare': 'Закрыть общий доступ',
   /** Label for updating a query */
   'action.update': 'Обновить',
 
   /** Label for actions user can take */
   'label.actions': 'Действия',
   /** Label for all saved queries */
-  'label.all': 'Барлығы',
+  'label.all': 'Все',
   /** Label for saved queries that have been edited */
   'label.edited': 'Отредактировано',
   /**
@@ -54,11 +54,11 @@ export default removeUndefinedLocaleResources({
   /** Share query */
   'label.share': 'Поделиться',
   /** Label for query type "shared" */
-  'label.shared': 'Ортақ',
+  'label.shared': 'Общий',
   /** Label for saved query type "team" */
   'label.team': 'Команда',
   /** Label for untitled query fallback */
-  'label.untitled-query': 'Атаусыз',
+  'label.untitled-query': 'Без названия',
 
   /** Error message for when the "Params" input are not a valid json */
   'params.error.params-invalid-json': 'Параметры не являются допустимым JSON',
@@ -102,16 +102,16 @@ export default removeUndefinedLocaleResources({
   /** Save error label */
   'save-query.error': 'Ошибка при сохранении запроса',
   /** Save personal copy success label */
-  'save-query.personal-copy-success': 'Жеке көшірме сақталды',
+  'save-query.personal-copy-success': 'Личная копия сохранена',
   /** Warning displayed before sharing a query */
   'save-query.share-warning':
-    'Ортақ сұраулар dataset ішіндегі құжаттар ретінде сақталады және құжат квотаңызға есептеледі.',
+    'Общие запросы хранятся как документы в вашем наборе данных и учитываются в квоте документов.',
   /** Save shared query success label */
-  'save-query.shared-success': 'Ортақ сұрау сақталды',
+  'save-query.shared-success': 'Общий запрос сохранен',
   /** Save success label */
   'save-query.success': 'Запрос сохранен',
   /** Save unshared query success label */
-  'save-query.unshared-success': 'Сұрау жеке бөлімге жылжытылды',
+  'save-query.unshared-success': 'Запрос перемещен в личные',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Версия API',
@@ -120,7 +120,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Пользовательская версия API',
   /** Label for the "Dataset" dropdown in vision settings */
-  'settings.dataset-label': 'Dataset',
+  'settings.dataset-label': 'Набор данных',
   /** Error label for when the API version in 'Custom API version' input is invalid */
   'settings.error.invalid-api-version': 'Недопустимая версия API',
   /** Label for the "other" versions within the "API version" dropdown */
@@ -129,7 +129,7 @@ export default removeUndefinedLocaleResources({
    * Label for the "Perspective" dropdown in vision settings
    * @see {@link https://www.sanity.io/docs/perspectives}
    */
-  'settings.perspective-label': 'Perspective',
+  'settings.perspective-label': 'Перспектива',
   /** Notification about previewDrafts to drafts rename */
   'settings.perspective.preview-drafts-renamed-to-drafts.description':
     'Перспектива "<code>previewDrafts</code>" была переименована в "<code>drafts</code>" и теперь устарела. Это изменение вступает в силу для всех версий с поддержкой перспектив (>= v2021-03-25).',
@@ -139,7 +139,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.default': 'Нет перспективы (по умолчанию API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
-    'Perspectives позволяют выполнять запросы для различных "видов" содержимого в вашем dataset',
+    'Перспективы позволяют выполнять запрос к разным "представлениям" содержимого вашего набора данных',
   /** Description for upcoming default perspective change */
   'settings.perspectives.new-default.description':
     'Перспектива по умолчанию изменится с "<code>raw</code>" на "<code>published</code>" в предстоящей версии API. Пожалуйста, смотрите документацию для получения дополнительной информации.',
@@ -148,5 +148,5 @@ export default removeUndefinedLocaleResources({
   /** Label for the scheduled drafts perspective */
   'settings.perspectives.scheduled-drafts': 'Запланированные черновики',
   /** Title for popover that explains what "Perspectives" are */
-  'settings.perspectives.title': 'Perspectives',
+  'settings.perspectives.title': 'Перспективы',
 })
