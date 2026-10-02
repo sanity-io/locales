@@ -2,11 +2,11 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
-  'action.copy-document-id.label': 'Құжат идентификаторын көшіру',
+  'action.copy-document-id.label': 'Копировать ID документа',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Скопировать URL документа',
+  'action.copy-document-url.label': 'Копировать',
   /** Label for the "Copy document URL" menu item */
-  'action.copy-link-to-document.label': 'Құжат URL мекенжайын көшіру',
+  'action.copy-link-to-document.label': 'Копировать URL документа',
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'Операция не готова',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
     'Этот документ не может быть удален, так как он находится в запланированных релизах',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
-    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
+    'Выбранный релиз или вариант не содержит этот документ',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'Удалить',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -40,7 +40,7 @@ export default removeUndefinedLocaleResources({
   'action.discard-changes.disabled.not-ready': 'Операция не готова',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.discard-changes.disabled.target-not-found':
-    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
+    'Выбранный релиз или вариант не содержит этот документ',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'Отменить изменения',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -50,7 +50,7 @@ export default removeUndefinedLocaleResources({
     'Этот документ еще не существует, поэтому нет ничего для дублирования',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.duplicate.disabled.target-not-found':
-    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
+    'Выбранный релиз или вариант не содержит этот документ',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'Дублировать',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -58,14 +58,14 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published, and published time is unavailable.*/
   'action.publish.already-published.no-time-ago.tooltip': 'Уже опубликовано',
   /** Tooltip when publish button is disabled because the document is already published.*/
-  'action.publish.already-published.tooltip': 'Опубликовано {{timeSincePublished}} назад',
+  'action.publish.already-published.tooltip': 'Опубликовано {{timeSincePublished}}',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': 'Бұл нұсқа өз релизінің бөлігі ретінде жарияланған',
+  'action.publish.disabled.not-publishable': 'Эта версия публикуется в составе своего релиза',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'Операция не готова',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.publish.disabled.target-not-found':
-    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
+    'Выбранный релиз или вариант не содержит этот документ',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'Опубликовать',
   /** Label for the "Publish" document action */
@@ -113,16 +113,16 @@ export default removeUndefinedLocaleResources({
   'action.unpublish.disabled.not-ready': 'Операция не готова',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
   'action.unpublish.disabled.target-not-found':
-    'Выбранный релиз немесе вариант бұл құжатты қамтымайды',
+    'Выбранный релиз или вариант не содержит этот документ',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'Снять с публикации',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
   'action.unpublish.live-edit.disabled':
-    'Этот документ включает редактирование в реальном времени и не может быть снят с публикации',
+    'Для этого документа включено редактирование в реальном времени, поэтому его нельзя снять с публикации',
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Вы просматриваете документ только для чтения, который был архивирован как часть <VersionBadge>{{title}}</VersionBadge>. Его нельзя редактировать',
+    'Эта версия документа относится к архивированному релизу <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Этот запланированный черновик архивирован',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -136,7 +136,7 @@ export default removeUndefinedLocaleResources({
     'Выберите назначение для этого документа:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge> релиз не активен.',
+    'Релиз <VersionBadge>{{title}}</VersionBadge> не активен.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Восстановить последнюю версию',
   /** The text content for the deleted document banner */
@@ -144,9 +144,11 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Этот тип документа устарел.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Отменить черновик',
+  'banners.live-edit-draft-banner.discard.tooltip':
+    'Отмените черновик, чтобы продолжить редактирование.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Опубликовать для продолжения редактирования',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Опубликуйте черновик, чтобы продолжить редактирование.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'Тип <strong>{{schemaType}}</strong> имеет включенный <code>liveEdit</code>, но существует черновая версия этого документа. Опубликуйте или отмените черновик, чтобы продолжить его редактирование в реальном времени.',
@@ -164,18 +166,25 @@ export default removeUndefinedLocaleResources({
     'В рабочей области не включены черновики, но существует черновая версия этого документа.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'Планирование приостановлено во время редактирования. Нажмите Планировать для повторной активации или выберите новую дату.',
+    'Расписание приостановлено на время редактирования. Нажмите «Запланировать», чтобы возобновить его, или выберите новую дату.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Ваша роль <Roles/> не имеет разрешений на создание этого документа.',
+    'У вашей роли <Roles/> нет разрешения на публикацию этого документа.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
+  'banners.permission-check-banner.missing-permission_create_other':
+    'У ваших ролей <Roles/> нет разрешения на публикацию этого документа.',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Ваша роль <Roles/> не имеет разрешений на обновление этого документа.',
+    'У вашей роли <Roles/> нет разрешения на редактирование этого документа.',
+  /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
+  'banners.permission-check-banner.missing-permission_update_other':
+    'У ваших ролей <Roles/> нет разрешения на редактирование этого документа.',
   /** The pending text for the request permission button that appears for viewer roles */
-  'banners.permission-check-banner.request-permission-button.sent': 'Запрос редактора отправлен',
+  'banners.permission-check-banner.request-permission-button.sent':
+    'Запрос на редактирование отправлен',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text':
-    'Попросить разрешение на редактирование',
+    'Запросить доступ на редактирование',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Вы просматриваете документ только для чтения, который был опубликован как часть <VersionBadge>{{title}}</VersionBadge>. Его нельзя редактировать',
@@ -190,7 +199,7 @@ export default removeUndefinedLocaleResources({
   'banners.reference-changed-banner.reason-removed.text':
     'Эта ссылка была удалена с тех пор, как вы ее открыли.',
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
-  'banners.release.action.add-to-bundle': 'Добавить в bundle',
+  'banners.release.action.add-to-bundle': 'Добавить в пакет',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Добавить в релиз',
   /** The text that appears for the action button to add the current document to the global release */
@@ -204,16 +213,21 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description': 'Документ существует только в',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-end_one': 'релизе',
+  /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
+  'banners.release.navigate-to-edit-description-end_other': 'релизах',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Этот документ является частью <VersionBadge/> релиза и еще {{count}} релиза.',
+    'Этот документ входит в релиз <VersionBadge/> и еще в {{count}} релиз.',
+  /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
+  'banners.release.navigate-to-edit-description-multiple_other':
+    'Этот документ входит в релиз <VersionBadge/> и еще в другие релизы ({{count}})',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
   'banners.release.navigate-to-edit-description-none': 'Этот документ не входит ни в один релиз',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
-    'Этот документ является частью <VersionBadge/> релиза',
+    'Этот документ входит в релиз <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Не входит в релиз <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
@@ -229,27 +243,28 @@ export default removeUndefinedLocaleResources({
     'Для этого документа существует запланированный черновик. Если вы опубликуете изменения сейчас, они будут перезаписаны, когда будет выполнено расписание.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Этот документ будет снят с публикации как часть релиза <VersionBadge>{{title}}</VersionBadge>',
+    'Этот документ будет снят с публикации в рамках релиза <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Показана текущая <strong>опубликованная</strong> версия:',
   /** The text that appears for the action button to add the current document to the selected variant */
-  'banners.variant.action.add-to-variant': 'Вариант жасау',
+  'banners.variant.action.add-to-variant': 'Создать вариант',
   /** The text for the banner that appears when the selected variant matches no variant definition */
   'banners.variant.definition-not-found':
-    'Таңдалған вариант <VariantName>{{name}}</VariantName> табылмады.',
+    'Выбранный вариант <VariantName>{{name}}</VariantName> не найден.',
   /** Toast description in case an error occurs when adding a document to a variant */
-  'banners.variant.error.description': 'Құжатты варiantқа қосу кезінде қате орын алды: {{message}}',
+  'banners.variant.error.description':
+    'Произошла ошибка при добавлении документа в вариант: {{message}}',
   /** Toast title in case an error occurs when adding a document to a variant */
-  'banners.variant.error.title': 'Құжатты варiantқа қосу қатесі',
+  'banners.variant.error.title': 'Ошибка добавления документа в вариант',
   /** The text for the banner that appears when a document is not in the selected variant */
   'banners.variant.not-in-variant':
-    '<PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle> үшін <VariantBadge>{{variantTitle}}</VariantBadge> вариант құжаты жоқ.',
+    'Для <VariantBadge>{{variantTitle}}</VariantBadge> нет документа варианта <PerspectiveTitle>{{perspectiveTitle}}</PerspectiveTitle>.',
   /** Description of toast that will appear while the document is added to the variant */
   'banners.variant.waiting.description':
-    'Құжат варiantқа қосылып жатқанда күте тұрыңыз. Бұл бірнеше секундтан артық уақыт алмауы керек.',
+    'Пожалуйста, подождите, пока документ будет добавлен в вариант. Это не должно занять более нескольких секунд.',
   /** Title of toast that will appear while the document is added to the variant */
-  'banners.variant.waiting.title': 'Құжат варiantқа қосылуда…',
+  'banners.variant.waiting.title': 'Добавление документа в вариант…',
 
   /** Browser/tab title when creating a new document of a given type */
   'browser-document-title.new-document': 'Новый {{schemaType}}',
@@ -261,13 +276,14 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Действия с документом',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Свернуть все панели',
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Выйти из режима фокусировки (показать навигацию)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Сфокусировать панель',
+  'buttons.focus-pane-button.aria-label.focus': 'Войти в режим фокусировки (скрыть навигацию)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Свернуть все панели',
+  'buttons.focus-pane-button.tooltip.collapse': 'Выйти из режима фокусировки',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Сфокусировать панель',
+  'buttons.focus-pane-button.tooltip.focus': 'Войти в режим фокусировки',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Разделить панель справа',
   /** The tool tip for the split pane button on the document panel header */
@@ -296,13 +312,13 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': 'Узнать больше',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas позволяет создавать контент в свободной форме редактора, который автоматически отображается в Studio как структурированный контент - по мере ввода текста.',
+    'Canvas позволяет писать в редакторе свободной формы, а текст по мере ввода автоматически превращается в структурированный контент в Studio.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Авторство с идеей на первом месте',
+  'canvas.banner.popover-heading': 'Сначала идея',
 
   /** The description for the changes banner */
   'changes.banner.description':
-    'Показ истории для версии <strong>{{perspective}}</strong> этого документа.',
+    'Показана история версии <strong>{{perspective}}</strong> этого документа.',
   /** The tooltip for the changes banner */
   'changes.banner.tooltip':
     'Этот вид показывает изменения, произошедшие в определенной версии этого документа. Выберите другую версию, чтобы увидеть ее изменения',
@@ -343,12 +359,21 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.cancel-button.text': 'Отмена',
   /** Used in `confirm-delete-dialog.cdr-summary.title` */
   'confirm-delete-dialog.cdr-summary.document-count_one': '1 документ',
+  /** Used in `confirm-delete-dialog.cdr-summary.title` */
+  'confirm-delete-dialog.cdr-summary.document-count_other': 'Документов: {{count}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
   'confirm-delete-dialog.cdr-summary.subtitle_one': 'Набор данных: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'confirm-delete-dialog.cdr-summary.subtitle_other': 'Наборы данных: {{datasets}}',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
   'confirm-delete-dialog.cdr-summary.subtitle_unavailable_one': 'Недоступный набор данных',
+  /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
+  'confirm-delete-dialog.cdr-summary.subtitle_unavailable_other': 'Недоступные наборы данных',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
   'confirm-delete-dialog.cdr-summary.title_one': '{{documentCount}} в другом наборе данных',
+  /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
+  'confirm-delete-dialog.cdr-summary.title_other':
+    '{{documentCount}} в других наборах данных ({{count}})',
   /** Appears when hovering over the copy button to copy */
   'confirm-delete-dialog.cdr-table.copy-id-button.tooltip': 'Скопировать ID в буфер обмена',
   /** The header for the dataset column in the list of cross-dataset references found */
@@ -361,23 +386,30 @@ export default removeUndefinedLocaleResources({
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ID проекта',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Удалить в любом случае',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete': 'Все равно удалить все версии',
   /** The text in the "Delete anyway" button when the document only has a single version */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Всё равно удалить',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_one': 'Все равно удалить',
+  /** The text in the "Delete anyway" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': 'Все равно удалить все версии',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'Снять с публикации в любом случае',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */
-  'confirm-delete-dialog.confirm-button.text_delete': 'Удалить сейчас',
+  'confirm-delete-dialog.confirm-button.text_delete': 'Удалить все версии',
   /** The text in the "Delete now" button when the document only has a single version */
   'confirm-delete-dialog.confirm-button.text_delete_one': 'Удалить документ',
+  /** The text in the "Delete now" button when the document has multiple versions */
+  'confirm-delete-dialog.confirm-button.text_delete_other': 'Удалить все версии',
   /** The text in the "Unpublish now" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-button.text_unpublish': 'Снять с публикации сейчас',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_delete':
-    'Вы уверены, что хотите удалить «<DocumentTitle/>»?',
+    'Вы уверены, что хотите удалить все версии этого документа?',
   /** The confirmation text when the document only has a single version */
   'confirm-delete-dialog.confirmation.text_delete_one':
     'Вы уверены, что хотите удалить этот документ?',
+  /** The confirmation text when the document has multiple versions */
+  'confirm-delete-dialog.confirmation.text_delete_other':
+    'Вы уверены, что хотите удалить все версии этого документа?',
   /** If no referring documents are found, this text appears above the cancel and confirmation buttons */
   'confirm-delete-dialog.confirmation.text_unpublish':
     'Вы уверены, что хотите снять с публикации «<DocumentTitle/>»?',
@@ -396,6 +428,8 @@ export default removeUndefinedLocaleResources({
   'confirm-delete-dialog.loading.text': 'Поиск ссылающихся документов…',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
   'confirm-delete-dialog.other-reference-count.title_one': '1 другая ссылка не показана',
+  /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
+  'confirm-delete-dialog.other-reference-count.title_other': 'Другие ссылки не показаны: {{count}}',
   /** Text in the tooltip of this component if hovering over the info icon */
   'confirm-delete-dialog.other-reference-count.tooltip':
     'Мы не можем отобразить метаданные для этих ссылок из-за отсутствия токена доступа для связанных наборов данных.',
@@ -413,12 +447,15 @@ export default removeUndefinedLocaleResources({
   /** Tells the user the count of how many other referring documents there are before listing them. (singular) */
   'confirm-delete-dialog.referring-document-count.text_one':
     '1 документ ссылается на «<DocumentTitle/>»',
+  /** Tells the user the count of how many other referring documents there are before listing them. (plural) */
+  'confirm-delete-dialog.referring-document-count.text_other':
+    'Документов, ссылающихся на «<DocumentTitle/>»: {{count}}',
   /** Describes the list of documents that refer to the one trying to be deleted (delete) */
   'confirm-delete-dialog.referring-documents-descriptor.text_delete':
-    'Вы не сможете удалить «<DocumentTitle/>», потому что следующие документы ссылаются на него:',
+    'Возможно, вы не сможете удалить «<DocumentTitle/>», потому что на него ссылаются следующие документы:',
   /** Describes the list of documents that refer to the one trying to be deleted (unpublish) */
   'confirm-delete-dialog.referring-documents-descriptor.text_unpublish':
-    'Вы не сможете отменить публикацию «<DocumentTitle/>», потому что следующие документы ссылаются на него:',
+    'Возможно, вы не сможете снять с публикации «<DocumentTitle/>», потому что на него ссылаются следующие документы:',
 
   /** The text for the cancel button in the confirm dialog used in document action shortcuts if none is provided */
   'confirm-dialog.cancel-button.fallback-text': 'Отмена',
@@ -436,7 +473,7 @@ export default removeUndefinedLocaleResources({
   'doc-title.unknown-schema-type.text': 'Неизвестный тип схемы: {{schemaType}}',
 
   /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'Нұсқа түймелері қайда кетті?',
+  'document-group-inventory.onboarding-hint': 'Куда делись кнопки версий?',
 
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Закрыть',
@@ -445,13 +482,13 @@ export default removeUndefinedLocaleResources({
   /** The title shown in the dialog header, when the document being inspected is not created yet/has no value */
   'document-inspector.dialog.title-no-value': 'Нет значения',
   /** Accessibility label for the close button shown when an inspector panel failed to render */
-  'document-inspector.error.close-button.aria-label': 'Панельді жабу',
+  'document-inspector.error.close-button.aria-label': 'Закрыть панель',
   /** Text explaining that the inspector panel failed to render */
-  'document-inspector.error.description': 'Бұл панельді көрсету кезінде қате орын алды.',
+  'document-inspector.error.description': 'При отображении этой панели произошла ошибка.',
   /** Label for the button that attempts to render the inspector panel again */
-  'document-inspector.error.retry-button.text': 'Қайталау',
+  'document-inspector.error.retry-button.text': 'Повторить',
   /** The title shown in the inspector panel header when the panel failed to render */
-  'document-inspector.error.title': 'Бірдеңе дұрыс болмады',
+  'document-inspector.error.title': 'Что-то пошло не так',
   /** Title shown for menu item that opens the "Inspect" dialog */
   'document-inspector.menu-item.title': 'Инспектировать',
   /** the placeholder text for the search input on the inspect dialog */
@@ -462,7 +499,8 @@ export default removeUndefinedLocaleResources({
   'document-inspector.view-mode.raw-json': 'Исходный JSON',
 
   /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': 'Құжат әлі таңдалған perspective ішінде жоқ.',
+  'document-target-badges.not-in-target.tooltip':
+    'Документ пока не существует в выбранной перспективе.',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Эта форма скрыта',
@@ -477,19 +515,19 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-lock-toast.title': 'Синхронизация документа…',
   /** Description of the toast shown when recent edits haven't synced for a while (still retrying) */
   'document-view.form-view.sync-pending.description':
-    'Біз әрекетті жалғастыра береміз. Сіздің өзгертулеріңіз осы уақытта браузеріңізде сақталады.',
+    'Мы продолжаем попытки. Пока что ваши изменения хранятся в браузере.',
   /** Title of the toast shown when recent edits haven't synced for a while (still retrying) */
-  'document-view.form-view.sync-pending.title': 'Өзгертулеріңіз сақталмай тұр',
+  'document-view.form-view.sync-pending.title': 'Ваши изменения не сохраняются',
   /** Description of the toast shown when the connection is back and buffered edits are being submitted */
   'document-view.form-view.sync-recovering.description':
-    'Өзгертулеріңіз сақталғаннан кейін өңдеу жалғасады.',
+    'Редактирование возобновится, как только ваши изменения сохранятся.',
   /** Title of the toast shown when the connection is back and buffered edits are being submitted */
-  'document-view.form-view.sync-recovering.title': 'Өзгертулеріңіз сақталуда…',
+  'document-view.form-view.sync-recovering.title': 'Сохранение изменений…',
   /** Description of the toast shown when edits have been unsynced long enough that editing is locked */
   'document-view.form-view.sync-stalled.description':
-    'Өзгертулер сақталғанша өңдеу тоқтатылды. Өзгертулеріңіз браузеріңізде сақталады, сондықтан біз әрекетті жалғастырып жатқанда бұл қойындыны ашық ұстаңыз.',
+    'Редактирование приостановлено до сохранения изменений. Ваши изменения хранятся в браузере, поэтому не закрывайте эту вкладку, пока мы продолжаем попытки.',
   /** Title of the toast shown when edits have been unsynced long enough that editing is locked */
-  'document-view.form-view.sync-stalled.title': 'Өзгертулеріңіз әлі де сақталмай тұр',
+  'document-view.form-view.sync-stalled.title': 'Ваши изменения все еще не сохраняются',
 
   /** The description for the document favorite action */
   'document.favorites.add-to-favorites': 'Добавить в избранное',
@@ -498,13 +536,13 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Мы не можем загрузить изменения для этого документа, вероятно, из-за политики хранения истории вашего плана, это показывает вам, как версия <strong>{{version}}</strong> сравнивается с <strong>опубликованной</strong> версией.',
+    'Не удалось загрузить изменения этого документа. Вероятно, это связано с политикой хранения истории в вашем тарифе. Здесь показано, чем версия <strong>{{version}}</strong> отличается от <strong>опубликованной</strong> версии.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'Сравнение с опубликованным',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Просмотреть документ <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': 'Открыть документ <VersionBadge>draft</VersionBadge>',
+  'events.open.draft': 'Открыть <VersionBadge>черновик</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Открыть релиз <VersionBadge>{{releaseTitle}}</VersionBadge>',
 
@@ -552,19 +590,18 @@ export default removeUndefinedLocaleResources({
   /** The menu item title to use the detailed view */
   'menu-items.layout.detailed-view': 'Подробный вид',
   /** The menu item title that restores the structure-configured default layout */
-  'menu-items.layout.restore-default': 'Стандартты көрініс',
+  'menu-items.layout.restore-default': 'Вид по умолчанию',
   /** Tooltip shown when the restore-default layout item is disabled (default already in use) */
-  'menu-items.layout.restore-default.disabled-reason':
-    'Стандартты көрініс қазірдің өзінде қолданылуда',
+  'menu-items.layout.restore-default.disabled-reason': 'Вид по умолчанию уже используется',
   /** The menu item title to Sort by Created */
   'menu-items.sort-by.created': 'Сортировать по дате создания',
   /** The menu item title to Sort by Last Edited */
   'menu-items.sort-by.last-edited': 'Сортировать по последнему редактированию',
   /** The menu item title that restores the structure-configured default sort order */
-  'menu-items.sort-by.restore-default': 'Стандартты сұрыптау',
+  'menu-items.sort-by.restore-default': 'Сортировка по умолчанию',
   /** Tooltip shown when the restore-default sort item is disabled (default already in use) */
   'menu-items.sort-by.restore-default.disabled-reason':
-    'Стандартты сұрыптау тәртібі қазірдің өзінде қолданылуда',
+    'Порядок сортировки по умолчанию уже используется',
 
   /** The link text of the no document type screen that appears directly below the subtitle */
   'no-document-types-screen.link-text': 'Узнайте, как добавить тип документа →',
@@ -604,10 +641,13 @@ export default removeUndefinedLocaleResources({
   'panes.document-header-title.new.text': 'Новый {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Без названия',
+  /** The help text saying that we have given up on automatic retry */
+  'panes.document-list-pane.error.max-retries-attempted':
+    'Автоматические повторные попытки прекращены. Неудачных попыток: {{count}}.',
   /** The help text saying that we'll retry fetching the document list */
   'panes.document-list-pane.error.retrying': 'Повторная попытка…',
   /** The error text on the document list pane */
-  'panes.document-list-pane.error.text': 'Ошибка: <Code>{{error}}</Code>',
+  'panes.document-list-pane.error.text': 'Ошибка при получении документов.',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text.dev': 'Ошибка: <Code>{{error}}</Code>',
   /** The error text on the document list pane if the browser appears to be offlline */
@@ -616,6 +656,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-list-pane.error.title': 'Не удалось получить список элементов',
   /** The help text saying that we'll retry fetching the document list */
   'panes.document-list-pane.error.will-retry-automatically_one': 'Повторная попытка…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Повторная попытка… (№{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Отображается максимум {{limit}} документов',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -631,13 +673,13 @@ export default removeUndefinedLocaleResources({
   /** The search input for the search input on the document list pane */
   'panes.document-list-pane.search-input.placeholder': 'Поиск по списку',
   /** The aria-label for the sort-order control shown beneath the document list search input */
-  'panes.document-list-pane.search-ordering.aria-label': 'Іздеу нәтижелерінің тәртібін өзгерту',
+  'panes.document-list-pane.search-ordering.aria-label': 'Изменить порядок результатов поиска',
   /** The label for the sort-order control beneath the search input, summarising the applied ordering (e.g. "Sorted by relevance") */
-  'panes.document-list-pane.search-ordering.label': '{{order}} бойынша сұрыпталған',
+  'panes.document-list-pane.search-ordering.label': 'Сортировка: {{order}}',
   /** The label for the relevance (best match) option in the document list search sort-order control */
-  'panes.document-list-pane.search-ordering.relevance': 'Өзектілік',
+  'panes.document-list-pane.search-ordering.relevance': 'Релевантность',
   /** The sort-order control summary shown when results are ranked by relevance */
-  'panes.document-list-pane.search-ordering.summary-relevance': 'Өзектілік бойынша сұрыпталған',
+  'panes.document-list-pane.search-ordering.summary-relevance': 'Сортировка по релевантности',
   /** The tooltip text shown when a sort menu item references fields not present in the current schema */
   'panes.document-list-pane.sort-order.disabled-reason':
     'Этот параметр сортировки использует поля, которые не входят в данный тип документа',
@@ -652,34 +694,34 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-error_unpublish':
     'Произошла ошибка при попытке снять с публикации этот документ. Обычно это означает, что есть другие документы, которые ссылаются на него.',
   /** The text when a generic operation succeeded (fallback, generally not shown)  */
-  'panes.document-operation-results.operation-success':
-    'Успешно выполнено {{context}} над документом',
+  'panes.document-operation-results.operation-success': 'Операция {{op}} успешно выполнена',
   /** The text when copy document ID operation succeeded */
   'panes.document-operation-results.operation-success_copy-id':
-    'Құжат идентификаторы алмасу буферіне көшірілді',
+    'ID документа скопирован в буфер обмена',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
     'URL документа скопирован в буфер обмена',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
-    '<Strong>{{title}}</Strong> был добавлен в релиз',
+    'Документ <Strong>{{title}}</Strong> добавлен в релиз',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'Документ был успешно удален',
   /** The text when a discard changes operation succeeded  */
   'panes.document-operation-results.operation-success_discardChanges':
-    'Все изменения с последней публикации теперь отменены. Отмененный черновик все еще можно восстановить из истории',
+    'Все изменения отменены. Отмененный черновик все еще можно восстановить из истории',
   /** The text when a duplicate operation succeeded  */
   'panes.document-operation-results.operation-success_duplicate': 'Документ был успешно дублирован',
   /** The text when a publish operation succeeded  */
-  'panes.document-operation-results.operation-success_publish': 'Документ был опубликован',
+  'panes.document-operation-results.operation-success_publish':
+    'Документ <Strong>{{title}}</Strong> опубликован',
   /** The text when a publish operation succeeded in an anonymous version */
   'panes.document-operation-results.operation-success_publishVersion': 'Версия опубликована',
   /** The text when a restore operation succeeded  */
   'panes.document-operation-results.operation-success_restore':
-    '<Strong>{{title}}</Strong> был восстановлен',
+    'Документ <Strong>{{title}}</Strong> восстановлен',
   /** The text when an unpublish operation succeeded  */
   'panes.document-operation-results.operation-success_unpublish':
-    'Документ был снят с публикации. Черновик был создан из последней опубликованной версии.',
+    'Документ <Strong>{{title}}</Strong> снят с публикации. Из последней опубликованной ревизии создан черновик.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
     'Версия будет снята с публикации при публикации релиза',
@@ -694,7 +736,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-not-found.title': 'Документ не найден',
   /** The text of the document not found pane if the schema is not found */
   'panes.document-pane.document-unknown-type.text':
-    'У этого документа тип схемы <Code>{{documentType}}</Code>, который не определен как тип в локальной схеме контент-студии.',
+    'У этого документа тип схемы <Code>{{documentType}}</Code>, который не определен в локальной схеме студии.',
   /** The title of the document not found pane if the schema is not found or unknown */
   'panes.document-pane.document-unknown-type.title':
     'Неизвестный тип документа: <Code>{{documentType}}</Code>',
@@ -702,11 +744,11 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.document-unknown-type.without-schema.text':
     'Этот документ не существует, и для него не был указан тип схемы.',
   /** The loading message shown while the document targeted by the selected variant is resolving */
-  'panes.document-pane.variant-target.loading': 'Құжат жүктелуде…',
+  'panes.document-pane.variant-target.loading': 'Загрузка документа…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Загрузка…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
-  'panes.resolving.slow-resolve-message': 'Всё ещё загружается…',
+  'panes.resolving.slow-resolve-message': 'Все еще загружается…',
   /** The text to display when type is missing */
   'panes.unknown-pane-type.missing-type.text':
     'Элемент структуры не содержит необходимое свойство <Code>type</Code>.',
@@ -788,5 +830,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Релиз с идентификатором "{{releaseId}}" не найден',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': 'Изменения в линии',
+  'toggle-inline-changes.menu-item.title': 'Встроенные изменения',
 })

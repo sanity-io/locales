@@ -4,10 +4,10 @@ export default removeUndefinedLocaleResources({
   /** The text for the "Edit in Canvas" action. */
   'action.edit-document': 'Редактировать в Canvas',
   /** The text for the "Link to Canvas" action. */
-  'action.link-document': 'Ссылка на Canvas',
+  'action.link-document': 'Связать с Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
   'action.link-document-disabled.initial-value-not-resolved':
-    'Пожалуйста, подождите, пока не будут разрешены начальные значения документа',
+    'Подождите, пока будут определены начальные значения документа',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
   'action.link-document-disabled.missing-permissions':
     'У вас нет разрешений для связывания этого документа с Canvas',
