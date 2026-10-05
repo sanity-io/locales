@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.37
+
+### Patch Changes
+
+- [#1962](https://github.com/sanity-io/locales/pull/1962) [`46ec15d`](https://github.com/sanity-io/locales/commit/46ec15d06fa9b6af3e4fa3effdd9fe6e291350a5) Thanks [@squiggler-app](https://github.com/apps/squiggler-app)! - Automated translation updates
+
+- [#2014](https://github.com/sanity-io/locales/pull/2014) [`3d4cb97`](https://github.com/sanity-io/locales/commit/3d4cb9785480e52b4f1c7370d09eb1efae2c9fab) Thanks [@yenbekbay](https://github.com/yenbekbay)! - Fix ru-KZ translations: replace Kazakh-language strings with Russian, fix broken placeholders and markup, add missing translations, and normalize terminology
+
 ## 1.1.36
 
 ### Patch Changes
