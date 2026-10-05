@@ -6,7 +6,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text for when schedule publish fails */
   'action.schedule-publish-error': 'Не удалось запланировать публикацию',
   /** Tooltip text for when a document is scheduled for publishing */
-  'action.schedule-publish-success': 'Документ запланирован для публикации',
+  'action.schedule-publish-success': 'Публикация документа запланирована',
   /** Tooltip description for when a document is scheduled for publishing */
   'action.schedule-publish-success-description': 'Публикация запланирована на {{publishAt}}',
   /** Tooltip text for when schedule publish is disabled due to cardinality one releases */
@@ -22,7 +22,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.action.documentation': 'Узнать о планировании',
   /** Empty state description for scheduled drafts */
   'empty-state.description':
-    'Планируйте и блокируйте черновики документов для публикации в будущую дату и время.',
+    'Планируйте публикацию черновиков на будущие дату и время. До публикации черновики блокируются.',
   /** Empty state title for scheduled drafts */
   'empty-state.title': 'Запланированные черновики',
 })
