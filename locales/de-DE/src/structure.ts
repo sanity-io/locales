@@ -270,7 +270,7 @@ export default removeUndefinedLocaleResources({
   'banners.variant.waiting.title': 'Dokument wird zur Variante hinzugefügt…',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': 'Neues {{schemaType}}',
+  'browser-document-title.new-document': 'Neu: {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
   'browser-document-title.untitled-document': 'Ohne Titel',
 
@@ -643,7 +643,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the document header title if there is an error */
   'panes.document-header-title.error.text': 'Fehler: {{error}}',
   /** The text used in the document header title if creating a new item */
-  'panes.document-header-title.new.text': 'Neues {{schemaType}}',
+  'panes.document-header-title.new.text': 'Neu: {{schemaType}}',
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Ohne Titel',
   /** The help text saying that we'll retry fetching the document list */
