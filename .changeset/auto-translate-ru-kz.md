@@ -1,5 +1,5 @@
 ---
-"@sanity/locale-ru-kz": patch
+'@sanity/locale-ru-kz': patch
 ---
 
 Automated translation updates

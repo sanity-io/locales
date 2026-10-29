@@ -1,5 +1,5 @@
 ---
-"@sanity/locale-ja-jp": patch
+'@sanity/locale-ja-jp': patch
 ---
 
 Automated translation updates
