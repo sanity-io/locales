@@ -187,6 +187,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Stai visualizzando un documento in sola lettura che è stato pubblicato come parte di <VersionBadge>{{title}}</VersionBadge>. Non può essere modificato',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Visualizza bozza',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Questo è un documento pubblicato. Passa alle bozze per modificarlo.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Ricarica riferimento',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -536,6 +541,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Aggiungi ai preferiti',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Rimuovi dai preferiti',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Questo è un documento singleton con id "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Singleton',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
