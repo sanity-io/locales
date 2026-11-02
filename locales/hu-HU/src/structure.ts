@@ -186,6 +186,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Ön egy csak olvasható dokumentumot tekint meg, amelyet közzétettek a <VersionBadge>{{title}}</VersionBadge> részeként. Nem szerkeszthető',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Piszkozat megtekintése',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Ez egy publikált dokumentum. Váltson piszkozatokra a szerkesztéshez.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Hivatkozás újratöltése',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -533,6 +538,11 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Hozzáadás a kedvencekhez',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Eltávolítás a kedvencekből',
+  /** Details about a singleton document */
+  'document.singleton.details':
+    'Ez egy egyedülálló (singleton) dokumentum, amelynek azonosítója "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Egyedülálló',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
