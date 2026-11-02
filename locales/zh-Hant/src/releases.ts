@@ -312,11 +312,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': '您沒有取消發布此文件的權限',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': '{{displayName}} 正在「{{releaseTitle}}」版本中編輯此文件',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} 目前正在編輯此文件',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': '沒有可發布的文件',
 
@@ -346,10 +341,24 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     '這將還原 {{releaseDocumentsLength}} 個文件版本。',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    '{{count}} 份文件的先前狀態已不再存在於文件歷史記錄中，因此無法還原此發行版本。',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': '正在檢查文件歷史記錄…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': '立即還原此版本',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} 份文件將還原為此發行版本之前最後發布的修訂版本。',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} 份文件將被取消發布，因為它們在此發行版本之前並未發布。',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': '您確定要還原「{{title}}」版本嗎？',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    '無法確定 {{count}} 份文件的先前狀態，因此無法還原此發行版本。',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     '此版本中的文件在發布後曾被修改。還原將覆蓋這些變更。',
