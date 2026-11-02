@@ -79,6 +79,9 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': 'Щось пішло не так під час завантаження коментарів',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text': 'Коментарі зараз недоступні. Спробуйте пізніше.',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Перейти до поля {{field}}',
   /** The button tooltip content for the add reaction button */

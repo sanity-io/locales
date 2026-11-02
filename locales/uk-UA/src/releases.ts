@@ -318,11 +318,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'У вас немає дозволу на скасування публікації цього документа',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': '{{displayName}} зараз редагує цей документ у релізі «{{releaseTitle}}»',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} редагує цей документ прямо зараз',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Немає документів для публікації',
 
@@ -353,10 +348,24 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_one':
     'Це відновить {{releaseDocumentsLength}} версію документа.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Попередній стан {{count}} документа більше не доступний в історії документа, тому реліз неможливо скасувати.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Перевірка історії документа…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Негайно відновити реліз',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} документ буде відновлено до останньої опублікованої версії, що існувала до цього релізу.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} документ буде знято з публікації, оскільки він не був опублікований до цього релізу.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Ви впевнені, що хочете відновити реліз '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Не вдалося визначити попередній стан {{count}} документа, тому реліз неможливо скасувати.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Після публікації до документів у цьому релізі були внесені зміни. Відновлення перезапише ці зміни.',
