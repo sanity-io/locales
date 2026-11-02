@@ -322,12 +322,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'このドキュメントの公開を取り消す権限がありません',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} が現在「{{releaseTitle}}」リリースでこのドキュメントを編集しています',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}}が現在このドキュメントを編集しています',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': '公開するドキュメントがありません',
 
@@ -358,10 +352,24 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     '{{releaseDocumentsLength}} 件のドキュメントバージョンが元に戻されます。',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    '{{count}}件のドキュメントの以前の状態はドキュメント履歴に残っていないため、リリースを元に戻すことができません。',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'ドキュメント履歴を確認しています…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'リリースを即座に元に戻す',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} 件のドキュメントは、このリリース前の最後に公開されたリビジョンに復元されます。',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} 件のドキュメントは、このリリース前に公開されていなかったため、公開が取り消されます。',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "'{{title}}' リリースを元に戻してもよろしいですか？",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    '{{count}} 件のドキュメントの以前の状態を特定できなかったため、リリースを元に戻すことができません。',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'このリリースのドキュメントは公開後に変更されました。元に戻すと、これらの変更が上書きされます。',
