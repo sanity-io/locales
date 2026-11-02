@@ -119,6 +119,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Välj måldokument',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Uppgiftstitel',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Det gick inte att skapa uppgiften, försök igen',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Titel krävs',
   /** The status message upon successful creation of a task */
@@ -158,6 +160,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Öppna uppgifter',
   /** Title of the Tasks panel   */
   'panel.title': 'Uppgifter',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Uppgifter är inte tillgängliga just nu. Försök igen senare.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Tilldelad',
