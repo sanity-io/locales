@@ -148,4 +148,803 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.scheduled-drafts': 'แบบร่างที่กำหนดการไว้',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspectives',
+
+  /** Tooltip line of every control that calls Sanity Agent Actions, which bills AI credits */
+  'vista.agent-actions.credits': 'ใช้ AI เครดิต 1 หน่วยต่อคำขอ',
+  /** Under an Agent Actions control: the organization's AI credits balance this month */
+  'vista.ai-credits.balance': 'เหลือ AI เครดิต {{balance}} จาก {{quota}} หน่วยในเดือนนี้',
+  /** Under an Agent Actions control: the credits used beyond the plan's monthly quota */
+  'vista.ai-credits.deficit':
+    'ใช้ AI เครดิตไปแล้ว {{used}} หน่วยในเดือนนี้ ซึ่งมากกว่าโควต้า {{quota}} หน่วยอยู่ {{deficit}} หน่วย',
+  /** Body of the out-of-credits card, with the credits used and the plan's monthly quota */
+  'vista.ai-credits.limit.description':
+    'องค์กรของคุณใช้ AI เครดิตไปแล้ว {{used}} จาก {{quota}} หน่วยในเดือนนี้ ดังนั้น Sanity Agent Actions จะถูกหยุดชั่วคราวจนกว่าจะถึงเดือนถัดไป หรือจนกว่าวงเงินการใช้จ่ายจะถูกปรับเพิ่ม',
+  /** Body of the out-of-credits card when the usage and the quota are unknown */
+  'vista.ai-credits.limit.description-unknown':
+    'องค์กรของคุณถึงวงเงินการใช้จ่าย AI เครดิตแล้ว ดังนั้น Sanity Agent Actions จะถูกหยุดชั่วคราวจนกว่าจะถึงเดือนถัดไป หรือจนกว่าวงเงินจะถูกปรับเพิ่ม',
+  /** Link in the out-of-credits card to the documentation of AI credits */
+  'vista.ai-credits.limit.learn-more': 'AI เครดิตทำงานอย่างไร',
+  /** Button in the out-of-credits card leading to the organization's spending limits in Manage */
+  'vista.ai-credits.limit.manage': 'จัดการ AI เครดิต',
+  /** Title of the card shown where the organization is out of AI credits */
+  'vista.ai-credits.limit.title': 'AI เครดิตหมด',
+  /** Link after the AI credits note, to the organization's AI usage in Manage */
+  'vista.ai-credits.usage': 'การใช้งาน AI',
+  /** Under an Agent Actions control: the credits used, on a plan without a quota */
+  'vista.ai-credits.used': 'ใช้ AI เครดิตไปแล้ว {{used}} หน่วยในเดือนนี้',
+  /** Button in the request column's action bar naming the API version requests go out with */
+  'vista.api-version.button': 'API {{version}}',
+  /** The API version button while queries go through the API CDN */
+  'vista.api-version.button-cdn': 'API CDN {{version}}',
+  /** The API version button while the "Other" API version input holds an unfinished version */
+  'vista.api-version.button-invalid': 'เวอร์ชัน API ยังไม่สมบูรณ์',
+  /** Tooltip of the API version button */
+  'vista.api-version.tooltip': 'คำสั่งค้นหาจะทำงานกับ API เวอร์ชัน {{version}} เลือกเพื่อเปลี่ยนในตัวเลือก',
+  /** Tooltip of the API version button while queries go through the API CDN */
+  'vista.api-version.tooltip-cdn':
+    'คำสั่งค้นหาจะทำงานผ่าน API CDN ด้วย API เวอร์ชัน {{version}} เลือกเพื่อเปลี่ยนในตัวเลือก',
+  /**
+   * Tooltip of the API version button while the API CDN is asked for but the perspective, as the
+   * perspective select names it, keeps queries on the API
+   */
+  'vista.api-version.tooltip-cdn-blocked':
+    'คำสั่งค้นหาจะทำงานกับ API เวอร์ชัน {{version}} ไม่ใช่ API CDN เนื่องจากไม่รองรับมุมมอง {{perspective}} เลือกเพื่อเปลี่ยนในตัวเลือก',
+  /** Tooltip of the API version button while the "Other" input holds an unfinished version */
+  'vista.api-version.tooltip-invalid':
+    'เวอร์ชัน API ในตัวเลือกยังไม่สมบูรณ์ จึงไม่สามารถดึงข้อมูลได้จนกว่าจะกรอกให้ครบถ้วน',
+  /** Tooltip of the API version button while a selected variant forces the experimental API */
+  'vista.api-version.tooltip-locked':
+    'คำสั่งค้นหาจะทำงานกับ API เวอร์ชัน {{version}} ซึ่งเป็นสิ่งที่ตัวแปรที่เลือกต้องการ',
+  /** Label of the document after the change in the Delta panel */
+  'vista.delta.after': 'หลัง',
+  /** Label of the document before the change in the Delta panel */
+  'vista.delta.before': 'ก่อน',
+  /** What the Delta panel does */
+  'vista.delta.description':
+    'เรียกใช้คำสั่งค้นหาในโหมดเดลต้า เช่นเดียวกับที่เว็บฮุก (webhooks) ตัวรับฟัง (listeners) และ Sanity Functions ที่ขับเคลื่อนด้วย GROQ ทำ: before() และ after() คือเอกสารก่อนและหลังการเปลี่ยนแปลง @ คือเอกสารหลังการเปลี่ยนแปลง และ delta::changedAny() ใช้เปรียบเทียบทั้งสอง คำสั่งนี้ทำงานในเบราว์เซอร์ด้วย groq-js ฝั่งที่ว่างเปล่าหมายถึงไม่มีเอกสาร: การเปลี่ยนแปลงนั้นสร้างหรือลบเอกสารนั้น',
+  /** Label of the document ID field in the Delta panel */
+  'vista.delta.document-id': 'รหัสเอกสาร',
+  /** Shown when there is a query but no documents to compare */
+  'vista.delta.empty': 'โหลดประวัติของเอกสาร หรือเขียนเอกสารลงในช่องก่อนและหลัง',
+  /** Shown when the query fails in delta mode */
+  'vista.delta.failed': 'ไม่สามารถเรียกใช้คำสั่งค้นหาในโหมดเดลต้าได้: {{message}}',
+  /** Shown when the After document is not valid JSON */
+  'vista.delta.invalid-after': 'เอกสารหลังไม่ใช่ JSON ที่ถูกต้อง: {{message}}',
+  /** Shown when the Before document is not valid JSON */
+  'vista.delta.invalid-before': 'Before ไม่ใช่ JSON ที่ถูกต้อง: {{message}}',
+  /** Button loading the document's revisions from the History API */
+  'vista.delta.load': 'โหลดประวัติ',
+  /** Shown when the history could not be loaded */
+  'vista.delta.load-failed': 'ไม่สามารถโหลดประวัติได้: {{message}}',
+  /** A delta filter that is true for the change */
+  'vista.delta.matches': 'ตรงกัน: webhook หรือฟังก์ชันที่มีตัวกรองนี้จะทำงานสำหรับการเปลี่ยนแปลงนี้',
+  /** A delta filter that is false for the change */
+  'vista.delta.no-match': 'ไม่ตรงกัน: webhook หรือฟังก์ชันที่มีตัวกรองนี้จะไม่ทำงานสำหรับการเปลี่ยนแปลงนี้',
+  /** Shown while the query or its params cannot be sent */
+  'vista.delta.no-request': 'แก้ไขคิวรีและพารามิเตอร์ของคิวรีเพื่อรันในโหมด delta',
+  /** Heading of the delta result */
+  'vista.delta.result': 'ผลลัพธ์',
+  /** The After choice for a change that deletes the document */
+  'vista.delta.revision.none-after': 'ไม่มี: การเปลี่ยนแปลงนี้ลบเอกสาร',
+  /** The Before choice for a change that creates the document */
+  'vista.delta.revision.none-before': 'ไม่มี: การเปลี่ยนแปลงนี้สร้างเอกสาร',
+  /** A revision in the Before and After lists */
+  'vista.delta.revision.option': '{{time}} · {{revision}}',
+  /** Accessible label for the button that closes the sidebar drawer */
+  'vista.drawer.close': 'ปิดแผง',
+  /** Explanation at the top of the Explain panel */
+  'vista.explain.description':
+    'แผนคิวรีคือวิธีที่ Content Lake ใช้รันคิวรี: สิ่งที่อ่าน กรอง และจัดเรียงระหว่างการอ่าน และสิ่งที่เหลือไว้สำหรับขั้นตอนถัดไป ปุ่ม Explain this to me จะให้ Sanity Agent Actions อธิบายคิวรีและแผนของมันด้วยภาษาที่เข้าใจง่าย ซึ่งจะใช้เครดิต AI หนึ่งเครดิต',
+  /** Shown in the Explain panel while there is no valid query to explain */
+  'vista.explain.empty': 'เขียนคิวรีเพื่ออธิบายมัน',
+  /** Button in the Explain panel asking Agent Actions to explain the query and its plan */
+  'vista.explain.explain': 'อธิบายให้ฉันฟัง',
+  /** Shown when the explanation could not be written */
+  'vista.explain.failed': 'ไม่สามารถอธิบายคิวรีได้: {{message}}',
+  /** A count the index computes without reading the documents */
+  'vista.explain.insight.aggregate': 'นับในดัชนี โดยไม่ต้องอ่านเอกสาร',
+  /** A subquery the plan runs once for all documents */
+  'vista.explain.insight.batched-subquery':
+    'คิวรีย่อยนี้รันเพียงครั้งเดียวสำหรับเอกสารทั้งหมด ในการดึงข้อมูลแบบกลุ่มครั้งเดียว ไม่ใช่ต่อเอกสารแต่ละรายการ',
+  /** Part of the filter runs in memory; the expression follows */
+  'vista.explain.insight.filter-in-memory':
+    'ตัวกรองบางส่วนทำงานในหน่วยความจำหลังจากอ่านข้อมูลแล้ว: เอกสารทุกฉบับที่ดัชนีปล่อยผ่านจะถูกอ่านก่อน ซึ่งจะช้าลงเมื่อชุดข้อมูลมีขนาดใหญ่ การเชื่อมโยง (->) และฟังก์ชันในตัวกรองไม่สามารถใช้ดัชนีได้',
+  /** The index sorts and limits while reading */
+  'vista.explain.insight.index-sort-limit': 'ดัชนีจะจัดเรียงและจำกัดจำนวนเอกสารระหว่างการอ่าน',
+  /** The plan slices in memory */
+  'vista.explain.insight.slice-in-memory':
+    'การตัดส่วนข้อมูลจะเกิดขึ้นในหน่วยความจำหลังจากอ่านข้อมูลแล้ว ไม่ใช่เป็นการจำกัดระหว่างการอ่าน',
+  /** The plan sorts in memory */
+  'vista.explain.insight.sort-in-memory':
+    'การจัดเรียงเกิดขึ้นในหน่วยความจำ หลังจากอ่านรายการที่ตรงกันทั้งหมดแล้ว ควรจัดเรียงตามแอตทริบิวต์ที่ดัชนีสามารถจัดเรียงได้',
+  /** Link under the plan insights to the guide on fast queries */
+  'vista.explain.insights.guide': 'GROQ ประสิทธิภาพสูง',
+  /** Heading of the plan insights in the Explain panel */
+  'vista.explain.insights.title': 'สิ่งที่โดดเด่น',
+  /** Button in the Explain panel fetching the query plan */
+  'vista.explain.plan': 'แสดงแผนคิวรี',
+  /** Shown when the query plan could not be fetched */
+  'vista.explain.plan-failed': 'ไม่สามารถดึงแผนคิวรีได้: {{message}}',
+  /** Heading of the query plan in the Explain panel */
+  'vista.explain.plan-title': 'แผนการค้นหา',
+  /** Toast shown after a code snippet was copied */
+  'vista.export-query.copied': 'คัดลอกสนิปเพตไปยังคลิปบอร์ดแล้ว',
+  /** Label for the button that copies a code snippet */
+  'vista.export-query.copy': 'คัดลอกสนิปเพต',
+  /** Explanation at the top of the export query dialog */
+  'vista.export-query.description': 'เรียกใช้คิวรีนี้นอก studio ด้วยหนึ่งในสนิปเพตเหล่านี้',
+  /** Title of the dialog that exports the query as code snippets */
+  'vista.export-query.title': 'ส่งออกคิวรี',
+  /** Note about authentication in the export query dialog */
+  'vista.export-query.token-note':
+    'ชุดข้อมูลส่วนตัวต้องใช้โทเคน API ส่วนชุดข้อมูลสาธารณะสามารถตัดส่วนหัว Authorization ออกได้',
+  /** Toast shown after the generated code was copied */
+  'vista.export-types.copied': 'คัดลอกโค้ดไปยังคลิปบอร์ดแล้ว',
+  /** Label for the button that copies the generated code */
+  'vista.export-types.copy': 'คัดลอกโค้ด',
+  /** Shown in the types dialog when there is neither a schema evaluation nor a result */
+  'vista.export-types.empty': 'ดึงข้อมูลคิวรีก่อน เพื่อให้มีผลลัพธ์สำหรับใช้สร้างชนิดข้อมูล',
+  /** Why the workspace schema could not be used for the types; shown with the result fallback */
+  'vista.export-types.schema-error': 'การประเมินสคีมาล้มเหลว: {{message}}',
+  /** Note shown when the types were derived from the fetched result instead of the schema */
+  'vista.export-types.source.result':
+    'อนุมานจากผลลัพธ์ที่ดึงมา เนื่องจากไม่สามารถประเมินคิวรีกับสคีมาของ workspace ได้',
+  /** Note shown when the types were derived from the workspace schema */
+  'vista.export-types.source.schema': 'อนุมานจากสคีมาของ workspace ด้วยวิธีเดียวกับที่ sanity typegen ใช้',
+  /** Shown when the schema cannot be evaluated and the shown result belongs to an older query */
+  'vista.export-types.stale-result':
+    'ผลลัพธ์ที่แสดงถูกดึงมาสำหรับคิวรีหรือพารามิเตอร์อื่น โปรดดึงข้อมูลคิวรีปัจจุบันก่อน เพื่อให้มีผลลัพธ์สำหรับใช้สร้างชนิดข้อมูล',
+  /** Title of the dialog exporting TypeScript types for the result */
+  'vista.export-types.title-typescript': 'ส่งออก TypeScript',
+  /** Title of the dialog exporting a Zod schema for the result */
+  'vista.export-types.title-zod': 'ส่งออก Zod',
+  /** Button of a library function the query does not declare, which declares it at the top */
+  'vista.functions.add': 'เพิ่มลงในคิวรี',
+  /** Shown on a library function the query declares the same way */
+  'vista.functions.declared': 'ในคิวรีนี้',
+  /** Lint action on a call of a library function the query does not declare */
+  'vista.functions.editor.add-from-library': 'ประกาศใช้งาน',
+  /** Note in a function's hover documentation: the API version it needs */
+  'vista.functions.editor.api-version': 'ต้องการ API เวอร์ชัน {{version}} หรือใหม่กว่า',
+  /** Detail of a completion for a custom function the query declares */
+  'vista.functions.editor.completion-declared': 'ในคิวรีนี้',
+  /** Detail of a completion for a library function, which declares it too */
+  'vista.functions.editor.completion-library': 'จากไลบรารีของคุณ',
+  /** Note in the hover documentation of a custom function the query declares */
+  'vista.functions.editor.declared-on': 'ฟังก์ชันกำหนดเอง ประกาศไว้ที่บรรทัด {{line}}',
+  /** Note in the hover documentation of the functions that only work in delta mode */
+  'vista.functions.editor.delta-only':
+    'ใช้งานได้เฉพาะในโหมด delta เท่านั้น ซึ่งเป็นที่ที่ webhook และ Sanity Functions รันตัวกรองของตน',
+  /** Button over a selected projection in the query editor, turning it into a custom function */
+  'vista.functions.editor.extract': 'แยกออกเป็นฟังก์ชัน',
+  /** Note in the hover documentation of a library function the query does not declare */
+  'vista.functions.editor.in-library': 'อยู่ในไลบรารีฟังก์ชันของคุณ ไม่ได้ประกาศไว้ในคิวรีนี้',
+  /** Link at the end of a built-in function's hover documentation */
+  'vista.functions.editor.reference': 'ข้อมูลอ้างอิงฟังก์ชัน GROQ',
+  /** Explanation under the library heading in the Functions panel */
+  'vista.functions.library.description':
+    'เก็บไว้ในเบราว์เซอร์นี้สำหรับทุกชุดข้อมูลของโปรเจกต์ การเติมข้อความอัตโนมัติจะแนะนำฟังก์ชันเหล่านี้ และ lint จะเสนอให้ประกาศเมื่อคิวรีเรียกใช้ฟังก์ชันหนึ่ง',
+  /** Shown in the Functions panel while the library is empty */
+  'vista.functions.library.empty': 'บันทึกฟังก์ชันที่คิวรีประกาศไว้เพื่อใช้ในคิวรีอื่น ๆ',
+  /** Heading of the functions library in the Functions panel */
+  'vista.functions.library.title': 'คลังฟังก์ชัน',
+  /** Shown in the Functions panel while the query declares no custom functions */
+  'vista.functions.query.empty':
+    'ประกาศฟังก์ชันที่กำหนดเองไว้ที่ด้านบนสุดของคิวรี หรือวางเคอร์เซอร์ไว้ในโปรเจกชัน เช่น author->{name} แล้วกดปุ่มแยก (extract) เหนือตัวแก้ไข ({{shortcut}})',
+  /** Heading of the functions the query declares in the Functions panel */
+  'vista.functions.query.title': 'ในคิวรีนี้',
+  /** Removes a function from the library */
+  'vista.functions.remove': 'ลบออกจากคลังฟังก์ชัน',
+  /** Button of a library function the query declares differently, which puts the library's version in */
+  'vista.functions.replace': 'แทนที่ในคิวรี',
+  /** Accessible name of a declared function in the Functions panel, which selects it in the editor */
+  'vista.functions.reveal': 'แสดง {{name}} ในตัวแก้ไข',
+  /** Button of a function the query declares that is not in the library yet */
+  'vista.functions.save': 'บันทึกลงในคลังฟังก์ชัน',
+  /** Shown on a function the query declares the way the library has it */
+  'vista.functions.saved': 'บันทึกแล้ว',
+  /** Button of a function the query declares differently from the library's version */
+  'vista.functions.update': 'อัปเดตคลังฟังก์ชัน',
+  /** Button over the query editor that opens the bar writing a query from a description */
+  'vista.generate.button': 'สร้างคิวรี',
+  /** Closes the generate query bar */
+  'vista.generate.close': 'ปิด',
+  /** Explanation under the generate query field */
+  'vista.generate.description':
+    'Sanity Agent Actions จะเขียน GROQ จากคำอธิบายของคุณและประเภทเอกสาร และ Content Lake จะตรวจสอบแต่ละความพยายาม โดยแต่ละความพยายามจะใช้เครดิต AI หนึ่งหน่วย การดำเนินการนี้จะแทนที่คิวรีของแท็บนี้และรันทันที การยกเลิกการทำในตัวแก้ไขจะนำคิวรีก่อนหน้ากลับมา',
+  /** Shown when no query could be generated, above the reason */
+  'vista.generate.failed': 'ไม่สามารถสร้างคิวรีได้',
+  /** Accessible label of the description field in the generate query bar */
+  'vista.generate.label': 'คิวรีควรดึงข้อมูลอะไร?',
+  /** Opens the last rejected attempt, without running it, to fix it by hand */
+  'vista.generate.open-anyway': 'เปิดความพยายามล่าสุด',
+  /** Placeholder of the description field in the generate query bar */
+  'vista.generate.placeholder': 'ผู้เขียน 10 คนล่าสุด เรียงตามนามสกุลแล้วตามด้วยชื่อจริง',
+  /** Shown while the first attempt at a query is written */
+  'vista.generate.progress': 'กำลังเขียนคิวรี…',
+  /** Shown while a rejected attempt is retried */
+  'vista.generate.progress-retry': 'กำลังแก้ไขคิวรี (ความพยายามที่ {{attempt}} จาก {{max}})…',
+  /** Button generating the query */
+  'vista.generate.submit': 'สร้าง',
+  /** Badge on a history entry the API CDN answered */
+  'vista.history.cdn': 'API CDN',
+  /** Badge on a history entry the API CDN answered from its cache */
+  'vista.history.cdn-cache-hit': 'พบในแคชของ CDN',
+  /** A history entry whose result differs from the previous result, which is no longer kept */
+  'vista.history.changed': 'เปลี่ยนแปลงแล้ว',
+  /**
+   * Toggle on a history entry that shows how its request and result differ from the previous
+   * successful fetch
+   */
+  'vista.history.changes': 'การเปลี่ยนแปลง',
+  /** Shown instead of the changes when they could not be loaded or rendered */
+  'vista.history.changes-failed': 'ไม่สามารถแสดงการเปลี่ยนแปลงได้',
+  /** Button retrying to show the changes of a history entry */
+  'vista.history.changes-retry': 'ลองอีกครั้ง',
+  /** Above the changes of a history entry: the fetch they are compared with */
+  'vista.history.compared-with': 'เปรียบเทียบกับการดึงข้อมูลเมื่อ {{time}}',
+  /** Label of the diff of the GROQ params in a history entry's changes */
+  'vista.history.diff.params': 'พารามิเตอร์',
+  /** Label of the diff of the GROQ query in a history entry's changes */
+  'vista.history.diff.query': 'คำค้นหา',
+  /** Instead of the query diff, when the two queries only differ in whitespace and line breaks */
+  'vista.history.diff.query-formatting-only': 'มีการเปลี่ยนแปลงเฉพาะการจัดรูปแบบเท่านั้น',
+  /** Label of the diff of the query result in a history entry's changes */
+  'vista.history.diff.result': 'ผลลัพธ์',
+  /**
+   * Label of the diff of the request URL in a history entry's changes: the API host, version and
+   * dataset, and options such as the perspective
+   */
+  'vista.history.diff.url': 'URL คำขอ',
+  /** Empty state of the history panel */
+  'vista.history.empty': 'ยังไม่มีการดึงข้อมูล',
+  /** Status label for a failed fetch in the history */
+  'vista.history.failed': 'ล้มเหลว',
+  /** Button putting the hidden fields back into the diff out of a history entry's changes */
+  'vista.history.hide-hidden': 'ซ่อนไว้',
+  /** Next to a history entry's changes: the fields the diff leaves out */
+  'vista.history.hiding': 'กำลังซ่อน {{fields}}',
+  /** A history entry whose result only differs from the previous one in hidden fields */
+  'vista.history.only-hidden-changed': 'มีการเปลี่ยนแปลงเฉพาะฟิลด์ที่ซ่อนอยู่เท่านั้น',
+  /** History reason: a tab opened with a generated query fetched it */
+  'vista.history.reason.generated': 'คำค้นหาที่สร้างขึ้น',
+  /** History reason: a link to the tool named a query URL, which opened in a tab and ran */
+  'vista.history.reason.link': 'เปิดลิงก์',
+  /** History reason: a live event matched the query's sync tags */
+  'vista.history.reason.live': 'อัปเดตแบบเรียลไทม์',
+  /** History reason: the live connection asked every client to refetch */
+  'vista.history.reason.live-restart': 'การเชื่อมต่อแบบเรียลไทม์เริ่มต้นใหม่',
+  /**
+   * History reason: the Live fetch button was pressed, which fetches and then refetches
+   * automatically
+   */
+  'vista.history.reason.live-start': 'เริ่มการดึงข้อมูลแบบเรียลไทม์',
+  /** History reason: a saved query was loaded into a tab that refetches automatically */
+  'vista.history.reason.load': 'โหลดคำค้นหาแล้ว',
+  /** History reason: the fetch button was pressed */
+  'vista.history.reason.manual': 'ปุ่มดึงข้อมูล',
+  /** History reason: mutations were applied from the Mutate panel */
+  'vista.history.reason.mutation': 'ใช้การเปลี่ยนแปลงข้อมูลแล้ว',
+  /** History reason: dataset, API version or perspective changed while refetching automatically */
+  'vista.history.reason.options': 'ตัวเลือกมีการเปลี่ยนแปลง',
+  /** History reason: a query URL was pasted into the tab, which runs it */
+  'vista.history.reason.paste': 'URL ที่วาง',
+  /** History reason: a tab that refetches automatically was opened again, or the studio reloaded */
+  'vista.history.reason.resume': 'กลับมาดึงข้อมูลอัตโนมัติอีกครั้ง',
+  /** History reason: the keyboard shortcut was used */
+  'vista.history.reason.shortcut': 'แป้นพิมพ์ลัด',
+  /** A history entry whose result is the same as the previous result, for a changed request */
+  'vista.history.same-result': 'ผลลัพธ์เหมือนเดิม',
+  /** Button showing the hidden fields in a history entry's changes */
+  'vista.history.show-hidden': 'แสดงรายการ',
+  /** Next to a history entry's changes while the hidden fields are shown */
+  'vista.history.showing-hidden': 'กำลังแสดง {{fields}} ซึ่งถูกซ่อนไว้โดยค่าเริ่มต้น',
+  /** A history entry whose result, or the previous one, is too large to compare */
+  'vista.history.too-large': 'ข้อมูลใหญ่เกินกว่าจะเปรียบเทียบได้',
+  /** A history entry whose result is the same as the previous result */
+  'vista.history.unchanged': 'ไม่มีการเปลี่ยนแปลง',
+  /** Shown in the Lint panel while the query has no lint findings */
+  'vista.lint.empty':
+    'ไม่มีข้อค้นพบจากการตรวจสอบ (lint) ปัญหาที่ GROQ linter พบในคำสั่งจะแสดงที่นี่ขณะที่คุณพิมพ์ เลือกรายการใดรายการหนึ่งเพื่อเลือกในตัวแก้ไข',
+  /** Where a lint finding sits in the query, shown under its message */
+  'vista.lint.position': 'บรรทัด {{line}}, คอลัมน์ {{column}}',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.error': 'ข้อผิดพลาด',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.hint': 'คำแนะนำ',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.info': 'ข้อมูล',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.warning': 'คำเตือน',
+  /** Lint action writing the type, field or operator a schema finding suggests */
+  'vista.lint.use-suggestion': 'ใช้ {{suggestion}}',
+  /** Badge shown while a tab refetches automatically */
+  'vista.live.active': 'สด',
+  /** Button in the request column's action bar that fetches and then refetches automatically */
+  'vista.live.button': 'ดึงข้อมูลแบบสด',
+  /** Tooltip of the Live button while automatic refetching is off */
+  'vista.live.button.start': 'ดึงข้อมูล จากนั้นดึงข้อมูลอีกครั้งเมื่อเอกสารในผลลัพธ์มีการเปลี่ยนแปลง',
+  /** Tooltip of the Stop live button, while the tab refetches automatically */
+  'vista.live.button.stop':
+    'หยุดการดึงข้อมูลเมื่อเอกสารในผลลัพธ์มีการเปลี่ยนแปลง ปุ่ม Fetch ยังคงดึงข้อมูลได้ตามต้องการ สำหรับผลลัพธ์ที่ไม่มีการเปลี่ยนแปลงเอกสารใดแตะต้อง เช่น now()',
+  /** Error shown when the live connection breaks */
+  'vista.live.error': 'การอัปเดตแบบสดถูกตัดการเชื่อมต่อ: {{message}}',
+  /** The Live fetch button while the tab refetches automatically, stopping it */
+  'vista.live.stop': 'หยุดการดึงข้อมูลแบบสด',
+  /** Button in the Mutate panel adding a mutation to the list */
+  'vista.mutate.add': 'เพิ่มการเปลี่ยนแปลง (mutation)',
+  /** Adds a mutation creating a document, with the type of the result's first document */
+  'vista.mutate.add.create': 'สร้างเอกสาร',
+  /** Adds a mutation deleting a document, its ID to fill in */
+  'vista.mutate.add.delete': 'ลบเอกสาร',
+  /** Adds a mutation deleting the documents of the shown result */
+  'vista.mutate.add.delete-result': 'ลบเอกสารในผลลัพธ์',
+  /** Adds a mutation patching a document, its ID to fill in */
+  'vista.mutate.add.patch': 'แก้ไขเอกสาร (patch)',
+  /** Adds a mutation patching the documents of the shown result */
+  'vista.mutate.add.patch-result': 'แก้ไขเอกสารในผลลัพธ์ (patch)',
+  /** Button applying the mutations a dry run showed */
+  'vista.mutate.apply': 'นำไปใช้กับ {{dataset}}',
+  /** Heading of the error shown when applying the mutations failed */
+  'vista.mutate.apply-failed': 'ไม่สามารถนำการเปลี่ยนแปลงข้อมูลไปใช้ได้',
+  /** Next to Apply while the mutations as they are have had no dry run */
+  'vista.mutate.apply-needs-preview': 'การนำไปใช้จะส่งสิ่งที่การรันแบบทดลองแสดงไว้: โปรดรันก่อนหนึ่งครั้ง',
+  /** Option giving array items without a _key one */
+  'vista.mutate.auto-keys': 'เพิ่ม _key ให้กับรายการอาร์เรย์ที่ยังไม่มี',
+  /** Under the option giving array items a _key */
+  'vista.mutate.auto-keys.description': 'สตูดิโอต้องการ _key บนรายการอาร์เรย์ทุกรายการเพื่อให้สามารถแก้ไขได้',
+  /** Button showing a document's changes in the dry run */
+  'vista.mutate.changes': 'การเปลี่ยนแปลง',
+  /** Shown instead of a document's changes when they could not be loaded or rendered */
+  'vista.mutate.changes-failed': 'ไม่สามารถแสดงการเปลี่ยนแปลงได้',
+  /** Button retrying to show a document's changes */
+  'vista.mutate.changes-retry': 'ลองใหม่',
+  /** What the Mutate panel does */
+  'vista.mutate.description':
+    'เขียนการเปลี่ยนแปลงข้อมูลตามรูปแบบที่ Mutations API รองรับ ในรูปแบบรายการ: create, createOrReplace, createIfNotExists, delete และ patch โดยระบุด้วย ID หรือด้วยคำสั่ง GROQ การรันแบบทดลองจะแสดงให้เห็นว่าการเปลี่ยนแปลงเหล่านั้นจะส่งผลต่อแต่ละเอกสารอย่างไรโดยไม่เปลี่ยนแปลงข้อมูลจริง จากนั้นการนำไปใช้จะเขียนการเปลี่ยนแปลงลงใน dataset ในธุรกรรมเดียว โดยใช้บัญชีของคุณ',
+  /** What the API says went wrong with one of the mutations */
+  'vista.mutate.failure-item': 'การเปลี่ยนแปลงข้อมูลที่ {{index}}: {{message}}',
+  /** Tooltip and accessible label of the button opening the generate mutations field */
+  'vista.mutate.generate.button': 'สร้างการเปลี่ยนแปลงข้อมูล',
+  /** Explanation under the generate mutations field */
+  'vista.mutate.generate.description':
+    'Sanity Agent Actions จะเขียนการเปลี่ยนแปลงข้อมูลจากคำอธิบายของคุณ เอกสารในผลลัพธ์ และประเภทของเอกสารเหล่านั้น และการรันแบบทดลองจะตรวจสอบแต่ละความพยายาม โดยทุกความพยายามจะใช้เครดิต AI หนึ่งหน่วย การเปลี่ยนแปลงเหล่านี้จะแทนที่การเปลี่ยนแปลงข้อมูลที่นี่ ซึ่งการเลิกทำจะนำสิ่งเหล่านี้กลับมา จะยังไม่มีการเขียนข้อมูลจนกว่าคุณจะนำไปใช้',
+  /** Shown when no mutations could be generated, above the reason */
+  'vista.mutate.generate.failed': 'ไม่สามารถสร้างการเปลี่ยนแปลงข้อมูลได้',
+  /** Accessible label of the description field in the generate mutations bar */
+  'vista.mutate.generate.label': 'การเปลี่ยนแปลงข้อมูลควรทำอะไร?',
+  /** Placeholder of the description field in the generate mutations bar */
+  'vista.mutate.generate.placeholder': 'เปลี่ยนชื่อเรื่องของเอกสารในผลลัพธ์เป็น foobar',
+  /** Shown while the first attempt at the mutations is written */
+  'vista.mutate.generate.progress': 'กำลังเขียนการเปลี่ยนแปลงข้อมูล…',
+  /** Shown while an attempt the dry run turned down is retried */
+  'vista.mutate.generate.progress-retry':
+    'กำลังแก้ไขการเปลี่ยนแปลงข้อมูล (ความพยายามที่ {{attempt}} จาก {{max}})…',
+  /** Under the dry run: the fields the diffs leave out */
+  'vista.mutate.hiding': 'การเปลี่ยนแปลงไม่รวม {{fields}} เช่นเดียวกับที่ประวัติทำ',
+  /** Shown when the mutations are not valid JSON */
+  'vista.mutate.invalid-json': 'การเปลี่ยนแปลงข้อมูลไม่ใช่ JSON ที่ถูกต้อง: {{message}}',
+  /** Shown when a mutation does not name exactly one thing to do */
+  'vista.mutate.invalid-mutation':
+    'การเปลี่ยนแปลงข้อมูลที่ {{index}} ต้องมีอย่างใดอย่างหนึ่งเพียงรายการเดียวจาก create, createOrReplace, createIfNotExists, delete หรือ patch',
+  /** Label of the mutations editor */
+  'vista.mutate.mutations': 'การเปลี่ยนแปลงข้อมูล',
+  /** The dry run touched no documents */
+  'vista.mutate.no-documents': 'การเปลี่ยนแปลงข้อมูลไม่มีผลกับเอกสารใดเลย',
+  /** Shown when the JSON is not a list of mutations */
+  'vista.mutate.not-a-list':
+    'เขียนรายการของการเปลี่ยนแปลงข้อมูล การเปลี่ยนแปลงข้อมูลเดี่ยว หรือเนื้อหาคำขอที่มีรายการของการเปลี่ยนแปลงข้อมูล',
+  /** A document the mutations create */
+  'vista.mutate.operation.create': 'สร้าง',
+  /** A document the mutations delete */
+  'vista.mutate.operation.delete': 'ลบ',
+  /** A document the mutations touch without changing its content */
+  'vista.mutate.operation.none': 'ไม่มีการเปลี่ยนแปลง',
+  /** A document the mutations change */
+  'vista.mutate.operation.update': 'อัปเดต',
+  /** Button running the mutations as a dry run */
+  'vista.mutate.preview': 'ทดลองรัน',
+  /** Heading of the error shown when the dry run failed */
+  'vista.mutate.preview-failed': 'การทดลองรันล้มเหลว',
+  /** Heading of the dry run's outcome */
+  'vista.mutate.preview-heading': 'ทดลองรัน',
+  /** Shown over a dry run made for other mutations, another dataset or other options */
+  'vista.mutate.stale': 'มิวเทชัน, ชุดข้อมูล หรือตัวเลือกมีการเปลี่ยนแปลงหลังจากการทดลองรันนี้ รันอีกครั้งเพื่อนำไปใช้',
+  /** How many documents the dry run changes and leaves as they are */
+  'vista.mutate.summary': 'เปลี่ยนแปลง: {{changed}} · ไม่เปลี่ยนแปลง: {{unchanged}}',
+  /** In the Network panel: whether a cache answered the query */
+  'vista.network.cache': 'แคช',
+  /** The API CDN answered from its cache */
+  'vista.network.cache.hit': 'ตรงกับแคช',
+  /** Under the details of a CDN cache hit */
+  'vista.network.cache.hit-explained':
+    'CDN ตอบกลับด้วยคำตอบที่แคชไว้ จากตำแหน่งที่อยู่ใกล้คุณ คิวรีนี้ไม่ได้ไปถึง API',
+  /** The API CDN answered with a response this session had not seen */
+  'vista.network.cache.miss': 'ไม่ตรงกับแคช เท่าที่เซสชันนี้ตรวจพบ',
+  /** The API answered, which caches nothing */
+  'vista.network.cache.none': 'ไม่มี, API จะตอบทุกคำขอด้วยเนื้อหาใหม่เสมอ',
+  /** Shown in the Network panel while there is no response */
+  'vista.network.empty': 'เรียกใช้คิวรีเพื่อดูว่าเอ็นด์พอยท์ใดเป็นผู้ตอบกลับ ตอบจากแคชหรือไม่ และรันที่ไหน',
+  /** In the Network panel: the endpoint that answered */
+  'vista.network.endpoint': 'ตอบกลับโดย',
+  /** The live API answered */
+  'vista.network.endpoint.api': 'API',
+  /** The API CDN answered */
+  'vista.network.endpoint.cdn': 'API CDN',
+  /** In the Network panel: the region the query ran in */
+  'vista.network.region': 'คิวรีรันที่',
+  /** The response did not say where the query ran */
+  'vista.network.region.unknown': 'ไม่มีการรายงาน',
+  /** In the Network panel: the round trip and the time on the server */
+  'vista.network.timing': 'เวลา',
+  /** The round trip and the server's time for the query, in milliseconds */
+  'vista.network.timing.value': '{{e2e}}มิลลิวินาที round trip, {{server}}มิลลิวินาทีบนเซิร์ฟเวอร์',
+  /** In the Network panel: the trace of the request, for Sanity support */
+  'vista.network.trace': 'Trace ID',
+  /** Hint in the Network panel while queries go to the API */
+  'vista.network.use-cdn-hint': 'เปิดใช้งาน Use the API CDN ในตัวเลือกเพื่อส่งคิวรีผ่าน CDN',
+  /** Label of the browser's marker on the Network panel's globe, placed from its time zone */
+  'vista.network.you': 'คุณ',
+  /** Hint under the dataset field while the tab follows the workspace's dataset */
+  'vista.options.dataset.follows-workspace': 'ตามชุดข้อมูลของพื้นที่ทำงาน',
+  /** Button that pins the current dataset so the tab stops following the workspace */
+  'vista.options.dataset.pin': 'ปักหมุดชุดข้อมูล',
+  /** Hint under the dataset field while a dataset is pinned */
+  'vista.options.dataset.pinned': 'ปักหมุดแล้ว เวิร์กスペースอาจใช้ชุดข้อมูลอื่น',
+  /** Button that makes the tab follow the workspace's dataset again */
+  'vista.options.dataset.use-workspace': 'ใช้ชุดข้อมูลของเวิร์กスペース',
+  /** Label for the "Include content source map" switch */
+  'vista.options.include-source-map': 'รวม content source map',
+  /** Description for the "Include content source map" switch */
+  'vista.options.include-source-map.description':
+    'เพิ่ม resultSourceMap ลงในการตอบกลับ ซึ่งจะแสดงในแท็บ Content Source Map',
+  /** Perspective option following the studio navbar; the name is the release, published or drafts */
+  'vista.options.perspective.global': 'ทั่วไป ({{name}})',
+  /** Label of the switch that sends queries to the API CDN */
+  'vista.options.use-cdn': 'ใช้ API CDN',
+  /** Note under the API CDN switch while the studio signs in with a cookie */
+  'vista.options.use-cdn.anonymous':
+    'สตูดิโอนี้ลงชื่อเข้าใช้คุณด้วยคุกกี้ ซึ่ง API CDN จะไม่ได้รับเลย: มันจะตอบสนองเหมือนกับผู้เยี่ยมชมที่ไม่ระบุตัวตน โดยแสดงสิ่งที่ชุดข้อมูลสาธารณะแสดง',
+  /**
+   * Why the API CDN is asked for but not used: the perspective is the one the perspective
+   * select shows, such as "Global (drafts)"
+   */
+  'vista.options.use-cdn.blocked':
+    'API CDN ไม่ให้บริการ drafts หรือ releases ดังนั้นคำค้นหาที่ใช้เพอร์สเปกทีฟ {{perspective}} จะไปที่ API แทน ส่วนคำค้นหาที่ใช้เพอร์สเปกทีฟ published หรือ raw จะใช้ CDN',
+  /** Heading of the notice shown while the perspective keeps queries off the API CDN */
+  'vista.options.use-cdn.blocked.title': 'คำค้นหาไปที่ API ไม่ใช่ CDN',
+  /** Description of the API CDN switch */
+  'vista.options.use-cdn.description':
+    'ส่งคำค้นหาไปยัง API CDN เช่นเดียวกับ useCdn: true ใน @sanity/client โดยใช้กับเพอร์สเปกทีฟ published และ raw: drafts และ releases จะไปที่ API เสมอ คำตอบจะถูกแคชไว้นานสุดหนึ่งนาที แผง Network จะแสดงเมื่อคำตอบมาจากแคช',
+  /** Button in the API CDN notice switching the tab to the published perspective */
+  'vista.options.use-cdn.use-published': 'ใช้เพอร์สเปกทีฟ published',
+  /** Label of the variant field */
+  'vista.options.variant-label': 'ตัวแปร',
+  /** Variant option sending the navbar's variant, named */
+  'vista.options.variant.global': 'ทั่วไป ({{name}})',
+  /** Variant option sending the navbar's variant while none is selected there */
+  'vista.options.variant.global-none': 'ทั่วไป (ยังไม่ได้เลือก)',
+  /** Variant option sending no variant */
+  'vista.options.variant.none': 'ไม่มี',
+  /** Accessible label for collapsing a bottom panel */
+  'vista.panel.collapse': 'ยุบแผง',
+  /** Label of the Delta tab in the response panel, which tests the query in delta mode */
+  'vista.panel.delta': 'Delta',
+  /** Accessible label for expanding a bottom panel */
+  'vista.panel.expand': 'ขยายแผง',
+  /** Label of the "Explain" tab in the response panel: the query plan and an explanation */
+  'vista.panel.explain': 'Explain',
+  /** Label of the Functions tab in the response panel */
+  'vista.panel.functions': 'Functions',
+  /** Label of the "History" tab in the response panel */
+  'vista.panel.history': 'ประวัติ',
+  /** Label of the "Lint" tab in the response panel, listing the query's lint findings */
+  'vista.panel.lint': 'Lint',
+  /** Label of the Mutate tab in the response panel, which runs and applies mutations */
+  'vista.panel.mutate': 'Mutate',
+  /** Label of the Network tab in the response panel */
+  'vista.panel.network': 'Network',
+  /** Label of the "Options" panel in the request column */
+  'vista.panel.options': 'ตัวเลือก',
+  /** Label of the "Response" tab in the response panel */
+  'vista.panel.response': 'การตอบกลับ',
+  /** Label of the "Content Source Map" tab in the response panel */
+  'vista.panel.source-map': 'แผนผังแหล่งที่มาของเนื้อหา',
+  /** Button adding an item to a list param in the params form */
+  'vista.params-form.add-item': 'เพิ่มรายการ',
+  /** Placeholder of a params form field that takes any JSON value */
+  'vista.params-form.any-placeholder': 'ค่า JSON ใดก็ได้ ข้อความอื่นจะถูกส่งเป็นสตริง',
+  /** Shown in the params form when the query uses no params */
+  'vista.params-form.empty': 'คิวรีนี้ไม่ได้ใช้พารามิเตอร์ใด ๆ แต่ละ $name ในคิวรีจะมีช่องกรอกข้อมูลอยู่ที่นี่',
+  /** Shown in the params form while the params JSON cannot be parsed */
+  'vista.params-form.invalid-json': 'พารามิเตอร์ไม่ใช่ JSON ที่ถูกต้อง แก้ไขในมุมมอง JSON เพื่อแก้ไขที่นี่',
+  /** A boolean param's value is not true or false; it is sent anyway */
+  'vista.params-form.invalid.boolean': 'ไม่ใช่ true หรือ false แต่ยังคงถูกส่งเป็น {{value}}',
+  /** A document type param's value is not a document type of the workspace; it is sent anyway */
+  'vista.params-form.invalid.document-type': 'ไม่ใช่ประเภทเอกสารในเวิร์กスペースนี้ แต่จะยังถูกส่งอยู่ดี',
+  /** A whole number param (a slice bound) holds a fraction */
+  'vista.params-form.invalid.integer': 'ไม่ใช่จำนวนเต็ม ซึ่งการแบ่งส่วนต้องการ',
+  /** A list param's value is not a list; it is sent anyway */
+  'vista.params-form.invalid.list': 'ไม่ใช่รายการ แต่ยังคงถูกส่งเป็น {{value}}',
+  /** A number param's value is not a number; it is sent anyway */
+  'vista.params-form.invalid.number': 'ไม่ใช่ตัวเลข ถูกส่งเป็นข้อความ',
+  /** A param's value is not one of the values the schema allows; it is sent anyway */
+  'vista.params-form.invalid.option': 'ไม่ใช่ค่าที่รู้จัก แต่ยังคงถูกส่งอยู่ดี',
+  /** A text param's value is not text; it is sent anyway */
+  'vista.params-form.invalid.string': 'ไม่ใช่ข้อความ แต่ยังคงถูกส่งเป็น {{value}}',
+  /** Accessible label of an item input of a list param in the params form */
+  'vista.params-form.item-label': '${{name}}, รายการที่ {{index}}',
+  /** Placeholder of an item input of a list param in the params form */
+  'vista.params-form.item-placeholder': 'รายการ',
+  /** Under a params form field whose param has no value */
+  'vista.params-form.missing': 'ยังไม่ได้ตั้งค่า: คิวรีจะล้มเหลวจนกว่าจะมีค่า',
+  /** Shown in the params form when the workspace schema could not be read */
+  'vista.params-form.no-schema': 'ประเภทข้อมูลมาจากคิวรีเพียงอย่างเดียว: ไม่สามารถอ่านสคีมาของเวิร์กスペースได้',
+  /** Placeholder of a params form field without a value, and the unset choice of a boolean */
+  'vista.params-form.not-set': 'ยังไม่ได้ตั้งค่า',
+  /** Button setting a date and time param to the current time */
+  'vista.params-form.now': 'ตอนนี้',
+  /** Button removing a param the query does not use from the params */
+  'vista.params-form.remove': 'ลบ',
+  /** Accessible label of the button removing an item from a list param */
+  'vista.params-form.remove-item': 'ลบรายการ',
+  /** Shown in the params form when the query does not parse */
+  'vista.params-form.syntax-error': 'ไม่สามารถแยกวิเคราะห์คิวรีได้ จึงแสดงพารามิเตอร์โดยไม่มีประเภทข้อมูล',
+  /** Type hint of a params form field: any JSON value */
+  'vista.params-form.type.any': 'ค่า JSON ใดก็ได้',
+  /** Type hint of a params form field: true or false */
+  'vista.params-form.type.boolean': 'true หรือ false',
+  /** Type hint of a params form field: an ISO 8601 date and time */
+  'vista.params-form.type.datetime': 'วันที่และเวลา (ISO 8601)',
+  /** Type hint of a params form field: a document ID */
+  'vista.params-form.type.document-id': 'ไอดีเอกสาร',
+  /** Type hint of a params form field: one of the workspace's document types */
+  'vista.params-form.type.document-type': 'ประเภทเอกสาร',
+  /** Type hint of a params form field: a whole number */
+  'vista.params-form.type.integer': 'จำนวนเต็ม',
+  /** Type hint of a params form field: a list of values */
+  'vista.params-form.type.list': 'รายการ แต่ละรายการเป็น {{type}}',
+  /** Type hint of a params form field: a number */
+  'vista.params-form.type.number': 'ตัวเลข',
+  /** Type hint of a params form field: text */
+  'vista.params-form.type.string': 'ข้อความ',
+  /** Heading of the params the query does not use, listed in the params form */
+  'vista.params-form.unused': 'ไม่ได้ใช้โดยคิวรี',
+  /** Before the expressions that use a param, in the params form */
+  'vista.params-form.used-in': 'ใช้ใน',
+  /** Value announced for the params resize handle while the panel sizes itself to its content */
+  'vista.params.fit-height': 'ปรับขนาดตามเนื้อหา, {{height}} พิกเซล',
+  /** Accessible label and tooltip of the handle for resizing the params panel */
+  'vista.params.resize':
+    'ปรับขนาดพารามิเตอร์: ลากหรือใช้ปุ่มลูกศร; ดับเบิลคลิกหรือกด Enter เพื่อปรับให้พอดีกับเนื้อหาอีกครั้ง',
+  /** Tab showing the params as a form inferred from the query */
+  'vista.params.view.form': 'ฟอร์ม',
+  /** Tab showing the params as JSON */
+  'vista.params.view.json': 'JSON',
+  /** Accessible label of the tabs switching how the params are edited */
+  'vista.params.view.label': 'แก้ไขพารามิเตอร์เป็น',
+  /** Toast shown after a query URL was pasted and loaded into the tab */
+  'vista.paste.parsed': 'โหลดคิวรีจาก URL ที่วางแล้ว',
+  /** Toast shown when a pasted URL used a content variant the tab does not send */
+  'vista.paste.unavailable-variant':
+    'URL ที่วางใช้ variant "{{variant}}"; เลือกใน navbar เพื่อรันคิวรีด้วย variant นี้',
+  /** Toast shown when the dataset of a pasted URL is not available here */
+  'vista.paste.unknown-dataset':
+    'ชุดข้อมูล "{{dataset}}" ใน URL ที่วางไม่สามารถใช้งานได้ที่นี่ จึงยังคงใช้ชุดข้อมูลปัจจุบัน',
+  /** Toast shown when the perspective of a pasted URL cannot be used */
+  'vista.paste.unsupported-perspective':
+    'perspective ใน URL ที่วางไม่รองรับที่นี่ จึงยังคงใช้ perspective ปัจจุบัน',
+  /** Toast shown when a pasted URL used a content variant, but this workspace has variants switched off */
+  'vista.paste.variants-disabled':
+    'URL ที่วางใช้ variant "{{variant}}"; เวิร์กสเปซนี้ปิดการใช้งาน variant ไว้ จึงรันคิวรีโดยไม่มี variant นี้',
+  /** Accessible label for the query actions menu */
+  'vista.query.actions': 'การดำเนินการกับคิวรี',
+  /** Tooltip when automatic refetching is not available for the API version */
+  'vista.query.auto-refetch.unsupported':
+    'การดึงข้อมูลใหม่โดยอัตโนมัติต้องใช้ API เวอร์ชัน v2021-03-25 หรือใหม่กว่า',
+  /** Toast shown after the query was copied */
+  'vista.query.copied': 'คัดลอกคิวรีไปยังคลิปบอร์ดแล้ว',
+  /** Menu item copying the query text */
+  'vista.query.copy': 'คัดลอกคิวรี',
+  /** Menu item opening the export query dialog */
+  'vista.query.export': 'ส่งออกคิวรี…',
+  /** Menu item reformatting the query */
+  'vista.query.prettify': 'จัดรูปแบบคิวรี',
+  /** Toast shown when the query could not be reformatted */
+  'vista.query.prettify.failed': 'ไม่สามารถจัดรูปแบบคิวรีได้',
+  /** Menu item saving the query to the personal saved queries */
+  'vista.query.save': 'บันทึกคำสั่ง query',
+  /** The Fetch button while a fetch is running, stopping it; paired with Stop live */
+  'vista.query.stop': 'หยุด',
+  /** Tooltip and accessible label of the Stop button, which stops the running fetch only */
+  'vista.query.stop.description': 'หยุดการดึงข้อมูล',
+  /** Explanation in the settings section about the redesigned experience */
+  'vista.redesign.settings.description':
+    'คุณกำลังใช้เครื่องมือ Vision เวอร์ชันออกแบบใหม่ หากสลับกลับไปใช้เวอร์ชันเดิม แท็บและการตั้งค่าของคุณจะยังคงถูกเก็บไว้ในเบราว์เซอร์นี้สำหรับครั้งต่อไปที่คุณลองใช้',
+  /** Title of the settings section about the redesigned experience */
+  'vista.redesign.settings.title': 'Vision ที่ออกแบบใหม่ (เบต้า)',
+  /** Sidebar item and settings button that return to the classic Vision tool */
+  'vista.redesign.switch-to-classic': 'สลับไปใช้ Vision แบบคลาสสิก',
+  /** Toast button that switches to the redesigned tool */
+  'vista.redesign.toast.accept': 'ลองใช้งานตอนนี้',
+  /** Body of the toast inviting users of the classic tool to try the redesign */
+  'vista.redesign.toast.description':
+    'แท็บคำสั่ง query, การดึงข้อมูลแบบเรียลไทม์, รายละเอียดการตอบกลับ และการส่งออกข้อมูล คุณสามารถสลับกลับได้ทุกเมื่อ',
+  /** Toast button that hides the invitation */
+  'vista.redesign.toast.dismiss': 'ไว้ภายหลัง',
+  /** Title of the toast inviting users of the classic tool to try the redesign */
+  'vista.redesign.toast.title': 'ลองใช้ Vision ที่ออกแบบใหม่',
+  /** Button next to Fetch in the classic tool that switches to the redesigned one */
+  'vista.redesign.try': 'ลองใช้เวอร์ชันออกแบบใหม่',
+  /** Tooltip of the button next to Fetch in the classic tool that switches to the redesign */
+  'vista.redesign.try.description':
+    'สลับไปใช้ Vision เวอร์ชันออกแบบใหม่ (เบต้า) คุณสามารถสลับกลับได้ทุกเมื่อจากแถบด้านข้าง',
+  /** Empty state of the response panel before anything was fetched */
+  'vista.response.empty': 'ยังไม่มีการดึงข้อมูล',
+  /** Label for the payload size in the response tab */
+  'vista.response.payload-size': 'ขนาดของ Payload',
+  /** Label for the sync tags in the response tab */
+  'vista.response.sync-tags': 'Sync tags',
+  /** Shown when the response carried no sync tags */
+  'vista.response.sync-tags.none': 'ไม่มี Sync tags ในการตอบกลับ',
+  /** Accessible label for the result actions menu */
+  'vista.result.actions': 'การดำเนินการกับผลลัพธ์',
+  /** Toast shown after the result was copied */
+  'vista.result.copied': 'คัดลอกผลลัพธ์ไปยังคลิปบอร์ดแล้ว',
+  /** Toast shown after a value in the result was copied, with its path such as [0].author.name */
+  'vista.result.copied-value': 'คัดลอก {{path}} แล้ว',
+  /** Menu item and button copying the result as JSON */
+  'vista.result.copy': 'คัดลอกผลลัพธ์',
+  /** Button next to each property in the result tree, copying its value */
+  'vista.result.copy-value': 'คัดลอกค่า',
+  /** Empty state of the result view */
+  'vista.result.empty': 'เรียกใช้คำสั่ง query เพื่อดูผลลัพธ์ที่นี่',
+  /** Button exporting the result as CSV */
+  'vista.result.export-csv': 'ส่งออกเป็น CSV',
+  /** Button exporting the result as JSON */
+  'vista.result.export-json': 'ส่งออกเป็น JSON',
+  /** Menu item opening the TypeScript export dialog */
+  'vista.result.export-typescript': 'ส่งออกเป็น TypeScript…',
+  /** Menu item opening the Zod export dialog */
+  'vista.result.export-zod': 'ส่งออก Zod…',
+  /** Button on a graph node hiding the objects and arrays it holds */
+  'vista.result.graph.collapse': 'ซ่อนสิ่งที่บรรจุอยู่',
+  /** Button fitting the whole graph in view */
+  'vista.result.graph.fit': 'ปรับให้พอดีกับมุมมอง',
+  /** Accessible label of the graph, saying how to move around in it */
+  'vista.result.graph.label':
+    'กราฟผลลัพธ์: ลากเพื่อย้าย เลื่อนเพื่อซูม; เมื่อโฟกัสอยู่ ปุ่มลูกศรใช้เลื่อน, + และ - ใช้ซูม, 0 ใช้ปรับให้พอดี',
+  /** Ends the note on a graph that leaves part of this result out */
+  'vista.result.graph.left-out-hint': 'มุมมองแบบต้นไม้และ JSON จะแสดงทั้งหมด',
+  /** Note on a graph of a result with more objects and arrays than it draws */
+  'vista.result.graph.node-limit': 'วาดเฉพาะอ็อบเจ็กต์และอาร์เรย์ {{nodes}} รายการแรกเท่านั้น',
+  /**
+   * Note on a graph whose objects or arrays have more entries than it lists; the nodes are the
+   * ones in this result, each with its number of entries
+   */
+  'vista.result.graph.partial': 'แสดงรายการเฉพาะ {{rows}} รายการแรกสำหรับ {{nodes}}',
+  /** An object or array in the note, with how many entries it has (always more than listed) */
+  'vista.result.graph.partial.node': '{{name}} ({{entries}} รายการ)',
+  /** Title of the graph node of the result itself */
+  'vista.result.graph.root': 'ผลลัพธ์',
+  /** Button zooming into the graph */
+  'vista.result.graph.zoom-in': 'ซูมเข้า',
+  /** Button zooming out of the graph */
+  'vista.result.graph.zoom-out': 'ซูมออก',
+  /** Tab showing the result as a graph of its objects and arrays */
+  'vista.result.view.graph': 'กราฟ',
+  /** Tab showing the result as indented JSON text, to select and copy from */
+  'vista.result.view.json': 'JSON',
+  /** Accessible label of the tabs that switch how the result shows */
+  'vista.result.view.label': 'มุมมองผลลัพธ์',
+  /** Tab showing the result as a tree to browse */
+  'vista.result.view.tree': 'ต้นไม้',
+  /** Empty state of the saved queries panel */
+  'vista.saved.empty': 'ยังไม่มีการบันทึกคำค้นหา บันทึกคำค้นหาปัจจุบันด้วยปุ่ม +',
+  /** Empty state of a query list when the search matches nothing */
+  'vista.saved.empty-search': 'ไม่พบคำค้นหาที่ตรงกับการค้นหาของคุณ',
+  /** Menu item loading a saved query into the active tab */
+  'vista.saved.load-in-current-tab': 'โหลดเข้าแท็บปัจจุบัน',
+  /** Menu item opening a saved query in a new tab */
+  'vista.saved.open-in-new-tab': 'เปิดในแท็บใหม่',
+  /** Menu item renaming a saved query */
+  'vista.saved.rename': 'เปลี่ยนชื่อ',
+  /** Accessible label for the button saving the current query */
+  'vista.saved.save-current': 'บันทึกคำค้นหาปัจจุบัน',
+  /** Toast shown when an opened saved query used a content variant the tab does not send */
+  'vista.saved.unavailable-variant':
+    'คำค้นหาที่บันทึกไว้นี้ใช้รูปแบบ "{{variant}}" เลือกรูปแบบนี้ในแถบนำทางเพื่อรันคำค้นหาด้วยรูปแบบดังกล่าว',
+  /** Toast shown when an opened saved query names a dataset that is not available here */
+  'vista.saved.unknown-dataset':
+    'ชุดข้อมูล "{{dataset}}" ของคำค้นหาที่บันทึกไว้นี้ไม่พร้อมใช้งานที่นี่ จะยังคงใช้ชุดข้อมูลปัจจุบัน',
+  /** Toast shown when an opened saved query used a content variant, but this workspace has variants switched off */
+  'vista.saved.variants-disabled':
+    'คำค้นหาที่บันทึกไว้นี้ใช้รูปแบบ "{{variant}}" พื้นที่ทำงานนี้ปิดการใช้งานรูปแบบไว้ จึงจะรันคำค้นหาโดยไม่ใช้รูปแบบดังกล่าว',
+  /** Button in the settings dialog that clears the stored state */
+  'vista.settings.clear-storage': 'ล้างข้อมูลที่จัดเก็บ',
+  /** Confirmation button for clearing the storage */
+  'vista.settings.clear-storage.confirm': 'ใช่ ล้างที่เก็บข้อมูล',
+  /** Explanation of what clearing the storage does */
+  'vista.settings.clear-storage.description':
+    'ลบคิวรีที่บันทึกไว้ส่วนตัวและไลบรารีฟังก์ชันของคุณ รีเซ็ตแท็บที่เปิดอยู่และค่าเริ่มต้นเหล่านี้ในเบราว์เซอร์นี้ และกลับไปใช้เครื่องมือ Vision แบบคลาสสิก คิวรีที่แชร์ไว้จะยังคงอยู่',
+  /** Toast shown when the saved queries could not be cleared */
+  'vista.settings.clear-storage.error': 'ไม่สามารถล้างคิวรีที่บันทึกไว้ได้',
+  /** Toast shown after the storage was cleared */
+  'vista.settings.clear-storage.success': 'ล้างที่เก็บข้อมูลแล้ว',
+  /** Explanation at the top of the settings dialog */
+  'vista.settings.description': 'ค่าเริ่มต้นสำหรับแท็บใหม่ แท็บที่เปิดอยู่จะคงตัวเลือกของตัวเองไว้',
+  /** Explains the setting listing the fields left out of History diffs */
+  'vista.settings.history-diff.description':
+    'หนึ่งพาธฟิลด์ต่อบรรทัด พาธจะจับคู่ที่ความลึกใดก็ได้ของผลลัพธ์ ดังนั้น _rev จะซ่อนการแก้ไขของเอกสารทุกฉบับในนั้น แต่ละ diff ยังคงสามารถแสดงได้',
+  /** Button restoring the default fields left out of History diffs */
+  'vista.settings.history-diff.reset': 'รีเซ็ตเป็นค่าเริ่มต้น',
+  /** Label of the setting listing the fields left out of History diffs */
+  'vista.settings.history-diff.title': 'ฟิลด์ที่ซ่อนจาก History diffs',
+  /** Title of the settings dialog */
+  'vista.settings.title': 'การตั้งค่า',
+  /** Empty state of the shared queries panel */
+  'vista.shared.empty': 'ยังไม่มีคิวรีที่แชร์ แชร์คิวรีที่บันทึกไว้เพื่อให้ทุกคนที่ใช้ชุดข้อมูลนี้สามารถใช้งานได้',
+  /** Shortcut description: close dialogs and menus */
+  'vista.shortcuts.close': 'ปิดกล่องโต้ตอบและเมนู',
+  /** Shortcut that lists the functions matching the name being typed in the query editor */
+  'vista.shortcuts.complete': 'เติมชื่อฟังก์ชันให้สมบูรณ์',
+  /** Shortcut description: copy the query */
+  'vista.shortcuts.copy-query': 'คัดลอกคิวรี',
+  /** Shortcut that turns the selected projection, or the one around the cursor, into a custom function */
+  'vista.shortcuts.extract-function': 'แยกโปรเจกชันที่เคอร์เซอร์ไปเป็นฟังก์ชัน',
+  /** Shortcut description: run the query */
+  'vista.shortcuts.fetch': 'ดึงข้อมูลคิวรี',
+  /** Shortcut description: move the cursor to the next lint finding in the query editor */
+  'vista.shortcuts.next-finding': 'ไปยังผลการตรวจสอบ lint ถัดไป',
+  /** Shortcut description: reformat the query */
+  'vista.shortcuts.prettify': 'จัดรูปแบบคิวรีให้สวยงาม',
+  /** Title of the keyboard shortcuts dialog */
+  'vista.shortcuts.title': 'แป้นพิมพ์ลัด',
+  /** Sidebar toggle: show icons only */
+  'vista.sidebar.collapse': 'ย่อแถบด้านข้าง',
+  /** Sidebar toggle: show labels next to the icons */
+  'vista.sidebar.expand': 'ขยายแถบด้านข้าง',
+  /** Accessible label for the sidebar navigation */
+  'vista.sidebar.label': 'แถบด้านข้างของ Vista',
+  /** Sidebar item and drawer title for personal saved queries */
+  'vista.sidebar.saved-queries': 'คิวรีที่บันทึกไว้',
+  /** Sidebar item opening the settings dialog */
+  'vista.sidebar.settings': 'การตั้งค่า',
+  /** Sidebar item and drawer title for shared queries */
+  'vista.sidebar.shared-queries': 'คิวรีที่แชร์',
+  /** Sidebar item opening the keyboard shortcuts dialog */
+  'vista.sidebar.shortcuts': 'แป้นพิมพ์ลัด',
+  /** Empty state of the content source map panel */
+  'vista.source-map.empty':
+    'ไม่มีแผนที่แหล่งที่มาของเนื้อหาในคำตอบ เปิด "รวมแผนที่แหล่งที่มาของเนื้อหา" ภายใต้ตัวเลือก แล้วดึงข้อมูลอีกครั้ง',
+  /** Accessible label of the divider between the result and the response details panel */
+  'vista.split.bottom-panel':
+    'ปรับขนาดแผงรายละเอียดคำตอบ: ลากหรือใช้ปุ่มลูกศร; Home และ End ไปยังขอบเขต, Enter รีเซ็ต',
+  /** Accessible label of the divider between the request and response panes */
+  'vista.split.request-response':
+    'ปรับขนาดแผงคำขอและคำตอบ: ลากหรือใช้ปุ่มลูกศร; Home และ End ไปยังขอบเขต, Enter รีเซ็ต',
+  /** Accessible label for the button closing a query tab */
+  'vista.tabs.close-tab': 'ปิดแท็บ',
+  /** Accessible label for the list of query tabs */
+  'vista.tabs.label': 'แท็บคำสั่งค้นหา',
+  /** Accessible label for the button opening a new query tab */
+  'vista.tabs.new-tab': 'แท็บใหม่',
+  /** Placeholder of the input renaming a tab */
+  'vista.tabs.title-placeholder': 'ชื่อแท็บ',
+  /** Title of a tab whose query is still empty */
+  'vista.tabs.untitled': 'คำสั่งค้นหาที่ไม่มีชื่อ',
+  /** Title the browser shows for the WebMCP tool that lints a query */
+  'vista.webmcp.check-query': 'ตรวจสอบคำสั่งค้นหา GROQ ใน Vision',
+  /** Title the browser shows for the WebMCP tool that describes the workspace schema */
+  'vista.webmcp.describe-schema': 'อธิบายสคีมาใน Vision',
+  /** Title the browser shows for the WebMCP tool that returns a query plan */
+  'vista.webmcp.explain-query': 'อธิบายแผนการทำงานของคำสั่งค้นหา GROQ ใน Vision',
+  /** Title the browser shows for the WebMCP tool that reads the active Vision tab */
+  'vista.webmcp.get-state': 'อ่านแท็บ Vision ที่เปิดอยู่',
+  /** Title the browser shows for the WebMCP tool that opens a query in a new tab */
+  'vista.webmcp.open-query': 'เปิดคำสั่งค้นหา GROQ ใน Vision',
+  /** Title the browser shows for the WebMCP tool that runs mutations as a dry run */
+  'vista.webmcp.preview-mutations': 'ดูตัวอย่างการเปลี่ยนแปลงข้อมูลใน Vision',
+  /** Title the browser shows for the WebMCP tool that runs a query */
+  'vista.webmcp.run-query': 'เรียกใช้คำสั่งค้นหา GROQ ใน Vision',
 })

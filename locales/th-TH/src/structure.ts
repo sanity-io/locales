@@ -166,6 +166,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่ถูกเผยแพร่เป็นส่วนหนึ่งของ <VersionBadge>การปล่อย</VersionBadge> ไม่สามารถแก้ไขได้',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'ดูฉบับร่าง',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text': 'นี่คือเอกสารที่เผยแพร่แล้ว สลับไปที่ฉบับร่างเพื่อแก้ไข',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'โหลดข้อมูลอ้างอิงใหม่',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -471,6 +475,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'เพิ่มลงในรายการโปรด',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'ลบออกจากรายการโปรด',
+  /** Details about a singleton document */
+  'document.singleton.details': 'นี่คือเอกสารแบบเดี่ยว (singleton) ที่มีรหัส "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'เอกสารแบบเดี่ยว',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':

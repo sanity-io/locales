@@ -109,6 +109,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'เลือกเอกสาร',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'ชื่องาน',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'ไม่สามารถสร้างงานได้ โปรดลองอีกครั้ง',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'ต้องการชื่อ',
   /** The status message upon successful creation of a task */
@@ -148,6 +150,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'เปิดงาน',
   /** Title of the Tasks panel   */
   'panel.title': 'งาน',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'ขณะนี้ไม่สามารถใช้งานฟีเจอร์งานได้ โปรดลองอีกครั้งในภายหลัง',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'ที่ได้รับมอบหมาย',
