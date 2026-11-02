@@ -118,6 +118,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Seleziona documento di destinazione',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': "Titolo dell'incarico",
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': "Impossibile creare l'attività, riprova",
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Il titolo è obbligatorio',
   /** The status message upon successful creation of a task */
@@ -158,6 +160,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Apri gli incarichi',
   /** Title of the Tasks panel   */
   'panel.title': 'Incarichi',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Le attività non sono disponibili al momento. Riprova più tardi.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Assegnati',
