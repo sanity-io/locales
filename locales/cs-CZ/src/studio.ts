@@ -25,6 +25,18 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopírovat do schránky',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Současná verze',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': undefined, // 'v{{version}} has been deprecated and should no longer be used.'
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': undefined, // 'Deprecated version'
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned': undefined, // 'This Studio is pinned to a deprecated version. Choose a different version in Manage.'
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade': undefined, // 'Update the sanity package to a newer version and redeploy the Studio.'
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': undefined, // 'Learn how to update'
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': undefined, // 'Reason: {{reason}}'
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Jak aktualizovat',
   /** "Latest version" header in version info dialog */
@@ -38,6 +50,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Znovu načíst',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Znovu načíst Studio pro aktualizaci',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': undefined, // 'Deprecated'
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Vývoj',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +137,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Zrušit',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Vybrat',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': undefined, // 'Select file'
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': undefined, // 'Select image'
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -191,9 +211,14 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': 'Více informací naleznete v konzoli.',
   'asset-sources.common.uploader.upload-failed.title': 'Nahrávání selhalo',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': undefined, // 'Using the existing file found in this source.'
+  'asset-sources.common.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Soubory pracovního prostoru',
   'asset-sources.dataset.image.title': 'Obrázky pracovního prostoru',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable': undefined, // 'This asset source failed to load. Close the dialog and try again.'
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Něco se pokazilo při pokusu o vyřešení Media Library pro tento projekt.',
@@ -212,14 +237,17 @@ export default removeUndefinedLocaleResources({
     'Vyberte nový asset',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Upravit asset',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Nahrát do knihovny médií',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Používá se existující soubor nalezený v knihovně.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Soubor: '{{filename}}' již existuje",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been archived.'
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Vydání '<strong>{{title}}</strong>' bylo smazáno.",
 
@@ -488,8 +516,6 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other': '{{count}} nevyřešených změn ve verzi {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Zrušit',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Správa verzí',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -736,6 +762,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Znovu načíst pro aktualizaci na verzi v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verze Sanity Studio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': undefined, // 'v{{version}} is deprecated'
   /** Title for help and resources menus */
   'help-resources.title': 'Nápověda a zdroje',
   /** Label for studio's which are up to date */
@@ -743,6 +771,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': undefined, // 'Close incoming references'
   /**Incoming references inspector title */
   'incoming-references.title': 'Příchozí reference',
 
@@ -783,11 +813,19 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Odstranit',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Odstranit',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': undefined, // 'Show 1 item'
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': undefined, // 'Show all {{count}} items'
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': undefined, // 'Show fewer items'
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Zobrazit {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Tuto položku můžete stále přesunout nebo odstranit, ale nelze ji upravit, protože definice schématu pro její typ nebyla nalezena.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description': undefined, // 'Unable to resolve initial value for type: {{schemaTypeTitle}}: {{errorMessage}}.'
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Nelze vyřešit počáteční hodnotu pro typ: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1217,6 +1255,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Úchyt řádku',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Vybrat tabulku',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': undefined, // 'Annotation not defined in the schema: {{name}}'
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': undefined, // 'List type not defined in the schema: {{name}}'
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': undefined, // 'Mark not defined in the schema: {{name}}'
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': undefined, // 'Style not defined in the schema: {{name}}'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Vymazat',
   /** Label for action to copy the current item (used within arrays) */
@@ -1436,6 +1482,8 @@ export default removeUndefinedLocaleResources({
     'Váš prohlížeč používá zastaralý HTTP protokol pro komunikaci se Sanity. To může vést k výraznému snížení výkonu.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Zjistit více',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': undefined, // 'Opens the Sanity documentation in a new tab'
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Znovu nezobrazovat v této relaci',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1486,6 +1534,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Není v dokumentu',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Kdo je zde',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': undefined, // 'Untitled'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Bez názvu',
@@ -1524,6 +1578,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Nové vydání',
   'release.action.new-release.limit-reached_other':
     'Tento pracovní prostor je omezen na {{count}} vydání',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': undefined, // 'Pause to edit'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemáte oprávnění k provedení této akce',
   /** Action message for running a scheduled draft immediately */
@@ -1619,6 +1675,10 @@ export default removeUndefinedLocaleResources({
     'Váš naplánovaný koncept má odlišné změny než váš aktuální koncept.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Smazat naplánovaný koncept',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation': undefined, // 'Your current draft could not be loaded. Copying your scheduled changes will overwrite it.'
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation': undefined, // 'Your scheduled draft could not be loaded. Copying it could overwrite your draft with the wrong content.'
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Vyberte nové datum a čas pro naplánované publikování.',
   /** Confirm button text for change schedule dialog */
@@ -1672,13 +1732,9 @@ export default removeUndefinedLocaleResources({
     'Naplánujte toto vydání na budoucí čas a datum.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Naplánovat na',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Toto vydání bylo odšpendleno',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Vydání '{{title}}' bylo archivováno",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Nepodařilo se vytvořit vydání',
@@ -1703,13 +1759,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Naplánovaný koncept dokumentu <strong>{{title}}</strong> byl publikován.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Toto vydání bylo odšpendleno',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Vydání '{{title}}' bylo publikováno",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1721,9 +1773,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Nepodařilo se naplánovat koncept: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Koncept byl úspěšně naplánován',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Naplánovaný koncept byl publikován',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Verze tohoto dokumentu již byla přidána',
@@ -1756,6 +1806,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Naplánovaná publikace',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': undefined, // 'Dataset'
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': undefined, // 'Project ID'
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': undefined, // 'Source'
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': undefined, // 'Error location'
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': undefined, // 'Workspace'
+  /** Title for the schema errors screen */
+  'schema-errors.title': undefined, // 'Schema errors'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otevřít vyhledávání',

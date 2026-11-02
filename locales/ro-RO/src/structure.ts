@@ -180,6 +180,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Vizualizați un document în modul doar-citire care a fost publicat ca parte a <VersionBadge>{{title}}</VersionBadge>. Nu poate fi editat',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': undefined, // 'View draft'
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text': undefined, // 'This is a published document. Switch to drafts to edit it.'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Reîncărcați referința',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -498,6 +502,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Adaugă la favorite',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Șterge din favorite',
+  /** Details about a singleton document */
+  'document.singleton.details': undefined, // 'This is a singleton document with id "{{documentGroupId}}"'
+  /** The label describing singleton documents */
+  'document.singleton.label': undefined, // 'Singleton'
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
