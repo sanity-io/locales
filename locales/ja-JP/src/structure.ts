@@ -186,6 +186,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     '公開された<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': '下書きを表示',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'これは公開済みのドキュメントです。編集するには下書きに切り替えてください。',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'リファレンスを再読み込み',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -515,6 +520,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'お気に入りに追加',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'お気に入りから削除',
+  /** Details about a singleton document */
+  'document.singleton.details': 'これはID「{{documentGroupId}}」を持つシングルトンドキュメントです',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'シングルトン',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
