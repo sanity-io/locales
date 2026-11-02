@@ -332,12 +332,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Nemáte oprávnění k zrušení publikování tohoto dokumentu',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} právě upravuje tento dokument v release „{{releaseTitle}}"',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} právě upravuje tento dokument',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Nejsou žádné dokumenty k publikování',
 
@@ -377,10 +371,36 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Tato akce vrátí {{releaseDocumentsLength}} verzí dokumentů.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Předchozí stav {{count}} dokumentu již není k dispozici v historii dokumentu, takže release nelze vrátit zpět.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Předchozí stav {{count}} dokumentů již není k dispozici v historii dokumentu, takže release nelze vrátit zpět.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Kontroluje se historie dokumentu…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Okamžitě vrátit release',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} dokument bude obnoven na svou poslední publikovanou revizi z doby před tímto release.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} dokumentů bude obnoveno na svou poslední publikovanou revizi z doby před tímto release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} dokument bude zrušen z publikování, protože nebyl publikován před tímto release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} dokumentů bude zrušeno z publikování, protože nebyly publikovány před tímto release.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': 'Opravdu chcete vrátit release „{{title}}"?',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Předchozí stav {{count}} dokumentu se nepodařilo určit, takže release nelze vrátit zpět.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Předchozí stav {{count}} dokumentů se nepodařilo určit, takže release nelze vrátit zpět.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Po publikování byly v dokumentech tohoto release provedeny změny. Vrácením tyto změny přepíšete.',

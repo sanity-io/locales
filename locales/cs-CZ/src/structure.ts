@@ -182,6 +182,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Prohlížíte dokument pouze pro čtení, který byl publikován jako součást <VersionBadge>{{title}}</VersionBadge>. Nelze ho upravit',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Zobrazit koncept',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Toto je publikovaný dokument. Chcete-li jej upravit, přepněte se na koncepty.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Znovu načíst referenci',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -524,6 +529,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Přidat do oblíbených',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Odebrat z oblíbených',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Toto je jedinečný dokument (singleton) s id "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Jedinečný dokument',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
