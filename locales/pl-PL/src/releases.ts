@@ -320,11 +320,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Nie masz uprawnień do cofnięcia publikacji tego dokumentu',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': '{{displayName}} edytuje teraz ten dokument w wydaniu „{{releaseTitle}}"',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} edytuje teraz ten dokument',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Brak dokumentów do opublikowania',
 
@@ -355,10 +350,24 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_one':
     'Spowoduje to przywrócenie {{releaseDocumentsLength}} wersji dokumentu.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Poprzedni stan {{count}} dokumentu nie jest już dostępny w historii dokumentu, więc wydania nie można cofnąć.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Sprawdzanie historii dokumentu…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Natychmiast przywróć wydanie',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} dokument zostanie przywrócony do ostatniej opublikowanej wersji sprzed tego wydania.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} dokument zostanie cofnięty z publikacji, ponieważ nie był opublikowany przed tym wydaniem.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Czy na pewno chcesz przywrócić wydanie '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Nie udało się ustalić poprzedniego stanu {{count}} dokumentu, więc wydania nie można cofnąć.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Po opublikowaniu dokumentów w tym wydaniu wprowadzono w nich zmiany. Przywrócenie spowoduje nadpisanie tych zmian.',
