@@ -57,6 +57,8 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlinking':
     '您正在取消 <strong>“{{documentTitle}}”</strong> 与 Canvas 的链接。',
 
+  /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
+  'navigate-to-canvas-doc.error.failed': '打开 Canvas 失败',
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions': '缺少导航到Canvas的权限',
 })
