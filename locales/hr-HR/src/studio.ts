@@ -25,6 +25,18 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopiraj u međuspremnik',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Trenutna verzija',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': undefined, // 'v{{version}} has been deprecated and should no longer be used.'
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': undefined, // 'Deprecated version'
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned': undefined, // 'This Studio is pinned to a deprecated version. Choose a different version in Manage.'
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade': undefined, // 'Update the sanity package to a newer version and redeploy the Studio.'
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': undefined, // 'Learn how to update'
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': undefined, // 'Reason: {{reason}}'
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Kako nadograditi',
   /** "Latest version" header in version info dialog */
@@ -38,6 +50,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Ponovno učitaj',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Ponovno učitaj Studio za ažuriranje',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': undefined, // 'Deprecated'
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Razvoj',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +137,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Odustani',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Odaberi',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': undefined, // 'Select file'
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': undefined, // 'Select image'
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -191,9 +211,14 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     'Za više informacija pogledajte konzolu.',
   'asset-sources.common.uploader.upload-failed.title': 'Prijenos nije uspio',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': undefined, // 'Using the existing file found in this source.'
+  'asset-sources.common.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Datoteke radnog prostora',
   'asset-sources.dataset.image.title': 'Slike radnog prostora',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable': undefined, // 'This asset source failed to load. Close the dialog and try again.'
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Došlo je do pogreške pri pokušaju spajanja Medijske knjižnice.',
@@ -212,14 +237,17 @@ export default removeUndefinedLocaleResources({
     'Odaberite novu datoteku',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Uredi datoteku',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Učitaj u Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Koristi se postojeća datoteka pronađena u knjižnici.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Datoteka: '{{filename}}' već postoji",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been archived.'
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Izdanje '<strong>{{title}}</strong>' je izbrisano.",
 
@@ -491,8 +519,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} neriješenih promjena u verziji {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Odustani',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Upravljanje verzijama',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -739,6 +765,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Ponovno učitaj za ažuriranje na v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Verzija Sanity Studija {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': undefined, // 'v{{version}} is deprecated'
   /** Title for help and resources menus */
   'help-resources.title': 'Pomoć i resursi',
   /** Label for studio's which are up to date */
@@ -746,6 +774,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': undefined, // 'Close incoming references'
   /**Incoming references inspector title */
   'incoming-references.title': 'Dolazne reference',
 
@@ -786,11 +816,19 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Ukloni',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Ukloni',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': undefined, // 'Show 1 item'
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': undefined, // 'Show all {{count}} items'
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': undefined, // 'Show fewer items'
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Pogledaj {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Još uvijek možete premjestiti ili izbrisati ovu stavku, ali je ne možete uređivati jer definicija sheme za njezin tip nije pronađena.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description': undefined, // 'Unable to resolve initial value for type: {{schemaTypeTitle}}: {{errorMessage}}.'
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Nije moguće riješiti početnu vrijednost za tip: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1220,6 +1258,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Ručica retka',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Odaberi tablicu',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': undefined, // 'Annotation not defined in the schema: {{name}}'
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': undefined, // 'List type not defined in the schema: {{name}}'
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': undefined, // 'Mark not defined in the schema: {{name}}'
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': undefined, // 'Style not defined in the schema: {{name}}'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Očisti',
   /** Label for action to copy the current item (used within arrays) */
@@ -1439,6 +1485,8 @@ export default removeUndefinedLocaleResources({
     'Vaš preglednik koristi zastarjeli HTTP protokol za komunikaciju sa Sanity. To može rezultirati znatno smanjenom učinkovitošću.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Saznajte više',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': undefined, // 'Opens the Sanity documentation in a new tab'
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Ne prikazuj ponovno za ovu sesiju',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1489,6 +1537,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Nije u dokumentu',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Tko je ovdje',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': undefined, // 'Untitled'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Bez naslova',
@@ -1527,6 +1581,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Novo Izdanje',
   'release.action.new-release.limit-reached_other':
     'Ovaj radni prostor je ograničen na {{count}} izdanja',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': undefined, // 'Pause to edit'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nemate dopuštenje za izvođenje ove radnje',
   /** Action message for running a scheduled draft immediately */
@@ -1622,6 +1678,10 @@ export default removeUndefinedLocaleResources({
     'Vaš zakazani nacrt ima različite promjene od vašeg trenutnog nacrta.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Izbriši zakazanu skicu',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation': undefined, // 'Your current draft could not be loaded. Copying your scheduled changes will overwrite it.'
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation': undefined, // 'Your scheduled draft could not be loaded. Copying it could overwrite your draft with the wrong content.'
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Odaberite novi datum i vrijeme za zakazano objavljivanje.',
   /** Confirm button text for change schedule dialog */
@@ -1675,13 +1735,9 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Zakažite za budući datum i vrijeme.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Objavi na',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Ovo izdanje je odspojeno',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Izdanje '{{title}}' je arhivirano",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Neuspješno stvaranje izdanja',
@@ -1706,13 +1762,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Zakazani dokument skice <strong>{{title}}</strong> je objavljen.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Ovo izdanje je odspojeno',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Izdanje '{{title}}' je objavljeno",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1724,9 +1776,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Nije uspjelo zakazivanje nacrta: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Nacrt je uspješno zakazan',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Zakazani nacrt je objavljen',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Verzija ovog dokumenta je već dodana',
@@ -1758,6 +1808,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Zakazano objavljivanje',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': undefined, // 'Dataset'
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': undefined, // 'Project ID'
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': undefined, // 'Source'
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': undefined, // 'Error location'
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': undefined, // 'Workspace'
+  /** Title for the schema errors screen */
+  'schema-errors.title': undefined, // 'Schema errors'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Otvori pretragu',

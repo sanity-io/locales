@@ -319,11 +319,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'คุณไม่มีสิทธิ์ยกเลิกการเผยแพร่เอกสารนี้',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': '{{displayName}} กำลังแก้ไขเอกสารนี้ใน release "{{releaseTitle}}" อยู่ในขณะนี้',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} กำลังแก้ไขเอกสารนี้อยู่',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'ไม่มีเอกสารที่จะเผยแพร่',
 
@@ -353,10 +348,20 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'การดำเนินการนี้จะย้อนกลับเอกสาร {{releaseDocumentsLength}} เวอร์ชัน',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other': undefined, // 'The previous state of {{count}} documents is no longer available in the document history, so the release cannot be reverted.'
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': undefined, // 'Checking document history…'
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'ย้อนกลับ release ทันที',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other': undefined, // '{{count}} documents will be restored to their last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other': undefined, // '{{count}} documents will be unpublished because they were not published before this release.'
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "คุณแน่ใจหรือไม่ว่าต้องการย้อนกลับ release '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other': undefined, // 'The previous state of {{count}} documents could not be determined, so the release cannot be reverted.'
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'มีการเปลี่ยนแปลงเอกสารใน release นี้หลังจากที่ถูกเผยแพร่ การย้อนกลับจะเขียนทับการเปลี่ยนแปลงเหล่านี้',

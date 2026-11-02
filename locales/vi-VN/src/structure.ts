@@ -178,6 +178,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Bạn đang xem một tài liệu chỉ đọc đã được xuất bản như một phần của <VersionBadge> một bản phát hành</VersionBadge>. Nó không thể được chỉnh sửa',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': undefined, // 'View draft'
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text': undefined, // 'This is a published document. Switch to drafts to edit it.'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Tải lại tham chiếu',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -495,6 +499,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Thêm vào mục yêu thích',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Xóa khỏi mục yêu thích',
+  /** Details about a singleton document */
+  'document.singleton.details': undefined, // 'This is a singleton document with id "{{documentGroupId}}"'
+  /** The label describing singleton documents */
+  'document.singleton.label': undefined, // 'Singleton'
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':

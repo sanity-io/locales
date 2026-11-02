@@ -25,6 +25,18 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Panoya Kopyala',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Mevcut sürüm',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': undefined, // 'v{{version}} has been deprecated and should no longer be used.'
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': undefined, // 'Deprecated version'
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned': undefined, // 'This Studio is pinned to a deprecated version. Choose a different version in Manage.'
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade': undefined, // 'Update the sanity package to a newer version and redeploy the Studio.'
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': undefined, // 'Learn how to update'
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': undefined, // 'Reason: {{reason}}'
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Nasıl yükseltileceği',
   /** "Latest version" header in version info dialog */
@@ -38,6 +50,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Yeniden Yükle',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Güncellemek için Stüdyoyu yeniden yükle',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': undefined, // 'Deprecated'
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Geliştirme',
   /** "New version available" tooltip in About-dialog */
@@ -124,6 +138,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'İptal',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Seç',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': undefined, // 'Select file'
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': undefined, // 'Select image'
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -191,9 +211,14 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     'Daha fazla bilgi için konsolu görüntüleyin.',
   'asset-sources.common.uploader.upload-failed.title': 'Yükleme başarısız',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': undefined, // 'Using the existing file found in this source.'
+  'asset-sources.common.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Çalışma alanı dosyaları',
   'asset-sources.dataset.image.title': 'Çalışma alanı resimleri',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable': undefined, // 'This asset source failed to load. Close the dialog and try again.'
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Bu projede Medya Kütüphanesi çözümlenirken bir hata oluştu.',
@@ -212,14 +237,17 @@ export default removeUndefinedLocaleResources({
     'Yeni varlık seç',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Varlığı Düzenle',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': "Media Library'ye Yükle",
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Kütüphanede bulunan mevcut dosya kullanılıyor.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "'{{filename}}' adlı dosya zaten var",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been archived.'
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' yayını silindi.",
 
@@ -492,8 +520,6 @@ export default removeUndefinedLocaleResources({
     '{{versionName}} sürümünde {{count}} çözümlenmemiş değişiklik',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'İptal',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Sürümleri yönet',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -739,6 +765,8 @@ export default removeUndefinedLocaleResources({
     'v{{newVersion}} sürümüne güncellemek için yeniden yükle',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio sürümü {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': undefined, // 'v{{version}} is deprecated'
   /** Title for help and resources menus */
   'help-resources.title': 'Yardım ve kaynaklar',
   /** Label for studio's which are up to date */
@@ -746,6 +774,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': undefined, // 'Close incoming references'
   /**Incoming references inspector title */
   'incoming-references.title': 'Gelen referanslar',
 
@@ -786,11 +816,19 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Kaldır',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Kaldır',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': undefined, // 'Show 1 item'
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': undefined, // 'Show all {{count}} items'
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': undefined, // 'Show fewer items'
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': '{{itemTypeTitle}} Görüntüle',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Bu öğeyi hala taşıyabilir veya silebilirsiniz, ancak türünün şema tanımı bulunamadığı için düzenlenemez.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description': undefined, // 'Unable to resolve initial value for type: {{schemaTypeTitle}}: {{errorMessage}}.'
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Tür için başlangıç değeri çözümlenemiyor: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1220,6 +1258,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Satır tutamacı',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Tabloyu seç',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': undefined, // 'Annotation not defined in the schema: {{name}}'
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': undefined, // 'List type not defined in the schema: {{name}}'
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': undefined, // 'Mark not defined in the schema: {{name}}'
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': undefined, // 'Style not defined in the schema: {{name}}'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Temizle',
   /** Label for action to copy the current item (used within arrays) */
@@ -1439,6 +1485,8 @@ export default removeUndefinedLocaleResources({
     'Tarayıcınız Sanity ile iletişim kurmak için modası geçmiş bir HTTP protokolü kullanıyor. Bu, önemli ölçüde düşük performansa neden olabilir.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Daha fazla bilgi edinin',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': undefined, // 'Opens the Sanity documentation in a new tab'
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Bu oturum için tekrar gösterme',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1489,6 +1537,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Bir belgede değil',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Burada kim var',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': undefined, // 'Untitled'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Başlıksız',
@@ -1527,6 +1581,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Yeni Yayın',
   'release.action.new-release.limit-reached_other':
     'Bu çalışma alanı en fazla {{count}} sürümle sınırlıdır',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': undefined, // 'Pause to edit'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bu işlemi yapma izniniz yok',
   /** Action message for running a scheduled draft immediately */
@@ -1622,6 +1678,10 @@ export default removeUndefinedLocaleResources({
     'Zamanlanmış taslağınızın mevcut taslağınızdan farklı değişiklikleri var.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Zamanlanmış Taslağı Sil',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation': undefined, // 'Your current draft could not be loaded. Copying your scheduled changes will overwrite it.'
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation': undefined, // 'Your scheduled draft could not be loaded. Copying it could overwrite your draft with the wrong content.'
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Zamanlanmış yayın için yeni bir tarih ve saat seçin.',
   /** Confirm button text for change schedule dialog */
@@ -1675,13 +1735,9 @@ export default removeUndefinedLocaleResources({
     'Gelecek bir tarih ve saat için zamanlama yapın.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Yayınlanma Tarihi',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' sürümü arşivlendi",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Sürüm oluşturma başarısız oldu',
@@ -1706,13 +1762,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> yayınlandı.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Bu sürümün sabitlemesi kaldırıldı',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "'{{title}}' sürümü yayınlandı",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1724,9 +1776,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Taslak planlaması başarısız oldu: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Taslak başarıyla planlandı',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Planlanan taslak yayınlandı',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
@@ -1759,6 +1809,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Zamanlanmış yayın',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': undefined, // 'Dataset'
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': undefined, // 'Project ID'
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': undefined, // 'Source'
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': undefined, // 'Error location'
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': undefined, // 'Workspace'
+  /** Title for the schema errors screen */
+  'schema-errors.title': undefined, // 'Schema errors'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Aramayı aç',

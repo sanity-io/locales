@@ -115,6 +115,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'ಗುರಿ ದಾಖಲೆಯನ್ನು ಆರಿಸಿ',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'ಕಾರ್ಯದ ಶೀರ್ಷಿಕೆ',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': undefined, // 'Failed to create task, please try again'
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'ಶೀರ್ಷಿಕೆ ಅಗತ್ಯವಿದೆ',
   /** The status message upon successful creation of a task */
@@ -154,6 +156,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'ಕಾರ್ಯಗಳನ್ನು ತೆರೆಯಿರಿ',
   /** Title of the Tasks panel   */
   'panel.title': 'ಕಾರ್ಯಗಳು',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': undefined, // 'Tasks are unavailable right now. Try again later.'
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'ನಿಯೋಜಿಸಲಾಗಿದೆ',

@@ -319,12 +319,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Nu aveți permisiunea de a anula publicarea acestui document',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} editează acest document în lansarea „{{releaseTitle}}" chiar acum',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} editează acest document chiar acum',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Nu există documente de publicat',
 
@@ -355,10 +349,20 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_one':
     'Aceasta va reveni la versiunea anterioară a {{releaseDocumentsLength}} document.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one': undefined, // 'The previous state of {{count}} document is no longer available in the document history, so the release cannot be reverted.'
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': undefined, // 'Checking document history…'
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Revenire imediată la lansare',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one': undefined, // '{{count}} document will be restored to its last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one': undefined, // '{{count}} document will be unpublished because it was not published before this release.'
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Sigur doriți să reveniți la lansarea '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one': undefined, // 'The previous state of {{count}} document could not be determined, so the release cannot be reverted.'
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Au fost efectuate modificări asupra documentelor din această lansare după ce au fost publicate. Revenirea va suprascrie aceste modificări.',

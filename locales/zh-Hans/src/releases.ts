@@ -311,11 +311,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': '您没有权限取消发布此文档',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one': '{{displayName}} 正在"{{releaseTitle}}"版本中编辑此文档',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} 正在编辑此文档',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': '没有可发布的文档',
 
@@ -345,10 +340,20 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     '这将还原 {{releaseDocumentsLength}} 个文档版本。',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other': undefined, // 'The previous state of {{count}} documents is no longer available in the document history, so the release cannot be reverted.'
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': undefined, // 'Checking document history…'
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': '立即还原该版本',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other': undefined, // '{{count}} documents will be restored to their last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other': undefined, // '{{count}} documents will be unpublished because they were not published before this release.'
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': '您确定要还原"{{title}}"版本吗？',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other': undefined, // 'The previous state of {{count}} documents could not be determined, so the release cannot be reverted.'
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     '此版本中的文档在发布后已被修改。还原将覆盖这些更改。',

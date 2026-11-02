@@ -25,6 +25,18 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': '复制到剪贴板',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': '当前版本',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': undefined, // 'v{{version}} has been deprecated and should no longer be used.'
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': undefined, // 'Deprecated version'
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned': undefined, // 'This Studio is pinned to a deprecated version. Choose a different version in Manage.'
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade': undefined, // 'Update the sanity package to a newer version and redeploy the Studio.'
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': undefined, // 'Learn how to update'
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': undefined, // 'Reason: {{reason}}'
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '如何升级',
   /** "Latest version" header in version info dialog */
@@ -38,6 +50,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': '重新加载',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': '重新加载工作室以更新',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': undefined, // 'Deprecated'
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': '开发',
   /** "New version available" tooltip in About-dialog */
@@ -122,6 +136,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': '取消',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '选择',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': undefined, // 'Select file'
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': undefined, // 'Select image'
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入资产时出错。更多信息请查看控制台。',
@@ -177,9 +197,14 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': '更多信息请查看控制台。',
   'asset-sources.common.uploader.upload-failed.title': '上传失败',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': undefined, // 'Using the existing file found in this source.'
+  'asset-sources.common.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Workspace 文件',
   'asset-sources.dataset.image.title': 'Workspace 图像',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable': undefined, // 'This asset source failed to load. Close the dialog and try again.'
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '尝试解析此项目的媒体库时出了些问题。',
@@ -197,12 +222,17 @@ export default removeUndefinedLocaleResources({
     '选择新资源',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': '编辑资源',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': '上传到 Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description': '使用库中找到的现有文件。',
-  'asset-sources.media-library.warning.file-already-exist.title': "文件：'{{filename}}'已存在",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been archived.'
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "发布 '<strong>{{title}}</strong>' 已被删除。",
 
@@ -455,8 +485,6 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other': '{{versionName}} 版本中有 {{count}} 个未解决的更改',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': '取消',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': '管理版本',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -671,6 +699,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': '重新加载以更新至v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio 版本 {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': undefined, // 'v{{version}} is deprecated'
   /** Title for help and resources menus */
   'help-resources.title': '帮助与资源',
   /** Label for studio's which are up to date */
@@ -678,6 +708,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': undefined, // 'Close incoming references'
   /**Incoming references inspector title */
   'incoming-references.title': '传入引用',
 
@@ -718,11 +750,17 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': '删除',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': '删除',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': undefined, // 'Show all {{count}} items'
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': undefined, // 'Show fewer items'
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': '查看{{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     '您仍然可以移动或删除此项，但由于找不到其类型的模式定义，因此无法编辑。',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description': undefined, // 'Unable to resolve initial value for type: {{schemaTypeTitle}}: {{errorMessage}}.'
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     '无法为类型解析初始值：{{schemaTypeTitle}}：{{errorMessage}}。',
@@ -1117,6 +1155,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': '行控制柄',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': '选择表格',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': undefined, // 'Annotation not defined in the schema: {{name}}'
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': undefined, // 'List type not defined in the schema: {{name}}'
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': undefined, // 'Mark not defined in the schema: {{name}}'
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': undefined, // 'Style not defined in the schema: {{name}}'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '清除',
   /** Label for action to copy the current item (used within arrays) */
@@ -1328,6 +1374,8 @@ export default removeUndefinedLocaleResources({
     '您的浏览器正在使用过时的HTTP协议与Sanity通信。这可能会导致性能大幅下降。',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': '了解更多',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': undefined, // 'Opens the Sanity documentation in a new tab'
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': '本次会话不再显示',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1377,6 +1425,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': '不在文档中',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': '谁在这里',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': undefined, // 'Untitled'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '无标题',
@@ -1414,6 +1468,8 @@ export default removeUndefinedLocaleResources({
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新发布',
   'release.action.new-release.limit-reached_other': '此工作区限制为 {{count}} 个发布',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': undefined, // 'Pause to edit'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您没有执行此操作的权限',
   /** Action message for running a scheduled draft immediately */
@@ -1497,6 +1553,10 @@ export default removeUndefinedLocaleResources({
     '您的预定草稿与您当前的草稿有不同的更改。',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '删除预定草稿',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation': undefined, // 'Your current draft could not be loaded. Copying your scheduled changes will overwrite it.'
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation': undefined, // 'Your scheduled draft could not be loaded. Copying it could overwrite your draft with the wrong content.'
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': '选择一个新的日期和时间来安排发布。',
   /** Confirm button text for change schedule dialog */
@@ -1547,13 +1607,9 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': '为这个发布安排一个将来的时间和日期。',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '计划在',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': '此版本已取消固定',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' 发布已存档",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '创建发布失败',
@@ -1578,13 +1634,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '预定的草稿文档 <strong>{{title}}</strong> 已被发布。',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': '此版本已取消固定',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "'{{title}}' 版本已发布",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1596,9 +1648,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': '安排草稿失败：{{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': '已成功安排草稿',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': '预定草稿已发布',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文档的一个版本已被添加',
@@ -1630,6 +1680,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': '预定发布',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': undefined, // 'Dataset'
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': undefined, // 'Project ID'
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': undefined, // 'Source'
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': undefined, // 'Error location'
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': undefined, // 'Workspace'
+  /** Title for the schema errors screen */
+  'schema-errors.title': undefined, // 'Schema errors'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '打开搜索',
