@@ -186,6 +186,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Estàs veient un document de només lectura que va ser publicat com a part de <VersionBadge>{{title}}</VersionBadge>. No es pot editar',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': "Veure l'esborrany",
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Aquest és un document publicat. Canvia als esborranys per editar-lo.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Recarrega la referència',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -533,6 +538,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Afegir a preferits',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Treure de preferits',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Aquest és un document singleton amb l\'id "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Singleton',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
