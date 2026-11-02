@@ -334,12 +334,6 @@ export default removeUndefinedLocaleResources({
   'permissions.error.unpublish':
     'Nincs jogosultsága visszavonni ennek a dokumentumnak a közzétételét',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} éppen ezt a dokumentumot szerkeszti a „{{releaseTitle}}" release-ben',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} éppen ezt a dokumentumot szerkeszti',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Nincsenek közzéteendő dokumentumok',
 
@@ -379,11 +373,37 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Ez visszaállítja {{releaseDocumentsLength}} dokumentumverziót.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'A(z) {{count}} dokumentum korábbi állapota már nem érhető el a dokumentum előzményeiben, ezért a kiadás nem vonható vissza.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'A(z) {{count}} dokumentum korábbi állapota már nem érhető el a dokumentum előzményeiben, ezért a kiadás nem vonható vissza.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Dokumentumelőzmények ellenőrzése…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'A release azonnali visszaállítása',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} dokumentum vissza lesz állítva az e kiadás előtti utolsó közzétett verziójára.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} dokumentum vissza lesz állítva az e kiadás előtti utolsó közzétett verziójára.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} dokumentum közzététele vissza lesz vonva, mert nem volt közzétéve e kiadás előtt.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} dokumentum közzététele vissza lesz vonva, mert nem volt közzétéve e kiadás előtt.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     'Biztosan vissza szeretné állítani a „{{title}}" release-t?',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'A(z) {{count}} dokumentum korábbi állapota nem volt megállapítható, ezért a kiadás nem vonható vissza.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'A(z) {{count}} dokumentum korábbi állapota nem volt megállapítható, ezért a kiadás nem vonható vissza.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'A release dokumentumain a közzétételük után módosítások történtek. A visszaállítás felülírja ezeket a változtatásokat.',
