@@ -25,6 +25,22 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copier dans le presse-papiers',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Version actuelle',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'La version v{{version}} est obsolète et ne devrait plus être utilisée.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Version obsolète',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Ce Studio est épinglé à une version obsolète. Choisissez une version différente dans Manage.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Mettez à jour le package sanity vers une version plus récente et redéployez le Studio.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how':
+    'Découvrir comment mettre à jour',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Raison : {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Comment mettre à niveau',
   /** "Latest version" header in version info dialog */
@@ -38,6 +54,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Recharger',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Recharger le Studio pour mettre à jour',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Obsolète',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Développement',
   /** "New version available" tooltip in About-dialog */
@@ -124,6 +142,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Annuler',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Sélectionner',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Sélectionner un fichier',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Sélectionner une image',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Sélectionner une vidéo',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -192,9 +216,17 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     "Voir la console pour plus d'informations.",
   'asset-sources.common.uploader.upload-failed.title': 'Échec du téléchargement',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'Utilisation du fichier existant trouvé dans cette source.',
+  'asset-sources.common.warning.file-already-exist.title':
+    "Le fichier : '{{filename}}' existe déjà",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': "Fichiers de l'espace de travail",
   'asset-sources.dataset.image.title': "Images de l'espace de travail",
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    "Cette source de média n'a pas pu être chargée. Fermez la boîte de dialogue et réessayez.",
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Un problème est survenu lors de la tentative de résolution de la bibliothèque multimédia pour ce projet.',
@@ -213,14 +245,21 @@ export default removeUndefinedLocaleResources({
     'Sélectionner un nouvel asset',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': "Modifier l'asset",
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file':
+    "Sélection d'un fichier pour {{targetTitle}}",
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image':
+    "Sélection d'une image pour {{targetTitle}}",
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video':
+    "Sélection d'une vidéo pour {{targetTitle}}",
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Téléverser dans la Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Utilisation du fichier existant trouvé dans la bibliothèque.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Le fichier : '{{filename}}' existe déjà",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text':
+    'La publication « <strong>{{title}}</strong> » a été archivée.',
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
     "La publication '<strong>{{title}}</strong>' a été supprimée.",
@@ -498,8 +537,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} modifications non résolues dans la version {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Annuler',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Gérer les versions',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -747,6 +784,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Recharger pour mettre à jour vers v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Version de Sanity Studio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'La version v{{version}} est obsolète',
   /** Title for help and resources menus */
   'help-resources.title': 'Aide et ressources',
   /** Label for studio's which are up to date */
@@ -754,6 +793,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Fermer les références entrantes',
   /**Incoming references inspector title */
   'incoming-references.title': 'Références entrantes',
 
@@ -794,11 +835,20 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Supprimer',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Supprimer',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': 'Afficher 1 élément',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'Afficher les {{count}} éléments',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': "Afficher moins d'éléments",
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Voir {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Vous pouvez toujours déplacer ou supprimer cet élément, mais il ne peut pas être modifié puisque la définition du schéma pour son type est introuvable.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'Impossible de résoudre la valeur initiale pour le type : {{schemaTypeTitle}} : {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Impossible de résoudre la valeur initiale pour le type : {{schemaTypeTitle}} : {{errorMessage}}.',
@@ -1235,6 +1285,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Poignée de ligne',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Sélectionner le tableau',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation':
+    'Annotation non définie dans le schéma : {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item':
+    'Type de liste non défini dans le schéma : {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'Marque non définie dans le schéma : {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'Style non défini dans le schéma : {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Effacer',
   /** Label for action to copy the current item (used within arrays) */
@@ -1456,6 +1516,9 @@ export default removeUndefinedLocaleResources({
     'Votre navigateur utilise un protocole HTTP obsolète pour communiquer avec Sanity. Cela peut entraîner une performance considérablement dégradée.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'En savoir plus',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Ouvre la documentation Sanity dans un nouvel onglet',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Ne plus afficher pour cette session',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1506,6 +1569,14 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Pas dans un document',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Qui est là',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} est en train de modifier ce document dans la release « {{releaseTitle}} » en ce moment',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release':
+    '{{displayName}} est en train de modifier ce document en ce moment',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Sans titre',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Sans titre',
@@ -1544,6 +1615,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Nouvelle Publication',
   'release.action.new-release.limit-reached_other':
     'Cet espace de travail est limité à {{count}} publications',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Mettre en pause pour modifier',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': "Vous n'avez pas la permission d'effectuer cette action",
   /** Action message for running a scheduled draft immediately */
@@ -1641,6 +1714,12 @@ export default removeUndefinedLocaleResources({
     'Votre brouillon programmé comporte des modifications différentes de votre brouillon actuel.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Supprimer le brouillon programmé',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    "Votre brouillon actuel n'a pas pu être chargé. La copie de vos modifications programmées l'écrasera.",
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    "Votre brouillon programmé n'a pas pu être chargé. Le copier pourrait écraser votre brouillon avec un contenu incorrect.",
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body':
     'Sélectionnez une nouvelle date et heure pour la publication programmée.',
@@ -1695,13 +1774,9 @@ export default removeUndefinedLocaleResources({
     'Programmez pour une date et une heure futures.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publier le',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Cette version a été détachée',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "La version '{{title}}' a été archivée",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Échec de la création de la release',
@@ -1727,13 +1802,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Le document de brouillon programmé <strong>{{title}}</strong> a été publié.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Cette version a été détachée',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "La version '{{title}}' a été publiée",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1745,9 +1816,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Échec de la planification du brouillon : {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Brouillon planifié avec succès',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Le brouillon programmé a été publié',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Une version de ce document a déjà été ajoutée',
@@ -1781,6 +1850,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Publication planifiée',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Dataset',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'ID du projet',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Source',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': "Emplacement de l'erreur",
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Espace de travail',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'Erreurs de schéma',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Ouvrir la recherche',
