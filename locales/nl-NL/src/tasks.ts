@@ -120,6 +120,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Selecteer document',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Taak titel',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Taak aanmaken is mislukt, probeer het opnieuw',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Titel is vereist',
   /** The status message upon successful creation of a task */
@@ -159,6 +161,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Taken openen',
   /** Title of the Tasks panel   */
   'panel.title': 'Taken',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Taken zijn op dit moment niet beschikbaar. Probeer het later opnieuw.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Toegewezen',
