@@ -81,6 +81,10 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': 'Er is iets misgegaan bij het laden van de reacties',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text':
+    'Reacties zijn momenteel niet beschikbaar. Probeer het later opnieuw.',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Ga naar {{field}} veld',
   /** The button tooltip content for the add reaction button */

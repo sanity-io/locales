@@ -187,6 +187,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'U bekijkt een alleen-lezen document dat werd gepubliceerd als onderdeel van <VersionBadge>{{title}}</VersionBadge>. Het kan niet bewerkt worden',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Concept bekijken',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Dit is een gepubliceerd document. Schakel over naar concepten om het te bewerken.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referentie herladen',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -532,6 +537,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Toevoegen aan favorieten',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Verwijderen uit favorieten',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Dit is een singleton-document met id "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Singleton',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
