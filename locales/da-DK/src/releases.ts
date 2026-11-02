@@ -334,12 +334,6 @@ export default removeUndefinedLocaleResources({
   'permissions.error.unpublish':
     'Du har ikke tilladelse til at annullere publiceringen af dette dokument',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} redigerer dette dokument i releasen "{{releaseTitle}}" lige nu',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} redigerer dette dokument lige nu',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Der er ingen dokumenter at publicere',
 
@@ -379,10 +373,36 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Dette vil gendanne {{releaseDocumentsLength}} dokumentversioner.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Den tidligere tilstand af {{count}} dokument er ikke længere tilgængelig i dokumenthistorikken, så udgivelsen kan ikke tilbageføres.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Den tidligere tilstand af {{count}} dokumenter er ikke længere tilgængelig i dokumenthistorikken, så udgivelsen kan ikke tilbageføres.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Kontrollerer dokumenthistorik…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Gendan releasen med det samme',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} dokument vil blive gendannet til sin sidst udgivne version fra før denne udgivelse.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} dokumenter vil blive gendannet til deres sidst udgivne version fra før denne udgivelse.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} dokument vil blive afpubliceret, fordi det ikke var publiceret før denne udgivelse.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} dokumenter vil blive afpubliceret, fordi de ikke var publiceret før denne udgivelse.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Er du sikker på, at du vil gendanne releasen '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Den tidligere tilstand af {{count}} dokument kunne ikke bestemmes, så udgivelsen kan ikke tilbageføres.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Den tidligere tilstand af {{count}} dokumenter kunne ikke bestemmes, så udgivelsen kan ikke tilbageføres.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Der blev foretaget ændringer i dokumenter i denne release, efter de blev publiceret. Gendannelse vil overskrive disse ændringer.',
