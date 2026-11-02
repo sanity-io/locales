@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Sao chép vào Clipboard',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Phiên bản hiện tại',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}} đã bị ngừng hỗ trợ và không nên sử dụng nữa.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Phiên bản đã ngừng hỗ trợ',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Studio này được ghim vào một phiên bản đã ngừng hỗ trợ. Hãy chọn một phiên bản khác trong Manage.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Cập nhật gói sanity lên phiên bản mới hơn và triển khai lại Studio.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'Tìm hiểu cách cập nhật',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Lý do: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Cách nâng cấp',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Tải lại',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Tải lại Studio để cập nhật',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Đã ngừng hỗ trợ',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Phát triển',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Hủy bỏ',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Chọn',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Chọn tệp',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Chọn hình ảnh',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Chọn video',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -183,9 +206,16 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': 'Xem console để biết thêm thông tin.',
   'asset-sources.common.uploader.upload-failed.title': 'Tải lên thất bại',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'Đang sử dụng tệp hiện có được tìm thấy trong nguồn này.',
+  'asset-sources.common.warning.file-already-exist.title': "Tệp: '{{filename}}' đã tồn tại",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Tệp Workspace',
   'asset-sources.dataset.image.title': 'Hình ảnh Workspace',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'Nguồn tài nguyên này không tải được. Hãy đóng hộp thoại và thử lại.',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Đã xảy ra lỗi khi cố gắng truy cập Thư viện Media cho dự án này.',
@@ -204,14 +234,18 @@ export default removeUndefinedLocaleResources({
     'Chọn tài sản mới',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Chỉnh sửa tài sản',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': 'Đang chọn tệp cho {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': 'Đang chọn hình ảnh cho {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': 'Đang chọn video cho {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Tải lên Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Sử dụng tệp tin đã có trong thư viện.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Tệp tin: '{{filename}}' đã tồn tại",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text':
+    "Phiên bản phát hành '<strong>{{title}}</strong>' đã được lưu trữ.",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Phiên bản '<strong>{{title}}</strong>' đã bị xóa.",
 
@@ -471,8 +505,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} thay đổi chưa được giải quyết trong phiên bản {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Hủy',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Quản lý phiên bản',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -689,6 +721,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Tải lại để cập nhật lên v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Phiên bản Sanity Studio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} đã bị ngừng hỗ trợ',
   /** Title for help and resources menus */
   'help-resources.title': 'Trợ giúp và tài nguyên',
   /** Label for studio's which are up to date */
@@ -696,6 +730,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Đóng tham chiếu đến',
   /**Incoming references inspector title */
   'incoming-references.title': 'Tham chiếu đến',
 
@@ -736,11 +772,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Xóa',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Xóa',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'Hiển thị tất cả {{count}} mục',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'Hiển thị ít mục hơn',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Xem {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Bạn vẫn có thể di chuyển hoặc xóa mục này, nhưng không thể chỉnh sửa vì không tìm thấy định nghĩa schema cho loại của nó.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'Không thể giải quyết giá trị khởi tạo cho loại: {{schemaTypeTitle}}: {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Không thể xác định giá trị ban đầu cho loại: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1144,6 +1187,17 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Tay cầm hàng',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Chọn bảng',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation':
+    'Chú thích không được định nghĩa trong schema: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item':
+    'Loại danh sách không được định nghĩa trong schema: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark':
+    'Định dạng không được định nghĩa trong schema: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'Kiểu không được định nghĩa trong schema: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Xóa',
   /** Label for action to copy the current item (used within arrays) */
@@ -1364,6 +1418,9 @@ export default removeUndefinedLocaleResources({
     'Trình duyệt của bạn đang sử dụng giao thức HTTP lỗi thời để giao tiếp với Sanity. Điều này có thể dẫn đến hiệu suất làm việc giảm đáng kể.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Tìm hiểu thêm',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Mở tài liệu Sanity trong một tab mới',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Không hiển thị lại trong phiên này',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1414,6 +1471,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Không trong tài liệu nào',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Ai đang ở đây',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} hiện đang chỉnh sửa tài liệu này trong release "{{releaseTitle}}"',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} hiện đang chỉnh sửa tài liệu này',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Chưa có tiêu đề',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Không tiêu đề',
@@ -1452,6 +1516,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Phiên bản mới',
   'release.action.new-release.limit-reached_other':
     'Không gian làm việc này chỉ giới hạn {{count}} bản phát hành',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Tạm dừng để chỉnh sửa',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Bạn không có quyền thực hiện hành động này',
   /** Action message for running a scheduled draft immediately */
@@ -1542,6 +1608,12 @@ export default removeUndefinedLocaleResources({
     'Bản nháp lịch trình của bạn có những thay đổi khác biệt so với bản nháp hiện tại của bạn.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Xóa bản nháp đã lên lịch',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    'Bản nháp hiện tại của bạn không thể tải được. Sao chép các thay đổi đã lên lịch sẽ ghi đè lên nó.',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    'Bản nháp đã lên lịch của bạn không thể tải được. Việc sao chép nó có thể ghi đè bản nháp của bạn với nội dung không chính xác.',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Chọn ngày và giờ mới để xuất bản theo lịch trình.',
   /** Confirm button text for change schedule dialog */
@@ -1596,13 +1668,9 @@ export default removeUndefinedLocaleResources({
     'Lên lịch phát hành này cho một thời gian và ngày trong tương lai.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Lên lịch vào',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Phiên bản này đã được gỡ ghim',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Phiên bản '{{title}}' đã được lưu trữ",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Tạo phiên bản không thành công',
@@ -1627,13 +1695,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Tài liệu bản nháp đã lên lịch <strong>{{title}}</strong> đã được xuất bản.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Phiên bản này đã được gỡ ghim',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Phiên bản '{{title}}' đã được xuất bản",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1645,9 +1709,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Không thể lên lịch bản nháp: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Đã lên lịch bản nháp thành công',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Bản nháp đã lên lịch đã được xuất bản',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Một phiên bản của tài liệu này đã được thêm vào',
@@ -1679,6 +1741,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Xuất bản theo lịch trình',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Dataset',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'Mã dự án',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Nguồn',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'Vị trí lỗi',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Workspace',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'Lỗi schema',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Mở tìm kiếm',
