@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copiază în clipboard',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versiunea curentă',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}} a devenit depreciată și nu ar mai trebui folosită.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Versiune depreciată',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Acest Studio este fixat la o versiune depreciată. Alegeți o altă versiune din Manage.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Actualizați pachetul sanity la o versiune mai nouă și redistribuiți Studio-ul.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'Aflați cum să actualizați',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Motiv: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Cum să actualizezi',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Reîncarcă',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Reîncarcă Studio pentru a actualiza',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Depreciată',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Dezvoltare',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Anulează',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Selectează',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Selectați fișier',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Selectați imagine',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Selectați video',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -184,9 +207,16 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     'Consultați consola pentru mai multe informații.',
   'asset-sources.common.uploader.upload-failed.title': 'Încărcarea a eșuat',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'Se utilizează fișierul existent găsit în această sursă.',
+  'asset-sources.common.warning.file-already-exist.title': "Fișierul: '{{filename}}' există deja",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Fișierele spațiului de lucru',
   'asset-sources.dataset.image.title': 'Imaginile spațiului de lucru',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'Această sursă de active nu a putut fi încărcată. Închideți dialogul și încercați din nou.',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Ceva a mers prost încercând să rezolve Media Library pentru acest proiect.',
@@ -205,14 +235,20 @@ export default removeUndefinedLocaleResources({
     'Selectează un nou asset',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Editează asset',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file':
+    'Se selectează fișierul pentru {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image':
+    'Se selectează imaginea pentru {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video':
+    'Se selectează videoclipul pentru {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Încarcă în Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Utilizând fișierul existent găsit în bibliotecă.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Fișierul: '{{filename}}' există deja",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': "Lansarea '<strong>{{title}}</strong>' a fost arhivată.",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Lansarea '<strong>{{title}}</strong>' a fost ștearsă.",
 
@@ -478,8 +514,6 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_one': 'Modificare nerezolvată în versiunea {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Anulare',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Gestionează versiunile',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -699,6 +733,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Reîncarcă pentru a actualiza la v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versiunea Sanity Studio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} este depreciată',
   /** Title for help and resources menus */
   'help-resources.title': 'Ajutor și resurse',
   /** Label for studio's which are up to date */
@@ -706,6 +742,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Închideți referințele primite',
   /**Incoming references inspector title */
   'incoming-references.title': 'Referințe primite',
 
@@ -746,11 +784,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Elimină',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Elimină',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': 'Afișează 1 element',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'Afișează mai puține elemente',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Vizualizează {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Puteți totuși să mutați sau să eliminați acest element, dar nu poate fi editat deoarece definiția schemei pentru tipul său nu poate fi găsită.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'Nu s-a putut rezolva valoarea inițială pentru tipul: {{schemaTypeTitle}}: {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Imposibil de rezolvat valoarea inițială pentru tipul: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1161,6 +1206,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Mâner rând',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Selectați tabelul',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': 'Adnotare nedefinită în schemă: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': 'Tip de listă nedefinit în schemă: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'Marcaj nedefinit în schemă: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'Stilul nu este definit în schemă: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Șterge',
   /** Label for action to copy the current item (used within arrays) */
@@ -1384,6 +1437,9 @@ export default removeUndefinedLocaleResources({
     'Browserul dumneavoastră folosește un protocol HTTP învechit pentru a comunica cu Sanity. Acest lucru poate duce la o performanță semnificativ redusă.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Află mai multe',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Deschide documentația Sanity într-o filă nouă',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Nu mai arăta în această sesiune',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1434,6 +1490,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Nu este într-un document',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Cine este aici',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} editează acest document chiar acum în versiunea „{{releaseTitle}}”',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} editează acest document chiar acum',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Fără titlu',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Fără titlu',
@@ -1470,6 +1533,8 @@ export default removeUndefinedLocaleResources({
   'release.action.edit-schedule': 'Editează programarea',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Lansare Nouă',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Pune pe pauză pentru editare',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nu ai permisiunea de a efectua această acțiune',
   /** Action message for running a scheduled draft immediately */
@@ -1560,6 +1625,12 @@ export default removeUndefinedLocaleResources({
     'Draftul dumneavoastră programat are modificări diferite față de draftul actual.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Șterge schița programată',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    'Ciorna dvs. curentă nu a putut fi încărcată. Copierea modificărilor programate o va suprascrie.',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    'Ciorna programată nu a putut fi încărcată. Copierea acesteia ar putea suprascrie ciorna dvs. cu conținut greșit.',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body':
     'Selectează o nouă dată și oră pentru publicarea programată.',
@@ -1614,13 +1685,9 @@ export default removeUndefinedLocaleResources({
     'Programează pentru o dată și oră viitoare.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publică la',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Această lansare a fost dezafixată',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Lansarea '{{title}}' a fost arhivată",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Crearea lansării a eșuat',
@@ -1645,13 +1712,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Documentul schiță programat <strong>{{title}}</strong> a fost publicat.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Această lansare a fost dezafixată',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Lansarea '{{title}}' a fost publicată",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1663,9 +1726,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Nu s-a reușit programarea schiței: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Ciorna programată cu succes',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Ciorna programată a fost publicată',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'O versiune a acestui document a fost deja adăugată',
@@ -1698,6 +1759,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Publicare programată',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Set de date',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'ID proiect',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Sursă',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'Locația erorii',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Spațiu de lucru',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'Erori de schemă',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Deschide căutarea',

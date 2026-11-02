@@ -149,4 +149,831 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.scheduled-drafts': 'Schițe programate',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'Perspective',
+
+  /** Tooltip line of every control that calls Sanity Agent Actions, which bills AI credits */
+  'vista.agent-actions.credits': 'Utilizează un credit AI per solicitare',
+  /** Under an Agent Actions control: the organization's AI credits balance this month */
+  'vista.ai-credits.balance': '{{balance}} din {{quota}} credite AI rămase luna aceasta.',
+  /** Under an Agent Actions control: the credits used beyond the plan's monthly quota */
+  'vista.ai-credits.deficit':
+    '{{used}} credite AI utilizate luna aceasta, cu {{deficit}} mai mult decât cele {{quota}} incluse.',
+  /** Body of the out-of-credits card, with the credits used and the plan's monthly quota */
+  'vista.ai-credits.limit.description':
+    'Organizația dvs. a utilizat {{used}} din cele {{quota}} credite AI luna aceasta, așa că acțiunile Sanity Agent Actions sunt întrerupte până luna viitoare sau până la creșterea limitei de cheltuieli.',
+  /** Body of the out-of-credits card when the usage and the quota are unknown */
+  'vista.ai-credits.limit.description-unknown':
+    'Organizația dvs. a atins limita de cheltuieli pentru credite AI, așa că acțiunile Sanity Agent Actions sunt întrerupte până luna viitoare sau până la creșterea limitei.',
+  /** Link in the out-of-credits card to the documentation of AI credits */
+  'vista.ai-credits.limit.learn-more': 'Cum funcționează creditele AI',
+  /** Button in the out-of-credits card leading to the organization's spending limits in Manage */
+  'vista.ai-credits.limit.manage': 'Gestionează creditele AI',
+  /** Title of the card shown where the organization is out of AI credits */
+  'vista.ai-credits.limit.title': 'Fără credite AI',
+  /** Link after the AI credits note, to the organization's AI usage in Manage */
+  'vista.ai-credits.usage': 'Utilizare AI',
+  /** Under an Agent Actions control: the credits used, on a plan without a quota */
+  'vista.ai-credits.used': '{{used}} credite AI utilizate luna aceasta.',
+  /** Button in the request column's action bar naming the API version requests go out with */
+  'vista.api-version.button': 'API {{version}}',
+  /** The API version button while queries go through the API CDN */
+  'vista.api-version.button-cdn': 'API CDN {{version}}',
+  /** The API version button while the "Other" API version input holds an unfinished version */
+  'vista.api-version.button-invalid': 'Versiune API neterminată',
+  /** Tooltip of the API version button */
+  'vista.api-version.tooltip':
+    'Interogările rulează pe versiunea API {{version}}. Selectați pentru a o schimba în Opțiuni.',
+  /** Tooltip of the API version button while queries go through the API CDN */
+  'vista.api-version.tooltip-cdn':
+    'Interogările rulează pe API CDN cu versiunea API {{version}}. Selectați pentru a o schimba în Opțiuni.',
+  /**
+   * Tooltip of the API version button while the API CDN is asked for but the perspective, as the
+   * perspective select names it, keeps queries on the API
+   */
+  'vista.api-version.tooltip-cdn-blocked':
+    'Interogările rulează pe API cu versiunea API {{version}}, nu pe API CDN: acesta nu deservește perspectiva {{perspective}}. Selectați pentru a o schimba în Opțiuni.',
+  /** Tooltip of the API version button while the "Other" input holds an unfinished version */
+  'vista.api-version.tooltip-invalid':
+    'Versiunea API din Opțiuni este neterminată, așa că nu se poate prelua nimic până nu este completă.',
+  /** Tooltip of the API version button while a selected variant forces the experimental API */
+  'vista.api-version.tooltip-locked':
+    'Interogările rulează pe versiunea API {{version}}, de care are nevoie varianta selectată.',
+  /** Label of the document after the change in the Delta panel */
+  'vista.delta.after': 'După',
+  /** Label of the document before the change in the Delta panel */
+  'vista.delta.before': 'Înainte',
+  /** What the Delta panel does */
+  'vista.delta.description':
+    'Execută interogarea în modul delta, așa cum fac webhook-urile, listenerii și Sanity Functions bazate pe GROQ: before() și after() reprezintă documentul înainte și după o modificare, @ este documentul după aceasta, iar delta::changedAny() le compară. Rulează în browser cu groq-js. O parte goală înseamnă absența documentului: modificarea îl creează sau îl șterge.',
+  /** Label of the document ID field in the Delta panel */
+  'vista.delta.document-id': 'ID document',
+  /** Shown when there is a query but no documents to compare */
+  'vista.delta.empty':
+    'Încărcați istoricul unui document sau scrieți documentele în Înainte și După.',
+  /** Shown when the query fails in delta mode */
+  'vista.delta.failed': 'Interogarea nu a putut fi executată în modul delta: {{message}}',
+  /** Shown when the After document is not valid JSON */
+  'vista.delta.invalid-after': 'După nu este un JSON valid: {{message}}',
+  /** Shown when the Before document is not valid JSON */
+  'vista.delta.invalid-before': 'Before nu este un JSON valid: {{message}}',
+  /** Button loading the document's revisions from the History API */
+  'vista.delta.load': 'Încarcă istoricul',
+  /** Shown when the history could not be loaded */
+  'vista.delta.load-failed': 'Istoricul nu a putut fi încărcat: {{message}}',
+  /** A delta filter that is true for the change */
+  'vista.delta.matches':
+    'Se potrivește: un webhook sau o funcție cu acest filtru rulează pentru această modificare.',
+  /** A delta filter that is false for the change */
+  'vista.delta.no-match':
+    'Nu se potrivește: un webhook sau o funcție cu acest filtru nu rulează pentru această modificare.',
+  /** Shown while the query or its params cannot be sent */
+  'vista.delta.no-request':
+    'Corectează interogarea și parametrii acesteia pentru a o rula în modul delta.',
+  /** Heading of the delta result */
+  'vista.delta.result': 'Rezultat',
+  /** The After choice for a change that deletes the document */
+  'vista.delta.revision.none-after': 'Nimic: modificarea șterge documentul',
+  /** The Before choice for a change that creates the document */
+  'vista.delta.revision.none-before': 'Nimic: modificarea creează documentul',
+  /** A revision in the Before and After lists */
+  'vista.delta.revision.option': '{{time}} · {{revision}}',
+  /** Accessible label for the button that closes the sidebar drawer */
+  'vista.drawer.close': 'Închide panoul',
+  /** Explanation at the top of the Explain panel */
+  'vista.explain.description':
+    'Planul de interogare este modul în care Content Lake execută interogarea: ce citește, filtrează și sortează în timpul citirii și ce rămâne pentru pașii ulteriori. Explică-mi asta folosește Sanity Agent Actions pentru a descrie interogarea și planul său în cuvinte simple, ceea ce consumă un credit AI.',
+  /** Shown in the Explain panel while there is no valid query to explain */
+  'vista.explain.empty': 'Scrie o interogare pentru a o explica.',
+  /** Button in the Explain panel asking Agent Actions to explain the query and its plan */
+  'vista.explain.explain': 'Explică-mi asta',
+  /** Shown when the explanation could not be written */
+  'vista.explain.failed': 'Interogarea nu a putut fi explicată: {{message}}',
+  /** A count the index computes without reading the documents */
+  'vista.explain.insight.aggregate': 'Numărat în index, fără a citi documentele.',
+  /** A subquery the plan runs once for all documents */
+  'vista.explain.insight.batched-subquery':
+    'Subinterogarea rulează o singură dată pentru toate documentele, într-o singură preluare grupată, nu o dată pentru fiecare document.',
+  /** Part of the filter runs in memory; the expression follows */
+  'vista.explain.insight.filter-in-memory':
+    'O parte din filtru rulează în memorie, după citire: fiecare document permis de index este citit mai întâi, ceea ce devine lent pe seturi mari de date. Join-urile (->) și funcțiile dintr-un filtru nu pot folosi indexul.',
+  /** The index sorts and limits while reading */
+  'vista.explain.insight.index-sort-limit':
+    'Indexul sortează și limitează documentele pe măsură ce le citește.',
+  /** The plan slices in memory */
+  'vista.explain.insight.slice-in-memory':
+    'Felia este luată în memorie după citire, nu ca o limită aplicată în timpul citirii.',
+  /** The plan sorts in memory */
+  'vista.explain.insight.sort-in-memory':
+    'Sortarea are loc în memorie, după citirea tuturor potrivirilor. Sortează după atribute pe care indexul le poate sorta.',
+  /** Link under the plan insights to the guide on fast queries */
+  'vista.explain.insights.guide': 'GROQ de înaltă performanță',
+  /** Heading of the plan insights in the Explain panel */
+  'vista.explain.insights.title': 'Ce iese în evidență',
+  /** Button in the Explain panel fetching the query plan */
+  'vista.explain.plan': 'Afișează planul de interogare',
+  /** Shown when the query plan could not be fetched */
+  'vista.explain.plan-failed': 'Planul de interogare nu a putut fi preluat: {{message}}',
+  /** Heading of the query plan in the Explain panel */
+  'vista.explain.plan-title': 'Plan de interogare',
+  /** Toast shown after a code snippet was copied */
+  'vista.export-query.copied': 'Fragment copiat în clipboard',
+  /** Label for the button that copies a code snippet */
+  'vista.export-query.copy': 'Copiază fragmentul',
+  /** Explanation at the top of the export query dialog */
+  'vista.export-query.description':
+    'Rulează această interogare în afara studioului cu unul dintre aceste fragmente.',
+  /** Title of the dialog that exports the query as code snippets */
+  'vista.export-query.title': 'Exportă interogarea',
+  /** Note about authentication in the export query dialog */
+  'vista.export-query.token-note':
+    'Seturile de date private necesită un token API. Seturile de date publice pot omite antetul Authorization.',
+  /** Toast shown after the generated code was copied */
+  'vista.export-types.copied': 'Cod copiat în clipboard',
+  /** Label for the button that copies the generated code */
+  'vista.export-types.copy': 'Copiază codul',
+  /** Shown in the types dialog when there is neither a schema evaluation nor a result */
+  'vista.export-types.empty':
+    'Preia mai întâi interogarea, astfel încât să existe un rezultat din care să se poată deriva tipurile.',
+  /** Why the workspace schema could not be used for the types; shown with the result fallback */
+  'vista.export-types.schema-error': 'Evaluarea schemei a eșuat: {{message}}',
+  /** Note shown when the types were derived from the fetched result instead of the schema */
+  'vista.export-types.source.result':
+    'Dedus din rezultatul preluat, deoarece interogarea nu a putut fi evaluată în raport cu schema spațiului de lucru.',
+  /** Note shown when the types were derived from the workspace schema */
+  'vista.export-types.source.schema':
+    'Dedus din schema spațiului de lucru, în același mod în care o face sanity typegen.',
+  /** Shown when the schema cannot be evaluated and the shown result belongs to an older query */
+  'vista.export-types.stale-result':
+    'Rezultatul afișat a fost preluat pentru o interogare sau parametri diferiți. Preia mai întâi interogarea curentă, astfel încât să existe un rezultat din care să se poată deriva tipurile.',
+  /** Title of the dialog exporting TypeScript types for the result */
+  'vista.export-types.title-typescript': 'Exportă TypeScript',
+  /** Title of the dialog exporting a Zod schema for the result */
+  'vista.export-types.title-zod': 'Exportă Zod',
+  /** Button of a library function the query does not declare, which declares it at the top */
+  'vista.functions.add': 'Adaugă la interogare',
+  /** Shown on a library function the query declares the same way */
+  'vista.functions.declared': 'În această interogare',
+  /** Lint action on a call of a library function the query does not declare */
+  'vista.functions.editor.add-from-library': 'Declară-o',
+  /** Note in a function's hover documentation: the API version it needs */
+  'vista.functions.editor.api-version': 'Necesită versiunea API {{version}} sau una ulterioară',
+  /** Detail of a completion for a custom function the query declares */
+  'vista.functions.editor.completion-declared': 'în această interogare',
+  /** Detail of a completion for a library function, which declares it too */
+  'vista.functions.editor.completion-library': 'din biblioteca ta',
+  /** Note in the hover documentation of a custom function the query declares */
+  'vista.functions.editor.declared-on': 'Funcție personalizată, declarată pe linia {{line}}',
+  /** Note in the hover documentation of the functions that only work in delta mode */
+  'vista.functions.editor.delta-only':
+    'Funcționează doar în modul delta, unde webhook-urile și Sanity Functions își rulează filtrele',
+  /** Button over a selected projection in the query editor, turning it into a custom function */
+  'vista.functions.editor.extract': 'Extrage într-o funcție',
+  /** Note in the hover documentation of a library function the query does not declare */
+  'vista.functions.editor.in-library':
+    'În biblioteca ta de funcții, nedeclarată în această interogare',
+  /** Link at the end of a built-in function's hover documentation */
+  'vista.functions.editor.reference': 'Referință funcții GROQ',
+  /** Explanation under the library heading in the Functions panel */
+  'vista.functions.library.description':
+    'Păstrate în acest browser pentru fiecare dataset al proiectului. Completările oferă aceste funcții, iar lint-ul propune declararea uneia atunci când interogarea face apeluri.',
+  /** Shown in the Functions panel while the library is empty */
+  'vista.functions.library.empty':
+    'Salvează o funcție pe care interogarea o declară pentru a o folosi în alte interogări.',
+  /** Heading of the functions library in the Functions panel */
+  'vista.functions.library.title': 'Bibliotecă',
+  /** Shown in the Functions panel while the query declares no custom functions */
+  'vista.functions.query.empty':
+    'Declară funcții personalizate la începutul interogării, sau poziționează cursorul într-o proiecție, precum author->{name}, și apasă butonul de extragere de deasupra editorului ({{shortcut}}).',
+  /** Heading of the functions the query declares in the Functions panel */
+  'vista.functions.query.title': 'În această interogare',
+  /** Removes a function from the library */
+  'vista.functions.remove': 'Elimină din bibliotecă',
+  /** Button of a library function the query declares differently, which puts the library's version in */
+  'vista.functions.replace': 'Înlocuiește în interogare',
+  /** Accessible name of a declared function in the Functions panel, which selects it in the editor */
+  'vista.functions.reveal': 'Afișează {{name}} în editor',
+  /** Button of a function the query declares that is not in the library yet */
+  'vista.functions.save': 'Salvează în bibliotecă',
+  /** Shown on a function the query declares the way the library has it */
+  'vista.functions.saved': 'Salvat',
+  /** Button of a function the query declares differently from the library's version */
+  'vista.functions.update': 'Actualizează biblioteca',
+  /** Button over the query editor that opens the bar writing a query from a description */
+  'vista.generate.button': 'Generează interogare',
+  /** Closes the generate query bar */
+  'vista.generate.close': 'Închide',
+  /** Explanation under the generate query field */
+  'vista.generate.description':
+    'Sanity Agent Actions scrie GROQ-ul pe baza descrierii tale și a tipurilor de documente, iar Content Lake verifică fiecare încercare; fiecare încercare folosește un credit AI. Aceasta înlocuiește interogarea din acest tab și o rulează; anularea în editor readuce interogarea anterioară.',
+  /** Shown when no query could be generated, above the reason */
+  'vista.generate.failed': 'Interogarea nu a putut fi generată',
+  /** Accessible label of the description field in the generate query bar */
+  'vista.generate.label': 'Ce ar trebui să preia interogarea?',
+  /** Opens the last rejected attempt, without running it, to fix it by hand */
+  'vista.generate.open-anyway': 'Deschide ultima încercare',
+  /** Placeholder of the description field in the generate query bar */
+  'vista.generate.placeholder': 'Ultimii 10 autori, ordonați după nume și apoi după prenume',
+  /** Shown while the first attempt at a query is written */
+  'vista.generate.progress': 'Se scrie interogarea…',
+  /** Shown while a rejected attempt is retried */
+  'vista.generate.progress-retry':
+    'Se corectează interogarea (încercarea {{attempt}} din {{max}})…',
+  /** Button generating the query */
+  'vista.generate.submit': 'Generează',
+  /** Badge on a history entry the API CDN answered */
+  'vista.history.cdn': 'API CDN',
+  /** Badge on a history entry the API CDN answered from its cache */
+  'vista.history.cdn-cache-hit': 'Rezultat din cache CDN',
+  /** A history entry whose result differs from the previous result, which is no longer kept */
+  'vista.history.changed': 'Modificat',
+  /**
+   * Toggle on a history entry that shows how its request and result differ from the previous
+   * successful fetch
+   */
+  'vista.history.changes': 'Modificări',
+  /** Shown instead of the changes when they could not be loaded or rendered */
+  'vista.history.changes-failed': 'Modificările nu au putut fi afișate.',
+  /** Button retrying to show the changes of a history entry */
+  'vista.history.changes-retry': 'Reîncearcă',
+  /** Above the changes of a history entry: the fetch they are compared with */
+  'vista.history.compared-with': 'Comparat cu solicitarea de la {{time}}',
+  /** Label of the diff of the GROQ params in a history entry's changes */
+  'vista.history.diff.params': 'Parametri',
+  /** Label of the diff of the GROQ query in a history entry's changes */
+  'vista.history.diff.query': 'Interogare',
+  /** Instead of the query diff, when the two queries only differ in whitespace and line breaks */
+  'vista.history.diff.query-formatting-only': 'Doar formatarea s-a schimbat',
+  /** Label of the diff of the query result in a history entry's changes */
+  'vista.history.diff.result': 'Rezultat',
+  /**
+   * Label of the diff of the request URL in a history entry's changes: the API host, version and
+   * dataset, and options such as the perspective
+   */
+  'vista.history.diff.url': 'URL-ul cererii',
+  /** Empty state of the history panel */
+  'vista.history.empty': 'Nimic preluat încă',
+  /** Status label for a failed fetch in the history */
+  'vista.history.failed': 'Eșuat',
+  /** Button putting the hidden fields back into the diff out of a history entry's changes */
+  'vista.history.hide-hidden': 'Ascunde-le',
+  /** Next to a history entry's changes: the fields the diff leaves out */
+  'vista.history.hiding': 'Se ascund {{fields}}',
+  /** A history entry whose result only differs from the previous one in hidden fields */
+  'vista.history.only-hidden-changed': 'S-au schimbat doar câmpurile ascunse',
+  /** History reason: a tab opened with a generated query fetched it */
+  'vista.history.reason.generated': 'Interogare generată',
+  /** History reason: a link to the tool named a query URL, which opened in a tab and ran */
+  'vista.history.reason.link': 'Link deschis',
+  /** History reason: a live event matched the query's sync tags */
+  'vista.history.reason.live': 'Actualizare live',
+  /** History reason: the live connection asked every client to refetch */
+  'vista.history.reason.live-restart': 'Conexiunea live a fost repornită',
+  /**
+   * History reason: the Live fetch button was pressed, which fetches and then refetches
+   * automatically
+   */
+  'vista.history.reason.live-start': 'Preluarea live a început',
+  /** History reason: a saved query was loaded into a tab that refetches automatically */
+  'vista.history.reason.load': 'Interogare încărcată',
+  /** History reason: the fetch button was pressed */
+  'vista.history.reason.manual': 'Buton de preluare',
+  /** History reason: mutations were applied from the Mutate panel */
+  'vista.history.reason.mutation': 'Mutații aplicate',
+  /** History reason: dataset, API version or perspective changed while refetching automatically */
+  'vista.history.reason.options': 'Opțiuni schimbate',
+  /** History reason: a query URL was pasted into the tab, which runs it */
+  'vista.history.reason.paste': 'URL lipit',
+  /** History reason: a tab that refetches automatically was opened again, or the studio reloaded */
+  'vista.history.reason.resume': 'Reluarea automată a preluării a fost reluată',
+  /** History reason: the keyboard shortcut was used */
+  'vista.history.reason.shortcut': 'Comandă rapidă de la tastatură',
+  /** A history entry whose result is the same as the previous result, for a changed request */
+  'vista.history.same-result': 'Același rezultat',
+  /** Button showing the hidden fields in a history entry's changes */
+  'vista.history.show-hidden': 'Afișează-le',
+  /** Next to a history entry's changes while the hidden fields are shown */
+  'vista.history.showing-hidden': 'Se afișează {{fields}}, ascunse implicit',
+  /** A history entry whose result, or the previous one, is too large to compare */
+  'vista.history.too-large': 'Prea mare pentru a compara',
+  /** A history entry whose result is the same as the previous result */
+  'vista.history.unchanged': 'Fără modificări',
+  /** Shown in the Lint panel while the query has no lint findings */
+  'vista.lint.empty':
+    'Nicio constatare de lint. Problemele pe care linterul GROQ le detectează în interogare sunt listate aici pe măsură ce scrii; selectează una pentru a o evidenția în editor.',
+  /** Where a lint finding sits in the query, shown under its message */
+  'vista.lint.position': 'Linia {{line}}, coloana {{column}}',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.error': 'Eroare',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.hint': 'Sugestie',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.info': 'Informație',
+  /** Severity badge of a lint finding */
+  'vista.lint.severity.warning': 'Avertisment',
+  /** Lint action writing the type, field or operator a schema finding suggests */
+  'vista.lint.use-suggestion': 'Folosește {{suggestion}}',
+  /** Badge shown while a tab refetches automatically */
+  'vista.live.active': 'Live',
+  /** Button in the request column's action bar that fetches and then refetches automatically */
+  'vista.live.button': 'Preluare live',
+  /** Tooltip of the Live button while automatic refetching is off */
+  'vista.live.button.start':
+    'Preia datele, apoi preia-le din nou de fiecare dată când documentele din rezultat se schimbă',
+  /** Tooltip of the Stop live button, while the tab refetches automatically */
+  'vista.live.button.stop':
+    'Oprește preluarea datelor când documentele din rezultat se schimbă. Preluarea se poate face în continuare la cerere, pentru rezultate pe care nicio modificare de document nu le afectează, precum now()',
+  /** Error shown when the live connection breaks */
+  'vista.live.error': 'Actualizările live au fost deconectate: {{message}}',
+  /** The Live fetch button while the tab refetches automatically, stopping it */
+  'vista.live.stop': 'Oprește live',
+  /** Button in the Mutate panel adding a mutation to the list */
+  'vista.mutate.add': 'Adaugă o mutație',
+  /** Adds a mutation creating a document, with the type of the result's first document */
+  'vista.mutate.add.create': 'Creează un document',
+  /** Adds a mutation deleting a document, its ID to fill in */
+  'vista.mutate.add.delete': 'Șterge un document',
+  /** Adds a mutation deleting the documents of the shown result */
+  'vista.mutate.add.delete-result': 'Șterge documentele din rezultat',
+  /** Adds a mutation patching a document, its ID to fill in */
+  'vista.mutate.add.patch': 'Corectează un document',
+  /** Adds a mutation patching the documents of the shown result */
+  'vista.mutate.add.patch-result': 'Corectează documentele din rezultat',
+  /** Button applying the mutations a dry run showed */
+  'vista.mutate.apply': 'Aplică în {{dataset}}',
+  /** Heading of the error shown when applying the mutations failed */
+  'vista.mutate.apply-failed': 'Mutațiile nu au fost aplicate',
+  /** Next to Apply while the mutations as they are have had no dry run */
+  'vista.mutate.apply-needs-preview':
+    'Aplicarea trimite ceea ce a arătat o rulare de test: rulează una mai întâi.',
+  /** Option giving array items without a _key one */
+  'vista.mutate.auto-keys': 'Adaugă un _key elementelor din listă care nu au unul',
+  /** Under the option giving array items a _key */
+  'vista.mutate.auto-keys.description':
+    'Studioul are nevoie de unul pe fiecare element din listă pentru a-l putea edita.',
+  /** Button showing a document's changes in the dry run */
+  'vista.mutate.changes': 'Modificări',
+  /** Shown instead of a document's changes when they could not be loaded or rendered */
+  'vista.mutate.changes-failed': 'Modificările nu au putut fi afișate.',
+  /** Button retrying to show a document's changes */
+  'vista.mutate.changes-retry': 'Reîncearcă',
+  /** What the Mutate panel does */
+  'vista.mutate.description':
+    'Scrie mutațiile așa cum le acceptă Mutations API, într-o listă: create, createOrReplace, createIfNotExists, delete și patch, după ID sau după o interogare GROQ. O rulare de test arată ce ar face acestea fiecărui document fără a schimba nimic; Aplică le scrie apoi în dataset într-o singură tranzacție, cu contul tău.',
+  /** What the API says went wrong with one of the mutations */
+  'vista.mutate.failure-item': 'Mutația {{index}}: {{message}}',
+  /** Tooltip and accessible label of the button opening the generate mutations field */
+  'vista.mutate.generate.button': 'Generează mutații',
+  /** Explanation under the generate mutations field */
+  'vista.mutate.generate.description':
+    'Sanity Agent Actions scriu mutațiile pe baza descrierii tale, a documentelor din rezultat și a tipurilor lor, iar o rulare de test verifică fiecare încercare; fiecare încercare folosește un credit AI. Acestea înlocuiesc mutațiile de aici, unde anularea le readuce înapoi; nimic nu este scris până nu le aplici.',
+  /** Shown when no mutations could be generated, above the reason */
+  'vista.mutate.generate.failed': 'Mutațiile nu au putut fi generate',
+  /** Accessible label of the description field in the generate mutations bar */
+  'vista.mutate.generate.label': 'Ce ar trebui să facă mutațiile?',
+  /** Placeholder of the description field in the generate mutations bar */
+  'vista.mutate.generate.placeholder': 'Schimbă titlul documentelor din rezultat în foobar',
+  /** Shown while the first attempt at the mutations is written */
+  'vista.mutate.generate.progress': 'Se scriu mutațiile…',
+  /** Shown while an attempt the dry run turned down is retried */
+  'vista.mutate.generate.progress-retry':
+    'Se corectează mutațiile (încercarea {{attempt}} din {{max}})…',
+  /** Under the dry run: the fields the diffs leave out */
+  'vista.mutate.hiding': 'Modificările omit {{fields}}, la fel ca Istoricul.',
+  /** Shown when the mutations are not valid JSON */
+  'vista.mutate.invalid-json': 'Mutațiile nu reprezintă un JSON valid: {{message}}',
+  /** Shown when a mutation does not name exactly one thing to do */
+  'vista.mutate.invalid-mutation':
+    'Mutația {{index}} are nevoie de exact una dintre: create, createOrReplace, createIfNotExists, delete sau patch.',
+  /** Label of the mutations editor */
+  'vista.mutate.mutations': 'Mutații',
+  /** The dry run touched no documents */
+  'vista.mutate.no-documents': 'Mutațiile nu afectează niciun document.',
+  /** Shown when the JSON is not a list of mutations */
+  'vista.mutate.not-a-list':
+    'Scrie o listă de mutații, o singură mutație sau un corp de cerere cu o listă de mutații.',
+  /** A document the mutations create */
+  'vista.mutate.operation.create': 'Creează',
+  /** A document the mutations delete */
+  'vista.mutate.operation.delete': 'Șterge',
+  /** A document the mutations touch without changing its content */
+  'vista.mutate.operation.none': 'Nicio schimbare',
+  /** A document the mutations change */
+  'vista.mutate.operation.update': 'Actualizare',
+  /** Button running the mutations as a dry run */
+  'vista.mutate.preview': 'Rulare de probă',
+  /** Heading of the error shown when the dry run failed */
+  'vista.mutate.preview-failed': 'Rularea de probă a eșuat',
+  /** Heading of the dry run's outcome */
+  'vista.mutate.preview-heading': 'Rulare de probă',
+  /** Shown over a dry run made for other mutations, another dataset or other options */
+  'vista.mutate.stale':
+    'Mutațiile, dataset-ul sau opțiunile s-au schimbat după această rulare de probă. Rulați din nou pentru a le aplica.',
+  /** How many documents the dry run changes and leaves as they are */
+  'vista.mutate.summary': 'Schimbate: {{changed}} · Neschimbate: {{unchanged}}',
+  /** In the Network panel: whether a cache answered the query */
+  'vista.network.cache': 'Cache',
+  /** The API CDN answered from its cache */
+  'vista.network.cache.hit': 'Lovitură',
+  /** Under the details of a CDN cache hit */
+  'vista.network.cache.hit-explained':
+    'CDN-ul a răspuns cu un răspuns pe care îl avea stocat în cache, dintr-o locație apropiată de dvs.; interogarea nu a ajuns la API.',
+  /** The API CDN answered with a response this session had not seen */
+  'vista.network.cache.miss': 'Ratare, din câte poate spune această sesiune',
+  /** The API answered, which caches nothing */
+  'vista.network.cache.none': 'Niciunul, API-ul răspunde la fiecare cerere cu conținut proaspăt',
+  /** Shown in the Network panel while there is no response */
+  'vista.network.empty':
+    'Preluați interogarea pentru a vedea ce endpoint a răspuns, dacă a fost dintr-un cache și unde a rulat.',
+  /** In the Network panel: the endpoint that answered */
+  'vista.network.endpoint': 'Răspuns de către',
+  /** The live API answered */
+  'vista.network.endpoint.api': 'API',
+  /** The API CDN answered */
+  'vista.network.endpoint.cdn': 'API CDN',
+  /** In the Network panel: the region the query ran in */
+  'vista.network.region': 'Interogarea a rulat în',
+  /** The response did not say where the query ran */
+  'vista.network.region.unknown': 'Neraportat',
+  /** In the Network panel: the round trip and the time on the server */
+  'vista.network.timing': 'Timp',
+  /** The round trip and the server's time for the query, in milliseconds */
+  'vista.network.timing.value': '{{e2e}}ms dus-întors, {{server}}ms pe server',
+  /** In the Network panel: the trace of the request, for Sanity support */
+  'vista.network.trace': 'ID urmărire',
+  /** Hint in the Network panel while queries go to the API */
+  'vista.network.use-cdn-hint':
+    'Activați Folosește API CDN în Opțiuni pentru a trimite interogările prin CDN.',
+  /** Label of the browser's marker on the Network panel's globe, placed from its time zone */
+  'vista.network.you': 'Dvs.',
+  /** Hint under the dataset field while the tab follows the workspace's dataset */
+  'vista.options.dataset.follows-workspace': 'Urmează spațiul de lucru',
+  /** Button that pins the current dataset so the tab stops following the workspace */
+  'vista.options.dataset.pin': 'Fixați un dataset',
+  /** Hint under the dataset field while a dataset is pinned */
+  'vista.options.dataset.pinned': 'Fixat; spațiul de lucru poate folosi alt set de date',
+  /** Button that makes the tab follow the workspace's dataset again */
+  'vista.options.dataset.use-workspace': 'Folosește setul de date al spațiului de lucru',
+  /** Label for the "Include content source map" switch */
+  'vista.options.include-source-map': 'Include harta sursei de conținut',
+  /** Description for the "Include content source map" switch */
+  'vista.options.include-source-map.description':
+    'Adaugă resultSourceMap la răspuns, afișat în fila Hartă sursă de conținut.',
+  /** Perspective option following the studio navbar; the name is the release, published or drafts */
+  'vista.options.perspective.global': 'Global ({{name}})',
+  /** Label of the switch that sends queries to the API CDN */
+  'vista.options.use-cdn': 'Folosește CDN-ul API',
+  /** Note under the API CDN switch while the studio signs in with a cookie */
+  'vista.options.use-cdn.anonymous':
+    'Acest studio te autentifică printr-un cookie, pe care CDN-ul API nu îl primește niciodată: răspunde ca și cum ai fi un vizitator anonim, cu ceea ce arată un set de date public.',
+  /**
+   * Why the API CDN is asked for but not used: the perspective is the one the perspective
+   * select shows, such as "Global (drafts)"
+   */
+  'vista.options.use-cdn.blocked':
+    'CDN-ul API nu oferă ciorne sau versiuni, astfel încât interogările cu perspectiva {{perspective}} merg către API. Cu publicat sau brut, acestea folosesc CDN-ul.',
+  /** Heading of the notice shown while the perspective keeps queries off the API CDN */
+  'vista.options.use-cdn.blocked.title': 'Interogările merg către API, nu către CDN',
+  /** Description of the API CDN switch */
+  'vista.options.use-cdn.description':
+    'Trimite interogarea către CDN-ul API, similar cu useCdn: true în @sanity/client, cu perspectivele publicat și brut: ciornele și versiunile merg mereu către API. Răspunsurile sale sunt stocate în cache până la un minut; panoul Rețea arată când unul a provenit din cache.',
+  /** Button in the API CDN notice switching the tab to the published perspective */
+  'vista.options.use-cdn.use-published': 'Folosește perspectiva publicată',
+  /** Label of the variant field */
+  'vista.options.variant-label': 'Variantă',
+  /** Variant option sending the navbar's variant, named */
+  'vista.options.variant.global': 'Global ({{name}})',
+  /** Variant option sending the navbar's variant while none is selected there */
+  'vista.options.variant.global-none': 'Global (nicio selecție)',
+  /** Variant option sending no variant */
+  'vista.options.variant.none': 'Niciuna',
+  /** Accessible label for collapsing a bottom panel */
+  'vista.panel.collapse': 'Restrânge panoul',
+  /** Label of the Delta tab in the response panel, which tests the query in delta mode */
+  'vista.panel.delta': 'Delta',
+  /** Accessible label for expanding a bottom panel */
+  'vista.panel.expand': 'Extinde panoul',
+  /** Label of the "Explain" tab in the response panel: the query plan and an explanation */
+  'vista.panel.explain': 'Explică',
+  /** Label of the Functions tab in the response panel */
+  'vista.panel.functions': 'Funcții',
+  /** Label of the "History" tab in the response panel */
+  'vista.panel.history': 'Istoric',
+  /** Label of the "Lint" tab in the response panel, listing the query's lint findings */
+  'vista.panel.lint': 'Lint',
+  /** Label of the Mutate tab in the response panel, which runs and applies mutations */
+  'vista.panel.mutate': 'Mutare',
+  /** Label of the Network tab in the response panel */
+  'vista.panel.network': 'Rețea',
+  /** Label of the "Options" panel in the request column */
+  'vista.panel.options': 'Opțiuni',
+  /** Label of the "Response" tab in the response panel */
+  'vista.panel.response': 'Răspuns',
+  /** Label of the "Content Source Map" tab in the response panel */
+  'vista.panel.source-map': 'Hartă sursă de conținut',
+  /** Button adding an item to a list param in the params form */
+  'vista.params-form.add-item': 'Adaugă element',
+  /** Placeholder of a params form field that takes any JSON value */
+  'vista.params-form.any-placeholder':
+    'Orice valoare JSON; alt text este trimis ca șir de caractere',
+  /** Shown in the params form when the query uses no params */
+  'vista.params-form.empty':
+    'Interogarea nu folosește parametri. Fiecare $nume din ea primește un câmp aici.',
+  /** Shown in the params form while the params JSON cannot be parsed */
+  'vista.params-form.invalid-json':
+    'Parametrii nu sunt JSON valid. Corectați-i în vizualizarea JSON pentru a-i edita aici.',
+  /** A boolean param's value is not true or false; it is sent anyway */
+  'vista.params-form.invalid.boolean': 'Nu este true sau false; trimis ca {{value}}',
+  /** A document type param's value is not a document type of the workspace; it is sent anyway */
+  'vista.params-form.invalid.document-type':
+    'Nu este un tip de document din acest spațiu de lucru; trimis oricum',
+  /** A whole number param (a slice bound) holds a fraction */
+  'vista.params-form.invalid.integer': 'Nu este un număr întreg, lucru necesar pentru felii',
+  /** A list param's value is not a list; it is sent anyway */
+  'vista.params-form.invalid.list': 'Nu este o listă; trimis ca {{value}}',
+  /** A number param's value is not a number; it is sent anyway */
+  'vista.params-form.invalid.number': 'Nu este un număr; trimis ca text',
+  /** A param's value is not one of the values the schema allows; it is sent anyway */
+  'vista.params-form.invalid.option': 'Nu este una dintre valorile cunoscute; trimis oricum',
+  /** A text param's value is not text; it is sent anyway */
+  'vista.params-form.invalid.string': 'Nu este text; trimis ca {{value}}',
+  /** Accessible label of an item input of a list param in the params form */
+  'vista.params-form.item-label': '${{name}}, element {{index}}',
+  /** Placeholder of an item input of a list param in the params form */
+  'vista.params-form.item-placeholder': 'Element',
+  /** Under a params form field whose param has no value */
+  'vista.params-form.missing': 'Nesetat: interogarea eșuează până când are o valoare',
+  /** Shown in the params form when the workspace schema could not be read */
+  'vista.params-form.no-schema':
+    'Tipurile provin doar din interogare: schema spațiului de lucru nu a putut fi citită.',
+  /** Placeholder of a params form field without a value, and the unset choice of a boolean */
+  'vista.params-form.not-set': 'Nesetat',
+  /** Button setting a date and time param to the current time */
+  'vista.params-form.now': 'Acum',
+  /** Button removing a param the query does not use from the params */
+  'vista.params-form.remove': 'Elimină',
+  /** Accessible label of the button removing an item from a list param */
+  'vista.params-form.remove-item': 'Elimină elementul',
+  /** Shown in the params form when the query does not parse */
+  'vista.params-form.syntax-error':
+    'Interogarea nu poate fi analizată, astfel încât parametrii săi sunt listați fără tipuri.',
+  /** Type hint of a params form field: any JSON value */
+  'vista.params-form.type.any': 'orice valoare JSON',
+  /** Type hint of a params form field: true or false */
+  'vista.params-form.type.boolean': 'true sau false',
+  /** Type hint of a params form field: an ISO 8601 date and time */
+  'vista.params-form.type.datetime': 'dată și oră (ISO 8601)',
+  /** Type hint of a params form field: a document ID */
+  'vista.params-form.type.document-id': 'ID document',
+  /** Type hint of a params form field: one of the workspace's document types */
+  'vista.params-form.type.document-type': 'tip de document',
+  /** Type hint of a params form field: a whole number */
+  'vista.params-form.type.integer': 'număr întreg',
+  /** Type hint of a params form field: a list of values */
+  'vista.params-form.type.list': 'listă, fiecare {{type}}',
+  /** Type hint of a params form field: a number */
+  'vista.params-form.type.number': 'număr',
+  /** Type hint of a params form field: text */
+  'vista.params-form.type.string': 'text',
+  /** Heading of the params the query does not use, listed in the params form */
+  'vista.params-form.unused': 'Nu este folosit de interogare',
+  /** Before the expressions that use a param, in the params form */
+  'vista.params-form.used-in': 'Folosit în',
+  /** Value announced for the params resize handle while the panel sizes itself to its content */
+  'vista.params.fit-height': 'Dimensionat la conținut, {{height}} pixeli',
+  /** Accessible label and tooltip of the handle for resizing the params panel */
+  'vista.params.resize':
+    'Redimensionați parametrii: trageți sau folosiți tastele săgeată; faceți dublu clic sau apăsați Enter pentru a reveni la dimensiunea conținutului',
+  /** Tab showing the params as a form inferred from the query */
+  'vista.params.view.form': 'Formular',
+  /** Tab showing the params as JSON */
+  'vista.params.view.json': 'JSON',
+  /** Accessible label of the tabs switching how the params are edited */
+  'vista.params.view.label': 'Editați parametrii ca',
+  /** Toast shown after a query URL was pasted and loaded into the tab */
+  'vista.paste.parsed': 'Interogare încărcată din URL-ul lipit',
+  /** Toast shown when a pasted URL used a content variant the tab does not send */
+  'vista.paste.unavailable-variant':
+    'URL-ul lipit a folosit varianta „{{variant}}”; selectați-o în bara de navigare pentru a rula interogarea cu aceasta.',
+  /** Toast shown when the dataset of a pasted URL is not available here */
+  'vista.paste.unknown-dataset':
+    'Setul de date „{{dataset}}” din URL-ul lipit nu este disponibil aici, se păstrează cel curent.',
+  /** Toast shown when the perspective of a pasted URL cannot be used */
+  'vista.paste.unsupported-perspective':
+    'Perspectiva din URL-ul lipit nu este acceptată aici, se păstrează cea curentă.',
+  /** Toast shown when a pasted URL used a content variant, but this workspace has variants switched off */
+  'vista.paste.variants-disabled':
+    'URL-ul lipit a folosit varianta „{{variant}}”; acest spațiu de lucru are variantele dezactivate, astfel încât interogarea rulează fără aceasta.',
+  /** Accessible label for the query actions menu */
+  'vista.query.actions': 'Acțiuni interogare',
+  /** Tooltip when automatic refetching is not available for the API version */
+  'vista.query.auto-refetch.unsupported':
+    'Reîncărcarea automată necesită versiunea API v2021-03-25 sau mai recentă.',
+  /** Toast shown after the query was copied */
+  'vista.query.copied': 'Interogare copiată în clipboard',
+  /** Menu item copying the query text */
+  'vista.query.copy': 'Copiați interogarea',
+  /** Menu item opening the export query dialog */
+  'vista.query.export': 'Exportați interogarea…',
+  /** Menu item reformatting the query */
+  'vista.query.prettify': 'Reformatați interogarea',
+  /** Toast shown when the query could not be reformatted */
+  'vista.query.prettify.failed': 'Interogarea nu a putut fi reformatată',
+  /** Menu item saving the query to the personal saved queries */
+  'vista.query.save': 'Salvează interogarea',
+  /** The Fetch button while a fetch is running, stopping it; paired with Stop live */
+  'vista.query.stop': 'Oprește',
+  /** Tooltip and accessible label of the Stop button, which stops the running fetch only */
+  'vista.query.stop.description': 'Oprește preluarea',
+  /** Explanation in the settings section about the redesigned experience */
+  'vista.redesign.settings.description':
+    'Folosești versiunea redesenată a instrumentului Vision. Dacă revii la versiunea anterioară, filele și setările tale rămân salvate în acest browser pentru data viitoare când o încerci.',
+  /** Title of the settings section about the redesigned experience */
+  'vista.redesign.settings.title': 'Vision redesenat (beta)',
+  /** Sidebar item and settings button that return to the classic Vision tool */
+  'vista.redesign.switch-to-classic': 'Revino la Vision clasic',
+  /** Toast button that switches to the redesigned tool */
+  'vista.redesign.toast.accept': 'Încearcă acum',
+  /** Body of the toast inviting users of the classic tool to try the redesign */
+  'vista.redesign.toast.description':
+    'File de interogări, reîncărcare live, detalii despre răspuns și exporturi. Poți reveni oricând la versiunea anterioară.',
+  /** Toast button that hides the invitation */
+  'vista.redesign.toast.dismiss': 'Nu acum',
+  /** Title of the toast inviting users of the classic tool to try the redesign */
+  'vista.redesign.toast.title': 'Încearcă Vision redesenat',
+  /** Button next to Fetch in the classic tool that switches to the redesigned one */
+  'vista.redesign.try': 'Încearcă noul design',
+  /** Tooltip of the button next to Fetch in the classic tool that switches to the redesign */
+  'vista.redesign.try.description':
+    'Treci la noul Vision redesenat, în versiune beta. Poți reveni oricând la versiunea anterioară din bara laterală.',
+  /** Empty state of the response panel before anything was fetched */
+  'vista.response.empty': 'Nimic preluat încă',
+  /** Label for the payload size in the response tab */
+  'vista.response.payload-size': 'Dimensiunea payload-ului',
+  /** Label for the sync tags in the response tab */
+  'vista.response.sync-tags': 'Etichete de sincronizare',
+  /** Shown when the response carried no sync tags */
+  'vista.response.sync-tags.none': 'Nicio etichetă de sincronizare în răspuns',
+  /** Accessible label for the result actions menu */
+  'vista.result.actions': 'Acțiuni pentru rezultat',
+  /** Toast shown after the result was copied */
+  'vista.result.copied': 'Rezultatul a fost copiat în clipboard',
+  /** Toast shown after a value in the result was copied, with its path such as [0].author.name */
+  'vista.result.copied-value': '{{path}} a fost copiat',
+  /** Menu item and button copying the result as JSON */
+  'vista.result.copy': 'Copiază rezultatul',
+  /** Button next to each property in the result tree, copying its value */
+  'vista.result.copy-value': 'Copiază valoarea',
+  /** Empty state of the result view */
+  'vista.result.empty': 'Rulează interogarea pentru a vedea rezultatul aici',
+  /** Button exporting the result as CSV */
+  'vista.result.export-csv': 'Exportă CSV',
+  /** Button exporting the result as JSON */
+  'vista.result.export-json': 'Exportă JSON',
+  /** Menu item opening the TypeScript export dialog */
+  'vista.result.export-typescript': 'Exportă TypeScript…',
+  /** Menu item opening the Zod export dialog */
+  'vista.result.export-zod': 'Exportă Zod…',
+  /** Button on a graph node hiding the objects and arrays it holds */
+  'vista.result.graph.collapse': 'Ascunde ce conține',
+  /** Button fitting the whole graph in view */
+  'vista.result.graph.fit': 'Încadrează în vizualizare',
+  /** Accessible label of the graph, saying how to move around in it */
+  'vista.result.graph.label':
+    'Graful rezultatului: trage pentru a te deplasa, derulează pentru a mări/micșora; când e focalizat, săgețile deplasează, + și - măresc/micșorează, 0 încadrează',
+  /** Ends the note on a graph that leaves part of this result out */
+  'vista.result.graph.left-out-hint':
+    'Vizualizările de tip arbore și JSON îl afișează în întregime.',
+  /** Note on a graph of a result with more objects and arrays than it draws */
+  'vista.result.graph.node-limit': 'Sunt desenate doar primele {{nodes}} obiecte și array-uri.',
+  /**
+   * Note on a graph whose objects or arrays have more entries than it lists; the nodes are the
+   * ones in this result, each with its number of entries
+   */
+  'vista.result.graph.partial': 'Sunt listate doar primele {{rows}} intrări pentru {{nodes}}.',
+  /** An object or array in the note, with how many entries it has (always more than listed) */
+  'vista.result.graph.partial.node': '{{name}} ({{entries}} intrări)',
+  /** Title of the graph node of the result itself */
+  'vista.result.graph.root': 'rezultat',
+  /** Button zooming into the graph */
+  'vista.result.graph.zoom-in': 'Mărește',
+  /** Button zooming out of the graph */
+  'vista.result.graph.zoom-out': 'Micșorează',
+  /** Tab showing the result as a graph of its objects and arrays */
+  'vista.result.view.graph': 'Graf',
+  /** Tab showing the result as indented JSON text, to select and copy from */
+  'vista.result.view.json': 'JSON',
+  /** Accessible label of the tabs that switch how the result shows */
+  'vista.result.view.label': 'Vizualizare rezultat',
+  /** Tab showing the result as a tree to browse */
+  'vista.result.view.tree': 'Arbore',
+  /** Empty state of the saved queries panel */
+  'vista.saved.empty':
+    'Nu există încă interogări salvate. Salvează interogarea curentă cu butonul +.',
+  /** Empty state of a query list when the search matches nothing */
+  'vista.saved.empty-search': 'Nicio interogare nu corespunde căutării tale',
+  /** Menu item loading a saved query into the active tab */
+  'vista.saved.load-in-current-tab': 'Încarcă în fila curentă',
+  /** Menu item opening a saved query in a new tab */
+  'vista.saved.open-in-new-tab': 'Deschide într-o filă nouă',
+  /** Menu item renaming a saved query */
+  'vista.saved.rename': 'Redenumește',
+  /** Accessible label for the button saving the current query */
+  'vista.saved.save-current': 'Salvează interogarea curentă',
+  /** Toast shown when an opened saved query used a content variant the tab does not send */
+  'vista.saved.unavailable-variant':
+    'Această interogare salvată a folosit varianta „{{variant}}”; selecteaz-o în bara de navigare pentru a rula interogarea cu ea.',
+  /** Toast shown when an opened saved query names a dataset that is not available here */
+  'vista.saved.unknown-dataset':
+    'Setul de date „{{dataset}}” al acestei interogări salvate nu este disponibil aici, se păstrează cel curent.',
+  /** Toast shown when an opened saved query used a content variant, but this workspace has variants switched off */
+  'vista.saved.variants-disabled':
+    'Această interogare salvată a folosit varianta „{{variant}}”; acest spațiu de lucru are variantele dezactivate, așa că interogarea rulează fără ea.',
+  /** Button in the settings dialog that clears the stored state */
+  'vista.settings.clear-storage': 'Golește stocarea',
+  /** Confirmation button for clearing the storage */
+  'vista.settings.clear-storage.confirm': 'Da, golește spațiul de stocare',
+  /** Explanation of what clearing the storage does */
+  'vista.settings.clear-storage.description':
+    'Șterge interogările salvate personale și biblioteca de funcții, resetează filele deschise și aceste setări implicite din acest browser și revine la instrumentul clasic Vision. Interogările partajate sunt păstrate.',
+  /** Toast shown when the saved queries could not be cleared */
+  'vista.settings.clear-storage.error': 'Interogările salvate nu au putut fi șterse',
+  /** Toast shown after the storage was cleared */
+  'vista.settings.clear-storage.success': 'Spațiul de stocare a fost golit',
+  /** Explanation at the top of the settings dialog */
+  'vista.settings.description':
+    'Setări implicite pentru filele noi. Filele deschise își păstrează propriile opțiuni.',
+  /** Explains the setting listing the fields left out of History diffs */
+  'vista.settings.history-diff.description':
+    'Câte o cale de câmp pe linie. O cale se potrivește la orice adâncime a unui rezultat, deci _rev ascunde revizia fiecărui document din acesta. Fiecare diff poate încă să le afișeze.',
+  /** Button restoring the default fields left out of History diffs */
+  'vista.settings.history-diff.reset': 'Revino la setările implicite',
+  /** Label of the setting listing the fields left out of History diffs */
+  'vista.settings.history-diff.title': 'Câmpuri ascunse din diferențele de istoric',
+  /** Title of the settings dialog */
+  'vista.settings.title': 'Setări',
+  /** Empty state of the shared queries panel */
+  'vista.shared.empty':
+    'Încă nu există interogări partajate. Partajează o interogare salvată pentru a o face disponibilă tuturor celor care folosesc acest set de date.',
+  /** Shortcut description: close dialogs and menus */
+  'vista.shortcuts.close': 'Închide dialogurile și meniurile',
+  /** Shortcut that lists the functions matching the name being typed in the query editor */
+  'vista.shortcuts.complete': 'Completează un nume de funcție',
+  /** Shortcut description: copy the query */
+  'vista.shortcuts.copy-query': 'Copiază interogarea',
+  /** Shortcut that turns the selected projection, or the one around the cursor, into a custom function */
+  'vista.shortcuts.extract-function': 'Extrage proiecția de la cursor într-o funcție',
+  /** Shortcut description: run the query */
+  'vista.shortcuts.fetch': 'Preia interogarea',
+  /** Shortcut description: move the cursor to the next lint finding in the query editor */
+  'vista.shortcuts.next-finding': 'Sari la următoarea constatare de linting',
+  /** Shortcut description: reformat the query */
+  'vista.shortcuts.prettify': 'Formatează frumos interogarea',
+  /** Title of the keyboard shortcuts dialog */
+  'vista.shortcuts.title': 'Comenzi rapide de la tastatură',
+  /** Sidebar toggle: show icons only */
+  'vista.sidebar.collapse': 'Restrânge bara laterală',
+  /** Sidebar toggle: show labels next to the icons */
+  'vista.sidebar.expand': 'Extinde bara laterală',
+  /** Accessible label for the sidebar navigation */
+  'vista.sidebar.label': 'Bara laterală Vista',
+  /** Sidebar item and drawer title for personal saved queries */
+  'vista.sidebar.saved-queries': 'Interogări salvate',
+  /** Sidebar item opening the settings dialog */
+  'vista.sidebar.settings': 'Setări',
+  /** Sidebar item and drawer title for shared queries */
+  'vista.sidebar.shared-queries': 'Interogări partajate',
+  /** Sidebar item opening the keyboard shortcuts dialog */
+  'vista.sidebar.shortcuts': 'Comenzi rapide de la tastatură',
+  /** Empty state of the content source map panel */
+  'vista.source-map.empty':
+    'Nicio hartă a sursei conținutului în răspuns. Activați "Include content source map" din Opțiuni și preluați din nou.',
+  /** Accessible label of the divider between the result and the response details panel */
+  'vista.split.bottom-panel':
+    'Redimensionați panoul cu detaliile răspunsului: trageți sau utilizați tastele săgeată; Home și End merg la limite, Enter resetează',
+  /** Accessible label of the divider between the request and response panes */
+  'vista.split.request-response':
+    'Redimensionați panourile cererii și răspunsului: trageți sau utilizați tastele săgeată; Home și End merg la limite, Enter resetează',
+  /** Accessible label for the button closing a query tab */
+  'vista.tabs.close-tab': 'Închide fila',
+  /** Accessible label for the list of query tabs */
+  'vista.tabs.label': 'File de interogare',
+  /** Accessible label for the button opening a new query tab */
+  'vista.tabs.new-tab': 'Filă nouă',
+  /** Placeholder of the input renaming a tab */
+  'vista.tabs.title-placeholder': 'Titlul filei',
+  /** Title of a tab whose query is still empty */
+  'vista.tabs.untitled': 'Interogare fără titlu',
+  /** Title the browser shows for the WebMCP tool that lints a query */
+  'vista.webmcp.check-query': 'Verificați o interogare GROQ în Vision',
+  /** Title the browser shows for the WebMCP tool that describes the workspace schema */
+  'vista.webmcp.describe-schema': 'Descrieți schema în Vision',
+  /** Title the browser shows for the WebMCP tool that returns a query plan */
+  'vista.webmcp.explain-query': 'Explicați o interogare GROQ în Vision',
+  /** Title the browser shows for the WebMCP tool that reads the active Vision tab */
+  'vista.webmcp.get-state': 'Citiți fila Vision deschisă',
+  /** Title the browser shows for the WebMCP tool that opens a query in a new tab */
+  'vista.webmcp.open-query': 'Deschideți o interogare GROQ în Vision',
+  /** Title the browser shows for the WebMCP tool that runs mutations as a dry run */
+  'vista.webmcp.preview-mutations': 'Previzualizați mutațiile în Vision',
+  /** Title the browser shows for the WebMCP tool that runs a query */
+  'vista.webmcp.run-query': 'Rulați o interogare GROQ în Vision',
 })
