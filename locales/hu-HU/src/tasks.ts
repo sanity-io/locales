@@ -120,6 +120,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Válassza ki a cél dokumentumot',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Feladat címe',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Nem sikerült létrehozni a feladatot, kérjük, próbálja újra',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'A cím megadása kötelező',
   /** The status message upon successful creation of a task */
@@ -160,6 +162,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Feladatok megnyitása',
   /** Title of the Tasks panel   */
   'panel.title': 'Feladatok',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'A feladatok jelenleg nem érhetők el. Kérjük, próbálja újra később.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Hozzárendelve',
