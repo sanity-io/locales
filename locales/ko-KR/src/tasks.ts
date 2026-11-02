@@ -109,6 +109,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': '문서 선택',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': '작업 제목',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': '작업을 생성하지 못했습니다. 다시 시도해 주세요',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': '제목이 필요합니다',
   /** The status message upon successful creation of a task */
@@ -148,6 +150,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': '작업 열기',
   /** Title of the Tasks panel   */
   'panel.title': '작업',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': '현재 작업(Tasks)을 사용할 수 없습니다. 나중에 다시 시도해 주세요.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': '할당됨',

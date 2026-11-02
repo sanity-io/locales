@@ -177,6 +177,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     '<VersionBadge>릴리스</VersionBadge>의 일부로서 발행된 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': '초안 보기',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text': '이것은 게시된 문서입니다. 편집하려면 초안으로 전환하세요.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '참조 다시 불러오기',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -503,6 +507,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': '즐겨찾기에 추가',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': '즐겨찾기에서 제거',
+  /** Details about a singleton document */
+  'document.singleton.details': '이것은 ID가 "{{documentGroupId}}"인 싱글톤 문서입니다',
+  /** The label describing singleton documents */
+  'document.singleton.label': '싱글톤',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
