@@ -188,6 +188,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Du ser eit skrivebeskytta dokument som vart publisert som ein del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikkje redigerast',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Vis utkast',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Dette er eit publisert dokument. Byt til utkast for å redigere det.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text':
     'Last inn referansen på nytt',
@@ -535,6 +540,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Legg til i favorittar',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Fjern frå favorittar',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Dette er eit singleton-dokument med id «{{documentGroupId}}»',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Singleton',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':

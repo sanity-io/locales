@@ -116,6 +116,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Vel dokumentmål',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Oppgåvetittel',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Klarte ikkje å oppretta oppgåve, prøv igjen',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Tittel er påkravd',
   /** The status message upon successful creation of a task */
@@ -155,6 +157,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Opne oppgåver',
   /** Title of the Tasks panel   */
   'panel.title': 'Oppgåver',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Oppgåver er ikkje tilgjengelege no. Prøv igjen seinare.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Tildelt',
