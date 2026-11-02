@@ -188,6 +188,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Вы просматриваете документ только для чтения, который был опубликован как часть <VersionBadge>{{title}}</VersionBadge>. Его нельзя редактировать',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Просмотреть черновик',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Это опубликованный документ. Переключитесь на черновики, чтобы редактировать его.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перезагрузить ссылку',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -533,6 +538,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Добавить в избранное',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Удалить из избранного',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Это одиночный документ (singleton) с id "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Одиночный документ',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':

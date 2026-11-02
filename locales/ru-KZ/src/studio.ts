@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Копировать в буфер обмена',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Текущая версия',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}} устарела и больше не должна использоваться.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Устаревшая версия',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Эта Студия закреплена на устаревшей версии. Выберите другую версию в разделе «Управление».',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Обновите пакет sanity до более новой версии и повторно разверните Студию.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'Узнать, как обновить',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Причина: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Обновить сейчас',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Перезагрузить',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Перезагрузите Студию для обновления',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Устарело',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Разработка',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Отмена',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Выбрать',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Выбрать файл',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Выбрать изображение',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Выбрать видео',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -192,9 +215,16 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     'Смотрите консоль для получения дополнительной информации.',
   'asset-sources.common.uploader.upload-failed.title': 'Не удалось загрузить',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'Используется существующий файл, найденный в этом источнике.',
+  'asset-sources.common.warning.file-already-exist.title': 'Файл: «{{filename}}» уже существует',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Файлы рабочей области',
   'asset-sources.dataset.image.title': 'Изображения рабочей области',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'Не удалось загрузить этот источник ресурсов. Закройте диалоговое окно и попробуйте снова.',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Не удалось определить медиатеку для этого проекта.',
@@ -213,14 +243,17 @@ export default removeUndefinedLocaleResources({
     'Выбрать новый ресурс',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Редактировать ресурс',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': 'Выбор файла для {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': 'Выбор изображения для {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': 'Выбор видео для {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Загрузить в медиатеку',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Используется существующий файл из медиатеки.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    'Файл «{{filename}}» уже существует',
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': 'Релиз «<strong>{{title}}</strong>» был архивирован.',
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Релиз '<strong>{{title}}</strong>' был удален.",
 
@@ -497,8 +530,6 @@ export default removeUndefinedLocaleResources({
     'Нерешенных изменений в версии {{versionName}}: {{count}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Отмена',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Управление версиями',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -749,6 +780,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Перезагрузить для обновления до v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio v{{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} устарела',
   /** Title for help and resources menus */
   'help-resources.title': 'Помощь и ресурсы',
   /** Label for studio's which are up to date */
@@ -756,6 +789,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Закрыть входящие ссылки',
   /**Incoming references inspector title */
   'incoming-references.title': 'Входящие ссылки',
 
@@ -796,11 +831,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Удалить',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Удалить',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': 'Показать 1 элемент',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'Показать меньше элементов',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Просмотреть {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Вы все еще можете переместить или удалить этот элемент, но его нельзя редактировать, поскольку определение схемы для его типа нигде не найдено.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'Не удалось определить начальное значение для типа: {{schemaTypeTitle}}: {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Невозможно определить исходное значение для типа: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1233,6 +1275,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Маркер строки',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Выбрать таблицу',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': 'Аннотация не определена в схеме: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': 'Тип списка не определён в схеме: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'Разметка не определена в схеме: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'Стиль не определён в схеме: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Очистить',
   /** Label for action to copy the current item (used within arrays) */
@@ -1454,6 +1504,9 @@ export default removeUndefinedLocaleResources({
     'Ваш браузер использует устаревший HTTP протокол для связи с Sanity. Это может привести к значительному снижению производительности.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Узнать больше',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Открывает документацию Sanity в новой вкладке',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Больше не показывать в этом сеансе',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1503,6 +1556,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Не в документе',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Кто здесь',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} сейчас редактирует этот документ в релизе «{{releaseTitle}}»',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} сейчас редактирует этот документ',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Без названия',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Без названия',
@@ -1544,6 +1604,8 @@ export default removeUndefinedLocaleResources({
     'Максимальное число релизов в этом рабочем пространстве: {{count}}',
   'release.action.new-release.limit-reached_other':
     'Максимальное число релизов в этом рабочем пространстве: {{count}}',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Приостановить для редактирования',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас нет разрешения на выполнение этого действия',
   /** Action message for running a scheduled draft immediately */
@@ -1639,6 +1701,12 @@ export default removeUndefinedLocaleResources({
     'Ваш запланированный черновик содержит изменения, отличные от текущего черновика.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Удалить запланированный черновик',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    'Не удалось загрузить текущий черновик. Копирование запланированных изменений перезапишет его.',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    'Не удалось загрузить запланированный черновик. Его копирование может перезаписать ваш черновик неверным содержимым.',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body':
     'Выберите новую дату и время для запланированной публикации.',
@@ -1692,13 +1760,9 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Запланируйте на будущее время и дату.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Опубликовать в',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Этот релиз был откреплен',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Релиз '{{title}}' был архивирован",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Не удалось создать релиз',
@@ -1723,13 +1787,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Документ запланированного черновика <strong>{{title}}</strong> был опубликован.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Этот релиз был откреплен',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Релиз '{{title}}' был опубликован",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1741,9 +1801,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Не удалось запланировать черновик: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Черновик успешно запланирован',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Запланированный черновик опубликован',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версия этого документа уже была добавлена',
@@ -1776,6 +1834,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Запланированная публикация',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Датасет',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'ID проекта',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Источник',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'Место ошибки',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Рабочая область',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'Ошибки схемы',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Открыть поиск',

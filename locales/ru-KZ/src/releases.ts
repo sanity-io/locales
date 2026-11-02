@@ -334,14 +334,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'У вас нет разрешения на отмену публикации этого документа',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} сейчас редактирует этот документ в релизе «{{releaseTitle}}»',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} сейчас редактирует этот документ',
-  /** Tooltip text for when multiple users are editing a document in a release */
-  'presence.tooltip.other': 'Этот документ сейчас редактируют пользователи: {{count}}',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Нет документов для публикации',
 
@@ -381,10 +373,24 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Будут откачены версии документов: {{releaseDocumentsLength}}.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Предыдущее состояние {{count}} документа больше недоступно в истории документа, поэтому релиз не может быть отменён.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Проверка истории документа…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Немедленно откатить релиз',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} документ будет восстановлен до последней опубликованной версии, существовавшей до этого релиза.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} документ будет снят с публикации, так как он не был опубликован до этого релиза.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Вы уверены, что хотите откатить релиз '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Не удалось определить предыдущее состояние {{count}} документа, поэтому релиз не может быть отменён.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'После публикации в документы этого релиза были внесены изменения. Откат перезапишет эти изменения.',
