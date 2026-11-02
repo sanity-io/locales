@@ -333,12 +333,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'თქვენ არ გაქვთ ამ დოკუმენტის გამოქვეყნების გაუქმების უფლება',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} ახლა ამ დოკუმენტს ასწორებს „{{releaseTitle}}" გამოშვებაში',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} ახლა ამ დოკუმენტს ასწორებს',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'გამოსაქვეყნებელი დოკუმენტები არ არის',
 
@@ -378,11 +372,37 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'ეს დააბრუნებს {{releaseDocumentsLength}} დოკუმენტის ვერსიას.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    '{{count}} დოკუმენტის წინა მდგომარეობა აღარ არის ხელმისაწვდომი დოკუმენტის ისტორიაში, ამიტომ გამოშვების დაბრუნება შეუძლებელია.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    '{{count}} დოკუმენტის წინა მდგომარეობა აღარ არის ხელმისაწვდომი დოკუმენტის ისტორიაში, ამიტომ გამოშვების დაბრუნება შეუძლებელია.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'მიმდინარეობს დოკუმენტის ისტორიის შემოწმება…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'გამოშვების დაუყოვნებლივ დაბრუნება',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} დოკუმენტი აღდგება ამ გამოშვებამდე არსებულ ბოლო გამოქვეყნებულ ვერსიაზე.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} დოკუმენტი აღდგება ამ გამოშვებამდე არსებულ ბოლო გამოქვეყნებულ ვერსიებზე.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} დოკუმენტის გამოქვეყნება გაუქმდება, რადგან ის ამ გამოშვებამდე არ ყოფილა გამოქვეყნებული.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} დოკუმენტის გამოქვეყნება გაუქმდება, რადგან ისინი ამ გამოშვებამდე არ ყოფილან გამოქვეყნებული.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     'დარწმუნებული ხართ, რომ გსურთ „{{title}}" გამოშვების დაბრუნება?',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    '{{count}} დოკუმენტის წინა მდგომარეობის დადგენა ვერ მოხერხდა, ამიტომ გამოშვების დაბრუნება შეუძლებელია.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    '{{count}} დოკუმენტის წინა მდგომარეობის დადგენა ვერ მოხერხდა, ამიტომ გამოშვების დაბრუნება შეუძლებელია.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'გამოქვეყნების შემდეგ ამ გამოშვების დოკუმენტებში ცვლილებები განხორციელდა. დაბრუნება გადაწერს ამ ცვლილებებს.',
