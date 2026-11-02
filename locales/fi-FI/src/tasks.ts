@@ -115,6 +115,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Valitse dokumentti',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Tehtävän otsikko',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Tehtävän luominen epäonnistui, yritä uudelleen',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Otsikko vaaditaan',
   /** The status message upon successful creation of a task */
@@ -154,6 +156,9 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Avaa tehtävät',
   /** Title of the Tasks panel   */
   'panel.title': 'Tehtävät',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text':
+    'Tehtävät eivät ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Määrätty',
