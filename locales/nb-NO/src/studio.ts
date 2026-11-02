@@ -24,6 +24,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til utklippstavle',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Nåværende versjon',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}} er avviklet og bør ikke lenger brukes.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Avviklet versjon',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Dette Studioet er låst til en avviklet versjon. Velg en annen versjon i Manage.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Oppdater sanity-pakken til en nyere versjon og distribuer Studioet på nytt.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'Lær hvordan du oppdaterer',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Årsak: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Hvordan oppgradere',
   /** "Latest version" header in version info dialog */
@@ -37,6 +52,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Last inn på nytt',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Last Studio på nytt for å oppdatere',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Avviklet',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Utvikling',
   /** "New version available" tooltip in About-dialog */
@@ -122,6 +139,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Avbryt',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Velg',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Velg fil',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Velg bilde',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Velg video',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -189,9 +212,16 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': 'Se konsollen for mer informasjon.',
   'asset-sources.common.uploader.upload-failed.title': 'Opplasting mislyktes',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'Bruker den eksisterende filen som finnes i denne kilden.',
+  'asset-sources.common.warning.file-already-exist.title': "Fil: '{{filename}}' finnes allerede",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Filer i workspace',
   'asset-sources.dataset.image.title': 'Bilder i workspace',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'Denne ressurskilden kunne ikke lastes. Lukk dialogen og prøv igjen.',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Noe gikk galt med å løse opp Media Library for dette prosjektet.',
@@ -210,14 +240,17 @@ export default removeUndefinedLocaleResources({
     'Velg ny mediefil',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Rediger mediefil',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': 'Velger fil for {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': 'Velger bilde for {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': 'Velger video for {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Last opp til Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Bruker den eksisterende filen funnet i biblioteket.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Fil: '{{filename}}' finnes allerede",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': "Utgivelsen '<strong>{{title}}</strong>' er arkivert.",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
     "Utgivelsen '<strong>{{title}}</strong>' har blitt slettet.",
@@ -492,8 +525,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} uløste endringer i {{versionName}}-versjonen',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Avbryt',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Administrer versjoner',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -739,6 +770,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Last inn på nytt for å oppdatere til v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versjon {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} er avviklet',
   /** Title for help and resources menus */
   'help-resources.title': 'Hjelp og ressurser',
   /** Label for studio's which are up to date */
@@ -746,6 +779,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Lukk innkommende referanser',
   /**Incoming references inspector title */
   'incoming-references.title': 'Innkommende referanser',
 
@@ -786,11 +821,20 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Fjern',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Fjern',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': 'Vis 1 element',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'Vis alle {{count}} elementer',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'Vis færre elementer',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Se {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Du kan fortsatt flytte eller slette dette elementet, men det kan ikke redigeres siden skjemadefinisjonen for typen ikke finnes.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'Kan ikke løse opp startverdi for type: {{schemaTypeTitle}}: {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Kan ikke finne startverdi for type: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1219,6 +1263,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Radhåndtak',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Velg tabell',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': 'Annotasjon ikke definert i skjemaet: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': 'Listetype ikke definert i skjemaet: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'Merke ikke definert i skjemaet: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'Stil ikke definert i skjemaet: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Tøm',
   /** Label for action to copy the current item (used within arrays) */
@@ -1437,6 +1489,9 @@ export default removeUndefinedLocaleResources({
     'Nettleseren din bruker et utdatert HTTP-protokoll for å kommunisere med Sanity. Dette kan føre til betydelig redusert ytelse.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Les mer',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Åpner Sanity-dokumentasjonen i en ny fane',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Ikke vis igjen for denne økten',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1486,6 +1541,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Ikke i et dokument',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Hvem er her',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} redigerer dette dokumentet i utgivelsen «{{releaseTitle}}» akkurat nå',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} redigerer dette dokumentet akkurat nå',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Uten tittel',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Uten navn',
@@ -1524,6 +1586,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Ny utgivelse',
   'release.action.new-release.limit-reached_other':
     'Dette arbeidsområdet er begrenset til {{count}} utgivelser',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Sett på pause for å redigere',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikke tillatelse til å utføre denne handlingen',
   /** Action message for running a scheduled draft immediately */
@@ -1619,6 +1683,12 @@ export default removeUndefinedLocaleResources({
     'Ditt planlagte utkast har forskjellige endringer enn ditt nåværende utkast.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Slett planlagt utkast',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    'Det gjeldende utkastet ditt kunne ikke lastes inn. Hvis du kopierer de planlagte endringene, vil det overskrive det.',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    'Det planlagte utkastet ditt kunne ikke lastes inn. Hvis du kopierer det, kan det overskrive utkastet ditt med feil innhold.',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Velg en ny dato og tid for den planlagte publiseringen.',
   /** Confirm button text for change schedule dialog */
@@ -1671,13 +1741,9 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'Planlegg for en fremtidig tid og dato.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publiseringsdato',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Denne utgivelsen har blitt løsnet',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Utgivelsen '{{title}}' ble arkivert",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Klarte ikke å opprette utgivelse',
@@ -1702,13 +1768,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Det planlagte utkastdokumentet <strong>{{title}}</strong> har blitt publisert.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Denne utgivelsen har blitt løsnet',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Utgivelsen '{{title}}' ble publisert",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1720,9 +1782,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Kunne ikke planlegge utkast: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Utkast planlagt',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Det planlagte utkastet ble publisert',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'En versjon av dette dokumentet har allerede blitt lagt til',
@@ -1755,6 +1815,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Planlagt publisering',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Datasett',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'Prosjekt-ID',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Kilde',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'Feilplassering',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Arbeidsområde',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'Skjemafeil',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Åpne søk',
