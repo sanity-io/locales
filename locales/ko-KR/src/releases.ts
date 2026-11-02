@@ -317,12 +317,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': '이 문서의 게시를 취소할 권한이 없습니다',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}}님이 지금 "{{releaseTitle}}" 릴리스에서 이 문서를 편집 중입니다',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}}님이 현재 이 문서를 편집하고 있습니다',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': '게시할 문서가 없습니다',
 
@@ -352,10 +346,24 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     '{{releaseDocumentsLength}}개의 문서 버전이 되돌려집니다.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    '{{count}}개 문서의 이전 상태를 문서 기록에서 더 이상 사용할 수 없으므로 릴리스를 되돌릴 수 없습니다.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': '문서 기록을 확인하는 중…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': '릴리스를 즉시 되돌리기',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}}개 문서가 이 릴리스 이전의 마지막 게시된 수정본으로 복원됩니다.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}}개 문서는 이 릴리스 이전에 게시되지 않았으므로 게시가 취소됩니다.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "'{{title}}' 릴리스를 되돌리시겠습니까?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    '{{count}}개 문서의 이전 상태를 확인할 수 없으므로 릴리스를 되돌릴 수 없습니다.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     '이 릴리스의 문서들이 게시된 후 변경되었습니다. 되돌리면 이러한 변경 사항을 덮어씁니다.',

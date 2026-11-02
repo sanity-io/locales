@@ -60,6 +60,8 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlinking':
     'Canvas에서 <strong>“{{documentTitle}}”</strong>의 링크를 해제하고 있습니다.',
 
+  /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
+  'navigate-to-canvas-doc.error.failed': 'Canvas를 여는 데 실패했습니다',
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions': 'Canvas로 이동하는 데 필요한 권한이 없습니다',
 })

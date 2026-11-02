@@ -77,6 +77,9 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': '댓글을 로딩하는 동안 문제가 발생했습니다',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text': '지금은 댓글을 사용할 수 없습니다. 나중에 다시 시도해 주세요.',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}} 필드로 이동',
   /** The button tooltip content for the add reaction button */

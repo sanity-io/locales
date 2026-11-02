@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': '클립보드에 복사',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': '현재 버전',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}}은(는) 더 이상 사용되지 않으며 사용을 중단해야 합니다.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': '지원 중단된 버전',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    '이 스튜디오는 지원이 중단된 버전으로 고정되어 있습니다. Manage에서 다른 버전을 선택하세요.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'sanity 패키지를 최신 버전으로 업데이트하고 스튜디오를 다시 배포하세요.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': '업데이트 방법 알아보기',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': '사유: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '업그레이드 방법',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': '재로드',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': '업데이트하려면 스튜디오를 재로드하세요',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': '지원 중단됨',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': '개발',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': '취소',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '선택',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': '파일 선택',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': '이미지 선택',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': '비디오 선택',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '자산 삽입 오류. 자세한 정보는 콘솔을 확인하세요.',
@@ -190,9 +213,17 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': '자세한 정보는 콘솔을 확인하세요.',
   'asset-sources.common.uploader.upload-failed.title': '업로드 실패',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    '이 소스에서 발견된 기존 파일을 사용합니다.',
+  'asset-sources.common.warning.file-already-exist.title':
+    "파일 '{{filename}}'이(가) 이미 존재합니다",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': '워크스페이스 파일',
   'asset-sources.dataset.image.title': '워크스페이스 이미지',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    '이 자산 소스를 불러오지 못했습니다. 대화 상자를 닫고 다시 시도하세요.',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '이 프로젝트의 미디어 라이브러리를 확인하는 도중 문제가 발생했습니다.',
@@ -211,14 +242,17 @@ export default removeUndefinedLocaleResources({
     '새 자산 선택',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': '자산 편집',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': '{{targetTitle}}에 대한 파일 선택 중',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}에 대한 이미지 선택 중',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}}에 대한 비디오 선택 중',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Media Library에 업로드',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    '라이브러리에서 찾은 기존 파일을 사용합니다.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "파일: '{{filename}}'이(가) 이미 존재합니다",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': "'<strong>{{title}}</strong>' 릴리스가 보관되었습니다.",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "'<strong>{{title}}</strong>' 릴리스가 삭제되었습니다.",
 
@@ -488,8 +522,6 @@ export default removeUndefinedLocaleResources({
     '{{versionName}} 버전에서 {{count}}개의 미해결 변경 사항',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': '취소',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': '버전 관리',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -709,6 +741,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'v{{newVersion}}로 업데이트하기 위해 재로드',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity 스튜디오 버전 {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}}은(는) 지원이 중단되었습니다',
   /** Title for help and resources menus */
   'help-resources.title': '도움말 및 리소스',
   /** Label for studio's which are up to date */
@@ -716,6 +750,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': '수신 참조 닫기',
   /**Incoming references inspector title */
   'incoming-references.title': '들어오는 참조',
 
@@ -756,11 +792,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': '제거',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': '제거',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': '{{count}}개 항목 모두 표시',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': '항목 줄여서 표시',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': '{{itemTypeTitle}} 보기',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     '이 항목을 여전히 이동하거나 삭제할 수는 있지만, 해당 유형의 스키마 정의를 찾을 수 없으므로 편집할 수는 없습니다.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    '유형: {{schemaTypeTitle}}에 대한 초기값을 확인할 수 없습니다: {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     '유형에 대한 초기 값을 해결할 수 없습니다: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1189,6 +1232,15 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': '행 핸들',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': '표 선택',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': '스키마에 정의되지 않은 주석입니다: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item':
+    '스키마에 정의되지 않은 목록 유형입니다: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': '스키마에 정의되지 않은 마크입니다: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': '스키마에 정의되지 않은 스타일: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '지우기',
   /** Label for action to copy the current item (used within arrays) */
@@ -1407,6 +1459,8 @@ export default removeUndefinedLocaleResources({
     '브라우저가 Sanity와 통신하기 위해 구식 HTTP 프로토콜을 사용하고 있습니다. 이로 인해 성능이 크게 저하될 수 있습니다.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': '더 알아보기',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': '새 탭에서 Sanity 문서를 엽니다',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': '이 세션에 다시 표시하지 않기',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1457,6 +1511,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': '문서에 있지 않음',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': '누가 여기에 있나요',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}}님이 지금 "{{releaseTitle}}" 릴리스에서 이 문서를 편집하고 있습니다',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}}님이 지금 이 문서를 편집하고 있습니다',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': '제목 없음',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '제목 없음',
@@ -1495,6 +1556,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': '새 릴리스',
   'release.action.new-release.limit-reached_other':
     '이 작업 공간은 {{count}}개의 릴리스로 제한됩니다',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': '일시 중지 후 편집',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '이 작업을 수행할 권한이 없습니다',
   /** Action message for running a scheduled draft immediately */
@@ -1583,6 +1646,12 @@ export default removeUndefinedLocaleResources({
     '귀하의 예약된 초안은 현재 초안과 다른 변경 사항이 있습니다.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '예약된 초안 삭제',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    '현재 초안을 불러올 수 없습니다. 예약된 변경 사항을 복사하면 이를 덮어쓰게 됩니다.',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    '예약된 초안을 불러올 수 없습니다. 이를 복사하면 잘못된 내용으로 초안을 덮어쓸 수 있습니다.',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': '예약된 게시를 위한 새로운 날짜와 시간을 선택하세요.',
   /** Confirm button text for change schedule dialog */
@@ -1636,13 +1705,9 @@ export default removeUndefinedLocaleResources({
     '이 릴리스를 미래의 시간과 날짜로 예약하세요.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '예약 날짜',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': '이 릴리스는 고정 해제되었습니다',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' 릴리스가 보관되었습니다",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '릴리스 생성 실패',
@@ -1667,13 +1732,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '예약된 초안 문서 <strong>{{title}}</strong>가 게시되었습니다.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': '이 릴리스는 고정 해제되었습니다',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "'{{title}}' 릴리스가 게시되었습니다",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1685,9 +1746,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': '초안 예약에 실패했습니다: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': '일정에 따른 초안이 성공적으로 예약되었습니다',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': '예약된 초안이 발행되었습니다',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '이 문서의 버전이 이미 추가되었습니다',
@@ -1719,6 +1778,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': '예약된 게시',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': '데이터셋',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': '프로젝트 ID',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': '소스',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': '오류 위치',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': '워크스페이스',
+  /** Title for the schema errors screen */
+  'schema-errors.title': '스키마 오류',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '검색 열기',
