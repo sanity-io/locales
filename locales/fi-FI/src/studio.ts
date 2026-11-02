@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopioi leikepöydälle',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Nykyinen versio',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}} on vanhentunut, eikä sitä tulisi enää käyttää.',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Vanhentunut versio',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Tämä studio on kiinnitetty vanhentuneeseen versioon. Valitse eri versio Manage-sivulta.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Päivitä sanity-paketti uudempaan versioon ja julkaise studio uudelleen.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'Lue, miten päivität',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Syy: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Kuinka päivittää',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Lataa uudelleen',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Lataa Studio uudelleen päivittääksesi',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Vanhentunut',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Kehitys',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Peruuta',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Valitse',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Valitse tiedosto',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Valitse kuva',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Valitse video',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -191,9 +214,17 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': 'Katso lisätietoja konsolista.',
   'asset-sources.common.uploader.upload-failed.title': 'Lataus epäonnistui',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'Käytetään tästä lähteestä löytyvää olemassa olevaa tiedostoa.',
+  'asset-sources.common.warning.file-already-exist.title':
+    "Tiedosto: '{{filename}}' on jo olemassa",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Työtilan tiedostot',
   'asset-sources.dataset.image.title': 'Työtilan kuvat',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'Tämän resurssilähteen lataaminen epäonnistui. Sulje valintaikkuna ja yritä uudelleen.',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Jokin meni vikaan yrittäessä ratkaista tämän projektin Media Librarya.',
@@ -212,14 +243,20 @@ export default removeUndefinedLocaleResources({
     'Valitse uusi assetti',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Muokkaa assettia',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file':
+    'Valitaan tiedostoa kohteelle {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image':
+    'Valitaan kuvaa kohteelle {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video':
+    'Valitaan videota kohteelle {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Lataa Media-kirjastoon',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Käytetään olemassa olevaa tiedostoa kirjastosta.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "Tiedosto: '{{filename}}' on jo olemassa",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': "Julkaisu '<strong>{{title}}</strong>' on arkistoitu.",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Julkaisu '<strong>{{title}}</strong>' on poistettu.",
 
@@ -489,8 +526,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} ratkaisematonta muutosta versiossa {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Peruuta',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Hallinnoi versioita',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -739,6 +774,8 @@ export default removeUndefinedLocaleResources({
     'Lataa uudelleen päivittääksesi versioon v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio versio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} on vanhentunut',
   /** Title for help and resources menus */
   'help-resources.title': 'Apua ja resursseja',
   /** Label for studio's which are up to date */
@@ -746,6 +783,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Sulje saapuvat viittaukset',
   /**Incoming references inspector title */
   'incoming-references.title': 'Saapuvat viitteet',
 
@@ -786,11 +825,20 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Poista',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Poista',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': 'Näytä 1 kohde',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'Näytä kaikki {{count}} kohdetta',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'Näytä vähemmän kohteita',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Näytä {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Voit siirtää tai poistaa tämän kohteen, mutta sitä ei voi muokata, koska sen tyypin skeemamäärittelyä ei löydy mistään.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'Alkuarvoa tyypille {{schemaTypeTitle}} ei voitu selvittää: {{errorMessage}}.',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Alkuarvoa ei voi selvittää tyypille: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1219,6 +1267,16 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Rivin kahva',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Valitse taulukko',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation':
+    'Huomautustyyppiä ei ole määritetty skeemassa: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item':
+    'Luettelotyyppiä ei ole määritetty skeemassa: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'Merkintää ei ole määritetty skeemassa: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'Tyyliä ei ole määritetty skeemassa: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Tyhjennä',
   /** Label for action to copy the current item (used within arrays) */
@@ -1440,6 +1498,9 @@ export default removeUndefinedLocaleResources({
     'Selaimesi käyttää vanhentunutta HTTP-protokollaa kommunikoidakseen Sanityn kanssa. Tämä voi johtaa merkittävästi heikentyneeseen suorituskykyyn.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Lue lisää',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Avaa Sanityn dokumentaation uudessa välilehdessä',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Älä näytä uudelleen tällä istunnolla',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1489,6 +1550,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Ei asiakirjassa',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Kuka on täällä',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} muokkaa tätä dokumenttia juuri nyt julkaisussa "{{releaseTitle}}"',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} muokkaa tätä dokumenttia juuri nyt',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Nimetön',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Nimetön',
@@ -1527,6 +1595,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Uusi julkaisu',
   'release.action.new-release.limit-reached_other':
     'Tämä työtila on rajoitettu {{count}} julkaisuun',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Keskeytä muokkausta varten',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Sinulla ei ole oikeuksia suorittaa tätä toimintoa',
   /** Action message for running a scheduled draft immediately */
@@ -1621,6 +1691,12 @@ export default removeUndefinedLocaleResources({
     'Aikataulutetussa luonnoksessasi on erilaisia muutoksia kuin nykyisessä luonnoksessasi.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Poista ajoitettu luonnos',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    'Nykyistä luonnostasi ei voitu ladata. Ajastettujen muutosten kopioiminen korvaa sen.',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    'Ajastettua luonnostasi ei voitu ladata. Sen kopioiminen voi korvata luonnoksesi väärällä sisällöllä.',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Valitse uusi päivämäärä ja aika ajoitetulle julkaisulle.',
   /** Confirm button text for change schedule dialog */
@@ -1675,13 +1751,9 @@ export default removeUndefinedLocaleResources({
     'Ajoita tämä julkaisu tulevaisuuden ajankohtaan.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Ajoita',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' julkaisu on arkistoitu",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Julkaisun luonti epäonnistui',
@@ -1706,13 +1778,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Ajoitettu luonnosdokumentti <strong>{{title}}</strong> on julkaistu.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Julkaisu '{{title}}' on julkaistu",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1724,9 +1792,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Luonnoksen aikatauluttaminen epäonnistui: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Luonnos aikataulutettu onnistuneesti',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Ajastettu luonnos julkaistiin',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Tämän asiakirjan versio on jo lisätty',
@@ -1759,6 +1825,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Ajoitettu julkaisu',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Tietojoukko',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'Projektin tunnus',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Lähde',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'Virheen sijainti',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Työtila',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'Skeemavirheet',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Avaa haku',

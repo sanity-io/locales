@@ -184,6 +184,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Katsot vain luku -dokumenttia, joka julkaistiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Näytä luonnos',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Tämä on julkaistu dokumentti. Vaihda luonnoksiin muokataksesi sitä.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Lataa viite uudelleen',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -531,6 +536,11 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Lisää suosikkeihin',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Poista suosikeista',
+  /** Details about a singleton document */
+  'document.singleton.details':
+    'Tämä on yksittäisdokumentti, jonka tunnus on "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Yksittäisdokumentti',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
