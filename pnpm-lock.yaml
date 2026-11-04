@@ -100,7 +100,7 @@ importers:
         specifier: ^1.79.0
         version: 1.90.0(oxlint-tsgolint@7.0.2005)
       oxlint-tsgolint:
-        specifier: ^7.0.2003
+        specifier: ^7.0.2005
         version: 7.0.2005
       rimraf:
         specifier: ^6.1.3
