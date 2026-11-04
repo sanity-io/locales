@@ -70,9 +70,11 @@ export default removeUndefinedLocaleResources({
   /** Label for 'Line' indicator when there is an error within the query */
   'query.error.line': 'ಸಾಲು',
   /** Extra explanation when a 400 is returned for a release perspective on an old API version */
-  'query.error.unsupported-release-perspective': undefined, // 'This API version does not support complex perspectives. Use {{apiVersion}} or later.'
+  'query.error.unsupported-release-perspective':
+    'ಈ API ಆವೃತ್ತಿಯು ಸಂಕೀರ್ಣ perspectiveಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. {{apiVersion}} ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯನ್ನು ಬಳಸಿ.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
-  'query.error.unsupported-variant': undefined, // 'This API version does not support content variants. Use the experimental API version ({{apiVersion}}).'
+  'query.error.unsupported-variant':
+    'ಈ API ಆವೃತ್ತಿಯು content variantಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ಪ್ರಾಯೋಗಿಕ API ಆವೃತ್ತಿಯನ್ನು ({{apiVersion}}) ಬಳಸಿ.',
   /** Label for "Query" editor/input */
   'query.label': 'ಪ್ರಶ್ನೆ',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
