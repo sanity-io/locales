@@ -42,10 +42,10 @@
     "verify:maintainers": "tsx src/cli/verifyMaintainers"
   },
   "dependencies": {
-    "@babel/generator": "^7.29.8",
-    "@babel/parser": "^7.29.9",
-    "@babel/traverse": "^7.29.8",
-    "@babel/types": "^7.29.8",
+    "@babel/generator": "^7.29.13",
+    "@babel/parser": "^7.29.13",
+    "@babel/traverse": "^7.29.13",
+    "@babel/types": "^7.29.11",
     "@sanity/pkg-utils": "^13.0.16",
     "@sanity/vision": "^6.21.0",
     "@types/babel__generator": "^7.27.0",
