@@ -334,12 +334,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Nemate dopuštenje za poništavanje objave ovog dokumenta',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} trenutno uređuje ovaj dokument u izdanju „{{releaseTitle}}"',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} upravo uređuje ovaj dokument',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Nema dokumenata za objavu',
 
@@ -379,10 +373,36 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Ovo će vratiti {{releaseDocumentsLength}} verzija dokumenata.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Prethodno stanje {{count}} dokumenta više nije dostupno u povijesti dokumenta, pa se izdanje ne može vratiti.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Prethodno stanje {{count}} dokumenata više nije dostupno u povijesti dokumenta, pa se izdanje ne može vratiti.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Provjera povijesti dokumenta…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Odmah vrati izdanje',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} dokument bit će vraćen na svoju posljednju objavljenu reviziju od prije ovog izdanja.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} dokumenata bit će vraćeno na svoju posljednju objavljenu reviziju od prije ovog izdanja.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} dokument bit će poništen jer nije bio objavljen prije ovog izdanja.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} dokumenata bit će poništeno jer nisu bili objavljeni prije ovog izdanja.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Jeste li sigurni da želite vratiti izdanje '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Prethodno stanje {{count}} dokumenta nije se moglo utvrditi, pa se izdanje ne može vratiti.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Prethodno stanje {{count}} dokumenata nije se moglo utvrditi, pa se izdanje ne može vratiti.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Dokumenti u ovom izdanju su izmijenjeni nakon što su objavljeni. Vraćanje će prebrisati te izmjene.',
