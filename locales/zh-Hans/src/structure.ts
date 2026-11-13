@@ -160,6 +160,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     '您正在查看作为<VersionBadge>发布</VersionBadge>的一部分而发布的只读文档。它不能被编辑',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': '查看草稿',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text': '这是一个已发布的文档。请切换到草稿以进行编辑。',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': '重新加载引用',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -458,6 +462,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': '添加到收藏夹',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': '从收藏夹中移除',
+  /** Details about a singleton document */
+  'document.singleton.details': '这是一个 id 为 "{{documentGroupId}}" 的单例文档',
+  /** The label describing singleton documents */
+  'document.singleton.label': '单例',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
