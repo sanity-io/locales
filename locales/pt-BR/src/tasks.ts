@@ -119,6 +119,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Selecionar documento',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Título da tarefa',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Falha ao criar a tarefa, tente novamente',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Título é obrigatório',
   /** The status message upon successful creation of a task */
@@ -159,6 +161,9 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Abrir tarefas',
   /** Title of the Tasks panel   */
   'panel.title': 'Tarefas',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text':
+    'As tarefas estão indisponíveis no momento. Tente novamente mais tarde.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Atribuídas',
