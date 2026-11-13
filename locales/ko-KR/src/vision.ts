@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 버전',
-  /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
+  /** Tooltip shown when the API version selector is locked because a variant is selected */
   'settings.api-version-locked-for-variant':
     '변형(variant)이 선택된 경우, API 버전은 vX여야 합니다.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
@@ -193,7 +193,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
   'vista.api-version.tooltip-invalid':
     '옵션의 API 버전이 완료되지 않아, 완료될 때까지 아무것도 가져올 수 없습니다.',
-  /** Tooltip of the API version button while a selected variant forces the experimental API */
+  /** Tooltip of the API version button while a selected variant forces the variants API version */
   'vista.api-version.tooltip-locked':
     '쿼리는 선택한 변형에 필요한 API 버전 {{version}}에 대해 실행됩니다.',
   /** Label of the document after the change in the Delta panel */

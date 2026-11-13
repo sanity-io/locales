@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': '정수여야 합니다',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': '파일 형식 "{{mimeType}}"은(는) 허용되지 않습니다',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': '파일 형식 "{{mimeType}}"은(는) 허용되지 않습니다',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': '이미지 형식 "{{mimeType}}"은(는) 허용되지 않습니다',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': '자산이 필요합니다',
   /** Object is missing a reference to a file asset document in its `asset` field */

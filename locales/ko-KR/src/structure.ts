@@ -446,9 +446,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '알 수 없는 스키마 유형: {{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': '버전 버튼이 어디로 갔나요?',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '닫기',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -472,9 +469,34 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': '원시 JSON',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    '선택한 perspective에 문서가 아직 존재하지 않습니다.',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': '찾기',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': '릴리스',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other': '{{count}}개 릴리스에 포함됨',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    '이 문서는 아직 어떤 릴리스에도 포함되어 있지 않습니다. 추가하려면 아래에서 선택하세요.',
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': '기타 릴리스',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': '예약된 초안',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': '예약 시간:',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': '변형',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': '{{count}}개 변형 있음',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    '이 문서는 아직 어떤 변형에도 포함되어 있지 않습니다. 생성하려면 아래에서 선택하세요.',
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': '기타 변형',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': '{{count}}개 버전: {{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': '이 양식은 숨겨져 있습니다',
@@ -718,6 +740,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': '문서 불러오는 중…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '로딩 중…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': '구조에서 문서를 찾는 중…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': '여전히 로딩 중…',
   /** The text to display when type is missing */
