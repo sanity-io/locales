@@ -82,6 +82,10 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': "Une erreur s'est produite lors du chargement des commentaires",
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text':
+    'Les commentaires sont actuellement indisponibles. Veuillez réessayer plus tard.',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Aller au champ {{field}}',
   /** The button tooltip content for the add reaction button */
