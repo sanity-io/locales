@@ -178,6 +178,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Bạn đang xem một tài liệu chỉ đọc đã được xuất bản như một phần của <VersionBadge> một bản phát hành</VersionBadge>. Nó không thể được chỉnh sửa',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Xem bản nháp',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Đây là tài liệu đã xuất bản. Chuyển sang bản nháp để chỉnh sửa.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Tải lại tham chiếu',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -434,9 +439,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Loại schema không xác định: {{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'Các nút phiên bản đã đi đâu?',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Đóng',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -460,9 +462,35 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'JSON thô',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    'Tài liệu chưa tồn tại trong perspective đã chọn.',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': 'Tìm',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': 'Phiên bản phát hành',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other':
+    'Trong {{count}} phiên bản phát hành',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    'Tài liệu này chưa có trong phiên bản phát hành nào. Chọn một phiên bản bên dưới để thêm vào.',
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': 'Các phiên bản phát hành khác',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': 'Bản nháp đã lên lịch',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': 'Đã lên lịch cho:',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': 'Biến thể',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': 'Có {{count}} biến thể',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    'Tài liệu này chưa có trong biến thể nào. Chọn một biến thể bên dưới để tạo.',
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': 'Các biến thể khác',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': '{{count}} phiên bản: {{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Mẫu này bị ẩn',
@@ -495,6 +523,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Thêm vào mục yêu thích',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Xóa khỏi mục yêu thích',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Đây là tài liệu đơn nhất có id "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Đơn nhất',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
@@ -704,6 +736,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': 'Đang tải tài liệu…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Đang tải…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': 'Đang tìm tài liệu trong cấu trúc…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'Vẫn đang tải…',
   /** The text to display when type is missing */

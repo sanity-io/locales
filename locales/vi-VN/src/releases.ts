@@ -321,13 +321,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Bạn không có quyền hủy xuất bản tài liệu này',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} đang chỉnh sửa tài liệu này trong bản phát hành "{{releaseTitle}}" ngay lúc này',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release':
-    '{{displayName}} đang chỉnh sửa tài liệu này ngay bây giờ',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Không có tài liệu nào để xuất bản',
 
@@ -358,12 +351,26 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Thao tác này sẽ hoàn nguyên {{releaseDocumentsLength}} phiên bản tài liệu.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Trạng thái trước đó của {{count}} tài liệu không còn khả dụng trong lịch sử tài liệu, vì vậy không thể hoàn tác phiên bản phát hành.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Đang kiểm tra lịch sử tài liệu…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label':
     'Hoàn nguyên bản phát hành ngay lập tức',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} tài liệu sẽ được khôi phục về bản phát hành gần nhất trước phiên bản phát hành này.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} tài liệu sẽ bị hủy xuất bản vì chúng chưa được xuất bản trước phiên bản phát hành này.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     "Bạn có chắc chắn muốn hoàn nguyên bản phát hành '{{title}}' không?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Không thể xác định trạng thái trước đó của {{count}} tài liệu, vì vậy không thể hoàn tác phiên bản phát hành.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Các thay đổi đã được thực hiện đối với tài liệu trong bản phát hành này sau khi chúng được xuất bản. Việc hoàn nguyên sẽ ghi đè các thay đổi này.',
