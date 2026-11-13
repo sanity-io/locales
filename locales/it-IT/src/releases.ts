@@ -337,13 +337,6 @@ export default removeUndefinedLocaleResources({
   'permissions.error.unpublish':
     'Non hai il permesso di annullare la pubblicazione di questo documento',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} sta modificando questo documento nella release "{{releaseTitle}}" in questo momento',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release':
-    '{{displayName}} sta modificando questo documento in questo momento',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Non ci sono documenti da pubblicare',
 
@@ -383,11 +376,37 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Questa operazione ripristinerà {{releaseDocumentsLength}} versioni dei documenti.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Lo stato precedente di {{count}} documento non è più disponibile nella cronologia del documento, quindi la release non può essere ripristinata.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Lo stato precedente di {{count}} documenti non è più disponibile nella cronologia del documento, quindi la release non può essere ripristinata.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Controllo della cronologia del documento…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label':
     'Ripristina immediatamente la release',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    "{{count}} documento verrà ripristinato all'ultima revisione pubblicata precedente a questa release.",
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    "{{count}} documenti verranno ripristinati all'ultima revisione pubblicata precedente a questa release.",
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} documento verrà rimosso dalla pubblicazione perché non era pubblicato prima di questa release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} documenti verranno rimossi dalla pubblicazione perché non erano pubblicati prima di questa release.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Sei sicuro di voler ripristinare la release '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Non è stato possibile determinare lo stato precedente di {{count}} documento, quindi la release non può essere ripristinata.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Non è stato possibile determinare lo stato precedente di {{count}} documenti, quindi la release non può essere ripristinata.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Sono state apportate modifiche ai documenti di questa release dopo la loro pubblicazione. Il ripristino sovrascriverà queste modifiche.',
