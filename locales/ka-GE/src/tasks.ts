@@ -117,6 +117,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'აირჩიეთ სამიზნე დოკუმენტი',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'დავალების სათაური',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'ამოცანის შექმნა ვერ მოხერხდა, გთხოვთ სცადოთ თავიდან',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'სათაურის მითითება საჭიროა',
   /** The status message upon successful creation of a task */
@@ -157,6 +159,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'გახსენით დავალებები',
   /** Title of the Tasks panel   */
   'panel.title': 'დავალებები',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'ამოცანები ამჟამად მიუწვდომელია. სცადეთ მოგვიანებით.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'დანიშნული',
