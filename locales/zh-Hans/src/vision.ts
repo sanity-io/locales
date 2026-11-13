@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 版本',
-  /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
+  /** Tooltip shown when the API version selector is locked because a variant is selected */
   'settings.api-version-locked-for-variant': '选择变体后,API 版本需要为 vX。',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': '自定义 API 版本',
@@ -189,7 +189,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
   'vista.api-version.tooltip-invalid':
     '选项中的 API 版本尚未填写完整，因此在填写完成之前无法获取任何数据。',
-  /** Tooltip of the API version button while a selected variant forces the experimental API */
+  /** Tooltip of the API version button while a selected variant forces the variants API version */
   'vista.api-version.tooltip-locked':
     '查询将针对 API 版本 {{version}} 运行，这是所选变体所需要的。',
   /** Label of the document after the change in the Delta panel */
