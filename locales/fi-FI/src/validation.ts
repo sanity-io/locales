@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Täytyy olla kokonaisluku',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Tiedostotyyppi "{{mimeType}}" ei ole hyväksytty',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Tiedostotyyppi "{{mimeType}}" ei ole hyväksytty',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Kuvatyyppi "{{mimeType}}" ei ole hyväksytty',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Omaisuus on vaadittu',
   /** Object is missing a reference to a file asset document in its `asset` field */
