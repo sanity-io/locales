@@ -179,6 +179,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Ви переглядаєте тільки для читання документ, який був опублікований як частина <VersionBadge>{{title}}</VersionBadge>. Його не можна редагувати',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Переглянути чернетку',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Це опублікований документ. Перейдіть до чернеток, щоб редагувати його.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Перезавантажити посилання',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -437,9 +442,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Невідомий тип схеми: {{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'Куди зникли кнопки версій?',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Закрити',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -463,8 +465,34 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Сирий JSON',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': 'Документ ще не існує у вибраному perspective.',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': 'Знайти',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': 'Релізи',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_one': 'У {{count}} релізі',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    'Цього документа ще немає в жодному релізі. Виберіть один нижче, щоб додати його.',
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': 'Інші релізи',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': 'Заплановані чернетки',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': 'Заплановано на:',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': 'Варіанти',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_one': 'Має {{count}} варіант',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    'Цей документ ще не має жодного варіанта. Виберіть один нижче, щоб створити його.',
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': 'Інші варіанти',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_one': '{{count}} версія: {{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Ця форма прихована',
@@ -497,6 +525,11 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Додати до улюблених',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Видалити з улюблених',
+  /** Details about a singleton document */
+  'document.singleton.details':
+    'Це єдиний документ (singleton) з ідентифікатором "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Єдиний документ',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
@@ -707,6 +740,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': 'Завантаження документа…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Завантаження…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': 'Пошук документа у структурі…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'Досі завантажується…',
   /** The text to display when type is missing */
