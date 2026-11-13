@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'უნდა იყოს მთელი რიცხვი',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'ფაილის ტიპი "{{mimeType}}" არ არის დაშვებული',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'ფაილის ტიპი "{{mimeType}}" არ არის დაშვებული',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'სურათის ტიპი "{{mimeType}}" არ არის დაშვებული',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'აქტივი საჭიროა',
   /** Object is missing a reference to a file asset document in its `asset` field */
