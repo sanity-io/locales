@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Должно быть целым числом',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Тип файла "{{mimeType}}" не поддерживается',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Тип файла "{{mimeType}}" не поддерживается',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Тип изображения "{{mimeType}}" не поддерживается',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Требуется ресурс',
   /** Object is missing a reference to a file asset document in its `asset` field */
