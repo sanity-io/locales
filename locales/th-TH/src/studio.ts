@@ -25,6 +25,20 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'คัดลอกไปยังคลิปบอร์ด',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'เวอร์ชันปัจจุบัน',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': 'v{{version}} ถูกเลิกใช้งานแล้ว และไม่ควรใช้งานอีกต่อไป',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'เวอร์ชันที่เลิกใช้งานแล้ว',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Studio นี้ถูกปักหมุดไว้กับเวอร์ชันที่เลิกใช้งานแล้ว โปรดเลือกเวอร์ชันอื่นใน Manage',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'อัปเดตแพ็กเกจ sanity เป็นเวอร์ชันใหม่กว่าและทำการ redeploy Studio',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'เรียนรู้วิธีการอัปเดต',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'เหตุผล: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'วิธีการอัปเกรด',
   /** "Latest version" header in version info dialog */
@@ -38,6 +52,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'โหลดใหม่',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'โหลดสตูดิโอใหม่เพื่ออัปเดต',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'เลิกใช้งานแล้ว',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'การพัฒนา',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +139,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'ยกเลิก',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'เลือก',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'เลือกไฟล์',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'เลือกรูปภาพ',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'เลือกวิดีโอ',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': 'เกิดข้อผิดพลาดในการแทรกสินทรัพย์ ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
@@ -178,9 +200,15 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': 'ดูคอนโซลเพื่อข้อมูลเพิ่มเติม',
   'asset-sources.common.uploader.upload-failed.title': 'การอัปโหลดล้มเหลว',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': 'กำลังใช้ไฟล์ที่มีอยู่แล้วซึ่งพบในแหล่งที่มานี้',
+  'asset-sources.common.warning.file-already-exist.title': "ไฟล์: '{{filename}}' มีอยู่แล้ว",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'ไฟล์ของพื้นที่ทำงาน',
   'asset-sources.dataset.image.title': 'รูปภาพของพื้นที่ทำงาน',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'แหล่งที่มาของสินทรัพย์นี้โหลดไม่สำเร็จ โปรดปิดกล่องโต้ตอบแล้วลองอีกครั้ง',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'เกิดข้อผิดพลาดในการพยายามเชื่อมต่อกับ Media Library สำหรับโปรเจคนี้',
@@ -199,12 +227,17 @@ export default removeUndefinedLocaleResources({
     'เลือกสินทรัพย์ใหม่',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'แก้ไขสินทรัพย์',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': 'กำลังเลือกไฟล์สำหรับ {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': 'กำลังเลือกรูปภาพสำหรับ {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': 'กำลังเลือกวิดีโอสำหรับ {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'อัปโหลดไปยัง Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description': 'ใช้ไฟล์ที่มีอยู่ในห้องสมุดแล้ว',
-  'asset-sources.media-library.warning.file-already-exist.title': "ไฟล์: '{{filename}}' มีอยู่แล้ว",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': "รีลีส '<strong>{{title}}</strong>' ได้ถูกเก็บถาวรแล้ว",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "การปล่อย '<strong>{{title}}</strong>' ถูกลบแล้ว",
 
@@ -459,8 +492,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} การเปลี่ยนแปลงที่ยังไม่ได้รับการแก้ไขใน {{versionName}} เวอร์ชัน',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'ยกเลิก',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'จัดการเวอร์ชัน',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -673,6 +704,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'โหลดใหม่เพื่ออัปเดตเป็น v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio เวอร์ชัน {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} ถูกเลิกใช้งานแล้ว',
   /** Title for help and resources menus */
   'help-resources.title': 'ความช่วยเหลือและทรัพยากร',
   /** Label for studio's which are up to date */
@@ -680,6 +713,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'ปิดการอ้างอิงขาเข้า',
   /**Incoming references inspector title */
   'incoming-references.title': 'การอ้างอิงที่เข้ามา',
 
@@ -720,11 +755,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'ลบ',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'ลบ',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'แสดงทั้งหมด {{count}} รายการ',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'แสดงรายการน้อยลง',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'ดู {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'คุณยังสามารถย้ายหรือลบรายการนี้ได้ แต่ไม่สามารถแก้ไขได้เนื่องจากไม่พบคำจำกัดความของสคีมาสำหรับประเภทของมัน',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'ไม่สามารถกำหนดค่าเริ่มต้นสำหรับประเภท: {{schemaTypeTitle}}: {{errorMessage}}',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'ไม่สามารถกำหนดค่าเริ่มต้นสำหรับประเภท: {{schemaTypeTitle}}: {{errorMessage}}',
@@ -1120,6 +1162,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'จุดจับแถว',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'เลือกตาราง',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': 'ไม่มีการกำหนดคำอธิบายประกอบนี้ในสคีมา: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': 'ไม่มีการกำหนดประเภทรายการนี้ในสคีมา: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'ไม่มีการกำหนดเครื่องหมายนี้ในสคีมา: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'สไตล์ที่ไม่ได้กำหนดไว้ในสคีมา: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'ล้าง',
   /** Label for action to copy the current item (used within arrays) */
@@ -1334,6 +1384,8 @@ export default removeUndefinedLocaleResources({
     'เบราว์เซอร์ของคุณกำลังใช้โปรโตคอล HTTP ที่ล้าสมัยในการสื่อสารกับ Sanity นี่อาจทำให้ประสิทธิภาพลดลงอย่างมาก',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'เรียนรู้เพิ่มเติม',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': 'เปิดเอกสาร Sanity ในแท็บใหม่',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'ไม่แสดงอีกในเซสชันนี้',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1383,6 +1435,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'ไม่ได้อยู่ในเอกสาร',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'ใครอยู่ที่นี่',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': '{{displayName}} กำลังแก้ไขเอกสารนี้ในรีลีส "{{releaseTitle}}" อยู่ในขณะนี้',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} กำลังแก้ไขเอกสารนี้อยู่ในขณะนี้',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'ไม่มีชื่อ',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'ไม่มีชื่อ',
@@ -1420,6 +1478,8 @@ export default removeUndefinedLocaleResources({
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'การปล่อยใหม่',
   'release.action.new-release.limit-reached_other': 'พื้นที่ทำงานนี้จำกัดไว้ที่ {{count}} รีลีส',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'หยุดชั่วคราวเพื่อแก้ไข',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'คุณไม่มีสิทธิ์ในการดำเนินการนี้',
   /** Action message for running a scheduled draft immediately */
@@ -1506,6 +1566,12 @@ export default removeUndefinedLocaleResources({
     'ร่างที่กำหนดเวลาของคุณมีการเปลี่ยนแปลงที่แตกต่างจากร่างปัจจุบันของคุณ',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'ลบร่างที่กำหนดการไว้',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    'ไม่สามารถโหลดฉบับร่างปัจจุบันของคุณได้ การคัดลอกการเปลี่ยนแปลงที่กำหนดเวลาไว้จะเขียนทับฉบับร่างนี้',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    'ไม่สามารถโหลดฉบับร่างที่กำหนดเวลาไว้ของคุณได้ การคัดลอกอาจเขียนทับฉบับร่างของคุณด้วยเนื้อหาที่ไม่ถูกต้อง',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'เลือกวันที่และเวลาใหม่สำหรับการเผยแพร่ตามกำหนดการ',
   /** Confirm button text for change schedule dialog */
@@ -1557,13 +1623,9 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning': 'กำหนดการเผยแพร่นี้สำหรับเวลาและวันในอนาคต',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'กำหนดการเผยแพร่ใน',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "การปล่อย '{{title}}' ได้ถูกเก็บถาวร",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'ไม่สามารถสร้างการปล่อยได้',
@@ -1588,13 +1650,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกเผยแพร่แล้ว',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "รีลีส '{{title}}' ได้ถูกเผยแพร่",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1606,9 +1664,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'ไม่สามารถกำหนดการเผยแพร่ร่าง: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'กำหนดการร่างที่หยุดชั่วคราวเรียบร้อยแล้ว',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'การร่างตามกำหนดเวลาได้รับการเผยแพร่แล้ว',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
@@ -1640,6 +1696,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'การเผยแพร่ตามกำหนดการ',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'ชุดข้อมูล',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'รหัสโปรเจ็กต์',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'แหล่งที่มา',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'ตำแหน่งที่เกิดข้อผิดพลาด',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'พื้นที่ทำงาน',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'ข้อผิดพลาดของสคีมา',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'เปิดการค้นหา',

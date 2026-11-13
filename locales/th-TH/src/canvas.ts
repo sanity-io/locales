@@ -58,6 +58,8 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlinking':
     'คุณกำลังยกเลิกการเชื่อมโยง <strong>“{{documentTitle}}”</strong> จาก Canvas',
 
+  /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
+  'navigate-to-canvas-doc.error.failed': 'ไม่สามารถเปิด Canvas ได้',
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions': 'ไม่มีสิทธิ์ในการนำทางไปยัง Canvas',
 })
