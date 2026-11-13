@@ -115,6 +115,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Выбярыце дакумент',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Назва задачы',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Не ўдалося стварыць задачу, паспрабуйце яшчэ раз',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Патрабуецца назва',
   /** The status message upon successful creation of a task */
@@ -154,6 +156,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Адкрыць заданні',
   /** Title of the Tasks panel   */
   'panel.title': 'Заданні',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Задачы зараз недаступныя. Паспрабуйце пазней.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Прызначаны',
