@@ -77,6 +77,9 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': 'コメントの読み込み中に問題が発生しました',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text': undefined, // 'Comments are unavailable right now. Try again later.'
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '{{field}}フィールドに移動',
   /** The button tooltip content for the add reaction button */
