@@ -335,12 +335,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'No teniu permís per despublicar aquest document',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} està editant aquest document a la release "{{releaseTitle}}" ara mateix',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} està editant aquest document ara mateix',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'No hi ha documents per publicar',
 
@@ -380,10 +374,36 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Això revertirà {{releaseDocumentsLength}} versions dels documents.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    "L'estat anterior de {{count}} document ja no està disponible a l'historial del document, de manera que no es pot revertir la publicació.",
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    "L'estat anterior de {{count}} documents ja no està disponible a l'historial del document, de manera que no es pot revertir la publicació.",
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': "Comprovant l'historial del document…",
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Reverteix la release immediatament',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    "{{count}} document es restaurarà a la seva darrera revisió publicada abans d'aquesta publicació.",
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    "{{count}} documents es restauraran a la seva darrera revisió publicada abans d'aquesta publicació.",
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    "{{count}} document es despublicarà perquè no estava publicat abans d'aquesta publicació.",
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    "{{count}} documents es despublicaran perquè no estaven publicats abans d'aquesta publicació.",
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Esteu segur que voleu revertir la release '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    "No s'ha pogut determinar l'estat anterior de {{count}} document, de manera que no es pot revertir la publicació.",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    "No s'ha pogut determinar l'estat anterior de {{count}} documents, de manera que no es pot revertir la publicació.",
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     "S'han fet canvis als documents d'aquesta release després de ser publicats. La reversió sobreescriurà aquests canvis.",
