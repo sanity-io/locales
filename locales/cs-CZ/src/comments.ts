@@ -79,6 +79,9 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': 'Při načítání komentářů došlo k chybě',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text': 'Komentáře jsou nyní nedostupné. Zkuste to prosím později.',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Přejít na pole {{field}}',
   /** The button tooltip content for the add reaction button */
