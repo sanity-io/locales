@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Mora biti cijeli broj',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Vrsta datoteke "{{mimeType}}" nije prihvaćena',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Vrsta datoteke "{{mimeType}}" nije prihvaćena',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Vrsta slike "{{mimeType}}" nije prihvaćena',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Datoteka je obavezna',
   /** Object is missing a reference to a file asset document in its `asset` field */
