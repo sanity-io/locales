@@ -119,6 +119,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Sélectionnez un document',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Titre de la tâche',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Échec de la création de la tâche, veuillez réessayer',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Le titre est requis',
   /** The status message upon successful creation of a task */
@@ -159,6 +161,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Ouvrir les tâches',
   /** Title of the Tasks panel   */
   'panel.title': 'Tâches',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Les tâches sont actuellement indisponibles. Réessayez plus tard.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Attribué',
