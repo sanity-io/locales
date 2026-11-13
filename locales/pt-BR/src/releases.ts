@@ -335,12 +335,6 @@ export default removeUndefinedLocaleResources({
   'permissions.error.unpublish':
     'Você não tem permissão para cancelar a publicação deste documento',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} está editando este documento no release "{{releaseTitle}}" agora',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} está editando este documento agora',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Não há documentos para publicar',
 
@@ -380,10 +374,36 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Isso reverterá {{releaseDocumentsLength}} versões de documentos.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'O estado anterior de {{count}} documento não está mais disponível no histórico do documento, portanto a release não pode ser revertida.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'O estado anterior de {{count}} documentos não está mais disponível no histórico do documento, portanto a release não pode ser revertida.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Verificando histórico do documento…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Reverter o release imediatamente',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} documento será restaurado para sua última revisão publicada antes desta release.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} documentos serão restaurados para sua última revisão publicada antes desta release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} documento terá sua publicação desfeita porque não estava publicado antes desta release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} documentos terão sua publicação desfeita porque não estavam publicados antes desta release.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Tem certeza de que deseja reverter o release '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Não foi possível determinar o estado anterior de {{count}} documento, portanto a release não pode ser revertida.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Não foi possível determinar o estado anterior de {{count}} documentos, portanto a release não pode ser revertida.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Alterações foram feitas em documentos neste release após a publicação. A reversão substituirá essas alterações.',
