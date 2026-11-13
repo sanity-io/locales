@@ -332,12 +332,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Þú hefur ekki leyfi til að taka þetta skjal úr birtingu',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} er að breyta þessu skjali í útgáfunni „{{releaseTitle}}" núna',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} er að breyta þessu skjali núna',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Engin skjöl eru til að birta',
 
@@ -377,10 +371,36 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Þetta mun snúa við {{releaseDocumentsLength}} skjalaútgáfum.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Fyrra ástand {{count}} skjals er ekki lengur til í skjalasögunni, svo ekki er hægt að afturkalla útgáfuna.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Fyrra ástand {{count}} skjala er ekki lengur til í skjalasögunni, svo ekki er hægt að afturkalla útgáfuna.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Athuga skjalasögu…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Snúa við útgáfunni strax',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} skjal verður endurheimt í síðustu útgefnu útgáfu frá því fyrir þessa útgáfu.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} skjöl verða endurheimt í síðustu útgefnu útgáfu frá því fyrir þessa útgáfu.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} skjal verður afbirt þar sem það var ekki birt fyrir þessa útgáfu.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} skjöl verða afbirt þar sem þau voru ekki birt fyrir þessa útgáfu.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Ertu viss um að þú viljir snúa við útgáfunni '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Ekki tókst að ákvarða fyrra ástand {{count}} skjals, svo ekki er hægt að afturkalla útgáfuna.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Ekki tókst að ákvarða fyrra ástand {{count}} skjala, svo ekki er hægt að afturkalla útgáfuna.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Breytingar voru gerðar á skjölum í þessari útgáfu eftir að þau voru birt. Ef snúið er við mun það skrifa yfir þessar breytingar.',
