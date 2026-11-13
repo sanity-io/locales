@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Phải là số nguyên',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Loại tệp "{{mimeType}}" không được chấp nhận',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Loại tệp "{{mimeType}}" không được chấp nhận',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Loại hình ảnh "{{mimeType}}" không được chấp nhận',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Yêu cầu tài sản',
   /** Object is missing a reference to a file asset document in its `asset` field */
