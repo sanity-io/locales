@@ -475,9 +475,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Tuntematon skeematyyppi: {{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'Minne versiopainikkeet katosivat?',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Sulje',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -501,9 +498,40 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Raaka JSON',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    'Dokumenttia ei vielä ole valitussa perspective-näkymässä.',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': 'Hae',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': 'Julkaisut',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_one': '{{count}} julkaisussa',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other': '{{count}} julkaisussa',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    'Tämä dokumentti ei vielä kuulu mihinkään julkaisuun. Valitse alta yksi lisätäksesi sen.',
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': 'Muut julkaisut',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': 'Ajastetut luonnokset',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': 'Ajastettu:',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': 'Variantit',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_one': '{{count}} variantti',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': '{{count}} varianttia',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    'Tämä dokumentti ei vielä kuulu mihinkään varianttiin. Valitse alta yksi luodaksesi sen.',
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': 'Muut variantit',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_one': '{{count}} versio: {{bundles}}',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': '{{count}} versiota: {{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Tämä lomake on piilotettu',
@@ -752,6 +780,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': 'Ladataan dokumenttia…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Ladataan…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': 'Etsitään dokumenttia rakenteesta…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'Ladataan edelleen…',
   /** The text to display when type is missing */
