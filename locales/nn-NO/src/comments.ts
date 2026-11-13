@@ -81,6 +81,10 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': 'Noko gjekk gale under lasting av kommentarar',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text':
+    'Kommentarar er ikkje tilgjengelege akkurat no. Prøv igjen seinare.',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': 'Gå til {{field}} felt',
   /** The button tooltip content for the add reaction button */

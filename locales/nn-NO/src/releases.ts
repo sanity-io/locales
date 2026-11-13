@@ -334,12 +334,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Du har ikkje løyve til å avpublisere dette dokumentet',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} redigerer dette dokumentet i release-en «{{releaseTitle}}» akkurat no',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} redigerer dette dokumentet no',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Det finst ingen dokument å publisere',
 
@@ -379,11 +373,37 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Dette vil tilbakestille {{releaseDocumentsLength}} dokumentversjonar.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'Den førre tilstanden til {{count}} dokument er ikkje lenger tilgjengeleg i dokumenthistorikken, så utgivinga kan ikkje bli tilbakestilt.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'Den førre tilstanden til {{count}} dokument er ikkje lenger tilgjengeleg i dokumenthistorikken, så utgivinga kan ikkje bli tilbakestilt.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Sjekkar dokumenthistorikk…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Tilbakestill release-en umiddelbart',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} dokument vil bli gjenoppretta til sin sist publiserte versjon frå før denne utgivinga.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} dokument vil bli gjenoppretta til sin sist publiserte versjon frå før denne utgivinga.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} dokument vil bli avpublisert fordi det ikkje var publisert før denne utgivinga.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} dokument vil bli avpubliserte fordi dei ikkje var publiserte før denne utgivinga.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     'Er du sikker på at du vil tilbakestille release-en «{{title}}»?',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'Den førre tilstanden til {{count}} dokument kunne ikkje bli fastsett, så utgivinga kan ikkje bli tilbakestilt.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'Den førre tilstanden til {{count}} dokument kunne ikkje bli fastsett, så utgivinga kan ikkje bli tilbakestilt.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Det vart gjort endringar i dokument i denne release-en etter at dei vart publiserte. Tilbakestilling vil overskrive desse endringane.',
