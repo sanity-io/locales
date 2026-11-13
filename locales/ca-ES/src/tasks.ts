@@ -119,6 +119,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Selecciona el document de destinació',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Títol de la tasca',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': "No s'ha pogut crear la tasca, torneu-ho a provar",
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'El títol és obligatori',
   /** The status message upon successful creation of a task */
@@ -159,6 +161,9 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Obre les tasques',
   /** Title of the Tasks panel   */
   'panel.title': 'Tasques',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text':
+    'Les tasques no estan disponibles en aquest moment. Torneu-ho a provar més tard.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Assignat',

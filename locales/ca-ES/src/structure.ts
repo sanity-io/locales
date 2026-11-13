@@ -186,6 +186,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Estàs veient un document de només lectura que va ser publicat com a part de <VersionBadge>{{title}}</VersionBadge>. No es pot editar',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Veure esborrany',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Aquest és un document publicat. Canvia a esborranys per editar-lo.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Recarrega la referència',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -472,9 +477,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': "Tipus d'esquema desconegut: {{schemaType}}",
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'On han anat els botons de versió?',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Tanca',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -498,9 +500,40 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'JSON en brut',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    'El document encara no existeix a la perspectiva seleccionada.',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': 'Cerca',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': 'Llançaments',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_one': 'En {{count}} llançament',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other': 'En {{count}} llançaments',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    "Aquest document encara no forma part de cap llançament. Tria'n un a continuació per afegir-l'hi.",
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': 'Altres llançaments',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': 'Esborranys programats',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': 'Programat per a:',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': 'Variants',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_one': 'Té {{count}} variant',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': 'Té {{count}} variants',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    "Aquest document encara no forma part de cap variant. Tria'n una a continuació per crear-la.",
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': 'Altres variants',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_one': '{{count}} versió: {{bundles}}',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': '{{count}} versions: {{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Aquest formulari està ocult',
@@ -533,6 +566,11 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Afegir a preferits',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Treure de preferits',
+  /** Details about a singleton document */
+  'document.singleton.details':
+    'Aquest és un document singleton amb l\'identificador "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Singleton',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
@@ -749,6 +787,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': "S'està carregant el document…",
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Carregant…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': "Cercant el document a l'estructura…",
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'Encara carregant…',
   /** The text to display when type is missing */
