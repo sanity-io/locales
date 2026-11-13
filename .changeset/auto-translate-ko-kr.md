@@ -1,5 +1,5 @@
 ---
-"@sanity/locale-ko-kr": patch
+'@sanity/locale-ko-kr': patch
 ---
 
 Automated translation updates

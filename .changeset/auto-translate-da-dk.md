@@ -1,5 +1,5 @@
 ---
-"@sanity/locale-da-dk": patch
+'@sanity/locale-da-dk': patch
 ---
 
 Automated translation updates
