@@ -337,13 +337,6 @@ export default removeUndefinedLocaleResources({
   'permissions.error.unpublish':
     'Non hai il permesso di annullare la pubblicazione di questo documento',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} sta modificando questo documento nella release "{{releaseTitle}}" in questo momento',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release':
-    '{{displayName}} sta modificando questo documento in questo momento',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Non ci sono documenti da pubblicare',
 
@@ -383,11 +376,29 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Questa operazione ripristinerà {{releaseDocumentsLength}} versioni dei documenti.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one': undefined, // 'The previous state of {{count}} document is no longer available in the document history, so the release cannot be reverted.'
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other': undefined, // 'The previous state of {{count}} documents is no longer available in the document history, so the release cannot be reverted.'
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': undefined, // 'Checking document history…'
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label':
     'Ripristina immediatamente la release',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one': undefined, // '{{count}} document will be restored to its last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other': undefined, // '{{count}} documents will be restored to their last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one': undefined, // '{{count}} document will be unpublished because it was not published before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other': undefined, // '{{count}} documents will be unpublished because they were not published before this release.'
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "Sei sicuro di voler ripristinare la release '{{title}}'?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one': undefined, // 'The previous state of {{count}} document could not be determined, so the release cannot be reverted.'
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other': undefined, // 'The previous state of {{count}} documents could not be determined, so the release cannot be reverted.'
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Sono state apportate modifiche ai documenti di questa release dopo la loro pubblicazione. Il ripristino sovrascriverà queste modifiche.',

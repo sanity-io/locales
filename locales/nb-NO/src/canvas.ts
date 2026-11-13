@@ -61,6 +61,8 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlinking':
     'Du fjerner koblingen mellom <strong>“{{documentTitle}}”</strong> og Canvas.',
 
+  /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
+  'navigate-to-canvas-doc.error.failed': undefined, // 'Failed to open Canvas'
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions':
     'Mangler tillatelser for å navigere til Canvas',

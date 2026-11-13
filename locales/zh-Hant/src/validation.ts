@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': '必須是整數',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': undefined, // 'File type "{{mimeType}}" is not accepted'
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': undefined, // 'File type "{{mimeType}}" is not accepted'
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': undefined, // 'Image type "{{mimeType}}" is not accepted'
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': '需要資產',
   /** Object is missing a reference to a file asset document in its `asset` field */
