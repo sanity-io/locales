@@ -4,7 +4,7 @@ packages:
   - 'locales/*'
 
 catalog:
-  sanity: ^6.22.0
+  sanity: ^6.23.0
 
 allowBuilds:
   esbuild: false
