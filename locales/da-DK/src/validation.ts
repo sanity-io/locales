@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Skal være et heltal',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Filtypen "{{mimeType}}" accepteres ikke',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Filtypen "{{mimeType}}" accepteres ikke',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Billedtypen "{{mimeType}}" accepteres ikke',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Asset er påkrævet',
   /** Object is missing a reference to a file asset document in its `asset` field */
