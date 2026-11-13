@@ -334,13 +334,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': "Vous n'avez pas la permission de dépublier ce document",
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} est en train de modifier ce document dans la release « {{releaseTitle}} » en ce moment',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release':
-    '{{displayName}} est en train de modifier ce document en ce moment',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': "Il n'y a aucun document à publier",
 
@@ -380,11 +373,37 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Cela annulera {{releaseDocumentsLength}} versions de document.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    "L'état précédent de {{count}} document n'est plus disponible dans l'historique des documents, la publication ne peut donc pas être annulée.",
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    "L'état précédent de {{count}} documents n'est plus disponible dans l'historique des documents, la publication ne peut donc pas être annulée.",
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': "Vérification de l'historique des documents…",
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Annuler immédiatement la release',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} document sera restauré à sa dernière révision publiée avant cette publication.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} documents seront restaurés à leur dernière révision publiée avant cette publication.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    "{{count}} document sera dépublié car il n'était pas publié avant cette publication.",
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    "{{count}} documents seront dépubliés car ils n'étaient pas publiés avant cette publication.",
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     'Êtes-vous sûr de vouloir annuler la release « {{title}} » ?',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    "L'état précédent de {{count}} document n'a pas pu être déterminé, la publication ne peut donc pas être annulée.",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    "L'état précédent de {{count}} documents n'a pas pu être déterminé, la publication ne peut donc pas être annulée.",
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     "Des modifications ont été apportées aux documents de cette release après leur publication. L'annulation écrasera ces modifications.",
