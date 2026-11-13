@@ -114,6 +114,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Vyberte dokument',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Název úkolu',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': undefined, // 'Failed to create task, please try again'
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Název je vyžadován',
   /** The status message upon successful creation of a task */
@@ -153,6 +155,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Otevřít úkoly',
   /** Title of the Tasks panel   */
   'panel.title': 'Úkoly',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': undefined, // 'Tasks are unavailable right now. Try again later.'
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Přiřazeno',

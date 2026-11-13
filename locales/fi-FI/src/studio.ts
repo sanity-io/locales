@@ -475,6 +475,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'common.reconnecting.toast.title': 'Yritetään muodostaa yhteyttä…',
 
+  /** Tooltip when a variant has more than one condition that is not in the configured list. */
+  'conditions.mismatch.multiple': undefined, // 'This variant uses conditions that are no longer configured. Edit the variant to fix it.'
+  /** Tooltip when a stored condition key is not in the configured list. */
+  'conditions.mismatch.unknown-key': undefined, // 'The condition "{{key}}" is not in the configured list. Edit the variant to fix it.'
+  /** Tooltip when a stored condition value is not in the configured list for that key. */
+  'conditions.mismatch.unknown-value': undefined, // 'The value "{{value}}" is not valid for "{{key}}". Edit the variant to fix it.'
+
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Konfiguraatio-ongelmat',
@@ -583,10 +590,8 @@ export default removeUndefinedLocaleResources({
     'Dokumentin tunnuksen kopiointi epäonnistui',
   /** The header for the project ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.project-id.label': 'Projektin tunnus',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
-  'document-group.delete.confirm-button.text_one': 'Poista (1)',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': 'Poista ({{count}})',
+  /** The label given to the delete action */
+  'document-group.delete.confirm-button.text': undefined, // 'Delete'
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
     'Dokumentin poistamisen aikana tapahtui virhe. Tämä tarkoittaa yleensä, että muut dokumentit viittaavat siihen.',
@@ -615,6 +620,8 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.title_one': 'Poista {{count}} {{subject}}',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
   'document-group.delete.title_other': 'Poista {{count}} {{subject}}',
+  /** The label for the action that clears every selected variant in the document group inventory */
+  'document-group.deselect-all': undefined, // 'Deselect all'
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
   'document-group.subject.variant_one': 'variantti',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
@@ -1493,6 +1500,21 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Odottamaton virhe: {{error}}',
 
+  /** Message shown in the releases and variants menus when the filter matches nothing. `{{filter}}` is the query. */
+  'navbar.filter.no-matches': undefined, // 'Nothing matches "{{filter}}"'
+  /** Default option label when no variant is selected. */
+  'navbar.variant.default': undefined, // 'Default'
+  /** Placeholder for the variant filter input in the dropdown. */
+  'navbar.variant.filter-placeholder': undefined, // 'Find audience'
+  /** New audience option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.new-audience': undefined, // 'New audience'
+  /** View all option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.view-all': undefined, // 'View all'
+  /** Tooltip for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant': undefined, // 'View audience'
+  /** Accessible label for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant-aria-label': undefined, // 'View audience {{title}}'
+
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
     'Selaimesi käyttää vanhentunutta HTTP-protokollaa kommunikoidakseen Sanityn kanssa. Tämä voi johtaa merkittävästi heikentyneeseen suorituskykyyn.',
@@ -1537,6 +1559,9 @@ export default removeUndefinedLocaleResources({
   'package-version.new-package-available.reload-button': 'Lataa uudelleen',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio päivitettiin',
+
+  /** Accessible name and tooltip for the button that clears the selected global perspective */
+  'perspective.action.clear': undefined, // 'Clear selection'
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Hallitse jäseniä',
@@ -1740,10 +1765,16 @@ export default removeUndefinedLocaleResources({
   'release.menu.view-releases': 'Näytä sisältöjulkaisut',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Luonnokset',
+  /** Placeholder for the releases perspective filter. */
+  'release.navbar.filter-placeholder': undefined, // 'Find a version or release'
+  /** Accessible name for the chevron that opens the releases menu */
+  'release.navbar.open-releases': undefined, // 'Open releases'
   /** Label for published releases in navbar */
   'release.navbar.published': 'Julkaistu',
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': 'Julkaisut',
+  /** Accessible label for the link that opens a release's page from the global perspective menu */
+  'release.navbar.view-release-aria-label': undefined, // 'View release {{title}}'
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Nimeämätön julkaisu',
   /** Description for warning that the published schedule time is in the past */

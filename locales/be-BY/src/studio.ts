@@ -25,6 +25,18 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Скапіраваць у буфер абмену',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Бягучая версія',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': undefined, // 'v{{version}} has been deprecated and should no longer be used.'
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': undefined, // 'Deprecated version'
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned': undefined, // 'This Studio is pinned to a deprecated version. Choose a different version in Manage.'
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade': undefined, // 'Update the sanity package to a newer version and redeploy the Studio.'
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': undefined, // 'Learn how to update'
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': undefined, // 'Reason: {{reason}}'
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Як абнавіць',
   /** "Latest version" header in version info dialog */
@@ -38,6 +50,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Перазагрузіць',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Перазагрузіце студыю для абнаўлення',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': undefined, // 'Deprecated'
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Распрацоўка',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +137,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Адмяніць',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Выбраць',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': undefined, // 'Select file'
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': undefined, // 'Select image'
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': undefined, // 'Select video'
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -185,9 +205,14 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     'Глядзіце кансоль для атрымання дадатковай інфармацыі.',
   'asset-sources.common.uploader.upload-failed.title': 'Не атрымалася загрузіць',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': undefined, // 'Using the existing file found in this source.'
+  'asset-sources.common.warning.file-already-exist.title': undefined, // 'File: \'{{filename}}\' already exists'
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Файлы працоўнай прасторы',
   'asset-sources.dataset.image.title': 'Малюнкі працоўнай прасторы',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable': undefined, // 'This asset source failed to load. Close the dialog and try again.'
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Штосьці пайшло не так пры спробе вызначыць Медыябібліятэку для гэтага праекта.',
@@ -206,13 +231,17 @@ export default removeUndefinedLocaleResources({
     'Выбраць новы актыў',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Рэдагаваць актыў',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': undefined, // 'Selecting file for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': undefined, // 'Selecting image for {{targetTitle}}'
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': undefined, // 'Selecting video for {{targetTitle}}'
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Загрузіць у Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Выкарыстанне існуючага файла, знойдзенага ў бібліятэцы.',
-  'asset-sources.media-library.warning.file-already-exist.title': "Файл: '{{filename}}' ужо існуе",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': undefined, // 'The \'<strong>{{title}}</strong>\' release has been archived.'
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "Рэліз '<strong>{{title}}</strong>' быў выдалены.",
 
@@ -429,6 +458,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'common.reconnecting.toast.title': 'Спроба падключэння…',
 
+  /** Tooltip when a variant has more than one condition that is not in the configured list. */
+  'conditions.mismatch.multiple': undefined, // 'This variant uses conditions that are no longer configured. Edit the variant to fix it.'
+  /** Tooltip when a stored condition key is not in the configured list. */
+  'conditions.mismatch.unknown-key': undefined, // 'The condition "{{key}}" is not in the configured list. Edit the variant to fix it.'
+  /** Tooltip when a stored condition value is not in the configured list for that key. */
+  'conditions.mismatch.unknown-value': undefined, // 'The value "{{value}}" is not valid for "{{key}}". Edit the variant to fix it.'
+
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Праблемы канфігурацыі',
@@ -477,8 +513,6 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_one': 'Неразгледжаная змена ў версіі {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Адмяніць',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Кіраваць версіямі',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -525,8 +559,8 @@ export default removeUndefinedLocaleResources({
     'Не ўдалося скапіяваць ID дакумента',
   /** The header for the project ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.project-id.label': 'ID праекта',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
-  'document-group.delete.confirm-button.text_one': 'Выдаліць (1)',
+  /** The label given to the delete action */
+  'document-group.delete.confirm-button.text': undefined, // 'Delete'
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
     'Падчас спробы выдаліць гэты дакумент узнікла памылка. Звычайна гэта азначае, што існуюць іншыя дакументы, якія спасылаюцца на яго.',
@@ -547,6 +581,8 @@ export default removeUndefinedLocaleResources({
     'Магчыма, вы не зможаце выдаліць «<DocumentTitle/>», таму што наступныя дакументы спасылаюцца на яго:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (singular) */
   'document-group.delete.title_one': 'Выдаліць {{count}} {{subject}}',
+  /** The label for the action that clears every selected variant in the document group inventory */
+  'document-group.deselect-all': undefined, // 'Deselect all'
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
   'document-group.subject.variant_one': 'варыянт',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
@@ -698,6 +734,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Перазагрузіце, каб абнавіць да версіі v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Версія Sanity Studio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': undefined, // 'v{{version}} is deprecated'
   /** Title for help and resources menus */
   'help-resources.title': 'Дапамога і рэсурсы',
   /** Label for studio's which are up to date */
@@ -705,6 +743,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': undefined, // 'Close incoming references'
   /**Incoming references inspector title */
   'incoming-references.title': 'Уваходныя спасылкі',
 
@@ -745,11 +785,17 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Выдаліць',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Выдаліць',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': undefined, // 'Show 1 item'
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': undefined, // 'Show fewer items'
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Праглядзець {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'Вы можаце перамяшчаць або выдаляць гэты элемент, але яго немагчыма рэдагаваць, паколькі апісанне схемы для яго тыпу нідзе не знойдзена.',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description': undefined, // 'Unable to resolve initial value for type: {{schemaTypeTitle}}: {{errorMessage}}.'
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'Немагчыма вызначыць пачатковае значэнне для тыпу: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1161,6 +1207,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Маркер радка',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Выбраць табліцу',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': undefined, // 'Annotation not defined in the schema: {{name}}'
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': undefined, // 'List type not defined in the schema: {{name}}'
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': undefined, // 'Mark not defined in the schema: {{name}}'
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': undefined, // 'Style not defined in the schema: {{name}}'
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Ачысціць',
   /** Label for action to copy the current item (used within arrays) */
@@ -1376,11 +1430,28 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Нечаканая памылка: {{error}}',
 
+  /** Message shown in the releases and variants menus when the filter matches nothing. `{{filter}}` is the query. */
+  'navbar.filter.no-matches': undefined, // 'Nothing matches "{{filter}}"'
+  /** Default option label when no variant is selected. */
+  'navbar.variant.default': undefined, // 'Default'
+  /** Placeholder for the variant filter input in the dropdown. */
+  'navbar.variant.filter-placeholder': undefined, // 'Find audience'
+  /** New audience option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.new-audience': undefined, // 'New audience'
+  /** View all option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.view-all': undefined, // 'View all'
+  /** Tooltip for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant': undefined, // 'View audience'
+  /** Accessible label for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant-aria-label': undefined, // 'View audience {{title}}'
+
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
     'Ваш браўзер выкарыстоўвае састарэлы пратакол HTTP для зносін з Sanity. Гэта можа прывесці да значнага пагаршэння працы.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Даведацца больш',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': undefined, // 'Opens the Sanity documentation in a new tab'
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Не паказваць зноў за гэтую сесію',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1418,6 +1489,9 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio гатова да абнаўлення!',
 
+  /** Accessible name and tooltip for the button that clears the selected global perspective */
+  'perspective.action.clear': undefined, // 'Clear selection'
+
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Кіраванне ўдзельнікамі',
   /** Accessibility label for presence menu button */
@@ -1430,6 +1504,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'Не ў дакуменце',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Хто тут',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': undefined, // '{{displayName}} is editing this document in the "{{releaseTitle}}" release right now'
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': undefined, // '{{displayName}} is editing this document right now'
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': undefined, // 'Untitled'
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Без назвы',
@@ -1466,6 +1546,8 @@ export default removeUndefinedLocaleResources({
   'release.action.edit-schedule': 'Рэдагаваць расклад',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Новы Рэліз',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': undefined, // 'Pause to edit'
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'У вас няма дазволу на выкананне гэтай дзеяння',
   /** Action message for running a scheduled draft immediately */
@@ -1555,6 +1637,10 @@ export default removeUndefinedLocaleResources({
     'Ваш запланаваны чарнавік мае іншыя змены, чым ваш бягучы чарнавік.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Выдаліць запланаваны чарнавік',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation': undefined, // 'Your current draft could not be loaded. Copying your scheduled changes will overwrite it.'
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation': undefined, // 'Your scheduled draft could not be loaded. Copying it could overwrite your draft with the wrong content.'
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': 'Выберыце новую дату і час для запланаванай публікацыі.',
   /** Confirm button text for change schedule dialog */
@@ -1597,23 +1683,25 @@ export default removeUndefinedLocaleResources({
   'release.menu.view-releases': 'Прагляд кантэнт-рэлізаў',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Чарнавікі',
+  /** Placeholder for the releases perspective filter. */
+  'release.navbar.filter-placeholder': undefined, // 'Find a version or release'
+  /** Accessible name for the chevron that opens the releases menu */
+  'release.navbar.open-releases': undefined, // 'Open releases'
   /** Label for published releases in navbar */
   'release.navbar.published': 'Апублікаваныя',
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': 'Рэлізы',
+  /** Accessible label for the link that opens a release's page from the global perspective menu */
+  'release.navbar.view-release-aria-label': undefined, // 'View release {{title}}'
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Рэліз без назвы',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Заплануйце на будучы час і дату.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Апублікаваць у',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Гэты рэліз быў адпінены',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "Рэліз '{{title}}' быў архіваваны",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Не ўдалося стварыць рэліз',
@@ -1638,13 +1726,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     'Дакумент запланаванага чарнавіка <strong>{{title}}</strong> быў апублікаваны.',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Гэты рэліз быў адпінены',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "Рэліз '{{title}}' быў апублікаваны",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1656,9 +1740,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': 'Не ўдалося запланаваць чарнавік: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Чарнавік запланаваны паспяхова',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': 'Запланаваны чарнавік быў апублікаваны',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Версія гэтага дакумента ўжо была дададзена',
@@ -1691,6 +1773,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Запланаваная публікацыя',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': undefined, // 'Dataset'
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': undefined, // 'Project ID'
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': undefined, // 'Source'
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': undefined, // 'Error location'
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': undefined, // 'Workspace'
+  /** Title for the schema errors screen */
+  'schema-errors.title': undefined, // 'Schema errors'
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Адкрыць пошук',

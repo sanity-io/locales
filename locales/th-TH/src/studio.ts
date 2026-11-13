@@ -443,6 +443,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'common.reconnecting.toast.title': 'กำลังพยายามเชื่อมต่อ…',
 
+  /** Tooltip when a variant has more than one condition that is not in the configured list. */
+  'conditions.mismatch.multiple': undefined, // 'This variant uses conditions that are no longer configured. Edit the variant to fix it.'
+  /** Tooltip when a stored condition key is not in the configured list. */
+  'conditions.mismatch.unknown-key': undefined, // 'The condition "{{key}}" is not in the configured list. Edit the variant to fix it.'
+  /** Tooltip when a stored condition value is not in the configured list for that key. */
+  'conditions.mismatch.unknown-value': undefined, // 'The value "{{value}}" is not valid for "{{key}}". Edit the variant to fix it.'
+
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'ปัญหาการตั้งค่า',
@@ -537,8 +544,8 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.cdr-table.id-copied-toast.title-failed': 'ไม่สามารถคัดลอก document ID ได้',
   /** The header for the project ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.project-id.label': 'Project ID',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': 'ลบ ({{count}})',
+  /** The label given to the delete action */
+  'document-group.delete.confirm-button.text': undefined, // 'Delete'
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
     'เกิดข้อผิดพลาดขณะพยายามลบเอกสารนี้ โดยปกติหมายความว่ามีเอกสารอื่นที่อ้างอิงถึงเอกสารนี้อยู่',
@@ -559,6 +566,8 @@ export default removeUndefinedLocaleResources({
     'คุณอาจไม่สามารถลบ "<DocumentTitle/>" ได้ เนื่องจากเอกสารต่อไปนี้อ้างอิงถึงเอกสารนั้น:',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
   'document-group.delete.title_other': 'ลบ {{count}} {{subject}}',
+  /** The label for the action that clears every selected variant in the document group inventory */
+  'document-group.deselect-all': undefined, // 'Deselect all'
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.variant_other': 'variants',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
@@ -1379,6 +1388,21 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'เกิดข้อผิดพลาดที่ไม่คาดคิด: {{error}}',
 
+  /** Message shown in the releases and variants menus when the filter matches nothing. `{{filter}}` is the query. */
+  'navbar.filter.no-matches': undefined, // 'Nothing matches "{{filter}}"'
+  /** Default option label when no variant is selected. */
+  'navbar.variant.default': undefined, // 'Default'
+  /** Placeholder for the variant filter input in the dropdown. */
+  'navbar.variant.filter-placeholder': undefined, // 'Find audience'
+  /** New audience option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.new-audience': undefined, // 'New audience'
+  /** View all option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.view-all': undefined, // 'View all'
+  /** Tooltip for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant': undefined, // 'View audience'
+  /** Accessible label for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant-aria-label': undefined, // 'View audience {{title}}'
+
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
     'เบราว์เซอร์ของคุณกำลังใช้โปรโตคอล HTTP ที่ล้าสมัยในการสื่อสารกับ Sanity นี่อาจทำให้ประสิทธิภาพลดลงอย่างมาก',
@@ -1422,6 +1446,9 @@ export default removeUndefinedLocaleResources({
   'package-version.new-package-available.reload-button': 'รีโหลด',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio ได้รับการอัปเดต',
+
+  /** Accessible name and tooltip for the button that clears the selected global perspective */
+  'perspective.action.clear': undefined, // 'Clear selection'
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'จัดการสมาชิก',
@@ -1613,10 +1640,16 @@ export default removeUndefinedLocaleResources({
   'release.menu.view-releases': 'ดูการเผยแพร่เนื้อหา',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ฉบับร่าง',
+  /** Placeholder for the releases perspective filter. */
+  'release.navbar.filter-placeholder': undefined, // 'Find a version or release'
+  /** Accessible name for the chevron that opens the releases menu */
+  'release.navbar.open-releases': undefined, // 'Open releases'
   /** Label for published releases in navbar */
   'release.navbar.published': 'เผยแพร่แล้ว',
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': 'การปล่อย',
+  /** Accessible label for the link that opens a release's page from the global perspective menu */
+  'release.navbar.view-release-aria-label': undefined, // 'View release {{title}}'
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'การปล่อยที่ไม่มีชื่อ',
   /** Description for warning that the published schedule time is in the past */

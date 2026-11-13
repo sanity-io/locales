@@ -439,6 +439,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'common.reconnecting.toast.title': '尝试连接…',
 
+  /** Tooltip when a variant has more than one condition that is not in the configured list. */
+  'conditions.mismatch.multiple': undefined, // 'This variant uses conditions that are no longer configured. Edit the variant to fix it.'
+  /** Tooltip when a stored condition key is not in the configured list. */
+  'conditions.mismatch.unknown-key': undefined, // 'The condition "{{key}}" is not in the configured list. Edit the variant to fix it.'
+  /** Tooltip when a stored condition value is not in the configured list for that key. */
+  'conditions.mismatch.unknown-value': undefined, // 'The value "{{value}}" is not valid for "{{key}}". Edit the variant to fix it.'
+
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': '配置问题',
@@ -532,8 +539,8 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.cdr-table.id-copied-toast.title-failed': '复制文档 ID 失败',
   /** The header for the project ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.project-id.label': '项目 ID',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': '删除（{{count}}）',
+  /** The label given to the delete action */
+  'document-group.delete.confirm-button.text': undefined, // 'Delete'
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
     '尝试删除此文档时发生错误。这通常意味着有其他文档引用了该文档。',
@@ -554,6 +561,8 @@ export default removeUndefinedLocaleResources({
     '您可能无法删除"<DocumentTitle/>"，因为以下文档引用了它：',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
   'document-group.delete.title_other': '删除 {{count}} 个{{subject}}',
+  /** The label for the action that clears every selected variant in the document group inventory */
+  'document-group.deselect-all': undefined, // 'Deselect all'
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.variant_other': '变体',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
@@ -1372,6 +1381,21 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外错误：{{error}}',
 
+  /** Message shown in the releases and variants menus when the filter matches nothing. `{{filter}}` is the query. */
+  'navbar.filter.no-matches': undefined, // 'Nothing matches "{{filter}}"'
+  /** Default option label when no variant is selected. */
+  'navbar.variant.default': undefined, // 'Default'
+  /** Placeholder for the variant filter input in the dropdown. */
+  'navbar.variant.filter-placeholder': undefined, // 'Find audience'
+  /** New audience option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.new-audience': undefined, // 'New audience'
+  /** View all option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.view-all': undefined, // 'View all'
+  /** Tooltip for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant': undefined, // 'View audience'
+  /** Accessible label for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant-aria-label': undefined, // 'View audience {{title}}'
+
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
     '您的浏览器正在使用过时的HTTP协议与Sanity通信。这可能会导致性能大幅下降。',
@@ -1415,6 +1439,9 @@ export default removeUndefinedLocaleResources({
   'package-version.new-package-available.reload-button': '重新加载',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio 已更新',
+
+  /** Accessible name and tooltip for the button that clears the selected global perspective */
+  'perspective.action.clear': undefined, // 'Clear selection'
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': '管理成员',
@@ -1602,10 +1629,16 @@ export default removeUndefinedLocaleResources({
   'release.menu.view-releases': '查看内容发布',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': '草稿',
+  /** Placeholder for the releases perspective filter. */
+  'release.navbar.filter-placeholder': undefined, // 'Find a version or release'
+  /** Accessible name for the chevron that opens the releases menu */
+  'release.navbar.open-releases': undefined, // 'Open releases'
   /** Label for published releases in navbar */
   'release.navbar.published': '已发布',
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': '发布',
+  /** Accessible label for the link that opens a release's page from the global perspective menu */
+  'release.navbar.view-release-aria-label': undefined, // 'View release {{title}}'
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': '无标题发布',
   /** Description for warning that the published schedule time is in the past */
