@@ -114,6 +114,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Chọn tài liệu',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Tiêu đề nhiệm vụ',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Không thể tạo tác vụ, vui lòng thử lại',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Tiêu đề là bắt buộc',
   /** The status message upon successful creation of a task */
@@ -153,6 +155,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Mở nhiệm vụ',
   /** Title of the Tasks panel   */
   'panel.title': 'Nhiệm vụ',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Tác vụ hiện không khả dụng. Vui lòng thử lại sau.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Đã giao',
