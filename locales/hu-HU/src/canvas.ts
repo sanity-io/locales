@@ -61,6 +61,8 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlinking':
     'Leválasztja a(z) <strong>“{{documentTitle}}”</strong> dokumentumot a Vászonról.',
 
+  /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
+  'navigate-to-canvas-doc.error.failed': 'Nem sikerült megnyitni a Canvas-t',
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions':
     'Hiányzó jogosultságok a Vászonra való navigáláshoz',
