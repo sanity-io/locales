@@ -403,9 +403,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '未知的模式类型：{{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': '版本按钮去哪了？',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '关闭',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -429,8 +426,34 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': '原始 JSON',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip': '文档尚不存在于所选 perspective 中。',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': '查找',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': '发行版',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other': '位于 {{count}} 个发行版中',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    '此文档尚未加入任何发行版。请在下方选择一个将其加入。',
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': '其他发行版',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': '计划草稿',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': '计划发布时间：',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': '变体',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': '有 {{count}} 个变体',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    '此文档尚未加入任何变体。请在下方选择一个将其创建。',
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': '其他变体',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': '{{count}} 个版本：{{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': '此表单已隐藏',
@@ -665,6 +688,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': '正在加载文档…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '加载中…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': '正在结构中查找该文档…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': '仍在加载…',
   /** The text to display when type is missing */
