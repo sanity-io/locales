@@ -190,6 +190,11 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     'Sie sehen ein schreibgeschütztes Dokument, das als Teil von <VersionBadge>{{title}}</VersionBadge> veröffentlicht wurde. Es kann nicht bearbeitet werden',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': 'Entwurf anzeigen',
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text':
+    'Dies ist ein veröffentlichtes Dokument. Wechseln Sie zu Entwürfen, um es zu bearbeiten.',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referenz neu laden',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -476,9 +481,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': 'Unbekannter Schema-Typ: {{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'Wo sind die Versionsschaltflächen geblieben?',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': 'Schließen',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -502,9 +504,40 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': 'Rohes JSON',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    'Das Dokument existiert noch nicht in der ausgewählten Perspective.',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': 'Suchen',
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': 'Releases',
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_one': 'In {{count}} Release',
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other': 'In {{count}} Releases',
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip':
+    'Dieses Dokument ist noch in keinem Release enthalten. Wählen Sie unten eines aus, um es hinzuzufügen.',
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': 'Andere Releases',
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': 'Geplante Entwürfe',
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': 'Geplant für:',
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': 'Varianten',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_one': 'Hat {{count}} Variante',
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': 'Hat {{count}} Varianten',
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip':
+    'Dieses Dokument ist noch in keiner Variante enthalten. Wählen Sie unten eine aus, um sie zu erstellen.',
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': 'Andere Varianten',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_one': '{{count}} Version: {{bundles}}',
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': '{{count}} Versionen: {{bundles}}',
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'Dieses Formular ist versteckt',
@@ -538,6 +571,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'Zu Favoriten hinzufügen',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'Aus Favoriten entfernen',
+  /** Details about a singleton document */
+  'document.singleton.details': 'Dies ist ein Singleton-Dokument mit der ID "{{documentGroupId}}"',
+  /** The label describing singleton documents */
+  'document.singleton.label': 'Singleton',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
@@ -754,6 +791,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': 'Dokument wird geladen…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': 'Laden…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': 'Dokument wird in der Struktur gesucht…',
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'Lädt immer noch…',
   /** The text to display when type is missing */
