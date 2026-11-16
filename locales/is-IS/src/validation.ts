@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Verður að vera heiltala',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Skráartegundin "{{mimeType}}" er ekki leyfð',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Skráartegundin "{{mimeType}}" er ekki leyfð',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Myndartegundin "{{mimeType}}" er ekki leyfð',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Eign er krafist',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Verður að vera tilvísun í skjal',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Tilvísunarskjal verður að vera birt',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Tilvísað skjal er af gerðinni "{{actualType}}"; búist var við einni af eftirfarandi: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Loka staðfestingarvalmynd',
