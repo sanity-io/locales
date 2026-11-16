@@ -547,16 +547,30 @@ export default removeUndefinedLocaleResources({
   /** --- Document group --- */
   /** The label given to a document group's base variant */
   'document-group.base-variant': '모든 사용자 (기본값)',
-  /** The header label for the variant creation flow before a variant definition has been selected */
+  /** The text of the actions that open the variant creation form and confirm the creation */
   'document-group.create-variant': '변형 만들기',
-  /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': '{{variantDefinitionName}}에 대한 변형 만들기',
-  /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': '초안으로',
-  /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': '릴리스에 추가',
-  /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': '또는 기존 변형 보기',
+  /** Describes the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-description': '시작 기준',
+  /** The label of the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-label': '문서',
+  /** An option of the variant creation form's picker for the version to start from, while Content Variants is switched on: the version's variant and the draft, release or published bundle it is in */
+  'document-group.create-variant.base-option': '{{variantName}} · {{bundleName}}',
+  /** The default option of the variant creation form's picker for the version to start from, listed first: the version nearest to the picked variant and target, resolved when the version is created */
+  'document-group.create-variant.base-option-nearest': '가장 가까운 버전',
+  /** The text of the button that closes the variant creation form without creating anything */
+  'document-group.create-variant.cancel-button.text': '취소',
+  /** Describes the variant creation form. `<DocumentTitle/>` is the title of the document the variant is created for */
+  'document-group.create-variant.description': '<DocumentTitle/>의 새 버전',
+  /** Placeholder of the filter input in the variant creation form's pickers */
+  'document-group.create-variant.filter-placeholder': '찾기',
+  /** Describes the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-description': '저장될 위치',
+  /** The label of the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-label': '대상',
+  /** Describes the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-description': '이 버전을 볼 수 있는 대상',
+  /** The label of the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-label': '변형',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': '취소',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -602,10 +616,19 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.title_other': '{{count}}개의 {{subject}} 삭제',
   /** The label for the action that clears every selected variant in the document group inventory */
   'document-group.deselect-all': '모두 선택 해제',
+  /** Last line of the document versions popover, counting the versions it does not list (plural) */
+  'document-group.status.more_other': '그 외 버전 {{count}}개',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.variant_other': '변형',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.version_other': '버전',
+  /** The label text that indicates a version in the document group is served for the selected perspective and variant */
+  'document-group.version.served': '제공됨',
+  /** The label text that indicates a base version in the document group is served because the selected variant has no version */
+  'document-group.version.served-instead': '대신 제공됨',
+  /** The tooltip for the badges that indicate which version in the document group is served for the selected perspective and variant */
+  'document-group.version.served.tooltip':
+    '선택한 퍼스펙티브와 일치하는 방문자에게는 이 버전이 표시됩니다.',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '{{date}}에 생성됨',
@@ -1556,6 +1579,8 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '현재 업로드 중인 이미지',
 
+  /** Compact relative time in the past, in days, eg "3 days ago" (plural) */
+  'relative-time.compact.days-ago_other': '{{count}}일 전',
   'relative-time.just-now': '방금',
 
   /** Action message to add document to new release */
