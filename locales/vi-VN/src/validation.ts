@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Phải là số nguyên',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Loại tệp "{{mimeType}}" không được chấp nhận',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Loại tệp "{{mimeType}}" không được chấp nhận',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Loại hình ảnh "{{mimeType}}" không được chấp nhận',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Yêu cầu tài sản',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Phải là tham chiếu đến một tài liệu',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Tài liệu tham chiếu phải được xuất bản',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Tài liệu được tham chiếu có loại "{{actualType}}"; mong đợi một trong các loại: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Đóng bảng kiểm tra',
