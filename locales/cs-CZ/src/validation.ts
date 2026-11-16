@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Musí být celé číslo',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Typ souboru „{{mimeType}}“ není povolen',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Typ souboru „{{mimeType}}“ není povolen',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Typ obrázku „{{mimeType}}“ není povolen',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Asset je požadován',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Musí být odkaz na dokument',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Odkazovaný dokument musí být publikován',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Odkazovaný dokument má typ „{{actualType}}“; očekáván jeden z: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Zavřít validaci',
