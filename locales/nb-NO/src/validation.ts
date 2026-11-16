@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Må være et heltall',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Filtypen «{{mimeType}}» er ikke tillatt',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Filtypen «{{mimeType}}» er ikke tillatt',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Bildetypen «{{mimeType}}» er ikke tillatt',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Ressurs er påkrevd',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Må være en referanse til et dokument',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Referert dokument må være publisert',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Det refererte dokumentet har typen «{{actualType}}»; forventet en av: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Lukk validering',
