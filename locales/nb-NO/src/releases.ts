@@ -336,12 +336,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'Du har ikke tillatelse til å avpublisere dette dokumentet',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} redigerer dette dokumentet i utgivelsen «{{releaseTitle}}» akkurat nå',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} redigerer dette dokumentet akkurat nå',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Det er ingen dokumenter å publisere',
 
@@ -381,11 +375,29 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Dette vil tilbakestille {{releaseDocumentsLength}} dokumentversjoner.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one': undefined, // 'The previous state of {{count}} document is no longer available in the document history, so the release cannot be reverted.'
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other': undefined, // 'The previous state of {{count}} documents is no longer available in the document history, so the release cannot be reverted.'
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': undefined, // 'Checking document history…'
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'Tilbakestill utgivelsen umiddelbart',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one': undefined, // '{{count}} document will be restored to its last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other': undefined, // '{{count}} documents will be restored to their last published revision from before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one': undefined, // '{{count}} document will be unpublished because it was not published before this release.'
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other': undefined, // '{{count}} documents will be unpublished because they were not published before this release.'
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     'Er du sikker på at du vil tilbakestille utgivelsen «{{title}}»?',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one': undefined, // 'The previous state of {{count}} document could not be determined, so the release cannot be reverted.'
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other': undefined, // 'The previous state of {{count}} documents could not be determined, so the release cannot be reverted.'
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Det ble gjort endringer i dokumenter i denne utgivelsen etter at de ble publisert. Tilbakestilling vil overskrive disse endringene.',

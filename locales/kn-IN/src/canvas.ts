@@ -59,6 +59,8 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlinking':
     'ನೀವು <strong>“{{documentTitle}}”</strong> ಅನ್ನು ಕ್ಯಾನ್ವಾಸ್‌ನಿಂದ ಅನ್‌ಲಿಂಕ್ ಮಾಡುತ್ತಿದ್ದೀರಿ.',
 
+  /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
+  'navigate-to-canvas-doc.error.failed': undefined, // 'Failed to open Canvas'
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions':
     'Canvas ಗೆ ನೆವಿಗೇಟ್ ಮಾಡಲು ಅಗತ್ಯವಾದ ಅನುಮತಿಗಳು ಕಾಣೆಯಾಗಿವೆ',

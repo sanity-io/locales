@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'ಪೂರ್ಣಾಂಕ ಇರಬೇಕು',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': undefined, // 'File type "{{mimeType}}" is not accepted'
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': undefined, // 'File type "{{mimeType}}" is not accepted'
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': undefined, // 'Image type "{{mimeType}}" is not accepted'
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'ಆಸ್ತಿ ಅಗತ್ಯವಿದೆ',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,8 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'ದಾಖಲೆಗೆ ಉಲ್ಲೇಖ ಇರಬೇಕು',
   /** Object references a document which is not published */
   'object.reference-not-published': 'ಉಲ್ಲೇಖಿತ ದಾಖಲೆ ಪ್ರಕಟಿಸಲಾಗಿರಬೇಕು',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch': undefined, // 'Referenced document has type "{{actualType}}"; expected one of: {{allowedTypes}}'
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'ಪರಿಶೀಲನೆ ಮುಚ್ಚಲು',
