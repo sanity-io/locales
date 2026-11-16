@@ -332,12 +332,6 @@ export default removeUndefinedLocaleResources({
   /** Tooltip label when the user doesn't have permission for unpublishing a document */
   'permissions.error.unpublish': 'U heeft geen toestemming om dit document te depubliceren',
 
-  /** Tooltip text for when one user is editing a document in a release */
-  'presence.tooltip.one':
-    '{{displayName}} bewerkt dit document momenteel in de release "{{releaseTitle}}"',
-  /** Tooltip text for when one user is editing a published or draft document */
-  'presence.tooltip.one-without-release': '{{displayName}} bewerkt dit document momenteel',
-
   /** Tooltip text for publish release action when there are no documents */
   'publish-action.validation.no-documents': 'Er zijn geen documenten om te publiceren',
 
@@ -377,11 +371,37 @@ export default removeUndefinedLocaleResources({
   /** Description for the dialog confirming the revert of a release with multiple documents */
   'revert-dialog.confirm-revert-description_other':
     'Dit zal {{releaseDocumentsLength}} documentversies terugzetten.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_one':
+    'De vorige status van {{count}} document is niet meer beschikbaar in de documentgeschiedenis, dus de release kan niet worden teruggedraaid.',
+  /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
+  'revert-dialog.confirm-revert.history-unavailable-card_other':
+    'De vorige status van {{count}} documenten is niet meer beschikbaar in de documentgeschiedenis, dus de release kan niet worden teruggedraaid.',
+  /** Shown in the revert dialog while the previous state of each document is being looked up */
+  'revert-dialog.confirm-revert.resolving': 'Documentgeschiedenis controleren…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'De release onmiddellijk terugzetten',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_one':
+    '{{count}} document wordt hersteld naar de laatst gepubliceerde revisie van vóór deze release.',
+  /** Revert dialog summary line for documents that will be restored to a previous revision */
+  'revert-dialog.confirm-revert.summary-restore_other':
+    '{{count}} documenten worden hersteld naar hun laatst gepubliceerde revisie van vóór deze release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_one':
+    '{{count}} document wordt gedepubliceerd omdat het niet was gepubliceerd vóór deze release.',
+  /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
+  'revert-dialog.confirm-revert.summary-unpublish_other':
+    '{{count}} documenten worden gedepubliceerd omdat ze niet waren gepubliceerd vóór deze release.',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title':
     "Weet u zeker dat u de release '{{title}}' wilt terugzetten?",
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_one':
+    'De vorige status van {{count}} document kon niet worden bepaald, dus de release kan niet worden teruggedraaid.',
+  /** Error card in the revert dialog when the previous state of some documents could not be determined */
+  'revert-dialog.confirm-revert.unresolved-card_other':
+    'De vorige status van {{count}} documenten kon niet worden bepaald, dus de release kan niet worden teruggedraaid.',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'Er zijn wijzigingen aangebracht in documenten in deze release nadat ze zijn gepubliceerd. Het terugzetten zal deze wijzigingen overschrijven.',
