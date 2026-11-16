@@ -65,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'ต้องเป็นการอ้างอิงไปยังเอกสาร',
   /** Object references a document which is not published */
   'object.reference-not-published': 'เอกสารที่อ้างอิงต้องเป็นเอกสารที่ได้รับการเผยแพร่',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'เอกสารที่อ้างอิงมีประเภท "{{actualType}}"; คาดว่าจะเป็นหนึ่งใน: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'ปิดการตรวจสอบ',
