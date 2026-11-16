@@ -77,6 +77,9 @@ export default removeUndefinedLocaleResources({
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': '載入評論時出了些問題',
 
+  /** The text shown in the comments inspector when the feature check failed, so comments cannot be used */
+  'inspector.unavailable.text': '目前無法使用留言功能,請稍後再試。',
+
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '前往{{field}}字段',
   /** The button tooltip content for the add reaction button */
