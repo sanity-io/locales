@@ -517,16 +517,30 @@ export default removeUndefinedLocaleResources({
   /** --- Document group --- */
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'ผู้ใช้ทั้งหมด (ค่าเริ่มต้น)',
-  /** The header label for the variant creation flow before a variant definition has been selected */
+  /** The text of the actions that open the variant creation form and confirm the creation */
   'document-group.create-variant': 'สร้าง variant',
-  /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': 'สร้าง variant สำหรับ {{variantDefinitionName}}',
-  /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': 'เป็นแบบร่าง',
-  /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': 'ใส่ใน release',
-  /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': 'หรือดู variant ที่มีอยู่',
+  /** Describes the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-description': 'เริ่มต้นจากอะไร',
+  /** The label of the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-label': 'เอกสาร',
+  /** An option of the variant creation form's picker for the version to start from, while Content Variants is switched on: the version's variant and the draft, release or published bundle it is in */
+  'document-group.create-variant.base-option': '{{variantName}} · {{bundleName}}',
+  /** The default option of the variant creation form's picker for the version to start from, listed first: the version nearest to the picked variant and target, resolved when the version is created */
+  'document-group.create-variant.base-option-nearest': 'เวอร์ชันที่ใกล้ที่สุด',
+  /** The text of the button that closes the variant creation form without creating anything */
+  'document-group.create-variant.cancel-button.text': 'ยกเลิก',
+  /** Describes the variant creation form. `<DocumentTitle/>` is the title of the document the variant is created for */
+  'document-group.create-variant.description': 'เวอร์ชันใหม่ของ <DocumentTitle/>',
+  /** Placeholder of the filter input in the variant creation form's pickers */
+  'document-group.create-variant.filter-placeholder': 'ค้นหา',
+  /** Describes the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-description': 'อยู่ที่ไหน',
+  /** The label of the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-label': 'เป้าหมาย',
+  /** Describes the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-description': 'ใครเห็นเวอร์ชันนี้',
+  /** The label of the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-label': 'วาเรียนต์',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'ยกเลิก',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -571,10 +585,18 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.title_other': 'ลบ {{count}} {{subject}}',
   /** The label for the action that clears every selected variant in the document group inventory */
   'document-group.deselect-all': 'ยกเลิกการเลือกทั้งหมด',
+  /** Last line of the document versions popover, counting the versions it does not list (plural) */
+  'document-group.status.more_other': 'และอีก {{count}} เวอร์ชัน',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.variant_other': 'variants',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.version_other': 'versions',
+  /** The label text that indicates a version in the document group is served for the selected perspective and variant */
+  'document-group.version.served': 'แสดงผลอยู่',
+  /** The label text that indicates a base version in the document group is served because the selected variant has no version */
+  'document-group.version.served-instead': 'แสดงผลแทน',
+  /** The tooltip for the badges that indicate which version in the document group is served for the selected perspective and variant */
+  'document-group.version.served.tooltip': 'ผู้เยี่ยมชมที่ตรงกับมุมมองที่เลือกจะเห็นเวอร์ชันนี้',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'สร้างเมื่อ {{date}}',
@@ -1479,6 +1501,8 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': 'กำลังอัปโหลดภาพ',
 
+  /** Compact relative time in the past, in days, eg "3 days ago" (plural) */
+  'relative-time.compact.days-ago_other': '{{count}} วันที่แล้ว',
   'relative-time.just-now': 'เมื่อกี้นี้',
 
   /** Action message to add document to new release */
