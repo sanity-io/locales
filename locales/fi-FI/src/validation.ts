@@ -65,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Täytyy olla viittaus asiakirjaan',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Viitatun asiakirjan täytyy olla julkaistu',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Viitatulla dokumentilla on tyyppi "{{actualType}}"; odotettiin yhtä seuraavista: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Sulje validointi',
