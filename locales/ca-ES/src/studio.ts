@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Copiar al Porta-retalls',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versió actual',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    "La versió v{{version}} ha quedat obsoleta i ja no s'hauria d'utilitzar.",
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': 'Versió obsoleta',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'Aquest Studio està fixat a una versió obsoleta. Trieu una versió diferent a Manage.',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'Actualitzeu el paquet sanity a una versió més recent i torneu a desplegar el Studio.',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': 'Apreneu com actualitzar',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': 'Motiu: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'Com actualitzar',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'Recarregar',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': "Recarrega l'Studio per actualitzar",
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': 'Obsoleta',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': 'Desenvolupament',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'Cancel·la',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': 'Selecciona',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'Seleccioneu un fitxer',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': 'Seleccioneu una imatge',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': 'Seleccioneu un vídeo',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -193,9 +216,16 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description':
     'Consulta la consola per a més informació.',
   'asset-sources.common.uploader.upload-failed.title': 'La càrrega ha fallat',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    "S'està utilitzant el fitxer existent trobat en aquest origen.",
+  'asset-sources.common.warning.file-already-exist.title': "El fitxer: '{{filename}}' ja existeix",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': "Fitxers de l'espai de treball",
   'asset-sources.dataset.image.title': "Imatges de l'espai de treball",
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    "Aquest origen de recursos no s'ha pogut carregar. Tanqueu el diàleg i torneu-ho a provar.",
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Alguna cosa ha anat malament intentant resoldre la Biblioteca de Mitjans per a aquest projecte.',
@@ -214,14 +244,21 @@ export default removeUndefinedLocaleResources({
     'Selecciona un nou actiu',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': "Edita l'actiu",
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file':
+    'Seleccionant fitxer per a {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image':
+    'Seleccionant imatge per a {{targetTitle}}',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video':
+    'Seleccionant vídeo per a {{targetTitle}}',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Puja a la Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'Utilitzant el fitxer existent trobat a la biblioteca.',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "El fitxer: '{{filename}}' ja existeix",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text':
+    "El llançament '<strong>{{title}}</strong>' ha estat arxivat.",
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
     "La publicació '<strong>{{title}}</strong>' ha estat eliminada.",
@@ -442,6 +479,16 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'common.reconnecting.toast.title': 'Intentant connectar…',
 
+  /** Tooltip when a variant has more than one condition that is not in the configured list. */
+  'conditions.mismatch.multiple':
+    'Aquesta variant utilitza condicions que ja no estan configurades. Editeu la variant per solucionar-ho.',
+  /** Tooltip when a stored condition key is not in the configured list. */
+  'conditions.mismatch.unknown-key':
+    'La condició "{{key}}" no es troba a la llista configurada. Editeu la variant per solucionar-ho.',
+  /** Tooltip when a stored condition value is not in the configured list for that key. */
+  'conditions.mismatch.unknown-value':
+    'El valor "{{value}}" no és vàlid per a "{{key}}". Editeu la variant per solucionar-ho.',
+
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': 'Problemes de configuració',
@@ -493,8 +540,6 @@ export default removeUndefinedLocaleResources({
     '{{count}} canvis no resolts a la versió {{versionName}}',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'Cancel·la',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'Gestiona les versions',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -512,16 +557,30 @@ export default removeUndefinedLocaleResources({
   /** --- Document group --- */
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Tots els usuaris (Per defecte)',
-  /** The header label for the variant creation flow before a variant definition has been selected */
+  /** The text of the actions that open the variant creation form and confirm the creation */
   'document-group.create-variant': 'Crea una variant',
-  /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': 'Crea una variant per a {{variantDefinitionName}}',
-  /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': 'Com a esborrany',
-  /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': 'En una publicació',
-  /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': 'O visualitza les variants existents',
+  /** Describes the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-description': 'A partir de què comença',
+  /** The label of the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-label': 'Document',
+  /** An option of the variant creation form's picker for the version to start from, while Content Variants is switched on: the version's variant and the draft, release or published bundle it is in */
+  'document-group.create-variant.base-option': '{{variantName}} · {{bundleName}}',
+  /** The default option of the variant creation form's picker for the version to start from, listed first: the version nearest to the picked variant and target, resolved when the version is created */
+  'document-group.create-variant.base-option-nearest': 'Versió més propera',
+  /** The text of the button that closes the variant creation form without creating anything */
+  'document-group.create-variant.cancel-button.text': 'Cancel·la',
+  /** Describes the variant creation form. `<DocumentTitle/>` is the title of the document the variant is created for */
+  'document-group.create-variant.description': 'Una nova versió de <DocumentTitle/>',
+  /** Placeholder of the filter input in the variant creation form's pickers */
+  'document-group.create-variant.filter-placeholder': 'Cercar',
+  /** Describes the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-description': 'On viu',
+  /** The label of the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-label': 'Destinació',
+  /** Describes the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-description': 'Qui veu aquesta versió',
+  /** The label of the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-label': 'Variant',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'Cancel·la',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -551,10 +610,8 @@ export default removeUndefinedLocaleResources({
     "No s'ha pogut copiar l'ID del document",
   /** The header for the project ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.project-id.label': 'ID del projecte',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (singular) */
-  'document-group.delete.confirm-button.text_one': 'Elimina (1)',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': 'Elimina ({{count}})',
+  /** The label given to the delete action */
+  'document-group.delete.confirm-button.text': 'Esborra',
   /** The message shown after deletion fails */
   'document-group.delete.error.message':
     "S'ha produït un error en intentar eliminar aquest document. Normalment això significa que hi ha altres documents que hi fan referència.",
@@ -583,6 +640,12 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.title_one': 'Elimina {{count}} {{subject}}',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
   'document-group.delete.title_other': 'Elimina {{count}} {{subject}}',
+  /** The label for the action that clears every selected variant in the document group inventory */
+  'document-group.deselect-all': 'Desselecciona-ho tot',
+  /** Last line of the document versions popover, counting the versions it does not list (singular) */
+  'document-group.status.more_one': 'i {{count}} versió més',
+  /** Last line of the document versions popover, counting the versions it does not list (plural) */
+  'document-group.status.more_other': 'i {{count}} versions més',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (singular) */
   'document-group.subject.variant_one': 'variant',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
@@ -591,6 +654,13 @@ export default removeUndefinedLocaleResources({
   'document-group.subject.version_one': 'versió',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.version_other': 'versions',
+  /** The label text that indicates a version in the document group is served for the selected perspective and variant */
+  'document-group.version.served': 'Servida',
+  /** The label text that indicates a base version in the document group is served because the selected variant has no version */
+  'document-group.version.served-instead': 'Servida en el seu lloc',
+  /** The tooltip for the badges that indicate which version in the document group is served for the selected perspective and variant */
+  'document-group.version.served.tooltip':
+    'Un visitant que coincideixi amb la perspectiva seleccionada veurà aquesta versió.',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': 'Creat {{date}}',
@@ -741,6 +811,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'Recarrega per actualitzar a la v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Versió de Sanity Studio {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'La v{{version}} està obsoleta',
   /** Title for help and resources menus */
   'help-resources.title': 'Ajuda i recursos',
   /** Label for studio's which are up to date */
@@ -748,6 +820,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': 'Tanca les referències entrants',
   /**Incoming references inspector title */
   'incoming-references.title': 'Referències entrants',
 
@@ -788,11 +862,20 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': 'Elimina',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': 'Elimina',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_one': 'Mostra 1 element',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'Mostra tots els {{count}} elements',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': 'Mostra menys elements',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': 'Veure {{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     "Encara pots moure o eliminar aquest element, però no es pot editar ja que la definició de l'esquema per al seu tipus no es troba enlloc.",
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    "No s'ha pogut resoldre el valor inicial per al tipus: {{schemaTypeTitle}}: {{errorMessage}}.",
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'No es pot resoldre el valor inicial per al tipus: {{schemaTypeTitle}}: {{errorMessage}}.',
@@ -1221,6 +1304,15 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': 'Controlador de fila',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'Selecciona la taula',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': "Anotació no definida a l'esquema: {{name}}",
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item':
+    "Tipus de llista no definit a l'esquema: {{name}}",
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': "Marca no definida a l'esquema: {{name}}",
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': "Estil no definit a l'esquema: {{name}}",
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'Esborrar',
   /** Label for action to copy the current item (used within arrays) */
@@ -1438,11 +1530,29 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': 'Error inesperat: {{error}}',
 
+  /** Message shown in the releases and variants menus when the filter matches nothing. `{{filter}}` is the query. */
+  'navbar.filter.no-matches': 'Res coincideix amb "{{filter}}"',
+  /** Default option label when no variant is selected. */
+  'navbar.variant.default': 'Per defecte',
+  /** Placeholder for the variant filter input in the dropdown. */
+  'navbar.variant.filter-placeholder': 'Cerca audiència',
+  /** New audience option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.new-audience': 'Nova audiència',
+  /** View all option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.view-all': 'Veure-ho tot',
+  /** Tooltip for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant': 'Veure audiència',
+  /** Accessible label for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant-aria-label': 'Veure audiència {{title}}',
+
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
     'El vostre navegador està utilitzant un protocol HTTP antiquat per comunicar-se amb Sanity. Això pot resultar en un rendiment substancialment degradat.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Apreneu més',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    'Obre la documentació de Sanity en una pestanya nova',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'No mostrar de nou en aquesta sessió',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1480,6 +1590,9 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio està llest per actualitzar-se!',
 
+  /** Accessible name and tooltip for the button that clears the selected global perspective */
+  'perspective.action.clear': 'Esborra la selecció',
+
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Convidar membres',
   /** Accessibility label for presence menu button */
@@ -1492,6 +1605,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'No en un document',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'Qui és aquí',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}} està editant aquest document ara mateix a la versió "{{releaseTitle}}"',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} està editant aquest document ara mateix',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': 'Sense títol',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': 'Sense títol',
@@ -1500,6 +1620,10 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': "La imatge que s'està pujant",
 
+  /** Compact relative time in the past, in days, eg "3 days ago" (singular) */
+  'relative-time.compact.days-ago_one': 'fa {{count}} dia',
+  /** Compact relative time in the past, in days, eg "3 days ago" (plural) */
+  'relative-time.compact.days-ago_other': 'fa {{count}} dies',
   'relative-time.just-now': 'ara mateix',
 
   /** Action message to add document to new release */
@@ -1530,6 +1654,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': 'Nova Versió',
   'release.action.new-release.limit-reached_other':
     'Aquest espai de treball està limitat a {{count}} llançaments',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': 'Pausa per editar',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'No tens permís per realitzar aquesta acció',
   /** Action message for running a scheduled draft immediately */
@@ -1626,6 +1752,12 @@ export default removeUndefinedLocaleResources({
     'El vostre esborrany programat té canvis diferents dels del vostre esborrany actual.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': "Elimina l'esborrany programat",
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    "No s'ha pogut carregar el vostre esborrany actual. Copiar els canvis programats el sobreescriurà.",
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    "No s'ha pogut carregar l'esborrany programat. Copiar-lo podria sobreescriure el vostre esborrany amb contingut incorrecte.",
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body':
     'Selecciona una nova data i hora per a la publicació programada.',
@@ -1669,23 +1801,25 @@ export default removeUndefinedLocaleResources({
   'release.menu.view-releases': 'Veure Publicacions de Contingut',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Esborranys',
+  /** Placeholder for the releases perspective filter. */
+  'release.navbar.filter-placeholder': 'Cerca una versió o una edició',
+  /** Accessible name for the chevron that opens the releases menu */
+  'release.navbar.open-releases': 'Obre edicions',
   /** Label for published releases in navbar */
   'release.navbar.published': 'Publicats',
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': 'Versions',
+  /** Accessible label for the link that opens a release's page from the global perspective menu */
+  'release.navbar.view-release-aria-label': 'Veure edició {{title}}',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Versió sense títol',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Programa per a un temps i data futurs.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publica el',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Aquesta versió ha estat desancorada',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "La versió '{{title}}' ha estat arxivada",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': "No s'ha pogut crear la release",
@@ -1710,13 +1844,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     "El document d'esborrany programat <strong>{{title}}</strong> ha estat publicat.",
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'Aquesta release ha estat desancorada',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "La release '{{title}}' ha estat publicada",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1728,9 +1858,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': "No s'ha pogut programar l'esborrany: {{error}}",
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Esborrany programat amb èxit',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': "L'esborrany programat ha estat publicat",
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': "Ja s'ha afegit una versió d'aquest document",
@@ -1764,6 +1892,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Publicació programada',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'Conjunt de dades',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'ID del projecte',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'Font',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': "Ubicació de l'error",
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'Espai de treball',
+  /** Title for the schema errors screen */
+  'schema-errors.title': "Errors d'esquema",
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Obrir cerca',
