@@ -186,6 +186,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
     '公開された<VersionBadge>リリース</VersionBadge>の一部として表示されている読み取り専用のドキュメントです。編集することはできません',
+  /** Action that switches from the published perspective to drafts */
+  'banners.published.see-draft.action': undefined, // 'View draft'
+  /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
+  'banners.published.see-draft.text': undefined, // 'This is a published document. Switch to drafts to edit it.'
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'リファレンスを再読み込み',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -455,9 +459,6 @@ export default removeUndefinedLocaleResources({
   /** The text shown if a document's title via a preview value cannot be determined due to an unknown schema type */
   'doc-title.unknown-schema-type.text': '未知のスキーマタイプ: {{schemaType}}',
 
-  /** Hint shown to help guide users to the new document group inventory */
-  'document-group-inventory.onboarding-hint': 'バージョンボタンはどこへ？',
-
   /** Tooltip text shown for the close button of the document inspector */
   'document-inspector.close-button.tooltip': '閉じる',
   /** The title shown in the dialog header, when inspecting a valid document */
@@ -481,9 +482,32 @@ export default removeUndefinedLocaleResources({
   /** The "raw" view mode, meaning the JSON is presented syntax-highlighted, but with no other features - optimal for copying */
   'document-inspector.view-mode.raw-json': '生のJSON',
 
-  /** Tooltip on target badges when the document does not exist in the selected perspective */
-  'document-target-badges.not-in-target.tooltip':
-    'このドキュメントは選択した perspective にまだ存在しません。',
+  /** Placeholder of the filter input in the variants and releases menus of the document header */
+  'document-panel-navigation.filter-placeholder': undefined, // 'Find'
+  /** Label of the releases menu trigger in the document header when no release is selected */
+  'document-panel-navigation.releases.button.text': undefined, // 'Releases'
+  /** A scheduled release in the releases menu of the document header: its title and publish date */
+  'document-panel-navigation.releases.item.title-with-date': undefined, // '{{title}} · {{date}}'
+  /** Section header listing the releases the document has a version in */
+  'document-panel-navigation.releases.section.in-releases_other': undefined, // 'In {{count}} releases'
+  /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
+  'document-panel-navigation.releases.section.no-releases-tooltip': undefined, // 'This document isn\'t in any release yet. Pick one below to add it.'
+  /** Section header listing the releases the document has no version in */
+  'document-panel-navigation.releases.section.other': undefined, // 'Other releases'
+  /** Label of the scheduled drafts menu trigger in the document header when none is open */
+  'document-panel-navigation.scheduled-drafts.button.text': undefined, // 'Scheduled drafts'
+  /** Section header listing the dates the scheduled drafts of the document go out */
+  'document-panel-navigation.scheduled-drafts.section.scheduled-for': undefined, // 'Scheduled for:'
+  /** Label of the variants menu trigger in the document header when no variant is selected */
+  'document-panel-navigation.variants.button.text': undefined, // 'Variants'
+  /** Section header listing the variants the document has versions in */
+  'document-panel-navigation.variants.section.has-variants_other': undefined, // 'Has {{count}} variants'
+  /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
+  'document-panel-navigation.variants.section.no-variants-tooltip': undefined, // 'This document isn\'t in any variant yet. Pick one below to create it.'
+  /** Section header listing the variants the document has no version in */
+  'document-panel-navigation.variants.section.other': undefined, // 'Other variants'
+  /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
+  'document-panel-navigation.variants.versions-tooltip_other': undefined, // '{{count}} versions: {{bundles}}'
 
   /** The text for when a form is hidden */
   'document-view.form-view.form-hidden': 'このフォームは非表示です',
@@ -515,6 +539,10 @@ export default removeUndefinedLocaleResources({
   'document.favorites.add-to-favorites': 'お気に入りに追加',
   /** The description for the document unfavorite action */
   'document.favorites.remove-from-favorites': 'お気に入りから削除',
+  /** Details about a singleton document */
+  'document.singleton.details': undefined, // 'This is a singleton document with id "{{documentGroupId}}"'
+  /** The label describing singleton documents */
+  'document.singleton.label': undefined, // 'Singleton'
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
@@ -723,6 +751,8 @@ export default removeUndefinedLocaleResources({
   'panes.document-pane.variant-target.loading': 'ドキュメントを読み込み中…',
   /** Default message shown while resolving the structure definition for an asynchronous node */
   'panes.resolving.default-message': '読み込み中…',
+  /** Message shown in place of the structure while a document opened from a link is being found in it */
+  'panes.resolving.finding-document-message': undefined, // 'Finding the document in the structure…'
   /** Message shown while resolving the structure definition for an asynchronous node and it is taking a while (more than 5s) */
   'panes.resolving.slow-resolve-message': 'まだ読み込み中…',
   /** The text to display when type is missing */
