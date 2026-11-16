@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Павінна быць цэлым лікам',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Тып файла "{{mimeType}}" не падтрымліваецца',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Тып файла "{{mimeType}}" не падтрымліваецца',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Тып відарыса "{{mimeType}}" не падтрымліваецца',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Патрабуецца актыў',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Павінна быць спасылкай на дакумент',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Спасылаемы дакумент павінен быць апублікаваны',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Дакумент, на які спасылаюцца, мае тып "{{actualType}}"; чакаецца адзін з: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Зачыніць праверку',
