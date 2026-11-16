@@ -65,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': '문서에 대한 참조여야 합니다',
   /** Object references a document which is not published */
   'object.reference-not-published': '참조된 문서는 발행되어야 합니다',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    '참조된 문서의 유형이 "{{actualType}}"입니다. 다음 중 하나여야 합니다: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': '유효성 검사 패널 닫기',
