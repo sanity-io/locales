@@ -24,6 +24,20 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': '複製到剪貼簿',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': '當前版本',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current': 'v{{version}} 已被棄用，不應再使用。',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': '已棄用的版本',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    '此 Studio 已固定於已棄用的版本。請在「管理」中選擇其他版本。',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    '請將 sanity 套件更新至較新版本並重新部署 Studio。',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': '了解如何更新',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': '原因：{{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': '如何升級',
   /** "Latest version" header in version info dialog */
@@ -37,6 +51,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': '重新加載',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': '重新加載 Studio 以更新',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': '已棄用',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': '開發',
   /** "New version available" tooltip in About-dialog */
@@ -121,6 +137,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': '取消',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '選擇',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': '選取檔案',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': '選取圖片',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': '選取影片',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error': '插入資產時出錯。請查看控制台以獲取更多信息。',
@@ -176,9 +198,14 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': '請查看控制台以獲取更多信息。',
   'asset-sources.common.uploader.upload-failed.title': '上傳失敗',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description': '使用此來源中找到的現有檔案。',
+  'asset-sources.common.warning.file-already-exist.title': "檔案：'{{filename}}' 已存在",
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': '工作區文件',
   'asset-sources.dataset.image.title': '工作區圖像',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable': '此資源來源載入失敗。請關閉對話方塊後再試一次。',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     '嘗試解析此項目的媒體庫時出了些問題。',
@@ -196,13 +223,17 @@ export default removeUndefinedLocaleResources({
     '選擇新資產',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': '編輯資產',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file': '正在為 {{targetTitle}} 選取檔案',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': '正在為 {{targetTitle}} 選取圖片',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': '正在為 {{targetTitle}} 選取影片',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': '上傳至 Media Library',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    '使用在庫中找到的現有文件。',
-  'asset-sources.media-library.warning.file-already-exist.title': "文件：'{{filename}}' 已經存在",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text': '「<strong>{{title}}</strong>」發行版本已封存。',
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': '「<strong>{{title}}</strong>」發布已被刪除。',
 
@@ -408,6 +439,13 @@ export default removeUndefinedLocaleResources({
   /** The title of the reconnecting toast */
   'common.reconnecting.toast.title': '嘗試連接中…',
 
+  /** Tooltip when a variant has more than one condition that is not in the configured list. */
+  'conditions.mismatch.multiple': '此變體使用了已不在設定清單中的條件。請編輯變體以修正。',
+  /** Tooltip when a stored condition key is not in the configured list. */
+  'conditions.mismatch.unknown-key': '條件「{{key}}」不在設定清單中。請編輯變體以修正。',
+  /** Tooltip when a stored condition value is not in the configured list for that key. */
+  'conditions.mismatch.unknown-value': '值「{{value}}」對「{{key}}」無效。請編輯變體以修正。',
+
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
   'configuration-issues.button.label': '配置問題',
@@ -456,8 +494,6 @@ export default removeUndefinedLocaleResources({
   'divergence.unresolved-divergence_other': '{{versionName}} 版本中有 {{count}} 個未解決的變更',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': '取消',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': '管理版本',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -472,16 +508,30 @@ export default removeUndefinedLocaleResources({
   /** --- Document group --- */
   /** The label given to a document group's base variant */
   'document-group.base-variant': '所有使用者（預設）',
-  /** The header label for the variant creation flow before a variant definition has been selected */
+  /** The text of the actions that open the variant creation form and confirm the creation */
   'document-group.create-variant': '建立變體',
-  /** The header label for the variant creation flow once a variant definition has been selected */
-  'document-group.create-variant.for-target': '為 {{variantDefinitionName}} 建立變體',
-  /** The heading for the option to create a variant as a draft */
-  'document-group.create-variant.target-drafts': '作為草稿',
-  /** The label for the list of releases a variant can be created in */
-  'document-group.create-variant.target-releases': '加入發行版',
-  /** The label for the list of existing variants that can be viewed instead of creating a new one */
-  'document-group.create-variant.view-existing-variants': '或檢視現有變體',
+  /** Describes the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-description': '它的起始來源',
+  /** The label of the variant creation form's picker for the version the new variant starts from */
+  'document-group.create-variant.base-label': '文件',
+  /** An option of the variant creation form's picker for the version to start from, while Content Variants is switched on: the version's variant and the draft, release or published bundle it is in */
+  'document-group.create-variant.base-option': '{{variantName}} · {{bundleName}}',
+  /** The default option of the variant creation form's picker for the version to start from, listed first: the version nearest to the picked variant and target, resolved when the version is created */
+  'document-group.create-variant.base-option-nearest': '最接近的版本',
+  /** The text of the button that closes the variant creation form without creating anything */
+  'document-group.create-variant.cancel-button.text': '取消',
+  /** Describes the variant creation form. `<DocumentTitle/>` is the title of the document the variant is created for */
+  'document-group.create-variant.description': '<DocumentTitle/> 的新版本',
+  /** Placeholder of the filter input in the variant creation form's pickers */
+  'document-group.create-variant.filter-placeholder': '尋找',
+  /** Describes the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-description': '存放位置',
+  /** The label of the variant creation form's picker for the draft or release to create the variant in */
+  'document-group.create-variant.target-label': '目標',
+  /** Describes the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-description': '誰可以看到此版本',
+  /** The label of the variant creation form's picker for the variant definition to create */
+  'document-group.create-variant.variant-label': '變體',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': '取消',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -503,8 +553,8 @@ export default removeUndefinedLocaleResources({
   'document-group.delete.cdr-table.id-copied-toast.title-failed': '複製文件 ID 失敗',
   /** The header for the project ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.project-id.label': '專案 ID',
-  /** The text in the "Delete now" button in the confirm delete dialog that confirms the action (plural) */
-  'document-group.delete.confirm-button.text_other': '刪除（{{count}}）',
+  /** The label given to the delete action */
+  'document-group.delete.confirm-button.text': '刪除',
   /** The message shown after deletion fails */
   'document-group.delete.error.message': '嘗試刪除此文件時發生錯誤。這通常表示有其他文件參照了它。',
   /** Shown if there are references to other documents but the user does not have the permission to see the relevant document IDs */
@@ -524,10 +574,20 @@ export default removeUndefinedLocaleResources({
     '您可能無法刪除「<DocumentTitle/>」，因為以下文件參照了它：',
   /** Header of the delete dialog. `count` controls pluralization; `subject` is a translated noun (see `document-group.subject.*`) (plural) */
   'document-group.delete.title_other': '刪除 {{count}} 個{{subject}}',
+  /** The label for the action that clears every selected variant in the document group inventory */
+  'document-group.deselect-all': '取消全選',
+  /** Last line of the document versions popover, counting the versions it does not list (plural) */
+  'document-group.status.more_other': '還有 {{count}} 個版本',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.variant_other': '變體',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.version_other': '版本',
+  /** The label text that indicates a version in the document group is served for the selected perspective and variant */
+  'document-group.version.served': '提供中',
+  /** The label text that indicates a base version in the document group is served because the selected variant has no version */
+  'document-group.version.served-instead': '改為提供',
+  /** The tooltip for the badges that indicate which version in the document group is served for the selected perspective and variant */
+  'document-group.version.served.tooltip': '符合所選透視的訪客將會看到此版本。',
 
   /** Label to show in the document footer indicating the creation date of the document */
   'document-status.created': '創建於 {{date}}',
@@ -671,6 +731,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': '重新加載以更新至 v{{newVersion}}',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio 版本 {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} 已淘汰',
   /** Title for help and resources menus */
   'help-resources.title': '幫助與資源',
   /** Label for studio's which are up to date */
@@ -678,6 +740,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': '關閉傳入參照',
   /**Incoming references inspector title */
   'incoming-references.title': '傳入的參考',
 
@@ -718,11 +782,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': '移除',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': '移除',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': '顯示全部 {{count}} 個項目',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': '顯示較少項目',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': '查看{{itemTypeTitle}}',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     '您仍然可以移動或刪除此項目，但由於找不到其類型的架構定義，因此無法編輯。',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    '無法解析類型 {{schemaTypeTitle}} 的初始值：{{errorMessage}}。',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     '無法為類型解析初始值：{{schemaTypeTitle}}：{{errorMessage}}。',
@@ -1118,6 +1189,14 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': '列控點',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': '選取表格',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': '結構描述中未定義的註解：{{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item': '結構描述中未定義的清單類型：{{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': '結構描述中未定義的標記：{{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': '結構描述中未定義的樣式：{{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': '清除',
   /** Label for action to copy the current item (used within arrays) */
@@ -1324,11 +1403,28 @@ export default removeUndefinedLocaleResources({
   /** Unexpected error: `{{error}}` */
   'member-field-error.unexpected-error': '意外錯誤：{{error}}',
 
+  /** Message shown in the releases and variants menus when the filter matches nothing. `{{filter}}` is the query. */
+  'navbar.filter.no-matches': '沒有符合「{{filter}}」的結果',
+  /** Default option label when no variant is selected. */
+  'navbar.variant.default': '預設',
+  /** Placeholder for the variant filter input in the dropdown. */
+  'navbar.variant.filter-placeholder': '尋找受眾',
+  /** New audience option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.new-audience': '新增受眾',
+  /** View all option label for the menu item dropdown in the variants selection menu. */
+  'navbar.variant.menu.view-all': '檢視全部',
+  /** Tooltip for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant': '檢視對象',
+  /** Accessible label for the link that opens an audience's page from the variants selection menu. */
+  'navbar.variant.menu.view-variant-aria-label': '檢視對象 {{title}}',
+
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
     '您的瀏覽器正在使用過時的HTTP協議與Sanity通信。這可能導致性能大幅下降。',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': '了解更多',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip': '在新分頁中開啟 Sanity 文件',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': '本次會話不再顯示',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1366,6 +1462,9 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
   'package-version.new-package-available.title': 'Sanity Studio 已更新',
 
+  /** Accessible name and tooltip for the button that clears the selected global perspective */
+  'perspective.action.clear': '清除選取範圍',
+
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': '管理成員',
   /** Accessibility label for presence menu button */
@@ -1378,6 +1477,12 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': '不在文件中',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': '誰在這裡',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one': '{{displayName}} 目前正在「{{releaseTitle}}」發行版本中編輯此文件',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}} 目前正在編輯此文件',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': '未命名',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '無標題',
@@ -1386,6 +1491,8 @@ export default removeUndefinedLocaleResources({
   /** Alternative text for image being shown while image is being uploaded, in previews */
   'preview.image.file-is-being-uploaded.alt-text': '當前正在上傳的圖片',
 
+  /** Compact relative time in the past, in days, eg "3 days ago" (plural) */
+  'relative-time.compact.days-ago_other': '{{count}} 天前',
   'relative-time.just-now': '剛剛',
 
   /** Action message to add document to new release */
@@ -1415,6 +1522,8 @@ export default removeUndefinedLocaleResources({
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '新發布',
   'release.action.new-release.limit-reached_other': '此工作區限制為 {{count}} 次發布',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': '暫停以進行編輯',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': '您沒有執行此操作的權限',
   /** Action message for running a scheduled draft immediately */
@@ -1498,6 +1607,12 @@ export default removeUndefinedLocaleResources({
     '您的預定草稿與您當前的草稿有不同的更改。',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '刪除預定草稿',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    '無法載入您目前的草稿。複製已排程的變更將會覆寫它。',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    '無法載入您已排程的草稿。複製它可能會以錯誤的內容覆寫您的草稿。',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': '選擇一個新的日期和時間來安排發布。',
   /** Confirm button text for change schedule dialog */
@@ -1538,23 +1653,25 @@ export default removeUndefinedLocaleResources({
   'release.menu.view-releases': '查看內容發布',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': '草稿',
+  /** Placeholder for the releases perspective filter. */
+  'release.navbar.filter-placeholder': '尋找版本或發行版本',
+  /** Accessible name for the chevron that opens the releases menu */
+  'release.navbar.open-releases': '開啟發行版本',
   /** Label for published releases in navbar */
   'release.navbar.published': '已發布',
   /** Tooltip for releases navigation in navbar */
   'release.navbar.tooltip': '發布',
+  /** Accessible label for the link that opens a release's page from the global perspective menu */
+  'release.navbar.view-release-aria-label': '檢視發行版本 {{title}}',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': '未命名發布',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': '請安排一個未來的時間和日期。',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '發布於',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': '此發布已被取消固定',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': '「{{title}}」發布已存檔',
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': '創建發布失敗',
@@ -1579,13 +1696,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '預定草稿文件 <strong>{{title}}</strong> 已被發布。',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': '此發布已被取消固定',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': '「{{title}}」發布已發布',
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1597,9 +1710,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': '安排草稿失敗：{{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': '已成功安排草稿',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': '已發布預定草稿',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': '此文件的一個版本已經被添加',
@@ -1631,6 +1742,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': '預定發布',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': '資料集',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': '專案 ID',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': '來源',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': '錯誤位置',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': '工作區',
+  /** Title for the schema errors screen */
+  'schema-errors.title': '結構描述錯誤',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '打開搜索',
