@@ -65,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': '必须是文档的引用',
   /** Object references a document which is not published */
   'object.reference-not-published': '引用的文档必须是已发布的',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    '被引用的文档类型为 "{{actualType}}";期望的类型为以下之一:{{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': '关闭验证',

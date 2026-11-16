@@ -148,797 +148,815 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.title': '视角',
 
   /** Tooltip line of every control that calls Sanity Agent Actions, which bills AI credits */
-  'vista.agent-actions.credits': '每次请求消耗一个 AI 额度',
+  'vision.agent-actions.credits': '每次请求消耗一个 AI 额度',
   /** Under an Agent Actions control: the organization's AI credits balance this month */
-  'vista.ai-credits.balance': '本月剩余 {{balance}}/{{quota}} AI 额度。',
+  'vision.ai-credits.balance': '本月还剩 {{quota}} 个 AI 额度中的 {{balance}} 个。',
   /** Under an Agent Actions control: the credits used beyond the plan's monthly quota */
-  'vista.ai-credits.deficit': '本月已使用 {{used}} AI 额度，超出套餐包含的 {{quota}} {{deficit}}。',
+  'vision.ai-credits.deficit':
+    '本月已使用 {{used}} 个 AI 额度,比包含的 {{quota}} 个多出 {{deficit}} 个。',
   /** Body of the out-of-credits card, with the credits used and the plan's monthly quota */
-  'vista.ai-credits.limit.description':
-    '您的组织本月已使用 {{used}}/{{quota}} AI 额度，因此 Sanity Agent Actions 已暂停，直到下月或提高支出限额后才能恢复。',
+  'vision.ai-credits.limit.description':
+    '您的组织本月已使用 {{quota}} 个 AI 额度中的 {{used}} 个,因此 Sanity Agent Actions 已暂停,直到下个月或提高其支出限额为止。',
   /** Body of the out-of-credits card when the usage and the quota are unknown */
-  'vista.ai-credits.limit.description-unknown':
-    '您的组织已达到 AI 额度支出限额，因此 Sanity Agent Actions 已暂停，直到下月或提高限额后才能恢复。',
+  'vision.ai-credits.limit.description-unknown':
+    '您的组织已达到其 AI 额度支出限额,因此 Sanity Agent Actions 已暂停,直到下个月或提高限额为止。',
   /** Link in the out-of-credits card to the documentation of AI credits */
-  'vista.ai-credits.limit.learn-more': '了解 AI 额度的运作方式',
+  'vision.ai-credits.limit.learn-more': '了解 AI 额度的运作方式',
   /** Button in the out-of-credits card leading to the organization's spending limits in Manage */
-  'vista.ai-credits.limit.manage': '管理 AI 额度',
+  'vision.ai-credits.limit.manage': '管理 AI 额度',
   /** Title of the card shown where the organization is out of AI credits */
-  'vista.ai-credits.limit.title': 'AI 额度已用尽',
+  'vision.ai-credits.limit.title': 'AI 额度已用尽',
   /** Link after the AI credits note, to the organization's AI usage in Manage */
-  'vista.ai-credits.usage': 'AI 使用情况',
+  'vision.ai-credits.usage': 'AI 使用情况',
   /** Under an Agent Actions control: the credits used, on a plan without a quota */
-  'vista.ai-credits.used': '本月已使用 {{used}} AI 额度。',
+  'vision.ai-credits.used': '本月已使用 {{used}} 个 AI 额度。',
   /** Button in the request column's action bar naming the API version requests go out with */
-  'vista.api-version.button': 'API {{version}}',
+  'vision.api-version.button': 'API {{version}}',
   /** The API version button while queries go through the API CDN */
-  'vista.api-version.button-cdn': 'API CDN {{version}}',
+  'vision.api-version.button-cdn': 'API CDN {{version}}',
   /** The API version button while the "Other" API version input holds an unfinished version */
-  'vista.api-version.button-invalid': '未完成的 API 版本',
+  'vision.api-version.button-invalid': '未完成的 API 版本',
   /** Tooltip of the API version button */
-  'vista.api-version.tooltip': '查询将针对 API 版本 {{version}} 运行。点击可在选项中更改。',
+  'vision.api-version.tooltip': '查询将针对 API 版本 {{version}} 运行。选择此处以在选项中更改它。',
   /** Tooltip of the API version button while queries go through the API CDN */
-  'vista.api-version.tooltip-cdn':
-    '查询将通过 API CDN（API 版本 {{version}}）运行。点击可在选项中更改。',
+  'vision.api-version.tooltip-cdn':
+    '查询将通过 API CDN 以 API 版本 {{version}} 运行。选择此处以在选项中更改它。',
   /**
    * Tooltip of the API version button while the API CDN is asked for but the perspective, as the
    * perspective select names it, keeps queries on the API
    */
-  'vista.api-version.tooltip-cdn-blocked':
-    '查询将针对 API 版本 {{version}} 运行，而非 API CDN：它不支持 {{perspective}} 视角。点击可在选项中更改。',
+  'vision.api-version.tooltip-cdn-blocked':
+    '查询将针对 API 版本 {{version}} 运行,而非 API CDN:它不提供 {{perspective}} perspective 的服务。选择此处以在选项中更改它。',
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
-  'vista.api-version.tooltip-invalid':
-    '选项中的 API 版本尚未填写完整，因此在填写完成之前无法获取任何数据。',
+  'vision.api-version.tooltip-invalid':
+    '选项中的 API 版本尚未填写完整,因此在填写完成前无法获取任何内容。',
   /** Tooltip of the API version button while a selected variant forces the variants API version */
-  'vista.api-version.tooltip-locked':
-    '查询将针对 API 版本 {{version}} 运行，这是所选变体所需要的。',
+  'vision.api-version.tooltip-locked':
+    '查询将针对 API 版本 {{version}} 运行,这是所选变体所需的版本。',
   /** Label of the document after the change in the Delta panel */
-  'vista.delta.after': '之后',
+  'vision.delta.after': '之后',
   /** Label of the document before the change in the Delta panel */
-  'vista.delta.before': '之前',
+  'vision.delta.before': '之前',
   /** What the Delta panel does */
-  'vista.delta.description':
-    '以增量模式运行查询，就像 GROQ 驱动的 webhook、监听器和 Sanity Functions 所做的那样：before() 和 after() 分别表示更改前后的文档，@ 表示更改后的文档，而 delta::changedAny() 用于比较它们。该查询在浏览器中使用 groq-js 运行。某一侧为空表示没有文档：该更改创建或删除了它。',
+  'vision.delta.description':
+    '以增量模式运行查询,就像基于 GROQ 的 webhooks、监听器和 Sanity Functions 那样:before() 和 after() 分别表示更改前后的文档,@ 表示更改后的文档,delta::changedAny() 用于比较它们。它在浏览器中使用 groq-js 运行。一侧为空表示没有文档:此更改创建或删除了该文档。',
   /** Label of the document ID field in the Delta panel */
-  'vista.delta.document-id': '文档 ID',
+  'vision.delta.document-id': '文档 ID',
   /** Shown when there is a query but no documents to compare */
-  'vista.delta.empty': '加载文档的历史记录，或将文档分别写入“之前”和“之后”。',
+  'vision.delta.empty': '加载文档的历史记录,或将文档写入“之前”和“之后”。',
   /** Shown when the query fails in delta mode */
-  'vista.delta.failed': '无法在增量模式下运行查询：{{message}}',
+  'vision.delta.failed': '无法在增量模式下运行该查询:{{message}}',
   /** Shown when the After document is not valid JSON */
-  'vista.delta.invalid-after': '“之后”不是有效的 JSON：{{message}}',
+  'vision.delta.invalid-after': '“之后”不是有效的 JSON:{{message}}',
   /** Shown when the Before document is not valid JSON */
-  'vista.delta.invalid-before': 'Before 不是有效的 JSON：{{message}}',
+  'vision.delta.invalid-before': 'Before 不是有效的 JSON：{{message}}',
   /** Button loading the document's revisions from the History API */
-  'vista.delta.load': '加载历史记录',
+  'vision.delta.load': '加载历史记录',
   /** Shown when the history could not be loaded */
-  'vista.delta.load-failed': '无法加载历史记录：{{message}}',
+  'vision.delta.load-failed': '无法加载历史记录：{{message}}',
   /** A delta filter that is true for the change */
-  'vista.delta.matches': '匹配：具有此过滤条件的 webhook 或函数会针对此更改运行。',
+  'vision.delta.matches': '匹配：具有此过滤条件的 webhook 或函数会针对此更改运行。',
   /** A delta filter that is false for the change */
-  'vista.delta.no-match': '不匹配：具有此过滤条件的 webhook 或函数不会针对此更改运行。',
+  'vision.delta.no-match': '不匹配：具有此过滤条件的 webhook 或函数不会针对此更改运行。',
   /** Shown while the query or its params cannot be sent */
-  'vista.delta.no-request': '请修正查询及其参数，以便在增量模式下运行。',
+  'vision.delta.no-request': '请修复查询及其参数，以便以增量模式运行它。',
   /** Heading of the delta result */
-  'vista.delta.result': '结果',
+  'vision.delta.result': '结果',
   /** The After choice for a change that deletes the document */
-  'vista.delta.revision.none-after': '无：此更改会删除该文档',
+  'vision.delta.revision.none-after': '无：此更改删除了文档',
   /** The Before choice for a change that creates the document */
-  'vista.delta.revision.none-before': '无：此更改会创建该文档',
+  'vision.delta.revision.none-before': '无：此更改创建了文档',
   /** A revision in the Before and After lists */
-  'vista.delta.revision.option': '{{time}} · {{revision}}',
+  'vision.delta.revision.option': '{{time}} · {{revision}}',
   /** Accessible label for the button that closes the sidebar drawer */
-  'vista.drawer.close': '关闭面板',
+  'vision.drawer.close': '关闭面板',
   /** Explanation at the top of the Explain panel */
-  'vista.explain.description':
-    '查询计划是 Content Lake 运行查询的方式：它在读取时读取什么、过滤什么、排序什么，以及哪些步骤留待之后执行。点击“向我解释”将使用 Sanity Agent Actions 用通俗的语言描述该查询及其计划，此操作将消耗一个 AI 额度。',
+  'vision.explain.description':
+    '查询计划是 Content Lake 运行查询的方式：它在读取时读取、过滤和排序的内容，以及留给后续步骤处理的内容。“向我解释这个”会让 Sanity Agent Actions 用通俗的语言描述该查询及其计划，这会消耗一个 AI 额度。',
   /** Shown in the Explain panel while there is no valid query to explain */
-  'vista.explain.empty': '请编写一个查询以进行解释。',
+  'vision.explain.empty': '编写一个查询以进行解释。',
   /** Button in the Explain panel asking Agent Actions to explain the query and its plan */
-  'vista.explain.explain': '向我解释',
+  'vision.explain.explain': '向我解释这个',
   /** Shown when the explanation could not be written */
-  'vista.explain.failed': '无法解释该查询：{{message}}',
+  'vision.explain.failed': '无法解释该查询：{{message}}',
   /** A count the index computes without reading the documents */
-  'vista.explain.insight.aggregate': '在索引中计数，无需读取文档。',
+  'vision.explain.insight.aggregate': '在索引中计数，无需读取文档。',
   /** A subquery the plan runs once for all documents */
-  'vista.explain.insight.batched-subquery':
-    '该子查询对所有文档只运行一次，以单次批量获取的方式执行，而不是针对每个文档各运行一次。',
+  'vision.explain.insight.batched-subquery':
+    '该子查询针对所有文档只运行一次，通过一次批量获取完成，而不是对每个文档都运行一次。',
   /** Part of the filter runs in memory; the expression follows */
-  'vista.explain.insight.filter-in-memory':
-    '部分过滤条件在读取之后于内存中执行：索引放行的每个文档都会先被读取，这在大型数据集上会变慢。过滤条件中的连接（->）和函数无法使用索引。',
+  'vision.explain.insight.filter-in-memory':
+    '部分过滤条件在读取后于内存中运行：索引放行的每个文档都会先被读取，这在大型数据集上会变慢。联接（->）和过滤条件中的函数无法使用索引。',
   /** The index sorts and limits while reading */
-  'vista.explain.insight.index-sort-limit': '索引在读取文档的同时对其进行排序和限制。',
+  'vision.explain.insight.index-sort-limit': '索引在读取文档的同时对其进行排序和限制。',
   /** The plan slices in memory */
-  'vista.explain.insight.slice-in-memory':
-    '切片操作是在读取完成后于内存中进行的，而不是在读取时作为限制条件执行。',
+  'vision.explain.insight.slice-in-memory':
+    '切片是在读取后于内存中进行的，而不是作为读取时的限制。',
   /** The plan sorts in memory */
-  'vista.explain.insight.sort-in-memory':
-    '排序是在读取完所有匹配项之后于内存中进行的。请按索引可排序的属性进行排序。',
+  'vision.explain.insight.sort-in-memory':
+    '排序是在读取完所有匹配项后于内存中进行的。请按索引可以排序的属性进行排序。',
   /** Link under the plan insights to the guide on fast queries */
-  'vista.explain.insights.guide': '高性能 GROQ',
+  'vision.explain.insights.guide': '高性能 GROQ',
   /** Heading of the plan insights in the Explain panel */
-  'vista.explain.insights.title': '值得注意的内容',
+  'vision.explain.insights.title': '亮点',
   /** Button in the Explain panel fetching the query plan */
-  'vista.explain.plan': '显示查询计划',
+  'vision.explain.plan': '显示查询计划',
   /** Shown when the query plan could not be fetched */
-  'vista.explain.plan-failed': '无法获取查询计划：{{message}}',
+  'vision.explain.plan-failed': '无法获取查询计划：{{message}}',
   /** Heading of the query plan in the Explain panel */
-  'vista.explain.plan-title': '查询计划',
+  'vision.explain.plan-title': '查询计划',
   /** Toast shown after a code snippet was copied */
-  'vista.export-query.copied': '代码片段已复制到剪贴板',
+  'vision.export-query.copied': '代码片段已复制到剪贴板',
   /** Label for the button that copies a code snippet */
-  'vista.export-query.copy': '复制代码片段',
+  'vision.export-query.copy': '复制代码片段',
   /** Explanation at the top of the export query dialog */
-  'vista.export-query.description': '使用以下代码片段之一在工作室之外运行此查询。',
+  'vision.export-query.description': '使用以下代码片段之一在工作室之外运行此查询。',
+  /** Note under the curl snippet when the query is sent as a request body rather than in the URL */
+  'vision.export-query.post-body-note':
+    '查询和参数作为搜索参数时达到 {{size}} 个字符；从 {{limit}} 开始，@sanity/client 会将其作为 JSON 正文发送，而不是放在 URL 中，因此该代码片段也采用相同方式。',
   /** Title of the dialog that exports the query as code snippets */
-  'vista.export-query.title': '导出查询',
+  'vision.export-query.title': '导出查询',
   /** Note about authentication in the export query dialog */
-  'vista.export-query.token-note':
-    '私有数据集需要 API 令牌。公共数据集可以去掉 Authorization 请求头。',
+  'vision.export-query.token-note':
+    '私有数据集需要 API 令牌。公共数据集可以省略 Authorization 标头。',
   /** Toast shown after the generated code was copied */
-  'vista.export-types.copied': '代码已复制到剪贴板',
+  'vision.export-types.copied': '代码已复制到剪贴板',
   /** Label for the button that copies the generated code */
-  'vista.export-types.copy': '复制代码',
+  'vision.export-types.copy': '复制代码',
   /** Shown in the types dialog when there is neither a schema evaluation nor a result */
-  'vista.export-types.empty': '请先获取查询结果，以便从中推导类型。',
+  'vision.export-types.empty': '请先获取查询结果，以便从中推导类型。',
   /** Why the workspace schema could not be used for the types; shown with the result fallback */
-  'vista.export-types.schema-error': '架构评估失败：{{message}}',
+  'vision.export-types.schema-error': '模式评估失败：{{message}}',
   /** Note shown when the types were derived from the fetched result instead of the schema */
-  'vista.export-types.source.result':
-    '由于无法根据工作区架构对该查询进行评估，因此是根据获取的结果推断得出的。',
+  'vision.export-types.source.result':
+    '由于无法根据工作区模式评估该查询，类型是从获取的结果中推断出来的。',
   /** Note shown when the types were derived from the workspace schema */
-  'vista.export-types.source.schema': '根据工作区架构推断，方式与 sanity typegen 相同。',
+  'vision.export-types.source.schema': '与 sanity typegen 的方式相同，从工作区模式中推断得出。',
   /** Shown when the schema cannot be evaluated and the shown result belongs to an older query */
-  'vista.export-types.stale-result':
-    '所显示的结果是针对不同的查询或参数获取的。请先获取当前查询的结果，以便从中推导类型。',
+  'vision.export-types.stale-result':
+    '显示的结果是为其他查询或参数获取的。请先获取当前查询，以便从中推导类型。',
   /** Title of the dialog exporting TypeScript types for the result */
-  'vista.export-types.title-typescript': '导出 TypeScript',
+  'vision.export-types.title-typescript': '导出 TypeScript',
   /** Title of the dialog exporting a Zod schema for the result */
-  'vista.export-types.title-zod': '导出 Zod',
+  'vision.export-types.title-zod': '导出 Zod',
   /** Button of a library function the query does not declare, which declares it at the top */
-  'vista.functions.add': '添加到查询',
+  'vision.functions.add': '添加到查询',
   /** Shown on a library function the query declares the same way */
-  'vista.functions.declared': '在此查询中',
+  'vision.functions.declared': '在此查询中',
   /** Lint action on a call of a library function the query does not declare */
-  'vista.functions.editor.add-from-library': '声明它',
+  'vision.functions.editor.add-from-library': '声明它',
   /** Note in a function's hover documentation: the API version it needs */
-  'vista.functions.editor.api-version': '需要 API 版本 {{version}} 或更高版本',
+  'vision.functions.editor.api-version': '需要 API 版本 {{version}} 或更高版本',
   /** Detail of a completion for a custom function the query declares */
-  'vista.functions.editor.completion-declared': '在此查询中',
+  'vision.functions.editor.completion-declared': '在此查询中',
   /** Detail of a completion for a library function, which declares it too */
-  'vista.functions.editor.completion-library': '来自您的函数库',
+  'vision.functions.editor.completion-library': '来自您的库',
   /** Note in the hover documentation of a custom function the query declares */
-  'vista.functions.editor.declared-on': '自定义函数，声明于第 {{line}} 行',
+  'vision.functions.editor.declared-on': '自定义函数，声明于第 {{line}} 行',
   /** Note in the hover documentation of the functions that only work in delta mode */
-  'vista.functions.editor.delta-only':
-    '仅在增量模式下有效，webhook 和 Sanity Functions 在该模式下运行其过滤器',
+  'vision.functions.editor.delta-only':
+    '仅在增量模式下有效，webhooks 和 Sanity Functions 在该模式下运行其过滤器',
   /** Button over a selected projection in the query editor, turning it into a custom function */
-  'vista.functions.editor.extract': '提取为函数',
+  'vision.functions.editor.extract': '提取为函数',
   /** Note in the hover documentation of a library function the query does not declare */
-  'vista.functions.editor.in-library': '在您的函数库中，但未在此查询中声明',
+  'vision.functions.editor.in-library': '在您的函数库中，未在此查询中声明',
   /** Link at the end of a built-in function's hover documentation */
-  'vista.functions.editor.reference': 'GROQ 函数参考',
+  'vision.functions.editor.reference': 'GROQ 函数参考',
   /** Explanation under the library heading in the Functions panel */
-  'vista.functions.library.description':
-    '在此浏览器中为项目的每个数据集保留。自动补全会提供这些函数,而代码检查会建议将某个查询调用声明为函数。',
+  'vision.functions.library.description':
+    '为该项目的每个数据集保存在此浏览器中。自动完成会提供这些函数，lint 会建议将查询调用的某个函数声明出来。',
   /** Shown in the Functions panel while the library is empty */
-  'vista.functions.library.empty': '保存查询中声明的函数,即可在其他查询中使用它。',
+  'vision.functions.library.empty': '保存查询声明的函数，以便在其他查询中使用。',
   /** Heading of the functions library in the Functions panel */
-  'vista.functions.library.title': '函数库',
+  'vision.functions.library.title': '库',
   /** Shown in the Functions panel while the query declares no custom functions */
-  'vista.functions.query.empty':
-    '在查询顶部声明自定义函数,或将光标放在投影中(如 author->{name}),然后按下编辑器上方的提取按钮({{shortcut}})。',
+  'vision.functions.query.empty':
+    '在查询顶部声明自定义函数，或将光标放在投影（例如 author->{name}）中，然后按下编辑器上方的提取按钮（{{shortcut}}）。',
   /** Heading of the functions the query declares in the Functions panel */
-  'vista.functions.query.title': '在此查询中',
+  'vision.functions.query.title': '在此查询中',
   /** Removes a function from the library */
-  'vista.functions.remove': '从函数库中移除',
+  'vision.functions.remove': '从库中移除',
   /** Button of a library function the query declares differently, which puts the library's version in */
-  'vista.functions.replace': '替换查询中的版本',
+  'vision.functions.replace': '在查询中替换',
   /** Accessible name of a declared function in the Functions panel, which selects it in the editor */
-  'vista.functions.reveal': '在编辑器中显示 {{name}}',
+  'vision.functions.reveal': '在编辑器中显示 {{name}}',
   /** Button of a function the query declares that is not in the library yet */
-  'vista.functions.save': '保存到函数库',
+  'vision.functions.save': '保存到库',
   /** Shown on a function the query declares the way the library has it */
-  'vista.functions.saved': '已保存',
+  'vision.functions.saved': '已保存',
   /** Button of a function the query declares differently from the library's version */
-  'vista.functions.update': '更新函数库',
+  'vision.functions.update': '更新库',
   /** Button over the query editor that opens the bar writing a query from a description */
-  'vista.generate.button': '生成查询',
+  'vision.generate.button': '生成查询',
   /** Closes the generate query bar */
-  'vista.generate.close': '关闭',
+  'vision.generate.close': '关闭',
   /** Explanation under the generate query field */
-  'vista.generate.description':
-    'Sanity Agent Actions 会根据您的描述和文档类型编写 GROQ,并由 Content Lake 检查每次尝试;每次尝试都会消耗一个 AI 积分。它会替换此标签页的查询并运行;在编辑器中撤销可恢复之前的查询。',
+  'vision.generate.description':
+    'Sanity Agent Actions 会根据您的描述和文档类型编写 GROQ，Content Lake 会检查每次尝试；每次尝试都会消耗一个 AI 额度。它会替换此标签页的查询并运行；在编辑器中撤销可恢复之前的查询。',
   /** Shown when no query could be generated, above the reason */
-  'vista.generate.failed': '无法生成查询',
+  'vision.generate.failed': '无法生成查询',
   /** Accessible label of the description field in the generate query bar */
-  'vista.generate.label': '查询应获取什么内容?',
+  'vision.generate.label': '查询应获取什么内容？',
   /** Opens the last rejected attempt, without running it, to fix it by hand */
-  'vista.generate.open-anyway': '打开上次的尝试',
+  'vision.generate.open-anyway': '打开上一次尝试',
   /** Placeholder of the description field in the generate query bar */
-  'vista.generate.placeholder': '最近的 10 位作者,按姓氏排序,然后按名字排序',
+  'vision.generate.placeholder': '最近的 10 位作者，按姓氏然后名字排序',
   /** Shown while the first attempt at a query is written */
-  'vista.generate.progress': '正在编写查询……',
+  'vision.generate.progress': '正在编写查询……',
   /** Shown while a rejected attempt is retried */
-  'vista.generate.progress-retry': '正在修复查询(第 {{attempt}} 次尝试,共 {{max}} 次)……',
+  'vision.generate.progress-retry': '正在修复查询（第 {{attempt}} 次，共 {{max}} 次）……',
   /** Button generating the query */
-  'vista.generate.submit': '生成',
+  'vision.generate.submit': '生成',
   /** Badge on a history entry the API CDN answered */
-  'vista.history.cdn': 'API CDN',
+  'vision.history.cdn': 'API CDN',
   /** Badge on a history entry the API CDN answered from its cache */
-  'vista.history.cdn-cache-hit': 'CDN 缓存命中',
+  'vision.history.cdn-cache-hit': 'CDN 缓存命中',
   /** A history entry whose result differs from the previous result, which is no longer kept */
-  'vista.history.changed': '已更改',
+  'vision.history.changed': '已更改',
   /**
    * Toggle on a history entry that shows how its request and result differ from the previous
    * successful fetch
    */
-  'vista.history.changes': '更改',
+  'vision.history.changes': '更改',
   /** Shown instead of the changes when they could not be loaded or rendered */
-  'vista.history.changes-failed': '无法显示更改。',
+  'vision.history.changes-failed': '无法显示更改内容。',
   /** Button retrying to show the changes of a history entry */
-  'vista.history.changes-retry': '重试',
+  'vision.history.changes-retry': '重试',
   /** Above the changes of a history entry: the fetch they are compared with */
-  'vista.history.compared-with': '与 {{time}} 的获取结果进行比较',
+  'vision.history.compared-with': '与 {{time}} 的请求进行比较',
   /** Label of the diff of the GROQ params in a history entry's changes */
-  'vista.history.diff.params': '参数',
+  'vision.history.diff.params': '参数',
   /** Label of the diff of the GROQ query in a history entry's changes */
-  'vista.history.diff.query': '查询',
+  'vision.history.diff.query': '查询',
   /** Instead of the query diff, when the two queries only differ in whitespace and line breaks */
-  'vista.history.diff.query-formatting-only': '仅格式发生了更改',
+  'vision.history.diff.query-formatting-only': '仅格式发生了更改',
   /** Label of the diff of the query result in a history entry's changes */
-  'vista.history.diff.result': '结果',
+  'vision.history.diff.result': '结果',
   /**
    * Label of the diff of the request URL in a history entry's changes: the API host, version and
    * dataset, and options such as the perspective
    */
-  'vista.history.diff.url': '请求 URL',
+  'vision.history.diff.url': '请求 URL',
   /** Empty state of the history panel */
-  'vista.history.empty': '尚未获取任何内容',
+  'vision.history.empty': '尚未获取任何内容',
   /** Status label for a failed fetch in the history */
-  'vista.history.failed': '失败',
+  'vision.history.failed': '失败',
   /** Button putting the hidden fields back into the diff out of a history entry's changes */
-  'vista.history.hide-hidden': '隐藏它们',
+  'vision.history.hide-hidden': '隐藏它们',
   /** Next to a history entry's changes: the fields the diff leaves out */
-  'vista.history.hiding': '正在隐藏 {{fields}}',
+  'vision.history.hiding': '隐藏 {{fields}}',
   /** A history entry whose result only differs from the previous one in hidden fields */
-  'vista.history.only-hidden-changed': '仅隐藏字段发生了更改',
+  'vision.history.only-hidden-changed': '仅隐藏字段发生了更改',
   /** History reason: a tab opened with a generated query fetched it */
-  'vista.history.reason.generated': '生成的查询',
+  'vision.history.reason.generated': '已生成查询',
   /** History reason: a link to the tool named a query URL, which opened in a tab and ran */
-  'vista.history.reason.link': '已打开的链接',
+  'vision.history.reason.link': '已打开链接',
   /** History reason: a live event matched the query's sync tags */
-  'vista.history.reason.live': '实时更新',
+  'vision.history.reason.live': '实时更新',
   /** History reason: the live connection asked every client to refetch */
-  'vista.history.reason.live-restart': '实时连接已重新启动',
+  'vision.history.reason.live-restart': '实时连接已重启',
   /**
    * History reason: the Live fetch button was pressed, which fetches and then refetches
    * automatically
    */
-  'vista.history.reason.live-start': '实时获取已开始',
+  'vision.history.reason.live-start': '实时获取已开始',
   /** History reason: a saved query was loaded into a tab that refetches automatically */
-  'vista.history.reason.load': '查询已加载',
+  'vision.history.reason.load': '已加载查询',
   /** History reason: the fetch button was pressed */
-  'vista.history.reason.manual': '获取按钮',
+  'vision.history.reason.manual': '获取按钮',
   /** History reason: mutations were applied from the Mutate panel */
-  'vista.history.reason.mutation': '已应用变更',
+  'vision.history.reason.mutation': '已应用变更',
   /** History reason: dataset, API version or perspective changed while refetching automatically */
-  'vista.history.reason.options': '选项已更改',
+  'vision.history.reason.options': '选项已更改',
   /** History reason: a query URL was pasted into the tab, which runs it */
-  'vista.history.reason.paste': '粘贴的 URL',
+  'vision.history.reason.paste': '已粘贴 URL',
   /** History reason: a tab that refetches automatically was opened again, or the studio reloaded */
-  'vista.history.reason.resume': '自动重新获取已恢复',
+  'vision.history.reason.resume': '自动重新获取已恢复',
   /** History reason: the keyboard shortcut was used */
-  'vista.history.reason.shortcut': '键盘快捷键',
+  'vision.history.reason.shortcut': '键盘快捷键',
   /** A history entry whose result is the same as the previous result, for a changed request */
-  'vista.history.same-result': '结果相同',
+  'vision.history.same-result': '结果相同',
   /** Button showing the hidden fields in a history entry's changes */
-  'vista.history.show-hidden': '显示它们',
+  'vision.history.show-hidden': '显示它们',
   /** Next to a history entry's changes while the hidden fields are shown */
-  'vista.history.showing-hidden': '正在显示 {{fields}}，默认隐藏',
+  'vision.history.showing-hidden': '正在显示 {{fields}}，默认隐藏',
   /** A history entry whose result, or the previous one, is too large to compare */
-  'vista.history.too-large': '过大，无法比较',
+  'vision.history.too-large': '过大，无法比较',
   /** A history entry whose result is the same as the previous result */
-  'vista.history.unchanged': '无更改',
+  'vision.history.unchanged': '无变化',
   /** Shown in the Lint panel while the query has no lint findings */
-  'vista.lint.empty':
-    '没有 lint 发现项。GROQ 检查器在查询中发现的问题将在您输入时列在此处；选择一项即可在编辑器中选中它。',
+  'vision.lint.empty':
+    '没有 lint 结果。GROQ 检查器在查询中发现的问题会在您输入时列在此处；选择一个即可在编辑器中选中它。',
   /** Where a lint finding sits in the query, shown under its message */
-  'vista.lint.position': '第 {{line}} 行，第 {{column}} 列',
+  'vision.lint.position': '第 {{line}} 行，第 {{column}} 列',
   /** Severity badge of a lint finding */
-  'vista.lint.severity.error': '错误',
+  'vision.lint.severity.error': '错误',
   /** Severity badge of a lint finding */
-  'vista.lint.severity.hint': '提示',
+  'vision.lint.severity.hint': '提示',
   /** Severity badge of a lint finding */
-  'vista.lint.severity.info': '信息',
+  'vision.lint.severity.info': '信息',
   /** Severity badge of a lint finding */
-  'vista.lint.severity.warning': '警告',
+  'vision.lint.severity.warning': '警告',
   /** Lint action writing the type, field or operator a schema finding suggests */
-  'vista.lint.use-suggestion': '使用 {{suggestion}}',
+  'vision.lint.use-suggestion': '使用 {{suggestion}}',
   /** Badge shown while a tab refetches automatically */
-  'vista.live.active': '实时',
+  'vision.live.active': '实时',
   /** Button in the request column's action bar that fetches and then refetches automatically */
-  'vista.live.button': '实时获取',
+  'vision.live.button': '实时获取',
   /** Tooltip of the Live button while automatic refetching is off */
-  'vista.live.button.start': '获取，然后在结果中的文档发生更改时再次获取',
+  'vision.live.button.start': '获取，之后每当结果中的文档发生变化时再次获取',
   /** Tooltip of the Stop live button, while the tab refetches automatically */
-  'vista.live.button.stop':
-    '停止在结果中的文档发生更改时获取。对于不受文档更改影响的结果（例如 now()），“获取”仍会按需获取',
+  'vision.live.button.stop':
+    '停止在结果中的文档发生变化时获取。获取仍会按需执行，适用于没有文档变化触发的结果，例如 now()',
   /** Error shown when the live connection breaks */
-  'vista.live.error': '实时更新已断开：{{message}}',
+  'vision.live.error': '实时更新已断开：{{message}}',
   /** The Live fetch button while the tab refetches automatically, stopping it */
-  'vista.live.stop': '停止实时',
+  'vision.live.stop': '停止实时',
   /** Button in the Mutate panel adding a mutation to the list */
-  'vista.mutate.add': '添加变更',
+  'vision.mutate.add': '添加变更',
   /** Adds a mutation creating a document, with the type of the result's first document */
-  'vista.mutate.add.create': '创建一个文档',
+  'vision.mutate.add.create': '创建文档',
   /** Adds a mutation deleting a document, its ID to fill in */
-  'vista.mutate.add.delete': '删除一个文档',
+  'vision.mutate.add.delete': '删除文档',
   /** Adds a mutation deleting the documents of the shown result */
-  'vista.mutate.add.delete-result': '删除结果中的文档',
+  'vision.mutate.add.delete-result': '删除结果中的文档',
   /** Adds a mutation patching a document, its ID to fill in */
-  'vista.mutate.add.patch': '修补一个文档',
+  'vision.mutate.add.patch': '修补文档',
   /** Adds a mutation patching the documents of the shown result */
-  'vista.mutate.add.patch-result': '修补结果中的文档',
+  'vision.mutate.add.patch-result': '修补结果中的文档',
   /** Button applying the mutations a dry run showed */
-  'vista.mutate.apply': '应用到 {{dataset}}',
+  'vision.mutate.apply': '应用到 {{dataset}}',
   /** Heading of the error shown when applying the mutations failed */
-  'vista.mutate.apply-failed': '未能应用这些变更操作',
+  'vision.mutate.apply-failed': '未能应用这些变更操作',
   /** Next to Apply while the mutations as they are have had no dry run */
-  'vista.mutate.apply-needs-preview': '应用会发送试运行所显示的内容：请先运行一次试运行。',
+  'vision.mutate.apply-needs-preview': '应用会发送试运行所显示的内容：请先运行一次试运行。',
   /** Option giving array items without a _key one */
-  'vista.mutate.auto-keys': '为没有 _key 的数组项添加 _key',
+  'vision.mutate.auto-keys': '为没有 _key 的数组项添加 _key',
   /** Under the option giving array items a _key */
-  'vista.mutate.auto-keys.description': '工作室需要每个数组项都有一个 _key 才能对其进行编辑。',
+  'vision.mutate.auto-keys.description': '工作室需要每个数组项都有一个 _key 才能对其进行编辑。',
   /** Button showing a document's changes in the dry run */
-  'vista.mutate.changes': '更改',
+  'vision.mutate.changes': '更改',
   /** Shown instead of a document's changes when they could not be loaded or rendered */
-  'vista.mutate.changes-failed': '无法显示更改。',
+  'vision.mutate.changes-failed': '无法显示更改。',
   /** Button retrying to show a document's changes */
-  'vista.mutate.changes-retry': '重试',
+  'vision.mutate.changes-retry': '重试',
   /** What the Mutate panel does */
-  'vista.mutate.description':
-    '按照 Mutations API 所接受的格式，以列表形式编写变更操作：create、createOrReplace、createIfNotExists、delete 和 patch，可按 ID 或按 GROQ 查询指定。试运行会显示这些操作对每个文档会产生的效果，而不会更改任何内容；应用后，将以你的账户在一个事务中将它们写入数据集。',
+  'vision.mutate.description':
+    '按 Mutations API 所接受的格式，以列表形式编写变更操作：create、createOrReplace、createIfNotExists、delete 和 patch，可按 ID 或 GROQ 查询指定。试运行会显示它们对每个文档会做什么，而不会实际更改任何内容；然后“应用”会使用你的账户，将它们在一个事务中写入数据集。',
   /** What the API says went wrong with one of the mutations */
-  'vista.mutate.failure-item': '变更操作 {{index}}：{{message}}',
+  'vision.mutate.failure-item': '变更操作 {{index}}：{{message}}',
   /** Tooltip and accessible label of the button opening the generate mutations field */
-  'vista.mutate.generate.button': '生成变更操作',
+  'vision.mutate.generate.button': '生成变更操作',
   /** Explanation under the generate mutations field */
-  'vista.mutate.generate.description':
-    'Sanity Agent Actions 会根据你的描述、结果中的文档及其类型来编写变更操作，并通过试运行检查每次尝试；每次尝试会消耗一个 AI 额度。它们会替换此处的变更操作，撤销操作可将其恢复；在你应用之前不会写入任何内容。',
+  'vision.mutate.generate.description':
+    'Sanity Agent Actions 会根据你的描述、结果中的文档及其类型来编写变更操作，并通过试运行检查每次尝试；每次尝试都会消耗一个 AI 额度。它们会替换此处的变更操作，撤销操作可将其恢复；在你应用之前不会写入任何内容。',
   /** Shown when no mutations could be generated, above the reason */
-  'vista.mutate.generate.failed': '未能生成变更操作',
+  'vision.mutate.generate.failed': '未能生成变更操作',
   /** Accessible label of the description field in the generate mutations bar */
-  'vista.mutate.generate.label': '这些变更操作应该做什么？',
+  'vision.mutate.generate.label': '变更操作应该做什么？',
   /** Placeholder of the description field in the generate mutations bar */
-  'vista.mutate.generate.placeholder': '将结果中文档的标题更改为 foobar',
+  'vision.mutate.generate.placeholder': '将结果中文档的标题更改为 foobar',
   /** Shown while the first attempt at the mutations is written */
-  'vista.mutate.generate.progress': '正在编写变更操作……',
+  'vision.mutate.generate.progress': '正在编写变更操作……',
   /** Shown while an attempt the dry run turned down is retried */
-  'vista.mutate.generate.progress-retry':
+  'vision.mutate.generate.progress-retry':
     '正在修复变更操作（第 {{attempt}} 次尝试，共 {{max}} 次）……',
   /** Under the dry run: the fields the diffs leave out */
-  'vista.mutate.hiding': '与“历史记录”一样，这些更改省略了 {{fields}}。',
+  'vision.mutate.hiding': '与历史记录一样，这些更改不包括 {{fields}}。',
   /** Shown when the mutations are not valid JSON */
-  'vista.mutate.invalid-json': '这些变更操作不是有效的 JSON：{{message}}',
+  'vision.mutate.invalid-json': '这些变更操作不是有效的 JSON：{{message}}',
   /** Shown when a mutation does not name exactly one thing to do */
-  'vista.mutate.invalid-mutation':
-    '变更操作 {{index}} 需要且仅需要 create、createOrReplace、createIfNotExists、delete 或 patch 中的一项。',
+  'vision.mutate.invalid-mutation':
+    '变更操作 {{index}} 需要恰好指定 create、createOrReplace、createIfNotExists、delete 或 patch 之一。',
   /** Label of the mutations editor */
-  'vista.mutate.mutations': '变更操作',
+  'vision.mutate.mutations': '变更操作',
   /** The dry run touched no documents */
-  'vista.mutate.no-documents': '这些变更操作未涉及任何文档。',
+  'vision.mutate.no-documents': '这些变更操作未涉及任何文档。',
   /** Shown when the JSON is not a list of mutations */
-  'vista.mutate.not-a-list': '请编写一个变更操作列表、单个变更操作，或包含变更操作列表的请求正文。',
+  'vision.mutate.not-a-list':
+    '请编写一个变更操作列表、单个变更操作，或包含变更操作列表的请求正文。',
   /** A document the mutations create */
-  'vista.mutate.operation.create': '创建',
+  'vision.mutate.operation.create': '创建',
   /** A document the mutations delete */
-  'vista.mutate.operation.delete': '删除',
+  'vision.mutate.operation.delete': '删除',
   /** A document the mutations touch without changing its content */
-  'vista.mutate.operation.none': '无更改',
+  'vision.mutate.operation.none': '无变化',
   /** A document the mutations change */
-  'vista.mutate.operation.update': '更新',
+  'vision.mutate.operation.update': '更新',
   /** Button running the mutations as a dry run */
-  'vista.mutate.preview': '模拟运行',
+  'vision.mutate.preview': '演练',
   /** Heading of the error shown when the dry run failed */
-  'vista.mutate.preview-failed': '模拟运行失败',
+  'vision.mutate.preview-failed': '演练失败',
   /** Heading of the dry run's outcome */
-  'vista.mutate.preview-heading': '模拟运行',
+  'vision.mutate.preview-heading': '演练',
   /** Shown over a dry run made for other mutations, another dataset or other options */
-  'vista.mutate.stale':
-    '在此次模拟运行之后，变更内容、数据集或选项已发生更改。请重新运行以应用它们。',
+  'vision.mutate.stale': '在此次演练之后,变更、数据集或选项已发生更改。请重新运行以应用它们。',
   /** How many documents the dry run changes and leaves as they are */
-  'vista.mutate.summary': '已更改：{{changed}} · 未更改：{{unchanged}}',
+  'vision.mutate.summary': '已更改:{{changed}} · 未更改:{{unchanged}}',
   /** In the Network panel: whether a cache answered the query */
-  'vista.network.cache': '缓存',
+  'vision.network.cache': '缓存',
   /** The API CDN answered from its cache */
-  'vista.network.cache.hit': '命中',
+  'vision.network.cache.hit': '命中',
   /** Under the details of a CDN cache hit */
-  'vista.network.cache.hit-explained':
-    'CDN 使用其缓存的响应进行了回答，该缓存来自离你较近的位置；查询未到达 API。',
+  'vision.network.cache.hit-explained':
+    'CDN 使用其缓存的响应进行了应答,该响应来自离您较近的位置;查询未到达 API。',
   /** The API CDN answered with a response this session had not seen */
-  'vista.network.cache.miss': '未命中，就此会话所知',
+  'vision.network.cache.miss': '未命中,据此会话所知',
   /** The API answered, which caches nothing */
-  'vista.network.cache.none': '无，API 对每个请求都返回最新内容',
+  'vision.network.cache.none': '无,API 对每个请求都返回最新内容',
   /** Shown in the Network panel while there is no response */
-  'vista.network.empty': '获取查询以查看哪个端点对其进行了响应、是否来自缓存，以及它在何处运行。',
+  'vision.network.empty': '获取查询以查看是哪个端点回应了它、是否来自缓存,以及在哪里运行的。',
   /** In the Network panel: the endpoint that answered */
-  'vista.network.endpoint': '响应方',
+  'vision.network.endpoint': '应答方',
   /** The live API answered */
-  'vista.network.endpoint.api': 'API',
+  'vision.network.endpoint.api': 'API',
   /** The API CDN answered */
-  'vista.network.endpoint.cdn': 'API CDN',
+  'vision.network.endpoint.cdn': 'API CDN',
+  /** In the Network panel: the HTTP method the query was sent with */
+  'vision.network.method': '方法',
+  /** The query and its params went in the URL */
+  'vision.network.method.get': 'GET,查询和参数位于 URL 中',
+  /** The query and its params went in the request body */
+  'vision.network.method.post': 'POST,查询和参数作为 JSON 请求体',
+  /** Under the method of a POST request: why the query was not sent in the URL */
+  'vision.network.method.post-explained':
+    '查询和参数作为搜索参数共计 {{size}} 个字符;从 {{limit}} 个字符起,@sanity/client 会将其作为 JSON 请求体发送,因为 API 对 URL 长度有限制。选项仍保留在 URL 中。',
   /** In the Network panel: the region the query ran in */
-  'vista.network.region': '查询运行于',
+  'vision.network.region': '查询运行于',
   /** The response did not say where the query ran */
-  'vista.network.region.unknown': '未报告',
+  'vision.network.region.unknown': '未报告',
   /** In the Network panel: the round trip and the time on the server */
-  'vista.network.timing': '耗时',
+  'vision.network.timing': '耗时',
   /** The round trip and the server's time for the query, in milliseconds */
-  'vista.network.timing.value': '往返 {{e2e}} 毫秒，服务器处理 {{server}} 毫秒',
+  'vision.network.timing.value': '往返 {{e2e}} 毫秒,服务器端 {{server}} 毫秒',
   /** In the Network panel: the trace of the request, for Sanity support */
-  'vista.network.trace': '跟踪 ID',
+  'vision.network.trace': '跟踪 ID',
   /** Hint in the Network panel while queries go to the API */
-  'vista.network.use-cdn-hint': '在选项中开启“使用 API CDN”，以通过 CDN 发送查询。',
+  'vision.network.use-cdn-hint': '在选项中启用“使用 API CDN”，以通过 CDN 发送查询。',
   /** Label of the browser's marker on the Network panel's globe, placed from its time zone */
-  'vista.network.you': '你',
+  'vision.network.you': '你',
   /** Hint under the dataset field while the tab follows the workspace's dataset */
-  'vista.options.dataset.follows-workspace': '跟随工作区',
+  'vision.options.dataset.follows-workspace': '跟随工作区',
   /** Button that pins the current dataset so the tab stops following the workspace */
-  'vista.options.dataset.pin': '固定数据集',
+  'vision.options.dataset.pin': '固定数据集',
   /** Hint under the dataset field while a dataset is pinned */
-  'vista.options.dataset.pinned': '已固定；工作区可能会使用其他数据集',
+  'vision.options.dataset.pinned': '已固定；工作区可能使用其他数据集',
   /** Button that makes the tab follow the workspace's dataset again */
-  'vista.options.dataset.use-workspace': '使用工作区数据集',
+  'vision.options.dataset.use-workspace': '使用工作区数据集',
   /** Label for the "Include content source map" switch */
-  'vista.options.include-source-map': '包含内容来源映射',
+  'vision.options.include-source-map': '包含内容源映射',
   /** Description for the "Include content source map" switch */
-  'vista.options.include-source-map.description':
-    '在响应中添加 resultSourceMap，显示在“内容来源映射”选项卡中。',
+  'vision.options.include-source-map.description':
+    '在响应中添加 resultSourceMap，显示在“内容源映射”标签页中。',
   /** Perspective option following the studio navbar; the name is the release, published or drafts */
-  'vista.options.perspective.global': '全局（{{name}}）',
+  'vision.options.perspective.global': '全局（{{name}}）',
   /** Label of the switch that sends queries to the API CDN */
-  'vista.options.use-cdn': '使用 API CDN',
+  'vision.options.use-cdn': '使用 API CDN',
   /** Note under the API CDN switch while the studio signs in with a cookie */
-  'vista.options.use-cdn.anonymous':
-    '此工作室使用 Cookie 为您登录，而 API CDN 永远不会收到该 Cookie：它会像对待匿名访问者一样响应，展示公共数据集所显示的内容。',
+  'vision.options.use-cdn.anonymous':
+    '此工作室通过 cookie 登录，而 API CDN 永远不会收到该 cookie：它会像对待匿名访客一样响应，显示公开数据集所展示的内容。',
   /**
    * Why the API CDN is asked for but not used: the perspective is the one the perspective
    * select shows, such as "Global (drafts)"
    */
-  'vista.options.use-cdn.blocked':
-    'API CDN 不提供草稿或发行版服务，因此使用 {{perspective}} 视角的查询会发送到 API。使用已发布或原始视角时，它们会使用 CDN。',
+  'vision.options.use-cdn.blocked':
+    'API CDN 不提供草稿或发行版内容，因此使用 {{perspective}} 视角的查询会发送到 API。使用已发布或原始视角时则会使用 CDN。',
   /** Heading of the notice shown while the perspective keeps queries off the API CDN */
-  'vista.options.use-cdn.blocked.title': '查询发送到 API，而非 CDN',
+  'vision.options.use-cdn.blocked.title': '查询发送到 API，而非 CDN',
   /** Description of the API CDN switch */
-  'vista.options.use-cdn.description':
-    '将查询发送到 API CDN，类似于 @sanity/client 中的 useCdn: true，适用于已发布和原始视角：草稿和发行版始终发送到 API。其响应最多缓存一分钟；网络面板会显示某个响应是否来自缓存。',
+  'vision.options.use-cdn.description':
+    '将查询发送到 API CDN，类似于 @sanity/client 中的 useCdn: true，适用于已发布和原始视角：草稿和发行版始终发送到 API。其响应会被缓存最多一分钟；网络面板会显示响应是否来自缓存。',
   /** Button in the API CDN notice switching the tab to the published perspective */
-  'vista.options.use-cdn.use-published': '使用已发布视角',
+  'vision.options.use-cdn.use-published': '使用已发布视角',
   /** Label of the variant field */
-  'vista.options.variant-label': '变体',
+  'vision.options.variant-label': '变体',
   /** Variant option sending the navbar's variant, named */
-  'vista.options.variant.global': '全局（{{name}}）',
+  'vision.options.variant.global': '全局（{{name}}）',
   /** Variant option sending the navbar's variant while none is selected there */
-  'vista.options.variant.global-none': '全局（未选择）',
+  'vision.options.variant.global-none': '全局（未选择）',
   /** Variant option sending no variant */
-  'vista.options.variant.none': '无',
+  'vision.options.variant.none': '无',
   /** Accessible label for collapsing a bottom panel */
-  'vista.panel.collapse': '折叠面板',
+  'vision.panel.collapse': '折叠面板',
   /** Label of the Delta tab in the response panel, which tests the query in delta mode */
-  'vista.panel.delta': '差异',
+  'vision.panel.delta': '差异',
   /** Accessible label for expanding a bottom panel */
-  'vista.panel.expand': '展开面板',
+  'vision.panel.expand': '展开面板',
   /** Label of the "Explain" tab in the response panel: the query plan and an explanation */
-  'vista.panel.explain': '解释',
+  'vision.panel.explain': '解释',
   /** Label of the Functions tab in the response panel */
-  'vista.panel.functions': '函数',
+  'vision.panel.functions': '函数',
   /** Label of the "History" tab in the response panel */
-  'vista.panel.history': '历史记录',
+  'vision.panel.history': '历史记录',
   /** Label of the "Lint" tab in the response panel, listing the query's lint findings */
-  'vista.panel.lint': '检查',
+  'vision.panel.lint': 'Lint',
   /** Label of the Mutate tab in the response panel, which runs and applies mutations */
-  'vista.panel.mutate': '变更',
+  'vision.panel.mutate': '变更',
   /** Label of the Network tab in the response panel */
-  'vista.panel.network': '网络',
+  'vision.panel.network': '网络',
   /** Label of the "Options" panel in the request column */
-  'vista.panel.options': '选项',
+  'vision.panel.options': '选项',
   /** Label of the "Response" tab in the response panel */
-  'vista.panel.response': '响应',
+  'vision.panel.response': '响应',
   /** Label of the "Content Source Map" tab in the response panel */
-  'vista.panel.source-map': '内容源映射',
+  'vision.panel.source-map': 'Content Source Map',
   /** Button adding an item to a list param in the params form */
-  'vista.params-form.add-item': '添加项目',
+  'vision.params-form.add-item': '添加项',
   /** Placeholder of a params form field that takes any JSON value */
-  'vista.params-form.any-placeholder': '任意 JSON 值；其他文本将作为字符串发送',
+  'vision.params-form.any-placeholder': '任意 JSON 值；其他文本将作为字符串发送',
   /** Shown in the params form when the query uses no params */
-  'vista.params-form.empty': '该查询未使用任何参数。其中的每个 $name 都会在此处生成一个字段。',
+  'vision.params-form.empty': '该查询未使用任何参数。其中的每个 $name 都会在此处生成一个字段。',
   /** Shown in the params form while the params JSON cannot be parsed */
-  'vista.params-form.invalid-json': '参数不是有效的 JSON。请在 JSON 视图中修正后再在此处编辑。',
+  'vision.params-form.invalid-json': '参数不是有效的 JSON。请在 JSON 视图中修正后再在此处编辑。',
   /** A boolean param's value is not true or false; it is sent anyway */
-  'vista.params-form.invalid.boolean': '既非 true 也非 false；仍将作为 {{value}} 发送',
+  'vision.params-form.invalid.boolean': '不是 true 或 false；仍将以 {{value}} 发送',
   /** A document type param's value is not a document type of the workspace; it is sent anyway */
-  'vista.params-form.invalid.document-type': '不是此工作区中的文档类型；仍将发送',
+  'vision.params-form.invalid.document-type': '不是该工作区中的文档类型；仍将发送',
   /** A whole number param (a slice bound) holds a fraction */
-  'vista.params-form.invalid.integer': '不是切片所需的整数',
+  'vision.params-form.invalid.integer': '不是整数，而切片需要整数',
   /** A list param's value is not a list; it is sent anyway */
-  'vista.params-form.invalid.list': '不是列表；仍将作为 {{value}} 发送',
+  'vision.params-form.invalid.list': '不是列表；仍将以 {{value}} 发送',
   /** A number param's value is not a number; it is sent anyway */
-  'vista.params-form.invalid.number': '不是数字；将作为文本发送',
+  'vision.params-form.invalid.number': '不是数字；将以文本形式发送',
   /** A param's value is not one of the values the schema allows; it is sent anyway */
-  'vista.params-form.invalid.option': '不是已知值之一；仍将发送',
+  'vision.params-form.invalid.option': '不是已知值之一；仍将发送',
   /** A text param's value is not text; it is sent anyway */
-  'vista.params-form.invalid.string': '不是文本；仍将作为 {{value}} 发送',
+  'vision.params-form.invalid.string': '不是文本；仍将以 {{value}} 发送',
   /** Accessible label of an item input of a list param in the params form */
-  'vista.params-form.item-label': '${{name}}，第 {{index}} 项',
+  'vision.params-form.item-label': '${{name}}，第 {{index}} 项',
   /** Placeholder of an item input of a list param in the params form */
-  'vista.params-form.item-placeholder': '项目',
+  'vision.params-form.item-placeholder': '项',
   /** Under a params form field whose param has no value */
-  'vista.params-form.missing': '未设置：在设置值之前该查询将失败',
+  'vision.params-form.missing': '未设置：在设置值之前该查询将失败',
   /** Shown in the params form when the workspace schema could not be read */
-  'vista.params-form.no-schema': '类型仅来自查询本身：无法读取工作区架构。',
+  'vision.params-form.no-schema': '类型仅来自查询本身：无法读取工作区架构。',
   /** Placeholder of a params form field without a value, and the unset choice of a boolean */
-  'vista.params-form.not-set': '未设置',
+  'vision.params-form.not-set': '未设置',
   /** Button setting a date and time param to the current time */
-  'vista.params-form.now': '现在',
+  'vision.params-form.now': '当前时间',
   /** Button removing a param the query does not use from the params */
-  'vista.params-form.remove': '移除',
+  'vision.params-form.remove': '移除',
   /** Accessible label of the button removing an item from a list param */
-  'vista.params-form.remove-item': '移除项目',
+  'vision.params-form.remove-item': '移除项',
   /** Shown in the params form when the query does not parse */
-  'vista.params-form.syntax-error': '该查询无法解析，因此其参数将不带类型列出。',
+  'vision.params-form.syntax-error': '该查询无法解析，因此其参数列出时不含类型。',
   /** Type hint of a params form field: any JSON value */
-  'vista.params-form.type.any': '任意 JSON 值',
+  'vision.params-form.type.any': '任意 JSON 值',
   /** Type hint of a params form field: true or false */
-  'vista.params-form.type.boolean': 'true 或 false',
+  'vision.params-form.type.boolean': 'true 或 false',
   /** Type hint of a params form field: an ISO 8601 date and time */
-  'vista.params-form.type.datetime': '日期和时间（ISO 8601）',
+  'vision.params-form.type.datetime': '日期和时间（ISO 8601）',
   /** Type hint of a params form field: a document ID */
-  'vista.params-form.type.document-id': '文档 ID',
+  'vision.params-form.type.document-id': '文档 ID',
   /** Type hint of a params form field: one of the workspace's document types */
-  'vista.params-form.type.document-type': '文档类型',
+  'vision.params-form.type.document-type': '文档类型',
   /** Type hint of a params form field: a whole number */
-  'vista.params-form.type.integer': '整数',
+  'vision.params-form.type.integer': '整数',
   /** Type hint of a params form field: a list of values */
-  'vista.params-form.type.list': '列表，每项为 {{type}}',
+  'vision.params-form.type.list': '列表，每项为 {{type}}',
   /** Type hint of a params form field: a number */
-  'vista.params-form.type.number': '数字',
+  'vision.params-form.type.number': '数字',
   /** Type hint of a params form field: text */
-  'vista.params-form.type.string': '文本',
+  'vision.params-form.type.string': '文本',
   /** Heading of the params the query does not use, listed in the params form */
-  'vista.params-form.unused': '查询未使用',
+  'vision.params-form.unused': '查询未使用',
   /** Before the expressions that use a param, in the params form */
-  'vista.params-form.used-in': '使用于',
+  'vision.params-form.used-in': '用于',
   /** Value announced for the params resize handle while the panel sizes itself to its content */
-  'vista.params.fit-height': '已根据内容调整大小，{{height}} 像素',
+  'vision.params.fit-height': '已适应内容大小，{{height}} 像素',
   /** Accessible label and tooltip of the handle for resizing the params panel */
-  'vista.params.resize': '调整参数面板大小：拖动或使用方向键；双击或按 Enter 键重新适应内容',
+  'vision.params.resize': '调整参数面板大小：拖动或使用方向键；双击或按 Enter 可重新适应内容',
   /** Tab showing the params as a form inferred from the query */
-  'vista.params.view.form': '表单',
+  'vision.params.view.form': '表单',
   /** Tab showing the params as JSON */
-  'vista.params.view.json': 'JSON',
+  'vision.params.view.json': 'JSON',
   /** Accessible label of the tabs switching how the params are edited */
-  'vista.params.view.label': '编辑参数方式',
+  'vision.params.view.label': '参数编辑方式',
   /** Toast shown after a query URL was pasted and loaded into the tab */
-  'vista.paste.parsed': '已从粘贴的 URL 加载查询',
+  'vision.paste.parsed': '已从粘贴的 URL 加载查询',
+  /** Toast shown after a curl command for a query was pasted and loaded into the tab */
+  'vision.paste.parsed-curl': '已从粘贴的 cURL 命令加载查询',
   /** Toast shown when a pasted URL used a content variant the tab does not send */
-  'vista.paste.unavailable-variant':
+  'vision.paste.unavailable-variant':
     '粘贴的 URL 使用了“{{variant}}”变体；请在导航栏中选择该变体以使用它运行查询。',
   /** Toast shown when the dataset of a pasted URL is not available here */
-  'vista.paste.unknown-dataset':
+  'vision.paste.unknown-dataset':
     '粘贴的 URL 中的数据集“{{dataset}}”在此处不可用，将保留当前数据集。',
   /** Toast shown when the perspective of a pasted URL cannot be used */
-  'vista.paste.unsupported-perspective': '粘贴的 URL 中的透视图在此处不受支持，将保留当前透视图。',
+  'vision.paste.unsupported-perspective': '粘贴的 URL 中的视角在此处不受支持，将保留当前视角。',
   /** Toast shown when a pasted URL used a content variant, but this workspace has variants switched off */
-  'vista.paste.variants-disabled':
-    '粘贴的 URL 使用了“{{variant}}”变体；此工作区已关闭变体功能，因此查询将在不使用变体的情况下运行。',
+  'vision.paste.variants-disabled':
+    '粘贴的 URL 使用了“{{variant}}”变体；此工作区已关闭变体功能，因此查询将不使用该变体运行。',
   /** Accessible label for the query actions menu */
-  'vista.query.actions': '查询操作',
+  'vision.query.actions': '查询操作',
   /** Tooltip when automatic refetching is not available for the API version */
-  'vista.query.auto-refetch.unsupported': '自动重新获取需要 API 版本 v2021-03-25 或更高版本。',
+  'vision.query.auto-refetch.unsupported': '自动重新获取需要 API 版本 v2021-03-25 或更高版本。',
   /** Toast shown after the query was copied */
-  'vista.query.copied': '查询已复制到剪贴板',
+  'vision.query.copied': '查询已复制到剪贴板',
   /** Menu item copying the query text */
-  'vista.query.copy': '复制查询',
+  'vision.query.copy': '复制查询',
   /** Menu item opening the export query dialog */
-  'vista.query.export': '导出查询…',
+  'vision.query.export': '导出查询…',
   /** Menu item reformatting the query */
-  'vista.query.prettify': '美化查询',
+  'vision.query.prettify': '美化查询',
   /** Toast shown when the query could not be reformatted */
-  'vista.query.prettify.failed': '无法美化查询',
+  'vision.query.prettify.failed': '无法美化查询',
   /** Menu item saving the query to the personal saved queries */
-  'vista.query.save': '保存查询',
+  'vision.query.save': '保存查询',
   /** The Fetch button while a fetch is running, stopping it; paired with Stop live */
-  'vista.query.stop': '停止',
+  'vision.query.stop': '停止',
   /** Tooltip and accessible label of the Stop button, which stops the running fetch only */
-  'vista.query.stop.description': '停止获取',
+  'vision.query.stop.description': '停止获取',
   /** Explanation in the settings section about the redesigned experience */
-  'vista.redesign.settings.description':
-    '您正在使用重新设计的 Vision 工具。切换回去后，您的标签页和设置将保留在此浏览器中，以便下次使用。',
+  'vision.redesign.settings.description':
+    '您正在使用重新设计的 Vision 工具。切换回去后，您在此浏览器中的标签页和设置会保留，以便下次尝试使用。',
   /** Title of the settings section about the redesigned experience */
-  'vista.redesign.settings.title': '重新设计的 Vision（测试版）',
+  'vision.redesign.settings.title': '重新设计的 Vision（测试版）',
   /** Sidebar item and settings button that return to the classic Vision tool */
-  'vista.redesign.switch-to-classic': '切换到经典版 Vision',
+  'vision.redesign.switch-to-classic': '切换到经典版 Vision',
   /** Toast button that switches to the redesigned tool */
-  'vista.redesign.toast.accept': '立即试用',
+  'vision.redesign.toast.accept': '立即体验',
   /** Body of the toast inviting users of the classic tool to try the redesign */
-  'vista.redesign.toast.description':
+  'vision.redesign.toast.description':
     '查询标签页、实时重新获取、响应详情和导出功能。您可以随时切换回去。',
   /** Toast button that hides the invitation */
-  'vista.redesign.toast.dismiss': '暂不',
+  'vision.redesign.toast.dismiss': '暂不',
   /** Title of the toast inviting users of the classic tool to try the redesign */
-  'vista.redesign.toast.title': '试用重新设计的 Vision',
+  'vision.redesign.toast.title': '试用重新设计的 Vision',
   /** Button next to Fetch in the classic tool that switches to the redesigned one */
-  'vista.redesign.try': '试用新设计',
+  'vision.redesign.try': '试用新版设计',
   /** Tooltip of the button next to Fetch in the classic tool that switches to the redesign */
-  'vista.redesign.try.description':
+  'vision.redesign.try.description':
     '切换到重新设计的 Vision（测试版）。您可以随时从其侧边栏切换回去。',
   /** Empty state of the response panel before anything was fetched */
-  'vista.response.empty': '尚未获取任何内容',
+  'vision.response.empty': '尚未获取任何内容',
   /** Label for the payload size in the response tab */
-  'vista.response.payload-size': '有效负载大小',
+  'vision.response.payload-size': '有效负载大小',
   /** Label for the sync tags in the response tab */
-  'vista.response.sync-tags': '同步标签',
+  'vision.response.sync-tags': '同步标签',
   /** Shown when the response carried no sync tags */
-  'vista.response.sync-tags.none': '响应中没有同步标签',
+  'vision.response.sync-tags.none': '响应中没有同步标签',
+  /** Under the query URL when the request went out as a POST body rather than that URL */
+  'vision.response.url.sent-as-post':
+    '以 POST 正文形式发送：查询和参数对 URL 来说太长了，因此 @sanity/client 将其以 JSON 形式发送。将此 URL 粘贴到 Vision 中仍可加载该查询。',
   /** Accessible label for the result actions menu */
-  'vista.result.actions': '结果操作',
+  'vision.result.actions': '结果操作',
   /** Toast shown after the result was copied */
-  'vista.result.copied': '结果已复制到剪贴板',
+  'vision.result.copied': '结果已复制到剪贴板',
   /** Toast shown after a value in the result was copied, with its path such as [0].author.name */
-  'vista.result.copied-value': '已复制 {{path}}',
+  'vision.result.copied-value': '已复制 {{path}}',
   /** Menu item and button copying the result as JSON */
-  'vista.result.copy': '复制结果',
+  'vision.result.copy': '复制结果',
   /** Button next to each property in the result tree, copying its value */
-  'vista.result.copy-value': '复制值',
+  'vision.result.copy-value': '复制值',
   /** Empty state of the result view */
-  'vista.result.empty': '运行查询以在此处查看其结果',
+  'vision.result.empty': '运行查询以在此处查看结果',
   /** Button exporting the result as CSV */
-  'vista.result.export-csv': '导出 CSV',
+  'vision.result.export-csv': '导出 CSV',
   /** Button exporting the result as JSON */
-  'vista.result.export-json': '导出 JSON',
+  'vision.result.export-json': '导出 JSON',
   /** Menu item opening the TypeScript export dialog */
-  'vista.result.export-typescript': '导出 TypeScript…',
+  'vision.result.export-typescript': '导出 TypeScript…',
   /** Menu item opening the Zod export dialog */
-  'vista.result.export-zod': '导出 Zod…',
+  'vision.result.export-zod': '导出 Zod…',
   /** Button on a graph node hiding the objects and arrays it holds */
-  'vista.result.graph.collapse': '隐藏其所含内容',
+  'vision.result.graph.collapse': '隐藏其包含的内容',
   /** Button fitting the whole graph in view */
-  'vista.result.graph.fit': '适应视图',
+  'vision.result.graph.fit': '适应视图',
   /** Accessible label of the graph, saying how to move around in it */
-  'vista.result.graph.label':
-    '结果图：拖动以移动，滚动以缩放；获得焦点时，方向键移动，+ 和 - 缩放，0 适应视图',
+  'vision.result.graph.label':
+    '结果图：拖动可移动，滚动可缩放；聚焦时，方向键可移动，+ 和 - 可缩放，0 可适应视图',
   /** Ends the note on a graph that leaves part of this result out */
-  'vista.result.graph.left-out-hint': '树视图和 JSON 视图显示全部内容。',
+  'vision.result.graph.left-out-hint': '树形视图和 JSON 视图显示全部内容。',
   /** Note on a graph of a result with more objects and arrays than it draws */
-  'vista.result.graph.node-limit': '仅绘制前 {{nodes}} 个对象和数组。',
+  'vision.result.graph.node-limit': '仅绘制前 {{nodes}} 个对象和数组。',
   /**
    * Note on a graph whose objects or arrays have more entries than it lists; the nodes are the
    * ones in this result, each with its number of entries
    */
-  'vista.result.graph.partial': '{{nodes}} 仅列出前 {{rows}} 个条目。',
+  'vision.result.graph.partial': '{{nodes}} 仅列出前 {{rows}} 个条目。',
   /** An object or array in the note, with how many entries it has (always more than listed) */
-  'vista.result.graph.partial.node': '{{name}}（{{entries}} 个条目）',
+  'vision.result.graph.partial.node': '{{name}}（{{entries}} 个条目）',
   /** Title of the graph node of the result itself */
-  'vista.result.graph.root': '结果',
+  'vision.result.graph.root': '结果',
   /** Button zooming into the graph */
-  'vista.result.graph.zoom-in': '放大',
+  'vision.result.graph.zoom-in': '放大',
   /** Button zooming out of the graph */
-  'vista.result.graph.zoom-out': '缩小',
+  'vision.result.graph.zoom-out': '缩小',
   /** Tab showing the result as a graph of its objects and arrays */
-  'vista.result.view.graph': '图形',
+  'vision.result.view.graph': '图形',
   /** Tab showing the result as indented JSON text, to select and copy from */
-  'vista.result.view.json': 'JSON',
+  'vision.result.view.json': 'JSON',
   /** Accessible label of the tabs that switch how the result shows */
-  'vista.result.view.label': '结果视图',
+  'vision.result.view.label': '结果视图',
   /** Tab showing the result as a tree to browse */
-  'vista.result.view.tree': '树形',
+  'vision.result.view.tree': '树形',
   /** Empty state of the saved queries panel */
-  'vista.saved.empty': '暂无已保存的查询。使用 + 按钮保存当前查询。',
+  'vision.saved.empty': '尚无已保存的查询。使用 + 按钮保存当前查询。',
   /** Empty state of a query list when the search matches nothing */
-  'vista.saved.empty-search': '没有与您的搜索匹配的查询',
+  'vision.saved.empty-search': '没有符合搜索条件的查询',
   /** Menu item loading a saved query into the active tab */
-  'vista.saved.load-in-current-tab': '加载到当前标签页',
+  'vision.saved.load-in-current-tab': '加载到当前标签页',
   /** Menu item opening a saved query in a new tab */
-  'vista.saved.open-in-new-tab': '在新标签页中打开',
+  'vision.saved.open-in-new-tab': '在新标签页中打开',
   /** Menu item renaming a saved query */
-  'vista.saved.rename': '重命名',
+  'vision.saved.rename': '重命名',
   /** Accessible label for the button saving the current query */
-  'vista.saved.save-current': '保存当前查询',
+  'vision.saved.save-current': '保存当前查询',
   /** Toast shown when an opened saved query used a content variant the tab does not send */
-  'vista.saved.unavailable-variant':
-    '此已保存的查询使用了“{{variant}}”变体；请在导航栏中选择该变体以使用它运行查询。',
+  'vision.saved.unavailable-variant':
+    '此已保存查询使用了“{{variant}}”变体；请在导航栏中选择它以使用该变体运行查询。',
   /** Toast shown when an opened saved query names a dataset that is not available here */
-  'vista.saved.unknown-dataset':
-    '此已保存查询所指定的数据集“{{dataset}}”在此处不可用，将保留当前数据集。',
+  'vision.saved.unknown-dataset':
+    '此已保存查询的数据集“{{dataset}}”在此处不可用，将保留当前数据集。',
   /** Toast shown when an opened saved query used a content variant, but this workspace has variants switched off */
-  'vista.saved.variants-disabled':
-    '此已保存的查询使用了“{{variant}}”变体；此工作区已关闭变体功能，因此查询将在不使用该变体的情况下运行。',
+  'vision.saved.variants-disabled':
+    '此已保存查询使用了“{{variant}}”变体；此工作区已关闭变体功能，因此查询将在没有该变体的情况下运行。',
   /** Button in the settings dialog that clears the stored state */
-  'vista.settings.clear-storage': '清除存储',
+  'vision.settings.clear-storage': '清除存储',
   /** Confirmation button for clearing the storage */
-  'vista.settings.clear-storage.confirm': '是的,清除存储',
+  'vision.settings.clear-storage.confirm': '是的，清除存储',
   /** Explanation of what clearing the storage does */
-  'vista.settings.clear-storage.description':
-    '删除您个人保存的查询和函数库,重置此浏览器中打开的标签页和这些默认设置,并返回经典 Vision 工具。共享查询将被保留。',
+  'vision.settings.clear-storage.description':
+    '删除您的个人已保存查询和函数库，重置此浏览器中的打开标签页和这些默认设置，并返回到经典版 Vision 工具。共享查询将被保留。',
   /** Toast shown when the saved queries could not be cleared */
-  'vista.settings.clear-storage.error': '无法清除已保存的查询',
+  'vision.settings.clear-storage.error': '无法清除已保存的查询',
   /** Toast shown after the storage was cleared */
-  'vista.settings.clear-storage.success': '存储已清除',
+  'vision.settings.clear-storage.success': '存储已清除',
   /** Explanation at the top of the settings dialog */
-  'vista.settings.description': '新标签页的默认设置。已打开的标签页保留各自的选项。',
+  'vision.settings.description': '新标签页的默认设置。已打开的标签页将保留各自的选项。',
   /** Explains the setting listing the fields left out of History diffs */
-  'vista.settings.history-diff.description':
-    '每行一个字段路径。路径可匹配结果的任意深度,因此 _rev 会隐藏其中每个文档的修订版本。每个差异对比仍可显示它们。',
+  'vision.settings.history-diff.description':
+    '每行一个字段路径。路径会匹配结果中任意深度的字段，因此 _rev 会隐藏其中每个文档的修订版本。每个差异对比仍可以显示它们。',
   /** Button restoring the default fields left out of History diffs */
-  'vista.settings.history-diff.reset': '重置为默认值',
+  'vision.settings.history-diff.reset': '重置为默认值',
   /** Label of the setting listing the fields left out of History diffs */
-  'vista.settings.history-diff.title': '从历史差异对比中隐藏的字段',
+  'vision.settings.history-diff.title': '在历史记录差异对比中隐藏的字段',
   /** Title of the settings dialog */
-  'vista.settings.title': '设置',
+  'vision.settings.title': '设置',
   /** Empty state of the shared queries panel */
-  'vista.shared.empty': '暂无共享查询。共享一个已保存的查询,使其可供使用此数据集的所有人使用。',
+  'vision.shared.empty': '暂无共享查询。分享一个已保存的查询，使其对使用此数据集的所有人可用。',
   /** Shortcut description: close dialogs and menus */
-  'vista.shortcuts.close': '关闭对话框和菜单',
+  'vision.shortcuts.close': '关闭对话框和菜单',
   /** Shortcut that lists the functions matching the name being typed in the query editor */
-  'vista.shortcuts.complete': '补全函数名称',
+  'vision.shortcuts.complete': '补全函数名称',
   /** Shortcut description: copy the query */
-  'vista.shortcuts.copy-query': '复制查询',
+  'vision.shortcuts.copy-query': '复制查询',
   /** Shortcut that turns the selected projection, or the one around the cursor, into a custom function */
-  'vista.shortcuts.extract-function': '将光标处的投影提取为函数',
+  'vision.shortcuts.extract-function': '将光标处的投影提取为函数',
   /** Shortcut description: run the query */
-  'vista.shortcuts.fetch': '获取查询',
+  'vision.shortcuts.fetch': '获取查询',
   /** Shortcut description: move the cursor to the next lint finding in the query editor */
-  'vista.shortcuts.next-finding': '跳转到下一个检查结果',
+  'vision.shortcuts.next-finding': '跳转到下一个检查结果',
   /** Shortcut description: reformat the query */
-  'vista.shortcuts.prettify': '美化查询',
+  'vision.shortcuts.prettify': '美化查询',
   /** Title of the keyboard shortcuts dialog */
-  'vista.shortcuts.title': '键盘快捷键',
+  'vision.shortcuts.title': '键盘快捷键',
   /** Sidebar toggle: show icons only */
-  'vista.sidebar.collapse': '收起侧边栏',
+  'vision.sidebar.collapse': '收起侧边栏',
   /** Sidebar toggle: show labels next to the icons */
-  'vista.sidebar.expand': '展开侧边栏',
+  'vision.sidebar.expand': '展开侧边栏',
   /** Accessible label for the sidebar navigation */
-  'vista.sidebar.label': 'Vista 侧边栏',
+  'vision.sidebar.label': 'Vision 侧边栏',
   /** Sidebar item and drawer title for personal saved queries */
-  'vista.sidebar.saved-queries': '已保存的查询',
+  'vision.sidebar.saved-queries': '已保存的查询',
   /** Sidebar item opening the settings dialog */
-  'vista.sidebar.settings': '设置',
+  'vision.sidebar.settings': '设置',
   /** Sidebar item and drawer title for shared queries */
-  'vista.sidebar.shared-queries': '共享查询',
+  'vision.sidebar.shared-queries': '共享查询',
   /** Sidebar item opening the keyboard shortcuts dialog */
-  'vista.sidebar.shortcuts': '键盘快捷键',
+  'vision.sidebar.shortcuts': '键盘快捷键',
   /** Empty state of the content source map panel */
-  'vista.source-map.empty':
-    '响应中没有内容源映射。请在“选项”下开启“包含内容源映射”，然后重新获取。',
+  'vision.source-map.empty':
+    '响应中没有内容来源映射。请在“选项”中打开“包含内容来源映射”后重新获取。',
   /** Accessible label of the divider between the result and the response details panel */
-  'vista.split.bottom-panel':
-    '调整响应详情面板大小：拖动或使用方向键；Home 和 End 可移动到边界，Enter 可重置',
+  'vision.split.bottom-panel':
+    '调整响应详情面板大小：拖动或使用方向键；Home 和 End 可到达边界，Enter 可重置',
   /** Accessible label of the divider between the request and response panes */
-  'vista.split.request-response':
-    '调整请求和响应窗格大小：拖动或使用方向键；Home 和 End 可移动到边界，Enter 可重置',
+  'vision.split.request-response':
+    '调整请求和响应面板大小：拖动或使用方向键；Home 和 End 可到达边界，Enter 可重置',
   /** Accessible label for the button closing a query tab */
-  'vista.tabs.close-tab': '关闭标签页',
+  'vision.tabs.close-tab': '关闭标签页',
   /** Accessible label for the list of query tabs */
-  'vista.tabs.label': '查询标签页',
+  'vision.tabs.label': '查询标签页',
   /** Accessible label for the button opening a new query tab */
-  'vista.tabs.new-tab': '新建标签页',
+  'vision.tabs.new-tab': '新建标签页',
   /** Placeholder of the input renaming a tab */
-  'vista.tabs.title-placeholder': '标签页标题',
+  'vision.tabs.title-placeholder': '标签页标题',
   /** Title of a tab whose query is still empty */
-  'vista.tabs.untitled': '未命名查询',
+  'vision.tabs.untitled': '未命名查询',
   /** Title the browser shows for the WebMCP tool that lints a query */
-  'vista.webmcp.check-query': '在 Vision 中检查 GROQ 查询',
+  'vision.webmcp.check-query': '在 Vision 中检查 GROQ 查询',
   /** Title the browser shows for the WebMCP tool that describes the workspace schema */
-  'vista.webmcp.describe-schema': '在 Vision 中描述工作区架构',
+  'vision.webmcp.describe-schema': '在 Vision 中描述工作区架构',
   /** Title the browser shows for the WebMCP tool that returns a query plan */
-  'vista.webmcp.explain-query': '在 Vision 中解释 GROQ 查询',
+  'vision.webmcp.explain-query': '在 Vision 中解释 GROQ 查询',
   /** Title the browser shows for the WebMCP tool that reads the active Vision tab */
-  'vista.webmcp.get-state': '读取已打开的 Vision 标签页',
+  'vision.webmcp.get-state': '读取已打开的 Vision 标签页',
   /** Title the browser shows for the WebMCP tool that opens a query in a new tab */
-  'vista.webmcp.open-query': '在 Vision 中打开 GROQ 查询',
+  'vision.webmcp.open-query': '在 Vision 中打开 GROQ 查询',
   /** Title the browser shows for the WebMCP tool that runs mutations as a dry run */
-  'vista.webmcp.preview-mutations': '在 Vision 中预览变更',
+  'vision.webmcp.preview-mutations': '在 Vision 中预览变更',
   /** Title the browser shows for the WebMCP tool that runs a query */
-  'vista.webmcp.run-query': '在 Vision 中运行 GROQ 查询',
+  'vision.webmcp.run-query': '在 Vision 中运行 GROQ 查询',
 })
