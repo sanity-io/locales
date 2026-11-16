@@ -114,6 +114,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Selectați documentul țintă',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Titlul sarcinii',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Crearea sarcinii a eșuat, vă rugăm să încercați din nou',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Titlul este obligatoriu',
   /** The status message upon successful creation of a task */
@@ -154,6 +156,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Deschide sarcinile',
   /** Title of the Tasks panel   */
   'panel.title': 'Sarcini',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Sarcinile nu sunt disponibile momentan. Încercați din nou mai târziu.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Atribuite',
