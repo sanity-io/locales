@@ -21,11 +21,36 @@ minimumReleaseAgeExclude:
   - js-yaml@4.3.0 || 4.3.1
   # Renovate dependency updates can temporarily require a new get-it release
   - get-it
-  # oxlint 1.94 and tsrs 7.1.0-beta.tsrs2, plus their native bindings, are inside the release-age window
-  - oxlint
-  - '@oxlint/*'
-  - tsrs
-  - '@tsrs/*'
+  # Temporary: these exact versions are inside the release-age window
+  - oxlint@1.94.0
+  - '@oxlint/binding-android-arm-eabi@1.94.0'
+  - '@oxlint/binding-android-arm64@1.94.0'
+  - '@oxlint/binding-darwin-arm64@1.94.0'
+  - '@oxlint/binding-darwin-x64@1.94.0'
+  - '@oxlint/binding-freebsd-x64@1.94.0'
+  - '@oxlint/binding-linux-arm-gnueabihf@1.94.0'
+  - '@oxlint/binding-linux-arm-musleabihf@1.94.0'
+  - '@oxlint/binding-linux-arm64-gnu@1.94.0'
+  - '@oxlint/binding-linux-arm64-musl@1.94.0'
+  - '@oxlint/binding-linux-ppc64-gnu@1.94.0'
+  - '@oxlint/binding-linux-riscv64-gnu@1.94.0'
+  - '@oxlint/binding-linux-riscv64-musl@1.94.0'
+  - '@oxlint/binding-linux-s390x-gnu@1.94.0'
+  - '@oxlint/binding-linux-x64-gnu@1.94.0'
+  - '@oxlint/binding-linux-x64-musl@1.94.0'
+  - '@oxlint/binding-openharmony-arm64@1.94.0'
+  - '@oxlint/binding-win32-arm64-msvc@1.94.0'
+  - '@oxlint/binding-win32-ia32-msvc@1.94.0'
+  - '@oxlint/binding-win32-x64-msvc@1.94.0'
+  - tsrs@7.1.0-beta.tsrs2
+  - '@tsrs/darwin-arm64@7.1.0-beta.tsrs2'
+  - '@tsrs/darwin-x64@7.1.0-beta.tsrs2'
+  - '@tsrs/linux-arm64-gnu@7.1.0-beta.tsrs2'
+  - '@tsrs/linux-arm64-musl@7.1.0-beta.tsrs2'
+  - '@tsrs/linux-x64-gnu@7.1.0-beta.tsrs2'
+  - '@tsrs/linux-x64-musl@7.1.0-beta.tsrs2'
+  - '@tsrs/win32-arm64@7.1.0-beta.tsrs2'
+  - '@tsrs/win32-x64@7.1.0-beta.tsrs2'
 
 overrides:
   sanity: 'catalog:'
