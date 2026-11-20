@@ -112,6 +112,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'ドキュメントを選択',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'タスクのタイトル',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'タスクの作成に失敗しました。もう一度お試しください',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'タイトルが必要です',
   /** The status message upon successful creation of a task */
@@ -151,6 +153,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'タスクを開く',
   /** Title of the Tasks panel   */
   'panel.title': 'タスク',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': '現在タスクはご利用いただけません。後でもう一度お試しください。',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': '割り当てられた',
