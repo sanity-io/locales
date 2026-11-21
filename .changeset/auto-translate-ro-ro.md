@@ -1,5 +1,5 @@
 ---
-"@sanity/locale-ro-ro": patch
+'@sanity/locale-ro-ro': patch
 ---
 
 Automated translation updates
