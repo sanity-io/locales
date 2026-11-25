@@ -20,13 +20,14 @@ import {getLocaleRegistry} from './registry'
 
 const execFile = promisify(execFileCb)
 
-const ANTHROPIC_MODEL = 'claude-sonnet-5'
+const ANTHROPIC_MODEL = 'claude-sonnet-5-5'
 
 /**
  * Controls how many tokens the model spends (thinking depth, verbosity), not sampling
  * randomness. Adaptive thinking is on by default on this model, and `low` lets it skip
  * thinking entirely on simple requests - closest to how this workload behaved on
- * Sonnet 4.6, which ran without thinking. Step up to `medium` if translations regress.
+ * Sonnet 4.6, which ran without thinking. The model default is `high`, so keep this
+ * explicit. Step up to `medium` if translations regress.
  */
 const ANTHROPIC_EFFORT = 'low'
 
@@ -262,11 +263,12 @@ async function translateText(
     return {}
   }
 
-  // Use forced tool calling with `strict: true` to guarantee the response shape.
-  // Strict mode grammar-constrains sampling to the schema, so the model cannot
-  // invent its own payload shape - which Sonnet 5 otherwise does for custom,
-  // non-strict tool schemas (it drifts towards tool shapes from its training
-  // data, silently dropping or renaming our keys).
+  // Use `strict: true` to guarantee the response shape. Strict mode grammar-constrains
+  // sampling to the schema, so the model cannot invent its own payload shape - which
+  // Sonnet 5.x otherwise does for custom, non-strict tool schemas (it drifts towards
+  // tool shapes from its training data, silently dropping or renaming our keys).
+  // Sonnet 5.5 rejects forced tool choice (`tool` and `any`) with a 400, so we use
+  // `auto` and the system prompt tells the model to call the tool.
   const message = await anthropic.messages.create({
     model: ANTHROPIC_MODEL,
     max_tokens: ANTHROPIC_MAX_TOKENS,
@@ -311,13 +313,14 @@ async function translateText(
         },
       },
     ],
-    tool_choice: {type: 'tool' as const, name: 'submit_translations'},
+    tool_choice: {type: 'auto' as const},
   })
 
   const toolBlock = message.content.find((block) => block.type === 'tool_use')
   if (!toolBlock || toolBlock.type !== 'tool_use') {
-    // A `max_tokens` stop reason means thinking plus response outgrew the budget,
-    // which is worth distinguishing from the model declining to call the tool.
+    // With `auto` tool choice the model may answer in text instead of calling the tool,
+    // and a `max_tokens` stop reason means thinking plus response outgrew the budget.
+    // The stop reason helps tell those apart.
     throw new Error(`No tool_use block in response (stop_reason: ${message.stop_reason})`)
   }
 
@@ -339,7 +342,7 @@ async function translateText(
  * @internal
  */
 function getSystemPrompt(): string {
-  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. Translate the values into the requested target language and submit them using the submit_translations tool, as an array of {key, value} entries.
+  return `You are a translation assistant. You receive i18next resource bundle keys and their English values. Translate the values into the requested target language and submit them using the submit_translations tool, as an array of {key, value} entries. Always respond by calling the submit_translations tool exactly once; never reply with plain text.
 
 Rules:
 - Submit one entry per resource, copying each key exactly as given - including any dots, underscores and plural suffixes (like "_one" or "_other").
